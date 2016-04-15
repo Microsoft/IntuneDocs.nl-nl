@@ -1,26 +1,24 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 8
+ Total Files | 6
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f6758f477884c059d96faab634f57d215069c2e4/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md) | HandedOffSuccess | [Details](#66f88116f674fc6669cdad7027ac08c9dff672d983)
- [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#8daa2f150f319065f2279cd97070808abc2d982e282)
- [InTuneDocs\GetStarted\get-started-with-a-paid-subscription-to-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1e1f6caa1d53021d5e6544e016d1a363798ad92e/InTuneDocs/GetStarted/get-started-with-a-paid-subscription-to-microsoft-intune.md) | HandedOffSuccess | [Details](#b5d633a102598e244a52f1fee8932a2c37eb25a0512)
- [InTuneDocs\media\em-intune-vision.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/media/em-intune-vision.png) | HandedOffSuccess | [Details](#f181761e722e4be62f40d5bfb48730791ca8164b868)
- [InTuneDocs\Troubleshoot\troubleshoot-email-profiles-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/fa77a78c576696ee18e64681fffc4c0bf5e26b29/InTuneDocs/Troubleshoot/troubleshoot-email-profiles-in-microsoft-intune.md) | HandedOffSuccess | [Details](#2065cca69c9f81e361744a243daaa3cc26a702751166)
- [InTuneDocs\Understand\introduction-to-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/Understand/introduction-to-microsoft-intune.md) | HandedOffSuccess | [Details](#e2fdd9bb479f088d47c0ab93da1d7c77535a8cdf1188)
- [InTuneDocs\zDeletedTopics\strawman-TOC-with-notes.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/zDeletedTopics/strawman-TOC-with-notes.md) | HandedOffSuccess | [Details](#cf0723520b185d14d0191a72da11d34e2d5ade491553)
- [InTuneDocs\zDeletedTopics\TOC-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/zDeletedTopics/TOC-old.md) | HandedOffSuccess | [Details](#eb1b700cbd4694c83e957de96d65bfc369cd2f1b1559)
+ [InTuneDocs\GetStarted\administrative-accounts-websites-perms.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/GetStarted/administrative-accounts-websites-perms.md) | HandedOffSuccess | [Details](#0e23c0b06d58de85f008cedd2f68dc3d7733150a497)
+ [InTuneDocs\zDeletedTopics\get-started-with-a-paid-subscription-to-microsoft-intune-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/zDeletedTopics/get-started-with-a-paid-subscription-to-microsoft-intune-old.md) | HandedOffSuccess | [Details](#1f70c7f8f2a8405f752706db5e7969fbce0ca03e1405)
+ [InTuneDocs\zDeletedTopics\introduction-to-microsoft-intune-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/zDeletedTopics/introduction-to-microsoft-intune-old.md) | HandedOffSuccess | [Details](#3b9c00857551480257905fe0215aeb25b30506f21426)
+ [InTuneDocs\zDeletedTopics\TOC-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/zDeletedTopics/TOC-old.md) | HandedOffSuccess | [Details](#eb1b700cbd4694c83e957de96d65bfc369cd2f1b1559)
+ [migrated-03-14\Topic\Manage-Internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/migrated-03-14/Topic/Manage-Internet-access-using-managed-browser-policies.md) | HandedOffSuccess | [Details](#23cba0278d75843f988320a398c0443f4bb2c9722140)
+ [migrated-03-14\Topic\Troubleshoot-email-profiles-in-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/migrated-03-14/Topic/Troubleshoot-email-profiles-in-Microsoft-Intune.md) | HandedOffSuccess | [Details](#f736dd44bed11a4f963cca4a54739cb44ff5bc232224)
 
 ## Item Details
-##### <a name='66f88116f674fc6669cdad7027ac08c9dff672d983'></a> Source: [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f6758f477884c059d96faab634f57d215069c2e4/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md)
+##### <a name='0e23c0b06d58de85f008cedd2f68dc3d7733150a497'></a> Source: [InTuneDocs\GetStarted\administrative-accounts-websites-perms.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/GetStarted/administrative-accounts-websites-perms.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
+* Handoff File: [administrative-accounts-websites-perms.1b7c1d93c66fa6a72475493a5c6913b51c1ee7a1.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d3df031d6b881842b112082bf34460239d6f41eb/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/administrative-accounts-websites-perms.1b7c1d93c66fa6a72475493a5c6913b51c1ee7a1.nl-nl.xlf)
+* Handoff Datetime: 2016-04-15 00:15:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -28,11 +26,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='8daa2f150f319065f2279cd97070808abc2d982e282'></a> Source: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/DeployUse/TOC.md)
+##### <a name='1f70c7f8f2a8405f752706db5e7969fbce0ca03e1405'></a> Source: [InTuneDocs\zDeletedTopics\get-started-with-a-paid-subscription-to-microsoft-intune-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/zDeletedTopics/get-started-with-a-paid-subscription-to-microsoft-intune-old.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
+* Handoff File: [get-started-with-a-paid-subscription-to-microsoft-intune.ba831aeba0a2ec2e4c339413fe71c5f1da7355d8.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d3df031d6b881842b112082bf34460239d6f41eb/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/get-started-with-a-paid-subscription-to-microsoft-intune.ba831aeba0a2ec2e4c339413fe71c5f1da7355d8.nl-nl.xlf)
+* Handoff Datetime: 2016-04-15 00:15:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -40,11 +38,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b5d633a102598e244a52f1fee8932a2c37eb25a0512'></a> Source: [InTuneDocs\GetStarted\get-started-with-a-paid-subscription-to-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1e1f6caa1d53021d5e6544e016d1a363798ad92e/InTuneDocs/GetStarted/get-started-with-a-paid-subscription-to-microsoft-intune.md)
+##### <a name='3b9c00857551480257905fe0215aeb25b30506f21426'></a> Source: [InTuneDocs\zDeletedTopics\introduction-to-microsoft-intune-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/zDeletedTopics/introduction-to-microsoft-intune-old.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [get-started-with-a-paid-subscription-to-microsoft-intune.ba831aeba0a2ec2e4c339413fe71c5f1da7355d8.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/get-started-with-a-paid-subscription-to-microsoft-intune.ba831aeba0a2ec2e4c339413fe71c5f1da7355d8.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
+* Handoff File: [introduction-to-microsoft-intune.207766a0a8a320d45af71c3792d9a6fc6a4bfab7.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d3df031d6b881842b112082bf34460239d6f41eb/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/introduction-to-microsoft-intune.207766a0a8a320d45af71c3792d9a6fc6a4bfab7.nl-nl.xlf)
+* Handoff Datetime: 2016-04-15 00:15:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -52,24 +50,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f181761e722e4be62f40d5bfb48730791ca8164b868'></a> Source: [InTuneDocs\media\em-intune-vision.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/media/em-intune-vision.png)
+##### <a name='eb1b700cbd4694c83e957de96d65bfc369cd2f1b1559'></a> Source: [InTuneDocs\zDeletedTopics\TOC-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/InTuneDocs/zDeletedTopics/TOC-old.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f181761e722e4be62f40d5bfb48730791ca8164b.png](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/f181761e722e4be62f40d5bfb48730791ca8164b.png)
-* Handoff Datetime: 2016-04-14 21:46:36
-* Handoff Reason: IsDependency
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: InTuneDocs\Understand\introduction-to-microsoft-intune.md
-* [Back to Top](#report-top)
-
-##### <a name='2065cca69c9f81e361744a243daaa3cc26a702751166'></a> Source: [InTuneDocs\Troubleshoot\troubleshoot-email-profiles-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/fa77a78c576696ee18e64681fffc4c0bf5e26b29/InTuneDocs/Troubleshoot/troubleshoot-email-profiles-in-microsoft-intune.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [troubleshoot-email-profiles-in-microsoft-intune.24364295c35e77fe4bbf8aeacc80469728fbcc88.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/troubleshoot-email-profiles-in-microsoft-intune.24364295c35e77fe4bbf8aeacc80469728fbcc88.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
+* Handoff File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d3df031d6b881842b112082bf34460239d6f41eb/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.nl-nl.xlf)
+* Handoff Datetime: 2016-04-15 00:15:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -77,11 +62,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e2fdd9bb479f088d47c0ab93da1d7c77535a8cdf1188'></a> Source: [InTuneDocs\Understand\introduction-to-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/Understand/introduction-to-microsoft-intune.md)
+##### <a name='23cba0278d75843f988320a398c0443f4bb2c9722140'></a> Source: [migrated-03-14\Topic\Manage-Internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/migrated-03-14/Topic/Manage-Internet-access-using-managed-browser-policies.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [introduction-to-microsoft-intune.207766a0a8a320d45af71c3792d9a6fc6a4bfab7.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/introduction-to-microsoft-intune.207766a0a8a320d45af71c3792d9a6fc6a4bfab7.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
+* Handoff File: [manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d3df031d6b881842b112082bf34460239d6f41eb/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.nl-nl.xlf)
+* Handoff Datetime: 2016-04-15 00:15:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -89,23 +74,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cf0723520b185d14d0191a72da11d34e2d5ade491553'></a> Source: [InTuneDocs\zDeletedTopics\strawman-TOC-with-notes.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/zDeletedTopics/strawman-TOC-with-notes.md)
+##### <a name='f736dd44bed11a4f963cca4a54739cb44ff5bc232224'></a> Source: [migrated-03-14\Topic\Troubleshoot-email-profiles-in-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6adb61a05a7ff8f297f67ec6e223399694e4754c/migrated-03-14/Topic/Troubleshoot-email-profiles-in-Microsoft-Intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [strawman-TOC-with-notes.b535fbfd24cf4fdc94e75906158ea74e14aac103.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/strawman-TOC-with-notes.b535fbfd24cf4fdc94e75906158ea74e14aac103.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='eb1b700cbd4694c83e957de96d65bfc369cd2f1b1559'></a> Source: [InTuneDocs\zDeletedTopics\TOC-old.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1da64f28afc63f05b76e53e9cef9ee37fa1c5228/InTuneDocs/zDeletedTopics/TOC-old.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5ee05e30c42b99d2230789a184db7e9fa1a9a78/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.nl-nl.xlf)
-* Handoff Datetime: 2016-04-14 21:46:36
+* Handoff File: [troubleshoot-email-profiles-in-microsoft-intune.24364295c35e77fe4bbf8aeacc80469728fbcc88.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d3df031d6b881842b112082bf34460239d6f41eb/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/troubleshoot-email-profiles-in-microsoft-intune.24364295c35e77fe4bbf8aeacc80469728fbcc88.nl-nl.xlf)
+* Handoff Datetime: 2016-04-15 00:15:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
