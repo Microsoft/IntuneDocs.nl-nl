@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a198fb40a798aae2795cf12b0773ce7fb2e82c61",
+  "LastProcessedCommit": "8740d3c4d48c9e52315089004475c6a49e957e5e",
   "LastTranslatedCommit": null,
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
@@ -78924,6 +78924,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.nl-nl\\master\\windows-compliance-policy-settings-in-microsoft-intune.68a63abf383a92d1c65f0bb405cf27ea58fab709.nl-nl.xlf",
       "HandoffFileCommit": "3e5e65839ba6ec7252d56b3cc9dceccc4ee1605d",
       "HandoffDateTime": "2016-04-19T01:01:58.1016022Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "4cb51facc6faca8ceca2c3662b23d0761b12c0f7": {
+      "FileHash": "4cb51facc6faca8ceca2c3662b23d0761b12c0f7",
+      "SourceFileCommit": "b56a835440cbb1dd08fe85c690d958ca3c2df71c",
+      "SourceFilePath": "InTuneDocs\\GetStarted\\rollout-phases-for-microsoft-intune-deployment.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "InTuneDocs\\GetStarted\\rollout-phases-for-microsoft-intune-deployment.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.nl-nl\\master\\rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.nl-nl.xlf",
+      "HandoffFileCommit": "f3b7da2953b21f58c6742a88eca0c1b953fd095b",
+      "HandoffDateTime": "2016-04-19T02:07:56.0479533Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
