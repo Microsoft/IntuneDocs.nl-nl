@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "770b682abaedbf6e2d43d8810be197821c77f2d8",
+  "LastProcessedCommit": "4801e32883ee92f95be920140a7c15dba106e55d",
   "LastTranslatedCommit": null,
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
@@ -79947,6 +79947,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.nl-nl\\master\\index.404579aeff405d27d9820f60e5e015fb7352d33a.nl-nl.xlf",
       "HandoffFileCommit": "51ea24d7340932b84d0a6c0ed55a4b316a73375f",
       "HandoffDateTime": "2016-04-19T18:29:42.7409389Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "e28dbc89590de63dc8e4aad815abb55a6004694f": {
+      "FileHash": "e28dbc89590de63dc8e4aad815abb55a6004694f",
+      "SourceFileCommit": "3244b639046fd9e906b3ec04557d968455371346",
+      "SourceFilePath": "InTuneDocs\\index.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "InTuneDocs\\index.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.nl-nl\\master\\index.404579aeff405d27d9820f60e5e015fb7352d33a.nl-nl.xlf",
+      "HandoffFileCommit": "76ddba251c706ba93b9fe485ef5f5a72ba123a34",
+      "HandoffDateTime": "2016-04-19T19:17:31.3378857Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
