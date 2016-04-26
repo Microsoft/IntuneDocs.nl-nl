@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 415
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 368
+[ Handoff Success Files ](#handoff-success-list)| 367
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 47
+[ Ignored Files ](#ignored-list)| 48
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -341,7 +341,6 @@
  [Azure-RMSDocs\understand-explore\azure-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6fb03d2e082df8350edc10f6bdec18a288bc87bc/Azure-RMSDocs/understand-explore/azure-rights-management.md) | HandedOffSuccess | [Details](#fdbe0f1e7d188e3f1157b68a3f2ab4b7666a6ecd366)
  [Azure-RMSDocs\understand-explore\azure-rms-aka.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/understand-explore/azure-rms-aka.md) | HandedOffSuccess | [Details](#8749ea30e4c95dc656c74079ab42ce6519070fd6367)
  [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c730a4125c5bb21a0fb69f197cfafef476437da2/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md) | HandedOffSuccess | [Details](#bb5da969cb6a7e65f5530908e521a849121ed255368)
- [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f276f29136a57426bad9fedb75792cb64fffee33/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md) | HandedOffSuccess | [Details](#20f9895fc392cbd39f60a3b0fd2505d9383e184a369)
  [Azure-RMSDocs\understand-explore\file-server-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/understand-explore/file-server-support.md) | HandedOffSuccess | [Details](#de2be4a6bc82c73a3f96455e6e2a99adbf047ef7370)
  [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/db342efdc6117b59d801c5e563f5bb7b50e15095/Azure-RMSDocs/understand-explore/how-does-it-work.md) | HandedOffSuccess | [Details](#b566c89949ffb0f8b40b37dd66fccf42cbb07dda371)
  [Azure-RMSDocs\understand-explore\office-apps-services-support.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/understand-explore/office-apps-services-support.md) | HandedOffSuccess | [Details](#b175da37dc70d18428d073ab2461a18951600c86372)
@@ -446,6 +445,7 @@
  [Azure-RMSDocs\plan-design\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/26ddfa01744303aea3841cd52607fa5e1214d1b0/Azure-RMSDocs/plan-design/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda325)
  [Azure-RMSDocs\rms-client\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/26ddfa01744303aea3841cd52607fa5e1214d1b0/Azure-RMSDocs/rms-client/docfx.json) | Ignored | [Details](#d889ba09378c1600b0a0bc3bac6f6221f7049cc9341)
  [Azure-RMSDocs\rms-client\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/26ddfa01744303aea3841cd52607fa5e1214d1b0/Azure-RMSDocs/rms-client/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda344)
+ [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/26ddfa01744303aea3841cd52607fa5e1214d1b0/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md) | Ignored | [Details](#f4496c388bc939d07d45f3ecb41f72ed4e559b30369)
  [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/26ddfa01744303aea3841cd52607fa5e1214d1b0/UpdateSubmodule.ps1) | Ignored | [Details](#42442e5f8d7f09fba90a865e184aacc3f8489143414)
 
 ## Item Details
@@ -5002,12 +5002,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='20f9895fc392cbd39f60a3b0fd2505d9383e184a369'></a> Source: [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f276f29136a57426bad9fedb75792cb64fffee33/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md)
-* Status: HandedOffSuccess
+##### <a name='f4496c388bc939d07d45f3ecb41f72ed4e559b30369'></a> Source: [Azure-RMSDocs\understand-explore\compare-azure-rms-ad-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/26ddfa01744303aea3841cd52607fa5e1214d1b0/Azure-RMSDocs/understand-explore/compare-azure-rms-ad-rms.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/7b8639bd9550488b06bb49521db59eecbecbc3a8/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.nl-nl.xlf)
-* Handoff Datetime: 2016-04-20 23:07:50
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
