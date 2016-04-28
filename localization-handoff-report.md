@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8865025f8f905bfd73fbd97e40855b8467a9e082/Azure-RMSDocs/index.md) | HandedOffSuccess | [Details](#e1175da572ad6985c44f16a1addafe16bf2fe9a1162)
 
 ## Item Details
+##### <a name='e1175da572ad6985c44f16a1addafe16bf2fe9a1162'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8865025f8f905bfd73fbd97e40855b8467a9e082/Azure-RMSDocs/index.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/016aff10999bc0e3d836d5fd6d19b7ed96b08b85/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
+* Handoff Datetime: 2016-04-28 23:00:24
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
