@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 2254
 [ Handoff Failed Files ](#handoff-failed-list)| 3
-[ Handoff Success Files ](#handoff-success-list)| 1413
+[ Handoff Success Files ](#handoff-success-list)| 1401
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 440
+[ Archive Success Files ](#archive-success-list)| 452
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
@@ -219,12 +219,6 @@
  [InTuneDocs\GetStarted\mobile-device-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f617e6fa658b1562fa177e3b166af81e31efbc3/InTuneDocs/GetStarted/mobile-device-management-capabilities-in-microsoft-intune.md) | HandedOffSuccess | [Details](#8f47fe7227c15c858207ae09e21c11d53435b216484)
  [InTuneDocs\GetStarted\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8cda662ce4c0139a53d3ccbe84a5e18465c8adb1/InTuneDocs/GetStarted/TOC.md) | HandedOffSuccess | [Details](#4d8e0bb97f519aa1d6ff7f07fb8fa4273f72ebc3504)
  [InTuneDocs\GetStarted\windows-pc-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8cda662ce4c0139a53d3ccbe84a5e18465c8adb1/InTuneDocs/GetStarted/windows-pc-management-capabilities-in-microsoft-intune.md) | HandedOffSuccess | [Details](#c16c61ee517cdc98da5e78ac5461664bf77fb834506)
- [InTuneDocs\includes\wit_nextref_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_nextref_md.md) | HandedOffSuccess | [Details](#37fd3548a500ea545ec28de8cea465e3243dac10611)
- [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_publisher_1.md) | HandedOffSuccess | [Details](#965b55d128583da2cf33b127270a5216ce74444b612)
- [InTuneDocs\includes\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools.md) | HandedOffSuccess | [Details](#a5449ddcc028ac379a4e6bbaff0432e8968879ec613)
- [InTuneDocs\includes\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools_md.md) | HandedOffSuccess | [Details](#58643537b9c0a34ac93bf6af99240b6e3469ab2a614)
- [InTuneDocs\includes\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2.md) | HandedOffSuccess | [Details](#e9096a16bdd11b30f840ceba6f1cb16bd4cf25e8615)
- [InTuneDocs\includes\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2_md.md) | HandedOffSuccess | [Details](#7aec405442c5cb6c886214b18022f4f9d2af5cbf616)
  [InTuneDocs\media\150x150.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/InTuneDocs/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71620)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-11-start-mg-mobl-dev.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-11-start-mg-mobl-dev.png) | HandedOffSuccess | [Details](#64f06d45481657e65ee924d286623dc83a514f40621)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-12-link-set-mdm.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-12-link-set-mdm.png) | HandedOffSuccess | [Details](#73ef645cbc717eb389266a0e21f6ac7bdb749a6f622)
@@ -884,12 +878,6 @@
  [migrated-03-14\Image\WIT_TileProtectResources.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Image/WIT_TileProtectResources.png) | HandedOffSuccess | [Details](#d5ba29ed7f25de0e045ff65e9917c010861d4c481556)
  [migrated-03-14\Image\WIT_TileRetireDevices.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Image/WIT_TileRetireDevices.png) | HandedOffSuccess | [Details](#7f602ed1a0af738db2e0ad1b89825b6e1b79b4a81557)
  [migrated-03-14\Image\WPCertReqs.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Image/WPCertReqs.png) | HandedOffSuccess | [Details](#357558a36a885fc6c50279d11801440587fe36761563)
- [migrated-03-14\Token\wit_nextref_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_nextref_md.md) | HandedOffSuccess | [Details](#37fd3548a500ea545ec28de8cea465e3243dac101668)
- [migrated-03-14\Token\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_publisher_1.md) | HandedOffSuccess | [Details](#965b55d128583da2cf33b127270a5216ce74444b1669)
- [migrated-03-14\Token\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_tools.md) | HandedOffSuccess | [Details](#a5449ddcc028ac379a4e6bbaff0432e8968879ec1670)
- [migrated-03-14\Token\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_tools_md.md) | HandedOffSuccess | [Details](#58643537b9c0a34ac93bf6af99240b6e3469ab2a1671)
- [migrated-03-14\Token\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wps_2.md) | HandedOffSuccess | [Details](#e9096a16bdd11b30f840ceba6f1cb16bd4cf25e81672)
- [migrated-03-14\Token\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wps_2_md.md) | HandedOffSuccess | [Details](#7aec405442c5cb6c886214b18022f4f9d2af5cbf1673)
  [migrated-03-14\Topic\1511---Restrict-access-to-Office-365-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/1511---Restrict-access-to-Office-365-services.md) | HandedOffSuccess | [Details](#69b88e15bc21632deba50fff9cc06cf9e9bb84131674)
  [migrated-03-14\Topic\Acceptable-Use-Policy-for-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Acceptable-Use-Policy-for-Microsoft-Intune.md) | HandedOffSuccess | [Details](#efbd0cd5501d003a3f420e83e054c1ccf7352d5a1675)
  [migrated-03-14\Topic\Accessibility-Features-of-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Accessibility-Features-of-Microsoft-Intune.md) | HandedOffSuccess | [Details](#4d906cb27c41e5a1368c32c1efd82b4fcc9f902c1676)
@@ -1776,6 +1764,12 @@
  [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2.md) | ArchivedSuccess | [Details](#a135ff34ca5c676bc4ee7640fa49d7e95da4170e608)
  [InTuneDocs\includes\wit_iwportal_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2_md.md) | ArchivedSuccess | [Details](#a02631ded74ee9e772dae5142675a9493b653577609)
  [InTuneDocs\includes\wit_nextref.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_nextref.md) | ArchivedSuccess | [Details](#eb4b64a8db5b5bb2eea586ca46d0c3f6da4eac88610)
+ [InTuneDocs\includes\wit_nextref_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_nextref_md.md) | ArchivedSuccess | [Details](#37fd3548a500ea545ec28de8cea465e3243dac10611)
+ [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_publisher_1.md) | ArchivedSuccess | [Details](#965b55d128583da2cf33b127270a5216ce74444b612)
+ [InTuneDocs\includes\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools.md) | ArchivedSuccess | [Details](#a5449ddcc028ac379a4e6bbaff0432e8968879ec613)
+ [InTuneDocs\includes\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools_md.md) | ArchivedSuccess | [Details](#58643537b9c0a34ac93bf6af99240b6e3469ab2a614)
+ [InTuneDocs\includes\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2.md) | ArchivedSuccess | [Details](#e9096a16bdd11b30f840ceba6f1cb16bd4cf25e8615)
+ [InTuneDocs\includes\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2_md.md) | ArchivedSuccess | [Details](#7aec405442c5cb6c886214b18022f4f9d2af5cbf616)
  [migrated-03-14\Token\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/accessibility1.md) | ArchivedSuccess | [Details](#1f04ca268c5fc8669102a61ce243d107f7f2cce51564)
  [migrated-03-14\Token\accessibility1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/accessibility1_md.md) | ArchivedSuccess | [Details](#1b484f283bacee97d6a181351aeef2a6366d09431593)
  [migrated-03-14\Token\accessibility10.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/accessibility10.md) | ArchivedSuccess | [Details](#696afdb33b3539746abcc89d588f0fa72ec1a68d1565)
@@ -1880,6 +1874,12 @@
  [migrated-03-14\Token\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_iwportal_2.md) | ArchivedSuccess | [Details](#a135ff34ca5c676bc4ee7640fa49d7e95da4170e1665)
  [migrated-03-14\Token\wit_iwportal_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_iwportal_2_md.md) | ArchivedSuccess | [Details](#a02631ded74ee9e772dae5142675a9493b6535771666)
  [migrated-03-14\Token\wit_nextref.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_nextref.md) | ArchivedSuccess | [Details](#eb4b64a8db5b5bb2eea586ca46d0c3f6da4eac881667)
+ [migrated-03-14\Token\wit_nextref_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_nextref_md.md) | ArchivedSuccess | [Details](#37fd3548a500ea545ec28de8cea465e3243dac101668)
+ [migrated-03-14\Token\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_publisher_1.md) | ArchivedSuccess | [Details](#965b55d128583da2cf33b127270a5216ce74444b1669)
+ [migrated-03-14\Token\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_tools.md) | ArchivedSuccess | [Details](#a5449ddcc028ac379a4e6bbaff0432e8968879ec1670)
+ [migrated-03-14\Token\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_tools_md.md) | ArchivedSuccess | [Details](#58643537b9c0a34ac93bf6af99240b6e3469ab2a1671)
+ [migrated-03-14\Token\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wps_2.md) | ArchivedSuccess | [Details](#e9096a16bdd11b30f840ceba6f1cb16bd4cf25e81672)
+ [migrated-03-14\Token\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wps_2_md.md) | ArchivedSuccess | [Details](#7aec405442c5cb6c886214b18022f4f9d2af5cbf1673)
  [sandbox\Plan topics\Sample.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/sandbox/Plan topics/Sample.md) | ArchivedSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc96531857)
  [zDeletedTopics\Sample.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/zDeletedTopics/Sample.md) | ArchivedSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc96532182)
 
@@ -9811,73 +9811,73 @@
 * [Back to Top](#report-top)
 
 ##### <a name='37fd3548a500ea545ec28de8cea465e3243dac10611'></a> Source: [InTuneDocs\includes\wit_nextref_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_nextref_md.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='965b55d128583da2cf33b127270a5216ce74444b612'></a> Source: [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_publisher_1.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='a5449ddcc028ac379a4e6bbaff0432e8968879ec613'></a> Source: [InTuneDocs\includes\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='58643537b9c0a34ac93bf6af99240b6e3469ab2a614'></a> Source: [InTuneDocs\includes\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools_md.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='e9096a16bdd11b30f840ceba6f1cb16bd4cf25e8615'></a> Source: [InTuneDocs\includes\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='7aec405442c5cb6c886214b18022f4f9d2af5cbf616'></a> Source: [InTuneDocs\includes\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2_md.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
@@ -23123,73 +23123,73 @@
 * [Back to Top](#report-top)
 
 ##### <a name='37fd3548a500ea545ec28de8cea465e3243dac101668'></a> Source: [migrated-03-14\Token\wit_nextref_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_nextref_md.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_nextref_md.d311e80e74b9b2fdef0093fd706ee392c349e53d.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='965b55d128583da2cf33b127270a5216ce74444b1669'></a> Source: [migrated-03-14\Token\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_publisher_1.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='a5449ddcc028ac379a4e6bbaff0432e8968879ec1670'></a> Source: [migrated-03-14\Token\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_tools.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_tools.9083f5c27544a8697706e11fd61e5d264bad4fc4.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='58643537b9c0a34ac93bf6af99240b6e3469ab2a1671'></a> Source: [migrated-03-14\Token\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wit_tools_md.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_tools_md.93bff8778e576810a6271cb2ac01d5c60e6d0c67.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='e9096a16bdd11b30f840ceba6f1cb16bd4cf25e81672'></a> Source: [migrated-03-14\Token\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wps_2.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wps_2.6979ec64567d37b48d8ee5dd3d4b8823a31080d6.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='7aec405442c5cb6c886214b18022f4f9d2af5cbf1673'></a> Source: [migrated-03-14\Token\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/wps_2_md.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1abeb43e35af7651d23275c043215d8d2785345a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wps_2_md.552291873b62d87cd43d397ffd835dd93734a6d0.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 04:18:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
