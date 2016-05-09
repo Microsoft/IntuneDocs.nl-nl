@@ -1,14 +1,13 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [Azure-RMSDocs\Develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a26a1debf504fb5e4aeddf4f1ad99202d7c20834/Azure-RMSDocs/Develop/ADAL-authentication.md) | HandedOffFailed | [Details](#0068d338348b4edb9db561bee0545ed50fed029a43)
- [Azure-RMSDocs\get-started\tutorial-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7f8a4d53665dd79a6d0e02d340b0e7a09d995e00/Azure-RMSDocs/get-started/tutorial-step5.md) | HandedOffSuccess | [Details](#a52875f3160252d5f90a570e5b9672e7eb2adce7133)
- [Azure-RMSDocs\plan-design\deployment-roadmap.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7f8a4d53665dd79a6d0e02d340b0e7a09d995e00/Azure-RMSDocs/plan-design/deployment-roadmap.md) | HandedOffSuccess | [Details](#96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81339)
+ [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/fc3763daa314e786f01fcef830391d2c9803a7ea/Azure-RMSDocs/develop/api-reference-4-2.md) | HandedOffSuccess | [Details](#030d418ade8e3fab417749574e31225263d0802248)
 
 ## Item Details
 ##### <a name='0068d338348b4edb9db561bee0545ed50fed029a43'></a> Source: [Azure-RMSDocs\Develop\ADAL-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/a26a1debf504fb5e4aeddf4f1ad99202d7c20834/Azure-RMSDocs/Develop/ADAL-authentication.md)
@@ -24,23 +23,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='a52875f3160252d5f90a570e5b9672e7eb2adce7133'></a> Source: [Azure-RMSDocs\get-started\tutorial-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7f8a4d53665dd79a6d0e02d340b0e7a09d995e00/Azure-RMSDocs/get-started/tutorial-step5.md)
+##### <a name='030d418ade8e3fab417749574e31225263d0802248'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/fc3763daa314e786f01fcef830391d2c9803a7ea/Azure-RMSDocs/develop/api-reference-4-2.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b674e13b8425c88097e3082816a631d814211a94/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.nl-nl.xlf)
-* Handoff Datetime: 2016-05-09 21:00:51
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81339'></a> Source: [Azure-RMSDocs\plan-design\deployment-roadmap.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7f8a4d53665dd79a6d0e02d340b0e7a09d995e00/Azure-RMSDocs/plan-design/deployment-roadmap.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [deployment-roadmap.c91fc5930ebfbf7a493de6cecc0c05dc777d6eec.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b674e13b8425c88097e3082816a631d814211a94/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/deployment-roadmap.c91fc5930ebfbf7a493de6cecc0c05dc777d6eec.nl-nl.xlf)
-* Handoff Datetime: 2016-05-09 21:00:51
+* Handoff File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d00213cdf6f69cff86273921c0b05b9056392eda/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.nl-nl.xlf)
+* Handoff Datetime: 2016-05-09 23:05:43
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
