@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 2254
 [ Handoff Failed Files ](#handoff-failed-list)| 3
-[ Handoff Success Files ](#handoff-success-list)| 1375
+[ Handoff Success Files ](#handoff-success-list)| 1372
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 478
+[ Archive Success Files ](#archive-success-list)| 481
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
@@ -608,9 +608,6 @@
  [InTuneDocs\Understand\media\Email-Walkthrough\Email-Walkthrough-9.png](https://github.com/Microsoft/IntuneDocs-pr/blob/857cae72431286cc3e67b8b649bcc99c81d216c7/InTuneDocs/Understand/media/Email-Walkthrough/Email-Walkthrough-9.png) | HandedOffSuccess | [Details](#9e6af6165eb396969fe666307f9b7b81e9f708d01185)
  [InTuneDocs\Understand\media\em-vision.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/InTuneDocs/Understand/media/em-vision.png) | HandedOffSuccess | [Details](#19064a8aaede330ac742af6e3a735598ac8687331174)
  [InTuneDocs\Understand\microsoft-intune-service-description.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bb83deec76171cbca0dadf00a076c1922a7e83ea/InTuneDocs/Understand/microsoft-intune-service-description.md) | HandedOffSuccess | [Details](#059f1ba6dc6863fbbdb309d092dcd4d14c7018df1186)
- [InTuneDocs\Understand\set-up-email-access-for-ios-devices-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f3985b10ac9612c8c1efc4756eb25cdcf29b023/InTuneDocs/Understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md) | HandedOffSuccess | [Details](#5b746cee0806fb44b1fd847efb9791d5256731331187)
- [InTuneDocs\Understand\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f3985b10ac9612c8c1efc4756eb25cdcf29b023/InTuneDocs/Understand/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md) | HandedOffSuccess | [Details](#6787d0c35621b2bc94bfe376dfd1669e9dfe46db1188)
- [InTuneDocs\Understand\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/TOC.md) | HandedOffSuccess | [Details](#d0f3bb2bab226cb748f8066a649f7411f51274f41189)
  [migrated-03-14\Image\30-day-trial-walkthrus\30day-cfg-pol-11-start-mg-mobl-dev.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Image/30-day-trial-walkthrus/30day-cfg-pol-11-start-mg-mobl-dev.png) | HandedOffSuccess | [Details](#64f06d45481657e65ee924d286623dc83a514f401190)
  [migrated-03-14\Image\30-day-trial-walkthrus\30day-cfg-pol-12-link-set-mdm.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Image/30-day-trial-walkthrus/30day-cfg-pol-12-link-set-mdm.png) | HandedOffSuccess | [Details](#73ef645cbc717eb389266a0e21f6ac7bdb749a6f1191)
  [migrated-03-14\Image\30-day-trial-walkthrus\30day-cfg-pol-13-enbl-ios-plat.png](https://github.com/Microsoft/IntuneDocs-pr/blob/11091bc5fb451cfaf6eaa923eafe6df506324960/migrated-03-14/Image/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png) | HandedOffSuccess | [Details](#3182556c7d25e82331869aeff5e9e7449fcc36831192)
@@ -1770,6 +1767,9 @@
  [InTuneDocs\Understand\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9755499575118feecf33780ee29a70525f95508e/InTuneDocs/Understand/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md) | ArchivedSuccess | [Details](#29295f4aeec978857b5bfa40f79cdac5fd499dd31108)
  [InTuneDocs\Understand\get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md](https://github.com/Microsoft/IntuneDocs-pr/blob/178f265fd4f9f94b9125d499c7ede20f01d22b8f/InTuneDocs/Understand/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md) | ArchivedSuccess | [Details](#cbed361a3ea90e0de6818b221544ad5699a7f9fc1109)
  [InTuneDocs\Understand\introduction-to-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1bdcfa71aab0918fba1f59bd0782fc63eef6994e/InTuneDocs/Understand/introduction-to-microsoft-intune.md) | ArchivedSuccess | [Details](#da9db0b3961cbbd53fc2b7aa7704fa31c8c787181111)
+ [InTuneDocs\Understand\set-up-email-access-for-ios-devices-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f3985b10ac9612c8c1efc4756eb25cdcf29b023/InTuneDocs/Understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md) | ArchivedSuccess | [Details](#5b746cee0806fb44b1fd847efb9791d5256731331187)
+ [InTuneDocs\Understand\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f3985b10ac9612c8c1efc4756eb25cdcf29b023/InTuneDocs/Understand/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md) | ArchivedSuccess | [Details](#6787d0c35621b2bc94bfe376dfd1669e9dfe46db1188)
+ [InTuneDocs\Understand\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/TOC.md) | ArchivedSuccess | [Details](#d0f3bb2bab226cb748f8066a649f7411f51274f41189)
  [migrated-03-14\Token\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/accessibility1.md) | ArchivedSuccess | [Details](#1f04ca268c5fc8669102a61ce243d107f7f2cce51564)
  [migrated-03-14\Token\accessibility1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/accessibility1_md.md) | ArchivedSuccess | [Details](#1b484f283bacee97d6a181351aeef2a6366d09431593)
  [migrated-03-14\Token\accessibility10.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1df72fc7b7e542327cf76ebba92e203e12c63b85/migrated-03-14/Token/accessibility10.md) | ArchivedSuccess | [Details](#696afdb33b3539746abcc89d588f0fa72ec1a68d1565)
@@ -17109,37 +17109,37 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5b746cee0806fb44b1fd847efb9791d5256731331187'></a> Source: [InTuneDocs\Understand\set-up-email-access-for-ios-devices-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f3985b10ac9612c8c1efc4756eb25cdcf29b023/InTuneDocs/Understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [set-up-email-access-for-ios-devices-using-microsoft-intune.88796ef121dd067734b3118194191b22657f6bc8.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b89f101d3218d8129aade36b3465975f74d9e972/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/set-up-email-access-for-ios-devices-using-microsoft-intune.88796ef121dd067734b3118194191b22657f6bc8.nl-nl.xlf)
 * Handoff Datetime: 2016-05-05 17:19:32
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [set-up-email-access-for-ios-devices-using-microsoft-intune.88796ef121dd067734b3118194191b22657f6bc8.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/c11408c98bc1fcde66e0b6483d1a620b65763b29/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/set-up-email-access-for-ios-devices-using-microsoft-intune.88796ef121dd067734b3118194191b22657f6bc8.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 05:53:46
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='6787d0c35621b2bc94bfe376dfd1669e9dfe46db1188'></a> Source: [InTuneDocs\Understand\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7f3985b10ac9612c8c1efc4756eb25cdcf29b023/InTuneDocs/Understand/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.b41a7986129feaf91618e0fdf0955399b4fe0b6b.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b89f101d3218d8129aade36b3465975f74d9e972/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.b41a7986129feaf91618e0fdf0955399b4fe0b6b.nl-nl.xlf)
 * Handoff Datetime: 2016-05-05 17:19:32
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.b41a7986129feaf91618e0fdf0955399b4fe0b6b.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/c11408c98bc1fcde66e0b6483d1a620b65763b29/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.b41a7986129feaf91618e0fdf0955399b4fe0b6b.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 05:53:46
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='d0f3bb2bab226cb748f8066a649f7411f51274f41189'></a> Source: [InTuneDocs\Understand\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3ab9c7ab7daba600a012a9caa4e69e6885d8039/InTuneDocs/Understand/TOC.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [TOC.25973e7413a716a995daf5d2adc1c6c01a873f3f.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/1e9975c7087eb3e630869d9df071698a19b66a2a/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/TOC.25973e7413a716a995daf5d2adc1c6c01a873f3f.nl-nl.xlf)
 * Handoff Datetime: 2016-05-04 21:17:09
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [TOC.25973e7413a716a995daf5d2adc1c6c01a873f3f.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/c11408c98bc1fcde66e0b6483d1a620b65763b29/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/TOC.25973e7413a716a995daf5d2adc1c6c01a873f3f.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 05:53:46
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
@@ -25405,8 +25405,8 @@
 * Handoff File: [Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: [Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/09ab38c12abf919ad344d606203ab4f57b74c5a5/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf)
-* Archive Datetime: 2016-05-09 04:49:39
+* Archive File: [Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/c11408c98bc1fcde66e0b6483d1a620b65763b29/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 05:53:46
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
@@ -29378,8 +29378,8 @@
 * Handoff File: [Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/3677cf225d2e344a8b12ea2dc789ff9df5197644/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf)
 * Handoff Datetime: 2016-05-01 17:53:58
 * Handoff Reason: Include
-* Archive File: [Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/09ab38c12abf919ad344d606203ab4f57b74c5a5/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf)
-* Archive Datetime: 2016-05-09 04:49:39
+* Archive File: [Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/c11408c98bc1fcde66e0b6483d1a620b65763b29/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/Sample.9ef8f6baac9c7681956404230a5a71b10dfa7236.nl-nl.xlf)
+* Archive Datetime: 2016-05-09 05:53:46
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
