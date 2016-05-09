@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8d87eb96206174e9f415404968ceb9793298d2b3/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md) | HandedOffSuccess | [Details](#71a6f2661f127049e1dfe06196fe7f797b42b0d09)
 
 ## Item Details
-##### <a name='71a6f2661f127049e1dfe06196fe7f797b42b0d09'></a> Source: [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8d87eb96206174e9f415404968ceb9793298d2b3/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [add-apps-for-mobile-devices-in-microsoft-intune.00bc5e3beed243564d53068143ada60929dcd577.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/03ff4f1462e5ceb26edf457609c295081a62d013/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/add-apps-for-mobile-devices-in-microsoft-intune.00bc5e3beed243564d53068143ada60929dcd577.nl-nl.xlf)
-* Handoff Datetime: 2016-05-08 23:33:54
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
