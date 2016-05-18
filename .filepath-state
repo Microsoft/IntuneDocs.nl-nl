@@ -245,15 +245,6 @@
   "9bf394f9b6c9a5b4924de2407f8d8e61d01bd6c8": [
     "Azure-RMSDocs\\rms-client\\TOC.md"
   ],
-  "ea3d788a0b31ae119fc6de1aca0b1949d059a865": [
-    "Azure-RMSDocs\\index.html"
-  ],
-  "30045784e34d0a69a1a1ff0a33aea499af46f3ec": [
-    "Azure-RMSDocs\\index.html"
-  ],
-  "8dfb2dd36ec1274f681fde37a30e4e3c2a3939b5": [
-    "Azure-RMSDocs\\index.html"
-  ],
   "20715a7298d29bcf817ddbfc809eb84ead8d97ef": [
     "Azure-RMSDocs\\includes\\rms-quickstart-intro-include.md"
   ],
@@ -1949,6 +1940,9 @@
   "a2d8b59dabc0ca624984c7bb03add52563d2cdf1": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
   ],
+  "d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf": [
+    "Azure-RMSDocs\\deploy-use\\activate-service.md"
+  ],
   "6a7d8a7c00e4568ff73aa387444a0d146bebe969": [
     "Azure-RMSDocs\\deploy-use\\activate-service.md"
   ],
@@ -2017,6 +2011,9 @@
   ],
   "6ad2d769bc4cde86db5322df0ba5f87f00ade7d5": [
     "Azure-RMSDocs\\deploy-use\\configure-templates-with-powershell.md"
+  ],
+  "c4b177c2d55984f495f430213653f1a4a84a7ae6": [
+    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
   "4f83660fa14cc6c926b8aceac97ee311abea89a0": [
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
