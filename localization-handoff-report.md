@@ -1,20 +1,21 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/DeployUse/manage-corporate-owned-devices.md) | HandedOffSuccess | [Details](#0ce1bf409ced1fa46ba13ab8ea294d00df7f476667)
- [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md) | HandedOffSuccess | [Details](#fb8b5453664b3b60d801ddb372114eb2d0d67704589)
+ [InTuneDocs\DeployUse\Configure-certificate-infrastructure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure.md) | HandedOffSuccess | [Details](#a949eb8f212746cace9ad69855780feb7bab0bee22)
+ [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-pfx.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-pfx.md) | HandedOffSuccess | [Details](#0f282784c3d2ea87b5ea065cb042d135a4ce160920)
+ [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-scep.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-scep.md) | HandedOffSuccess | [Details](#23094d0ae88b2ade100dbec55eb147a647e6c56721)
 
 ## Item Details
-##### <a name='0ce1bf409ced1fa46ba13ab8ea294d00df7f476667'></a> Source: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
+##### <a name='a949eb8f212746cace9ad69855780feb7bab0bee22'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/bbeb9e039d539d77b57750c67ebd770f76ffd08e/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.nl-nl.xlf)
-* Handoff Datetime: 2016-05-24 23:59:56
+* Handoff File: [Configure-certificate-infrastructure.11aa141bf0218e2b062073a62a6f700c787600de.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/a8eaee1ee4a0f8ddc013dbaef537d063192f9ffe/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/Configure-certificate-infrastructure.11aa141bf0218e2b062073a62a6f700c787600de.nl-nl.xlf)
+* Handoff Datetime: 2016-05-25 16:06:21
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -22,11 +23,23 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fb8b5453664b3b60d801ddb372114eb2d0d67704589'></a> Source: [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md)
+##### <a name='0f282784c3d2ea87b5ea065cb042d135a4ce160920'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-pfx.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-pfx.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/bbeb9e039d539d77b57750c67ebd770f76ffd08e/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.nl-nl.xlf)
-* Handoff Datetime: 2016-05-24 23:59:56
+* Handoff File: [Configure-certificate-infrastructure-for-pfx.cfce8751275f4501921f73503ac749350c9d9ea8.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/a8eaee1ee4a0f8ddc013dbaef537d063192f9ffe/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/Configure-certificate-infrastructure-for-pfx.cfce8751275f4501921f73503ac749350c9d9ea8.nl-nl.xlf)
+* Handoff Datetime: 2016-05-25 16:06:21
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='23094d0ae88b2ade100dbec55eb147a647e6c56721'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-scep.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-scep.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [Configure-certificate-infrastructure-for-scep.fc0c1e54cbbd8768ac8185f7fcac6d5e86e891c1.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/a8eaee1ee4a0f8ddc013dbaef537d063192f9ffe/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/Configure-certificate-infrastructure-for-scep.fc0c1e54cbbd8768ac8185f7fcac6d5e86e891c1.nl-nl.xlf)
+* Handoff Datetime: 2016-05-25 16:06:21
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
