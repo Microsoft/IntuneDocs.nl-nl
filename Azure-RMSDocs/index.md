@@ -2,8 +2,8 @@
 asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
 layout: HubPage
 
-title: Azure Rights Management Documentation
-description: Technical documentation for Azure Rights Management
+title: Azure Rights Management-documentatie
+description: Technische documentatie voor Azure Rights Management
 keywords: rights management documentation, rms documentation, Azure RMS documentation
 author: msmbaldwin
 manager: mbaldwin
@@ -16,11 +16,11 @@ ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 
 ---
-# Azure Rights Management Documentation
+# Azure Rights Management-documentatie
 <article id="main">
     <section id="hero-content">
-      <h1>Azure Rights Management Documentation</h1>
-      <h2>Learn how to deploy and manage Azure Rights Management (Azure RMS). Quickly get started using Rights Management to apply information protection to email, documents, and other sensitive data.</h2>
+      <h1>Azure Rights Management-documentatie</h1>
+      <h2>Informatie over het implementeren en beheren van Azure Rights Management (Azure RMS). Ga snel aan de slag met Rights Management om gegevensbeveiliging toe te passen op e-mail, documenten en andere gevoelige gegevens.</h2>
 
       <h3>New to Azure RMS? <a href="http://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/" target="_blank">Visit our product site &rarr;</a></h3>
     </section>
@@ -28,7 +28,7 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
     <aside class="alert section-border">
         <p>Ready to get hands-on?</p>
         <ol class="action-list">
-            <li><a href="https://portal.office.com/Signup/Signup.aspx?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=RIGHTSMANAGEMENT&ali=1#0" target="_blank class="button-bordered button-translucent">Try Now</a></li>
+            <li><a href="https://portal.office.com/Signup/Signup.aspx?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=RIGHTSMANAGEMENT&ali=1#0" target="_blank" class="button-bordered button-translucent">Try Now</a></li>
         </ol>
     </aside>
 
@@ -234,8 +234,13 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
     <aside class="alert alert-social">
       <p>Keep up-to-date on Azure RMS
       <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/rms/" target="_blank class="button-bordered button-translucent">Official RMS Team Blog</a></li>
-        <li><a href="https://twitter.com/TheRMSGuy" target="_blank class="button-bordered button-translucent">@TheRMSGuy on Twitter</a></li>
+        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">Official RMS Team Blog</a></li>
+        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">@TheRMSGuy on Twitter</a></li>
       </ol>
     </aside>
 </article>
+
+
+<!--HONumber=Apr16_HO4-->
+
+
