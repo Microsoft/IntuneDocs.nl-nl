@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -55,7 +55,7 @@ Voor dit scenario moet aanwezig zijn:
 
 |Vereiste|Als u meer informatie wilt|
 |---------------|--------------------------------|
-|U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid:<br /><br />Een e-mailgroep met de naam **Bevoegde toegang** die de kleine groep mensen bevat die toegang moet hebben tot deze zeer vertrouwelijke documenten<br /><br />Een e-mailgroep met de naam ** IT-nalevingsmanagers** die personen bevat die verantwoordelijk zijn voor eDiscovery, bewaking en controle<br /><br />Een e-mailgroep met de naam **RMS-beheerders**, en alle beheerders die Azure RMS configureren zijn lid van deze groep|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid:<br /><br />- Een e-mailgroep met de naam **Bevoegde toegang** die de kleine groep mensen bevat die toegang moet hebben tot deze zeer vertrouwelijke documenten<br /><br />- Een e-mailgroep met de naam ** IT-nalevingsmanagers** die personen bevat die verantwoordelijk zijn voor eDiscovery, bewaking en controle<br /><br />- Een e-mailgroep met de naam **RMS-beheerders** en alle beheerders die Azure RMS configureren zijn lid van deze groep|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
 |U hebt een aangepaste sjabloon geconfigureerd, zoals hieronder wordt beschreven|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |De Rights Management-toepassing voor delen is op uw Windows-computer geïmplementeerd, zodat u deze lokale bestanden kunt beveiligen, zoals in de volgende sectie wordt beschreven|[De Rights Management-toepassing voor delen downloaden en installeren](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
@@ -152,6 +152,6 @@ Op de volgende bestanden wordt nu een zeer hoog niveau van beveiliging toegepast
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

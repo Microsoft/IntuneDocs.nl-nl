@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -59,7 +59,7 @@ De instructies voor dit scenario gelden alleen als aan de volgende voorwaarden i
 |U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Uw Azure Rights Management-tenantsleutel wordt beheerd door Microsoft. U maakt geen gebruik van BYOK|[Uw Azure Rights Management-tenantsleutel plannen en implementeren](https://technet.microsoft.com/library/dn440580.aspx)|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
-|Een van de volgende:<br /><br />Exchange Online is ingeschakeld voor Azure Rights Management<br /><br />De RMS-connector is geïnstalleerd en geconfigureerd voor Exchange on-premises|Voor Exchange Online: zie de sectie **Exchange Online: IRM-configuratie** in [Toepassingen configureren voor Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Voor Exchange on-premises: [De Azure Rights Management-connector implementeren](https://technet.microsoft.com/library/dn375964.aspx)|
+|Een van de volgende:<br /><br />- Exchange Online is ingeschakeld voor Azure Rights Management<br /><br />- De RMS-connector is geïnstalleerd en geconfigureerd voor Exchange On-Premises|Voor Exchange Online: zie de sectie **Exchange Online: IRM-configuratie** in [Toepassingen configureren voor Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Voor Exchange on-premises: [De Azure Rights Management-connector implementeren](https://technet.microsoft.com/library/dn375964.aspx)|
 |U hebt de Azure Rights Management-standaardsjabloon **&lt;organisatie&gt;: vertrouwelijk** niet gearchiveerd. Of u hebt een aangepaste sjabloon voor dit doel geconfigureerd omdat u meer beperkende instellingen wilt toepassen of alleen een subset van gebruikers in de organisatie mogen de beveiligde e-mailberichten lezen.|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Tip: als u meer beperkende instellingen voor het gebruiksbeleid wilt toepassen voor alle gebruikers, kunt u beter een van de standaardsjablonen kopiëren en deze vervolgens bewerken dan een compleet nieuwe sjabloon te maken.<br /><br />Bijgewerkte sjablonen worden niet onmiddellijk vernieuwd voor de e-mailclients in dit scenario. Ga naar de sectie [Sjablonen vernieuwen voor gebruikers](https://technet.microsoft.com/library/dn642472.aspx) in het artikel over het configureren van sjablonen voor meer informatie.|
 |Gebruikers die de beveiligde e-mail verzenden, beschikken over Outlook 2013 of Outlook 2016, of Outlook Web Access.<br /><br />Gebruikers die de e-mail ontvangen, beschikken over een e-mailclient die ondersteuning biedt voor Azure Rights Management.|U kunt Outlook 2010 gebruiken, maar u moet [de Rights Management-toepassing voor delen voor Windows installeren](https://technet.microsoft.com/library/dn339003.aspx) en de gebruikersinstructies overeenkomstig aanpassen.<br /><br />Zie de kolom **E-mail** in de tabel [Functionaliteit van clientapparaten](https://technet.microsoft.com/library/dn655136.aspx) in [Vereisten voor Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx) voor een lijst met e-mailclients die ondersteuning bieden voor Azure Rights Management|
 
@@ -163,6 +163,6 @@ Personen naar wie u het e-mailbericht verzendt, kunnen dit doorsturen naar ander
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

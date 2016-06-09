@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/19/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -51,8 +51,6 @@ Hiermee kan de gebruiker inhoud in de toepassing wijzigen, rangschikken, opmaken
 
 **API-constante of -waarde**: *Niet van toepassing*
 
-In Office-toepassingen kan de gebruiker met deze rechten het document opslaan.
-
 ---
 
 ### Opslaan
@@ -93,25 +91,25 @@ Dit recht is beschikbaar in de SDK en als ad-hocbeleid in de module RMS-beveilig
 
 ### Opslaan als, Exporteren
 
-Hiermee wordt de optie ingeschakeld voor het opslaan van de inhoud onder een andere bestandsnaam (Opslaan als). Afhankelijk van de toepassing kan het bestand zonder beveiliging worden opgeslagen.
+Hiermee wordt de optie ingeschakeld voor het opslaan van de inhoud onder een andere bestandsnaam (Opslaan als). Het bestand kan zonder beveiliging worden opgeslagen als het om Office-documenten gaat.
 
 **Codering in beleid**: EXPORT
 
 **Implementatie in aangepaste Office-rechten:** als onderdeel van de opties *Wijzigen* en *Volledig beheer*.
 
-**Naam in de klassieke Azure-portal:**: *Inhoud exporteren (Opslaan als)*
+**Naam in de klassieke Azure-portal:***Inhoud exporteren (Opslaan als)*
 
-**Naam in AD RMS-sjablonen**:  *Exporteren (Opslaan als)*
+**Naam in AD RMS-sjablonen:** *Exporteren (Opslaan als)*
 
 **API-constante of -waarde:** IPC_GENERIC_EXPORTL"EXPORT"
 
-Met dit recht kan de gebruiker ook andere exportopties uitvoeren in toepassingen, zoals *Verzenden naar OneNote*.
+Met dit recht kan de gebruiker ook andere exportopties in toepassingen uitvoeren, zoals *Verzenden naar OneNote*.
 
 ---
 
 ### Doorsturen
 
-Hiermee wordt de optie ingeschakeld voor het doorsturen van een e-mailbericht en het toevoegen van geadresseerden in de regels *Aan* en *CC*.
+Hiermee wordt de optie ingeschakeld voor het doorsturen van een e-mailbericht en het toevoegen van geadresseerden in de regels *Aan* en *CC*. Dit recht geldt niet voor documenten maar alleen voor e-mailberichten.
 
 **Codering in beleid:** FORWARD
 
@@ -209,55 +207,24 @@ Hiermee kan de gebruiker het document openen en de inhoud bekijken.
 
 ---
 
-### Rechten weergeven
+### Kopiëren
 
-Hiermee kan de gebruiker het beleid zien dat wordt toegepast op het document.
+Hiermee schakelt u opties in voor het kopiëren van gegevens (inclusief schermopnamen) uit het document naar hetzelfde of een ander document.
 
-**Codering in beleid:** VIEWRIGHTSDATA
+**Codering in beleid**: EXTRAHEREN
 
-**Implementatie in aangepaste Office-rechten:** niet geïmplementeerd.
+**Implementatie in aangepaste Office-rechten:** als de aangepaste beleidsoptie *Gebruikers met leestoegang toestaan om inhoud te kopiëren*.
 
-**Naam in de klassieke Azure-portal:** *Toegewezen rechten weergeven*
+**Naam in de klassieke Azure-portal:** *Inhoud kopiëren en extraheren*
 
-**Naam in AD RMS-sjablonen:** *Rechten weergeven*
+**Naam in AD RMS-sjablonen:** *Extraheren*
 
-**API-constante of -waarde:** IPC_READ_RIGHTSL"VIEWRIGHTSDATA"
+**API-constante of -waarde:** IPC_GENERIC_EXTRACTL"EXTRACT"
 
----
-
-### Algemene naam: Rechten weergeven
-
-Hiermee kan de gebruiker het beleid zien dat wordt toegepast op het document.
-
-**Codering in beleid:** VIEWRIGHTSDATA
-
-**Implementatie in aangepaste Office-rechten:** niet geïmplementeerd.
-
-**Naam in de klassieke Azure-portal:** *Toegewezen rechten weergeven*
-
-**Naam in AD RMS-sjablonen:** *Rechten weergeven*
-
-**API-constante of -waarde:** IPC_READ_RIGHTSL"VIEWRIGHTSDATA"
-
-Door sommige toepassingen genegeerd.
+In sommige toepassingen kunt u ook het hele document opslaan in een niet-beveiligde vorm.
 
 ---
 
-### Rechten wijzigen
-
-Hiermee kan de gebruiker het beleid wijzigen dat wordt toegepast op het document. Omvat opheffen van beveiliging.
-
-**Codering in beleid:** EDITRIGHTSDATA
-
-**Implementatie in aangepaste Office-rechten:** niet geïmplementeerd.
-
-**Naam in de klassieke Azure-portal:** *Rechten wijzigen*
-
-**Naam in AD RMS-sjablonen:** *Rechten bewerken*
-
-**API-constante of -waarde:** IPC_WRITE_RIGHTSL"EDITRIGHTSDATA"
-
----
 
 ### Macro's toestaan
 
@@ -267,9 +234,9 @@ Hiermee wordt de optie ingeschakeld voor het uitvoeren van macro's of andere toe
 
 **Implementatie in aangepaste Office-rechten**: als onderdeel van de aangepaste beleidsoptie *Toegang op programmeerniveau toestaan*. Geen instelling die per ontvanger wordt ingesteld.
 
-**Naam in de klassieke Azure-portal:** *Macro’s toestaan*
+**Naam in de klassieke Azure-portal:** *Macro's toestaan*
 
-**Naam in AD RMS-sjablonen:** *Macro’s toestaan*
+**Naam in AD RMS-sjablonen:** *Macro's toestaan*
 
 **API-constante of -waarde:** niet van toepassing
 
@@ -297,14 +264,14 @@ De volgende rechten zijn opgenomen in de standaardsjablonen:
 
 |Weergavenaam|Opgenomen rechten (algemene naam)|
 |----------------|---------------------------------|
-|&lt;*Naam van de organisatie*&gt; *: alleen vertrouwelijke weergave*|Weergeven, Openen, Lezen|
-|&lt;*Naam van organisatie*&gt; *: vertrouwelijk*|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Rechten weergeven; Macro's toestaan; Doorsturen; Antwoorden; Allen beantwoorden|
+|&lt;*Naam van de organisatie*&gt;*: alleen vertrouwelijke weergave*|Weergeven, Openen, Lezen|
+|&lt;*Naam van organisatie*&gt;*: vertrouwelijk*|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Rechten weergeven; Macro's toestaan; Doorsturen; Antwoorden; Allen beantwoorden|
 
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

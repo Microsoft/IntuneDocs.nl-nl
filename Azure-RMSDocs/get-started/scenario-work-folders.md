@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -60,7 +60,7 @@ De instructies voor dit scenario gelden alleen als aan de volgende voorwaarden i
 |---------------|--------------------------------|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
 |U hebt de lokale Active Directory-gebruikersaccounts gesynchroniseerd met Azure Active Directory of Office 365, met inbegrip van de bijbehorende e-mailadressen. Dit is verplicht voor alle gebruikers die gebruikmaken van werkmappen.|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Een van de volgende:<br /><br />Met een standaardsjabloon voor alle gebruikers die niet toestaat dat gebruikers een nieuw rechtenbeleid toepassen: u hebt de standaardsjabloon **&lt;organisatienaam&gt; - vertrouwelijk** niet gearchiveerd<br /><br />Een aangepaste sjabloon gebruiken waarmee gebruikers een nieuw rechtenbeleid kunnen toepassen: voer de volgende instructies uit om een aangepaste sjabloon te maken|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Een van de volgende:<br /><br />- Een standaardsjabloon gebruiken voor alle gebruikers die niet toestaat dat gebruikers een nieuw rechtenbeleid toepassen: u hebt de standaardsjabloon **&lt;organisatienaam&gt; - vertrouwelijk** niet gearchiveerd<br /><br />- Een aangepaste sjabloon gebruiken waarmee gebruikers een nieuw rechtenbeleid kunnen toepassen: voer de volgende instructies uit om een aangepaste sjabloon te maken|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |De Rights Management-connector is geïnstalleerd, gemachtigd voor de Windows Server-computer en geconfigureerd voor de **FCI Server**-rol.|[De Azure Rights Management-connector implementeren](https://technet.microsoft.com/library/dn375964.aspx)|
 |De Rights Management-toepassing voor delen is geïmplementeerd op computers van gebruikers waarop Windows wordt uitgevoerd|[Automatische implementatie voor de Microsoft Rights Management-toepassing voor delen](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 
@@ -128,6 +128,6 @@ Als u de aangepaste sjabloon had geconfigureerd zoals beschreven voor dit scenar
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

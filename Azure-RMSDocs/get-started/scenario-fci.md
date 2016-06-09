@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,11 +49,11 @@ Zorg ervoor dat aan de volgende vereisten is voldaan en voer vervolgens de instr
 ## Vereisten voor dit scenario
 De instructies voor dit scenario gelden alleen als aan de volgende voorwaarden is voldaan:
 
-|Vereiste|Als u meer informatie wilt|
+|Vereiste|Als u meer informatie nodig hebt|
 |---------------|--------------------------------|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
 |U hebt de on-premises Active Directory-gebruikersaccounts gesynchroniseerd met Azure Active Directory of Office 365, met inbegrip van de bijbehorende e-mailadressen. Dit is vereist voor alle gebruikers die mogelijk toegang moeten hebben tot de bestanden nadat deze door FCI en Azure Rights Management zijn beveiligd.|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Een van de volgende:<br /><br />Met een standaardsjabloon voor alle gebruikers: u hebt de standaardsjabloon, &lt;organisatienaam&gt;: vertrouwelijk, niet gearchiveerd<br /><br />Met een aangepaste sjabloon voor specifieke gebruikers: u hebt deze aangepaste sjabloon gemaakt en gepubliceerd|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Een van de volgende:<br /><br />- Met een standaardsjabloon voor alle gebruikers: u hebt de standaardsjabloon, &lt;organisatienaam&gt;: vertrouwelijk, niet gearchiveerd<br /><br />- Met een aangepaste sjabloon voor specifieke gebruikers: u hebt deze aangepaste sjabloon gemaakt en gepubliceerd|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |De Rights Management-toepassing voor delen is geïmplementeerd op computers van gebruikers waarop Windows wordt uitgevoerd|[Automatische implementatie voor de Microsoft Rights Management-toepassing voor delen](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |U hebt het RMS-beveiligingshulpprogramma gedownload en de vereiste onderdelen voor Azure RMS geconfigureerd|Voor instructies voor het downloaden van het hulpprogramma en de vereisten: [Cmdlets van RMS-beveiliging](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Aanvullende vereisten voor Azure RMS, zoals de hoofdaccount voor de service, configureren: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
@@ -161,6 +161,6 @@ Het bestand wordt regelmatig opnieuw beveiligd, zodat de bestandsextensie .pfile
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,8 +42,7 @@ De RMS-client kan vrijelijk opnieuw worden gedistribueerd en gebundeld met ander
 ## De RMS-client installeren
 De RMS-client is opgenomen in een uitvoerbaar installatiebestand met de naam **setup_msipc_***<arch>***.exe**, waarbij het *<arch>* bestand **x86** (voor 32 bitsclientcomputers) of **x64** (voor 64 bitsclientcomputers) is. Met het 64 bitsinstallatiepakket (x64) wordt zowel een uitvoerbaar bestand voor de 32 bitsruntime geïnstalleerd voor compatibiliteit met 32 bitstoepassingen die op een 64 bitsbesturingssysteem worden uitgevoerd als een uitvoerbaar bestand voor de 64 bitsruntime voor ondersteuning van systeemeigen 64 bitstoepassingen. Het 32-bits (x86) installatieprogramma kan niet worden uitgevoerd op een 64-bits Windows-installatie.
 
-> [!NOTE]
-> U moet verhoogde bevoegdheden hebben voor het installeren van de RMS-client, bijvoorbeeld zoals een lid van de groep Administrators op de lokale computer.
+> [!NOTE] U moet verhoogde bevoegdheden hebben voor het installeren van de RMS-client, bijvoorbeeld voor een lid van de groep Administrators op de lokale computer.
 
 U kunt de RMS-client installeren via een van de volgende installatiemethoden:
 
@@ -117,10 +116,10 @@ U kunt de Windows-registersleutels gebruiken om enkele RMS-client-configuraties 
 |--------|------------|
 |Alleen voor AD RMS:de servicelocatie van de onderneming voor een clientcomputer bijwerken|Update de volgende registersleutels:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**Waarde:**<http or https>:// *RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**Waarde:** <http or https>:// *RMS_Cluster_Name*/_wmcs/Licensing|
 |Tracering in- en uitschakelen|Werk de volgende registersleutel bij:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: traceren<br /><br />**Waarden:** 1 tracering inschakelen, 0 tracering uitschakelen (standaard)|
-|De frequentie in dagen voor het vernieuwen van sjablonen wijzigen|De volgende registerwaarden geven aan hoe vaak sjablonen worden vernieuwd op de computer van de gebruiker als de waarde TemplateUpdateFrequencyInSeconds niet is ingesteld.  Als geen van deze waarden is ingesteld, is het standaardvernieuwingsinterval voor het downloaden van sjablonen door toepassingen die de RMS-client (versie 1.0.1784.0) gebruiken, 1 dag. Eerdere versies hebben een standaardwaarde van elke 7 dagen.<br /><br />**Clientmodus:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Waarde:** een geheel getal dat het aantal dagen (minimaal 1) tussen downloads specificeert.<br /><br />**Servermodus:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\*<SID>*<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Waarde:** een geheel getal dat het aantal dagen (minimaal 1) tussen downloads specificeert.|
-|De frequentie in seconden voor het vernieuwen van sjablonen wijzigen<br /><br />Belangrijk: als deze waarde is opgegeven, wordt de waarde voor het vernieuwen van sjablonen in dagen genegeerd. Geef een van beide op, niet beide.|De volgende registerwaarden geven aan hoe vaak de sjablonen op de computer van de gebruiker worden bijgewerkt. Als deze waarde of de waarde voor het wijzigen van de frequentie in dagen (TemplateUpdateFrequency) niet is ingesteld, is het standaardvernieuwingsinterval voor het downloaden van sjablonen door toepassingen die de RMS-client (versie 1.0.1784.0) gebruiken, 1 dag. Eerdere versies hebben een standaardwaarde van elke 7 dagen.<br /><br />**Clientmodus:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Waarde:** een geheel getal dat het aantal seconden (minimaal 1) tussen downloads specificeert.<br /><br />**Servermodus:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\*<SID>*<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Waarde:** een geheel getal dat het aantal dagen (minimaal 1) tussen downloads specificeert.|
-|Alleen voor AD RMS: sjablonen direct downloaden na het volgende publicatieverzoek|Tijdens het testen en evalueren, wilt u de RMS-client mogelijk zo snel mogelijk sjablonen laten downloaden. Verwijder hiervoor de volgende registersleutel, zodat de RMS-client sjablonen direct downloadt na het volgende publicatieverzoek in plaats van te wachten op de tijd die door de registerinstelling TemplateUpdateFrequency is opgegeven.<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<Server Name>\Template<br /><br />**Opmerking**: <Server Name> kan zowel externe (corprights.contoso.com) als interne (corprights) URL's, en dus twee verschillende vermeldingen hebben.|
-|Alleen voor AD RMS: ondersteuning voor Federated Authentication inschakelen|Als de RMS-clientcomputer verbinding maakt met een AD RMS-cluster met een federatieve vertrouwensrelatie, moet u het federatieve thuisdomein configureren.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Waarde:** de waarde van deze registervermelding is de uniform resource identifier (URI) voor de Federation Service (bijvoorbeeld 'https://fs-01.contoso.com').|
+|De frequentie in dagen voor het vernieuwen van sjablonen wijzigen|De volgende registerwaarden geven aan hoe vaak sjablonen worden vernieuwd op de computer van de gebruiker als de waarde TemplateUpdateFrequencyInSeconds niet is ingesteld.  Als geen van deze waarden is ingesteld, is het standaardvernieuwingsinterval voor het downloaden van sjablonen door toepassingen die de RMS-client (versie 1.0.1784.0) gebruiken, 1 dag. Eerdere versies hebben een standaardwaarde van elke 7 dagen.<br /><br />**Clientmodus:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Waarde:** een geheel getal dat het aantal dagen (minimaal 1) tussen downloads specificeert.<br /><br />**Servermodus:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Waarde:** een geheel getal dat het aantal dagen (minimaal 1) tussen downloads specificeert.|
+|De frequentie in seconden voor het vernieuwen van sjablonen wijzigen<br /><br />Belangrijk: als deze waarde is opgegeven, wordt de waarde voor het vernieuwen van sjablonen in dagen genegeerd. Geef een van beide op, niet beide.|De volgende registerwaarden geven aan hoe vaak de sjablonen op de computer van de gebruiker worden bijgewerkt. Als deze waarde of de waarde voor het wijzigen van de frequentie in dagen (TemplateUpdateFrequency) niet is ingesteld, wordt het standaardvernieuwingsinterval voor het downloaden van sjablonen door toepassingen die de RMS-client (versie 1.0.1784.0) gebruiken, ingesteld op 1 dag. Eerdere versies hebben een standaardwaarde van elke 7 dagen.<br /><br />**Clientmodus:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Waarde:** een geheel getal dat het aantal seconden (minimaal 1) tussen downloads specificeert.<br /><br />**Servermodus:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Waarde:** een geheel getal dat het aantal seconden (minimaal 1) tussen downloads aangeeft.|
+|Alleen voor AD RMS: sjablonen direct downloaden na het volgende publicatieverzoek|Tijdens het testen en evalueren, wilt u de RMS-client mogelijk zo snel mogelijk sjablonen laten downloaden. Verwijder hiervoor de volgende registersleutel, zodat de RMS-client sjablonen direct downloadt na het volgende publicatieverzoek in plaats van te wachten op de tijd die door de registerinstelling TemplateUpdateFrequency is opgegeven.<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<Server Name>\Template<br /><br />**Opmerking**: <Server Name> kan zowel externe (corprights.contoso.com) als interne (corprights) URL's, en dus twee verschillende vermeldingen, hebben.|
+|Alleen voor AD RMS: ondersteuning voor Federated Authentication inschakelen|Als de RMS-clientcomputer verbinding maakt met een AD RMS-cluster met een federatieve vertrouwensrelatie, moet u het federatieve thuisdomein configureren.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Waarde:** de waarde van deze registervermelding is de URI voor de Federation Service (bijvoorbeeld http://TreyADFS.trey.net/adfs/services/trust).<br /><br /> **Opmerking**: het is belangrijk dat u http en niet https opgeeft voor deze waarde. Bovendien wordt de locatie HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation wanneer uw 32 bits-MPSIC-toepassing wordt uitgevoerd op een 64 bitsversie van Windows. Zie [Active Directory Rights Management Services implementeren met Active Directory Federation Services](https://technet.microsoft.com/library/dn758110.aspx) voor een voorbeeldconfiguratie.|
 |Alleen voor AD RMS: federatieve servers van partners ondersteunen waarvoor verificatie op basis van formulieren is vereist voor de gebruikersinvoer|De RMS-client wordt standaard in stille modus uitgevoerd en gebruikersinvoer is niet vereist. Federatieve servers van partners kunnen echter zijn geconfigureerd om gebruikersinvoer te vereisen zoals verificatie op basis van formulieren. In dat geval moet u de RMS-client configureren om de stille modus te negeren, zodat het Federated Authentication-formulier in een browservenster wordt weergegeven en de gebruiker om verificatie wordt gevraagd.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**Opmerking**: als de federatieve server is geconfigureerd om verificatie op basis van formulieren te gebruiken, is deze sleutel vereist. Als de federatieve server is geconfigureerd om geïntegreerde verificatie van Windows te gebruiken dan is deze sleutel niet vereist.|
 |Alleen voor AD RMS: ILS-servicegebruik blokkeren|Het gebruik van inhoud die wordt beveiligd door de ILS-service wordt standaard ingeschakeld door de RMS-client. U kunt de client kan echter zo configureren dat deze service wordt geblokkeerd door de volgende registersleutel in te stellen. Als deze registersleutel is ingesteld om ILS-service te blokkeren, wordt elke poging om inhoud die is beveiligd door de ILS-service te openen en te verbruiken, geretourneerd met de volgende fout:<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: **DisablePassportCertification**<br /><br />**Waarde:** 1 ILS-verbruik blokkeren, 0 ILS-verbruik toestaan (standaard)|
 
@@ -129,7 +128,7 @@ Met sjablonen kunnen gebruikers en beheerders eenvoudig en snel Rights Managemen
 
 **Clientmodus:** %localappdata%\Microsoft\MSIPC\UnmanagedTemplates
 
-**Servermodus:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\*<SID>*
+**Servermodus:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>\*
 
 Wanneer u deze map gebruikt, is er geen speciale naamconventie vereist, behalve dat de sjablonen moeten worden uitgegeven door de RMS-server of -service en de bestandsextensie .xml moeten hebben. Geldige namen zijn bijvoorbeeld Contoso-Confidential.xml of Contoso-ReadOnly.xml.
 
@@ -148,7 +147,7 @@ De RMS-client kan worden beperkt tot het gebruik van alleen specifieke vertrouwd
 -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\TrustedServers\
     REG_SZ: *<URL_or_HostName>*
 
-    **Waarde:** de tekenreekswaarden in deze registersleutellocatie kunnen de naamindeling van een DNS-domein hebben (bijvoorbeeld **adrms.contoso.com**) of volledige URL's naar vertrouwde AD RMS-servers hebben (bijvoorbeeld **https://adrms.contoso.com**). Als een opgegeven URL begint met **https://**, gebruikt de RMS-client SSL of TLS om contact op te nemen met de opgegeven AD RMS-server.
+    **Waarde:** de tekenreekswaarden in deze registersleutellocatie kunnen de naamindeling van een DNS-domein hebben (bijvoorbeeld **adrms.contoso.com**) of volledige URL's naar vertrouwde AD RMS-servers hebben (bijvoorbeeld **https://adrms.contoso.com**). Als een opgegeven URL begint met **https://**, wordt in de RMS-client SSL of TLS gebruikt om contact op te nemen met de opgegeven AD RMS-server.
 
 ## Detectie van RMS-services
 Met RMS-servicedetectie kan de RMS-client controleren welke RMS-server of -service moet communiceren voordat inhoud wordt beveiligd. Servicedetectie kan ook optreden als de RMS-client beveiligde inhoud verbruikt, maar dit is minder waarschijnlijk, omdat het beleid dat is gekoppeld aan de inhoud de voorkeur RMS-server of -service bevat. Alleen als dat niet werkt, voert de client servicedetectie uit.
@@ -191,21 +190,19 @@ Als alternatief voor het gebruik van een SCP of wanneer er geen SCP bestaat, kun
 
     -   Typ op de clientcomputer in het venster Uitvoeren **regedit** en druk vervolgens op Enter om de Register-editor te openen.
 
-2.  In de Register-editor gaat u naar **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**.
+2.  Navigeer in Register-editor naar **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**.
 
-    > [!IMPORTANT]
-    > Als u een 32 bitstoepassing op een 64 bitscomputer uitvoert, is het pad als volgt: 
-    > **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT] Het pad wordt als volgt wanneer u een 32 bitstoepassing uitvoert op een 64 bitscomputer: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  Als u de ServiceLocation-subsleutel wilt maken, klikt u met de rechtermuisknop op **MSIPC**, wijst u **Nieuw** aan, klikt u op **Sleutel** en typt u vervolgens **ServiceLocation**.
 
 4.  Als u de EnterpriseCertification-subsleutel wilt maken, klikt u met de rechtermuisknop op **ServiceLocation**, wijst u **Nieuw** aan, klikt u op **Sleutel** en typt u vervolgens **EnterpriseCertification**.
 
-5.  Doe het volgende als u de URL voor ondernemingscertificering wilt instellen: dubbelklik op de waarde **(Standaard)** onder de subsleutel **EnterpriseCertification**. Als het dialoogvenster **Tekenreeks bewerken** wordt weergegeven, typt u voor **Waardegegevens** <http or https>://*AD RMS_cluster_name*/_wmcs/Certification en klikt u vervolgens op **OK**.
+5.  Doe het volgende als u de URL voor ondernemingscertificering wilt instellen: dubbelklik op de waarde **(Standaard)** onder de subsleutel **EnterpriseCertification**. Als het dialoogvenster **Tekenreeks bewerken** wordt weergegeven, typt u voor **Waardegegevens** <http or https>://*AD RMS_cluster_name*/_wmcs/Certification en klikt u op **OK**.
 
 6.  Als u de EnterprisePublishing-subsleutel wilt maken, klikt u met de rechtermuisknop op **ServiceLocation**, wijst u **Nieuw** aan, klikt u op **Sleutel** en typt u vervolgens EnterprisePublishing.
 
-7.  Doe het volgende als u de URL voor ondernemingspublicatie wilt instellen: dubbelklik op **(Standaard)** onder de subsleutel **EnterprisePublishing**. Als het dialoogvenster **Tekenreeks bewerken** wordt weergegeven, typt u voor **Waardegegevens** <http or https>://*AD RMS_cluster_name*/_wmcs/Licensing en klikt u vervolgens op **OK**.
+7.  Doe het volgende als u de URL voor ondernemingspublicatie wilt instellen: dubbelklik op **(Standaard)** onder de subsleutel **EnterprisePublishing**. Als het dialoogvenster **Tekenreeks bewerken** wordt weergegeven, typt u voor **Waardegegevens** het volgende <http or https>://*AD RMS_cluster_name*/_wmcs/Licensing en klikt u op **OK**.
 
 8.  Sluit de Register-editor af.
 
@@ -226,7 +223,7 @@ In sommige gevallen moet u mogelijk verkeer omleiden tijdens servicedetectie, bi
 
     -   Voor een 32 bitsversie van Office op een x64-platform: HKLM\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Servicelocation
 
-3.  Maak een subsleutel LicensingRedirection door met de rechtermuisknop te klikken op **ServiceLocation**, wijs **Nieuw** aan, klik op **Sleutel** en typ vervolgens **LicensingRedirection**.
+3.  Maak een subsleutel LicensingRedirection door met de rechtermuisknop op **ServiceLocation** te klikken. Wijs vervolgens **Nieuw** aan, klik op **Sleutel** en typ **LicensingRedirection**.
 
 4.  Stel de licentie-omleiding in door met de rechtermuisknop te klikken op de subsleutel **LicensingRedirection**, selecteer **Nieuw** en selecteer vervolgens **Waarde tekenreeks**.  Geef voor **Naam** de URL van de vorige serverlicentie op en geef voor **Waarde** de URL van de nieuwe serverlicentie op.
 
@@ -236,8 +233,7 @@ In sommige gevallen moet u mogelijk verkeer omleiden tijdens servicedetectie, bi
 
     **Waarde:** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE]
-    > Als voor de oude licentieserver URL's voor intranet en extranet zijn opgegeven dan moet een nieuwe naam- en waardetoewijzing worden ingesteld voor beide URL's onder de LicensingRedirection-sleutel.
+    > [!NOTE] Als voor de oude licentieserver URL's voor intranet en extranet zijn opgegeven, moet een nieuwe naam- en waardetoewijzing worden ingesteld voor beide URL's onder de LicensingRedirection-sleutel.
 
 5.  Herhaal de vorige stap voor alle servers die moeten worden omgeleid.
 
@@ -245,6 +241,6 @@ In sommige gevallen moet u mogelijk verkeer omleiden tijdens servicedetectie, bi
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

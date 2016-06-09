@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -51,10 +51,10 @@ De instructies voor dit scenario gelden alleen als aan de volgende voorwaarden i
 
 |Vereiste|Als u meer informatie wilt|
 |---------------|--------------------------------|
-|U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid:<br /><br />Een e-mailgroep met de naam **Leidinggevenden** en alle leidinggevenden zijn lid van deze groep<br /><br />Een e-mailgroep met de naam **RMS-beheerders**, en alle beheerders die Azure RMS configureren zijn lid van deze groep|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid:<br /><br />- Een e-mailgroep met de naam **Leidinggevenden** en alle leidinggevenden zijn lid van deze groep<br /><br />- Een e-mailgroep met de naam **RMS-beheerders** en alle beheerders die Azure RMS configureren zijn lid van deze groep|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Uw Azure Rights Management-tenantsleutel wordt beheerd door Microsoft. U maakt geen gebruik van BYOK|[Uw Azure Rights Management-tenantsleutel plannen en implementeren](https://technet.microsoft.com/library/dn440580.aspx)|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
-|Een van de volgende configuraties:<br /><br />Exchange Online is ingeschakeld voor Azure Rights Management<br /><br />De RMS-connector is geïnstalleerd en geconfigureerd voor Exchange on-premises|Voor Exchange Online: zie de sectie **Exchange Online: IRM-configuratie** in [Toepassingen configureren voor Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Voor Exchange on-premises: [De Azure Rights Management-connector implementeren](https://technet.microsoft.com/library/dn375964.aspx)|
+|Een van de volgende configuraties:<br /><br />- Exchange Online is ingeschakeld voor Azure Rights Management<br /><br />- De RMS-connector is geïnstalleerd en geconfigureerd voor Exchange On-Premises|Voor Exchange Online: zie de sectie **Exchange Online: IRM-configuratie** in [Toepassingen configureren voor Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Voor Exchange on-premises: [De Azure Rights Management-connector implementeren](https://technet.microsoft.com/library/dn375964.aspx)|
 |U hebt een aangepaste sjabloon geconfigureerd, zoals hieronder wordt beschreven|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |U hebt een transportbeveiligingsregel geconfigureerd voor IRM, zoals in dit artikel wordt beschreven|Voor Exchange Online: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Voor Exchange 2013: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />Voor Exchange 2010: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
@@ -138,6 +138,6 @@ Wanneer u vertrouwelijke bedrijfsinformatie verzendt naar een andere leidinggeve
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

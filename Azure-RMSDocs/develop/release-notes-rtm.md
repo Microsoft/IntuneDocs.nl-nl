@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Opmerkingen bij de release
 
 Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de RMS SDK 2.1.
@@ -55,7 +55,7 @@ Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de R
 
 ## Update van mei 2015
 
--   **Voor service-apps en RMS in de cloud** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) zijn drie soorten informatie vereist; symmetrische sleutel, **AppPrincipalId** en **TenantBposId**. Het onderwerp hiervoor is bijgewerkt met advies over het ophalen van deze informatie. Zie de bijgewerkte versie van [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Uw servicetoepassing inschakelen voor RMS in de cloud) voor deze update.
+-   Voor **service-apps en RMS in de cloud** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) zijn drie soorten informatie vereist; symmetrische sleutel, **AppPrincipalId** en **TenantBposId**. Het onderwerp hiervoor is bijgewerkt met advies over het ophalen van deze informatie. Zie de bijgewerkte versie van [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Uw servicetoepassing inschakelen voor RMS in de cloud) voor deze update.
 
 ## Update van april 2015
 
@@ -66,7 +66,7 @@ Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de R
 
      
 
--   Voor **servermodustoepassingen** die een [**API-moduswaarde**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER) gebruiken van **IPC\_API\_MODE\_SERVER**, is geen manifest van de toepassing meer vereist. U kunt uw toepassing testen op een RMS-productieserver en hoeft geen productielicentie te verkrijgen wanneer u overschakelt naar productieomgeving. Zie [Application types](application-types.md) (Toepassingstypen) voor meer informatie over servermodustoepassingen.
+-   Voor **servermodustoepassingen** die een [**API-moduswaarde**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER) gebruiken van **IPC\_API\_MODE\_SERVER**, is geen manifest van de toepassing meer vereist. U kunt uw toepassing testen op een RMS-productieserver en hoeft geen productielicentie te verkrijgen wanneer u overschakelt naar productieomgeving. Zie [Toepassingstypen](application-types.md) voor meer informatie over servermodustoepassingen.
 -   **Logboekregistratie** wordt nu geïmplementeerd via bestanden en Event Tracing for Windows.
 -   Zie de opmerking bij 'Belangrijke opmerkingen voor ontwikkelaars' als u een **computer met Windows 7 SP1 of Windows Server 2008 R2** gebruikt.
 
@@ -109,13 +109,13 @@ De bestands-API-onderdelen van SDK zijn uitgebreid en kunnen worden gebruikt voo
 ## Update van april 2014
 
 -   Het **geheugengebruik van de bestands-API** is met name voor grote beveiligde bestanden (PFile) aanzienlijk verbeterd.
--   De **Inhoud-id** kan nu worden bewerkt via de eigenschap **IPC\_LI\_CONTENT\_ID**. Zie [**License property types**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) (Typen licentie-eigenschappen) voor meer informatie.
--   **Vereiste voor productiemanifest**: Wanneer uw toepassing/service met RMS-functionaliteit wordt uitgevoerd in de servermodus, is er geen manifest meer vereist. Zie [Application types](application-types.md) (Typen toepassingen) voor meer informatie.
+-   De **id van inhoud** kan nu worden bewerkt via de eigenschap **IPC\_LI\_CONTENT\_ID**. Zie [**License property types**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) (Typen licentie-eigenschappen) voor meer informatie.
+-   **Vereiste voor productiemanifest**: Wanneer uw toepassing/service met RMS-functionaliteit wordt uitgevoerd in de servermodus, is er geen manifest meer vereist. Zie [Toepassingstypen](application-types.md) voor meer informatie.
 -   **Documentatie-updates**
 
     **Nieuwe indeling van** - [Instructies](how-to-use-msipc.md) om de volgorde van de stappen voor het instellen van de omgeving en het testen van toepassingen te verduidelijken.
 
-    **Testen van best practices**: Er zijn richtlijnen toegevoegd voor gebruik van een on-premises server voordat u met Azure RMS test. Zie [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Uw servicetoepassing inschakelen voor RMS in de cloud) voor meer informatie.
+    **Testen van best practices**: Er zijn richtlijnen toegevoegd voor gebruik van een on-premises server voordat u met Azure RMS test. Zie [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud) voor meer informatie.
 
 ## Belangrijke opmerkingen voor ontwikkelaars
 
@@ -181,6 +181,6 @@ Als er geen naam en beschrijving kunnen worden opgehaald, wordt een fout geretou
  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

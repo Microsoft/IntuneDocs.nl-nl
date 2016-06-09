@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -47,8 +47,7 @@ U kunt deze Azure Rights Management-logboeken gebruiken ter ondersteuning van de
 
     Als u een informatielek hebt, wordt u waarschijnlijk gevraagd wie onlangs specifieke documenten heeft geopend en welke informatie een verdacht persoon onlangs heeft weergegeven. U kunt dergelijke vragen beantwoorden wanneer u Azure Rights Management en logboekregistratie gebruikt, aangezien mensen die beveiligde inhoud gebruiken altijd een Rights Management-licentie nodig hebben om documenten en afbeeldingen te kunnen openen die zijn beveiligd met Azure Rights Management, zelfs als deze bestanden worden verplaatst via e-mail of worden gekopieerd naar een USB-station of andere opslagapparaten. Dit betekent dat u Azure Rights Management-logboeken kunt gebruiken als een nauwkeurige bron van informatie voor forensische analyse wanneer u uw gegevens beveiligt met Azure Rights Management.
 
-> [!NOTE]
-> Als u alleen bent geïnteresseerd in de logboekregistratie van beheertaken voor Azure Rights Management en u niet wilt bijhouden hoe gebruikers Rights Management gebruiken, kunt u de Windows PowerShell-cmdlet voor Azure Rights Management [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) gebruiken.
+> [!NOTE]Als u alleen bent geïnteresseerd in de logboekregistratie van beheertaken voor Azure Rights Management en u niet wilt bijhouden hoe gebruikers Rights Management gebruiken, kunt u de Windows PowerShell-cmdlet voor Azure Rights Management [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) gebruiken.
 > 
 > U kunt de klassieke Azure-portal ook gebruiken voor geavanceerde gebruiksrapporten die de volgende informatie bevatten: **RMS-overzicht**, **actieve RMS-gebruiker**, **RMS-apparaatplatformen** en **gebruik van de RMS-toepassing**. Voor toegang tot deze rapporten via de klassieke Azure-portal klikt u op **Active Directory**, selecteert en opent u een map en klikt u vervolgens op **RAPPORTEN**.
 
@@ -57,8 +56,7 @@ Gebruik de volgende secties voor meer informatie over de logboekregistratie van 
 ## Azure Rights Management-gebruik registreren in een logboek
 Vanaf februari 2016 wordt voor alle klanten standaard de functie voor logboekregistratie van het Azure Rights Management-gebruik ingeschakeld. Dit is van toepassing op klanten die hun Azure RMS-service vóór februari 2016 hebben geactiveerd en op klanten die de service na februari 2016 activeren. 
 
-> [!NOTE]
-> Er zijn geen extra kosten verbonden aan de opslag van de logboeken of de functie voor logboekregistratie.
+> [!NOTE] Er zijn geen extra kosten verbonden aan de opslag van de logboeken of de functie voor logboekregistratie.
 > 
 > Als u vóór februari 2016 ook al gebruikmaakte van logboekregistratie van het Azure RMS-gebruik, had u een abonnement op Azure en voldoende opslag in Azure nodig. Dit is nu niet meer nodig.
 
@@ -154,7 +152,7 @@ Elk van de volgende regels is een logboekrecord. De waarden van de velden staan 
 |owner-email|Tekenreeks|Het e-mailadres van de eigenaar van het document.|alice@contoso.com|
 |uitgever|Tekenreeks|Het e-mailadres van de verstrekker van het document.|alice@contoso.com (or) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |Sjabloon-id|Tekenreeks|De id van de sjabloon die wordt gebruikt om het document te beveiligen.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|Tekenreeks|De bestandsnaam van het document dat is beveiligd.|TopSecretDocument.docx|
+|File-name|Tekenreeks|De bestandsnaam van het document dat is beveiligd. <br /><br />Op dit moment kunnen worden een aantal bestanden (zoals Office-documenten) als GUID's weergegeven in plaats van met de werkelijke bestandsnaam.|TopSecretDocument.docx|
 |Date-published|Datum|De datum waarop het document is beveiligd.|15-10-2015T21:37:00|
 |c-info|Tekenreeks|De informatie over het clientplatform waarmee de aanvraag wordt ingediend.<br /><br />De specifieke tekenreeks varieert, afhankelijk van de toepassing (bijvoorbeeld het besturingssysteem of de browser).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Het IP-adres van de client waarmee de aanvraag is ingediend.|64.51.202.144|
@@ -162,7 +160,7 @@ Elk van de volgende regels is een logboekrecord. De waarden van de velden staan 
 #### Uitzonderingen voor het veld user-id
 Hoewel het veld user-id meestal aangeeft welke gebruiker de aanvraag heeft uitgevoerd, zijn er twee uitzonderingen waarbij de waarde niet aan een echte gebruiker is gekoppeld:
 
--   De waarde **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**.
+-   De waarde **microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com**.
 
     Dit duidt erop dat de aanvraag wordt uitgevoerd door een Office 365-service, zoals Exchange Online of SharePoint Online. In de tekenreeks is *&lt;YourTenantID&gt;* de GUID voor uw tenant en is *&lt;region&gt;* de regio waar uw tenant is geregistreerd. **na** staat bijvoorbeeld voor Noord-Amerika, **eu** voor Europa en **ap** voor Azië.
 
@@ -205,7 +203,7 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |UpdateTemplate|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een bestaande sjabloon bij te werken.|
 
 ## Windows PowerShell reference
-Vanaf februari 2016 hebt u voor de logboekregistratie van het Azure RMS-gebruik alleen de Windows PowerShell-cmdlet [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx) nodig.. 
+Vanaf februari 2016 hebt u voor de logboekregistratie van het Azure RMS-gebruik alleen de Windows PowerShell-cmdlet [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx) nodig. 
 
 Voorheen had u de volgende, nu afgeschafte cmdlets nodig voor Azure RMS-gebruikslogboeken:  
 
@@ -231,6 +229,6 @@ Zie [Administering Azure Rights Management by Using Windows PowerShell](administ
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 
