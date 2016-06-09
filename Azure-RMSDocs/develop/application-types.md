@@ -37,7 +37,6 @@ Een eenvoudige toepassing is bijvoorbeeld een opdrachtregelprogramma voor het ve
 
 ### Toepassingen met servermodus
 
-
 *Servermodus* is bedoeld voor niet-interactieve toepassingen die inhoud met RMS-beveiliging gebruiken, beschermen of verwerken. Een voorbeeld hiervan is een toepassing voor *Preventie van gegevensverlies* die wordt uitgevoerd als een service op een bestandsserver en automatisch gevoelige documenten beveiligt. Zie de [IpcDlp-voorbeeld](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) voor een voorbeeld van dit toepassingstype.
 
 Als uw toepassing de *servermodus* gebruikt, moet deze de RMS-server op de achtergrond verifiëren. In tegenstelling tot de *clientmodus* opent de RMS SDK 2.1 geen vraag om aanmeldingsgegevens wanneer verificatie op de achtergrond niet lukt. Ook bij uitvoering in de *servermodus* is er geen toepassingsmanifest nodig.
@@ -60,19 +59,12 @@ Zie [Gebruiksbeperkingen begrijpen](understanding-usage-restrictions.md) voor me
 
 ## Verwante onderwerpen
 
-* [Concepten voor ontwikkelaars](ad-rms-concepts-nav.md)
 * [IpcDlp-voorbeeld](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld - een voorbeeldtoepassing](how-to-build-your-first-application.md)
 * [De API-beveiligingsmodus instellen](setting-the-api-security-mode-api-mode.md)
 * [Gebruiksbeperkingen begrijpen](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
