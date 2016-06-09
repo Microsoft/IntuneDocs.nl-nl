@@ -113,13 +113,7 @@
   "85fe0447c2b14eaf16b51f23fed0d259d37b04d7": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
   ],
-  "71a1f2684025efe63720bafe2b90ccad3a6a90e7": [
-    "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
-  ],
   "c16098a2d0fe41748280704716a2eeef8921a6fa": [
-    "Azure-RMSDocs\\get-started\\scenario-fci.md"
-  ],
-  "6a1b3f8b458622aabffd205d26c546a80a7c3f11": [
     "Azure-RMSDocs\\get-started\\scenario-fci.md"
   ],
   "cb028afcbfd9b59f134539c434f4f49efc5e9092": [
@@ -128,13 +122,7 @@
   "d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d": [
     "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
   ],
-  "247ccbb5e3939a5a8c8370f63d64352d025c6dc1": [
-    "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
-  ],
   "b6f3b06485dda81be2a36035fea7477f4061a8e9": [
-    "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
-  ],
-  "e3afa3dc5cdac07add2e8c1c927692067c2659f0": [
     "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
   ],
   "500701acb03aa9f049cc995f14e544e07556bc4f": [
@@ -165,9 +153,6 @@
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
   "43263ed51886b013525f7e00c272c5ef0a9e9e64": [
-    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
-  ],
-  "ee2e1535156736f6cbed96711d7044451aa5ef95": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
   "b05708694e669f9d1bd28038643d4bf34729a239": [
@@ -545,12 +530,6 @@
   "0c24d253e3f1ab3a87852c69c15c5211d17b4333": [
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
-  "c4b177c2d55984f495f430213653f1a4a84a7ae6": [
-    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
-  ],
-  "4f83660fa14cc6c926b8aceac97ee311abea89a0": [
-    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
-  ],
   "87d712bbda11a4cfdfb2f3b3e9a549bca977afd6": [
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
   ],
@@ -564,9 +543,6 @@
     "Azure-RMSDocs\\deploy-use\\decommission-deactivate.md"
   ],
   "6b9b3b039ba2de0de174a134768afd763d26b5dd": [
-    "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
-  ],
-  "a7ecc2118c447521f9e209d4453334ae2f85fe4d": [
     "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
   ],
   "d48616cb638522e6cda61e7ae96db9480fc14099": [
@@ -585,9 +561,6 @@
     "Azure-RMSDocs\\deploy-use\\install-powershell.md"
   ],
   "8a138cdb0dc9b184c6361a879860501ede283ea1": [
-    "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
-  ],
-  "d71cdbe5d6faae000947dd665552547d44e8fbb9": [
     "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
   ],
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
@@ -621,9 +594,6 @@
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "0e909b0f972fd597e60abea04b476d9a956886f3": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "f1c17df3360751dc9a2f2d1d030679775efadce0": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "f9a07153d5cf1fec900fc8808bbaca1f7d2ac060": [
@@ -666,9 +636,6 @@
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "35ad445e229eac3feeca5522a41b9e3b25fd1180": [
-    "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
-  ],
-  "3a9dc382d400caa4db25a477695b16833b530d87": [
     "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
   ],
   "6d34b9e40fd6eb58f5e9fe1fd242a8aa36c091c1": [
@@ -737,9 +704,6 @@
   "ffddda9a144b23b64b54df4fe4d25ec62600599d": [
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
   ],
-  "d130be044beecd4c876d660fea25a9169b3ae75e": [
-    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
-  ],
   "8643e856a5de08be4fbe423d92b7d2619b47d3dd": [
     "Azure-RMSDocs\\rms-client\\configure-fci.md"
   ],
@@ -806,9 +770,6 @@
   "8635402989db0f83017151910013ca460011b392": [
     "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
   ],
-  "7712fca02a8a10ffd87b52cde88a78138f37b911": [
-    "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
-  ],
   "839be5a8a45c2322127694dc0bdc306ff445c314": [
     "Azure-RMSDocs\\understand-explore\\file-server-support.md"
   ],
@@ -843,9 +804,6 @@
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
   "dd430e83cd918fa51cca9234d4223289113a6cd3": [
-    "Azure-RMSDocs\\develop\\adal-auth.md"
-  ],
-  "2c603b1160d8e1acf4ba859ea4b71d3219bb0bba": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
   "53b06f8572e817889f9d5cfe6558324bcc74a83d": [
