@@ -5608,6 +5608,9 @@
   "1964b48c221eed4b6c38cf54ccddc736c0d5abbe": [
     "InTuneDocs\\DeployUse\\set-up-ios-and-mac-management-with-microsoft-intune.md"
   ],
+  "02f9b7c7abe2daf942299015bfdfb052755ec2de": [
+    "InTuneDocs\\DeployUse\\set-up-windows-phone-8.0-management-with-microsoft-intune.md"
+  ],
   "bf39e48428b261bde7e7340cc9a7178134d5e40f": [
     "InTuneDocs\\DeployUse\\set-up-windows-phone-8.0-management-with-microsoft-intune.md"
   ],
@@ -6522,6 +6525,9 @@
   ],
   "ae436c13137b09f261281b17e8adde32942f1775": [
     "InTuneDocs\\DeployUse\\azure-portal-for-microsoft-intune-mam-policies.md"
+  ],
+  "770e416566692636d1b48c599de66739061d94d8": [
+    "InTuneDocs\\DeployUse\\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md"
   ],
   "82cba582ca8fb0a7c60c0028f19e6b88bb2e9843": [
     "InTuneDocs\\DeployUse\\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md"
@@ -7513,6 +7519,9 @@
   ],
   "b3afd97ec0b256f6fde063ed2b1e938e18af591b": [
     "InTuneDocs\\DeployUse\\add-apps-for-windows-pcs-in-microsoft-intune.md"
+  ],
+  "9b2f625f3871746f758320e1c4c988ce48cbb47f": [
+    "InTuneDocs\\DeployUse\\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md"
   ],
   "2c50dbe384fd622f63e91a6fddbde2c082f1d234": [
     "InTuneDocs\\DeployUse\\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md"
@@ -9190,5 +9199,11 @@
   ],
   "7bd3129c6884fc1c59d467bc60f00c2fe95ab1e7": [
     "InTuneDocs\\GetStarted\\supported-mobile-devices-and-computers.md"
+  ],
+  "de8d822c9df7aa0235a998a64b412afd6fc48bd5": [
+    "InTuneDocs\\DeployUse\\subscription-might-include-downloadable-software.md"
+  ],
+  "ded69399e398e759be574e067d2c62b143ecb405": [
+    "InTuneDocs\\includes\\group-deprecation.md"
   ]
 }
