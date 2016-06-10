@@ -1,19 +1,45 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/36d0af2f2221404410d9b7c7837fca062dadea1c/InTuneDocs/DeployUse/whats-coming-in-intune.md) | HandedOffSuccess | [Details](#e8860142f163fbea4f766422477b1458dd4dee19256)
+ [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md) | HandedOffSuccess | [Details](#f0108b884439aac9661c9f36f85b47d80209d155464)
+ [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) | HandedOffSuccess | [Details](#adefe438da1150cc0f305795f01d77caa78722f4525)
+ [InTuneDocs\GetStarted\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f7b360dc30497a3d0cdc4d2698016c1d360dec0c/InTuneDocs/GetStarted/TOC.md) | HandedOffSuccess | [Details](#0dc04c1bba266fdba3fd6326f7cb6908a41e8c2d533)
 
 ## Item Details
-##### <a name='e8860142f163fbea4f766422477b1458dd4dee19256'></a> Source: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/36d0af2f2221404410d9b7c7837fca062dadea1c/InTuneDocs/DeployUse/whats-coming-in-intune.md)
+##### <a name='f0108b884439aac9661c9f36f85b47d80209d155464'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/14dc6cfbbe387d2d908ff2fcb4c17c9b30d08d53/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.nl-nl.xlf)
-* Handoff Datetime: 2016-06-10 20:52:25
+* Handoff File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b507fb474d520aad2fcbcb94b6524ba0962c9c97/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.nl-nl.xlf)
+* Handoff Datetime: 2016-06-10 22:39:28
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='adefe438da1150cc0f305795f01d77caa78722f4525'></a> Source: [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b507fb474d520aad2fcbcb94b6524ba0962c9c97/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.nl-nl.xlf)
+* Handoff Datetime: 2016-06-10 22:39:28
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='0dc04c1bba266fdba3fd6326f7cb6908a41e8c2d533'></a> Source: [InTuneDocs\GetStarted\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f7b360dc30497a3d0cdc4d2698016c1d360dec0c/InTuneDocs/GetStarted/TOC.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [TOC.fa7452f10c1ac8148ce488a34d334ba7b01068f4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/b507fb474d520aad2fcbcb94b6524ba0962c9c97/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/TOC.fa7452f10c1ac8148ce488a34d334ba7b01068f4.nl-nl.xlf)
+* Handoff Datetime: 2016-06-10 22:39:28
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
