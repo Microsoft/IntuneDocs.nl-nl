@@ -2335,6 +2335,9 @@
   "e087fbc340b87dfeaa65d886161afd163ce4b34a": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-company-resource-access-problems-with-microsoft-intune.md"
   ],
+  "ae2b35321b0664c5b54708d7389e9eb0262bb2d6": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
+  ],
   "3380b83c907650ce407ffc5bec769fa4eb9a2b73": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
   ],
@@ -3786,6 +3789,9 @@
   ],
   "1d0ce9c5be9a0be6e02c540582403644236223d6": [
     "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
+  ],
+  "65ceaa5a8f6604463463820545a9d108839c00c1": [
+    "InTuneDocs\\DeployUse\\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md"
   ],
   "1492b99c8ff674d23b78ac311ff1cd07371bfd29": [
     "InTuneDocs\\DeployUse\\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md"
@@ -7819,6 +7825,9 @@
   ],
   "63b9bac27dabd5175f3c04073a9ef924b9e8403f": [
     "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
+  ],
+  "0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9": [
+    "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
   "dbb54778a913c886368e609e1625c8b3336be0f9": [
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
