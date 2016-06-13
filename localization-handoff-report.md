@@ -1,20 +1,23 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 5
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c2d3e81b310302d387121a919ac9510c261f897f/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md) | HandedOffSuccess | [Details](#28b5351be7d4fa46b4dee0b6145c5e9f81fe15af15)
- [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md) | HandedOffSuccess | [Details](#b105eca7a93b8648e832e422239709b284b5f0ef62)
+ [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3af42343f1ec2c5af3dda4828f8840bb76c4d5f/InTuneDocs/DeployUse/add-apps.md) | HandedOffSuccess | [Details](#2a76daee73f0dd3c6219a4cf42f9bb00fd83f25712)
+ [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/024ba0e2c63a42c121bd27302e8926bddac5566b/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md) | HandedOffSuccess | [Details](#7da75576bf5296da6fbf35fb3c35c5d0d45c511d11)
+ [InTuneDocs\DeployUse\deploy-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c95a776e79cf3e1c7009d6e27f8f50482434d298/InTuneDocs/DeployUse/deploy-apps-in-microsoft-intune.md) | HandedOffSuccess | [Details](#46562ed3463c4a23a511eb5c7f28a0b11e84f42133)
+ [InTuneDocs\DeployUse\introduction-to-device-compliance-policies-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e9e069a2887b812b30c620634a8e0d093093b460/InTuneDocs/DeployUse/introduction-to-device-compliance-policies-in-microsoft-intune.md) | HandedOffSuccess | [Details](#c443bb51ba05161c5088475e528e6ada28c105a555)
+ [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e05303a6f0a083eaa91209405e9c66422d859cc8/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) | HandedOffSuccess | [Details](#3b80551ccb68248a5d80fc2465be8c83542b8df6222)
 
 ## Item Details
-##### <a name='28b5351be7d4fa46b4dee0b6145c5e9f81fe15af15'></a> Source: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c2d3e81b310302d387121a919ac9510c261f897f/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
+##### <a name='2a76daee73f0dd3c6219a4cf42f9bb00fd83f25712'></a> Source: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a3af42343f1ec2c5af3dda4828f8840bb76c4d5f/InTuneDocs/DeployUse/add-apps.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5250aa95b5858c5884d2c0c1f834ca6bbc4c017/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.nl-nl.xlf)
-* Handoff Datetime: 2016-06-13 18:38:06
+* Handoff File: [add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/eaf3481f74fcf21033935f5e33a4a522ead2e866/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.nl-nl.xlf)
+* Handoff Datetime: 2016-06-13 20:55:45
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -22,11 +25,47 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b105eca7a93b8648e832e422239709b284b5f0ef62'></a> Source: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
+##### <a name='7da75576bf5296da6fbf35fb3c35c5d0d45c511d11'></a> Source: [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/024ba0e2c63a42c121bd27302e8926bddac5566b/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/f5250aa95b5858c5884d2c0c1f834ca6bbc4c017/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.nl-nl.xlf)
-* Handoff Datetime: 2016-06-13 18:38:06
+* Handoff File: [add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/eaf3481f74fcf21033935f5e33a4a522ead2e866/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.nl-nl.xlf)
+* Handoff Datetime: 2016-06-13 20:55:45
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='46562ed3463c4a23a511eb5c7f28a0b11e84f42133'></a> Source: [InTuneDocs\DeployUse\deploy-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c95a776e79cf3e1c7009d6e27f8f50482434d298/InTuneDocs/DeployUse/deploy-apps-in-microsoft-intune.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [deploy-apps-in-microsoft-intune.0cf6e71c2179ec739da13742db6825d2ea43f5af.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/eaf3481f74fcf21033935f5e33a4a522ead2e866/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/deploy-apps-in-microsoft-intune.0cf6e71c2179ec739da13742db6825d2ea43f5af.nl-nl.xlf)
+* Handoff Datetime: 2016-06-13 20:55:45
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='c443bb51ba05161c5088475e528e6ada28c105a555'></a> Source: [InTuneDocs\DeployUse\introduction-to-device-compliance-policies-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e9e069a2887b812b30c620634a8e0d093093b460/InTuneDocs/DeployUse/introduction-to-device-compliance-policies-in-microsoft-intune.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [introduction-to-device-compliance-policies-in-microsoft-intune.1cd77154e64631fcc324af8b8a9aaf322a160174.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/eaf3481f74fcf21033935f5e33a4a522ead2e866/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/introduction-to-device-compliance-policies-in-microsoft-intune.1cd77154e64631fcc324af8b8a9aaf322a160174.nl-nl.xlf)
+* Handoff Datetime: 2016-06-13 20:55:45
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='3b80551ccb68248a5d80fc2465be8c83542b8df6222'></a> Source: [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e05303a6f0a083eaa91209405e9c66422d859cc8/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/eaf3481f74fcf21033935f5e33a4a522ead2e866/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.nl-nl.xlf)
+* Handoff Datetime: 2016-06-13 20:55:45
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
