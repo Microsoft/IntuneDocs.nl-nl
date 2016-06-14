@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Werken met versleuteling
 
 Dit onderwerp oriënteert u op onze versleutelingspakketten en toont een aantal codefragmenten en hoe u deze kunt gebruiken.
@@ -44,13 +44,13 @@ Vanaf de [update van maart 2015](release-notes-rtm.md) hebben we de volgende dri
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (ook wel ‘afgeschafte algoritmen’ genoemd)
 
-De vlaggen in het versleutelingspakket (zie [**Versleuteling van voorkeur**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)) kunnen worden gebruikt in combinatie met onze nieuwe, licentie-eigenschapsvlag **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+De markeringen in het versleutelingspakket (zie [**Preferred encryption**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)(Versleuteling van voorkeur)) kunnen worden gebruikt in combinatie met onze nieuwe licentie-eigenschapsmarkering **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
 
 Hieronder vindt u enkele eenvoudige codefragmenten die u laten zien hoe u de nieuwe licentie-eigenschap gebruikt.
 
 ## Afgeschafte algoritmen
 
-De vlag **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** wordt niet meer weergegeven in de API. Dit betekent dat toekomstige toepassingen niet langer worden gecompileerd als ze verwijzen naar deze vlag. Toepassingen die al zijn gemaakt, blijven werken omdat de vlag in de API-code afzonderlijk wordt verwerkt.
+De markering **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** wordt niet meer weergegeven in de API. Dit betekent dat toekomstige toepassingen niet langer worden gecompileerd als ze verwijzen naar deze vlag. Toepassingen die al zijn gemaakt, blijven werken omdat de vlag in de API-code afzonderlijk wordt verwerkt.
 
 U kunt de vlag voor oudere, afgeschafte versleutelingsalgoritmen nog steeds gebruiken door een vlag te wijzigen. Zie de volgende codefragmenten als voorbeeld.
 
@@ -106,6 +106,6 @@ Dit voorbeeld toont ook de nieuwe manier voor het ondersteunen van *afgeschafte 
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

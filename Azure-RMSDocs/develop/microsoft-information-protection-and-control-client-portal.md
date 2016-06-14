@@ -23,9 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Rights Management Services SDK 2.1
-
 
 ## Doel
 
@@ -67,6 +66,6 @@ Voor informatie over de runtime-vereisten voor een bepaald programmeerelement ra
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

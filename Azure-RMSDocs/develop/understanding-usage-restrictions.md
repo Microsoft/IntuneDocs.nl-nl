@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Gebruiksbeperkingen begrijpen
 
 In alle toepassingen waarin RMS is ingeschakeld, moeten gebruiksbeperkingen worden afgedwongen. Een gebruiksbeperking is een situatie die zich voordoet wanneer een gebruiker probeert een actie (bijvoorbeeld een document afdrukken) uit te voeren, maar de gebruiker in het RMS-beleid voor het document geen machtiging of rechten heeft om die actie uit te voeren (bijvoorbeeld het recht PRINT).
@@ -63,6 +63,6 @@ De gebruikersmachtigingen voor een document kunnen worden opgevraagd met behulp 
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

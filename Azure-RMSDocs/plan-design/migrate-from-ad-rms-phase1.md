@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ Gebruik de volgende informatie voor fase 1 van de migratie van AD RMS naar Azure
 ## Stap 1: download de Azure Rights Management Administration Tool
 Ga naar het Microsoft Downloadcentrum en download de [Azure Rights Management Administration Tool](http://go.microsoft.com/fwlink/?LinkId=257721), die de Azure RMS-beheermodule voor Windows PowerShell bevat.
 
-Installeer het hulpprogramma. Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor instructies..
+Installeer het hulpprogramma. Zie [Installing Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md) (Windows PowerShell voor Azure Rights Management installeren) voor instructies.
 
 ## Stap 2. Exporteer de configuratiegegevens uit AD RMS en importeer deze in Azure RMS
 Deze stap bestaat uit twee fasen:
@@ -47,16 +47,15 @@ Deze stap bestaat uit twee fasen:
 ### De configuratiegegevens vanuit AD RMS exporteren
 Voer de volgende procedure uit voor alle AD RMS-clusters en voor alle vertrouwde uitgiftedomeinen die beveiligde inhoud voor uw organisatie bevatten. U hoeft dit niet uit te voeren voor clusters met alleen-licentieverlening.
 
-> [!NOTE]
-> Als u Windows Server 2003 Rights Management gebruikt, volgt u in plaats van deze instructies de procedure [ Persoonlijke SLC-, TUD-, TPD- en RMS-sleutel exporteren](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) in het artikel [Migreren van Windows RMS naar AD RMS in een andere infrastructuur](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx).
+> [!NOTE] Als u Windows Server 2003 Rights Management gebruikt, volgt u in plaats van deze instructies de procedure [Export SLC, TUD, TPD and RMS private key](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Persoonlijke SLC-, TUD-, TPD- en RMS-sleutel exporteren) in het artikel [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migreren van Windows RMS naar AD RMS in een andere infrastructuur).
 
 #### De configuratiegegevens exporteren (gegevens van vertrouwd uitgiftedomein)
 
-1.  Meld u bij het AD RMS-cluster aan als gebruiker met machtigingen voor AD RMS-beheer.
+1.  Meld u bij het AD RMS-cluster aan als een gebruiker met machtigingen voor AD RMS-beheer.
 
-2.  Vouw in de AD RMS-beheerconsole (**Active Directory Rights Management Services**) de naam van het AD RMS-cluster uit, vouw **Vertrouwensbeleid** uit en klik vervolgens op **Vertrouwde uitgiftedomeinen**..
+2.  Vouw in de AD RMS-beheerconsole (**Active Directory Rights Management Services**) de naam van het AD RMS-cluster uit, vouw **Vertrouwensbeleid** uit en klik vervolgens op **Vertrouwde uitgiftedomeinen**.
 
-3.  Selecteer in het resultatenvenster het vertrouwde uitgiftedomein en klik vervolgens in het deelvenster Acties op **Vertrouwd uitgiftedomein exporteren**..
+3.  Selecteer in het resultatenvenster het vertrouwde uitgiftedomein en klik vervolgens in het deelvenster Acties op **Vertrouwd uitgiftedomein exporteren**.
 
 4.  In het dialoogvenster **Vertrouwd uitgiftedomein exporteren**:
 
@@ -81,8 +80,7 @@ Uw huidige AD RMS-implementatie gaat een van de volgende configuraties gebruiken
 
 -   Met een wachtwoord beveiligd via een externe cryptografische provider.
 
-> [!NOTE]
-> Zie voor meer informatie over het gebruik van Hardware Security Modules met AD RMS het onderwerp [AD RMS gebruiken met Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx).
+> [!NOTE] Zie het onderwerp [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (AD RMS gebruiken met Hardware Security Modules) voor meer informatie over het gebruik van Hardware Security Modules met AD RMS.
 
 Er zijn twee opties voor de topologie van de Azure RMS-tenantsleutel: Microsoft beheert uw tenantsleutel (**Door Microsoft beheerd**) of u beheert uw tenantsleutel zelf (**Door de klant beheerd**). Wanneer u uw eigen Azure RMS-tenantsleutel beheert, wordt dit wordt soms aangeduid als 'Bring Your Own Key' (BYOK) en is er een HSM (Hardware Security Module) van Thales vereist. Zie [Uw Azure Rights Management-tenantsleutel plannen en implementeren](plan-implement-tenant-key.md) voor meer informatie
 
@@ -93,15 +91,14 @@ Bepaal aan de hand van de volgende tabel welke procedure er voor uw migratie moe
 
 |Huidige AD RMS-implementatie|Gekozen topologie voor Azure RM- tenantsleutel|Migratie-instructies|
 |-----------------------------|----------------------------------------|--------------------------|
-|Wachtwoordbeveiliging in de AD RMS-database|Door Microsoft beheerd|Zie de procedure **Migratie van met software beschermde sleutel naar met software beschermde sleutel** na deze tabel.<br /><br />Dit is het eenvoudigste migratiepad. Hierbij is de enige vereiste dat u uw configuratiegegevens naar Azure RMS overdraagt.|
-|HSM-beveiliging met een Thales nShield-HSM (Hardware Security Module)|Door de klant beheerd (BYOK)|Zie de procedure **Migratie van met HSM beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset en twee sets stappen nodig om de sleutel over te dragen van uw lokale HSM naar de Azure RMS HSM's en om vervolgens de configuratiegegevens over te dragen naar Azure RMS.|
+|Wachtwoordbeveiliging in de AD RMS-database|Door Microsoft beheerd|Zie de migratieprocedure **Migratie van met software beveiligde sleutel naar met software beveiligde sleutel** na deze tabel.<br /><br />Dit is het eenvoudigste migratiepad. Hierbij is de enige vereiste dat u uw configuratiegegevens naar Azure RMS overdraagt.|
+|HSM-beveiliging met een Thales nShield-HSM (Hardware Security Module)|Door de klant beheerd (BYOK)|Zie de migratieprocedure **Migratie van met HSM beveiligde sleutel naar met HSM beveiligde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset en twee sets stappen nodig om de sleutel over te dragen van uw lokale HSM naar de Azure RMS HSM's en om vervolgens de configuratiegegevens over te dragen naar Azure RMS.|
 |Wachtwoordbeveiliging in de AD RMS-database|Door de klant beheerd (BYOK)|Zie de procedure **Migratie van met software beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset en drie sets stappen nodig om eerst uw softwaresleutel op te halen en te importeren in een lokale HSM, om vervolgens de sleutel over te dragen van uw lokale HSM naar de Azure RMS HSM's en om tot slot de configuratiegegevens over te dragen naar Azure RMS.|
 |HSM-beveiliging met een HSM (Hardware Security Module) van een andere leverancier dan Thales|Door de klant beheerd (BYOK)|Neem contact op met de leverancier van uw HSM voor instructies om de sleutel van deze HSM over te dragen naar een Thales nShield Hardware Security Module (HSM). Volg daarna de instructies voor de procedure **Migratie van met HSM beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.|
 |Met een wachtwoord beveiligd via een externe cryptografische provider|Door de klant beheerd (BYOK)|Neem contact op met de leverancier van uw cryptografische provider voor instructies over het overdragen van uw sleutel naar een Thales nShield Hardware Security Module (HSM). Volg daarna de instructies voor de procedure **Migratie van met HSM beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.|
 Controleer voordat u aan deze procedures begint, of u toegang hebt tot de XML-bestanden die u eerder hebt gemaakt tijdens het exporteren van de vertrouwde uitgiftedomeinen. Deze kunnen bijvoorbeeld worden opgeslagen op een USB-stick die u verplaatst van de AD RMS-server naar het werkstation met internetverbinding.
 
-> [!NOTE]
-> Ongeacht hoe u deze bestanden opslaat, moet u alle aanbevolen beveiligingsprocedures volgen, omdat deze gegevens uw persoonlijke sleutel bevatten.
+> [!NOTE] Ongeacht hoe u deze bestanden opslaat, moet u alle aanbevolen beveiligingsprocedures volgen, omdat deze gegevens uw persoonlijke sleutel bevatten.
 
 
 Voor het voltooien van stap 2 kiest en selecteert u de instructies voor uw migratiepad: 
@@ -128,7 +125,7 @@ Omdat de status van de door u geïmporteerde sjablonen standaard **Gearchiveerd*
 
 Als in uw sjablonen in AD RMS de groep **IEDEREEN** is gebruikt, wordt deze groep automatisch verwijderd wanneer u de sjablonen in Azure RMS importeert. U moet de equivalente groep of gebruikers en de dezelfde rechten handmatig toevoegen aan de geïmporteerde sjablonen. De equivalente groep voor Azure RMS heet **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Deze groep kan er voor Contoso bijvoorbeeld als volgt uitzien: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
 
-Als u niet zeker weet of uw AD RMS-sjablonen de groep IEDEREEN bevat, kunt u het Windows PowerShell-voorbeeldscript gebruiken om deze sjablonen te identificeren. Zie [Windows PowerShell gebruiken om AD RMS te beheren](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) voor meer informatie over het gebruik van Windows PowerShell met Azure RMS..
+Als u niet zeker weet of uw AD RMS-sjablonen de groep IEDEREEN bevat, kunt u het Windows PowerShell-voorbeeldscript gebruiken om deze sjablonen te identificeren. Zie [Windows PowerShell gebruiken om AD RMS te beheren](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) voor meer informatie over het gebruik van Windows PowerShell met Azure RMS.
 
 U kunt de automatisch gemaakte groep van uw organisatie zien als u een van de standaardrechtenbeleidssjablonen in de klassieke Azure-portal kopieert en vervolgens de **GEBRUIKERSNAAM** identificeert op de pagina **RECHTEN**. U kunt de klassieke portal echter niet gebruiken om deze groep toe te voegen aan een sjabloon die handmatig is gemaakt of geïmporteerd. In plaats daarvan moet u een van de volgende Azure RMS PowerShell-opties gebruiken:
 
@@ -136,12 +133,11 @@ U kunt de automatisch gemaakte groep van uw organisatie zien als u een van de st
 
 -   Gebruik de cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) om de sjabloon te exporteren naar een XML-bestand dat u kunt bewerken om de groep ‘AllStaff’ en rechten toe te voegen aan de bestaande groepen en rechten. Gebruik vervolgens de cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) om deze wijziging weer te importeren in Azure RMS.
 
-> [!NOTE]
-> Deze aan ‘AllStaff’ gelijkwaardige groep is niet precies hetzelfde als de groep IEDEREEN in AD RMS: de groep ‘AllStaff’ bevat alle gebruikers in uw Azure-tenant, terwijl de groep IEDEREEN alle geverifieerde gebruikers bevat die zich buiten uw organisatie kunnen bevinden.
+> [!NOTE] Deze aan AllStaff gelijkwaardige groep is niet precies hetzelfde als de groep IEDEREEN in AD RMS: de groep AllStaff bevat alle gebruikers in uw Azure-tenant, terwijl de groep IEDEREEN alle geverifieerde gebruikers bevat, die zich ook buiten uw organisatie kunnen bevinden.
 > 
 > Door dit verschil tussen de twee groepen moet u naast de groep ‘AllStaff’ wellicht ook externe gebruikers toevoegen. Externe e-mailadressen voor groepen worden momenteel niet ondersteund.
 
-Sjablonen die u uit AD RMS importeert, hebben hetzelfde uiterlijk en gedrag als aangepaste sjablonen die u in de klassieke Azure-portal kunt maken. Zie [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) om de geïmporteerde sjablonen te wijzigen, zodat ze kunnen worden gepubliceerd en gebruikers ze kunnen zien en selecteren vanuit toepassingen, of om andere wijzigingen aan te brengen in de sjablonen..
+Sjablonen die u uit AD RMS importeert, hebben hetzelfde uiterlijk en gedrag als aangepaste sjablonen die u in de klassieke Azure-portal kunt maken. Zie [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) om de geïmporteerde sjablonen te wijzigen, zodat ze kunnen worden gepubliceerd en gebruikers ze kunnen weergeven en selecteren vanuit toepassingen, of om andere wijzigingen aan te brengen in de sjablonen.
 
 > [!TIP]
 > Voor een consistente gebruikerservaring tijdens het migratieproces mag u alleen deze twee wijzigingen aanbrengen in de geïmporteerde sjablonen. Publiceer de twee standaardsjablonen niet die worden geleverd met Azure RMS en maak op dit moment geen nieuwe sjablonen. Wacht in plaats daarvan totdat de migratie voltooid is en u de AD RMS-servers buiten gebruik hebt gesteld.
@@ -189,6 +185,6 @@ Ga naar [fase 2 - configuratie aan clientzijde](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

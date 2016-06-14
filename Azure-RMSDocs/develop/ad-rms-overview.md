@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overzicht | Azure RMS
-description: Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
+description: Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Overzicht
 
 Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik. Via uw toepassingen met rechten kunnen eigenaren van inhoud definiëren wie hun inhoud kan openen, wijzigen, afdrukken, doorsturen of hiermee andere acties kan uitvoeren.
@@ -62,6 +62,6 @@ Zie [Aan de slag](getting-started-with-ad-rms-2-0.md) om aan de slag te gaan.
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

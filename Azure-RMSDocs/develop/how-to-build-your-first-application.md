@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # IPCHelloWorld - een voorbeeldtoepassing
 
 Dit onderwerp bevat instructies voor het maken van een voorbeeldtoepassing met rechten.
@@ -222,6 +222,6 @@ U moet alle toegewezen resources vrijgeven om het proces te voltooien.
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

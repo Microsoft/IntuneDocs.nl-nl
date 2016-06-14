@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -45,7 +45,7 @@ De Microsoft Rights Management-toepassing voor delen is een optionele downloadba
 
 De Microsoft Rights Management-toepassing voor delen maakt gebruik van de nieuwe [AD RMS Client 2.1-runtime](http://www.microsoft.com/download/details.aspx?id=38396). Met behulp van de functionaliteit van AD RMS 2.1 hebben eindgebruikers dankzij de Microsoft Rights Management-toepassing voor delen een eenvoudige ervaring met beveiliging en verbruik.
 
-Met de versie van oktober 2013 van RMS kunt u documenten beveiligen met behulp van Office 2010 en ze verzenden naar mensen in een ander bedrijf, die de documenten vervolgens kunnen gebruiken met Azure RMS. Bovendien kunt u in deze versie, als u AD RMS in de cryptografische modus 2 gebruikt, RMS voor personen gebruiken en inhoud gebruiken van personen bij een ander bedrijf dat Azure RMS gebruikt. Voor meer informatie over de cryptografische modus 2 raadpleegt u [Cryptografische modi van AD RMS](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
+Met de versie van oktober 2013 van RMS kunt u documenten beveiligen met behulp van Office 2010 en ze verzenden naar mensen in een ander bedrijf, die de documenten vervolgens kunnen gebruiken met Azure RMS. Bovendien kunt u in deze versie, als u AD RMS in de cryptografische modus 2 gebruikt, RMS voor personen gebruiken en inhoud gebruiken van personen bij een ander bedrijf dat Azure RMS gebruikt. Zie [AD RMS Cryptographic Modes](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx) (Cryptografische modi van AD RMS) voor meer informatie over de cryptografische modus 2.
 
 Zie [Automatische implementatie voor de Microsoft Rights Management-toepassing voor delen](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) voor informatie over de implementatie
 
@@ -55,8 +55,8 @@ Microsoft Rights Management-toepassing voor delen ondersteunt beveiliging op twe
 |Type beveiliging|Systeemeigen|Algemeen|
 |----------------------|----------|-----------|
 |Beschrijving|Voor tekst-, afbeelding-, Microsoft Office- (Word, Excel, PowerPoint), .pdf-bestanden en andere bestandstypen van toepassingen die AD RMS ondersteunen, biedt systeemeigen beveiliging een hoog beveiligingsniveau met zowel versleuteling als handhaving van rechten (machtigingen).|Voor alle andere toepassingen en bestandstypen biedt algemene beveiliging een beveiligingsniveau dat bestandsinkapseling met het .pfile-bestandstype bevat en verificatie om te controleren of een gebruiker is gemachtigd om het bestand te openen.|
-|Protection|Bestanden zijn volledig versleuteld en beveiliging wordt afgedwongen op de volgende manieren:<br /><br />Voordat beveiligde inhoud wordt weergegeven, moet verificatie zijn geslaagd voor degenen die het bestand via e-mail ontvangen of toegang krijgen tot het bestand via bestandsmachtigingen of machtigingen voor delen.<br /><br />Bovendien worden gebruiksrechten en -beleid die zijn ingesteld door de eigenaar van de inhoud wanneer bestanden worden beveiligd, volledig afgedwongen als de inhoud wordt weergegeven in de IP-viewer (voor beveiligde tekst- en afbeeldingsbestanden) of de bijbehorende toepassing (voor alle andere ondersteunde bestandstypen).|Bestandsbeveiliging wordt afgedwongen op de volgende manieren:<br /><br />Voordat beveiligde inhoud wordt weergegeven, moet succesvolle verificatie optreden voor gebruikers die zijn gemachtigd om het bestand te openen en er toegang toe hebben. Als de verificatie is mislukt, wordt het bestand niet geopend.<br /><br />Gebruiksrechten en -beleid die door de eigenaar van de inhoud zijn ingesteld worden weergegeven om de gemachtigde gebruikers te informeren over het beoogde gebruiksbeleid.<br /><br />Logboekregistratie vindt plaats van gemachtigde gebruikers die bestanden openen en zich er toegang tot verlenen. Er worden echter geen gebruiksrechten afgedwongen door toepassingen die niet zijn ondersteund.|
-|Standaard voor bestandstypen|Dit is het standaard beveiligingsniveau voor de volgende bestandstypen:<br /><br />Tekst- en afbeeldingsbestanden<br /><br />Microsoft Office-bestanden (Word, Excel en PowerPoint)<br /><br />Portable document format (.pdf)<br /><br />Zie voor meer informatie de sectie [Ondersteunde bestandstypen en bestandsnaamextensies](#supported-file-types-and-file-name-extensions).|Dit is de standaardbeveiliging voor alle andere bestandstypen (zoals .vsdx en .rtf) die niet worden ondersteund door volledige beveiliging.|
+|Protection|Bestanden zijn volledig versleuteld en beveiliging wordt afgedwongen op de volgende manieren:<br /><br />- Voordat beveiligde inhoud wordt weergegeven, moet de verificatie zonder fouten zijn voltooid voor degenen die het bestand via e-mail ontvangen of toegang krijgen tot het bestand via bestandsmachtigingen of machtigingen voor delen.<br /><br />- Bovendien worden gebruiksrechten en -beleid die door de eigenaar van de inhoud tijdens het beveiligen van de bestanden zijn ingesteld, volledig afgedwongen als de inhoud wordt weergegeven in de IP-viewer (voor beveiligde tekst- en afbeeldingsbestanden) of de bijbehorende toepassing (voor alle andere ondersteunde bestandstypen).|Bestandsbeveiliging wordt afgedwongen op de volgende manieren:<br /><br />- Voordat beveiligde inhoud wordt weergegeven, moet de verificatie zonder fouten zijn voltooid voor gebruikers die zijn gemachtigd om het bestand te openen en te gebruiken. Als de verificatie is mislukt, wordt het bestand niet geopend.<br /><br />- Gebruiksrechten en -beleid die door de eigenaar van de inhoud zijn ingesteld, worden weergegeven om de gemachtigde gebruikers te informeren over het beoogde gebruiksbeleid.<br /><br />- Controlegebeurtenissen vastleggen wordt uitgevoerd voor gemachtigde gebruikers die bestanden openen en gebruiken. Er worden echter geen gebruiksrechten afgedwongen door niet-ondersteunde toepassingen.|
+|Standaard voor bestandstypen|Dit is het standaard beveiligingsniveau voor de volgende bestandstypen:<br /><br />- Tekst- en afbeeldingsbestanden<br /><br />- Microsoft Office-bestanden (Word, Excel en PowerPoint)<br /><br />- Portable document format (.pdf)<br /><br />Zie de sectie [Ondersteunde bestandstypen en bestandsnaamextensies](#supported-file-types-and-file-name-extensions) voor meer informatie.|Dit is de standaardbeveiliging voor alle andere bestandstypen (zoals .vsdx en .rtf) die niet worden ondersteund door volledige beveiliging.|
 U kunt het standaard beveiligingsniveau wijzigen dat de RMS-toepassing voor delen toepast. U kunt het standaardniveau wijzigen van systeemeigen naar algemeen, van algemeen naar systeemeigen en u kunt zelfs voorkomen dat de RMS-toepassing voor delen beveiliging toepast. Zie voor meer informatie de sectie [Het standaardbeveiligingsniveau van bestanden wijzigen](#changing-the-default-protection-level-of-files) in dit artikel.
 
 ## Ondersteunde bestandstypen en bestandsnaamextensies
@@ -66,8 +66,7 @@ Wanneer de RMS-toepassing voor delen een Word-, Excel-, of PowerPoint-bestand be
 
 Voor bestanden die algemeen zijn beveiligd, wordt de originele bestandsnaamextensie altijd gewijzigd naar .pfile.
 
-> [!WARNING]
-> Als u firewalls, webproxy's of beveiligingssoftware hebt die bestandsnaamextensies controleert en aanpakt, dan moet u deze mogelijk opnieuw configureren om deze nieuwe bestandsnaamextensies te ondersteunen.
+> [!WARNING] Als u firewalls, webproxy's of beveiligingssoftware gebruikt waarmee op basis van bestandsnaamextensies controles worden uitgevoerd en actie wordt ondernomen, moet u deze mogelijk opnieuw configureren voor ondersteuning van de nieuwe bestandsnaamextensies.
 
 |Oorspronkelijke bestandsnaamextensie|RMS-beveiligde bestandsnaamextensie|
 |--------------------------------|-------------------------------------|
@@ -110,11 +109,11 @@ U kunt de RMS-toepassing voor delen ook de beveiliging van bestanden laten afdwi
 
 Maak de volgende registerbewerkingen om de RMS-toepassing voor delen algemene beveiliging toe te laten passen op alle bestanden die standaard algemene beveiliging zouden krijgen:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: maak een nieuwe sleutel met de naam **&#42;**.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: maak een nieuwe sleutel met de naam *.
 
     Deze instelling geeft bestanden aan met elke bestandsnaamextensie.
 
-2.  Maak in de toegevoegde sleutel **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\&#42;** een nieuwe tekenreekswaarde (REG_SZ) met de naam **Encryption** en de gegevenswaarde **Pfile**.
+2.  Maak in de toegevoegde sleutel HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* een nieuwe tekenreekswaarde (REG_SZ) met de naam **Encryption** en de gegevenswaarde **Pfile**.
 
     Met deze instelling past de RMS-toepassing voor delen algemene beveiliging toe.
 
@@ -124,9 +123,9 @@ Deze twee instellingen zorgen ervoor dat de RMS-toepassing voor delen algemene b
 
     Maak bijvoorbeeld voor bestanden met de bestandsnaamextensie .docx een sleutel met de naam **DOCX**.
 
-2.  In de zojuist toegevoegde bestandstypesleutel (bijvoorbeeld **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**) maakt u een nieuwe DWORD-waarde met de naam **AllowPFILEEncryption** en de waarde **0**.
+2.  Maak in de toegevoegde bestandstypesleutel (bijvoorbeeld **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**) een nieuwe DWORD-waarde met de naam **AllowPFILEEncryption** en de waarde **0**.
 
-3.  In de zojuist toegevoegde bestandstypesleutel (bijvoorbeeld **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**) maakt u een nieuwe tekenreekswaarde met de naam **Encryption** en de waarde **Native**.
+3.  Maak in de toegevoegde bestandstypesleutel (bijvoorbeeld **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**) een nieuwe tekenreekswaarde met de naam **Encryption** en de waarde **Native**.
 
 Als gevolg van deze instellingen worden alle bestanden algemeen beveiligd, behalve bestanden die een .docx-bestandsnaamextensie hebben, welke systeemeigen zijn beveiligd door de RMS-toepassing voor delen.
 
@@ -145,6 +144,6 @@ U kunt vergelijkbare registerwijzigingen maken voor andere scenario's door de wa
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Visual Studio configureren
 
 Dit onderwerp bevat instructies over het configureren van een Visual Studio-project voor het gebruik van de Rights Management Services SDK 2.1.
@@ -42,7 +42,7 @@ Deze instructies gelden voor het bouwen van een systeemeigen 32-bits toepassing.
 
 1.  Voeg de RMS SDK 2.1-includemap toe aan uw Visual Studio 2010-project.
 
-    Onder **Configuratie-eigenschappen** selecteert u **VC++ mappen**. Voer de RMS SDK 2.1-includemap **$(MSIPCSDKDIR)\\inc** in in het veld **Includemappen**.
+    Onder **Configuratie-eigenschappen** selecteert u **VC++ Directories**. Voer de RMS SDK 2.1-includemap **$(MSIPCSDKDIR)\\inc** in het veld **Opgenomen mappen** in.
 
     ![Veld voor configuratie-eigenschappen van includemappen](../media/include_directories.png)
 
@@ -51,7 +51,7 @@ Deze instructies gelden voor het bouwen van een systeemeigen 32-bits toepassing.
     Onder **Configuratie-eigenschappen** selecteert u **VC++ mappen**. Voer de RMS SDK 2.1-bibliotheekmap in in het veld **Bibliotheekmappen** van uw platform.
 
     -   Voor Win32 gebruikt u **$(MSIPCSDKDIR)\\lib**
-    -   Voor x64 gebruikt u **$(MSIPCSDKDIR)\\lib\\64**
+    -   Voor x64 gebruikt u **$(MSIPCSDKDIR)\\lib\\x64**
 
     ![Veld voor configuratie-eigenschappen van bibliotheekmappen](../media/library_directories.png)
 
@@ -85,6 +85,6 @@ Deze instructies gelden voor het bouwen van een systeemeigen 32-bits toepassing.
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

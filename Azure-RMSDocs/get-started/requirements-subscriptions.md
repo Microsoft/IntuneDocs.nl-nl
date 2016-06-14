@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -86,17 +86,18 @@ Een uitzondering op toegangsverlies na het verlopen van een abonnement geldt als
 ## Enterprise Mobility Suite-abonnement
 [Gratis proefabonnement van 30 dagen](http://go.microsoft.com/fwlink/?LinkId=615385)
 
-Dit abonnement is bedoeld voor organisaties die een combinatie van Azure Active Directory Premium, Windows Intune en Azure Rights Management willen gebruiken. De ondersteuning voor het gebruik van Azure Rights Management met Office is hetzelfde als wanneer u het Azure Rights Management Premium-abonnement gebruikt. 
-Voor meer informatie over het Enterprise Mobility Suite-abonnement raadpleegt u het [Overzicht van Microsoft Enterprise Mobility](http://go.microsoft.com/fwlink/?LinkId=615386).
+Dit abonnement is bedoeld voor organisaties die een combinatie van Azure Active Directory Premium, Windows Intune en Azure Rights Management willen gebruiken. De ondersteuning voor het gebruik van Azure Rights Management met Office is hetzelfde als wanneer u het Azure Rights Management Premium-abonnement gebruikt. Voor meer informatie over het Enterprise Mobility Suite-abonnement raadpleegt u het [Overzicht van Microsoft Enterprise Mobility](http://go.microsoft.com/fwlink/?LinkId=615386).
 
 ## Abonnement op RMS voor personen
 Dit abonnement is bedoeld voor personen binnen een organisatie waar Azure RMS of AD RMS nog niet is geïmplementeerd. Hiermee kunnen deze personen inhoud lezen die is beveiligd door een organisatie die Azure RMS gebruikt, en ook hun eigen inhoud beveiligen.
+
+Mogelijk wordt dit abonnement in de Office 365-beheerportal aangegeven als **Rights Management Ad-hoc** en is het automatisch toegewezen aan gebruikers. Wijs deze licentie niet handmatig toe aan gebruikers en gebruik deze licentie niet voor het beheer van Azure RMS voor uw organisatie. 
 
 Zie voor meer informatie [RMS voor personen en Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## Volgende stappen
 Zie [Vereisten voor Azure Rights Management](requirements-azure-rms.md) voor informatie over andere vereisten.
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 

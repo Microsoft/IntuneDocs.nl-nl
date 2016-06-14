@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,12 +35,11 @@ Alles wat u kunt doen in de klassieke Azure-portal om sjablonen te maken en behe
 
 U kunt met exporteren en importeren ook back-up- en herstelbewerkingen voor uw aangepaste sjablonen uitvoeren. Het wordt aanbevolen regelmatig back-ups van uw aangepaste sjablonen te maken zodat u, als u een onbedoelde wijziging maakt, gemakkelijk kunt terugkeren naar een eerdere versie.
 
-> [!IMPORTANT]
-> Als u Windows PowerShell wilt gebruiken om sjablonen voor het Azure RMS-rechtenbeleid te maken en beheren, hebt u ten minste versie 2.0.0.0 van de [Windows PowerShell-module voor Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721) nodig..
+> [!IMPORTANT] Als u Windows PowerShell wilt gebruiken om sjablonen voor het Azure RMS-rechtenbeleid te maken en beheren, hebt u ten minste versie 2.0.0.0 van de [Windows PowerShell-module voor Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721) nodig.
 > 
 > Als u deze PowerShell-module eerder hebt geïnstalleerd, voert u de volgende opdracht uit in een PowerShell-venster om het versienummer te controleren: `(Get-Module aadrm -ListAvailable).Version`
 
-Zie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md) voor de installatie-instructies..
+Zie [Windows PowerShell voor Azure Rights Management](install-powershell.md) voor installatie-instructies.
 
 De cmdlets die ondersteuning bieden om sjablonen te maken en beheren:
 
@@ -65,6 +64,6 @@ De cmdlets die ondersteuning bieden om sjablonen te maken en beheren:
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

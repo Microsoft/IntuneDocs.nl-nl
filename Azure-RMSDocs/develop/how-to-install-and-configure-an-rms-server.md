@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # De server installeren en configureren
 
 Dit onderwerp bevat de stappen voor het installeren en configureren van de RMS-server voor het testen van uw toepassing met rechten.
@@ -102,6 +102,6 @@ Met de volgende stappen stelt u uw RMS-server in:
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

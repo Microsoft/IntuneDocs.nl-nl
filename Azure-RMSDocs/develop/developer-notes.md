@@ -23,12 +23,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Opmerkingen voor ontwikkelaars
 
 Deze sectie bevat informatie over specifieke hulp voor verschillende belangrijke ontwikkelscenario's. De scenario's in deze sectie zijn specifiek voor deze release van de Rights Management Services SDK 2.1 en kunnen worden gewijzigd in toekomstige releases.
 
-- [Expliciete eigendomsrechten toevoegen](add-explicit-owner-rights.md): de toepassing moet expliciet rechten voor de eigenaar toevoegen bij het maken van een nieuw licentie ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
+- [Expliciete eigendomsrechten toevoegen](add-explicit-owner-rights.md): de toepassing moet expliciet &quot;eigendomsrechten&quot; toevoegen bij het maken van een nieuw licentie ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
 - [Algemene fouten en oplossingen](common-error-conditions-and-solutions.md): de meestvoorkomende foutberichten die u kunt tegenkomen wanneer u de RMS SDK 2.1 ontwikkelhulpprogramma's gebruikt.
 - [E-mailmeldingen inschakelen](how-to-enable-email-notification.md): met e-mailmeldingen kunt u de eigenaar van beveiligde inhoud informeren wanneer zijn of haar inhoud wordt geopend.
 - [Configuratie bestands-API](file-api-configuration.md): het gedrag van bestands-API's kan worden geconfigureerd via instellingen in het register.
@@ -48,6 +48,6 @@ Deze sectie bevat informatie over specifieke hulp voor verschillende belangrijke
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

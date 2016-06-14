@@ -23,12 +23,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # De testomgeving instellen
 
 Uw toepassing met rechten kan worden getest met verschillende serveropties.
 
-**Belangrijk** Het wordt aanbevolen dat u uw Rights Management Services SDK 2.1-toepassing test in de AD RMS-preproductieomgeving met een AD RMS Server. Als u wilt dat uw klant de mogelijkheid heeft om uw toepassing te gebruiken met de Azure RMS-service, moet u tests met die omgeving uitvoeren. Zie voor meer informatie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md)
+**Belangrijk** Het wordt aanbevolen dat u uw Rights Management Services SDK 2.1-toepassing test in de AD RMS-preproductieomgeving met een AD RMS Server. Als u wilt dat uw klant de mogelijkheid heeft om uw toepassing te gebruiken met de Azure RMS-service, moet u tests met die omgeving uitvoeren. Zie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) (Engelstalig) voor meer informatie.
 
  
 
@@ -65,6 +65,6 @@ Voor het testen van uw toepassing op een RMS-server zijn twee opties beschikbaar
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

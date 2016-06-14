@@ -23,12 +23,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # E-mailmeldingen inschakelen
 
 Met e-mailmeldingen kunt u de eigenaar van beveiligde inhoud informeren wanneer zijn of haar inhoud wordt geopend.
 
-Als u een e-mailmelding wilt instellen voor een bepaalde licentie, gebruikt u [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) met de parameter van het type eigenschap *dwPropID* als [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) en de toepassingsgegevensvelden opgemaakt als een [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
+Als u een e-mailmelding wilt instellen voor een bepaalde licentie, gebruikt u [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) met de eigenschapsparameter *dwPropID* als [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) en de toepassingsgegevensvelden opgemaakt als een [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
 
 ## C++
 
@@ -71,6 +71,6 @@ De volgende tabel bevat de toepassingsgegevensvelden, de eigenschapsnaam en de w
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

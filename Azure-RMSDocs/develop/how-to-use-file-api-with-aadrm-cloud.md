@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud
 
 In dit onderwerp worden de stappen beschreven voor het instellen van uw servicetoepassing voor het gebruik van Azure Rights Management. Zie [Aan de slag met Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx) voor meer informatie.
@@ -44,15 +44,14 @@ Als u uw RMS SDK 2.1-servicetoepassing wilt gebruiken met Azure RMS, moet u een 
 -   Stel [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) in.
 
 
-    int mode = IPC_API_MODE_SERVER;
-    IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
+    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
 **Opmerking** Voor meer informatie raadpleegt u [De API-beveiligingsmodus instellen](setting-the-api-security-mode-api-mode.md)
 
      
 
--   Via de volgende stappen maakt u een instantie van een [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)-structuur, waarbij het **pcCredential**-lid ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) is ingevuld met de verbindingsinformatie van de Azure Rights Management Service.
+-   Via de volgende stappen maakt u een instantie van een [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)-structuur, waarbij het **pcCredential**-lid ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) is ingevuld met de verbindingsinformatie van de Azure Rights Management Service.
 -   Gebruik de informatie die u hebt verkregen tijdens het maken van de service-id van de symmetrische sleutel (zie de vereisten die eerder in dit onderwerp zijn vermeld) om de parameters **wszServicePrincipal**, **wszBposTenantId** en **cbKey** in te stellen bij het maken van een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)-structuur.
 
 **Opmerking** Als gevolg van een bestaande voorwaarde van onze Discovery-service worden symmetrische-sleutelreferenties uit andere regio’s (als u niet in Noord-Amerika woont) niet geaccepteerd. Daarom moet u uw tenant-URL’s rechtstreeks opgeven. Dit doet u via de parameter [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) van [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) of [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist).
@@ -67,21 +66,15 @@ Als u uw RMS SDK 2.1-servicetoepassing wilt gebruiken met Azure RMS, moet u een 
 **Opmerking** U moet een tenantbeheerder zijn om de Powershell-cmdlets te kunnen gebruiken.
 
 
--   Start Powershell en voer de volgende opdrachten uit om een sleutel te genereren
-            `Import-Module MSOnline`
-            `Connect-MsolService` (voer uw beheerdersreferenties in)
-            `New-MsolServicePrincipal` (voer een weergavenaam in)
+-   Start PowerShell en voer de volgende opdrachten uit om een sleutel te genereren:         `Import-Module MSOnline`
+            `Connect-MsolService` (typ uw beheerreferenties)         `New-MsolServicePrincipal` (typ een weergavenaam)
 -   Nadat er een symmetrische sleutel is gegenereerd, worden de sleutel en informatie erover vrijgegeven. Ook komt **AppPrincipalId** beschikbaar.
 
 
 
-    The following symmetric key was created as one was not supplied
-    ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+    De volgende symmetrische sleutel is gemaakt omdat er geen sleutel was opgegeven ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
-    DisplayName : RMSTestApp
-    ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963}
-    ObjectId : 0ee53770-ec86-409e-8939-6d8239880518
-    AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
+    DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
 
@@ -97,18 +90,16 @@ Als u uw RMS SDK 2.1-servicetoepassing wilt gebruiken met Azure RMS, moet u een 
     `Get-AadrmConfiguration`
 
 
--   Maak een instantie van een  [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) en stel een aantal leden in.
+-   Maak een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) en stel een aantal leden in.
 
     // Maak een sleutelstructuur.
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
 
     // Stel elk lid in met informatie die u hebt gekregen tijdens het maken van de service.
-    symKey.wszBase64Key = "de hoofdsleutel voor de service";
-    symKey.wszAppPrincipalId = "de hoofd-id van de app";
-    symKey.wszBposTenantId = "uw tenant-id";
+    symKey.wszBase64Key = de hoofdsleutel voor de service; symKey.wszAppPrincipalId = de hoofd-id van de app; symKey.wszBposTenantId = uw tenant-id;
 
 
-Zie voor meer informatie [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key).
+Zie [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) voor meer informatie.
 
 -   Maak een instantie van een [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)-structuur die uw [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)-instantie bevat.
 
@@ -138,21 +129,15 @@ Zie voor meer informatie [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-managemen
 ### Een sjabloon identificeren en deze vervolgens versleutelen
 
 -   Selecteer een sjabloon om voor de versleuteling te gebruiken.
-    Roep [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) aan dat wordt doorgegeven in dezelfde instantie van [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx).
+    Roep [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) aan die wordt doorgegeven in dezelfde instantie van [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx).
 
 
-    PCIPC_TIL pTemplates = NULL;
-    IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
+    PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
 
-    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),
-           IPC_GTL_FLAG_FORCE_DOWNLOAD,
-           0,
-           &promptCtx,
-           NULL,
-           &pTemplates);
+    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
 
 
--   Gebruik de sjabloon van eerder in dit onderwerp om [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile) aan te roepen dat in dezelfde instantie van [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) wordt doorgegeven.
+-   Gebruik de sjabloon van eerder in dit onderwerp om [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile) aan te roepen die in dezelfde instantie van [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) wordt doorgegeven.
 
 Voorbeeld van het gebruik van [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile):
 
@@ -197,6 +182,6 @@ U hebt nu de benodigde stappen voltooid om ervoor te zorgen dat uw toepassing ge
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fouten opsporen in een toepassing met rechtenbescherming | Azure RMS
-description: Het volgende onderwerp laat zien hoe u fouten kunt opsporen in uw toepassing en het Windows-gebeurtenislogboek kunt gebruiken.
+description: In het volgende onderwerp staat hoe u fouten kunt opsporen in uw toepassing en hoe u het Windows-gebeurtenislogboek gebruikt.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Fouten opsporen in een toepassing met rechtenbescherming
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
+# Fouten opsporen in een toepassing met rechten
 
 Het volgende onderwerp laat zien hoe u fouten kunt opsporen in uw toepassing en het Windows-gebeurtenislogboek kunt gebruiken.
 
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE
 
 ### Logboekregistratie van toepassingen met behulp van het Windows-gebeurtenislogboek
 
-De naam van het gebeurtenislogboek is 'Microsoft-RMS-MSIPC/Debug'. Dit betekent dat in Windows Logboeken uw logboek wordt weergegeven als 'Logboeken voor toepassingen en services\\Microsoft\\RMS\\MSIPC\\Debug'.
+De naam van het gebeurtenislogboek is 'Microsoft-RMS-MSIPC/Debug'. Dit betekent dat in Windows Logboeken uw logboek wordt weergegeven als 'Logboeken voor toepassingen en services \\Microsoft\\RMS\\MSIPC\\Debug'.
 
 **Opmerking**: het logboek is standaard ingeschakeld en ingesteld op uitgebreidheidsniveau 3.
 
@@ -81,6 +81,6 @@ Met de volgende opdracht wordt bijvoorbeeld het gebeurtenislogboek MSIPC ingesch
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

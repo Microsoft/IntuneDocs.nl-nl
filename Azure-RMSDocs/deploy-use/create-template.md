@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -41,16 +41,16 @@ Gebruik de volgende procedures om aangepaste sjablonen voor Rights Management te
 
     -   Vanuit het [Office 365-beheercentrum](https://portal.office.com/):
 
-        1.  Klik in het linkerdeelvenster op **Service-instellingen**..
+        1.  Klik in het linkerdeelvenster op **service-instellingen**.
 
-        2.  Klik op de pagina **Service-instellingen** op **Rights Management**..
+        2.  Klik op de pagina **service-instellingen** op **Rights management**.
 
-        3.  Klik in het gedeelte **Uw gegevens beveiligen** op **Beheren**..
+        3.  Klik in het gedeelte **Uw gegevens beveiligen** op **Beheren**.
 
-        4.  Klik in het gedeelte **Rights Management** op **geavanceerde functies**..
+        4.  Klik in het gedeelte **Rights management** op **geavanceerde functies**.
 
             > [!NOTE]
-            > Als u Rights Management nog niet hebt geactiveerd, klikt u eerst op **Activeren** en bevestigt u uw actie. Zie [Azure Rights Management activeren](activate-service.md) voor meer informatie..
+            > Als u Rights Management nog niet hebt geactiveerd, klikt u eerst op **Activeren** en bevestigt u uw actie. Zie voor meer informatie [Azure Rights Management activeren](activate-service.md).
             > 
             > Als u nog niet eerder op **geavanceerde functies** hebt geklikt, volgt u, na activering van Rights Management, de scherminstructies voor het ophalen van een gratis Azure-abonnement dat u nodig hebt voor toegang tot de klassieke Azure-portal.
 
@@ -60,18 +60,17 @@ Gebruik de volgende procedures om aangepaste sjablonen voor Rights Management te
 
         1.  Klik in het linkerdeelvenster op **ACTIVE DIRECTORY**.
 
-        2.  Klik op de pagina **Active Directory** op **RIGHTS MANAGEMENT**.
+        2.  Klik op de pagina **Active directory** op **RIGHTS MANAGEMENT**.
 
         3.  Selecteer de map om Rights Management te beheren.
 
         4.  Als u Rights Management nog niet hebt geactiveerd, klikt u op **ACTIVEREN** en bevestigt u de actie.
 
-            > [!NOTE]
-            > Zie [Azure Rights Management activeren](activate-service.md) voor meer informatie..
+            > [!NOTE] Zie [Activating Azure Rights Management](activate-service.md) (Azure Rights Management activeren) voor meer informatie.
 
 2.  Een nieuwe sjabloon maken:
 
-    -   Ga in de klassieke Azure-portal naar de snelstartpagina **Aan de slag met Rights Management** en klik op **Nieuwe rechtenbeleidssjabloon maken**..
+    -   Ga in de klassieke Azure-portal naar de snelstartpagina **Aan de slag met Rights Management** en klik op **Nieuwe rechtenbeleidssjabloon maken**.
 
         Als u deze pagina niet onmiddellijk ziet nadat u de instructies voor Office 365 hebt uitgevoerd, volgt u de navigatie-instructies hierboven voor de klassieke Azure-portal.
 
@@ -88,13 +87,15 @@ Ga naar de snelstartpagina **Aan de slag met Rights Management** en klik op **Uw
     > [!NOTE]
     > De gebruikers of groepen die u selecteert, moeten een e-mailadres hebben. Dit is bijna altijd het geval in een productieomgeving, maar in een eenvoudige testomgeving moet u wellicht e-mailadressen toevoegen aan gebruikersaccounts of groepen.
 
-    Het is een best practice om te werken met groepen in plaats van gebruikers omdat dit het beheer van de sjablonen vereenvoudigt. Als u lokaal werkt met Active Directory en synchroniseert met Azure AD, kunt u gebruikmaken van beveiligingsgroepen of distributiegroepen met e-mail. Als u echter rechten aan alle gebruikers in de organisatie wilt verlenen, is het efficiënter een van de standaardsjablonen te kopiëren in plaats van meerdere groepen op te geven. Zie [Een sjabloon kopiëren](copy-template.md) voor meer informatie..
+    Het is een best practice om te werken met groepen in plaats van gebruikers omdat dit het beheer van de sjablonen vereenvoudigt. Als u lokaal werkt met Active Directory en synchroniseert met Azure AD, kunt u gebruikmaken van beveiligingsgroepen of distributiegroepen met e-mail. Als u echter rechten aan alle gebruikers in de organisatie wilt verlenen, is het efficiënter een van de standaardsjablonen te kopiëren in plaats van meerdere groepen op te geven. Zie [How to copy a template](copy-template.md) (Een sjabloon kopiëren) voor meer informatie.
 
     > [!TIP]
-    > U kunt later gebruikers van buiten uw organisatie toevoegen aan de sjabloon met de [Windows PowerShell-module voor Azure Rights Management](install-powershell.md) en daarbij een van de volgende methoden volgen:
+    > U kunt gebruikers van buiten uw organisatie ('externe gebruikers') toevoegen aan de sjabloon door een e-mailgroep met contactpersonen uit Office 365 of Exchange Online te selecteren. Hiermee kunt u op dezelfde manier rechten toewijzen aan deze gebruikers als u rechten toewijst aan gebruikers in uw organisatie. U kunt bijvoorbeeld voorkomen dat klanten een prijslijst bewerken die u aan hen verzendt. Gebruik deze sjabloonconfiguratie niet voor het beveiligen van e-mailberichten als gebruikers van buiten uw organisatie de beveiligde e-mailberichten lezen met Outlook Web App.
     > 
-    > -   **Een sjabloon bijwerken met een rechtendefinitieobject**: geef de externe e-mailadressen en de rechten hiervan op in een rechtendefinitieobject, waarmee u vervolgens de sjabloon bijwerkt. U geeft het rechtendefinitieobject op met de cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) om een variabele te maken en geeft deze variabele vervolgens door aan de parameter -RightsDefinition met de cmdlet [Set-AadrmTemplateProperty instellen](https://msdn.microsoft.com/library/azure/dn727076.aspx) om een bestaande sjabloon te wijzigen. Als u deze gebruikers echter aan een bestaande sjabloon toevoegt, moet u ook rechtendefinitieobjecten definiëren voor de bestaande groepen in de sjablonen en niet alleen voor de nieuwe externe gebruikers.
-    > -   **De bijgewerkte sjabloon exporteren, bewerken en importeren**: met de cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) kunt u de sjabloon exporteren naar een bestand dat u kunt bewerken om de externe e-mailadressen van deze gebruikers en hun rechten toe te voegen aan de bestaande groepen en rechten. Gebruik vervolgens de cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) om deze wijziging weer te importeren in Azure RMS.
+    > Daarnaast kunt u later gebruikers van buiten uw organisatie toevoegen aan de sjabloon met de [Windows PowerShell-module voor Azure Rights Management](install-powershell.md) en daarbij een van de volgende methoden volgen:
+    > 
+    > -  **Een sjabloon bijwerken met een rechtendefinitieobject**: geef de externe e-mailadressen en de rechten hiervan op in een rechtendefinitieobject, waarmee u vervolgens de sjabloon bijwerkt. U geeft het rechtendefinitieobject op met de cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) om een variabele te maken en geeft deze variabele vervolgens door aan de parameter -RightsDefinition met de cmdlet [Set-AadrmTemplateProperty instellen](https://msdn.microsoft.com/library/azure/dn727076.aspx) om een bestaande sjabloon te wijzigen. Als u deze gebruikers echter aan een bestaande sjabloon toevoegt, moet u ook rechtendefinitieobjecten definiëren voor de bestaande groepen in de sjablonen en niet alleen voor de nieuwe externe gebruikers.
+    > -  **De bijgewerkte sjabloon exporteren, bewerken en importeren**: met de cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) kunt u de sjabloon exporteren naar een bestand dat u kunt bewerken om de externe e-mailadressen van deze gebruikers en hun rechten toe te voegen aan de bestaande groepen en rechten. Gebruik vervolgens de cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) om deze wijziging weer te importeren in Azure RMS.
 
 3.  Klik op de knop Volgende en wijs vervolgens een van de vermelde rechten toe aan de door u geselecteerde gebruikers en groepen.
 
@@ -117,25 +118,25 @@ Ga naar de snelstartpagina **Aan de slag met Rights Management** en klik op **Uw
 
 7.  Selecteer op de pagina **ZICHTBAARHEID VAN SJABLOON** de gebruikers en groepen die de sjabloon kunnen zien en selecteren in toepassingen met RMS. Volg net zoals eerder de best practice om te werken met groepen in plaats van gebruikers. De geselecteerde groepen of gebruikers moeten een e-mailadres hebben.
 
-8.  Klik op de knop Volgende en beslis of u toepassingscompatibiliteit voor uw afdelingssjabloon moet configureren. Als dat zo is, schakelt u het vakje **TOEPASSINGSCOMPATIBILITEIT** in en klikt u op **Voltooien**..
+8.  Klik op de knop Volgende en beslis of u toepassingscompatibiliteit voor uw afdelingssjabloon moet configureren. Als dat zo is, schakelt u het vakje **TOEPASSINGSCOMPATIBILITEIT** in en klikt u op **Voltooien**.
 
     Waarom zou u toepassingscompatibiliteit moeten configureren? Niet alle toepassingen bieden ondersteuning voor afdelingssjablonen. De toepassing moet daarvoor eerst worden geverifieerd bij de RMS-service, voordat de sjablonen worden gedownload. Als het verificatieproces niet wordt uitgevoerd, wordt standaard geen van de afdelingssjablonen gedownload. U kunt dit gedrag negeren door op te geven dat alle afdelingssjablonen moeten worden gedownload, door toepassingscompatibiliteit te configureren en door het selectievakje **Deze sjabloon voor alle gebruikers weergeven wanneer de toepassingen geen ondersteuning bieden voor gebruikersidentiteit** in te schakelen.
 
     Als u toepassingscompatibiliteit bijvoorbeeld niet configureert voor de afdelingssjabloon in ons voorbeeld over Human Resources, zien alleen gebruikers van de afdeling Human Resources de afdelingssjabloon wanneer ze de RMS-toepassing voor delen gebruiken, maar zijn er geen gebruikers die de afdelingssjabloon zien wanneer ze Outlook Web Access (OWA) van Exchange Server 2013 gebruiken, omdat Exchange OWA en Exchange ActiveSync momenteel geen afdelingssjablonen ondersteunen. Als u dit standaardgedrag negeert door toepassingscompatibiliteit te configureren, zien alleen gebruikers van de afdeling Human Resources de afdelingssjabloon wanneer ze de RMS-toepassing voor delen gebruiken, maar zien alle gebruikers de afdelingssjabloon wanneer ze Outlook Web Access (OWA) gebruiken. Als gebruikers OWA of Exchange ActiveSync vanaf Exchange Online gebruiken, zien alle gebruikers de afdelingssjablonen of ziet geen enkele gebruiker de afdelingssjablonen, afhankelijk van de sjabloonstatus (gearchiveerd of gepubliceerd) in Exchange Online.
 
-    Office 2016 ondersteunt systeemeigen afdelingssjablonen, evenals Office 2013 vanaf versie 15.0.4727.1000, uitgebracht in juni 2015 als onderdeel van [KB 3054853](https://support.microsoft.com/kb/3054853)).
+    Office 2016 ondersteunt systeemeigen afdelingssjablonen, evenals Office 2013 vanaf versie 15.0.4727.1000, uitgebracht in juni 2015 als onderdeel van [KB 3054853](https://support.microsoft.com/kb/3054853).
 
     > [!NOTE]
     > Als uw toepassingen nog geen systeemeigen afdelingssjablonen ondersteunen, kunt u een aangepast downloadscript voor RMS-sjablonen of andere hulpprogramma's gebruiken om deze sjablonen te implementeren in de lokale RMS-clientmap. Deze toepassingen geven de afdelingssjablonen dan alleen juist weer voor de gebruikers en groepen die u hebt geselecteerd voor het bereik van de sjabloon:
     > 
-    > -   Voor Office 2010 is de clientmap **%localappdata%\Microsoft\DRM\Templates**..
+    > -   Voor Office 2010 is de clientmap **%localappdata%\Microsoft\DRM\Templates**.
     > -   Vanaf een clientcomputer waarop alle sjablonen zijn gedownload, kunt u de sjabloonbestanden kopiëren en plakken naar andere computers.
     > 
-    > U kunt [het aangepaste RMS-sjabloonscript downloaden vanaf de Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=524506). Als u een fout ziet wanneer u op deze koppeling klikt, hebt u zich waarschijnlijk niet aangemeld bij Microsoft Connect.   Aanmelden:
+    > U kunt [het aangepaste RMS-sjabloonscript downloaden vanaf de Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=524506). Als u een fout ziet wanneer u op deze koppeling klikt, hebt u zich waarschijnlijk niet aangemeld bij Microsoft Connect. Aanmelden:
     > 
     > 1.  Ga naar de [Microsoft Connect-site](http://www.connect.microsoft.com) en meld u aan bij uw Microsoft-account.
     > 2.  Klik op **Directory** en selecteer de categorie **Connect-producten weergeven die momenteel geen feedback accepteren**.
-    > 3.  Zoek naar **Rights Management Services** en naar het programma **Microsoft RMS Enterprise-functies**. Klik vervolgens op **Deelnemen**..
+    > 3.  Zoek naar **Rights Management Services** en naar het programma **Microsoft RMS Enterprise-functies**. Klik vervolgens op **Deelnemen**.
 
 9. Klik op **CONFIGUREREN** en voeg extra talen toe die door gebruikers worden gebruikt, samen met de naam en beschrijving van deze sjabloon in die taal. Wanneer u meertalige gebruikers hebt, is het belangrijk om elke taal toe te voegen die ze gebruiken, en een naam en beschrijving in die taal op te geven. Gebruikers krijgen vervolgens de naam en beschrijving van de sjabloon te zien in dezelfde taal als hun clientbesturingssysteem, wat garandeert dat ze het op een document of e-mailbericht toegepaste beleid begrijpen. Als er geen overeenkomst is met hun clientbesturingssysteem, worden de naam en beschrijving die gebruikers zien, teruggezet naar de taal en beschrijving die u hebt opgegeven toen u de sjabloon voor het eerst maakte.
 
@@ -146,28 +147,28 @@ Ga naar de snelstartpagina **Aan de slag met Rights Management** en klik op **Uw
     |**vervaldatum inhoud**|Definieer voor deze sjabloon een datum of aantal dagen gedurende welke door de sjabloon beveiligde bestanden niet mogen worden geopend. U kunt een datum of aantal dagen opgeven, beginnend op het moment dat de beveiliging op het bestand wordt toegepast.<br /><br />Wanneer u een datum opgeeft, gaat deze in om middernacht in uw huidige tijdzone.|
     |**offline toegang**|Gebruik deze instelling om een juist evenwicht te vinden tussen uw beveiligingsvereisten en de vereiste dat gebruikers beschermde bestanden moeten kunnen openen wanneer ze geen internetverbinding hebben.<br /><br />Als u opgeeft dat inhoud niet beschikbaar is zonder internetverbinding of dat inhoud alleen beschikbaar is gedurende een bepaald aantal dagen, moeten gebruikers bij het bereiken van deze drempelwaarde opnieuw worden geverifieerd en wordt hun toegang geregistreerd. Als dit gebeurt en hun referenties niet in het cachegeheugen zijn opgeslagen, wordt gebruikers gevraagd zich aan te melden voordat ze het bestand kunnen openen.<br /><br />Behalve hernieuwde verificatie worden het beleid en het gebruikersgroeplidmaatschap opnieuw geëvalueerd. Dit betekent dat gebruikers verschillende toegangsresultaten voor hetzelfde bestand kunnen ondervinden als het beleid of groepslidmaatschap is gewijzigd sinds ze het bestand voor het laatst hebben geopend.|
 
-10. Als u zeker weet dat de sjabloon juist is geconfigureerd voor uw gebruikers, klikt u op **PUBLICEREN** om de sjabloon zichtbaar te maken voor de gebruikers. Klik vervolgens op **OPSLAAN**..
+10. Als u zeker weet dat de sjabloon juist is geconfigureerd voor uw gebruikers, klikt u op **PUBLICEREN** om de sjabloon zichtbaar te maken voor de gebruikers. Klik vervolgens op **OPSLAAN**.
 
-11. Klik in de klassieke portal op de knop Terug om terug te gaan naar de pagina **SJABLONEN**, waar de sjabloon nu de bijgewerkte status **Gepubliceerd** heeft..
+11. Klik op de knop Terug in de klassieke portal om terug te gaan naar de pagina **SJABLONEN**, waar de sjabloon nu de bijgewerkte status **Gepubliceerd** heeft.
 
 Breng de gewenste wijzigingen aan in de sjabloon, selecteer deze en voer vervolgens de snelstartstappen opnieuw uit. Of selecteer een van de volgende opties:
 
--   Meer gebruikers en groepen toevoegen en de rechten voor die gebruikers en groepen definiëren: klik op **RECHTEN** en vervolgens op **TOEVOEGEN**..
+-   Meer gebruikers en groepen toevoegen en de rechten voor die gebruikers en groepen definiëren: klik op **RECHTEN** en vervolgens op **TOEVOEGEN**.
 
--   Eerder door u geselecteerde gebruikers of groepen verwijderen: klik op **RECHTEN**, selecteer de gebruiker of groep in de lijst en klik vervolgens op **VERWIJDEREN**..
+-   Eerder door u geselecteerde gebruikers of groepen verwijderen: klik op **RECHTEN**, selecteer de gebruiker of groep in de lijst en klik vervolgens op **VERWIJDEREN**.
 
--   Wijzigen welke gebruikers de sjablonen kunnen zien om deze te selecteren vanuit toepassingen: klik op **BEREIK** en klik vervolgens op **TOEVOEGEN**, **VERWIJDEREN** of **TOEPASSINGSCOMPATIBILITEIT**..
+-   Wijzigen welke gebruikers de sjablonen kunnen zien om deze te selecteren vanuit toepassingen: klik op **BEREIK**, klik vervolgens **TOEVOEGEN** of **VERWIJDEREN** of **TOEPASSINGSCOMPATIBILITEIT**.
 
--   De sjabloon niet langer zichtbaar maken voor alle gebruikers: klik achtereenvolgens op **CONFIGUREREN**, **ARCHIVEREN** en **OPSLAAN**..
+-   De sjabloon niet langer zichtbaar maken voor alle gebruikers: klik achtereenvolgens op **CONFIGUREREN**, **ARCHIVEREN** en **OPSLAAN**.
 
--   Andere configuratiewijzigingen aanbrengen: klik op **CONFIGUREREN**, breng uw wijzigingen aan en klik vervolgens op **OPSLAAN**..
+-   Andere configuratiewijzigingen aanbrengen: klik op **CONFIGUREREN**, breng uw wijzigingen aan en klik vervolgens op **OPSLAAN**.
 
 > [!WARNING]
-> Wanneer u een eerder opgeslagen sjabloon wijzigt, worden de wijzigingen aan deze sjabloon pas weergegeven op de clientcomputers nadat de sjablonen op deze computers zijn vernieuwd. Zie [Sjablonen voor gebruikers vernieuwen](refresh-templates.md) voor meer informatie..
+> Wanneer u een eerder opgeslagen sjabloon wijzigt, worden de wijzigingen aan deze sjabloon pas weergegeven op de clientcomputers nadat de sjablonen op deze computers zijn vernieuwd. Zie [Refreshing templates for users](refresh-templates.md) (Sjablonen voor gebruikers vernieuwen) voor meer informatie.
 
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO5-->
 
 

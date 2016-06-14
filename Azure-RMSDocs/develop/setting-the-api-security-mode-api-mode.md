@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # De API-beveiligingsmodus instellen
 
 U kunt kiezen in welke beveiligingsmodus uw toepassing met de bestands-API moet worden uitgevoerd, met behulp van de functie [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
@@ -50,6 +50,6 @@ Voor meer informatie over de *servermodus* raadpleegt u [Toepassingstypen](appli
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
