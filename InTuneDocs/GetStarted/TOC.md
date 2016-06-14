@@ -1,35 +1,45 @@
-# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Begrijpen en verkennen](/intune/understand-explore/introduction-to-microsoft-intune)
 
-# [Get Started](what-to-know-before-you-start-microsoft-intune.md)
-## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
-### [Supported web browsers](supported-web-browsers.md)
-### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)
-### [Administrative accounts, websites, and permissions](administrative-accounts-websites-perms.md)
-### [Company Portal](microsoft-intune-company-portal.md)
-### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
-### [Network bandwidth usage](network-bandwidth-use.md)
-### [Domain names](domain-names-for-microsoft-intune.md)
+# [Aan de slag](what-to-know-before-you-start-microsoft-intune.md)
+## [Wat u moet weten voordat u begint](what-to-know-before-you-start-microsoft-intune.md)
+### [Ondersteunde webbrowsers](supported-web-browsers.md)
+### [Vereisten voor de netwerkinfrastructuur](network-infrastructure-requirements-for-microsoft-intune.md)
+### [Beheerdersaccounts, websites en machtigingen](administrative-accounts-websites-perms.md)
+### [Bedrijfsportal](microsoft-intune-company-portal.md)
+### [Integratie met Microsoft-cloudservices en -producten](integration-with-cloud-services.md)
+### [Gebruik van netwerkbandbreedte](network-bandwidth-use.md)
+### [Domeinnamen](domain-names-for-microsoft-intune.md)
 
-## [Start with a paid subscription](start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-### [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
-### [Create policies and publish an app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
-### [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
-### [Post configuration tasks](post-configuration-tasks.md)
+## [Snelstartgids voor Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
+### [Aanmelden bij Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+### [Een aangepaste domeinnaam configureren](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [AD synchroniseren en gebruikers toevoegen](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Intune-licenties beheren](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Gebruikers en apparaten organiseren](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
+### [Beleid maken en een app publiceren](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [De bedrijfsportal aanpassen](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
+### [Mobiele apparaten inschrijven en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Taken na configuratie](post-configuration-tasks.md)
 
+<!--
+## [Choose how to manage devices](choose-how-to-manage-devices.md)
+### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
+-->
 
-## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
-### [Project scope](project-scope.md)
-### [Proof of concept](proof-of-concept.md)
-### [Pilot](pilot.md)
-### [Enterprise rollout](enterprise-rollout.md)
-### [Operations and maintenance](operations-and-maintenance.md)
+## [Implementatiefasen voor Intune-implementaties](rollout-phases-for-microsoft-intune-deployment.md)
+### [Projectbereik](project-scope.md)
+### [Testen van het concept](proof-of-concept.md)
+### [Testfase](pilot.md)
+### [Implementatie in het bedrijf](enterprise-rollout.md)
+### [Bewerkingen en onderhoud](operations-and-maintenance.md)
 
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Implementeren en gebruiken](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Problemen oplossen](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+
+
+<!--HONumber=May16_HO1-->
+
+
