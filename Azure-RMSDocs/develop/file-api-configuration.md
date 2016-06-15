@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# API-bestandsconfiguratie
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
+# Configuratie van bestands-API
 
 
 Het gedrag van de bestands-API's kan worden geconfigureerd via instellingen in het register.
@@ -47,7 +47,7 @@ In de volgende secties worden de sleutels en sleutelwaarden beschreven waarmee v
 
 *Beschrijving*: bevat de algemene configuratie voor de bestands-API.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\ & lt; EXT & gt;
+### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
 * Type: sleutel
 
@@ -75,7 +75,7 @@ Stel de waarde *Versleuteling* in de sleutel in om het beveiligingsgedrag op te 
 - *Pfile*: PFile-versleuteling wordt gebruikt. Aan het versleutelde bestand wordt .pfile toegevoegd aan de originele extensie. Na versleuteling heeft een txt-bestand bijvoorbeeld de extensie .txt.pfile.
 
 
-> [AZURE.NOTE] Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
+> [AZURE.NOTE] Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op &quot;Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
 
 Als u een andere waarde of geen waarde instelt, wordt het standaardgedrag toegepast.
 
@@ -85,11 +85,11 @@ Als u een andere waarde of geen waarde instelt, wordt het standaardgedrag toegep
 -   **Txt-, xml-, jpg-, jpeg-, pdf-, png-, tiff-,bmp-, gif-, giff-, jpe-, jfif-, jif-bestanden** Systeemeigen versleuteling is ingeschakeld (xxx wordt pxxx)
 -   **Alle andere bestanden** Versleuteling met Pfile (Protected File) (xxx wordr xxx.pfile)
 
-Als u versleuteling probeert toe te passen op een geblokkeerd bestandstype, treedt de fout [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes) op.
+Als versleuteling wordt toegepast op een geblokkeerd bestandstype, treedt de fout [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes) op.
 
 ### Bestands-API - Details van bestandsondersteuning
 
-Systeemeigen ondersteuning kan worden toegevoegd voor elk bestandstype (extensie). Zo wordt voor elke extensie &lt;ext&gt; (niet-Office), \*.p&lt;ext&gt; gebruikt als de beheerconfiguratie voor de extensie 'NATIVE' (Eigen) is.
+Systeemeigen ondersteuning kan worden toegevoegd voor elk bestandstype (extensie). Zo wordt voor elke extensie &lt;ext&gt; (niet-Office-bestanden), \*.p&lt;ext&gt; gebruikt als de beheerconfiguratie voor de extensie SYSTEEMEIGEN is.
 
 **Office-bestanden**
 
@@ -161,6 +161,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

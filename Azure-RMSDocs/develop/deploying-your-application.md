@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Uw toepassing implementeren
 
 
@@ -44,8 +44,7 @@ AD RMS-Client 2.1 is software die is ontworpen voor uw clientcomputers om toegan
 
 AD RMS-Client 2.1 is geen onderdeel van Windows. AD RMS Client 2.1 wordt geleverd als optionele download en kan (na bevestiging en acceptatie van de gebruiksrechtovereenkomst) vrij worden gedistribueerd met uw software van derden om clients toegang te geven tot inhoud die met rechten is beschermd door gebruik en implementatie van AD RMS-servers in uw omgeving.
 
-> [!IMPORTANT]
-> AD RMS-Client 2.1 is architectuurspecifiek en moet overeenkomen met de architectuur van het beoogde besturingssysteem.
+> [!IMPORTANT] AD RMS-Client 2.1 is architectuurspecifiek en moet overeenkomen met de architectuur van het beoogde besturingssysteem.
 
 
 ## Installatieopties voor AD RMS-Client 2.1
@@ -103,6 +102,6 @@ Voor meer informatie over het configureren van uw toepassing zodat deze werkt me
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
