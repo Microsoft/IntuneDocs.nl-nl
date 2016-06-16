@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# Configuratie van bestands-API
+
+# API-bestandsconfiguratie
 
 
 Het gedrag van de bestands-API's kan worden geconfigureerd via instellingen in het register.
@@ -40,46 +40,45 @@ Zie voor meer informatie over ondersteunde indelingen **Bestands-API - Details v
 
 In de volgende secties worden de sleutels en sleutelwaarden beschreven waarmee versleuteling wordt ingesteld.
 
-
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-*Type*: sleutel
+**Type**: sleutel
 
-*Beschrijving*: bevat de algemene configuratie voor de bestands-API.
+**Beschrijving**: bevat de algemene configuratie voor de bestands-API.
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
-* Type: sleutel
+**Type**: sleutel
 
-* Beschrijving: configuratie-informatie voor een specifieke bestandsextensie; bijvoorbeeld, txt, jpg, enzovoort.
+**Beschrijving**: bevat configuratie-informatie voor een specifieke bestandsextensie; bijvoorbeeld, txt, jpg, enzovoort.
 
 - Het jokerteken, ' *', is toegestaan. Een instelling voor een bepaalde extensie heeft echter voorrang op de instelling van het jokerteken. Het jokerteken heeft geen invloed op de instellingen voor Microsoft Office-bestanden. Deze moeten expliciet worden uitgeschakeld door het bestandstype.
 - Gebruik '.' voor het opgeven van bestanden die geen extensie hebben.
 - Geef het teken '.' niet op bij het opgeven van de sleutel voor een specifieke bestandsextensie. Gebruik bijvoorbeeld `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` om instellingen op te geven voor txt-bestanden. (Gebruik `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT` niet.)
 
-Stel de waarde *Versleuteling* in de sleutel in om het beveiligingsgedrag op te geven. Als de waarde *Versleuteling* niet is ingesteld, wordt het standaardgedrag voor het bestandstype toegepast.
+Stel de waarde **Versleuteling** in de sleutel in om het beveiligingsgedrag op te geven. Als de waarde **Versleuteling** niet is ingesteld, wordt het standaardgedrag voor het bestandstype toegepast.
 
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
-*Type: REG_SZ*
+**Type**: REG_SZ
 
-* Beschrijving: bevat een van drie waarden:
+**Beschrijving**: bevat een van drie waarden:
 
-- *Uit*: versleuteling is uitgeschakeld.
+- **Uit**: versleuteling is uitgeschakeld.
 
-> [AZURE.NOTE] Deze instelling heeft geen gevolgen voor ontsleuteling. Een versleuteld bestand, ongeacht of het is versleuteld met systeemeigen beveiliging of Pfile-beveiliging, kan worden ontsleuteld mits de gebruiker beschikt over uitpakrechten (EXTRACT).
+> [AZURE.NOTE] Deze instelling heeft geen gevolgen voor ontsleuteling. Een versleuteld bestand, ongeacht of het is versleuteld met systeemeigen beveiliging of Pfile-beveiliging, kan worden ontsleuteld mits de gebruiker beschikt over uitpakrechten (**EXTRACT**).
 
-- *Systeemeigen*: systeemeigen versleuteling wordt gebruikt. Bij Office-bestanden heeft het versleutelde bestand dezelfde extensie als het oorspronkelijke bestand. Een bestand met de bestandsnaamextensie .docx wordt bijvoorbeeld versleuteld als een bestand met de extensie .docx. Voor andere bestanden waarop systeemeigen beveiliging kan worden toegepast, wordt het bestand versleuteld als een bestand met de extensie in de indeling p**zzz**, waarbij **zzz** de oorspronkelijke bestandsextensie is. Txt-bestanden worden bijvoorbeeld versleuteld als een bestand met de extensie .ptxt. Hieronder vindt u een lijst met bestandsextensies waarop systeemeigen beveiliging kan worden toegepast.
+- **Systeemeigen**: systeemeigen versleuteling wordt gebruikt. Bij Office-bestanden heeft het versleutelde bestand dezelfde extensie als het oorspronkelijke bestand. Een bestand met de bestandsnaamextensie .docx wordt bijvoorbeeld versleuteld als een bestand met de extensie .docx. Voor andere bestanden waarop systeemeigen beveiliging kan worden toegepast, wordt het bestand versleuteld als een bestand met de extensie in de indeling p*zzz*, waarbij *zzz* de oorspronkelijke bestandsextensie is. Txt-bestanden worden bijvoorbeeld versleuteld als een bestand met de extensie .ptxt. Hieronder vindt u een lijst met bestandsextensies waarop systeemeigen beveiliging kan worden toegepast.
 
-- *Pfile*: PFile-versleuteling wordt gebruikt. Aan het versleutelde bestand wordt .pfile toegevoegd aan de originele extensie. Na versleuteling heeft een txt-bestand bijvoorbeeld de extensie .txt.pfile.
+- **Pfile**: PFile-versleuteling wordt gebruikt. Aan het versleutelde bestand wordt .pfile toegevoegd aan de originele extensie. Na versleuteling heeft een txt-bestand bijvoorbeeld de extensie .txt.pfile.
 
 
 > [AZURE.NOTE] Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op &quot;Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
 
 Als u een andere waarde of geen waarde instelt, wordt het standaardgedrag toegepast.
 
-## Standaardgedrag voor verschillende bestandsindelingen **
+## Standaardgedrag voor verschillende bestandsindelingen
 
 -   **Office-bestanden** Systeemeigen versleuteling is ingeschakeld.
 -   **Txt-, xml-, jpg-, jpeg-, pdf-, png-, tiff-,bmp-, gif-, giff-, jpe-, jfif-, jif-bestanden** Systeemeigen versleuteling is ingeschakeld (xxx wordt pxxx)
@@ -106,7 +105,7 @@ Systeemeigen ondersteuning kan worden toegevoegd voor elk bestandstype (extensie
 
 **Alle andere bestandsindelingen**
 
--   Beveiligingstype = Pfile: sample.*zzz* heeft na versleuteling de naam sample.*zzz*.pfile, waarbij zzz de oorspronkelijke bestandsextensie is.
+-   Beveiligingstype = Pfile: sample.*zzz* heeft na versleuteling de naam sample.*zzz*.pfile, waarbij *zzz* de oorspronkelijke bestandsextensie is.
 -   Uit: versleuteling uitschakelen.
 
 ### Voorbeelden
@@ -158,9 +157,6 @@ HKEY_LOCAL_MACHINE
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

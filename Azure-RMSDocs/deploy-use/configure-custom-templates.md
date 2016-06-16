@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ Nadat u [Azure Rights Management (Azure RMS) hebt geactiveerd](activate-service.
 
     -   Specifieke machtigingen: inhoud weergeven, bestand opslaan, inhoud bewerken, toegewezen rechten weergeven, macro's toestaan, doorsturen, beantwoorden, allen beantwoorden
 
-Bovendien kunnen gebruikers met de [RMS-toepassing voor delen](../rms-client/sharing-app-windows.md) hun eigen set machtigingen definiëren. Voor de Outlook-client en Outlook Web Access kunnen gebruikers bovendien de optie **Niet doorsturen** selecteren voor e-mailberichten.
+Bovendien kunnen gebruikers met de [RMS-toepassing voor delen](../rms-client/sharing-app-windows.md) hun eigen set machtigingen definiëren. Voor de Outlook-client en voor Outlook Web Access kunnen gebruikers bovendien de optie [Niet doorsturen](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) selecteren.
 
 Voor veel organisaties zijn de standaardsjablonen voldoende. Maar als u uw eigen, aangepaste rechtenbeleidssjablonen wilt maken, is dat mogelijk. Enkele redenen om een aangepaste sjabloon te maken:
 
@@ -72,6 +72,6 @@ Raadpleeg de volgende informatie voor hulp bij de configuratie en het gebruik va
 
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO1-->
 
 

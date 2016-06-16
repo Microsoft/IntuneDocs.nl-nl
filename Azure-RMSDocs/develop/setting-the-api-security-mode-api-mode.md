@@ -1,30 +1,20 @@
 ---
-# required metadata
+# vereiste metagegevens
 
-title: De API-beveiligingsmodus instellen | Azure RMS
-description: Kies welke beveiligingsmodus er moet worden uitgevoerd voor bestands-API-toepassing.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# optional metadata
+titel: Instructies: de API-beveiligingsmodus instellen | Beschrijving Azure RMS: kiezen in welke beveiligingsmodus uw bestands-API wordt uitgevoerd.
+trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroepidentiteit ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
+# optionele metagegevens
 
 #ROBOTS:
-audience: developer
+doelgroep: ontwikkelaar
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# De API-beveiligingsmodus instellen
+
+# Instructies: de API-beveiligingsmodus instellen
 
 U kunt kiezen in welke beveiligingsmodus uw toepassing met de bestands-API moet worden uitgevoerd, met behulp van de functie [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
 
@@ -34,12 +24,9 @@ Voor meer informatie over de *servermodus* raadpleegt u [Toepassingstypen](appli
 
 **Belangrijk:** de beveiligingsmodus moet worden ingesteld voordat andere Rights Management Services SDK 2.1-functies worden aangeroepen. Wanneer de beveiligingsmodus is ingesteld, kan deze niet meer worden gewijzigd voor het huidige proces.
 
- 
-
 ## Verwante onderwerpen
 
-* [Toepassingstypen](application-types.md)
-* [Concepten voor ontwikkelaars](ad-rms-concepts-nav.md)
+* [Soorten toepassingen](application-types.md)
 * [**Waarden voor API-modi**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
 * [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
  
@@ -47,9 +34,6 @@ Voor meer informatie over de *servermodus* raadpleegt u [Toepassingstypen](appli
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

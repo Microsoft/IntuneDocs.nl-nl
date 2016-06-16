@@ -23,25 +23,33 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
 # Aan de slag
 
-Het Rights Management Services SDK 2.1-platform stelt ontwikkelaars in staat om toepassingen te ontwikkelen die gebruikmaken van de RMS-beveiliging voor informatie. Het platform werkt met complexe beveiligingsprocedures, zoals sleutelbeheer, versleuteling en ontsleuteling, en biedt een vereenvoudigde API voor het eenvoudig ontwikkelen van toepassingen.
+Met het Rights Management Services SDK 2.1-platform kunnen ontwikkelaars toepassingen ontwikkelen die gebruikmaken van de RMS-informatiebeveiliging via een RMS-server of Azure RMS. Het platform werkt met complexe beveiligingsprocedures, zoals sleutelbeheer, versleuteling en ontsleuteling, en biedt een vereenvoudigde API voor het eenvoudig ontwikkelen van toepassingen.
 
 ## Aan de slag met de RMS SDK 2.1
 
-Lees deze gedeeltes (zie hieronder):
+Dit onderwerp bevat informatie over het instellen en uitvoeren van uw toepassing met rechten in een testomgeving. In de volgende onderwerpen vindt u informatie over het instellen van uw ontwikkelomgeving. U wordt aanbevolen dezelfde stappenvolgorde te gebruiken bij het uitvoeren van de taken.
 
--   Waarom de RMS SDK 2.1 gebruiken voor het beveiligen van uw inhoud
--   Kernprincipes
+## In deze secties
+
+| Onderwerp | Beschrijving |
+|-------|-------------|
+| [Opmerkingen bij de release](release-notes-rtm.md) | Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de RMS SDK 2.1.|
+| [De SDK installeren](install-the-rms-sdk.md) | Dit onderwerp bevat de stappen voor het installeren van de hulpprogramma's voor ontwikkelaars.|
+| [Visual Studio configureren](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Dit onderwerp bevat instructies over het configureren van een Visual Studio-project voor het gebruik van de RMS SDK 2.1.|
+| [Uw toepassing ontwikkelen](developing-your-application.md) | Dit onderwerp bevat essentiële instructies voor de belangrijkste aspecten van een RMS-toepassing en kan fungeren als basis bij het ontwikkelen van uw eigen toepassing.|
+| [Uw toepassing testen](running-your-first-application.md) |Dit onderwerp bevat instructies voor het instellen van uw toepassingstest.|
+| [Implementeren in productieomgeving](deploying-your-application.md) |Dit onderwerp bevat informatie over de implementatieopties voor uw toepassing met rechten.|
+
+Wanneer u aan de slag bent gegaan, is het een goed idee om enkele van onze andere [RMS-voorbeelden](samples.md) te bekijken. Bezoek vervolgens regelmatig onze [RMS Developer’s Corner](http://blogs.msdn.com/b/rms/) voor de meest recente informatie.
+
 
 Gebruik de RMS SDK 2.1 aan de hand van de richtlijnen in de volgende onderwerpen:
 
--   [De SDK installeren](create-your-first-rights-aware-application.md)
+-   [De SDK installeren](install-the-rms-sdk.md)
 -   [Een toepassing met rechten testen](running-your-first-application.md)
--   [IPCHelloWorld - een voorbeeldtoepassing](how-to-build-your-first-application.md)
-
-Wanneer u aan de slag bent gegaan, is het een goed idee om enkele van onze andere [RMS-voorbeelden](samples.md) te bekijken. Bezoek vervolgens regelmatig onze [RMS Developer’s Corner](http://blogs.msdn.com/b/rms/) voor de meest recente informatie.
+-   [IPCHelloWorld - een voorbeeld van de toepassing](how-to-build-your-first-application.md)
 
 ### Waarom de RMS SDK 2.1 gebruiken voor het beveiligen van uw inhoud
 
@@ -65,19 +73,15 @@ De RMS SDK 2.1 ondersteunt een aantal belangrijke client- en serverplatforms. Ga
 
 * [AD RMS-voorbeelden](samples.md)
 * [AD RMS Developer's Corner](http://blogs.msdn.com/b/rms/)
-* [De SDK installeren](create-your-first-rights-aware-application.md)
+* [De SDK installeren](install-the-rms-sdk.md)
 * [IPCHelloWorld - een voorbeeldtoepassing](how-to-build-your-first-application.md)
 * [Overzicht](ad-rms-overview.md)
 * [Ondersteunde platforms](supported-platforms.md)
-* [Een toepassing met rechten testen](running-your-first-application.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

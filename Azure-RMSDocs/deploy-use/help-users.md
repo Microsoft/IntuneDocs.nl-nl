@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,8 +35,7 @@ Nadat u Azure Rights Management (Azure RMS) hebt geïmplementeerd en geconfigure
 
     Laat gebruikers weten hoe en wanneer ze documenten en e-mails met gevoelige informatie moeten beveiligen. Indien mogelijk moet u deze informatie verstrekken voorafgaand aan hun huidige werkstromen, zodat ze aanvullende stappen aan een vertrouwd proces kunnen toevoegen en u geen volledig nieuw proces hoeft te introduceren. Informeer ze over de specifieke voordelen (en risico's) voor uw bedrijf en bied ze richtlijnen voor wanneer ze bestanden en e-mailberichten moeten beveiligen. Als u [aangepaste sjablonen](configure-custom-templates.md) hebt geconfigureerd en de naam en beschrijving van de sjablonen niet voldoende informatie bieden om de juiste sjabloon te selecteren, verstrekt u hier instructies voor.
 
-    > [!TIP]
-    > Voorbeeldvideo's voor eindgebruikers:
+    > [!TIP] Voorbeeldvideo's voor eindgebruikers:
     >
     > -   [Gebruikerservaring van Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Azure RMS-document bijhouden en intrekken](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
@@ -49,7 +48,7 @@ Nadat u Azure Rights Management (Azure RMS) hebt geïmplementeerd en geconfigure
 
     Een van de handigste hulpprogramma's voor de helpdesk is [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Helpdeskmedewerkers kunnen dit programma uitvoeren met de optie Azure RMS-beheerder en ze kunnen gebruikers vragen het programma uit te voeren met de optie Azure RMS-gebruiker. Met dit hulpprogramma kunt u niet alleen problemen identificeren, maar ook oplossen. Als het probleem niet kan worden opgelost, kunt u de problemen registreren in traceerlogboeken.
 
-    Als er legitieme aanvragen worden ingediend om de volledige rechten toe te kennen voor het openen van beveiligde documenten, bijvoorbeeld een aanvraag van de juridische afdeling of een aanvraag van een manager nadat een werknemer de organisatie heeft verlaten, moet u ervoor zorgen dat de helpdesk over processen beschikt om dit aan te vragen met de Azure RMS-functie voor [supergebruikers](configure-super-users.md)..
+    Als er legitieme aanvragen worden ingediend om de volledige rechten toe te kennen voor het openen van beveiligde documenten, bijvoorbeeld een aanvraag van de juridische afdeling of een aanvraag van een manager nadat een werknemer de organisatie heeft verlaten, moet u ervoor zorgen dat de helpdesk over processen beschikt om dit aan te vragen met de Azure RMS-functie voor [supergebruikers](configure-super-users.md).
 
     Daarnaast volgen hier enkele typische problemen die gebruikers kunnen melden:
 
@@ -72,18 +71,16 @@ De Rights Management-toepassing voor delen (RMS) is vereist wanneer gebruikers m
 
 De RMS-toepassing voor delen maakt het gebruikers niet alleen gemakkelijker om belangrijke documenten beveiligen, ze kunnen hiermee ook de documenten bijhouden die ze hebben beveiligd en indien nodig de toegang tot de documenten intrekken.
 
-Zie de [Gebruikershandleiding voor Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md) voor instructies voor het gebruik van deze toepassing voor Windows-computers.
+Zie de [Rights Management sharing application user guide](../rms-client/sharing-app-user-guide.md) (Gebruikershandleiding voor Rights Management-toepassing voor delen) voor instructies voor het gebruik van deze toepassing voor Windows-computers.
 
 Zie [FAQ for Microsoft Rights Management Sharing Application for Mobile Platforms](http://technet.microsoft.com/dn451248) (Veelgestelde vragen over Microsoft Rights Management-toepassing voor delen voor mobiele platformen) voor informatie over mobiele apparaten.
 
-> [!TIP]
-> Zie [Gebruikers delen bijlagen veilig met mobiele gebruikers] (... / understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users voor een high-level voorbeeldscenario met schermafbeeldingen.
+> [!TIP] Zie [Users safely share attachments with mobile users](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) (Gebruikers delen bijlagen veilig met mobiele gebruikers) voor een gedetailleerd voorbeeldscenario met schermafdrukken.
 
 ## Gegevensbeveiliging gebruiken met behulp van Office 365, Office 2016 of Office 2013
 Als u Azure RMS gebruikt en u de Rights Management-toepassing voor delen niet hebt geïnstalleerd, wordt de knop **Beveiligd delen** niet weergegeven op het lint of is **Op locatie beveiligen** niet beschikbaar in de Verkenner. Hiermee kunnen gebruikers eenvoudig bestanden beveiligen. Deze gebruikers moeten instructies volgend die vergelijkbaar zijn met deze.
 
-> [!TIP]
-> Als u toepassingsspecifieke Help-informatie of instructies wilt zoeken voor het gebruik van gegevensbeveiliging met deze toepassingen, zoekt u op **IRM** en de naam en versie van de toepassing.
+> [!TIP]Als u toepassingsspecifieke Help-informatie of instructies wilt zoeken voor het gebruik van gegevensbeveiliging met deze toepassingen, zoekt u op **IRM** en de naam en versie van de toepassing.
 
 #### Een document beveiligen in Word 2013
 
@@ -91,8 +88,7 @@ Als u Azure RMS gebruikt en u de Rights Management-toepassing voor delen niet he
 
 2.  Klik in het menu **Bestand** op **Info**, klik op **Document beveiligen**, klik op **Toegang beperken** en kies vervolgens een sjabloon om snel de juiste gebruiksrechten toe te passen, of selecteer **Toegang beperken** en selecteer zelf de gebruikersrechten.
 
-    > [!NOTE]
-    > Als u Rights Management voor de eerste keer gebruikt, neemt u contact op met de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]-service en wordt u naar de referenties gevraagd om de Office IRM-client te configureren.
+    > [!NOTE] Als u Rights Management voor de eerste keer gebruikt, neemt u contact op met de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]-service en wordt u naar de referenties gevraagd om de Office IRM-client te configureren.
 
 3.  Sla het document op.
 
@@ -121,6 +117,6 @@ Wanneer ontvangers een e-mailbericht ontvangen, worden ze op een vergelijkbare m
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

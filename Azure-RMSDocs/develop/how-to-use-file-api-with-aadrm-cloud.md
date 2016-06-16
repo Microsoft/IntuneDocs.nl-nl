@@ -1,37 +1,25 @@
 ---
-# required metadata
+# vereiste metagegevens
 
-title: Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud | Azure RMS
-description: In dit onderwerp worden de stappen beschreven voor het instellen van uw servicetoepassing voor het gebruik van Azure Rights Management.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
+titel: Instructies: ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud | Beschrijving Azure RMS: dit onderwerp bevat een overzicht van de stappen voor het instellen van uw servicetoepassing voor het gebruik van Azure Rights Management.
+trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroepidentiteit ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# optionele metagegevens
 
 #ROBOTS:
-audience: developer
+doelgroep: ontwikkelaar
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud
+
+# Instructies: ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud
 
 In dit onderwerp worden de stappen beschreven voor het instellen van uw servicetoepassing voor het gebruik van Azure Rights Management. Zie [Aan de slag met Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx) voor meer informatie.
 
 **Belangrijk**  
-Het wordt aanbevolen de Rights Management Services SDK 2.1-toepassing eerst te testen met de RMS-preproductieomgeving op een RMS-server. Daarna kunt u, als u wilt dat uw klant de mogelijkheid heeft om uw toepassing te gebruiken met de Azure RMS-service, tests met die omgeving uitvoeren.
-
-Als u uw RMS SDK 2.1-servicetoepassing wilt gebruiken met Azure RMS, moet u een Azure RMS-tenant aanvragen als u die nog niet hebt. Verzend een e-mail naar <rmcstbeta@microsoft.com> met uw tenantaanvraag.
+U moet uw eigen tenants maken om uw Rights Management Services SDK 2.1-servicetoepassing te gebruiken met Azure RMS. Zie [Azure RMS requirements: Cloud subscriptions that support Azure RMS](/rights-management/get-started/requirements-subscriptions.md) (Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS) voor meer informatie
 
 ## Vereisten
 
@@ -43,18 +31,18 @@ Als u uw RMS SDK 2.1-servicetoepassing wilt gebruiken met Azure RMS, moet u een 
 -   Roep [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) aan.
 -   Stel [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) in.
 
+        C++
+        int mode = IPC_API_MODE_SERVER;
+        IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-
-**Opmerking** Voor meer informatie raadpleegt u [De API-beveiligingsmodus instellen](setting-the-api-security-mode-api-mode.md)
+  **Opmerking** Voor meer informatie raadpleegt u [De API-beveiligingsmodus instellen](setting-the-api-security-mode-api-mode.md)
 
      
-
 -   Via de volgende stappen maakt u een instantie van een [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)-structuur, waarbij het **pcCredential**-lid ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) is ingevuld met de verbindingsinformatie van de Azure Rights Management Service.
 -   Gebruik de informatie die u hebt verkregen tijdens het maken van de service-id van de symmetrische sleutel (zie de vereisten die eerder in dit onderwerp zijn vermeld) om de parameters **wszServicePrincipal**, **wszBposTenantId** en **cbKey** in te stellen bij het maken van een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)-structuur.
 
-**Opmerking** Als gevolg van een bestaande voorwaarde van onze Discovery-service worden symmetrische-sleutelreferenties uit andere regio’s (als u niet in Noord-Amerika woont) niet geaccepteerd. Daarom moet u uw tenant-URL’s rechtstreeks opgeven. Dit doet u via de parameter [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) van [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) of [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist).
+**Opmerking** Als gevolg van een bestaande voorwaarde van onze detectieservice worden symmetrische-sleutelreferenties uit andere regio’s (als u niet in Noord-Amerika woont) niet geaccepteerd. Daarom moet u uw tenant-URL’s rechtstreeks opgeven. Dit doet u via de parameter [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) van [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) of [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist).
 
 ## Een symmetrische sleutel genereren en de benodigde gegevens verzamelen
 
@@ -65,17 +53,14 @@ Als u uw RMS SDK 2.1-servicetoepassing wilt gebruiken met Azure RMS, moet u een 
 
 **Opmerking** U moet een tenantbeheerder zijn om de Powershell-cmdlets te kunnen gebruiken.
 
-
 -   Start PowerShell en voer de volgende opdrachten uit om een sleutel te genereren:         `Import-Module MSOnline`
             `Connect-MsolService` (typ uw beheerreferenties)         `New-MsolServicePrincipal` (typ een weergavenaam)
 -   Nadat er een symmetrische sleutel is gegenereerd, worden de sleutel en informatie erover vrijgegeven. Ook komt **AppPrincipalId** beschikbaar.
 
 
-
     De volgende symmetrische sleutel is gemaakt omdat er geen sleutel was opgegeven ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
     DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
-
 
 
 ### Instructies om **TenantBposId** en **Urls** te achterhalen
@@ -103,7 +88,7 @@ Zie [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc
 
 -   Maak een instantie van een [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)-structuur die uw [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)-instantie bevat.
 
-**Opmerking** De *conectionInfo*-leden worden ingesteld met URL's van de vorige aanroep aan `Get-AadrmConfiguration` en worden hier vermeld met de veldnamen.
+**Opmerking** De *connectionInfo*-leden worden ingesteld met URL's van de vorige aanroep aan `Get-AadrmConfiguration` en worden hier vermeld met de veldnamen.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -162,7 +147,6 @@ U hebt nu de benodigde stappen voltooid om ervoor te zorgen dat uw toepassing ge
 
 ## Verwante onderwerpen
 
-* [Concepten voor ontwikkelaars](ad-rms-concepts-nav.md)
 * [Aan de slag met Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [Aan de slag met de RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)
 * [Een service-id maken via ACS](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
@@ -182,6 +166,6 @@ U hebt nu de benodigde stappen voltooid om ervoor te zorgen dat uw toepassing ge
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

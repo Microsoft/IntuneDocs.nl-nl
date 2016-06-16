@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -54,7 +54,7 @@ U kunt uw Azure RMS-configuratie en tenantsleutel exporteren door de instructies
 
 ### Stap 1: export initiëren
 
--   Hiervoor neemt u contact op met de klantenondersteuning van Microsoft (CSS). U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant.
+-   Neem contact op met de klantenondersteuning van Microsoft (CSS) voor het openen van een **Azure Rights Management-ondersteuningsaanvraag met een aanvraag voor het exporteren van een Azure RMS-sleutels**. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het exporteren van uw tenant-sleutel is geen gratis ondersteuningsservice.
 
 ### Stap 2: wachten op verificatie
 
@@ -86,7 +86,7 @@ U kunt uw Azure RMS-configuratie en tenantsleutel exporteren door de instructies
 
 -   Nadat u de tenantsleutel hebt ontvangen, moet u deze veilige bewaren. Als iemand anders toegang tot de sleutel heeft, kan deze persoon alle documenten ontsleutelen met deze sleutel.
 
-    Als u de tenantsleutel exporteert omdat u Azure RMS niet meer wilt gebruiken, kunt u uw RMS-tenant het beste deactiveren. Wacht hier niet mee totdat u de tenantsleutel hebt ontvangen, aangezien deze voorzorgsmaatregel de gevolgen minimaliseert bij ongeoorloofd gebruik van uw tenantsleutel. Zie [Azure Rights Management uit bedrijf nemen en deactiveren](decommission-deactivate.md) voor instructies.
+    Als u de tenantsleutel exporteert omdat u Azure RMS niet meer wilt gebruiken, kunt u uw RMS-tenant het beste deactiveren. Wacht hier niet mee totdat u de tenantsleutel hebt ontvangen, aangezien deze voorzorgsmaatregel de gevolgen minimaliseert bij ongeoorloofd gebruik van uw tenantsleutel. Zie [Decommissioning and Deactivating Azure Rights Management](decommission-deactivate.md) (Azure Rights Management uit bedrijf nemen en deactiveren) voor instructies.
 
 ## Reageren op een schending
 Geen enkel beveiligingssysteem, hoe geavanceerd ook, is volledig zonder een proces voor een reactie op een schending. U tenantsleutel is mogelijk gekraakt of gestolen. Zelfs wanneer de sleutel goed is beveiligd, is het mogelijk dat er beveiligingsproblemen in de huidige generatie HSM-technologie of huidige sleutellengten en -algoritmen worden gevonden.
@@ -104,6 +104,6 @@ Welke actie u of Microsoft het beste kan ondernemen in het geval van een schendi
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/02/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -66,7 +66,7 @@ Hoe de cryptografische sleutels worden opgeslagen en beveiligd:
 
 - De inhoudssleutel wordt beschermd met de RSA-sleutel van de organisatie (de 'Azure RMS-tenantsleutel') als onderdeel van het beleid in het document. Het beleid wordt ook ondertekend door de auteur van het document. Deze tenantsleutel is gebruikelijk voor alle documenten en e-mails die voor de organisatie worden beveiligd door Azure RMS en deze sleutel kan alleen worden gewijzigd door een Azure RMS-beheerder als de organisatie een tenantsleutel die door de klant wordt beheerd (ook wel 'bring your own key', of BYOK). 
 
-    Deze tenantsleutel wordt beveiligd in de onlineservices van Microsoft, in een uiterst gecontroleerde omgeving en met maximale bewaking. Wanneer u een klant-beheerde tenantsleutel (BYOK) gebruikt, wordt deze beveiliging verbeterd door het gebruik van een matrix geavanceerde Hardware Security Modules (HSM's) in elke Azure-regio, zonder dat de sleutels onder welke voorwaarde ook kunnen worden geëxtraheerd, geëxporteerd of gedeeld. Zie [Uw Azure Rights Management-tenantsleutel plannen en implementeren](../plan-design/plan-implement-tenant-key.md) voor meer informatie over de tenantsleutel en BYOK.
+    Deze tenantsleutel wordt beveiligd in de onlineservices van Microsoft, in een uiterst gecontroleerde omgeving en met maximale bewaking. Wanneer u een klant-beheerde tenantsleutel (BYOK) gebruikt, wordt deze beveiliging verbeterd door het gebruik van een matrix geavanceerde Hardware Security Modules (HSM's) in elke Azure-regio, zonder dat de sleutels onder welke voorwaarde ook kunnen worden geëxtraheerd, geëxporteerd of gedeeld. Zie [Planning and implementing your Azure Rights Management tenant key](../plan-design/plan-implement-tenant-key.md) (Uw Azure Rights Management-tenantsleutel plannen en implementeren) voor meer informatie over de tenantsleutel en BYOK.
 
 - Licenties en certificaten die worden verzonden naar een Windows-apparaat, worden beveiligd met de persoonlijke apparaatsleutel van de client, die wordt gemaakt wanneer een gebruiker op het apparaat voor de eerste keer Azure RMS gebruikt. Deze persoonlijke sleutel wordt op zijn beurt beveiligd met de DPAPI op de client, die deze geheime gegevens beveiligd met een sleutel die is afgeleid van het wachtwoord van de gebruiker. Op mobiele apparaten wordt de sleutel slechts eenmaal gebruikt. Omdat de sleutels niet worden opgeslagen op de clients, hoeven deze sleutels dus niet te worden beveiligd op het apparaat. 
 
@@ -77,8 +77,7 @@ Voor een gedetailleerder inzicht in de werking van Azure RMS, doorlopen we een t
 
 Nadat de gebruikersomgeving is geïnitialiseerd, kan die gebruiker vervolgens documenten beveiligen of beveiligde documenten op die computer verbruiken.
 
-> [!NOTE]
-> Als deze gebruiker naar een andere Windows-computer verplaatst of een andere gebruiker deze dezelfde Windows-computer gebruikt, wordt het initialisatieproces herhaald.
+> [!NOTE] Als deze gebruiker naar een andere Windows-computer wordt verplaatst of een andere gebruiker dezelfde Windows-computer gebruikt, wordt het initialisatieproces herhaald.
 
 ### Initialisatie van de gebruikersomgeving
 Voordat een gebruiker inhoud kan beveiligen of beveiligde inhoud op een Windows-computer kan verbruiken, moet de gebruikersomgeving worden voorbereid op het apparaat. Dit is een eenmalige proces en dat automatisch plaatsvindt zonder tussenkomst van de gebruiker wanneer een gebruiker inhoud beveiligt of beveiligde inhoud verbruikt:
@@ -87,7 +86,7 @@ Voordat een gebruiker inhoud kan beveiligen of beveiligde inhoud op een Windows-
 
 **Wat gebeurt er in stap 1**: de RMS-client op de computer maakt eerst verbinding met Azure RMS en verifieert de gebruiker met het Azure Active Directory-account.
 
-Wanneer het gebruikersaccount met Azure Active Directory is gefedereerd, is deze verificatie automatisch en wordt de gebruiker niet gevraagd om referenties.|
+Wanneer het gebruikersaccount met Azure Active Directory is gefedereerd, is deze verificatie automatisch en wordt de gebruiker niet gevraagd om referenties.
 
 ![Activering van de RMS-client - stap 2](../media/AzRMS_useractivation2.png)
 
@@ -106,7 +105,7 @@ Wanneer een gebruiker een document beveiligt, voert de RMS-client de volgende ac
 
 **Wat gebeurt er in stap 2**: de RMS-client maakt vervolgens een certificaat met een beleid voor het document, op basis van een sjabloon of door het opgeven van specifieke rechten voor het document. Dit beleid bevat de rechten voor verschillende gebruikers of groepen en andere beperkingen, zoals een vervaldatum.
 
-De RMS-client gebruikt vervolgens de sleutel van de organisatie die is verkregen toen de gebruikersomgeving werd geïnitialiseerd, en gebruikt deze sleutel om het beleid en de symmetrische inhoudssleutel te versleutelen. De RMS-client ondertekent het beleid ook met het gebruikerscertificaat dat is verkregen toen de gebruikersomgeving werd geïnitialiseerd.|
+De RMS-client gebruikt vervolgens de sleutel van de organisatie die is verkregen toen de gebruikersomgeving werd geïnitialiseerd, en gebruikt deze sleutel om het beleid en de symmetrische inhoudssleutel te versleutelen. De RMS-client ondertekent het beleid ook met het gebruikerscertificaat dat is verkregen toen de gebruikersomgeving werd geïnitialiseerd.
 
 ![RMS-beveiliging voor documenten - stap 3](../media/AzRMS_documentprotection3.png)
 
@@ -152,10 +151,9 @@ Lees [Terminologie voor Azure Rights Management](../get-started/terminology.md) 
 
 Als u klaar bent om Azure RMS in uw organisatie te implementeren, gebruikt u het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md) voor de implementatiestappen en koppelingen naar instructies.
 
-> [!TIP]
-> Gebruik de resources en koppelingen in [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md) voor extra informatie en hulp.
+> [!TIP] Gebruik de resources en koppelingen in [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md) voor extra informatie en hulp.
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,64 +23,103 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# Uw toepassing implementeren
+
+# Implementeren in een preproductieomgeving
 
 
 Dit onderwerp bevat informatie over de implementatieopties voor uw toepassing met rechten.
 
+## Een productielicentieovereenkomst aanvragen
+
+ Voordat u een toepassing kunt vrijgeven die is ontwikkeld met behulp van de Rights Management Services SDK 2.1, moet u een productielicentieovereenkomst aanvragen om een productiecertificaat te verkrijgen.
+
 > [!IMPORTANT]
-> Het wordt aanbevolen de Rights Management Services SDK 2.1-toepassing eerst te testen met de RMS-preproductieomgeving op een RMS-Server. Als u wilt dat uw klant de mogelijkheid heeft om uw toepassing te gebruiken met de Azure RMS-service, moet u tests met die omgeving uitvoeren. Zie voor meer informatie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md)
+> Als u de clienttoepassing gaat uitvoeren met Azure RMS, moet u uw eigen tenants maken. Zie [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS) voor meer informatie.
+> Zie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor meer informatie over het uitvoeren van toepassingen met Azure RMS.
 
- 
+U kunt het certificaat verkrijgen door u aan te melden voor een productielicentieovereenkomst.
 
-## Installatieopties voor Active Directory Rights Management Services-Client 2.1
+Verstuur een e-mail naar [RMLA@microsoft.com](mailto:rmla@microsoft.com) en vermeld daarin de volgende informatie:
 
-Als u uw manifestbestand met een productiecertificaat maakt, is de toepassing gereed om te worden geïmplementeerd. Aangezien u de RMS SDK 2.1 hebt gebruikt, moet u Active Directory Rights Management Services Client 2.1 implementeren op de computer van de eindgebruiker.
+- Volledige bedrijfsnaam
+- Fysiek bedrijfsadres (inclusief stad, staat/provincie, land of regio en postcode)
+- Postadres van het bedrijf (inclusief stad, staat/provincie, land of regio en postcode)
+- Telefoon- en faxnummer van het bedrijf
+- URL van het bedrijf
+- Land of regio waarin het hoofdkantoor is gevestigd
+- Toepassings- of productnaam
+- Voor- en achternaam van de aanvrager
+- Titel of functie van de aanvrager
+- E-mailadres van de aanvrager
 
-### AD RMS Client 2.1
+Hoewel er niet per se een e-mailadres hoeft te worden opgegeven, wordt er doorgaans per e-mail gecommuniceerd over het aanvraagproces. U kunt een gratis e-mailaccount aanmaken via Microsoft Outlook.com. Als u geen account hebt en er geen wilt maken, kunt u schriftelijk een aanvraag indienen. Stuur uw aanvraag naar het volgende adres:
 
-AD RMS-Client 2.1 is software die is ontworpen voor uw clientcomputers om toegang tot en gebruik van informatie te beschermen die wordt gebruikt in toepassingen met RMS, ongeacht of deze zijn geïnstalleerd bij uw bedrijf of in een Microsoft-datacentrum.
+      Active Directory Rights Management License Agreements (ADRMLA)
 
-AD RMS-Client 2.1 is geen onderdeel van Windows. AD RMS Client 2.1 wordt geleverd als optionele download en kan (na bevestiging en acceptatie van de gebruiksrechtovereenkomst) vrij worden gedistribueerd met uw software van derden om clients toegang te geven tot inhoud die met rechten is beschermd door gebruik en implementatie van AD RMS-servers in uw omgeving.
+      Microsoft Corporation
 
-> [!IMPORTANT] AD RMS-Client 2.1 is architectuurspecifiek en moet overeenkomen met de architectuur van het beoogde besturingssysteem.
+      One Microsoft Way
+
+      Redmond, WA 98052-6399
+
+Wanneer u een overeenkomst aanvraagt, doet u het volgende:
+- Dien de informatie in het Engels in die in de overeenkomst moet worden verwerkt.
+- Stuur alle aangevraagde informatie op. Als er informatie ontbreekt of als de informatie onvolledig is, kan dat het aanvraagproces vertragen.
+
+Het Active Directory Rights Management Licensing Agreement-team (ADRMLA) reageert binnen drie werkdagen op uw e-mailaanvraag. Het duurt langer als u de aanvraag per post verstuurt. De reactie omvat het licentieovereenkomstformulier en verdere instructies. Lees en onderteken alle pagina’s van de overeenkomst en stuur deze dan terug naar het ADRMLA-team. Wijzig de lettertypen niet en geef de alinea’s van de licentieovereenkomst geen andere indeling.
+
+Volg de instructies op die u van het ADRMLA-team ontvangt. De instructies bevatten de lijst met digitale gegevens die nodig zijn om uw certificaataanvraag te voltooien. Als u de stapsgewijze instructies opvolgt, beperkt dat de wachttijd.
+
+Het ADRMLA-team stuurt u het productiecertificaat op zodra het is gemaakt. Het kan tot 15 werkdagen duren voor het ADRMLA-team u het certificaat per e-mail opstuurt. Dit duurt langer als de communicatie via reguliere post verloopt.
 
 
-## Installatieopties voor AD RMS-Client 2.1
+## Opties en vereisten voor de installatie van Rights Management Service-client 2.1
 
--   **De AD RMS-client 2.1 herdistribueren**
+Aangezien u de RMS SDK 2.1 hebt gebruikt, moet u Active Directory Rights Management Services Client 2.1 implementeren op de computer van de eindgebruiker.
+
+### RMS-client 2.1
+
+De RMS-client 2.1 is software die is ontworpen voor uw clientcomputers om toegang tot en gebruik van informatie te beschermen die wordt gebruikt in toepassingen met RMS, ongeacht of deze zijn geïnstalleerd bij uw bedrijf of in een Microsoft-datacentrum.
+
+De RMS-client 2.1 is geen onderdeel van Windows. RMS-client 2.1 wordt geleverd als optionele download en kan (na bevestiging en acceptatie van de gebruiksrechtovereenkomst) vrij worden gedistribueerd met uw software van derden om clients toegang te geven tot inhoud die met rechten is beschermd door gebruik en implementatie van RMS-servers in uw omgeving.
+
+
+> [!IMPORTANT] De RMS-client 2.1 is architectuurspecifiek en moet overeenkomen met de architectuur van het beoogde besturingssysteem.
+
+
+## Installatieopties voor RMS-client 2.1
+
+-   **De RMS-client 2.1 opnieuw distribueren**
 
     De aanbevolen aanpak is het RMS-Client-installatiepakket te bundelen met uw toepassing of oplossing met behulp van de installatietechnologie van uw voorkeur. De RMS-client kan vrijelijk opnieuw worden gedistribueerd en gebundeld met andere programma’s en IT-oplossingen.
 
-    U kunt de AD RMS-Client 2.1 interactief installeren door het AD RMS-Client 2.1-installatieprogramma te starten of u kunt het op de achtergrond installeren. De integratiestappen zijn:
+    U kunt de RMS-Client 2.1 interactief installeren door het installatieprogramma van RMS-client 2.1 te starten of u kunt het op de achtergrond installeren. De integratiestappen zijn:
 
     -   RMS-Client 2.1-installatieprogramma downloaden
-    -   Het uitgevoerde AD RMS-Client 2.1-installatieprogramma integreren met het installatieprogramma van uw toepassing
+    -   Het uitgevoerde installatieprogramma van RMS-client 2.1 integreren met het installatieprogramma van uw toepassing
 
-    Twee goede voorbeelden van integratie van AD RMS-Client 2.1 met uw toepassing zijn het RMS SDK 2.1-installatiepakket en het pakket Right Protected Folder Explorer. Probeer deze zelf te installeren om inzicht te krijgen in de aanpak.
+    Twee goede voorbeelden van integratie van RMS-client 2.1 met uw toepassing zijn het RMS SDK 2.1-installatiepakket en het pakket Right Protected Folder Explorer. Probeer deze zelf te installeren om inzicht te krijgen in de aanpak.
 
--   **Ervoor zorgen dat AD RMS-Client 2.1 een vereiste is voor het installeren van uw toepassing**
+-   **Zorgen dat RMS-Client 2.1 een vereiste is voor het installeren van uw toepassing**
 
-    In dit geval maakt u een vereiste waarbij de installatie van de toepassing mislukt als de AD RMS-Client 2.1 niet aanwezig is op de computer van de eindgebruiker.
+    In dit geval maakt u een vereiste waarbij de installatie van de toepassing mislukt als RMS-client 2.1 niet aanwezig is op de computer van de eindgebruiker.
 
-    Als de client niet aanwezig is, geeft u een foutbericht weer waarin gebruikers worden geïnformeerd waar ze AD RMS-Client 2.1 kunnen downloaden.
+    Als de client niet aanwezig is, geeft u een foutbericht weer waarin gebruikers worden geïnformeerd waar ze RMS-client 2.1 kunnen downloaden
 
     Als de client aanwezig is, gaat u verder met de installatie van de toepassing.
 
 ## Azure Rights Management Services inschakelen voor uw toepassing
 
 > [!NOTE]
-> Als u hebt gemigreerd naar het nieuwe ADAL-model voor verificatie, hoeft u SIA niet te installeren. Zie voor meer informatie ADAL-verificatie voor uw RMS-toepassing.
+> Als u hebt gemigreerd naar het nieuwe ADAL-model voor verificatie, hoeft u SIA niet te installeren. Zie voor meer informatie [ADAL-verificatie voor uw RMS-toepassing](adal-auth.md).
+> U kunt ook **Uw toepassing certificeren voor Windows 10**. Als u uw toepassing bijwerkt zodat deze ADAL-verificatie gebruikt in plaats van de Microsoft Online-aanmeldhulp, kunnen u en uw klanten het volgende: Meervoudige verificatie gebruiken De RMS-client 2.1 installeren zonder dat er beheerdersrechten voor de machine vereist zijn
 
-- **Uw toepassing certificeren voor Windows 10**: als u uw programma bijwerkt zodat dit ADAL-verificatie gebruikt in plaats van de Microsoft Online-aanmeldhulp, kunnen u en uw klanten het volgende:
-  - Meervoudige verificatie gebruiken
-  - De RMS 2.1-client installeren zonder dat hiervoor beheerdersrechten voor de computer zijn vereist
- 
-  De eindgebruiker kan pas profiteren van Azure Rights Management Services als u de *Online Services-aanmeldhulp* implementeert. Als ontwikkelaar van de toepassing weet u niet of de eindgebruiker RMS (op locatie) of Azure Rights Management Services (cloudservice) gebruikt.
+
+De eindgebruiker kan pas profiteren van Azure Rights Management Services als u de *Online Services-aanmeldhulp (SIA)* implementeert. Als ontwikkelaar van de toepassing weet u niet of de eindgebruiker RMS (op locatie) of Azure Rights Management Services (cloudservice) gebruikt.
+
 
 > [!IMPORTANT]
-> Wanneer u de RMS SDK 2.1-clienttoepassing uitvoert met Azure RMS, moet u een Azure RMS-tenant aanvragen. Verzend een e-mail naar <rmcstbeta@microsoft.com> met uw tenantaanvraag.
+> Als u de RMS SDK 2.1-clienttoepassing uitvoert met Azure RMS, moet u uw eigen tenants maken. Zie [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS) voor meer informatie.
 
 -   Download de [Microsoft Online Services-aanmeldhulp](http://www.microsoft.com/en-us/download/details.aspx?id=28177) vanuit het Microsoft Downloadcentrum.
 -   Zorg ervoor dat uw implementatie van een toepassing met rechten een controle vereist voor de selectie van deze service.
@@ -90,7 +129,6 @@ Voor meer informatie over het configureren van uw toepassing zodat deze werkt me
 
 ## Verwante onderwerpen
 
-* [Gebruik](how-to-use-msipc.md)
 * [Microsoft Online Services-aanmeldhulp](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
 * [Rights Management configureren](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
 * [Ervoor zorgen dat uw toepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md)
@@ -99,9 +137,6 @@ Voor meer informatie over het configureren van uw toepassing zodat deze werkt me
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

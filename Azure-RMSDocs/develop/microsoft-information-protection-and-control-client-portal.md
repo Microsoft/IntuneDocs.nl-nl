@@ -49,10 +49,8 @@ Voor informatie over de runtime-vereisten voor een bepaald programmeerelement ra
 |[Aan de slag](getting-started-with-ad-rms-2-0.md)|Het RMS SDK 2.1-platform stelt ontwikkelaars in staat om toepassingen te ontwikkelen die gebruikmaken van de RMS-beveiliging voor informatie.|
 |[Opmerkingen bij de release](release-notes-rtm.md)|Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de RMS SDK 2.1.|
 |[Codevoorbeelden](samples.md)|In dit onderwerp wordt een reeks voorbeelden vermeld waarin de RMS SDK 2.1 wordt gebruikt. De SDK is beschikbaar via het MSDN Downloadcentrum.|
-|[Gebruik](how-to-use-msipc.md)|Stapsgewijze instructies voor scenario's waarin en taken waarbij de RMS SDK 2.1 wordt gebruikt.|
 |[Opmerkingen voor ontwikkelaars](developer-notes.md)|Dit gedeelte bevat informatie over specifieke hulp voor verschillende belangrijke ontwikkelscenario's.|
-|[Concepten voor ontwikkelaars](ad-rms-concepts-nav.md)|In de onderwerpen in dit gedeelte worden de belangrijkste concepten van RMS beschreven.|
-|[API-referentiemateriaal](/rights-management/sdk/2.1/api/win/constants)|In dit gedeelte vindt u onderwerpen met betrekking tot het referentiemateriaal dat beschikbaar is voor alle API-elementen.|
+|[API-verwijzing](/rights-management/sdk/2.1/api/win/constants)|In dit gedeelte vindt u onderwerpen met betrekking tot het referentiemateriaal dat beschikbaar is voor alle API-elementen.|
 
  
 
@@ -66,6 +64,6 @@ Voor informatie over de runtime-vereisten voor een bepaald programmeerelement ra
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

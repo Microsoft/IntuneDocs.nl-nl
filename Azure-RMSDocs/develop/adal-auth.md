@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: ADAL-verificatie voor uw RMS-toepassing | Azure RMS
-description: Biedt een overzicht van het verificatieproces met ADAL
+title: Azure RMS configureren voor ADAL-verificatie | Azure RMS
+description: Bevat de stappen voor het configureren van Azure ADAL-verificatie
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
@@ -24,37 +24,19 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# ADAL-verificatie voor uw RMS-toepassing
 
-Verificatie met Azure RMS voor uw app met Azure ADAL maakt nu deel uit van de RMS-client 2.1.
+# Azure RMS configureren voor ADAL-verificatie
 
-Als u uw toepassing bijwerkt zodat dit ADAL-verificatie gebruikt in plaats van de Microsoft Online-aanmeldhulp, kunnen u en uw klanten het volgende:
+Dit onderwerp bevat informatie over het configureren van Azure ADAL-configuratie.
 
-- Multi-Factor Authentication gebruiken
-- De RMS 2.1-client installeren zonder dat hiervoor beheerdersrechten voor de computer vereist zijn
-- Uw toepassing certificeren voor Windows 10
-
-## Twee verificatiemethoden
-
-Dit onderwerp bevat twee verificatiemethoden met bijbehorende codevoorbeelden.
-
-- **Interne verificatie** - OAuth-verificatie beheerd door de RMS SDK. Gebruik deze methode als u wilt dat de RMS-client een ADAL-verificatieprompt weergeeft als verificatie vereist is. Zie de sectie 'Interne verificatie' voor meer informatie over het configureren van uw toepassing.
-
-> [!NOTE] Als u in uw toepassing momenteel AD RMS SDK 2.1 met de aanmeldhulp gebruikt, wordt aanbevolen de interne verificatiemethode te gebruiken als pad voor uw toepassingsmigratie.
-
-- **Externe verificatie** - OAuth-verificatie beheerd door uw toepassing. Gebruik deze methode als u wilt dat uw toepassing zijn eigen OAuth-verificatie gebruikt. Met deze methode oefent de RMS-client een door de toepassing gedefinieerde callback uit wanneer verificatie vereist is. Zie 'Externe verificatie' aan het eind van dit onderwerp voor een gedetailleerd voorbeeld.
-
-> [!NOTE] Met externe verificatie wordt niet de mogelijkheid geïmpliceerd om de gebruiker te wijzigen. De RMS-client gebruikt altijd de standaardgebruiker voor een bepaalde RMS-tenant.
-
-### Interne verificatie
+## Interne verificatie
 
 U hebt het volgende nodig:
 
 - Een [abonnement voor Microsoft Azure](https://azure.microsoft.com/en-us/) (een gratis proefversie is voldoende):
 - Een abonnement voor Microsoft Azure Rights Management (een gratis account voor [RMS voor personen](https://technet.microsoft.com/en-us/library/dn592127.aspx) is voldoende).
 
-> [!NOTE] Vraag uw IT-beheerder of u beschikt over een abonnement voor Microsoft Azure Rights Management en laat uw IT-beheerder de volgende stappen uitvoeren. Als uw organisatie geen abonnement heeft, vraagt u uw IT-beheerder om er een te maken. Uw IT-beheerder moet zich bovendien abonneren met een werk- of schoolaccount, in plaats van een Microsoft-account (bijvoorbeeld Hotmail).
+> [!NOTE] Vraag uw IT-beheerder of u beschikt over een abonnement voor Microsoft Azure Rights Management en laat uw IT-beheerder de volgende stappen uitvoeren. Als uw organisatie geen abonnement heeft, vraagt u uw IT-beheerder om er een te maken. Daarnaast moet uw IT-beheerder moet zich abonneren op een *werk- of schoolaccount*, in plaats van een *Microsoft-account* (bijvoorbeeld Hotmail).
 
 Na het aanmelden voor Microsoft Azure:
 
@@ -90,7 +72,8 @@ Na het aanmelden voor Microsoft Azure:
 
 ![Uw app een naam geven](../media/TellUsInput.png)
 
-- Voeg een omleidings-URI toe en klik op volgende. De omleidings-URI moet een geldige URI zijn en moet uniek zijn voor uw directory. U kunt bijvoorbeeld het volgende gebruiken: `com.mycompany.myapplication://authorize`.
+- Voeg een omleidings-URI toe en klik op volgende.
+  De omleidings-URI moet een geldige URI zijn en moet uniek zijn voor uw directory. U kunt bijvoorbeeld het volgende gebruiken: `com.mycompany.myapplication://authorize`.
 
 ![Omleidings-URI toevoegen](../media/RedirectURI.png)
 
@@ -101,6 +84,8 @@ Na het aanmelden voor Microsoft Azure:
 >[!NOTE] Kopieer de **CLIENT-ID** en **OMLEIDINGS-URI** en sla deze op voor toekomstig gebruik tijdens het configureren van de RMS-client.
 
 - Blader naar beneden in uw toepassing-instellingen en kies de knop **Toepassing toevoegen** onder **Machtigingen voor andere toepassingen**.
+
+>[!NOTE] De **overgedragen machtigingen** die zichtbaar zijn voor Windows Azure Active Directory zijn standaard correct: slechts één optie moet geselecteerd zijn en deze optie is **Aanmelden en gebruikersprofiel lezen**.
 
 ![Toepassing toevoegen selecteren](../media/PermissionsToOtherBtn.png)
 
@@ -120,70 +105,11 @@ Na het aanmelden voor Microsoft Azure:
 
 ![Machtigingen instellen](../media/AddDependency.png)
 
-- Sla uw toepassing op om de wijzigingen vast te leggen. Kies hiervoor het pictogram **OPSLAAN** middenonder in de portal.
+- Sla uw toepassing op om de wijzigingen vast te leggen. Kies hiervoor het pictogram **Opslaan** middenonder in de portal.
 
 ![OPSLAAN selecteren](../media/SaveApplication.png)
 
-- U kunt nu uw toepassing configureren voor het gebruik van de interne ADAL-verificatie die wordt geleverd door RMS SDK 2.1. Als u de RMS-client wilt configureren, voegt u een aanroep toe aan het recht [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/IpcSetGlobalProperty) na het aanroepen van [IpcInitialize](/rights-management/sdk/2.1/api/win/IpcInitialize) om de RMS-client te configureren. Gebruik het volgende codefragment als voorbeeld.
 
-
-    IpcInitialize();
-
-    IPC_AAD_APPLICATION_ID applicationId = {0};   applicationId.cbSize = sizeof(IPC_AAD_APPLICATION_ID);   applicationId.wszClientId L"GUID-provided-by-AAD-for-your-app-(no-brackets) = ';   applicationId.wszRedirectUri = L "RedirectionUriWeProvidedAADForOurApp://authorize";
-
-    HRESULT hr = IpcSetGlobalProperty(IPC_EI_APPLICATION_ID, &amp;applicationId);
-
-    als (FAILED(hr)) {    //Behandel de fout   }
-
-### Externe verificatie
-
-- Gebruik deze code als voorbeeld voor het beheren van uw eigen verificatietokens.
-
-
-    extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST&amp; Parameters, __out wstring wstrToken) throw();
-
-    HRESULT GetLicenseKey(PCIPC_BUFFER pvLicense, __in LPVOID pContextForAdal, __out IPC_KEY_HANDLE &amp;hKey) { IPC_OAUTH2_CALLBACK pfGetADALToken =         [](LPVOID pvContext, PIPC_NAME_VALUE_LIST pParameters, IPC_AUTH_TOKEN_HANDLE* phAuthToken) -&gt; HRESULT { wstring wstrToken; HRESULT hr = GetADALToken(pvContext, *pParameters, wstrToken); return SUCCEEDED(hr) ? IpcCreateOAuth2Token(wstrToken.c_str(), OUT phAuthToken) : hr; };
-
-      IPC_OAUTH2_CALLBACK_INFO callbackCredentialContext =
-      {
-          sizeof(IPC_OAUTH2_CALLBACK_INFO),
-          pfGetADALToken,
-          pContextForAdal
-      };
-
-      IPC_CREDENTIAL credentialContext =
-      {
-          IPC_CREDENTIAL_TYPE_OAUTH2,
-          NULL
-      };
-      credentialContext.pcOAuth2 = &amp;callbackCredentialContext;
-
-      IPC_PROMPT_CTX promptContext =
-      {
-        sizeof(IPC_PROMPT_CTX),
-        NULL,
-        IPC_PROMPT_FLAG_SILENT | IPC_PROMPT_FLAG_HAS_USER_CONSENT,
-        NULL,
-        &amp;credentialContext
-      };
-
-      hKey = 0L;
-      return IpcGetKey(pvLicense, 0, &amp;promptContext, NULL, &amp;hKey);
-  }
-
-### Verwante onderwerpen
-- [Gegevenstypen](/rights-management/sdk/2.1/api/win/Data%20types)
-- [Omgevingseigenschappen](/rights-management/sdk/2.1/api/win/Environment%20properties)
-- [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/IpcCreateOAuth2Token)
-- [IpcGetKey](/rights-management/sdk/2.1/api/win/IpcGetKey)
-- [IpcInitialize](/rights-management/sdk/2.1/api/win/IpcInitialize)
-- [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC\_CREDENTIAL)
-- [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC\_NAME\_VALUE\_LIST)
-- [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/IPC\_OAUTH2\_CALLBACK\_INFO)
-- [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC\_PROMPT\_CTX)
-- [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/IPC\_AAD\_APPLICATION\_ID)
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

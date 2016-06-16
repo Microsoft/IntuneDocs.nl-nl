@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/19/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ Hiermee kan de gebruiker inhoud in de toepassing wijzigen, rangschikken, opmaken
 
 **Codering in beleid**: DOCEDIT
 
-**Implementatie in aangepaste Office-rechten**: als onderdeel van de opties *Wijzigen* en *Volledig beheer*.**
+**Implementatie in aangepaste Office-rechten**: als onderdeel van de opties *Wijzigen* en *Volledig beheer*.
 
 **Naam in de klassieke Azure-portal**: *Inhoud bewerken*
 
@@ -267,11 +267,32 @@ De volgende rechten zijn opgenomen in de standaardsjablonen:
 |&lt;*Naam van de organisatie*&gt;*: alleen vertrouwelijke weergave*|Weergeven, Openen, Lezen|
 |&lt;*Naam van organisatie*&gt;*: vertrouwelijk*|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Rechten weergeven; Macro's toestaan; Doorsturen; Antwoorden; Allen beantwoorden|
 
+## De optie Niet doorsturen voor e-mailberichten
+
+Exchange-clients en -services (bijvoorbeeld de Outlook-client, de Outlook Web Access-app en Exchange transportregels) hebben hun eigen optie voor beveiliging van gegevensrechten voor e-mails: **Niet doorsturen**. 
+
+Hoewel deze optie wordt weergegeven aan gebruikers (en beheerders van Exchange) als een standaardsjabloon voor Rights Management die ze kunnen selecteren, is **Niet doorsturen** geen sjabloon. Hierdoor ziet u deze niet in de klassieke Azure-portal als u de sjablonen weergeeft en beheert voor Azure RMS. In plaats daarvan zijn de opties **Niet doorsturen** ingesteld als een set rechten die gebruikers dynamisch toepassen op hun e-mailontvangers.
+
+Wanneer de optie **Niet doorsturen** wordt toegepast op een e-mailbericht, kunnen de ontvangers het niet doorsturen, afdrukken, kopiëren, de bijlagen niet opslaan en het bericht niet opslaan onder een andere naam. Als in de Outlook-client de knop Doorsturen bijvoorbeeld niet beschikbaar is, zijn de menuopties de **Opslaan als**, **Bijlage opslaan** en **Afdrukken** niet beschikbaar en kunt u geen ontvangers toevoegen of wijzigen in de vakken **Aan**, **Cc** of **Bcc**.
+
+Er is een belangrijk verschil tussen het toepassen van de optie **Niet doorsturen** en het toepassen van een sjabloon waarbij het recht om een e-mail door te sturen niet wordt verleend: de optie **Niet doorsturen** maakt gebruik van een dynamische lijst met gemachtigde gebruikers die is gebaseerd op de door de gebruiker gekozen ontvangers van de oorspronkelijke e-mail, terwijl de rechten in de sjabloon een statische lijst met gemachtigde gebruikers hebben die de beheerder eerder heeft opgegeven. Wat is het verschil? Zie het volgende voorbeeld: 
+
+Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling bepaalde informatie verzenden die niet mag worden gedeeld met iemand anders. Moet ze het e-mailbericht beveiligen met een sjabloon waarin alleen rechten (weergeven, beantwoorden en opslaan) worden verleend aan de marketingafdeling?  Of moet ze kiezen voor de optie **Niet doorsturen**? Beide opties leiden ertoe dat de ontvangers het e-mailbericht niet kunnen doorsturen. 
+
+- Als ze de sjabloon heeft toegepast, kunnen de ontvangers de gegevens nog steeds delen met anderen van de marketingafdeling. Zo kan een ontvanger de Verkenner gebruiken om de e-mail te slepen en neer te zetten op een gedeelde locatie of een USB-station. Iedereen van de marketingafdeling (en de eigenaar van de e-mail) die toegang tot deze locatie heeft, kan de informatie in de e-mail weergeven.
+ 
+- Als ze de optie **Niet doorsturen** heeft toegepast, kunnen de ontvangers de informatie niet delen met iemand anders van de marketingafdeling door het e-mailbericht naar een andere locatie verplaatsen. In dit scenario kunnen alleen de oorspronkelijke ontvangers (en de eigenaar van de e-mail) de informatie in de e-mail weergeven.
+
+> [!NOTE] Gebruik **Niet doorsturen** wanneer het belangrijk is dat alleen de ontvangers die de afzender kiest de informatie in het e-mailbericht kunnen zien. Gebruik een sjabloon voor e-mailberichten om de rechten te beperken tot een groep personen die de beheerder van tevoren heeft opgegeven, onafhankelijk van de ontvangers die de afzender heeft gekozen.
+
+
+
+
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

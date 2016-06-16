@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overzicht | Azure RMS
-description: Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
+description: Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -23,14 +23,16 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
+
 # Overzicht
 
 Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik. Via uw toepassingen met rechten kunnen eigenaren van inhoud definiëren wie hun inhoud kan openen, wijzigen, afdrukken, doorsturen of hiermee andere acties kan uitvoeren.
 
 ## Overzicht
 
-AD RMS bestaat uit zowel [server-](ad-rms-server.md) als [client](ad-rms-client.md)onderdelen. De serveronderdelen bevatten meerdere webservices die worden uitgevoerd op een Windows Server, zoals Windows Server 2008 R2, of via de cloud via RMS-webservices in Azure. Het clientonderdeel kan worden uitgevoerd op een client- of serverbesturingssysteem en bevat functies waarmee een toepassing inhoud kan versleutelen en ontsleutelen, sjablonen en intrekkingslijsten kan ophalen, licenties en certificaten van een server kan verkrijgen en andere gerelateerde rechtenbeheertaken kan uitvoeren.
+AD RMS bestaat uit zowel [server-](ad-rms-server.md) als [client](ad-rms-client.md)onderdelen. De server, die draait op Azure of Windows Server, bestaat uit meerdere webservices.
+
+Het [client](ad-rms-client.md)onderdeel kan worden uitgevoerd op een client- of serverbesturingssysteem en bevat functies waarmee een toepassing inhoud kan versleutelen en ontsleutelen, sjablonen en intrekkingslijsten kan ophalen, licenties en certificaten van een server kan verkrijgen en andere gerelateerde rechtenbeheertaken kan uitvoeren.
 
 Zie [Soorten toepassingen](application-types.md) voor meer informatie.
 
@@ -44,24 +46,26 @@ Hieronder volgen slechts enkele van de scenario's waarvoor toepassingen die op b
 
 Raadpleeg de TechNet-inhoud [IT Pro-documentatie voor AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx) voor meer informatie over de AD RMS-server, de AD RMS-client en de functionaliteit hiervan.
 
-Zie [Aan de slag](getting-started-with-ad-rms-2-0.md) om aan de slag te gaan.
+De overige onderwerpen in deze sectie hebben betrekking op de RMS-architectuur en de bijbehorende implementaties.
+
+## In deze sectie
+
+| Onderwerp | Beschrijving |
+|-------|-------------|
+|[Client](ad-rms-client.md) |Dit onderwerp bevat informatie over het doel en de functie van Rights Management Service-client 2.1 |
+|[Server](ad-rms-server.md) | Dit onderwerp bevat informatie over het doel en de functies van de RMS-server, voor Azure en Windows Server.|
+
 
 ## Verwante onderwerpen
 
-* [Concepten van AD RMS](application-types.md)
-* [Verschillen tussen AD RMS en AD RMS 2.1](differences-between-ad-rms-and-ad-rms-2-0.md)
+* [Concepten van RMS](application-types.md)
 * [Aan de slag](getting-started-with-ad-rms-2-0.md)
 * [IT Pro-documentatie voor AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
-* [server](ad-rms-server.md)
-* [client](ad-rms-client.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

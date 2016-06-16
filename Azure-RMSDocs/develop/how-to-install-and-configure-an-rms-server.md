@@ -1,71 +1,33 @@
 ---
-# required metadata
+# vereiste metagegevens
 
-title: De server installeren en configureren| Azure RMS
-description: RMS-server installeren en configureren voor het testen van uw toepassing met rechten.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
+titel: Instructies: een RMS-server installeren, configureren en hiermee tests uitvoeren | Beschrijving Azure RMS: RMS-server installeren en configureren voor het testen van uw toepassing met rechten.
+trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroepidentiteit ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# optionele metagegevens
 
 #ROBOTS:
-audience: developer
+doelgroep: ontwikkelaar
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# De server installeren en configureren
 
-Dit onderwerp bevat de stappen voor het installeren en configureren van de RMS-server voor het testen van uw toepassing met rechten.
+# Instructies: een RMS-server installeren, configureren en hiermee tests uitvoeren
 
-**Belangrijk** Als u uw toepassing test door deze uit te voeren in de 1 RMS ISV 1-box-omgeving, hoeft u geen RMS-server te installeren omdat er al een is geïnstalleerd en geconfigureerd in de 1-box-omgeving.
-Zie [De testomgeving instellen](how-to-set-up-your-test-environment.md) voor meer informatie over de AD RMS ISV 1-box-omgeving.
-
+In dit onderwerp worden de stappen behandeld voor het verbinding maken met een RMS-server of Azure RMS om uw toepassing met rechten te testen.
  
-
 ## Instructies
 
 ### Stap 1: stel uw RMS-server in
 
 Met de volgende stappen stelt u uw RMS-server in:
 
--   Het register configureren
 -   De server installeren
 -   De server registreren
 
-1.  **Het register configureren**
-
-    Stel de volgende registerwaarden in om op te geven dat u het certificaat van de preproductiehiërarchie gebruikt.
-
-    **Opmerking** Als u Windows Server 2008 R2 of Windows Server 2008 gebruikt, stelt u de registerwaarden in voordat u de AD RMS-service installeert.
-
-    Als u AD RMS gebruikt op Windows Server 2008 R2, moet u de volgende waarde instellen voor **REG\_DWORD**. Wijzig deze waarde in 0 (nul) om over te schakelen naar de productiehiërarchie.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**Hierarchy** = 0x00000001
-
-    Als u AD RMS gebruikt op Windows Server 2008 R2 en er in Active Directory al een andere AD RMS-service is geïmplementeerd als preproductieservice, moet u de volgende lege tekenreekswaarde toevoegen aan het register.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**GICURL** = ""
-
-    Als u AD RMS op Windows Server 2008 gebruikt, moet u de volgende waarde instellen voor **REG\_DWORD**. Wijzig deze waarde in 0 (nul) om over te schakelen naar de productiehiërarchie.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**Hierarchy** = 0x00000001
-
-    Als u AD RMS gebruikt op Windows Server 2008 en er in Active Directory al een andere AD RMS-service is geïmplementeerd als preproductieservice, moet u de volgende lege tekenreekswaarde toevoegen aan het register.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**GICURL** = ""
-
-2.  **De server installeren**
+1.  **De server installeren**
 
     Active Directory Rights Management Services (AD RMS) bestaat uit afzonderlijke client- en serveronderdelen. Het serveronderdeel wordt geïmplementeerd als een set webservices die kan worden gebruikt om een RMS-infrastructuur te beheren, licenties te verlenen aan consumenten en uitgevers van inhoud, en certificaten uit te geven aan computers en gebruikers.
 
@@ -73,11 +35,9 @@ Met de volgende stappen stelt u uw RMS-server in:
 
     -   [RMS Server v1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
 
-    Als u het serveronderdeel wilt configureren op Windows Server 2008, moet u de AD RMS-rol installeren. Voordat u dit doet, moet u echter het register configureren om op te geven dat u het certificaat van de preproductiehiërarchie gebruikt in plaats van de productiehiërarchie. Als u echter toepassingen ontwikkelt voor een eerder serverbesturingssysteem, configureert u het register nadat u RMS Server v1.0 SP2 hebt geïnstalleerd, maar voordat u de RMS-service inricht.
+    Als u het serveronderdeel wilt configureren op Windows Server 2008, moet u de AD RMS-rol installeren. Als u toepassingen ontwikkelt voor een eerder serverbesturingssysteem, configureert u het register nadat u RMS Server v1.0 SP2 hebt geïnstalleerd, maar voordat u de RMS-service inricht.
 
-    Zie de vorige stap (stap 1, Het register configureren) voor meer informatie.
-
-3.  **De server registreren**
+2.  **De server registreren**
 
     U moet een Rights Management Services (RMS)-server registreren om deze te identificeren in de preproductiehiërarchie of productiehiërarchie. Na het inschrijvingsproces staat er een serverlicentiecertificaat op de servercomputer. Dit certificaat is gekoppeld aan een Microsoft-vertrouwensbasis. De wijze van registratie van de server is afhankelijk van welke versie van RMS u gebruikt.
 
@@ -85,23 +45,47 @@ Met de volgende stappen stelt u uw RMS-server in:
 
         Vanaf Windows Server 2008 kunt u een RMS-server in de juiste hiërarchie registreren zonder dat er gegevens naar Microsoft worden verzonden. Wanneer u de RMS-rol installeert, worden er ook een certificaat voor zelfregistratie en een persoonlijke sleutel geïnstalleerd. Deze worden gebruikt om automatisch het serverlicentiecertificaat te maken. Er wordt geen informatie uitgewisseld met Microsoft.
 
-    -   **Online registratie**Als u AD RMS v1.0 SP2 gebruikt, kunt u de server online registreren. Registratie vindt plaats achter de schermen tijdens het inrichtingsproces, maar u moet een internetverbinding hebben en de juiste registerwaarde opgeven om aan te geven in welke hiërarchie u de server registreert. Als u de server wilt registreren in de preproductiehiërarchie, voegt u de volgende waarde voor **REG\_SZ** toe en richt u de server in. Als u de server wilt registreren in de productiehiërarchie, wist u deze waarde en richt u de server in.
+    -   **Online-inschrijving**
 
-        Zie de vorige stap (stap 1, Het register configureren) voor meer informatie.
+        Online-inschrijving Als u AD RMS v1.0 SP2 gebruikt, kunt u de server online registreren. Inschrijving vindt plaats achter de schermen tijdens het inrichtingsproces, maar u moet beschikken over een internetverbinding.
 
         **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
-## Verwante onderwerpen
+3. **Testen met RMS-server**
 
-* [Gebruik](how-to-use-msipc.md)
+    Voor tests met een RMS-server, configureert u detectie aan de serverzijde of clientzijde om Rights Management Service-client 2.1 in te schakelen voor detectie en communicatie met de RMS-server.
+
+    >![OPMERKING] Voor testen met Azure RMS is geen detectieconfiguratie vereist.
+
+  - Bij detectie aan de serverzijde registreert een beheerder met Active Directory een serviceaansluitpunt (SCP) voor het RMS-basiscluster. De client stuurt een query naar Active Directory om het SCP te detecteren en verbinding te maken met de server.
+  - Bij detectie aan de clientzijde configureert u de instellingen voor RMS-servicedetectie in het register op de computer waarop de RMS-client 2.1 wordt uitgevoerd. Deze instellingen verwijzen de RMS-client 2.1 naar de RMS-server die moet worden gebruikt. Als deze aanwezig zijn, wordt er geen detectie uitgevoerd aan de serverzijde.
+
+  Als u detectie aan de clientzijde wilt configureren, kunt u de volgende registersleutels instellen, zodat wordt verwezen naar uw RMS-server. Voor meer informatie over het configureren van detectie aan de servicezijde raadpleegt u [Opmerkingen bij de implementatie van RMS-client 2.0](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
+
+1. **EnterpriseCertification**
+        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
+
+  **Waarde**: (Standaard): [**http|https**]://RMSClusterName/**_wmcs/Certification**
+
+2. **EnterprisePublishing**
+        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Waarde**: (Standaard): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
+
+>[!NOTE] Standaard komen deze sleutels niet voor in het register. Deze moeten worden gemaakt.
+
+>[!IMPORTANT] Als u een 32-bits toepassing uitvoert in een 64-bits versie van Windows, moet u deze sleutels op de volgende sleutellocatie instellen:<p>
+  ```    
+  HKEY_LOCAL_MACHINE
+    SOFTWARE
+      Wow6432Node
+        Microsoft
+          MSIPC
+            ```
+
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
