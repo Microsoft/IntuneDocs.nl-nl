@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,6 +56,6 @@ U kunt ook [uw op maat gemaakte line-of-business-apps inschakelen](decide-how-to
 Naast het beperken van gegevensverplaatsing kunt u, wanneer een apparaat is zoekgeraakt of gestolen, of als de gebruiker niet meer bij uw bedrijf werkt, [selectief bedrijfsgegevens wissen](wipe-managed-company-app-data-with-microsoft-intune.md) en alleen persoonlijke gegevens behouden.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
