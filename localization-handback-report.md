@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#9445b4b171eb2102d73cf0e866e85b535274eee2221)
 
 ## Item Details
+##### <a name='9445b4b171eb2102d73cf0e866e85b535274eee2221'></a> Source: [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/62a1f8ff6b8947ea0c36462ba544f95c6acd3509/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md)
+* Handoff File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/a1d67692f026907f8d0e51658e34d777b4364379/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.nl-nl.xlf)
+* Handoff Datetime: 2016-06-09 16:57:17
+* Handoff Reason: Include
+* Archive File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/833d5387dd742c4ba7d6f05c1e7a5ff064fddc72/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.nl-nl.xlf)
+* Archive Datetime: 2016-06-16 01:43:55
+* Handback File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/4ca7dbc81c3f3990e157acaa46aabd4eb9ffe38f/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.nl-nl.xlf)
+* Handback Datetime: 2016-06-16 03:22:43
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
