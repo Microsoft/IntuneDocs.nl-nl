@@ -73340,9 +73340,9 @@
       "ArchiveFileCommit": "8ff1f964b72960d595a460ee9edd1457ad84b9f2",
       "ArchiveFileDateTime": "2016-06-09T02:47:27.9756813Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.nl-nl.xlf",
+      "BilingualFileCommit": "9a2e9b929808c70d15df2b2468019e62f2a65466",
+      "BilingualDateTime": "2016-06-17T09:45:56.1748598Z",
       "BilingualException": null
     },
     "599ac94ccfa2d6c9613a7a691ed79648a298a240": {
