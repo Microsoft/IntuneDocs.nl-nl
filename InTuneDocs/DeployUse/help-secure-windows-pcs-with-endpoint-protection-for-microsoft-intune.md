@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Endpoint Protection voor Windows-pc’s| Microsoft Intune
+title: Endpoint Protection voor Windows-pc's| Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune
-Microsoft Intune kan u helpen uw beheerde computers op verschillende manieren te beschermen, waaronder Endpoint Protection. Dit biedt realtime-beveiliging tegen bedreigingen door schadelijke software, houdt malwaredefinities bijgewerkt en scant computers automatisch. Ook biedt Endpoint Protection hulpmiddelen die u helpen malware-aanvallen te beheren en te controleren.
+Microsoft Intune kan u helpen uw beheerde computers op verschillende manieren te beschermen, waaronder Endpoint Protection. Dit biedt realtime-beveiliging tegen bedreigingen door schadelijke software, houdt malwaredefinities bijgewerkt en scant computers automatisch. Ook biedt Endpoint Protection hulpmiddelen waarmee u malware-aanvallen kunt beheren en controleren.
 
-Als u de Intune-client nog niet op uw computers hebt geïnstalleerd, ziet u [Installeer de Windows-pc-client met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md)..
+Zie [De Windows-pc-client installeren met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de Intune-client nog niet op uw computers hebt geïnstalleerd.
 
 Gebruik de informatie in de volgende rubrieken voor hulp bij het configureren, implementeren en controleren van Endpoint Protection.
 
@@ -48,17 +48,16 @@ Als u van uw huidige eindpuntbeveiligingstoepassing wilt overschakelen op Micros
 
 3.  Verwijder de eindpuntbeveiligingssoftware van derden door:
 
-    -   Intune-softwaredistributie te gebruiken om een softwareverwijderingshulpmiddel te implementeren dat is geleverd door de fabrikant van de eindpuntbeveiligingstoepassing van derden. Zie [Apps implementeren met Microsoft Intune](deploy-apps.md) voor meer informatie..
+    -   Intune-softwaredistributie te gebruiken om een softwareverwijderingshulpmiddel te implementeren dat is geleverd door de fabrikant van de eindpuntbeveiligingstoepassing van derden. Zie [Apps implementeren met Microsoft Intune](deploy-apps.md) voor meer informatie.
 
     -   De eindpuntbeveiligingstoepassing van derden handmatig te verwijderen.
 
-> [!NOTE]
-> Intune verwijdert eindpuntbeveiligingstoepassingen van derden niet automatisch.
+> [!NOTE] Intune verwijdert eindpuntbeveiligingstoepassingen van derden niet automatisch.
 
 ## Microsoft Intune Endpoint Protection configureren
 Gebruik de volgende stappen om u te helpen bij het configureren van Endpoint Protection voor Microsoft Intune.
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beleid** > **Beleid toevoegen**..
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beleid** > **Beleid toevoegen**.
 
 2.  Vouw **Computerbeheer** uit en selecteer **Instellingen Microsoft Intune-agent**. Selecteer **Aangepast beleid maken en implementeren** om beleid op te geven voor Endpoint Protection-instellingen en klik vervolgens op de knop **Beleid maken**. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u het onderwerp [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -70,7 +69,7 @@ U kunt het geïmplementeerde Endpoint Protection-beleid zien op de pagina **Alle
 
 |Beleidsinstelling|Details|
 |------------------|--------------------|
-|**Endpoint Protection installeren**|Ingesteld op **Ja** om Endpoint Protection op beheerde computers te installeren. Als er tijdens de installatie een eindpuntbeveiligingstoepassing van derden wordt gedetecteerd, wordt Endpoint Protection niet geïnstalleerd tenzij **Endpoint Protection installeren, zelfs als er een eindpuntbeveiligingstoepassing van derden is geïnstalleerd** is ingesteld op **Ja**. **Opmerking:** Intune Endpoint Protection wordt standaard op beheerde computers geïnstalleerd. Als u Endpoint Protection niet op uw beheerde computers wilt installeren, moet u dit beleid expliciet instellen op **Nee**. Als Endpoint Protection eerder is geïnstalleerd en het beleid wordt bijgewerkt naar **Nee**, wordt de Endpoint Protection-client verwijderd.<br />Aanbevolen waarde: **Ja**|
+|**Endpoint Protection installeren**|Ingesteld op **Ja** om Endpoint Protection op beheerde computers te installeren. Als er een eindpuntbeveiligingstoepassing van derden wordt gedetecteerd tijdens de installatie, wordt Endpoint Protection niet geïnstalleerd, tenzij **Endpoint Protection installeren, zelfs als er een eindpuntbeveiligingstoepassing van derden is geïnstalleerd** is ingesteld op **Ja**. **Opmerking:** Intune Endpoint Protection wordt standaard op beheerde computers geïnstalleerd. Als u Endpoint Protection niet op uw beheerde computers wilt installeren, moet u dit beleid expliciet instellen op **Nee**. Als Endpoint Protection eerder is geïnstalleerd en het beleid wordt bijgewerkt naar **Nee**, wordt de Endpoint Protection-client verwijderd.<br />Aanbevolen waarde: **Ja**|
 |**Endpoint Protection installeren, zelfs als er een eindpuntbeveiligingstoepassing van derden is geïnstalleerd**|Ingesteld op **Ja** om Microsoft Intune Endpoint Protection te gebruiken, zelfs als er een eindpuntbeveiligingstoepassing van derden is gedetecteerd.<br /><br />Aanbevolen waarde: **Ja**|
 |**Endpoint Protection inschakelen**|Ingesteld op **Ja** om Microsoft Intune Endpoint Protection in te schakelen op computers met de Endpoint Protection-client.<br /><br />Als deze optie is ingesteld op **Nee** en Microsoft Intune Endpoint Protection is geïnstalleerd, wordt de gebruikersinterface van de Endpoint Protection-client niet weergegeven voor gebruikers en zijn alle beveiligingsfuncties inactief.<br /><br />Aanbevolen waarde: **Ja**|
 |**Gebruikersinterface van client uitschakelen**|Ingesteld op **Ja** om de gebruikersinterface van de Microsoft Intune Endpoint Protection-client voor gebruikers te verbergen (vereist dat een clientcomputer opnieuw wordt opgestart om de instelling door te voeren).<br /><br />Aanbevolen waarde: **Nee**|
@@ -139,16 +138,16 @@ Microsoft Active Protection Service is een onlinecommunity die helpt bepalen hoe
   - **Basis**: verzendt basisinformatie over de gedetecteerde malware naar Microsoft. Dit omvat waar de software van afkomstig is, de acties die u toepast of die Endpoint Protection automatisch toepast en of de acties met succes zijn uitgevoerd.
   - **Geavanceerd**: verzendt meer informatie over malware, spyware en mogelijk ongewenste software naar Microsoft. Dit omvat de locatie van de software, bestandsnamen, hoe de software werkt en hoe deze uw computer heeft beïnvloed.
 
-U kunt ook **Dynamische definities ontvangen, gebaseerd op rapporten van Microsoft Active Protection Service**..
+U kunt ook **Dynamische definities ontvangen, gebaseerd op rapporten van Microsoft Active Protection Service**.
 
 ## Beheertaken voor Endpoint Protection
 De volgende taken helpen u bij het uitvoeren van verschillende beheertaken op beheerde computers met Endpoint Protection.
  - Malware-definities bijwerken
-  - Intune-console: selecteer in de werkruimte **Groepen** de computers die u wilt bijwerken. Klik op **Externe taken** &gt; **Malware-definities bijwerken**..
-  - Beheerde computer: start de Endpoint Protection-clientsoftware in het systeemvak. Klik op het tabblad **Bijwerken** en vervolgens op **Bijwerken**..
+  - Intune-console: selecteer in de werkruimte **Groepen** de computers die u wilt bijwerken. Klik op **Externe taken** &gt; **Malware-definities bijwerken**.
+  - Beheerde computer: start de Endpoint Protection-clientsoftware in het systeemvak. Klik op het tabblad **Bijwerken** en klik vervolgens op **Bijwerken**.
  - Ga als volgt te werk om een scan op schadelijke software uit te voeren:
-  - Intune console: selecteer in de werkruimte **Groepen** de computers die u wilt scannen. Klik op **Een volledige scan op malware uitvoeren** of **Een snelle scan op malware uitvoeren**..
-  - Beheerde computer: start de Endpoint Protection-clientsoftware in het systeemvak. Selecteer **Snel**, **Volledig** of **Aangepast** en klik vervolgens op **Nu scannen**..
+  - Intune console: selecteer in de werkruimte **Groepen** de computers die u wilt scannen. Klik op **Een volledige scan op malware uitvoeren** of **Een snelle scan op malware uitvoeren**.
+  - Beheerde computer: start de Endpoint Protection-clientsoftware in het systeemvak. Selecteer **Snel**, **Volledig**of **Aangepast**en klik vervolgens op **Nu scannen**.
 
 U kunt de status van een externe taak weergeven door te klikken op de koppeling **Externe taken** in de rechterbenedenhoek van de Intune-console. In het dialoogvenster **Status van externe taak** ziet u de huidige externe taken, de taakstatus, de apparaatnaam, gerapporteerde fouten en een koppeling naar oplossingen van problemen, indien van toepassing.
 
@@ -163,27 +162,36 @@ U kunt de status van schadelijke software op uw computers controleren met behulp
   - **Eigenschappen weergeven**: opent een pagina met meer informatie over de geselecteerde malware.
   - **Meer informatie over deze malware**: opent een onderwerp van het Microsoft Malware Protection Center met meer informatie over de malware.
 
-> [!IMPORTANT]
-> De werkruimte **Beveiliging** wordt pas weergegeven in de beheerdersconsole nadat u de client op ten minste één computer hebt geïnstalleerd en de client beheert.
+> [!IMPORTANT] De werkruimte **Beveiliging** wordt pas weergegeven in de beheerdersconsole nadat u de client op ten minste één computer hebt geïnstalleerd en de client beheert.
 
   ![Endpoint Protection controleren](./media/pol-sa-ep-monitor.png)
 
 ### Recente detectiepaden voor malware op computers weergeven
 Met Intune kunt u de paden van maximaal 10 onlangs gedetecteerde exemplaren van malware op een apparaat weergeven. De optie **Recent detectiepad** is standaard uitgeschakeld. Deze weergave inschakelen:
 
-1.  Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Alle apparaten** . **Malware**..
+1.  Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Alle apparaten**. **Malware**.
 
 2.  Klik met de rechtermuisknop op een kolomkop. Een lijst met beschikbare kolommen wordt weergegeven.
 
 3.  Schakel in de lijst het selectievakje **Recente detectiepaden** in. De kolom **Recente detectiepaden** wordt weergegeven en toont de 10 onlangs op het apparaat gedetecteerde malware-exemplaren.
 
+## Een malwarescan uitvoeren of de malwaredefinities op een computer bijwerken
+U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Protection of Windows Defender op een externe beheerde pc waarop de Intune-client is geïnstalleerd.
+
+1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Overzicht** > **Alle apparaten** > **Alle computers** en selecteer de computer die u wilt targeten.
+
+2. Klik op de vervolgkeuzelijst **Externe taken** en selecteer de taak. De taak die moet worden uitgevoerd op de externe computer.
+![Externe malwarescan uitvoeren](../media/ep_sa_malwarescan.png)
+
+
+
 ## Meer hulp nodig?
-Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer help en ondersteuning..
+Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer hulp en ondersteuning.
 
 ### Zie ook
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

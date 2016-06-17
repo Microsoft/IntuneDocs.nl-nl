@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Beheermogelijkheden voor Windows-pc’s in Microsoft Intune | Microsoft Intune
+title: Beheermogelijkheden voor Windows-pc's | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Beheermogelijkheden voor Windows-pc’s (met de Microsoft Intune-pc-client)
+# Beheermogelijkheden voor Windows-pc's (met de Microsoft Intune-pc-client)
 In de meeste gevallen schrijft u uw apparaten in bij Microsoft Intune, waarmee u over een groter aantal mogelijkheden beschikt dan bij de Intune-pc-client. U kunt echter ook pc's beheren met behulp van de Intune-pc-client, die u de volgende functies biedt:
 
 -   **Software-updates beheren**: u kunt computers up-to-date houden en beheren wanneer er updates worden toegepast.
@@ -34,7 +34,7 @@ In de meeste gevallen schrijft u uw apparaten in bij Microsoft Intune, waarmee u
 
 -   **Anti-malwarebeveiliging**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
 
--   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen.
+-   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
 
 -   **Softwarelicentiebeheer**: houdt bij hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
 -   **App-implementatie**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de clientsoftware beheert.
@@ -46,11 +46,13 @@ Intune kan pc’s met de volgende Windows-versies (zowel x86 als x64) beheren:
 
 -   **Windows Vista**: de versies Business, Enterprise en Ultimate.
 
--   **Windows 7**: de versies Professional, Enterprise en Ultimate (zonder servicepack, of met SP1).
+-   **Windows 7**: de versies Pro, Enterprise en Ultimate (zonder servicepack of met SP1).
 
--   **Windows 8**: de versies Professional en Enterprise.
+-   **Windows 8**: de versies Pro en Enterprise.
 
--   **Windows 8.1**: de versies Professional en Enterprise.
+-   **Windows 8.1**: de versies Pro en Enterprise.
+
+- **Windows 10**: de versies Home, Pro, Education en Enterprise.
 
 
 ## Minimale hardwarevereisten
@@ -71,10 +73,10 @@ Hieronder staan de softwarevereisten voor het installeren van de Intune-pc-clien
 |Windows Installer 3.1|Op de pc moet minimaal Windows Installer 3.1 zijn geïnstalleerd.|
 |Niet-compatibele clientsoftware verwijderen|Voordat u de Intune-pc-clientsoftware installeert, moet u de volgende clientsoftware van die computer verwijderen:<br /><br />- Alle versies van Configuration Manager<br />- Alle versies van Microsoft Systems Management Server (SMS)|
 
-### Zie tevens
-[Beheermogelijkheden voor mobiele apparaten in Microsoft Intune](/intune/understand/mobile-device-management-capabilties-in-microsoft-intune.md)
+### Zie ook
+[Beheermogelijkheden voor mobiele apparaten in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -32,7 +32,7 @@ U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
 -   [De wachtwoordcode van het apparaat opnieuw instellen](reset-your-passcode-cpwebsite.md)
 
--   [De naam van het apparaat wijzigen](rename-your-device-cpwebsite.md)
+-   [Naam van uw apparaat wijzigen](rename-your-device-cpwebsite.md)
 
 -   [Het apparaat verwijderen](remove-your-device-cpwebsite.md)
 
@@ -48,13 +48,13 @@ U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
 -   Uw pc op afstand beheren (geldt alleen voor pc's)
 
-U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook kunt uitvoeren met de **bedrijfsportal-app** die u op uw apparaat installeert. Tik voor meer informatie over de bedrijfsportal-app, het inschrijven van een apparaat in Intune en meer op de koppeling voor het type apparaat dat u hebt:
+U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook met de **bedrijfsportal-app** kunt uitvoeren die u op uw apparaat installeert. Tik voor meer informatie over de bedrijfsportal-app, het registreren van een apparaat bij Intune en meer op de koppeling voor het type apparaat dat u hebt:
 
 - [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
 - [Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Uw Android-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+- [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

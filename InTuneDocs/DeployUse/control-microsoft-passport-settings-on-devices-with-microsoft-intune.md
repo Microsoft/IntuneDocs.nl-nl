@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Passport-instellingen beheren op apparaten met Microsoft Intune | Microsoft Intune
+title: Microsoft Passport-instellingen op apparaten beheren | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -28,25 +28,25 @@ ms.suite: ems
 # Microsoft Passport-instellingen beheren op apparaten met Microsoft Intune
 Microsoft Intune biedt de mogelijkheid van integratie in **Microsoft Passport for Work**. Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
 
-Met Passport kan de gebruiker zich aanmelden met een **gebaar van de gebruiker** in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
+Met Passport kan de gebruiker zich aanmelden met een **gebaar** in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
 
 U kunt Intune op twee manieren integreren in Passport for Work:
 
 -   U kunt Intune-beleid gebruiken om te bepalen welke gebaren gebruikers wel en niet kunnen gebruiken om zich aan te melden.
 
--   U kunt verificatiecertificaten opslaan in de sleutelarchiefprovider (KSP) van Passport for Work. Zie [Toegang tot beveiligde bronnen met certificaatprofielen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md) voor meer informatie.
+-   U kunt verificatiecertificaten opslaan in de sleutelarchiefprovider (KSP) van Passport for Work. Zie [Toegang tot beveiligde resources met certificaatprofielen in Microsoft Intune](secure-resource-access-with-certificate-profiles.md) voor meer informatie.
 
 ## Passport for Work-beleid maken
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **Windows** &gt; **Passport for Work** om de Passport for Work-pagina te openen zoals hieronder weergegeven.
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beheer** &gt; **Mobile Device Management** &gt; **Windows** &gt; **Passport for Work** om, zoals hieronder, de pagina Passport for Work weer te geven.
 
     ![Passport for Work-pagina](../media/passport.png)
 
 2.  Kies een van de volgende instellingen:
-    - **Passport for Work op ingeschreven apparaten uitschakelen**: selecteer deze instelling als u Passport for Work niet wilt gebruiken op Windows 10-apparaten. Alle andere instellingen op het scherm worden uitgeschakeld.
-    - **Passport for Work op ingeschreven apparaten inschakelen**: selecteer deze instelling als u instellingen voor Passport for Work op alle Windows 10-apparaten wilt configureren.
+    - **Passport for Work op geregistreerde apparaten uitschakelen**: selecteer deze instelling als u Passport for Work niet wilt gebruiken op Windows 10-apparaten. Alle andere instellingen op het scherm worden uitgeschakeld.
+    - **Passport for Work op geregistreerde apparaten inschakelen**: selecteer deze instelling als u instellingen voor Passport for Work op alle Windows 10-apparaten wilt configureren.
     - **Niet geconfigureerd**: selecteer deze instelling als u niet wilt dat Intune de instellingen voor Passport for Work beheert. Alle eventueel bestaande Passport for Work-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen op het scherm worden uitgeschakeld.
-3.  Als u **Passport for Work op ingeschreven apparaten inschakelen** hebt geselecteerd, configureert u de vereiste instellingen die worden toegepast op alle ingeschreven Windows 10- en Windows 10 Mobile-apparaten.
+3.  Als u **Passport for Work op geregistreerde apparaten inschakelen** hebt geselecteerd, configureert u de vereiste instellingen die worden toegepast op alle geregistreerde Windows 10- en Windows 10 Mobile-apparaten.
 3.  Klik op **Opslaan** als u klaar bent.
 
 ## Passport for Work: pincode-instellingen
@@ -57,8 +57,7 @@ U kunt Intune op twee manieren integreren in Passport for Work:
     - **Toegestaan**: gebruikers kunnen het tekentype gebruiken in hun pincode, maar dit is niet verplicht.
     - **Vereist**: gebruikers moeten ten minste een van de tekentypen in hun pincode opnemen. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
     - **Niet toegestaan** (standaard): gebruikers mogen deze speciale tekens niet in hun pincode gebruiken (dit is ook het gedrag als de instelling niet is geconfigureerd).
-    > [!TIP]
-    > Tot de speciale tekens behoren: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] Tot de speciale tekens behoren: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Vervaldagen pincode**: het is raadzaam om een vervalperiode voor een pincode op te geven, waarna eindgebruikers deze moeten wijzigen. De standaardwaarde is 41 dagen. 
 - **Pincodegeschiedenis onthouden**: gebruik deze instelling om het hergebruik van eerder gebruikte pincodes te beperken. De standaardwaarde is dat de laatste 5 gebruikte pincodes niet opnieuw kunnen worden gebruikt.
 
@@ -80,6 +79,6 @@ Zie [de gids](https://technet.microsoft.com/library/mt589441.aspx) in de documen
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

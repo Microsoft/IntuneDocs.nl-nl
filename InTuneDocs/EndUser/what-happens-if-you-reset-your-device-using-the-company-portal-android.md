@@ -28,16 +28,19 @@ ms.suite: ems
 
 # Wat gebeurt er als u uw apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
-Wanneer u de bedrijfsportal gebruikt om uw Android-apparaat opnieuw in te stellen, worden bepaalde apps en instellingen op het apparaat, waaronder een deel van uw persoonlijke gegevens, mogelijk verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van het type apparaat dat u hebt en hoe u het apparaat gebruikt, zoals beschreven in de volgende tabel.
+Wanneer u de bedrijfsportal gebruiken om uw Android-apparaat opnieuw in te stellen, worden alle apps, instellingen en persoonlijke gegevens op uw apparaat verwijderd en wordt het apparaat teruggezet naar de fabrieksinstellingen.
 
-|Apparaatconfiguratie en -beheer|Apparaattype|
-|---------------------------------------|---------------|
-|Uw IT-beheerder beheert uw mobiele apparaat|Wanneer u een Android-apparaat opnieuw instelt, wordt het apparaat niet meer in de bedrijfsportal weergegeven en worden uw account voor zakelijke e-mail en niet-opgeslagen e-mailberichten verwijderd.|
-|Uw apparaat heeft alleen toegang tot bedrijfse-mail|Wanneer u een Android-apparaat opnieuw instelt, wordt uw apparaat niet meer weergegeven in de bedrijfsportal en wordt geprobeerd om via de bedrijfsportal de fabrieksinstellingen van het apparaat te herstellen. Al uw persoonlijke gegevens en instellingen worden verwijderd.|
+Als u een Samsung Knox-apparaat hebt, kunt u 'selectief wissen' door in de bedrijfsportal de optie **apparaat verwijderen** te kiezen. Met selectief wissen worden alleen de volgende gegevens verwijderd:
 
-### Zie tevens
+- Zakelijke apps die de IT-beheerder voor u beschikbaar maakt
+- E-mail, VPN- en Wi-Fi
+- De mogelijkheid van uw IT-beheerder om bepaalde instellingen af te dwingen
+
+
+
+### Zie ook
 [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

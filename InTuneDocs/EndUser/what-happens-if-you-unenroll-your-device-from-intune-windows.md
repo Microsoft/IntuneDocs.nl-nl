@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
+title: Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt?
+# Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?
 
-Wanneer u de bedrijfsportal-app op uw apparaat verwijdert, wordt uw apparaat ook uitgeschreven bij Intune. Gebruik de koppeling die overeenkomt met het type apparaat dat u gebruikt, voor aanvullende informatie over wat er gebeurt.
+Wanneer u de bedrijfsportal-app op uw apparaat verwijdert, wordt uw apparaat ook uitgeschreven bij Intune. Gebruik de koppeling in de bovenstaand sectie 'In dit artikel' die overeenkomt met het type apparaat dat u gebruikt, voor aanvullende informatie over wat er gebeurt.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 of Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -41,10 +41,9 @@ Wanneer u de bedrijfsportal-app op uw apparaat verwijdert, wordt uw apparaat ook
 
 -   Als u de Intune-clientsoftware hebt geïnstalleerd, wordt deze van uw computer verwijderd.
 
--   De Intune Endpoint Protection-software wordt van de computer verwijderd. Als op de computer andere anti-virussoftware is geïnstalleerd en deze software is uitgeschakeld, wordt deze mogelijk weer ingeschakeld nadat Intune Endpoint Protection is verwijderd. Controleer uw computer nadat u deze van de bedrijfsportal hebt verwijderd.
+-   De Intune Endpoint Protection-software wordt van de computer verwijderd. Als op de computer andere anti-virussoftware is geïnstalleerd en deze software is uitgeschakeld, wordt deze mogelijk weer geregistreerd nadat Intune Endpoint Protection is verwijderd. Controleer uw computer nadat u deze van de bedrijfsportal hebt verwijderd.
 
-    > [!IMPORTANT]
-    > Als de andere anti-virussoftware niet opnieuw is ingeschakeld of als er geen andere anti-virussoftware is geïnstalleerd, is uw computer mogelijk blootgesteld aan virussen en kwaadaardige software.
+    > [!IMPORTANT] Als de andere anti-virussoftware niet opnieuw is geregistreerd of als er geen andere anti-virussoftware is geïnstalleerd, is uw computer mogelijk blootgesteld aan virussen en kwaadaardige software.
 
 -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit toevoegde, bijvoorbeeld het uitschakelen van de camera, zijn niet meer van toepassing.
 
@@ -94,9 +93,9 @@ Wanneer u een Windows RT-apparaat verwijdert, gebeurt het volgende:
 -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
 
 
-### Zie tevens
+### Zie ook
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

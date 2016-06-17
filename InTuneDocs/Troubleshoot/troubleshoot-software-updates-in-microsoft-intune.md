@@ -26,11 +26,11 @@ ms.suite: ems
 ---
 
 # Problemen met software-updates oplossen in Microsoft Intune
-Los met de informatie in deze sectie problemen bij software-updates in Microsoft Intune op.
+Met de informatie in deze sectie kunt u problemen met software-updates in Microsoft Intune oplossen.
 
-Als u het probleem niet kunt oplossen met deze informatie, raadpleegt u [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen.
+Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
-De volgende tabel bevat de foutcodes voor Intune **Update-agent**. Als u een specifieke foutcode niet in deze tabel kunt vinden, raadpleegt u [Resultaatcodes voor Windows Update-agent](http://go.microsoft.com/fwlink/?LinkID=221542).
+De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een specifieke foutcode niet in deze tabel kunt vinden, raadpleegt u [Resultaatcodes voor Windows Update Agent](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Foutcode|Symbolische naam|Meer informatie|
 |--------------|-----------------|--------------------|
@@ -139,7 +139,7 @@ De volgende tabel bevat de foutcodes voor Intune **Update-agent**. Als u een spe
 |**0x80cf3FFD**|OM_E_NON_UI_MODE|Kan UI niet weergeven in niet-UI-modus. UI-modules WU-client zijn mogelijk niet geïnstalleerd.|
 |**0x80cf3FFE**|OM_E_WUCLTUI_UNSUPPORTED_VERSION|Niet-ondersteunde versie van geëxporteerde functies van WU-client-UI.|
 |**0x80cf3FFF**|OM_E_AUCLIENT_UNEXPECTED|Er is een gebruikersinterfacefout opgetreden die niet wordt gedekt door een andere OM_E_AUCLIENT_&#42;-foutcode.|
-|**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|Hetzelfde als **SOAPCLIENT_SOAPFAULT**. SOAP-client mislukt omdat er een SOAP-fout van het foutcodetype **OM_E_PT_SOAP_&#42;** is opgetreden.|
+|**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|Hetzelfde als **SOAPCLIENT_SOAPFAULT**. De SOAP-client is mislukt omdat er een SOAP-fout van het foutcodetype **OM_E_PT_SOAP_&#42;** is opgetreden.|
 |**0x80cf4008**|OM_E_PT_SOAPCLIENT_PARSEFAULT|Hetzelfde als **SOAPCLIENT_PARSEFAULT_ERROR**.  SOAP-client kan een SOAP-fout niet parseren.|
 |**0x80cf400A**|OM_E_PT_SOAPCLIENT_PARSE|Hetzelfde als **SOAPCLIENT_PARSE_ERROR**.  SOAP-client kan de reactie van de server niet parseren.|
 |**0x80cf400B**|OM_E_PT_SOAP_VERSION|Hetzelfde als **SOAP_E_VERSION_MISMATCH**. SOAP-client heeft een onherkenbare naamruimte voor de SOAP-envelop gevonden.|
@@ -170,7 +170,7 @@ De volgende tabel bevat de foutcodes voor Intune **Update-agent**. Als u een spe
 |**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|De agent kan geen geldige verificatiecookies maken.|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|Een configuratie-eigenschapwaarde is onjuist.|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|Er ontbreekt een configuratie-eigenschapwaarde.|
-|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|De HTTP-aanvraag kan niet worden voltooid en de reden stemt niet overeen met een van de **OM_E_PT_HTTP_&#42;**-foutcodes.|
+|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|De HTTP-aanvraag kan niet worden voltooid en de reden komt niet overeen met een van de **OM_E_PT_HTTP_&#42;**-foutcodes.|
 |**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|Hetzelfde als **ERROR_WINHTTP_NAME_NOT_RESOLVED**. De naam van de proxyserver of doelserver kan niet worden omgezet.|
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|De verwerking van het externe CAB-bestand is voltooid met fouten.|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|De initialisatie van de externe CAB-processor is niet voltooid.|
@@ -249,10 +249,10 @@ De volgende tabel bevat de foutcodes voor Intune **Update-agent**. Als u een spe
 - Er wordt opeens niet meer gerapporteerd aan de Microsoft-beheerconsole.  
 - Er is sprake van hoog CPU-verbruik.
 - De installatie van toepassingen verloopt traag wanneer ze worden geïnstalleerd via de Intune-portal. 
-- Het Microsoft Intune Center genereert de volgende fout: *Er is een fout opgetreden tijdens het bijwerken van de computer. Fout gevonden: Code 0x800705b4*.
-- Het statusveld onder Intune-beheerconsole > Groepen > Alle apparaten meldt: *Er zijn fouten bij een of meer agents die op deze computer zijn geïnstalleerd. De gegevens voor deze computer zijn mogelijk niet juist of up-to-date*.
+- Microsoft Intune Center genereert de volgende fout: *Er is een fout opgetreden bij het bijwerken van uw computer. Er is een fout gevonden: code 0x800705b4*.
+- In het statusveld onder Intune-beheerconsole > Groepen > Alle apparaten wordt het volgende weergegeven: *Er zijn fouten bij een of meer agents die op deze computer zijn geïnstalleerd. De gegevens voor deze computer zijn mogelijk niet juist of up-to-date*.
 
-Dit probleem kan optreden als vervangen updates (updates die zijn vervangen door een andere update) gedurende een langere periode niet zijn afgewezen. Tijdens bepaalde processen, zoals het installeren van een toepassing, controleert Windows alle vervangen updates in de juiste volgorde, zodat de updates en de opvolgers hiervan correct kunnen worden toegewezen. Als de lijst met vervangen updates te groot is, kan deze controletaak leiden tot hoog CPU-verbruik vanwege de verwerkingsbelasting en de daarvoor benodigde tijd. Dit probleem is hoofdzakelijk van invloed op clients waarop Windows 7 wordt uitgevoerd, vanwege het grote aantal vervangen updates dat beschikbaar is voor Windows 7. Windows 8 en latere besturingssystemen hebben niet zo veel vervangen updates en zijn daarom niet zo vatbaar voor dit probleem.
+Dit probleem kan optreden als vervangen updates (updates die zijn vervangen door een andere update) gedurende een langere periode niet zijn afgewezen. Tijdens bepaalde processen, zoals het installeren van een toepassing, controleert Windows alle vervangen updates in de juiste volgorde, zodat de updates en de opvolgers hiervan correct kunnen worden toegewezen. Als de lijst met vervangen updates te groot is, kan deze controletaak leiden tot hoog CPU-verbruik door de verwerkingsbelasting en de daarvoor benodigde tijd. Dit probleem is hoofdzakelijk van invloed op clients waarop Windows 7 wordt uitgevoerd, door het grote aantal vervangen updates dat beschikbaar is voor Windows 7. Windows 8 en latere besturingssystemen hebben niet zo veel vervangen updates en zijn daarom niet zo vatbaar voor dit probleem.
 
 **Oplossing**: voer de volgende stappen uit om dit probleem op te lossen:
 1. Meld u aan bij de [Intune-beheerconsole](https://manage.microsoft.com).
@@ -264,10 +264,10 @@ Dit probleem kan optreden als vervangen updates (updates die zijn vervangen door
 Als u met Windows 7 werkt, moet u ook controleren of de volgende update is geïnstalleerd:[3050265 Windows Update-client voor Windows 7: juni 2015](https://support.microsoft.com/kb/3050265).
 
 ### Volgende stappen
-Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
+Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

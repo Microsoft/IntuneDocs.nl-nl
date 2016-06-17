@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
+title: Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt?
+# Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?
 
-Wanneer u de inschrijving van uw iOS-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
+Wanneer u de registratie van uw iOS-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
 
 -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
@@ -44,11 +44,11 @@ Wanneer u de inschrijving van uw iOS-apparaat bij Intune ongedaan maakt, gebeurt
 
 -   Bedrijfse-mailprofielen worden verwijderd van het apparaat.
 
-Zie [De inschrijving van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md) voor instructies om de inschrijving van uw apparaat ongedaan te maken.
+Zie [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
-### Zie tevens
+### Zie ook
 [Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

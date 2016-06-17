@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat bij Intune inschrijft? | Microsoft Intune
+title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune? | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat bij Intune inschrijft?
+# Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?
 
-Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app gebruiken voor het volgende:
+Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune registreert, kunt u de bedrijfsportal-app gebruiken voor het volgende:
 
 -   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
 
@@ -98,11 +98,11 @@ Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelinge
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Zie [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md) voor de stappen die u moet doorlopen om uw apparaat in te schrijven..
+Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) voor de stappen die u moet doorlopen om uw apparaat in te schrijven.
 
-### Zie tevens
+### Zie ook
 [Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

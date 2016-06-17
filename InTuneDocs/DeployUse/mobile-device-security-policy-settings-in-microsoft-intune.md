@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune | Microsoft Intune
+title: Instellingen voor beveiligingsbeleid van mobiele apparaten | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -27,9 +27,9 @@ ms.suite: ems
 
 # Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune
 > [!IMPORTANT]
-> Microsoft Intune biedt nu afzonderlijk configuratiebeleid voor elk apparaatplatform. Dit beleid bevat de meest recente instellingen die u kunt gebruiken. U kunt het beveiligingsbeleid voor mobiele apparaten blijven gebruiken en eventuele bestaande implementaties zullen nog steeds werken. U moet echter zo snel mogelijk naar de nieuwe configuratiebeleidsregels migreren aangezien het beveiligingsbeleid voor mobiele apparaten in de toekomst wordt verwijderd.
+> Microsoft Intune biedt nu afzonderlijk configuratiebeleid voor elk apparaatplatform. Dit beleid bevat de recentste instellingen die u kunt gebruiken. U kunt het beveiligingsbeleid voor mobiele apparaten blijven gebruiken en eventuele bestaande implementaties zullen nog steeds werken. U moet echter zo snel mogelijk naar de nieuwe configuratiebeleidsregels migreren aangezien het beveiligingsbeleid voor mobiele apparaten in de toekomst wordt verwijderd.
 
-Gebruik Intune-beveiligingsbeleidsregels voor mobiele apparaten voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie. Deze instellingen kunnen worden gebruikt om de functionaliteit en beveiliging van uw apparaten te beheren.
+Gebruik Intune-beveiligingsbeleid voor mobiele apparaten voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie. Deze instellingen kunnen worden gebruikt om de functionaliteit en beveiliging van uw apparaten te beheren.
 
 U kunt beveiligingsbeleidsregels voor mobiele apparaten maken en implementeren voor de volgende typen apparaten:
 
@@ -64,16 +64,16 @@ U kunt beveiligingsbeleidsregels voor mobiele apparaten maken en implementeren v
 |**Afbeeldingswachtwoord en PIN toestaan**|Ja|Ja|Nee|Nee|Nee|
 |**Minuten inactief voordat wachtwoord is vereist**|Nee|Nee|Nee|Ja|Nee|
 |**Vingerafdruk voor ontgrendelen toestaan**|Nee|Nee|Nee|iOS 7 en hoger|Nee|
-Wanneer u bij iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat wachtwoord vereist is** configureert, worden deze in volgorde toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
+Wanneer u bij iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat een wachtwoord is vereist** configureert, worden deze in volgorde toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
 
-Wanneer u beleidsregels voor de wachtwoordlengte implementeert op apparaten met Windows RT, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
+Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows RT, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
 
 ## Versleutelingsinstellingen
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup><br /><br />Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**..<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten** in om versleuteling van iOS-apparaten in te schakelen..|Ja|Nee|Ja|Nee|Ja|
-|**Versleuteling vereisen voor opslagkaarten**<br /><br />Van toepassing op apparaten die ook worden beheerd door Exchange ActiveSync.|n.v.t.|n.v.t.|n.v.t. (de apps en de bijbehorende gegevens worden automatisch versleuteld)|n.v.t.|Ja|
+|**Versleuteling vereisen op mobiele apparaat**<sup>1</sup><br /><br />Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**in om versleuteling van iOS-apparaten in te schakelen.|Ja|Nee|Ja|Nee|Ja|
+|**Versleuteling vereisen voor opslagkaarten**<br /><br />Ook van toepassing op apparaten die worden beheerd door Exchange Active Sync.|n.v.t.|n.v.t.|n.v.t. (de apps en de bijbehorende gegevens worden automatisch versleuteld)|n.v.t.|Ja|
 Aanvullende informatie voor apparaten met Windows 8.1
 
 -   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](http://support.microsoft.com/kb/3013816) installeren.
@@ -130,9 +130,9 @@ Aanvullende informatie voor apparaten met Windows 8.1
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Gebruikers toestaan e-mailbijlagen te downloaden**<sup>1</sup>|n.v.t.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|
-|**E-mailsynchronisatieperiode**. Van toepassing op apparaten die ook worden beheerd door Exchange ActiveSync.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|
-|**Mobiele apparaten die deze instellingen niet volledig ondersteunen, toestaan om te synchroniseren met Exchange (Exchange ActiveSync)**. Van toepassing op apparaten die ook worden beheerd door Exchange ActiveSync.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|
+|**Gebruikers toestaan om e-mailbijlagen te downloaden**<sup>1</sup>|n.v.t.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|
+|**Synchronisatieperiode e-mail** Ook van toepassing op apparaten die worden beheerd door Exchange Active Sync.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|
+|**Mobiele apparaten die deze instellingen niet volledig ondersteunen, mogen synchroniseren met Exchange (Exchange ActiveSync)** Ook van toepassing op apparaten die worden beheerd door Exchange Active Sync.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|n.v.t.|
 |**Het Microsoft-account optioneel maken in de Windows Mail-toepassing**|Ja|Nee|Nee|Nee|Nee|
 |**Aangepaste e-mailaccounts toestaan**|Nee|Nee|Alleen Windows Phone 8.1|Nee|Nee|
 
@@ -190,7 +190,7 @@ Aanvullende informatie voor apparaten met Windows 8.1
 |**Geolocatie toestaan**<br /><br />(het apparaat mag locatiegegevens gebruiken)|Nee|Nee|Alleen Windows Phone 8.1|Nee|Ja (alleen Samsung KNOX)|
 |**NFC toestaan**<br /><br />(hiermee kunt u bewerkingen uitvoeren waarvoor near field communication wordt gebruikt)|Nee|Nee|Alleen Windows Phone 8.1|Nee|Ja (alleen Samsung KNOX)|
 |**Bluetooth toestaan**|Nee|Nee|Alleen Windows Phone 8.1|Nee|Ja (alleen Samsung KNOX)|
-|**Uitschakelen toestaan**<br>Als deze instelling is uitgeschakeld, werkt de instelling **Aantal mislukte aanmeldpogingen voordat het apparaat wordt gewist** voor Samsung KNOX-apparaten niet.|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX)|
+|**Uitschakelen toestaan**<br>Als deze instelling is uitgeschakeld, werkt de instelling **Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist** voor Samsung KNOX-apparaten niet.|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX)|
 
 ## Instellingen voor apparaatmogelijkheden - mobiel
 
@@ -212,11 +212,11 @@ Aanvullende informatie voor apparaten met Windows 8.1
 |**Klembord delen tussen toepassingen toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX)|
 |**YouTube toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX)|
 
-### Zie tevens
+### Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

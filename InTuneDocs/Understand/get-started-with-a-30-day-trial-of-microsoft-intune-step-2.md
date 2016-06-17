@@ -37,7 +37,7 @@ U kunt informatie over tenantbeheerders weergeven met behulp van de Intune-behee
 ## Afzonderlijke gebruikersaccounts toevoegen
 Voer de volgende stappen uit om extra gebruikersaccounts te maken in de evaluatieversie van uw tenant. Houd er rekening mee dat elk gebruikersaccount dat u toevoegt, telt als een van de 100 licenties die u krijgt als onderdeel van uw gratis evaluatieversie van Intune.
 
-1.  Kies in het [Office 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) de optie **Gebruikers toevoegen** &gt; **Nieuw**&gt; **Gebruiker** om de wizard **Nieuwe gebruikers** te starten.
+1.  Kies in het [Office 365-beheercentrum](http://go.microsoft.com/fwlink/?LinkID=787455) achtereenvolgens **Gebruikers toevoegen** &gt; **Nieuw**&gt; **Gebruiker** om de wizard **Nieuwe gebruikers** te starten.
 
 2.  Vul de vereiste velden in op de pagina **Details** .
 
@@ -51,14 +51,14 @@ Voer de volgende stappen uit om extra gebruikersaccounts te maken in de evaluati
 
 7.  Wanneer de nieuwe gebruiker wordt weergegeven in het Office 365-beheercentrum, controleert u of de nieuwe gebruiker is gemaakt:
 
-    1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beheer** &gt; **Bedrijfsportal** en scrol vervolgens naar de onderkant van het scherm. Kopieer de URL die wordt weergegeven onder **Intune-bedrijfsportal**..
+    1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beheer**&gt;**Bedrijfsportal** en schuif vervolgens naar de onderkant van het scherm. Kopieer de URL die wordt weergegeven onder **Intune-bedrijfsportal**.
 
-    2.  Open een nieuw browservenster in de 'privacymodus' (kies in Internet Explorer **Extra** &gt; **InPrivate-browsing**) of open een nieuw browservenster op een ander apparaat en navigeer vervolgens naar de URL die u in de vorige stap hebt gekopieerd. Wanneer gebruikers zich voor het eerst aanmelden, moeten deze een nieuw wachtwoord opgeven voor het account.
+    2.  Open een nieuw browservenster in de privacymodus (kies in Internet Explorer **Extra** &gt; **InPrivate-browsing**) of open een nieuw browservenster op een ander apparaat en navigeer vervolgens naar de URL die u in de vorige stap hebt gekopieerd. Wanneer gebruikers zich voor het eerst aanmelden, moeten deze een nieuw wachtwoord opgeven voor het account.
 
 ## Gebruikers bulksgewijs toevoegen
-Als u meerdere gebruikers tegelijk aan Intune wilt toevoegen, gebruikt u de wizard **Gebruikers bulksgewijs toevoegen** voor het uploaden van een bestand met door komma's gescheiden waarden (CSV) dat de gebruikersgegevens bevat. Met behulp van koppelingen in de wizard kunt u een lege sjabloon en een voorbeeld van een CSV-bestand downloaden. De eerste rij van uw CSV-bestand moet alle kolomlabels voor gebruikersgegevens, in de juiste volgorde, bevatten. Vervolgens moet u voor elke gebruiker in het CSV-bestand de **gebruikersnaam** (zoals **bob@contoso.com**) en een **weergavenaam** (zoals **Bob Kelly**) opnemen.).
+Als u meerdere gebruikers tegelijk aan Intune wilt toevoegen, gebruikt u de wizard **Gebruikers bulksgewijs toevoegen** voor het uploaden van een bestand met door komma's gescheiden waarden (CSV) dat de gebruikersgegevens bevat. Met behulp van koppelingen in de wizard kunt u een lege sjabloon en een voorbeeld van een CSV-bestand downloaden. De eerste rij van uw CSV-bestand moet alle kolomlabels voor gebruikersgegevens, in de juiste volgorde, bevatten. Vervolgens moet u voor elke gebruiker in het CSV-bestand de **gebruikersnaam** (zoals **bob@contoso.com**) en een **weergavenaam** (zoals **Bob Kelly**) opnemen.
 
-1.  Kies in het [Office 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) de optie **Gebruikers** &gt; **Nieuw**..
+1.  Kies in het [Office 365-beheercentrum](http://go.microsoft.com/fwlink/?LinkID=787455) de optie **Gebruikers**&gt;**Nieuw**.
 
 2.  Klik op **Bulktoevoeging** om de wizard Gebruikers bulksgewijs toevoegen te starten.
 
@@ -84,6 +84,6 @@ Gefeliciteerd! U hebt zojuist stap 2 van de procedure voor de *Microsoft Intune-
 >[&larr; **Aanmelden voor een evaluatieversie**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Groepen maken** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

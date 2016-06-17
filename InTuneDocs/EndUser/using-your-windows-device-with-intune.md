@@ -31,38 +31,39 @@ Volg deze stappen voor taken die u op een Windows-apparaat of -computer moet uit
 
 ## Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 
-De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfsportal op Windows-apparaten en het inschrijven van deze apparaten.
+De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfsportal op Windows-apparaten en de registratie van deze apparaten.
 
-- [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
-- [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat inschrijft bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)</br>
-- [Wat kan uw IT-beheerder zien wanneer u uw apparaat bij Intune inschrijft?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md)</br>
+- [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)</br>
+- [Wat kan uw IT-beheerder zien wanneer u uw apparaat bij Intune registreert?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
 
-De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u uw Windows-apparaat hebt ingeschreven bij Intune.
+De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u uw Windows-apparaat hebt geregistreerd bij Intune.
 
 - [Uw apparaat versleutelen](encrypt-your-device-windows.md)</br>
+- [Uw wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)</br>
 - [Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-windows.md)</br>
-- [De inschrijving van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-windows.md)</br>
-- [Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
+- [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-windows.md)</br>
+- [Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
 - [Wat gebeurt er als u uw apparaat opnieuw instelt met behulp van de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)</br>
 - [Schakel het verzamelen van Microsoft-gebruiksgegevens uit](turn-off-microsoft-usage-data-collection-windows.md)</br>
 - [Uw apparaat handmatig synchroniseren](sync-your-device-manually-windows.md)
 
 ## Problemen met het apparaat oplossen
 
-De informatie in deze sectie helpt u problemen op te lossen die mogelijk optreden wanneer een Windows-apparaat wordt ingeschreven bij Intune.
+De informatie in deze sectie helpt u problemen op te lossen die mogelijk optreden wanneer een Windows-apparaat wordt geregistreerd bij Intune.
 
 - [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [Het apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
-- [BitLocker is niet ingeschakeld op het apparaat](device-doesnt-have-bitlocker-enabled-windows.md)</br>
-- [Op het apparaat is geen antimalwaresoftware ingeschakeld](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
-- [Op het apparaat is Beveiligd opstarten niet ingeschakeld](device-doesnt-have-secure-boot-enabled-windows.md)</br>
-- [Op het apparaat is Code-integriteit niet ingeschakeld](device-doesnt-have-code-integrity-enabled-windows.md)
+- [Het apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
+- [BitLocker is niet geregistreerd op het apparaat](device-doesnt-have-bitlocker-enabled-windows.md)</br>
+- [Op het apparaat is geen antimalwaresoftware geregistreerd](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
+- [Op het apparaat is Beveiligd opstarten niet geregistreerd](device-doesnt-have-secure-boot-enabled-windows.md)</br>
+- [Op het apparaat is Code-integriteit niet geregistreerd](device-doesnt-have-code-integrity-enabled-windows.md)
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

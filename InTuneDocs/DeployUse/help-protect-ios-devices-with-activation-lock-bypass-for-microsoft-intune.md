@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS-apparaten beschermen met bypass van activeringsvergrendeling voor Microsoft Intune | Microsoft Intune
+title: iOS-apparaten beschermen met bypass van activeringsvergrendeling | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Voor het oplossen van deze problemen heeft Apple in iOS 7.1 de mogelijkheid geï
 > Met de supervisiemodus voor iOS-apparaten kunt u het hulpprogramma Apple Configurator gebruiken om de vergrendelingsfunctionaliteit te beperken tot bepaalde bedrijfsdoeleinden. De supervisiemodus wordt doorgaans alleen gebruikt voor apparaten in bedrijfseigendom.
 
 ## Activeringsvergrendeling beheren met Intune
-Intune kan de status opvragen van de activeringsvergrendeling van apparaten met en zonder supervisie waarop iOS 7.1 of hoger wordt uitgevoerd. Voor apparaten onder supervisie kan met Intune de bypass-code van de activeringsvergrendeling worden opgehaald direct aan het apparaat worden uitgegeven. Als het apparaat is gewist, kunt u rechtstreeks toegang krijgen tot het apparaat met de code als gebruikersnaam en een leeg wachtwoord.
+Intune kan de status opvragen van de activeringsvergrendeling van apparaten met en zonder supervisie waarop iOS 7.1 of hoger wordt uitgevoerd. Alleen voor apparaten onder supervisie kan met Intune de bypass-code van de activeringsvergrendeling worden opgehaald direct aan het apparaat worden uitgegeven. Als het apparaat is gewist, kunt u rechtstreeks toegang krijgen tot het apparaat met de code als gebruikersnaam en een leeg wachtwoord.
 
 **De zakelijke voordelen hiervan zijn**:
 
@@ -59,11 +59,11 @@ Intune kan de status opvragen van de activeringsvergrendeling van apparaten met 
 
 ## Bypass van activeringsvergrendeling gebruiken vanuit de Intune-beheerconsole
 > [!IMPORTANT]
-> Nadat u voor de activeringsvergrendeling op een apparaat een bypass hebt uitgevoerd, wordt automatisch een nieuwe activeringsvergrendeling toegepast zodra de app Zoek mijn iPhone wordt geopend. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**..
+> Nadat u voor de activeringsvergrendeling op een apparaat een bypass hebt uitgevoerd, wordt automatisch een nieuwe activeringsvergrendeling toegepast zodra de app Zoek mijn iPhone wordt geopend. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**.
 
-1.  Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Alle apparaten in bedrijfseigendom**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle apparaten in bedrijfseigendom**.
 
-2.  Selecteer het apparaat waarvoor u een bypass van de activeringsvergrendeling wilt uitvoeren. Kies vervolgens **Bypass van activeringsvergrendeling**..
+2.  Selecteer het apparaat waarvoor u een bypass van de activeringsvergrendeling wilt uitvoeren. Kies **Bypass van activeringsvergrendeling**.
 
 3.  Lees de waarschuwing. Kies **Ja** om door te gaan.
 
@@ -88,11 +88,11 @@ U kunt op twee manieren zien op welke apparaten activeringsvergrendeling is inge
 
     Als u een apparaat selecteert in het knooppunt **Alle apparaten in bedrijfseigendom** en de activeringsvergrendeling voor dat apparaat is ingeschakeld, ziet u ook de bypass-code. Deze code kan worden gebruikt om handmatig een bypass van de activeringsvergrendeling uit te voeren.
 
-### Zie tevens
+### Zie ook
 [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md)
-[Uw gegevens beschermen met vergrendelen op afstand of het opnieuw instellen van de wachtwoordcode](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
+[Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

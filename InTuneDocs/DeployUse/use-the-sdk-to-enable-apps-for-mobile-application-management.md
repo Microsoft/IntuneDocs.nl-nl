@@ -38,13 +38,13 @@ Gebruik de Microsoft Intune App SDK om Intune in staat te stellen bepaalde funct
 
 Als u de SDK wilt gebruiken, moet u toegang hebben tot de broncode van de app. De meeste SDK-functies kunt u echter inschakelen zonder dat u het gedrag van de app hoeft aan te passen.
 
-Zie de pagina [Overzicht](https://msdn.microsoft.com/en-us/library/mt627767.aspx) voor een overzicht van de SDK. Zie [Aan de slag met de Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627766.aspx) om de Intune App SDK in gebruik te nemen.
+Zie de pagina [Overzicht](/intune/develop/intune-app-sdk) voor een overzicht van de SDK. Zie [Aan de slag met de Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started) om de Intune App SDK in gebruik te nemen
 
-### Zie tevens
+### Zie ook
 [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

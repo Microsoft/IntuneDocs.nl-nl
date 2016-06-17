@@ -26,16 +26,16 @@ ms.suite: ems
 ---
 
 # Vereisten voor de netwerkinfrastructuur voor Microsoft Intune
-Lees dit onderwerp en andere vereisten in [Wat u moet weten voor u met Microsoft Intune begint](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt..
+Lees dit onderwerp en andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt.
 
-In dit onderwerp vindt u de vereisten die uw netwerkinfrastructuur in staat stellen om de communicatie te verzorgen tussen de apparaten die u beheert en gebruikt om uw Intune-abonnement te beheren, en de websites op internet die door de cloudservice worden gebruikt.
+In dit onderwerp staan de vereisten die uw netwerkinfrastructuur in staat stellen communicatie uit te wisselen tussen de apparaten die u beheert en gebruikt om uw Intune-abonnement te beheren, en de websites op internet die worden gebruikt door de cloudservice.
 
 Het gebruik van een lokale infrastructuur (zoals een server waarop u de software moet installeren) is niet vereist, maar u hebt de mogelijkheid om een lokale infrastructuur te gebruiken, waaronder de hulpprogramma's voor Exchange- en Active Directory-synchronisatie.
 
-Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u firewalls en proxyservers instellen om communicatie voor Intune mogelijk te maken.
+Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u firewalls en proxyservers zo instellen dat communicatie voor Intune is toegestaan.
 
 ## Vereisten voor firewalls, poorten en domeinen
-Voor beheerde apparaten zijn configuraties vereist waarmee **alle gebruikers** via firewalls toegang krijgen tot diverse services.
+Voor beheerde apparaten zijn configuraties vereist waarmee **Alle gebruikers** via firewalls toegang krijgen tot diverse services.
 
 De volgende tabel bevat de poorten en services waartoe de Intune-client toegang heeft.
 
@@ -152,8 +152,8 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 |wustat.microsoft.com|80 en 443||
 |Microsoft Update-services|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 en 443|
 |DNS-lookup-aanvragen|manage.microsoft.com.nsatc.net|80|
-|Samsung KNOX-apparaatcommunicatie via de firewall|Als u Samsung KNOX-apparaten via de firewall verbinding wilt laten maken met de KNOX-servers, volgt u de aanwijzingen in Veelgestelde vragen over Samsung KNOX.||
-|Documentatie, Help en ondersteuning</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
+|Samsung KNOX-apparaatcommunicatie via de firewall|Als u Samsung KNOX-apparaten verbinding wilt laten maken met de KNOX-servers via de firewall, volgt u de aanwijzingen in de veelgestelde vragen over Samsung KNOX.||
+|Documentatie, Help en ondersteuning:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
 
 
@@ -166,23 +166,13 @@ Als u computers wilt beheren die zich achter een proxyserver bevinden, moet u re
 
 U kunt instellingen voor de proxyserver op afzonderlijke clientcomputers wijzigen of u kunt instellingen voor Groepsbeleid gebruiken om de instellingen te wijzigen voor alle clientcomputers die zich achter een bepaalde proxyserver bevinden.
 
-U kunt ook een proxyserver gebruiken die inhoud opslaat in de cache om het gebruik van [de netwerkbandbreedte](network-bandwidth-use.md) door Intune-clients te reduceren.
+U kunt ook een proxyserver gebruiken die inhoud opslaat in de cache om [het gebruik van de netwerkbandbreedte](network-bandwidth-use.md) door Intune-clients te reduceren.
 
 
-
-## Vereisten voor de Service to Service-connector
-De Service to Service-connector ondersteunt Exchange alleen in de cloud en heeft geen vereisten ten aanzien van de lokale infrastructuur.
-
-Voor gebruik van deze connector moet zijn voldaan aan de volgende vereisten:
-
--   U hebt een Office 365-abonnement met een Exchange Server 2013-tenant. Als de tenant Exchange Server 2013 is, biedt de connector ondersteuning voor Exchange Server 2010 in diezelfde omgeving.
-
--   Het gebruikersaccount dat u gebruikt om de lokale connector te installeren, moet een tenantbeheerder zijn voor Intune en een beheerder in de Exchange-tenant met een licentie om Exchange Server 2013 gebruiken.
-
-### Zie tevens
+### Zie ook
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

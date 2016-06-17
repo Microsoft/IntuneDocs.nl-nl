@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inzicht in uw apparaten met inventarisaties in Microsoft Intune | Microsoft Intune
+title: Inzicht in uw apparaten met inventarisaties | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,7 +29,7 @@ ms.suite: ems
 Met Microsoft Intune kunt u de inventarisatie bekijken van de ingeschreven apparaten en Windows-pc's waarop de Intune-clientsoftware wordt uitgevoerd.
 
 ## Wat wordt er verzameld bij ingeschreven apparaten?
-Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert u de [rapporten voor de inventaris van mobiele apparaten](understand-microsoft-intune-operations-by-using-reports.md) uit. De volgende inventarisgegevens van ingeschreven apparaten worden door Intune verzameld:
+Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert u de [rapporten voor de inventaris van mobiele apparaten](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van ingeschreven apparaten verzameld:
 
 |Eigenschap|Verzameld door|
 |------------|-----------------------|
@@ -46,15 +46,15 @@ Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert
 |**Beheerstatus**|Alle apparaten|
 |**E-mailadres**|Alle apparaten|
 |**Exchange ActiveSync-id**|Alle apparaten|
-|**Gekraakt of geroot**|Alleen iOS- en Android-apparaten|
-|**Unieke apparaat-ID**|Alle apparaten, met uitzondering van Exchange ActiveSync|
+|**Apparaten waarop jailbreaking of rooting is uitgevoerd**|Alleen iOS- en Android-apparaten|
+|**Unieke apparaat-ID**|Alle apparaten, met uitzondering van Exchange Active Sync|
 |**Serienummer**|iOS-, Mac OS X-, Android-, Windows 8.1- en Windows 10-apparaten|
 |**Totale opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10-apparaten|
 |**Beschikbare opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10-apparaten|
 |**Telefoonnummer**<br>Telefoons die zijn aangemerkt als bedrijfseigendom, worden aangeduid met hun volledige telefoonnummer, bijvoorbeeld wanneer u een inventarisrapport voor mobiele apparaten uitvoert. Telefoonnummers voor BYOD-apparaten worden gemaskeerd met &#42;, waarbij alleen de laatste 4 cijfers worden weergegeven.|iOS-, Android- en Windows Phone-apparaten|
-|**IMEI**|Exchange ActiveSync-, iOS-, Android- en Windows Phone-apparaten|
+|**IMEI**|Exchange Active Sync-, iOS-, Android- en Windows Phone-apparaten|
 |**MEID**<br>Mobile Equipment Identifier|Alleen iOS-apparaten|
-|**MAC-adres Wi-Fi**|Alle apparaten, met uitzondering van Exchange ActiveSync|
+|**MAC-adres Wi-Fi**|Alle apparaten, met uitzondering van Exchange Active Sync|
 |**Provider van abonnee**|Alleen iOS- en Android-apparaten|
 |**Mobiele telefoontechnologie**|Alleen iOS- en Android-apparaten|
 |**Onder supervisie**|Alleen iOS-apparaten|
@@ -66,10 +66,9 @@ Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert
 |**Versleuteling ingeschakeld**|Alle apparaten|
 
 ## Wat wordt er verzameld voor Windows-pc's?
-> [!IMPORTANT]
-> Deze sectie geldt alleen voor Windows-computers waarop de Intune Windows- clientsoftware wordt uitgevoerd.
+> [!IMPORTANT] Deze sectie geldt alleen voor Windows-pc's waarop de Intune Windows-clientsoftware voor pc's wordt uitgevoerd.
 
-Als u de inventaris wilt weergeven die voor Windows-pc’s is verzameld, voert u de [rapporten voor de inventaris van computers](understand-microsoft-intune-operations-by-using-reports.md) uit. De volgende inventarisgegevens van Windows-pc’s worden door Intune verzameld:
+Als u de inventaris wilt weergeven die voor Windows-pc's is verzameld, voert u de [rapporten voor de inventaris van computers](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van Windows-pc's verzameld:
 
 -   **Naam**
 
@@ -113,11 +112,12 @@ Als u de inventaris wilt weergeven die voor Windows-pc’s is verzameld, voert u
 
 -   **Laatst bijgewerkt**
 
-### Zie ook
-[Bewaking en rapporten voor Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Beheermogelijkheden voor mobiele apparaten in Microsoft Intune | Microsoft Intune
+title: Mogelijkheden voor Mobile Device Management| Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -24,10 +24,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# Beheermogelijkheden voor mobiele apparaten in Microsoft Intune
+# Mogelijkheden voor Mobile Device Management in Microsoft Intune
 
-Met Microsoft Intune kunt u vele apparaten beheren door ze *in te schrijven* bij de service. Gebruikers kunnen vervolgens een *bedrijfsportal* gebruiken om allerlei bewerkingen uit te voeren, zoals hun apparaat inschrijven, zoeken naar en installeren van apps, ervoor zorgen dat het apparaat voldoet aan het bedrijfsbeleid en contact opnemen met de IT-ondersteuning.
-Dit onderwerp bevat een volledige lijst van de mogelijkheden die ingeschreven apparaten u bieden.
+Met Microsoft Intune kunt u vele apparaten beheren door ze *in te schrijven* bij de service. Gebruikers kunnen vervolgens een *bedrijfsportal* gebruiken om allerlei bewerkingen uit te voeren, zoals hun apparaat registreren, zoeken naar en installeren van apps, ervoor zorgen dat het apparaat voldoet aan het bedrijfsbeleid en contact opnemen met de IT-ondersteuning.
+Dit onderwerp bevat een volledige lijst van de mogelijkheden die geregistreerde apparaten u bieden.
 
 Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling worden alle afgehandeld via de Intune-beheerconsole. Gebruikers krijgen toegang tot de bedrijfsportal waar ze apps kunnen installeren, apparaten kunnen inschrijven en verwijderen en contact kunnen opnemen met hun IT-afdeling of helpdesk.
 
@@ -66,12 +66,13 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 
 |Mogelijkheid|Details|Meer informatie|
 |--------------|-----------|--------------------|
-|Inventarisatie en rapportage|Hier zoekt u naar informatie over de apparaten die u beheert en de software die ze gebruiken.<br /><br />U kunt deze rapporten op een aantal verschillende manieren filteren, zoals op apparaatplatform en op compatibiliteit van het apparaat met bedrijfsnormen.|[Understand Microsoft Intune operations by using reports](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
-
-### Zie tevens
-[Beheermogelijkheden voor Windows-pc’s in Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+|Inventarisatie en rapportage|Hier zoekt u naar informatie over de apparaten die u beheert en de software die ze gebruiken.|[Inzicht in uw apparaten met inventarisaties in Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
-<!--HONumber=May16_HO1-->
+### Zie ook
+[Beheermogelijkheden voor Windows-pc’s in Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
+
+
+<!--HONumber=May16_HO2-->
 
 

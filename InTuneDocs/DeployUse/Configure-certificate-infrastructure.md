@@ -28,7 +28,7 @@ ms.suite: ems
 # Certificaatinfrastructuur configureren
 In dit onderwerp wordt beschreven wat u nodig hebt om certificaatprofielen te maken en te implementeren.
 
-Om op certificaten gebaseerde verificatie in uw organisatie te laten werken, hebt u een certificeringsinstantie voor ondernemingen nodig.
+U hebt een certificeringsinstantie voor ondernemingen nodig om op certificaten gebaseerde verificatie in uw organisatie te laten werken.
 
 Voor het gebruik van SCEP-certificaatprofielen hebt u, afgezien van een certificeringsinstantie voor ondernemingen, ook het volgende nodig:
 
@@ -47,8 +47,8 @@ Voor het gebruik van .pfx-certificaatprofielen hebt u, afgezien van een certific
 
 -    **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
 
--  **Certificeringsinstantie** (CA): een certificeringsinstantie (CA) voor ondernemingen (CA) die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [De certificeringsinstantie installeren](http://technet.microsoft.com/library/jj125375.aspx) voor instructies over het instellen van een certificeringsinstantie..
-    Als de certificeringsinstantie werkt met Windows Server 2008 R2 moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/)..
+-  **Certificeringsinstantie** (CA): een certificeringsinstantie (CA) voor ondernemingen (CA) die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx)(De certificeringsinstantie installeren) voor instructies over het instellen van een certificeringsinstantie.
+    Als de certificeringsinstantie werkt met Windows Server 2008 R2, moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/).
 
 -  **NDES-Server** (alleen SCEP): op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen.
 -  **Een computer die kan communiceren met de certificeringsinstantie** (alleen .pfx): of gebruik de computer van de certificeringsinstantie zelf.
@@ -58,9 +58,9 @@ Voor het gebruik van .pfx-certificaatprofielen hebt u, afgezien van een certific
     -  Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
 
 > [!NOTE]           
-> -    De server die als host voor WAP fungeert, [moet een update installeren](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](http://support.microsoft.com/kb/3013769), maar ook afzonderlijk beschikbaar in [KB3011135](http://support.microsoft.com/kb/3011135)..
+> -    De server die als host voor WAP fungeert, [moet een update installeren](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](http://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Ook moet de server waarop WAP als host optreedt, een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd. Bovendien moet de server het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
-    Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers..|
+Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers.|
 
 
 ### Certificaten en sjablonen
@@ -94,8 +94,7 @@ In deze taak:
 
 -   Maakt u een NDES-serviceaccount
 
-    > [!NOTE]
-    > Voor het intrekken van certificaten moet het NDES-serviceaccount voor elk certificaatsjabloon die door een certificaatprofiel wordt gebruikt, beschikken over rechten voor het *verlenen en beheren van certificaten*.
+    > [!NOTE] Voor het intrekken van certificaten moet het NDES-serviceaccount voor elk certificaatsjabloon die door een certificaatprofiel wordt gebruikt, beschikken over rechten voor het *uitgeven en beheren van certificaten*.
 
 -   Configureert u een certificaatsjabloon voor NDES
 
@@ -113,17 +112,15 @@ In deze taak:
 
     -   Selecteer op het tabblad **Onderwerpnaam** de optie **Met de aanvraag meeleveren**. (Beveiliging wordt afgedwongen door de Intune-beleidsmodule voor NDES.)
 
-    -   Zorg ervoor dat op het tabblad **Extensies** de **Beschrijving van toepassingsbeleid** de optie **Clientverificatie** bevat..
+    -   Zorg ervoor dat op het tabblad **Extensies** de **beschrijving van toepassingsbeleid** de optie **Clientverificatie**bevat.
 
-        > [!IMPORTANT]
-        > Bewerk voor iOS- en Mac OS X-certificaatsjablonen op het tabblad **Extensies** het **sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
+        > [!IMPORTANT] Bewerk voor iOS- en Mac OS X-certificaatsjablonen op het tabblad **Extensies** het **sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
 
-    -   Selecteer op het tabblad **Beveiliging** het NDES-serviceaccount en wijs hieraan de machtiging **Inschrijven** toe voor de sjabloon.
+    -   Selecteer op het tabblad **Beveiliging** het NDES-serviceaccount en wijs hieraan de machtiging **Registreren** toe voor de sjabloon.
 
 3.  Controleer de **geldigheidsperiode** op het tabblad **Algemeen** van de sjabloon. Standaard gebruikt Intune de waarde die is geconfigureerd in de sjabloon. U kunt de CA echter zodanig configureren dat de aanvrager een andere waarde kan opgeven, die u vervolgens vanuit de Intune-beheerconsole kunt instellen. Als u altijd de waarde in de sjabloon wilt gebruiken, slaat u de rest van deze stap over.
 
-    > [!IMPORTANT]
-    > Het iOS-platform en het Mac OS X-platform gebruiken altijd de waarde die in de sjabloon is ingesteld, ongeacht andere configuraties die u instelt.
+    > [!IMPORTANT] Het iOS-platform en het Mac OS X-platform gebruiken altijd de waarde die in de sjabloon is ingesteld, ongeacht andere configuraties die u instelt.
 
     Als u de CA zo wilt configureren dat de aanvrager de geldigheidsperiode kan opgeven, voert u op de CA de volgende opdrachten uit:
 
@@ -135,7 +132,7 @@ In deze taak:
 
 4.  Gebruik op de verlenende CA de module Certificeringsinstantie om de certificaatsjabloon te publiceren.
 
-    1.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen** en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
+    1.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen**, en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
 
     2.  Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
@@ -163,9 +160,9 @@ In deze taak:
 
         -   **Webserver** &gt; **Beveiliging** &gt; **Filtering aanvragen**
 
-        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 3.5**. Als ASP.NET 3.5 wordt geïnstalleerd, wordt ook .NET Framework 3.5 geïnstalleerd. Als u .NET Framework 3.5 installeert, installeer dan zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**..
+        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 3.5**. Als ASP.NET 3.5 wordt geïnstalleerd, wordt ook .NET Framework 3.5 geïnstalleerd. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
 
-        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 4.5**. Als ASP.NET 4.5 wordt geïnstalleerd, wordt ook .NET Framework 4.5 geïnstalleerd. Als u .NET Framework 4.5 installeert, installeer dan het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en de functie **WCF-services** &gt; **HTTP-activering**.
+        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 4.5**. Als ASP.NET 4.5 wordt geïnstalleerd, wordt ook .NET Framework 4.5 geïnstalleerd. Als u .NET Framework 4.5 installeert, installeert u het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en **WCF-services** &gt; **HTTP-activering**.
 
         -   **Beheerhulpprogramma's** &gt; **Compatibiliteit met IIS 6-beheer** &gt; **Compatibiliteit met IIS 6-metabase**
 
@@ -197,7 +194,7 @@ In deze taak:
     > [!TIP]
     > Als u op de koppeling in de vorige taak hebt geklikt, is deze wizard al geopend. Anders opent u Serverbeheer voor toegang tot post-implementatieconfiguratie voor Active Directory Certificate Services.
 
-    -   Selecteer op de pagina **Functieservices** de optie **Registratieservice voor netwerkapparaten**..
+    -   Selecteer op de pagina **Functieservices** de optie **Registratieservice voor netwerkapparaten**.
 
     -   Geef op de pagina **Serviceaccount voor NDES** het NDES-serviceaccount op.
 
@@ -235,20 +232,19 @@ In deze taak:
 
     3.  Geef voor het **SSL-certificaat**het serververificatiecertificaat op.
 
-        > [!NOTE]
-        > Als de NDES-server zowel een externe als interne naam voor één netwerkadres gebruikt, moet het serververificatiecertificaat een **onderwerpnaam** met een externe openbare servernaam en een **alternatieve naam voor het onderwerp** met de interne servernaam hebben.
+        > [!NOTE] Als de NDES-server zowel een externe als interne naam voor één netwerkadres gebruikt, moet het serververificatiecertificaat een **onderwerpnaam** met een externe openbare servernaam en een **alternatieve naam voor het onderwerp** met de interne servernaam hebben.
 
 2.  Vraag op uw NDES-server een **clientverificatie** certificaat van uw interne CA of een openbare CA aan en installeer het certificaat. Dit kan hetzelfde certificaat zijn als het serververificatiecertificaat als dat certificaat beide mogelijkheden heeft.
 
     Het clientverificatiecertificaat moet de volgende eigenschappen hebben:
 
-    **Uitgebreid sleutelgebruik**: dit moet **Clientverificatie** omvatten..
+    **Uitgebreid sleutelgebruik**: dit moet **Clientverificatie** omvatten.
 
     **Onderwerpnaam**: deze moet gelijk zijn aan de DNS-naam van de server waarop u het certificaat installeert (de NDES-server).
 
 ##### IIS-aanvraagfiltering configureren
 
-1.  Open **IIS-beheer** op de NDES-server, selecteer de **standaardwebsite** in het deelvenster **Verbindingen** en open vervolgens **Aanvraagfiltering**..
+1.  Open op de NDES-server **IIS-beheer**, selecteer de **standaardwebsite** in het deelvenster **Verbindingen** en open vervolgens **Aanvraagfiltering**.
 
 2.  Klik op **Functie-instellingen bewerken**en stel het volgende in:
 
@@ -271,21 +267,21 @@ In deze taak:
 ## Taak 4: de Intune-certificaatconnector inschakelen, installeren en configureren (voor SCEP- en PFX-certificaten).
 In deze taak:
 
-Schakelt u ondersteuning voor Intune in
+Schakelt u de ondersteuning voor NDES in Intune in
 
 Downloadt, installeert en configureert u de certificaatconnector op de NDES-server
 
 ##### Ondersteuning voor de certificaatconnector inschakelen
 
-1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en klik op **Beheer** &gt; **Certificaatconnector**.
+1.  Open de [Intune-beheerconsole](https://manage.microsoft.com), klik op **Beheer** &gt; **Certificaatconnector**.
 
 2.  Klik op **On-premises certificaatconnector configureren**.
 
-3.  Selecteer **Certificaatconnector inschakelen** en klik vervolgens op **OK**..
+3.  Selecteer **Certificaatconnector inschakelen**en klik vervolgens op **OK**.
 
 ##### De certificaatconnector downloaden, installeren en configureren
 
-1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en klik vervolgens op **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **Certificaatconnector** &gt; **Certificaatconnector downloaden**.
+1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en klik vervolgens op **Beheer** &gt; **Mobile Device Management** &gt; **Certificaatconnector** &gt; **Certificaatconnector downloaden**.
 
 2.  Nadat het downloaden is voltooid, voert u het gedownloade installatieprogramma (**ndesconnectorssetup.exe**) uit:
 
@@ -300,12 +296,11 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 
 3.  Als naar het clientcertificaat voor de certificaatconnector wordt gevraagd, klikt u op **Selecteren**en selecteert u het certificaat voor **clientverificatie** dat u in Taak 3 op uw NDES-server hebt geïnstalleerd.
 
-    Nadat u het certificaat voor clientverificatie hebt geselecteerd, keert u terug naar het oppervlak **Clientcertificaat voor Microsoft Intune-certificaatconnector** . Hoewel het geselecteerde certificaat niet wordt weergegeven, klikt u op **Volgende** om de eigenschappen van dat certificaat weer te geven. Klik daarna op **Volgende** en vervolgens op **Installeren**..
+    Nadat u het certificaat voor clientverificatie hebt geselecteerd, keert u terug naar het oppervlak **Clientcertificaat voor Microsoft Intune-certificaatconnector** . Hoewel het geselecteerde certificaat niet wordt weergegeven, klikt u op **Volgende** om de eigenschappen van dat certificaat weer te geven. Klik vervolgens op **Volgende**en **Installeren**.
 
-4.  Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**..
+4.  Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
 
-    > [!TIP]
-    > Als u de wizard sluit voordat u de gebruikersinterface van de certificaatconnector start, kunt u deze opnieuw openen door de volgende opdracht uit te voeren:
+    > [!TIP] Als u de wizard sluit voordat u de gebruikersinterface van de certificaatconnector start, kunt u deze opnieuw openen door de volgende opdracht uit te voeren:
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -315,11 +310,11 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 
     Als uw organisatie een proxyserver gebruikt en de NDES-server de proxy nodig heeft om toegang tot internet te krijgen, klikt u op **Proxyserver gebruiken** en geeft u de naam van de proxyserver, de poort en de accountreferenties op om verbinding te maken.
 
-    Selecteer het tabblad **Geavanceerd** en geef vervolgens referenties op voor een account met de machtiging **Certificaten verlenen en beheren** op uw verlenende certificeringsinstantie. Klik vervolgens op **Toepassen**..
+    Selecteer het tabblad **Geavanceerd** en geef vervolgens referenties op voor een account met de machtiging **Certificaten verlenen en beheren** op uw verlenende certificeringsinstantie. Klik vervolgens op **Toepassen**.
 
     U kunt nu de gebruikersinterface van de certificaatconnector sluiten.
 
-6.  Open een opdrachtprompt en typ **services.msc**. Druk vervolgens op **Enter**, klik met de rechtermuisknop op **Certificaatconnectorservice** en klik op **Opnieuw opstarten**..
+6.  Open een opdrachtprompt en typ **services.msc**. Druk vervolgens op **Enter**, klik met de rechtermuisknop op **Intune-connectorservice** en klik vervolgens op **Opnieuw opstarten**.
 
 Controleer of de service wordt uitgevoerd door een browser te openen en de volgende URL in te voeren. Hierop moet een **403** -fout worden geretourneerd:
 
@@ -329,6 +324,6 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](configure-intune-certificate-profiles.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

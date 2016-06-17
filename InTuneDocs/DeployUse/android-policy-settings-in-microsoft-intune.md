@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor configuratiebeleid voor Android in Microsoft Intune | Microsoft Intune
+title: Instellingen voor het Android- en Samsung KNOX-configuratiebeleid in Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Instellingen voor Android-beleid in Microsoft Intune
+# Instellingen voor het Android- en Samsung KNOX-beleid in Microsoft Intune
 
 ## Algemeen configuratiebeleid
 
@@ -35,10 +35,10 @@ Gebruik het **algemene Android-configuratiebeleid** van Microsoft Intune om inst
 
 -   **Kioskmodus** (alleen voor Samsung KNOX-apparaten): hiermee kunt u een apparaat zodanig vergrendelen dat alleen bepaalde functies beschikbaar zijn. U kunt bijvoorbeeld toestaan dat een apparaat slechts één beheerde app uitvoert die u opgeeft, of kunt u de volumeknoppen op een apparaat uitschakelen. Deze instellingen kunnen worden gebruikt voor een demonstratiemodel van een apparaat of voor een apparaat dat is toegewezen aan slechts één functie, zoals een verkooppuntapparaat.
 
--   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met toepassingen die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd (de installatie van de app kan echter niet worden geblokkeerd).
+-   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met apps die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd (de installatie van de app kan echter niet worden geblokkeerd).
 
 > [!TIP]
-> U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie voor meer informatie over het gebruik van voorwaarden [Beleidsinstellingen voor voorwaarden in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie [Beleidsinstellingen voor voorwaarden in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) voor meer informatie over het gebruik van voorwaarden.
 
 Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u deze maken met behulp van een aangepast Android-beleid waarmee u OMA-URI-instellingen kunt gebruiken om het apparaat te beheren. Zie **Aangepaste beleidsinstellingen** verderop in dit onderwerp voor meer informatie.
 
@@ -50,7 +50,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Minimale wachtwoordlengte**|De minimale lengte van het wachtwoord.|Ja|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Wist de gegevens op het apparaat als dit aantal aanmeldingspogingen mislukt.|Ja|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Geef het aantal minuten op waarna het apparaat automatisch wordt vergrendeld.|Ja|Ja|
-|**Wachtwoordverlooptijd (dagen)**|Het aantal dagen waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
+|**Verlopen van wachtwoorden (dagen)**|Het aantal dagen waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hoeveel eerder gebruikte wachtwoorden worden onthouden.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat eerder gebruikte wachtwoorden opnieuw worden gebruikt.|Ja|Ja|
 |**Wachtwoordkwaliteit**|Hiermee selecteert u het complexiteitsniveau voor het wachtwoord en geeft u ook aan of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
@@ -107,7 +107,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Verwisselbare opslag toestaan**|Hiermee staat u het gebruik toe van verwisselbare opslag, zoals een SD-kaart, op het apparaat.|Nee|Ja|
 |**Wi-Fi toestaan**|Hiermee kunt het gebruik van de Wi-Fi-mogelijkheden van het apparaat toestaan.|Nee|Ja|
 |**Wi-Fi-tethering toestaan**|Hiermee kunt het gebruik van Wi-Fi-tethering op het apparaat toestaan.|Nee|Ja|
-|**Geolocatie toestaan**|Hiermee staat u toe dat het apparaat locatiegegevens gebruikt.|Nee|Ja|
+|**Geolocatie toestaan**|Hiermee kan het apparaat locatiegegevens gebruiken.|Nee|Ja|
 |**NFC toestaan**|Hiermee kunt u bewerkingen uitvoeren waarvoor near field communication wordt gebruikt, mits het apparaat er ondersteuning voor biedt.|Nee|Ja|
 |**Bluetooth toestaan**|Hiermee kan de gebruiker Bluetooth op het apparaat gebruiken.|Nee|Ja|
 |**Uitschakelen toestaan**|Hiermee kan de gebruiker het apparaat uitschakelen.<br /><br />Als deze instelling is uitgeschakeld, werkt de instelling **Aantal mislukte aanmeldpogingen voordat het apparaat wordt gewist** voor Samsung KNOX-apparaten niet.|Nee|Ja|
@@ -150,7 +150,7 @@ Geef de volgende instellingen op voor **Samsung KNOX-apparaten**:
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Klik op **Bladeren** en selecteer de beheerde app, of een app in een store, die mag worden uitgevoerd wanneer het apparaat in kioskmodus staat. Er mogen geen andere apps op het apparaat worden uitgevoerd.<br /><br />Zie URL’s voor app stores opgeven verderop in dit onderwerp voor meer informatie.|
+|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Klik op **Bladeren** en selecteer vervolgens de beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de store, worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.|
 |**Volumeknoppen toestaan**|Hiermee wordt het gebruik van de volumeknoppen op het apparaat in- of uitgeschakeld.|
 |**Knop voor slaapstand/ontwaken van scherm toestaan**|Hiermee wordt de knop voor slaapstand/ontwaken van het scherm in- of uitgeschakeld op het apparaat.|
 
@@ -166,7 +166,7 @@ Gebruik het **Rapport met niet-compatibele apps** om de compatibiliteit van toeg
 2.  Selecteer de apparaatgroepen die u wilt controleren, of u nu op compatibele of op niet-compatibele apps wilt controleren, en klik vervolgens op **Rapport weergeven**.
 
 #### URL's voor app stores opgeven
-Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele apps of in de optie **Selecteer een beheerde app die actief mag zijn als het apparaat in kioskmodus is** (alleen iOS), gebruikt u de volgende indeling:
+Als u een app-URL wilt opgeven in de lijst met compatibele apps, gebruikt u de volgende notatie:
 
 In het [gedeelte Apps van Google Play](https://play.google.com/store/apps) zoekt u de app die u wilt gebruiken.
 
@@ -177,7 +177,7 @@ Open de installatiepagina voor de app en kopieer de URL naar het klembord. U kun
 ## Aangepaste beleidsinstellingen
 Gebruik het **aangepaste Android-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om de functies voor Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd. Voor informatie over de instellingen die u met dit beleid kunt configureren, raadpleegt u [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor informatie over de instellingen die u met dit beleid kunt configureren.
 
 > [!NOTE]
 > Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten. Zie Een aangepast Wi-Fi-profiel met een vooraf gedeelde sleutel configureren verderop in dit onderwerp voor meer informatie.
@@ -194,7 +194,7 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
    |Naam van de instelling|Details|
     |--------|--------------------|
     |**Naam van de instelling**|Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
-    |**Beschrijving van de instelling**|Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
+    |**Beschrijving van instelling**|Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
     |**Gegevenstype**|Selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. Kies uit: **tekenreeks, tekenreeks (XML), datum en tijd, geheel getal, drijvende komma** en **booleaanse waarde**.|
     |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
@@ -253,11 +253,11 @@ Hoewel Wi-Fi-profielen voor Android-apparaten door Intune worden ondersteund, on
 
 4.  Wanneer u klaar bent, slaat u het beleid op en implementeert u het beleid op de betreffende Android-apparaten. Het nieuwe Wi-Fi-profiel wordt weergegeven in de lijst met verbindingen op het apparaat.
 
-### Zie tevens
+### Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

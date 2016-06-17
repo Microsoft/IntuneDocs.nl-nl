@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor configuratiebeleid voor Windows Team in Microsoft Intune | Microsoft Intune
+title: Instellingen voor het configuratiebeleid voor Windows Team| Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Instellingen voor configuratiebeleid voor Windows Team in Microsoft Intune
-Gebruik het **algemene configuratiebeleid voor Windows 10 Team** om instellingen te configureren voor ingeschreven Windows 10 Team-apparaten, zoals de Microsoft Surface Hub.
+Gebruik het **algemene configuratiebeleid voor Windows 10 Team** om instellingen te configureren voor geregistreerde Windows 10 Team-apparaten, zoals de Microsoft Surface Hub.
 
 |Naam van de instelling|Details|
 |----------------|-----------|
@@ -36,14 +36,14 @@ Gebruik het **algemene configuratiebeleid voor Windows 10 Team** om instellingen
 |**Operationeel inzicht van Azure inschakelen**|Operationeel inzicht van Azure, onderdeel van de Microsoft Operations Manager-suite, verzamelt, bewaart en analyseert logbestandgegevens van Windows 10 Team-apparaten.<br /><br />Als u verbinding wilt maken met Operationeel inzicht van Azure, moet u een **Werkruimte-id** en een **Werkruimtesleutel** opgeven.|
 |**Draadloze Miracast-projectie inschakelen**|Schakel deze optie in als u wilt dat het Windows 10 Team-apparaat Miracast-compatibele apparaten gebruikt om te projecteren.<br /><br />Als u deze optie inschakelt, selecteer dan bij **Miracast-kanaal kiezen** het Miracast-kanaal dat wordt gebruikt om inhoud te projecteren.|
 |**Kiezen welke vergaderingsinformatie wordt weergegeven op het welkomstscherm**|Als u deze optie inschakelt, kunt u de informatie kiezen die wordt weergegeven op de tegel **Vergaderingen** van het scherm **Welkom**. U kunt het volgende doen:<br /><br />-   **Alleen de organisator en tijd weergeven**<br />-   **Organisator, tijd en onderwerp weergeven (onderwerp verborgen bij privévergaderingen)**|
-|**URL naar de achtergrondafbeelding van het vergrendelingsscherm**|Schakel deze instelling in om via de URL die u opgeeft, een aangepaste achtergrond weer te geven op het scherm **Welkom** van Windows 10 Team-apparaten.<br /><br />De afbeelding moet een bestand met png-indeling zijn en de URL moet beginnen met **https://**.|
+|**URL naar de achtergrondafbeelding van het vergrendelingsscherm**|Schakel deze instelling in om via de URL die u opgeeft, een aangepaste achtergrond weer te geven op het scherm **Welkom** van Windows 10 Team-apparaten.<br /><br />De afbeelding moet een bestand met PNG-indeling zijn en de URL moet beginnen met **https://**.|
 
 
-### Zie tevens
+### Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

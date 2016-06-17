@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
+title: Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -26,9 +26,13 @@ ms.suite: ems
 ---
 
 
-# Wat gebeurt er als u de inschrijving van uw apparaat bij Intune ongedaan maakt?
+# Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?
 
-Wanneer u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
+Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
+
+-   U maakt de registratie van uw apparaat bij Intune ongedaan. Dit betekent dat het apparaat niet meer wordt beheerd door uw IT-beheerder. 
+
+-   U hebt geen toegang meer tot bedrijfsgegevens en -resources.
 
 -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
@@ -36,15 +40,13 @@ Wanneer u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt, geb
 
 -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
 
--   Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
+Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgehaald en u de registratie van uw apparaat ongedaan maakt, wordt uw apparaat niet meer in de bedrijfsportal weergegeven. 
 
-Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgehaald en u de inschrijving van uw apparaat ongedaan maakt, wordt uw apparaat niet meer in de bedrijfsportal weergegeven. 
+Zie [De registratie van uw apparaat bij Intune ongedaan maken met de bedrijfsportal-app](unenroll-your-device-from-intune-android.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
-Zie [De inschrijving van uw apparaat bij Intune ongedaan maken met de bedrijfsportal-app](unenroll-your-device-from-intune-android.md) voor instructies om de inschrijving van uw apparaat ongedaan te maken.
-
-### Zie tevens
+### Zie ook
 [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

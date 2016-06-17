@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Apparaten in bedrijfseigendom met IMEI (International Mobile Equipment Identity) opgeven | Microsoft Intune
+title: Apparaten in bedrijfseigendom met een IMEI-nummer opgeven | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -25,10 +25,10 @@ ms.suite: ems
 
 ---
 
-# Apparaten in bedrijfseigendom met IMEI (International Mobile Equipment Identity) opgeven
-Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune beheerders in staat om IMEI-nummers (International Mobile Equipment Identity-nummers) te importeren voor mobiele apparaten die hierover beschikken. Wanneer apparaten met geïmporteerde IMEI-nummers zijn ingeschreven in Intune, worden deze gelabeld als bedrijfseigendom, zodat op die apparaten andere beleidsregels kunnen worden toegepast dan op persoonlijke apparaten.
+# Apparaten in bedrijfseigendom met een IMEI-nummer opgeven
+Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune beheerders in staat om IMEI-nummers (International Mobile Equipment Identity-nummers) te importeren voor mobiele apparaten die hierover beschikken. Zodra apparaten met geïmporteerde IMEI-nummers zijn geregistreerd bij Intune, kunnen ze worden weergegeven onder **Groepen** > **Overzicht** > **Alle apparaten** > **Vooraf geregistreerde bedrijfsapparaten** > **Op IMEI (alle platformen)**.
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Vooraf ingeschreven bedrijfsapparaten** &gt; **Op IMEI (alle platforms)** en klik op **Apparaten toevoegen...**. U kunt apparaten op twee manieren toevoegen:
+1. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle vooraf geregistreerde bedrijfsapparaten** &gt; **Op IMEI (alle platformen)** en kies vervolgens **Apparaten toevoegen…**. U kunt apparaten op twee manieren toevoegen:
 
     -   **Een csv-bestand met serienummers uploaden**: maak een lijst met door komma's gescheiden waarden (csv) van twee kolommen zonder koptekst voor maximaal 5000 apparaten of 5 MB per CSV-bestand.
 
@@ -36,7 +36,7 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
         |-|-|
         |&lt;IMEI 1&gt;|&lt;Details apparaat 1&gt;|
         |&lt;IMEI 2&gt;|&lt;Details apparaat 2&gt;|
-        Dit csv-bestand ziet er in een teksteditor als volgt uit:
+        Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
         ```
         AA-BBBBBB-CCCCCC-D,PO 1234
@@ -47,13 +47,13 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 
    *Details* zijn voor administratief gebruik, zodat u weet welk IMEI-nummer is gekoppeld aan een apparaat. Deze informatie wordt niet naar het apparaat verzonden, maar weergegeven in de Intune-console.
 
-2.   Klik op **Volgende**.
-3.  In het deelvenster **Apparaten controleren** kunt u controleren welke IMEI-nummers van apparaten er worden geïmporteerd. U kunt ook bepalen of de **Details** moeten worden overschreven voor IMEI-nummers die opnieuw worden geïmporteerd. Schakel het selectievakje **Overschrijven** uit als u de huidige details wilt behouden. Klik op **Voltooien** om de IMEI-nummers te importeren.
-4.  De toegevoegde IMEI-nummers en beschrijvingen worden toegevoegd aan de lijst **Op IMEI (alle platforms)**.
+2.   Kies **Volgende**.
+3.  In het deelvenster **Apparaten controleren** kunt u controleren welke IMEI-nummers van apparaten er worden geïmporteerd. U kunt ook bepalen of de **Details** moeten worden overschreven voor IMEI-nummers die opnieuw worden geïmporteerd. Schakel het selectievakje **Overschrijven** uit als u de huidige details wilt behouden. Kies **Voltooien** om de IMEI-nummers te importeren.
+4.  De toegevoegde IMEI-nummers en beschrijvingen worden toegevoegd aan de lijst **Op IMEI (alle platformen)**.
 
-Wanneer het apparaat met het betreffende IMEI-nummer wordt ingeschreven, gewoonlijk wanneer een gebruiker de bedrijfsportal-app installeert en het inschrijvingsproces voltooit, wordt het apparaat gemarkeerd als eigendom van het bedrijf en weergegeven als ingeschreven in de groep **IMEI-apparaten**.
+Wanneer het apparaat met het betreffende IMEI-nummer wordt geregistreerd, gewoonlijk wanneer een gebruiker de bedrijfsportal-app installeert en het registratieproces voltooit, wordt het apparaat gemarkeerd als eigendom van het bedrijf en weergegeven als geregistreerd in de groep **IMEI-apparaten**.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO5-->
 
 

@@ -15,7 +15,7 @@ ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -42,9 +42,9 @@ Wanneer u de bedrijfsportal gebruikt om uw iPhone of iPad opnieuw in te stellen,
 
 -   Uw bedrijfse-mailaccount wordt verwijderd en niet-opgeslagen e-mailberichten worden verwijderd.
 
-### Zie tevens
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+### Zie ook
+[Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

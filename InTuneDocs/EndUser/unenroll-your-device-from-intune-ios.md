@@ -15,7 +15,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,9 +28,9 @@ ms.suite: ems
 
 # De registratie van het apparaat bij Intune ongedaan maken
 
-Wanneer u uw iOS-apparaat bij Intune uitschrijft, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
+Wanneer u uw iOS-apparaat bij Intune uitschrijft, heeft uw apparaat geen toegang meer tot bedrijfsbronnen en wordt uw apparaat niet meer beheerd met Intune.
 
-Voer deze stappen uit of bekijk deze [video](http://aka.ms/kfz8j1) om uw apparaat uit te schrijven bij in Intune:
+Voer deze stappen uit of bekijk deze [video](http://aka.ms/kfz8j1) om uw apparaat uit te schrijven bij Intune:
 
 1.  Selecteer in de bedrijfsportal-app onder **Mijn apparaten**het apparaat dat u wilt uitschrijven.
 
@@ -54,9 +54,9 @@ Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
 -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
 
-### Zie tevens
+### Zie ook
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

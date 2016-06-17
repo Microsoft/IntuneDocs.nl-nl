@@ -28,12 +28,12 @@ ms.suite: ems
 
 # De registratie van het apparaat bij Intune ongedaan maken
 
-Als u uw Windows-apparaat hebt ingeschreven bij Intune, maar het apparaat niet meer wilt gebruiken voor werk of school en geen toegang meer nodig hebt tot de e-mail, apps of andere bronnen van uw werk of school, moet u zich uitschrijven.   Wanneer de registratie van uw apparaat bij Intune ongedaan is gemaakt, hebt u geen toegang meer tot de bronnen. Zie [Wat gebeurt er wanneer u uw apparaat uitschrijft bij Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) voor meer informatie over wat er gebeurt als u uw apparaat uitschrijft..
+Als u uw Windows-apparaat hebt ingeschreven bij Intune, maar het apparaat niet meer wilt gebruiken voor werk of school en geen toegang meer nodig hebt tot de e-mail, apps of andere bronnen van uw werk of school, moet u zich uitschrijven. Wanneer de registratie van uw apparaat bij Intune ongedaan is gemaakt, hebt u geen toegang meer tot de bronnen. Zie [Wat gebeurt er wanneer u uw apparaat uitschrijft bij Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) voor meer informatie over wat er gebeurt als u uw apparaat uitschrijft.
 
-Volg voor het uitschrijven van uw apparaat de stappen die zijn bedoeld voor het apparaat dat u gebruikt:
+Als u uw apparaat wilt uitschrijven, gebruikt u de koppeling in de bovenstaande sectie In dit artikel die overeenkomt met het type apparaat dat u gebruikt:
 
 -   [Uw Windows 10-apparaat uitschrijven](#unenroll-your-windows-10-device)
--   [Uw Windows 8.1-apparaat uitschrijven](#unenroll-your-windows-8-1-computer)
+-   [Uw Windows 8.1-computer uitschrijven](#unenroll-your-windows-8-1-computer)
 -   [Uw Windows Phone 8.1-apparaat uitschrijven](#unenroll-your-windows-phone-8-1-device)
 
 ## Uw Windows 10-apparaat uitschrijven
@@ -46,29 +46,29 @@ Volg voor het uitschrijven van uw apparaat de stappen die zijn bedoeld voor het 
 
 4.  Tik op **Verwijderen** &gt; **Verwijderen**.
 
-## Uw Windows 8.1-apparaat uitschrijven
+## Uw Windows 8.1-computer uitschrijven
 
 1.  Ga naar **Pc-instellingen** &gt; **Netwerk** &gt; **Werkplek**.
 
-2.  Tik onder **Werkplek toevoegen** op **Verlaten**.
+2.  Tik onder **Workplace Join** op **Verlaten**.
 
 3.  Tik onder **Apparaatbeheer inschakelen** op **Uitschakelen**.
 
-4.  Tik in het pop-upvenster dat nu wordt geopend, op **Uitschakelen**.
+4.  Tik in het pop-upvenster dat wordt geopend, op **Uitschakelen**.
 
 ## Uw Windows Phone 8.1-apparaat uitschrijven
 
-1.  Ga naar **Instellingen** &gt; **Werkplek**.
+1.  Tik op **Instellingen** &gt; **Werkplek**.
 
 2.  Tik op het werkplekaccount dat u wilt uitschrijven.
 
-3.  Tik boven in het scherm op **Verwijderen**.
+3.  Tik onder in het scherm op **Verwijderen**.
 
 4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.
 
-### Zie tevens
+### Zie ook
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

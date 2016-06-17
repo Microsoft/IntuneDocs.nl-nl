@@ -18,14 +18,12 @@
 ### [Gebruikers en apparaten organiseren](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Beleid maken en een app publiceren](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [De bedrijfsportal aanpassen](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Mobiele apparaten inschrijven en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Mobiele apparaten registreren en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](post-configuration-tasks.md)
 
-<!--
-## [Choose how to manage devices](choose-how-to-manage-devices.md)
-### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
--->
+## [Kiezen hoe u apparaten beheert](choose-how-to-manage-devices.md)
+### [Beheermogelijkheden voor mobiele apparaten](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Beheermogelijkheden voor Windows-pc’s](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Implementatiefasen voor Intune-implementaties](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Projectbereik](project-scope.md)
@@ -34,12 +32,12 @@
 ### [Implementatie in het bedrijf](enterprise-rollout.md)
 ### [Bewerkingen en onderhoud](operations-and-maintenance.md)
 
-
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Implementeren en gebruiken](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Apps ontwikkelen en aanpassen](/intune/develop/intune-app-sdk)
 # [Problemen oplossen](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor Windows-beleid in Microsoft Intune | Microsoft Intune
+title: Windows-beleidsinstellingen | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,30 +25,36 @@ ms.suite: ems
 
 ---
 
-# Instellingen voor Windows-beleid in Microsoft Intune
-Gebruik de **algemene regels voor het Windows-configuratiebeleid** om instellingen te configureren voor ingeschreven Windows 8- en Windows 8.1-apparaten:
+# Windows-beleidsinstellingen in Microsoft Intune
+Gebruik de **algemene regels voor het Windows-configuratiebeleid (Windows 8.1 en later)** om instellingen te configureren voor geregistreerde Windows 8.1- en Windows 8-apparaten:
+
+## Toepasselijkheidsinstellingen
+
+|Naam van de instelling|Details|
+|----------------|----------------------------------|
+|**Alle configuraties toepassen op Windows 10**|Hiermee kunt de instellingen in dit beleid naast Windows 8 en Windows 8.1-apparaten toepassen op Windows 10-apparaten.|
 
 ## Beveiligingsinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
 |**Vereist wachtwoordtype**|Hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek.|Ja|Ja|
-|**Vereist wachtwoordtype – minimumaantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets er in het wachtwoord moeten worden opgenomen. Voor iOS-apparaten geeft u hiermee echter het aantal symbooltekens aan dat in het wachtwoord moet zijn opgenomen.|Ja|Ja|
+|**Vereist wachtwoordtype – minimumaantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets moeten worden opgenomen in het wachtwoord. Voor iOS-apparaten geeft u hiermee echter het aantal symbooltekens aan dat moet zijn opgenomen in het wachtwoord.|Ja|Ja|
 |**Minimale wachtwoordlengte**<sup>1</sup>|Hiermee configureert u de minimaal vereiste lengte (in tekens) voor het wachtwoord op apparaten.|Ja|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee worden de gegevens op het apparaat gewist als het aanmelden dit aantal keren mislukt.|Ja|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee kiest u het aantal minuten dat een apparaat inactief moet zijn voordat er een wachtwoord is vereist om het apparaat te ontgrendelen.| Ja|Ja|
-|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
+|**Verlopen van wachtwoorden (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of de gebruiker eerder gebruikte wachtwoorden kan configureren.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|Ja|Ja|
 |**Afbeeldingswachtwoord en PIN toestaan**|Hiermee kunt het gebruik van een afbeeldingswachtwoord en pincode op het apparaat toestaan. Met een afbeeldingswachtwoord kan de gebruiker zich met gebaren op een afbeelding aanmelden. Met een pincode kunnen gebruikers zich snel met 4 cijfers aanmelden.|Ja|Ja|
-<sup>1</sup> Wanneer u beleidsregels voor de wachtwoordlengte implementeert op Windows RT-apparaten, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
+<sup>1</sup> Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows RT, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
 
 ## Versleutelingsinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup>|Vereist dat bestanden op het apparaat zijn versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**..|Ja|Nee|
-<sup>1</sup> Aanvullende informatie voor Windows 8.1-apparaten
+|**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup>|Vereist dat bestanden op het apparaat zijn versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Nee|
+<sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
 
 -   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](http://support.microsoft.com/kb/3013816) installeren.
 
@@ -114,11 +120,11 @@ Gebruik de **algemene regels voor het Windows-configuratiebeleid** om instelling
 
 
 
-### Zie tevens
+### Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

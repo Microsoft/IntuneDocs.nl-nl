@@ -15,7 +15,7 @@ ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -32,6 +32,6 @@ Neem contact op met uw IT-beheerder om te helpen het apparaat opnieuw aan te slu
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

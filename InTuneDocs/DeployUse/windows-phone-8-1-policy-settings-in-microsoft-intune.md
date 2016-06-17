@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor Windows Phone 8.1-beleid in Microsoft Intune | Microsoft Intune
+title: Beleidsinstellingen voor Windows Phone 8.1 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,15 +25,21 @@ ms.suite: ems
 
 ---
 
-# Instellingen voor Windows Phone 8.1-beleid in Microsoft Intune
+# Beleidsinstellingen voor Windows Phone 8.1 in Microsoft Intune
 
 ## Algemene configuratie-instellingen
 
-Gebruik het **algemene configuratiebeleid voor Windows Phone** om de volgende instellingen te configureren voor Windows Phone 8.1-apparaten:
+Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 en later)** om de volgende instellingen te configureren voor apparaten met Windows Phone 8.1:
 
--   **Beveiligingsinstellingen voor mobiele apparaten**: hier kiest u uit een lijst met vooraf gedefinieerde instellingen waarmee u een bereik aan functies en functionaliteiten op het apparaat kunt beheren.
+-   **Beveiligingsinstellingen voor mobiele apparaten** : hier kiest u uit een lijst met vooraf gedefinieerde instellingen waarmee u een bereik aan functies en functionaliteiten op het apparaat kunt beheren.
 
--   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met toepassingen die compatibel of niet compatibel zijn in uw bedrijf. Windows Phone-apparaten kunnen de installatie van deze apps blokkeren of toestaan.
+-   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met apps die compatibel of niet compatibel zijn in uw bedrijf. Windows Phone-apparaten kunnen de installatie van deze apps blokkeren of toestaan.
+
+### Toepasselijkheidsinstellingen
+
+|Naam van de instelling|Details|
+|----------------|----------------------------------|
+|**Alle configuraties toepassen op Windows 10**|Hiermee kunt de instellingen in dit beleid naast Windows Phone 8.1-apparaten toepassen op Windows 10 Mobile-apparaten.|
 
 ### Wachtwoordinstellingen
 
@@ -46,7 +52,7 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone** om de volgende in
 |**Eenvoudige wachtwoorden toestaan**|Eenvoudige wachtwoorden zijn onder andere '0000' en '1234'|Ja|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u het aantal keren op dat een onjuist wachtwoord kan worden onthouden voordat het apparaat wordt gewist.|Ja|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.|Ja|Ja|
-|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
+|**Verlopen van wachtwoorden (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u aan hoeveel eerder gebruikte wachtwoorden er worden onthouden.|Ja|Ja|
 
@@ -54,7 +60,7 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone** om de volgende in
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Versleuteling vereisen voor mobiel apparaat**|Hiervoor is vereist dat de gegevens op ondersteunde mobiele apparaten moeten worden versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**..|Ja|Ja|
+|**Versleuteling vereisen voor mobiel apparaat**|Hiervoor is vereist dat de gegevens op ondersteunde mobiele apparaten moeten worden versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Ja|
 
 ### Systeeminstellingen
 
@@ -108,7 +114,7 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone** om de volgende in
 |**Kopiëren en plakken toestaan**|Hiermee staat u kopiëren en plakken op apparaten toe.|Nee|Ja|
 
 ### Instellingen voor compatibele en niet-compatibele apps
-Geef aan de hand van de volgende informatie een lijst met compatibele of niet-compatibele apps op in de lijst **Compatibele &amp; niet-compatibele apps**:
+In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens:
 
 > [!NOTE]
 > Een enkele beleidsregel kan alleen een lijst met compatibele of een lijst met niet-compatibele apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
@@ -121,8 +127,7 @@ Geef aan de hand van de volgende informatie een lijst met compatibele of niet-co
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
-> [!IMPORTANT]
-> Als u een lijst met toegestane apps voor Windows Phone 8.1-apparaten opgeeft, moet u de Bedrijfsportal-app aan deze lijst toevoegen, anders wordt deze app geblokkeerd.
+> [!IMPORTANT] Als u een lijst met toegestane apps voor Windows Phone 8.1-apparaten opgeeft, moet u de bedrijfsportal-app aan deze lijst toevoegen, anders wordt deze app geblokkeerd.
 
 
 ### Referentie-informatie voor compatibele en niet-compatibele apps
@@ -139,9 +144,9 @@ Open de pagina van de app en kopieer de URL naar het klembord. U kunt deze nu al
 ## Aangepaste beleidsinstellingen 
 Gebruik het **aangepaste configuratiebeleid voor Windows Phone** van Microsoft Intune om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om de functies voor **Windows Phone 8.1-apparaten** te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Windows Phone-instellingen implementeren die niet met het algemene configuratiebeleid van Intune kunnen worden geconfigureerd. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor informatie over de instellingen die u met dit beleid kunt configureren..
+Op deze manier kunt u Windows Phone-instellingen implementeren die niet met het algemene configuratiebeleid van Intune kunnen worden geconfigureerd. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor informatie over de instellingen die u met dit beleid kunt configureren.
 
-Zie [MDM-protocoldocumentatie voor Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx) voor meer informatie over het maken van OMA-URI-instellingen voor Windows Phone-apparaten..
+Zie [MDM-protocoldocumentatie voor Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx) voor meer informatie over het maken van OMA-URI-instellingen voor Windows Phone-apparaten.
 
 ### Algemene instellingen
 
@@ -164,11 +169,11 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
     |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
-### Zie tevens
+### Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

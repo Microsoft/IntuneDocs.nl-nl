@@ -32,17 +32,16 @@ Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps do
 
 **Vereiste apps**: apps die door de beheerder worden vereist en die op het apparaat worden geïnstalleerd met minimale tussenkomst van de gebruiker, afhankelijk van het platform.
 
-**Vereiste apps**: apps die zijn opgegeven in de lijst van de bedrijfsportal-app en die een gebruiker optioneel kan installeren.
+**Beschikbare apps**: apps die zijn opgegeven in de lijst van de bedrijfsportal-app en die een gebruiker optioneel kan installeren.
 
-**Beheerde apps**: apps die kunnen worden beheerd via beleid en die zijn ingepakt door Intune of met de Intune Mobile Application Management (MAM) Software Development Kit (SDK) zijn gebouwd. Deze apps kunnen worden beheerd door Intune en hierop kan een toepassingsbeleid worden toegepast.
+**Beheerde apps**: apps die kunnen worden beheerd via beleid en die zijn ingepakt door Intune of met de Intune Mobile Application Management (MAM) Software Development Kit (SDK) zijn gebouwd. These apps can be managed by Intune, and application policies can be applied to them.
 
-**Niet-beheerde apps**: apps die kunnen worden beheerd via beleid en die niet zijn ingepakt in Intune of waarin de Intune MAM SDK niet is opgenomen. Het toepassingsbeleid kan niet worden toegepast op deze apps.
+**Niet-beheerde apps**: apps die kunnen worden beheerd via beleid en die niet zijn ingepakt in Intune of waarin de Intune MAM SDK niet is opgenomen. Application policies cannot be applied to these apps.
 
-###Zie tevens
-[Hoe uw Android-gebruikers hun apps downloaden](how-your-android-users-get-their-apps.md)</br>
-[Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
+###Zie ook [Hoe uw Android-gebruikers apps downloaden](how-your-android-users-get-their-apps.md).</br>
+[Hoe uw iOS-gebruikers apps downloaden](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 
