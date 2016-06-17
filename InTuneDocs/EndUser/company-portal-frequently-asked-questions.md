@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Veelgestelde vragen over de bedrijfsportal | Microsoft Intune
+title: Over de bedrijfsportal | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -25,80 +25,85 @@ ms.suite: ems
 
 ---
 
-# Veelgestelde vragen over de bedrijfsportal
+# Over de bedrijfsportal
 
+## Wat is de bedrijfsportalwebsite en wat kunt u ermee doen?
+De Microsoft Intune-bedrijfsportal biedt u toegang tot de gegevens en apps van uw bedrijf of school. U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
+- Door de bedrijfsportal-app op uw apparaat te installeren: Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren. Hiervoor kunnen verschillende methoden worden gebruikt.
+- Door naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) te gaan die uw IT-beheerd heeft ingesteld. 
 
-## Wat is de bedrijfsportal?
-De bedrijfsportal is de interface voor uw bedrijf waarmee u uw zakelijke computers en apparaten kunt beheren, of waarmee u uw persoonlijke computers of apparaten kunt beheren die u wilt gebruiken op kantoor.  De bedrijfsportal kan een website zijn die u bezoekt of een app die u installeert op uw apparaat.
+Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken zowel via de app als de website uitvoeren. Enkele voorbeelden:
 
-## Wat kan ik doen met de bedrijfsportal?
-Als u uw computer of apparaat toevoegt aan de bedrijfsportal, kunt u bedrijfsapps zoeken en installeren, andere toegevoegde apparaten beheren en de contactgegevens van uw IT-beheerder zoeken.
+- Uw apparaten registreren
+- De status van uw apparaten weergeven
+- Apps downloaden die uw bedrijf of school beschikbaar maakt
+- Naam van uw apparaat wijzigen
+- Uw pincode of wachtwoord opnieuw instellen
+- Contact opnemen met uw IT-afdeling voor ondersteuning
+
+Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app kunt doen, kiest u een van de volgende koppelingen:
+
+> [!div class="op_single_selector"]
+- [Android](using-your-android-device-with-intune.md)
+- [iOS en Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows](using-your-windows-device-with-intune.md)
+- [Bedrijfsportalwebsite](using-the-intune-company-portal-website.md)
 
 ## Wat gebeurt er wanneer ik een computer of apparaat toevoeg aan de bedrijfsportal?
-Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn dat er software wordt geïnstalleerd of een app wordt gedownload (afhankelijk van het apparaat).  Bovendien geeft u de IT-beheerder toestemming om uw apparaat te beheren om de bedrijfsinformatie op het apparaat te beschermen.  
+Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn dat er software wordt geïnstalleerd of een app wordt gedownload (afhankelijk van het apparaat).  Bovendien geeft u de IT-beheerder toestemming om uw apparaat te beheren om de bedrijfsinformatie op het apparaat te beschermen.
+
+Voor meer informatie over wat de IT-beheerder wel en niet op uw apparaat kan zien, gebruikt u de koppeling die overeenkomt met het type apparaat dat u gebruikt:
+
+> [!div class="op_single_selector"]
+- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS en Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Wat voor computers of apparaten kan ik toevoegen aan de bedrijfsportal?
 
--   Windows 10 Mobile
-
--   Windows 10 Desktop
-
--   Windows Phone 8,1
-
--   Windows 8.1
-
--   Windows RT-apparaten
-
--   Windows Phone 8
-
 -   iPhones, iPads en apparaten met Mac OS X
 
--   Android-apparaten
+-   Mobiele Android-apparaten
 
-## Bedrijfsportal-app wordt niet ondersteund
-Deze versie van de bedrijfsportal kan niet meer worden gebruikt. Installeer de **Bedrijfsportal**-app uit de Windows Store om door te gaan.
+-   Windows-apparaten
+    -   10 Mobile
+    -   Windows 10 Desktop
+    -   Windows Phone 8,1
+    -   Windows 8.1
+    -   Windows RT-apparaten
+    -   Windows Phone 8
+    -   iPhones, iPads en apparaten met Mac OS X
+    -   Mobiele Android-apparaten
+
 
 ## Kan ik een computer of een apparaat verwijderen uit de bedrijfsportal?
-Ja, kunt u een computer of een apparaat verwijderen uit de bedrijfsportal of deze opnieuw instellen.  Er is een verschil tussen **verwijderen** en **opnieuw instellen**:
+Ja, kunt u een computer of een apparaat verwijderen uit de bedrijfsportal of deze opnieuw instellen. Er is een verschil tussen **verwijderen** en **opnieuw instellen**:
 
--   Wanneer u een computer of apparaat verwijdert, hebt u vanaf dat apparaat niet langer toegang tot de bedrijfsportal en worden bepaalde bedrijfsgegevens mogelijk verwijderd van uw apparaat.
+Wanneer u een computer of apparaat *verwijdert*, wordt de registratie van uw apparaat bij Intune ongedaan gemaakt. Zodra u de registratie ongedaan hebt gemaakt, is de bedrijfsportal niet meer toegankelijk vanaf dat apparaat en worden bepaalde bedrijfsgegevens mogelijk verwijderd van uw apparaat. Als u wilt weten hoe u uw apparaat uit de bedrijfsportal verwijdert, kiest u een van de volgende koppelingen:
 
--   Wanneer u een computer of apparaat opnieuw instelt, probeert de bedrijfsportal de standaardinstellingen van de fabrikant opnieuw in te stellen op uw computer of apparaat.  Hierdoor kunnen alle gegevens, zowel uw bedrijfsgegevens als uw persoonlijke gegevens, worden verwijderd.
+> [!div class="op_single_selector"]
+- [Android](unenroll-your-device-from-intune-android.md)
+- [iOS en Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Windows](unenroll-your-device-from-intune-windows.md)
+
+Wanneer u een computer of apparaat *opnieuw instelt*, probeert de bedrijfsportal de standaardinstellingen van de fabrikant opnieuw in te stellen op uw computer of apparaat. Wanneer uw apparaat opnieuw wordt ingesteld, worden alle bedrijfsgegevens en persoonlijke gegevens verwijderd van het apparaat. Als u uw apparaat bent verloren, kunt u het apparaat ook extern opnieuw instellen via website van de bedrijfsportal.
+
+Kies een van de volgende koppelingen om te zien hoe u uw apparaat opnieuw instelt:
+
+> [!div class="op_single_selector"]
+- [Android](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS en Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+- [Uw apparaat opnieuw instellen op de website van de bedrijfsportal](reset-your-device-cpwebsite.md)
 
 ## Ik zie niet al mijn apparaten in de bedrijfsportal
 Als u een apparaat wilt bekijken, moet dit zijn toegevoegd aan de bedrijfsportal. Volg de instructies van uw beheerder om naar de bedrijfsportal te gaan en voer de stappen uit voor uw apparaat. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
 
-## Ik moet een nieuwe versie van de bedrijfsportal installeren
-Als uw versie van de bedrijfsportal niet langer wordt ondersteund, of als er een nieuwere versie van de bedrijfsportal beschikbaar is, moet u de volgende procedures volgen om uw apparaat bij te werken.
-
-### Uw Windows-apparaat bijwerken:
-
-1.  Navigeer naar de Windows Store en zoek naar **bedrijfsportal**.
-
-2.  Volg de installatie-instructies.
-
-    > [!NOTE]
-    > Als u geen toegang krijgt tot de Windows Store, neemt u contact op met uw beheerder.
-
-### Uw iOS-apparaat bijwerken:
-
-De Apple App Store geeft een melding wanneer er een nieuwe versie van de bedrijfsportal beschikbaar is. Volg de instructies in de melding om uw apparaat bij te werken.
-
-## Er wordt in een foutbericht gemeld dat mijn computer al is ingeschreven
-Dit betekent dat de computer al is toegevoegd aan de bedrijfsportal, maar nog niet is gekoppeld aan uw gebruikersaccount. Volg deze procedure om de computer te koppelen aan uw gebruikersaccount en het proces te voltooien.
-
-### De computer koppelen:
-
-1.  Klik op **Start** op de computer die u wilt koppelen aan uw account en klik vervolgens op **Microsoft Intune Center**..
-
-2.  Open de bedrijfsportal.
-
-3.  Volg de aanwijzingen om de computer te koppelen aan uw gebruikersaccount.
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
