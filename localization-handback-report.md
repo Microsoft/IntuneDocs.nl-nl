@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md) | OutofSyncHandedBackSuccess | [Details](#56edeafa9221b3574ceaba269891dfb92df44408275)
 
 ## Item Details
-##### <a name='56edeafa9221b3574ceaba269891dfb92df44408275'></a> Source: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/620b2af2ae3497d2cd7df138d962750d594d6d39/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.nl-nl.xlf)
-* Handoff Datetime: 2016-06-09 00:48:28
-* Handoff Reason: Include
-* Archive File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/41e4247b1e0c84b8dc28178e4537a4fe92e9faf2/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.nl-nl.xlf)
-* Archive Datetime: 2016-06-09 02:15:04
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/bceff0c24275cad2168efe562d7504a020282a92/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Current Handback File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/f5b83b09d83a2e4b41b8bb6bcf29306c02f3aed6/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.nl-nl.xlf)
-* Current Handback Datetime: 2016-06-17 22:16:21
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
