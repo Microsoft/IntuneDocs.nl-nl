@@ -67,14 +67,14 @@ Stel de waarde **Versleuteling** in de sleutel in om het beveiligingsgedrag op t
 
 - **Uit**: versleuteling is uitgeschakeld.
 
-> [AZURE.NOTE] Deze instelling heeft geen gevolgen voor ontsleuteling. Een versleuteld bestand, ongeacht of het is versleuteld met systeemeigen beveiliging of Pfile-beveiliging, kan worden ontsleuteld mits de gebruiker beschikt over uitpakrechten (**EXTRACT**).
+> [!Note] Deze instelling heeft geen gevolgen voor ontsleuteling. Een versleuteld bestand, ongeacht of het is versleuteld met systeemeigen beveiliging of Pfile-beveiliging, kan worden ontsleuteld mits de gebruiker beschikt over uitpakrechten (**EXTRACT**).
 
 - **Systeemeigen**: systeemeigen versleuteling wordt gebruikt. Bij Office-bestanden heeft het versleutelde bestand dezelfde extensie als het oorspronkelijke bestand. Een bestand met de bestandsnaamextensie .docx wordt bijvoorbeeld versleuteld als een bestand met de extensie .docx. Voor andere bestanden waarop systeemeigen beveiliging kan worden toegepast, wordt het bestand versleuteld als een bestand met de extensie in de indeling p*zzz*, waarbij *zzz* de oorspronkelijke bestandsextensie is. Txt-bestanden worden bijvoorbeeld versleuteld als een bestand met de extensie .ptxt. Hieronder vindt u een lijst met bestandsextensies waarop systeemeigen beveiliging kan worden toegepast.
 
 - **Pfile**: PFile-versleuteling wordt gebruikt. Aan het versleutelde bestand wordt .pfile toegevoegd aan de originele extensie. Na versleuteling heeft een txt-bestand bijvoorbeeld de extensie .txt.pfile.
 
 
-> [AZURE.NOTE] Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op &quot;Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
+> [!Note] Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op &quot;Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
 
 Als u een andere waarde of geen waarde instelt, wordt het standaardgedrag toegepast.
 

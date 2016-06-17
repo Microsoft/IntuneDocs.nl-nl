@@ -43,13 +43,13 @@ Dit onderwerp bevat twee verificatiemethoden met bijbehorende codevoorbeelden.
 
   Gebruik deze methode als u wilt dat de RMS-client een ADAL-verificatieprompt weergeeft als verificatie vereist is. Zie de sectie 'Interne verificatie' voor meer informatie over het configureren van uw toepassing.
 
-  >AZURE.NOTE Als u in uw toepassing momenteel AD RMS SDK 2.1 met de aanmeldhulp gebruikt, wordt aanbevolen de interne verificatiemethode te gebruiken als pad voor uw toepassingsmigratie.
+  > [!Note] Als u in uw toepassing momenteel AD RMS SDK 2.1 met de aanmeldhulp gebruikt, wordt aanbevolen de interne verificatiemethode te gebruiken als pad voor uw toepassingsmigratie.
 
 - **Externe verificatie** - OAuth-verificatie beheerd door uw toepassing.
 
   Gebruik deze methode als u wilt dat uw toepassing zijn eigen OAuth-verificatie gebruikt. Met deze methode oefent de RMS-client een door de toepassing gedefinieerde callback uit wanneer verificatie vereist is. Zie 'Externe verificatie' aan het eind van dit onderwerp voor een gedetailleerd voorbeeld.
 
-  >AZURE.NOTE Met externe verificatie wordt niet de mogelijkheid geïmpliceerd om de gebruiker te wijzigen. De RMS-client gebruikt altijd de standaardgebruiker voor een bepaalde RMS-tenant.
+  > [!Note] Met externe verificatie wordt niet de mogelijkheid geïmpliceerd om de gebruiker te wijzigen. De RMS-client gebruikt altijd de standaardgebruiker voor een bepaalde RMS-tenant.
 
 ## Interne verificatie
 

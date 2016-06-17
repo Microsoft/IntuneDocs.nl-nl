@@ -30,7 +30,7 @@ Dit onderwerp bevat informatie over het doel en de functies van de RMS-server, v
 
 **Azure RMS**: Zie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor meer informatie over het gebruik van de Azure Rights Management-service.
 
-> [AZURE.IMPORTANT] U wordt aangeraden uw toepassing te ontwikkelen en testen via Azure RMS.
+> [!IMPORTANT] U wordt aangeraden uw toepassing te ontwikkelen en testen via Azure RMS.
 
 **Windows Server**: Voor lokale servers kunt u vanaf Windows Server 2008 de RMS-service installeren en configureren door deze toe te voegen als een rol. Voor het installeren van de service op eerdere besturingssystemen downloadt u deze vanuit het Microsoft Downloadcentrum op [Microsoft Windows Rights Management Services met Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909).
 
