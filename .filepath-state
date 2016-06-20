@@ -128,6 +128,9 @@
   "575b8525b8b99d06358a911b8deb24ee5de48fe1": [
     "InTuneDocs\\DeployUse\\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md"
   ],
+  "d9504716817a753a87aa2f69884b5931731a7e2e": [
+    "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
+  ],
   "4ce694110ff38207d9112bd468691173b91837ff": [
     "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
   ],
@@ -873,6 +876,9 @@
   ],
   "0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a0": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-endpoint-protection-in-microsoft-intune.md"
+  ],
+  "3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-policies-in-microsoft-intune.md"
   ],
   "7363b60ac5a82e4712610927cbb8f46eef09a42b": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-policies-in-microsoft-intune.md"
@@ -2954,6 +2960,9 @@
   "79e07431c479746ed259690d1c2ea6ae542358aa": [
     "InTuneDocs\\EndUser\\your-device-is-missing-a-required-certificate-android.md"
   ],
+  "119a795697feb0cdbc2b93293cd66df7e77147cf": [
+    "InTuneDocs\\DeployUse\\add-apps.md"
+  ],
   "2a76daee73f0dd3c6219a4cf42f9bb00fd83f257": [
     "InTuneDocs\\DeployUse\\add-apps.md"
   ],
@@ -3109,6 +3118,9 @@
   ],
   "cb40e46e38063760b5af35c5f749139fa61c8ac8": [
     "InTuneDocs\\DeployUse\\media\\pol-sa-pc-policy-realtime.png"
+  ],
+  "a68cb85602bd585539147c7d7d38c0d906f2b1f7": [
+    "InTuneDocs\\DeployUse\\deploy-apps.md"
   ],
   "261264d9c586505af8673d2b74d00cf8ee286214": [
     "InTuneDocs\\DeployUse\\deploy-apps.md"
