@@ -128,6 +128,9 @@
   "575b8525b8b99d06358a911b8deb24ee5de48fe1": [
     "InTuneDocs\\DeployUse\\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md"
   ],
+  "479995dec5b161a23ce6a9afa4fa69862d8bf715": [
+    "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
+  ],
   "d9504716817a753a87aa2f69884b5931731a7e2e": [
     "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
   ],
@@ -205,6 +208,9 @@
   ],
   "06120af2deb97e3b0977b1a555212a50400b4eb1": [
     "InTuneDocs\\DeployUse\\TOC.md"
+  ],
+  "b8af36cef1bcb9077d0ab611a14fb88c0f458ece": [
+    "InTuneDocs\\DeployUse\\understand-microsoft-intune-operations-by-using-reports.md"
   ],
   "4d5dcd8fe62780818a1765f5d461770cfabf64e2": [
     "InTuneDocs\\DeployUse\\understand-microsoft-intune-operations-by-using-reports.md"
@@ -2233,6 +2239,9 @@
   "b2da5912b980dd3a4b0c1283ce071c6020a461e3": [
     "InTuneDocs\\GetStarted\\supported-web-browsers.md"
   ],
+  "65ddb1e455de7a9ccb4bcc702cde066ff74b594b": [
+    "InTuneDocs\\GetStarted\\what-to-know-before-you-start-microsoft-intune.md"
+  ],
   "2456d1f378ade046e5e0df9630544fe99342360d": [
     "InTuneDocs\\GetStarted\\what-to-know-before-you-start-microsoft-intune.md"
   ],
@@ -2602,6 +2611,9 @@
   ],
   "9e6af6165eb396969fe666307f9b7b81e9f708d0": [
     "InTuneDocs\\Understand\\media\\Email-Walkthrough\\Email-Walkthrough-9.png"
+  ],
+  "2b17ae45d4651c02821065ff1fc9475513a8f670": [
+    "InTuneDocs\\GetStarted\\domain-names-for-microsoft-intune.md"
   ],
   "340198b6ffeb8880fca82dfe52725196a39fd030": [
     "InTuneDocs\\GetStarted\\domain-names-for-microsoft-intune.md"
@@ -3283,6 +3295,9 @@
   ],
   "39f861c6bf3df8409c2138c119e37d5c07a5b7c8": [
     "InTuneDocs\\DeployUse\\find-a-pfn-for-per-app-vpn.md"
+  ],
+  "18c6ee47278e0935909d891d0467a96b4cefd25e": [
+    "InTuneDocs\\DeployUse\\per-app-vpn-for-android-pulse-secure.md"
   ],
   "ab88f6e67785c7ed81eb3c6a28d4fc7e5b2c2549": [
     "InTuneDocs\\DeployUse\\per-app-vpn-for-android-pulse-secure.md"
