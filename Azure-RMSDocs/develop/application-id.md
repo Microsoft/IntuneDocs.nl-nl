@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Procedure: een Azure-toepassings-id ophalen | Azure RMS
+title: "Procedure: een Azure-toepassings-id ophalen | Azure RMS"
 description: Als u een app met RMS-compatibiliteit wilt maken met Microsoft Rights Management SDK 4.2, moet u een overeenkomst met het RMS-team aangaan.
 keywords:
 author: bruceperlerms

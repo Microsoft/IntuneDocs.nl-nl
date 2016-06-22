@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Office-toepassingen: configuratie voor clients | Azure RMS
+title: "Office-toepassingen: configuratie voor clients | Azure RMS"
 description:
 keywords:
 author: cabailey

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Procedure: fout- en prestatieregistratie inschakelen | Azure RMS
+title: "Procedure: fout- en prestatieregistratie inschakelen | Azure RMS"
 description: De Microsoft Rights Management SDK 4.2 beheert de upload van diagnose- en prestatielogboeken via één apparaateigenschap.
 keywords:
 author: bruceperlerms

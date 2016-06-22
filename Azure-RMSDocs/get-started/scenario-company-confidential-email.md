@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scenario: een e-mailbericht met vertrouwelijke bedrijfsinformatie verzenden | Azure RMS
+title: "Scenario: een e-mailbericht met vertrouwelijke bedrijfsinformatie verzenden | Azure RMS"
 description:
 keywords:
 author: cabailey

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Procedure: ingebouwde rechten gebruiken| Azure RMS
+title: "Procedure: ingebouwde rechten gebruiken| Azure RMS"
 description: Bevat een overzicht van de ingebouwde rechten die RMS SDK 4.2 biedt en de gebruiksbeperkingen die een app moet afdwingen bij het naleven van deze beperkingen.
 keywords:
 author: bruceperlerms

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scenario: een Office-bestand delen met gebruikers in een andere organisatie | Azure RMS
+title: "Scenario: een Office-bestand delen met gebruikers in een andere organisatie | Azure RMS"
 description:
 keywords:
 author: cabailey

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scenario: bestanden op een bestandsshare van de server beveiligen | Azure RMS
+title: "Scenario: bestanden op een bestandsshare van de server beveiligen | Azure RMS"
 description:
 keywords:
 author: cabailey

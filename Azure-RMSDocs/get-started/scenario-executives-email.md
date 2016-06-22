@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scenario: leidinggevenden wisselen veilig vertrouwelijke informatie uit | Azure RMS
+title: "Scenario: leidinggevenden wisselen veilig vertrouwelijke informatie uit | Azure RMS"
 description:
 keywords:
 author: cabailey

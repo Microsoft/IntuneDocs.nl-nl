@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scenario: uw waardevolste bestanden (enkele) beveiligen | Azure RMS
+title: "Scenario: uw waardevolste bestanden (enkele) beveiligen | Azure RMS"
 description:
 keywords:
 author: cabailey

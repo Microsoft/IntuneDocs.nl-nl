@@ -1,12 +1,28 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Zelfstudie voor snel starten met Azure RMS - Stap 5 | Beschrijving van Azure RMS: De laatste stap van een zelfstudie voor het snel uitproberen van Microsoft Azure Rights Management voor uw organisatie in slechts 5 stappen die u in minder dan 15 minuten kunt uitvoeren.
-trefwoorden: auteur: cabailey manager: mbaldwin ms.datum: 09-05-2016 ms.ondewerp:aan-de-slag-artikel ms.prod: azure ms.service: rights-management ms.technologie: techgroup-id ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
+title: "Zelfstudie voor snel starten met Azure RMS - Stap 5 | AZURE RMS"
+description: "De laatste stap van een zelfstudie voor het snel uitproberen van Microsoft Azure Rights Management voor uw organisatie in slechts 5 stappen die u in minder dan 15 minuten kunt uitvoeren."
+keywords:
+author: cabailey
+manager: mbaldwin
+ms.date: 05/09/2016
+ms.topic: get-started-article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
 
-# optionele metagegevens
+# optional metadata
 
-ROBOTS: doelgroep: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
+ROBOTS:
+audience:
+ms.devlang:
+ms.reviewer: esaggese
+ms.suite: ems
+ms.tgt_pltfrm:
+ms.technology:
+ms.custom:
 
 ---
 

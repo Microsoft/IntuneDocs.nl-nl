@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scenario: het beheer over documenten die zijn opgeslagen in SharePoint behouden | Azure RMS
+title: "Scenario: het beheer over documenten die zijn opgeslagen in SharePoint behouden | Azure RMS"
 description:
 keywords:
 author: cabailey

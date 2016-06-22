@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Procedure: verificatie toevoegen aan uw app | Azure RMS
+title: "Procedure: verificatie toevoegen aan uw app | Azure RMS"
 description: Beschrijft de beginselen van gebruikersverificatie voor uw app met RMS-functionaliteit.
 keywords:
 author: bruceperlerms
