@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ Weet u niet zeker of deze AD RMS-migratie geschikt is voor uw organisatie?
 
 -   Zie [Wat is Azure Rights Management?](../understand-explore/what-is-azure-rms.md) voor een inleiding tot Azure RMS, de zakelijke problemen die ermee kunnen worden opgelost, hoe het eruitziet voor beheerders en gebruikers, en hoe het werkt.
 
--   Zie [Azure Rights Management en AD RMS vergelijken](../understand-explore/compare-azure-rms-ad-rms.md) voor een vergelijking van Azure RMS en AD RMS..
+-   Zie [Azure Rights Management en AD RMS vergelijken](../understand-explore/compare-azure-rms-ad-rms.md) voor een vergelijking van Azure RMS en AD RMS.
 
 ## Vereisten om te migreren van AD RMS naar Azure RMS
 Voordat u begint aan de migratie naar Azure RMS, moet u ervoor zorgen dat aan de volgende vereisten is voldaan en dat u eventuele beperkingen begrijpt.
@@ -66,7 +66,7 @@ Voordat u begint aan de migratie naar Azure RMS, moet u ervoor zorgen dat aan de
 
 - **Alle vereisten voor het uitvoeren van Azure RMS, met inbegrip van een Azure RMS-tenant (niet geactiveerd)**
 
-    Zie [Vereisten voor Azure Rights Management](../get-started/requirements-azure-rms.md)..
+    Zie [Vereisten voor Azure Rights Management](../get-started/requirements-azure-rms.md).
 
     Hoewel u een Azure RMS-tenant moet hebben voordat u vanuit AD RMS kunt migreren, raden we af de Rights Management-service vóór de migratie te activeren. Het migratieproces omvat deze stap nadat u sleutels en sjablonen hebt geëxporteerd vanuit AD RMS en deze hebt geïmporteerd in Azure RMS. Als Azure RMS echter al is geactiveerd, kunt u nog steeds migreren vanuit AD RMS.
 
@@ -77,7 +77,7 @@ Voordat u begint aan de migratie naar Azure RMS, moet u ervoor zorgen dat aan de
 
     - Groepen met e-mail in Azure Active Directory
 
-    Zie [Voorbereiden voor Azure Rights Management](prepare.md)..
+    Zie [Voorbereiden voor Azure Rights Management](prepare.md).
 
 
 - **Als u de functie Information Rights Management (IRM) van Exchange Server** (bijvoorbeeld transportregels en Outlook Web Access) of SharePoint Server met AD RMS hebt gebruikt:
@@ -101,7 +101,7 @@ Beperkingen:
 
 -   Als u samenwerkt met externe partners (bijvoorbeeld via vertrouwde gebruikersdomeinen of federatie), moeten zij ook migreren naar Azure RMS op hetzelfde moment als u dat doet of anders zo spoedig mogelijk daarna. Om toegang te blijven houden tot inhoud die uw organisatie voorheen beveiligde met AD RMS, moeten zij clientconfiguratiewijzigingen aanbrengen die vergelijkbaar zijn met de uwe en die worden vermeld in dit document.
 
-    Vanwege de mogelijke configuratieverschillen bij uw partners vallen de exacte instructies voor deze herconfiguratie buiten het bereik van dit document. Neem voor hulp contact op met de klantondersteuning van Microsoft.
+    Vanwege de mogelijke configuratieverschillen bij uw partners vallen de exacte instructies voor deze herconfiguratie buiten het bereik van dit document. [Neem contact op met Microsoft Ondersteuning](../get-started/information-support#support-options-and-community-resources) als u hulp nodig hebt.
 
 ## Overzicht van de stappen voor het migreren van AD RMS naar Azure RMS
 
@@ -185,6 +185,6 @@ Voor het starten van de migratie gaat u naar [Fase 1 - configuratie aan serverzi
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

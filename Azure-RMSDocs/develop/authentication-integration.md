@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: "Procedure: verificatie toevoegen aan uw app | Azure RMS"
+title: Uw app registreren en RMS inschakelen met Azure AD | Azure RMS
 description: Beschrijft de beginselen van gebruikersverificatie voor uw app met RMS-functionaliteit.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -24,29 +24,28 @@ ms.suite: ems
 
 ---
 
-# Procedure: verificatie toevoegen aan uw app
+# Uw app registreren en RMS inschakelen met Azure AD
 
-Dit onderwerp beschrijft de beginselen van gebruikersverificatie voor uw app met RMS-functionaliteit.
+In dit onderwerp worden ingegaan op de basisprincipes van app-registratie en RMS-activering via Azure Portal, gevolgd door gebruikersverificatie met Azure Active Directory Authentication Library (ADAL).
 
 ## Wat is gebruikersverificatie?
-Gebruikersverificatie is een essentiële stap voor de communicatie tussen de app op uw apparaat en de RMS-infrastructuur. Het verificatieproces maakt gebruik van het OAuth 2.0-standaardprotocol dat de volgende informatie vereist over de huidige gebruiker en zijn/haar verificatieaanvraag: **instantie**, **resource** en **gebruikers-id**.
+Gebruikersverificatie is een essentiële stap voor de communicatie tussen de app op uw apparaat en de RMS-infrastructuur. Voor dit verificatieproces wordt het OAuth 2.0-standaardprotocol gebruikt dat belangrijke informatie vereist over de huidige gebruiker en de verificatieaanvraag.
 
-**Opmerking**: ‘bereik’ wordt momenteel niet gebruikt, maar mogelijk later wel en is daarom gereserveerd voor toekomstig gebruik.
+## Registratie via Azure Portal
+Volg eerst deze handleiding voor het configureren van de registratie van uw app via Azure Portal: [Azure RMS configureren voor ADAL verificatie](adal-auth.md). Zorg ervoor dat u de **client-id** en **omleidings-URI** uit dit proces kopieert en opslaat voor later gebruik.
 
- 
+## Gebruikersverificatie implementeren voor uw app
+Elke API voor RMS heeft een callbackfunctie die moet worden geïmplementeerd om gebruikersverificatie in te schakelen. RMS SDK 4.2 maakt vervolgens gebruik van uw implementatie van de callback als u geen toegangstoken biedt, wanneer uw toegangstoken moet worden vernieuwd of wanneer het toegangstoken is verlopen.
 
-**Callback voor gebruikersverificatie**: de Microsoft Rights Management SDK 4.2 maakt gebruik van uw implementatie van een verificatiecallback als u geen toegangstoken biedt, wanneer uw toegangstoken moet worden vernieuwd of wanneer het toegangstoken is verlopen.
+- Android: [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)- en [AuthenticationCompletionCallback](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java)-interfaces.
+- iOS/OS X: [MSAuthenticationCallback](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)-protocol.
+-  Windows Phone/Windows RT: [IAuthenticationCallback](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback)-interface.
+- Linux: [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html)-interface.
 
-Elk van de RMS API's van het platform heeft een callback die moet worden geïmplementeerd om gebruikersverificatie te kunnen inschakelen.
+### Welke bibliotheek u voor verificatie moet gebruiken
+Om uw verificatiecallback te implementeren, moet u de juiste bibliotheek downloaden en uw ontwikkelomgeving configureren voor het gebruik hiervan. U vindt de ADAL-bibliotheken voor deze platforms op GitHub.
 
--   De Android-API maakt gebruikt van de [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)- en de [**AuthenticationCompletionCallback**](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java)-interface.
--   De IOS-/OS X-API maakt gebruikt van het [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)-protocol.
--   De WinPhone-API maakt gebruikt van de [**IAuthenticationCallback**](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback)-interface.
--   De Linux API-maakt gebruikt van de [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html)-interface.
-
-## Welke bibliotheek u voor verificatie moet gebruiken
-
-Om uw verificatiecallback te implementeren, moet u de juiste bibliotheek downloaden en uw ontwikkelomgeving configureren voor het gebruik hiervan. U vindt de ADAL-bibliotheken voor deze platforms op GitHub. De volgende bronnen bevatten richtlijnen voor het instellen van uw omgeving en het gebruik van de bibliotheek.
+De volgende bronnen bevatten richtlijnen voor het instellen van uw omgeving en het gebruik van de bibliotheek.
 
 -   [Windows Azure Active Directory Authentication Library (ADAL) voor iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)
 -   [Windows Azure Active Directory Authentication Library (ADAL) voor Mac](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)
@@ -54,28 +53,28 @@ Om uw verificatiecallback te implementeren, moet u de juiste bibliotheek downloa
 -   [Windows Azure Active Directory Authentication Library (ADAL) voor dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   Voor de Linux SDK wordt de ADAL-bibliotheek geleverd met de SDK-bron via [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
-**Opmerking** Wij raden u aan een van bovengenoemde Active Directory Authentication Libraries (ADAL) te gebruiken. Het is echter ook mogelijk een andere verificatiebibliotheek toe te passen.
+>[!NOTE]  U kunt het beste een van de bovengenoemde ADAL-versies gebruiken, maar het is ook mogelijk om andere verificatiebibliotheken te gebruiken.
 
-## Invoer voor verificatie met Azure Active directeur Authentication Library (ADAL)
+### Verificatieparameters
 
-De ADAL vereist verschillende parameters om een gebruiker van Azure RMS (of AD RMS) met succes te verifiëren. Dit zijn de standaard OAuth 2.0-parameters die in het algemeen vereist zijn voor elke Azure AD-app, net als voor apps met RMS-functionaliteit. U kunt de huidige richtlijnen voor ADAL-gebruik vinden in de Leesmij-bestanden van de betreffende, hierboven genoemde Github-opslagplaatsen.
+ADAL vereist verschillende gegevens om een gebruiker te verifiëren voor Azure RMS (of AD RMS). Dit zijn de standaardparameters van OAuth 2.0 die algemeen vereist zijn voor elke Azure AD-app. U kunt de huidige richtlijnen voor ADAL-gebruik vinden in de Leesmij-bestanden van de betreffende, hierboven genoemde Github-opslagplaatsen.
 
-Deze parameters en richtlijnen zijn vereist voor RMS-werkstromen:
+- **Instantie**: de URL voor het verificatie-eindpunt, meestal AAD of ADFS.
+- **Resource**: de URL/URI van de servicetoepassing die u probeert te openen, meestal Azure RMS of AD RMS.
+- **Gebruikers-id**: de UPN, meestal het e-mailadres van de gebruiker die toegang wil tot de app. Deze parameter kan leeg zijn als de gebruiker nog niet bekend is en wordt ook gebruikt voor het cachen van het gebruikerstoken of het aanvragen van een token uit de cache. De parameter wordt over het algemeen ook gebruikt als *hint* om een gebruiker naar iets te vragen.
+- **Client-id**: de id van uw client-app. Dit moet een geldige Azure AD-toepassings-id zijn.
+en is afkomstig uit de vorige registratiestap op Azure Portal.
+- **Omleidings-Uri**: voorziet de verificatiebibliotheek van een URI-doel voor de verificatiecode. Voor iOS en Android zijn specifieke indelingen vereist. Deze worden beschreven in de LEESMIJ-bestanden van de overeenkomende GitHub-opslagplaatsen van ADAL. Deze waarde is afkomstig uit de vorige registratiestap op Azure Portal.
 
--   **Instantie**: de URL voor het verificatie-eindpunt, meestal AAD of ADFS. Deze parameter wordt aan uw app verstrekt door de RMS SDK-verificatiecallback.
--   **Resource**: de URL/URI van de servicetoepassing die u probeert te openen, meestal Azure RMS of AD RMS. Deze parameter wordt aan uw app verstrekt door de RMS SDK-verificatiecallback.
--   **Gebruikers-id**: de UPN, meestal het e-mailadres van de gebruiker die toegang wil tot de app. Deze parameter kan leeg zijn als de gebruiker nog niet bekend is en wordt ook gebruikt voor het cachen van het gebruikerstoken of het aanvragen van een token uit de cache. De parameter wordt in het algemeen ook gebruikt als 'hint' om een gebruiker naar iets te vragen.
--   **Client-id**: de id van uw client-app. Dit moet een geldige Azure AD-toepassings-id zijn. Zie Procedure: een Azure-toepassings-id ophalen voor meer informatie.
--   **Omleidings-Uri**: voorziet de verificatiebibliotheek van een URI-doel voor de verificatiecode. Houd er rekening mee dat er specifieke indelingen vereist zijn voor iOS en Android. Deze worden uitgelegd in de Leesmij-bestanden van de betreffende ADAL-opslagplaatsen in GitHub.
+>[!NOTE] **Bereik** wordt momenteel niet gebruikt, maar mogelijk later wel en is daarom gereserveerd voor toekomstig gebruik.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
-**Opmerking** Als uw app niet aan deze richtlijnen voldoet, mislukken Azure RMS- en Azure AD-werkstromen waarschijnlijk en worden ze niet ondersteund door Microsoft.com. Bovendien wordt de Rights Management License Agreement (RMLA) mogelijk overtreden als er in een productie-app een ongeldige client-id wordt gebruikt.
+>[!NOTE] Als uw app niet aan deze richtlijnen voldoet, mislukken Azure RMS- en Azure AD-werkstromen waarschijnlijk en worden ze niet ondersteund door Microsoft.com. Bovendien wordt de Rights Management License Agreement (RMLA) mogelijk overtreden als er in een productie-app een ongeldige client-id wordt gebruikt.
 
-## Hoe moet de implementatie van een verificatiecallback eruitzien?
-
+### Hoe moet de implementatie van een verificatiecallback eruitzien?
 **Voorbeelden van verificatiecode**: deze SDK bevat voorbeeldcode die het gebruik van verificatiecallbacks laat zien. Voor uw gemak worden deze codevoorbeelden hier weergegeven, evenals in elk van de volgende gekoppelde onderwerpen.
 
 **Android-gebruikersverificatie**: zie [Voorbeelden van Android-code](android-code.md), **stap 2** van het eerste scenario 'Een bestand met RMS-beveiliging gebruiken' voor meer informatie.
@@ -153,9 +152,7 @@ Deze parameters en richtlijnen zijn vereist voor RMS-werkstromen:
                          }
 
 
-**iOS-en OS X-gebruikersverificatie**: zie [Voorbeelden van iOS-en OS X-code](ios-os-x-code-examples.md) voor meer informatie.
-
-**Stap 2** van het eerste scenario 'Een bestand met RMS-beveiliging gebruiken'.
+**iOS/OS X-gebruikersverificatie**: zie [Voorbeelden van iOS/OS X-code](ios-os-x-code-examples.md), *stap 2 van het eerste scenario 'Een bestand met RMS-beveiliging gebruiken'* voor meer informatie.
 
 
     // AuthenticationCallback holds the necessary information to retrieve an access token.
@@ -203,7 +200,7 @@ Deze parameters en richtlijnen zijn vereist voor RMS-werkstromen:
 
 
 
-**Linux-/C++-gebruikersverificatie**: zie [Voorbeelden van Linux-code](linux-c-code-examples.md) voor meer informatie.
+**Linux-gebruikersverificatie**: zie [Voorbeelden van Linux-code](linux-c-code-examples.md) voor meer informatie.
 
 
 
@@ -274,6 +271,6 @@ Deze parameters en richtlijnen zijn vereist voor RMS-werkstromen:
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

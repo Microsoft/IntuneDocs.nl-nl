@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inhoud bijhouden | Azure RMS
+title: Instructies: documenttracking en intrekking van documenten inschakelen | Azure RMS
 description: Algemene richtlijnen voor de implementatie van het bijhouden van documenten
 keywords:
 author: bruceperlerms
@@ -23,117 +23,153 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# Inhoud bijhouden
+<<<<<<< HEAD
 
-Dit onderwerp bevat algemene richtlijnen voor de implementatie van het bijhouden van inhoud die is beveiligd met Rights Management Services SDK 2.1.
+# Inhoud bijhouden
+=======
+>>>>>>> 81ec5ddf5acf3de78d77c01ed95631e44d37fe6e
+
+# Instructies: documenttracking en intrekking van documenten inschakelen
+
+Dit onderwerp bevat de algemene richtlijnen voor de implementatie van documenttracking voor inhoud, evenals voorbeeldcode voor updates van metagegevens en voor het maken van een knop **Gebruik bijhouden** voor uw app.
+
+## Stappen voor het implementeren van documenttracking
+
+Met stap 1 en 2 schakelt u het document in dat u wilt bijhouden. Met stap 3 kunnen uw app-gebruikers de site voor documenttracking bereiken zodat ze de beveiligde documenten kunnen bijhouden en intrekken.
+
+1. Voeg metagegevens voor documenttracking toe
+2. Registreer het document bij de RMS-service
+3. Voeg de knop Gebruik bijhouden toe aan uw app
+
+Hieronder vindt u de implementatiedetails voor deze stappen.
+
+## 1. Voeg metagegevens voor documenttracking toe
 
 Het bijhouden van documenten is een functie van Rights Management. Door specifieke metagegevens toe te voegen tijdens het beveiligingsproces, kan een document worden geregistreerd bij de serviceportal voor tracering. Vervolgens beschikt u over verschillende opties om het document bij te houden.
 
 Gebruik deze API's om een inhoudslicentie met metagegevens voor het bijhouden van documenten toe te voegen/bij te werken.
 
--   [**IpcCreateLicenseMetadataHandle**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
--   [**IpcSetLicenseMetadataProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
 
-    We verwachten dat u alle eigenschappen voor metagegevens instelt. Deze eigenschappen staan hieronder vermeld, gerangschikt op type.
+Operationeel gezien zijn voor documenttracking alleen de eigenschappen **Naam inhoud** en **Meldingstype** vereist.
 
-    Zie [**Typen eigenschappen voor licentiemetagegevens**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types) voor meer informatie.
 
-    -   **IPC\_MD\_CONTENT\_PATH**
+- [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+- [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
 
-        Gebruik dit om het bijgehouden document te identificeren. Als een volledig pad niet mogelijk is, geeft u alleen de bestandsnaam op.
+  We verwachten dat u alle eigenschappen voor metagegevens instelt. Deze eigenschappen staan hieronder vermeld, gerangschikt op type.
 
-    -   **IPC\_MD\_CONTENT\_NAME**
+  Zie [License metadata property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) (Typen eigenschappen voor licentiemetagegevens) voor meer informatie.
 
-        Gebruik dit om de naam van het bijgehouden document te identificeren.
+  - **IPC_MD_CONTENT_PATH**
 
-    -   **IPC\_MD\_NOTIFICATION\_TYPE**
+    Gebruik dit om het bijgehouden document te identificeren. Als een volledig pad niet mogelijk is, geeft u alleen de bestandsnaam op.
 
-        Gebruik dit om op te geven wanneer een melding wordt verzonden. Zie [**Type melding**](/rights-management/sdk/2.1/api/win/notification%20type#msipc_notification_type) voor meer informatie.
+  - **IPC_MD_CONTENT_NAME**
 
-    -   **IPC\_MD\_NOTIFICATION\_PREFERENCE**
+    Gebruik dit om de naam van het bijgehouden document te identificeren.
 
-        Gebruik dit om het type melding op te geven. Zie [**Meldingsvoorkeuren**](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference) voor meer informatie.
+  - **IPC_MD_NOTIFICATION_TYPE**
 
-    -   **IPC\_MD\_DATE\_MODIFIED**
+    Gebruik dit om op te geven wanneer een melding wordt verzonden. Zie Notification type (Meldingstype) voor meer informatie.
 
-        We raden aan dat u deze datum instelt telkens wanneer de gebruiker op **Opslaan** klikt.
+  - **IPC_MD_NOTIFICATION_PREFERENCE**
 
-    -   **IPC\_MD\_DATE\_CREATED**
+    Gebruik dit om het type melding op te geven. Zie Notification preference (Meldingsvoorkeuren) voor meer informatie.
 
-        De oorspronkelijke datum van het bestand.
+  - **IPC_MD_DATE_MODIFIED**
 
--   [**IpcSerializeLicenseWithMetadata**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+    Het wordt aangeraden dat u deze datum telkens instelt wanneer de gebruiker op Opslaan klikt.
+
+  - **IPC_MD_DATE_CREATED**
+
+    Gebruik dit voor het instellen van de oorspronkelijke datum van het bestand
+
+- [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
 
 Gebruik een van deze API's om de metagegevens toe te voegen aan uw bestand of stroom.
 
--   [**IpcfEncryptFileWithMetadata**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
--   [**IpcfEncryptFileStreamWithMetadata**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+- [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
 
 Gebruik ten slotte deze API om uw bijgehouden document te registreren bij het traceersysteem.
 
--   [**IpcRegisterLicense**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+
+
+## 2. Registreer het document bij de RMS-service
 
 Hier volgt een codefragment met een voorbeeld van het instellen van de metagegevens voor het bijhouden van documenten en de aanroep voor registratie bij het traceersysteem.
 
+      C++
+      HRESULT hr = S_OK;
+      LPCWSTR wszOutputFile = NULL;
+      wstring wszWorkingFile;
+      IPC_LICENSE_METADATA md = {0};
 
+      md.cbSize = sizeof(IPC_LICENSE_METADATA);
+      md.dwNotificationType = IPCD_CT_NOTIFICATION_TYPE_ENABLED;
+      md.dwNotificationPreference = IPCD_CT_NOTIFICATION_PREF_DIGEST;
+      //file origination date, current time for this example
+      md.ftDateCreated = GetCurrentTime();
+      md.ftDateModified = GetCurrentTime();
 
-    HRESULT hr = S_OK;
-    LPCWSTR wszOutputFile = NULL;
-    wstring wszWorkingFile;
-    IPC_LICENSE_METADATA md = {0};
+      LOGSTATUS_EX(L"Encrypt file with official template...");
 
-    md.cbSize = sizeof(IPC_LICENSE_METADATA);
-    md.dwNotificationType = IPCD_CT_NOTIFICATION_TYPE_ENABLED;
-    md.dwNotificationPreference = IPCD_CT_NOTIFICATION_PREF_DIGEST;
-    //file origination date, current time for this example
-    md.ftDateCreated = GetCurrentTime();
-    md.ftDateModified = GetCurrentTime();
+      hr =IpcfEncryptFileWithMetadata( wszWorkingFile.c_str(),
+                               m_wszTestTemplateID.c_str(),
+                               IPCF_EF_TEMPLATE_ID,
+                               0,
+                               NULL,
+                               NULL,
+                               &md,
+                               &wszOutputFile);
 
-    LOGSTATUS_EX(L&quot;Encrypt file with official template...&quot;);
+     /* This will contain the serialized license */
+     PIPC_BUFFER pSerializedLicense;
 
-    hr =IpcfEncryptFileWithMetadata(  wszWorkingFile.c_str(),
-                                       m_wszTestTemplateID.c_str(),
-                                       IPCF_EF_TEMPLATE_ID,
-                                       0,
-                                       NULL,
-                                       NULL,
-                                       &amp;md,
-                                       &amp;wszOutputFile);
+     /* the context to use for the call */
+     PCIPC_PROMPT_CTX pContext;
 
-    /* This will contain the serialized license */
-    PIPC_BUFFER pSerializedLicense;
+     wstring wstrContentName(“MyDocument.txt”);
+     bool sendLicenseRegistrationNotificationEmail = FALSE;
 
-    /* the context to use for the call */
-    PCIPC_PROMPT_CTX pContext;
+     hr = IpcRegisterLicense( pSerializedLicense,
+                        0,
+                        pContext,
+                        wstrContentName.c_str(),
+                        sendLicenseRegistrationNotificationEmail);
 
-    wstring wstrContentName(“MyDocument.txt”);
-    bool sendLicenseRegistrationNotificationEmail = FALSE;
+## Voeg een knop **Gebruik bijhouden** toe aan uw app
 
-    hr = IpcRegisterLicense( pSerializedLicense,
-                              0,
-                              pContext,
-                              wstrContentName.c_str(),
-                              sendLicenseRegistrationNotificationEmail);
+Het toevoegen van een UI-item **Gebruik bijhouden** is net zo eenvoudig als het gebruik van een van de volgende URL-indelingen:
 
+- Inhoud-id gebruiken
+  - Haal de inhoud-id op met [IpcGetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) of [IpcGetSerializedLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) als de licentie is geserialiseerd en gebruik de licentie-eigenschap **IPC_LI_CONTENT_ID**. Zie [License property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_property_types) (Typen licentie-eigenschappen) voor meer informatie.
+  - Gebruik voor de metagegevens **ContentId** en **Issuer** de volgende notatie: `https://track.azurerms.com/#/{ContentId}/{Issuer}`
+
+    Voorbeeld: `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
+
+- Als u geen toegang hebt tot metagegevens (u wilt de niet-beveiligde versie van het document controleren), kunt u **Content_Name** gebruiken in de volgende notatie: `https://track.azurerms.com/#/?q={ContentName}`
+
+  Voorbeeld: https://track.azurerms.com/#/?q=Secret!.txt
+
+De client moet een browser openen met de juiste URL. Verificatie en eventuele omleiding worden uitgevoerd in de RMS-portal voor documenttracking.
 
 ## Verwante onderwerpen
 
-
-* [**Typen eigenschappen voor licentiemetagegevens**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)
-* [**Meldingsvoorkeur**](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [**Type melding**](/rights-management/sdk/2.1/api/win/notification%20type#msipc_notification_type)
-* [**IpcCreateLicenseMetadataHandle**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [**IpcSetLicenseMetadataProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [**IpcSerializeLicenseWithMetadata**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [**IpcfEncryptFileWithMetadata**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [**IpcfEncryptFileStreamWithMetadata**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [**IpcRegisterLicense**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
- 
+* [Typen eigenschappen voor licentiemetagegevens](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
+* [Meldingsvoorkeur](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
+* [Type melding](/rights-management/sdk/2.1/api/win/constants#msipc_notification_type)
+* [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+* [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+* [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+* [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+* [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+* [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

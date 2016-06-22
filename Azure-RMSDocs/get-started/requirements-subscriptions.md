@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: "Azure RMS-vereisten: cloudabonnementen | Azure RMS"
+title: Azure RMS-vereisten: cloudabonnementen | Azure RMS
 description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ Hebt u meer vragen over licentieverlening voor Azure RMS? Download de **Veelgest
 ## Office 365-abonnement
 [Gratis proefperiode van 30 dagen: Enterprise E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[Gratis proefperiode van 30 dagen: Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 Dit abonnement is bedoeld voor organisaties die willen werken met de Office Online-services en de bijbehorende Information Rights Management-functie (IRM), waarvoor Azure RMS wordt gebruikt. Azure RMS is echter niet bij alle Office 365-abonnementen inbegrepen.
 
 Abonnement  |Inclusief IRM 
@@ -84,7 +86,7 @@ Als uw proefabonnement is verlopen, verliest u toegang tot inhoud die is beveili
 Een uitzondering op toegangsverlies na het verlopen van een abonnement geldt als uw organisatie Azure RMS gebruikte in combinatie met het abonnement RMS voor personen voordat u het proefabonnement verkreeg. U behoudt dan toegang tot eerder beveiligde inhoud, zelfs nadat het proefabonnement is verlopen.
 
 ## Enterprise Mobility Suite-abonnement
-[Gratis proefabonnement van 30 dagen](http://go.microsoft.com/fwlink/?LinkId=615385)
+[Gratis proefabonnement van 30 dagen](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 Dit abonnement is bedoeld voor organisaties die een combinatie van Azure Active Directory Premium, Windows Intune en Azure Rights Management willen gebruiken. De ondersteuning voor het gebruik van Azure Rights Management met Office is hetzelfde als wanneer u het Azure Rights Management Premium-abonnement gebruikt. Voor meer informatie over het Enterprise Mobility Suite-abonnement raadpleegt u het [Overzicht van Microsoft Enterprise Mobility](http://go.microsoft.com/fwlink/?LinkId=615386).
 
@@ -98,6 +100,6 @@ Zie voor meer informatie [RMS voor personen en Azure Rights Management](../under
 ## Volgende stappen
 Zie [Vereisten voor Azure Rights Management](requirements-azure-rms.md) voor informatie over andere vereisten.
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

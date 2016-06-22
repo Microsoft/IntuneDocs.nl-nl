@@ -22,6 +22,7 @@
 ### [De RMS-connector installeren en configureren](install-configure-rms-connector.md)
 ### [Servers configureren](configure-servers-rms-connector.md)
 #### [Registerinstellingen](rms-connector-registry-settings.md)
+### [De connector controleren](monitor-rms-connector.md)
 ## [Azure RMS controleren](verify.md)
 ## [Gebruikers helpen bij het beveiligen van bestanden](help-users.md)
 ## [Logboekregistratie en analyse van gebruik](log-analyze-usage.md)
@@ -35,6 +36,6 @@
 # [Apps ontwikkelen en aanpassen](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

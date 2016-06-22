@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -81,9 +81,9 @@ Gebruik de informatie en procedures in dit gedeelte als u hebt besloten om uw ei
 
 
 > [!IMPORTANT]
-> Als u al begonnen bent [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] te gebruiken (de service is geactiveerd) en u hebt gebruikers die Office 2010 uitvoeren, neemt u contact op met de klantenondersteuning van Microsoft (CSS) voordat u deze procedures uitvoert. Afhankelijk van uw scenario en vereisten, kunt u BYOK blijven gebruiken, maar met enkele beperkingen of bijkomende stappen.
+> Als u [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] al gebruikt (de service is geactiveerd) en u hebt gebruikers die Office 2010 uitvoeren, moet u [contact opnemen met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) voordat u deze procedures uitvoert. Afhankelijk van uw scenario en vereisten, kunt u BYOK blijven gebruiken, maar met enkele beperkingen of bijkomende stappen.
 > 
-> Neem ook contact op met CSS als uw organisatie specifieke beleidsregels voor het verwerken van sleutels heeft.
+> U moet ook [contact opnemen met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) als uw organisatie een specifiek beleid hanteert voor de verwerking van sleutels.
 
 ### Vereisten voor BYOK
 Zie de volgende tabel voor een lijst met vereisten voor BYOK (Bring Your Own Key).
@@ -114,7 +114,7 @@ De procedures om uw eigen tenantcode te generen en gebruiken, zijn afhankelijk v
     > [!NOTE]
     > Uw tenantsleutel kan veilig worden verplaatst via niet-vertrouwde computers en netwerken omdat de sleutel is versleuteld en wordt beveiligd met machtigingen op het niveau van toegangsbeheer, waardoor de sleutel alleen bruikbaar is binnen uw HSM's en de HSM's van Microsoft voor Azure RMS. U kunt de scripts die worden bijgeleverd in de toolset gebruiken om de veiligheidsmaatregelen te controleren, en meer informatie lezen over hoe dit werkt vanuit Thales: [Hardwaresleutelbeheer in de RMS-cloud](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Persoonlijk:** hiervoor moet u contact opnemen met de klantondersteuning van Microsoft (CSS) om een afspraak te maken voor de overdracht van de sleutel voor Azure RMS. U moet naar een vestiging van Microsoft in Redmond (Washington) in de Verenigde Staten komen om uw tenantsleutel over te dragen aan de Azure RMS-beveiligingswereld.
+-   **Persoonlijk:** U moet [contact opnemen met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) om een afspraak te plannen voor de sleuteloverdracht voor Azure RMS. U moet naar een vestiging van Microsoft in Redmond (Washington) in de Verenigde Staten komen om uw tenantsleutel over te dragen aan de Azure RMS-beveiligingswereld.
 
 Als u instructies nodig hebt, selecteert u of u uw eigen tenantsleutel via internet of persoonlijk gaat genereren en overdragen: 
 
@@ -148,6 +148,6 @@ Nu u een planning hebt gemaakt en u zo nodig de tenantsleutel hebt gegenereerd, 
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

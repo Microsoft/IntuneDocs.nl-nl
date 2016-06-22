@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -33,8 +33,7 @@ Dit artikel bevat instructies en een script om de Rights Management-client (RMS)
 
 Met deze oplossingen kunt u automatisch alle bestanden beveiligen die zich in een map op een bestandsserver met Windows Server bevinden, of automatisch bestanden beveiligen die aan een bepaald criterium voldoen. Bijvoorbeeld bestanden die zijn geclassificeerd als vertrouwelijk of die gevoelige gegevens bevatten. Deze oplossing gebruikt Azure Rights Management (Azure RMS) om de bestanden te beveiligen. U moet deze technologie daarom hebben geïmplementeerd in uw organisatie.
 
-> [!NOTE]
-> Hoewel Azure RMS een [connector](../deploy-use/deploy-rms-connector.md) bevat die infrastructuur voor bestandsclassificatie ondersteunt, ondersteunt die oplossing alleen systeemeigen beveiliging, bijvoorbeeld Office-bestanden.
+> [!NOTE] Hoewel Azure RMS een [connector](../deploy-use/deploy-rms-connector.md) bevat die infrastructuur voor bestandsclassificatie ondersteunt, ondersteunt die oplossing alleen systeemeigen beveiliging, bijvoorbeeld Office-bestanden.
 > 
 > Als u alle bestandstypen wilt ondersteunen met infrastructuur voor bestandsclassificatie, moet u de Windows PowerShell-module **RMS-beveiliging** gebruiken, zoals beschreven in dit artikel. De RMS-beveiligingscmdlets ondersteunen net als de RMS-toepassing voor delen, zowel algemene beveiliging als systeemeigen beveiliging, wat betekent dat alle bestanden kunnen worden beveiligd. Zie de sectie [Beveiligingsniveaus: systeemeigen en algemeen](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) in de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](sharing-app-admin-guide.md) voor meer informatie over deze verschillende beveiligingsniveaus.
 
@@ -129,7 +128,7 @@ Nadat u deze instructies hebt uitgevoerd, zijn alle bestanden in de geselecteerd
         Import-Module "C:\Program Files\WindowsPowerShell\Modules\RMSProtection\RMSProtection.dll"
         ```
 
-3.  Onderteken het script. Als u het script (veiliger) niet ondertekent, moet u Windows PowerShell configureren op de servers waarop het script wordt uitgevoerd. Voer bijvoorbeeld een Windows PowerShell-sessie uit met de optie **Als beheerder uitvoeren** en typ: **Set-ExecutionPolicy Unrestricted**. Met deze configuratie kunnen echter alle niet-ondertekende scripts worden uitgevoerd (minder veilig).
+3.  Onderteken het script. Als u het script (veiliger) niet ondertekent, moet u Windows PowerShell configureren op de servers waarop het script wordt uitgevoerd. Voer bijvoorbeeld een Windows PowerShell-sessie uit met de optie **Als beheerder uitvoeren** en typ: **Set-ExecutionPolicy RemoteSigned**. Met deze configuratie worden echter alle niet-ondertekende scripts uitgevoerd wanneer de scripts worden opgeslagen op deze server (minder veilig).
 
     Zie [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) in de PowerShell-documentatiebibliotheek voor meer informatie over het ondertekenen van Windows PowerShell-scripts.
 
@@ -264,7 +263,7 @@ Nu de configuratie van de classificatie is voltooid, bent u klaar om een beheert
 
     1.  Klik op **Classificatieregels** &gt; **Classificatie nu met alle regels uitvoeren**
 
-    2.  Klik op **Wachten totdat de classificatie is voltooid** en klik vervolgens op **OK**..
+    2.  Klik op **Wachten totdat de classificatie is voltooid** en klik vervolgens op **OK**.
 
 2.  Wacht totdat het dialoogvenster **Classificatie wordt uitgevoerd** wordt gesloten en bekijk vervolgens de resultaten in het rapport dat automatisch wordt weergegeven. U ziet **1** voor het veld **Eigenschappen** en het aantal bestanden in de map. Bevestig dit met Bestandenverkenner en controleer de eigenschappen van bestanden in de gekozen map. Op het tabblad **Classificatie** ziet u **RMS** als eigenschapsnaam en **Ja** voor de **Waarde**.
 
@@ -272,15 +271,14 @@ Nu de configuratie van de classificatie is voltooid, bent u klaar om een beheert
 
     1.  Klik op **Bestandsbeheertaken** &gt; **Bestanden beveiligen met RMS** &gt; **Bestandsbeheertaak nu uitvoeren**
 
-    2.  Klik op **Wachten totdat de taak is voltooid** en klik vervolgens op **OK**..
+    2.  Klik op **Wachten totdat de taak is voltooid** en klik vervolgens op **OK**.
 
 4.  Wacht totdat het dialoogvenster **Bestandsbeheertaak wordt uitgevoerd** wordt gesloten en bekijk vervolgens de resultaten in het rapport dat automatisch wordt weergegeven. U ziet het aantal bestanden in de door u gekozen map in het veld **Bestanden**. Controleer of de bestanden in de door u gekozen map nu zijn beveiligd door RMS. Als u bijvoorbeeld de map C:\FileShare hebt gekozen, typt u het volgende in een Windows PowerShell-sessie en controleert u of er geen bestanden zijn met de status **UnProtected**:
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP]
-    > Tips voor probleemoplossing:
+    > [!TIP] Tips voor probleemoplossing:
     > 
     > -   Als u in het rapport **0** ziet, in plaats van het aantal bestanden in de map, geeft dit aan dat het script niet is uitgevoerd. Controleer eerst het script zelf door dit te laden in Windows PowerShell ISE om de inhoud van het script te valideren, en voer het uit om te zien of er fouten worden weergegeven. Als er geen argumenten zijn opgegeven, maakt het script verbinding met Azure RMS voor verificatie.
     > 
@@ -302,12 +300,12 @@ Wanneer u hebt vastgesteld dat deze taken correct worden uitgevoerd, kunt u Best
 ## De instructies wijzigen om selectief bestanden te beveiligen
 Wanneer de voorgaande instructies werken, kunt u deze zeer eenvoudig wijzigen voor een meer geavanceerde configuratie. U kunt bijvoorbeeld bestanden beveiligen met hetzelfde script, maar dit alleen toepassen op bestanden die persoonlijk gegevens bevatten, en mogelijk een sjabloon selecteren met beperktere rechten.
 
-Hiervoor gebruikt u een van de ingebouwde classificatie-eigenschappen (bijvoorbeeld **Persoonlijke gegevens**), maar u kunt ook uw eigen nieuwe eigenschap maken. Vervolgens maakt u een nieuwe regel waarvoor deze eigenschap wordt gebruikt. U kunt bijvoorbeeld de **Content Classifier** selecteren, de eigenschap **Persoonlijke gegevens ** kiezen met de waarde **Hoog** en de tekenreeks of het expressiepatroon configureren waarmee het bestand wordt geïdentificeerd dat moet worden geconfigureerd voor deze eigenschap (bijvoorbeeld de tekenreeks **Geboortedatum**").
+Hiervoor gebruikt u een van de ingebouwde classificatie-eigenschappen (bijvoorbeeld **Persoonlijke gegevens**), maar u kunt ook uw eigen nieuwe eigenschap maken. Vervolgens maakt u een nieuwe regel waarvoor deze eigenschap wordt gebruikt. U kunt bijvoorbeeld de **Content Classifier** selecteren, de eigenschap **Persoonlijke gegevens ** kiezen met de waarde **Hoog** en de tekenreeks of het expressiepatroon configureren waarmee het bestand wordt geïdentificeerd dat moet worden geconfigureerd voor deze eigenschap (bijvoorbeeld de tekenreeks **Geboortedatum**).
 
 Nu hoeft u alleen nog maar een nieuwe bestandsbeheertaak te maken die hetzelfde script gebruikt (mogelijk met een andere sjabloon) en de voorwaarde te configureren voor de classificatie-eigenschap die u zojuist hebt geconfigureerd. In plaats van de eerder geconfigureerde voorwaarde (eigenschap **RMS** **Gelijk**, **Ja**), kunt u bijvoorbeeld de eigenschap **Persoonlijke gegevens** selecteren en de waarde **Operator** instellen op **Gelijk** en de **Waarde** op **Hoog**.
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

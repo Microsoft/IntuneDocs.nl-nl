@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -32,12 +32,11 @@ ms.suite: ems
 
 In dit artikel worden enkele typische voorbeelden beschreven hoe beheerders en gebruikers Azure Rights Management (Azure RMS) zien en kunnen gebruiken om gevoelige of vertrouwelijke gegevens te beschermen.
 
-> [!NOTE]
-> In al deze voorbeelden waarin Azure RMS gegevens beveiligt, houdt de eigenaar van de inhoud volledige toegang tot de gegevens (bestand of e-mail), zelfs als de met de toegepaste beveiliging machtigingen worden verleent aan een groep waarvan de eigenaar geen lid is of zelfs als de toegepaste beveiliging een vervaldatum omvat.
+> [!NOTE] In deze voorbeeld waarin gegevens worden beveiligd met Azure RMS, houdt de inhoudseigenaar volledige tot de gegevens (bestand of e-mail), zelfs als met de toegepaste beveiliging machtigingen worden verleend aan een groep waarvan de eigenaar niet lid was of als de toegepaste beveiliging een vervaldatum bevat.
 >
 > Ook heeft IT via de functie supergebruiker van Rights Management, waarmee gedelegeerde toegang wordt verleend aan gebruikers of services die u opgeeft, altijd onbeperkte toegang tot de beveiligde gegevens. Bovendien kan IT het gebruik van de beveiligde gegevens volgen en controleren, bijvoorbeeld wie de gegevens heeft geopend en wanneer.
 
-Raadpleeg de [portal voor Microsoft Rights Management-services](http://www.microsoft.com/rms) en de [blog van het Microsoft Rights Management-team (RMS)](http://blogs.technet.com/b/rms) voor andere schermafbeeldingen en video's waarin RMS in actie wordt getoond.
+Voor andere schermopnamen en video's van RMS in actie kunt u terecht op de [Microsoft Rights Management Services-portal](http://www.microsoft.com/rms) en de [teamblog van Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms).
 
 ## Rights Management activeren en configureren
 Hoewel u Windows PowerShell kunt gebruiken om Azure RMS te activeren en configureren, kan dit het gemakkelijkst worden gedaan vanuit de beheerportal. Zodra de service is geactiveerd, hebt u twee standaardsjablonen die beheerders en gebruikers kunnen selecteren om snel en eenvoudig gegevensbeveiliging op bestanden toe te passen. Maar u kunt ook uw eigen aangepaste sjablonen maken voor extra opties en instellingen.
@@ -51,7 +50,7 @@ Hoewel u Windows PowerShell kunt gebruiken om Azure RMS te activeren en configur
 
 ![WAT BEHEERDERS ZIEN IN STAP 2](../media/AzRMS_TemplatesPortal_small.png)
 
-**WAT BEHEERDERS ZIEN IN STAP 2:** na de activering zijn twee rechtenbeleidssjablonen automatisch beschikbaar voor uw organisatie. De ene sjabloon voor is alleen-lezentoegang (in de naam is **Alleen vertrouwelijke weergave** opgenomen), de andere is voor toegang met rechten om te lezen en te wijzigen (**Vertrouwelijk**).
+**WAT BEHEERDERS ZIEN IN STAP 2:** na de activering zijn twee rechtenbeleidssjablonen automatisch beschikbaar voor uw organisatie. De ene sjabloon is voor alleen-lezentoegang (de naam bevat **Confidential View Only**) en de andere sjabloon is voor lees- en wijzigingstoegang (**Confidential**).
 
 Wanneer deze sjablonen worden toegepast op alle bestanden en e-mailberichten, wordt hiermee de toegang beperkt tot gebruikers in uw organisatie. Dit is een zeer snelle en eenvoudige manier om te voorkomen dat uw bedrijfsgegevens naar mensen buiten uw organisatie lekken.
 
@@ -74,15 +73,15 @@ Als u niet wilt dat gebruikers deze sjablonen kunnen zien, of als u uw eigen sja
 
 - Een gebruiker kan de standaardsjabloon **VanArsdel, Ltd – vertrouwelijk** kiezen. Alleen werknemers van de organisatie VanArsdel kunnen dit document openen en gebruiken, zelfs als dit vervolgens wordt ge-e-maild naar iemand buiten de organisatie of wordt opgeslagen op een openbaar toegankelijke locatie.
 
-- Een gebruiker kan de aangepaste sjabloon dat door de beheerder is gemaakt, **Verkoop en marketing – alleen lezen en afdrukken**, kiezen. Het bestand is dan niet alleen beveiligd tegen mensen buiten de organisatie, maar ook beperkt tot werknemers van de afdeling Verkoop en marketing. Bovendien beschikken deze werknemers niet over volledige rechten voor het document, maar kunnen ze het alleen lezen en afdrukken. Ze kunnen het document bijvoorbeeld niet wijzigen of eruit kopiëren.
+- Een gebruiker kan de aangepaste sjabloon die door de beheerder is gemaakt, **Verkoop en marketing – alleen lezen en afdrukken**, kiezen. Het bestand is dan niet alleen beveiligd tegen mensen buiten de organisatie, maar ook beperkt tot werknemers van de afdeling Verkoop en marketing. Bovendien beschikken deze werknemers niet over volledige rechten voor het document, maar kunnen ze het alleen lezen en afdrukken. Ze kunnen het document bijvoorbeeld niet wijzigen of eruit kopiëren.
 
 ---
 
 **Meer informatie over dit scenario:**
 
-- Zie [Azure Rights Management activeren](../deploy-use/activate-service.md) en [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) voor stapsgewijze instructies.
+- Zie [Activating Azure Rights Management](../deploy-use/activate-service.md) (Azure Rights Management activeren) [Configuring custom templates for Azure Rights Management](../deploy-use/configure-custom-templates.md) (Aangepaste sjablonen configureren voor Azure Rights Management) voor stapsgewijze instructies.
 
-- Zie [Helping users to protect files by using Azure Rights Management](../deploy-use/help-users.md) (Gebruikers helpen om bestanden te beveiligen met Azure Rights Management) voor meer informatie over het beveiligen van belangrijke bedrijfsgegevens.
+- Zie [Helping users to protect files by using Azure Rights Management](../deploy-use/help-users.md) (Gebruikers helpen om bestanden te beveiligen met Azure Rights Management) om gebruikers te helpen bij het beveiligen van belangrijke bedrijfsbestanden.
 
 Hieronder staan enkele voorbeelden van hoe beheerders de sjablonen kunnen gebruiken om gegevensbeveiliging voor bestanden en e-mailberichten automatisch te configureren.
 
@@ -102,7 +101,7 @@ Classificatiewaarden kunnen op veel manieren worden toegepast op bestanden. U ku
 
 **WAT BEHEERDERS ZIEN IN STAP 2:** op de bestandsserver configureert de beheerder de classificatieregels en -taken zodat alle bestanden in de map **Marketingaanbiedingen** automatisch worden geclassificeerd als **Marketing** en beveiligd met RMS-versleuteling.
 
-Ze selecteert de aangepaste RMS-sjabloon die is gemaakt in ons eerste voorbeeld, waarmee de toegang wordt beperkt tot leden van de afdelingen Verkoop en Marketing: **Verkoop en marketing – alleen lezen en afdrukken**.
+Ze selecteert de aangepaste RMS-sjabloon die is gemaakt in het eerste voorbeeld en waarmee de toegang wordt beperkt tot leden van de verkoop- en marketingafdeling: **Verkoop en marketing – alleen lezen en afdrukken**.
 
 Hierdoor worden alle documenten in die map automatisch geconfigureerd met de classificatie Marketing en beveiligd door de RMS-sjabloon Verkoop en Marketing.
 
@@ -119,7 +118,7 @@ De ontvanger kan het vertrouwelijke rapport niet lezen omdat hij geen lid is van
 
 **Meer informatie over dit scenario:**
 
-- Zie [De Azure Rights Management-connector implementeren](../deploy-use/deploy-rms-connector.md) voor stapsgewijze instructies.
+- Zie [Deploying the Azure Rights Management connector](../deploy-use/deploy-rms-connector.md) (De Azure Rights Management-connector implementeren) voor stapsgewijze instructies.
 
 ## Automatisch e-mailberichten beveiligen met Exchange Online en beleid om gegevensverlies te voorkomen
 
@@ -134,6 +133,9 @@ In dit voorbeeld configureert de beheerder een beleid om ervoor te zorgen dat de
 De regels worden zodanig geconfigureerd dat op e-mailberichten die deze gegevens bevatten en die worden verzonden naar een adres buiten de organisatie, automatisch rechtenbescherming wordt toegepast met een RMS-sjabloon waarmee de toegang wordt beperkt tot werknemers van het bedrijf.
 
 Hier is de regel geconfigureerd voor het gebruik van een van de standaardsjablonen, **VanArsdel, Ltd – vertrouwelijk**, uit ons eerste voorbeeld. Maar u ziet ook dat u tevens kunt kiezen uit de aangepaste sjablonen die u wellicht hebt gemaakt, en de optie **Niet doorsturen** die specifiek is voor Exchange.
+
+> [!NOTE]
+> Als de configuratieopties die u ziet enigszins afwijken van de afbeelding, moet u wellicht eerst **Meer opties** selecteren wanneer u de regel configureert. Vervolgens kunt u **De berichtbeveiliging wijzigen** > **Bescherming van rechten toepassen** selecteren en de RMS-sjabloon selecteren.
 
 ---
 
@@ -187,9 +189,9 @@ Het document blijft beveiligd, zelfs als de gebruiker de naam wijzigt, het docum
 
 **Meer informatie over dit scenario:**
 
--   Zie de sectie [SharePoint Online en SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) uit [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over hoe Azure RMS werkt met SharePoint.
+-   Zie de sectie [SharePoint Online en SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) in [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over hoe Azure RMS werkt met SharePoint.
 
--   Zie de sectie [SharePoint Online en OneDrive voor Bedrijven: IRM-configuratie](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) uit [Toepassingen configureren voor Azure Rights Management](../deploy-use/configure-applications.md) voor stapsgewijze instructies voor het configureren SharePoint voor Azure RMS.
+-   Zie de sectie [SharePoint Online en OneDrive voor Bedrijven: IRM-configuratie](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) in [Toepassingen configureren voor Azure Rights Management](../deploy-use/configure-applications.md) voor stapsgewijze instructies voor het configureren SharePoint voor Azure RMS.
 
 ## Gebruikers delen bijlagen veilig met mobiele gebruikers
 
@@ -235,7 +237,7 @@ Als Bob zijn e-mailbericht met de bijlage doorstuurt of opslaat op een locatie w
 
 **Meer informatie over dit scenario:**
 
-- Zie [Een bestand beveiligen dat u per e-mail deelt](../rms-client/sharing-app-protect-by-email.md) en [Weergeven en gebruiken van bestanden die zijn beveiligd](../rms-client/sharing-app-view-use-files.md) uit de [gebruikershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md) voor stapsgewijze instructies.
+- Zie [Een bestand beveiligen dat u per e-mail deelt](../rms-client/sharing-app-protect-by-email.md) en [Weergeven en gebruiken van bestanden die zijn beveiligd](../rms-client/sharing-app-view-use-files.md) in de [gebruikershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md) voor stapsgewijze instructies.
 
 - De [zelfstudie voor snel starten met Azure Rights Management](../get-started/quick-start-tutorial.md) bevat stapsgewijze instructies voor dit scenario.
 
@@ -244,6 +246,6 @@ Als Bob zijn e-mailbericht met de bijlage doorstuurt of opslaat op een locatie w
 Nu u met enkele voorbeelden hebt gezien wat Azure RMS kan doen, bent u mogelijk geïnteresseerd in het programma dit doet. Zie [Hoe werkt Azure RMS?](how-does-it-work.md) voor technische informatie over hoe Azure RMS werkt
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
