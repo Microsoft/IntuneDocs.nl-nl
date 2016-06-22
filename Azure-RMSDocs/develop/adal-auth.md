@@ -29,11 +29,11 @@ ms.suite: ems
 
 Dit onderwerp bevat informatie over het configureren van Azure ADAL-configuratie.
 
-## Interne verificatie
+## Azure Authentication installeren
 
 U hebt het volgende nodig:
 
-- Een [abonnement voor Microsoft Azure](https://azure.microsoft.com/en-us/) (een gratis proefversie is voldoende):
+- Een [abonnement voor Microsoft Azure](https://azure.microsoft.com/en-us/) (een gratis proefversie is voldoende). Zie [How users sing up for RMS for individuals](../understand-explore/rms-for-individuals-user-sign-up.md) voor meer informatie
 - Een abonnement voor Microsoft Azure Rights Management (een gratis account voor [RMS voor personen](https://technet.microsoft.com/en-us/library/dn592127.aspx) is voldoende).
 
 > [!NOTE] Vraag uw IT-beheerder of u beschikt over een abonnement voor Microsoft Azure Rights Management en laat uw IT-beheerder de volgende stappen uitvoeren. Als uw organisatie geen abonnement heeft, vraagt u uw IT-beheerder om er een te maken. Daarnaast moet uw IT-beheerder moet zich abonneren op een *werk- of schoolaccount*, in plaats van een *Microsoft-account* (bijvoorbeeld Hotmail).

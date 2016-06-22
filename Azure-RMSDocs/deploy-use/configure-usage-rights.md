@@ -269,7 +269,7 @@ De volgende rechten zijn opgenomen in de standaardsjablonen:
 
 ## De optie Niet doorsturen voor e-mailberichten
 
-Exchange-clients en -services (bijvoorbeeld de Outlook-client, de Outlook Web Access-app en Exchange transportregels) hebben hun eigen optie voor beveiliging van gegevensrechten voor e-mails: **Niet doorsturen**. 
+Exchange-clients en -services (bijvoorbeeld de Outlook-client, de Outlook Web Access-app en Exchange transportregels) hebben nog een eigen optie om gegevensrechten voor e-mails te beveiligen: **Niet doorsturen**. 
 
 Hoewel deze optie wordt weergegeven aan gebruikers (en beheerders van Exchange) als een standaardsjabloon voor Rights Management die ze kunnen selecteren, is **Niet doorsturen** geen sjabloon. Hierdoor ziet u deze niet in de klassieke Azure-portal als u de sjablonen weergeeft en beheert voor Azure RMS. In plaats daarvan zijn de opties **Niet doorsturen** ingesteld als een set rechten die gebruikers dynamisch toepassen op hun e-mailontvangers.
 

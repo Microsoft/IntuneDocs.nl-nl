@@ -1,14 +1,24 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Instructies: expliciete eigendomsrechten toevoegen | Beschrijving Azure RMS: aan de toepassing moeten expliciet eigendomsrechten worden toegevoegd bij het maken van een nieuwe licentie.
-trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroep-id ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optionele metagegevens
+title: Expliciete eigendomsrechten toevoegen | Azure RMS
+description: Uw toepassing moet expliciet 'Eigenaar'-rechten toevoegen bij het maken van een nieuwe licentie.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
+# optional metadata
 
 #ROBOTS:
-doelgroep: ontwikkelaar
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

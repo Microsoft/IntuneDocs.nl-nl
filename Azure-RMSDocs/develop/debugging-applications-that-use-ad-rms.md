@@ -1,14 +1,24 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Instructies: fouten opsporen in een toepassing met rechten | Beschrijving Azure RMS: in het volgende onderwerp wordt uitgelegd hoe u fouten opspoort in uw toepassing en de functie Logboeken van Windows gebruikt.
-trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rechtenbeheer ms.technology: techgroepidentiteit ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# optionele metagegevens
+title: Fouten opsporen in een toepassing met rechtenbescherming | Azure RMS
+description: In het volgende onderwerp staat hoe u fouten kunt opsporen in uw toepassing en hoe u het Windows-gebeurtenislogboek gebruikt.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# optional metadata
 
 #ROBOTS:
-doelgroep: ontwikkelaar
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

@@ -1,156 +1,70 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Instructies: het bijhouden en intrekken van documenten inschakelen | Beschrijving Azure RMS: Het gebruik van de functie voor het bijhouden van documenten vereist enig inzicht in het beheren van de gekoppelde metagegevens en registratie bij de service.
-trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroepidentiteit ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
-# optionele metagegevens
+title: Documenttracking gebruiken | Azure RMS
+description: De documenttrackingfunctie vereist enig inzicht in het beheren van de gekoppelde metagegevens en registratie bij de service.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
+# optional metadata
 
 #ROBOTS:
-doelgroep: ontwikkelaar
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Instructies: het bijhouden en intrekken van documenten inschakelen
+# Procedure: documenttrackingsysteem gebruiken
 
-Dit onderwerp bevat de algemene richtlijnen voor de implementatie van het bijhouden van documentinhoud, evenals voorbeeldcode voor updates van metagegevens en voor het maken van een knop **Gebruik bijhouden** voor uw app.
+Het gebruik van de documenttrackingfunctie vereist enig inzicht in het beheren van de gekoppelde metagegevens en registratie bij de service.
 
-## Stappen voor het implementeren van het bijhouden van documenten
+## Metagegevens van het documentvolgsysteem beheren
 
-Met stap 1 en 2 schakelt u het bijhouden van het document in. Met stap 3 kunnen uw app-gebruikers de site voor het bijhouden en intrekken van uw beveiligde documenten bereiken zodat ze de beveiligde documenten kunnen bijhouden en intrekken.
-
-1. Metagegevens voor het bijhouden van documenten toevoegen
-2. Het document registreren bij de RMS-service
-3. De knop Gebruik bijhouden toevoegen aan uw app
-
-Hieronder vindt u de implementatiedetails voor deze stappen.
-
-## 1. Metagegevens voor het bijhouden van documenten toevoegen
-
-Het bijhouden van documenten is een functie van Rights Management. Door specifieke metagegevens toe te voegen tijdens het beveiligingsproces, kan een document worden geregistreerd bij de serviceportal voor tracering. Vervolgens beschikt u over verschillende opties om het document bij te houden.
-
-Gebruik deze API's om een inhoudslicentie met metagegevens voor het bijhouden van documenten toe te voegen/bij te werken.
-
+Voor elk besturingssysteem dat ondersteuning biedt voor documenttracking, gelden vergelijkbare implementaties. Deze omvatten een reeks eigenschappen (de metagegevens), een nieuwe parameter die moet worden toegevoegd aan de aanmaakmethoden voor gebruikersbeleid en een methode voor het registeren van het beleid dat u wilt volgen met de documenttrackingservice.
 
 Operationeel gezien zijn voor documenttracking alleen de eigenschappen **Naam inhoud** en **Meldingstype** vereist.
 
+De volgorde van de stappen die u moet volgen om documenttracking in te stellen voor inhoud, is als volgt:
 
-- [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+-   Maak een object met **licentiemetagegevens**.
 
-  We verwachten dat u alle eigenschappen voor metagegevens instelt. Deze eigenschappen staan hieronder vermeld, gerangschikt op type.
+    Zie [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) of [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) voor meer informatie.
 
-  Zie [License metadata property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) (Typen eigenschappen voor licentiemetagegevens) voor meer informatie.
+-   Stel **Naam inhoud** en **Meldingstype** in. Dit zijn de enige vereiste eigenschappen.
 
-  - **IPC_MD_CONTENT_PATH**
+    Voor meer informatie ziet u de eigenschaptoegangsmethoden voor de klasse van licentiemetagegevens die past bij het platform: [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) of [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
 
-    Gebruik dit om het bijgehouden document te identificeren. Als een volledig pad niet mogelijk is, geeft u alleen de bestandsnaam op.
+-   Op basis van beleidstype: sjabloon of ad hoc:
 
-  - **IPC_MD_CONTENT_NAME**
+    -   Voor documenttracking op basis van een sjabloon maakt u een object voor **gebruikersbeleid**. Gebruik hierbij de metagegevens van de licentie als parameter.
 
-    Gebruik dit om de naam van het bijgehouden document te identificeren.
+        Voor meer informatie raadpleegt u [**UserPolicy.create**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) en [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc).
 
-  - **IPC_MD_NOTIFICATION_TYPE**
+    -   Voor ad-hocdocumenttracking stelt u de eigenschap **Licentiemetagegevens** in voor het object **Beleidsdescriptor**.
 
-    Gebruik dit om op te geven wanneer een melding wordt verzonden. Zie Notification type (Meldingstype) voor meer informatie.
+        Voor meer informatie raadpleegt u [**PolicyDescriptor.getLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) en [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
 
-  - **IPC_MD_NOTIFICATION_PREFERENCE**
+    **Opmerking** Het object met licentiemetagegevens kan alleen rechtstreeks worden geopend tijdens het instellen van documenttracking voor het opgegeven gebruikersbeleid. Nadat het gebruikersbeleidobject is gemaakt, kunnen de daaraan gekopppelde licentiemetagegevens niet meer worden geopend: het heeft dus geen effect als u de waarden van de licentiemetagegevens wijzigt.
 
-    Gebruik dit om het type melding op te geven. Zie Notification preference (Meldingsvoorkeuren) voor meer informatie.
+     
 
-  - **IPC_MD_DATE_MODIFIED**
+-   Roep de platformregistratiemethode voor documenttracking aan.
 
-    Het wordt aangeraden dat u deze datum telkens instelt wanneer de gebruiker op Opslaan klikt.
+    Zie [**MSUserPolicy.registerForDocTracking**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) of [**UserPolicy.registerForDocTracking**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc).
 
-  - **IPC_MD_DATE_CREATED**
+ 
 
-    Gebruik dit voor het instellen van de oorspronkelijke datum van het bestand
-
-- [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-
-Gebruik een van deze API's om de metagegevens toe te voegen aan uw bestand of stroom.
-
-- [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-
-Gebruik ten slotte deze API om uw bijgehouden document te registreren bij het traceersysteem.
-
-- [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
-
-
-## 2. Het document registreren bij de RMS-service
-
-Hier volgt een codefragment met een voorbeeld van het instellen van de metagegevens voor het bijhouden van documenten en de aanroep voor registratie bij het traceersysteem.
-
-      C++
-      HRESULT hr = S_OK;
-      LPCWSTR wszOutputFile = NULL;
-      wstring wszWorkingFile;
-      IPC_LICENSE_METADATA md = {0};
-
-      md.cbSize = sizeof(IPC_LICENSE_METADATA);
-      md.dwNotificationType = IPCD_CT_NOTIFICATION_TYPE_ENABLED;
-      md.dwNotificationPreference = IPCD_CT_NOTIFICATION_PREF_DIGEST;
-      //file origination date, current time for this example
-      md.ftDateCreated = GetCurrentTime();
-      md.ftDateModified = GetCurrentTime();
-
-      LOGSTATUS_EX(L"Encrypt file with official template...");
-
-      hr =IpcfEncryptFileWithMetadata( wszWorkingFile.c_str(),
-                               m_wszTestTemplateID.c_str(),
-                               IPCF_EF_TEMPLATE_ID,
-                               0,
-                               NULL,
-                               NULL,
-                               &md,
-                               &wszOutputFile);
-
-     /* This will contain the serialized license */
-     PIPC_BUFFER pSerializedLicense;
-
-     /* the context to use for the call */
-     PCIPC_PROMPT_CTX pContext;
-
-     wstring wstrContentName(“MyDocument.txt”);
-     bool sendLicenseRegistrationNotificationEmail = FALSE;
-
-     hr = IpcRegisterLicense( pSerializedLicense,
-                        0,
-                        pContext,
-                        wstrContentName.c_str(),
-                        sendLicenseRegistrationNotificationEmail);
-
-## Een knop **Gebruik bijhouden** toevoegen aan uw app
-
-Het toevoegen van een UI-item **Gebruik bijhouden** is net zo eenvoudig als het gebruik van een van de volgende URL-indelingen:
-
-- Met inhoud-id
-  - De inhoud-id ophalen met behulp van [IpcGetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) of [IpcGetSerializedLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) als de licentie is geserialiseerd en de licentie-eigenschap **IPC_LI_CONTENT_ID** gebruiken. Zie [License property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_property_types) (Typen licentie-eigenschappen) voor meer informatie.
-  - Gebruik met de metagegevens **ContentId** en **Issuer** de volgende notatie: `https://track.azurerms.com/#/{ContentId}/{Issuer}`
-
-    Voorbeeld: `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
-
-- Als u geen toegang hebt tot metagegevens (u wilt de niet-beveiligde versie van het document controleren), kunt u **Content_Name** gebruiken in de volgende notatie: `https://track.azurerms.com/#/?q={ContentName}`
-
-  Voorbeeld: https://track.azurerms.com/#/?q=Secret!.txt
-
-De client moet een browser openen met de juiste URL. In de RMS-portal voor het bijhouden van documenten worden de en verificatie en eventueel het doorsturen uitgevoerd.
-
-## Verwante onderwerpen
-
-* [Typen eigenschappen voor licentiemetagegevens](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [Meldingsvoorkeur](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [Type melding](/rights-management/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+ 
 
 
 <!--HONumber=Jun16_HO2-->

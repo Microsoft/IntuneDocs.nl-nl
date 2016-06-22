@@ -34,7 +34,7 @@ Dit onderwerp bevat instructies voor het instellen van uw toepassingstest.
 
 U kunt testen met Azure RMS of een RMS-server die wordt uitgevoerd op Windows Server. Het wordt aangeraden te beginnen met het testen op Azure RMS en daarna, als dit vereist is voor uw implementatie, met RMS-server.
 
-1. Zie voor tests met Azure RMS het onderwerp [Instructies: ADAL-verificatie gebruiken](how-to-use-adal-authentication,md).
+1. Zie voor tests met Azure RMS het onderwerp [Instructies: ADAL-verificatie gebruiken](how-to-use-adal-authentication.md).
 2. Zie voor tests met RMS-Server het onderwerp [Instructies: een RMS-server installeren en configureren](how-to-install-and-configure-an-rms-server.md).
 3. In de volgende stappen wordt beschreven hoe u de runtime voor ontwikkelaars installeert.
 

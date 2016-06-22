@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,7 +42,7 @@ Het opnieuw instellen van sleutels wordt ook key rolling genoemd. Stel uw tenant
 
 -   U denkt dat de oorspronkelijke tenantsleutel (de kopie in uw bezit) is aangetast.
 
-U kunt uw tenant sleutel opnieuw instellen door contact op te nemen met de klantenondersteuning van Microsoft (CSS) en aan te tonen dat u de tenantbeheerder bent.
+Om uw tenantsleutel opnieuw te versleutelen neemt u [contact op met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) om een **Azure Rights Management-ondersteuningsaanvraag voor het opnieuw versleutelen van uw Azure RMS-tenantsleutel** te openen. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het opnieuw versleutelen van uw tenantsleutel is geen gratis supportservice.
 
 Wanneer u de tenantsleutel opnieuw instelt, wordt nieuwe inhoud beveiligd met de nieuwe tenantsleutel. Dit gebeurt op een gefaseerde manier, waardoor een deel van de nieuwe inhoud nog een bepaalde tijd met de oude tenantsleutel wordt beveiligd. Eerder beveiligde inhoud blijft beveiligd met uw oude tenantsleutel. Voor de ondersteuning van dit scenario wordt uw oude tenantsleutel door Azure RMS bewaard, zodat er licenties voor oude inhoud kunnen worden verleend.
 
@@ -54,7 +54,7 @@ U kunt uw Azure RMS-configuratie en tenantsleutel exporteren door de instructies
 
 ### Stap 1: export initiëren
 
--   Neem contact op met de klantenondersteuning van Microsoft (CSS) voor het openen van een **Azure Rights Management-ondersteuningsaanvraag met een aanvraag voor het exporteren van een Azure RMS-sleutels**. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het exporteren van uw tenant-sleutel is geen gratis ondersteuningsservice.
+-   Neem contact op met [Microsoft Support](../get-started/information-support#to-contact-microsoft-support) voor het openen van een **Azure Rights Management-ondersteuningsaanvraag met een aanvraag voor het exporteren van een Azure RMS-sleutels**. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het exporteren van uw tenant-sleutel is geen gratis ondersteuningsservice.
 
 ### Stap 2: wachten op verificatie
 
@@ -97,13 +97,13 @@ Welke actie u of Microsoft het beste kan ondernemen in het geval van een schendi
 
 |Beschrijving van het incident|Waarschijnlijke reactie|
 |------------------------|-------------------|
-|Uw tenantsleutel is gelekt.|Uw tenantsleutel opnieuw instellen. Zie de sectie [Uw tenantsleutel opnieuw instellen](operations-tenant-key.md#re-key-your-tenant-key) in dit artikel.|
+|Uw tenantsleutel is gelekt.|Uw tenantsleutel opnieuw instellen. Zie de sectie [Uw tenantsleutel opnieuw versleutelen](operations-tenant-key#re-key-your-tenant-key) in dit artikel.|
 |Een niet-gemachtigde persoon of bepaalde schadelijke software beschikt over de rechten voor het gebruik van uw tenantsleutel, maar de sleutel zelf is niet gelekt.|In dit geval helpt het niet om de tenantsleutel opnieuw in te stellen en moet de hoofdoorzaak worden geanalyseerd. Als de niet-gemachtigde persoon zich toegang kon verschaffen door een proces- of softwarefout, moet die situatie worden opgelost.|
 |Beveiligingsprobleem ontdekt in het RSA-algoritme of de sleutellengte of er bestaat rekenkundig gezien een kans op een beveiligingsaanval.|Microsoft moet de Azure RMS bijwerken voor de ondersteuning van nieuwe algoritmen en langere sleutellengten die hiertegen bestand zijn, en alle klanten instrueren om hun tenantsleutels te vernieuwen.|
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

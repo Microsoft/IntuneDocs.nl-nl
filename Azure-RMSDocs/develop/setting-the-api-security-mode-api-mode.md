@@ -1,14 +1,24 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Instructies: de API-beveiligingsmodus instellen | Beschrijving Azure RMS: kiezen in welke beveiligingsmodus uw bestands-API wordt uitgevoerd.
-trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroepidentiteit ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# optionele metagegevens
+title: De API-beveiligingsmodus instellen | Azure RMS
+description: Kies welke beveiligingsmodus er moet worden uitgevoerd voor bestands-API-toepassing.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
+# optional metadata
 
 #ROBOTS:
-doelgroep: ontwikkelaar
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

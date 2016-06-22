@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -75,7 +75,7 @@ Zie de [Rights Management sharing application user guide](../rms-client/sharing-
 
 Zie [FAQ for Microsoft Rights Management Sharing Application for Mobile Platforms](http://technet.microsoft.com/dn451248) (Veelgestelde vragen over Microsoft Rights Management-toepassing voor delen voor mobiele platformen) voor informatie over mobiele apparaten.
 
-> [!TIP] Zie [Users safely share attachments with mobile users](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) (Gebruikers delen bijlagen veilig met mobiele gebruikers) voor een gedetailleerd voorbeeldscenario met schermafdrukken.
+> [!TIP] Zie [Users safely share attachments with mobile users](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) voor een gedetailleerd voorbeeldscenario met screenshots.
 
 ## Gegevensbeveiliging gebruiken met behulp van Office 365, Office 2016 of Office 2013
 Als u Azure RMS gebruikt en u de Rights Management-toepassing voor delen niet hebt geïnstalleerd, wordt de knop **Beveiligd delen** niet weergegeven op het lint of is **Op locatie beveiligen** niet beschikbaar in de Verkenner. Hiermee kunnen gebruikers eenvoudig bestanden beveiligen. Deze gebruikers moeten instructies volgend die vergelijkbaar zijn met deze.

@@ -21,11 +21,10 @@
 #### [Voorbeelden van iOS-en OS X-code](ios-os-x-code-examples.md)
 #### [Communityresources](community-resources.md)
 ### [Richtlijnen en voorwaarden voor ontwikkelaars](core-concepts.md)
-#### [Procedure: verificatie toevoegen aan uw app](authentication-integration.md)
-#### [Procedure: fout- en prestatieregistratie inschakelen](enabling-logging.md)
-#### [Procedure: een Azure-toepassings-id ophalen](application-id.md)
-#### [Procedure: ingebouwde gebruiksrechten gebruiken](built-in-rights-usage-restriction-reference.md)
-#### [Procedure: documenttrackingsysteem gebruiken](how-to-use-document-tracking.md)
+#### [Uw app registreren en RMS inschakelen met Azure AD](authentication-integration.md)
+#### [Fout- en prestatieregistratie inschakelen](enabling-logging.md)
+#### [Ingebouwde rechten gebruiken](built-in-rights-usage-restriction-reference.md)
+#### [Documenttracking gebruiken](how-to-use-document-tracking.md)
 #### [Termen](terms.md)
 ### [API-verwijzing](api-reference-4-2.md)
 #### [Android API-verwijzing](android-namespaces.md)
@@ -59,9 +58,15 @@
 #### [Ondersteunde bestandsindelingen](supported-file-formats.md)
 #### [Ondersteunde platforms](supported-platforms.md)
 #### [Gebruiksbeperkingen begrijpen](understanding-usage-restrictions.md)
-#### [Verwijzing naar gebruiksbeperking](usage-restriction-reference.md)
+#### [Overzicht van gebruiksbeperkingen](usage-restriction-reference.md)
+### [API-referentiemateriaal](api-reference-2-1.md)
+#### [Constanten](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
+#### [Gegevenstypen](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
+#### [Functies](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
+#### [Structuren](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
+#### [Foutcodes](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

@@ -32,7 +32,7 @@ Dit onderwerp bevat essentiële instructies voor de belangrijkste aspecten van e
 
 De instructies in dit onderwerp zijn gebaseerd op de voorbeeldtoepassing IPCHelloWorld, waarmee u de basisbeginselen en code van een toepassing met rechten kunt zien. U kunt de volledige voorbeeldtoepassing IPCHellowWorld downloaden als [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), van Microsoft Connect.
 
->AZURE.NOTE Het IPCHelloWorld-project is al geconfigureerd voor de Rights Management Services SDK 2.1. Voor meer informatie over het configureren van een nieuw project met gebruik van de RMS SDK 2.1 raadpleegt u [Visual Studio configureren](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+> [!Note] Het IPCHelloWorld-project is al geconfigureerd voor de Rights Management Services SDK 2.1. Voor meer informatie over het configureren van een nieuw project met gebruik van de RMS SDK 2.1 raadpleegt u [Visual Studio configureren](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
 ## MSIPC.dll laden
 

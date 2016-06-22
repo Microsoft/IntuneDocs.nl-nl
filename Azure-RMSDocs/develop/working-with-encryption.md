@@ -1,13 +1,24 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Instructies: werken met versleutelingsinstellingen | Beschrijving Azure RMS: dit onderwerp bevat informatie over onze versleutelingspakketten trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroep-id ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# optionele metagegevens
+title: Werken met versleutelingsinstellingen | Azure RMS
+description: In dit artikel leest u meer over onze versleutelingspakketten
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
+# optional metadata
 
 #ROBOTS:
-doelgroep: ontwikkelaar
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

@@ -1,14 +1,24 @@
 ---
-# vereiste metagegevens
+# required metadata
 
-titel: Instructies: een RMS-server installeren, configureren en hiermee tests uitvoeren | Beschrijving Azure RMS: RMS-server installeren en configureren voor het testen van uw toepassing met rechten.
-trefwoorden: auteur: bruceperlerms manager: mbaldwin ms.date: 28-04-2016 ms.topic: artikel ms.prod: azure ms.service: rights-management ms.technology: techgroepidentiteit ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optionele metagegevens
+title: Een RMS-server installeren, configureren en hiermee tests uitvoeren | Azure RMS
+description: RMS-server installeren en configureren voor het testen van uw toepassing met rechten.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# optional metadata
 
 #ROBOTS:
-doelgroep: ontwikkelaar
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -55,7 +65,7 @@ Met de volgende stappen stelt u uw RMS-server in:
 
     Voor tests met een RMS-server, configureert u detectie aan de serverzijde of clientzijde om Rights Management Service-client 2.1 in te schakelen voor detectie en communicatie met de RMS-server.
 
-    >![OPMERKING] Voor testen met Azure RMS is geen detectieconfiguratie vereist.
+    > [!Note] Voor testen met Azure RMS is geen detectieconfiguratie vereist.
 
   - Bij detectie aan de serverzijde registreert een beheerder met Active Directory een serviceaansluitpunt (SCP) voor het RMS-basiscluster. De client stuurt een query naar Active Directory om het SCP te detecteren en verbinding te maken met de server.
   - Bij detectie aan de clientzijde configureert u de instellingen voor RMS-servicedetectie in het register op de computer waarop de RMS-client 2.1 wordt uitgevoerd. Deze instellingen verwijzen de RMS-client 2.1 naar de RMS-server die moet worden gebruikt. Als deze aanwezig zijn, wordt er geen detectie uitgevoerd aan de serverzijde.
