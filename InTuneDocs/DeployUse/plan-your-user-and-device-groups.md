@@ -4,7 +4,7 @@
 title: Uw gebruikers- en apparaatgroepen plannen| Microsoft Intune
 description:
 keywords:
-author: SanchuSa
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -40,7 +40,7 @@ Groepen in Intune bieden u een hoge mate van flexibiliteit voor het beheren van 
 
 De standaardweergave van het knooppunt groepen in de Intune-beheerconsole is:
 
-![Schermafdruk van de standaardweergave van het knooppunt Groepen in de Intune-beheerconsole](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Schermafdruk van de standaardweergave van het knooppunt Groepen in de Intune-beheerconsole](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 Beleidsregels worden toegepast op groepen, waardoor groepshiërarchie een van uw belangrijkste ontwerpoverwegingen is. Het is ook belangrijk te weten dat de bovenliggende groep niet kan worden gewijzigd nadat de groep is gemaakt. Het ontwerp van de groepen is dus zeer belangrijk vanaf het moment dat u begint met de Intune-service. Sommige van de aanbevolen procedures voor het ontwerpen van een groepshiërarchie op basis van de behoeften van uw organisatie worden hier beschreven.
 
@@ -92,7 +92,7 @@ Beleidsregels worden toegepast op groepen, waardoor groepshiërarchie een van uw
 
     * De groep **Laptopgebruikers** is lid van de beveiligingsgroep **Goedgekeurde gebruikers** .
 
-    * U maakt een groep in Intune die gebruikmaakt van een dynamische lidmaatschapsquery die de leden van de groep **Goedgekeurde gebruikers** omvat. Het resultaat is dat **Pat** in uw Intune-gebruikersgroep wordt opgenomen..
+    * U maakt een groep in Intune die gebruikmaakt van een dynamische lidmaatschapsquery die de leden van de groep **Goedgekeurde gebruikers** omvat. Het resultaat is dat **Pat** in uw Intune-gebruikersgroep wordt opgenomen.
 
 > [!TIP]
 > Als u uw groepen maakt, denk dan na over hoe u het beleid toepast. Wellicht hebt u beleidsregels die specifiek zijn voor besturingssystemen van apparaten en beleidsregels die specifiek zijn voor verschillende rollen in uw organisatie of organisatie-eenheden die u al hebt gedefinieerd in Active Directory. Voor sommigen is het nuttig om specifieke apparaatgroepen voor iOS, Android en Windows en gebruikersgroepen voor elke organisatierol te hebben.
@@ -131,22 +131,22 @@ Als uw organisatie de mogelijkheid biedt dat werknemers hun eigen apparaten op h
 
 Zorg dat u beleidsregels plant die de lokale privacyregelgeving niet schenden in het geval van BYOD of een combinatie van regels. Maak een bovenliggende groep voor alle gebruikers die hun eigen apparaten meebrengen. Deze groep kan vervolgens worden gebruikt om beleidsregels toe te passen die gelden voor alle gebruikers in deze categorie.
 
-![Schermafdruk van het maken van een bovenliggende BYOD-groep](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Schermafdruk van het maken van een bovenliggende BYOD-groep](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 Op deze manier kunt u een groep maken voor de gebruikers met een apparaat van het bedrijf:
 
-![Schermafdruk van de gebruikersgroepen op hetzelfde niveau voor BYOD-apparaten en apparaten van het bedrijf](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Schermafdruk van de gebruikersgroepen op hetzelfde niveau voor BYOD-apparaten en apparaten van het bedrijf](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Groepen voor geografische regio 's
 Als uw organisatie beleid nodig heeft voor specifieke regio's, kunt u groepen maken op basis van een geografische regio. U kunt deze baseren op regionale groepen die u mogelijk al hebt gemaakt in Active Directory (AD), en deze kunt u synchroniseren met Azure AD. U kunt ze ook rechtstreeks in Azure AD maken.
 
-Op deze schermafdrukken ziet u hoe u Intune-groepen maakt op basis van groepen die zijn gesynchroniseerd vanuit uw lokale AD. In het volgende voorbeeld wordt ervan uitgegaan dat u een AD-beveiligingsgroep hebt met de naam **US Users Group**..
+Op deze schermafdrukken ziet u hoe u Intune-groepen maakt op basis van groepen die zijn gesynchroniseerd vanuit uw lokale AD. In het volgende voorbeeld wordt ervan uitgegaan dat u een AD-beveiligingsgroep hebt met de naam **US Users Group**.
 
 1. Geef eerst algemene informatie op.
 
-    ![Schermopname van het gebied Groep bewerken](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![Schermopname van het gebied Groep bewerken](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 Selecteer onder Lidmaatschapscriteria **US Users Group**, gesynchroniseerd uit Active Directory als de beveiligingsgroep die u wilt gebruiken onder Lidmaatschapsregels.
 
@@ -158,8 +158,7 @@ Controleer en kies vervolgens **Voltooien** om het maken van de groep te voltooi
 
 In ons voorbeeld hebben we ook een groep gemaakt voor het Midden-Oosten en Azië (MEA).
 
-> [!NOTE]
-> Als het groepslidmaatschap niet is ingevuld op basis van het lidmaatschap van de beveiligingsgroep, controleert u of u Intune-licenties aan die leden hebt toegewezen.
+> [!NOTE] Als het groepslidmaatschap niet is ingevuld op basis van het lidmaatschap van de beveiligingsgroep, controleert u of u Intune-licenties aan die leden hebt toegewezen.
 
 ### Groepen voor specifieke hardware
 Als in uw organisatie beleidsregels worden vereist die van toepassing zijn op specifieke hardwaretypen, kunt u groepen maken op basis van deze vereiste. U kunt deze baseren op specifieke groepen die u al hebt gemaakt in uw lokale AD en deze naar Azure AD synchroniseren. U kunt ze ook rechtstreeks in Azure AD maken. In dit voorbeeld gebruiken we de groep **US Users Group** als het bovenliggende item voor de groep **Laptopgebruikers**.
@@ -168,15 +167,14 @@ Als in uw organisatie beleidsregels worden vereist die van toepassing zijn op sp
 
 De hiërarchie van groepen moet er op dit moment uitzien zoals hieronder is weergegeven. Zoals u ziet, zijn er nu leden binnen de Intune-groep **Laptopgebruikers**. Elk beleid dat wordt toegepast op deze groep wordt nu ook toegepast op BYOD-laptopgebruikers uit de Verenigde Staten.
 
-![Weergave van de groep Laptopgebruikers](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Weergave van de groep Laptopgebruikers](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Groepen voor specifieke besturingssystemen
 Als in uw organisatie beleidsregels worden vereist die van toepassing zijn op bepaalde besturingssystemen, zoals Android, iOS of Windows, kunt u groepen maken op basis van deze vereiste. Net zoals in de vorige voorbeelden kunt u deze baseren op specifieke groepen die u al hebt gemaakt in uw lokale AD en deze naar Azure AD synchroniseren. U kunt ze ook rechtstreeks in Azure AD maken.
 
-Met dezelfde methode als in de eerdere voorbeelden kunnen we groepen maken op basis van gebruikers <!--devices?--> die een specifiek besturingssysteem gebruiken.
+Het volgen van dezelfde methode van de eerdere voorbeelden, maken we weergegeven op basis van gebruikers <!--devices?--> met specifieke besturingssysteem-platforms.
 
-> [!NOTE]
-> Als u gebruikers hebt met meerdere mobiele platforms of besturingssystemen en u geen automatische manier hebt om gebruikers te categoriseren als gebruikers met Android, iOS of Windows, overweeg dan beleidsregels toe te passen op apparaatniveau. Hiermee hebt u meer flexibiliteit bij het toepassen van beleid dat specifiek is voor het besturingssysteem.
+> [!NOTE] Als uw gebruikers werken met meerdere mobiele platformen of besturingssystemen en u geen automatische methode hebt om de gebruikers als Android-, iOS- of Windows-gebruikers te categoriseren, kunt u overwegen beleidsregels op apparaatniveau toe te passen. Hiermee hebt u meer flexibiliteit bij het toepassen van beleid dat specifiek is voor het besturingssysteem.
 >
 > U kunt groepen dynamisch inrichten op basis van het besturingssysteem van het apparaat. Doe dit met AD- of AAD-beveiligingsgroepen.
 
@@ -208,8 +206,7 @@ Ga door met het maken van apparaatgroepen totdat u een hiërarchie van apparaatg
 ## Groepshiërarchieën en naamgevingsregels
 Voor een eenvoudiger beheer, wordt u aangeraden de naam van elk beleid te baseren op het doel, het platform en de omvang waarop het beleid wordt toegepast. Deze naamgevingsnorm moet de groepsstructuur volgen die u hebt gemaakt als voorbereiding op het toepassen van uw beleid.
 
-Een Android-beleid dat wordt toegepast op alle zakelijke, mobiele Android-apparaten in de VS kan bijvoorbeeld de volgende naam krijgen:
-**CO_US_Mob_Android_General**.
+Een Android-beleid dat wordt toegepast op alle zakelijke, mobiele Android-apparaten in de VS kan bijvoorbeeld de naam **CO_US_Mob_Android_General** krijgen.
 
 ![Beleid voor Android maken](/intune/media/Intune_planning_policy_android_small.png)
 
@@ -221,6 +218,6 @@ Met deze methode van naamgeving voor beleidsregels kunt u snel beleidsregels en 
 [Groepen maken](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
