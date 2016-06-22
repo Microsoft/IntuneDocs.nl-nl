@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -58,14 +58,14 @@ Het tabblad **Intune Mobile Application Management** biedt een samenvattingsrapp
 
 1.  Klik op het tabblad **Intune Mobile Application Management** op de tegel **Aanvraag voor wissen** om het tabblad **Aanvraag voor wissen** te openen.
 
-2.  Op het tabblad **Verzoek om te wissen** ziet u een lijst met uw verzoeken, gegroepeerd per gebruiker.  Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd, een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker.  De status geeft aan of een wisaanvraag nog **in behandeling** is, **mislukt** is of **geslaagd** is..
+2.  Op het tabblad **Verzoek om te wissen** ziet u een lijst met uw verzoeken, gegroepeerd per gebruiker.  Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker.  De status geeft aan of een verzoek om te wissen nog steeds **in behandeling**, **mislukt**of **geslaagd**is.
 
-### Zie tevens
+### Zie ook
 [App-gegevens beschermen met beleid voor het beheren van mobiele apps ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [De Azure-portal gebruiken](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

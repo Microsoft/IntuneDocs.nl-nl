@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Apparaten inschrijven bij Microsoft Intune | Microsoft Intune
+title: Apparaten registreren | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -18,7 +18,7 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Apparaten inschrijven bij Intune voor beheer
 Mobile Device Management (MDM) van Microsoft Intune maakt gebruik van inschrijving om apparaten onder beheer te brengen en toegang tot bronnen toe te staan. De manier waarop u apparaten inschrijft, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. 'Bring your own device'-scenario’s (BYOD-scenario’s) en scenario’s met apparaten die bedrijfseigendom zijn (COD, company-owned device), vereisen een inschrijvingsproces. Organisaties die Exchange ActiveSync gebruiken, lokaal of gehost in de cloud, kunnen lichter beheer zonder inschrijvingsvereisten toepassen. Windows-pc's kunnen ook worden beheerd met Intune-clientsoftware.
+
+###  Ondersteunde apparaatplatformen
+
+Met Intune kunnen de volgende apparaatplatformen worden beheerd:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Apparaatinschrijving inschakelen  
  Dankzij inschrijving kunnen gebruikers toegang krijgen tot bedrijfsbronnen op hun eigen apparaten en kan de beheerder ervoor zorgen dat die apparaten de beleidsregels naleven die de bedrijfsbronnen beveiligen. Dit is de beste manier om met Intune 'Bring Your Own Device'-scenario's te ondersteunen. De beheerder moet inschrijving in de Intune-console inschakelen, waarvoor mogelijk het maken van een vertrouwensrelatie met het apparaat is vereist en licenties aan gebruikers moeten worden toegewezen. Het apparaat wordt vervolgens ingeschreven, meestal door gebruikers die de referenties voor hun werk- of schoolaccount invoeren. Het apparaat ontvangt vervolgens beleid van Intune en krijgt toegang tot bronnen.
@@ -58,6 +64,6 @@ Computers die door Intune-clientsoftware worden beheerd, kunnen niet selectief w
 [Windows-pc's met Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

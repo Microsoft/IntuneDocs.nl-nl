@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ De volgende regels zijn van toepassing op het aanschaffen van extra cloudopslag 
 
 -   U moet een actief betaald abonnement hebben om meer opslagruimte te kunnen aanschaffen.
 
--   Alleen financieel medewerkers of hoofdbeheerders voor uw Microsoft Online Service kunnen extra opslag aanschaffen via de Intune-accountportal. Als u deze medewerkers wilt toevoegen, verwijderen of beheren, moet u hoofdbeheerder zijn en u aanmelden bij de Intune-accountportal.
+-   Alleen financieel medewerkers of hoofdbeheerders voor uw Microsoft Online Service kunnen extra opslag aanschaffen via de Office 365-beheerportal. Als u deze medewerkers wilt toevoegen, verwijderen of beheren, moet u hoofdbeheerder zijn en u aanmelden bij de Office 365-beheerportal.
 
 -   Als u een volumelicentieklant bent die Intune of de Microsoft Intune-invoegtoepassing heeft aangeschaft via de Enterprise Agreement, neem dan contact op met uw accountmanager bij Microsoft of Microsoft Partner voor prijsinformatie en om meer opslagruimte aan te schaffen.
 
@@ -61,10 +61,11 @@ Wanneer u apps implementeert, kunt u kiezen uit een van de volgende implementati
 
 -   **Vereiste installatie**: de app wordt op het apparaat geïnstalleerd zonder dat tussenkomst van de eindgebruiker is vereist.
 
-    > [!TIP]
-    > Voor iOS-apparaten die zich niet in de modus Supervisie bevinden, en voor alle Android-apparaten, moet de gebruiker de aangeboden app accepteren voordat deze wordt geïnstalleerd.
+    > [!TIP] Voor iOS-apparaten die zich niet in de modus Supervisie bevinden, en voor alle Android-apparaten, moet de gebruiker de aangeboden app accepteren voordat deze wordt geïnstalleerd.
     >
     > U kunt geen nieuwe apps meer implementeren op iOS-apparaten met een besturingssysteem dat ouder is dan iOS 7.1. Eventuele bestaande geïmplementeerde apps op apparaten met een ouder besturingssysteem dan iOS 7.1 blijven werken en worden door Intune beheerd.
+    > 
+    >  Als een eindgebruiker een app verwijdert die u hebt geïmplementeerd als een vereiste installatie, wordt de app automatisch opnieuw geïnstalleerd door Intune na de volgende inventarisatiecyclus die meestal elke 7 dagen plaatsvindt.
 
 -   **Beschikbare installatie**: de app wordt weergegeven in de bedrijfsportal en eindgebruikers kunnen de app op aanvraag installeren.
 
@@ -86,8 +87,7 @@ Wanneer u apps implementeert, kunt u kiezen uit een van de volgende implementati
 |Externe koppeling (geïmplementeerd op een apparaatgroep)|Nee|Nee|Nee|Nee|
 |Beheerde iOS-app uit de App Store (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
 |Beheerde iOS-app uit de App Store (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-> [!TIP]
-> Wanneer u een app implementeert en zowel gebruikers- als apparaatgroepen selecteert, kunt u de app alleen als **Beschikbare installatie** implementeren.
+> [!TIP] Wanneer u een app implementeert en zowel gebruikers- als apparaatgroepen selecteert, kunt u de app alleen als **Beschikbare installatie** implementeren.
 
 ## Implementatieconflicten
 Wanneer twee implementaties met dezelfde implementatieactie worden ontvangen door een apparaat, gelden de volgende regels:
@@ -103,8 +103,8 @@ Wanneer twee implementaties met dezelfde implementatieactie worden ontvangen doo
 
 ## Volgende stappen
 
-Leer hoe u [apps in Microsoft Intune implementeert](deploy-apps-in-microsoft-intune.md).
+Lees hoe u [apps in Microsoft Intune implementeert](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -2,6 +2,7 @@
 
 # [Aan de slag](what-to-know-before-you-start-microsoft-intune.md)
 ## [Wat u moet weten voordat u begint](what-to-know-before-you-start-microsoft-intune.md)
+### [Ondersteunde mobiele apparaten en computers](supported-mobile-devices-and-computers.md)
 ### [Ondersteunde webbrowsers](supported-web-browsers.md)
 ### [Vereisten voor de netwerkinfrastructuur](network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Beheerdersaccounts, websites en machtigingen](administrative-accounts-websites-perms.md)
@@ -18,7 +19,7 @@
 ### [Gebruikers en apparaten organiseren](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Beleid maken en een app publiceren](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [De bedrijfsportal aanpassen](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Mobiele apparaten registreren en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Mobiele apparaten inschrijven en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](post-configuration-tasks.md)
 
 ## [Kiezen hoe u apparaten beheert](choose-how-to-manage-devices.md)
@@ -28,7 +29,7 @@
 ## [Implementatiefasen voor Intune-implementaties](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Projectbereik](project-scope.md)
 ### [Testen van het concept](proof-of-concept.md)
-### [Testfase](pilot.md)
+### [Test](pilot.md)
 ### [Implementatie in het bedrijf](enterprise-rollout.md)
 ### [Bewerkingen en onderhoud](operations-and-maintenance.md)
 
@@ -38,6 +39,6 @@
 # [Problemen oplossen](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,7 +46,7 @@ Wanneer een gebruiker in de doelgroep Skype voor Bedrijven Online op zijn appara
 
 -   Een **Android**- of **iOS**-apparaat zijn.
 
--   Zijn **ingeschreven** bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Zijn **geregistreerd** bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -   **Voldoen aan** het geïmplementeerde [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nalevingsbeleid.
 
@@ -75,14 +75,12 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 ### Stap 2: Nalevingsbeleid configureren en implementeren
 [Maak](create-a-device-compliance-policy-in-microsoft-intune.md) en [implementeer](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) nalevingsbeleid op alle apparaten die door het beleid worden beïnvloed. Dit zijn alle apparaten die door de gebruikers in de **doelgroepen ** worden gebruikt.
 
-> [!NOTE]
-> Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
+> [!NOTE] Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, wordt beleid voor voorwaardelijke toegang toegepast op Azure Active Directory-beveiligingsgroepen.
 
 
-> [!IMPORTANT]
-> Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
+> [!IMPORTANT] Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
 
-Wanneer u klaar bent, gaat u door naar **stap 3**..
+Wanneer u klaar bent, gaat u door naar **stap 3**.
 
 ### Stap 3: Het beleid voor Skype voor Bedrijven Online configureren
 Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde apparaten en apparaten die aan het beleid voldoen, toegang hebben tot Skype voor Bedrijven Online. Dit beleid wordt opgeslagen in Azure Active Directory.
@@ -104,7 +102,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
 5.  Klik desgewenst onder **Uitgesloten groepen**op **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
 
-6.  Wanneer u klaar bent, klikt u op **Opslaan**..
+6.  Wanneer u klaar bent, klikt u op **Opslaan**.
 
 U hebt nu voorwaardelijke toegang voor Skype voor Bedrijven Online geconfigureerd. U hoeft het beleid voor voorwaardelijke toegang niet te implementeren; het wordt direct van kracht.
 
@@ -121,6 +119,6 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 * **Apparaten die zijn geregistreerd bij AAD en voldoen aan het beleid**: deze apparaten hebben toegang tot Skype voor Bedrijven Online.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

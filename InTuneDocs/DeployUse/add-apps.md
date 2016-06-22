@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,11 +29,11 @@ ms.suite: ems
 Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd in dit onderwerp, voordat u begint met het implementeren van apps met Microsoft Intune. Dit helpt u te begrijpen welke apps u op welk platform kunt implementeren en aan welke vereisten moet worden voldaan voordat u dat doet.
 
 ## Typen apps die u kunt implementeren met Intune
-U kunt apps implementeren voor alle apparaattypen die worden ondersteund door Intune. Afhankelijk van het type app dat u wilt implementeren, kunnen het proces en de ondersteunde apparaten verschillen. Gebruik de volgende tabel om inzicht te krijgen in wat u wel en niet kunt implementeren.
+U kunt apps implementeren voor alle apparaattypen die worden ondersteund door Intune. Afhankelijk van het type app dat u wilt implementeren, kunnen het proces en de ondersteunde apparaten verschillen. Gebruik de volgende informatie om inzicht te krijgen in wat u wel en niet kunt implementeren.
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Apps van dit type moeten ondersteuning bieden voor installatie op de achtergrond, zonder gebruikersinvoer. Uw app-documentatie moet alle relevante opdrachtregelopties bevatten om de app op de achtergrond te installeren (bijvoorbeeld **/q**).
+- Apps van dit type moeten ondersteuning bieden voor installatie op de achtergrond, zonder gebruikersinvoer. Uw appdocumentatie moet alle relevante opdrachtregelopties bevatten om de app op de achtergrond te installeren (bijvoorbeeld **/q**). Een lijst met veelgebruikte opdrachtregelopties vindt u [hier](https://support.microsoft.com/en-us/kb/227091).
 - Aanvullende bestanden en mappen die voor het installatieprogramma van de app vereist zijn, moeten beschikbaar zijn op de locatie die u voor de installatiebestanden van de app opgeeft.
 - In de meeste gevallen hoeven voor Windows Installer-bestanden (.msi) en Windows Installer Patch-bestanden (.msp) geen opdrachtregelargumenten te worden geïnstalleerd door Intune. Raadpleeg de documentatie van uw app. Als opdrachtregelargumenten vereist zijn, moeten deze worden ingevoerd als naamwaardeparen (zoals TRANSFORMS=custom_transform.mst).
 
@@ -49,7 +49,7 @@ Apps van dit type worden geüpload naar uw cloudopslag.
 
 Apps van dit type worden geüpload naar uw cloudopslag.
 
-Op dit moment kunnen eindgebruikers geen zakelijke apps installeren vanuit de Intune-bedrijfsportal-app voor iOS. Dit wordt veroorzaakt door beperkingen aan apps die worden gepubliceerd in de iOS App Store (zie [Beoordelingsrichtlijnen voor App Store](https://developer.apple.com/app-store/review/guidelines/)). Gebruikers hebben toegang tot zakelijke apps (inclusief beheerde App Store-apps en app-pakketten voor de bedrijfstak) door de bedrijfsportal-app op hun apparaat te starten en vervolgens op de tegel Bedrijfsapps te tikken, waardoor de browser wordt geopend die hen omleidt naar de Intune-webportal.
+Op dit moment kunnen eindgebruikers zakelijke apps niet rechtstreeks installeren vanuit de Intune-bedrijfsportal-app voor iOS. Dit wordt veroorzaakt door beperkingen aan apps die worden gepubliceerd in de iOS App Store (zie [Beoordelingsrichtlijnen voor App Store](https://developer.apple.com/app-store/review/guidelines/)). Gebruikers hebben toegang tot zakelijke apps (inclusief beheerde App Store-apps en app-pakketten voor de bedrijfstak) door de bedrijfsportal-app op hun apparaat te starten en vervolgens op de tegel Bedrijfsapps te tikken, waardoor de browser wordt geopend die hen omleidt naar de Intune-webportal.
 
 ### **App-pakket voor Windows Phone (&#42;.xap, .appx, .appxbundle)**
 - Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
@@ -81,11 +81,10 @@ Gebruikt wanneer u beschikt over een:
 Apps op basis van externe koppelingen worden niet opgeslagen in de Intune-cloudopslag.
 ### **Beheerde iOS-app uit de App Store**
 Hiermee kunt u gratis iOS-apps uit de App Store beheren en implementeren. U kunt ermee ook [Mobile Application Management-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) aan [compatibele apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) koppelen en hun status controleren in de beheerconsole.<br /><br />Beheerde iOS-apps worden niet opgeslagen in uw Intune-cloudopslag.
-> [!TIP]
-> Opties voor mobiele apparaten worden pas beschikbaar wanneer u de [Mobile Device Management-instantie](get-ready-to-enroll-devices-in-microsoft-intune.md) hebt ingesteld op Intune.
+> [!TIP] Opties voor mobiele apparaten worden pas beschikbaar wanneer u de [Mobile Device Management-instantie hebt ingesteld](get-ready-to-enroll-devices-in-microsoft-intune.md) op Intune.
 
 ## Ondersteuning voor UWP-apps
-Bij Windows 10-apparaten is voor de installatie van Line-Of-Business-apps geen sideloadsleutel vereist. De registersleutel **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** moet echter de waarde **1** hebben, zodat extern laden kan worden ingeschakeld.
+Bij Windows 10-pc's is geen sideloadsleutel vereist voor de installatie van Line-Of-Business-apps. De registersleutel **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** moet echter de waarde **1** hebben, zodat extern laden kan worden ingeschakeld.
 
 Als deze registersleutel niet is geconfigureerd, wordt deze waarde door Intune automatisch ingesteld op **1** wanneer u voor het eerst een app op het apparaat implementeert. Als u deze waarde hebt ingesteld op **0**, kan de waarde niet automatisch door Intune worden gewijzigd en mislukt de implementatie van de Line-Of-Business-apps.
 
@@ -95,8 +94,8 @@ Op Windows 10 Mobile-apparaten kunt u een certificaat voor de ondertekening van 
 
 ## Volgende stappen 
 
-Vervolgens moet u apps aan de Intune-console toevoegen voordat u ze kunt implementeren. U kunt apps toevoegen voor [ingeschreven apparaten](add-apps-for-mobile-devices-in-microsoft-intune.md), of voor [Windows-pc's die u met de Intune-clientsoftware beheert](add-apps-for-windows-pcs-in-microsoft-intune.md).
+Vervolgens moet u apps aan de Intune-console toevoegen voordat u ze kunt implementeren. U kunt apps toevoegen voor [geregistreerde apparaten](add-apps-for-mobile-devices-in-microsoft-intune.md), of voor [Windows-pc's die u met de Intune-clientsoftware beheert](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

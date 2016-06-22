@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor het Android- en Samsung KNOX-configuratiebeleid in Microsoft Intune
+title: Instellingen voor het Android- en Samsung KNOX-configuratiebeleid | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ Gebruik het **algemene Android-configuratiebeleid** van Microsoft Intune om inst
 
 -   **Kioskmodus** (alleen voor Samsung KNOX-apparaten): hiermee kunt u een apparaat zodanig vergrendelen dat alleen bepaalde functies beschikbaar zijn. U kunt bijvoorbeeld toestaan dat een apparaat slechts één beheerde app uitvoert die u opgeeft, of kunt u de volumeknoppen op een apparaat uitschakelen. Deze instellingen kunnen worden gebruikt voor een demonstratiemodel van een apparaat of voor een apparaat dat is toegewezen aan slechts één functie, zoals een verkooppuntapparaat.
 
--   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met apps die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd (de installatie van de app kan echter niet worden geblokkeerd).
+-   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met toepassingen die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd (de installatie van de app kan echter niet worden geblokkeerd).
 
 > [!TIP]
 > U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie [Beleidsinstellingen voor voorwaarden in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) voor meer informatie over het gebruik van voorwaarden.
@@ -50,7 +50,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Minimale wachtwoordlengte**|De minimale lengte van het wachtwoord.|Ja|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Wist de gegevens op het apparaat als dit aantal aanmeldingspogingen mislukt.|Ja|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Geef het aantal minuten op waarna het apparaat automatisch wordt vergrendeld.|Ja|Ja|
-|**Verlopen van wachtwoorden (dagen)**|Het aantal dagen waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
+|**Wachtwoordverlooptijd (dagen)**|Het aantal dagen waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hoeveel eerder gebruikte wachtwoorden worden onthouden.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat eerder gebruikte wachtwoorden opnieuw worden gebruikt.|Ja|Ja|
 |**Wachtwoordkwaliteit**|Hiermee selecteert u het complexiteitsniveau voor het wachtwoord en geeft u ook aan of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
@@ -138,8 +138,8 @@ In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met 
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee wordt een lijst gemaakt met de apps die niet worden beheerd door Intune en die niet mogen worden geïnstalleerd en uitgevoerd door gebruikers.|
-|**Niet rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee wordt een lijst gemaakt met de apps die gebruikers mogen installeren. Om te blijven voldoen aan het beleid, mogen gebruikers apps die niet worden vermeld, niet installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
+|**Rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee worden de apps vermeld die niet worden beheerd door Intune en waarvan u niet wilt dat deze door gebruikers worden geïnstalleerd en uitgevoerd. Als gebruikers een van deze apps installeren, wordt deze vermeld in het rapport voor niet-compatibele apps.|
+|**Niet rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Vermeldt de apps die u wilt toestaan dat in uw bedrijf. Om te blijven voldoen aan het beleid, mogen gebruikers geen apps installeren die niet worden vermeld. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
 |**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store.<br /><br />Zie URL’s voor app stores opgeven verderop in dit onderwerp voor meer informatie.|
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
@@ -150,7 +150,7 @@ Geef de volgende instellingen op voor **Samsung KNOX-apparaten**:
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Klik op **Bladeren** en selecteer vervolgens de beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de store, worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.|
+|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Kies **Bladeren** en selecteer vervolgens de beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de store worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.|
 |**Volumeknoppen toestaan**|Hiermee wordt het gebruik van de volumeknoppen op het apparaat in- of uitgeschakeld.|
 |**Knop voor slaapstand/ontwaken van scherm toestaan**|Hiermee wordt de knop voor slaapstand/ontwaken van het scherm in- of uitgeschakeld op het apparaat.|
 
@@ -161,9 +161,9 @@ Gebruik het **Rapport met niet-compatibele apps** om de compatibiliteit van toeg
 
 ###### Het rapport met niet-compatibele apps uitvoeren
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Rapporten** &gt; **Rapport met niet-compatibele apps**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Rapporten** &gt; **Rapport met niet-compatibele apps**.
 
-2.  Selecteer de apparaatgroepen die u wilt controleren, of u nu op compatibele of op niet-compatibele apps wilt controleren, en klik vervolgens op **Rapport weergeven**.
+2.  Selecteer de apparaatgroepen die u wilt controleren, of u nu op compatibele en/of op niet-compatibele apps wilt controleren, en kies vervolgens **Rapport weergeven**.
 
 #### URL's voor app stores opgeven
 Als u een app-URL wilt opgeven in de lijst met compatibele apps, gebruikt u de volgende notatie:
@@ -177,10 +177,9 @@ Open de installatiepagina voor de app en kopieer de URL naar het klembord. U kun
 ## Aangepaste beleidsinstellingen
 Gebruik het **aangepaste Android-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om de functies voor Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor informatie over de instellingen die u met dit beleid kunt configureren.
+Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
 
-> [!NOTE]
-> Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten. Zie Een aangepast Wi-Fi-profiel met een vooraf gedeelde sleutel configureren verderop in dit onderwerp voor meer informatie.
+> [!NOTE] Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten.
 
 ### Algemene instellingen
 
@@ -253,11 +252,11 @@ Hoewel Wi-Fi-profielen voor Android-apparaten door Intune worden ondersteund, on
 
 4.  Wanneer u klaar bent, slaat u het beleid op en implementeert u het beleid op de betreffende Android-apparaten. Het nieuwe Wi-Fi-profiel wordt weergegeven in de lijst met verbindingen op het apparaat.
 
-### Zie ook
+### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

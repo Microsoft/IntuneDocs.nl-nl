@@ -18,7 +18,7 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,11 +38,11 @@ Controleer **voordat** u voorwaardelijke toegang configureert. het volgende:
 
 -   Uw versie van Exchange moet **Exchange 2010 of hoger** zijn. De CAS-matrix (Client Access Server) voor Exchange-servers wordt ondersteund.
 
--   U moet de **Exchange On-premises-connector** gebruiken die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Microsoft Exchange On-premises. Hiermee kunt u apparaten beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console. Zie [Intune Exchange On-premises-connector](intune-on-premises-exchange-connector.md) voor meer informatie over de connector..
+-   U moet de **Exchange On-premises-connector** gebruiken die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Microsoft Exchange On-premises. Hiermee kunt u apparaten beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console. Zie [Intune On-premises Exchange-connector](intune-on-premises-exchange-connector.md) voor meer informatie over de connector.
 
     -   De Exchange On-premises-connector die u in de Intune-console vindt, is uitsluitend bestemd voor uw Intune-tenant en mag niet worden gebruikt met een andere tenant. U moet er ook voor zorgen dat de Exchange-connector voor uw tenant **op slechts één machine** is geïnstalleerd.
 
-        Deze connector moet worden gedownload vanuit de Intune-beheerconsole.  Zie [Lokale Exchange-connector configureren voor lokale of gehoste Exchange](intune-on-premises-exchange-connector.md) voor een overzicht over het configureren van de lokale Exchange-connector.
+        Deze connector moet worden gedownload vanuit de Intune-beheerconsole.  Zie [On-premises Exchange-connector configureren voor on-premises of gehoste Exchange](intune-on-premises-exchange-connector.md) voor een overzicht over het configureren van de on-premises Exchange-connector.
 
     -   De connector kan op elke machine worden geïnstalleerd, zolang die machine maar kan communiceren met de Exchange-server.
 
@@ -63,8 +63,7 @@ Wanneer beleid voor voorwaardelijke toegang wordt geconfigureerd en een gebruike
 
 Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardelijke toegang voor Exchange On-premises wordt gebruikt om te bepalen of apparaten moeten worden geblokkeerd of toegestaan.
 
-![Diagram met de beslissingspunten die bepalen of de toegang van een apparaat tot Exchange On-premises wordt toegestaan of geblokkeerd](../media/ConditionalAccess8-2.png)
-Als niet aan een voorwaarde voor het beleid voor voorwaardelijke toegang wordt voldaan, krijgt de gebruiker een van de volgende berichten te zien wanneer hij zich aanmeldt.
+![Diagram met de beslissingspunten die bepalen of aan een apparaat toegang wordt verleend tot Exchange On-premises of dat deze wordt geblokkeerd](../media/ConditionalAccess8-2.png) Als er niet wordt voldaan aan een beleid voor voorwaardelijke toegang, krijgt de gebruiker een van de volgende berichten te zien wanneer deze zich aanmeldt:
 
 - Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het apparaatrecord in Azure Active Directory.
 
@@ -76,18 +75,18 @@ Als niet aan een voorwaarde voor het beleid voor voorwaardelijke toegang wordt v
 -   Systeemeigen e-mail-app voor iOS.
 
 -   Systeemeigen e-mail-app voor Android 4 of hoger
+> [!NOTE] Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
 
-## Ondersteuning voor pc 's
+## Ondersteuning voor pc's
 
-De **Mail**-toepassing in Windows 8 en hoger (indien ingeschreven in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Beleid voor voorwaardelijke toegang configureren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) achtereenvolgens **Beleid** > **Voorwaardelijke toegang** > **Beleid voor Exchange On-premises**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Het beleid configureren met de gewenste instellingen:
-![Schermafbeelding van pagina met beleid van Exchange On-premises](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2.  Configureer het beleid met de gewenste instellingen: ![Schermafbeelding van de pagina Beleid voor Exchange On-premises](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
   - **De toegang tot Exchange On-premises blokkeren voor e-mail-apps indien het apparaat niet voldoet aan het beleid of niet is ingeschreven voor Microsoft Intune:** wanneer u deze optie selecteert, worden apparaten geblokkeerd die niet worden beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet voldoen aan het nalevingsbeleid van Exchange-services.
 
@@ -98,29 +97,28 @@ De **Mail**-toepassing in Windows 8 en hoger (indien ingeschreven in [!INCLUDE[w
 
   - **Uitgesloten groepen:** selecteer de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-gebruikersgroepen die zijn uitgesloten van het beleid voor voorwaardelijke toegang. Gebruikers in deze lijst zijn uitgesloten, zelfs als ze ook op de lijst **Doelgroepen** staan.
 
-  - **Platformuitzonderingen:** kies **Regel toevoegen** om een regel te configureren waarin de toegangsniveaus voor bepaalde mobiele-apparaatreeksen en -modellen worden gedefinieerd. Omdat deze apparaten van elk type kunnen zijn, kunt u ook configureren welke apparaattypen niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+  - **Platformuitzonderingen:** kies **Regel toevoegen** om een regel te configureren waarin de toegangsniveaus voor bepaalde mobiele-apparaatreeksen en -modellen worden gedefinieerd. Omdat deze apparaten van elk type kunnen zijn, kunt u ook apparaattypen configureren die niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Standaardregel:** als er apparaten zijn die niet onder de andere regels vallen, kunt u zelf kiezen of deze toegang krijgen tot Exchange, worden geblokkeerd of in quarantaine worden geplaatst. Wanneer u de regel instelt op het toestaan van toegang, wordt e-mailtoegang automatisch verleend aan iOS-, Windows- en Samsung KNOX-apparaten wanneer deze zijn ingeschreven en voldoen aan het beleid. De eindgebruiker hoeft geen procedure te doorlopen om de e-mail op te halen.  Op Android-apparaten die niet werken op Samsung KNOX, krijgen eindgebruikers een quarantaine-e-mail met aanwijzingen voor de verificatie van de inschrijving en de naleving van het beleid voordat ze toegang krijgen tot e-mail. Als u de regel zo instelt dat de toegang wordt geblokkeerd of dat het apparaat in quarantaine wordt geplaatst, wordt de toegang tot Exchange voor alle apparaten geblokkeerd, ongeacht of deze al zijn ingeschreven in Intune of niet. Als u wilt voorkomen dat de regel betrekking heeft op apparaten die zijn ingeschreven en voldoen aan het beleid, schakelt u de optie **Standaardregel negeren** in.
 >[!TIP]
 >Als het uw bedoeling is om eerst alle apparaten te blokkeren voordat u toegang verleent tot e-mail, kiest u Toegang blokkeren, of Quarantaineregel. De standaardregel geldt voor alle apparaattypen. Apparaattypen die u als platformuitzondering opgeeft en die niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], vallen hier dus ook onder.
 
   - **Gebruikersmelding:** naast de meldings-e-mail die vanuit Exchange wordt verzonden, verstuurt Intune ook een e-mail waarin wordt beschreven hoe de blokkering van het apparaat kan worden opgeheven. U kunt het standaardbericht aanpassen aan uw behoeften. Omdat de Intune-meldings-e-mail met herstelinstructies wordt bezorgd in het Exchange-postvak van de gebruiker, kan de gebruiker ook een niet-geblokkeerd apparaat of een andere methode gebruiken om Exchange te openen en het bericht weer te geven, mocht het apparaat van de gebruiker worden geblokkeerd voordat deze het e-mailbericht heeft ontvangen. Dit is vooral van toepassing wanneer de **Standaardregel** is ingesteld op het blokkeren van toegang of het in quarantaine plaatsen van het apparaat.  In dat geval moet de eindgebruiker naar de app-store gaan, de Microsoft-bedrijfsportal-app downloaden en het apparaat inschrijven. Dit geldt voor iOS-, Windows- en Samsung KNOX-apparaten.  Bij apparaten die niet over Samsung KNOX beschikken, moet de IT-beheerder de quarantaine-e-mail naar een ander e-mailaccount verzenden. De eindgebruiker moet deze vervolgens naar het geblokkeerde apparaat kopiëren om de procedure voor inschrijving en naleving uit te voeren.
-  > [!NOTE]
-  > Als u ervoor wilt zorgen dat Exchange de e-mailmelding kan verzenden, moet u het account opgeven dat moet worden gebruikt om de e-mailmelding te verzenden.
+  > [!NOTE] Als u ervoor wilt zorgen dat Exchange de e-mailmelding kan verzenden, moet u het account opgeven dat moet worden gebruikt om de e-mailmelding te verzenden.
   >
-  > Zie [Lokale Exchange-connector configureren voor lokale of gehoste Exchange](intune-on-premises-exchange-connector.md) voor een overzicht over het configureren van de lokale Exchange-connector.
+  > Zie [Exchange On-premises-connector configureren voor on-premises of gehoste Exchange](intune-on-premises-exchange-connector.md) voor meer informatie.
 
 3.  Als u klaar bent, kiest u **Opslaan**.
 
 -   U hoeft het beleid voor voorwaardelijke toegang niet te implementeren; het wordt direct van kracht.
 
--   Wanneer een gebruiker een Exchange ActiveSync-profiel heeft ingesteld, kan het 1-3 uur duren voor het apparaat is geblokkeerd (als het niet wordt beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Wanneer een gebruiker een Exchange ActiveSync-profiel heeft ingesteld, kan het één tot drie uur duren voor het apparaat is geblokkeerd (als het niet wordt beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
 -   Als een geblokkeerde gebruiker vervolgens het apparaat inschrijft bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] (en niet-naleving oplost), krijgt deze binnen twee minuten toegang tot e-mail.
 
 -   Als de gebruiker de inschrijving van het apparaat verwijdert uit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], wordt de toegang tot e-mail na 1-3 uur geblokkeerd.
 
-**Voor enkele scenario's met voorbeelden van hoe u beleid voor voorwaardelijke toegang configureert om de toegang door apparaten te beperken, verwijzen wij u naar [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md).**
+**Raadpleeg [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang voor apparaten te beperken.**
 
 ## Volgende stappen
 [Toegang tot SharePoint Online beperken](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
@@ -128,6 +126,6 @@ De **Mail**-toepassing in Windows 8 en hoger (indien ingeschreven in [!INCLUDE[w
 [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

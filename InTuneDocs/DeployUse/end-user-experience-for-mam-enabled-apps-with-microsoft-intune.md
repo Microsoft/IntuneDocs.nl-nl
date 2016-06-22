@@ -18,7 +18,7 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,12 +48,11 @@ Beleidsregels voor Mobile Application Management (MAM) worden alleen toegepast w
 
     ![Schermafbeelding van de OneDrive-app en de vraag naar een pincode](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  Nadat u de pincode hebt ingesteld en hebt bevestigd, hebt u toegang tot de bestanden op uw **OneDrive voor Bedrijven**..
+5.  Nadat u de pincode hebt ingesteld en bevestigd, hebt u toegang tot de bestanden op uw **OneDrive voor Bedrijven**.
 
     ![Schermafbeelding van de geopende bestandslocatie met de lijst met bestaande bestanden](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]
-    > Wanneer u een geïmplementeerde beleid wijzigt, worden de wijzigingen de volgende keer dat u de app opent, toegepast.
+    > [!NOTE] Wanneer u een geïmplementeerd beleid wijzigt, worden de wijzigingen toegepast wanneer u de volgende keer de app opent.
 
 ##  OneDrive openen op een Android-apparaat
 
@@ -106,13 +105,13 @@ In dit scenario wordt Microsoft Word als voorbeeld gebruikt.
 
     ![Schermafbeelding van een getypte zin in een Word-document](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  Open het document dat u naar uw werklocatie hebt opgeslagen.  Kopieer de tekst, open uw persoonlijke **Facebook**-account en probeer de gekopieerde tekst te plakken.  U zou de inhoud niet in het nieuwe Facebook-bericht moeten kunnen plakken. De optie Plakken wordt niet grijs weergegeven, maar er gebeurt niets wanneer u op **Plakken** drukt..
+5.  Open het document dat u naar uw werklocatie hebt opgeslagen.  Kopieer de tekst, open uw persoonlijke **Facebook**-account en probeer de gekopieerde tekst te plakken.  U zou de inhoud niet in het nieuwe Facebook-bericht moeten kunnen plakken. De optie Plakken wordt niet grijs weergegeven, maar er gebeurt niets wanneer u **Plakken**kiest.
 
     ![Schermafbeelding met de selecties voor knippen, kopiëren en plakken](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![Schermafbeelding zonder geplakte gegevens in het Facebook-bericht](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Herhaal nu stap 2 en 3 om een ander nieuw document te maken, typ een willekeurige zin en sla het document niet op op een werklocatie, maar op een privélocatie, bijvoorbeeld uw persoonlijke **OneDrive**..
+6.  Herhaal nu stap 2 en 3 om een ander nieuw document te maken. Typ een willekeurige zin en sla het document niet op een werklocatie op, maar op een privélocatie, bijvoorbeeld uw persoonlijke **OneDrive**.
 
     ![Schermafbeelding van de knippen-kopiëren-plakkenselectie met de te kopiëren zin](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -137,11 +136,11 @@ Lees het voorbeeldscenario hieronder om meer inzicht te krijgen in hoe meerdere 
 Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om MAM-beleid te implementeren. **Bedrijf X** implementeert MAM-beleid **voordat** **bedrijf Y** dat doet. Het MAM-beleid wordt toegepast op het account dat is gekoppeld aan **bedrijf X**, niet op het account dat is gekoppeld aan bedrijf Y. Als u wilt dat het gebruikersaccount dat is gekoppeld aan bedrijf Y, door het MAM-beleid wordt beheerd, moet u het gebruikersaccount dat is gekoppeld aan bedrijf X, verwijderen.
 ### Een tweede account toevoegen
 #### iOS
-Als u een iOS-apparaat gebruikt en probeert op hetzelfde apparaat een tweede werkaccount toe te voegen, ziet u mogelijk een blokkeringsbericht.  U ziet ook een optie om het bestaande account te verwijderen en een nieuw account toe te voegen. U kunt dit doen door op **Ja** te klikken..
+Als u een iOS-apparaat gebruikt en probeert op hetzelfde apparaat een tweede werkaccount toe te voegen, ziet u mogelijk een blokkeringsbericht.  U ziet ook een optie om het bestaande account te verwijderen en een nieuw account toe te voegen. U kunt dit doen door op **Ja**te klikken.
 
 ![Schermafbeelding van het dialoogvenster met het blokkeringsbericht en de opties Ja en Nee](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Als u een Android-apparaat gebruikt, ziet u mogelijk een blokkeringsbericht met instructies voor het verwijderen van het bestaande account en toevoegen van een nieuwe account.  Als u op een Android-apparaat het bestaande account wilt verwijderen, gaat u naar **Instellingen&gt;Algemeen&gt; Toepassingsbeheer &gt;Bedrijfsportal en selecteert u Gegevens wissen**.
+Als u een Android-apparaat gebruikt, ziet u mogelijk een blokkeringsbericht met instructies voor het verwijderen van het bestaande account en toevoegen van een nieuwe account.  Als u op een Android-apparaat het bestaande account wilt verwijderen, gaat u naar. **Instellingen &gt;Algemeen &gt; Toepassingsbeheer &gt;Bedrijfsportal en selecteert u Gegevens wissen**.
 
 ![Schermafbeelding van het foutbericht en instructies om het account te verwijderen](../media/AppManagement/Android_SwitchUser.png)
 
@@ -150,11 +149,19 @@ Als u av-, pdf- en afbeeldingsbestanden van uw bedrijf op een Android-apparaat w
 
 Download deze app in Google Play.  Nadat de app op uw apparaat is geïnstalleerd, start u de app en verifieert u uw identiteit met de referenties van uw bedrijf. Nu moet nu niet-beveiligde en beveiligde bestanden kunnen zien van apps die door ander beleid worden beheerd.
 
+**Android-apparaten die niet zijn geregistreerd bij Intune**
 
-### Zie tevens
+Voordat u de RMS-app voor delen kunt gebruiken om bestanden weer te geven van andere apps die door Intune worden beheerd, moet u de RMS-app starten en uzelf verifiëren met uw werkaccount.  Wanneer u zich aanmeldt, ziet u het volgende bericht **alleen als u niet over een RMS-licentie beschikt**:
+
+**Verificatie geslaagd: u kunt nu bedrijfsbestanden weergeven, maar uw organisatie is niet ingesteld voor het beveiligen van de bestanden. Neem contact op met de IT-beheerder voor meer informatie.**
+
+U kunt desondanks gewoon de RMS-app voor delen gebruiken om bedrijfsbestanden te bekijken. U kunt nog steeds bedrijfsbestanden openen en weergeven in andere apps die door Intune worden beheerd, en het MAM-beleid blijft van toepassing.  Dit bericht houdt in dat u de aanvullende beveiligingsmogelijkheden van de RMS-app voor delen niet kunt toevoegen.  U moet over een RMS-licentie beschikken om beveiliging aan uw bestanden toe te voegen. Zie [Een bestand beveiligen op een apparaat](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) en [Een bestand beveiligen dat u via e-mail deelt](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email) voor meer informatie over de mogelijkheden voor RMS-bestandsbeveiliging.
+
+
+### Zie ook
 [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

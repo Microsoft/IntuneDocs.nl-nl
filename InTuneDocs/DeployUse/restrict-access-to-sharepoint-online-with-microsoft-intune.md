@@ -18,7 +18,7 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Wanneer een gebruiker probeert verbinding te maken met een bestand via een onder
 >[!IMPORTANT]
 >Voorwaardelijke toegang voor pc's en Windows 10 Mobile-apparaten met apps die moderne authenticatie gebruiken, is momenteel niet voor alle klanten van Intune beschikbaar. Als u deze functies al gebruikt, hoeft u geen actie te ondernemen. U kunt deze functies gewoon blijven gebruiken.
 
->Als u nog geen beleid voor voorwaardelijke toegang hebt gemaakt voor pc's of Windows 10 Mobile voor apps die moderne authenticatie gebruiken, en dat wel wilt doen, moet u hiervoor een aanvraag indienen.  Op de [Connect-site](http://go.microsoft.com/fwlink/?LinkId=761472) vindt u meer informatie over bekende problemen en hoe u toegang tot deze functie krijgt..
+>Als u nog geen beleid voor voorwaardelijke toegang hebt gemaakt voor pc's of Windows 10 Mobile voor apps die moderne authenticatie gebruiken, en dat wel wilt doen, moet u hiervoor een aanvraag indienen.  Op de [Connect-site](http://go.microsoft.com/fwlink/?LinkId=761472) vindt u meer informatie over bekende problemen en hoe u toegang tot deze functie krijgt.
 
 **Voordat** u beleid voor voorwaardelijke toegang configureert voor SharePoint Online, moet u:
 - Een **SharePoint Online-abonnement** hebben. Gebruikers moeten bovendien een licentie voor SharePoint Online hebben.
@@ -48,7 +48,7 @@ Wanneer een gebruiker probeert verbinding te maken met een bestand via een onder
   Om verbinding te maken met de vereiste bestanden, moet het apparaat:
 -   Zijn **ingeschreven** bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of een pc zijn die lid is van een domein.
 
--   **Registreer het apparaat** bij Azure Active Directory (dit gebeurt automatisch wanneer het apparaat wordt ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Registreer het apparaat** bij Azure Active Directory (dit gebeurt automatisch wanneer het apparaat wordt geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
 
 -   Voldoen aan het geïmplementeerde [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nalevingsbeleid
@@ -78,7 +78,7 @@ AAD DRS wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klante
   - Als het beleid zodanig is ingesteld dat de pc lid moet zijn van een domein of aan het beleid moet voldoen en de pc niet aan één of beide vereisten voldoet, wordt er een bericht weergegeven met instructies voor het installeren van de bedrijfsportal-app en het inschrijven van de pc.
 -    [Moderne authenticatie van Office 365-moet zijn ingeschakeld](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
 
-    Moderne authenticatie voorziet Windows-clients met Office 2013 van de mogelijkheid om op Active Directory Authentication Library (ADAL) gebaseerde aanmelding te gebruiken. Daarnaast zorgt deze functie voor betere beveiliging, zoals **Multi-Factor Authentication** en **Verificatie op basis van een certificaat**.
+    Moderne verificatie maakt op Active Directory Authentication Library (ADAL) gebaseerde aanmelding beschikbaar op Windows-clients met Office 2013 en zorgt voor een betere beveiliging, zoals **meervoudige verificatie** en **verificatie op basis van een certificaat**.
 
 
 ## Beleid voor voorwaardelijke toegang voor SharePoint Online
@@ -97,15 +97,13 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 ### Stap 2: Nalevingsbeleid configureren en implementeren
 Als u dit nog niet hebt gedaan, maak en implementeer dan nalevingsbeleid voor gebruikers waarop het SharePoint Online-beleid van toepassing moet zijn.
 
-> [!NOTE]
-> Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
+> [!NOTE] Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, wordt beleid voor voorwaardelijke toegang toegepast op Azure Active Directory-beveiligingsgroepen.
 
 Zie [Een nalevingsbeleid maken](create-a-device-compliance-policy-in-microsoft-intune.md) voor meer informatie over het configureren van het nalevingsbeleid.
 
-> [!IMPORTANT]
-> Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
+> [!IMPORTANT] Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
 
-Wanneer u klaar bent, gaat u door naar **Stap 3**..
+Wanneer u klaar bent, gaat u door naar **stap 3**.
 
 ### Stap 3: Het SharePoint Online-beleid configureren
 Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde apparaten en apparaten die aan het beleid voldoen toegang hebben tot SharePoint Online. Dit beleid wordt opgeslagen in Azure Active Directory.
@@ -115,7 +113,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
 ![Schermafdruk van de pagina met SharePoint Online-beleid](../media/IntuneSASharePointOnlineCAPolicy.png)
 
-2.  Selecteer **Beleid voor voorwaardelijke toegang inschakelen voor SharePoint Online**..
+2.  Selecteer **Beleid voor voorwaardelijke toegang inschakelen voor SharePoint Online**.
 
 3.  Onder **Toegang voor toepassingen** kunt u kiezen of u beleid voor voorwaardelijke toegang wilt toepassen:
 
@@ -123,7 +121,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
         Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven bij Intune en voldoen aan het nalevingsbeleid.  Elke clienttoepassing die **moderne authenticatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **SharePoint Online** geblokkeerd.
         >[!TIP]
-        >Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   Meer informatie over bekende problemen en hoe u toegang tot deze functie krijgt, vindt u op de [Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   Meer informatie over bekende problemen en de toegang tot deze functie vindt u op de [Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=761472).
 
     -   **Specifieke platforms**
 
@@ -141,7 +139,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
 5.  Klik desgewenst onder **Uitgesloten groepen**op **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
 
-6.  Wanneer u klaar bent, klikt u op **Opslaan**..
+6.  Wanneer u klaar bent, klikt u op **Opslaan**.
 
 U hoeft het beleid voor voorwaardelijke toegang niet te implementeren; het wordt direct van kracht.
 
@@ -160,6 +158,6 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 [De toegang tot e-mail en O365-service beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

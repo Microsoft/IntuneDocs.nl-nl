@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 Om bedrijfsgegevens te beveiligen, moet u ervoor zorgen dat de apparaten die worden gebruikt voor toegang tot bedrijfs-apps en -gegevens, voldoen aan bepaalde regels, zoals het gebruik van een pincode voor toegang tot het apparaat en versleuteling van gegevens die op het apparaat zijn opgeslagen. Een verzameling van dergelijke regels wordt nalevingsbeleid genoemd.
 
 ## Hoe gebruikt u nalevingsbeleid?
-U kunt nalevingsbeleid gebruiken met beleid voor voorwaardelijke toegang om toegang te beperken tot apparaten die voldoen aan de regels van het nalevingsbeleid. Lees het artikel [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) om te begrijpen hoe de twee soorten beleid samen kunnen worden gebruikt.
+U kunt nalevingsbeleid gebruiken met beleid voor voorwaardelijke toegang om alleen toegang te verlenen aan apparaten die voldoen aan de regels van het nalevingsbeleid voor de toegang tot e-mail en andere services. Lees het artikel [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) om te begrijpen hoe de twee soorten beleid samen kunnen worden gebruikt.
 
 U kunt nalevingsbeleid ook onafhankelijk van voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik worden de betreffende apparaten geëvalueerd en samen met de nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten zijn opengebroken of geroot. Bij onafhankelijk gebruik zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
 
@@ -67,6 +67,6 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

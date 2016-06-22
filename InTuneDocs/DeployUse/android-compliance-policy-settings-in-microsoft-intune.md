@@ -18,7 +18,7 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,8 +37,7 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 ## Systeembeveiligingsinstellingen
 ### Wachtwoord
-- **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: stel dit in op **Ja** om te vereisen dat gebruikers een wachtwoord invoeren om
-  toegang te krijgen tot hun apparaat.
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 
 -  **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
 
@@ -50,41 +49,30 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
   -   **Ten minste alfanumeriek**
   -   **Alfanumeriek met tekens**
 
-- **Minuten inactief voordat wachtwoord is vereist**: hiermee geeft u aan na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
+- **Minuten inactief voordat wachtwoord is vereist:** hiermee geeft u aan na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
 
-- **Verlopen van wachtwoorden (dagen)**: selecteer het aantal dagen waarna het wachtwoord van gebruikers verloopt
-  en ze een nieuw wachtwoord moeten maken.
+- **Wachtwoord verloopt (in dagen):** selecteer het aantal dagen waarna het wachtwoord van gebruikers verloopt en ze een nieuw wachtwoord moeten maken.
 
-- **Wachtwoordgeschiedenis onthouden**: gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers
-  eerder gebruikte wachtwoorden opnieuw gebruiken.
+- **Wachtwoordgeschiedenis onthouden:** gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers eerder gebruikte wachtwoorden opnieuw gebruiken.
 
-- **Wachtwoorden niet opnieuw gebruiken**: als **Wachtwoordgeschiedenis onthouden** is geselecteerd, geeft u op
-  hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
+- **Wachtwoorden niet opnieuw gebruiken:** als **Wachtwoordgeschiedenis onthouden** is geselecteerd, geeft u het aantal eerder gebruikte wachtwoorden op dat niet opnieuw kan worden gebruikt.
 
-- **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:**
-  Deze instelling dient te worden gebruikt in combinatie met de instelling **Minuten inactief voordat wachtwoord is vereist**. De eindgebruikers wordt gevraagd een wachtwoord op te geven als ze toegang willen krijgen tot een apparaat dat inactief is geweest gedurende de periode die is opgegeven in de
-  instelling **Minuten inactief voordat wachtwoord vereist is**.
+- **Een wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt samen met de instelling **Minuten van inactiviteit voordat het wachtwoord wordt vereist**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat inactief is geweest gedurende de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
 
 ### Versleuteling
-- **Versleuteling vereisen voor mobiel apparaat**: stel dit in op **Ja** om te vereisen dat apparaten worden
-  versleuteld om verbinding te kunnen maken met resources. Apparaten worden
-  versleuteld wanneer u de instelling **Wachtwoord vereisen voor
-  het ontgrendelen van mobiele apparaten** configureert.
+- **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt dat apparaten moeten worden versleuteld om verbinding te maken met resources. Apparaten worden versleuteld wanneer u de instelling **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** configureert.
 
 ## Instellingen voor de status van het apparaat
 
-- **Het apparaat mag niet gekraakt of geroot zijn**: als u deze instelling inschakelt,
-  worden gekraakte apparaten gemarkeerd als niet-compatibel.
+- **Jailbreaken of uitvoeren als rootgebruiker niet toegestaan:** als u deze instelling inschakelt, worden apparaten waarop jailbreaking is uitgevoerd of die als rootgebruiker worden uitgevoerd als niet-compatibel beschouwd.
 
 ## Instellingen voor apparaateigenschappen
-- **Minimale versie van het besturingssysteem dat is vereist**: wanneer een apparaat niet voldoet aan de vereiste voor de
-  minimale besturingssysteemversie, wordt deze gemarkeerd als niet-compatibel.
+- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
   Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen om een upgrade van zijn apparaat uit te voeren, waarna die toegang tot bedrijfsbronnen krijgt.
 
-- **Maximale versie van het besturingssysteem dat is toegestaan**: wanneer een apparaat gebruikmaakt van
-  een versie van het besturingssysteem die hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
+- **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

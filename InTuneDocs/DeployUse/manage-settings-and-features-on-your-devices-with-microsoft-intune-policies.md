@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,41 +26,41 @@ ms.suite: ems
 ---
 
 # Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid
-Microsoft Intune-**beleid** bestaat uit groepen instellingen waarmee functies op mobiele apparaten en computers worden beheerd. U maakt beleidsregels met behulp van sjablonen die aanbevolen of aangepaste instellingen bevatten, en u implementeert ze vervolgens op apparaat- of gebruikersgroepen.
+Microsoft Intune-**beleid** bestaat uit groepen instellingen waarmee functies worden beheerd op mobiele apparaten en computers. U maakt beleidsregels met behulp van sjablonen die aanbevolen of aangepaste instellingen bevatten, en u implementeert ze vervolgens op apparaat- of gebruikersgroepen.
 
-## Welke typen beleid kunt u gebruiken?
+## Welke soorten beleid kunt u gebruiken?
 
-Intune-beleid is ingedeeld in de volgende categorieën. De categorie die u gebruikt, is van invloed op hoe u het beleid maakt en implementeert.
+Intune-beleid valt in de volgende categorieën: De categorie die u gebruikt, is van invloed op hoe u het beleid maakt en implementeert.
 
 
-- **Configuratiebeleid:** dit wordt vaak gebruikt om beveiligingsinstellingen en -functies op uw apparaten te beheren. Gebruik de informatie in dit onderwerp voor meer informatie over het maken en implementeren van dit beleid en bekijk de beschikbare instellingen.
-- **Nalevingsbeleid voor apparaten:** dit definieert de regels en instellingen waaraan een apparaat moet voldoen om ook te voldoen aan het beleid voor voorwaardelijke toegang. U kunt nalevingsbeleid ook gebruiken om onafhankelijk van voorwaardelijke toegang te controleren of en ervoor te zorgen dat apparaten aan het beleid voldoen.
+- **Configuratiebeleid:** dit wordt vaak gebruikt om beveiligingsinstellingen en -functies op uw apparaten te beheren. Gebruik de informatie in dit onderwerp voor meer inzicht in het maken en implementeren van dit beleid en bekijk de beschikbare instellingen.
+- **Nalevingsbeleid:** dit definieert de regels en instellingen waaraan een apparaat moet voldoen om ook te voldoen aan het beleid voor voorwaardelijke toegang. U kunt nalevingsbeleid ook gebruiken om de naleving van apparaten te bewaken en te herstellen, onafhankelijk van voorwaardelijke toegang.
 Zie [Nalevingsbeleid voor apparaten in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) voor meer informatie.
-- **Beleid voor voorwaardelijke toegang:** dit beleid helpt u bij het beveiligen van e-mail en andere services, afhankelijk van de door u opgegeven voorwaarden.
+- **Beleid voor voorwaardelijke toegang:** dit beleid helpt u bij het beveiligen van e-mail en andere services op basis van de door u opgegeven voorwaarden.
 Zie [De toegang tot e-mail en O365-services beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie.
 - **Registratiebeleid voor bedrijfsapparaten:** zie [iOS- en Mac-beheer instellen met Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md) voor meer informatie over het registratiebeleid voor bedrijfsapparaten.
-- **Brontoegangsbeleid:** deze groep beleidsregels werkt samen om uw gebruikers de gelegenheid te bieden om toegang te krijgen tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze ook zijn.
-Zie [Toegang tot bedrijfsbronnen inschakelen met Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) voor meer informatie.
+- **Brontoegangsbeleid:** de beleidsregels van deze groep werken samen om uw gebruikers toegang te verlenen tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze ook zijn.
+Zie [Toegang tot bedrijfsresources inschakelen met Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) voor meer informatie.
 
 
-Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-reference.md) voor een volledige lijst met Intune-beleidsmogelijkheden.
+Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-reference.md) voor een volledige lijst met Intune-beleidsregels.
 
 
 
 
 ## Een configuratiebeleid maken
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beleid** &gt; **Configuratiebeleid** &gt; **Toevoegen**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** &gt; **Configuratiebeleid** &gt; **Toevoegen**.
 
 2.  Kies het gewenste beleid. Kies de aanbevolen instellingen voor het beleid (indien beschikbaar; u kunt deze instellingen later wijzigen) of kies ervoor een aangepast beleid te maken met uw eigen instellingen.
 
     > [!TIP] Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-reference.md) voor meer informatie over het kiezen van het juiste beleid.
 
-3.  Als u klaar bent, klikt u op **Beleid maken**.
+3.  Als u klaar bent, kiest u **Beleid maken**.
 
 4.  Configureer in het scherm **Beleid maken** een naam en optionele beschrijving voor het beleid.
 
-5.  Configureer de vereiste beleidsinstellingen en klik vervolgens op **Beleid opslaan**.
+5.  Configureer de vereiste beleidsinstellingen en kies vervolgens **Beleid opslaan**.
 
     Als u hulp nodig hebt met de beleidsinstellingen, kiest u uw beleidstype in de volgende lijst:
 
@@ -68,15 +68,15 @@ Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-referenc
     - [Instellingen voor Android-apparaten](android-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Windows 8- en Windows 8.1-apparaten](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Windows Phone 8.1-apparaten](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-    - [Instellingen voor Windows 10 Desktop- en mobiele apparaten](windows-10-policy-settings-in-microsoft-intune.md)
+    - [Instellingen voor Windows 10 Desktop- en Mobile-apparaten](windows-10-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Windows Team-apparaten](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor upgrades van de Windows-editie](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Mac OS X-apparaten](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [Instellingen voor Exchange Active Sync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Instellingen voor het beleid voor voorwaarden](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Instellingen voor Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [-Instellingen voor het beleid voor voorwaarden](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Algemene instellingen voor mobiele apparaten (verouderd)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Klik in het bevestigingsdialoogvenster op **Ja** om het beleid nu te implementeren of klik op **Nee** om het beleid te maken zonder het te implementeren.
+4.  Kies in het bevestigingsdialoogvenster **Ja** om het beleid nu te implementeren of kies **Nee** om het beleid te maken zonder het te implementeren.
 
 U kunt het nieuwe beleid bekijken en bewerken door te bladeren door de secties voor elk beleidstype in de werkruimte **Beleid** .
 
@@ -89,67 +89,58 @@ Nu u een beleid hebt gemaakt, wilt u dit waarschijnlijk implementeren op een of 
 
 ## Een configuratiebeleid implementeren
 
-1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en klik vervolgens op **Implementatie beheren**.
+1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren, en klik vervolgens op **Toevoegen** &gt; **OK**.
+    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
 
-    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
+    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: kies **Annuleren**.
 
 Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
 
 ## Beleid beheren
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/)op **Beleid**en selecteer het beleid dat u wilt beheren.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** en selecteer vervolgens het beleid dat u wilt beheren.
 
 2.  Selecteer een van de volgende acties:
 
-- **Bewerken**: hiermee opent u de eigenschappen voor het geselecteerde beleid zodat u wijzigingen kunt aanbrengen.
+- **Bewerken**: hiermee opent u de eigenschappen voor het geselecteerde beleid, zodat u wijzigingen kunt aanbrengen.
 - **Verwijderen**: hiermee verwijdert u het geselecteerde beleid.<br>Wanneer u een beleid verwijdert, wordt dit verwijderd uit alle groepen waarop het was geïmplementeerd.
-- **Implementatie beheren**: selecteer de groep waarvoor u het beleid wilt implementeren, en klik op **Toevoegen**.
+- **Implementatie beheren**: selecteer de groep waarvoor u het beleid wilt implementeren en kies **Toevoegen**.
 
-## Taken voor Intune-beleid
-
-### Het beleid vernieuwen op een apparaat zodat het actueel is (alleen van toepassing op Windows-pc's met de Intune-clientsoftware)
-
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/)op **Groepen**en selecteer vervolgens een apparaatgroep.
-
-2.  Selecteer de apparaten waarop u het beleid wilt vernieuwen, en klik vervolgens op **Externe taken** &gt; **Beleid vernieuwen**.
-
-3.  Klik op **Externe taken** in de rechterbenedenhoek van de Intune-beheerconsole om de taakstatus te controleren.
 
 ## Veelgestelde vragen over het Intune-beleid
 
 ### Hoe lang duurt het voor mobiele apparaten beleid of apps hebben ontvangen nadat deze zijn geïmplementeerd?
-Wanneer er beleid of een app wordt geïmplementeerd, informeert Intune het apparaat onmiddellijk dat het bij de Intune-service moet worden ingecheckt. Dit vindt meestal binnen 5 minuten plaats.
+Wanneer er beleid of een app wordt geïmplementeerd, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren. Dit vindt meestal binnen 5 minuten plaats.
 
 Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, vinden er nog 3 pogingen plaats.  Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen.
 
-In dat geval ontvangt het apparaat het beleid bij de volgende keer dat het volgens de planning incheckt bij de Intune-service, en wel als volgt:
+In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
 
 - iOS: om de 6 uur
 - Android: om de 8 uur
 - Windows Phone: om de 8 uur
-- Ingeschreven Windows RT-apparaten: elke 24 uur
-- Windows 8.1- en Windows 10-computers die als apparaten zijn ingeschreven: om de 8 uur
+- Geregistreerde Windows RT-apparaten: elke 24 uur
+- Windows 8.1- en Windows 10-pc's die als apparaten zijn geregistreerd: om de 8 uur
 
 Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
 
 - iOS: om de 15 minuten gedurende 6 uur en daarna om de 6 uur
-- Android: om de 3 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur
-- Windows Phone: om de 5 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur
+- Android: om de 3 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur
+- Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur
 - Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 24 uur
 
 Gebruikers kunnen ook de bedrijfsportal-app starten en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
 ### Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
-Apparaten worden bij Intune ingecheckt wanneer ze een melding ontvangen waarin staat dat ze moeten worden ingecheckt of bij het inchecken volgens de planning zoals weergegeven in de bovenstaande tabellen.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals wissen, vergrendelen, wachtwoord opnieuw instellen, app implementeren, profiel implementeren (Wi-Fi, VPN, e-mail enzovoort) of beleid implementeren, zal Intune onmiddellijk het apparaat proberen te informeren dat het moet worden ingecheckt bij de Intune-service om deze updates te ontvangen.
+Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle, zoals weergegeven in bovenstaande tabellen.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals de actie wissen, vergrendelen, wachtwoord opnieuw instellen, app implementeren, profiel implementeren (Wi-Fi, VPN, e-mail, enz.) of beleidsregels implementeren, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren om deze updates te ontvangen.
 
 Andere wijzigingen zoals het wijzigen van de contactgegevens in de bedrijfsportal zorgen niet voor een onmiddellijke melding aan apparaten.
 
 > [!TIP]
-> Wanneer een beleid met instellingen wordt geïmplementeerd op een Android-apparaat, krijgt de gebruiker een melding dat deze actie moet ondernemen om te voldoen aan het beleid. De nieuwe instellingen gaan pas van kracht als de gebruiker deze actie heeft ondernomen of het apparaat opnieuw is gestart.
+> Wanneer een beleid met instellingen wordt geïmplementeerd op een Android-apparaat, krijgt de gebruiker een melding dat hij actie moet ondernemen om te voldoen aan het beleid. De nieuwe instellingen worden pas van kracht nadat de gebruiker de vereiste actie heeft ondernomen of het apparaat opnieuw is opgestart.
 
 ### Als er meerdere beleidsregels worden geïmplementeerd voor dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
 Het is belangrijk te weten dat wanneer er twee of meer sets beleidsregels naar dezelfde gebruiker of hetzelfde apparaat worden geïmplementeerd de beoordeling van welke instelling wordt toegepast wordt uitgevoerd op het niveau van de individuele instelling.
@@ -179,7 +170,7 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
 
 - Wi-Fi-, VPN-, certificaat- en e-mailprofielen: deze profielen worden verwijderd van alle ondersteunde ingeschreven apparaten.
 - Alle andere beleidstypen
-    - **Windows- en Android-apparaten**: instellingen worden niet verwijderd van het apparaat.
+    - **Windows- en Android-apparaten**: de instellingen worden niet van het apparaat verwijderd.
     - **Windows Phone 8.1-apparaten**: de volgende instellingen worden verwijderd:
         - Wachtwoord vereist voor het ontgrendelen van mobiele apparaten
         - Eenvoudige wachtwoorden toestaan
@@ -187,25 +178,7 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
         - Vereist wachtwoordtype
         - Wachtwoordverlooptijd (dagen)
         - Wachtwoordgeschiedenis onthouden
-        - Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist
-        - Minuten inactief voordat wachtwoord is vereist
-        - Vereist wachtwoordtype – minimum aantal tekensets
-        - Camera toestaan
-        - Versleuteling vereisen voor mobiel apparaat
-        - Verwisselbare opslag toestaan
-        - Webbrowser toestaan
-        - Toepassingsarchief toestaan
-        - Schermafbeelding toestaan
-        - Geolocatie toestaan
-        - Microsoft-account toestaan
-        - Kopiëren en plakken toestaan
-        - Wi-Fi-tethering toestaan
-        - Automatische verbinding met gratis Wi-Fi-hotspots toestaan
-        - Melden van Wi-Fi-hotspots toestaan
-        - Terugzetten op fabrieksinstellingen toestaan
-        - Bluetooth toestaan
-        - NFC toestaan
-        - Wi-Fi toestaan
+        - Aantal herhaalde, mislukte aanmeldingen dat wordt toegestaan voordat het apparaat wordt gewist - Minuten van inactiviteit voordat het wachtwoord wordt vereist - Vereist wachtwoordtype – minimumaantal tekensets - Camera toestaan - Versleuteling vereisen op mobiele apparaten - Verwisselbare opslag toestaan - Webbrowser toestaan - Toepassingsarchief toestaan - Schermafbeelding toestaan - Geolocatie toestaan - Microsoft-account toestaan - Kopiëren en plakken toestaan - Wi-Fi-tethering toestaan - Automatische verbinding met gratis Wi-Fi-hotspots toestaan - Rapportage van Wi-Fi-hotspots toestaan - Fabrieksinstellingen toestaan - Bluetooth toestaan - NFC toestaan - Wi-Fi toestaan
     
     - **iOS**: alle instellingen worden verwijderd, met uitzondering van:
         - Spraakroaming toestaan
@@ -214,15 +187,22 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
 
 #### Windows-pc's met de Intune-clientsoftware
 
-- **Instellingen voor Endpoint Protection**: instellingen worden teruggezet naar de aanbevolen waarden. De enige uitzondering hierop is de instelling **Deelnemen aan Microsoft Active Protection Service** waarvoor de standaardwaarde **Nee**is. Zie [Help Windows-pc's beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
-- **Instellingen voor software-updates**: instellingen worden opnieuw ingesteld op de standaardstatus voor het besturingssysteem. Zie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) voor meer informatie.
-- **Instellingen voor Microsoft Intune Center**: alle contactgegevens voor ondersteuning die door het beleid zijn geconfigureerd, worden verwijderd van computers.
-- **Instellingen voor Windows Firewall**: instellingen worden opnieuw ingesteld op de standaardwaarde voor het computerbesturingssysteem. Zie [Help Windows-pc's beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
+- **Instellingen voor Endpoint Protection**: de instellingen worden teruggezet naar de aanbevolen waarden. De enige uitzondering hierop is de instelling **Deelnemen aan Microsoft Active Protection Service** waarvoor de standaardwaarde **Nee**is. Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
+- **Instellingen voor software-updates**: de instellingen worden opnieuw ingesteld op de standaardstatus voor het besturingssysteem. Zie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) voor meer informatie.
+- **Instellingen Microsoft Intune Center**: alle contactgegevens voor ondersteuning die door het beleid zijn geconfigureerd, worden van de computers verwijderd.
+- **Instellingen voor Windows Firewall**: de instellingen worden opnieuw ingesteld op de standaardwaarde voor het computerbesturingssysteem. Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
 
 
+### Hoe kan ik het beleid vernieuwen op een apparaat zodat het actueel is? (alleen van toepassing op Windows-pc's met de Intune-clientsoftware)
+
+1.  Selecteer in een apparaatgroep de apparaten waarvoor u het beleid wilt vernieuwen, en kies vervolgens **Externe taken** &gt; **Beleid vernieuwen**.
+2.  Kies in de rechterbenedenhoek van de Intune-beheerconsole **Externe taken** om de taakstatus te controleren.
+
+### Waar vind ik meer informatie over het oplossen van beleidsproblemen?
+
+Zie [Beleidsproblemen oplossen in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

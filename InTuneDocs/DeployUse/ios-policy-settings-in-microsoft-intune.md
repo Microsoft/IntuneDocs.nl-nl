@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instellingen voor iOS-beleid in Microsoft Intune | Microsoft Intune
+title: Instellingen voor iOS-beleid | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Gebruik het **algemene iOS-configuratiebeleid** van Microsoft Intune om instelli
 -   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met toepassingen die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd (de installatie van de app kan echter niet worden geblokkeerd).
 
 > [!TIP]
-> U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie voor meer informatie over het gebruik van voorwaarden [Beleidsinstellingen voor voorwaarden in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie [Instellingen voor het voorwaardenbeleid in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) voor meer informatie over het gebruik van de voorwaarden.
 
 Als de instelling die u zoekt, niet wordt weergegeven in dit onderwerp, kunt u de instelling wellicht maken met behulp van een aangepast iOS-beleid dat u in staat stelt instellingen te importeren die u hebt gemaakt met behulp van de [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Zie **Aangepaste beleidsinstellingen** verderop in dit onderwerp voor meer informatie.
 
@@ -48,12 +48,12 @@ Als de instelling die u zoekt, niet wordt weergegeven in dit onderwerp, kunt u d
 |----------------|-------|
 |**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u op of gebruikers een wachtwoord moeten invoeren voor toegang tot hun apparaat.|Ja|
 |**Vereist wachtwoordtype**|Geeft het type wachtwoord op dat vereist is, zoals alleen numeriek of alfanumeriek.|Ja|
-|**Vereist wachtwoordtype – minimumaantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord). Voor iOS-apparaten geeft u hiermee echter het aantal symbooltekens aan dat moet zijn opgenomen in het wachtwoord)|Ja|
+|**Vereist wachtwoordtype – minimumaantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets moeten worden opgenomen in het wachtwoord). Voor iOS-apparaten geeft u hiermee echter het aantal symbooltekens aan dat moet zijn opgenomen in het wachtwoord)|Ja|
 |**Minimale wachtwoordlengte**|Hiermee geeft u het minimumaantal tekens op voor het wachtwoord.|Ja|
 |**Eenvoudige wachtwoorden toestaan**|Hiermee staat u eenvoudige wachtwoorden toe, bijvoorbeeld '0000' en '1234'.|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Wist de gegevens op het apparaat als dit aantal aanmeldingspogingen mislukt.|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**<sup>1</sup>|Hiermee geeft u het aantal minuten op waarna het apparaatscherm wordt uitgeschakeld.|Ja|
-|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord van het apparaat moet worden gewijzigd.|Ja|
+|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of de gebruiker eerder gebruikte wachtwoorden mag gebruiken.|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|Ja|
 |**Minuten inactief voordat wachtwoord is vereist**<sup>1</sup>|Hiermee geeft u op hoelang het apparaat inactief kan zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren.|Ja|
@@ -99,7 +99,7 @@ Als de instelling die u zoekt, niet wordt weergegeven in dit onderwerp, kunt u d
 |**Toepassingsarchief toestaan**|Hiermee staat u het apparaat toegang tot de App Store toe.|Ja|
 |**Wachtwoord vereisen voor toegang tot het toepassingsarchief**|Ja|
 |**Aankopen in app toestaan**|Hiermee staat u toe dat Store-aankopen kunnen worden uitgevoerd vanuit een actieve app.|Ja|
-|**Beheerde documenten in andere niet-beheerde apps toestaan**|Hiermee staat u toe dat zakelijke documenten kunnen worden weergegeven in elke app.|iOS 7.1 en hoger|
+|**Beheerde documenten in andere niet-beheerde apps toestaan**|Hiermee staat u toe dat zakelijke documenten kunnen worden weergegeven in elke app.<br>**Voorbeeld:** u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Stel deze instelling in op Nee. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.|iOS 7.1 en hoger|
 |**Niet-beheerde documenten in andere beheerde apps toestaan**|Hiermee staat u toe dat elk document kan worden weergegeven in zakelijke beheerde apps.|iOS 7.1 en hoger|
 |**Videovergaderingen toestaan**|Hiermee staat u videovergadering-apps, zoals Facetime, op het apparaat toe.|Ja|
 |**Inhoud voor volwassenen in media store toestaan**|Hiermee staat u het apparaat toegang tot inhoud voor volwassenen toe.|Ja|
@@ -135,7 +135,7 @@ Als de instelling die u zoekt, niet wordt weergegeven in dit onderwerp, kunt u d
 
 
 ### Instellingen voor compatibele en niet-compatibele apps
-In de lijst **Compatibele &amp; niet-compatibele apps** geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens:
+In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens:
 
 > [!NOTE]
 > Een enkele beleidsregel kan alleen een lijst met compatibele of een lijst met niet-compatibele apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
@@ -143,7 +143,7 @@ In de lijst **Compatibele &amp; niet-compatibele apps** geeft u een lijst met co
 |Naam van de instelling|Details|
 |----------------|--------------------|
 |**Rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee wordt een lijst gemaakt met de apps die niet worden beheerd door Intune en die niet mogen worden geïnstalleerd en uitgevoerd door gebruikers.|
-|**Niet rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee wordt een lijst gemaakt met de apps die gebruikers mogen installeren. Om aan het beleid te blijven voldoen, mogen gebruikers niet-vermelde apps niet installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
+|**Niet rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee wordt een lijst gemaakt met de apps die gebruikers mogen installeren. Om te blijven voldoen aan het beleid, mogen gebruikers apps die niet worden vermeld, niet installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
 |**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store. Lees **URL’s voor app stores opgeven** verderop in dit onderwerp voor meer informatie.|
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
@@ -153,14 +153,14 @@ In de lijst **Compatibele &amp; niet-compatibele apps** geeft u een lijst met co
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Klik op **Bladeren** en geef de beheerde app, of een app in een store, op die mag worden uitgevoerd wanneer het apparaat in kioskmodus is. Er mogen geen andere apps worden uitgevoerd op het apparaat. Zie **URL's voor app stores opgeven** verderop in dit onderwerp voor meer informatie.|
+|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Kies **Bladeren** en geef de beheerde app, of een app in een store, op die mag worden uitgevoerd wanneer het apparaat in kioskmodus is. Er mogen geen andere apps worden uitgevoerd op het apparaat. Zie **URL's voor app stores opgeven** verderop in dit onderwerp voor meer informatie.|
 |**Aanraakscherm toestaan**|Hiermee wordt het aanraakscherm op het apparaat in- of uitgeschakeld.|
 |**Schermrotatie toestaan**|Hiermee wordt de wijziging van de schermstand wanneer u het apparaat roteert, in- of uitgeschakeld.|
 |**Volumeknoppen toestaan**|Hiermee wordt het gebruik van de volumeknoppen op het apparaat in- of uitgeschakeld.|
 |**Schakelaar voor belsignaal toestaan**|Hiermee wordt de schakelaar voor belsignaal (dempen) op het apparaat in- of uitgeschakeld.|
 |**Knop voor slaapstand/ontwaken van scherm toestaan**|Hiermee wordt de knop voor slaapstand/ontwaken van het scherm in- of uitgeschakeld op het apparaat.|
 |**Automatisch vergrendelen toestaan**|Hiermee wordt automatische vergrendeling van het apparaat in- of uitgeschakeld.|
-|**Monogeluid inschakelen**|Hiermee wordt de toegankelijkheidsinstelling **Monogeluid** in- of uitgeschakeld..|
+|**Monogeluid inschakelen**|Hiermee wordt de toegankelijkheidsinstelling **Monogeluid**in- of uitgeschakeld.|
 |**Voice-over inschakelen**|Hiermee wordt de toegankelijkheidsinstelling **Voice-over** die tekst op het apparaatscherm voorleest, in- of uitgeschakeld.|
 |**Aanpassingen aan voice-over inschakelen**|Hiermee worden aanpassingen aan de functie Voice-over (bijvoorbeeld hoe snel schermtekst wordt voorgelezen) in- of uitgeschakeld.|
 |**Zoomen inschakelen**|Hiermee wordt de toegankelijkheidsinstelling **Zoomen** waarmee u via aanraken kunt inzoomen op het apparaatscherm, in- of uitgeschakeld.|
@@ -170,8 +170,7 @@ In de lijst **Compatibele &amp; niet-compatibele apps** geeft u een lijst met co
 |**Ondersteunend aanraken inschakelen**|Hiermee wordt de toegankelijkheidsinstelling **Ondersteunend aanraken** waarmee gebruikers schermbewegingen kunnen uitvoeren die moeilijk voor hen kunnen zijn, in- of uitgeschakeld.|
 |**Aanpassingen aan ondersteunend aanraken inschakelen**|Hiermee worden aanpassingen aan de functie Ondersteunend aanraken in- of uitgeschakeld.|
 |**Spraakselectie inschakelen**|Hiermee worden de toegankelijkheidsinstellingen voor **Selectie uitspreken** waarmee door u geselecteerde tekst wordt voorgelezen, in- of uitgeschakeld.|
-> [!NOTE]
-> De volgende opmerkingen zijn van toepassing op kioskmodusinstellingen voor iOS-apparaten:
+> [!NOTE] De volgende opmerkingen zijn van toepassing op kioskmodusinstellingen voor iOS-apparaten:
 > 
 > -   Voordat u een iOS-apparaat voor kioskmodus kunt configureren, moet u het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) gebruiken om het apparaat in de modus Supervisie te plaatsen. Zie de Apple-documentatie voor meer informatie over het hulpprogramma Apple Configurator.
 > -   Als de iOS-app die u opgeeft, wordt geïnstalleerd nadat u het configuratiebeleid hebt geïmplementeerd, kan het apparaat pas in kioskmodus worden geplaatst nadat het opnieuw is opgestart.
@@ -183,9 +182,9 @@ Gebruik het **Rapport met niet-compatibele apps** om de compatibiliteit van toeg
 
 ##### Het rapport met niet-compatibele apps uitvoeren
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Rapporten** &gt; **Rapport met niet-compatibele apps**..
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Rapporten** &gt; **Rapport met niet-compatibele apps**.
 
-2.  Selecteer de apparaatgroepen die u wilt controleren, geef aan of u op compatibele of op niet-compatibele apps wilt controleren en klik vervolgens op **Rapport weergeven**..
+2.  Selecteer de apparaatgroepen die u wilt controleren, of u nu op compatibele en/of op niet-compatibele apps wilt controleren, en kies vervolgens **Rapport weergeven**.
 
 #### URL's voor app stores opgeven
 Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele apps of in de optie **Selecteer een beheerde app die actief mag zijn als het apparaat in kioskmodus is** (alleen iOS), gebruikt u de volgende indeling:
@@ -196,8 +195,7 @@ Kopieer de URL van de pagina en gebruik deze als de URL voor het configureren va
 
 **Voorbeeld:** Zoek naar **Microsoft Word voor iPad**. De URL die u gebruikt, is **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
+> [!NOTE] U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
 
 
 ## Aangepaste beleidsinstellingen
@@ -223,8 +221,8 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
-|**Aangepaste configuratieprofielnaam (weergegeven voor gebruikers)**|Geef voor het beleid de naam op die moet worden weergegeven op het apparaat en in de Intune-beleidsrapporten.|
-|**Configuratieprofielbestand**|Klik op **Importeren** en blader vervolgens naar het configuratieprofiel dat u hebt gemaakt met behulp van de Apple Configurator. **Opmerking:** controleer of de instellingen die u vanuit het hulpprogramma Apple Configurator exporteert, compatibel zijn met de iOS-versie op de apparaten waarop u het aangepaste iOS-beleid implementeert. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).|
+|**Aangepaste configuratieprofielnaam (weergegeven voor gebruikers)**|Geef een naam op voor het beleid, zoals dit moet worden weergegeven op het apparaat en in de Intune-beleidsrapporten.|
+|**Configuratieprofielbestand**|Kies **Importeren** en blader vervolgens naar het configuratieprofiel dat u hebt gemaakt met behulp van de Apple Configurator. **Opmerking:** controleer of de instellingen die u vanuit het hulpprogramma Apple Configurator exporteert, compatibel zijn met de iOS-versie op de apparaten waarop u het aangepaste iOS-beleid implementeert. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).|
     |**Configuratieprofieldetails**|Geeft de XML-code weer voor het configuratieprofiel dat u hebt geïmporteerd.|
 
 ### Zie tevens
@@ -232,6 +230,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

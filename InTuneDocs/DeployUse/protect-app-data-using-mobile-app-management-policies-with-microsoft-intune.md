@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ MAM-beleid ondersteunt apps die worden uitgevoerd op:
 
 -   **Apparaten die worden beheerd en geregistreerd in een oplossing voor mobiel apparaatbeheer van derden.**   Bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
-  > [!NOTE]
-  > MAM-beleid mag niet worden gebruikt met MAM-oplossingen van derden of beveiligde container-oplossingen.
+  > [!NOTE] MAM-beleid mag niet worden gebruikt met MAM-oplossingen van derden of beveiligde container-oplossingen.
 
 -   **Apparaten die niet worden beheerd**:  Bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
@@ -64,6 +63,7 @@ Het gebruik van MDM met MAM-beleid biedt extra voordelen en bedrijven kunnen MAM
 
 -   Android 4 of hoger
 
+Windows-apparaten worden momenteel niet ondersteund.
 ##  Hoe MAM-beleid app-gegevens beschermt
 
 ####  Apps zonder MAM-beleid:
@@ -77,9 +77,8 @@ Bedrijfsgegevens en persoonlijke gegevens kunnen met elkaar worden vermengd als 
 ![Afbeelding die laat zien hoe bedrijfsgegevens worden beveiligd als er MAM-beleid wordt toegepast ](../media/Apps_with_mobile_app_policies.png)
 
 U kunt MAM-beleid gebruiken om te voorkomen dat bedrijfsgegevens worden opgeslagen in de lokale opslag van het apparaat, en de verplaatsing van gegevens naar andere apps die niet zijn beveiligd door MAM-beleid. beperken. De MAM-beleidsinstellingen omvatten:
-- Beleid voor herlocatie van gegevens, zoals
- **Geen Opslaan als**, **Knippen, kopiëren en plakken beperken**.
-- Toegang tot beleidsinstellingen zoals **Eenvoudige pincode vereist voor toegang**, **De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd**.
+- Beleid voor gegevensverplaatsing zoals **Geen Opslaan als**, **Knippen, kopiëren en plakken beperken**.
+- Instellingen voor toegangsbeleid zoals **Eenvoudige pincode vereisen voor toegang**, **De uitvoering blokkeren van beheerde apps die worden uitgevoerd op apparaten waarop jailbreaking is uitgevoerd of die worden uitgevoerd als rootgebruiker**.
 
 ### Gegevensbeveiliging met MAM-beleid op apparaten die worden beheerd door een MDM-oplossing:
 
@@ -138,6 +137,6 @@ Alle mobiele apps van Office ondersteunen meerdere identiteiten.
 [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

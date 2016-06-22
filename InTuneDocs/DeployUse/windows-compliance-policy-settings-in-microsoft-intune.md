@@ -18,7 +18,7 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,24 +39,16 @@ De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
 
 ## Instellingen voor systeembeveiliging
 ### Wachtwoord
-- **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren voordat
-  ze toegang tot hun apparaat krijgen.
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 
-- **Eenvoudige wachtwoorden toestaan**: stel deze optie in
-   op **Ja** als u wilt toestaan dat gebruikers eenvoudige wachtwoorden maken,
-   Zoals ‘**1234**’ of ‘**1111**’.
+- **Eenvoudige wachtwoorden toestaan:** stel deze optie in op **Ja** zodat gebruikers eenvoudige wachtwoorden kunnen maken, zoals **1234** of **1111**.
 
--  **Minimale wachtwoordlengte:**
-  Geef het minimale aantal cijfers of tekens op waaruit
-  het wachtwoord van de gebruiker moet bestaan.
-- **Vereist wachtwoordtype:** geef op of gebruikers
-een **alfanumeriek** of een **numeriek** wachtwoord moeten instellen.
+-  **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
+- **Vereist wachtwoordtype:** geef aan of gebruikers een **alfanumeriek** of een **numeriek** wachtwoord moeten maken.
 
   Bij Windows-apparaten die met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid geen goede controle uitvoeren als de minimale wachtwoordlengte langer is dan acht tekens of als het minimale aantal tekensets meer is dan twee.
 
-- **Minimum aantal tekensets:** als u **Vereist wachtwoordtype** instelt op
-**Alfanumeriek** bepaalt deze instelling het minimale aantal
-tekensets waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
+- **Minimum aantal tekensets:** als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimum aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
   -   Kleine letters
   -   Hoofdletters
   -   Symbolen
@@ -65,20 +57,16 @@ tekensets waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
   Hoe hoger de waarde is die u instelt, hoe complexer de gebruikers hun wachtwoorden moeten maken. Bij Windows-apparaten die met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid geen goede controle uitvoeren als de minimale wachtwoordlengte langer is dan acht tekens of als het minimale aantal tekensets meer is dan twee.
 - **Minuten inactief voordat wachtwoord is vereist:** hiermee geeft u aan na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
 
-- **Verlopen van wachtwoorden (dagen)**: selecteer het aantal dagen waarna het wachtwoord van de gebruiker verloopt
-  en de gebruiker een nieuw wachtwoord moet maken.
+- **Wachtwoord verloopt (in dagen):** selecteer het aantal dagen waarna het wachtwoord van gebruikers verloopt en ze een nieuw wachtwoord moeten maken.
 
-- **Wachtwoordgeschiedenis onthouden**: gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers
-  eerder gebruikte wachtwoorden opnieuw gebruiken.
+- **Wachtwoordgeschiedenis onthouden:** gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers eerder gebruikte wachtwoorden opnieuw gebruiken.
 
-- **Wachtwoorden niet opnieuw gebruiken**: als **Wachtwoordgeschiedenis onthouden** is geselecteerd, geeft u op
-  hoeveel eerder gebruikte wachtwoorden er niet opnieuw mogen worden gebruikt.
+- **Wachtwoorden niet opnieuw gebruiken:** als **Wachtwoordgeschiedenis onthouden** is geselecteerd, geeft u het aantal eerder gebruikte wachtwoorden op dat niet opnieuw kan worden gebruikt.
 - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt samen met de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat langer inactief is geweest dan de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
 
   **Deze instelling geldt alleen voor Windows 10 Mobile-apparaten.**
 ### Versleuteling
-- **Versleuteling vereisen op mobiel apparaat**: stel dit in op **Ja** als u verplicht wilt stellen dat apparaten worden
-  versleuteld om verbinding te kunnen maken met bronnen.
+- **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt dat apparaten moeten worden versleuteld om verbinding te maken met resources.
 
 ## Instellingen voor de status van het apparaat
 - **Vereisen dat apparaten worden gerapporteerd als goed:** u kunt een regel instellen om te vereisen dat **Windows 10 Mobile** apparaten als goed rapporteert bij nieuw of bestaand nalevingsbeleid.  Als deze instelling is ingeschakeld, worden Windows 10-apparaten via de Health Attestation-service (HAS) op de volgende gegevenspunten beoordeeld:
@@ -88,12 +76,10 @@ tekensets waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
 
   Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
 ##  Instellingen voor apparaateigenschappen
-- **Minimale versie van het besturingssysteem die is vereist**: als een apparaat niet voldoet aan de minimumvereiste voor de versie van het
-    besturingssysteem, wordt dit als niet-compatibel gemeld.
+- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
     Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
 
-- **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat gebruikmaakt van
-    een versie van het besturingssysteem die hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
+- **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
 
 ## Instellingen voor nalevingsbeleid voor Windows-pc’s
@@ -159,6 +145,6 @@ Als u de versie van het besturingssysteem wilt vinden die u voor de instellingen
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

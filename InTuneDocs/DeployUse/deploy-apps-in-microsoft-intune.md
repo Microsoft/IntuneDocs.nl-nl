@@ -1,13 +1,27 @@
 ---
-title: Apps in Microsoft Intune implementeren | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+# required metadata
+
+title: Apps implementeren | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: mghadial
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
 ---
 # Apps in Microsoft Intune implementeren
 
@@ -19,9 +33,9 @@ In deze procedure implementeert u de app op geselecteerde apparaten of gebruiker
 
 ### Een app implementeren
 
-1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Apps** &gt; **Apps** om de lijst met apps die u beheert, weer te geven.
+1. Klik in de [Microsoft Intune-beheerdersconsole](https://manage.microsoft.com) op **Apps** &gt; **Apps** om de lijst weer te geven van de apps die u beheert.
 
-2.  Selecteer de app die u wilt implementeren en klik vervolgens op **Implementatie beheren**..
+2.  Selecteer de app die u wilt implementeren en klik vervolgens op **Implementatie beheren**.
 
 3.  Selecteer de gebruikers- of apparaatgroepen waarvoor u de app wilt implementeren, in het dialoogvenster *&lt;<app-naam>&gt;* op de pagina **Groepen selecteren**.
 
@@ -55,6 +69,6 @@ Als u de app hebt geïmplementeerd als **Vereist**, krijgt de gebruiker een meld
 Nadat u een app hebt geïmplementeerd, is het een goed idee om de voortgang ervan te controleren. Zie [Apps in Microsoft Intune controleren](monitor-apps-in-microsoft-intune.md) voor meer informatie.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

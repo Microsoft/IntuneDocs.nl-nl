@@ -18,7 +18,7 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,30 +26,30 @@ ms.suite: ems
 ---
 
 # Conflicten tussen GPO-beleid (groepsbeleidsobjecten) en Microsoft Intune-beleid oplossen
-Intune gebruikt beleidsregels voor het beheren van instellingen op de computers die u beheert. U kunt bijvoorbeeld een beleidsregel gebruiken om instellingen voor de Windows Firewall op computers te beheren. Veel van de Intune-instellingen zijn vergelijkbaar met instellingen die u configureert met Windows-groepsbeleid. De beide methoden kunnen echter van tijd tot tijd met elkaar conflicteren.
+Intune maakt gebruik van beleidsregels voor het beheren van instellingen op de Windows-pc’s die u beheert. U kunt bijvoorbeeld een beleidsregel gebruiken om instellingen voor de Windows Firewall op pc’s te beheren. Veel van de Intune-instellingen zijn vergelijkbaar met instellingen die u configureert met Windows-groepsbeleid. De beide methoden kunnen echter van tijd tot tijd met elkaar conflicteren.
 
-Als er conflicten optreden, heeft groepsbeleid op domeinniveau voorrang ten opzichte van Intune-beleid, tenzij de computer niet bij het domein kan worden aangemeld. In dit geval wordt Intune-beleid toegepast op de clientcomputer.
+Wanneer er conflicten optreden, heeft groepsbeleid op domeinniveau voorrang ten opzichte van Intune-beleid, tenzij de pc niet bij het domein kan worden aangemeld. In dit geval wordt Intune-beleid toegepast op de client-pc.
 
 ## Wat te doen als u groepsbeleid gebruikt
 Controleer of beleidsregels die u toepast, niet worden beheerd door groepsbeleid. Om te conflicten te helpen voorkomen, kunt u gebruikmaken van een of meer van de volgende methoden:
 
--   Verplaats uw computers voordat u de Intune-client installeert, naar een organisatie-eenheid (OE) van Active Directory waarop geen groepsbeleidsinstellingen worden toegepast. U kunt ook de overname van groepsbeleid blokkeren in organisatie-eenheden met computers die zijn ingeschreven in Intune en waarop u geen groepsbeleidsinstellingen wilt toepassen.
+-   Verplaats voordat u de Intune-client installeert uw pc’s naar een organisatie-eenheid (OE) van Active Directory waarop geen groepsbeleidsinstellingen worden toegepast. U kunt ook de overname van groepsbeleid blokkeren in organisatie-eenheden met pc’s die zijn geregistreerd bij Intune en waarop u geen groepsbeleidsinstellingen wilt toepassen.
 
--   Gebruik een WMI-filter of een beveiligingsfilter om groepsbeleidsobjecten te beperken tot computers die niet worden beheerd door Intune. Raadpleeg hieronder het gedeelte [Bestaande groepsbeleidsobjecten filteren om conflicten met het Microsoft Intune-beleid te voorkomen](resolve-gpo-and-microsoft-intune-policy-conflicts.md#BKMK_Filter) voor informatie over en voorbeelden van de werkwijze.
+-   Gebruik een beveiligingsgroepfilter om groepsbeleidsobjecten te beperken tot uitsluitend pc’s die niet worden beheerd door Intune. 
 
 -   Schakel de groepsbeleidsobjecten die met de Intune-beleidsregels conflicteren, uit of verwijder deze.
 
 Zie de documentatie van Windows Server voor meer informatie over Active Directory en Windows-groepsbeleid.
 
 ## Bestaande groepsbeleidsobjecten filteren om conflicten met Intune-beleid te voorkomen
-Als u groepsbeleidsobjecten (GPO's) hebt geïdentificeerd met instellingen die conflicteren met Intune-beleidsregels, kunt u een van de volgende filtermethoden gebruiken om de desbetreffende groepsbeleidsobjecten te beperken tot computers die niet worden beheerd door Intune.
+Als u hebt vastgesteld dat bepaalde groepsbeleidsobjecten (GPO's) instellingen bevatten die in strijd zijn met Intune-beleidsregels, kunt u beveiligingsgroepfilters gebruiken om die groepsbeleidsobjecten te beperken tot pc’s die niet worden beheerd door Intune.
 
-### WMI-filters gebruiken
-WMI-filters passen GPO's selectief toe op computers die voldoen aan de voorwaarden van een query. Om een WMI-filter toe te passen, implementeert u een WMI-klasse-instantie op alle computers in de onderneming voordat u computers bij de Intune-service inschrijft.
+<!--- ### Use WMI filters
+WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
 
-#### WMI-filters toepassen op een GPO
+#### To apply WMI filters to a GPO
 
-1.  Maak een beheerobjectbestand door de volgende gegevens te kopiëren en in een tekstbestand te plakken en dit bestand vervolgens op een geschikte locatie als **WIT.mof** op te slaan. Het bestand bevat de WMI-klasse-instantie die u implementeert op computers die u wilt inschrijven bij de Intune-service.
+1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -79,36 +79,36 @@ WMI-filters passen GPO's selectief toe op computers die voldoen aan de voorwaard
     };
     ```
 
-2.  Gebruik een opstartscript of een groepsbeleid om het bestand te implementeren. Hieronder volgt de implementatieopdracht voor het opstartscript. De WMI-klasse-instantie moet worden geïmplementeerd voordat u clientcomputers inschrijft bij de Intune-service.
+2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
-    **C:/Windows/System32/Wbem/MOFCOMP &lt;pad naar mof-bestand&gt;\wit.mof**
+    **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Voer een van de volgende opdrachten uit om de WMI-filters te maken. Welke opdracht u kiest, is afhankelijk van het gegeven of het GPO dat u wilt filteren, van toepassing is op pc’s die worden beheerd met Intune of op computers die niet worden beheerd met Intune.
+3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   Voor GPO's die van toepassing zijn op computers die niet worden beheerd met Intune, gebruikt u het volgende:
+    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   Voor GPO's die van toepassing zijn op computers die worden beheerd met Intune, gebruikt u het volgende:
+    -   For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Bewerk het GPO in de groepsbeleidsbeheerconsole om het WMI-filter toe te passen dat u in de vorige stap hebt gemaakt.
+4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   Voor GPO's die alleen van toepassing moeten zijn op computers die u wilt beheren met Intune, past u het filter **WindowsIntunePolicyEnabled=1** toe.
+    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   Voor GPO's die alleen van toepassing moeten zijn op computers die u niet wilt beheren met Intune, past u het filter **WindowsIntunePolicyEnabled=0** toe.
+    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
-Zie het blogbericht [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883) (Engelstalig) voor meer informatie over het toepassen van WMI-filters in groepsbeleid.
+For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
-### Beveiligingsgroepfilters gebruiken
-Met groepsbeleid kunt u GPO´s toepassen op alleen de beveiligingsgroepen die u hebt opgegeven in het gebied **Beveiligingsfiltering** van de groepsbeleidsbeheerconsole voor een geselecteerd GPO. Standaard zijn GPO's van toepassing op **geverifieerde gebruikers**.
+
+Met groepsbeleid kunt u GPO´s toepassen op alleen de beveiligingsgroepen die u hebt opgegeven in het gebied **Beveiligingsfiltering** van de groepsbeleidsbeheerconsole voor een geselecteerd GPO. GPO´s zijn standaard van toepassing op **Geverifieerde gebruikers**.
 
 -   In de module **Active Directory: gebruikers en computers** maakt u een nieuwe beveiligingsgroep met computers en gebruikersaccounts die u niet met behulp van Intune wilt beheren. U kunt de groep bijvoorbeeld de naam **Niet in Microsoft Intune** geven.
 
@@ -122,6 +122,6 @@ De nieuwe beveiligingsgroep moet ingeschreven blijven in de Intune-servicewijzig
 [Windows-pc's met Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

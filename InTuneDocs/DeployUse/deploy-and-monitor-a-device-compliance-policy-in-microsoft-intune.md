@@ -18,7 +18,7 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,12 +29,11 @@ ms.suite: ems
 ## Een nalevingsbeleid implementeren
 Implementeer het nalevingsbeleid dat u hebt [gemaakt](create-a-device-compliance-policy-in-microsoft-intune.md) voor een of meer groepen van gebruikers of apparaten in uw organisatie.
 
-1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en kies vervolgens **Implementatie beheren**..
+1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
 ![Schermafbeelding van de pagina voor het nalevingsbeleid waarin boven de menuoptie Implementatie beheren wordt weergegeven](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Kies in het dialoogvenster **Implementatie beheren** een of meer groepen waarvoor u het beleid wilt implementeren en kies vervolgens **Toevoegen > OK**.
-![Schermafbeelding van het dialoogvenster Implementatie beheren](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-U kunt nalevingsbeleid implementeren voor gebruikers en/of apparaten. Gebruik Active Directory-groepen die u al hebt gemaakt en met Intune hebt gesynchroniseerd, of maak deze groepen handmatig in de Intune-console. Zie [Configuratiebeleid implementeren](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor meer informatie over het implementeren van beleid.
+![Schermopname van het dialoogvenster Implementatie beheren](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) U kunt een nalevingsbeleid implementeren voor gebruikers en/of apparaten. Gebruik Active Directory-groepen die u al hebt gemaakt en met Intune hebt gesynchroniseerd, of maak deze groepen handmatig in de Intune-console. Zie [Een configuratiebeleid implementeren](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor meer informatie over het implementeren van beleid.
 
 Gebruik het statusoverzicht en de waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** om beleidsproblemen te identificeren die uw aandacht vereisen. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte **Dashboard** .
 
@@ -57,7 +56,7 @@ Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intu
 
 3.  Kies het tabblad **Beleid** om een lijst met de beleidsregels voor dat apparaat weer te geven.
 
-4.  Selecteer in de vervolgkeuzelijst **Filters** de optie **Voldoet niet aan nalevingsbeleid**.
+4.  Selecteer in de vervolgkeuzelijst **Filters** de optie **Voldoet niet aan het nalevingsbeleid**.
 ![Schermafbeelding van de lijst met opties in de lijst met filters](./media/intune-sa-3e-view-device-noncompliance.png)
 
 #### Health Attestation-rapporten weergeven
@@ -77,6 +76,6 @@ U kunt het nalevingsbeleid nu gebruiken met beleidsregels voor voorwaardelijke t
 [Inleiding in nalevingsbeleid voor apparaten in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

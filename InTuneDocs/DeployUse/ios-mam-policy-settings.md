@@ -18,7 +18,7 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,8 +33,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 ##  Instellingen voor herlocatie van gegevens
 De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps die zijn geconfigureerd met MAM-beleid.
 
-- **Back-ups van iTunes en iCloud voorkomen:**
-  Kies **Ja** om dit uit te schakelen, of **Nee** om toe te staan dat er back-ups worden gemaakt van bedrijfsgegevens uit door beleid beheerde apps.
+- **Back-ups van iTunes en iCloud verhinderen:** kies **Ja** om dit uit te schakelen, of **Nee** om toe te staan dat er back-ups worden gemaakt van bedrijfsgegevens uit apps die door beleid worden beheerd.
 
   **Standaardwaarde = Ja**
 
@@ -54,13 +53,11 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
 
   **Standaardwaarde = Alle apps**
 
-- **Opslaan als voorkomen:**
-  Kies **Ja** als u het gebruik van de optie Opslaan als wilt uitschakelen in alle apps die dit beleid gebruiken. Kies **Nee** als u het gebruik van de optie Opslaan als wilt toestaan.
+- **Opslaan als voorkomen**: selecteer **Ja** als u het gebruik van de optie Opslaan als wilt uitschakelen in alle apps die dit beleid gebruiken. Selecteer **Nee** als u het gebruik van de optie Opslaan als wilt toestaan.
 
   **Standaardwaarde = Ja**
 
-- **Knippen, kopiëren en plakken met andere apps beperken:**
-Geef op wanneer knip-, kopieer- en plakbewerkingen moeten worden beperkt. U kunt kiezen uit:
+- **Knippen, kopiëren en plakken met andere apps beperken**: geef op wanneer knip-, kopieer- en plakbewerkingen moeten worden beperkt. U kunt kiezen uit:
   -   **Geblokkeerd**: geen knip-, kopieer- en plakbewerkingen toestaan tussen door beleid beheerde apps.
   -   **Door beleid beheerde apps**: knip-, kopieer- en plakbewerkingen alleen toestaan tussen door beleid beheerde apps.
   -   **Door beleid beheerde apps met Plakken in**: knippen en kopiëren toestaan tussen door beleid beheerde apps. Gegevens die uit alle apps zijn geknipt of gekopieerd, mogen in deze app worden geplakt.
@@ -72,11 +69,11 @@ Geef op wanneer knip-, kopieer- en plakbewerkingen moeten worden beperkt. U kunt
 
   Voor apparaten die niet zijn ingeschreven bij Intune, worden webkoppelingen in door beleid beheerde apps alleen geopend in de Managed Browser-app via het MAM-beleid.
 
-  Als u Intune gebruikt voor het beheer van uw apparaten, raadpleegt u [Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Als u Intune gebruikt voor het beheer van uw apparaten, raadpleegt u [Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Standaardwaarde = Ja**
 
-- **App-gegevens versleutelen:** voor apps die zijn gekoppeld aan een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie, [zijn de modules die worden gebruikt door iOS 7, gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739)..
+- **App-gegevens versleutelen:** voor apps die zijn gekoppeld aan een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie [zijn de modules die worden gebruikt door iOS 7 gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739).
 
   U kunt versleutelingswaarden voor pincodes opgeven in de beleidsinstellingen.  Deze waarden bepalen wanneer de gegevens worden versleuteld. U kunt kiezen uit de volgende opties:
   - **Wanneer apparaat is vergrendeld:** alle app-gegevens die aan dit beleid zijn gekoppeld, worden versleuteld terwijl het apparaat is vergrendeld.
@@ -93,31 +90,33 @@ Geef op wanneer knip-, kopieer- en plakbewerkingen moeten worden beperkt. U kunt
   **Standaardwaarde = Ja**
 ##  Beleidsinstellingen voor iOS-toegang
 De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps die zijn geconfigureerd met MAM-beleid.
-- **Eenvoudige pincode vereisen voor toegang**: selecteer **Ja** om een pincode te vereisen voor het gebruik van door beleid beheerde apps. De eerste keer dat de gebruiker de app uitvoert, wordt gevraagd om dit in te stellen.
+- **Pincode vereisen voor toegang:** kies **Ja** om een pincode te vereisen voor het gebruik van apps die door beleid worden beheerd. De eerste keer dat de gebruiker de app uitvoert, wordt gevraagd om dit in te stellen.
 
   **Standaardwaarde = Ja**
-- **Aantal pogingen voordat pincode opnieuw wordt ingesteld**: geef het aantal toegestane invoerpogingen voor de pincode op voordat de gebruiker de pincode opnieuw moet instellen.
-
+    -  **Eenvoudige pincode toestaan:** hier kunt u opgeven of gebruikers eenvoudige pincodes mogen gebruiken, zoals 1234 of 1111. **Standaardwaarde = Ja**.
+    - **Lengte van de pincode:** geef het minimale aantal cijfers op waaruit een pincode moet bestaan. **Standaardwaarde = 4**
+    - **Aantal pogingen voordat pincode opnieuw wordt ingesteld**: geef het aantal toegestane invoerpogingen voor de pincode op voordat de gebruiker de pincode opnieuw moet instellen.
   **Er is geen standaardwaarde voor deze instelling**.
-- **Vingerafdruk in plaats van pincode vereisen (iOS 8.0+):** selecteer **Ja** als u een vingerafdruk-id in plaats van een cijferpincode wilt vereisen voor toegang tot apps.
+
+  - **Vingerafdruk in plaats van pincode vereisen (iOS 8.0+):** selecteer **Ja** als u een vingerafdruk-id in plaats van een cijferpincode wilt vereisen voor toegang tot apps.
 Op iOS-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk in plaats van met een cijferpincode. Wanneer de eindgebruiker toegang tot deze app probeert te krijgen via zijn werkaccount, wordt hij gevraagd zijn vingerafdruk te geven in plaats van een pincode in te voeren.
 
-  **Standaardwaarde = Ja**
+    **Standaardwaarde = Ja**
 - **Bedrijfsreferenties vereisen voor toegang**: selecteer **Ja** als u de bedrijfsreferenties in plaats van een pincode wilt vereisen voor toegang tot apps. **Als u deze waarde op Ja instelt, overschrijft dit de vereisten voor de pincode of Touch-ID.** De gebruiker wordt gevraagd om zijn zakelijke referenties te verstrekken.
 
   **Standaardwaarde = Nee**
-- **De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd**: selecteer **Ja** om te voorkomen dat apps worden uitgevoerd op gekraakte of geroote apparaten. De gebruiker kan de apps nog steeds gebruiken voor privétaken, maar moet voor zijn werk een ander apparaat gebruiken.
+- **De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd**: selecteer **Ja** om te voorkomen dat apps worden uitgevoerd op gekraakte of geroote apparaten. De gebruiker kan de apps nog steeds gebruiken voor privétaken maar moet voor zijn werk een ander apparaat gebruiken.
 
   **Standaardwaarde = Ja**
 - **Toegangsvereisten opnieuw controleren na (minuten)**|-   **Time-out:** periode (in minuten) waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd.
   -   **Offline respijtperiode**: als het apparaat offline is, geeft u de periode (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd.
 
   **Standaardwaarde = time-outperiode van 30 minuten en offline respijtperiode van 720 minuten**
-  - **Offline interval (in dagen) voordat app-gegevens worden gewist**: u kunt ervoor kiezen de bedrijfsgegevens te wissen wanneer een apparaat gedurende een bepaalde periode offline is geweest.  Geef het aantal dagen op dat een apparaat offline mag zijn voordat de bedrijfsgegevens van het apparaat worden verwijderd. **Als u een waarde van 0 invoert, wordt deze instelling uitgeschakeld.**.
+  - **Offline interval (in dagen) voordat app-gegevens worden gewist**: u kunt ervoor kiezen de bedrijfsgegevens te wissen wanneer een apparaat gedurende een bepaalde periode offline is geweest.  Geef het aantal dagen op dat een apparaat offline mag zijn voordat de bedrijfsgegevens van het apparaat worden verwijderd. **Als u een waarde van 0 invoert, wordt deze instelling uitgeschakeld**.
 
   **Standaardwaarde = 90 dagen**
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

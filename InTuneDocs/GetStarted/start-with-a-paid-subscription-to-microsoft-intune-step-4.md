@@ -26,10 +26,10 @@ ms.suite: ems
 ---
 
 # Intune-licenties beheren
-Een gebruiker moet een licentie voor uw Intune-abonnement hebben voordat hij zich kan aanmelden voor gebruik van de service of apparaten kan inschrijven om te worden beheerd. Wanneer een gebruiker een licentie heeft, maakt deze deel uit van de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-gebruikersgroep. Deze groep bevat alle gebruikers die een licentie voor gebruik van het abonnement hebben. **Elke gebruikerslicentie ondersteunt de inschrijving van maximaal vijf apparaten**.
+Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren bij het beheer, moet aan hen eerst in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) een licentie worden toegewezen voor uw Intune-abonnement. Wanneer een licentie is toegewezen, worden de namen van de gebruikers weergegeven in de Intune-beheerconsole. Gebruikers kunnen vervolgens maximaal vijf apparaten registreren.
 
 ## De toewijzing van Intune-licenties
-Als gebruikersaccounts worden gesynchroniseerd vanuit uw on-premises Active Directory of via de accountportal handmatig worden toegevoegd aan uw abonnement op cloudservices, krijgen ze niet automatisch een Intune-licentie toegewezen. In plaats daarvan moet een Intune-tenantbeheerder het gebruikersaccount later bewerken en vanuit de accountportal een licentie aan de gebruiker toewijzen.
+Als gebruikersaccounts worden gesynchroniseerd vanuit uw on-premises Active Directory of handmatig via het [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) worden toegevoegd aan uw abonnement op cloudservices, krijgen ze niet automatisch een Intune-licentie toegewezen. Een Intune-tenantbeheerder moet echter op een later tijdstip het gebruikersaccount bewerken om in de Office 365-portal een licentie aan de gebruiker toe te wijzen.
 
 Als uw abonnement Azure AD deelt met andere cloudservices die aan uw abonnement zijn gekoppeld, hebt u ook toegang tot gebruikers die aan deze services zijn toegevoegd. Deze gebruikers hebben geen licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] totdat u een licentie aan elk van deze gebruikers toewijst.
 
@@ -38,13 +38,13 @@ Als uw abonnement Azure AD deelt met andere cloudservices die aan uw abonnement 
 
 ## Een Intune-gebruikerslicentie toewijzen
 
-U gebruikt de **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure AD.
+U gebruikt de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure AD.
 
-1.  Meld u met uw tenantbeheerderreferenties aan bij de Intune-accountportal.
+1.  Meld u bij de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) aan met uw tenantbeheerdersreferenties en selecteer vervolgens **Personen** > **Alle gebruikers**.
 
-2.  Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en schakel het selectievakje **Microsoft Intune** in voor de eigenschappen van het gebruikersaccount.
+2.  Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en selecteer **Microsoft Intune** voor de eigenschappen van het gebruikersaccount.
 
-3.  Het gebruikersaccount wordt nu toegevoegd aan de Microsoft Intune-gebruikersgroep die de gebruikersmachtigingen voor het gebruik van de service toekent en de apparaten inschrijft voor beheer.
+3.  Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
 
 ### PowerShell gebruiken om EMS-gebruikerslicenties selectief te beheren
 In organisaties die gebruikmaken van de Mobility Suite (EMS) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. Met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) kunt u één service of een subset van services toewijzen. 
@@ -57,8 +57,7 @@ U moet een nieuwe licentie-SKU-definitie maken die alleen van toepassing is op d
 
 U kunt de volgende opdracht uitvoeren om het Intune-serviceplan uit te sluiten. Met dezelfde methode kunt u een complete beveiligingsgroep uitbreiden. U kunt echter ook gedetailleerdere filters gebruiken. 
 
-**Voorbeeld 1**
-Maak een nieuwe gebruiker via de opdrachtregel en wijs een EMS-licentie toe zonder het Intune-gedeelte van de licentie in te schakelen:
+**Voorbeeld 1**: maak een nieuwe gebruiker via de opdrachtregel en wijs een EMS-licentie toe zonder het Intune-gedeelte van de licentie in te schakelen:
 
     Connect-MsolService 
         
@@ -72,8 +71,7 @@ Controleer met:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**Voorbeeld 2**
-Schakel het Intune-gedeelte van de EMS-licentie uit voor een gebruiker aan wie al een licentie is toegewezen:
+**Voorbeeld 2**: schakel het Intune-gedeelte van de EMS-licentie uit voor een gebruiker aan wie al een licentie is toegewezen:
 
     Connect-MsolService 
     
@@ -92,9 +90,9 @@ Controleer met:
 Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid.
 >[!div class="step-by-step"]
 
->[&larr; **Gebruikers synchroniseren met Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gebruikers en apparaten organiseren** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Gebruikers synchroniseren met Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gebruikers en apparaten indelen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
