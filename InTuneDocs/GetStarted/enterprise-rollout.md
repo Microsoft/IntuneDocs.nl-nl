@@ -79,17 +79,16 @@ Hier volgt een lijst met stappen om aan de slag te gaan met de fase **Implementa
 
 -   Identificeer groepen die mogelijk gerichte communicatie en training nodig hebben.
 
--   Maak e-mailberichten op maat, werk de intranetsite bij.
-    Identificeer de aangewezen persoon voor het bijwerken van berichtgeving/bronnen.
+-   Pas e-mailberichten aan, werk de intranetsite bij, identificeer actieve eigenaren voor het bijwerken van communicatie/resources.
 
 -   Maak een overzicht van de trainingsmethoden die u wilt gaan gebruiken.
 
 -   Maak een controlelijst om aan de slag te gaan en een inschrijvingsgids voor gebruikers.
     Gebruik deze gebruikershandleidingen als uitgangspunt:
-    -  [Uw Windows-apparaat inschrijven bij Intune] (/ intune/eindgebruiker/uw-apparaat-inschrijven-bij-intune-windows]
-    -  [Uw Android-apparaat inschrijven bij Intune] (/ intune/eindgebruiker/uw-apparaat-inschrijven-bij-intune-android]
-    -  [Uw iOS-apparaat inschrijven bij Intune] (/ intune/eindgebruiker/uw-apparaat-inschrijven-bij-intune-ios]
-    -  [Uw Mac OS X-apparaat inschrijven bij Intune] (/ intune/eindgebruiker/uw-apparaat-inschrijven-bij-intune-os-x]
+    -  [Uw Windows-apparaat inschrijven bij Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Uw Android-apparaat inschrijven bij Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Uw iOS-apparaat inschrijven bij Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Uw Mac OS X-apparaat inschrijven bij Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Definieer een proces om het trainingsmateriaal zo nodig bij te werken.
 
@@ -114,6 +113,6 @@ Hier vindt u een aantal problemen die kunnen optreden tijdens de fase **Implemen
 [Bewerkingen en onderhoud](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

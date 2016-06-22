@@ -28,7 +28,7 @@ ms.suite: ems
 # Beleid maken en een app publiceren
 Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. Meer informatie vindt u in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
-U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde computers. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
+U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde computers. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal, zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
 
 <!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
 
@@ -51,9 +51,9 @@ De volgende stappen helpen u bij het instellen van een configuratiebeleid voor m
 
 3.  Klik in de lijst **Taken** op de pagina **Overzicht** op **Beleid toevoegen**.
 
-4.  Vouw in de lijst met beleidsregels het platform uit waarvoor u een beleid wilt maken en selecteer **Algemene configuratie** > **Een beleid maken en implementeren met de aanbevolen instellingen** > **Beleid maken**.
+4.  Vouw in de lijst met beleidsregels het platform uit waarvoor u een beleid wilt maken en selecteer **Algemene configuratie** > **Beleid met de aanbevolen instellingen maken en implementeren** > **Beleid maken**.
 
-5.  Wanneer u wordt gevraagd **de groepen te selecteren waarvoor u dit beleid wilt implementeren**, kiest u **Intune-gebruikers** (de groep die in de vorige stap is gemaakt) in de lijst met beschikbare groepen. Kies vervolgens **Toevoegen** > **OK**.
+5.  Wanneer u wordt gevraagd **de groepen te selecteren waarvoor u dit beleid wilt implementeren**, kiest u een groep in de lijst met beschikbare groepen en kiest u vervolgens **Toevoegen** > **OK**.
 
 Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en geïmplementeerd voor de groep **Intune--gebruikers**. Dubbelklik op het beleid om de instellingen weer te geven.
 
@@ -63,24 +63,23 @@ Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en geïmp
 
     ![beheerconsole-apps-werkruimte](./media/apps.png)
 
-    > [!NOTE]
-    > De eerste keer dat u de **Uitgever van Microsoft Intune-software** start, treedt er een korte vertraging op wanneer de toepassing wordt geïnstalleerd.
+    > [!NOTE] De eerste keer dat u **Uitgever van Microsoft Intune-software** start, treedt er een korte vertraging op wanneer de toepassing wordt geïnstalleerd.
 
-2.  Lees de beveiligingswaarschuwing en kies **Uitvoeren**..
+2.  Lees de beveiligingswaarschuwing en kies **Uitvoeren**.
 
-3.  Kies op de pagina **Voordat u begint** de optie **Volgende**..
+3.  Kies op de pagina **Voordat u begint** de optie **Volgende**.
 
-4.  Op de pagina **Setup van software** selecteert u in **Selecteer hoe deze software beschikbaar moet worden gesteld voor apparaten** de optie **Externe koppeling**.
+4.  Selecteer op de pagina **Setup van software** bij **Selecteer hoe deze software beschikbaar moet worden gesteld voor apparaten** de optie **Externe koppeling**.
 
 5.  Geef in **Geef de URL op** de externe koppeling voor de software op en kies **Volgende**. Zorg ervoor dat u de URL laat beginnen met **http://**. Gebruik voor de app Skype de koppeling hieronder die overeenkomt met het platform van het mobiele apparaat dat u gebruikt:
 
-    -   **iOS:**   [https://itunes.apple.com/nl/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
+    -   **iOS:**   [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
     -   **Android:**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8 of Windows Phone 8.1:**  [http://www.windowsphone.com/nl-nl/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8 of Windows Phone 8.1:**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
-6.  Typ op de pagina **Beschrijving van software** de informatie over de software die u voor gebruikers in de bedrijfsportal wilt weergeven en kies **Volgende**. De volgende instellingen zijn beschikbaar (in dit voorbeeld verwijzen we naar Skype):
+6.  Typ op de pagina **Beschrijving van software** de informatie over de software die u voor gebruikers in de bedrijfsportal wilt weergeven en klik vervolgens op **Volgende**. De volgende instellingen zijn beschikbaar (in dit voorbeeld verwijzen we naar Skype):
 
     -   **Uitgever:** Voer de naam van de uitgever in, bijvoorbeeld 'Microsoft'
 
@@ -90,7 +89,7 @@ Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en geïmp
 
     -   **Categorie:** Selecteer de categorie die het beste past bij deze software, zoals **Samenwerking**
 
-    -   **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal:** Selecteer deze optie als u de app duidelijk zichtbaar wilt maken in de bedrijfsportal op mobiele apparaten.
+    -   **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal:** selecteer deze optie als u de app op mobiele apparaten duidelijk zichtbaar wilt maken in de bedrijfsportal.
 
     -   **Pictogram**: kies of u een pictogram wilt koppelen aan de software. De maximale grootte voor het optionele pictogram is 250 x 250 pixels en de aanbevolen grootte is 32 x 32 pixels.
 
@@ -104,7 +103,7 @@ Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en geïmp
 
 11. Kies **Voltooien**.
 
-De app Skype kan nu vanuit de bedrijfsportal op mobiele apparaten worden geïnstalleerd, maar u moet eerst [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-software installeren op computers en mobiele apparaten.
+De Skype-app kan nu vanuit de bedrijfsportal op mobiele apparaten worden geïnstalleerd, maar u moet eerst [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-software installeren op computers en mobiele apparaten.
 
 
 ### Volgende stappen
@@ -115,6 +114,6 @@ Gefeliciteerd. U hebt zojuist stap 6 van de *Snelstartgids voor Intune* voltooid
 >[&larr; **Gebruikers en apparaten organiseren**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Bedrijfsportal aanpassen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
