@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\plan-your-user-and-device-groups.md](https://github.com/Microsoft/IntuneDocs-pr/blob/82ab2dbfada6c0745195da149d5f0dc1948ceb92/InTuneDocs/DeployUse/plan-your-user-and-device-groups.md) | InSyncHandedBackSuccess | [Details](#e89d8384532b994d810649fc07c698237e2f3cec212)
 
 ## Item Details
+##### <a name='e89d8384532b994d810649fc07c698237e2f3cec212'></a> Source: [InTuneDocs\DeployUse\plan-your-user-and-device-groups.md](https://github.com/Microsoft/IntuneDocs-pr/blob/82ab2dbfada6c0745195da149d5f0dc1948ceb92/InTuneDocs/DeployUse/plan-your-user-and-device-groups.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\plan-your-user-and-device-groups.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/d413b6686e167cd81c4ce8a2a5c20e9d199eb7bf/InTuneDocs/DeployUse/plan-your-user-and-device-groups.md)
+* Handoff File: [plan-your-user-and-device-groups.98dcc3cde513ccd97049fa95265da69d4847bd86.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/78e9265c5256bd08b8278a5964f47547aecc4185/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/plan-your-user-and-device-groups.98dcc3cde513ccd97049fa95265da69d4847bd86.nl-nl.xlf)
+* Handoff Datetime: 2016-06-16 21:06:36
+* Handoff Reason: Include
+* Archive File: [plan-your-user-and-device-groups.98dcc3cde513ccd97049fa95265da69d4847bd86.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/71f76d613235696931c509f1509b46178840986c/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/plan-your-user-and-device-groups.98dcc3cde513ccd97049fa95265da69d4847bd86.nl-nl.xlf)
+* Archive Datetime: 2016-06-17 00:32:42
+* Handback File: [plan-your-user-and-device-groups.98dcc3cde513ccd97049fa95265da69d4847bd86.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/0a1ae7e7002806bfdf8b3bde3bca840458d5d666/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/plan-your-user-and-device-groups.98dcc3cde513ccd97049fa95265da69d4847bd86.nl-nl.xlf)
+* Handback Datetime: 2016-06-22 17:21:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
