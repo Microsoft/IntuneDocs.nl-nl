@@ -44,8 +44,8 @@ Gebruik de koppeling die overeenkomt met het type apparaat dat u hebt voor meer 
 - [De wachtwoordcode voor uw iOS-apparaat instellen of wijzigen](set-or-change-your-passcode-ios.md)
 - [Het wachtwoord voor uw Windows-apparaat instellen of wijzigen](set-or-change-your-password-windows.md)
 
-Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

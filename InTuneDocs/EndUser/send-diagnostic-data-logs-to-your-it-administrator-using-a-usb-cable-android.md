@@ -38,11 +38,11 @@ Als u gebruikmaakt van een computer in plaats van een mobiel apparaat en u gegev
 
 4.  Voeg alle bestanden toe aan een e-mailbericht en verzend dit naar de IT-beheerder.
 
-Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

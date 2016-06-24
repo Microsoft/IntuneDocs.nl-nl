@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/10/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,14 +34,12 @@ Om de gegevens op uw Android-apparaat beter te beveiligen, kan uw IT-beheerder b
 
 2.  Geef de waarde voor de wachtwoordtime-out op.
 
-3.  Zorg ervoor dat uw apparaat is geregistreerd bij Intune en volg de instructies in [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md).
-
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

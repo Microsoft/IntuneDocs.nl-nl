@@ -34,11 +34,11 @@ Als u uw iOS- of Mac OS X-apparaat probeert te registeren in Intune en u ziet ee
 2. Tik op **doorgaan**.
 3. Voer de laatste vier tekens van het serienummer van uw apparaat in, zodat Intune kan bevestigen dat het apparaat is geregistreerd. Zie [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-ios.md) om te zien hoe u uw serienummer vindt.
 
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

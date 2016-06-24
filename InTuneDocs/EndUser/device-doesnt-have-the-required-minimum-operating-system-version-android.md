@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/30/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 Op uw Android-apparaat is niet de minimale besturingssysteemversie geïnstalleerd die door uw IT-afdeling wordt vereist. Controleer voordat u het apparaat bijwerkt de huidige besturingssysteemversie door op **Instellingen** &gt;**Over telefoon** te tikken. Ga na of er een update voor uw apparaat beschikbaar is door op **Instellingen** te tikken en vervolgens de optie voor updates te zoeken.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)

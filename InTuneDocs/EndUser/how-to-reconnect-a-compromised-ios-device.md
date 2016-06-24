@@ -28,10 +28,10 @@ ms.suite: ems
 # Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid
 Uw IT-beheerder heeft vastgesteld dat u een jailbroken apparaat gebruikt. 'Gekraakt' betekent dat de software-beperkingen die zijn opgelegd door iOS, zijn verwijderd. Hierdoor kan de software een beveiligingsrisico en bedreiging voor uw bedrijfsbronnen vormen. Als dit gebeurt, heeft het apparaat geen toegang meer tot bedrijfsbronnen.
 
-Neem contact op met uw IT-beheerder voor hulp om opnieuw verbinding met uw apparaat te maken. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

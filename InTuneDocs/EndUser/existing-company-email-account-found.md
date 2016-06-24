@@ -36,10 +36,10 @@ U hebt al een zakelijk e-mailaccount. Als u verbinding wilt blijven maken met uw
 
 3.  De nieuwe e-mailinstellingen worden automatisch op uw apparaat toegepast. Dit kan enkele ogenblikken duren.
 
-Als de nieuwe e-mailinstellingen ook na enige tijd niet worden weergegeven, neemt u contact op met uw IT-beheerder. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Als de nieuwe e-mailinstellingen ook na enige tijd niet worden weergegeven, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

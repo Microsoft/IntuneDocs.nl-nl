@@ -46,11 +46,11 @@ Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet 
 2. Tik op **Wachtwoordcode wijzigen** en voer het oude wachtwoord.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van uw IT-beheerder en geef de code nogmaals op om deze te verifiëren.
 
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

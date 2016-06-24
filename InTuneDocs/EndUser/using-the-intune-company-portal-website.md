@@ -42,7 +42,7 @@ U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
 -   [Het apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
 
--   Zoek de contactgegevens van uw IT-beheerder, als uw IT-beheerder deze heeft geconfigureerd. Als u ze niet kunt vinden, controleert u of ze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+-   Zoek de contactgegevens van uw IT-beheerder, als uw IT-beheerder deze heeft geconfigureerd. 
 
 -   Gegevens over uw apparaat bekijken, bijvoorbeeld de compatibiliteit met het beleid van uw school of werk
 
@@ -55,6 +55,6 @@ U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook met d
 - [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

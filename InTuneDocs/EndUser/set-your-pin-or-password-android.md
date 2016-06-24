@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,15 +34,12 @@ Mogelijk vraagt de IT-beheerder u op uw Android-apparaat een pincode of wachtwoo
 
 2.  Kies en bevestig uw nieuwe wachtwoord.
 
-3.  Zorg ervoor dat uw apparaat is geregistreerd bij Microsoft Intune door de instructies te volgen in [Uw apparaat registreren bij Microsoft Intune](enroll-your-device-in-Intune-android.md).
 
-4.  Tik op **OPHALEN** &gt; **INSTALLEREN**.
-
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -40,11 +40,11 @@ De bedrijfsportal-app is een app die u op het iOS-apparaat installeert om toegan
 
     Als u zich voor het eerst aanmeldt bij de bedrijfsportal-app en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) om uw apparaat te registreren.
 
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

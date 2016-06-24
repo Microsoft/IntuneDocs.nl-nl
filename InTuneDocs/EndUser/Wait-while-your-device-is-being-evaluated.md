@@ -28,10 +28,10 @@ ms.suite: ems
 # Wacht terwijl uw apparaat wordt geëvalueerd
 Uw apparaat wordt nog steeds op compatibiliteit geëvalueerd. Wacht nog enkele minuten totdat de controle op compatibiliteit is voltooid.
 
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

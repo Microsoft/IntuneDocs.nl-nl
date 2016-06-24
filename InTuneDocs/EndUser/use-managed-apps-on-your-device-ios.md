@@ -64,23 +64,12 @@ Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beh
 
 -   Vereisten voor de versleuteling van gegevens
 
-Een aantal veelgebruikte apps die mogelijk door uw IT-afdeling worden beheerd:
 
--   Managed Browser
-
--   Beheerde afbeeldingsviewer
-
--   Beheerde PDF-viewer
-
--   Beheerde AV-speler
-
--   Microsoft Word, Excel, PowerPoint
-
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -32,9 +32,11 @@ Microsoft verzamelt automatisch anonieme gegevens over de betrouwbaarheid, de pr
 
 U kunt het verzamelen van die gegevens op een Windows-apparaat uitschakelen met de instelling **Gebruiksgegevens** in de bedrijfsportal-app. IT-beheerders hebben geen controle over het verzamelen van de gegevens en ze kunnen uw selectie voor deze instelling niet wijzigen.
 
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+
 ### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

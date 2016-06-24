@@ -83,7 +83,6 @@ Meer informatie over [DEP](ios-device-enrollment-program-in-microsoft-intune.md)
 
 ### USB-SA
 Door USB verbonden registratie met Configuratieassistent. De beheerder maakt een Intune-beleid en exporteert het beleid naar Apple Configurator. Door USB verbonden apparaten worden voorbereid met Intune-beleid. De beheerder moet elk apparaat handmatig registreren. Gebruikers ontvangen hun apparaten en voeren Configuratieassistent uit om hun apparaat te registreren. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
-  - Vergrendelde registratie
   - Voorwaardelijke toegang
   - Jailbreakdetectie
   - Beheer van mobiele toepassingen
@@ -112,6 +111,6 @@ Hiermee geeft u op of het apparaat kan worden vergrendeld om te voorkomen dat de
 ([Terug naar de tabel](#overview-of corporate-owned-device-enrollment-methods)) ([Terug naar de tabel](#overview-of corporate-owned-device-enrollment-methods))
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

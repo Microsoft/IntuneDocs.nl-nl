@@ -60,11 +60,11 @@ Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen:
 
     Als een nieuwe poging niet werkt, neem dan contact op met uw IT-beheerder voor hulp. Als u uw apparaat terugvindt en het wilt ontgrendelen nadat u eerder Extern vergrendelen hebt gebruikt, voer dan gewoon uw wachtwoordcode in.
 
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

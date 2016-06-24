@@ -31,10 +31,10 @@ Er is gedetecteerd dat uw apparaat niet compatibel is met een of meer van de bel
 
 Om dit probleem op te lossen, wacht u een paar minuten en tikt u op **Controleren op naleving**.
 
-Neem contact op met uw IT-beheerder als het probleem zich blijft voordoen. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met uw IT-beheerder als het probleem zich blijft voordoen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

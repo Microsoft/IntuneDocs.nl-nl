@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Wanneer uw Android-apparaat is geregistreerd bij Intune, kunt u de instelling **
 
 Als u **Uitgebreide logboekregistratie** wilt in- of uitschakelen, meldt u zich aan bij de bedrijfsportal-app met de referenties voor uw werk- of schoolaccount, tikt u op **Instellingen** en tikt u op de aan/uit-knop naast de instelling **Uitgebreide logboekregistratie**.
 
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

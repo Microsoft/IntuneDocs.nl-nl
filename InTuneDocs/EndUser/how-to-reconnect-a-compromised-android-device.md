@@ -28,10 +28,10 @@ ms.suite: ems
 # Opnieuw verbinding maken met een Android-apparaat waarmee is geknoeid
 Uw IT-beheerder heeft gedetecteerd dat u gebruikmaakt van een rooted apparaat. 'Geroot' betekent dat het apparaat is gewijzigd voor toegang tot het besturingssysteem. Hierdoor kan het apparaat een beveiligingsrisico en bedreiging voor uw bedrijfsbronnen vormen. Als dit gebeurt, heeft het apparaat geen toegang meer tot bedrijfsbronnen.
 
-Neem contact op met uw IT-beheerder voor hulp om opnieuw verbinding met uw apparaat te maken. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met uw IT-beheerder voor hulp om opnieuw verbinding met uw apparaat te maken. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

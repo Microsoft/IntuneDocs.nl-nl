@@ -42,12 +42,12 @@ Ga als volgt te werk om uw apparaat opnieuw in te stellen:
 
 Uw apparaat is nu opnieuw ingesteld.
 
-Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
