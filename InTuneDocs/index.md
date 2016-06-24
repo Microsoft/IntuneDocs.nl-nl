@@ -2,8 +2,8 @@
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
 
-title: "Documentatie voor Microsoft Intune"
-description: "Technische documentatie voor Microsoft Intune: beheer van mobiele apparaten en toepassingen"
+title: Documentatie voor Microsoft Intune
+description: Technische documentatie voor Microsoft Intune: beheer van mobiele apparaten en toepassingen
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
 author: jeffgilb
 manager: jeffgilb
@@ -21,7 +21,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Documentatie voor Microsoft Intune</h1>
       <h2>Lees hoe u Microsoft Intune implementeert en beheert; een service voor het beheren van mobiele apparaten en toepassingen.</h2>
-      <h3>Intune beheren met Configuration Manager? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">Documentatie voor Configuration Manager bekijken &rarr;</a></h3>
+      <h3>Intune beheren met Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Documentatie voor Configuration Manager bekijken &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Aanbevolen inhoud</h2>
@@ -280,6 +280,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 </article>
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
