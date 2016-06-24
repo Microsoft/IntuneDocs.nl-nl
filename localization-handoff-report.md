@@ -1,20 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d2a964cd55da4744149f3c21b360864896e44984/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#80c24cd79ad2836a468b5b9a938a12a8f44b23d1103)
- [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/80de3ab273c090f466fc381390d84b8f7b90f6f4/Azure-RMSDocs/index.md) | OutofSyncHandedBackSuccess | [Details](#6ba6e7b208c0b53a5cc6f38811f6845234bf7983156)
+ [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5e57e6bbe48f06da278813a1adf42e5b46aa305a/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#f50a7f202a7c4553c604ed77c0fe40eade4e4a1b103)
 
 ## Item Details
-##### <a name='80c24cd79ad2836a468b5b9a938a12a8f44b23d1103'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/d2a964cd55da4744149f3c21b360864896e44984/Azure-RMSDocs/get-started/faqs.md)
+##### <a name='f50a7f202a7c4553c604ed77c0fe40eade4e4a1b103'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5e57e6bbe48f06da278813a1adf42e5b46aa305a/Azure-RMSDocs/get-started/faqs.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/bc2fde569f8efb56f1c201ac700e71e3ba41a689/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf)
-* Handoff Datetime: 2016-06-23 23:06:48
+* Handoff File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/68077726e8b939780d6159a0535493dc9d9cdf41/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf)
+* Handoff Datetime: 2016-06-24 22:50:10
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -25,23 +24,6 @@
 * Current Handback Datetime: 2016-06-16 19:56:21
 * Bilingual File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9a2e9b929808c70d15df2b2468019e62f2a65466/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf)
 * Bilingual Datetime: 2016-06-16 19:58:43
-* [Back to Top](#report-top)
-
-##### <a name='6ba6e7b208c0b53a5cc6f38811f6845234bf7983156'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/80de3ab273c090f466fc381390d84b8f7b90f6f4/Azure-RMSDocs/index.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/bc2fde569f8efb56f1c201ac700e71e3ba41a689/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
-* Handoff Datetime: 2016-06-23 23:06:48
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/1f3da1feda055fd1fd4fb5c03ff60d8c6b77e024/Azure-RMSDocs/index.md)
-* Current Handback File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/5abfca2d9563a02b2ab77c0bbe1df09361b2d2e5/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
-* Current Handback Datetime: 2016-06-15 09:40:54
-* Bilingual File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/5abfca2d9563a02b2ab77c0bbe1df09361b2d2e5/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
-* Bilingual Datetime: 2016-06-16 10:23:22
 * [Back to Top](#report-top)
 
 
