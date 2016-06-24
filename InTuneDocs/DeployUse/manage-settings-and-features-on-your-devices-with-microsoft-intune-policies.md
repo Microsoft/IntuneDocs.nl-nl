@@ -200,9 +200,9 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
 
 ### Waar vind ik meer informatie over het oplossen van beleidsproblemen?
 
-Zie [Beleidsproblemen oplossen in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
+Zie [Beleidsproblemen oplossen in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

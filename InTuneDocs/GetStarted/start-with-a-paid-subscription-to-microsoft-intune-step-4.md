@@ -26,7 +26,9 @@ ms.suite: ems
 ---
 
 # Intune-licenties beheren
-Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren bij het beheer, moet aan hen eerst in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) een licentie worden toegewezen voor uw Intune-abonnement. Wanneer een licentie is toegewezen, worden de namen van de gebruikers weergegeven in de Intune-beheerconsole. Gebruikers kunnen vervolgens maximaal vijf apparaten registreren.
+Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren bij het beheer, moet u eerst aan elke gebruiker een licentie toewijzen voor uw Intune-abonnement via de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854). Wanneer een licentie is toegewezen, worden de namen van de gebruikers weergegeven in de Intune-beheerconsole. Gebruikers kunnen vervolgens maximaal vijf apparaten registreren.
+
+In organisaties die gebruikmaken van de Mobility Suite (EMS) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. In dat geval kunt u met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) één service of een subset met services toewijzen. Zie [Intune-licenties beheren met PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) voor meer informatie.
 
 ## De toewijzing van Intune-licenties
 Als gebruikersaccounts worden gesynchroniseerd vanuit uw on-premises Active Directory of handmatig via het [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) worden toegevoegd aan uw abonnement op cloudservices, krijgen ze niet automatisch een Intune-licentie toegewezen. Een Intune-tenantbeheerder moet echter op een later tijdstip het gebruikersaccount bewerken om in de Office 365-portal een licentie aan de gebruiker toe te wijzen.
@@ -42,7 +44,7 @@ U gebruikt de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=69885
 
 1.  Meld u bij de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) aan met uw tenantbeheerdersreferenties en selecteer vervolgens **Personen** > **Alle gebruikers**.
 
-2.  Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en selecteer **Microsoft Intune** voor de eigenschappen van het gebruikersaccount.
+2.  Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en selecteer **Microsoft Intune** (zelfstandig) of **Enterprise Mobility Suite**.
 
 3.  Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
 
@@ -57,7 +59,7 @@ U moet een nieuwe licentie-SKU-definitie maken die alleen van toepassing is op d
 
 U kunt de volgende opdracht uitvoeren om het Intune-serviceplan uit te sluiten. Met dezelfde methode kunt u een complete beveiligingsgroep uitbreiden. U kunt echter ook gedetailleerdere filters gebruiken. 
 
-**Voorbeeld 1**: maak een nieuwe gebruiker via de opdrachtregel en wijs een EMS-licentie toe zonder het Intune-gedeelte van de licentie in te schakelen:
+**Voorbeeld 1** Een nieuwe gebruiker maken via de opdrachtregel en een Enterprise Mobility Suite-licentie toewijzen zonder het Intune-gedeelte van de licentie in te schakelen:
 
     Connect-MsolService 
         
@@ -71,7 +73,7 @@ Controleer met:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**Voorbeeld 2**: schakel het Intune-gedeelte van de EMS-licentie uit voor een gebruiker aan wie al een licentie is toegewezen:
+**Voorbeeld 2** Het Intune-gedeelte van de Enterprise Mobility Suite-licentie uitschakelen voor een gebruiker aan wie al een licentie is toegewezen:
 
     Connect-MsolService 
     
@@ -90,9 +92,9 @@ Controleer met:
 Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid.
 >[!div class="step-by-step"]
 
->[&larr; **Gebruikers synchroniseren met Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gebruikers en apparaten indelen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Gebruikers synchroniseren met Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gebruikers en apparaten organiseren** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
