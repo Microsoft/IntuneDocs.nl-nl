@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Microsoft Intune-bedrijfsportal
 
-Lees voor de installatie van [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] dit onderwerp en de andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md).
+Lees voor de installatie van Intune dit onderwerp en de andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md).
 
 De Intune-bedrijfsportal is een hulpprogramma waarmee gebruikers toegang krijgen tot bedrijfsgegevens en apps. De bedrijfsportal is beschikbaar in twee vormen:
 
@@ -54,10 +54,10 @@ Gebruikers kunnen in de bedrijfsportal onder andere de volgende taken uitvoeren:
 
 Voordat een gebruiker toegang heeft tot de bedrijfsportal, moet aan het account van de gebruiker een licentie worden verleend voor het gebruik van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en moet de aanmeldingsstatus zijn ingesteld op **Toegestaan**. Meer informatie over [gebruikers toevoegen](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) en [licenties toewijzen voor uw abonnement](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). U kunt ook [de bedrijfsportal-website aanpassen](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) met uw bedrijfslogo, gebruiksvoorwaarden en meer. Gebruikers krijgen toegang tot de bedrijfsportal-website door naar de website te gaan en zich aan te melden met een werk- of schoolaccount.
 
-### Zie ook
+### Zie tevens
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,9 +48,11 @@ Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan 
 4. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het nieuwe wachtwoord in het veld **Wachtwoord bevestigen**.
 4. Tik op **Gereed**.
 
-### Zie ook
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+
+### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

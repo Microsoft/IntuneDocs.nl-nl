@@ -18,7 +18,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Met het Microsoft Intune Center kunnen gebruikers:
 
 -   Microsoft Intune Endpoint Protection beheren.
 
--   Hulp op afstand vragen.
+<!--- -   Request remote assistance.--->
 
 Het Microsoft Intune Center wordt geïnstalleerd op alle beheerde computers. U kunt de volgende instellingen in een Intune-beleid configureren en deze instellingen worden weergegeven aan gebruikers in het Microsoft Intune Center:
 
@@ -164,59 +164,59 @@ Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aa
 
 > [!TIP] Als u de mogelijkheden van eindgebruikers om zichzelf aan computers te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
 
-## Hulp op afstand aanvragen en verlenen aan Windows-pc's die gebruikmaken van de Intune-clientsoftware
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> Het is mogelijk dat de configuratieopties voor de integratie van TeamViewer niet worden weergegeven in de Intune-beheerconsole. Deze mogelijkheid is momenteel niet beschikbaar voor alle klanten, maar zal binnenkort breder worden geïmplementeerd.
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-Microsoft Intune kan de [TeamViewer](https://www.teamviewer.com)-software gebruiken om ervoor te zorgen dat gebruikers van pc's met de Intune-clientsoftware te hulp op afstand van u kunnen krijgen. Wanneer een gebruiker hulp via Microsoft Intune Center aanvraagt, ontvangt u een waarschuwing, kunt u de aanvraag accepteren en vervolgens hulp verlenen.
-Deze functionaliteit vervangt de bestaande Windows Hulp op afstand-functionaliteit in Intune.
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### Voordat u begint
+### Before you start
 
-Voordat u aanvragen voor hulp op afstand kunt uitvoeren en beantwoorde, moet aan de volgende vereisten zijn voldaan
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- U moet zich hebben [aangemeld voor een TeamViewer-account](https://login.teamviewer.com/LogOn#register) om u te kunnen aanmelden bij de TeamViewer-website.
-- De Windows-pc's die u wilt beheren, moeten worden [beheerd door de Windows PC-client](manage-windows-pcs-with-microsoft-intune.md).
-- Alle Windows PC-besturingssystemen die worden ondersteund door Intune, kunnen worden beheerd.
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### De TeamViewer-connector configureren
+### Configure the TeamViewer Connector
 
-1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer**.
-2. Kies in de werkruimte **Beheer** de optie **TeamViewer**.
-3. Kies op de pagina **TeamViewer** onder **TeamViewer-connector** de optie **Inschakelen**.
-4. Lees de licentievoorwaarden in het dialoogvenster **TeamViewer inschakelen** en klik vervolgens op **Accepteren** om ze te accepteren. Als u nog geen TeamViewer-licentie hebt, kiest u **Een TeamViewer-licentie kopen**.
-5. Nadat het TeamViewer-browservenster is geopend, meldt u zich aan met uw TeamViewer-referenties aan bij de site.
-6. Lees en accepteer de opties op de TeamViewer-site, zodat Intune verbinding kan maken met TeamViewer.
-7. Controleer in de Intune-console of het item **TeamViewer-connector** wordt weergegeven als **Ingeschakeld**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### Een aanvraag voor hulp op afstand openen (eindgebruiker)
+### Open a remote assistance request (end user)
 
-1. Open **Microsoft Intune Center** op een client-pc met Windows.
-2. Kies onder **Hulp op afstand** de optie **Hulp op afstand aanvragen**.
-3. Nadat u de aanvraag hebt goedgekeurd (zie hieronder), wordt TeamViewer geopend op de client. De gebruiker moet alle berichten accepteren die aangeven dat de webbrowser de TeamViewer-toepassing probeert te openen.
-4. De gebruiker ziet een bericht waarin wordt gevraagd of u de pc mag beheren. Ze moeten dit bericht accepteren om door te kunnen gaan.
-5. Tijdens de sessie van Hulp op afstand wordt er een venster weergegeven waarin de gebruiker kan zien dat u bent verbonden. Als dit venster wordt gesloten, wordt de externe sessie beëindigd.
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### Reageren op een aanvraag voor hulp op afstand
+### Respond to a remote assistance request
 
-1. Wanneer een gebruiker een aanvraag voor hulp op afstand verzendt, kunt u deze bekijken in de werkruimte **Waarschuwingen** onder **Bewaking** > **Hulp op afstand**. Bijvoorbeeld:
-> ![Schermafbeelding van een aanvraag voor hulp op afstand](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>Als een aanvraag niet binnen vier uur wordt beantwoord, wordt deze verwijderd.
-2. Kies **Aanvraag goedkeuren en Hulp op afstand starten** om een aanvraag te accepteren.
-3. Kies in het dialoogvenster **Er wacht een nieuw verzoek om hulp op afstand** de optie **Het verzoek om hulp op afstand accepteren**. Als dit nog niet is gedaan, installeert TeamViewer alle benodigde apps op uw computer.
-4. TeamViewer informeert de eindgebruiker vervolgens dat u wilt de controle over de pc wilt overnemen. Nadat de gebruiker de aanvraag heeft geaccepteerd, wordt het TeamViewer-venster geopend en kunt u de pc beheren. 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-Tijdens een sessie van Hulp op afstand kunt u alle beschikbare TeamViewer-opdrachten gebruiken om de externe pc te beheren. Voor hulp bij deze opdrachten, downloadt u de [Handleiding voor extern beheer](http://www.teamviewer.com/en/support/documents/) van de TeamViewer-website.
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### De sessie van Hulp op afstand sluiten
+### Close the remote assistance session
 
-Kies in het menu **Acties** van het venster **TeamViewer** de optie **Sessie beëindigen**.
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

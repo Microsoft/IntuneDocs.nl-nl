@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Het apparaat uitschrijven bij Intune | Microsoft Intune
+title: De registratie van uw apparaat bij Intune ongedaan maken | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,15 +26,15 @@ ms.suite: ems
 ---
 
 
-# De inschrijving van het apparaat bij Intune ongedaan maken
+# De registratie van het apparaat bij Intune ongedaan maken
 
-Wanneer u uw Android-apparaat uitschrijft bij Intune, heeft het apparaat geen toegang meer tot de bedrijfsresources.  Zie [Wat gebeurt er wanneer u uw apparaat uitschrijft bij Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt als u uw apparaat uitschrijft..
+Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, heeft het apparaat geen toegang meer tot de bedrijfsresources.  Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt wanneer u de registratie van uw apparaat ongedaan maakt.
 
-Als u de inschrijving van uw apparaat bij Intune ongedaan wilt maken en de bedrijfsportal-app wilt verwijderen, voert u de volgende stappen uit of bekijkt u deze [video](http://aka.ms/gyq2du):
+Als u de registratie uw apparaat bij Intune ongedaan wilt maken en de bedrijfsportal-app wilt verwijderen, voert u de volgende stappen uit of bekijkt u deze [video](http://aka.ms/gyq2du):
 
 1.  Meld u aan bij de bedrijfsportal-app.
 
-2.  Tik op **MIJN APPARATEN** en selecteer het apparaat waarvan u de inschrijving ongedaan wilt maken.
+2.  Tik op **MIJN APPARATEN** en selecteer het apparaat waarvan u de registratie ongedaan wilt maken.
 
     ![android-bedrijfsportal-uitschrijven-kiezen-apparaat](./media/andr-1-my-devices-choose.png)
 
@@ -42,14 +42,15 @@ Als u de inschrijving van uw apparaat bij Intune ongedaan wilt maken en de bedri
 
     ![android-bedrijfsportal-uitschrijven-tikken-prullenbak](./media/andr-2-tap-trashcan.png)
 
-    Tik op de waarschuwingspagina op **OK** om de inschrijving van uw apparaat ongedaan te maken.
+    Tik op de waarschuwingspagina op **OK** om de registratie van uw apparaat ongedaan te maken.
 
     ![android-bedrijfsportal-uitschrijven-waarschuwing](./media/andr-3-warning-about-remove.png)
 
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

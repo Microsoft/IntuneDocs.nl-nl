@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,9 +30,11 @@ ms.suite: ems
 
 Op apparaten met iOS 7.1 en hoger tikt u op het pictogram **Instellingen**. Tik vervolgens op **Algemeen** > **Info** en schuif omlaag totdat u **Serienummer** ziet.
 
-### Zie ook
-[Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO2-->
+### Zie tevens
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

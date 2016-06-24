@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Als u wilt opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-o
 
 3.  Zorg ervoor dat het apparaat is geregistreerd bij Intune door de instructies in [Apparaat registreren voor gebruik op het werk](http://go.microsoft.com/fwlink/?LinkId=519071) te volgen.
 
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

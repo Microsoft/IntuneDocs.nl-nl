@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Toegang tot bedrijfsbronnen met certificaatprofielen in Microsoft Intune | Microsoft Intune
+title: Toegang tot bedrijfsbronnen inschakelen met behulp van certificaatprofielen met Microsoft Intune |Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -53,7 +53,7 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 > -    Als u geen bedrijfscertificeringsinstantie hebt, moet u er een maken. 
 >- Als u op basis van uw apparaatplatforms besluit het SCEP-profiel (Simplified Certificate Enrollment Protocol) te gebruiken, moet u ook een NDES-server (Network Device Enrollment Service) configureren.
 >-  Bovendien moet u de Microsoft Intune-certificaatconnector downloaden en configureren, ongeacht of u SCEP-profielen of PFX-profielen wilt gebruiken.
-> Configuratie van al deze waarden wordt beschreven in het onderwerp [Certificaatinfrastructuur configureren](configure-certificate-infrastructure.md).
+> De configuratie van al deze waarden wordt beschreven in het onderwerp [Certificaatinfrastructuur configureren](configure-certificate-infrastructure.md).
 
 ### Volgende stappen
 - [Certificaatinfrastructuur configureren](configure-certificate-infrastructure.md)
@@ -61,6 +61,6 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

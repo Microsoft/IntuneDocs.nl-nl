@@ -39,12 +39,15 @@ Hier vindt u enkele problemen die zich kunnen voordoen bij de registratie van ap
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
-## Apparaatlimiet bereikt
+## Problemen bij het registreren van apparaten
+Deze problemen kunnen optreden op alle apparaatplatforms.
+
+### Apparaatlimiet bereikt
 **Probleem:** een gebruiker ontvangt tijdens de registratie een foutbericht op het apparaat, zoals het foutbericht **De bedrijfsportal is tijdelijk niet beschikbaar** op een iOS-apparaat, en DMPdownloader.log in Configuration Manager bevat de fout **DeviceCapReached**.
 
 **Oplossing:** gebruikers kunnen standaard niet meer dan vijf apparaten inschrijven.
 
-### Controleer het aantal apparaten dat is ingeschreven en dat wordt toegestaan
+#### Controleer het aantal apparaten dat is ingeschreven en dat wordt toegestaan
 
 1.  Controleer in de Intune-beheerportal of er niet meer dan 5 apparaten aan de gebruiker zijn toegewezen
 
@@ -52,9 +55,9 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 
 Gebruikers van mobiele apparaten kunnen apparaten verwijderen via de volgende URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
-Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal:
+Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
-### U kunt als volgt apparaten verwijderen in de Azure Active Directory-portal:
+#### U kunt als volgt apparaten verwijderen in de Azure Active Directory-portal:
 
 1.  Blader naar [http://aka.ms/accessaad](http://aka.ms/accessaad) of kies **Beheer** &gt; **Azure AD** op [https://portal.office.com](https://portal.office.com).
 
@@ -78,23 +81,10 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal:
 >
 > Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatinschrijvingsmanagers kunnen geen apparaten worden ingeschreven wanneer een voorwaardelijk toegangsbeleid van kracht is voor die specifieke gebruikersaanmelding.
 
-## De profielinstallatie is mislukt
-**Probleem:** een gebruiker ontvangt op een iOS- of Android-apparaat de fout **Profiel is niet geïnstalleerd**.
-
-### Stappen voor de probleemoplossing bij een mislukte profielinstallatie
-
-1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
-
-2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
-
-3.  Voor een iOS-apparaat gaat u naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeert u het profiel te installeren als u daarom wordt gevraagd.
-
-4.  Controleer of Safari for iOS en Chrome for Android de standaardbrowsers zijn en of cookies zijn ingeschakeld.
-
-## Bedrijfsportal is tijdelijk niet beschikbaar
+### Bedrijfsportal is tijdelijk niet beschikbaar
 **Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
 
-### Probleemoplossing bij het foutbericht Bedrijfsportal tijdelijk niet beschikbaar
+#### Probleemoplossing bij het foutbericht Bedrijfsportal tijdelijk niet beschikbaar
 
 1.  Verwijder de Intune-bedrijfsportal-app van het apparaat.
 
@@ -106,10 +96,10 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal:
 
 5.  Als de gebruiker zich heeft aangemeld, wordt u op een iOS-apparaat gevraagd om de Intune-bedrijfsportal-app te installeren en het apparaat in te schrijven. Op een Android-apparaat moet u de Intune-bedrijfsportal-app handmatig installeren, waarna u het apparaat opnieuw kunt inschrijven.
 
-## De MDM-instantie is niet gedefinieerd
+### De MDM-instantie is niet gedefinieerd
 **Probleem:** een gebruiker ontvangt de fout **De MDM-instantie is niet gedefinieerd**.
 
-### Probleemoplossing bij het foutbericht MDM-instantie is niet gedefinieerd
+#### Probleemoplossing bij het foutbericht MDM-instantie is niet gedefinieerd
 
 1.  Controleer of de MDM-instantie juist is ingesteld voor de versie van de Intune-service die u gebruikt, dat wil zeggen, voor Intune, O365 MDM of System Center Configuration Manager met Intune. Voor Intune wordt de MDM-instantie ingesteld in **Beheer** &gt; **Mobile Device Management**. Voor Configuration Manager met Intune stelt u deze in wanneer u de Intune-connector configureert. In O365 is het een instelling in **Mobiele apparaten**.
 
@@ -143,29 +133,71 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal:
         Nadat u de query hebt opgesteld, kiest u **!Execute**.
         Wanneer de resultaten worden weergegeven, zoekt u naar de cloudgebruikers-id.  Als er geen id is gevonden, beschikt de gebruiker niet over een licentie om Intune te gebruiken.
 
-## Mobiele apparaten verdwijnen bij het gebruik van System Center Configuration Manager met Intune
-**Probleem:** nadat een mobiel apparaat bij Configuration Manager is ingeschreven, verdwijnt het uit de verzameling van mobiele apparaten, maar het apparaat heeft nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
+### Kan geen beleid maken of apparaten registreren als de bedrijfsnaam speciale tekens bevat
+**Probleem:** u kunt geen beleid maken of apparaten registreren.
 
-**Oplossing:** dit probleem kan optreden omdat er een aangepast proces actief is dat apparaten verwijdert die niet aan een domein zijn toegevoegd, of omdat de gebruiker het apparaat uit het abonnement heeft verwijderd. Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Configuration Manager-console is verwijderd, voert u de volgende stappen uit.
+**Oplossing:** verwijder in het [Office 365-beheercentrum](https://portal.office.com/) de speciale tekens uit de bedrijfsnaam en sla de bedrijfsgegevens op.
 
-### Controleer hoe het apparaat is verwijderd
+### U kunt zich niet aanmelden of apparaten registreren wanneer u meerdere geverifieerde domeinen hebt
+**Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren. 
 
-1.  Selecteer in de Configuration Manager-beheerconsole **Bewaking** &gt; **Systeemstatus** &gt; **Statusberichtquery's**.
 
-2.  Klik met de rechtermuisknop op **Resources van verzamelingsleden die handmatig zijn verwijderd** en selecteer **Berichten weergeven**.
+**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren.  Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
-3.  Kies een passende tijd/datum of de afgelopen 12 uur.
+### De computer is al geregistreerd: fout hr 0x8007064c
+**Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
+  
+Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde installatiekopie bevat van een computer die is geregistreerd. Het accountcertificaat van het vorige account staat nog op de computer.
 
-4.  Zoek het betreffende apparaat en bekijk hoe het is verwijderd. In het volgende voorbeeld ziet u dat het apparaat via een onbekende toepassing is verwijderd door het account SCCMInstall.
 
-    ![Schermopname voor diagnose van apparaatverwijdering](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten worden gewist.
+**Oplossing:** 
 
-## Ingeschreven iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
-**Probleem:** een gebruiker schrijft zijn of haar iOS-apparaat in, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is ingeschreven. Mogelijke oorzaken:
+1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**. 
+1. **Bestand** -> **Modules toevoegen of verwijderen**.
+1. Dubbelklik op **Certificaten**, kies **Computeraccount**, **Volgende** en selecteer **Lokale computer**.
+1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**. 
+1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is
+1. Verwijder de volgende registersleutel als deze bestaat en alle subsleutels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
+1. Probeer opnieuw te registreren. 
+1. Als de computer nog steeds niet kan worden geregistreerd, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Probeer opnieuw te registreren. 
 
-- Misschien hebt u uw Intune-connector ingeschreven bij het ene account en vervolgens ingeschreven bij een ander account. 
+    > [!IMPORTANT]
+    > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
+    > Lees [Een back-up maken van het register en het herstellen in Windows](https://support.microsoft.com/en-us/kb/322756) voor meer informatie over het maken en terugzetten een back-up van het register
+
+
+## Problemen met Android
+### De profielinstallatie is mislukt
+**Probleem:** een gebruiker ontvangt op een Android-apparaat de fout **Profiel is niet geïnstalleerd**.
+
+### Stappen voor de probleemoplossing bij een mislukte profielinstallatie
+
+1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
+
+2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
+
+
+4.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
+## Problemen met iOS
+### De profielinstallatie is mislukt
+**Probleem:** een gebruiker ontvangt op een iOS-apparaat de fout **Profiel is niet geïnstalleerd**.
+
+### Stappen voor de probleemoplossing bij een mislukte profielinstallatie
+
+1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
+
+2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
+
+3.  Navigeer naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het profiel te installeren als u daarom wordt gevraagd.
+
+4.  Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
+
+### Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
+**Probleem:** een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is geregistreerd. Mogelijke oorzaken:
+
+- Misschien hebt u uw Intune-connector geregistreerd bij het ene account en vervolgens geregistreerd bij een ander account. 
 - Misschien hebt u het MDM-certificaat gedownload vanuit het ene account en het vervolgens gebruikt in een ander account.
 
 
@@ -191,52 +223,40 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal:
 
 
 1. Haal een nieuw APN-certificaat op en upload dit: klik met de rechtermuisknop op het Intune-abonnement in het linkerdeelvenster van Configuration Manager. Selecteer **APNs-certificaataanvraag maken** en volg de instructies.
+## Problemen bij het gebruik van System Center Configuration Manager met Intune
+### Mobiele apparaten verdwijnen 
+**Probleem:** nadat een mobiel apparaat bij Configuration Manager is ingeschreven, verdwijnt het uit de verzameling van mobiele apparaten, maar het apparaat heeft nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
 
+**Oplossing:** dit probleem kan optreden omdat er een aangepast proces actief is dat apparaten verwijdert die niet aan een domein zijn toegevoegd, of omdat de gebruiker het apparaat uit het abonnement heeft verwijderd. Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Configuration Manager-console is verwijderd, voert u de volgende stappen uit.
 
-## De computer is al ingeschreven: fout hr 0x8007064c
-**Probleem:** de registratie is mislukt met de fout **De computer is al ingeschreven**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
-  
-Dit komt mogelijk doordat de computer eerder is ingeschreven of een gekloonde installatiekopie bevat van een computer die is ingeschreven. Het accountcertificaat van het vorige account staat nog op de computer.
+#### Controleer hoe het apparaat is verwijderd
 
+1.  Selecteer in de Configuration Manager-beheerconsole **Bewaking** &gt; **Systeemstatus** &gt; **Statusberichtquery's**.
 
+2.  Klik met de rechtermuisknop op **Resources van verzamelingsleden die handmatig zijn verwijderd** en selecteer **Berichten weergeven**.
 
-**Oplossing:** 
+3.  Kies een passende tijd/datum of de afgelopen 12 uur.
 
-1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**. 
-1. **Bestand** -> **Modules toevoegen of verwijderen**.
-1. Dubbelklik op **Certificaten**, kies **Computeraccount**, **Volgende** en selecteer **Lokale computer**.
-1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**. 
-1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is
-1. Verwijder de volgende registersleutel als deze bestaat en alle subsleutels: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Probeer opnieuw in te schrijven. 
-1. Als de computer nog steeds niet kan worden ingeschreven, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Probeer opnieuw in te schrijven. 
+4.  Zoek het betreffende apparaat en bekijk hoe het is verwijderd. In het volgende voorbeeld ziet u dat het apparaat via een onbekende toepassing is verwijderd door het account SCCMInstall.
 
-    > [!IMPORTANT]
-    > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
-    > Lees [Een back-up maken van het register en het herstellen in Windows](https://support.microsoft.com/en-us/kb/322756) voor meer informatie over het maken en terugzetten een back-up van het register
+    ![Schermopname voor diagnose van apparaatverwijdering](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-## Kan geen beleid maken of apparaten registreren als de bedrijfsnaam speciale tekens bevat
-**Probleem:** u kunt geen beleid maken of apparaten registreren.
-
-**Oplossing:** verwijder in het [Office 365-beheercentrum](https://portal.office.com/) de speciale tekens uit de bedrijfsnaam en sla de bedrijfsgegevens op.
-
-## U kunt zich niet aanmelden of apparaten registreren wanneer u meerdere geverifieerde domeinen hebt
-**Probleem:** als u een tweede geverifieerd domein toevoegt aan uw AD FS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren. 
-
-
-**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren.  Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+5.  Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten worden gewist.
 
 
 
-## Foutcodes
+
+### iOS-registratiefouten
+In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) een andere lijst met andere iOS-registratiefouten.
+
+## Codes voor algemene registratiefouten
 
 |Foutcode|Mogelijk probleem|Voorgestelde oplossing|
-|--------------|--------------------|------------------------|
+|--------------|--------------------|----------------------------------------|
 |0x80CF0437 |De klok op de clientcomputer is niet ingesteld op de juiste tijd.|Zorg ervoor dat de klok en de tijdzone op de clientcomputer zijn ingesteld op de juiste tijd en tijdzone.
 |
-|0x80240438, 0x80CF0438, 0x80CF402C|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen voor de client.|Controleer of de proxyconfiguratie op de clientcomputer wordt ondersteund door Intune en of de clientcomputer internettoegang heeft.|
-|0x80240438, 0x80CF0438|Proxy-instellingen in Internet Explorer en lokaal systeem zijn niet geconfigureerd.|Kan geen verbinding maken met de Intune-service. Controleer de proxyinstellingen van de client en verzeker u ervan dat de proxyconfiguratie op de clientcomputer wordt ondersteund door Intune. Controleer ook of de clientcomputer internettoegang heeft.|
+|0x80240438, 0x80CF0438, 0x80CF402C|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen voor de client.|Controleer of de proxyconfiguratie op de clientcomputer door Intune wordt ondersteund en of de clientcomputer internettoegang heeft.|
+|0x80240438, 0x80CF0438|Proxy-instellingen in Internet Explorer en lokaal systeem zijn niet geconfigureerd.|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen van de client en bevestig dat de proxyconfiguratie op de clientcomputer door Intune wordt ondersteund, en dat de clientcomputer internettoegang heeft.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Inschrijvingspakket is verouderd.|Download en installeer het huidige clientsoftwarepakket via de beheerwerkruimte.|
 |0x80043002, 0x80CF3002|Account is in onderhoudsmodus.|U kunt geen nieuwe clientcomputers inschrijven wanneer de account in onderhoudsmodus is. Meld u aan bij uw account om uw accountinstellingen weer te geven.|
 |0x80043003, 0x80CF3003|Account is verwijderd.|Controleer of uw account en abonnement op Intune nog actief zijn. Meld u aan bij uw account om uw accountinstellingen weer te geven.|
@@ -252,13 +272,12 @@ Dit komt mogelijk doordat de computer eerder is ingeschreven of een gekloonde in
 |0x80cf0440|De verbinding met het service-eindpunt is beëindigd.|Het proefaccount of het betaalde account is onderbroken. Maak een nieuw proefaccount of betaald account en schrijf u opnieuw in.|
 
 
-## iOS-inschrijvingsfouten
-In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) een lijst met andere iOS-registratiefouten.
+
 
 ### Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

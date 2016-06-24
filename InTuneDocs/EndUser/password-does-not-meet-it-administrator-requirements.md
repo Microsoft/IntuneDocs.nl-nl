@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisgre
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 
 # Het wachtwoord voldoet niet aan de vereisten van de IT-beheerder
 
-Uw wachtwoord voldoet niet aan een of meer vereisten die uw IT-beheerder heeft ingesteld voor uw apparaat. Afhankelijk van het beleid dat uw IT-beheerder heeft gemaakt, kunt u één of een combinatie van de volgende problemen ondervinden:
+Het wachtwoord dat u gebruikt voor toegang tot de resources van uw bedrijf of school voldoet niet aan een of meer vereisten die uw IT-beheerder heeft ingesteld voor uw apparaat. Afhankelijk van het beleid dat uw IT-beheerder heeft gemaakt, kunt u één of een combinatie van de volgende problemen ondervinden:
 
 - Het wachtwoord bevat geen complexe tekens
 - Het wachtwoord is te eenvoudig en niet veilig genoeg
@@ -38,14 +38,14 @@ Uw wachtwoord voldoet niet aan een of meer vereisten die uw IT-beheerder heeft i
 - Het wachtwoord is recentelijk nog gebruikt
 - Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen
 
-Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder.
-
 Gebruik de koppeling die overeenkomt met het type apparaat dat u hebt voor meer informatie over het instellen van uw pincode of wachtwoord, of andere taken die u met uw apparaat kunt doen:
 
-- [Uw pincode of wachtwoord instellen](set-your-pin-or-password-android.md)</br>
-- [Uw wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)</br>
-- - [Uw wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)
+- [De pincode of het wachtwoord voor uw Android-apparaat instellen](set-your-pin-or-password-android.md)
+- [De wachtwoordcode voor uw iOS-apparaat instellen of wijzigen](set-or-change-your-passcode-ios.md)
+- [Het wachtwoord voor uw Windows-apparaat instellen of wijzigen](set-or-change-your-password-windows.md)
 
-<!--HONumber=May16_HO4-->
+Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO1-->
 
 

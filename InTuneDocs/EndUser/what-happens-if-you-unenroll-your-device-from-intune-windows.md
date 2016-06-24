@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?
 
-Wanneer u de bedrijfsportal-app op uw apparaat verwijdert, wordt uw apparaat ook uitgeschreven bij Intune. Gebruik de koppeling in de bovenstaand sectie 'In dit artikel' die overeenkomt met het type apparaat dat u gebruikt, voor aanvullende informatie over wat er gebeurt.
+Wanneer u de bedrijfsportal-app op uw apparaat verwijdert, wordt de registratie van uw apparaat bij Intune ook ongedaan gemaakt. Gebruik de koppeling in de bovenstaand sectie 'In dit artikel' die overeenkomt met het type apparaat dat u gebruikt, voor aanvullende informatie over wat er gebeurt.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 of Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,10 +92,11 @@ Wanneer u een Windows RT-apparaat verwijdert, gebeurt het volgende:
 
 -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
 
+Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-### Zie ook
+### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

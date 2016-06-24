@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Uw apparaat handmatig synchroniseren
-Als de installatie van de app te lang duurt, voer dan de volgende instructies uit om uw Windows-apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen. Volg de instructies voor het type apparaat dat u gebruikt:
+Als de installatie van de app te lang duurt, voer dan de volgende instructies uit om uw Windows-apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen. De enige versies die worden ondersteund, zijn de versies die hier worden vermeld. Gebruik de koppeling, in de bovenstaande sectie In dit artikel, die overeenkomt met het type apparaat dat u gebruikt:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -102,6 +102,6 @@ Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchron
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

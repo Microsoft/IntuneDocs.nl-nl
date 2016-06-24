@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ Als u gebruikmaakt van een computer in plaats van een mobiel apparaat en u gegev
 
 2.  Sluit uw Android-apparaat met een USB-kabel op een computer aan.
 
-3.  Zoek op de computer naar een map met de naam van uw telefoon. Zoek in die map naar &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
+3.  Zoek op de computer naar een map met de naam van uw telefoon. Zoek in die map naar &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.\.
 
 4.  Voeg alle bestanden toe aan een e-mailbericht en verzend dit naar de IT-beheerder.
+
+Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

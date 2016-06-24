@@ -18,7 +18,7 @@ ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,10 +26,12 @@ ms.suite: ems
 ---
 
 # Bedrijfsportal-app wordt niet ondersteund
-Deze versie van de bedrijfsportal kan niet meer worden gebruikt. Installeer de **Bedrijfsportal**-app uit de Windows Store om door te gaan.
+Deze versie van de bedrijfsportal kan niet meer worden gebruikt. Installeer de nieuwste **Bedrijfsportal**-app uit de Windows Store om door te gaan.
 
 
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

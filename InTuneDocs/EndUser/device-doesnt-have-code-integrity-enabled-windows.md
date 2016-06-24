@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,13 +32,15 @@ Uw organisatie vereist dat u de Windows-functie voor code-integriteit inschakelt
 
 Schakel de functie Beveiligd opstarten in om de Windows-functie voor code-integriteit te kunnen inschakelen. De functie voor code-integriteit wordt vervolgens automatisch ingeschakeld. 
 
-Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Als u een mobiel apparaat gebruikt, neem dan contact op met uw IT-beheerder voor hulp. 
+Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Als u een mobiel apparaat gebruikt, neemt u contact op met uw IT-beheerder voor hulp. 
 
-Als u een pc gebruikt, neem dan contact op met uw IT-beheerder of raadpleeg de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u zelf wilt proberen om Beveiligd opstarten in te schakelen.
+Als u een pc gebruikt, neemt u contact op met uw IT-beheerder of raadpleegt u de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u zelf wilt proberen om Beveiligd opstarten in te schakelen.
+
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

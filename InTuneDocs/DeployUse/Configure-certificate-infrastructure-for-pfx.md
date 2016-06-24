@@ -16,7 +16,7 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,8 +50,8 @@ Voor het gebruik van .pfx-certificaatprofielen hebt u, afgezien van een certific
 
  > [!NOTE]           
 > -    De server die als host voor WAP fungeert, [moet een update installeren](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](http://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](http://support.microsoft.com/kb/3011135).
->-  Ook moet de server waarop WAP als host optreedt, een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd. Bovendien moet de server het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
-Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers.|
+>-  Daarnaast moet de server waarop WAP als host optreedt, een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd. Bovendien moet de server het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
+Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor meer informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers.|
 
 
 ### Certificaten en sjablonen
@@ -99,13 +99,13 @@ In deze taak publiceert u de certificaatsjabloon
 
 4.  Gebruik op de verlenende CA de module Certificeringsinstantie om de certificaatsjabloon te publiceren.
 
-    1.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen**, en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
+    1.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen** en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
 
     2.  Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
 5.  Zorg er op de CA-computer voor dat de computer die de Intune-certificaatconnector host registratiemachtigingen heeft, zodat deze toegang heeft tot de sjabloon die wordt gebruikt voor het maken van het PFX-profiel. U stelt die machtiging in op het tabblad **Beveiliging** van de eigenschappen van de CA-computer.
 
-### Taak 4: de Intune-certificaatconnector inschakelen, installeren en configureren
+### Taak 2: de Intune-certificaatconnector inschakelen, installeren en configureren
 In deze taak:
 
 De certificaatconnector downloaden, installeren en configureren
@@ -158,6 +158,6 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](Configure-Intune-certificate-profiles.md).
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

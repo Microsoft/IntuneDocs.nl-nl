@@ -18,7 +18,7 @@ ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,13 +26,13 @@ ms.suite: ems
 ---
 
 
-# Uw verloren of gestolen apparaat opnieuw instellen (wissen)
+# Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
 
-Als uw ingeschreven Windows-apparaat verloren of gestolen is, kunt u de fabrieksinstellingen ervan herstellen. Hieronder wordt uitgelegd hoe u uw apparaat via de bedrijfsportal-app opnieuw instelt. U kunt [uw apparaat ook opnieuw instellen op de website van de bedrijfsportal](reset-your-device-cpwebsite.md).
+Bij verlies of diefstal van uw geregistreerde Windows-apparaat, kunt u het apparaat terugzetten naar de fabrieksinstellingen. Hieronder wordt uitgelegd hoe u uw apparaat via de bedrijfsportal-app opnieuw instelt. U kunt [uw apparaat ook opnieuw instellen op de website van de bedrijfsportal](reset-your-device-cpwebsite.md).
 
 
 > [!WARNING]
-> Het herstellen van de fabrieksinstellingen van een apparaat betekent dat zowel uw privégegevens als uw zakelijke gegevens op het apparaat worden verwijderd. Zie [Wat gebeurt er als u uw apparaat opnieuw instelt via de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) voor meer informatie over wat er gebeurt als u uw apparaat opnieuw instelt..
+> Het herstellen van de fabrieksinstellingen van een apparaat betekent dat zowel uw privégegevens als uw zakelijke gegevens op het apparaat worden verwijderd. Zie [Wat gebeurt er als u uw apparaat opnieuw instelt via de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) voor meer informatie over wat er gebeurt als u uw apparaat opnieuw instelt.
 
 1.  Open uw bedrijfsportal in uw browser en meld u aan bij uw werkaccount.
 
@@ -41,11 +41,11 @@ Als uw ingeschreven Windows-apparaat verloren of gestolen is, kunt u de fabrieks
 3.  Tik op **Opnieuw instellen** &gt; **Opnieuw instellen**.
 
 > [!NOTE]
-> Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-afdeling om dit voor u te doen.
+> Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-afdeling om dit voor u te doen. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

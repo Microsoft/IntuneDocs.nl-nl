@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,11 +28,13 @@ ms.suite: ems
 
 # Uw Android-apparaat is geroot en u kunt geen verbinding maken
 
-Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Als uw apparaat is geroot, krijgt u geen toegang meer tot de bedrijfsresources en moet u contact opnemen met de IT-beheerder zodat deze u kan helpen om opnieuw verbinding te maken met de bedrijfsresources.
+Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Wanneer uw apparaat is geroot, krijgt u geen toegang meer tot de bedrijfsresources en moet u contact opnemen met de IT-beheerder zodat deze u kan helpen om opnieuw verbinding te maken met de bedrijfsresources.
+
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

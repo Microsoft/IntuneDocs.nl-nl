@@ -18,7 +18,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,9 +46,11 @@ Wanneer u de registratie van uw iOS-apparaat bij Intune ongedaan maakt, gebeurt 
 
 Zie [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
-### Zie ook
-[Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO2-->
+### Zie tevens
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

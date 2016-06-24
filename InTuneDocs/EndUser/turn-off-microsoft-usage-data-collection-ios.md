@@ -18,7 +18,7 @@ ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,9 +32,9 @@ Microsoft verzamelt automatisch anonieme gegevens over de betrouwbaarheid, de pr
 
 U kunt het verzamelen van die gegevens op een iOS-apparaat uitschakelen met de instelling **Gebruiksgegevens** in de app Bedrijfsportal. IT-beheerders hebben geen controle over het verzamelen van de gegevens en ze kunnen uw selectie voor deze instelling niet wijzigen.
 
-### Zie ook
+### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

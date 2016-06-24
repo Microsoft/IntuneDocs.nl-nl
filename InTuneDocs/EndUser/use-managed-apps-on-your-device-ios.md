@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -76,11 +76,11 @@ Een aantal veelgebruikte apps die mogelijk door uw IT-afdeling worden beheerd:
 
 -   Microsoft Word, Excel, PowerPoint
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat.
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-### Zie ook
-[Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+### Zie tevens
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

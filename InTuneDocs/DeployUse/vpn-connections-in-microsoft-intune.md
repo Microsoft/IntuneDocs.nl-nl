@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,19 +48,20 @@ Intune ondersteunt het maken van VPN-profielen die gebruikmaken van de volgende 
 
 
 
-Type verbinding |iOS en Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8,1  |Windows 10 Desktop en Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Type verbinding |iOS en Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8,1|Windows 10 Desktop en Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nee    |     Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
 Pulse Secure|Ja  |Ja |Ja   |Nee  |Ja  |Ja| Ja|        
 F5 Edge Client|Ja |Ja |Ja |Nee  |Ja  |   Ja |  Ja|   
 Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Nee  |Ja |Ja |Ja|         
 CheckPoint Mobile VPN|Ja |Ja |Ja |Ja |Ja|Ja|Ja|
-Microsoft SSL (SSTP)|Nee |Nee |Nee |Nee |Nee|Nee|Nee|
-Microsoft Automatic|Nee |Nee |Nee |Nee |Nee|Nee|Ja|
-IKEv2|Nee |Nee |Nee |Nee |Nee|Nee|Ja|
-PPTP|Nee |Nee |Nee |Nee |Nee|Nee|Ja|
-L2TP|Nee |Nee |Nee |Nee |Nee|Nee|Ja|
+Microsoft SSL (SSTP)|Nee |Nee |Nee |Nee |Nee|Nee|VPNv1 OMA-URI*|
+Microsoft Automatic|Nee |Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
+IKEv2|Aangepast iOS-profiel|Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
+PPTP|Aangepast iOS-profiel|Nee |Nee |Nee |Nee|Nee|Ja|
+L2TP|Aangepast iOS-profiel|Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
 
+\* Zonder aanvullende instellingen die anderszins beschikbaar voor zijn voor Windows 10.
 
 > [!IMPORTANT] Voordat u VPN-profielen die op een apparaat zijn geïmplementeerd kunt gebruiken, moet u de betreffende VPN-app voor het profiel installeren. U kunt de informatie in het onderwerp [Apps in Microsoft Intune implementeren](deploy-apps-in-microsoft-intune.md) gebruiken bij het implementeren van de betreffende app met behulp van Intune.  
 
@@ -159,11 +160,11 @@ Na een geslaagde implementatie zien gebruikers de naam van de VPN-verbinding die
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
 
-### Zie ook
+### Zie tevens
 [Aangepaste configuraties voor VPN-profielen](Custom-configurations-for-VPN-profiles.md)
 [Per app VPN voor Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

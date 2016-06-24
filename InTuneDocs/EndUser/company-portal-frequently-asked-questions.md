@@ -30,7 +30,7 @@ ms.suite: ems
 ## Wat is de bedrijfsportalwebsite en wat kunt u ermee doen?
 De Microsoft Intune-bedrijfsportal biedt u toegang tot de gegevens en apps van uw bedrijf of school. U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
-- Door de bedrijfsportal-app op uw apparaat te installeren: Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren. Hiervoor kunnen verschillende methoden worden gebruikt.
+- Door de bedrijfsportal-app op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren. Hiervoor kunnen verschillende methoden worden gebruikt.
 - Door naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) te gaan die uw IT-beheerd heeft ingesteld. 
 
 Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken zowel via de app als de website uitvoeren. Enkele voorbeelden:
@@ -100,10 +100,14 @@ Kies een van de volgende koppelingen om te zien hoe u uw apparaat opnieuw instel
 ## Ik zie niet al mijn apparaten in de bedrijfsportal
 Als u een apparaat wilt bekijken, moet dit zijn toegevoegd aan de bedrijfsportal. Volg de instructies van uw beheerder om naar de bedrijfsportal te gaan en voer de stappen uit voor uw apparaat. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
 
+## Neem contact op met de IT-beheerder als u vragen hebt.
+Neem contact op met de IT-beheerder als u hulp nodig hebt. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 

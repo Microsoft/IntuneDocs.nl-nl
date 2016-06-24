@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,16 +39,18 @@ Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet 
 2. Tik in het menu **Touch ID en wachtwoordcode** op **Wachtwoordcode inschakelen**.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van uw IT-beheerder en geef de code nogmaals op om deze te verifiëren.
 
-## Uw wachtwoordcode wijzigen
+## Uw wachtwoordcode wijzigen:
 
 1. Tik op **Instellingen** > **Touch ID en wachtwoordcode**.
 2. Voer uw wachtwoordcode in. Het menu Touch ID en wachtwoordcode wordt geopend.
 2. Tik op **Wachtwoordcode wijzigen** en voer het oude wachtwoord.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van uw IT-beheerder en geef de code nogmaals op om deze te verifiëren.
 
-### Zie ook
-[Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO4-->
+### Zie tevens
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

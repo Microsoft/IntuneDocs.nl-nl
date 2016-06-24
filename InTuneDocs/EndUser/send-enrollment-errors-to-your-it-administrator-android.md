@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inschrijvingsfouten naar uw IT-beheerder verzenden | Microsoft Intune
+title: Registratiefouten naar uw IT-beheerder verzenden | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -18,7 +18,7 @@ ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Inschrijvingsfouten naar uw IT-beheerder verzenden
+# Registratiefouten naar uw IT-beheerder verzenden
 
-Als er een fout optreedt wanneer u uw apparaat probeert in te schrijven bij Intune, kunt u het opnieuw proberen door op **Opnieuw** te tikken, maar u kunt ook de foutgegevens in een e-mailbericht naar uw IT-beheerder verzenden. Tik hiertoe op **Informatie verzenden**.. 
+Als er een fout optreedt wanneer u uw apparaat probeert te registreren bij Intune, kunt u het opnieuw proberen door op **Opnieuw** te tikken, maar u kunt ook de foutgegevens in een e-mailbericht naar uw IT-beheerder verzenden. Tik hiertoe op **Informatie verzenden**. 
 
 Er wordt automatisch een e-mail gemaakt die is geadresseerd aan de IT-beheerder. Deze bevat de logboeken die de IT-beheerder nodig heeft om het probleem met het apparaat op te lossen.
 
@@ -38,8 +38,8 @@ Er zijn verschillende manieren waarop u de gegevenslogboeken naar uw IT-beheerde
 [Gebruik e-mail om logboeken te verzenden](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 ### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

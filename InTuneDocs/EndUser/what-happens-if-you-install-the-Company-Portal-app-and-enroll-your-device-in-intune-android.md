@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat bij Intune inschrijft? | Microsoft Intune
+title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune? | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -18,7 +18,7 @@ ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat bij Intune inschrijft?
+# Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?
 
-Wanneer u de bedrijfsportal-app installeert en uw Android-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app gebruiken voor het volgende:
+Wanneer u de bedrijfsportal-app installeert en uw Android-apparaat bij Intune registreert, kunt u de bedrijfsportal-app gebruiken voor het volgende:
 
 -   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
 
@@ -60,9 +60,11 @@ Wanneer u een Android-apparaat toevoegt, geeft u de IT-beheerder toestemming om 
 
     -   Eventuele inventarisupdates van de bedrijfs-app worden verzonden (deze updates bevatten geen persoonlijke informatie).
 
-### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO1-->
+### Zie tevens
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

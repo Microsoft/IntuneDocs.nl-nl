@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
 -   [Het apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
 
--   De contactgegevens van uw IT-beheerder opzoeken, als uw IT-beheerder deze heeft geconfigureerd
+-   Zoek de contactgegevens van uw IT-beheerder, als uw IT-beheerder deze heeft geconfigureerd. Als u ze niet kunt vinden, controleert u of ze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 -   Gegevens over uw apparaat bekijken, bijvoorbeeld de compatibiliteit met het beleid van uw school of werk
 
@@ -50,11 +50,11 @@ U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
 U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook met de **bedrijfsportal-app** kunt uitvoeren die u op uw apparaat installeert. Tik voor meer informatie over de bedrijfsportal-app, het registreren van een apparaat bij Intune en meer op de koppeling voor het type apparaat dat u hebt:
 
-- [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
-- [Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
+- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

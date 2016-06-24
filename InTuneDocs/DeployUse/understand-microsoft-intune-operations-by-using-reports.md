@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,11 +69,11 @@ Bovendien ondersteunen rapporten de volgende acties:
 |**Laden**|Op de pagina **Nieuw rapport maken** klikt u op **Laden** om eerder opgeslagen sets met rapportparameters op te halen.|
 |**Verwijderen**|In de werkruimte **Rapporten** selecteert u het gewenste rapporttype, klikt u op **Laden**en klikt u vervolgens in de lijst met rapporten op het verwijderingspictogram (x) naast het rapport.|
 
-## Zie ook
+### Zie tevens
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

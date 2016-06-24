@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Uw Windows-apparaat versleutelen
-Als u opnieuw verbinding wilt maken met uw werk, moet u uw apparaat versleutelen door de volgende instructies te volgen:
 
-## Optie 1: een Microsoft-account toevoegen
+Om de gegevens van uw bedrijf of school te beveiligen, kan het zijn dat uw IT-beheerder van u verlangt dat u uw Windows-apparaat versleutelt. Als u een Windows Phone hebt en u deze hebt geregistreerd, wordt het apparaat automatisch versleuteld als versleuteling is vereist.
 
-1.  Zoek en start de app **Pc-instellingen**.
+Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het apparaat te versleutelen. 
 
-2.  Klik op **Accounts** &gt; **Uw account** en vervolgens op **Verbinding maken met een Microsoft-account**..
+1.  Zoek de app **BitLocker beheren** en start deze.
 
-3.  Volg de instructies die worden weergegeven.
+2.  Klik op **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
-4.  Zorg ervoor dat het apparaat is ingeschreven bij Intune, door de instructies in [Apparaat inschrijven voor gebruik op het werk](http://go.microsoft.com/fwlink/?LinkId=519071) te volgen..
-
-## Optie 2: BitLocker inschakelen:
-
-1.  Zoek en start de app **BitLocker beheren**.
-
-2.  Klik op **BitLocker inschakelen** en volg de instructies voor het versleutelen van uw schijven.
-
-3.  Zorg ervoor dat het apparaat is ingeschreven bij Intune, door de instructies in [Apparaat inschrijven voor gebruik op het werk](http://go.microsoft.com/fwlink/?LinkId=519071) te volgen..
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

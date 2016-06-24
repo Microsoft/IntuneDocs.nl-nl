@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Een Package Family Name (PFN) voor VPN per app zoeken |Microsoft Intune|
+title: Een Package Family Name (PFN) voor VPN per app zoeken |Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -18,7 +18,7 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: tycast
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -91,6 +91,6 @@ In Edge wordt de gewenste informatie weergegeven. In Internet Explorer klikt u o
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

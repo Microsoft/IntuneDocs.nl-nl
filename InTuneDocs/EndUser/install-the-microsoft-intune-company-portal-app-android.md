@@ -18,7 +18,7 @@ ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,13 +26,13 @@ ms.suite: ems
 ---
 
 
-# De Microsoft Intune-bedrijfsportal-app installeren
+# Installeer de Microsoft Intune-bedrijfsportal-app
 
-De bedrijfsportal-app is een app die u op het Android-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportal-app hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat inschrijf bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over het inschrijven van uw apparaat..
+De bedrijfsportal-app is een app die u op het Android-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportal-app hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over het registreren van uw apparaat.
 
-1.  Tik op **Start** &gt; **Play Store**.
+1.  Tik op Tap **Start** &gt; **Play Store**.
 
-2.  Typ **bedrijfsportal** in het **zoekvak**..
+2.  Typ in het **zoekvak** de tekst **bedrijfsportal**.
 
 3.  Tik op **Intune-bedrijfsportal**.
 
@@ -46,11 +46,11 @@ De bedrijfsportal-app is een app die u op het Android-apparaat installeert om to
 
     ![android-voorwaarden-accepteren-bedrijfsportal](./media/and-cpinstall-3-cp-accept.png)
 
-Als u uw apparaat wilt inschrijven bij Intune om toegang te krijgen tot bedrijfs- of schoolgegevens en -bronnen, raadpleegt u [Uw apparaat inschrijven bij Intune](enroll-your-device-in-Intune-android.md)..
+Als u uw apparaat wilt registreren bij Intune om toegang te krijgen tot bedrijfs- of schoolgegevens en -bronnen, raadpleegt u [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md).
 
 ### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

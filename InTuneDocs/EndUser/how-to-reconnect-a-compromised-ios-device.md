@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid
-Uw IT-beheerder heeft vastgesteld dat u een jailbroken apparaat gebruikt. Deze configuratie kan een beveiligingsrisico vormen en een bedreiging voor uw bedrijfsbronnen zijn.
+Uw IT-beheerder heeft vastgesteld dat u een jailbroken apparaat gebruikt. 'Gekraakt' betekent dat de software-beperkingen die zijn opgelegd door iOS, zijn verwijderd. Hierdoor kan de software een beveiligingsrisico en bedreiging voor uw bedrijfsbronnen vormen. Als dit gebeurt, heeft het apparaat geen toegang meer tot bedrijfsbronnen.
 
-Neem contact op met uw IT-beheerder om te helpen het apparaat opnieuw aan te sluiten.
+Neem contact op met uw IT-beheerder voor hulp om opnieuw verbinding met uw apparaat te maken. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

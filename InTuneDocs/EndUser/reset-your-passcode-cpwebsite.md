@@ -18,7 +18,7 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,10 +28,9 @@ ms.suite: ems
 
 # De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt ingeschreven, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt ingeschreven in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
+Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
 
-> [!NOTE] 
-> Afhankelijk van hoe uw IT-beheerder Intune heeft geconfigureerd, kan het zijn dat er geen knop met de aanduiding Wachtwoord opnieuw instellen wordt weergegeven. Het opnieuw instellen van wachtwoordcodes wordt niet ondersteund op Windows 8.1- en Windows RT-apparaten.
+> [!NOTE] Het is mogelijk de knop Wachtwoordcode opnieuw instellen niet wordt weergegeven. Dit is afhankelijk van hoe uw IT-beheerder Intune heeft geconfigureerd. Het opnieuw instellen van wachtwoordcodes wordt niet ondersteund op Windows 8.1- en Windows RT-apparaten.
 
 Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
@@ -56,16 +55,18 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
     |Android|Hiermee maakt u een nieuwe, tijdelijke, alfanumerieke wachtwoordcode.|
     |iOS|Hiermee verwijdert u de wachtwoordcode van het apparaat en wordt er geen nieuwe, tijdelijke wachtwoordcode gemaakt. Als u Touch ID gebruikt, moet u dit opnieuw instellen op uw apparaat, omdat het wordt verwijderd wanneer u uw wachtwoordcode opnieuw instelt.|
     |Windows 10 (alleen voor mobiele apparaten)|Hiermee maakt u een nieuwe, tijdelijke, alfanumerieke wachtwoordcode. Windows Hello wordt ondersteund.|
-    |Windows Phone 8.1|Hiermee maakt u een nieuwe, tijdelijke, numerieke wachtwoordcode.|
+    |Windows Phone 8,1|Hiermee maakt u een nieuwe, tijdelijke, numerieke wachtwoordcode.|
     Nadat u uw apparaat hebt ontgrendeld, kunt u een nieuwe wachtwoordcode instellen door op uw apparaat naar **Instellingen** te gaan.
 
 5.  Ontgrendel uw apparaat en stel vervolgens een nieuwe wachtwoordcode in of wijzig de tijdelijke wachtwoordcode door op uw apparaat naar **Instellingen** te gaan.
 
     Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
 
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+
 ### Zie tevens
 [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

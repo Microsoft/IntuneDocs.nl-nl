@@ -18,7 +18,7 @@ ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,9 +44,11 @@ Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgeh
 
 Zie [De registratie van uw apparaat bij Intune ongedaan maken met de bedrijfsportal-app](unenroll-your-device-from-intune-android.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
-### Zie ook
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO3-->
+### Zie tevens
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

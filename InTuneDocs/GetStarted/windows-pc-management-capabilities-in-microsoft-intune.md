@@ -18,7 +18,7 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ In de meeste gevallen schrijft u uw apparaten in bij Microsoft Intune, waarmee u
 
 -   **Anti-malwarebeveiliging**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
 
--   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
+-   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad die is opgenomen in Intune <!--- (requires TeamViewer software)--->.
 
 -   **Softwarelicentiebeheer**: houdt bij hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
 -   **App-implementatie**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de clientsoftware beheert.
@@ -73,10 +73,10 @@ Hieronder staan de softwarevereisten voor het installeren van de Intune-pc-clien
 |Windows Installer 3.1|Op de pc moet minimaal Windows Installer 3.1 zijn geïnstalleerd.|
 |Niet-compatibele clientsoftware verwijderen|Voordat u de Intune-pc-clientsoftware installeert, moet u de volgende clientsoftware van die computer verwijderen:<br /><br />- Alle versies van Configuration Manager<br />- Alle versies van Microsoft Systems Management Server (SMS)|
 
-### Zie ook
+### Zie tevens
 [Beheermogelijkheden voor mobiele apparaten in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

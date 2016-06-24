@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Uw apparaat uitschrijven bij Intune als u de gebruiksvoorwaarden hebt afgewezen | Microsoft Intune
+title: De registratie van uw apparaat bij Intune ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -18,7 +18,7 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,29 @@ ms.suite: ems
 ---
 
 
-# De inschrijving van uw apparaat bij Intune ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen
+# De registratie van uw apparaat bij Intune ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen
 
-Als u het Android-apparaat wilt uitschrijven, kunt u het beste de voorwaarden accepteren, u aanmelden bij de bedrijfsportal-app en vervolgens [deze instructies](unenroll-your-device-from-intune-android.md) volgen om het apparaat uit te schrijven. Als u de gebruiksvoorwaarden echter tijdens het aanmelden bij de bedrijfsportal-app hebt geweigerd, kunt u zich niet meer aanmelden bij de bedrijfsportal-app en moet u de instructies in deze 'tijdelijke oplossing' gebruiken om het apparaat uit te schrijven.
+Als u de registratie van Android-apparaat ongedaan wilt maken, kunt u het beste de voorwaarden accepteren, u aanmelden bij de bedrijfsportal-app en vervolgens [deze instructies](unenroll-your-device-from-intune-android.md) volgen om de registratie van het apparaat ongedaan te maken. Als u de gebruiksvoorwaarden echter tijdens het aanmelden bij de bedrijfsportal-app hebt geweigerd, kunt u zich niet meer aanmelden bij de bedrijfsportal-app en moet u de instructies in deze 'tijdelijke oplossing' gebruiken om de registratie van het apparaat ongedaan te maken.
 
-Wanneer u de bedrijfsportal-app verwijdert, maakt u ook de inschrijving van uw apparaat bij Intune ongedaan. Dit houdt in dat het apparaat geen toegang meer heeft tot bedrijfsresources.  Zie [Wat gebeurt er wanneer u uw apparaat uitschrijft bij Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt als u uw apparaat uitschrijft..
+Wanneer u de bedrijfsportal-app verwijdert, maakt u ook de registratie van uw apparaat bij Intune ongedaan. Dit houdt in dat het apparaat geen toegang meer heeft tot bedrijfsresources.  Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt wanneer u de registratie van uw apparaat ongedaan maakt.
 
 Voordat u de bedrijfsportal-app kunt verwijderen, moet u naar de instelling **Apparaatbeheerders** gaan en **Bedrijfsportal** uitschakelen. De stappen kunnen enigszins verschillen afhankelijk van het Android-apparaat dat u gebruikt.
 
-De inschrijving van uw apparaat bij Intune ongedaan maken en de bedrijfsportal-app verwijderen:
+De registratie van uw apparaat bij Intune ongedaan maken en de bedrijfsportal-app verwijderen:
 
-1.  Ga naar **Instellingen** &gt; **Beveiliging &amp; Schermvergrendeling** &gt; **Apparaatbeheerders**..
+1.  Ga naar**Instelling** &gt; **Beveiliging&amp; Schermvergrendeling** &gt; **Apparaatbeheerders**.
 
-    Wanneer u deze stap uitvoert, wordt de inschrijving van uw apparaat onmiddellijk ongedaan gemaakt.
+    Wanneer u deze stap uitvoert, wordt de registratie van uw apparaat onmiddellijk ongedaan gemaakt.
 
-2.  Schakel het selectievakje of de optie bij **Bedrijfsportal** uit..
+2.  Schakel het selectievakje of de optie bij **Bedrijfsportal** uit.
 
     U kunt nu de bedrijfsportal-app verwijderen.
 
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

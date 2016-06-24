@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,32 +27,21 @@ ms.suite: ems
 
 
 # Uw Windows-apparaat versleutelen
-Om de gegevens van uw bedrijf of school te beveiligen, kan het zijn dat uw IT-beheerder van u verlangt dat u uw Windows-apparaat versleutelt. Als u een bericht ziet dat aangeeft dat u met versleuteling moet werken, kan uw IT-beheerder u vertellen welke van de onderstaande stappen u moet volgen om uw apparaat te versleutelen.
 
-U kunt uw apparaat versleutelen door een Microsoft-account toe te voegen of door BitLocker in te schakelen.
+Om de gegevens van uw bedrijf of school te beveiligen, kan het zijn dat uw IT-beheerder van u verlangt dat u uw Windows-apparaat versleutelt. Als u een Windows Phone hebt en u deze hebt geregistreerd, wordt het apparaat automatisch versleuteld als versleuteling is vereist.
 
-**Optie 1: Een Microsoft-account toevoegen**
-
-1.  Zoek de app **Pc-instellingen** en start deze.
-
-2.  Tik op **Accounts** &gt; **Uw account** en vervolgens op **Verbinding maken met een Microsoft-account**.
-
-3.  Volg de instructies die worden weergegeven.
-
-4.  Zorg ervoor dat uw apparaat is ingeschreven bij Intune door de instructies in [Uw apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) te volgen..
-
-**Optie 2: BitLocker inschakelen**
+Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het apparaat te versleutelen. 
 
 1.  Zoek de app **BitLocker beheren** en start deze.
 
 2.  Klik op **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
-3.  Zorg ervoor dat uw apparaat is ingeschreven bij Intune door de instructies in [Uw apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) te volgen..
-
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
+[Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

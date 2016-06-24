@@ -18,7 +18,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -98,11 +98,13 @@ Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelinge
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) voor de stappen die u moet doorlopen om uw apparaat in te schrijven.
+Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) voor de stappen die u moet doorlopen om uw apparaat te registreren.
 
-### Zie ook
-[Uw iOS- of Mac OS X-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO2-->
+### Zie tevens
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

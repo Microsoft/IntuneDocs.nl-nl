@@ -18,7 +18,7 @@ ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,7 +41,7 @@ Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 
 
 -   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
 
-Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat in te schrijven. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
+Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat te registreren. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
 
 Wanneer u een computer toevoegt:
 
@@ -70,7 +70,7 @@ Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 
 
 -   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
 
-Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat in te schrijven. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
+Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat te registreren. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
 
 Wanneer u een Windows Phone-apparaat toevoegt, geeft u de IT-beheerder toestemming om toegang tot het apparaat te zoeken. De beheerder kan het volgende doen:
 
@@ -125,7 +125,9 @@ Wanneer u een computer toevoegt:
 
 -   De IT-beheerder kan beleidsregels op de computer afdwingen. Zo kunt u verplicht worden om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of alle gegevens van de harde schijf van de computer kunnen worden verwijderd als u te veel keren een onjuist wachtwoord hebt ingevoerd.
 
-### Zie ook
+Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+
+### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 

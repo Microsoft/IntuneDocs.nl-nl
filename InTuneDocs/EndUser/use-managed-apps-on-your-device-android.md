@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een ber
 ## Hoe kom ik in het bezit van beheerde apps?
 Beheerde apps zijn op verschillende manieren beschikbaar:
 
--   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw apparaat inschrijven bij Intune](enroll-your-device-in-Intune-android.md) voor meer informatie over het inschrijven van apparaten..
+-   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md) voor meer informatie over het registreren van apparaten.
 
 -   U installeert een app uit de Play Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd door Intune.
 
@@ -76,12 +76,12 @@ Een aantal veelgebruikte apps die mogelijk door uw IT-afdeling worden beheerd:
 
 -   Microsoft Word, Excel, PowerPoint
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat.
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

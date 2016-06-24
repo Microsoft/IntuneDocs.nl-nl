@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -216,7 +216,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**​Automatisch bijwerken toestaan**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/AllowAutoUpdate<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** - **5** (standaardinstelling: **1**)|
 |**Planning installatiedag**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: elke dag (standaard)<br>**1**: zondag<br>**2**: maandag<br>**3**: dinsdag<br>**4**: woensdag<br>**5**: donderdag<br>**6**: vrijdag<br>**7**: zaterdag|
 |**Planning installatietijd**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** – **23** uur (**0** is middernacht) (standaard: **3**)|
-|**DeviceLock/AllowIdleReturnWithoutPassword**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: de gebruiker kan de timer van de respijtperiode voor het wachtwoord niet instellen en de waarde is ingesteld als 'elke keer'<br>**1**: de gebruiker kan de timer voor de respijtperiode van het wachtwoord instellen (standaard)|
+|**DeviceLock/AllowIdleReturnWithoutPassword**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: de gebruiker kan de timer van de respijtperiode voor het wachtwoord niet instellen en de waarde is ingesteld als elke keer<br>**1**: de gebruiker kan de timer voor de respijtperiode van het wachtwoord instellen (standaard)|
 |**WiFi/AllowWiFi**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: **gebruik van Wi-Fi-verbinding** niet toestaan.<br>**1**: **gebruik van Wi-Fi-verbinding toestaan** (standaard).|
 |**WiFi/AllowInternetSharing**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : internet delen niet toestaan.<br>**1**: Gedeeld internet toestaan (standaard)|
 |**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
@@ -257,7 +257,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**TextInput/AllowJapaneseIVSCharacters**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
 |**TextInput/AllowJapaneseUserDictionary**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
 |**TextInput/AllowJapaneseIMESurrogatePairCharacters**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIMESurrogatePairCharacters<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: er worden geen tekens gefilterd (standaard)<br>**1**: alle tekens worden gefilterd, behalve Shift-JIS-tekens|
+|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve Shift-JIS-tekens|
 |**TextInput/ExcludeJapaneseIMEExceptJIS0208**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br /><br />**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve JIS0208-tekens|
 |**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve JIS0208-tekens en EUDC-tekens|
 |**TextInput/AllowInputPanel**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowInputPanel<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
@@ -327,11 +327,11 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**Automatisch invullen toestaan**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (standaard)<br>**1**: ingeschakeld|
 |**Sitelijst voor ondernemingen configureren**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:<br>0** - niet geconfigureerd<br>**1**: sitelijst voor de ondernemingsmodus van IE gebruiken indien geconfigureerd (standaard)<br>**2**: locatie van de lijst van Enterprise-sites opgeven|
 
-### Zie ook
+### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

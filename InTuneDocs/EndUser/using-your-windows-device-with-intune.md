@@ -18,7 +18,7 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ Volg deze stappen voor taken die u op een Windows-apparaat of -computer moet uit
 
 De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfsportal op Windows-apparaten en de registratie van deze apparaten.
 
-- [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md)</br>
+- [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
 - [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)</br>
 - [Wat kan uw IT-beheerder zien wanneer u uw apparaat bij Intune registreert?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
@@ -56,14 +56,14 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 - [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
 - [Het apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
-- [BitLocker is niet geregistreerd op het apparaat](device-doesnt-have-bitlocker-enabled-windows.md)</br>
-- [Op het apparaat is geen antimalwaresoftware geregistreerd](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
-- [Op het apparaat is Beveiligd opstarten niet geregistreerd](device-doesnt-have-secure-boot-enabled-windows.md)</br>
-- [Op het apparaat is Code-integriteit niet geregistreerd](device-doesnt-have-code-integrity-enabled-windows.md)
+- [BitLocker is niet ingeschakeld op het apparaat](device-doesnt-have-bitlocker-enabled-windows.md)</br>
+- [Op het apparaat is geen antimalwaresoftware ingeschakeld](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
+- [Op het apparaat is Beveiligd opstarten niet ingeschakeld](device-doesnt-have-secure-boot-enabled-windows.md)</br>
+- [Op het apparaat is code-integriteit niet ingeschakeld](device-doesnt-have-code-integrity-enabled-windows.md)
 
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

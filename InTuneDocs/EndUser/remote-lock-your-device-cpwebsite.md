@@ -18,7 +18,7 @@ ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Windows 10 Mobile | Alleen ondersteund als op de telefoon een wachtwoordcode is 
 Windows 10 Desktop | Niet ondersteund  
 Windows Phone 8,1 | Alleen ondersteund als op de telefoon een wachtwoordcode is ingesteld
 Windows Phone 8.0 | Niet ondersteund
-Pc (Windows 8.0 en eerder) | Niet ondersteund       
+Pc (Windows 8.0 en lager) | Niet ondersteund       
 Pc (Windows 8.1) | Niet ondersteund
 
 </br>
@@ -50,7 +50,7 @@ Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen:
 
     Nadat u op **Extern vergrendelen** hebt getikt, wordt de status 'Extern vergrendelen is in behandeling' weergegeven.  Als extern vergrendelen is gelukt, wordt de status gewijzigd in 'Extern vergrendelen is voltooid'.
 
-    De status wordt op drie locaties weergegeven:
+    De status Externe vergrendelen wordt op drie locaties weergegeven:
 
     * Het meldingengebied van de website. 
     * De pagina Details voor het apparaat.
@@ -60,10 +60,11 @@ Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen:
 
     Als een nieuwe poging niet werkt, neem dan contact op met uw IT-beheerder voor hulp. Als u uw apparaat terugvindt en het wilt ontgrendelen nadat u eerder Extern vergrendelen hebt gebruikt, voer dan gewoon uw wachtwoordcode in.
 
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
 [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Het apparaat uitschrijven bij Intune | Microsoft Intune
+title: De registratie van uw apparaat bij Intune ongedaan maken | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -18,7 +18,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,9 +28,9 @@ ms.suite: ems
 
 # De registratie van het apparaat bij Intune ongedaan maken
 
-Wanneer u uw iOS-apparaat bij Intune uitschrijft, heeft uw apparaat geen toegang meer tot bedrijfsbronnen en wordt uw apparaat niet meer beheerd met Intune.
+Wanneer u de registratie van uw iOS-apparaat bij Intune ongedaan maakt, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
 
-Voer deze stappen uit of bekijk deze [video](http://aka.ms/kfz8j1) om uw apparaat uit te schrijven bij Intune:
+Voer deze stappen uit of bekijk deze [video](http://aka.ms/kfz8j1) om de registratie van uw apparaat bij Intune ongedaan te maken:
 
 1.  Selecteer in de bedrijfsportal-app onder **Mijn apparaten**het apparaat dat u wilt uitschrijven.
 
@@ -54,9 +54,11 @@ Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
 -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
 
-### Zie ook
+Als u hulp nodig hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+
+### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

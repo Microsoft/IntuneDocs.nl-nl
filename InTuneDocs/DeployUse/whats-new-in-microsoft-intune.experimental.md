@@ -27,15 +27,24 @@ ms.suite: ems
 ---
 
 # Wat is er nieuw in Microsoft Intune?
+## Juni 2016
+
+### Updates voor de bedrijfsportal
+
+#### iOS-bedrijfsportal-app
+
+- Eindgebruikers die LOB-apps installeren, hebben nu een verbeterde ervaring tijdens de installatie van deze apps. Als de app-installatie lang duurt, kunnen gebruikers hun apparaat handmatig synchroniseren om hervatting van het synchronisatieproces af te dwingen. Zie [Sync your iOS device manually](/Intune/EndUser/sync-your-device-manually-ios.md) (Uw iOS-apparaat handmatig synchroniseren) voor de instructies voor eindgebruikers.
+
+- De Microsoft Intune-bedrijfsportal-app voor iOS is bijgewerkt. Nu wordt iOS-versie 8.0 en hoger ondersteund. Deze update betekent dat eindgebruikers de bedrijfsportal-app kunnen installeren en alleen nieuwe apparaten kunnen registreren bij Intune als het apparaat iOS-versie 8.0 of hoger heeft. Gebruikers die werken met eerder ingeschreven apparaten met niet-ondersteunde versie van iOS kunnen de bedrijfsportal-app die op hun apparaat is geïnstalleerd blijven gebruiken.
 
 ## Mei 2016
 
 
-Met uitzondering van de TeamViewer-integratie worden al deze functies ook ondersteund voor hybride implementaties (Configuration Manager met Intune). Zie de pagina met [nieuwe hybridefuncties](https://technet.microsoft.com/en-us/library/mt718155.aspx) (Engelstalig) voor meer informatie over nieuwe hybridefuncties.
+Al deze functies worden ook ondersteund voor hybride implementaties (Configuration Manager met Intune). Zie de pagina met [nieuwe hybridefuncties](https://technet.microsoft.com/en-us/library/mt718155.aspx) (Engelstalig) voor meer informatie over nieuwe hybridefuncties.
 
 ### Documentatie
 
-Welkom bij de voorbeeldversie van [docs.microsoft.com](https://docs.microsoft.com/en-us/intune).
+Dit is de preview-versie van [docs.microsoft.com](https://docs.microsoft.com/en-us/intune).
 Dit is een volledig nieuw, modern inhoudsplatform dat is ontworpen om Intune gebruikersvriendelijker en eenvoudiger te maken.
 Zie [Kennismaking met docs.microsoft.com](https://docs.microsoft.com/teamblog/introducing-docs-microsoft-com/)
 
@@ -52,18 +61,15 @@ Lees [dit blogbericht](https://blogs.technet.microsoft.com/microsoftintune/2016/
 
 - **Nieuwe beschikbare apps voor beheer met MAM-beleid.** De Microsoft Word-, Excel- en PowerPoint-apps voor Android kunnen nu worden gekoppeld aan MAM-beleid op apparaten die niet zijn geregistreerd bij Intune. Ga voor de volledige lijst met ondersteunde apps naar de galerie met mobiele toepassingen van Microsoft Intune op de pagina [Microsoft Intune-toepassingen van partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-### Apparaatbeheer
 
-- **Externe hulpsessies voor Windows-pc's.** Dankzij de TeamViewer-integratie voor Windows-pc's die worden beheerd met de Intune-clientsoftware kunt u ter ondersteuning van uw helpdeskafdeling sessies voor hulp op afstand met Windows-pc's uitvoeren. Ondersteunde pc's zijn onder meer Windows 7, 8, 8.1 en Windows 10.
-Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient voor meer informatie](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#respond-to-a-remote-assistance-request).
 
-### Updates voor bedrijfsportal
+### Updates voor de bedrijfsportal
 
 #### Bedrijfsportal-app voor Android
 
 - **Pop-upmeldingen voor eindgebruikers**: eindgebruikers krijgen nu pop-upmeldingen uit de Android-bedrijfsportal te zien wanneer ze hun apparaten registreren bij of verwijderen uit de bedrijfsportal.
 
-- **Wijzigingen in de accounts van managers voor apparaatregistratie in de Android-bedrijfsportal-app.** Ter verbetering van de prestaties en schaalbaarheid worden er in het deelvenster Mijn apparaten van de Android-bedrijfsportal-app niet meer alle DEM-apparaten (Device Enrollment Managers; managers voor apparaatregistratie) door Intune weergegeven. Alleen het lokale apparaat waarop de app wordt uitgevoerd, wordt weergegeven en wel alleen als het apparaat is geregistreerd via de bedrijfsportal-app. De DEM-gebruiker kan acties op het lokale apparaat uitvoeren, maar extern beheer van andere geregistreerde apparaten kan alleen worden uitgevoerd vanuit de Intune-beheerconsole.
+- **Wijzigingen in de apparaatregistratiebeheeraccounts in de Android-bedrijfsportal-app.** Ter verbetering van de prestaties en schaalbaarheid worden er in het deelvenster Mijn apparaten van de Android-bedrijfsportal-app niet meer alle DEM-apparaten (Device Enrollment Manager; apparaatregistratiebeheer) door Intune weergegeven. Alleen het lokale apparaat waarop de app wordt uitgevoerd, wordt weergegeven en wel alleen als het apparaat is geregistreerd via de bedrijfsportal-app. De DEM-gebruiker kan acties op het lokale apparaat uitvoeren, maar extern beheer van andere geregistreerde apparaten kan alleen worden uitgevoerd vanuit de Intune-beheerconsole.
 -
 #### Bedrijfsportalwebsite
 
@@ -75,7 +81,7 @@ Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computercl
 - **Onboarding van de gebruikersinterface van Berichtencentrum**. Als onderdeel van de migratie van Intune in de [Office 365-beheerportal](https://portal.office.com/) benutten we het bijbehorende Berichtencentrum om nieuwe functies en andere meldingen te communiceren. U kunt ook de bijbehorende mobiele app voor Office 365-beheer installeren om meldingen te ontvangen op uw mobiele telefoon en eenvoudig berichten naar gebruikers of een distributiealias te sturen.
 We gebruiken het Berichtencentrum voor onze release in mei om u te laten weten wanneer er updates voltooid zijn. Ook brengen we u op de hoogte van nieuwe en verbeterde Intune-functies. Bekijk het Berichtencentrum meteen door u aan te melden bij de [Office 365-beheerportal](https://portal.office.com/) en de optie BERICHTENCENTRUM te kiezen in het navigatiepaneel aan de linkerkant.
 
-- **Wijzigingen in de accounts van managers voor apparaatregistratie**. Ter verbetering van de prestaties en schaalbaarheid worden er in het deelvenster **Mijn apparaten** van de iOS-bedrijfsportal-app niet meer **alle** DEM-apparaten (Device Enrollment Managers; managers voor apparaatregistratie) door Intune weergegeven. Alleen het lokale apparaat waarop de app wordt uitgevoerd, wordt weergegeven en wel alleen als het apparaat is geregistreerd via de bedrijfsportal-app. De DEM-gebruiker kan acties op het lokale apparaat uitvoeren, maar extern beheer van andere geregistreerde apparaten kan alleen worden uitgevoerd vanuit de Intune-beheerconsole. Daarnaast is het gebruik in Intune van DEM-accounts met het Apple Device Enrollment Program of het hulpprogramma Apple Configurator beëindigd. Deze twee registratiemethoden bieden al ondersteuning voor gebruikersloze registratie voor gedeelde iOS-apparaten. Gebruik alleen DEM-accounts wanneer gebruikersloze registratie voor gedeelde apparaten niet beschikbaar is.
+- **Wijzigingen in de apparaatregistratiebeheeraccounts**. Ter verbetering van de prestaties en schaalbaarheid worden er in het deelvenster **Mijn apparaten** van de iOS-bedrijfsportal-app niet meer **alle** DEM-apparaten (Device Enrollment Manager; apparaatregistratiebeheer) door Intune weergegeven. Alleen het lokale apparaat waarop de app wordt uitgevoerd, wordt weergegeven en wel alleen als het apparaat is geregistreerd via de bedrijfsportal-app. De DEM-gebruiker kan acties op het lokale apparaat uitvoeren, maar extern beheer van andere geregistreerde apparaten kan alleen worden uitgevoerd vanuit de Intune-beheerconsole. Daarnaast is het gebruik in Intune van DEM-accounts met het Apple Device Enrollment Program of het hulpprogramma Apple Configurator beëindigd. Deze twee registratiemethoden bieden al ondersteuning voor gebruikersloze registratie voor gedeelde iOS-apparaten. Gebruik alleen DEM-accounts wanneer gebruikersloze registratie voor gedeelde apparaten niet beschikbaar is.
 
 ### Cloudroadmap
 Blijf op de hoogte van toekomstige ontwikkelingen op het gebied van Intune met de [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
@@ -93,7 +99,7 @@ Met de Intune-meldingsregels wordt gedefinieerd wie een e-mailwaarschuwing ontva
 
     Als u nu een meldingsregel wilt targeten op een groep die u in de Microsoft Intune-beheerconsole hebt gemaakt, voert u de volgende stappen uit:
 
-    Klik in de werkruimte **Beheerder** op **Meldingsregels** > **Nieuwe regel maken**.
+    Klik in de werkruimte **Beheerder** op **Meldingsregels** > **Nieuwe regel maken**
 
     In stap 2 van de wizard Meldingsregel maken selecteert u de apparaatgroepen waarop de regel betrekking heeft. De stap voor het selecteren van apparaatgroepen wordt uit de Intune-console verwijderd.
 
@@ -120,11 +126,11 @@ Raadpleeg het artikel over [Vorige versies van Intune](previous-intune-releases.
 
 
 
-### Zie ook
+### Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

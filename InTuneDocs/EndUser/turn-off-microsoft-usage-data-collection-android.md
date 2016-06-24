@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gegevensverzameling door Microsoft uitschakelen | Microsoft Intune
+title: Verzameling van Microsoft-gebruiksgegevens uitschakelen | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -18,7 +18,7 @@ ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,6 +32,6 @@ Microsoft verzamelt automatisch anonieme gegevens over de betrouwbaarheid, de pr
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

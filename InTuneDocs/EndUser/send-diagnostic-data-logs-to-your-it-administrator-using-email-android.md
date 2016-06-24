@@ -18,7 +18,7 @@ ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,26 +34,26 @@ Ga als volgt te werk om uitgebreide logboekregistratie in te schakelen:
 
 1.  Open de app Bedrijfsportal.
 
-2.  Tik op **Menu** &gt;  **Instellingen**..
+2.  Tik op **Menu** &gt; **Instellingen**.
 
     > [!NOTE] 
     > De knop **Menu** kan een softwareknop of een hardwareknop zijn, afhankelijk van het type Android-apparaat dat u gebruikt.
 
-3.  Tik bij **Diagnostische gegevens** op **Gegevens verzenden**..
+3.  Tik bij **Diagnostische gegevens** op **Gegevens verzenden**.
 
     > [!NOTE]
-    > **Alleen als u apparaten met Android 6.0 of hoger gebruikt:** Wanneer u op **Gegevens verzenden** tikt, wordt het bericht **De bedrijfsportal toegang verlenen tot foto's, media en bestanden op uw apparaat?** weergegeven.. 
+    > **Alleen als u apparaten met Android 6.0 of hoger gebruikt:** wanneer u op **Gegevens verzenden** tikt, wordt het bericht **De bedrijfsportal toegang verlenen tot foto's, media en bestanden op uw apparaat?** weergegeven. 
 
     Dit bericht is misleidend, omdat **Microsoft nooit toegang heeft tot de foto's, media of bestanden op uw apparaat.** Google beheert de tekst van het bericht en de tekst kan niet worden gewijzigd door Microsoft.  Wanneer u toegang verleent, staat u alleen toe dat er met het apparaat gegevenslogboeken kunnen worden geschreven naar de SD-kaart van het apparaat zodat u deze logboeken via een USB-kabel kunt verplaatsen.
 
-    Als u de toegang weigert, wordt het bericht de volgende keer dat u op **Gegevens verzenden** tikt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken.  Als u later alsnog besluit om toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Opslag** en schakelt u de machtiging in.
+    Als u de toegang weigert, wordt het bericht de volgende keer dat u op **Gegevens verzenden** tikt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken.  Als gebruikers later besluiten toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Opslag** en schakelt u de machtiging in.
 
 4.  Volg de aanwijzingen voor het kiezen van een e-mail-app waarmee u de logboeken naar de IT-beheerder wilt verzenden. De app maakt een vooraf geadresseerd e-mailbericht waaraan alle logboeken als bijlage zijn toegevoegd.
 
 
 ### Zie tevens
-[Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
