@@ -1813,8 +1813,8 @@
 * Archive Datetime: 2016-06-16 13:17:27
 * Handback File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9bdce32f592af82573179a840136724ee459af66/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.nl-nl.xlf)
 * Handback Datetime: 2016-06-25 06:48:10
-* Bilingual File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/60a13621987b8790ed7c86111e1876d5688204bd/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.nl-nl.xlf)
-* Bilingual Datetime: 2016-06-22 17:15:27
+* Bilingual File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9bdce32f592af82573179a840136724ee459af66/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.nl-nl.xlf)
+* Bilingual Datetime: 2016-06-25 06:51:38
 * [Back to Top](#report-top)
 
 ##### <a name='2d2cbe580349e1615371a6a76e78140f6577e89097'></a> Source: [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/872bb0c20db2ef8d661d321598a2b1fe61d69316/Azure-RMSDocs/develop/understanding-usage-restrictions.md)
@@ -2064,8 +2064,8 @@
 * Archive Datetime: 2016-06-16 13:17:27
 * Handback File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9bdce32f592af82573179a840136724ee459af66/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
 * Handback Datetime: 2016-06-25 06:48:10
-* Bilingual File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/60a13621987b8790ed7c86111e1876d5688204bd/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
-* Bilingual Datetime: 2016-06-22 17:15:27
+* Bilingual File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9bdce32f592af82573179a840136724ee459af66/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
+* Bilingual Datetime: 2016-06-25 06:51:38
 * [Back to Top](#report-top)
 
 ##### <a name='b6f3b06485dda81be2a36035fea7477f4061a8e9114'></a> Source: [Azure-RMSDocs\get-started\scenario-company-confidential-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-company-confidential-email.md)
