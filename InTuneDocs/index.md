@@ -2,8 +2,8 @@
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
 
-title: Documentatie voor Microsoft Intune
-description: Technische documentatie voor Microsoft Intune: beheer van mobiele apparaten en toepassingen
+title: "Documentatie voor Microsoft Intune"
+description: "Technische documentatie voor Microsoft Intune: beheer van mobiele apparaten en toepassingen"
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
 author: jeffgilb
 manager: jeffgilb
