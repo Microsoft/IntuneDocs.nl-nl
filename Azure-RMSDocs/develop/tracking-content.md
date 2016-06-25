@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instructies: documenttracking en intrekking van documenten inschakelen | Azure RMS
+title: "Instructies: documenttracking en intrekking van documenten inschakelen | Azure RMS"
 description: Algemene richtlijnen voor de implementatie van het bijhouden van documenten
 keywords:
 author: bruceperlerms

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Azure RMS-vereisten: cloudabonnementen | Azure RMS
+title: "Azure RMS-vereisten: cloudabonnementen | Azure RMS"
 description:
 keywords:
 author: cabailey
