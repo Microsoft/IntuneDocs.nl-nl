@@ -56,6 +56,9 @@
   "222b9aac19993f184ff68800a00f8d9df8b36237": [
     "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
   ],
+  "d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18": [
+    "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
+  ],
   "f6b3a573cd8c2ed4aa97d09aa284e4d7f2c8ba60": [
     "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
   ],
@@ -814,6 +817,9 @@
   "ed14e92d48a2604d16ceee8b844ae5cc0c45f051": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-company-resource-access-problems-with-microsoft-intune.md"
   ],
+  "28e179e56c236e44f262c7fbda3e24cf69df6ca3": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
+  ],
   "ae2b35321b0664c5b54708d7389e9eb0262bb2d6": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
   ],
@@ -1261,6 +1267,9 @@
   "89e8e82a3a61e4cb40c1e1f9bfccd4d79a624fa1": [
     "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure.md"
   ],
+  "8343abe8861468bbba27272aa1f3569390cb826b": [
+    "InTuneDocs\\DeployUse\\Configure-Intune-certificate-profiles.md"
+  ],
   "1d13dac07be4defa1fe3382e1c893ba80b97b5ba": [
     "InTuneDocs\\DeployUse\\Configure-Intune-certificate-profiles.md"
   ],
@@ -1275,6 +1284,9 @@
   ],
   "b174a86335a250c53f6015cb40a980cc86ffa61a": [
     "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
+  ],
+  "91d80e0bae12b4c912b61f675e20caa49fa9206d": [
+    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
   ],
   "0509e1597a57658dbefc7c033ef5c5c936fdc036": [
     "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
