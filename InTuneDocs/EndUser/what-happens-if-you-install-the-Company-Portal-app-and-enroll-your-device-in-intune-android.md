@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune? | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
+
 
 ---
 
@@ -38,7 +31,7 @@ Wanneer u de bedrijfsportal-app installeert en uw Android-apparaat bij Intune re
 
 -   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
 
-Wanneer u een Android-apparaat toevoegt, geeft u de IT-beheerder toestemming om toegang tot het apparaat te zoeken. De beheerder kan het volgende doen:
+Wanneer u uw Android-apparaat registreert, geeft u de IT-beheerder toestemming voor toegang tot het apparaat. De beheerder kan het volgende doen:
 
 -   Het apparaat opnieuw instellen naar de standaardinstellingen van de fabrikant. Dit is handig als u het apparaat verliest of als dit wordt gestolen.
 
@@ -60,11 +53,12 @@ Wanneer u een Android-apparaat toevoegt, geeft u de IT-beheerder toestemming om 
 
     -   Eventuele inventarisupdates van de bedrijfs-app worden verzonden (deze updates bevatten geen persoonlijke informatie).
 
-Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

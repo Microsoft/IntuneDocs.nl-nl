@@ -1,34 +1,27 @@
 ---
-# required metadata
-
 title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
 
 # Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail
 
-Als er op uw Android-apparaat een fout optreedt terwijl u met apps van uw school of bedrijf werkt of de bedrijfsportal-app gebruikt, kunt u logboeken met diagnostische gegevens verzenden, zodat de IT-beheerder kan nagaan wat het probleem is en dit kan oplossen. Als u wilt dat alle gegevens in de logboeken worden vermeld zodat het voor de IT-beheerder eenvoudiger is om het probleem te achterhalen, schakelt u Uitgebreide logboekregistratie in.
+Als er op uw Android-apparaat een fout optreedt terwijl u met apps van uw school of bedrijf werkt of de bedrijfsportal-app gebruikt, kunt u logboeken met diagnostische gegevens verzenden, zodat de IT-beheerder kan nagaan wat het probleem is en dit kan oplossen. Als u wilt dat alle gegevens in de logboeken worden vermeld zodat het voor de IT-beheerder eenvoudiger is om het probleem te achterhalen, schakelt u Uitgebreide logboekregistratie in. Meer informatie over [uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Ga als volgt te werk om uitgebreide logboekregistratie in te schakelen:
 
@@ -54,6 +47,7 @@ Ga als volgt te werk om uitgebreide logboekregistratie in te schakelen:
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

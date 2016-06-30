@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Uw verloren of gestolen apparaat opnieuw instellen (wissen) | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+
 
 ---
 
@@ -32,21 +25,22 @@ Als u uw Android-telefoon kwijt bent of als uw telefoon gestolen is, kunt u vanu
 
 Zie [Wat gebeurt er als u uw apparaat opnieuw instelt via de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) voor meer informatie over wat er gebeurt als u uw apparaat opnieuw instelt.
 
-> [!WARNING] Het instellen van een apparaat op de standaardwaarden betekent dat zowel uw privégegevens als uw werkgegevens ervan worden verwijderd.
+> [!WARNING] Wanneer het apparaat wordt teruggezet op de standaardfabrieksinstellingen, worden uw persoonlijke gegevens en uw werk- of schoolgegevens verwijderd.
 
-1.  Open in uw browser de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) en meld u aan bij uw werkaccount.
+1.  Open in uw browser de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) en meld u aan bij uw werk- of schoolaccount.
 
 2.  Tik op **Mijn apparaten** en selecteer de naam van het apparaat dat is zoekgeraakt of gestolen.
 
 3.  Klik op **Opnieuw instellen** &gt; **Opnieuw instellen**.
 
-Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-beheerder om dit voor u te doen. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-beheerder om dit voor u te doen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

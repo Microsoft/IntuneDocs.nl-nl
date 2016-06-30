@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Beheerde apps op uw apparaat gebruiken | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: maxles
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
+
 
 ---
 
@@ -66,22 +59,23 @@ Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beh
 
 Een aantal veelgebruikte apps die mogelijk door uw IT-afdeling worden beheerd:
 
--   Managed Browser
+-   Intune Managed Browser
 
--   Beheerde afbeeldingsviewer
+-   Intune-afbeeldingsviewer
 
--   Beheerde PDF-viewer
+-   Intune PDF-viewer
 
--   Beheerde AV-speler
+-   Intune AV-speler
 
 -   Microsoft Word, Excel, PowerPoint
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune? | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01
+
 
 ---
 
@@ -125,12 +118,13 @@ Wanneer u een computer toevoegt:
 
 -   De IT-beheerder kan beleidsregels op de computer afdwingen. Zo kunt u verplicht worden om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of alle gegevens van de harde schijf van de computer kunnen worden verwijderd als u te veel keren een onjuist wachtwoord hebt ingevoerd.
 
-Als u vragen hebt en u de contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 
