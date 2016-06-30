@@ -724,9 +724,6 @@
   "dec809a4e6430f212aa2680bd24cda1d5b831d0f": [
     "InTuneDocs\\EndUser\\media\\andr-2-tap-trashcan.png"
   ],
-  "c29f90ceec989702b0b2c12f271964aae1d725a0": [
-    "InTuneDocs\\EndUser\\media\\andr-2-tap-trashcan.png"
-  ],
   "d0456ebe7602cfda05694ea1354e07bd59789ab3": [
     "InTuneDocs\\EndUser\\media\\andr-3-warning-about-remove.png"
   ],
@@ -1012,9 +1009,6 @@
   "82372661288da89bb59e04aa02fec9bf08b59ea6": [
     "InTuneDocs\\media\\Intune-MDM-Authority.png"
   ],
-  "fd228641a36b69f77af54b978b5a70379e20f636": [
-    "InTuneDocs\\media\\Intune-MDM-Authority.png"
-  ],
   "64f06d45481657e65ee924d286623dc83a514f40": [
     "InTuneDocs\\media\\30-day-trial-walkthrus\\30day-cfg-pol-11-start-mg-mobl-dev.png"
   ],
@@ -1223,9 +1217,6 @@
     "InTuneDocs\\media\\AppManagement\\iOS_O365SignInPage.png"
   ],
   "6ee35bab5017002badebbfb40606a0fa1ec6c9d7": [
-    "InTuneDocs\\media\\AppManagement\\iOS_OneDriveLaunch.png"
-  ],
-  "73754841fae791215435e0c0ca811c65914e2770": [
     "InTuneDocs\\media\\AppManagement\\iOS_OneDriveLaunch.png"
   ],
   "768aa0fa33b97d1bd179f1caeb4762b5e50bfa17": [
@@ -2175,9 +2166,6 @@
     "InTuneDocs\\DeployUse\\manage-data-transfer-between-ios-apps-with-microsoft-intune.md"
   ],
   "17c994b410342e96f734afe63b28392a7fe7ed28": [
-    "InTuneDocs\\media\\mam-azure-portal-app-reporting-by-user.png"
-  ],
-  "adc15aa0f53c35d42cf97f95d8b2fb9ed345348c": [
     "InTuneDocs\\media\\mam-azure-portal-app-reporting-by-user.png"
   ],
   "69f39c0fa233ffb62173bd3c434b7ac1b0f949d6": [
