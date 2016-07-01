@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Windows 10-beleidsinstellingen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b41c9f0d7c449d83f8359aaea21b880b557a55de
+ms.openlocfilehash: 0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9
+
 
 ---
 
@@ -29,9 +22,9 @@ ms.suite: ems
 
 Gebruik de beleidsinstellingen in dit onderwerp als u instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 
-## Algemene instellingen voor configuratiebeleid
+## Instellingen voor algemeen configuratiebeleid
 
-Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om algemene instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten:
+Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om algemene instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. Dit beleid kan niet worden gebruikt wanneer u Windows 10-computers met de Intune-clientsoftware beheert.
 
 
 ### Wachtwoord
@@ -332,6 +325,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

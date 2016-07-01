@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Problemen bij de apparaatregistratie oplossen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 502fb25c0dc050fb3f08fbba4d02148add3faf8e
+ms.openlocfilehash: ae2b35321b0664c5b54708d7389e9eb0262bb2d6
+
 
 ---
 
@@ -144,29 +137,6 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 **Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren.  Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
-### De computer is al geregistreerd: fout hr 0x8007064c
-**Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
-  
-Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde installatiekopie bevat van een computer die is geregistreerd. Het accountcertificaat van het vorige account staat nog op de computer.
-
-
-
-**Oplossing:** 
-
-1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**. 
-1. **Bestand** -> **Modules toevoegen of verwijderen**.
-1. Dubbelklik op **Certificaten**, kies **Computeraccount**, **Volgende** en selecteer **Lokale computer**.
-1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**. 
-1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is
-1. Verwijder de volgende registersleutel als deze bestaat en alle subsleutels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Probeer opnieuw te registreren. 
-1. Als de computer nog steeds niet kan worden geregistreerd, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Probeer opnieuw te registreren. 
-
-    > [!IMPORTANT]
-    > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
-    > Lees [Een back-up maken van het register en het herstellen in Windows](https://support.microsoft.com/en-us/kb/322756) voor meer informatie over het maken en terugzetten een back-up van het register
-
 
 ## Problemen met Android
 ### De profielinstallatie is mislukt
@@ -249,6 +219,31 @@ Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde i
 ### iOS-registratiefouten
 In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) een andere lijst met andere iOS-registratiefouten.
 
+## Pc-problemen
+
+### De computer is al geregistreerd: fout hr 0x8007064c
+**Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
+  
+Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde installatiekopie bevat van een computer die is geregistreerd. Het accountcertificaat van het vorige account staat nog op de computer.
+
+
+
+**Oplossing:** 
+
+1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**. 
+1. **Bestand** -> **Modules toevoegen of verwijderen**.
+1. Dubbelklik op **Certificaten**, kies **Computeraccount**, **Volgende** en selecteer **Lokale computer**.
+1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**. 
+1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is
+1. Verwijder de volgende registersleutel als deze bestaat en alle subsleutels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
+1. Probeer opnieuw te registreren. 
+1. Als de computer nog steeds niet kan worden geregistreerd, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Probeer opnieuw te registreren. 
+
+    > [!IMPORTANT]
+    > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
+    > Lees [Een back-up maken van het register en het herstellen in Windows](https://support.microsoft.com/en-us/kb/322756) voor meer informatie over het maken en terugzetten een back-up van het register
+
 ## Codes voor algemene registratiefouten
 
 |Foutcode|Mogelijk probleem|Voorgestelde oplossing|
@@ -276,6 +271,7 @@ In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weerg
 
 ### Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
+
 
 
 <!--HONumber=Jun16_HO2-->

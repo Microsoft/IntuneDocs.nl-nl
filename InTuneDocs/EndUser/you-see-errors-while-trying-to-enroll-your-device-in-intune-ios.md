@@ -1,38 +1,32 @@
 ---
-# required metadata
-
 title: Er worden fouten weergegeven tijdens het registreren van het iOS-apparaat in Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
-
-# optional metadata
-
 ROBOTS: noindex
-#audience:
-#ms.devlang:
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
+ms.openlocfilehash: 21305aa10caecdcc6f2d22f305d47f74a5b3f3ba
+
 
 ---
 
 
 # Er worden fouten weergegeven tijdens het registreren van het iOS-apparaat in Intune
 
-In de volgende tabel staan fouten die u mogelijk tijdens het registreren van een iOS-apparaat in Intune ziet. Deel deze koppeling met uw IT-beheerder. Als u geen contactgegevens van uw IT-beheerder niet kunt vinden, controleert u of deze beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+In de volgende tabel staan fouten die u mogelijk tijdens het registreren van een iOS-apparaat in Intune ziet. Deel deze koppeling met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 |Foutbericht|Probleem|Wat u uw IT-beheerder kunt vertellen|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|DeviceCapReached|U hebt al te veel mobiele apparaten geregistreerd.|De gebruiker moet een van zijn momenteel geregistreerd mobiele apparaten verwijderen uit de bedrijfsportal voordat hij een ander mobiel apparaat kan registreren.|
+|DeviceCapReached|U hebt al te veel mobiele apparaten geregistreerd.|De gebruiker moet een van zijn momenteel geregistreerd mobiele apparaten verwijderen uit de bedrijfsportal voordat hij een ander mobiel apparaat kan registreren. Zie de instructies voor het type apparaat dat u gebruikt: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios), [Windows](unenroll-your-device-from-intune-windows).|
 |APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />Neem contact op met uw IT-beheerders en vertel dat u het bericht **APNSCertificateNotValid** hebt ontvangen toen u probeerde uw mobiele apparaat te registreren. Laat ook de oplossing in deze tabel zien.|De Apple Push Notification Service (APNS) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNS-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNS-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) en [Gebruikers en apparaten organiseren](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />Neem contact op met uw IT-beheerders en vertel dat u het bericht **APNSNotOnboarded** hebt ontvangen toen u probeerde uw mobiele apparaat te registreren. Laat ook de oplossing in deze tabel zien.|De Apple Push Notification Service (APNS) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNS-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNS-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deployuse/set-up-ios-and-mac-management-with-microsoft-intune) voor meer informatie.|
 |DeviceTypeNotSupported|Mogelijk hebt u geprobeerd een ander apparaat dan een iOS-apparaat te registreren. Het type mobiele apparaat dat u probeert te registreren, wordt niet ondersteund.<br /><br />Controleer of iOS-versie 7.1 of hoger op uw apparaat wordt uitgevoerd.<br /><br />Neem contact op met uw IT-beheerders en vertel dat u het bericht **DeviceTypeNotSupported** hebt ontvangen toen u probeerde uw mobiele apparaat te registreren. Laat ook de oplossing in deze tabel zien.|Controleer of iOS-versie 7.1 of hoger op het apparaat van de gebruiker wordt uitgevoerd.|
@@ -42,6 +36,7 @@ In de volgende tabel staan fouten die u mogelijk tijdens het registreren van een
 ### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 
