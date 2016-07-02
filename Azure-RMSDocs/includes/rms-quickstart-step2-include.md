@@ -27,6 +27,6 @@ U bent nu klaar om te beginnen met het beveiligen van bestanden die informatie b
 |Voor inzicht in het verschil tussen systeemeigen beveiliging en algemene beveiliging   →|[Wat is het verschil tussen algemene beveiliging en ingebouwde (systeemeigen) beveiliging?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

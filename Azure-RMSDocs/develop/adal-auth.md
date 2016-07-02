@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Azure RMS configureren voor ADAL-verificatie | Azure RMS
 description: Bevat de stappen voor het configureren van Azure ADAL-verificatie
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
+
 
 ---
 
@@ -36,7 +31,8 @@ U hebt het volgende nodig:
 - Een [abonnement voor Microsoft Azure](https://azure.microsoft.com/en-us/) (een gratis proefversie is voldoende). Zie [How users sing up for RMS for individuals](../understand-explore/rms-for-individuals-user-sign-up.md) voor meer informatie
 - Een abonnement voor Microsoft Azure Rights Management (een gratis account voor [RMS voor personen](https://technet.microsoft.com/en-us/library/dn592127.aspx) is voldoende).
 
-> [!NOTE] Vraag uw IT-beheerder of u beschikt over een abonnement voor Microsoft Azure Rights Management en laat uw IT-beheerder de volgende stappen uitvoeren. Als uw organisatie geen abonnement heeft, vraagt u uw IT-beheerder om er een te maken. Daarnaast moet uw IT-beheerder moet zich abonneren op een *werk- of schoolaccount*, in plaats van een *Microsoft-account* (bijvoorbeeld Hotmail).
+> [!NOTE] 
+> Vraag uw IT-beheerder of u beschikt over een abonnement voor Microsoft Azure Rights Management en laat uw IT-beheerder de volgende stappen uitvoeren. Als uw organisatie geen abonnement heeft, vraagt u uw IT-beheerder om er een te maken. Daarnaast moet uw IT-beheerder moet zich abonneren op een *werk- of schoolaccount*, in plaats van een *Microsoft-account* (bijvoorbeeld Hotmail).
 
 Na het aanmelden voor Microsoft Azure:
 
@@ -81,11 +77,13 @@ Na het aanmelden voor Microsoft Azure:
 
 ![Kies CONFIGUREREN](../media/ConfigYourApp.png)
 
->[!NOTE] Kopieer de **CLIENT-ID** en **OMLEIDINGS-URI** en sla deze op voor toekomstig gebruik tijdens het configureren van de RMS-client.
+>[!NOTE] 
+> Kopieer de **CLIENT-ID** en **OMLEIDINGS-URI** en sla deze op voor toekomstig gebruik tijdens het configureren van de RMS-client.
 
 - Blader naar beneden in uw toepassing-instellingen en kies de knop **Toepassing toevoegen** onder **Machtigingen voor andere toepassingen**.
 
->[!NOTE] De **overgedragen machtigingen** die zichtbaar zijn voor Windows Azure Active Directory zijn standaard correct: slechts één optie moet geselecteerd zijn en deze optie is **Aanmelden en gebruikersprofiel lezen**.
+>[!NOTE] 
+> De **overgedragen machtigingen** die zichtbaar zijn voor Windows Azure Active Directory zijn standaard correct: slechts één optie moet geselecteerd zijn en deze optie is **Aanmelden en gebruikersprofiel lezen**.
 
 ![Toepassing toevoegen selecteren](../media/PermissionsToOtherBtn.png)
 
@@ -110,6 +108,7 @@ Na het aanmelden voor Microsoft Azure:
 ![OPSLAAN selecteren](../media/SaveApplication.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
