@@ -11,9 +11,9 @@
 ## [Terminologie](terminology.md)
 ## [Zelfstudie voor snel starten](quick-start-tutorial.md)
 ### [Stap 1: Azure RMS activeren](tutorial-step1.md)
-### [Stap 2: RMS-app voor delen installeren](tutorial-step2.md)
-### [Stap 3: Het vertrouwelijke document via e-mail verzenden](tutorial-step3.md)
-### [Stap 4: De ontvanger leest het document](tutorial-step4.md)
+### [Stap 2: installeer de RMS-app voor delen](tutorial-step2.md)
+### [Stap 3: e-mail het vertrouwelijke document](tutorial-step3.md)
+### [Stap 4: de ontvanger leest het document](tutorial-step4.md)
 ### [Stap 5: Uw document traceren](tutorial-step5.md)
 ## [Snelle implementatiehandleiding](rapid-deployment-guide.md)
 ### [Een Office-bestand delen met gebruikers in een andere organisatie](scenario-share-office-file-externally.md)
@@ -29,6 +29,6 @@
 # [Apps ontwikkelen en aanpassen](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 

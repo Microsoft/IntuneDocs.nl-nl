@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Richtlijnen en informatie voor ontwikkelaars | Azure RMS
 description: Dit onderwerp bevat informatie over specifieke hulp voor verschillende belangrijke ontwikkelscenario's.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 91d16ec6e9f9bb359a76562dee7fcb81aac2b44d
+ms.openlocfilehash: 2f2323f32327324611df2b2e8a8824e6896546aa
+
 
 ---
 
@@ -51,6 +47,7 @@ Deze sectie bevat informatie over specifieke richtlijnen voor verschillende bela
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

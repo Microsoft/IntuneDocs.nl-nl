@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: IPCHelloWorld - een voorbeeldtoepassing | Azure RMS
 description: Dit onderwerp bevat instructies voor het maken van een voorbeeldtoepassing met rechten.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
+ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+
 
 ---
 ** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
@@ -222,6 +218,7 @@ U moet alle toegewezen resources vrijgeven om het proces te voltooien.
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

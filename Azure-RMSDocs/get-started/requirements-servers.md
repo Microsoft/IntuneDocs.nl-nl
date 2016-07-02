@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Azure RMS-vereisten&#58; lokale servers die Azure Rights Management ondersteunen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 
 *Van toepassing op: Azure Rights Management, Office 365*
 
-De volgende lokale serverproducten worden ondersteund door Azure RMS wanneer u de Azure RMS-connector gebruikt die als communicatie-interface (relais) fungeert tussen de lokale servers en Azure RM. Daarnaast vereist deze configuratie dat u mapsynchronisatie configureert tussen uw Active Directory-forests en Azure Active Directory.
+De volgende lokale serverproducten worden ondersteund door Azure RMS wanneer u de Azure RMS-connector gebruikt die als communicatie-interface (relais) fungeert tussen de lokale servers en Azure RM. Daarnaast vereist deze configuratie dat u adreslijstsynchronisatie configureert tussen uw Active Directory-forests en Azure Active Directory.
 
 -   **Exchange Server**:
 
@@ -48,7 +42,7 @@ De volgende lokale serverproducten worden ondersteund door Azure RMS wanneer u d
 
     -   Office SharePoint Server 2010
 
--   **Bestandsservers met Windows Server en File Classification Infrastructur (FCI)**:
+-   **Bestandsservers met Windows Server en File Classification Infrastructure (FCI)**:
 
     -   Windows Server 2012 R2
 
@@ -67,6 +61,7 @@ Zie [De Azure Rights Management-connector implementeren](../deploy-use/deploy-rm
 Zie [Vereisten voor Azure Rights Management](requirements-azure-rms.md) voor informatie over andere vereisten.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

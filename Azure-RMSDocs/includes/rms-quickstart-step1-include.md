@@ -55,6 +55,6 @@ Mogelijk wilt u voor een productie-implementatie ook aangepaste sjablonen config
 |Informatie over de standaardsjablonen en het maken van nieuwe, aangepaste sjablonen   →|[Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
