@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Registerinstellingen voor de RMS-connector | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
+
 
 ---
 
@@ -37,7 +31,7 @@ Instructies voor het gebruik van deze instellingen:
 
 -   *MicrosoftRMSURL* is de Microsoft RMS-service-URL van uw organisatie. Deze waarde zoeken:
 
-    1.  Voer de cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) voor Azure RMS uit. Zie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md) als u de Windows PowerShell-module voor Azure RMS nog niet hebt geïnstalleerd..
+    1.  Voer de cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) voor Azure RMS uit. Zie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md) als u de Windows PowerShell-module voor Azure RMS nog niet hebt geïnstalleerd.
 
     2.  Identificeer op grond van de uitvoer de waarde van **LicensingIntranetDistributionPointUrl**.
 
@@ -222,6 +216,7 @@ Instructies voor het gebruik van deze instellingen:
 
 Terug naar [De Azure Rights Management-connector implementeren](deploy-rms-connector.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

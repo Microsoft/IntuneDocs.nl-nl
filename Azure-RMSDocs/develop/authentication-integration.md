@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Uw app registreren en RMS inschakelen met Azure AD | Azure RMS
 description: Beschrijft de beginselen van gebruikersverificatie voor uw app met RMS-functionaliteit.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/15/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+
 
 ---
 
@@ -53,7 +49,8 @@ De volgende bronnen bevatten richtlijnen voor het instellen van uw omgeving en h
 -   [Windows Azure Active Directory Authentication Library (ADAL) voor dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   Voor de Linux SDK wordt de ADAL-bibliotheek geleverd met de SDK-bron via [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
->[!NOTE]  U kunt het beste een van de bovengenoemde ADAL-versies gebruiken, maar het is ook mogelijk om andere verificatiebibliotheken te gebruiken.
+>[!NOTE]  
+> U kunt het beste een van de bovengenoemde ADAL-versies gebruiken, maar het is ook mogelijk om andere verificatiebibliotheken te gebruiken.
 
 ### Verificatieparameters
 
@@ -66,13 +63,15 @@ ADAL vereist verschillende gegevens om een gebruiker te verifiëren voor Azure R
 en is afkomstig uit de vorige registratiestap op Azure Portal.
 - **Omleidings-Uri**: voorziet de verificatiebibliotheek van een URI-doel voor de verificatiecode. Voor iOS en Android zijn specifieke indelingen vereist. Deze worden beschreven in de LEESMIJ-bestanden van de overeenkomende GitHub-opslagplaatsen van ADAL. Deze waarde is afkomstig uit de vorige registratiestap op Azure Portal.
 
->[!NOTE] **Bereik** wordt momenteel niet gebruikt, maar mogelijk later wel en is daarom gereserveerd voor toekomstig gebruik.
+>[!NOTE] 
+> **Bereik** wordt momenteel niet gebruikt, maar mogelijk later wel en is daarom gereserveerd voor toekomstig gebruik.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] Als uw app niet aan deze richtlijnen voldoet, mislukken Azure RMS- en Azure AD-werkstromen waarschijnlijk en worden ze niet ondersteund door Microsoft.com. Bovendien wordt de Rights Management License Agreement (RMLA) mogelijk overtreden als er in een productie-app een ongeldige client-id wordt gebruikt.
+>[!NOTE] 
+> Als uw app niet aan deze richtlijnen voldoet, mislukken Azure RMS- en Azure AD-werkstromen waarschijnlijk en worden ze niet ondersteund door Microsoft.com. Bovendien wordt de Rights Management License Agreement (RMLA) mogelijk overtreden als er in een productie-app een ongeldige client-id wordt gebruikt.
 
 ### Hoe moet de implementatie van een verificatiecallback eruitzien?
 **Voorbeelden van verificatiecode**: deze SDK bevat voorbeeldcode die het gebruik van verificatiecallbacks laat zien. Voor uw gemak worden deze codevoorbeelden hier weergegeven, evenals in elk van de volgende gekoppelde onderwerpen.
@@ -271,6 +270,7 @@ en is afkomstig uit de vorige registratiestap op Azure Portal.
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
