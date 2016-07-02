@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "3de05f5783e864e7700c154d6deb062f24322320",
-  "LastTranslatedCommit": "90b11cf590c6a1bf97664628dab8af023fcd1853",
+  "LastTranslatedCommit": "f2e5668da6bbd446c8c220ef9e81b47a2079eab1",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -73574,7 +73574,7 @@
       "TargetFilePath": "Azure-RMSDocs\\get-started\\scenario-fci.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf",
       "HandbackFileCommit": "98d5afd51e8bdb8866e331afd6f8e35af514c5fc",
-      "HandbackDateTime": "2016-07-02T12:24:35.9739616Z",
+      "HandbackDateTime": "2016-07-02T14:23:57.7144566Z",
       "HandbackException": {
         "internal_error_code": "handback_transform_failed",
         "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\06462f\\ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf failed.",
@@ -73584,7 +73584,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406",
         "extended_information": null
       },
-      "HandbackFailureTimes": 5,
+      "HandbackFailureTimes": 1,
       "UpdatedDateTime": "2016-06-22T12:19:58.3501048Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\archive\\scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf",
       "ArchiveFileCommit": "ca7017c09c65624791453b70f590eaa2eb5234a1",
