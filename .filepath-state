@@ -209,9 +209,6 @@
   "34a82f31b5da46a59627ff559deb46c8445fcdf2": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
-  "b6e30ce14c5eb5f387a65d7f78fbb1c3abcabd1a": [
-    "Azure-RMSDocs\\develop\\authentication-integration.md"
-  ],
   "4a5c1a0b420b9db20cca237e2170b6479c565ee6": [
     "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md"
   ],
@@ -810,9 +807,6 @@
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ],
   "f995da0698ec5fb4a8e46865b70506ced92f73db": [
-    "Azure-RMSDocs\\develop\\developing-your-application.md"
-  ],
-  "db38a01984b5a59d5ac50db1f3c198b99d45cac9": [
     "Azure-RMSDocs\\develop\\developing-your-application.md"
   ],
   "9200ea44671776ced8781c1e13e71871f5bdf014": [
