@@ -19,7 +19,7 @@ Deze stap is optioneel, maar de meeste mensen willen graag weten of de bijlage d
 
 3.  Op de pagina **Gedeelde documenten** ziet u het document dat u hebt gekoppeld aan de e-mail, **Confidential.docx**. Op dit moment is dit het enige bestand dat wordt weergegeven, maar naarmate u meer beveiligde documenten gaat delen, zal de lijst groeien.
 
-    Op deze pagina ziet u wanneer u het document hebt gedeeld (wanneer u het e-mailbericht met de beveiligde bijlage hebt verzonden), de datum van de laatste activiteit en de naam van de ontvanger aan wie u het e-mailbericht hebt verzonden. Klik op de naam van het document voor meer informatie.
+    Op deze pagina ziet u wanneer u het document hebt gedeeld (wanneer u het e-mailbericht met de beveiligde bijlage hebt verzonden), de datum van de laatste activiteit en de naam van de ontvanger aan wie u het e-mailbericht hebt verzonden. Klik op de naam van het document om meer informatie weer te geven.
 
 4.  Op de nieuwe pagina (met de naam van het bestand waarop u hebt geklikt) ziet u overzichtsgegevens voor alleen dat document en een lijst met andere opties die beschikbaar zijn voor het document (**Lijst**, **Tijdlijn**, **Toewijzen**, **Instellingen**).
 
@@ -40,6 +40,6 @@ Als u er klaar voor bent om Azure RMS te implementeren, gebruikt u het [Azure Ri
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
