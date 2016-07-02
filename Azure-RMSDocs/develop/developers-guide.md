@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Handleiding voor ontwikkelaars | Azure RMS
 description: Overzicht van hulpprogramma's voor ontwikkelaars; SDK's, aanvullende bibliotheken en codevoorbeelden.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+
 
 ---
 
@@ -35,9 +30,9 @@ Er zijn nu drie generaties van de RMS SDK beschikbaar, zoals beschreven in de vo
 | SDK | Beschrijving |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Een vereenvoudigde set hulpprogramma’s van de volgende generatie die basisfunctionaliteit voor ontwikkeling biedt voor het inschakelen van gegevensbeveiliging via Microsoft Rights Management Services op uw apparaat-apps met Android, iOS, Mac OS X-, Windows Phone/RT en Linux/C++. |
-| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Een krachtige SDK die ontwikkelaars van Windows-bureaubladtoepassingen en providers van servergebaseerde oplossingen in staat stelt hun producten te voorzien van Rights Management.|
-|[AD RMS SDK](https://msdn.microsoft.com/en-us/library/cc530379(v=vs.85).aspx)|** OPMERKING **: functionaliteit die gebruikmaakt van de AD RMS SDK en door de client beschikbaar wordt gesteld in Msdrm.dll, is beschikbaar voor gebruik in Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 en Windows Vista. Dergelijke functionaliteit is in latere versies mogelijk gewijzigd of niet beschikbaar. Gebruik in plaats daarvan de Microsoft Rights Management Services SDK 2.1, die gebruikmaakt van functionaliteit die door de client beschikbaar wordt gesteld in Msipc.dll.|
-|[AD RMS script-API](https://msdn.microsoft.com/en-us/library/bb968797(v=vs.85).aspx)| Wordt gebruikt voor het maken van scripts voor het beheren van een AD RMS-installatie.|
+| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Een krachtige SDK die ontwikkelaars van Windows-bureaubladtoepassingen en providers van servergebaseerde oplossingen in staat stelt hun producten te voorzien van Rights Management|
+|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379(v=vs.85).aspx)|**OPMERKING**: functionaliteit die gebruikmaakt van AD RMS SDK die door de client beschikbaar wordt gesteld in Msdrm.dll, is beschikbaar voor gebruik in Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 en Windows Vista. De functionaliteit is mogelijk gewijzigd of niet beschikbaar in latere versies. Gebruik in plaats daarvan de Microsoft Rights Management Services SDK 2.1, die gebruikmaakt van functionaliteit die beschikbaar wordt gesteld door de client in Msipc.dll.|
+|[AD RMS script-API](https://msdn.microsoft.com/en-us/library/bb968797(v=vs.85).aspx)| Wordt gebruikt voor het maken van scripts voor het beheren van een AD RMS-installatie|
 
 ## Codevoorbeelden en hulpprogramma 's
 Deze verzameling van door Microsoft RMS meegeleverde codevoorbeelden en ondersteuningsprogramma’s voor ontwikkelaars beslaat alle ondersteunde besturingssystemen (Android, iOS/OS X , Windows Phone en Windows Desktop) en wordt regelmatig bijgewerkt om compatibiliteit met de ondersteunde SDK te handhaven.
@@ -77,6 +72,7 @@ De volgende hulpprogramma’s worden uitgevoerd op Windows Desktop en ondersteun
 - [Voorbeeldtoepassing](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore): de voorbeeldtoepassing voor de Microsoft RMS SDK v4.1 voor Windows Store-toepassingen biedt een voorbeeld van basisdocumentgebruik voor het platform.
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

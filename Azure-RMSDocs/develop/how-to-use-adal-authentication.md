@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: ADAL-verificatie voor uw RMS-toepassing | Azure RMS
 description: Biedt een overzicht van het verificatieproces met ADAL
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
+ms.openlocfilehash: 9200ea44671776ced8781c1e13e71871f5bdf014
+
 
 ---
 
@@ -43,13 +38,15 @@ Dit onderwerp bevat twee verificatiemethoden met bijbehorende codevoorbeelden.
 
   Gebruik deze methode als u wilt dat de RMS-client een ADAL-verificatieprompt weergeeft als verificatie vereist is. Zie de sectie 'Interne verificatie' voor meer informatie over het configureren van uw toepassing.
 
-  > [!Note] Als u in uw toepassing momenteel AD RMS SDK 2.1 met de aanmeldhulp gebruikt, wordt aanbevolen de interne verificatiemethode te gebruiken als pad voor uw toepassingsmigratie.
+  > [!Note] 
+  > Als u in uw toepassing momenteel AD RMS SDK 2.1 met de aanmeldhulp gebruikt, wordt aanbevolen de interne verificatiemethode te gebruiken als pad voor uw toepassingsmigratie.
 
 - **Externe verificatie** - OAuth-verificatie beheerd door uw toepassing.
 
   Gebruik deze methode als u wilt dat uw toepassing zijn eigen OAuth-verificatie gebruikt. Met deze methode oefent de RMS-client een door de toepassing gedefinieerde callback uit wanneer verificatie vereist is. Zie 'Externe verificatie' aan het eind van dit onderwerp voor een gedetailleerd voorbeeld.
 
-  > [!Note] Met externe verificatie wordt niet de mogelijkheid geïmpliceerd om de gebruiker te wijzigen. De RMS-client gebruikt altijd de standaardgebruiker voor een bepaalde RMS-tenant.
+  > [!Note] 
+  > Met externe verificatie wordt niet de mogelijkheid geïmpliceerd om de gebruiker te wijzigen. De RMS-client gebruikt altijd de standaardgebruiker voor een bepaalde RMS-tenant.
 
 ## Interne verificatie
 
@@ -114,18 +111,19 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 ## Verwante onderwerpen
 
-* [Gegevenstypen](/rights-management/sdk/2.1/api/win/datatypes)
-* [Omgevingseigenschappen](/rights-management/sdk/2.1/api/win/environmentproperties)
+* [Gegevenstypen](/rights-management/sdk/2.1/api/win/data%20types)
+* [Omgevingseigenschappen](/rights-management/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
 * [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC_CREDENTIAL)
 * [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/IIPC_OAUTH2_CALLBACK_INFO)
+* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
 * [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/IIPC_AAD_APPLICATION_ID)
+* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 
