@@ -1,30 +1,14 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b6dcd8bb1091e9c484e02042adbf993381581a9d/Azure-RMSDocs/get-started/requirements-subscriptions.md) | InSyncHandedBackSuccess | [Details](#5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d112)
  [Azure-RMSDocs\get-started\scenario-fci.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-fci.md) | InSyncHandedBackSuccess | [Details](#c16098a2d0fe41748280704716a2eeef8921a6fa115)
 
 ## Item Details
-##### <a name='5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d112'></a> Source: [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b6dcd8bb1091e9c484e02042adbf993381581a9d/Azure-RMSDocs/get-started/requirements-subscriptions.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/d61b1dc86f9eeadff5700c84005a8bb78a3a8ebb/Azure-RMSDocs/get-started/requirements-subscriptions.md)
-* Handoff File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/0bd4832fab0fc5250ecf9218978e769d02732aa3/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
-* Handoff Datetime: 2016-06-27 13:14:37
-* Handoff Reason: Include
-* Archive File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
-* Archive Datetime: 2016-07-02 00:05:37
-* Handback File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9bdce32f592af82573179a840136724ee459af66/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
-* Handback Datetime: 2016-07-02 10:24:52
-* Handback Error: [handback_transform_failed](#5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d112handback_transform_failed)
-* Bilingual File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/9bdce32f592af82573179a840136724ee459af66/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf)
-* Bilingual Datetime: 2016-06-25 06:51:38
-* [Back to Top](#report-top)
-
 ##### <a name='c16098a2d0fe41748280704716a2eeef8921a6fa115'></a> Source: [Azure-RMSDocs\get-started\scenario-fci.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-fci.md)
 * Status: InSyncHandedBackSuccess
 * Target File: [Azure-RMSDocs\get-started\scenario-fci.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/6c6a3ea18c3129c665c6da90e123d98dfdc09546/Azure-RMSDocs/get-started/scenario-fci.md)
@@ -34,7 +18,7 @@
 * Archive File: [scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 00:05:37
 * Handback File: [scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf)
-* Handback Datetime: 2016-07-02 10:24:52
+* Handback Datetime: 2016-07-02 12:24:35
 * Handback Error: [handback_transform_failed](#c16098a2d0fe41748280704716a2eeef8921a6fa115handback_transform_failed)
 * Bilingual File: [scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf)
 * Bilingual Datetime: 2016-06-22 12:25:06
@@ -42,12 +26,6 @@
 
 
 ## Error Details
-##### <a name='5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d112handback_transform_failed'></a> Source: [Azure-RMSDocs\get-started\requirements-subscriptions.md](#5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d112)
-* Error Code: handback_transform_failed
-* Error Message: Handback file: C:\ol\master\EM.handback\06462f\ol-handback\Microsoft\Azure-RMSDocs-pr.nl-nl\master\requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf failed.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_transform_failed","internal_error_message":"Handback file: C:\\ol\\master\\EM.handback\\06462f\\ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.nl-nl.xlf failed.","internal_error_retriable":false,"exception_message":"Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\n# required metadata\n\ntitle: Azure RMS-vereisten: cloudabonnementen | Azure RMS\ndescription:\nkeywords:\nauthor: cabailey\nmanager: mbaldwin\nms.date: 06/09/2016\nms.topic: get-started-article\nms.prod: azure\nms.service: rights-management\nms.technology: techgroup-identity\nms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc\n\n# optional metadata\n\n#ROBOTS:\n#audience:\n#ms.devlang:\nms.reviewer: esaggese\nms.suite: ems\n#ms.tgt_pltfrm:\n#ms.custom:\nError message: (Line: 3, Col: 27, Idx: 47) - (Line: 3, Col: 27, Idx: 47): Mapping values are not allowed in this context.","exception_type":"System.IO.InvalidDataException","stack_trace":"   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406","extended_information":null}
-
 ##### <a name='c16098a2d0fe41748280704716a2eeef8921a6fa115handback_transform_failed'></a> Source: [Azure-RMSDocs\get-started\scenario-fci.md](#c16098a2d0fe41748280704716a2eeef8921a6fa115)
 * Error Code: handback_transform_failed
 * Error Message: Handback file: C:\ol\master\EM.handback\06462f\ol-handback\Microsoft\Azure-RMSDocs-pr.nl-nl\master\scenario-fci.10be30d90b39e74d66e988928a46502d538313d6.nl-nl.xlf failed.
