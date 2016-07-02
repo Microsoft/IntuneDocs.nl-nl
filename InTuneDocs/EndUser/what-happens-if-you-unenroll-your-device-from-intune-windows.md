@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 ms.reviewer: priyar
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
 ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
 
@@ -36,7 +37,8 @@ Gebruik de koppeling in de bovenstaand sectie 'In dit artikel' die overeenkomt m
 
 -   De Intune Endpoint Protection-software wordt van de computer verwijderd. Als op de computer andere anti-virussoftware is geïnstalleerd en deze software is uitgeschakeld, wordt deze mogelijk weer geregistreerd nadat Intune Endpoint Protection is verwijderd. Controleer uw computer nadat u deze van de bedrijfsportal hebt verwijderd.
 
-    > [!IMPORTANT] Als de andere anti-virussoftware niet opnieuw is geregistreerd of als er geen andere anti-virussoftware is geïnstalleerd, is uw computer mogelijk blootgesteld aan virussen en kwaadaardige software.
+    > [!IMPORTANT]
+    > Als de andere anti-virussoftware niet opnieuw is ingeschakeld of als er geen andere anti-virussoftware is geïnstalleerd, is uw computer mogelijk blootgesteld aan virussen en kwaadaardige software.
 
 -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit toevoegde, bijvoorbeeld het uitschakelen van de camera, zijn niet meer van toepassing.
 
@@ -91,6 +93,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

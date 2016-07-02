@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Conflicten tussen GPO-beleid en Intune-beleid oplossen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 211543b75e2bcda85cd74ab34c254d70f036eebd
+ms.openlocfilehash: 7fc97e21fa7e57d8585c421ac12ff0d3c4b366a0
+
 
 ---
 
@@ -122,6 +116,7 @@ De nieuwe beveiligingsgroep moet ingeschreven blijven in de Intune-servicewijzig
 [Windows-pc's met Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

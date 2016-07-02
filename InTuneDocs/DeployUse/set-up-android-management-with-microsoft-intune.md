@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Android-beheer instellen met Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: lacranda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f1dc713099c982d6e32c87b814dd3f55b1656eda
+ms.openlocfilehash: 5f65887345c1a650c6d80863e42f447035c789f7
+
 
 ---
 
@@ -32,7 +26,7 @@ Maak voor meer informatie een keuze uit de volgende apparaatplatformspecifieke o
 
 > [!div class="op_single_selector"]
 - [Android-beheer instellen met Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [iOS- en Mac-beheer instellen met Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 - [Windows apparaatbeheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
@@ -51,6 +45,7 @@ Op mobiele apparaten met Android kunnen gebruikers zich registreren via de bedri
 [Bereid u voor op het registreren van apparaten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

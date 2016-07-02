@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Apps voor Windows-pc's toevoegen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
 
 1.  Kies in de [Microsoft Intune-beheerdersconsole](https://manage.microsoft.com) de optie **Apps** &gt; **Apps toevoegen** om de uitgever van Intune-software te starten.
 
-    > [!TIP] Mogelijk moet u uw gebruikersnaam en wachtwoord voor Intune invoeren voordat de uitgever wordt gestart.
+    > [!TIP]
+    > Mogelijk moet u uw gebruikersnaam en wachtwoord voor Intune invoeren voordat de uitgever wordt gestart.
 
 
 
@@ -94,6 +89,7 @@ De app wordt weergegeven op het knooppunt **Apps** van de werkruimte **Apps**.
 
 Wanneer u een app hebt gemaakt, is de volgende stap deze te implementeren. Zie [Apps in Microsoft Intune implementeren](deploy-apps.md) voor meer informatie
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

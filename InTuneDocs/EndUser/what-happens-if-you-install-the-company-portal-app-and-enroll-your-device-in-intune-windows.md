@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 ms.reviewer: priyar
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01
 
@@ -125,6 +126,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

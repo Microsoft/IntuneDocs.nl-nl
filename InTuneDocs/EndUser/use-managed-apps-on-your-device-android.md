@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 ms.reviewer: maxles
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
 ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
 
@@ -76,6 +77,6 @@ Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps o
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

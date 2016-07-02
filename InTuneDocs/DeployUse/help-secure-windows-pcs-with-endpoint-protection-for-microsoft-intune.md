@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Endpoint Protection voor Windows-pc's| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Als u van uw huidige eindpuntbeveiligingstoepassing wilt overschakelen op Micros
 
     -   De eindpuntbeveiligingstoepassing van derden handmatig te verwijderen.
 
-> [!NOTE] Intune verwijdert eindpuntbeveiligingstoepassingen van derden niet automatisch.
+> [!NOTE]
+> Intune verwijdert eindpuntbeveiligingstoepassingen van derden niet automatisch.
 
 ## Microsoft Intune Endpoint Protection configureren
 Gebruik de volgende stappen om u te helpen bij het configureren van Endpoint Protection voor Microsoft Intune.
@@ -162,7 +157,8 @@ U kunt de status van schadelijke software op uw computers controleren met behulp
   - **Eigenschappen weergeven**: opent een pagina met meer informatie over de geselecteerde malware.
   - **Meer informatie over deze malware**: opent een onderwerp van het Microsoft Malware Protection Center met meer informatie over de malware.
 
-> [!IMPORTANT] De werkruimte **Beveiliging** wordt pas weergegeven in de beheerdersconsole nadat u de client op ten minste één computer hebt geïnstalleerd en de client beheert.
+> [!IMPORTANT]
+> De werkruimte **Beveiliging** wordt pas weergegeven in de beheerdersconsole nadat u de client op ten minste één computer hebt geïnstalleerd en de client beheert.
 
   ![Endpoint Protection controleren](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Pro
 1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Overzicht** > **Alle apparaten** > **Alle computers** en selecteer de computer die u wilt targeten.
 
 2. Klik op de vervolgkeuzelijst **Externe taken** en selecteer de taak. De taak die moet worden uitgevoerd op de externe computer.
-![Externe malwarescan uitvoeren](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](/intune/tro
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Instellingen voor nalevingsbeleid voor Windows-apparaten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: a836057cf6c226c8330b0b916c18cd609f791344
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op apparaten waarop het Windows-besturingssysteem wordt uitgevoerd. De specifieke versie van Windows die wordt ondersteund, staat in de onderstaande secties vermeld.
 
-Als u op zoek bent naar informatie over andere platforms, selecteer dan een van de volgende opties:
+Als u op zoek bent naar informatie over andere platforms, selecteert u een van de volgende opties:
 > [!div class="op_single_selector"]
 - [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Instellingen voor nalevingsbeleid voor Android-apparaten](android-compliance-policy-settings-in-microsoft-intune.md)
@@ -145,6 +139,7 @@ Als u de versie van het besturingssysteem wilt vinden die u voor de instellingen
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

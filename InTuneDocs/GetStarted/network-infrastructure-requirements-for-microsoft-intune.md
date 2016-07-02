@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Vereisten voor de netwerkinfrastructuur | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
+ms.openlocfilehash: b551aca6994780591dabe042420d5f23d98b218b
+
 
 ---
 
@@ -32,10 +26,10 @@ In dit onderwerp staan de vereisten die uw netwerkinfrastructuur in staat stelle
 
 Het gebruik van een lokale infrastructuur (zoals een server waarop u de software moet installeren) is niet vereist, maar u hebt de mogelijkheid om een lokale infrastructuur te gebruiken, waaronder de hulpprogramma's voor Exchange- en Active Directory-synchronisatie.
 
-Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u firewalls en proxyservers zo instellen dat communicatie voor Intune is toegestaan.
+Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u firewalls en proxyservers instellen om communicatie voor Intune mogelijk te maken.
 
 ## Vereisten voor firewalls, poorten en domeinen
-Voor beheerde apparaten zijn configuraties vereist waarmee **Alle gebruikers** via firewalls toegang krijgen tot diverse services.
+Voor beheerde apparaten zijn configuraties vereist waarmee **alle gebruikers** via firewalls toegang krijgen tot diverse services.
 
 De volgende tabel bevat de poorten en services waartoe de Intune-client toegang heeft.
 
@@ -152,7 +146,7 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 |wustat.microsoft.com|80 en 443||
 |Microsoft Update-services|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 en 443|
 |DNS-lookup-aanvragen|manage.microsoft.com.nsatc.net|80|
-|Samsung KNOX-apparaatcommunicatie via de firewall|Als u Samsung KNOX-apparaten verbinding wilt laten maken met de KNOX-servers via de firewall, volgt u de aanwijzingen in de veelgestelde vragen over Samsung KNOX.||
+|Samsung KNOX-apparaatcommunicatie via de firewall|Als u Samsung KNOX-apparaten via de firewall verbinding wilt laten maken met de KNOX-servers, volgt u de aanwijzingen in Veelgestelde vragen over Samsung KNOX.||
 |Documentatie, Help en ondersteuning:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
 
@@ -173,6 +167,7 @@ U kunt ook een proxyserver gebruiken die inhoud opslaat in de cache om [het gebr
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

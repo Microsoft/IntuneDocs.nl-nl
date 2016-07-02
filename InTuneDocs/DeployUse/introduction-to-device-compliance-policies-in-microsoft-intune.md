@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Nalevingsbeleid voor apparaten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e9e069a2887b812b30c620634a8e0d093093b460
+ms.openlocfilehash: c443bb51ba05161c5088475e528e6ada28c105a5
+
 
 ---
 
@@ -67,6 +61,7 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

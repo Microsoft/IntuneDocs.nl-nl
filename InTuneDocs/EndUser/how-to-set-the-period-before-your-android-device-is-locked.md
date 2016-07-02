@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 00fca8673ff1b52535fb6c06a02b38b7879f204f
+
 
 ---
 
@@ -36,8 +31,9 @@ Als u wilt opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-o
 
 3.  Zorg ervoor dat het apparaat is geregistreerd bij Intune door de instructies in [Apparaat registreren voor gebruik op het werk](http://go.microsoft.com/fwlink/?LinkId=519071) te volgen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
