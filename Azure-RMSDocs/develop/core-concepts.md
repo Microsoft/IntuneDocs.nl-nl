@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Richtlijnen en voorwaarden voor ontwikkelaars | Azure RMS
 description: De focus van de RMS SDK 4.2 is het bieden van ondersteuning bij het zo eenvoudig mogelijk ontwikkelen van AD RMS-toepassingen die gebruikmaken van AD RMS-gegevensbeveiliging.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
+ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+
 
 ---
 
@@ -42,6 +38,7 @@ De volgende onderwerpen zijn bedoeld ter ondersteuning van het ontwerpproces voo
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

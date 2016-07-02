@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Sjablonen verwijderen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
+
 
 ---
 
@@ -47,6 +41,7 @@ De status verandert van **Gepubliceerd** in **Gearchiveerd**. Als u van gedachte
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Expliciete eigendomsrechten toevoegen | Azure RMS
 description: Uw toepassing moet expliciet 'Eigenaar'-rechten toevoegen bij het maken van een nieuwe licentie.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+
 
 ---
 
@@ -32,7 +28,8 @@ Uw toepassing moet expliciet 'Eigenaar'-rechten toevoegen bij het maken van een 
 
 Wanneer uw toepassing een licentie maakt met behulp van [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), moet deze ook expliciet de eigenaar volledige rechten (machtigingen) toekennen.
 
->[!NOTE] Als een gebruiker als 'eigenaar' wordt ingesteld met [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) met de eigenschap **IPC\_LI\_OWNER**, worden aan de eigenaar geen volledige machtigingen verleend.
+>[!NOTE] 
+> Als een gebruiker als 'eigenaar' wordt ingesteld met [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) met de eigenschap **IPC\_LI\_OWNER**, worden aan de eigenaar geen volledige machtigingen verleend.
 
 De volgende voorbeeldcode bevat alleen de stappen voor het maken en toevoegen de specifieke rechten aan een bepaalde licentie.
 
@@ -118,6 +115,7 @@ Aan deze gebruikers worden de volgende twee rechten toegewezen:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

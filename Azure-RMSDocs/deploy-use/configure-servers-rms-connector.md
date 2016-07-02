@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Servers configureren voor de Azure Rights Management-connector | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/08/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0b07ecc88b1d2d344f0984d4a805cc033996cc4d
+ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
+
 
 ---
 
@@ -83,7 +77,8 @@ Nadelen:
 
 ---
 
-> [!IMPORTANT] In beide gevallen moet u handmatig eventuele vereiste software installeren en Exchange, SharePoint en de infrastructuur voor bestandsclassificatie configureren voor het gebruik van Rights Management.
+> [!IMPORTANT]
+> In beide gevallen moet u handmatig eventuele vereiste software installeren en Exchange, SharePoint en de infrastructuur voor bestandsclassificatie configureren voor het gebruik van Rights Management.
 
 Voor de meeste organisaties is automatische configuratie met het hulpprogramma voor serverconfiguratie voor de Microsoft RMS-connector een de betere optie, omdat deze methode efficiënter en betrouwbaarheid is dan handmatige configuratie.
 
@@ -114,7 +109,8 @@ Na het wijzigingen van de configuratie op deze servers, moet u deze opnieuw opst
 
 Als u het script wilt uitvoeren, moet u de URL invoeren van de RMS-connector voor uw organisatie. Voer het protocolvoorvoegsel (HTTP:// of HTTPS://) en de naam van de connector in die u in DNS hebt gedefinieerd voor het adres met gelijke taakverdeling van de connector. Bijvoorbeeld https://connector.contoso.com. Het hulpprogramma gebruikt vervolgens die URL om verbinding te maken met de servers waarop de RMS-connector wordt uitgevoerd en om andere parameters te verkrijgen die worden gebruikt voor het maken van de vereiste configuraties.
 
-> [!IMPORTANT] Wanneer u dit hulpprogramma uitvoert, moet u ervoor zorgen dat u de naam opgeeft van de RMS-connector met gelijke taakverdeling voor uw organisatie en niet de naam van één server waarop de RMS-connectorservice wordt uitgevoerd.
+> [!IMPORTANT]
+> Wanneer u dit hulpprogramma uitvoert, zorg ervoor dat u de naam opgeeft van de RMS-connector met gelijke taakverdeling voor uw organisatie en niet de naam van een enkele server waarop de RMS-connectorservice wordt uitgevoerd.
 
 Gebruik de volgende secties voor specifieke informatie over elk servicetype:
 
@@ -188,7 +184,8 @@ Voor het gebruik van de RMS-connector moet op deze servers waarop SharePoint wor
 
 Op een server waarop SharePoint 2016 of SharePoint 2013 wordt uitgevoerd, moet ook een versie van de client MSIPC 2.1 worden uitgevoerd, die wordt ondersteund met de RMS-connector. Download de nieuwste client via het [Microsoft Downloadcentrum](http://www.microsoft.com/download/details.aspx?id=38396) om ervoor te zorgen dat u over een ondersteunde versie beschikt.
 
-> [!WARNING] Er zijn meerdere versies van de client MSIPC 2.1. Zorg dus ervoor dat u versie 1.0.2004.0 of hoger hebt.
+> [!WARNING]
+> Er zijn meerdere versies van de client MSIPC 2.1. Zorg er dus voor dat u versie 1.0.2004.0 of hoger hebt.
 >
 > U kunt de clientversie controleren aan de hand van het versienummer van MSIPC.dll, dat zich bevindt in **\Program Files\Active Directory Rights Management Services Client 2.1**. In het dialoogvenster eigenschappen wordt het versienummer van de client MSIPC 2.1 weergegeven.
 
@@ -252,6 +249,7 @@ U kunt het [Azure Rights Management-implementatieschema](../plan-design/deployme
 Zie [De Azure Rights Management-connector controleren](monitor-rms-connector.md) om de RMS-connector te controleren. 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

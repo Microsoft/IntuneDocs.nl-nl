@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Aan de slag | Azure RMS
 description: Als u snel aan de slag wilt met een eerste toepassing, leest u de installatiehandleidingen voor de ontwikkelingsomgevingen van alle besturingssystemen/platforms.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+
 
 ---
 
@@ -59,6 +55,7 @@ Als u met deze versie van de Microsoft Rights Management SDK 4.2 snel wilt begin
   |[Communityresources](community-resources.md)|Active Directory Rights Management Services wordt breed ondersteund door een groeiende community van ontwikkelaars op meerdere platforms.|
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

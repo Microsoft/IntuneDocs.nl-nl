@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: AD RMS Server | Azure RMS
-description: Het serveronderdeel van Rights Management Services (RMS) wordt geïmplementeerd met een reeks webservices die worden uitgevoerd op Microsoft Internet Information Services.
-keywords:
+description: "Het serveronderdeel van Rights Management Services (RMS) wordt geïmplementeerd met een reeks webservices die worden uitgevoerd op Microsoft Internet Information Services."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
+
 
 ---
 
@@ -30,7 +26,8 @@ Dit onderwerp bevat informatie over het doel en de functies van de RMS-server, v
 
 **Azure RMS**: Zie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor meer informatie over het gebruik van de Azure Rights Management-service.
 
-> [!IMPORTANT] U wordt aangeraden uw toepassing te ontwikkelen en testen via Azure RMS.
+> [!IMPORTANT] 
+> U wordt aangeraden uw toepassing te ontwikkelen en testen via Azure RMS.
 
 **Windows Server**: Voor lokale servers kunt u vanaf Windows Server 2008 de RMS-service installeren en configureren door deze toe te voegen als een rol. Voor het installeren van de service op eerdere besturingssystemen downloadt u deze vanuit het Microsoft Downloadcentrum op [Microsoft Windows Rights Management Services met Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909).
 
@@ -60,6 +57,7 @@ Van de vele geïnstalleerde webservices zijn de volgende belangrijk voor toepass
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

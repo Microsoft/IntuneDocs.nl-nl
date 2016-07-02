@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Opmerkingen bij de release | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+
 
 ---
 
@@ -30,7 +26,8 @@ Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de R
 
 ## Nieuw voor de SDK-documentatie-update van februari 2016
 
->[!Note]  De documentatie-updates voor functies in deze sectie zijn van toepassing op de SDK-download met de datum 11-12-2015.
+>[!Note]
+> De documentatie-updates voor functies in deze sectie zijn van toepassing op de SDK-download met de datum 11-12-2015.
 
 - **Verbeterde verificatiestroom**: Met op OAuth2-tokens gebaseerde verificatie via de [Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Zie [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md) (ADAL-verificatie voor uw RMS-toepassing) voor meer informatie over dit proces en de bijbehorende API-uitbreidingen.
 
@@ -180,6 +177,7 @@ Als er geen naam en beschrijving kunnen worden opgehaald, wordt een fout geretou
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
