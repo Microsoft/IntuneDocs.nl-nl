@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Algemene beheertaken voor Windows-pc's | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -139,7 +133,8 @@ Wanneer u een computer buiten gebruik stelt:
 
 -   Afhankelijk van de configuratie kunnen computers die buiten gebruik zijn gesteld, nog steeds updates ontvangen via Windows Server Update Services, Windows Update of Microsoft Update.
 
-    > [!IMPORTANT] Als de clientsoftware is geïnstalleerd met behulp van een groepsbeleidsobject (GPO), moet u het groepsbeleidsobject verwijderen voordat u de clientsoftware kunt verwijderen om te voorkomen dat de software wordt geïnstalleerd.
+    > [!IMPORTANT]
+    > Als de clientsoftware is geïnstalleerd met behulp van een groepsbeleidsobject (GPO), moet u het groepsbeleidsobject verwijderen voordat u de clientsoftware kunt verwijderen om te voorkomen dat de software wordt geïnstalleerd.
 
     Als de client niet kan worden verwijderd, leest u [Problemen met Endpoint Protection oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer informatie.
 
@@ -162,7 +157,8 @@ Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aa
 
     -   Als u de computer aan een nieuwe gebruiker wilt koppelen, selecteert u een gebruiker in de lijst **Alle gebruikers** . Controleer of de gebruikersgegevens juist zijn en kies vervolgens **OK**.
 
-> [!TIP] Als u de mogelijkheden van eindgebruikers om zichzelf aan computers te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
+> [!TIP]
+> Als u de mogelijkheden van eindgebruikers om zichzelf aan computers te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
 
 <!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
@@ -217,6 +213,7 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

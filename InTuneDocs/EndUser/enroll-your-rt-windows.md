@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Uw Windows RT-apparaat registreren bij Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 47341626bceaa5d4ad0775c3d22d80985ce699cc
+
 
 ---
 
@@ -51,7 +45,7 @@ Het wordt ook aangeraden de bedrijfsportal-app te installeren, waarmee u eenvoud
 
 4.  Tik op **Bedrijfsportal** &gt; **Installeren**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 ### Zie tevens
 [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
@@ -59,6 +53,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactge
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

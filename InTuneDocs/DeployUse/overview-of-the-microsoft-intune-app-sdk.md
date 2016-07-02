@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Overzicht van de Microsoft Intune App SDK | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -61,6 +55,7 @@ IT-beheerders kunnen een status en de compatibiliteit van apparaten met het bedr
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
 ms.reviewer: priyar
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 04131fc569c904cf948683089933c38786a9b847
 
@@ -62,6 +63,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

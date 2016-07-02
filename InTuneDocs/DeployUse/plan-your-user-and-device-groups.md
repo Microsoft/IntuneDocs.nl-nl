@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Uw gebruikers- en apparaatgroepen plannen| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Controleer en kies vervolgens **Voltooien** om het maken van de groep te voltooi
 
 In ons voorbeeld hebben we ook een groep gemaakt voor het Midden-Oosten en Azië (MEA).
 
-> [!NOTE] Als het groepslidmaatschap niet is ingevuld op basis van het lidmaatschap van de beveiligingsgroep, controleert u of u Intune-licenties aan die leden hebt toegewezen.
+> [!NOTE]
+> Als het groepslidmaatschap niet is ingevuld op basis van het lidmaatschap van de beveiligingsgroep, controleert u of u Intune-licenties aan die leden hebt toegewezen.
 
 ### Groepen voor specifieke hardware
 Als in uw organisatie beleidsregels worden vereist die van toepassing zijn op specifieke hardwaretypen, kunt u groepen maken op basis van deze vereiste. U kunt deze baseren op specifieke groepen die u al hebt gemaakt in uw lokale AD en deze naar Azure AD synchroniseren. U kunt ze ook rechtstreeks in Azure AD maken. In dit voorbeeld gebruiken we de groep **US Users Group** als het bovenliggende item voor de groep **Laptopgebruikers**.
@@ -174,7 +169,8 @@ Als in uw organisatie beleidsregels worden vereist die van toepassing zijn op be
 
 Het volgen van dezelfde methode van de eerdere voorbeelden, maken we weergegeven op basis van gebruikers <!--devices?--> met specifieke besturingssysteem-platforms.
 
-> [!NOTE] Als uw gebruikers werken met meerdere mobiele platformen of besturingssystemen en u geen automatische methode hebt om de gebruikers als Android-, iOS- of Windows-gebruikers te categoriseren, kunt u overwegen beleidsregels op apparaatniveau toe te passen. Hiermee hebt u meer flexibiliteit bij het toepassen van beleid dat specifiek is voor het besturingssysteem.
+> [!NOTE]
+> Als u gebruikers hebt met meerdere mobiele platforms of besturingssystemen en u geen automatische manier hebt om gebruikers te categoriseren als gebruikers met Android, iOS of Windows, overweeg dan beleidsregels toe te passen op apparaatniveau. Hiermee hebt u meer flexibiliteit bij het toepassen van beleid dat specifiek is voor het besturingssysteem.
 >
 > U kunt groepen dynamisch inrichten op basis van het besturingssysteem van het apparaat. Doe dit met AD- of AAD-beveiligingsgroepen.
 
@@ -218,6 +214,7 @@ Met deze methode van naamgeving voor beleidsregels kunt u snel beleidsregels en 
 [Groepen maken](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

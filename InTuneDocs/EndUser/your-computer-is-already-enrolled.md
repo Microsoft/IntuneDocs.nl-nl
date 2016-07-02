@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
 ms.openlocfilehash: 7333babab0453de1158d02027870b03f6e740e16
 
@@ -36,6 +37,6 @@ Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de instruct
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

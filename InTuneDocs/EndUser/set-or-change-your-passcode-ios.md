@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Uw wachtwoordcode instellen of wijzigen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 5/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: esmich
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -51,6 +43,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 ### Zie tevens
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

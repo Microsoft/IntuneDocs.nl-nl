@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
 ms.openlocfilehash: 2524ff0c6139029b162fd58ed209e2d1c284df76
 
@@ -36,6 +37,6 @@ Lees voordat u Intune instelt, dit onderwerp en de andere vereisten die worden v
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jun16_HO5-->
 
 

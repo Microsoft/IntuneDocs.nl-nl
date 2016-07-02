@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
 ms.reviewer: arnab
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
 
@@ -35,6 +36,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

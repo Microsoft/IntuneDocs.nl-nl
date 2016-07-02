@@ -1,31 +1,91 @@
 ---
-# required metadata
-
 title: Vorige versies | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod:
+ms.date: 06/16/2016
+ms.topic: article
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3080d23f464e96315ed9e5fd59774ba9f1b2dd86
+ms.openlocfilehash: 65d582958d77150091880cce72e079b87308209f
+
 
 ---
 
 # Vorige versies van Intune
+## Mei 2016
+
+Al deze functies worden ook ondersteund voor hybride implementaties (Configuration Manager met Intune). Zie de pagina met [nieuwe hybridefuncties](https://technet.microsoft.com/en-us/library/mt718155.aspx) (Engelstalig) voor meer informatie over nieuwe hybridefuncties.
+
+### Documentatie
+Dit is de preview-versie van [docs.microsoft.com](https://docs.microsoft.com/en-us/intune).
+Dit is een volledig nieuw, modern inhoudsplatform dat is ontworpen om Intune gebruikersvriendelijker en eenvoudiger te maken.
+Zie [Kennismaking met docs.microsoft.com](https://docs.microsoft.com/teamblog/introducing-docs-microsoft-com/)
+
+### Servicestatus van Intune
+Servicestatusgegevens voor Intune is verplaatst naar een centrale locatie met andere Microsoft-services. U vindt deze informatie nu in de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx) onder **Servicestatus**.
+Lees [dit blogbericht](https://blogs.technet.microsoft.com/microsoftintune/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/) voor meer informatie.
+
+
+### Appbeheer
+- **MAM SDK: ondersteuning voor configuratie van de lengte van de pincode.** Net als bij pincodes voor apparaten het geval is, kunt u ook voor MAM-apps de lengte van de pincode opgeven. Hiervoor moeten eindgebruikers voldoen aan de nieuwe beperkingen die u instelt. Ze zien dan een enigszins gewijzigd pincodescherm, waarin de langere code kan worden ingevoerd. Zie [MAM-beleidsinstellingen voor Android](/intune/deploy-use/android-mam-policy-settings) en [ MAM-beleidsinstellingen voor iOS](/intune/deploy-use/ios-mam-policy-settings) voor meer informatie.
+
+- **Skype voor Bedrijven voor iOS en Android.** U kunt Skype voor Bedrijven nu gebruiken met [MAM zonder registratiebeleid](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Zodra gebruikers zich aanmelden, wordt het MAM-beleid toegepast.
+
+- **Nieuwe beschikbare apps voor beheer met MAM-beleid.** De Microsoft Word-, Excel- en PowerPoint-apps voor Android kunnen nu worden gekoppeld aan MAM-beleid op apparaten die niet zijn geregistreerd bij Intune. Ga voor de volledige lijst met ondersteunde apps naar de galerie met mobiele toepassingen van Microsoft Intune op de pagina [Microsoft Intune-toepassingen van partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+
+
+### Updates voor de bedrijfsportal
+
+#### Android-bedrijfsportal-app
+- **Pop-upmeldingen voor eindgebruikers**: eindgebruikers krijgen nu pop-upmeldingen uit de Android-bedrijfsportal te zien wanneer ze hun apparaten registreren bij of verwijderen uit de bedrijfsportal.
+
+- **Wijzigingen in de apparaatregistratiebeheeraccounts in de Android-bedrijfsportal-app.** Ter verbetering van de prestaties en schaalbaarheid worden er in het deelvenster Mijn apparaten van de Android-bedrijfsportal-app niet meer alle DEM-apparaten (Device Enrollment Manager; apparaatregistratiebeheer) door Intune weergegeven. Alleen het lokale apparaat waarop de app wordt uitgevoerd, wordt weergegeven en wel alleen als het apparaat is geregistreerd via de bedrijfsportal-app. De DEM-gebruiker kan acties op het lokale apparaat uitvoeren, maar extern beheer van andere geregistreerde apparaten kan alleen worden uitgevoerd vanuit de Intune-beheerconsole.
+
+#### Bedrijfsportalwebsite
+- **Bedrijfsportalwebsite: de banner voor apparaatidentificatie biedt eindgebruikers meer informatie.** Eindgebruikers kunnen het apparaat dat ze hebben geselecteerd, nu gemakkelijker identificeren wanneer ze de website van de bedrijfsportal gebruiken. Als er een verkeerd apparaat is geselecteerd, kunnen ze het juiste apparaat selecteren door op de koppeling **Tik hier** in de banner op de startpagina te tikken.
+
+## Binnenkort
+- **Onboarding van de gebruikersinterface van Berichtencentrum**. Als onderdeel van de migratie van Intune in de [Office 365-beheerportal](https://portal.office.com/) benutten we het bijbehorende Berichtencentrum om nieuwe functies en andere meldingen te communiceren. U kunt ook de bijbehorende mobiele app voor Office 365-beheer installeren om meldingen te ontvangen op uw mobiele telefoon en eenvoudig berichten naar gebruikers of een distributiealias te sturen.
+We gebruiken het Berichtencentrum voor onze release in mei om u te laten weten wanneer er updates voltooid zijn. Ook brengen we u op de hoogte van nieuwe en verbeterde Intune-functies. Bekijk het Berichtencentrum meteen door u aan te melden bij de [Office 365-beheerportal](https://portal.office.com/) en de optie BERICHTENCENTRUM te kiezen in het navigatiepaneel aan de linkerkant.
+
+- **Wijzigingen in de apparaatregistratiebeheeraccounts**. Ter verbetering van de prestaties en schaalbaarheid worden er in het deelvenster **Mijn apparaten** van de iOS-bedrijfsportal-app niet meer **alle** DEM-apparaten (Device Enrollment Manager; apparaatregistratiebeheer) door Intune weergegeven. Alleen het lokale apparaat waarop de app wordt uitgevoerd, wordt weergegeven en wel alleen als het apparaat is geregistreerd via de bedrijfsportal-app. De DEM-gebruiker kan acties op het lokale apparaat uitvoeren, maar extern beheer van andere geregistreerde apparaten kan alleen worden uitgevoerd vanuit de Intune-beheerconsole. Daarnaast is het gebruik in Intune van DEM-accounts met het Apple Device Enrollment Program of het hulpprogramma Apple Configurator beëindigd. Deze twee registratiemethoden bieden al ondersteuning voor gebruikersloze registratie voor gedeelde iOS-apparaten. Gebruik alleen DEM-accounts wanneer gebruikersloze registratie voor gedeelde apparaten niet beschikbaar is.
+
+### Cloudroadmap
+Blijf op de hoogte van toekomstige ontwikkelingen op het gebied van Intune met de [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
+
+### Serviceafschaffing
+- **Intune-viewer-apps.** Met het uitbrengen van de nieuwe RMS-app voor delen, worden volgende Intune-viewer-apps vanaf augustus 2016 verwijderd:
+    - Intune AV-viewer
+    - Intune PDF-viewer
+    - Intune-afbeeldingsviewer voor Android van Google Play
+
+  In plaats van de viewer-apps van Intune kunt u beter de nieuwe Rights Management-app (RMS sharing) voor Android gebruiken, zodat u één app in plaats van drie afzonderlijke apps kunt implementeren om veilig bedrijfsbestanden op Android-apparaten te bekijken. Meer informatie over de app RMS sharing (met een koppeling naar de documentatie).
+
+- **Meldingsregels voor aangepaste groepen wordt verwijderd.**
+Met de Intune-meldingsregels wordt gedefinieerd wie een e-mailwaarschuwing ontvangt Intune. Op dit moment kunt u meldingsregels configureren om e-mails te verzenden naar alle gebruikers van apparaten in een Intune-apparaatgroep die u hebt gemaakt. Vanaf 1 juni 2016 wordt de targeting van groepen die zijn gemaakt door gebruikers, niet meer ondersteund.
+
+    Als u nu een meldingsregel wilt targeten op een groep die u in de Microsoft Intune-beheerconsole hebt gemaakt, voert u de volgende stappen uit:
+
+    Klik in de werkruimte **Beheerder** op **Meldingsregels** > **Nieuwe regel maken**
+
+    In stap 2 van de wizard Meldingsregel maken selecteert u de apparaatgroepen waarop de regel betrekking heeft. De stap voor het selecteren van apparaatgroepen wordt uit de Intune-console verwijderd.
+
+    De voorlopige tijdlijn voor deze wijziging is als volgt:
+    - In juni 2016 krijgen nieuwe tenants stap 2 van de wizard Meldingsregel maken niet meer te zien. Voor de huidige tenants blijft de situatie ongewijzigd.
+    - Rond augustus 2016 krijgen enkele bestaande tenants de wizardoptie voor het selecteren van apparaatgroepen niet meer te zien.
+    - Naar verwachting krijgt rond oktober 2016 geen enkele bestaande tenant de wizardoptie voor het selecteren van apparaatgroepen nog te zien.
+
+
+- **Wijzigingen in de ondersteuning voor de iOS-bedrijfsportal-app**. In de komende maanden zal de Microsoft Intune-bedrijfsportal-app voor iOS worden bijgewerkt en biedt deze alleen nog ondersteuning voor apparaten met iOS 8.0 of later. Gebruikers kunnen geen nieuwe apparaten met een versie lager dan iOS 8.0 registreren. Geregistreerde apparaten met een versie lager dan iOS 8.0 worden gewoon nog beheerd en kunnen, voor een beperkte periode, gebruik blijven maken van de bedrijfsportal-app. Apparaten moeten echter over iOS 8.0 of later beschikken voor toegang tot de nieuwste versie van de bedrijfsportal-app. U kunt gebruikers het beste adviseren bij te werken naar iOS 8.0 of later om optimaal gebruik te kunnen maken van de nieuwe Intune-functies.  
+
 
 ## April 2016
 Al deze functies worden ook ondersteund voor hybride klanten (Configuration Manager geïntegreerd met Intune).
@@ -242,7 +302,7 @@ Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebr
 
 ## November 2015
 ### Appbeheer
-Intune ondersteunt MAM-beleid (Mobile Application Management) waarmee wordt voorkomen dat bedrijfsgegevens uitlekken naar consumentenapps of -services. Deze beleidsregels zouden normaal alleen worden toegepast op mobiele apps op apparaten die ook bij Intune zijn ingeschreven voor Mobile Device Management (MDM).
+Intune ondersteunt Mobile Application Management-beleidsregels (MAM) die helpen te voorkomen dat bedrijfsgegevens uitlekken naar consumenten-apps of -services. Deze beleidsregels zouden normaal alleen worden toegepast op mobiele apps op apparaten die ook bij Intune zijn ingeschreven voor Mobile Device Management (MDM).
 
 In de update van deze maand biedt Intune nieuwe apparaatklassen aanvullende MAM-mogelijkheden. U kunt nu, naast de apparaten die zijn ingeschreven bij Intune, MAM-beleid ook toepassen op:
 * apparaten die worden beheerd door een andere MDM-oplossing (Mobile Device Management)
@@ -254,11 +314,11 @@ U vindt meer informatie over deze nieuwe MAM-mogelijkheden in de volgende blogbe
 
 Hier volgen bovendien enkele belangrijke functies en aanvullende informatie over de MAM-functies van Intune:
 * Bedrijfsgegevens worden geïsoleerd van de consumentgegevens in apps die geschikt zijn voor Intune, waaronder Office Mobile-apps, apps van derden met de Intune-SDK of Line-Of-Business-apps die zijn ingepakt door Intune.
-* Bedrijfsgegevens kunnen worden gedeeld (**knippen/kopiëren/plakken**) tussen bedrijfsapps terwijl wordt voorkomen dat bedrijfsgegevens worden gedeeld in persoonlijke apps. Lees [Hoe MAM-beleid app-gegevens beschermt](https://technet.microsoft.com/library/mt627825.aspx) voor meer informatie. In dit voorbeeldscenario, waarin [de Microsoft Word-app wordt gebruikt voor het werk en persoonlijke taken](https://technet.microsoft.com/library/mt627827.aspx), ziet u hoe het delen van bedrijfsgegevens met persoonlijke apps wordt voorkomen.
+* Bedrijfsgegevens kunnen worden gedeeld (**knippen/kopiëren/plakken**) tussen bedrijfs-apps, terwijl wordt voorkomen dat bedrijfsgegevens worden gedeeld in persoonlijke apps. Lees [Hoe MAM-beleid app-gegevens beschermt](https://technet.microsoft.com/library/mt627825.aspx) voor meer informatie. In dit voorbeeldscenario, waarin [de Microsoft Word-app wordt gebruikt voor het werk en persoonlijke taken](https://technet.microsoft.com/library/mt627827.aspx), ziet u hoe het delen van bedrijfsgegevens met persoonlijke apps wordt voorkomen.
 * Beleid ter preventie van het verlies van sleutelgegevens zoals pincodes per app, 'opslaan als'-besturingselementen en beheerd gegevens delen tussen apps. Zie [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](https://technet.microsoft.com/library/mt627829.aspx) voor een lijst met alle beleidsmogelijkheden.
 * Word, Excel, PowerPoint, Outlook, OneNote en OneDrive voor Bedrijven hebben deze nieuwe functies en kunnen worden beheerd met en zonder apparaatregistratie. Er zijn systeemeigen mogelijkheden voor preventie van gegevensverlies ingebouwd in de standaard-Office-apps uit App Store en Google Play. Hierbij is er geen noodzaak voor het inpakken van apps of sideloading.
 * Zie [Aan de slag met beleid voor het beheer van mobiele apps in Azure Portal](https://technet.microsoft.com/library/mt627830.aspx) voor meer informatie om aan de slag te gaan. Zie [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](https://technet.microsoft.com/library/mt627829.aspx) voor meer informatie over het configureren en implementeren van Mobile App Management-beleid.
-* Wanneer eindgebruikers zich in de app verifiëren met hun bedrijfsreferenties, worden de mogelijkheden voor preventie van gegevensverlies automatisch ingesteld. Het onderwerp [Eindgebruikerservaring voor apps die zijn gekoppeld aan MAM-beleid van Microsoft Intune](https://technet.microsoft.com/library/mt627827.aspx) bevat enkele voorbeeldscenario's voor het openen van OneDrive op iOS- en Android-apparaten.
+* Wanneer eindgebruikers zich in de app verifiëren met hun bedrijfsreferenties, worden de mogelijkheden voor preventie van gegevensverlies automatisch ingesteld. Het onderwerp [Eindgebruikerservaring voor apps die zijn gekoppeld aan MAM-beleid van Microsoft Intune](https://technet.microsoft.com/library/mt627827.aspx) bevat enkele voorbeeldscenario’s over het benaderen van OneDrive op iOS- en Android-apparaten.
 * Werkt op iOS- en Android-apparaten.
 
 De lijst met [Microsoft-apps die u met MAM-beleid van Microsoft Intune kunt gebruiken](https://technet.microsoft.com/library/dn708489.aspx) is bijgewerkt met de nieuwste apps.
@@ -293,7 +353,7 @@ In deze release zijn de volgende wijzigingen aangebracht aan de bedrijfsportal-a
 * **Bedrijfsportal-website**: gebruikers die hun apparaat bij Intune hebben ingeschreven, kunnen nu hun wachtwoordcode opnieuw instellen met de optie **Wachtwoordcode opnieuw instellen** op de bedrijfsportal-website. Eerder konden alleen IT-beheerders de wachtwoordcodes van gebruikers opnieuw instellen. De optie Wachtwoordcode opnieuw instellen wordt niet ondersteund op Windows 8.1- en Windows RT-apparaten. De optie wordt alleen weergegeven wanneer apparaten zijn ingeschreven in Mobile Device Management (MDM) of MDM met Exchange ActiveSync. Zie [Reset your passcode](https://technet.microsoft.com/library/mt590895.aspx) (Uw wachtwoordcode opnieuw instellen) voor instructies.
 
 ### Wijzigingen in de licentieverlening voor hoofdbeheerders
-In oktober is bekendgemaakt dat hoofdbeheerders (ook wel tenantbeheerders genoemd) de reguliere beheertaken zouden kunnen voortzetten zonder afzonderlijke Intune- of EMS-licentie (Enterprise Mobility Suite). Als hoofdbeheerders echter de service willen gebruiken, bijvoorbeeld om hun eigen apparaat of een bedrijfsapparaat in te schrijven of om de Intune-bedrijfsportal te gebruiken, moeten ze net als anderen beschikken over een Intune- of EMS-licentie. Hieronder vindt u aanvullende informatie.
+In oktober is bekendgemaakt dat hoofdbeheerders (ook wel tenantbeheerders genoemd) de reguliere beheertaken zouden kunnen voortzetten zonder afzonderlijke Intune- of Enterprise Mobility Suite-licentie (ESM). Als hoofdbeheerders echter de service willen gebruiken, bijvoorbeeld om hun eigen apparaat of een bedrijfsapparaat in te schrijven of om de Intune-bedrijfsportal te gebruiken, moeten ze net als anderen beschikken over een Intune- of EMS-licentie. Hieronder vindt u aanvullende informatie.
 * In de Intune-bedrijfsportal kunnen eindgebruikers:
     * hun apparaat registreren
     * de status van hun apparaat weergeven
@@ -301,7 +361,7 @@ In oktober is bekendgemaakt dat hoofdbeheerders (ook wel tenantbeheerders genoem
     * koppelingen zoeken die door de hoofdbeheerder zijn gepubliceerd om contactgegevens van de IT-afdeling te verschaffen
 
     [Meer informatie over de bedrijfsportal](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal) en [manieren om de bedrijfsportal aan te passen](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal).
-* De persoon die zich aanmeldt om Intune of EMS te kopen namens een organisatie, wordt automatisch de eerste hoofdbeheerder in de tenant. Sinds dit najaar wijst Intune automatisch een Intune- of EMS-licentie toe aan die eerste hoofdbeheerder als onderdeel van de overstap op de [Office 365-portal](http://portal.office.com/) en het buiten gebruik stellen van de [Intune-accountportal](http://account.manage.microsoft.com/). Er kunnen zonder afzonderlijke Intune- en EMS-licenties eventueel andere hoofdbeheerders worden toegevoegd voor het dagelijkse beheer. Als er acties worden uitgevoerd als eindgebruiker en wanneer er eigen (of bedrijfs)apparaten worden ingeschreven, of wanneer er software wordt gedownload via de bedrijfsportal, moet er toch een licentie worden aangeschaft, net als voor andere gebruikers het geval is.
+* De persoon die zich aanmeldt om Intune of EMS te kopen namens een organisatie, wordt automatisch de eerste hoofdbeheerder in de tenant. Sinds deze herfst wijst Intune automatisch een Intune- of EMS-licentie toe aan die eerste hoofdbeheerder, als onderdeel van de overstap op de [Office 365-portal](http://portal.office.com/) en het buiten gebruik stellen van de [Intune-accountportal](http://account.manage.microsoft.com/). Er kunnen zonder afzonderlijke Intune- en EMS-licenties eventueel andere hoofdbeheerders worden toegevoegd voor het dagelijkse beheer. Als er acties worden uitgevoerd als eindgebruiker en wanneer er eigen (of bedrijfs)apparaten worden ingeschreven, of wanneer er software wordt gedownload via de bedrijfsportal, moet er toch een licentie worden aangeschaft, net als voor andere gebruikers het geval is.
 * De wijziging wordt gefaseerd geïmplementeerd en is van toepassing vanaf januari 2016.
 * Voor Microsoft-partners heeft deze wijziging geen invloed op het vermogen om de service namens klanten te beheren. Voor eindgebruikerstaken moet een gebruiker beschikken over een Intune- of EMS-licentie om een apparaat in te schrijven en software via de bedrijfsportal te openen of downloaden.
 
@@ -363,6 +423,7 @@ De volgende wijzigingen zijn aangebracht aan de bedrijfsportal-apps in deze vers
 >[&larr; **Wat is er nieuw in Intune?**](whats-new-in-microsoft-intune.md)    
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO3-->
 
 

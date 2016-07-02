@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Apparaten in bedrijfseigendom met een IMEI-nummer opgeven | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
         Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Handmatig apparaatdetails toevoegen**: geef het IMEI-nummer en de apparaatdetails van maximaal vijf apparaten op.
@@ -54,6 +47,7 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 Wanneer het apparaat met het betreffende IMEI-nummer wordt geregistreerd, gewoonlijk wanneer een gebruiker de bedrijfsportal-app installeert en het registratieproces voltooit, wordt het apparaat gemarkeerd als eigendom van het bedrijf en weergegeven als geregistreerd in de groep **IMEI-apparaten**.
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO3-->
 
 

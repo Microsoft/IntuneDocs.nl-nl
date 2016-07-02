@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Licentieovereenkomsten voor Windows-pc-software beheren| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ In de werkruimte **Licenties** van de Intune-beheerconsole kunt u:
 
 U kunt bovendien rapporten genereren waarin statistieken voor software-installaties en -licenties worden weergegeven. Met licentierapporten kunt u al uw licenties voor Microsoft-software en niet-Microsoft-software inventariseren.
 
-> [!TIP]De werkruimte **Licenties** wordt pas weergegeven in de beheerconsole als u ten minste één Windows-computer met de Intune Windows-computerclient beheert.
+> [!TIP]
+> De werkruimte **Licenties** wordt pas weergegeven in de beheerconsole als u ten minste één Windows-computer met de Intune Windows-computerclient beheert.
 
 ## Microsoft-volumelicentieovereenkomsten toevoegen
 Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die is gekocht via Microsoft-volumelicentieovereenkomsten. U kunt Microsoft-volumelicentieovereenkomsten aan Intune toevoegen door overeenkomende sets overeenkomstnummers op te geven. De overeenkomst- of autorisatienummers moeten overeenkomen met de juiste licentie- of inschrijvingsnummers. Sets overeenkomstnummers worden verkregen bij de aankoop van de licentieovereenkomsten van het [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
@@ -94,11 +89,12 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
         -   **Autorisatie-/overeenkomstnummer**: voer het autorisatie-/overeenkomstnummer van de licentieset in.
 
-        -   **Licentie-/registratie-/klantnummer**: voer het licentie-/registratie-/klantnummer in van de licentieset.
+        -   **Licentie-/inschrijvings-/klantnummer**: voer het licentie-/inschrijvings-/klantnummer van de licentieset in.
 
-        > [!NOTE] Als u meerdere sets overeenkomstnummers toevoegt, maakt Intune één overeenkomst met de naam die u opgeeft en worden alle sets die u hebt toegevoegd, opgenomen als onderdeel van deze overeenkomst.
+        > [!NOTE]
+        > Als u meerdere sets overeenkomstnummers toevoegt, maakt Intune één overeenkomst met de naam die u opgeeft en worden alle sets die u hebt toegevoegd, opgenomen als onderdeel van deze overeenkomst.
 
-    Als u op **+** klikt, kunt u nog een andere set overeenkomstnummers toevoegen. Als u op **-** klikt, verwijdert u een set overeenkomstnummers die u eerder hebt opgegeven.
+    Als u op **+** klikt, kunt u nog een ander overeenkomstnummerpaar toevoegen. Als u op **-** klikt, kunt u een overeenkomstnummerpaar verwijderen dat u eerder hebt opgegeven.
 
 4.  In het gedeelte **Licentiegroep selecteren** voert u een van de volgende handelingen uit:
 
@@ -114,7 +110,8 @@ De weergave **Alle overeenkomsten** wordt weergegeven en Intune maakt verbinding
 
 Als u de volumelicentiegegevens wilt bijwerken nadat u licentieovereenkomsten aan Intune hebt toegevoegd, klikt u op de pagina **Licentieoverzicht** op **Nu vernieuwen**. Hierdoor worden de huidige licentiegegevens van de [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)opgehaald.
 
-> [!IMPORTANT] Totdat u de volumelicentiegegevens vernieuwt, ziet u op de pagina **Overeenkomstenoverzicht** mogelijk andere gegevens in de lijst met overeenkomsten en de informatie over rechten.
+> [!IMPORTANT]
+> Totdat u de volumelicentiegegevens vernieuwt, ziet u op de de pagina **Overeenkomstenoverzicht** mogelijk verschillende gegevens in de lijst met overeenkomsten en rechteninformatie.
 
 Na het vernieuwen van de volumelicentiegegevens kunt u de licentiegegevens vergelijken met de gedetecteerde Microsoft-software in de werkruimte **Apps** . U kunt ook de volgende licentierapporten uitvoeren:
 
@@ -122,7 +119,8 @@ Na het vernieuwen van de volumelicentiegegevens kunt u de licentiegegevens verge
 
 -   **Licentie-installatierapporten**: hiermee kunt u bepalen of de dekking van de licentieovereenkomst voldoende is.
 
-> [!NOTE] De **producttitel** die wordt weergegeven voor alle Microsoft-volumelicentieovereenkomsten is **niet beschikbaar**.
+> [!NOTE]
+> De **producttitel** die wordt weergegeven voor alle Microsoft-volumelicentieovereenkomsten is **niet beschikbaar**.
 
 ## Andere softwarelicentieovereenkomsten toevoegen en bewerken
 Naast Microsoft-volumelicentieovereenkomsten kunt u ook andere typen licentieovereenkomsten aan Intune toevoegen. Dit kunnen overeenkomsten zijn voor niet-Microsoft-software of voor Microsoft-software die via de detailhandel is gekocht.
@@ -184,6 +182,7 @@ Softwarelicentieovereenkomsten kunnen worden toegevoegd aan licentiegroepen. U k
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

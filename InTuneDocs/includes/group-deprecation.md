@@ -6,6 +6,6 @@
 >Nieuwe dynamische toewijzing van apparaatgroepen kan worden gedefinieerd in Azure Active Directory op basis van de naam van het registratieprofiel voor bedrijfsapparaten. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd. Meer informatie zal binnenkort worden gepubliceerd.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

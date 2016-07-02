@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Beleidsinstellingen voor Windows Phone 8.1 | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -52,7 +46,7 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 |**Eenvoudige wachtwoorden toestaan**|Eenvoudige wachtwoorden zijn onder andere '0000' en '1234'|Ja|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u het aantal keren op dat een onjuist wachtwoord kan worden onthouden voordat het apparaat wordt gewist.|Ja|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.|Ja|Ja|
-|**Verlopen van wachtwoorden (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
+|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u aan hoeveel eerder gebruikte wachtwoorden er worden onthouden.|Ja|Ja|
 
@@ -127,7 +121,8 @@ In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met 
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
-> [!IMPORTANT] Als u een lijst met toegestane apps voor Windows Phone 8.1-apparaten opgeeft, moet u de bedrijfsportal-app aan deze lijst toevoegen, anders wordt deze app geblokkeerd.
+> [!IMPORTANT]
+> Als u een lijst met toegestane apps voor Windows Phone 8.1-apparaten opgeeft, moet u de Bedrijfsportal-app aan deze lijst toevoegen, anders wordt deze app geblokkeerd.
 
 
 ### Referentie-informatie voor compatibele en niet-compatibele apps
@@ -174,6 +169,7 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

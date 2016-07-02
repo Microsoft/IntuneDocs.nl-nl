@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Voorbeeldscenario’s van het beperken van toegang tot e-mail | Microsoft Intune
-description:
-keywords:
+title: "Voorbeeldscenario’s van het beperken van toegang tot e-mail | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 962840a608a7b228d5f2519ea566d996bb4e21a4
+
 
 ---
 
@@ -86,6 +80,7 @@ De volgende stroom wordt gebruikt om te bepalen welke apparaten toegang krijgen 
 ![Diagram met werkstroom voor toegang tot apparaten](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -13,6 +13,7 @@ ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: a9512738cd48438d85c7a98b0d533fbe6e6b8ba2
 
@@ -42,6 +43,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 
