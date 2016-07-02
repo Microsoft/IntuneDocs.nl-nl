@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Apps implementeren | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
+ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+
 ---
 # Apps in Microsoft Intune implementeren
 
@@ -69,6 +63,7 @@ Als u de app hebt geïmplementeerd als **Vereist**, krijgt de gebruiker een meld
 Nadat u een app hebt geïmplementeerd, is het een goed idee om de voortgang ervan te controleren. Zie [Apps in Microsoft Intune controleren](monitor-apps-in-microsoft-intune.md) voor meer informatie.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

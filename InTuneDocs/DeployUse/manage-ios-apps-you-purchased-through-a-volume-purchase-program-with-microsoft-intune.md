@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: iOS-apps beheren die u hebt aangeschaft via een volume-aankoopprogramma| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Als u een licentie wilt vrijmaken, moet u de implementatieactie wijzigen in **Ve
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app te installeren, wordt deze gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Dit moet plaatsvinden voordat de installatie van de app wordt voortgezet.
 
-> [!TIP] Bekijk de kolom **Status VPP-voorwaarden** voor de acceptatiestatus voor elke gebruiker voor wie de app is geïmplementeerd.
+> [!TIP]
+> Bekijk de kolom **Status VPP-gebruiksrechtovereenkomst** voor de acceptatiestatus voor elke gebruiker voor wie de app is geïmplementeerd.
 
 Als er geen licenties meer beschikbaar zijn, mislukt de implementatie.
 
 ## Apple VPP-apps bewaken
 U kunt bewaken welke VPP-apps zijn geïmplementeerd en hoeveel licenties worden gebruikt vanuit de **Apps**-werkruimte, in het knooppunt **Beheerde software** &gt; **Apps die zijn gekocht via het volume-aankoopprogramma**.
 
-> [!TIP] U kunt ook met de app **Filters** nagaan wat de status van elke app-installatie is.
+> [!TIP]
+> U kunt ook de app **Filters** gebruiken om de status van elke app-installatie te onderzoeken.
 
-### Zie ook
+### Zie tevens
 [Apps in Microsoft Intune implementeren](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

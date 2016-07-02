@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Windows-beleidsinstellingen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: aa62528e588b0579669ab8d115766efd72e6f9b2
+
 
 ---
 
@@ -43,7 +37,7 @@ Gebruik de **algemene regels voor het Windows-configuratiebeleid (Windows 8.1 en
 |**Minimale wachtwoordlengte**<sup>1</sup>|Hiermee configureert u de minimaal vereiste lengte (in tekens) voor het wachtwoord op apparaten.|Ja|Ja|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee worden de gegevens op het apparaat gewist als het aanmelden dit aantal keren mislukt.|Ja|Ja|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee kiest u het aantal minuten dat een apparaat inactief moet zijn voordat er een wachtwoord is vereist om het apparaat te ontgrendelen.| Ja|Ja|
-|**Verlopen van wachtwoorden (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
+|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of de gebruiker eerder gebruikte wachtwoorden kan configureren.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|Ja|Ja|
 |**Afbeeldingswachtwoord en PIN toestaan**|Hiermee kunt het gebruik van een afbeeldingswachtwoord en pincode op het apparaat toestaan. Met een afbeeldingswachtwoord kan de gebruiker zich met gebaren op een afbeelding aanmelden. Met een pincode kunnen gebruikers zich snel met 4 cijfers aanmelden.|Ja|Ja|
@@ -125,6 +119,7 @@ Gebruik de **algemene regels voor het Windows-configuratiebeleid (Windows 8.1 en
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

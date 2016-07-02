@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Proof-of-concept | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4c01b7cec6474153fcea465fc050ac419ca2eec5
+
 
 ---
 
@@ -42,7 +36,7 @@ Bespreek deze vragen met uw projectteam om de omvang van het project te bepalen,
 -   Welke techniek en medewerkers hebt u in uw pilotomgeving nodig om deze scenario's te kunnen valideren?
 
 ## Doelstellingen focusgebied
-Lees deze sectie met richtlijnen over focusgebiedactiviteiten voor deze fase van uw implementatie.
+Lees dit gedeelte met richtlijnen over focusgebiedactiviteiten voor deze fase van uw implementatie.
 
 ### Planning
 U moet weten welke scenario's u wilt valideren en wat u voor deze validatie nodig hebt, voordat u uw PoC-infrastructuur implementeert.
@@ -83,6 +77,7 @@ Hier vindt u enkele uitdagingen die in de **PoC**-fase kunnen optreden.
 [Pilotimplementatie](pilot.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

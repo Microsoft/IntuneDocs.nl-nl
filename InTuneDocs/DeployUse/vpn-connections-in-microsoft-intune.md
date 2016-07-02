@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: VPN-verbindingen | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
+ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+
 
 ---
 
@@ -151,7 +145,7 @@ Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van 
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarop u het beleid wilt implementeren en klik vervolgens op**Toevoegen** &gt; **OK**.
+    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
 
     -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: kies **Annuleren**.
 
@@ -165,6 +159,7 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 [Per app VPN voor Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

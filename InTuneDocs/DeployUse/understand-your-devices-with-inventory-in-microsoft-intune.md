@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Inzicht in uw apparaten met inventarisaties | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+
 
 ---
 
@@ -66,9 +60,10 @@ Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert
 |**Versleuteling ingeschakeld**|Alle apparaten|
 
 ## Wat wordt er verzameld voor Windows-pc's?
-> [!IMPORTANT] Deze sectie geldt alleen voor Windows-pc's waarop de Intune Windows-clientsoftware voor pc's wordt uitgevoerd.
+> [!IMPORTANT]
+> Deze sectie geldt alleen voor Windows-computers waarop de Intune Windows- clientsoftware wordt uitgevoerd.
 
-Als u de inventaris wilt weergeven die voor Windows-pc's is verzameld, voert u de [rapporten voor de inventaris van computers](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van Windows-pc's verzameld:
+Als u de inventaris wilt weergeven die voor Windows-pc’s is verzameld, voert u de [rapporten voor de inventaris van computers](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van Windows-pc's verzameld:
 
 -   **Naam**
 
@@ -118,6 +113,7 @@ Als u de inventaris wilt weergeven die voor Windows-pc's is verzameld, voert u d
 -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
