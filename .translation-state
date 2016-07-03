@@ -4429,8 +4429,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\nextref_server_7_md.fd6dbb84ce90d2dca2ef0d60af466f57f197a909.nl-nl.xlf",
-      "BilingualFileCommit": "32cded4efa4ed919a11c1862ca50874f02e6891a",
-      "BilingualDateTime": "2016-06-16T10:23:22.5388416Z",
+      "BilingualFileCommit": "21841305d054428df51f274ec66a8d876883999d",
+      "BilingualDateTime": "2016-07-03T01:16:21.7214227Z",
       "BilingualException": null
     },
     "d697f565046a9fb63f1ab57b882ccb6053c0f841": {
@@ -4661,8 +4661,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\win8_client_1_md.0172aa946d4274e43e6be1054d11a85eb81dfc8e.nl-nl.xlf",
-      "BilingualFileCommit": "32cded4efa4ed919a11c1862ca50874f02e6891a",
-      "BilingualDateTime": "2016-06-16T10:23:22.5388416Z",
+      "BilingualFileCommit": "21841305d054428df51f274ec66a8d876883999d",
+      "BilingualDateTime": "2016-07-03T01:16:21.7214227Z",
       "BilingualException": null
     },
     "c6a1c70d4bdc9367af817b843e529a7f9d2d3d33": {
@@ -73806,8 +73806,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\compare-azure-rms-ad-rms.4805b567858dd2f4067e44738d85aea3757b387c.nl-nl.xlf",
-      "BilingualFileCommit": "f3e62ce12ff6df533ad1c74e31fa262fdcc6b00a",
-      "BilingualDateTime": "2016-06-16T10:23:22.5388416Z",
+      "BilingualFileCommit": "21841305d054428df51f274ec66a8d876883999d",
+      "BilingualDateTime": "2016-07-03T01:16:21.7214227Z",
       "BilingualException": null
     },
     "5619e5845625a1b2503aebb965df651d69cb14e5": {
@@ -75982,8 +75982,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.ee0d6e4793d84f56530614f919af0cf682e59684.nl-nl.xlf",
-      "BilingualFileCommit": "9a2e9b929808c70d15df2b2468019e62f2a65466",
-      "BilingualDateTime": "2016-06-16T19:58:43.4676132Z",
+      "BilingualFileCommit": "21841305d054428df51f274ec66a8d876883999d",
+      "BilingualDateTime": "2016-07-03T01:16:21.7214227Z",
       "BilingualException": null
     },
     "54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6": {
@@ -76472,8 +76472,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.nl-nl.xlf",
-      "BilingualFileCommit": "9a2e9b929808c70d15df2b2468019e62f2a65466",
-      "BilingualDateTime": "2016-06-16T19:58:43.4676132Z",
+      "BilingualFileCommit": "21841305d054428df51f274ec66a8d876883999d",
+      "BilingualDateTime": "2016-07-03T01:16:21.7214227Z",
       "BilingualException": null
     },
     "0414b801ad4552aa89bd324f0f0641335091e6e5": {
