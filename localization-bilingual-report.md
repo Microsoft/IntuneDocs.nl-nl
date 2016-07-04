@@ -1,11 +1,43 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md) | InSyncHandedBackSuccess | [Details](#20715a7298d29bcf817ddbfc809eb84ead8d97ef145)
+ [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/80de3ab273c090f466fc381390d84b8f7b90f6f4/Azure-RMSDocs/index.md) | InSyncHandedBackSuccess | [Details](#6ba6e7b208c0b53a5cc6f38811f6845234bf7983155)
 
 ## Item Details
+##### <a name='20715a7298d29bcf817ddbfc809eb84ead8d97ef145'></a> Source: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/a4741f2feb207c3d454f915bbc5d3181095fd3d6/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
+* Handoff File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/0bd4832fab0fc5250ecf9218978e769d02732aa3/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf)
+* Handoff Datetime: 2016-06-27 13:14:37
+* Handoff Reason: Include
+* Archive File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf)
+* Archive Datetime: 2016-07-02 00:05:37
+* Handback File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3966b123ec65e99d9422ddbb5a4e1e6ee8fe1a6a/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf)
+* Handback Datetime: 2016-07-04 10:30:14
+* Bilingual File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3966b123ec65e99d9422ddbb5a4e1e6ee8fe1a6a/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-04 10:33:14
+* [Back to Top](#report-top)
+
+##### <a name='6ba6e7b208c0b53a5cc6f38811f6845234bf7983155'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/80de3ab273c090f466fc381390d84b8f7b90f6f4/Azure-RMSDocs/index.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/a4741f2feb207c3d454f915bbc5d3181095fd3d6/Azure-RMSDocs/index.md)
+* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/0bd4832fab0fc5250ecf9218978e769d02732aa3/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
+* Handoff Datetime: 2016-06-27 13:14:37
+* Handoff Reason: Include
+* Archive File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
+* Archive Datetime: 2016-07-02 00:05:37
+* Handback File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3966b123ec65e99d9422ddbb5a4e1e6ee8fe1a6a/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
+* Handback Datetime: 2016-07-04 10:30:14
+* Bilingual File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3966b123ec65e99d9422ddbb5a4e1e6ee8fe1a6a/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-04 10:33:14
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
