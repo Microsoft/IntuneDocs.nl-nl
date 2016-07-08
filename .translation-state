@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "823bdc463ff5c512d479f098f1fb3a7c192f4ed8",
+  "LastProcessedCommit": "9099dcd4908c43e10d1f0f050b813c9b22842785",
   "LastTranslatedCommit": "a4741f2feb207c3d454f915bbc5d3181095fd3d6",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -81421,7 +81421,9 @@
       "SourceFilePath": "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": null,
+      "TokenReference": [
+        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
+      ],
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
       ],
@@ -81572,6 +81574,41 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf",
       "HandoffFileCommit": "e6c4723521ed996c8f587dea378a7a44ab74ddba",
       "HandoffDateTime": "2016-07-06T23:38:47.8965307Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f": {
+      "FileHash": "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f",
+      "SourceFileCommit": "f8e23e8bcbfb25092cb31f7af76d17239f3063a7",
+      "SourceFilePath": "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf",
+      "HandoffFileCommit": "ba34be18ce0247da6004f17a8001fb5ca8238aae",
+      "HandoffDateTime": "2016-07-08T17:37:51.4711364Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
