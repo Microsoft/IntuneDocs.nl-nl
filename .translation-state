@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a721551274f50639e503aaf8263c5ba20edfe974",
+  "LastProcessedCommit": "823bdc463ff5c512d479f098f1fb3a7c192f4ed8",
   "LastTranslatedCommit": "a4741f2feb207c3d454f915bbc5d3181095fd3d6",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -81421,9 +81421,7 @@
       "SourceFilePath": "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
-      "TokenReference": [
-        "Azure-RMSDocs\\includes\\aad_rightsmanagement_2_md.md"
-      ],
+      "TokenReference": null,
       "FilePathList": [
         "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
       ],
