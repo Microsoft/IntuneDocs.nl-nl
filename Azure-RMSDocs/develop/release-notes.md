@@ -1,26 +1,21 @@
 ---
-# required metadata
-
 title: Wat is er nieuw en release-opmerkingen | Azure RMS
 description: Geeft een overzicht van belangrijke wijzigingen en functies in deze nieuwe versie van de RMS SDK.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+
 
 ---
 
@@ -29,7 +24,8 @@ ms.suite: ems
 ## Wat is er nieuw?
 Microsoft Rights Management SDK 4.2 maakt het activeren van de RMS-toepassing een stuk eenvoudiger en biedt hierbij meer flexibiliteit. In dit onderwerp worden de belangrijke wijzigingen en functies in deze nieuwe versie van de RMS SDK beschreven.
 
--   [Nieuw voor de update van december 2015](#new_for_our_december_2015_update)
+-   [Nieuw voor juni 2016](#new_for_June_2016)
+-   [Update van december 2015](#december_2015_update)
 -   [Update van juli 2015: voegt ondersteuning toe voor Linux/C++-ontwikkeling](#july_2015_update_-_adds_support_for_linux___c___development)
 -   [Update van mei 2015: voegt beheer voor logboekregistratie toe](#may_2015_update_-_adds_logging_control)
 -   [Update van februari 2015: voegt ondersteuning toe voor Windows Store-apps](#february_2015_update_-_adds_windows_store_application_support)
@@ -38,7 +34,15 @@ Microsoft Rights Management SDK 4.2 maakt het activeren van de RMS-toepassing ee
 -   [Opmerkingen bij de release](#release-notes)
 -   [Veelgestelde vragen](#frequently_asked_questions)
 
-### Nieuw voor de update van december 2015
+### Nieuw voor juni 2016
+
+- **Ondersteuning voor moderne verificatie** - Biedt aanmelding bij RMS-geschikte apps op basis van Active Directory Authentication Library (ADAL). Hiermee zijn aanmeldingsfuncties mogelijk zoals Multi-Factor Authentication (MFA), onafhankelijke identiteitsproviders op basis van SAML met RMS-clienttoepassingen en verificatie op basis van smartcards en certificaten. Daarnaast is het gebruik van het basisverificatieprotocol in voor RMS-geschikt apps niet meer nodig dankzij deze ondersteuning.
+- **Ondersteuning voor documenttracking** -Ontwikkelaars kunnen nu documenttracking inschakelen bij het beveiligen van documenten in hun apps 
+- Verbeterde prestaties
+- Oplossingen voor problemen
+
+
+### Update van december 2015
 
 Bij deze release heeft de RMS SDK voor apparaten nu versie 4.2 en hierin zijn toegevoegd:
 
@@ -124,7 +128,7 @@ In deze sectie wordt informatie verstrekt over de huidige en vorige versies van 
 
 -   **AD RMS-ondersteuning**: IT-beheerders kunnen RMS-apps voor mobiele apparaten gebruiken met de nieuwe uitbreidingen voor mobiele apparaten van de AD RMS-server.
 -   **Offlinegebruik**: eindgebruikers hebben offlinetoegang tot de gegevens die door RMS zijn beveiligd.
--   **Gescheiden verificatie**: ontwikkelaars kunnen gebruikmaken van hun eigen verificatiebibliotheek voor Azure RMS en AD RMS (of gebruikmaken van de aanbevolen [Azure AD Authentication Library (ADAL)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx)).
+-   **Gescheiden verificatie** Ontwikkelaars kunnen gebruikmaken van hun eigen verificatiebibliotheek voor Azure RMS en AD RMS (of gebruikmaken van de aanbevolen [Azure AD Authentication Library (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx)).
 -   **Gescheiden gebruikersinterface**: ontwikkelaars kunnen hun gebruikersinterface bouwen voor het beveiligen en gebruiken van documenten die door RMS worden beveiligd.
 -   **Opnieuw ontworpen API**: ontwikkelaars kunnen nu gebruikmaken van een eenvoudige en transparante API voor versleuteling en ontsleuteling, die met een minimale inspanning zorgt voor consistentie in het RMS-gedrag en de gebruikerservaring.
 
@@ -227,6 +231,7 @@ In deze sectie wordt informatie verstrekt over de huidige en vorige versies van 
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
