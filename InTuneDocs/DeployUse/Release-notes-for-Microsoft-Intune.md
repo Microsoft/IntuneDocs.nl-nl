@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Opmerkingen bij de release van Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+
 
 ---
 
@@ -65,7 +59,7 @@ In beide bovenstaande gevallen is het brontoegangsprofiel (e-mailprofiel) niet v
 
 1.  Open **Internet Explorer** op het Windows 8.1-apparaat.
 
-2.  Als u wordt gevraagd naar de referenties voor de proxyserver, voert u de referenties in en selecteert u vervolgens de optie **Mijn referenties onthouden**.
+2.  Als u wordt gevraagd om de referenties voor de proxyserver, voert u de referenties in en selecteert u vervolgens de optie **Mijn referenties onthouden**.
 
 3.  Het apparaat inschrijven.
 
@@ -78,7 +72,7 @@ In beide bovenstaande gevallen is het brontoegangsprofiel (e-mailprofiel) niet v
 ## De Microsoft Intune App Wrapping Tool voor Android bevat geen ingebouwde mogelijkheid om het programma te verwijderen
 **Probleem:** de **Microsoft App Wrapping Tool voor Android** heeft geen ingebouwde functionaliteit voor het verwijderen van het hulpprogramma.
 
-**Tijdelijke oplossing:** blader naar de locatie waar u het hulpprogramma hebt geïnstalleerd en verwijder de map. De standaardlocatie voor de installatie is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Zie [Android-apps voorbereiden voor beheer met de App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) voor meer informatie over de App Wrapping Tool.
+**Tijdelijke oplossing:** blader naar de locatie waar u het hulpprogramma hebt geïnstalleerd en verwijder de map. De standaardlocatie voor de installatie is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Zie [Prepare Android apps for management with App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) (Android-apps voorbereiden voor beheer met de App Wrapping Tool) voor meer informatie over de App Wrapping Tool.
 
 ## Hulp op afstand is niet beschikbaar op computers met Windows 8 of Windows 8.1
 **Probleem:** in deze release is de functie Hulp op afstand niet beschikbaar op computers met Windows 8 of Windows 8.1.
@@ -96,6 +90,7 @@ De Azure Preview-portal is gemaakt op een nieuw platform en biedt ondersteuning 
 De Intune-beheerconsole en mobiele eindgebruikers worden ondersteund in de talen Deens, Fins, Grieks, Noors en Roemeens, en in alle talen die worden ondersteund door de Azure Preview-portal.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
