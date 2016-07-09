@@ -4,7 +4,7 @@ description: Instructies over het ontwikkelen van een toepassing met RMS SDK 2.1
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: f995da0698ec5fb4a8e46865b70506ced92f73db
+ms.sourcegitcommit: cb1a4dfa4465e8f4798866c95d8965eec1b68f6b
+ms.openlocfilehash: 5dcb3fe88cced7945591a08c492b32bdc8895162
 
 
 ---
@@ -185,6 +185,6 @@ U moet alle toegewezen resources vrijgeven om het proces te voltooien.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
