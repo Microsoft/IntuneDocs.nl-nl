@@ -6,24 +6,21 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f8e23e8bcbfb25092cb31f7af76d17239f3063a7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md) | OutofSyncHandedBackSuccess | [Details](#32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f30)
+ [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/release-notes.md) | OutofSyncHandedBackSuccess | [Details](#eccc0ba9c13e0c35c8d0c8877ce92f9b99e8383585)
 
 ## Item Details
-##### <a name='32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f30'></a> Source: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f8e23e8bcbfb25092cb31f7af76d17239f3063a7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
+##### <a name='eccc0ba9c13e0c35c8d0c8877ce92f9b99e8383585'></a> Source: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/release-notes.md)
 * Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ba34be18ce0247da6004f17a8001fb5ca8238aae/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
-* Handoff Datetime: 2016-07-08 17:37:51
+* Target File: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/eb40dc91a693488928be8216812223a278faf2d1/Azure-RMSDocs/develop/release-notes.md)
+* Handoff File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/d8ff3348e43de608e0301fc377402cf725e37f13/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.nl-nl.xlf)
+* Handoff Datetime: 2016-07-11 09:27:34
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/5c1fc21ca9d666036ebe06efe3a102486a89281b/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
-* Current Handback File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/60a13621987b8790ed7c86111e1876d5688204bd/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
-* Current Handback Datetime: 2016-06-22 16:54:35
-* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/60a13621987b8790ed7c86111e1876d5688204bd/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
-* Bilingual Datetime: 2016-06-22 17:15:27
+* Handback File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/13f5437200886c02772cf4c0f056123cb9c3aaf3/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.nl-nl.xlf)
+* Handback Datetime: 2016-07-08 19:06:19
+* Bilingual File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/13f5437200886c02772cf4c0f056123cb9c3aaf3/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-08 19:07:58
 * [Back to Top](#report-top)
 
 
