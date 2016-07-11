@@ -21,5 +21,12 @@
     "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/Azure-RMSDocs.nl-nl",
-  "skip_source_output_uploading": false
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.nl-nl",
+      "branch": "master"
+    }
+  ]
 }
