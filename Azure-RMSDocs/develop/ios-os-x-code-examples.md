@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: acc140931b5f834ce1d70c851d90c334a03010dc
-ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
 
 
 ---
@@ -36,9 +36,9 @@ Hieronder vindt u **Objective-C**-codevoorbeelden uit een grotere voorbeeldtoepa
 ###Scenario: een met RMS beveiligd bestand gebruiken
 
 
-- **Stap 1**: maak een [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd)-object
+- **Stap 1**: maak een [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata)object
 
- **Beschrijving**: maak een [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd)-object via de methode waarmee de serviceverificatie wordt geïmplementeerd met behulp van de [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) om een token op te halen door een instantie van **MSAuthenticationCallback**, als de parameter *authenticationCallback*, door te geven aan de MSIPC-API. Zie de aanroep aan [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) in het volgende voorbeeldcodegedeelte.
+ **Beschrijving**: Instantieer een [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata)-object via de methode waarmee de serververificatie wordt geïmplementeerd met de [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) om een token op te halen door een instantie van **MSAuthenticationCallback**, als de parameter *authenticationCallback*, door te geven aan de MSIPC-API. Zie de aanroep aan [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) in het volgende voorbeeldcodegedeelte.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -285,6 +285,6 @@ Dit scenario begint met het ophalen van een lijst met sjablonen ([**MSTemplateDe
  
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
