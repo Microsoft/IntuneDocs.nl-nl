@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/develop/ios-os-x-code-examples.md) | InSyncHandedBackSuccess | [Details](#66bb1b58cba19d0fe8bc2ec0d3720c0b040f837876)
 
 ## Item Details
+##### <a name='66bb1b58cba19d0fe8bc2ec0d3720c0b040f837876'></a> Source: [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/develop/ios-os-x-code-examples.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/4dd1e67d90a786639ac1e94cc6b0fc934843e959/Azure-RMSDocs/develop/ios-os-x-code-examples.md)
+* Handoff File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/e6c4723521ed996c8f587dea378a7a44ab74ddba/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
+* Handoff Datetime: 2016-07-06 23:38:47
+* Handoff Reason: Include
+* Archive File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/669b113940ce3a3d220bf646637e04c86bc36fd9/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
+* Archive Datetime: 2016-07-08 23:46:14
+* Handback File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/ed7e48f3de330fbc44b91eb771d1d63342c79dd3/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
+* Handback Datetime: 2016-07-12 17:18:16
+* Bilingual File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/c1ae5b3530fad4e404619acd4e1b7183facb9145/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-02 08:25:37
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
