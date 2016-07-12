@@ -81553,9 +81553,9 @@
       "ArchiveFileCommit": "669b113940ce3a3d220bf646637e04c86bc36fd9",
       "ArchiveFileDateTime": "2016-07-08T23:46:14.7063482Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf",
+      "BilingualFileCommit": "ed7e48f3de330fbc44b91eb771d1d63342c79dd3",
+      "BilingualDateTime": "2016-07-12T17:50:49.328954Z",
       "BilingualException": null
     },
     "a3ed9e8de496741fae8904481edb1177762a12c0": {

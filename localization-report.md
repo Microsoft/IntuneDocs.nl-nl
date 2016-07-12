@@ -1574,8 +1574,8 @@
 * Archive Datetime: 2016-07-08 23:46:14
 * Handback File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/ed7e48f3de330fbc44b91eb771d1d63342c79dd3/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
 * Handback Datetime: 2016-07-12 17:18:16
-* Bilingual File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/c1ae5b3530fad4e404619acd4e1b7183facb9145/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
-* Bilingual Datetime: 2016-07-02 08:25:37
+* Bilingual File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/ed7e48f3de330fbc44b91eb771d1d63342c79dd3/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-12 17:50:49
 * [Back to Top](#report-top)
 
 ##### <a name='821fe1c361dc38b1e33ac66208122de165d0202077'></a> Source: [Azure-RMSDocs\develop\ios-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/ios-sdk.md)
