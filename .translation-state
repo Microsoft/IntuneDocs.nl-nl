@@ -80201,9 +80201,9 @@
       "ArchiveFileCommit": "ca7017c09c65624791453b70f590eaa2eb5234a1",
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf",
+      "BilingualFileCommit": "3d7544936b5d079172d5c42766eb81060d35373d",
+      "BilingualDateTime": "2016-07-12T19:53:45.5107913Z",
       "BilingualException": null
     },
     "4126bc6373f02bdc66206d9d88de43268387d6cf": {

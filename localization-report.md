@@ -876,8 +876,8 @@
 * Current Target File: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/901209723056527d566f0d266582a56eb40a3461/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
 * Current Handback File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3d7544936b5d079172d5c42766eb81060d35373d/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
 * Current Handback Datetime: 2016-07-12 19:52:06
-* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/60a13621987b8790ed7c86111e1876d5688204bd/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
-* Bilingual Datetime: 2016-06-22 17:15:27
+* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3d7544936b5d079172d5c42766eb81060d35373d/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-12 19:53:45
 * [Back to Top](#report-top)
 
 ##### <a name='496edca2e2323e17216858e2ab4844fdb0aa1fb030'></a> Source: [Azure-RMSDocs\deploy-use\operations-customer-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/operations-customer-managed-tenant-key.md)
