@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Privacyverklaring voor Microsoft Rights Management in toepassingen met RMS | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: msmbaldwin
 manager: msmbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 751e5e05-fbe2-4769-a5df-1362c0db2108
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e8b1dabe3ba2894bec9a87e6d34123d833c699b
+ms.openlocfilehash: 500701acb03aa9f049cc995f14e544e07556bc4f
+
 
 ---
 
@@ -44,7 +38,7 @@ Om toegang te krijgen tot beveiligde bestanden, wordt u gevraagd om u aan te mel
 ## De verzameling en het gebruik van uw persoonlijke gegevens door Microsoft
 De referenties en standaardapparaatgegevens die van u worden verzameld, kunnen door Microsoft worden gebruikt en door partners en dochterbedrijven ook worden gebruikt om de functies die u gebruikt in te schakelen en aanvullende dienst(en) te leveren of transactie(s) uit te voeren die u hebt aangevraagd of geautoriseerd. Standaardapparaatgegevens kunnen ook worden gebruikt om Microsoft-producten en -diensten te analyseren en verbeteren.
 
-We geven de referenties, lees- en ontvanstgegevens en/of standaardapparaatgegevens die van u worden verzameld, niet vrij buiten Microsoft of aan haar partners en dochterbedrijven, behalve als u hier expliciet mee instemt, of zoals beschreven in uw overeenkomst(en) of deze privacyverklaring.
+We geven de referenties, lees- en ontvangstgegevens en/of standaardapparaatgegevens die van u worden verzameld, niet vrij buiten Microsoft of aan haar partners en dochterbedrijven, behalve als u hier expliciet mee instemt, of zoals beschreven in uw overeenkomst(en) of deze privacyverklaring.
 
 We nemen van tijd tot tijd andere bedrijven aan om namens ons diensten te leveren (zoals klantondersteuning). Indien nodig voor hun overeenkomst kunnen wij deze bedrijven toegang geven tot uw gegevens. Deze bedrijven zijn verplicht om de vertrouwelijkheid van uw gegevens te waarborgen en mogen deze gegevens niet voor andere doeleinden gebruiken dan waarvoor ze door Microsoft zijn ingeschakeld.
 
@@ -53,7 +47,7 @@ We zullen referenties, lees- en ontvangstgegevens en/of standaardapparaatgegeven
 Informatie die door Microsoft Rights Management wordt verzameld voor Microsoft of wordt verzonden naar Microsoft, kan worden opgeslagen en verwerkt in de Verenigde Staten of in een ander land waarin Microsoft of onze partners, dochterbedrijven of dienstverleners actief zijn. Microsoft houdt zich aan het Safe Harbor Framework van het Amerikaanse Department of Commerce met betrekking tot het verzamelen, gebruiken en bewaren van gegevens uit de Europese Unie, de Europese Economische Ruimte en Zwitserland.
 
 ## Microsoft Update
-Wanneer u toepassingen met Microsoft Rights Management met Windows gebruikt, kunt u kiezen voor Microsoft Update Microsoft Update (MU) is een service die updates voor Microsoft-software biedt, waaronder Microsoft Rights Management-client voor Windows. Zie [Update Services Privacy Statement (Privacyverklaring voor updateservices)](http://go.microsoft.com/fwlink/?linkid=50142) ([ op http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142) voor meer informatie over welke gegevens er worden verzameld, hoe deze gegevens worden gebruikt en hoe u de instellingen kunt wijzigen).
+Wanneer u toepassingen met Microsoft Rights Management met Windows gebruikt, kunt u kiezen voor Microsoft Update Microsoft Update (MU) is een service die updates voor Microsoft-software biedt, waaronder Microsoft Rights Management-client voor Windows. Zie [Privacyverklaring voor Services bijwerken](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142)) voor meer informatie over welke gegevens worden verzameld, hoe deze gegevens worden gebruikt en hoe u de instellingen kunt wijzigen.
 
 Keuze/bedieningselement: toepassingen met Microsoft Rights Management volgen voor een stille installatie de MU-instellingen die ook zijn toegepast op het Windows-bureaublad. Als MU niet is ingeschakeld ontvangt u bij gebruikersinstallaties mogelijk een prompt waarmee u MU kunt inschakelen. Als u hiervoor kiest dan worden deze MU-instellingen toegepast op alle toepassingen met Windows.
 
@@ -65,6 +59,7 @@ Deze privacyverklaring wordt af en toe bijgewerkt als gevolg van wijzigingen in 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

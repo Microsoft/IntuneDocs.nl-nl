@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Informatie en ondersteuning voor Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/13/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6052afabe4894f8129e9eebc93705b219e6ed875
+ms.openlocfilehash: a8f5852d965abe2f2654aa236bfd9ea49a62aa84
+
 
 ---
 
@@ -42,7 +36,8 @@ Gebruik de volgende resources voor aanvullende informatie over Microsoft [!INCLU
 ## Blog over de Rights Management-productgroep
 De Rights Management-productgroep werkt samen met de [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) om u technische informatie en ander nieuws over [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] en gerelateerde technologieën te leveren. Deze blogberichten vormen een aanvulling op de productdocumentatie en ondersteunende informatie.
 
-> [!TIP] Als u toepassingen ontwikkelt voor Azure RMS of AD RMS, bent u mogelijk ook geïnteresseerd in de blog [Active Directory Rights Management Services (AD RMS) Developer’s Corner](http://blogs.msdn.com/b/rms/).
+> [!TIP]
+> Als u toepassingen ontwikkelt voor Azure RMS of AD RMS, bent u mogelijk ook geïnteresseerd in het [blog Active Directory Rights Management Services (AD RMS) Developer's Corner](https://blogs.msdn.microsoft.com/rms/).
 
 ## Ondersteuningsopties en bronnen van de community
 De volgende secties bevatten informatie over ondersteunings- en probleemoplossingsopties en communityresources.
@@ -59,7 +54,7 @@ Andere klanten kunnen de volgende ondersteuningskanalen gebruiken, afhankelijk v
 
 - **Azure Rights Management met Enterprise Mobility Suite**: Als u ook Office 365 hebt, kunt u gebruikmaken van de [Office 365-ondersteuningskanalen](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  Zie [Enterprise Mobility Suite: Support FAQ](https://technet.microsoft.com/dn932057.aspx) (Enterprise Mobility Suite: veelgestelde vragen over ondersteuning) voor meer informatie.
 
-- **Azure Rights Management Premium**: Start een [ondersteuningsaanvraag in Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). U kunt deze optie gebruiken als u een Azure-abonnement en Azure-ondersteuningsplan hebt. Zie [Azure-ondersteuning voor klanten](https://azure.microsoft.com/support/plans/) voor aanvullende informatie. 
+- **Azure Rights Management Premium**: Start een [ondersteuningsaanvraag in Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). U kunt deze optie gebruiken als u een Azure-abonnement en Azure-ondersteuningsplan hebt. Zie [Azure-ondersteuning voor klanten](https://azure.microsoft.com/support/plans/) voor meer informatie. 
 
 Vraag uw Microsoft-contactpersoon naar aanvullende ondersteuningsopties. 
 
@@ -71,7 +66,15 @@ Training voor basisvaardigheden:
 
 Problemen oplossen:
 
-- Download het [hulpprogramma RMS Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=46437) en voer het uit. Zie de **details** en **installatie-instructies** op de downloadpagina voor meer informatie over dit hulpprogramma. 
+- Als u een vraag hebt over de werking van iets: controleer of uw vraag al is beantwoord op de pagina [Veelgestelde vragen](faqs.md).
+
+- Zie de informatie in [Vereisten](requirements-azure-rms.md) (wordt regelmatig bijgewerkt) als u een vraag hebt over een ondersteuningsverklaring voor Azure RMS.
+
+- Zie [Gebruikers helpen bij het beveiligen van bestanden](../deploy-use/help-users.md) voor informatie over de ondersteuning van uw eindgebruikers, helpdesk en beheerders die de services en toepassingen configureren die in Azure RMS worden gebruikt.
+
+- Zie de informatie in [Bewaking](../deploy-use/monitor-rms-connector.md) als u de RMS-connector hebt geïmplementeerd voor uw on-premises servers. Hier vindt u informatie over gebeurtenislogboekvermeldingen, prestatiemeteritems en logboekregistratie.
+
+- Download het [hulpprogramma RMS Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=46437) en voer dit uit voor geautomatiseerde controles, geautomatiseerd herstel en tracering. Zie de **details** en **installatie-instructies** op de downloadpagina voor meer informatie over dit hulpprogramma. 
 
 ### Communityresources
 
@@ -83,6 +86,7 @@ Problemen oplossen:
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

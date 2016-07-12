@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: RMS-toepassing voor delen voor Windows- en mobiele platforms | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+
 
 ---
 
@@ -50,7 +44,7 @@ Hoewel de RMS-toepassing voor delen voor Windows op de [Microsoft Rights Managem
 
 -   [Gebruikershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md)
 
-De RMS-toepassing voor delen voor mobiele apparaten ondersteunt veelgebruikte mobiele apparaten, zoals iPad en iPhone, Android, Windows Phone en Windows RT. Gebruikers kunnen deze app downloaden uit de relevante store. De [Microsoft Rights Management-pagina](http://go.microsoft.com/fwlink/?LinkId=303970) bevat koppelingen naar deze stores..
+De RMS-toepassing voor delen voor mobiele apparaten ondersteunt veelgebruikte mobiele apparaten, zoals iPad en iPhone, Android, Windows Phone en Windows RT. Gebruikers kunnen deze app downloaden uit de relevante store. De [Microsoft Rights Management-pagina](http://go.microsoft.com/fwlink/?LinkId=303970) bevat koppelingen naar deze stores.
 
 **Als u Microsoft Intune hebt**: omdat de Rights Management-toepassing voor delen de Microsoft Intune App Software Development Kit omvat, kunt u gebruikmaken van de volgende opties:
 
@@ -60,10 +54,11 @@ De RMS-toepassing voor delen voor mobiele apparaten ondersteunt veelgebruikte mo
 
 
 ## Volgende stappen
-Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over de manier waarop andere toepassingen en services ondersteuning bieden voor Azure Rights Management.
+Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over de wijze waarop andere toepassingen en services ondersteuning bieden voor Azure Rights Management.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

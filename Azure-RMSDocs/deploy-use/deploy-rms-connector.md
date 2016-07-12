@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: De Azure Rights Management-connector implementeren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
+ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+
 
 ---
 
@@ -31,7 +25,8 @@ ms.suite: ems
 
 In deze informatie leest u meer over de Azure Rights Management-connector (RMS) en hoe u deze kunt gebruiken om gegevensbeveiliging te bieden met bestaande on-premises implementaties die gebruikmaken van Microsoft Exchange Server, Microsoft SharePoint Server of bestandsservers waarop Windows Server wordt uitgevoerd en die de mogelijkheid voor infrastructuur voor bestandsclassificatie (FCI) van de bestandsserverbronbeheer gebruiken.
 
-> [!TIP]Zie de sectie [Automatically protecting files on file servers running Windows Server and File Classification Infrastructure](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) (Bestanden op bestandsservers met Windows Server en Infrastructuur voor bestandsclassificatie automatisch beveiligen) in het artikel [Azure RMS in action](../understand-explore/what-admins-users-see.md) (Azure RMS in actie) voor een overzicht met voorbeeldscenario’s met schermafbeeldingen.
+> [!TIP]
+> Zie de sectie [Bestanden op bestandsservers met Windows Server en Infrastructuur voor bestandsclassificatie automatisch beveiligen](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) in het artikel [Azure RMS in actie](../understand-explore/what-admins-users-see.md) voor een overzicht met voorbeeldscenario’s met schermafbeeldingen.
 
 ## Overzicht van de Microsoft Rights Management-connector
 Met de Microsoft Rights Management-connector (RMS) kunt u op bestaande on-premises servers snel de IRM-functionaliteit (Information Rights Management) inschakelen voor gebruik van de Microsoft Rights Management-cloudservice (Azure RMS). Met deze functionaliteit kan IT en kunnen gebruikers eenvoudig documenten en afbeeldingen beveiligen, zowel binnen uw organisatie als daarbuiten, zonder dat hiervoor extra infrastructuur moet worden geïnstalleerd of vertrouwensrelaties moeten worden vastgelegd met andere organisaties. In een hybride scenario kunt u deze connector zelfs gebruiken als sommige gebruikers verbinding maken met online services. Bijvoorbeeld wanneer voor het postvak van sommige gebruikers Exchange Online en voor het postvak van andere gebruikers Exchange Server wordt gebruikt. Nadat u de RMS-connector hebt geïnstalleerd, kunnen alle gebruikers e-mailberichten en bijlagen beveiligen en verbruiken met Azure RMS en werkt de gegevensbeveiliging naadloos tussen de twee implementatieconfiguraties.
@@ -44,7 +39,8 @@ Als u uw eigen sleuteltenant beheert voor Azure RMS (het bring your own key- of 
 
 De RMS-connector ondersteunt de volgende on-premises servers: Exchange Server, SharePoint Server en bestandsservers waarop Windows Server wordt uitgevoerd en die infrastructuur voor bestandsclassificatie gebruiken om beleidsregels te classificeren en toe te passen op de Office-documenten in een map. Als u alle bestandstypen wilt beveiligen met bestandsclassificatie, gebruikt u niet de RMS-connector, maar de [Cmdlets van RMS-beveiliging](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
-> [!NOTE] Zie [On-premises servers that support Azure RMS](..\get-started\requirements-servers.md) (On-premises servers die ondersteuning bieden voor Azure RMS) voor ondersteunde versies van deze on-premises servers.
+> [!NOTE]
+> Zie [On-premises servers die Azure RMS ondersteunen](..\get-started\requirements-servers.md) voor ondersteunde versies van deze on-premises servers.
 
 Gebruik de volgende informatie voor het te plannen, installeren en configureren van de RMS-connector. Na de installatie moet u nog enkele configuratiestappen uitvoeren zodat uw servers van de connector gebruik kunnen maken.
 
@@ -87,6 +83,7 @@ Zorg ervoor dat aan de volgende vereisten wordt voldaan voordat u de RMS-connect
 
 Ga naar [De Azure Rights Management-connector installeren en configureren](install-configure-rms-connector.md).
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

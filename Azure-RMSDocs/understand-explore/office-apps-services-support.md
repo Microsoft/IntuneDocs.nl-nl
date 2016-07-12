@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Office-toepassingen en -services | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 99eb67f6296ad1782c787aabb73a28458c02f367
+ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
+
 
 ---
 
@@ -33,9 +27,9 @@ ms.suite: ems
 Office-toepassingen voor eindgebruikers (zoals Word, Excel, PowerPoint en Outlook) en Office-services (zoals Exchange en SharePoint) kunnen gebruikmaken van Microsoft Azure Rights Management om gegevens van uw organisatie te beveiligen.
 
 ## Office-toepassingen: Word, Excel, PowerPoint, Outlook
-Deze toepassingen bieden standaard ondersteuning voor Rights Management door het gebruik van IRM (Information Rights Management) en bieden gebruikers de mogelijkheid om beveiliging toe te passen op een opgeslagen document of op een e-mailbericht dat wordt verzonden. Gebruikers kunnen sjablonen toepassen of zeer aangepaste instellingen kiezen voor toegang, rechten en gebruiksbeperkingen. 
+Deze toepassingen bieden standaard ondersteuning voor Rights Management door het gebruik van IRM (Information Rights Management) en bieden gebruikers de mogelijkheid om beveiliging toe te passen op een opgeslagen document of op een e-mailbericht dat wordt verzonden. Gebruikers kunnen sjablonen toepassen of, voor Word, Excel en PowerPoint, zeer aangepaste instellingen kiezen voor toegang, rechten en gebruiksbeperkingen. 
 
-Gebruikers kunnen een bestand bijvoorbeeld zo configureren dat dit alleen kan worden geopend door mensen in uw organisatie of ze kunnen bepalen dat het bestand kan worden bewerkt, tot alleen-lezen wordt beperkt, of voorkomen dat het wordt afgedrukt. Er kan voor tijdsgebonden bestanden een vervaltijd worden geconfigureerd (rechtstreeks door gebruikers of door het toepassen van een sjabloon) waarna het bestand niet meer kan worden geopend. Gebruikers kunnen voor Outlook ook de optie **Niet doorsturen** kiezen om te voorkomen dat gegevens worden gelekt.
+Gebruikers kunnen een Word-bestand bijvoorbeeld zo configureren, dat dit alleen kan worden geopend door mensen in uw organisatie of ze kunnen bepalen dat een Excel-spreadsheet kan worden bewerkt, tot alleen-lezen wordt beperkt, of voorkomen dat het wordt afgedrukt. Er kan voor tijdsgebonden bestanden een vervaltijd worden geconfigureerd (rechtstreeks door gebruikers of door het toepassen van een sjabloon) waarna het bestand niet meer kan worden geopend. Gebruikers kunnen voor Outlook de optie **Niet doorsturen** kiezen om te voorkomen dat gegevens worden gelekt, en een sjabloon kiezen.
 
 ## Exchange Online en Exchange Server
 Wanneer u Exchange Online of Exchange Server gebruikt, kunt u gebruikmaken van de integratie met IRM (Information Rights Management), die u toegang geeft tot aanvullende oplossingen voor gegevensbeveiliging:
@@ -78,6 +72,7 @@ Zie [What’s New with Information Rights Management in SharePoint and SharePoin
 
 Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over de wijze waarop andere toepassingen en services ondersteuning bieden voor Azure Rights Management.
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

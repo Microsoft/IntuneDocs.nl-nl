@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Overzicht | Azure RMS
 description: Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+
 
 ---
 
@@ -44,7 +39,7 @@ Hieronder volgen slechts enkele van de scenario's waarvoor toepassingen die op b
 -   De eigenaren van een online documentbibliotheek willen rechten inschakelen voor het weergeven, afdrukken of bewerken van documenten op basis van de identiteit van de gebruiker.
 -   Een bedrijf wil gevoelige gegevens over medewerkers publiceren op een interne website waarvoor de rechten voor weergeven en bewerken zijn beperkt tot bepaalde gebruikers.
 
-Raadpleeg de TechNet-inhoud [IT Pro-documentatie voor AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx) voor meer informatie over de AD RMS-server, de AD RMS-client en de functionaliteit hiervan.
+Raadpleeg de TechNet-inhoud [IT Pro-documentatie voor AD RMS](https://TechNet.Microsoft.Com/library/cc771234.aspx) voor meer informatie over de AD RMS-server, de AD RMS-client en de functionaliteit hiervan.
 
 De overige onderwerpen in deze sectie hebben betrekking op de RMS-architectuur en de bijbehorende implementaties.
 
@@ -66,6 +61,7 @@ De overige onderwerpen in deze sectie hebben betrekking op de RMS-architectuur e
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

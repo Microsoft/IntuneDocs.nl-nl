@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Welk probleem wordt opgelost met Azure RMS | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
+ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+
 
 ---
 
@@ -46,7 +40,8 @@ Gebruik de volgende tabel om bedrijfsvereisten of problemen te identificeren die
 |Mogelijkheid om eenvoudig en flexibel beleidsregels maken|√ [Aangepaste sjablonen voor rechtenbeleid](../deploy-use/configure-custom-templates.md) bieden een snelle en eenvoudige oplossing voor beheerders om beleidsregels toe te passen en voor gebruikers om juiste beveiligingsniveau voor elk document toe te passen en de toegang te beperken tot personen binnen uw organisatie.<br /><br />Als u bijvoorbeeld een bedrijfsbreed, strategisch document wilt delen met alle medewerkers, kunt u een alleen-lezenbeleid toepassen voor alle interne werknemers. Voor een gevoeliger document, zoals een financieel rapport, kunt u vervolgens de toegang beperken tot alleen leidinggevenden.|
 |Brede ondersteuning voor toepassingen|√ Azure RMS heeft een nauwe integratie met Microsoft Office-toepassingen en -services en breidt de ondersteuning uit voor andere toepassingen met de RMS-toepassing voor delen.<br /><br />√ De [Microsoft Rights Management SDK](../develop/developers-guide.md#software-development-kits) biedt uw interne ontwikkelaars en softwareleveranciers API's voor het schrijven van aangepaste toepassingen die Azure RMS ondersteunen.<br /><br />Zie [Other applications that support the RMS APIs](api-support.md) (Andere toepassingen die ondersteuning bieden voor de RMS API's) voor meer informatie.|
 |IT moet controle houden over gegevens|√ Organisaties kunnen ervoor kiezen om hun eigen tenantsleutel te beheren en de oplossing '[Bring Your Own Key](../plan-design/plan-implement-tenant-key.md)' (BYOK) en de tenantsleutel op te slaan in Hardware Security Modules (HSM's).<br /><br />√ Ondersteuning voor controle en [logboekregistratie van het gebruik](../deploy-use/log-analyze-usage.md) zodat u voor zakelijke inzichten kunt analyseren, op misbruik kunt controleren en (als u een informatielek hebt) een forensische analyse uitvoeren.<br /><br />√ Gedelegeerde toegang met de [functie supergebruiker](../deploy-use/configure-super-users.md) zorgt ervoor dat IT altijd toegang heeft tot beveiligde inhoud, zelfs als een document is beveiligd door een werknemer die vervolgens de organisatie verlaat. Ter vergelijking, met oplossingen voor peer-to-peer-versleuteling bestaat het risico dat toegang tot bedrijfsgegevens verloren gaat.<br /><br />√ Synchroniseer [alleen de mapkenmerken die Azure RMS nodig heeft](/active-directory/active-directory-aadconnectsync-attributes-synchronized#azure-rms) ter ondersteuning van een algemene identiteit voor uw on-premises Active Directory-accounts met een [hulpprogramma voor adreslijstsynchronisatie](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison), zoals Azure AD Connect.<br /><br />√ Schakel eenmalige aanmelding in zonder dat wachtwoorden worden gerepliceerd naar de cloud, met AD FS.<br /><br />√ Organisaties kunnen altijd stoppen met Azure RMS zonder de toegang te verliezen tot inhoud die eerder is beveiligd door Azure RMS. Zie [Azure Rights Management uit bedrijf nemen en deactiveren](../deploy-use/decommission-deactivate.md) voor meer informatie over het uit bedrijf nemen van opties. Organisaties die Active Directory Rights Management Services (AD RMS) hebben geïmplementeerd, kunnen bovendien [migreren naar Azure RMS](../plan-design/migrate-from-ad-rms-to-azure-rms.md) zonder toegang tot gegevens te verliezen die eerder is beveiligd door AD RMS.|
-> [!TIP] Als u bekend bent met de lokale versie van Rights Management, Active Directory Rights Management Services (AD RMS), bent u mogelijk geïnteresseerd in de vergelijkingstabel in [Azure Rights Management en AD RMS vergelijken](compare-azure-rms-ad-rms.md).
+> [!TIP]
+> Als u bekend bent met de on-premises versie van Rights Management, Active Directory Rights Management Services (AD RMS), bent u mogelijk geïnteresseerd in de vergelijkingstabel in [Azure Rights Management en AD RMS vergelijken](compare-azure-rms-ad-rms.md).
 
 ## Vereisten voor beveiliging, naleving en regelgeving
 Azure RMS ondersteunt de volgende vereisten voor beveiliging, naleving en regelgeving:
@@ -77,6 +72,7 @@ Zie [Azure RMS in action](what-admins-users-see.md) (Azure RMS in actie) om te z
 
 Zie [Hoe werkt Azure RMS?](how-does-it-work.md) als u meer technische informatie wilt over hoe Azure RMS werkt 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

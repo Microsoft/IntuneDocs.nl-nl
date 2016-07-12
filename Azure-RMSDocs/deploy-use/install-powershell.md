@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Windows PowerShell voor Azure Rights Management installeren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 590148218fdd10e88ba764b2dc523a2213e2c8bb
+
 
 ---
 
@@ -38,7 +32,7 @@ Deze tabel bevat de vereisten voor het installeren en gebruiken van Windows Powe
 
 |Vereiste|Meer informatie|
 |---------------|--------------------|
-|Een versie van Windows die ondersteuning biedt voor de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule|Controleer de lijst met ondersteunde besturingssystemen in het gedeelte **Systeemvereisten** van de [-downloadpagina voor het beheerprogramma voor Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
+|Een versie van Windows die ondersteuning biedt voor de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule|Controleer de lijst met ondersteunde besturingssystemen in de sectie **Systeemvereisten** van de [-downloadpagina voor het beheerprogramma voor Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
 |Minimaal vereiste versie van Windows PowerShell: 2.0|Ondersteuning voor de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule wordt geboden vanaf Windows PowerShell 2.0.<br /><br />Standaard worden de meeste Windows-besturingssystemen geïnstalleerd met ten minste versie 2.0 van Windows PowerShell. Als u Windows PowerShell 2.0 wilt installeren, raadpleegt u [Windows PowerShell 2.0 installeren](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Tip: als u wilt controleren welke versie van Windows PowerShell u gebruikt, typt u **$PSVersionTable** tijdens een Windows PowerShell-sessie.|
 |De minimaal vereiste versie van Microsoft .NET Framework: 4.5<br /><br />Opmerking: deze versie van Microsoft .NET Framework is inbegrepen bij de nieuwere besturingssystemen. U hoeft deze dus alleen handmatig te installeren als uw clientbesturingssysteem ouder is dan Windows 8.0 of als uw serverbesturingsysteem ouder is dan Windows Server 2012.|Als de minimaal vereiste versie van Microsoft .NET Framework nog niet is geïnstalleerd, kunt u [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653) downloaden.<br /><br />Deze versie van Microsoft .NET Framework is minimaal vereist voor enkele van de klassen waar de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule gebruik van maakt.|
 |Microsoft Online Services-aanmeldhulp 7.0|De Microsoft Online Services-aanmeldhulp is vereist voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]-verificatie.<br /><br />Voor meer informatie raadpleegt u [Downloadcentrum: Microsoft Online Services-assistent voor IT-professionals RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950).|
@@ -76,6 +70,7 @@ Voordat u opdrachten kunt uitvoeren voor het configureren van de [!INCLUDE[aad_r
 [Beheer van Azure Rights Management met Windows PowerShell](administer-powershell.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

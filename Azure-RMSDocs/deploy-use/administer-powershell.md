@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Beheer van Azure Rights Management met Windows PowerShell | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: bf1f684bc394ec3a1025f8c9ed3e57d07c598125
+
 
 ---
 
@@ -31,16 +25,16 @@ ms.suite: ems
 
 U kunt Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) activeren met behulp van het [!INCLUDE[o365_2](../includes/o365_2_md.md)]-beheercentrum of de klassieke Azure-portal, maar u kunt hiervoor ook de Windows PowerShell-module voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (AADRM) gebruiken.
 
-Nadat u [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] hebt geactiveerd, is verder beheer voor de service mogelijk niet vereist. Voor sommige geavanceerde configuratiescenario's moet u wellicht de Windows PowerShell-module voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] gebruiken. De volgende tabel bevat enkele van de geavanceerde configuratiescenario's die gebruikmaken van Windows PowerShell. Zie [Azure Rights Management-cmdlets](http://msdn.microsoft.com/library/azure/dn629398.aspx) voor een volledige lijst van de beschikbare cmdlets met meer informatie over elk ervan..
+Nadat u [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] hebt geactiveerd, is verder beheer voor de service mogelijk niet vereist. Voor sommige geavanceerde configuratiescenario's moet u wellicht de Windows PowerShell-module voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] gebruiken. De volgende tabel bevat enkele van de geavanceerde configuratiescenario's die gebruikmaken van Windows PowerShell. Zie [Azure Rights Management-cmdlets](http://msdn.microsoft.com/library/azure/dn629398.aspx) voor een volledige lijst van de beschikbare cmdlets met meer informatie over elk ervan.
 
 > [!NOTE]
-> Zie [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]Windows PowerShell voor Azure Rights Management installeren[ als u de Windows PowerShell-module voor ](install-powershell.md) wilt installeren..
+> Zie [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]Windows PowerShell voor Azure Rights Management installeren[ als u de Windows PowerShell-module voor ](install-powershell.md) wilt installeren.
 
 Er is ook een aanvullende Windows PowerShell-module, **RMSProtection**, die zowel Azure RMS als AD RMS ondersteunt. Deze module biedt ondersteuning voor de beveiliging en het opheffen van de beveiliging van meerdere bestanden, zodat u bijvoorbeeld alle bestanden in een map bulksgewijs kunt beveiligen. Zie de sectie [Scriptopties voor supergebruikers](configure-super-users.md#scripting-options-for-super-users) in het artikel [Supergebruikers configureren voor Azure Rights Management en detectieservices of gegevensherstel](configure-super-users.md) voor meer informatie.
 
 |Als u dit wilt doen...|…gebruikt u de volgende cmdlets|
 |-------------------|------------------------------|
-|Migreren van lokale Rights Management (AD RMS of Windows RMS) naar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|[Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx)|
+|Migreren van on-premises Rights Management (AD RMS of Windows RMS) naar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|[Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx)|
 |Verbinding maken of de verbinding verbreken met de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-service voor uw organisatie.|[Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx)<br /><br />[Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx)|
 |Genereren en beheren van uw eigen tenantsleutel; het BYOK-scenario (Bring Your Own Key).|[Add-AadrmKey](http://msdn.microsoft.com/library/azure/dn629418.aspx)<br /><br />[Get-AadrmKeys](http://msdn.microsoft.com/library/azure/dn629420.aspx)|
 |Activeren of deactiveren van de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-service voor uw organisatie.|[Enable-Aadrm](http://msdn.microsoft.com/library/azure/dn629412.aspx)<br /><br />[Disable-Aadrm](http://msdn.microsoft.com/library/azure/dn629422.aspx)|
@@ -59,6 +53,7 @@ Er is ook een aanvullende Windows PowerShell-module, **RMSProtection**, die zowe
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

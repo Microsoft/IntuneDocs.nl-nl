@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Een RMS-server installeren, configureren en hiermee tests uitvoeren | Azure RMS
 description: RMS-server installeren en configureren voor het testen van uw toepassing met rechten.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
+ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+
 
 ---
 
@@ -65,12 +61,13 @@ Met de volgende stappen stelt u uw RMS-server in:
 
     Voor tests met een RMS-server, configureert u detectie aan de serverzijde of clientzijde om Rights Management Service-client 2.1 in te schakelen voor detectie en communicatie met de RMS-server.
 
-    > [!Note] Voor testen met Azure RMS is geen detectieconfiguratie vereist.
+    > [!Note]
+    > Voor testen met Azure RMS is geen detectieconfiguratie vereist.
 
   - Bij detectie aan de serverzijde registreert een beheerder met Active Directory een serviceaansluitpunt (SCP) voor het RMS-basiscluster. De client stuurt een query naar Active Directory om het SCP te detecteren en verbinding te maken met de server.
   - Bij detectie aan de clientzijde configureert u de instellingen voor RMS-servicedetectie in het register op de computer waarop de RMS-client 2.1 wordt uitgevoerd. Deze instellingen verwijzen de RMS-client 2.1 naar de RMS-server die moet worden gebruikt. Als deze aanwezig zijn, wordt er geen detectie uitgevoerd aan de serverzijde.
 
-  Als u detectie aan de clientzijde wilt configureren, kunt u de volgende registersleutels instellen, zodat wordt verwezen naar uw RMS-server. Voor meer informatie over het configureren van detectie aan de servicezijde raadpleegt u [Opmerkingen bij de implementatie van RMS-client 2.0](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
+  Als u detectie aan de clientzijde wilt configureren, kunt u de volgende registersleutels instellen, zodat wordt verwezen naar uw RMS-server. Voor meer informatie over het configureren van detectie aan de servicezijde raadpleegt u [Opmerkingen bij de implementatie van RMS-client 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ Met de volgende stappen stelt u uw RMS-server in:
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Waarde**: (Standaard): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] Standaard komen deze sleutels niet voor in het register. Deze moeten worden gemaakt.
+>[!NOTE] 
+> Standaard komen deze sleutels niet voor in het register. Deze moeten worden gemaakt.
 
->[!IMPORTANT] Als u een 32-bits toepassing uitvoert in een 64-bits versie van Windows, moet u deze sleutels op de volgende sleutellocatie instellen:<p>
+>[!IMPORTANT] 
+> Als u een 32-bits toepassing uitvoert in een 64-bits versie van Windows, moet u deze sleutels op de volgende sleutellocatie instellen:<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ Met de volgende stappen stelt u uw RMS-server in:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

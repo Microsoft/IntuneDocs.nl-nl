@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Gebruiksrechten configureren voor Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -83,7 +76,7 @@ Hiermee wordt de optie ingeschakeld voor het toevoegen van aantekeningen of opme
 
 **Naam in AD RMS-sjablonen:** niet geïmplementeerd.
 
-**API-constante of -waarde:** IPC_GENERIC_COMMENTL"COMMENT
+**API-constante of -waarde**: IPC_GENERIC_COMMENT L"COMMENT
 
 Dit recht is beschikbaar in de SDK en als ad-hocbeleid in de module RMS-beveiliging voor Windows PowerShell, en is geïmplementeerd in sommige toepassingen van softwareleveranciers. Het recht wordt echter niet veel gebruikt en wordt momenteel niet ondersteund door Office-toepassingen.
 
@@ -101,7 +94,7 @@ Hiermee wordt de optie ingeschakeld voor het opslaan van de inhoud onder een and
 
 **Naam in AD RMS-sjablonen:** *Exporteren (Opslaan als)*
 
-**API-constante of -waarde:** IPC_GENERIC_EXPORTL"EXPORT"
+**API-constante of -waarde:** IPC_GENERIC_EXPORT L"EXPORT"
 
 Met dit recht kan de gebruiker ook andere exportopties in toepassingen uitvoeren, zoals *Verzenden naar OneNote*.
 
@@ -119,7 +112,7 @@ Hiermee wordt de optie ingeschakeld voor het doorsturen van een e-mailbericht en
 
 **Naam in AD RMS-sjablonen:** *Doorsturen*
 
-**API-constante of -waarde:** IPC_EMAIL_FORWARDL"FORWARD"
+**API-constante of -waarde:** IPC_EMAIL_FORWARD L"FORWARD"
 
 Dit recht staat de doorstuurserver niet toe rechten te verlenen aan andere gebruikers als onderdeel van de doorstuuractie.
 
@@ -137,7 +130,7 @@ Hiermee worden alle rechten voor het document verleend en kunnen alle beschikbar
 
 **Naam in AD RMS-sjablonen:** *Volledig beheer*
 
-**API-constante of -waarde:** IPC_GENERIC_ALLL"OWNER"
+**API-constante of -waarde:** IPC_GENERIC_ALL L"OWNER"
 
 Omvat de mogelijkheid om beveiliging op te heffen.
 
@@ -155,7 +148,7 @@ Hiermee wordt optie ingeschakeld voor het afdrukken van de inhoud.
 
 **Naam in AD RMS-sjablonen:** *Afdrukken*
 
-**API-constante of -waarde:** IPC_GENERIC_PRINTL"PRINT
+**API-constante of -waarde:** IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +180,7 @@ Hiermee wordt de optie *Allen beantwoorden* ingeschakeld in een e-mailclient, ma
 
 **Naam in AD RMS-sjablonen:** *Allen beantwoorden*
 
-**API-constante of -waarde:** IPC_EMAIL_REPLYALLL"REPLYALL"
+**API-constante of -waarde:** IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +196,7 @@ Hiermee kan de gebruiker het document openen en de inhoud bekijken.
 
 **Naam in AD RMS-sjablonen:** *Weergeven*
 
-**API-constante of -waarde:** IPC_GENERIC_READL"VIEW"
+**API-constante of -waarde:** IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +212,7 @@ Hiermee schakelt u opties in voor het kopiëren van gegevens (inclusief schermop
 
 **Naam in AD RMS-sjablonen:** *Extraheren*
 
-**API-constante of -waarde:** IPC_GENERIC_EXTRACTL"EXTRACT"
+**API-constante of -waarde:** IPC_GENERIC_EXTRACT L"EXTRACT"
 
 In sommige toepassingen kunt u ook het hele document opslaan in een niet-beveiligde vorm.
 
@@ -293,6 +286,7 @@ Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling be
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

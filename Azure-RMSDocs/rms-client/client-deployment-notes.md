@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Notities bij de implementatie van de RMS-client | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
+ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+
 
 ---
 
@@ -42,7 +36,8 @@ De RMS-client kan vrijelijk opnieuw worden gedistribueerd en gebundeld met ander
 ## De RMS-client installeren
 De RMS-client is opgenomen in een uitvoerbaar installatiebestand met de naam **setup_msipc_***<arch>***.exe**, waarbij het *<arch>* bestand **x86** (voor 32 bitsclientcomputers) of **x64** (voor 64 bitsclientcomputers) is. Met het 64 bitsinstallatiepakket (x64) wordt zowel een uitvoerbaar bestand voor de 32 bitsruntime geïnstalleerd voor compatibiliteit met 32 bitstoepassingen die op een 64 bitsbesturingssysteem worden uitgevoerd als een uitvoerbaar bestand voor de 64 bitsruntime voor ondersteuning van systeemeigen 64 bitstoepassingen. Het 32-bits (x86) installatieprogramma kan niet worden uitgevoerd op een 64-bits Windows-installatie.
 
-> [!NOTE] U moet verhoogde bevoegdheden hebben voor het installeren van de RMS-client, bijvoorbeeld voor een lid van de groep Administrators op de lokale computer.
+> [!NOTE]
+> U moet verhoogde bevoegdheden hebben voor het installeren van de RMS-client, bijvoorbeeld zoals een lid van de groep Administrators op de lokale computer.
 
 U kunt de RMS-client installeren via een van de volgende installatiemethoden:
 
@@ -192,7 +187,8 @@ Als alternatief voor het gebruik van een SCP of wanneer er geen SCP bestaat, kun
 
 2.  Navigeer in Register-editor naar **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**.
 
-    > [!IMPORTANT] Het pad wordt als volgt wanneer u een 32 bitstoepassing uitvoert op een 64 bitscomputer: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT]
+    > Het pad wordt als volgt wanneer u een 32-bitstoepassing uitvoert op een 64-bitscomputer: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  Als u de ServiceLocation-subsleutel wilt maken, klikt u met de rechtermuisknop op **MSIPC**, wijst u **Nieuw** aan, klikt u op **Sleutel** en typt u vervolgens **ServiceLocation**.
 
@@ -233,7 +229,8 @@ In sommige gevallen moet u mogelijk verkeer omleiden tijdens servicedetectie, bi
 
     **Waarde:** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE] Als voor de oude licentieserver URL's voor intranet en extranet zijn opgegeven, moet een nieuwe naam- en waardetoewijzing worden ingesteld voor beide URL's onder de LicensingRedirection-sleutel.
+    > [!NOTE]
+    > Als voor de oude licentieserver URL's voor intranet en extranet zijn opgegeven dan moet een nieuwe naam- en waardetoewijzing worden ingesteld voor beide URL's onder de LicensingRedirection-sleutel.
 
 5.  Herhaal de vorige stap voor alle servers die moeten worden omgeleid.
 
@@ -241,6 +238,7 @@ In sommige gevallen moet u mogelijk verkeer omleiden tijdens servicedetectie, bi
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

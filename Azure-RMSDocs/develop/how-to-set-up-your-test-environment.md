@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Uw toepassing testen | Azure RMS
 description: Instructies voor het instellen van uw toepassing voor testen.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b01f009ec3dffbb3fe671da8a19929e53c67fb79
+ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
+
 
 ---
 
@@ -42,7 +38,7 @@ U kunt testen met Azure RMS of een RMS-server die wordt uitgevoerd op Windows Se
    - Als u uw toepassing gaat testen op een andere computer dan uw ontwikkelcomputer, kunt u de RMS-client 2.1 op die computer installeren via de [downloadpagina voor de RMS-client](http://www.microsoft.com/en-us/download/details.aspx?id=38396).
    - Als u de toepassing gaat testen op uw ontwikkelingscomputer, zou u de Rights Management Services SDK 2.1 al geïnstalleerd moeten hebben. De RMS-client 2.1 is dan op de achtergrond ook geïnstalleerd.
 
-    Zie [De SDK installeren](create-your-first-rights-aware-application.md) voor meer informatie over het installeren van de RMS SDK 2.1.
+    Zie [De SDK installeren](install-the-rms-sdk.md) voor meer informatie over het installeren van de RMS SDK 2.1.
 
 ## Opmerkingen
 
@@ -51,14 +47,15 @@ De instructies in dit onderwerp zijn niet uitgebreid. Voor gedetailleerde inform
 ### Verwante onderwerpen
 
 * [Instructies voor het installeren en configureren van een RMS-server](how-to-install-and-configure-an-rms-server.md)
-* [Instructies: ADAL-verificatie gebruiken](how-to-use-adal-authentication,md)
-* [De SDK installeren](create-your-first-rights-aware-application.md)
+* [Instructies: ADAL-verificatie gebruiken](how-to-use-adal-authentication.md)
+* [De SDK installeren](install-the-rms-sdk.md)
 * [Opmerkingen bij de implementatie van de RMS-client 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

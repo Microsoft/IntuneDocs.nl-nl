@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Azure RMS-vereisten&#58; toepassingen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/17/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
+ms.openlocfilehash: 61d18747011435773e16b3c8d2a8ac2104997484
+
 
 ---
 
@@ -37,7 +31,7 @@ Tenzij anders vermeld, gelden de ondersteunde functies voor Azure RMS en AD RMS.
 
 Informatie over de tabelkolommen:
 
--   **Beveiligde PDF**: bestanden die een bestandsnaam met een .ppdf-extensie hebben en die automatisch worden gemaakt wanneer u de RMS-toepassing voor delen gebruiken om Office-bestanden en PDF-bestanden te delen per e-mail. De RMS-toepassing voor delen bevat een lezer voor beveiligde PDF-bestanden. Als u eerder PDF-bestanden hebt gemaakt die u hebt beveiligd met Azure RMS of AD RMS, kunt u deze bestanden op Windows-, iOS- en Android-apparaten blijven lezen met Foxit Reader en Nitro Pro.
+-   **Beveiligde PDF**: bestanden die een bestandsnaam met een .ppdf-extensie hebben en die automatisch worden gemaakt wanneer u de RMS-toepassing voor delen gebruikt om Office-bestanden en PDF-bestanden te delen per e-mail. De RMS-toepassing voor delen bevat een lezer voor beveiligde PDF-bestanden. Als u eerder PDF-bestanden hebt gemaakt die u hebt beveiligd met Azure RMS of AD RMS, kunt u deze bestanden op Windows-, iOS- en Android-apparaten blijven lezen met Foxit Reader en Nitro Pro.
 
 -   **E-mail:** de vermelde e-mailclients kunnen het e-mailbericht zelf beveiligen. Alle bijgevoegde bestanden worden dan automatisch beveiligd. In dit scenario kan met de voorbeeldfunctie van de client beveiligde inhoud (bericht en bijlage) worden weergegeven voor geautoriseerde ontvangers Als echter alleen de bijlage is beveiligd, en het e-mailbericht zelf niet, kan met de voorbeeldfunctie van de client de beveiligde bijlage niet worden weergegeven voor geautoriseerde ontvangers.
 
@@ -46,7 +40,7 @@ Informatie over de tabelkolommen:
 
 |**Besturingssysteem apparaat**|Word, Excel, PowerPoint|Beveiligde PDF|E-mail|Andere bestandstypen|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile-apps (alleen Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client voor Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS-app voor delen|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](footnote-3)<br /><br />Windows Mail [[4]](footnote-4)|RMS-toepassing voor delen voor Windows: tekst, afbeeldingen, pfile<br /><br />Siemens JT2Go: JT-bestanden (alleen Windows 10)|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile-apps (alleen Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client voor Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS-app voor delen|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|RMS-toepassing voor delen voor Windows: tekst, afbeeldingen, pfile<br /><br />Siemens JT2Go: JT-bestanden (alleen Windows 10)|
 |**iOS**|Office voor iPad en iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook voor iPad en iPhone [[4]](#footnote-4)<br /><br />OWA voor iOS [[3]](#footnote-3)<br /><br />TITUS Mail|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile<br /><br />TITUS Docs: Pfile|
 |**Android**|GigaTrust-app voor Android<br /><br />Office Online [[2]](#footnote-2)|GigaTrust-app voor Android<br /><br />Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust-app voor Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook voor Android [[4]](#footnote-4)<br /><br />OWA voor Android [[3]](#footnote-3) en [[7]](#footnote-7)<br /><br />Samsung Email (S3 en later) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile|
 |**OS X**|Office 2011 (alleen AD RMS)<br /><br />Office 2016 voor Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)|Outlook 2011 (alleen AD RMS)<br /><br />Outlook 2016 voor Mac<br /><br />Outlook voor Mac|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile|
@@ -68,7 +62,7 @@ Als een geadresseerde een lokaal postvak op Exchange heeft en een beveiligd e-ma
 ###### Voetnoot 4
 Gebruikt Exchange ActiveSync IRM, dat moet worden ingeschakeld door de Exchange-beheerder. Gebruikers kunnen alle beveiligde e-mailberichten weergeven, de e-mails beantwoorden en allen beantwoorden, maar kunnen nieuwe e-mailberichten niet zelf beveiligen.
 
-Als een geadresseerde een lokaal postvak op Exchange heeft en een beveiligd e-mailbericht ontvangt van een andere organisatie die Exchange gebruikt, kan deze inhoud alleen worden geopend in een rich e-mailclient zoals Outlook.  Deze inhoud kan niet worden geopend op een apparaat waarop Exchange Active Sync IRM wordt gebruikt.
+Als een geadresseerde een on-premises postvak op Exchange heeft en een beveiligd e-mailbericht ontvangt van een andere organisatie die Exchange gebruikt, kan deze inhoud alleen worden geopend in een rich e-mailclient zoals Outlook.  Deze inhoud kan niet worden geopend op een apparaat waarop Exchange Active Sync IRM wordt gebruikt.
 
 ###### Voetnoot 5
 Ondersteunt het weergeven en bewerken van beveiligde documenten. Zie voor meer informatie het volgende bericht op de Office-blog: [Azure Rights Management-ondersteuning wordt toegevoegd aan Office voor iPad en iPhone](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) (Engelstalig)
@@ -80,6 +74,14 @@ Zie voor meer informatie de Citrix-[productdocumentatie voor WorxMail](http://do
 Zie voor meer informatie het volgende bericht op de Office-blog: [OWA voor Android is nu beschikbaar op bepaalde apparaten](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) (Engelstalig)
 
 ## Meer informatie over Azure RMS-ondersteuning voor Office
+
+Azure RMS is nauw geïntegreerd in de Word-, Excel-, PowerPoint- en Outlook-apps, waar deze functionaliteit wordt ook Information Rights Management (IRM) wordt genoemd. De volgende Office-clientversies bieden ondersteuning voor de beveiliging van bestanden en e-mails met Azure RMS:
+
+- Office Professional Plus 2016
+
+- Office Professional Plus 2013
+
+- Office Professional Plus 2010
 
 Alle edities van Office (met uitzondering van Office 2007) ondersteunen het gebruik van beveiligde inhoud.
 
@@ -145,6 +147,7 @@ Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](../unde
 
 Zie [Toepassingen configureren voor Azure Rights Management](../deploy-use/configure-applications.md) voor meer informatie over het configureren van veelgebruikte toepassingen voor Azure RMS.
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

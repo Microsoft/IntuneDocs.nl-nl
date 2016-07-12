@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Windows Store-instelling | Azure RMS
-description: Windows Store-toepassingen kunnen gebruikmaken van de Microsoft Rights Management SDK 4.2 om geïntegreerde informatiebeveiliging in de toepassing in te schakelen.
-keywords:
+description: "Windows Store-toepassingen kunnen gebruikmaken van de Microsoft Rights Management SDK 4.2 om geïntegreerde informatiebeveiliging in de toepassing in te schakelen."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 0b8e0fb6d872506ac3529bd137286f0e8fa562ee
+
 
 ---
 
@@ -32,7 +27,7 @@ Dit onderwerp leidt u door het instellen van een omgeving voor het maken van uw 
 
 -   [Vereisten](#prerequisites)
 -   [Optioneel](#optional)
--   [Uw ontwikkelingsomgeving configureren](#configuring-your-development-environment)
+-   [Uw ontwikkelomgeving configureren](#configuring-your-development-environment)
 -   [Zie ook](#see-also)
 
 ## Vereisten
@@ -41,7 +36,7 @@ Dit onderwerp leidt u door het instellen van een omgeving voor het maken van uw 
 Op uw ontwikkelingssysteem moet de volgende software aanwezig zijn:
 
 -   Het besturingssysteem [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet).
--   De [Windows SDK voor Windows 8.1](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
+-   De [Windows SDK voor Windows 8.1](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) of hoger, of Visual Studio Express 2012, dat wordt meegeleverd met de Windows SDK voor Windows 8.0/8.1.
 -   Het MS RMS SDK 4.2-pakket voor Windows Store-toepassingen Zie [Aan de slag](get-started.md) voor meer informatie.
 -   Verificatiebibliotheek: u kunt het beste de [Azure AD-verificatiebibliotheek](https://msdn.microsoft.com/en-us/library/jj573266.aspx) en andere verificatiebibliotheken gebruiken.
@@ -57,7 +52,7 @@ Onze UI-bibliotheek biedt een herbruikbare UI voor gebruiks- en beveiligingsbewe
 
 -   Open Visual Studio.
 -   Klik achtereenvolgens op **Bestand**, **Nieuw** en **Project**.
--   Klik in het dialoogvenster **Nieuw project** op **Visual C\ #**, selecteer **Lege app (Windows)** en klik vervolgens op **OK**.
+-   Klik in het dialoogvenster **Nieuw project** op **Visual C\#**, selecteer **Lege app (Windows)** en klik vervolgens op **OK**.
 
     ![Een nieuw project maken](../media/winrtsetup-newproj.png)
 
@@ -89,6 +84,7 @@ U bent er nu klaar voor om uw eigen nieuwe Windows Store-apps te maken.
 [Windows API-referentiemateriaal](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

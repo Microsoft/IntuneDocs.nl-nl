@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Nagaan of uw gebruikers zich hebben geregistreerd voor RMS voor personen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: e577366be26f7296079751e72fb6531b9e28c504
+
 
 ---
 
@@ -38,10 +32,11 @@ Hoe weet u als beheerder of gebruikers zich hebben geregistreerd voor RMS voor p
 
 -   Gebruik een oplossing voor systeembeheer, zoals System Center Configuration Manager, om een inventaris te maken van geïnstalleerde en gebruikte software. De Rights Management-toepassing voor delen wordt uitgevoerd met behulp van het programma **ipviewer.exe**. U kunt [de toepassing gratis downloaden en installeren](http://go.microsoft.com/fwlink/?LinkId=303970) om andere kenmerken van deze toepassing te identificeren die u vervolgens kunt gebruiken om een inventaris te maken van de software.
 
--   Zoek naar bestandsnaamextensies die zijn gemaakt met de Rights Management-toepassing voor delen. De bestandsnaamextensies .pfile en .ppdf zijn de meest voor de hand liggende voorbeelden, maar er zijn andere bestanden waarvan de bestandsnaamextensie wordt gewijzigd wanneer ze systeemeigen zijn beveiligd met Rights Management. Zie de sectie [Ondersteunde bestandstypen en bestandsnaamextensies](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) in de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](http://technet.microsoft.com/library/dn339003.aspx) voor meer informatie..
+-   Zoek naar bestandsnaamextensies die zijn gemaakt met de Rights Management-toepassing voor delen. De bestandsnaamextensies .pfile en .ppdf zijn de meest voor de hand liggende voorbeelden, maar er zijn andere bestanden waarvan de bestandsnaamextensie wordt gewijzigd wanneer ze systeemeigen zijn beveiligd met Rights Management. Zie de sectie [Ondersteunde bestandstypen en bestandsnaamextensies](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) in de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](http://technet.microsoft.com/library/dn339003.aspx) voor meer informatie.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

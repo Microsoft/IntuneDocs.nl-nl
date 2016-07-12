@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Overzicht | Azure RMS
 description: AD RMS en Azure RMS bieden technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+
 
 ---
 
@@ -50,7 +45,7 @@ De MS RMS SDK 4.2 heeft diverse aantrekkelijke nieuwe kenmerken, zoals:
 
 -   **Opnieuw ontworpen API**: de MS RMS SDK 4.2 API is opnieuw ontworpen voor nog meer eenvoud. Ontwikkelaars kunnen daarom gebruikmaken van een eenvoudige en transparante API voor versleuteling en ontsleuteling, die met een minimale inspanning zorgt voor consistentie in het RMS-gedrag.
 -   **Hybride ondersteuning voor AD RMS en Azure RMS**: met één RMS-app kunt u inhoud gebruiken en beveiligen via de AD RMS-server (met de mobiele-apparaatextensie van AD RMS) en via de Azure RMS-service. De MS RMS SDK 4.2 detecteert transparant de relevante eindpunten die IT-beheerders kunnen configureren.
--   **Uw eigen verificatiebibliotheek gebruiken**: als toepassingsontwikkelaar kunt u zelf kiezen welke verificatiebibliotheek er door de MS RMS SDK 4.2 moet worden gebruikt. Of u nu de [Azure AD-verificatiebibliotheek](https://msdn.microsoft.com/en-us/library/jj573266.aspx) of de aangepaste bibliotheek van uw organisatie wilt gebruiken, de MS RMS SDK 4.2 scheidt de verificatiestack, zodat u de bibliotheek kunt kiezen die het beste aansluit op uw behoeften.
+-   **Uw eigen verificatiebibliotheek gebruiken**: als toepassingsontwikkelaar kunt u zelf kiezen welke verificatiebibliotheek er door de MS RMS SDK 4.2 moet worden gebruikt. Of u nu de [Azure AD-verificatiebibliotheek](https://msdn.microsoft.com/library/jj573266.aspx) of de aangepaste bibliotheek van uw organisatie wilt gebruiken, de MS RMS SDK 4.2 scheidt de verificatiestack, zodat u de bibliotheek kunt kiezen die het beste aansluit op uw behoeften.
 -   **Uw eigen gebruikersinterface gebruiken**: met de MS RMS SDK 4.2 kunt u nu uw eigen aangepaste gebruikersinterface implementeren. De MS RMS SDK 4.2 forceert geen ingebouwde gebruikersinterface op uw apps, of u nu inhoud beveiligt, sjablonen kiest voor weergave of machtigingen wijzigt tijdens het gebruiken van beveiligde inhoud. Als u wilt, kunt u echter voor alle platforms de Microsoft RMS-gebruikersinterfacebibliotheken gebruiken via ons [GitHub-account](https://github.com/AzureAD/).
 -   **Offline toegang tot beveiligde inhoud**: met de MS RMS SDK 4.2 kunnen uw app-gebruikers beveiligde inhoud ook openen als er geen verbinding met internet is. De MS RMS SDK 4.2 plaatst het gebruiksbeleid van de beveiligde inhoud veilig in het cachegeheugen, zodat uw gebruikers offline toegang hebben tot met RMS beveiligde gegevens.
 
@@ -70,6 +65,7 @@ Gebruik de handleiding [Aan de slag](get-started.md) om te beginnen met uw appar
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

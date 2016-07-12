@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Wat kunnen beheerders en gebruikers zien? | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
+
 
 ---
 
@@ -32,11 +26,12 @@ ms.suite: ems
 
 In dit artikel worden enkele typische voorbeelden beschreven hoe beheerders en gebruikers Azure Rights Management (Azure RMS) zien en kunnen gebruiken om gevoelige of vertrouwelijke gegevens te beschermen.
 
-> [!NOTE] In deze voorbeeld waarin gegevens worden beveiligd met Azure RMS, houdt de inhoudseigenaar volledige tot de gegevens (bestand of e-mail), zelfs als met de toegepaste beveiliging machtigingen worden verleend aan een groep waarvan de eigenaar niet lid was of als de toegepaste beveiliging een vervaldatum bevat.
+> [!NOTE]
+> In al deze voorbeelden waarin Azure RMS gegevens beveiligt, houdt de eigenaar van de inhoud volledige toegang tot de gegevens (bestand of e-mail), zelfs als de met de toegepaste beveiliging machtigingen worden verleent aan een groep waarvan de eigenaar geen lid is of zelfs als de toegepaste beveiliging een vervaldatum omvat.
 >
 > Ook heeft IT via de functie supergebruiker van Rights Management, waarmee gedelegeerde toegang wordt verleend aan gebruikers of services die u opgeeft, altijd onbeperkte toegang tot de beveiligde gegevens. Bovendien kan IT het gebruik van de beveiligde gegevens volgen en controleren, bijvoorbeeld wie de gegevens heeft geopend en wanneer.
 
-Voor andere schermopnamen en video's van RMS in actie kunt u terecht op de [Microsoft Rights Management Services-portal](http://www.microsoft.com/rms) en de [teamblog van Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms).
+Voor andere schermafbeeldingen en video's over RMS in actie, kunt u een kijkje nemen in het [Enterprise Mobility and Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
 ## Rights Management activeren en configureren
 Hoewel u Windows PowerShell kunt gebruiken om Azure RMS te activeren en configureren, kan dit het gemakkelijkst worden gedaan vanuit de beheerportal. Zodra de service is geactiveerd, hebt u twee standaardsjablonen die beheerders en gebruikers kunnen selecteren om snel en eenvoudig gegevensbeveiliging op bestanden toe te passen. Maar u kunt ook uw eigen aangepaste sjablonen maken voor extra opties en instellingen.
@@ -246,6 +241,7 @@ Als Bob zijn e-mailbericht met de bijlage doorstuurt of opslaat op een locatie w
 Nu u met enkele voorbeelden hebt gezien wat Azure RMS kan doen, bent u mogelijk geïnteresseerd in het programma dit doet. Zie [Hoe werkt Azure RMS?](how-does-it-work.md) voor technische informatie over hoe Azure RMS werkt
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

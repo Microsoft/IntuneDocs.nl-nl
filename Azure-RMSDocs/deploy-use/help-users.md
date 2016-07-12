@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Gebruikers helpen bij het beveiligen van bestanden door gebruik te maken van Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
+ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
+
 
 ---
 
@@ -35,7 +29,8 @@ Nadat u Azure Rights Management (Azure RMS) hebt geïmplementeerd en geconfigure
 
     Laat gebruikers weten hoe en wanneer ze documenten en e-mails met gevoelige informatie moeten beveiligen. Indien mogelijk moet u deze informatie verstrekken voorafgaand aan hun huidige werkstromen, zodat ze aanvullende stappen aan een vertrouwd proces kunnen toevoegen en u geen volledig nieuw proces hoeft te introduceren. Informeer ze over de specifieke voordelen (en risico's) voor uw bedrijf en bied ze richtlijnen voor wanneer ze bestanden en e-mailberichten moeten beveiligen. Als u [aangepaste sjablonen](configure-custom-templates.md) hebt geconfigureerd en de naam en beschrijving van de sjablonen niet voldoende informatie bieden om de juiste sjabloon te selecteren, verstrekt u hier instructies voor.
 
-    > [!TIP] Voorbeeldvideo's voor eindgebruikers:
+    > [!TIP]
+    > Voorbeeldvideo's voor eindgebruikers:
     >
     > -   [Gebruikerservaring van Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Azure RMS-document bijhouden en intrekken](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
@@ -75,12 +70,14 @@ Zie de [Rights Management sharing application user guide](../rms-client/sharing-
 
 Zie [FAQ for Microsoft Rights Management Sharing Application for Mobile Platforms](http://technet.microsoft.com/dn451248) (Veelgestelde vragen over Microsoft Rights Management-toepassing voor delen voor mobiele platformen) voor informatie over mobiele apparaten.
 
-> [!TIP] Zie [Users safely share attachments with mobile users](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) voor een gedetailleerd voorbeeldscenario met screenshots.
+> [!TIP]
+> Zie [Gebruikers delen bijlagen veilig met mobiele gebruikers](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) voor een gedetailleerd voorbeeldscenario met screenshots.
 
 ## Gegevensbeveiliging gebruiken met behulp van Office 365, Office 2016 of Office 2013
 Als u Azure RMS gebruikt en u de Rights Management-toepassing voor delen niet hebt geïnstalleerd, wordt de knop **Beveiligd delen** niet weergegeven op het lint of is **Op locatie beveiligen** niet beschikbaar in de Verkenner. Hiermee kunnen gebruikers eenvoudig bestanden beveiligen. Deze gebruikers moeten instructies volgend die vergelijkbaar zijn met deze.
 
-> [!TIP]Als u toepassingsspecifieke Help-informatie of instructies wilt zoeken voor het gebruik van gegevensbeveiliging met deze toepassingen, zoekt u op **IRM** en de naam en versie van de toepassing.
+> [!TIP]
+> Als u toepassingsspecifieke Help-informatie of instructies wilt zoeken voor het gebruik van gegevensbeveiliging met deze toepassingen, zoekt u op **IRM** en de naam en versie van de toepassing.
 
 #### Een document beveiligen in Word 2013
 
@@ -88,7 +85,8 @@ Als u Azure RMS gebruikt en u de Rights Management-toepassing voor delen niet he
 
 2.  Klik in het menu **Bestand** op **Info**, klik op **Document beveiligen**, klik op **Toegang beperken** en kies vervolgens een sjabloon om snel de juiste gebruiksrechten toe te passen, of selecteer **Toegang beperken** en selecteer zelf de gebruikersrechten.
 
-    > [!NOTE] Als u Rights Management voor de eerste keer gebruikt, neemt u contact op met de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]-service en wordt u naar de referenties gevraagd om de Office IRM-client te configureren.
+    > [!NOTE]
+    > Als u Rights Management voor de eerste keer gebruikt, neemt u contact op met de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]-service en wordt u naar de referenties gevraagd om de Office IRM-client te configureren.
 
 3.  Sla het document op.
 
@@ -117,6 +115,7 @@ Wanneer ontvangers een e-mailbericht ontvangen, worden ze op een vergelijkbare m
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

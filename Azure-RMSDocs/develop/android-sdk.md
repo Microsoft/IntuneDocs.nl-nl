@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Android-configuratie | Azure RMS
-description: Ontwikkelaars van Android-toepassingen kunnen gebruikmaken van de Microsoft Rights Management SDK 4.2 voor geïntegreerde gegevensbeveiliging in hun toepassingen.
-keywords:
+description: "Ontwikkelaars van Android-toepassingen kunnen gebruikmaken van de Microsoft Rights Management SDK 4.2 voor geïntegreerde gegevensbeveiliging in hun toepassingen."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +45,7 @@ We bevelen de volgende software op uw ontwikkelsysteem aan:
 
     Deze SDK kan worden gebruikt voor het ontwikkelen voor Android 4.0.3 (API-niveau 15) en hoger.
 
--   Verificatiebibliotheek: u kunt het beste de [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx) gebruiken. Andere verificatie-bibliotheken die ondersteuning bieden voor OAuth 2.0, kunnen echter ook worden gebruikt.
+-   Verificatiebibliotheek: U kunt het beste de [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx) gebruiken. Andere verificatie-bibliotheken die ondersteuning bieden voor OAuth 2.0, kunnen echter ook worden gebruikt.
 
     Zie [ADAL voor Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android) voor meer informatie
 
@@ -131,12 +126,7 @@ Onze UI-bibliotheek biedt een herbruikbare UI voor gebruiks- en beveiligingsbewe
 -   U kunt de manifeststap controleren door het manifest te bekijken in de weergave van de tekstverwerker. Controleer of de volgende regels worden weergegeven:
 
 
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **Opmerking** de SDK gebruikt *android.support.v4*
@@ -158,6 +148,7 @@ Onze UI-bibliotheek biedt een herbruikbare UI voor gebruiks- en beveiligingsbewe
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

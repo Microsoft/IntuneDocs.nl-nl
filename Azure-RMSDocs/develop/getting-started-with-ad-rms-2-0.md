@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Aan de slag | Azure RMS
 description: Het RMS SDK 2.1-platform stelt ontwikkelaars in staat om toepassingen te ontwikkelen die gebruikmaken van de RMS-beveiliging voor informatie.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: 81541dbadabe3417299f47447384934373275e75
+
 
 ---
 # Aan de slag
@@ -39,17 +35,17 @@ Dit onderwerp bevat informatie over het instellen en uitvoeren van uw toepassing
 | [De SDK installeren](install-the-rms-sdk.md) | Dit onderwerp bevat de stappen voor het installeren van de hulpprogramma's voor ontwikkelaars.|
 | [Visual Studio configureren](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Dit onderwerp bevat instructies over het configureren van een Visual Studio-project voor het gebruik van de RMS SDK 2.1.|
 | [Uw toepassing ontwikkelen](developing-your-application.md) | Dit onderwerp bevat essentiële instructies voor de belangrijkste aspecten van een RMS-toepassing en kan fungeren als basis bij het ontwikkelen van uw eigen toepassing.|
-| [Uw toepassing testen](running-your-first-application.md) |Dit onderwerp bevat instructies voor het instellen van uw toepassingstest.|
+| [Uw toepassing testen](how-to-set-up-your-test-environment.md) |Dit onderwerp bevat instructies voor het instellen van uw toepassingstest.|
 | [Implementeren in productieomgeving](deploying-your-application.md) |Dit onderwerp bevat informatie over de implementatieopties voor uw toepassing met rechten.|
-
-Wanneer u aan de slag bent gegaan, is het een goed idee om enkele van onze andere [RMS-voorbeelden](samples.md) te bekijken. Bezoek vervolgens regelmatig onze [RMS Developer’s Corner](http://blogs.msdn.com/b/rms/) voor de meest recente informatie.
 
 
 Gebruik de RMS SDK 2.1 aan de hand van de richtlijnen in de volgende onderwerpen:
 
--   [De SDK installeren](install-the-rms-sdk.md)
--   [Een toepassing met rechten testen](running-your-first-application.md)
--   [IPCHelloWorld - een voorbeeld van de toepassing](how-to-build-your-first-application.md)
+- [De SDK installeren](install-the-rms-sdk.md)
+- [Visual Studio configureren](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+- [Uw toepassing ontwikkelen](developing-your-application.md)
+- [Uw toepassing testen](how-to-set-up-your-test-environment.md)
+- [Implementeren in productieomgeving](deploying-your-application.md)
 
 ### Waarom de RMS SDK 2.1 gebruiken voor het beveiligen van uw inhoud
 
@@ -71,17 +67,15 @@ De RMS SDK 2.1 ondersteunt een aantal belangrijke client- en serverplatforms. Ga
 
 ## Verwante onderwerpen
 
-* [AD RMS-voorbeelden](samples.md)
+* [RMS-handleiding voor ontwikkelaars](developers-guide.md)
 * [AD RMS Developer's Corner](http://blogs.msdn.com/b/rms/)
-* [De SDK installeren](install-the-rms-sdk.md)
-* [IPCHelloWorld - een voorbeeldtoepassing](how-to-build-your-first-application.md)
-* [Overzicht](ad-rms-overview.md)
-* [Ondersteunde platforms](supported-platforms.md)
+
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

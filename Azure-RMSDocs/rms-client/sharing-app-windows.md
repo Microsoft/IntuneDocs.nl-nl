@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Rights Management-toepassing voor delen voor Windows | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 39eebe7e99fce0eae612f87726764c6810351b77
+
 
 ---
 
@@ -38,13 +32,14 @@ De Rights Management-toepassing voor delen voor Windows (ook wel de RMS-app voor
 -   [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 > [!TIP]
-> Er is ook een Rights Management-app voor delen voor Mac-computers en mobiele apparaten. Zie [Veelgestelde vragen over Rights Management-toepassing voor delen voor mobiele en Mac-platforms](http://technet.microsoft.com/dn451248) (Engelstalig) voor meer informatie..
+> Er is ook een Rights Management-app voor delen voor Mac-computers en mobiele apparaten. Zie [Veelgestelde vragen over Rights Management-toepassing voor delen voor mobiele en Mac-platforms](http://technet.microsoft.com/dn451248) voor meer informatie.
 
 ## Zie ook
 [Veelgestelde vragen over Rights Management-toepassing voor delen voor Windows](http://technet.microsoft.com/dn467883)
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

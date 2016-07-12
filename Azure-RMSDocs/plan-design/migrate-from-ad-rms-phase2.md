@@ -1,28 +1,20 @@
 ---
-# required metadata
-
 title: Migreren van AD RMS naar Azure Rights Management - Fase 2 | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/23/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
+ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
+
 
 ---
 # Migratiefase 2: configuratie aan de clientzijde
@@ -45,13 +37,44 @@ Voor Windows-clients:
 
 2.  Volg de instructies in het omleidingsscript (Redirect_OnPrem.cmd) om het script te laten verwijzen naar uw nieuwe Azure RMS-tenant.
 
-3.  Voer deze scripts met verhoogde bevoegdheden op de Windows-computers uit in de context van de gebruiker.
+    > [!IMPORTANT]
+    > In de instructies vindt u een voorbeeld van hoe u de voorbeeldadressen **adrms** en **adrms.contoso.com** kunt vervangen door de adressen van uw eigen AD RMS-servers. Wanneer u dit doet, moet u erop letten dat er geen extra spaties vóór of na de adressen worden weergegeven. Deze extra spaties zorgen ervoor dat het migratiescript wordt onderbroken en zijn moeilijk te identificeren als de hoofdoorzaak van het probleem. In sommige bewerkingsprogramma's wordt na het plakken van tekst automatisch een spatie toegevoegd.
 
-Voor mobiele-apparaatclients en Mac-computers:
+3. Gebruikers van Office 2016: de scripts zijn nog niet bijgewerkt met de configuratie voor Office 2016, dus als gebruikers met deze Office-versie werken, moet u de scripts handmatig bijwerken:
 
--   Verwijder de DNS SRV-records die u hebt gemaakt tijdens de implementatie van de [AD RMS-extensie voor mobiele apparaten](http://technet.microsoft.com/library/dn673574.aspx).
+    - Voor **CleanUpRMS.cmd** - Zoek de regel `reg delete HKCU\Software\Microsoft\Office\15.0\Common\DRM /f` en voeg direct hieronder de volgende regel toe:
 
-#### Wijzigingen aangebracht door de migratiescripts
+            reg delete HKCU\Software\Microsoft\Office\16.0\Common\DRM /f
+
+    - Voor **Redirect_Onprem.cmd** - Zoek de regel `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F1` en voeg direct hieronder de volgende twee regels toe:
+
+            reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServerUrl" /d "https://%CloudRMS%/_wmcs/licensing" /F 
+
+            reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F
+
+    Optioneel: De scripts bevatten geen verwijzing naar Office 2016 in de opmerkingen. Als u de opmerkingen wilt bijwerken zodat deze toevoegingen voor Office 2016 worden weergegeven, brengt u de volgende wijzigingen aan in **Redirect_Onprem.cmd**:
+
+    - Zoek `::     or MSIPC (Office 2013) with on-premises AD RMS` en vervang deze waarde door het volgende:
+    
+            ::     or MSIPC (Office 2013 and 2016) with on-premises AD RMS
+
+    - Zoek `echo Redirect SCP for Office 2013` en vervang deze waarde door het volgende:
+    
+            echo Redirect SCP for Office versions based on MSIPC
+
+    - Zoek `echo Redirect MSIPC for Office 2013` en vervang deze waarde door het volgende:
+    
+            echo Redirect MSIPC for Office versions based on MSIPC
+
+4.  Op Windows-computers:
+
+    - voer deze scripts met verhoogde bevoegdheden uit in de context van de gebruiker.
+
+    Voor mobiele-apparaatclients en Mac-computers:
+
+    -  Verwijder de DNS SRV-records die u hebt gemaakt tijdens de implementatie van de [AD RMS-extensie voor mobiele apparaten](http://technet.microsoft.com/library/dn673574.aspx).
+
+#### Wijzigingen gemaakt door de migratiescripts
 In dit gedeelte worden de wijzigingen gedocumenteerd die de migratiescripts aanbrengen. U kunt deze informatie gebruiken voor referentiedoeleinden, voor het oplossen van problemen of voor het aanbrengen van de wijzigingen (als u dit liever zelf doet).
 
 CleanUpRMS_RUN_Elevated.cmd:
@@ -74,7 +97,7 @@ CleanUpRMS_RUN_Elevated.cmd:
 
     -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation
 
--   Verwijder de volgende registerwaarden:
+-   Voeg de volgende registerwaarden toe:
 
     -   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM\DefaultServerURL
 
@@ -107,6 +130,7 @@ Redirect_OnPrem.cmd:
 ## Volgende stappen
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 3: configuratie van ondersteuningsservices](migrate-from-ad-rms-phase3.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

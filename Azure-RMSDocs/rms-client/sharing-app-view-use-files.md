@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Bestanden weergeven en gebruiken die zijn beveiligd door Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -59,7 +53,7 @@ Hoe het bestand wordt geopend is afhankelijk van hoe het is beveilig. Dat kunt u
 
     ![Dialoogvenster voor een pfile dat per e-mail is gedeeld tijdens het gebruik van de RMS-toepassing voor delen](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **Het bestand heeft de bestandsnaamextensie *.ppdf* of is een beveiligd tekst- of afbeeldingsbestand (zoals *.ptxt* of *.pjpg*))**
+- **Het bestand heeft de bestandsnaamextensie *.ppdf* of is een beveiligd tekst- of afbeeldingsbestand (zoals *.ptxt* of *.pjpg*) **
 
     Het bestand is systeemeigen beveiligd als een kopie voor alleen-lezen.
 
@@ -91,7 +85,7 @@ Als u het beveiligde bestand hebt geopend en u hier meer mee wilt doen dan lezen
 
     Het nieuwe bestand is niet langer beveiligd. Als u het wilt beveiligen, moet u dit handmatig doen. Voor instructies raadpleegt u [Het beveiligen van een bestand op een apparaat (in-place beveiligen) met behulp van de Rights Management-toepassing voor delen](sharing-app-protect-in-place.md).
 
-- **Het bestand heeft de bestandsnaamextensie *.ppdf* of is een beveiligd tekst- of afbeeldingsbestand (zoals *.ptxt* of *.pjpg*))**
+- **Het bestand heeft de bestandsnaamextensie *.ppdf* of is een beveiligd tekst- of afbeeldingsbestand (zoals *.ptxt* of *.pjpg*) **
 
     U kunt het bestand alleen weergeven en als u het een nieuwe naam geeft of verplaatst, dan blijft het bestand beveiligd.
 
@@ -113,6 +107,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

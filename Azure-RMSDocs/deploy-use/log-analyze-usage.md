@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Azure Rights Management-gebruik analyseren en vastleggen in een logboek | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ U kunt deze Azure Rights Management-logboeken gebruiken ter ondersteuning van de
 
     Als u een informatielek hebt, wordt u waarschijnlijk gevraagd wie onlangs specifieke documenten heeft geopend en welke informatie een verdacht persoon onlangs heeft weergegeven. U kunt dergelijke vragen beantwoorden wanneer u Azure Rights Management en logboekregistratie gebruikt, aangezien mensen die beveiligde inhoud gebruiken altijd een Rights Management-licentie nodig hebben om documenten en afbeeldingen te kunnen openen die zijn beveiligd met Azure Rights Management, zelfs als deze bestanden worden verplaatst via e-mail of worden gekopieerd naar een USB-station of andere opslagapparaten. Dit betekent dat u Azure Rights Management-logboeken kunt gebruiken als een nauwkeurige bron van informatie voor forensische analyse wanneer u uw gegevens beveiligt met Azure Rights Management.
 
-> [!NOTE]Als u alleen bent geïnteresseerd in de logboekregistratie van beheertaken voor Azure Rights Management en u niet wilt bijhouden hoe gebruikers Rights Management gebruiken, kunt u de Windows PowerShell-cmdlet voor Azure Rights Management [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) gebruiken.
+> [!NOTE]
+> Als u alleen bent geïnteresseerd in de logboekregistratie van beheertaken voor Azure Rights Management en u niet wilt bijhouden hoe gebruikers Rights Management gebruiken, kunt u de Windows PowerShell-cmdlet voor Azure Rights Management [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) gebruiken.
 > 
 > U kunt de klassieke Azure-portal ook gebruiken voor geavanceerde gebruiksrapporten die de volgende informatie bevatten: **RMS-overzicht**, **actieve RMS-gebruiker**, **RMS-apparaatplatformen** en **gebruik van de RMS-toepassing**. Voor toegang tot deze rapporten via de klassieke Azure-portal klikt u op **Active Directory**, selecteert en opent u een map en klikt u vervolgens op **RAPPORTEN**.
 
@@ -56,7 +51,8 @@ Gebruik de volgende secties voor meer informatie over de logboekregistratie van 
 ## Azure Rights Management-gebruik registreren in een logboek
 Vanaf februari 2016 wordt voor alle klanten standaard de functie voor logboekregistratie van het Azure Rights Management-gebruik ingeschakeld. Dit is van toepassing op klanten die hun Azure RMS-service vóór februari 2016 hebben geactiveerd en op klanten die de service na februari 2016 activeren. 
 
-> [!NOTE] Er zijn geen extra kosten verbonden aan de opslag van de logboeken of de functie voor logboekregistratie.
+> [!NOTE]
+> Er zijn geen extra kosten verbonden aan de opslag van de logboeken of de functie voor logboekregistratie.
 > 
 > Als u vóór februari 2016 ook al gebruikmaakte van logboekregistratie van het Azure RMS-gebruik, had u een abonnement op Azure en voldoende opslag in Azure nodig. Dit is nu niet meer nodig.
 
@@ -67,7 +63,7 @@ Azure Rights Management schrijft de logboeken als een reeks blobs naar uw Azure-
 
 Het kan even duren voordat logboeken na een Azure Rights Management-actie worden weergegeven in uw opslagaccount. De meeste logboeken worden binnen vijftien minuten weergegeven. U kunt de logboeken het beste downloaden naar een lokale opslag, zoals een lokale map, een database of een opslagplaats met MapReduce.
 
-Als u de gebruikslogboeken wilt downloaden, gebruikt u de Azure RMS-beheermodule voor Windows PowerShell. Zie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md) voor de installatie-instructies. Als u deze Windows PowerShell-module eerder hebt gedownload, voert u de volgende opdracht uit om te controleren of u minimaal over versienummer **2.4.0.0** beschikt: `(Get-Module aadrm -ListAvailable).Version` 
+Als u de gebruikslogboeken wilt downloaden, gebruikt u de Azure RMS-beheermodule voor Windows PowerShell. Zie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md) voor installatie-instructies. Als u deze Windows PowerShell-module eerder hebt gedownload, voert u de volgende opdracht uit om te controleren of u minimaal over versienummer **2.4.0.0** beschikt: `(Get-Module aadrm -ListAvailable).Version` 
 
 ### Uw gebruikslogboeken downloaden met PowerShell
 
@@ -143,17 +139,17 @@ Elk van de volgende regels is een logboekrecord. De waarden van de velden staan 
 |--------------|-----------------|---------------|-----------------|
 |date|Datum|De UTC-datum wanneer de aanvraag is uitgevoerd.<br /><br />De bron is de lokale klok op de server waarmee de aanvraag wordt uitgevoerd.|25-06-2013|
 |time|Tijd|De UTC-tijd met een 24-uursnotatie wanneer de aanvraag is uitgevoerd.<br /><br />De bron is de lokale klok op de server waarmee de aanvraag wordt uitgevoerd.|21:59:28|
-|row-id|Tekst|De unieke GUID voor deze logboekrecord.<br /><br />Deze waarde is handig wanneer u de logboeken samenvoegt of logboeken naar een andere indeling kopieert.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|Tekst|De unieke GUID voor deze logboekrecord. Als een waarde niet aanwezig is, gebruikt u de waarde van de correlatie-id om de vermelding te identificeren.<br /><br />Deze waarde is handig wanneer u de logboeken samenvoegt of logboeken naar een andere indeling kopieert.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Naam|De naam van de RMS-API die is aangevraagd.|AcquireLicense|
-|user-id|Tekenreeks|De gebruiker die het verzoek heeft ingediend.<br /><br />De waarde wordt tussen enkele aanhalingstekens geplaatst. Bepaalde aanvraagtypen zijn anoniem. In dat geval is de waarde ".|'joe@contoso.com'|
-|result|Tekenreeks|'Voltooid' als de aanvraag is uitgevoerd.<br /><br />Het fouttype tussen enkele aanhalingstekens als de aanvraag is mislukt.|'Voltooid'|
+|user-id|Tekenreeks|De gebruiker die het verzoek heeft ingediend.<br /><br />De waarde wordt tussen enkele aanhalingstekens geplaatst. Aanroepen van een tenantsleutel die wordt beheerd door uzelf (BYOK) hebben de waarde **"**, die ook van toepassing is wanneer de aanvraagtypen anoniem zijn.|'joe@contoso.com'|
+|result|Tekenreeks|'Geslaagd' als de aanvraag is uitgevoerd.<br /><br />Het fouttype tussen enkele aanhalingstekens als de aanvraag is mislukt.|'Geslaagd'|
 |correlation-id|Tekst|De GUID die door het RMS-clientlogboek en het logboekbestand van de server voor een bepaalde aanvraag wordt gedeeld.<br /><br />Deze waarde kan nuttig zijn bij het oplossen van clientproblemen.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Tekst|De GUID tussen accolades waarmee de beveiligde inhoud (bijvoorbeeld een document) wordt aangeduid.<br /><br />Dit veld bevat alleen een waarde wanneer het aanvraagtype AcquireLicense is en is leeg voor alle andere aanvraagtypen.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|Tekenreeks|Het e-mailadres van de eigenaar van het document.|alice@contoso.com|
 |uitgever|Tekenreeks|Het e-mailadres van de verstrekker van het document.|alice@contoso.com (or) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Sjabloon-id|Tekenreeks|De id van de sjabloon die wordt gebruikt om het document te beveiligen.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|Tekenreeks|De bestandsnaam van het document dat is beveiligd. <br /><br />Op dit moment kunnen worden een aantal bestanden (zoals Office-documenten) als GUID's weergegeven in plaats van met de werkelijke bestandsnaam.|TopSecretDocument.docx|
-|Date-published|Datum|De datum waarop het document is beveiligd.|15-10-2015T21:37:00|
+|template-id|Tekenreeks|De id van de sjabloon die wordt gebruikt om het document te beveiligen.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|Tekenreeks|De bestandsnaam van het document dat is beveiligd. <br /><br />Op dit moment kunnen worden een aantal bestanden (zoals Office-documenten) als GUID's weergegeven in plaats van met de werkelijke bestandsnaam.|TopSecretDocument.docx|
+|date-published|Datum|De datum waarop het document is beveiligd.|15-10-2015T21:37:00|
 |c-info|Tekenreeks|De informatie over het clientplatform waarmee de aanvraag wordt ingediend.<br /><br />De specifieke tekenreeks varieert, afhankelijk van de toepassing (bijvoorbeeld het besturingssysteem of de browser).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Het IP-adres van de client waarmee de aanvraag is ingediend.|64.51.202.144|
 
@@ -166,7 +162,7 @@ Hoewel het veld user-id meestal aangeeft welke gebruiker de aanvraag heeft uitge
 
 -   Als u de RMS-connector gebruikt.
 
-    Aanvragen vanaf deze connector worden geregistreerd met de Service Principal Name die automatisch door RMS wordt gegenereerd wanneer u de RMS-connector installeert.
+    Aanvragen vanaf deze connector worden geregistreerd met de Service Principal Name **Aadrm_S-1-7-0**, die automatisch door RMS wordt gegenereerd wanneer u de RMS-connector installeert.
 
 #### Standaardaanvraagtypen
 Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tabel bevat enkele veelgebruikte aanvraagtypen.
@@ -181,7 +177,7 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |BECreateEndUserLicenseV1|Er wordt een aanroep uitgevoerd vanaf een mobiel apparaat om een gebruiksrechtovereenkomst te maken.|
 |BEGetAllTemplatesV1|Er wordt een aanroep uitgevoerd vanaf een mobiel apparaat (back-end) om alle sjablonen op te halen.|
 |Certify|De inhoud wordt voor beveiliging gecertificeerd door de client.|
-|Ontsleutelen|De client probeert de inhoud te ontsleutelen die is beveiligd met RMS.|
+|KMSPDecrypt|De client probeert de inhoud te ontsleutelen die is beveiligd met RMS. Alleen van toepassing op een door de klant beheerde tenantsleutel (BYOK).|
 |DeleteTemplateById|Er is een aanroep vanuit de klassieke Azure-portal uitgevoerd om een sjabloon te verwijderen op basis van de sjabloon-id.|
 |ExportTemplateById|Er wordt een aanroep vanuit de klassieke Azure-portal uitgevoerd om een sjabloon te verwijderen op basis van de sjabloon-id.|
 |FECreateEndUserLicenseV1|Vergelijkbaar met de AcquireLicense-aanvraag, maar afkomstig van mobiele apparaten.|
@@ -199,7 +195,7 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |ServerCertify|Een wordt een aanroep vanaf een RMS-clients(zoals SharePoint) uitgevoerd om de server te certificeren.|
 |SetUsageLogFeatureState|Er wordt een aanroep uitgevoerd om logboekregistratie van het gebruik in te schakelen.|
 |SetUsageLogStorageAccount|Er wordt een aanroep uitgevoerd om de locatie van Azure RMS-logboeken op te geven.|
-|SignDigest|Er wordt een aanroep uitgevoerd wanneer een sleutel wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
+|KMSPSignDigest|Er wordt een aanroep uitgevoerd wanneer een door de klant beheerde sleutel wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
 |UpdateTemplate|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een bestaande sjabloon bij te werken.|
 
 ## Windows PowerShell reference
@@ -229,6 +225,7 @@ Zie [Administering Azure Rights Management by Using Windows PowerShell](administ
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Bestandsservers met Windows Server en de infrastructuur voor bestandsclassificatie (FCI) | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 839be5a8a45c2322127694dc0bdc306ff445c314
+
 
 ---
 
@@ -39,7 +33,7 @@ De classificatiebeleidsregels kunnen volledig worden geconfigureerd en maximaal 
 
 Voor instructies over het implementeren en configureren van de RMS-connector voor Office-bestanden raadpleegt u [De Azure Rights Management-connector implementeren](../deploy-use/deploy-rms-connector.md).
 
-Voor instructies over het gebruik van het Windows PowerShell-script voor alle bestandstypen raadpleegt u [RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server](../rms-client/configure-fci.md).
+Voor instructies over het gebruik van het Windows PowerShell-script voor alle bestandstypen raadpleegt u [RMS-beveiliging met infrastructuur voor bestandsclassificatie &#40;FCI&#41; voor Windows Server](../rms-client/configure-fci.md).
 
 
 
@@ -49,6 +43,7 @@ Nu u begrijpt hoe toepassingen en services ondersteuning bieden voor Azure RMS, 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

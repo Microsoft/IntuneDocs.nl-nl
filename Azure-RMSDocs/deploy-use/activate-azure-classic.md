@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Azure Rights Management activeren vanuit de klassieke Azure-portal | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/05/2016
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b214d7951820c8cb98c5d6f81af3325597ea72ec
+ms.openlocfilehash: 9cde79791e8c2b04d1d7622f5aa69d654a70646e
+
 
 ---
 
@@ -30,32 +24,29 @@ ms.suite: ems
 *Van toepassing op: Azure Rights Management*
 
 
-Volg deze instructies als u toegang tot de Azure-portal hebt. U hebt bijvoorbeeld een abonnement op de Enterprise Mobility Suite.
+Volg deze instructies als u toegang tot de Azure-portal hebt. Bijvoorbeeld: u hebt een abonnement voor Enterprise Mobility Suite of Azure Rights Management Premium.
 
 > [!TIP]
 > Bekijk een video van 2 minuten: [Azure RMS activeren](https://channel9.msdn.com/series/pit-stop-enterprise-mobility-suite/activate-azure-rms)
 
-1.  [Meld u aan bij de klassieke Azure-portal](http://go.microsoft.com/fwlink/p/?LinkID=275081) nadat u zich hebt aangemeld voor uw Azure-account..
+1.  [Meld u aan bij de klassieke Azure-portal](http://go.microsoft.com/fwlink/p/?LinkID=275081) nadat u zich hebt aangemeld voor uw Azure-account. Gebruik het account van de globale beheerder zoals het account waarmee u het abonnement dat Azure Rights Management bevat hebt gedownload.
 
-2.  Klik in het linkerdeelvenster op **ACTIVE DIRECTORY**..
+2.  Klik in het linkerdeelvenster op **ACTIVE DIRECTORY**.
 
-3.  Klik op de pagina **Active Directory** op **RIGHTS MANAGEMENT**..
+3.  Klik op de pagina **Active directory** op **RIGHTS MANAGEMENT**.
 
 4.  Selecteer de map die u wilt beheren voor [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], klik op **ACTIVEREN** en bevestig de actie.
 
----
-
-   OPMERKING: als er een activeringsfout wordt weergegeven, kan het zijn dat uw service-abonnement of productversie niet het volgende bevat: [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
-
-   Gebruik de informatie in [Cloudabonnementen die Azure RMS ondersteunen](../get-started/requirements-subscriptions.md) om RMS-ondersteuning te bevestigen. Voor hulp bij dit probleem stuurt u een e-mailbericht naar [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)..
-
----
+    > [!NOTE]
+    >Als er een activeringsfout optreedt, kan het zijn dat uw service-abonnement of productversie geen recht geeft op [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
+    >
+    >Gebruik de informatie in [Cloudabonnementen die Azure RMS ondersteunen](../get-started/requirements-subscriptions.md) om te controleren op RMS-ondersteuning. Voor hulp bij dit probleem stuurt u een e-mailbericht naar [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
 
 
-De **RIGHTS MANAGEMENT-STATUS** wordt nu weergegeven als **Actief** en de optie **ACTIVEREN** is vervangen door **DEACTIVEREN**..
+De **RIGHTS MANAGEMENT-STATUS** wordt nu weergegeven als **Actief** en de optie **ACTIVEREN** is vervangen door **DEACTIVEREN**.
 
 ## Rights Management-statuswaarden en -beschrijvingen in de klassieke Azure-portal
-Naast de status **Actief** die aangeeft dat de Rights Management-service is ingeschakeld en gereed is voor gebruik, ziet u mogelijk ook **Inactief**, **Niet beschikbaar** of **Niet geautoriseerd**..
+Naast de status **Actief** die aangeeft dat de Rights Management-service is ingeschakeld en gereed is voor gebruik, ziet u mogelijk ook **Inactief**, **Niet beschikbaar** of **Niet geautoriseerd**.
 
 |Statuswaarde|Beschrijving|
 |----------------|---------------|
@@ -67,6 +58,7 @@ Naast de status **Actief** die aangeeft dat de Rights Management-service is inge
 ## Volgende stappen
 Terug naar [Azure Rights Management activeren](activate-service.md).
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

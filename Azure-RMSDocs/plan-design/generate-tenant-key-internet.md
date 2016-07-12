@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Uw eigen tenantsleutel genereren en overdragen via internet | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -46,9 +40,9 @@ Volg deze drie stappen om uw op internet aangesloten werkstation voor te bereide
 Download en installeer de Windows PowerShell-module voor Azure Rights Management vanaf het met internet verbonden werkstation.
 
 > [!NOTE]
-> Als u deze Windows PowerShell-module eerder hebt gedownload, voert u de volgende opdracht uit om te controleren of u minimaal over versie nummer 2.1.0.0 beschikt: `(Get-Module aadrm -ListAvailable).Version`
+> Als u deze Windows PowerShell-module eerder hebt gedownload, voert u de volgende opdracht uit om te controleren of u minimaal over versienummer 2.1.0.0 beschikt: `(Get-Module aadrm -ListAvailable).Version`
 
-Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor de installatie-instructies.
+Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor installatie-instructies.
 
 ### Stap 2: haal de tenant-id voor uw Azure Active Directory op
 Start Windows PowerShell met de optie **Als administrator uitvoeren** en voer de volgende opdrachten uit:
@@ -83,7 +77,7 @@ Ga naar het Microsoft Downloadcentrum en [download de BYOK-hulpmiddelenset](http
 |Noord-Amerika|AzureRMS-BYOK-tools-UnitedStates.zip|
 |Europa|AzureRMS-BYOK-tools-Europe.zip|
 |Azië|AzureRMS-BYOK-tools-AsiaPacific.zip|
-De hulpmiddelenset bevat het volgende:
+De toolset bevat het volgende:
 
 -   Een KEK-pakket (Key Exchange Key) met een naam die begint met **BYOK-KEK-pkg-**.
 
@@ -93,7 +87,7 @@ De hulpmiddelenset bevat het volgende:
 
 -   Een uitvoerbaar opdrachtregelbestand met de naam **KeyTransferRemote.exe**, een metagegevensbestand met de naam **KeyTransferRemote.exe.config** en bijbehorende DLL-bestanden.
 
--   Een herdistribueerbaar Visual C++ pakket, met de naam **vcredist_x64.exe**.
+-   Een herdistribueerbaar Visual C++ pakket , met de naam **vcredist_x64.exe**.
 
 Kopieer het pakket naar een USB-station of ander draagbaar opslagmedium.
 
@@ -114,7 +108,7 @@ set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
 Zie voor meer informatie de handleiding inbegrepen bij de Thales HSM of ga naar de Thales-website voor Azure RMS op [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
-### Stap 2: installeer de BYOK-hulpmiddelenset op het niet-verbonden werkstation
+### Stap 2: installeer de BYOK-toolset op het niet-verbonden werkstation
 Kopieer het pakket met de BYOK-hulpmiddelenset van het USB-station of het andere draagbare opslagmedium en doe daarna het volgende:
 
 1.  Pak de bestanden in het gedownloade pakket uit naar een map.
@@ -210,7 +204,7 @@ Volg de volgende instructies om deze opdracht uit te voeren:
 
 -   De pubexp is leeg (standaard) in dit voorbeeld, maar u kunt specifieke waarden opgeven. Zie de Thales-documentatie voor meer informatie.
 
-Voer daarna de volgende opdracht uit om de sleutel in CNG importeren:
+Voer daarna de volgende opdracht uit om de sleutel in CNG te importeren:
 
 ```
 cngimport --import -M --key=contosokey --appname=simple contosokey
@@ -269,7 +263,7 @@ Doe het volgende om de machtigingen op uw tenantsleutel te beperken:
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-Wanneer u deze opdracht uitvoert, vervangt u *contosokey* door dezelfde waarde als u hebt opgegeven in [Stap 1: maak een beveiligingswereld](##step-1-create-a-security-world) in het gedeelte *Uw tenantsleutel genereren*.
+Wanneer u deze opdracht uitvoert, vervangt u *contosokey* door dezelfde waarde als u hebt opgegeven in [Stap 1: maak een beveiligingswereld](#step-1-create-a-security-world) in het gedeelte *Uw tenantsleutel genereren*.
 
 U wordt gevraagd de ACS-kaarten voor uw beveiligingswereld aan te brengen en, als erom wordt gevraagd, de bijbehorende wachtwoorden of pincodes op te geven.
 
@@ -290,7 +284,7 @@ Voer optioneel de Thales-hulpprogramma’s uit om de minimaal vereiste machtigin
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-Wanneer u deze opdracht uitvoert, vervangt u *contosokey* door dezelfde waarde als u hebt opgegeven in [Stap 1: maak een beveiligingswereld](##step-1-create-a-security-world) in het gedeelte *Uw tenantsleutel genereren*.
+Wanneer u deze opdracht uitvoert, vervangt u *contosokey* door dezelfde waarde als u hebt opgegeven in [Stap 1: maak een beveiligingswereld](#step-1-create-a-security-world) in het gedeelte *Uw tenantsleutel genereren*.
 
 ### Stap 3: versleutel de sleutel met de Microsoft-uitwisselingssleutel van de sleutel
 Voer een van de volgende opdrachten uit, afhankelijk van uw regio:
@@ -315,7 +309,7 @@ Voer een van de volgende opdrachten uit, afhankelijk van uw regio:
 
 Volg de volgende instructies om deze opdracht uit te voeren:
 
--   Vervang *contosokey* door de id die u hebt gebruikt om de sleutel te generen in [Stap 1: maak een beveiligingswereld](##step-1-create-a-security-world) in het gedeelte *Uw tenantsleutel genereren*.
+-   Vervang *contosokey* door de id die u hebt gebruikt om de sleutel te generen in [Stap 1: maak een beveiligingswereld](#step-1-create-a-security-world) in het gedeelte *Uw tenantsleutel genereren*.
 
 -   Vervang *GUID* door de tenant-id van de Azure Active Directory die u hebt opgehaald in [Stap 2: haal de tenant-id van uw Azure Active Directory op](#step-2-get-your-azure-active-directory-tenant-id) in het gedeelte *Uw met internet verbonden werkstation voorbereiden*.
 
@@ -383,6 +377,7 @@ U hebt nu alle de stappen voltooid die nodig zijn om uw eigen sleutel via intern
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

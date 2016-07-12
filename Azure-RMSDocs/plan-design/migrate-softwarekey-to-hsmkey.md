@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Stap 2&colon; migratie van met software beschermde sleutel naar met HSM beschermde sleutel | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 Deze instructies maken deel uit van het [migratiepad van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) en zijn alleen van toepassing als uw AD RMS-sleutel softwarebeveiliging heeft en u wilt migreren naar Azure Rights Management met een tenantsleutel met HSM-beveiliging. 
 
-Als dit niet uw gekozen configuratiescenario is, gaat u terug naar [Stap 2: exporteer de configuratiegegevens vanuit AD RMS en importeer ze in Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) en kiest u een andere configuratie.
+Als dit niet uw gekozen configuratiescenario is, gaat u terug naar [Stap 2: Exporteer de configuratiegegevens vanuit AD RMS, importeer de gegevens in Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) en kies een andere configuratie.
 
 Volg deze procedure in drie delen voor het importeren van de AD RMS-configuratie naar Azure RMS, wat erin resulteert dat uw Azure RMS-tenantsleutel wordt beheerd door u (BYOK).
 
@@ -40,7 +34,7 @@ U moet eerst uw SLC-sleutel (serverlicentiecertificaat) uit de gegevens ophalen 
 
 ## Deel 1: haal uw SLC op uit de configuratiegegevens en importeer de sleutel in on-premises lokale HSM
 
-1.  Gebruik de volgende stappen uit het gedeelte [BYOK implementeren (Bring Your Own Key)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) in het onderwerp [Uw Azure Rights Management-tenantsleutel implementeren](plan-implement-tenant-key.md):
+1.  Volg de stappen in het gedeelte [BYOK (Bring Your Own Key) implementeren](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) van het onderwerp [Uw Azure Rights Management-tenantsleutel plannen en implementeren](plan-implement-tenant-key.md). Maak daarbij gebruik van de procedure **Uw tenantsleutel genereren en overdragen via het internet**, met de volgende uitzonderingen:
 
     -   **Uw tenantsleutel genereren en overdragen via internet**: **uw met internet verbonden werkstation voorbereiden**
 
@@ -79,7 +73,7 @@ Nu uw SLC is uitgepakt zodat het een HSM-gebaseerde sleutel is, kunt u dit inpak
 
 ## Deel 2: uw HSM-sleutel inpakken en overdragen naar Azure RMS
 
-1.  Gebruik de volgende stappen uit het gedeelte [BYOK implementeren (Bring Your Own Key)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) van het onderwerp [Uw Azure Rights Management-tenantsleutel implementeren](plan-implement-tenant-key.md):
+1.  Gebruik de volgende stappen uit het gedeelte [BYOK (Bring Your Own Key) implementeren](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) van het onderwerp [Uw Azure Rights Management-tenantsleutel implementeren](plan-implement-tenant-key.md):
 
     -   **Uw tenantsleutel genereren en overdragen via internet**: **uw tenantsleutel voorbereiden voor overdracht**
 
@@ -108,11 +102,12 @@ Nu u uw HSM-sleutel naar Azure RMS overgebracht hebt, kunt u uw AD RMS-configura
     Disconnect-AadrmService
     ```
 
-U kunt nu doorgaan naar [Stap 3: activeer uw RMS-tenant](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+U kunt nu doorgaan naar [stap 3. Uw RMS-tenant activeren](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Hoe werkt Azure RMS | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
+ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+
 
 ---
 
@@ -77,7 +71,8 @@ Voor een gedetailleerder inzicht in de werking van Azure RMS, doorlopen we een t
 
 Nadat de gebruikersomgeving is geïnitialiseerd, kan die gebruiker vervolgens documenten beveiligen of beveiligde documenten op die computer verbruiken.
 
-> [!NOTE] Als deze gebruiker naar een andere Windows-computer wordt verplaatst of een andere gebruiker dezelfde Windows-computer gebruikt, wordt het initialisatieproces herhaald.
+> [!NOTE]
+> Als deze gebruiker naar een andere Windows-computer verplaatst of een andere gebruiker deze dezelfde Windows-computer gebruikt, wordt het initialisatieproces herhaald.
 
 ### Initialisatie van de gebruikersomgeving
 Voordat een gebruiker inhoud kan beveiligen of beveiligde inhoud op een Windows-computer kan verbruiken, moet de gebruikersomgeving worden voorbereid op het apparaat. Dit is een eenmalige proces en dat automatisch plaatsvindt zonder tussenkomst van de gebruiker wanneer een gebruiker inhoud beveiligt of beveiligde inhoud verbruikt:
@@ -151,9 +146,11 @@ Lees [Terminologie voor Azure Rights Management](../get-started/terminology.md) 
 
 Als u klaar bent om Azure RMS in uw organisatie te implementeren, gebruikt u het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md) voor de implementatiestappen en koppelingen naar instructies.
 
-> [!TIP] Gebruik de resources en koppelingen in [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md) voor extra informatie en hulp.
+> [!TIP]
+> Gebruik de resources en koppelingen in [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md) voor extra informatie en hulp.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

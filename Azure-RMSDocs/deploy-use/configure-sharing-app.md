@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Rights Management-toepassing voor delen&colon; installatie en configuratie voor clients | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
+
 
 ---
 
@@ -32,10 +26,10 @@ ms.suite: ems
 De Rights Management-toepassing voor delen (RMS) is vereist als u op clientcomputers Azure RMS met Office 2010 wilt gebruiken, en wordt aanbevolen voor alle computers en mobiele apparaten die ondersteuning bieden voor Azure RMS. De RMS-toepassing voor delen kan worden geïntegreerd in Office-toepassingen door installatie van een Office-invoegtoepassing, zodat gebruikers bestanden en e-mails eenvoudig rechtstreeks vanuit het lint kunnen beveiligen. De toepassing biedt ook algemene beveiliging voor bestandstypen die niet systeemeigen worden ondersteund door Azure RMS, evenals een site met een documenttrackingsysteem voor gebruikers waarop zij bestanden die ze hebben beveiligd, kunnen bijhouden en intrekken.
 
 ## De RMS-toepassing voor delen voor Windows: installatie en configuratie
-Zie de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-admin-guide.md) als u de RMS-toepassing voor delen voor Windows wilt installeren en configureren voor implementatie in een onderneming..
+Zie de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-admin-guide.md) als u de RMS-toepassing voor delen voor Windows wilt installeren en configureren voor implementatie in een onderneming.
 
 > [!TIP]
-> Zie [De Rights Management-toepassing voor delen downloaden en installeren](../rms-client/install-sharing-app.md) in de [Gebruikershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md) als u de RMS-toepassing voor delen wilt snel installeren en testen voor één computer..
+> Zie [De Rights Management-toepassing voor delen downloaden en installeren](../rms-client/install-sharing-app.md) in de [Gebruikershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md) als u de RMS-toepassing voor delen wilt snel installeren en testen voor één computer.
 
 ## De Rights Management-toepassing voor delen voor mobiele platforms: installatie en beheer
 Als u de RMS-toepassing voor delen voor mobiele platforms wilt installeren, kunt u de relevante app downloaden via de koppelingen op de [Microsoft Rights Management-pagina](http://go.microsoft.com/fwlink/?LinkId=303970). Er is geen configuratie vereist om Azure RMS te gebruiken met deze app.
@@ -44,10 +38,11 @@ Als u de RMS-toepassing voor delen voor mobiele platforms wilt installeren, kunt
 
 -   U kunt voor apparaten die zijn ingeschreven door Intune, de RMS-toepassing voor delen implementeren en beheren voor iOS- en Android-apparaten. Zie voor meer informatie [Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) in de Intune-documentatie. Volg voor stap 2 de instructies voor het publiceren van een door beleid beheerde app.
 
--   U kunt voor apparaten die zijn ingeschreven door Intune, de RMS-toepassing voor delen beheren voor Android-apparaten. Zie [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) voor meer informatie..
+-   U kunt voor apparaten die zijn ingeschreven door Intune, de RMS-toepassing voor delen beheren voor Android-apparaten. Zie [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) voor meer informatie.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

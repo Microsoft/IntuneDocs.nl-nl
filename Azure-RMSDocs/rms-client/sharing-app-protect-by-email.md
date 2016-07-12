@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Een bestand beveiligen dat u deelt via e-mail met behulp van de Rights Management-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+
 
 ---
 
@@ -37,7 +31,7 @@ Als uw organisatie Azure RMS gebruikt, kunt u de bestanden bijhouden die u bevei
 
 -   Selecteer een optie voor het ontvangen van e-mailberichten wanneer iemand deze beveiligde bijlagen wil openen. Telkens wanneer het bestand wordt geopend, krijgt u een melding van wie het bestand probeerde te openen en wanneer en of het ze is gelukt (ze zijn geverifieerd) of niet.
 
--   Gebruik de site voor documenttracking. U kunt zelf stoppen met het bestand te delen door de toegang tot het bestand in te trekken op de site voor documenttracking. Zie [Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](sharing-app-track-revoke.md) (Engelstalig) voor meer informatie..
+-   Gebruik de site voor documenttracking. U kunt zelf stoppen met het bestand te delen door de toegang tot het bestand in te trekken op de site voor documenttracking. Zie [Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](sharing-app-track-revoke.md) voor meer informatie.
 
 ## Outlook gebruiken: een bestand beveiligen dat u deelt via e-mail
 
@@ -45,7 +39,7 @@ Als uw organisatie Azure RMS gebruikt, kunt u de bestanden bijhouden die u bevei
 
     ![Invoegtoepassing Outlook voor de RMS-toepassing voor delen](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    Als u deze knop niet ziet, is het waarschijnlijk dat de RMS-toepassing voor delen niet op uw computer is geïnstalleerd, de meest recente versie niet is geïnstalleerd of uw computer opnieuw moet worden opgestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen..
+    Als u deze knop niet ziet, is het waarschijnlijk dat de RMS-toepassing voor delen niet op uw computer is geïnstalleerd, de meest recente versie niet is geïnstalleerd of uw computer opnieuw moet worden opgestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen.
 
 2.  Geef in het [dialoogvenster Beveiligd delen](sharing-app-dialog-box.md) de gewenste opties voor dit bestand op en klik vervolgens op **Nu verzenden**.
 
@@ -68,7 +62,7 @@ Naast het delen van een beveiligd bestand via Outlook kunt u ook deze alternatie
 
         ![Invoegtoepassing Office-werkbalk](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    Als u deze opties voor beveiliging niet ziet, is het waarschijnlijk dat de RMS-toepassing voor delen niet op uw computer is geïnstalleerd, de meest recente versie niet is geïnstalleerd of uw computer opnieuw moet worden gestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen..
+    Als u deze opties voor beveiliging niet ziet, is het waarschijnlijk dat de RMS-toepassing voor delen niet op uw computer is geïnstalleerd, de meest recente versie niet is geïnstalleerd of uw computer opnieuw moet worden gestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen.
 
 2.  Geef in het [dialoogvenster Beveiligd delen](sharing-app-dialog-box.md) de gewenste opties voor dit bestand op en klik vervolgens op **Verzenden**.
 
@@ -98,6 +92,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

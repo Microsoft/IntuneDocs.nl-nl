@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: iOS- en OS X-installatie | Azure RMS
-description: iOS- en OS X-toepassingen kunnen gebruikmaken van de RMS SDK 4.2 voor geïntegreerde gegevensbeveiliging in hun toepassingen met behulp van de AAD RM.
-keywords:
+description: "iOS- en OS X-toepassingen kunnen gebruikmaken van de RMS SDK 4.2 voor geïntegreerde gegevensbeveiliging in hun toepassingen met behulp van de AAD RM."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +46,7 @@ We bevelen de volgende software aan voor uw ontwikkelsysteem:
 
     Deze SDK kan worden gebruikt voor het ontwikkelen voor iOS 7.0 en OS X 10.8 en hoger.
 
--   Verificatiebibliotheek: u kunt het beste de [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx) gebruiken. Andere verificatiebibliotheken die ondersteuning bieden voor OAuth 2.0, kunnen echter ook worden gebruikt.
+-   Verificatiebibliotheek: U kunt het beste de [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx) gebruiken. Andere verificatiebibliotheken die ondersteuning bieden voor OAuth 2.0, kunnen echter ook worden gebruikt.
 
     Zie [ADAL voor iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) of [ADAL voor OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal) voor meer informatie
 
@@ -122,6 +117,7 @@ Onze UI-bibliotheek biedt een herbruikbare UI voor gebruiks- en beveiligingsbewe
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

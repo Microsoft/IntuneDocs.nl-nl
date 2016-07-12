@@ -1,28 +1,21 @@
 ---
-# required metadata
-
 title: Migreren van AD RMS naar Azure Rights Management - Stap 4 | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ Deze stap is optioneel, maar wordt aanbevolen wanneer de migratie is voltooid, z
 
 Ga als volgt te werk om uw Azure RMS-tenantsleutel opnieuw te versleutelen:
 
--   Als uw Azure RMS-sleutel wordt beheerd door Microsoft: Neem hiervoor [contact op met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) om een **Azure Rights Management-ondersteuningsaanvraag voor het opnieuw versleutelen van uw Azure RMS-tenantsleutel** te openen. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het opnieuw versleutelen van uw tenantsleutel is geen gratis ondersteuningsservice.
+-   Als uw Azure RMS-sleutel wordt beheerd door Microsoft: Neem hiervoor [contact op met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) om een **Azure Rights Management-ondersteuningsaanvraag voor het opnieuw versleutelen van uw Azure RMS-tenantsleutel** te openen. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het opnieuw versleutelen van uw tenantsleutel is geen gratis ondersteuningsservice.
 
 -   Als uw Azure RMS-tenantsleutel wordt beheerd door uzelf (BYOK): herhaal de BYOK-procedure om een nieuwe sleutel te genereren en te maken (via internet of persoonlijk).
 
@@ -61,6 +54,7 @@ Nu u de migratie hebt voltooid, controleert u het [implementatieschema](deployme
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

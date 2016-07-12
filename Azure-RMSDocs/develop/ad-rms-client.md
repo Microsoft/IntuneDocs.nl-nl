@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Client | Azure RMS
 description: De AD RMS-client 2.1 is software die is ontworpen voor uw clientcomputers om toegang tot en gebruik van informatie te beschermen
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 24322775b689ad0508979853fd06b2d33fc33cc1
+
 
 ---
 
@@ -34,7 +29,7 @@ De RMS-client 2.1 bevat functionaliteit waarmee gebruikers beveiligde (versleute
 
 De Rights Management Services SDK 2.1 werkt met RMS-client 2.1. Toepassingen met rechtenbescherming die zijn gebaseerd op de RMS SDK 2.1 moeten RMS-client 2.1 gebruiken.
 
-Zie de [TechNet-documentatie over de RMS-client 2.1](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx) voor meer informatie.
+Zie de [TechNet-documentatie over de RMS-client 2.1](https://TechNet.Microsoft.Com/library/jj159267(WS.10).aspx) voor meer informatie.
 
 ## Verwante onderwerpen
 
@@ -46,6 +41,7 @@ Zie de [TechNet-documentatie over de RMS-client 2.1](https://TechNet.Microsoft.C
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

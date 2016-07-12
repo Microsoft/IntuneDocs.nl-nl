@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+
 
 ---
 
@@ -55,7 +49,7 @@ Wanneer u deze site opent, moet u zich aanmelden om uw documenten te volgen. Als
 
     ![Gebruik bijhouden selecteren in Outlook bij het gebruik van de RMS-toepassing voor delen ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-Als u deze opties voor RMS niet ziet, dan is het waarschijnlijk dat de RMS-toepassing voor delen niet is geïnstalleerd op uw computer, de meest recente versie niet is geïnstalleerd of de computer opnieuw moet worden gestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen..
+Als u deze opties voor RMS niet ziet, dan is het waarschijnlijk dat de RMS-toepassing voor delen niet is geïnstalleerd op uw computer, de meest recente versie niet is geïnstalleerd of de computer opnieuw moet worden gestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen.
 
 ### Overige manieren om uw documenten bij te houden en de toegang in te trekken
 U kunt op Windows-computers uw documenten bijhouden met behulp van Office-toepassingen, maar er zijn ook alternatieve mogelijkheden:
@@ -105,6 +99,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

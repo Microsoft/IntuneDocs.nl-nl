@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Uw Azure Rights Management-tenantsleutel plannen en implementeren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
+ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+
 
 ---
 
@@ -81,9 +75,9 @@ Gebruik de informatie en procedures in dit gedeelte als u hebt besloten om uw ei
 
 
 > [!IMPORTANT]
-> Als u [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] al gebruikt (de service is geactiveerd) en u hebt gebruikers die Office 2010 uitvoeren, moet u [contact opnemen met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) voordat u deze procedures uitvoert. Afhankelijk van uw scenario en vereisten, kunt u BYOK blijven gebruiken, maar met enkele beperkingen of bijkomende stappen.
+> Als u [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] al gebruikt (de service is geactiveerd) en u hebt gebruikers die Office 2010 uitvoeren, moet u [contact opnemen met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) voordat u deze procedures uitvoert. Afhankelijk van uw scenario en vereisten, kunt u BYOK blijven gebruiken, maar met enkele beperkingen of bijkomende stappen.
 > 
-> U moet ook [contact opnemen met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) als uw organisatie een specifiek beleid hanteert voor de verwerking van sleutels.
+> U moet ook [contact opnemen met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) als uw organisatie een specifiek beleid hanteert voor de verwerking van sleutels.
 
 ### Vereisten voor BYOK
 Zie de volgende tabel voor een lijst met vereisten voor BYOK (Bring Your Own Key).
@@ -114,7 +108,7 @@ De procedures om uw eigen tenantcode te generen en gebruiken, zijn afhankelijk v
     > [!NOTE]
     > Uw tenantsleutel kan veilig worden verplaatst via niet-vertrouwde computers en netwerken omdat de sleutel is versleuteld en wordt beveiligd met machtigingen op het niveau van toegangsbeheer, waardoor de sleutel alleen bruikbaar is binnen uw HSM's en de HSM's van Microsoft voor Azure RMS. U kunt de scripts die worden bijgeleverd in de toolset gebruiken om de veiligheidsmaatregelen te controleren, en meer informatie lezen over hoe dit werkt vanuit Thales: [Hardwaresleutelbeheer in de RMS-cloud](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Persoonlijk:** U moet [contact opnemen met Microsoft Ondersteuning](../get-started/information-support#to-contact-microsoft-support) om een afspraak te plannen voor de sleuteloverdracht voor Azure RMS. U moet naar een vestiging van Microsoft in Redmond (Washington) in de Verenigde Staten komen om uw tenantsleutel over te dragen aan de Azure RMS-beveiligingswereld.
+-   **Persoonlijk:** U moet [contact opnemen met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) om een afspraak te plannen voor de sleuteloverdracht voor Azure RMS. U moet naar een vestiging van Microsoft in Redmond (Washington) in de Verenigde Staten komen om uw tenantsleutel over te dragen aan de Azure RMS-beveiligingswereld.
 
 Als u instructies nodig hebt, selecteert u of u uw eigen tenantsleutel via internet of persoonlijk gaat genereren en overdragen: 
 
@@ -136,9 +130,9 @@ Nu u een planning hebt gemaakt en u zo nodig de tenantsleutel hebt gegenereerd, 
 
 2.  Overweeg gebruikslogboekregistratie te gebruiken: hiermee wordt elke transactie geregistreerd die RMS uitvoert.
 
-    Als u had besloten uw eigen tenantsleutel te beheren, bevat de logboekregistratie informatie over het gebruik van uw tenantsleutel. Zie het volgende voorbeeld van een in Excel weergegeven logboekbestand, waarin de aanvraagtypen **Decrypt** en **SignDigest** aangeven dat de tenantsleutel wordt gebruikt.
+    Als u had besloten uw eigen tenantsleutel te beheren, bevat de logboekregistratie informatie over het gebruik van uw tenantsleutel. Zie het volgende fragment van een in Excel weergegeven logboekbestand, waarin de aanvraagtypen **KMSPDecrypt** en **KMSPSignDigest** aangeven dat de tenantsleutel wordt gebruikt.
 
-    ![logboekbestand waarin de tenantsleutel wordt gebruikt](../media/RMS_Logging.gif)
+    ![logboekbestand waarin de tenantsleutel wordt gebruikt](../media/RMS_Logging.png)
 
     Zie [Logging and analyzing Azure Rights Management usage](../deploy-use/log-analyze-usage.md) (Het gebruik van Azure Rights Management registreren in een logboek en analyseren) voor meer informatie over logboekregistratie van het gebruik.
 
@@ -148,6 +142,7 @@ Nu u een planning hebt gemaakt en u zo nodig de tenantsleutel hebt gegenereerd, 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

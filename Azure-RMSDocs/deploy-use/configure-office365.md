@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Office 365&colon; configuratie voor clients en onlineservices | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+
 
 ---
 
@@ -31,15 +25,15 @@ ms.suite: ems
 
 Omdat Office 365 systeemeigen ondersteuning biedt voor Azure RMS, is er geen configuratie van een clientcomputer vereist voor de ondersteuning van de functies voor Information Rights Management (IRM) voor toepassingen zoals Word, Excel, PowerPoint, Outlook en Outlook Web App. Gebruikers hoeven zich alleen maar met hun [!INCLUDE[o365_1](../includes/o365_1_md.md)]-referenties aan te melden bij hun Office-toepassingen om bestanden en e-mails te beveiligen en om bestanden en e-mails te gebruiken die zijn beveiligd door anderen.
 
-Het wordt echter aangeraden deze toepassingen aan te vullen met de Rights Management-toepassing voor delen, zodat gebruikers kunnen beschikken over het voordeel van de Office-invoegtoepassing. Zie [Rights Management sharing application: Installation and configuration for clients](configure-sharing-app.md) (Rights Management-toepassing voor delen: installatie en configuratie voor clients) voor meer informatie.
+We raden echter aan deze toepassingen aan te vullen met de Rights Management-toepassing voor delen, zodat gebruikers kunnen beschikken over de handige Office-invoegtoepassing. Zie [Rights Management-toepassing voor delen: installatie en configuratie voor clients](configure-sharing-app.md) voor meer informatie.
 
 ## Exchange Online: IRM-configuratie
 Als u Exchange Online wilt configureren voor ondersteuning van Azure RMS, moet u de Information Rights Management-service (IRM) voor Exchange Online configureren. Hiervoor gebruikt u Windows PowerShell (u hoeft geen afzonderlijke module te installeren), en voert u [PowerShell-opdrachten voor Exchange Online](https://technet.microsoft.com/library/jj200677.aspx) uit.
 
 > [!NOTE]
-> Het is momenteel niet mogelijk om Exchange Online te configureren voor ondersteuning van Azure RMS als u een door de klant beheerde tenantsleutel (BYOK) voor Azure RMS gebruikt, in plaats van de standaardconfiguratie van door Microsoft beheerde tenantsleutel. Zie [BYOK pricing and restrictions](../plan-design/byok-price-restrictions.md) (BYOK-prijzen en -beperkingen) voor meer informatie.
+> Het is momenteel niet mogelijk om Exchange Online te configureren voor ondersteuning van Azure RMS als u een door de klant beheerde tenantsleutel (BYOK) voor Azure RMS gebruikt, in plaats van de standaardconfiguratie van door Microsoft beheerde tenantsleutel. Zie [BYOK-prijzen en -beperkingen](../plan-design/byok-price-restrictions.md) voor meer informatie.
 >
-> Als u Exchange Online wilt configureren wanneer Azure RMS van gebruikmaakt van BYOK, mislukt de opdracht voor het importeren van de sleutel (stap 5 in de volgende procedure) met het foutbericht **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
+> Als u Exchange Online wilt configureren wanneer Azure RMS gebruikmaakt van BYOK, mislukt de opdracht voor het importeren van de sleutel (stap 5 in de volgende procedure) met het foutbericht **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
 
 De volgende stappen bevatten een typische reeks opdrachten die u moet uitvoeren om in te schakelen Exchange Online voor het gebruik van Azure RMS:
 
@@ -180,7 +174,7 @@ Omdat deze configuratie afhankelijk is van IRM-beveiliging van bibliotheken voor
 #### Configuratie voor beheerders
 Hoewel u met het SharePoint-beheercentrum IRM niet kunt configureren voor OneDrive voor Bedrijven van gebruikers, kunt u dit wel doen via Windows PowerShell. Voer de volgende stappen uit om IRM voor deze bibliotheken in te schakelen:
 
-1.  Download en installeer de [SharePoint Online SDK voor clientonderdelen](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
+1.  Download en installeer de [SharePoint Online-SDK voor clientonderdelen](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
 
 2.  Download en installeer de [SharePoint Online-beheershell](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
 
@@ -584,7 +578,7 @@ Hoewel u met het SharePoint-beheercentrum IRM niet kunt configureren voor OneDri
 > [!TIP]
 > U kunt ook dit script ook gebruiken om IRM te configureren voor een SharePoint Online-bibliotheek. Voor deze configuratie wilt u waarschijnlijk de extra optie **Gebruikers niet toestaan om documenten te uploaden die IRM niet ondersteunen** inschakelen, om ervoor te zorgen dat de bibliotheek alleen beveiligde documenten bevat.    Voeg hiervoor de parameter `-IrmReject` toe aan de opdracht Set-IrmConfiguration in het script.
 >
-> U moet tevens de variabele `$webUrls` (bijvoorbeeld **https://contoso.sharepoint.com**) en de variabele `$listTitle` (bijvoorbeeld **$Reports**) wijzigen).
+> U moet tevens de variabele `$webUrls` (bijvoorbeeld **https://contoso.sharepoint.com**) en de variabele `$listTitle` (bijvoorbeeld **$Reports**) wijzigen.
 
 Zie de sectie [Script voor het uitschakelen van IRM voor OneDrive voor Bedrijven](#script-to-disable-irm-for-onedrive-for-business) als u IRM voor de bibliotheken voor OneDrive voor Bedrijven van de gebruiker moet uitschakelen.
 
@@ -1111,6 +1105,7 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

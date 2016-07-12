@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Voorbeelden van Android-code | Azure RMS
 description: In dit onderwerp vindt u belangrijke code-elementen voor de Android-versie van de RMS SDK.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 5d8c7ab53f76005d7efbfd2d795da08e41f83941
+
 
 ---
 
@@ -110,7 +105,7 @@ Voor gebruik met deze SDK voor het Android-besturingssysteem is de voorbeeldtoep
 
     **Bron**: *MsipcAuthenticationCallback.java*.
 
-    **Beschrijving**: in deze stap ziet u hoe de ADAL wordt gebruikt voor het implementeren van een [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) met voorbeeldverificatieparameters. Zie voor meer informatie over het gebruik van de ADAL de [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx).
+    **Beschrijving**: in deze stap ziet u hoe de ADAL wordt gebruikt voor het implementeren van een [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) met voorbeeldverificatieparameters. Zie voor meer informatie over het gebruik van ADAL [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx).
 
 
         class MsipcAuthenticationCallback implements AuthenticationRequestCallback
@@ -211,12 +206,7 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
 
 
 
-    CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>()
-      {
-          @Override
-          public Context getContext()
-          {
-              …
+    CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>() { @Override public Context getContext() { …
           }
 
           @Override
@@ -236,30 +226,18 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
           {
              …
           }
-      };
-      try
-      {
-              …
-          mIAsyncControl = TemplateDescriptor.getTemplates(emailId, mRmsAuthCallback, getTemplatesCreationCallback);
-      }
-      catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-      {
-              …
+      }; try { …
+          mIAsyncControl = TemplateDescriptor.getTemplates(emailId, mRmsAuthCallback, getTemplatesCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) { …
       }
 
 
 -    **Stap 2**: maak met behulp van de eerste sjabloon in de lijst een [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy).
 
-    **Source**: *MsipcTaskFragment.java*
+    **Bron**: *MsipcTaskFragment.java*
 
 
 
-      CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>()
-      {
-          @Override
-          public Context getContext()
-          {
-              …
+      CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>() { @Override public Context getContext() { …
           }
 
           @Override
@@ -279,34 +257,19 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
           {
               …
           }
-      };
-      try
-      {
-           …
-          mIAsyncControl = UserPolicy.create((TemplateDescriptor)selectedDescriptor, mEmailId, mRmsAuthCallback,
-                            UserPolicyCreationFlags.NONE, userPolicyCreationCallback);
-           …
-      }
-      catch (InvalidParameterException e)
-      {
-              …
+      }; try { …
+          mIAsyncControl = UserPolicy.create((TemplateDescriptor)selectedDescriptor, mEmailId, mRmsAuthCallback, UserPolicyCreationFlags.NONE, userPolicyCreationCallback); …
+      } catch (InvalidParameterException e) { …
       }
 
 
 -    **Stap 3**: maak een [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) en schrijf er inhoud naartoe.
 
-    **Source**: *MsipcTaskFragment.java*
+    **Bron**: *MsipcTaskFragment.java*
 
 
-    private void createPTxt(final byte[] contentToProtect)
-        {
-             …
-            CreationCallback<ProtectedFileOutputStream> protectedFileOutputStreamCreationCallback = new CreationCallback<ProtectedFileOutputStream>()
-            {
-                @Override
-                public Context getContext()
-                {
-                 …
+    private void createPTxt(final byte[] contentToProtect) { …
+            CreationCallback<ProtectedFileOutputStream> protectedFileOutputStreamCreationCallback = new CreationCallback<ProtectedFileOutputStream>() { @Override public Context getContext() { …
                 }
 
                 @Override
@@ -364,12 +327,7 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
     **Bron**: *MsipcTaskFragment.java*
 
 
-    CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
-            {
-                @Override
-                public void onSuccess(UserPolicy userPolicy)
-                {
-                  …
+    CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>() { @Override public void onSuccess(UserPolicy userPolicy) { …
                 }
 
                 @Override
@@ -392,45 +350,27 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
             };
 
 
-    try
-    {
-      ...
+    try {   ...
 
-      // Read the serializedContentPolicyLength from the inputStream.
+      // serializedContentPolicyLength lezen uit inputStream.
       long serializedContentPolicyLength = readUnsignedInt(inputStream);
 
-      // Read the PL bytes from the input stream using the PL size.
-      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength];
-      inputStream.read(serializedContentPolicy);
+      // PL-bytes lezen uit de invoerstroom met behulp van de PL-grootte.
+      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength]; inputStream.read(serializedContentPolicy);
 
       ...
 
-      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,
-              userPolicyCreationCallbackFromSerializedContentPolicy);
-    }
-    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-    {
-      ...
-    }
-    catch (IOException e)
-    {
-      ...
-    }
+      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,           userPolicyCreationCallbackFromSerializedContentPolicy); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {   ... } catch (IOException e) {   ... }
 
 
 
 -    **Stap 2**: maak met behulp van de [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) uit **stap 1** een [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java).
 
-    **Source**: *MsipcTaskFragment.java*
+    **Bron**: *MsipcTaskFragment.java*
 
 
 
-      CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>()
-      {
-         @Override
-         public Context getContext()
-         {
-             …
+      CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>() { @Override public Context getContext() { …
          }
 
          @Override
@@ -468,65 +408,34 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
          }
      };
 
-    try
-    {
-      ...
+    try {  ...
 
-      // Retrieve the encrypted content size.
+      // De grootte van de versleutelde inhoud ophalen.
       long encryptedContentLength = readUnsignedInt(inputStream);
 
       updateTaskStatus(new TaskStatus(TaskState.Starting, "Consuming content", true));
 
-      CustomProtectedInputStream.create(userPolicy, inputStream,
-                                     encryptedContentLength,
-                                     customProtectedInputStreamCreationCallback);
-    }
-    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-    {
-      ...
-    }
-    catch (IOException e)
-    {
-      ...
-    }
+      CustomProtectedInputStream.create(userPolicy, inputStream,                                 encryptedContentLength,                                 customProtectedInputStreamCreationCallback); } catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e) {  ... } catch (IOException e) {  ... }
 
 
 -    **Stap 3**: lees inhoud van de [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) in *mDecryptedContent* en sluit vervolgens af.
 
-    **Source**: *MsipcTaskFragment.java*
+    **Bron**: *MsipcTaskFragment.java*
 
 
-    @Override
-    public void onSuccess(CustomProtectedInputStream customProtectedInputStream)
-    {
-      mUserPolicy = customProtectedInputStream.getUserPolicy();
-      ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+    @Override public void onSuccess(CustomProtectedInputStream customProtectedInputStream) {  mUserPolicy = customProtectedInputStream.getUserPolicy();  ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 
       int nRead;                      
       byte[] dataChunk = new byte[16384];
 
-      try
-      {
-        while ((nRead = customProtectedInputStream.read(dataChunk, 0,
-                                                            dataChunk.length)) != -1)
-        {
-           buffer.write(dataChunk, 0, nRead);
-        }
+      try  {    while ((nRead = customProtectedInputStream.read(dataChunk, 0,                                                        dataChunk.length)) != -1)    {       buffer.write(dataChunk, 0, nRead);    }
 
-        buffer.flush();
-        mDecryptedContent = new String(buffer.toByteArray(), Charset.forName("UTF-8"));
+        buffer.flush();    mDecryptedContent = new String(buffer.toByteArray(), Charset.forName("UTF-8"));
 
-        buffer.close();
-        customProtectedInputStream.close();
-      }
-      catch (IOException e)
-      {
-        ...
-      }
-    }
+        buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### Scenario: een aangepaste beveiligd bestand maken met behulp van een aangepast (ad-hoc) beleid
+### Scenario: een aangepaste beveiligd bestand maken met behulp van een aangepast (ad hoc) beleid
 
 -   **Stap 1**: maak met een e-mailadres dat is opgegeven door de gebruiker, een beleidsdescriptor.
 
@@ -536,29 +445,18 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
 
 
 
-      // create userRights list
-      UserRights userRights = new UserRights(Arrays.asList("consumer@domain.com"),
-        Arrays.asList( CommonRights.View, EditableDocumentRights.Print));
-      ArrayList<UserRights> usersRigthsList = new ArrayList<UserRights>();
-      usersRigthsList.add(userRights);
+      // Lijst met gebruikersrechten maken   UserRights userRights = new UserRights(Arrays.asList("consumer@domain.com"),     Arrays.asList( CommonRights.View, EditableDocumentRights.Print));   ArrayList<UserRights> usersRigthsList = new ArrayList<UserRights>();   usersRigthsList.add(userRights);
 
-      // Create PolicyDescriptor using userRights list
-      PolicyDescriptor policyDescriptor = PolicyDescriptor.createPolicyDescriptorFromUserRights(
-                                                             usersRigthsList);
-      policyDescriptor.setOfflineCacheLifetimeInDays(10);
-      policyDescriptor.setContentValidUntil(new Date());
+      // Beleidsdescriptor maken met behulp van lijst met gebruikersrechten   PolicyDescriptor policyDescriptor = PolicyDescriptor.createPolicyDescriptorFromUserRights(                                                          usersRigthsList);   policyDescriptor.setOfflineCacheLifetimeInDays(10);   policyDescriptor.setContentValidUntil(new Date());
 
 
 
 -    **Stap 2**: maak op basis van de *selectedDescriptor* een aangepaste [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy).
 
-    **Source**: *MsipcTaskFragment.java*
+    **Bron**: *MsipcTaskFragment.java*
 
 
-       mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,
-                                              mEmailId, mRmsAuthCallback,
-                                              UserPolicyCreationFlags.NONE,
-                                              userPolicyCreationCallback);
+       mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,                                          mEmailId, mRmsAuthCallback,                                          UserPolicyCreationFlags.NONE,                                          userPolicyCreationCallback);
 
 
 
@@ -567,14 +465,7 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
     **Bron**: *MsipcTaskFragment.java*
 
 
-    File file = new File(filePath);
-        final OutputStream outputStream = new FileOutputStream(file);
-        CreationCallback<CustomProtectedOutputStream> customProtectedOutputStreamCreationCallback = new CreationCallback<CustomProtectedOutputStream>()
-        {
-            @Override
-            public Context getContext()
-            {
-              …
+    File file = new File(filePath); final OutputStream outputStream = new FileOutputStream(file); CreationCallback<CustomProtectedOutputStream> customProtectedOutputStreamCreationCallback = new CreationCallback<CustomProtectedOutputStream>() { @Override public Context getContext() { …
             }
 
             @Override
@@ -637,6 +528,7 @@ Dit scenario begint met het ophalen van een lijst met sjablonen, waarbij de eers
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

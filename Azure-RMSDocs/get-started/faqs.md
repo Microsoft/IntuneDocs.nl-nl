@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Veelgestelde vragen over Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/07/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 64b9cf141b755e4d54907424a7dcbd4ee14fadd7
+ms.openlocfilehash: 758a603dde2c185767ba85229a397fd6e77b1c5b
+
 
 ---
 
@@ -32,7 +26,11 @@ ms.suite: ems
 Een paar veelgestelde vragen over Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], ook wel aangeduid als Azure RMS:
 
 ## Wat heb ik nodig om Azure RMS te implementeren en hoe ga ik aan de slag?
-Controleer eerst [Vereisten voor Azure Rights Management](requirements-azure-rms.md), dat informatie bevat over de opties voor cloudabonnementen, hoe u uw lokale servers kunt gebruiken met Azure RMS, welke implementatiescenario's momenteel niet worden ondersteund, welke apparaten en toepassingen Azure RMS ondersteunen en een koppeling als u een lijst met IP-adressen en domeinnamen nodig hebt voor firewalls en proxyservers. Het is wellicht ook verstandig de andere artikelen in deze sectie **Get Started ** (Aan de slag) en de sectie **Understand & Explore** (Begrijpen en verkennen) te lezen voor meer algemene informatie over hoe [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] kan helpen de gegevens van uw organisatie te beveiligen, hoe het product werkt met toepassingen, wat de verschillen zijn met de on-premises versie van Active Directory Rights Management en om inzicht te krijgen in de termen en afkortingen die specifiek zijn voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+Controleer eerst [Vereisten voor Azure Rights Management](requirements-azure-rms.md), dat informatie bevat over de opties voor cloudabonnementen, hoe u uw lokale servers kunt gebruiken met Azure RMS, welke implementatiescenario's momenteel niet worden ondersteund, welke apparaten en toepassingen Azure RMS ondersteunen en een koppeling als u een lijst met IP-adressen en domeinnamen nodig hebt voor firewalls en proxyservers. 
+
+Het is wellicht ook verstandig de andere artikelen in deze sectie **Get Started ** (Aan de slag) en de sectie **Understand & Explore** (Begrijpen en verkennen) te lezen voor meer algemene informatie over hoe [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] kan helpen de gegevens van uw organisatie te beveiligen, hoe het product werkt met toepassingen, wat de verschillen zijn met de on-premises versie van Active Directory Rights Management en om inzicht te krijgen in de termen en afkortingen die specifiek zijn voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+
+Als u vervolgens aan de slag wilt, gebruikt u het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md).
 
 ## Moeten bestanden in de cloud staan om te worden beveiligd met Azure RMS?
 Nee, dit is een veelvoorkomend misverstand. De Azure Rights Management-service (en Microsoft) kunnen uw gegevens niet weergeven of opslaan. Dit is een vereiste van het proces voor informatiebeveiliging. Informatie die u beveiligt, wordt nooit verzonden naar of opgeslagen in Azure, tenzij u de informatie zelf expliciet opslaat in Azure of een andere cloudservice gebruikt waarmee informatie wordt opgeslagen in Azure. 
@@ -40,16 +38,39 @@ Nee, dit is een veelvoorkomend misverstand. De Azure Rights Management-service (
 Zie voor meer informatie [Hoe werkt Azure RMS? Achter de schermen](../understand-explore/how-does-it-work.md) om te begrijpen hoe een geheim colarecept, dat lokaal is gemaakt en opgeslagen, wordt beveiligd met Azure RMS, maar lokaal aanwezig blijft.
 
 ## Kan ik Azure RMS integreren in mijn lokale servers?
-Ja. Azure RMS kan worden geïntegreerd in uw lokale servers, zoals Exchange Server, SharePoint en Windows-bestandsservers. U doet dat met de [Rights Management-connector](../deploy-use/deploy-rms-connector.md). Of als u alleen geïnteresseerd bent in het gebruik van File Classification Infrastructure (FC) in combinatie met Windows Server, kunt u de [cmdlets voor RMS-beveiliging](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx) gebruiken. U kunt uw Active Directory-domeincontrollers ook synchroniseren met Azure AD voor een meer naadloze verificatiebeleving door gebruikers. U kunt dat bijvoorbeeld doen met [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
+Ja. Azure RMS kan worden geïntegreerd in uw lokale servers, zoals Exchange Server, SharePoint en Windows-bestandsservers. U doet dat met de [Rights Management-connector](../deploy-use/deploy-rms-connector.md). Of als u alleen geïnteresseerd bent in het gebruik van File Classification Infrastructure (FCI) in combinatie met Windows Server, kunt u de [cmdlets voor RMS-beveiliging](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx) gebruiken. U kunt uw Active Directory-domeincontrollers ook synchroniseren met Azure AD voor een meer naadloze verificatiebeleving door gebruikers. U kunt dat bijvoorbeeld doen met [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 Azure RMS genereert en beheert automatisch XrML-certificaten zoals vereist en gebruikt dus geen lokale PKI. Zie de sectie [Walkthrough of how Azure RMS works: First use, content protection, content consumption](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) (Overzicht van de werking van Azure RMS: eerste gebruik, beveiliging van inhoud, verbruik van inhoud) in het artikel [How does Azure RMS work?](../understand-explore/how-does-it-work.md) (Hoe werkt Azure RMS?) voor meer informatie over de manier waarop certificaten worden gebruikt in Azure RMS.
+
+## Waar vind ik informatie over oplossingen van derden die zijn geïntegreerd met Azure RMS?
+
+Veel softwareleveranciers hebben al oplossingen of zijn bezig met het implementeren van oplossingen die kunnen worden geïntegreerd met Azure RMS, en de lijst groeit snel. Misschien vindt u het nuttig een kijkje te nemen in het [Enterprise Mobility and Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) en de laatste updates te downloaden van [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) op Twitter. Als u echter een specifieke vraag hebt, kunt u een e-mailbericht verzenden naar het team dat zich bezighoudt met informatiebeveiliging: askipteam@microsoft.com.
+
+## Is er een management pack of een vergelijkbaar bewakingsmechanisme voor de RMS-connector?
+
+Hoewel informatie-, waarschuwings- en foutberichten met de Rights Management-connector worden geregistreerd, is er geen management pack waarmee deze gebeurtenissen kunnen worden bewaakt. Zie [De Azure Rights Management-connector controleren](../deploy-use/monitor-rms-connector.md) voor de lijst met gebeurtenissen en bijbehorende beschrijvingen, en meer informatie over u corrigerende maatregelen kunt nemen.
+
+## Moet ik een globale beheerder zijn om Azure RMS te configureren of kan ik delegeren aan andere beheerders?
+
+Globale beheerders voor een Office 365- of Azure AD-tenant kunnen natuurlijk alle beheertaken uitvoeren voor Azure RMS. Als u echter beheerdersmachtigingen aan andere gebruikers wilt toewijzen, kunt u dit doen via de PowerShell-cmdlet voor Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx). U kunt deze beheerdersrol toewijzen per gebruikersaccount of per groep. Er zijn twee rollen beschikbaar: **Globale beheerder** en **Connector Administrator**. 
+
+Zoals u kunt afleiden uit deze rolnamen, worden met de eerste rol machtigingen verleend voor het uitvoeren van alle beheertaken voor Azure Rights Management (zonder dat de beheerder een globale beheerder wordt voor cloudservices) en worden met de tweede rol machtigingen verleend voor het uitvoeren van alleen de Rights Management (RMS)-connector.
+
+Let op het volgende:
+
+- Alleen globale beheerders voor Office 365 en globale beheerders voor Azure AD kunnen gebruikmaken van de beheerportals (Office 365-beheercentrum of de klassieke Azure-portal) voor het configureren van Azure RMS. Gebruikers aan wie u de globale beheerdersrol voor Azure RMS toewijst, moeten de PowerShell-opdrachten voor Azure RMS gebruiken voor het configureren van Azure RMS. Zie [Beheer van Azure Rights Management met Windows PowerShell](../deploy-use/administer-powershell.md) voor een overzicht van de juiste cmdlets voor specifieke taken.
+
+- Als u [controlemiddelen voor onboarding](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) hebt geconfigureerd, is dit niet van invloed op de mogelijkheid voor het beheer van Azure RMS, met uitzondering van de RMS-connector. Stel dat u als controlemiddel voor onboarding hebt geconfigureerd dat de mogelijkheid om inhoud te beheren is beperkt tot de groep IT-afdeling. Het account dat u gebruikt voor het installeren en configureren van de RMS-connector, moet dan lid zijn van die groep. 
+
+- Beheerders voor Azure RMS (de globale beheerder van de tenant of de globale beheerder van Azure RMS) kunnen niet automatisch de beveiliging verwijderen van documenten en e-mails die met Azure RMS worden beveiligd. Alleen gebruikers aan wie de rol Supergebruiker voor Azure RMS is toegewezen, kunnen dit doen en alleen wanneer de functie Supergebruiker is ingeschakeld. De globale beheerder van de tenant en alle globale beheerders van Azure RMS kunnen de rol van supergebruiker aan gebruikers toewijzen, ook aan uw eigen account. Daarnaast kunnen zij de functie Supergebruiker inschakelen. Deze acties worden vastgelegd in het Azure RMS-beheerderslogboek. Zie de sectie met best practices voor beveiliging in [Supergebruikers configureren voor Azure Rights Management en detectieservices of gegevensherstel](../deploy-use/configure-super-users.md) voor meer informatie. 
+
 
 ## Ik heb een hybride implementatie van Exchange waarbij sommige gebruikers op Exchange Online zitten en andere op Exchange Server. Wordt dit ondersteund door Azure RMS?
 Absoluut, en het prettige is dat gebruikers beveiligde e-mailberichten en bijlagen naadloos kunnen beveiligen en verbruiken op beide Exchange-implementaties. Voor deze configuratie moet u [Azure RMS activeren](../deploy-use/activate-service.md), [IRM voor Exchange Online inschakelen](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx) en vervolgens [de RMS-connector implementeren en configureren](../deploy-use/deploy-rms-connector.md) voor Exchange-Server.
 
 ## Zijn er stapsgewijze instructies om Exchange Online te configureren voor gebruik van Azure RMS?
 
-Ja. Zie [Exchange Online: IRM configureren](../deploy-use/configure-office365.md#exchange-online-irm-configuration.md ) voor een typische reeks opdrachten waarmee Exchange Online wordt ingeschakeld voor gebruik van Azure RMS, voor de redenen waarom de Outlook Web App niet onmiddellijk de menuopties **Machtigingen instellen** weergeeft en voor de opdracht die u moet uitvoeren als u de sjablonen voor Azure RMS bijwerkt of wijzigt. 
+Ja. Zie [Exchange Online: IRM configureren](../deploy-use/configure-office365.md#exchange-online-irm-configuration) voor een gebruikelijke reeks opdrachten waarmee Exchange Online wordt ingeschakeld voor gebruik van Azure RMS, voor de redenen waarom de Outlook Web App niet onmiddellijk de menuopties **Machtigingen instellen** weergeeft en voor de opdracht die u moet uitvoeren als u de sjablonen voor Azure RMS bijwerkt of wijzigt. 
 
 ## Als ik Azure RMS voor productie implementeer, zit mijn bedrijf dan vast aan deze oplossing of lopen we het risico de toegang te verliezen tot inhoud die werd beveiligd met Azure RMS?
 Nee, u behoudt altijd de controle over uw gegevens en kunt deze blijven gebruiken, zelfs als u besluit niet langer met Azure RMS te werken. Zie [Decommissioning and deactivating Azure Rights Management](../deploy-use/decommission-deactivate.md) (Azure Rights Management uit bedrijf nemen en deactiveren) voor meer informatie.
@@ -65,7 +86,7 @@ Een van de grootste voordelen van Azure RMS is dat het business-to-business same
 Er is geen beheeroptie om te voorkomen dat gebruikers documenten veilig delen met specifieke organisaties. U wilt bijvoorbeeld een organisatie blokkeren die u niet vertrouwt of die een concurrent is. Voorkomen dat Azure RMS beveiligde documenten verzendt naar gebruikers in deze organisaties, heeft geen zin omdat uw gebruikers hun documenten dan zonder beveiliging zouden gaan delen. En dat is waarschijnlijk het laatste wat u binnen dit scenario zou willen. U zou bijvoorbeeld niet kunnen bepalen wie vertrouwelijke bedrijfsdocumenten deelt met welke gebruikers in deze organisaties. Dat kunt u wel wanneer het document (of e-mailbericht) is beveiligd met Azure RMS.
 
 ## Wanneer ik een beveiligd document deel met iemand buiten mijn bedrijf, hoe wordt die gebruiker dan geverifieerd?
-Azure RMS gebruikt altijd een Azure Active Directory-account en een bijbehorend e-mailadres voor gebruikersverificatie, waardoor business-to-business samenwerking naadloos verloopt voor beheerders. Als de andere organisatie Azure-services gebruikt, hebben de gebruikers al accounts in Azure Active Directory, zelfs als deze accounts lokaal worden gemaakt en beheerd en vervolgens worden gesynchroniseerd naar Azure.  Als de organisatie werkt met Office 365, gebruikt deze service ook Azure Active Directory voor de gebruikersaccounts.  Als de organisatie van de gebruiker geen beheerde accounts in Azure heeft, kunnen gebruikers zich aanmelden voor [RMS voor individuen](../understand-explore/rms-for-individuals.md). Hierbij worden automatisch een niet-beheerde Azure-tenant en -map voor de organisatie gemaakt met een account voor de gebruiker, zodat deze gebruiker vervolgens kan worden geverifieerd voor Azure RMS.
+Azure RMS gebruikt altijd een Azure Active Directory-account en een bijbehorend e-mailadres voor gebruikersverificatie, waardoor business-to-business samenwerking naadloos verloopt voor beheerders. Als de andere organisatie Azure-services gebruikt, hebben de gebruikers al accounts in Azure Active Directory, zelfs als deze accounts lokaal worden gemaakt en beheerd en vervolgens worden gesynchroniseerd naar Azure. Als de organisatie werkt met Office 365, gebruikt deze service ook Azure Active Directory voor de gebruikersaccounts. Als de organisatie van de gebruiker geen beheerde accounts in Azure heeft, kunnen gebruikers zich aanmelden voor [RMS voor personen](../understand-explore/rms-for-individuals.md). Hierbij worden automatisch een niet-beheerde Azure-tenant en -map voor de organisatie gemaakt met een account voor de gebruiker (en toekomstige gebruikers), zodat deze gebruiker vervolgens kan worden geverifieerd voor Azure RMS.
 
 De verificatiemethode voor deze accounts kan variëren, afhankelijk van hoe de beheerder in de andere organisatie de Azure Active Directory-accounts heeft geconfigureerd. Ze kunnen bijvoorbeeld gebruik maken van wachtwoorden die zijn gemaakt voor deze accounts, van Multi-Factor Authentication (MFA), van federatie of van wachtwoorden die zijn gemaakt in Active Directory Domain Services en vervolgens zijn gesynchroniseerd met Azure Active Directory.
 
@@ -85,7 +106,7 @@ Zoals de optienaam duidelijk aangeeft, is dit nieuwe groepstype alleen nog maar 
 
 
 ## Welke apparaten en welke typen worden ondersteund door Azure RMS?
-Zie [Clientapparaten die Azure RMS ondersteunen](../get-started/requirements-client-devices.md) voor een lijst met ondersteunde apparaten. Omdat niet alle ondersteunde apparaten momenteel alle functies van RMS ondersteunen, moet u in hetzelfde artikel ook de tabel [Functies van clientapparaat](../get-started/requirements-client-devices.md#client-device-capabilities) raadplegen.
+Zie [Azure RMS-vereisten: clientapparaten die Azure RMS ondersteunen](../get-started/requirements-client-devices.md) voor een lijst met ondersteunde apparaten. Omdat niet alle ondersteunde apparaten momenteel alle functies van RMS ondersteunen, moet u in hetzelfde artikel ook de tabel in [Azure RMS requirements: Applications](../get-started/requirements-applications.md) (Azure RMS-vereisten: toepassingen) raadplegen.
 
 Azure RMS kan alle bestandstypen ondersteunen. Voor tekst-, afbeeldings-, Microsoft Office- (Word, Excel, PowerPoint), .pdf-bestanden en sommige andere bestandstypen, biedt Azure RMS systeemeigen beveiliging zoals versleuteling en het afdwingen van rechten (machtigingen). Voor alle andere toepassingen en bestandstypen biedt algemene beveiliging bestandsinkapseling en verificatie om te controleren of een gebruiker is gemachtigd om het bestand te openen.
 
@@ -108,7 +129,7 @@ Als uw bedrijfsbeleid echter het gebruik van een Hardware Security Module (HSM) 
 ## Een functie die ik nodig heb, lijkt niet te werken met door SharePoint beveiligde bibliotheken. Wordt ondersteuning voor mijn functie gepland?
 Op dit moment ondersteunt SharePoint met RMS beveiligde documenten via met IRM beveiligde bibliotheken, die geen ondersteuning bieden voor aangepaste sjablonen, documenten bijhouden en bepaalde andere functies. Zie voor meer informatie het gedeelte [SharePoint Online en SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) in het artikel [Office-toepassingen en -services](../understand-explore/office-apps-services-support.md).
 
-Als u geïnteresseerd bent in een specifieke functie die nog niet wordt ondersteund, is het verstandig de aankondigingen op de [RMS-teamblog](http://blogs.technet.com/b/rms/) goed in het oog te houden.
+Als u geïnteresseerd bent in een specifieke functie die nog niet wordt ondersteund, is het verstandig de aankondigingen in het [Enterprise Mobility and Security Blog-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) goed in de gaten te houden.
 
 ## Hoe configureer ik OneDrive voor Bedrijven in SharePoint Online, zodat gebruikers hun bestanden veilig met mensen binnen en buiten het bedrijf kunnen delen?
 Standaard configureert u dit als Office 365-beheerder niet. De gebruikers doen dat.
@@ -144,7 +165,6 @@ Zoals blijkt uit deze voorbeelden, kan met technologie niet altijd worden voorko
 
 Ondanks de naam en het uiterlijk, is **Niet doorsturen** niet het tegenovergestelde van het recht Doorsturen en geen sjabloon. Het is in werkelijkheid een set rechten met onder andere rechten voor het kopiëren, afdrukken en opslaan van bijlagen, naast het beperken van het doorsturen van e-mails. De rechten worden dynamisch toegepast op gebruikers via de gekozen ontvangers, en worden niet statisch toegewezen door de beheerder. Zie de sectie [Do Not Forward option for emails](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) (De optie voor Niet doorsturen voor e-mails) in [Configuring usage rights for Azure Rights Management](../deploy-use/configure-usage-rights.md) (Gebruiksrechten configureren voor Azure Rights Management) voor meer informatie.
 
-
 ## Waar vind ik ondersteunende informatie voor Azure RMS, zoals informatie over wetgeving, compatibiliteit en SLA's?
 Azure RMS ondersteunt andere services en maakt ook gebruik van andere services. Als u op zoek bent naar informatie die verband houdt met Azure RMS, maar geen betrekking heeft op het gebruik van de Azure RMS-service, kunt u de volgende bronnen raadplegen:
 
@@ -178,6 +198,10 @@ Zie de sectie [Security, compliance, and regulatory requirements](../understand-
 
 -   Office 365-bibliotheek: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## Ik heb gehoord dat binnenkort een nieuwe versie beschikbaar is voor Azure RMS. Wanneer wordt deze versie uitgebracht?
+
+De technische documentatie bevat geen informatie over toekomstige versies. Dergelijke informatie en aankondigingen over versies vindt u in het [Enterprise Mobility and Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services). De laatste updates leest u via [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) op Twitter. Als u geïnteresseerd bent in een bepaalde Office-versie, kunt u ook een kijkje nemen in het [Office-blog[(https://blogs.office.com/).
+
 ## Wat moet ik doen als ik mijn vraag hier niet vind?
 Gebruik de koppelingen en resources die worden vermeld in [Information and support for Azure Rights Management](information-support.md) (Informatie en ondersteuning voor Azure Rights Management).
 
@@ -189,13 +213,12 @@ Daarnaast zijn er Veelgestelde vragen voor eindgebruikers:
 
 -   [Veelgestelde vragen over het bijhouden van documenten](http://go.microsoft.com/fwlink/?LinkId=523977)
 
-Deze pagina met veelgestelde vragen wordt regelmatig bijgewerkt met nieuwe toevoegingen, die worden vermeld in de maandelijkse aankondigingen van documentatie-updates op de blog van het [Microsoft Rights Management (RMS)-team](http://blogs.technet.com/b/rms/).
-
-> [!TIP] U kunt deze documentatieaankondigingen met de [docs tag](http://blogs.technet.com/b/rms/archive/tags/docs/) gemakkelijk terugvinden op de blog.
+Deze pagina met veelgestelde vragen wordt regelmatig bijgewerkt met nieuwe toevoegingen, die worden vermeld in de maandelijkse aankondigingen van documentatie-updates in het [Enterprise Mobility and Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Windows PowerShell-script voor Azure RMS-beveiliging met bestandsserverbronbeheer-FCI | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: a1771c37bffa2af60773a5befdd35c14f684c942
+
 
 ---
 
@@ -29,10 +23,10 @@ ms.suite: ems
 
 *Van toepassing op: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
-Deze pagina bevat een voorbeeldscript dat u kunt kopiëren en bewerken, zoals beschreven in [RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server](configure-fci.md).
+Deze pagina bevat een voorbeeldscript dat u kunt kopiëren en bewerken, zoals beschreven in [RMS-beveiliging met infrastructuur voor bestandsclassificatie voor Windows Server](configure-fci.md).
 
-*&#42;&#42;Disclaimer&#42;&#42;: dit voorbeeldscript wordt door geen enkel(e) standaardondersteuningsprogramma of -service van Microsoft ondersteund. Dit voorbeeld-*
-*script wordt verstrekt 'in de huidige vorm' zonder garantie van welke aard dan ook.*
+*&#42;&#42;Disclaimer&#42;&#42;: dit voorbeeldscript wordt door geen enkel(e) standaardondersteuningsprogramma of -service van Microsoft ondersteund. Dit voorbeeldscript*
+*wordt verstrekt 'in de huidige vorm' en zonder garantie van welke aard dan ook.*
 
 ```
 <#
@@ -177,9 +171,10 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-Terug naar [RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server](configure-fci.md).
+Terug naar [RMS-beveiliging met infrastructuur voor bestandsclassificatie voor Windows Server](configure-fci.md).
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

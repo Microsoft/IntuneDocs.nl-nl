@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Uw eigen tenantsleutel persoonlijk genereren en overdragen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+
 
 ---
 
@@ -42,9 +36,9 @@ Voer de volgende drie stappen uit om uw eigen tenantsleutel te genereren:
 -   [Stap 3: maak een nieuwe sleutel](#step-3-create-a-new-key)
 
 ### Stap 1: bereid een werkstation voor met Thales HSM
-Installeer de nCipher-ondersteuningssoftware (Thales) op een Windows-computer. Koppel een Thales HSM aan die computer. Zorg ervoor dat de Thales-hulpprogramma's zich binnen uw pad bevinden. Zie voor meer informatie de handleiding die is meegeleverd met de Thales HSM of ga naar de Thales-website voor Azure RMS op [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+Installeer de nCipher-ondersteuningssoftware (Thales) op een Windows-computer. Koppel een Thales HSM aan die computer. Zorg ervoor dat de Thales-hulpprogramma's zich binnen uw pad bevinden. Zie voor meer informatie de handleiding inbegrepen bij de Thales HSM of ga naar de Thales-website voor Azure RMS op [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
-### Stap 2: maak een beveiligingswereld
+### Stap 2: Maak een beveiligingswereld
 Start een opdrachtprompt en voer het nieuwe-wereld-programma van Thales uit.
 
 ```
@@ -156,6 +150,7 @@ U hebt nu alle instructies gevolgd die nodig zijn om uw eigen sleutel persoonlij
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

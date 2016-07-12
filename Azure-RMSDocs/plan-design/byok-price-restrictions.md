@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: BYOK-prijzen en -beperkingen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+
 
 ---
 
@@ -34,7 +28,7 @@ Organisaties die een door IT beheerd Azure-abonnement hebben, kunnen BYOK gebrui
 
 
 > [!NOTE]
-> Zie voor meer informatie over RMS voor personen [RMS voor personen en Azure Rights Management](../understand-explore/rms-for-individuals.md)..
+> Zie voor meer informatie over RMS voor personen [RMS voor personen en Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ![BYOK biedt geen ondersteuning voor Exchange Online.](../media/RMS_BYOK_noExchange.png)
 
@@ -60,12 +54,13 @@ Soms is de Azure RMS BYOK-uitzondering voor Exchange Online in de praktijk geen 
 
 ## Volgende stappen
 
-Als u de beslissing hebt genomen om uw eigen sleutel te beheren, gaat u naar [Uw Azure Rights Management-tenantsleutel implementeren](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key)..
+Als u de beslissing hebt genomen om uw eigen sleutel te beheren, gaat u naar [Uw Azure Rights Management-tenantsleutel implementeren](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
 
 Als u hebt besloten om de standaardconfiguratie te handhaven, waarbij Microsoft uw tenantsleutel beheert, raadpleegt u de sectie [Volgende stappen](plan-implement-tenant-key.md#next-steps) van het artikel 'Uw Azure Rights Management-tenantsleutel plannen en implementeren'.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Sjablonen vernieuwen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/06/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
+ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+
 
 ---
 
@@ -38,15 +32,15 @@ Als u Azure RMS gebruikt, worden sjablonen automatisch gedownload naar clientcom
 |Office 365|Automatisch vernieuwd - geen extra stappen vereist.|
 |Office 2016 en Office 2013<br /><br />RMS-toepassing voor delen voor Windows|Automatisch vernieuwd - volgens een schema:<br /><br />Voor deze latere versies van Office: de standaardvernieuwingsinterval is elke zeven dagen.<br /><br />Voor de RMS-toepassing voor delen voor Windows: vanaf versie 1.0.1784.0 is de standaardvernieuwingsinterval om de dag. Eerdere versies hebben een standaardvernieuwingsinterval van zeven dagen.<br /><br />Als u sneller wilt vernieuwen dan gepland, raadpleegt u dit gedeelte: [Office 2016, Office 2013 en RMS-toepassing voor delen voor Windows: een gewijzigde, aangepaste sjabloon geforceerd vernieuwen](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Vernieuwd wanneer gebruikers zich aanmelden.<br /><br />Als u een vernieuwing wilt forceren, moet u gebruikers vragen of dwingen zich af te melden en zich opnieuw aan te melden. Of raadpleeg het volgende gedeelte [Alleen Office 2010: een gewijzigde, aangepaste sjabloon geforceerd vernieuwen](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
-Op mobiele apparaten waarop de RMS-toepassing voor delen wordt gebruikt, worden sjablonen automatisch gedownload (en zo nodig vernieuwd) zonder dat aanvullende configuratie is vereist.
+Op mobiele apparaten waarop de RMS-toepassing voor delen wordt gebruikt, worden sjablonen automatisch gedownload (en zo nodig vernieuwd) zonder dat aanvullende configuratie vereist is.
 
 ## Alleen Exchange Online: Exchange configureren om gewijzigde, aangepaste sjablonen te downloaden
-Als u Information Rights Management (IRM) voor Exchange Online al hebt geconfigureerd, worden aangepaste sjablonen pas voor gebruikers gedownload nadat u in Exchange Online de volgende wijzigingen hebt aangebracht met Windows PowerShell.
+Als u Information Rights Management (IRM) voor Exchange Online al hebt geconfigureerd, worden aangepaste sjablonen pas naar gebruikers gedownload wanneer u de volgende wijzigingen aanbrengt met Windows PowerShell Exchange Online.
 
 > [!NOTE]
-> Voor meer informatie over het gebruik van Windows PowerShell in Exchange Online raadpleegt u [PowerShell gebruiken in combinatie met Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
+> Zie voor meer informatie over het gebruik van Windows PowerShell in Exchange Online [PowerShell gebruiken in combinatie met Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
 
-U moet deze procedure telkens uitvoeren wanneer u een sjabloon wijzigt.
+U moet deze procedure uitvoeren telkens wanneer u een sjabloon wijzigt.
 
 ### Sjablonen voor Exchange Online bijwerken
 
@@ -135,7 +129,7 @@ Door het register op de computers met Office 2016, Office 2013 of de Rights Mana
 
 1.  Verwijder met een registereditor de gegevens voor de waarde **LastUpdatedTime**. De gegevens geven bijvoorbeeld **2015-04-20T15:52** weer. Verwijder dan 2015-04-20T15:52, zodat er geen gegevens worden weergegeven. Gebruik de volgende informatie om het registerpad te vinden voor het verwijderen van deze registerwaardgegevens.
 
-    **Registerpad:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **Registerpad:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*MicrosoftRMS_FQDN*>\Template
 
     **Type:** REG_SZ
 
@@ -192,6 +186,7 @@ Door het register op de computers met Office 2010 te bewerken, kunt u een waarde
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

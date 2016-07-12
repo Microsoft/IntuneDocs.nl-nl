@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Azure Rights Management-implementatieschema | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f8a4d53665dd79a6d0e02d340b0e7a09d995e00
+ms.openlocfilehash: 96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81
+
 
 ---
 
@@ -33,7 +27,7 @@ Gebruik de volgende stappen om Azure Rights Management (Azure RMS) voor te berei
 
 Als u Azure RMS alleen snel wilt proberen in plaats van dit uit te rollen in een productieomgeving, raadpleegt u [Zelfstudie voor snel starten met Azure Rights Management](../get-started/quick-start-tutorial.md).
 
-Zie voor een lijst van specifieke scenario's, bijbehorende configuratiestappen en eindgebruikersdocumentatie de [Snelle implementatiehandleiding voor Azure Rights Management](../get-started/rapid-deployment-guide.md).
+Zie voor een lijst met specifieke scenario's, bijbehorende configuratiestappen en eindgebruikersdocumentatie de [Snelle implementatiehandleiding voor Azure Rights Management](../get-started/rapid-deployment-guide.md).
 
 > [!IMPORTANT]
 > Voordat u de volgende stappen uitvoert, zorgt u ervoor dat u [Vereisten voor Azure Rights Management](../get-started/requirements-azure-rms.md) hebt gelezen.
@@ -50,20 +44,20 @@ Voordat u begint met het gebruik van [!INCLUDE[aad_rightsmanagement_2](../includ
 
 3.  Installeer de Windows PowerShell-module voor [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] op ten minste één computer die toegang tot internet heeft. U kunt deze stap nu of later uitvoeren. Zie voor meer informatie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md).
 
-4.  Als u momenteel lokale Rights Management Services gebruikt: voer een migratie uit om de sleutels, sjablonen en URL's te verplaatsen naar de cloud. Zie voor meer informatie [Migreren van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+4.  Als u momenteel lokale Rights Management Services gebruikt: voer een migratie uit om de sleutels, sjablonen en URL's te verplaatsen naar de cloud. Zie [Migreren van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) voor meer informatie.
 
-5.  Activeer Rights Management, zodat u kunt beginnen met het gebruik van de service. Als een gefaseerde implementatie vereist is, configureert u de besturingselementen voor gebruikersvoorbereiding zodanig dat het gebruik beperkt is tot specifieke gebruikers. Zie voor meer informatie [Azure Rights Management activeren](../deploy-use/activate-service.md)..
+5.  Activeer Rights Management, zodat u kunt beginnen met het gebruik van de service. Als een gefaseerde implementatie vereist is, configureert u de besturingselementen voor gebruikersvoorbereiding zodanig dat het gebruik beperkt is tot specifieke gebruikers. Zie voor meer informatie [Azure Rights Management activeren](../deploy-use/activate-service.md).
 
 Overweeg eventueel het volgende te configureren.
 
--   Aangepaste sjablonen als de standaardrechtenbeleidssjablonen niet geschikt zijn voor uw organisatie. U kunt deze stap nu of later uitvoeren. Zie [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) voor meer informatie.
+-   Aangepaste sjablonen als de standaardrechtenbeleidssjablonen niet geschikt zijn voor uw organisatie. U kunt deze stap nu of later uitvoeren. Zie [Configuring custom templates for Azure Rights Management](../deploy-use/configure-custom-templates.md) (Aangepaste sjablonen configureren voor Azure Rights Management)voor meer informatie.
 
 -   Registreer het gebruik in een logboek zodat u kunt controleren hoe uw organisatie Rights Management gebruikt. U kunt deze stap nu of later uitvoeren. Zie [Azure Rights Management-gebruik analyseren en vastleggen in een logboek](../deploy-use/log-analyze-usage.md) voor meer informatie.
 
 ## Stap 3: configureer uw toepassingen en services voor Rights Management
 Configuratie van uw toepassingen en services omvat mogelijk het installeren van de Rights Management-toepassing voor delen en het bieden van ondersteuning voor de functies van Information Rights Management (IRM) in SharePoint Online of Exchange Online. Zie [Toepassingen configureren voor Azure Rights Management](../deploy-use/configure-applications.md) voor meer informatie.
 
-Als u bestaande IT-services hebt die bestanden moeten controleren die worden beveiligd door Azure RMS, zoals oplossingen voor preventie van gegevenslekken, gateways voor inhoudversleuteling en antimalwareproducten: configureer de serviceaccounts als supergebruikers voor Azure RMS. Zie voor meer informatie [Supergebruikers configureren voor Azure Rights Management en detectieservices of gegevensherstel](../deploy-use/configure-super-users.md).
+Als u bestaande IT-services hebt die bestanden moeten controleren die worden beveiligd door Azure RMS, zoals oplossingen voor preventie van gegevenslekken, gateways voor inhoudversleuteling en antimalwareproducten: configureer de serviceaccounts als supergebruikers voor Azure RMS. Zie [Configuring super users for Azure Rights Management and discovery services or data recovery](../deploy-use/configure-super-users.md) (Supergebruikers configureren voor Azure Rights Management en detectieservices of gegevensherstel) voor meer informatie.
 
 Voor bulksgewijze beveiliging of bulksgewijze opheffing van beveiliging voor alle bestandstypen installeert u het RMS-beveiligingshulpprogramma dat gebruikmaakt van de RMS Protection PowerShell-module. Zie [RMS Protection Cmdlets](https://msdn.microsoft.com/library/mt433195.aspx) (RMS-beveiligingscmdlets) voor meer informatie.
 
@@ -72,7 +66,7 @@ Als u lokale services hebt die u wilt gebruiken met Azure Rights Management, ins
 ## Stap 4: publiceer en gebruik inhoud met rechtenbescherming
 U bent nu klaar om beveiligde inhoud te publiceren en te gebruiken, en in het logboek te registreren u hoe uw bedrijf Rights Management gebruikt. Zie voor meer informatie [Gebruikers helpen bij het beveiligen van bestanden door gebruik te maken van Azure Rights Management](../deploy-use/help-users.md) en [Azure Rights Management-gebruik analyseren en vastleggen in een logboek](../deploy-use/log-analyze-usage.md).
 
-Als u geïnteresseerd bent in het automatisch beveiligen van bestanden met Infrastructuur voor bestandsclassificatie op een Windows-bestandsserver, raadpleegt u [RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server](../rms-client/configure-fci.md).
+Als u geïnteresseerd bent in het automatisch beveiligen van bestanden met Infrastructuur voor bestandsclassificatie op een Windows-bestandsserver, raadpleegt u [MS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server](../rms-client/configure-fci.md).
 
 ## Stap 5: beheer Rights Management voor uw tenantaccount, indien nodig
 Als u begint met het gebruik van [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], is de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-module voor Windows PowerShell-scripts wellicht nuttig voor scripts of het automatiseren van beheerwijzigingen. Zie voor meer informatie [Beheer van Azure Rights Management met Windows PowerShell](../deploy-use/administer-powershell.md).
@@ -80,6 +74,7 @@ Als u begint met het gebruik van [!INCLUDE[aad_rightsmanagement_2](../includes/a
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: RMS voor personen en Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+
 
 ---
 
@@ -40,13 +34,14 @@ Deze gebruikers kunnen met de Rights Management-toepassing voor delen op Windows
 
 Voor meer informatie over hoe u bestanden kunt beveiligen met behulp van de gratis Rights Management-toepassing voor delen, raadpleegt u de [Gebruikershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-user-guide.md).
 
-RMS voor personen is een voorbeeld van een toepassing met selfserviceregistratie die wordt ondersteund door Azure Active Directory. Zie voor meer informatie over hoe dit werkt, [Wat is selfserviceregistratie voor Azure?](/active-directory/active-directory-self-service-signup)  in de Azure Active Directory-documentatie. 
+RMS voor personen is een voorbeeld van een toepassing met selfserviceregistratie die wordt ondersteund door Azure Active Directory. Zie voor meer informatie over hoe dit werkt, [Wat is selfserviceregistratie voor Azure?](/active-directory/active-directory-self-service-signup) in de Azure Active Directory-documentatie. 
 
 ## Volgende stappen
 Zie [Hoe gebruikers zich aanmelden voor RMS voor personen](rms-for-individuals-user-sign-up.md) voor stapsgewijze instructies en een technisch overzicht van wat er op de achtergrond gebeurt. 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

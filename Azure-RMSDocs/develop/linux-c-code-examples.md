@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Linux-codevoorbeelden | Azure RMS
-description: In dit onderwerp vindt u belangrijke scenario’s en code-elementen voor de Linux-versie van de RMS SDK.
-keywords:
+description: "In dit onderwerp vindt u belangrijke scenario’s en code-elementen voor de Linux-versie van de RMS SDK."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: ace7103cfb44d84a7dd6bf64f57c2a47530117e0
+
 
 ---
 
@@ -32,7 +28,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
 
 ## Scenario: toegang verkrijgen tot beveiligingsbeleidgegevens van een beveiligd bestand
 
-**Hiermee wordt een met RMS beveiligd bestand geopend en kunt u het lezen**
+**Een met RMS beveiligd bestand openen en lezen**
 **Bron**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Beschrijving**: nadat er een bestandsnaam is opgehaald bij de gebruiker, de certificaten zijn gelezen (zie *MainWindow::addCertificates*), de verificatiecallback is ingesteld met client-id en doorverwijzings-URL, en *ConvertFromPFile* is aangeroepen (zie het volgende codevoorbeeld), worden de naam van het beveiligingsbeleid, de beschrijving en de geldigheidsdatum van de inhoud uitgelezen.
@@ -152,7 +148,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
 
 ## Scenario: een nieuw beveiligd bestand maken met behulp van een sjabloon
 
-**Beschermt een bestand met een door de gebruiker geselecteerd sjabloon**
+**Een bestand beveiligen met een door de gebruiker geselecteerde sjabloon**
 **Bron**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Beschrijving**: nadat er een bestandsnaam is opgehaald bij de gebruiker, de certificaten zijn gelezen (zie *MainWindow::addCertificates*) en de verificatiecallback is ingesteld met client-id en doorverwijzings-URL, wordt het geselecteerde bestand beveiligd door *ConvertFromPFile* aan te roepen (zie het volgende codevoorbeeld).
@@ -205,13 +201,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
     
     AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
     }
-   catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
-    outFile-&gt;close();
-    remove(fileOut.c_str());
-    }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+   catch (const rmsauth::Exception&amp; e) { AddLog(&quot;FOUT: &quot;, e.error().c_str()); outFile-&gt;close(); remove(fileOut.c_str()); } catch (const rmscore::exceptions::RMSException&amp; e) { AddLog(&quot;FOUT: &quot;, e.what());
     
     outFile-&gt;close();
     remove(fileOut.c_str());
@@ -221,7 +211,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
     }
 
 
-**Beschermt een bestand met behulp van een beleid dat is gemaakt op basis van een sjabloon**
+**Een bestand beveiligen met een beleid dat is gemaakt op basis van een sjabloon**
 **Bron**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Beschrijving**: de lijst met sjablonen die zijn gekoppeld aan de gebruiker, wordt opgehaald en de geselecteerde sjabloon wordt vervolgens gebruikt voor het maken van beleid, dat op zijn beurt wordt gebruikt om het bestand te beveiligen.
@@ -254,7 +244,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
     }
     }
 
-**Hiermee wordt een bestand beveiligd op basis van beleid**
+**Een bestand beveiligen met het opgegeven beleid**
 **Bron**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Beschrijving**: hiermee maakt u een beveiligde bestandsstroom met het opgegeven beleid en beveiligt u het bestand vervolgens.
@@ -298,7 +288,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
 
 ## Scenario: een bestand beveiligen met aangepaste beveiliging
 
-**Beveiligt een bestand met aangepaste beveiliging**
+**Een bestand beveiligen met aangepaste beveiliging**
 **Bron**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Beschrijving**: nadat er een bestandsnaam is opgehaald bij de gebruiker, de certificaten zijn gelezen (zie *MainWindow::addCertificates*), de rechteninformatie van de gebruiker is verzameld en de verificatiecallback is ingesteld met client-id en doorverwijzings-URL, wordt het geselecteerde bestand beveiligd door *ConvertToPFilePredefinedRights* aan te roepen (zie het volgende codevoorbeeld).
@@ -381,7 +371,7 @@ De onderstaande codefragmenten maken deel uit van de voorbeeldtoepassingen *rms\
     }
 
 
-**Hiermee maakt u een beveiligingsbeleid waarmee gebruikers geselecteerde rechten krijgen**
+**Een beveiligingsbeleid maken en een gebruiker geselecteerde rechten geven**
 **Bron**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Beschrijving**: hiermee maakt u een beleidsdescriptor en vult u deze met de rechteninformatie van de gebruiker. Gebruik vervolgens de beleidsdescriptor om gebruikersbeleid te maken. Dit beleid wordt gebruikt voor het beveiligen van het geselecteerde bestand door *ConvertToPFileUsingPolicy* aan te roepen (dit wordt beschreven in een eerder gedeelte van dit onderwerp).
@@ -511,7 +501,7 @@ De *WorkerThread()*-methode wordt aangeroepen in twee van de vorige voorbeeldsce
 ## Scenario: RMS-verificatie
 
 In de volgende voorbeelden ziet u twee verschillende manieren van verificatie: het Azure oAuth2-verificatietoken ophalen mét en zonder gebruikersinterface.
-**Het oAuth2-verificatietoken ophalen mét gebruikersinterface**
+**oAuth2-verificatietoken ophalen met UI**
 **Bron**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
 **Stap 1**: maak een gedeeld punt van een **rmsauth::FileCache**-object.
@@ -522,8 +512,7 @@ Beschrijving: u kunt een cachepad instellen of de standaardoptie gebruiken.
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Stap 2**: maak een **rmsauth::AuthenticationContext**-object
-Beschrijving: hiermee geeft u de Azure-*instantie-URI* en het *FileCache*-object op.
+**Stap 2**: **rmsauth::AuthenticationContext**-object maken Beschrijving: *URI van instantie* voor Azure en *FileCache*-object opgeven.
 
 **C++**:
 
@@ -533,8 +522,7 @@ Beschrijving: hiermee geeft u de Azure-*instantie-URI* en het *FileCache*-object
                               FileCachePtr);
 
 
-**Stap 3**: roep de methode **aquireToken** van het object **authContext** aan en geef de volgende parameters op:
-Beschrijving:
+**Stap 3**: **aquireToken**-methode van het **authContext**-objecten aanroepen en de volgende parameters opgeven: Beschrijving:
 
 -   *Gevraagde resource*: beveiligde resource die u wilt openen
 -   *Unieke id van client*: meestal een GUID
@@ -552,25 +540,22 @@ Beschrijving:
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**Stap 4**: haal het toegangstoken op uit het resultaat
-Beschrijving: hiermee wordt de methode **result-&gt; accessToken()** aangeroepen
+**Stap 4**: toegangstoken ophalen uit resultaat Beschrijving: methode **result-&gt; accessToken()** aanroepen
 
 **Opmerking:** met alle verificatiemethoden voor de bibliotheek kan **rmsauth::Exception** worden gegenereerd
 
  
-**Het oAuth2-verificatietoken ophalen zonder gebruikersinterface**
+**oAuth2-verificatietoken ophalen zonder UI**
 **Bron**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**Stap 1**: maak een gedeeld punt van een **rmsauth::FileCache**-object
-Beschrijving: u kunt een cachepad instellen of de standaardoptie gebruiken
+**Stap 1**: een gedeeld punt maken van het **rmsauth::FileCache**-object Beschrijving: u kunt het cachepad instellen of de standaardwaarde gebruiken
 
 **C++**:
 
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Stap 2**: maak het object **UserCredential**
-Beschrijving: hiermee geeft u de *gebruikersnaam* en het *wachtwoord* op
+**Stap 2**: **UserCredential**-object maken Beschrijving: *gebruikersaanmelding* en *wachtwoord* opgeven
 
 **C++**:
 
@@ -578,8 +563,7 @@ Beschrijving: hiermee geeft u de *gebruikersnaam* en het *wachtwoord* op
                                                  &quot;SomePass&quot;);
 
 
-**Stap 3**: maak een **rmsauth::AuthenticationContext**-object
-Beschrijving: hiermee geeft u de Azure-instantie-*URI* en het *FileCache*-object op
+**Stap 3**: object **rmsauth::AuthenticationContext** maken Beschrijving: *URI* van Azure-instantie en *FileCache*-object opgeven
 
 **C++**:
 
@@ -602,13 +586,13 @@ Beschrijving: hiermee geeft u de Azure-instantie-*URI* en het *FileCache*-object
                 userCred);
 
 
-**Stap 5**: haal het toegangstoken op uit het resultaat
-Beschrijving: hiermee wordt de methode **result-&gt; accessToken()** aangeroepen
+**Stap 5**: toegangstoken ophalen uit resultaat Beschrijving: methode **result-&gt; accessToken()** aanroepen
 
 **Opmerking:** met alle verificatiemethoden voor de bibliotheek kan **rmsauth::Exception** worden gegenereerd
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

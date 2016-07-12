@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Azure Rights Management uit bedrijf nemen en deactiveren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
+
 
 ---
 
@@ -40,7 +34,7 @@ Wanneer u uw Azure Rights Management-tenantsleutel hebt, kunt u Rights Managemen
 
 |Als dit voor u van toepassing is ...|… Actie:|
 |----------------------------|--------------|
-|U wilt dat alle gebruikers Rights Management blijven gebruiken, maar dat ze hiervoor een on-premises oplossing gebruiken in plaats van Azure RMS    →|Gebruik de cmdlet [Set-AadrmMigrationUrl](https://msdn.microsoft.com/library/azure/dn629429.aspx) om bestaande gebruikers naar uw on-premises implementatie te leiden wanneer ze na deze wijziging beveiligde inhoud verbruiken. Gebruikers gebruiken automatisch de AD RMS-installatie om de beveiligde inhoud verbruiken.<br /><br />Als gebruikers inhoud willen verbruiken die is beveiligd voordat deze wijziging werd doorgevoerd, leidt u uw clients om naar de on-premises implementatie met de registersleutel **LicensingRedirection** voor Office 2016 of Office 2013, zoals beschreven in de [sectie servicedetectie](../rms-client/client-deployment-notes.md) in de notities van de RMS-clientimplementatie, en de registersleutel **LicenseServerRedirection** voor Office 2010, zoals beschreven in [Registerinstellingen van Office](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx).|
+|U wilt dat alle gebruikers Rights Management blijven gebruiken, maar dat ze hiervoor een on-premises oplossing gebruiken in plaats van Azure RMS    →|Gebruik de cmdlet [Set-AadrmMigrationUrl](https://msdn.microsoft.com/library/azure/dn629429.aspx) om bestaande gebruikers naar uw on-premises implementatie te leiden wanneer ze na deze wijziging beveiligde inhoud verbruiken. Gebruikers gebruiken automatisch de AD RMS-installatie om de beveiligde inhoud verbruiken.<br /><br />Als gebruikers inhoud willen gebruiken die is beveiligd voordat deze wijziging werd doorgevoerd, leidt u uw clients om naar de on-premises implementatie met de registersleutel **LicensingRedirection** voor Office 2016 of Office 2013, zoals beschreven in de [sectie servicedetectie](../rms-client/client-deployment-notes.md) in de notities van de RMS-clientimplementatie, en de registersleutel **LicenseServerRedirection** voor Office 2010, zoals beschreven in [Registerinstellingen van Office](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx).|
 |U wilt helemaal stoppen met het gebruik van Rights Management-technologieën    →|Verleen een aangewezen beheerder [rechten als supergebruiker](../deploy-use/configure-super-users.md) en geef deze persoon de [RMS-beveiligingshulpprogramma](http://www.microsoft.com/en-us/download/details.aspx?id=47256).<br /><br />Deze beheerder kan vervolgens het hulpprogramma gebruiken voor het bulksgewijs ontsleutelen van bestanden in mappen die zijn beveiligd door Azure Rights Management, zodat de bestanden niet meer beveiligd zijn en dus kunnen worden gelezen zonder een Rights Management-technologie zoals Azure RMS of AD RMS. Dit hulpprogramma kan worden gebruikt met Azure RMS en AD RMS, zodat u de keuze hebt uit het decoderen van bestanden voor- of nadat u Azure RMS deactiveert, of een combinatie hiervan.|
 |U kunt niet alle bestanden identificeren die zijn beveiligd door Azure RMS of u wilt dat alle gebruikers beveiligde bestanden die zijn overgeslagen automatisch kunnen lezen    →|Implementeer een registerinstelling op alle clientcomputers met de registersleutel **LicensingRedirection** voor Office 2016 of Office 2013, zoals beschreven in de [sectie servicedetectie](../rms-client/client-deployment-notes.md) in de notities van de RMS-clientimplementatie, en de registersleutel **LicenseServerRedirection** voor Office 2010, zoals beschreven in [Registerinstellingen van Office](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx).<br /><br />Implementeer bovendien een andere registerinstelling om te voorkomen dat gebruikers nieuwe bestanden beveiligen door **DisableCreation** in te stellen op **1**, zoals beschreven in [Registerinstellingen van Office](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx).|
 |U wilt een gecontroleerde, handmatige herstelservice voor bestanden die zijn overgeslagen    →|Verleen aangewezen gebruikers in een groep voor gegevensherstel [rechten als supergebruiker](../deploy-use/configure-super-users.md) en geef hen het [RMS-beveiligingshulpprogramma](http://www.microsoft.com/en-us/download/details.aspx?id=47256) zodat ze kunnen de beveiliging van bestanden kunnen opheffen wanneer dit wordt gevraagd door standaardgebruikers.<br /><br />Implementeer op alle computers de registerinstelling om te voorkomen dat gebruikers nieuwe bestanden beveiligen door **DisableCreation** in te stellen op **1**, zoals beschreven in [Registerinstellingen van Office](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx).|
@@ -55,21 +49,21 @@ Zie de volgende resources voor meer informatie over procedures in deze tabel:
 Gebruik de volgende instructies wanneer u klaar bent voor het deactiveren van de Azure RMS-service voor uw organisatie.
 
 ## Rights Management uitschakelen
-Gebruik een van de volgende procedures voor het deactiveren. [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+Gebruik een van de volgende procedures voor het deactiveren van [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 > [!TIP]
-> U kunt ook de Windows PowerShell-cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx) gebruiken voor het deactiveren [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
+> U kunt ook de Windows PowerShell-cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx) gebruiken voor het deactiveren van [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
 
 #### Rights Management deactiveren vanuit het Office 365-beheercentrum
 
 1.  [Meld u aan bij Office 365 met het werk- of schoolaccount](https://portal.office.com/) van een beheerder van uw Office 365-implementatie.
 
-2.  Als het Office 365-beheercentrum niet automatisch wordt weergegeven, selecteert u het pictogram voor het starten van de app linksboven en kiest u **Admin**. De tegel **Admin** wordt alleen weergegeven voor Office 365-beheerders.
+2.  Als het Office 365-beheercentrum niet automatisch wordt weergegeven, selecteert u het pictogram voor het starten van de app linksboven en kiest u **Admin**. De tegel **Beheer** wordt alleen weergegeven voor Office 365-beheerders.
 
     > [!TIP]
-    > Zie [About the Office 365 admin center - Admin Help](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547) (Over het Office 365-beheercentrum - Admin-Help) voor hulp bij het beheercentrum.
+    > Zie [Over het Office 365-beheercentrum - Help voor beheerders](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547) voor hulp bij het beheercentrum.
 
-3.  Vouw in het linkerdeelvenster **SERVICE-INSTELLINGEN** uit..
+3.  Vouw in het linkerdeelvenster **SERVICE-INSTELLINGEN** uit.
 
 4.  Klik op **Rights Management**.
 
@@ -87,7 +81,7 @@ U ziet nu **Rights Management is not activated** (Rights Management is niet geac
 
 2.  Klik in het linkerdeelvenster op **ACTIVE DIRECTORY**.
 
-3.  Klik op de pagina **Active Directory** op **RIGHTS MANAGEMENT**.
+3.  Klik op de pagina **Active directory** op **RIGHTS MANAGEMENT**.
 
 4.  Selecteer de map die u beheren voor [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], klik op **DEACTIVEREN** en bevestig vervolgens de actie.
 
@@ -97,6 +91,7 @@ Voor de **RIGHTS MANAGEMENT STATUS** wordt nu **Inactief** weergegeven en de opt
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

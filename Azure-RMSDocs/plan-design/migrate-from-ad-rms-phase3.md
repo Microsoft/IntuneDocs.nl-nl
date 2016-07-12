@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Migreren van AD RMS naar Azure Rights Management - Stap 3 | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,17 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+
 
 ---
 
@@ -31,12 +23,12 @@ ms.suite: ems
 *Van toepassing op: Active Directory Rights Management Services, Azure Rights Management*
 
 
-Gebruik de volgende informatie voor stap 3 van de migratie van AD RMS naar Azure Rights Management (Azure RMS). Deze procedures beslaan stap 6 tot en met 7 van [Migreren van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+Gebruik de volgende informatie voor stap 3 van de migratie van AD RMS naar Azure Rights Management (Azure RMS). Deze procedures beslaan stap 6 en 7 van [Migreren van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
 ## Stap 6. IRM-integratie voor Exchange Online configureren
 
-Als u uw TDP eerder vanuit AD RMS hebt geïmporteerd in Exchange Online, moet u deze TDP verwijderen om conflicten tussen sjablonen en beleidsregels te voorkomen nadat u bent gemigreerd naar Azure RMS. Doe dit met de cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/en-us/library/jj200720%28v=exchg.150%29.aspx) vanuit Exchange Online.
+Als u uw TDP eerder vanuit AD RMS hebt geïmporteerd in Exchange Online, moet u deze TDP verwijderen om conflicten tussen sjablonen en beleidsregels te voorkomen nadat u bent gemigreerd naar Azure RMS. Doe dit met de cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) vanuit Exchange Online.
 
 Als u de Azure RMS-tenantsleuteltopologie **Door Microsoft beheerd** kiest:
 
@@ -52,7 +44,7 @@ Als u de Information Rights Management-functionaliteit (IRM) van Exchange Server
 Als u voor deze stap meerdere TPD’s hebt geïmporteerd in Azure RMS die zijn gebruikt voor het beveiligen van e-mailberichten, moet u tot slot handmatig het register bewerken op de Exchange Server-computers zodat alle URL's van TPD’s worden omgeleid naar de RMS-connector.
 
 > [!NOTE]
-> Voordat u begint, controleert u de versies van de on-premises servers die Azure RMS ondersteunt, in [Lokale servers die Azure RMS ondersteunen](../get-started/requirements-servers.md).
+> Voordat u begint, controleert u de versies van de on-premises servers die Azure RMS ondersteunt, in [On-premises servers die Azure RMS ondersteunen](../get-started/requirements-servers.md).
 
 ### IRM op Exchange Servers uitschakelen en de AD RMS-configuratie verwijderen
 
@@ -82,9 +74,9 @@ Als u voor deze stap meerdere TPD’s hebt geïmporteerd in Azure RMS die zijn g
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  Stel nu op elke Exchange-server IIS opnieuw in, bijvoorbeeld door een opdrachtprompt als beheerder uit te voeren en **iisreset** te typen.
+6.  Stel nu op elke Exchange-Server IIS opnieuw in, bijvoorbeeld door een opdrachtprompt als beheerder uit te voeren en **iisreset** te typen.
 
-### IRM op SharePoint-servers uitschakelen en de AD RMS-configuratie verwijderen
+### IRM op SharePoint Servers uitschakelen en de AD RMS-configuratie verwijderen
 
 1.  Zorg dat er zijn geen documenten zijn uitgecheckt uit met RMS beveiligde bibliotheken. Als er uitgecheckte documenten zijn, zijn deze na deze procedure niet meer toegankelijk.
 
@@ -94,7 +86,7 @@ Als u voor deze stap meerdere TPD’s hebt geïmporteerd in Azure RMS die zijn g
 
 4.  Selecteer op de pagina **Information Rights Management** in het gedeelte **Information Rights Management** de optie **IRM niet gebruiken op deze server** en klik vervolgens op **OK**.
 
-5.  Verwijder op elk van de SharePoint Server-computers de inhoud van de map \ProgramData\Microsoft\MSIPC\Server\*&lt;SID van het account waarop SharePoint Server wordt uitgevoerd&gt;*.
+5.  Verwijder op elk van de SharePoint Server-computers de inhoud van de map \ProgramData\Microsoft\MSIPC\Server\*&lt;SID van het account waarop SharePoint Server&gt;* wordt uitgevoerd.
 
 #### De RMS-connector installeren en configureren
 
@@ -221,6 +213,7 @@ Nadat u deze procedures hebt voltooid, leest u het gedeelte **Volgende stappen**
 ## Volgende stappen
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 4: taken na migratie](migrate-from-ad-rms-phase4.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

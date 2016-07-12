@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Gebruikershandleiding voor de Rights Management-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+
 
 ---
 
@@ -40,7 +34,7 @@ Hier volgen enkele voorbeelden van hoe u de RMS-toepassing voor delen zou kunnen
 
 |Ik wil...|Hoe u dit doet|
 |----------------|------------------|
-|**… financiële gegevens veilig delen met iemand die ik vertrouw en die voor een andere organisatie werkt**<br /><br />U werkt met een partnerbedrijf en wilt ze een Excel-werkblad mailen met geschatte verkoopcijfers. U wilt dat ze de cijfers kunnen zien, maar niet wijzigen.|Gebruik de knop **Beveiligd delen** in het lint in Excel, typ de e-mailadressen van de twee personen met wie u samenwerkt in het partnerbedrijf, selecteer **Lezer: alleen weergeven** en klik op **Verzenden**..<br /><br />Wanneer de e-mail bij het partnerbedrijf aankomt, kunnen alleen de ontvangers in de e-mail het werkblad bekijken en ze kunnen dit niet opslaan, bewerken, afdrukken of doorsturen.<br /><br />Stapsgewijs: [een bestand beveiligen dat u per e-mail deelt met de Rights Management-toepassing voor delen](sharing-app-protect-by-email.md).|
+|**… financiële gegevens veilig delen met iemand die ik vertrouw en die voor een andere organisatie werkt**<br /><br />U werkt met een partnerbedrijf en wilt ze een Excel-werkblad mailen met geschatte verkoopcijfers. U wilt dat ze de cijfers kunnen zien, maar niet wijzigen.|Gebruik de knop **Beveiligd delen** in het lint in Excel, typ de e-mailadressen van de twee personen met wie u samenwerkt in het partnerbedrijf, selecteer **Lezer: alleen weergeven** en klik op **Verzenden**.<br /><br />Wanneer de e-mail bij het partnerbedrijf aankomt, kunnen alleen de ontvangers in de e-mail het werkblad bekijken en ze kunnen dit niet opslaan, bewerken, afdrukken of doorsturen.<br /><br />Stapsgewijs: [een bestand beveiligen dat u per e-mail deelt met de Rights Management-toepassing voor delen](sharing-app-protect-by-email.md).|
 |**… veilig een document per e-mail verzenden aan iemand die gebruikmaakt van een iOS-apparaat**<br /><br />U wilt een uiterst vertrouwelijk Word-document mailen naar een collega waarvan u weet dat deze regelmatig e-mail bekijkt op zijn iOS-apparaat.|Klik in Verkenner met de rechtermuisknop op het bestand en selecteer **Beveiligd delen** om het bestand als bijlage naar uw collega te verzenden.<br /><br />De ontvanger ontvangt de e-mail op zijn iOS-apparaat. Omdat de ontvanger niet beschikt over Office voor iPad en iPhone, klikt hij op de koppeling in de e-mail waarin wordt uitgelegd hoe de toepassing voor delen kan worden gedownload. Nadat de versie voor iOS-apparaten is geïnstalleerd, kan de ontvanger het document bekijken¹.<br /><br />Stapsgewijs: [een bestand beveiligen dat u per e-mail deelt met de Rights Management-toepassing voor delen](sharing-app-protect-by-email.md).|
 |**… controleren wie mijn beveiligde documenten wanneer heeft geopend en indien nodig de toegang intrekken**<br /><br />U hebt een vertrouwelijk ontwerpdocument beveiligd gedeeld met potentiële leveranciers en u wilt zien wie het heeft geopend, wanneer en waar. Als een van de leveranciers vervolgens de opdracht heeft gekregen, wilt u de toegang tot het originele document intrekken zodat de mensen waar u dit mee hebt gedeeld dit niet meer kunnen lezen.|Na het delen van een document per e-mail gaat u naar de [site voor documenttracking](http://go.microsoft.com/fwlink/?LinkId=529562) om te controleren wie het document wanneer heeft geopend. Als u wilt stoppen met delen, selecteert u de optie om toegang in te trekken.<br /><br />Stapsgewijs: [uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](sharing-app-track-revoke.md).|
 |**… een bijlage lezen die ik in een e-mailbericht heb ontvangen en die is beveiligd, maar die ik niet kan lezen omdat mijn bedrijf geen gebruik maakt van Rights Management**<br /><br />De afzender van het e-mailbericht is iemand die u vertrouwt omdat u al eerder zaken met hem hebt gedaan en u vermoedt dat deze persoon u informatie stuurt over een mogelijke nieuwe zakelijke kans.|U volg de instructies in het e-mailbericht en klikt op de koppeling om u aan te melden bij Microsoft Rights Management. U krijgt van Microsoft een bevestiging dat uw organisatie geen abonnement heeft met Azure Rights Management, u krijgt een e-mail waarin u het gratis aanmeldproces kunt voltooien en u meldt zich aan met uw nieuwe account. U klikt u op de tweede koppeling in het e-mailbericht voor het installeren van de Rights Management-app voor delen en vervolgens kunt u de e-mailbijlage openen om te lezen over de nieuwe zakelijke kans.<br /><br />Stapsgewijs: [bestanden weergeven en gebruiken die zijn beveiligd door Rights Management](sharing-app-view-use-files.md).|
@@ -71,6 +65,7 @@ Hier volgen enkele voorbeelden van hoe u de RMS-toepassing voor delen zou kunnen
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

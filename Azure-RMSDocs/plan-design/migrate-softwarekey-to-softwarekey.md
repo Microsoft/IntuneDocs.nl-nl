@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Stap 2&colon; migratie van met software beschermde sleutel naar met software beschermde sleutel | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
+ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+
 
 ---
 
@@ -33,7 +27,7 @@ ms.suite: ems
 
 Deze instructies maken deel uit van het [migratiepad van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) en zijn alleen van toepassing als uw AD RMS-sleutel softwarebeveiliging heeft en u wilt migreren naar Azure Rights Management met een tenantsleutel met softwarebeveiliging. 
 
-Als dit niet uw gekozen configuratiescenario is, gaat u terug naar [stap 2. Exporteer de configuratiegegevens vanuit AD RMS, importeer ze in Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) en kies een andere configuratie.
+Als dit niet uw gekozen configuratiescenario is, gaat u terug naar [stap 2. Exporteer de configuratiegegevens vanuit AD RMS, importeer de gegevens in Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) en kies een andere configuratie.
 
 Volg deze procedure voor het importeren van de AD RMS-configuratie naar Azure RMS, waarna uw Azure RMS-tenantsleutel wordt beheerd door Microsoft.
 
@@ -42,9 +36,9 @@ Volg deze procedure voor het importeren van de AD RMS-configuratie naar Azure RM
 1.  Download en installeer op een werkstation met internetverbinding de Windows PowerShell-module voor Azure RMS (minimaal versie 2.1.0.0), waarin de cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) is inbegrepen.
 
     > [!TIP]
-    > Als u de module eerder hebt gedownload en geïnstalleerd, controleert u het versienummer door de volgende opdracht uit te voeren: `(Get-Module aadrm -ListAvailable).Version`
+    > Als u de module eerder hebt gedownload en geïnstalleerd, moet u het versienummer controleren door het volgende uit te voeren: `(Get-Module aadrm -ListAvailable).Version`
 
-    Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor de installatie-instructies..
+    Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor installatie-instructies.
 
 2.  Start Windows PowerShell met de optie **Uitvoeren als beheerder** en gebruik de cmdlet [Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx) om verbinding te maken met de Azure RMS-service:
 
@@ -70,10 +64,11 @@ Volg deze procedure voor het importeren van de AD RMS-configuratie naar Azure RM
     Disconnect-AadrmService
     ```
 
-U kunt nu doorgaan naar [stap 3. Activeer uw RMS-tenant](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)..
+U kunt nu doorgaan naar [stap 3. Uw RMS-tenant activeren](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

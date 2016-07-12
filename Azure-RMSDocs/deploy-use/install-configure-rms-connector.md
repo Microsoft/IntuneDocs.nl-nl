@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: De Azure Rights Management-connector installeren en configureren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
+ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 *Van toepassing op: Azure Rights Management, Office 365*
 
-Gebruik de volgende informatie om de RMS-connector te installeren en configureren. Deze procedures hebben betrekking op stap 1 tot en met 4 uit [De Azure Rights Management-connector implementeren](deploy-rms-connector.md)..
+Gebruik de volgende informatie om de RMS-connector te installeren en configureren. Deze procedures hebben betrekking op stap 1 tot en met 4 uit [De Azure Rights Management-connector implementeren](deploy-rms-connector.md).
 
 Voordat u begint, moet u de [vereisten](deploy-rms-connector.md#prerequisites-for-the-rms-connector) voor deze implementatie bekijken en controleren.
 
@@ -41,7 +35,7 @@ Voordat u begint, moet u de [vereisten](deploy-rms-connector.md#prerequisites-fo
     > [!NOTE]
     > U installeert één RMS-connector (bestaande uit meerdere servers voor een hoge beschikbaarheid) per tenant (Office 365- of Azure AD-tenant). In tegenstelling tot Active Directory RMS hoeft u geen RMS-connector in elke forest te installeren.
 
-2.  Download de bronbestanden voor de RMS-connector via het [Microsoft Downloadcentrum](http://go.microsoft.com/fwlink/?LinkId=314106)..
+2.  Download de bronbestanden voor de RMS-connector via het [Microsoft Downloadcentrum](http://go.microsoft.com/fwlink/?LinkId=314106).
 
     Als u de RMS-connector wilt installeren, moet u het bestand RMSConnectorSetup.exe downloaden.
 
@@ -53,31 +47,33 @@ Voordat u begint, moet u de [vereisten](deploy-rms-connector.md#prerequisites-fo
 
 3.  Op de computer waarop u de RMS-connector wilt installeren, voert u het bestand **RMSConnectorSetup.exe** uit met beheerdersbevoegdheden.
 
-4.  Selecteer op de welkomstpagina voor de installatie van de Microsoft Rights Management-connector de optie **Install Microsoft Rights Management connector on the computer** (Microsoft Rights Management-connector op de computer installeren) en klik vervolgens op **Next** (Volgende)..
+4.  Selecteer op de welkomstpagina voor de installatie van de Microsoft Rights Management-connector de optie **Install Microsoft Rights Management connector on the computer** (Microsoft Rights Management-connector op de computer installeren) en klik vervolgens op **Next** (Volgende).
 
-5.  Lees en accepteer de licentievoorwaarden voor de RMS-connector en klik vervolgens op **Next** (Volgende)..
+5.  Lees en accepteer de licentievoorwaarden voor de RMS-connector en klik vervolgens op **Next** (Volgende).
 
 Geef een account en wachtwoord op om door te gaan met het configureren van de RMS-connector.
 
 ## Referenties invoeren
 Voordat u de RMS-connector kunt configureren, moet u referenties voor een account opgeven dat over voldoende bevoegdheden beschikt om de RMS-connector te configureren. U kunt bijvoorbeeld **admin@contoso.com** typen en het wachtwoord voor dit account opgeven.
 
-Er zijn enkele tekenbeperkingen voor dit wachtwoord. U kunt geen wachtwoord gebruiken dat een van de volgende tekens bevat: ampersand ( **&** ); punthaak links ( **[** ); punthaak rechts ( **]** ); recht aanhalingsteken ( **"** ); en apostrof ( **'** ). Als uw wachtwoord een van deze tekens bevat, mislukt de verificatie voor de RMS-connector en verschijnt het volgende foutbericht: Deze combinatie van gebruikersnaam en wachtwoord is onjuist. Dit foutbericht wordt zelfs weergegeven wanneer u zich wel voor andere scenario's met dit account en wachtwoord kunt aanmelden. Als dit van toepassing is op uw wachtwoord, gebruikt u een ander account met een wachtwoord dat geen van deze speciale tekens bevat. U kunt het wachtwoord ook opnieuw instellen, zodat het geen speciale tekens meer bevat.
+Er zijn enkele tekenbeperkingen voor dit wachtwoord. U kunt geen wachtwoord gebruiken dat een van de volgende tekens bevat: ampersand (**&**); punthaak links (**[**); punthaak rechts (**]**); recht aanhalingsteken (**"**); en apostrof (**'**). Als uw wachtwoord een van deze tekens bevat, mislukt de verificatie voor de RMS-connector en verschijnt het volgende foutbericht: Deze combinatie van gebruikersnaam en wachtwoord is onjuist. Dit foutbericht wordt zelfs weergegeven wanneer u zich wel voor andere scenario's met dit account en wachtwoord kunt aanmelden. Als dit van toepassing is op uw wachtwoord, gebruikt u een ander account met een wachtwoord dat geen van deze speciale tekens bevat. U kunt het wachtwoord ook opnieuw instellen, zodat het geen speciale tekens meer bevat.
 
 Als u daarnaast [besturingselementen voor onboarding](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) hebt geïmplementeerd, moet u ervoor zorgen dat u de inhoud kunt beveiligen met het account dat u opgeeft. Als u bijvoorbeeld alleen de groep IT-afdeling de mogelijkheid biedt om inhoud te beveiligen, moet het account dat u hier opgeeft, lid zijn van die groep. Als dit niet het geval is, verschijnt het volgende foutbericht: **The attempt to discover the location of the administration service and organization failed. Make sure Microsoft Rights Management service is enabled for your organization.** (Kan de locatie van de beheerservice en organisatie niet detecteren. Zorg ervoor dat de Microsoft Rights Management-service is ingeschakeld voor uw organisatie.)
 
 U kunt een account met een van de volgende bevoegdheden gebruiken:
 
--   **Office 365 tenant administrator** (Office 365-tenantbeheerder): een account dat een hoofdbeheerder voor uw Office 365-tenant is.
+-   **Globale beheerder voor uw tenant**: een account van een globale beheerder voor uw Office 365-tenant of Azure AD-tenant.
 
--   **Azure Rights Management global administrator** (Azure Rights Management-hoofdbeheerder): een account met beheerdersbevoegdheden voor de Azure RMS-tenant.
+-   **Globale beheerder Azure Rights Management**: een account in Azure Active Directory waaraan de globale beheerdersrol van Azure RMS is toegewezen.
 
--   **Microsoft RMS connector Administrator** (Microsoft RMS-connectorbeheerder): een account in Azure Active Directory waaraan rechten zijn toegewezen om de RMS-connector voor uw organisatie te installeren en te beheren.
+-   **Azure Rights Management-connectorbeheerder**: een account in Azure Active Directory waaraan rechten zijn toegewezen om de RMS-connector voor uw organisatie te installeren en te beheren.
 
     > [!NOTE]
-    > Als u het Administrator-account voor de Microsoft RMS-connector wilt gebruiken, moet u eerst het volgende doen om de rol van RMS-connectorbeheerder toe te wijzen:
+    > De globale beheerdersrol van Azure Rights Management en de Azure Rights Management-connectorrol worden aan accounts toegewezen met de Azure RMS-cmdlet [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx).
+    > 
+    > Als u de RMS-connector wilt uitvoeren met minimale bevoegdheden, maakt u een specifiek account voor dit doel en wijst u vervolgens als volgt de Azure RMS-connectorbeheerdersrol toe:
     >
-    > 1.  Download en installeer op dezelfde computer Windows PowerShell voor Rights Management. Zie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md) voor meer informatie.
+    > 1.  Download en installeer Windows PowerShell voor Rights Management. Zie voor meer informatie [Windows PowerShell voor Azure Rights Management installeren](install-powershell.md).
     >
     >     Start Windows PowerShell met de opdracht **Uitvoeren als beheerder** en maak verbinding met de Azure RMS-service via de opdracht [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx):
     >
@@ -97,9 +93,9 @@ U kunt een account met een van de volgende bevoegdheden gebruiken:
     >     ```
     >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
     >     ```
-    >     Typ bijvoorbeeld: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role " ConnectorAdministrator "**
+    >     Typ bijvoorbeeld: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role " ConnectorAdministrator "**.
     >
-    >     Hoewel voor deze opdrachten de rol ConnectorAdministrator wordt gebruikt, kunt u hier ook de rol GlobalAdministrator gebruiken.
+    >     Hoewel voor deze opdrachten de rol ConnectorAdministrator wordt toegewezen, kunt u hier ook de rol GlobalAdministrator gebruiken.
 
 Tijdens het installatieproces van de RMS-connector wordt alle vereiste software gevalideerd en geïnstalleerd, wordt zo nodig Internet Information Services (IIS) geïnstalleerd en wordt de connectorsoftware geïnstalleerd en geconfigureerd. Bovendien wordt Azure RMS voorbereid voor de configuratie door het volgende te maken:
 
@@ -131,7 +127,7 @@ Wanneer u deze servers autoriseert, moet u rekening houden met het volgende:
 
 -   U kunt meerdere servers toevoegen als één item door een Active Directory-beveiligingsgroep of -distributiegroep op te geven of door een serviceaccount op te geven dat wordt gebruikt door meerdere servers. Wanneer u deze configuratie gebruikt, deelt de groep servers dezelfde RMS-certificaten en worden de server allemaal beschouwd als eigenaar van de inhoud die ze hebben beveiligd. Als u de administratieve overhead wilt minimaliseren, kunt u het beste deze configuratie met één groep in plaats van individuele servers gebruiken om de Exchange-servers of een SharePoint-serverfarm van uw organisatie te autoriseren.
 
-Klik op de pagina **Servers allowed to utilize the connector** (Servers die de connector mogen gebruiken) op **Add** (Toevoegen)..
+Klik op de pagina **Servers allowed to utilize the connector** (Servers die de connector mogen gebruiken) op **Add** (Toevoegen).
 
 > [!NOTE]
 > Het autoriseren van servers is de equivalente configuratie in Azure RMS van de AD RMS-configuratie waarbij handmatig NTFS-rechten op ServerCertification.asmx voor de service- of serveraccounts worden toegepast en handmatig superrechten voor de Exchange-accounts worden verleend. Het toepassen van NTFS-rechten op ServerCertification.asmx is niet vereist op de connector.
@@ -161,7 +157,7 @@ Meer informatie over de verschillende serverrollen:
 
 -   Voor bestandsservers die gebruikmaken van de infrastructuur voor bestandsclassificatie, worden de gekoppelde services uitgevoerd als het lokale systeemaccount. U moet dus het computeraccount voor de bestandsservers (bijvoorbeeld SERVERNAME$) autoriseren, of een groep die de computeraccounts bevat.
 
-Zodra u klaar ben met het toevoegen van servers, klikt u op **Close** (Sluiten)..
+Zodra u klaar ben met het toevoegen van servers, klikt u op **Close** (Sluiten).
 
 Indien u dit nog niet hebt gedaan, moet u nu de taakverdeling configureren voor de servers waarop de RMS-connector is geïnstalleerd en overwegen of u HTTPS wilt gebruiken voor de verbindingen tussen deze servers en de servers die u zojuist hebt geautoriseerd.
 
@@ -173,7 +169,7 @@ De URL-servernaam voor de connector kan elke naam in een door u beheerde naamrui
 > [!IMPORTANT]
 > U kunt deze naam beter niet meer wijzigen nadat u Exchange- of SharePoint-servers hebt geconfigureerd voor het gebruik van de connector, omdat u anders alle IRM-configuraties van deze servers moet verwijderen en ze vervolgens opnieuw moet configureren.
 
-Nadat de naam in DNS is gemaakt en is geconfigureerd voor een IP-adres, configureert u de taakverdeling voor dit adres, waarmee verkeer naar de connectorservers wordt omgeleid. Hiervoor kunt u elke IP-load balancer gebruiken, waaronder de functie Network Load Balancing (NLB) in Windows Server. Raadpleeg de [Load Balancing Deployment Guide](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx) (Implementatiegids voor netwerktaakverdeling) voor meer informatie..
+Nadat de naam in DNS is gemaakt en is geconfigureerd voor een IP-adres, configureert u de taakverdeling voor dit adres, waarmee verkeer naar de connectorservers wordt omgeleid. Hiervoor kunt u elke IP-load balancer gebruiken, waaronder de functie Network Load Balancing (NLB) in Windows Server. Raadpleeg de [Load Balancing Deployment Guide](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx) (Implementatiegids voor netwerktaakverdeling) voor meer informatie.
 
 Gebruik de volgende instellingen om het NLB-cluster te configureren:
 
@@ -238,12 +234,13 @@ Als u het beheerprogramma voor RMS-connector wilt installeren, voert u de volgen
 
 -   Voor een 64 bitscomputer: RMSConnectorSetup.exe
 
-Als u deze bestanden nog niet hebt gedownload, kunt u dit doen via het [Microsoft Downloadcentrum](http://go.microsoft.com/fwlink/?LinkId=314106)..
+Als u deze bestanden nog niet hebt gedownload, kunt u dit doen via het [Microsoft Downloadcentrum](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 
 ## Volgende stappen
-Nu de RMS-connector is geïnstalleerd en geconfigureerd, kunt u de on-premises servers configureren voor het gebruik van de connector. Ga naar [Servers configureren voor de Azure Rights Management-connector](configure-servers-rms-connector.md)..
+Nu de RMS-connector is geïnstalleerd en geconfigureerd, kunt u de on-premises servers configureren voor het gebruik van de connector. Ga naar [Servers configureren voor de Azure Rights Management-connector](configure-servers-rms-connector.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

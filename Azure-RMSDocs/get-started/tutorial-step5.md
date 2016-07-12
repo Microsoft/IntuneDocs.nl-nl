@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Zelfstudie voor snel starten met Azure RMS - Stap 5 | AZURE RMS"
-description: "De laatste stap van een zelfstudie voor het snel uitproberen van Microsoft Azure Rights Management voor uw organisatie in slechts 5 stappen die u in minder dan 15 minuten kunt uitvoeren."
-keywords:
+title: Zelfstudie voor snel aan de slag met Azure RMS, stap 5 | Azure RMS
+description: De laatste stap van een zelfstudie voor het snel uitproberen van Microsoft Azure Rights Management voor uw organisatie, met slechts 5 stappen die u in minder dan 15 minuten kunt uitvoeren.
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+
 
 ---
 
@@ -36,9 +34,9 @@ Ga naar:
 > [!div class="op_single_selector"]
 - [Inleiding](quick-start-tutorial.md)
 - [Stap 1: Azure RMS activeren](tutorial-step1.md)
-- [Stap 2: De RMS-app voor delen installeren](tutorial-step2.md)
-- [Stap 3: Het vertrouwelijke document via e-mail verzenden](tutorial-step3.md)
-- [Stap 4: De ontvanger leest het document](tutorial-step4.md)
+- [Stap 2: installeer de RMS-app voor delen](tutorial-step2.md)
+- [Stap 3: e-mail het vertrouwelijke document](tutorial-step3.md)
+- [Stap 4: de ontvanger leest het document](tutorial-step4.md)
 - [Stap 5: Uw document traceren](tutorial-step5.md)
 
 ![Zelfstudie voor snel aan de slag met Azure RMS - stap 5](../media/AzRMS_QuickStartSteps5.PNG)
@@ -56,11 +54,11 @@ Deze stap is optioneel, maar de meeste mensen willen graag weten of de bijlage d
 
 ### Uw beveiligde document bijhouden
 
-1.  Klik via Outlook op het tabblad **Start** in de groep **RMS** op **Gebruik bijhouden**.
+1.  Klik in Outlook op het tabblad **Start**. Klik daarna in de groep **RMS** op **Gebruik bijhouden**.
 
 2.  Als u de pagina **Beschermen en delen onder uw voorwaarden** ziet, klikt u op **Aanmelden** en voert u uw gebruikersnaam en wachtwoord opnieuw in.
 
-3.  Op de pagina **Gedeelde documenten** ziet u het document dat u hebt gekoppeld aan het e-mailadres, **Confidential.docx**. Op dit moment is dit het enige bestand dat wordt weergegeven, maar naarmate u meer beveiligde documenten gaat delen, zal de lijst groeien.
+3.  Op de pagina **Gedeelde documenten** ziet u het document dat u hebt gekoppeld aan de e-mail, **Confidential.docx**. Op dit moment is dit het enige bestand dat wordt weergegeven, maar naarmate u meer beveiligde documenten gaat delen, zal de lijst groeien.
 
     Op deze pagina ziet u wanneer u het document hebt gedeeld (wanneer u het e-mailbericht met de beveiligde bijlage hebt verzonden), de datum van de laatste activiteit en de naam van de ontvanger aan wie u het e-mailbericht hebt verzonden. Klik op de naam van het document om meer informatie weer te geven.
 
@@ -83,7 +81,8 @@ Als u er klaar voor bent om Azure RMS te implementeren, gebruikt u het [Azure Ri
 
 Voor een lijst met specifieke scenario's en bijbehorende configuratiestappen en documentatie voor eindgebruikers raadpleegt u de [Snelle implementatiehandleiding voor Azure Rights Management](../get-started/rapid-deployment-guide.md).
 
->[!div class="step-by-step"] [Intro](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[Inleiding](quick-start-tutorial.md)
 [Stap 1](tutorial-step1.md)
 [Stap 2](tutorial-step2.md)
 [Stap 3](tutorial-step3.md)
@@ -91,6 +90,7 @@ Voor een lijst met specifieke scenario's en bijbehorende configuratiestappen en 
 *Stap 5*
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

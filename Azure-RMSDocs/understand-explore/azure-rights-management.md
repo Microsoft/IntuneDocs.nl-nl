@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Overzicht van Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
+ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+
 
 ---
 
@@ -35,16 +29,17 @@ Rights Management maakt gebruik van versleutelings-, identiteits- en autorisatie
 
 U kunt een bestand bijvoorbeeld zo configureren dat het alleen kan worden geopend door mensen in uw organisatie, bewerking van het bestand toestaan of verbieden, de toegang beperken tot alleen-lezen of voorkomen dat het bestand wordt afgedrukt. Ook e-mailberichten kunt u op deze manier configureren. Bovendien kunt u berichten zo instellen dat het niet mogelijk is om ze door te sturen of gebruik te maken van de optie Allen beantwoorden. Deze beveiligingstaken kunnen worden vereenvoudigd en gestroomlijnd via gestandaardiseerde beleidssjablonen.
 
-Kent u Azure Rights Management wellicht onder een andere naam? Zie [onze lijst met alternatieve namen voor de service](azure-rms-aka.md)..
+Kent u Azure Rights Management wellicht onder een andere naam? Zie [onze lijst met alternatieve namen voor de service](azure-rms-aka.md).
 
 # Volgende stappen
 Zie [Wat is Azure Rights Management?](what-is-azure-rms.md) voor een beter begrip en enkele voorbeelden.
 
-Als u er klaar voor bent om Azure RMS voor uw organisatie te installeren, kunt u het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md) gebruiken..
+Als u er klaar voor bent om Azure RMS voor uw organisatie te installeren, kunt u het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md) gebruiken.
 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

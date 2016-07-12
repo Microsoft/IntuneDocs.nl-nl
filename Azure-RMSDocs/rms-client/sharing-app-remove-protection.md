@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Beveiliging van een bestand verwijderen met behulp van de Rights Management-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 78ceb74a3dd8492ac5c754eea179525cae819fd0
+
 
 ---
 
@@ -42,7 +36,7 @@ Om de beveiliging van een bestand te verwijderen (dat wil zeggen, de beveiliging
 
     Mogelijk moet u uw referenties invoeren.
 
-Opmerking: als u deze opties niet ziet, is het waarschijnlijk dat de RMS-toepassing voor delen niet op uw computer is geïnstalleerd, de meest recente versie niet is geïnstalleerd of de computer opnieuw moet worden opgestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen..
+Opmerking: als u deze opties niet ziet, is het waarschijnlijk dat de RMS-toepassing voor delen niet op uw computer is geïnstalleerd, de meest recente versie niet is geïnstalleerd of de computer opnieuw moet worden opgestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen.
 
 Het oorspronkelijke beveiligde bestand wordt verwijderd (bijvoorbeeld Sample.ptxt) en vervangen door een bestand met dezelfde naam, maar met de niet-beveiligde bestandsnaamextensie (bijvoorbeeld Sample.txt).
 
@@ -57,6 +51,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

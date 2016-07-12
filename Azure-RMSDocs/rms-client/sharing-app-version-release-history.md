@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Rights Management-toepassing voor delen&colon; versiegeschiedenis van release | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -33,8 +26,21 @@ Het Rights Management-team werkt de Rights Management-toepassing voor delen rege
 
 Versies vóór 1 januari 2015 worden niet weergegeven.
 
-> [!NOTE]
-> Hebt u feedback of een vraag over de RMS-toepassing voor delen? Stuur dan een e-mail naar [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> [!NOTE]Hebt u feedback of een vraag over de RMS-toepassing voor delen? Stuur dan een e-mail naar [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+
+## Versie 1.0.2191.0
+**Uitgebracht**: 16-06-2016
+
+**Oplossingen**:
+
+- Op de site voor documenttracking wordt nu het juiste aantal weergaven voor elk bijgehouden document weergegeven.
+
+- Sjablonen voor alle landinstellingen worden nu weergegeven als beschikbaar voor gebruikers.
+
+- Wanneer u Beveiligd delen voor een PowerPoint-bestand gebruikt, worden wijzigingen in de lokale versie van het bestand nu juist opgeslagen.
+
+- Daarnaast is een aantal kleine bugs opgelost en zijn er verbeteringen aangebracht voor foutberichten.
+
 
 ## Versie 1.0.2004.0
 **Uitgebracht**: 11-12-2015
@@ -84,7 +90,7 @@ Versies vóór 1 januari 2015 worden niet weergegeven.
 
 **Nieuwe functies**:
 
--   Ondersteuning voor het bijhouden en intrekken van documenten. Zie [Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](sharing-app-track-revoke.md) voor meer informatie..
+-   Ondersteuning voor het bijhouden en intrekken van documenten. Zie [Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](sharing-app-track-revoke.md) voor meer informatie.
 
 -   Sjabloonondersteuning wanneer u kiest voor **Beveiligd delen**:
 
@@ -113,6 +119,7 @@ Versies vóór 1 januari 2015 worden niet weergegeven.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

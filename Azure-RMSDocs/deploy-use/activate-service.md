@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Azure Rights Management activeren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
+ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+
 
 ---
 
@@ -58,7 +52,8 @@ U kunt ook Windows PowerShell gebruiken om [!INCLUDE[aad_rightsmanagement_2](../
 ## Besturingselementen voor onboarding configureren voor een gefaseerde implementatie
 Als u niet wilt dat alle gebruikers direct bestanden kunnen beveiligen met Azure RMS, kunt u voor gebruikers besturingselementen voor onboarding configureren. Dit doet u met behulp van de Windows PowerShell-opdracht [Set AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx). U kunt deze opdracht uitvoeren voordat u Azure RMS activeert, maar ook daarna.
 
-> [!IMPORTANT] Voor het gebruik van deze opdracht moet u ten minste over versie **2.1.0.0** van de [Azure RMS-module voor Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=257721) beschikken.
+> [!IMPORTANT]
+> Voor het gebruik van deze opdracht moet u ten minste over versie **2.1.0.0** van de [Azure RMS-module voor Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=257721) beschikken.
 >
 > Om te controleren welke versie er is geïnstalleerd, voert u **(Get-Module aadrm –ListAvailable).Version** uit.
 
@@ -86,6 +81,7 @@ Office-services, zoals Exchange Online en SharePoint Online, vereisen aanvullend
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

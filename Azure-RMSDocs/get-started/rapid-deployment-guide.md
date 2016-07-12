@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Snelle implementatiehandleiding voor Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ De scenario's die worden weergeven, zijn voorbeelden van de populairste scenario
 
 Voordat u deze oplossingen uitrolt, wilt de eindgebruikers mogelijk eerst een algemene aankondiging sturen om ze te laten weten dat er enkele wijzigingen zullen worden doorgevoerd met betrekking tot het beveiligen van bedrijfsgegevens en dat ze zelf mogelijk ook bepaalde zaken moeten wijzigen. Na de volgende tabel vindt u een voorbeeld van een dergelijke mededeling.
 
-> [!NOTE] Als u vragen of opmerkingen over deze handleiding hebt, kunt u het feedbackmechanismse op deze pagina gebruiken of een e-mail sturen naar [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE]
+> Als u vragen of opmerkingen over deze handleiding hebt, kunt u het feedbackmechanisme op deze pagina gebruiken of een e-mail sturen naar [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Scenario's voor Azure RMS
 Kies de scenario's die het meest overeenkomen met uw bedrijfsdoelen en pas ze indien nodig aan om Azure RMS sneller te implementeren en specifieke bedrijfsproblemen aan te pakken.
@@ -151,6 +146,7 @@ De oplossingen die we implementeren, dragen bij aan de beveiliging van onze waar
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Migreren van AD RMS naar Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+
 
 ---
 
@@ -101,7 +95,7 @@ Beperkingen:
 
 -   Als u samenwerkt met externe partners (bijvoorbeeld via vertrouwde gebruikersdomeinen of federatie), moeten zij ook migreren naar Azure RMS op hetzelfde moment als u dat doet of anders zo spoedig mogelijk daarna. Om toegang te blijven houden tot inhoud die uw organisatie voorheen beveiligde met AD RMS, moeten zij clientconfiguratiewijzigingen aanbrengen die vergelijkbaar zijn met de uwe en die worden vermeld in dit document.
 
-    Vanwege de mogelijke configuratieverschillen bij uw partners vallen de exacte instructies voor deze herconfiguratie buiten het bereik van dit document. [Neem contact op met Microsoft Ondersteuning](../get-started/information-support#support-options-and-community-resources) als u hulp nodig hebt.
+    Vanwege de mogelijke configuratieverschillen bij uw partners vallen de exacte instructies voor deze herconfiguratie buiten het bereik van dit document. [Neem contact op met Microsoft Ondersteuning](../get-started/information-support.md#support-options-and-community-resources) als u hulp nodig hebt.
 
 ## Overzicht van de stappen voor het migreren van AD RMS naar Azure RMS
 
@@ -185,6 +179,7 @@ Voor het starten van de migratie gaat u naar [Fase 1 - configuratie aan serverzi
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

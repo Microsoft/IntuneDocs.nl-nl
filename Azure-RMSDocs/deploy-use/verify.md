@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Azure Rights Management controleren| Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
+ms.openlocfilehash: afa1fb35110918b9b97f91534616e1933e13b149
+
 
 ---
 
@@ -36,16 +30,17 @@ U kunt dit testen met u de informatie in [Gebruikers helpen bij het beveiligen v
 Als de test mislukt, controleert u de configuratiestappen in het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md), en gebruikt u de [RMS Analyzer tool](http://www.microsoft.com/en-us/download/details.aspx?id=46437) om potentiële problemen te identificeren en op te lossen. U kunt dit hulpprogramma ook periodiek uitvoeren als een algemene statuscontrole.
 
 > [!TIP]
-> Als u meer hulp nodig hebt, raadpleegt u de sectie [Ondersteuningsopties en bronnen van de community](../get-started/information-support.md##support-options-and-community-resources) in het artikel [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md).
+> Als u meer hulp nodig hebt, raadpleegt u de sectie [Ondersteuningsopties en resources van de community](../get-started/information-support.md#support-options-and-community-resources) in het artikel [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md).
 
 ## Volgende stappen
 
-U kunt controleren hoe uw organisatie gebruikmaakt van informatiebeveiliging met behulp van logboekregistratie. Zie [Azure Rights Management-gebruik analyseren en vastleggen in een logboek](log-analyze-usage.md) voor meer informatie.
+U kunt controleren hoe uw organisatie gebruikmaakt van informatiebeveiliging met behulp van logboekregistratie. Zie [Logging and analyzing Azure Rights Management usage](log-analyze-usage.md) (Het gebruik van Azure Rights Management registreren in een logboek en analyseren) voor meer informatie.
 
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

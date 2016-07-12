@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Wat is Azure Rights Management? | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
+ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+
 
 ---
 
@@ -43,7 +37,7 @@ Bovendien kunnen gemachtigde personen en services (zoals zoeken en indexeren) de
 In de volgende afbeelding ziet u hoe Azure RMS werkt als een oplossing voor Rights Management voor Office 365, evenals voor lokale servers en services. U ziet ook dat deze ondersteuning biedt voor gangbare eindgebruikersapparaten met Windows, Mac OS iOS, Android en Windows Phone.
 
 > [!NOTE]
-U kunt Azure RMS gebruiken met andere cloudabonnementen, waaronder Office 365, Enterprise Mobility Suite en Azure RMS Premium. Zie [Cloudabonnementen die Azure RMS ondersteunen](../get-started/requirements-subscriptions.md) voor meer informatie.
+U kunt Azure RMS gebruiken met andere cloudabonnementen, waaronder Office 365, Enterprise Mobility Suite en Azure RMS Premium. Zie [Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Cloudabonnementen die Azure RMS ondersteunen)voor meer informatie.
 
 ![De werking van Azure RMS](../media/AzRMS_elements.png)
 
@@ -55,7 +49,7 @@ Voor meer informatie over Azure RMS:
 
 -   [Azure RMS in actie: wat beheerders en gebruikers zien](what-admins-users-see.md)
 
--   [Hoe werkt Azure RMS? Onder de motorkap](how-does-it-work.md)
+-   [Hoe werkt Azure RMS? Onderhuids](how-does-it-work.md)
 
 
 
@@ -67,6 +61,7 @@ Als u klaar bent om Azure RMS in uw organisatie te implementeren, gebruikt u het
 > Gebruik de resources en koppelingen in [Informatie en ondersteuning voor Azure Rights Management](../get-started/information-support.md) voor extra informatie en hulp.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

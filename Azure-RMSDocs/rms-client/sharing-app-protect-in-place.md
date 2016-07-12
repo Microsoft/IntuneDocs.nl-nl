@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Een bestand beveiligen op een apparaat (direct beveiligen) met behulp van de Rights Management-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
+
 
 ---
 
@@ -41,7 +35,7 @@ Wanneer u een bestand in-place beveiligt, dan vervangt deze het oorspronkelijke,
     ![Menuoptie Direct beveiligen](../media/ADRMS_MSRMSApp_SP_CompanyDefined.png)
 
     > [!NOTE]
-    > Als u de optie **Beschermen met RMS** niet ziet, is de RMS-toepassing voor delen waarschijnlijk niet geïnstalleerd op uw computer of moet uw computer opnieuw worden opgestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de RMS-toepassing voor delen..
+    > Als u de optie **Beschermen met RMS** niet ziet, is de RMS-toepassing voor delen waarschijnlijk niet geïnstalleerd op uw computer of moet uw computer opnieuw worden opgestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de RMS-toepassing voor delen.
 
 2.  Voer een van de volgende handelingen uit:
 
@@ -70,6 +64,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

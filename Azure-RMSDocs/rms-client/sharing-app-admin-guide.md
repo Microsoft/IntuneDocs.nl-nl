@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Beheerdershandleiding voor de Rights Management-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+
 
 ---
 
@@ -79,7 +72,7 @@ Gebruik de volgende procedures om de opdrachten op te sporen die zijn vereist vo
 > [!NOTE]
 > Als uw organisatie AD RMS gebruikt, kunnen uw gebruikers in deze scenario's beveiligde inhoud ontvangen van andere organisaties die Azure RMS gebruiken. Uw gebruikers kunnen echter geen beveiligde inhoud verzenden naar gebruikers in organisaties die Azure RMS gebruiken. Als uw organisatie echter Azure RMS uitvoert, dan kunnen gebruikers beveiligde inhoud van andere organisaties verzenden en ontvangen.
 
-De computer moet eerst opnieuw starten om de installatie voor elke procedure te voltooien. U kunt het automatisch opnieuw opstarten initiëren met een opdracht als **shutdown /i**..
+De computer moet eerst opnieuw starten om de installatie voor elke procedure te voltooien. U kunt het automatisch opnieuw opstarten initiëren met een opdracht als **shutdown /i**.
 
 ### De RMS-toepassing voor delen voor Office 2016 of Office 2013 en Azure RMS of Active Directory RMS implementeren
 
@@ -264,7 +257,7 @@ Met de logboekbestanden van de installatie kunt u controleren of deze is geïnst
 
     -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM]
 
-        DefaultUser = "&lt;default_user&gt;"
+        DefaultUser = "&lt;standaard_gebruiker&gt;"
 
 ### Alleen de installatie van de RMS-toepassing voor delen en de Office-invoegtoepassing verifiëren
 
@@ -324,7 +317,7 @@ Standaard krijgen gebruikers een melding als er een nieuwere versie van de RMS-t
 
 1.  Navigeer naar **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** en als deze niet al aanwezig is, maakt u een nieuwe sleutel met de naam **RmsSharingApp**.
 
-2.  Selecteer **RmsSharingApp**, maak een nieuwe DWORD-waarde van **AllowUpdatePrompt**, en stel de waarde in op **0**.
+2.  Selecteer **RmsSharingApp**, maak een nieuwe DWORD-waarde van **AllowUpdatePrompt** en stel de waarde in op **0**.
 
 Omdat de RMS-toepassing voor delen niet wordt ondersteund door WSUS, kunt u de volgende techniek gebruiken om nieuwe versies van de RMS-toepassing voor delen te testen voordat u deze implementeert bij alle gebruikers:
 
@@ -335,9 +328,9 @@ Omdat de RMS-toepassing voor delen niet wordt ondersteund door WSUS, kunt u de v
 3.  Wanneer het testen is voltooid en eventuele problemen zijn opgelost, implementeert u de nieuwste versie bij alle gebruikers met de automatische implementatie-instructies in deze handleiding.
 
 ## Alleen Azure RMS: documenttracking configureren
-Als u beschikt over een [abonnement dat ondersteuning biedt voor documenttracking](https://technet.microsoft.com/en-us/dn858608), wordt de site voor documenttracking standaard ingeschakeld voor alle gebruikers in uw organisatie.  Documenttracking vermeldt gegevens zoals e-mailadressen van de personen die hebben geprobeerd om toegang te krijgen tot beveiligde documenten die door gebruikers worden gedeeld, wanneer zij hebben geprobeerd om deze te openen en de locatie van deze personen. Als het weergeven van deze informatie niet is toegestaan in uw organisatie vanwege privacyregelgeving, kunt u de toegang tot de site voor documenttracking uitschakelen met de cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). U kunt de toegang tot de site op elk gewenst moment weer inschakelen met de cmdlet [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) en u kunt controleren of de toegang momenteel is in- of uitgeschakeld met de cmdlet [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
+Als u beschikt over een [abonnement dat ondersteuning biedt voor documenttracking](https://technet.microsoft.com/dn858608), wordt de site voor documenttracking standaard ingeschakeld voor alle gebruikers in uw organisatie.  Documenttracking vermeldt gegevens zoals e-mailadressen van de personen die hebben geprobeerd om toegang te krijgen tot beveiligde documenten die door gebruikers worden gedeeld, wanneer zij hebben geprobeerd om deze te openen en de locatie van deze personen. Als het weergeven van deze informatie niet is toegestaan in uw organisatie vanwege privacyregelgeving, kunt u de toegang tot de site voor documenttracking uitschakelen met de cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). U kunt de toegang tot de site op elk gewenst moment weer inschakelen met de cmdlet [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) en u kunt controleren of de toegang momenteel is in- of uitgeschakeld met de cmdlet [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
 
-Als u deze cmdlets wilt uitvoeren, moet u ten minste over versie **2.3.0.0** van de Azure RMS-module voor Windows PowerShell beschikken.  Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor de installatie-instructies.
+Als u deze cmdlets wilt uitvoeren, moet u ten minste over versie **2.3.0.0** van de Azure RMS-module voor Windows PowerShell beschikken.  Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor installatie-instructies.
 
 > [!TIP]
 > Als u de module eerder hebt gedownload en geïnstalleerd, controleert u het versienummer door de volgende opdracht uit te voeren: `(Get-Module aadrm –ListAvailable).Version`
@@ -372,6 +365,7 @@ Zie [Technisch overzicht voor de Rights Management-toepassing voor delen](sharin
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
