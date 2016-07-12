@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\information-protection\infoprotect-tutorial-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e2a0ac3fb5653d5260bbd2b3bf572386596b94e0/Azure-RMSDocs/information-protection/infoprotect-tutorial-step4.md) | HandedOffSuccess | [Details](#97d49fc476f2a7a0d9303fd27441d5fe7338fb49159)
+ [Azure-RMSDocs\information-protection\infoprotect-tutorial-step2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e96aad3494ce8a87c492df2e77135a350e9ffce5/Azure-RMSDocs/information-protection/infoprotect-tutorial-step2.md) | HandedOffSuccess | [Details](#224b7ee1570ba0aa71f587aee84336e4ae8f650d157)
 
 ## Item Details
-##### <a name='97d49fc476f2a7a0d9303fd27441d5fe7338fb49159'></a> Source: [Azure-RMSDocs\information-protection\infoprotect-tutorial-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e2a0ac3fb5653d5260bbd2b3bf572386596b94e0/Azure-RMSDocs/information-protection/infoprotect-tutorial-step4.md)
+##### <a name='224b7ee1570ba0aa71f587aee84336e4ae8f650d157'></a> Source: [Azure-RMSDocs\information-protection\infoprotect-tutorial-step2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e96aad3494ce8a87c492df2e77135a350e9ffce5/Azure-RMSDocs/information-protection/infoprotect-tutorial-step2.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [infoprotect-tutorial-step4.e05b067bb63bbb103b67887740ea0bb6b9044c40.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/7bbd36b06a3806f4717033be5539dfa118a323ed/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/infoprotect-tutorial-step4.e05b067bb63bbb103b67887740ea0bb6b9044c40.nl-nl.xlf)
-* Handoff Datetime: 2016-07-12 17:26:22
+* Handoff File: [infoprotect-tutorial-step2.f341a35dbadb0646385d9254b7f3d8f30823b35b.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/bc0d5612cd46058ee72b46efee79b74513ed2cbe/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/infoprotect-tutorial-step2.f341a35dbadb0646385d9254b7f3d8f30823b35b.nl-nl.xlf)
+* Handoff Datetime: 2016-07-12 21:26:33
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
