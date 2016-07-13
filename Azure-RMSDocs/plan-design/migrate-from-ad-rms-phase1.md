@@ -206,6 +206,6 @@ Ga naar [fase 2 - configuratie aan clientzijde](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

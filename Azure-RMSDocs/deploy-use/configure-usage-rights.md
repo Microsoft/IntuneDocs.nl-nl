@@ -276,7 +276,8 @@ Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling be
  
 - Als ze de optie **Niet doorsturen** heeft toegepast, kunnen de ontvangers de informatie niet delen met iemand anders van de marketingafdeling door het e-mailbericht naar een andere locatie verplaatsen. In dit scenario kunnen alleen de oorspronkelijke ontvangers (en de eigenaar van de e-mail) de informatie in de e-mail weergeven.
 
-> [!NOTE] Gebruik **Niet doorsturen** wanneer het belangrijk is dat alleen de ontvangers die de afzender kiest de informatie in het e-mailbericht kunnen zien. Gebruik een sjabloon voor e-mailberichten om de rechten te beperken tot een groep personen die de beheerder van tevoren heeft opgegeven, onafhankelijk van de ontvangers die de afzender heeft gekozen.
+> [!NOTE] 
+> Gebruik **Niet doorsturen** wanneer het belangrijk is dat alleen de ontvangers die de afzender kiest de informatie in het e-mailbericht kunnen zien. Gebruik een sjabloon voor e-mailberichten om de rechten te beperken tot een groep personen die de beheerder van tevoren heeft opgegeven, onafhankelijk van de ontvangers die de afzender heeft gekozen.
 
 
 
@@ -287,6 +288,6 @@ Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling be
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

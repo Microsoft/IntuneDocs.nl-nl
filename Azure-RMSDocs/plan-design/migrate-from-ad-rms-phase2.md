@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd:
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 3: configuratie van ondersteuningsservices](migrate-from-ad-rms-phase3.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

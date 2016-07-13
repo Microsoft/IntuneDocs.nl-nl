@@ -214,6 +214,6 @@ Nadat u deze procedures hebt voltooid, leest u het gedeelte **Volgende stappen**
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 4: taken na migratie](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

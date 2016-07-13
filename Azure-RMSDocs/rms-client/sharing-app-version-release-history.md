@@ -26,6 +26,7 @@ Het Rights Management-team werkt de Rights Management-toepassing voor delen rege
 
 Versies vóór 1 januari 2015 worden niet weergegeven.
 
+> [!NOTE]
 > [!NOTE]Hebt u feedback of een vraag over de RMS-toepassing voor delen? Stuur dan een e-mail naar [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
 
 ## Versie 1.0.2191.0
@@ -120,6 +121,6 @@ Versies vóór 1 januari 2015 worden niet weergegeven.
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -42,6 +42,6 @@ Zie de [TechNet-documentatie over de RMS-client 2.1](https://TechNet.Microsoft.C
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

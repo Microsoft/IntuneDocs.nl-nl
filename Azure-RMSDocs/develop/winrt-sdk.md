@@ -85,6 +85,6 @@ U bent er nu klaar voor om uw eigen nieuwe Windows Store-apps te maken.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
