@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Configuratie van de bestands-API| Azure RMS
 description: Het gedrag van de bestands-API's kan worden geconfigureerd via instellingen in het register.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 46b1fe5a0c4f138db65072d14489a5d588015df7
+
 
 ---
 
@@ -67,14 +63,16 @@ Stel de waarde **Versleuteling** in de sleutel in om het beveiligingsgedrag op t
 
 - **Uit**: versleuteling is uitgeschakeld.
 
-> [!Note] Deze instelling heeft geen gevolgen voor ontsleuteling. Een versleuteld bestand, ongeacht of het is versleuteld met systeemeigen beveiliging of Pfile-beveiliging, kan worden ontsleuteld mits de gebruiker beschikt over uitpakrechten (**EXTRACT**).
+> [!Note] 
+> Deze instelling heeft geen gevolgen voor ontsleuteling. Een versleuteld bestand, ongeacht of het is versleuteld met systeemeigen beveiliging of Pfile-beveiliging, kan worden ontsleuteld mits de gebruiker beschikt over uitpakrechten (**EXTRACT**).
 
 - **Systeemeigen**: systeemeigen versleuteling wordt gebruikt. Bij Office-bestanden heeft het versleutelde bestand dezelfde extensie als het oorspronkelijke bestand. Een bestand met de bestandsnaamextensie .docx wordt bijvoorbeeld versleuteld als een bestand met de extensie .docx. Voor andere bestanden waarop systeemeigen beveiliging kan worden toegepast, wordt het bestand versleuteld als een bestand met de extensie in de indeling p*zzz*, waarbij *zzz* de oorspronkelijke bestandsextensie is. Txt-bestanden worden bijvoorbeeld versleuteld als een bestand met de extensie .ptxt. Hieronder vindt u een lijst met bestandsextensies waarop systeemeigen beveiliging kan worden toegepast.
 
 - **Pfile**: PFile-versleuteling wordt gebruikt. Aan het versleutelde bestand wordt .pfile toegevoegd aan de originele extensie. Na versleuteling heeft een txt-bestand bijvoorbeeld de extensie .txt.pfile.
 
 
-> [!Note] Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op &quot;Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
+> [!Note] 
+> Deze instelling heeft geen invloed op de Office-bestandsindelingen. Als de waarde van `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` bijvoorbeeld is ingesteld op &quot;Pfile, worden docx-bestanden nog steeds versleuteld met systeemeigen beveiliging en heeft het versleutelde bestand nog steeds de bestandsextensie .docx.
 
 Als u een andere waarde of geen waarde instelt, wordt het standaardgedrag toegepast.
 
@@ -157,6 +155,7 @@ HKEY_LOCAL_MACHINE
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
