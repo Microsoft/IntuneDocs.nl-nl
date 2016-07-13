@@ -43,6 +43,7 @@ Als u Azure RMS wilt gebruiken in combinatie met lokale servers, worden de volge
 
 Zie [Lokale servers die Azure RMS ondersteunen](requirements-servers.md) voor meer informatie over de extra Azure RMS-vereisten voor dit scenario.
 
+> [!IMPORTANT]
 > [!IMPORTANT] Het volgende implementatiescenario wordt niet ondersteund:
 > 
 > -   AD RMS en Azure RMS naast elkaar uitvoeren binnen dezelfde organisatie, behalve tijdens de migratie, zoals beschreven in [Migreren van AD RMS naar Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
@@ -54,6 +55,6 @@ Zie [Lokale servers die Azure RMS ondersteunen](requirements-servers.md) voor me
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
