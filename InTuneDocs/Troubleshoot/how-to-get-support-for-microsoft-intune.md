@@ -34,6 +34,7 @@ Zie voor zelfhulp met Intune [Algemene tips voor probleemoplossing voor Microsof
 
     -   Voor alle andere problemen met Intune selecteert u de optie **Mobile Device Management**. Onder deze optie vallen ook Office 365 MDM en System Center Configuration Manager met Intune.
 
+    > [!NOTE]
     > [!NOTE] Mogelijk moet u onder aan de lijst op **meer** klikken om alle categorieën weer te geven.
 
 3.  Selecteer op de pagina voor het **vaststellen van het probleem** de **Functie** en het **Symptoom** waarvoor u ondersteuning nodig hebt. U wordt gevraagd om een **samenvatting van het probleem** en **details van het probleem** op te geven.
@@ -51,7 +52,8 @@ Zie [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](conta
 Als u uw aanvragen wilt volgen, gaat u naar het [Office 365-beheercentrum](https://portal.office.com/admin/default.aspx). Klik onder aan de lijst **Een serviceaanvraag maken** op **Alle ondersteuningstickets zien**. Standaard worden al uw serviceaanvragen weergegeven die nog openstaan. Als u wilt wijzigen welke serviceaanvragen worden weergegeven, bijvoorbeeld alleen de gesloten aanvragen, klikt u op het filterpictogram in de bovenste navigatiebalk en selecteert u de gewenste weergave.
 
 > [!NOTE]
-> **Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection, neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfondersteuning en de optie om online of telefonisch een ondersteuningsaanvraag te openen.
+> [!NOTE]
+**Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection, neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfondersteuning en de optie om online of telefonisch een ondersteuningsaanvraag te openen.
 >
 > Technische ondersteuning voor System Center Configuration Manager of System Center Endpoint Protection moet worden betaald of wordt bijgeschreven op uw bestaande licentie- of Premier Support-overeenkomsten.
 
@@ -138,6 +140,6 @@ Onze rol bestaat uit het volgende:
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
