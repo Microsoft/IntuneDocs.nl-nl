@@ -48,6 +48,6 @@ Wanneer het apparaat met het betreffende IMEI-nummer wordt geregistreerd, gewoon
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
