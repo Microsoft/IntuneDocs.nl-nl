@@ -2081,7 +2081,7 @@
 * Archive File: [scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 00:05:37
 * Handback File: [scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.nl-nl.xlf)
-* Handback Datetime: 2016-07-13 21:28:10
+* Handback Datetime: 2016-07-13 21:54:23
 * Handback Error: [handback_transform_failed](#d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d114handback_transform_failed)
 * Bilingual File: [scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.nl-nl.xlf)
 * Bilingual Datetime: 2016-06-22 12:25:06
@@ -2096,7 +2096,7 @@
 * Archive File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 00:05:37
 * Handback File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.nl-nl.xlf)
-* Handback Datetime: 2016-07-13 21:28:10
+* Handback Datetime: 2016-07-13 21:54:23
 * Handback Error: [handback_transform_failed](#6a6f9d8c0a98752413a99d30926f2b5bc8af193d115handback_transform_failed)
 * Bilingual File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.nl-nl.xlf)
 * Bilingual Datetime: 2016-06-22 12:25:06
