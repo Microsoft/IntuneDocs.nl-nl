@@ -9331,14 +9331,14 @@
 
 ##### <a name='7541052b56e8a04bca42cc6721a4f92814f8db96605'></a> Source: [InTuneDocs\includes\longhornshort.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/longhornshort.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\longhornshort.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/31b785db1f88b29c983697583c234fdeed64c4c5/InTuneDocs/includes/longhornshort.md)
+* Target File: [InTuneDocs\includes\longhornshort.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/c3c609695a75efd87f7d01c38ed42492444d71c6/InTuneDocs/includes/longhornshort.md)
 * Handoff File: [longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/6990cdda7b37dd6ae4d4603949d37dda406b8c01/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf)
 * Handoff Datetime: 2016-06-27 11:21:16
 * Handoff Reason: Include
 * Archive File: [longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/fa43eed123cf7c048f3f8de04441511cf4c46abd/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 01:22:44
-* Handback File: [longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/ce29c45344378c84e4b7d2ab574a4ec0ebc301b0/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf)
-* Handback Datetime: 2016-07-02 15:40:28
+* Handback File: [longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/30f76f5a88571f92aca1340e8e281e4c0c1d566e/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/longhornshort.0055e91a4deaf8fa35441ea1435d2f86cf260826.nl-nl.xlf)
+* Handback Datetime: 2016-07-14 04:09:57
 * [Back to Top](#report-top)
 
 ##### <a name='2504575346cece1887f998d2d76408a38af5141e606'></a> Source: [InTuneDocs\includes\longhornshort_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/longhornshort_md.md)
@@ -9826,14 +9826,14 @@
 
 ##### <a name='a135ff34ca5c676bc4ee7640fa49d7e95da4170e646'></a> Source: [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/a8aca948a704173708f01a24b640182635150957/InTuneDocs/includes/wit_iwportal_2.md)
+* Target File: [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/c3c609695a75efd87f7d01c38ed42492444d71c6/InTuneDocs/includes/wit_iwportal_2.md)
 * Handoff File: [wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/6990cdda7b37dd6ae4d4603949d37dda406b8c01/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf)
 * Handoff Datetime: 2016-06-27 11:21:16
 * Handoff Reason: Include
 * Archive File: [wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/fa43eed123cf7c048f3f8de04441511cf4c46abd/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 01:22:44
-* Handback File: [wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/779d3b6dbfab03cb8294f331c22b70e231c2499f/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf)
-* Handback Datetime: 2016-07-02 16:17:03
+* Handback File: [wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/30f76f5a88571f92aca1340e8e281e4c0c1d566e/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/wit_iwportal_2.fc5f2651d1111fce960bfc5a9df99d457d5a87db.nl-nl.xlf)
+* Handback Datetime: 2016-07-14 04:09:57
 * [Back to Top](#report-top)
 
 ##### <a name='a02631ded74ee9e772dae5142675a9493b653577647'></a> Source: [InTuneDocs\includes\wit_iwportal_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2_md.md)
