@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Een aangepaste sjabloon maken, configureren en publiceren | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/30/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
+ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+
 
 ---
 
@@ -66,7 +60,8 @@ Gebruik de volgende procedures om aangepaste sjablonen voor Rights Management te
 
         4.  Als u Rights Management nog niet hebt geactiveerd, klikt u op **ACTIVEREN** en bevestigt u de actie.
 
-            > [!NOTE] Zie [Activating Azure Rights Management](activate-service.md) (Azure Rights Management activeren) voor meer informatie.
+            > [!NOTE]
+            > Zie voor meer informatie [Azure Rights Management activeren](activate-service.md).
 
 2.  Een nieuwe sjabloon maken:
 
@@ -169,6 +164,7 @@ Breng de gewenste wijzigingen aan in de sjabloon, selecteer deze en voer vervolg
 ## Zie ook
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
+ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+
 
 ---
 
@@ -33,7 +27,8 @@ Dit artikel bevat instructies en een script om de Rights Management-client (RMS)
 
 Met deze oplossingen kunt u automatisch alle bestanden beveiligen die zich in een map op een bestandsserver met Windows Server bevinden, of automatisch bestanden beveiligen die aan een bepaald criterium voldoen. Bijvoorbeeld bestanden die zijn geclassificeerd als vertrouwelijk of die gevoelige gegevens bevatten. Deze oplossing gebruikt Azure Rights Management (Azure RMS) om de bestanden te beveiligen. U moet deze technologie daarom hebben geïmplementeerd in uw organisatie.
 
-> [!NOTE] Hoewel Azure RMS een [connector](../deploy-use/deploy-rms-connector.md) bevat die infrastructuur voor bestandsclassificatie ondersteunt, ondersteunt die oplossing alleen systeemeigen beveiliging, bijvoorbeeld Office-bestanden.
+> [!NOTE]
+> Hoewel Azure RMS een [connector](../deploy-use/deploy-rms-connector.md) bevat die infrastructuur voor bestandsclassificatie ondersteunt, ondersteunt die oplossing alleen systeemeigen beveiliging, bijvoorbeeld Office-bestanden.
 > 
 > Als u alle bestandstypen wilt ondersteunen met infrastructuur voor bestandsclassificatie, moet u de Windows PowerShell-module **RMS-beveiliging** gebruiken, zoals beschreven in dit artikel. De RMS-beveiligingscmdlets ondersteunen net als de RMS-toepassing voor delen, zowel algemene beveiliging als systeemeigen beveiliging, wat betekent dat alle bestanden kunnen worden beveiligd. Zie de sectie [Beveiligingsniveaus: systeemeigen en algemeen](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) in de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](sharing-app-admin-guide.md) voor meer informatie over deze verschillende beveiligingsniveaus.
 
@@ -278,7 +273,8 @@ Nu de configuratie van de classificatie is voltooid, bent u klaar om een beheert
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] Tips voor probleemoplossing:
+    > [!TIP]
+    > Tips voor probleemoplossing:
     > 
     > -   Als u in het rapport **0** ziet, in plaats van het aantal bestanden in de map, geeft dit aan dat het script niet is uitgevoerd. Controleer eerst het script zelf door dit te laden in Windows PowerShell ISE om de inhoud van het script te valideren, en voer het uit om te zien of er fouten worden weergegeven. Als er geen argumenten zijn opgegeven, maakt het script verbinding met Azure RMS voor verificatie.
     > 
@@ -306,6 +302,7 @@ Nu hoeft u alleen nog maar een nieuwe bestandsbeheertaak te maken die hetzelfde 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
