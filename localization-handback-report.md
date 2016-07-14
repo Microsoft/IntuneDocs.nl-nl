@@ -20,7 +20,7 @@
 * Archive File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 00:05:37
 * Handback File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.nl-nl.xlf)
-* Handback Datetime: 2016-07-14 03:29:35
+* Handback Datetime: 2016-07-14 05:31:07
 * Handback Error: [handback_transform_failed](#607de5e4699d654a4b7895bacde8f18a9707f8a111handback_transform_failed)
 * Bilingual File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.nl-nl.xlf)
 * Bilingual Datetime: 2016-06-22 12:25:06
@@ -35,7 +35,7 @@
 * Archive File: [enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 00:05:37
 * Handback File: [enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.nl-nl.xlf)
-* Handback Datetime: 2016-07-14 03:29:35
+* Handback Datetime: 2016-07-14 05:31:07
 * Handback Error: [handback_transform_failed](#5faea360de8aa9ecb82abf25b5c1392d52d0afad61handback_transform_failed)
 * Bilingual File: [enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/98d5afd51e8bdb8866e331afd6f8e35af514c5fc/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/enabling-logging.a8e488d730a63b56be19bf9f232887922dcc32bd.nl-nl.xlf)
 * Bilingual Datetime: 2016-06-22 12:25:06
