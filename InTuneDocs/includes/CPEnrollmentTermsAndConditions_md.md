@@ -1,5 +1,4 @@
-**Voorwaarden instellen**
-U kunt voorwaarden publiceren die uw gebruikers zien wanneer ze de bedrijfsportal voor het eerst vanaf een apparaat gebruiken, ongeacht of het apparaat al of niet is ingeschreven. Gebruikers moeten akkoord gaan met deze voorwaarden om toegang tot de portal te krijgen. Wanneer u belangrijke wijzigingen aan de voorwaarden aanbrengt en wilt dat gebruikers deze zien en accepteren, kunt u de nieuwe voorwaarden als een nieuwe versie markeren. Gebruikers doorlopen dan hetzelfde proces de volgende keer dat ze de portal bezoeken.
+**Voorwaarden instellen** U kunt voorwaarden publiceren die uw gebruikers zien wanneer ze de bedrijfsportal voor het eerst vanaf een apparaat gebruiken, ongeacht of het apparaat al of niet is ingeschreven. Gebruikers moeten akkoord gaan met deze voorwaarden om toegang tot de portal te krijgen. Wanneer u belangrijke wijzigingen aan de voorwaarden aanbrengt en wilt dat gebruikers deze zien en accepteren, kunt u de nieuwe voorwaarden als een nieuwe versie markeren. Gebruikers doorlopen dan hetzelfde proces de volgende keer dat ze de portal bezoeken.
 
 Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Bedrijfsportal** &gt; **Voorwaarden**.
 
@@ -17,6 +16,6 @@ U kunt de [details van de voorwaarden](https://technet.microsoft.com/library/mt4
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 
