@@ -7580,9 +7580,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/372e7731b83f6f4d342566011e0d687eea7f5eaf/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md)
-* Current Handback File: [what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/df386cc8d890e722a9a9665c043e21a2c49f21f7/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.nl-nl.xlf)
-* Current Handback Datetime: 2016-07-02 21:04:37
+* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/0f6c7a3be0e7da9ec313aca182a9dda33fa2eda8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md)
+* Current Handback File: [what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/13e77c8768384adb17ab4d0b6c3a132f779472b0/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.nl-nl.xlf)
+* Current Handback Datetime: 2016-07-14 07:50:02
 * [Back to Top](#report-top)
 
 ##### <a name='40fcdd0502de7959fa7a736557be414e5cc059b4466'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
@@ -8596,14 +8596,14 @@
 
 ##### <a name='1f04ca268c5fc8669102a61ce243d107f7f2cce5544'></a> Source: [InTuneDocs\includes\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility1.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/a8aca948a704173708f01a24b640182635150957/InTuneDocs/includes/accessibility1.md)
+* Target File: [InTuneDocs\includes\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/0f6c7a3be0e7da9ec313aca182a9dda33fa2eda8/InTuneDocs/includes/accessibility1.md)
 * Handoff File: [accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/6990cdda7b37dd6ae4d4603949d37dda406b8c01/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf)
 * Handoff Datetime: 2016-06-27 11:21:16
 * Handoff Reason: Include
 * Archive File: [accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/fa43eed123cf7c048f3f8de04441511cf4c46abd/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/archive/accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 01:22:44
-* Handback File: [accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/779d3b6dbfab03cb8294f331c22b70e231c2499f/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf)
-* Handback Datetime: 2016-07-02 16:17:03
+* Handback File: [accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/13e77c8768384adb17ab4d0b6c3a132f779472b0/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/accessibility1.735dc52fe169a8b15c8c0813e8b79f07222f3c0e.nl-nl.xlf)
+* Handback Datetime: 2016-07-14 07:50:02
 * [Back to Top](#report-top)
 
 ##### <a name='1b484f283bacee97d6a181351aeef2a6366d0943573'></a> Source: [InTuneDocs\includes\accessibility1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility1_md.md)
@@ -13653,15 +13653,15 @@
 
 ##### <a name='49427494881cb50b4baadf18311da0f9744f6c43946'></a> Source: [InTuneDocs\media\IntuneSA6BlockedDevices.PNG](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/IntuneSA6BlockedDevices.PNG)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\media\IntuneSA6BlockedDevices.PNG](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/6b71aa26cfd450c090d4f9bc0dbc3e3db2381294/InTuneDocs/media/IntuneSA6BlockedDevices.PNG)
+* Target File: [InTuneDocs\media\IntuneSA6BlockedDevices.PNG](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/0f6c7a3be0e7da9ec313aca182a9dda33fa2eda8/InTuneDocs/media/IntuneSA6BlockedDevices.PNG)
 * Handoff File: [49427494881cb50b4baadf18311da0f9744f6c43.PNG](https://github.com/Microsoft/EM.handoff/blob/6654a0cda738109900e10e93ee5d9349e1aa8596/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/49427494881cb50b4baadf18311da0f9744f6c43.PNG)
 * Handoff Datetime: 2016-07-01 18:40:08
 * Handoff Reason: IsDependency
 * Dependency From: InTuneDocs\DeployUse\restrict-access to-exchange-online-with-microsoft-intune.md, InTuneDocs\DeployUse\restrict-access-to-exchange-online-with-microsoft-intune.md, InTuneDocs\DeployUse\restrict-access-to-new-exchange-online-dedicated-with-microsoft-intune.md, InTuneDocs\zDeletedTopics\restrict-access-to-new-exchange-online-dedicated-with-microsoft-intune.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [49427494881cb50b4baadf18311da0f9744f6c43.PNG](https://github.com/Microsoft/EM.handback/blob/bc2c7b926990deae4f42a9605e5c830ab6bf841d/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/49427494881cb50b4baadf18311da0f9744f6c43.PNG)
-* Handback Datetime: 2016-07-12 19:18:23
+* Handback File: [49427494881cb50b4baadf18311da0f9744f6c43.PNG](https://github.com/Microsoft/EM.handback/blob/13e77c8768384adb17ab4d0b6c3a132f779472b0/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/49427494881cb50b4baadf18311da0f9744f6c43.PNG)
+* Handback Datetime: 2016-07-14 07:50:02
 * [Back to Top](#report-top)
 
 ##### <a name='5f6877d384db80143c34573c1dd341e37636bcfd947'></a> Source: [InTuneDocs\media\IntuneSASharePointOnlineCAPolicy.png](https://github.com/Microsoft/IntuneDocs-pr/blob/7d8709f5b8b0f387877b5f71e6ba5bbd6956d45c/InTuneDocs/media/IntuneSASharePointOnlineCAPolicy.png)
