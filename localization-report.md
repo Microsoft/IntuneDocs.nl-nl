@@ -5668,8 +5668,8 @@
 * Current Target File: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/f5196740cfe3f46506306065c90de2845599f323/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
 * Current Handback File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/f7aa96f676356178b54adac84624e4b744096a68/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.nl-nl.xlf)
 * Current Handback Datetime: 2016-07-13 22:51:35
-* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/fa027ee8ac4e29d5479e7510c9fcc2985bae0913/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.nl-nl.xlf)
-* Bilingual Datetime: 2016-07-12 21:56:27
+* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/f7aa96f676356178b54adac84624e4b744096a68/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-14 00:02:50
 * [Back to Top](#report-top)
 
 ##### <a name='cd19be1c0319a3d2a4609030c0114b07b461c1d8387'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-view-use-files.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/06f615c993d54ab1e8e4a94d7414302481d919b4/Azure-RMSDocs/rms-client/sharing-app-view-use-files.md)
