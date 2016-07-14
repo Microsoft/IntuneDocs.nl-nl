@@ -10,7 +10,7 @@ U kunt dit document vervolgens veilig delen per e-mail.
 
 1.  Maak met Outlook een nieuw bericht en voeg het bestand dat u zojuist hebt gemaakt, als bijlage toe.
 
-2.  Typ in het vak **Aan** een of meer zakelijke email-adressen. Zorg ervoor dat u een zakelijk e-mailadres opgeeft, zoals **janetm@contoso.com** of **p.dover@fabrikam.com**, omdat Azure Rights Management op dit moment geen ondersteuning biedt voor persoonlijke e-mailadressen die u mogelijk thuis gebruikt via uw internetprovider. U hoeft niet uit te zoeken of degene aan wie u het bericht verzendt, ook Azure Rights Management heeft.
+2.  Typ in het vak **Aan** een of meer zakelijke e-mailadressen. Zorg ervoor dat u een zakelijk e-mailadres opgeeft, zoals **janetm@contoso.com** of **p.dover@fabrikam.com**, omdat Azure Rights Management op dit moment geen ondersteuning biedt voor persoonlijke e-mailadressen die u mogelijk thuis gebruikt via uw internetprovider. U hoeft niet uit te zoeken of degene aan wie u het bericht verzendt, ook Azure Rights Management heeft.
 
 3.  Typ een onderwerp, zoals  **Vertrouwelijke documenten**, en typ een kort bericht in de e-mail, zoals **Lees dit vertrouwelijke document en deel het niet met anderen.**
 
@@ -18,11 +18,11 @@ U kunt dit document vervolgens veilig delen per e-mail.
 
 5.  In het dialoogvenster **Beveiligd delen**:
 
-    1.  Selecteer **Lezer: alleen weergeven**.
+    1.  Selecteer **Lezer: Alleen weergeven**.
 
         Dit betekent dat ontvangers het document wel kunnen bekijken, maar niet kunnen bewerken of afdrukken.
 
-    2.  Selecteer **Stuur mij een e-mail wanneer iemand dit document probeert te openen**.
+    2.  Selecteer **Mij e-mailen wanneer iemand deze documenten probeert te openen**.
 
         U krijgt een e-mailmelding telkens wanneer ontvangers proberen de bijlage te openen en ook als iemand anders probeert deze te openen, bijvoorbeeld wanneer de ontvanger het e-mailbericht aan een collega doorstuurt. In dit laatste scenario ziet u dat de toegang is geweigerd. Op basis van de gebruikersgegevens kunt u vervolgens beslissen of u deze persoon een kopie van het document wilt verzenden dat hij/zij kan openen.
 
@@ -34,7 +34,7 @@ U kunt dit document vervolgens veilig delen per e-mail.
 
         Het e-mailbericht met bijlage wordt verzonden naar de e-mailadressen die u hebt opgegeven. Naast uw e-mailbericht zien ontvangers instructies over het lezen van het bijgevoegde document dat is beveiligd met Azure Rights Management.
 
-Nu u het beveiligde document hebt verzonden, kunt u de ontvangers vragen om te kijken of het document is aangekomen en het vervolgens te openen. Sluit Outlook niet, omdat we de bijlage opnieuw gebruiken in onze laatste stap, bij het traceren van de bijlage.
+Nu u het beveiligde document hebt verzonden, kunt u de ontvangers vragen om te kijken of het document is aangekomen en het vervolgens te openen. Sluit Outlook niet, omdat we het opnieuw gebruiken in onze laatste stap, voor het bijhouden van de bijlage.
 
 |Als u meer informatie wilt|Aanvullende informatie|
 |--------------------------------|--------------------------|
@@ -42,6 +42,6 @@ Nu u het beveiligde document hebt verzonden, kunt u de ontvangers vragen om te k
 |Informatie over de opties in het dialoogvenster **Beveiligd delen**   →|[De opties in het dialoogvenster voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
