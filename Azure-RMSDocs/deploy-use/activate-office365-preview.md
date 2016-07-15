@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2016
+ms.date: 07/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fb64a6b858cddea3d3f14c8956b34b786dccf5cb
-ms.openlocfilehash: 80e17903a6d2f3c6e8f15448a6a5499dfb9852d1
+ms.sourcegitcommit: 6eae63c629ae7cfe2175a655eb4901c1707c0f1d
+ms.openlocfilehash: 1ac96ddb1569483236c4dc61f7bc38c99d43ead2
 
 
 ---
@@ -33,20 +33,22 @@ Volg deze instructies alleen als u gebruikmaakt van de nieuwe evaluatieversie va
     > [!TIP]
     > Zie [Over het Office 365-beheercentrum - Help voor beheerders](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547) voor hulp bij het beheercentrum.
 
-3. In het linkerdeelvenster: **Instellingen** > **Services en invoegtoepassingen**.
+3. Navigeer naar de pagina **Rights Management** of gebruik de zoekfunctie.
 
-4. Klik op **Microsoft Azure Rights Management**.
+    U kunt het beste de navigatiefunctie gebruiken als u nog niet bekend bent met de preview-versie en het nuttig vindt om verwante configuratieopties te bekijken. Als u al bekend bent met de preview-versie en meteen Azure Rights Management wilt activeren, kunt u de zoekfunctie gebruiken. Mogelijk moet u ook de zoekoptie gebruiken bij de preview-versie van het beheercentrum als de navigatie-instructies niet overeenkomen met wat u ziet.
 
-    > [!NOTE]
-    >Opmerking: Afhankelijk van uw weergave moet u mogelijk scrollen om deze optie te zien. Als deze niet wordt weergegeven, komt dit mogelijk doordat het service-abonnement of de productversie geen rechten geeft voor [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
-    >
-    >Gebruik de informatie in [Cloudabonnementen die Azure RMS ondersteunen](../get-started/requirements-subscriptions.md) om te controleren op Azure Rights Management-ondersteuning. Voor hulp bij dit probleem stuurt u een e-mailbericht naar [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
+    - Via navigatie: **Instellingen** > **Services en invoegtoepassingen** > **Microsoft Azure Rights Management** > **Instellingen van Microsoft Azure Rights Management beheren**
 
-5. Klik op de pagina **Microsoft Azure Rights Management** op **Microsoft Azure Rights Management-instellingen beheren**.
+    - Via zoeken: typ **Rights Management** in het zoekvak op de **startpagina** en klik in de zoekresultaten op **Instellingen van Microsoft Azure Rights Management**.
 
-6. Klik op de pagina **Rights Management** op **Activeren**.
+        > [!NOTE]
+        >Afhankelijk van uw weergave moet u mogelijk scrollen om deze optie te zien als u de navigatiefunctie gebruikt. Als de optie niet wordt weergegeven op de pagina of in de zoekresultaten, komt dit mogelijk doordat [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] niet is inbegrepen bij het serviceabonnement of de productversie.
+        >
+        >Gebruik de informatie in [Cloudabonnementen die Azure RMS ondersteunen](../get-started/requirements-subscriptions.md) om te controleren op Azure Rights Management-ondersteuning. Voor hulp bij dit probleem stuurt u een e-mailbericht naar [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
 
-7. Als de vraag **Wilt u Rights Management activeren?** verschijnt, klikt u op **Activeren**.
+4. Klik op de pagina **Rights Management** op **Activeren**.
+
+5. Als de vraag **Wilt u Rights Management activeren?** verschijnt, klikt u op **Activeren**.
 
 U ziet nu **Rights Management is geactiveerd** en de mogelijkheid om te deactiveren.
 
@@ -57,6 +59,6 @@ Terug naar [Azure Rights Management activeren](activate-service.md).
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

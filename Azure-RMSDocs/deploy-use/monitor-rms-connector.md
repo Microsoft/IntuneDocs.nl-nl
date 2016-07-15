@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2016
+ms.date: 07/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 04fbac4389671ed32f64c0840d81723f8314869c
-ms.openlocfilehash: 4509126c61c4e37d9655d9bd080be3e097cd103f
+ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
+ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
 
 
 ---
@@ -100,7 +100,7 @@ Waarschuwing **2001**
 
 **Poging tot onbevoegde toegang tot Microsoft RMS-connector.**
 
-Deze gebeurtenis wordt geregistreerd wanneer een account geen verbinding met de RMS-connector kan maken. Meestal komt dit doordat het account waarmee de verbinding wordt gemaakt, zich niet in de lijst met gemachtigde accounts bevindt die door de RMS-connector van Azure RMS wordt gedownload.  Het kan bijvoorbeeld voorkomen dat de meest recente lijst nog niet is gedownload (dit gebeurt elke 15 minuten) of dat het account ontbreekt in de lijst. 
+Deze gebeurtenis wordt geregistreerd wanneer een account geen verbinding met de RMS-connector kan maken. Meestal komt dit doordat het account waarmee de verbinding wordt gemaakt, zich niet in de lijst met gemachtigde accounts bevindt die door de RMS-connector van Azure RMS wordt gedownload. Het kan bijvoorbeeld voorkomen dat de meest recente lijst nog niet is gedownload (dit gebeurt elke 15 minuten) of dat het account ontbreekt in de lijst. 
 
 Een andere reden kan zijn dat u de RMS-connector op dezelfde server hebt geïnstalleerd als de server die is geconfigureerd voor gebruik van de connector. U hebt de RMS-connector bijvoorbeeld geïnstalleerd op een server waarop Exchange Server wordt uitgevoerd en u hebt een Exchange-account gemachtigd om de connector te gebruiken. Deze configuratie wordt niet ondersteund, omdat dit account niet correct kan worden geïdentificeerd met de RMS-connector wanneer deze verbinding probeert te maken.
 
@@ -140,6 +140,8 @@ Fout **3000**
 
 Elke keer dat in de RMS-connector een onverwachte fout wordt aangetroffen, wordt deze gebeurtenis geregistreerd. De details van de fout worden in het gebeurtenisbericht weergegeven.
 
+Een mogelijke oorzaak wordt aangeduid met de tekst **De aanvraag is mislukt. Een leeg antwoord werd ontvangen.** in het gebeurtenisbericht. Als u deze tekst ziet, treedt de fout mogelijk op omdat er met een netwerkapparaat SSL-inspectie wordt uitgevoerd op de pakketten die worden uitgewisseld tussen de on-premises servers en de server met de RMS-connector. Dit wordt niet ondersteund waardoor de communicatie mislukt en dit gebeurtenislogboekbericht wordt weergegeven.
+
 ----
 
 Fout **3001**
@@ -147,6 +149,8 @@ Fout **3001**
 **Er is een uitzondering opgetreden tijdens het downloaden van de autorisatiegegevens.**
 
 Deze gebeurtenis wordt geregistreerd als de meest recente lijst met accounts die zijn gemachtigd voor het gebruik van de RMS-connector, niet kan worden gedownload met de RMS-connector. In het gebeurtenisbericht worden de details van de fout weergegeven.
+
+
 
 ----
 
@@ -191,6 +195,6 @@ Als u voor diagnosedoeleinden meer gedetailleerde logboekregistratie nodig hebt,
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
