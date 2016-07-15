@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\sync-your-device-manually-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/sync-your-device-manually-ios.md) | OutofSyncHandedBackSuccess | [Details](#94d799e2210b5432a03b4a658d0f871596523d83435)
 
 ## Item Details
-##### <a name='94d799e2210b5432a03b4a658d0f871596523d83435'></a> Source: [InTuneDocs\EndUser\sync-your-device-manually-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/sync-your-device-manually-ios.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [sync-your-device-manually-ios.6ac9ddc812018bb4ec289ad041ff914d06a83054.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/27125df3b54971f074b52275828382474176d52e/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/sync-your-device-manually-ios.6ac9ddc812018bb4ec289ad041ff914d06a83054.nl-nl.xlf)
-* Handoff Datetime: 2016-07-13 21:51:14
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\sync-your-device-manually-ios.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/558c8db3e4e29049873c085972a2e5971fa85fa9/InTuneDocs/EndUser/sync-your-device-manually-ios.md)
-* Current Handback File: [sync-your-device-manually-ios.6ac9ddc812018bb4ec289ad041ff914d06a83054.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/46cd256aa1f6aa61c9e1455cf7235cbbc7fbce5a/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/sync-your-device-manually-ios.6ac9ddc812018bb4ec289ad041ff914d06a83054.nl-nl.xlf)
-* Current Handback Datetime: 2016-07-15 12:41:05
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
