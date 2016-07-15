@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Technisch overzicht voor de Rights Management-toepassing voor delen | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 4f63cb7911661104113d19ecd84ef7c80a874408
+
 
 ---
 
@@ -66,7 +60,8 @@ Wanneer de RMS-toepassing voor delen een Word-, Excel-, of PowerPoint-bestand be
 
 Voor bestanden die algemeen zijn beveiligd, wordt de originele bestandsnaamextensie altijd gewijzigd naar .pfile.
 
-> [!WARNING] Als u firewalls, webproxy's of beveiligingssoftware gebruikt waarmee op basis van bestandsnaamextensies controles worden uitgevoerd en actie wordt ondernomen, moet u deze mogelijk opnieuw configureren voor ondersteuning van de nieuwe bestandsnaamextensies.
+> [!WARNING]
+> Als u firewalls, webproxy's of beveiligingssoftware hebt die bestandsnaamextensies controleert en aanpakt, dan moet u deze mogelijk opnieuw configureren om deze nieuwe bestandsnaamextensies te ondersteunen.
 
 |Oorspronkelijke bestandsnaamextensie|RMS-beveiligde bestandsnaamextensie|
 |--------------------------------|-------------------------------------|
@@ -144,6 +139,7 @@ U kunt vergelijkbare registerwijzigingen maken voor andere scenario's door de wa
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

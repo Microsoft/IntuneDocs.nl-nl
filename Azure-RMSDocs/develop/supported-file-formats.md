@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Ondersteunde bestandsindelingen | Azure RMS
 description: De huidige versie van de bestands-API ondersteunt systeemeigen beveiliging voor MS Office-bestanden, PDF- en PFile-beveiliging voor alle andere bestandsindelingen.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b5fbbf637a34371a676a6cba169cc0268ce5e541
+ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
+
 
 ---
 
@@ -46,6 +42,7 @@ Beheerders kunnen registersleutels instellen om te configureren of en hoe bestan
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
