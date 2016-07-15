@@ -7020,9 +7020,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/31b785db1f88b29c983697583c234fdeed64c4c5/InTuneDocs/EndUser/reset-your-device-cpwebsite.md)
-* Current Handback File: [reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/ce29c45344378c84e4b7d2ab574a4ec0ebc301b0/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf)
-* Current Handback Datetime: 2016-07-02 15:40:28
+* Current Target File: [InTuneDocs\EndUser\reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/cdde1bd742877794a72feea12193bdd8c79466d9/InTuneDocs/EndUser/reset-your-device-cpwebsite.md)
+* Current Handback File: [reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/b77c67f9a8c50e0e8c264179614290972dfbe8b6/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf)
+* Current Handback Datetime: 2016-07-15 06:35:09
 * [Back to Top](#report-top)
 
 ##### <a name='9020fe8bd8733534ba47ca7347d929f9c67889a5425'></a> Source: [InTuneDocs\EndUser\reset-your-passcode-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/reset-your-passcode-cpwebsite.md)
