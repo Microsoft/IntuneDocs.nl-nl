@@ -81496,9 +81496,9 @@
       "ArchiveFileCommit": "669b113940ce3a3d220bf646637e04c86bc36fd9",
       "ArchiveFileDateTime": "2016-07-08T23:46:14.7063482Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf",
+      "BilingualFileCommit": "6bcfb4da4cf60d6f458067be0eedab2254eb3908",
+      "BilingualDateTime": "2016-07-15T07:08:35.7619401Z",
       "BilingualException": null
     },
     "8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75": {
@@ -81638,9 +81638,9 @@
       "ArchiveFileCommit": "669b113940ce3a3d220bf646637e04c86bc36fd9",
       "ArchiveFileDateTime": "2016-07-08T23:46:14.7063482Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf",
+      "BilingualFileCommit": "6bcfb4da4cf60d6f458067be0eedab2254eb3908",
+      "BilingualDateTime": "2016-07-15T07:08:35.7619401Z",
       "BilingualException": null
     },
     "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f": {
@@ -81673,9 +81673,9 @@
       "ArchiveFileCommit": "669b113940ce3a3d220bf646637e04c86bc36fd9",
       "ArchiveFileDateTime": "2016-07-08T23:46:14.7063482Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf",
+      "BilingualFileCommit": "6bcfb4da4cf60d6f458067be0eedab2254eb3908",
+      "BilingualDateTime": "2016-07-15T07:08:35.7619401Z",
       "BilingualException": null
     },
     "53571aff357bbc0cdcb44ce9b403c68719abbaff": {

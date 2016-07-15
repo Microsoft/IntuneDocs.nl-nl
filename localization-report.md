@@ -539,8 +539,8 @@
 * Archive Datetime: 2016-07-08 23:46:14
 * Handback File: [activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/6bcfb4da4cf60d6f458067be0eedab2254eb3908/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf)
 * Handback Datetime: 2016-07-15 07:04:28
-* Bilingual File: [activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/fa027ee8ac4e29d5479e7510c9fcc2985bae0913/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf)
-* Bilingual Datetime: 2016-07-12 21:56:27
+* Bilingual File: [activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/6bcfb4da4cf60d6f458067be0eedab2254eb3908/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-15 07:08:35
 * [Back to Top](#report-top)
 
 ##### <a name='d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf7'></a> Source: [Azure-RMSDocs\deploy-use\activate-service.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/bf5e3561ef24d8f44e791ff7bdc8450a73f79705/Azure-RMSDocs/deploy-use/activate-service.md)
@@ -861,8 +861,8 @@
 * Archive Datetime: 2016-07-08 23:46:14
 * Handback File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/6bcfb4da4cf60d6f458067be0eedab2254eb3908/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
 * Handback Datetime: 2016-07-15 07:04:28
-* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/3d7544936b5d079172d5c42766eb81060d35373d/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
-* Bilingual Datetime: 2016-07-12 19:53:45
+* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/6bcfb4da4cf60d6f458067be0eedab2254eb3908/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-15 07:08:35
 * [Back to Top](#report-top)
 
 ##### <a name='496edca2e2323e17216858e2ab4844fdb0aa1fb030'></a> Source: [Azure-RMSDocs\deploy-use\operations-customer-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/operations-customer-managed-tenant-key.md)
@@ -1875,8 +1875,8 @@
 * Current Target File: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/6ad724da3cb845b09716821b7ef887e7277be9e0/Azure-RMSDocs/get-started/faqs.md)
 * Current Handback File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/6bcfb4da4cf60d6f458067be0eedab2254eb3908/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf)
 * Current Handback Datetime: 2016-07-15 07:04:28
-* Bilingual File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/fa027ee8ac4e29d5479e7510c9fcc2985bae0913/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf)
-* Bilingual Datetime: 2016-07-12 21:56:27
+* Bilingual File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/6bcfb4da4cf60d6f458067be0eedab2254eb3908/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-15 07:08:35
 * [Back to Top](#report-top)
 
 ##### <a name='5bc6f02c4ffc8eef3c7b15e1777ec4201b357c18101'></a> Source: [Azure-RMSDocs\get-started\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/get-started.md)
