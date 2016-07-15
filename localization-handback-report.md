@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/reset-your-device-cpwebsite.md) | OutofSyncHandedBackSuccess | [Details](#755f4e496b2d92fef4084a350c83192bc63fcb1a424)
 
 ## Item Details
-##### <a name='755f4e496b2d92fef4084a350c83192bc63fcb1a424'></a> Source: [InTuneDocs\EndUser\reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/reset-your-device-cpwebsite.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/27125df3b54971f074b52275828382474176d52e/ol-handoff/Microsoft/IntuneDocs-pr.nl-nl/master/reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf)
-* Handoff Datetime: 2016-07-13 21:51:14
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.nl-nl/blob/cdde1bd742877794a72feea12193bdd8c79466d9/InTuneDocs/EndUser/reset-your-device-cpwebsite.md)
-* Current Handback File: [reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/b77c67f9a8c50e0e8c264179614290972dfbe8b6/ol-handback/Microsoft/IntuneDocs-pr.nl-nl/master/reset-your-device-cpwebsite.6dfa91231eef0cb199713597c31db200976042b3.nl-nl.xlf)
-* Current Handback Datetime: 2016-07-15 06:35:09
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
