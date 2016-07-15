@@ -1818,8 +1818,8 @@
 * Archive Datetime: 2016-07-02 00:05:37
 * Handback File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/4b668cab7badfb06c8b3651b2f22d7f68f2d16c1/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
 * Handback Datetime: 2016-07-15 10:46:05
-* Bilingual File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/fa027ee8ac4e29d5479e7510c9fcc2985bae0913/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
-* Bilingual Datetime: 2016-07-12 21:56:27
+* Bilingual File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/4b668cab7badfb06c8b3651b2f22d7f68f2d16c1/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
+* Bilingual Datetime: 2016-07-15 11:04:52
 * [Back to Top](#report-top)
 
 ##### <a name='0b8e0fb6d872506ac3529bd137286f0e8fa562ee97'></a> Source: [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/winrt-sdk.md)
