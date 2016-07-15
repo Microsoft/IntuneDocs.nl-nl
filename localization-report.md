@@ -1810,14 +1810,14 @@
 
 ##### <a name='136d6e9d0c45a9779f87e32eed8288fe8ee3a62296'></a> Source: [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/windows-phone-apps.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/fbbea0cd4ed04bc74da4e02df6282da9663e740f/Azure-RMSDocs/develop/windows-phone-apps.md)
+* Target File: [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr.nl-nl/blob/2fef391367903e090cb79ff46a6b1fffa2e670f3/Azure-RMSDocs/develop/windows-phone-apps.md)
 * Handoff File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/0bd4832fab0fc5250ecf9218978e769d02732aa3/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
 * Handoff Datetime: 2016-06-27 13:14:37
 * Handoff Reason: Include
 * Archive File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handoff/blob/ca7017c09c65624791453b70f590eaa2eb5234a1/ol-handoff/Microsoft/Azure-RMSDocs-pr.nl-nl/master/archive/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
 * Archive Datetime: 2016-07-02 00:05:37
-* Handback File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/fa027ee8ac4e29d5479e7510c9fcc2985bae0913/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
-* Handback Datetime: 2016-07-12 21:48:56
+* Handback File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/4b668cab7badfb06c8b3651b2f22d7f68f2d16c1/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
+* Handback Datetime: 2016-07-15 10:46:05
 * Bilingual File: [windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf](https://github.com/Microsoft/EM.handback/blob/fa027ee8ac4e29d5479e7510c9fcc2985bae0913/ol-handback/Microsoft/Azure-RMSDocs-pr.nl-nl/master/windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf)
 * Bilingual Datetime: 2016-07-12 21:56:27
 * [Back to Top](#report-top)

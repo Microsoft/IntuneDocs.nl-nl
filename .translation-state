@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "a0f71b3579480945087ffdea1b323da129da1de5",
-  "LastTranslatedCommit": "6ad724da3cb845b09716821b7ef887e7277be9e0",
+  "LastTranslatedCommit": "2fef391367903e090cb79ff46a6b1fffa2e670f3",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -71983,14 +71983,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "fbbea0cd4ed04bc74da4e02df6282da9663e740f",
+      "TargetFileCommit": "2fef391367903e090cb79ff46a6b1fffa2e670f3",
       "TargetFilePath": "Azure-RMSDocs\\develop\\windows-phone-apps.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf",
-      "HandbackFileCommit": "fa027ee8ac4e29d5479e7510c9fcc2985bae0913",
-      "HandbackDateTime": "2016-07-12T21:48:56.6839264Z",
+      "HandbackFileCommit": "4b668cab7badfb06c8b3651b2f22d7f68f2d16c1",
+      "HandbackDateTime": "2016-07-15T10:46:05.1132225Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-07-12T21:48:56.6839264Z",
+      "UpdatedDateTime": "2016-07-15T10:46:05.1132225Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\archive\\windows-phone-apps.9c8662d9cb263a7405d6cd1ce1113b424a277fc7.nl-nl.xlf",
       "ArchiveFileCommit": "ca7017c09c65624791453b70f590eaa2eb5234a1",
       "ArchiveFileDateTime": "2016-07-02T00:05:37.8281494Z",
