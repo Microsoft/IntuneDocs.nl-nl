@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "8d19fc14e5d17df88a85a58b585d1899fa3dd867",
-  "LastTranslatedCommit": "0a7beb03b54be9793c25640848a22d8d2c810ac0",
+  "LastTranslatedCommit": "fc29de790fe59a0fcc4e8407ec55ef1b8de9556b",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -63577,7 +63577,7 @@
       "TargetFilePath": "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\built-in-rights-usage-restriction-reference.fec75a2f5345275bbe7d31794ef3ca3cca194515.nl-nl.xlf",
       "HandbackFileCommit": "98d5afd51e8bdb8866e331afd6f8e35af514c5fc",
-      "HandbackDateTime": "2016-07-16T01:14:19.4254558Z",
+      "HandbackDateTime": "2016-07-16T02:13:38.9926675Z",
       "HandbackException": {
         "internal_error_code": "handback_transform_failed",
         "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\06462f\\ol-handback\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\built-in-rights-usage-restriction-reference.fec75a2f5345275bbe7d31794ef3ca3cca194515.nl-nl.xlf failed.",
@@ -63587,7 +63587,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406",
         "extended_information": null
       },
-      "HandbackFailureTimes": 2,
+      "HandbackFailureTimes": 3,
       "UpdatedDateTime": "2016-06-22T12:19:58.3501048Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.nl-nl\\master\\archive\\built-in-rights-usage-restriction-reference.fec75a2f5345275bbe7d31794ef3ca3cca194515.nl-nl.xlf",
       "ArchiveFileCommit": "ca7017c09c65624791453b70f590eaa2eb5234a1",
