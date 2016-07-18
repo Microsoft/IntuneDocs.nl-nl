@@ -18,7 +18,7 @@
     ""
   ],
   "branches_to_filter": [
-    "live"
+    "master-oldev"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/Azure-RMSDocs.nl-nl",
   "skip_source_output_uploading": false,
