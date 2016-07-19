@@ -77,6 +77,9 @@
   "222b9aac19993f184ff68800a00f8d9df8b36237": [
     "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
   ],
+  "ba3af29585be3c07da276d3e7e140713b023d70d": [
+    "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
+  ],
   "aa4d032a0eff1f02e5d6df0eae7b878b4762866e": [
     "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
   ],
@@ -274,6 +277,9 @@
   ],
   "ebb1257dec8422b1da1b6c66f720ad0be3d06f0a": [
     "InTuneDocs\\DeployUse\\prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
+  ],
+  "519a15ddfe10a3df8f03170939c950abdf462b26": [
+    "InTuneDocs\\DeployUse\\protect-windows-devices-with-multi-factor-authentication.md"
   ],
   "0dfd41bf47d525cdfc84f72631cf5ba6547e5389": [
     "InTuneDocs\\DeployUse\\protect-windows-devices-with-multi-factor-authentication.md"
@@ -1524,6 +1530,9 @@
   ],
   "b174a86335a250c53f6015cb40a980cc86ffa61a": [
     "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
+  ],
+  "9d1f5273f907debf446bfa6c6cf732e4b7e55b98": [
+    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
   ],
   "4d1f91050882f17f81e1f50b80d709bbccec05b2": [
     "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
@@ -3673,6 +3682,9 @@
   ],
   "a6a8d2c7c3239985e54745b56857ff7c66dc33eb": [
     "InTuneDocs\\media\\mdm-ca-spo-policy-configuration.png"
+  ],
+  "b6ebe3f2c6ac544cf0898ce877946237994d820c": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-networks.md"
   ],
   "e983f4045d7e5e075edf1ccb10950b28b4acab8b": [
     "InTuneDocs\\DeployUse\\restrict-access-to-networks.md"
