@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Directe registratie voor iOS-apparaten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+
 
 ---
 
@@ -46,6 +40,8 @@ Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, 
 
         -   **Vooraf toegewezen apparatengroep**: alle apparaten waarvoor dit profiel wordt geïmplementeerd, behoren in eerste instantie tot deze groep. U kunt apparaten na de inschrijving opnieuw toewijzen.
 
+        >[!Important]
+        >Groepstoewijzingen worden verplaatst van Intune naar Azure Active Directory. [Meer informatie](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  Kies **Profiel opslaan** om het profiel toe te voegen.
 
 5.  **Een profiel exporteren als .mobileconfig om het te implementeren op iOS-apparaten** Selecteer het apparaatprofiel dat u hebt gemaakt. Kies **Exporteren...** in de taakbalk. Kies **Profiel downloaden** en sla het gedownloade .mobileconfig-bestand op.
@@ -89,6 +85,7 @@ Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, 
 [Voorbereidingen voor het inschrijven van apparaten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 
