@@ -1642,12 +1642,6 @@
   "1d2e6676714daba76a9b54553b4ad1af23a0f880": [
     "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
   ],
-  "91d80e0bae12b4c912b61f675e20caa49fa9206d": [
-    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
-  ],
-  "0509e1597a57658dbefc7c033ef5c5c936fdc036": [
-    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
-  ],
   "693feee133a594032c0edc69f03f65681bacfb81": [
     "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
   ],
@@ -2584,12 +2578,6 @@
   "6cab0bacd9157323e342662609de8c9f20550d78": [
     "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
   ],
-  "1fdb1dc56b7803b72bce4a6d60bb4cd20b03af5e": [
-    "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
-  ],
-  "4367f7f59db9b9803d1793bd07ad533c8e7489ff": [
-    "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
-  ],
   "d5f13a640849a1dbdd76dd2f7e6af363b78e955e": [
     "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
   ],
@@ -2994,9 +2982,6 @@
     "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
   ],
   "8fea0f7f87972bc643bbb20348095e05f701287e": [
-    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
-  ],
-  "5848a8767751a21fe7e2b0a14a4f5c2d16779e59": [
     "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
   ],
   "cde197d106eebce348d9962910e8def86b8e4caa": [
