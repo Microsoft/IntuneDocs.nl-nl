@@ -40,6 +40,6 @@ Microsoft Rights Management SDK 2.1 biedt ondersteuning voor het inschakelen van
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -59,6 +59,6 @@ Naast de status **Actief** die aangeeft dat de Rights Management-service is inge
 Terug naar [Azure Rights Management activeren](activate-service.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
