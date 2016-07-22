@@ -60,6 +60,6 @@ De cmdlets die ondersteuning bieden om sjablonen te maken en beheren:
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
