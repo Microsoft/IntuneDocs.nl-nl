@@ -187,6 +187,6 @@ Door het register op de computers met Office 2010 te bewerken, kunt u een waarde
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

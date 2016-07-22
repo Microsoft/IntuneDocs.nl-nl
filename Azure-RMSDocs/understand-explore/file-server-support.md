@@ -44,6 +44,6 @@ Nu u begrijpt hoe toepassingen en services ondersteuning bieden voor Azure RMS, 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

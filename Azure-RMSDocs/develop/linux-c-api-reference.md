@@ -33,6 +33,6 @@ API-referentiemateriaal voor de besturingssysteemondersteuning voor Linux wordt 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

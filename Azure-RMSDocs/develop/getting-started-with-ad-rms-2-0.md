@@ -76,6 +76,6 @@ De RMS SDK 2.1 ondersteunt een aantal belangrijke client- en serverplatforms. Ga
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

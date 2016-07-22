@@ -75,6 +75,6 @@ Als u begint met het gebruik van [!INCLUDE[aad_rightsmanagement_2](../includes/a
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

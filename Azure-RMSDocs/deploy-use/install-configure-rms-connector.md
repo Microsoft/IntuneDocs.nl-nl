@@ -241,6 +241,6 @@ Als u deze bestanden nog niet hebt gedownload, kunt u dit doen via het [Microsof
 Nu de RMS-connector is geïnstalleerd en geconfigureerd, kunt u de on-premises servers configureren voor het gebruik van de connector. Ga naar [Servers configureren voor de Azure Rights Management-connector](configure-servers-rms-connector.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

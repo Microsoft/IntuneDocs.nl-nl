@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
 
@@ -206,6 +207,6 @@ Ga naar [fase 2 - configuratie aan clientzijde](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

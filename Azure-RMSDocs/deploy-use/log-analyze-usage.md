@@ -226,6 +226,6 @@ Zie [Administering Azure Rights Management by Using Windows PowerShell](administ
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

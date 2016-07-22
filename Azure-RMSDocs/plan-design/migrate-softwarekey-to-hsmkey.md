@@ -108,6 +108,6 @@ U kunt nu doorgaan naar [stap 3. Uw RMS-tenant activeren](migrate-from-ad-rms-ph
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

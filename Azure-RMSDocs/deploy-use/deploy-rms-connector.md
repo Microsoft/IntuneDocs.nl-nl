@@ -84,6 +84,6 @@ Zorg ervoor dat aan de volgende vereisten wordt voldaan voordat u de RMS-connect
 Ga naar [De Azure Rights Management-connector installeren en configureren](install-configure-rms-connector.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

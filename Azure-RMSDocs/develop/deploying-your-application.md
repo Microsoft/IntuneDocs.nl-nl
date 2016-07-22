@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
-ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: 40eb6628f5204d422bf304f44d64cdf0dcd8537d
 
 
 ---
@@ -28,10 +28,6 @@ Dit onderwerp bevat informatie over de implementatieopties voor uw toepassing me
 ## Een productielicentieovereenkomst aanvragen
 
  Voordat u een toepassing kunt vrijgeven die is ontwikkeld met behulp van de Rights Management Services SDK 2.1, moet u een productielicentieovereenkomst aanvragen om een productiecertificaat te verkrijgen.
-
-> [!IMPORTANT]
-> Als u de clienttoepassing gaat uitvoeren met Azure RMS, moet u uw eigen tenants maken. Zie [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS) voor meer informatie.
-> Zie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor meer informatie over het uitvoeren van toepassingen met Azure RMS.
 
 U kunt het certificaat verkrijgen door u aan te melden voor een productielicentieovereenkomst.
 
@@ -116,7 +112,8 @@ De eindgebruiker kan pas profiteren van Azure Rights Management Services als u d
 
 
 > [!IMPORTANT]
-> Als u de RMS SDK 2.1-clienttoepassing uitvoert met Azure RMS, moet u uw eigen tenants maken. Zie [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS) voor meer informatie.
+> Als u de clienttoepassing gaat uitvoeren met Azure RMS, moet u uw eigen tenants maken. Zie [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS) voor meer informatie.
+> Zie [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor meer informatie over het uitvoeren van toepassingen met Azure RMS.
 
 -   Download de [Microsoft Online Services-aanmeldhulp](http://www.microsoft.com/en-us/download/details.aspx?id=28177) vanuit het Microsoft Downloadcentrum.
 -   Zorg ervoor dat uw implementatie van een toepassing met rechten een controle vereist voor de selectie van deze service.
@@ -135,6 +132,6 @@ Voor meer informatie over het configureren van uw toepassing zodat deze werkt me
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

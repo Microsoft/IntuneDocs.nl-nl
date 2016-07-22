@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 28c015a5c46668bd5466aa07961b05582bb9b2c2
 
 
 ---
@@ -62,7 +62,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 -   [Voorbeelden voor het gebruik van de RMS-toepassing voor delen](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zie ook
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
@@ -70,6 +70,6 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

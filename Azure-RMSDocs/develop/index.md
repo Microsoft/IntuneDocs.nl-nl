@@ -52,6 +52,6 @@ Deze verzameling van door Microsoft RMS meegeleverde codevoorbeelden en hulpprog
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
 ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
 
@@ -131,6 +132,6 @@ Redirect_OnPrem.cmd:
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 3: configuratie van ondersteuningsservices](migrate-from-ad-rms-phase3.md).
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

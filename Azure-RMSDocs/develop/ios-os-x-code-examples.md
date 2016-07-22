@@ -285,6 +285,6 @@ Dit scenario begint met het ophalen van een lijst met sjablonen ([**MSTemplateDe
  
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

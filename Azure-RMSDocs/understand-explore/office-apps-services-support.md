@@ -73,6 +73,6 @@ Zie [What’s New with Information Rights Management in SharePoint and SharePoin
 Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over de wijze waarop andere toepassingen en services ondersteuning bieden voor Azure Rights Management.
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

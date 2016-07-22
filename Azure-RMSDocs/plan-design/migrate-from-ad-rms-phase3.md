@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
 
@@ -214,6 +215,6 @@ Nadat u deze procedures hebt voltooid, leest u het gedeelte **Volgende stappen**
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 4: taken na migratie](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 
