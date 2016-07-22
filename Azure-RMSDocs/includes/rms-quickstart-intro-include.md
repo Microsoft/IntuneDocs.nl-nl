@@ -17,6 +17,6 @@ U hebt het volgende nodig om de zelfstudie te volgen:
 Aan de slag!
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
