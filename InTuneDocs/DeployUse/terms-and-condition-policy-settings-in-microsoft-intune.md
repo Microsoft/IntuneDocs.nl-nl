@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Beleidsinstellingen voor voorwaarden in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: U kunt de voorwaarden van Intune implementeren voor gebruikersgroepen om uit te leggen hoe zaken als inschrijving, toegang tot werkresources en het gebruik van de bedrijfsportal-app invloed hebben op apparaten en gebruikers.
+keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac41e0e65a4687262d76b01ee4e1b7356c76650c
+ms.openlocfilehash: c805d664fe85b206fc1019114ee17514ef49df0f
+
 
 ---
 
@@ -56,9 +50,9 @@ U kunt meerdere beleidsregels met verschillende voorwaarden maken en implementer
 
 1.  Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
 
-2.  Selecteer in de lijst **Beleidsregels voor voorwaarden** het beleid dat u wilt implementeren en klik vervolgens op **Implementatie beheren**..
+2.  Selecteer in de lijst **Beleidsregels voor voorwaarden** het beleid dat u wilt implementeren en klik vervolgens op **Implementatie beheren**.
 
-3.  Selecteer in het dialoogvenster **Implementatie beheren** de gebruikersgroepen waarvoor u het beleid wilt implementeren en klik vervolgens op **OK**..
+3.  Selecteer in het dialoogvenster **Implementatie beheren** de gebruikersgroepen waarvoor u het beleid wilt implementeren en klik vervolgens op **OK**.
 
     Wanneer de betreffende gebruikers de bedrijfsportal openen, worden in Intune de voorwaarden weergegeven die u hebt geïmplementeerd. Gebruikers moeten deze voorwaarden accepteren voordat ze toegang krijgen tot bedrijfsresources.
 
@@ -75,7 +69,7 @@ Wanneer u bestaande voorwaarden bewerkt, kunt u het gewenste gedrag kiezen wanne
 
 1.  Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
 
-2.  Selecteer de voorwaarden die u wilt bewerken en klik op **Bewerken**..
+2.  Selecteer de voorwaarden die u wilt bewerken en klik op **Bewerken**.
 
 3.  Breng op de pagina **Voorwaarden bewerken** de gewenste wijzigingen aan en geef aan of alle gebruikers de nieuwe voorwaarden moeten accepteren of alleen nieuwe gebruikers de nieuwe versie te zien krijgen.
 
@@ -85,6 +79,7 @@ Wanneer u bestaande voorwaarden bewerkt, kunt u het gewenste gedrag kiezen wanne
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 
