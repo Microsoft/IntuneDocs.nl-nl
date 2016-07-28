@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Toegang tot bedrijfsbronnen inschakelen | Microsoft Intune
-description:
-keywords:
+description: Wi-Fi-, VPN- en e-mailprofielen stellen uw gebruikers in de gelegenheid toegang te krijgen tot de bestanden en bronnen die ze nodig hebben.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 9448b5fd9121a3bce33b947c79fee7290d2a43f9
+
 
 ---
 
@@ -51,7 +45,7 @@ Hiermee maakt, implementeert en controleert u instellingen voor systeemeigen e-m
 |---------------------|---------------------------|---|-------|------------|
 |Nee|Ja|Ja|Nee|Ja|
 > [!NOTE]
-> [Dit Intune-teamblogbericht](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx) geeft informatie over hoe u een Windows Phone 8.1 Wi-Fi-profiel configureert met OMA-URI.
+> [Dit Intune-teamblogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) geeft informatie over hoe u een Windows Phone 8.1 Wi-Fi-profiel configureert met OMA-URI.
 
 ## [Certificaatprofielen](secure-resource-access-with-certificate-profiles.md) en ondersteunde platforms
 Zorgen voor een beveiligde toegang tot bedrijfsresources, zoals draadloze netwerken en VPN-verbindingen.
@@ -61,6 +55,7 @@ Zorgen voor een beveiligde toegang tot bedrijfsresources, zoals draadloze netwer
 |Ja|Ja|Ja|Ja|Ja|
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

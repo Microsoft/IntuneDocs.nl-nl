@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gegevensoverdracht beheren tussen iOS-apps | Microsoft Intune
-description:
-keywords:
+description: Lees dit onderwerp om te begrijpen hoe u de functie iOS openen in en beleidsregels voor het beheren van mobiele apps kunt gebruiken voor het beheren van de gegevensoverdracht tussen apps.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 52ddcb22b27443b42a365a84f1769e90f1e9e8a0
+
 
 ---
 
@@ -51,9 +45,9 @@ Als u ervoor wilt zorgen dat apps die u implementeert met behulp van de MDM-oplo
 Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplossing van derden. De procedure die hieronder wordt beschreven, toont een algemene werkstroom voor het implementeren van de UPN-instelling en laat het resultaat voor eindgebruikers zien:
 
 
-1.  Configureer beleid voor het beheer van mobiele apps voor het iOS-platform. Configureer beleidsinstellingen via de bedrijfsvereisten en selecteer de apps waarop dit beleid van toepassing moet zijn.
+1.  In Azure Portal [configureert u MAM-beleid](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) voor het iOS-platform. Configureer beleidsinstellingen via de bedrijfsvereisten en selecteer de apps waarop dit beleid van toepassing moet zijn.
 
-2.  Implementeer de apps en het e-mailprofiel die u wilt beheren via de MDM-oplossing van derden met behulp van de instelling die wordt beschreven in stap 3 en stap 4.
+2.  Implementeer de apps en het e-mailprofiel die u wilt beheren **via de MDM-oplossing van derden** met behulp van de instelling die wordt beschreven in stap 3 en stap 4.
 
 3.  Implementeer de app met de volgende app-configuratie-instellingen: key=IntuneMAMUPN, Value=<gebruikersnaam@company.com> [voorbeeld: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -80,6 +74,7 @@ Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplo
 [App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

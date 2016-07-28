@@ -1,27 +1,27 @@
 ---
-title: Beheerde apps op uw apparaat gebruiken | Microsoft Intune
+title: Beheerde apps op uw iOS-apparaat gebruiken | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 8feb4b293a021efd1f4cd26c43be76355d947143
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8a219cd10bbfe1dd01003e732c8e9bf11c29b0f5
 
 
 ---
 
 
-# Beheerde apps op uw apparaat gebruiken
+# Beheerde apps op uw iOS-apparaat gebruiken
 
 Beheerde apps zijn apps die door de IT-beheerder kunnen worden geconfigureerd zodat de bedrijfsgegevens die toegankelijk zijn in die app, kunnen worden beveiligd. Wanneer u met bedrijfsgegevens in een beheerde app op uw iOS-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
 
@@ -66,6 +66,6 @@ Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps o
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

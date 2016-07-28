@@ -1,26 +1,27 @@
 ---
-title: Beheerde apps op uw apparaat gebruiken | Microsoft Intune
+title: Beheerde apps op uw Android-apparaat gebruiken | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 84dc834c28ab75c4091d7665e8492ec40ede95f9
 
 
 ---
 
 
-# Beheerde apps op uw apparaat gebruiken
+# Beheerde apps op uw Android-apparaat gebruiken
 
 Beheerde apps zijn apps die door de IT-beheerder kunnen worden geconfigureerd zodat de bedrijfsgegevens die toegankelijk zijn in die app, kunnen worden beveiligd. Wanneer u met bedrijfsgegevens in een beheerde app op uw Android-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
 
@@ -77,6 +78,6 @@ Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps o
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

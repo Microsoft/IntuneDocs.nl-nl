@@ -1,32 +1,26 @@
 ---
-# required metadata
-
 title: Toepassingen implementeren | Microsoft Intune
-description:
-keywords:
+description: Aanbevelingen voor een gefaseerde implementatie van apps in Microsoft Intune.
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
+
 
 ---
 
 # Toepassingen implementeren
-In dit onderwerp vindt u specifieke aanbevelingen voor een gefaseerde implementatie van apps in Microsoft Intune. Voor algemene informatie over implementatiefasen raadpleegt u [Implementatiefasen voor Microsoft Intune-implementatie](rollout-phases-for-microsoft-intune-deployment.md).
+In dit onderwerp vindt u specifieke aanbevelingen voor een gefaseerde implementatie van apps in Microsoft Intune. Zie [Fasen van de implementatie van Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md) voor algemene informatie over implementatiefasen.
 
 ### De fasen van app-implementatie
 De fasen van app-implementatie zijn:
@@ -35,7 +29,7 @@ De fasen van app-implementatie zijn:
 
 -   Testen van het concept
 
--   Testfase
+-   Test
 
 -   Implementatie in het bedrijf
 
@@ -48,18 +42,21 @@ Neem het volgende in overweging:
 
 -   De geschiktheid van de app voor uw gebruikers en hun apparaten (alle besturingssystemen die waarschijnlijk zullen worden gebruikt).
 
--   Controleer of het installatieprogramma voor de app die u hebt gekozen, wordt ondersteund door Intune-app-distributie, zoals wordt beschreven in  [Apps toevoegen met Microsoft Intune](/intune/deploy-use/add-apps).
+-   Controleer of het installatieprogramma voor de app die u hebt gekozen, wordt ondersteund door Intune-app-distributie, zoals wordt beschreven in [Apps toevoegen met Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Zorg ervoor dat alle vereiste zaken voor app-distributie worden geïnstalleerd. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Zorg ervoor dat alle vereiste zaken voor app-distributie worden geïnstalleerd. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Controleer of het app-type wordt ondersteund door Intune.
 
 -   Controleer of u voldoende cloudopslagruimte hebt om de app te uploaden. Instructies voor het aanschaffen van extra opslagruimte vindt u in [Apps toevoegen met Microsoft Intune](/intune/deploy-use/add-apps).
 
+> [!NOTE]           
+> U kunt deze [planningssjabloon voor mobiele apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) downloaden voor hulp bij de implementatie.
+
 ## Testen van het concept
 In de fase Testen van het concept wordt de app-implementatie getest in een testomgeving. De app wordt geïmplementeerd op apparaten en voor gebruikers die u uitsluitend gebruikt voor testdoeleinden.
 
--   Laat uw helpdesk deelnemen aan deze fase zodat het voor iedereen duidelijk wordt welke problemen er kunnen optreden tijdens de test en productie-implementatie. Informatie voor probleemoplossing vindt u in [Problemen met app-implementaties oplossen in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune).
+-   Laat uw helpdesk deelnemen aan deze fase, zodat het voor iedereen duidelijk wordt welke problemen er kunnen optreden tijdens de test en de productie-implementatie. Informatie voor probleemoplossing vindt u in [Problemen met app-implementaties oplossen in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune).
 
 -   Op dit punt in het proces ontwikkelt u communicatieplannen voor de test- en productiegebruikers. Het plan moet minimaal bevatten welke app wordt geïmplementeerd, hoe en wanneer gebruikers de app kunnen downloaden, wat het zakelijke doel is van de implementatie en wat er moet worden gedaan in geval van problemen (met zelfhulpinformatie én contactinformatie van de helpdesk).
 
@@ -97,6 +94,7 @@ Tijdens de testfase implementeert u de app voor een kleine groep testgebruikers 
 [Problemen met app-implementaties oplossen in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

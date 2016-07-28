@@ -1,26 +1,27 @@
 ---
-title: Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt? | Microsoft Intune
+title: Wat gebeurt er als u de registratie van uw Windows-apparaat bij Intune ongedaan maakt? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 38dc295f3b1d591d97c651c948b3cdacbba5b0d4
 
 
 ---
 
 
-# Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?
+# Wat gebeurt er als u de registratie van uw Windows-apparaat bij Intune ongedaan maakt?
 
 Gebruik de koppeling in de bovenstaand sectie 'In dit artikel' die overeenkomt met het type apparaat dat u gebruikt, voor aanvullende informatie over wat er gebeurt.
 
@@ -93,6 +94,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

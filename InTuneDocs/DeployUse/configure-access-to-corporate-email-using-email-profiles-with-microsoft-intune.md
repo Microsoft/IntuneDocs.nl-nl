@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: De toegang tot zakelijke e-mail configureren met e-mailprofielen | Microsoft Intune
-description:
-keywords:
+title: Toegang tot zakelijke e-mail via e-mailprofielen | Microsoft Intune
+description: Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
+
 
 ---
 
@@ -30,7 +24,7 @@ Veel mobiele platforms hebben een *systeemeigen* e-mailclient die wordt meegelev
 
 Als u extra gegevensverlies wilt voorkomen (DLP), kiest u [Voorwaardelijke toegang](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), waarmee de toegang tot het postvak van een gebruiker voor een e-mailclient wordt beheerd, inclusief systeemeigen e-mailclients.
 
-Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten.   De meeste mobiele platforms hebben een *systeemeigen* e-mailclient die wordt meegeleverd als onderdeel van het besturingssysteem.  Op de ondersteunde platforms kunnen de systeemeigen e-mailclients door Microsoft Intune worden geconfigureerd, zodat gebruikers op hun eigen apparaten toegang krijgen tot hun zakelijke e-mail zonder een aanvullende installatie te hoeven doorlopen.  
+Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten. De meeste mobiele platforms hebben een *systeemeigen* e-mailclient die wordt meegeleverd als onderdeel van het besturingssysteem.  Op de ondersteunde platforms kunnen de systeemeigen e-mailclients door Microsoft Intune worden geconfigureerd, zodat gebruikers op hun eigen apparaten toegang krijgen tot hun zakelijke e-mail zonder een aanvullende installatie te hoeven doorlopen.  
 
 IT-beheerders of gebruikers kunnen er ook voor kiezen om alternatieve e-mailclients te installeren, zoals Microsoft Outlook voor Android of iOS.  Deze e-mailclients bieden mogelijk geen ondersteuning voor e-mailprofielen en kunnen niet worden geconfigureerd met Microsoft Intune-e-mailprofielen.  
 
@@ -89,9 +83,10 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel. De gebruiker moet dit opg
     |**Synchronisatieschema** (Samsung KNOX, Windows Phone 8 en hoger, Windows 10)|Selecteer het schema op basis waarvan apparaten gegevens synchroniseren met de Exchange-server. Selecteer **Wanneer berichten binnenkomen** als u gegevens meteen wilt synchroniseren wanneer ze worden ontvangen of selecteer **Handmatig** als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.|
     |**SSL gebruiken**|Gebruik Secure Sockets Layer-communicatie (SSL) wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server.<br /><br />Voor apparaten met Samsung KNOX 4.0 of hoger moet u het SSL-certificaat van uw Exchange-server exporteren en als Android Trusted Certificate Profile implementeren in Intune. Intune biedt geen ondersteuning voor toegang tot dit certificaat als het op een andere manier is geïnstalleerd op de Exchange-server.|
     |**Inhoudtype voor synchronisatie**|Selecteer de inhoudstypen die u wilt synchroniseren met apparaten.| 
-    |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Toestaan dat toepassingen van derden e-mails openen in de systeemeigen e-mailapp om er bijvoorbeeld bestanden als bijlage aan toe te voegen.|
+    |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mail-app (bijvoorbeeld om bestanden aan e-mail toe te voegen).|
 
-    > [!IMPORTANT]Als u een e-mailprofiel hebt geïmplementeerd en vervolgens de waarde van **Host** of **E-mailadres** wilt wijzigen, moet u het bestaande e-mailprofiel verwijderen en een nieuw e-mailprofiel met de vereiste waarden maken.
+    > [!IMPORTANT]
+    > Als u een e-mailprofiel hebt geïmplementeerd en vervolgens de waarde van **Host** of **E-mailadres** wilt wijzigen, moet u het bestaande e-mailprofiel verwijderen en een nieuw e-mailprofiel met de vereiste waarden maken.
 
 4.  Wanneer u klaar bent, klikt u op **Beleid opslaan**.
 
@@ -109,11 +104,13 @@ Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van 
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
 
-> [!NOTE] Als u een e-mailprofiel van een apparaat wilt verwijderen, bewerkt u de implementatie en verwijdert u groepen waarvan het apparaat lid is.
+> [!NOTE]
+> Als u een e-mailprofiel van een apparaat wilt verwijderen, bewerkt u de implementatie en verwijdert u groepen waarvan het apparaat lid is.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

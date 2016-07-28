@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd | Microsoft Intune
-description:
-keywords:
+title: Line-Of-Business-apps beveiligen op apparaten die niet zijn geregistreerd | Microsoft Intune
+description: In dit onderwerp wordt beschreven hoe u uw aangepaste reeks business-apps kunt voorbereiden, zodat u beleidsregels voor het beheren van mobiele apps kunt toepassen die kunnen helpen gegevensverlies te voorkomen.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
+ms.openlocfilehash: 1df9d98f45eaf93163116e4f6a4c9d32125043c8
+
 
 ---
 
@@ -64,7 +58,7 @@ U kunt apps op de volgende manieren implementeren voor uw eindgebruikers:
 * Voor apparaten die niet worden beheerd door een MDM-oplossing, hebt u een aangepaste oplossing nodig. Eindgebruikers moeten de app downloaden en installeren op hun apparaat.
 
 ## De metagegevens wijzigen
-Als u de app-gegevens, zoals de naam van de app, of de bundel-id moet wijzigen, moet u [de app verwijderen](#remove-apps) en [toevoegen](#add-the-app) met de nieuwe metagegevens.
+Als u de app-gegevens, zoals de naam van de app of de bundel-id, moet wijzigen, moet u [de app verwijderen](#remove-apps) en [toevoegen](#step-2-add-the-app) met de nieuwe metagegevens.
 
 ##  Apps verwijderen
 U kunt een Line-Of-Business-app verwijderen uit de lijst met apps.  Hiermee wordt de app verwijderd uit de lijst en wordt de koppeling met het MAM-beleid verbroken. De app wordt echter niet van het apparaat van de eindgebruiker verwijderd.  
@@ -80,6 +74,7 @@ U kunt een Line-Of-Business-app verwijderen uit de lijst met apps.  Hiermee word
   Hiermee worden alle apps uit de lijst met Line-Of-Business-apps en de doellijst met apps in het MAM-beleid verwijderd.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

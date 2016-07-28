@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Toegankelijkheidsfuncties | Microsoft Intune
-description:
-keywords:
+description: Meer informatie over de functies van Intune waarmee u het programma beter toegankelijk kunt maken voor mensen met een handicap.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 3356ed7337814df1003905dba031b7d65959fc0f
+
 
 ---
 
@@ -49,10 +43,11 @@ Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows make
 |Verplaatsen naar de volgende groep toepassingen|Pijl-omhoog|
 |De acties voor een geselecteerd apparaat weergeven|Pijl-rechts|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-portals zijn navigeerbaar met de standaardsneltoetsen van Internet Explorer.
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] portals zijn navigeerbaar met de standaardsneltoetsen van Internet Explorer.
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

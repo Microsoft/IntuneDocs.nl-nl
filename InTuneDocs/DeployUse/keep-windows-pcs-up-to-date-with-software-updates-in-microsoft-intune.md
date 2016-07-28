@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Software-updates voor Windows-pc’s | Microsoft Intune
-description:
-keywords:
+title: "Software-updates voor Windows-pc’s | Microsoft Intune"
+description: "Intune houdt uw beheerde computers bijgewerkt door ervoor te zorgen dat de meest recente patches en software-updates snel worden geïnstalleerd."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bea1a090cf71129b34064378922a4c23f19e3cc7
+
 
 ---
 
 # Windows-pc’s up-to-date houden met software-updates in Microsoft Intune
 Met Microsoft Intune kunt u beheerde computers op een aantal manieren helpen beveiligen. Zo kunt u software-updates beheren die de computers up-to-date houden door ervoor te zorgen dat de nieuwste patches en software-updates snel worden geïnstalleerd.
 
-Zie [De Windows-pc-client installeren met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de Intune-client nog niet op uw computers hebt geïnstalleerd..
+Zie [De Windows-pc-client installeren met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de Intune-client nog niet op uw computers hebt geïnstalleerd.
 
 Wanneer er nieuwe updates beschikbaar zijn via Microsoft Update, of als u een update van derden hebt gemaakt, en als deze updates van toepassing zijn op de beheerde computers, wordt er een melding weergegeven op de pagina **Overzicht** in de werkruimte **Updates**. Als u op deze meldingskoppeling klikt, kunt u verschillende acties uitvoeren, zoals meer informatie over de update bekijken, de update goedkeuren of weigeren, en de computers weergeven waarop de update wordt geïnstalleerd nadat deze is goedgekeurd.
 
@@ -44,9 +38,9 @@ Configureer en implementeer beleidsregels voor uw computers om te bepalen wannee
 
 ### Instellingen voor updatebeleid configureren
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
 
-2.  Configureer en implementeer een beleid **Instellingen Microsoft Intune-agent** voor de update-instellingen. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) voor meer informatie over het maken en implementeren van beleid.
+2.  Configureer en implementeer een beleid **Instellingen Microsoft Intune-agent** voor de update-instellingen. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 De volgende tabel biedt een overzicht van de waarden die u kunt configureren in het beleid, evenals de aanbevolen waarden die worden gebruikt als u het beleid niet aanpast. U vindt deze instellingen in de sectie **Updates**.
 
@@ -88,7 +82,7 @@ Met de volgende twee procedures kunt u zich voorbereiden op het gebruik van soft
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
-2.  Kies in de sectie **Automatische goedkeuringsregels** van de pagina **Service-instellingen: updates** de optie **Nieuw**..
+2.  Kies in de sectie **Automatische goedkeuringsregels** van de pagina **Service-instellingen: updates** de optie **Nieuw**.
 
 3.  Geef op de pagina **Algemeen** van de wizard Automatische goedkeuringsregel maken een naam en optionele beschrijving voor de regel op.
 
@@ -98,7 +92,7 @@ Met de volgende twee procedures kunt u zich voorbereiden op het gebruik van soft
 
 6.  Doe het volgende op de pagina **Implementatie** :
 
-    -   Selecteer de computergroepen waarvoor u de nieuwe regel wilt implementeren en kies vervolgens **Toevoegen**..
+    -   Selecteer de computergroepen waarvoor u de nieuwe regel wilt implementeren en kies vervolgens **Toevoegen**.
 
     -   Als u een installatiedeadline voor de updates wilt opgeven, schakelt u het selectievakje **Dwing een installatiedeadline af voor deze updates af** in en selecteert u vervolgens de gewenste deadline in de lijst **Installatiedeadline** .
 
@@ -121,9 +115,9 @@ De nieuwe regel wordt weergegeven in de sectie **Automatische goedkeuringsregels
 
 2.  Selecteer een regel in de sectie **Automatische goedkeuringsregel** en voer een van de volgende handelingen uit:
 
-    -   Als u de regel wilt bewerken, kiest u **Bewerken** en wijzigt u vervolgens de parameters voor de regel in de **wizard Automatische goedkeuringsregel bijwerken**..
+    -   Als u de regel wilt bewerken, kiest u **Bewerken** en wijzigt u vervolgens de parameters voor de regel in de **wizard Automatische goedkeuringsregel bijwerken**.
 
-    -   Kies **Geselecteerde uitvoeren** om de regel uit te voeren..
+    -   Kies **Geselecteerde uitvoeren** om de regel uit te voeren.
 
     -   Als u de regel wilt verwijderen, kiest u **Verwijderen**.
 
@@ -168,9 +162,9 @@ U kunt ook updates implementeren voor software die niet door Microsoft is gemaak
 
     -   **Registersleutel bestaat**
 
-8.  Geef alle overige informatie op die nodig is om de detectieregel te configureren, zoals een bestandspad en -naam, de productcode van Windows Installer of een registersleutel, en kies **Volgende**..
+8.  Geef alle overige informatie op die nodig is om de detectieregel te configureren, zoals een bestandspad en -naam, de productcode van Windows Installer of een registersleutel, en kies **Volgende**.
 
-9. Op de pagina **Opdrachtregelargumenten** van de wizard kunt u de vereiste eigenschappen voor de installatie toevoegen aan de opdrachtregel voor de installatie om het gedrag van het setup-bestand te wijzigen. Sommige software ondersteunt bijvoorbeeld de eigenschap **/q** voor een stille installatie. Raadpleeg de documentatie bij uw softwarepakket voor meer informatie over alle ondersteunde opdrachtregelargumenten. Geef de nodige opdrachtregelargumenten op en kies **Volgende**.
+9. Op de pagina **Opdrachtregelargumenten** van de wizard kunt u de vereiste eigenschappen voor de installatie toevoegen aan de opdrachtregel voor de installatie om het gedrag van het setup-bestand te wijzigen. Sommige software ondersteunt bijvoorbeeld de eigenschap **/q** voor een stille installatie. Raadpleeg de documentatie bij uw softwarepakket voor meer informatie over alle ondersteunde opdrachtregelargumenten. Geef de benodigde opdrachtregelargumenten op en kies **Volgende**.
 
     > [!NOTE]
     > Als de update geen ondersteuning biedt voor een stille installatie, kunt u de update niet installeren met Intune
@@ -185,7 +179,7 @@ U kunt ook updates implementeren voor software die niet door Microsoft is gemaak
 11. Een retourcode die niet wordt vermeld, wordt als een fout geïnterpreteerd.
 Sommige updates gebruiken niet-standaard interpretaties voor retourcodes. In dit geval kunt u uw eigen interpretatie voor de retourcode opgeven.
 
-12. Bewerk de vereiste retourcodes en klik vervolgens op **Volgende**.
+12. Bewerk de vereiste retourcodes of geef deze op en klik vervolgens op **Volgende**.
 
 13. Bekijk op de pagina **Samenvatting** van de wizard de acties die worden uitgevoerd en kies **Uploaden** om de wizard te voltooien.
 
@@ -204,14 +198,14 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 |--------|--------------------|
 |**Eigenschappen weergeven**|Gedetailleerde informatie weergeven over de update waaronder het aantal computers waarop deze van toepassing is.|
 |**Bewerken**|Alleen voor niet-Microsoft-updates. Hiermee kunt u de eigenschappen voor de update bewerken.|
-|**Goedkeuren**|De geselecteerde update goedkeuren en configureren voor welke groepen de update wordt geïmplementeerd. Zie de procedure [Updates goedkeuren](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) in dit onderwerp voor meer informatie.|
+|**Goedkeuren**|De geselecteerde update goedkeuren en configureren voor welke groepen de update wordt geïmplementeerd. Zie de procedure **Updates goedkeuren** in dit onderwerp voor meer informatie.|
 |**Weigeren**|Alle eerdere goedkeuringen voor de update verwijderen en de update verbergen in de standaardweergaven. Bovendien worden alle rapportgegevens voor de update verwijderd.<br /><br />Als u een geweigerde update later wilt vinden, stelt u het filter op de pagina **Alle updates** in op **Geweigerd**. Vervolgens kunt u deze update zo nodig goedkeuren.<br /><br />Als een update is geweigerd omdat de update in Microsoft Update is verlopen, kan deze update niet worden goedgekeurd in de Intune-beheerconsole.<br /><br />Als u een updatebeleid verwijdert dat is geïmplementeerd op computers, worden de waarden van de beleidsinstellingen voor updates opnieuw ingesteld op de standaardstatus voor het besturingssysteem dat is geïnstalleerd op de computers.|
 |**Verwijderen**|Alleen voor niet-Microsoft-updates. De geselecteerde update verwijderen.|
 |**Uploaden**|Hiermee start u de wizard **Update uploaden**, waarmee u niet-Microsoft-updates kunt uploaden die u wilt implementeren.|
 
 ### Updates goedkeuren
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Nieuwe goed te keuren updates**..
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Nieuwe goed te keuren updates**.
 
     Kies in de werkruimte **Updates** **Overzicht** &gt; **Nieuwe goed te keuren updates**.
 
@@ -259,6 +253,7 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

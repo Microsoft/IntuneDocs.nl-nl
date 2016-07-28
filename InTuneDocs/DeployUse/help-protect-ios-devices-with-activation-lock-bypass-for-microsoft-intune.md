@@ -1,20 +1,20 @@
 ---
-title: iOS-apparaten beschermen met bypass van activeringsvergrendeling | Microsoft Intune
-description: 
+title: IOS-activeringsvergrendeling op apparaten beheren | Microsoft Intune
+description: Microsoft Intune kan u helpen bij het beheer van de activeringsvergrendeling voor iOS, een onderdeel van de app Zoek mijn iPhone voor apparaten met iOS 7.1 en hoger.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
-ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
 
 
 ---
@@ -82,12 +82,16 @@ U kunt op twee manieren zien op welke apparaten activeringsvergrendeling is inge
 
     Als u een apparaat selecteert in het knooppunt **Alle apparaten in bedrijfseigendom** en de activeringsvergrendeling voor dat apparaat is ingeschakeld, ziet u ook de bypass-code. Deze code kan worden gebruikt om handmatig een bypass van de activeringsvergrendeling uit te voeren.
 
-### Zie ook
+    > [!IMPORTANT]
+    >Intune inventariseert apparaten elke 7 dagen voor Activeringsvergrendeling. Als gevolg hiervan worden apparaten mogelijk niet onmiddellijk weergegeven met hun activeringsvergrendelingstatus in de Intune-console.
+
+
+### Zie tevens
 [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md)
 [Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

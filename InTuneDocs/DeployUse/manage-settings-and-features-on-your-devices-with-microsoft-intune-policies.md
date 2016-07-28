@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Instellingen en functies op uw apparaten beheren met beleid | Microsoft Intune
-description:
-keywords:
+title: Apparaatinstellingen beheren met beleid | Microsoft Intune
+description: Gebruik Intune om beleid te maken en implementeren waarmee instellingen en functies worden beheerd op ingeschreven apparaten die u beheert.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 661a8807076da4c67f3e55e82dfc8824071c6352
+
 
 ---
 
 # Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid
-Microsoft Intune-**beleid** bestaat uit groepen instellingen waarmee functies worden beheerd op mobiele apparaten en computers. U maakt beleidsregels met behulp van sjablonen die aanbevolen of aangepaste instellingen bevatten, en u implementeert ze vervolgens op apparaat- of gebruikersgroepen.
+Microsoft Intune-*beleid* bestaat uit groepen instellingen waarmee functies worden beheerd op mobiele apparaten en computers. U maakt beleidsregels met behulp van sjablonen die aanbevolen of aangepaste instellingen bevatten, en u implementeert deze vervolgens op apparaat- of gebruikersgroepen.
 
-## Welke soorten beleid kunt u gebruiken?
+## Typen beleidsregels
 
 Intune-beleid valt in de volgende categorieën: De categorie die u gebruikt, is van invloed op hoe u het beleid maakt en implementeert.
 
@@ -38,8 +32,8 @@ Intune-beleid valt in de volgende categorieën: De categorie die u gebruikt, is 
 Zie [Nalevingsbeleid voor apparaten in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) voor meer informatie.
 - **Beleid voor voorwaardelijke toegang:** dit beleid helpt u bij het beveiligen van e-mail en andere services op basis van de door u opgegeven voorwaarden.
 Zie [De toegang tot e-mail en O365-services beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie.
-- **Registratiebeleid voor bedrijfsapparaten:** zie [iOS- en Mac-beheer instellen met Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md) voor meer informatie over het registratiebeleid voor bedrijfsapparaten.
-- **Brontoegangsbeleid:** de beleidsregels van deze groep werken samen om uw gebruikers toegang te verlenen tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze ook zijn.
+- **Inschrijvingsbeleid voor bedrijfsapparaten:** zie [iOS- en Mac-beheer instellen met Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md) voor meer informatie over het inschrijvingsbeleid voor bedrijfsapparaten.
+- **Resourcetoegangsbeleid:** deze beleidsregels werken samen om uw gebruikers toegang te verlenen tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze ook zijn.
 Zie [Toegang tot bedrijfsresources inschakelen met Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) voor meer informatie.
 
 
@@ -54,11 +48,12 @@ Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-referenc
 
 2.  Kies het gewenste beleid. Kies de aanbevolen instellingen voor het beleid (indien beschikbaar; u kunt deze instellingen later wijzigen) of kies ervoor een aangepast beleid te maken met uw eigen instellingen.
 
-    > [!TIP] Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-reference.md) voor meer informatie over het kiezen van het juiste beleid.
+    > [!TIP]
+    > Zie de [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-reference.md) voor meer informatie over het kiezen van het juiste beleid.
 
 3.  Als u klaar bent, kiest u **Beleid maken**.
 
-4.  Configureer in het scherm **Beleid maken** een naam en optionele beschrijving voor het beleid.
+4.  Configureer op de pagina **Beleid maken** een naam en optionele beschrijving voor het beleid.
 
 5.  Configureer de vereiste beleidsinstellingen en kies vervolgens **Beleid opslaan**.
 
@@ -72,8 +67,8 @@ Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-referenc
     - [Instellingen voor Windows Team-apparaten](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor upgrades van de Windows-editie](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Mac OS X-apparaten](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [Instellingen voor Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [-Instellingen voor het beleid voor voorwaarden](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Instellingen voor Exchange Active Sync](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [Instellingen voor het beleid voor voorwaarden](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Algemene instellingen voor mobiele apparaten (verouderd)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  Kies in het bevestigingsdialoogvenster **Ja** om het beleid nu te implementeren of kies **Nee** om het beleid te maken zonder het te implementeren.
@@ -82,10 +77,10 @@ U kunt het nieuwe beleid bekijken en bewerken door te bladeren door de secties v
 
 Wanneer u een beleid maakt dat gebruikmaakt van de aanbevolen instellingen, is de naam van het nieuwe beleid een combinatie van de sjabloonnaam, de datum en de tijd. Wanneer u het beleid bewerkt, wordt de naam bijgewerkt met de tijd en de datum van de bewerking.
 
-Nu u een beleid hebt gemaakt, wilt u dit waarschijnlijk implementeren op een of meer groepen gebruikers of apparaten.
+Nadat u een beleid hebt gemaakt, wilt u dit waarschijnlijk implementeren op een of meer groepen gebruikers of apparaten.
 
 > [!TIP]
-> U kunt niet alle beleidstypen implementeren. Het beleid voor het beheren van mobiele toepassingen bijvoorbeeld wordt niet geïmplementeerd. Dit beleidstype wordt in plaats daarvan gekoppeld aan een app, dat u vervolgens implementeert.
+> U kunt niet alle beleidstypen implementeren. Het beleid voor het beheren van mobiele toepassingen (MAM) bijvoorbeeld wordt niet geïmplementeerd. Dit beleidstype wordt in plaats daarvan gekoppeld aan een app, dat u vervolgens implementeert.
 
 ## Een configuratiebeleid implementeren
 
@@ -93,9 +88,9 @@ Nu u een beleid hebt gemaakt, wilt u dit waarschijnlijk implementeren op een of 
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
+    -   Om het beleid te implementeren, selecteert u een of meer groepen waarvoor u het beleid wilt implementeren en vervolgens klikt u op **Toevoegen** &gt; **OK**.
 
-    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: kies **Annuleren**.
+    -   Kies **Annuleren** om het dialoogvenster te sluiten zonder het beleid te implementeren.
 
 Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
 
@@ -107,69 +102,67 @@ Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over d
 
 - **Bewerken**: hiermee opent u de eigenschappen voor het geselecteerde beleid, zodat u wijzigingen kunt aanbrengen.
 - **Verwijderen**: hiermee verwijdert u het geselecteerde beleid.<br>Wanneer u een beleid verwijdert, wordt dit verwijderd uit alle groepen waarop het was geïmplementeerd.
-- **Implementatie beheren**: selecteer de groep waarvoor u het beleid wilt implementeren en kies **Toevoegen**.
+- **Implementatie beheren**: selecteer de groep waarvoor u het beleid wilt implementeren en kies vervolgens **Toevoegen**.
 
 
 ## Veelgestelde vragen over het Intune-beleid
 
-### Hoe lang duurt het voor mobiele apparaten beleid of apps hebben ontvangen nadat deze zijn geïmplementeerd?
-Wanneer er beleid of een app wordt geïmplementeerd, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren. Dit vindt meestal binnen 5 minuten plaats.
+### Hoe lang duurt het voor mobiele apparaten een beleid of apps hebben ontvangen nadat deze zijn geïmplementeerd?
+Wanneer er een beleid of een app wordt geïmplementeerd, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren. Dit vindt meestal binnen 5 minuten plaats.
 
-Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, vinden er nog 3 pogingen plaats.  Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen.
+Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, doet Intune nog drie pogingen.  Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen. In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
 
-In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
-
-- iOS: om de 6 uur
-- Android: om de 8 uur
-- Windows Phone: om de 8 uur
-- Geregistreerde Windows RT-apparaten: elke 24 uur
-- Windows 8.1- en Windows 10-pc's die als apparaten zijn geregistreerd: om de 8 uur
+- iOS en Mac OS X: om de 6 uur.
+- Android: om de 8 uur.
+- Windows Phone: om de 8 uur.
+- Ingeschreven Windows RT-apparaten: elke 24 uur.
+- Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de 8 uur.
 
 Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
 
-- iOS: om de 15 minuten gedurende 6 uur en daarna om de 6 uur
-- Android: om de 3 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur
-- Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur
-- Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 24 uur
+- iOS en Mac OS X: om de 15 minuten gedurende 6 uur en daarna om de 6 uur.
+- Android: om de 3 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
+- Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
+- Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 8 uur.
 
-Gebruikers kunnen ook de bedrijfsportal-app starten en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
+Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
 ### Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
-Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle, zoals weergegeven in bovenstaande tabellen.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals de actie wissen, vergrendelen, wachtwoord opnieuw instellen, app implementeren, profiel implementeren (Wi-Fi, VPN, e-mail, enz.) of beleidsregels implementeren, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren om deze updates te ontvangen.
+Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals de actie wissen, vergrendelen, wachtwoord opnieuw instellen, app implementeren, profiel implementeren (Wi-Fi, VPN, e-mail, enz.) of beleidsregels implementeren, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren om deze updates te ontvangen.
 
 Andere wijzigingen zoals het wijzigen van de contactgegevens in de bedrijfsportal zorgen niet voor een onmiddellijke melding aan apparaten.
 
 > [!TIP]
-> Wanneer een beleid met instellingen wordt geïmplementeerd op een Android-apparaat, krijgt de gebruiker een melding dat hij actie moet ondernemen om te voldoen aan het beleid. De nieuwe instellingen worden pas van kracht nadat de gebruiker de vereiste actie heeft ondernomen of het apparaat opnieuw is opgestart.
+> Wanneer een beleid met instellingen wordt geïmplementeerd op een Android-apparaat, krijgt de gebruiker een melding om actie te ondernemen om te voldoen aan het beleid. De nieuwe instellingen worden pas van kracht nadat de gebruiker de vereiste actie heeft ondernomen of het apparaat opnieuw is opgestart.
 
 ### Als er meerdere beleidsregels worden geïmplementeerd voor dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
-Het is belangrijk te weten dat wanneer er twee of meer sets beleidsregels naar dezelfde gebruiker of hetzelfde apparaat worden geïmplementeerd de beoordeling van welke instelling wordt toegepast wordt uitgevoerd op het niveau van de individuele instelling.
+Wanneer er twee of meer sets beleidsregels naar dezelfde gebruiker of hetzelfde apparaat worden geïmplementeerd, vindt de beoordeling van welke instelling wordt toegepast plaats op het niveau van de individuele instelling:
 
--   Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen
+-   Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen.
 
--   De strengste nalevingsbeleidsinstelling wordt toegepast als dit beleid wordt vergeleken met dezelfde instelling in een ander nalevingsbeleid
+-   De strengste nalevingsbeleidsinstelling wordt toegepast als dit beleid wordt vergeleken met dezelfde instelling in een ander nalevingsbeleid.
 
--   De strengste configuratiebeleidsinstelling wordt toegepast als dit beleid wordt vergeleken met dezelfde instelling in een ander configuratiebeleid
+-   Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in de Intune-console. U moet dergelijke conflicten handmatig oplossen.
 
-### Wat gebeurt er wanneer MAM-beleidsregels met elkaar conflicteren? Welke regel wordt toegepast op de app?
-Conflictwaarden zijn de meest beperkende instellingen die beschikbaar zijn in MAM-beleid, uitgezonderd cijferinvoervelden (zoals aantal pincodepogingen voorafgaand aan opnieuw instellen).  De cijferinvoervelden worden op hetzelfde ingesteld als de waarden, alsof u een MAM-beleid maakt in de console met de aanbevolen instellingenoptie.
+### Wat gebeurt er wanneer MAM-beleidsregels elkaar tegenspreken? Welke regel wordt toegepast op de app?
+Conflictwaarden zijn de meest beperkende instellingen die beschikbaar zijn in MAM-beleid, uitgezonderd cijferinvoervelden (zoals aantal pincodepogingen voorafgaand aan opnieuw instellen).  De cijferinvoervelden worden op hetzelfde ingesteld als de waarden, alsof u een MAM-beleid hebt gemaakt in de console met behulp van de aanbevolen instellingenoptie.
 
 Er treden conflicten op wanneer twee beleidsinstellingen hetzelfde zijn.  Bijvoorbeeld als u twee MAM-beleidsregels hebt geconfigureerd die identiek zijn met uitzondering van de instelling voor kopiëren en plakken.  In dit scenario wordt de instelling voor kopiëren en plakken ingesteld op de meest beperkende waarde, maar de overige instellingen worden toegepast zoals die zijn geconfigureerd.
 
-Als er een beleid is geïmplementeerd voor de app en dat beleid is van kracht geworden, en er wordt vervolgens een tweede beleid geïmplementeerd, heeft het beleid dat als eerste is geïmplementeerd prioriteit en dit blijft toegepast, terwijl de tweede als conflicterend wordt beschouwd. Als ze echter allebei tegelijkertijd worden toegepast, wat betekent dat er geen voorafgaand beleid is, worden ze allebei als conflicterend beschouwd en alle eventueel conflicterende instellingen worden op de meest beperkende waarden ingesteld.
+Als er een beleid is geïmplementeerd voor de app en dat beleid is van kracht geworden, en er wordt vervolgens een tweede beleid geïmplementeerd, heeft het eerste beleid prioriteit en dit blijft toegepast, terwijl het tweede als conflicterend wordt beschouwd. Indien ze beide op hetzelfde moment worden toegepast, wanneer er dus geen voorafgaand beleid is, worden ze allebei als conflicterend beschouwd. Eventueel conflicterende instellingen worden ingesteld op de meest beperkende waarden.
 
 ### Wat gebeurt er als aangepaste iOS-beleidsregels conflicteren?
-Intune beoordeelt de nettolading van Apple-configuratiebestanden of aangepaste OMA-URI-beleid niet, maar fungeert alleen als bezorgingsmechanisme.
+Intune beoordeelt de nettolading van Apple-configuratiebestanden of aangepaste OMA-URI-beleid niet. Het fungeert alleen als bezorgingsmechanisme.
 
-Zorg er daarom voor dat wanneer u een aangepast beleid implementeert dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als er bij een aangepast beleid sprake is van conflicterende instellingen, worden instellingen in willekeurige volgorde toegepast.
+Zorg er voor dat wanneer u een aangepast beleid implementeert dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als er bij een aangepast beleid sprake is van conflicterende instellingen, worden instellingen in willekeurige volgorde toegepast.
 
 ### Wat gebeurt er wanneer een beleid wordt verwijderd of niet langer van toepassing is?
-Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop een beleid is geïmplementeerd, worden het beleid en de instellingen van het apparaat verwijderd, volgens de volgende tabellen:
+Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop een beleid is geïmplementeerd, worden het beleid en de instellingen van het apparaat verwijderd, volgens de volgende lijsten.
 
 #### Ingeschreven apparaten
 
 - Wi-Fi-, VPN-, certificaat- en e-mailprofielen: deze profielen worden verwijderd van alle ondersteunde ingeschreven apparaten.
-- Alle andere beleidstypen
+- Alle andere beleidstypen:
     - **Windows- en Android-apparaten**: de instellingen worden niet van het apparaat verwijderd.
     - **Windows Phone 8.1-apparaten**: de volgende instellingen worden verwijderd:
         - Wachtwoord vereist voor het ontgrendelen van mobiele apparaten
@@ -178,8 +171,26 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
         - Vereist wachtwoordtype
         - Wachtwoordverlooptijd (dagen)
         - Wachtwoordgeschiedenis onthouden
-        - Aantal herhaalde, mislukte aanmeldingen dat wordt toegestaan voordat het apparaat wordt gewist - Minuten van inactiviteit voordat het wachtwoord wordt vereist - Vereist wachtwoordtype – minimumaantal tekensets - Camera toestaan - Versleuteling vereisen op mobiele apparaten - Verwisselbare opslag toestaan - Webbrowser toestaan - Toepassingsarchief toestaan - Schermafbeelding toestaan - Geolocatie toestaan - Microsoft-account toestaan - Kopiëren en plakken toestaan - Wi-Fi-tethering toestaan - Automatische verbinding met gratis Wi-Fi-hotspots toestaan - Rapportage van Wi-Fi-hotspots toestaan - Fabrieksinstellingen toestaan - Bluetooth toestaan - NFC toestaan - Wi-Fi toestaan
-    
+        - Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist
+        - Minuten inactief voordat wachtwoord is vereist
+        - Vereist wachtwoordtype – minimum aantal tekensets
+        - Camera toestaan
+        - Versleuteling vereisen voor mobiel apparaat
+        - Verwisselbare opslag toestaan
+        - Webbrowser toestaan
+        - Toepassingsarchief toestaan
+        - Schermafbeelding toestaan
+        - Geolocatie toestaan
+        - Microsoft-account toestaan
+        - Kopiëren en plakken toestaan
+        - Wi-Fi-tethering toestaan
+        - Automatische verbinding met gratis Wi-Fi-hotspots toestaan
+        - Melden van Wi-Fi-hotspots toestaan
+        - Terugzetten op fabrieksinstellingen toestaan
+        - Bluetooth toestaan
+        - NFC toestaan
+        - Wi-Fi toestaan
+
     - **iOS**: alle instellingen worden verwijderd, met uitzondering van:
         - Spraakroaming toestaan
         - Gegevensroaming toestaan
@@ -193,16 +204,17 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
 - **Instellingen voor Windows Firewall**: de instellingen worden opnieuw ingesteld op de standaardwaarde voor het computerbesturingssysteem. Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
 
 
-### Hoe kan ik het beleid vernieuwen op een apparaat zodat het actueel is? (alleen van toepassing op Windows-pc's met de Intune-clientsoftware)
+### Hoe kan ik het beleid vernieuwen op een apparaat zodat dit actueel is? (Alleen van toepassing op Windows-pc's met de Intune-clientsoftware.)
 
 1.  Selecteer in een apparaatgroep de apparaten waarvoor u het beleid wilt vernieuwen, en kies vervolgens **Externe taken** &gt; **Beleid vernieuwen**.
 2.  Kies in de rechterbenedenhoek van de Intune-beheerconsole **Externe taken** om de taakstatus te controleren.
 
 ### Waar vind ik meer informatie over het oplossen van beleidsproblemen?
 
-Zie [Beleidsproblemen oplossen in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
+Zie [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

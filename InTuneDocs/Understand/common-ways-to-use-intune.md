@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Algemene manieren om Intune te gebruiken | Microsoft Intune
-description:
-keywords:
+description: Een lijst met zes van de meest algemene taken die gebruikers Intune willen laten uitvoeren
+keywords: 
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3defa4b8f78e854532d32c66a17f0ed18d36cec7
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Voordat u aan de slag gaat met implementatietaken, is het belangrijk om de Enterprise Mobility-belanghebbenden van uw bedrijf op één lijn te krijgen met de bedrijfsdoelen.  Dit is belangrijk als u nog nooit met Enterprise Mobility te maken hebt gehad, maar ook als u migreert vanaf een ander product.  De behoeften ten aanzien van Enterprise Mobility veranderen op dynamische wijze en de aanpak van Microsoft om aan deze behoeften te voldoen, kan soms verschillen van die van andere oplossingen in de markt.  De beste manier om op één lijn te komen met de bedrijfsdoelen is door te uiten wat u wilt bereiken voor uw werknemers, partners en IT.  Hieronder staat een korte inleiding over de zes meest voorkomende scenario’s waarin Intune wordt gebruikt, met koppelingen naar aanvullende informatie over het plannen en implementeren van die scenario’s.
 
->[!NOTE] Wilt u weten hoe de IT-afdeling van Microsoft Intune gebruikt om Microsoft-werknemers in staat te stellen toegang te krijgen tot bedrijfsbronnen op hun mobiele apparaten, terwijl de zakelijke gegevens goed beveiligd blijven? [Lees deze technische casestudy](https://www.microsoft.com/itshowcase/Article/Content/588) voor gedetailleerde informatie over hoe de IT-afdeling van Microsoft Intune en andere services gebruikt om identiteiten, apparaten, apps en gegevens te beheren.  
+>[!NOTE]
+>Wilt u weten hoe de IT-afdeling van Microsoft Intune gebruikt om Microsoft-werknemers in staat te stellen toegang te krijgen tot bedrijfsbronnen op hun mobiele apparaten, terwijl de zakelijke gegevens goed beveiligd blijven? [Lees deze technische casestudy](https://www.microsoft.com/itshowcase/Article/Content/588) voor gedetailleerde informatie over hoe de IT-afdeling van Microsoft Intune en andere services gebruikt om identiteiten, apparaten, apps en gegevens te beheren.  
 
 ## Uw on-premises-e-mail en -gegevens beveiligen zodat deze veilig kunnen worden geopend vanaf mobiele apparaten
 De meeste Enterprise Mobility-strategieën worden ontwikkeld op basis van een plan om toegang tot e-mail te beveiligen voor werknemers die mobiele apparaten buiten het bedrijf gebruiken. Veel bedrijven hebben nog steeds on-premises gegevens- en toepassingsservers, zoals Microsoft Exchange, die worden gehost op het bedrijfsnetwerk. Intune en de Enterprise Mobility Suite (EMS) bieden een oplossing voor unieke geïntegreerde voorwaardelijke toegang voor de Exchange-server zodat mobiele apps geen toegang meer krijgen tot e-mail tot het apparaat is geregistreerd bij Intune. Daarvoor hoeft geen andere gatewaymachine te worden geïmplementeerd in uw bedrijfsnetwerk.
@@ -67,11 +62,12 @@ Taakgerichte werknemers maken steeds meer gebruik van mobiele technologieën.  G
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Uw werknemers in staat stellen Office 365 veilig te gebruiken vanuit een niet-beheerde openbare kiosk
-Soms moeten uw werknemers apparaten, toepassingen of browsers gebruiken die u niet kunt beheren, zoals de openbare computers op beurzen en in hotellobby’s. Moet u uw werknemers toegang bieden tot bedrijfs-e-mails vanaf deze locaties? Voor Intune en de Enterprise Mobility Suite <!--you have choices. The--> kunt u gewoon Nee zeggen en e-mailtoegang beperken tot apparaten die door uw bedrijf worden beheerd.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Zo zorgt u ervoor dat geverifieerde werknemers niet per ongeluk bedrijfsgegevens achterlaten op de niet-vertrouwde computer.
+Soms moeten uw werknemers apparaten, toepassingen of browsers gebruiken die u niet kunt beheren, zoals de openbare computers op beurzen en in hotellobby’s. Moet u uw werknemers toegang bieden tot bedrijfs-e-mails vanaf deze locaties? Met Intune en Enterprise Mobility Suite <!--you have choices. The--> kunt u gewoon Nee zeggen en e-mailtoegang beperken tot apparaten die door uw bedrijf worden beheerd.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Zo zorgt u ervoor dat geverifieerde werknemers niet per ongeluk bedrijfsgegevens achterlaten op de niet-vertrouwde computer.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

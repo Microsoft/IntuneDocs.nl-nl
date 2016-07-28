@@ -1,10 +1,10 @@
 ---
 title: Instellingen voor nalevingsbeleid voor Android-apparaten | Microsoft Intune
-description: 
+description: In dit onderwerp worden de instellingen voor het nalevingsbeleid voor Android-apparaten beschreven.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
-ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+translationtype: Human Translation
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
 
 
 ---
@@ -67,6 +68,6 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

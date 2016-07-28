@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Beleid maken en een app publiceren voor gebruikers van de evaluatieversie | Microsoft Intune
-description:
-keywords:
+title: Beleid maken en een app publiceren voor gebruikers | Microsoft Intune
+description: Zo kunt u beleidsregels maken en een app publiceren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 1cc190aa4103bbaa2b2273f08319c3fba9f5507e
+
 
 ---
 
 
 # Beleid maken en een app publiceren voor gebruikers van de evaluatieversie
-Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. Als u van plan bent om Intune na de evaluatie te gebruiken voor apparaten die u configureert voor gebruik in productieomgevingen, is het absoluut essentieel dat u de instructies volgt in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)..
+Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. Als u van plan bent om Intune na de evaluatie te gebruiken voor apparaten die u configureert voor gebruik in productieomgevingen, is het absoluut essentieel dat u de instructies volgt in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde computers. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal, zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
 
@@ -37,32 +31,32 @@ In deze stappen stelt u een configuratiebeleid voor mobiele apparaten in en conf
 
 ## Een configuratiebeleid voor mobiele apparaten maken en implementeren
 
-1.  Open de [Intune-beheerconsole](https://manage.microsoft.com/)..
+1.  Open de [Intune-beheerconsole](https://manage.microsoft.com/).
 
 2.  Klik in het linkerdeelvenster op het pictogram **Beleid**.
 
-3.  Klik in de lijst **Taken** op de pagina **Overzicht** op **Beleid toevoegen**..
+3.  Klik in de lijst **Taken** op de pagina **Overzicht** op **Beleid toevoegen**.
 
-4.  Vouw in de lijst met beleidsregels het platform uit waarvoor u beleid wilt maken, selecteer **Algemene configuratie**, kies **Een beleid maken en implementeren met de aanbevolen instellingen** en kies vervolgens **Beleid maken**..
+4.  Vouw in de beleidslijst het platform uit waarvoor u beleid wilt maken, selecteer **Algemene configuratie**, kies **Beleid met de aanbevolen instellingen maken en implementeren** en kies vervolgens **Beleid maken**.
 
-5.  Als u wordt gevraagd om **de groepen te selecteren waarvoor u dit beleid wilt implementeren**, selecteert u in de lijst de optie **Mijn proefgebruikers** en kiest u **Toevoegen** &gt; **OK**..
+5.  Als u wordt gevraagd om **de groepen te selecteren waarvoor u dit beleid wilt implementeren**, selecteert u in de lijst de optie **Mijn proefgebruikers** en kiest u **Toevoegen** &gt; **OK**.
 
 Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en is geïmplementeerd voor de groep **Mijn proefgebruikers** . Dubbelklik op het beleid om de instellingen weer te geven.
 
 ## De app Skype voor mobiele apparaten publiceren
 
-1.  Klik in de [Intune-beheerconsole](https://manage.microsoft.com/) op het **Apps**-pictogram en kies vervolgens **Apps** &gt; **App toevoegen**. Voer uw Intune-referenties in als u hierom wordt gevraagd.
+1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) het pictogram **Apps** en kies vervolgens **Apps** &gt; **App toevoegen**. Voer uw Intune-referenties in als u hierom wordt gevraagd.
 
     > [!NOTE]
     > De eerste keer dat u de **Uitgever van Microsoft Intune-software** start, treedt er een korte vertraging op wanneer de toepassing wordt geïnstalleerd.
 
-2.  Bekijk de beveiligingswaarschuwing en kies **Uitvoeren**..
+2.  Lees de beveiligingswaarschuwing en kies **Uitvoeren**.
 
-3.  Kies op de pagina **Voordat u begint** de optie **Volgende**..
+3.  Kies op de pagina **Voordat u begint** de optie **Volgende**.
 
-4.  Selecteer **Externe koppeling** onder **Selecteren hoe deze software beschikbaar moet worden gesteld voor apparaten** op de pagina **Setup van software**..
+4.  Selecteer **Externe koppeling** onder **Selecteren hoe deze software beschikbaar moet worden gesteld voor apparaten**op de pagina **Setup van software**.
 
-5.  Geef onder **Geef de URL op** de externe koppeling voor de software op en klik vervolgens op **Volgende**. Zorg ervoor dat de URL begint met **https://**. Gebruik voor de app Skype de koppeling hieronder die overeenkomt met het platform van het mobiele apparaat dat u gebruikt:
+5.  Geef in **Geef de URL op** de externe koppeling voor de software op en kies **Volgende**. Zorg ervoor dat de URL begint met **https://**. Gebruik voor de app Skype de koppeling hieronder die overeenkomt met het platform van het mobiele apparaat dat u gebruikt:
 
     -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
@@ -86,13 +80,13 @@ Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en is ge�
 
 7.  Controleer op de pagina **Samenvatting** de informatie over de software en kies vervolgens **Uploaden**. Kies **Sluiten** om de wizard af te sluiten.
 
-8.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Apps** &gt; **Apps** &gt; **Skype** &gt; **Implementatie beheren**..
+8.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Apps** &gt; **Apps** &gt; **Skype** &gt; **Implementatie beheren**.
 
-9. Selecteer op de pagina **Groepen selecteren** de optie **Mijn proefgebruikers** om de software te implementeren voor die gebruikersgroep en klik vervolgens op **Toevoegen** &gt; **Volgende**..
+9. Selecteer op de pagina **Groepen selecteren** de optie **Mijn proefgebruikers** om de software te implementeren voor die gebruikersgroep en kies vervolgens **Toevoegen** &gt; **Volgende**.
 
 10. Selecteer **Beschikbare installatie** in de kolom **Goedkeuring** op de pagina **Implementatieactie** voor de groep.
 
-11. Kies **Voltooien**..
+11. Kies **Voltooien**.
 
 De app Skype is nu vanuit de bedrijfsportal beschikbaar voor installatie op mobiele apparaten, maar u moet eerst Intune-software installeren op pc’s en mobiele apparaten.
 
@@ -101,9 +95,10 @@ Gefeliciteerd! U hebt zojuist stap 4 van de procedure voor de *Microsoft Intune-
 
 >[!div class="step-by-step"]
 
->[&larr; **Groepen maken**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Apparaten inschrijven** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
+>[&larr; **Groepen maken**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Apparaten registreren** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

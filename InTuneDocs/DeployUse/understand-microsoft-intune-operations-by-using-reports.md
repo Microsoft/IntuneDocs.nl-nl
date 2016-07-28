@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Microsoft Intune-bewerkingen begrijpen met behulp van rapporten | Microsoft Intune
-description:
-keywords:
+description: Rapporten over software, hardware en softwarelicenties in uw organisatie maken en beheren.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 10908e3bb8e235659db572667bd10820adf0be52
+
 
 ---
 
@@ -41,10 +35,11 @@ Intune-rapporten geven informatie over software, hardware en softwarelicenties i
 |**Inventarisrapporten van mobiele apparaten**|Tonen informatie over de mobiele apparaten in uw organisatie. U kunt de informatie filteren die wordt weergegeven op basis van groepen, of het nu een jailbroken of rooted apparaat betreft, en op besturingssysteem.|
 |**Licentie-inkooprapporten**|Tonen de softwaretitels voor alle gelicentieerde software in geselecteerde licentiegroepen, op basis van de licentieovereenkomsten. Als softwarelicentiegegevens langer dan 24 uur niet zijn vernieuwd, worden deze vernieuwd wanneer u een licentierapport genereert. Een licentierapport is geen exacte berekening van de softwaretitels die worden gebruikt, noch een bewijs van naleving van overeenkomsten. Het rapport is een middel waarmee u licentiebeslissingen voor uw organisatie kunt nemen. Intune detecteert mogelijk bepaalde producten niet die over een Microsoft-volumelicentie kunnen beschikken. De beschikbare filters zijn:<br /><br />**Alle overeenkomsten** toont alle gelicentieerde softwareproducten die worden beheerd met Intune.<br /><br />**Volumelicentieovereenkomsten** toont uitsluitend VLSC-softwareproducten.<br /><br />**Overige softwarelicentieovereenkomsten** toont softwareproducten die buiten VLSC worden beheerd.|
 |**Licentie-installatierapporten**|Vergelijk geïnstalleerde software op computers in uw organisatie met de huidige dekking van uw licentieovereenkomst volgens het Volume Licensing Service Center (VLSC). Filters omvatten:<br /><br />**Alle overeenkomsten** toont alle gelicentieerde softwareproducten die worden beheerd met Intune.<br /><br />**Volumelicentieovereenkomsten** toont uitsluitend VLSC-softwareproducten.<br /><br />**Overige softwarelicentieovereenkomsten** toont softwareproducten die buiten VLSC worden beheerd.|
-|**Rapporten van voorwaarden**|Laat ziet of gebruikers de door u geïmplementeerde voorwaarden hebben geaccepteerd, en welke versie ze hebben geaccepteerd. U kunt maximaal 10 gebruikers opgeven waarvoor instemming met alle bij hun geïmplementeerde voorwaarden wordt weergegeven, of u kunt de acceptatiestatus voor een bepaalde bij hun geïmplementeerde voorwaarde weergeven.|
+|**Rapporten van voorwaarden**|Weergeven of gebruikers de door u geïmplementeerde voorwaarden hebben geaccepteerd, en welke versie ze hebben geaccepteerd. U kunt maximaal 10 gebruikers opgeven waarvoor instemming met alle bij hun geïmplementeerde voorwaarden wordt weergegeven, of u kunt de acceptatiestatus voor een bepaalde bij hun geïmplementeerde voorwaarde weergeven.|
 |**Rapporten over niet-compatibele apps**|Tonen informatie over de gebruikers die apps hebben geïnstalleerd die op uw lijsten met compatibele en niet-compatibele apps staan. Met dit rapport kunt u zoeken naar gebruikers en apparaten die niet voldoen aan uw bedrijfsbeleid inzake apps.|
-|**Rapporten voor certificaatnaleving**|Toont welke certificaten via SCEP of PKCS #12 (.pfx) zijn uitgegeven aan gebruikers en apparaten. Met dit rapport kunt u zoeken naar certificaten die zijn uitgegeven, verlopen en ingetrokken.|
-|**Apparaatgeschiedenisrapporten**|Tonen een historisch logboek van intrekkings-, wis- en verwijderingsacties. Gebruik dit rapport om te zien wie in het verleden acties op apparaten heeft gestart.|
+|**Rapporten voor certificaatnaleving**|Weergeven welke certificaten via SCEP of PKCS #12 (.pfx) zijn uitgegeven aan gebruikers en apparaten. Met dit rapport kunt u zoeken naar certificaten die zijn uitgegeven, verlopen en ingetrokken.|
+|**Apparaatgeschiedenisrapporten**|Een historisch logboek van intrekkings-, wis- en verwijderingsacties weergeven. Gebruik dit rapport om te zien wie in het verleden acties op apparaten heeft gestart.|
+|**Health Attestation-rapporten**|De status van mobiele apparaten weergeven.|
 |**Mac OS X-hardwarerapport**|Geeft de details weer van de hardware van alle ingeschreven Mac OS X-apparaten in de door u geselecteerde groepen. Zie [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md) voor informatie over de hardware-inventarisatie van deze apparaten.|
 |**Mac OS X-softwarerapport**|Geeft de software weer die op alle Mac OS X-apparaten in de door u geselecteerde groepen is geïnstalleerd Het rapport bevat de softwarenaam (als een bundel-id), de verkorte (of gebruiksvriendelijke) versienaam, de versie en het aantal apparaten waarop de software is geïnstalleerd.|
 
@@ -74,6 +69,7 @@ Bovendien ondersteunen rapporten de volgende acties:
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

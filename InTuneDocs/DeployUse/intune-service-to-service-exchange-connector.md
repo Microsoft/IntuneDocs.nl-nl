@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: De Microsoft Intune Exchange Connector configureren voor gehoste Exchange | Microsoft Intune
-description:
-keywords:
+title: Exchange Connector voor gehoste Exchange | Microsoft Intune
+description: Verbinding maken met Intune Office 365 Exchange-service voor ondersteuning van Exchange ActiveSync MDM (beheer van mobiele apparaten).
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
+
 
 ---
 
@@ -54,21 +48,22 @@ U moet ook een Exchange Online-gebruikersaccount maken dat wordt gebruikt door d
 
 1. Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor [bovenstaande](#exchange-cmdlet-requirements) cmdlets. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
 
-2.  Kies in het deelvenster met snelkoppelingen de optie **Beheer** en ga vervolgens naar **Beheer van mobiele apparaten** > **Microsoft Exchange** > **Exchange-verbinding instellen**..
+2.  Kies in het deelvenster met snelkoppelingen de optie **Beheer** en ga vervolgens naar **Beheer van mobiele apparaten** > **Microsoft Exchange** > **Exchange-verbinding instellen**.
 ![De pagina Service to Service Connector instellen](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  Klik op de pagina **Exchange-verbinding instellen** op **Service to Service Connector instellen**..
+3.  Klik op de pagina **Exchange-verbinding instellen** op **Service to Service Connector instellen**.
 
 
 De Service to Service Connector wordt automatisch geconfigureerd en gesynchroniseerd met uw gehoste Exchange-omgeving.
 
 ## De Exchange-verbinding valideren
 
-Nadat u de Exchange Connector hebt geconfigureerd, klikt u in de Intune-beheerconsole op de werkruimte **Beheer** en gaat u naar **Beheer van mobiele apparaten** > **Microsoft Exchange** en controleert u of de details die u hebt opgegeven, worden vermeld onder **Exchange-verbindingsgegevens**..
+Nadat u de Exchange Connector hebt geconfigureerd, kiest u in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de werkruimte **Beheer** en gaat u naar **Beheer van mobiele apparaten**  > **Microsoft Exchange** en controleert u of de details die u hebt opgegeven, worden weergegeven onder **Exchange-verbindingsgegevens**.
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

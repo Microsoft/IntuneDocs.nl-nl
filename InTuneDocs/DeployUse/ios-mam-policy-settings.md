@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: MAM-beleidsinstellingen voor iOS | Microsoft Intune
-description:
-keywords:
+description: Dit onderwerp beschrijft de beleidsinstellingen voor het beheren van mobiele apps voor iOS-apparaten.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
+
 
 ---
 
@@ -42,7 +36,9 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
   - **Alle apps**: overdracht naar alle apps toestaan.
   - **Geen**: geen gegevensoverdracht naar apps toestaan met inbegrip van andere door beleid beheerde apps.
 
-  Als u deze optie daarnaast instelt op **Door beleid beheerde Apps** of **Geen**, wordt de iOS 9-functie waarmee Spotlight Search naar gegevens in apps kan zoeken, geblokkeerd.
+  Als u deze optie daarnaast instelt op **Door beleid beheerde apps** of **Geen**, wordt de iOS 9-functie waarmee Spotlight Search naar gegevens in apps kan zoeken, geblokkeerd.
+
+  **Deze instelling heeft geen controle over het gebruik van de functie Openen in op mobiele apparaten. Als u de functie Openen in wilt beheren, zie [hier](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Standaardwaarde = Door beleid beheerde apps**
 
@@ -83,7 +79,7 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
   Wanneer u deze instelling inschakelt, moet de eindgebruiker een pincode instellen en gebruiken voor toegang tot het apparaat.  Als er geen pincode wordt ingesteld, worden de apps niet gestart en wordt de eindgebruiker gevraagd om een pincode in te stellen. Dit gebeurt met het bericht 'Uw bedrijf vereist dat u eerst een pincode voor apparaattoegang inschakelt voor toegang tot deze app'.
 
   **Standaardwaarde = Versleutelingsoptie is niet geselecteerd.**
-- **ContactSyncDisabled**: selecteer **Ja** om te voorkomen dat contactgegevens worden gesynchroniseerd met de systeemeigen adresboek-app op het apparaat. Als u **Nee** selecteert, slaat de app de contactgegevens op in de systeemeigen adresboek-app op het apparaat.
+- **Synchronisatie van contactpersonen uitschakelen:** kies **Ja** om te voorkomen dat contactgegevens worden gesynchroniseerd met de systeemeigen adresboek-app op het apparaat. Als u **Nee** selecteert, slaat de app de contactgegevens op in de systeemeigen adresboek-app op het apparaat.
 
   Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, ook verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de **Microsoft Outlook**-app.
 
@@ -117,6 +113,7 @@ Op iOS-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk
   **Standaardwaarde = 90 dagen**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

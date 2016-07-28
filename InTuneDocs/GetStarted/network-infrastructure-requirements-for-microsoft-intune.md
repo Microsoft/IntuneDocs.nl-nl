@@ -1,9 +1,9 @@
 ---
 title: Vereisten voor de netwerkinfrastructuur | Microsoft Intune
-description: 
+description: Vereisten voor Intune-firewall, -poort, -domein en -proxyserver
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: b551aca6994780591dabe042420d5f23d98b218b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8088765d726a9042b69fb12235994320e732459b
 
 
 ---
@@ -168,6 +168,6 @@ U kunt ook een proxyserver gebruiken die inhoud opslaat in de cache om [het gebr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

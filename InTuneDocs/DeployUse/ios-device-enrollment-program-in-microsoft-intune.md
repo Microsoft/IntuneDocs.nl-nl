@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Apple DEP-beheer voor iOS-apparaten met Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Apple DEP-beheer voor iOS-apparaten | Microsoft Intune
+description: "'Draadloos' een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program (DEP) zijn aangeschaft om Apple-apparaten te beheren."
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
+
 
 ---
 
@@ -59,6 +53,10 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
       - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie en vervolgens als die gebruiker toegang tot gegevens en e-mail van het bedrijf krijgen.  **Gebruikersaffiniteit** moet worden geconfigureerd voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren).
       - **Geen gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die gebruikt wordt voor het installeren van LOB-apps, zullen niet werken.
 
+    U kunt ook **apparaten aan de volgende groep toewijzen**. Klik op **Selecteren** om een groep te kiezen.
+
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     Schakel vervolgens **DEP-instellingen (programma voor apparaatinschrijving) voor dit beleid configureren** in om DEP te ondersteunen.
 
       ![Deelvenster van de configuratieassistent](../media/pol-sa-corp-enroll.png)
@@ -78,8 +76,16 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
         - **Locatieservices**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om de service gevraagd
         - **Herstellen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om een iCloud-back-up
         - **Apple-id**: een Apple-id is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune. Als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple-id wanneer Intune een app zonder een id probeert te installeren.
-        - **Voorwaarden en bepalingen**: als deze optie is ingeschakeld, worden gebruikers tijdens de activering door Configuratieassistent gevraagd om de voorwaarden en bepalingen van Apple te accepteren - **Touch ID**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd - **Apple Pay**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd - **Zoom**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd - **Siri**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd - **Diagnostische gegevens verzenden naar Apple**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd -  **Aanvullend Apple Configurator-beheer inschakelen**: instellen op **Niet toestaan** om te voorkomen dat bestanden worden gesynchroniseerd met iTunes of beheer via Apple Configurator. Microsoft raadt u aan om **Niet toestaan** in te stellen, een eventuele verdere configuratie vanuit Apple Configurator te exporteren en vervolgens als een aangepast iOS-configuratieprofiel via Intune te implementeren in plaats van deze instelling te gebruiken om een handmatige implementatie met of zonder een certificaat toe te staan.
-        - **Niet toestaan**: hiermee wordt voorkomen dat het apparaat communiceert via USB (en wordt koppeling uitgeschakeld) - **Toestaan**: hiermee wordt toegestaan dat het apparaat communiceert via een USB-verbinding in het geval van een pc of Mac - **Certificaat vereisen**: hiermee wordt een koppeling met een Mac toegestaan met een certificaat dat is geïmporteerd naar het registratieprofiel
+        - **Voorwaarden**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd de voorwaarden van Apple te accepteren
+        - **Touch ID**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
+        - **Apple Pay**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
+        - **In- en uitzoomen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
+        - **Siri**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
+        - **Diagnostische gegevens verzenden naar Apple**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
+     -  **Extra beheer via Apple Configurator inschakelen**: stel deze optie in op **Niet toestaan** om te voorkomen dat bestanden met iTunes of beheer via Apple Configurator worden gesynchroniseerd. Microsoft raadt u aan om **Niet toestaan** in te stellen, een eventuele verdere configuratie vanuit Apple Configurator te exporteren en vervolgens als een aangepast iOS-configuratieprofiel via Intune te implementeren in plaats van deze instelling te gebruiken om een handmatige implementatie met of zonder een certificaat toe te staan.
+        - **Niet toestaan**: hiermee wordt voorkomen dat het apparaat communiceert via USB (het koppelen wordt uitgeschakeld)
+        - **Toestaan**: hiermee wordt toegestaan dat het apparaat communiceert via een USB-verbinding voor een pc of Mac
+        - **Certificaat vereisen**: hiermee is het mogelijk een Mac te koppelen met een certificaat dat is geïmporteerd in het registratieprofiel
 
 6.  **DEP-apparaten toewijzen voor beheer** Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf. Ga naar **Implementatieprogramma** &gt; **Programma apparaatinschrijving** &gt; **Apparaten beheren**. Geef een manier voor **Apparaten kiezen** op, geef apparaatgegevens op en geef apparaatdetails op aan de hand van **Serienummer** en **Bestelnummer** of voer **CSV-bestand uploaden** uit. Selecteer vervolgens **Toewijzen aan server**, selecteer de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en klik vervolgens op **OK**.
 
@@ -91,12 +97,15 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
 
 8.  **Apparaten aan gebruikers distribueren** Uw apparaten in bedrijfseigendom kunnen nu aan gebruikers worden gedistribueerd. Wanneer een iOS-apparaat wordt ingeschakeld, zal het worden ingeschreven voor beheer door Intune.
 
+## Wijzigingen aan Intune-groepstoewijzingen
 
+In september wordt apparaatgroepbeheer verplaatst naar Azure Active Directory. Na de overgang naar Azure Active Directory-groepen wordt groepstoewijzing niet weergegeven in de opties voor het **registratieprofiel voor bedrijfsapparaten**. Omdat deze wijziging in een aantal maanden wordt geïmplementeerd, ziet u de wijziging mogelijk niet meteen. Nieuwe dynamische toewijzing van apparaatgroepen kan worden gedefinieerd in Azure Active Directory op basis van de naam van het registratieprofiel voor bedrijfsapparaten. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd. [Meer informatie over Azure Active Directory-groepen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Zie tevens
 [Voorbereidingen voor het inschrijven van apparaten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

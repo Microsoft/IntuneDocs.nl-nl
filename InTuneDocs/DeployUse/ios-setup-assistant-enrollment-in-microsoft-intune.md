@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS-apparaten inschrijven via Configuratieassistent in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: iOS-apparaten inschrijven via Configuratieassistent | Microsoft Intune
+description: Zakelijke iOS-apparaten inschrijven met behulp van het hulpprogramma Apple Configurator om de fabrieksinstellingen van het apparaat terug te zetten en dit voor te bereiden voor de Configuratieassistent.
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
+
 
 ---
 
@@ -33,6 +27,7 @@ Intune ondersteunt het inschrijven van iOS-apparaten die bedrijfseigendom zijn, 
 Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparaten opnieuw instellen en deze apparaten voorbereiden op de nieuwe gebruiker van het apparaat.  Voor deze methode is vereist dat u met het iOS-apparaat een USB-verbinding met een Mac-computer maakt om bedrijfsinschrijving in te stellen en wordt ervan uitgegaan dat u Apple Configurator 2.0 gebruikt. Voor de meeste scenario's is vereist dat het beleid dat op het iOS-apparaat is toegepast, *gebruikersaffiniteit* bevat, zodat de app Intune Company Portal kan worden gebruikt.
 
 **Vereisten**
+* [iOS-inschrijving ingeschakeld](set-up-ios-and-mac-management-with-microsoft-intune.md) door het installeren van een APNs-certificaat
 * Fysieke toegang tot iOS-apparaten: apparaten moeten niet geconfigureerd zijn (fabrieksinstellingen toegepast) en geen wachtwoordbeveiliging hebben
 * Serienummers van apparaten: [het serienummer van een iOS-apparaat opvragen](https://support.apple.com/en-us/HT204308)
 * USB-verbindingskabels
@@ -42,8 +37,6 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
 1.  **Groep mobiele apparaten maken** (optioneel) Als uw bedrijf voor het beheer van apparaten groepen mobiele apparaten vereist, maakt u deze groepen. [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Een profiel maken voor apparaten** Met een registratieprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. Als u dit nog niet hebt gedaan, maakt u een inschrijvingsprofiel voor iOS-apparaten die worden ingeschreven met Apple Configurator.
-
-    ###### Een profiel maken
 
     1.  Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Apparaten in bedrijfseigendom** en kies vervolgens **Toevoegen...**.
 
@@ -67,6 +60,8 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
             -   **Geen relatie met gebruiker**: er is geen gebruiker aan het apparaat gekoppeld. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps die een gebruikersrelatie vereisen, zijn uitgeschakeld of werken niet.
 
         -   **Vooraf toegewezen apparatengroep**: alle apparaten waarvoor dit profiel wordt geïmplementeerd, behoren in eerste instantie tot deze groep. U kunt apparaten na de inschrijving opnieuw toewijzen.
+
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Device Enrollment Program**: het Apple Device Enrollment Program (DEP) kan niet worden gebruikt met inschrijving via Configuratieassistent. Zorg ervoor dat de wisselknop is ingesteld op **uit**.
 
@@ -155,6 +150,7 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
 [Voorbereidingen voor het inschrijven van apparaten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

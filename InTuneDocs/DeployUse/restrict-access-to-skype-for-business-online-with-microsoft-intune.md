@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Toegang tot Skype voor Bedrijven Online beperken | Microsoft Intune
-description:
-keywords:
+description: Toegang tot Skype for Business Online beschermen en controleren met voorwaardelijke toegang.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 693feee133a594032c0edc69f03f65681bacfb81
+
 
 ---
 
@@ -39,7 +33,7 @@ Wanneer een gebruiker in de doelgroep Skype voor Bedrijven Online op zijn appara
 **Voordat** u beleid voor voorwaardelijke toegang voor Skype voor Bedrijven Online configureert, moet u:
 - Een **Skype voor Bedrijven Online-abonnement** hebben en een Skype voor Bedrijven Online-licentie toewijzen aan gebruikers.
 - Een abonnement hebben voor de **Enterprise Mobility Suite** of **Azure Active Directory Premium**.
--   **Moderne authenticatie inschakelen** voor Skype voor Bedrijven Online. Meld u aan bij Microsoft Connect en vul [dit formulier](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) in om te worden ingeschreven in het moderne-authenticatieprogramma.
+-   [Moderne authenticatie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) voor Skype voor Bedrijven Online.
 -  Al uw eindgebruikers moeten **Skype voor Bedrijven Online** gebruiken. Als u een implementatie van zowel Skype voor Bedrijven Online als een lokale Skype voor Bedrijven hebt, wordt er geen beleid voor voorwaardelijke toegang toegepast op eindgebruikers.
 
     Het apparaat waarvoor toegang tot Skype voor Bedrijven Online nodig is, moet:
@@ -75,10 +69,12 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 ### Stap 2: Nalevingsbeleid configureren en implementeren
 [Maak](create-a-device-compliance-policy-in-microsoft-intune.md) en [implementeer](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) nalevingsbeleid op alle apparaten die door het beleid worden beïnvloed. Dit zijn alle apparaten die door de gebruikers in de **doelgroepen ** worden gebruikt.
 
-> [!NOTE] Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, wordt beleid voor voorwaardelijke toegang toegepast op Azure Active Directory-beveiligingsgroepen.
+> [!NOTE]
+> Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
 
 
-> [!IMPORTANT] Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
+> [!IMPORTANT]
+> Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
 
 Wanneer u klaar bent, gaat u door naar **stap 3**.
 
@@ -119,6 +115,7 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 * **Apparaten die zijn geregistreerd bij AAD en voldoen aan het beleid**: deze apparaten hebben toegang tot Skype voor Bedrijven Online.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

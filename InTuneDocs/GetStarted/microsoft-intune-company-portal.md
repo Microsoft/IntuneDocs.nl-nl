@@ -1,9 +1,9 @@
 ---
 title: Microsoft Intune-bedrijfsportal | Microsoft Intune
-description: 
+description: Intune-bedrijfsportal installeren
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
-ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
 
 
 ---
@@ -53,6 +53,6 @@ Voordat een gebruiker toegang heeft tot de bedrijfsportal, moet aan het account 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS-apps voorbereiden voor beheer met de App Wrapping Tool | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: iOS-apps inpakken met de App Wrapping Tool | Microsoft Intune
+description: Gebruik de informatie in dit onderwerp om meer te leren over het inpakken van uw iOS-apps zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -59,7 +53,7 @@ Zie [Microsoft Intune App Wrapping Tool voor iOS](http://www.microsoft.com/en-us
 
 1.  Open op de Mac-computer een Terminal-venster en navigeer naar de map waarin u de bestanden hebt opgeslagen. Omdat het uitvoerbare bestand zich in het pakket bevindt, moet u de opdracht als volgt uitvoeren:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden ge
 
 1.  Reproduceer het probleem door de app uit te voeren.
 
-2.  Verzamel de uitvoer van de console door de instructies van Apple voor [foutopsporing in geïmplementeerde iOS-apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html) te volgen.
+2.  Verzamel de uitvoer van de console door de instructies van Apple voor [foutopsporing in geïmplementeerde iOS-apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html)te volgen.
 
 3.  Filter de opgeslagen logboeken op beperkingen voor apps door het volgende script in te voeren in de console:
 
@@ -170,7 +164,7 @@ Apps die gebruikmaken van de ADAL moeten worden geregistreerd via de Azure-behee
 
     2.  Klik op **existing LOB application registration** in de Azure Active Directory.
 
-    3.  Kies in het gedeelte Configureren de optie **Toegang tot web-API's in andere toepassingen configureren**.
+    3.  Kies **Configure Access to Web APIs in other applications**in de configuratiesectie.
 
     4.  Kies in het gedeelte **Machtiging voor andere toepassingen** de optie **Intune Mobile Application Management** in de vervolgkeuzelijst.
 
@@ -230,7 +224,7 @@ Voordat u de app verpakt, kunt u **rechten** verlenen zodat de app over meer mac
 
     1.  Meld u aan bij het Apple Developer Member Center.
 
-    2.  Maak een inrichtingsprofiel voor uw app. Zie [De vereisten voor de Intune App Wrapping Tool voor iOS ophalen](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx) voor instructies.
+    2.  Maak een inrichtingsprofiel voor uw app. Zie [De vereisten voor de Intune App Wrapping Tool voor iOS ophalen](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) voor instructies.
 
     3.  Schakel in het inrichtingsprofiel dezelfde rechten in als in uw app. U moet dezelfde id's gebruiken die u bij het ontwikkelen van de app hebt opgegeven.
 
@@ -271,7 +265,7 @@ U kunt als volgt de bestaande rechten van een ondertekende app en inrichtingspro
 Met deze opdracht worden ingeschakelde mogelijkheden in de app verwijderd die niet worden vermeld in het rechtenbestand. Als u mogelijkheden verwijdert die worden gebruikt door de app, kan dit de app beschadigen. Een voorbeeld van waar u mogelijkheden met ontbrekende rechten kunt verwijderen, is als u een app van een leverancier hebt die standaard beschikt over alle mogelijkheden.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Beveiliging en privacy voor de App Wrapping Tool
@@ -297,6 +291,7 @@ Gebruik de volgende best practices voor beveiliging en privacy wanneer u de App 
 - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

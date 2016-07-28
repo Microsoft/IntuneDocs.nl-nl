@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: MAM-beleidsinstellingen voor Android | Microsoft Intune
-description:
-keywords:
+description: In dit onderwerp worden de beleidsinstellingen voor het beheren van mobiele apps voor Adroid-apparaten beschreven.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: bbb2d56753d47e68aeba1e5f17188f1f7a740c6e
+
 
 ---
 
@@ -65,11 +59,12 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
 
     **Standaardwaarde = Ja**
 - **App-gegevens versleutelen**: selecteer **Ja** om versleuteling in te schakelen. Als deze instelling is ingeschakeld, wordt de versleuteling van apps die zijn gekoppeld aan een Mobile Application Management-beleid, geleverd door Microsoft. Gegevens worden synchroon versleuteld tijdens de I/O-bewerkingen voor bestanden. Inhoud van de apparaatopslag wordt altijd versleuteld.
-  >[!NOTE] De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2
+  >[!NOTE]
+  >De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2
 
   **Standaardwaarde = Ja**
 
-- **ContactSyncDisabled**: selecteer **Ja** om te voorkomen dat contactgegevens worden gesynchroniseerd met de systeemeigen adresboek-app op het apparaat. Als u **Nee** selecteert, slaat de app de contactgegevens op in de systeemeigen adresboek-app op het apparaat.<br/>Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, ook verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de **Microsoft Outlook**-app.
+- **Synchronisatie van contactpersonen uitschakelen:** kies **Ja** om te voorkomen dat contactgegevens worden gesynchroniseerd met de systeemeigen adresboek-app op het apparaat. Als u **Nee** selecteert, slaat de app de contactgegevens op in de systeemeigen adresboek-app op het apparaat.<br/>Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, ook verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de **Microsoft Outlook**-app.
 
   **Standaardwaarde = Ja**
 
@@ -100,6 +95,7 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
 - **Schermopname en Android-assistent blokkeren (Android 6 Marshmallow of hoger**: selecteer **Ja** om schermopnamen en functies van de **Android-assistent** op het apparaat te blokkeren wanneer deze app wordt gebruikt.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

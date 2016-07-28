@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Bewaking en rapporten | Microsoft Intune
-description:
-keywords:
+description: De status van apparaten binnen uw organisatie bewaken met bewaking en rapporten.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 8b6bb42ecdeb5a35b1a91310e31300754d40ef09
+
 
 ---
 
@@ -31,12 +25,13 @@ Als  IT-beheerder wilt u de status van apparaten binnen uw organisatie kunnen be
 -   Met **[rapporten](understand-microsoft-intune-operations-by-using-reports.md)** kunt u de status bewaken van de apparaten die door Intune worden beheerd (zoals de status voor software-updates, de software die is geïnstalleerd en de naleving van certificaten). 
      In deze rapporten wordt ook de hardware- en software-inventaris voor de apparaten en computers bijgehouden.
 
--   **[Waarschuwingen](get-notified-by-microsoft-intune-alerts.md)** houden u op de hoogte van de staat van de apparaten die worden beheerd door Intune (zoals de Endpoint Protection-status en -waarschuwingen die u moeten waarschuwen voor malware en waarschuwingen die betrekking hebben op een beperkte schijfruimte of op de netwerkverbinding).
+-   **[Waarschuwingen](get-notified-by-alerts.md)** houden u op de hoogte van de staat van de apparaten die worden beheerd door Intune (zoals de Endpoint Protection-status en -waarschuwingen die u moeten waarschuwen voor malware en waarschuwingen die betrekking hebben op een beperkte schijfruimte of op de netwerkverbinding).
 
 -   Bij de apparaten en computers die door Intune worden beheerd, worden gedetailleerde gegevens over de eigenschappen en de geïnstalleerde software opgehaald.  Intune bevat hulpprogramma's en rapporten waarmee u deze gegevens kunt bekijken en presenteren. Zie [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md) voor meer informatie.
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

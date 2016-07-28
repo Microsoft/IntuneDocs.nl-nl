@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Microsoft Passport-instellingen op apparaten beheren | Microsoft Intune
-description:
-keywords:
+description: Informatie over hoe Intune integreert met **Microsoft Passport for Work. Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ada366e91806c6f443ac4548af99c587ac218ec9
+ms.openlocfilehash: 934ae78edf4de2003d62179fa38269d97e6d7ef6
+
 
 ---
 
@@ -29,6 +23,9 @@ ms.suite: ems
 Microsoft Intune biedt de mogelijkheid van integratie in **Microsoft Passport for Work**. Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
 
 Met Passport kan de gebruiker zich aanmelden met een **gebaar** in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
+
+>[!TIP]
+>Microsoft Passport for Work is nu bekend als Windows Hello for Business. De Intune-console wordt in een toekomstige update bijgewerkt naar aanleiding van deze wijziging.
 
 U kunt Intune op twee manieren integreren in Passport for Work:
 
@@ -57,7 +54,8 @@ U kunt Intune op twee manieren integreren in Passport for Work:
     - **Toegestaan**: gebruikers kunnen het tekentype gebruiken in hun pincode, maar dit is niet verplicht.
     - **Vereist**: gebruikers moeten ten minste een van de tekentypen in hun pincode opnemen. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
     - **Niet toegestaan** (standaard): gebruikers mogen deze speciale tekens niet in hun pincode gebruiken (dit is ook het gedrag als de instelling niet is geconfigureerd).
-    > [!TIP] Tot de speciale tekens behoren: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > Tot de speciale tekens behoren: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Vervaldagen pincode**: het is raadzaam om een vervalperiode voor een pincode op te geven, waarna eindgebruikers deze moeten wijzigen. De standaardwaarde is 41 dagen. 
 - **Pincodegeschiedenis onthouden**: gebruik deze instelling om het hergebruik van eerder gebruikte pincodes te beperken. De standaardwaarde is dat de laatste 5 gebruikte pincodes niet opnieuw kunnen worden gebruikt.
 
@@ -79,6 +77,7 @@ Zie [de gids](https://technet.microsoft.com/library/mt589441.aspx) in de documen
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

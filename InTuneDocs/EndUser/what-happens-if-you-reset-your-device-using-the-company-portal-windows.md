@@ -1,26 +1,27 @@
 ---
-title: Wat gebeurt er als u uw apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
+title: Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 29fab114e2b5b9b3a7c8e050af6f37287a715026
 
 
 ---
 
 
-# Wat gebeurt er als u uw apparaat opnieuw instelt met behulp van de bedrijfsportal?
+# Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
 Als u de bedrijfsportal-app of [bedrijfsportalwebsite](reset-your-device-cpwebsite.md) gebruikt om uw Windows-apparaat opnieuw in te stellen, wordt uw apparaat opnieuw ingesteld op de fabrieksinstellingen en worden alle apps, instellingen en gegevens, inclusief uw persoonlijke gegevens, verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van het type apparaat dat u hebt en hoe u het apparaat gebruikt, zoals beschreven in de volgende tabel. Zie [Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-windows.md) voor instructies hoe u een verloren of gestolen apparaat opnieuw instelt.
 
@@ -36,6 +37,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

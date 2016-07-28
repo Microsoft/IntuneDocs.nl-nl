@@ -1,38 +1,32 @@
 ---
-# required metadata
-
 title: Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
+ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
+
 
 ---
 
 # Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
-> [!NOTE] u kunt desgewenst eerst [Overzicht van de Intune App SDK](intune-app-sdk.md) lezen voor meer informatie over de huidige functies en hoe u de integratie voor elk ondersteund platform voorbereidt. 
+> [!NOTE]
+> U kunt desgewenst eerst [Overzicht van de Intune App SDK](intune-app-sdk.md) lezen voor meer informatie over de huidige functies en hoe u de integratie voor elk ondersteund platform voorbereidt. 
 
 # Inhoud van de SDK 
 
-De Intune App SDK voor Android is een standaard Android-bibliotheek zonder externe afhankelijkheden. 
-De SDK bestaat uit het volgende:  
+De Intune App SDK voor Android is een standaard Android-bibliotheek zonder externe afhankelijkheden. De SDK bestaat uit het volgende:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: de interfaces die nodig zijn om MAM in te schakelen in een app, naast het inschakelen van compatibiliteit met de Microsoft Intune-bedrijfsportal-app. Apps moeten dit opgeven als verwijzing naar de Android-bibliotheek.
 
@@ -226,7 +220,7 @@ In sommige gevallen is een methode die in de Android-klasse beschikbaar is, in d
 
 # Beveiligen van back-upgegevens 
 
-Vanaf Android Marshmallow (API 23) biedt Android apps twee manieren om een back-up van gegevens te maken. Deze opties zijn beschikbaar voor gebruik in uw app en vereisen verschillende stappen om ervoor te zorgen dat de MAM-gegevensbeveiliging op de juiste wijze wordt toegepast. U kunt de onderstaande tabel gebruiken voor een snel overzicht van de bijbehorende acties die zijn vereist voor een correct gegevensbeveiligingsgedrag.  U kunt ook meer informatie over Android-back-ups vinden in de [Android-ontwikkelaarshandleiding voor gegevensback-up](http://developer.android.com/guide/topics/data/backup.html.). 
+Vanaf Android Marshmallow (API 23) biedt Android apps twee manieren om een back-up van gegevens te maken. Deze opties zijn beschikbaar voor gebruik in uw app en vereisen verschillende stappen om ervoor te zorgen dat de MAM-gegevensbeveiliging op de juiste wijze wordt toegepast. U kunt de onderstaande tabel gebruiken voor een snel overzicht van de bijbehorende acties die zijn vereist voor een correct gegevensbeveiligingsgedrag.  U kunt ook meer informatie over Android-back-ups vinden in de [Android-ontwikkelaarshandleiding voor gegevensback-up](http://developer.android.com/guide/topics/data/backup.html). 
 
 ## Automatische volledige back-up
 
@@ -370,6 +364,7 @@ De Intune SDK onderhoudt het contract geleverd door de Android-API, hoewel er va
 * Vermijd het niet-eenduidige gebruik van API's. Bijvoorbeeld: `Activity.startActivityForResult/onActivityResult` zonder te controleren of de requestCode vreemd gedrag kan veroorzaken
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

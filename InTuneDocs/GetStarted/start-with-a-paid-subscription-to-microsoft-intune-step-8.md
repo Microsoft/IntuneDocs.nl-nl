@@ -1,41 +1,33 @@
 ---
-# required metadata
-
 title: Mobiele apparaten inschrijven en een app installeren | Microsoft Intune
-description:
-keywords:
+description: Bevat uitleg over het inschrijven van mobiele apparaten en het installeren van een app op een apparaat dat voor Intune is ingeschreven
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: a3a1ef90533296dce7938d12ebe5246f9846685c
+
 
 ---
 
 # Mobiele apparaten inschrijven en een app installeren
-Als u het beheer van mobiele apparaten met Intune wilt instellen, moet u eerst de instantie voor het beheer van mobiele apparaten instellen, beheer voor apparaatplatforms inschakelen en vervolgens uw apparaten registreren met de bedrijfsportal-app. Vervolgens kunt u de Microsoft Skype-toepassing implementeren die u in stap 6 hebt gepubliceerd.
+Als u het beheer van mobiele apparaten met Intune wilt instellen, moet u eerst de instantie voor het beheer van mobiele apparaten instellen, beheer voor apparaatplatforms inschakelen en vervolgens uw apparaten inschrijven met de bedrijfsportal-app. Vervolgens kunt u de Microsoft Skype-toepassing implementeren die u in stap 6 hebt gepubliceerd.
 
 ## Apparaatbeheer inschakelen en apparaten inschrijven
 
-1.  **Intune als de  instantie voor het beheer van mobiele apparaten instellen**
-    Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Beheerder** > **Beheer van mobiele apparaten** en klik onder **Taken** op **MDM-instantie instellen**.  Klik in het dialoogvenster MDM-instantie op **Ja**.
+1.  **Intune als de instantie voor het beheer van mobiele apparaten instellen** Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** > **Beheer van mobiele apparaten** en kies vervolgens **MDM-instantie instellen** onder **Taken**.  Klik in het dialoogvenster MDM-instantie op **Ja**.
     ![Beheerconsole. MDM instellen op Intune](./media/mdmAuthority.png)
 
-2.  **MDM inschakelen voor uw apparaatplatform**
-    Schakel beheer van mobiele apparaten in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
+2.  **MDM inschakelen voor uw apparaatplatform** Schakel beheer van mobiele apparaten in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
 
     -   **iOS en Mac OS X**: zie [iOS- en Mac-beheer instellen met Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
@@ -51,7 +43,7 @@ Als u het beheer van mobiele apparaten met Intune wilt instellen, moet u eerst d
 
     -   **Windows Phone 8.1**: gebruikers installeren de app **Bedrijfsportal** van Microsoft Corporation via de Windows Phone Store en melden zich aan met de Intune-gebruikersreferenties die hierboven staan vermeld.  Geef **Ingeschreven apparaten** weer om uw apparaat toe te voegen.
 
-    -   **Windows Phone 8.0**: gebruikers kiezen **Systeeminstellingen** &gt; **Bedrijfsapps** en melden zich aan met de Intune-gebruikersreferenties die hierboven staan vermeld. De app Bedrijfsportal wordt op uw telefoon geïmplementeerd.
+    -   **Windows Phone 8.0**: gebruikers kiezen **Systeeminstellingen** &gt; **Bedrijfsapps** en melden zich aan met de Intune-gebruikersreferenties die hierboven staan vermeld. De bedrijfsportal-app wordt op uw telefoon geïmplementeerd.
 
     Als u wordt gevraagd om een **serveradres**op te geven, voert u ‘manage.microsoft.com’ in.
 
@@ -60,7 +52,7 @@ In [stap 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) van de
 
 Open de bedrijfsportal op het ingeschreven mobiele apparaat, kies **Apps** en installeer **Microsoft Skype**.
 
-Zie [Voorbereidingen voor het inschrijven van apparaten bij Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) voor meer informatie over het beheer van mobiele apparaten met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]..
+Zie [Voorbereidingen voor het inschrijven van apparaten bij Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) voor meer informatie over het beheer van mobiele apparaten met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 
 ### Volgende stappen
@@ -71,6 +63,7 @@ Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune*
 >[&larr; **Apparaten inschrijven**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Taken na configuratie** &rarr;](.\post-configuration-tasks.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

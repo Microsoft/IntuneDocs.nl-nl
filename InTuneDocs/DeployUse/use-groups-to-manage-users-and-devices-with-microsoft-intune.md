@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Groepen gebruiken om gebruikers en apparaten te beheren | Microsoft Intune
-description:
-keywords:
+description: Groepen maken en beheren met behulp van de werkruimte Groepen.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 06/20/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: lpatha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 42328ee749517fd5abf923db35e7b13747e9f14b
+
 
 ---
 
@@ -43,14 +37,14 @@ Daarnaast wordt uw groepshiërarchie weergegeven met statusoverzichten om u te h
 >
 > U wilt waarschijnlijk een standaardbeleid maken dat van toepassing is op alle groepen en apparaten, om de basisvereisten voor naleving binnen uw bedrijf vast te leggen. Vervolgens maakt u specifieker beleid voor de breedste categorieën gebruikers en apparaten, bijvoorbeeld een e-mailbeleid voor elk apparaatbesturingssysteem.
 >
-> Kies de naam voor elk beleid zorgvuldig, zodat u deze later eenvoudig kunt herkennen. Een goede beschrijvende naam is bijvoorbeeld **WP-e-mailbeleid voor het hele bedrijf**..
+> Kies de naam voor elk beleid zorgvuldig, zodat u deze later eenvoudig kunt herkennen. Een goede beschrijvende naam is bijvoorbeeld **WP-e-mailbeleid voor het hele bedrijf**.
 >
 > U wilt waarschijnlijk elk nieuw beleid aan uw gebruikers communiceren. Besteed daarom na het maken van algemene groepen extra aandacht aan hoe u kleinere groepen indeelt, om de communicatie te beperken.
 
 
 ## Een apparaatgroep maken
 
-1.  Klik in de Intune-beheerconsole op **Groepen** &gt; **Overzicht** &gt; **Groep maken**.
+1.  Kies in de Intune-beheerconsole **Groepen** &gt; **Overzicht** &gt; **Groep maken**.
 
 2.  Geef een naam en een optionele beschrijving voor de groep op en selecteer een apparaatgroep als de bovenliggende groep. Kies **Volgende**.
 
@@ -71,7 +65,7 @@ U vindt de zojuist gemaakte groep in de lijst **Groepen**, in de werkruimte **Gr
 
 ## Een gebruikersgroep maken
 
-1.  Klik in de Intune-beheerconsole op **Groepen** &gt; **Overzicht** &gt; **Groep maken**.
+1.  Kies in de Intune-beheerconsole **Groepen** &gt; **Overzicht** &gt; **Groep maken**.
 
 2.  Geef een naam en een optionele beschrijving voor de groep op en selecteer een gebruikersgroep als de bovenliggende groep. Kies **Volgende**.
 
@@ -81,7 +75,7 @@ U vindt de zojuist gemaakte groep in de lijst **Groepen**, in de werkruimte **Gr
     > Als uw groep momenteel leden van specifieke beveiligings- of managergroepen bevat en u ook leden van specifieke groepen uitsluit, worden de aanvankelijk opgenomen leden verwijderd. Als u een groep wilt maken die zowel uitgesloten als opgenomen leden bevat, raden we u aan om eerst een bovenliggende groep te maken met de opgenomen leden. Vervolgens maakt u voor deze groep een onderliggende groep waarin de uitgesloten leden worden vermeld. U kunt die onderliggende groep vervolgens zo nodig gebruiken voor de distributie van Intune-beleid, profielen en apps.
 
     > [!NOTE]
-    > In de Azure-beheerportal kunt u een groep maken op basis van de manager waaraan de gebruikers rapporteren. De groep heeft een dynamisch karakter en verandert met het toevoegen of verwijderen van werknemers uit het team van die manager in Azure Active Directory. De procedure voor het maken van een Azure-groep op basis van een manager wordt beschreven in [Using attributes to create advanced rules (Kenmerken gebruiken voor het maken van geavanceerde regels)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) in de sectie met de titel **To configure a group as a “Manager” group (Een groep configureren als een 'Manager'-groep)**.
+    > In de Azure-beheerportal kunt u een groep maken op basis van de manager waaraan de gebruikers rapporteren. De groep heeft een dynamisch karakter en verandert met het toevoegen of verwijderen van werknemers uit het team van die manager in Azure Active Directory. De procedure voor het maken van een Azure-groep op basis van een manager wordt beschreven in [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) in de sectie **To configure a group as a "Manager" group** (Een groep configureren als een 'Manager'-groep).
 
 
 4.  Op de pagina **Direct lidmaatschap definiëren** kunt u afzonderlijke gebruikers opnemen of uitsluiten die u opgeeft door te klikken op **Bladeren**. Als u de optie gebruikt om gebruikers te selecteren die zich niet in de door u opgegeven bovenliggende groep bevinden, worden die apparaten automatisch toegevoegd aan de bovenliggende groep. Onder in het dialoogvenster **Leden selecteren** vindt u de optie om handmatig een gebruiker toe te voegen. Dit is handig als u een gebruiker wilt toevoegen die nog geen ingeschreven apparaat heeft.
@@ -123,11 +117,11 @@ Nadat u gefilterde groepsweergaven voor een servicebeheerder hebt geconfigureerd
 
 ### Gefilterde groepsweergaven configureren
 
-1.  Kies in de Intune-beheerconsole de optie **Beheer** &gt; **Beheerdersbeheer** &gt; **Servicebeheerders**.
+1.  Kies in de Intune-beheerconsole **Beheer** &gt; **Beheerdersbeheer** &gt; **Servicebeheerders**.
 
-2.  Selecteer de servicebeheerder voor wie u groepen wilt filteren en klik op **Groepen beheren**.
+2.  Selecteer de servicebeheerder voor wie u groepen wilt filteren, en klik vervolgens op **Groepen beheren**.
 
-3.  Voeg in het dialoogvenster **Selecteer de groepen die zichtbaar zijn voor deze servicebeheerder** de groepen toe die de geselecteerde servicebeheerder mag openen en klik vervolgens op **OK**.
+3.  In het dialoogvenster **Selecteer de groepen die zichtbaar zijn voor deze servicebeheerder** voegt u de groepen toe die de geselecteerde servicebeheerder mag openen, en klikt u vervolgens op **OK**.
 
 Nadat u de gefilterde groepsweergaven hebt geconfigureerd, kan de IT-beheerder alleen de door u geselecteerde groepen weergeven en selecteren.
 
@@ -158,6 +152,7 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 > Houd er rekening mee dat wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, in de praktijk het meest beperkende beleid van toepassing is.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

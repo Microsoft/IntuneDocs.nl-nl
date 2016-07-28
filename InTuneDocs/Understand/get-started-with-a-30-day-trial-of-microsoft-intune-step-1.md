@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Aanmelden voor een 30-daagse evaluatieversie van Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: Aanmelden voor een gratis, evaluatieversie van Intune van 30 dagen en wat u moet overwegen voordat u zich aanmeldt
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 1ea97c93f7094572fa5fb6eb34e039369e91334b
+
 
 ---
 
@@ -41,11 +35,11 @@ Voordat u zich registreert of aanmeldt bij Intune, moet u rekening houden met he
 
 |Registreer voor een NIEUW account als een van de volgende voorwaarden waar zijn:|Meld u aan met uw WERK- of SCHOOLACCOUNT als:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**U geen werk- of schoolaccount hebt.** Een werk- of schoolaccount wordt verstrekt wanneer u een volumelicentieovereenkomst met Microsoft ondertekent of zich abonneert op Office 365. Als uw organisatie nog geen Enterprise Agreement of equivalente volumelicentieovereenkomst met Microsoft heeft ondertekend (of geen Office 365-account heeft), hebt u nog geen Microsoft Online Services-account waarmee u zich kunt aanmelden bij Microsoft Online Services.<br /><br />**Nadat de evaluatieversie van 30 dagen is verlopen, moet u uw Intune-tenant verwijderen.** U moet zich registreren voor een nieuw account als u de gratis evaluatieversie van Intune alleen voor evaluatiedoeleinden gebruikt en u van plan bent om de instellingen voor de Intune-service en de inrichting van uw apparaten opnieuw uit te voeren wanneer de evaluatieversie is verlopen. Deze optie wordt aanbevolen als u Intune wilt gaan gebruiken met System Center 2012 Configuration Manager.<br /><br />Als u zich registreert voor een nieuw account, kunt u dit later niet veranderen in het gebruik van een bestaand werk- of schoolaccount om dat account te beheren of dit combineren met bestaande volumelicentieovereenkomsten.|**U hebt een werk- of schoolaccount ontvangen bij een volumelicentieovereenkomst of Office 365-abonnement en u gebruikt deze evaluatieversie om Intune te evalueren.**<br /><br />Als u Intune instelt met een bestaand account, raden we u aan om [Kiezen hoe u apparaten beheert](choose-how-to-manage-devices.md) te raadplegen voordat u doorgaat met deze stappen.|
+|**U geen werk- of schoolaccount hebt.** Een werk- of schoolaccount wordt verstrekt wanneer u een volumelicentieovereenkomst met Microsoft ondertekent of zich abonneert op Office 365. Als uw organisatie nog geen Enterprise Agreement of equivalente volumelicentieovereenkomst met Microsoft heeft ondertekend (of geen Office 365-account heeft), hebt u nog geen Microsoft Online Services-account waarmee u zich kunt aanmelden bij Microsoft Online Services.<br /><br />**Nadat de evaluatieversie van 30 dagen is verlopen, moet u uw Intune-tenant verwijderen.** U moet zich registreren voor een nieuw account als u de gratis evaluatieversie van Intune alleen voor evaluatiedoeleinden gebruikt en u van plan bent om de instellingen voor de Intune-service en de inrichting van uw apparaten opnieuw uit te voeren wanneer de evaluatieversie is verlopen. Deze optie wordt aanbevolen als u Intune wilt gaan gebruiken met System Center 2012 Configuration Manager.<br /><br />Als u zich registreert voor een nieuw account, kunt u dit later niet veranderen in het gebruik van een bestaand werk- of schoolaccount om dat account te beheren of dit combineren met bestaande volumelicentieovereenkomsten.|**U hebt een werk- of schoolaccount ontvangen bij een volumelicentieovereenkomst of Office 365-abonnement en u gebruikt deze evaluatieversie om Intune te evalueren.**<br /><br />Als u Intune instelt met een bestaand account, wordt aanbevolen eerst [Kiezen hoe u apparaten beheert](/intune/get-started/choose-how-to-manage-devices) te raadplegen voordat u doorgaat met deze stappen.|
 
 ## Registreren of aanmelden bij Intune
 
-1.  [Klik eerst hier om naar de registratiepagina voor Intune te gaan](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)..
+1.  [Klik eerst hier om naar de registratiepagina voor Intune te gaan](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 2.  Op de pagina **Registreren** hebt u twee opties:
 
@@ -63,9 +57,10 @@ Gefeliciteerd! U hebt zojuist stap 1 van de procedure voor de *Microsoft Intune-
 
 >[!div class="step-by-step"]
 
->[&larr; **Aan de slag**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Gebruikers toevoegen** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **Aan de slag**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Gebruikers toevoegen** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: App-gegevens beveiligen via beleid voor het beheer van mobiele apps | Microsoft Intune
-description:
-keywords:
+title: App-gegevens beveiligen met behulp van MAM-beleid | Microsoft Intune
+description: "In dit onderwerp wordt uitgelegd hoe Mobile App Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens."
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
+ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
+
 
 ---
 
@@ -30,20 +24,21 @@ ms.suite: ems
 ## Hoe u app-gegevens kunt beveiligen
 Uw werknemers gebruiken mobiele apparaten voor zowel privé- als werktaken.  U wilt er niet alleen voor zorgen dat uw werknemers productief kunnen zijn, maar u wilt ook bedoeld of onbedoeld gegevensverlies voorkomen.  Bovendien wilt u de mogelijkheid hebben om bedrijfsgegevens te beschermen die toegankelijk zijn via apparaten, zelfs als deze apparaten niet door u worden beheerd.
 
-U kunt beleid voor Mobile Application Management (MAM-beleid) van Intune gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens. Omdat Intune-MAM-beleid onafhankelijk van een beheeroplossing voor mobiele apparaten (MDM) werkt, kunt u MAM gebruiken om de gegevens van uw bedrijf te beveiligen met of zonder inschrijving van apparaten in een oplossing voor apparaatbeheer. Door **beleid op app-niveau** te implementeren, kunt u de toegang tot bedrijfsbronnen beperken en gegevens binnen de controlesfeer van uw IT-afdeling houden.
+U kunt beleid voor Mobile Application Management (MAM-beleid) van Intune gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens. Omdat Intune-MAM-beleid **onafhankelijk van een beheeroplossing voor mobiele apparaten (MDM)** werkt, kunt u MAM gebruiken om de gegevens van uw bedrijf te beveiligen met of zonder inschrijving van apparaten in een oplossing voor apparaatbeheer. Door **beleid op app-niveau** te implementeren, kunt u de toegang tot bedrijfsbronnen beperken en gegevens binnen de controlesfeer van uw IT-afdeling houden.
 
-MAM-beleid ondersteunt apps die worden uitgevoerd op:
+MAM-beleid kan worden geconfigureerd voor apps die worden uitgevoerd op apparaten die:
 
--   **Apparaten die worden beheerd en zijn geregistreerd** in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
+- **Zijn ingeschreven bij Microsoft Intune:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
-  > [!IMPORTANT]
-  > Als u Intune gebruikt voor het beheren van uw iOS- en Android-apparaten, kunt u MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. MAM-beleid wordt niet ondersteund voor apps die verbinding maken met on-premises Exchange- of SharePoint-services.
+-   **Zijn ingeschreven bij een MDM-oplossing van derden:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
--   **Apparaten die worden beheerd en geregistreerd in een oplossing voor mobiel apparaatbeheer van derden.**   Bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
+  > [!NOTE]
+  > MAM-beleid mag niet worden gebruikt met MAM-oplossingen van derden of beveiligde container-oplossingen.
 
-  > [!NOTE] MAM-beleid mag niet worden gebruikt met MAM-oplossingen van derden of beveiligde container-oplossingen.
+-   **Niet zijn ingeschreven bij een MDM-oplossing:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
--   **Apparaten die niet worden beheerd**:  Bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
+> [!IMPORTANT]
+> U kunt MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. MAM-beleid wordt niet ondersteund voor apps die verbinding maken met on-premises Exchange-, Skype voor Bedrijven-, of SharePoint-services.
 
 **De belangrijke voordelen van het gebruik van MAM-beleid zijn**
 
@@ -137,6 +132,7 @@ Alle mobiele apps van Office ondersteunen meerdere identiteiten.
 [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Beleid voor het beveiligen van Windows-pc’s | Microsoft Intune
-description:
-keywords:
+title: "Beleid voor het beveiligen van Windows-pc’s | Microsoft Intune"
+description: Gebruik deze beleidsregels voor het beveiligen van Windows-pc's wanneer deze worden beheerd door de Intune-clientsoftware.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: d9a818f0be1f1b6fc1639cb705876c298d1570b4
+
 
 ---
 
@@ -49,6 +43,7 @@ Als IT-beheerder is een van uw eerste prioriteiten [de Windows-pc's die u beheer
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

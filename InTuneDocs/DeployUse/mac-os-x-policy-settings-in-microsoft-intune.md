@@ -1,31 +1,27 @@
 ---
-# required metadata
-
 title: Mac OS X-beleidsinstellingen | Microsoft Intune
-description:
-keywords:
+description: Intune biedt diverse ingebouwde algemene instellingen die u op Mac OS X-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 90eee9515696f049194515fb6bed280564d0f923
+
 
 ---
 
 # Instellingen voor configuratiebeleid voor Mac OS X in Microsoft Intune
+
+Intune biedt diverse ingebouwde algemene instellingen die u op Mac OS X-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
 ## Algemene instellingen voor configuratiebeleid
 
@@ -67,7 +63,8 @@ In de lijst met **compatibele&amp; en niet-compatibele apps voor Mac OS X**, sch
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de indeling, app-naam, uitgever en de app-bundel-id in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de app-bundel-id van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
-> [!TIP] Zie [Microsoft Intune-bewerkingen begrijpen met behulp van rapporten](understand-microsoft-intune-operations-by-using-reports.md) voor meer informatie over Intune-rapporten.
+> [!TIP]
+> Zie [Microsoft Intune-bewerkingen begrijpen met behulp van rapporten](understand-microsoft-intune-operations-by-using-reports.md) voor meer informatie over Intune-rapporten.
 
 > [!IMPORTANT]
 > Als op een Mac OS X-apparaat de slaapstandmodus is ingeschakeld, kunnen beleidsregels en profielen niet worden afgeleverd of geïnventariseerd. Als gevolg hiervan wordt op de Intune-console mogelijk tijdelijk de status **Foutieve beleidsinstellingen** weergegeven tot de volgende keer dat het apparaat uit de slaapstand wordt gehaald.
@@ -104,8 +101,8 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
-    |**Aangepaste configuratieprofielnaam (weergegeven voor gebruikers)**|Geef een naam op voor het beleid, zoals deze moet worden weergegeven op het apparaat en in de Intune-beleidsrapporten.|
-    |**Configuratieprofielbestand**|Klik op **Importeren**en blader vervolgens naar het configuratieprofiel dat u hebt gemaakt met behulp van de Apple Configurator. **Tip:** zie [Een configuratieprofielbestand maken](#BKMK_Prof) in dit onderwerp voor informatie over het maken van het configuratieprofiel.|
+    |**Aangepaste configuratieprofielnaam (weergegeven voor gebruikers)**|Geef een naam op voor het beleid, zoals dit moet worden weergegeven op het apparaat en in de Intune-beleidsrapporten.|
+    |**Configuratieprofielbestand**|Klik op **Importeren**en blader vervolgens naar het configuratieprofiel dat u hebt gemaakt met behulp van de Apple Configurator. **Tip:** zie **Een configuratieprofielbestand maken** in dit onderwerp voor informatie over het maken van het configuratieprofiel.|
     |**Configuratieprofieldetails**|Geeft de XML-code weer voor het configuratieprofiel dat u hebt geïmporteerd.|
 
 
@@ -126,6 +123,7 @@ U kunt het configuratieprofielbestand dat door het aangepaste beleid wordt gebru
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

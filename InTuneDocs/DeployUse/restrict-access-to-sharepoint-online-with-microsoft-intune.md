@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Toegang tot SharePoint Online beperken | Microsoft Intune
-description:
-keywords:
+description: Toegang tot bedrijfsgegevens op Sharepoint Online beschermen en controleren met voorwaardelijke toegang.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 334eb869ddbc67767a6e9ed6711bd9135ceb558b
+
 
 ---
 
@@ -30,7 +24,9 @@ Gebruik de voorwaardelijke toegang van [!INCLUDE[wit_firstref](../includes/wit_f
 Voorwaardelijke toegang bestaat uit twee onderdelen:
 - Nalevingsbeleid voor apparaten waar het apparaat aan moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
 - Beleid voor voorwaardelijke toegang waarin u de voorwaarden opgeeft waaraan het apparaat moet voldoen om toegang tot de service te krijgen.
-Zie het onderwerp [De toegang tot e-mail en O365-service beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+Zie het onderwerp [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+
+Het nalevingsbeleid en het beleid voor voorwaardelijke toegang worden op de gebruiker toegepast. Een apparaat dat de gebruiker gebruikt voor toegang tot de services wordt gecontroleerd op naleving van het beleid.
 
 Wanneer een gebruiker probeert verbinding te maken met een bestand via een ondersteunde app, zoals OneDrive, op zijn of haar apparaat, wordt de volgende evaluatie uitgevoerd:
 
@@ -61,10 +57,21 @@ Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgen
 
 -   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-website van de bedrijfsportal wordt verwezen. Hier vindt hij informatie over het probleem en aanwijzingen voor het oplossen ervan.
 
+**Voorwaardelijke toegang wordt afgedwongen op alle SharePoint-sites en extern delen wordt geblokkeerd**
+
+>[!NOTE]
+>Als u voorwaardelijke toegang voor SharePoint Online inschakelt, raden wij aan het domein in de lijst uit te schakelen zoals staat beschreven in het onderwerp [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 ## Ondersteuning voor mobiele apparaten
 - iOS 7.1 en hoger
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger
 - Windows Phone 8.1 en hoger
+
+U kunt de toegang tot SharePoint Online beperken als deze service wordt geopend via een browser op een **iOS**- of **Android**-apparaat.  Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
+* Safari (iOS)
+* Chrome (Android)
+* Managed Browsers (iOS en Android)
+
+**Niet-ondersteunde browser worden geblokkeerd**.
 
 ## Ondersteuning voor pc's
 - Windows 8.1 en hoger (mits ingeschreven bij Intune)
@@ -97,11 +104,13 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 ### Stap 2: Nalevingsbeleid configureren en implementeren
 Als u dit nog niet hebt gedaan, maak en implementeer dan nalevingsbeleid voor gebruikers waarop het SharePoint Online-beleid van toepassing moet zijn.
 
-> [!NOTE] Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, wordt beleid voor voorwaardelijke toegang toegepast op Azure Active Directory-beveiligingsgroepen.
+> [!NOTE]
+> Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
 
 Zie [Een nalevingsbeleid maken](create-a-device-compliance-policy-in-microsoft-intune.md) voor meer informatie over het configureren van het nalevingsbeleid.
 
-> [!IMPORTANT] Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
+> [!IMPORTANT]
+> Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven.
 
 Wanneer u klaar bent, gaat u door naar **stap 3**.
 
@@ -111,7 +120,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 #### <a name="bkmk_spopolicy"></a>
 
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
-![Schermafdruk van de pagina met SharePoint Online-beleid](../media/IntuneSASharePointOnlineCAPolicy.png)
+![Schermafdruk van de pagina met SharePoint Online-beleid](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Selecteer **Beleid voor voorwaardelijke toegang inschakelen voor SharePoint Online**.
 
@@ -120,6 +129,10 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
     -   **Alle platforms**
 
         Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven bij Intune en voldoen aan het nalevingsbeleid.  Elke clienttoepassing die **moderne authenticatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **SharePoint Online** geblokkeerd.
+
+        Als u **Alle platformen** selecteert, betekent dat dat Azure Active Directory dit beleid toepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing.  Alle platformen moeten worden ingeschreven en voldoen aan de voorwaarden, behalve:
+        *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide
+        * Niet-ondersteunde platformen, zoals Mac.  Apps met moderne authenticatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
         >[!TIP]
         >Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   Meer informatie over bekende problemen en de toegang tot deze functie vindt u op de [Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=761472).
 
@@ -135,11 +148,28 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
      -   **Apparaten moeten voldoen aan het beleid.** Selecteer deze optie om verplicht te stellen dat de pc's moeten zijn ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en aan het nalevingsbeleid moeten voldoen. Als de pc is niet ingeschreven, wordt een bericht met instructies voor het inschrijven weergegeven.
 
-4.  Klik onder **Doelgroepen**op **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop het beleid van toepassing moet zijn. U kunt ervoor kiezen dit op alle gebruikers of alleen op bepaalde groepen gebruikers toe te passen.
+4.   Onder **Browsertoegang** tot SharePoint Online en OneDrive voor Bedrijven kunt u ervoor kiezen om toegang tot Exchange Online alleen toe te staan via de ondersteunde browsers: Safari (iOS) en Chrome (Android). Toegang vanaf andere browsers wordt geblokkeerd.  De platformbeperkingen die u hebt geselecteerd voor toegang tot OneDrive zijn hier ook van toepassing.
 
-5.  Klik desgewenst onder **Uitgesloten groepen**op **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
+  Op **Android**-apparaten moeten gebruikers browsertoegang inschakelen.  Om dit te doen, moeten eindgebruikers de optie Browsertoegang inschakelen als volgt inschakelen op ingeschreven apparaten:
+  1.    Open de **app Bedrijfsportal**.
+  2.    Ga naar de pagina **Instellingen** via de drie puntjes (...) of via de menuknop Hardware.
+  3.    Selecteer **Browsertoegang inschakelen**.
+  4.  In de browser Chrome meldt u zich af bij Office 365. Start vervolgens Chrome opnieuw op.
 
-6.  Wanneer u klaar bent, klikt u op **Opslaan**.
+  Op **iOS- en Android**-platformen genereert Azure Active Directory een Transport Layer Security-certificaat (TLS) voor het apparaat om te bepalen welk apparaat wordt gebruikt om de service te openen.  Op het apparaat wordt het certificaat met een prompt weergegeven aan de eindgebruiker; deze kan het certificaat dan selecteren zoals in de onderstaande schermafbeeldingen wordt weergegeven. De eindgebruiker moet dit certificaat selecteren om de browser te kunnen blijven gebruiken.
+
+  **iOS**
+
+  ![schermopname van het certificaatprompt op een iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![schermopname van het certificaatprompt op een Android-apparaat](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  Selecteer onder **Doelgroepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop het beleid van toepassing moet zijn. U kunt ervoor kiezen dit op alle gebruikers of alleen op bepaalde groepen gebruikers toe te passen.
+
+6.  Selecteer desgewenst onder **Uitgesloten groepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
+
+6.  Als u klaar bent, kiest u **Opslaan**.
 
 U hoeft het beleid voor voorwaardelijke toegang niet te implementeren; het wordt direct van kracht.
 
@@ -158,6 +188,7 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 [De toegang tot e-mail en O365-service beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

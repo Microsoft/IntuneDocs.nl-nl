@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Apparaten categoriseren met apparaatgroeptoewijzing in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Apparaten categoriseren met apparaatgroeptoewijzing | Microsoft Intune
+description: "Gebruik apparaatgroeptoewijzing van Microsoft Intune om apparaten te groeperen in categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: sumitp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: c721df29fd71963feb151af71eea9ee7ebc2d3e4
+
 
 ---
 
@@ -46,18 +40,19 @@ U kunt echter alle categorieën configureren die u wilt.
 
 ## Apparaatgroeptoewijzing configureren
 1. Maak een Intune-apparaatgroep voor elke apparaatcategorie die u wilt gebruiken. Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) voor informatie over het maken van groepen.
-2. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beheer**.
-3. In de werkruimte **Beheer** vouwt u **Mobile Device Management** uit en klikt u op **Apparaatgroeptoewijzing**.
+2. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer**.
+3. In de werkruimte **Beheer** vouwt u **Mobile Device Management** uit en kiest u vervolgens **Apparaatgroeptoewijzing**.
 4. Op de pagina **Apparaatgroeptoewijzing** schakelt u apparaatgroeptoewijzing in.
-5. Klik op **Toevoegen** om een nieuwe toewijzingsregel te maken.
-6. In het dialoogvenster **Regel voor apparaatgroeptoewijzing toevoegen** voert u de naam in van de categorie die u wilt maken. Kies daarna uit de vervolgkeuzelijst de apparaatverzameling waar u deze categorie aan wilt toewijzen. Klik op **Toevoegen** wanneer u klaar bent.
-7. Wanneer u de categorieën en groepen hebt toegevoegd, klikt u op **Opslaan**.
+5. Kies **Toevoegen** om een nieuwe toewijzingsregel te maken.
+6. In het dialoogvenster **Regel voor apparaatgroeptoewijzing toevoegen** voert u de naam in van de categorie die u wilt maken. Kies daarna uit de vervolgkeuzelijst de apparaatverzameling waar u deze categorie aan wilt toewijzen. Kies **Toevoegen** wanneer u klaar bent.
+7. Wanneer u de categorieën en groepen hebt toegevoegd, kiest u **Opslaan**.
 
 Wanneer gebruikers nu hun apparaat inschrijven, krijgen ze een lijst te zien van de categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en het inschrijven voltooien, wordt hun apparaat toegevoegd aan de apparaatgroep die overeenkomt met de gekozen categorie.
 
 ### Zie tevens
 [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

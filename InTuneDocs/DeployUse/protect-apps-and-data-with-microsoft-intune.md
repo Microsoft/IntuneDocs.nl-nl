@@ -1,10 +1,10 @@
 ---
 title: Apps en gegevens beveiligen | Microsoft Intune
 description: 
-keywords: 
+keywords: In dit onderwerp worden de verschillende Intune-functies en -mogelijkheden beschreven die beschikbaar voor u zijn voor het beveiligen van uw bedrijfs-apps en -gegevens.
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ Het beveiligen van toegang tot bedrijfsbronnen is de eerste stap in de beschermi
 - Beveiligen van de toegang tot apps door een pincode/wachtwoordcode of zakelijke referenties verplicht te stellen.
 - Alle webkoppelingen openen in de Intune Managed Browser.
 
-Deze reeks regels wordt aangeduid als [beleid voor Mobile App Management (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  MAM-beleid kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door u worden beheerd.  U kunt uw bedrijfsgegevens beveiligen door MAM-beleid te gebruiken voor apparaten die zijn ingeschreven bij Intune, voor apparaten die zijn ingeschreven en worden beheerd door een MDM van derden, en voor apparaten die niet door u worden beheerd, zoals de apparaten van werknemers.
+Deze reeks regels wordt aangeduid als [beleid voor Mobile App Management (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  MAM-beleid kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door u worden beheerd.  
+
+U kunt uw bedrijfsgegevens beveiligen door MAM-beleid te gebruiken voor apparaten die zijn **ingeschreven bij Intune**, voor apparaten die zijn **ingeschreven en worden beheerd door een MDM van derden**, en voor apparaten die **in een MDM-oplossing zijn ingeschreven**, zoals de apparaten van werknemers.
 
 Als u een app wilt koppelen aan MAM-beleid, moet de app gebruikmaken van de Microsoft Intune App Software Development Kit (SDK) of de App Wrapping Tool.
 
@@ -51,6 +53,6 @@ Naast het beperken van gegevensverplaatsing kunt u, wanneer een apparaat is zoek
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

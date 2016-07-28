@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: De Microsoft Intune Exchange Connector installeren voor On-Premises Exchange | Microsoft Intune
-description:
-keywords:
+title: Exchange Connector voor on-premises EAS | Microsoft Intune
+description: Gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen de Intune-beheerconsole en de on-premises Exchange Server voor Exchange ActiveSync MDM.
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
+
 
 ---
 
@@ -37,13 +31,12 @@ De volgende tabel bevat de vereisten voor de computer waarop u de On-Premises Ex
 |---------------|--------------------|
 |Besturingssystemen|Intune ondersteunt de On-Premises Exchange Connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012 of Windows Server 2012 R2 wordt uitgevoerd.<br /><br />De connector wordt niet ondersteund op een Server Core-installatie.|
 |Microsoft Exchange-versie|De On-Premises Connector vereist Microsoft Exchange 2010 SP1 of hoger.|
-|Instantie voor beheer van mobiele apparaten| [De Mobile Device Management-instantie instellen op Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|Instantie voor beheer van mobiele apparaten| [Stel de instantie voor beheer van mobiele apparaten in op Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Hardware|De computer waarop u de connector installeert, vereist een 1,6 GHz-processor met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte als minimale hardwarevereisten.|
 |Active Directory-synchronisatie|Voordat u een van deze connectors kunt gebruiken om Intune te verbinden met uw Exchange-server, moet u [Active Directory-synchronisatie instellen](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
 |Aanvullende software|Een volledige installatie van Microsoft .NET Framework 4 en Windows PowerShell 2.0 moet worden geïnstalleerd op de computer die als host fungeert voor de connector.|
 |Netwerk|De computer waarop u de connector installeert, moet zich in een domein bevinden dat een vertrouwensrelatie heeft met het domein dat als host fungeert voor uw Exchange-server.<br /><br />Voor de computer zijn configuraties vereist die de computer toegang geven tot de Intune-service via firewalls en proxyservers via de poorten 80 en 443. Domeinen die door Intune worden gebruikt, zijn onder meer manage.microsoft.com, &#42;manage.microsoft.com en &#42;.manage.microsoft.com.|
 |Gehoste Exchange geconfigureerd en actief|Zie [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) voor meer informatie. |
-|De Mobile Device Management-instantie instellen op Intune|[Uw instantie voor het beheer van mobiele apparaten instellen op Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
 
 ### Vereisten voor Exchange-cmdlets
 
@@ -65,16 +58,14 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
 
 ## Het software-installatiepakket voor de On-Premises Exchange Connector downloaden
 
-1. Open op een ondersteund besturingssysteem voor de On-Premises Exchange Connector de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) (http://manage.microsoft.com) met een gebruikersaccount dat een beheerder is in de Exchange-tenant met een licentie om Exchange Server te gebruiken.
+1. Open op een ondersteund Windows Server-besturingssysteem voor de On-Premises Exchange Connector de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) (http://manage.microsoft.com) met een gebruikersaccount dat een beheerder is in de Exchange-tenant met een licentie om Exchange Server te gebruiken.
 ![Exchange-verbinding instellen openen](../media/ExchangeConnector.gif)
 
-2.  Kies in het snelkoppelingendeelvenster van de werkruimte de optie **Beheer**..
+2.  Kies in het deelvenster met snelkoppelingen de optie **Beheer**, selecteer **Beheer van mobiele apparaten** > **Microsoft Exchange** en kies **Exchange-verbinding instellen**.
 
-3.  Vouw in het navigatievenster onder **Mobiele apparaten beheren** de optie **Microsoft Exchange** uit en kies vervolgens **Exchange-verbinding instellen**..
+3.  Kies op de pagina **Exchange-verbinding instellen** de optie **On-Premises Connector downloaden**.
 
-4.  Kies op de pagina **Exchange-verbinding instellen** de optie **On-Premises Connector downloaden**..
-
-5.  De On-Premises Exchange Connector bevindt zich in een gecomprimeerde map (.zip) die kan worden geopend of opgeslagen. Kies in het dialoogvenster **Bestand downloaden** de optie **Opslaan** om de gecomprimeerde map op een veilige locatie op te slaan.
+4.  De On-Premises Exchange Connector bevindt zich in een gecomprimeerde map (.zip) die kan worden geopend of opgeslagen. Kies in het dialoogvenster **Bestand downloaden** de optie **Opslaan** om de gecomprimeerde map op een veilige locatie op te slaan.
 
 > [!IMPORTANT]
 > Wijzig of verplaats de bestanden in de map op de On-Premises Exchange Connector niet. Als er inhoud van de map wordt hernoemd of verplaatst, wordt de installatie afgebroken.
@@ -89,7 +80,7 @@ Voer de volgende stappen uit om de Intune On-Premises Exchange Connector te inst
     > [!IMPORTANT]
     > Als de doelmap geen veilige locatie is, verwijdert u het certificaatbestand **WindowsIntune.accountcert** nadat u de On-Premises Connector hebt geïnstalleerd.
 
-3.  Selecteer in het veld **Exchange-server** het type Exchange-serveromgeving: **On-Premises Microsoft Exchange Server** of **Gehoste Microsoft Exchange Server**..
+3.  Selecteer in het veld **Exchange-server** het type Exchange-serveromgeving: **On-Premises Microsoft Exchange Server** of **Gehoste Microsoft Exchange Server**.
 
   ![Uw type Exchange Server kiezen](../media/IntuneSA1dconfigureExchConnector.png)
 
@@ -99,28 +90,28 @@ Voer de volgende stappen uit om de Intune On-Premises Exchange Connector te inst
 
       1.  Open de Outlook Web App voor Office 365.
 
-      2.  Kies het pictogram '?' links bovenin en selecteer **Over**..
+      2.  Kies het pictogram '?' en selecteer **Over**.
 
       3.  Zoek de waarde **POP van externe server**.
 
       4.  Kies **Proxyserver** om proxyserverinstellingen op te geven voor de gehoste Exchange-server.
-        1.  Selecteer **Proxyserver gebruiken bij synchroniseren van gegevens van mobiel apparaat**..
+        1.  Selecteer **Proxyserver gebruiken bij synchroniseren van gegevens van mobiel apparaat**.
 
         2.  Voer de **proxyservernaam** en het **poortnummer** in die moeten worden gebruikt voor toegang tot de server.
 
-        3.  Als u gebruikersreferenties moet opgeven om toegang te krijgen tot de proxyserver, selecteert u ‘Referenties gebruiken om verbinding te maken met de proxyserver’ en voert u **het domein\de gebruiker** en het **wachtwoord** in..
+        3.  Als u gebruikersreferenties moet opgeven om toegang te krijgen tot de proxyserver, selecteert u Referenties gebruiken om verbinding te maken met de proxyserver en voert u **het domein\de gebruiker** en het **wachtwoord** in.
 
-        4.  Kies **OK**..
+        4.  Kies **OK**.
 
 5.  Geef de referenties op, **Gebruiker (Domein\gebruiker)** en **Wachtwoord**, die nodig zijn om verbinding te maken met de Exchange-server.
 
 6.  Geef beheerdersreferenties op die nodig zijn om meldingen te verzenden naar het Exchange-postvak van een gebruiker. Deze meldingen kunnen worden geconfigureerd via beleidsregels voor voorwaardelijke toegang met behulp van Intune.
 
-    Zorg ervoor dat de Autodiscover-service en de Exchange-webservices zijn geconfigureerd op de Exchange-server voor clienttoegang. Zie [Server voor clienttoegang](https://technet.microsoft.com/library/dd298114.aspx) voor meer informatie over dat onderwerp..
+    Zorg ervoor dat de Autodiscover-service en de Exchange-webservices zijn geconfigureerd op de Exchange-server voor clienttoegang. Zie [Server voor clienttoegang](https://technet.microsoft.com/library/dd298114.aspx)voor meer informatie over dat onderwerp.
 
 7.  Geef in het veld **Wachtwoord** het wachtwoord voor dit account op om Intune in te schakelen voor toegang tot de Exchange-server.
 
-8. Kies **Verbinding maken**..
+8. Kies **Verbinding maken**.
 
     Het kan enkele minuten duren voordat de verbinding is ingesteld.
 
@@ -133,12 +124,13 @@ Nadat de Exchange Connector de verbinding heeft ingesteld, worden de mobiele app
 
 ## De Exchange-verbinding valideren
 
-Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de werkruimte **Beheer** en kies onder **Mobiele apparaten beheren** de optie **Microsoft Exchange**. Controleer of de details die u hebt opgegeven, worden vermeld onder **Gegevens van Exchange-verbinding**..
+Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de werkruimte **Beheer** en kies onder **Mobiele apparaten beheren** de optie **Microsoft Exchange**. Controleer of de details die u hebt opgegeven, worden weergegeven onder **Exchange-verbindingsgegevens**.
 
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

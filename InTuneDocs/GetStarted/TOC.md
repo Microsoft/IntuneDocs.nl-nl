@@ -9,7 +9,7 @@
 ### [Bedrijfsportal](microsoft-intune-company-portal.md)
 ### [Integratie met Microsoft-cloudservices en -producten](integration-with-cloud-services.md)
 ### [Gebruik van netwerkbandbreedte](network-bandwidth-use.md)
-### [Domeinnamen](domain-names-for-microsoft-intune.md)
+### [Aangepaste domeinnamen](domain-names-for-microsoft-intune.md)
 
 ## [Snelstartgids voor Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Aanmelden bij Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -39,6 +39,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

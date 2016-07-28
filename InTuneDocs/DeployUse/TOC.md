@@ -24,6 +24,7 @@
 #### [Exchange-toegangsregels](exchange-access-rules-for-mobile-devices.md)
 ### [Pc's beheren](manage-windows-pcs-with-microsoft-intune.md)
 #### [De pc-client installeren](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [Algemene beheertaken voor pc's](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Pc-beleidsconflicten oplossen](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [Apparaten configureren](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -47,8 +48,9 @@
 #### [VPN-verbindingen in Intune](vpn-connections-in-microsoft-intune.md)
 #### [E-mailprofielen in Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Groepen gebruiken om gebruikers en apparaten te beheren](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Apparaten toewijzen aan groepen](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Inzicht in uw apparaten met inventarisaties](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [Algemene beheertaken voor pc's](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [Apparaten beveiligen](protect-your-devices-with-microsoft-intune.md)
 ### [Extern vergrendelen en wachtwoordcode opnieuw instellen](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
@@ -75,6 +77,7 @@
 ## [Apps configureren](update-apps-using-microsoft-intune.md)
 ### [Apps bijwerken ](update-apps-using-microsoft-intune.md)
 ### [Beleid voor de configuratie van iOS-apps](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Profielen voor mobiele apps voor iOS-apparaten inrichten](ios-mobile-app-provisioning-profiles.md)
 ### [Internettoegang beheren](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -86,14 +89,19 @@
 #### [Voor Windows en Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Nalevingsbeleid voor apparaten implementeren](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [De toegang tot e-mail, O365-services en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+
 #### [Exchange Online en nieuwe Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange On-Premises en verouderde Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-mailtoegang beperken: voorbeelden](restrict-email-access-example-scenarios.md)
 
-### [App-gegevens beveiligen](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### [De toegang tot netwerken beperken (Cisco ISE)](restrict-access-to-networks.md)
+
+### [App-gegevens beveiligen met MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portal voor MAM-beleid](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Voorbereidingen voor de configuratie van MAM-beleid](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM-beleid maken en implementeren](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
@@ -102,6 +110,7 @@
 #### [Beleidsnaleving bewaken](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Ervaring van de eindgebruiker](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+#### [Intune-beheerconsole voor MAM-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Line-Of-Business-apps voorbereiden voor MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [iOS-apps verpakken](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
@@ -123,9 +132,9 @@
 
 # [Apps ontwikkelen en aanpassen](/intune/develop/intune-app-sdk)
 
-# [Problemen oplossen](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

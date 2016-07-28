@@ -1,43 +1,37 @@
 ---
-# required metadata
-
 title: De toegang tot e-mail en O365-services beperken | Microsoft Intune
-description:
-keywords:
+description: In dit onderwerp wordt beschreven hoe voorwaardelijke toegang kan worden gebruikt om alleen compatibele apparaten toegang te geven tot e-mail en bedrijfsgegevens op SharePoint Online en andere services.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: df430a31e13027c7a342beb90b78d48c74bce9e6
+
 
 ---
 
-# De toegang tot e-mail en O365-services beperken met Microsoft Intune
+# De toegang tot e-mail, O365-services en andere services beperken met Microsoft Intune
 U kunt toegang tot uw bedrijfse-mail en O365-services beperken met voorwaardelijke toegang van Intune. Voorwaardelijke toegang van Intune geeft u de mogelijkheid ervoor te zorgen dat toegang tot uw bedrijfse-mail en O365-services wordt beperkt tot apparaten die de door u ingestelde regels naleven.
 ## Hoe werkt voorwaardelijke toegang?
-Op basis van de instellingen voor nalevingsbeleid wordt beoordeeld in hoeverre het apparaat het geldende beleid naleeft. Het beleid voor voorwaardelijke toegang gebruikt deze beoordeling vervolgens om de toegang tot een specifieke service te beperken of toe te staan. Wanneer beleid voor voorwaardelijke toegang wordt gebruikt in combinatie met nalevingsbeleid, kunnen alleen apparaten die het beleid naleven, toegang tot de service krijgen.
+Op basis van de instellingen voor nalevingsbeleid wordt beoordeeld in hoeverre het apparaat het geldende beleid naleeft. Het beleid voor voorwaardelijke toegang gebruikt deze beoordeling vervolgens om de toegang tot een specifieke service te beperken of toe te staan. Wanneer beleid voor voorwaardelijke toegang wordt gebruikt in combinatie met nalevingsbeleid, kunnen alleen apparaten die het beleid naleven, toegang tot de service krijgen. Het nalevingsbeleid en het beleid voor voorwaardelijke toegang worden op de gebruiker toegepast. Een apparaat dat de gebruiker gebruikt voor toegang tot de services wordt gecontroleerd op naleving van het beleid.
 
-Houd er rekening mee dat er ook nalevingsbeleid moet worden geïmplementeerd voor de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden beoordeeld.
+Houd er rekening mee dat er nalevingsbeleid moet worden geïmplementeerd voor de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden beoordeeld.
 Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat het beleid naleeft en worden er geen toegangsbeperkingen toegepast.
 
 Wanneer apparaten niet voldoen aan de voorwaarden die u in het beleid instelt, wordt de eindgebruiker door de inschrijvingsprocedure voor het apparaat geleid en ook door de procedure voor het verhelpen van het probleem dat naleving door het apparaat verhindert.
 
 Een kenmerkend proces voor voorwaardelijke toegang:
 
-![Het diagram geeft de beslissingspunten aan waarop moet worden bepaald of een apparaat toegang tot een service krijgt of wordt geblokkeerd](./media/ConditionalAccess4.png)
+![Het diagram geeft de beslissingspunten aan waarmee moet worden bepaald of een apparaat toegang tot een service krijgt of wordt geblokkeerd](../media/ConditionalAccess4.png)
 
 ## Hoe configureert u beleid voor voorwaardelijke toegang?
 Gebruik voorwaardelijke toegang om toegang te beheren tot Microsoft **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** en **Skype voor Bedrijven Online**.
@@ -67,8 +61,10 @@ In tegenstelling tot andere Intune-beleidsregels implementeert u geen beleid voo
   - [Maak beleid voor voorwaardelijke toegang voor oudere versies van Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Maak beleid voor voorwaardelijke toegang voor SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Maak beleid voor voorwaardelijke toegang voor Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Maak beleid voor voorwaardelijke toegang voor Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

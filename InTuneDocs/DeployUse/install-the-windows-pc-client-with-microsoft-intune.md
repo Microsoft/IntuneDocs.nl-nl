@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: De Windows-pc-client installeren met Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: De Windows-pc-client installeren | Microsoft Intune
+description: Gebruik deze handleiding om uw Windows-pc's te laten beheren door de Microsoft Intune-clientsoftware.
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
+
 
 ---
 
@@ -42,15 +36,13 @@ Gebruik vervolgens een of meer van de volgende methoden om de client te installe
 
 -   [De clientsoftware automatisch implementeren met Groepsbeleid](#to-automatically-deploy-the-client-software-by-using-group-policy)
 
--   [Hoe gebruikers hun computers zelf kunnen inschrijven](#how-users-can-self-enroll-their-computers)
-
 -   [De Microsoft Intune-clientsoftware installeren met een installatiekopie](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Als u een computer niet langer hoeft te beheren met Intune, kunt u de computer buiten gebruik stellen. Hierdoor wordt de clientsoftware ook van de betreffende computer verwijderd. Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) voor meer informatie..
+Als u een computer niet langer hoeft te beheren met Intune, kunt u de computer buiten gebruik stellen. Hierdoor wordt de clientsoftware ook van de betreffende computer verwijderd. Zie [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) voor meer informatie.
 
 ### De clientsoftware downloaden
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beheer** &gt; **Clientsoftware downloaden**.
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beheer** &gt; **Clientsoftware downloaden**
 
   ![De Intune-pc-client downloaden](./media/pc-SA-client-download.png)
 
@@ -88,28 +80,6 @@ Als u een computer niet langer hoeft te beheren met Intune, kunt u de computer b
 
     Raadpleeg de Windows Server-documentatie voor meer informatie over het gebruik van Groepsbeleid om software automatisch te implementeren.
 
-### Hoe gebruikers hun computers zelf kunnen inschrijven
-Gebruikers kunnen hun computers zelf inschrijven via de Intune-bedrijfsportal. Elke ingeschreven computer is gekoppeld aan het gebruikersaccount waarmee de clientsoftware is geïnstalleerd.
-
-> [!NOTE]
-> -   De gebruiker moet een beheerder op de computer zijn om de clientsoftware te installeren op de computer.
-> -   Gebruikers kunnen een computer alleen zelf inschrijven als Internet Explorer is geïnstalleerd op de clientcomputer.
-> -   Telkens wanneer een gebruiker zelf een computer inschrijft, wordt er een Intune-licentie gebruikt.
-> -   U moet een werk- of schoolaccount gebruiken om zelf een computer in te schrijven. U kunt een computer niet zelf inschrijven met een Microsoft-account.
-> -   Als de clientsoftware al is geïnstalleerd op een computer, ontvangt de eindgebruiker een foutmelding.
-
-### Zelf een computer registreren (informatie voor eindgebruikers)
-
-1.  Meld u aan bij de bedrijfsportal op de computer die u wilt inschrijven.
-
-2.  Klik op **Apparaat toevoegen**..
-
-3.  Klik op **Software downloaden** en vervolgens op **Uitvoeren**..
-
-4.  Klik op **Volgende** om de installatiewizard van Microsoft Intune te starten.
-
-5.  Wanneer de installatiewizard is voltooid, klikt u op **Voltooien**..
-
 ### De Microsoft Intune-clientsoftware installeren met een installatiekopie
 U kunt de Intune-clientsoftware op computers implementeren met een installatiekopie van het besturingssysteem door de volgende voorbeeldprocedure als uitgangspunt te gebruiken:
 
@@ -145,7 +115,7 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
 
 ### De installatie van de clientsoftware vanaf de Microsoft Intune-beheerconsole verifiëren
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** &gt; **Alle apparaten** &gt; **Alle computers**..
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** &gt; **Alle apparaten** &gt; **Alle computers**.
 
 2.  Schuif omlaag in de lijst met computers om de beheerde computers te vinden die met Intune communiceren, of zoek naar een specifieke beheerde computer door de naam van de computer, of een deel van de naam, te typen in het vak **Apparaten zoeken**.
 
@@ -153,9 +123,9 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
 
 ### Een computerinventarisrapport maken om alle ingeschreven computers weer te geven
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Rapporten** &gt; **Computerinventarisatierapporten**..
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Rapporten** &gt; **Computerinventarisatierapporten**.
 
-2.  Behoud op de pagina **Nieuw rapport maken** de standaardwaarde voor alle velden (tenzij u filters wilt toepassen) en klik op **Rapport weergeven**..
+2.  Behoud op de pagina **Nieuw rapport maken** de standaardwaarde voor alle velden (tenzij u filters wilt toepassen) en klik op **Rapport weergeven**.
 
 3.  De pagina **Computerinventarisrapport** wordt in een nieuw venster geopend met alle computers die zijn ingeschreven bij Intune.
 
@@ -164,9 +134,11 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
 
 
 ### Zie ook
-[Windows-pc's met Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
+[Windows-pc’s Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
+[Problemen met clientinstallatie oplossen](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

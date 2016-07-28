@@ -1,10 +1,10 @@
 ---
-title: Mobile App Management-beleid bewaken met Microsoft Intune | Microsoft Intune
-description: 
+title: MAM-beleid bewaken met Microsoft Intune | Microsoft Intune
+description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 
 
 ---
@@ -49,6 +49,9 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
 
   **Niet ingeschakeld**: geeft aan dat het beleid is geïmplementeerd voor de gebruiker, maar dat de app sindsdien niet is gebruikt in een werkcontext.
 
+>[!NOTE]
+> Als het MAM-beleid niet op de gebruiker waarnaar u hebt gezocht is toegepast, wordt in een bericht gemeld dat de gebruiker niet in aanmerking komt voor een app-beleid.
+
 Ga als volgt te werk om de rapportage voor een gebruiker te bekijken:
 
 **Stap 1:** selecteer de gewenste gebruiker. Klik hiertoe op de tegel Samenvatting of kies de optie **APP-RAPPORTAGE DOOR GEBRUIKER** op het tabblad **Instellingen**, zoals hieronder wordt weergegeven:
@@ -72,6 +75,6 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

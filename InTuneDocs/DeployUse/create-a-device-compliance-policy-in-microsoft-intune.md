@@ -1,10 +1,10 @@
 ---
-title: Een nalevingsbeleid voor apparaten maken in Microsoft Intune | Microsoft Intune
-description: 
+title: Een nalevingsbeleid voor apparaten maken | Microsoft Intune
+description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc's die worden gebruikt voor toegang tot uw bedrijfsgegevens.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
 
 
 ---
@@ -32,12 +32,20 @@ Op de pagina **Beleid maken** configureert u de instellingen die u nodig hebt:
   -   De systeembeveiligingsinstellingen, zoals wachtwoord en versleuteling
   -   De apparaatstatusinstellingen, zoals of een apparaat is gekraakt of door de Windows-apparaatstatusservice Health Attestation als in orde wordt gerapporteerd.
   -   Instellingen voor apparaateigenschappen, zoals de minimaal vereiste versie van het besturingssysteem of de maximale versie van het besturingssysteem die is toegestaan.
-![Schermafbeelding van het tabblad Algemeen van de pagina Beleid maken ](./media/intune-sa-3b-create-policy.png)
+![Het tabblad Algemeen van de pagina Beleid maken ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Stap 3: Het beleid opslaan
 Als u klaar bent, kiest u **Beleid opslaan**.
 
 U hebt de optie om het beleid direct na het opslaan te implementeren, maar u kunt het beleid ook later implementeren. Het nieuwe beleid wordt weergegeven in het knooppunt **Nalevingsbeleid** van de werkruimte **Beleid**.
+
+##  Stap 4: de geldigheidsperiode voor de nalevingsstatus instellen
+Als u de tijd wilt opgeven die het apparaat heeft om in te checken voordat een apparaat als niet compatibel wordt gezien, gaat u naar de instellingen voor het nalevingsbeleid en werkt u de tijd bij.  De standaardwaarde is ingesteld op 30 dagen.
+
+![instellingen voor nalevingsbeleid in de beleidsmenubalk](../media/mdm-compliance-policy-settings.png)
+
+![dialoogvenster voor nalevingsbeleid](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Ondersteunde beleidsinstellingen
 In de volgende tabel staan de instellingen voor nalevingsbeleid en de platformen waarop deze worden ondersteund.
@@ -79,6 +87,6 @@ Selecteer een van de volgende mogelijkheden voor meer informatie over instelling
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

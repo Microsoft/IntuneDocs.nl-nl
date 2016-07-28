@@ -1,10 +1,10 @@
 ---
 title: Windows 10-beleidsinstellingen | Microsoft Intune
-description: 
+description: Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebouwde en aangepaste instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: b41c9f0d7c449d83f8359aaea21b880b557a55de
-ms.openlocfilehash: 0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Windows 10-beleidsinstellingen in Microsoft Intune
 
-Gebruik de beleidsinstellingen in dit onderwerp als u instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
+Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebouwde en aangepaste instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 
-## Instellingen voor algemeen configuratiebeleid
+> [!IMPORTANT]
+> U kunt Windows 10-pc's op twee manieren beheren; door ze in te schrijven of de pc-clientsoftware van Intune te installeren. Elke methode biedt verschillende mogelijkheden (zie [Kiezen hoe u apparaten beheert](/intune/get-started/choose-how-to-manage-devices) voor meer informatie.
+> Wanneer u uw Windows-10-computers met de Intune-pc-clientsoftware beheert, kunt u niet de beleidsregels en instellingen gebruiken die in dit onderwerp worden genoemd. Als u deze instellingen wilt toepassen, moeten uw Windows 10-apparaten bij Intune worden ingeschreven.
 
-Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om algemene instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. Dit beleid kan niet worden gebruikt wanneer u Windows 10-computers met de Intune-clientsoftware beheert.
+## Algemene instellingen voor configuratiebeleid
+
+Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om algemene instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. 
 
 
 ### Wachtwoord
@@ -161,6 +166,7 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 |**Update-interval voor handtekeningen**|Hiermee geeft u het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren.|
 |**Cloudbeveiliging toestaan**|Hiermee kunt u toestaan of blokkeren dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Deze informatie wordt gebruikt om de service in de toekomst te verbeteren.|
 |**Gebruikers vragen voorbeelden te verzenden**|Hiermee bepaalt u of bestanden waarvoor verdere analyse door Microsoft nodig is om te bepalen of deze schadelijk zijn, automatisch naar Microsoft moeten worden verzonden.|
+|**Detectie van mogelijk ongewenste toepassingen**|U kunt deze instelling gebruiken als u geregistreerde Windows-desktopapparaten wilt beveiligen tegen het uitvoeren van software die door Windows Defender als mogelijk ongewenst is gedefinieerd. U kunt voorkomen dat deze toepassingen worden uitgevoerd, of de controlemodus gebruiken om te rapporteren wanneer een mogelijk ongewenste toepassing wordt geïnstalleerd.|
 |**Uit te sluiten bestanden en mappen wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer bestanden en mappen toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.|
 |**Uit te sluiten bestandsextensies wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer bestandsextensies toe, zoals **jpg** of **txt**. Alle bestanden met deze extensies worden niet opgenomen in real-timescans of geplande scans.|
 |**Uit te sluiten processen wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer processen toe van het type **.exe**, **.com** of **.scr**. Deze processen worden niet opgenomen in real-timescans of geplande scans.| 
@@ -326,6 +332,6 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

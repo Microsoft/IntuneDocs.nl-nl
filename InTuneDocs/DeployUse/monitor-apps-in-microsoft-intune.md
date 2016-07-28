@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: App-implementaties controleren | Microsoft Intune
-description:
-keywords:
+description: "Informatie over Intune gebruiken voor het bewaken van apps die u hebt geïmplementeerd."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: d2af901a322a7e4a35b4708cb60c70010314b0bb
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 U kunt de apps die u beheert, en de status van alle implementaties bekijken in de Intune-beheerconsole.
 
 ### De apps die u wilt beheren en hun status weergeven
-Klik in de werkruimte **Apps** op het knooppunt **Apps** en vervolgens op **Apps**..
+Klik in de werkruimte **Apps** op het knooppunt **Apps** en vervolgens op **Apps**.
 
 De lijst met apps die u beheert, wordt weergegeven. Als u op een app klikt, ziet u de installatiestatus in het onderste deelvenster van de consolevensters. Klik op deze status voor meer informatie. Wanneer bijvoorbeeld de status **1 gebruiker beschikt over deze software** wordt weergegeven, kunt u op het bericht klikken om de naam van de gebruiker te zien.
 
@@ -44,7 +38,7 @@ De lijst met apps die u beheert, wordt weergegeven. Als u op een app klikt, ziet
 Bovendien geeft de werkruimte **Dashboard** een overzicht weer van de status van uw apps. Als u op een willekeurige plaats in het overzicht klikt, wordt u naar de lijst met apps geleid.
 
 ## Gedetailleerdere informatie over een app weergeven
-Selecteer de gewenste app in de lijst met apps en klik vervolgens op **Eigenschappen weergeven**..
+Selecteer de gewenste app in de lijst met apps en klik vervolgens op **Eigenschappen weergeven**.
 
 Klik op de pagina **Software-eigenschappen** voor de app op een van deze tabbladen: **Algemeen**: bevat algemene informatie over de app en de installatiestatus, **Apparaten**: toont de apparaten waarop een bepaalde implementatie van de app is geïnstalleerd, **Gebruikers**: toont de gebruikers met een apparaat waarop een bepaalde implementatie van de app is geïnstalleerd.
 
@@ -54,6 +48,7 @@ Net als voorheen kunt u de vervolgkeuzelijst **Filters** gebruiken voor het conf
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

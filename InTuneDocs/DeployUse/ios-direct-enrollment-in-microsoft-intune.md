@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Directe registratie voor iOS-apparaten | Microsoft Intune
-description:
-keywords:
+description: Gebruik het hulpprogramma Apple Configurator om iOS-apparaten in bedrijfseigendom rechtstreeks in te schrijven met een vooraf gedefinieerde beleid door ze via een USB-poort verbinding te laten maken met een Mac-computer.
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
+
 
 ---
 
 # iOS-apparaten direct inschrijven met behulp van Apple Configurator
-Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, met behulp van het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat wordt uitgevoerd op een Mac-computer. Met dit proces wordt het apparaat niet teruggezet op de fabrieksinstellingen en wordt het apparaat met een vooraf gedefinieerd beleid ingeschreven. Deze methode is bedoeld voor apparaten waarop **Geen relatie met gebruiker** is ingesteld. Voor deze methode is vereist dat u met het iOS-apparaat een USB-verbinding met een Mac-computer maakt om bedrijfsinschrijving in te stellen. De bedrijfsportal-app wordt niet ondersteund voor direct ingeschreven apparaten. In deze richtlijnen wordt ervan uitgegaan dat u Apple Configurator 2.0 gebruikt op een Mac-computer.
+Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, met behulp van het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat wordt uitgevoerd op een Mac-computer. Met dit proces wordt het apparaat niet teruggezet op de fabrieksinstellingen en wordt het apparaat met een vooraf gedefinieerd beleid ingeschreven. Deze methode is bedoeld voor apparaten waarop **Geen relatie met gebruiker** is ingesteld. Voor deze methode is vereist dat u met het iOS-apparaat een USB-verbinding met een Mac-computer maakt om bedrijfsinschrijving in te stellen. Wanneer u iOS-apparaten rechtstreeks inschrijft, kunt u een apparaat inschrijven zonder het serienummer van het apparaat in te voeren. U kunt ook het apparaat een naam geven voor identificatiedoeleinden voordat Intune de naam van het apparaat vastlegt tijdens de inschrijving. De bedrijfsportal-app wordt niet ondersteund voor direct ingeschreven apparaten. In deze richtlijnen wordt ervan uitgegaan dat u Apple Configurator 2.0 gebruikt op een Mac-computer.
 
 1.  **Een profiel maken voor apparaten** Met een registratieprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op apparaten. Als u dit nog niet hebt gedaan, maakt u een inschrijvingsprofiel voor iOS-apparaten die worden ingeschreven met Apple Configurator.
-
-    #### Een profiel maken
 
     1.  Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies vervolgens **Toevoegen...**.
 
@@ -45,6 +37,8 @@ Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, 
         -   **Gebruikersrelatie** : geeft aan hoe apparaten worden ingeschreven. Selecteer **Geen relatie met gebruiker**voor directe inschrijving.
 
         -   **Vooraf toegewezen apparatengroep**: alle apparaten waarvoor dit profiel wordt geïmplementeerd, behoren in eerste instantie tot deze groep. U kunt apparaten na de inschrijving opnieuw toewijzen.
+
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     3.  Kies **Profiel opslaan** om het profiel toe te voegen.
 
@@ -65,8 +59,6 @@ Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, 
 
 8.  **Het profiel installeren** U bent gereed voor de installatie van het profiel op het iOS-apparaat. Het apparaat moet de Configuratieassistent al hebben uitgevoerd en gereed zijn voor gebruik.  Als inschrijving app-implementaties omvat, moet op het apparaat een Apple-id zijn ingesteld, omdat de app-implementaties vereisen dat u met een Apple-id bent aangemeld voor de App Store.
 
-    ###### Profielacceptatie voltooien voor iOS-apparaten die niet onder supervisie zijn
-
     1.  Ontgrendel het iOS-apparaat.
 
     2.  Tik in het dialoogvenster **Profiel installeren** voor **Beheerprofiel** op **Installeren**.
@@ -85,10 +77,7 @@ Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, 
 10. **Apparaten distribueren** Het iOS-apparaat is nu geregistreerd bij Intune en wordt beheerd.
 
 
-### Zie ook
-[Voorbereidingen voor het inschrijven van apparaten](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

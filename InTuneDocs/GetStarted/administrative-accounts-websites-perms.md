@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Beheerdersaccounts, websites en machtigingen in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Beheerdersaccounts, websites en machtigingen | Microsoft Intune
+description: beheerdersaccounts machtigingen websites
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 88bd3f329a6b0d137f8cf02f5221263b64a33141
+
 
 ---
 
 # Beheerdersaccounts, websites en machtigingen in Microsoft Intune
 
-Bekijk dit onderwerp en andere vereisten in [Wat u moet weten voor u met Microsoft Intune begint](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt..
+Lees dit onderwerp en andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt.
 
 Voor het beheer van Intune moet u het volgende gebruiken:
 - Twee typen beheerdersaccounts
@@ -43,13 +37,13 @@ Hieronder vindt u de accounts en machtigingen die u voor Intune gebruikt.
 ### Tenantbeheerder
 |Machtigingsniveaus|Meer informatie|
 |--------------------------|-------------------------|
-|Aan tenantbeheerders is één beheerdersrol toegewezen waarmee het beheerbereik voor die gebruiker en de te beheren taken zijn gedefinieerd.<br /><br />De beheerdersrollen voor de verschillende Microsoft-cloudservices komen overeen, hoewel bepaalde rollen door sommige services mogelijk niet worden ondersteund.<br /><br /> In Microsoft Intune worden de volgende rollen gebruikt:<br /><br />- Algemeen beheerder<br />- Financieel medewerker<br />- Wachtwoordbeheerder<br />- Serviceondersteuningsbeheerder<br />- Gebruikerstoegangbeheerder|Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, is standaard een tenantbeheerder met de rol Algemeen beheerder.<br /></br>  Als tenantbeheerder gebruikt u de [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] om uw abonnement voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] te beheren en om tenantbeheerders toe te wijzen vanuit de [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Gebruik een tenantbeheerder met de rol voor algemeen beheer voor toegang tot de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] om uw eerste servicebeheerder toe te wijzen. Gebruik een tenantbeheerder bij voorkeur niet voor dagelijkse beheertaken. Een tenantbeheerder heeft geen licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nodig om toegang te krijgen tot de [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />De tenantbeheerder is een algemeen concept in Microsoft-cloudservices. Wanneer u zich abonneert op [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], is uw service een tenant van Microsoft Azure AD. Zie het gedeelte Azure AD-tenant in [Wat is een Azure Active Directory?](http://technet.microsoft.com/library/jj573650.aspx).|
+|Aan tenantbeheerders is één beheerdersrol toegewezen waarmee het beheerbereik voor die gebruiker en de te beheren taken zijn gedefinieerd.<br /><br />De beheerdersrollen voor de verschillende Microsoft-cloudservices komen overeen, hoewel bepaalde rollen door sommige services mogelijk niet worden ondersteund.<br /><br /> In Microsoft Intune worden de volgende rollen gebruikt:<br /><br />- Algemeen beheerder<br />- Financieel medewerker<br />- Wachtwoordbeheerder<br />- Serviceondersteuningsbeheerder<br />- Gebruikerstoegangbeheerder|Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, is standaard een tenantbeheerder met de rol Algemeen beheerder.<br /></br>  Als tenantbeheerder gebruikt u de [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] om uw abonnement voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] te beheren en om tenantbeheerders toe te wijzen vanuit de [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Gebruik een tenantbeheerder met de rol voor algemeen beheer voor toegang tot de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] om uw eerste servicebeheerder toe te wijzen. Gebruik een tenantbeheerder bij voorkeur niet voor dagelijkse beheertaken. Een tenantbeheerder heeft geen licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nodig om toegang tot de [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] te krijgen.<br /><br />De tenantbeheerder is een algemeen concept in Microsoft-cloudservices. Wanneer u zich abonneert op [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], is uw service een tenant van Microsoft Azure AD. Zie het gedeelte Azure AD-tenant in [Wat is een Azure AD-adreslijst?](http://technet.microsoft.com/library/jj573650.aspx).|
 
 
 ### Servicebeheerder
 |Machtigingsniveaus|Meer informatie|
 |--------------------------|-------------------------|
-|Aan een servicebeheerder wordt een van de volgende machtigingen toegewezen:<br /><br />**Volledige toegang[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]: verleent toegang tot alle gebieden van de **, zonder beperkingen. Kan ook andere servicebeheerders toevoegen en beheren.<br /><br />**Alleen-lezentoegang**: verleent leestoegang tot alle gebieden van de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. Een alleen-lezen servicebeheerder kan gegevens niet wijzigen, maar kan wel rapporten uitvoeren.<br /><br />**Helpdesk - knooppunt Groepen**: verleent machtigingen die de servicebeheerder in staat stellen om uitsluitend een aantal taken uit te voeren die betrekking hebben op helpdeskscenario's. Voor meer informatie over deze machtigingengroep raadpleegt u [Intune-consoleweergaven aanpassen voor beheerdersrollen](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console).|Met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] wordt standaard geen servicebeheerder toegewezen. In plaats daarvan moet u een tenantbeheerder met de rol van algemeen beheerder gebruiken om de eerste servicebeheerder voor uw abonnement toe te wijzen. </br></br> Als servicebeheerder kunt u de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] gebruiken om dagelijkse taken te beheren voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].<br /><br />U wijst servicebeheerders vanuit de beheerconsole toe. Een servicebeheerder moet een licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hebben, voordat het account toegang heeft tot de beheerconsole.|
+|Aan een servicebeheerder wordt een van de volgende machtigingen toegewezen:<br /><br />**Volledige toegang[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]: verleent toegang tot alle gebieden van de **, zonder beperkingen. Kan ook andere servicebeheerders toevoegen en beheren.<br /><br />**Alleen-lezentoegang**: verleent leestoegang tot alle gebieden van de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. Een alleen-lezen servicebeheerder kan gegevens niet wijzigen, maar kan wel rapporten uitvoeren.<br /><br />**Helpdesk - knooppunt Groepen**: verleent machtigingen die de servicebeheerder in staat stellen om uitsluitend een aantal taken uit te voeren die betrekking hebben op helpdeskscenario's. Zie [Intune-consoleweergaven aanpassen voor beheerdersrollen](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console) voor informatie over deze machtigingenset.|Met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] wordt standaard geen servicebeheerder toegewezen. In plaats daarvan moet u een tenantbeheerder met de rol van algemeen beheerder gebruiken om de eerste servicebeheerder voor uw abonnement toe te wijzen. </br></br> Als servicebeheerder kunt u de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] gebruiken om dagelijkse taken te beheren voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].<br /><br />U wijst servicebeheerders vanuit de beheerconsole toe. Een servicebeheerder moet een licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hebben, voordat het account toegang heeft tot de beheerconsole.|
 
 
 
@@ -60,7 +54,7 @@ Hieronder vindt u de accounts en machtigingen die u voor Intune gebruikt.
 
 
 ## Beheerwebsites voor Intune
- Voor verschillende beheertaken gebruikt u een van de volgende beheerwebsites die u kunt openen met behulp een [ondersteunde webbrowser](supported-web-browsers.md).
+ Voor verschillende beheertaken gebruikt u een van de volgende beheerwebsites die u kunt openen met een [ondersteunde webbrowser](supported-web-browsers.md).
 
 - [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Microsoft Intune-beheerdersconsole](https://admin.manage.microsoft.com/)
@@ -99,6 +93,7 @@ Meer informatie over [gebruikers toevoegen voor uw abonnement](start-with-a-paid
  [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

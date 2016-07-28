@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Intune-integratie met Microsoft-cloudservices en -producten | Microsoft Intune
-description:
-keywords:
+title: Intune-integratie met Microsoft-cloudservices | Microsoft Intune
+description: Intune-integratie met Microsoft-cloudservices en -producten en andere Microsoft-producten
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e20293f431e0a9ff385f82276d25e71d460230de
+
 
 ---
 
 # Intune-integratie met Microsoft-cloudservices en -producten
 
-Lees voordat u begint met het instellen van [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], dit onderwerp en de andere vereisten in [Wat u moet weten voor u met Microsoft Intune begint](what-to-know-before-you-start-microsoft-intune.md)..
+Lees voor de installatie van [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] dit onderwerp en de andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md).
 ##Integratie met andere Microsoft-cloudservices
 
 
@@ -47,6 +41,7 @@ Zie voor meer informatie [Mobiele apparaten beheren met Configuration Manager en
 ### Zie tevens
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Beheer voor Windows Phone 8.0 instellen | Microsoft Intune
-description:
-keywords:
+description: Schakel het beheer van mobiele apparaten (MDM) in voor Wndows Phone 8.0-apparaten met Microsoft Intune.
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0 vereist een Symantec-certificaat voor het installeren van de Intune-bedrijfsportal-app en het toestaan van apparaatbeheer. Er is ook een certificaat vereist om line-of-business-apps te ondertekenen. Het volgende onderwerp is alleen van toepassing op Windows Phone 8.0. Zie [Windows Phone-registratie instellen](set-up-windows-phone-management-with-microsoft-intune.md) voor het beheren van Windows Phone 8.1 of hoger, waaronder Windows 10 Mobile.
 
-> [!IMPORTANT] Vanaf september 2016 kan de bedrijfsportal-app voor Windows 8.0 en Windows Phone 8.0 niet meer worden gedownload.
+> [!IMPORTANT]
+> Vanaf september 2016 kan de bedrijfsportal-app voor Windows 8.0 en Windows Phone 8.0 niet meer worden gedownload.
 
 -   **Windows Phone 8**: certificaat vereist
 -   Voor **Windows Phone 8.1 en Windows 10 Mobile** is alleen in de volgende gevallen een certificaat nodig:
@@ -41,7 +36,8 @@ Windows Phone 8.0 vereist een Symantec-certificaat voor het installeren van de I
 
 ![Overzicht van certificaatvereisten](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] Het Symantec-certificaat waarmee bepaalde Windows-apparaten en mobiele apparaten met Windows Phone worden beheerd, [moet regelmatig worden vernieuwd](renew-a-symantec-code-signing-certificate.md).
+  > [!IMPORTANT]
+  > Het Symantec-certificaat waarmee bepaalde Windows-apparaten en mobiele apparaten met Windows Phone worden beheerd, [moet regelmatig worden vernieuwd](renew-a-symantec-code-signing-certificate.md).
 
 De installatievereisten voor het beheer van mobiele Windows Phone-apparaten zijn afhankelijk van de manier waarop u apparaten beheert.  Als u twee CNAME’s instelt u de DNS-registratie van uw bedrijf, kunt u eenvoudiger inschrijven voor gebruik. Als uw gebruikers de bedrijfsportal-app uit de Store downloaden en u de DNS-instellingen hebt geconfigureerd, hoeft u alleen de bedrijfsportal in te stellen en gebruikers te informeren hoe ze zich kunnen inschrijven.  Voor Windows Phone 8.0 of Windows Phone 8.1 waarop u de bedrijfsportal implementeert, hebt u een Symantec-certificaat nodig om de code van de app te ondertekenen.
 
@@ -186,6 +182,7 @@ U kunt de bedrijfsportal-app met Intune implementeren op Windows Phone 8.1-appar
     > -   Als sideload-apps moeten worden geïnstalleerd en Windows Phone 8.0-apparaten moeten worden ingeschreven en de ssp.xap nodig hebben, maakt u een nieuwe software-implementatie van ssp.xap en implementeert u deze met de actie **verwijderen** . Windows Phone 8.0-apparaten bieden geen ondersteuning voor het geforceerd installeren of verwijderen van apps, en dus negeren ze de implementatie. Windows Phone 8.1-apparaten ondersteunen de verwijderactie en verwijderen de ssp.xap.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

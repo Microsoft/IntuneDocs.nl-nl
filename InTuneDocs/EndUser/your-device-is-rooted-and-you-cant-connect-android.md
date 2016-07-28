@@ -3,18 +3,19 @@ title: Uw Android-apparaat is geroot en u kunt geen verbinding maken | Microsoft
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c94414ee28e8fa808ba08a5c97624d3d9b95fecb
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 
 ---
@@ -22,14 +23,19 @@ ms.openlocfilehash: c94414ee28e8fa808ba08a5c97624d3d9b95fecb
 
 # Uw Android-apparaat is geroot en u kunt geen verbinding maken
 
-Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Wanneer uw apparaat is geroot, krijgt u geen toegang meer tot de bedrijfsresources en moet u contact opnemen met de IT-beheerder zodat deze u kan helpen om opnieuw verbinding te maken met de bedrijfsresources.
+Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Als u dit bericht ziet, is het niet mogelijk toegang tot bedrijfsbronnen te krijgen totdat het probleem is opgelost. 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als u niet van mening bent dat u opzettelijk uw apparaat hebt geroot, moet u deze andere redenen waarom het apparaat kan zijn geroot bekijken:
+
+- U hebt mogelijk een app op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Als u dit bericht ziet na installatie van een app, is het raadzaam de app te verwijderen om te zien of het probleem hiermee is opgelost.
+
+- De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Neem contact op met uw IT-beheerder voor hulp. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

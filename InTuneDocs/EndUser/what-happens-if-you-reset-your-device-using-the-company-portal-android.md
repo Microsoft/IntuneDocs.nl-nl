@@ -1,26 +1,27 @@
 ---
-title: Wat gebeurt er als u uw apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
+title: Wat gebeurt er als u uw Android-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: ccadd02107f96c680cadd4e3b7a337292c530bae
 
 
 ---
 
 
-# Wat gebeurt er als u uw apparaat opnieuw instelt met behulp van de bedrijfsportal?
+# Wat gebeurt er als u uw Android-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
 Wanneer u de bedrijfsportal gebruiken om uw Android-apparaat opnieuw in te stellen, worden alle apps, instellingen en persoonlijke gegevens op uw apparaat verwijderd en wordt het apparaat teruggezet naar de fabrieksinstellingen.
 
@@ -36,6 +37,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

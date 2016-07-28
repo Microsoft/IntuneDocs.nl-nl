@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Waarschuwingen beheren | Microsoft Intune
-description:
-keywords:
+description: Gebruik de werkruimte Waarschuwingen om de algemene status van apparaten in uw organisatie te beoordelen.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+
 
 ---
 
@@ -91,9 +86,9 @@ Waarschuwingen die zijn gemarkeerd als gesloten, worden na 90 dagen permanent ve
 
 1.  Voer in de Intune-beheerconsole een van de volgende handelingen uit:
 
-    1.  Klik op **Waarschuwingen &gt; Alle waarschuwingen** **om een waarschuwing te sluiten in de lijst met waarschuwingen**. Selecteer een waarschuwing en klik vervolgens op **Waarschuwing sluiten**..
+    1.  Klik op **Waarschuwingen &gt; Alle waarschuwingen** **om een waarschuwing te sluiten in de lijst met waarschuwingen**. Selecteer een waarschuwing en klik vervolgens op **Waarschuwing sluiten**.
 
-    2.  Klik op **Groepen &gt; Alle apparaten** **om een waarschuwing voor een specifiek apparaat te sluiten**. Selecteer een apparaat en klik op **Eigenschappen weergeven**. Selecteer vervolgens een waarschuwing op het tabblad **Waarschuwingen** en klik op **Waarschuwing sluiten**..
+    2.  Klik op **Groepen &gt; Alle apparaten** **om een waarschuwing voor een specifiek apparaat te sluiten**. Selecteer een apparaat en klik op **Eigenschappen weergeven**. Selecteer vervolgens een waarschuwing op het tabblad **Waarschuwingen** en klik op **Waarschuwing sluiten**.
 
     3.  Klik op **Systeemoverzicht** **om een waarschuwing op het mededelingenbord te sluiten**. Klik op de **X** naast de waarschuwing op het mededelingenbord.
 
@@ -101,17 +96,18 @@ Waarschuwingen die zijn gemarkeerd als gesloten, worden na 90 dagen permanent ve
 
 1.  Klik in de Intune-beheerconsole op **Waarschuwingen &gt; Alle waarschuwingen**.
 
-2.  Klik in de lijst **Filters** op **Gesloten**..
+2.  Klik in de lijst **Filters** op **Gesloten**.
 
     De namen en aanvullende informatie over de waarschuwingen worden weergegeven in het deelvenster met de beheerlijst. Meer informatie over de geselecteerde waarschuwing wordt weergegeven in het voorbeeldvenster.
 
 3.  Klik op **Waarschuwing opnieuw activeren** om de geselecteerde waarschuwing opnieuw te activeren.
 
-### Zie ook
-[Blijf op de hoogte met Microsoft Intune-waarschuwingen](get-notified-by-microsoft-intune-alerts.md)
+### Zie tevens
+[Blijf op de hoogte met Microsoft Intune-waarschuwingen](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

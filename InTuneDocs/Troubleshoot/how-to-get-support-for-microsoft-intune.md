@@ -1,10 +1,10 @@
 ---
 title: Ondersteuning krijgen | Microsoft Intune
-description: 
+description: Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen.
 keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
-ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 
 
 ---
@@ -26,34 +27,33 @@ In dit onderwerp wordt beschreven hoe u een serviceaanvraag opent en kunt bellen
 Zie voor zelfhulp met Intune [Algemene tips voor probleemoplossing voor Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) of een van de onderwerpen over probleemoplossing voor specifieke problemen, weergegeven in de sectie **Zie tevens** van dit onderwerp.
 ## Een onlineserviceaanvraag maken
 
-1.  Meld u aan bij Intune en ga naar het [Office 365-beheercentrum](https://portal.office.com/Support/SupportEntry.aspx).
+1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) met de referenties van uw Intune.
 
-2.  Selecteer onder de kop **Een serviceaanvraag maken** de categorie van het probleem waarvoor u een ticket wilt openen:
+2.  Selecteer onder **Een serviceaanvraag maken** de categorie van het probleem waarvoor u een ticket wilt openen:
 
-    -   Selecteer voor facturerings- en licentieproblemen **Facturerings- en productinformatie**.
+    -   Selecteer voor facturerings-, licentie- en accountproblemen **Facturerings- en productinformatie**.
 
-    -   Voor alle andere problemen met Intune selecteert u de optie **Mobile Device Management**. Onder deze optie vallen ook Office 365 MDM en System Center Configuration Manager met Intune.
+    -   Voor alle andere problemen met Intune selecteert u de optie **Mobile Device Management**.
 
     > [!NOTE]
-    > [!NOTE] Mogelijk moet u onder aan de lijst op **meer** klikken om alle categorieën weer te geven.
+    > Mogelijk moet u onder aan de lijst **meer** selecteren om alle categorieën weer te geven.
 
 3.  Selecteer op de pagina voor het **vaststellen van het probleem** de **Functie** en het **Symptoom** waarvoor u ondersteuning nodig hebt. U wordt gevraagd om een **samenvatting van het probleem** en **details van het probleem** op te geven.
 
-4.  Op de pagina voor het **bekijken van suggesties** vindt u koppelingen naar informatie waarmee u het probleem mogelijk zelf kunt oplossen.  Als u het probleem niet kunt oplossen, kunt u onder aan de pagina op **Ja, ga verder** klikken om uw serviceaanvraag in te dienen.
+4.  Op de pagina voor het **bekijken van suggesties** vindt u koppelingen naar informatie waarmee u het probleem mogelijk zelf kunt oplossen.  Als u het probleem niet kunt oplossen, kunt u onder aan de pagina **Ja, ga verder** selecteren om uw serviceaanvraag in te dienen.
 
-5.  Geef op de pagina **Details toevoegen** de gevraagde informatie op. U kunt schermafbeeldingen of andere documenten bijvoegen door op **Een bestand bijvoegen** te klikken.
+5.  Geef op de pagina **Details toevoegen** de gevraagde informatie op. U kunt schermafbeeldingen of andere documenten bijvoegen door **Een bestand bijvoegen** te selecteren.
 
-6.  Geef op de pagina **Bevestigen en verzenden** de contactgegevens op, controleer uw aanvraag en klik op **Aanvraag verzenden**. Nadat de aanvraag is verzonden, wordt een lijst met uw serviceaanvragen weergegeven.
+6.  Geef op de pagina **Bevestigen en verzenden** de contactgegevens op, controleer uw aanvraag en selecteer **Aanvraag verzenden**. Nadat de aanvraag is verzonden, wordt een lijst met uw serviceaanvragen weergegeven.
 
 ## Ondersteuning via de telefoon
 Zie [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) voor een lijst met telefoonnummers voor ondersteuning per land en regio, ondersteuningsuren en ondersteunde talen voor elke regio.
 
 ## Uw serviceaanvragen volgen
-Als u uw aanvragen wilt volgen, gaat u naar het [Office 365-beheercentrum](https://portal.office.com/admin/default.aspx). Klik onder aan de lijst **Een serviceaanvraag maken** op **Alle ondersteuningstickets zien**. Standaard worden al uw serviceaanvragen weergegeven die nog openstaan. Als u wilt wijzigen welke serviceaanvragen worden weergegeven, bijvoorbeeld alleen de gesloten aanvragen, klikt u op het filterpictogram in de bovenste navigatiebalk en selecteert u de gewenste weergave.
+Als u uw aanvragen wilt volgen, gaat u naar het [Office 365-beheercentrum](https://portal.office.com/admin/default.aspx). Selecteer onder aan de lijst **Een serviceaanvraag maken** de optie **Alle ondersteuningstickets zien**. Standaard worden al uw serviceaanvragen weergegeven die nog openstaan. Als u wilt wijzigen welke serviceaanvragen worden weergegeven, bijvoorbeeld alleen de gesloten aanvragen, selecteer u het filterpictogram in de bovenste navigatiebalk en selecteert u de gewenste weergave.
 
 > [!NOTE]
-> [!NOTE]
-**Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection, neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfondersteuning en de optie om online of telefonisch een ondersteuningsaanvraag te openen.
+> **Als u gebruikmaakt van Microsoft System Center Configuration Manager ** of ** Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection, neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager en System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfhulpinformatie en de optie om online of telefonisch een ondersteuningsaanvraag te openen.
 >
 > Technische ondersteuning voor System Center Configuration Manager of System Center Endpoint Protection moet worden betaald of wordt bijgeschreven op uw bestaande licentie- of Premier Support-overeenkomsten.
 
@@ -140,6 +140,6 @@ Onze rol bestaat uit het volgende:
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

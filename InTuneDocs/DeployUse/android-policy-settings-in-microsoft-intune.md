@@ -1,31 +1,27 @@
 ---
-# required metadata
-
-title: Instellingen voor het Android- en Samsung KNOX-configuratiebeleid | Microsoft Intune
-description:
-keywords:
+title: Beleidsinstellingen voor Android en Samsung KNOXs | Microsoft Intune
+description: Beleidsregels maken voor het beheren van instellingen en functies op Android-apparaten die u met Intune beheert.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: e983f4ac4e396a30db19e5a0d487ac0f9c25ff14
+
 
 ---
 
 # Instellingen voor het Android- en Samsung KNOX-beleid in Microsoft Intune
+
+Intune biedt diverse ingebouwde algemene instellingen die u op Android-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
 ## Algemeen configuratiebeleid
 
@@ -55,6 +51,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat eerder gebruikte wachtwoorden opnieuw worden gebruikt.|Ja|Ja|
 |**Wachtwoordkwaliteit**|Hiermee selecteert u het complexiteitsniveau voor het wachtwoord en geeft u ook aan of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
 |**Vingerafdruk voor ontgrendelen toestaan**|Hiermee wordt toegestaan dat het apparaat kan worden ontgrendeld met een vingerafdruk.|Nee|Ja|
+|**Smart Lock en andere vertrouwensagents toestaan**<br>(Android 5 en hoger)|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten beheren. Met deze telefoonmogelijkheid (soms ook wel vertrouwde agent genoemd) kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt, zoals wanneer het is verboden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt bevindt van een NFC-tag. U kunt deze instelling gebruiken om te voorkomen dat eindgebruikers Smart Lock configureren.|Ja|Nee|
 
 ### Versleutelingsinstellingen
 
@@ -73,7 +70,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 
 ### Cloudinstellingen – documenten en gegevens
 
-|Naam van de instelling|Details|Android en Samsung KNOX|Android 4.0+|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Back-up van Google toestaan**|Het gebruik van Google-back-up toestaan.|Nee|Ja|
 
@@ -95,7 +92,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 
 ### Toepassingsinstellingen - apps
 
-|Naam van de instelling|Android 4.0+|Samsung KNOX|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Google Play store toestaan**|Hiermee kan de gebruiker de Google Play Store openen op het apparaat.|Nee|Ja|
 
@@ -179,7 +176,8 @@ Gebruik het **aangepaste Android-configuratiebeleid** van Microsoft Intune om OM
 
 Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
 
-> [!NOTE] Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten.
+> [!NOTE]
+> Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten.
 
 ### Algemene instellingen
 
@@ -257,6 +255,7 @@ Hoewel Wi-Fi-profielen voor Android-apparaten door Intune worden ondersteund, on
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

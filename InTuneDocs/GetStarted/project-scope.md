@@ -1,31 +1,25 @@
 ---
-# required metadata
-
 title: Projectomvang | Microsoft Intune
-description:
-keywords:
+description: Aanbevelingen voor de projectbereikfase van een Intune-implementatie.
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 8bd547eb70f1b933a9dee578a9f843b4cbdd7b57
+
 
 ---
 
-# Projectomvang
+# Projectbereik
 In de projectomvangsfase maakt u een overzicht van uw doelstellingen, tijdlijn en de maatstaven voor succes. U bepaalt ook wat de belangrijkste factoren zijn voor gereedheid van de organisatie, u stelt het projectteam samen en u begint met de eerste voorbereidingen voor alle fasen voor het succesvol implementeren van Microsoft Intune in uw organisatie; zo wordt de ervaring voor alle gebruikers positief.
 Investeer voldoende tijd en moeite in het bepalen wat succes op de lange termijn betekent, zodat uw plan alle juiste stappen bevat om die visie werkelijkheid te maken. Hoewel er altijd nog mogelijkheden zijn om het plan later bij te stellen, is het van groot belang om een uitgebreid plan te maken dat goed is afgestemd op de technische implementatie.
 
@@ -63,6 +57,14 @@ Lees dit gedeelte met richtlijnen over focusgebiedactiviteiten voor deze fase va
 ### Planning
 
 Het merendeel van uw inspanningen tijdens de omvangsfase heeft te maken met plannen en voorbereiden. Wanneer uw de omvang van uw project bepaalt, houdt u rekening met zowel technologische als organisatorische problemen. U neemt ook in acht hoe gebruikers momenteel te werk gaan en welke verandering moet plaatsvinden in het gedrag. Begin met de grote lijnen en uw doel in uw achterhoofd. Stel daarna kleinere doelen op voor de volgende fasen zodat u op schema blijft.
+
+
+ > [!NOTE]
+ > 
+ > Deze sjablonen kunnen handig zijn wanneer u aan het projectbereik werkt:
+ > > - [Besluitvormingssjabloon voor Intune of Intune met Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Planningssjabloon voor mobiele apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [Planningssjabloon voor algemeen apparaatbeheer](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### Helpdesk
 Opdat informatiemedewerkers profiteren van een productieve Intune-ervaring, moet de helpdesk goed worden voorbereid. Wanneer u bezig bent met het bepalen van de omvang van uw project, overweegt u ook op welke manier de helpdesk een rol gaat spelen tijdens elke fase en welke resources u nodig hebt voor uitvoering en om ervoor te zorgen dat de helpdesk klaarstaat om eindgebruikers te ondersteunen.
@@ -110,6 +112,7 @@ Hier vindt u enkele uitdagingen die kunnen optreden in de fase **Projectomvang**
 [Testen van het concept](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

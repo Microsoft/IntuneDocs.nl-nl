@@ -1,6 +1,6 @@
 ---
 title: Azure-portal voor MAM-beleid | Microsoft Intune
-description: 
+description: Beleid maken voor het beheren van mobiele apps in de Azure Portal. De beleidsregels die u hier maakt kunnen worden toegepast op apparaten met of zonder inschrijving bij Intune.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 ---
@@ -28,8 +28,10 @@ De Azure-portal biedt ondersteuning voor het maken van MAM-beleid voor:
 - Apps die worden uitgevoerd op apparaten die **niet zijn ingeschreven** bij een MDM-oplossing.
 - Apps die worden uitgevoerd op apparaten die zijn **geregistreerd bij een MDM-oplossing van derden**.
 
-Als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren, kunt u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) MAM-beleid maken dat apps ondersteunt voor apparaten die zijn geregistreerd bij Intune.
 >[!IMPORTANT]
+
+> Als u momenteel de Intune-beheerconsole gebruikt om uw apparaten te beheren, kunt u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) MAM-beleid maken dat apps ondersteunt voor apparaten die zijn geregistreerd bij Intune.
+
 > Mogelijk ziet u in de Intune-beheerconsole niet alle MAM-beleidsinstellingen. Azure Portal is de nieuwe beheerconsole voor het maken van MAM-beleid. Als u MAM-beleid in zowel de Intune-beheerconsole als Azure Portal maakt, wordt het beleid in Azure Portal toegepast op de apps en geïmplementeerd bij gebruikers.
 
 ## Meld u aan bij de Azure-portal en pas uw startpagina aan
@@ -59,6 +61,6 @@ Als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren,
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

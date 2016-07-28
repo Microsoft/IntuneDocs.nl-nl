@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Exchange ActiveSync-beleidsinstellingen in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Exchange ActiveSync-beleidsinstellingen | Microsoft Intune
+description: Configureer met het Exchange ActiveSync-beleid voor Intune de instellingen waarmee u functies en functionaliteit op apparaten kunt beheren die worden beheerd door Exchange ActiveSync.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 7cdb34c469d2932deb10deec592a899b9848226a
+
 
 ---
 
@@ -47,7 +41,7 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 
 |Naam van de instelling|Details|
 |----------------|
-|**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup>|Vereist dat de gegevens op het apparaat moeten worden gecodeerd als dit wordt ondersteund.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**..<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten** in om versleuteling van iOS-apparaten in te schakelen..|
+|**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup>|Vereist dat de gegevens op het apparaat moeten worden gecodeerd als dit wordt ondersteund.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**in om versleuteling van iOS-apparaten in te schakelen.|
 |**Versleuteling vereisen voor opslagkaarten**|Vereist dat gegevens opgeslagen in een externe opslag, zoals een SD-kaart, worden versleuteld (op ondersteunde apparaten).
 <sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
 
@@ -86,6 +80,7 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Wi-Fi-verbindingen | Microsoft Intune
-description:
-keywords:
+description: VPN-profielen gebruiken om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie.
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 3a59d69be920012b3faa6ea5420b4a96d9c63f46
+
 
 ---
 
@@ -44,7 +38,7 @@ U kunt Wi-Fi-profielen implementeren voor de volgende platforms:
 
 -   Mac OS X 10.9 en hoger
 
-Voor apparaten met Windows 8.1 en hoger kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd. Zie 'Een Wi-Fi-profiel importeren' verderop in dit onderwerp voor meer informatie.
+Voor apparaten met Windows 8.1 of Windows 10 Desktop of Mobile kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd. Zie **Een Wi-Fi-profiel importeren** verderop in dit onderwerp voor meer informatie.
 
 ## Een Wi-Fi-profiel maken
 
@@ -64,20 +58,39 @@ Voor apparaten met Windows 8.1 en hoger kunt u een Wi-Fi-configuratieprofiel imp
 
 4. Geef de waarden voor **Netwerkverbindingen** op:
 
-  |Instellingen|Meer informatie| |-----------|--------------------|
-|**Netwerknaam**|Geef een beschrijvende naam op voor het draadloze netwerk. Dit is de naam die wordt weergegeven op het apparaat van een gebruiker wanneer deze een draadloos netwerk kiest. | |**SSID (Service Set Identifier)**| Geef de SSID van het draadloze netwerk op waarmee apparaten verbinding moeten maken. De SSID is hoofdlettergevoelig en niet zichtbaar voor gebruikers.| |**Automatisch verbinding maken wanneer dit netwerk binnen bereik is**| Selecteer deze optie om ervoor te zorgen dat apparaten automatisch verbinding met het draadloze netwerk maken wanneer dit netwerk binnen bereik is. | |**Verbinding maken als het netwerk de naam niet uitzendt (SSID)**| Selecteer deze optie om ervoor te zorgen dat apparaten verbinding met het netwerk kunnen maken wanneer het netwerk niet zichtbaar is in de lijst met netwerken (omdat het verborgen is en de naam niet wordt uitgezonden). |
+  |Instelling|Meer informatie|
+|-----------|--------------------|
+|**Netwerknaam**|Geef een beschrijvende naam voor het draadloze netwerk op. Dit is de naam die op het apparaat van gebruikers wordt weergegeven wanneer ze een draadloos netwerk kiezen.|
+|**SSID (Service Set Identifier)**|Geef de SSID op van het draadloze netwerk waarmee apparaten verbinding moeten maken. De SSID is hoofdlettergevoelig en is niet zichtbaar voor gebruikers.|
+|**Automatisch verbinding maken wanneer dit netwerk binnen bereik is**|Selecteer deze optie om apparaten automatisch met het draadloze netwerk te verbinden wanneer het draadloze netwerk binnen bereik is.|
+|**Verbinden wanneer het netwerk de naam (SSID) niet uitzendt**|Selecteer deze optie om apparaten verbinding met het netwerk te laten maken als het netwerk niet zichtbaar is in de lijst met netwerken (omdat het verborgen is en de naam niet uitzendt).|
 
 5. Configureer de **beveiligingsinstellingen** voor het geselecteerde platform. De beschikbare instellingen zijn afhankelijk van de beveiligingstypen die u selecteert.
 
   #### Voor Android-apparaten
 
-  |Naam van instelling|Meer informatie|Gebruiken wanneer:| |----------------|--------------------|-------------|
-|**Beveiligingstype**|Selecteer het beveiligingsprotocol voor het draadloze netwerk:<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **Geen verificatie (open)** als het netwerk niet beveiligd is.|Altijd| |**EAP-type**|Kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt om beveiligde draadloze verbindingen te verifiëren:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|U hebt het beveiligingstype **WPA-Enterprise/WPA2-Enterprise** geselecteerd.| |**Basiscertificaten voor servervalidatie selecteren**|Klik op **Selecteren** en kies vervolgens het profiel voor het vertrouwde basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** zie [Beveiligde toegang tot bedrijfsresources met certificaatprofielen](secure-resource-access-with-certificate-profiles.md) om het profiel voor het vertrouwde basiscertificaat te maken.|Er is een **EAP-type** geselecteerd.| |**Verificatiemethode**|Selecteer de verificatiemethode voor de verbinding:<br /><br />-   **Certificaten** om het clientcertificaat op te geven<br />-   **Gebruikersnaam en wachtwoord** om een andere verificatiemethode op te geven|Het **EAP-type** is **PEAP** of **EAP-TTLS**.| |**Selecteer een niet-EAP-methode voor verificatie (interne identiteit)**|Selecteer hoe u de verbinding verifieert:<br /><br />-   **Geen**<br />-   **Niet-versleuteld wachtwoord (PAP)**<br />-   **Challenge Handshake Authentication Protocol (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP versie 2 (MS-CHAP v2)**<br /><br />De beschikbare opties zijn afhankelijk van het EAP-type dat u selecteert.|De **verificatiemethode** is **gebruikersnaam en wachtwoord**.| |**Identiteitsprivacy inschakelen (externe identiteit)**|Geef de tekst op die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|Het **EAP-type** is **PEAP** of **EAP-TTLS**.| |**Clientcertificaat selecteren voor clientverificatie (identiteitscertificaat)**|Klik op **Selecteren** en kies vervolgens het profiel voor een SCEP-certificaat dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** voor het maken van een profiel voor SCEP-certificaten verwijzen wij u naar [Beveiligde toegang tot bedrijfsbronnen met certificaatprofielen](secure-resource-access-with-certificate-profiles.md).|Het beveiligingstype is **WPA-Enterprise/WPA2-Enterprise** en er is een **EAP-type** geselecteerd.|
+  |Naam van de instelling|Meer informatie|Gebruiken wanneer:|
+|----------------|--------------------|-------------|
+|**Beveiligingstype**|Selecteer het beveiligingsprotocol voor het draadloze netwerk:<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **Geen verificatie (open)** als het netwerk niet beveiligd is.|Altijd|
+|**EAP-type**|Kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt voor het verifiëren van beveiligde draadloze verbindingen:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Het beveiligingstype **WPA-Enterprise/WPA2-Enterprise** is geselecteerd.|
+|**Basiscertificaten voor servervalidatie selecteren**|Klik op **Selecteren**en kies vervolgens het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** voor het maken van het profiel voor vertrouwde basiscertificaten gaat u naar [Toegang tot beveiligde bronnen met certificaatprofielen](secure-resource-access-with-certificate-profiles.md).|Een **EAP-type** geselecteerd.|
+|**Verificatiemethode**|Selecteer de verificatiemethode voor de verbinding:<br /><br />-   **Certificaten** om het clientcertificaat op te geven<br />-   **Gebruikersnaam en wachtwoord** om een andere methode voor verificatie op te geven|Het **EAP-type** is **PEAP** of **EAP-TTLS**.|
+|**Een niet-EAP-methode voor verificatie selecteren (interne identiteit)**|Selecteer hoe de verbinding moet worden geverifieerd:<br /><br />-   **Geen**<br />-   **Niet-versleuteld wachtwoord (PAP)**<br />-   **Challenge Handshake Authentication Protocol (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP versie 2 (MS-CHAP v2)**<br /><br />De beschikbare opties zijn afhankelijk van het geselecteerde EAP-type.|De **verificatiemethode** is **Gebruikersnaam en wachtwoord**.|
+|**Identiteitsprivacy inschakelen (externe identiteit)**|Geef de tekst op die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|Het **EAP-type** is **PEAP** of **EAP-TTLS**.|
+|**Clientcertificaat selecteren voor clientverificatie (identiteitscertificaat)**|Klik op **Selecteren**en kies vervolgens het profiel voor een SCEP-certificaat dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** voor het maken van het profiel voor SCEP-certificaten gaat u naar [Toegang tot beveiligde bronnen met certificaatprofielen](secure-resource-access-with-certificate-profiles.md).|Het beveiligingstype is **WPA-Enterprise/WPA2-Enterprise** en er is een **EAP-type** geselecteerd.|
 
   #### Voor iOS- en Mac OS X-apparaten
 
-  |Naam van instelling|Meer informatie|Gebruiken wanneer:| |----------------|--------------------|-------------|
-|**Beveiligingstype**|Selecteer het beveiligingsprotocol voor het draadloze netwerk:<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   **Geen verificatie (open)** als het netwerk niet beveiligd is.|Altijd| |**EAP-type**|Kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt om beveiligde draadloze verbindingen te verifiëren:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|U hebt het beveiligingstype **WPA-Enterprise/WPA2-Enterprise** geselecteerd.| |**Vertrouwde servercertificaatnamen**|Selecteer het profiel voor het vertrouwde basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** zie [Toegang tot beveiligde bronnen met certificaatprofielen](secure-resource-access-with-certificate-profiles.md) voor het maken van profielen voor vertrouwde basiscertificaten.|U hebt het EAP-type **EAP-TLS**, **PEAP**, **EAP-TTLS** of **EAP-FAST** geselecteerd.| |**Protected Access Credential (PAC) gebruiken**|Selecteer dit om referenties voor beveiligde toegang te gebruiken om een geverifieerde tunnel tussen de client en de verificatieserver tot stand te brengen. Er wordt een bestaand PAC-bestand gebruikt, indien aanwezig.|Het **EAP-type** is **EAP-FAST**.| |**PAC inrichten**|Richt het PAC-bestand voor uw apparaten in.<br /><br />Wanneer u dit gebruikt, kunt u ook **Voorzienings-PAC anoniem** selecteren om ervoor te zorgen dat het PAC-bestand wordt ingericht zonder verificatie bij de server.|**Referenties voor beveiligde toegang (PAC) gebruiken** is geselecteerd.| |**Verificatiemethode**|Selecteer de verificatiemethode die voor de verbinding wordt gebruikt:<br /><br /><ul><li>**Certificaten** om het clientcertificaat op te geven</li><li>**Gebruikersnaam en wachtwoord** om een van de volgende niet-EAP-methoden voor verificatie op te geven (ook wel bekend als interne identiteit):<br /><br /><ul><li>**Geen**</li><li>**Niet-versleuteld wachtwoord (PAP)**</li><li>**Challenge Handshake Authentication Protocol (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP versie 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|Het **EAP-type** is **PEAP** of **EAP-TTLS**.| |**Selecteer een clientcertificaat voor clientverificatie (identiteitscertificaat)**|Selecteer het SCEP-certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** zie [Toegang tot beveiligde resources met certificaatprofielen](secure-resource-access-with-certificate-profiles.md) voor het maken van SCEP-certificaatprofielen.|Als het beveiligingstype **WPA-Enterprise/WPA2-Enterprise** is en het **EAP-type** **EAP-TLS**, **PEAP** of **EAP-TTLS** is.| |**Identiteitsprivacy inschakelen (externe identiteit)**|Geef de tekst op die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben.<br /><br />Tijdens verificatie wordt in eerste instantie deze anonieme identiteit verzonden. Vervolgens via en beveiligde tunnel de echte identificatie verzonden.|Wanneer het **EAP-type** is ingesteld op **PEAP**, **EAP-TTLS** of **EAP-FAST**.|
+  |Naam van de instelling|Meer informatie|Gebruiken wanneer:|
+|----------------|--------------------|-------------|
+|**Beveiligingstype**|Selecteer het beveiligingsprotocol voor het draadloze netwerk:<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   **Geen verificatie (open)** als het netwerk niet beveiligd is.|Altijd|
+|**EAP-type**|Kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt voor het verifiëren van beveiligde draadloze verbindingen:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|Een beveiligingstype **WPA-Enterprise/WPA2-Enterprise** is geselecteerd.|
+|**Namen van vertrouwde servercertificaten**|Selecteer het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** voor het maken van het profiel voor vertrouwde basiscertificaten gaat u naar [Toegang tot beveiligde bronnen met certificaatprofielen](secure-resource-access-with-certificate-profiles.md).|Er is een EAP-type **EAP-TLS**, **PEAP**, **EAP-TTLS** of **EAP-FAST** geselecteerd.|
+|**Protected Access Credential (PAC) gebruiken**|Selecteer dit om referenties voor beveiligde toegang te gebruiken om een geverifieerde tunnel tussen de client en de verificatieserver tot stand te brengen. Er wordt een bestaand PAC-bestand gebruikt, indien aanwezig.|Het **EAP-type** is **EAP-FAST**.|
+|**PAC leveren**|Levert het PAC-bestand aan uw apparaten.<br /><br />Indien gebruikt, kunt u ook **PAC anoniem leveren** selecteren om ervoor te zorgen dat het PAC-bestand wordt geleverd zonder verificatie van de server.|**Protected Access Credential (PAC) gebruiken** is geselecteerd.|
+|**Verificatiemethode**|Selecteer de verificatiemethode die wordt gebruikt voor de verbinding:<br /><br /><ul><li>**Certificaten** om het clientcertificaat op te geven</li><li>**Gebruikersnaam en wachtwoord** om een van de volgende niet-EAP-methoden voor verificatie op te geven (ook wel bekend als interne identiteit):<br /><br /><ul><li>**Geen**</li><li>**Niet-versleuteld wachtwoord (PAP)**</li><li>**Challenge Handshake Authentication Protocol (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP versie 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|Het **EAP-type** is **PEAP** of **EAP-TTLS**.|
+|**Clientcertificaat selecteren voor clientverificatie (identiteitscertificaat)**|Selecteer het SCEP-certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren. **Belangrijk:** voor het maken van het profiel voor SCEP-certificaten gaat u naar [Toegang tot beveiligde bronnen met certificaatprofielen](secure-resource-access-with-certificate-profiles.md).|Als het beveiligingstype **WPA-Enterprise/WPA2-Enterprise** en het **EAP type** **EAP-TLS**, **PEAP** of **EAP-TTLS** is.|
+|**Identiteitsprivacy inschakelen (externe identiteit)**|Geef tekst op die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben.<br /><br />Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|Wanneer het **EAP-type** is ingesteld op **PEAP**, **EAP-TTLS** of **EAP-FAST**.|
 
 6. (alleen iOS en MAC OS X) **Proxy-instellingen** configureren
 
@@ -104,14 +117,17 @@ In Windows kunt u het hulpprogramma **netsh wlan** gebruiken om een bestaand Wi-
 
 4.  Voer deze opdracht uit: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Hiermee wordt in de doelmap een Wi-Fi-profielbestand met de naam Wi-Fi-WiFiName.xml gemaakt.
 
-## Een Wi-Fi-profiel importeren
-Gebruik het **Windows Wi-Fi-importbeleid** om een reek Wi-Fi-instellingen te importeren die u vervolgens kunt implementeren bij de vereiste groepen gebruikers of apparaten. De procedure voor het exporteren van een Wi-Fi-profiel wordt beschreven in
+### Een Wi-Fi-profiel importeren
+Gebruik het **Windows Wi-Fi-importbeleid** om een reek Wi-Fi-instellingen te importeren die u vervolgens kunt implementeren bij de vereiste groepen gebruikers of apparaten.
+
 
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Beleid toevoegen**.
 
-2.  Configureer een beleid van het type **Windows** &gt; **Windows Wi-Fi-importbeleid**.
+2.  Configureer een beleid van het type **Windows** &gt; **Wi-Fi-import (Windows 8.1 en hoger)**.
 
-    U kunt alleen een aangepast Windows Wi-Fi-importbeleid maken en implementeren. Aanbevolen instellingen zijn niet beschikbaar.
+    Dit beleid kan worden toegepast op pc's en mobiele apparaten met Windows 8.1 en Windows 10. 
+    
+    U kunt alleen een *aangepast* Windows Wi-Fi-importbeleid maken en implementeren. Aanbevolen instellingen zijn niet beschikbaar.
 
 3.  Geef de volgende algemene waarden op voor het Windows Wi-Fi-importbeleid:
 
@@ -149,6 +165,7 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 Zie [Wi-Fi-profiel met vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md) voor meer informatie over het maken van een Wi-Fi-profiel met een vooraf gedeelde sleutel.
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

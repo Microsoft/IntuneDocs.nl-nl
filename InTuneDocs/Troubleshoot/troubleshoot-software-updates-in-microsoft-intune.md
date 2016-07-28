@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Problemen met software-updates oplossen | Microsoft Intune
-description:
-keywords:
+description: Problemen met software-updates in Microsoft Intune oplossen.
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+
 
 ---
 
@@ -29,6 +23,8 @@ ms.suite: ems
 Met de informatie in deze sectie kunt u problemen met software-updates in Microsoft Intune oplossen.
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
+
+## Foutcodes voor update-agent
 
 De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een specifieke foutcode niet in deze tabel kunt vinden, raadpleegt u [Resultaatcodes voor Windows Update Agent](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -268,6 +264,7 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Apps buiten gebruik stellen | Microsoft Intune
-description:
-keywords:
+description: Informatie over het buiten gebruik stellen of verwijderen van apps met behulp van Intune.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 2af2e139d2d1ca969095067a2d9ec111d3d7127f
+
 
 ---
 
@@ -43,6 +37,7 @@ Wanneer het apparaat of de computer de volgende keer naar updates zoekt, wordt d
 [Apps toevoegen in Microsoft Intune](add-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

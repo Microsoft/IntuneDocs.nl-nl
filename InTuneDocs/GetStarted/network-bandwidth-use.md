@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Gebruik van netwerkbandbreedte | Microsoft Intune
-description:
-keywords:
+description: gebruik van netwerkbandbreedte door intune
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: fe3f3bff7f3b636a24d7b81d308519fb36e998df
+
 
 ---
 
 # Gebruik van netwerkbandbreedte door Intune
 
-Lees voordat u begint met het instellen van [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], dit onderwerp en de andere vereisten in [Wat u moet weten voor u met Microsoft Intune begint](what-to-know-before-you-start-microsoft-intune.md)..
+Lees voor de installatie van [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] dit onderwerp en de andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md).
 
 Gebruik de informatie in de volgende gedeelten om te plannen voor het netwerkverkeer voor [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-clients.
 
@@ -83,15 +77,16 @@ Zie [Background Intelligent Transfer Service](http://technet.microsoft.com/libra
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-Als u BranchCache wilt gebruiken, moet BranchCache op de clientcomputer zijn ingeschakeld en moet de computer zijn geconfigureerd voor de **modus Gedistribueerde cache**..
+Als u BranchCache wilt gebruiken, moet BranchCache op de clientcomputer zijn ingeschakeld en moet de computer zijn geconfigureerd voor de **modus Gedistribueerde cache**.
 
 BranchCache en de modus voor gedistribueerde cache zijn standaard ingeschakeld op een computer als de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-client is geïnstalleerd. Als de client echter al groepsbeleid heeft waarmee BranchCache wordt uitgeschakeld, wordt dat beleid niet door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] overschreven en blijft BranchCache uitgeschakeld op die computer.
 
-Als u BranchCache gebruikt, moet u contact opnemen met andere beheerders in uw organisatie die groepsbeleid en het beleid voor de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] Firewall beheren om ervoor te zorgen dat zij geen beleid implementeren waarmee BranchCache of Firewall-uitzonderingen worden uitgeschakeld. Zie [Overzicht van BranchCache](http://technet.microsoft.com/library/hh831696.aspx) voor meer informatie over BranchCache..
+Als u BranchCache gebruikt, moet u contact opnemen met andere beheerders in uw organisatie die groepsbeleid en het beleid voor de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] Firewall beheren om ervoor te zorgen dat zij geen beleid implementeren waarmee BranchCache of Firewall-uitzonderingen worden uitgeschakeld. Zie [Overzicht van BranchCache](http://technet.microsoft.com/library/hh831696.aspx) voor meer informatie over BranchCache.
 
 ### Zie tevens
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

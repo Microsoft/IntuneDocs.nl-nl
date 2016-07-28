@@ -1,10 +1,10 @@
 ---
 title: Apparaten in bedrijfseigendom beheren | Microsoft Intune
-description: 
+description: Apparaten in bedrijfseigendom (COD) kunnen op verschillende manieren worden beheerd, afhankelijk van het apparaat en hoe dit apparaat is aangeschaft, en de behoeften van de organisatie.
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
-ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 ---
@@ -32,13 +32,27 @@ Organisaties kunnen Intune gebruiken voor het beheer van een groot aantal mobiel
 
 [Apparaten in bedrijfseigendom inschrijven met de apparaatinschrijvingsbeheerder](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## IMEI (International Mobile Equipment Identity)
-Een uniek IMEI-nummer (International Mobile Equipment Identity) is voor veel fabrikanten van mobiele apparaten een algemene apparaateigenschap. Intune-beheerders kunnen IMEI-nummers importeren voor apparaten die eigendom zijn van het bedrijf. Wanneer het apparaat wordt beheerd met Intune, kan het worden gelabeld als apparaat in bedrijfseigendom zodat het juiste beleid erop wordt toegepast.
+## Windows 10-desktops in bedrijfseigendom inschrijven
+
+Als uw organisatie Azure Active Directory Premium (AADP) of Enterprise Management-pakket (EMS) heeft, kunt u [Windows 10 Enterprise inschrijven](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Deze worden automatisch gemarkeerd als 'bedrijfseigendom' wanneer gebruikers hun werk- of schoolaccount toevoegen.
+
+## Apparaten identificeren als bedrijfseigendom
+
+Apparaten in bedrijfseigendom zijn opgenomen als **Zakelijk**  onder **Eigendom** in een lijst met apparaten. Apparaten kunnen op de volgende manieren worden geïdentificeerd als bedrijfseigendom:
+
+ - [Ingeschreven met apparaatregistratiebeheer (DEM)](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - Ingeschreven met het Apple-[apparaatregistratieprogramma (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) of [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+ - [Apparaten labelen met IMEI-nummers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Windows 10-apparaten inschrijven via Azure Active Directory/Enterprise Management-pakket](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### IMEI (International Mobile Equipment Identity)
+
+Een uniek IMEI-nummer (International Mobile Equipment Identity) is voor veel fabrikanten van mobiele apparaten een algemene apparaateigenschap. Intune-beheerders kunnen IMEI-nummers importeren voor apparaten die eigendom zijn van het bedrijf. Wanneer het apparaat wordt beheerd met Intune, wordt het gelabeld als apparaat in bedrijfseigendom.
 
 [Apparaten in bedrijfseigendom met een IMEI-nummer opgeven](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

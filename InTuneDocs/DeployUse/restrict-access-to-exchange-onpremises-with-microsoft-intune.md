@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated | Microsoft Intune
-description:
-keywords:
+title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Intune
+description: Toegang tot bedrijfse-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 490a1aa091547de1d2bccb0fe8ea72e40753a0a7
+
 
 ---
 
@@ -75,7 +69,8 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 -   Systeemeigen e-mail-app voor iOS.
 
 -   Systeemeigen e-mail-app voor Android 4 of hoger
-> [!NOTE] Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
+> [!NOTE]
+> De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
 
 ## Ondersteuning voor pc's
 
@@ -104,7 +99,8 @@ De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLU
 >Als het uw bedoeling is om eerst alle apparaten te blokkeren voordat u toegang verleent tot e-mail, kiest u Toegang blokkeren, of Quarantaineregel. De standaardregel geldt voor alle apparaattypen. Apparaattypen die u als platformuitzondering opgeeft en die niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], vallen hier dus ook onder.
 
   - **Gebruikersmelding:** naast de meldings-e-mail die vanuit Exchange wordt verzonden, verstuurt Intune ook een e-mail waarin wordt beschreven hoe de blokkering van het apparaat kan worden opgeheven. U kunt het standaardbericht aanpassen aan uw behoeften. Omdat de Intune-meldings-e-mail met herstelinstructies wordt bezorgd in het Exchange-postvak van de gebruiker, kan de gebruiker ook een niet-geblokkeerd apparaat of een andere methode gebruiken om Exchange te openen en het bericht weer te geven, mocht het apparaat van de gebruiker worden geblokkeerd voordat deze het e-mailbericht heeft ontvangen. Dit is vooral van toepassing wanneer de **Standaardregel** is ingesteld op het blokkeren van toegang of het in quarantaine plaatsen van het apparaat.  In dat geval moet de eindgebruiker naar de app-store gaan, de Microsoft-bedrijfsportal-app downloaden en het apparaat inschrijven. Dit geldt voor iOS-, Windows- en Samsung KNOX-apparaten.  Bij apparaten die niet over Samsung KNOX beschikken, moet de IT-beheerder de quarantaine-e-mail naar een ander e-mailaccount verzenden. De eindgebruiker moet deze vervolgens naar het geblokkeerde apparaat kopiëren om de procedure voor inschrijving en naleving uit te voeren.
-  > [!NOTE] Als u ervoor wilt zorgen dat Exchange de e-mailmelding kan verzenden, moet u het account opgeven dat moet worden gebruikt om de e-mailmelding te verzenden.
+  > [!NOTE]
+  > Als u ervoor wilt zorgen dat Exchange de e-mailmelding kan verzenden, moet u het account opgeven dat moet worden gebruikt om de e-mailmelding te verzenden.
   >
   > Zie [Exchange On-premises-connector configureren voor on-premises of gehoste Exchange](intune-on-premises-exchange-connector.md) voor meer informatie.
 
@@ -126,6 +122,7 @@ De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLU
 [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

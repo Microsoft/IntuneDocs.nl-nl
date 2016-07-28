@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Groepen maken om gebruikers en apparaten te organiseren | Microsoft Intune
-description:
-keywords:
+description: Informatie over hoe u gebruikers en groepen voor uw Intune-abonnement kunt maken
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8c6620d5d8f0d927da6328ea844625957ba2d240
+
 
 ---
 
@@ -35,15 +29,15 @@ Apparaat- en gebruikersgroepen worden beide gemaakt in de werkruimte Groepen van
 
 
 > [!TIP]
-> Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) voor meer informatie over het gebruiken van groepen.
+> Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) voor meer informatie over het gebruik van groepen.
 
 
 ## Een apparaatgroep maken
 Gebruik apparaatgroepen om apps en updates te implementeren en andere onderdelen te configureren. Stel bijvoorbeeld de groep 'Mijn apparaten' in met behulp van de volgende stappen:
 
-1.  Klik in de [Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** > **Overzicht** > **Groep maken**.
+1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** > **Overzicht** > **Groep maken**.
 
-2.  Typ 'Mijn apparaten' in het veld **Groepsnaam**, selecteer **Alle apparaten** in de lijst voor de bovenliggende groep en kies **Volgende**..
+2.  Typ 'Mijn apparaten' in **Groepsnaam**, selecteer **Alle apparaten** in de lijst voor de bovenliggende groep en kies **Volgende**.
 
 3.  Selecteer **Alle apparaten** op de pagina **Lidmaatschapscriteria definiëren** om aan te geven dat de groep zowel mobiele apparaten als computers bevat.
 
@@ -56,9 +50,9 @@ U vindt de nieuwe groep in de lijst **Groepen** en in de werkruimte **Groepen** 
 ## Een gebruikersgroep maken
 Gebruik gebruikersgroepen om software- en apparaatbeleid te implementeren. Stel bijvoorbeeld de groep 'Intune-gebruikers' in met behulp van de volgende stappen:
 
-1.  Klik in de [Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** > **Overzicht** > **Groep maken**.
+1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** > **Overzicht** > **Groep maken**.
 
-2.  Typ 'Intune-gebruikers' in het veld **Groepsnaam**, selecteer **Alle gebruikers** in de lijst voor de bovenliggende groep en kies **Volgende**..
+2.  Typ 'Intune-gebruikers' in **Groepsnaam**, selecteer **Alle gebruikers** in de lijst voor de bovenliggende groep en kies **Volgende**.
 
 3.  Stel op de pagina **Lidmaatschapscriteria definiëren** de optie **Groepslidmaatschap beginnen met** in op **Alle gebruikers in de bovenliggende groep**.
 
@@ -80,6 +74,7 @@ Gefeliciteerd. U hebt zojuist stap 5 van de *Snelstartgids voor Intune* voltooid
 >[&larr; **Intune-licenties beheren**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Beleid en apps maken** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

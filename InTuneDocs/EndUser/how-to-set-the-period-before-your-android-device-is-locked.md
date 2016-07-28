@@ -3,37 +3,45 @@ title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Mic
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 00fca8673ff1b52535fb6c06a02b38b7879f204f
+ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
+ms.openlocfilehash: 6ffad8fd23afb4d47dc8ead1ba4a7a930a30ea73
 
 
 ---
 
 # De periode instellen voordat een Android-apparaat wordt vergrendeld
-Als u wilt opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op het apparaat instellen door deze instructies te volgen:
+Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op uw apparaat instellen door de stappen voor uw apparaattype te volgen.
 
-1.  Klik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
+## Native apparaat (niet-Samsung Knox)
+
+1.  Tik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
 
     Als **Automatisch vergrendelen** (op sommige apparaten **Telefoon vergrendelen na**) niet wordt weergegeven, controleert u of u een geldig wachtwoord hebt ingesteld onder **Instellingen** &gt; **Schermvergrendeling** &gt; **Wachtwoord**.
 
-2.  Geef de waarde voor de wachtwoordtime-out op.
+2.  Selecteer de waarde voor de wachtwoordtime-out.
 
-3.  Zorg ervoor dat het apparaat is geregistreerd bij Intune door de instructies in [Apparaat registreren voor gebruik op het werk](http://go.microsoft.com/fwlink/?LinkId=519071) te volgen.
+## Samsung KNOX-apparaat
+
+1.  Tik in **Instellingen** op uw apparaat op **Scherm vergrendelen en beveiliging** &gt; **Automatisch vergrendelen**.
+
+    Als **Automatisch vergrendelen** (op sommige apparaten **Telefoon vergrendelen) ** niet wordt weergegeven, moet u controleren of u een geldig wachtwoord hebt ingesteld onder **Instellingen** &gt; **Schermvergrendeling** &gt; **Wachtwoord**.
+
+2.  Selecteer een waarde voor de wachtwoordtime-out.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

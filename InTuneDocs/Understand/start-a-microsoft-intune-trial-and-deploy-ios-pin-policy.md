@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Een proefversie van Microsoft Intune in gebruik nemen en een iOS-pincodebeleid implementeren | Microsoft Intune
-description:
-keywords:
+title: Een proefversie van Intune in gebruik nemen en een iOS-pincodebeleid implementeren | Microsoft Intune
+description: iOS-pincodebeleid in Intune implementeren
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: b2b24492693b61a544a4adc3e878b8b212d15a21
+
 
 ---
 
 # Een proefversie van Microsoft Intune in gebruik nemen en een iOS-pincodebeleid implementeren
-Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabonnement en de configuratie van een pincodebeleid voor iOS-apparaten. Zie [Algemene Microsoft Intune-evaluatietaken](common-microsoft-intune-evaluation-tasks.md) voor een lijst met algemene Intune-evaluatietaken die u kunt proberen..
+Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabonnement en de configuratie van een pincodebeleid voor iOS-apparaten. Zie [Algemene Microsoft Intune-evaluatietaken](common-microsoft-intune-evaluation-tasks.md) voor een lijst met algemene Intune-evaluatietaken die u kunt uitvoeren.
 
 
 
@@ -42,7 +36,7 @@ Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabo
 > [!NOTE]
 > Als u al een Intune-abonnement hebt, kunt u deze sectie overslaan en naar de volgende sectie gaan.
 
-1.  Klik op een Windows-pc met de rechtermuisknop op **Internet Explorer** (IE) en selecteer **InPrivate-navigatie**.
+1.  Klik op een Windows-pc met de rechtermuisknop op **Internet Explorer** (IE) en selecteer **InPrivate-browsing**.
 
     ![InPrivate-navigatie starten](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
@@ -134,7 +128,7 @@ Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabo
 
         ![De gebruiksvoorwaarden accepteren](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  Klik op **Bladeren**..
+    8.  Klik op **Bladeren**.
 
         ![Bladeren naar de locatie waar u het certificaat hebt opgeslagen](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
@@ -252,7 +246,7 @@ Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabo
 
     ![Inschrijving starten](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  Tik in het scherm **Profiel installeren** op **Installeren**..
+4.  Tik in het scherm **Profiel installeren** op **Installeren**.
 
     ![Een profiel installeren](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
@@ -290,6 +284,7 @@ Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabo
 [Intune-evaluatiehandleiding](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

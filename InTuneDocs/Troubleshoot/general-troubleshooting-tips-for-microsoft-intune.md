@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Algemene tips voor probleemoplossing | Microsoft Intune
-description:
-keywords:
+description: Algemene bronnen voor hulp bij het oplossen van problemen met Intune.
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 3fe277417c82bc4d60f355ac5366f0f7d70039ab
+
 
 ---
 
@@ -46,7 +40,7 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
 
 -   Kan de gebruiker mogelijk een verificatieprobleem ervaren? Als dit een mogelijkheid is, controleer dan of de gebruiker zich kan aanmelden bij andere services die gebruikmaken van Azure Active Directory. Controleer ook of de gebruiker zich vanaf een ander apparaat kan aanmelden.
 
--   Hebt u de status van de service gecontroleerd? U kunt de servicestatus van Intune bewaken in de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Kies **Servicestatus** in het linkerdeelvenster. 
+-   Hebt u de status van de service gecontroleerd? U kunt de servicestatus van Intune bewaken in de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Kies **Servicestatus** in het linkerdeelvenster.
 
 ## Beschikbare gegevens verzamelen
 
@@ -54,9 +48,9 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
   - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via een USB-kabel](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Android-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [iOS-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [iOS-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Beheerconsolegegevens. Voor problemen met implementatie van beleid moet u bijvoorbeeld het gewenste beleid en de status van dit beleid onderzoeken, zoals beschreven in [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Beheerconsolegegevens. Voor problemen met implementatie van beleid moet u bijvoorbeeld het gewenste beleid en de status van dit beleid onderzoeken, zoals beschreven in [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Onderzoek doen naar de oplossing
 
@@ -97,6 +91,7 @@ Onderstaande onderwerpen bieden probleemoplossing voor specifieke problemen. Als
 [Problemen met software-updates oplossen in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

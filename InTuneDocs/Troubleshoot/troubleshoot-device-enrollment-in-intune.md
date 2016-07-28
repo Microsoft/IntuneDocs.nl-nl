@@ -1,6 +1,6 @@
 ---
 title: Problemen bij de apparaatregistratie oplossen | Microsoft Intune
-description: 
+description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -10,27 +10,38 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-ms.sourcegitcommit: 502fb25c0dc050fb3f08fbba4d02148add3faf8e
-ms.openlocfilehash: ae2b35321b0664c5b54708d7389e9eb0262bb2d6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 ---
 
 # Problemen bij de apparaatinschrijving oplossen
 
-Hier vindt u enkele problemen die zich kunnen voordoen bij de registratie van apparaten en wordt beschreven hoe u deze kunt oplossen.
-
-> [!NOTE]
-> Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
->- [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via een USB-kabel](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [Android-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
->- [iOS-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-errors-to-your-it-admin-ios)
+Dit onderwerp bevat suggesties voor het oplossen van problemen met de registratie van apparaat. Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
 
-Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
+## Eerste stappen om het probleem op te lossen
+
+Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
+
+-   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-   [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+
+
+Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
+
+- [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via een USB-kabel](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Android-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [iOS-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-errors-to-your-it-admin-ios)
+
+
 
 ## Problemen bij het registreren van apparaten
 Deze problemen kunnen optreden op alle apparaatplatforms.
@@ -96,7 +107,8 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 1.  Controleer of de MDM-instantie juist is ingesteld voor de versie van de Intune-service die u gebruikt, dat wil zeggen, voor Intune, O365 MDM of System Center Configuration Manager met Intune. Voor Intune wordt de MDM-instantie ingesteld in **Beheer** &gt; **Mobile Device Management**. Voor Configuration Manager met Intune stelt u deze in wanneer u de Intune-connector configureert. In O365 is het een instelling in **Mobiele apparaten**.
 
-    > [!NOTE] Wanneer u de MDM-instantie eenmaal hebt ingesteld, kunt u deze alleen wijzigen door contact op te nemen met Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
+    > [!NOTE]
+    > Wanneer u de MDM-instantie eenmaal hebt ingesteld, kunt u deze alleen wijzigen door contact op te nemen met Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory door te controleren of de UPN overeenkomt met de Active Directory-gegevens in de accountportal.
     Doe het volgende als de UPN niet overeenkomt met de Active Directory-gegevens:
@@ -148,8 +160,29 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
 
-
 4.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
+
+### Problemen met Android-certificaten
+
+**Probleem**: gebruiker ontvangt het volgende bericht op een apparaat: *U kunt u niet aanmelden omdat een vereist certificaat ontbreekt op het apparaat.*
+
+**Oplossing**: 
+
+- de gebruiker kan het ontbrekende certificaat mogelijk ophalen door [deze instructies](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) te volgen.
+- Als de gebruiker het certificaat niet kan ophalen, dan ontbreken er wellicht tussencertificaten op de ADFS-server. De tussencertificaten zijn voor Android vereist om de server te vertrouwen. 
+
+U kunt de certificaten als volgt importeren naar het tussenarchief op de ADFS-server of proxy's:
+
+1.  Start op de ADFS-server de **Microsoft Management Console** en voeg de module Certificaten toe voor de **computeraccount**. 
+5.  Ga naar het certificaat dat de ADFS-service gebruikt en geef het bovenliggende certificaat weer.
+6.  Kopieer het bovenliggende certificaat en plak dit onder **Computer\Tussenliggende certificeringsinstanties\Certificaten**.
+7.  Kopieer de ADFS-, ADFS-ontsleutelings-, en ADFS-ondertekeningscertificaten en plak deze in het persoonlijke archief voor de ADFS-service.
+8.  Start de ADFS-servers opnieuw.
+
+De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
+
+
+
 ## Problemen met iOS
 ### De profielinstallatie is mislukt
 **Probleem:** een gebruiker ontvangt op een iOS-apparaat de fout **Profiel is niet geïnstalleerd**.
@@ -248,8 +281,7 @@ Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde i
 
 |Foutcode|Mogelijk probleem|Voorgestelde oplossing|
 |--------------|--------------------|----------------------------------------|
-|0x80CF0437 |De klok op de clientcomputer is niet ingesteld op de juiste tijd.|Zorg ervoor dat de klok en de tijdzone op de clientcomputer zijn ingesteld op de juiste tijd en tijdzone.
-|
+|0x80CF0437 |De klok op de clientcomputer is niet ingesteld op de juiste tijd.|Zorg ervoor dat de klok en de tijdzone op de clientcomputer zijn ingesteld op de juiste tijd en tijdzone.|
 |0x80240438, 0x80CF0438, 0x80CF402C|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen voor de client.|Controleer of de proxyconfiguratie op de clientcomputer door Intune wordt ondersteund en of de clientcomputer internettoegang heeft.|
 |0x80240438, 0x80CF0438|Proxy-instellingen in Internet Explorer en lokaal systeem zijn niet geconfigureerd.|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen van de client en bevestig dat de proxyconfiguratie op de clientcomputer door Intune wordt ondersteund, en dat de clientcomputer internettoegang heeft.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Inschrijvingspakket is verouderd.|Download en installeer het huidige clientsoftwarepakket via de beheerwerkruimte.|
@@ -274,6 +306,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Beheermogelijkheden voor Windows-pc's | Microsoft Intune
-description:
-keywords:
+description: Meer informatie over de mogelijkheden van Intune wanneer u Windows-pc's beheert met de Intune-clientsoftware.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
+
 
 ---
 
@@ -39,6 +33,8 @@ In de meeste gevallen schrijft u uw apparaten in bij Microsoft Intune, waarmee u
 -   **Softwarelicentiebeheer**: houdt bij hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
 -   **App-implementatie**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de clientsoftware beheert.
 
+
+Intune biedt ondersteuning voor maximaal 7000 installaties van de pc-clientsoftware op Windows-apparaten.
 
 ## Besturingssysteemvereisten
 Intune kan pc’s met de volgende Windows-versies (zowel x86 als x64) beheren:
@@ -77,6 +73,7 @@ Hieronder staan de softwarevereisten voor het installeren van de Intune-pc-clien
 [Beheermogelijkheden voor mobiele apparaten in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

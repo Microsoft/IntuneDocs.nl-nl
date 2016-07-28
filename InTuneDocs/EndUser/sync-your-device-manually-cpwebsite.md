@@ -1,26 +1,27 @@
 ---
-title: Uw apparaat handmatig synchroniseren | Microsoft Intune
+title: Uw apparaat handmatig synchroniseren op de bedrijfsportalwebsite | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
-ms.openlocfilehash: 2fc13272848bd70d4ebed2750c550f7a5eb13508
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 24ebed67f0d452ec14a778b2e249b10ad035162c
 
 
 ---
 
 
-# Uw apparaat handmatig synchroniseren
+# Uw apparaat handmatig synchroniseren op de bedrijfsportalwebsite
 
 Als de installatie van de app te lang duurt, kunt u proberen om uw apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen. Volg de onderstaande instructies voor het type apparaat of de Windows-versie die u gebruikt. Het synchroniseren van uw apparaat om snelle apps te installeren, werkt alleen voor de hieronder vermelde versies.
 
@@ -33,6 +34,6 @@ Als de installatie van de app te lang duurt, kunt u proberen om uw apparaat hand
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

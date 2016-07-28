@@ -1,10 +1,10 @@
 ---
-title: Nalevingsbeleid implementeren en bewaken in Microsoft Intune | Microsoft Intune
-description: 
+title: Nalevingsbeleid voor apparaten implementeren en bewaken | Microsoft Intune
+description: Volg de stapsgewijze instructies in dit onderwerp om een nalevingsbeleid voor apparaten te implementeren en te bewaken.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 ---
@@ -31,7 +31,8 @@ Implementeer het nalevingsbeleid dat u hebt [gemaakt](create-a-device-compliance
 
 Gebruik het statusoverzicht en de waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** om beleidsproblemen te identificeren die uw aandacht vereisen. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte **Dashboard** .
 
-> [!IMPORTANT]Als u geen nalevingsbeleid hebt geïmplementeerd en daarna een Exchange-beleid voorwaardelijke toegang inschakelt, krijgen alle apparaten uit de doelgroep toegang.
+> [!IMPORTANT]
+> Als u geen nalevingsbeleid hebt geïmplementeerd en daarna een Exchange-beleid voorwaardelijke toegang inschakelt, krijgen alle apparaten uit de doelgroep toegang.
 
 ## Oplossen van Intune-beleidsconflicten
 Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intune-beleidsregels op een apparaat worden toegepast. Als de beleidsinstellingen elkaar overlappen, lost Intune de conflicten aan de hand van de volgende regels op:
@@ -71,6 +72,6 @@ U kunt het nalevingsbeleid nu gebruiken met beleidsregels voor voorwaardelijke t
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Intune-evaluatiehandleiding | Microsoft Intune
-description:
-keywords:
+description: Inleiding en vereisten voor het instellen van een gratis evaluatieversie van Intune van 30 dagen
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 813b4babc78ae29d213f7c783b6afb3e368c52bd
+
 
 ---
 
@@ -30,16 +24,16 @@ Het instellen van een gratis evaluatieversie van 30 dagen voor Microsoft Intune 
 
 In dit onderwerp leert u de basisbeginselen om een evaluatie met Intune op te zetten en krijgt u een overzicht van de service, zodat u de functies en mogelijkheden van Intune kunt evalueren.
 
-Bekijk deze demovideo van vijf minuten en zie hoe eenvoudig u aan de slag kunt met een gratis evaluatieversie van Microsoft Intune en uw apparaten kunt beheren:
+Bekijk de volgende demovideo van vijf minuten en zie hoe eenvoudig u aan de slag kunt gaan met een gratis evaluatieversie van Microsoft Intune en uw apparaten kunt beheren. Het eerste deel van de video gaat over een portal die buiten gebruik is gesteld. Ook al gebruikt u een andere portal, de stappen zijn in principe gelijk. U kunt [hier](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365) meer over de portal lezen.
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## Voordat u begint
 Voordat u aan de slag gaat met Intune, hebt u het volgende nodig:
 
--   Een apparaat met een webbrowser die Silverlight ondersteunt waarmee u toegang hebt tot de websites waar u Intune-gebruikersaccounts kunt maken (het **Office 365-beheercentrum**) en waar u apparaten, groepen en beleidsregels beheert (de **Intune-beheerconsole**).).
+-   Een apparaat met een webbrowser die Silverlight ondersteunt waarmee u toegang hebt tot de websites waar u Intune-gebruikersaccounts kunt maken (het **Office 365-beheercentrum**) en waar u apparaten, groepen en beleid beheert (de **Intune-beheerconsole**).
 
--   Een tweede apparaat met een webbrowser. Hiermee test u hoe Intune-gebruikers hun apparaten via de bedrijfsportal registreren en beheren. U test ook hoe gebruikers apps zoeken en installeren, en hulp vragen aan beheerders. Als u niet over een tweede apparaat met een webbrowser beschikt, kunt u de instelling 'privacymodus' gebruiken in de browser die u ook gebruikt voor Intune-beheer (in Internet Explorer kunt u bijvoorbeeld klikken op **Extra** &gt; **InPrivate-navigatie**).).
+-   Een tweede apparaat met een webbrowser. Hiermee test u hoe Intune-gebruikers hun apparaten via de bedrijfsportal registreren en beheren. U test ook hoe gebruikers apps zoeken en installeren, en hulp vragen aan beheerders. Als u niet over een tweede apparaat beschikt, kunt u de instelling privacymodus gebruiken in dezelfde browser die u gebruikt voor Intune-beheer (in Internet Explorer bijvoorbeeld kunt u klikken op **Extra** &gt; **InPrivate-browsing**).
 
 -   Als u al een bestaand Microsoft Online Services-account hebt, hebt u de beheerdersreferenties nodig voor dat account. U hebt deze beheerdersreferenties niet nodig als u zo’n account niet hebt of de Intune-tenant alleen wilt gebruiken voor evaluatiedoeleinden.
 
@@ -47,9 +41,9 @@ Voordat u aan de slag gaat met Intune, hebt u het volgende nodig:
 
     |Platfofm|Certificaatvereisten|Meer informatie|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 en Windows Phone 8 |Er is geen certificaat vereist voor Windows Phone 8.1-gebruikers die de app Bedrijfsportal uit de Store installeren. Er is een Symantec-certificaat vereist voor Windows Phone 8.0 of voor het gebruik van Intune om de app Bedrijfsportal te implementeren op Windows Phone 8.1-apparaten.|In deze richtlijnen wordt ervan uitgegaan dat uw gebruikers de app Bedrijfsportal vanuit de Store downloaden op een apparaat met Windows Phone 8.1 of hoger. Zie voor meer informatie over de ondersteuning van Windows Phone 8.0 [Windows Phone-beheer met Microsoft Intune instellen](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune)..|
-    |Windows 10-, Windows RT 8.1-, Windows RT- of Windows 8.1-apparaten|Er zijn geen certificaten vereist voor de registratie van apparaten met Windows RT en Windows.|[Installeer de Windows-pc-client met Microsoft Intune](/Intune/DeployUse/install-the-windows-pc-client-with-microsoft-intune).|
-    |iOS 7.1 of hoger|Haal een Apple Push Notification Service-certificaat op.|Vraag een Apple Push Notification Service-certificaat aan bij Apple, zoals hier wordt beschreven: [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune)..|
+    |Windows Phone 8.1 en Windows Phone 8 |Er is geen certificaat vereist voor Windows Phone 8.1-gebruikers die de app Bedrijfsportal uit de Store installeren. Er is een Symantec-certificaat vereist voor Windows Phone 8.0 of voor het gebruik van Intune om de app Bedrijfsportal te implementeren op Windows Phone 8.1-apparaten.|In deze richtlijnen wordt ervan uitgegaan dat uw gebruikers de app Bedrijfsportal vanuit de Store downloaden op een apparaat met Windows Phone 8.1 of hoger. Zie [Windows Phone-beheer met Microsoft Intune instellen](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune) voor informatie over de ondersteuning van Windows Phone 8.0.|
+    |Windows 10-, Windows RT 8.1-, Windows RT- of Windows 8.1-apparaten|Er zijn geen certificaten vereist voor de registratie van apparaten met Windows RT en Windows.|[Installeer de Windows-pc-client met Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |iOS 7.1 of hoger|Haal een Apple Push Notification Service-certificaat op.|Vraag een Apple Push Notification Service-certificaat aan bij Apple, zoals hier wordt beschreven: [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Stappen voor het voltooien van een 30-daagse evaluatieversie van Intune
 - [Stap 1: Registreren of aanmelden voor een evaluatie van 30 dagen](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md). Voordat u zich registreert of aanmeldt bij Intune, moet u bepalen of u zich aanmeldt met een bestaand account of een tijdelijk account maakt dat alleen wordt gebruikt voor de evaluatieversie van 30 dagen van Microsoft Intune.
@@ -71,6 +65,7 @@ Het is nu tijd om aan de slag te gaan met uw evaluatieversie van 30 dagen.
 [Snelstartgids voor Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

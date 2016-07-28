@@ -1,38 +1,31 @@
 ---
-# required metadata
-
-title: Internettoegang beheren met beheerde-browserbeleid | Microsoft Intune
-description:
-keywords:
+title: Webtoegang beheren met de beheerde browser | Microsoft Intune
+description: De toepassing van de beheerde browser implementeren om websurfen en de overdracht van webgegevens naar andere apps te beperken.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 882042349c19ef0b688954577eb6519d0c0ac860
+
 
 ---
 
 # Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune
 De beheerde browser is een toepassing voor websurfen die u in uw organisatie kunt implementeren met behulp van Microsoft Intune. Een beheerde-browserbeleid bevat een lijst met toegestane of een lijst met geblokkeerde websites waarmee de websites die gebruikers van de beheerde browser kunnen bezoeken, worden beperkt.
 
-Omdat dit een beheerde app is, kunt u ook Mobile Application Management-beleidsregels toepassen op de app, zoals het gebruik van knippen, kopiëren en plakken beheren, schermafdrukken verhinderen, en ervoor zorgen dat koppelingen naar inhoud waarop gebruikers klikken, alleen in andere beheerde apps wordt geopend. Zie [Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) voor meer informatie..
+Omdat dit een beheerde app is, kunt u ook Mobile Application Management-beleidsregels toepassen op de app, zoals het gebruik van knippen, kopiëren en plakken beheren, schermafdrukken verhinderen, en ervoor zorgen dat koppelingen naar inhoud waarop gebruikers klikken, alleen in andere beheerde apps wordt geopend. Zie [Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) voor meer informatie.
 
 > [!IMPORTANT]
->Als gebruikers de beheerde browser uit de App Store installeren en deze niet wordt beheerd door Intune, geldt het volgende gedrag:
-iOS: de beheerde-browser-app kan worden gebruikt als een eenvoudige webbrowser, maar sommige functies zijn niet beschikbaar en het is niet mogelijk om toegang te krijgen tot gegevens uit andere door Intune beheerde apps.
+>Als gebruikers de beheerde browser uit de App Store installeren en deze niet wordt beheerd door Intune, geldt het volgende gedrag: iOS: de beheerde-browser-app kan worden gebruikt als een eenvoudige webbrowser, maar sommige functies zijn niet beschikbaar en het is niet mogelijk om toegang te krijgen tot gegevens uit andere door Intune beheerde apps.
 Android: de beheerde-browser-app kan niet worden gebruikt.
 Als gebruikers de beheerde browser zelf installeren op een iOS-apparaat met een versie die lager is dan iOS 9, wordt deze niet beheerd door ander beleid dat u maakt. Om ervoor te zorgen dat de browser wordt beheerd door Intune, moeten ze de app verwijderen voordat u deze als beheerde app voor hun kunt implementeren. Als de gebruiker de beheerde browser zelf installeert in iOS 9 of hoger, wordt deze gevraagd om toe te staan dat de browser wordt beheerd door beleid.
 
@@ -42,11 +35,11 @@ U kunt beheerde-browserbeleidsregels maken voor de volgende typen apparaten:
 
 -   Apparaten met iOS 7.1 en hoger
 
-De beheerde browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)..
+De Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Een beheerde-browserbeleid maken
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Beleid toevoegen**..
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Beleid toevoegen**.
 
 2.  Configureer een van de volgende **Software** -beleidstypen:
 
@@ -64,7 +57,7 @@ De beheerde browser van Intune ondersteunt het openen van webinhoud van [Microso
     |**Beschrijving**|Geef een beschrijving op die een overzicht geeft van het beheerde-browserbeleid en overige relevante informatie die u helpt bij het zoeken.|
     |**Een lijst met toegestane of geblokkeerde websites inschakelen om de URL's te beperken die door de beheerder browser kunnen worden geopend**|Selecteer een van de volgende opties:<br /><br />**De beheerde browser mag alleen de hieronder vermelde URL's openen**: hiermee geeft u een lijst op met de URL's die door de beheerde browser kunnen worden geopend.<br /><br />**De beheerde browser mag de hieronder vermelde URL's niet openen**: hiermee geeft u een lijst op met URL's die niet door de beheerde browser kunnen worden geopend. **Opmerking:** in hetzelfde beheerde-browserbeleid kunt u niet zowel toegestane als geblokkeerde URL's opnemen.<br />Zie **URL-indeling voor toegestane en geblokkeerde URL's** in dit onderwerp voor meer informatie over de URL-indelingen die u kunt opgeven.|
 
-4.  Wanneer u klaar bent, klikt u op **Beleid opslaan**..
+4.  Wanneer u klaar bent, klikt u op **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid** .
 
@@ -76,7 +69,7 @@ Nadat u het beheerde-browserbeleid hebt gemaakt, kunt u een software-implementat
 
 Implementeer de app, waarbij u ervoor zorgt dat u het beheerde-browserbeleid selecteert op de pagina **Mobiel appbeheer** om het beleid te koppelen aan de app.
 
-Zie [Apps implementeren in Microsoft Intune](deploy-apps-in-microsoft-intune.md) voor meer informatie over het implementeren van apps..
+Zie [Apps implementeren in Microsoft Intune](deploy-apps-in-microsoft-intune.md) voor meer informatie over het implementeren van apps.
 
 ## Beveiliging en privacy voor de beheerde browser
 
@@ -108,7 +101,7 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 
     -   Poort 443 voor https
 
-    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund, bijvoorbeeld **http://www.contoso.com:*;** en **http://www.contoso.com: /*;**
+    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund, bijvoorbeeld **http&colon;//www&period;contoso&period;com:*;** en **http&colon;//www&period;contoso&period;com: /*;**
 
 -   Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
 
@@ -157,6 +150,7 @@ Als er meerdere beheerde-browserbeleidsregels zijn geïmplementeerd op een appar
 -   Als een apparaat al een beheerde-browserbeleid heeft ontvangen en er een tweede beleid met conflicterende instellingen wordt geïmplementeerd, blijven de oorspronkelijke instellingen op het apparaat. Gebruik het knooppunt **Conflicterende beleidsinstellingen** knooppunt van de werkruimte **Beleid** om de conflicten weer te geven.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

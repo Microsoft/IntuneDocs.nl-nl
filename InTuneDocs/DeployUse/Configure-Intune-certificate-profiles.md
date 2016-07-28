@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Certificaatprofielen configureren | Microsoft Intune
-description:
-keywords:
+description: Informatie over het maken van een certificaatprofiel van Intune.
+keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
+
 
 ---
 
 # Intune-certificaatprofielen configureren
-Nadat de infrastructuur en certificaten zijn geconfigureerd zoals beschreven in [Certificaatinfrastructuur configureren](configure-certificate-infrastructure.md), kunt u certificaatprofielen configureren:
+Nadat de infrastructuur en certificaten zijn geconfigureerd zoals beschreven in [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) of [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md), kunt u certificaatprofielen configureren:
 
-**Taak 1**: het vertrouwde basis-CA-certificaat exporteren
-**Taak 2**: profielen voor een vertrouwd CA-certificaat maken
-**Taak 3**: een van beide:
+**Taak 1**: het vertrouwde basis-CA-certificaat exporteren **Taak 2**: profielen voor een vertrouwd CA-certificaat maken **Taak 3**:
 
 SCEP-certificaatprofielen maken, of
 
@@ -74,7 +66,7 @@ Nadat u een profiel voor een vertrouwd CA-certificaat hebt gemaakt, maakt u SCEP
 
 ##### Een SCEP-certificaatprofiel maken
 
-1.  Open de [Intune-beheerconsole](https://manage.microsoft.com), klik op **Beleid** &gt; **Beleid toevoegen**.
+1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en klik op **Beleid** &gt; **Beleid toevoegen**.
 
 2.  Configureer een van de volgende beleidstypen:
 
@@ -98,7 +90,7 @@ Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid** en kan nu worden
 
 ##### Een PFX-certificaatprofiel maken
 
-1.  Open de [Intune-beheerconsole](https://manage.microsoft.com), klik op **Beleid** &gt; **Beleid toevoegen**.
+1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en klik op **Beleid** &gt; **Beleid toevoegen**.
 
 2.  Configureer een van de volgende beleidstypen:
 
@@ -138,7 +130,7 @@ U implementeert certificaatprofielen op dezelfde manier als u ander beleid voor 
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarop u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
+    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
 
     -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
 
@@ -152,6 +144,7 @@ U kunt nu certificaten gebruiken om e-mail-, Wi-Fi- en VPN-profielen te beveilig
 -  [VPN-verbindingen in Microsoft Intune](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Toegang tot e-mail op iOS-apparaten instellen met Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Toegang tot e-mail op iOS-apparaten instellen | Microsoft Intune
+description: Toegang tot e-mail op iOS-apparaten instellen met Intune
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3b6bb8602ddc7a1f75a0c21ffc4fb6327673d38d
+
 
 ---
 
@@ -46,46 +40,46 @@ Door het gebruik van een e-mailprofiel hebben geregistreerde apparaten automatis
 Voor deze procedure gebruiken we de gehoste Exchange-server die wordt geleverd met een proefabonnement.
 1. Klik in de Intune-console op **Beleid** en vervolgens op **Beleid toevoegen**.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. Vouw in het dialoogvenster **Een nieuw beleid maken** **iOS** uit, selecteer **E-mailprofiel** en klik vervolgens op **Beleid maken**.
+2. Vouw in het dialoogvenster **Een nieuw beleid maken** **iOS** uit, selecteer **E-mailprofiel** en klik vervolgens op **Beleid maken**.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. Voer op de pagina Beleid maken een naam voor het beleid in, bijvoorbeeld **iOS-e-mailprofiel - gebruikerswachtwoord**, en een beschrijving. Mogelijk hebt u meerdere e-mailprofielen voor verschillende apparaattypen en verschillende verificatiemethoden, zodat u de naam kunt gebruiken om te laten zien waar het profiel voor dient.
-4. Voer de naam van de Exchange-host in. We gebruiken de Exchange-server die wordt gehost op Azure, dus voeren we gewoon **outlook.office365.com** in als hostnaam
-![<add-exchange-host-name>](./media/Email-Walkthrough/Email-Walkthrough-3.png)
+4. Voer de naam van de Exchange-host in. We gebruiken de Exchange-server die wordt gehost op Azure, dus voeren we gewoon **outlook.office365.com**
+![<exchange-hostnaam-toevoegen> in als hostnaam](./media/Email-Walkthrough/Email-Walkthrough-3.png)
 5. Geef de accountnaam op die wordt weergegeven voor gebruikers van het apparaat, zodat zij de e-mailservice kunnen identificeren. Bijvoorbeeld **Contoso-e-mail**.
 6. Aangezien we de gebruikersnaam en het wachtwoord gebruiken om de gebruiker voor de Exchange-service te verifiëren, kunt u de instellingen voor de gebruikersnaam en het wachtwoord ongewijzigd laten.
 7. Pas de synchronisatie-instellingen aan om te voldoen aan uw behoeften. Voorlopig gebruikt u gewoon de standaardinstellingen, tenzij er een specifieke instelling is die u wilt wijzigen.  
 8. Klik op **Beleid opslaan**.
 9. Er wordt een dialoogvenster weergegeven waarin u wordt gevraagd of u het beleid nu wilt implementeren. Klik op **Ja**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. Selecteer in het volgende venster de gebruikersgroep waarop u het e-mailprofiel wilt toepassen. Klik op **Toevoegen** en vervolgens op **OK**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)
+10. Selecteer in het volgende venster de gebruikersgroep waarop u het e-mailprofiel wilt toepassen. Klik op **Toevoegen** en vervolgens op **OK**.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
 Nadat u op **OK** hebt geklikt, wordt het beleid naar ingeschreven apparaten uitgerold. Dit duurt ongeveer twee minuten.
 
 ## Stappen om te verifiëren dat het profiel is toegepast
 
 Om te verifiëren dat het profiel is toegepast, moet u toegang hebben tot een van de apparaten waarop u het e-mailprofiel hebt toegepast.
 1. Open de e-mailapp op het iOS-apparaat.
-De app vraagt u om de gebruikersnaam en het wachtwoord van het e-mailadres.
+De app vraagt u om de gebruikersnaam en het wachtwoord van het e-mailadres.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Voer de gebruikersnaam en het wachtwoord voor het Exchange-e-mailaccount van de gebruiker in en tik op **OK**.
  De e-mailapp wordt geopend met het Exchange-account en het e-mailadres begint te synchroniseren naar het apparaat.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Controleer de accountinstellingen van de e-mailapp om te controleren of de accountnaam dezelfde is als die u hebt ingevoerd in het e-mailprofiel (bijvoorbeeld **Contoso-e-mail**). Controleer ook of de synchronisatie-instellingen juist zijn ingesteld.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
   Als het erop lijkt dat het e-mailprofiel niet automatisch op het apparaat is toegepast, kunt u het beleid handmatig toepassen via de app Bedrijfsportal op het apparaat.
 1. Open de app Bedrijfsportal.
 2. Tik op **Mijn apparaten**.
 3. Tik op de naam van uw apparaat.
 ![<tap-device-name](./media/Email-Walkthrough/Email-Walkthrough-10.png)
 4. Tik op **Synchroniseren** > **Naleving controleren**.
-![<tap-sync-check-device>](./media/Email-Walkthrough/Email-Walkthrough-11.png)
-Na enkele ogenblikken wordt het e-mailprofiel toegepast op het apparaat. Daarna kunt u de verificatiestappen volgen om te controleren of het profiel correct is toegepast.
+![<tap-sync-check-device>](./media/Email-Walkthrough/Email-Walkthrough-11.png) Na enkele ogenblikken wordt het e-mailprofiel toegepast op het apparaat. Daarna kunt u de verificatiestappen volgen om te controleren of het profiel correct is toegepast.
 
 ## Zie ook
 [Intune-evaluatiehandleiding](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

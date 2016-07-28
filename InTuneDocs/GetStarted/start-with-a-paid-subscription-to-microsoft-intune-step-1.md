@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Registreren of aanmelden bij Intune | Microsoft Intune
-description:
-keywords:
+description: Zo kunt u zich aanmelden voor een Intune-abonnement of u aanmelden als u al een abonnement hebt
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: ccd78b30e72e2431aff7d4154796f4250f710b5a
+
 
 ---
 
@@ -56,6 +50,7 @@ Gefeliciteerd. U hebt zojuist stap 1 van de *Snelstartgids voor Intune* voltooid
 >[&larr; **Aan de slag**](.\start-with-a-paid-subscription-to-microsoft-intune.md)     [**Domeininstellingen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

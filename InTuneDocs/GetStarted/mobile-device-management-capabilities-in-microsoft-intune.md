@@ -1,10 +1,10 @@
 ---
 title: Mogelijkheden voor Mobile Device Management| Microsoft Intune
-description: 
+description: Raadpleeg dit onderwerp als u wilt weten hoe u met Intune de mobiele apparaten die u bij de service inschrijft kunt beheren.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 23054b2f02d11ca19cd0902ebc1e6fdcf499d1f1
+ms.openlocfilehash: 8f44256fe249c60df8e910858516a25463c8e875
 
 
 ---
@@ -42,7 +42,8 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 |Implementatie en beheer van apps|Biedt een reeks hulpmiddelen voor het beheren van mobiele apps gedurende hun levensduur, met inbegrip van app-implementatie vanaf de installatiebestanden en vanuit app stores, gedetailleerde bewaking van app-status en verwijdering van de app.|[Apps in Microsoft Intune implementeren](/intune/deploy-use/deploy-apps)|
 |Compatibele en niet-compatibele apps|Hiermee kunt u een lijst opgeven met compatibele apps (die gebruikers mogen installeren) en niet-compatibele apps (die gebruikers niet mogen installeren).|[Instellingen voor iOS-beleid in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Beheer van mobiele toepassingen|Met behulp van beheer voor mobiele toepassingen configureert u beperkingen voor apps, zowel voor apparaten die u met Intune beheert, als voor apparaten die niet met Intune worden beheerd. Zo kunt u de beveiliging van uw bedrijfsgegevens verbeteren door het beperken van bewerkingen zoals kopiëren en plakken, externe back-up van gegevens en gegevensoverdracht tussen apps.|[Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[iOS-apps voorbereiden voor Mobile Application Management met de Microsoft Intune App Wrapping Tool](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Android-apps voorbereiden voor Mobile Application Management met de Microsoft Intune App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|Configuratie van mobiele apps|Gebruik configuratiebeleid voor mobiele apps om voor iOS-apps instellingen op te geven die mogelijk vereist zijn wanneer de gebruiker de app uitvoert. Een app kan bijvoorbeeld vereisen dat de gebruiker een poortnummer of aanmeldingsgegevens moet opgeven. Zo kunt u de app-configuratie stroomlijnen en het aantal telefoontjes naar de helpdesk voor ondersteuning verminderen.|[iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Configuratie van mobiele apps voor iOS-apparaten|Gebruik configuratiebeleid voor mobiele apps om voor iOS-apps instellingen op te geven die mogelijk vereist zijn wanneer de gebruiker de app uitvoert. Een app kan bijvoorbeeld vereisen dat de gebruiker een poortnummer of aanmeldingsgegevens moet opgeven. Zo kunt u de app-configuratie stroomlijnen en het aantal telefoontjes naar de helpdesk voor ondersteuning verminderen.|[iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Profielen voor mobiele apps voor iOS-apparaten inrichten|Intune biedt u de hulpmiddelen voor het proactief inrichten van profielen voor iOS-apps die bijna verlopen.|[Gebruik beleidsregels voor profielinrichting voor mobiele iOS-apps om te voorkomen dat uw apps verlopen](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Beheerde browser|Nadat u de beheerde browser voor uw gebruikers hebt geïmplementeerd, kunt u een beheerde-browserbeleid configureren om te bepalen welke websites ze kunnen bezoeken. U kunt bovendien ook Mobile Application Management-beleid toepassen op de beheerde browser.|[Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Intune biedt de mogelijkheid van integratie met Microsoft Passport for Work. Dit is een alternatieve aanmeldingsmethode voor Windows 10 waarbij Active Directory of een Azure Active Directory-account wordt gebruikt ter vervanging van een wachtwoord, smartcard of virtuele smartcard.|[Microsoft Passport-instellingen beheren op apparaten met Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

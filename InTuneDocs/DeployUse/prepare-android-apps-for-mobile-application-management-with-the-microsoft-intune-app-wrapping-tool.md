@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android-apps voorbereiden voor beheer met de App Wrapping Tool | Microsoft Intune | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: Android-apps verpakken met App Wrapping Tool | Microsoft Intune
+description: Gebruik de informatie in dit onderwerp om meer te leren over het inpakken van uw Android-apps zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 76ee04237d54b4c171df74e8c134f003bbc32966
+
 
 ---
 
@@ -32,7 +26,7 @@ Het hulpprogramma is een Windows-opdrachtregelprogramma dat wordt uitgevoerd in 
 
 Als uw app de Azure Active Directory Authentication Library (ADAL) gebruikt, moet u, voordat u uw app inpakt, de stappen uitvoeren in [Hoe u apps inpakt die de Azure Active Directory Library gebruiken](#how-to-wrap-apps-that-use-the-azure-active-directory-library). Als u niet zeker weet of uw app gebruikmaakt van deze bibliotheek, neemt u contact op met de ontwikkelaar van de app.
 
-Controleer de [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool) voordat u het hulpprogramma uitvoert. Zie [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267) als u het hulpprogramma wilt downloaden..
+Controleer de [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool) voordat u het hulpprogramma uitvoert. Zie [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267) als u het hulpprogramma wilt downloaden.
 
 ## Stap 1: voldoe aan de vereisten voor het gebruik van de App Wrapping Tool
 
@@ -48,7 +42,7 @@ Controleer de [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool
 
 -   De app moet zijn ontwikkeld door of voor uw bedrijf. U kunt dit hulpprogramma niet gebruiken om apps te verwerken die zijn gedownload uit de Google Play Store.
 
--   Als u de App Wrapping Tool wilt uitvoeren, moet u de nieuwste versie van [Java Runtime Environment](http://java.com/download/) installeren en vervolgens controleren of het variabele Java-pad is ingesteld op **C:\ProgramData\Oracle\Java\javapath** in de Windows-omgevingsvariabelen. Zie de [Java-documentatie](http://java.com/download/help/) voor meer informatie..
+-   Als u de App Wrapping Tool wilt uitvoeren, moet u de nieuwste versie van [Java Runtime Environment](http://java.com/download/) installeren en vervolgens controleren of het variabele Java-pad is ingesteld op **C:\ProgramData\Oracle\Java\javapath** in de Windows-omgevingsvariabelen. Zie voor meer informatie over de [Java-documentatie](http://java.com/download/help/).
 
     > [!NOTE]
     > In bepaalde gevallen kan de 32-bits versie van Java leiden tot geheugenproblemen. Het wordt aangeraden om in plaats daarvan de 64-bits versie te installeren.
@@ -59,11 +53,11 @@ Controleer de [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool
 
 2.  Accepteer de gebruiksrechtovereenkomst en voltooi de installatie.
 
-Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**..
+Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**.
 
 ## Stap 3: voer de App Wrapping Tool uit
 
-1.  Open een PowerShell-venster op de Windows-computer waarop de App Wrapping Tool is geïnstalleerd.
+1.  Open in de beheerdersmodus een PowerShell-venster op de Windows-computer waarop de App Wrapping Tool is geïnstalleerd.
 
 2.  Importeer de App Wrapping Tool PowerShell-module uit de map waarin u het programma hebt geïnstalleerd:
 
@@ -71,14 +65,14 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  Voer het hulpprogramma uit met behulp van de opdracht **invoke-AppWrappingTool**, in combinatie met de volgende parameters: Parameters die zijn aangeduid als 'optioneel', zijn bedoeld voor apps die Azure Active Directory Library (ADAL) gebruiken. Zie [Hoe u apps inpakt die de Azure Active Directory Library gebruiken](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+3.  Voer het hulpprogramma uit met behulp van de opdracht **invoke-AppWrappingTool**, in combinatie met de volgende parameters: Parameters die zijn aangeduid als 'optioneel', zijn bedoeld voor apps die Azure Active Directory Library (ADAL) gebruiken. Zie [Hoe u apps inpakt die de Azure Active Directory Library gebruiken](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 |Parameter|Meer informatie|Voorbeelden|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;tekenreeks&gt;|Pad van de Android-bron-app (.apk).| |
 |**-OutputPath**&lt;tekenreeks&gt;|Pad naar de uit te voeren Android-app. Als dit hetzelfde mappad is als InputPath, mislukt het inpakken.| |
 |**-KeyStorePath**&lt;tekenreeks&gt;|Pad naar het sleutelopslagbestand met het openbare/persoonlijke sleutelpaar voor ondertekening.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|Wachtwoord voor het ontsleutelen van de sleutelopslag.| |
+|**-KeyStorePassword**&lt;SecureString&gt;|Wachtwoord voor het ontsleutelen van de sleutelopslag. Android vereist dat alle toepassingspakketten (.apk) zijn ondertekend. Gebruik de Java keytool voor het genereren van het KeyStorePassword zoals weergegeven in het voorbeeld. Meer informatie over [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;tekenreeks&gt;|Naam van de sleutel die moet worden gebruikt voor het ondertekenen.| |
 |**-KeyPassword**&lt;SecureString&gt;|Wachtwoord dat wordt gebruikt om de persoonlijke sleutel te ontsleutelen die wordt gebruikt voor het ondertekenen.| |
 |**-SigAlg**&lt;SecureString&gt;|Naam van het algoritme voor de handtekening dat moet worden gebruikt voor de ondertekening. Het algoritme moet compatibel zijn met de persoonlijke sleutel.|Voorbeelden: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -91,7 +85,7 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
 **&lt;CommonParameters&gt;**
     (optioneel – biedt ondersteuning voor algemene PowerShell-parameters zoals uitgebreid, foutopsporing, enz.)
 
-- Zie voor een lijst met algemene parameters het [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx)..
+- Zie voor een lijst met algemene parameters het [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx).
 
 - Om Help voor het hulpprogramma weer te geven, gebruikt u de opdracht:
 
@@ -104,9 +98,9 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActiveDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
-U wordt vervolgens gevraagd om het **KeyStorePassword** en **KeyPassword**..
+U wordt vervolgens gevraagd om het **KeyStorePassword** en **KeyPassword**.
 
 De ingepakte app wordt gegenereerd en samen met een logboekbestand in het uitvoerpad opgeslagen dat u hebt opgegeven.
 
@@ -115,9 +109,9 @@ Potentiële adresvervalsing (spoofing), vrijgeven van informatie en uitbreiding 
 
 -   Zorg ervoor dat de invoer-Line-Of-Business-toepassing, uitvoertoepassing en Java KeyStore zich op de computer bevinden waarop de App Wrapping Tool wordt uitgevoerd.
 
--   Importeer de uitvoertoepassing naar de Intune-console op dezelfde computer waarop het hulpprogramma wordt uitgevoerd.
+-   Importeer de uitvoertoepassing naar de Intune-console op dezelfde computer waarop het hulpprogramma wordt uitgevoerd. Zie [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) voor meer informatie over de Java keytool.
 
--   Als de uitvoertoepassing en het hulpprogramma zich op een UNC-pad (Universal Naming Convention) bevinden en u het hulpprogramma en de invoerbestanden niet op dezelfde computer uitvoert, configureert u de omgeving zodanig dat deze wordt beveiligd met [IP-beveiligingsbeleid (IPsec)](http://en.wikipedia.org/wiki/IPsec) of [Server Message Block (SMB) ondertekening](https://support.microsoft.com/en-us/kb/887429).
+-   Als de uitvoertoepassing en het hulpprogramma zich op een pad (Universal Naming Convention) bevinden en u het hulpprogramma en de invoerbestanden niet op dezelfde computer uitvoert, configureert u de omgeving zodanig dat deze wordt beveiligd met [IP-beveiligingsbeleid (IPsec)](http://en.wikipedia.org/wiki/IPsec) of [Server Message Block (SMB) ondertekening](https://support.microsoft.com/en-us/kb/887429).
 
 -   Zorg ervoor dat de toepassing afkomstig is van een betrouwbare bron, met name als u Azure Active Directory (AAD) gebruikt, waarmee de toepassing tijdens de runtime toegang tot het AAD-token kan krijgen.
 
@@ -131,7 +125,7 @@ Voor apps die gebruikmaken van de ADAL, moet het volgende waar zijn:
 
 -   In de app moet ADAL-versie 1.0.2 of hoger zijn opgenomen.
 
--   De ontwikkelaar moet de app toegang verlenen tot de Intune Mobile Application Management-bron, zoals beschreven in [Stap 3: configureer de toegang tot Mobile Application Management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
+-   De ontwikkelaar moet de app toegang verlenen tot de Intune Mobile Application Management-resource, zoals beschreven in [Stap 3: configureer de toegang tot Mobile Application Management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
 
 ### Stap 2: controleer de id's die u nodig hebt om de app te registreren
 In de volgende stap gebruikt u de Azure-beheerportal om uw apps te registreren (die ADAL met Azure Active Directory (AAD) gebruiken) en de unieke id's te krijgen die in de volgende tabel staan vermeld. Vervolgens geeft u de id's aan de ontwikkelaar wanneer u ADAL in de app integreert.
@@ -149,13 +143,13 @@ Voordat u de AAD-registratiewaarden van een app in de App Wrapping Tool kunt geb
 
 1.  Meld u aan bij een bestaand AAD-account in de Azure-beheerportal.
 
-2.  Kies **bestaande LOB-toepassing registreren**.
+2.  Kies **bestaande LOB-toepassing inschrijven**.
 
-3.  Kies in de sectie **Configureren** de optie **Toegang tot web-API’s in andere toepassingen configureren**.
+3.  Kies in de sectie **Configureren** de optie **Toegang tot web-API's in andere toepassingen configureren**.
 
-4.  Kies in de eerste vervolgkeuzelijst in het gedeelte **Machtiging voor andere toepassingen** de optie **Intune Mobile Application Management**..
+4.  Kies in de eerste vervolgkeuzelijst in het gedeelte **Machtiging voor andere toepassingen** de optie **Intune Mobile Application Management**.
 
-U kunt nu de client-id van de app gebruiken in de App Wrapping Tool. U vindt de client-id in de Azure Active Directory-beheerportal, zoals beschreven in de tabel in [stap 2: controleer de id's die u nodig hebt om de app te registreren](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app)..
+U kunt nu de client-id van de app gebruiken in de App Wrapping Tool. U vindt de client-id in de Azure Active Directory-beheerportal, zoals beschreven in de tabel in [stap 2: controleer de id's die u nodig hebt om de app te registreren](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
 
 ### Stap 4: gebruik de id-waarden van AAD in de App Wrapping Tool
 Met de id-waarden die u tijdens het registratieproces hebt gekregen, geeft u de waarden als opdrachtregeleigenschappen in de App Wrapping Tool op. U moet alle waarden in de tabel opgeven, zodat eindgebruikers de app kunnen verifiëren. Als u een waarde niet opgeeft, wordt daarvoor de standaardwaarden gebruikt.
@@ -169,12 +163,7 @@ Met de id-waarden die u tijdens het registratieproces hebt gekregen, geeft u de 
 |Bron-id|ResourceID|
 Houd rekening met de volgende punten wanneer u uw app inpakt:
 
--   De App Wrapping Tool zoekt niet naar binaire ADAL-bestanden (als die er al zijn) in de app. Als de app naar een verouderde versie van de binaire bestanden verwijst, kunnen er runtime-fouten optreden tijdens het aanmelden als u verificatiebeleid hebt ingeschakeld.
-
--   Om te controleren of de verificatie is gelukt, haalt
-  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] u het AAD-token op dat is gekoppeld aan de MAM-bron-id. Het token wordt echter in geen enkele aanroep gebruikt die de geldigheid van de token valideert. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] leest alleen de UPN (User Principal Name) van de aangemelde gebruiker om app-toegang te bepalen. De AAD-token wordt niet gebruikt voor verdere serviceaanroepen.
-
--   Verificatietokens worden gedeeld tussen apps van dezelfde uitgever omdat ze in een gedeelde sleutelhanger worden opgeslagen. Als u een specifieke app wilt isoleren, dient u een ander handtekeningcertificaat, inrichtende profielsleutelopslag en sleutelalias voor die app te gebruiken.
+-   Om te controleren of de verificatie is gelukt, haalt [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] het AAD-token op dat gekoppeld is aan de resource-id van de MAM. Het token wordt echter in geen enkele aanroep gebruikt die de geldigheid van de token valideert. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] leest alleen de UPN (User Principal Name) van de aangemelde gebruiker om app-toegang te bepalen. De AAD-token wordt niet gebruikt voor verdere serviceaanroepen.
 
 -   Dubbele aanmeldingsprompts worden voorkomen als u de client-id en Authority-URI voor uw clienttoepassing opgeeft. U moet de client-id registreren om ervoor te zorgen dat deze toegang krijgt tot de gepubliceerde [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM-bron-id in het AAD-dashboard. Als u de client-id niet registreert, krijgen gebruikers te maken met een mislukte aanmelding als ze apps uitvoeren.
 
@@ -185,6 +174,7 @@ Houd rekening met de volgende punten wanneer u uw app inpakt:
 - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,123 +1,86 @@
 ---
-title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune? | Microsoft Intune
+title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 25d2708dbc514717affa54cba195e5fef7d602ba
 
 
 ---
 
 
-# Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?
+# Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
-Voor meer informatie over wat er gebeurt als u de bedrijfsportal-app installeert en uw apparaat registreert, gebruikt u de koppeling in de bovenstaande sectie 'In dit artikel' die overeenkomt met het apparaat dat u gebruikt. Raadpleeg [deze pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) voor meer informatie over Windows 10-apparaten.
+Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, dan stelt u de IT-beheerder in staat uw apparaat te beheren om bedrijfs- of schoolgegevens te beveiligen, zoals hieronder beschreven voor apparaten ouder dan Windows 10. Raadpleeg [deze pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) voor meer informatie over Windows 10-apparaten.
 
-## Windows 8.1 en Windows RT
-Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 8.1 Enterprise-, Windows 8.1 Professional- of Windows RT-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app vervolgens gebruiken voor het volgende:
-
--   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
-
--   Bedrijfsapps ophalen via de bedrijfsportal
-
--   Het e-mailaccount van uw bedrijf automatisch configureren
-
--   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
-
-Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat te registreren. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
-
-Wanneer u een computer toevoegt:
-
--   Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en zodat u bedrijfsresources (zoals apps en ondersteuningsinformatie) kunt ophalen. De IT-beheerder kan deze software automatisch bijwerken.
-
--   Intune Endpoint Protection kan op de computer worden geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
-
--   De IT-beheerder kan een inventarisatie maken van alle software die op de computer is geïnstalleerd, inclusief de software die u zelf hebt geïnstalleerd.
-
--   Mogelijk moet u de voorwaarden accepteren.
-
--   De IT-beheerder kan gegevens van de harde schijf van uw computer verzamelen of verwijderen. De IT-beheerder kan ook de volledige harde schijf wissen.
-
--   De IT-beheerder kan apps en updates op uw computer installeren.
-
--   De IT-beheerder kan beleidsregels op de computer afdwingen. Zo kunt u verplicht worden om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of alle gegevens van de harde schijf van de computer kunnen worden verwijderd als u te veel keren een onjuist wachtwoord hebt ingevoerd.
-
-## Windows Phone 8.1 en Windows Phone 8
-Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows Phone 8.1- of Windows Phone 8-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app vervolgens gebruiken voor het volgende:
+## Wat gebeurt er met alle Windows-apparaten na de inschrijving
+Wanneer u een Windows- of Windows Phone-apparaat in Intune inschrijft, profiteert u van het volgende:
 
 -   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
 
--   Bedrijfsapps ophalen via de bedrijfsportal
+-   Bedrijfs-apps ophalen via de bedrijfsportalwebsite (voor Windows 7 en Vista kunt u bedrijfs-apps alleen via de bedrijfsportalwebsite ophalen)
 
--   Het e-mailaccount van uw bedrijf automatisch configureren
+-   Het e-mailaccount van uw bedrijf of school automatisch configureren
 
 -   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
 
-Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat te registreren. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
-
-Wanneer u een Windows Phone-apparaat toevoegt, geeft u de IT-beheerder toestemming om toegang tot het apparaat te zoeken. De beheerder kan het volgende doen:
+Wanneer u uw apparaat inschrijft, geeft u de IT-beheerder toestemming voor handelingen zoals:
 
 -   Het apparaat opnieuw instellen naar de standaardinstellingen van de fabrikant. Dit is handig als u het apparaat verliest of als dit wordt gestolen.
 
 -   Alle bedrijfsgegevens en bedrijfs-apps verwijderen die zijn geïnstalleerd. Uw persoonlijke instellingen en gegevens worden niet verwijderd.
 
+-   De IT-beheerder kan een inventarisatie maken van alle software die op de computer is geïnstalleerd, inclusief de software die u zelf hebt geïnstalleerd.
+
 -   U verplichten om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of de standaardinstellingen van het apparaat kunnen worden hersteld (waarbij gegevens kunnen worden verwijderd) als u te veel keren een onjuist wachtwoord invoert.
 
--   U verplichten om alle gegevens op het apparaat te versleutelen. Dit is een gegevensbeveiliging voor als u het apparaat verliest of als dit wordt gestolen.
+-   U verplichten om alle gegevens op het apparaat te versleutelen, zodat gegevens beter zijn beveiligd als u het apparaat verliest of als dit wordt gestolen.
 
 -   Vereisen dat u voorwaarden accepteert.
 
+-   De IT-beheerder kan beleidsregels op de computer afdwingen. Zo kunt u verplicht worden om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of alle gegevens van de harde schijf van de computer kunnen worden verwijderd als u te veel keren een onjuist wachtwoord hebt ingevoerd.
+
 -   De SD-geheugenkaart uitschakelen.
 
--   Updates installeren voor apps op het apparaat. Dit geldt alleen voor updates. De IT-beheerder kan niet afdwingen dat nieuwe apps op het apparaat worden geïnstalleerd, maar u kunt ervoor kiezen om apps te installeren die u in de bedrijfsportal ziet.
+## Wat gebeurt er met alle Windows-pc’s na de inschrijving
 
--   Nadat het apparaat aan de bedrijfsportal is toegevoegd, gebeurt ongeveer elke 8 uur het volgende:
+-  Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en zodat u bedrijfsresources (zoals apps en ondersteuningsinformatie) kunt ophalen. De IT-beheerder kan deze software automatisch bijwerken.
 
-    -   Beleids- of app-updates die de IT-beheerder beschikbaar heeft gemaakt, worden gedownload.
+-  Intune Endpoint Protection kan op de computer worden geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
 
-    -   Eventuele hardware-inventarisatie-updates worden verzonden.
+-  De IT-beheerder kan een inventarisatie maken van alle software die op de computer is geïnstalleerd, inclusief de software die u zelf hebt geïnstalleerd.
 
-    -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
+-  Mogelijk moet u de voorwaarden accepteren.
 
-## Windows 7 en Vista
-Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 7- of Windows Vista-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app vervolgens gebruiken voor het volgende:
+-  De IT-beheerder kan gegevens van de harde schijf van uw computer verzamelen of verwijderen. De IT-beheerder kan ook de volledige harde schijf wissen.
 
--   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
+-  De IT-beheerder kan apps en updates op uw computer installeren.
 
--   Bedrijfsapps ophalen via de bedrijfsportal
+-  De IT-beheerder kan beleidsregels op de computer afdwingen. Zo kunt u verplicht worden om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of alle gegevens van de harde schijf van de computer kunnen worden verwijderd als u te veel keren een onjuist wachtwoord hebt ingevoerd.
 
--   Het e-mailaccount van uw bedrijf automatisch configureren
 
--   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
+## Wat gebeurt er elke acht uur na de inschrijving van het apparaat
+Ongeveer elke 8 uur gebeurt er voor ingeschreven apparaten het volgende:
 
-Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
+-   Beleids- of app-updates die de IT-beheerder beschikbaar heeft gemaakt, worden gedownload.
 
-Wanneer u een computer toevoegt:
+-   Eventuele hardware-inventarisatie-updates worden verzonden.
 
--   Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en zodat u bedrijfsresources (zoals apps en ondersteuningsinformatie) kunt ophalen. De IT-beheerder kan deze software automatisch bijwerken.
+-   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
--   Intune Endpoint Protection kan op de computer worden geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
-
--   De IT-beheerder kan een inventarisatie maken van alle software die op de computer is geïnstalleerd, inclusief de software die u zelf hebt geïnstalleerd.
-
--   Mogelijk moet u de voorwaarden accepteren.
-
--   De IT-beheerder kan gegevens van de harde schijf van uw computer verzamelen of verwijderen. De IT-beheerder kan ook de volledige harde schijf wissen.
-
--   De IT-beheerder kan apps en updates op uw computer installeren.
-
--   De IT-beheerder kan beleidsregels op de computer afdwingen. Zo kunt u verplicht worden om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of alle gegevens van de harde schijf van de computer kunnen worden verwijderd als u te veel keren een onjuist wachtwoord hebt ingevoerd.
+Zie [Uw Windows-apparaat registreren bij Intune](enroll-your-device-in-intune-windows.md) voor de stappen die u moet uitvoeren om het apparaat te registreren. Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
 
 Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
@@ -126,6 +89,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

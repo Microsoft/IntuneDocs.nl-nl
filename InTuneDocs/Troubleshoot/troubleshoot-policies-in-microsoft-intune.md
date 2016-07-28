@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Beleidsproblemen oplossen | Microsoft Intune
-description:
-keywords:
+description: Problemen met de configuratie van het beleid oplossen.
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
+
 
 ---
 
@@ -53,12 +47,13 @@ In de onderstaande schermafbeelding ziet u twee duidelijke voorbeelden:
 
 ![Intune-apparaatbeleid](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] Houd er rekening mee dat wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, in de praktijk het meest beperkende beleid wordt toegepast.
+> [!NOTE]
+> Houd er rekening mee dat wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, in de praktijk het meest beperkende beleid van toepassing is.
 
 ## Intervallen voor het vernieuwen en bijwerken van beleid
 Beleid wordt regelmatig vernieuwd en bijgewerkt. In het algemeen moet beleid binnen 15 minuten nadat u een wijziging hebt aangebracht, op apparaten worden geregistreerd. Hier vindt u meer informatie over intervallen voor het vernieuwen van beleid:
 
--   **Windows-apparaat dat is ingeschreven voor MDM**: dit wordt dagelijks geactiveerd door een geplande taak om 3:00 uur lokale tijd op het apparaat.
+-   **Windows-apparaat dat is geregistreerd voor MDM**: het beleid wordt elke 8 uur voor Windows 8.1- en Windows 10-apparaten bijgewerkt en elke 24 uur voor Windows RT-apparaten.
 
 -   **Windows Phone**: het beleid wordt elke 8 uur bijgewerkt. Dit kan worden afgedwongen door in de bedrijfsportal onder **Instellingen** voor Vernieuwen te kiezen.
 
@@ -67,7 +62,7 @@ Beleid wordt regelmatig vernieuwd en bijgewerkt. In het algemeen moet beleid bin
 -   **Android**: het beleid wordt eenmaal per dag met een willekeurig tijdsinterval bijgewerkt. Dit kan ook worden afgedwongen door de bedrijfsportal te openen, het apparaat te selecteren en **Synchroniseren** te kiezen.
 
 ## Aan Microsoft Intune-beleid gerelateerde fouten in policyplatform.log
-Voor niet-MDM Windows-apparaten kunnen beleidsfouten in het bestand policyplatform.log het gevolg zijn van niet-standaardinstellingen in Windows Gebruikersaccountbeheer (UAC) op het apparaat. Bepaalde niet-standaard-UAC-instellingen kunnen Microsoft Intune-clientinstallaties en de uitvoering van het beleid beïnvloeden.
+Bij niet-MDM-Windows-apparaten kunnen beleidsfouten in het bestand policyplatform.log het gevolg zijn van niet-standaardinstellingen in Windows Gebruikersaccountbeheer (UAC) op het apparaat. Bepaalde niet-standaard-UAC-instellingen kunnen invloed hebben op Microsoft Intune-clientinstallaties en de beleidsuitvoering.
 
 ### UAC-problemen oplossen
 
@@ -75,7 +70,8 @@ Voor niet-MDM Windows-apparaten kunnen beleidsfouten in het bestand policyplatfo
 
 2.  Wacht twintig minuten tot de clientsoftware is verwijderd.
 
-    > [!NOTE] Verwijder de client niet vanuit Programma's en onderdelen.
+    > [!NOTE]
+    > Probeer niet om de client te verwijderen vanuit Programma's en onderdelen.
 
 3.  Typ **UAC** in het startmenu om de instellingen voor Gebruikersaccountbeheer te openen.
 
@@ -116,6 +112,7 @@ Bij Android MDM wordt het niet toegestaan dat door de service beleidswijzigingen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

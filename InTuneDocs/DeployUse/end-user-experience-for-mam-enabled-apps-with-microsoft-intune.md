@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Ervaring van eindgebruikers voor apps die geschikt zijn voor MAM | Microsoft Intune
-description:
-keywords:
+description: Dit onderwerp beschrijft wat u kunt verwachten wanneer uw app wordt beheerd door beleidsregels voor beheer van mobiele apps.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
+
 
 ---
 
@@ -41,6 +35,7 @@ Beleidsregels voor Mobile Application Management (MAM) worden alleen toegepast w
     ![Schermafbeelding van de aanmeldingspagina van O365](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Nadat uw referenties door Azure AD zijn geverifieerd, worden de MAM-beleidsregels toegepast en wordt u gevraagd om de **OneDrive** -app opnieuw te starten.
+  >[OPMERKING] Het dialoogvenster waarin opnieuw opstarten wordt vereist, wordt alleen weergegeven op apparaten die niet zijn geregistreerd in Intune.
 
     ![Schermafbeelding van het dialoogvenster Opnieuw opstarten vereist](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -52,7 +47,8 @@ Beleidsregels voor Mobile Application Management (MAM) worden alleen toegepast w
 
     ![Schermafbeelding van de geopende bestandslocatie met de lijst met bestaande bestanden](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE] Wanneer u een geïmplementeerd beleid wijzigt, worden de wijzigingen toegepast wanneer u de volgende keer de app opent.
+    > [!NOTE]
+    > Wanneer u een geïmplementeerde beleid wijzigt, worden de wijzigingen de volgende keer dat u de app opent, toegepast.
 
 ##  OneDrive openen op een Android-apparaat
 
@@ -79,7 +75,7 @@ Beleidsregels voor Mobile Application Management (MAM) worden alleen toegepast w
 
     ![Schermafbeelding van de bedrijfsportal-app](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Nadat u de installatie hebt voltooid, klikt u op **Accepteren** om de voorwaarden te accepteren.
+5.  Nadat u de installatie hebt voltooid, kiest u **Accepteren** om de voorwaarden te accepteren.
 
 6.  De **OneDrive** -app wordt automatisch gestart.
 
@@ -136,7 +132,7 @@ Lees het voorbeeldscenario hieronder om meer inzicht te krijgen in hoe meerdere 
 Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om MAM-beleid te implementeren. **Bedrijf X** implementeert MAM-beleid **voordat** **bedrijf Y** dat doet. Het MAM-beleid wordt toegepast op het account dat is gekoppeld aan **bedrijf X**, niet op het account dat is gekoppeld aan bedrijf Y. Als u wilt dat het gebruikersaccount dat is gekoppeld aan bedrijf Y, door het MAM-beleid wordt beheerd, moet u het gebruikersaccount dat is gekoppeld aan bedrijf X, verwijderen.
 ### Een tweede account toevoegen
 #### iOS
-Als u een iOS-apparaat gebruikt en probeert op hetzelfde apparaat een tweede werkaccount toe te voegen, ziet u mogelijk een blokkeringsbericht.  U ziet ook een optie om het bestaande account te verwijderen en een nieuw account toe te voegen. U kunt dit doen door op **Ja**te klikken.
+Als u een iOS-apparaat gebruikt en probeert op hetzelfde apparaat een tweede werkaccount toe te voegen, ziet u mogelijk een blokkeringsbericht.  U ziet ook een optie om het bestaande account te verwijderen en een nieuw account toe te voegen. U kunt dit doen door **Ja**te kiezen.
 
 ![Schermafbeelding van het dialoogvenster met het blokkeringsbericht en de opties Ja en Nee](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +145,18 @@ Als u av-, pdf- en afbeeldingsbestanden van uw bedrijf op een Android-apparaat w
 
 Download deze app in Google Play.  Nadat de app op uw apparaat is geïnstalleerd, start u de app en verifieert u uw identiteit met de referenties van uw bedrijf. Nu moet nu niet-beveiligde en beveiligde bestanden kunnen zien van apps die door ander beleid worden beheerd.
 
+De volgende bestandstypen worden ondersteund:
+
+* **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (enhanced AAC+), AAC ELD (enhanced low delay AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Afbeelding:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**pfile**|**tekst**|
+|----|----|
+|Pfile is een algemene 'wrapper'-indeling voor beveiligde bestanden waarmee de versleutelde inhoud en de RMS-licenties worden ingekapseld en die kan worden gebruikt voor het beveiligen van elk bestandstype.|Tekstbestanden, zoals XML, CSV enzovoort, kunnen worden geopend voor weergave in de app, zelfs wanneer ze zijn beveiligd. Bestandstypen: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Android-apparaten die niet zijn geregistreerd bij Intune**
 
 Voordat u de RMS-app voor delen kunt gebruiken om bestanden weer te geven van andere apps die door Intune worden beheerd, moet u de RMS-app starten en uzelf verifiëren met uw werkaccount.  Wanneer u zich aanmeldt, ziet u het volgende bericht **alleen als u niet over een RMS-licentie beschikt**:
@@ -162,6 +170,7 @@ U kunt desondanks gewoon de RMS-app voor delen gebruiken om bedrijfsbestanden te
 [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

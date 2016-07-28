@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Implementatie van beleid | Microsoft Intune
-description:
-keywords:
+description: Aanbevelingen voor een gefaseerde implementatie van beleid in Microsoft Intune.
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: bab43006d4f142f34ecbb69487acb8b63151ee61
+
 
 ---
 
@@ -102,6 +96,7 @@ Tijdens de testfase implementeert u het beleid voor een kleine groep testgebruik
 [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

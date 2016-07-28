@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Active Directory synchroniseren en gebruikers toevoegen aan Intune | Microsoft Intune
-description:
-keywords:
+description: Beschrijft de synchronisatie van on-premises gebruikers met Azure AD en het verlenen van beheerdersmachtigingen voor uw Intune-abonnement
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8aeb23b709b50ccb8ad29868b4bc5ab96faf950f
+
 
 ---
 
@@ -35,12 +29,12 @@ Het wordt u zelfs nog gemakkelijker gemaakt, want wanneer u meerdere services ge
 Het enige hulpprogramma dat u nodig hebt om uw gebruikersaccounts te synchroniseren met Azure AD, is de [Azure AD Connect-wizard](https://www.microsoft.com/download/details.aspx?id=47594). De Azure AD Connect-wizard biedt een vereenvoudigde begeleiding voor het verbinden van de on-premises infrastructuur voor identiteiten aan de cloud.  Kies uw topologie en behoeften (een of meer mappen, wachtwoordsynchronisatie of federatie) om alle onderdelen door de wizard te laten implementeren en configureren die nodig zijn om de verbinding te laten werken. Inclusief: synchronisatieservices, Active Directory Federation Services (AD FS) en de Azure AD PowerShell-module.
 
 > [!TIP]
-> Azure AD Connect bevat functionaliteit die eerder is uitgebracht als Dirsync en Azure AD Sync. Lees meer over [adreslijstintegratie](http://technet.microsoft.com/library/jj573653.aspx). Zie [Overeenkomsten tussen Active Directory en Azure AD](http://technet.microsoft.com/library/dn518177.aspx) voor meer informatie over de voordelen van het synchroniseren van gebruikersaccounts vanuit de on-premises adreslijst naar Azure AD..
+> Azure AD Connect bevat functionaliteit die eerder is uitgebracht als Dirsync en Azure AD Sync. Lees meer over [adreslijstintegratie](http://technet.microsoft.com/library/jj573653.aspx). Zie [Overeenkomsten tussen Active Directory en Azure AD](http://technet.microsoft.com/library/dn518177.aspx) voor meer informatie over de voordelen van het synchroniseren van gebruikersaccounts vanuit de lokale directory naar Azure AD.
 
 ## Beheerdersbevoegdheden toekennen
 Nadat u gebruikers aan uw Intune-abonnement hebt toegevoegd, raden we u aan om aan enkele gebruikersaccounts [beheerdersreferenties](administrative-accounts-websites-perms.md) te verlenen. De console die u gebruikt om beheerdersreferenties toe te wijzen, is afhankelijk van het type beheerder dat u wilt toewijzen:
 
--   **Tenantbeheerder**: gebruik de **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** om dit type beheerder toe te wijzen voor het beheren van uw abonnement, met inbegrip van facturering, cloudopslag en het beheren van de gebruikers die Intune kunnen gebruiken. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   **Tenantbeheerder**: gebruik de **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** om dit type beheerder toe te wijzen voor het beheren van uw abonnement, met inbegrip van facturering, cloudopslag en het beheren van de gebruikers die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kunnen gebruiken.
 
 -   **Servicebeheerder**: gebruik de **[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]** om dit type beheerder toe te wijzen voor dagelijkse taken, waaronder het beheer van mobiele apparaten of computers, het implementeren van beleid of software en het uitvoeren van rapporten.
 
@@ -53,6 +47,7 @@ Gefeliciteerd. U hebt zojuist stap 3 van de *Snelstartgids voor Intune* voltooid
 >[&larr; **Domeininstellingen**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Intune-licenties beheren** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

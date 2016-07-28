@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Mobiele apparaten inschrijven voor de evaluatieversie | Microsoft Intune
-description:
-keywords:
+description: Zo kunt u mobiele apparaten inschrijven en een app installeren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 2424d52f800ae61dbadc0a3ae73c2b3f24d936c3
+
 
 ---
 
@@ -30,19 +24,19 @@ Als u het beheer van mobiele apparaten met Intune wilt instellen, moet u eerst d
 
 ## De service voor apparaatbeheer voorbereiden
 
-1.  **Intune als de instantie voor het beheer van mobiele apparaten instellen**
+1.  **Intune als de  instantie voor het beheer van mobiele apparaten instellen**
 
-    Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beheer** &gt; **Beheer van mobiele apparaten**. Kies **Taken** > **MDM-instantie instellen**. Kies vervolgens **Ja** in het dialoogvenster **MDM-instantie**.
+    Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Mobile Device Management**. Kies **Taken** > **MDM-instantie instellen**. Kies vervolgens **Ja** in het dialoogvenster **MDM-instantie**.
 
 2.  **MDM inschakelen voor uw apparaatplatform**
 
     Schakel beheer van mobiele apparaten in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
 
-    -   **iOS en Mac OS X**: zie [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)..
+    -   **iOS en Mac OS X**: zie [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
 
     -   **Android**: op mobiele apparaten met Android kunnen gebruikers zich inschrijven via de bedrijfsportal-app, die beschikbaar is via Google Play. Er is geen aanvullende configuratie in Intune vereist.
 
-    -   **Windows Phone**: zie [Windows Phone-beheer instellen met Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)..
+    -   **Windows Phone**: zie [Windows Phone-beheer instellen met Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
 
 ## Testapparaten inschrijven
 
@@ -62,9 +56,9 @@ Als u wordt gevraagd om een **serveradres**op te geven, voert u ‘manage.micros
 
 
 ## De eerder geïmplementeerde app installeren
-Open de bedrijfsportal op het mobiele apparaat, kies **Apps**en installeer vervolgens **Microsoft Skype**..
+Open de bedrijfsportal op het mobiele apparaat, kies **Apps** en installeer vervolgens **Microsoft Skype**.
 
-Zie [Voorbereidingen voor het inschrijven van apparaten bij Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) voor meer informatie over het beheer van mobiele apparaten in Intune..
+Zie [Bereid u voor op het registreren van apparaten in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) voor meer informatie over het beheer van mobiele apparaten met Intune.
 
 ### Volgende stappen
 Gefeliciteerd! U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
@@ -74,6 +68,7 @@ Gefeliciteerd! U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-
 >[&larr; **Beleid maken**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Opties en extra's** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

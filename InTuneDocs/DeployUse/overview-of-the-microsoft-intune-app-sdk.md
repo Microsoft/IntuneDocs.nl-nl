@@ -13,8 +13,8 @@ ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+ms.sourcegitcommit: 206f7c927cce0b66cf554f60342f3f0b1ca43105
+ms.openlocfilehash: d40687127841754f3994b8ad55e839e08bb8dd33
 
 
 ---
@@ -47,7 +47,7 @@ IT-beheerders kunnen het gebruik van een beheerde browser afdwingen voor het ope
 IT-beheerders kunnen een pincodebeleid afdwingen wanneer een door Intune beheerde app wordt gestart. Dit beleid helpt controleren of de eindgebruikers die hun apparaat bij Microsoft Intune hebben ingeschreven dezelfde personen zijn die de apps starten. Wanneer eindgebruikers hun pincode configureren, gebruikt Intune App SDK Azure Active Directory om te controleren of de referenties van eindgebruikers overeenkomen met die van de inschrijving van het apparaat. 
 
 ## Vereisen dat gebruikers referenties invoeren voordat ze apps kunnen starten
-IT-beheerders kunnen van gebruikers vereisen dat zijn referenties invoeren voordat ze een door Intune beheerde app kunnen starten. De Intune App SDK gebruikt Azure Active Directory om een single sign-on-ervaring te bieden waar de referenties, nadat deze eenmaal zijn opgegeven, opnieuw worden gebruikt voor toekomstige aanmeldingen. We bieden ook ondersteuning voor verificatie van oplossingen voor identiteitsbeheer [die zijn gefedereerd met Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
+IT-beheerders kunnen van gebruikers vereisen dat zijn referenties invoeren voordat ze een door Intune beheerde app kunnen starten. De Intune App SDK gebruikt Azure Active Directory om een single sign-on-ervaring te bieden waar de referenties, nadat deze eenmaal zijn opgegeven, opnieuw worden gebruikt voor toekomstige aanmeldingen. We bieden ook ondersteuning voor verificatie van oplossingen voor identiteitsbeheer [die zijn gefedereerd met Azure Active Directory](/active-directory/active-directory-aadconnect-federation-compatibility). 
 
 ## De status en compatibiliteit van apparaten controleren
 IT-beheerders kunnen een status en de compatibiliteit van apparaten met het bedrijfsbeleid controleren voordat eindgebruikers toegang tot door Intune beheerde apps krijgen. Op het iOS-platform controleert dit beleid of het apparaat is gekraakt. Op het Android-platform controleert dit beleid of het apparaat is geroot.  
@@ -56,6 +56,6 @@ IT-beheerders kunnen een status en de compatibiliteit van apparaten met het bedr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Windows 10 Mobile- en Windows Phone-beheer met Microsoft Intune instellen | Microsoft Intune
-description:
-keywords:
+description: Schakel het beheer van mobiele apparaten (MDM) in voor Windows 10 Mobile- of Windows Phone-apparaten met Microsoft Intune.
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
+
 
 ---
 
@@ -31,12 +25,11 @@ Voordat u Windows 10 Mobile- of Windows Phone-apparaten met Microsoft Intune kun
 
 In de meeste scenario’s kunnen gebruikers de bedrijfsportal-app installeren vanuit de Windows Store. Als u Windows Phone 8.0-apparaten beheert of de bedrijfsportal voor Windows Phone-apparaten moet implementeren, moet u bovendien de bedrijfsportal-app downloaden en ondertekenen. Zie [Windows Phone 8.0-beheer instellen](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
-1.  **Intune instellen**
-    Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door [de beheerautoriteit voor mobiele apparaten in te stellen](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) als **Microsoft Intune** en MDM in te stellen.
+1.  **Intune instellen** Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door [de instantie voor beheer van mobiele apparaten in te stellen](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) als **Microsoft Intune** en MDM in te stellen.
 
 2.  **Een DNS-alias voor het inschrijvingsserveradres** (optioneel)
 
-    Door een DNS-alias (CNAME-recordtype) te maken, kunnen gebruikers hun apparaten eenvoudiger inschrijven. Als u geen DNS-alias maakt, moeten gebruikers
+    Door een DNS-alias (CNAME-recordtype) te maken, kunnen gebruikers hun apparaten eenvoudiger inschrijven. Hoewel de CNAME-DNS-vermelding optioneel is voor de inschrijving van Windows-apparaten, wordt u aangeraden om één of meer records te maken, indien nodig, zodat het inschrijvingsproces van het Windows-apparaat gemakkelijker verloopt. Indien geen CNAME-record wordt gevonden, wordt de gebruiker gevraagd de MDM-servernaam handmatig in te voeren.
 
   1.  Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleid naar manage.microsoft.com. Als er meerdere geverifieerd domeinen zijn, maakt u een CNAME-record voor elk domein. De CNAME-bronrecords moeten de volgende informatie bevatten:
 
@@ -55,13 +48,14 @@ In de meeste scenario’s kunnen gebruikers de bedrijfsportal-app installeren va
 
       ![Dialoogvenster Instellingen voor beheer van mobiele apparaten voor Windows](../media/windows-device-enrollment.png)
 
-    3.  Typ de URL van het geverifieerde domein voor de bedrijfswebsite in het vak **Geef een geverifieerde domeinnaam op** en klik op **Automatische detectie testen**..
+    3.  Typ de URL van het geverifieerde domein voor de bedrijfswebsite in het vak **Geef een geverifieerde domeinnaam op** en klik vervolgens op **Automatische detectie testen**.
 
 
 
-Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt implementeren.  Stap 2, 3 en 4 in de beheerconsole kunnen worden genegeerd.
+Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt implementeren.  Stap 2 en 3 in de beheerconsole kunnen worden genegeerd.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

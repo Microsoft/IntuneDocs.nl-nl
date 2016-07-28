@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Firewall-beleid voor Windows-pc’s | Microsoft Intune
-description:
-keywords:
+title: "Firewall-beleid voor Windows-pc’s | Microsoft Intune"
+description: "Intune kan u helpen de pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen, waaronder door de instellingen van Windows Firewall te configureren."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 826bdcd4db11b0eca94a250d6cb95f76e22569bf
+
 
 ---
 
 # Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 Microsoft Intune kan u helpen de Windows-pc’s die u beheert met de Intune-client, op verschillende manieren te beschermen, met inbegrip van het gebruik van beleidsregels waarmee u Windows Firewall-instellingen kunt configureren op pc’s.
 
-Als u de Intune Windows-pc-client nog niet op uw computers hebt geïnstalleerd, ziet u [Installeer de Windows-pc-client met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md)..
+Als u de Intune Windows-pc-client nog niet op uw computers hebt geïnstalleerd, raadpleegt u [De Windows-pc-client installeren met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Gebruik de informatie in de volgende gedeelten bij het configureren, implementeren en controleren van Windows Firewall-beleid op Windows-pc’s.
 
@@ -36,7 +30,7 @@ Gebruik de informatie in de volgende gedeelten bij het configureren, implementer
 U kunt met het Windows Firewall-beleid instellingen maken en implementeren waarmee Windows Firewall op beheerde pc’s wordt beheerd. U kunt geen aangepaste uitzonderingen voor Windows Firewall beheren en deze instellingen zijn niet van invloed op firewalls van derden.
 
 > [!NOTE]
-> Als het beleid van Microsoft Intune en Groepsbeleid zijn geconfigureerd voor dezelfde instelling op de pc, vervangt de instelling van Groepsbeleid het beleid van Microsoft Intune. Zie [Conflicten tussen GPO-beleid en Microsoft Intune-beleid oplossen](resolve-gpo-and-microsoft-intune-policy-conflicts.md) voor informatie over het voorkomen van conflicten tussen beleid van Intune en Groepsbeleid..
+> Als het beleid van Microsoft Intune en Groepsbeleid zijn geconfigureerd voor dezelfde instelling op de pc, vervangt de instelling van Groepsbeleid het beleid van Microsoft Intune. Zie [Conflicten tussen GPO-beleid en Microsoft Intune-beleid oplossen](resolve-gpo-and-microsoft-intune-policy-conflicts.md) voor informatie over het voorkomen van conflicten tussen beleid van Intune en Groepsbeleid.
 >
 > Als u Windows Firewall-instellingen wilt implementeren op computers met Windows Vista, moet u eerst [hotfix KB971800](http://support2.microsoft.com/kb/971800) op deze computers installeren.
 
@@ -48,9 +42,9 @@ U kunt met het Windows Firewall-beleid instellingen maken en implementeren waarm
 
 ## Windows Firewall-beleid configureren
 
-1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies **Beleid** &gt; **Beleid toevoegen**..
+1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies**Beleid** &gt; **Beleid toevoegen**.
 
-2.  Configureer en implementeer een beleid voor **Windows Firewall-instellingen**. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+2.  Configureer en implementeer een beleid voor **Windows Firewall-instellingen**. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     De volgende sectie biedt een overzicht van de waarden die u kunt configureren in het beleid, evenals de standaardwaarden die worden gebruikt als u het beleid niet aanpast.
 
@@ -73,7 +67,7 @@ Deze beleidsinstellingen configureren Windows Firewall voor het blokkeren van in
 
 ### De gebruiker waarschuwen wanneer een nieuw programma door Windows Firewall wordt geblokkeerd
 
-Deze beleidsinstellingen configureren of Windows Firewall de pc-gebruiker een melding stuurt wanneer deze inkomend netwerkverkeer blokkeert wanneer de beheerde computer is verbonden met een domein (bijvoorbeeld op het werk), een particulier (vertrouwd) netwerk (zoals een thuisnetwerk) of een niet-vertrouwd, openbaar netwerk (bijvoorbeeld in een restaurant). De standaardwaarde voor elk van deze instellingen is **Ja**..
+Deze beleidsinstellingen configureren of Windows Firewall de pc-gebruiker een melding stuurt wanneer deze inkomend netwerkverkeer blokkeert wanneer de beheerde computer is verbonden met een domein (bijvoorbeeld op het werk), een particulier (vertrouwd) netwerk (zoals een thuisnetwerk) of een niet-vertrouwd, openbaar netwerk (bijvoorbeeld in een restaurant). De standaardwaarde voor elk van deze instellingen is **Ja**.
 
 
 ### Vooraf gedefinieerde uitzonderingen
@@ -124,6 +118,7 @@ Nadat u bovenstaande basiswaarden hebt geconfigureerd, kunt u uitzonderingen con
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

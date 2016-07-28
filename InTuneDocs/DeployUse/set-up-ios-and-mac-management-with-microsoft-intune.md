@@ -1,40 +1,32 @@
 ---
-# required metadata
-
-title: iOS- en Mac-beheer instellen met Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: iOS- en Mac-beheer instellen | Microsoft Intune
+description: Beheer van mobiele apparaten (MDM) inschakelen voor iOS-apparaten zoals iPads en iPhones en tevens Mac OS X-apparaten met Microsoft Intune.
+keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
+
 
 ---
 
 # iOS- en Mac-apparaatbeheer instellen
-Met Microsoft Intune kunt u BYOD-apparaatinschrijving ('Bring Your Own Device') inschakelen voor iOS- en Mac OS X-apparaten om deze toegang te geven tot zakelijke e-mail en apps voor iPhone-, iPad- en Mac-gebruikers. Na inschrijving kunnen gebruikers de bedrijfsportal-app van Intune installeren en kan er op hun apparaten beleid worden toegepast vanuit de Intune-beheerconsole.
-
-Voordat u iOS-apparaten met Intune kunt beheren, moeten de apparaten met Intune kunnen communiceren. Apple vereist dat er een vertrouwensrelatie met Intune wordt ingesteld door een APNs-certificaat (Apple Push Notification-service) te importeren.
+Intune-beheer van mobiele apparaten voor iPads, iPhones, en Mac OS X-apparaten en geeft toegang tot zakelijke e-mail en apps. Een APNs-certificaat (Apple Push Notification-service) is vereist zodat Intune iOS- en Mac-apparaten kan beheren. Zodra het certificaat is toegevoegd aan Intune, kunnen gebruikers de bedrijfsportal-app installeren om hun apparaten in te schrijven, of de beheerder kan [beheer voor iOS-apparaten in bedrijfseigendom](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) instellen.
 
 1.  **Intune instellen**<br>
     Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) op **Microsoft Intune** en MDM in te stellen.
 
 2.  **Certificaatondertekening aanvragen**<br>
-    Als gebruiker met beheerdersrechten opent u de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) en gaat u naar **Beheer** &gt; **Mobile Device Management** &gt; **iOS en Mac OS X** &gt; **Een APNs-certificaat uploaden** en klikt u op **De APNs-certificaataanvraag downloaden**. Sla het bestand met de aanvraag voor certificaatondertekening (.csr) lokaal op. Het CSR-bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
+    Als gebruiker met beheerdersrechten opent u de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) en gaat u naar **Beheer** &gt; **Mobile Device Management** &gt; **iOS en Mac OS X** &gt;**Een APNs-certificaat uploaden** en klikt u op **De APNs-certificaataanvraag downloaden**. Sla het bestand met de aanvraag voor certificaatondertekening (.csr) lokaal op. Het CSR-bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
 
     ![Het dialoogvenster Een APNs-certificaat uploaden](../media/Intune-iOS-enrollment-with-apns.png)
 
@@ -44,7 +36,7 @@ Voordat u iOS-apparaten met Intune kunt beheren, moeten de apparaten met Intune 
     Download het APNs-certificaat (.pem) en sla het bestand lokaal op. Deze Apple-id moet in de toekomst worden gebruikt om uw APNs-certificaat te vernieuwen.
 
 4.  **Het APNs-certificaat toevoegen aan Intune**<br>
-    Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beheer** &gt; **Mobile Device Management** &gt; **iOS en Mac OS X** &gt; **Een APNs-certificaat uploaden** en klik op **Het APNs-certificaat uploaden**. **Blader naar ** het certificaatbestand (.pem), klik op **Openen** en geef uw **Apple-id** op. Met het APNs-certificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar ingeschreven mobiele apparaten te pushen.
+    In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com), gaat u naar **Beheer** &gt; **Mobiele apparaten beheren** &gt; **iOS en Mac OS X** &gt; **Een APNs-certificaat uploaden**en klikt u op **Het APNs-certificaat uploaden**. **Blader** naar het certificaatbestand (.pem), klik op **Openen** en voer uw **Apple-id**in. Met het APNs-certificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar ingeschreven mobiele apparaten te pushen.
 
 5.  **Vertel gebruikers hoe ze met de bedrijfsportal toegang krijgen tot bronnen**<br>
     Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht. [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -55,6 +47,7 @@ Als uw bedrijf of organisatie iOS-apparaten voor gebruikers koopt, kunnen die ap
 [Bereid u voor op het registreren van apparaten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

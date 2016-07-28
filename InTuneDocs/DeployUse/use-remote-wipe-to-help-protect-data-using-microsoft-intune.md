@@ -13,8 +13,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
+ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
 
 
 ---
@@ -29,6 +29,9 @@ Net zoals u apparaten afschrijft, moet of wilt u op een bepaald moment ook op pc
 
 
 Met **Volledig wissen** worden de fabrieksinstellingen van een apparaat hersteld, en worden alle bedrijfs- en gebruikersgegevens en -instellingen verwijderd. Het apparaat wordt uit Intune verwijderd. Volledig wissen is nuttig voor het opnieuw instellen van een apparaat, wanneer het apparaat aan een nieuwe gebruiker wordt gegeven of wanneer het apparaat is verloren of gestolen.  **Wees voorzichtig bij het selecteren van Volledig wissen. De gegevens op het apparaat kunnen niet worden hersteld**.
+
+> [!Warning]
+> Windows 10 RTM-apparaten (dat wil zeggen; ouder dan Windows-10 versie 1511) met minder dan 4 GB aan RAM-geheugen, kunnen ontoegankelijk worden als ze worden gewist. Voor toegang tot een Windows 10-apparaat dat niet meer reageert, kunt u het apparaat vanaf een USB-station opstarten of een vergelijkbare tijdelijke oplossing toepassen.
 
 ## Selectief wissen
 
@@ -55,7 +58,7 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Niet-beheerde Google Play-apps|Apps en gegevens blijven geïnstalleerd|Apps en gegevens blijven geïnstalleerd|
 |Niet-beheerde Line-Of-Business-apps|Apps en gegevens blijven geïnstalleerd|Apps worden verwijderd en als gevolg daarvan worden ook lokale app-gegevens verwijderd. Er worden geen gegevens buiten de app (SD-geheugenkaart enzovoort) verwijderd.|
 |Beheerde Google Play-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (SD-geheugenkaart enzovoort) blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (SD-geheugenkaart enzovoort), blijven versleuteld, maar worden niet verwijderd.|
-|Beheerde Line-Of-Business-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (SD-geheugenkaart enzovoort) blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (SD-geheugenkaart enzovoort), blijven versleuteld, maar worden niet verwijderd.|
+|Beheerde Line-Of-Business-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (SD-geheugenkaart enzovoort) blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (SD-geheugenkaart enzovoort) blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd|Verwijderd|
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
@@ -139,6 +142,6 @@ Ga als volgt te werk om een rapport op te halen met informatie over de apparaten
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

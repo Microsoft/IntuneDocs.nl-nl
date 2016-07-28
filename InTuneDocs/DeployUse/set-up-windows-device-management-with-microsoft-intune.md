@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Windows-apparaatbeheer instellen met Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: "Schakel het beheer van mobiele apparaten (MDM) in voor Windows-pc’s, waaronder Windows 10-apparaten met Microsoft Intune."
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
+
 
 ---
 
@@ -32,27 +26,30 @@ Door een DNS CNAME te maken, kunnen gebruikers verbinding maken met Intune en bi
 
 ### Windows apparaatbeheer instellen
 
-  1.  Maak een **CNAME** DNS-bronrecord voor het domein van uw bedrijf. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar EnterpriseEnrollment-s.manage.microsoft.com. Als er meerdere geverifieerde domeinen zijn, maakt u voor elk domein een CNAME-record. De CNAME-bronrecords moeten de volgende informatie bevatten:
+  1.  Maak een **CNAME** DNS-bronrecord voor het domein van uw bedrijf. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar EnterpriseEnrollment-s.manage.microsoft.com. Hoewel de CNAME-DNS-vermelding optioneel is voor de inschrijving van Windows-apparaten, wordt u aangeraden om één of meer records te maken, indien nodig, zodat het inschrijvingsproces van het Windows-apparaat gemakkelijker verloopt. Indien geen CNAME-record wordt gevonden, wordt de gebruiker gevraagd de MDM-servernaam handmatig in te voeren.
+
+  Als er meer dan één gecontroleerd domein is, maakt u een CNAME-record voor elk domein. De CNAME-resourcerecords moeten de volgende informatie bevatten:
 
   |TYPE|Hostnaam|Verwijst naar|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 uur|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 uur|
 
-    DNS record changes might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
+  Het kan 72 uur duren voordat wijzigingen in DNS-records zijn doorgegeven. U kunt de DNS-wijziging in Intune pas controleren wanneer de DNS-record is doorgegeven.
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – Supports a redirect to the Intune service with domain recognition from the email’s domain name
+  **EnterpriseEnrollment-s.manage.microsoft.com**: biedt ondersteuning voor een omleiding naar de Intune-service met domeinherkenning van de domeinnaam via het e-mailadres van het domein
 
-    **EnterpriseRegistration.windows.net** – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory using their work or school account
+  **EnterpriseRegistration.windows.net**: ondersteunt Windows 8.1- en Windows 10 Mobile-apparaten die worden geregistreerd bij Azure Active Directory met hun werk- of schoolaccount
 
   2.  Klik in de [Intune-beheerconsole](http://manage.microsoft.com) op **Beheer** &gt; **Mobile Device Management** &gt; **Windows**.
   ![Het dialoogvenster Windows-apparaatbeheer](../media/enroll-intune-winenr.png)
-  3.  Typ de URL van het geverifieerde domein voor de bedrijfswebsite in het vak onder **Geef een geverifieerde domeinnaam op** en klik vervolgens op **Automatische detectie testen**..
+  3.  Typ de URL van het geverifieerde domein voor de bedrijfswebsite in het vak **Geef een geverifieerde domeinnaam op** en klik vervolgens op **Automatische detectie testen**.
 
 ### Zie tevens
 [Bereid u voor op het registreren van apparaten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

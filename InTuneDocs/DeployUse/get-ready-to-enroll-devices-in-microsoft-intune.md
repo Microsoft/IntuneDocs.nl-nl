@@ -1,32 +1,32 @@
 ---
 title: U voorbereiden op het registreren van apparaten | Microsoft Intune
-description: 
+description: Mobile Device Management (MDM)-vereisten instellen en voorbereidingen treffen voor het inschrijven van verschillende besturingssystemen.
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
-ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
 
 
 ---
 
 # Bereid u voor op het registreren van apparaten in Microsoft Intune
-U moet apparaatregistratie inschakelen zodat werknemers mobiele apparaten (inclusief [Android](set-up-android-management-with-microsoft-intune.md), [iOS- en Mac-](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone-](set-up-windows-phone-management-with-microsoft-intune.md), en [Windows-pc's](set-up-windows-device-management-with-microsoft-intune.md)) bij Intune kunnen registreren. Voor het toestaan van registratie moet u een instantie voor het Mobile Device Management instellen, de Intune-bedrijfsportal configureren, licenties toewijzen en registratie inschakelen voor het apparaatplatform.
+U moet apparaatinschrijving inschakelen zodat werknemers mobiele apparaten (inclusief [Android](set-up-android-management-with-microsoft-intune.md), [iOS- en Mac-](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone-](set-up-windows-phone-management-with-microsoft-intune.md) en [Windows-pc's](set-up-windows-device-management-with-microsoft-intune.md)) bij Intune kunnen inschrijven. Voor het toestaan van inschrijvingen moet u een instantie voor het Mobile Device Management (MDM) instellen, de Intune-bedrijfsportal configureren, licenties toewijzen en inschrijven inschakelen voor het apparaatplatform.
 
 ## Instantie voor beheer van mobiele apparaten instellen
-De MDM-instantie definieert de beheerservice met een machtiging voor het beheren van een reeks apparaten. Opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
+De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
 
 >[!IMPORTANT]
-> Overweeg zorgvuldig of u mobiele apparaten wilt beheren met Intune alleen (onlineservice) of met System Center Configuration Manager met Intune (on-premises softwareoplossing in combinatie met onlineservice). Nadat de instantie voor het Mobile Device Management is ingesteld, kan deze niet meer worden gewijzigd.
+> Overweeg zorgvuldig of u mobiele apparaten wilt beheren met Intune alleen (onlineservice) of met System Center Configuration Manager met Intune (on-premises softwareoplossing in combinatie met de onlineservice). Nadat de instantie voor het Mobile Device Management is ingesteld, kan deze niet meer worden gewijzigd.
 
 
 
@@ -45,11 +45,11 @@ De Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben tot bedrijf
 > [!TIP]
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal.
 
-Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige ervaring. Hiervoor hoeft u zich enkel als tenant of servicebeheerder aan te melden bij de [Microsoft Intune-beheerconsole](https://manage.microsoft.com), **Beheerder**&gt;**Bedrijfsportal** te kiezen en de instellingen van de bedrijfsportal te configureren.
+Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en efficiënte ervaring. Hiervoor hoeft u zich enkel als tenant of servicebeheerder aan te melden bij de [Microsoft Intune-beheerconsole](https://manage.microsoft.com), **Beheerder**&gt;**Bedrijfsportal** te kiezen en de instellingen van de bedrijfsportal te configureren.
 
 ![beheerconsole-beheerder-werkruimte-comp-portalinstellingen](../media/cp_sa_cpsetup.PNG)
 
-#### Contactgegevens en privacyverklaring van bedrijf
+### Contactgegevens en privacyverklaring van bedrijf
 
 De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers zien de contactgegevens en details in het scherm Contact opnemen met IT van de bedrijfsportal. Wanneer een gebruiker op de privacykoppeling klikt, wordt de privacyverklaring weergegeven.
 
@@ -59,10 +59,10 @@ De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers
     |Naam van contactpersoon IT-afdeling|40|Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |Telefoonnummer IT-afdeling|20|Dit contacttelefoonnummer wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |E-mailadres IT-afdeling|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domeinnaam.com**.|
-    |Aanvullende informatie|120|Wordt weergegeven op de pagina **Contact opnemen met IT**.|
+    |Aanvullende informatie|120|Deze informatie wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |URL van privacyverklaring van bedrijf|79|U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie https://www.contoso.com.|
 
-#### Contactpersonen voor ondersteuning
+### Contactpersonen voor ondersteuning
 Aan gebruikers in de bedrijfsportal wordt de ondersteuningswebsite weergegeven voor toegang tot onlineondersteuning.
 
 |Veldnaam|Max. lengte|Meer informatie|
@@ -71,7 +71,7 @@ Aan gebruikers in de bedrijfsportal wordt de ondersteuningswebsite weergegeven v
     |Naam website|40|Deze naam is de beschrijvende naam die wordt weergegeven voor de URL naar de ondersteuningswebsite. Als u een URL van een ondersteuningswebsite en geen beschrijvende naam opgeeft, wordt in de bedrijfsportal **Ga naar de website van IT** weergegeven op de pagina **Contact opnemen met IT**.|
 
 
-#### Aanpassing bedrijfshuisstijl
+### Aanpassing bedrijfshuisstijl
 
 U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur en achtergrond.
 
@@ -86,29 +86,29 @@ Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagin
 
 ## Een Intune-gebruikerslicentie toewijzen
 
-U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure AD.
+U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD).
 
 1.  Meld u met uw tenantbeheerdersreferenties aan bij de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx).
 
-2.  Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en schakel het selectievakje **Microsoft Intune** in voor de eigenschappen van het gebruikersaccount.
+2.  Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en selecteer vervolgens **Microsoft Intune** voor de eigenschappen van het gebruikersaccount.
 
-3.  Het gebruikersaccount wordt nu toegevoegd aan de Microsoft Intune-gebruikersgroep die de gebruikersmachtigingen voor het gebruik van de service toekent en de apparaten registreert voor beheer.
+3.  Het gebruikersaccount wordt nu toegevoegd aan de Microsoft Intune-gebruikersgroep die de gebruikersmachtigingen voor het gebruik van de service toekent en de apparaten inschrijft voor beheer.
 
 ## Apparaatbeheer instellen
 Na het instellen van de MDM-instantie moet u apparaatbeheer instellen voor de besturingssystemen die uw organisatie wil ondersteunen. De stappen die voor het instellen van apparaatbeheer nodig zijn, verschillen per besturingssysteem. Android OS vereist bijvoorbeeld niet dat u iets doet in de Intune-beheerconsole. Aan de andere kant vereisen Windows en iOS een vertrouwensrelatie tussen apparaten en Intune voor het toestaan van beheer.
 
 > [!div class="op_single_selector"]
 - [Android-beheer instellen met Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [iOS- en Mac-beheer instellen met Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 - [Windows apparaatbeheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
 U kunt ook:
- - Het [apparaatregistratiebeheeraccount](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) gebruiken om meerdere apparaten te registreren
- - [Apparaten in bedrijfseigendom met IMEI-nummers opgeven](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) om apparaten te registreren en beleid te maken
+ - Het [beheerdersaccount voor apparaatinschrijving](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) gebruiken om meerdere apparaten in te schrijven.
+ - [Apparaten in bedrijfseigendom met IMEI-nummers opgeven](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) om apparaten in te schrijven en beleid te maken.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

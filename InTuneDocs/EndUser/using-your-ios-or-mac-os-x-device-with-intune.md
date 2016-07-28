@@ -1,9 +1,9 @@
 ---
 title: Uw iOS- of Mac OS X-apparaat gebruiken met Intune | Microsoft Intune
-description: 
+description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS X-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 ---
@@ -50,7 +50,7 @@ De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u 
 
 De informatie in deze sectie helpt u problemen op te lossen die mogelijk optreden wanneer een iOS-apparaat wordt geregistreerd bij Intune.
 
-- [Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device)
+- [Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 - [Fouten naar uw IT-beheerder verzenden](send-errors-to-your-it-admin-ios.md)
 - [Er treedt een fout op tijdens het gebruik van de bedrijfsportal-app](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Er worden fouten weergegeven tijdens het registreren van het apparaat bij Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -63,6 +63,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

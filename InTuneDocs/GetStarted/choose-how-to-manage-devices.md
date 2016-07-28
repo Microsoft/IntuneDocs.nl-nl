@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Kiezen hoe u apparaten beheert |Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
+ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
+
 
 ---
 
@@ -75,16 +69,17 @@ Overweeg de Intune-computerclient te gebruiken als u de volgende zaken wilt doen
 ## Exchange ActiveSync-beheer
 U kunt apparaten ook beheren met behulp van Exchange ActiveSync. Hiervoor moet u de lokale connector installeren of de ingebouwde Service-to-Service-connector gebruiken om verbinding te maken met uw Exchange-server.
 
-Zie [Vereisten voor de On-Premises Connector](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) voor meer informatie over de hardware- en softwarevereisten om de On-Premises Connector te installeren.
+Zie [Vereisten voor de On-Premises Connector](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) voor meer informatie over de hardware- en softwarevereisten om de On-Premises Connector te installeren.
 
-Zie [Mobile Device Management met Exchange ActiveSync en Microsoft Intune](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) voor meer informatie over het gebruik van de On-Premises Connector of de Service to Service Connector.
+Zie [Mobile Device Management met Exchange ActiveSync en Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) voor meer informatie over het gebruik van de On-Premises Connector of de Service to Service Connector.
 
 
 
 ## Volgende stappen
-Nu u enkele mogelijkheden hebt ontdekt die u kunt gebruiken wanneer u uw apparaten registreert bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], moet u zich vervolgens voorbereiden op [de registratie van uw apparaten](../deploy-use/enroll-devices-in-microsoft-intune). Nadat u uw apparaten hebt geregistreerd, kunt u profiteren van alle mogelijkheden waarover u hebt gelezen in dit onderwerp. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Nu u enkele mogelijkheden hebt ontdekt die u kunt gebruiken wanneer u uw apparaten registreert bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], moet u zich voorbereiden op [de registratie van uw apparaten](/intune/deploy-use/enroll-devices-in-microsoft-intune). Nadat u uw apparaten hebt geregistreerd, kunt u profiteren van alle mogelijkheden waarover u hebt gelezen in dit onderwerp. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

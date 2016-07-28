@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: MAM-beleid maken en implementeren | Microsoft Intune
-description:
-keywords:
+description: Volg de stapsgewijze instructies in dit onderwerp om beleidsregels voor Mobile App Management te maken en implementeren.
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
+ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+
 
 ---
 
@@ -33,8 +27,12 @@ In dit onderwerp wordt het proces van het maken van MAM-beleid in de **Azure-por
 - Apparaten die worden beheerd door een externe MDM-oplossing
 - Apparaten die niet worden beheerd door een MDM-oplossing (BYOD).
 
-Als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren, kunt u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) MAM-beleid maken dat apps ondersteunt voor apparaten die zijn geregistreerd bij Intune.
 >[!IMPORTANT]
+
+> Als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren, kunt u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) MAM-beleid maken dat apps ondersteunt voor apparaten die zijn geregistreerd bij Intune.
+MAM-beleid dat is gemaakt in de Intune-beheerconsole kan niet worden geïmporteerd in Azure Portal.  Het MAM-beleid moet in Azure Portal opnieuw worden gemaakt.
+
+
 > Mogelijk ziet u in de Intune-beheerconsole niet alle MAM-beleidsinstellingen. De Azure-portal is de nieuwe beheerconsole voor het maken van MAM-beleid. Als u MAM-beleid in zowel de Intune-beheerconsole als Azure Portal maakt, wordt het beleid in Azure Portal toegepast op de apps en geïmplementeerd bij gebruikers.
 
 Voor een lijst met beleidsinstellingen die worden ondersteund voor het Android- en iOS-platform, selecteert u een van de volgende mogelijkheden:
@@ -47,11 +45,12 @@ Voor een lijst met beleidsinstellingen die worden ondersteund voor het Android- 
 Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) voordat u MAM-beleid maakt.
 1.  Kies **Intune Mobile Application Management &gt; Instellingen** om het tabblad **Instellingen** te openen.
 
-    ![Schermopname van het tabblad Intune Mobile Application Management](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+    ![Schermafbeelding van het tabblad Intune Mobile Application Management](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] Als dit de eerste keer is dat u Azure Portal gebruikt, leest u eerst [Azure Portal voor Microsoft Intune MAM-beleid](azure-portal-for-microsoft-intune-mam-policies.md) om vertrouwd te raken met de portal.
+    > [!TIP]
+    > Als dit de eerste keer is dat u de Azure-portal gebruikt, lees dan eerst [Azure-portal voor Microsoft Intune MAM-beleid](azure-portal-for-microsoft-intune-mam-policies.md) om vertrouwd te raken met de portal.
 
-2.  Kies op het tabblad **Instellingen** de optie **App-beleid**.  Hiermee opent u het tabblad **App-beleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
+2.  Kies op het tabblad **Instellingen** de optie **App-beleid**.  Hiermee opent u de blade **App-beleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
 
     ![Schermafbeelding van het tabblad App-beleid met een lijst met bestaande beleidsregels](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
@@ -65,7 +64,8 @@ Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configur
 
 5.  Kies **Apps** om het tabblad **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. Nadat u de apps hebt geselecteerd, kiest u de knop **Selecteren** onder aan het tabblad **Apps** om uw selectie op te slaan.
 
-    > [!IMPORTANT] U moet ten minste één app selecteren om een beleid maken.
+    > [!IMPORTANT]
+    > U moet ten minste één app selecteren om een beleid maken.
 
 6.  Op het tabblad **Een beleid toevoegen** kiest u **Vereiste instellingen configureren** om het tabblad Beleidsinstellingen te openen.
 
@@ -108,7 +108,8 @@ Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige
 
 Het beleid is alleen van invloed op gebruikers aan wie [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenties zijn toegewezen.  Gebruikers die zich in de geselecteerde beveiligingsgroep bevinden en aan wie geen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licentie is toegewezen, worden niet door het beleid beïnvloed.
 
-Als u Intune met Configuration Manager gebruik om uw iOS- en Android-apparaten te beheren, wordt het beleid alleen direct op gebruikers in de geselecteerde groep toegepast.  Leden van de onderliggende groepen binnen de geselecteerde groep worden niet door het beleid beïnvloed.
+>[!IMPORTANT]
+> Als u Intune met Configuration Manager gebruik om uw iOS- en Android-apparaten te beheren, wordt het beleid alleen direct op gebruikers in de geselecteerde groep toegepast.  Leden van de onderliggende groepen binnen de geselecteerde groep worden niet door het beleid beïnvloed.
 
 De eindgebruikers kunnen de apps downloaden in de App Store of Google Play. Zie het onderwerp [Ervaring van eindgebruikers voor apps die geschikt zijn voor MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) voor een gedetailleerd overzicht van hoe MAM bedrijfsgegevens op het apparaat beschermt.
 
@@ -157,8 +158,8 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
 Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de beleidsinstellingen voor iOS en Android:
 
 > [!div class="op_single_selector"]
-  - [iOS-beleid](ios-mam-policy-settings.md)
-  - [Android-beleid](android-mam-policy-settings.md)
+- [iOS-beleid](ios-mam-policy-settings.md)
+- [Android-beleid](android-mam-policy-settings.md)
 
 ## Volgende stappen
 [Compatibiliteit- en gebruikersstatus controleren](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -167,6 +168,7 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 [Ervaring van eindgebruikers voor apps die geschikt zijn voor MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

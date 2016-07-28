@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Exchange-toegangsregels voor door Microsoft Intune beheerde mobiele apparaten | Microsoft Intune
-description:
-keywords:
+title: Exchange-toegangsregels voor mobiele apparaten | Microsoft Intune
+description: Exchange ActiveSync-toegangsregels voor het beheren van mobiele apparaten (MDM) bepalen het niveau van toegang dat de betreffende apparaten hebben tot Exchange.
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
+
 
 ---
 
 # Exchange-toegangsregels voor mobiele apparaten
-Exchange-toegangsregels voor mobiele apparaten bepalen het niveau van toegang dat de betreffende apparaten hebben tot Exchange. Deze instellingen beïnvloeden alle mobiele apparaten, met inbegrip van apparaten die niet zijn ingeschreven in Microsoft Intune. U kunt beginnen met het definiëren van een **Standaardregel** die wordt toegepast op mobiele apparaten waarop geen aangepaste regel van toepassing is. De volgende tabel bevat de toegangsniveaus die worden beheerd door Exchange ActiveSync:
+Exchange-toegangsregels voor mobiele apparaten bepalen het niveau van toegang dat de betreffende apparaten hebben tot Exchange ActiveSync. Deze instellingen beïnvloeden alle mobiele apparaten, met inbegrip van apparaten die niet zijn ingeschreven in Microsoft Intune. U kunt beginnen met het definiëren van een **Standaardregel** die wordt toegepast op mobiele apparaten waarop geen aangepaste regel van toepassing is. De volgende tabel bevat de toegangsniveaus die worden beheerd door Exchange ActiveSync:
 
 |Toegangsniveau|Beschrijving|
 |----------------|---------------|
@@ -45,19 +39,20 @@ De volgende procedure beschrijft hoe u een aangepaste regel maakt.
 
 ## Een standaardtoegangsregel maken
 
-1.  Ga naar [Microsoft Intune-beheerconsole](http://manage.microsoft.com) &gt; **Beleid** &gt; **Exchange-toegang voor mobiele apparaten**..
+1.  Ga naar [Microsoft Intune-beheerconsole](http://manage.microsoft.com) &gt; **Beleid** &gt; **Exchange-toegang voor mobiele apparaten**.
 
-2.  Selecteer in de lijst **Standaardregel** de toegangsregel die u wilt toepassen op alle mobiele apparaten die niet onder een regel of een persoonlijke uitzondering vallen. Kies **Opslaan**..
+2.  Selecteer in de lijst **Standaardregel** de toegangsregel die u wilt toepassen op alle mobiele apparaten die niet onder een regel of een persoonlijke uitzondering vallen. Kies **Opslaan**.
 
 De volgende procedure beschrijft hoe u een aangepaste regel maakt.
 
 ## Een aangepaste toegangsregel maken
 
-1. Ga naar [Microsoft Intune-beheerconsole](http://manage.microsoft.com) &gt; **Beleid** &gt; **Exchange-toegang voor mobiele apparaten**..
+1. Ga naar [Microsoft Intune-beheerconsole](http://manage.microsoft.com) &gt; **Beleid** &gt; **Exchange-toegang voor mobiele apparaten**.
 
-2.  Selecteer in de lijst **Aangepaste regels** de optie **Regel toevoegen** en maak een aangepaste regel. Kies **Opslaan**..
+2.  Selecteer in de lijst **Aangepaste regels** de optie **Regel toevoegen** en maak een aangepaste regel. Kies **Opslaan**.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Wi-Fi met een vooraf gedeelde sleutel (PSK) | Microsoft Intune
-description: 
-keywords:
+description: Aangepaste configuratie van Intune gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel.
+keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+
 
 
 ---
@@ -196,12 +190,13 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
 
     -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
 
-Wanneer u een geïmplementeerd beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
+Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
 
 ### Zie tevens
 [Wi-Fi-verbindingen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

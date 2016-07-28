@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS-apps met configuratiebeleid voor mobiele apps configureren | Microsoft Intune
-description:
-keywords:
+title: Configuratiebeleid voor mobiele iOS-apps gebruiken | Microsoft Intune
+description: Het configuratiebeleid voor mobiele apps in Intune gebruiken om instellingen op te geven die mogelijk zijn vereist wanneer de gebruiker een iOS-app uitvoert.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: faf65ddbb4772f8c0ce0a4125bb108b3b1bcfb5c
+
 
 ---
 
@@ -42,7 +36,8 @@ Configuratiebeleid voor mobiele apps kan ervoor zorgen dat deze problemen worden
 
 U implementeert dit beleid niet rechtstreeks bij gebruikers en apparaten. In plaats daarvan koppelt u het beleid aan een app en implementeert u vervolgens de app. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
 
-> [!TIP] Dit beleidstype is momenteel alleen beschikbaar op apparaten met iOS 7.1 en later en ondersteunt de volgende app-installatietypen:
+> [!TIP]
+> Dit beleidstype is momenteel alleen beschikbaar op apparaten met iOS 7.1 en later en ondersteunt de volgende app-installatiestypen:
 > 
 > -   **Beheerde iOS-app uit de App Store**
 > -   **App-pakket voor iOS**
@@ -62,7 +57,8 @@ U implementeert dit beleid niet rechtstreeks bij gebruikers en apparaten. In pla
 
 4.  In het gedeelte **Configuratiebeleid voor mobiele app** van de pagina typt of plakt u een XML-eigenschappenlijst met de configuratie-instellingen voor de app in het vak.
 
-    > [!TIP] Zie [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Informatie over XML-eigenschappenlijsten) in de iOS-ontwikkelaarsbibliotheek voor meer informatie over XML-eigenschappenlijsten.
+    > [!TIP]
+    > Zie [XML-eigenschappenlijsten](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in de iOS-ontwikkelaarsbibliotheek voor meer informatie over XML-eigenschappenlijsten.
     > 
     > De indeling van de XML-eigenschappenlijst is afhankelijk van de app die u wilt configureren. Neem contact op met de leverancier van de app voor meer informatie over de precieze indeling die moet worden gebruikt.
     > 
@@ -104,7 +100,8 @@ Ga daarna verder met de gebruikelijke implementatie van de app.
 
 Wanneer de geïmplementeerde app op een apparaat wordt uitgevoerd, worden de instellingen uitgevoerd die u in het configuratiebeleid voor de mobiele app hebt geconfigureerd.
 
-> [!TIP] Als een of meer configuratiebeleidsregels voor de mobiele app met elkaar in strijd zijn, wordt geen van beide beleidsregels geïmplementeerd en wordt het conflict gerapporteerd in de Intune-beheerconsole **Dashboard**.
+> [!TIP]
+> Als een of meer configuratiebeleidsregels voor de mobiele app met elkaar in strijd zijn, wordt geen van beide beleidsregels geïmplementeerd en wordt het conflict gerapporteerd in de Intune-beheerconsole **Dashboard**.
 
 ## Voorbeeld van een indeling voor het XML-configuratiebestand voor een mobiele app
 
@@ -139,6 +136,7 @@ Wanneer u een configuratiebestand voor een mobiele app maakt, kunt u een of meer
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

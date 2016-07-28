@@ -1,9 +1,9 @@
 ---
 title: Uw Android-apparaat gebruiken met Intune | Microsoft Intune
-description: 
+description: Lijst met koppelingen naar taken die u op uw mobiele Android-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/14/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 537cb3277a9a334e6e7bfcbfb6606e934c70e705
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 
 ---
@@ -45,6 +46,7 @@ De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u 
 - [De registratie van uw apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Wat gebeurt er als u uw Android-apparaat opnieuw instelt met behulp van de bedrijfsportal-app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## Problemen met het apparaat oplossen
 
@@ -58,11 +60,16 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 - [Het apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Uw apparaat is geroot en u kunt geen verbinding maken](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Er ontbreekt een vereist certificaat voor uw apparaat](your-device-is-missing-a-required-certificate-android.md)
+- [U wordt gevraagd om onbekende bronnen uit te schakelen](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [U wordt gevraagd om USB-foutopsporing uit te schakelen](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [U wordt gevraagd om Apparaat scannen op beveiligingsrisico's in te schakelen](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Uw apparaat voldoet niet aan de minimumvereisten voor de beveiligingspatch](your-device-does-not-meet-the-minimum-security-patch-android.md)
 
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

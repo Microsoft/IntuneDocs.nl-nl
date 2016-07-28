@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: De bedrijfsportal aanpassen | Microsoft Intune
-description:
-keywords:
+description: Uitleg over het aanpassen van de bedrijfsportal voor uw Intune-abonnement
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: cd82cb9b049a4f61dc19beeedb62cb454a62512c
+
 
 ---
 
@@ -32,7 +26,7 @@ De [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is de plaats waa
 > [!TIP]
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal.
 
-Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige ervaring. Hiervoor hoeft u zich enkel als tenant of servicebeheerder aan te melden bij [Microsoft Intune-beheerconsole](https://manage.microsoft.com), **Beheerder** &gt; **Bedrijfsportal** te kiezen en de instellingen van de bedrijfsportal te configureren.
+Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige ervaring. Hiervoor hoeft u zich enkel als tenant of servicebeheerder aan te melden bij de [Microsoft Intune-beheerconsole](https://manage.microsoft.com), **Beheerder**&gt;**Bedrijfsportal** te kiezen en de instellingen van de bedrijfsportal te configureren.
 
 ![beheerconsole-beheerder-werkruimte-comp-portalinstellingen](./media/companyportal.png)
 
@@ -44,7 +38,7 @@ De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers
     |Bedrijfsnaam|40|Deze naam wordt weergegeven als de titel van de bedrijfsportal.|
     |Naam van contactpersoon IT-afdeling|40|Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |Telefoonnummer IT-afdeling|20|Dit contacttelefoonnummer wordt weergegeven op de pagina **Contact opnemen met IT**.|
-    |E-mailadres IT-afdeling|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domeinnaam.com**..|
+    |E-mailadres IT-afdeling|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domeinnaam.com**.|
     |Aanvullende informatie|120|Wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |URL van privacyverklaring van bedrijf|79|U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie https://www.contoso.com.|
 
@@ -72,9 +66,10 @@ Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagin
 Gefeliciteerd. U hebt zojuist stap 7 van de *Snelstartgids voor Intune* voltooid.
 >[!div class="step-by-step"]
 
->[&larr; **Beleid en apps maken**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Apparaten inschrijven** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **Beleid en apps maken**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Apparaten registreren** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

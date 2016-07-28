@@ -1,10 +1,10 @@
 ---
 title: Apps implementeren | Microsoft Intune
-description: 
+description: Gebruik de informatie in dit onderwerp om apps met Microsoft Intune te implementeren.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # Apps in Microsoft Intune implementeren
 
-Gebruik de informatie in dit onderwerp om Microsoft Intune-apps te implementeren.
+Gebruik de informatie in dit onderwerp om apps met Microsoft Intune te implementeren.
 
 
 ## Een app implementeren
-In deze procedure implementeert u de app op geselecteerde apparaten of gebruikers.
+In deze procedure implementeert u de app op geselecteerde apparaat- of gebruikersgroepen.
 
 ### Een app implementeren
 
@@ -52,11 +52,11 @@ In deze procedure implementeert u de app op geselecteerde apparaten of gebruiker
 ## Voorbeeld
 
 In dit voorbeeld hebt u de app als **Beschikbaar** geïmplementeerd voor een iOS-apparaat.
-De app wordt op de apparaten van gebruikers weergegeven in de bedrijfsportal. Hier kan de app worden geïnstalleerd. In deze schermafbeelding is de app Bing voor iOS geïmplementeerd met behulp van het installatietype **Externe koppeling**, met een aangepast pictogram, en de optie **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal** ingeschakeld.
-    ![Voor iOS beschikbare app](./media/available-install-on-iOS.png)
+De app wordt op de apparaten van gebruikers weergegeven in de bedrijfsportal. Hier kan de app worden geïnstalleerd. In deze schermafbeelding is de app Bing voor iOS geïmplementeerd met behulp van het installatietype **Externe koppeling**, met een aangepast pictogram, en de optie **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal** ingeschakeld.  
+![Voor iOS beschikbare app](./media/available-install-on-iOS.png)
 
-Als u de app hebt geïmplementeerd als **Vereist**, krijgt de gebruiker een melding dat er een app gereed is om te worden geïnstalleerd. In deze schermafbeelding is de app Werkmappen voor iOS geïmplementeerd met behulp van het installatietype **Beheerde iOS-app uit de App Store**.
-    ![Voor iOS vereiste app](./media/iOS-Required-install.PNG)
+Als u de app hebt geïmplementeerd als **Vereist**, krijgt de gebruiker een melding dat er een app gereed is om te worden geïnstalleerd. In deze schermafbeelding is de app Werkmappen voor iOS geïmplementeerd met behulp van het installatietype **Beheerde iOS-app uit de App Store**.  
+![Voor iOS vereiste app](./media/iOS-Required-install.PNG)
 
 ## Volgende stappen
 
@@ -64,6 +64,6 @@ Nadat u een app hebt geïmplementeerd, is het een goed idee om de voortgang erva
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
