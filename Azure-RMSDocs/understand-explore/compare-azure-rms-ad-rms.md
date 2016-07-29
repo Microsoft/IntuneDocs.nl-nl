@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 8635402989db0f83017151910013ca460011b392
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ce79ec40cbd8ca3796a17920d27dc3872cd40842
 
 
 ---
@@ -54,7 +54,7 @@ Gebruik de volgende tabel met een vergelijking van de functies en voordelen van 
 |Biedt twee rechtenbeleidssjablonen waarmee toegang tot inhoud tot uw eigen organisatie wordt beperkt; een sjabloon die alleen-lezenweergave van beveiligde inhoud biedt, en een andere sjabloon die machtigingen biedt voor schrijven en wijzigen voor de beveiligde inhoud.<br /><br />U kunt ook uw eigen aangepaste sjablonen maken, waaronder afdelingssjablonen die alleen zichtbaar zijn voor een gebruikerssubset. Zie [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) voor meer informatie.<br /><br />Als de sjablonen niet voldoen aan de behoeften, kunnen gebruikers bovendien hun eigen set machtigingen definiëren.|Als er geen standaardrechtenbeleidssjablonen zijn, moet u deze maken en vervolgens distribueren. Zie [AD RMS Policy Template Considerations](http://go.microsoft.com/fwlink/?LinkId=154765) (Overwegingen voor AD RMS-beleidssjablonen) voor meer informatie.<br /><br />Als de sjablonen niet voldoen aan de behoeften, kunnen gebruikers bovendien hun eigen set machtigingen definiëren.|
 |De minimaal ondersteunde versie van Microsoft Office is Office 2010. Hiervoor is de [RMS-toepassing voor delen](../rms-client/sharing-app-windows.md) vereist.<br /><br />Microsoft Office voor Mac:<br /><br />- Microsoft Office voor Mac 2016: ondersteund<br /><br />- Microsoft Office voor Mac 2011: niet ondersteund|De minimaal ondersteunde versie van Microsoft Office is Office 2007.<br /><br />Microsoft Office voor Mac:<br /><br />- Microsoft Office voor Mac 2016: ondersteund<br /><br />- Microsoft Office voor Mac 2011: ondersteund|
 |Ondersteunt de [RMS-toepassing voor delen](../rms-client/sharing-app-windows.md) voor Windows, Mac-computers en mobiele apparaten.<br /><br />De RMS-toepassing voor delen ondersteunt tevens het volgende:<br /><br />- Delen met personen in een andere organisatie.<br /><br />- E-mailmeldingen waarmee de afzender wordt geïnformeerd wanneer iemand probeert een beveiligde bijlage te openen.<br /><br />- Een site voor documenttracking voor gebruikers, die de mogelijkheid bevat voor het intrekken van een document.|Ondersteunt de [RMS-toepassing voor delen](../rms-client/sharing-app-windows.md) voor Windows, Mac-computers en mobiele apparaten. Delen biedt echter geen ondersteuning voor delen met personen in een andere organisatie, e-mailmeldingen of de site voor documenttracking en de mogelijkheid voor gebruikers om documenten in te trekken.|
-|Wanneer u de RMS-toepassing voor delen gebruikt, kunnen alle bestandstypen worden beveiligd met [systeemeigen of algemene beveiliging](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Zie de [tabel met mogelijkheden voor clientapparaten](../get-started/requirements-client-devices.md#client-device-capabilities) voor andere toepassingen.|Wanneer u de RMS-toepassing voor delen gebruikt, kunnen alle bestandstypen worden beveiligd met [systeemeigen of algemene beveiliging](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Zie de [tabel met mogelijkheden voor clientapparaten](../get-started/requirements-client-devices.md#client-device-capabilities) voor andere toepassingen.|
+|Wanneer u de RMS-toepassing voor delen gebruikt, kunnen alle bestandstypen worden beveiligd met [systeemeigen of algemene beveiliging](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Zie de tabel in [Azure RMS-vereisten: Toepassingen](../get-started/requirements-applications.md) voor andere toepassingen.|Wanneer u de RMS-toepassing voor delen gebruikt, kunnen alle bestandstypen worden beveiligd met [systeemeigen of algemene beveiliging](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Zie de tabel in [Azure RMS-vereisten: Toepassingen](../get-started/requirements-applications.md) voor andere toepassingen.|
 |De minimaal ondersteunde versie van de Windows-client is Windows 7.|De minimaal ondersteunde versie van de Windows-client is Windows Vista Service Pack 2.|
 |Ondersteuning voor mobiele apparaten omvat Windows Phone, Android, iOS en Windows RT.<br /><br />E-mailondersteuning met Exchange ActiveSync IRM wordt ook ondersteund op alle platformen voor mobiele apparaten die ondersteuning bieden voor dit protocol.|Ondersteuning voor mobiele apparaten omvat Windows Phone, Android, iOS en Windows RT. Hiervoor is de [extensie voor mobiele apparaten voor Active Directory Rights Management Services](http://technet.microsoft.com/library/dn673574.aspx) vereist.<br /><br />E-mailondersteuning met Exchange ActiveSync IRM wordt ondersteund op alle platformen voor mobiele apparaten die ondersteuning bieden voor dit protocol.|
 |Ondersteunt Multi-Factor Authentication (MFA) voor computers en mobiele apparaten.<br /><br />Zie [Multi-factor authentication (MFA) and Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) (Multi-Factor Authentication (MFA) en Azure RMS) voor meer informatie.|Ondersteunt smartcardauthenticatie als IIS is geconfigureerd voor het aanvragen van certificaten.|
@@ -76,6 +76,6 @@ Zie [Migreren van AD RMS naar Azure Rights Management](../plan-design/migrate-fr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: ADAL-verificatie voor uw RMS-toepassing | Azure RMS
 description: Biedt een overzicht van het verificatieproces met ADAL
-keywords: authentication, RMS, ADAL
+keywords: verificatie, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -124,6 +124,6 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

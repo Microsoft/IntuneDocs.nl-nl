@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
+ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
 
 
 ---
@@ -43,29 +43,31 @@ Hier volgen enkele voorbeelden van hoe u de RMS-toepassing voor delen zou kunnen
 
 ## Wat wilt u doen?
 > [!NOTE]
-> Voor meer technische informatie, zoals ondersteunde bestandstypen en hoe u deze toepassing kunt installeren op een bedrijfsnetwerk, raadpleegt u de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](sharing-app-admin-guide.md).
+> Voor meer technische informatie, zoals [ondersteunde bestandstypen](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) en [hoe u deze toepassing kunt installeren op een bedrijfsnetwerk](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application), raadpleegt u de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](sharing-app-admin-guide.md).
 
--   [Download en installeer de toepassing voor delen](install-sharing-app.md)
+- [Download en installeer de toepassing voor delen](install-sharing-app.md)
 
--   [Een bestand op een apparaat beveiligen (in-place beveiligen)](sharing-app-protect-in-place.md)
+- [Een bestand op een apparaat beveiligen (in-place beveiligen)](sharing-app-protect-in-place.md)
 
--   [Een bestand beveiligen dat u per e-mail deelt](sharing-app-protect-by-email.md)
+- [Een bestand beveiligen dat u per e-mail deelt](sharing-app-protect-by-email.md)
 
--   [Uw documenten bijhouden en de toegang hiertoe intrekken](sharing-app-track-revoke.md)
+- [Machtigingen voor beveiligde bestanden wijzigen](sharing-app-reprotect-files.md)
 
--   [Weergeven en gebruiken van bestanden die zijn beveiligd](sharing-app-view-use-files.md)
+- [Uw documenten bijhouden en de toegang hiertoe intrekken](sharing-app-track-revoke.md)
 
--   [Beveiliging van een bestand verwijderen](sharing-app-remove-protection.md)
+- [Weergeven en gebruiken van bestanden die zijn beveiligd](sharing-app-view-use-files.md)
 
--   [Sneltoetsen gebruiken](sharing-app-keyboard-shortcuts.md)
+- [Beveiliging van een bestand verwijderen](sharing-app-remove-protection.md)
 
--   [Geef de instellingen op in het dialoogvenster](sharing-app-dialog-box.md)
+- [Sneltoetsen gebruiken](sharing-app-keyboard-shortcuts.md)
 
-
-
-
+- [Geef de instellingen op in het dialoogvenster](sharing-app-dialog-box.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+
+
+<!--HONumber=Jul16_HO3-->
 
 

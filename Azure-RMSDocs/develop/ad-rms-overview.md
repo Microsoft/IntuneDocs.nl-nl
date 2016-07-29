@@ -1,10 +1,10 @@
 ---
-title: Overzicht | Azure RMS
+title: Overzicht - RMS SDK 2.1 | Azure RMS
 description: Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,17 +13,16 @@ ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+translationtype: Human Translation
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: 53571aff357bbc0cdcb44ce9b403c68719abbaff
 
 
 ---
 
 # Overzicht
 
-Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik. Via uw toepassingen met rechten kunnen eigenaren van inhoud definiëren wie hun inhoud kan openen, wijzigen, afdrukken, doorsturen of hiermee andere acties kan uitvoeren.
-
-## Overzicht
+Rights Management Services SDK 2.1 is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik. Via uw toepassingen met rechten kunnen eigenaren van inhoud definiëren wie hun inhoud kan openen, wijzigen, afdrukken, doorsturen of hiermee andere acties kan uitvoeren.
 
 AD RMS bestaat uit zowel [server-](ad-rms-server.md) als [client](ad-rms-client.md)onderdelen. De server, die draait op Azure of Windows Server, bestaat uit meerdere webservices.
 
@@ -62,6 +61,6 @@ De overige onderwerpen in deze sectie hebben betrekking op de RMS-architectuur e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

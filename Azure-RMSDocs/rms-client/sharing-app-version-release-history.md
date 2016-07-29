@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/17/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
-ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+translationtype: Human Translation
+ms.sourcegitcommit: e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf
+ms.openlocfilehash: ee2860da964b52bc41c0aea219110453f024b954
 
 
 ---
@@ -27,7 +28,17 @@ Het Rights Management-team werkt de Rights Management-toepassing voor delen rege
 Versies vóór 1 januari 2015 worden niet weergegeven.
 
 > [!NOTE]
-> [!NOTE]Hebt u feedback of een vraag over de RMS-toepassing voor delen? Stuur dan een e-mail naar [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> Hebt u feedback of een vraag over de RMS-toepassing voor delen? Stuur dan een e-mail naar [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+
+## Versie 1.0.2217.0
+
+**Uitgebracht**: 13-07-2016
+
+**Oplossingen**:
+
+- Gebruikers in organisaties met federatie en meervoudige verificatie ontvangen niet langer de foutmelding 0x800704DC wanneer ze inhoud beveiligen.
+
+
 
 ## Versie 1.0.2191.0
 **Uitgebracht**: 16-06-2016
@@ -121,6 +132,6 @@ Versies vóór 1 januari 2015 worden niet weergegeven.
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

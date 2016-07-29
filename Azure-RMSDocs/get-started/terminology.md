@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7d6e1d818c8eb4f6d2e4e7d320e44c7f159eabb4
+ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
+ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 
 
 ---
@@ -31,6 +31,7 @@ Weet u niet wat aan Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_
 |activeren|Met deze optie schakelt u de service [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] in zodat een organisatie gegevensbeveiliging kan toevoegen aan hun documenten en e-mailberichten. Met deze actie schakelt u ook Rights Management-functies in Exchange Online en SharePoint Online in.|
 |Active Directory Rights Management Services|Vaak afgekort tot *AD RMS*.<br /><br />Een Windows Server-rol die met versleuteling en beleidsregels gegevensbeveiliging biedt voor het beveiligen van documenten, bestanden en e-mailberichten.|
 |AD RMS|Zie *Active Directory Rights Management Services*.|
+|Azure Information Protection|In de preview-versie wordt gebruikgemaakt van classificatie, labels, en beveiliging om documenten en e-mailberichten beter te beveiligen. Azure Rights Management biedt beveiliging door middel van versleutelings-, identiteits- en autorisatiebeleid.|
 |Azure Rights Management|Vaak afgekort tot *Azure RMS*.<br /><br />Een Azure-service die met versleuteling en beleidsregels gegevensbeveiliging biedt voor het beveiligen van documenten, bestanden en e-mailberichten.  Ook wel bekend als *Azure Rights Management-service*. Vorige namen zijn onder andere:<br /><br />*Windows Azure Active Directory Rights Management*: vaak afgekort tot Windows Azure AD Rights Management Service.<br /><br />*RMS Online*: de oorspronkelijke, voorgestelde naam, die soms wordt weergegeven in foutberichten en vermeldingen in logboekbestanden.|
 |Azure RMS|Zie *Azure Rights Management*.|
 |BYOK|Zie *bring your own key*.|
@@ -71,6 +72,6 @@ Weet u niet wat aan Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

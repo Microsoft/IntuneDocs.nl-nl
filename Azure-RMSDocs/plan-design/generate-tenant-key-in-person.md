@@ -13,8 +13,8 @@ ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8e77298121a84f6feb16a992da81bd9c3bb7b20b
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
 *Van toepassing op: Azure Rights Management, Office 365*
 
 
-Gebruik de volgende procedures als u hebt besloten om [uw eigen tenantsleutel te beheren](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) en u deze niet via internet wilt overdragen, maar dit in plaats daarvan persoonlijk wilt doen.
+Gebruik de volgende procedures als u hebt besloten om [uw eigen tenantsleutel te beheren](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok) en u deze niet via internet wilt overdragen, maar dit in plaats daarvan persoonlijk wilt doen.
 
 ## Uw tenantsleutel genereren
 Voer de volgende drie stappen uit om uw eigen tenantsleutel te genereren:
@@ -151,6 +151,6 @@ U hebt nu alle instructies gevolgd die nodig zijn om uw eigen sleutel persoonlij
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
 
 
 ---
@@ -559,7 +559,7 @@ Hoewel u met het SharePoint-beheercentrum IRM niet kunt configureren voor OneDri
 
     3.  Zoek naar `$webUrls` en vervang de voorbeeldwaarden door de web-URL’s van OneDrive voor Bedrijven van uw gebruikers. U kunt hierbij naar behoefte waarden invoeren of verwijderen.
 
-        U kunt ook de opmerkingen in het script volgen over hoe u een CSV-bestand kunt importeren met alle URL's die u wilt configureren.  Er is nog een ander voorbeeldscript beschikbaar voor het automatisch zoeken en extraheren van de URL's om dit CSV-bestand in te vullen. Als u hier klaar voor bent, vouwt u direct na deze stappen de sectie [Extra script voor uitvoer van alle URL’s van OneDrive voor Bedrijven naar een CSV-bestand](#BKMK_Script_OD4B_URLS) uit.
+        U kunt ook de opmerkingen in het script volgen over hoe u een CSV-bestand kunt importeren met alle URL's die u wilt configureren.  Er is nog een ander voorbeeldscript beschikbaar voor het automatisch zoeken en extraheren van de URL's om dit CSV-bestand in te vullen. Als u klaar bent voor deze stap, gaat u naar de sectie [Extra script om alle URL's van OneDrive voor Bedrijven naar een .CSV-bestand uit te voeren](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file), direct na deze stappen.
 
         De indeling van de web-URL voor OneDrive voor Bedrijven van de gebruikers, is als volgt: https://*&lt;tenantnaam&gt;*-my.sharepoint.com/personal/*&lt;gebruikersnaam&gt;*_*&lt;tenantnaam&gt;*_com
 
@@ -1106,6 +1106,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

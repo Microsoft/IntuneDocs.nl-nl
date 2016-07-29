@@ -1,10 +1,10 @@
 ---
-title: Overzicht | Azure RMS
+title: Overzicht - RMS SDK 4.2 | Azure RMS
 description: AD RMS en Azure RMS bieden technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,18 +13,16 @@ ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+translationtype: Human Translation
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: d55a16d7ff6f11db3c02d3494dcdd088bffc8500
 
 
 ---
 
 # Overzicht
 
-
-Microsoft Rights Management Services (AD RMS en Azure RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik. Via uw toepassingen met rechten kunnen eigenaren van inhoud definiëren wie hun inhoud kan openen, wijzigen, afdrukken, doorsturen of hiermee andere acties kan uitvoeren.
-
-De Microsoft Rights Management SDK 4.2 is beschikbaar voor verschillende platforms. Deze Software Developer Kit (SDK) (een soort framework) is ontworpen voor clientcomputers en apparaten en heeft als doel toegang tot en gebruik van informatie die in toepassingen wordt gebruikt, te beveiligen met rechten. De SDK's voor deze platforms bieden een eenvoudige API voor toepassingsontwikkelaars, zodat ze digitale inhoud kunnen beveiligen of gebruiken, sjablonen kunnen ophalen en beleid kunnen ophalen van een server. Ze kunnen er ook andere gerelateerde rechtenbeheertaken mee uitvoeren.
+Microsoft Rights Management SDK 4.2 is een technologie voor de beveiliging van informatie en is beschikbaar voor verschillende platforms.  Het bevat een softwareontwikkelkit (SDK) of een framework dat is afgestemd op clientcomputers en -apparaten om de toegang tot en het gebruik van de informatie tussen toepassingen die door rechten zijn beschermd, te beveiligen. De SDK's voor deze platforms bieden een eenvoudige API voor toepassingsontwikkelaars, zodat ze digitale inhoud kunnen beveiligen of gebruiken, sjablonen kunnen ophalen en beleid kunnen ophalen van een server. Ze kunnen er ook andere gerelateerde rechtenbeheertaken mee uitvoeren.
 
 Voor meer informatie over de momenteel ondersteunde platforms raadpleegt u de portal voor ontwikkelaarsdocumentatie voor de [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md).
 
@@ -66,6 +64,6 @@ Gebruik de handleiding [Aan de slag](get-started.md) om te beginnen met uw appar
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

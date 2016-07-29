@@ -1,7 +1,7 @@
 ---
 title: Azure Portal gebruiken voor het configureren van RMS-verificatie | Azure RMS
 description: Biedt een overzicht van het verificatieproces met ADAL
-keywords: authentication, RMS, ADAL
+keywords: verificatie, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -62,6 +62,6 @@ Het volgende codefragment is afkomstig uit een groter voorbeeld van code voor mo
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

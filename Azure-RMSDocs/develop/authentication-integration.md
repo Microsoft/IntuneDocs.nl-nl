@@ -4,7 +4,7 @@ description: Beschrijft de beginselen van gebruikersverificatie voor uw app met 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9
 
 
 ---
@@ -29,6 +29,9 @@ Gebruikersverificatie is een essentiële stap voor de communicatie tussen de app
 
 ## Registratie via Azure Portal
 Volg eerst deze handleiding voor het configureren van de registratie van uw app via Azure Portal: [Azure RMS configureren voor ADAL verificatie](adal-auth.md). Zorg ervoor dat u de **client-id** en **omleidings-URI** uit dit proces kopieert en opslaat voor later gebruik.
+
+## Uw Rights Managagment-licentieovereenkomst (RMLA) voltooien
+U moet een RMLA met het Microsoft Rights Management-team voltooien voordat u uw toepassing kunt implementeren. Zie de eerste sectie van het onderwerp, [Implementeren voor productie - Een productielicentieovereenkomst aanvragen](deploying-your-application.md), voor meer informatie.
 
 ## Gebruikersverificatie implementeren voor uw app
 Elke API voor RMS heeft een callbackfunctie die moet worden geïmplementeerd om gebruikersverificatie in te schakelen. RMS SDK 4.2 maakt vervolgens gebruik van uw implementatie van de callback als u geen toegangstoken biedt, wanneer uw toegangstoken moet worden vernieuwd of wanneer het toegangstoken is verlopen.
@@ -271,6 +274,6 @@ en is afkomstig uit de vorige registratiestap op Azure Portal.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: Azure RMS configureren voor ADAL-verificatie | Azure RMS
 description: Bevat de stappen voor het configureren van Azure ADAL-verificatie
-keywords: authentication, RMS, ADAL
+keywords: verificatie, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -109,6 +109,6 @@ Na het aanmelden voor Microsoft Azure:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

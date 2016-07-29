@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+translationtype: Human Translation
+ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
+ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
 
 
 ---
@@ -27,6 +28,8 @@ ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 Gebruik de volgende informatie als u verantwoordelijk bent voor de Microsoft Rights Management-toepassing voor delen op een bedrijfsnetwerk, of als u meer technische informatie wilt dan wordt vermeld in de [gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md) of de [veelgestelde vragen over de Microsoft Rights Management-toepassing voor delen voor Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
 De RMS-toepassing voor delen is het meest geschikt voor gebruik met Azure RMS, omdat deze implementatieconfiguratie ondersteuning biedt voor het verzenden van beveiligde bijlagen naar gebruikers in een andere organisatie, en opties, zoals e-mailmeldingen en documenttracking met intrekken van de toegang.  Met een aantal beperkingen kan het echter ook worden gebruikt met de on-premises versie, AD RMS. Zie [Azure Rights Management en AD RMS vergelijken](../understand-explore/compare-azure-rms-ad-rms.md) voor een uitgebreide vergelijking van functies die worden ondersteund door Azure RMS en AD RMS. Zie [Migreren van AD RMS naar Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md) als u over AD RMS beschikt en wilt migreren naar Azure RMS.
+
+Zie [Technisch overzicht en beveiligingsdetails voor de Rights Management-toepassing](sharing-app-admin-guide-technical.md) voor aanvullende technische informatie met uitleg over het verschil tussen de beveiligingsniveaus (systeemeigen en algemeen), de ondersteunde bestandstypen en bestandsextensies, en het wijzigen van het standaardbeveiligingsniveau. 
 
 ## Automatische implementatie voor de Microsoft Rights Management-toepassing voor delen
 De Windows-versie van de RMS-toepassing voor delen ondersteunt een scriptinstallatie, waardoor het geschikt is voor bedrijfsimplementaties.
@@ -115,13 +118,13 @@ Zie de sectie [Controleren of de installatie is geslaagd](#verifying-installatio
         > [!NOTE]
         > Met deze opdracht moet u mogelijk uw referenties invoeren voor Azure. Als de computer niet is toegevoegd aan een domein, dan wordt u gevraagd om dit te doen. Als de computer is toegevoegd aan een domein, kan het hulpprogramma mogelijk in de cache opgeslagen referenties gebruiken.
 
-2.  Voer de volgende opdracht met verhoogde bevoegdheden uit op elke computer waarop u de RMS-toepassing voor delen installeert:
+2.  Voer de volgende opdracht met verhoogde bevoegdheden één keer uit op elke computer waarop u de RMS-toepassing voor delen installeert:
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  Op elke computer waarop u de RMS-toepassing voor delen wilt installeren, moeten gebruikers de volgende opdracht uitvoeren (heeft geen verhoogde bevoegdheden nodig). Er zijn verschillende manieren om dit te bereiken, zoals gebruikers vragen om de opdracht uit te voeren (door bijvoorbeeld een koppeling in een e-mailbericht te plaatsen of een koppeling op een helpdeskportal) of u kunt deze toevoegen aan hun aanmeldingsscript:
+3.  Op elke computer waarop u de RMS-toepassing voor delen wilt installeren, moet elke gebruiker de volgende opdracht uitvoeren (heeft geen verhoogde bevoegdheden nodig). Er zijn verschillende manieren om dit te bereiken, zoals gebruikers vragen om de opdracht uit te voeren (door bijvoorbeeld een koppeling in een e-mailbericht te plaatsen of een koppeling op een helpdeskportal) of u kunt deze toevoegen aan hun aanmeldingsscript:
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -366,6 +369,6 @@ Zie [Technisch overzicht voor de Rights Management-toepassing voor delen](sharin
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 ---
@@ -32,14 +32,14 @@ Gebruik deze informatie om u te helpen bij de keuze van de opties in de RMS-toep
 
 Naast de opties die u kunt kiezen, vraagt u zich mogelijk ook de volgende zaken af:
 
--   [Wat is het .ppdf-bestand dat automatisch wordt gemaakt?](#what-s-the-ppdf-file-that-s-automatically-created-)
+-   [Wat is het .ppdf-bestand dat automatisch wordt gemaakt?](#what-s-the-ppdf-file-that-s-automatically-created)
 
--   [Wat is het verschil tussen algemene beveiliging en ingebouwde (systeemeigen) beveiliging?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)
+-   [Wat is het verschil tussen algemene beveiliging en ingebouwde (systeemeigen) beveiliging?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)
 
 |Optie|Beschrijving|
 |----------|---------------|
 |**GEBRUIKERS**|Als u nog geen e-mailadres hebt opgegeven via Outlook, typt u de e-mailadressen van de mensen van wie u wilt dat zij het bestand kunnen openen.<br /><br />Houd er rekening mee dat de RMS-app voor delen niet alle e-mailadressen ondersteunt.<br /><br />Als uw organisatie gebruikmaakt van de on-premises versie van Rights Management (AD RMS), kunt u alleen de e-mailadressen opgeven van mensen uit uw organisatie. Als dit van toepassing is en u probeert om een extern e-mailadres op te geven, krijgt u een bericht te zien waarin staat dat u met uw bedrijfsconfiguratie beveiligde inhoud alleen binnen het bedrijf kunt delen. <br /><br /> Als uw organisatie Azure RMS gebruikt, kunnen de e-mailadressen die u opgeeft, toebehoren aan personen binnen uw organisatie of aan personen in een andere organisatie.<br /><br />Voorbeeld: **janetm@contoso.com; p.dover@fabrikam.com**<br /><br />Persoonlijke e-mailadressen worden momenteel niet ondersteund door de RMS-toepassing voor delen.|
-|**Algemene beveiliging**|Als deze optie is geselecteerd, betekent dit dat het geselecteerde bestand niet door het systeem kan worden beveiligd. Zie voor meer informatie [Wat is het verschil tussen algemene beveiliging en ingebouwde (systeemeigen) beveiliging?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) op deze pagina.|
+|**Algemene beveiliging**|Als deze optie is geselecteerd, betekent dit dat het geselecteerde bestand niet door het systeem kan worden beveiligd. Zie voor meer informatie [Wat is het verschil tussen algemene beveiliging en ingebouwde (systeemeigen) beveiliging?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection) op deze pagina.|
 |**Lezer: alleen weergeven**<br /><br />**Revisor: weergeven en bewerken**<br /><br />**Mede-auteur: weergeven, bewerken, kopiëren en afdrukken**<br /><br />**Mede-eigenaar: alle machtigingen**<br /><br />Opmerking: bij deze opties staat er een rond pictogram voor de naam; dit staat voor een wereldbol. Dit pictogram wordt gebruikt omdat u meestal een van deze opties selecteert wanneer u een bijlage stuurt naar iemand in een andere organisatie.|Selecteer een van deze opties als u de rechten voor het beveiligde document wilt definiëren. Klik op elke optie om een beschrijving weer te geven.<br /><br />Als u voor een van deze opties kiest, hebben alleen de personen die u opgeeft in **GEBRUIKERS**, de rechten die u opgeeft voor het openen en gebruiken van het document. Als ze het document dan bijvoorbeeld naar iemand anders verzenden, kan het niet worden geopend.|
 |Beleidssjablonen die de beheerder configureert.<br /><br />Als de naam van uw bedrijf bijvoorbeeld Contoso Ltd is: **Contoso Ltd - alleen vertrouwelijke weergave**<br /><br />Opmerking: bij deze opties staat er een vierkant pictogram voor de naam; dit staat voor een kantoorgebouw. Dit pictogram wordt gebruikt omdat u meestal een van deze opties selecteert wanneer u een bijlage stuurt naar iemand in uw eigen organisatie.|Wanneer u een document deelt met personen die voor uw organisatie werken, ziet u welke beleidssjablonen die de beheerder configureert, er beschikbaar zijn. Selecteer een van deze opties als het document niet buiten uw organisatie mag worden gedeeld.<br /><br />Als u een van deze opties kiest, definieert de beheerder de rechten voor het document en bepaalt deze wie het mag openen.|
 |**Deze documenten laten verlopen op**|Selecteer deze optie alleen voor tijdsgebonden bestanden die de gebruikers die u hebt geselecteerd niet kunnen openen na de datum die u opgeeft. U kunt het oorspronkelijke bestand nog wel openen, maar pas na middernacht (in uw huidige tijdzone) op de dag die u hebt opgegeven. Anderen kunnen het bestand niet openen.<br /><br />Deze optie is niet beschikbaar als u een beleidssjabloon selecteert die de beheerder configureert.|
@@ -71,7 +71,7 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 -   [Voorbeelden voor het gebruik van de RMS-toepassing voor delen](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zie ook
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
@@ -79,6 +79,6 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

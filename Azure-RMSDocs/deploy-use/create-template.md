@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
-ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
+ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 
 ---
@@ -26,6 +26,8 @@ ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
 
 
 U maakt en beheert aangepaste sjablonen in de klassieke Azure-portal. U kunt dit rechtstreeks doen vanuit de klassieke Azure-portal of u kunt zich aanmelden bij het Office 365-beheercentrum en de **Geavanceerde functies** voor Rights Management kiezen. U wordt dan doorgestuurd naar de klassieke Azure-portal.
+
+U moet een globale beheerder zijn om sjablonen in de klassieke Azure-portal te kunnen aanmaken en beheren. Als u globale beheerder bent voor Azure RMS voor andere gebruikers, kunnen zij ook sjablonen maken en beheren, maar dan moeten ze wel gebruikmaken van [PowerShell](configure-templates-with-powershell.md). Zie [Moet ik een globale beheerder zijn om Azure RMS te configureren of kan ik delegeren aan andere beheerders?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) voor meer informatie. 
 
 Gebruik de volgende procedures om aangepaste sjablonen voor Rights Management te maken, configureren en publiceren.
 
@@ -165,6 +167,6 @@ Breng de gewenste wijzigingen aan in de sjabloon, selecteer deze en voer vervolg
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

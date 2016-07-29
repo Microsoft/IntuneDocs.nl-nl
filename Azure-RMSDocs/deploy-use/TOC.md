@@ -34,8 +34,9 @@
 ### [Windows PowerShell voor Azure RMS installeren](install-powershell.md)
 # [De client implementeren en gebruiken](/rights-management/rms-client/use-client)
 # [Apps ontwikkelen en aanpassen](/rights-management/develop/developers-guide)
+# [Azure Information Protection (preview)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

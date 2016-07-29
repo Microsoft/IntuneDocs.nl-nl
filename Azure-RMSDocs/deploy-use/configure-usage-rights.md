@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/16/2016
+ms.date: 07/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
-ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+translationtype: Human Translation
+ms.sourcegitcommit: 4d6e0af200410b5af4e290ee0e6f94725916ecde
+ms.openlocfilehash: e9f2fe16494af2286d8ed77d0894bb5229e7c246
 
 
 ---
@@ -244,8 +245,8 @@ Gebruik de volgende tabel voor een lijst van deze machtigingsniveaus en een voll
 |---------------------|----------------|---------------------------------|
 |Viewer|Klassieke Azure-portal<br /><br />Rights Management-toepassing voor delen voor Windows|Weergeven, Openen, Lezen; Antwoorden; Allen beantwoorden|
 |Revisor|Klassieke Azure-portal<br /><br />Rights Management-toepassing voor delen voor Windows|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Antwoorden [[1]](#footnote-1); Allen beantwoorden[[1]](#footnote-1); Doorsturen[[1]](#footnote-1)|
-|Medeauteur|Klassieke Azure-portal<br /><br />Rights Management-toepassing voor delen voor Windows|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Kopiëren; Rechten weergeven; Rechten wijzigen; Macro's toestaan; Opslaan als, Exporteren; Afdrukken; Antwoorden[[1]](#footnote-1); Allen beantwoorden [[1]](#footnote-1); Doorsturen [[1]](#footnote-1)|
-|Mede-eigenaar|Klassieke Azure-portal<br /><br />Rights Management-toepassing voor delen voor Windows|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Kopiëren; Rechten weergeven; Rechten wijzigen; Macro's toestaan; Opslaan als, Exporteren; Afdrukken; Antwoorden[[1]](#footnote-1); Allen beantwoorden [[1]](#footnote-1); Doorsturen [[1]](#footnote-1); Volledig beheer|
+|Medeauteur|Klassieke Azure-portal<br /><br />Rights Management-toepassing voor delen voor Windows|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Kopiëren; Rechten weergeven; Macro's toestaan; Opslaan als, Exporteren; Afdrukken; Antwoorden[[1]](#footnote-1); Allen beantwoorden [[1]](#footnote-1); Doorsturen [[1]](#footnote-1)|
+|Mede-eigenaar|Klassieke Azure-portal<br /><br />Rights Management-toepassing voor delen voor Windows|Weergeven, Openen, Lezen; Opslaan; Inhoud bewerken, Bewerken; Kopiëren; Rechten weergeven; Macro's toestaan; Opslaan als, Exporteren; Afdrukken; Antwoorden[[1]](#footnote-1); Allen beantwoorden [[1]](#footnote-1); Doorsturen [[1]](#footnote-1); Volledige controle|
 
 ----
 
@@ -288,6 +289,6 @@ Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling be
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -10,11 +10,12 @@
 ### [Rights Management-toepassing voor delen voor Windows](sharing-app-windows.md)
 #### [Rights Management-toepassing voor delen: versiegeschiedenis van release](sharing-app-version-release-history.md)
 #### [Beheerdershandleiding voor de Rights Management-toepassing voor delen](sharing-app-admin-guide.md)
-##### [Technisch overzicht](sharing-app-admin-guide-technical.md)
+##### [Technisch overzicht en beveiligingsdetails](sharing-app-admin-guide-technical.md)
 #### [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 ##### [Downloaden en installeren](install-sharing-app.md)
 ##### [Een bestand op een apparaat beveiligen](sharing-app-protect-in-place.md)
 ##### [Een bestand beveiligen dat u per e-mail deelt](sharing-app-protect-by-email.md)
+##### [Machtigingen voor beveiligde bestanden wijzigen](sharing-app-reprotect-files.md)
 ##### [Uw documenten bijhouden en de toegang hiertoe intrekken](sharing-app-track-revoke.md)
 ##### [Beveiligde bestanden weergeven en gebruiken](sharing-app-view-use-files.md)
 ##### [Beveiliging opheffen](sharing-app-remove-protection.md)
@@ -22,8 +23,9 @@
 ##### [Opties in het dialoogvenster](sharing-app-dialog-box.md)
 ### [Privacyverklaring voor Microsoft Rights Management in toepassingen met RMS](privacy-statement-rms-enlightened-applications.md)
 # [Apps ontwikkelen en aanpassen](/rights-management/develop/developers-guide)
+# [Azure Information Protection (preview)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

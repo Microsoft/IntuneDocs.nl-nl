@@ -32,6 +32,6 @@ De Android-API heeft twee naamruimten die betrekking hebben op de primaire funct
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

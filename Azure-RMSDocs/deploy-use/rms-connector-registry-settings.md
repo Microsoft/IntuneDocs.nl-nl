@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
+ms.sourcegitcommit: 935c354f9bcd3be23a953cdeb08c7860257637d6
+ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 
 
 ---
@@ -43,7 +43,7 @@ Instructies voor het gebruik van deze instellingen:
 
 -   *ConnectorFQDN* is de naam van de taakverdeling die u voor deze connector hebt opgegeven in DNS. Bijvoorbeeld **rmsconnector.contoso.com**.
 
--   Gebruik het voorvoegsel HTTPS voor de connector-URL als u de connector hebt geconfigureerd om via HTTPS te communiceren met uw lokale servers. Zie voor meer informatie de sectie [De RMS-connector configureren voor gebruik van HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) in dit onderwerp. De Microsoft RMS-URL's maken altijd gebruik van HTTPS.
+-   Gebruik het voorvoegsel HTTPS voor de connector-URL als u de connector hebt geconfigureerd om via HTTPS te communiceren met uw lokale servers. Zie voor meer informatie de sectie [De RMS-connector configureren voor gebruik van HTTPS](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https) in de hoofdinstructies. De Microsoft RMS-URL's maken altijd gebruik van HTTPS.
 
 
 ## Registerinstellingen voor Exchange 2016 of Exchange 2013
@@ -217,6 +217,6 @@ Instructies voor het gebruik van deze instellingen:
 Terug naar [De Azure Rights Management-connector implementeren](deploy-rms-connector.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

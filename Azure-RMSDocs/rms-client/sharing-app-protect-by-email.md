@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
 
 
 ---
@@ -72,7 +72,7 @@ Naast het delen van een beveiligd bestand via Outlook kunt u ook deze alternatie
 
     ![E-mailbericht voor Azure RMS](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    Vraagt u zich af: [Wat is het .ppdf-bestand dat automatisch wordt gemaakt?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
+    Vraagt u zich af: [Wat is het .ppdf-bestand dat automatisch wordt gemaakt?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
 4.  Optioneel: u kunt dit e-mailbericht zelf wijzigen. U kunt bijvoorbeeld het onderwerp of de tekst in het bericht wijzigen of tekst toevoegen.
 
@@ -86,13 +86,13 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 -   [Voorbeelden voor het gebruik van de RMS-toepassing voor delen](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zie ook
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

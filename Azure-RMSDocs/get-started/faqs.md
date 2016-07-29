@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
-ms.openlocfilehash: a3ed9e8de496741fae8904481edb1177762a12c0
+ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
+ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
 
 
 ---
@@ -198,9 +198,14 @@ Zie de sectie [Security, compliance, and regulatory requirements](../understand-
 
 -   Office 365-bibliotheek: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## Wat is er nieuw aan de nieuwe classificatie en labelingsfunctionaliteit?
+
+Deze functionaliteit in Azure Information Protection is nu beschikbaar voor openbare preview. Zie [Wat is Azure Information Protection preview?](../information-protection/what-is-information-protection.md) om de functionaliteit uit te proberen en een lijst met beschikbare resources te bekijken.
+
+
 ## Ik heb gehoord dat binnenkort een nieuwe versie beschikbaar is voor Azure RMS. Wanneer wordt deze versie uitgebracht?
 
-De technische documentatie bevat geen informatie over toekomstige versies. Dergelijke informatie en aankondigingen over versies vindt u in het [Enterprise Mobility and Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services). De laatste updates leest u via [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) op Twitter. Als u geïnteresseerd bent in een bepaalde Office-versie, kunt u ook een kijkje nemen in het [Office-blog[(https://blogs.office.com/).
+De technische documentatie bevat geen informatie over toekomstige versies. Dergelijke informatie en aankondigingen over versies vindt u in het [Enterprise Mobility and Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services). De laatste updates leest u via [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) op Twitter. Als u geïnteresseerd bent in een bepaalde Office-versie, kunt u ook een kijkje nemen in het [Office-blog](https://blogs.office.com/).
 
 ## Wat moet ik doen als ik mijn vraag hier niet vind?
 Gebruik de koppelingen en resources die worden vermeld in [Information and support for Azure Rights Management](information-support.md) (Informatie en ondersteuning voor Azure Rights Management).
@@ -219,6 +224,6 @@ Deze pagina met veelgestelde vragen wordt regelmatig bijgewerkt met nieuwe toevo
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

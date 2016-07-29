@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
-ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 
 ---
@@ -28,7 +28,7 @@ Gebruik de volgende tabel om bedrijfsvereisten of problemen te identificeren die
 
 |Vereiste of probleem|Opgelost door Azure RMS|
 |--------------------------|-----------------------|
-|Alle bestandstypen beveiligen|√ In de vorige implementatie van Rights Management konden alleen Office bestanden worden beveiligd, met systeemeigen beveiliging. Nu betekent [algemene beveiliging](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) dat alle bestandstypen worden ondersteund.|
+|Alle bestandstypen beveiligen|√ In de vorige implementatie van Rights Management konden alleen Office bestanden worden beveiligd, met systeemeigen beveiliging. [Algemene beveiliging](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) houdt in dat alle bestandstypen worden ondersteund.|
 |Overal bestanden beveiligen|√ Wanneer een bestand wordt opgeslagen naar een locatie ([in-place beveiligen](../rms-client/sharing-app-protect-in-place.md)), blijft de beveiliging van toepassing op het bestand, zelfs als dit wordt gekopieerd naar opslag die niet onder het beheer staat van IT, zoals een cloudopslagservice.|
 |Veilig bestanden delen via e-mail|√ Wanneer een bestand wordt gedeeld via e-mail ([beveiligd delen](../rms-client/sharing-app-protect-by-email.md)), wordt het bestand beveiligd als bijlage bij een e-mailbericht en worden instructies meegeleverd voor het openen van de beveiligde bijlage. De tekst van het e-mailbericht wordt niet versleuteld, zodat de ontvanger deze instructies altijd kan lezen. Het bijgevoegde document is echter beveiligd en alleen geautoriseerde gebruikers kunnen dit openen, zelfs als het e-mailbericht of het document wordt doorgestuurd naar anderen.|
 |Controleren en bewaken|√ U kunt van uw beveiligde bestanden [het gebruik controleren en bewaken](../deploy-use/log-analyze-usage.md), zelfs nadat deze bestanden de grenzen van uw organisatie verlaten.<br /><br />U werkt bijvoorbeeld voor het bedrijf Contoso, Ltd. U werkt met drie personen van het bedrijf Fabrikam, Inc. aan een gezamenlijk project. U e-mailt deze drie personen een document dat u beveiligt en beperkt tot alleen-lezen. Controle van Azure RMS kan de volgende informatie leveren:<br /><br />- Of de mensen die u hebt opgegeven bij Fabrikam het document hebben geopend en wanneer.<br /><br />- Of personen die u niet hebt opgegeven, (vergeefs) hebben geprobeerd het document te openen, mogelijk omdat het document is doorgestuurd of opgeslagen op een gedeelde locatie waartoe anderen toegang hebben.<br /><br />- Of een van de opgegeven personen (vergeefs) heeft geprobeerd het document af te drukken of te wijzigen.|
@@ -73,6 +73,6 @@ Zie [Azure RMS in action](what-admins-users-see.md) (Azure RMS in actie) om te z
 Zie [Hoe werkt Azure RMS?](how-does-it-work.md) als u meer technische informatie wilt over hoe Azure RMS werkt 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

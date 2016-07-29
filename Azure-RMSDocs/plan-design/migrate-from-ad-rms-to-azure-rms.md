@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 
 ---
@@ -85,7 +85,7 @@ Voordat u begint aan de migratie naar Azure RMS, moet u ervoor zorgen dat aan de
 
 Beperkingen:
 
--   Hoewel het migratieproces de migratie van uw SLC-sleutel (serverlicentiecertificaat) naar een HSM (Hardware Security Module) voor Azure RMS-server ondersteunt, biedt Exchange Online momenteel geen ondersteuning voor deze configuratie. Als u na de migratie naar Azure RMS wilt beschikken over de volledige functionaliteit van IRM met Exchange Online, moet uw Azure RMS-tenantsleutel worden [beheerd door Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-). U kunt IRM ook uitvoeren met een beperkte functionaliteit van Exchange Online wanneer uw Azure RMS-tenant wordt beheerd door uzelf (BYOK). Meer informatie over het gebruik van Exchange Online met Azure RMS vindt u in [Stap 6. Configureer IRM-integratie voor Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) met deze migratie-instructies.
+-   Hoewel het migratieproces de migratie van uw SLC-sleutel (serverlicentiecertificaat) naar een HSM (Hardware Security Module) voor Azure RMS-server ondersteunt, biedt Exchange Online momenteel geen ondersteuning voor deze configuratie. Als u na de migratie naar Azure RMS wilt beschikken over de volledige functionaliteit van IRM met Exchange Online, moet uw Azure RMS-tenantsleutel worden [beheerd door Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok). U kunt IRM ook uitvoeren met een beperkte functionaliteit van Exchange Online wanneer uw Azure RMS-tenant wordt beheerd door uzelf (BYOK). Meer informatie over het gebruik van Exchange Online met Azure RMS vindt u in [Stap 6. Configureer IRM-integratie voor Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) met deze migratie-instructies.
 
 -   Als u software en clients hebt die niet worden ondersteund door Azure RMS, kunnen deze geen inhoud beveiligen of gebruiken die wordt beveiligd met Azure RMS. Controleer het gedeelte over ondersteunde toepassingen en clients in het artikel [Vereisten voor Azure Rights Management](../get-started/requirements-azure-rms.md).
 
@@ -180,6 +180,6 @@ Voor het starten van de migratie gaat u naar [Fase 1 - configuratie aan serverzi
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 
