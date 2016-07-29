@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 90552435666b8f25c893fcffe8c8cf3355a5942d
-ms.openlocfilehash: 136d6e9d0c45a9779f87e32eed8288fe8ee3a622
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 1728a094dfaa869ae490e86d10ffe5ebcf4bfa5d
 
 
 ---
@@ -28,8 +28,8 @@ Windows Phone-toepassingen kunnen gebruikmaken van de Microsoft Rights Managemen
 Dit onderwerp leidt u door het instellen van een omgeving voor het maken van uw eigen nieuwe apps.
 
 -   [Vereisten](#prerequisites)
--   [Uw ontwikkelingsomgeving configureren](#configuring_your_development_environment)
--   [Zie ook](#see_also)
+-   [Uw ontwikkelingsomgeving configureren](#configuring-your-development-environment)
+-   [Zie ook](#see-also)
 
 ## Vereisten
 
@@ -93,6 +93,6 @@ U bent er nu klaar voor om uw eigen nieuwe Windows Phone-apps te maken.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 8de1886adf322439721274e23452af75b4db2e00
 
 
 ---
@@ -25,15 +25,15 @@ ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
 ## Wat is er nieuw?
 Microsoft Rights Management SDK 4.2 maakt het activeren van de RMS-toepassing een stuk eenvoudiger en biedt hierbij meer flexibiliteit. In dit onderwerp worden de belangrijke wijzigingen en functies in deze nieuwe versie van de RMS SDK beschreven.
 
--   [Nieuw voor juni 2016](#new_for_June_2016)
--   [Update van december 2015](#december_2015_update)
--   [Update van juli 2015: voegt ondersteuning toe voor Linux/C++-ontwikkeling](#july_2015_update_-_adds_support_for_linux___c___development)
--   [Update van mei 2015: voegt beheer voor logboekregistratie toe](#may_2015_update_-_adds_logging_control)
--   [Update van februari 2015: voegt ondersteuning toe voor Windows Store-apps](#february_2015_update_-_adds_windows_store_application_support)
--   [Update van januari 2015: voegt ondersteuning toe voor het WinPhone-platform](#january_2015_update_-_adds_winphone_platform_support)
--   [Update van oktober 2014: upgrade naar Microsoft RMS SDK 4.1](#october_2014_update_-_upgrade_to_microsoft_rms_sdk_4.1)
+-   [Nieuw voor juni 2016](#new-for-June-2016)
+-   [Update van december 2015](#december-2015-update)
+-   [Update van juli 2015: voegt ondersteuning toe voor Linux/C++-ontwikkeling](#july-2015-update-adds-support-for-linux-c-developm)
+-   [Update van mei 2015: voegt beheer voor logboekregistratie toe](#may-2015-update-adds-logging-control)
+-   [Update van februari 2015: voegt ondersteuning toe voor Windows Store-apps](#february-2015-update-adds-windows-store-application-support)
+-   [Update van januari 2015: voegt ondersteuning toe voor het WinPhone-platform](#january-2015-update-adds-winphone-platform-support)
+-   [Update van oktober 2014: upgrade naar Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
 -   [Opmerkingen bij de release](#release-notes)
--   [Veelgestelde vragen](#frequently_asked_questions)
+-   [Veelgestelde vragen](#frequently-asked-questions)
 
 ### Nieuw voor juni 2016
 
@@ -109,7 +109,7 @@ Deze release voegt ondersteuning toe voor Windows Store-apps en komt functioneel
 
 Deze release voegt ondersteuning toe voor het Windows Phone-besturingssysteem en komt functioneel overeen met de Android- en iOS-/OS X-release voor RMS SDK 4.1.
 
-## Update van oktober 2014: upgrade naar Microsoft RMS SDK 4.1
+### Update van oktober 2014: upgrade naar Microsoft RMS SDK 4.1
 
 Met versie 4.1 van de RMS SDK worden de volgende nieuwe functies toegevoegd voor Google Android en Apple iOS/OS X.
 
@@ -233,6 +233,6 @@ In deze sectie wordt informatie verstrekt over de huidige en vorige versies van 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
