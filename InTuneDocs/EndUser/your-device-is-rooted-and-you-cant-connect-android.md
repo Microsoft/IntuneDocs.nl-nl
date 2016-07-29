@@ -3,7 +3,7 @@ title: Uw Android-apparaat is geroot en u kunt geen verbinding maken | Microsoft
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 2f59f8675cc80e1f455347dc877b6678f1f9e470
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 # Uw Android-apparaat is geroot en u kunt geen verbinding maken
 
-Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Als u dit bericht ziet, is het niet mogelijk toegang tot bedrijfsbronnen te krijgen totdat het probleem is opgelost. 
+Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Als u dit bericht ziet, is het niet mogelijk toegang tot bedrijfsbronnen te krijgen totdat het probleem is opgelost.
 
 Als u niet van mening bent dat u opzettelijk uw apparaat hebt geroot, moet u deze andere redenen waarom het apparaat kan zijn geroot bekijken:
 
@@ -36,6 +36,7 @@ Als u niet van mening bent dat u opzettelijk uw apparaat hebt geroot, moet u dez
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

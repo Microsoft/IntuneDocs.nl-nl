@@ -3,7 +3,7 @@ title: Toegang tot zakelijke e-mail via e-mailprofielen | Microsoft Intune
 description: Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten.
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -82,7 +82,7 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel. De gebruiker moet dit opg
     |**Aantal dagen e-mail voor synchronisatie**|De periode waarvoor u e-mail wilt synchroniseren, of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.|
     |**Synchronisatieschema** (Samsung KNOX, Windows Phone 8 en hoger, Windows 10)|Selecteer het schema op basis waarvan apparaten gegevens synchroniseren met de Exchange-server. Selecteer **Wanneer berichten binnenkomen** als u gegevens meteen wilt synchroniseren wanneer ze worden ontvangen of selecteer **Handmatig** als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.|
     |**SSL gebruiken**|Gebruik Secure Sockets Layer-communicatie (SSL) wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server.<br /><br />Voor apparaten met Samsung KNOX 4.0 of hoger moet u het SSL-certificaat van uw Exchange-server exporteren en als Android Trusted Certificate Profile implementeren in Intune. Intune biedt geen ondersteuning voor toegang tot dit certificaat als het op een andere manier is geïnstalleerd op de Exchange-server.|
-    |**Inhoudtype voor synchronisatie**|Selecteer de inhoudstypen die u wilt synchroniseren met apparaten.| 
+    |**Inhoudtype voor synchronisatie**|Selecteer de inhoudstypen die u wilt synchroniseren met apparaten.|
     |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mail-app (bijvoorbeeld om bestanden aan e-mail toe te voegen).|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

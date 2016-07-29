@@ -3,7 +3,7 @@ title: Nalevingsbeleid voor apparaten | Microsoft Intune
 description: In dit onderwerp wordt uitgelegd wat het nalevingsbeleid voor apparaten is en hoe deze beleidsregels werken.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: f34ff402ae1012a471219647e94bc1f5225a6f07
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: dfa123266222004b6c6e4f7b21446b96be444d0b
 
 
 ---
@@ -62,6 +62,6 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Een Package Family Name (PFN) voor VPN per app zoeken |Microsoft Intune
 description: Een PFN zoeken, zodat u VPN per app kunt configureren.
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
-ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 0bbb8aef7929ac09ef5f6a5a466d66b5df03e921
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
 
 Er zijn twee manieren om een PFN te zoeken, zodat u VPN per app kunt configureren.
 
-## Een PFN zoeken voor een app die is geïnstalleerd op een Windows 10-computer 
+## Een PFN zoeken voor een app die is geïnstalleerd op een Windows 10-computer
 
 Als de app waarmee u werkt, al is geïnstalleerd op een Windows 10-computer, kunt u de PowerShell-cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) gebruiken om de PFN op te halen.
 
@@ -74,7 +74,7 @@ Hier vindt u de informatie die is opgehaald voor OneNote:
 4.  Plak de URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` in een ander tabblad en vervang `<app id>` door de app-id die u hebt verkregen via https://www.microsoft.com/nl-nl/store/apps (reeks letters aan het einde van de URL in stap 3). In het voorbeeld voor OneNote plakt u het volgende: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 In Edge wordt de gewenste informatie weergegeven. In Internet Explorer klikt u op **Openen** om de informatie weer te geven. De PFN-waarde wordt weergegeven op de eerste regel. De resultaten voor het voorbeeld zien er als volgt uit:
- 
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -85,7 +85,6 @@ In Edge wordt de gewenste informatie weergegeven. In Internet Explorer klikt u o
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

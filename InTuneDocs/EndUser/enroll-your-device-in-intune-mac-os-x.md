@@ -3,7 +3,7 @@ title: Uw Mac OS X-apparaat registreren bij Intune | Microsoft Intune
 description: Informatie over hoe u een Mac OS X-apparaat bij Intune kunt inschrijven
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ Ga als volgt te werk om uw Mac OS X-apparaat te registreren:
 
 2.  Tik op **Dit apparaat is niet geregistreerd of kan niet worden geïdentificeerd door de bedrijfsportal**.
 
-    ![apparaat-niet-geregistreerd](./media/1-macosx-enroll-tap-enroll.png) 
+    ![apparaat-niet-geregistreerd](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Tik op **Installeren** om uw apparaat te registreren.
 
-    ![tik-op-installeren-om-te-registreren](./media/2-macosx-enroll--install-button.png) 
+    ![tik-op-installeren-om-te-registreren](./media/2-macosx-enroll--install-button.png)
 
 4.  Tik in het dialoogvenster **Beheerprofiel installeren** op **Installeren**. Als er een dialoogvenster wordt weergegeven waarin u wordt gevraagd uw referenties in te voeren, voert u uw gebruikersnaam en wachtwoord in en tikt u op **Doorgaan** &gt; **Installeren**.
 
-    ![installeren-beheerprofiel](./media/3-macosx-enroll-tap-install.png) 
+    ![installeren-beheerprofiel](./media/3-macosx-enroll-tap-install.png)
 
     Wanneer u klaar bent met het registreren, ziet u een beheerprofielpagina waarop wordt aangegeven dat uw profiel is geverifieerd.
 
-    ![beheerprofiel-geverifieerd](./media/4-macosx-enroll-done.png) 
+    ![beheerprofiel-geverifieerd](./media/4-macosx-enroll-done.png)
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
@@ -54,6 +54,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

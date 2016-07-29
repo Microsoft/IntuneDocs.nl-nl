@@ -3,7 +3,7 @@ title: BitLocker is niet ingeschakeld op het apparaat | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 8d07af5eb012851d88a399f8488116387d21053a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 476611020c249f7993fd5bd295cbc73657cd659e
 
 
 ---
@@ -29,6 +29,7 @@ Uw organisatie vereist dat u BitLocker inschakelt. Dit is software waarmee uw sc
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

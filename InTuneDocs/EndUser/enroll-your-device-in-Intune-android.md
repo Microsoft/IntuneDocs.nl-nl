@@ -3,8 +3,8 @@ title: Uw Android-apparaat registreren bij Intune | Microsoft Intune
 description: Hierin wordt beschreven hoe u een Android-apparaat bij Intune kunt inschrijven
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 ---
@@ -44,7 +44,27 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
     ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3-accept-terms.png)
 
-5.  Als u Android 6.0 of hoger gebruikt, moet u deze stap uitvoeren. Ga anders naar de volgende stap. 
+5.  Meld u aan bij de bedrijfsportal-app met uw werk- of schoolaccount en wachtwoord en tik vervolgens op **Aanmelden**.
+
+    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
+
+6.  Tik in het scherm **Instellen van bedrijfstoegang** op **STARTEN**.
+
+    ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  Lees op het scherm **Waarom moet u uw apparaat registreren?** informatie over wat u kunt doen wanneer u uw apparaat registreert en tik vervolgens op **DOORGAAN**.
+
+    ![Het scherm Waarom moet u uw apparaat registreren?](./media/and-enroll-4b-why-enroll.png)
+
+8.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
+
+    ![Privacy-instellingen](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
+
+    ![Het scherm De volgende stap](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Als u Android 6.0 of hoger gebruikt, moet u deze stap uitvoeren. Ga anders naar de volgende stap.
 
     Als uw IT-beheerder bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
     -   **De bedrijfsportal toestaan telefoongesprekken uit te voeren en beheren?**
@@ -62,26 +82,6 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
     Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
 
     Als u de toegang weigert, wordt het bericht de volgende keer dat u op **Gegevens verzenden** tikt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als gebruikers later besluiten toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Opslag** en schakelt u de machtiging in.
-
-6.  Meld u aan bij de bedrijfsportal-app met uw werk- of schoolaccount en wachtwoord en tik vervolgens op **Aanmelden**.
-
-    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
-
-7.  Tik in het scherm **Instellen van bedrijfstoegang** op **STARTEN**.
-
-    ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  Lees op het scherm **Waarom moet u uw apparaat registreren?** informatie over wat u kunt doen wanneer u uw apparaat registreert en tik vervolgens op **DOORGAAN**.
-
-    ![Het scherm Waarom moet u uw apparaat registreren?](./media/and-enroll-4b-why-enroll.png)
-
-9.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
-
-    ![Privacy-instellingen](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
-
-    ![Het scherm De volgende stap](./media/and-enroll-4d-what-comes-next.png)
 
 11.  Tik op het scherm **Apparaatbeheerder activeren** op **Activeren**.
 
@@ -123,6 +123,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

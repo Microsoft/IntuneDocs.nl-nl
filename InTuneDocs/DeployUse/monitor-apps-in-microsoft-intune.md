@@ -3,7 +3,7 @@ title: App-implementaties controleren | Microsoft Intune
 description: "Informatie over Intune gebruiken voor het bewaken van apps die u hebt geïmplementeerd."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: d2af901a322a7e4a35b4708cb60c70010314b0bb
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: f072ddfe7b46ffbfbf9ece030df9a3aaa675f98c
 
 
 ---
@@ -49,6 +49,6 @@ Net als voorheen kunt u de vervolgkeuzelijst **Filters** gebruiken voor het conf
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

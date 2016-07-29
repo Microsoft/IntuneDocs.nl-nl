@@ -3,7 +3,7 @@ title: Certificaatprofielen voor toegang tot bedrijfsresources | Microsoft Intun
 description: "Beveiligde VPN-, Wi-Fi en toegang tot e-mail met een certificaat op elk gebruikersapparaat geïnstalleerd."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 98c32f924b60734d9a592ebdd7e00429dc32af26
 
 
 ---
@@ -56,6 +56,6 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

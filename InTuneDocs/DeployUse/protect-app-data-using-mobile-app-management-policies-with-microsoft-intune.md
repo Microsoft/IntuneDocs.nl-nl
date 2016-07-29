@@ -3,7 +3,7 @@ title: App-gegevens beveiligen met behulp van MAM-beleid | Microsoft Intune
 description: "In dit onderwerp wordt uitgelegd hoe Mobile App Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
-ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: b4cc44885683be0f6ef414b630571f3216248876
 
 
 ---
@@ -133,6 +133,6 @@ Alle mobiele apps van Office ondersteunen meerdere identiteiten.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,16 +3,17 @@ title: Uw wachtwoordcode instellen of wijzigen | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 19f06b1fc58584b42af7740384c9a927a20d0b6e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 791d9e4d5817acfa8b11b1f5ed570df5e38718d7
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: 19f06b1fc58584b42af7740384c9a927a20d0b6e
 
 Als uw Windows-apparaat niet aan het wachtwoordbeleid van uw IT-beheerder voldoet, wordt er een bericht weergegeven waarin een korte beschrijving van het probleem wordt gegeven en wordt uitgelegd wat u moet doen om ervoor zorgen dat uw wachtwoord voldoet aan de vereisten.
 
-De IT-beheerder kan meerdere wachtwoordvereisten instellen. Het is bijvoorbeeld mogelijk dat het wachtwoord een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers en letters moet worden gebruikt, enzovoort. Aangezien er meer dan één vereiste kan worden ingesteld, kan aan de hand van deze instructies alleen worden uitgelegd hoe u het wachtwoord instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten. 
+De IT-beheerder kan meerdere wachtwoordvereisten instellen. Het is bijvoorbeeld mogelijk dat het wachtwoord een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers en letters moet worden gebruikt, enzovoort. Aangezien er meer dan één vereiste kan worden ingesteld, kan aan de hand van deze instructies alleen worden uitgelegd hoe u het wachtwoord instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten.
 
 Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan alle wachtwoordvereisten, neemt u contact op met uw IT-beheerder voor hulp.
 
@@ -29,7 +30,7 @@ Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan 
 
 1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
 2. Schuif omlaag naar **Wachtwoord** en stel **Wachtwoord** in op **Aan**.
-3. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het veld **Wachtwoord bevestigen**. 
+3. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het veld **Wachtwoord bevestigen**.
 4. Tik op **Gereed**.
 
 ## Uw wachtwoord op een Windows Phone 8 of 8.1 wijzigen:
@@ -46,6 +47,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

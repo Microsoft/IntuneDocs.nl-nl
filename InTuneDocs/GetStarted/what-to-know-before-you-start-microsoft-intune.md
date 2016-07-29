@@ -3,7 +3,7 @@ title: Wat u moet weten voordat u met Microsoft Intune aan de slag gaat | Micros
 description: Pagina met koppelingen naar de Intune-voorwaarden en vereisten
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/08/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 77de74a7847557893c5489492ef049b324b2f137
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: f68c53883a05263305f4cc9860ffc0bd7ee336f1
 
 
 ---
@@ -37,11 +37,6 @@ Lees eventueel ook het gedeelte [Beheermogelijkheden voor mobiele apparaten](/in
 
 
 
-
-
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

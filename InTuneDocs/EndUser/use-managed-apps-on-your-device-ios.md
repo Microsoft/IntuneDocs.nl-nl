@@ -3,7 +3,7 @@ title: Beheerde apps op uw iOS-apparaat gebruiken | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 8a219cd10bbfe1dd01003e732c8e9bf11c29b0f5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: b8e8bc72012a19b309a7db6c8c562ff2cbec0933
 
 
 ---
@@ -66,6 +66,7 @@ Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps o
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

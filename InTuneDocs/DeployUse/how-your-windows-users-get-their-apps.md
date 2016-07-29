@@ -3,7 +3,7 @@ title: Hoe uw Windows-gebruikers hun apps downloaden | Microsoft Intune
 description: Manieren om Windows-apps beschikbaar te stellen aan eindgebruikers
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 6e99ddf519a216d0772f69127f560034ca1895d0
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
 
 # Hoe uw Windows-gebruikers apps downloaden
 
-Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps downloaden die u distribueert via Microsoft Intune. 
+Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps downloaden die u distribueert via Microsoft Intune.
 
 **Vereiste apps**: apps die door de beheerder worden vereist en die op het apparaat worden geïnstalleerd met minimale tussenkomst van de gebruiker, afhankelijk van het platform.
 
@@ -38,6 +38,6 @@ Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps do
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

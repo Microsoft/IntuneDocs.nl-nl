@@ -3,7 +3,7 @@ title: Problemen bij de apparaatregistratie oplossen | Microsoft Intune
 description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
 
 
 ---
@@ -144,7 +144,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 **Oplossing:** verwijder in het [Office 365-beheercentrum](https://portal.office.com/) de speciale tekens uit de bedrijfsnaam en sla de bedrijfsgegevens op.
 
 ### U kunt zich niet aanmelden of apparaten registreren wanneer u meerdere geverifieerde domeinen hebt
-**Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren. 
+**Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren.
 
 
 **Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren.  Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
@@ -166,14 +166,14 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 **Probleem**: gebruiker ontvangt het volgende bericht op een apparaat: *U kunt u niet aanmelden omdat een vereist certificaat ontbreekt op het apparaat.*
 
-**Oplossing**: 
+**Oplossing**:
 
 - de gebruiker kan het ontbrekende certificaat mogelijk ophalen door [deze instructies](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) te volgen.
-- Als de gebruiker het certificaat niet kan ophalen, dan ontbreken er wellicht tussencertificaten op de ADFS-server. De tussencertificaten zijn voor Android vereist om de server te vertrouwen. 
+- Als de gebruiker het certificaat niet kan ophalen, dan ontbreken er wellicht tussencertificaten op de ADFS-server. De tussencertificaten zijn voor Android vereist om de server te vertrouwen.
 
 U kunt de certificaten als volgt importeren naar het tussenarchief op de ADFS-server of proxy's:
 
-1.  Start op de ADFS-server de **Microsoft Management Console** en voeg de module Certificaten toe voor de **computeraccount**. 
+1.  Start op de ADFS-server de **Microsoft Management Console** en voeg de module Certificaten toe voor de **computeraccount**.
 5.  Ga naar het certificaat dat de ADFS-service gebruikt en geef het bovenliggende certificaat weer.
 6.  Kopieer het bovenliggende certificaat en plak dit onder **Computer\Tussenliggende certificeringsinstanties\Certificaten**.
 7.  Kopieer de ADFS-, ADFS-ontsleutelings-, en ADFS-ondertekeningscertificaten en plak deze in het persoonlijke archief voor de ADFS-service.
@@ -200,34 +200,34 @@ De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-
 ### Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
 **Probleem:** een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is geregistreerd. Mogelijke oorzaken:
 
-- Misschien hebt u uw Intune-connector geregistreerd bij het ene account en vervolgens geregistreerd bij een ander account. 
+- Misschien hebt u uw Intune-connector geregistreerd bij het ene account en vervolgens geregistreerd bij een ander account.
 - Misschien hebt u het MDM-certificaat gedownload vanuit het ene account en het vervolgens gebruikt in een ander account.
 
 
 **Oplossing**: voer de volgende stappen uit:
 
-1. Schakel iOS uit in de Windows Intune-connector. 
+1. Schakel iOS uit in de Windows Intune-connector.
     1. Klik met de rechtermuisknop op het Intune-abonnement en selecteer **Eigenschappen**.
     1. Schakel op het tabblad iOS de optie iOS-registratie inschakelen uit.
 
 
 
 1. Voer in SQL de volgende stappen uit voor de CAS-database
-  
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 7 
+
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 7
     1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 11 
-    1. delete from MDMPolicyAssignment where PolicyType = 11 
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 11
+    1. delete from MDMPolicyAssignment where PolicyType = 11
     1. DELETE Drs_Signals
-1. Start de service SMS Executive opnieuw of start de CM-server opnieuw 
+1. Start de service SMS Executive opnieuw of start de CM-server opnieuw
 
 
 
 1. Haal een nieuw APN-certificaat op en upload dit: klik met de rechtermuisknop op het Intune-abonnement in het linkerdeelvenster van Configuration Manager. Selecteer **APNs-certificaataanvraag maken** en volg de instructies.
 ## Problemen bij het gebruik van System Center Configuration Manager met Intune
-### Mobiele apparaten verdwijnen 
+### Mobiele apparaten verdwijnen
 **Probleem:** nadat een mobiel apparaat bij Configuration Manager is ingeschreven, verdwijnt het uit de verzameling van mobiele apparaten, maar het apparaat heeft nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
 
 **Oplossing:** dit probleem kan optreden omdat er een aangepast proces actief is dat apparaten verwijdert die niet aan een domein zijn toegevoegd, of omdat de gebruiker het apparaat uit het abonnement heeft verwijderd. Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Configuration Manager-console is verwijderd, voert u de volgende stappen uit.
@@ -256,22 +256,22 @@ In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weerg
 
 ### De computer is al geregistreerd: fout hr 0x8007064c
 **Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
-  
+
 Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde installatiekopie bevat van een computer die is geregistreerd. Het accountcertificaat van het vorige account staat nog op de computer.
 
 
 
-**Oplossing:** 
+**Oplossing:**
 
-1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**. 
+1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**.
 1. **Bestand** -> **Modules toevoegen of verwijderen**.
 1. Dubbelklik op **Certificaten**, kies **Computeraccount**, **Volgende** en selecteer **Lokale computer**.
-1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**. 
+1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**.
 1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is
 1. Verwijder de volgende registersleutel als deze bestaat en alle subsleutels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Probeer opnieuw te registreren. 
-1. Als de computer nog steeds niet kan worden geregistreerd, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Probeer opnieuw te registreren. 
+1. Probeer opnieuw te registreren.
+1. Als de computer nog steeds niet kan worden geregistreerd, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Probeer opnieuw te registreren.
 
     > [!IMPORTANT]
     > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
@@ -306,6 +306,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

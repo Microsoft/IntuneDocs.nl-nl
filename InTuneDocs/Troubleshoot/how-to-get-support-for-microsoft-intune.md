@@ -3,18 +3,18 @@ title: Ondersteuning krijgen | Microsoft Intune
 description: Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen.
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 
 
 ---
@@ -140,6 +140,6 @@ Onze rol bestaat uit het volgende:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Instellingen voor nalevingsbeleid voor iOS-apparaten | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 7/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed6aafb0ba8e8bb2b7a9985bb98a149a1af68574
+ms.openlocfilehash: 606146fdc9e3e141293e561a09d8e62d8870403a
+
 
 ---
 
@@ -72,7 +66,7 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 - **Selecteer het e-mailprofiel dat moet worden beheerd door Intune:**
    als de instelling **E-mailaccount moet worden beheerd door Intune** is geselecteerd, kiest u **Selecteren** om het e-mailprofiel voor Intune op te geven. Het e-mailprofiel moet aanwezig zijn op het apparaat.
 
-     Zie [Toegang tot zakelijke e-mail configureren met behulp van e-mailprofielen en Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) voor meer informatie over e-mailprofielen.
+     Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) voor meer informatie over e-mailprofielen.
 
 ## Instellingen voor de status van het apparaat
 
@@ -85,6 +79,7 @@ Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergeg
 - **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

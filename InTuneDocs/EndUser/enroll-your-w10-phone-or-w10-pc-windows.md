@@ -3,7 +3,7 @@ title: Uw Windows 10-apparaat inschrijven bij Intune | Microsoft Intune
 description: Informatie over hoe u een mobiel apparaat of desktopapparaat met Windows 10 kunt inschrijven bij Intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: fff0a6205e7f9b02886a28c1266cf756ff0fc597
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8446b4a68f22d70c793a2f8425cbf05314ba8b42
 
 
 ---
@@ -67,7 +67,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Toegang tot e-mail op iOS-apparaten instellen | Microsoft Intune
 description: Toegang tot e-mail op iOS-apparaten instellen met Intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 3b6bb8602ddc7a1f75a0c21ffc4fb6327673d38d
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: f132266939b70e87ce7fb36e42ef8b8c0777d55d
 
 
 ---
@@ -80,6 +80,6 @@ De app vraagt u om de gebruikersnaam en het wachtwoord van het e-mailadres.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

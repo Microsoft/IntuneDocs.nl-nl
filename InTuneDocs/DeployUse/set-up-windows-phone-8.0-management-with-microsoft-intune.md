@@ -3,8 +3,8 @@ title: Beheer voor Windows Phone 8.0 instellen | Microsoft Intune
 description: Schakel het beheer van mobiele apparaten (MDM) in voor Wndows Phone 8.0-apparaten met Microsoft Intune.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/09/2016
+manager: angrobe
+ms.date: 07/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
 
 
 ---
@@ -183,6 +183,6 @@ U kunt de bedrijfsportal-app met Intune implementeren op Windows Phone 8.1-appar
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

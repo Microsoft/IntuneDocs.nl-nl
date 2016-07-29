@@ -3,7 +3,7 @@ title: Inzicht in uw apparaten met inventarisaties | Microsoft Intune
 description: Intune gebruiken voor het weergeven van informatie over de hardware van de apparaten die u beheert.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 669e096735ae7123123873dad8982abf2c4c38d6
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 
 
 ---
@@ -114,6 +114,6 @@ Als u de inventaris wilt weergeven die voor Windows-pc’s is verzameld, voert u
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

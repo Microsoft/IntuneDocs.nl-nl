@@ -3,7 +3,7 @@ title: Hoe uw Android-gebruikers hun apps downloaden | Microsoft Intune
 description: Manieren om Android-apps beschikbaar te stellen aan eindgebruikers
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 43b7eb3378d9977b9d19196c91a812d9411752b9
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 90f50d14fac0e335f3b7c5e0825b0bb243b7a532
 
 
 ---
@@ -50,6 +50,6 @@ Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het pr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

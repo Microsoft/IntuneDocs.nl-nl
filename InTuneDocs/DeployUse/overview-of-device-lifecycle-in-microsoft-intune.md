@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Overview of the device lifecycle | Microsoft Intune (Overzicht van de apparaatlevenscyclus | Microsoft Intune)
-description:
-keywords:
+title: Overzicht van de MDM-levenscyclus | Microsoft Intune
+description: Ontdek hoe Intune u helpt bij het beheren van apparaten gedurende hun levensduur, van de inschrijving en configuratie tot de uiteindelijke buitengebruikstelling.
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 11260ad0e7dc45b7dec42fe12456ed18a484ab89
+
 
 ---
 
 # Overview of the mobile device management (MDM) lifecycle (Overzicht van de MDM-levenscyclus (Mobile Device Management))
 
-De levenscyclus van een apparaat in Intune begint met de registratie, doorloopt vervolgens meerdere stappen en eindigt wanneer het apparaat niet langer nodig is.
+Alle apparaten die u beheert, hebben een zogeheten *levensduur*. Intune kan u helpen met het beheren van de levensduur, van de inschrijving tot aan de buitengebruikstelling van het apparaat, wanneer het niet meer nodig is:
 
 ![De levenscyclus van apparaten](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +45,7 @@ In de huidige IT-wereld is het beveiligen van apparaten tegen ongeoorloofde toeg
 Wanneer een apparaat kwijtraakt, wordt gestolen, moet worden vervangen, of als gebruikers een andere functie krijgen, is het meestal nodig het apparaat [buiten gebruik te stellen of te wissen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Er zijn verschillende manieren waarop u dit kunt doen, variërend van het opnieuw instellen van het apparaat, het verwijderen van het apparaat uit beheer of het wissen van de bedrijfsgegevens die er op staan.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

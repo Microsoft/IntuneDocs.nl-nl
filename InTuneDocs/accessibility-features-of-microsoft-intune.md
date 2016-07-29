@@ -3,7 +3,7 @@ title: Toegankelijkheidsfuncties | Microsoft Intune
 description: Meer informatie over de functies van Intune waarmee u het programma beter toegankelijk kunt maken voor mensen met een handicap.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 3356ed7337814df1003905dba031b7d65959fc0f
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: e237a99669744379cff7f5947ea497b53a731196
 
 
 ---
@@ -48,6 +48,6 @@ Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows make
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

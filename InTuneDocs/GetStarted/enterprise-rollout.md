@@ -3,8 +3,8 @@ title: Implementatie in het bedrijf | Microsoft Intune
 description: Aanbevelingen voor de uitrolfase van een Intune-implementatie.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 65506ec3b4d903672e2259be567c07402ee29f31
+ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
+ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
 
 
 ---
@@ -73,7 +73,9 @@ Hier volgt een lijst met stappen om aan de slag te gaan met de fase **Implementa
 
 -   Identificeer groepen die mogelijk gerichte communicatie en training nodig hebben.
 
--   Pas e-mailberichten aan, werk de intranetsite bij, identificeer actieve eigenaren voor het bijwerken van communicatie/resources.
+-   Maak e-mailberichten op maat, werk de intranetsite bij.
+
+-   Identificeer de aangewezen persoon voor het bijwerken van berichtgeving/bronnen.
 
 -   Maak een overzicht van de trainingsmethoden die u wilt gaan gebruiken.
 
@@ -108,6 +110,6 @@ Hier vindt u een aantal problemen die kunnen optreden tijdens de fase **Implemen
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Uw iOS-apparaat registreren bij Intune | Microsoft Intune
 description: Informatie over hoe u een iOS-apparaat bij Intune kunt inschrijven
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 3cf778aa14aab093c9f5d58bda932a35f2db5089
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
 
 
 ---
@@ -35,53 +35,53 @@ Als u probeert een Mac OS X-apparaat te registreren, raadpleegt u [Uw Mac OS X-a
 
 2. Tik op de pagina **Instellen van bedrijfstoegang** op **Starten**.
 
-    ![IOS-registreren-bedrijfstoegang-instellen](./media/ios-enroll-1a-comp-access-setup.png) 
+    ![IOS-registreren-bedrijfstoegang-instellen](./media/ios-enroll-1a-comp-access-setup.png)
 
 3. Lees op het scherm **Waarom moet u uw apparaat registreren?** informatie over wat u kunt doen wanneer u uw apparaat registreert en tik vervolgens op **DOORGAAN**.
 
-    ![IOS-registreren-waarom-registreren](./media/ios-enroll-1b-why-enroll.png) 
+    ![IOS-registreren-waarom-registreren](./media/ios-enroll-1b-why-enroll.png)
 
 4. Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het geregistreerde apparaat en tik op **Doorgaan**.
 
-    ![IOS-registreren-wat-IT-kan-zien](./media/ios-enroll-1c-we-care-privacy.png) 
+    ![IOS-registreren-wat-IT-kan-zien](./media/ios-enroll-1c-we-care-privacy.png)
 
 5.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **Registreren**.
 
-    ![IOS-registreren-de-volgende-stap](./media/ios-enroll-1d-what-comes-next.png) 
+    ![IOS-registreren-de-volgende-stap](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Tik in het scherm **Profiel installeren** op **Installeren** en voer de wachtwoordcode in als daarom wordt gevraagd.
 
-    ![IOS-registreren-installatie-profiel](./media/ios-enroll-2-mgt-profile-install.png) 
-  
+    ![IOS-registreren-installatie-profiel](./media/ios-enroll-2-mgt-profile-install.png)
+
 7.  Tik op **INSTALLEREN**.
 
     ![ios-registreren-tik-op-installeren](./media/ios-enroll-3-mgt-profile-install-2.png)    
 
 8.  Tik op **Installeren** om aan te geven dat u de waarschuwing hebt gelezen.
 
-    ![IOS-registreren-tik-op-installeren-na-waarschuwing](./media/ios-enroll-4-warning.png) 
+    ![IOS-registreren-tik-op-installeren-na-waarschuwing](./media/ios-enroll-4-warning.png)
 
 9.  Tik op **Vertrouwen**.
 
-    ![IOS-registreren-tik-op-vertrouwen](./media/ios-enroll-5-trust.png) 
+    ![IOS-registreren-tik-op-vertrouwen](./media/ios-enroll-5-trust.png)
 
 10.  Wanneer het scherm verandert om weer te geven dat het profiel is geïnstalleerd, tikt u op **Gereed**.
 
-    ![ios-registreren-tik-op-gereed](./media/ios-enroll-6-done.png) 
+    ![ios-registreren-tik-op-gereed](./media/ios-enroll-6-done.png)
 
     Het bericht Apparaat registreren wordt weergegeven op het scherm.
 
 11.  Wanneer er een bericht wordt weergegeven waarin wordt gevraagd of u de pagina in de bedrijfsportal wilt openen, tikt u op **Openen**.
 
-    ![IOS-registreren-open-bedrijfsportal](./media/ios-enroll-7-open-cp.png) 
+    ![IOS-registreren-open-bedrijfsportal](./media/ios-enroll-7-open-cp.png)
 
 12. Tik in het scherm **Instellen van bedrijfstoegang** op **Doorgaan**. Als uw IT-beheerder aanvullende beveiligingseisen heeft ingesteld, zoals de noodzaak om een wachtwoord in te stellen, voert u de instructies op uw scherm uit totdat u aan alle nalevingsvereisten voldoet, keert u terug naar het scherm Instellen van bedrijfstoegang en tikt u vervolgens op **Doorgaan**.
 
-    ![IOS-registreren-bedrijfstoegang-tik-op-doorgaan](./media/ios-enroll-8-comp-access-setup-compliance.png) 
+    ![IOS-registreren-bedrijfstoegang-tik-op-doorgaan](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
-13. Tik op **Gereed**. 
+13. Tik op **Gereed**.
 
-    ![ios-registreren-tik-op-gereed](./media/ios-enroll-9-comp-access-setup-complete.png) 
+    ![ios-registreren-tik-op-gereed](./media/ios-enroll-9-comp-access-setup-complete.png)
 
 Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsportal-app.
 
@@ -91,6 +91,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

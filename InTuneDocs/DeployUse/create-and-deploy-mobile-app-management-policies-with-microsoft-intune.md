@@ -3,8 +3,8 @@ title: MAM-beleid maken en implementeren | Microsoft Intune
 description: Volg de stapsgewijze instructies in dit onderwerp om beleidsregels voor Mobile App Management te maken en implementeren.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 9e1c8f3c125633f1224005b7f80d3578fd4b729d
 
 
 ---
@@ -50,24 +50,20 @@ Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configur
     > [!TIP]
     > Als dit de eerste keer is dat u de Azure-portal gebruikt, lees dan eerst [Azure-portal voor Microsoft Intune MAM-beleid](azure-portal-for-microsoft-intune-mam-policies.md) om vertrouwd te raken met de portal.
 
-2.  Kies op het tabblad **Instellingen** de optie **App-beleid**.  Hiermee opent u de blade **App-beleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
-
-    ![Schermafbeelding van het tabblad App-beleid met een lijst met bestaande beleidsregels](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Kies **Een beleid toevoegen**.
+2.  Kies op het tabblad **Instellingen** de optie **App-beleid**.  Hiermee opent u de blade **App-beleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken. Kies **Een beleid toevoegen**.
 
     ![Schermafbeelding van het tabblad App-beleid met de menuoptie Een beleid toevoegen gemarkeerd ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Geeft een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype om beleidsregels voor iOS of Android te maken.  U kunt meer dan één beleid voor elk platform maken.
+3.  Geeft een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype om beleidsregels voor iOS of Android te maken.  U kunt meer dan één beleid voor elk platform maken.
 
     ![Schermafbeelding van het tabblad Een beleid toevoegen](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Kies **Apps** om het tabblad **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. Nadat u de apps hebt geselecteerd, kiest u de knop **Selecteren** onder aan het tabblad **Apps** om uw selectie op te slaan.
+4.  Kies **Apps** om het tabblad **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. Nadat u de apps hebt geselecteerd, kiest u de knop **Selecteren** onder aan het tabblad **Apps** om uw selectie op te slaan.
 
     > [!IMPORTANT]
     > U moet ten minste één app selecteren om een beleid maken.
 
-6.  Op het tabblad **Een beleid toevoegen** kiest u **Vereiste instellingen configureren** om het tabblad Beleidsinstellingen te openen.
+5.  Op het tabblad **Een beleid toevoegen** kiest u **Vereiste instellingen configureren** om het tabblad Beleidsinstellingen te openen.
 
     Er zijn twee soorten beleidsinstellingen; **Herlocatie van gegevens** en **Toegang**.  Beleid voor herlocatie van gegevens is van toepassing op de verplaatsing van gegevens van en naar de apps, terwijl het toegangsbeleid bepaalt hoe de eindgebruiker in de context van zijn werk toegang tot de apps heeft.
     Om u op gang te hepen, hebben de beleidsinstellingen standaardwaarden.  U hoeft niets te wijzigen als de standaardwaarden aan uw vereisten voldoen.
@@ -77,11 +73,11 @@ Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configur
 
     ![Schermafbeelding van het tabblad met instellingen en het tabblad Een beleid toevoegen](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Kies **OK** om deze configuratie op te slaan.  U bent nu terug op het tabblad **Een beleid toevoegen** . Kies **Maken** om het beleid te maken en uw instellingen op te slaan.
+6.  Kies **OK** om deze configuratie op te slaan.  U bent nu terug op het tabblad **Een beleid toevoegen** . Kies **Maken** om het beleid te maken en uw instellingen op te slaan.
 
     ![Schermafbeelding van het tabblad Een beleid toevoegen, waarin wordt aangegeven dat de apps en instellingen zijn geconfigureerd](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![Schermafbeelding van het tabblad App-beleid met de melding Een beleid toevoegen ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige procedure, is het nog niet geïmplementeerd voor gebruikers.  Volg de onderstaande stappen om het beleid te implementeren.
 
@@ -169,6 +165,6 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

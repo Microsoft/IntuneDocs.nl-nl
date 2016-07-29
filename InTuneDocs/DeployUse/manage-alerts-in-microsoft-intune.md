@@ -3,19 +3,19 @@ title: Waarschuwingen beheren | Microsoft Intune
 description: Gebruik de werkruimte Waarschuwingen om de algemene status van apparaten in uw organisatie te beoordelen.
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Gebruik de werkruimte **Waarschuwingen** in de Intune-beheerconsole om de algeme
 
         > [!NOTE]
         > In sommige gevallen wordt een waarschuwingstype meer dan één keer weergegeven in de lijst **Overzicht van waarschuwingstypen**.
-        > 
+        >
         > Zo kunnen bijvoorbeeld de volgende instanties van het waarschuwingstype 'Beschikbare ruimte logische schijf' worden weergegeven in de lijst:
-        > 
+        >
         > -   3 Beschikbare ruimte logische schijf
         > -   2 Beschikbare ruimte logische schijf
-        > 
+        >
         > Dit kan zich voordoen wanneer hetzelfde waarschuwingstype wordt gegenereerd voor apparaten waarop verschillende besturingssystemen worden uitgevoerd. In het voorbeeld is de eerste instantie van het waarschuwingstype Beschikbare ruimte logische schijf, 3 Beschikbare ruimte logische schijf, mogelijk gegenereerd op computers waarop Windows® 7 wordt uitgevoerd. De tweede instantie van het waarschuwingstype Beschikbare ruimte logische schijf is mogelijk gegenereerd op computers waarop Windows Vista® wordt uitgevoerd.
 
     -   Klik op **Waarschuwingen &gt; Alle waarschuwingen** **om alle actieve waarschuwingen weer te geven**. Op de pagina **Waarschuwingen** wordt een lijst met alle actieve waarschuwingen weergegeven met de volgende kolommen:
@@ -107,7 +107,6 @@ Waarschuwingen die zijn gemarkeerd als gesloten, worden na 90 dagen permanent ve
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

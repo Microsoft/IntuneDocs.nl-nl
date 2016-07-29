@@ -3,7 +3,7 @@ title: Gebruik van netwerkbandbreedte | Microsoft Intune
 description: gebruik van netwerkbandbreedte door intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: fe3f3bff7f3b636a24d7b81d308519fb36e998df
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 2a600b7948c55a408314aedc3895c25fcc09251d
 
 
 ---
@@ -87,6 +87,7 @@ Als u BranchCache gebruikt, moet u contact opnemen met andere beheerders in uw o
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

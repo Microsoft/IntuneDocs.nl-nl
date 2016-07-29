@@ -3,7 +3,7 @@ title: Een proefversie van Intune in gebruik nemen en een iOS-pincodebeleid impl
 description: iOS-pincodebeleid in Intune implementeren
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b2b24492693b61a544a4adc3e878b8b212d15a21
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: a4c38659c87c651678ee30134d50fb74f35fc388
 
 
 ---
@@ -285,6 +285,6 @@ Deze stapsgewijze instructies helpen u bij het instellen van een Intune-proefabo
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
