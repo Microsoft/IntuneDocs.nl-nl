@@ -4,7 +4,7 @@ description: Wanneer een bestand is beveiligd met Rights Management, kunt u de m
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51050497fe128d94e069d0ac010435bea5623af2
-ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
+ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
+ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
 
 
 ---
@@ -32,13 +32,13 @@ Wanneer een bestand is beveiligd met Rights Management, kunt u de machtigingen w
 >
 > Als u een machtiging wilt toevoegen of verwijderen, kunt u dit niet zomaar opgeven. U moet alle machtigingen voor bepaalde personen opgeven.
 
-Als u de eigenaar bent van het bestand dat u opnieuw wilt beveiligen (bijvoorbeeld wanneer u het bestand oorspronkelijk hebt beveiligd met behulp van de toepassing voor delen), hebt u automatisch rechten om het bestand opnieuw te beveiligen. Als u niet de eigenaar van het bestand bent, hebt u mogelijk geen rechten om het bestand opnieuw te beveiligen, afhankelijk van de huidige machtigingen voor het bestand. 
+Als u de eigenaar bent van het bestand dat u opnieuw wilt beveiligen (bijvoorbeeld wanneer u het bestand oorspronkelijk hebt beveiligd met behulp van de toepassing voor delen), hebt u automatisch machtigingen om het bestand opnieuw te beveiligen. Als u niet de eigenaar van het bestand bent, hebt u mogelijk geen machtigingen om het bestand opnieuw te beveiligen, afhankelijk van de huidige machtigingen voor het bestand. U hebt het [gebruiksrecht Volledig beheer](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) nodig om een bestand opnieuw te beveiligen.
 
-Als iemand anders het bestand bijvoorbeeld heeft beveiligd met de Rights Management-toepassing voor delen en er een groep is opgegeven waarvan u deel uitmaakt en **mede-eigenaar bent**, kunt u het bestand wel opnieuw beveiligen. Echter, als deze persoon uw naam of de groep waarvan u deel uitmaakt niet heeft opgegeven, of als hij **Revisor - Weergeven en bewerken** heeft geselecteerd of een sjabloon heeft waarmee u geen machtigingen kunt verwijderen, kunt u het bestand niet opnieuw beveiligen. De snelste manier om te ontdekken wat uw mogelijkheden zijn, is door het bestand opnieuw te beveiligen.
+Als iemand anders het bestand bijvoorbeeld heeft beveiligd met de Rights Management-toepassing voor delen en er een groep is opgegeven waarvan u deel uitmaakt en **mede-eigenaar bent**, kunt u het bestand wel opnieuw beveiligen. Als deze persoon echter uw naam of de groep waarvan u deel uitmaakt, niet heeft opgegeven, of **Revisor - Weergeven en bewerken** heeft geselecteerd of een sjabloon gebruikt waarmee u geen machtigingen kunt verwijderen, kunt u het bestand niet opnieuw beveiligen. De snelste manier om te ontdekken wat uw mogelijkheden zijn, is door het bestand opnieuw te beveiligen.
 
 Zie [De beveiliging van een bestand verwijderen](sharing-app-remove-protection.md) als u alle machtigingen wilt verwijderen zodat het bestand niet meer is beveiligd.
 
-## Een bestand opnieuw beveiligen
+## Een bestand ter plaatse opnieuw beveiligen
 
 1.  Selecteer in Verkenner een bestand dat moet worden beveiligd. Klik met de rechtermuisknop op **Beschermen met RMS** en selecteer vervolgens **Direct beveiligen**. Bijvoorbeeld:
 
@@ -57,14 +57,14 @@ Zie [De beveiliging van een bestand verwijderen](sharing-app-remove-protection.m
 
     -   Selecteer **Aangepaste machtigingen**: selecteer deze optie als de sjablonen niet het beveiligingsniveau bieden dat u nodig hebt of als u de beveiligingsopties expliciet zelf wilt instellen. Geef in het [dialoogvenster Beveiliging instellen](sharing-app-dialog-box.md) de gewenste opties voor dit bestand op en klik vervolgens op **Toepassen**.
 
-3. Als u geen machtigingen hebt om het bestand opnieuw te beveiligen, verschijnt het bericht **Inhoud kan niet worden beveiligd** en wordt het e-mailadres weergegeven van de contactpersoon (de eigenaar van het document), zodat hij de machtigingen voor u kan wijzigen.
+3. Als u geen machtigingen hebt om het bestand opnieuw te beveiligen, verschijnt het bericht **Inhoud kan niet worden beveiligd** en wordt het e-mailadres weergegeven van de contactpersoon (de eigenaar van het document), zodat de contactpersoon de machtigingen voor u kan wijzigen.
 
-    Als u geen machtigingen hebt om het bestand opnieuw te beveiligen, wordt kort een dialoogvenster weergegeven waarin wordt uitgelegd dat het bestand wordt beveiligd. Vervolgens keert u terug naar Verkenner. Het geselecteerde bestand of de geselecteerde bestanden zijn nu beveiligd. 
+    Als u geen machtigingen hebt om het bestand opnieuw te beveiligen, wordt kort een dialoogvenster weergegeven waarin wordt uitgelegd dat het bestand wordt beveiligd. Vervolgens keert u terug naar Bestandenverkenner. Het geselecteerde bestand of de geselecteerde bestanden zijn nu beveiligd. 
 
 > [!NOTE]
-> Voordat u het bestand opnieuw kunt beveiligen, moet RMS bevestigen dat u hiertoe gemachtigd bent door uw gebruikersnaam en wachtwoord te controleren. In sommige gevallen kan dit mogelijk in de cache worden opgeslagen en wordt u niet gevraagd om uw aanmeldgegevens. In andere gevallen wordt u gevraagd uw aanmeldgegevens op te geven.
+> Voordat u het bestand opnieuw kunt beveiligen, moet met RMS worden bevestigd dat u hiertoe gemachtigd bent door uw gebruikersnaam en wachtwoord te controleren. In sommige gevallen kan dit mogelijk in de cache worden opgeslagen en wordt u niet gevraagd om uw aanmeldgegevens. In andere gevallen wordt u gevraagd uw aanmeldgegevens op te geven.
 >
-> Als uw organisatie geen Azure Rights Management (Azure RMS) of AD RMS gebruikt, kunt u een gratis account aanvragen waarmee uw referenties worden opgenomen zodat u bestanden kunt openen die beveiligd zijn met RMS:
+> Als uw organisatie geen Azure Rights Management (Azure RMS) of AD RMS gebruikt, kunt u een gratis account aanvragen waarmee uw referenties worden geaccepteerd zodat u bestanden kunt openen die beveiligd zijn met RMS:
 >
 > -   Als u zich wilt aanmelden voor dit account, klikt u op de koppeling om u aan te melden voor [RMS voor personen](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
@@ -75,7 +75,7 @@ Zie [De beveiliging van een bestand verwijderen](sharing-app-remove-protection.m
 
 Als u de machtigingen wilt wijzigen voor een bestand dat u per e-mail hebt verzonden:
 
-- **Zorgen dat meer mensen het e-mailbericht lezen**: verzend het bestand per e-mail aan deze personen op basis van de instructies in [Een bestand beveiligen dat u per e-mail deelt](sharing-app-protect-by-email.md).
+- **Zorgen dat meer mensen het e-mailbericht lezen**: verzend het bestand per e-mail naar deze personen op basis van de instructies in [Een bestand beveiligen dat u per e-mail deelt](sharing-app-protect-by-email.md).
 
 - **De machtigingen voor het bestand wijzigen**: verzend het bestand opnieuw op basis van de instructies in [Een bestand beveiligen dat u per e-mail deelt](sharing-app-protect-by-email.md) en selecteer de nieuwe machtigingen. 
 
@@ -96,6 +96,6 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

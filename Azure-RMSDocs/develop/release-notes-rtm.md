@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 2892bc8242c3b6a90352829bf251b7044a919ed3
 
 
 ---
@@ -52,7 +52,7 @@ Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de R
 
 ## Update van mei 2015
 
--   Voor **service-apps en RMS in de cloud** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) zijn drie soorten informatie vereist; symmetrische sleutel, **AppPrincipalId** en **TenantBposId**. Het onderwerp hiervoor is bijgewerkt met advies over het ophalen van deze informatie. Zie de bijgewerkte versie van [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor deze update.
+-   Voor **service-apps en RMS in de cloud** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) zijn drie soorten informatie vereist; symmetrische sleutel, **AppPrincipalId** en **TenantBposId**. Het onderwerp hiervoor is bijgewerkt met advies over het ophalen van deze informatie. Zie de bijgewerkte versie van [Ervoor zorgen dat uw servicetoepassing werkt met RMS in de cloud](how-to-use-file-api-with-aadrm-cloud.md) voor deze update.
 
 ## Update van april 2015
 
@@ -178,6 +178,6 @@ Als er geen naam en beschrijving kunnen worden opgehaald, wordt een fout geretou
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

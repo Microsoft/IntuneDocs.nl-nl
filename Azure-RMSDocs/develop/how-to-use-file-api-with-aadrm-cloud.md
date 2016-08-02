@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
-ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
 
 
 ---
@@ -46,7 +46,7 @@ U moet uw eigen tenants maken om uw Rights Management Services SDK 2.1-serviceto
 
      
 -   Via de volgende stappen maakt u een instantie van een [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)-structuur, waarbij het **pcCredential**-lid ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) is ingevuld met de verbindingsinformatie van de Azure Rights Management Service.
--   Gebruik de informatie die u hebt verkregen tijdens het maken van de service-id van de symmetrische sleutel (zie de vereisten die eerder in dit onderwerp zijn vermeld) om de parameters **wszServicePrincipal**, **wszBposTenantId** en **cbKey** in te stellen bij het maken van een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)-structuur.
+-   Gebruik de informatie die u hebt verkregen tijdens het maken van de service-id van de symmetrische sleutel (zie de vereisten die eerder in dit onderwerp zijn vermeld) om de parameters **wszServicePrincipal**, **wszBposTenantId** en **cbKey** in te stellen bij het maken van een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)-structuur.
 
 **Opmerking** Als gevolg van een bestaande voorwaarde van onze detectieservice worden symmetrische-sleutelreferenties uit andere regio’s (als u niet in Noord-Amerika woont) niet geaccepteerd. Daarom moet u uw tenant-URL’s rechtstreeks opgeven. Dit doet u via de parameter [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) van [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) of [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist).
 
@@ -81,7 +81,7 @@ U moet uw eigen tenants maken om uw Rights Management Services SDK 2.1-serviceto
     `Get-AadrmConfiguration`
 
 
--   Maak een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) en stel een aantal leden in.
+-   Maak een instantie van een [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) en stel een aantal leden in.
 
     // Maak een sleutelstructuur.
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
@@ -90,9 +90,9 @@ U moet uw eigen tenants maken om uw Rights Management Services SDK 2.1-serviceto
     symKey.wszBase64Key = de hoofdsleutel voor de service; symKey.wszAppPrincipalId = de hoofd-id van de app; symKey.wszBposTenantId = uw tenant-id;
 
 
-Zie [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) voor meer informatie.
+Zie [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) voor meer informatie.
 
--   Maak een instantie van een [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)-structuur die uw [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)-instantie bevat.
+-   Maak een instantie van een [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)-structuur die uw [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)-instantie bevat.
 
 **Opmerking** De *connectionInfo*-leden worden ingesteld met URL's van de vorige aanroep aan `Get-AadrmConfiguration` en worden hier vermeld met de veldnamen.
 
@@ -160,7 +160,7 @@ U hebt nu de benodigde stappen voltooid om ervoor te zorgen dat uw toepassing ge
 * [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)
 * [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)
-* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)
+* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)
 * [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 * [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [**IpcfDecryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
@@ -173,6 +173,6 @@ U hebt nu de benodigde stappen voltooid om ervoor te zorgen dat uw toepassing ge
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

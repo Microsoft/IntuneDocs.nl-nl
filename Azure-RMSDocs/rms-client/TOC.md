@@ -21,11 +21,10 @@
 ##### [Beveiliging opheffen](sharing-app-remove-protection.md)
 ##### [Sneltoetsen gebruiken](sharing-app-keyboard-shortcuts.md)
 ##### [Opties in het dialoogvenster](sharing-app-dialog-box.md)
-### [Privacyverklaring voor Microsoft Rights Management in toepassingen met RMS](privacy-statement-rms-enlightened-applications.md)
 # [Apps ontwikkelen en aanpassen](/rights-management/develop/developers-guide)
 # [Azure Information Protection (preview)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
