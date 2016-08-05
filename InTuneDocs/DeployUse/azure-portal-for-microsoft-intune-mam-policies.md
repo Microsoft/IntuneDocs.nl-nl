@@ -3,8 +3,8 @@ title: Azure-portal voor MAM-beleid | Microsoft Intune
 description: Beleid maken voor het beheren van mobiele apps in de Azure Portal. De beleidsregels die u hier maakt kunnen worden toegepast op apparaten met of zonder inschrijving bij Intune.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -40,13 +40,13 @@ De Azure-portal biedt ondersteuning voor het maken van MAM-beleid voor:
 
     ![Schermopname van de aanmeldpagina van de Azure-portal](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Wanneer u zich hebt aangemeld, ziet u het **dashboard**. De pagina **Dashboard** bevat een reeks standaardtegels die u kunt verwijderen, of u kunt nieuwe tegels toevoegen om de pagina aan uw eigen voorkeuren aan te passen.
+2.  Wanneer u zich hebt aangemeld, ziet u het **dashboard**. De **Dashboard**-pagina kan worden aangepast.
 
     ![Schermopname van het dashboard van de Azure-portal](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  Ga in het menu **Bladeren** naar **Intune**.![Schermopname van het menu Bladeren waarin Intune is gemarkeerd](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Klik op **Intune > Intune Mobile Application Management > Instellingen**.
+4.  Kies **Intune > Intune Mobile Application Management > Instellingen**.
 
     ![Schermopname van het tabblad Intune Mobile Application Management](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ De Azure-portal biedt ondersteuning voor het maken van MAM-beleid voor:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

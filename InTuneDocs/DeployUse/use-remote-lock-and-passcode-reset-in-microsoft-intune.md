@@ -1,25 +1,20 @@
 ---
 title: Extern vergrendelen gebruiken en wachtwoordcode opnieuw instellen | Microsoft Intune
-description:
-keywords:
+description: Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
+translationtype: Human Translation
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode
 Microsoft Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
@@ -31,7 +26,7 @@ Als een gebruiker het apparaat verliest, kunt u het apparaat vergrendelen op afs
 |------------|---------------|
 |iOS|Ondersteund|
 |Android|Ondersteund|
-|Windows 10 Mobile|Ondersteund|
+|Windows 10 en Windows 10 Mobile|Ondersteund|
 |Windows Phone 8 en Windows Phone 8.1|Ondersteund|
 |Windows RT 8.1 en Windows RT|Ondersteund als de huidige gebruiker van het apparaat dezelfde gebruiker is die het apparaat heeft geregistreerd.|
 |Windows 8.1|Ondersteund als de huidige gebruiker van het apparaat dezelfde gebruiker is die het apparaat heeft geregistreerd.|
@@ -39,9 +34,9 @@ Als een gebruiker het apparaat verliest, kunt u het apparaat vergrendelen op afs
 
 ### Een mobiel apparaat op afstand vergrendelen via de Intune-console
 
-1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen** &gt; **Alle apparaten** &gt; **Alle mobiele apparaten**.
+1.  Kies in de [Intune-beheerdersconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle apparaten** &gt; **Alle mobiele apparaten**.
 
-2.  Kies **Alle rechtstreeks beheerde apparaten** voor apparaten die zijn ingeschreven bij Intune, of **Alle door Exchange ActiveSync beheerde apparaten**.
+2.  Kies **Alle direct beheerde apparaten** voor apparaten die zijn geregistreerd bij Intune of **Alle door Exchange ActiveSync beheerde apparaten**.
 
     > [!TIP]
     > U kunt ook op gebruiker naar een apparaat navigeren. Kies **Alle gebruikers**. Kies op de pagina Eigenschappen van de gebruiker de optie **Apparaten** en vervolgens de naam van de gebruiker wiens mobiele apparaat u wilt wissen.
@@ -62,21 +57,22 @@ Als een gebruiker de wachtwoordcode vergeet, kunt u helpen door de wachtwoordcod
 
 ### Een wachtwoordcode opnieuw instellen
 
-1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen** &gt; **Alle apparaten** &gt; **Alle mobiele apparaten**.
+1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle apparaten** &gt; **Alle mobiele apparaten**.
 
-2.  Kies **Alle rechtstreeks beheerde apparaten** voor apparaten die zijn ingeschreven bij Intune, of **Alle door Exchange ActiveSync beheerde apparaten**.
+2.  Kies **Alle direct beheerde apparaten** voor apparaten die zijn geregistreerd bij Intune of **Alle door Exchange ActiveSync beheerde apparaten**.
 
     > [!TIP]
     > U kunt ook op gebruiker naar een apparaat navigeren. Klik op **Alle gebruikers**. Klik op de pagina Eigenschappen van de gebruiker op **Apparaten** en vervolgens op de naam van de gebruiker wiens mobiele apparaat u wilt wissen.
 
-3.  Kies in de lijst de apparaten die u wilt vergrendelen. Klik op de taakbalk op **Externe taken** en selecteer **Wachtwoordcode opnieuw instellen**.
+3.  Kies in de lijst de apparaten die u wilt vergrendelen. Kies op de taakbalk **Externe taken** en selecteer **Wachtwoordcode opnieuw instellen**.
 
 
 ### Zie tevens
 [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md)
-[Windows Selective Wipe fof Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)
+[Selectief wissen in Windows voor beheer van apparaatgegevens](http://technet.microsoft.com/library/dn486874.aspx)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

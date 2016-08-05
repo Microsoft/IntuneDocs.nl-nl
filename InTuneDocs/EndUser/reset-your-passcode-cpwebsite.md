@@ -3,18 +3,19 @@ title: De wachtwoordcode van uw apparaat opnieuw instellen op de website van de 
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
 
 Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
 
-> [!NOTE] 
+> [!NOTE]
 > Het is mogelijk de knop Wachtwoordcode opnieuw instellen niet wordt weergegeven. Dit is afhankelijk van hoe uw IT-beheerder Intune heeft geconfigureerd. Het opnieuw instellen van wachtwoordcodes wordt niet ondersteund op Windows 8.1- en Windows RT-apparaten.
 
 Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
@@ -33,7 +34,7 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
 2.  Tik op **Wachtwoordcode opnieuw instellen**.
 
-    ![tikken-op-wachtwoordcode-om-deze-opnieuw-in-te-stellen](./media/iwp-1-tap-reset-passcode.png)
+    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Tik op **Afmelden** en meld u vervolgens opnieuw aan met de referenties van uw werk- of schoolaccount. U moet zich binnen vijf minuten opnieuw aanmelden.
 
@@ -63,6 +64,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

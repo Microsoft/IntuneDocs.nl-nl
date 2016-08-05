@@ -3,8 +3,8 @@ title: Uw iOS- of Mac OS X-apparaat gebruiken met Intune | Microsoft Intune
 description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS X-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Volg deze stappen voor taken die u moet uitvoeren op uw iOS- of Mac OS X-apparaat als uw bedrijf Microsoft Intune gebruikt.
+Deze pagina bevat koppelingen naar alle taken die eindgebruikers op hun door Intune-beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: informatie met betrekking tot inschrijvingen, beheertaken en nalevingskwesties.
 
 ## Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 
@@ -61,8 +61,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

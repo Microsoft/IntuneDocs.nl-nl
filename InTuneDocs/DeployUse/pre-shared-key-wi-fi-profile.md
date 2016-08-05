@@ -3,7 +3,7 @@ title: Wi-Fi met een vooraf gedeelde sleutel (PSK) | Microsoft Intune
 description: Aangepaste configuratie van Intune gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel.
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ Opmerking:
 
    c.   **Gegevenstype**: ingesteld op String(XML)
 
-   d.   **OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**: 
+        
+- **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 Opmerking: zorg ervoor dat deze string begint met een punt.
 
 SSID is de SSID waarvoor u het beleid wilt maken. Bijvoorbeeld:
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    Waardeveld: hier plakt u de XML-code. Hier volgt een voorbeeld. Elke waarde moet worden aangepast aan de instellingen van uw netwerk. Zie het gedeelte met opmerkingen over de code voor een aantal tips.
 
@@ -197,6 +200,6 @@ Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

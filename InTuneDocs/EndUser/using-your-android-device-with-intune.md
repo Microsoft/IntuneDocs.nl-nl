@@ -3,8 +3,8 @@ title: Uw Android-apparaat gebruiken met Intune | Microsoft Intune
 description: Lijst met koppelingen naar taken die u op uw mobiele Android-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 # Met behulp van een Android-apparaat met Intune
 
-Volg deze stappen voor taken die u op uw Android-apparaat moet uitvoeren als uw bedrijf Microsoft Intune gebruikt.
+Deze pagina bevat koppelingen naar alle taken die eindgebruikers op hun door Intune-beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: informatie met betrekking tot inschrijvingen, beheertaken en nalevingskwesties.
 
 ## Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 
@@ -67,9 +67,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: Uw verloren of gestolen apparaat opnieuw instellen (wissen) | Microsoft I
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f6e7e40973428762995feceac109a8367813dadd
 
 
 ---
@@ -30,7 +30,7 @@ Als een telefoon die bij Intune is geregistreerd, is vermist of gestolen, kunt u
 
 ## Ga als volgt te werk om uw apparaat opnieuw in te stellen via de bedrijfsportal-app
 
-1.  Open uw bedrijfsportal in uw browser en meld u aan bij uw werkaccount.
+1.  Open de bedrijfsportal-app vanaf een ander geregistreerd apparaat en meld u aan met uw werk- of schoolaccount.
 
 2.  Klik onder **Mijn apparaten** op het apparaat dat kwijt of gestolen is.
 
@@ -40,7 +40,7 @@ Als een telefoon die bij Intune is geregistreerd, is vermist of gestolen, kunt u
 
 Voer de volgende stappen uit of bekijk deze video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  Selecteer het apparaat dat u wilt wissen op de [website van de bedrijfsportal](http://portal.manage.microsoft.com).
 
@@ -52,6 +52,7 @@ Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 
