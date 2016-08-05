@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: "Instructies: documenttracking en intrekking van documenten inschakelen | Azure RMS"
+title: 'Instructies: documenttracking en intrekking van documenten inschakelen | Azure RMS'
 description: Algemene richtlijnen voor de implementatie van het bijhouden van documenten
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,24 +10,21 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+experimental: true
+experiment_id: priyamo-test-20160729
+translationtype: Human Translation
+ms.sourcegitcommit: 0d853f99c0a7855354492c508c5c382ceb489a18
+ms.openlocfilehash: fb51e2e1438716431a4d8a6e07878c69f428933f
+
 
 ---
-<<<<<<< HEAD
 
 # Inhoud bijhouden
-=======
->>>>>>> 81ec5ddf5acf3de78d77c01ed95631e44d37fe6e
 
-# Instructies: documenttracking en intrekking van documenten inschakelen
+# Instructies: het bijhouden en intrekken van documenten inschakelen
 
 Dit onderwerp bevat de algemene richtlijnen voor de implementatie van documenttracking voor inhoud, evenals voorbeeldcode voor updates van metagegevens en voor het maken van een knop **Gebruik bijhouden** voor uw app.
 
@@ -170,6 +165,7 @@ De client moet een browser openen met de juiste URL. Verificatie en eventuele om
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO5-->
 
 
