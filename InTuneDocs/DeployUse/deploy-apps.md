@@ -3,7 +3,7 @@ title: Apps implementeren | Microsoft Intune
 description: In dit onderwerp worden enkele concepten uitgelegd die u moet begrijpen voordat u apps met Intune gaat implementeren.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
+ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
+ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
 
 
 ---
@@ -27,14 +27,14 @@ In dit onderwerp worden enkele concepten uitgelegd die u moet begrijpen voordat 
 ## Acties voor de implementatie van apps
 Wanneer u apps implementeert, kunt u kiezen uit een van de volgende implementatieacties:
 
--   **Vereiste installatie**: de app wordt op het apparaat geïnstalleerd zonder dat tussenkomst van de eindgebruiker is vereist.
+-   **Vereiste installatie**: de app wordt op het apparaat geïnstalleerd zonder dat tussenkomst van de gebruiker is vereist.
 
     > [!TIP]
     > Voor iOS-apparaten die zich niet in de modus Supervisie bevinden, en voor alle Android-apparaten, moet de gebruiker de aangeboden app accepteren voordat deze wordt geïnstalleerd.
-    > 
-    >  Als een eindgebruiker een app verwijdert die u hebt geïmplementeerd als een vereiste installatie, wordt de app automatisch opnieuw geïnstalleerd door Intune na de volgende inventarisatiecyclus die meestal elke 7 dagen plaatsvindt.
+    >
+    >  Als een gebruiker een app verwijdert die u hebt geïmplementeerd als een vereiste installatie, wordt de app automatisch opnieuw geïnstalleerd door Intune na de volgende inventarisatiecyclus die meestal elke zeven dagen plaatsvindt.
 
--   **Beschikbare installatie**: de app wordt weergegeven in de bedrijfsportal en eindgebruikers kunnen de app op aanvraag installeren.
+-   **Beschikbare installatie**: de app wordt weergegeven in de bedrijfsportal en gebruikers kunnen de app op aanvraag installeren.
 
 -   **Verwijderen** : de app wordt van het apparaat verwijderd.
 
@@ -64,7 +64,7 @@ Wanneer twee implementaties met dezelfde implementatieactie worden ontvangen doo
 
 -   Een installatieactie heeft prioriteit ten opzichte van een verwijderingsactie.
 
--   Als zowel een vereiste als een beschikbare installatie worden ontvangen door een apparaat, worden de acties gecombineerd (de app is zowel vereist als beschikbaar, dus de eindgebruiker kan deze installeren vanaf de bedrijfsportal voordat er wordt gestart met de vereiste installatie).
+-   Als een apparaat zowel een vereiste installatie als een beschikbare installatie ontvangt, worden de acties gecombineerd. De gebruiker kan met andere woorden de beschikbare app via de bedrijfsportal installeren voordat de vereiste installatie begint.
 
 
 ## Volgende stappen
@@ -73,6 +73,6 @@ Lees hoe u [apps in Microsoft Intune implementeert](deploy-apps-in-microsoft-int
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

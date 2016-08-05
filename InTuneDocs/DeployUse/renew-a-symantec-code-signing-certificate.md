@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Een Symantec-certificaat voor het ondertekenen van programmacode vernieuwen om met Microsoft Intune te gebruiken | Microsoft Intune
-description:
-keywords:
+title: Een Symantec-certificaat voor het ondertekenen van programmacode vernieuwen om met Intune te gebruiken | Microsoft Intune
+description: Richtlijnen voor het vernieuwen van Symantec-certificaten waarmee bepaalde mobiele Windows- en Windows Phone-apparaten worden beheerd
+keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
+
 
 ---
 
@@ -41,7 +35,7 @@ Het Symantec-certificaat waarmee bepaalde Windows-apparaten en mobiele apparaten
 
 ## Het bijgewerkte certificaat voor Windows Phone 8.0 installeren
 
-1.  Download en onderteken de meest recente Windows Phone-bedrijfsportal. U vindt deze hier: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
+1.  Download en onderteken de meest recente Windows Phone-bedrijfsportal die u hier kunt vinden: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
 2.  Open uw Intune-beheerconsole ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) en ga naar **Beheer**, **Mobile Device Management** &gt; **Windows Phone** en klik op **Ondertekende app uploaden**.
 
@@ -55,7 +49,7 @@ Voorzien in een ondertekend SSP.xap-bestand is momenteel de enige manier om het 
 
 ## Het bijgewerkte certificaat voor apparaten met Windows Phone 8.1 en hoger installeren
 
-1.  Download en onderteken de meest recente Windows Phone-bedrijfsportal. U vindt deze hier in het Downloadcentrum: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
+1.  Download en onderteken de meest recente Windows Phone-bedrijfsportal uit het Downloadcentrum dat u hier kunt vinden: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
 2.  Open uw [Intune-beheerconsole](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) en ga naar **Beheer** &gt; **Mobile Device Management** &gt; **Windows Phone** en klik op **Ondertekende app uploaden**.
 
@@ -71,6 +65,7 @@ Voorzien in een ondertekend SSP.xap-bestand is momenteel de enige manier om het 
 [Windows Phone-beheer instellen](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

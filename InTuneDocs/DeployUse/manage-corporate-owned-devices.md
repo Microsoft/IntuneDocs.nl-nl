@@ -3,7 +3,7 @@ title: Apparaten in bedrijfseigendom beheren | Microsoft Intune
 description: Apparaten in bedrijfseigendom (COD) kunnen op verschillende manieren worden beheerd, afhankelijk van het apparaat en hoe dit apparaat is aangeschaft, en de behoeften van de organisatie.
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
 
 
 ---
 
 # Apparaten in bedrijfseigendom registreren met Microsoft Intune
-Apparaten in organisatie- of bedrijfseigendom kunnen op verschillende manieren worden geregistreerd voor beheer door Intune, afhankelijk van het apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn.
+Apparaten in organisatie- of bedrijfseigendom kunnen op verschillende manieren worden geregistreerd voor beheer door Intune, afhankelijk van het apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn. Apparaten in bedrijfseigendom kunnen ook worden geregistreerd en beheerd door de bedrijfsportal-app te installeren, zoals in BYOD-scenario's (Bring Your Own Device).
 
 ## iOS-apparaten in bedrijfseigendom
 Deze registratiemethoden zijn geschikt voor CYOD-scenario's (Choose Your Own Device), waarbij de organisatie de apparaten koopt voor gebruikers, maar het beheer van de apparaten bij de organisatie blijft. Als uw organisatie iOS-apparaten heeft aangeschaft, kunt u deze vooraf registreren, zodat een apparaat wordt beheerd vanaf de eerste keer dat de gebruiker het inschakelt. Intune ondersteunt registratie via het [Device Enrollment Program (DEP) van Apple](ios-device-enrollment-program-in-microsoft-intune.md) of met behulp van het hulpprogramma Apple Configurator, dat wordt uitgevoerd op een Mac-computer voor [directe](ios-direct-enrollment-in-microsoft-intune.md) registratie of registratie met de [Configuratieassistent](ios-setup-assistant-enrollment-in-microsoft-intune.md).
@@ -53,6 +53,6 @@ Een uniek IMEI-nummer (International Mobile Equipment Identity) is voor veel fab
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

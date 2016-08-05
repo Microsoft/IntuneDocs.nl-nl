@@ -1,9 +1,10 @@
 ---
+
 title: Beleidsinstellingen voor Android en Samsung KNOXs | Microsoft Intune
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android-apparaten die u met Intune beheert.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,45 +14,45 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: e983f4ac4e396a30db19e5a0d487ac0f9c25ff14
+ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
+ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
 
 
 ---
 
 # Instellingen voor het Android- en Samsung KNOX-beleid in Microsoft Intune
 
-Intune biedt diverse ingebouwde algemene instellingen die u op Android-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
+Intune biedt diverse ingebouwde algemene instellingen die u op Android-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
 ## Algemeen configuratiebeleid
 
-Gebruik het **algemene Android-configuratiebeleid** van Microsoft Intune om instellingen te configureren voor:
+Gebruik het Intune **algemene Android-configuratiebeleid** om instellingen te configureren voor:
 
--   **Beveiligingsinstellingen voor mobiele apparaten** : hier kiest u uit een lijst met vooraf gedefinieerde instellingen waarmee u een bereik aan functies en functionaliteiten op het apparaat kunt beheren.
+-   **Beveiligingsinstellingen voor mobiele apparaten**: hier kiest u uit een lijst met vooraf gedefinieerde instellingen waarmee u een reeks functies en functionaliteiten op het apparaat kunt beheren.
 
 -   **Kioskmodus** (alleen voor Samsung KNOX-apparaten): hiermee kunt u een apparaat zodanig vergrendelen dat alleen bepaalde functies beschikbaar zijn. U kunt bijvoorbeeld toestaan dat een apparaat slechts één beheerde app uitvoert die u opgeeft, of kunt u de volumeknoppen op een apparaat uitschakelen. Deze instellingen kunnen worden gebruikt voor een demonstratiemodel van een apparaat of voor een apparaat dat is toegewezen aan slechts één functie, zoals een verkooppuntapparaat.
 
--   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met toepassingen die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd (de installatie van de app kan echter niet worden geblokkeerd).
+-   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met apps die compatibel of niet compatibel zijn in uw bedrijf. Op Android- en iOS-apparaten kan het **Rapport niet-compatibele apps** worden gebruikt om de compatibiliteit van apps die u in de lijst hebt opgegeven, te vergelijken met de apps die gebruikers hebben geïnstalleerd. Met het rapport kan de installatie van de app niet daadwerkelijk worden geblokkeerd.
 
 > [!TIP]
-> U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie [Beleidsinstellingen voor voorwaarden in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) voor meer informatie over het gebruik van voorwaarden.
+> U kunt voorwaarden voor gebruikers configureren om ervoor te zorgen dat ze ermee instemmen dat alle apps op hun apparaat, waaronder persoonlijke apps, worden geëvalueerd, en dat niet-compatibele apps worden geblokkeerd of gerapporteerd als niet-compatibel. Gebruikers moeten deze voorwaarden accepteren voordat ze hun apparaat kunnen registreren en de bedrijfsportal kunnen gebruiken om apps op te halen. Zie [Beleidsinstellingen voor voorwaarden in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) voor meer informatie over het gebruik van voorwaarden.
 
-Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u deze maken met behulp van een aangepast Android-beleid waarmee u OMA-URI-instellingen kunt gebruiken om het apparaat te beheren. Zie **Aangepaste beleidsinstellingen** verderop in dit onderwerp voor meer informatie.
+Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u deze maken met behulp van een aangepast Android-beleid waarmee u OMA-URI-instellingen kunt gebruiken om het apparaat te beheren. Ga naar [Aangepaste beleidsinstellingen](#custom-policy-settings) verderop in dit onderwerp voor meer informatie.
 
 ### Wachtwoordinstellingen
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
-|**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee vereist u een wachtwoord op ondersteunde apparaten.|Ja|Ja|
-|**Minimale wachtwoordlengte**|De minimale lengte van het wachtwoord.|Ja|Ja|
-|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Wist de gegevens op het apparaat als dit aantal aanmeldingspogingen mislukt.|Ja|Ja|
-|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Geef het aantal minuten op waarna het apparaat automatisch wordt vergrendeld.|Ja|Ja|
-|**Wachtwoordverlooptijd (dagen)**|Het aantal dagen waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
-|**Wachtwoordgeschiedenis onthouden**|Hoeveel eerder gebruikte wachtwoorden worden onthouden.|Ja|Ja|
-|**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat eerder gebruikte wachtwoorden opnieuw worden gebruikt.|Ja|Ja|
-|**Wachtwoordkwaliteit**|Hiermee selecteert u het complexiteitsniveau voor het wachtwoord en geeft u ook aan of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
+|**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Geeft aan of er een wachtwoord op ondersteunde apparaten is vereist of niet.|Ja|Ja|
+|**Minimale wachtwoordlengte**|Geeft de minimale lengte van het wachtwoord aan.|Ja|Ja|
+|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Geeft het aantal mislukte aanmeldingen aan dat is toegestaan voordat het apparaat wordt gewist.|Ja|Ja|
+|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Geeft het aantal minuten van inactiviteit aan waarna het apparaat automatisch wordt vergrendeld.|Ja|Ja|
+|**Wachtwoordverlooptijd (dagen)**|Geeft het aantal dagen aan waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
+|**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden aan dat moeten worden onthouden.|Ja|Ja|
+|**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat wachtwoorden opnieuw worden gebruikt.|Ja|Ja|
+|**Wachtwoordkwaliteit**|Hiermee geeft u het complexiteitsniveau voor het wachtwoord aan en of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
 |**Vingerafdruk voor ontgrendelen toestaan**|Hiermee wordt toegestaan dat het apparaat kan worden ontgrendeld met een vingerafdruk.|Nee|Ja|
-|**Smart Lock en andere vertrouwensagents toestaan**<br>(Android 5 en hoger)|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten beheren. Met deze telefoonmogelijkheid (soms ook wel vertrouwde agent genoemd) kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt, zoals wanneer het is verboden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt bevindt van een NFC-tag. U kunt deze instelling gebruiken om te voorkomen dat eindgebruikers Smart Lock configureren.|Ja|Nee|
+|**Smart Lock en andere vertrouwensagents toestaan**<br>(Android 5 en hoger)|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten beheren. Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt.) U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.|Ja|Nee|
 
 ### Versleutelingsinstellingen
 
@@ -72,7 +73,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
-|**Back-up van Google toestaan**|Het gebruik van Google-back-up toestaan.|Nee|Ja|
+|**Back-up van Google toestaan**|Hiermee wordt het gebruik van Google-back-up toegestaan.|Nee|Ja|
 
 ### Cloudinstellingen - accounts en synchronisatie
 
@@ -84,8 +85,8 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Webbrowser toestaan**|Hiermee geeft u op of de webbrowser op het apparaat kan worden gebruikt.|Nee|Ja|
-|**Automatisch invullen toestaan**|Hiermee staat u toe dat de functie Automatisch invullen van de webbrowser wordt gebruikt.|Nee|Ja|
+|**Webbrowser toestaan**|Hiermee geeft u op of de standaardwebbrowser op het apparaat kan worden gebruikt.|Nee|Ja|
+|**Automatisch invullen toestaan**|Hiermee staat u toe dat de functie voor automatisch invullen van de webbrowser wordt gebruikt.|Nee|Ja|
 |**Pop-upblokkering toestaan**|Hiermee kunt het gebruik van pop-upblokkering in de webbrowser toestaan.|Nee|Ja|
 |**Cookies toestaan**|Hiermee staat u toe dat de webbrowser van het apparaat gebruikmaakt van cookies.|Nee|Ja|
 |**Active Scripting toestaan**|Hiermee staat u toe dat de webbrowser van het apparaat gebruikmaakt van Active Scripting.|Nee|Ja|
@@ -114,8 +115,8 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Spraakroaming toestaan**|Hiermee staat u spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Ja|
-|**Gegevensroaming toestaan**|Hiermee staat u gegevensroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Ja|
-|**SMS- en MMS-berichten toestaan**|Hiermee staat u het gebruik van SMS- en MMS-berichten toe op het apparaat.|Nee|Ja|
+|**Gegevensroaming toestaan**|Hiermee staat u dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Ja|
+|**SMS- en MMS-berichten toestaan**|Hiermee staat u het gebruik van sms- en mms-berichten toe op het apparaat.|Nee|Ja|
 
 ### Instellingen voor apparaatmogelijkheden - functies
 
@@ -124,20 +125,20 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Spraakassistent toestaan**|Hiermee wordt het gebruik van de spraakassistent toegestaan op het apparaat.|Nee|Ja|
 |**Nummer inspreken toestaan**|Hiermee wordt de functie voor het inspreken van nummers op het apparaat in- of uitgeschakeld.|Nee|Ja|
 |**Kopiëren en plakken toestaan**|Hiermee wordt kopiëren en plakken toegestaan op het apparaat.|Nee|Ja|
-|**Klembord delen tussen toepassingen toestaan**|Het Klembord gebruiken om te kopiëren en plakken tussen apps .|Nee|Ja|
+|**Klembord delen tussen toepassingen toestaan**|Hiermee staat u het gebruik van het Klembord toe om te kopiëren en plakken tussen apps.|Nee|Ja|
 |**YouTube toestaan**|Hiermee wordt het gebruik van YouTube toegestaan op het apparaat.|Nee|Ja|
 
 ### Instellingen voor compatibele en niet-compatibele apps
-In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens:
+In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst op met compatibele of niet-compatibele apps die van de volgende gegevens gebruikmaken:
 
 > [!NOTE]
-> Een enkele beleidsregel kan alleen een lijst met compatibele of een lijst met niet-compatibele apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
+> Een enkele beleidsregel kan alleen een lijst met compatibele apps of een lijst met niet-compatibele apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
 |**Rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee worden de apps vermeld die niet worden beheerd door Intune en waarvan u niet wilt dat deze door gebruikers worden geïnstalleerd en uitgevoerd. Als gebruikers een van deze apps installeren, wordt deze vermeld in het rapport voor niet-compatibele apps.|
-|**Niet rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Vermeldt de apps die u wilt toestaan dat in uw bedrijf. Om te blijven voldoen aan het beleid, mogen gebruikers geen apps installeren die niet worden vermeld. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
-|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store.<br /><br />Zie URL’s voor app stores opgeven verderop in dit onderwerp voor meer informatie.|
+|**Niet rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Vermeldt de apps die u wilt toestaan. Om te blijven voldoen aan het beleid, mogen gebruikers geen apps installeren die niet worden vermeld. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
+|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef de naam van de app op, de uitgever van de app (optioneel) en de URL van de app in de app store.<br /><br />Zie[URL's voor app stores opgeven](#specify-urls-to-app-stores) verderop in dit onderwerp voor meer informatie.|
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
@@ -147,7 +148,7 @@ Geef de volgende instellingen op voor **Samsung KNOX-apparaten**:
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Kies **Bladeren** en selecteer vervolgens de beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de store worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.|
+|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Kies **Bladeren** en selecteer vervolgens de beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de Store worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.|
 |**Volumeknoppen toestaan**|Hiermee wordt het gebruik van de volumeknoppen op het apparaat in- of uitgeschakeld.|
 |**Knop voor slaapstand/ontwaken van scherm toestaan**|Hiermee wordt de knop voor slaapstand/ontwaken van het scherm in- of uitgeschakeld op het apparaat.|
 
@@ -160,19 +161,19 @@ Gebruik het **Rapport met niet-compatibele apps** om de compatibiliteit van toeg
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Rapporten** &gt; **Rapport met niet-compatibele apps**.
 
-2.  Selecteer de apparaatgroepen die u wilt controleren, of u nu op compatibele en/of op niet-compatibele apps wilt controleren, en kies vervolgens **Rapport weergeven**.
+2.  Selecteer de apparaatgroepen die u wilt controleren. Kies of u wilt controleren op compatibele apps, niet-compatibele apps of beide. En kies ten slotte **Rapport weergeven**.
 
 #### URL's voor app stores opgeven
-Als u een app-URL wilt opgeven in de lijst met compatibele apps, gebruikt u de volgende notatie:
+Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele apps, voert u de volgende stappen uit:
 
 In het [gedeelte Apps van Google Play](https://play.google.com/store/apps) zoekt u de app die u wilt gebruiken.
 
-Open de installatiepagina voor de app en kopieer de URL naar het klembord. U kunt deze nu als de URL gebruiken in de lijst met compatibele apps of de lijst met niet-compatibele apps.
+Open de installatiepagina voor de app en kopieer vervolgens de URL naar het klembord. U kunt deze nu als de URL gebruiken in de lijst met compatibele apps of de lijst met niet-compatibele apps.
 
-**Voorbeeld**: zoek in Google Play naar Microsoft Office Mobile. De URL die u gebruikt, is **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Voorbeeld: zoek in Google Play naar Microsoft Office Mobile. De URL die u gebruikt, is **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Aangepaste beleidsinstellingen
-Gebruik het **aangepaste Android-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om de functies voor Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
+Gebruik het **aangepaste Android-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om de functies op Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
 Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
 
@@ -210,18 +211,18 @@ Hoewel Wi-Fi-profielen voor Android-apparaten door Intune worden ondersteund, on
 |**Naam van de instelling**|Geef een naam op voor de instelling.|
 |**Beschrijving van de instelling**|Geef een beschrijving op voor de instelling.|
 |**Gegevenstype**|Selecteer **Tekenreeks (XML)**.|
-|**OMA-URI**|Voer het volgende in: ./Vendor/MSFT/WiFi/Profile/*&lt;uw Wi-Fi-profiel&gt;*/Settings|
+|**OMA-URI**|Typ het volgende: ./Vendor/MSFT/WiFi/Profile/*&lt;uw Wi-Fi-profiel&gt;*/Settings|
 
 3.  Bij **Waarde** plakt u de volgende XML-code:
 
     ```
     <!--
     WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile 
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+                    <Name of wifi profile> = Name of profile
+                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
                     <WEP password> = Password to connect to the network
     -->
-    <WLANProfile 
+    <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name><Name of wifi profile></name>
       <SSIDConfig>
@@ -255,7 +256,6 @@ Hoewel Wi-Fi-profielen voor Android-apparaten door Intune worden ondersteund, on
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

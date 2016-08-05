@@ -1,26 +1,26 @@
 ---
-title: Windows-pc's beheren met de Intune-pc-client | Microsoft Intune
-description: 
+title: Windows-pc's met Intune-client beheren | Microsoft Intune
+description: Beheer Windows-pc's door de Intune-clientsoftware te installeren.
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
-ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
 
 
 ---
 
 # Windows-pc's beheren met de Intune-pc-clientsoftware
-In plaats van [Windows-pc's als mobiele apparaten in te schrijven](set-up-windows-device-management-with-microsoft-intune.md), kunt u Windows-pc's beheren door de Intune-clientsoftware te installeren. 
+In plaats van [Windows-pc's als mobiele apparaten in te schrijven](set-up-windows-device-management-with-microsoft-intune.md), kunt u Windows-pc's beheren door de Intune-clientsoftware te installeren.
 
 Intune beheert Windows-pc’s met beleidsregels op een manier die lijkt op hoe Windows Server Active Directory Domain Services (AD DS) dat met groepsbeleidsobjecten doet. Als u Active Directory-computers die lid zijn van een domein, wilt beheren met Intune, moet u [ervoor zorgen dat het Intune-beleid niet in strijd is met de groepsbeleidsobjecten](resolve-gpo-and-microsoft-intune-policy-conflicts.md) die in uw organisatie van kracht zijn.
 
@@ -86,6 +86,6 @@ De Intune-clientagent wordt doorgaans in stille modus op de achtergrond uitgevoe
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

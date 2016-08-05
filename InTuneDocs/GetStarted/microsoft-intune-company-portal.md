@@ -3,7 +3,7 @@ title: Microsoft Intune-bedrijfsportal | Microsoft Intune
 description: Intune-bedrijfsportal installeren
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
 
 
 ---
@@ -28,7 +28,7 @@ De Intune-bedrijfsportal is een hulpprogramma waarmee gebruikers toegang krijgen
 -   **De bedrijfsportal-app**: een toepassing die beschikbaar is op apparaten die u beheert met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Meer informatie over de bedrijfsportal-apps voor [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) en [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **De bedrijfsportal-website**: een website die u kunt openen vanuit een [ondersteunde browser](supported-web-browsers.md). De URL is [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Meer informatie over deze website vindt u in [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website).
+- **De bedrijfsportal-website**: dit is een website die toegankelijk is vanuit een [ondersteunde browser](supported-web-browsers.md) en waarmee eindgebruikers de meeste taken kunnen uitvoeren die ze ook met hun platformspecifieke bedrijfsportal-app kunnen uitvoeren. De URL is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Meer informatie over deze website vindt u in [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Gebruikers kunnen in de bedrijfsportal onder andere de volgende taken uitvoeren:
 
@@ -53,6 +53,6 @@ Voordat een gebruiker toegang heeft tot de bedrijfsportal, moet aan het account 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

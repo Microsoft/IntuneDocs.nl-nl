@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Mobile Device Management met Exchange ActiveSync en Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Exchange ActiveSync Device Management | Microsoft Intune
+description: Het direct beheren van mobiele apparaten die gebruikers niet hebben geregistreerd bij Exchange ActiveSync-beheer (EAS) met behulp van de Exchange-connector
+keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: f545c7db4c29690a72c5a84dfcab6f179cbe72a2
+
 
 ---
 
@@ -41,7 +35,7 @@ Met de Exchange-connector kunt u uw Exchange-implementatie in de Intune-console 
 -   [De Intune-servicesconnector configureren voor gehoste Exchange](intune-service-to-service-exchange-connector.md)
 
 ## Beleid voor door Exchange beheerde mobiele apparaten toepassen
-Beleidsinstellingen kunnen worden toegepast via de Intune-console. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Voor een lijst met Exchange ActiveSync-beleidsinstellingen en -functies die worden ondersteund door specifieke mobiele apparaten, raadpleegt u [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270)..
+Beleidsinstellingen kunnen worden toegepast via de Intune-console. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Voor een lijst met Exchange ActiveSync-beleidsinstellingen en -functies die worden ondersteund door specifieke mobiele apparaten, raadpleegt u de [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270).
 
 > [!NOTE]
 > Wanneer u Intune hebt verbonden met een Microsoft Exchange-omgeving, wordt het EAS-beleid van alle gebruikers die via Intune worden beheerd, opnieuw ingesteld op het huidige standaardbeleid op de Microsoft Exchange-server, tenzij er binnen Intune een meer specifiek beleid is gedefinieerd.
@@ -50,6 +44,7 @@ Beleidsinstellingen kunnen worden toegepast via de Intune-console. Zie [Instelli
 Ten slotte kunt u [bedrijfsgegevens van door EAS beheerde mobiele apparaten wissen](wipe-for-exchange-managed-mobile-devices.md) wanneer deze apparaten niet langer in gebruik zijn, of zijn gestolen of verloren.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

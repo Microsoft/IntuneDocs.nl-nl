@@ -3,7 +3,7 @@ title: Instellingen voor nalevingsbeleid voor Android-apparaten | Microsoft Intu
 description: In dit onderwerp worden de instellingen voor het nalevingsbeleid voor Android-apparaten beschreven.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
+ms.sourcegitcommit: 465a5f305ac191fdf761997df565423f4349ff91
+ms.openlocfilehash: ed358c07594507d3a9144e9c686b54dcbd30aede
 
 
 ---
@@ -56,9 +56,17 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 ### Versleuteling
 - **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt dat apparaten moeten worden versleuteld om verbinding te maken met resources. Apparaten worden versleuteld wanneer u de instelling **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** configureert.
 
-## Instellingen voor de status van het apparaat
+## Status en beveiligingsinstellingen van apparaat
 
 - **Jailbreaken of uitvoeren als rootgebruiker niet toegestaan:** als u deze instelling inschakelt, worden apparaten waarop jailbreaking is uitgevoerd of die als rootgebruiker worden uitgevoerd als niet-compatibel beschouwd.
+- **Vereisen dat de installatie van apps van onbekende bronnen wordt voorkomen (Android 4.0 en hoger)** Als u apparaten wilt blokkeren waarop **Beveiliging > Onbekende bronnen** op het apparaat is ingeschakeld, moet u deze instelling inschakelen en op **Ja** instellen.  
+>[!IMPORTANT]
+>Sideloading-toepassingen vereisen dat de instelling **Onbekende bronnen** is ingeschakeld.  U moet dit nalevingsbeleid alleen afdwingen als u Android-apps niet met behulp van sideloading op apparaten laadt.
+
+- **Vereisen dat de USB-foutopsporing is uitgeschakeld (Android 4.2 of hoger)**: deze instelling bepaalt of moet worden gedetecteerd of de USB-foutopsporingsoptie op het apparaat is ingeschakeld.
+- **Vereisen dat Apparaat scannen op beveiligingsbedreigingen is ingeschakeld op apparaten (Android 4.2 - 4.4)**: deze instelling geeft aan dat de functie **Apps controleren** is ingeschakeld op het apparaat.
+- **Minimaal niveau voor de Android-beveiligingspatch (Android 6.0 of hoger)**: gebruik deze instelling om het minimale Android-patchniveau op te geven.  Apparaten die niet ten minste dit patchniveau hebben, worden als niet-compatibel gezien. De datum moet de volgende notatie hebben: dd-mm-jjjj.
+
 
 ## Instellingen voor apparaateigenschappen
 - **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
@@ -68,6 +76,6 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

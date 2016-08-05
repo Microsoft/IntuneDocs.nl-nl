@@ -3,8 +3,8 @@ title: Voorbereidingen voor de configuratie van MAM-beleid | Microsoft Intune
 description: In dit onderwerp worden de vereisten en het instellen van gebruikers beschreven voordat u Mobile App Management (MAM)-beleid kunt maken.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
 
 
 ---
@@ -79,11 +79,13 @@ Ga voor de volledige lijst met ondersteunde Microsoft-apps naar de [galerie met 
 
     ![Pagina Actieve gebruikers in de Office-portal](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Gebruikerspagina in de Office-portal bewerken](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  Als u een gebruiker toegang wilt geven tot de Office-portal, de Azure AD-portal en de Azure Portal, wijst u aan de gebruiker de **rol van algemeen beheerder** toe.
 
     ![Pagina voor het bewerken van gebruikersrollen in de Office-portal](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  MAM-beleid wordt voor gebruikersgroepen geïmplementeerd in Azure Active Directory. Als u gebruikersgroepen wilt maken voor uw MAM-beleid, gaat u naar de pagina **Groepen** in de Office-portal en klikt u op het pictogram **+** om een nieuwe beveiligingsgroep te maken.  Voer een naam en beschrijving in en klik op **Maken**. Nadat de groep is gemaakt, kunt u gebruikers aan de groep toevoegen door te klikken op **Leden bewerken**. De beveiligingsgroep wordt gemaakt in Azure Active Directory.
+5.  MAM-beleid wordt voor gebruikersgroepen geïmplementeerd in Azure Active Directory. Als u gebruikersgroepen wilt maken voor uw MAM-beleid, gaat u naar de pagina **Groepen** in de Office-portal en kiest u de optie **Een groep toevoegen** om een nieuwe beveiligingsgroep te maken.  Voer een naam en beschrijving in en klik op **Maken**. Nadat de groep is gemaakt, kunt u gebruikers aan de groep toevoegen door te klikken op **Leden bewerken**. De beveiligingsgroep wordt gemaakt in Azure Active Directory.
 
     ![Pagina voor beveiligingsgroepen in de Office-portal](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ Algemene beheerders hebben toegang tot de [Azure Portal](https://portal.azure.co
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

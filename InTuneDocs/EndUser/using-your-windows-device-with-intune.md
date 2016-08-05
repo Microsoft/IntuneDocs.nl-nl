@@ -3,8 +3,8 @@ title: Uw Windows-apparaat gebruiken met Intune | Microsoft Intune
 description: Lijst met koppelingen naar taken die u op uw Windows-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
 
 
 ---
 
 # Uw Windows-apparaat gebruiken met Intune
 
-Volg deze stappen voor taken die u op een Windows-apparaat of -computer moet uitvoeren als uw bedrijf Microsoft Intune gebruikt.
+Deze pagina bevat koppelingen naar alle taken die eindgebruikers op hun door Intune-beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: informatie met betrekking tot inschrijvingen, beheertaken en nalevingskwesties.
 
 ## Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 
@@ -57,8 +57,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -12,8 +12,11 @@
 ### [Een proefversie starten en iOS-pincodebeleid implementeren](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [Toegang tot e-mail instellen voor iOS-apparaten](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Algemene scenario's](common-ways-to-use-intune.md)
-
-<!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
+## [Snelstartgidsen](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Mobiele apps naar uw gebruikers publiceren](publish-mobile-apps-to-users.md)
+### [Windows-pc's beschermen tegen schadelijke software](protect-pcs-against-malware-threats.md)
+### [Configuratie van e-mail op mobiele apparaten vereenvoudigen](simplify-email-configuration-on-mobile-devices.md)
 
 # [Aan de slag](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -22,6 +25,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

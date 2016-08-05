@@ -3,8 +3,8 @@ title: Certificaatprofielen configureren | Microsoft Intune
 description: Informatie over het maken van een certificaatprofiel van Intune.
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ U moet een **profiel voor een vertrouwd certificaat** maken voordat u een SCEP- 
 
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Geef de gevraagde informatie op om de instellingen van het profiel voor een vertrouwd certificaat voor Android, iOS, Mac OS X, Windows 8.1 of Windows Phone 8.1 te configureren. In de instelling van het **certificaatbestand** importeert u het vertrouwde basis-CA-certificaat (**.cer**) dat u vanuit uw verlenende CA hebt geëxporteerd. De instelling van het **doelarchief** geldt alleen voor apparaten met Windows 8.1 en hoger, en alleen als het apparaat meer dan één certificaatarchief heeft.
+3.  Geef de gevraagde informatie op om de instellingen van het profiel voor een vertrouwd certificaat voor Android, iOS, Mac OS X, Windows 8.1 of Windows Phone 8.1 te configureren. 
+
+    - In de instelling van het **certificaatbestand** importeert u het vertrouwde basis-CA-certificaat (**.cer**) dat u vanuit uw verlenende CA hebt geëxporteerd. De instelling van het **doelarchief** geldt alleen voor apparaten met Windows 8.1 en hoger, en alleen als het apparaat meer dan één certificaatarchief heeft.
+
+    
+    - Onder **Indeling van de naam van de certificaathouder**, selecteert u **Aangepaste** om een aangepaste indeling voor de naam van de certificaathouder op te geven.  
+
+        De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn **Algemene naam (CN)** en **E-mail (E)**. Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, zoals in dit voorbeeld wordt weergegeven:  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        In dit voorbeeld heeft de beheerder een indeling voor de naam van een certificaathouder gemaakt, waarin behalve de variabelen CN en E, wordt gebruikgemaakt van tekenreeksen voor de organisatie-eenheid, de organisatie, de locatie, de regio en het land. Een lijst met ondersteunde tekenreeksen vindt u bij het onderwerp [De functie CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  Wanneer u klaar bent, klikt u op **Beleid opslaan**.
@@ -83,6 +94,15 @@ Nadat u een profiel voor een vertrouwd CA-certificaat hebt gemaakt, maakt u SCEP
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Volg de instructies op de profielconfiguratiepagina om de instellingen voor het SCEP-certificaatprofiel te configureren.
+    > [!NOTE]
+    > 
+    > Onder **Indeling van de naam van de certificaathouder**, selecteert u **Aangepaste** om een aangepaste indeling voor de naam van de certificaathouder op te geven.
+    > 
+    >  De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn Algemene naam (CN) en E-mail (E). Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, zoals in dit voorbeeld wordt weergegeven:
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    In dit voorbeeld heeft de beheerder een indeling voor de naam van een certificaathouder gemaakt, waarin behalve de variabelen *CN* en *E*, wordt gebruikgemaakt van tekenreeksen voor de organisatie-eenheid, de organisatie, de locatie, de regio en het land. Een lijst met ondersteunde tekenreeksen vindt u bij het onderwerp [De functie CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
 4.  Wanneer u klaar bent, klikt u op **Beleid opslaan**.
 
@@ -145,6 +165,6 @@ U kunt nu certificaten gebruiken om e-mail-, Wi-Fi- en VPN-profielen te beveilig
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

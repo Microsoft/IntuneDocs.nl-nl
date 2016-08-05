@@ -3,7 +3,7 @@ title: iOS-apparaten inschrijven via Configuratieassistent | Microsoft Intune
 description: Zakelijke iOS-apparaten inschrijven met behulp van het hulpprogramma Apple Configurator om de fabrieksinstellingen van het apparaat terug te zetten en dit voor te bereiden voor de Configuratieassistent.
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
 
 
 ---
@@ -38,8 +38,7 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
 
 2.  **Een profiel maken voor apparaten** Met een registratieprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. Als u dit nog niet hebt gedaan, maakt u een inschrijvingsprofiel voor iOS-apparaten die worden ingeschreven met Apple Configurator.
 
-    1.  Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Apparaten in bedrijfseigendom** en kies vervolgens **Toevoegen...**.
-
+    1.  Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies vervolgens **Toevoegen...**.
     ![Inschrijvingsprofiel voor apparaten maken](../media/pol-sa-corp-enroll.png)
 
     2.  Geef details voor de apparaatprofielen op:
@@ -50,14 +49,9 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
 
         -   **Inschrijvingsgegevens**: hiermee geeft u op hoe apparaten worden ingeschreven.
 
-            -   **Vragen voor relatie met gebruiker**: tijdens de eerste configuratie kan het iOS-apparaat aan een gebruiker worden gekoppeld en vervolgens als die gebruiker toegang krijgen tot gegevens en e-mail van het bedrijf. Gebruik voor de meeste scenario's met Configuratieassistent de optie **Vragen naar gebruikersaffiniteit**.
-            In deze modus wordt een aantal scenario's ondersteund:
+            -   **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie en vervolgens als die gebruiker toegang tot gegevens en e-mail van het bedrijf krijgen. **Gebruikersaffiniteit** moet worden geconfigureerd voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren).
 
-                -   **Persoonlijke apparaten die eigendom zijn van het bedrijf**: “Choose Your Own Device” (CYOD). Dit is hetzelfde als apparaten die privé-eigendom zijn of persoonlijke apparaten, maar de beheerder heeft bepaalde bevoegdheden, bijvoorbeeld om het apparaat te wissen, opnieuw in te stellen, te beheren en de inschrijving ervan ongedaan te maken. De gebruiker van het apparaat kan apps installeren en heeft de meeste andere machtigingen voor het gebruik van het apparaat wanneer dit niet wordt geblokkeerd door beheerbeleidsregels.
-
-                -   **Beheerdersaccount voor apparaatinschrijving**: het apparaat wordt ingeschreven met een speciaal Intune-beheerdersaccount. Het kan worden beheerd als een persoonlijke account, maar alleen een gebruiker die de inschrijvingsbeheerreferenties kent, kan apps installeren en het apparaat wissen, opnieuw instellen, beheren en de inschrijving ervan ongedaan maken. Zie [Apparaten in bedrijfseigendom registreren met apparaatregistratiebeheer in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) voor meer informatie over het registreren van een apparaat dat door veel gebruikers wordt gedeeld via een gemeenschappelijk account.
-
-            -   **Geen relatie met gebruiker**: er is geen gebruiker aan het apparaat gekoppeld. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps die een gebruikersrelatie vereisen, zijn uitgeschakeld of werken niet.
+            -   **Geen gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die gebruikt wordt voor het installeren van LOB-apps, zullen niet werken.
 
         -   **Vooraf toegewezen apparatengroep**: alle apparaten waarvoor dit profiel wordt geïmplementeerd, behoren in eerste instantie tot deze groep. U kunt apparaten na de inschrijving opnieuw toewijzen.
 
@@ -121,26 +115,24 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
 
     3. Voer de **naam** en **inschrijvings-URL** voor de MDM-server in met de gegevens uit stap 6 hierboven. Voer voor de inschrijvings-URL de profiel-URL voor inschrijving in die u hebt geëxporteerd uit Intune. Kies **Volgende**.  
 
-       Als er een waarschuwing wordt weergegeven over vereisten voor vertrouwde profielen voor Apple TV, kunt u de optie **Vertrouwd profiel** veilig annuleren door de grijze X te kiezen. U kunt een certificaatwaarschuwing met een anker ook veilig negeren. Als u wilt doorgaan, kiest u **Volgende** totdat de wizard is voltooid.
+       Als er een waarschuwing 'Server-URL is niet geverifieerd' wordt weergegeven, kunt u deze waarschuwing zonder problemen negeren. Als u wilt doorgaan, kiest u **Volgende** totdat de wizard is voltooid.
 
-    4.  Kies in het deelvenster **Servers** de optie Bewerken naast het profiel van de nieuwe server. Zorg ervoor dat de inschrijvings-URL exact overeenkomt met de URL die is geëxporteerd uit Intune. Voer de oorspronkelijke URL opnieuw in als deze afwijkt en **sla** het inschrijvingsprofiel op dat is geëxporteerd uit Intune.
-
-    5.  Verbind de mobiele iOS-apparaten met de Apple-computer met een USB-adapter.
+    4.  Verbind de mobiele iOS-apparaten met de Apple-computer met een USB-adapter.
 
         > [!WARNING]
         > De apparaten worden tijdens het inschrijvingsproces opnieuw ingesteld op de fabrieksconfiguraties. U kunt het apparaat het beste opnieuw instellen en inschakelen. U kunt Configuratieassistent het beste starten wanneer het scherm **Hallo** wordt weergegeven.
 
-    6.  Kies **Voorbereiden**. Selecteer in het deelvenster **iOS-apparaat voorbereiden** de optie **Handmatig** en kies vervolgens **Volgende**.
+    5.  Kies **Voorbereiden**. Selecteer in het deelvenster **iOS-apparaat voorbereiden** de optie **Handmatig** en kies vervolgens **Volgende**.
 
-    7. Selecteer in het deelvenster **Registreren bij MDM-server** de naam van de server die u hebt gemaakt en kies vervolgens **Volgende**.
+    6. Selecteer in het deelvenster **Registreren bij MDM-server** de naam van de server die u hebt gemaakt en kies vervolgens **Volgende**.
 
-    8. Selecteer in het deelvenster **Apparaten onder supervisie plaatsen** het toezichtsniveau en kies **Volgende**.
+    7. Selecteer in het deelvenster **Apparaten onder supervisie plaatsen** het toezichtsniveau en kies **Volgende**.
 
-    9. Kies in het deelvenster **Een organisatie maken** de **Organisatie** of maak een nieuwe organisatie en kies vervolgens **Volgende**.
+    8. Kies in het deelvenster **Een organisatie maken** de **Organisatie** of maak een nieuwe organisatie en kies vervolgens **Volgende**.
 
-    10. Kies in het deelvenster **iOS-configuratieassistent configureren** de stappen die de gebruiker krijgt te zien en kies vervolgens **Voorbereiden**. Voer een verificatie uit om de vertrouwensinstellingen bij te werken als dit wordt gevraagd.  
+    9. Kies in het deelvenster **iOS-configuratieassistent configureren** de stappen die de gebruiker krijgt te zien en kies vervolgens **Voorbereiden**. Voer een verificatie uit om de vertrouwensinstellingen bij te werken als dit wordt gevraagd.  
 
-    11. Zodra het iOS-apparaat klaar is met de voorbereidingen, kunt u de USB-kabel verwijderen.  
+    10. Zodra het iOS-apparaat klaar is met de voorbereidingen, kunt u de USB-kabel verwijderen.  
 
 8.  **Apparaten distribueren** De apparaten zijn nu gereed voor bedrijfsregistratie. Schakel de apparaten uit en distribueer ze naar gebruikers. Wanneer het apparaat is ingeschakeld, wordt Configuratieassistent gestart.
 
@@ -151,6 +143,6 @@ Met behulp van Apple Configurator kunt u de fabrieksinstellingen van iOS-apparat
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

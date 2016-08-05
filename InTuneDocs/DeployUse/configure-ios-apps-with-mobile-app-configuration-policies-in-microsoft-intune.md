@@ -1,9 +1,9 @@
 ---
 title: Configuratiebeleid voor mobiele iOS-apps gebruiken | Microsoft Intune
-description: Het configuratiebeleid voor mobiele apps in Intune gebruiken om instellingen op te geven die mogelijk zijn vereist wanneer de gebruiker een iOS-app uitvoert.
+description: Gebruik het configuratiebeleid voor mobiele apps in Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een iOS-app uitvoeren.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,74 +13,52 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: faf65ddbb4772f8c0ce0a4125bb108b3b1bcfb5c
+ms.sourcegitcommit: f8808c064589128f7daae810ffbcb3595270685d
+ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
 
 
 ---
 
 # iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren
-Gebruik het configuratiebeleid voor mobiele apps in Microsoft Intune om instellingen op te geven die mogelijk zijn vereist wanneer de gebruiker een app uitvoert. Een app kan de gebruiker bijvoorbeeld verplichten het volgende op te geven:
+Gebruik het configuratiebeleid voor mobiele apps in Microsoft Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een iOS-app uitvoeren. Een app kan gebruikers bijvoorbeeld verplichten het volgende op te geven:
 
--   Een aangepast poortnummer wanneer de app wordt uitgevoerd
+-   Een aangepast poortnummer.
 
--   Taalinstellingen
+-   Taalinstellingen.
 
--   Beveiligingsinstellingen
+-   Beveiligingsinstellingen.
 
--   Huisstijlinstellingen, zoals een bedrijfslogo
+-   Huisstijlinstellingen, zoals een bedrijfslogo.
 
-Als deze instellingen niet correct door de gebruiker worden ingevoerd, kan dit de werkbelasting van uw helpdesk verhogen en ook de acceptatie van nieuwe apps vertragen.
+Als gebruikers deze instellingen niet correct opgeven, kan dit de werkbelasting van uw helpdesk verhogen en de acceptatie van nieuwe apps vertragen.
 
-Configuratiebeleid voor mobiele apps kan ervoor zorgen dat deze problemen worden voorkomen doordat u deze instellingen bij gebruikers in een beleid kunt implementeren voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruiker hoeft geen enkele actie te ondernemen.
+Configuratiebeleid voor mobiele apps kan ervoor zorgen dat deze problemen worden voorkomen doordat u deze instellingen bij gebruikers in een beleid kunt implementeren voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruikers hoeven geen enkele actie te ondernemen.
 
-U implementeert dit beleid niet rechtstreeks bij gebruikers en apparaten. In plaats daarvan koppelt u het beleid aan een app en implementeert u vervolgens de app. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
+U implementeert dit beleid niet rechtstreeks bij gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en implementeert u vervolgens de app. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
 
 > [!TIP]
-> Dit beleidstype is momenteel alleen beschikbaar op apparaten met iOS 7.1 en later en ondersteunt de volgende app-installatiestypen:
-> 
+> Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 7.1 en hoger. Ondersteunt de volgende typen app-installaties:
+>
 > -   **Beheerde iOS-app uit de App Store**
 > -   **App-pakket voor iOS**
-> 
+>
 > Zie [Apps implementeren met Microsoft Intune](deploy-apps.md) voor meer informatie over app-installatietypen.
 
 ## Een configuratiebeleid voor mobiele apps configureren
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
 
-2.  Vouw in de lijst met beleidsregels **iOS**uit, klik op **Configuratie van mobiele app**en klik vervolgens op **Beleid maken**.
+2.  Vouw in de lijst met beleidsregels **iOS**uit, kies **Configuratie van mobiele app**en kies vervolgens **Beleid maken**.
 
     > [!TIP]
     > U kunt alleen aangepaste instellingen voor dit beleidstype configureren. Aanbevolen instellingen zijn niet beschikbaar.
 
 3.  Geef in de sectie **Algemeen** op de pagina **Beleid maken** een naam en optionele beschrijving op voor het configuratiebeleid voor de mobiele app.
 
-4.  In het gedeelte **Configuratiebeleid voor mobiele app** van de pagina typt of plakt u een XML-eigenschappenlijst met de configuratie-instellingen voor de app in het vak.
+4.  In het gedeelte **Configuratiebeleid voor mobiele app** van de pagina typt of plakt u in het vak een XML-eigenschappenlijst met de door u gewenste configuratie-instellingen voor de app. De indeling van de XML-eigenschappenlijst is afhankelijk van de app die u wilt configureren. Neem contact op met de leverancier van de app voor meer informatie over de precieze indeling die moet worden gebruikt.
 
     > [!TIP]
     > Zie [XML-eigenschappenlijsten](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in de iOS-ontwikkelaarsbibliotheek voor meer informatie over XML-eigenschappenlijsten.
-    > 
-    > De indeling van de XML-eigenschappenlijst is afhankelijk van de app die u wilt configureren. Neem contact op met de leverancier van de app voor meer informatie over de precieze indeling die moet worden gebruikt.
-    > 
-    > Intune ondersteunt de volgende gegevenstypen in een eigenschappenlijst:
-    > 
-    > &lt;geheel getal&gt;
-    > &lt;real&gt;
-    > &lt;tekenreeks&gt;
-    > &lt;matrix&gt;
-    > &lt;dict&gt;
-    > &lt;waar/&gt; or &lt;onwaar/&gt;
-    > 
-    > Zie [Over eigenschappenlijsten](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in de iOS-ontwikkelaarsbibliotheek voor meer informatie over gegevenstypen.
-    >
-        > Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen:
-    >    
-    > \{\{userprincipalname\}\} - (Voorbeeld: **John@contoso.com**) \{\{mail\}\} - (Voorbeeld: **John@contoso.com**) \{\{partialupn\}\} - (Voorbeeld: **John**) \{\{accountid\}\} - (Voorbeeld: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (Voorbeeld: **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (Example: **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (Voorbeeld: **John Doe**) \{\{serialnumber\}\} - (Voorbeeld: **F4KN99ZUG5V2**) voor iOS-apparaten\{\{serialnumberlast4digits\}\} - (Example: **G5V2**) voor iOS-apparaten
->
-> De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet worden gebruikt voor andere doeleinden.
-
-
-
 
 5.  Klik op **Valideren** om ervoor te zorgen dat het XML-bestand dat u hebt opgegeven een geldige indeling voor de eigenschappenlijst heeft.
 
@@ -90,6 +68,32 @@ U implementeert dit beleid niet rechtstreeks bij gebruikers en apparaten. In pla
 6.  Wanneer u alle instellingen hebt toegevoegd, klikt u op **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** .
+
+## Informatie over de XML-indeling
+
+Intune ondersteunt de volgende gegevenstypen in een eigenschappenlijst:
+    
+- &lt;integer&gt;
+- &lt;real&gt;
+- &lt;string&gt;
+- &lt;matrix&gt;
+- &lt;dict&gt;
+- &lt;waar /&gt; of &lt;onwaar /&gt;
+     
+Zie [Over eigenschappenlijsten](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in de iOS-ontwikkelaarsbibliotheek voor meer informatie over gegevenstypen.
+
+Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen:
+- \{\{userprincipalname\}\} - (voorbeeld: **John@contoso.com**)
+- \{\{mail\}\} - (voorbeeld: **John@contoso.com**)
+- \{\{partialupn\}\} - (voorbeeld: **John**)
+- \{\{accountid\}\} - (voorbeeld: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} - (voorbeeld: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} - (voorbeeld: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} - (voorbeeld: **John Doe**)
+- \{\{serialnumber\}\} - (voorbeeld: **F4KN99ZUG5V2**) voor iOS apparaten
+- \{\{serialnumberlast4digits\}\} - (voorbeeld: **G5V2**) voor iOS apparaten
+    
+De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet worden gebruikt voor andere doeleinden.
 
 ## Een configuratiebeleid voor mobiele apps aan een app koppelen
 Nadat u een configuratiebeleid voor mobiele apps hebt gemaakt, moet u dit koppelen aan de iOS-app waarop u de instellingen in het configuratiebeleid wilt toepassen.
@@ -101,11 +105,11 @@ Ga daarna verder met de gebruikelijke implementatie van de app.
 Wanneer de geïmplementeerde app op een apparaat wordt uitgevoerd, worden de instellingen uitgevoerd die u in het configuratiebeleid voor de mobiele app hebt geconfigureerd.
 
 > [!TIP]
-> Als een of meer configuratiebeleidsregels voor de mobiele app met elkaar in strijd zijn, wordt geen van beide beleidsregels geïmplementeerd en wordt het conflict gerapporteerd in de Intune-beheerconsole **Dashboard**.
+> Als de configuratiebeleidsregels van een of meer mobiele apps met elkaar in conflict zijn, wordt geen van de beleidsregels afgedwongen. Het conflict wordt gemeld in het **Dashboard** in de Intune-beheerconsole.
 
 ## Voorbeeld van een indeling voor het XML-configuratiebestand voor een mobiele app
 
-Wanneer u een configuratiebestand voor een mobiele app maakt, kunt u een of meer van de volgende waarden opgeven in deze indeling:
+Wanneer u een configuratiebestand voor een mobiele app maakt, kunt u een of meer van de volgende waarden opgeven door van deze indeling gebruik te maken:
 
 ```
 <dict>
@@ -135,8 +139,6 @@ Wanneer u een configuratiebestand voor een mobiele app maakt, kunt u een of meer
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

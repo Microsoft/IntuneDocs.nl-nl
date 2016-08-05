@@ -1,25 +1,26 @@
 ---
-title: Apparaten in bedrijfseigendom met een IMEI-nummer opgeven | Microsoft Intune
-description: 
+title: IMEI-nummers opgeven | Microsoft Intune
+description: Met Microsoft Intune kunnen beheerders IMEI-nummers importeren voor platforms voor mobiele apparaten om ze te helpen bij het identificeren van mobiele apparaten in bedrijfseigendom
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
-ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+translationtype: Human Translation
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 4e2092182dbda4523c19afeabc34aa0166962c40
 
 
 ---
 
 # Apparaten in bedrijfseigendom met een IMEI-nummer opgeven
-Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune beheerders in staat om IMEI-nummers (International Mobile Equipment Identity-nummers) te importeren voor mobiele apparaten die hierover beschikken. Zodra apparaten met geïmporteerde IMEI-nummers zijn geregistreerd bij Intune, kunnen ze worden weergegeven onder **Groepen** > **Overzicht** > **Alle apparaten** > **Vooraf geregistreerde bedrijfsapparaten** > **Op IMEI (alle platformen)**.
+Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune beheerders in staat om IMEI-nummers (International Mobile Equipment Identity-nummers) te importeren voor mobiele apparaten die hierover beschikken. Zodra apparaten met geïmporteerde IMEI-nummers zijn geregistreerd bij Intune, kunnen ze worden bekeken onder **Groepen** > **Overzicht** > **Alle apparaten**. **Apparaatgroep**-lijsten bevatten apparaten met geïmporteerde IMEI-nummers en worden als **Bedrijf** in de kolom **Eigendom** weergegeven.
 
 1. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle vooraf geregistreerde bedrijfsapparaten** &gt; **Op IMEI (alle platformen)** en kies vervolgens **Apparaten toevoegen…**. U kunt apparaten op twee manieren toevoegen:
 
@@ -48,6 +49,6 @@ Wanneer het apparaat met het betreffende IMEI-nummer wordt geregistreerd, gewoon
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

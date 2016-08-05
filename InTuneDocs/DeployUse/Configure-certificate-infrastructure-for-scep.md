@@ -3,8 +3,8 @@ title: De certificaatinfrastructuur voor SCEP configureren |Microsoft Intune
 description: Infrastructuur voor het maken en implementeren van SCEP-certificaatprofielen.
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: e7d6bc1e06217237a79c547c9b449c1fc16aeed4
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # De certificaatinfrastructuur voor SCEP configureren
@@ -44,6 +44,8 @@ I
 Van internet naar het perimeternetwerk, poort 443 toestaan van alle hosts/IP-adressen op internet naar de NDES-server.
 
 Van het perimeternetwerk naar het vertrouwde netwerk, alle poorten en protocollen toestaan die nodig zijn voor domeintoegang tot de NDES-server die lid is van het domein. De NDES-server moet toegang hebben tot de certificaatservers, DNS-servers, Configuration Manager-servers en domeincontrollers.
+
+Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-toepassingsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) of een proxy van een derde partij.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Certificaten en sjablonen
@@ -347,6 +349,6 @@ U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Ce
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

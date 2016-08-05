@@ -3,8 +3,8 @@ title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden met behulp
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
@@ -23,9 +23,11 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 # Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden met behulp van een USB-kabel
 
-Als u een gegevenslogboek naar uw IT-beheerder wilt verzenden om hulp te krijgen bij een probleem, kunt u de logboeken verzenden met behulp van een computer en een USB-kabel in plaats van vanaf uw mobiele apparaat. Dit werkt als volgt:
+Als u gegevenslogboeken naar uw IT-beheerder wilt verzenden om hulp te krijgen bij een probleem, kunt u de logboeken verzenden met behulp van een computer en een USB-kabel in plaats van vanaf uw mobiele apparaat. Dit werkt als volgt:
 
-1.  Voordat u begint, moet u ervoor zorgen dat u over het e-mailadres van de IT-beheerder beschikt. Het wordt normaal gesproken vermeld op de bedrijfsportalwebsite of in de bedrijfsportal-app.
+1.  Tik op het foutscherm op **Info verzenden**. Wanneer er een bericht wordt weergegeven waarin u wordt gevraagd welke methode u wilt gebruiken voor het verzenden van de logboeken, kiest u de optie waarbij de bestanden op uw apparaat worden opgeslagen.
+
+2.  Voordat u begint, moet u ervoor zorgen dat u het e-mailadres van de IT-beheerder hebt. Dit vindt u doorgaans op uw [bedrijfsportalwebsite](http://portal.manage.microsoft.com) of in de bedrijfsportal-app.
 
 2.  Sluit uw Android-apparaat met een USB-kabel op een computer aan.
 
@@ -33,12 +35,13 @@ Als u een gegevenslogboek naar uw IT-beheerder wilt verzenden om hulp te krijgen
 
 4.  Voeg alle bestanden toe aan een e-mailbericht en verzend dit naar de IT-beheerder.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 ### Zie tevens
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 
