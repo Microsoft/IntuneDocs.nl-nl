@@ -3,8 +3,8 @@ title: Uw Windows 8.1- of Windows RT 8.1-apparaat inschrijven | Microsoft Intune
 description: Informatie over hoe u een Windows 8.1 of Windows RT 8.1-apparaat bij Intune kunt inschrijven
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: f0cbecec3d13a9784faa14ca8d9dc1c42de855a3
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 48520979cfd0ae9a4e5df331f8660333780a783b
 
 
 ---
@@ -69,6 +69,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

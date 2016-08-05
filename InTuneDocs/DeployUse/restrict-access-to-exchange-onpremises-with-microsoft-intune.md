@@ -3,7 +3,7 @@ title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Intune
 description: Toegang tot bedrijfse-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 2913021daf5ee440d5d9b8e577ad0bac6bcb3511
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
 
 
 ---
@@ -123,6 +123,6 @@ De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLU
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

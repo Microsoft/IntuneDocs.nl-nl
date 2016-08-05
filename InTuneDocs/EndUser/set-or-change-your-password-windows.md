@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 791d9e4d5817acfa8b11b1f5ed570df5e38718d7
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 0bfb636b68aa691234b51264d261888322dba11c
 
 
 ---
@@ -26,19 +26,19 @@ De IT-beheerder kan meerdere wachtwoordvereisten instellen. Het is bijvoorbeeld 
 
 Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan alle wachtwoordvereisten, neemt u contact op met uw IT-beheerder voor hulp.
 
-## Uw wachtwoord op een Windows Phone 8 of 8.1 instellen:
-
-1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
-2. Schuif omlaag naar **Wachtwoord** en stel **Wachtwoord** in op **Aan**.
-3. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het veld **Wachtwoord bevestigen**.
-4. Tik op **Gereed**.
-
 ## Uw wachtwoord op een Windows Phone 8 of 8.1 wijzigen:
 
 1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
 2. Schuif omlaag naar **Wachtwoord** en tik op **Wachtwoord wijzigen**.
 3. Voer in het veld **Huidig wachtwoord** uw huidige wachtwoord in.
 4. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het nieuwe wachtwoord in het veld **Wachtwoord bevestigen**.
+4. Tik op **Gereed**.
+
+## Uw wachtwoord op een Windows Phone 8 of 8.1 instellen:
+
+1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
+2. Schuif omlaag naar **Wachtwoord** en stel **Wachtwoord** in op **Aan**.
+3. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het veld **Wachtwoord bevestigen**.
 4. Tik op **Gereed**.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
@@ -48,6 +48,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

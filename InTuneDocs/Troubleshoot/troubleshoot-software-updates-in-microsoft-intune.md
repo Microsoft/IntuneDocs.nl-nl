@@ -2,9 +2,9 @@
 title: Problemen met software-updates oplossen | Microsoft Intune
 description: Problemen met software-updates in Microsoft Intune oplossen.
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: fd490bf3e745e8d0020299dc9be78bb7288edb0d
 
 
 ---
@@ -244,7 +244,7 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 **Probleem**: het kan gebeuren dat Microsoft Intune-clients een of meer van de volgende symptomen ervaren:
 - Er wordt opeens niet meer gerapporteerd aan de Microsoft-beheerconsole.  
 - Er is sprake van hoog CPU-verbruik.
-- De installatie van toepassingen verloopt traag wanneer ze worden geïnstalleerd via de Intune-portal. 
+- De installatie van toepassingen verloopt traag wanneer ze worden geïnstalleerd via de Intune-portal.
 - Microsoft Intune Center genereert de volgende fout: *Er is een fout opgetreden bij het bijwerken van uw computer. Er is een fout gevonden: code 0x800705b4*.
 - In het statusveld onder Intune-beheerconsole > Groepen > Alle apparaten wordt het volgende weergegeven: *Er zijn fouten bij een of meer agents die op deze computer zijn geïnstalleerd. De gegevens voor deze computer zijn mogelijk niet juist of up-to-date*.
 
@@ -254,7 +254,7 @@ Dit probleem kan optreden als vervangen updates (updates die zijn vervangen door
 1. Meld u aan bij de [Intune-beheerconsole](https://manage.microsoft.com).
 2. Selecteer **Updates** > **Alle updates**.
 3. Gebruik de filteroptie op de bovenste werkbalk om te filteren op vervangen updates.
-4. Wijs alle vervangen updates af die van toepassing zijn op Windows 7 of op toepassingen (zoals Microsoft Office) die zijn geïnstalleerd op de betreffende clients. 
+4. Wijs alle vervangen updates af die van toepassing zijn op Windows 7 of op toepassingen (zoals Microsoft Office) die zijn geïnstalleerd op de betreffende clients.
 5. Start de betreffende clients opnieuw op.
 
 Als u met Windows 7 werkt, moet u ook controleren of de volgende update is geïnstalleerd:[3050265 Windows Update-client voor Windows 7: juni 2015](https://support.microsoft.com/kb/3050265).
@@ -264,7 +264,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

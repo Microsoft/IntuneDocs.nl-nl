@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Problemen met app-implementaties oplossen | Microsoft Intune
-description:
-keywords:
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+description: Dit onderwerp helpt u bij het oplossen van problemen met app-implementaties in Microsoft Intune.
+keywords: 
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+
 
 ---
 
@@ -87,7 +81,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 
 ### Fout: de uitgever bestaat niet
 U gebruikt **Andere softwareovereenkomst toevoegen** om een licentieovereenkomst van derden toe te voegen. U probeert de uitgever toe te voegen vanaf de pagina **Andere softwarelicentieovereenkomst**. De pagina bevat een lijst met de bestaande uitgevers in alfabetische volgorde.
-U voert de ontbrekende uitgever in, maar ontvangt het foutbericht **Uitgever bestaat niet**. 
+U voert de ontbrekende uitgever in, maar ontvangt het foutbericht **Uitgever bestaat niet**.
 
 Dit is standaard. U kunt in Intune alleen licenties bijhouden voor populaire softwaretitels. Intune vereist dat minimaal vier afzonderlijke accounts de software hebben gerapporteerd voordat deze als keuze beschikbaar is in de licentieworkload.
 
@@ -104,11 +98,13 @@ De volgende tabel bevat algemene fouten die zich kunnen voordoen tijdens de impl
 |0x80073CF0|Het pakket kan niet worden geopend.|Mogelijke oorzaken:<br /><br />-   Het pakket is niet ondertekend.<br />-   De naam van de uitgever komt niet overeen met de ondertekenende certificaathouder.<br /><br />Controleer het gebeurtenislogboek AppxPackagingOM op meer informatie.|
 |0x80073CF3|Validatie van updates, afhankelijkheid of conflict voor het pakket is mislukt|Mogelijke oorzaken:<br /><br />-   Het binnenkomende pakket conflicteert met een geïnstalleerd pakket.<br />-   Kan een opgegeven pakketafhankelijkheid niet vinden.<br />-   Het pakket biedt geen ondersteuning voor de juiste processorarchitectuur.<br /><br />Controleer het gebeurtenislogboek AppXDeployment-Server voor meer informatie.|
 |0x80073CFB|Het opgegeven pakket is al geïnstalleerd en opnieuw installeren van het pakket is geblokkeerd|Dit foutbericht kan worden weergegeven als u een pakket installeert dat niet gelijk is aan het pakket dat al is geïnstalleerd. Controleer of de digitale handtekening ook onderdeel is van het pakket. Wanneer een pakket opnieuw is samengesteld of opnieuw is ondertekend, is dat pakket niet meer bitsgewijs identiek aan het eerder geïnstalleerde pakket. Er zijn twee mogelijke opties om deze fout te herstellen:<br /><br />-   Verhoog het versienummer van de app, stel het pakket opnieuw samen en onderteken het opnieuw.<br />-   Verwijder het oude pakket voor elke gebruiker op het systeem voordat u het nieuwe pakket installeert.|
+|0x87D1041C|De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd.|- De gebruiker heeft de app geïnstalleerd vanuit de bedrijfsportal en heeft de app vervolgens direct van het apparaat verwijderd. Installeer de app opnieuw vanuit de bedrijfsportal.<br /><br />- Misschien komen het versienummer van een Line-Of-Business-app zoals deze wordt herkend door Intune en de versie die op het apparaat is geïnstalleerd niet overeen. Zorg ervoor dat Intune de juiste versie heeft en installeer de app opnieuw.|
 
 ### Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning, zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Aug16_HO1-->
 
 

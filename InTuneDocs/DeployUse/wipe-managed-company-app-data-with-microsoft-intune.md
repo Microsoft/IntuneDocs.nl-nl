@@ -3,7 +3,7 @@ title: Bedrijfsgegevens van beheerde apps wissen | Microsoft Intune
 description: Informatie over het op afstand selectief verwijderen van bedrijfsgegevens.
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 89a7cc6bdd81387ff008bc43cc206eed6975fc7e
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
 
 
 ---
@@ -61,6 +61,6 @@ Het tabblad **Intune Mobile Application Management** biedt een samenvattingsrapp
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
