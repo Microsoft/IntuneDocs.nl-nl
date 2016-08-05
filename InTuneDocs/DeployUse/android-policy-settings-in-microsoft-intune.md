@@ -5,7 +5,7 @@ description: Beleidsregels maken voor het beheren van instellingen en functies o
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
@@ -197,65 +197,16 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
     |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
-### Voorbeeld: een aangepast Wi-Fi-profiel met een vooraf gedeelde sleutel configureren
-Hoewel Wi-Fi-profielen voor Android-apparaten door Intune worden ondersteund, ondersteunt deze functie momenteel niet dat een vooraf gedeelde sleutel in de configuratie wordt opgenomen. In dit voorbeeld wordt uitgelegd hoe u een aangepast Android-beleid maakt, waarmee een Wi-Fi-profiel met een vooraf gedeelde sleutel op het Android-apparaat wordt gemaakt.
+### Voorbeelden
 
-#### Een aangepast Wi-Fi-profiel met een vooraf gedeelde sleutel maken.
-
-1.  Controleer of de gebruikers de nieuwste versie van de [Intune-bedrijfsportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)-app voor Android gebruiken.
-
-2.  Maak een aangepast Android-beleid en voeg de volgende instellingen toe:
-
-|Naam van de instelling|Details|
-|----------------|--------------------|
-|**Naam van de instelling**|Geef een naam op voor de instelling.|
-|**Beschrijving van de instelling**|Geef een beschrijving op voor de instelling.|
-|**Gegevenstype**|Selecteer **Tekenreeks (XML)**.|
-|**OMA-URI**|Typ het volgende: ./Vendor/MSFT/WiFi/Profile/*&lt;uw Wi-Fi-profiel&gt;*/Settings|
-
-3.  Bij **Waarde** plakt u de volgende XML-code:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  Wanneer u klaar bent, slaat u het beleid op en implementeert u het beleid op de betreffende Android-apparaten. Het nieuwe Wi-Fi-profiel wordt weergegeven in de lijst met verbindingen op het apparaat.
+- [Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
+- [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](per-app-vpn-for-android-pulse-secure.md)
 
 ### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
