@@ -3,7 +3,7 @@ title: Wat is er nieuw? | Microsoft Intune
 description: 
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805dfa1eeb81f4407066e27f203f315451937f8b
-ms.openlocfilehash: acf502bdf73176450157535577047c9428aabfd1
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 458ee268d0c6a8fa6cbe6cc23ad07f0e45eff3e5
 
 
 ---
@@ -145,7 +145,7 @@ Voor algemene feedback over Microsoft Intune en het rapporteren van ontwerpwijzi
 * [Bedrijfsgegevens van beheerde apps wissen met Microsoft Intune](https://technet.microsoft.com/library/mt627826.aspx): hoe u gegevens van bedrijfsapps kunt wissen.
 
 **Bijgewerkte inhoud**
-* [Instellingen voor configuratiebeleid voor Windows 10 in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): er zijn nieuwe Edge-browserinstellingen toegevoegd.
+* [Instellingen voor configuratiebeleid voor Windows 10 in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): er zijn nieuwe Microsoft Edge-browserinstellingen toegevoegd.
 * [iOS- en Mac-beheer instellen met Microsoft Intune](http://technet.microsoft.com/library/dn408185.aspx): er is informatie toegevoegd over het registreren van Mac OS X-apparaten.
 * [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](https://technet.microsoft.com/library/jj733634.aspx): er is informatie toegevoegd over de inventarisaties die worden verzameld van Mac OS X-apparaten. Het onderwerp met de nieuwste informatie over alle apparaatplatforms is ook bijgewerkt.
 * [Microsoft Intune-bewerkingen begrijpen met behulp van rapporten](https://technet.microsoft.com/library/dn646977.aspx): er is informatie toegevoegd over de twee nieuwe rapporten die worden gebruikt om informatie weer te geven over uw beheerde Mac OS X-apparaten.
@@ -267,6 +267,6 @@ Microsoft automatically collects anonymous data about the performance and use of
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
