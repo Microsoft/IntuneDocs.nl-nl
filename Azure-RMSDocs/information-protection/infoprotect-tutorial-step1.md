@@ -3,22 +3,24 @@ title: Zelfstudie voor snel starten met Azure Information Protection - Stap 1 | 
 description: Stap 1 in de introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 10 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/291/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 78f0f07271414fb646f996e7273343f2abf8852b
-ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 
 ---
 
 # Stap 1: Rights Management-service activeren
  
-*Van toepassing op: Azure Information Protection preview*
+>*Van toepassing op: Azure Information Protection preview*
+
+**[ Deze informatie is voorlopig en kan worden gewijzigd. ]**
 
 > [!NOTE]
 >Als u uw gegevens alleen wilt classificeren en niet wilt beveiligen met Azure Rights Management of als u Azure Rights Management al hebt geactiveerd voor uw tenant gaat u door naar de [volgende stap](infoprotect-tutorial-step2.md). 
@@ -84,6 +86,6 @@ Voor een productie-implementatie wilt u mogelijk aangepaste sjablonen configurer
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

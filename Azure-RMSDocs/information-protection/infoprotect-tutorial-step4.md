@@ -3,22 +3,24 @@ title: Zelfstudie voor snel starten met Azure Information Protection - Stap 4 | 
 description: Stap 4 in de introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: e80ea074fb1f6e571b846969b15c08cf7108b11c
-ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 ---
 
 # Stap 4: Zie classificatie, labels en beveiliging in actie 
 
-*Van toepassing op: Azure Information Protection preview*
+>*Van toepassing op: Azure Information Protection preview*
+
+**[ Deze informatie is voorlopig en kan worden gewijzigd. ]**
 
 Nu u een geopend Word-document hebt en de Azure Information Protection-client is geïnstalleerd, kunt u zien hoe eenvoudig het is om het document te labellen en te beveiligen met het beleid dat we hebben geconfigureerd.
 
@@ -75,6 +77,6 @@ Als u klaar bent met uitproberen, is het wellicht handig de [veelgestelde vragen
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

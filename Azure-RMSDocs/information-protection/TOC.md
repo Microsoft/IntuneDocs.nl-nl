@@ -13,8 +13,18 @@
 ### [Stap 3: De client installeren](infoprotect-tutorial-step3.md)
 ### [Stap 4: In actie weergeven](infoprotect-tutorial-step4.md)
 ## [Veelgestelde vragen](faq.md)
+## [Beleid configureren](configure-policy.md)
+### [Het standaardbeleid](configure-policy-default.md)
+### [De globale instellingen configureren](configure-policy-settings.md)
+### [Een nieuw label maken](configure-policy-new-label.md)
+### [Een label verwijderen of opnieuw rangschikken](configure-policy-delete-reorder.md)
+### [Een label wijzigen](configure-policy-change-label.md)
+### [Beveiliging toepassen](configure-policy-protection.md)
+### [Visuele markeringen configureren](configure-policy-markings.md)
+### [Voorwaarden configureren](configure-policy-classification.md)
+## [De client installeren](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

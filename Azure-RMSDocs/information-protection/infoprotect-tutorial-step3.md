@@ -3,22 +3,24 @@ title: Zelfstudie voor snel starten met Azure Information Protection - Stap 3 | 
 description: Stap 3 in de introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7f85c673cd1e8055d6a27dcc49b5da18a7e12f98
-ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 
 
 ---
 
 # Stap 3: De Azure Information Protection-client installeren 
 
-*Van toepassing op: Azure Information Protection preview*
+>*Van toepassing op: Azure Information Protection preview*
+
+**[ Deze informatie is voorlopig en kan worden gewijzigd. ]**
 
 In deze stap installeert u de Azure Information Protection-client, zodat het beleid dat u zojuist hebt geconfigureerd naar een Windows-pc wordt gedownload en de labels in Office-toepassingen worden weergegeven. 
 
@@ -41,11 +43,16 @@ In deze stap installeert u de Azure Information Protection-client, zodat het bel
 
 U bent klaar voor de laatste stap om de classificatie, labels en beveiliging in actie te zien.
 
+|Als u meer informatie wilt|Aanvullende informatie|
+|--------------------------------|--------------------------|
+|Over het installeren van de client|[De Azure Information Protection-client installeren](info-protect-client.md)|
+
+
 >[!div class="step-by-step"]
 [&#171; Stap 2](infoprotect-tutorial-step2.md)
 [Stap 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
