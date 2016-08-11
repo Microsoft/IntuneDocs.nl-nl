@@ -3,22 +3,24 @@ title: Zelfstudie voor snel starten met Azure Information Protection | Azure Rig
 description: Een introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/16/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: cac95dec84f99d2e6caa3458dc8284defe2324bc
-ms.openlocfilehash: 7dc988365c1fa86827d1a7edc33c0a2eb6180f0e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
 
 
 ---
 
 # Zelfstudie voor snel starten met Azure Information Protection 
 
-*Van toepassing op: Azure Information Protection preview*
+>*Van toepassing op: Azure Information Protection preview*
+
+**[ Deze informatie is voorlopig en kan worden gewijzigd. ]**
 
 Een zelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren. Optioneel kunt u de Azure Rights Management-service starten en het standaard Azure Information Protection-beleid bekijken en wijzigen, de Azure Information Protection-client installeren en vervolgens aan de hand van een Word-document de classificatie, labels en beveiliging in actie zien.
 
@@ -38,7 +40,7 @@ U hebt het volgende nodig om de zelfstudie te volgen:
 
 - Een globale beheerdersaccount om u aan te melden bij het Office 365-beheercentrum of de klassieke Azure-portal, als u de Rights Management Service moet activeren. Dit account moet ook beschikken over een e-mailadres en een werkende e-mailservice (bijvoorbeeld Exchange Online of Exchange Server).
 
-- Een computer met Windows (minimaal Windows 7 met Service Pack 1), waarop Office 2016, Office 2013 met Service Pack 1 of Office 2010 is geïnstalleerd. 
+- Een computer met Windows (minimaal Windows 7 met Service Pack 1), waarop Office Professional Plus 2016, Office Professional Plus 2013 met Service Pack 1 of Office Professional Plus 2010 is geïnstalleerd. 
 
 - Als u Active Directory Rights Management Services (AD RMS) hebt geïmplementeerd in uw organisatie: de computer moet een werkgroepcomputer zijn waarop AD RMS nog niet eerder is gebruikt. Dit is vereist als u documenten wilt beveiligen en zorgt ervoor dat de computer sjablonen alleen vanaf Azure Rights Management downloadt. Er is geen ondersteuning voor computers om gelijktijdig verbinding te maken met AD RMS en Azure RMS. Zie [Migreren van AD RMS naar Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md) voor meer informatie over migratie.   
 
@@ -51,6 +53,6 @@ Nu kunt u aan de slag.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

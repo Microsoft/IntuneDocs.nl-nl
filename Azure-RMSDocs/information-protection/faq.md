@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,15 +13,17 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e60cd910a8e995a2681d7eb87a13f815183d9124
-ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 
 ---
 
 # Veelgestelde vragen over de evaluatieversie van Azure Information Protection
 
-*Van toepassing op: Azure Information Protection preview*
+>*Van toepassing op: Azure Information Protection preview*
+
+**[ Deze informatie is voorlopig en kan worden gewijzigd. ]**
 
 Hebt u een vraag over de preview-versie van Azure Information Protection?  U vindt hier wellicht het antwoord. 
 
@@ -61,12 +63,6 @@ Als u het Azure Information Protection-beleid in Azure Portal wilt configureren,
 
 Eventuele wijzigingen in de vereisten van het abonnement worden aangekondigd op de blog [Enterprise Mobility and Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
-## Als Azure Information Protection nu een openbare preview is, waarom vind ik het dan niet terug in Azure Portal?
-
-Momenteel moet u deze koppeling gebruiken om Azure Information Protection weer te geven in de portal: https://portal.azure.com/?Microsoft_Azure_InformationProtection=true
-
-Klik vervolgens op het hub-menu op **Bladeren** en typ 'Information Protection' in het filtervak. Selecteer in de resultaten **Azure Information Protection**.
-
 ## Moet ik een globale beheerder zijn om de preview van Azure Information Protection te kunnen gebruiken?
 
 In de preview-versie kan elke gebruiker die door Azure is geverifieerd het Azure Information Protection-beleid van de tenant weergeven en configureren in Azure Portal.
@@ -89,7 +85,7 @@ Dit wordt beschreven en bijgewerkt in [Vereisten voor Azure Information Protecti
 
 Telkens wanneer een gebruiker een Office-toepassing opent, controleert de Azure Information Protection-client of er een nieuwere versie van het Azure Information Protection-beleid beschikbaar is. Als er een nieuwere versie is, wordt deze gedownload via een HTTPS-koppeling om de gegevens te beveiligen. 
 
-Als de toepassing al is geladen wanneer het Azure Information Protection-beleid wordt bijgewerkt, moet u de toepassing sluiten en opnieuw openen om de nieuwste versie van het beleid op te halen.
+Als meerdere exemplaren van de Office-toepassing zijn geladen wanneer een nieuw Azure Information Protection-beleid wordt gepubliceerd, moet u alle exemplaren sluiten om de nieuwste versie van het beleid op te halen. Als er bijvoorbeeld twee Word-documenten zijn geopend en u het bijgewerkte Azure Information Protection-beleid in slechts één document wilt testen: sluit beide Word-documenten en open het document dat u wilt gebruiken met het nieuwste beleid opnieuw.
 
 ## Waar kunnen bestanden worden opgeslagen om Azure Information Protection te kunnen gebruiken? 
 
@@ -113,7 +109,7 @@ U kunt in Azure Portal gebruikmaken van vooraf ingestelde patronen, zoals credit
 
 Een voorbeeld hiervan vindt u in de [Zelfstudie voor snel starten met Azure Information Protection](infoprotect-quick-start-tutorial.md). 
 
-De nauwkeurigheid van de classificatie is afhankelijk van de configuratie van de classificatieregel, die is gebaseerd op voorwaarden. Op dit moment worden alleen tekstpatronen en reguliere expressies ondersteund. Zie [Beschrijving van de inhoud die overeenkomt met onze vooraf gedefinieerde informatietypen](https://www.yammer.com/askipteam/#/Threads/show?threadId=737163344) voor een uitleg van elk van de beschikbare opties in de preview en een aantal voorbeelden die u kunt testen. De detectie wordt uitgevoerd als het document wordt opgeslagen of een e-mailbericht wordt verzonden.
+De nauwkeurigheid van de classificatie is afhankelijk van de configuratie van de classificatieregel, die is gebaseerd op voorwaarden. Op dit moment worden alleen tekstpatronen en reguliere expressies ondersteund. Zie [Voorwaarden voor automatische en aanbevolen classificatie voor Azure Information Protection configureren](configure-policy-classification.md) voor een uitleg van de opties die beschikbaar zijn tijdens de preview, met enkele voorgestelde voorbeelden om te testen. De detectie wordt uitgevoerd als het document wordt opgeslagen of een e-mailbericht wordt verzonden.
 
 We raden u aan dat u begint met de aanbevolen acties voor gebruikers in plaats van met de volledig automatische acties voor de beste gebruikerservaring en om de bedrijfscontinuïteit te waarborgen. Hierdoor hebben uw gebruikers de mogelijkheid om de acties voor labels en beveiliging te accepteren of deze suggesties te overschrijven.   
 
@@ -121,7 +117,7 @@ We raden u aan dat u begint met de aanbevolen acties voor gebruikers in plaats v
 
 Ja. Met Azure Portal kunt u instellen of u gebruik wilt maken van automatische classificatie of van aanbevelingen aan gebruikers door de optie **Selecteren hoe dit label wordt toegepast: automatisch of aanbevolen aan gebruiker** in te stellen op **Aanbevolen**.
 
-Een voorbeeld hiervan vindt u in de [Zelfstudie voor snel starten met Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Een voorbeeld hiervan vindt u in de [Zelfstudie voor snel starten met Azure Information Protection](infoprotect-quick-start-tutorial.md).  
 
 ## Kan ik afdwingen dat alle documenten worden geclassificeerd?
 
@@ -140,7 +136,7 @@ Ja. Als u wilt dat gebruikers hun wijzigingen in de classificatie moeten rechtva
 
 In Azure Portal kunt u een Azure Rights Management-sjabloon selecteren om inhoud automatisch te beveiligen volgens het niveau van de classificatie die u opgeeft.
 
-Een voorbeeld hiervan vindt u in de [Zelfstudie voor snel starten met Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Een voorbeeld hiervan vindt u in de [Zelfstudie voor snel starten met Azure Information Protection](infoprotect-quick-start-tutorial.md). Zie [Een label configureren om Rights Management-beveiliging toe te passen](configure-policy-protection.md) voor meer informatie.
 
 ## Kan een bestand met twee verschillende classificaties worden geclassificeerd?
 
@@ -188,6 +184,6 @@ Ga vervolgens naar onze [Yammer-site](https://www.yammer.com/askipteam/#/threads
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
