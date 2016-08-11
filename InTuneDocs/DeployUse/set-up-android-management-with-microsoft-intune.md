@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 147765f6e8225e8e1d9d8e64473e8b6988256b03
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
 
 
 ---
 
 # Android-beheer instellen met Microsoft Intune
+U vindt [hier](../enduser/using-your-android-device-with-intune.md) meer informatie over het instellen van uw Windows-apparaat.
+
 Met Microsoft Intune kunt u zonder extra werk voor het platform BYOD ('Bring Your Own Device') instellen voor Android-apparaten.
 
 Maak voor meer informatie een keuze uit de volgende apparaatplatformspecifieke opties:
@@ -41,11 +43,15 @@ Op mobiele apparaten met Android kunnen gebruikers zich registreren via de bedri
 3.  **Vertel gebruikers hoe ze met de bedrijfsportal toegang krijgen tot bronnen**<br>
     Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht. [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht.
+        - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Richtlijnen voor eindgebruikers van Windows-apparaten](../enduser/using-your-android-device-with-intune.md)
+
 ### Zie tevens
 [Bereid u voor op het registreren van apparaten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

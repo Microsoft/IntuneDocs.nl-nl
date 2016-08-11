@@ -3,7 +3,7 @@ title: Wat is er nieuw? | Microsoft Intune
 description: Ontdek wat er nieuw is in de release van Microsoft Intune van deze maand en in oudere releases
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8bff8951c8ced7656f007787d614fd277401fd0
-ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -22,8 +22,17 @@ ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
 # Wat is er nieuw in Microsoft Intune?
 Ontdek wat er nieuw is in deze release van Microsoft Intune. U vindt hier ook informatie over toekomstige wijzigingen waar u rekening mee moet houden én informatie over oudere releases.
 
-De volgende wijzigingen worden momenteel ontwikkeld voor Intune. Al deze functies worden uiteindelijk ondersteund voor implementaties voor hybride klanten (Configuration Manager met Intune). Bekijk voor meer informatie over nieuwe hybride functies onze [Wat is er nieuw-pagina voor hybride](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+Al deze functies worden uiteindelijk ondersteund voor implementaties voor hybride klanten (Configuration Manager met Intune). Bekijk voor meer informatie over nieuwe hybride functies onze [Wat is er nieuw-pagina voor hybride](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## Augustus 2016
+## Updates voor de bedrijfsportal
+
+### Android
+- **Android-bedrijfsportal-app**<br/>
+De Intune-bedrijfsportal-app voor Android biedt 'day 0'-ondersteuning voor het toekomstige Android 7.0-besturingssysteem voor mobiele apparaten.  
+
+- **Google verwijdert het op afstand opnieuw instellen van de wachtwoordcode voor Android 7.0-apparaten**<br/>
+Op apparaten met Android 7.0 kunnen Intune IT-beheerders en eindgebruikers de wachtwoordcode van het apparaat niet op afstand opnieuw instellen, omdat Google die mogelijkheid voor Android 7.0-apparaten heeft verwijderd. Voor oudere versies van Android kunnen IT-beheerders de wachtwoordcode van een gebruiker nog wel op afstand opnieuw instellen, en kunnen eindgebruikers nog steeds hun wachtwoordcodes opnieuw instellen via de bedrijfsportal-website.
 
 ## Juli 2016
 ## Appbeheer
@@ -41,7 +50,9 @@ Met het onderdeel Intune App SDK Xamarin kunt u de beheerfuncties voor Intune Mo
 Intune heeft de maximaal configureerbare limiet voor apparaatinschrijvingen verhoogd van 5 naar 15 apparaten per gebruiker.
 <!---TFS 1289896 --->
 
-
+### TeamViewer-integratie voor Windows-pc's met de Intune-clientsoftware
+Dankzij de integratie van [TeamViewer](https://www.teamviewer.com) voor Windows-pc's die worden beheerd met de Intune-client kunt u, ter ondersteuning van uw helpdeskafdeling, sessies voor hulp op afstand met Windows-pc's uitvoeren. Dit is van toepassing op Windows 7, 8, 8.1 en 10. Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient voor meer informatie](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## Updates voor de bedrijfsportal
 ### Bedrijfsportalwebsite
@@ -93,7 +104,7 @@ Naast de wijzigingen in het groepsbeheer, wordt de volgende functionaliteit afge
 Meer informatie over hoe deze afschaffingen kunnen worden opgevangen volgt in augustus.
 
 ### Toevoeging van 'Meldingen' aan de bedrijfsportal voor Android
-In augustus brengen wij een update uit van de bedrijfsportal voor Android, waarmee een nieuw pictogram **Meldingen** wordt geïntroduceerd op de startpagina. Door op dit pictogram te tikken wordt de pagina **Meldingen** geopend waar de eindgebruiker alle items ziet die aandacht vereisen in de bedrijfsportal-app, zoals niet-compatibele apparaten, inschrijvingsupdates en activering van inschrijvingen. Als u ook de iOS-bedrijfsportal-app gebruikt, kunt u de meldingen al zien. Door de introductie van de pagina **Meldingen** ziet u niet langer de pagina **Bedrijfstoegang instellen** wanneer u de bedrijfsportal voor Android start of hervat als het apparaat reeds is ingeschreven. Wij weten dat velen van u een handleiding hebben gemaakt voor eindgebruikers en stellen het op prijs wanneer u ons tijdig informeert wanneer uw handleiding en/of schermafbeeldingen moeten worden bijgewerkt. Werk uw documentatie bij zodat toekomstige wijzigingen in de gebruikerservaring goed worden beschreven. Bijgewerkte schermafbeeldingen vindt u hier: https://aka.ms/androidcpupdate.  
+In september brengen wij een update uit van de bedrijfsportal voor Android, waarmee een nieuw pictogram **Meldingen** wordt geïntroduceerd op de startpagina. Door op dit pictogram te tikken wordt de pagina **Meldingen** geopend waar de eindgebruiker alle items ziet die aandacht vereisen in de bedrijfsportal-app, zoals niet-compatibele apparaten, inschrijvingsupdates en activering van inschrijvingen. Als u ook de iOS-bedrijfsportal-app gebruikt, kunt u de meldingen al zien. Door de introductie van de pagina **Meldingen** ziet u niet langer de pagina **Bedrijfstoegang instellen** wanneer u de bedrijfsportal voor Android start of hervat als het apparaat reeds is ingeschreven. Wij weten dat velen van u een handleiding hebben gemaakt voor eindgebruikers en stellen het op prijs wanneer u ons tijdig informeert wanneer uw handleiding en/of schermafbeeldingen moeten worden bijgewerkt. Werk uw documentatie bij zodat toekomstige wijzigingen in de gebruikerservaring goed worden beschreven. Bijgewerkte schermafbeeldingen vindt u hier: https://aka.ms/androidcpupdate.  
 
 
 
@@ -147,6 +158,6 @@ Raadpleeg het artikel over [Vorige versies van Intune](previous-intune-releases.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

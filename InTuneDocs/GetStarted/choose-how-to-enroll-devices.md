@@ -1,6 +1,6 @@
 ---
 title: Kiezen hoe u mobiele apparaten registreert |Microsoft Intune
-description: Bepalen hoe u mobiele apparaten in Intune kunt registeren door enkele eenvoudige vragen te beantwoorden
+description: Bepalen hoe u mobiele apparaten in Intune kunt registreren door enkele eenvoudige vragen te beantwoorden
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 08ad4961c973d66b2ca932b313f121f24c9dff62
+ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
+ms.openlocfilehash: aac4eee56ec7326b2ce466d19b580aa5f1388aea
 
 
 ---
@@ -49,15 +49,29 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 ## **Hoe beheert u uw gedeelde iOS-apparaten?**
 
   > [!div class="button"]
-  [iOS DEP-inschrijving >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Directe iOS-inschrijving >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM-inschrijving >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+  [iOS DEP-registratie >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Directe iOS-registratie >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM-registratie >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+
+  - **Het Device Enrollment Program (DEP) van Apple**: u kunt voor iOS-apparaten die zijn aangeschaft of worden beheerd met DEP een registratieprofiel gebruiken. Wanneer gebruikers hun apparaat voor het eerst inschakelen, downloadt het apparaat het DEP-profiel en wordt het apparaat geregistreerd bij de profiel-DEP.
+
+  - **Apple Configurator op een Mac**: Apple Configurator is een Apple-toepassing die wordt uitgevoerd op een Mac-computer. U kunt uw iOS-apparaten met een USB-kabel aansluiten op de Mac om een registratieprofiel op het apparaat te installeren. Als u de fabrieksinstellingen van het apparaat kunt terugzetten om ze te registreren, gebruikt u Registratie van configuratieassistent. Als u de fabrieksinstellingen van het apparaat niet wilt terugzetten, gebruikt u Direct registratie.
+
+  - **Beheerfunctie voor apparaatregistratie**: met de beheerfunctie voor apparaatregistratie (DEM) van Intune kan een manager of beheerder een groot aantal mobiele apparaten registreren met één gebruikersaccount. Deze apparaten kunnen geen gebruikersaffiniteit (ofwel toegewezen gebruikers) hebben, en kunnen alleen worden geregistreerd na installatie van en aanmelding bij de bedrijfsportal-app.
 
 ## **Hoe beheert u uw specifieke iOS-apparaten?**
 
   > [!div class="button"]
   [Label met IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS-Configuratieassistent](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Code met IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
+  U kunt apparaten in bedrijfseigendom met toegewezen gebruikers op de volgende manieren registreren:
+
+  - **Het Device Enrollment Program (DEP) van Apple**: u kunt voor iOS-apparaten die zijn aangeschaft of worden beheerd met DEP een registratieprofiel gebruiken. Wanneer gebruikers hun apparaat voor het eerst inschakelen, downloadt het apparaat het DEP-profiel en wordt het apparaat geregistreerd bij Intune.
+
+  - **Apple Configurator op een Mac**: Apple Configurator is een Apple-toepassing die wordt uitgevoerd op een Mac-computer. U kunt uw iOS-apparaten met een USB-kabel aansluiten op de Mac om een registratieprofiel op het apparaat te installeren. Als u de fabrieksinstellingen van het apparaat kunt terugzetten om ze te registreren, gebruikt u Registratie van configuratieassistent.
+
+  - **Label met IMEI-nummer**: door de IMEI-nummers (International Mobile Equipment Identity) van bedrijfseigen apparaten te importeren, kunt u ze in Intune labelen als apparaten die eigendom zijn van het bedrijf. Gebruikers kunnen hun apparaten vervolgens registreren als een persoonlijk apparaat door de bedrijfsportal te installeren voor toegang tot bedrijfsresources, zoals e-mail, apps en gegevens.
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO1-->
 
 

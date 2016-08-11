@@ -13,8 +13,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: f3a8492532f01c576b1abf3c3228ba99dbd0d547
+ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
+ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
 
 ---
 # Apps in Microsoft Intune implementeren
@@ -23,15 +23,15 @@ Gebruik de informatie in dit onderwerp om apps met Microsoft Intune te implement
 
 
 ## Een app implementeren
-In deze procedure implementeert u de app op geselecteerde apparaat- of gebruikersgroepen.
+In deze procedure implementeert u een app op geselecteerde apparaat- of gebruikersgroepen.
 
 ### Een app implementeren
 
-1. Klik in de [Microsoft Intune-beheerdersconsole](https://manage.microsoft.com) op **Apps** &gt; **Apps** om de lijst weer te geven van de apps die u beheert.
+1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Apps** &gt; **Apps** om de lijst weer te geven van de apps die u beheert.
 
 2.  Selecteer de app die u wilt implementeren en klik vervolgens op **Implementatie beheren**.
 
-3.  Selecteer de gebruikers- of apparaatgroepen waarvoor u de app wilt implementeren, in het dialoogvenster *&lt;<app-naam>&gt;* op de pagina **Groepen selecteren**.
+3.  Selecteer in het dialoogvenster *&lt;app-naam&gt;* op de pagina **Groepen selecteren** de gebruikers- of apparaatgroepen waarvoor u de app wilt implementeren.
 
 4.  Configureer de volgende instellingen op de pagina **Implementatieactie**:
 
@@ -46,16 +46,18 @@ In deze procedure implementeert u de app op geselecteerde apparaat- of gebruiker
 
     [Kijk welke Microsoft-apps compatibel zijn met de beleidsregels van Mobile Application Management.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
-6. Als de app die u wilt implementeren, compatibel is met Intune VPN-profielen, wordt de pagina **VPN-profiel** weergegeven. Op deze pagina kunt u iOS-apps koppelen aan een VPN-profiel dat u hebt geïmplementeerd. De VPN-verbinding wordt automatisch geopend wanneer de app wordt gestart. Als u een VPN-profiel beschikbaar wilt stellen, moet voor dit profiel de instelling **VPN per app** zijn ingeschakeld.
- Zie [Gebruikers helpen om via VPN-profielen met Microsoft Intune verbinding met hun werk te laten maken](vpn-connections-in-microsoft-intune.md) voor meer informatie over het configureren van VPN-profielen, waaronder ondersteuning voor het koppelen van profielen aan apps.
+6. Als de app die u wilt implementeren, compatibel is met Intune VPN-profielen, wordt de pagina **VPN-profiel** weergegeven. Op deze pagina kunt u iOS-apps koppelen aan een VPN-profiel dat u hebt geïmplementeerd. De VPN-verbinding wordt automatisch gemaakt wanneer de app wordt gestart. Als u een VPN-profiel beschikbaar wilt stellen, moet voor dit profiel de instelling **VPN per app** zijn ingeschakeld.
+ Zie [VPN-verbindingen in Microsoft Intune](vpn-connections-in-microsoft-intune.md) voor meer informatie over het configureren van VPN-profielen, zoals informatie over het koppelen van profielen aan apps.
 
 ## Voorbeeld
 
 In dit voorbeeld hebt u de app als **Beschikbaar** geïmplementeerd voor een iOS-apparaat.
-De app wordt op de apparaten van gebruikers weergegeven in de bedrijfsportal. Hier kan de app worden geïnstalleerd. In deze schermafbeelding is de app Bing voor iOS geïmplementeerd met behulp van het installatietype **Externe koppeling**, met een aangepast pictogram, en de optie **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal** ingeschakeld.  
+De app wordt weergegeven op apparaten van gebruikers in de bedrijfsportal en gebruikers kunnen de app vanaf daar installeren.
+
+In deze schermafbeelding is bijvoorbeeld de Bing voor iOS-app geïmplementeerd met behulp van het installatietype **Externe koppeling** met een aangepast pictogram. Daarbij is de optie **Geef deze app weer als een aanbevolen app en markeer deze in de bedrijfsportal** geselecteerd.  
 ![Voor iOS beschikbare app](./media/available-install-on-iOS.png)
 
-Als u de app hebt geïmplementeerd als **Vereist**, krijgt de gebruiker een melding dat er een app gereed is om te worden geïnstalleerd. In deze schermafbeelding is de app Werkmappen voor iOS geïmplementeerd met behulp van het installatietype **Beheerde iOS-app uit de App Store**.  
+Als u de app hebt geïmplementeerd als **Vereist**, krijgt de gebruiker een melding dat er een app gereed is om te worden geïnstalleerd. In deze schermafbeelding is bijvoorbeeld de app Werkmappen voor iOS geïmplementeerd met behulp van het installatietype **Beheerde iOS-app uit de App Store**.
 ![Voor iOS vereiste app](./media/iOS-Required-install.PNG)
 
 ## Volgende stappen
@@ -64,6 +66,6 @@ Nadat u een app hebt geïmplementeerd, is het een goed idee om de voortgang erva
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

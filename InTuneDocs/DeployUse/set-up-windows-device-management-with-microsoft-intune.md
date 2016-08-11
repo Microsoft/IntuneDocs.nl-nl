@@ -3,8 +3,8 @@ title: Windows-apparaatbeheer instellen met Microsoft Intune | Microsoft Intune
 description: "Schakel het beheer van mobiele apparaten (MDM) in voor Windows-pc’s, waaronder Windows 10-apparaten met Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
 
 
 ---
 
 # Windows apparaatbeheer instellen
+U vindt [hier](../enduser/using-your-windows-device-with-intune.md) meer informatie over het instellen van uw Windows-apparaat.
+
 Met Intune kunt u BYOD ('Bring Your Own Device') instellen om Windows-pc’s in te schrijven en toegang te geven tot bedrijfse-mail en apps. In combinatie met Azure Active Directory beschikt u hiermee ook over een snelle manier om nieuwe Windows 10-apparaten onder beheer te stellen en toegang te krijgen tot bronnen zonder een nieuwe installatiekopie op de computer te installeren. Na inschrijving kunnen gebruikers zich aanmelden en kunnen op hun apparaten beleid, apps en instellingen worden toegepast met behulp van de Intune-beheerconsole. Als u dit wilt, kunt u ook [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) en [computers beheren met Intune-clientsoftware](manage-windows-pcs-with-microsoft-intune.md)
 
 Door een DNS CNAME te maken, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een servernaam te hoeven opgeven.
@@ -43,13 +45,18 @@ Door een DNS CNAME te maken, kunnen gebruikers verbinding maken met Intune en bi
 
   2.  Klik in de [Intune-beheerconsole](http://manage.microsoft.com) op **Beheer** &gt; **Mobile Device Management** &gt; **Windows**.
   ![Het dialoogvenster Windows-apparaatbeheer](../media/enroll-intune-winenr.png)
+
   3.  Typ de URL van het geverifieerde domein voor de bedrijfswebsite in het vak **Geef een geverifieerde domeinnaam op** en klik vervolgens op **Automatische detectie testen**.
+
+  4.  Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht.
+      - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [Richtlijnen voor eindgebruikers van Windows-apparaten](../enduser/using-your-windows-device-with-intune.md)
 
 ### Zie tevens
 [Bereid u voor op het registreren van apparaten in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

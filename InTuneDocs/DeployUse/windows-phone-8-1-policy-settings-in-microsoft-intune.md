@@ -3,8 +3,8 @@ title: Beleidsinstellingen voor Windows Phone 8.1 | Microsoft Intune
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 |----------------|-----------------------------------------|
 |**Kopiëren en plakken toestaan**|Hiermee staat u kopiëren en plakken op apparaten toe.|Nee|Ja|
 
-### Instellingen voor compatibele en niet-compatibele apps
-In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens:
+### Instellingen voor toegestane en geblokkeerde apps
+In de lijst **Toegestane en geblokkeerde apps** geeft u de apps op die u wilt toestaan of blokkeren op basis van de volgende gegevens:
 
 > [!NOTE]
-> Een enkele beleidsregel kan alleen een lijst met compatibele of een lijst met niet-compatibele apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
+> Een enkele beleidsregel kan alleen een lijst met toegestane of een lijst met geblokkeerde apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst met 
 > Als u een lijst met toegestane apps voor Windows Phone 8.1-apparaten opgeeft, moet u de Bedrijfsportal-app aan deze lijst toevoegen, anders wordt deze app geblokkeerd.
 
 
-### Referentie-informatie voor compatibele en niet-compatibele apps
+### Referentie-informatie voor toegestane en geblokkeerde apps
 
 #### URL's voor app stores opgeven
-Als u een app-URL wilt opgeven in de lijst met compatibele apps, gebruikt u de volgende notatie:
+Als u een app-URL wilt opgeven in de lijst met toegestane en geblokkeerde apps, gebruikt u de volgende notatie:
 
 Zoek in de pagina [Windows Phone Apps+Games](http://www.windowsphone.com/en-us/store/overview) naar de app die u wilt gebruiken.
 
-Open de pagina van de app en kopieer de URL naar het klembord. U kunt deze nu als de URL gebruiken in de lijst met compatibele apps of de lijst met niet-compatibele apps.
+Open de pagina van de app en kopieer de URL naar het klembord. U kunt deze URL nu gebruiken in de lijst met toegestane apps of de lijst met geblokkeerde apps.
 
 **Voorbeeld:** Zoek in de store naar de Skype-app. De URL die u gebruikt, is **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

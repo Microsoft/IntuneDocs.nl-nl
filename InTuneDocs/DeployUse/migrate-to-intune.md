@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Migreren naar Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
+ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
+
 
 ---
 
@@ -34,7 +28,7 @@ Voor de migratie naar Intune vanuit uw bestaande oplossing voor het beheer van b
 
 ## Gebruikers op de hoogte stellen
 
-Wanneer u zeker weet dat de Intune-pilotimplementatie aan uw vereisten voldoet, kunt u uw gebruikers op de hoogte stellen van de aanstaande migratie van hun apparaten naar Intune. Via e-mailberichten, [instructies](http://www.microsoft.com/en-us/download/details.aspx?id=46398) en [posters](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) kunt u gebruikers duidelijk maken wat er gaat veranderen en informatie bieden over de inschrijving. Zo weten gebruikers wat ze moeten doen om toegang te houden tot bedrijfsbronnen en -toepassingen. Zorg ervoor dat het ondersteuningsteam gereed is om gebruikers te helpen met het migratieproces.
+Wanneer u zeker weet dat de Intune-pilotimplementatie aan uw vereisten voldoet, kunt u uw gebruikers op de hoogte stellen van de aanstaande migratie van hun apparaten naar Intune. Via e-mailberichten, instructies en [posters](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) kunt u gebruikers duidelijk maken wat er gaat veranderen en informatie bieden over de inschrijving. Zo weten gebruikers wat ze moeten doen om toegang te houden tot bedrijfsresources en -toepassingen. Zorg ervoor dat het ondersteuningsteam gereed is om gebruikers te helpen met het migratieproces.
 
 ## Uw bestaande oplossing voor het beheer van bedrijfsmobiliteit wijzigen
 
@@ -50,7 +44,7 @@ Apparaten moeten worden uitgeschreven uit uw bestaande oplossing voor het beheer
 
 ## Apparaten inschrijven bij Intune
 
-Gebruikers die zijn aangewezen voor migratie, moeten zich direct inschrijven bij Intune om verlies van toegang tot bedrijfsbronnen, e-mail en toepassingen te voorkomen of om weer toegang tot bedrijfsbronnen, e-mail en toepassingen te krijgen. Als u voorwaardelijke toegang hebt geconfigureerd en gebruikers verbinding met hun e-mailaccount proberen te maken voordat ze bij Intune zijn ingeschreven, wordt hun toegang geblokkeerd en ontvangen ze een inschrijvingse-mail. Deze e-mail bevat stappen waarmee ze hun apparaat bij Intune kunnen inschrijven.  Gebruikers kunnen zich ook inschrijven bij Intune via de Intune-bedrijfsportal-app of via het besturingssysteem (Windows 8.1 en Windows 10 Mobile). Raadpleeg [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md) voor verdere platformspecifieke richtlijnen voor inschrijving.
+Gebruikers die zijn aangewezen voor migratie, moeten zich direct inschrijven bij Intune om verlies van toegang tot bedrijfsbronnen, e-mail en toepassingen te voorkomen of om weer toegang tot bedrijfsbronnen, e-mail en toepassingen te krijgen. Als u voorwaardelijke toegang hebt geconfigureerd en gebruikers verbinding met hun e-mailaccount proberen te maken voordat ze bij Intune zijn geregistreerd, wordt hun toegang geblokkeerd en ontvangen ze een registratie-e-mail. Deze e-mail bevat stappen waarmee ze hun apparaat bij Intune kunnen registreren.  Gebruikers kunnen zich ook inschrijven bij Intune via de Intune-bedrijfsportal-app of via het besturingssysteem (Windows 8.1 en Windows 10 Mobile). Raadpleeg [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md) voor verdere platformspecifieke richtlijnen voor inschrijving.
 
 ## Intune-beleid voor voorwaardelijke toegang configureren (optioneel)
 
@@ -75,9 +69,10 @@ Hebt u extra hulp nodig met de migratie naar Intune? We bieden deskundige onders
 
 ## Download deze handleiding
 
-Ga naar de [TechNet-galerie](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387) als u een exemplaar van deze volledige handleiding wilt downloaden..
+Ga naar de [TechNet-galerie](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387) als u een exemplaar van de volledige gids wilt downloaden.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Aug16_HO1-->
 
 

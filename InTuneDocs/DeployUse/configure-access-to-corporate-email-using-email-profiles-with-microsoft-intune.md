@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -36,6 +36,18 @@ U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren
 
 
 Naast het e-mailaccount op het apparaat kunt u ook synchronisatie-instellingen configureren, zoals de hoeveelheid e-mail die u wilt synchroniseren, en afhankelijk van het apparaattype, de inhoudstypen die u wilt synchroniseren.
+>[!NOTE]
+>
+>Als de gebruiker een e-mailprofiel heeft geïnstalleerd voorafgaand aan het inrichten van een profiel door Intune, is het resultaat van de implementatie van het Intune-e-mailprofiel afhankelijk van het apparaatplatform:
+
+>-**iOS**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Het dubbele e-mailprofiel dat is gemaakt door de gebruiker blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en zich vervolgens inschrijven. In de bedrijfsportal ziet de gebruiker dat deze niet voldoet aan de voorwaarden wegens het handmatig geconfigureerde e-mailprofiel. De gebruiker wordt gevraagd dat profiel te verwijderen. Het e-mailprofiel moet worden verwijderd zodat het Intune-profiel kan worden geïmplementeerd. Als u dit probleem wilt voorkomen, vertelt u gebruikers dat zij moeten registreren voordat ze een e-mailprofiel installeren, zodat Intune het profiel kan implementeren.
+
+>-**Windows**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
+
+>-**Samsung KNOX**: Intune identificeert een dubbele e-mailaccount op basis van het e-mailadres, en overschrijft het met het Intune-profiel. Als de gebruiker dat account configureert, wordt het opnieuw overschreven door het Intune-profiel. Dit kan leiden tot enige verwarring bij de gebruiker waarvan de accountconfiguratie word overschreven.
+
+>Omdat Samsung KNOX niet de hostnaam gebruikt om het profiel te identificeren, wordt geadviseerd om niet meerdere e-mailprofielen te implementeren naar hetzelfde e-mailadres op verschillende hosts, aangezien die elkaar zullen overschrijven.
+    
 
 ## Beveiligde e-mailprofielen
 U kunt e-mailprofielen beveiligd met een van de twee methoden:
@@ -109,6 +121,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

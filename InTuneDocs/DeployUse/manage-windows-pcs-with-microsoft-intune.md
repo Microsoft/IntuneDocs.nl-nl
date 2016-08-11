@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Intune beheert Windows-pc’s met beleidsregels op een manier die lijkt op hoe W
 Hoewel de Intune-client [beleid ondersteunt dat helpt bij de beveiliging van pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md) door het beheer van software-updates, Windows Firewall en Endpoint Protection, kan er geen ander Intune-beleid worden toegepast op pc's die worden beheerd door de Intune-client.
 
 > [!NOTE]
-> Apparaten met Windows 8.1 kunnen worden beheerd via de Intune-client of worden ingeschreven als mobiel apparaat. De onderstaande informatie is van toepassing op computers waarop de Intune-client wordt uitgevoerd. Het installeren van zowel de Intune-pc-client als het inschrijven van het Windows-apparaat voor beheer van mobiele apparaten wordt niet ondersteund.
+> Apparaten met Windows 8.1 of hoger kunnen worden beheerd via de Intune-client of worden geregistreerd als mobiel apparaat. De onderstaande informatie is van toepassing op computers waarop de Intune-client wordt uitgevoerd. Het installeren van zowel de Intune-pc-client als het inschrijven van het Windows-apparaat voor beheer van mobiele apparaten wordt niet ondersteund.
 
 ## Vereisten voor Intune-pc-clientbeheer
 
@@ -86,6 +86,6 @@ De Intune-clientagent wordt doorgaans in stille modus op de achtergrond uitgevoe
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

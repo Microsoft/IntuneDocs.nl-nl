@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ Het hulpprogramma is een Mac OS-opdrachtregeltoepassing waarmee een 'wrapper' ro
 Zie [Microsoft Intune App Wrapping Tool voor iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218) als u het hulpprogramma wilt downloaden.
 
 ## Stap 1: voldoe aan de vereisten voor het gebruik van de App Wrapping Tool
+Lees [dit blogbericht](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) voor meer informatie over vereisten en het instellen daarvan.
 
 |Vereiste|Meer informatie|
 |---------------|--------------------------------|
 |Ondersteunde hulpmiddelenset en besturingssysteem|U moet de App Wrapping Tool uitvoeren op een Mac met OS X 10.8.5 of hoger, waarop XCode toolset versie 5 of hoger is geïnstalleerd.|
 |Handtekeningcertificaat en inrichtingsprofiel|U moet over een Apple-handtekeningcertificaat en -inrichtingsprofiel beschikken. Zie de [Apple-documentatie voor ontwikkelaars](https://developer.apple.com/) voor meer informatie.|
-|Een app verwerken met de App Wrapping Tool|Apps moeten zijn ontwikkeld en ondertekend door uw bedrijf of een onafhankelijke softwareleverancier (ISV). U kunt dit hulpprogramma niet gebruiken om apps uit de Apple Store te verwerken. Apps moeten zijn geschreven voor iOS 7.0 of hoger. Apps moeten ook de Position Independent Executable-indeling (PIE) hebben. Zie de Apple-documentatie voor ontwikkelaars voor meer informatie over de PIE-indeling. Tot slot moet de app de extensie **.app** of **.ipa** hebben.|
+|Een app verwerken met de App Wrapping Tool|Apps moeten zijn ontwikkeld en ondertekend door uw bedrijf of een onafhankelijke softwareleverancier (ISV). U kunt dit hulpprogramma niet gebruiken om apps uit de Apple Store te verwerken. Apps moeten zijn geschreven voor iOS 7.1 of hoger. Apps moeten ook de Position Independent Executable-indeling (PIE) hebben. Zie de Apple-documentatie voor ontwikkelaars voor meer informatie over de PIE-indeling. Tot slot moet de app de extensie **.app** of **.ipa** hebben.|
 |Apps die de Wrapping Tool niet kan verwerken|Versleutelde apps, niet-ondertekende apps en apps met uitgebreide bestandskenmerken.|
 |Apps die gebruikmaken van Azure Active Directory Library (ADAL)|Als uw app gebruikmaakt van ADAL, moet deze gebruikmaken van ADAL versie 1.0.2 of hoger en moet de ontwikkelaar de app toegang bieden tot de Intune Mobile Application Management-resource.<br /><br />Zie [Informatie voor apps die gebruikmaken van de Azure Active Directory Library](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) in dit artikel voor meer informatie over het gebruik van ADAL.|
 |Rechten instellen voor uw app|Voordat u de app verpakt, moet u rechten instellen zodat de app naast de standaardmachtigingen en -mogelijkheden ook over andere machtigingen en -mogelijkheden beschikt. Zie [App-rechten instellen](#setting-app-entitlements) voor instructies.|
@@ -292,6 +293,6 @@ Gebruik de volgende best practices voor beveiliging en privacy wanneer u de App 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

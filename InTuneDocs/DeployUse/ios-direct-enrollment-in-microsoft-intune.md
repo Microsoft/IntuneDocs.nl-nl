@@ -13,14 +13,14 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # iOS-apparaten direct inschrijven met behulp van Apple Configurator
-Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, met behulp van het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat wordt uitgevoerd op een Mac-computer. Met dit proces wordt het apparaat niet teruggezet op de fabrieksinstellingen en wordt het apparaat met een vooraf gedefinieerd beleid ingeschreven. Deze methode is bedoeld voor apparaten waarop **Geen relatie met gebruiker** is ingesteld. Voor deze methode is vereist dat u met het iOS-apparaat een USB-verbinding met een Mac-computer maakt om bedrijfsinschrijving in te stellen. Wanneer u iOS-apparaten rechtstreeks inschrijft, kunt u een apparaat inschrijven zonder het serienummer van het apparaat in te voeren. U kunt ook het apparaat een naam geven voor identificatiedoeleinden voordat Intune de naam van het apparaat vastlegt tijdens de inschrijving. De bedrijfsportal-app wordt niet ondersteund voor direct ingeschreven apparaten. In deze richtlijnen wordt ervan uitgegaan dat u Apple Configurator 2.0 gebruikt op een Mac-computer.
+Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, met behulp van het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat wordt uitgevoerd op een Mac-computer. Met dit proces wordt het apparaat niet teruggezet op de fabrieksinstellingen en wordt het apparaat met een vooraf gedefinieerd beleid geregistreerd. Deze methode is bedoeld voor apparaten waarop **Geen relatie met gebruiker** is ingesteld. Voor deze methode is vereist dat u met het iOS-apparaat een USB-verbinding met een Mac-computer maakt om bedrijfsinschrijving in te stellen. Wanneer u iOS-apparaten rechtstreeks inschrijft, kunt u een apparaat inschrijven zonder het serienummer van het apparaat in te voeren. U kunt ook het apparaat een naam geven voor identificatiedoeleinden voordat Intune de naam van het apparaat vastlegt tijdens de inschrijving. De bedrijfsportal-app wordt niet ondersteund voor direct ingeschreven apparaten. In deze richtlijnen wordt ervan uitgegaan dat u Apple Configurator 2.0 gebruikt op een Mac-computer.
 
 1.  **Een profiel maken voor apparaten** Met een registratieprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op apparaten. Als u dit nog niet hebt gedaan, maakt u een inschrijvingsprofiel voor iOS-apparaten die worden ingeschreven met Apple Configurator.
 
@@ -78,6 +78,6 @@ Intune ondersteunt de inschrijving van iOS-apparaten die bedrijfseigendom zijn, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

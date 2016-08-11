@@ -4,7 +4,7 @@ description: Met Intune kunt u apps beheren die u via een volume-aankoopprogramm
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 
 2.  Kies de app die u wilt implementeren, kies **Implementatie beheren** en gebruik vervolgens de instructies in het onderwerp [Apps implementeren in Microsoft Intune ](deploy-apps-in-microsoft-intune.md) om het uploaden, maken en implementeren van de app te voltooien.
 
+> [!TIP]
+> U moet de beschikbare installatie op **Vereist** zetten. Beschikbare installaties worden momenteel niet ondersteund.
+
 Wanneer u de app als een **Vereiste** installatie implementeert, moet iedere gebruiker die de app installeert, een licentie gebruiken.
 
 Als u een licentie wilt vrijmaken, moet u de implementatieactie wijzigen in **Verwijderen**. De licentie wordt vrijgemaakt zodra de app is verwijderd.
@@ -87,6 +90,6 @@ U kunt bewaken welke VPP-apps zijn geïmplementeerd en hoeveel licenties worden 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

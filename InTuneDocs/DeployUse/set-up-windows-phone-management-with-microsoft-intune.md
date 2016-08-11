@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen
+U vindt [hier](../enduser/using-your-windows-device-with-intune.md) meer informatie over het instellen van uw Windows-apparaat.
+
 Voordat u Windows 10 Mobile- of Windows Phone-apparaten met Microsoft Intune kunt beheren, moeten de apparaten met Intune kunnen communiceren. U kunt dit vereenvoudigen door een DNS-record te maken, zodat gebruikers het serveradres niet hoeven in te voeren. Hieronder worden de stappen beschreven om inschrijving voor gebruikers te vereenvoudigen.  
 
 In de meeste scenario’s kunnen gebruikers de bedrijfsportal-app installeren vanuit de Windows Store. Als u Windows Phone 8.0-apparaten beheert of de bedrijfsportal voor Windows Phone-apparaten moet implementeren, moet u bovendien de bedrijfsportal-app downloaden en ondertekenen. Zie [Windows Phone 8.0-beheer instellen](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -50,12 +52,16 @@ In de meeste scenario’s kunnen gebruikers de bedrijfsportal-app installeren va
 
     3.  Typ de URL van het geverifieerde domein voor de bedrijfswebsite in het vak **Geef een geverifieerde domeinnaam op** en klik vervolgens op **Automatische detectie testen**.
 
+    4.  Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht.
+        - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Richtlijnen voor eindgebruikers van Windows-apparaten](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt implementeren.  Stap 2 en 3 in de beheerconsole kunnen worden genegeerd.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

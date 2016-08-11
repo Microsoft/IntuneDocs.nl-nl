@@ -3,8 +3,8 @@ title: Beheermogelijkheden voor Windows-pc's | Microsoft Intune
 description: Meer informatie over de mogelijkheden van Intune wanneer u Windows-pc's beheert met de Intune-clientsoftware.
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ In de meeste gevallen schrijft u uw apparaten in bij Microsoft Intune, waarmee u
 
 -   **Anti-malwarebeveiliging**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
 
--   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad die is opgenomen in Intune <!--- (requires TeamViewer software)--->.
+-   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
 
 -   **Softwarelicentiebeheer**: houdt bij hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
 -   **App-implementatie**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de clientsoftware beheert.
@@ -48,7 +48,7 @@ Intune kan pc’s met de volgende Windows-versies (zowel x86 als x64) beheren:
 
 -   **Windows 8.1**: de versies Pro en Enterprise.
 
-- **Windows 10**: de versies Home, Pro, Education en Enterprise.
+- **Windows 10**: de versies Pro, Education en Enterprise.
 
 
 ## Minimale hardwarevereisten
@@ -74,6 +74,6 @@ Hieronder staan de softwarevereisten voor het installeren van de Intune-pc-clien
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

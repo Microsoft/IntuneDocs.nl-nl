@@ -3,7 +3,7 @@ title: iOS- en Mac-beheer instellen | Microsoft Intune
 description: Beheer van mobiele apparaten (MDM) inschakelen voor iOS-apparaten zoals iPads en iPhones en tevens Mac OS X-apparaten met Microsoft Intune.
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,13 +13,15 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 
 
 ---
 
 # iOS- en Mac-apparaatbeheer instellen
+U vindt [hier](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md) meer informatie over het instellen van uw iOS- of MAC-apparaat.
+
 Intune-beheer van mobiele apparaten voor iPads, iPhones, en Mac OS X-apparaten en geeft toegang tot zakelijke e-mail en apps. Een APNs-certificaat (Apple Push Notification-service) is vereist zodat Intune iOS- en Mac-apparaten kan beheren. Zodra het certificaat is toegevoegd aan Intune, kunnen gebruikers de bedrijfsportal-app installeren om hun apparaten in te schrijven, of de beheerder kan [beheer voor iOS-apparaten in bedrijfseigendom](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) instellen.
 
 1.  **Intune instellen**<br>
@@ -39,7 +41,9 @@ Intune-beheer van mobiele apparaten voor iPads, iPhones, en Mac OS X-apparaten e
     In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com), gaat u naar **Beheer** &gt; **Mobiele apparaten beheren** &gt; **iOS en Mac OS X** &gt; **Een APNs-certificaat uploaden**en klikt u op **Het APNs-certificaat uploaden**. **Blader** naar het certificaatbestand (.pem), klik op **Openen** en voer uw **Apple-id**in. Met het APNs-certificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar ingeschreven mobiele apparaten te pushen.
 
 5.  **Vertel gebruikers hoe ze met de bedrijfsportal toegang krijgen tot bronnen**<br>
-    Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht. [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht.
+    - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [Richtlijnen voor eindgebruikers van iOS- en Mac-apparaten](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 Als uw bedrijf of organisatie iOS-apparaten voor gebruikers koopt, kunnen die apparaten ook worden ingeschreven om te worden beheerd als [iOS-apparaten die bedrijfseigendom zijn](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -48,6 +52,6 @@ Als uw bedrijf of organisatie iOS-apparaten voor gebruikers koopt, kunnen die ap
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

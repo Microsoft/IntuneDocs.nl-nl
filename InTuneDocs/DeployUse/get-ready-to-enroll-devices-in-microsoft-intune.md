@@ -3,7 +3,7 @@ title: U voorbereiden op het registreren van apparaten | Microsoft Intune
 description: Mobile Device Management (MDM)-vereisten instellen en voorbereidingen treffen voor het inschrijven van verschillende besturingssystemen.
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
-ms.openlocfilehash: 24b8434993d7661e12172ac0e5fe58d1e6621558
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # Bereid u voor op het registreren van apparaten in Microsoft Intune
-U moet apparaatinschrijving inschakelen zodat werknemers mobiele apparaten (inclusief [Android](set-up-android-management-with-microsoft-intune.md), [iOS- en Mac-](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone-](set-up-windows-phone-management-with-microsoft-intune.md) en [Windows-pc's](set-up-windows-device-management-with-microsoft-intune.md)) bij Intune kunnen inschrijven. Voor het toestaan van inschrijvingen moet u een instantie voor het Mobile Device Management (MDM) instellen, de Intune-bedrijfsportal configureren, licenties toewijzen en inschrijven inschakelen voor het apparaatplatform.
+Schakel apparaatregistratie in als u wilt dat werknemers mobiele apparaten (inclusief [Android](set-up-android-management-with-microsoft-intune.md), [iOS- en Mac-](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone-](set-up-windows-phone-management-with-microsoft-intune.md) en [Windows-pc's](set-up-windows-device-management-with-microsoft-intune.md)) bij Intune kunnen registreren, of als u apparaten wilt beheren die eigendom zijn van het bedrijf. Voor het toestaan van inschrijvingen moet u een instantie voor het Mobile Device Management (MDM) instellen, de Intune-bedrijfsportal configureren, licenties toewijzen en inschrijven inschakelen voor het apparaatplatform.
 
 ## Instantie voor beheer van mobiele apparaten instellen
 De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
@@ -109,6 +109,6 @@ U kunt ook:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

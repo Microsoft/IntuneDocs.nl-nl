@@ -3,7 +3,7 @@ title: iOS-apparaten in bedrijfseigendom inschrijven | Microsoft Intune
 description: iOS-apparaten in bedrijfseigendom inschrijven met het Apple Device Enrollment Program (DEP) of Apple Configurator
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a124eb41789053451e0c709188430b1e043d435
-ms.openlocfilehash: 872be93241c84a8334e4415f00b1383da7b15a61
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: ca05e94e72269c11db24b667f1d113c794cd8b23
 
 
 ---
@@ -22,17 +22,19 @@ ms.openlocfilehash: 872be93241c84a8334e4415f00b1383da7b15a61
 # iOS-apparaten in bedrijfseigendom inschrijven in Microsoft Intune
 Microsoft Intune ondersteunt de inschrijving van iOS-apparaten van het bedrijf met behulp van het Device Enrollment Program (DEP) van Apple of het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat op een Mac-computer wordt uitgevoerd.
 
+**Vereiste:** [Apple Push Notification Service-certificaat](set-up-ios-and-mac-management-with-microsoft-intune.md)
+
 U kunt iOS-apparaten in bedrijfseigendom op drie manieren inschrijven:
 
 -   **Apple Configurator** - iOS-apparaten kunnen worden ingeschreven door een inschrijvingsprofiel voor bedrijfsapparaten te exporteren en deze mobiele apparaten vervolgens te verbinden met een Mac-computer waarop Apple Configurator wordt uitgevoerd. Apple Configurator ondersteunt twee soorten inschrijvingen:
 
-    - **Inschrijving met configuratieassistent** : de fabrieksinstellingen worden hersteld en het apparaat wordt voorbereid voor configuratie door de nieuwe gebruiker. Voor deze methode moet de beheerder een USB-verbinding maken tussen het iOS-apparaat en een Mac-computer waarop Apple Configurator wordt uitgevoerd om de inschrijving vooraf te configureren. De apparaten worden vervolgens afgeleverd bij hun gebruikers, die Configuratieassistent uitvoeren. Hierbij wordt het apparaat geconfigureerd met de referenties voor hun werk- of schoolaccount en de inschrijving wordt voltooid. [iOS-apparaten inschrijven met Apple Configurator en Configuratieassistent](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+    - **Inschrijving met configuratieassistent** : de fabrieksinstellingen worden hersteld en het apparaat wordt voorbereid voor configuratie door de nieuwe gebruiker. Voor deze methode moet de beheerder een USB-verbinding maken tussen het iOS-apparaat en een Mac-computer waarop [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) wordt uitgevoerd om de registratie vooraf te configureren. De apparaten worden vervolgens afgeleverd bij hun gebruikers, die Configuratieassistent uitvoeren. Hierbij wordt het apparaat geconfigureerd met de referenties voor hun werk- of schoolaccount en de inschrijving wordt voltooid. [iOS-apparaten inschrijven met Apple Configurator en Configuratieassistent](ios-setup-assistant-enrollment-in-microsoft-intune.md)
 
-    - **Directe inschrijving**: maakt een Apple Configurator-compatibel bestand dat tijdens de voorbereiding van het apparaat wordt gebruikt. Het ingeschreven apparaat krijgt niet opnieuw de fabrieksinstellingen, maar is niet meer gekoppeld aan de gebruiker. Voor deze methode moet de beheerder een USB-verbinding maken tussen het iOS-apparaat en een Mac-computer waarop Apple Configurator wordt uitgevoerd, om het apparaat in te schrijven. [iOS-apparaten inschrijven met een directe inschrijving van Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md)
+    - **Directe inschrijving**: maakt een Apple Configurator-compatibel bestand dat tijdens de voorbereiding van het apparaat wordt gebruikt. Het ingeschreven apparaat krijgt niet opnieuw de fabrieksinstellingen, maar is niet meer gekoppeld aan de gebruiker. Voor deze methode moet de beheerder een USB-verbinding maken tussen het iOS-apparaat en een Mac-computer waarop [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) wordt uitgevoerd, om het apparaat in te schrijven. [iOS-apparaten inschrijven met een directe inschrijving van Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md)
 
 -   **Device Enrollment Program (DEP)**: implementeert een draadloos inschrijvingsprofiel op apparaten die via het Device Enrollment Program van Apple zijn aangeschaft. Wanneer de gebruiker Configuratieassistent op het apparaat uitvoert, wordt het apparaat ingeschreven bij Intune.  Gebruikers kunnen de inschrijving niet opheffen, wanneer de apparaten zijn ingeschreven via DEP. [Het Device Enrollment Program implementeren op iOS-apparaten](ios-device-enrollment-program-in-microsoft-intune.md)
 
-## Gebruikersaffiniteit voor iOS-apparaten in bedrijfseigendom die gebruik maken van de bedrijfsportal
+## Apparaten die zijn geregistreerd via de bedrijfsportal op DEP of Apple Configurator gebruiken
 
 Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfsportal-app worden geïnstalleerd en uitgevoerd om apps te downloaden en apparaten te beheren. Nadat gebruikers hun apparaten hebben ontvangen, moeten zij een aantal extra stappen uitvoeren om de Configuratieassistent te voltooien en de bedrijfsportal-app te installeren.
 
@@ -68,6 +70,6 @@ Apparaten die zijn geconfigureerd zonder gebruikersaffiniteit bieden geen onders
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

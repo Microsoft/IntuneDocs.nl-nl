@@ -4,7 +4,7 @@ description: Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Verlopen van wachtwoorden (dagen)**|Met deze instelling bepaalt u de periode waarna het wachtwoord van een apparaat moet worden gewijzigd.|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u aan of u wilt voorkomen dat de eindgebruiker eerder gebruikte wachtwoorden mag hergebruiken.|
 |**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|
-|**Afbeeldingswachtwoord en PIN toestaan**|Hiermee kunt u eenvoudige bewegingen op een afbeelding of een eenvoudige pincode gebruiken voor aanmelden.<br>(alleen Windows 10 Desktop)|
 |**Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**|Indien ingeschakeld, moet de gebruiker een wachtwoord opgeven om het apparaat vanuit een niet-actieve status te ontgrendelen.<br>(alleen Windows 10 Mobile)|
 
 ### Versleuteling
@@ -71,14 +70,6 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker een Microsoft-account aan het apparaat kan koppelen.|
 |**Handmatig toevoegen van een ander account dan een Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker aan het apparaat e-mailaccounts kan toevoegen die niet aan een Microsoft-account zijn gekoppeld.|
 |**Synchronisatie van instellingen toestaan voor Microsoft-accounts**|Hiermee staat u synchronisatie tussen apparaten toe van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld.|
-
-### E-mailinstellingen
-
-|Naam van de instelling|Details|
-|----------------|----------------------|---------------------|
-|**Het Microsoft-account optioneel maken in de Windows Mail-toepassing**|Configureer dit als u de vereiste voor een Microsoft-account in Windows Mail wilt verwijderen.<br>Alleen Windows 10 Desktop|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Bluetooth toestaan**|Hiermee schakelt u het gebruik van Bluetooth-mogelijkheden op het apparaat in.|
 |**Modus voor Bluetooth-detectie toestaan**|Hiermee kan dit apparaat worden gedetecteerd door andere Bluetooth-apparaten.|
 |**Bluetooth-promotie toestaan**|Hiermee staat u toe dat apparaten reclame via Bluetooth kunnen ontvangen.|
-|**Modus voor Bluetooth-verbindbaarheid toestaan**|**Belangrijk:** deze instelling wordt niet meer ondersteund voor Windows 10 en wordt in de toekomst verwijderd.|
 |**Opnieuw instellen van telefoon toestaan**|Hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen.|
 |**USB-verbinding toestaan**|Hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen hebben tot externe opslagapparaten.|
 |**Antidiefstalmodus toestaan**|Hiermee configureert u of de antidiefstalmodus van Windows is ingeschakeld.|
@@ -177,6 +167,7 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 |Naam van de instelling|Details|
 |----------------|---------------|
 |**Automatische updates toestaan**|Schakel deze instelling in om automatische updates toe te staan. Configureer vervolgens een van de volgende instellingen om het gedrag voor updates te bepalen:<br /><br />**Melding van download**<br /><br />**Automatisch installeren op onderhoudstijdstip**<br /><br />**Automatisch installeren en opstarten op onderhoudstijdstip**<br /><br />**Automatisch installeren en opnieuw opstarten op het geplande tijdstip** **Opmerking:** wanneer deze optie is geselecteerd, kunt u ook de volgende instellingen configureren: **Melding aan eindgebruiker onderdrukken** en **De installatiedag voor geplande updates definiëren**.<br>(alleen Windows 10 Desktop)|
+|**Functies van evaluatieversies toestaan**|Hiermee kan Microsoft instellingen en functies van evaluatieversies implementeren op Windows 10-apparaten. U kunt selecteren dat alleen instellingen zijn toegestaan, of dat alle instellingen en functies van evaluatieversies mogen worden geïnstalleerd.|
 
 ## Aangepaste beleidsinstellingen
 Gebruik het **Aangepaste configuratiebeleid** van Microsoft Intune voor Windows 10 en Windows 10 Mobile om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om functies op Windows 10- en Windows 10 Mobile-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
@@ -332,6 +323,6 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

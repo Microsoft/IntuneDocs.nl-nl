@@ -1,10 +1,10 @@
 ---
-title: Exchange Connector voor gehoste Exchange | Microsoft Intune
+title: Exchange Connector voor Exchange Online | Microsoft Intune
 description: Verbinding maken met Intune Office 365 Exchange-service voor ondersteuning van Exchange ActiveSync MDM (beheer van mobiele apparaten).
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 
 
 ---
 
 # De Intune Service to Service Connector configureren voor gehoste Exchange
 
-Gebruik deze informatie om verbinding maken met Microsoft Intune en de Exchange Online-service die wordt gehost door Office 365.
+Gebruik deze informatie om verbinding maken met Microsoft Intune en Exchange Online of de nieuwe Exchange Online Dedicated-service. Neem contact op met uw accountmanager om te bepalen of uw Exchange Online Dedicated-omgeving de **nieuwe** of **verouderde** configuratie heeft. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
 
 ## Vereisten voor de Service to Service Connector
-De **Service to Service Connector** ondersteunt alleen gehoste Exchange en heeft geen vereisten voor een lokale infrastructuur.
+De **Service to Service Connector** ondersteunt alleen Exchange Online of nieuwe Exchange Online Dedicated en heeft geen vereisten voor een lokale infrastructuur.
 
 |Vereiste|Meer informatie|
 |---------------|--------------------|
-|Gehoste Exchange geconfigureerd en actief|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
+|Exchange Online geconfigureerd en actief|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Microsoft Exchange-versie|U moet een Office 365-abonnement met een Exchange Server-tenant van 2013 of later hebben. Als de tenant Exchange Server 2013 of later is, biedt de connector ondersteuning voor Exchange Server 2010 in diezelfde omgeving.|
+|Microsoft Exchange-versie|Exchange Online en nieuwe Exchange Online Dedicated-service|
 |Active Directory-synchronisatie|Voordat u de Intune Connector kunt gebruiken, moet u [Active Directory-synchronisatie instellen](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
 
 ### Vereisten voor Exchange-cmdlets
@@ -54,7 +54,7 @@ U moet ook een Exchange Online-gebruikersaccount maken dat wordt gebruikt door d
 3.  Klik op de pagina **Exchange-verbinding instellen** op **Service to Service Connector instellen**.
 
 
-De Service to Service Connector wordt automatisch geconfigureerd en gesynchroniseerd met uw gehoste Exchange-omgeving.
+De Service to Service Connector wordt automatisch geconfigureerd en gesynchroniseerd met uw Exchange Online- of nieuwe Exchange Online Dedicated-omgeving.
 
 ## De Exchange-verbinding valideren
 
@@ -64,6 +64,6 @@ U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging contro
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

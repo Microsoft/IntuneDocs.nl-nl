@@ -3,7 +3,7 @@ title: Apparaten registreren | Microsoft Intune
 description: Mobile Device Management (MDM) maakt gebruik van inschrijving om apparaten onder beheer te brengen en toegang tot resources toe te staan.
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
-ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ Hiermee geeft u op of de registratiemethode ondersteuning biedt voor Gebruikersa
   - Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
   - Bedrijfsportal-app
 
-[Gebruikersaffiniteit](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([Terug naar de tabel](#overview-of-device-enrollment-methods))
+[Gebruikersaffiniteit](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
 ### Vergrendelen
 Hiermee geeft u op of het apparaat kan worden vergrendeld om te voorkomen dat de gebruiker het Intune-beleid verwijdert en dus het apparaat niet meer wordt beheerd. Voor iOS-apparaten vereist vergrendeling van het apparaat dat de modus Onder supervisie actief is.
@@ -124,6 +124,6 @@ Computers die door Intune-clientsoftware worden beheerd, kunnen niet selectief w
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,7 +34,9 @@ Als u de registratie van uw telefoon ooit ongedaan maakt, blijft deze versleutel
 3.  Volg de instructies op het scherm. Tijdens het versleutelen kan het apparaat meerdere keren opnieuw opstarten.
 
 ### Wat te doen bij problemen
-**Probleem**: u hebt uw apparaat al versleuteld en wordt geconfronteerd met het volgende: - De versleutelingsknop is uitgeschakeld.
+**Probleem**: u hebt uw apparaat al versleuteld en wordt geconfronteerd met het volgende:
+
+- De versleutelingsknop is uitgeschakeld.
 - Er wordt een bericht weergegeven dat u nog moet versleutelen.
 - Er treden fouten op bij het gebruik van de bedrijfsportal-app.
 
@@ -47,6 +49,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
