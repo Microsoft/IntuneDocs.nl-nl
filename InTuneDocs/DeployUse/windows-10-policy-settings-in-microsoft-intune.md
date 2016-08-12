@@ -75,16 +75,16 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 
 |Naam van de instelling|Details|
 |----------------|----------------------|
-|**Webbrowser toestaan**|Hiermee staat u het gebruik van de webbrowser Edge op het apparaat toe.<br>(alleen Windows 10 Mobile)|
+|**Webbrowser toestaan**|Hiermee staat u het gebruik van de webbrowser Microsoft Edge op het apparaat toe.<br>(alleen Windows 10 Mobile)|
 |**Zoeksuggesties in de adresbalk toestaan**|Hiermee kan de zoekmachine sites voorstellen wanneer er zoektermen worden getypt.|
 |**Verzenden van intranetverkeer naar Internet Explorer toestaan**|Hiermee staat u toe dat gebruikers intranetsites in Internet Explorer kunnen openen.<br>(alleen Windows 10 Desktop)|
-|**Do Not Track toestaan**|Hiermee configureert u de browser Edge zodanig dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.|
+|**Do Not Track toestaan**|Hiermee configureert u de browser Microsoft Edge zodanig dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.|
 |**SmartScreen inschakelen**|Hiermee schakelt u de instelling van de SmartScreen-browser op apparaten in.|
-|**Active Scripting toestaan**|Hiermee staat u toe dat er in de browser Edge scripts, zoals JavaScript, kunnen worden uitgevoerd.|
+|**Active Scripting toestaan**|Hiermee staat u toe dat er in de browser Microsoft Edge scripts, zoals JavaScript, kunnen worden uitgevoerd.|
 |**Pop-ups toestaan**|Hiermee schakelt u de pop-upblokkering voor browsers in of uit.<br>(alleen Windows 10 Desktop)|
 |**Cookies toestaan**|Hiermee staat u cookies toe of niet.|
 |**Automatisch invullen toestaan**|Hiermee staat u gebruikers toe instellingen voor automatisch aanvullen in de browser te wijzigen.<br>(alleen Windows 10 Desktop)|
-|**Wachtwoordbeheer toestaan**|Hiermee schakelt u de functie Wachtwoordbeheer van Edge in of uit.|
+|**Wachtwoordbeheer toestaan**|Hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.|
 |**Locatie van de lijst met websites van Bedrijfsmodus**|Geeft de plaats aan van de lijst met websites die in Bedrijfsmodus worden geopend. Gebruikers kunnen deze lijst niet bewerken.<br>(alleen Windows 10 Desktop)|
 
 ### Apps
@@ -302,13 +302,13 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**ExcludedPaths**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br /><br />*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br /><br />Bijvoorbeeld: **c:\test;c:\test1.exe**<br /><br />**Standaardwaarde:** er worden geen paden uitgesloten|
 |**ExcludedProcesses**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br>*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br>Bijvoorbeeld: **c:\test.exe;c:\test1.exe**<br>**Standaardwaarde:** er worden geen processen uitgesloten|
 
-### URI-instellingen voor de Edge-browser
+### URI-instellingen voor de Microsoft Edge-browser
 
 |Naam van beleid|Details|
 |---------------|------------|-----------|
 |**Browser toestaan**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: browsen uitgeschakeld<br>**1**: browsen ingeschakeld (standaard)|
 |**AllowSearchSuggestionsinAddressBar**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: geen zoeksuggesties weergeven<br>**1**: zoeksuggesties weergeven (standaard)|
-|**SendIntranetTraffictoInternetExplorer**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (intranetsites worden standaard geopend in de Edge-browser)<br>**1**: ingeschakeld (intranetsites worden geopend in Internet Explorer)|
+|**SendIntranetTraffictoInternetExplorer**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (intranetsites worden standaard geopend in de Microsoft Edge-browser)<br>**1**: ingeschakeld (intranetsites worden geopend in Internet Explorer)|
 |**Do Not Track toestaan**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (DNT niet verzonden - standaard)<br>**1**: ingeschakeld (DNT verzenden)|
 |**SmartScreen configureren**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: niet toestaan<br>**1**: toestaan (standaard)|
 |**Pop-ups toestaan**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: pop-ups blokkeren (standaard)<br>**1**: pop-ups toestaan|
