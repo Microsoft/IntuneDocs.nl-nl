@@ -13,14 +13,14 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
-ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
+ms.sourcegitcommit: ed64b7cb3b0658846bce1ec8a5aefe7bdc715508
+ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
 
 
 ---
 
 # Intune-licenties beheren
-Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren bij het beheer, moet u eerst aan elke gebruiker een licentie toewijzen voor uw Intune-abonnement via de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854). Wanneer een licentie is toegewezen, worden de namen van de gebruikers weergegeven in de Intune-beheerconsole. Gebruikers kunnen vervolgens maximaal vijftien apparaten registreren.
+Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren bij het beheer, moet u eerst aan elke gebruiker een licentie toewijzen voor uw Intune-abonnement via de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854). Wanneer een licentie is toegewezen, worden de namen van de gebruikers weergegeven in de Intune-beheerconsole. Gebruikers kunnen vervolgens maximaal vijf apparaten registreren.
 
 In organisaties die gebruikmaken van de Mobility Suite (EMS) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. In dat geval kunt u met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) één service of een subset met services toewijzen. Zie [Intune-licenties beheren met PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) voor meer informatie.
 
@@ -90,6 +90,6 @@ Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO1-->
 
 
