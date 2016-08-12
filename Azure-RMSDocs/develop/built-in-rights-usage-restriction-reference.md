@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: "Procedure: ingebouwde rechten gebruiken| Azure RMS"
+title: 'Procedure: ingebouwde rechten gebruiken| Azure RMS'
 description: Bevat een overzicht van de ingebouwde rechten die RMS SDK 4.2 biedt en de gebruiksbeperkingen die een app moet afdwingen bij het naleven van deze beperkingen.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,15 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+experimental: true
+experiment_id: priyamo-TableVsFlatList-20160805
+translationtype: Human Translation
+ms.sourcegitcommit: ac7f8296149b93be803165ebde5144b0f78fa0c8
+ms.openlocfilehash: 9f722463eca408527cb8e39798eb6719d1f57804
+
 
 ---
 
@@ -144,6 +142,7 @@ Dit onderwerp bevat een overzicht van de ingebouwde rechten die de Microsoft Rig
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Aug16_HO2-->
 
 
