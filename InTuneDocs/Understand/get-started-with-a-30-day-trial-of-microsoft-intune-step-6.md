@@ -2,9 +2,9 @@
 title: "Andere opties en extra’s voor de Intune-evaluatieversies | Microsoft Intune"
 description: Beschrijving van waarschuwingen, meldingen en rapporten, plus algemene mogelijkheden van Intune die u moet weten wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30ed78b967d8669999f59046d610eca6c78260a1
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
 
 
 ---
@@ -50,7 +50,7 @@ Zie [Wat is er nieuw in Microsoft Intune?](/Intune/Deploy-Use/whats-new-in-micro
 Ondersteuningsopties worden beschreven in [Ondersteuning voor Microsoft Intune krijgen](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune) en u kunt deelnemen aan discussies over Intune in [Microsoft Intune-forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
 ### Volgende stappen
-Gefeliciteerd! U hebt zojuist de procedure voor de *Microsoft Intune-evaluatie* voltooid.
+Gefeliciteerd. U hebt zojuist de procedure voor de *Microsoft Intune-evaluatie* voltooid.
 
 >[!div class="step-by-step"]
 
@@ -58,6 +58,6 @@ Gefeliciteerd! U hebt zojuist de procedure voor de *Microsoft Intune-evaluatie* 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

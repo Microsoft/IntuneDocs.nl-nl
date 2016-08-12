@@ -2,9 +2,9 @@
 title: Groepen maken om gebruikers en apparaten te organiseren | Microsoft Intune
 description: Apparaat- en gebruikersgroepen maken wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 4c0ccb2d27d90c4a3aeebb3129b9b13a707b26a0
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 6cab173d7ef4a1d7bcea3193265e0729c93a214e
 
 
 ---
@@ -57,7 +57,7 @@ U vindt de nieuwe groep in de lijst **Groepen** en in de werkruimte **Groepen** 
 Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune) voor meer informatie over het gebruik van groepen.
 
 ### Volgende stappen
-Gefeliciteerd! U hebt zojuist stap 3 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
+Gefeliciteerd. U hebt zojuist stap 3 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
 
 >[!div class="step-by-step"]
 
@@ -65,6 +65,6 @@ Gefeliciteerd! U hebt zojuist stap 3 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

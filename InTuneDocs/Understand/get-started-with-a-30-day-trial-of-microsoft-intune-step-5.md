@@ -2,9 +2,9 @@
 title: Mobiele apparaten inschrijven voor de evaluatieversie | Microsoft Intune
 description: Zo kunt u mobiele apparaten inschrijven en een app installeren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: d441bb68a28a18cf45c616271cb33556df9f67f3
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 
 
 ---
@@ -61,7 +61,7 @@ Open de bedrijfsportal op het mobiele apparaat, kies **Apps** en installeer verv
 Zie [Bereid u voor op het registreren van apparaten in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) voor meer informatie over het beheer van mobiele apparaten met Intune.
 
 ### Volgende stappen
-Gefeliciteerd! U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
+Gefeliciteerd. U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
 
 >[!div class="step-by-step"]
 
@@ -69,6 +69,6 @@ Gefeliciteerd! U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

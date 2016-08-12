@@ -2,9 +2,9 @@
 title: Intune-evaluatiehandleiding | Microsoft Intune
 description: Inleiding en vereisten voor het instellen van een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: f64fc7c8758e87aeb4866c21c46e0db7349713c5
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
 
 
 ---
@@ -66,6 +66,6 @@ Het is nu tijd om aan de slag te gaan met uw evaluatieversie van 30 dagen.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

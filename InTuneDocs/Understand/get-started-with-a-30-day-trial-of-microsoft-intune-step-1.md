@@ -2,9 +2,9 @@
 title: Aanmelden voor een 30-daagse evaluatieversie van Microsoft Intune | Microsoft Intune
 description: Aanmelden voor een gratis, evaluatieversie van Intune van 30 dagen en wat u moet overwegen voordat u zich aanmeldt
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 5c36bac82389453d83504564cf26beb1027feefe
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
 
 
 ---
@@ -53,7 +53,7 @@ Voordat u zich registreert of aanmeldt bij Intune, moet u rekening houden met he
 Nadat u het aanmeldingsformulier hebt ingevuld en de Microsoft Online Subscription Overeenkomst hebt geaccepteerd, bent u automatisch met het tenantbeheerdersaccount aangemeld bij het Office 365-beheercentrum. U ontvangt ook een e-mailbericht met uw accountinformatie op het e-mailadres dat u hebt opgegeven tijdens de registratie. In deze e-mail wordt bevestigd dat uw abonnement actief is.
 
 ### Volgende stappen
-Gefeliciteerd! U hebt zojuist stap 1 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
+Gefeliciteerd. U hebt zojuist stap 1 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
 
 >[!div class="step-by-step"]
 
@@ -61,6 +61,6 @@ Gefeliciteerd! U hebt zojuist stap 1 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
-ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
+ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: 9f1612ffd9ab85e38058edb09870297a44b37c16
+ms.sourcegitcommit: 90a26e1008a8e0800b07940c11a8adcd00cbb241
+ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 
 
 ---
@@ -83,6 +83,6 @@ U kunt apparaten in bedrijfseigendom met toegewezen gebruikers op de volgende ma
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
