@@ -3,15 +3,15 @@ title: Zelfstudie voor snel starten met Azure Information Protection - Stap 3 | 
 description: Stap 3 in de introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ In deze stap installeert u de Azure Information Protection-client, zodat het bel
         Klik op **Beveiligen** > **Help en feedback** en bevestig de clientstatus in het dialoogvenster **Microsoft Azure Information Protection**. Als het goed is, ziet u **Information Protection-beleid wordt geïnstalleerd** en wordt een recente verbindingstijd weergegeven. Controleer of de weergegeven gebruikersnaam juist is voor uw tenant.
 
     - Er wordt een nieuwe balk weergegeven onder het lint, de balk Information Protection. Hierin wordt de titel **Gevoeligheid** weergegeven en het standaardlabel dat we hebben geconfigureerd voor **Intern**. 
-
-
-![Zelfstudie voor snel starten met Azure Information Protection Stap 3- client geïnstalleerd](../media/word2013-callouts.png)
+    
+        ![Zelfstudie voor snel starten met Azure Information Protection Stap 3- client geïnstalleerd](../media/word2013-callouts2.png)
 
 U bent klaar voor de laatste stap om de classificatie, labels en beveiliging in actie te zien.
 
@@ -53,6 +52,6 @@ U bent klaar voor de laatste stap om de classificatie, labels en beveiliging in 
 [Stap 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
