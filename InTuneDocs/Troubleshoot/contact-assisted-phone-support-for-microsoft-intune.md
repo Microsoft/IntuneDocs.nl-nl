@@ -69,7 +69,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Liechtenstein|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)|Frans&#42;, Duits&#42;, Italiaans&#42;, Engels|0800000300|0227614114|
 |Litouwen|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 EET (UTC +2)|Litouws&#42;, Engels|880030960||
 |Luxemburg|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)|Frans&#42;, Duits&#42;, Engels|80021094|24871510|
-|Macedonië, voormalige Joegoslavische Republiek|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)|Engels|0800-94288<br /><br />Stap 1: draai het telefoonnummer<br /><br />Stap 2: voer 001 in<br /><br />Stap 3: voer 877-663-5075 in||
+|Macedonië, FYRO|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)|Engels|0800-94288<br /><br />Stap 1: draai het telefoonnummer<br /><br />Stap 2: voer 001 in<br /><br />Stap 3: voer 877-663-5075 in||
 |Maleisië|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 18:00 MYT (UTC +8)|Bahasa&#42;, Maleis&#42;, Engels|1800 220030|362074606|
 |Malta|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)|Engels|0 80062231||
 |Mexico|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 CST (UTC -6)|Spaans&#42;, Engels|01-8005630605|55473856567|
