@@ -52,7 +52,7 @@ U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd d
 
 
    ![Voorbeeld van een aangepast VPN-beleid per app voor Android](..\media\android_per_app_vpn_oma_uri.png)
-#### Uw lijst met apps instellen als een blokkerings- of acceptatielijst (optioneel)
+#### Uw lijst met apps instellen als een blokkeringslijst of acceptatielijst (optioneel)
 U kunt opgeven dat VPN-verbinding *niet* mag worden gebruikt door de lijst met apps door de waarde **BLACKLIST** te gebruiken.  Alle andere apps kunnen verbinding maken via VPN.
 
 U kunt eventueel opgeven dat *alleen* de opgegeven apps de VPN-verbinding kunnen gebruiken door de waarde **WHITELIST** te gebruiken.
