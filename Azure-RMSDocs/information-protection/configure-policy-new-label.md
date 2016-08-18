@@ -3,15 +3,15 @@ title: Een nieuw label maken voor Azure Information Protection | Azure Rights Ma
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 26f22fb616f66332abf87501f782f1f8e8f0c013
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: c2f8f3204e3d5947137e7e9111ba4eba2628293b
 
 
 ---
@@ -28,22 +28,22 @@ U kunt een nieuw label toevoegen of een nieuw sublabel toevoegen aan een bestaan
 
 Gebruik de volgende instructies om een nieuw label toe te voegen aan het Azure Information Protection-beleid.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
- 
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
+1. Als u zich nog niet bij [Azure Portal](https://portal.azure.com) hebt aangemeld, meldt u zich nu aan en navigeert u vervolgens naar de blade **Azure Information Protection**. 
+    
+    Klik bijvoorbeeld in het hub-menu op **Bladeren** en begin met het typen van **Information** in het filtervak. Selecteer **Azure Information Protection**.
 
-3. Ga op de blade **Azure Information Protection** op een van de volgende manieren te werk:
+2. Ga op de blade **Azure Information Protection** op een van de volgende manieren te werk:
 
     - Een nieuw label maken: klik op **Een nieuw label toevoegen**.
 
     - Een sublabel maken: klik met de rechtermuisknop of selecteer het snelmenu (**...**) voor het label waarvoor u een sublabel wilt maken, en klik vervolgens op **Een sublabel toevoegen**.
 
-4. Selecteer op de blade **Label** of **Sublabel** de gewenste opties voor dit nieuwe label en klik vervolgens op **Opslaan**.
+3. Selecteer op de blade **Label** of **Sublabel** de gewenste opties voor dit nieuwe label en klik vervolgens op **Opslaan**.
 
     > [!NOTE]
     >Zie [Een label configureren om beveiliging toe te passen](configure-policy-protection.md) voor informatie over het instellen van beveiliging.
 
-5. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
+4. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
 
 ## Volgende stappen
 
@@ -53,6 +53,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

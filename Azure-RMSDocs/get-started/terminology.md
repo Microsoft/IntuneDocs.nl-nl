@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
-ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
+ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
+ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 ---
@@ -32,10 +32,10 @@ Weet u niet wat aan Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_
 |Active Directory Rights Management Services|Vaak afgekort tot *AD RMS*.<br /><br />Een Windows Server-rol die met versleuteling en beleidsregels gegevensbeveiliging biedt voor het beveiligen van documenten, bestanden en e-mailberichten.|
 |AD RMS|Zie *Active Directory Rights Management Services*.|
 |Azure Information Protection|In de preview-versie wordt gebruikgemaakt van classificatie, labels, en beveiliging om documenten en e-mailberichten beter te beveiligen. Azure Rights Management biedt beveiliging door middel van versleutelings-, identiteits- en autorisatiebeleid.|
-|Azure Rights Management|Vaak afgekort tot *Azure RMS*.<br /><br />Een Azure-service die met versleuteling en beleidsregels gegevensbeveiliging biedt voor het beveiligen van documenten, bestanden en e-mailberichten.  Ook wel bekend als *Azure Rights Management-service*. Vorige namen zijn onder andere:<br /><br />*Windows Azure Active Directory Rights Management*: vaak afgekort tot Windows Azure AD Rights Management Service.<br /><br />*RMS Online*: de oorspronkelijke, voorgestelde naam, die soms wordt weergegeven in foutberichten en vermeldingen in logboekbestanden.|
+|Azure Rights Management|Vaak afgekort tot *Azure RMS*.<br /><br />Een Azure-service die met versleuteling en beleidsregels gegevensbeveiliging biedt voor het beveiligen van documenten, bestanden en e-mailberichten.  Ook wel bekend als *Azure Rights Management-service*. Vorige namen zijn onder andere:<br /><br />- *Windows Azure Active Directory Rights Management*: vaak afgekort tot Windows Azure AD Rights Management Service.<br /><br />- *RMS Online*: de oorspronkelijke, voorgestelde naam, die soms wordt weergegeven in foutberichten en vermeldingen in logboekbestanden.|
 |Azure RMS|Zie *Azure Rights Management*.|
 |BYOK|Zie *bring your own key*.|
-|bring your own key|Vaak afgekort tot *BYOK*.<br /><br />Een configuratieoptie die is gekozen door een organisatie die haar eigen tenantsleutel voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] wil genereren en beheren.|
+|bring your own key|Vaak afgekort tot *BYOK*.<br /><br />Een configuratie- en topologieoptie die wordt gekozen door een organisatie die een eigen tenantsleutel voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] wil genereren en beheren.|
 |inhoudssleutel|Een unieke sleutel die wordt gemaakt door toepassingen met RMS-functionaliteit voor elk document of e-mailbericht dat wordt beveiligd door [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] en die helpt het risico van de openbaarmaking van informatie te beperken.|
 |verbruiken|Het ontgrendelen van een bestand om dit te lezen of gebruiken wanneer dat bestand is beveiligd door [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
 |deactiveren|Het uitschakelen van de Rights Management-service zodat de organisatie [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] niet meer kan gebruiken.|
@@ -44,6 +44,8 @@ Weet u niet wat aan Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_
 |enterprise rights management|Een in de branche gebruikelijke, algemene term die vaak wordt gebruikt om producten en oplossingen te beschrijven waarmee organisaties gevoelige of waardevolle informatie beschermen via een combinatie van versleuteling en hulpprogramma's voor autorisatie. Microsoft Rights Management is een voorbeeld van een oplossing voor een enterprise rights management-oplossing (ERM).|
 |ERM|Zie *enterprise rights management*.|
 |algemene beveiliging|Een beveiligingsniveau waarbij elk bestandstype wordt versleuteld en wordt voorkomen dat niet-geautoriseerde personen het bestand te openen. Nadat het bestand is geopend, is het bestand is niet versleuteld en kan het worden gebruikt in een toepassing die geen systeemeigen ondersteuning biedt voor [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
+|HYOK|Zie *Hold Your Own Key*.|
+|Hold Your Own Key|Vaak afgekort tot *HYOK*.<br /><br />Een configuratie- en topologieoptie voor een organisatie die de eigen sleutels on-premises wil genereren en opslaan, meestal om wettelijke of nalevingsredenen.|
 |gegevensbeveiliging|Soms afgekort tot *IP*.<br /><br />Een in de branche gebruikelijke, algemene term die verwijst naar het beschermen van gegevens en bestanden tegen ongeoorloofde toegang, zelfs nadat de gegevens en bestanden via e-mail of het delen van documenten buiten de organisatie is gebracht. Microsoft Rights Management is een voorbeeld van een oplossing voor gegevensbeveiliging (IP).|
 |Information Rights Management|Vaak afgekort tot *IRM*.<br /><br />Een term die wordt gebruikt in combinatie met Office-services, zoals Exchange Server, Word en SharePoint Online, om de mogelijkheid voor de ondersteuning van Rights Management te beschrijven.|
 |IRM|Zie *Information Rights Management*.|
@@ -72,6 +74,6 @@ Weet u niet wat aan Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -3,15 +3,15 @@ title: Voorwaarden voor automatische en aanbevolen classificatie voor Azure Info
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 80c201dcf316a5aa5e123645d47c6741f8b61f05
 
 
 ---
@@ -49,15 +49,15 @@ In dit voorbeeld kan de gebruiker op **Nu wijzigen** klikken om het aanbevolen l
 
 ## Aanbevolen of automatische classificatie voor een label configureren
 
-1. Zorg ervoor dat u bent aangemeld bij Azure Portal door deze speciale koppeling voor Azure Information Protection te gebruiken: https://portal.azure.com/?microsoft_azure_informationprotection=true
- 
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
+1. Als u zich nog niet bij [Azure Portal](https://portal.azure.com) hebt aangemeld, meldt u zich nu aan en navigeert u vervolgens naar de blade **Azure Information Protection**. 
+    
+    Klik bijvoorbeeld in het hub-menu op **Bladeren** en begin met het typen van **Information** in het filtervak. Selecteer **Azure Information Protection**.
 
-3. Selecteer op de blade **Azure Information Protection** het label dat u wilt configureren voor automatische of aanbevolen classificatie.
+2. Selecteer op de blade **Azure Information Protection** het label dat u wilt configureren voor automatische of aanbevolen classificatie.
 
-4. Klik op de blade **Label** in de sectie **Configure conditions for automatically applying this label (Voorwaarden voor het automatisch toepassen van dit label configureren)** op **Een nieuwe voorwaarde toevoegen**.
+3. Klik op de blade **Label** in de sectie **Configure conditions for automatically applying this label (Voorwaarden voor het automatisch toepassen van dit label configureren)** op **Een nieuwe voorwaarde toevoegen**.
 
-5. Selecteer op de blade **Voorwaarde** de optie **Ingebouwd** als u een vooraf gedefinieerde voorwaarde wilt gebruiken of **Aangepast** als u een eigen voorwaarde wilt opgeven en klik vervolgens op **Opslaan**:
+4. Selecteer op de blade **Voorwaarde** de optie **Ingebouwd** als u een vooraf gedefinieerde voorwaarde wilt gebruiken of **Aangepast** als u een eigen voorwaarde wilt opgeven en klik vervolgens op **Opslaan**:
 
     - Voor **Ingebouwd**: selecteer een voorwaarde in de lijst met beschikbare voorwaarden en selecteer vervolgens het minimum aantal exemplaren en of het exemplaar een unieke waarde moet hebben om in het aantal exemplaren te worden opgenomen.
         
@@ -67,13 +67,13 @@ In dit voorbeeld kan de gebruiker op **Nu wijzigen** klikken om het aanbevolen l
         
     **Voorbeeld van de opties voor exemplaren**: u selecteert de ingebouwde optie voor het sociaal-fiscale nummer en stelt het minimum aantal exemplaren in op 2, en een document bevat hetzelfde sociaal-fiscale nummer twee keer. Als u **Count occurrences with unique values only (Alleen exemplaren met unieke waarden tellen)** instelt op **Aan**, wordt niet aan de voorwaarde voldaan. En als u deze optie instelt op **Uit**, wordt wel aan de voorwaarde voldaan.
 
-6. Configureer op de blade **Label** het volgende en klik vervolgens op **Opslaan**:
+5. Configureer op de blade **Label** het volgende en klik vervolgens op **Opslaan**:
 
     - Automatische of aanbevolen classificatie kiezen: selecteer voor **Selecteren hoe dit label wordt toegepast: automatisch of aanbevolen aan gebruiker** de optie **Automatisch** of **Aanbevolen**.
 
     - Geef de tekst voor de gebruikersprompt of beleidstip op: behoud de standaardtekst of geef uw eigen tekenreeks op.
 
-7. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
+6. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
 
 ## Informatie over de ingebouwde voorwaarden
 
@@ -225,6 +225,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

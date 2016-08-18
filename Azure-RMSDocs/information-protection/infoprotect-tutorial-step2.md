@@ -3,15 +3,15 @@ title: Zelfstudie voor snel starten met Azure Information Protection - Stap 2 | 
 description: Stap 2 in de introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts vier stappen die minder dan vijftien minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
-ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
+ms.sourcegitcommit: 09cb56aaa0d7d97073623c518aa331d591a376e3
+ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
 
 
 ---
@@ -24,13 +24,20 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 Hoewel Azure Information Protection wordt geleverd met een standaardbeleid dat u zonder configuratie kunt gebruiken, zal dit beleid hieronder nader bekeken en worden een aantal wijzigingen doorgevoerd.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+1. Meld u aan bij [Azure Portal](https://portal.azure.com). Als u zowel de beveiliging als het classificeren en labelen wilt testen, meldt u zich aan als globale beheerder zodat u de Azure Rights Management-sjablonen kunt ophalen.
  
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
+2. Klik in het hub-menu op **Nieuw** > **Beveiliging en identiteit** > **Azure Information Protection (preview)** > **Maken**.
 
-- De hoofdblade van **Azure Information Protection**wordt weergegeven, met het standaardbeleid voor Information Protection dat automatisch is gemaakt. Dit standaardbeleid bevat de volgende labels voor classificatie: **Persoonlijk**, **Openbaar**, **Intern**, **Vertrouwelijk** en **Geheim**. Lees de knopinfo voor elk label om te zien hoe de labels moeten worden gebruikt. Het label **Geheim** heeft twee onderliggende labels: **Alle werknemers** en **Mijn groep**. Dit zijn voorbeelden van onderliggende categorieën.
+    Hiermee maakt u de blade **Azure Information Protection** zodat u de service in de lijst **Bladeren** van de hub kunt selecteren wanneer u zich opnieuw bij de portal aanmeldt. 
 
-- Voor de labels **Intern**, **Vertrouwelijk** en **Geheim** zijn visuele markeringen geconfigureerd (zoals voettekst, koptekst en watermerk) en voor deze labels is geen beveiliging ingesteld. Bovendien zijn de drie algemene instellingen niet zo ingesteld dat alle documenten en e-mailberichten een label moeten hebben. Er is geen standaardlabel en gebruikers hoeven geen reden op te geven wanneer ze het vertrouwelijkheidsniveau verlagen.
+    > [!TIP] 
+    > Selecteer **Vastmaken aan dashboard** om een **Azure Information Protection**-tegel op uw dashboard te maken. U hoeft dan niet te bladeren wanneer u zich opnieuw bij de portal aanmeldt.
+
+3.  Verken de hoofdblade van **Azure Information Protection** waarop het Information Protection-standaardbeleid wordt weergegeven dat automatisch wordt gemaakt:
+    
+    - Labels voor classificatie: **Persoonlijk**, **Openbaar**, **Intern**, **Vertrouwelijk** en **Geheim**. Lees de knopinfo voor elk label om te zien hoe de labels moeten worden gebruikt. Het label **Geheim** heeft twee onderliggende labels: **Alle werknemers** en **Mijn groep**. Dit zijn voorbeelden van onderliggende categorieën.
+
+    - Bij de standaardinstellingen zijn voor de labels **Intern**, **Vertrouwelijk** en **Geheim** visuele markeringen geconfigureerd (zoals voettekst, koptekst en watermerk) en is voor deze labels geen beveiliging ingesteld. Bovendien zijn de drie algemene instellingen niet zo ingesteld dat alle documenten en e-mailberichten een label moeten hebben. Er is geen standaardlabel en gebruikers hoeven geen reden op te geven wanneer ze het vertrouwelijkheidsniveau verlagen.
 
     ![Zelfstudie voor snel starten met Azure Information Protection - Stap 3 - standaardbeleid](../media/info-protect-policy.png)
 
@@ -42,7 +49,7 @@ In deze zelfstudie worden een aantal algemene instellingen gewijzigd, zodat u ku
 
 Nu worden de instellingen voor het label **Vertrouwelijk** gewijzigd:
 
-1. Klik op de labelvermelding **Vertrouwelijk**.
+1. Klik op het label **Vertrouwelijk**.
 
 2. In de blade **Label: Vertrouwelijk** ziet u de instellingen die voor elk label beschikbaar zijn. Breng de volgende wijzigingen aan:
 
@@ -90,6 +97,6 @@ Nu een overzicht van het standaardbeleid hebt en een aantal wijzigingen hebt aan
 [Stap 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

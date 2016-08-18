@@ -3,15 +3,15 @@ title: Zelfstudie voor snel starten met Azure Information Protection | Azure Rig
 description: Een introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
+ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
+ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 
 
 ---
@@ -38,11 +38,9 @@ U hebt het volgende nodig om de zelfstudie te volgen:
   > [!TIP] 
   > Als u een of beide abonnementen nodig hebt, moet u dit van tevoren regelen, omdat het enige tijd kan duren voordat dit proces is voltooid.
 
-- Een globale beheerdersaccount om u aan te melden bij het Office 365-beheercentrum of de klassieke Azure-portal, als u de Rights Management Service moet activeren. Dit account moet ook beschikken over een e-mailadres en een werkende e-mailservice (bijvoorbeeld Exchange Online of Exchange Server).
+- Een globale beheerdersaccount om u aan te melden bij het Office 365-beheercentrum of de klassieke Azure-portal, als u de Rights Management Service moet activeren, of selecteer Azure RMS-sjablonen in Azure Portal. Dit account moet ook beschikken over een e-mailadres en een werkende e-mailservice (bijvoorbeeld Exchange Online of Exchange Server).
 
 - Een computer met Windows (minimaal Windows 7 met Service Pack 1), waarop Office Professional Plus 2016, Office Professional Plus 2013 met Service Pack 1 of Office Professional Plus 2010 is geïnstalleerd. 
-
-- Als u Active Directory Rights Management Services (AD RMS) hebt geïmplementeerd in uw organisatie: de computer moet een werkgroepcomputer zijn waarop AD RMS nog niet eerder is gebruikt. Dit is vereist als u documenten wilt beveiligen en zorgt ervoor dat de computer sjablonen alleen vanaf Azure Rights Management downloadt. Er is geen ondersteuning voor computers om gelijktijdig verbinding te maken met AD RMS en Azure RMS. Zie [Migreren van AD RMS naar Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md) voor meer informatie over migratie.   
 
 Nu kunt u aan de slag.
 
@@ -53,6 +51,6 @@ Nu kunt u aan de slag.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

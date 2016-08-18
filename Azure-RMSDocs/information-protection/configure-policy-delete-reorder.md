@@ -3,15 +3,15 @@ title: Een label verwijderen of opnieuw rangschikken voor Azure Information Prot
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 50a60f8a0f8cb92aba7453e6c1dedacbe004a5ed
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 3b4066c8e5770e6f4a502ecaebfd961400e9df2d
 
 
 ---
@@ -36,11 +36,11 @@ Rangschik de labels zodanig dat gebruikers ze in een logische volgorde op de Inf
 
 Gebruik de volgende instructies om deze wijzigingen aan te brengen.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+1. Als u zich nog niet bij [Azure Portal](https://portal.azure.com) hebt aangemeld, meldt u zich nu aan en navigeert u vervolgens naar de blade **Azure Information Protection**. 
+    
+    Klik bijvoorbeeld in het hub-menu op **Bladeren** en begin met het typen van **Information** in het filtervak. Selecteer **Azure Information Protection**.
 
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
-
-3. Voer op de blade **Azure Information Protection** een van de volgende acties uit, afhankelijk van of u wilt verwijderen, wilt uitschakelen of de volgorde van een label wilt wijzigen:
+2. Voer op de blade **Azure Information Protection** een van de volgende acties uit, afhankelijk van of u wilt verwijderen, wilt uitschakelen of de volgorde van een label wilt wijzigen:
 
     - Een label verwijderen: klik met de rechtermuisknop of selecteer het snelmenu (**...**) voor het label dat u wilt verwijderen, klik op **Dit label verwijderen** en klik op **Ja** om te bevestigen. Klik vervolgens op **Opslaan**. 
 
@@ -48,7 +48,7 @@ Gebruik de volgende instructies om deze wijzigingen aan te brengen.
 
     - Een label opnieuw rangschikken: klik met de rechtermuisknop of selecteer het snelmenu (**...**) voor het label dat u opnieuw wilt rangschikken en klik op **Omhoog** of **Omlaag** totdat het label op de gewenste positie staat. Klik vervolgens op **Opslaan**. 
 
-4. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
+3. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
 
 ## Volgende stappen
 
@@ -58,6 +58,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

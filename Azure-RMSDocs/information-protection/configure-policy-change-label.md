@@ -3,15 +3,15 @@ title: Een bestaand label wijzigen of aanpassen voor Azure Information Protectio
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: d0d926bc7b06c1136ceb2964d1e62a350a73fc56
-ms.openlocfilehash: 39d83b42ace06e6e42ad50fee90b26a2f51a142e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 49f08d4180d74375a31136f7fc0c77437bcf84d5
 
 
 ---
@@ -29,17 +29,17 @@ U kunt bijvoorbeeld een label- of sublabelnaam, knopinfo, de kleur of de volgord
 Als u een label wilt wijzigen, gebruikt u de volgende instructies.
 
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
- 
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
+1. Als u zich nog niet bij [Azure Portal](https://portal.azure.com) hebt aangemeld, meldt u zich nu aan en navigeert u vervolgens naar de blade **Azure Information Protection**. 
+    
+    Klik bijvoorbeeld in het hub-menu op **Bladeren** en begin met het typen van **Information** in het filtervak. Selecteer **Azure Information Protection**.
 
-3. Selecteer op de blade **Azure Information Protection** het label dat u wilt wijzigen en breng vervolgens de wijzigingen op de blade **Label** en eventueel volgende blades aan.
+2. Selecteer op de blade **Azure Information Protection** het label dat u wilt wijzigen en breng vervolgens de wijzigingen op de blade **Label** en eventueel volgende blades aan.
 
     De uitzondering hierop is als u een label opnieuw wilt rangschikken wat u op dezelfde blade van **Azure Information Protection** doet: klik ofwel met de rechtermuisknop op het label of selecteer het snelmenu voor het label en selecteer vervolgens de optie **Omhoog** of **Omlaag**.
 
-4. Wanneer u wijzigingen op een blade aanbrengt, klikt u op **Opslaan** op die blade als u de wijzigingen wilt behouden.
+3. Wanneer u wijzigingen op een blade aanbrengt, klikt u op **Opslaan** op die blade als u de wijzigingen wilt behouden.
 
-5. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
+4. Maak de wijzigingen beschikbaar voor gebruikers door op de blade **Azure Information Protection** op **Publiceren** te klikken.
 
 > [!TIP]
 >Als u voor een van de standaardlabels de standaardwaarden opnieuw wilt instellen, gebruikt u de informatie in [Het Information Protection-standaardbeleid](configure-policy-default.md).
@@ -53,6 +53,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

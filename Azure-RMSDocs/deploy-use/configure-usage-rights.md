@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2016
+ms.date: 08/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
-ms.openlocfilehash: 17a423b8a5a6ec0aeb1121b9ea290ae84d809d9c
+ms.sourcegitcommit: 60f25cdcdabbfbb61072a95e39f84fed79cad871
+ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
 
 
 ---
@@ -28,211 +28,24 @@ Wanneer u met Azure Rights Management (Azure RMS) zonder sjabloon de beveiliging
 Gebruik dit artikel bij het configureren van de gewenste gebruiksrechten voor de toepassing dat en om te begrijpen hoe deze rechten door toepassingen worden geïnterpreteerd.
 
 ## Gebruiksrechten en beschrijvingen
-De onderstaande sectie bevat een lijst en beschrijvingen van de gebruiksrechten die door Rights Management worden ondersteund en hoe ze worden gebruikt en geïnterpreteerd. Ze worden weergegeven met de **algemene naam**. Dit is de meer beschrijvende versie van de waarde van één woord in de code (de waarde van **Codering in beleid**) die doorgaans wordt gebruikt om de gebruiksrechten weer te geven of naar de gebruiksrechten te verwijzen. De **API-constante of -waarde** is de SDK-naam voor een MSIPC API-aanroep die wordt gebruikt wanneer u een toepassing met RMS-functionaliteit schrijft die controleert op gebruiksrechten of gebruiksrechten aan een beleid toegevoegd.
+De onderstaande tabel bevat een lijst en beschrijvingen van de gebruiksrechten die door Rights Management worden ondersteund en hoe ze worden gebruikt en geïnterpreteerd. Ze worden weergegeven met de **algemene naam**. Dit is de meer beschrijvende versie van de waarde van één woord in de code (de waarde van **Codering in beleid**) die doorgaans wordt gebruikt om de gebruiksrechten weer te geven of naar de gebruiksrechten te verwijzen. De **API-constante of -waarde** is de SDK-naam voor een MSIPC API-aanroep die wordt gebruikt wanneer u een toepassing met RMS-functionaliteit schrijft die controleert op gebruiksrechten of gebruiksrechten aan een beleid toegevoegd.
+
+
+|Rechts|Beschrijving|Implementatie|
+|-------------------------------|---------------------------|-----------------|
+|Algemene naam: **Inhoud bewerken, Bewerken** <br /><br />Codering in beleid: **DOCEDIT**|Hiermee kan de gebruiker inhoud in de toepassing wijzigen, rangschikken, opmaken of filteren. Er worden geen rechten verleend om de bewerkte kopie op te slaan.|Aangepaste Office-rechten: als onderdeel van de opties **Wijzigen** en **Volledig beheer**. <br /><br />Naam in de klassieke Azure-portal: **Inhoud bewerken**<br /><br />Naam in AD RMS-sjablonen: **Bewerken** <br /><br />API-constante of -waarde: niet van toepassing.|
+|Algemene naam: **Opslaan** <br /><br />Codering in beleid: **EDIT**|Hiermee kan de gebruiker het document op de huidige locatie opslaan.<br /><br />In Office-toepassingen kan de gebruiker met deze rechten het document wijzigen.|Aangepaste Office-rechten: als onderdeel van de opties **Wijzigen** en **Volledig beheer**. <br /><br />Naam in de klassieke Azure-portal: **Bestand opslaan**<br /><br />Naam in AD RMS-sjablonen: **Opslaan** <br /><br />API-constante of -waarde: `IPC_GENERIC_WRITE L"EDIT"`|
+|Algemene naam: **Opmerking** <br /><br />Codering in beleid: **COMMENT**|Hiermee wordt de optie ingeschakeld voor het toevoegen van aantekeningen of opmerkingen aan de inhoud.<br /><br />Dit recht is beschikbaar in de SDK en als ad-hocbeleid in de module RMS-beveiliging voor Windows PowerShell, en is geïmplementeerd in sommige toepassingen van softwareleveranciers. Het recht wordt echter niet veel gebruikt en wordt momenteel niet ondersteund door Office-toepassingen.|Aangepaste Office-rechten: niet geïmplementeerd. <br /><br />Naam in de klassieke Azure-portal: niet geïmplementeerd.<br /><br />Naam in AD RMS-sjablonen: niet geïmplementeerd. <br /><br />API-constante of -waarde: `IPC_GENERIC_COMMENT L"COMMENT`|
+|Algemene naam: **Opslaan als, Exporteren** <br /><br />Codering in beleid: **EXPORT**|Hiermee wordt de optie ingeschakeld voor het opslaan van de inhoud onder een andere bestandsnaam (Opslaan als). Het bestand kan zonder beveiliging worden opgeslagen als het om Office-documenten gaat.<br /><br />Met dit recht kan de gebruiker ook andere exportopties uitvoeren in programma’s, zoals **Verzenden naar OneNote**.|Aangepaste Office-rechten: als onderdeel van de opties **Wijzigen** en **Volledig beheer**. <br /><br />Naam in de klassieke Azure-portal: **Inhoud exporteren (Opslaan als)**<br /><br />Naam in AD RMS-sjablonen: **Exporteren (Opslaan als)** <br /><br />API-constante of -waarde: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|Algemene naam: **Doorsturen** <br /><br />Codering in beleid: **FORWARD**|Hiermee wordt de optie ingeschakeld voor het doorsturen van een e-mailbericht en het toevoegen van geadresseerden in de regels **Aan** en **CC**. Dit recht geldt niet voor documenten maar alleen voor e-mailberichten.<br /><br />Dit recht staat de doorstuurserver niet toe rechten te verlenen aan andere gebruikers als onderdeel van de doorstuuractie.|Aangepaste Office-rechten: geweigerd bij gebruik van het standaardbeleid **Niet doorsturen**.<br /><br />Naam in de klassieke Azure-portal: **Doorsturen**<br /><br />Naam in AD RMS-sjablonen: **Doorsturen** <br /><br />API-constante of -waarde: `IPC_EMAIL_FORWARD L"FORWARD"`|
+|Algemene naam: **Volledig beheer** <br /><br />Codering in beleid: **OWNER**|Hiermee worden alle rechten voor het document verleend en kunnen alle beschikbare acties worden uitgevoerd.<br /><br />Omvat de mogelijkheid om beveiliging op te heffen en een document opnieuw te beveiligen.|Aangepaste Office-rechten: als de aangepaste optie **Volledig beheer**.<br /><br />Naam in de klassieke Azure-portal: **Volledig beheer**<br /><br />Naam in AD RMS-sjablonen: **Volledig beheer** <br /><br />API-constante of -waarde: `IPC_GENERIC_ALL L"OWNER"`|
+|Algemene naam: **Afdrukken** <br /><br />Codering in beleid: **PRINT**|Hiermee wordt optie ingeschakeld voor het afdrukken van de inhoud.|Aangepaste Office-rechten: als de optie **Inhoud afdrukken** in aangepaste machtigingen. Geen instelling die per ontvanger wordt ingesteld.<br /><br />Naam in de klassieke Azure-portal: **Afdrukken**<br /><br />Naam in AD RMS-sjablonen: **Afdrukken** <br /><br />API-constante of -waarde: `IPC_GENERIC_PRINT L"PRINT"`|
+|Algemene naam: **Beantwoorden** <br /><br />Codering in beleid: **PRINT**|Hiermee wordt de optie **Beantwoorden** ingeschakeld in een e-mailclient zonder dat wijzigingen in de regels **Aan** of **CC** mogen worden aangebracht.|Aangepaste Office-rechten: niet van toepassing.<br /><br />Naam in de klassieke Azure-portal: **Antwoorden**<br /><br />Naam in AD RMS-sjablonen: **Antwoorden** <br /><br />API-constante of -waarde: `IPC_EMAIL_REPLY`|
+|Algemene naam: **Allen beantwoorden** <br /><br />Codering in beleid: **REPLYALL**|Hiermee wordt de optie **Allen beantwoorden** ingeschakeld in een e-mailclient, maar mag de gebruiker geen geadresseerden toevoegen in de regels **Aan** of **CC**.|Aangepaste Office-rechten: niet van toepassing.<br /><br />Naam in de klassieke Azure-portal: **Allen beantwoorden**<br /><br />Naam in AD RMS-sjablonen: **Allen beantwoorden** <br /><br />API-constante of -waarde: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|Algemene naam: **Weergeven, Openen, Lezen** <br /><br />Codering in beleid: **VIEW**|Hiermee kan de gebruiker het document openen en de inhoud bekijken.|Aangepaste Office-rechten: als onderdeel van het aangepaste beleid **Lezen**, optie **Weergave**.<br /><br />Naam in de klassieke Azure-portal: **Weergave**<br /><br />Naam in AD RMS-sjablonen: **Allen beantwoorden** <br /><br />API-constante of -waarde: `IPC_GENERIC_READ L"VIEW"`|
+|Algemene naam: **Kopiëren** <br /><br />Codering in beleid: **EXTRACT**|Hiermee schakelt u opties in voor het kopiëren van gegevens (inclusief schermopnamen) uit het document naar hetzelfde of een ander document.<br /><br />In sommige toepassingen kunt u ook het hele document opslaan in een niet-beveiligde vorm.|Aangepaste Office-rechten: als de aangepaste beleidsoptie **Gebruikers met leestoegang toestaan om inhoud te kopiëren**.<br /><br />Naam in de klassieke Azure-portal: **Inhoud kopiëren en extraheren**<br /><br />Naam in AD RMS-sjablonen: **Extraheren** <br /><br />API-constante of -waarde: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|Algemene naam: **Macro's toestaan** <br /><br />Codering in beleid: **OBJMODEL**|Hiermee wordt de optie ingeschakeld voor het uitvoeren van macro's of andere toegang op programmeerniveau of externe toegang tot de inhoud in een document.|Aangepaste Office-rechten: als de aangepaste beleidsoptie **Toegang op programmeerniveau toestaan**. Geen instelling die per ontvanger wordt ingesteld.<br /><br />Naam in de klassieke Azure-portal: **Macro's toestaan**<br /><br />Naam in AD RMS-sjablonen: **Macro's toestaan** <br /><br />API-constante of -waarde: niet geïmplementeerd.|
 
-
-### Inhoud bewerken, bewerken
-
-Hiermee kan de gebruiker inhoud in de toepassing wijzigen, rangschikken, opmaken of filteren. Er worden geen rechten verleend om de bewerkte kopie op te slaan.
-
-**Codering in beleid**: DOCEDIT
-
-**Implementatie in aangepaste Office-rechten**: als onderdeel van de opties *Wijzigen* en *Volledig beheer*.
-
-**Naam in de klassieke Azure-portal**: *Inhoud bewerken*
-
-**Naam in AD RMS-sjablonen**: *Bewerken*
-
-**API-constante of -waarde**: *Niet van toepassing*
-
----
-
-### Opslaan
-
-Hiermee kan de gebruiker het document op de huidige locatie opslaan.
-
-**Codering in beleid**: EDIT
-
-**Implementatie in aangepaste Office-rechten**: als onderdeel van de opties *Wijzigen* en *Volledig beheer*.
-
-**Naam in de klassieke Azure-portal**: *Bestand opslaan*
-
-**Naam in AD RMS-sjablonen**: *Opslaan*
-
-**API-constante of -waarde**: IPC_GENERIC_WRITEL"EDIT"
-
-In Office-toepassingen kan de gebruiker met deze rechten het document wijzigen.
-
----
-
-### Opmerking
-
-Hiermee wordt de optie ingeschakeld voor het toevoegen van aantekeningen of opmerkingen aan de inhoud.
-
-**Codering in beleid**: COMMENT
-
-**Implementatie in aangepaste Office-rechten**: niet geïmplementeerd.
-
-**Naam in de klassieke Azure-portal**: niet geïmplementeerd
-
-**Naam in AD RMS-sjablonen:** niet geïmplementeerd.
-
-**API-constante of -waarde**: IPC_GENERIC_COMMENT L"COMMENT
-
-Dit recht is beschikbaar in de SDK en als ad-hocbeleid in de module RMS-beveiliging voor Windows PowerShell, en is geïmplementeerd in sommige toepassingen van softwareleveranciers. Het recht wordt echter niet veel gebruikt en wordt momenteel niet ondersteund door Office-toepassingen.
-
----
-
-### Opslaan als, Exporteren
-
-Hiermee wordt de optie ingeschakeld voor het opslaan van de inhoud onder een andere bestandsnaam (Opslaan als). Het bestand kan zonder beveiliging worden opgeslagen als het om Office-documenten gaat.
-
-**Codering in beleid**: EXPORT
-
-**Implementatie in aangepaste Office-rechten:** als onderdeel van de opties *Wijzigen* en *Volledig beheer*.
-
-**Naam in de klassieke Azure-portal:***Inhoud exporteren (Opslaan als)*
-
-**Naam in AD RMS-sjablonen:** *Exporteren (Opslaan als)*
-
-**API-constante of -waarde:** IPC_GENERIC_EXPORT L"EXPORT"
-
-Met dit recht kan de gebruiker ook andere exportopties in toepassingen uitvoeren, zoals *Verzenden naar OneNote*.
-
----
-
-### Doorsturen
-
-Hiermee wordt de optie ingeschakeld voor het doorsturen van een e-mailbericht en het toevoegen van geadresseerden in de regels *Aan* en *CC*. Dit recht geldt niet voor documenten maar alleen voor e-mailberichten.
-
-**Codering in beleid:** FORWARD
-
-**Implementatie in aangepaste Office-rechten:** geweigerd bij gebruik van het standaardbeleid *Niet doorsturen*.
-
-**Naam in de klassieke Azure-portal:** *Doorsturen*
-
-**Naam in AD RMS-sjablonen:** *Doorsturen*
-
-**API-constante of -waarde:** IPC_EMAIL_FORWARD L"FORWARD"
-
-Dit recht staat de doorstuurserver niet toe rechten te verlenen aan andere gebruikers als onderdeel van de doorstuuractie.
-
----
-
-### Volledig beheer
-
-Hiermee worden alle rechten voor het document verleend en kunnen alle beschikbare acties worden uitgevoerd.
-
-**Codering in beleid**: OWNER
-
-**Implementatie in aangepaste Office-rechten**: als onderdeel van de aangepaste optie *Volledig beheer*.
-
-**Naam in de klassieke Azure-portal:** *Volledig beheer*
-
-**Naam in AD RMS-sjablonen:** *Volledig beheer*
-
-**API-constante of -waarde:** IPC_GENERIC_ALL L"OWNER"
-
-Omvat de mogelijkheid om beveiliging op te heffen en een document opnieuw te beveiligen.
-
----
-
-### Afdrukken
-
-Hiermee wordt optie ingeschakeld voor het afdrukken van de inhoud.
-
-**Codering in beleid:** PRINT
-
-**Implementatie in aangepaste Office-rechten:** als de optie *Inhoud afdrukken* in aangepaste machtigingen. Geen instelling die per ontvanger wordt ingesteld.
-
-**Naam in de klassieke Azure-portal:** *Afdrukken*
-
-**Naam in AD RMS-sjablonen:** *Afdrukken*
-
-**API-constante of -waarde:** IPC_GENERIC_PRINT L"PRINT
-
----
-
-### Beantwoorden
-
-Hiermee wordt de optie ingeschakeld in een e-mailclient zonder dat wijzigingen in de regels *Aan* of *CC* mogen worden aangebracht.
-
-**Codering in beleid:** REPLY
-
-**Implementatie in aangepaste Office-rechten**: niet van toepassing
-
-**Naam in de klassieke Azure-portal:** *Antwoorden*
-
-**Naam in AD RMS-sjablonen:** *Antwoorden*
-
-**API-constante of -waarde:** IPC_EMAIL_REPLY
-
----
-
-### Allen beantwoorden
-
-Hiermee wordt de optie *Allen beantwoorden* ingeschakeld in een e-mailclient, maar mag de gebruiker geen geadresseerden toevoegen in de regels *Aan* of *CC*.
-
-**Codering in beleid:** REPLYALL
-
-**Implementatie in aangepaste Office-rechten**: niet van toepassing
-
-**Naam in de klassieke Azure-portal:** *Allen beantwoorden*
-
-**Naam in AD RMS-sjablonen:** *Allen beantwoorden*
-
-**API-constante of -waarde:** IPC_EMAIL_REPLYALL L"REPLYALL"
-
----
-
-### Weergeven, Openen, Lezen
-
-Hiermee kan de gebruiker het document openen en de inhoud bekijken.
-
-**Codering in beleid:** VIEW
-
-**Implementatie in aangepaste Office-rechten**: als onderdeel van het aangepaste beleid *Lezen*, optie *Weergeven*.
-
-**Naam in de klassieke Azure-portal:** *Inhoud weergeven*
-
-**Naam in AD RMS-sjablonen:** *Weergeven*
-
-**API-constante of -waarde:** IPC_GENERIC_READ L"VIEW"
-
----
-
-### Kopiëren
-
-Hiermee schakelt u opties in voor het kopiëren van gegevens (inclusief schermopnamen) uit het document naar hetzelfde of een ander document.
-
-**Codering in beleid**: EXTRAHEREN
-
-**Implementatie in aangepaste Office-rechten:** als de aangepaste beleidsoptie *Gebruikers met leestoegang toestaan om inhoud te kopiëren*.
-
-**Naam in de klassieke Azure-portal:** *Inhoud kopiëren en extraheren*
-
-**Naam in AD RMS-sjablonen:** *Extraheren*
-
-**API-constante of -waarde:** IPC_GENERIC_EXTRACT L"EXTRACT"
-
-In sommige toepassingen kunt u ook het hele document opslaan in een niet-beveiligde vorm.
-
----
-
-
-### Macro's toestaan
-
-Hiermee wordt de optie ingeschakeld voor het uitvoeren van macro's of andere toegang op programmeerniveau of externe toegang tot de inhoud in een document.
-
-**Codering in beleid:** OBJMODEL
-
-**Implementatie in aangepaste Office-rechten**: als onderdeel van de aangepaste beleidsoptie *Toegang op programmeerniveau toestaan*. Geen instelling die per ontvanger wordt ingesteld.
-
-**Naam in de klassieke Azure-portal:** *Macro's toestaan*
-
-**Naam in AD RMS-sjablonen:** *Macro's toestaan*
-
-**API-constante of -waarde:** niet van toepassing
 
 
 ## Rechten die beschikbaar zijn in machtigingsniveaus
@@ -289,6 +102,6 @@ Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling be
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

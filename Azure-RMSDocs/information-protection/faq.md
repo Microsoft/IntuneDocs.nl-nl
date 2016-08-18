@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ Probeer onze zelfstudie om snel te starten om binnen enkele minuten aan de slag 
 
 Met de preview kunt u het nieuwe **Premium P2-serviceplan**. Sommige geavanceerde functies, zoals automatische en aanbevolen labels, zijn mogelijk niet beschikbaar in uw huidige plan. Zie het volgende blogbericht [Introductie van Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/) voor informatie over de verschillende serviceplannen (Azure Information Protection Premium P1 en Azure Information Protection Premium P2).
 
-Deze preview-versie heeft de volgende beperkingen: Bekijk de aankondigingen op de blog [Enterprise Mobility en Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) en onze [Yammer-site](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) om te controleren wanneer extra functies en mogelijkheden beschikbaar zijn:
+Deze preview-versie heeft de volgende beperkingen: Bekijk de aankondigingen op de blog [Enterprise Mobility en Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) en onze [Yammer-site](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) om te controleren wanneer extra functies en mogelijkheden beschikbaar zijn:
 
 - Er is geen centrale logboekregistratie voor de classificaties en labels.
 
-- Labelnamen en knopinfo worden alleen in het Engels ondersteund.
+- Labelnamen en knopinfo worden slechts in één taal ondersteund.
 
 - De voorwaarden voor automatische classificatie moeten woordgroepen of patronen zijn.
 
@@ -61,11 +61,11 @@ Voor de preview-versie kunt u elk abonnement gebruiken waarmee u over Azure Righ
 
 Als u het Azure Information Protection-beleid in Azure Portal wilt configureren, moet u een abonnement voor Azure hebben. Als u nog geen Azure-abonnement voor uw organisatie hebt, kunt u er een krijgen door u aan te melden voor een gratis proefversie. Ga naar de pagina [Aan de slag met Azure](https://account.windowsazure.com/organization) en volg de instructies.
 
-Eventuele wijzigingen in de vereisten van het abonnement worden aangekondigd op de blog [Enterprise Mobility and Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
+Eventuele wijzigingen in de vereisten van het abonnement worden aangekondigd op de blog [Enterprise Mobility and Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection).
 
 ## Moet ik een globale beheerder zijn om de preview van Azure Information Protection te kunnen gebruiken?
 
-In de preview-versie kan elke gebruiker die door Azure is geverifieerd het Azure Information Protection-beleid van de tenant weergeven en configureren in Azure Portal.
+In de preview-versie kan elke gebruiker die door Azure is geverifieerd het Azure Information Protection-beleid van de tenant voor het classificeren en labelen weergeven en configureren in Azure Portal. Als u echter een label wilt configureren om een Azure Rights Management-sjabloon toe te passen, moet u als globale beheerder zijn aangemeld voor Azure Active Directory.
 
 Als u hebt geselecteerd dat het demobeleid wordt geïnstalleerd als u de [Azure Information Protection-client](https://www.microsoft.com/en-us/download/details.aspx?id=53018) installeert, hoeft u zich niet eens aan te melden bij de portal om deze preview-versie te gebruiken. Het demobeleid installeert lokaal het standaardbeleid voor Azure Information Protection, zodat u documenten en e-mailberichten kunt labelen. U kunt echter geen nieuwe labels maken of toevoegen zonder dat u bij Azure Portal bent aangemeld. 
 
@@ -74,7 +74,7 @@ Als u de documenten en e-mailberichten die u classificeert en van labels voorzie
 
 ## Ondersteunt Azure Information Protection lokale en hybride scenario's?
 
-Azure Information Protection is een cloudoplossing. Als u hybride scenario's wilt maken, neemt u contact op met het Information Protection-team via askipteam@microsoft.com.
+Azure Information Protection is een cloudoplossing. Als u Azure Information Protection voor een hybride scenario wilt implementeren, neemt u contact op met het Information Protection-team via askipteam@microsoft.com.
 
 ## Welke clientplatforms en toepassingen worden ondersteund door Azure Information Protection?
 
@@ -150,7 +150,11 @@ Omdat Azure Information Protection gebruikmaakt van permanente metagegevens voor
 
 ## Hoe gaat het bijhouden en intrekken van documenten voor Azure Information Protection in zijn werk?
 
-Het bijhouden van documenten voor bestanden die u classificeert en beveiligt met Azure Information Protection werkt op dezelfde manier als in Azure Rights Management. Zie [Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](../rms-client/sharing-app-track-revoke.md) voor meer informatie.
+Documenttracking voor bestanden die u classificeert en beveiligt met Azure Information Protection werkt op dezelfde manier als in Azure Rights Management en de RMS-toepassing voor delen. U kunt ook toegang tot de documenttrackingsite krijgen met de Azure Information Protection-client (versie 1.0.233 of hoger): 
+
+- Klik in een Office-toepassing op het tabblad **Start** in de groep **Beveiliging** op **Beveiligen** > **Gebruik bijhouden**. 
+
+Zie [Uw documenten bijhouden en intrekken met gebruik van de RMS-toepassing voor delen](../rms-client/sharing-app-track-revoke.md) voor meer informatie.
 
 ## Hoe dwingt Azure Information Protection de beleidsregels af die ik configureer?
 
@@ -184,6 +188,6 @@ Ga vervolgens naar onze [Yammer-site](https://www.yammer.com/askipteam/#/threads
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

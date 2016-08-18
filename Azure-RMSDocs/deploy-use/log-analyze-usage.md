@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
-ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
+ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
 
 
 ---
@@ -131,7 +131,7 @@ De eerste regel geeft aan dat het Azure Rights Management-logboeken zijn. De twe
 
 De derde regel inventariseert een lijst met veldnamen die worden gescheiden door tabs:
 
-**#Velden: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip**
+**#Velden: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 Elk van de volgende regels is een logboekrecord. De waarden van de velden staan in dezelfde volgorde als de voorafgaande regel en worden gescheiden door tabs. Gebruik de volgende tabel om de velden te interpreteren.
 
@@ -152,6 +152,7 @@ Elk van de volgende regels is een logboekrecord. De waarden van de velden staan 
 |date-published|Datum|De datum waarop het document is beveiligd.|15-10-2015T21:37:00|
 |c-info|Tekenreeks|De informatie over het clientplatform waarmee de aanvraag wordt ingediend.<br /><br />De specifieke tekenreeks varieert, afhankelijk van de toepassing (bijvoorbeeld het besturingssysteem of de browser).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Het IP-adres van de client waarmee de aanvraag is ingediend.|64.51.202.144|
+
 
 #### Uitzonderingen voor het veld user-id
 Hoewel het veld user-id meestal aangeeft welke gebruiker de aanvraag heeft uitgevoerd, zijn er twee uitzonderingen waarbij de waarde niet aan een echte gebruiker is gekoppeld:
@@ -174,29 +175,42 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |AcquireTemplates|Er is een aanroep uitgevoerd om sjablonen op te halen op basis van sjabloon-id 's.|
 |AcquireTemplateInformation|Er is een aanroep uitgevoerd om de id's van de sjabloon bij de service op te halen.|
 |AddTemplate|Er wordt een aanroep uitgevoerd via de klassieke Azure-portal om een sjabloon toe te voegen.|
+|AllDocsCsv|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om het CSV-bestand te downloaden van de pagina **Alle documenten**.|
 |BECreateEndUserLicenseV1|Er wordt een aanroep uitgevoerd vanaf een mobiel apparaat om een gebruiksrechtovereenkomst te maken.|
 |BEGetAllTemplatesV1|Er wordt een aanroep uitgevoerd vanaf een mobiel apparaat (back-end) om alle sjablonen op te halen.|
 |Certify|De inhoud wordt voor beveiliging gecertificeerd door de client.|
 |KMSPDecrypt|De client probeert de inhoud te ontsleutelen die is beveiligd met RMS. Alleen van toepassing op een door de klant beheerde tenantsleutel (BYOK).|
 |DeleteTemplateById|Er is een aanroep vanuit de klassieke Azure-portal uitgevoerd om een sjabloon te verwijderen op basis van de sjabloon-id.|
+|DocumentEventsCsv|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om het CSV-bestand voor één document te downloaden.|
 |ExportTemplateById|Er wordt een aanroep vanuit de klassieke Azure-portal uitgevoerd om een sjabloon te verwijderen op basis van de sjabloon-id.|
 |FECreateEndUserLicenseV1|Vergelijkbaar met de AcquireLicense-aanvraag, maar afkomstig van mobiele apparaten.|
 |FECreatePublishingLicenseV1|Hetzelfde als Certify en GetClientLicensorCert gecombineerd, afkomstig van mobiele clients.|
 |FEGetAllTemplates|Er wordt een aanroep vanaf een mobiel apparaat (front-end) uitgevoerd om de sjablonen te verkrijgen.|
+|GetAllDocs|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om de pagina **alle documenten** voor een gebruiker te laden of om alle documenten voor de tenant te zoeken. Gebruik deze waarde met de velden admin-action en acting-as-admin:<br /><br />- admin-action is leeg: een gebruiker bekijkt de pagina **alle documenten** voor de eigen documenten.<br /><br />- admin-action heeft de waarde true en acting-as-user is leeg: een beheerder bekijkt alle documenten voor hun tenant.<br /><br />- admin-action heeft de waarde true en acting-as-user is niet leeg: een beheerder bekijkt de pagina **alle documenten** voor een gebruiker.|
 |GetAllTemplates|Er wordt een aanroep vanuit de klassieke Azure-portal uitgevoerd om alle sjablonen te verkrijgen.|
 |GetClientLicensorCert|Er wordt met de client een publicatiecertificaat aangevraagd (dat later wordt gebruikt om inhoud te beveiligen) bij een Windows-computer.|
 |GetConfiguration|Er wordt een Azure PowerShell-cmdlet aangeroepen om de configuratie van de Azure RMS-tenant op te halen.|
 |GetConnectorAuthorizations|Er wordt een aanroep uitgevoerd met de RMS-connectoren om hun configuratie op te halen uit de cloud.|
+|GetRecipients|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de lijstweergave voor één document te gaan.|
+|GetSingle|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar een pagina **één document** te gaan.|
 |GetTenantFunctionalState|De klassieke Azure-portal of Azure RMS is geactiveerd.|
 |GetTemplateById|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een sjabloon op te halen door een sjabloon-id op te geven.|
 |ExportTemplateById|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een sjabloon te exporteren door een sjabloon-id op te geven.|
 |FindServiceLocationsForUser|Er wordt een aanroep uitgevoerd om URL's te zoeken, die worden gebruik om Certify of AcquireLicense aan te roepen.|
+|LoadEventsForMap|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de overzichtsweergave voor één document te gaan.|
+|LoadEventsForSummary|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de tijdlijnweergave voor één document te gaan.|
+|LoadEventsForTimeline|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de overzichtsweergave voor één document te gaan.|
 |ImportTemplate|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een sjabloon te importeren.|
+|RevokeAccess|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om een document in te trekken.|
+|SearchUsers |Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om alle gebruikers in een tenant te zoeken.|
 |ServerCertify|Een wordt een aanroep vanaf een RMS-clients(zoals SharePoint) uitgevoerd om de server te certificeren.|
 |SetUsageLogFeatureState|Er wordt een aanroep uitgevoerd om logboekregistratie van het gebruik in te schakelen.|
 |SetUsageLogStorageAccount|Er wordt een aanroep uitgevoerd om de locatie van Azure RMS-logboeken op te geven.|
-|KMSPSignDigest|Er wordt een aanroep uitgevoerd wanneer een door de klant beheerde sleutel wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
+|SignDigest|Er wordt een aanroep uitgevoerd wanneer een sleutel wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
+|UpdateNotificationSettings|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om de meldingsinstellingen voor één document te wijzigen.|
 |UpdateTemplate|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een bestaande sjabloon bij te werken.|
+
+
 
 ## Windows PowerShell reference
 Vanaf februari 2016 hebt u voor de logboekregistratie van het Azure RMS-gebruik alleen de Windows PowerShell-cmdlet [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx) nodig. 
@@ -226,6 +240,6 @@ Zie [Administering Azure Rights Management by Using Windows PowerShell](administ
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

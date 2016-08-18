@@ -3,15 +3,15 @@ title: Een label configureren om Rights Management-beveiliging toe te passen | A
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 00b4cd2b1e7b1196cedd39d7052db534e781bb13
-ms.openlocfilehash: 7a20b59c404959c4ec209e8c29ac61ab71233e87
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 798fb423ff8dab3e9777a33e7b2c483bceb81016
 
 
 ---
@@ -22,47 +22,48 @@ ms.openlocfilehash: 7a20b59c404959c4ec209e8c29ac61ab71233e87
 
 **[ Deze informatie is voorlopig en kan worden gewijzigd. ]**
 
-U kunt uw meest gevoelige documenten en e-mailberichten beveiligen met Azure Rights Management waarbij gebruik wordt gemaakt van versleutelings, -identiteits- en autorisatiebeleid om het verlies van gegevens te voorkomen. Deze beveiliging wordt toegepast wanneer u een label voor het gebruik van een Rights Management-sjabloon configureert. 
+U kunt uw meest gevoelige documenten en e-mailberichten beveiligen met een Rights Management-service waarbij wordt gebruikgemaakt van versleutelings, -identiteits- en autorisatiebeleid om het verlies van gegevens te voorkomen. Deze beveiliging wordt toegepast wanneer u een label voor het gebruik van een Rights Management-sjabloon configureert. 
 
-Deze sjabloon kan een van de standaardsjablonen zijn die automatisch worden gemaakt wanneer u Azure Rights Management activeert, of een aangepaste sjabloon. Afdelingssjablonen worden ondersteund, maar hiermee wordt de beveiliging alleen toegepast wanneer de auteur van het document of e-mailbericht zich binnen het geconfigureerde bereik van de sjabloon bevindt. Wanneer de gebruiker zich niet binnen het bereik bevindt, wordt een bericht weergegeven dat het label niet door Information Protection kan worden toegepast.
+Deze sjabloon kan een van de standaardsjablonen zijn die automatisch worden gemaakt wanneer u Azure Rights Management activeert, of een aangepaste sjabloon. Azure Rights Management-afdelingssjablonen worden ondersteund, maar hiermee wordt de beveiliging alleen toegepast wanneer de auteur van het document of e-mailbericht zich binnen het geconfigureerde bereik van de sjabloon bevindt. Wanneer de gebruiker zich niet binnen het bereik bevindt, wordt een bericht weergegeven dat het label niet door Information Protection kan worden toegepast.
 
 ## Hoe de beveiliging werkt
 
-Wanneer een document of e-mailbericht is beveiligd door Azure Rights Management, is het versleuteld in rust en bij verzending en kan het alleen worden ontsleuteld door gemachtigde gebruikers. Deze versleuteling blijft van toepassing op het document of e-mailbericht, zelfs als de naam wordt gewijzigd. U kunt bovendien gebruiksrechten en -beperkingen configureren, zoals de volgende voorbeelden:
+Wanneer een document of e-mailbericht is beveiligd door Rights Management, is het versleuteld in rust en bij verzending en kan het alleen worden ontsleuteld door gemachtigde gebruikers. Deze versleuteling blijft van toepassing op het document of e-mailbericht, zelfs als de naam wordt gewijzigd. U kunt bovendien gebruiksrechten en -beperkingen configureren, zoals de volgende voorbeelden:
 
-- Alleen gebruikers binnen uw organisatie kunnen het document of e-mailbericht openen.
+- Alleen gebruikers binnen uw organisatie kunnen het document of e-mailbericht met vertrouwelijke bedrijfsinformatie openen.
 
-- Alleen gebruikers in de marketingafdeling kunnen het document of e-mailbericht bewerken en afdrukken terwijl alle andere gebruikers in uw organisatie het document of e-mailbericht alleen kunnen bekijken.
+- Alleen gebruikers in de marketingafdeling kunnen het document of e-mailbericht voor de promotieaankondiging bewerken en afdrukken terwijl alle andere gebruikers in uw organisatie het document of e-mailbericht alleen kunnen bekijken.
 
-- Gebruikers kunnen een e-mailbericht niet doorsturen.
+- Gebruikers kunnen geen e-mailbericht doorsturen dat nieuws over een interne reorganisatie bevat.
 
-- Documenten of e-mailberichten die worden verzonden naar zakenpartners, kunnen niet worden geopend na een opgegeven datum.
+- De huidige prijslijst die wordt verzonden naar zakenpartners, kan niet worden geopend na een opgegeven datum.
 
-Zie [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) voor meer informatie over de sjablonen en het configureren van deze gebruiksrechten en -beperkingen.
+Zie [Aangepaste sjablonen configureren voor Azure Rights Management](../deploy-use/configure-custom-templates.md) voor meer informatie over Azure Rights Management-sjablonen en het configureren van deze gebruiksrechten en -beperkingen.
 
 Zie [Wat is Azure Rights Management?](../understand-explore/what-is-azure-rms.md) voor meer informatie over Azure Rights Management en hoe het werkt.
 
 > [!IMPORTANT]
-> Als u een label voor het toepassen van Rights Management-beveiliging wilt configureren, moet de Azure Rights Management-service zijn geactiveerd voor uw organisatie. Zie [Azure Rights Management activeren](../deploy-use/activate-service.md) als u dit nog niet hebt gedaan.
+> Als u een label voor het toepassen van Azure Rights Management-beveiliging wilt configureren, moet de Azure Rights Management-service zijn geactiveerd voor uw organisatie. Zie [Azure Rights Management activeren](../deploy-use/activate-service.md) als u dit nog niet hebt gedaan.
 
 
 ## Een label configureren om Rights Management-beveiliging toe te passen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
- 
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
+1. Als u dat nog niet hebt gedaan, meldt u zich aan bij [Azure Portal](https://portal.azure.com) als globale beheerder zodat u de Azure Rights Management-sjablonen kunt ophalen. Ga vervolgens naar de blade **Azure Information Protection**. 
 
-3. Selecteer op de blade **Azure Information Protection** het label dat u wilt configureren om Rights Management-beveiliging toe te passen.
+    Klik bijvoorbeeld in het hub-menu op **Bladeren** en begin met het typen van **Information** in het filtervak. Selecteer **Azure Information Protection**.
 
-4. Configureer op de blade **Label** in de sectie **Set RMS template for protecting documents and emails containing this label (RMS-sjabloon instellen voor het beveiligen van documenten en e-mailberichten met dit label)** het volgende:
+2. Selecteer op de blade **Azure Information Protection** het label dat u wilt configureren om Rights Management-beveiliging toe te passen.
 
-    - Als u **RMS-sjabloon selecteren uit** ziet: selecteer **Azure RMS**. 
+3. Selecteer op de blade **Label** in de sectie **Set RMS template for protecting documents and emails containing this label (RMS-sjabloon instellen voor het beveiligen van documenten en e-mailberichten met dit label)** voor **Select RMS template from (RMS-sjabloon selecteren van)** de optie **Azure RMS** of **AD RMS (PREVIEW)**.
     
-        Selecteer **AD RMS** en de bijbehorende configuratieopties niet zonder hulp van Microsoft. Als u geïnteresseerd bent in het testen van Azure Information Protection met Active Directory Rights Management Services, stuurt u een e-mailbericht naar askipteam@microsoft.com. 
+    In de meeste gevallen zult u **Azure RMS** selecteren. Selecteer AD RMS alleen als u de vereisten en beperkingen van deze configuratie, die ook wel *HYOK* (Hold Your Own Key) wordt genoemd, hebt gelezen en begrepen. Zie [HYOK-vereisten (Hold Your Own Key) en -beperkingen voor AD RMS-beveiliging](configure-adrms-restrictions.md) voor meer informatie.
     
-    - Voor **RMS-sjabloon selecteren**: klik op de vervolgkeuzelijst en selecteer de sjabloon die u wilt gebruiken om documenten en e-mailberichten met dit label te beveiligen.
+4. Als u Azure RMS hebt geselecteerd: voor **RMS-sjabloon selecteren** klikt u op de vervolgkeuzelijst en selecteert u de sjabloon die u wilt gebruiken om documenten en e-mailberichten met dit label te beveiligen.
 
-        > [!NOTE] Als u een nieuwe sjabloon maakt nadat u de blade **Label** hebt geopend, sluit u deze blade en gaat u terug naar stap 3, zodat uw nieuwe sjabloon voor selectie wordt opgehaald uit Azure.
+    > [!NOTE] 
+    > Als u een nieuwe sjabloon maakt nadat u de blade **Label** hebt geopend, sluit u deze blade en gaat u terug naar stap 2, zodat uw nieuwe sjabloon voor selectie wordt opgehaald uit Azure.
+    
+5. Als u AD RMS hebt geselecteerd: geef de sjabloon-GUID en de licentieverlenings-URL van uw AD RMS-cluster op.
 
 5. Klik op **Opslaan**.
 
@@ -74,6 +75,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

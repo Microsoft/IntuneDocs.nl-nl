@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
+ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 ---
@@ -33,9 +33,11 @@ Wanneer u deze site opent, moet u zich aanmelden om uw documenten te volgen. Als
 
 -   Als u wilt stoppen met het delen van een document: klik op **Toegang intrekken**. Let op de periode waarin het document nog beschikbaar blijft, bepaal of u mensen wilt laten weten dat u de toegang intrekt tot het document dat u eerder hebt gedeeld en voeg een eigen bericht toe. Als u de toegang tot een document intrekt, wordt het document dat u hebt gedeeld, niet verwijderd, maar kunnen geautoriseerde gebruikers dit niet langer openen.
 
--   Als u wilt exporteren naar Excel: klik op **Openen in Excel**, zodat u de gegevens kunt aanpassen en uw eigen weergaven en diagrammen kunt maken.
+-   Als u wilt exporteren naar Excel: klik op **Exporteren naar CSV**, zodat u de gegevens kunt wijzigen en uw eigen weergaven en grafieken kunt maken.
 
 -   Als u e-mailmeldingen wilt configureren: klik op **Instellingen** en selecteer of en hoe u een e-mail wilt ontvangen wanneer het document wordt geopend.
+
+- Als u gedeelde documenten voor anderen wilt bijhouden en intrekken: beheerders voor Azure RMS kunnen documenten voor anderen bijhouden en intrekken door op het pictogram Beheerder te klikken. Alleen beheerders kunnen dit pictogram zien.
 
 -   Als u vragen hebt of feedback wilt geven over de site voor documenttracking: klik op het pictogram Help voor toegang tot de [Veelgestelde vragen over het bijhouden van documenten](http://go.microsoft.com/fwlink/?LinkId=523977).
 
@@ -50,6 +52,11 @@ Wanneer u deze site opent, moet u zich aanmelden om uw documenten te volgen. Als
     ![Gebruik bijhouden selecteren in Outlook bij het gebruik van de RMS-toepassing voor delen ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
 Als u deze opties voor RMS niet ziet, dan is het waarschijnlijk dat de RMS-toepassing voor delen niet is geïnstalleerd op uw computer, de meest recente versie niet is geïnstalleerd of de computer opnieuw moet worden gestart om de installatie te voltooien. Zie [De Rights Management-toepassing voor delen downloaden en installeren](install-sharing-app.md) voor meer informatie over het installeren van de toepassing voor delen.
+
+> [!NOTE] 
+> Als u de preview-versie van de [Azure Information Protection-client](../information-protection/info-protect-client.md), versie 1.0.233 of hoger, hebt geïnstalleerd, hebt u ook toegang tot de documenttrackingsite via de knop **Beveiligen**: 
+> 
+> - Klik in een Office-toepassing op het tabblad **Start** in de groep **Beveiliging** op **Beveiligen** > **Gebruik bijhouden**. 
 
 ### Overige manieren om uw documenten bij te houden en de toegang in te trekken
 U kunt op Windows-computers uw documenten bijhouden met behulp van Office-toepassingen, maar er zijn ook alternatieve mogelijkheden:
@@ -93,13 +100,13 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 -   [Voorbeelden voor het gebruik van de RMS-toepassing voor delen](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Wat wilt u doen?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zie ook
 [Gebruikershandleiding voor de Rights Management-toepassing voor delen](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

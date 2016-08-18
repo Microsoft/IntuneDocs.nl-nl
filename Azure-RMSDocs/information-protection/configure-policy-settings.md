@@ -3,15 +3,15 @@ title: De globale beleidsinstellingen configureren voor Azure Information Protec
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Er zijn drie instellingen in het Azure Information Protection-beleid die van toe
 
 Deze instellingen configureren:
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
- 
-2. Klik vervolgens in het hub-menu op **Bladeren** en typ **Informatie** in het filtervak. Selecteer **Azure Information Protection**.
+1. Als u zich nog niet bij [Azure Portal](https://portal.azure.com) hebt aangemeld, meldt u zich nu aan en navigeert u vervolgens naar de blade **Azure Information Protection**. 
+    
+    Klik bijvoorbeeld in het hub-menu op **Bladeren** en begin met het typen van **Information** in het filtervak. Selecteer **Azure Information Protection**.
 
-3. Configureer deze globale instellingen op de blade **Azure Information Protection**:
+2. Configureer deze globale instellingen op de blade **Azure Information Protection**:
 
     - **Alle documenten en e-mailberichten moeten een label hebben**: als u deze optie instelt op **Aan**, moet op alle opgeslagen documenten en verzonden e-mailberichten een label worden toegepast. De labels kunnen handmatig door een gebruiker, automatisch als gevolg van een [voorwaarde](configure-policy-classification.md) of standaard (door het instellen van de optie **Het standaardlabel selecteren**) worden toegewezen. 
 
@@ -49,9 +49,9 @@ Deze instellingen configureren:
 
     Deze optie is niet van toepassing voor sublabels.
 
-4. Sla uw wijzigingen op door op **Opslaan** te klikken.
+3. Sla uw wijzigingen op door op **Opslaan** te klikken.
 
-5. Als u uw wijzigingen beschikbaar wilt stellen voor gebruikers, klikt u op **Publiceren**.
+4. Als u uw wijzigingen beschikbaar wilt stellen voor gebruikers, klikt u op **Publiceren**.
 
 ## Volgende stappen
 
@@ -68,6 +68,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

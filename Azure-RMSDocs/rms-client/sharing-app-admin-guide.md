@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
-ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
+ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
+ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 
 ---
@@ -351,6 +351,33 @@ De volgende URL's worden gebruikt voor documenttracking en moeten worden toegest
 
 -   https://&#42;.microsoftonline-p.com
 
+### Documenten voor gebruikers bijhouden en intrekken
+
+Wanneer gebruikers zich aanmelden bij de documenttrackingsite, kunnen ze documenten bijhouden en intrekken die ze hebben gedeeld met de RMS-toepassing voor delen. Wanneer u zich als beheerder voor Azure RMS (globale beheerder) aanmeldt, kunt u op het pictogram Beheer in de rechterbovenhoek van de pagina klikken om naar de beheerdersmodus over te schakelen zodat u de documenten kunt zien die door gebruikers in uw organisatie worden gedeeld.
+
+Acties die u in de beheerdersmodus uitvoert, worden gecontroleerd en vastgelegd in de gebruikslogboekbestanden en u moet bevestigen om door te gaan. Zie de volgende sectie voor meer informatie over deze logboekregistratie.
+
+Wanneer de beheerdersmodus actief is, kunt u op gebruiker of document zoeken. Als u op gebruiker zoekt, ziet u alle documenten die de opgegeven gebruiker heeft gedeeld. Als u op document zoekt, ziet u alle gebruikers in uw organisatie die dat document hebben gedeeld. U kunt vervolgens inzoomen op de zoekresultaten om de documenten bij te houden die gebruikers hebben gedeeld en deze documenten zo nodig intrekken. 
+
+Als u de beheerdersmodus wilt afsluiten, klikt u op **X** naast **Beheerdersmodus afsluiten**.
+
+Zie [Uw documenten bijhouden en de toegang hiertoe intrekken](sharing-app-track-revoke.md) in de gebruikershandleiding voor instructies over het gebruik van de documenttrackingsite.
+
+
+
+### Gebruikslogboekregistratie voor de documenttrackingsite
+
+Twee velden in de gebruikslogboekbestanden zijn van toepassing zijn op documenttracking: **AdminAction** en **ActingAsUser**.
+
+**AdminAction**: Dit veld heeft de waarde true wanneer een beheerder de documenttrackingsite in de beheerdersmodus gebruikt, bijvoorbeeld voor het intrekken van een document namens een gebruiker of om te zien wanneer het is gedeeld. Dit veld is leeg wanneer een gebruiker zich aanmeldt bij de documenttrackingsite.
+
+**ActingAsUser**: Wanneer het veld AdminAction de waarde true heeft, bevat dit veld de gebruikersnaam die de beheerder als gezochte gebruiker of de documenteigenaar gebruikt. Dit veld is leeg wanneer een gebruiker zich aanmeldt bij de documenttrackingsite. 
+
+Er zijn ook aanvraagtypen waarmee wordt geregistreerd hoe gebruikers en beheerders de documenttrackingsite gebruiken. Zo is **RevokeAccess** het aanvraagtype wanneer een gebruiker of een beheerder namens een gebruiker een document in de documenttrackingsite heeft ingetrokken. Gebruik dit aanvraagtype in combinatie met het veld AdminAction om te bepalen of de gebruiker een eigen document heeft ingetrokken (het veld AdminAction is leeg) of een beheerder een document namens een gebruiker heeft ingetrokken (AdminAction is heeft de waarde true).
+
+
+Zie [Het gebruik van Azure Rights Management registreren in een logboek en analyseren](../deploy-use/log-analyze-usage.md) voor meer informatie
+
 ## Alleen AD RMS: ondersteuning voor meerdere e-maildomeinen in uw organisatie
 Als u AD RMS gebruikt en gebruikers in uw organisatie meerdere e-maildomeinen hebben, moet u als gevolg van een fusie of overname mogelijk de volgende registersleutel bewerken:
 
@@ -369,6 +396,6 @@ Zie [Technisch overzicht voor de Rights Management-toepassing voor delen](sharin
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

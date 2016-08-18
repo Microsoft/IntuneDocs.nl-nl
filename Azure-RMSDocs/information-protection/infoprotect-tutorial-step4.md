@@ -3,15 +3,15 @@ title: Zelfstudie voor snel starten met Azure Information Protection - Stap 4 | 
 description: Stap 4 in de introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ De classificatie en beveiliging vinden plaats als u het document bewaart, maar e
 
 ### Ons standaardlabel handmatig wijzigen:
 
-- Klik op de Information Protection-werkbalk op het symbool Wijzigen naast **Intern**. Hiermee worden de beschikbare labels weergegeven. Kies **Persoonlijk**. U wordt gevraagd waarom u het classificatieniveau wilt verlagen. Selecteer **Voor dit bestand is deze classificatie niet meer vereist** en klik op **Bevestigen**.  
+- Selecteer op de Information Protection-balk het label **Persoonlijk**. U wordt gevraagd waarom u het classificatieniveau wilt verlagen. Selecteer **Voor dit bestand is deze classificatie niet meer vereist** en klik op **Bevestigen**.  
 
     De waarde **Gevoeligheid** wijzigt in **Persoonlijk**.
 
@@ -36,7 +36,7 @@ De classificatie en beveiliging vinden plaats als u het document bewaart, maar e
 
 ### De classificatie geheel verwijderen:
 
-- Klik op de Information Protection-werkbalk op het symbool Wijzigen naast **Intern**. Hiermee worden de beschikbare labels weergegeven. In plaats van een van de labels te kiezen klikt u op het pictogram Label verwijderen. Klik op **OK** om te bevestigen en de reden voor deze actie op te geven.  
+- Klik op de Information Protection-balk op het pictogram **Label bewerken** naast **Persoonlijk**. Hiermee worden de beschikbare labels weergegeven. In plaats van een van de labels te kiezen, klikt u op het pictogram **Label verwijderen**. Klik op **OK** om te bevestigen en geef vervolgens de reden voor deze actie op.  
 
     U ziet dat de waarde voor **Gevoeligheid** wordt ingesteld op **Niet ingesteld**. Dit is wat gebruikers in eerste instantie zien als u geen standaardlabel instelt.
 
@@ -77,6 +77,6 @@ Als u klaar bent met uitproberen, is het wellicht handig de [veelgestelde vragen
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
