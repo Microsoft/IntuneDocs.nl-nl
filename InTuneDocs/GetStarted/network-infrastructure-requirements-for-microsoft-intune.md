@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 75e1c1bfbdbb14f50e7908b405619f777a674ac0
 
 
 ---
@@ -148,6 +148,7 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 |Microsoft Update-services|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 en 443|
 |DNS-lookup-aanvragen|manage.microsoft.com.nsatc.net|80|
 |Samsung KNOX-apparaatcommunicatie via de firewall|Als u Samsung KNOX-apparaten via de firewall verbinding wilt laten maken met de KNOX-servers, volgt u de aanwijzingen in Veelgestelde vragen over Samsung KNOX.||
+|Communicatie over voorwaardelijke toegang|443|204.79.197.200|
 |Documentatie, Help en ondersteuning:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
 
@@ -169,6 +170,6 @@ U kunt ook een proxyserver gebruiken die inhoud opslaat in de cache om [het gebr
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

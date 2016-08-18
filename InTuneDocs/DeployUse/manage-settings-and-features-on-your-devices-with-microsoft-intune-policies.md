@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -108,7 +108,7 @@ Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over d
 ## Veelgestelde vragen over het Intune-beleid
 
 ### Hoe lang duurt het voor mobiele apparaten een beleid of apps hebben ontvangen nadat deze zijn geïmplementeerd?
-Wanneer er een beleid of een app wordt geïmplementeerd, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren. Dit vindt meestal binnen 5 minuten plaats.
+Wanneer er een beleid of een app wordt geïmplementeerd, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren. Dit vindt meestal binnen vijf minuten plaats.
 
 Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, doet Intune nog drie pogingen.  Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen. In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
 
@@ -152,7 +152,7 @@ Er treden conflicten op wanneer twee beleidsinstellingen hetzelfde zijn.  Bijvoo
 Als er een beleid is geïmplementeerd voor de app en dat beleid is van kracht geworden, en er wordt vervolgens een tweede beleid geïmplementeerd, heeft het eerste beleid prioriteit en dit blijft toegepast, terwijl het tweede als conflicterend wordt beschouwd. Indien ze beide op hetzelfde moment worden toegepast, wanneer er dus geen voorafgaand beleid is, worden ze allebei als conflicterend beschouwd. Eventueel conflicterende instellingen worden ingesteld op de meest beperkende waarden.
 
 ### Wat gebeurt er als aangepaste iOS-beleidsregels conflicteren?
-Intune beoordeelt de nettolading van Apple-configuratiebestanden of aangepaste OMA-URI-beleid niet. Het fungeert alleen als bezorgingsmechanisme.
+Intune beoordeelt de nettolading van Apple-configuratiebestanden of een aangepast beleid voor de Open Mobile Alliance Uniform Resource Identifier (OMA-URI) niet. Het fungeert alleen als bezorgingsmechanisme.
 
 Zorg er voor dat wanneer u een aangepast beleid implementeert dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als er bij een aangepast beleid sprake is van conflicterende instellingen, worden instellingen in willekeurige volgorde toegepast.
 
@@ -198,7 +198,7 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
 
 #### Windows-pc's met de Intune-clientsoftware
 
-- **Instellingen voor Endpoint Protection**: de instellingen worden teruggezet naar de aanbevolen waarden. De enige uitzondering hierop is de instelling **Deelnemen aan Microsoft Active Protection Service** waarvoor de standaardwaarde **Nee**is. Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
+- **Instellingen voor Endpoint Protection**: de instellingen worden teruggezet naar de aanbevolen waarden. De enige uitzondering hierop is de instelling **Deelnemen aan Microsoft Active Protection Service** waarvoor de standaardwaarde **Nee** is. Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
 - **Instellingen voor software-updates**: de instellingen worden opnieuw ingesteld op de standaardstatus voor het besturingssysteem. Zie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) voor meer informatie.
 - **Instellingen Microsoft Intune Center**: alle contactgegevens voor ondersteuning die door het beleid zijn geconfigureerd, worden van de computers verwijderd.
 - **Instellingen voor Windows Firewall**: de instellingen worden opnieuw ingesteld op de standaardwaarde voor het computerbesturingssysteem. Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
@@ -215,6 +215,6 @@ Zie [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/trouble
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

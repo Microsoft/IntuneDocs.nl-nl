@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Als een computer geen verbinding kan maken met Intune, wordt een bericht weergeg
 
 Wanneer u een computer buiten gebruik stelt:
 
--   Wordt deze verwijderd uit de Intune-inventarisatie en wordt de licentie die aan de computer is gekoppeld, beschikbaar gesteld voor hergebruik.
+-   Wordt deze verwijderd uit het Intune-beheer en de Intune-inventarisatie en wordt de licentie die aan de computer is gekoppeld, beschikbaar gesteld voor hergebruik. Met Buiten gebruik stellen/wissen wordt alleen de Intune-softwareclient van de computer verwijderd, niet apps of gegevens.
 
 -   Wordt de status ervan niet meer weergegeven de Intune-console.
 

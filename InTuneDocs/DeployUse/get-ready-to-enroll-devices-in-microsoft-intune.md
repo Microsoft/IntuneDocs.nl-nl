@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
-ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 768dd08ad838b621f18a24747618ef1e37c5c804
 
 
 ---
@@ -55,7 +55,7 @@ De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers
 
 |Veldnaam|Max. lengte|Meer informatie|
     |----------|------------------------|----------------|
-    |Bedrijfsnaam|40|Deze naam wordt weergegeven als de titel van de bedrijfsportal.|
+    |Bedrijfsnaam|40|Deze naam wordt weergegeven als de titel van de bedrijfsportal. **Opmerking**: Uitsluitend alfanumerieke tekens. Dit veld ondersteunt geen speciale tekens.|
     |Naam van contactpersoon IT-afdeling|40|Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |Telefoonnummer IT-afdeling|20|Dit contacttelefoonnummer wordt weergegeven op de pagina **Contact opnemen met IT**.|
     |E-mailadres IT-afdeling|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domeinnaam.com**.|
@@ -109,6 +109,6 @@ U kunt ook:
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 65924fc508c415d2146d955e891d403ba280b324
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # Gebruik beleid voor het beveiligen van Windows-pc’s waarop de Intune-clientsoftware wordt uitgevoerd
 
-Microsoft Intune biedt drie beleidsregels die u kunt gebruiken om te zorgen voor beveiliging van Windows-pc's wanneer deze worden beheerd door de [Intune-clientsoftware](manage-windows-pcs-with-microsoft-intune.md). 
+Microsoft Intune biedt drie beleidsregels die u kunt gebruiken om te zorgen voor beveiliging van Windows-pc's die worden beheerd door de [Intune-clientsoftware](manage-windows-pcs-with-microsoft-intune.md).
 
 
 ## Software-updates
@@ -30,7 +30,7 @@ Met Intune kunt u gemakkelijk [Windows-pc's die u beheert up-to-date houden](kee
 
 ## Windows Firewall
 
-Met Windows Firewall kunt u hackers, malware en andere dreigingen buiten Windows-pc's houden. Met Intune kunt u [instellingen en functies voor Windows Firewall beheren](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) op alle computers die u beheert.
+Met Windows Firewall kunt u hackers, malware en andere dreigingen buiten Windows-pc's houden. Met Intune kunt u [instellingen en functies voor Windows Firewall beheren](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) op alle pc’s die u beheert.
 
 ## Endpoint Protection
 
@@ -38,12 +38,11 @@ Als IT-beheerder is een van uw eerste prioriteiten [de Windows-pc's die u beheer
 
 
 
-### Zie ook
+### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

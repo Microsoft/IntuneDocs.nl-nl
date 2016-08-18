@@ -13,21 +13,21 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
+ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
+ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
 
 
 ---
 
 # Met Microsoft Intune apps beheren die zijn gekocht via het volume-aankoopprogramma
 
-Bepaalde App Stores bieden u de mogelijkheid meerdere licenties te kopen voor een app die u wilt uitvoeren binnen uw bedrijf. Zodoende kunt u de administratieve overhead voor het bijhouden reduceren als u meerdere exemplaren van apps hebt aangeschaft.
+Sommige app stores bieden u de mogelijkheid meerdere licenties te kopen voor een app die u in uw bedrijf wilt gebruiken. Zodoende kunt u de administratieve overhead voor het bijhouden reduceren als u meerdere exemplaren van apps hebt aangeschaft.
 
 Met Microsoft Intune kunt u nu apps beheren die u via een dergelijk programma hebt aangeschaft, door de licentiegegevens uit de app store te importeren en bij te houden hoeveel licenties u hebt gebruikt. Zo wordt voorkomen dat u meer exemplaren van de app installeert dan u hebt aangeschaft.
 
 ## Welke typen apps kunt u beheren?
 
-Met Intune kunt u op dit moment apps beheren die u via een volume-aankoop hebt aangeschaft in de iOS App Store en de Windows Store voor bedrijven.
+Met Intune kunt u apps beheren die u via een volume-aankoop hebt aangeschaft in de iOS App Store en de Windows Store voor Bedrijven.
 Kies een van de volgende onderwerpen om te lezen hoe u gelicentieerde apps uit elke store kunt beheren:
 
 - [iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -35,9 +35,6 @@ Kies een van de volgende onderwerpen om te lezen hoe u gelicentieerde apps uit e
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

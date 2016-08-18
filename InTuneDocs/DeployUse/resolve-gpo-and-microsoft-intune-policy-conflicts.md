@@ -3,7 +3,7 @@ title: Conflicten tussen GPO-beleid en Intune-beleid oplossen | Microsoft Intune
 description: Informatie over het oplossen van conflicten tussen het groepsbeleid en de beleidsregels voor de Intune-configuratie.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,23 +13,23 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 77f7bc40471437cf69fe5553d4d82dc71a6ba405
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # Conflicten tussen GPO-beleid (groepsbeleidsobjecten) en Microsoft Intune-beleid oplossen
-Intune maakt gebruik van beleidsregels voor het beheren van instellingen op de Windows-pc’s die u beheert. U kunt bijvoorbeeld een beleidsregel gebruiken om instellingen voor de Windows Firewall op pc’s te beheren. Veel van de Intune-instellingen zijn vergelijkbaar met instellingen die u configureert met Windows-groepsbeleid. De beide methoden kunnen echter van tijd tot tijd met elkaar conflicteren.
+Intune maakt gebruik van beleidsregels voor het beheren van instellingen op Windows-pc’s. U kunt bijvoorbeeld een beleidsregel gebruiken om instellingen voor de Windows Firewall op pc’s te beheren. Veel Intune-instellingen zijn vergelijkbaar met instellingen die u configureert met Windows-groepsbeleid. De twee methoden kunnen echter van tijd tot tijd met elkaar conflicteren.
 
 Wanneer er conflicten optreden, heeft groepsbeleid op domeinniveau voorrang ten opzichte van Intune-beleid, tenzij de pc niet bij het domein kan worden aangemeld. In dit geval wordt Intune-beleid toegepast op de client-pc.
 
 ## Wat te doen als u groepsbeleid gebruikt
-Controleer of beleidsregels die u toepast, niet worden beheerd door groepsbeleid. Om te conflicten te helpen voorkomen, kunt u gebruikmaken van een of meer van de volgende methoden:
+Zorg dat door u toegepaste beleidsregels niet worden beheerd door groepsbeleid. Om conflicten te helpen voorkomen, kunt u gebruikmaken van een of meer van de volgende methoden:
 
 -   Verplaats voordat u de Intune-client installeert uw pc’s naar een organisatie-eenheid (OE) van Active Directory waarop geen groepsbeleidsinstellingen worden toegepast. U kunt ook de overname van groepsbeleid blokkeren in organisatie-eenheden met pc’s die zijn geregistreerd bij Intune en waarop u geen groepsbeleidsinstellingen wilt toepassen.
 
--   Gebruik een beveiligingsgroepfilter om groepsbeleidsobjecten te beperken tot uitsluitend pc’s die niet worden beheerd door Intune. 
+-   Gebruik een beveiligingsgroepfilter om groepsbeleidsobjecten te beperken tot uitsluitend pc’s die niet worden beheerd door Intune.
 
 -   Schakel de groepsbeleidsobjecten die met de Intune-beleidsregels conflicteren, uit of verwijder deze.
 
@@ -102,9 +102,9 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-Met groepsbeleid kunt u GPO´s toepassen op alleen de beveiligingsgroepen die u hebt opgegeven in het gebied **Beveiligingsfiltering** van de groepsbeleidsbeheerconsole voor een geselecteerd GPO. GPO´s zijn standaard van toepassing op **Geverifieerde gebruikers**.
+U kunt GPO's alleen toepassen op de beveiligingsgroepen die u hebt opgegeven in het gebied **Beveiligingsfiltering** van de groepsbeleidsbeheerconsole voor een geselecteerd GPO. Standaard zijn GPO's van toepassing op *geverifieerde gebruikers*.
 
--   In de module **Active Directory: gebruikers en computers** maakt u een nieuwe beveiligingsgroep met computers en gebruikersaccounts die u niet met behulp van Intune wilt beheren. U kunt de groep bijvoorbeeld de naam **Niet in Microsoft Intune** geven.
+-   In de module **Active Directory: gebruikers en computers** maakt u een nieuwe beveiligingsgroep met computers en gebruikersaccounts die u niet wilt beheren met behulp van Intune. U kunt de groep bijvoorbeeld de naam *Niet in Microsoft Intune* geven.
 
 -   In de console Groepsbeleidsbeheer op het tabblad **Delegatie** voor het geselecteerde GPO klikt u met de rechtermuisknop op de nieuwe beveiligingsgroep om de relevante machtigingen **Lezen** en **Groepsbeleid toepassen** aan gebruikers en computers in de beveiligingsgroep te delegeren. (Machtigingen voor**Groepsbeleid toepassen** zijn beschikbaar in het dialoogvenster **Geavanceerd** .)
 
@@ -117,6 +117,6 @@ De nieuwe beveiligingsgroep moet ingeschreven blijven in de Intune-servicewijzig
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

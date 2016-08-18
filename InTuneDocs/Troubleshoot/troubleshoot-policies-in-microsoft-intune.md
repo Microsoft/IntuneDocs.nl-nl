@@ -2,7 +2,7 @@
 title: Beleidsproblemen oplossen | Microsoft Intune
 description: Problemen met de configuratie van het beleid oplossen.
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # Beleidsproblemen oplossen in Microsoft Intune
 
-In dit onderwerp worden enkele problemen beschreven die mogelijk worden veroorzaakt door uw configuratie van het Microsoft Intune-beleid. Ook worden er enkele aanbevelingen gedaan om deze problemen op te lossen.
-
-Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
-
+Als u problemen hebt met het implementeren en beheren van beleid met Intune, begint u hier. Dit onderwerp bevat oplossingen voor een aantal veelvoorkomende problemen.
 
 ## Wordt er beleid toegepast op het apparaat?
 **Probleem:** het is onduidelijk of er een bepaald beleid wordt toegepast op een apparaat of een apparaat functioneert niet overeenkomstig een beleid.
@@ -109,6 +106,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

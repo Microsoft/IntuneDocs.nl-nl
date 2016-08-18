@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -91,17 +91,11 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
     ![Pincode of wachtwoord instellen](./media/and-enroll-6-PIN-native.png)
 
-13.  Volg onderstaande instructies voor het type apparaat dat u gebruikt (native Android of Samsung Knox). Als u wilt bepalen of u een Samsung Knox-apparaat hebt, gaat u naar **Instellingen** &gt; **Over het apparaat**. Als de KNOX-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
-
-    -   Native apparaat (niet-Samsung Knox): tik op het scherm **Benoem het certificaat** op **OK** om het standaardcertificaat te accepteren.
-
-    ![Het scherm Benoem het certificaat](./media/and-enroll-7-cert-native.png)
-
-    -   Samsung Knox-apparaat: accepteer het privacybeleid en tik op **BEVESTIGEN**.
+13.  Als u een Samsung Knox-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan een bericht dat uw apparaat wordt geregistreerd. Als u gebruikmaakt van een systeemeigen Android-apparaat, let dan op het scherm hieronder waarop wordt weergegeven dat het apparaat wordt geregistreerd.
 
     ![Samsung KNOX-privacybeleid](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Het volgende bericht wordt weergegeven op uw scherm als Intune uw apparaat registreert.
+    Op dit scherm wordt aangegeven dat uw apparaat wordt geregistreerd.
 
     ![Het scherm Apparaat registreren](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -2,9 +2,9 @@
 title: Volgende stappen nadat uw Intune-evaluatieversie is afgelopen | Microsoft Intune
 description: Wat u moet weten over abonnementen en licentieverlening na het instellen van uw gratis evaluatieversie van Intune van 30 dagen
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 3edd1821f910f9c2ea9e8324a3ac08e373ec7b0a
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -34,6 +34,6 @@ U kunt uw gratis Intune-evaluatieversie op de volgende manieren omzetten naar ee
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

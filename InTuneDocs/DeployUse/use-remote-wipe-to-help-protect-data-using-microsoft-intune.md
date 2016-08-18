@@ -13,25 +13,55 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # Uw gegevens beveiligen met volledig wissen of selectief wissen met Microsoft Intune
-Net zoals u apparaten afschrijft, moet of wilt u op een bepaald moment ook op pc's en mobiele apparaten geïmplementeerde [apps buiten gebruik stellen](retire-apps-using-microsoft-intune.md) omdat u deze niet langer nodig hebt. Het kan ook voorkomen dat u bedrijfsgegevens van een apparaat wilt verwijderen. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Omdat mobiele apparaten gevoelige bedrijfsgegevens kunnen bevatten en toegang bieden tot veel bedrijfsbronnen, kunt u vanuit Intune een opdracht geven tot op afstand wissen van een apparaat dat wordt vermist of is gestolen. Ook gebruikers kunnen vanuit Intune een opdracht tot wissen van hun apparaat geven, mits dit een eigen apparaat is dat in Intune is ingeschreven.
+Of een apparaat nou niet langer nodig is, wordt hergebruikt of is kwijtgeraakt, u kunt apps en gegevens wissen van apparaten die worden beheerd met Intune. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Ook gebruikers kunnen vanuit de Intune-bedrijfsportal een opdracht tot het wissen van hun apparaat geven, mits dit een eigen apparaat is dat in Intune is ingeschreven.
 
   > [!NOTE]
-  > Dit onderwerp gaat alleen over het wissen van apparaten die worden beheerd door Intune. U kunt ook [Azure Preview Portal](https://portal.azure.com) gebruiken om [bedrijfsgegevens uit apps te wissen](wipe-managed-company-app-data-with-microsoft-intune.md).
+  > Dit onderwerp gaat alleen over het wissen van apparaten die deel uitmaken van Intune-beheer van mobiele apparaten. U kunt ook [Azure Preview Portal](https://portal.azure.com) gebruiken om [bedrijfsgegevens uit apps te wissen](wipe-managed-company-app-data-with-microsoft-intune.md). U kunt ook [computers buiten gebruik stellen die worden beheerd door de Intune-clientsoftware](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Volledig wissen
 
-
 Met **Volledig wissen** worden de fabrieksinstellingen van een apparaat hersteld, en worden alle bedrijfs- en gebruikersgegevens en -instellingen verwijderd. Het apparaat wordt uit Intune verwijderd. Volledig wissen is nuttig voor het opnieuw instellen van een apparaat, wanneer het apparaat aan een nieuwe gebruiker wordt gegeven of wanneer het apparaat is verloren of gestolen.  **Wees voorzichtig bij het selecteren van Volledig wissen. De gegevens op het apparaat kunnen niet worden hersteld**.
+
 
 > [!Warning]
 > Windows 10 RTM-apparaten (dat wil zeggen; ouder dan Windows-10 versie 1511) met minder dan 4 GB aan RAM-geheugen, kunnen ontoegankelijk worden als ze worden gewist. Voor toegang tot een Windows 10-apparaat dat niet meer reageert, kunt u het apparaat vanaf een USB-station opstarten of een vergelijkbare tijdelijke oplossing toepassen.
+
+### Een apparaat op afstand wissen via de Intune-beheerconsole
+
+1.  Selecteer de te wissen apparaten. U vindt deze op basis van gebruiker of apparaat.
+
+    -   **Op gebruiker:**
+
+        1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle gebruikers**.
+
+        2.  Kies de naam van de gebruiker van wie u het mobiele apparaat wilt wissen. Kies **Eigenschappen weergeven**.
+
+        3.  Kies op de pagina **Eigenschappen** van de gebruiker **Apparaten** en kies vervolgens de naam van het mobiele apparaat dat u wilt wissen. Gebruik Ctrl+klikken om meerdere apparaten te selecteren.
+
+    -   **Op apparaat:**
+
+        1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle mobiele apparaten**.
+
+      ![Een bewerking voor buiten gebruik stellen of wissen starten](../media/dev-sa-wipe.png)
+
+        2.  Kies **Apparaten** en vervolgens de naam van het mobiele apparaat dat u wilt wissen. Gebruik Ctrl+klikken om meerdere apparaten te selecteren.
+
+2.  Kies **Buiten gebruik stellen/Wissen**.
+
+3.  Er wordt een bericht weergegeven waarin u wordt gevraagd om te bevestigen of u het apparaat buiten gebruik wilt stellen.
+
+    -   Als u **Selectief wissen** wilt uitvoeren, waarbij alleen bedrijfs-apps en -gegevens worden verwijderd, kiest u **Ja**.
+
+    -   Als u **Volledig wissen** wilt uitvoeren, waarbij alle apps en gegevens worden gewist en de standaardinstellingen van het apparaat worden hersteld, selecteert u **Het apparaat wissen voordat u het buiten gebruik stelt**. Deze actie is van toepassing op alle platforms met uitzondering van Windows 8.1. **U kunt geen gegevens herstellen die zijn verwijderd met Volledig wissen**.
+
+Als het apparaat is ingeschakeld en verbonden, wordt een wisopdracht in minder dan 15 minuten aan alle typen apparaten doorgegeven.
 
 ## Selectief wissen
 
@@ -78,36 +108,6 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |E-mail|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en bijlagen.|Niet ondersteund|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en bijlagen. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.|
 |Loskoppelen van Azure Active Directory (AAD)|Nee|Nee|AAD-record verwijderd|Niet van toepassing. Windows 10 biedt geen ondersteuning voor selectief wissen voor apparaten die zijn toegevoegd aan Azure Active Directory|
 
-### Een apparaat op afstand wissen via de Intune-beheerconsole
-
-1.  Selecteer de te wissen apparaten. U vindt deze op basis van gebruiker of apparaat.
-
-    -   **Op gebruiker:**
-
-        1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle gebruikers**.
-
-        2.  Kies de naam van de gebruiker van wie u het mobiele apparaat wilt wissen. Kies **Eigenschappen weergeven**.
-
-        3.  Kies op de pagina **Eigenschappen** van de gebruiker **Apparaten** en kies vervolgens de naam van het mobiele apparaat dat u wilt wissen. Gebruik Ctrl+klikken om meerdere apparaten te selecteren.
-
-    -   **Op apparaat:**
-
-        1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle mobiele apparaten**.
-
-      ![Een bewerking voor buiten gebruik stellen of wissen starten](../media/dev-sa-wipe.png)
-
-        2.  Kies **Apparaten** en vervolgens de naam van het mobiele apparaat dat u wilt wissen. Gebruik Ctrl+klikken om meerdere apparaten te selecteren.
-
-2.  Kies **Buiten gebruik stellen/Wissen**.
-
-3.  Er wordt een bericht weergegeven waarin u wordt gevraagd om te bevestigen of u het apparaat buiten gebruik wilt stellen.
-
-    -   Als u **Selectief wissen** wilt uitvoeren, waarbij alleen bedrijfs-apps en -gegevens worden verwijderd, kiest u **Ja**.
-
-    -   Als u **Volledig wissen** wilt uitvoeren, waarbij alle apps en gegevens worden gewist en de standaardinstellingen van het apparaat worden hersteld, selecteert u **Het apparaat wissen voordat u het buiten gebruik stelt**. Deze actie is van toepassing op alle platforms met uitzondering van Windows 8.1. **U kunt geen gegevens herstellen die zijn verwijderd met Volledig wissen**.
-
-Het duurt minder dan 15 minuten voordat een wisactie naar alle typen apparaten is doorgegeven.
-
 ## EFS-inhoud (Encryption File System) wissen
 Selectief wissen van EFS-gecodeerde inhoud wordt ondersteund door Windows 8.1 en Windows RT 8.1. Het volgende is van toepassing op selectief wissen van EFS-inhoud:
 
@@ -142,6 +142,6 @@ Ga als volgt te werk om een rapport op te halen met informatie over de apparaten
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

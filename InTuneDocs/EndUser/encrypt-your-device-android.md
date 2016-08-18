@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
+ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 
 ---
@@ -40,7 +40,23 @@ Als u de registratie van uw telefoon ooit ongedaan maakt, blijft deze versleutel
 - Er wordt een bericht weergegeven dat u nog moet versleutelen.
 - Er treden fouten op bij het gebruik van de bedrijfsportal-app.
 
-**Wat te doen**: zorg ervoor dat u een pincode of wachtwoord hebt ingesteld op het apparaat.
+**Wat u kunt doen**: 
+
+1. Zorg dat het apparaat is geladen en aangesloten.
+
+2. Zorg ervoor dat u een pincode of wachtwoord hebt ingesteld op het apparaat.
+
+3. Als u al een pincode of wachtwoord op het apparaat hebt ingesteld, voert u de volgende stappen uit (die uw IT-beheerder kan vereisen om uw apparaat beter te beveiligen). De menunamen die u ziet, kunnen enigszins afwijken van de namen in deze stappen, afhankelijk van het type Android-apparaat dat u hebt.
+
+    a. Ga naar **Instellingen** > **Beveiliging** > **Schermvergrendeling**. Verifieer uw huidige pincode of wachtwoord.
+
+    b. Kies op het scherm **Schermvergrendeling kiezen** het type schermvergrendeling dat u wilt gebruiken.
+
+    c. Tik op het scherm **Beveiligd opstarten** op **Pincode vereist voor het starten van apparaat** en tik op **Doorgaan**.
+
+    d. Kies een pincode (u kunt dezelfde invoeren als die u eerder hebt opgegeven) en tik op **Uw pincode bevestigen**.
+
+    e. Open de bedrijfsportal-app, selecteer uw apparaat en tik op **Naleving controleren**.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het team van Microsoft Android via wintunedroidfbk@microsoft.com.
 
@@ -49,6 +65,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

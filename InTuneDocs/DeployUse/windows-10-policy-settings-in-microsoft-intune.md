@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebou
 Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om algemene instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. 
 
 
-### Wachtwoord
+## - Wachtwoord
 
 |Naam van de instelling|Details|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|
 |**Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**|Indien ingeschakeld, moet de gebruiker een wachtwoord opgeven om het apparaat vanuit een niet-actieve status te ontgrendelen.<br>(alleen Windows 10 Mobile)|
 
-### Versleuteling
+## - Versleuteling
 
 |Naam van de instelling|Details|
 |----------------|----------------------|
 |**Versleuteling vereisen voor mobiel apparaat**|Hiermee schakelt u versleuteling op doelapparaten in.<br>(alleen Windows 10 Mobile)|
 
-### Systeem
+## - Systeem
 
 |Naam van de instelling|Details|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Toestaan dat diagnostische en gebruiksgegevens worden verzonden naar Microsoft**|Hiermee bepaalt u de hoeveelheid diagnostische en gebruiksgegevens die vanaf apparaten naar Microsoft wordt verzonden.<br><br>**Geen**: er worden geen gegevens naar Microsoft verzonden<br>**Basis**: het apparaat verzendt alleen een beperkte hoeveelheid informatie naar Microsoft<br>**Uitgebreid**: hiermee worden uitgebreide diagnostische gegevens naar Microsoft verzonden<br>**Volledig (aanbevolen)**: hiermee worden dezelfde gegevens verzonden als bij **Uitgebreid**, aangevuld met gegevens over de apparaatstatus|
 
 
-### Account en synchronisatie
+## - Account en synchronisatie
 
 |Naam van de instelling|Details|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Handmatig toevoegen van een ander account dan een Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker aan het apparaat e-mailaccounts kan toevoegen die niet aan een Microsoft-account zijn gekoppeld.|
 |**Synchronisatie van instellingen toestaan voor Microsoft-accounts**|Hiermee staat u synchronisatie tussen apparaten toe van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld.|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |Naam van de instelling|Details|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Wachtwoordbeheer toestaan**|Hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.|
 |**Locatie van de lijst met websites van Bedrijfsmodus**|Geeft de plaats aan van de lijst met websites die in Bedrijfsmodus worden geopend. Gebruikers kunnen deze lijst niet bewerken.<br>(alleen Windows 10 Desktop)|
 
-### Apps
+## - Apps
 
 |Naam van de instelling|Details|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 
 
 
-### Mobiel
+## - Mobiel
 
 |Naam van de instelling|Details|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**VPN via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen indien verbonden met het mobiele netwerk.|
 |**VPN-roaming via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen tijdens het roamen op een mobiel netwerk.|
 
-### Hardware
+## - Hardware
 
 |Naam van de instelling|Details|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**USB-verbinding toestaan**|Hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen hebben tot externe opslagapparaten.|
 |**Antidiefstalmodus toestaan**|Hiermee configureert u of de antidiefstalmodus van Windows is ingeschakeld.|
 
-### Functies
+## - Functies
 
 |Naam van de instelling|Details|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Cortana toestaan**|Hiermee schakelt u de spraakassistent Cortana in of uit.|
 |**Meldingen van onderhoudscentrum toestaan**|Hiermee schakelt u de meldingen van het Onderhoudscentrum op het vergrendelingsscherm in of uit.<br>(alleen Windows 10 Mobile)|
 
-### Defender
+## - Windows Defender
 
 Alle instellingen zijn alleen voor Windows 10 Desktop.
 
@@ -162,7 +162,7 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 |**Uit te sluiten processen wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer processen toe van het type **.exe**, **.com** of **.scr**. Deze processen worden niet opgenomen in real-timescans of geplande scans.| 
 
 
-### Instellingen voor updates
+## - Updates
 
 |Naam van de instelling|Details|
 |----------------|---------------|
@@ -176,14 +176,14 @@ Op deze manier kunt u Windows 10-instellingen implementeren die niet met het alg
 
 
 
-### Algemene instellingen voor het aangepaste beleid
+## - Algemeen
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
     |**Naam**|Voer een unieke naam in voor het beleid, zodat u het beleid in de Intune-console kunt herkennen.|
     |**Beschrijving**|Geef een beschrijving op die een overzicht geeft van het beleid en overige relevante informatie die u helpt om het beleid terug te vinden.|
 
-### OMA-URI-instellingen voor het aangepaste beleid
+## - OMA-URI-instellingen
 
 |Naam van de instelling|Details|
     |--------|--------------------|
@@ -194,12 +194,12 @@ Op deze manier kunt u Windows 10-instellingen implementeren die niet met het alg
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
 
-## Aangepaste URI-instellingen voor Windows-10-apparaten
+## Windows 10-URI-instellingen
 In dit onderwerp vindt u de instellingen die u in **Aangepast beleid voor Windows 10** kunt configureren voor Windows 10- en Windows 10 Mobile-apparaten.
 
 Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windows URI-beleid wilt gebruiken.
 
-### URI-instellingen voor het beleid
+## - Beleid
 
 |Naam van beleid|Details|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**Update/DeferUpgradePeriod**<br>(desktop en mobiel)|**Beschrijving:** beleid om upgrades van functies tot maximaal 8 maanden uit te stellen<br /><br />**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**8**: aantal maanden dat functie-upgrades moeten worden uitgesteld.<br /><br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(desktop en mobiel)|**Beschrijving:** hiermee kunt u instellen dat een CBB-machine vijf weken geen updates en upgrades ontvangt. Gebruik deze optie als er een probleem met een update is.<br /><br />**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**: updates en upgrades tijdelijk onderbreken (vervalt na 5 weken)|
 
-### URI-instellingen voor Windows Defender
+## - Windows Defender
 
 |Naam van beleid|Details|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**ExcludedPaths**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br /><br />*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br /><br />Bijvoorbeeld: **c:\test;c:\test1.exe**<br /><br />**Standaardwaarde:** er worden geen paden uitgesloten|
 |**ExcludedProcesses**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br>*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br>Bijvoorbeeld: **c:\test.exe;c:\test1.exe**<br>**Standaardwaarde:** er worden geen processen uitgesloten|
 
-### URI-instellingen voor de Microsoft Edge-browser
+## - Edge-browser
 
 |Naam van beleid|Details|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

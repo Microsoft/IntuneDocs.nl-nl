@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ Als u mobiele apparaten hebt met het besturingssysteem iOS, Android of Windows P
 |**Beschrijving**|Persoonlijk apparaat is ingeschreven met Microsoft Intune|Apparaat in bedrijfseigendom voor één gebruiker|Apparaat in bedrijfseigendom beheerd met een manageraccount gedeeld door veel gebruikers|Apparaat in bedrijfseigendom zonder specifieke gebruiker dat wordt gebruikt door veel gebruikers.|
 |**Gebruiker van het apparaat**|Eigenaar|Toegewezen gebruiker|Er is geen gebruikersspecifiek account|Er is geen specifieke gebruiker|
 |**Wie schrijft apparaten in?**|Eigenaar|Beheerder|Apparaatmanager|Iedereen|
-|**Wie schrijft apparaten uit?**|Eigenaar of beheerder|Beheerder|Beheerder|Beheerder|
+|**Wie schrijft apparaten uit?**|Eigenaar of beheerder|Platform |Beheerder of gebruiker|Beheerder of gebruiker|
 |**Wie stelt apparaten opnieuw in?**|Eigenaar of beheerder|Beheerder|Beheerder|Beheerder|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Nu u enkele mogelijkheden hebt ontdekt die u kunt gebruiken wanneer u uw apparat
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

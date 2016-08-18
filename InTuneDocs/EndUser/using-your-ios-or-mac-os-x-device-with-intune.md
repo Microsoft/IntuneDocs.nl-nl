@@ -4,7 +4,7 @@ description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Deze pagina bevat koppelingen naar alle taken die eindgebruikers op hun door Intune-beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: informatie met betrekking tot inschrijvingen, beheertaken en nalevingskwesties.
+Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun door Intune-beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: 
+- Installatie van de bedrijfsportal-app en registratie bij Intune 
+- Beheertaken na de registratie
+- Problemen met naleving
 
 ## Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 
@@ -30,12 +33,12 @@ De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfspo
 
 - [De Intune-bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)
-- [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md)
 - [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
 
-De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u uw iOS-apparaat bij Intune hebt geregistreerd.
+In deze sectie kunt u lezen welke acties u kunt uitvoeren nadat u uw iOS-apparaat bij Intune hebt geregistreerd.
 
 - [Beheerde apps op uw apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 - [Uw wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
@@ -48,7 +51,7 @@ De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u 
 
 ## Problemen met het apparaat oplossen
 
-De informatie in deze sectie helpt u problemen op te lossen die mogelijk optreden wanneer een iOS-apparaat wordt geregistreerd bij Intune.
+De informatie in deze sectie helpt u bij het oplossen van problemen die mogelijk optreden wanneer een iOS-apparaat wordt geregistreerd bij Intune.
 
 - [Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 - [Fouten naar uw IT-beheerder verzenden](send-errors-to-your-it-admin-ios.md)
@@ -61,6 +64,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

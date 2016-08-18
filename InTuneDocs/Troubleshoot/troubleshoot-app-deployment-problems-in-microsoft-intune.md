@@ -2,7 +2,7 @@
 title: Problemen met app-implementaties oplossen | Microsoft Intune
 description: Dit onderwerp helpt u bij het oplossen van problemen met app-implementaties in Microsoft Intune.
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Problemen met app-implementaties oplossen in Microsoft Intune
-Dit onderwerp helpt u bij het oplossen van problemen met app-implementaties in Microsoft Intune.
+Als u problemen hebt met het implementeren en beheren van apps met Intune, begint u hier. Dit onderwerp bevat oplossingen voor een aantal veelvoorkomende problemen.
 
-Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
+## Veelvoorkomende problemen bij het implementeren van apps
 
+### Gebruikers kunnen zich niet aanmelden bij de Microsoft Intune-bedrijfsportal
 
-## Veelvoorkomende problemen bij app-implementaties
+1.  Zorg ervoor dat het gebruikersaccount bestaat en is ingeschakeld op de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Als u zich niet kunt aanmelden bij de Microsoft Intune-bedrijfsportal
+3.  Controleer op de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) of de gebruiker de juiste gebruikersnaam gebruikt om zich aan te melden bij Intune en of deze de volgende indeling heeft: **jan@domein.com**. Als de gebruiker een onjuist wachtwoord invoert, vraagt u hem of haar om het wachtwoord opnieuw in te stellen.
 
-1.  Controleer of uw account bestaat in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) of dat het account misschien is uitgeschakeld.
-
-2.  Controleer of u in dit account bent ingericht in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  Controleer in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) of u de juiste gebruikersnaam en het juiste wachtwoord gebruikt om u aan te melden bij Intune. Controleer ook of uw gebruikersnaam de volgende indeling heeft: **jan@domein.com**.
-
-### Als de gegevens voor contact opnemen met IT ontbreken in de bedrijfsportal
+### Als de contactgegevens voor IT ontbreken op de bedrijfsportal
 
 1.  Kies in de Intune-beheerconsole **Beheer** &gt; **Bedrijfsportal**.
 
@@ -105,6 +100,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

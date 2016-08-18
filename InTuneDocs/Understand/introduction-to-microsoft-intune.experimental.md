@@ -1,5 +1,4 @@
 ---
-experimental: true
 experiment_id: kgremban_images_080416
 title: Inleiding tot Microsoft Intune | Microsoft Intune
 description: Meer informatie over Intune als het MDM-onderdeel (Mobile Device Management) van de oplossing Enterprise Mobility en Beveiliging.
@@ -15,8 +14,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: dbb8a8fdcc39aa91f4d2c0a671447e44daf8570d
+ms.openlocfilehash: 1b5549e4e0ad7652ed39659d7ebe7b95049dcbe6
 
 
 ---
@@ -24,9 +23,7 @@ ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
 # Inleiding in Intune
 Microsoft Intune is de 'beheertak' van Microsoft Enterprise Mobility + Security (EMS, voorheen Enterprise Mobility Suite). Bij bedrijfsmobiliteit gaat het erom uw medewerkers in staat te stellen productief te zijn op al hun apparaten en daarbij de gegevens van uw organisatie veilig te stellen.  
 
-EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.  
-
-![Afbeelding van visie op bedrijfsmobiliteit](..\media\em-vision.png)
+EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit, met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.  
 
 Intune helpt u mobiele apparaten en mobiele apps te beheren. Het is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identiteits- en toegangsbeheer en Azure Rights Management (Azure RMS) voor gegevensbeveiliging.  
 
@@ -38,6 +35,8 @@ Algemene bedrijfsproblemen die Intune u helpt op te lossen, zijn onder meer:
 * Het voor uw organisatie mogelijk maken 'gedeelde apparaten' voor beperkt gebruik te verstrekken aan taakgerichte medewerkers.
 * Het voor uw organisatie mogelijk maken een veilig 'Bring Your Own Device (BYOD)'-beleid of een veilige persoonlijke apparaatstrategie te implementeren.
 * Het voor uw organisatie mogelijk maken medewerkers te ondersteunen bij het toegang krijgen tot Office 365 vanaf apparaten en apps die niet door u worden beheerd, zoals een kiosk in de hal van een beurs.
+
+![Afbeelding van visie op bedrijfsmobiliteit](..\media\em-vision.png)
 
 Intune biedt de volgende primaire hulpprogramma's:
 * **Beheer van mobiele apparaten (Mobile Device Management, MDM)**: de mogelijkheid om apparaten in te schrijven in Intune, zodat u deze apparaten kunt inrichten, configureren, bewaken en er acties op kunt uitvoeren, zoals de apparaten wissen.
