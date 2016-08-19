@@ -12,9 +12,6 @@
 ### [Taken na migratie](migrate-from-ad-rms-phase4.md)
 ## [Plannen en implementeren van uw tenant-sleutel](plan-implement-tenant-key.md)
 ### [BYOK-prijzen en -beperkingen](byok-price-restrictions.md)
-### [Over Thales HSM's](thales-hsm.md)
-### [Via internet](generate-tenant-key-internet.md)
-### [Persoonlijk](generate-tenant-key-in-person.md)
 ## [Voorbereiden voor Azure RMS](prepare.md)
 # [De service implementeren en gebruiken](/rights-management/deploy-use/activate-service)
 # [De client implementeren en gebruiken](/rights-management/rms-client/use-client)
@@ -22,6 +19,6 @@
 # [Azure Information Protection (preview)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 
