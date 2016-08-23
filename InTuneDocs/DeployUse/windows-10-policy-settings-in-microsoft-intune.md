@@ -302,7 +302,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 |**ExcludedPaths**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br /><br />*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br /><br />Bijvoorbeeld: **c:\test;c:\test1.exe**<br /><br />**Standaardwaarde:** er worden geen paden uitgesloten|
 |**ExcludedProcesses**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br>*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br>Bijvoorbeeld: **c:\test.exe;c:\test1.exe**<br>**Standaardwaarde:** er worden geen processen uitgesloten|
 
-## - Edge-browser
+## - Microsoft Edge-browser
 
 |Naam van beleid|Details|
 |---------------|------------|-----------|
