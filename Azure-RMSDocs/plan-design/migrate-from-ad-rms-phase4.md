@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 21fac7d684f2d544ab97f5ca6eb7faaaca3e9d26
 
 
 ---
@@ -36,25 +36,24 @@ Controleer uw AD RMS-servers op activiteit, bijvoorbeeld door het controleren va
 Nadat u uw AD RMS-servers buiten gebruik hebt gesteld, is het wellicht een goed idee om uw sjablonen in de klassieke Azure-portal te controleren, te consolideren (zodat gebruikers er minder hebben om uit te kiezen) of te herconfigureren. U kunt zelfs nieuwe sjablonen toevoegen. Dit is ook een aangewezen moment om de standaardsjablonen te publiceren. Zie [Configuring custom templates for Azure Rights Management](../deploy-use/configure-custom-templates.md) (Aangepaste sjablonen configureren voor Azure Rights Management)voor meer informatie.
 
 ## Stap 9. Uw Azure RMS-tenantsleutel opnieuw versleutelen
-Deze stap is vereist wanneer de migratie is voltooid en voor uw AD RMS-implementatie de RMS cryptografische modus 1 is gebruikt, omdat bij opnieuw versleutelen een nieuwe tenantsleutel wordt gemaakt die de RMS cryptografische modus 2 gebruikt. Het gebruik van Azure RMS met cryptografische modus 1 wordt alleen ondersteund tijdens het migratieproces.
+Deze stap is alleen van toepassing als de topologie van uw gekozen tenantsleutel door Microsoft wordt beheerd en dus niet door de klant wordt beheerd (BYOK met Azure Key Vault).
 
-Deze stap is optioneel, maar wordt aanbevolen wanneer de migratie is voltooid, zelfs als u de RMS cryptografische modus 2 hebt gebruikt, omdat de service helpt bij de beveiliging van uw Azure RMS-tenantsleutel tegen potentiële beveiligingsrisico's voor uw AD RMS-sleutel. Wanneer u uw Azure RMS-tenantsleutel opnieuw versleutelt, wordt er een nieuwe sleutel gemaakt en de oorspronkelijke sleutel gearchiveerd. Omdat de overstap van de ene sleutel op de andere niet onmiddellijk plaatsvindt, maar een aantal weken duurt, moet u niet wachten totdat u een inbreuk op de oorspronkelijke sleutel vermoedt, maar versleutelt u uw Azure RMS-tenantsleutel opnieuw zodra de migratie is voltooid.
+Deze stap is optioneel, maar aanbevolen wanneer uw Azure RMS-tenantsleutel wordt beheerd door Microsoft en vanuit AD RMS is gemigreerd. Door het opnieuw versleutelen van sleutels in dit scenario kunt u uw Azure RMS-tenantsleutel beschermen tegen potentiële beveiligingsrisico's met betrekking tot de AD RMS-sleutel.
 
-Ga als volgt te werk om uw Azure RMS-tenantsleutel opnieuw te versleutelen:
+Wanneer u uw Azure RMS-tenantsleutel opnieuw versleutelt, wordt er een nieuwe sleutel gemaakt en de oorspronkelijke sleutel gearchiveerd. Omdat de overstap van de ene sleutel op de andere niet onmiddellijk plaatsvindt, maar een aantal weken duurt, moet u niet wachten totdat u een inbreuk op de oorspronkelijke sleutel vermoedt, maar versleutelt u uw Azure RMS-tenantsleutel opnieuw zodra de migratie is voltooid.
 
--   Als uw Azure RMS-sleutel wordt beheerd door Microsoft: Neem hiervoor [contact op met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) om een **Azure Rights Management-ondersteuningsaanvraag voor het opnieuw versleutelen van uw Azure RMS-tenantsleutel** te openen. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het opnieuw versleutelen van uw tenantsleutel is geen gratis ondersteuningsservice.
+Als u uw door Microsoft beheerde Azure RMS-tenantsleutel opnieuw wilt versleutelen, neemt u [contact op met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) om een **Azure Rights Management-ondersteuningsaanvraag voor het opnieuw versleutelen van uw Azure RMS-tenantsleutel na migratie van AD RMS** te openen. U moet bewijzen dat u een beheerder bent voor uw Azure RMS-tenant. Het bevestigen van dit proces duurt enkele dagen. Er gelden standaardkosten voor de ondersteuning. Het opnieuw versleutelen van uw tenantsleutel is geen gratis supportservice.
 
--   Als uw Azure RMS-tenantsleutel wordt beheerd door uzelf (BYOK): herhaal de BYOK-procedure om een nieuwe sleutel te genereren en te maken (via internet of persoonlijk).
-
-Zie [Bewerkingen voor uw Azure Rights Management-tenantsleutel](../deploy-use/operations-tenant-key.md) voor meer informatie over het beheren van uw Azure RMS-tenantsleutel.
 
 ## Volgende stappen
+
+Zie [Bewerkingen voor uw Azure Rights Management-tenantsleutel](../deploy-use/operations-tenant-key.md) voor meer informatie over het beheren van uw RMS-tenantsleutel.
 
 Nu u de migratie hebt voltooid, controleert u het [implementatieschema](deployment-roadmap.md) om te bekijken of er nog andere implementatietaken zijn die u moet uitvoeren.
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

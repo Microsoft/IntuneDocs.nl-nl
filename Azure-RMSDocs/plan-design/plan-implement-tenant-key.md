@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
-ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: ee7b9b5f251856f102651f1e8f379f7bbacea77e
 
 
 ---
@@ -41,21 +41,21 @@ Als u Azure RMS implementeert met een tenantsleutel die wordt beheerd door Micro
 ## Uw tenantsleuteltopologie kiezen: Beheerd door Microsoft (de standaardinstelling) of Beheerd door uzelf (BYOK)
 Beslis welke tenantsleuteltopologie het beste is voor uw organisatie. Standaard genereert Azure RMS uw tenantsleutel en beheert het de meeste aspecten van de levenscyclus van de tenantsleutel. Dit is de eenvoudigste optie met de laagste administratieve overhead. In de meeste gevallen hoeft u zelfs niet te weten dat u een tenantsleutel hebt. U hoeft u alleen aan te melden voor Azure RMS en de rest van het sleutelbeheerproces wordt uitgevoerd door Microsoft.
 
-U kunt ook zelf uw tenantsleutel volledig beheren. U moet dan zelf uw tenantsleutel maken en het originele exemplaar binnen uw bedrijf bewaren. Dit scenario wordt vaak Bring Your Own Key (BYOK) genoemd. Met deze optie gebeurt er het volgende:
+U kunt de controle over uw tenantsleutel ook voltooien met behulp van [Azure Key Vault](https://azure.microsoft.com/services/key-vault/). In dit scenario maakt u uw tenantsleutel en zorgt u ervoor dat het originele exemplaar bij uw organisatie blijft. Dit scenario wordt vaak Bring Your Own Key (BYOK) genoemd. Met deze optie gebeurt er het volgende:
 
-1.  U genereert uw tenantsleutel op uw locatie in overeenstemming met uw IT-beleid.
+1.  U genereert uw tenantsleutel op uw locatie in overeenstemming met uw IT- en beveiligingsbeleid.
 
-2.  U draagt de tenantsleutel van een Hardware Security Module (HSM) in uw bezit over aan HSM's die eigendom zijn van en worden beheerd door Microsoft. Tijdens dit proces blijft uw tenantsleutel altijd binnen de grenzen van uw hardwarebeveiliging.
+2.  U draagt de tenantsleutel van een Hardware Security Module (HSM) in uw bezit veilig over aan HSM's die eigendom zijn van en worden beheerd door Microsoft via Azure Key Vault. Tijdens dit proces blijft uw tenantsleutel altijd binnen de grenzen van uw hardwarebeveiliging.
 
-3.  Wanneer u uw tenantsleutel overdraagt aan Microsoft, blijft deze beveiligd met Thales HSM's. Microsoft heeft samengewerkt met Thales om ervoor te zorgen dat uw tenantsleutel niet kan worden geëxtraheerd uit HSM's van Microsoft.
+3.  Wanneer u uw tenantsleutel overdraagt aan Microsoft, blijft deze beveiligd met Azure Key Vault.
 
 Hoewel dit optioneel is, wilt u waarschijnlijk ook gebruikmaken van de bijna realtime logboeken van Azure RMS om te zien hoe en wanneer uw tenantsleutel precies wordt gebruikt.
 
 > [!NOTE]
-> Azure RMS gebruikt als extra beveiligingsmaatregel afzonderlijke beveiligingswerelden voor zijn datacentra in Noord-Amerika, EMEA (Europa, Midden-Oosten en Afrika) en Azië. Wanneer u uw eigen tenantsleutel beheert, is deze gebonden aan de beveiligingswereld van de regio waar uw RMS-tenant is geregistreerd. Een tenantsleutel van een Europese klant kan bijvoorbeeld niet worden gebruikt in datacenters in Noord-Amerika of Azië.
+> Azure Key Vault gebruikt als extra beveiligingsmaatregel afzonderlijke beveiligingsdomeinen voor de datacentra in Noord-Amerika, EMEA (Europa, Midden-Oosten en Afrika) en Azië. Dit geldt ook voor verschillende exemplaren van Azure, zoals Microsoft Azure Germany en Azure Government. Wanneer u uw eigen tenantsleutel beheert, is deze gebonden aan het beveiligingsdomein van de regio of het exemplaar waarin uw RMS-tenant is geregistreerd. Een tenantsleutel van een Europese klant kan bijvoorbeeld niet worden gebruikt in datacenters in Noord-Amerika of Azië.
 
 ## De levenscyclus van de tenantsleutel
-Als u besluit dat Microsoft uw tenantsleutel moet beheren, voert Microsoft het grootste deel van de bewerkingen uit tijdens de levenscyclus van de sleutel. Als u echter besluit zelf uw tenantsleutel te beheren, bent u verantwoordelijk voor veel bewerkingen en een aantal extra procedures tijdens de levenscyclus van de sleutel.
+Als u besluit dat Microsoft uw tenantsleutel moet beheren, voert Microsoft het grootste deel van de bewerkingen uit tijdens de levenscyclus van de sleutel. Als u echter besluit zelf uw tenantsleutel te beheren, bent u verantwoordelijk voor veel bewerkingen en een aantal extra procedures in Azure Key Vault tijdens de levenscyclus van de sleutel.
 
 In het volgende diagram worden deze twee opties weergegeven en met elkaar vergeleken. Het eerste diagram toont hoe weinig beheerdersoverhead er voor u is in de standaardconfiguratie, waarbij Microsoft de tenantsleutel beheert.
 
@@ -63,7 +63,7 @@ In het volgende diagram worden deze twee opties weergegeven en met elkaar vergel
 
 Het tweede diagram toont de extra stappen die vereist zijn wanneer u uw eigen tenantsleutel beheert.
 
-![Levenscyclus van de Azure RMS-tenantsleutel, beheerd door u, BYOK](../media/RMS_BYOK_onprem.png)
+![Levenscyclus van de Azure RMS-tenantsleutel, beheerd door u, BYOK](../media/RMS_BYOK_onprem4.png)
 
 Als u besluit uw tenantsleutel door Microsoft te laten beheren, is er geen verdere actie vereist om de sleutel te genereren. U kunt dan direct door naar [Volgende stappen](plan-implement-tenant-key.md#next-steps).
 
@@ -86,34 +86,28 @@ Zie de volgende tabel voor een lijst met vereisten voor BYOK (Bring Your Own Key
 |---------------|--------------------|
 |Een abonnement dat Azure RMS ondersteunt.|Zie [Cloudabonnementen die ondersteuning bieden voor Azure RMS](../get-started/requirements-subscriptions.md) voor meer informatie over de beschikbare abonnementen.|
 |U gebruikt geen RMS voor personen of Exchange Online. Of als u Exchange Online gebruikt, begrijpt en accepteert u de beperkingen van het gebruik van BYOK met deze configuratie.|Zie [BYOK-prijzen en -beperkingen](byok-price-restrictions.md) voor meer informatie over de beperkingen en huidige limieten van BYOK.<br /><br />**Belangrijk**: BYOK is momenteel niet compatibel met Exchange Online.|
-|Thales HSM, smartcards en ondersteunende software.<br /><br />**Opmerking**: als u van AD RMS migreert naar Azure RMS door over te stappen van een softwaresleutel naar een hardwaresleutel, moet u minimaal versie 11.62 voor de Thales-stuurprogramma's hebben.|U moet toegang hebben tot een Thales Hardware Security Module en operationele basiskennis hebben van Thales HSM's. Zie [Thales Hardware Security Module](http://www.thales-esecurity.com/msrms/buy) voor de lijst met compatibele modellen of om een HSM aan te schaffen als u die niet hebt.|
-|Als u uw tenantsleutel wilt overdragen via internet in plaats van fysiek aanwezig te zijn in Redmond, Verenigde Staten, zijn er drie vereisten:<br /><br />1: een offline x64-werkstation met als besturingssysteem minimaal Windows 7 en Thales nShield-software van ten minste versie 11.62.<br /><br />Als op dit werkstation Windows 7 wordt uitgevoerd, moet u [Microsoft .NET Framework 4.5 installeren](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2: een werkstation dat is verbonden met internet en waarop minimaal Windows 7 wordt uitgevoerd.<br /><br />3: een USB-station of ander draagbaar opslagapparaat met ten minste 16 MB beschikbare ruimte.|Deze vereisten gelden niet als u naar Redmond komt en uw tenantsleutel persoonlijk overdraagt.<br /><br />Uit veiligheidsoverwegingen raden we u aan het eerste werkstation niet aan te sluiten op een netwerk. Dit wordt echter niet door het programma afgedwongen.<br /><br />Opmerking: in de volgende instructies wordt dit eerste werkstation aangeduid als het **niet-verbonden werkstation**.<br /><br />Als uw tenantsleutel bedoeld is voor een productienetwerk, raden we u bovendien aan een tweede, afzonderlijk werkstation te gebruiken om de toolset te downloaden en de tenantsleutel te uploaden. Voor testdoeleinden kunt u echter hetzelfde werkstation gebruiken als het eerste.<br /><br />Opmerking: in de volgende instructies wordt dit tweede werkstation aangeduid als het **met internet verbonden werkstation**.|
+|Alle vereiste onderdelen voor BYOK-sleutelkluis.|Zie [Prequisites for BYOK (Vereisten voor BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) in de documentatie over Azure Key Vault. <br /><br />**Opmerking**: als u van AD RMS migreert naar Azure RMS door over te stappen van een softwaresleutel naar een hardwaresleutel, moet u minimaal versie 11.62 voor de Thales-firmware hebben.|
+|De Azure RMS-beheermodule voor Windows PowerShell.|Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor installatie-instructies. <br /><br />Als u deze Windows PowerShell-module eerder hebt geïnstalleerd, voert u de volgende opdracht uit om te controleren of u minimaal over versienummer **2.5.0.0** beschikt: `(Get-Module aadrm -ListAvailable).Version`|
 
-De procedures om uw eigen tenantcode te generen en gebruiken, zijn afhankelijk van het feit of u dit persoonlijk wilt doen of via internet:
+Zie de [Thales-website](https://www.thales-esecurity.com/msrms/cloud) voor meer informatie over Thales HSM's en hoe deze worden gebruikt met Azure Key Vault.
 
--   **Via internet:** hiervoor zijn een paar extra configuratiestappen vereist, zoals het downloaden en gebruiken van een toolset en Windows PowerShell-cmdlets. U hoeft echter niet fysiek aanwezig te zijn in een Microsoft-faciliteit om uw tenantsleutel over te dragen. De beveiliging wordt op de volgende manieren gehandhaafd:
+Volg de procedures in [Met HSM-beveiligde sleutels genereren en overdragen voor Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) in de documentatie voor Azure Key Vault om uw eigen tenantsleutel te genereren en over te dragen aan Azure Key Vault.
 
-    -   U genereert de tenantsleutel op een offline werkstation, wat de kwetsbaarheid voor aanvallen verkleint.
+Wanneer de sleutel wordt overgedragen aan Key Vault, krijgt de sleutel een sleutel-ID in Key Vault (een URL die de naam van de sleutelkluis, de sleutelcontainer, de naam van de sleutel en de belangrijkste versie bevat). Bijvoorbeeld: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. U moet in Azure RMS kenbaar maken dat deze sleutel moet worden gebruikt door deze URL te specificeren.
 
-    -   De tenantsleutel wordt versleuteld met een KEK-sleutel (Key Exchange Key), die versleuteld blijft totdat deze is overgedragen naar de Azure RMS HSM's. Alleen de versleutelde versie van uw tenantsleutel verlaat het oorspronkelijke werkstation.
+Maar voordat Azure RMS de sleutel kan gebruiken, moet Azure RMS worden geautoriseerd om de sleutel in de sleutelkluis van uw organisatie te gebruiken. Hiervoor moet de beheerder van de Azure Key Vault de cmdlet Key Vault PowerShell en [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx) gebruiken en machtigingen verlenen aan **Microsoft.Azure.RMS**, de service-principal van Azure RMS. Bijvoorbeeld:
 
-    -   Een hulpprogramma stelt de eigenschappen in op uw tenantsleutel, waardoor deze wordt gekoppeld aan de Azure RMS-beveiligingswereld. Dus nadat de HSM's van Azure RMS uw tenantsleutel hebben ontvangen en gedecodeerd, kan de sleutel alleen door deze HSM's worden gebruikt. Uw tenantsleutel kan niet worden geëxporteerd. Deze koppeling wordt afgedwongen door de Thales HSM's.
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
 
-    -   De KEK-sleutel (Key Exchange Key) waarmee uw tenantsleutel wordt versleuteld, wordt gegenereerd in de Azure RMS HSM's en kan niet worden geëxporteerd. De HSM's dwingen af dat er geen versie van de KEK buiten de HSM's kan bestaan. Bovendien bevat de toolset een attest van Thales dat de KEK niet kan worden geëxporteerd en is gegenereerd binnen een legitieme, door Thales vervaardigde HSM.
+U bent nu klaar om Azure RMS te configureren voor het gebruik van deze sleutel als de Azure RMS-tenantsleutel van uw organisatie. Met Azure RMS-cmdlets maakt u eerst verbinding met Azure RMS en meldt u zich aan:
 
-    -   De toolset bevat een attest van Thales dat de Azure RMS-beveiligingswereld ook is gegeneerd met een legitieme, door Thales vervaardigde HSM. Dit is uw bewijs dat Microsoft legitieme hardware gebruikt.
+    Connect-AadrmService
 
-    -   Microsoft gebruikt afzonderlijke KEK's en afzonderlijke beveiligingswerelden in elke geografische regio, wat ervoor zorgt dat uw tenantsleutel alleen kan worden gebruikt in datacenters in de regio waarin u de sleutel hebt versleuteld. Een tenantsleutel van een Europese klant kan bijvoorbeeld niet worden gebruikt in datacenters in Noord-Amerika of Azië.
+Voer vervolgens de [cmdlet Use-AadrmKeyVaultKey](https://msdn.microsoft.com/library/azure/mt759829.aspx) uit en geef hierbij de sleutel-URL op. Bijvoorbeeld:
 
-    > [!NOTE]
-    > Uw tenantsleutel kan veilig worden verplaatst via niet-vertrouwde computers en netwerken omdat de sleutel is versleuteld en wordt beveiligd met machtigingen op het niveau van toegangsbeheer, waardoor de sleutel alleen bruikbaar is binnen uw HSM's en de HSM's van Microsoft voor Azure RMS. U kunt de scripts die worden bijgeleverd in de toolset gebruiken om de veiligheidsmaatregelen te controleren, en meer informatie lezen over hoe dit werkt vanuit Thales: [Hardwaresleutelbeheer in de RMS-cloud](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
+    Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
--   **Persoonlijk:** U moet [contact opnemen met Microsoft Ondersteuning](../get-started/information-support.md#to-contact-microsoft-support) om een afspraak te plannen voor de sleuteloverdracht voor Azure RMS. U moet naar een vestiging van Microsoft in Redmond (Washington) in de Verenigde Staten komen om uw tenantsleutel over te dragen aan de Azure RMS-beveiligingswereld.
-
-Als u instructies nodig hebt, selecteert u of u uw eigen tenantsleutel via internet of persoonlijk gaat genereren en overdragen: 
-
-- [Via internet](generate-tenant-key-internet.md)
-- [Persoonlijk](generate-tenant-key-in-person.md)
+Als u wilt bevestigen dat de sleutel-URL correct is ingesteld in Azure RMS in Azure Key Vault, kunt u [Get-AzureKeyVaultKey](https://msdn.microsoft.com/library/dn868053.aspx) uitvoeren om de sleutel-URL weer te geven.
 
 
 ## Volgende stappen
@@ -122,15 +116,15 @@ Nu u een planning hebt gemaakt en u zo nodig de tenantsleutel hebt gegenereerd, 
 
 1.  Begin uw tenantsleutel te gebruiken:
 
-    -   Als u dat nog niet hebt gedaan, moet u nu Rights Management activeren zodat uw organisatie kan beginnen RMS te gebruiken. Gebruikers beginnen onmiddellijk uw tenantsleutel te gebruiken (beheerd door Microsoft of door u).
+    -   Als u dat nog niet hebt gedaan, moet u nu Rights Management activeren zodat uw organisatie kan beginnen RMS te gebruiken. Gebruikers beginnen onmiddellijk uw tenantsleutel te gebruiken (beheerd door Microsoft of door u in Azure Key Vault).
 
         Zie [Azure Rights Management activeren](../deploy-use/activate-service.md) voor meer informatie over activeren.
 
     -   Als u Rights Management al had geactiveerd en vervolgens hebt besloten uw eigen tenantsleutel te beheren, stappen gebruikers geleidelijk van de oude tenantsleutel over op de nieuwe. Deze gespreide overgang kan een paar weken duren. Documenten en bestanden die waren beveiligd met de oude tenantsleutel, blijven toegankelijk voor gemachtigde gebruikers.
 
-2.  Overweeg gebruikslogboekregistratie te gebruiken: hiermee wordt elke transactie geregistreerd die RMS uitvoert.
+2.  Overweeg gebruikslogboekregistratie te gebruiken: hiermee wordt elke transactie geregistreerd die Azure Rights Management uitvoert.
 
-    Als u had besloten uw eigen tenantsleutel te beheren, bevat de logboekregistratie informatie over het gebruik van uw tenantsleutel. Zie het volgende fragment van een in Excel weergegeven logboekbestand, waarin de aanvraagtypen **KMSPDecrypt** en **KMSPSignDigest** aangeven dat de tenantsleutel wordt gebruikt.
+    Als u had besloten uw eigen tenantsleutel te beheren, bevat de logboekregistratie informatie over het gebruik van uw tenantsleutel. Zie het volgende fragment van een in Excel weergegeven logboekbestand, waarin de aanvraagtypen **KeyVaultDecryptRequest** en **KeyVaultSignRequest** aangeven dat de tenantsleutel wordt gebruikt.
 
     ![logboekbestand waarin de tenantsleutel wordt gebruikt](../media/RMS_Logging.png)
 
@@ -143,6 +137,6 @@ Nu u een planning hebt gemaakt en u zo nodig de tenantsleutel hebt gegenereerd, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

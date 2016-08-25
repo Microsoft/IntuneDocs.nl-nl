@@ -3,15 +3,15 @@ title: HYOK-beperkingen | Azure Rights Management
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2016
+ms.date: 08/18/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: cfab76a97034b58eec8dfdbdc82cc1037a647d11
-ms.openlocfilehash: 95f64c00c28fb52a0bd7d78a997705f7ed515557
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: 1cbf6bd6c209a8aafd1db61422ce03b628aaec07
 
 
 ---
@@ -51,9 +51,13 @@ Controleer of uw AD RMS-implementatie voldoet aan de volgende vereisten om AD RM
 
 - AD RMS-configuratie:
     
+    - Minimale versie van Windows Server 2012 R2: Vereist voor productieomgevingen. Voor test- of evaluatiedoeleinden kunt u echter ook gebruikmaken van Windows Server 2008 R2 met Service Pack 1.
+    
     - Eén AD RMS-basiscluster.
     
-    - [Cryptografische modus 2](https://technet.microsoft.com/library/hh867439.aspx).
+    - [Cryptografische modus 2](https://technet.microsoft.com/library/hh867439.aspx): u kunt de versie van de cryptografische modus van de AD RMS-cluster en de algehele status bevestigen met behulp van de [RMS Analyzer tool](https://www.microsoft.com/en-us/download/details.aspx?id=46437).   
+    
+    - De AD RMS-servers zijn geconfigureerd voor gebruik van SSL/TLS met een geldig x.509-certificaat dat wordt vertrouwd door verbonden clients: vereist voor productieomgevingen, niet voor test- en evaluatiedoeleinden.
     
     - Geconfigureerde rechtensjablonen.
 
@@ -66,7 +70,9 @@ Controleer of uw AD RMS-implementatie voldoet aan de volgende vereisten om AD RM
 - De [Azure Information Protection-client](info-protect-client.md) is versie **1.0.233.0** of hoger.
 
 > [!IMPORTANT]
-> Om te voldoen aan de hoge zekerheid die dit scenario biedt, is het beter dat uw AD RMS-servers zich niet in uw perimeternetwerk bevinden en dat deze alleen worden gebruikt op goed beheerde computers (dus niet op mobiele apparaten of werkgroepcomputers).
+> Om te voldoen aan de hoge zekerheid die dit scenario biedt, is het beter dat uw AD RMS-servers zich niet in uw perimeternetwerk bevinden en dat deze alleen worden gebruikt op goed beheerde computers (dus niet op mobiele apparaten of werkgroepcomputers). 
+> 
+> We raden ook aan dat uw AD RMS-cluster gebruikmaakt van een HSM (Hardware Security Module), zodat de persoonlijke sleutel voor uw serverlicentiecertificaat (SLC) niet kan worden weergegeven of gestolen als uw AD RMS-implementatie ooit wordt geschonden of aangetast. 
 
 Zie [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx) in de Windows Server-bibliotheek voor implementatie-informatie en instructies voor AD RMS. 
 
@@ -89,6 +95,6 @@ Zie [Een label configureren om Rights Management-beveiliging toe te passen](conf
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
 
 
 ---
@@ -35,30 +35,31 @@ Weet u niet zeker of deze AD RMS-migratie geschikt is voor uw organisatie?
 Voordat u begint aan de migratie naar Azure RMS, moet u ervoor zorgen dat aan de volgende vereisten is voldaan en dat u eventuele beperkingen begrijpt.
 
 
-- **Een ondersteunde RMS-implementatie**
+- **Een ondersteunde RMS-implementatie:**
+    
+    - De volgende versies van AD RMS ondersteunen een migratie naar Azure RMS:
+    
+        - Windows Server 2008 R2 (x64)
+        
+        - Windows Server 2012 (x64)
+        
+        - Windows Server 2012 R2 (x64)
+        
+    - Cryptografische modus 2:
+    
+        - Uw AD RMS-servers en -clients moeten worden uitgevoerd in de cryptografische modus 2 voordat u de migratie naar Azure RMS start. Zie [AD RMS Cryptographic Modes (Cryptografische modi van AD RMS)](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx) voor meer informatie.
+        
+    - Alle geldige AD RMS-topologieën worden ondersteund:
+    
+        - Eén forest, één RMS-cluster
+        
+        - Eén forest, meerdere RMS-clusters met alleen licentieverlening
+        
+        - Meerdere forests, meerdere RMS clusters
+        
+    Opmerking: Standaard migreren meerdere RMS-clusters naar één Azure RMS-tenant. Als u afzonderlijke Azure RMS-tenants wilt hebben, moet u ze behandelen als verschillende migraties. Een sleutel van één RMS-cluster kan niet worden geïmporteerd in meer dan één Azure RMS-tenant.
 
-    Alle versies van AD RMS (van Windows Server 2008 tot en met Windows Server 2012 R2) ondersteunen migratie naar Azure RMS:
-
-    - Windows Server 2008 (x86 of x64)
-
-    - Windows Server 2008 R2 (x64)
-
-    - Windows Server 2012 (x64)
-
-    - Windows Server 2012 R2 (x64)
-
-    Alle geldige AD RMS-topologieën worden ondersteund:
-
-    - Eén forest, één RMS-cluster
-
-    - Eén forest, meerdere RMS-clusters met alleen licentieverlening
-
-    - Meerdere forests, meerdere RMS clusters
-
-    **Opmerking**: standaard migreren meerdere RMS-clusters naar één Azure RMS-tenant. Als u verschillende RMS-tenants wilt hebben, moet u ze behandelen als verschillende migraties. Een sleutel van één RMS-cluster kan niet worden geïmporteerd in meer dan één Azure RMS-tenant.
-
-
-- **Alle vereisten voor het uitvoeren van Azure RMS, met inbegrip van een Azure RMS-tenant (niet geactiveerd)**
+- **Alle vereisten voor het uitvoeren van Azure RMS, met inbegrip van een Azure RMS-tenant (niet geactiveerd):**
 
     Zie [Vereisten voor Azure Rights Management](../get-started/requirements-azure-rms.md).
 
@@ -82,6 +83,10 @@ Voordat u begint aan de migratie naar Azure RMS, moet u ervoor zorgen dat aan de
 
     Dit is de enige serviceonderbreking tijdens het migratieproces.
 
+- **Als u uw eigen Azure RMS-tenantsleutel wilt beheren met een met HSM beveiligde sleutel**:
+
+    - Voor deze optionele configuratie moet u Azure Key Vault en een Azure-abonnement hebben dat ondersteuning biedt voor Key Vault met HSM beveiligde sleutels. Zie de [pagina met prijzen van Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) voor meer informatie. 
+
 
 Beperkingen:
 
@@ -100,7 +105,7 @@ Beperkingen:
 ## Overzicht van de stappen voor het migreren van AD RMS naar Azure RMS
 
 
-De negen migratiestappen kunnen worden onderverdeeld in vier fasen die kunnen worden uitgevoerd op verschillende tijdstippen en door verschillende beheerders.
+De migratiestappen kunnen worden onderverdeeld in vier fasen die kunnen worden uitgevoerd op verschillende tijdstippen en door verschillende beheerders.
 
 [**FASE 1: CONFIGURATIE AAN SERVERZIJDE VOOR AD RMS**](migrate-from-ad-rms-phase1.md)
 
@@ -118,11 +123,11 @@ De negen migratiestappen kunnen worden onderverdeeld in vier fasen die kunnen wo
 
     - **Migratie van met HSM beschermde sleutel naar met HSM beschermde sleutel**:
 
-        Sleutels die zijn opgeslagen door een HSM voor AD RMS naar door de klant beheerde Azure RMS-tenantsleutel (BYOK-scenario (Bring Your Own Key)). Hierbij zijn extra stappen vereist om de sleutel van uw lokale Thales HSM over te dragen naar de Azure RMS HSM. Uw bestaande, met HSM beveiligde sleutel moet modulair beveiligd zijn. Met OCS beveiligde sleutels worden niet ondersteund door de BYOK-toolset.
+        Sleutels die zijn opgeslagen door een HSM voor AD RMS naar door de klant beheerde Azure RMS-tenantsleutel (BYOK-scenario (Bring Your Own Key)). Hierbij zijn extra stappen vereist om de sleutel van uw on-premises Thales HSM over te dragen naar Azure Key Vault en Azure RMS toestemming te geven om deze sleutel te gebruiken. Uw bestaande, met HSM beveiligde sleutel moet modulair beveiligd zijn. Met OCS beveiligde sleutels worden niet ondersteund door de Rights Management-services.
 
     - **Migratie van met software beschermde sleutel naar met HSM beschermde sleutel**:
 
-        Centraal beheerde sleutels op basis van wachtwoorden in AD RMS naar door de klant beheerde Azure RMS-tenantsleutel (BYOK-scenario (Bring Your Own Key)). Hierbij is de meest intensieve configuratie vereist, omdat u eerst uw softwaresleutel moet ophalen en importeren naar een lokale HSM. Vervolgens moet u extra stappen uitvoeren om de sleutel van uw lokale Thales HSM over te zetten naar de Azure RMS HSM.
+        Centraal beheerde sleutels op basis van wachtwoorden in AD RMS naar door de klant beheerde Azure RMS-tenantsleutel (BYOK-scenario (Bring Your Own Key)). Dit vereist de meest intensieve configuratie, omdat u eerst uw softwaresleutel moet ophalen en importeren naar een on-premises HSM. Vervolgens moet u extra stappen uitvoeren om de sleutel van uw on-premises Thales HSM over te dragen naar een Azure Key Vault HSM en Azure RMS toestemming te geven om de sleutelkluis te gebruiken waarin de sleutel is opgeslagen.
 
 - **Stap 3. Uw Azure RMS-tenant activeren**
 
@@ -171,7 +176,7 @@ De negen migratiestappen kunnen worden onderverdeeld in vier fasen die kunnen wo
 
 - **Stap 9. Uw Azure RMS-tenantsleutel opnieuw versleutelen**
 
-    Deze stap is verplicht als u vóór de migratie niet werkte in cryptografische modus 2 en is optioneel maar aanbevolen voor alle migraties om uw Azure RMS-tenantsleutel beter te beveiligen.
+    Deze stap is optioneel, maar aanbevolen als u door Microsoft beheerd hebt ingesteld als de topologie van uw Azure RMS-tenantsleutel in stap 2. Deze stap is niet van toepassing als u door de klant beheerd (BYOK) hebt ingesteld als de topologie van de Azure RMS-tenantsleutel.
 
 
 ## Volgende stappen
@@ -180,6 +185,6 @@ Voor het starten van de migratie gaat u naar [Fase 1 - configuratie aan serverzi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

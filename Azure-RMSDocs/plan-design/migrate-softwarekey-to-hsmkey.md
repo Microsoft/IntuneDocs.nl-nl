@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: bd93e781da7dc34c18e236a90a03dbc8fb012a1c
 
 
 ---
@@ -24,83 +24,138 @@ ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
 *Van toepassing op: Active Directory Rights Management Services, Azure Rights Management*
 
 
-Deze instructies maken deel uit van het [migratiepad van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) en zijn alleen van toepassing als uw AD RMS-sleutel softwarebeveiliging heeft en u wilt migreren naar Azure Rights Management met een tenantsleutel met HSM-beveiliging. 
+Deze instructies maken deel uit van het [migratiepad van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) en zijn alleen van toepassing als uw AD RMS-sleutel softwarebeveiliging heeft en u wilt migreren naar Azure Rights Management met een tenantsleutel met HSM-beveiliging in Azure Key Vault. 
 
-Als dit niet uw gekozen configuratiescenario is, gaat u terug naar [Stap 2: Exporteer de configuratiegegevens vanuit AD RMS, importeer de gegevens in Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) en kies een andere configuratie.
+Als dit niet uw gekozen configuratiescenario is, gaat u terug naar [stap 2. Exporteer de configuratiegegevens vanuit AD RMS, importeer de gegevens in Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) en kies een andere configuratie.
 
-Volg deze procedure in drie delen voor het importeren van de AD RMS-configuratie naar Azure RMS, wat erin resulteert dat uw Azure RMS-tenantsleutel wordt beheerd door u (BYOK).
+Volg deze procedure in vier delen voor het importeren van de AD RMS-configuratie naar Azure RMS, wat erin resulteert dat uw Azure RMS-tenantsleutel wordt beheerd door u (BYOK) in Azure Key Vault.
 
-U moet eerst uw SLC-sleutel (serverlicentiecertificaat) uit de gegevens ophalen en de sleutel overdragen naar een on-premises Thales HSM, vervolgens uw HSM-sleutel inpakken en overdragen naar Azure RMS, en tot slot de configuratiegegevens importeren.
+U moet eerst uw SLC-sleutel (serverlicentiecertificaat) uit de AD RMS-configuratiegegevens ophalen en de sleutel overdragen naar een on-premises Thales HSM, vervolgens uw HSM-sleutel inpakken en overdragen naar Azure Key Vault, vervolgens instellen dat Azure RMS toegang heeft tot uw sleutelkluis, en tot slot de configuratiegegevens importeren.
 
-## Deel 1: haal uw SLC op uit de configuratiegegevens en importeer de sleutel in on-premises lokale HSM
+Aangezien uw Azure RMS-tenantsleutel wordt opgeslagen en beheerd door Azure Key Vault, vereist dit deel van de migratie niet alleen beheer in Azure Key Vault, maar ook in Azure RMS. Als Azure Key Vault voor uw organisatie wordt beheerd door een andere beheerder dan u, moet u coördineren en samenwerken met deze beheerder om deze procedures te voltooien.
 
-1.  Volg de stappen in het gedeelte [BYOK (Bring Your Own Key) implementeren](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) van het onderwerp [Uw Azure Rights Management-tenantsleutel plannen en implementeren](plan-implement-tenant-key.md). Maak daarbij gebruik van de procedure **Uw tenantsleutel genereren en overdragen via het internet**, met de volgende uitzonderingen:
+Voordat u begint, zorgt u ervoor dat uw organisatie een sleutelkluis heeft die is gemaakt in Azure Key Vault en dat deze sleutelkluis met HSM-beveiligde sleutels ondersteunt. Alhoewel het geen vereiste is, wordt aanbevolen dat u een toegewezen sleutelkluis voor Azure RMS hebt. Deze sleutelkluis wordt zodanig geconfigureerd dat Azure RMS hiertoe toegang heeft, zodat alleen Azure RMS-sleutels in deze sleutelkluis toegang hebben.
 
-    -   **Uw tenantsleutel genereren en overdragen via internet**: **uw met internet verbonden werkstation voorbereiden**
 
-    -   **Uw tenantsleutel genereren en overdragen via internet**: **uw niet-verbonden werkstation voorbereiden**
+> [!TIP]
+> Als u de configuratiestappen voor Azure Key Vault uitvoert en u niet bekend bent met deze Azure-service, is het wellicht handig vooraf [Aan de slag met Azure Key Vault ](https://azure.microsoft.com/documentation/articles/key-vault-get-started/) te raadplegen. 
 
-    Volg deze stappen niet om uw tenantsleutel te genereren omdat u het equivalent al hebt in het geëxporteerde bestand met configuratiegegevens (.xml). In plaats daarvan voert u een opdracht uit om deze sleutel uit het bestand uit te pakken en deze te importeren in uw on-premises HSM.
 
-2.  Voer de volgende opdracht uit op het niet-verbonden werkstation:
+## Deel 1: uw SLC-sleutel ophalen uit de configuratiegegevens en de sleutel in uw on-premises HSM importeren
+
+1.  Azure Key Vault-beheerder: gebruik de volgende stappen in de sectie [Implementing bring your own key (BYOK) for Azure Key Vault (BYOK (Bring Your Own Key) implementeren voor Azure Key Vault)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) van de Azure Key Vault-documentatie:
+
+    -   **Uw sleutel genereren en overdragen naar Azure Key Vault HSM**: [Stap 1: uw met internet verbonden werkstation voorbereiden](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
+
+    -   **Uw tenantsleutel genereren en overdragen via internet**: [Stap 2: uw niet-verbonden werkstation voorbereiden](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
+
+    Volg deze stappen niet om uw tenantsleutel te genereren omdat u het equivalent al hebt in het geëxporteerde bestand met configuratiegegevens (.xml). In plaats daarvan voert u een hulpprogramma uit om deze sleutel uit het bestand uit te pakken en in uw on-premises HSM te importeren. Als u het hulpprogramma uitvoert, worden twee bestanden gemaakt:
+
+    - Een nieuw configuratiegegevensbestand zonder de sleutel, die vervolgens in uw Azure RMS-tenant kan worden geïmporteerd.
+
+    - Een PEM-bestand (sleutelcontainer) met de sleutel, die vervolgens naar uw on-premises HSM kan worden geïmporteerd.
+
+2. Azure RMS-beheerder of Azure Key Vault-beheerder: voer op een niet-verbonden werkstation het hulpprogramma TpdUtil uit de [Azure RMS-migratietoolkit](https://go.microsoft.com/fwlink/?LinkId=524619) uit. Als het hulpprogramma bijvoorbeeld is geïnstalleerd op uw E-station waarnaar u uw configuratiegegevensbestand ContosoTPD.xml kopieert:
 
     ```
-    KeyTransferRemote.exe -ImportRmsCentrallyManagedKey -TpdFilePath <TPD> -ProtectionPassword -KeyIdentifier <KeyID> -ExchangeKeyPackage <BYOK-KEK-pka-Region> -NewSecurityWorldPackage <BYOK-SecurityWorld-pkg-Region>
+        E:\TpdUtil.exe /tpd:ContosoTPD.xml /otpd:ContosoTPD.xml /opem:ContosoTPD.pem
     ```
-    Bijvoorbeeld voor Noord-Amerika: **KeyTransferRemote.exe -ImportRmsCentrallyManagedKey -TpdFilePath E:\contosokey1.xml -ProtectionPassword -KeyIdentifier contosorms1key –- -ExchangeKeyPackage &lt;BYOK-KEK-pka-NA-1&gt; -NewSecurityWorldPackage &lt;BYOK-SecurityWorld-pkg-NA-1&gt;**
 
-    Extra informatie:
+    Als u meer dan één RMS-configuratiegegevensbestand hebt, voert u dit hulpprogramma uit voor de rest van deze bestanden.
 
-    -   De parameter ImportRmsCentrallyManagedKey geeft aan dat de bewerking bedoeld is om de SLC-sleutel te importeren.
+    Als u de Help van dit hulpprogramma wilt bekijken, waarin u onder andere een beschrijving, uitleg over het gebruik van het programma en voorbeelden vindt, voert u TpdUtil.exe zonder parameters uit
 
-    -   Als u het wachtwoord niet opgeeft in de opdracht, wordt u gevraagd het op te geven.
+    Aanvullende informatie voor deze opdracht:
 
-    -   De parameter KeyIdentifier is bedoeld voor een beschrijvende sleutelnaam en maakt de naam van het sleutelbestand. Gebruik alleen kleine ASCII-tekens.
+    - De **/tpd**: hiermee geeft u het volledige pad en de naam van het geëxporteerde AD RMS-configuratiegegevensbestand op. De volledige parameternaam is **TpdFilePath**.
 
-    -   De parameter ExchangeKeyPackage specificeert een regiospecifiek pakket met een uitwisselingssleutel voor de sleutel (een KEK-pakket) met een naam die begint met BYOK-KEK-pkg-.
+    - De **/otpd**: hiermee geeft u de naam van het uitvoerbestand op voor het configuratiegegevensbestand zonder de sleutel. De volledige parameternaam is **OutPfxFile**. Als u deze parameter niet opgeeft, krijgt het uitvoerbestand de standaardbestandsnaam met het achtervoegsel **_keyless** en wordt dit bestand opgeslagen in de huidige map.
 
-    -   De parameter NewSecurityWorldPackage specificeert een specifiek beveiligingswereldpakket met een naam die begint met BYOK-SecurityWorld-pkg-.
+    - De **/opem**: hiermee geeft u de naam van het uitvoerbestand voor het PEM-bestand op, dat de uitgepakte sleutel bevat. De volledige parameternaam is **OutPemFile**. Als u deze parameter niet opgeeft, krijgt het uitvoerbestand de standaardbestandsnaam met het achtervoegsel **_key** en wordt dit bestand opgeslagen in de huidige map.
 
-    Deze opdracht resulteert in het volgende:
+    - Als u het wachtwoord niet opgeeft wanneer u deze opdracht uitvoert (met behulp van de volledige parameternaam **TpdPassword** of de korte parameternaam **pwd**), wordt u gevraagd het wachtwoord op te geven.
 
-    -   Een HSM-sleutelbestand: %NFAST_KMDATA%\local\key_mscapi_&lt;KeyID&gt;
+3. Op hetzelfde niet-verbonden werkstation voegt u uw Thales HSM toe en configureert u deze volgens de Thales-documentatie. U kunt nu uw sleutel in de gekoppelde Thales HSM importeren met behulp van de volgende opdracht. Hierbij moet u uw eigen bestandsnaam gebruiken in plaats van ContosoTPD.pem:
 
-    -   Een bestand met RMS-configuratiegegevens met SLC verwijderd: %NFAST_KMDATA%\local\no_key_tpd_&lt;KeyID&gt;.xml
+        generatekey --import simple pemreadfile=e:\ContosoTPD.pem plainname=ContosoBYOK protect=module ident=contosobyok type=RSA
 
-3.  Als u meer dan één bestand met RMS-configuratiegegevens hebt, herhaalt u stap 2 voor de rest van deze bestanden.
+    > [!NOTE]
+    >Als u meer dan één bestand hebt, kiest u het bestand dat overeenkomt met de HSM-sleutel die u wilt gebruiken in Azure RMS om inhoud te beveiligen na de migratie.
 
-Nu uw SLC is uitgepakt zodat het een HSM-gebaseerde sleutel is, kunt u dit inpakken en overbrengen naar Azure RMS.
+    Hiermee wordt een uitvoerscherm gegenereerd dat er ongeveer zo uitziet:
 
-## Deel 2: uw HSM-sleutel inpakken en overdragen naar Azure RMS
+    **parameters voor het genereren van sleutels:**
 
-1.  Gebruik de volgende stappen uit het gedeelte [BYOK (Bring Your Own Key) implementeren](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) van het onderwerp [Uw Azure Rights Management-tenantsleutel implementeren](plan-implement-tenant-key.md):
+    **operation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Uit te voeren bewerking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; importeren**
 
-    -   **Uw tenantsleutel genereren en overdragen via internet**: **uw tenantsleutel voorbereiden voor overdracht**
+    **application &nbsp;&nbsp;&nbsp;&nbsp;Toepassing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eenvoudig**
 
-    -   **Uw tenantsleutel genereren en overdragen via internet**: **uw tenantsleutel overdragen naar Azure RMS**
+    **verify &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; De beveiliging van de configuratiesleutel controleren&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ja**
 
-Nu u uw HSM-sleutel naar Azure RMS overgebracht hebt, kunt u uw AD RMS-configuratiegegevens importeren. Deze bevatten alleen een pointer naar de zojuist overgebrachte tenantsleutel.
+    **type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sleuteltype &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSA**
+
+    **pemreadfile &nbsp;&nbsp; PEM-bestand met de RSA-sleutel &nbsp;&nbsp; e:\ContosoTPD.pem**
+
+    **ident &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sleutel-id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contosobyok**
+
+    **plainname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sleutelnaam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContosoBYOK**
+
+    **De sleutel is geïmporteerd.**
+
+    **Pad naar de sleutel: C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
+
+Deze uitvoer bevestigt dat de persoonlijke sleutel is gemigreerd naar uw on-premises Thales HSM-apparaat met een versleuteld exemplaar dat is opgeslagen in een sleutel (in dit voorbeeld in key_simple_contosobyok). 
+
+Nu uw SLC-sleutel is uitgepakt en in uw on-premises HSM is geïmporteerd, kunt u de met HSM beveiligde sleutel inpakken en overdragen naar Azure Key Vault.
+
+> [!IMPORTANT]
+> Zodra u deze stap hebt voltooid, verwijdert u deze PEM-bestanden van het niet-verbonden werkstation, zodat deze bestanden niet toegankelijk zijn voor onbevoegden. Voer bijvoorbeeld cipher /w:E uit om alle bestanden veilig van het E-station te verwijderen.
+
+## Deel 2: uw HSM-sleutel inpakken en overdragen naar Azure Key Vault
+
+1.  Azure Key Vault-beheerder: gebruik de volgende stappen in de sectie [Implementing bring your own key (BYOK) for Azure Key Vault (BYOK (Bring Your Own Key) implementeren voor Azure Key Vault)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) van de Azure Key Vault-documentatie:
+
+    -   [Stap 4: uw sleutel voorbereiden voor overdracht](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
+
+    -   [Stap 5: uw sleutel overdragen naar Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+
+    Volg niet de stappen voor het genereren van een sleutelpaar. U hebt de sleutel namelijk al. In plaats daarvan voert u een opdracht uit om deze sleutel over te dragen (in dit voorbeeld gebruikt de KeyIdentifier-parameter contosobyok) vanuit uw on-premises HSM.
+
+    Voordat u uw sleutel naar Azure Key Vault overdraagt, zorgt u ervoor dat het hulpprogramma KeyTransferRemote.exe **Result: SUCCES** retourneert wanneer u een kopie van de sleutel met beperkte bevoegdheden maakt (stap 4.1) en u uw sleutel versleutelt (stap 4.3).
+
+    Tijdens het uploaden van de sleutel naar Azure Key Vault worden de eigenschappen van de sleutel weergegeven, zoals de sleutel-id. Dit ziet er ongeveer als volgt uit: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Noteer deze URL. De Azure RMS-beheerder heeft deze namelijk nodig om in Azure RMS in te stellen dat deze sleutel wordt gebruikt voor de tenantsleutel.
+
+    Nu u uw HSM-sleutel hebt overgedragen naar Azure Key Vault, kunt u uw AD RMS-configuratiegegevens importeren.
 
 ## Deel 3: de configuratiegegevens importeren naar Azure RMS
 
-1.  Terwijl u nog steeds op het met internet verbonden werkstation en in de Windows PowerShell-sessie bent, kopieert u de gegevens via de RMS-configuratiebestanden met het SLC verwijderd (vanaf het niet-verbonden werkstation, %NFAST_KMDATA%\local\no_key_tpd_&lt;KeyID&gt;.xml)
+1.  Azure RMS-beheerder: kopieer uw nieuwe configuratiegegevensbestanden (.xml) naar het met internet verbonden werkstation en in de PowerShell-sessie. In deze bestanden is de SLC-sleutel verwijderd na het uitvoeren van het hulpprogramma TpdUtil.
 
-2.  Upload het eerste bestand. Als u meer dan één .xml-bestand hebt omdat u meerdere Trusted Publishing Domains had, kiest u het bestand dat het geëxporteerde Trusted Publishing Domain bevat dat overeenkomt met de HSM-sleutel die u in Azure RMS wilt gebruiken om na de migratie inhoud te beveiligen. Gebruik de volgende opdracht:
+2. Upload het eerste .xml-bestand met behulp van cmdlet [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx). Als u meerdere bestanden hebt omdat u meerdere Trusted Publishing Domains had, kiest u het bestand dat overeenkomt met de HSM-sleutel die u in Azure RMS wilt gebruiken om na de migratie inhoud te beveiligen.
+
+    Als u deze cmdlet wilt uitvoeren, hebt u de URL nodig die in de vorige stap werd genoemd.
+
+    Als u bijvoorbeeld de URL-waarde uit de vorige stap en het configuratiegegevensbestand C:\contoso_keyless.xml gebruikt, voert u het volgende uit:
 
     ```
-    Import-AadrmTpd -TpdFile <PathToNoKeyTpdPackageFile> -ProtectionPassword -HsmKeyFile <PathToKeyTransferPackage> -Active $true -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso_keyless.xml" -ProtectionPassword –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Active $True -Verbose
     ```
-    Bijvoorbeeld: **Import -TpdFile E:\no_key_tpd_contosorms1key.xml -ProtectionPassword -HsmKeyFile E:\KeyTransferPackage-contosorms1key.byok -Active $true -Verbose**
 
-    Als u hierom wordt gevraagd, typt u het eerder opgegeven wachtwoord en bevestigt u dat u deze actie wilt uitvoeren.
+    Als u hierom wordt gevraagd, typt u het wachtwoord dat u eerder hebt opgegeven voor het configuratiegegevensbestand en bevestigt u dat u deze actie wilt uitvoeren.
 
-3.  Wanneer de opdracht is voltooid, herhaalt u stap 2 voor elk resterend XML-bestand dat u hebt gemaakt door uw vertrouwde uitgiftedomeinen te exporteren. Maar voor deze bestanden stelt u **-Active** in op **false** wanneer u de opdracht Importeren uitvoert. Bijvoorbeeld: **Import -TpdFile E:\no_key_tpd_contosorms2key.xml -ProtectionPassword -HsmKeyFile E:\KeyTransferPackage-contosorms1key.byok -Active $false -Verbose**
+    Als u meer configuratiegegevensbestanden hebt, herhaalt u deze opdracht voor de rest van deze bestanden. Maar voor deze bestanden stelt u **-Active** in op **false** wanneer u de opdracht Importeren uitvoert.
 
-4.  Gebruik de cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) om de verbinding met de Azure RMS-service te verbreken:
+
+
+3.  Gebruik de cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) om de verbinding met de Azure RMS-service te verbreken:
 
     ```
     Disconnect-AadrmService
     ```
+
+    > [!NOTE]
+    > Als u later moet bevestigen welke sleutel uw Azure RMS-tenantsleutel is in Azure Key Vault, gebruikt u de cmdlet [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) in Azure RMS.
+
 
 U kunt nu doorgaan naar [stap 3. Uw RMS-tenant activeren](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
@@ -108,6 +163,7 @@ U kunt nu doorgaan naar [stap 3. Uw RMS-tenant activeren](migrate-from-ad-rms-ph
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO3-->
 
 

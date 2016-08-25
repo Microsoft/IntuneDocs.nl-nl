@@ -3,15 +3,15 @@ title: Een label configureren voor visuele markeringen voor Azure Information Pr
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
+ms.sourcegitcommit: b5e7fecca7aeb61221dc1f61aa3e202936b8c042
+ms.openlocfilehash: 2b4f464fa51e0743cb1ce0726c7feb31146b5128
 
 
 ---
@@ -60,17 +60,19 @@ Gebruik de volgende instructies voor het configureren van visuele markeringen vo
 
 U kunt de volgende variabelen gebruiken in de tekenreeks voor uw koptekst, voettekst of watermerk:
 
-- `${Item.Label}` voor het geselecteerde label
+- `${Item.Label}` voor het geselecteerde label. Bijvoorbeeld: Intern
 
-- `${Item.Name}` voor de bestandsnaam of het e-mailonderwerp
+- `${Item.Name}` voor de bestandsnaam of het e-mailonderwerp. Bijvoorbeeld: JulySales.docx
 
-- `${Item.Location}` voor het bestandspad
+- `${Item.Location}` voor het pad en de bestandsnaam voor documenten en het e-mailonderwerp voor e-mailberichten. Bijvoorbeeld: \\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` voor de eigenaar van het document of e-mailbericht
+- `${User.Name}` voor de eigenaar van het document of het e-mailbericht voor de gebruikersnaam waarmee bij Windows is ingelogd. Bijvoorbeeld: rsimone
 
-- `${Event.DateTime}` voor de datum en tijd waarop het geselecteerde label is ingesteld 
+- `${User.PrincipalName}` voor de eigenaar van het document of het e-mailbericht door de Azure Information Protection-client die is aangemeld met het e-mailadres (UPN). Bijvoorbeeld: rsimone@vanarsdelltd.com
+
+- `${Event.DateTime}` voor de datum en tijd waarop het geselecteerde label is ingesteld. Bijvoorbeeld: 8/16/2016 1:30 PM
     
-Voorbeeld: als u de tekenreeks `Document: ${item.name} Sensitivity: ${item.label}` voor het voettekstlabel Geheim opgeeft, wordt **Document: project.docx Gevoeligheid: Geheim** de voettekst die wordt toegepast op een document genaamd project.docx.
+Voorbeeld: als u de tekenreeks `Document: ${item.name}  Classification: ${item.label}` voor het voettekstlabel Geheim opgeeft, wordt **Document: project.docx Gevoeligheid: Geheim** de voettekst die wordt toegepast op een document genaamd project.docx.
 
 ## Volgende stappen
 
@@ -80,6 +82,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

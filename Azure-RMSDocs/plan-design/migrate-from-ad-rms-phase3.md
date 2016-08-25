@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
 
 
 ---
@@ -42,7 +42,7 @@ Als u de Azure RMS-tenantsleuteltopologie **Door de klant beheerd (BYOK)** kiest
 ## Stap 7. De RMS-connector implementeren
 Als u de Information Rights Management-functionaliteit (IRM) van Exchange Server of SharePoint Server met AD RMS hebt gebruikt, moet u eerst IRM uitschakelen op deze servers en de AD RMS-configuratie verwijderen. Vervolgens kunt u de Rights Management-connector (RMS) implementeren. Deze functioneert als een communicatie-interface (een relais) tussen de on-premises servers en Azure RMS.
 
-Als u voor deze stap meerdere TPD’s hebt geïmporteerd in Azure RMS die zijn gebruikt voor het beveiligen van e-mailberichten, moet u tot slot handmatig het register bewerken op de Exchange Server-computers zodat alle URL's van TPD’s worden omgeleid naar de RMS-connector.
+Als u voor deze stap meerdere AD RMS-gegevensconfiguratiebestanden (.xml) hebt geïmporteerd in Azure RMS die zijn gebruikt voor het beveiligen van e-mailberichten, moet u tot slot handmatig het register bewerken op de Exchange Server-computers, zodat alle Trusted Publishing Domain-URL's van het publicatiedomein worden omgeleid naar de RMS-connector.
 
 > [!NOTE]
 > Voordat u begint, controleert u de versies van de on-premises servers die Azure RMS ondersteunt, in [On-premises servers die Azure RMS ondersteunen](../get-started/requirements-servers.md).
@@ -95,7 +95,7 @@ Als u voor deze stap meerdere TPD’s hebt geïmporteerd in Azure RMS die zijn g
 
 #### Alleen voor Exchange en meerdere TPD’s: het register bewerken
 
--   Op elke Exchange Server moet u handmatig de volgende registersleutels toevoegen voor elk extra TPD dat u hebt geïmporteerd, om de URL's van de TPD’s om te leiden naar de RMS-connector. Deze registervermeldingen zijn specifiek bedoeld voor migratie en worden niet toegevoegd door het hulpprogramma voor serverconfiguratie voor de Microsoft RMS-connector.
+-   Op elke Exchange Server moet u handmatig de volgende registersleutels toevoegen voor elk extra configuratiegegevensbestand (.xml) dat u hebt geïmporteerd om de Trusted Publishing Domain-URL's om te leiden naar de RMS-connector. Deze registervermeldingen zijn specifiek bedoeld voor migratie en worden niet toegevoegd door het hulpprogramma voor serverconfiguratie voor de Microsoft RMS-connector.
 
     Wanneer u deze wijzigingen in het register aanbrengt, gebruikt u de volgende instructies:
 
@@ -215,6 +215,6 @@ Nadat u deze procedures hebt voltooid, leest u het gedeelte **Volgende stappen**
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 4: taken na migratie](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

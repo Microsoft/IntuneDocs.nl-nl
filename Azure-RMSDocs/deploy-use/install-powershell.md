@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 590148218fdd10e88ba764b2dc523a2213e2c8bb
+ms.sourcegitcommit: 5f8672b1f4d8e1b5ed707e89e88c9ba50d24f486
+ms.openlocfilehash: 4120aeeae7c2c48168e4f01de6558da5034bf019
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 590148218fdd10e88ba764b2dc523a2213e2c8bb
 
 Gebruik de volgende informatie bij het installeren van Windows PowerShell voor Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS).
 
-U kunt deze Windows PowerShell-module gebruiken voor het beheer van [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] vanaf de opdrachtregel. Gebruik daarvoor een computer met een internetverbinding die voldoet aan de vereisten die worden vermeld in het volgende gedeelte. Windows PowerShell voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] biedt ondersteuning voor het uitvoeren van scripts voor automatisering en is mogelijk vereist in situaties met geavanceerde configuratie. Voor meer informatie over de beheertaken en configuraties waarvoor de module ondersteuning biedt, raadpleegt u [Beheer van Azure Rights Management met Windows PowerShell](administer-powershell.md).
+U kunt deze PowerShell-module gebruiken voor het beheer van [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] vanaf de opdrachtregel. Gebruik daarvoor een computer met een internetverbinding die voldoet aan de vereisten die worden vermeld in het volgende gedeelte. Windows PowerShell voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] biedt ondersteuning voor het uitvoeren van scripts voor automatisering en is mogelijk vereist in situaties met geavanceerde configuratie. Voor meer informatie over de beheertaken en configuraties waarvoor de module ondersteuning biedt, raadpleegt u [Beheer van Azure Rights Management met Windows PowerShell](administer-powershell.md).
 
 ## Vereisten
 Deze tabel bevat de vereisten voor het installeren en gebruiken van Windows PowerShell voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
@@ -33,9 +33,14 @@ Deze tabel bevat de vereisten voor het installeren en gebruiken van Windows Powe
 |Vereiste|Meer informatie|
 |---------------|--------------------|
 |Een versie van Windows die ondersteuning biedt voor de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule|Controleer de lijst met ondersteunde besturingssystemen in de sectie **Systeemvereisten** van de [-downloadpagina voor het beheerprogramma voor Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
-|Minimaal vereiste versie van Windows PowerShell: 2.0|Ondersteuning voor de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule wordt geboden vanaf Windows PowerShell 2.0.<br /><br />Standaard worden de meeste Windows-besturingssystemen geïnstalleerd met ten minste versie 2.0 van Windows PowerShell. Als u Windows PowerShell 2.0 wilt installeren, raadpleegt u [Windows PowerShell 2.0 installeren](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Tip: als u wilt controleren welke versie van Windows PowerShell u gebruikt, typt u **$PSVersionTable** tijdens een Windows PowerShell-sessie.|
+|Minimaal vereiste versie van Windows PowerShell: 2.0|Ondersteuning voor de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule wordt geboden vanaf Windows PowerShell 2.0.<br /><br />Standaard worden de meeste Windows-besturingssystemen geïnstalleerd met ten minste versie 2.0 van Windows PowerShell. Als u Windows PowerShell 2.0 wilt installeren, raadpleegt u [Windows PowerShell 2.0 installeren](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Tip: als u wilt controleren welke versie van Windows PowerShell u gebruikt, typt u `$PSVersionTable` tijdens een PowerShell-sessie.|
 |De minimaal vereiste versie van Microsoft .NET Framework: 4.5<br /><br />Opmerking: deze versie van Microsoft .NET Framework is inbegrepen bij de nieuwere besturingssystemen. U hoeft deze dus alleen handmatig te installeren als uw clientbesturingssysteem ouder is dan Windows 8.0 of als uw serverbesturingsysteem ouder is dan Windows Server 2012.|Als de minimaal vereiste versie van Microsoft .NET Framework nog niet is geïnstalleerd, kunt u [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653) downloaden.<br /><br />Deze versie van Microsoft .NET Framework is minimaal vereist voor enkele van de klassen waar de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-beheermodule gebruik van maakt.|
-|Microsoft Online Services-aanmeldhulp 7.0|De Microsoft Online Services-aanmeldhulp is vereist voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]-verificatie.<br /><br />Voor meer informatie raadpleegt u [Downloadcentrum: Microsoft Online Services-assistent voor IT-professionals RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950).|
+
+> [!NOTE]
+> Vanaf versie 2.5.0.0 van de Rights Management-beheermodule is de Microsoft Online Services-aanmeldhulp niet meer vereist.
+> 
+> Als u een eerdere versie van de Rights Management-beheermodule hebt geïnstalleerd, gebruikt u **Programma's en onderdelen** om **Beheer van Microsoft Azure AD Rights Management** te verwijderen voordat u de meest recente versie installeert.
+
 
 ## De Rights Management-beheermodule installeren
 
@@ -71,6 +76,6 @@ Voordat u opdrachten kunt uitvoeren voor het configureren van de [!INCLUDE[aad_r
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

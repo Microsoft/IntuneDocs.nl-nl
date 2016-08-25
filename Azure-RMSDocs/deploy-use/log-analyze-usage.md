@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
-ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 28fed61b674112d2ebeb30a15a6f6217647e0b5f
 
 
 ---
@@ -179,13 +179,13 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |BECreateEndUserLicenseV1|Er wordt een aanroep uitgevoerd vanaf een mobiel apparaat om een gebruiksrechtovereenkomst te maken.|
 |BEGetAllTemplatesV1|Er wordt een aanroep uitgevoerd vanaf een mobiel apparaat (back-end) om alle sjablonen op te halen.|
 |Certify|De inhoud wordt voor beveiliging gecertificeerd door de client.|
-|KMSPDecrypt|De client probeert de inhoud te ontsleutelen die is beveiligd met RMS. Alleen van toepassing op een door de klant beheerde tenantsleutel (BYOK).|
 |DeleteTemplateById|Er is een aanroep vanuit de klassieke Azure-portal uitgevoerd om een sjabloon te verwijderen op basis van de sjabloon-id.|
 |DocumentEventsCsv|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om het CSV-bestand voor één document te downloaden.|
 |ExportTemplateById|Er wordt een aanroep vanuit de klassieke Azure-portal uitgevoerd om een sjabloon te verwijderen op basis van de sjabloon-id.|
 |FECreateEndUserLicenseV1|Vergelijkbaar met de AcquireLicense-aanvraag, maar afkomstig van mobiele apparaten.|
 |FECreatePublishingLicenseV1|Hetzelfde als Certify en GetClientLicensorCert gecombineerd, afkomstig van mobiele clients.|
 |FEGetAllTemplates|Er wordt een aanroep vanaf een mobiel apparaat (front-end) uitgevoerd om de sjablonen te verkrijgen.|
+|FindServiceLocationsForUser|Er wordt een aanroep uitgevoerd om URL's te zoeken, die worden gebruik om Certify of AcquireLicense aan te roepen.|
 |GetAllDocs|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om de pagina **alle documenten** voor een gebruiker te laden of om alle documenten voor de tenant te zoeken. Gebruik deze waarde met de velden admin-action en acting-as-admin:<br /><br />- admin-action is leeg: een gebruiker bekijkt de pagina **alle documenten** voor de eigen documenten.<br /><br />- admin-action heeft de waarde true en acting-as-user is leeg: een beheerder bekijkt alle documenten voor hun tenant.<br /><br />- admin-action heeft de waarde true en acting-as-user is niet leeg: een beheerder bekijkt de pagina **alle documenten** voor een gebruiker.|
 |GetAllTemplates|Er wordt een aanroep vanuit de klassieke Azure-portal uitgevoerd om alle sjablonen te verkrijgen.|
 |GetClientLicensorCert|Er wordt met de client een publicatiecertificaat aangevraagd (dat later wordt gebruikt om inhoud te beveiligen) bij een Windows-computer.|
@@ -195,8 +195,11 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |GetSingle|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar een pagina **één document** te gaan.|
 |GetTenantFunctionalState|De klassieke Azure-portal of Azure RMS is geactiveerd.|
 |GetTemplateById|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een sjabloon op te halen door een sjabloon-id op te geven.|
-|ExportTemplateById|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een sjabloon te exporteren door een sjabloon-id op te geven.|
-|FindServiceLocationsForUser|Er wordt een aanroep uitgevoerd om URL's te zoeken, die worden gebruik om Certify of AcquireLicense aan te roepen.|
+|KeyVaultDecryptRequest|De client probeert de inhoud te ontsleutelen die is beveiligd met RMS. Alleen van toepassing op een door de klant beheerde tenantsleutel (BYOK) in Azure Key Vault.|
+|KeyVaultGetKeyInfoRequest|Er wordt een aanroep uitgevoerd om te verifiëren dat de sleutel die is opgegeven voor gebruik in Azure Key Vault voor de Azure RMS-tenantsleutel toegankelijk is en niet al in gebruik is.|
+|KeyVaultSignDigest|Er wordt een aanroep uitgevoerd wanneer een door de klant beheerde sleutel (BYOK) in Azure Key Vault wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
+|KMSPDecrypt|De client probeert de inhoud te ontsleutelen die is beveiligd met RMS. Alleen van toepassing op een verouderde door de klant beheerde tenantsleutel (BYOK).|
+|KMSPSignDigest|Er wordt een aanroep uitgevoerd wanneer een verouderde door de klant beheerde sleutel (BYOK) wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
 |LoadEventsForMap|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de overzichtsweergave voor één document te gaan.|
 |LoadEventsForSummary|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de tijdlijnweergave voor één document te gaan.|
 |LoadEventsForTimeline|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om naar de overzichtsweergave voor één document te gaan.|
@@ -206,10 +209,8 @@ Er zijn tal van aanvraagtypen voor Azure Rights Management, maar de volgende tab
 |ServerCertify|Een wordt een aanroep vanaf een RMS-clients(zoals SharePoint) uitgevoerd om de server te certificeren.|
 |SetUsageLogFeatureState|Er wordt een aanroep uitgevoerd om logboekregistratie van het gebruik in te schakelen.|
 |SetUsageLogStorageAccount|Er wordt een aanroep uitgevoerd om de locatie van Azure RMS-logboeken op te geven.|
-|SignDigest|Er wordt een aanroep uitgevoerd wanneer een sleutel wordt gebruikt voor ondertekeningsdoeleinden. Doorgaans wordt er één aanroep per AcquireLicence (of FECreateEndUserLicenseV1), Certify en GetClientLicensorCert (of FECreatePublishingLicenseV1) verzonden.|
 |UpdateNotificationSettings|Er wordt een aanroep uitgevoerd vanaf de documenttrackingsite om de meldingsinstellingen voor één document te wijzigen.|
 |UpdateTemplate|Er wordt een aanroep uitgevoerd vanuit de klassieke Azure-portal om een bestaande sjabloon bij te werken.|
-
 
 
 ## Windows PowerShell reference
@@ -240,6 +241,6 @@ Zie [Administering Azure Rights Management by Using Windows PowerShell](administ
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/23/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: efe129422348fb30ce7686a5602cb29a1b46d36d
 
 
 ---
@@ -27,9 +27,12 @@ Gebruik de volgende informatie voor fase 1 van de migratie van AD RMS naar Azure
 
 
 ## Stap 1: download de Azure Rights Management Administration Tool
-Ga naar het Microsoft Downloadcentrum en download de [Azure Rights Management Administration Tool](http://go.microsoft.com/fwlink/?LinkId=257721), die de Azure RMS-beheermodule voor Windows PowerShell bevat.
+Ga naar het Microsoft Downloadcentrum en download de [Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), die de Azure RMS-beheermodule voor Windows PowerShell bevat.
 
 Installeer het hulpprogramma. Zie [Installing Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md) (Windows PowerShell voor Azure Rights Management installeren) voor instructies.
+
+> [!NOTE]
+> Als u deze Windows PowerShell-module eerder hebt gedownload, voert u de volgende opdracht uit om te controleren of u minimaal over versienummer 2.5.0.0 beschikt: `(Get-Module aadrm -ListAvailable).Version`
 
 ## Stap 2. Exporteer de configuratiegegevens uit AD RMS en importeer deze in Azure RMS
 Deze stap bestaat uit twee fasen:
@@ -39,10 +42,20 @@ Deze stap bestaat uit twee fasen:
 2.  Importeer de configuratiegegevens naar Azure RMS. Er zijn verschillende processen voor deze stap, afhankelijk van de huidige configuratie van uw AD RMS-implementatie en uw voorkeurstopologie voor de Azure RMS-tenantsleutel.
 
 ### De configuratiegegevens vanuit AD RMS exporteren
-Voer de volgende procedure uit voor alle AD RMS-clusters en voor alle vertrouwde uitgiftedomeinen die beveiligde inhoud voor uw organisatie bevatten. U hoeft dit niet uit te voeren voor clusters met alleen-licentieverlening.
 
-> [!NOTE]
-> Als u Windows Server 2003 Rights Management gebruikt, volgt u in plaats van deze instructies de procedure [ Persoonlijke SLC-, TUD-, TPD- en RMS-sleutel exporteren](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) in het artikel [Migreren van Windows RMS naar AD RMS in een andere infrastructuur](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx).
+> [!IMPORTANT]
+> Voordat u deze procedure uitvoert, moet u eerst bevestigen dat uw AD RMS-servers worden uitgevoerd in de cryptografische modus 2, wat een vereiste is voor Azure RMS.
+> 
+> De cryptografische modus bevestigen:
+> 
+> - Voor Windows Server 2012 R2 en Windows 2012: Ga naar de eigenschappen voor AD RMS en kies het tabblad **Algemeen**. 
+> 
+> - Voor alle ondersteunde versies van AD RMS: gebruik de opties [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) en **AD RMS-beheerder** om de cryptografische modus in de **RMS servicegegevens** weer te geven.
+> 
+> Zorg ervoor dat de waarde voor de cryptografische modus **2** is. Als dat niet het geval is, raadpleegt u de instructies voor het inschakelen van de cryptografische modus 2 in [AD RMS cryptografische modi](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
+
+
+Voer de volgende procedure uit voor alle AD RMS-clusters en voor alle vertrouwde uitgiftedomeinen die beveiligde inhoud voor uw organisatie bevatten. U hoeft dit niet uit te voeren voor clusters met alleen-licentieverlening.
 
 #### De configuratiegegevens exporteren (gegevens van vertrouwd uitgiftedomein)
 
@@ -60,7 +73,7 @@ Voer de volgende procedure uit voor alle AD RMS-clusters en voor alle vertrouwde
 
     -   Schakel het selectievakje niet in om het vertrouwde domeinbestand op te slaan in RMS versie 1.0.
 
-Wanneer u alle vertrouwde uitgiftedomeinen hebt geëxporteerd, bent u klaar om te beginnen met de procedure voor het importeren van deze gegevens vanuit Thales naar de Azure RMS Hardware Security Module (HSM). Meer informatie 
+Wanneer u alle vertrouwde uitgiftedomeinen hebt geëxporteerd, bent u klaar om te beginnen met de procedure voor het importeren van deze gegevens in Azure RMS.
 
 ### De configuratiegegevens importeren naar Azure RMS
 De precieze procedures voor deze stap zijn afhankelijk van de huidige configuratie van uw AD RMS-implementatie en van uw voorkeurstopologie voor de Azure RMS-tenantsleutel.
@@ -78,18 +91,18 @@ Uw huidige AD RMS-implementatie gaat een van de volgende configuraties gebruiken
 > [!NOTE]
 > Zie voor meer informatie over het gebruik van Hardware Security Modules met AD RMS het onderwerp [AD RMS gebruiken met Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx).
 
-Er zijn twee opties voor de topologie van de Azure RMS-tenantsleutel: Microsoft beheert uw tenantsleutel (**door Microsoft beheerd**) of u beheert uw tenantsleutel (**door de klant beheerd**). Wanneer u uw eigen Azure RMS-tenantsleutel beheert, wordt dit wordt soms aangeduid als 'Bring Your Own Key' (BYOK) en is er een HSM (Hardware Security Module) van Thales vereist. Zie [Uw Azure Rights Management-tenantsleutel plannen en implementeren](plan-implement-tenant-key.md) voor meer informatie
+Er zijn twee opties voor de topologie van de Azure RMS-tenantsleutel: Microsoft beheert uw tenantsleutel (**door Microsoft beheerd**) of u beheert uw tenantsleutel (**door de klant beheerd**) in Azure Key Vault. Wanneer u uw eigen Azure RMS-tenantsleutel beheert, wordt dit wordt soms aangeduid als 'Bring Your Own Key' (BYOK) en is er een HSM (Hardware Security Module) van Thales vereist. Zie [Uw Azure Rights Management-tenantsleutel plannen en implementeren](plan-implement-tenant-key.md) voor meer informatie
 
 > [!IMPORTANT]
-> Exchange Online is momenteel niet compatibel met Azure RMS BYOK.  Als u BYOK na de migratie wilt gebruiken en u van plan bent Exchange Online te gebruiken, moet u goed begrijpen waarom deze configuratie leidt tot minder IRM-functionaliteiten voor Exchange Online. Lees de informatie in [BYOK-prijzen en -beperkingen](byok-price-restrictions.md) bij het kiezen van de beste topologie van de Azure RMS-tenantsleutel voor uw migratie.
+> Exchange Online is momenteel niet compatibel met BYOK in Azure RMS.  Als u BYOK na de migratie wilt gebruiken en u van plan bent Exchange Online te gebruiken, moet u goed begrijpen waarom deze configuratie leidt tot minder IRM-functionaliteiten voor Exchange Online. Lees de informatie in [BYOK-prijzen en -beperkingen](byok-price-restrictions.md) bij het kiezen van de beste topologie van de Azure RMS-tenantsleutel voor uw migratie.
 
 Bepaal aan de hand van de volgende tabel welke procedure er voor uw migratie moet worden gevolgd. Combinaties die niet zijn opgenomen, worden niet ondersteund.
 
 |Huidige AD RMS-implementatie|Gekozen topologie voor Azure RM- tenantsleutel|Migratie-instructies|
 |-----------------------------|----------------------------------------|--------------------------|
 |Wachtwoordbeveiliging in de AD RMS-database|Door Microsoft beheerd|Zie de migratieprocedure **Migratie van met software beveiligde sleutel naar met software beveiligde sleutel** na deze tabel.<br /><br />Dit is het eenvoudigste migratiepad. Hierbij is de enige vereiste dat u uw configuratiegegevens naar Azure RMS overdraagt.|
-|HSM-beveiliging met een Thales nShield-HSM (Hardware Security Module)|Door de klant beheerd (BYOK)|Zie de migratieprocedure **Migratie van met HSM beveiligde sleutel naar met HSM beveiligde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset en twee sets stappen nodig om de sleutel over te dragen van uw lokale HSM naar de Azure RMS HSM's en om vervolgens de configuratiegegevens over te dragen naar Azure RMS.|
-|Wachtwoordbeveiliging in de AD RMS-database|Door de klant beheerd (BYOK)|Zie de procedure **Migratie van met software beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset en drie sets stappen nodig om eerst uw softwaresleutel op te halen en te importeren in een lokale HSM, om vervolgens de sleutel over te dragen van uw lokale HSM naar de Azure RMS HSM's en om tot slot de configuratiegegevens over te dragen naar Azure RMS.|
+|HSM-beveiliging met een Thales nShield-HSM (Hardware Security Module)|Door de klant beheerd (BYOK)|Zie de migratieprocedure **Migratie van met HSM beveiligde sleutel naar met HSM beveiligde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset van Azure Key Vault en drie sets stappen nodig om eerst uw sleutel over te dragen van uw on-premises HSM naar de Azure Key Vault HSM's, om vervolgens Azure RMS te autoriseren voor het gebruik van uw tenantsleutel en om tot slot de configuratiegegevens over te dragen naar Azure RMS.|
+|Wachtwoordbeveiliging in de AD RMS-database|Door de klant beheerd (BYOK)|Zie de procedure **Migratie van met software beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.<br /><br />Hiervoor hebt u de BYOK-toolset van Azure Key Vault en vier sets stappen nodig om eerst uw softwaresleutel op te halen en te importeren in een on-premises HSM, om vervolgens de sleutel over te dragen van uw on-premises HSM naar de Azure RMS HSM's, om vervolgens uw Key Vault-gegevens over te dragen naar Azure RMS en om tot slot de configuratiegegevens over te dragen naar Azure RMS.|
 |HSM-beveiliging met een HSM (Hardware Security Module) van een andere leverancier dan Thales|Door de klant beheerd (BYOK)|Neem contact op met de leverancier van uw HSM voor instructies om de sleutel van deze HSM over te dragen naar een Thales nShield Hardware Security Module (HSM). Volg daarna de instructies voor de procedure **Migratie van met HSM beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.|
 |Met een wachtwoord beveiligd via een externe cryptografische provider|Door de klant beheerd (BYOK)|Neem contact op met de leverancier van uw cryptografische provider voor instructies over het overdragen van uw sleutel naar een Thales nShield Hardware Security Module (HSM). Volg daarna de instructies voor de procedure **Migratie van met HSM beschermde sleutel naar met HSM beschermde sleutel** na deze tabel.|
 Controleer voordat u aan deze procedures begint, of u toegang hebt tot de XML-bestanden die u eerder hebt gemaakt tijdens het exporteren van de vertrouwde uitgiftedomeinen. Deze kunnen bijvoorbeeld worden opgeslagen op een USB-stick die u verplaatst van de AD RMS-server naar het werkstation met internetverbinding.
@@ -101,9 +114,9 @@ Controleer voordat u aan deze procedures begint, of u toegang hebt tot de XML-be
 Voor het voltooien van stap 2 kiest en selecteert u de instructies voor uw migratiepad: 
 
 
-- [Softwaresleutel naar softwaresleutel](migrate-softwarekey-to-softwarekey.md)
-- [HSM-sleutel naar HSM-sleutel](migrate-hsmkey-to-hsmkey.md)
-- [Softwaresleutel naar HSM-sleutel](migrate-softwarekey-to-hsmkey.md)
+- [Met software beschermde sleutel naar met software beschermde sleutel](migrate-softwarekey-to-softwarekey.md)
+- [Met HSM beschermde sleutel naar met HSM beschermde sleutel](migrate-hsmkey-to-hsmkey.md)
+- [Met software beschermde sleutel naar met HSM beschermde sleutel](migrate-softwarekey-to-hsmkey.md)
 
 
 ## Stap 3. Uw RMS-tenant activeren
@@ -166,7 +179,7 @@ U kunt de automatisch gemaakte groep van uw organisatie zien als u een van de st
 ### Windows PowerShell-voorbeeldscript om AD RMS-sjablonen te identificeren die de groep IEDEREEN bevatten
 Dit gedeelte bevat het voorbeeldscript om u te helpen bij het identificeren van AD RMS-sjablonen waarvoor de groep IEDEREEN is gedefinieerd, zoals beschreven in voorgaande sectie.
 
-**Disclaimer**: dit voorbeeldscript wordt onder geen enkel ondersteuningsprogramma of -service op basis van Microsoft-standaard ondersteund. Dit voorbeeldscript wordt verstrekt 'in de huidige vorm' en zonder garantie van welke aard dan ook.*
+**Disclaimer**: dit voorbeeldscript wordt onder geen enkel ondersteuningsprogramma of -service op basis van Microsoft-standaard ondersteund. Dit voorbeeldscript wordt verstrekt 'in de huidige vorm' zonder garantie van welke aard dan ook.
 
 ```
 import-module adrmsadmin 
@@ -207,6 +220,6 @@ Ga naar [fase 2 - configuratie aan clientzijde](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

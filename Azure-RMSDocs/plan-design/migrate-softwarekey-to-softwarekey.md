@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 
 ---
@@ -33,10 +33,10 @@ Volg deze procedure voor het importeren van de AD RMS-configuratie naar Azure RM
 
 ## De configuratiegegevens importeren in Azure RMS
 
-1.  Download en installeer op een werkstation met internetverbinding de Windows PowerShell-module voor Azure RMS (minimaal versie 2.1.0.0), waarin de cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) is inbegrepen.
+1.  Download en installeer op een werkstation met internetverbinding de Windows PowerShell-module voor Azure RMS (minimaal versie 2.5.0.0), waarin de cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) is inbegrepen.
 
     > [!TIP]
-    > Als u de module eerder hebt gedownload en geïnstalleerd, moet u het versienummer controleren door het volgende uit te voeren: `(Get-Module aadrm -ListAvailable).Version`
+    > Als u de module eerder hebt gedownload en geïnstalleerd, controleert u het versienummer door de volgende opdracht uit te voeren: `(Get-Module aadrm -ListAvailable).Version`
 
     Zie [Windows PowerShell voor Azure Rights Management installeren](../deploy-use/install-powershell.md) voor installatie-instructies.
 
@@ -54,9 +54,9 @@ Volg deze procedure voor het importeren van de AD RMS-configuratie naar Azure RM
     ```
     Bijvoorbeeld: **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword -Active $true -Verbose**
 
-    Als u erom wordt gevraagd, typt u het eerder opgegeven wachtwoord en bevestigt u dat u deze actie wilt uitvoeren.
+    Als u hierom wordt gevraagd, typt u het eerder opgegeven wachtwoord en bevestigt u dat u deze actie wilt uitvoeren.
 
-4.  Wanneer de opdracht is voltooid, herhaalt u stap 3 voor elk resterend XML-bestand dat u hebt gemaakt door uw vertrouwde uitgiftedomeinen te exporteren. Voor deze bestanden stelt echter u **-Active** in op **false** wanneer u de importeeropdracht uitvoert. Bijvoorbeeld: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+4.  Wanneer de opdracht is voltooid, herhaalt u stap 3 voor elk resterend .xml-bestand dat u hebt gemaakt door uw Trusted Publishing Domains te exporteren. Maar voor deze bestanden stelt u **-Active** in op **false** wanneer u de opdracht Importeren uitvoert. Bijvoorbeeld: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
 
 5.  Gebruik de cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) om de verbinding met de Azure RMS-service te verbreken:
 
@@ -64,11 +64,13 @@ Volg deze procedure voor het importeren van de AD RMS-configuratie naar Azure RM
     Disconnect-AadrmService
     ```
 
+
 U kunt nu doorgaan naar [stap 3. Uw RMS-tenant activeren](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO3-->
 
 

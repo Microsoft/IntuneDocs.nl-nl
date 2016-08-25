@@ -14,15 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
+ms.sourcegitcommit: a0659fda129f6de5e7b52c89f4d1f9d73d11df45
+ms.openlocfilehash: bdc173fb9cb9b749d75b08df3cc9554acd6f6386
 
 
 ---
 
 # iOS- en OS X-installatie
 
-iOS- en OS X-toepassingen kunnen de Microsoft Rights Management SDK 4.2 gebruiken om geïntegreerde informatiebeveiliging in de toepassing in te schakelen met behulp van de Azure Active Directory Rights Management (AAD RM).
+iOS- en OS X-toepassingen kunnen de Microsoft Rights Management SDK 4.2 gebruiken om geïntegreerde informatiebeveiliging in de toepassing in te schakelen met behulp van de Azure Rights Management (Azure RMS).
 
 Dit onderwerp leidt u door het instellen van uw omgeving voor het maken van uw eigen nieuwe apps.
 
@@ -31,7 +31,7 @@ Dit onderwerp leidt u door het instellen van uw omgeving voor het maken van uw e
 
 -   [Vereisten](#prerequisites)
 -   [Optioneel](#optional)
--   [Uw ontwikkelomgeving configureren](#configuring-your-development-environment)
+-   [Uw ontwikkelingsomgeving configureren](#configuring-your-development-environment)
 -   [Zie ook](#see-also)
 
 ## Vereisten
@@ -57,7 +57,7 @@ Lees het onderwerp [Wat is er nieuw?](release-notes.md) voor informatie over API
 
 Onze UI-bibliotheek biedt een herbruikbare UI voor gebruiks- en beveiligingsbewerkingen voor ontwikkelaars die geen eigen aangepaste UI willen maken: [UI-bibliotheek en voorbeeldapp voor iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios).
 
-## Uw ontwikkelomgeving configureren
+## Uw ontwikkelingsomgeving configureren
 
 -   Als u een nieuw project wilt maken, klikt u in het menu **Bestand** op **Nieuw** en vervolgens op **Project**.
 -   Selecteer **Enkelvoudige weergave van toepassing**.
@@ -119,6 +119,6 @@ Onze UI-bibliotheek biedt een herbruikbare UI voor gebruiks- en beveiligingsbewe
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
