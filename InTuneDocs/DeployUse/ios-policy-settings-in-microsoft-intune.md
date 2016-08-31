@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ U kunt de volgende instellingen configureren op apparaten met iOS 7.1 en hoger i
 |**Door de gebruiker installeren van configuratieprofielen en -certificaten toestaan**|De gebruiker toestaan om configuratieprofielen en -certificaten te installeren.|
 |**Gebruik van de app Berichten op het apparaat toestaan**|Toestaan dat de app Berichten kan worden gebruikt om berichten te verzenden.|
 
+### Apps weergeven of verbergen
+
+Gebruik de **Lijst met verborgen en weergegeven apps** om de volgende bewerkingen uit te voeren op apparaten met iOS 9.3 of hoger die onder supervisie staan:
+
+- Een lijst opstellen met apps die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
+- Een lijst opstellen met apps die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
+
+
+#### Een lijst met verborgen of weergegeven apps maken
+
+Specificeer de volgende instellingen:
+
+|Naam van de instelling|Details|
+|-|-|
+|**Lijst met verborgen en weergegeven apps**|Schakel deze instelling in als u een lijst met verborgen of weergegeven apps wilt maken.|
+|**De vermelde apps verbergen voor gebruikers**|Selecteer deze optie als u een lijst wilt maken met apps die verborgen zullen zijn voor gebruikers.|
+|**Alleen de vermelde apps voor gebruikers weergeven**|Selecteer deze optie als u een lijst wilt maken met apps die worden weergegeven voor gebruikers.<br>Wanneer u dit lijsttype maakt, worden alle andere apps, met uitzondering van de IOS-apps **Instellingen** en **Telefoon** (voor iPhones), verborgen.<br>Bovendien moet u de app Bedrijfsportal en alle apps die u hebt geïmplementeerd en die u beheert met Intune, aan de lijst toevoegen.|
+|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst.<br>Voor de lijst met verborgen apps moet u de **Naam**, **Uitgever** en **App-URL of bundel-id** opgeven van elke app die u wilt verbergen.<br>Voor de lijst met weergegeven apps kunt u de optie **Selecteer een beheerde app** kiezen om een lijst weer te geven met de apps die u beheert met Intune en waaruit u apps kunt selecteren. U kunt voor deze lijst ook de optie Selecteer een Store-app kiezen, waarna u de **Naam**, **Uitgever** en **App-URL of bundel-id** moet opgeven van elke app die u wilt weergeven.|
+|**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
+|**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
+|**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
+
+#### App-informatie voor ingebouwde iOS-apps
+
+Gebruik de informatie in deze lijst om de naam, uitgever en bundel-id te achterhalen van de ingebouwde iOS-apps die u wilt weergeven of verbergen. Als u alle apps in de lijst wilt weergeven of verbergen, kunt u de gegevens eronder kopiëren naar een tekstbestand met de extensie **.csv** en vervolgens de optie **Apps importeren** gebruiken om alle apps tegelijkertijd te importeren.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Aangepaste beleidsinstellingen
 
@@ -266,6 +337,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
