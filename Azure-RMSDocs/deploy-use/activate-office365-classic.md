@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management activeren vanuit van het klassieke Office 365-beheercentrum | Azure RMS
-description: 
-keywords: 
+description: Volg deze instructies als u de klassieke (oorspronkelijke) versie van het Office 365-beheercentrum gebruikt.
 author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
-ms.openlocfilehash: 657fb47485ce0e86fab800f8ab981e6dfbd9ee11
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 27667ed6c205cfa93b2d985722637255ddbd6072
 
 
 ---
 
 # Azure Rights Management activeren vanuit het klassieke Office 365-beheercentrum
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Volg deze instructies als u de klassieke (oorspronkelijke) versie van het Office 365-beheercentrum gebruikt.
@@ -54,6 +53,6 @@ U ziet nu **Rights Management is geactiveerd** en de mogelijkheid om te deactive
 Terug naar [Azure Rights Management activeren](activate-service.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

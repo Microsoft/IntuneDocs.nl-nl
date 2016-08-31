@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management-implementatieschema | Azure RMS
-description: 
-keywords: 
+description: Gebruik de volgende stappen om Azure Rights Management (Azure RMS) voor te bereiden, te implementeren en te beheren voor uw organisatie.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f8a4d53665dd79a6d0e02d340b0e7a09d995e00
-ms.openlocfilehash: 96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 13ec3a88eb1c072bf94b6c54e3e4d97e45cc8eb2
 
 
 ---
 
 # Azure Rights Management-implementatieschema
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Gebruik de volgende stappen om Azure Rights Management (Azure RMS) voor te bereiden, te implementeren en te beheren voor uw organisatie.
 
@@ -75,6 +74,6 @@ Als u begint met het gebruik van [!INCLUDE[aad_rightsmanagement_2](../includes/a
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: RMS voor personen en Azure Rights Management | Azure RMS
-description: 
-keywords: 
+description: RMS voor personen is een gratis selfserviceabonnement voor gebruikers in een organisatie waar vertrouwelijke bestanden naar zijn verzonden die zijn beveiligd door Microsoft Azure Rights Management (Azure RMS). Deze gebruikers kunnen echter niet worden geverifieerd omdat de IT-afdeling geen account voor hen beheert in Azure. De IT-afdeling beschikt bijvoorbeeld niet over Office 365 of gebruikt geen Azure-services.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
 
 
 ---
 
-# RMS voor personen en Azure Rights Management
+# RMS voor personen en Windows Azure Rights Management
 
-*Van toepassing op: Azure Rights Management*
+>*Van toepassing op: Azure Rights Management*
 
 RMS voor personen is een gratis selfserviceabonnement voor gebruikers in een organisatie waar vertrouwelijke bestanden naar zijn verzonden die zijn beveiligd door Microsoft Azure Rights Management (Azure RMS). Deze gebruikers kunnen echter niet worden geverifieerd omdat de IT-afdeling geen account voor hen beheert in Azure. De IT-afdeling beschikt bijvoorbeeld niet over Office 365 of gebruikt geen Azure-services.
 
@@ -42,6 +41,6 @@ Zie [Hoe gebruikers zich aanmelden voor RMS voor personen](rms-for-individuals-u
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

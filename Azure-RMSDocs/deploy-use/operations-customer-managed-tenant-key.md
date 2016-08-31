@@ -1,20 +1,19 @@
 ---
 title: Door de klant beheerde levenscyclusbewerkingen voor de tenantsleutel | Azure RMS
-description: 
-keywords: 
+description: Als u de tenantsleutel voor Azure Rights Management zelf beheert (het Bring Your Own Key-scenario, ofwel BYOK), leest u de volgende gedeelten voor meer informatie over de levenscyclusbewerkingen die relevant zijn voor deze topologie.
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 9bff4e1380dfa3fabab1e8cb9317f3dd31b05a77
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 500f9c0e4aff34aaf7b6836643a777a1cb1edc91
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 9bff4e1380dfa3fabab1e8cb9317f3dd31b05a77
 
 # Door de klant beheerde levenscyclusbewerkingen voor de tenantsleutel
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Als u de tenantsleutel voor Azure Rights Management zelf beheert (het Bring Your Own Key-scenario, ofwel BYOK), leest u de volgende gedeelten voor meer informatie over de levenscyclusbewerkingen die relevant zijn voor deze topologie.
 
@@ -69,6 +68,6 @@ Welke actie u of Microsoft het beste kan ondernemen in het geval van een schendi
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

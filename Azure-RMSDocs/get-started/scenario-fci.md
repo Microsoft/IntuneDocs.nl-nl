@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: "Scenario: bestanden op een bestandsshare van de server beveiligen | Azure RMS"
-description:
-keywords:
+title: 'Scenario: bestanden op een bestandsshare van de server beveiligen | Azure RMS'
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management om alle bestanden op een bestandsshare van de server bulksgewijs te beveiligen zodat uitsluitend werknemers van uw organisatie deze kunnen openen. Dit geldt ook voor het geval waarin de bestanden worden gekopieerd en opgeslagen in een opslag die niet onder het beheer van uw IT-afdeling valt of wanneer deze per e-mail naar anderen worden verzonden.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
+
 
 ---
 
 # Scenario: bestanden op een bestandsshare van de server beveiligen
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management om alle bestanden op een bestandsshare van de server bulksgewijs te beveiligen zodat uitsluitend werknemers van uw organisatie deze kunnen openen. Dit geldt ook voor het geval waarin de bestanden worden gekopieerd en opgeslagen in een opslag die niet onder het beheer van uw IT-afdeling valt of wanneer deze per e-mail naar anderen worden verzonden.
 
@@ -52,7 +45,7 @@ De instructies voor dit scenario gelden alleen als aan de volgende voorwaarden i
 |Vereiste|Als u meer informatie nodig hebt|
 |---------------|--------------------------------|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
-|U hebt de on-premises Active Directory-gebruikersaccounts gesynchroniseerd met Azure Active Directory of Office 365, met inbegrip van de bijbehorende e-mailadressen. Dit is vereist voor alle gebruikers die mogelijk toegang moeten hebben tot de bestanden nadat deze door FCI en Azure Rights Management zijn beveiligd.|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|U hebt de lokale Active Directory-gebruikersaccounts gesynchroniseerd met Azure Active Directory of Office 365, met inbegrip van de bijbehorende e-mailadressen. Dit is vereist voor alle gebruikers die mogelijk toegang moeten hebben tot de bestanden nadat deze door FCI en Azure Rights Management zijn beveiligd.|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Een van de volgende:<br /><br />- Met een standaardsjabloon voor alle gebruikers: u hebt de standaardsjabloon, &lt;organisatienaam&gt;: vertrouwelijk, niet gearchiveerd<br /><br />- Met een aangepaste sjabloon voor specifieke gebruikers: u hebt deze aangepaste sjabloon gemaakt en gepubliceerd|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |De Rights Management-toepassing voor delen is geïmplementeerd op computers van gebruikers waarop Windows wordt uitgevoerd|[Automatische implementatie voor de Microsoft Rights Management-toepassing voor delen](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |U hebt het RMS-beveiligingshulpprogramma gedownload en de vereiste onderdelen voor Azure RMS geconfigureerd|Voor instructies voor het downloaden van het hulpprogramma en de vereisten: [Cmdlets van RMS-beveiliging](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Aanvullende vereisten voor Azure RMS, zoals de hoofdaccount voor de service, configureren: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
@@ -161,6 +154,7 @@ Het bestand wordt regelmatig opnieuw beveiligd, zodat de bestandsextensie .pfile
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

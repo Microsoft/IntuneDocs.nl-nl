@@ -1,27 +1,26 @@
 ---
 title: Toepassingen configureren voor Azure Rights Management | Azure RMS
-description: 
-keywords: 
+description: "Nadat u voor uw organisatie Azure Rights Management (Azure RMS) hebt geïmplementeerd, raadpleegt u de volgende informatie voor het configureren van toepassingen en services die Azure RMS ondersteunen. Hieronder vallen Office-toepassingen zoals Word 2010 en Word 2013, en services als Exchange Online (transportregels, voorkomen van gegevensverlies, tegengaan van het doorsturen van berichten en berichtversleuteling) en SharePoint Online (beveiligde bibliotheken)."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8fe934c51e852791d19fbb336deaf9cd7be9817b
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 7e592d99bcd2a143d63b35aa4afb92b1e45cb74a
 
 
 ---
 
-# Toepassingen configureren voor Azure Rights Management
+# Toepassingen voor Azure Rights Management configureren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 > [!NOTE]
 > Deze informatie is bedoeld voor IT-beheerders en consultants die Azure Rights Management hebben geïmplementeerd. Als u op zoek bent naar gebruikersondersteuning en informatie over het gebruik van Rights Management voor een bepaalde toepassing of over het openen van een met rechten beveiligd bestand, raadpleegt u de Help-onderwerpen en instructies bij uw toepassing.
@@ -33,7 +32,7 @@ Nadat u voor uw organisatie Azure Rights Management (Azure RMS) hebt geïmplemen
 > [!IMPORTANT]
 > Zie [Vereisten voor Azure Rights Management](../get-started/requirements-azure-rms.md) voor informatie over de versies die worden ondersteund en andere vereisten.
 
--   [Office 365: configuratie voor clients en online services](configure-office365.md)
+-   [Office 365: configuratie voor clients en onlineservices](configure-office365.md)
 
     -   [Exchange Online: IRM-configuratie](configure-office365.md#exchange-online-irm-configuration)
 
@@ -75,6 +74,6 @@ Nadat u uw toepassingen voor Azure Rights Management hebt geconfigureerd, contro
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

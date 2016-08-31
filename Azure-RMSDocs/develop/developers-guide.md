@@ -4,9 +4,9 @@ description: Overzicht van hulpprogramma's voor ontwikkelaars; SDK's, aanvullend
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 1f23f2a3e0e012eeeb779eb44ec9be377cd19fe1
 
 
 ---
@@ -74,6 +74,6 @@ De volgende hulpprogramma’s worden uitgevoerd op Windows Desktop en ondersteun
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

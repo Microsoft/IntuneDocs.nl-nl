@@ -4,9 +4,9 @@ description: Dit onderwerp bevat informatie over toepassingen die u kunt maken a
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
-ms.openlocfilehash: a27d1921336a795df5a3c91b36b97846e74cca34
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b22ba1fc4c4599ec2ee47ce39049377a742f0c55
 
 
 ---
@@ -56,12 +56,12 @@ Zie [Gebruiksbeperkingen begrijpen](understanding-usage-restrictions.md) voor me
 ## Verwante onderwerpen
 
 * [IpcDlp-voorbeeld](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld - een voorbeeldtoepassing](how-to-build-your-first-application.md)
+* [IPCHelloWorld - een voorbeeld van de toepassing](how-to-build-your-first-application.md)
 * [De API-beveiligingsmodus instellen](setting-the-api-security-mode-api-mode.md)
 * [Gebruiksbeperkingen begrijpen](understanding-usage-restrictions.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

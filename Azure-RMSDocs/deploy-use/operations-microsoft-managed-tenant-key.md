@@ -1,20 +1,19 @@
 ---
 title: Door Microsoft beheerde levenscyclusbewerkingen voor de tenantsleutel | Azure RMS
-description: 
-keywords: 
+description: Als Microsoft uw tenantsleutel voor Azure Rights Management beheert (standaardinstelling), gebruikt u de volgende secties voor meer informatie over de levenscyclusbewerkingen die relevant zijn voor deze topologie.
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 1eafab8e36c44bfd98ae613d8094d3510f18038e
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
 
 # Door Microsoft beheerde levenscyclusbewerkingen voor de tenantsleutel
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Als Microsoft uw tenantsleutel voor Azure Rights Management beheert (standaardinstelling), gebruikt u de volgende secties voor meer informatie over de levenscyclusbewerkingen die relevant zijn voor deze topologie.
 
@@ -99,6 +98,6 @@ Welke actie u of Microsoft het beste kan ondernemen in het geval van een schendi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: Uw Azure Rights Management-tenantsleutel plannen en implementeren | Azure RMS
-description: 
-keywords: 
+description: Gebruik de informatie in dit artikel om uw Rights Management-tenantsleutel (RMS) voor Azure RMS te plannen en te beheren. In plaats van Microsoft uw tenantsleutel te laten beheren (standaard), wilt u wellicht zelf uw tenantsleutel beheren om te voldoen aan specifieke regels die gelden voor uw organisatie. Uw eigen tenantsleutel beheren wordt ook wel aangeduid als BYOK (Bring Your Own Key).
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
-ms.openlocfilehash: ee7b9b5f251856f102651f1e8f379f7bbacea77e
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 
 ---
 
 # Uw Azure Rights Management-tenantsleutel plannen en implementeren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Gebruik de informatie in dit artikel om uw Rights Management-tenantsleutel (RMS) voor Azure RMS te plannen en te beheren. In plaats van Microsoft uw tenantsleutel te laten beheren (standaard), wilt u wellicht zelf uw tenantsleutel beheren om te voldoen aan specifieke regels die gelden voor uw organisatie.  Uw eigen tenantsleutel beheren wordt ook wel aangeduid als BYOK (Bring Your Own Key).
 
@@ -137,6 +136,6 @@ Nu u een planning hebt gemaakt en u zo nodig de tenantsleutel hebt gegenereerd, 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

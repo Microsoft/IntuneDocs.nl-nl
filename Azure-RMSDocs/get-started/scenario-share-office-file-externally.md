@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: "Scenario: een Office-bestand delen met gebruikers in een andere organisatie | Azure RMS"
-description:
-keywords:
+title: 'Scenario: een Office-bestand delen met gebruikers in een andere organisatie | Azure RMS'
+description: "In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat gebruikers veilig een Office-bestand kunnen verzenden naar personen in een andere organisatie. Het Office-bestand kan bijvoorbeeld een Word-document, Excel-spreadsheet of PowerPoint-presentatie zijn met de prijslijstgegevens voor een partner, een lijst met producten voor een wederverkoper of een lijst met leveringstijdlijnen voor potentiële klanten. Wanneer gebruikers de instructies volgen, wordt het bestand dat is bijgevoegd aan het e-mailbericht beveiligd door Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+
 
 ---
 
 # Scenario: een Office-bestand delen met gebruikers in een andere organisatie
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat gebruikers veilig een Office-bestand kunnen verzenden naar personen in een andere organisatie. Het Office-bestand kan bijvoorbeeld een Word-document, Excel-spreadsheet of PowerPoint-presentatie zijn met de prijslijstgegevens voor een partner, een lijst met producten voor een wederverkoper of een lijst met leveringstijdlijnen voor potentiële klanten. Wanneer gebruikers de instructies volgen, wordt het bestand dat is bijgevoegd aan het e-mailbericht beveiligd door Azure Rights Management.
 
@@ -74,7 +67,8 @@ Kopieer en plak aan de hand van de volgende sjabloon de gebruikersinstructies in
 
     -   In de stappen is het instellen van een vervaldatum niet opgenomen. Als de informatie niet meer mag worden gebruikt na een bepaalde datum, voegt u nog een stap toe om een geschikte vervaldatum in te stellen. Bijvoorbeeld 90 dagen na het verzenden van het e-mailbericht.
 
-    > [!NOTE] Zie [Dialoogvensteropties voor de Rights Management-toepassing voor delen](https://technet.microsoft.com/library/dn574738.aspx) voor meer informatie over elk van de opties die gebruikers kunnen selecteren
+    > [!NOTE]
+    > Zie [Dialoogvensteropties voor de Rights Management-toepassing voor delen](https://technet.microsoft.com/library/dn574738.aspx) voor meer informatie over elk van de opties die gebruikers kunnen selecteren
 
 4.  Breng eventueel andere gewenste wijzigingen aan in deze instructies en verzend de tekst naar deze gebruikers.
 
@@ -159,6 +153,7 @@ Houd met de [portal voor documenttracking](https://track.azurerms.com/) bij of e
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

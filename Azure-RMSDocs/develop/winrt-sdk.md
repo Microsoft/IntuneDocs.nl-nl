@@ -4,9 +4,9 @@ description: "Windows Store-toepassingen kunnen gebruikmaken van de Microsoft Ri
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 0b8e0fb6d872506ac3529bd137286f0e8fa562ee
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 93a804ce53eb4f13a579d7888c289c0b6bec008f
 
 
 ---
@@ -28,7 +28,7 @@ Dit onderwerp leidt u door het instellen van een omgeving voor het maken van uw 
 
 -   [Vereisten](#prerequisites)
 -   [Optioneel](#optional)
--   [Uw ontwikkelomgeving configureren](#configuring-your-development-environment)
+-   [Uw ontwikkelingsomgeving configureren](#configuring-your-development-environment)
 -   [Zie ook](#see-also)
 
 ## Vereisten
@@ -82,10 +82,10 @@ U bent er nu klaar voor om uw eigen nieuwe Windows Store-apps te maken.
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Windows API-referentiemateriaal](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API-verwijzing](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: De Azure Rights Management-connector implementeren | Azure RMS
-description: 
-keywords: 
+description: In deze informatie leest u meer over de Azure Rights Management-connector (RMS) en hoe u deze kunt gebruiken om gegevensbeveiliging te bieden met bestaande on-premises implementaties die gebruikmaken van Microsoft Exchange Server, Microsoft SharePoint Server of bestandsservers waarop Windows Server wordt uitgevoerd en die de mogelijkheid voor infrastructuur voor bestandsclassificatie (FCI) van de bestandsserverbronbeheer gebruiken.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
-ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 
 ---
 
 # De Azure Rights Management-connector implementeren
 
-*Van toepassing op: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Van toepassing op: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 In deze informatie leest u meer over de Azure Rights Management-connector (RMS) en hoe u deze kunt gebruiken om gegevensbeveiliging te bieden met bestaande on-premises implementaties die gebruikmaken van Microsoft Exchange Server, Microsoft SharePoint Server of bestandsservers waarop Windows Server wordt uitgevoerd en die de mogelijkheid voor infrastructuur voor bestandsclassificatie (FCI) van de bestandsserverbronbeheer gebruiken.
 
@@ -84,6 +83,6 @@ Zorg ervoor dat aan de volgende vereisten wordt voldaan voordat u de RMS-connect
 Ga naar [De Azure Rights Management-connector installeren en configureren](install-configure-rms-connector.md).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

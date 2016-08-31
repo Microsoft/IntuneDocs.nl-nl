@@ -1,27 +1,26 @@
 ---
 title: RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server | Azure RMS
-description: 
-keywords: 
+description: Dit artikel bevat instructies en een script om de Rights Management-client (RMS) te gebruiken met het RMS-beveiligingshulpprogramma voor het configureren van Bestandsserverbronbeheer en de infrastructuur voor bestandsclassificatie (FCI).
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
-ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
 
 ---
 
 # RMS-beveiliging met infrastructuur voor bestandsclassificatie (FCI) voor Windows Server
 
-*Van toepassing op: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Van toepassing op: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 Dit artikel bevat instructies en een script om de Rights Management-client (RMS) te gebruiken met het RMS-beveiligingshulpprogramma voor het configureren van Bestandsserverbronbeheer en de infrastructuur voor bestandsclassificatie (FCI).
 
@@ -303,6 +302,6 @@ Nu hoeft u alleen nog maar een nieuwe bestandsbeheertaak te maken die hetzelfde 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

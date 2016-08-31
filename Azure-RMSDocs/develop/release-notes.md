@@ -1,12 +1,11 @@
 ---
 title: Wat is er nieuw en release-opmerkingen | Azure RMS
 description: Geeft een overzicht van belangrijke wijzigingen en functies in deze nieuwe versie van de RMS SDK.
-keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/16/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
@@ -14,8 +13,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: 8de1886adf322439721274e23452af75b4db2e00
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: 141e9c2315fb9fa7b3e8969b9076ab778b37bfe6
 
 
 ---
@@ -233,6 +232,6 @@ In deze sectie wordt informatie verstrekt over de huidige en vorige versies van 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

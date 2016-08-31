@@ -4,9 +4,9 @@ description: Het RMS SDK 2.1-platform stelt ontwikkelaars in staat om toepassing
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
-ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ba0b6c3835bb5e1c67f1df3095e6e5f1f474b977
 
 
 ---
@@ -40,7 +40,7 @@ Voor informatie over de runtime-vereisten voor een bepaald programmeerelement ra
 
 |Onderwerp|Beschrijving|
 |-----|--------|
-|[Overzicht](ad-rms-overview.md)|Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.|
+|[Overzicht](ad-rms-overview.md)|Microsoft Rights Management Services (RMS) is een technologie voor gegevensbeveiliging waarmee u digitale gegevens beveiligt tegen onbevoegd gebruik.|
 |[Aan de slag](getting-started-with-ad-rms-2-0.md)|Het RMS SDK 2.1-platform stelt ontwikkelaars in staat om toepassingen te ontwikkelen die gebruikmaken van de RMS-beveiliging voor informatie.|
 |[Opmerkingen bij de release](release-notes-rtm.md)|Dit onderwerp bevat belangrijke informatie over deze en eerdere versies van de RMS SDK 2.1.|
 |[Opmerkingen voor ontwikkelaars](developer-notes.md)|Dit gedeelte bevat informatie over specifieke hulp voor verschillende belangrijke ontwikkelscenario's.|
@@ -59,6 +59,6 @@ Voor informatie over de runtime-vereisten voor een bepaald programmeerelement ra
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

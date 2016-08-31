@@ -1,17 +1,16 @@
 ---
 title: Een bestaand label wijzigen of aanpassen voor Azure Information Protection | Azure Rights Management
-description: 
-author: cabailey
+description: U kunt de labels die gebruikers op de Information Protection-balk kunnen zien, wijzigen of verfijnen door ze in het Azure Information Protection-beleid te configureren.
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 49f08d4180d74375a31136f7fc0c77437bcf84d5
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: dffc6608c9dba918dc26e40537c960bf554896d8
 
 
 ---
@@ -53,6 +52,6 @@ Gebruik de koppelingen in de sectie [Het beleid van uw organisatie configureren]
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,32 +4,32 @@ description: Een introductiezelfstudie voor het snel uitproberen van Microsoft A
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1db923bf-7d19-4fdd-a413-bfeb58af5e03
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: c828ba3d4156c0115a012d10b375caee0d5e5c10
 
 
 ---
 
 # Zelfstudie om snel aan de slag te gaan met Azure Rights Management
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Ga naar: 
 > [!div class="op_single_selector"]
-- [Stap 1: activeer Azure RMS](tutorial-step1.md)
+- [Stap 1: Azure RMS activeren](tutorial-step1.md)
 - [Stap 2: installeer de RMS-app voor delen](tutorial-step2.md)
 - [Stap 3: e-mail het vertrouwelijke document](tutorial-step3.md)
 - [Stap 4: de ontvanger leest het document](tutorial-step4.md)
-- [Stap 5: houd uw document bij](tutorial-step5.md)
+- [Stap 5: Uw document traceren](tutorial-step5.md)
 
 Gebruik deze zelfstudie om Microsoft Azure Rights Management (ook wel Azure RMS genoemd) snel uit te proberen voor uw organisatie, in slechts 5 stappen die minder dan 15 minuten duren. U gaat de service activeren, een vertrouwelijk document veilig per e-mail verzenden naar iemand in een andere organisatie en daarna bijhouden wanneer dat document wordt geopend. Wanneer het vertrouwelijke document wordt gemaild, wordt het versleuteld en kan het alleen worden gelezen door de persoon aan wie het document is verzonden. Hierbij wordt gebruikgemaakt van de machtigingen die zijn ingesteld door de afzender.
 
@@ -57,6 +57,6 @@ Nu kunt u aan de slag.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

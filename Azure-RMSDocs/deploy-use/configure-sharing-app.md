@@ -1,27 +1,26 @@
 ---
 title: Rights Management-toepassing voor delen&colon; installatie en configuratie voor clients | Azure RMS
-description: 
-keywords: 
+description: "De Rights Management-toepassing voor delen (RMS) is vereist als u op clientcomputers Azure RMS met Office 2010 wilt gebruiken, en wordt aanbevolen voor alle computers en mobiele apparaten die ondersteuning bieden voor Azure RMS. De RMS-toepassing voor delen kan worden geïntegreerd in Office-toepassingen door installatie van een Office-invoegtoepassing, zodat gebruikers bestanden en e-mails eenvoudig rechtstreeks vanuit het lint kunnen beveiligen. De toepassing biedt ook algemene beveiliging voor bestandstypen die niet systeemeigen worden ondersteund door Azure RMS, evenals een site met een documenttrackingsysteem voor gebruikers waarop zij bestanden die ze hebben beveiligd, kunnen bijhouden en intrekken."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: bf7cd8007b5423efaa13849101af5c4688cf0975
 
 
 ---
 
 # Rights Management-toepassing voor delen: installatie en configuratie voor clients
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 De Rights Management-toepassing voor delen (RMS) is vereist als u op clientcomputers Azure RMS met Office 2010 wilt gebruiken, en wordt aanbevolen voor alle computers en mobiele apparaten die ondersteuning bieden voor Azure RMS. De RMS-toepassing voor delen kan worden geïntegreerd in Office-toepassingen door installatie van een Office-invoegtoepassing, zodat gebruikers bestanden en e-mails eenvoudig rechtstreeks vanuit het lint kunnen beveiligen. De toepassing biedt ook algemene beveiliging voor bestandstypen die niet systeemeigen worden ondersteund door Azure RMS, evenals een site met een documenttrackingsysteem voor gebruikers waarop zij bestanden die ze hebben beveiligd, kunnen bijhouden en intrekken.
 
@@ -43,6 +42,6 @@ Als u de RMS-toepassing voor delen voor mobiele platforms wilt installeren, kunt
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

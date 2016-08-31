@@ -1,27 +1,26 @@
 ---
 title: Bewerkingen voor uw Azure Rights Management-tenantsleutel | Azure RMS
-description: 
-keywords: 
+description: "Afhankelijk van uw tenantsleuteltopologie (door Microsoft of de klant beheerd) beschikt u over verschillende niveaus van controle en verantwoordelijkheid voor uw Microsoft Azure Rights Management-tenantsleutel (Azure RMS) nadat deze is geïmplementeerd."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 19cae6be4de2eec65414596976062736af4b63b2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bcd7a03c7eb0c40893bc37d0d5f108c2389dcc3f
 
 
 ---
 
 # Bewerkingen voor uw Azure Rights Management-tenantsleutel
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Afhankelijk van uw tenantsleuteltopologie (door Microsoft of de klant beheerd) beschikt u over verschillende niveaus van controle en verantwoordelijkheid voor uw Microsoft Azure Rights Management-tenantsleutel (Azure RMS) nadat deze is geïmplementeerd.
 
@@ -49,6 +48,6 @@ Wanneer u hebt vastgesteld welke topologie u hebt geïmplementeerd, kiest u een 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

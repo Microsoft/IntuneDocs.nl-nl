@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS-vereisten: Azure AD-map | Azure RMS"
-description:
-keywords:
+title: 'Azure RMS-vereisten: Azure AD-map | Azure RMS'
+description: U moet een Azure AD-map hebben om Azure Rights Management (Azure RMS) te kunnen gebruiken. U meldt zich met het account van uw organisatie voor deze map aan bij de klassieke Azure-portal, waar u onder andere Rights Management-sjablonen kunt configureren en beheren.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 8083c2f7e4cfdbf65748007ae21a48a49a56599f
+
 
 ---
 
 # Azure RMS-vereisten: Azure AD-map
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 U moet een Azure AD-map hebben om Azure Rights Management (Azure RMS) te kunnen gebruiken. U meldt zich met het account van uw organisatie voor deze map aan bij de klassieke Azure-portal, waar u onder andere Rights Management-sjablonen kunt configureren en beheren.
@@ -42,12 +35,13 @@ Zie de volgende resources in de Azure Active Directory-documentatie voor meer in
 
 Als u uw Azure AD-map wilt integreren in uw on-premises AD-forests, raadpleegt u [Uw on-premises identiteiten integreren met Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-> [!NOTE] Als u mobiele apparaten of Mac-computers hebt waarop on-premises verificaties worden uitgevoerd met AD FS of een vergelijkbare verificatieprovider:
+> [!NOTE]
+> Als u mobiele apparaten of Mac-computers hebt waarop on-premises verificaties worden uitgevoerd met AD FS of een vergelijkbare verificatieprovider:
 > 
 > -   U moet AD FS gebruiken op de minimale serverversie van **Windows Server 2012 R2** of een beroep doen op een alternatieve verificatieprovider die het protocol OAuth 2.0 ondersteunt.
 
 ## Azure Multi-Factor Authentication (MFA) en Azure RMS
-Als u Multi-Factor Authentication (MFA) wilt gebruiken met Azure RMS, hebt u ten minste een van deze producten nodig:
+Als u Multi-Factor Authentication (MFA) wilt gebruiken met Azure RMS, hebt u ten minste een van de producten nodig:
 
 -   Office 2013 (minimumversie):
 
@@ -69,7 +63,7 @@ Configureer vervolgens uw MFA-oplossing:
 
         Zie [Wat is Azure Multi-Factor Authentication?](/multi-factor-authentication/multi-factor-authentication) voor meer informatie.
 
--   Voor federatieve tenants (u werkt met on-premises federatieve servers):
+-   Voor federatieve tenants (u werkt met on-premises federatieservers):
 
     -   Configureer uw federatieve servers voor Azure Active Directory of Office 365. Als u bijvoorbeeld AD FS gebruikt, raadpleegt u [Extra verificatiemethoden configureren voor AD FS](https://technet.microsoft.com/library/dn758113.aspx) op TechNet.
 
@@ -80,6 +74,7 @@ Zie [Vereisten voor Azure Rights Management](requirements-azure-rms.md) voor inf
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: De vierde stap van een zelfstudie voor het snel uitproberen van Mic
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 0287f1408c7cd22d0254d135aaa267ec77246e45
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 
 # Stap 4 van de zelfstudie voor snel starten met Azure RMS: uw ontvangers via e-mail vragen het via e-mail verzonden document te openen
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Ga naar: 
@@ -71,7 +71,7 @@ Nu de ontvanger de bijlage heeft geopend en eventueel heeft doorgestuurd aan iem
 |--------------------------------|--------------------------|
 |Volledige instructies voor het weergeven van bestanden die zijn beveiligd door Azure Rights Management|[Bestanden weergeven en gebruiken die zijn beveiligd door Rights Management](../rms-client/sharing-app-view-use-files.md)|
 |Info over het gratis abonnement, RMS voor personen|[RMS voor personen en Windows Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Informatie over de twee versies van het bestand die als bijlagen aan het e-mailbericht zijn toegevoegd|[Wat is het .ppdf-bestand dat automatisch wordt gemaakt?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
+|Informatie over de twee versies van het bestand die als bijlagen aan het e-mailbericht zijn toegevoegd|[Wat is het .ppdf-bestand dat automatisch wordt gemaakt?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
 
 
 >[!div class="step-by-step"]
@@ -79,6 +79,6 @@ Nu de ontvanger de bijlage heeft geopend en eventueel heeft doorgestuurd aan iem
 [Stap 5 »](tutorial-step5.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

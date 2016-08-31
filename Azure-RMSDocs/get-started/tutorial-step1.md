@@ -6,14 +6,14 @@ author: Cabailey
 manager: mbaldwin
 ms.date: 06/29/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fab51fefed8d3a347a52ab7c118bb40b3cc23b37
-ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: c00264e6c8b99d95e8eedf9b91781484611880c3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
 
 # Snel aan de slag met Azure RMS, stap 1: de Rights Management-service activeren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Ga naar: 
@@ -32,7 +32,7 @@ Ga naar:
 - [Stap 2: installeer de RMS-app voor delen](tutorial-step2.md)
 - [Stap 3: e-mail het vertrouwelijke document](tutorial-step3.md)
 - [Stap 4: de ontvanger leest het document](tutorial-step4.md)
-- [Stap 5: houd uw document bij](tutorial-step5.md)
+- [Stap 5: Uw document traceren](tutorial-step5.md)
 
 
 ![Zelfstudie voor snel aan de slag met Azure RMS - stap 1](../media/AzRMS_QuickStartSteps1.PNG)
@@ -100,6 +100,6 @@ Mogelijk wilt u voor een productie-implementatie ook aangepaste sjablonen config
 [Stap 2 »](tutorial-step2.md)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

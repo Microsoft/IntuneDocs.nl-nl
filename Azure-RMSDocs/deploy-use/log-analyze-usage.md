@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management-gebruik analyseren en vastleggen in een logboek | Azure RMS
-description: 
-keywords: 
+description: Gebruik de informatie in dit onderwerp om te zien hoe u logboekregistratie van het gebruik met Azure Rights Management (Azure RMS) kunt gebruiken. De Azure Rights Management-service kan elke aanvraag die voor uw organisatie wordt uitgevoerd, registreren in een logboek, inclusief aanvragen van gebruikers, acties die worden uitgevoerd door Rights Management-beheerders in uw organisatie en acties die ter ondersteuning van uw Azure Rights Management-implementatie worden uitgevoerd door Microsoft-operators.
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 28fed61b674112d2ebeb30a15a6f6217647e0b5f
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: 868656f84f39db20f0aee8d148b00af15849fda5
 
 
 ---
 
 # Azure Rights Management-gebruik analyseren en vastleggen in een logboek
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Gebruik de informatie in dit onderwerp om te zien hoe u logboekregistratie van het gebruik met Azure Rights Management (Azure RMS) kunt gebruiken. De Azure Rights Management-service kan elke aanvraag die voor uw organisatie wordt uitgevoerd, registreren in een logboek, inclusief aanvragen van gebruikers, acties die worden uitgevoerd door Rights Management-beheerders in uw organisatie en acties die ter ondersteuning van uw Azure Rights Management-implementatie worden uitgevoerd door Microsoft-operators.
 
@@ -241,6 +240,6 @@ Zie [Administering Azure Rights Management by Using Windows PowerShell](administ
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

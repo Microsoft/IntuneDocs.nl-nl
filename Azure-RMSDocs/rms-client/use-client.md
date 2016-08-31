@@ -1,12 +1,11 @@
 ---
 title: Rights Management-client (RMS) | Azure RMS
-description: 
-keywords: 
+description: "Microsoft Rights Management Services is een client/serveroplossing, waarbij de RMS-client is geïntegreerd met toepassingen die u uitvoert op computers en mobiele apparaten en de RMS-service zich in de cloud (Azure RMS) of op een lokale server (AD RMS) bevindt. In sommige toepassingen, zoals Office-toepassingen, de RMS-toepassing voor delen en toepassingen met RMS-functionaliteit van softwareleveranciers, wordt de RMS-client automatisch geïnstalleerd. De RMS-client kan echter ook handmatig worden geïnstalleerd. Op deze manier wordt ondersteuning geboden voor scenario's zoals ontwikkelaars die RMS-beveiliging willen integreren in line-of-business-toepassingen en beheerders of hoofdgebruikers die bestanden bulksgewijs willen beveiligen met behulp van het RMS-beveiligingshulpprogramma."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
@@ -14,15 +13,15 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c21202793dca90edda943082fcd718bdf7397ca
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 234095a733633462ba1a221a5ac6e1e1d47df12b
 
 
 ---
 
 # Rights Management-client (RMS)
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
 
 Microsoft Rights Management Services is een client/serveroplossing, waarbij de RMS-client is geïntegreerd met toepassingen die u uitvoert op computers en mobiele apparaten en de RMS-service zich in de cloud (Azure RMS) of op een lokale server (AD RMS) bevindt. In sommige toepassingen, zoals Office-toepassingen, de RMS-toepassing voor delen en toepassingen met RMS-functionaliteit van softwareleveranciers, wordt de RMS-client automatisch geïnstalleerd. De RMS-client kan echter ook handmatig worden geïnstalleerd. Op deze manier wordt ondersteuning geboden voor scenario's zoals ontwikkelaars die RMS-beveiliging willen integreren in line-of-business-toepassingen en beheerders of hoofdgebruikers die bestanden bulksgewijs willen beveiligen met behulp van het RMS-beveiligingshulpprogramma.
 
@@ -44,6 +43,6 @@ Voor aanvullende bronnen, met inbegrip van community- en ondersteuningsopties, g
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

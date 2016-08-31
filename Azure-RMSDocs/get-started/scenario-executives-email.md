@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: "Scenario: leidinggevenden wisselen veilig vertrouwelijke informatie uit | Azure RMS"
-description:
-keywords:
+title: 'Scenario: leidinggevenden wisselen veilig vertrouwelijke informatie uit | Azure RMS'
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat leidinggevenden veilig e-mailberichten en bijlagen met elkaar kunnen uitwisselen en de toegang tot de leidinggevenden automatisch wordt beperkt door beleidsregels zonder dat daarvoor speciale actie hoeft te worden ondernomen. De e-mailberichten en bijlagen worden automatisch door Azure Rights Management beveiligd.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3c15175f26c5e3bc0ff824c284beedc639cf9309
+
 
 ---
 
 # Scenario: leidinggevenden wisselen veilig vertrouwelijke informatie uit
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat leidinggevenden veilig e-mailberichten en bijlagen met elkaar kunnen uitwisselen en de toegang tot de leidinggevenden automatisch wordt beperkt door beleidsregels zonder dat daarvoor speciale actie hoeft te worden ondernomen. De e-mailberichten en bijlagen worden automatisch door Azure Rights Management beveiligd.
 
@@ -49,14 +42,14 @@ Zorg ervoor dat aan de volgende vereisten is voldaan en voer vervolgens de instr
 ## Vereisten voor dit scenario
 De instructies voor dit scenario gelden alleen als aan de volgende voorwaarden is voldaan:
 
-|Vereiste|Als u meer informatie wilt|
+|Vereiste|Als u meer informatie nodig hebt|
 |---------------|--------------------------------|
 |U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid:<br /><br />- Een e-mailgroep met de naam **Leidinggevenden** en alle leidinggevenden zijn lid van deze groep<br /><br />- Een e-mailgroep met de naam **RMS-beheerders** en alle beheerders die Azure RMS configureren zijn lid van deze groep|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Uw Azure Rights Management-tenantsleutel wordt beheerd door Microsoft. U maakt geen gebruik van BYOK|[Uw Azure Rights Management-tenantsleutel plannen en implementeren](https://technet.microsoft.com/library/dn440580.aspx)|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
 |Een van de volgende configuraties:<br /><br />- Exchange Online is ingeschakeld voor Azure Rights Management<br /><br />- De RMS-connector is geïnstalleerd en geconfigureerd voor Exchange On-Premises|Voor Exchange Online: zie de sectie **Exchange Online: IRM-configuratie** in [Toepassingen configureren voor Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Voor Exchange on-premises: [De Azure Rights Management-connector implementeren](https://technet.microsoft.com/library/dn375964.aspx)|
 |U hebt een aangepaste sjabloon geconfigureerd, zoals hieronder wordt beschreven|[Aangepaste sjablonen configureren voor Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|U hebt een transportbeveiligingsregel geconfigureerd voor IRM, zoals in dit artikel wordt beschreven|Voor Exchange Online: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Voor Exchange 2013: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />Voor Exchange 2010: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|U hebt een transportbeveiligingsregel geconfigureerd voor IRM, zoals in dit artikel wordt beschreven|Voor Exchange Online: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Voor Exchange 2013: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />Voor Exchange 2010: [Een transportbeveiligingsregel maken](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
 ### De aangepaste sjabloon voor leidinggevenden configureren
 
@@ -138,6 +131,7 @@ Wanneer u vertrouwelijke bedrijfsinformatie verzendt naar een andere leidinggeve
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

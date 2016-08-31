@@ -1,27 +1,26 @@
 ---
 title: 'Scenario: een e-mailbericht met vertrouwelijke bedrijfsinformatie verzenden | Azure RMS'
-description: 
-keywords: 
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat gebruikers in de organisatie veilig e-mailberichten kunnen verzenden die buiten de organisatie niet kunnen worden gelezen. Bijvoorbeeld als iemand het e-mailbericht doorstuurt naar een persoon in een andere organisatie of naar een persoonlijk e-mailaccount. De e-mailberichten en eventuele bijlagen worden beveiligd door Azure Rights Management en een sjabloon die door de gebruikers wordt geselecteerd in de e-mailclient.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: b6f3b06485dda81be2a36035fea7477f4061a8e9
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
 
 
 ---
 
 # Scenario: een e-mailbericht met vertrouwelijke bedrijfsinformatie verzenden
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat gebruikers in de organisatie veilig e-mailberichten kunnen verzenden die buiten de organisatie niet kunnen worden gelezen. Bijvoorbeeld als iemand het e-mailbericht doorstuurt naar een persoon in een andere organisatie of naar een persoonlijk e-mailaccount. De e-mailberichten en eventuele bijlagen worden beveiligd door Azure Rights Management en een sjabloon die door de gebruikers wordt geselecteerd in de e-mailclient.
 
@@ -158,6 +157,6 @@ Personen naar wie u het e-mailbericht verzendt, kunnen dit doorsturen naar ander
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

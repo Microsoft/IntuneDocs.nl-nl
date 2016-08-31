@@ -4,9 +4,9 @@ description: Dit onderwerp bevat instructies voor het maken van een voorbeeldtoe
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
-ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
 
 
 ---
 ** Deze SDK-inhoud is niet actueel. U kunt tijdelijk de [huidige versie](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) van de documentatie op MSDN vinden. **
-# IPCHelloWorld - een voorbeeldtoepassing
+# IPCHelloWorld - een voorbeeld van de toepassing
 
 Dit onderwerp bevat instructies voor het maken van een voorbeeldtoepassing met rechten.
 
@@ -219,6 +219,6 @@ U moet alle toegewezen resources vrijgeven om het proces te voltooien.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
