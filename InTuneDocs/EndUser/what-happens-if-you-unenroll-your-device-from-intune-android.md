@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 140ccb4626f04b2397c63186a38310e74720f1b2
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 1260ef2cf63563e492831709656eea8ec45eef22
 
 
 ---
@@ -35,7 +35,7 @@ Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, gebe
 
 -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
 
-Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgehaald en u de registratie van uw apparaat ongedaan maakt, wordt uw apparaat niet meer in de bedrijfsportal weergegeven.
+Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgehaald en u de inschrijving van uw apparaat ongedaan maakt, wordt uw apparaat niet meer in de bedrijfsportal weergegeven.
 
 Zie [De registratie van uw apparaat bij Intune ongedaan maken met de bedrijfsportal-app](unenroll-your-device-from-intune-android.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
@@ -47,6 +47,6 @@ Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwe
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

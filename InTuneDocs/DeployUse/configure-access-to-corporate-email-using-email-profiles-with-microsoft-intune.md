@@ -4,7 +4,7 @@ description: Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegan
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/021/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,60 +13,61 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
+ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
+ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
 
 
 ---
 
 # De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Microsoft Intune
-Veel mobiele platforms hebben een *systeemeigen* e-mailclient die wordt meegeleverd als onderdeel van het besturingssysteem.  Sommige van deze clients kunnen worden geconfigureerd aan de hand van e-mailprofielen, zoals in dit onderwerp wordt beschreven.
+Veel mobiele platforms hebben een systeemeigen e-mailclient die wordt meegeleverd als onderdeel van het besturingssysteem. Sommige van deze clients kunnen worden ingesteld met behulp van e-mailprofielen, zoals in dit onderwerp wordt beschreven.
 
-Als u extra gegevensverlies wilt voorkomen (DLP), kiest u [Voorwaardelijke toegang](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), waarmee de toegang tot het postvak van een gebruiker voor een e-mailclient wordt beheerd, inclusief systeemeigen e-mailclients.
+De e-mailprofielinstellingen kunnen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten. Op de ondersteunde platforms kunnen de systeemeigen e-mailclients met Microsoft Intune zo worden ingesteld dat gebruikers op hun eigen apparaten toegang kunnen krijgen tot hun zakelijke e-mail zonder dat ze extra instellingen hoeven te configureren.
 
-Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten. De meeste mobiele platforms hebben een *systeemeigen* e-mailclient die wordt meegeleverd als onderdeel van het besturingssysteem.  Op de ondersteunde platforms kunnen de systeemeigen e-mailclients door Microsoft Intune worden geconfigureerd, zodat gebruikers op hun eigen apparaten toegang krijgen tot hun zakelijke e-mail zonder een aanvullende installatie te hoeven doorlopen.  
+Als u extra maatregelen wilt nemen om gegevensverlies te voorkomen, gebruikt u [Voorwaardelijke toegang](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), waarmee de toegang tot het postvak van de gebruiker wordt beheerd voor alle e-mailclients, inclusief de systeemeigen e-mailclients.
 
-IT-beheerders of gebruikers kunnen er ook voor kiezen om alternatieve e-mailclients te installeren, zoals Microsoft Outlook voor Android of iOS.  Deze e-mailclients bieden mogelijk geen ondersteuning voor e-mailprofielen en kunnen niet worden geconfigureerd met Microsoft Intune-e-mailprofielen.  
+IT-beheerders of gebruikers kunnen er ook voor kiezen om alternatieve e-mailclients te installeren (zoals Microsoft Outlook voor Android of iOS). Deze e-mailclients bieden mogelijk geen ondersteuning voor e-mailprofielen en kunnen niet worden ingesteld met behulp van Intune-e-mailprofielen.  
 
 U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren op de volgende apparaattypen:
 -   Windows Phone 8 en hoger
--   Windows 10 Desktop en hoger en Windows 10 Mobile en hoger
+-   Windows 10 (voor de desktop), Windows 10 Mobile en hoger
 -   iOS 7.1 en hoger
 -   Samsung KNOX Standard (4.0 of hoger)
 
-
-Naast het e-mailaccount op het apparaat kunt u ook synchronisatie-instellingen configureren, zoals de hoeveelheid e-mail die u wilt synchroniseren, en afhankelijk van het apparaattype, de inhoudstypen die u wilt synchroniseren.
+U kunt een e-mailaccount instellen op het apparaat en daarnaast ook bepalen hoeveel e-mail er moet worden gesynchroniseerd en, afhankelijk van het apparaattype, welke inhoudstypen uw wilt synchroniseren.
 >[!NOTE]
 >
->Als de gebruiker een e-mailprofiel heeft geïnstalleerd voorafgaand aan het inrichten van een profiel door Intune, is het resultaat van de implementatie van het Intune-e-mailprofiel afhankelijk van het apparaatplatform:
+>Als de gebruiker al een e-mailprofiel heeft geïnstalleerd voordat er een profiel wordt geïnstalleerd door Intune, is het resultaat van de implementatie van het Intune-e-mailprofiel afhankelijk van het apparaatplatform:
 
->-**iOS**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Het dubbele e-mailprofiel dat is gemaakt door de gebruiker blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en zich vervolgens inschrijven. In de bedrijfsportal ziet de gebruiker dat deze niet voldoet aan de voorwaarden wegens het handmatig geconfigureerde e-mailprofiel. De gebruiker wordt gevraagd dat profiel te verwijderen. Het e-mailprofiel moet worden verwijderd zodat het Intune-profiel kan worden geïmplementeerd. Als u dit probleem wilt voorkomen, vertelt u gebruikers dat zij moeten registreren voordat ze een e-mailprofiel installeren, zodat Intune het profiel kan implementeren.
+[opmerking]: <> Een passieve constructie in de volgende drie alinea’s is nodig tot het proces van duplicaatdetectie duidelijk is gemaakt door de PM.
 
->-**Windows**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
+>**iOS**: het e-mailprofiel bestaat al en dit duplicaat is gedetecteerd op basis van hostnaam en e-mailadres. Het duplicaat van het e-mailprofiel dat is gemaakt door de gebruiker, blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem, omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en het apparaat vervolgens inschrijven. De bedrijfsportal deelt de gebruiker mee dat deze niet voldoet aan de eisen vanwege het handmatig geconfigureerde e-mailprofiel en vraagt de gebruiker dit profiel te verwijderen. De gebruiker moet het e-mailprofiel verwijderen, zodat het Intune-profiel kan worden geïnstalleerd. Als u dit probleem wilt voorkomen, vertelt u gebruikers dat ze het apparaat eerst moeten inschrijven voordat ze een e-mailprofiel installeren, zodat Intune het profiel kan installeren.
 
->-**Samsung KNOX**: Intune identificeert een dubbele e-mailaccount op basis van het e-mailadres, en overschrijft het met het Intune-profiel. Als de gebruiker dat account configureert, wordt het opnieuw overschreven door het Intune-profiel. Dit kan leiden tot enige verwarring bij de gebruiker waarvan de accountconfiguratie word overschreven.
+>**Windows**: er bestaat al een e-mailprofiel en dit duplicaat is gedetecteerd op basis van hostnaam en e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
 
->Omdat Samsung KNOX niet de hostnaam gebruikt om het profiel te identificeren, wordt geadviseerd om niet meerdere e-mailprofielen te implementeren naar hetzelfde e-mailadres op verschillende hosts, aangezien die elkaar zullen overschrijven.
-    
+>**Samsung KNOX**: er bestaat al een e-mailprofiel en dit duplicaat is gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel. Als de gebruiker dat account instelt, wordt het e-mailprofiel opnieuw overschreven door het Intune-profiel. Houd er rekening mee dat dit tot verwarring kan leiden bij de gebruiker.
+
+>Omdat Samsung KNOX geen hostnaam gebruikt om een profiel te identificeren, wordt afgeraden om voor hetzelfde e-mailadres meerdere e-mailprofielen te maken op verschillende hosts, aangezien deze profielen elkaar overschrijven.
+
 
 ## Beveiligde e-mailprofielen
-U kunt e-mailprofielen beveiligd met een van de twee methoden:
+U kunt e-mailprofielen op twee manieren beveiligen: met een certificaat of met een wachtwoord.
 
 ### Certificaten
-Wanneer u het e-mailprofiel maakt, kiest u een certificaatprofiel dat u eerder hebt gemaakt in Intune. Dit wordt het identiteitscertificaat genoemd en wordt gebruikt voor verificatie aan de hand van een vertrouwd-certificaatprofiel (of een basiscertificaat) om te bepalen of het apparaat van de gebruiker verbinding mag maken. Het vertrouwde certificaat wordt geïmplementeerd op de computer die de e-mailverbinding verifieert, meestal de systeemeigen e-mailserver.
+Wanneer u het e-mailprofiel maakt, kiest u een certificaatprofiel dat u eerder hebt gemaakt in Intune. Dit wordt het identiteitscertificaat genoemd en wordt gebruikt voor verificatie aan de hand van een vertrouwd-certificaatprofiel (of basiscertificaat) om te bepalen of het apparaat van de gebruiker verbinding mag maken. Het vertrouwde certificaat wordt geïmplementeerd op de computer die de e-mailverbinding verifieert, meestal de systeemeigen e-mailserver.
 
 Zie [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruiken en maken van certificaatprofielen in Intune.
 
 ### Gebruikersnaam en wachtwoord
 De gebruiker wordt geverifieerd op de systeemeigen mailserver door zijn gebruikersnaam en wachtwoord op te geven.
 
-Het wachtwoord is niet opgenomen in het e-mailprofiel. De gebruiker moet dit opgeven wanneer hij de e-mailverbinding tot stand brengt.
+Het wachtwoord is niet opgenomen in het e-mailprofiel, dus de gebruiker moet dit opgeven wanneer deze de e-mailverbinding tot stand brengt.
 
 ### Een e-mailprofiel maken
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Beleid toevoegen**.
+1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies**Beleid** &gt; **Beleid toevoegen**.
 
-2.  Configureer een van de volgende beleidstypen:
+2.  Stel een van de volgende beleidstypen in:
 
     -   **E-mailprofiel voor Samsung KNOX Standard (4.0 of hoger)**
 
@@ -78,27 +79,27 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel. De gebruiker moet dit opg
 
     U kunt alleen een aangepast e-mailprofielbeleid maken en implementeren. Aanbevolen instellingen zijn niet beschikbaar.
 
-3.  Gebruik de volgende tabel als referentie voor de configuratie van e-mailprofielinstellingen:
-    |Naam van de instelling|Meer informatie|
-    |----------------|-----------------------------------------------------------------------------|
+3.  Gebruik de volgende tabel als referentie voor het configureren van e-mailprofielinstellingen:
+
+|Naam van de instelling | Meer informatie|
+| ----------- | --------------- |
     |**Naam**|Unieke naam van het e-mailprofiel.|
-    |**Beschrijving**|Een beschrijving op basis waarvan u het profiel kunt identificeren.|
-    |**Host**|De hostnaam van de bedrijfsserver die als host fungeert voor uw systeemeigen e-mailservice.|
+    |**Beschrijving**|Een beschrijving die u helpt om dit profiel te herkennen.|
+    |**Host**|De hostnaam van uw bedrijfsserver die als host fungeert voor uw systeemeigen e-mailservice.|
     |**Accountnaam**|De naam van het e-mailaccount die wordt weergegeven op de apparaten van de gebruikers.|
     |**Gebruikersnaam**|De manier waarop de gebruikersnaam voor het e-mailaccount wordt verkregen. Selecteer **Gebruikersnaam** voor een on-premises Exchange-server of selecteer **User Principal Name** voor Office 365.|
     |**E-mailadres**|Hoe het e-mailadres voor de gebruiker op elk apparaat wordt gegenereerd. Selecteer **Primaire SMTP-adres** om het primaire SMTP-adres te gebruiken voor aanmelding bij Exchange of gebruik **User Principal Name** om de volledige User Principal Name te gebruiken als het e-mailadres.|
     |**Verificatiemethode** (Samsung KNOX en iOS)|Selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel.|
-    |**Selecteer een clientcertificaat voor clientverificatie (identiteitscertificaat)** (Samsung KNOX en iOS)|Selecteer het SCEP-clientcertificaat dat u eerder hebt gemaakt en dat wordt gebruikt voor verificatie van de Exchange-verbinding. Zie [Custom configurations for VPN profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruik van certificaatprofielen in Intune.<br /><br />Deze optie wordt alleen weergegeven als **Certificaten** is geselecteerd als verificatiemethode.|
+    |**Selecteer een clientcertificaat voor clientverificatie (identiteitscertificaat)** (Samsung KNOX en iOS)|Selecteer het SCEP-clientcertificaat dat u eerder hebt gemaakt en dat wordt gebruikt voor verificatie van de Exchange-verbinding. Zie [Custom configurations for VPN profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruik van certificaatprofielen in Intune. Deze optie wordt alleen weergegeven als **Certificaten** is geselecteerd als verificatiemethode.|
     |**S/MIME gebruiken** (Samsung KNOX en iOS)|Verzend uitgaande e-mail met S/MIME-versleuteling.|
-    |**Handtekeningcertificaat** (Samsung KNOX en iOS)|Selecteer het handtekeningcertificaat dat wordt gebruikt om uitgaande e-mail te ondertekenen.<br /><br />Deze optie wordt alleen weergegeven als u het selectievakje bij **S/MIME gebruiken** hebt ingeschakeld.|
-    |**Aantal dagen e-mail voor synchronisatie**|De periode waarvoor u e-mail wilt synchroniseren, of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.|
-    |**Synchronisatieschema** (Samsung KNOX, Windows Phone 8 en hoger, Windows 10)|Selecteer het schema op basis waarvan apparaten gegevens synchroniseren met de Exchange-server. Selecteer **Wanneer berichten binnenkomen** als u gegevens meteen wilt synchroniseren wanneer ze worden ontvangen of selecteer **Handmatig** als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.|
-    |**SSL gebruiken**|Gebruik Secure Sockets Layer-communicatie (SSL) wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server.<br /><br />Voor apparaten met Samsung KNOX 4.0 of hoger moet u het SSL-certificaat van uw Exchange-server exporteren en als Android Trusted Certificate Profile implementeren in Intune. Intune biedt geen ondersteuning voor toegang tot dit certificaat als het op een andere manier is geïnstalleerd op de Exchange-server.|
+    |**Handtekeningcertificaat** (Samsung KNOX en iOS)|Selecteer het handtekeningcertificaat dat wordt gebruikt om uitgaande e-mail te ondertekenen. Deze optie wordt alleen weergegeven als u het selectievakje bij **S/MIME gebruiken** hebt ingeschakeld.|
+    |**Aantal dagen e-mail voor synchronisatie**|Geef op voor hoeveel dagen u e-mail wilt synchroniseren of selecteer **Onbeperkt** om alle beschikbare e-mails te synchroniseren.|
+    |**Synchronisatieschema** (Samsung KNOX, Windows Phone 8 en hoger, Windows 10)|Selecteer het schema op basis waarvan apparaten gegevens synchroniseren met de Exchange-server. U kunt ook **Wanneer berichten binnenkomen** selecteren als u wilt dat de berichten meteen worden gesynchroniseerd wanneer ze binnenkomen of **Handmatig** selecteren als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.|
+    |**SSL gebruiken**|Gebruik SSL-communicatie (Secure Sockets Layer) wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server. Voor apparaten met Samsung KNOX 4.0 of hoger moet u het SSL-certificaat van uw Exchange-server exporteren en als Android Trusted Certificate Profile implementeren in Intune. Intune biedt geen ondersteuning voor toegang tot dit certificaat als het op een andere manier is geïnstalleerd op de Exchange-server.|
     |**Inhoudtype voor synchronisatie**|Selecteer de inhoudstypen die u wilt synchroniseren met apparaten.|
-    |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mail-app (bijvoorbeeld om bestanden aan e-mail toe te voegen).|
-
+    |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mail-app, om bijvoorbeeld bestanden als bijlagen aan e-mail toe te voegen.|
     > [!IMPORTANT]
-    > Als u een e-mailprofiel hebt geïmplementeerd en vervolgens de waarde van **Host** of **E-mailadres** wilt wijzigen, moet u het bestaande e-mailprofiel verwijderen en een nieuw e-mailprofiel met de vereiste waarden maken.
+    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
 
 4.  Wanneer u klaar bent, klikt u op **Beleid opslaan**.
 
@@ -106,13 +107,13 @@ Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van 
 
 ## Het beleid implementeren
 
-1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en klik vervolgens op **Implementatie beheren**.
+1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
+    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en kies vervolgens **Toevoegen**&gt; **OK**.
 
-    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
+    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: kies **Annuleren**.
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
 
@@ -121,6 +122,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: Gebruik Intune om beleid te maken en implementeren waarmee instelli
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waa
 
 Andere wijzigingen zoals het wijzigen van de contactgegevens in de bedrijfsportal zorgen niet voor een onmiddellijke melding aan apparaten.
 
-> [!TIP]
-> Wanneer een beleid met instellingen wordt geïmplementeerd op een Android-apparaat, krijgt de gebruiker een melding om actie te ondernemen om te voldoen aan het beleid. De nieuwe instellingen worden pas van kracht nadat de gebruiker de vereiste actie heeft ondernomen of het apparaat opnieuw is opgestart.
-
 ### Als er meerdere beleidsregels worden geïmplementeerd voor dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
 Wanneer er twee of meer sets beleidsregels naar dezelfde gebruiker of hetzelfde apparaat worden geïmplementeerd, vindt de beoordeling van welke instelling wordt toegepast plaats op het niveau van de individuele instelling:
 
@@ -215,6 +212,6 @@ Zie [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/trouble
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: Inzicht in uw apparaten met inventarisaties | Microsoft Intune
-description: Intune gebruiken voor het weergeven van informatie over de hardware van de apparaten die u beheert.
+description: Gebruik Intune voor het weergeven van informatie over de hardware van de apparaten die u beheert.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 Met Microsoft Intune kunt u de inventarisatie bekijken van de ingeschreven apparaten en Windows-pc's waarop de Intune-clientsoftware wordt uitgevoerd.
 
 ## Wat wordt er verzameld bij ingeschreven apparaten?
-Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert u de [rapporten voor de inventaris van mobiele apparaten](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van ingeschreven apparaten verzameld:
+Als u de inventarisatiegegevens wilt bekijken die door mobiele apparaten zijn verzameld, voert u de [Inventarisrapporten voor mobiele apparaten](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van ingeschreven apparaten verzameld:
 
 |Eigenschap|Verzameld door|
 |------------|-----------------------|
@@ -45,7 +45,7 @@ Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert
 |**Serienummer**|iOS-, Mac OS X-, Android-, Windows 8.1- en Windows 10-apparaten|
 |**Totale opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10-apparaten|
 |**Beschikbare opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10-apparaten|
-|**Telefoonnummer**<br>Telefoons die zijn aangemerkt als bedrijfseigendom, worden aangeduid met hun volledige telefoonnummer, bijvoorbeeld wanneer u een inventarisrapport voor mobiele apparaten uitvoert. Telefoonnummers voor BYOD-apparaten worden gemaskeerd met &#42;, waarbij alleen de laatste 4 cijfers worden weergegeven.|iOS-, Android- en Windows Phone-apparaten|
+|**Telefoonnummer**<br>Telefoons die zijn aangemerkt als bedrijfseigendom, worden aangeduid met hun volledige telefoonnummer (bijvoorbeeld wanneer u een inventarisrapport voor mobiele apparaten uitvoert). Telefoonnummers voor BYOD-apparaten worden gemaskeerd met &#42;, waarbij alleen de laatste vier cijfers worden weergegeven.|iOS-, Android- en Windows Phone-apparaten|
 |**IMEI**|Exchange Active Sync-, iOS-, Android- en Windows Phone-apparaten|
 |**MEID**<br>Mobile Equipment Identifier|Alleen iOS-apparaten|
 |**MAC-adres Wi-Fi**|Alle apparaten, met uitzondering van Exchange Active Sync|
@@ -63,7 +63,7 @@ Als u de inventaris wilt bekijken die voor mobiele apparaten is verzameld, voert
 > [!IMPORTANT]
 > Deze sectie geldt alleen voor Windows-computers waarop de Intune Windows- clientsoftware wordt uitgevoerd.
 
-Als u de inventaris wilt weergeven die voor Windows-pc’s is verzameld, voert u de [rapporten voor de inventaris van computers](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van Windows-pc's verzameld:
+Als u de inventarisatiegegevens wilt weergeven die voor Windows-pc’s worden verzameld, voert u de [Computerinventarisrapporten](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van Windows-pc's verzameld:
 
 -   **Naam**
 
@@ -114,6 +114,6 @@ Als u de inventaris wilt weergeven die voor Windows-pc’s is verzameld, voert u
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

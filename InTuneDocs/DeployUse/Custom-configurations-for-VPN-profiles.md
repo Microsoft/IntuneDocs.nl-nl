@@ -13,8 +13,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 ## Een aangepaste configuratie maken
 Met aangepaste configuraties kunt u VPN-profielen maken in Intune. Ga als volgt te werk om een aangepaste configuratie te maken:
 
-   1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid** -> **Beleid toevoegen** -> *<Expand platform>* -> **Aangepaste configuratie** -> **Beleid maken**.
+   1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid** > **Beleid toevoegen** > *<Expand platform>* > **Aangepaste configuratie** > **Beleid maken**.
    2. Geef een naam voor het beleid op.
-   3. Klik voor elke URI-instelling op **Toevoegen** en geef de gevraagde informatie op. Hier volgt een voorbeeld:
+   3. Kies voor elke URI-instelling **Toevoegen** en geef de gevraagde informatie op. Hier volgt een voorbeeld:
 
    ![Dialoogvenster met aangepaste configuratie van een VPN-profiel](./media/Intune_Add_VPN_URI.png)
 
-   4.  Nadat u alle URI-instellingen hebt ingevoerd, klikt u op **Beleid opslaan** en vervolgens implementeert u het beleid.
+   4.  Nadat u alle URI-instellingen hebt ingevoerd, kiest u **Beleid opslaan** en implementeert u vervolgens het beleid.
 
 ## Een configuratiebeleid implementeren
 
-1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en klik vervolgens op **Implementatie beheren**.
+1.  Kies in de werkruimte **Beleid** het beleid dat u wilt implementeren en klik vervolgens op **Implementatie beheren**.
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
+    -   **Het beleid implementeren**: kies een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
 
-    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
+    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: kies **Annuleren**.
 
-Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
+Wanneer u een geïmplementeerd beleid kiest, vindt u onder in de lijst met beleidsregels meer informatie over de implementatie.
 
 ##Voorbeeld van URI-instellingen voor een aangepaste configuratie voor een VPN-profiel
-Nu volgen enkele voorbeelden van vermeldingen voor URI-waarden om een aangepaste configuratie te maken voor een VPN-verbinding in een fictief bedrijf met de naam Contoso. Zie [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) voor meer informatie, zoals het gegevenstype voor elke vermelding
+Nu volgen enkele voorbeelden van vermeldingen voor URI-waarden om een aangepaste configuratie te maken voor een VPN-verbinding in een fictief bedrijf met de naam Contoso. Zie [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) voor meer informatie, zoals het gegevenstype voor elke vermelding.
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,7 +83,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Voor vragen over hoe deze instellingen moeten worden gebruikt of voor meer informatie over wat ze doen, raadpleegt u de CSP-documentatie: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+Voor vragen over hoe deze instellingen moeten worden gebruikt of voor meer informatie over wat ze doen, raadpleegt u de CSP-documentatie (Configuration Service Provider): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## URI-instellingen voor VPN per Android-app op PulseSecure
 ### AANGEPASTE URI VOOR PAKKETLIJST
@@ -112,6 +112,6 @@ Voorbeelden:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

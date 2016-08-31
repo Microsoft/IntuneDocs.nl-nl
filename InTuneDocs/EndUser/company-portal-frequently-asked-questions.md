@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: fcc0395815499f3a46dafa55c0c74834e37bed97
 
 
 ---
@@ -96,10 +96,10 @@ Kies een van de volgende koppelingen om te zien hoe u uw apparaat opnieuw instel
 Als u een apparaat wilt bekijken, moet dit zijn toegevoegd aan de bedrijfsportal. Volg de instructies van uw beheerder om naar de bedrijfsportal te gaan en voer de stappen uit voor uw apparaat. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
 
 ## Neem contact op met de IT-beheerder als u vragen hebt.
-Neem contact op met de IT-beheerder als u hulp nodig hebt. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder als u hulp nodig hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

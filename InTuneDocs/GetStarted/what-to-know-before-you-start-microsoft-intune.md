@@ -2,7 +2,7 @@
 title: Wat u moet weten voordat u met Microsoft Intune aan de slag gaat | Microsoft Intune
 description: Pagina met koppelingen naar de Intune-voorwaarden en vereisten
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 06/08/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: f68c53883a05263305f4cc9860ffc0bd7ee336f1
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: cd9c0a27a9cded6049b472a0327349a9c847ea35
 
 
 ---
@@ -37,6 +37,6 @@ Lees eventueel ook het gedeelte [Beheermogelijkheden voor mobiele apparaten](/in
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

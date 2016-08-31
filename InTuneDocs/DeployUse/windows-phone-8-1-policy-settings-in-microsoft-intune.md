@@ -13,15 +13,15 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
-ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
+ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
+ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
 
 
 ---
 
 # Beleidsinstellingen voor Windows Phone 8.1 in Microsoft Intune
 
-Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
+Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
 ## Algemene configuratie-instellingen
 
@@ -29,24 +29,24 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 
 -   **Beveiligingsinstellingen voor mobiele apparaten** : hier kiest u uit een lijst met vooraf gedefinieerde instellingen waarmee u een bereik aan functies en functionaliteiten op het apparaat kunt beheren.
 
--   **Compatibele en niet-compatibele apps**: hiermee geeft u een lijst op met apps die compatibel of niet compatibel zijn in uw bedrijf. Windows Phone-apparaten kunnen de installatie van deze apps blokkeren of toestaan.
+-   **Compatibele en niet-compatibele apps**: hier kunt u een lijst opgeven met apps die compatibel of niet compatibel zijn in uw bedrijf. Windows Phone-apparaten kunnen de installatie van deze apps blokkeren of toestaan.
 
 ### Toepasselijkheidsinstellingen
 
 |Naam van de instelling|Details|
 |----------------|----------------------------------|
-|**Alle configuraties toepassen op Windows 10**|Hiermee kunt de instellingen in dit beleid naast Windows Phone 8.1-apparaten toepassen op Windows 10 Mobile-apparaten.|
+|**Alle configuraties toepassen op Windows 10**|Deze instelling maakt het mogelijk om de instellingen in dit beleid behalve op Windows Phone 8.1-apparaten, ook toe te passen op Windows 10 Mobile-apparaten.|
 
 ### Wachtwoordinstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
 |**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u op of gebruikers een wachtwoord voor toegang tot hun apparaten moeten invoeren.|Ja|Ja|
-|**Vereist wachtwoordtype**|Hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek.|Ja|Ja|
-|**Vereist wachtwoordtype – minimumaantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets moeten worden opgenomen in het wachtwoord). Voor iOS-apparaten geeft u hiermee echter het aantal symbooltekens aan dat moet zijn opgenomen in het wachtwoord)|Ja|Ja|
-|**Minimale wachtwoordlengte**|Hiermee geeft u het minimumaantal tekens op dat in het wachtwoord is vereist.|Ja|Ja|
-|**Eenvoudige wachtwoorden toestaan**|Eenvoudige wachtwoorden zijn onder andere '0000' en '1234'|Ja|Ja|
-|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u het aantal keren op dat een onjuist wachtwoord kan worden onthouden voordat het apparaat wordt gewist.|Ja|Ja|
+|**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|Yes|Ja|
+|**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u hiermee echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|Ja|Ja|
+|**Minimale wachtwoordlengte**|Hiermee geeft u het minimum aantal tekens op waaruit het wachtwoord moet bestaan.|Ja|Ja|
+|**Eenvoudige wachtwoorden toestaan**|Hiermee geeft u op dat er eenvoudige wachtwoorden, zoals '0000' en '1234' kunnen worden gebruikt.|Yes|Ja|
+|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het apparaat wordt gewist.|Yes|Yes|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.|Ja|Ja|
 |**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.|Ja|Ja|
@@ -56,32 +56,32 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Versleuteling vereisen voor mobiel apparaat**|Hiervoor is vereist dat de gegevens op ondersteunde mobiele apparaten moeten worden versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Ja|
+|**Versleuteling vereisen voor mobiel apparaat**|Hiermee vereist u dat de gegevens op ondersteunde mobiele apparaten worden versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Ja|
 
 ### Systeeminstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
 |**Schermafbeelding toestaan**|Hiermee kan de gebruiker de inhoud van het scherm als afbeelding vastleggen.|Nee|Ja|
-|**Verzending van diagnostische gegevens toestaan**|Hiermee kunt u toestaan dat het apparaat diagnostische gegevens naar Microsoft verzendt.|Nee|Ja|
+|**Verzending van diagnostische gegevens toestaan**|Hiermee stelt u het apparaat in staat diagnostische gegevens naar Microsoft te verzenden.|Nee|Ja|
 
 ### Cloudinstellingen - accounts en synchronisatie
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Microsoft-account toestaan**|Hiermee kunt u een Microsoft-account aan het apparaat koppelen.|Nee|Ja|
+|**Microsoft-account toestaan**|Hiermee maakt u het mogelijk om een Microsoft-account aan het apparaat te koppelen.|Nee|Ja|
 
 ### E-mailinstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Aangepaste e-mailaccounts toestaan**|Hiermee kunt u toestaan dat het apparaat verbinding maakt met niet-Microsoft-e-mailaccounts.|Nee|Ja|
+|**Aangepaste e-mailaccounts toestaan**|Hiermee stelt u het apparaat in staat verbinding te maken met niet-Microsoft e-mailaccounts.|Nee|Ja|
 
 ### Toepassingsinstellingen - browser
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Webbrowser toestaan**|Hiermee kunt u de ingebouwde webbrowser op apparaten toestaan of blokkeren.|Nee|Ja|
+|**Webbrowser toestaan**|Hiermee kunt u het gebruik van de ingebouwde webbrowser op apparaten toestaan of blokkeren.|Nee|Ja|
 
 ### Toepassingsinstellingen - apps
 
@@ -94,32 +94,32 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
 |**Camera toestaan**|Hiermee kunt u het gebruik van de camera van het apparaat toestaan of blokkeren.|Nee|Ja|
-|**Verwisselbare opslag toestaan**|Hiermee kan het apparaat verwisselbare opslag gebruiken, bijvoorbeeld een SD-kaart.|Ja|Ja|
+|**Verwisselbare opslag toestaan**|Hiermee stelt u het apparaat in staat verwisselbare opslag te gebruiken, zoals SD-kaarten.|Yes|Ja|
 |**Wi-Fi toestaan**|Hiermee schakelt u de Wi-Fi-functionaliteit van het apparaat in of uit.|Nee|Ja|
-|**Wi-Fi-tethering toestaan**|Hiermee staat u het gebruik van Wi-Fi-tethering op het apparaat toe.|Nee|Ja
-|**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee kan het apparaat automatisch verbinding maken met gratis Wi-Fi-hotspots en automatisch alle gebruiksvoorwaarden accepteren.|Nee|Ja|
-|**Melden van Wi-Fi-hotspots toestaan**|Hiermee kan er informatie over Wi-Fi-verbindingen worden verzonden om verbindingen in de buurt te detecteren.|Nee|Ja|
-|**Geolocatie toestaan**|Hiermee kan het apparaat locatiegegevens gebruiken.|Nee|Ja|
-|**NFC toestaan**|Hiermee staat u bewerkingen toe waarvoor Near Field Communication wordt gebruikt.|Nee|Ja|
+|**Wi-Fi-tethering toestaan**|Hiermee maakt u het gebruik van Wi-Fi-tethering op het apparaat mogelijk.|Nee|Ja
+|**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee staat u het apparaat toe automatisch verbinding te maken met gratis Wi-Fi-hotspots en automatisch alle gebruiksvoorwaarden te accepteren.|Nee|Ja|
+|**Melden van Wi-Fi-hotspots toestaan**|Hiermee wordt informatie over Wi-Fi-verbindingen verzonden om de gebruiker te helpen verbindingen in de buurt te detecteren.|Nee|Ja|
+|**Geolocatie toestaan**|Hiermee stelt u het apparaat in staat locatiegegevens te gebruiken.|Nee|Ja|
+|**NFC toestaan**|Hiermee maakt u bewerkingen mogelijk waarvoor Near Field Communication wordt gebruikt.|Nee|Ja|
 |**Bluetooth toestaan**|Hiermee schakelt u de Bluetooth-functionaliteit van het apparaat in of uit.|Nee|Ja|
 
 ### Instellingen voor apparaatmogelijkheden - functies
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Kopiëren en plakken toestaan**|Hiermee staat u kopiëren en plakken op apparaten toe.|Nee|Ja|
+|**Kopiëren en plakken toestaan**|Hiermee maakt u kopiëren en plakken op apparaten mogelijk.|Nee|Ja|
 
 ### Instellingen voor toegestane en geblokkeerde apps
 In de lijst **Toegestane en geblokkeerde apps** geeft u de apps op die u wilt toestaan of blokkeren op basis van de volgende gegevens:
 
 > [!NOTE]
-> Een enkele beleidsregel kan alleen een lijst met toegestane of een lijst met geblokkeerde apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
+> Een enkele beleidsregel kan alleen een lijst met toegestane of geblokkeerde apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Apparaten mogen apps in lijst niet openen**|Hiermee wordt een lijst gemaakt met de apps die niet worden beheerd door Intune en die niet mogen worden geïnstalleerd en uitgevoerd door gebruikers.|
+|**Apparaten mogen apps in lijst niet openen**|Hiermee wordt een lijst gemaakt met de apps die niet worden beheerd met Intune en die niet mogen worden geïnstalleerd en uitgevoerd door gebruikers.|
 |**Alleen de apps in de lijst mogen op apparaten worden geïnstalleerd**|Hiermee wordt een lijst gemaakt met de apps die gebruikers mogen installeren. Gebruikers mogen geen andere apps installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
-|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store. Zie 'URL's voor app stores opgeven' verderop in dit onderwerp voor meer informatie.
+|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, geef de URL op van de app in de App Store en vermeld desgewenst de uitgever van de app. Zie 'URL's voor app stores opgeven' verderop in dit onderwerp voor meer informatie.
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
@@ -132,14 +132,14 @@ In de lijst **Toegestane en geblokkeerde apps** geeft u de apps op die u wilt to
 #### URL's voor app stores opgeven
 Als u een app-URL wilt opgeven in de lijst met toegestane en geblokkeerde apps, gebruikt u de volgende notatie:
 
-Zoek in de pagina [Windows Phone Apps+Games](http://www.windowsphone.com/en-us/store/overview) naar de app die u wilt gebruiken.
+Zoek op de pagina [Windows Phone Apps+Games](http://www.windowsphone.com/en-us/store/overview) naar de app die u wilt gebruiken.
 
 Open de pagina van de app en kopieer de URL naar het klembord. U kunt deze URL nu gebruiken in de lijst met toegestane apps of de lijst met geblokkeerde apps.
 
 **Voorbeeld:** Zoek in de store naar de Skype-app. De URL die u gebruikt, is **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
-## Aangepaste beleidsinstellingen 
-Gebruik het **aangepaste configuratiebeleid voor Windows Phone** van Microsoft Intune om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om de functies voor **Windows Phone 8.1-apparaten** te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
+## Aangepaste beleidsinstellingen
+Gebruik het **aangepaste configuratiebeleid voor Windows Phone** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om functies op **Windows Phone 8.1-apparaten** te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
 Op deze manier kunt u Windows Phone-instellingen implementeren die niet met het algemene configuratiebeleid van Intune kunnen worden geconfigureerd. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor informatie over de instellingen die u met dit beleid kunt configureren.
 
@@ -163,15 +163,14 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
     |**Naam van de instelling**|Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
     |**Beschrijving van instelling**|Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
     |**Gegevenstype**|Selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. U kunt kiezen uit:<br /><br />-   **Tekenreeks**<br />-   **Tekenreeks (XML)**<br />-   **Datum en tijd**<br />-   **Geheel getal**<br />-   **Drijvende komma**<br />-   **Boolean-waarde**|
-    |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
+    |**OMA-URI (hoofdlettergevoelig)**|Geef de OMA-URI op waarvoor u een instelling wilt opgeven.|
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
-### Zie ook
+### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

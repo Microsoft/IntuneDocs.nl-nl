@@ -13,15 +13,15 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
 
 # Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
 
-Er zijn twee manieren om een PFN te zoeken, zodat u VPN per app kunt configureren.
+Er zijn twee manieren om een PFN te zoeken, zodat u een VPN per app kunt instellen.
 
 ## Een PFN zoeken voor een app die is geïnstalleerd op een Windows 10-computer
 
@@ -32,7 +32,8 @@ De syntaxis voor Get-AppxPackage is:
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Opmerking: mogelijk moet u PowerShell uitvoeren als een beheerder om de PFN op te halen.
+> [!NOTE]
+Mogelijk moet u PowerShell uitvoeren als een beheerder om de PFN op te halen.
 
 Als u bijvoorbeeld informatie wilt ophalen over alle universele apps die op uw computer zijn geïnstalleerd, gebruikt u `Get-AppxPackage`.
 
@@ -67,13 +68,12 @@ Hier vindt u de informatie die is opgehaald voor OneNote:
 
 ## Een PFN zoeken als de niet op een computer is geïnstalleerd
 
-1.  Ga naar https://www.microsoft.com/nl-nl/store/apps.
+1.  Ga naar https://www.microsoft.com/en-us/store/apps.
 2.  Typ de naam van de app in de zoekbalk. In het voorbeeld wordt gezocht naar OneNote.
-3.  Klik op de koppeling naar de app. De URL die u opent heeft een reeks letters aan het eind. In het voorbeeld ziet de URL er als volgt uit:
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  Plak de URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` in een ander tabblad en vervang `<app id>` door de app-id die u hebt verkregen via https://www.microsoft.com/nl-nl/store/apps (reeks letters aan het einde van de URL in stap 3). In het voorbeeld voor OneNote plakt u het volgende: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.  Kies de koppeling naar de app. U ziet dat de URL een reeks letters heeft aan het eind. In het voorbeeld ziet de URL er als volgt uit: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.  Plak de volgende URL in een ander tabblad: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Vervang `<app id>` door de app-id die u hebt verkregen via https://www.microsoft.com/en-us/store/apps: de reeks letter aan het eind van de URL in stap 3. In het voorbeeld voor OneNote plakt u het volgende: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer klikt u op **Openen** om de informatie weer te geven. De PFN-waarde wordt weergegeven op de eerste regel. De resultaten voor het voorbeeld zien er als volgt uit:
+In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer moet u **Openen** kiezen om de informatie weer te geven. De PFN-waarde wordt weergegeven op de eerste regel. Hier zijn de resultaten voor het voorbeeld:
 
 
 `{`
@@ -85,6 +85,6 @@ In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

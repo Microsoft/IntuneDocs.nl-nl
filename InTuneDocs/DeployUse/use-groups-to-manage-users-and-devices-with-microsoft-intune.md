@@ -13,13 +13,68 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
+ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
+ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 
 
 ---
+## Kennisgeving over verbeteringen die binnenkort worden aangebracht in de manier waarop beheerders groepen kunnen beheren
+
+Op basis van uw feedback, waaruit naar voren kwam dat u groepen graag op één uniforme manier wilt samenstellen en beheren binnen de hele Enterprise Mobility + Security-suite, converteren we Intune-groepen naar Azure Active Directory-beveiligingsgroepen. Dit zal leiden tot een uniformer beheer van groepen voor zowel Intune als Azure Active Directory (Azure AD). Deze nieuwe manier van werken voorkomt dat u groepen moet dupliceren voor verschillende services en biedt uitbreidingsmogelijkheden met PowerShell en Graph. 
+
+### Wat betekent dit nu voor mij?
+Deze wijziging heeft op dit moment nog geen gevolgen voor u, maar we kunnen u wel alvast vertellen wat er staat te gebeuren:
+
+-   In september zullen nieuwe accounts die zijn ingericht na de maandelijkse servicerelease, gebruik gaan maken van Azure AD-beveiligingsgroepen in plaats van Intune-gebruikersgroepen.   
+-   In oktober zullen nieuwe accounts die zijn ingericht na de maandelijkse servicerelease, zowel op gebruikers als op apparaten gebaseerde groepen beheren in de Azure AD portal. Dit heeft geen gevolgen voor bestaande klanten
+-   In november zal het Intune-productteam beginnen met het migreren van bestaande klanten naar de nieuwe op Azure AD gebaseerde groepsbeheermethode. Alle gebruikers- en apparaatgroepen die momenteel in Intune aanwezig zijn, worden gemigreerd naar Azure AD-beveiligingsgroepen. De migratie, die begint in november, wordt uitgevoerd in batches. We beginnen pas met de migratie als we zeker weten dat de impact ervan op uw dagelijkse werkzaamheden tot een minimum beperkt blijft en de eindgebruiker er niets van zal merken. We zullen ook een kennisgeving sturen voordat we uw account migreren.
+
+
+### Wanneer en hoe vindt mijn migratie naar deze nieuwe manier van werken met groepen plaats?
+Voor huidige klanten wordt de migratie gespreid over een langere periode. We zijn bezig de planning voor die migratie af te ronden en zullen dit onderwerp over een paar weken updaten om u meer informatie te geven. We sturen u een kennisgeving voordat uw migratie plaatsvindt. Als u vragen of opmerkingen hebt over de migratie, kunt u contact opnemen met ons migratieteam op [intunegrps@microsoft.com](intunegrps@microsoft.com).
+
+### Wat gebeurt er met mijn bestaande gebruikers- en apparaatgroepen?
+ Gebruikers- en apparaatgroepen die u hebt gemaakt, worden gemigreerd naar Azure AD-beveiligingsgroepen. Standaard Intune-groepen, zoals de groep Alle gebruikers, worden alleen gemigreerd als u deze gebruikt in implementaties ten tijde van de migratie. Voor bepaalde groepen kan migratie ingewikkelder zijn en we zullen het u melden als er extra stappen nodig zijn voor de migratie.
+
+### Welke nieuwe functies zijn er beschikbaar voor mij?
+Dit is de nieuwe functionaliteit die wordt geïntroduceerd:
+
+-    Azure AD-beveiligingsgroepen worden ondersteund in Intune voor alle typen implementaties.
+-    Azure AD-beveiligingsgroepen ondersteunen het groeperen van apparaten samen met gebruikers.
+-    Azure AD-beveiligingsgroepen ondersteunen dynamische groepen met Intune-apparaatkenmerken. U kunt apparaten bijvoorbeeld dynamisch groeperen op basis van hun platform, zoals iOS. Op die manier wordt een nieuw iOS-apparaat dat wordt ingeschreven in uw organisatie, automatisch toegevoegd aan de dynamische iOS-apparaatgroep.
+-    Beheerders kunnen groepsbeheertaken in Azure AD en Intune op een uniforme manier uitvoeren.
+- De *Intune-servicebeheerdersrol* wordt toegevoegd aan Azure AD om servicebeheerders in Intune in staat te stellen beheertaken uit te voeren in Azure AD.
+
+
+
+
+### Welke Intune-functionaliteit is straks niet meer beschikbaar?
+Hoewel het werken met groepen wordt verbeterd, zal bepaalde Intune-functionaliteit niet meer beschikbaar zijn na de migratie.
+
+#### Groepsbeheerfunctionaliteit
+
+-   U kunt geen leden of groepen meer uitsluiten wanneer u een nieuwe groep maakt. Met de dynamische groepen van Azure AD kunt u echter wel gebruikmaken van kenmerken om geavanceerde regels te maken waarmee u leden kunt uitsluiten op basis van criteria.
+-   De groepen **Niet-gegroepeerde gebruikers** en **Niet-gegroepeerde apparaten** worden niet meer ondersteund. Deze groepen worden ook niet gemigreerd.
+
+
+#### Groepsafhankelijke functionaliteit
+
+-   De servicebeheerdersrol heeft geen machtigingen voor **Groepen beheren**.
+-   U kunt geen Exchange ActiveSync-apparaten groeperen.  Uw groep van **alle met EAS beheerde apparaten** wordt geconverteerd van een groep naar een rapportweergave.
+-  Het maken van draaitabellen met groepen in rapporten is niet mogelijk.
+-  Het maken van meldingsregels die zijn gericht op aangepaste groepen, is niet mogelijk.
+
+### Wat moet ik doen om me voor te bereiden op deze wijziging?
+ Hier zijn enkele aanbevelingen die deze overgang eenvoudiger zullen maken voor u:
+
+- Verwijder ongewenste of overbodige Intune-groepen voordat de migratie plaatsvindt.
+- Ga na hoe u op dit moment uitsluiting gebruikt in groepen en overweeg uw groepen opnieuw te ontwerpen, zodat u geen uitsluiting meer hoeft te gebruiken.
+-  Hebt u beheerders die geen machtigingen hebben voor het maken van groepen in Azure AD, vraag dan uw Azure AD-beheerder om deze beheerders toe te voegen aan de Azure AD-rol **Intune-servicebeheerder** .
+
 
 # Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune
+
+In deze sectie wordt beschreven hoe u Intune-groepen maakt in de Intune-beheerconsole.
 
 Voor het maken en beheren van groepen gebruikt u de werkruimte **Groepen** in de Microsoft Intune-beheerconsole. De pagina **Overzicht van groepen** bevat statusoverzichten die u helpen bij het identificeren en prioriteren van problemen die uw aandacht nodig hebben voor:
 
@@ -153,6 +208,6 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

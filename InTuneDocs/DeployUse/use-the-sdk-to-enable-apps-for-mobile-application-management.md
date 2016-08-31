@@ -4,7 +4,7 @@ description:
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 58e127b1924f68a663326ab076ad623dd66782d7
+ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
+ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
 
 
 ---
 
-# Gebruik de SDK om apps geschikt te maken voor Mobile Application Management
+# De SDK gebruiken om apps geschikt te maken voor Mobile Application Management
 Gebruik de Microsoft Intune App SDK om Intune in staat te stellen bepaalde functies van uw mobiele iOS- of Android-apps te beheren. Nadat uw app is ingeschakeld, kunt u in de app beleidsregels implementeren. Deze beleidsregels gebruiken deze functies om uw zakelijke gegevens te beveiligen. Voorbeelden van het soort bescherming dat u met de SDK kunt implementeren:
 
 -   Voorkomen dat gebruikers zakelijke documenten kopiëren naar de cloud
@@ -34,11 +34,11 @@ Als u de SDK wilt gebruiken, moet u toegang hebben tot de broncode van de app. D
 
 Zie de pagina [Overzicht](/intune/develop/intune-app-sdk) voor een overzicht van de SDK. Zie [Aan de slag met de Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started) om de Intune App SDK in gebruik te nemen
 
-### Zie ook
+### Zie tevens
 [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

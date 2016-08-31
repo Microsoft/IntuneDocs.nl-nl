@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
-ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
 
 
 ---
@@ -201,12 +201,13 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
 
 - [Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
 - [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](per-app-vpn-for-android-pulse-secure.md)
+- [Aangepaste beleidsregels gebruiken voor het toestaan en blokkeren van apps voor Samsung KNOX-apparaten](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
 ### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

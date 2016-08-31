@@ -3,7 +3,7 @@ title: Windows-beleidsinstellingen | Microsoft Intune
 description: Gebruik de algemene regels voor het Intune Windows-configuratiebeleid (Windows 8.1 en later) om instellingen te configureren voor geregistreerde Windows 8.1- en Windows 8-apparaten.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,35 +13,35 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: a70b81e490a5c55d9ce11bd8dbdfc42ab364273c
+ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
+ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
 
 
 ---
 
 # Windows-beleidsinstellingen in Microsoft Intune
-Gebruik de **algemene regels voor het Windows-configuratiebeleid (Windows 8.1 en later)** om de volgende instellingen te configureren voor geregistreerde Windows 8.1- en Windows 8-apparaten:
+Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de volgende instellingen te configureren voor geregistreerde Windows 8- en Windows 8.1-apparaten:
 
 ## Toepasselijkheidsinstellingen
 
 |Naam van de instelling|Details|
 |----------------|----------------------------------|
-|**Alle configuraties toepassen op Windows 10**|Hiermee kunt de instellingen in dit beleid naast Windows 8 en Windows 8.1-apparaten toepassen op Windows 10-apparaten.|
+|**Alle configuraties toepassen op Windows 10**|Hiermee worden de instellingen in dit beleid behalve op Windows 8- en Windows 8.1-apparaten, ook op Windows 10-apparaten toegepast.|
 
 ## Beveiligingsinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Vereist wachtwoordtype**|Hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek.|Ja|Ja|
-|**Vereist wachtwoordtype – minimumaantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets moeten worden opgenomen in het wachtwoord. Voor iOS-apparaten geeft u hiermee echter het aantal symbooltekens aan dat moet zijn opgenomen in het wachtwoord.|Ja|Ja|
-|**Minimale wachtwoordlengte**<sup>1</sup>|Hiermee configureert u de minimaal vereiste lengte (in tekens) voor het wachtwoord op apparaten.|Ja|Ja|
-|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee worden de gegevens op het apparaat gewist als het aanmelden dit aantal keren mislukt.|Ja|Ja|
-|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee kiest u het aantal minuten dat een apparaat inactief moet zijn voordat er een wachtwoord is vereist om het apparaat te ontgrendelen.| Ja|Ja|
+|**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|Yes|Ja|
+|**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u met deze instelling echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|Yes|Ja|
+|**Minimale wachtwoordlengte**<sup>1</sup>|Hiermee configureert u de minimaal vereiste lengte (in tekens) voor het wachtwoord.|Yes|Ja|
+|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee wist u het apparaat als er meer mislukte aanmeldingspogingen zijn gedaan dan het toegestane aantal pogingen.|Yes|Ja|
+|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u het aantal minuten op dat een apparaat inactief moet zijn voordat er een wachtwoord is vereist om het apparaat te ontgrendelen.| Ja|Ja|
 |**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of de gebruiker eerder gebruikte wachtwoorden kan configureren.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|Ja|Ja|
-|**Afbeeldingswachtwoord en PIN toestaan**|Hiermee kunt het gebruik van een afbeeldingswachtwoord en pincode op het apparaat toestaan. Met een afbeeldingswachtwoord kan de gebruiker zich met gebaren op een afbeelding aanmelden. Met een pincode kunnen gebruikers zich snel met 4 cijfers aanmelden.|Ja|Ja|
-<sup>1</sup> Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows RT, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
+|**Afbeeldingswachtwoord en PIN toestaan**|Hiermee maakt u het gebruik van een afbeeldingswachtwoord en pincode mogelijk. Met een afbeeldingswachtwoord kan de gebruiker zich aanmelden met aanraakbewegingen op een afbeelding. Met een pincode kunnen gebruikers zich snel met een code van 4 cijfers aanmelden.|Yes|Yes|
+<sup>1</sup> Wanneer u het beleid voor de wachtwoordlengte implementeert op apparaten met Windows RT, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
 
 ## Versleutelingsinstellingen
 
@@ -56,61 +56,61 @@ Gebruik de **algemene regels voor het Windows-configuratiebeleid (Windows 8.1 en
 
 -   Versleuteling werkt alleen indien het apparaat voldoet aan de Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) -certificeringsvereisten voor hardware.
 
--   Wanneer u versleuteling op een apparaat afdwingt, is de herstelsleutel alleen toegankelijk vanaf het Microsoft-account van de gebruiker, wanneer deze sleutel vanaf het bijbehorende OneDrive-account wordt geopend. U kunt deze sleutel niet namens een gebruiker herstellen.
+-   Wanneer u versleuteling op een apparaat afdwingt, is de herstelsleutel alleen toegankelijk vanuit het Microsoft-account van de gebruiker, waartoe de gebruiker alleen toegang heeft vanuit zijn of haar OneDrive-account. U kunt deze sleutel niet namens een gebruiker herstellen.
 
 ## Instellingen voor malware
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Netwerkfirewall vereisen**|Hiermee vereist u dat Windows Firewall is ingeschakeld.|Ja|Nee|
-|**SmartScreen inschakelen**|Hiermee vereist u het gebruik van Windows SmartScreen op apparaten.|Ja|Nee|
+|**Netwerkfirewall vereisen**|Hiermee vereist u dat Windows Firewall is ingeschakeld.|Yes|Nee|
+|**SmartScreen inschakelen**|Hiermee vereist u het gebruik van Windows SmartScreen.|Yes|Nee|
 
 ## Systeeminstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Automatische updates vereisen**|Hiermee schakelt u de instelling voor automatische updates op apparaten in.|Ja|Nee|
-|**Automatische updates vereisen: minimale classificatie van updates automatisch laten installeren**|Kies de classificatie van updates die automatisch worden geïnstalleerd:<br /><br />-   **Belangrijk**: hiermee worden alle updates geïnstalleerd die zijn geclassificeerd als belangrijk.<br />-   **Aanbevolen**: hiermee worden alle updates geïnstalleerd die zijn geclassificeerd als belangrijk of aanbevolen.|Ja|Nee|
+|**Automatische updates vereisen**|Hiermee schakelt u de instelling voor automatische updates op apparaten in.|Yes|Nee|
+|**Automatische updates vereisen: minimale classificatie van updates automatisch laten installeren**|Hiermee kiest u de classificatie van updates die automatisch worden geïnstalleerd:<br /><br />-   **Belangrijk**: hiermee worden alle updates geïnstalleerd die zijn geclassificeerd als belangrijk.<br />-   **Aanbevolen**: hiermee worden alle updates geïnstalleerd die zijn geclassificeerd als belangrijk of aanbevolen.|Ja|Nee|
 |**Gebruikersaccountbeheer**|Hiermee vereist u het gebruik van Gebruikersaccountbeheer (UAC) op apparaten.|Ja|Nee|
-|**Verzending van diagnostische gegevens toestaan**|Hiermee staat u toe dat het apparaat diagnostische gegevens verzendt naar Microsoft.|Ja|Nee|
+|**Verzending van diagnostische gegevens toestaan**|Hiermee stelt u het apparaat in staat diagnostische gegevens naar Microsoft te verzenden.|Yes|Nee|
 
 
 ## Cloudinstellingen – documenten en gegevens
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**URL voor werkmappen**|Hiermee stelt u de URL van de werkmap in, zodat documenten over verschillende apparaten kunnen worden gesynchroniseerd|Ja|Nee|
+|**URL voor werkmappen**|Hiermee stelt u de URL van de werkmap in, zodat documenten op verschillende apparaten kunnen worden gesynchroniseerd.|Ja|Nee|
 
 ## E-mailinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Het Microsoft-account optioneel maken in de Windows Mail-toepassing**|Hiermee staat u toegang zonder Microsoft-account toe tot de toepassing Windows Mail.|Ja|Nee|
+|**Het Microsoft-account optioneel maken in de Windows Mail-toepassing**|Hiermee maakt u het mogelijk om toegang te krijgen tot de toepassing Windows Mail zonder Microsoft-account.|Ja|Nee|
 
 ## Toepassingsinstellingen - browser
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Automatisch invullen toestaan**|Gebruiker kan de instellingen voor automatisch aanvullen in de browser wijzigen.|Ja|Nee|
+|**Automatisch invullen toestaan**|Hiermee stelt u gebruikers in staat instellingen voor automatisch aanvullen in de browser te wijzigen.|Ja|Nee|
 |**Pop-upblokkering toestaan**|Hiermee schakelt u de pop-upblokkering voor browsers in of uit.|Ja|Nee|
-|**Invoegtoepassingen toestaan**|Gebruiker kan invoegtoepassingen toevoegen aan Internet Explorer.|Ja|Nee|
-|**Active Scripting toestaan**|Browser kan scripts, zoals Active X-scripts, uitvoeren.|Ja|Nee|
-|**Waarschuwing voor fraude toestaan**|Hiermee schakelt u de waarschuwingen voor mogelijke frauduleuze websites in of uit.|Ja|Nee|
-|**Naar een intranetsite gaan voor invoer van één woord toestaan**|Hiermee staat u het gebruik toe van één woord om Internet Explorer naar een website te sturen, zoals Bing|Ja|Nee|
+|**Invoegtoepassingen toestaan**|Hiermee stelt u gebruikers in staat invoegtoepassingen toe te voegen aan Internet Explorer.|Ja|Nee|
+|**Active Scripting toestaan**|Hiermee stelt u de browser in staat scripts, zoals Active X-scripts, uit te voeren.|Yes|Nee|
+|**Waarschuwing voor fraude toestaan**|Hiermee schakelt u de waarschuwingen voor mogelijke frauduleuze websites in of uit.|Yes|Nee|
+|**Naar een intranetsite gaan voor invoer van één woord toestaan**|Hiermee stelt u gebruikers in staat om Internet Explorer naar een website te sturen met één woord, zoals Bing.|Ja|Nee|
 |**Automatische detectie van een intranetnetwerk toestaan**|Hiermee wordt de beveiliging geconfigureerd voor intranetsites in Internet Explorer.|Ja|Nee|
-|**Beveiligingsniveau voor internet**|Hiermee stelt u het beveiligingsniveau voor internetsites in Internet Explorer in.|Ja|Nee|
-|**Beveiligingsniveau voor intranet**|Hiermee stelt u het beveiligingsniveau voor intranetsites in Internet Explorer in.|Ja|Nee|
-|**Beveiligingsniveau voor vertrouwde sites**|Hiermee stelt u het beveiligingsniveau in voor de zone voor vertrouwde sites.|Ja|Nee|
-|**Beveiligingsniveau voor websites met beperkte toegang**|Hiermee stelt u het beveiligingsniveau in voor de zone voor websites met beperkte toegang.|Ja|Nee|
-|**Do Not Track-header verzenden**|Hiermee verzendt u in Internet Explorer een Do Not Track-header naar bezochte websites.|Ja|Nee|
-|**Toegang tot Bedrijfsmodus-menu toestaan**|Hiermee kunnen gebruikers toegang krijgen tot de menuoptie Ondernemingsmodus van Internet Explorer.<br>Indien geselecteerd, kunt u ook een **Locatie van registratierapport** opgeven, die een URL bevat naar een rapport waarin websites zijn opgenomen waarvoor gebruikers de bedrijfsmodus hebben ingeschakeld.|Ja|Nee|
-|**Locatie van de lijst met websites van Bedrijfsmodus**|U kunt de locatie van de lijst met websites opgeven die door Bedrijfsmodus wordt gebruikt als het actief is.|Ja|Nee|
+|**Beveiligingsniveau voor internet**|Hiermee stelt u het beveiligingsniveau voor internetsites in Internet Explorer in.|Yes|Nee|
+|**Beveiligingsniveau voor intranet**|Hiermee stelt u het beveiligingsniveau voor intranetsites in Internet Explorer in.|Yes|Nee|
+|**Beveiligingsniveau voor vertrouwde sites**|Hiermee configureert u het beveiligingsniveau voor de zone met vertrouwde sites.|Ja|Nee|
+|**Beveiligingsniveau voor websites met beperkte toegang**|Hiermee configureert u het beveiligingsniveau voor de zone met websites met beperkte toegang.|Yes|Nee|
+|**Do Not Track-header verzenden**|Hiermee verzendt u een Do Not Track-header naar bezochte websites in Internet Explorer.|Yes|Nee|
+|**Toegang tot Bedrijfsmodus-menu toestaan**|Hiermee kunnen gebruikers toegang krijgen tot de menuoptie Ondernemingsmodus van Internet Explorer.<br>Als u deze instelling selecteert, kunt u een **Locatie van het registratierapport** opgeven, die bestaat uit een URL naar een rapport waarin websites worden weergegeven waarvoor gebruikers toegang tot de bedrijfsmodus hebben ingeschakeld.|Yes|Nee|
+|**Locatie van de lijst met websites van Bedrijfsmodus**|Hier kunt u de locatie opgeven van de lijst met websites die de bedrijfsmodus gebruiken als deze actief is.|Ja|Nee|
 
 ## Instellingen voor apparaatmogelijkheden - mobiel
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Gegevensroaming toestaan**|Hiermee staat u gegevensroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Ja|Nee|
+|**Gegevensroaming toestaan**|Hiermee maakt u dataroaming mogelijk wanneer het apparaat verbinding heeft met een mobiel netwerk.|Yes|Nee|
 
 
 
@@ -119,7 +119,6 @@ Gebruik de **algemene regels voor het Windows-configuratiebeleid (Windows 8.1 en
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

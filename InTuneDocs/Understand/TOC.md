@@ -8,9 +8,6 @@
 ### [Mobiele apparaten registreren en een app installeren](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Andere opties en extra's](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Volgende stappen](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [Algemene Intune-evaluatietaken](common-microsoft-intune-evaluation-tasks.md)
-### [Een proefversie starten en iOS-pincodebeleid implementeren](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [Toegang tot e-mail instellen voor iOS-apparaten](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Algemene scenario's](common-ways-to-use-intune.md)
 ## [Snelstartgidsen](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -25,6 +22,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

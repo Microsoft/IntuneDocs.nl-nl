@@ -2,7 +2,7 @@
 title: Snelstartgids voor Intune | Microsoft Intune
 description: Vereisten en voorwaarden om uw Intune-abonnement te gaan gebruiken
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
-ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 735889feb1c3234c0c063048601715a3f8aa4719
 
 
 ---
@@ -75,6 +75,6 @@ U kunt nu aan de slag met de snelstartgids voor Intune.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

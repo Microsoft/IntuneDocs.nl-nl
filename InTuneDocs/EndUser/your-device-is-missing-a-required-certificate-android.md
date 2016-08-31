@@ -3,19 +3,19 @@ title: Er ontbreekt een vereist certificaat voor uw apparaat | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
 
 
 ---
@@ -74,7 +74,7 @@ Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er 
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. Klik in het dialoogvenster **Certificaat** op het tabblad **Certificaatpad**, en identificeer vervolgens het certificaat dat u nodig hebt van het internet. De naam van het certificaat dat u nodig hebt, bevindt zich op dezelfde positie als het gemarkeerde certificaat in het bovenstaande voorbeeld. 
+5. Klik in het dialoogvenster **Certificaat** op het tabblad **Certificaatpad**, en identificeer vervolgens het certificaat dat u nodig hebt van het internet. De naam van het certificaat dat u nodig hebt, bevindt zich op dezelfde positie als het gemarkeerde certificaat in het bovenstaande voorbeeld.
 
 ### Het ontbrekende certificaat op uw mobiele Android-apparaat downloaden en installeren
 
@@ -94,12 +94,13 @@ Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er 
 
 7. Open de bedrijfsportal-app opnieuw. Nu moet u zich bij de bedrijfsportal-app kunnen aanmelden. Neem contact op met de IT-beheerder als u hulp nodig hebt.
 
-Als u dezelfde melding omtrent een 'ontbrekend certificaat' ziet als de melding hierboven, en u de bovenstaande stappen reeds hebt uitgevoerd, dan is er waarschijnlijk nog een ander certificaat dat met behulp van de IT-beheerder moet worden geïnstalleerd. Neem contact op met de IT-beheerder en geef deze [koppeling](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) door, die de stappen bevat voor het oplossen van het probleem. 
+Als u dezelfde melding omtrent een 'ontbrekend certificaat' ziet als de melding hierboven, en u de bovenstaande stappen reeds hebt uitgevoerd, dan is er waarschijnlijk nog een ander certificaat dat met behulp van de IT-beheerder moet worden geïnstalleerd. Neem contact op met de IT-beheerder en geef deze [koppeling](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) door, die de stappen bevat voor het oplossen van het probleem.
 
 ### Zie tevens
 [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

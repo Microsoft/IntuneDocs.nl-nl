@@ -13,56 +13,53 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
-ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
+ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
+ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
 
 
 ---
 
 # Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten
 
-U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd door Intune. U moet eerst een VPN-profiel maken dat gebruikmaakt van het verbindingstype Pulse Secure. Vervolgens maakt u een aangepast configuratiebeleid waarmee dit profiel aan specifieke apps wordt gekoppeld. Nadat u deze beleidsregels hebt geïmplementeerd voor uw Android-apparaat of gebruikersgroepen en uw een van de opgegeven apps op de ze apparaten opent, wordt er een VPN-verbinding voor die app geopend.
+U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd met Intune. Maak eerst een VPN-profiel met het verbindingstype Pulse Secure. Maak vervolgens een aangepast configuratiebeleid dat het VPN-profiel aan specifieke apps koppelt. Als u het beleid hebt geïmplementeerd voor uw Android-apparaat of gebruikersgroepen en een gebruiker vervolgens een van de opgegeven apps op een van deze apparaten opent, wordt er een VPN-verbinding voor die app geopend.
 
 > [!NOTE]
-> 
+>
 > Alleen het verbindingstype Pulse Secure wordt ondersteund voor dit profiel.
 
 
 ### Stap 1: Een VPN-profiel maken
 
-1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Beleid toevoegen**.
-2. Selecteer een sjabloon voor het nieuwe beleid door **Android** uit te vouwen en kies vervolgens **VPN-profiel (Android 4 en hoger)**.
-
+1. Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** > **Beleid toevoegen**.
+2. Als u een sjabloon wilt selecteren voor het nieuwe beleid, vouwt u **Android** uit en kiest u vervolgens **VPN-profiel (Android 4 en hoger)**.
 3. In de sjabloon kiest u voor **Verbindingstype**, de optie **Pulse Secure**.
-4. Voltooi het VPN-profiel en sla het op. Zie [VPN-verbindingen](vpn-connections-in-microsoft-intune.md) voor meer informatie over VPN-profielen.
+4. Voltooi het VPN-profiel en sla het op. Zie [VPN-verbindingen](../deploy-use/vpn-connections-in-microsoft-intune.md) voor meer informatie over VPN-profielen.
 
 > [!NOTE]
-> 
-> Noteer de naam van het VPN-profiel voor gebruik in de volgende stap.   Bijvoorbeeld **MyAppVpnProfile**.
+>
+> Noteer de naam van het VPN-profiel voor gebruik in de volgende stap. Bijvoorbeeld MyAppVpnProfile.
 
 ### Stap 2: Een aangepast configuratiebeleid maken
 
-   1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid** -> **Beleid toevoegen** -> **Android** -> **Aangepaste configuratie** -> **Beleid maken**.
-   2. Geef een naam voor het beleid op.
-   3. Klik onder **OMA-URI-instellingen** op **Toevoegen**.
-   4. Geef een naam voor de instelling op.
+   1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid** > **Beleid toevoegen** > **Android** > **Aangepaste configuratie** > **Beleid maken**.
+   2. Geef een naam op voor het beleid.
+   3. Kies onder **OMA-URI-instellingen** de optie **Toevoegen**.
+   4. Geef een naam op voor de instelling.
    5. Geef voor **Gegevenstype** de optie **Tekenreeks** op.
-   6. Geef voor **OMA-URI** deze tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, waarbij *Name* de naam van het VPN-profiel is dat u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.   Geef bij **Waarde** een lijst met pakketten op (gescheiden door puntkomma's) die aan het profiel moeten worden gekoppeld.  Als u bijvoorbeeld wilt dat Excel en de Google Chrome-browser de VPN-verbinding gebruiken, voert u het volgende in: **com.microsoft.office.excel;com.android.chrome**.
+   6. Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/PackageList**, waarbij *Naam* de naam van het VPN-profiel is die u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+   7.   Geef bij **Waarde** een lijst met door puntkomma’s gescheiden pakketten op die aan het profiel moeten worden gekoppeld. Als u bijvoorbeeld wilt dat Excel en de Google Chrome-browser de VPN-verbinding gebruiken, voert u **com.microsoft.office.excel;com.android.chrome** in.
 
 
-   ![Voorbeeld van een aangepast VPN-beleid per app voor Android](..\media\android_per_app_vpn_oma_uri.png)
-#### Uw lijst met apps instellen als een blokkeringslijst of acceptatielijst (optioneel)
-U kunt opgeven dat VPN-verbinding *niet* mag worden gebruikt door de lijst met apps door de waarde **BLACKLIST** te gebruiken.  Alle andere apps kunnen verbinding maken via VPN.
+    ![Voorbeeld van een aangepast VPN-beleid per app voor Android](..\media\android_per_app_vpn_oma_uri.png)
 
-U kunt eventueel opgeven dat *alleen* de opgegeven apps de VPN-verbinding kunnen gebruiken door de waarde **WHITELIST** te gebruiken.
-
-
-1.  Klik onder OMA-URI-instellingen op **Toevoegen**.
-2.  Geef een naam voor de instelling op.
-3.  Geef voor **Gegevenstype** de optie **Tekenreeks** op.
-4.  Geef voor **OMA-URI** deze tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, waarbij *Name* de naam is van het VPN-profiel dat u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-5.  Geef voor **Waarde** **BLACKLIST** of **WHITELIST** op.
+#### Uw lijst met apps instellen als een blacklist of whitelist (optioneel)
+  U kunt een lijst met apps opgeven die de VPN-verbinding *niet* mogen gebruiken, door de waarde **BLACKLIST** te gebruiken. Alle andere apps kunnen wel gebruikmaken van de VPN-verbinding.
+U kunt ook de waarde **WHITELIST** gebruiken om een lijst met apps op te geven die de VPN-verbinding *wel* mogen gebruiken. Apps die niet op de lijst staan, kunnen in dat geval geen gebruikmaken van de VPN-verbinding.
+  1.    Kies onder **OMA-URI-instellingen** de optie **Toevoegen**.
+  2.    Geef een naam op voor de instelling.
+  3.    Geef voor **Gegevenstype** de optie **Tekenreeks** op.
+  4.    Geef voor **OMA-URI** deze tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/Mode**, waarbij *Naam* de naam is van het VPN-profiel dat u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  5.    Geef bij **Waarde** **BLACKLIST** of **WHITELIST** op.
 
 
 
@@ -70,18 +67,15 @@ U kunt eventueel opgeven dat *alleen* de opgegeven apps de VPN-verbinding kunnen
 
 U moet *beide* beleidsregels naar *dezelfde* Intune-groepen implementeren.
 
-   1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en klik vervolgens op **Implementatie beheren**.
-
+1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
 2.  In het dialoogvenster **Implementatie beheren** :
+    -   **Als u het beleid wilt implementeren**, selecteert u een of meer groepen waarvoor u het beleid wilt implementeren en klikt u vervolgens op **Toevoegen**  >  **OK**.
+    -   **Als u het dialoogvenster wilt sluiten zonder het beleid te implementeren**, kiest u **Annuleren**.
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
-
-    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
-
-Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
+Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Er wordt ook een statusoverzicht weergegeven in de werkruimte **Dashboard**.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

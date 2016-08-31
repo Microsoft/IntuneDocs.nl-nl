@@ -3,19 +3,19 @@ title: Fout bij het evalueren van het apparaat | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e50487717bd939843cb46e2d67721d98ab69ae0d
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7f07968b599fa28995c28c1857e0f9cc0dedae48
 
 
 ---
@@ -30,7 +30,6 @@ Neem contact op met uw IT-beheerder als het probleem zich blijft voordoen. Ga na
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

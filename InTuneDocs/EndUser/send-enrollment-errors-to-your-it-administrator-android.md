@@ -3,18 +3,19 @@ title: Registratiefouten naar uw IT-beheerder verzenden | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: e336289290cd79a2599ccfb7eccbc5df4230555b
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 0d1b9b16df643004aca7fd620f738d226a6ebb07
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: e336289290cd79a2599ccfb7eccbc5df4230555b
 
 # Registratiefouten naar uw IT-beheerder verzenden
 
-Als er een fout optreedt wanneer u uw apparaat probeert te registreren bij Intune, kunt u het opnieuw proberen door op **Opnieuw** te tikken, maar u kunt ook de foutgegevens in een e-mailbericht naar uw IT-beheerder verzenden. Tik hiertoe op **Informatie verzenden**. 
+Als er een fout optreedt wanneer u uw apparaat probeert te registreren bij Intune, kunt u het opnieuw proberen door op **Opnieuw** te tikken, maar u kunt ook de foutgegevens in een e-mailbericht naar uw IT-beheerder verzenden. Tik hiertoe op **Informatie verzenden**.
 
 Er wordt automatisch een e-mail gemaakt die is geadresseerd aan de IT-beheerder. Deze bevat de logboeken die de IT-beheerder nodig heeft om het probleem met het apparaat op te lossen.
 
@@ -35,6 +36,7 @@ Er zijn verschillende manieren waarop u de gegevenslogboeken naar uw IT-beheerde
 [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

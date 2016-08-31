@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Nalevingsbeleid voor apparaten implementeren en bewaken in Microsoft Intune
 ## Een nalevingsbeleid implementeren
-Implementeer het nalevingsbeleid dat u hebt [gemaakt](create-a-device-compliance-policy-in-microsoft-intune.md) voor een of meer groepen van gebruikers of apparaten in uw organisatie.
+Implementeer het nalevingsbeleid dat u hebt [gemaakt](create-a-device-compliance-policy-in-microsoft-intune.md) voor een of meer groepen gebruikers in uw organisatie. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving.
 
-1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
+1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en kies vervolgens **Implementatie beheren**.
 ![Schermafbeelding van de pagina voor het nalevingsbeleid waarin boven de menuoptie Implementatie beheren wordt weergegeven](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Kies in het dialoogvenster **Implementatie beheren** een of meer groepen waarvoor u het beleid wilt implementeren en kies vervolgens **Toevoegen > OK**.
-![Schermopname van het dialoogvenster Implementatie beheren](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) U kunt een nalevingsbeleid implementeren voor gebruikers en/of apparaten. Gebruik Active Directory-groepen die u al hebt gemaakt en met Intune hebt gesynchroniseerd, of maak deze groepen handmatig in de Intune-console. Zie [Een configuratiebeleid implementeren](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor meer informatie over het implementeren van beleid.
+![Schermafbeelding van het dialoogvenster Implementatie beheren](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) U kunt een nalevingsbeleid voor gebruikers implementeren. Gebruik Active Directory-groepen die u al hebt gemaakt en met Intune hebt gesynchroniseerd, of maak deze groepen handmatig in de Intune-console. Zie [Een configuratiebeleid implementeren](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor meer informatie over het implementeren van beleid.
 
 Gebruik het statusoverzicht en de waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** om beleidsproblemen te identificeren die uw aandacht vereisen. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte **Dashboard** .
 
@@ -72,6 +72,6 @@ U kunt het nalevingsbeleid nu gebruiken met beleidsregels voor voorwaardelijke t
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

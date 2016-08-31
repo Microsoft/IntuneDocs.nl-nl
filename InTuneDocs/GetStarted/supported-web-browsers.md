@@ -2,7 +2,7 @@
 title: Door Microsoft Intune ondersteunde webbrowsers | Microsoft Intune
 description: Webbrowsers die door Intune worden ondersteund
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 05/06/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: b9b37433ec4cc06b85ae79728a180f61478394ec
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: d6e0e3cfb39921f390ab7673f2656376e5f299f5
 
 
 ---
@@ -35,6 +35,6 @@ Lees voordat u Intune instelt, dit onderwerp en de andere vereisten die worden v
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

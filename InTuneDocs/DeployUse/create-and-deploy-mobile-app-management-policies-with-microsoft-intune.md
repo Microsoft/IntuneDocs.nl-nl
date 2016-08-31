@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
+ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
+ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 
 
 ---
@@ -28,12 +28,16 @@ In dit onderwerp wordt het proces van het maken van MAM-beleid in de **Azure-por
 - Apparaten die niet worden beheerd door een MDM-oplossing (BYOD).
 
 >[!IMPORTANT]
+Houd rekening met het volgende als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren:
 
-> Als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren, kunt u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) MAM-beleid maken dat apps ondersteunt voor apparaten die zijn geregistreerd bij Intune.
-MAM-beleid dat is gemaakt in de Intune-beheerconsole kan niet worden geïmporteerd in Azure Portal.  Het MAM-beleid moet in Azure Portal opnieuw worden gemaakt.
+> * U kunt MAM-beleid maken dat ondersteuning biedt voor apps voor apparaten die zijn ingeschreven in Intune via de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * MAM-beleid dat is gemaakt in de Intune-beheerconsole kan niet worden geïmporteerd in Azure Portal.  Het MAM-beleid moet in Azure Portal opnieuw worden gemaakt.
 
+> * Mogelijk ziet u in de Intune-beheerconsole niet alle MAM-beleidsinstellingen. De Azure-portal is de nieuwe beheerconsole voor het maken van MAM-beleid.
 
-> Mogelijk ziet u in de Intune-beheerconsole niet alle MAM-beleidsinstellingen. De Azure-portal is de nieuwe beheerconsole voor het maken van MAM-beleid. Als u MAM-beleid in zowel de Intune-beheerconsole als Azure Portal maakt, wordt het beleid in Azure Portal toegepast op de apps en geïmplementeerd bij gebruikers.
+> * Voor het implementeren van beleid voor beheerde apps moet u MAM-beleid maken in de Intune-beheerconsole. Het kan in dit geval verstandig zijn om MAM-beleid te maken in zowel de Intune-beheerconsole als de Azure-portal: in de Intune-beheerconsole om ervoor te zorgen dat u de mogelijkheid hebt om het beleid voor beheerde apps te implementeren en in de Azure-portal omdat dit de nieuwe beheerconsole is die alle instellingen voor MAM-beleid bevat.
+
+> * Als u MAM-beleid maakt in zowel de Intune-beheerconsole als de Azure-portal, wordt het beleid dat in de Azure-portal is gemaakt, toegepast op de apps.
 
 Voor een lijst met beleidsinstellingen die worden ondersteund voor het Android- en iOS-platform, selecteert u een van de volgende mogelijkheden:
 
@@ -165,6 +169,6 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

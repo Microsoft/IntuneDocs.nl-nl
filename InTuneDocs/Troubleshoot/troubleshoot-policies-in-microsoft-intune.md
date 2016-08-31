@@ -4,7 +4,7 @@ description: Problemen met de configuratie van het beleid oplossen.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ In de onderstaande schermafbeelding ziet u twee duidelijke voorbeelden:
 
 > [!NOTE]
 > Houd er rekening mee dat wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, in de praktijk het meest beperkende beleid van toepassing is.
-
-## Intervallen voor het vernieuwen en bijwerken van beleid
-Beleid wordt regelmatig vernieuwd en bijgewerkt. In het algemeen moet beleid binnen 15 minuten nadat u een wijziging hebt aangebracht, op apparaten worden geregistreerd. Hier vindt u meer informatie over intervallen voor het vernieuwen van beleid:
-
--   **Windows-apparaat dat is geregistreerd voor MDM**: het beleid wordt elke 8 uur voor Windows 8.1- en Windows 10-apparaten bijgewerkt en elke 24 uur voor Windows RT-apparaten.
-
--   **Windows Phone**: het beleid wordt elke 8 uur bijgewerkt. Dit kan worden afgedwongen door in de bedrijfsportal onder **Instellingen** voor Vernieuwen te kiezen.
-
--   **iOS**: het beleid wordt eenmaal per dag met een willekeurig tijdsinterval bijgewerkt. Dit kan ook worden afgedwongen door de bedrijfsportal te openen, het apparaat te selecteren en **Synchroniseren** te kiezen.
-
--   **Android**: het beleid wordt eenmaal per dag met een willekeurig tijdsinterval bijgewerkt. Dit kan ook worden afgedwongen door de bedrijfsportal te openen, het apparaat te selecteren en **Synchroniseren** te kiezen.
 
 ## Aan Microsoft Intune-beleid gerelateerde fouten in policyplatform.log
 Bij niet-MDM-Windows-apparaten kunnen beleidsfouten in het bestand policyplatform.log het gevolg zijn van niet-standaardinstellingen in Windows Gebruikersaccountbeheer (UAC) op het apparaat. Bepaalde niet-standaard-UAC-instellingen kunnen invloed hebben op Microsoft Intune-clientinstallaties en de beleidsuitvoering.
@@ -93,9 +82,6 @@ Veeg bijvoorbeeld in Windows RT op het bureaublad vanaf rechts over het scherm o
 In het navigatiemenu aan de linkerkant vindt u onderaan een koppeling **Beveiligingsbeleid opnieuw instellen** . Kies deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
 Andere MDM-apparaten, zoals Android, Windows Phone 8.1 en hoger of iOS moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden ingeschreven zodat u een minder beperkend beleid kunt toepassen.
 
-## Bij Android-apparaten worden geen wijzigingen in het beveiligingsbeleid geforceerd zonder goedkeuring van de eindgebruiker
-Bij Android MDM wordt het niet toegestaan dat door de service beleidswijzigingen op apparaten worden geforceerd, zoals dat op andere platforms gebeurt. Dit wordt veroorzaakt door de Android-functionaliteit en is niet gerelateerd aan de Intune-service. Bij Android-apparaten wordt de eindgebruiker gevraagd om akkoord te gaan via het meldingsvenster van de betreffende beleidswijziging (wachtwoord, versleuteling, enzovoort).  De eindgebruiker moet reageren op de vraag en wanneer deze het beleid heeft geaccepteerd, moet dit worden toegepast.
-
 ## Kan geen beleid maken of clients registreren als de bedrijfsnaam speciale tekens bevat
 **Probleem:** u kunt geen beleid maken of clients registreren.
 
@@ -106,6 +92,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

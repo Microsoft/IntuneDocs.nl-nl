@@ -13,14 +13,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
 
 
 ---
 
 # Apparaten inschrijven bij Intune voor beheer
 Mobile Device Management (MDM) van Microsoft Intune maakt gebruik van inschrijving om apparaten onder beheer te brengen en toegang tot bronnen toe te staan. De manier waarop u apparaten inschrijft, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. 'Bring your own device'-scenario’s (BYOD-scenario’s) en scenario’s met apparaten die bedrijfseigendom zijn (COD, company-owned device), vereisen een inschrijvingsproces. Organisaties die Exchange ActiveSync gebruiken, lokaal of gehost in de cloud, kunnen lichter beheer zonder inschrijvingsvereisten toepassen. Windows-pc's kunnen ook worden beheerd met Intune-clientsoftware.
+
+Zie [Kiezen hoe u apparaten inschrijft](/intune/get-started/choose-how-to-enroll-devices1) voor hulp.
 
 ###  Ondersteunde apparaatplatformen
 
@@ -149,6 +151,6 @@ Computers die door Intune-clientsoftware worden beheerd, kunnen niet selectief w
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
