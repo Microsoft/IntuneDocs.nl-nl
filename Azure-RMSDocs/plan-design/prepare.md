@@ -1,27 +1,26 @@
 ---
 title: Voorbereiden voor Azure Rights Management | Azure RMS
-description: 
-keywords: 
+description: Wanneer u zich hebt geregistreerd voor een cloudabonnement en u voor uw organisatie een account hebt geregeld voor Microsoft Office 365 of Azure Active Directory, bent u er klaar voor om de Rights Management-service in te schakelen.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4ebdb8a75b135f4f252d640e4f16da1ea7a1ed04
 
 
 ---
 
 # Voorbereiden voor Azure Rights Management
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Wanneer u zich hebt geregistreerd voor een cloudabonnement en u voor uw organisatie een account hebt geregeld voor [!INCLUDE[o365_1](../includes/o365_1_md.md)] of Azure Active Directory, bent u er klaar voor om de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]-service in te schakelen.
 
@@ -43,6 +42,6 @@ Standaard is [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

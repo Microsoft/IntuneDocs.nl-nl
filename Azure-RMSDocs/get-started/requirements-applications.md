@@ -1,20 +1,19 @@
 ---
 title: Azure RMS-vereisten&#58; toepassingen | Azure RMS
-description: 
-keywords: 
+description: "In de volgende tabel ziet u de toepassingen die Azure RMS standaard ondersteunen, wat betekent dat RMS nauw is geïntegreerd in deze toepassingen met behulp van RMS API's ter ondersteuning van gebruiksbeperkingen. Deze toepassingen zijn dan voorzien van RMS-functionaliteit."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/15/2016
+ms.date: 08/19/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b02be530af8ee1bc1e5d5f16275d2fb28e2134b7
-ms.openlocfilehash: a885ab6deaf874a8c66623c34eddc2b2778e0005
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d3408f954381978287852dd74a38c5903f583dda
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: a885ab6deaf874a8c66623c34eddc2b2778e0005
 
 # Azure RMS-vereisten: toepassingen
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 In de volgende tabel ziet u de toepassingen die Azure RMS standaard ondersteunen, wat betekent dat RMS nauw is geïntegreerd in deze toepassingen met behulp van RMS API's ter ondersteuning van gebruiksbeperkingen. Deze toepassingen zijn dan voorzien van RMS-functionaliteit.
@@ -42,7 +41,7 @@ Informatie over de tabelkolommen:
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
 |**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile-apps (alleen Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client voor Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS-app voor delen|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|RMS-toepassing voor delen voor Windows: tekst, afbeeldingen, pfile<br /><br />Siemens JT2Go: JT-bestanden (alleen Windows 10)|
 |**iOS**|Office voor iPad en iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook voor iPad en iPhone [[4]](#footnote-4)<br /><br />OWA voor iOS [[3]](#footnote-3)<br /><br />TITUS Mail|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile<br /><br />TITUS Docs: Pfile|
-|**Android**|GigaTrust-app voor Android<br /><br />Office Online (alleen Azure RMS) [[2]](#footnote-2)<br /><br />Office Mobile [[1]](#footnote-1)|GigaTrust-app voor Android<br /><br />Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust-app voor Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook voor Android [[4]](#footnote-4)<br /><br />OWA voor Android [[3]](#footnote-3) en [[7]](#footnote-7)<br /><br />Samsung Email (S3 en later) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile|
+|**Android**|GigaTrust-app voor Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile (alleen Azure RMS) [[1]](#footnote-1)|GigaTrust-app voor Android<br /><br />Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust-app voor Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook voor Android [[4]](#footnote-4)<br /><br />OWA voor Android [[3]](#footnote-3) en [[7]](#footnote-7)<br /><br />Samsung Email (S3 en later) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile|
 |**OS X**|Office 2011 (alleen AD RMS)<br /><br />Office 2016 voor Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS-app voor delen [[1]](#footnote-1)|Outlook 2011 (alleen AD RMS)<br /><br />Outlook 2016 voor Mac<br /><br />Outlook voor Mac|RMS-app voor delen [[1]](#footnote-1): tekst, afbeeldingen, pfile|
 |**Windows 10 Mobile**|Office Mobile-apps (alleen Azure RMS) [[1]](#footnote-1)|Niet ondersteund|Citrix WorxMail [[6]](#footnote-6)<br /><br />Outlook Mail|Niet ondersteund|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|Niet ondersteund|Outlook 2013 RT<br /><br />E-mail-app voor Windows<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go: JT-bestanden|
@@ -148,6 +147,6 @@ Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](../unde
 Zie [Toepassingen configureren voor Azure Rights Management](../deploy-use/configure-applications.md) voor meer informatie over het configureren van veelgebruikte toepassingen voor Azure RMS.
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

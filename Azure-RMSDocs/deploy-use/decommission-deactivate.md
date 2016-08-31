@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management uit bedrijf nemen en deactiveren | Azure RMS
-description: 
-keywords: 
+description: U bepaalt altijd zelf of uw organisatie inhoud beveiligt met Azure RMS, en als u besluit deze oplossing voor gegevensbeveiliging niet meer te gebruiken, hebt u de zekerheid dat u inhoud die eerder beveiligd was toegankelijk blijft. Als u geen toegang meer hoeft te hebben tot eerder beveiligde inhoud, kunt u de service eenvoudig deactiveren en uw abonnement voor Azure Rights Management laten verlopen. Dit zou bijvoorbeeld het geval kunnen zijn wanneer u klaar bent met testen voordat u de oplossing in een productieomgeving implementeert.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 40e4997f67a078ec781f1e7800599554858777a8
 
 
 ---
 
 # Azure Rights Management uit bedrijf nemen en deactiveren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 U bepaalt altijd zelf of uw organisatie inhoud beveiligt door [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS), en als u besluit deze oplossing voor gegevensbeveiliging niet meer te gebruiken, hebt u de zekerheid dat u inhoud die eerder beveiligd was toegankelijk blijft. Als u geen toegang meer hoeft te hebben tot eerder beveiligde inhoud, kunt u de service eenvoudig deactiveren en uw abonnement voor Azure Rights Management laten verlopen. Dit zou bijvoorbeeld het geval kunnen zijn wanneer u klaar bent met testen [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] voordat u de oplossing in een productieomgeving implementeert.
 
@@ -92,6 +91,6 @@ Voor de **RIGHTS MANAGEMENT STATUS** wordt nu **Inactief** weergegeven en de opt
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

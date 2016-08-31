@@ -1,27 +1,26 @@
 ---
 title: Migreren van AD RMS naar Azure Rights Management | Azure RMS
-description: 
-keywords: 
+description: Voer de volgende instructies uit om uw Active Directory Rights Management Services (AD RMS)-implementatie te migreren naar Azure Rights Management (Azure RMS). Na de migratie hebben gebruikers nog steeds toegang tot documenten en e-mailberichten die uw organisatie heeft beveiligd met AD RMS, terwijl voor nieuw beveiligde inhoud Azure RMS wordt gebruikt.
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bead12db04e6fcf2f9e4af5148d3f8a4ef4089da
 
 
 ---
 
 # Migreren van AD RMS naar Azure Rights Management
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management*
 
 Voer de volgende instructies uit om uw Active Directory Rights Management Services (AD RMS)-implementatie te migreren naar Azure Rights Management (Azure RMS). Na de migratie hebben gebruikers nog steeds toegang tot documenten en e-mailberichten die uw organisatie heeft beveiligd met AD RMS, terwijl voor nieuw beveiligde inhoud Azure RMS wordt gebruikt.
 
@@ -185,6 +184,6 @@ Voor het starten van de migratie gaat u naar [Fase 1 - configuratie aan serverzi
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

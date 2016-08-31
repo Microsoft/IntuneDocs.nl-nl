@@ -1,20 +1,19 @@
 ---
 title: Veelgestelde vragen over de evaluatieversie van Azure Information Protection | Azure Information Protection
-description: 
-keywords: 
+description: Hebt u een vraag over de preview-versie van Azure Information Protection? U vindt hier wellicht het antwoord.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
-ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
 
 
 ---
@@ -57,7 +56,7 @@ Deze preview-versie heeft de volgende beperkingen: Bekijk de aankondigingen op d
 
 ## Welk abonnement heb ik nodig Azure Information Protection uit te proberen?
 
-Voor de preview-versie kunt u elk abonnement gebruiken waarmee u over Azure Rights Management beschikt. Azure Information Protection is beschikbaar in alle regio's. Voor meer informatie over de beschikbare abonnementen en koppelingen naar gratis proefversies raadpleegt u [Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS](../get-started/requirements-subscriptions.md).
+Voor de evaluatieversie kunt u elk Office 365-abonnement gebruiken dat beveiliging van Office-documenten en e-mailberichten biedt via Azure Rights Management. Azure Information Protection is beschikbaar in alle regio's. Raadpleeg de sectie [Office 365 subscription](../get-started/requirements-subscriptions.md#office-365-subscription) (Office 365 -abonnement) in de documentatie over de vereisten voor Azure RMS voor meer informatie over de beschikbare abonnementen en koppelingen naar gratis proefversies.
 
 Als u het Azure Information Protection-beleid in Azure Portal wilt configureren, moet u een abonnement voor Azure hebben. Als u nog geen Azure-abonnement voor uw organisatie hebt, kunt u er een krijgen door u aan te melden voor een gratis proefversie. Ga naar de pagina [Aan de slag met Azure](https://account.windowsazure.com/organization) en volg de instructies.
 
@@ -188,6 +187,6 @@ Ga vervolgens naar onze [Yammer-site](https://www.yammer.com/askipteam/#/threads
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

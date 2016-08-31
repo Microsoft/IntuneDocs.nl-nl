@@ -1,38 +1,31 @@
 ---
-# required metadata
-
-title: "Azure RMS-vereisten: cloudabonnementen | Azure RMS"
-description:
-keywords:
+title: 'Azure RMS-vereisten: cloudabonnementen | Azure RMS'
+description: Voor het gebruik van Azure Rights Management (RMS) moet uw organisatie beschikken over ten minste een van de volgende abonnementen, met voldoende licenties voor gebruikers en services die bestanden en e-mailberichten beveiligen. Als u een service hebt die gebruikers (eigenaren van de bestanden of e-mailberichten) beschermt, hebben deze gebruikers een van deze licenties nodig. Gebruikers die deze beveiligde gegevens alleen gebruiken (bijvoorbeeld lezen en bewerken), hebben geen licentie nodig.
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 08/22/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 4cac0f039e69e31943bb8773d0761f7e654cc940
+
 
 ---
 
 
 # Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Voor het gebruik van Azure Rights Management (RMS) moet uw organisatie beschikken over ten minste een van de volgende abonnementen, met voldoende licenties voor gebruikers en services die bestanden en e-mailberichten beveiligen. Als u een service hebt die gebruikers (eigenaren van de bestanden of e-mailberichten) beschermt, hebben deze gebruikers een van deze licenties nodig. Gebruikers die deze beveiligde gegevens alleen gebruiken (bijvoorbeeld lezen en bewerken), hebben geen licentie nodig.
 
--   Office 365
+-   Office 365 (bepaalde abonnementen)
 
 -   Azure Rights Management Premium (voorheen Azure RMS Standalone)
 
@@ -40,9 +33,9 @@ Voor het gebruik van Azure Rights Management (RMS) moet uw organisatie beschikke
 
 -   RMS voor personen
 
-Raadpleeg de volgende gedeeltes voor meer informatie en abonnementsopties.
+Raadpleeg de volgende gedeelten voor meer informatie en abonnementsopties:
 
-Zie voor een licentievergelijking van de Azure RMS-functies voor betaalde abonnementen [Vergelijking van aanbiedingen voor Rights Management Services (RMS)](http://technet.microsoft.com/dn858608).
+Zie voor een licentievergelijking van de Azure RMS-functies voor betaalde abonnementen [Comparison of Rights Management Services (RMS) Offerings](http://technet.microsoft.com/dn858608) (Vergelijking van aanbiedingen voor Rights Management Services (RMS)).
 
 Hebt u meer vragen over licentieverlening voor Azure RMS? Download de **Veelgestelde vragen over licenties voor Azure Rights Management** op de pagina [Azure Rights Management aanschaffen](https://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/Purchasing.aspx). 
 
@@ -58,8 +51,8 @@ Abonnement  |Inclusief IRM
 Office 365 Business Essentials|Nee|
 Office 365 Business Premium|Nee|
 Office 365 Enterprise E1 <br /><br /> Office 365 Education A1|Nee <br /><br /> Nee|
-Office 365 Enterprise E3 <br /><br /> Office 365 Education A3 <br /><br /> Office 365 Government G3|Ja <br /><br /> Ja <br /><br /> Ja|
-Office 365 Enterprise E4 <br /><br /> Office 365 Education A4 <br /><br /> Office 365 Government G4|Ja <br /><br /> Ja <br /><br /> Ja|
+Office 365 Enterprise E3 <br /><br /> Office 365 Education A3 <br /><br /> Office 365 Government G3|Ja <br /><br /> Ja <br /><br /> Yes|
+Office 365 Enterprise E4 <br /><br /> Office 365 Education A4 <br /><br /> Office 365 Government G4|Yes <br /><br /> Ja <br /><br /> Yes|
 Office 365 Enterprise E5 <br /><br /> Office 365 Education A5|Ja <br /><br /> Ja|
 Office 365 Enterprise K1|Nee|
 SharePoint-abonnement 1 <br /><br /> SharePoint-abonnement 2|Nee <br /><br /> Nee|
@@ -83,7 +76,7 @@ Bij dit abonnement is bovendien een proefperiode voor 25 gebruikers inbegrepen, 
 ### Wat gebeurt er wanneer het proefabonnement is verlopen?
 Als uw proefabonnement is verlopen, verliest u toegang tot inhoud die is beveiligd met uw proefabonnement op Azure RMS. Als u vervolgens echter een abonnement aanschaft dat Azure RMS ondersteunt, wordt de toegang automatisch hersteld.
 
-Een uitzondering op toegangsverlies na het verlopen van een abonnement geldt als uw organisatie Azure RMS gebruikte in combinatie met het abonnement RMS voor personen voordat u het proefabonnement verkreeg. U behoudt dan toegang tot eerder beveiligde inhoud, zelfs nadat het proefabonnement is verlopen.
+Er is geen sprake van toegangsverlies na het verlopen van een abonnement als uw organisatie voorafgaand aan het proefabonnement Azure RMS heeft gebruikt in combinatie met RMS for Individuals. U behoudt dan toegang tot eerder beveiligde inhoud, zelfs nadat het proefabonnement is verlopen.
 
 ## Enterprise Mobility Suite-abonnement
 [Gratis proefabonnement van 30 dagen](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
@@ -100,6 +93,7 @@ Zie voor meer informatie [RMS voor personen en Azure Rights Management](../under
 ## Volgende stappen
 Zie [Vereisten voor Azure Rights Management](requirements-azure-rms.md) voor informatie over andere vereisten.
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

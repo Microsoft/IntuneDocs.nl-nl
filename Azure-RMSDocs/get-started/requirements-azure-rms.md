@@ -1,27 +1,26 @@
 ---
 title: Vereisten voor Azure Rights Management | Azure RMS
-description: 
-keywords: 
+description: Als u Microsoft Azure Rights Management (Azure RMS) wilt implementeren in uw organisatie, moet u voldoen aan de volgende vereisten. U kunt vervolgens het Azure Rights Management-implementatieschema gebruiken om Rights Management voor uw organisatie te implementeren.
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fab331a26e18730e9cc64a24c0501b7ae21aa1b
-ms.openlocfilehash: f225d8579e2440d2eb00a4f821a78727b6442fdd
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: d56eb077ef76e1869c7d90141f1b35c1bdbfe9fa
 
 
 ---
 
 # Vereisten voor Azure Rights Management
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Als u Microsoft Azure Rights Management (Azure RMS) wilt implementeren in uw organisatie, moet u voldoen aan de volgende vereisten. U kunt vervolgens het [Azure Rights Management-implementatieschema](../plan-design/deployment-roadmap.md) gebruiken om Rights Management voor uw organisatie te implementeren.
@@ -34,7 +33,7 @@ Als u Microsoft Azure Rights Management (Azure RMS) wilt implementeren in uw org
 |Toepassingen|Gebruikers moeten toepassingen uitvoeren die RMS ondersteunen.<br /><br />Zie [Toepassingen die Azure RMS ondersteunen](requirements-applications.md) voor meer informatie.|
 |Infrastructuur die verbinding met internet en afhankelijke cloudservices ondersteunt|Als u een firewall of vergelijkbare tussenkomende netwerkapparaten hebt die moeten worden geconfigureerd voor specifieke verbindingen, raadpleegt u de gegevens voor **Azure Rights Management (RMS)** in de [Office 365-portal en gedeelde](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Portal-identity) sectie in het volgende Office-artikel: [Office 365-URL's en IP-adresbereiken](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).<br /><br />Volg de instructies in dit Office-artikel om op de hoogte te blijven van wijzigingen in deze informatie en abonneer u op een RSS-feed.<br /><br />Naast de informatie in het Office-artikel geldt het volgende specifiek voor Azure RMS:<br /><br />- Verbreek de TLS client-naar-service-verbinding niet (bijvoorbeeld om een inspectie op pakketniveau uit te voeren). In dat geval wordt de certificaatkoppeling, die RMS-clients gebruiken in combinatie met door Microsoft beheerde certificeringsinstanties om hun communicatie met Azure RMS te beveiligen, verbroken.<br /><br />- Als u een webproxy gebruikt die verificatie vereist, moet u deze configureren om geïntegreerde Windows-verificatie te gebruiken met de Active Directory-aanmeldingsreferenties van de gebruiker.|
 
-Als u Azure RMS wilt gebruiken in combinatie met lokale servers, worden de volgende producten ondersteund:
+Als u Azure RMS wilt gebruiken in combinatie met on-premises servers, worden de volgende producten ondersteund:
 
 -   Exchange Server
 
@@ -56,6 +55,6 @@ Zie [Lokale servers die Azure RMS ondersteunen](requirements-servers.md) voor me
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

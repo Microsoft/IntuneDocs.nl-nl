@@ -1,20 +1,19 @@
 ---
 title: Nagaan of uw gebruikers zich hebben geregistreerd voor RMS voor personen | Azure RMS
-description: 
-keywords: 
+description: Hoe weet u als beheerder of gebruikers zich hebben geregistreerd voor RMS voor personen? U kunt een van de volgende methoden gebruiken of een combinatie hiervan.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: e577366be26f7296079751e72fb6531b9e28c504
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: dc8c0a69078ffa3be87a5fb02bf86d9afe2dc27e
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: e577366be26f7296079751e72fb6531b9e28c504
 
 # Nagaan of uw gebruikers zich hebben geregistreerd voor RMS voor personen
 
-*Van toepassing op: Azure Rights Management*
+>*Van toepassing op: Azure Rights Management*
 
 Hoe weet u als beheerder of gebruikers zich hebben geregistreerd voor RMS voor personen? U kunt een of een combinatie van de volgende methoden gebruiken:
 
@@ -37,6 +36,6 @@ Hoe weet u als beheerder of gebruikers zich hebben geregistreerd voor RMS voor p
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

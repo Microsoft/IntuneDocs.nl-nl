@@ -1,27 +1,26 @@
 ---
 title: Gebruiksrechten configureren voor Azure Rights Management | Azure RMS
-description: 
-keywords: 
+description: Wanneer u met Azure Rights Management (Azure RMS) zonder sjabloon de beveiliging instelt voor bestanden of e-mail, moet u de gebruiksrechten zelf configureren. Als u daarnaast aangepaste sjablonen voor Azure RMS configureert, selecteert u de gebruiksrechten die vervolgens automatisch worden toegepast wanneer de sjabloon wordt geselecteerd door beheerders, gebruikers of geconfigureerde services.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2016
+ms.date: 08/25/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60f25cdcdabbfbb61072a95e39f84fed79cad871
-ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
+ms.sourcegitcommit: e1f1bef9ce87dcffb8d3da920f19198aa253e8e6
+ms.openlocfilehash: bbfb00822a03609f5b81808e1e1c4cad8c02be0b
 
 
 ---
 
 # Gebruiksrechten configureren voor Azure Rights Management
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Wanneer u met Azure Rights Management (Azure RMS) zonder sjabloon de beveiliging instelt voor bestanden of e-mail, moet u de gebruiksrechten zelf configureren. Als u daarnaast aangepaste sjablonen voor Azure RMS configureert, selecteert u de gebruiksrechten die vervolgens automatisch worden toegepast wanneer de sjabloon wordt geselecteerd door beheerders, gebruikers of geconfigureerde services. In de klassieke Azure-portal kunt u bijvoorbeeld rollen selecteren met een logische configuratie van gebruiksrechten, maar u kunt ook de afzonderlijke rechten configureren.
 
@@ -40,7 +39,7 @@ De onderstaande tabel bevat een lijst en beschrijvingen van de gebruiksrechten d
 |Algemene naam: **Doorsturen** <br /><br />Codering in beleid: **FORWARD**|Hiermee wordt de optie ingeschakeld voor het doorsturen van een e-mailbericht en het toevoegen van geadresseerden in de regels **Aan** en **CC**. Dit recht geldt niet voor documenten maar alleen voor e-mailberichten.<br /><br />Dit recht staat de doorstuurserver niet toe rechten te verlenen aan andere gebruikers als onderdeel van de doorstuuractie.|Aangepaste Office-rechten: geweigerd bij gebruik van het standaardbeleid **Niet doorsturen**.<br /><br />Naam in de klassieke Azure-portal: **Doorsturen**<br /><br />Naam in AD RMS-sjablonen: **Doorsturen** <br /><br />API-constante of -waarde: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |Algemene naam: **Volledig beheer** <br /><br />Codering in beleid: **OWNER**|Hiermee worden alle rechten voor het document verleend en kunnen alle beschikbare acties worden uitgevoerd.<br /><br />Omvat de mogelijkheid om beveiliging op te heffen en een document opnieuw te beveiligen.|Aangepaste Office-rechten: als de aangepaste optie **Volledig beheer**.<br /><br />Naam in de klassieke Azure-portal: **Volledig beheer**<br /><br />Naam in AD RMS-sjablonen: **Volledig beheer** <br /><br />API-constante of -waarde: `IPC_GENERIC_ALL L"OWNER"`|
 |Algemene naam: **Afdrukken** <br /><br />Codering in beleid: **PRINT**|Hiermee wordt optie ingeschakeld voor het afdrukken van de inhoud.|Aangepaste Office-rechten: als de optie **Inhoud afdrukken** in aangepaste machtigingen. Geen instelling die per ontvanger wordt ingesteld.<br /><br />Naam in de klassieke Azure-portal: **Afdrukken**<br /><br />Naam in AD RMS-sjablonen: **Afdrukken** <br /><br />API-constante of -waarde: `IPC_GENERIC_PRINT L"PRINT"`|
-|Algemene naam: **Beantwoorden** <br /><br />Codering in beleid: **PRINT**|Hiermee wordt de optie **Beantwoorden** ingeschakeld in een e-mailclient zonder dat wijzigingen in de regels **Aan** of **CC** mogen worden aangebracht.|Aangepaste Office-rechten: niet van toepassing.<br /><br />Naam in de klassieke Azure-portal: **Antwoorden**<br /><br />Naam in AD RMS-sjablonen: **Antwoorden** <br /><br />API-constante of -waarde: `IPC_EMAIL_REPLY`|
+|Algemene naam: **Beantwoorden** <br /><br />Codering in beleid: **REPLY**|Hiermee wordt de optie **Beantwoorden** ingeschakeld in een e-mailclient zonder dat wijzigingen in de regels **Aan** of **CC** mogen worden aangebracht.|Aangepaste Office-rechten: niet van toepassing.<br /><br />Naam in de klassieke Azure-portal: **Antwoorden**<br /><br />Naam in AD RMS-sjablonen: **Antwoorden** <br /><br />API-constante of -waarde: `IPC_EMAIL_REPLY`|
 |Algemene naam: **Allen beantwoorden** <br /><br />Codering in beleid: **REPLYALL**|Hiermee wordt de optie **Allen beantwoorden** ingeschakeld in een e-mailclient, maar mag de gebruiker geen geadresseerden toevoegen in de regels **Aan** of **CC**.|Aangepaste Office-rechten: niet van toepassing.<br /><br />Naam in de klassieke Azure-portal: **Allen beantwoorden**<br /><br />Naam in AD RMS-sjablonen: **Allen beantwoorden** <br /><br />API-constante of -waarde: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |Algemene naam: **Weergeven, Openen, Lezen** <br /><br />Codering in beleid: **VIEW**|Hiermee kan de gebruiker het document openen en de inhoud bekijken.|Aangepaste Office-rechten: als onderdeel van het aangepaste beleid **Lezen**, optie **Weergave**.<br /><br />Naam in de klassieke Azure-portal: **Weergave**<br /><br />Naam in AD RMS-sjablonen: **Allen beantwoorden** <br /><br />API-constante of -waarde: `IPC_GENERIC_READ L"VIEW"`|
 |Algemene naam: **Kopiëren** <br /><br />Codering in beleid: **EXTRACT**|Hiermee schakelt u opties in voor het kopiëren van gegevens (inclusief schermopnamen) uit het document naar hetzelfde of een ander document.<br /><br />In sommige toepassingen kunt u ook het hele document opslaan in een niet-beveiligde vorm.|Aangepaste Office-rechten: als de aangepaste beleidsoptie **Gebruikers met leestoegang toestaan om inhoud te kopiëren**.<br /><br />Naam in de klassieke Azure-portal: **Inhoud kopiëren en extraheren**<br /><br />Naam in AD RMS-sjablonen: **Extraheren** <br /><br />API-constante of -waarde: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
@@ -102,6 +101,6 @@ Een gebruiker wil per e-mail aan specifieke personen van de marketingafdeling be
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

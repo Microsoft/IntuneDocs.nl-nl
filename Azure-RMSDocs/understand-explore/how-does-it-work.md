@@ -1,20 +1,19 @@
 ---
 title: Hoe werkt Azure RMS | Azure RMS
-description: 
-keywords: 
+description: Een van de belangrijke dingen die u moet weten om te begrijpen hoe Azure RMS werkt, is dat de Rights Management-service (en Microsoft) uw gegevens niet zien of opslaan als onderdeel van het gegevensbeveiligingsproces. Informatie die u beveiligt, wordt nooit verzonden naar of opgeslagen in Azure, tenzij u de informatie zelf expliciet opslaat in Azure of een andere cloudservice gebruikt waarmee informatie wordt opgeslagen in Azure. Azure RMS maakt alleen de gegevens in een document onleesbaar, behalve voor gemachtigde gebruikers en services.
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
-ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 527af70532f390330fdb65bc27b04bb366289748
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
 
 # Hoe werkt Azure RMS Onderhuids
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Een van de belangrijke dingen die u moet weten om te begrijpen hoe Azure RMS werkt, is dat de Rights Management-service (en Microsoft) uw gegevens niet zien of opslaan als onderdeel van het gegevensbeveiligingsproces. Gegevens die u beveiligt, worden nooit verzonden naar of opgeslagen in Azure, tenzij u deze gegevens zelf expliciet opslaat in Azure of een andere cloudservice gebruikt waarmee gegevens worden opgeslagen in Azure. Azure RMS maakt alleen de gegevens in een document onleesbaar, behalve voor gemachtigde gebruikers en services:
 
@@ -151,6 +150,6 @@ Als u klaar bent om Azure RMS in uw organisatie te implementeren, gebruikt u het
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

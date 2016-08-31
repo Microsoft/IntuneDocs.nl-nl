@@ -1,27 +1,26 @@
 ---
 title: De Rights Management-toepassing voor delen downloaden en installeren | Azure RMS
-description: 
-keywords: 
+description: U hoeft geen lokale beheerder te zijn om de RMS-toepassing voor delen te installeren Als u echter geen beheerder bent en u Office 2010 gebruikt, zijn er enkele beperkingen. Zie het gedeelte Als u geen lokale beheerder bent en Office 2010 gebruikt op deze pagina voor meer informatie.
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 28c015a5c46668bd5466aa07961b05582bb9b2c2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 
 
 ---
 
 # De Rights Management-toepassing voor delen downloaden en installeren
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
 
 U hoeft geen lokale beheerder te zijn om de RMS-toepassing voor delen te installeren Als u echter geen beheerder bent en u Office 2010 gebruikt, zijn er enkele beperkingen. Zie voor meer informatie het gedeelte [Als u geen lokale beheerder bent en Office 2010 gebruikt](#if-you-are-not-a-local-administrator-and-use-office-2010) op deze pagina.
 
@@ -70,6 +69,6 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

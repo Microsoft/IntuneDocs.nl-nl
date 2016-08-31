@@ -1,20 +1,19 @@
 ---
 title: Sjablonen vernieuwen | Azure RMS
-description: 
-keywords: 
+description: Als u Azure RMS gebruikt, worden sjablonen automatisch gedownload naar clientcomputers, zodat gebruikers deze in hun toepassingen kunnen selecteren. U moet mogelijk echter extra stappen uitvoeren als u de sjablonen wilt wijzigen.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
-ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
 
 # Sjablonen voor gebruikers vernieuwen
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Als u Azure RMS gebruikt, worden sjablonen automatisch gedownload naar clientcomputers, zodat gebruikers deze in hun toepassingen kunnen selecteren. U moet mogelijk echter extra stappen uitvoeren als u de sjablonen wilt wijzigen:
 
@@ -187,6 +186,6 @@ Door het register op de computers met Office 2010 te bewerken, kunt u een waarde
 [Aangepaste sjablonen configureren voor Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
