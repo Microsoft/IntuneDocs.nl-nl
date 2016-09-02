@@ -1,27 +1,26 @@
 ---
 title: Notities bij de implementatie van de RMS-client | Azure RMS
-description: 
-keywords: 
+description: Versie 2 van de Rights Management Service-client (RMS-client) is ook bekend als de MSIPC-client. Deze software voor Windows-computers communiceert met Microsoft Rights Management-services on-premises of in de cloud voor beveiliging van de toegang tot en het gebruik van informatie wanneer deze informatie wordt gebruikt door toepassingen en apparaten binnen de grenzen van uw organisatie, of buiten deze beheerde grenzen. De RMS-client wordt geleverd bij de Rights Management-toepassing voor delen voor Windows, maar is ook beschikbaar als optionele download die, met bevestiging en instemming van de gebruiksrechtovereenkomst, vrijelijk kan worden gedistribueerd bij software van derden zodat clients inhoud kunnen beveiligen en verbruiken die wordt beveiligd door Rights Management-services.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
-ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 6d80958fe4d56458b7dee48e7475a37de8a102bd
 
 
 ---
 
 # Notities bij de implementatie van de RMS-client
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 7 met SP1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 7 met SP1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista*
 
 Versie 2 van de Rights Management Service-client (RMS-client) is ook bekend als de MSIPC-client. Deze software voor Windows-computers communiceert met Microsoft Rights Management-services on-premises of in de cloud voor beveiliging van de toegang tot en het gebruik van informatie wanneer deze informatie wordt gebruikt door toepassingen en apparaten binnen de grenzen van uw organisatie, of buiten deze beheerde grenzen. De RMS-client wordt geleverd bij de [Rights Management-toepassing voor delen voor Windows](sharing-app-windows.md), maar is ook beschikbaar [als optionele download](http://www.microsoft.com/download/details.aspx?id=38396) die, met bevestiging en instemming van de gebruiksrechtovereenkomst, vrijelijk kan worden gedistribueerd bij software van derden zodat clients inhoud kunnen beveiligen en verbruiken die wordt beveiligd door Rights Management-services.
 
@@ -239,6 +238,6 @@ In sommige gevallen moet u mogelijk verkeer omleiden tijdens servicedetectie, bi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management en AD RMS vergelijken | Azure RMS
-description: 
-keywords: 
+description: "Als u Active Directory Rights Management Services (AD RMS) kent of eerder hebt geïmplementeerd, wilt u wellicht weten wat de verschillen met Azure RMS zijn op het gebied van functionaliteit en vereisten."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: ce79ec40cbd8ca3796a17920d27dc3872cd40842
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 7dd888f28e5f4d307a1f96203516d3b058541ba5
 
 
 ---
 
 # Azure Rights Management en AD RMS vergelijken
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management Office 365*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management Office 365*
 
 Als Active Directory Rights Management Services (AD RMS) kent of eerder hebt geïmplementeerd, wilt u wellicht wat de verschillen met [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) zijn op het gebied van functionaliteit en vereisten. 
 
@@ -76,6 +75,6 @@ Zie [Migreren van AD RMS naar Azure Rights Management](../plan-design/migrate-fr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

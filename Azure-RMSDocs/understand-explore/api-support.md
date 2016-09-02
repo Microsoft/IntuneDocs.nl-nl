@@ -1,27 +1,26 @@
 ---
 title: Andere toepassingen die ondersteuning bieden voor de RMS-API's - Installatie en configuratie | Azure RMS
-description: 
-keywords: 
+description: Gebruik de volgende informatie om te begrijpen hoe Azure Rights Management (Azure RMS) ondersteuning kan bieden voor andere toepassingen bij het beveiligen van de gegevens van uw organisatie.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: bb69cda94bf611712eb5b4a74d9ec25d1749da3a
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d94494160df269d6a583c3152769f84ec51f886e
 
 
 ---
 
-# Andere toepassingen die ondersteuning bieden voor de RMS API's
+# Andere programma’s die ondersteuning bieden voor de RMS API's
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Gebruik de volgende informatie om te begrijpen hoe Azure Rights Management (Azure RMS) ondersteuning kan bieden voor andere toepassingen bij het beveiligen van de gegevens van uw organisatie.
 
@@ -34,6 +33,6 @@ Op dezelfde wijze bieden veel softwareleveranciers oplossingen voor gegevensbeve
 Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applications-support.md) voor meer informatie over de wijze waarop andere toepassingen en services ondersteuning bieden voor Azure Rights Management.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

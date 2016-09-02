@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management controleren| Azure RMS
-description: 
-keywords: 
+description: Nadat u Azure RMS hebt geactiveerd en eventuele aanvullende configuratiestappen hebt uitgevoerd die vereist zijn voor uw organisatie, kunt u controleren of de service werkt zoals verwacht. Hiertoe gebruikt u een gebruikersaccount en vervolgens probeert u de beveiligde inhoud te openen en gebruiken vanaf een ander gebruikersaccount.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: afa1fb35110918b9b97f91534616e1933e13b149
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b24fa3540e4e9b9cc02ba3bcd83f5864ce8674d6
 
 
 ---
 
 # Azure Rights Management controleren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Nadat u [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) hebt geactiveerd en eventuele aanvullende configuratiestappen hebt uitgevoerd die vereist zijn voor uw organisatie, kunt u controleren of de service werkt zoals verwacht. Hiertoe gebruikt u een gebruikersaccount en vervolgens probeert u de beveiligde inhoud te openen en gebruiken vanaf een ander gebruikersaccount.
 
@@ -41,6 +40,6 @@ U kunt controleren hoe uw organisatie gebruikmaakt van informatiebeveiliging met
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

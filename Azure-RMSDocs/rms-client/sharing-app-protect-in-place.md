@@ -1,27 +1,26 @@
 ---
 title: Een bestand beveiligen op een apparaat (direct beveiligen) met behulp van de Rights Management-toepassing voor delen | Azure RMS
-description: 
-keywords: 
+description: "Wanneer u een bestand in-place beveiligt, dan vervangt deze het oorspronkelijke, niet-beveiligde bestand. Vervolgens kunt u het bestand laten waar het is, kopiëren naar een andere map of apparaat, of de map waar het in zit delen en het bestand blijft beveiligd. U kunt ook het beveiligde bestand in een e-mailbericht bijsluiten, hoewel de aanbevolen manier om een beveiligd bestand via e-mail te delen rechtstreeks vanuit Verkenner of een Office-toepassing is."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 638c2f27c8d552653dcf3f41d8fad6d44cb08887
-ms.openlocfilehash: 5150351ec6772b95d77698dc39a1f69105c02d2c
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 55f5f9dd0dd90bfa98798b4fc0b4cb4bd3c90076
 
 
 ---
 
 # Een bestand op een apparaat beveiligen (direct beveiligen) met de Rights Management-toepassing voor delen
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
 
 Wanneer u een bestand in-place beveiligt, dan vervangt deze het oorspronkelijke, niet-beveiligde bestand. Vervolgens kunt u het bestand laten waar het is, kopiëren naar een andere map of apparaat, of de map waar het in zit delen en het bestand blijft beveiligd. U kunt het beveiligde bestand ook in een e-mailbericht bijsluiten, hoewel de aanbevolen manier om een beveiligd bestand via e-mail te delen rechtstreeks vanuit Verkenner of een Office-toepassing is (zie [Een bestand beveiligen dat u per e-mail deelt met de Rights Management-toepassing voor delen](sharing-app-protect-by-email.md)).
 
@@ -67,6 +66,6 @@ Voor voorbeelden over hoe u de Rights Management-toepassing voor delen kunt gebr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

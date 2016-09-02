@@ -1,27 +1,26 @@
 ---
 title: Scenario - Werkmappen voor permanente beveiliging configureren | Azure RMS
-description: 
-keywords: 
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruik gemaakt van Azure Rights Management om permanente beveiliging toe te passen op Office-documenten in Werkmappen. Werkmappen gebruikt een functieservice voor bestandsservers met Windows Server waarmee gebruikers consistent toegang hebben tot de werkbestanden op hun pc's en apparaten. Hoewel Werkmappen bestanden beveiligt met een eigen versleuteling, gaat deze beveiliging verloren als de bestanden buiten de Werkmappen-omgeving worden verplaatst.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
 
 
 ---
 
 # Scenario - Werkmappen voor permanente beveiliging configureren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruik gemaakt van Azure Rights Management om permanente beveiliging toe te passen op Office-documenten in [Werkmappen](https://technet.microsoft.com/library/dn265974.aspx). Werkmappen gebruikt een functieservice voor bestandsservers met Windows Server waarmee gebruikers consistent toegang hebben tot de werkbestanden op hun pc's en apparaten. Hoewel Werkmappen bestanden beveiligt met een eigen versleuteling, gaat deze beveiliging verloren als de bestanden buiten de Werkmappen-omgeving worden verplaatst. Gebruikers kopiëren de gesynchroniseerde bestanden bijvoorbeeld naar een locatie die niet wordt beheerd door uw IT-afdeling of de bestanden worden per e-mail verzonden naar anderen.
 
@@ -123,6 +122,6 @@ Als u de aangepaste sjabloon had geconfigureerd zoals beschreven voor dit scenar
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

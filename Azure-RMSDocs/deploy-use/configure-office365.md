@@ -1,27 +1,26 @@
 ---
 title: Office 365&colon; configuratie voor clients en onlineservices | Azure RMS
-description: 
-keywords: 
+description: Omdat Office 365 systeemeigen ondersteuning biedt voor Azure RMS, is er geen configuratie van een clientcomputer vereist voor de ondersteuning van de functies voor Information Rights Management (IRM) voor toepassingen zoals Word, Excel, PowerPoint, Outlook en Outlook Web App. Het enige wat gebruikers hoeven te doen, is zich met hun Microsoft Office 365-referenties aan te melden bij hun Office-toepassingen. Vervolgens kunnen zij bestanden en e-mails beveiligen, en bestanden en e-mails gebruiken die door anderen zijn beveiligd.
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 09f152ef910cf9c08c9a693f79c40f491263c5d3
 
 
 ---
 
 # Office 365: configuratie voor clients en onlineservices
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Omdat Office 365 systeemeigen ondersteuning biedt voor Azure RMS, is er geen configuratie van een clientcomputer vereist voor de ondersteuning van de functies voor Information Rights Management (IRM) voor toepassingen zoals Word, Excel, PowerPoint, Outlook en Outlook Web App. Gebruikers hoeven zich alleen maar met hun [!INCLUDE[o365_1](../includes/o365_1_md.md)]-referenties aan te melden bij hun Office-toepassingen om bestanden en e-mails te beveiligen en om bestanden en e-mails te gebruiken die zijn beveiligd door anderen.
 
@@ -1106,6 +1105,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

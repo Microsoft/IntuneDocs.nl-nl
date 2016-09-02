@@ -1,27 +1,26 @@
 ---
 title: BYOK-prijzen en -beperkingen | Azure RMS
-description: 
-keywords: 
+description: Organisaties die een abonnement hebben waarin Azure Rights Management is opgenomen, kunnen door de klant beheerde sleutels (BYOK) in Azure Key Vault gebruiken en het gebruik hiervan gratis registreren. U moet echter een Azure-abonnement hebben dat ondersteuning biedt voor Key Vault met HSM-beveiligde sleutels voor het gebruik van Azure Key Vault. Het gebruik van een sleutel in Azure Key Vault brengt maandelijkse kosten met zich mee. Zie de pagina met prijzen van Azure Key Vault voor meer informatie.
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
 
 
 ---
 
 # BYOK-prijzen en -beperkingen
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Organisaties die een abonnement hebben waarin Azure Rights Management is opgenomen, kunnen door de klant beheerde sleutels (BYOK) in Azure Key Vault gebruiken en het gebruik hiervan gratis registreren. U moet echter een Azure-abonnement hebben dat ondersteuning biedt voor Key Vault met HSM-beveiligde sleutels voor het gebruik van Azure Key Vault. Het gebruik van een sleutel in Azure Key Vault brengt maandelijkse kosten met zich mee. Zie de [pagina met prijzen van Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) voor meer informatie.
@@ -63,6 +62,6 @@ Als u hebt besloten om de standaardconfiguratie te handhaven, waarbij Microsoft 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

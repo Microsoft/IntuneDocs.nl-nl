@@ -1,20 +1,19 @@
 ---
 title: Vereisten voor Azure Information Protection | Azure RMS
-description: 
-keywords: 
+description: Om de preview-versie van Azure Information Protection te gebruiken, moet u voldoen aan de volgende vereisten.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aa4353e5-c5b0-47f6-a6f9-87d13e8f075f
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c0652e05576ab28d7b77380ab1b8aa0ca2d3e479
-ms.openlocfilehash: e3eb845af4e2cfec43c63c9625163f62c83cf954
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: cc1ec2b2544ac368821155b7e0c3c0e179982d1d
 
 
 ---
@@ -29,7 +28,7 @@ Om de preview-versie van Azure Information Protection te gebruiken, moet u voldo
 
 |Vereiste|Meer informatie|
 |---------------|--------------------|
-|Een cloudabonnement voor onder meer Azure RMS|Uw organisatie moet een cloudabonnement hebben met ondersteuning voor Rights Management.<br /><br />Zie [Cloudabonnementen die Azure RMS ondersteunen](../get-started/requirements-subscriptions.md) voor meer informatie en koppelingen naar gratis proefversies.|
+|Een Office 365-abonnement met Azure Rights Management|Bijvoorbeeld een Office 365 E3-, E4- of E5-abonnement.<br /><br />Raadpleeg de sectie [Office 365 subscription](../get-started/requirements-subscriptions.md#office-365-subscription) (Office 365 -abonnementen) in de documentatie over de vereisten voor Azure RMS voor meer informatie over de beschikbare abonnementen en koppelingen naar gratis proefversies.|
 |Azure AD-map|Uw organisatie moet een Azure AD-map hebben om gebruikersverificatie voor RMS en Azure Information Protection te ondersteunen. Als u uw gebruikersaccounts vanuit uw lokale map (AD DS) wilt gebruiken, moet u bovendien mapintegratie configureren.<br /><br />Multi-Factor Authentication (MFA) wordt ondersteund met Azure RMS wanneer u beschikt over de vereiste clientsoftware en een juist geconfigureerde infrastructuur met ondersteuning voor MFA hebt.<br /><br />Zie voor meer informatie [Azure AD-map](../get-started/requirements-azure-ad.md), waarin de gegevens voor Azure RMS ook van toepassing zijn op Azure Information Protection.|
 |Clientapparaten|De volgende clientapparaten worden voor deze preview-versie ondersteund:<br /><br />- Windows 10 (x86, x64)<br /><br />- Windows 8.1 (x86, x64)<br /><br />- Windows 8 (x86, x64)<br /><br />- Windows 7 Service Pack 1 (x86, x64)<br /><br />Wanneer u de gegevens beveiligt, kunnen deze worden gebruikt door de dezelfde apparaten (Windows, Mac, iOS, Android), die ondersteuning bieden voor Azure Rights Management. Zie [Azure RMS-vereisten: clientapparaten die Azure RMS ondersteunen](../get-started/requirements-client-devices.md) voor details over deze apparaten en de ondersteunde versies.|
 |Toepassingen|Voor de preview-versie en de algemene beschikbaarheid ondersteunt Azure Information Protection labels en beveiliging van bestanden en e-mailberichten die zijn gemaakt met de volgende Office-toepassingen: **Word**, **Excel**, **PowerPoint** en **Outlook** in de volgende Office-suites:<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 met Service Pack 1<br /><br />- Office Professional Plus 2010<br /><br />Zodra deze versie algemeen beschikbaar is, moet u uitkijken naar een aankondiging op de [Enterprise Mobility en Security-blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) om te zien wanneer Azure Information Protection ondersteuning biedt voor extra bestandstypen, zoals PDF- en audio-, video- en afbeeldingsbestanden.|
@@ -42,6 +41,6 @@ Als u aan deze vereisten voldoet, kunt u proberen onze zelfgestuurde demo om Azu
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

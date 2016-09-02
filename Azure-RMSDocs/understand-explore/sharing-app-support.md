@@ -1,28 +1,27 @@
 ---
 title: RMS-toepassing voor delen voor Windows- en mobiele platforms | Azure RMS
-description: 
-keywords: 
+description: De RMS-toepassing voor delen is een gratis, downloadbare toepassing die is vereist voor ondersteuning van Office 2010, maar ook wordt aanbevolen voor Windows-computers, Mac-computers en mobiele apparaten. Een van de voordelen is dat met de toepassing algemene beveiliging kan worden toegepast voor toepassingen en bestanden die geen systeemeigen ondersteuning bieden voor Rights Management. Dit betekent dat alle bestanden kunnen worden beveiligd.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
 
 
 ---
 
 
-# RMS-toepassing voor delen voor Windows- en mobiele platforms
+# De RMS-toepassing voor delen voor Windows- en niet-Windows-apparaten
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 De RMS-toepassing voor delen is een gratis, downloadbare toepassing die is vereist voor ondersteuning van Office 2010, maar ook wordt aanbevolen voor Windows-computers, Mac-computers en mobiele apparaten. Een van de voordelen is dat met de toepassing algemene beveiliging kan worden toegepast voor toepassingen en bestanden die geen systeemeigen ondersteuning bieden voor [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]. Dit betekent dat alle bestanden kunnen worden beveiligd. Zie de sectie [Beveiligingsniveau: systeemeigen en algemeen](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) in de [Beheerdershandleiding voor de Rights Management-toepassing voor delen](../rms-client/sharing-app-admin-guide.md) voor meer informatie over de verschillende beveiligingsniveaus.
 
@@ -59,6 +58,6 @@ Zie [Hoe toepassingen ondersteuning bieden voor Azure Rights Management](applica
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

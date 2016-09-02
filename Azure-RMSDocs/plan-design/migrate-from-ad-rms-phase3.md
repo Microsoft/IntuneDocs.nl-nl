@@ -1,27 +1,26 @@
 ---
 title: Migreren van AD RMS naar Azure Rights Management - Stap 3 | Azure RMS
-description: 
-keywords: 
+description: Gebruik de volgende informatie voor stap 3 van de migratie van AD RMS naar Azure Rights Management (Azure RMS). Deze procedures beslaan stap 6 en 7 van Migreren van AD RMS naar Azure Rights Management.
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: cc605ff22c205846186f7e3ec819ecd826dba4a6
 
 
 ---
 
 # Migratiestap 3: configuratie van ondersteuningsservices
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management*
 
 
 Gebruik de volgende informatie voor stap 3 van de migratie van AD RMS naar Azure Rights Management (Azure RMS). Deze procedures beslaan stap 6 en 7 van [Migreren van AD RMS naar Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
@@ -215,6 +214,6 @@ Nadat u deze procedures hebt voltooid, leest u het gedeelte **Volgende stappen**
 Als u wilt doorgaan met de migratie, gaat u naar [Stap 4: taken na migratie](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: Gebruikershandleiding voor de Rights Management-toepassing voor delen | Azure RMS
-description: 
-keywords: 
+description: Met de Microsoft Rights Management (RMS)-toepassing voor delen voor Windows kunt u belangrijke documenten en foto's veilig afschermen van mensen die deze niet hoeven te zien, zelfs als u deze e-mailt of opslaat op een ander apparaat. U kunt deze toepassing ook gebruiken om bestanden te openen en te gebruiken die andere mensen hebben beveiligd met dezelfde Rights Management-technologie.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
-ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 0e9ec1074f5305c12f436336520d7a6703ed0cfa
 
 
 ---
 
 # Gebruikershandleiding voor de Rights Management-toepassing voor delen
 
-*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
+>*Van toepassing op: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 met SP1, Windows 8, Windows 8.1*
 
 Met de Microsoft Rights Management (RMS)-toepassing voor delen voor Windows kunt u belangrijke documenten en foto's veilig afschermen van mensen die deze niet hoeven te zien, zelfs als u deze e-mailt of opslaat op een ander apparaat. U kunt deze toepassing ook gebruiken om bestanden te openen en te gebruiken die andere mensen hebben beveiligd met dezelfde Rights Management-technologie.
 
@@ -68,6 +67,6 @@ Hier volgen enkele voorbeelden van hoe u de RMS-toepassing voor delen zou kunnen
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

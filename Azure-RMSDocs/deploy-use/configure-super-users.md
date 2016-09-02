@@ -1,27 +1,26 @@
 ---
 title: Supergebruikers configureren voor Azure Rights Management en detectieservices of gegevensherstel | Azure RMS
-description: 
-keywords: 
+description: "De functie van supergebruiker van Microsoft Azure RMS zorgt ervoor dat gemachtigde personen en services de gegevens die voor uw organisatie worden beveiligd met Azure RMS, altijd kunnen lezen en controleren. Een supergebruiker kan zo nodig ook de beveiliging verwijderen of de eerder toegepaste beveiliging wijzigen. Een supergebruiker heeft altijd volledige eigenaarsrechten voor alle licenties die door de RMS-tenant van de organisatie zijn verleend. Deze mogelijkheid wordt soms aangeduid als ‘reasoning over data’ en vormt een cruciaal element in het beheer van de gegevens van uw organisatie."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
 
 
 ---
 
 # Supergebruikers configureren voor Azure Rights Management en detectieservices of gegevensherstel
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 De functie van supergebruiker van Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) zorgt ervoor dat gemachtigde personen en services de gegevens die voor uw organisatie worden beveiligd met Azure RMS, altijd kunnen lezen en controleren. Een supergebruiker kan zo nodig ook de beveiliging verwijderen of de eerder toegepaste beveiliging wijzigen. Een supergebruiker heeft altijd volledige eigenaarsrechten voor alle licenties die door de RMS-tenant van de organisatie zijn verleend. Deze mogelijkheid wordt soms aangeduid als ‘reasoning over data’ en vormt een cruciaal element in het beheer van de gegevens van uw organisatie. U zou deze functie bijvoorbeeld kunnen gebruiken voor een van de volgende scenario's:
 
@@ -72,6 +71,6 @@ Zie [RMS-beveiligingscmdlets](https://msdn.microsoft.com/library/azure/mt433195.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

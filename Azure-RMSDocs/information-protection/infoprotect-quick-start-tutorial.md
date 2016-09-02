@@ -3,15 +3,15 @@ title: Zelfstudie voor snel starten met Azure Information Protection | Azure Rig
 description: Een introductiezelfstudie om Microsoft Azure Information Protection snel uit te proberen voor uw organisatie, met slechts 4 stappen die minder dan 15 minuten duren.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
-ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6fbe4bd32f1aef57b3bf42aeedea46f618fb5540
 
 
 ---
@@ -31,7 +31,7 @@ Als u problemen hebt met het voltooien van deze zelfstudie, het gebruik van de p
 ## Vereisten 
 U hebt het volgende nodig om de zelfstudie te volgen:
 
-- Een abonnement met Azure Rights Management, waarmee u toegang tot de preview-versie van Azure Information Protection hebt. Azure Information Protection is beschikbaar in alle regio's die ondersteuning bieden voor Azure Rights Management. Voor meer informatie over de beschikbare abonnementen en koppelingen naar gratis proefversies raadpleegt u [Azure RMS-vereisten: cloudabonnementen die ondersteuning bieden voor Azure RMS](../get-started/requirements-subscriptions.md).
+- Een Office 365-abonnement waarin uw Office-documenten en e-mailberichten worden beveiligd via Azure RMS. Raadpleeg de sectie [Office 365 subscription](../get-started/requirements-subscriptions.md#office-365-subscription) (Office 365 -abonnementen) in de documentatie over de vereisten voor Azure RMS voor meer informatie over de beschikbare abonnementen en koppelingen naar gratis proefversies.
 
 - Een abonnement voor Azure, zodat u toegang hebt tot Azure Portal om het Azure Information Protection-beleid te configureren. Als u nog geen Azure-abonnement voor uw organisatie hebt, kunt u er een krijgen door u aan te melden voor een gratis proefversie. Ga naar de pagina [Aan de slag met Azure](https://account.windowsazure.com/organization) en volg de instructies.
 
@@ -51,6 +51,6 @@ Nu kunt u aan de slag.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

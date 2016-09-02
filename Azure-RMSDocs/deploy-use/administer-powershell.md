@@ -1,27 +1,26 @@
 ---
 title: Beheer van Azure Rights Management met Windows PowerShell | Azure RMS
-description: 
-keywords: 
+description: U kunt Microsoft (Azure RMS) activeren met behulp van het Office 365-beheercentrum of de klassieke Azure-portal, maar u kunt hiervoor ook de Windows PowerShell-module voor (AADRM) gebruiken.
 author: cabailey
 manager: mbaldwin
 ms.date: 08/18/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
-ms.openlocfilehash: d2aec9c4a0c462e9abfa145ee14df0144c60e584
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 26988d2e9b6e2ff320e424fa94051afa0055d234
 
 
 ---
 
 # Beheer van Azure Rights Management met Windows PowerShell
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 U kunt Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) activeren met behulp van het [!INCLUDE[o365_2](../includes/o365_2_md.md)]-beheercentrum of de klassieke Azure-portal, maar u kunt hiervoor ook de Windows PowerShell-module voor [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (AADRM) gebruiken.
 
@@ -54,6 +53,6 @@ Er is ook een aanvullende Windows PowerShell-module, **RMSProtection**, die zowe
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

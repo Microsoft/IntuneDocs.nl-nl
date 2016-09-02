@@ -1,20 +1,19 @@
 ---
 title: Bestandsservers met Windows Server en de infrastructuur voor bestandsclassificatie (FCI) | Azure RMS
-description: 
-keywords: 
+description: Als u Windows Server configureert voor gebruik van een infrastructuur voor bestandsclassificatie, kan de functie Bestandsserverbronbeheer lokale bestanden scannen en bepalen of ze gevoelige gegevens bevatten. Als er bestanden zijn die aan deze criteria voldoen, worden ze gemarkeerd met de classificatie-eigenschappen die een beheerder definieert. De infrastructuur voor bestandsclassificatie kan dan automatisch actie ondernemen op basis van de classificatie. Een van deze acties omvat het toepassen van informatiebeveiliging met behulp van Azure Rights Management en het implementeren van de Rights Management-connector (ook wel bekend als de RMS-connector). Office-bestanden worden vervolgens automatisch beveiligd door Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 839be5a8a45c2322127694dc0bdc306ff445c314
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3ba4230674d387c100752f2e8698010afc8773b2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 839be5a8a45c2322127694dc0bdc306ff445c314
 
 # Bestandsservers met Windows Server en de infrastructuur voor bestandsclassificatie (FCI)
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Als u Windows Server configureert voor gebruik van een infrastructuur voor bestandsclassificatie, kan de functie Bestandsserverbronbeheer lokale bestanden scannen en bepalen of ze gevoelige gegevens bevatten. Als er bestanden zijn die aan deze criteria voldoen, worden ze gemarkeerd met de classificatie-eigenschappen die een beheerder definieert. De infrastructuur voor bestandsclassificatie kan dan automatisch actie ondernemen op basis van de classificatie. Een van deze acties omvat het toepassen van informatiebeveiliging met behulp van [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] en het implementeren van de Rights Management-connector (ook wel bekend als de RMS-connector). Office-bestanden worden vervolgens automatisch beveiligd door Azure RMS.
@@ -44,6 +43,6 @@ Nu u begrijpt hoe toepassingen en services ondersteuning bieden voor Azure RMS, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

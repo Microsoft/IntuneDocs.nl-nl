@@ -1,20 +1,19 @@
 ---
 title: Registerinstellingen voor de RMS-connector | Azure RMS
-description: 
-keywords: 
+description: Gebruik de tabellen in de volgende secties alleen als u handmatig registerinstellingen wilt toevoegen of controleren op de servers met Exchange, SharePoint of Windows Server, waardoor u de servers configureert voor gebruik van de RMS-connector. Voor de configuratie van deze servers wordt aanbevolen om het hulpprogramma voor serverconfiguratie voor Microsoft RMS-connector te gebruiken.
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 935c354f9bcd3be23a953cdeb08c7860257637d6
-ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 49fff7c2e0c06d26751136b681022f221f80d6cd
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 
 # Registerinstelling voor de Rights Management-connector
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 
 Gebruik de tabellen in de volgende secties alleen als u handmatig registerinstellingen wilt toevoegen of controleren op de servers met Exchange, SharePoint of Windows Server, waardoor u de servers configureert voor gebruik van de [RMS-connector](deploy-rms-connector.md). Voor de configuratie van deze servers wordt aanbevolen om het hulpprogramma voor serverconfiguratie voor Microsoft RMS-connector te gebruiken.
@@ -217,6 +216,6 @@ Instructies voor het gebruik van deze instellingen:
 Terug naar [De Azure Rights Management-connector implementeren](deploy-rms-connector.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

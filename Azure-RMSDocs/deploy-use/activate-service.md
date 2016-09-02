@@ -1,27 +1,26 @@
 ---
 title: Azure Rights Management activeren | Azure RMS
-description: 
-keywords: 
+description: Wanneer u (Azure RMS) activeert, kan uw organisatie beginnen met het beveiligen van belangrijke gegevens met behulp van toepassingen en services die ondersteuning bieden voor deze oplossing voor gegevensbeveiliging. Beheerders kunnen ook beveiligde bestanden en e-mailberichten die eigendom zijn van uw organisatie, beheren en controleren. U moet inschakelen voordat u gebruik kunt gaan maken van de functies van Information Rights Management (IRM) in Office SharePoint en Exchange, en gevoelige of vertrouwelijke bestanden kunt gaan beveiligen.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
-ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
 
 
 ---
 
 # Azure Rights Management activeren
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 Wanneer u [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) activeert, kan uw organisatie beginnen met het beveiligen van belangrijke gegevens met behulp van toepassingen en services die ondersteuning bieden voor deze oplossing voor gegevensbeveiliging. Beheerders kunnen ook beveiligde bestanden en e-mailberichten die eigendom zijn van uw organisatie, beheren en controleren. U moet [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] inschakelen voordat u gebruik kunt gaan maken van de functies van Information Rights Management (IRM) in Office SharePoint en Exchange, en gevoelige of vertrouwelijke bestanden kunt gaan beveiligen.
 
@@ -82,6 +81,6 @@ Office-services, zoals Exchange Online en SharePoint Online, vereisen aanvullend
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
