@@ -1,6 +1,6 @@
 ---
 title: Uw apparaat registreren bij Intune | Microsoft Intune
-description: Koppelingen naar de stappen voor het inschrijven van verschillende apparaten in Intune
+description: Biedt koppelingen naar informatie over het registreren van verschillende apparaten in Intune
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -11,8 +11,8 @@ ms.service:
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: ded795ec0547e80398b6f01dee612c3eb157d155
+ms.sourcegitcommit: fc18b9f1caf9f0e6c6b1c8d21d95f42a0c40c507
+ms.openlocfilehash: 8d3cc70379fdba7c7e3f6c0c82bc6bfb7b534b2c
 
 
 ---
@@ -25,7 +25,7 @@ Als u de registratie-instructies wilt weergeven, gebruikt u de koppeling die ove
 
 - [Uw Android-apparaat inschrijven bij Intune](enroll-your-device-in-Intune-android.md)</br>
 - [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)</br>
-- [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md)</br>
+- [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md)</br>
 - [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
 
 ### Zie tevens
@@ -35,6 +35,6 @@ Als u de registratie-instructies wilt weergeven, gebruikt u de koppeling die ove
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

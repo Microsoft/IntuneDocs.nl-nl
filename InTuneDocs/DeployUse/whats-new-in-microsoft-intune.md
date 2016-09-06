@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51ab5d486e7e23d2527f9cb95f105e7916cdb27
-ms.openlocfilehash: 138d362618c9859a55988b7a2ada85e44b0e95c5
+ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
+ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
 
 
 ---
@@ -30,7 +30,7 @@ Al deze functies worden uiteindelijk ondersteund voor implementaties voor hybrid
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 ### Verborgen en weergegeven apps voor iOS 9.3
-Voor apparaten met iOS 9.3 of hoger kunt u de lijst met verborgen of weergegeven apps in het algemene configuratiebeleid voor iOS gebruiken om het volgende te doen:
+Voor apparaten met supervisie met iOS 9.3 of hoger kunt u de lijst met verborgen of weergegeven apps in het algemene configuratiebeleid voor iOS gebruiken om het volgende te doen:
 - Een lijst opstellen met apps die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
 - Een lijst opstellen met apps die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
@@ -102,6 +102,13 @@ Naast de wijzigingen in het groepsbeheer, **wordt de volgende functionaliteit af
 ### Toevoeging van 'Meldingen' aan de bedrijfsportal voor Android
 In september brengen wij een update uit van de bedrijfsportal voor Android, waarmee een nieuw pictogram **Meldingen** wordt geïntroduceerd op de startpagina. Door op dit pictogram te tikken wordt de pagina **Meldingen** geopend waar de eindgebruiker alle items ziet die aandacht vereisen in de bedrijfsportal-app, zoals niet-compatibele apparaten, inschrijvingsupdates en activering van inschrijvingen. Als u ook de iOS-bedrijfsportal-app gebruikt, kunt u de meldingen al zien. Door de introductie van de pagina **Meldingen** ziet u niet langer de pagina **Bedrijfstoegang instellen** wanneer u de bedrijfsportal voor Android start of hervat als het apparaat reeds is ingeschreven. Wij weten dat velen van u een handleiding hebben gemaakt voor eindgebruikers en stellen het op prijs wanneer u ons tijdig informeert wanneer uw handleiding en/of schermafbeeldingen moeten worden bijgewerkt. Werk uw documentatie bij zodat toekomstige wijzigingen in de gebruikerservaring goed worden beschreven. Bijgewerkte schermafbeeldingen vindt u hier: https://aka.ms/androidcpupdate.  
 
+### Verbeteringen aan hoe iOS-eindgebruikers hun apps verkrijgen
+De volgende wijzigingen worden in september aangebracht aan de apptegels in de Bedrijfsportal-app voor iOS, zodat gebruikers op één locatie (de Bedrijfsportal-app) naar verschillende weergaven worden verwezen voor alle apps. Op dit moment wordt het door Apple verboden om line-of-business en beheerde App Store-apps te vermelden in de Bedrijfsportal-app en moeten gebruikers verschillende weergaven openen om al hun apps te vinden.
+
+- De tegel **Bedrijfsapps** verwijst momenteel naar alle apps op het tabblad ALLE van de Bedrijfsportal-website, en deze blijft ook op dezelfde manier werken. De naam van de tegel wordt gewijzigd in **Alle apps**.
+- De tegel **Andere apps** verwijst momenteel naar een weergave in de Bedrijfsportal-app waarin alle apps worden vermeld die van Apple mogen weergegeven in de app. De naam van de tegel wordt gewijzigd in **Uitgelichte apps**. Wanneer gebruikers op de tegel tikken, gaan ze naar het tabblad UITGELICHT van de Bedrijfsportal-website.
+-  De tegel **Categorieën** verwijst momenteel naar een weergave in de Bedrijfsportal-app waarin appcategorieën worden vermeld. De naam van de tegel wordt niet gewijzigd, maar verwijst nu naar het tabblad CATEGORIEËN van de Bedrijfsportal-website. U vindt [hier](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) bijgewerkte schermafbeeldingen.
+<!---TFS 1317133--->
 
 ### Cloudroadmap
 Blijf op de hoogte van toekomstige ontwikkelingen op het gebied van Intune met de [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
@@ -146,6 +153,6 @@ Raadpleeg het artikel over [Vorige versies van Intune](previous-intune-releases.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,41 +13,41 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 98c32f924b60734d9a592ebdd7e00429dc32af26
+ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
+ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
 
 
 ---
 
 # Toegang tot beveiligde bronnen met certificaatprofielen in Microsoft Intune
-Wanneer u toegang tot bedrijfsbronnen via een VPN-, Wi-Fi- of e-mailprofiel mogelijk wilt maken, kunt u deze toegang beveiligen met een certificaat dat op elk gebruikersapparaat wordt geïnstalleerd. Dit werkt als volgt:
+Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze toegang beveiligen met een certificaat dat op elk gebruikersapparaat wordt geïnstalleerd. Dit werkt als volgt:
 
-1. Zorg ervoor dat de juiste certificaatinfrastructuur aanwezig is, zoals beschreven in [Certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) of [Certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md).
+1. Zorg ervoor dat de juiste certificaatinfrastructuur aanwezig is, zoals beschreven in [Certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [Certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md).
 
-2. Installeer op elk apparaat een basiscertificaat (of het tussenliggende CA-certificaat), zodat het apparaat de geldigheid van uw certificeringsinstantie (CA) erkent. U kunt hiervoor een **Vertrouwd certificaatprofiel** maken en implementeren. Wanneer u dit profiel implementeert, zullen de apparaten die u met Intune beheert, het basiscertificaat aanvragen en ontvangen. U moet voor elk platform een afzonderlijk profiel maken. Het **Vertrouwd certificaatprofiel** is voor deze platforms beschikbaar:
+2. Installeer op elk apparaat een basiscertificaat (of het tussenliggende CA-certificaat), zodat het apparaat de geldigheid van uw certificeringsinstantie (CA) erkent. Hiervoor maakt en implementeert u een **vertrouwd certificaatprofiel**. Wanneer u dit profiel implementeert, zullen de apparaten die u met Intune beheert, het basiscertificaat aanvragen en ontvangen. U moet voor elk platform een afzonderlijk profiel maken. Het **Vertrouwd certificaatprofiel** is voor deze platforms beschikbaar:
  -  iOS 7.1 en hoger
  -  Mac OS X 10.9 en hoger
  -  Android 4.0 en hoger
  -  Windows 8.1 en hoger
  -  Windows Phone 8.1 en hoger
 
-3. Zorg ervoor dat elk apparaat een certificaat aanvraagt ten behoeve van verificatie van toegang per e-mail, VPN en Wi-Fi, zoals beschreven in [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md). U kunt een **PKCS #12-certificaatprofiel (.pfx)** of een **SCEP-certificaatprofiel** maken en implementeren voor apparaten op deze platforms:
+3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-Fi, zoals beschreven in [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md). U kunt een **PKCS #12-certificaatprofiel (.pfx)** *of* een **SCEP-certificaatprofiel** maken en implementeren voor apparaten met deze platformen:
 
--  Android 4.0 en hoger
--  iOS 7.1 en hoger
--  Windows 10 (Desktop en Mobile) en hoger
+  -  iOS 7.1 en hoger
+  -  Android 4.0 en hoger
+  -  Windows 10 (Desktop en Mobile) en hoger
 
-Gebruik het **SCEP-certificaatprofiel** voor:
--   Mac OS X 10.9 en hoger
--   Windows Phone 8.1 en hoger
+  Een **SCEP-certificaatprofiel** gebruiken voor apparaten met deze platformen:
+    -   Mac OS X 10.9 en hoger
+    -   Windows Phone 8.1 en hoger
 
 U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel maakt, koppelt u dit aan het **vertrouwde basiscertificaatprofiel** dat u al hebt gemaakt.
 
 > [!NOTE]           
-> -    Als u geen bedrijfscertificeringsinstantie hebt, moet u er een maken.
->- Als u op basis van uw apparaatplatforms besluit het SCEP-profiel (Simplified Certificate Enrollment Protocol) te gebruiken, moet u ook een NDES-server (Network Device Enrollment Service) configureren.
+> - Als u geen bedrijfscertificeringsinstantie hebt, moet u er een maken.
+>- Als u op basis van uw apparaatplatformen besluit het SCEP-profiel (Simplified Certificate Enrollment Protocol) te gebruiken, moet u ook een NDES-server (Network Device Enrollment Service) configureren.
 >-  Bovendien moet u de Microsoft Intune-certificaatconnector downloaden en configureren, ongeacht of u SCEP-profielen of PFX-profielen wilt gebruiken.
-> Configuratie van al deze waarden wordt beschreven in  [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md).
+>-  In [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md) leest u meer over het configureren van de vereiste services.
 
 ### Volgende stappen
 - [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

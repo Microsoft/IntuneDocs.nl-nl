@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ De volgende tabel bevat registratiemethoden voor apparaten in bedrijfseigendom m
 |**[BYOD](#BYOD)** | Nee|    Ja |   Nee |
 |**[DEM](#DEM)**|   Nee |Nee |Nee  |
 
-**Registratiemethoden voor apparaten in bedrijfseigendom**
+**Registratiemethoden voor apparaten**
 
 ### BYOD
 Bring Your Own Device. Gebruikers installeren de bedrijfsportal-app en registreren hun apparaat. Als een apparaat met de bedrijfsportal wordt geregistreerd, wordt het apparaat toegevoegd aan de werkplek. Voor de registratie van iOS-apparaten met de bedrijfsportal is een Apple-id vereist. BYOD vereist geen aanvullende configuratie voor apparaten in bedrijfseigendom. Zie de stappen voor het [instellen van apparaatbeheer](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
@@ -151,6 +151,6 @@ Computers die door Intune-clientsoftware worden beheerd, kunnen niet selectief w
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

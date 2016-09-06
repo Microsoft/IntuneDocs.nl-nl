@@ -1,10 +1,10 @@
 ---
-title: Mogelijkheden voor Mobile Device Management| Microsoft Intune
-description: Raadpleeg dit onderwerp als u wilt weten hoe u met Intune de mobiele apparaten die u bij de service inschrijft kunt beheren.
+title: Apparaatbeheermogelijkheden voor geregistreerde apparaten| Microsoft Intune
+description: Raadpleeg dit onderwerp als u wilt weten hoe u met Intune de apparaten kunt beheren die u registreert.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Mogelijkheden voor Mobile Device Management in Microsoft Intune
+# Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune
 
 Met Microsoft Intune kunt u vele apparaten beheren door ze *in te schrijven* bij de service. U kunt sommige apparaattypen zelf inschrijven, maar u kunt ook gebruikers apparaten laten inschrijven met de *bedrijfsportal*-app. Dit biedt ze bovendien de mogelijkheid om bewerkingen uit te voeren, zoals apps zoeken en installeren, zorgen dat hun apparaten voldoen aan de bedrijfsbeleidsregels en contact opnemen met hun IT-afdeling voor ondersteuning.
 
@@ -70,6 +70,6 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

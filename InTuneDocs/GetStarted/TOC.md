@@ -23,8 +23,8 @@
 ### [Taken na configuratie](post-configuration-tasks.md)
 
 ## [Kiezen hoe u apparaten beheert](choose-how-to-manage-devices.md)
-### [Beheermogelijkheden voor mobiele apparaten](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Beheermogelijkheden voor Windows-pc’s](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [Beheermogelijkheden voor geregistreerde apparaten](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Mogelijkheden voor de Intune-pc-softwareclient](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Implementatiefasen voor Intune-implementaties](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Projectbereik](project-scope.md)
@@ -39,6 +39,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

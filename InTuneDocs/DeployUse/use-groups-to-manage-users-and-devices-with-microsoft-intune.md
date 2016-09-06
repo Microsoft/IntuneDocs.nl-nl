@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Groepen gebruiken om gebruikers en apparaten te beheren in Microsoft Intune
+
+In dit onderwerp wordt beschreven hoe u groepen maakt in Intune. Het onderwerp bevat ook informatie over hoe het beheer van groepen de komende maanden gaat veranderen. Voor meer informatie over het *huidige* proces voor groepsbeheer ziet u [Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in dit onderwerp.
+
 ## Kennisgeving over verbeteringen die binnenkort worden aangebracht in de manier waarop beheerders groepen kunnen beheren
 
 Op basis van uw feedback, waaruit naar voren kwam dat u groepen graag op één uniforme manier wilt samenstellen en beheren binnen de hele Enterprise Mobility + Security-suite, converteren we Intune-groepen naar Azure Active Directory-beveiligingsgroepen. Dit zal leiden tot een uniformer beheer van groepen voor zowel Intune als Azure Active Directory (Azure AD). Deze nieuwe manier van werken voorkomt dat u groepen moet dupliceren voor verschillende services en biedt uitbreidingsmogelijkheden met PowerShell en Graph. 
@@ -72,7 +76,7 @@ Hoewel het werken met groepen wordt verbeterd, zal bepaalde Intune-functionalite
 -  Hebt u beheerders die geen machtigingen hebben voor het maken van groepen in Azure AD, vraag dan uw Azure AD-beheerder om deze beheerders toe te voegen aan de Azure AD-rol **Intune-servicebeheerder** .
 
 
-# Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune
+## Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune
 
 In deze sectie wordt beschreven hoe u Intune-groepen maakt in de Intune-beheerconsole.
 
@@ -208,6 +212,6 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

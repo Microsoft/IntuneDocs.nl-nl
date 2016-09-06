@@ -3,16 +3,17 @@ title: Het wachtwoord voldoet niet aan de vereisten van de IT-beheerder | Micros
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: cf6a7a005aaf703f2dfc20b89236056dff84e137
+ms.sourcegitcommit: 96e8db7415e48a77f3e789aecddebe407e9a4b00
+ms.openlocfilehash: 37c5809e86d466717268f6fdec0c22f6bad2ac61
 
 
 ---
@@ -29,7 +30,7 @@ Het wachtwoord dat u gebruikt voor toegang tot de resources van uw bedrijf of sc
 - Het wachtwoord is recentelijk nog gebruikt
 - Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen
 
-Gebruik de koppeling die overeenkomt met het type apparaat dat u hebt voor meer informatie over het instellen van uw pincode of wachtwoord, of andere taken die u met uw apparaat kunt doen:
+Gebruik de koppeling die overeenkomt met het type apparaat dat u hebt voor meer informatie over het instellen van uw pincode of wachtwoord, of over andere taken die u met uw apparaat kunt uitvoeren:
 
 - [De pincode of het wachtwoord voor uw Android-apparaat instellen](set-your-pin-or-password-android.md)
 - [De wachtwoordcode voor uw iOS-apparaat instellen of wijzigen](set-or-change-your-passcode-ios.md)
@@ -38,6 +39,7 @@ Gebruik de koppeling die overeenkomt met het type apparaat dat u hebt voor meer 
 Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Apparaten buiten gebruik stellen vanuit Intune-beheer
 
-Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat buiten gebruik moet worden gesteld en moet worden verwijderd uit Intune-beheer. Het buiten gebruik stellen van apparaten is relatief eenvoudig. U kunt selectief wissen of volledig wissen uitvoeren op apparaten die worden beheerd als mobiele apparaten. U kunt ook pc’s buiten gebruik stellen die worden beheerd met Intune-clientsoftware.
+Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat buiten gebruik moet worden gesteld en moet worden verwijderd uit Intune-beheer. Er kunnen verschillende redenen zijn voor het buiten gebruik stellen van een apparaat:
+
+-   Een gebruiker verlaat een bedrijf op de geplande wijze ('beheerd' vertrek)
+-   Een gebruiker vertrekt abrupt (wordt ontslagen, neemt ontslag, etc.).
+-   Verlies van apparaat
+-   Een apparaat opnieuw inzetten (aan een andere gebruiker geven, voor een nieuw doel inzetten, etc.)
+
+U kunt apparaten die worden beheerd als mobiele apparaten selectief wissen of volledig wissen, of de apparaten vergrendelen en het wachtwoord wijzigen. Wanneer het apparaat wordt gewist, komt het abonnement van de gebruiker vrij en kan het op een ander apparaat worden gebruikt. U kunt ook pc’s buiten gebruik stellen die worden beheerd met de Intune-clientsoftware.
 
 ## Gegevens en apps op apparaten wissen
 Zowel het selectief wissen als het volledig wissen van een apparaat zorgt ervoor dat het apparaat uit Intune-beheer wordt verwijderd doordat hun beleid en de bedrijfsportal worden verwijderd. Dit houdt in dat het apparaat niet meer de referenties heeft die voor aanmelding bij bedrijfsbronnen nodig zijn, zoals Microsoft SharePoint, e-mail en Office 365.
@@ -62,6 +69,6 @@ Het kan ook zo zijn dat het apparaat het einde van de levensduur heeft bereikt. 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

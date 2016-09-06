@@ -3,8 +3,8 @@ title: Wat u uw eindgebruikers vertelt over het gebruik van Intune | Microsoft I
 description: Koppelingen naar informatie die u met uw eindgebruikers kunt delen
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Zorg ervoor dat u de contactgegevens van de IT-beheerder opneemt wanneer u [de b
 
 ## Waar uw eindgebruikers informatie over algemene taken kunnen vinden
 
-Geef uw eindgebruikers de volgende koppelingen die zij kunnen volgen om hulp te vinden over het gebruik van Intune op hun apparaten. Gebruikers die deze koppelingen volgen, komen uit bij stappen om de bedrijfsportal-app te installeren, hun apparaten te registreren, beheerde apps te downloaden, problemen op te lossen en meer.
+Wanneer geregistreerde gebruikers hulp nodig hebben met Intune, kunnen ze op een koppeling klikken op de Bedrijfsportal-website of in de Bedrijfsportal-app waarmee ze worden doorverwezen naar een artikel met stappen voor het oplossen van het probleem of voor het voltooien van de taak. Als Android-gebruikers bijvoorbeeld het bericht zien dat ze niet beschikken over een vereist certificaat, kunnen ze op een koppeling klikken zoals Hoe los ik dit op? Ze gaan dan naar een artikel met stappen voor het verkrijgen van het certificaat. 
+
+De onderstaande koppelingen zijn voor IT-beheerders. Deze pagina's bevatten koppelingen naar alle artikelen waar gebruikers naar worden doorverwezen vanaf de Bedrijfsportal-website of -app. De koppeling zijn onderverdeeld: Installatie van de Bedrijfsportal-app en de registratie bij Intune; taken die gebruikers op hun apparaten kunnen uitvoeren, zoals het gebruiken van beheerde apps en hun apparaten handmatig synchroniseren; en probleemoplossing.
 
 - [Met behulp van een Android-apparaat met Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -52,15 +54,17 @@ Kies een van de volgende apparaatplatforms om inzicht te krijgen in hoe uw eindg
 
 > [!div class="op_single_selector"]
 - [Hoe uw Android-gebruikers apps downloaden](how-your-android-users-get-their-apps.md)
-- [Hoe uw iOS-gebruikers apps downloaden](how-your-ios-users-get-their-apps.md)
+- [Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
 - [Hoe uw Windows-gebruikers apps downloaden](how-your-windows-users-get-their-apps.md)
 
 ## Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
 Bekijk een [lijst met berichten die gebruikers mogelijk te zien krijgen in de bedrijfsportal-app](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages), zodat u uw gebruikers kunt helpen bij het oplossen van problemen die ze wellicht hebben wanneer ze de bedrijfsportal gebruiken.
 
+Als er overige informatie is die u graag in dit artikel zou willen terugzien, voegt u uw suggestie toe in het vak Opmerking onder aan dit onderwerp. Bedankt.
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

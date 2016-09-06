@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restri
 >[!IMPORTANT]
 >Voorwaardelijke toegang voor pc's en Windows 10 Mobile-apparaten met apps die moderne authenticatie gebruiken, is momenteel niet voor alle klanten van Intune beschikbaar. Als u deze functies al gebruikt, hoeft u geen actie te ondernemen. U kunt deze functies gewoon blijven gebruiken.
 
->Als u nog geen beleid voor voorwaardelijke toegang hebt gemaakt voor pc's of Windows 10 Mobile voor apps die moderne authenticatie gebruiken, en dat wel wilt doen, moet u hiervoor een aanvraag indienen.  Meer informatie over bekende problemen en de toegang tot deze functie vindt u op de [Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Als u nog geen beleid voor voorwaardelijke toegang hebt gemaakt voor pc’s of Windows 10 Mobile voor apps met moderne verificatie, maar u dit wel wilt doen, registreert u zich voor de openbare Azure Active Directory-preview. Deze preview bevat op het apparaat gebaseerde voorwaardelijke toegang voor door Intune beheerde apparaten en Windows-pc’s met gekoppelde domeinen. Lees [dit blogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) voor meer informatie.  
 
 **Voordat** u voorwaardelijke toegang kunt configureren, moet u:
 
@@ -196,7 +196,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
         * Niet-ondersteunde platformen, zoals Mac OS.  Apps met moderne authenticatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
 
         >[!TIP]
-           Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   Meer informatie over bekende problemen en de toegang tot deze functie vindt u op de [Microsoft Connect-website](http://go.microsoft.com/fwlink/?LinkId=761472).
+           Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   U vindt meer informatie over het verkrijgen van toegang tot deze functie [in dit blogbericht ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Specifieke platforms**
 
@@ -260,6 +260,6 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 
