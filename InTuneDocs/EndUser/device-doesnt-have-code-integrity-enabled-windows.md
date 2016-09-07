@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: bb167905334886306b0abc9241f378216fc201d7
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 7f355511063fc4042b605f1f1980fee625009e66
 
 
 ---
@@ -31,13 +31,12 @@ Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Als u een mobi
 
 Als u een pc gebruikt, neemt u contact op met uw IT-beheerder of raadpleegt u de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u zelf wilt proberen om Beveiligd opstarten in te schakelen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

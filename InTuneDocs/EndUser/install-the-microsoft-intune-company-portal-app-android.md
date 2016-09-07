@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: a56fe54c62d8b0a35d3613a7b8802cd017be4cba
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 557db0b21e70c9d12edcf2d0d5a02b25421bc897
 
 
 ---
@@ -43,13 +43,11 @@ De bedrijfsportal-app is een app die u op het Android-apparaat installeert om to
 
 Als u uw apparaat wilt registreren bij Intune om toegang te krijgen tot bedrijfs- of schoolgegevens en -bronnen, raadpleegt u [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md).
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,15 +4,15 @@ description: Biedt koppelingen naar informatie over het registreren van verschil
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: fc18b9f1caf9f0e6c6b1c8d21d95f42a0c40c507
-ms.openlocfilehash: 8d3cc70379fdba7c7e3f6c0c82bc6bfb7b534b2c
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 5ea154c58207b1ddcce8c51c0cd039532bda4cad
 
 
 ---
@@ -23,18 +23,15 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Windows-ap
 
 Als u de registratie-instructies wilt weergeven, gebruikt u de koppeling die overeenkomt met het type apparaat dat u gebruikt:
 
-- [Uw Android-apparaat inschrijven bij Intune](enroll-your-device-in-Intune-android.md)</br>
-- [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)</br>
-- [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md)</br>
-- [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
-
-### Zie tevens
-- [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)</br>
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+- [Uw Android-apparaat inschrijven bij Intune](enroll-your-device-in-Intune-android.md)
+- [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)
+- [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 5/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 74446336b98fb0c88617ac397bdafc022d39f6f6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
 
 
 ---
@@ -41,13 +41,12 @@ Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan 
 3. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het veld **Wachtwoord bevestigen**.
 4. Tik op **Gereed**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

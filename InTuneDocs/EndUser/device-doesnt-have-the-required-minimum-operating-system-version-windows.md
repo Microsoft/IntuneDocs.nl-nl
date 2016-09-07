@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 3288070ad005744d6523f78efac01e6a5885e9b8
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 6cca3995bc5dcbca57ea7b06dfccbd4290436399
 
 
 ---
@@ -32,13 +32,12 @@ Als u de versie van Windows 10 en Windows 8.1 wilt controleren, drukt u op de **
 - Negeer het versienummer bij Windows 10 en kijk in plaats daarvan naar het buildnummer van het besturingssysteem (voorbeeld: Build van besturingssysteem 10586.29). De 10 in 10586.29 staat voor Windows 10.
 - Kijk bij Windows 8.1 naar het versienummer. Dit wordt weergegeven als 6.3.xxxx in plaats van 8.1.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

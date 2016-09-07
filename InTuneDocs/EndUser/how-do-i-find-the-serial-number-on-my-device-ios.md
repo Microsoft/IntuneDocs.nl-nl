@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 628f93d618d5463cb95eec344f0d2cf0f6237091
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 
 ---
@@ -25,13 +25,12 @@ ms.openlocfilehash: 628f93d618d5463cb95eec344f0d2cf0f6237091
 
 Op apparaten met iOS 7.1 en hoger tikt u op het pictogram **Instellingen**. Tik vervolgens op **Algemeen** > **Info** en schuif omlaag totdat u **Serienummer** ziet.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

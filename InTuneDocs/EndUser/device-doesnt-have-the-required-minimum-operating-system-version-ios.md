@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e0c0955c58ef8d19c5f710b7c788d7db677043df
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: a4b89620dc23e3088f40e631a9578b1b443ef243
 
 
 ---
@@ -25,13 +25,12 @@ ms.openlocfilehash: e0c0955c58ef8d19c5f710b7c788d7db677043df
 
 Op uw iOS-apparaat is niet de minimale besturingssysteemversie geïnstalleerd die door uw IT-afdeling wordt vereist.  Controleer voordat u uw apparaat bijwerkt, wat de huidige versie van het besturingssysteem is, door te tikken op **Instellingen** &gt; **Over**. Als u uw apparaat wilt bijwerken naar de nieuwste versie, tikt u op **Instellingen** &gt; **Algemeen** &gt; **Software-update**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

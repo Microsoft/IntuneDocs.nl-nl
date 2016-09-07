@@ -4,7 +4,7 @@ description: In dit onderwerp worden enkele concepten uitgelegd die u moet begri
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
-ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: ef042e24af2300250cf2bd1bf9803678e252b773
 
 
 ---
@@ -44,16 +44,16 @@ Wanneer u apps implementeert, kunt u kiezen uit een van de volgende implementati
 
 |Type installatieprogramma|Vereiste installatie|Beschikbare installatie|Verwijderen|Niet van toepassing|
 |------------------|--------------------|---------------------|-------------|------------------|
-|App-pakket voor Windows (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
-|App-pakket voor Windows (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-|App-pakket voor mobiele apparaten (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
-|App-pakket voor mobiele apparaten (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-|Windows Installer (geïmplementeerd op een gebruikersgroep)|Nee|Ja|Nee|Ja|
+|App-pakket voor Windows (geïmplementeerd op een gebruikersgroep)|Yes|Ja|Ja|Yes|
+|App-pakket voor Windows (geïmplementeerd op een apparaatgroep)|Yes|Nee|Ja|Yes|
+|App-pakket voor mobiele apparaten (geïmplementeerd op een gebruikersgroep)|Yes|Ja|Ja|Ja|
+|App-pakket voor mobiele apparaten (geïmplementeerd op een apparaatgroep)|Yes|Nee|Ja|Yes|
+|Windows Installer (geïmplementeerd op een gebruikersgroep)|Nee|Ja|Nee|Yes|
 |Windows Installer (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-|Externe koppeling (geïmplementeerd op een gebruikersgroep)|Nee|Ja|Nee|Ja|
+|Externe koppeling (geïmplementeerd op een gebruikersgroep)|Nee|Ja|Nee|Yes|
 |Externe koppeling (geïmplementeerd op een apparaatgroep)|Nee|Nee|Nee|Nee|
-|Beheerde iOS-app uit de App Store (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
-|Beheerde iOS-app uit de App Store (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
+|Beheerde iOS-app uit de App Store (geïmplementeerd op een gebruikersgroep)|Yes|Ja|Ja|Ja|
+|Beheerde iOS-app uit de App Store (geïmplementeerd op een apparaatgroep)|Yes|Nee|Ja|Yes|
 > [!TIP]
 > Wanneer u een app implementeert en zowel gebruikers- als apparaatgroepen selecteert, kunt u de app alleen als **Beschikbare installatie** implementeren.
 
@@ -73,6 +73,6 @@ Lees hoe u [apps in Microsoft Intune implementeert](deploy-apps-in-microsoft-int
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

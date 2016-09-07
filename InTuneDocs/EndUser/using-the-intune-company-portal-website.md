@@ -4,7 +4,7 @@ description: Beschrijving van de bedrijfsportalwebsite en koppelingen naar de st
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/03/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: bfce55b6d23554d1c3df2b62d6bf5fdd4607974b
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 558840491a701347e23697cee22c52c1218bc6af
 
 
 ---
@@ -50,6 +50,6 @@ U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook met d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

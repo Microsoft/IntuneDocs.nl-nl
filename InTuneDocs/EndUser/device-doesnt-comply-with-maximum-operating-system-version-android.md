@@ -14,22 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 8c271f284fbaa7a3704f862cf7d9ba8c6a353392
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 739d456a938ed296773d0e76476a506c48fdfc78
 
 
 ---
 
 # Het Android-apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie
 
-Uw Android-apparaat voldoet niet aan het beleid van de IT-beheerder voor de maximaal toegestane besturingssysteemversie. Neem contact op met uw IT-beheerder voor hulp. Controleer of hun contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
-
-
-### Zie tevens
-[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
+Uw Android-apparaat voldoet niet aan het beleid van de IT-beheerder voor de maximaal toegestane besturingssysteemversie. Neem contact op met uw IT-beheerder voor hulp. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

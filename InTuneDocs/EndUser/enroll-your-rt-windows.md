@@ -13,8 +13,8 @@ ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: ddbe0bd7b9a69a92d5bf4681bf8c897d7712acee
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 33a3a7b2a0fe155a5a4339681fa821ee0ef289aa
 
 
 ---
@@ -45,14 +45,12 @@ Het wordt ook aangeraden de bedrijfsportal-app te installeren, waarmee u eenvoud
 
 4.  Tik op **Bedrijfsportal** &gt; **Installeren**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-### Zie tevens
-[Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)</br>
-[Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

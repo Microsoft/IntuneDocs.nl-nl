@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
+ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
 
 
 ---
@@ -29,33 +29,34 @@ Als u deze integratie wilt inschakelen, hoeft u geen installatie uit te voeren i
 ### Stap 1: de certificaten beheren
 1. Exporteer het certificaat in de Azure Active Directory-console (Azure AD).
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Voer Internet Explorer uit als beheerder en meld u aan bij de Azure AD-console.
+   a. Voer Internet Explorer uit als beheerder en meld u aan bij de Azure AD-console.
 
-    b. Kies het vergrendelingspictogram in de adresbalk en kies **Certificaten weergeven**.
+   b. Kies het vergrendelingspictogram in de adresbalk en kies **Certificaten weergeven**.
 
-    c. Ga naar het tabblad **Details** van de certificaateigenschappen en selecteer **Kopiëren naar bestand**.
+   c. Ga naar het tabblad **Details** van de certificaateigenschappen en selecteer **Kopiëren naar bestand**.
 
-    d. Klik op de welkomstpagina van de **wizard Certificaat importeren** op **Volgende**.
+   d. Klik op de welkomstpagina van de **wizard Certificaat importeren** op **Volgende**.
 
-    e. Op de pagina **Bestandsindeling voor export** laat u de standaardwaarde staan, **DER Encoded Binary X.509 (.CER)** en kiest u **Volgende**.  
+   e. Op de pagina **Bestandsindeling voor export** laat u de standaardwaarde staan, **DER Encoded Binary X.509 (.CER)** en kiest u **Volgende**.  
 
-    f. Op de pagina **Te exporteren bestand** kiest u **Bladeren** om een locatie te selecteren om het bestand op te slaan. Geef vervolgens een bestandsnaam op. Hoewel het lijkt alsof u een bestand kiest om het te exporteren, geeft u in feite het bestand waarin u het geëxporteerde certificaat opslaat, een naam. Kies **Volgende** &gt; **Voltooien**.
+   f. Op de pagina **Te exporteren bestand** kiest u **Bladeren** om een locatie te selecteren om het bestand op te slaan. Geef vervolgens een bestandsnaam op. Hoewel het lijkt alsof u een bestand kiest om het te exporteren, geeft u in feite het bestand waarin u het geëxporteerde certificaat opslaat, een naam. Kies **Volgende** &gt; **Voltooien**.
 
-    #### Safari
+#### Safari
 
-    a. Meld u aan bij de Azure AD-console.
+ a. Meld u aan bij de Azure AD-console.
 
-    b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
+b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 
-    c. Selecteer **Certificaat weergeven** &gt; **Details**.
+   c. Selecteer **Certificaat weergeven** &gt; **Details**.
 
-    d. Kies het certificaat en kies **Exporteren**.  
+   d. Kies het certificaat en kies **Exporteren**.  
 
-    > [!IMPORTANT]
-    > Controleer de vervaldatum van het certificaat omdat u een nieuw certificaat moet exporteren en importeren wanneer dit certificaat is verlopen.
+> [!IMPORTANT]
+>
+> Controleer de vervaldatum van het certificaat omdat u een nieuw certificaat moet exporteren en importeren wanneer dit certificaat is verlopen.
 
 
 2. Importeer in de ISE-console het Intune-certificaat (het bestand dat u hebt geëxporteerd) naar het archief **Vertrouwde certificaten**.
@@ -146,6 +147,6 @@ Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.tech
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
