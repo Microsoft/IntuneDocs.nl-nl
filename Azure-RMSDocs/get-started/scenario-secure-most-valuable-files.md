@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: "Scenario: uw waardevolste bestanden (enkele) beveiligen | Azure RMS"
-description:
-keywords:
+title: 'Scenario: uw waardevolste bestanden (enkele) beveiligen | Azure RMS'
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management om handmatig een aangepaste beveiliging toe te passen op een aantal bestanden, die u hebt aangegeven als uw waardevolste bestanden zijn. Deze bestanden krijgen daarom het hoogste niveau van beveiliging tegen onbevoegde toegang.
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
+
 
 ---
 
 # Scenario: uw waardevolste bestanden (enkele) beveiligen
 
-*Van toepassing op: Azure Rights Management, Office 365*
+>*Van toepassing op: Azure Rights Management, Office 365*
 
 In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management om handmatig een aangepaste beveiliging toe te passen op een aantal bestanden, die u hebt aangegeven als uw waardevolste bestanden zijn. Deze bestanden krijgen daarom het hoogste niveau van beveiliging tegen onbevoegde toegang. Dit zijn meestal bestanden waartoe slechts enkele personen toegang zouden moeten hebben. Bijvoorbeeld receptinstructies voor het belangrijkste voedingsmiddel van uw bedrijf of overnameplannen die niet openbaar mogen worden gemaakt vóór een bepaalde datum.
 
@@ -53,7 +46,7 @@ Zorg ervoor dat aan de volgende vereisten is voldaan en voer vervolgens de instr
 ## Vereisten voor dit scenario
 Voor dit scenario moet aanwezig zijn:
 
-|Vereiste|Als u meer informatie wilt|
+|Vereiste|Als u meer informatie nodig hebt|
 |---------------|--------------------------------|
 |U hebt voor Office 365 of Azure Active Directory accounts en groepen voorbereid:<br /><br />- Een e-mailgroep met de naam **Bevoegde toegang** die de kleine groep mensen bevat die toegang moet hebben tot deze zeer vertrouwelijke documenten<br /><br />- Een e-mailgroep met de naam ** IT-nalevingsmanagers** die personen bevat die verantwoordelijk zijn voor eDiscovery, bewaking en controle<br /><br />- Een e-mailgroep met de naam **RMS-beheerders** en alle beheerders die Azure RMS configureren zijn lid van deze groep|[Voorbereiden voor Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management is geactiveerd|[Azure Rights Management activeren](https://technet.microsoft.com/library/jj658941.aspx)|
@@ -94,7 +87,8 @@ Voor dit scenario moet aanwezig zijn:
 
 Zie [Een bestand beveiligen op een apparaat (lokaal bestand beveiligen) met de Rights Management-toepassing voor delen](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx) voor meer informatie over het beveiligen van lokale bestanden
 
-> [!TIP] Als het aantal bestanden dat moet worden beveiligd te groot is voor deze handmatige verwerking, kunt u overwegen om het [RMS-beveiligingshulpprogramma](https://www.microsoft.com/en-us/download/details.aspx?id=47256) te gebruiken om de bestanden bulksgewijs te beveiligen met de sjabloon.
+> [!TIP]
+> Als het aantal bestanden dat moet worden beveiligd te groot is voor deze handmatige verwerking, kunt u overwegen om het [RMS-beveiligingshulpprogramma](https://www.microsoft.com/en-us/download/details.aspx?id=47256) te gebruiken om de bestanden bulksgewijs te beveiligen met de sjabloon.
 
 ### De toegang tot de bestanden bewaken en deze zo nodig intrekken
 
@@ -152,6 +146,7 @@ Op de volgende bestanden wordt nu een zeer hoog niveau van beveiliging toegepast
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

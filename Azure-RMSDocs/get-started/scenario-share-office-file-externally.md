@@ -1,9 +1,9 @@
 ---
 title: 'Scenario: een Office-bestand delen met gebruikers in een andere organisatie | Azure RMS'
-description: "In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat gebruikers veilig een Office-bestand kunnen verzenden naar personen in een andere organisatie. Het Office-bestand kan bijvoorbeeld een Word-document, Excel-spreadsheet of PowerPoint-presentatie zijn met de prijslijstgegevens voor een partner, een lijst met producten voor een wederverkoper of een lijst met leveringstijdlijnen voor potentiële klanten. Wanneer gebruikers de instructies volgen, wordt het bestand dat is bijgevoegd aan het e-mailbericht beveiligd door Azure Rights Management."
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management zodat gebruikers veilig een Office-bestand kunnen verzenden naar personen in een andere organisatie.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 ---

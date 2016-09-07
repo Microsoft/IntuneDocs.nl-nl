@@ -3,7 +3,7 @@ title: PowerShell-referentie voor aangepaste sjablonen | Azure RMS
 description: "Alles wat u kunt doen in de klassieke Azure-portal om sjablonen te maken en beheren, kunt u met behulp van PowerShell doen vanaf de opdrachtregel. U kunt bovendien sjablonen exporteren en importeren, zodat u ze kunt kopiëren tussen tenants of bulksgewijze bewerkingen van complexe eigenschappen in sjablonen kunt uitvoeren, zoals het opgeven van meertalige namen en beschrijvingen."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 4874e6061bb9b8781fc2ad02c80dba38084f4747
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 5068021b504e9f943c0d4e57f13d58fc5cb5d391
 
 
 ---

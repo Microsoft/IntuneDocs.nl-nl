@@ -1,9 +1,9 @@
 ---
 title: 'Scenario: het beheer over documenten die zijn opgeslagen in SharePoint behouden | Azure RMS'
-description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management om Office-documenten die zijn opgeslagen in SharePoint onder uw beheer te houden met behulp van beveiligde bibliotheken. De documenten worden bijvoorbeeld automatisch beveiligd tegen het onbedoeld of bewust lekken van gegevens door gebruikers en u kunt de toegang tot de inhoud blokkeren, zelfs nadat dit is gedownload of gesynchroniseerd. De bestanden die u wilt beveiligen, worden misschien intern gebruikt door werknemers die samenwerken aan ontwerpdocumenten of -plannen, of aan andere producten. Wanneer u beveiligde bibliotheken voor SharePoint configureert, worden de daarin opgeslagen Office-bestanden beveiligd door Azure Rights Management.
+description: In dit scenario en de ondersteunende gebruikersdocumentatie wordt gebruikgemaakt van Azure Rights Management om Office-documenten die zijn opgeslagen in SharePoint onder uw beheer te houden met behulp van beveiligde bibliotheken.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: f0dfe895820d33eab1d3a69c92e881287072f554
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 
 ---
