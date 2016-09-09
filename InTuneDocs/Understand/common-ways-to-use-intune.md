@@ -4,7 +4,7 @@ description: Een lijst met zes van de meest algemene taken waarbij Intune kan wo
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: 2ebb8fcf348cfdc7600c37b40824f5bba37a7f36
+ms.openlocfilehash: 4614c13d98c4b05882bbeabfbbd7de83d9bea2da
 
 
 ---
@@ -26,10 +26,14 @@ Voordat u aan de slag gaat met implementatietaken, is het belangrijk om de Enter
 >[!NOTE]
 >Wilt u weten hoe de IT-afdeling van Microsoft Intune gebruikt om Microsoft-werknemers in staat te stellen toegang te krijgen tot bedrijfsbronnen op hun mobiele apparaten, terwijl de zakelijke gegevens goed beveiligd blijven? [Lees deze technische casestudy](https://www.microsoft.com/itshowcase/Article/Content/588) voor gedetailleerde informatie over hoe de IT-afdeling van Microsoft Intune en andere services gebruikt om identiteiten, apparaten, apps en gegevens te beheren.  
 
+>[!IMPORTANT]
+>Ervoor zorgen dat mobiele apparaten zijn bijgewerkt<br>
+>Na aanleiding van de recente "Trident"-malwareaanvallen op iOS-apparaten is er een nieuw blogbericht gepubliceerd, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune), voor meer informatie over de verschillende manieren waarmee u met Intune uw apparaten beveiligd en bijgewerkt kunt houden.
+
 ## Uw on-premises-e-mail en -gegevens beveiligen zodat deze veilig kunnen worden geopend vanaf mobiele apparaten
 De meeste Enterprise Mobility-strategieën worden ontwikkeld op basis van een plan om toegang tot e-mail te beveiligen voor werknemers die mobiele apparaten buiten het bedrijf gebruiken. Veel bedrijven hebben nog steeds on-premises gegevens- en toepassingsservers, zoals Microsoft Exchange, die worden gehost op het bedrijfsnetwerk. Intune en de Enterprise Mobility Suite (EMS) bieden een oplossing voor unieke geïntegreerde [voorwaardelijke toegang](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) voor de Exchange-server zodat mobiele apps geen toegang meer krijgen tot e-mail tot het apparaat is geregistreerd bij Intune. Daarvoor hoeft geen andere gatewaycomputer te worden geïmplementeerd in uw bedrijfsnetwerk.
 
-Naast e-mail biedt Intune ook ondersteuning voor het inschakelen van beveiligde toegang tot mobiele apps die worden gebruikt om on-premises gegevens te openen, zoals een Line-of-Business-app.  Dit gebeurt meestal met behulp van door [Intune beheerde certificaten](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles) voor toegangsbeheer in combinatie met een standaard VPN-gateway of proxy in het perimeternetwerk, zoals de Microsoft Azure AD-toepassingsproxy.  In dergelijke gevallen is de enige manier om toegang tot zakelijke gegevens te krijgen het apparaat in te schrijven voor beheer.  Na registratie controleert het beheersysteem of de apparaten waarmee bedrijfsgegevens worden geopend, voldoen aan uw beleid.  Daarnaast kunt u [App Wrapping Tool en App SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) van Intune gebruiken om de geopende gegevens binnen de Line-Of-Business-app te houden, zodat deze bedrijfsgegevens niet kan doorgeven aan consumentenapps of -services.
+Naast e-mail biedt Intune ook ondersteuning voor het inschakelen van beveiligde toegang tot mobiele apps die worden gebruikt om on-premises gegevens te openen, zoals een Line-of-Business-app.  Dit gebeurt meestal met behulp van door [Intune beheerde certificaten](/intune/deploy-use/secure-resource-access-with-certificate-profiles) voor toegangsbeheer in combinatie met een standaard VPN-gateway of proxy in het perimeternetwerk, zoals de Microsoft Azure AD-toepassingsproxy.  In dergelijke gevallen is de enige manier om toegang tot zakelijke gegevens te krijgen het apparaat in te schrijven voor beheer.  Na registratie controleert het beheersysteem of de apparaten waarmee bedrijfsgegevens worden geopend, voldoen aan uw beleid.  Daarnaast kunt u [App Wrapping Tool en App SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) van Intune gebruiken om de geopende gegevens binnen de Line-Of-Business-app te houden, zodat deze bedrijfsgegevens niet kan doorgeven aan consumentenapps of -services.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -68,6 +72,6 @@ Soms moeten uw werknemers apparaten, toepassingen of browsers gebruiken die u ni
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
