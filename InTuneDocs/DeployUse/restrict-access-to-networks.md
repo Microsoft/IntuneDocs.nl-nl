@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
-ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -60,7 +60,10 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 
 
 2. Importeer in de ISE-console het Intune-certificaat (het bestand dat u hebt geëxporteerd) naar het archief **Vertrouwde certificaten**.
+
+
 ### Een zelfondertekend certificaat verkrijgen van ISE 
+
 1.  Ga in de ISE-console naar **Beheer** > **Certificaten** > **Systeemcertificaten** > **Zelfondertekend certificaat genereren**.  
 2.       Exporteer het zelfondertekende certificaat.
 3. Bewerk het geëxporteerde certificaat in een teksteditor: [opmerking]: <> ik zou liever geen punt plaatsen aan het eind van deze twee instructies, want ik denk dat dit verwarrend kan zijn.
@@ -147,6 +150,6 @@ Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.tech
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

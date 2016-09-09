@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 1809f619173ca57868cfd2b8466e6e2bcf05f0c7
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 ### Versleutelingsinstellingen
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Versleuteling vereisen voor mobiel apparaat**|Vereist dat bestanden op het mobiele apparaat zijn versleuteld.|Ja|Ja|
 |**Versleuteling vereisen voor opslagkaarten**|Hiermee geeft u aan of de opslagkaart van het apparaat moet worden versleuteld.|Nee|Ja|
 
 ### Systeeminstellingen
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Schermafbeelding toestaan**|Hiermee kan de gebruiker de scherminhoud als afbeelding vastleggen.|Nee|Ja|
 |**Verzending van diagnostische gegevens toestaan**|Hiermee kan het apparaat diagnostische gegevens indienen bij Google.|Nee|Ja|
 |**Terugzetten op fabrieksinstellingen toestaan**|Staat de gebruiker toe om de fabrieksinstellingen terug te zetten op het apparaat.|Nee|Ja|
@@ -72,19 +72,19 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 ### Cloudinstellingen – documenten en gegevens
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Back-up van Google toestaan**|Hiermee wordt het gebruik van Google-back-up toegestaan.|Nee|Ja|
 
 ### Cloudinstellingen - accounts en synchronisatie
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Automatische synchronisatie van Google-account toestaan**|Toestaan dat instellingen voor Google-accounts automatisch worden gesynchroniseerd.|Nee|Ja|
 
 ### Toepassingsinstellingen - browser
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Webbrowser toestaan**|Hiermee geeft u op of de standaardwebbrowser op het apparaat kan worden gebruikt.|Nee|Ja|
 |**Automatisch invullen toestaan**|Hiermee staat u toe dat de functie voor automatisch invullen van de webbrowser wordt gebruikt.|Nee|Ja|
 |**Pop-upblokkering toestaan**|Hiermee kunt het gebruik van pop-upblokkering in de webbrowser toestaan.|Nee|Ja|
@@ -94,13 +94,13 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 ### Toepassingsinstellingen - apps
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Google Play store toestaan**|Hiermee kan de gebruiker de Google Play Store openen op het apparaat.|Nee|Ja|
 
 ### Instellingen voor apparaatmogelijkheden - hardware
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Camera toestaan**|Gebruik van de camera op het apparaat toestaan.|Ja|Ja|
 |**Verwisselbare opslag toestaan**|Hiermee staat u het gebruik toe van verwisselbare opslag, zoals een SD-kaart, op het apparaat.|Nee|Ja|
 |**Wi-Fi toestaan**|Hiermee kunt het gebruik van de Wi-Fi-mogelijkheden van het apparaat toestaan.|Nee|Ja|
@@ -113,7 +113,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 ### Instellingen voor apparaatmogelijkheden - mobiel
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Spraakroaming toestaan**|Hiermee staat u spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Ja|
 |**Gegevensroaming toestaan**|Hiermee staat u dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Ja|
 |**SMS- en MMS-berichten toestaan**|Hiermee staat u het gebruik van sms- en mms-berichten toe op het apparaat.|Nee|Ja|
@@ -121,7 +121,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 ### Instellingen voor apparaatmogelijkheden - functies
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Spraakassistent toestaan**|Hiermee wordt het gebruik van de spraakassistent toegestaan op het apparaat.|Nee|Ja|
 |**Nummer inspreken toestaan**|Hiermee wordt de functie voor het inspreken van nummers op het apparaat in- of uitgeschakeld.|Nee|Ja|
 |**Kopiëren en plakken toestaan**|Hiermee wordt kopiëren en plakken toegestaan op het apparaat.|Nee|Ja|
@@ -208,6 +208,6 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

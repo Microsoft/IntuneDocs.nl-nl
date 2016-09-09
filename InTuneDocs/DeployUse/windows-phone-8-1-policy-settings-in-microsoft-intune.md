@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 ### Wachtwoordinstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u op of gebruikers een wachtwoord voor toegang tot hun apparaten moeten invoeren.|Ja|Ja|
 |**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|Yes|Ja|
 |**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u hiermee echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|Ja|Ja|
@@ -55,44 +55,44 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 ### Versleutelingsinstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Versleuteling vereisen voor mobiel apparaat**|Hiermee vereist u dat de gegevens op ondersteunde mobiele apparaten worden versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Ja|
 
 ### Systeeminstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Schermafbeelding toestaan**|Hiermee kan de gebruiker de inhoud van het scherm als afbeelding vastleggen.|Nee|Ja|
 |**Verzending van diagnostische gegevens toestaan**|Hiermee stelt u het apparaat in staat diagnostische gegevens naar Microsoft te verzenden.|Nee|Ja|
 
 ### Cloudinstellingen - accounts en synchronisatie
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Microsoft-account toestaan**|Hiermee maakt u het mogelijk om een Microsoft-account aan het apparaat te koppelen.|Nee|Ja|
 
 ### E-mailinstellingen
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Aangepaste e-mailaccounts toestaan**|Hiermee stelt u het apparaat in staat verbinding te maken met niet-Microsoft e-mailaccounts.|Nee|Ja|
 
 ### Toepassingsinstellingen - browser
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Webbrowser toestaan**|Hiermee kunt u het gebruik van de ingebouwde webbrowser op apparaten toestaan of blokkeren.|Nee|Ja|
 
 ### Toepassingsinstellingen - apps
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Toepassingsarchief toestaan**|Hiermee kunnen gebruikers verbinding maken met de app store van het apparaat.|Nee|Ja|
 
 ### Instellingen voor apparaatmogelijkheden - hardware
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Camera toestaan**|Hiermee kunt u het gebruik van de camera van het apparaat toestaan of blokkeren.|Nee|Ja|
 |**Verwisselbare opslag toestaan**|Hiermee stelt u het apparaat in staat verwisselbare opslag te gebruiken, zoals SD-kaarten.|Yes|Ja|
 |**Wi-Fi toestaan**|Hiermee schakelt u de Wi-Fi-functionaliteit van het apparaat in of uit.|Nee|Ja|
@@ -106,7 +106,7 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 ### Instellingen voor apparaatmogelijkheden - functies
 
 |Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Kopiëren en plakken toestaan**|Hiermee maakt u kopiëren en plakken op apparaten mogelijk.|Nee|Ja|
 
 ### Instellingen voor toegestane en geblokkeerde apps
@@ -171,6 +171,6 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

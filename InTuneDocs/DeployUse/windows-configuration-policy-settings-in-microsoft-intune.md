@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de
 ## Beveiligingsinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|Yes|Ja|
 |**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u met deze instelling echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|Yes|Ja|
 |**Minimale wachtwoordlengte**<sup>1</sup>|Hiermee configureert u de minimaal vereiste lengte (in tekens) voor het wachtwoord.|Yes|Ja|
@@ -46,7 +46,7 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de
 ## Versleutelingsinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup>|Vereist dat bestanden op het apparaat zijn versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Nee|
 <sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
 
@@ -61,14 +61,14 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de
 ## Instellingen voor malware
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Netwerkfirewall vereisen**|Hiermee vereist u dat Windows Firewall is ingeschakeld.|Yes|Nee|
 |**SmartScreen inschakelen**|Hiermee vereist u het gebruik van Windows SmartScreen.|Yes|Nee|
 
 ## Systeeminstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Automatische updates vereisen**|Hiermee schakelt u de instelling voor automatische updates op apparaten in.|Yes|Nee|
 |**Automatische updates vereisen: minimale classificatie van updates automatisch laten installeren**|Hiermee kiest u de classificatie van updates die automatisch worden geïnstalleerd:<br /><br />-   **Belangrijk**: hiermee worden alle updates geïnstalleerd die zijn geclassificeerd als belangrijk.<br />-   **Aanbevolen**: hiermee worden alle updates geïnstalleerd die zijn geclassificeerd als belangrijk of aanbevolen.|Ja|Nee|
 |**Gebruikersaccountbeheer**|Hiermee vereist u het gebruik van Gebruikersaccountbeheer (UAC) op apparaten.|Ja|Nee|
@@ -78,19 +78,19 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de
 ## Cloudinstellingen – documenten en gegevens
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**URL voor werkmappen**|Hiermee stelt u de URL van de werkmap in, zodat documenten op verschillende apparaten kunnen worden gesynchroniseerd.|Ja|Nee|
 
 ## E-mailinstellingen
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Het Microsoft-account optioneel maken in de Windows Mail-toepassing**|Hiermee maakt u het mogelijk om toegang te krijgen tot de toepassing Windows Mail zonder Microsoft-account.|Ja|Nee|
 
 ## Toepassingsinstellingen - browser
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Automatisch invullen toestaan**|Hiermee stelt u gebruikers in staat instellingen voor automatisch aanvullen in de browser te wijzigen.|Ja|Nee|
 |**Pop-upblokkering toestaan**|Hiermee schakelt u de pop-upblokkering voor browsers in of uit.|Ja|Nee|
 |**Invoegtoepassingen toestaan**|Hiermee stelt u gebruikers in staat invoegtoepassingen toe te voegen aan Internet Explorer.|Ja|Nee|
@@ -109,7 +109,7 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de
 ## Instellingen voor apparaatmogelijkheden - mobiel
 
 |Naam van de instelling|Details|Windows 8.1 en Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Gegevensroaming toestaan**|Hiermee maakt u dataroaming mogelijk wanneer het apparaat verbinding heeft met een mobiel netwerk.|Yes|Nee|
 
 
@@ -119,6 +119,6 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

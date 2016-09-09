@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 --------------
 
 |Beleidsinstelling| Windows 8.1 en hoger| Windows Phone 8.1 en hoger| iOS 6.0 en hoger|Android 4.0 en hoger<br/>Samsung KNOX Standard 4.0 of hoger|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**Configuratie van pincode of wachtwoord** |Hersteld|Hersteld|Hersteld|In quarantaine|
 |**Apparaatversleuteling**|N.v.t.|Hersteld|Hersteld (door een pincode in te stellen)|In quarantaine|
 |**Opengebroken of geroot apparaat**|N.v.t.|N.v.t.|In quarantaine (geen instelling)|In quarantaine (geen instelling)|
@@ -62,6 +62,6 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

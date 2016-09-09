@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 ## Wachtwoordinstellingen
 
 |Naam van de instelling|Details
-|----------------|
+|----------------|---|
 |**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u aan of apparaten met een wachtwoord moeten worden vergrendeld.<br>(Niet van toepassing op apparaten met Windows RT.)|
 |**Vereist wachtwoordtype**|Hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek.|
 |**Minimale wachtwoordlengte**|Hiermee geeft u het minimumaantal tekens op dat is vereist in het apparaatwachtwoord.|
@@ -40,7 +40,7 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 ## Versleutelingsinstellingen
 
 |Naam van de instelling|Details|
-|----------------|
+|----------------|---|
 |**Versleuteling vereisen voor mobiel apparaat**<sup>1</sup>|Vereist dat de gegevens op een apparaat moeten worden gecodeerd als dit wordt ondersteund.<br><br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten** in om versleuteling van iOS-apparaten in te schakelen.|
 |**Versleuteling vereisen voor opslagkaarten**|Vereist dat gegevens die zijn opgeslagen op externe opslag, zoals een SD-kaart, worden versleuteld (op ondersteunde apparaten).
 <sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
@@ -56,7 +56,7 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 ## E-mailinstellingen
 
 |Naam van de instelling|Details
-|----------------|
+|----------------|---|
 |**Gebruikers toestaan e-mailbijlagen te downloaden**|Hiermee geeft u op of e-mailbijlagen kunnen worden gedownload naar het apparaat.|
 |**E-mailsynchronisatieperiode**|Geeft het aantal dagen aan ontvangen e-mail op dat met het apparaat wordt gesynchroniseerd.
 |**Mobiele apparaten die Exchange ActiveSync-instellingen niet volledig ondersteunen, toestaan om te synchroniseren met Exchange**|Hiermee kunt u toegang tot Exchange toestaan op apparaten die een of meer Exchange ActiveSync-instellingen niet ondersteunen.
@@ -64,13 +64,13 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 ## Browserinstellingen
 
 |Naam van de instelling|Details
-|----------------|-
+|----------------|---|
 |**Webbrowser toestaan**|Hiermee geeft u op of de webbrowser op het apparaat kan worden gebruikt.<br>(Niet beschikbaar voor Windows RT en Windows Phone.)
 
 ## Hardware-instellingen
 
 |Naam van de instelling|Details
-|----------------|
+|----------------|---|
 |**Camera toestaan**|Hiermee geeft u op of de camera op het apparaat kan worden gebruikt.<br>(Niet beschikbaar voor Windows RT en Windows Phone.)
 
 
@@ -80,6 +80,6 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
