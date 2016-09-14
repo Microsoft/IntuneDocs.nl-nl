@@ -4,7 +4,7 @@ description: Maak beleid waarmee instellingen en functies worden beheerd op iOS-
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Versleutelde back-ups vereisen**|Hiermee vereist u dat back-ups van het apparaat worden versleuteld.|
 |**Beheerde apps toestaan gegevens naar iCloud te synchroniseren**|Hiermee staat u toe dat apps die u met Intune beheert, gegevens synchroniseren naar het iCloud-account van de gebruikers.|
 |**Handoff toestaan om activiteiten op een ander apparaat voort te zetten**|Hiermee staat u toe dat gebruikers kunnen doorgaan met werk waaraan ze zijn begonnen op een iOS-apparaat, op een ander iOS- of Mac OS X-apparaat.|
+|**Foto's delen via iCloud toestaan**|Hiermee staat u het gebruik van de iOS-functie voor streamen van gedeelde foto's toe.|
+|**iCloud-fotobibliotheek toestaan**|Hiermee kan de gebruiker foto's opslaan in iCloud. Als dit wordt uitgeschakeld, worden foto's die al zijn opgeslagen in iCloud verwijderd.|
 
 ### Toepassingsinstellingen voor de browser
 Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
@@ -99,14 +101,14 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
-|**Toepassingsarchief toestaan**|Hiermee staat u het apparaat toegang tot de App Store toe.|
+|**Installeren van apps toestaan**|Hiermee staat u toegang tot de App Store en de installatie van apps toe.|
 |**Wachtwoord vereisen voor toegang tot het toepassingsarchief**|Hiermee vereist u dat gebruikers een wachtwoord invoeren voordat ze de App Store kunnen bezoeken.|
 |**Aankopen in app toestaan**|Hiermee staat u toe dat Store-aankopen kunnen worden uitgevoerd vanuit een actieve app.|
 |**Beheerde documenten in andere niet-beheerde apps toestaan**|Hiermee stelt u in dat zakelijke documenten kunnen worden weergegeven in elke app.<br>**Voorbeeld:** u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Stel deze instelling in op Nee. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.|
 |**Niet-beheerde documenten in andere beheerde apps toestaan**|Hiermee staat u toe dat elk document kan worden weergegeven in zakelijke beheerde apps.|
 |**Videovergaderingen toestaan**|Hiermee staat u het gebruik van videovergadering-apps toe op het apparaat, zoals FaceTime.|
-|**Inhoud voor volwassenen in media store toestaan**|Hiermee staat u het apparaat toegang tot inhoud voor volwassenen toe.|
-|**Toestaan dat de gebruiker als Erotisch aangeduide inhoud kan downloaden uit de iBooks Store**|Hiermee staat u gebruikers toe dat ze boeken uit de categorie Erotisch downloaden.|
+|**Toestaan dat de gebruiker nieuwe auteurs van bedrijfsapps vertrouwt**|Hiermee kan de gebruiker aangeven apps te vertrouwen die niet uit de App Store zijn gedownload.|
+
 
 ### Toepassingsinstellingen voor games
 Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
@@ -116,12 +118,23 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Game Center-vrienden toestaan**|Hiermee staat u de gebruiker toe vrienden toe te voegen in Game Center.|
 |**Games voor meerdere spelers toestaan**|Hiermee staat u de gebruiker toe op het apparaat games voor meerdere spelers te spelen.|
 
+### Toepassingsinstellingen voor media-inhoud
+Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+
+|Naam van de instelling|Details|
+|----------------|-------|
+|**Classificatieregio**|Selecteer een regio en vervolgens de restrictie voor gebruikers voor het downloaden van **films**, **tv-programma’s** en **apps**.|
+|**Inhoud voor volwassenen in media store toestaan**|Hiermee staat u het apparaat toegang tot inhoud voor volwassenen toe.|
+|**Toestaan dat de gebruiker als Erotisch aangeduide inhoud kan downloaden uit de iBooks Store**|Hiermee staat u gebruikers toe dat ze boeken uit de categorie Erotisch downloaden.|
+
+
 ### Instellingen voor apparaatmogelijkheden voor hardware
 Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
 |**Camera toestaan**|Hiermee geeft u op of de camera op het apparaat kan worden gebruikt.|
+|**Forceren dat de gekoppelde Apple Watch Wrist Detection gebruikt**|Wanneer dit is ingeschakeld, worden op de Apple Watch geen meldingen weergegeven wanneer deze niet wordt gedragen.|
 |**Een wachtwoord voor koppelen voor uitgaande AirPlay-aanvragen vereisen**|Hiermee vereist u een wachtwoord voor koppelen wanneer AirPlay wordt gebruikt om inhoud te streamen naar andere Apple-apparaten.|
 
 ### Instellingen voor apparaatmogelijkheden voor mobiel
@@ -141,6 +154,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Siri toestaan**|Hiermee staat u gebruik van de spraakassistent Siri op het apparaat toe.|
 |**Siri toestaan terwijl apparaat is vergrendeld**|Hiermee staat u gebruik van de spraakassistent Siri op het apparaat toe terwijl het apparaat is vergrendeld.|
 |**Nummer inspreken toestaan**|Hiermee staat u gebruik van de functie voor het inspreken van telefoonnummers op het apparaat toe.|
+|**AirDrop niet toestaan vanuit beheerde apps**|Hiermee wordt het verzenden van gegevens door beheerde apps via Airdrop gestopt.|
 
 
 ### Instellingen voor compatibele en niet-compatibele apps
@@ -214,24 +228,55 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |----------------|--------------------|
 |**Activeringsvergrendeling toestaan wanneer de supervisiemodus voor het apparaat actief is**|Hiermee schakelt u Activeringsvergrendeling in op iOS-apparaten in de supervisiemodus.|
 
-### Supervisie
+### Instellingen voor de supervisiemodus
 U kunt de volgende instellingen configureren op apparaten met iOS 7.1 en hoger in de supervisiemodus.
+
+### Supervisiemodusinstellingen voor apparaatbeperkingen
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
 |**Accountaanpassingen toestaan**|Toestaan dat de gebruiker accountinstellingen, zoals e-configuraties, kan wijzigen.|
-|**AirDrop toestaan**|Hiermee staat u het gebruik van de functie AirDrop toe voor het uitwisselen van inhoud met apparaten in de omgeving.|
 |**Wijzigingen in de instellingen voor het gebruik van mobiel dataverkeer voor apps toestaan**|De gebruiker toestaan om te bepalen welke apps mobiel dataverkeer mogen gebruiken.|
-|**Query's uitvoeren met Siri op door gebruikers gegenereerde inhoud op internet toestaan**|Hiermee staat u Siri toe om websites te raadplegen om vragen te beantwoorden.|
-|**Toegang tot de iBooks Store toestaan**|De gebruiker toestaan om door boeken in de iBooks Store te bladeren en om boeken te kopen.|
-|**Wijzigingen in de instellingen van de app Zoek vrienden toestaan**|Toestaan dat de gebruiker de instellingen van de app Zoek vrienden kan wijzigen.|
 |**Gebruik van de optie voor het wissen van alle inhoud en instellingen op het apparaat toestaan**|Hiermee staat u gebruikers toe de optie te gebruiken voor het wissen van alle inhoud en instellingen op het apparaat.|
 |**Door de gebruiker inschakelen van beperkingen in de apparaatinstellingen toestaan**|Hiermee staat u gebruikers toe beperkingen voor het apparaat te configureren (ouderlijk toezicht).|
-|**Retourneren van resultaten op internet voor zoekopdrachten met Spotlight toestaan**|Hiermee staat u toe dat Spotlight zoekt op en verbinding maakt met internet voor aanvullende resultaten.|
-|**Het gebruik van de Game Center-app toestaan**|Toestaan dat de Game Center-app wordt gebruikt.|
-|**Koppelen met een host om te bepalen met welke apparaten een iOS-apparaat kan worden gekoppeld, toestaan**|Hiermee staat u het koppelen met een host toe, waarmee de beheerder kan bepalen aan welke apparaten een iOS 7-apparaat kan worden gekoppeld.|
+|**Koppelen met een host om te bepalen met welke apparaten een iOS-apparaat kan worden gekoppeld, toestaan**|Hiermee staat u het koppelen met een host toe, waarmee de beheerder kan bepalen aan welke apparaten een iOS-apparaat kan worden gekoppeld.|
 |**Door de gebruiker installeren van configuratieprofielen en -certificaten toestaan**|De gebruiker toestaan om configuratieprofielen en -certificaten te installeren.|
+|**Wijzigen van de apparaatnaam toestaan**|Hiermee staat u de gebruiker toe de naam van het apparaat te wijzigen.|
+|**Wijzigen van de wachtwoordcode toestaan**|Hiermee staat u toevoeging, wijziging of verwijdering van het apparaatwachtwoord toe.|
+|**Koppelen met Apple Watch toestaan**|Hiermee staat u toe dat het apparaat met een Apple Watch koppelt.|
+|**Wijzigen van de meldingsinstellingen toestaan**|Hiermee staat u de gebruiker toe de instellingen voor apparaatmeldingen te wijzigen.|
+|**Wijzigen van de achtergrond toestaan**|Hiermee staat u de gebruiker toe de achtergrond van het apparaat te wijzigen.|
+
+### Supervisiemodusinstellingen voor functiebeperkingen
+
+|Naam van de instelling|Details|
+|----------------|--------------------|
+|**AirDrop toestaan**|Hiermee staat u het gebruik van de functie AirDrop toe voor het uitwisselen van inhoud met apparaten in de omgeving.|
+|**Query's uitvoeren met Siri op door gebruikers gegenereerde inhoud op internet toestaan**|Hiermee staat u Siri toe om websites te raadplegen om vragen te beantwoorden.|
+|**Siri-filter voor scheldwoorden gebruiken**|Hiermee voorkomt u het dicteren van grove taal met Siri of dat Siri grove taal spreekt.|
+|**Retourneren van resultaten op internet voor zoekopdrachten met Spotlight toestaan**|Hiermee staat u toe dat Spotlight zoekt op en verbinding maakt met internet voor aanvullende resultaten.|
+|**Opzoeken van definities van woorden toestaan**|Hiermee staat u de iOS-functie toe waarmee u een woord markeert en de definitie ervan opzoekt.|
+|**Tekstvoorspelling toestaan**|Hiermee staat u toe dat suggesties worden gegeven voor woorden die de gebruiker mogelijk wil invoeren.|
+|**Automatische correctie toestaan**|Hiermee kunnen verkeerd gespelde woorden automatisch worden gecorrigeerd.|
+|**Spellingcontrole toestaan**|Hiermee staat u gebruik van de spellingcontrole van het apparaat toe.|
+|**Sneltoetsen toestaan**|Hiermee staat u gebruik van sneltoetsen toe.|
+
+### Supervisiemodusinstellingen voor app-beperkingen
+
+|Naam van de instelling|Details|
+|----------------|--------------------|
+|**Wijzigen van de vertrouwensinstellingen voor bedrijfsapps toestaan**||
+|**Installeren van apps met alleen Apple-configuratie en iTunes toestaan**||
+|**Automatisch downloaden van apps toestaan**||
+|**Wijzigingen in de instellingen van de app Zoek vrienden toestaan**|Toestaan dat de gebruiker de instellingen van de app Zoek vrienden kan wijzigen.|
+|**Toegang tot de iBooks Store toestaan**|De gebruiker toestaan om door boeken in de iBooks Store te bladeren en om boeken te kopen.|
 |**Gebruik van de app Berichten op het apparaat toestaan**|Toestaan dat de app Berichten kan worden gebruikt om berichten te verzenden.|
+|**Gebruik van Podcasts toestaan**|Hiermee staat u gebruik van Podcasts toe.|
+|**Gebruik van de service Music toestaan**|Hiermee staat u gebruik van de app Apple Music toe.|
+|**iTunes Radio toestaan**|Hiermee staat u gebruik van de app iTunes Radio toe.|
+|**Apple Nieuws toestaan**|Hiermee staat u gebruik van de app Apple Nieuws toe.|
+|**Game Center toestaan**|Toestaan dat de Game Center-app wordt gebruikt.|
+
 
 ### Apps weergeven of verbergen
 
@@ -337,6 +382,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
