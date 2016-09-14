@@ -4,7 +4,7 @@ description: Gebruik Intune voor het weergeven van informatie over de hardware v
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
-ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
+ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
+ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
 
 
 ---
 
 # Inzicht in uw apparaten met inventarisaties in Microsoft Intune
 Met Microsoft Intune kunt u de inventarisatie bekijken van de ingeschreven apparaten en Windows-pc's waarop de Intune-clientsoftware wordt uitgevoerd.
+Intune verzamelt inventaris van beheerde apparaten gewoonlijk om de zeven dagen. Hierdoor kan het langer duren voordat de resultaten van recente wijzigingen aan apparaten, bijvoorbeeld een wijziging van de apparaatnaam, of vrije opslagruimte in rapporten worden weergegeven.
 
 ## Wat wordt er verzameld bij ingeschreven apparaten?
 Als u de inventarisatiegegevens wilt bekijken die door mobiele apparaten zijn verzameld, voert u de [Inventarisrapporten voor mobiele apparaten](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van ingeschreven apparaten verzameld:
@@ -114,6 +115,6 @@ Als u de inventarisatiegegevens wilt weergeven die voor Windows-pc’s worden ve
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

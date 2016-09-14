@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 7474d6fc583c2fd514cfd0b2d0dfd497b1d14480
 
 
 ---
@@ -26,7 +26,7 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 ## **Gebruiken werknemers hun eigen apparaten (BYOD) of worden de apparaten geleverd door uw organisatie?**
 
 > [!div class="button"]
-[Apparaten van werknemer >](choose-how-to-enroll-devices2.md)   [Apparaten van bedrijf >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)<br>[COD >](choose-how-to-enroll-devices3.md)
 
 - **Eigen apparaten van gebruikers**: BYOD-registratie (Bring Your Own Device): gebruikers kunnen de Intune-bedrijfsportal-app op hun apparaten installeren en deze vervolgens registreren, zodat ze toegang krijgen tot bedrijfsresources zoals e-mail, bedrijfsapps, bedrijfsgegevens en ondersteuning.  
 
@@ -34,6 +34,6 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

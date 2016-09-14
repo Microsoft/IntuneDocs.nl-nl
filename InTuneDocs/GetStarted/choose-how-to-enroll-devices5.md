@@ -13,8 +13,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 825392d060229a6b3f3bd3e84ad4be127118aa21
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 026ac12f12046f59eaac6e8bedc0669bcd93fb75
 
 
 ---
@@ -26,7 +26,7 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 ## **Hoe beheert u uw gedeelde iOS-apparaten?**
 
   > [!div class="button"]
-  [iOS DEP-registratie >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Directe iOS-registratie >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM-registratie >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+  [iOS-DEP-registratie >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)<br>[Directe iOS-registratie >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)<br>[DEM-registratie >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Het Device Enrollment Program (DEP) van Apple**: u kunt voor iOS-apparaten die zijn aangeschaft of worden beheerd met DEP een registratieprofiel gebruiken. Wanneer gebruikers hun apparaat voor het eerst inschakelen, downloadt het apparaat het DEP-profiel en wordt het apparaat geregistreerd bij de profiel-DEP.
 
@@ -39,6 +39,6 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

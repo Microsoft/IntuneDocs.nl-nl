@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
-ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
+ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
+ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 ---
@@ -23,12 +23,6 @@ ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 Als u problemen hebt met het implementeren en beheren van apps met Intune, begint u hier. Dit onderwerp bevat oplossingen voor een aantal veelvoorkomende problemen.
 
 ## Veelvoorkomende problemen bij het implementeren van apps
-
-### Gebruikers kunnen zich niet aanmelden bij de Microsoft Intune-bedrijfsportal
-
-1.  Zorg ervoor dat het gebruikersaccount bestaat en is ingeschakeld op de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  Controleer op de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) of de gebruiker de juiste gebruikersnaam gebruikt om zich aan te melden bij Intune en of deze de volgende indeling heeft: **jan@domein.com**. Als de gebruiker een onjuist wachtwoord invoert, vraagt u hem of haar om het wachtwoord opnieuw in te stellen.
 
 ### Als de contactgegevens voor IT ontbreken op de bedrijfsportal
 
@@ -52,15 +46,6 @@ Als u problemen hebt met het implementeren en beheren van apps met Intune, begin
 
 4.  Als de voortgangsbalk voor het downloaden van de iOS-app voltooid is, maar de app-installatie mislukt, kan er iets mis zijn met de app-bestanden die u hebt opgegeven.
 
-### Als u met een koppeling naar een iOS-app naar een vorige locatie in iTunes App Store gaat
-
-1.  De huidige iTunes App Store-sessie wordt geopend op de vorige pagina van de app.
-
-2.  Sluit de iTunes App Store op het apparaat en probeer de koppeling opnieuw.
-
-### Als u een foutbericht ontvangt bij het starten van een iOS-app
-
-1.  De vervaldatum van de app is mogelijk niet geldig.
 
 ### Als uw app blijft steken in 'Wordt uitgevoerd' tijdens het uploaden
 
@@ -73,12 +58,6 @@ Als u problemen hebt met het implementeren en beheren van apps met Intune, begin
 1.  Controleer of de firewall van uw organisatie toegang geeft tot de inrichtings- en certificeringswebsites van Apple.
 
 2.  Zie de Apple-documentatie voor ontwikkelaars voor meer informatie.
-
-### Fout: de uitgever bestaat niet
-U gebruikt **Andere softwareovereenkomst toevoegen** om een licentieovereenkomst van derden toe te voegen. U probeert de uitgever toe te voegen vanaf de pagina **Andere softwarelicentieovereenkomst**. De pagina bevat een lijst met de bestaande uitgevers in alfabetische volgorde.
-U voert de ontbrekende uitgever in, maar ontvangt het foutbericht **Uitgever bestaat niet**.
-
-Dit is standaard. U kunt in Intune alleen licenties bijhouden voor populaire softwaretitels. Intune vereist dat minimaal vier afzonderlijke accounts de software hebben gerapporteerd voordat deze als keuze beschikbaar is in de licentieworkload.
 
 ### Als beheerde apps geen installatiestatus rapporteren
 
@@ -93,13 +72,13 @@ De volgende tabel bevat algemene fouten die zich kunnen voordoen tijdens de impl
 |0x80073CF0|Het pakket kan niet worden geopend.|Mogelijke oorzaken:<br /><br />-   Het pakket is niet ondertekend.<br />-   De naam van de uitgever komt niet overeen met de ondertekenende certificaathouder.<br /><br />Controleer het gebeurtenislogboek AppxPackagingOM op meer informatie.|
 |0x80073CF3|Validatie van updates, afhankelijkheid of conflict voor het pakket is mislukt|Mogelijke oorzaken:<br /><br />-   Het binnenkomende pakket conflicteert met een geïnstalleerd pakket.<br />-   Kan een opgegeven pakketafhankelijkheid niet vinden.<br />-   Het pakket biedt geen ondersteuning voor de juiste processorarchitectuur.<br /><br />Controleer het gebeurtenislogboek AppXDeployment-Server voor meer informatie.|
 |0x80073CFB|Het opgegeven pakket is al geïnstalleerd en opnieuw installeren van het pakket is geblokkeerd|Dit foutbericht kan worden weergegeven als u een pakket installeert dat niet gelijk is aan het pakket dat al is geïnstalleerd. Controleer of de digitale handtekening ook onderdeel is van het pakket. Wanneer een pakket opnieuw is samengesteld of opnieuw is ondertekend, is dat pakket niet meer bitsgewijs identiek aan het eerder geïnstalleerde pakket. Er zijn twee mogelijke opties om deze fout te herstellen:<br /><br />-   Verhoog het versienummer van de app, stel het pakket opnieuw samen en onderteken het opnieuw.<br />-   Verwijder het oude pakket voor elke gebruiker op het systeem voordat u het nieuwe pakket installeert.|
-|0x87D1041C|De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd.|- De gebruiker heeft de app geïnstalleerd vanuit de bedrijfsportal en heeft de app vervolgens direct van het apparaat verwijderd. Installeer de app opnieuw vanuit de bedrijfsportal.<br /><br />- Misschien komen het versienummer van een Line-Of-Business-app zoals deze wordt herkend door Intune en de versie die op het apparaat is geïnstalleerd niet overeen. Zorg ervoor dat Intune de juiste versie heeft en installeer de app opnieuw.|
+|0x87D1041C|De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd.|-De app is met Intune geïmplementeerd en daarna verwijderd (mogelijk door de eindgebruiker). Geef de gebruiker de opdracht de app opnieuw te installeren via de bedrijfsportal. Vereiste apps worden automatisch opnieuw geïnstalleerd wanneer het apparaat vervolgens incheckt.|
 
 ### Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning, zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

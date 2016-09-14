@@ -4,7 +4,7 @@ description: Meer informatie over de verschillende manieren waarop u apparaten k
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,66 +13,58 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: cfd9df3814d0d306a254a5566155a91ce5d0ca16
+ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
+ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
 
 
 ---
 
 # Kiezen hoe u apparaten beheert
-Met Intune kunt u een apparaten in groepen beheren door ze *in te schrijven* bij de service. Gebruikers kunnen vervolgens een *bedrijfsportal* gebruiken om allerlei bewerkingen uit te voeren, zoals hun apparaat registreren, zoeken naar en installeren van apps, ervoor zorgen dat het apparaat voldoet aan het bedrijfsbeleid en contact opnemen met de IT-ondersteuning.
 
-## Manieren waarop u mobiele apparaten kunt beheren
-Met Intune kunnen de volgende apparaatplatformen worden beheerd:
+Als u gebruik wil maken van de vele functies van Intune, zoals implementatie van apps en beheer van apparaatinstellingen, moeten uw apparaten worden *beheerd*. Hoe u apparaten beheert, is afhankelijk van de Intune-mogelijkheden die u wilt gebruiken.
+Dit onderwerp helpt u bij het kiezen van een methode dia aan uw behoeften voldoet.
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+Als u iOS-, Mac OS X-, Android- of Windows Phone-apparaten wilt beheren, moet u ze *registreren*.
 
-> [!NOTE]
-> Als u al eerder apparaten hebt ingeschreven met een oudere versie van iOS dan de ondersteunde versie, blijven deze apparaten ingeschreven. Raadpleeg de documentatie om na te gaan of de functie die versie van iOS ondersteunt.
+Als u Windows-pc's wilt beheren, hebt u twee opties:
 
-Intune kan BYOD-apparaten (Bring Your Own Device) van gebruikers beheren. Het kan ook apparaten beheren die eigendom zijn van het bedrijf, waaronder scenario’s waarin het bedrijf een lijst met apparaten biedt waaruit gebruikers kunnen kiezen. Dit wordt ook wel CYOD ('choose your own device' of 'kies je eigen apparaat').
+1. Registreer het apparaat **of**
+2. Installeer de *Intune-softwareclient*.
 
-### Apparaten registreren voor beheer
-Als u mobiele apparaten hebt met het besturingssysteem iOS, Android of Windows Phone, moet u deze altijd registreren. Hoe u apparaten moet inschrijven, hangt af van de behoeften van uw organisatie:
+## Bepalen welke methode u wilt gebruiken
+Gebruik dit stroomschema om te bepalen hoe uw apparaten worden beheerd.
 
-|Inschrijvingstype|BYOD|CYOD|Gedeeld apparaat met manageraccount|Gedeeld apparaat zonder gebruikersaccount|
-|-------------------|--------|--------|--------------------------------------|----------------------------------------|
-|**Beschrijving**|Persoonlijk apparaat is ingeschreven met Microsoft Intune|Apparaat in bedrijfseigendom voor één gebruiker|Apparaat in bedrijfseigendom beheerd met een manageraccount gedeeld door veel gebruikers|Apparaat in bedrijfseigendom zonder specifieke gebruiker dat wordt gebruikt door veel gebruikers.|
-|**Gebruiker van het apparaat**|Eigenaar|Toegewezen gebruiker|Er is geen gebruikersspecifiek account|Er is geen specifieke gebruiker|
-|**Wie schrijft apparaten in?**|Eigenaar|Beheerder|Apparaatmanager|Iedereen|
-|**Wie schrijft apparaten uit?**|Eigenaar of beheerder|Platform |Beheerder of gebruiker|Beheerder of gebruiker|
-|**Wie stelt apparaten opnieuw in?**|Eigenaar of beheerder|Beheerder|Beheerder|Beheerder|
+![Stroomschema om te bepalen hoe apparaten worden beheerd.](./media/choose-manage-method.png)
 
-Zie [Kiezen hoe u mobiele apparaten inschrijft](/intune/get-started/choose-how-to-enroll-devices1) voor meer informatie.
+Registreer Windows-pc's voor de meeste functionaliteit. De Intune-softwareclient past misschien beter bij uw behoeften wanneer:
 
-> [!NOTE]
-> Zie [Mogelijkheden voor Mobile Device Management](mobile-device-management-capabilities-in-microsoft-intune.md) voor een volledige lijst van de mogelijkheden waarover u beschikt als u apparaten registreert.
+- Windows 7 wordt uitgevoerd op de pc
+- U software-updates voor Windows en het gebruik van licenties wilt beheren
+- U malware wilt beheren met Endpoint Protection en Windows Firewall
+- U met behulp van de software TeamViewer hulp op afstand wilt bieden aan gebruikers
 
-## Manieren waarop u Windows-pc’s kunt beheren
-Intune kan pc's met Windows Vista en nieuwere Windows-pc's beheren met behulp van de Intune-computerclient. Bij Windows-pc's hebt u de keuze tussen inschrijven of de Intune-pc-clientsoftware installeren. Met deze tweede optie profiteert u van enkele mogelijkheden die niet beschikbaar zijn als u apparaten inschrijft. In de meeste gevallen schrijft u uw Windows-apparaat bij Intune, waardoor u over meer mogelijkheden beschikt dan via de computerclient.
 
-Overweeg de Intune-computerclient te gebruiken als u de volgende zaken wilt doen:
+Zie [Mogelijkheden voor Mobile Device Management](mobile-device-management-capabilities-in-microsoft-intune.md) en [Mogelijkheden voor de Intune-pc-softwareclient](windows-pc-management-capabilities-in-microsoft-intune.md) voor een gedetailleerd overzicht van de beheermogelijkheden van beide methoden.
+Zie [Ondersteunde mobiele apparaten en computers](/intune/get-started/supported-mobile-devices-and-computers) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
 
-- De mogelijkheden van de Microsoft Intune-computerclient gebruiken om uw Windows-pc’s te beheren
-- Een Windows-pc beheren met een besturingssysteem dat niet wordt ondersteund voor inschrijving
-
-> [!NOTE]
-> Zie [Beheermogelijkheden voor Windows-pc’s](windows-pc-management-capabilities-in-microsoft-intune.md) voor een volledige lijst van de mogelijkheden waarover u beschikt als u de Intune-computerclient installeert op een ondersteunde Windows-pc.
 
 ## Exchange ActiveSync-beheer
-U kunt apparaten ook beheren met behulp van Exchange ActiveSync. Hiervoor moet u de lokale connector installeren of de ingebouwde Service-to-Service-connector gebruiken om verbinding te maken met uw Exchange-server.
-
-Zie [Vereisten voor de On-Premises Connector](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) voor meer informatie over de hardware- en softwarevereisten om de On-Premises Connector te installeren.
-
-Zie [Mobile Device Management met Exchange ActiveSync en Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) voor meer informatie over het gebruik van de On-Premises Connector of de Service to Service Connector.
-
+Naast het registreren van een apparaat of het installeren van de Intune-softwareclient, kunt u ook apparaten ook beheren [met behulp van Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). Bij deze methode moet u de lokale connector installeren of de ingebouwde Service-to-Service-connector gebruiken om verbinding te maken met uw Exchange-server.
+Hoewel dit een derde optie is voor beheer van apparaten, zijn de beheermogelijkheden beperkt in vergelijking met de andere methoden.
 
 
 ## Volgende stappen
-Nu u enkele mogelijkheden hebt ontdekt die u kunt gebruiken wanneer u uw apparaten registreert bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], moet u zich voorbereiden op [de registratie van uw apparaten](/intune/deploy-use/enroll-devices-in-microsoft-intune). Nadat u uw apparaten hebt geregistreerd, kunt u profiteren van alle mogelijkheden waarover u hebt gelezen in dit onderwerp. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+
+- [Kiezen hoe u mobiele apparaten registreert](/intune/get-started/choose-how-to-enroll-devices1)
+- [Windows-pc's beheren met de Intune-pc-clientsoftware](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 
 
 
-<!--HONumber=Aug16_HO3-->
+- [Mobiele apparaten met Exchange ActiveSync beheren met Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+
+
+
+
+<!--HONumber=Aug16_HO5-->
 
 

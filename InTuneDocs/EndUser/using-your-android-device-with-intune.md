@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,9 +22,9 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Met behulp van een Android-apparaat met Intune
 
-Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun met Intune beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: 
+Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun met Intune beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers moeten nemen om diverse taken uit te voeren. Deze zijn ondergebracht in de volgende categorieën:
 
-- Installatie van de bedrijfsportal-app en registratie bij Intune 
+- Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 - Beheertaken na de registratie
 - Problemen met naleving
 
@@ -37,7 +37,7 @@ De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfspo
 
 ## Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
 
-De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u uw Android-apparaat hebt geregistreerd bij Intune.
+In deze sectie kunt u lezen welke acties u kunt uitvoeren nadat u uw Android-apparaat bij Intune hebt geregistreerd.
 
 - [Beheerde apps op uw apparaat gebruiken](use-managed-apps-on-your-device-android.md)
 - [Uw apparaat versleutelen](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u 
 
 ## Problemen met het apparaat oplossen
 
-De informatie in deze sectie helpt u problemen op te lossen die mogelijk optreden wanneer een Android-apparaat wordt geregistreerd bij Intune.
+De informatie in deze sectie helpt u bij het oplossen van problemen die mogelijk optreden wanneer een Android-apparaat wordt geregistreerd bij Intune.
 
 - [Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

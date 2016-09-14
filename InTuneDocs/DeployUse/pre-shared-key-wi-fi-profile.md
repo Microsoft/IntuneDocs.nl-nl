@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
-ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,14 +22,14 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 # Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
 Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
-Opmerking:
+> [!NOTE]
 -   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
 - Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
 -   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
--  Voor iOS gebruikt u de Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
+-  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
 
 
-1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een beleid **Aangepaste configuratie** voor dat apparaatplatform, in plaats van een Wi-Fi profiel aan te maken.
+1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een beleid **Aangepaste configuratie** voor dat apparaatplatform en maakt u geen Wi-Fi profiel.
 
 2.  Geef een naam en beschrijving op.
 3.  Een nieuwe OMA-URI-instelling toevoegen:
@@ -40,18 +40,27 @@ Opmerking:
 
    c.   **Gegevenstype**: ingesteld op String(XML)
 
-   d.   **OMA-URI**: 
-        
-- **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-- **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   d.   **OMA-URI**:
 
-Opmerking: zorg ervoor dat deze string begint met een punt.
+    - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID is de SSID waarvoor u het beleid wilt maken. Bijvoorbeeld:
-`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+Zorg ervoor dat deze string met een punt begint.
 
-  e.    Waardeveld: hier plakt u de XML-code. Hier volgt een voorbeeld. Elke waarde moet worden aangepast aan de instellingen van uw netwerk. Zie het gedeelte met opmerkingen over de code voor een aantal tips.
+    SSID is de SSID waarvoor u het beleid wilt maken. Bijvoorbeeld:
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **Waardeveld**: hier plakt u de XML-code. Hier volgt een voorbeeld. Elke waarde moet worden aangepast aan de instellingen van uw netwerk. Zie het gedeelte met opmerkingen over de code voor een aantal tips.
+4. Kies **OK**, opslaan en implementeer het beleid.
+
+    > [!NOTE]
+Dit beleid kan alleen worden geïmplementeerd voor gebruikersgroepen.
+
+De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan automatisch verbinding maken met het netwerk.
+## Wi-Fi-profiel voor Android of Windows
+
+Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of Windows:
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -173,33 +182,31 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP
       </MSM>
     </WLANProfile>
 
-4.  Klik op OK, sla het beleid op en implementeer het vervolgens.
-OPMERKING. Dit beleid kan alleen worden geïmplementeerd voor gebruikersgroepen
-
-De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan automatisch verbinding maken met het netwerk.
 ## Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
 U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
-1.     Op een computer die (onlangs) is verbonden met het draadloze netwerk, opent u de volgende map: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. Het is raadzaam een computer te gebruiken die niet met veel draadloze netwerken verbinding heeft gemaakt, omdat u alle profielen moet doorzoeken om het juiste te vinden.
+1. Op een computer die (onlangs) is verbonden met het draadloze netwerk, opent u de volgende map: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+
+    Het is raadzaam een computer te gebruiken die niet met veel draadloze netwerken verbinding heeft gemaakt, omdat u alle profielen moet doorzoeken om het juiste te vinden.
 3.     Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 4.     Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld Gegevens van de pagina OMA-URI-instellingen.
 
 ## Het beleid implementeren
 
-1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en klik vervolgens op **Implementatie beheren**.
+1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
 
 2.  In het dialoogvenster **Implementatie beheren** :
 
-    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en klik vervolgens op **Toevoegen** &gt; **OK**.
+    -   **Het beleid implementeren**: selecteer een of meer groepen waarvoor u het beleid wilt implementeren en kies vervolgens **Toevoegen**&gt; **OK**.
 
-    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: klik op **Annuleren**.
+    -   **Het dialoogvenster sluiten zonder het beleid te implementeren**: kies **Annuleren**.
 
-Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
+Wanneer u een geïmplementeerd beleid selecteert, kunt u meer informatie over de implementatie weergeven onder aan de lijst met beleidsregels.
 
 ### Zie tevens
 [Wi-Fi-verbindingen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

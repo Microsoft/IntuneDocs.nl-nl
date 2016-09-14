@@ -4,7 +4,7 @@ description: Gebruik de informatie in dit onderwerp om u te helpen bepalen welk 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Documentatie voor Microsoft Intune-beleid
+# Documentatie voor configuratiebeleid van Microsoft Intune
 
 Gebruik de informatie in dit onderwerp om u te helpen bepalen welk Microsoft Intune-configuratiebeleid u moet gebruiken voor het beheren van uw apparaten.
 
@@ -74,7 +74,7 @@ Is alleen van toepassing op Windows Phone en geregistreerde Windows-apparaten.
 |---------------|------------------------|
 |**Aangepaste configuratie (Windows 10 Desktop en Mobile en hoger)**|OMA-URI-instellingen implementeren die kunnen worden gebruikt om apparaatfuncties te besturen. Dit is handig wanneer de instelling die u nodig hebt niet beschikbaar is in een configuratiebeleid.<br />    Zie [Instellingen voor Windows 10-beleid in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md) voor meer informatie.|
 |**Aangepaste configuratie (Windows Phone 8.1 en hoger)**|OMA-URI-instellingen implementeren die kunnen worden gebruikt om apparaatfuncties te besturen. Dit is handig wanneer de instelling die u nodig hebt niet beschikbaar is in een configuratiebeleid.<br /><br />Zie [Instellingen voor Windows Phone 8.1-beleid in Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md) voor meer informatie.|
-|**Beleid voor editie-upgrades (Windows 10 Desktop en hoger)**<br><br>**Beleid voor editie-upgrades (Windows 10 Holographic en hoger)**|Configureren en implementeren van beleid met licentie- of productsleutelgegevens, dat wordt gebruikt voor het bijwerken van Windows 10-apparaten naar een nieuwere versie.<br><br>Zie [Beleidsinstellingen in Microsoft Intune voor upgrades van de Windows-editie](edition-upgrade-policy-settings-in-microsoft-intune.md) voor meer informatie.|  
+|**Beleid voor editie-upgrades (Windows 10 Desktop en hoger)**<br><br>**Beleid voor editie-upgrades (Windows 10 Holographic en hoger)**<br><br>**Beleid voor editie-upgrades (Windows 10 Mobile en hoger)**|Configureren en implementeren van beleid met licentie- of productsleutelgegevens, dat wordt gebruikt voor het bijwerken van Windows 10-apparaten naar een nieuwere versie.<br><br>Zie [Beleidsinstellingen in Microsoft Intune voor upgrades van de Windows-editie](edition-upgrade-policy-settings-in-microsoft-intune.md) voor meer informatie.|  
 |**E-mailprofiel (Windows Phone 8 en hoger)**<br /><br />**E-mailprofiel (Windows 10 Desktop en Mobile en hoger)**|E-mailinstellingen voor Exchange ActiveSync maken, implementeren en bewaken op beheerde apparaten. Hiermee hebben gebruikers toegang tot bedrijfse-mail op hun eigen apparaten zonder dat ze zelf instellingen moeten doorvoeren.<br /><br />Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) voor meer informatie.|
 |**Algemene configuratie (Windows 10 Desktop en Mobile en hoger)**|Beveiligings- en functionele instellingen voor mobiele apparaten configureren voor ingeschreven Windows 10 Desktop- en Mobile-apparaten.<br /><br />Zie [Instellingen voor Windows 10-beleid in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md) voor meer informatie.|
 |**Algemene configuratie (Windows 10 Team en hoger)**|Configureer de apparaatbeveiliging en functionele instellingen voor ingeschreven Windows 10 Team-apparaten (bijvoorbeeld een Surface Hub-apparaat).<br /><br />Zie [Instellingen voor configuratiebeleid voor Windows Team in Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md) voor meer informatie.|
@@ -104,25 +104,7 @@ Is alleen van toepassing op Windows Phone en geregistreerde Windows-apparaten.
 > [!IMPORTANT]
 Microsoft Intune biedt nu afzonderlijk **configuratiebeleid** voor elk apparaatplatform. Dit beleid bevat de nieuwste instellingen die u kunt gebruiken. U kunt het beveiligingsbeleid voor mobiele apparaten blijven gebruiken en eventuele bestaande implementaties zullen nog steeds werken, maar u moet echter zo snel mogelijk naar de nieuwe configuratiebeleidsregels migreren.<br />Zie [Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md) voor meer informatie.|
 
-## Beleid voor voorwaardelijke toegang en nalevingsbeleid
-
-### Voorwaardelijke toegang
-
-|Naam van beleid|Gebruik dit beleid wanneer u het volgende wilt doen|
-|---------------|------------------------|
-|**Exchange Online-beleid**<br /><br />**Beleid voor Exchange On-Premises**|Toegang tot Microsoft Exchange-e-mail beheren vanaf apparaten die niet worden beheerd door Intune of die niet compatibel zijn met nalevingsbeleid dat u hebt gemaakt.<br /><br />Zie [De toegang beperken tot e-mail bij Exchange Online en de nieuwe Exchange Online Dedicated-omgeving met Intune](restrict-access-to-exchange-online-with-microsoft-intune.md) voor meer informatie.|
-|**Beleid voor SharePoint Online**|Toegang tot SharePoint Online beheren vanaf apparaten die niet worden beheerd door Intune of die niet compatibel zijn met nalevingsbeleid dat u hebt gemaakt.<br /><br />Zie [Toegang tot SharePoint Online beperken met Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md) voor meer informatie.|
-|**Skype voor bedrijven**|Toegang tot Skype voor Bedrijven beheren vanaf apparaten die niet worden beheerd door Intune of die niet compatibel zijn met nalevingsbeleid dat u hebt gemaakt.<br /><br />Zie [Toegang tot Skype voor Bedrijven beperken met Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md) voor meer informatie.|
-> [!NOTE]
-> U implementeert geen beleidsregels voor voorwaardelijke toegang voor gebruikers en apparaten. In plaats daarvan configureert u het vereiste beleid dat van toepassing is op alle groepen waarop het beleid is gericht.
-
-### Nalevingsbeleid
-
-|Naam van beleid|Gebruik dit beleid wanneer u het volgende wilt doen|
-|---------------|------------------------|
-|**Compliance beleidsregels**|Het compatibiliteitsniveau voor apparaten definiëren en vervolgens apparaten rapporteren die niet-compatibel zijn. Deze beleidsregels worden gebruikt met voorwaardelijke toegang om apparaten te evalueren die geen toegang tot services mogen hebben.<br /><br />Zie [Nalevingsbeleid voor apparaten in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) voor meer informatie.|
-
-## Windows-pc-beheer
+## Beleid voor Windows-pc's die worden beheerd met de Intune-softwareclient
 
 |Naam van beleid|Gebruik dit beleid wanneer u het volgende wilt doen|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune biedt nu afzonderlijk **configuratiebeleid** voor elk apparaatp
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

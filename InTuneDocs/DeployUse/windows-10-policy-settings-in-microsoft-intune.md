@@ -4,7 +4,7 @@ description: Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/31/2016
+ms.date: 08/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,129 +13,279 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
-ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
+ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
+ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
 
 
 ---
 
-# Windows 10-beleidsinstellingen in Microsoft Intune
+# Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune
 
-Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebouwde en aangepaste instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
+De informatie in dit onderwerp kan u helpen de Intune-beleidsinstellingen te begrijpen die u kunt gebruiken voor het beheren van Windows 10-apparaten. Raadpleeg dit onderwerp en de procedures in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) om ingebouwde en aangepaste instellingen te configureren voor geregistreerde Windows 10 desktop- en Windows 10 Mobile-apparaten. U kunt dit beleid niet gebruiken voor pc’s waarop de [Intune-pc-clientsoftware](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune) wordt uitgevoerd.
 
-> [!IMPORTANT]
-> U kunt Windows 10-pc's op twee manieren beheren; door ze in te schrijven of de pc-clientsoftware van Intune te installeren. Elke methode biedt verschillende mogelijkheden (zie [Kiezen hoe u apparaten beheert](/intune/get-started/choose-how-to-manage-devices) voor meer informatie.
-> Wanneer u uw Windows-10-computers met de Intune-pc-clientsoftware beheert, kunt u niet de beleidsregels en instellingen gebruiken die in dit onderwerp worden genoemd. Als u deze instellingen wilt toepassen, moeten uw Windows 10-apparaten bij Intune worden ingeschreven.
+U kunt kiezen uit twee beleidstypen:
 
-## Algemene instellingen voor configuratiebeleid
+- **Aangepaste beleid**: gebruik het **aangepaste beleid** van Microsoft Intune voor Windows 10 en Windows 10 Mobile om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om functies op apparaten te beheren. In Windows 10 zijn veel instellingen toegankelijk via de [beleids-CSP (Configuration Service Provider)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+- **Algemeen configuratiebeleid**: gebruik dit beleidstype wanneer u instellingen wilt kiezen uit de ingebouwde lijst van Microsoft Intune.
 
-Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om algemene instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. 
+## Aangepaste beleidsinstellingen
 
+Geef de volgende instellingen op in een aangepast beleid:
 
-## - Wachtwoord
+## &nbsp;&nbsp;&nbsp;Algemeen
 
-|Naam van de instelling|Details|
+Geef een naam en eventueel een beschrijving op voor dit beleid, zodat u het kunt herkennen in de Intune-console.
+
+## &nbsp;&nbsp;&nbsp;OMA-URI-instellingen
+
+Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in. Gebruik de [documentatie voor Windows 10-URI-instellingen](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in dit onderwerp voor meer informatie over de instellingen die u kunt gebruiken: 
+
+- **Naam van de instelling**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
+- **Beschrijving van de instelling:** voer eventueel een beschrijving in voor de instelling.
+- **Gegevenstype**: kies uit:
+    - **Tekenreeks**
+    - **Tekenreeks (XML)**
+    - **Datum en tijd**
+    - **Geheel getal**
+    - **Drijvende komma**
+    - **Boolean-waarde**
+- **OMA-URI (hoofdlettergevoelig)**: geef aan voor welke OMA-URI u een instelling wilt opgeven.
+- **Waarde**: geef de waarde op die moet worden gekoppeld aan de OMA-URI die u hebt opgegeven.
+
+### Voorbeeld
+In de schermopname hieronder is de instelling **Conectivity/AllowVPNOverCellular** ingeschakeld. Hiermee kan met een Windows-10-apparaat een VPN-verbinding worden gemaakt in een mobiel netwerk.
+
+> ![Voorbeeld van een aangepast beleid met VPN-instellingen](./media/custom-policy-example.png)
+
+## Windows 10-URI-instellingen
+In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met een **aangepast Windows 10-beleid** kunt configureren.
+
+## &nbsp;&nbsp;&nbsp;Beleid
+
+|Naam van beleid en URI|Details|
+|---------------|------------|-----------|
+|**Automatisch bijwerken toestaan**<br>./Vendor/MSFT/Policy/Config/Update/AllowAutoUpdate|Alleen desktop<br>**Gegevenstype:** geheel getal<br />**Waarden:** **0** - **5** (standaard: **1**)|
+|**Planning installatiedag**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay|Alleen mobiel<br>**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: elke dag (standaard)<br>**1**: zondag<br>**2**: maandag<br>**3**: dinsdag<br>**4**: woensdag<br>**5**: donderdag<br>**6**: vrijdag<br>**7**: zaterdag|
+|**Planning installatietijd**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** - **23** uur (**0** is middernacht) (standaard: **3**)|
+|**DeviceLock/AllowIdleReturnWithoutPassword**<br>./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: de gebruiker kan de timer van de respijtperiode voor het wachtwoord niet instellen; de waarde is ingesteld als 'elke keer'<br>**1**: de gebruiker kan de timer voor de respijtperiode van het wachtwoord instellen (standaard)|
+|**WiFi/AllowWiFi**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: **gebruik van Wi-Fi-verbinding** niet toestaan.<br>**1**: **gebruik van Wi-Fi-verbinding toestaan** (standaard).|
+|**WiFi/AllowInternetSharing**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing|Desktop en mobiel<br>**Gegevenstype:** geheel getal<br />**Waarden:** **0**: delen via internet niet toestaan, **1**: delen via internet toestaan (standaard)|
+|**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**WiFi/AllowManualWiFiConfiguration**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: een Wi-Fi-verbinding buiten de ingerichte MDM is niet toegestaan.<br>**1**: het toevoegen van een nieuwe netwerk-SSID buiten de al aanwezige MDM is toegestaan (standaard).|
+|**System/AllowLocation**<br>./Vendor/MSFT/Policy/Config/System/AllowLocation|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**System/AllowTelemetry**<br>./Vendor/MSFT/Policy/Config/System/AllowTelemetry|Desktop en mobiel<br>**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toegestaan (instelling alleen voor Enterprise)<br>**1** : beperkt<br>**2**: volledig (standaard)<br>**3**: volledig en diagnostische gegevens|
+|**System/AllowExperimentation**<br>./Vendor/MSFT/Policy/Config/System/AllowExperimentation|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toegestaan<br>**1**: alleen instellingen (standaard)<br>**2**: instellingen en experimenteren|
+|**Security/AntiTheftMode**<br>./Vendor/MSFT/Policy/Config/Security/AntiTheftMode|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: Antidiefstalmodus niet toestaan<br>**1**: gebruikersvoorkeur (standaard)|
+|**Connectivity/AllowUSBConnection**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowUSBConnection|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**System/AllowUserToResetPhone**<br>./Vendor/MSFT/Policy/Config/System/AllowUserToResetPhone|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Connectivity/AllowCellularDataRoaming**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowCellularDataRoaming|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Connectivity/AllowVPNOverCellular**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNOverCellular|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: VPN is niet toegestaan via mobiele verbindingen<br>**1**: VPN mag alle verbinding gebruiken, inclusief mobiele verbindingen (standaard)|
+|**Connectivity/AllowVPNRoamingOverCellular**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Connectivity/AllowVPNRoamingOverCellular**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Connectivity/AllowBluetooth**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: de gebruiker niet toestaan Bluetooth in te schakelen.<br>**1**: gereserveerd. De gebruiker kan Bluetooth inschakelen en configureren (niet ondersteund in Windows Phone 8.1 voor MDM, EAS-, Windows 10 Desktop en Windows 10 Mobile)<br>**2**: toegestaan. De gebruiker kan Bluetooth inschakelen en configureren (standaard)|
+|**Experience/AllowScreenCapture**<br>./Vendor/MSFT/Policy/Config/Experience/AllowScreenCapture|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Experience/AllowTaskSwitcher**<br>./Vendor/MSFT/Policy/Config/Experience/AllowTaskSwitcher|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Experience/AllowVoiceRecording**<br>./Vendor/MSFT/Policy/Config/Experience/AllowVoiceRecording|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Experience/AllowSyncMySettings**<br>./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: roaming niet toestaan, **1**: roaming toestaan (standaard)|
+|**Experience/AllowManualMDMUnenrollment**<br>./Vendor/MSFT/Policy/Config/Experience/AllowManualMDMUnenrollment|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Accounts/AllowMicrosoftAccountConnection**<br>./Vendor/MSFT/Policy/Config/Accounts/AllowMicrosoftAccountConnection|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Accounts/AllowAddingNonMicrosoftAccountsManually**<br>./Vendor/MSFT/Policy/Config/Accounts/AllowAddingNonMicrosoftAccountsManually|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Security/AllowManualRootCertificateInstallation**<br>./Vendor/MSFT/Policy/Config/Security/AllowManualRootCertificateInstallation|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Security/AllowAddProvisioningPackages**<br>./Vendor/MSFT/Policy/Config/Security/AllowAddProvisioningPackages|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Search/DisableBackoff**<br>./Vendor/MSFT/Policy/Config/Search/DisableBackoff|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**Search/PreventRemoteQueries**<br>./Vendor/MSFT/Policy/Config/Search/PreventRemoteQueries|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**, **1** (standaard)|
+|**SearchZoeken/AllowUsingDiacritics**<br>./Vendor/MSFT/Policy/Config/Search/AllowUsingDiacritics|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**Search/AlwaysUseAutoLangDetection**<br>./Vendor/MSFT/Policy/Config/Search/AlwaysUseAutoLangDetection|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**Search/DisableRemovableDriveIndexing**<br>./Vendor/MSFT/Policy/Config/Search/DisableRemovableDriveIndexing|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**Search/PreventIndexingLowDiskSpaceMB**<br>./Vendor/MSFT/Policy/Config/Search/PreventIndexingLowDiskSpaceMB|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**, **1** (standaard)|
+|**Search/AllowIndexingEncryptedStoresOrItems**<br>./Vendor/MSFT/Policy/Config/Search/AllowIndexingEncryptedStoresOrItems|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**Security/AllowRemoveProvisioningPackage**<br>./Vendor/MSFT/Policy/Config/Security/AllowRemoveProvisioningPackage|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Security/RequireProvisioningPackageSignature**<br>./Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**AboveLock/AllowActionCenterNotifications**<br>./Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**TextInput/AllowIMENetworkAccess**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toestaan<br>De functie Uitgebreid woordenboek openen is uitgeschakeld.<br>Een gebruiker kan niet:<br>- Een nieuwe functie Uitgebreid woordenboek openen toevoegen.<br />- Een nieuw configuratiebestand voor de integratie van zoekopdrachten toevoegen.<br>- De functie Cloudkandidaat gebruiken.<br>- Een door de gebruiker geregistreerd woord verzenden.<br>**1**: toestaan<br>Een functie Uitgebreid woordenboek openen kan standaard worden toegevoegd en gebruikt. De functie voor integratie van zoekbestanden kan ook standaard worden gebruikt.<br>De gebruiker kan:<br>De functie Cloudkandidaat gebruiken.|
+|**TextInput/AllowIMELogging**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: Logboekregistratie voor een mislukte conversie is uitgeschakeld.<br>**1**: Logboekregistratie voor een mislukte conversie is ingeschakeld (standaard).|
+|**TextInput/AllowJapaneseNonPublishingStandardGlyph**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseNonPublishingStandardGlyph|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**TextInput/AllowJapaneseIVSCharacters**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**TextInput/AllowJapaneseUserDictionary**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**TextInput/AllowJapaneseIMESurrogatePairCharacters**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIMESurrogatePairCharacters|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve Shift-JIS-tekens|
+|**TextInput/ExcludeJapaneseIMEExceptJIS0208**<br>./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br />**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve JIS0208-tekens|
+|**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**<br>./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve JIS0208-tekens en EUDC-tekens|
+|**TextInput/AllowInputPanel**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowInputPanel|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Bluetooth/AllowDiscoverableMode**<br>./Vendor/MSFT/Policy/Config/Bluetooth/AllowDiscoverableMode|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Bluetooth/AllowAdvertising**<br>./Vendor/MSFT/Policy/Config/Bluetooth/AllowAdvertising|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowDataSense**<br>./Vendor/MSFT/Policy/Config/Settings/AllowDataSense|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowVPN**<br>./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowWorkplace**<br>./Vendor/MSFT/Policy/Config/Settings/AllowWorkplace|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowDateTime**<br>./Vendor/MSFT/Policy/Config/Settings/AllowDateTime|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowDateTime**<br>./Vendor/MSFT/Policy/Config/Settings/AllowLanguage|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowRegion**<br>./Vendor/MSFT/Policy/Config/Settings/AllowRegion|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowSignInOptions**<br>./Vendor/MSFT/Policy/Config/Settings/AllowSignInOptions|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowYourAccount**<br>./Vendor/MSFT/Policy/Config/Settings/AllowYourAccount|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowPowerSleep**<br>./Vendor/MSFT/Policy/Config/Settings/AllowPowerSleep|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowAutoPlay**<br>./Vendor/MSFT/Policy/Config/Settings/AllowAutoPlay|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Experience/AllowCortana**<br>./Vendor/MSFT/Policy/Config/Experience/AllowCortana|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Search/SafeSearchPermissions**<br>./Vendor/MSFT/Policy/Config/Search/SafeSearchPermissions|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : strict, hoogste filtering tegen inhoud voor volwassenen<br>**1**: gemiddeld, gemiddelde filtering op inhoud voor volwassenen (geldige zoekresultaten worden standaard niet gefilterd)|
+|**Experience/AllowCopyPaste**<br>./Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Startgrootte forceren**<br>./Vendor/MSFT/Policy/Config/Start/ForceStartSize|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: wijziging van grootte door gebruiker toestaan (standaard)<br>**1**: niet-volledig scherm afdwingen<br>**2**: volledig scherm afdwingen|
+|**Update/RequireDeferUpgrade**<br>./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: upgrade niet uitstellen (in huidige vertakking blijven, CB (standaard))<br>**1**: toestaan dat updates en upgrades worden uitgesteld (apparaat volgt huidige vertakking voor bedrijven, CBB, regels)<br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|Desktop en mobiel<br>**Beschrijving:** beleid om software-updates maximaal vier weken uit te stellen<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br> **0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**4**: aantal weken om software-updates uit te stellen.<br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpgradePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod|Desktop en mobiel<br>**Beschrijving:** beleid om upgrades van functies tot maximaal 8 maanden uit te stellen<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**8**: aantal maanden dat functie-upgrades moeten worden uitgesteld.<br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/PauseDeferrals**<br>./Vendor/MSFT/Policy/Config/Update/PauseDeferrals|Desktop en mobiel<br>**Beschrijving:** hiermee kunt u instellen dat een apparaat vijf weken geen updates en upgrades ontvangt.<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**: updates en upgrades tijdelijk onderbreken (vervalt na 5 weken)|
+
+## &nbsp;&nbsp;&nbsp;Windows Defender
+
+|Naam van beleid en URI|Details|
+|---------------|-----------|
+|**AllowRealtimeMonitoring**<br>./Vendor/MSFT/Policy/Config/Defender/AllowRealtimeMonitoring|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowRealtimeMonitoring**<br>./Vendor/MSFT/Policy/Config/Defender/AllowBehaviorMonitoring|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowIntrusionPreventionSystem**<br>./Vendor/MSFT/Policy/Config/Defender/AllowIntrusionPreventionSystem|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowIOAVProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowIOAVProtection|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowScriptScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowScriptScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowOnAccessProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowOnAccessProtection|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**RealTimeScanDirection**<br>./Vendor/MSFT/Policy/Config/Defender/RealTimeScanDirection|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: alle bestanden bewaken (standaard)<br>**1** : binnenkomende bestanden controleren<br>**1** : uitgaande bestanden controleren|
+|**DaysToRetainCleanedMalware**<br>./Vendor/MSFT/Policy/Config/Defender/DaysToRetainCleanedMalware|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** - **90**: geeft aan hoe lang malware behouden blijft<br>**Standaard:** **0**: blijft altijd in de map Quarantaine en wordt niet automatisch verwijderd|
+|**AllowUserUIAccess**<br>./Vendor/MSFT/Policy/Config/Defender/AllowUserUIAccess|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**ScanParameter**<br>./Vendor/MSFT/Policy/Config/Defender/ScanParameter|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**1**: snelle scan (standaard)<br>**2**: volledige scan|
+|**ScheduleScanDay**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleScanDay|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: elke dag (standaard)<br>**1**: maandag<br>**2**: dinsdag<br>**3**: woensdag<br>**4**: donderdag<br>**5**: vrijdag<br>**6**: zaterdag<br>**7**: zondag<br>**8** : geen geplande scan|
+|**ScheduleScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: 00:00 uur<br>**60** – 1:00 uur<br>**120**: 2:00 uur (standaardinstelling)<br>**180** – 3:00 uur<br>**240** – 4:00 uur<br>**300** – 5:00 uur<br>**360** – 6:00 uur<br>**420** – 7:00 uur<br>**480** – 8:00 uur<br>**540** – 9:00 uur<br>**600** – 10:00 uur<br>**660** – 11:00 uur<br>**720** – 12:00 uur<br>**780** – 13:00 uur<br>**840** – 14:00 uur<br>**900** – 15:00 uur<br>**960** – 16:00 uur<br>**1020** – 17:00 uur<br>**1080** – 18:00 uur<br>**1140** – 19:00 uur<br>**1200** – 20:00 uur<br>**1260** – 21:00 uur<br>**1320** – 22:00 uur<br>**1381** : onderhoudsvenster|
+|**ScheduleQuickScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime|Alleen desktop<br>**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: 00:00 uur<br>**60** – 1:00 uur<br>**120**: 2:00 uur (standaardinstelling)<br>**180** – 3:00 uur<br>**240** – 4:00 uur<br>**300** – 5:00 uur<br>**360** – 6:00 uur<br>**420** – 7:00 uur<br>**480** – 8:00 uur<br>**540** – 9:00 uur<br>**600** – 10:00 uur<br>**660** – 11:00 uur<br>**720** – 12:00 uur<br>**780** – 13:00 uur<br>**840** – 14:00 uur<br>**900** – 15:00 uur<br>**960** – 16:00 uur<br>**1020** – 17:00 uur<br>**1080** – 18:00 uur<br>**1140** – 19:00 uur<br>**1200** – 20:00 uur<br>**1260** – 21:00 uur<br>**1320** – 22:00 uur<br>**1380** – 23:00 uur|
+|**AVGCPULoadFactor**<br>./Vendor/MSFT/Policy/Config/Defender/AVGCPULoadFactor|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** - **100** (standaard: **50**)|
+|**AllowArchiveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowArchiveScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowArchiveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br>**Waarden:** **0**: niet toegestaan (standaard), **1**: toegestaan|
+|**AllowFullScanRemovableDriveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowFullScanRemovableDriveScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan (standaard), **1**: toegestaan|
+|**AllowFullScanOnMappedNetworkDrives**<br>./Vendor/MSFT/Policy/Config/Defender/AllowFullScanOnMappedNetworkDrives|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowScanningNetworkFiles**<br>./Vendor/MSFT/Policy/Config/Defender/AllowScanningNetworkFiles|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard); wordt ook uitgevoerd wanneer RTP is ingesteld op toegestaan|
+|**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: tijdens een interval niet op handtekeningen controleren<br>**1**: elk uur op handtekeningen controleren<br>**2**: elke 2 uur controleren, enz.<br>**24**: elke dag controleren<br>**Standaardwaarde:** 8: elke 8 uur controleren|
+|**AllowCloudProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**SubmitSamplesConsent**<br>./Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: altijd vragen (standaard)<br>**1** : veilige voorbeelden automatisch verzenden<br>**2** : nooit verzenden<br>**3** : alle voorbeelden automatisch verzenden|
+|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br>*&lt;door puntkomma's gescheiden lijst met extensies&gt;* Bijvoorbeeld **obj;lib**<br>**Standaard:** er worden geen extensies uitgesloten|
+|**ExcludedPaths**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br />*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br />Bijvoorbeeld: **c:\test;c:\test1.exe**<br />**Standaardwaarde:** er worden geen paden uitgesloten|
+|**ExcludedProcesses**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br>*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br>Bijvoorbeeld: **c:\test.exe;c:\test1.exe**<br>**Standaardwaarde:** er worden geen processen uitgesloten|
+
+## &nbsp;&nbsp;&nbsp;Edge-browser
+
+|Naam van beleid en URI|Details|
+|---------------|------------|-----------|
+|**Browser toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowBrowser|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: bladeren uitgeschakeld, **1**: bladeren ingeschakeld (standaard)|
+|**AllowSearchSuggestionsinAddressBar**<br>./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: suggesties niet weergeven, **1**: suggesties weergeven (standaard)|
+|**SendIntranetTraffictoInternetExplorer**<br>./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: uitgeschakeld (intranetsites worden standaard geopend in de Microsoft Edge-browser)<br>**1**: ingeschakeld (intranetsites worden geopend in Internet Explorer)|
+|**Do Not Track toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: uitgeschakeld (DNT niet verzonden, standaard), **1**: ingeschakeld (DNT verzenden)|
+|**SmartScreen configureren**<br>./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toestaan, **1**: toestaan (standaard)|
+|**Pop-ups toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPopups|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: pop-ups blokkeren (standaard), **1**: pop-ups toestaan|
+|**Cookies toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowCookies|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: cookies van alle websites toestaan (standaard)<br>**1**: alleen cookies van derden blokkeren<br>**2**: alle cookies blokkeren|
+|**Wachtwoord opslaan toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: wachtwoordbeheer is uitgeschakeld <br>**1**: wachtwoordbeheer is ingeschakeld (standaard)|
+|**Automatisch invullen toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: uitgeschakeld (standaard), **1**: ingeschakeld|
+|**Sitelijst voor ondernemingen configureren**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:<br>**0**: niet geconfigureerd, <br>**1**: de lijst met websites van Bedrijfsmodus gebruiken indien geconfigureerd (standaard)<br>**2**: de locatie van de lijst met websites van Bedrijfsmodus opgeven|
+
+## Instellingen voor algemeen configuratiebeleid
+
+Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om ingebouwde instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. 
+
+## &nbsp;&nbsp;&nbsp;Wachtwoord
+
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
-|**Een wachtwoord vereisen om apparaten te ontgrendelden**|Hiermee vereist u een wachtwoord op ondersteunde apparaten.|
-|**Vereist wachtwoordtype**|Hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek|
-|**Vereist wachtwoordtype** - **Minimum aantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel verschillende tekensets moeten worden opgenomen in het wachtwoord.|
-|**Minimale wachtwoordlengte**|Hiermee geeft u het minimale aantal tekens aan dat het wachtwoord voor het apparaat moet hebben.<br>(alleen Windows 10 Mobile)|
-|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Wist de gegevens op het apparaat als dit aantal aanmeldingspogingen mislukt.|
+|**Een wachtwoord vereisen om apparaten te ontgrendelden**|-|
+|**Vereist wachtwoordtype**|Geeft aan of het wachtwoord alleen numeriek of alfanumeriek moet zijn|
+|**Vereist wachtwoordtype** - **Minimum aantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel van dergelijke sets moeten worden opgenomen in het wachtwoord.|
+|**Minimale wachtwoordlengte**|Dit is alleen van toepassing op Windows 10 Mobile|
+|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Voor apparaten met Windows 10: als BitLocker is ingeschakeld op het apparaat, wordt het in de herstelmodus van BitLocker gezet nadat het aanmelden het aantal keren dat u opgeeft is mislukt. Als BitLocker niet is ingeschakeld op het apparaat, is deze instelling niet van toepassing.<br>Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opgeeft is mislukt, wordt het apparaat gewist.|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd aan die een apparaat inactief moet zijn voordat het scherm wordt vergrendeld.|
 |**Verlopen van wachtwoorden (dagen)**|Met deze instelling bepaalt u de periode waarna het wachtwoord van een apparaat moet worden gewijzigd.|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u aan of u wilt voorkomen dat de eindgebruiker eerder gebruikte wachtwoorden mag hergebruiken.|
 |**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|
-|**Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**|Indien ingeschakeld, moet de gebruiker een wachtwoord opgeven om het apparaat vanuit een niet-actieve status te ontgrendelen.<br>(alleen Windows 10 Mobile)|
+|**Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**|Indien ingeschakeld, moet de gebruiker een wachtwoord opgeven om het apparaat te ontgrendelen. (alleen Windows 10 Mobile)|
 
-## - Versleuteling
+## &nbsp;&nbsp;&nbsp;Versleuteling
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
 |**Versleuteling vereisen voor mobiel apparaat**|Hiermee schakelt u versleuteling op doelapparaten in.<br>(alleen Windows 10 Mobile)|
 
-## - Systeem
+## &nbsp;&nbsp;&nbsp;Systeem
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
-|**Schermafbeelding toestaan**|Hiermee kan de gebruiker het apparaatscherm als afbeelding vastleggen.<br>(alleen Windows 10 Mobile)|
+|**Schermafbeelding toestaan**|Hiermee kan de gebruiker het apparaatscherm als afbeelding vastleggen. (alleen Windows 10 Mobile)|
 |**Handmatige uitschrijving toestaan**|Hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.|
-|**Handmatige installatie van basiscertificaat toestaan**|Hiermee geeft u op of de gebruiker basiscertificaten handmatig kan installeren.<br>(alleen Windows 10 Mobile)|
-|**Toestaan dat diagnostische en gebruiksgegevens worden verzonden naar Microsoft**|Hiermee bepaalt u de hoeveelheid diagnostische en gebruiksgegevens die vanaf apparaten naar Microsoft wordt verzonden.<br><br>**Geen**: er worden geen gegevens naar Microsoft verzonden<br>**Basis**: het apparaat verzendt alleen een beperkte hoeveelheid informatie naar Microsoft<br>**Uitgebreid**: hiermee worden uitgebreide diagnostische gegevens naar Microsoft verzonden<br>**Volledig (aanbevolen)**: hiermee worden dezelfde gegevens verzonden als bij **Uitgebreid**, aangevuld met gegevens over de apparaatstatus|
+|**Handmatige installatie van basiscertificaat toestaan**|Dit is van toepassing op Windows 10 Mobile|
+|**Toestaan dat diagnostische en gebruiksgegevens worden verzonden naar Microsoft**|Mogelijke waarden zijn:<br><br>**Geen**: er worden geen gegevens naar Microsoft verzonden<br>**Basis**: beperkte informatie wordt naar Microsoft verzonden<br>**Uitgebreid**: uitgebreide diagnostische gegevens worden naar Microsoft verzonden<br>**Volledig (aanbevolen)**: hiermee worden dezelfde gegevens verzonden als bij **Uitgebreid**, aangevuld met gegevens over de apparaatstatus|
 
 
-## - Account en synchronisatie
+## &nbsp;&nbsp;&nbsp;Account en synchronisatie
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
 |**Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker een Microsoft-account aan het apparaat kan koppelen.|
 |**Handmatig toevoegen van een ander account dan een Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker aan het apparaat e-mailaccounts kan toevoegen die niet aan een Microsoft-account zijn gekoppeld.|
 |**Synchronisatie van instellingen toestaan voor Microsoft-accounts**|Hiermee staat u synchronisatie tussen apparaten toe van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld.|
 
-## - Microsoft Edge
+## &nbsp;&nbsp;&nbsp;Microsoft Edge
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
 |**Webbrowser toestaan**|Hiermee staat u het gebruik van de webbrowser Microsoft Edge op het apparaat toe.<br>(alleen Windows 10 Mobile)|
 |**Zoeksuggesties in de adresbalk toestaan**|Hiermee kan de zoekmachine sites voorstellen wanneer er zoektermen worden getypt.|
 |**Verzenden van intranetverkeer naar Internet Explorer toestaan**|Hiermee staat u toe dat gebruikers intranetsites in Internet Explorer kunnen openen.<br>(alleen Windows 10 Desktop)|
 |**Do Not Track toestaan**|Hiermee configureert u de browser Microsoft Edge zodanig dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.|
-|**SmartScreen inschakelen**|Hiermee schakelt u de instelling van de SmartScreen-browser op apparaten in.|
+|**SmartScreen inschakelen**|-|
 |**Active Scripting toestaan**|Hiermee staat u toe dat er in de browser Microsoft Edge scripts, zoals JavaScript, kunnen worden uitgevoerd.|
-|**Pop-ups toestaan**|Hiermee schakelt u de pop-upblokkering voor browsers in of uit.<br>(alleen Windows 10 Desktop)|
-|**Cookies toestaan**|Hiermee staat u cookies toe of niet.|
+|**Pop-ups toestaan**|Dit is alleen van toepassing op Windows 10 Desktop|
+|**Cookies toestaan**|-|
 |**Automatisch invullen toestaan**|Hiermee staat u gebruikers toe instellingen voor automatisch aanvullen in de browser te wijzigen.<br>(alleen Windows 10 Desktop)|
 |**Wachtwoordbeheer toestaan**|Hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.|
 |**Locatie van de lijst met websites van Bedrijfsmodus**|Geeft de plaats aan van de lijst met websites die in Bedrijfsmodus worden geopend. Gebruikers kunnen deze lijst niet bewerken.<br>(alleen Windows 10 Desktop)|
 
-## - Apps
+## &nbsp;&nbsp;&nbsp;Apps
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
-|**Toepassingsarchief toestaan**|Hiermee geeft u de gebruiker toegang tot de app store op het apparaat.<br>(alleen Windows 10 Mobile)|
+|**Toepassingsarchief toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 
 
 
-## - Mobiel
+## &nbsp;&nbsp;&nbsp;Mobiel
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
 |**Gegevensroaming toestaan**|Roaming tussen netwerken toestaan tijdens het ophalen van gegevens.|
 |**VPN via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen indien verbonden met het mobiele netwerk.|
 |**VPN-roaming via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen tijdens het roamen op een mobiel netwerk.|
 
-## - Hardware
+## &nbsp;&nbsp;&nbsp;Hardware
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
-|**Camera toestaan**|Hiermee geeft u op of de camera van het apparaat kan worden gebruikt.|
+|**Camera toestaan**|-|
 |**Verwisselbare opslag toestaan**|Hiermee geeft u op of er op het apparaat externe opslagapparaten, zoals een SD-kaart, kunnen worden gebruikt.|
-|**Wi-Fi toestaan**|Hiermee kunt het gebruik van de Wi-Fi-functionaliteit van het apparaat toestaan.<br>(alleen Windows 10 Mobile)|
+|**Wi-Fi toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 |**Internetverbinding delen toestaan**|Hiermee kunt u het gebruik van een gedeelde internetverbinding op het apparaat toestaan.|
 |**Handmatige Wi-Fi-configuratie toestaan**|Hiermee bepaalt u of de gebruiker zijn eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd.<br>(alleen Windows 10 Mobile)|
 |**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee kunt u het apparaat automatisch verbinding laten maken met gratis Wi-Fi-hotspots en automatisch de voorwaarden voor de verbinding laten accepteren.|
 |**Geolocatie toestaan**|Geeft aan of op het apparaat gegevens van locatieservices kunnen worden gebruikt.|
 |**NFC toestaan**|Hiermee staat u gebruik van de NFC-mogelijkheden op het apparaat toe.|
-|**Bluetooth toestaan**|Hiermee schakelt u het gebruik van Bluetooth-mogelijkheden op het apparaat in.|
+|**Bluetooth toestaan**|-|
 |**Modus voor Bluetooth-detectie toestaan**|Hiermee kan dit apparaat worden gedetecteerd door andere Bluetooth-apparaten.|
 |**Bluetooth-promotie toestaan**|Hiermee staat u toe dat apparaten reclame via Bluetooth kunnen ontvangen.|
 |**Opnieuw instellen van telefoon toestaan**|Hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen.|
 |**USB-verbinding toestaan**|Hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen hebben tot externe opslagapparaten.|
 |**Antidiefstalmodus toestaan**|Hiermee configureert u of de antidiefstalmodus van Windows is ingeschakeld.|
 
-## - Functies
+## &nbsp;&nbsp;&nbsp;Functies
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
-|**Kopiëren en plakken toestaan**|Hiermee schakelt u het gebruik van kopiëren en plakken op het apparaat in of uit.<br>(alleen Windows 10 Mobile)|
-|**Spraakopname toestaan**|Hiermee schakelt u de spraakopnamefuncties op het apparaat in of uit.<br>(alleen Windows 10 Mobile)|
+|**Kopiëren en plakken toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
+|**Spraakopname toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 |**Cortana toestaan**|Hiermee schakelt u de spraakassistent Cortana in of uit.|
 |**Meldingen van onderhoudscentrum toestaan**|Hiermee schakelt u de meldingen van het Onderhoudscentrum op het vergrendelingsscherm in of uit.<br>(alleen Windows 10 Mobile)|
 
-## - Windows Defender
+## &nbsp;&nbsp;&nbsp;Windows Defender
 
 Alle instellingen zijn alleen voor Windows 10 Desktop.
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |-|-|
 |**Real-timecontrole toestaan**|Hiermee schakelt u het real-time scannen op malware, spyware en andere ongewenste software in.|
 |**Gedragscontrole toestaan**|Hiermee kunt u Defender laten controleren op de aanwezigheid van bepaalde bekende patronen van verdachte activiteiten op apparaten.|
@@ -162,160 +312,12 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 |**Uit te sluiten processen wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer processen toe van het type **.exe**, **.com** of **.scr**. Deze processen worden niet opgenomen in real-timescans of geplande scans.| 
 
 
-## - Updates
+## &nbsp;&nbsp;&nbsp;Updates
 
-|Naam van de instelling|Details|
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|---------------|
-|**Automatische updates toestaan**|Schakel deze instelling in om automatische updates toe te staan. Configureer vervolgens een van de volgende instellingen om het gedrag voor updates te bepalen:<br /><br />**Melding van download**<br /><br />**Automatisch installeren op onderhoudstijdstip**<br /><br />**Automatisch installeren en opstarten op onderhoudstijdstip**<br /><br />**Automatisch installeren en opnieuw opstarten op het geplande tijdstip** **Opmerking:** wanneer deze optie is geselecteerd, kunt u ook de volgende instellingen configureren: **Melding aan eindgebruiker onderdrukken** en **De installatiedag voor geplande updates definiëren**.<br>(alleen Windows 10 Desktop)|
+|**Automatische updates toestaan**|Schakel deze instelling in om automatische updates toe te staan. Configureer vervolgens een van de volgende instellingen om het gedrag voor updates te bepalen:<br />**Melding van download**<br />**Automatisch installeren op onderhoudstijdstip**<br />**Automatisch installeren en opstarten op onderhoudstijdstip**<br />**Automatisch installeren en opnieuw opstarten op het geplande tijdstip** **Opmerking:** wanneer deze optie is geselecteerd, kunt u ook de volgende instellingen configureren: **Melding aan eindgebruiker onderdrukken** en **De installatiedag voor geplande updates definiëren**.<br>(alleen Windows 10 Desktop)|
 |**Functies van evaluatieversies toestaan**|Hiermee kan Microsoft instellingen en functies van evaluatieversies implementeren op Windows 10-apparaten. U kunt selecteren dat alleen instellingen zijn toegestaan, of dat alle instellingen en functies van evaluatieversies mogen worden geïnstalleerd.|
-
-## Aangepaste beleidsinstellingen
-Gebruik het **Aangepaste configuratiebeleid** van Microsoft Intune voor Windows 10 en Windows 10 Mobile om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om functies op Windows 10- en Windows 10 Mobile-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
-
-Op deze manier kunt u Windows 10-instellingen implementeren die niet met het algemene configuratiebeleid van Intune kunnen worden geconfigureerd.
-
-
-
-## - Algemeen
-
-|Naam van de instelling|Details|
-    |----------------|--------------------|
-    |**Naam**|Voer een unieke naam in voor het beleid, zodat u het beleid in de Intune-console kunt herkennen.|
-    |**Beschrijving**|Geef een beschrijving op die een overzicht geeft van het beleid en overige relevante informatie die u helpt om het beleid terug te vinden.|
-
-## - OMA-URI-instellingen
-
-|Naam van de instelling|Details|
-    |--------|--------------------|
-    |**Naam van de instelling**|Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
-    |**Beschrijving van instelling**|Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
-    |**Gegevenstype**|Selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. U kunt kiezen uit:<br /><br />-   **Tekenreeks**<br />-   **Tekenreeks (XML)**<br />-   **Datum en tijd**<br />-   **Geheel getal**<br />-   **Drijvende komma**<br />-   **Boolean-waarde**|
-    |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
-    |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
-
-
-## Windows 10-URI-instellingen
-In dit onderwerp vindt u de instellingen die u in **Aangepast beleid voor Windows 10** kunt configureren voor Windows 10- en Windows 10 Mobile-apparaten.
-
-Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windows URI-beleid wilt gebruiken.
-
-## - Beleid
-
-|Naam van beleid|Details|
-|---------------|------------|-----------|
-|**​Automatisch bijwerken toestaan**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/AllowAutoUpdate<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** - **5** (standaardinstelling: **1**)|
-|**Planning installatiedag**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: elke dag (standaard)<br>**1**: zondag<br>**2**: maandag<br>**3**: dinsdag<br>**4**: woensdag<br>**5**: donderdag<br>**6**: vrijdag<br>**7**: zaterdag|
-|**Planning installatietijd**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** – **23** uur (**0** is middernacht) (standaard: **3**)|
-|**DeviceLock/AllowIdleReturnWithoutPassword**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: de gebruiker kan de timer van de respijtperiode voor het wachtwoord niet instellen en de waarde is ingesteld als elke keer<br>**1**: de gebruiker kan de timer voor de respijtperiode van het wachtwoord instellen (standaard)|
-|**WiFi/AllowWiFi**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: **gebruik van Wi-Fi-verbinding** niet toestaan.<br>**1**: **gebruik van Wi-Fi-verbinding toestaan** (standaard).|
-|**WiFi/AllowInternetSharing**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : internet delen niet toestaan.<br>**1**: Gedeeld internet toestaan (standaard)|
-|**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**WiFi/AllowManualWiFiConfiguration**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: een Wi-Fi-verbinding buiten de ingerichte MDM is niet toegestaan.<br>**1**: het toevoegen van een nieuwe netwerk-SSID buiten de al aanwezige MDM is toegestaan (standaard).|
-|**System/AllowLocation**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/System/AllowLocation<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**System/AllowTelemetry**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/System/AllowTelemetry<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan (instelling alleen voor Enterprise)<br>**1** : beperkt<br>**2**: volledig (standaard)<br>**3**: volledige en diagnostische gegevens|
-|**System/AllowExperimentation**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/System/AllowExperimentation<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: alleen instellingen (standaard)<br>**2**: instellingen en experimenteren|
-|**Security/AntiTheftMode**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Security/AntiTheftMode<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: Antidiefstalmodus niet toestaan<br>**1**: gebruikersvoorkeur (standaard)|
-|**Connectivity/AllowUSBConnection**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowUSBConnection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**System/AllowUserToResetPhone**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/System/AllowUserToResetPhone<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Connectivity/AllowCellularDataRoaming**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowCellularDataRoaming<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Connectivity/AllowVPNOverCellular**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNOverCellular<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: VPN is niet toegestaan via mobiele verbindingen<br>**1**: VPN mag alle verbinding gebruiken, inclusief mobiele verbindingen (standaard)|
-|**Connectivity/AllowVPNRoamingOverCellular**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Connectivity/AllowVPNRoamingOverCellular**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Connectivity/AllowBluetooth**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: de gebruiker niet toestaan Bluetooth in te schakelen.<br>**1**: gereserveerd. De gebruiker kan Bluetooth inschakelen en configureren (niet ondersteund in Windows Phone 8.1 voor MDM, EAS-, Windows 10 Desktop en Windows 10 Mobile)<br>**2**: toegestaan. De gebruiker kan Bluetooth inschakelen en configureren (standaard)|
-|**Experience/AllowScreenCapture**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowScreenCapture<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Experience/AllowTaskSwitcher**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowTaskSwitcher<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Experience/AllowVoiceRecording**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowVoiceRecording<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Experience/AllowSyncMySettings**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : roaming niet toestaan<br>**1**: roaming toestaan (standaard)|
-|**Experience/AllowManualMDMUnenrollment**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowManualMDMUnenrollment<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Accounts/AllowMicrosoftAccountConnection**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Accounts/AllowMicrosoftAccountConnection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Accounts/AllowAddingNonMicrosoftAccountsManually**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Accounts/AllowAddingNonMicrosoftAccountsManually<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Security/AllowManualRootCertificateInstallation**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Security/AllowManualRootCertificateInstallation<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Security/AllowAddProvisioningPackages**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Security/AllowAddProvisioningPackages<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Search/DisableBackoff**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/DisableBackoff<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** (standaardinstelling)<br>**1**|
-|**Search/PreventRemoteQueries**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/PreventRemoteQueries<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**<br>**1** (standaardinstelling)|
-|**SearchZoeken/AllowUsingDiacritics**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/AllowUsingDiacritics<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br> **0** (standaardinstelling)<br>**1**|
-|**Search/AlwaysUseAutoLangDetection**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/AlwaysUseAutoLangDetection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** (standaardinstelling)<br>**1**|
-|**Search/DisableRemovableDriveIndexing**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/DisableRemovableDriveIndexing<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** (standaardinstelling)<br>**1**|
-|**Search/PreventIndexingLowDiskSpaceMB**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/PreventIndexingLowDiskSpaceMB<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**<br>**1** (standaardinstelling)|
-|**Search/AllowIndexingEncryptedStoresOrItems**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/AllowIndexingEncryptedStoresOrItems<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** (standaardinstelling)<br>**1**|
-|**Security/AllowRemoveProvisioningPackage**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Security/AllowRemoveProvisioningPackage<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Security/RequireProvisioningPackageSignature**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** (standaardinstelling)<br>**1**|
-|**AboveLock/AllowActionCenterNotifications**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**TextInput/AllowIMENetworkAccess**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toestaan<br>De functie Uitgebreid woordenboek openen is uitgeschakeld.<br>Een gebruiker kan niet:<br>Een nieuwe functie Uitgebreid woordenboek openen toevoegen<br /><br />Een nieuw configuratiebestand voor de integratie van zoekopdrachten toevoegen<br>De functie Cloudkandidaat gebruiken<br>Een door de gebruiker geregistreerd woord verzenden<br>Aanvullend:<br>Een functie Uitgebreid woordenboek openen die is toegevoegd voordat deze beleidsinstelling is ingeschakeld, wordt niet gebruikt voor conversie.<br>Een configuratiebestand voor de integratie van zoekopdrachten dat is geïnstalleerd voordat deze beleidsinstelling werd ingeschakeld, wordt niet gebruikt.<br>**1**: toestaan<br>Een functie Uitgebreid woordenboek openen kan standaard worden toegevoegd en gebruikt. De functie voor integratie van zoekbestanden kan ook standaard worden gebruikt.<br>De gebruiker kan:<br>De functie Cloudkandidaat gebruiken<br>Een door de gebruiker geregistreerd woord verzenden.|
-|**TextInput/AllowIMELogging**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: de functie Logboekregistratie voor een mislukte conversie is uitgeschakeld. Gegevens die automatisch zijn afgestemd en invoer van geschiedenisgegevens worden niet in een bestand opgeslagen.<br>**1**: de functie Logboekregistratie voor een mislukte conversie is ingeschakeld. Gegevens die automatisch zijn afgestemd en invoer van geschiedenisgegevens worden in een bestand opgeslagen (standaard)|
-|**TextInput/AllowJapaneseNonPublishingStandardGlyph**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseNonPublishingStandardGlyph<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**TextInput/AllowJapaneseIVSCharacters**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**TextInput/AllowJapaneseUserDictionary**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**TextInput/AllowJapaneseIMESurrogatePairCharacters**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIMESurrogatePairCharacters<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve Shift-JIS-tekens|
-|**TextInput/ExcludeJapaneseIMEExceptJIS0208**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br /><br />**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve JIS0208-tekens|
-|**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**er worden geen tekens gefilterd (standaardinstelling)<br>**1**: alle tekens worden gefilterd, behalve JIS0208-tekens en EUDC-tekens|
-|**TextInput/AllowInputPanel**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/TextInput/AllowInputPanel<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Bluetooth/AllowDiscoverableMode**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Bluetooth/AllowDiscoverableMode<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Bluetooth/AllowAdvertising**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Bluetooth/AllowAdvertising<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowDataSense**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowDataSense<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowVPN**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowVPN<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowWorkplace**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowWorkplace<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowDateTime**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowDateTime<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowDateTime**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowLanguage<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowRegion**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowRegion<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowSignInOptions**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowSignInOptions<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowYourAccount**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowYourAccount<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowPowerSleep**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowPowerSleep<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Settings/AllowAutoPlay**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Settings/AllowAutoPlay<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Experience/AllowCortana**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowCortana<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Search/SafeSearchPermissions**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Search/SafeSearchPermissions<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : strict, hoogste filtering tegen inhoud voor volwassenen<br>**1**: gemiddeld, gemiddelde filtering op inhoud voor volwassenen (geldige zoekresultaten worden standaard niet gefilterd)|
-|**Experience/AllowCopyPaste**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**Startgrootte forceren**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Start/ForceStartSize<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: wijziging van grootte door gebruiker toestaan (standaard)<br>**1**: niet-volledig scherm afdwingen<br>**2**: volledig scherm afdwingen|
-|**Update/RequireDeferUpgrade**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: upgrade niet uitstellen (in huidige vertakking blijven, CB (standaard))<br>**1**: toestaan dat updates en upgrades worden uitgesteld (apparaat volgt huidige vertakking voor bedrijven, CBB, regels)<br /><br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpdatePeriod**<br>(desktop en mobiel)|**Beschrijving:** beleid om software-updates maximaal vier weken uit te stellen<br /><br />**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br> **0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**4**: aantal weken om software-updates uit te stellen.<br /><br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpgradePeriod**<br>(desktop en mobiel)|**Beschrijving:** beleid om upgrades van functies tot maximaal 8 maanden uit te stellen<br /><br />**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**8**: aantal maanden dat functie-upgrades moeten worden uitgesteld.<br /><br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/PauseDeferrals**<br>(desktop en mobiel)|**Beschrijving:** hiermee kunt u instellen dat een CBB-machine vijf weken geen updates en upgrades ontvangt. Gebruik deze optie als er een probleem met een update is.<br /><br />**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**: updates en upgrades tijdelijk onderbreken (vervalt na 5 weken)|
-
-## - Windows Defender
-
-|Naam van beleid|Details|
-|---------------|-----------|
-|**AllowRealtimeMonitoring**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowRealtimeMonitoring<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowRealtimeMonitoring**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowBehaviorMonitoring<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowIntrusionPreventionSystem**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowIntrusionPreventionSystem<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowIOAVProtection**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowIOAVProtection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowScriptScanning**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowScriptScanning<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowOnAccessProtection**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowOnAccessProtection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**RealTimeScanDirection**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/RealTimeScanDirection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: alle bestanden controleren (in twee richtingen (standaard))<br>**1** : binnenkomende bestanden controleren<br>**1** : uitgaande bestanden controleren|
-|**DaysToRetainCleanedMalware**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/DaysToRetainCleanedMalware<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** - **90**: geeft aan hoe lang malware behouden blijft<br>**Standaardwaarde:** **0**: blijft altijd in de map Quarantaine en wordt niet automatisch verwijderd|
-|**AllowUserUIAccess**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowUserUIAccess<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**ScanParameter**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ScanParameter<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**1**: snelle scan (standaard)<br>**2**: volledige scan|
-|**ScheduleScanDay**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleScanDay<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: elke dag (standaard)<br>**1**: maandag<br>**2**: dinsdag<br>**3**: woensdag<br>**4**: donderdag<br>**5**: vrijdag<br>**6**: zaterdag<br>**7**: zondag<br>**8** : geen geplande scan|
-|**ScheduleScanTime**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: 00:00 uur<br>**60** – 1:00 uur<br>**120**: 2:00 uur (standaardinstelling)<br>**180** – 3:00 uur<br>**240** – 4:00 uur<br>**300** – 5:00 uur<br>**360** – 6:00 uur<br>**420** – 7:00 uur<br>**480** – 8:00 uur<br>**540** – 9:00 uur<br>**600** – 10:00 uur<br>**660** – 11:00 uur<br>**720** – 12:00 uur<br>**780** – 13:00 uur<br>**840** – 14:00 uur<br>**900** – 15:00 uur<br>**960** – 16:00 uur<br>**1020** – 17:00 uur<br>**1080** – 18:00 uur<br>**1140** – 19:00 uur<br>**1200** – 20:00 uur<br>**1260** – 21:00 uur<br>**1320** – 22:00 uur<br>**1381** : onderhoudsvenster|
-|**ScheduleQuickScanTime**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime<br>**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: 00:00 uur<br>**60** – 1:00 uur<br>**120**: 2:00 uur (standaardinstelling)<br>**180** – 3:00 uur<br>**240** – 4:00 uur<br>**300** – 5:00 uur<br>**360** – 6:00 uur<br>**420** – 7:00 uur<br>**480** – 8:00 uur<br>**540** – 9:00 uur<br>**600** – 10:00 uur<br>**660** – 11:00 uur<br>**720** – 12:00 uur<br>**780** – 13:00 uur<br>**840** – 14:00 uur<br>**900** – 15:00 uur<br>**960** – 16:00 uur<br>**1020** – 17:00 uur<br>**1080** – 18:00 uur<br>**1140** – 19:00 uur<br>**1200** – 20:00 uur<br>**1260** – 21:00 uur<br>**1320** – 22:00 uur<br>**1380** – 23:00 uur|
-|**AVGCPULoadFactor**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AVGCPULoadFactor<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden: 0** - **100** (standaard: **50**)|
-|**AllowArchiveScanning**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowArchiveScanning<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowArchiveScanning**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning<br /><br />**Gegevenstype:** geheel getal<br>**Toegestane waarden:**<br>**0**: niet toegestaan (standaardinstelling)<br>**1** : toegestaan|
-|**AllowFullScanRemovableDriveScanning**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowFullScanRemovableDriveScanning<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: niet toegestaan (standaardinstelling)<br>**1** : toegestaan|
-|**AllowFullScanOnMappedNetworkDrives**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowFullScanOnMappedNetworkDrives<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**AllowScanningNetworkFiles**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowScanningNetworkFiles<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard). Wordt ook uitgevoerd wanneer RTP is ingesteld op toegestaan.|
-|**SignatureUpdateInterval**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : tijdens een interval niet op handtekeningen controleren<br>**1**: elk uur op handtekeningen controleren<br>**2** : elke 2 uur op handtekeningen controleren, enz.<br>**24** : elke dag op handtekeningen controleren<br>**Standaardwaarde:** 8: elke 8 uur op handtekeningen controleren|
-|**AllowCloudProtection**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0** : niet toegestaan<br>**1**: toegestaan (standaard)|
-|**SubmitSamplesConsent**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: altijd vragen (standaard)<br>**1** : veilige voorbeelden automatisch verzenden<br>**2** : nooit verzenden<br>**3** : alle voorbeelden automatisch verzenden|
-|**ExcludedExtensions**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br>*&lt;door puntkomma's gescheiden lijst met extensies&gt;* Bijvoorbeeld **obj;lib**<br>**Standaard:** er worden geen extensies uitgesloten|
-|**ExcludedPaths**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br /><br />*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br /><br />Bijvoorbeeld: **c:\test;c:\test1.exe**<br /><br />**Standaardwaarde:** er worden geen paden uitgesloten|
-|**ExcludedProcesses**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:**<br>*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br>Bijvoorbeeld: **c:\test.exe;c:\test1.exe**<br>**Standaardwaarde:** er worden geen processen uitgesloten|
-
-## - Microsoft Edge-browser
-
-|Naam van beleid|Details|
-|---------------|------------|-----------|
-|**Browser toestaan**<br>(alleen mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: browsen uitgeschakeld<br>**1**: browsen ingeschakeld (standaard)|
-|**AllowSearchSuggestionsinAddressBar**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: geen zoeksuggesties weergeven<br>**1**: zoeksuggesties weergeven (standaard)|
-|**SendIntranetTraffictoInternetExplorer**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (intranetsites worden standaard geopend in de Microsoft Edge-browser)<br>**1**: ingeschakeld (intranetsites worden geopend in Internet Explorer)|
-|**Do Not Track toestaan**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (DNT niet verzonden - standaard)<br>**1**: ingeschakeld (DNT verzenden)|
-|**SmartScreen configureren**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: niet toestaan<br>**1**: toestaan (standaard)|
-|**Pop-ups toestaan**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: pop-ups blokkeren (standaard)<br>**1**: pop-ups toestaan|
-|**Cookies toestaan**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: niet blokkeren Cookies van alle websites toestaan (standaard)<br>**1**: alleen cookies van derden blokkeren<br>**2**: alle cookies blokkeren|
-|**Wachtwoord opslaan toestaan**<br>(desktop en mobiel)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: wachtwoordbeheer is uitgeschakeld <br>**1**: wachtwoordbeheer is ingeschakeld (standaard)|
-|**Automatisch invullen toestaan**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Gegevenstype:** geheel getal<br /><br />**Toegestane waarden:**<br>**0**: uitgeschakeld (standaard)<br>**1**: ingeschakeld|
-|**Sitelijst voor ondernemingen configureren**<br>(alleen desktop)|**Volledig URI-pad:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList<br /><br />**Gegevenstype:** tekenreeks<br /><br />**Toegestane waarden:<br>0** - niet geconfigureerd<br>**1**: sitelijst voor de ondernemingsmodus van IE gebruiken indien geconfigureerd (standaard)<br>**2**: locatie van de lijst van Enterprise-sites opgeven|
 
 ### Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -323,6 +325,7 @@ Alle apparaten moeten worden geregistreerd bij Intune als u het aangepaste Windo
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+<!--HONumber=Aug16_HO5-->
 
 

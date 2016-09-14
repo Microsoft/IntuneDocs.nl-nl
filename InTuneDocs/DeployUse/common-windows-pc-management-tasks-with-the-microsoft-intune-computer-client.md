@@ -1,6 +1,6 @@
 ---
 title: Algemene beheertaken voor Windows-pc's | Microsoft Intune
-description: Bestudeer de taken in dit onderwerp voor meer informatie over het beheren van computers met de Intune-pc-clientsoftware.
+description: "Bestudeer de taken in dit onderwerp voor meer informatie over het beheren van Windows-pc’s met de Intune-softwareclient."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient
-Bestudeer de taken in dit onderwerp voor meer informatie over het beheren van computers met de Intune-pc-clientsoftware. Zie [De Windows-pc-client installeren met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de client nog niet op uw computers hebt geïnstalleerd.
+# Algemene beheertaken voor Windows-pc’s met de Intune-softwareclient
+Bestudeer de taken in dit onderwerp voor meer informatie over het beheren van computers met de Intune-softwareclient. Zie [De Intune-softwareclient installeren met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de client nog niet op uw computers hebt geïnstalleerd.
 
 
 ## Beleid gebruiken voor het vereenvoudigen van pc-beheer
-### De Windows Firewall beheren
-Beleidsregels vereenvoudigen het beheer van Windows Firewall-instellingen op beheerde computers. Zie [Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) voor meer informatie.
+
+Windows-pc's met de Intune-softwareclient kunnen worden beheerd met behulp van het Intune-beleid **Computerbeheer**.
+
+![Beleidssjablonen voor Windows-pc’s](../media/pc_policy_template.png)
 
 ### Het Microsoft Intune Center beheren
-Met het Microsoft Intune Center kunnen gebruikers:
+Gebruikers zien de Intune-softwareclient als het **Microsoft Intune Center**. Met het Microsoft Intune Center kunnen gebruikers:
 
 -   Toepassingen ophalen via de bedrijfsportal.
 
@@ -49,11 +51,14 @@ Het Microsoft Intune Center wordt geïnstalleerd op alle beheerde computers. U k
 |**Website-URL**|De URL van uw ondersteuningswebsite.<br /><br />Maximale lengte: 150 tekens|
 |**Opmerkingen**|Een opmerking die wordt weergegeven voor gebruikers.<br /><br />Maximale lengte: 120 tekens|
 
-### Instellingen voor software-updates beheren
-Gebruik beleidsregels om de instellingen te configureren die beheerde computers gebruiken voor het controleren op en downloaden van software-updates van Microsoft en derden. Zie voor meer informatie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Instellingen voor software-updates
+Gebruik beleidsregels om de instellingen te configureren die beheerde computers gebruiken voor het controleren op en downloaden van software-updates van Microsoft en derden. Deze updates omvatten geen upgrades van besturingssystemen (dat wil zeggen een upgrade van Windows 7 naar Windows 10 of een upgrade van een Windows 10-versie naar een nieuwere versie). Zie voor meer informatie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Instellingen voor Endpoint Protection beheren
+### Instellingen voor Endpoint Protection
 Gebruik beleidsregels voor het configureren van instellingen voor Endpoint Protection die u vervolgens implementeert op beheerde computers. Dit omvat scanschema's, te ondernemen acties wanneer schadelijke software wordt gedetecteerd, en meer. Zie [Help Windows-pc's beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
+
+## Windows Firewall-instellingen
+Beleidsregels vereenvoudigen het beheer van Windows Firewall-instellingen op beheerde computers. Zie [Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) voor meer informatie.
 
 ## Hardware- en software-inventarisatie weergeven
 Intune verzamelt gedetailleerde informatie over de hardware en software van beheerde computers. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
@@ -113,17 +118,17 @@ Intune verzamelt gedetailleerde informatie over de hardware en software van behe
 
 2.  Selecteer de apparaten die u buiten gebruik wilt stellen en kies vervolgens **Buiten gebruik stellen/wissen**.
 
-Als u een computer opnieuw wilt registreren bij Intune, installeert u de clientsoftware opnieuw op de computer met behulp van de informatie in het onderwerp [Installeer de Windows-pc-client met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Als u een computer opnieuw wilt registreren bij Intune, installeert u de softwareclient opnieuw op de pc met behulp van de informatie in [De Windows-pc-client installeren met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Als een computer geen verbinding kan maken met Intune, wordt een bericht weergegeven in de werkruimte **Dashboard**.
 
 Wanneer u een computer buiten gebruik stelt:
 
--   Wordt deze verwijderd uit het Intune-beheer en de Intune-inventarisatie en wordt de licentie die aan de computer is gekoppeld, beschikbaar gesteld voor hergebruik. Met Buiten gebruik stellen/wissen wordt alleen de Intune-softwareclient van de computer verwijderd, niet apps of gegevens.
+-   Wordt deze verwijderd uit het Intune-beheer en de Intune-inventarisatie en wordt de licentie die aan de computer is gekoppeld, beschikbaar gesteld voor hergebruik. Met Buiten gebruik stellen/wissen wordt alleen de Intune-softwareclient van de computer verwijderd, niet apps of gegevens. Met Buiten gebruik stellen wordt de computer niet volledig gewist.
 
 -   Wordt de status ervan niet meer weergegeven de Intune-console.
 
--   Verwijdert Intune de clientsoftware van de computer. Als de computer niet met de Intune-service is verbonden, wordt de clientsoftware de volgende keer dat de computer verbinding maakt, verwijderd.
+-   De clientsoftware wordt met Intune van de computer verwijderd. Als de computer niet met de Intune-service is verbonden, wordt de softwareclient de volgende keer dat de computer verbinding maakt, verwijderd.
 
 -   Microsoft Intune Endpoint Protection wordt verwijderd van de computer. Als op de computer een andere eindpunttoepassing is geïnstalleerd en deze is uitgeschakeld, kan die toepassing opnieuw worden ingeschakeld nadat Microsoft Intune Endpoint Protection is verwijderd om ervoor te zorgen dat uw computers zijn beveiligd.
 
@@ -160,9 +165,9 @@ Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aa
 > [!TIP]
 > Als u de mogelijkheden van eindgebruikers om zichzelf aan computers te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
 
-## Hulp op afstand aanvragen en verlenen aan Windows-pc's die gebruikmaken van de Intune-clientsoftware
+## Hulp op afstand voor Windows-pc's aanvragen en bieden
 
-Microsoft Intune kan de [TeamViewer](https://www.teamviewer.com)-software gebruiken om ervoor te zorgen dat gebruikers van pc's met de Intune-clientsoftware te hulp op afstand van u kunnen krijgen. Wanneer een gebruiker hulp via Microsoft Intune Center aanvraagt, ontvangt u een waarschuwing, kunt u de aanvraag accepteren en vervolgens hulp verlenen.
+Microsoft Intune kan de [TeamViewer](https://www.teamviewer.com)-software (apart verkrijgbaar) gebruiken om ervoor te zorgen dat gebruikers van pc's met de Intune-softwareclient hulp op afstand van u kunnen krijgen. Wanneer een gebruiker hulp via Microsoft Intune Center aanvraagt, ontvangt u een waarschuwing, kunt u de aanvraag accepteren en vervolgens hulp verlenen.
 Deze functionaliteit vervangt de bestaande Windows Hulp op afstand-functionaliteit in Intune.
 
 
@@ -211,6 +216,6 @@ Kies in het menu **Acties** van het venster **TeamViewer** de optie **Sessie be�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

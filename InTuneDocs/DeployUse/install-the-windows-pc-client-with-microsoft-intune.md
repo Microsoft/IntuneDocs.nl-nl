@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# De Windows-pc-client installeren met Microsoft Intune
-Gebruik deze handleiding om uw Windows-pc's te laten beheren door de Microsoft Intune-clientsoftware.
+# De Intune-softwareclient installeren op Windows-pc's
+Windows-pc's kunnen worden geregistreerd door de Intune-clientsoftware te installeren. De Intune-clientsoftware kan op de volgende manieren worden geïnstalleerd:
 
-## Voordat u begint
-Lees, voordat u de Intune-clientsoftware installeert, het onderwerp [Conflicten tussen GPO-beleid en Microsoft Intune-beleid oplossen](resolve-gpo-and-microsoft-intune-policy-conflicts.md) om te begrijpen wat u nodig hebt om de client correct te installeren. Keer vervolgens terug naar deze instructies.
+- Handmatig installeren
+- Installeren met behulp van groepsbeleid
+- Opnemen in een schijfinstallatiekopie
+- Installatie door gebruikers
 
-## De client installeren
-Volg deze stappen om de client op te halen:
+## De Intune-clientsoftware downloaden
 
--   [De clientsoftware downloaden](#to-download-the-client-software)
-
-Gebruik vervolgens een of meer van de volgende methoden om de client te installeren:
-
--   [De clientsoftware handmatig implementeren](#to-manually-deploy-the-client-software)
-
--   [De clientsoftware automatisch implementeren met Groepsbeleid](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [De Microsoft Intune-clientsoftware installeren met een installatiekopie](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Als u een computer niet langer hoeft te beheren met Intune, kunt u de computer buiten gebruik stellen. Hierdoor wordt de clientsoftware ook van de betreffende computer verwijderd. Zie [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) voor meer informatie.
-
-### De clientsoftware downloaden
+Voor alle methoden, behalve die waarbij gebruikers de Intune-clientsoftware zelf installeren, moet u de software te downloaden, zodat deze kan worden geïmplementeerd.
 
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beheer** &gt; **Clientsoftware downloaden**
 
-  ![De Intune-pc-client downloaden](./media/pc-SA-client-download.png)
+  ![De Intune-pc-client downloaden](../media/pc-sa-client-download.png)
 
 2.  Klik op de pagina **Clientsoftware downloaden** op **Clientsoftware downloaden** en sla het **Microsoft_Intune_Setup.zip**-pakket met de software op een veilige locatie in het netwerk op.
 
@@ -56,14 +45,14 @@ Als u een computer niet langer hoeft te beheren met Intune, kunt u de computer b
     > [!IMPORTANT]
     > Hernoem of verwijder het uitgepakte bestand **ACCOUNTCERT** niet, anders mislukt de installatie van de clientsoftware.
 
-### De clientsoftware handmatig implementeren
+## Handmatig implementeren
 
 1.  Blader op een computer naar de map met de installatiebestanden van de clientsoftware en voer **Microsoft_Intune_Setup.exe** uit om de clientsoftware te installeren.
 
     > [!NOTE]
     > De status van de installatie wordt weergegeven wanneer u met de muisaanwijzer over het pictogram in het systeemvak van de clientcomputer beweegt.
 
-### De clientsoftware automatisch implementeren met Groepsbeleid
+## Implementeren met behulp van groepsbeleid
 
 1.  Voer onderstaande opdracht uit in de map met de bestanden **Microsoft_Intune_Setup.exe** en **MicrosoftIntune.accountcert** om de op Windows Installer gebaseerde installatieprogramma's voor 32-bits en 64-bits computers te extraheren:
 
@@ -80,7 +69,7 @@ Als u een computer niet langer hoeft te beheren met Intune, kunt u de computer b
 
     Raadpleeg de Windows Server-documentatie voor meer informatie over het gebruik van Groepsbeleid om software automatisch te implementeren.
 
-### De Microsoft Intune-clientsoftware installeren met een installatiekopie
+## Installeren als onderdeel van een installatiekopie
 U kunt de Intune-clientsoftware op computers implementeren met een installatiekopie van het besturingssysteem door de volgende voorbeeldprocedure als uitgangspunt te gebruiken:
 
 1.  Kopieer de clientinstallatiebestanden **Microsoft_Intune_Setup.exe** en **MicrosoftIntune.accountcert** naar de map **%Systemdrive%\Temp\Microsoft_Intune_Setup** op de referentiecomputer.
@@ -109,6 +98,12 @@ Wanneer de doelcomputer opnieuw wordt opgestart om Windows Setup te voltooien, w
 Wanneer de automatische inschrijvingstaak wordt uitgevoerd op het volgende geplande tijdstip, wordt gecontroleerd of de registerwaarde **WindowsIntuneEnrollPending** bestaat en wordt geprobeerd om de doel-pc in te schrijven bij Intune. Als de inschrijving om een of andere reden mislukt, wordt een nieuwe poging ondernomen de volgende keer dat de taak wordt uitgevoerd. De nieuwe pogingen worden een maand lang uitgevoerd.
 
 De automatische inschrijvingstaak voor Intune, de registerwaarde **WindowsIntuneEnrollPending** en het accountcertificaat worden van de doelcomputer verwijderd wanneer de inschrijving is geslaagd of anders na één maand.
+
+## Registratie door de gebruikers zelf
+
+Gebruikers kunnen de Intune-clientsoftware installeren door naar [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) te gaan. Als de webportal detecteert dat het apparaat een Windows-pc is, wordt gevraagd de pc te registreren door de Intune-softwareclient te downloaden. Na het downloaden kunnen gebruikers de software installeren om hun pc’s onder beheer te brengen.
+
+![Prompt in de Intune-portal om de Intune-softwareclient te downloaden](../media/software-client-download.png)
 
 ## Geslaagde clientimplementatie controleren en valideren
 Gebruik een van de volgende procedures om de clientimplementatie te controleren en te valideren.
@@ -139,6 +134,6 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

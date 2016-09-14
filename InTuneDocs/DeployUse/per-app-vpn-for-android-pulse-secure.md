@@ -4,7 +4,7 @@ description: U kunt een VPN-profiel per app maken voor Android-apparaten die wor
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
-ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
+ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
+ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 
 ---
 
 # Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten
 
-U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd met Intune. Maak eerst een VPN-profiel met het verbindingstype Pulse Secure. Maak vervolgens een aangepast configuratiebeleid dat het VPN-profiel aan specifieke apps koppelt. Als u het beleid hebt geïmplementeerd voor uw Android-apparaat of gebruikersgroepen en een gebruiker vervolgens een van de opgegeven apps op een van deze apparaten opent, wordt er een VPN-verbinding voor die app geopend.
+U kunt een VPN-profiel per app maken voor apparaten met Android 5.0 en hoger die worden beheerd met Intune. Maak eerst een VPN-profiel met het verbindingstype Pulse Secure. Maak vervolgens een aangepast configuratiebeleid dat het VPN-profiel aan specifieke apps koppelt. 
+
+Nadat u het beleid op uw Android-apparaat of in uw gebruikersgroepen hebt geïmplementeerd, moeten gebruikers het PulseSecure-VPN starten. PulseSecure staat vervolgens alleen verkeer van de opgegeven apps toe om een VPN-verbinding te maken.
 
 > [!NOTE]
 >
@@ -49,8 +51,7 @@ U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd m
    6. Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/PackageList**, waarbij *Naam* de naam van het VPN-profiel is die u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
    7.   Geef bij **Waarde** een lijst met door puntkomma’s gescheiden pakketten op die aan het profiel moeten worden gekoppeld. Als u bijvoorbeeld wilt dat Excel en de Google Chrome-browser de VPN-verbinding gebruiken, voert u **com.microsoft.office.excel;com.android.chrome** in.
 
-
-    ![Voorbeeld van een aangepast VPN-beleid per app voor Android](..\media\android_per_app_vpn_oma_uri.png)
+![Voorbeeld van een aangepast VPN-beleid per app voor Android](./media/android_per_app_vpn_oma_uri.png)
 
 #### Uw lijst met apps instellen als een blacklist of whitelist (optioneel)
   U kunt een lijst met apps opgeven die de VPN-verbinding *niet* mogen gebruiken, door de waarde **BLACKLIST** te gebruiken. Alle andere apps kunnen wel gebruikmaken van de VPN-verbinding.
@@ -76,6 +77,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

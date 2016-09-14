@@ -9,8 +9,9 @@
 ## [Apparaten inschrijven](enroll-devices-in-microsoft-intune.md)
 ### [Bereid u voor op de registratie van apparaten in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [iOS- en Mac-beheer](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile en Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android-beheer](set-up-android-management-with-microsoft-intune.md)
 #### [Windows-apparaatbeheer ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile en Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Apparaten in bedrijfseigendom beheren](manage-corporate-owned-devices.md)
 #### [iOS-apparaten van het bedrijf inschrijven](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Registratie met iOS-configuratieassistent](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -107,6 +108,7 @@
 #### [MAM-beleid maken en implementeren](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM-beleid voor Android](android-mam-policy-settings.md)
 #### [MAM-beleid voor iOS](ios-mam-policy-settings.md)
+#### [MAM-beleid valideren](validate-mobile-application-management.md)
 #### [Beleidsnaleving bewaken](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Ervaring van de eindgebruiker](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

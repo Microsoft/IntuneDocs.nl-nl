@@ -13,16 +13,16 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # Uw Windows-apparaat gebruiken met Intune
 
-Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun met Intune beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers volgen om diverse taken uit te voeren. Deze zijn ondergebracht in categorieën: 
-- Installatie van de bedrijfsportal-app en registratie bij Intune 
+Dit artikel bevat koppelingen naar alle taken die gebruikers op hun met Intune beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers moeten volgen om diverse taken uit te voeren die als volgt in categorieën zijn ingedeeld:
+- Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 - Beheertaken na de registratie
 - Problemen met naleving
 
@@ -36,7 +36,7 @@ De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfspo
 
 ## Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
 
-De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u uw Windows-apparaat hebt geregistreerd bij Intune.
+In deze sectie leest u welke acties u kunt uitvoeren nadat u uw Windows-apparaat bij Intune hebt geregistreerd.
 
 - [Uw apparaat versleutelen](encrypt-your-device-windows.md)
 - [Uw wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)
@@ -49,7 +49,7 @@ De informatie in deze sectie helpt u met de acties die u kunt uitvoeren nadat u 
 
 ## Problemen met het apparaat oplossen
 
-De informatie in deze sectie helpt u problemen op te lossen die mogelijk optreden wanneer een Windows-apparaat wordt geregistreerd bij Intune.
+De informatie in deze sectie helpt u bij het oplossen van problemen die mogelijk optreden wanneer een Windows-apparaat bij Intune wordt geregistreerd.
 
 - [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 - [Het apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
@@ -60,6 +60,6 @@ De informatie in deze sectie helpt u problemen op te lossen die mogelijk optrede
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

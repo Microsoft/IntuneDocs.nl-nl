@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Android-beheer instellen met Microsoft Intune
-U vindt [hier](../enduser/using-your-android-device-with-intune.md) meer informatie over het instellen van uw Android-apparaat.
-
-Met Microsoft Intune kunt u zonder extra werk voor het platform BYOD ('Bring Your Own Device') instellen voor Android-apparaten.
-
-Maak voor meer informatie een keuze uit de volgende apparaatplatformspecifieke opties:
-
-> [!div class="op_single_selector"]
-- [Android-beheer instellen met Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [iOS- en Mac-beheer instellen met Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Windows apparaatbeheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
-
-Op mobiele apparaten met Android kunnen gebruikers zich registreren via de bedrijfsportal-app, die beschikbaar is via Google Play. Doorloop de volgende stappen om gebruikers hun apparaten te laten inschrijven.
+Als Intune-beheerder kunt u Android-apparaten beheren via de bedrijfsportal. Gebruikers kunnen hun apparaten vervolgens registreren via de bedrijfsportal-app, die beschikbaar is via Google Play.
 
 1.  **Intune instellen**<br>
     Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) op **Microsoft Intune** en MDM in te stellen.
@@ -52,6 +40,6 @@ Op mobiele apparaten met Android kunnen gebruikers zich registreren via de bedri
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
