@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0653af30aa6e75888dd72c5b3a4afa0b2b1d596
-ms.openlocfilehash: a3cc5ea639c31e3fec08e86f27f118e193b8f4b3
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,25 +78,6 @@ Naast de wijzigingen in het groepsbeheer, **wordt de volgende functionaliteit af
 - Draaien met groepen in rapporten
 <!--- TFS 1295329--->
 
-## Bedrijfsportal
-
-### Feedbackkoppeling van de bedrijfsportal naar Microsoft
-Op de website van de bedrijfsportal kunnen eindgebruikers tikken op een nieuwe koppeling ‘Feedback’ onderaan de pagina, en feedback verzenden naar Microsoft over hun ervaringen met de site. De verzamelde, geanonimiseerde feedback helpt Microsoft bij het verbeteren van de gebruikerservaring van de bedrijfsportalwebsite.
-<!--- TFS 1313657--->
-
-### Verbeteringen aan hoe iOS-eindgebruikers hun apps verkrijgen
-De volgende wijzigingen worden in september aangebracht aan de apptegels in de Bedrijfsportal-app voor iOS, zodat gebruikers op één locatie (de Bedrijfsportal-app) naar verschillende weergaven worden verwezen voor alle apps. Op dit moment wordt het door Apple verboden om line-of-business en beheerde App Store-apps te vermelden in de Bedrijfsportal-app en moeten gebruikers verschillende weergaven openen om al hun apps te vinden.
-
-- De tegel **Bedrijfsapps** verwijst momenteel naar alle apps op het tabblad ALLE van de Bedrijfsportal-website, en deze blijft ook op dezelfde manier werken. De naam van de tegel wordt gewijzigd in **Alle apps**.
-- De tegel **Andere apps** verwijst momenteel naar een weergave in de Bedrijfsportal-app waarin alle apps worden vermeld die van Apple mogen weergegeven in de app. De naam van de tegel wordt gewijzigd in **Uitgelichte apps**. Wanneer gebruikers op de tegel tikken, gaan ze naar het tabblad UITGELICHT van de Bedrijfsportal-website.
--  De tegel **Categorieën** verwijst momenteel naar een weergave in de Bedrijfsportal-app waarin appcategorieën worden vermeld. De naam van de tegel wordt niet gewijzigd, maar verwijst nu naar het tabblad CATEGORIEËN van de Bedrijfsportal-website.
-U vindt [hier](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) bijgewerkte schermafbeeldingen.
-<!---TFS 1317133--->
-
-### Vragen om de iOS-app voor de Managed Browser te installeren als de IT-professional dat vereist voor een app
-In de release van september van de iOS-bedrijfsportal-app is het zo dat, als u hebt geconfigureerd dat webclips alleen worden geopend in de Managed Browser, en de Managed Browser niet is geïnstalleerd op een apparaat, gebruikers via de Bedrijfsportal-app op het apparaat de vraag krijgen om de Managed Browser te installeren. Daarna kunnen ze de webclip pas openen. 
-<!---TFS 1228570--->
-
 ## Serviceafschaffing
 ### Bedrijfsportal-apps voor Windows 8 en Windows Phone 8 worden vanaf september 2016 afgeschaft
 Vanaf oktober 2016 biedt Microsoft Intune geen ondersteuning meer voor Windows 8- en Windows Phone 8-bedrijfsportal-apps. Microsoft Intune biedt dan ook geen ondersteuning meer voor het Windows Phone 8-platform. Als gevolg hiervan kunt u geen Windows Phone 8-apparaten meer registreren of bijwerken. U kunt Windows Phone 8- en Windows 8-apparaten die al zijn geregistreerd blijven beheren. Werk Windows 8- en Windows Phone 8-apparaten bij naar Windows 8.1 en Windows Phone 8.1. Gebruik de bijbehorende bedrijfsportal-apps voor Windows 8.1 en Windows Phone 8.1 om zonder onderbrekingen door te gaan met het distribueren van apps naar deze apparaten.
@@ -132,6 +113,6 @@ Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voo
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
