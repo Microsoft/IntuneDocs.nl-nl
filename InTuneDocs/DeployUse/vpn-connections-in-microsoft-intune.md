@@ -4,7 +4,7 @@ description: VPN-profielen gebruiken om VPN-instellingen te implementeren voor g
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ U wilt bijvoorbeeld alle iOS-apparaten voorzien van de instellingen die vereist 
 U kunt de volgende typen apparaten configureren door gebruik te maken van VPN-profielen:
 
 * Apparaten met Android 4 en hoger
-* Apparaten met iOS 7.1 en hoger
+* Apparaten met iOS 8.0 en hoger
 * Apparaten met Mac OS X 10.9 en hoger
 * Geregistreerde apparaten met Windows 8.1 en hoger
 * Apparaten met Windows Phone 8.1 en hoger
@@ -45,6 +45,8 @@ Intune ondersteunt het maken van VPN-profielen die gebruikmaken van de volgende 
 Type verbinding |iOS en Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8,1|Windows 10 Desktop en Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nee    |     Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
+Cisco (IPsec)|Ja |Nee   |Nee  |  Nee|Nee  |Nee | Nee|
+Citrix|Yes |Nee   |Nee  |  Nee|Nee  |Nee | Nee|
 Pulse Secure|Ja  |Ja |Ja   |Nee  |Ja  |Ja| Ja|        
 F5 Edge Client|Ja |Ja |Ja |Nee  |Ja  |   Ja |  Ja|   
 Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Nee  |Ja |Ja |Ja|         
@@ -83,7 +85,7 @@ De gebruiker wordt geverifieerd op de VPN-server door een gebruikersnaam en wach
 1. Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** > **Beleid toevoegen**.
 2. Selecteer een sjabloon voor het nieuwe beleid door het uitbreiden van de relevante apparaattype en kies vervolgens het VPN-profiel voor dat apparaat:
     * **VPN-profiel (Android 4 en hoger)**
-    * **VPN-profiel (iOS 7.1 en hoger)**
+    * **VPN-profiel (iOS 8.0 en hoger)**
     * **VPN-profiel (Mac OS X 10.9 en hoger)**
     * **VPN-profiel (Windows 8.1 en hoger)**
     * **VPN-profiel (Windows Phone 8.1 en hoger)**
@@ -111,6 +113,7 @@ Naam van de instelling  |Meer informatie
 **Aanmeldingsgroep of -domein**|Geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken. Deze optie wordt alleen weergegeven als het verbindingstype **Dell SonicWALL Mobile Connect** is.
 **Vingerafdruk**|Geef een tekenreeks op (bijvoorbeeld 'Contoso-vingerafdrukcode') die wordt gebruikt om te controleren of de VPN-server kan worden vertrouwd. Een vingerafdruk kan worden verzonden naar de client zodat deze alle servers vertrouwt die dezelfde vingerafdruk presenteren wanneer er verbinding wordt gemaakt. Als het apparaat nog niet over de vingerafdruk beschikt, wordt de gebruiker gevraagd om de VPN-server waarmee deze verbinding maakt, te vertrouwen terwijl de vingerafdruk wordt weergegeven. (De gebruiker controleert de vingerafdruk handmatig en kiest **Vertrouwen** om verbinding te maken.) Deze optie wordt alleen weergegeven als het verbindingstype **CheckPoint Mobile VPN** is.
 **Per App VPN**|Selecteer deze optie als u deze VPN-verbinding wilt koppelen aan een iOS-app of een Max OS X-app zodat de verbinding wordt geopend wanneer de app wordt uitgevoerd. U kunt het VPN-profiel aan een app koppelen bij het implementeren van de software. Zie [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Apps implementeren in Microsoft Intune) voor meer informatie
+**VPN op aanvraag**|U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger instellen. Instructies hiervoor zijn beschikbaar in [VPN op aanvraag voor iOS-apparaten](#on-demand-vpn-for-ios-devices).
 **Proxy-instellingen automatisch detecteren** (alleen voor iOS, Mac OS X, Windows 8.1 en Windows Phone 8.1)|Als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of u wilt dat apparaten de verbindingsinstellingen automatisch detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
 **Automatisch configuratiescript gebruiken** (alleen voor iOS, Mac OS X, Windows 8.1 en Windows Phone 8.1)|Als uw VPN-server een proxyserver voor de verbinding vereist, geeft u op of u een automatisch configuratiescript wilt gebruiken om de instellingen te definiëren en geeft u vervolgens een URL naar het bestand met de instellingen op. Raadpleeg de Windows Server-documentatie voor meer informatie.
 **Proxyserver gebruiken** (alleen voor iOS, Mac OS X, Windows 8.1 en Windows Phone 8.1)|Als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie en geeft u het adres en poortnummer van de proxyserver op. Raadpleeg de Windows Server-documentatie voor meer informatie.
@@ -141,6 +144,32 @@ U kunt het VPN-gebruik door Windows 10-apparaten tot bepaalde apps beperken door
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid**.
 
+### VPN op aanvraag voor iOS-apparaten
+U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger configureren.
+
+> [!NOTE]
+>  
+> U kunt geen VPN per app en VPN per aanvraag in dezelfde beleidsregel gebruiken.
+ 
+1. Zoek op de pagina voor de configuratie van beleidsregels naar **Regels voor deze VPN-verbinding op aanvraag**. De kolommen krijgen een label **Overeenkomst**, de voorwaarde die de regels controleert en **Actie**, de actie die door het beleid wordt geactiveerd wanneer aan de voorwaarde wordt voldaan. 
+2. Kies **Toevoegen** om een regel te maken. Er zijn twee soorten overeenkomsten die u in de regel kunt instellen. U kunt alleen een van de volgende typen per regel configureren.
+  - **SSID's**, die verwijzen naar draadloze netwerken. 
+  - **DNS domeinen doorzoeken**, die...  U kunt volledige domeinnamen gebruiken, zoals *team. corp.contoso.com*, of domeinen gebruiken als *contoso.com*, het equivalent van het gebruik van * *. contoso.com*.
+3. Optioneel: geef een URL-testtekenreeks op, een URL die gebruikmaakt van de regel als een test. Als het apparaat waarop dit profiel is geïnstalleerd, in staat is om toegang te krijgen tot deze URL zonder omleiding, wordt de VPN-verbinding tot stand gebracht en maakt het apparaat verbinding met de doel-URL. De gebruiker ziet de tekenreeks testsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
+4. Kies een van de volgende acties:
+  - **Verbinden**
+  - **Verbinding evalueren**, waarvoor drie instellingen beschikbaar zijn. **Domeinactie**: kies **Verbinding indien nodig** of **Nooit verbinding maken met**
+     b. **Door komma's gescheiden lijst met domeinen**: hiermee configureert u alleen een **Domeinactie** van het type **Verbinding indien nodig** 
+     c. **Vereiste tekenreeks van URL-test**: een HTTP of HTTPS (aanbevolen)-URL, zoals *https://vpntestprobe.contoso.com*. De regel controleert of er een reactie van dit adres is. Als dat niet het geval is en de **Domeinactie** is ingesteld op **Verbinding indien nodig**, wordt de VPN-verbinding geactiveerd.
+     > [!TIP]
+     >
+     >Een voorbeeld van wanneer u deze actie kunt gebruiken wanneer sommige sites in uw bedrijfsnetwerk een directe of VPN-bedrijfsnetwerk vereisen, terwijl dit niet vereist is voor andere sites. Als u een lijst met **door komma's gescheiden lijst domeinen met een DNS-zoekopdracht** *corp.contoso.com*, hebt, kunt u **verbinding maken indien nodig** en vervolgens een lijst voor specifieke sites binnen dat netwerk die VPN weergeven, zoals *sharepoint.corp.contoso.com*. De regel controleert vervolgens of *vpntestprobe.contoso.com* kan worden bereikt. Als dit niet het geval is, wordt de VPN-verbinding geactiveerd voor de sharepoint-site.
+  - **Negeren**: dit zorgt ervoor dat er geen wijzigingen zijn in de VPN-verbinding. Als de VPN is verbonden, laat u dit zo. Als er geen verbinding is, maakt u geen verbinding. U hebt bijvoorbeeld een VPN-verbinding voor al uw interne zakelijke websites, maar u wilt een van deze interne sites alleen toegankelijk maken wanneer het apparaat daadwerkelijk is verbonden met het bedrijfsnetwerk. In dat geval maakt u een negeerregel aan voor de desbetreffende site.
+  - **Verbreken**: hiermee verbreekt u de VPN-verbinding met aangesloten apparaten als aan de voorwaarden wordt voldaan. U kunt bijvoorbeeld uw draadloze bedrijfsnetwerken in het veld **SSID** vermelden en een regel maken waarmee de VPN-verbinding wordt verbroken zodra de apparaten met een van deze netwerken verbinding maken.
+
+Domeinspecifieke regels worden geëvalueerd voor regels die voor alle domeinen gelden. 
+
+
 ## Het beleid implementeren
 
 1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
@@ -163,6 +192,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
