@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,21 +12,65 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3ac185bae98948ab756abdc2a2bb22672b362f90
+ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
+ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
 
 
 ---
 
 # U wordt gevraagd Lookout for Work te installeren
-Opmerking: deze functie is toegevoegd aan de Android-bedrijfsportal-app, maar is pas operationeel vanaf september 2016.
 
-Lookout for Work is een app die zorgt voor een betere beveiliging van uw apparaat door te controleren op risico's en beveiligingsrisico's. Wanneer er een melding wordt weergegeven dat u Lookout for Work moet installeren, betekent dit dat de IT-beheerder een beleid heeft ingesteld dat vereist dat u de app uit de Play Store downloadt en installeert.
+Als u hieronder de melding 'Lookout for Work is niet geïnstalleerd en geactiveerd' wordt weergegeven, betekent dit dat uw IT-beheerder vereist dat u de Lookout for Work-app installeert. Hiermee kunt u potentiële beveiligingsrisico’s opsporen en zo uw apparaat beschermen.
 
-**U moet het volgende doen:**
+![u moet een nalevingsprobleem oplossen](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-1.  Volg de prompts om de app te downloaden en te installeren.
-2.  Zodra de installatie is voltooid en u bent teruggekeerd naar de bedrijfsportal-app, tikt u op **Naleving controleren** om het proces te voltooien. Vervolgens kunt u uw apparaat weer gebruiken voor toegang tot bedrijfsgegevens en -resources.
+**Zo lost u het probleem op:**
+
+1.  Sleep omlaag vanaf de bovenkant van het scherm om de meldingenbalk te openen. Tik vervolgens op **Vereiste toepassing: Lookout for Work vanuit Play Store installeren**.
+
+    ![u moet Lookout for Work installeren](./media/lookout-required-app-install-android.png)
+
+    U gaat naar de installatiepagina van Lookout for Work in de Play Store.
+
+2.  Installeer Lookout for Work en tik op **ACCEPTEREN** om uw apparaat te openen met Lookout for Work.
+
+    ![tik op accepteren om uw apparaat te openen met Lookout for Work](./media/lookout-accept-store-permissions-android.png)
+
+3. Open Lookout for Work en tik op **Activeren**.
+
+    ![open Lookout for Work en tik op Activeren](./media/lookout-activate-button-android.png)
+
+4. Tik op **Aanmelden met een werkaccount** en voer het account in waarmee u uw e-mail, bestanden en andere gegevens van werk of school opent.
+
+    ![meld u aan met een werk- of schoolaccount](./media/lookout-sign-in-android.png)
+
+5. Selecteer het account waarmee u uw e-mail, bestanden en andere gegevens van werk of school opent en tik vervolgens op **ACCOUNT TOEVOEGEN**.
+
+    ![selecteer uw werk- of schoolaccount en tik op Account toevoegen](./media/lookout-pick-account-android.png)
+
+6. Tik op **Accepteren** om Lookout for Work toestemming te geven om u aan te melden en uw profiel te lezen.
+
+    ![tik op Accepteren om Lookout for Work toestemming te geven om u aan te melden en uw profiel te lezen](./media/lookout-needs-permission-to-view-profile-android.png)
+
+    Er wordt een scherm geopend waarin u ziet dat Lookout for Work verbinding maakt met de Lookout Security Cloud.
+
+7. Lees de items over de beveiliging van uw apparaat met Lookup en tik vervolgens op **OK**.
+
+    ![lees over de beveiliging van uw apparaat met Lookout for Work](./media/lookout-how-it-protects-your-device-android.png)
+
+    Als u het volgende scherm ziet, is de installatie voltooid en hebt u verbinding met Lookout.
+
+    ![u hebt nu verbinding met Lookout for Work](./media/lookout-you-are-now-connected-android.png)
+
+    Lookout for Work start meteen met de controle op beveiligingsrisico’s voor uw apparaat. Als er geen bedreigingen worden gevonden, ziet u het volgende scherm.
+
+    ![Lookout for Work heeft geen beveiligingsrisico’s gevonden](./media/lookout-scan-no-threats-found-android.png)
+
+    In het scherm Apparaatdetails op de bedrijfsportal ziet u dat u nu voldoet aan de beveiligingsvereisten van uw bedrijf.
+
+    ![uw apparaat voldoet nu aan de beleidsregels](./media/lookout-device-now-compliant-android.png)
+
+    Als Lookout for Work een beveiligingsrisico op uw apparaat vindt, ziet u instructies voor het oplossen van het probleem.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
@@ -34,6 +78,7 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactge
 
 
 
-<!--HONumber=Aug16_HO5-->
+
+<!--HONumber=Sep16_HO2-->
 
 

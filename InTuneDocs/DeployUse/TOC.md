@@ -56,7 +56,7 @@
 ## [Apparaten beveiligen](protect-your-devices-with-microsoft-intune.md)
 ### [Extern vergrendelen en wachtwoordcode opnieuw instellen](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [Windows-apparaten beveiligen met MFA](protect-windows-devices-with-multi-factor-authentication.md)
-### [Microsoft Passport-instellingen op apparaten beheren](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Instellingen van Windows Hello voor Bedrijven beheren](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass van activeringsvergrendeling op iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Software-updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)

@@ -4,7 +4,7 @@ description: Informatie over het maken van een certificaatprofiel van Intune.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ U moet een vertrouwd certificaatprofiel maken voordat u een Simple Certificate E
 
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Geef de gevraagde informatie op om de instellingen van het vertrouwde certificaatprofiel voor Android, iOS, Mac OS X, Windows 8.1 of Windows Phone 8.1 te configureren.
-
-    - Importeer in de instelling van het **certificaatbestand** het vertrouwde basis-CA-certificaat (CER-bestand) dat u vanuit uw verlenende CA hebt geëxporteerd. De instelling van het **doelarchief** geldt alleen voor apparaten met Windows 8.1 en hoger, en alleen als het apparaat meer dan één certificaatarchief heeft.
-    -  Onder **Indeling van de naam van de certificaathouder** selecteert u **Aangepast** om een aangepaste indeling voor de naam van de certificaathouder op te geven.  
-        De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn `Common Name (CN)` en `Email (E)`. Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        In dit voorbeeld heeft de beheerder een indeling voor de naam van een certificaathouder gemaakt, waarin naast de variabelen `CN` en `E` gebruik wordt gemaakt van tekenreeksen voor de waarden Organisatie-eenheid, Organisatie, Locatie, Regio en Land. De [functie CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) geeft een lijst met ondersteunde tekenreeksen.  
+3.  Geef de gevraagde informatie op om de instellingen van het vertrouwde certificaatprofiel voor Android, iOS, Mac OS X, Windows 8.1 of Windows Phone 8.1 te configureren. 
+4.  Importeer in de instelling van het **certificaatbestand** het vertrouwde basis-CA-certificaat (CER-bestand) dat u vanuit uw verlenende CA hebt geëxporteerd. De instelling van het **doelarchief** geldt alleen voor apparaten met Windows 8.1 en hoger, en alleen als het apparaat meer dan één certificaatarchief heeft.
+    
 4.  Kies **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu implementeren.
@@ -79,7 +73,7 @@ Nadat u een vertrouwd CA-certificaatprofiel hebt gemaakt, maakt u SCEP- of PFX-c
 3.  Volg de instructies op de profielconfiguratiepagina om de instellingen voor het SCEP-certificaatprofiel te configureren.
     > [!NOTE]
     >
-    > Onder **Indeling van de naam van de certificaathouder** selecteert u **Aangepast** om een aangepaste indeling voor de naam van de certificaathouder op te geven.
+    > Selecteer onder **Indeling van onderwerpnaam** de optie **Aangepast** om een aangepaste indeling voor de naam van de certificaathouder op te geven (alleen in iOS-profielen).
     >
     > De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn `Common Name (CN)` en `Email (E)`. Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:
 
@@ -136,6 +130,6 @@ Ontdek nu hoe u certificaten kunt gebruiken om e-mail-, Wi-Fi- en VPN-profielen 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

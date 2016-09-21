@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -29,6 +29,21 @@ Al deze functies worden uiteindelijk ondersteund voor implementaties voor hybrid
 >Blogbericht: Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune<br>
 >Na aanleiding van de recente 'Trident'-malwareaanvallen op iOS-apparaten is er een nieuw blogbericht gepubliceerd, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune), voor meer informatie over de verschillende manieren waarmee u met Intune uw apparaten beveiligd en bijgewerkt kunt houden.
 
+## September 2016
+
+## Updates voor de bedrijfsportal
+### Android
+
+**Toevoeging van 'Meldingen' aan de bedrijfsportal voor Android**
+
+Er is op de startpagina een nieuw meldingenpictogram toegevoegd aan de bedrijfsportal voor Android. Door op dit pictogram te tikken wordt de pagina Meldingen geopend waar de eindgebruikers alle items zien die aandacht vereisen in de bedrijfsportal-app, zoals niet-compatibele apparaten, inschrijvingsupdates en activering van inschrijvingen. Met de iOS-bedrijfsportal-app kunt u de meldingen al zien. Door de introductie van de pagina Meldingen zien gebruikers niet langer de pagina Bedrijfstoegang instellen wanneer zij de bedrijfsportal starten of hervatten als het apparaat al is geregistreerd. Als u uw eigen richtlijnen voor eindgebruikers maakt, is het raadzaam om uw documentatie bij te werken met deze wijziging. Zoek [hier](https://aka.ms/androidcpupdate) naar bijgewerkte schermafbeeldingen.  
+<!---TFS 1095560--->
+
+### Windows
+**De knop Feedback is toegevoegd aan de bedrijfsportal-app voor Windows Phone 8.1**
+
+Via de bedrijfsportal-app voor Windows Phone 8.1 kunnen eindgebruikers feedback over de app verzenden met een nieuwe knop Feedback verzenden. Gebruikers vinden de knop door te tikken op het menu met drie punten rechtsonder in het scherm van de bedrijfsportal-app en vervolgens te tikken op **feedback verzenden**. De verzamelde, geanonimiseerde feedback helpt Microsoft bij het verbeteren van de gebruikerservaring van de bedrijfsportal-app.
+<!---TFS 1317806--->
 
 ## Augustus 2016
 ## Appbeheer
@@ -87,6 +102,10 @@ De Microsoft Intune Managed Browser-app voor iOS is bijgewerkt voor ondersteunin
 <!---TFS 1313253 checked--->
 
 ## Binnenkort
+
+### Ondersteuning voor iOS 10
+Intune biedt volledige ondersteuning voor iOS 10. Meer informatie volgt bij de openbare release van iOS 10.
+
 ### Intune-groepen stappen over naar Azure Active Directory-groepen met ingang van september 2016
 Intune is bezig met het creëren van een nieuwe ervaring voor het beheer van groepen die gebruikmaakt van Azure Active Directory (AAD)-beveiligingsgroepen als gebruikers- en apparaatgroepen in Intune. Deze groepen worden gebruikt voor alle groepsbeheer en voor implementatie van beleid en profielen **wanneer wij het nieuwe op Azure gebaseerde Intune-beheerportal introduceren**.
 
@@ -158,6 +177,6 @@ Raadpleeg het artikel over [Vorige versies van Intune](previous-intune-releases.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
