@@ -4,7 +4,7 @@ description: Hoe u in Azure AD Multi-Factor Authentication vereist voor apparaat
 keywords: 
 author: nbigman
 manager: angerobe
-ms.date: 08/17/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
-ms.openlocfilehash: d65846b09ac33fa18db037a6a2c05963607ef53f
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 
 ---
@@ -41,12 +41,13 @@ Als u MFA wilt vereisten bij het registreren van apparaten, volgt u deze stappen
     -  Vereis Multi-Factor Authentication voor registraties waarbij het apparaat niet op het werk is.
     -  Kies **Toegang tot bedrijfsresources blokkeren** om te voorkomen dat apparaten worden geregistreerde wanneer ze niet zijn verbonden met het bedrijfsnetwerk. 
 4. U kunt ook klikken op de koppeling om **uw werknetwerklocatie te definiëren/bewerken** om de netwerkverbindingsvereisten te configureren voor apparaatregistratie.
+
 > [!IMPORTANT]
 > 
 > Configureer geen **op het apparaat gebaseerde toegangsregels** voor Microsoft Intune-registratie.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
