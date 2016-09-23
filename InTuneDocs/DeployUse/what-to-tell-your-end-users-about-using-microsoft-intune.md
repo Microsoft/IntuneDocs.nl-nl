@@ -4,7 +4,7 @@ description: Koppelingen naar informatie die u met uw eindgebruikers kunt delen
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
+ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
+ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 
 ---
@@ -57,14 +57,12 @@ Kies een van de volgende apparaatplatforms om inzicht te krijgen in hoe uw eindg
 - [Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
 - [Hoe uw Windows-gebruikers apps downloaden](how-your-windows-users-get-their-apps.md)
 
-## Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
-Bekijk een [lijst met berichten die gebruikers mogelijk te zien krijgen in de bedrijfsportal-app](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages), zodat u uw gebruikers kunt helpen bij het oplossen van problemen die ze wellicht hebben wanneer ze de bedrijfsportal gebruiken.
 
 Als er overige informatie is die u graag in dit artikel zou willen terugzien, voegt u uw suggestie toe in het vak Opmerking onder aan dit onderwerp. Bedankt.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
