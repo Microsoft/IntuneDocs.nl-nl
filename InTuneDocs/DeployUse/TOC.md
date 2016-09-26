@@ -66,8 +66,9 @@
 ## [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md)
 
 ## [Apps toevoegen](add-apps.md)
-### [Apps voor mobiele apparaten toevoegen](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Apps voor Windows-pc's toevoegen](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Apps toevoegen voor ingeschreven apparaten](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Apps toevoegen voor Intune-client-pc's](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Licentieovereenkomsten beheren voor Intune-client-pc's](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Apps implementeren](deploy-apps.md)
 ### [Apps implementeren op apparaten en pc's](deploy-apps-in-microsoft-intune.md)
 ### [Apps bewaken](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +102,11 @@
 #### [E-mailtoegang beperken: voorbeelden](restrict-email-access-example-scenarios.md)
 
 ### [De toegang tot netwerken beperken (Cisco ISE)](restrict-access-to-networks.md)
+### [Toegang beperken op basis van apparaat, netwerk en toepassingsrisico](restrict-access-based-on-device-network-app-risk.md)
+#### [Lookout MTP instellen](set-up-your-subscription-with-lookout-mtp.md)
+#### [Lookout in Intune inschakelen](enable-lookout-mtp-connection-in-intune.md)
+#### [Lookout for Work-apps implementeren](configure-and-deploy-lookout-for-work-apps.md)
+#### [Nalevingsbeleid voor beveiliging tegen bedreigingen voor apparaten inschakelen](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [App-gegevens beveiligen met MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portal voor MAM-beleid](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ U moet een vertrouwd certificaatprofiel maken voordat u een Simple Certificate E
 1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** &gt; **Beleid toevoegen**.
 2.  Voeg een van deze beleidstypen toe:
     - **Android &gt; Profiel voor vertrouwd certificaat (Android 4 en hoger)**
-    - **iOS &gt; Profiel voor vertrouwd certificaat (iOS 7.1 en hoger)**
+    - **iOS &gt; Profiel voor vertrouwd certificaat (iOS 8.0 en hoger)**
     - **Mac OS X &gt; Profiel voor vertrouwd certificaat (Mac OS X 10.9 en hoger)**
     - **Windows &gt; Profiel voor vertrouwd certificaat (Windows 8.1 en hoger)**
     - **Windows &gt; Profiel voor vertrouwd certificaat (Windows Phone 8.1 en hoger)**
@@ -63,7 +63,7 @@ Nadat u een vertrouwd CA-certificaatprofiel hebt gemaakt, maakt u SCEP- of PFX-c
 1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** &gt; **Beleid toevoegen**.
 2.  Voeg een van deze beleidstypen toe:
     - **Android &gt; SCEP-certificaatprofiel (Android 4 en hoger)**
-    - **iOS &gt; SCEP-certificaatprofiel (iOS 7.1 en hoger)**
+    - **iOS &gt; SCEP-certificaatprofiel (iOS 8.0 en hoger)**
     - **Mac OS X &gt; SCEP-certificaatprofiel (Mac OS X 10.9 en hoger)**
     - **Windows &gt; SCEP-certificaatprofiel (Windows 8.1 en hoger)**
     - **Windows &gt; SCEP-certificaatprofiel (Windows Phone 8.1 en hoger)**
@@ -92,7 +92,7 @@ Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu i
   - **Android &gt; PFX-certificaatprofiel (Android 4 en hoger)**
   - **Windows &gt; PKCS #12-certificaatprofiel (PFX) (Windows 10 en hoger)**
   - **Windows &gt; PKCS #12-certificaatprofiel (PFX) (Windows Phone 10 en hoger)**
-  - **iOS > PKCS #12-certificaatprofiel (.pfx) (iOS 7.1 en hoger)**    
+  - **iOS > PKCS #12-certificaatprofiel (.pfx) (iOS 8.0 en hoger)**    
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Geef de benodigde informatie op het beleidsformulier op.
 4.  Kies **Beleid opslaan**.
@@ -130,6 +130,6 @@ Ontdek nu hoe u certificaten kunt gebruiken om e-mail-, Wi-Fi- en VPN-profielen 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

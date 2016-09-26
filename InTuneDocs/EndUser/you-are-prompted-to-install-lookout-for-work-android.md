@@ -1,5 +1,5 @@
 ---
-title: U wordt gevraagd Lookout for Work te installeren| Microsoft Intune
+title: U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
@@ -12,19 +12,18 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
-ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 ---
 
 # U wordt gevraagd Lookout for Work te installeren
 
-Als u hieronder de melding 'Lookout for Work is niet geïnstalleerd en geactiveerd' wordt weergegeven, betekent dit dat uw IT-beheerder vereist dat u de Lookout for Work-app installeert. Hiermee kunt u potentiële beveiligingsrisico’s opsporen en zo uw apparaat beschermen.
+Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassing installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen.
 
-![u moet een nalevingsprobleem oplossen](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-**Zo lost u het probleem op:**
+**U moet het volgende doen:**
 
 1.  Sleep omlaag vanaf de bovenkant van het scherm om de meldingenbalk te openen. Tik vervolgens op **Vereiste toepassing: Lookout for Work vanuit Play Store installeren**.
 
@@ -32,7 +31,7 @@ Als u hieronder de melding 'Lookout for Work is niet geïnstalleerd en geactivee
 
     U gaat naar de installatiepagina van Lookout for Work in de Play Store.
 
-2.  Installeer Lookout for Work en tik op **ACCEPTEREN** om uw apparaat te openen met Lookout for Work.
+2.  Installeer Lookout for Work en tik vervolgens op **ACCEPTEREN** om uw apparaat te openen met Lookout for Work.
 
     ![tik op accepteren om uw apparaat te openen met Lookout for Work](./media/lookout-accept-store-permissions-android.png)
 
@@ -40,7 +39,7 @@ Als u hieronder de melding 'Lookout for Work is niet geïnstalleerd en geactivee
 
     ![open Lookout for Work en tik op Activeren](./media/lookout-activate-button-android.png)
 
-4. Tik op **Aanmelden met een werkaccount** en voer het account in waarmee u uw e-mail, bestanden en andere gegevens van werk of school opent.
+4. Tik op **Aanmelden met een werkaccount** en voer het account in waarmee u uw e-mail en bestanden van werk of school opent.
 
     ![meld u aan met een werk- of schoolaccount](./media/lookout-sign-in-android.png)
 
