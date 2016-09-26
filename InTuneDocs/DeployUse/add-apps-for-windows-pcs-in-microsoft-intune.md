@@ -1,5 +1,5 @@
 ---
-title: Apps voor Windows-pc's toevoegen | Microsoft Intune
+title: Apps voor Windows-pc's met de Intune-softwareclient toevoegen | Microsoft Intune
 description: "Gebruik de informatie in dit onderwerp om te weten te komen hoe u apps voor Windows-pc’s aan Intune toevoegt voordat u ze implementeert."
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Apps voor Windows-pc's toevoegen in Microsoft Intune
+# Apps voor Windows-pc's met de Intune-softwareclient toevoegen
 
 Gebruik de informatie in dit onderwerp om te weten te komen hoe u apps aan Intune toevoegt voordat u ze implementeert.
 
 > [!IMPORTANT]
-> De informatie in dit onderwerp helpt u bij het toevoegen van apps op Windows-pc's die u beheert met de Intune-clientsoftware. Als u apps wilt toevoegen op geregistreerde Windows-pc’s en andere mobiele apparaten, raadpleegt u [Apps voor mobiele apparaten toevoegen in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> De informatie in dit onderwerp kan u helpen bij het toevoegen van apps voor Windows-pc's die u met de Intune-clientsoftware beheert. Als u apps wilt toevoegen op geregistreerde Windows-pc’s en andere mobiele apparaten, raadpleegt u [Apps voor mobiele apparaten toevoegen in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
 ## De app toevoegen
@@ -90,6 +90,6 @@ Nadat u een app hebt gemaakt, is de volgende stap om deze te implementeren. Zie 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

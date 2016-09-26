@@ -4,7 +4,7 @@ description: Kom meer te weten over de mogelijkheden van Intune wanneer u Window
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,25 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
 
-# (Windows-pc-beheermogelijkheden wanneer u de Intune-softwareclient gebruikt.)
+# Windows-pc-beheermogelijkheden wanneer u de Intune-softwareclient gebruikt
 In de meeste gevallen registreert u uw apparaten bij Microsoft Intune, waarmee u over een groter aantal mogelijkheden beschikt. U kunt echter ook pc's beheren met behulp van de Intune-softwareclient, die u de volgende functies biedt:
 
--   **Beheer van software-updates**: u kunt computers up-to-date houden en bepalen wanneer updates moeten worden toegepast.
+-   **[Beheer van software-updates](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: u kunt computers up-to-date houden en bepalen wanneer updates moeten worden toegepast.
 
--   **Windows Firewall-beleid**: hiermee kunt u ervoor zorgen dat geen enkele computer die door uw bedrijf wordt gebruikt, een niet-actieve of niet goed geconfigureerde Windows Firewall heeft.
+-   **[Windows Firewall-beleid](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)**: hiermee kunt u ervoor zorgen dat geen enkele computer die door uw bedrijf wordt gebruikt, een niet-actieve of niet goed geconfigureerde Windows Firewall heeft.
 
--   **Anti-malwarebeveiliging**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
+-   **[Anti-malwarebeveiliging](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
 
--   **Hulp op afstand**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
+-   **[Hulp op afstand](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
 
--   **Softwarelicentiebeheer**: houdt bij hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
--   **App-implementatie**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de softwareclient beheert.
+-   **[Softwarelicentiebeheer](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)**: hiermee kunt u bijhouden hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
+-   **[App-implementatie](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de softwareclient beheert.
 
 
 Intune biedt ondersteuning voor maximaal 7000 installaties van de softwareclient op Windows-apparaten.
@@ -74,6 +74,6 @@ Hier volgen de minimale softwarevereisten voor het installeren van de Intune-sof
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

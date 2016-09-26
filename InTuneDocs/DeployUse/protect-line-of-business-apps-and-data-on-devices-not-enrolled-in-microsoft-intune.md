@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ In dit onderwerp wordt uitgelegd wat de vereiste stappen zijn om MAM-beleid toe 
 ##  Stap 1: De app voorbereiden
 Voordat u MAM-beleid op een app kunt toepassen, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool.  De instructies voor de installatie en het gebruik van het hulpprogramma zijn opgenomen in de download.  
 >[!IMPORTANT]  
->Deze versie van de App Wrapping Tool, die apparaten ondersteunt die niet zijn geregistreerd bij Intune, is de komende weken beschikbaar als private preview. Als u wilt deelnemen, stuurt u een e-mail naar msintuneappsdk@microsoft.com voor meer informatie.
+>Deze versie van de App Wrapping Tool, waarmee apparaten worden ondersteund die niet bij Intune zijn geregistreerd, is beschikbaar als openbare preview. Als u wilt deelnemen aan de openbare preview, kunt u het hulpprogramma downloaden van [deze GitHub-pagina](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) voor iOS en van [deze GitHub-site](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) voor Android.
 
 ## Stap 2: De app toevoegen
 
@@ -75,6 +75,6 @@ U kunt een Line-Of-Business-app verwijderen uit de lijst met apps.  Hiermee word
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

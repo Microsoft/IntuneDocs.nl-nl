@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ IT-beheerders of gebruikers kunnen er ook voor kiezen om alternatieve e-mailclie
 U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren op de volgende apparaattypen:
 -   Windows Phone 8 en hoger
 -   Windows 10 (voor de desktop), Windows 10 Mobile en hoger
--   iOS 7.1 en hoger
+-   iOS 8.0 en hoger
 -   Samsung KNOX Standard (4.0 of hoger)
 
 U kunt een e-mailaccount instellen op het apparaat en daarnaast ook bepalen hoeveel e-mail er moet worden gesynchroniseerd en, afhankelijk van het apparaattype, welke inhoudstypen uw wilt synchroniseren.
@@ -71,7 +71,7 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel, dus de gebruiker moet dit
 
     -   **E-mailprofiel voor Samsung KNOX Standard (4.0 of hoger)**
 
-    -   **E-mailprofiel (iOS 7.1 en hoger)**
+    -   **E-mailprofiel (iOS 8.0 en hoger)**
 
     -   **E-mailprofiel (Windows Phone 8 en hoger)**
 
@@ -122,6 +122,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

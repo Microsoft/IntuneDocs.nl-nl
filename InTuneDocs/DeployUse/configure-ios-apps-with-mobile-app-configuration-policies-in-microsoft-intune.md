@@ -4,7 +4,7 @@ description: Gebruik het configuratiebeleid voor mobiele apps in Intune om inste
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 9b70517251c6225afee719c7e3380c584785251b
 
 
 ---
@@ -37,7 +37,7 @@ Configuratiebeleid voor mobiele apps kan ervoor zorgen dat deze problemen worden
 U implementeert dit beleid niet rechtstreeks bij gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en implementeert u vervolgens de app. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
 
 > [!TIP]
-> Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 7.1 en hoger. Ondersteunt de volgende typen app-installaties:
+> Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
 >
 > -   **Beheerde iOS-app uit de App Store**
 > -   **App-pakket voor iOS**
@@ -139,6 +139,6 @@ Wanneer u een configuratiebestand voor een mobiele app maakt, kunt u een of meer
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

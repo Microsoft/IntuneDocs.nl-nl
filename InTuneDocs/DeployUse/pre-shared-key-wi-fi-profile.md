@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ Zorg ervoor dat deze string met een punt begint.
 4. Kies **OK**, opslaan en implementeer het beleid.
 
     > [!NOTE]
-Dit beleid kan alleen worden geïmplementeerd voor gebruikersgroepen.
+    > Dit beleid kan alleen worden geïmplementeerd voor gebruikersgroepen.
 
 De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan automatisch verbinding maken met het netwerk.
 ## Wi-Fi-profiel voor Android of Windows
 
 Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of Windows:
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`: ingesteld op **onwaar**. Als dit is ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor de verbinding kan mislukken.
+> 
+>  `<hex>53534944</hex>` moet worden ingesteld op de hexadecimale waarde `<name><SSID of wifi profile></name>`.
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of 
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ Wanneer u een geïmplementeerd beleid selecteert, kunt u meer informatie over de
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

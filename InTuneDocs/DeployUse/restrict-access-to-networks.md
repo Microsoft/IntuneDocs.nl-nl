@@ -4,7 +4,7 @@ description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Int
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ Als u Intune integreert in Cisco ISE (Identity Services Engine) kunt netwerkbele
 Als u deze integratie wilt inschakelen, hoeft u geen installatie uit te voeren in uw Intune-tenant. U moet uw server Cisco ISE-server machtigingen geven voor toegang tot uw Intune-tenant. Nadat u dat hebt gedaan, wordt de rest van de installatie op de Cisco ISE-server uitgevoerd. In dit artikel vindt u instructies voor het opgeven van machtigingen in de ISE-server voor toegang tot uw Intune-tenant.
 
 ### Stap 1: de certificaten beheren
-1. Exporteer het certificaat in de Azure Active Directory-console (Azure AD).
+Exporteer het certificaat van de Azure Active Directory-console (Azure AD) en importeer het in het archief met vertrouwde certificaten van de ISE-console:
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ Als u deze integratie wilt inschakelen, hoeft u geen installatie uit te voeren i
 
    f. Op de pagina **Te exporteren bestand** kiest u **Bladeren** om een locatie te selecteren om het bestand op te slaan. Geef vervolgens een bestandsnaam op. Hoewel het lijkt alsof u een bestand kiest om het te exporteren, geeft u in feite het bestand waarin u het geëxporteerde certificaat opslaat, een naam. Kies **Volgende** &gt; **Voltooien**.
 
+   g. Importeer in de ISE-console het Intune-certificaat (het bestand dat u hebt geëxporteerd) naar het archief **Vertrouwde certificaten**.
+
 #### Safari
 
  a. Meld u aan bij de Azure AD-console.
@@ -52,14 +54,13 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 
    c. Selecteer **Certificaat weergeven** &gt; **Details**.
 
-   d. Kies het certificaat en kies **Exporteren**.  
+   d. Kies het certificaat en kies **Exporteren**. 
+
+   e. Importeer in de ISE-console het Intune-certificaat (het bestand dat u hebt geëxporteerd) naar het archief **Vertrouwde certificaten**.
 
 > [!IMPORTANT]
 >
 > Controleer de vervaldatum van het certificaat omdat u een nieuw certificaat moet exporteren en importeren wanneer dit certificaat is verlopen.
-
-
-2. Importeer in de ISE-console het Intune-certificaat (het bestand dat u hebt geëxporteerd) naar het archief **Vertrouwde certificaten**.
 
 
 ### Een zelfondertekend certificaat verkrijgen van ISE 
@@ -97,8 +98,57 @@ Zorg ervoor dat alle tekst op één regel staat
 |OAuth 2.0-tokeneindpunt|URL die de token uitgeeft|
 |Werk uw code bij met uw client-id|Client-id|
 
+### Stap 4: het zelfondertekende certificaat van ISE uploaden naar de ISE-app die u in Azure AD hebt gemaakt
+1.     Haal de met base64 gecodeerde certificaatwaarde en de vingerafdruk op uit een openbaar X509-certificaatbestand (CER). In dit voorbeeld wordt PowerShell gebruikt:
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    Sla de waarden voor $base64Thumbprint, $base64Value en $keyid op, die in de volgende stap worden gebruikt.
+2.       Upload het certificaat via het manifestbestand. Meld u aan bij de [Windows Azure-beheerportal](https://manage.windowsazure.com).
+2.      Zoek in de Azure AD-module de toepassing die u wilt configureren met een X.509-certificaat.
+3.      Download het manifestbestand van de toepassing. 
+5.      Vervang de lege eigenschap “KeyCredentials”: [], door de volgende JSON.  Het complexe type KeyCredentials wordt gedocumenteerd in [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (Verwijzing naar entiteit en complex type).
 
-### Stap 3: ISE-instellingen configureren
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+Bijvoorbeeld:
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      Sla de wijziging op in het manifestbestand van de toepassing.
+7.      Upload het bewerkte manifestbestand van de toepassing via de Azure-beheerportal.
+8.      Optioneel: download het manifest opnieuw om te controleren of uw X.509-certificaat in de toepassing aanwezig is.
+
+>[!NOTE]
+>
+> KeyCredentials is een verzameling. U kunt dus meerdere X.509-certificaten voor overschakelingsscenario's uploaden of certificaten uit scenario's met inbreuk verwijderen.
+
+
+### Stap 4: ISE-instellingen configureren
 Geef in de ISE-beheerconsole de volgende instellingswaarden op:
   - **Servertype**: Mobile Device Manager
   - **Verificatietype**: OAuth-clientreferenties
@@ -150,6 +200,6 @@ Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.tech
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

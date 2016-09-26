@@ -4,7 +4,7 @@ description: Maak beleid waarmee instellingen en functies worden beheerd op iOS-
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ Gebruik het **algemene iOS-configuratiebeleid** van Microsoft Intune om instelli
 Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de instelling wellicht maken met een aangepast iOS-beleid, dat u in staat stelt instellingen te importeren die u hebt gemaakt met de [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Zie "Aangepaste beleidsinstellingen" verderop in dit onderwerp voor meer informatie.
 
 ### Beveiligingsinstellingen
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -58,7 +58,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 <sup>1</sup> Wanneer u bij iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat wachtwoord vereist is** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
 
 ### Systeeminstellingen
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -71,7 +71,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Passbook tijdens vergrendeling toestaan**|Hiermee staat u de gebruiker toegang tot de app Passbook toe terwijl het apparaat is vergrendeld.|
 
 ### Cloudinstellingen voor documenten en gegevens
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -85,7 +85,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**iCloud-fotobibliotheek toestaan**|Hiermee kan de gebruiker foto's opslaan in iCloud. Als dit wordt uitgeschakeld, worden foto's die al zijn opgeslagen in iCloud verwijderd.|
 
 ### Toepassingsinstellingen voor de browser
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -97,7 +97,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Waarschuwing voor fraude toestaan**|Hiermee staat u toe dat waarschuwingen voor fraude in de browser van het apparaat worden weergegeven.|
 
 ### Toepassingsinstellingen voor apps
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -111,7 +111,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 
 
 ### Toepassingsinstellingen voor games
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -119,7 +119,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Games voor meerdere spelers toestaan**|Hiermee staat u de gebruiker toe op het apparaat games voor meerdere spelers te spelen.|
 
 ### Toepassingsinstellingen voor media-inhoud
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -129,7 +129,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 
 
 ### Instellingen voor apparaatmogelijkheden voor hardware
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -138,7 +138,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Een wachtwoord voor koppelen voor uitgaande AirPlay-aanvragen vereisen**|Hiermee vereist u een wachtwoord voor koppelen wanneer AirPlay wordt gebruikt om inhoud te streamen naar andere Apple-apparaten.|
 
 ### Instellingen voor apparaatmogelijkheden voor mobiel
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -147,7 +147,7 @@ Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
 |**Op de achtergrond ophalen tijdens roamen toestaan**|Hiermee staat u toe dat het apparaat gegevens zoals e-mail ophaalt tijdens roaming op een mobiel netwerk.|
 
 ### Instellingen voor apparaatmogelijkheden voor functies
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|-------|
@@ -196,7 +196,7 @@ In de lijst **Compatibele en niet-compatibele apps** geeft u een lijst met compa
 > [!NOTE]
 > De volgende opmerkingen zijn van toepassing op kioskmodusinstellingen voor iOS-apparaten:
 >
-> -   Voordat u een iOS-apparaat voor kioskmodus kunt configureren, moet u het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) gebruiken om het apparaat in de modus Supervisie te plaatsen. Zie de Apple-documentatie voor meer informatie over het hulpprogramma Apple Configurator.
+> -   Voordat u een iOS-apparaat voor de kioskmodus kunt configureren, moet u het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) of het [Device Enrollment Program van Apple](ios-device-enrollment-program-in-microsoft-intune) gebruiken om het apparaat in de supervisiemodus te plaatsen. Zie de Apple-documentatie voor meer informatie over het hulpprogramma Apple Configurator.
 > -   Als de iOS-app die u opgeeft, wordt geïnstalleerd nadat u het configuratiebeleid hebt geïmplementeerd, kan het apparaat pas in kioskmodus worden geplaatst nadat het opnieuw is opgestart.
 
 ### Referentie-informatie voor compatibele en niet-compatibele apps
@@ -222,14 +222,14 @@ Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele a
 > U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
 
 ### Inschrijvingsinstellingen
-Alle instellingen zijn van toepassing op iOS 7.1 en hoger.
+Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
 |**Activeringsvergrendeling toestaan wanneer de supervisiemodus voor het apparaat actief is**|Hiermee schakelt u Activeringsvergrendeling in op iOS-apparaten in de supervisiemodus.|
 
 ### Instellingen voor de supervisiemodus
-U kunt de volgende instellingen configureren op apparaten met iOS 7.1 en hoger in de supervisiemodus.
+U kunt de volgende instellingen configureren op apparaten met iOS 8.0 en hoger in de supervisiemodus.
 
 ### Supervisiemodusinstellingen voor apparaatbeperkingen
 
@@ -265,9 +265,9 @@ U kunt de volgende instellingen configureren op apparaten met iOS 7.1 en hoger i
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
-|**Wijzigen van de vertrouwensinstellingen voor bedrijfsapps toestaan**||
-|**Installeren van apps met alleen Apple-configuratie en iTunes toestaan**||
-|**Automatisch downloaden van apps toestaan**||
+|**Wijzigen van de vertrouwensinstellingen voor bedrijfsapps toestaan**|Hiermee kunnen gebruikers de vertrouwensinstellingen voor bedrijfsapps wijzigen.|
+|**Installeren van apps met alleen Apple-configuratie en iTunes toestaan**|Hiermee wordt de App Store vanaf de startpagina van het apparaat in- of uitgeschakeld. Gebruikers kunnen nog steeds iTunes of het hulpprogramma Apple Configurator gebruiken om apps te installeren en bij te werken.|
+|**Automatisch downloaden van apps toestaan**|Hiermee wordt toegestaan dat apps die met andere apparaten worden gekocht automatisch naar dit apparaat worden gedownload. Deze instelling is niet van invloed op app-updates.|
 |**Wijzigingen in de instellingen van de app Zoek vrienden toestaan**|Toestaan dat de gebruiker de instellingen van de app Zoek vrienden kan wijzigen.|
 |**Toegang tot de iBooks Store toestaan**|De gebruiker toestaan om door boeken in de iBooks Store te bladeren en om boeken te kopen.|
 |**Gebruik van de app Berichten op het apparaat toestaan**|Toestaan dat de app Berichten kan worden gebruikt om berichten te verzenden.|
@@ -382,6 +382,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

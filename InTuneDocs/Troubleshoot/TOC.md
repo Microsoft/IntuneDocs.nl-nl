@@ -17,6 +17,11 @@
 ## [Problemen met voorwaardelijke toegang oplossen](troubleshoot-conditional-access.md)
 ## [Problemen met Exchange Connector oplossen](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Aug16_HO1-->
+## [Problemen met Mobile Application Management oplossen](troubleshoot-mam.md)
+
+## [Problemen met de integratie van Lookout oplossen](troubleshooting-lookout-integration.md)
+
+
+<!--HONumber=Sep16_HO2-->
 
 

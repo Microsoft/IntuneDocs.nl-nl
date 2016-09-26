@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 310a1160d105a80623742ce4e2dc046c670bc167
-ms.openlocfilehash: d597cd13bd2254a9303769e2f5d5519c739f0aaf
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
 
 ---
@@ -40,7 +40,7 @@ U kunt Wi-Fi-profielen implementeren voor de volgende platforms:
 
 -   Android 4.0 en hoger
 
--   iOS 7.1 en hoger
+-   iOS 8.0 en hoger
 
 -   Mac OS X 10.9 en hoger
 
@@ -52,7 +52,7 @@ Voor apparaten met Windows 8.1 of Windows 10 Desktop of Mobile kunt u een Wi-Fi-
 
     -   Wi-Fi-profiel (Android 4 en hoger)
 
-    -   Wi-Fi-profiel (iOS 7.1 en hoger)
+    -   Wi-Fi-profiel (iOS 8.0 en hoger)
 
     -   Wi-Fi-profiel (Mac OS X 10.9 en hoger)
 
@@ -173,6 +173,6 @@ Zie [Wi-Fi-profiel met vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

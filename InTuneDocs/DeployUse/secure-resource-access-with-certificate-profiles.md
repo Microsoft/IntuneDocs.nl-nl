@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi-
 1. Zorg ervoor dat de juiste certificaatinfrastructuur aanwezig is, zoals beschreven in [Certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [Certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md).
 
 2. Installeer op elk apparaat een basiscertificaat (of het tussenliggende CA-certificaat), zodat het apparaat de geldigheid van uw certificeringsinstantie (CA) erkent. Hiervoor maakt en implementeert u een **vertrouwd certificaatprofiel**. Wanneer u dit profiel implementeert, zullen de apparaten die u met Intune beheert, het basiscertificaat aanvragen en ontvangen. U moet voor elk platform een afzonderlijk profiel maken. Het **Vertrouwd certificaatprofiel** is voor deze platforms beschikbaar:
- -  iOS 7.1 en hoger
+ -  iOS 8.0 en hoger
  -  Mac OS X 10.9 en hoger
  -  Android 4.0 en hoger
  -  Windows 8.1 en hoger
@@ -33,7 +33,7 @@ Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi-
 
 3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-Fi, zoals beschreven in [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md). U kunt een **PKCS #12-certificaatprofiel (.pfx)** *of* een **SCEP-certificaatprofiel** maken en implementeren voor apparaten met deze platformen:
 
-  -  iOS 7.1 en hoger
+  -  iOS 8.0 en hoger
   -  Android 4.0 en hoger
   -  Windows 10 (Desktop en Mobile) en hoger
 
@@ -56,6 +56,6 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

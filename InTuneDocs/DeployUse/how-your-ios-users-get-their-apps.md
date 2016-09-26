@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps do
 
 **Niet-beheerde apps**: apps die kunnen worden beheerd via beleid en die niet zijn ingepakt in Intune of waarin de Intune MAM SDK niet is opgenomen. Het toepassingsbeleid kan niet worden toegepast op deze apps.
 
-Het wordt door Apple verboden om line-of-business en beheerder App Store-apps te vermelden in de Bedrijfsportal-app en daarom moeten gebruikers verschillende weergaven openen om al hun apps te vinden. De apps van elke tegel die wordt weergegeven op de pagina Apps van de Bedrijfsportal-app zijn als volgt beschikbaar:
+Het wordt door Apple verboden om LOB- (Line-Of-Business) en beheerde App Store-apps in de bedrijfsportal-app te vermelden. Dit probleem wordt omzeild doordat gebruikers op de volgende wijze met app-tegels in de bedrijfsportal-app voor iOS op één locatie (de bedrijfsportal-website) naar verschillende weergaven worden verwezen voor alle apps:
 
-- De tegel **Bedrijfsapps** verwijst naar een lijst van apps op het tabblad **ALLE** van de [Bedrijfsportal-website](http://portal.manage.microsoft.com).
+- De tegel **Bedrijfsapps** verwees eerder naar alle apps op het tabblad ALLE van de [bedrijfsportal-website](http://portal.manage.microsoft.com). Deze blijft op dezelfde manier werken. De naam van de tegel is gewijzigd in **Alle apps**.
 
-- De tegel **Andere apps** verwijst momenteel naar een weergave in de Bedrijfsportal-app waarin alle apps worden vermeld die van Apple mogen weergegeven in de app. Dit omvat alle apps, met uitzondering van line-of-business en beheerde App Store-apps.
+- De tegel **Andere apps** verwees eerder naar een weergave in de bedrijfsportal-app waarin alle apps worden vermeld die van Apple mogen worden weergegeven in de app. De naam van de tegel is gewijzigd in **Aanbevolen apps**. Wanneer gebruikers op de tegel tikken, gaan ze naar het tabblad AANBEVOLEN van de bedrijfsportal-website.
 
-- De tegel **Categorieën** verwijst momenteel naar een weergave in de Bedrijfsportal-app waarin appcategorieën worden vermeld.
+-  De tegel **Categorieën** verwees eerder naar een weergave in de bedrijfsportal-app waarin app-categorieën worden vermeld. De naam van de tegel is niet gewijzigd, maar de tegel verwijst nu naar het tabblad CATEGORIEËN van de bedrijfsportal-website.
+U vindt [hier](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) bijgewerkte schermafbeeldingen.
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###Zie tevens
@@ -49,6 +49,6 @@ Het wordt door Apple verboden om line-of-business en beheerder App Store-apps te
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

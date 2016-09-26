@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid word
 
 De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbeleid en informatie over hoe niet-compatibele instellingen worden beheerd als het beleid wordt gebruikt met beleid voor voorwaardelijke toegang.
 
---------------
+-----------------------------
 
-|Beleidsinstelling| Windows 8.1 en hoger| Windows Phone 8.1 en hoger| iOS 6.0 en hoger|Android 4.0 en hoger<br/>Samsung KNOX Standard 4.0 of hoger|
+|Beleidsinstelling| Windows 8.1 en hoger| Windows Phone 8.1 en hoger| iOS 8.0 en hoger|Android 4.0 en hoger<br/>Samsung KNOX Standard 4.0 of hoger|
 |-----|----|----|----|----|
 |**Configuratie van pincode of wachtwoord** |Hersteld|Hersteld|Hersteld|In quarantaine|
 |**Apparaatversleuteling**|N.v.t.|Hersteld|Hersteld (door een pincode in te stellen)|In quarantaine|
@@ -43,7 +43,9 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 |**Minimale versie van het besturingssysteem**|In quarantaine|In quarantaine|In quarantaine|In quarantaine|
 |**Maximale versie van het besturingssysteem**|In quarantaine| In quarantaine| In quarantaine| In quarantaine|
 |**Windows-statusverklaring**|Windows 10 en Windows 10 Mobile zijn in quarantaine geplaatst.<br /><br />Deze instelling is niet van toepassing op Windows 8.1.|N.v.t.|N.v.t.|N.v.t.|
---------------
+
+------------------------------
+
 **Hersteld**: naleving wordt afgedwongen door het besturingssysteem van het apparaat (de gebruiker moet bijvoorbeeld een pincode instellen).  Het komt dan nooit voor dat de instelling niet aan de voorwaarden voldoet.
 
 **In quarantaine**: het besturingssysteem van het apparaat dwingt geen naleving af (gebruikers hoeven hun Android-apparaat bijvoorbeeld niet per se te versleutelen). Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:
@@ -62,6 +64,6 @@ De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbe
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
