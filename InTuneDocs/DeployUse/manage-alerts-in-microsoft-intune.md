@@ -25,11 +25,11 @@ Gebruik de werkruimte **Waarschuwingen** in de Intune-beheerconsole om de algeme
 
 ## Actieve waarschuwingen weergeven
 
-Zie de algemene informatie en samenvattingsgegevens over actieve waarschuwingen.
+Bekijk de algemene informatie en samenvattingsgegevens over actieve waarschuwingen.
 
 #### Actieve waarschuwingen weergeven
 
-Voer in de Intune-beheerconsole een van de volgende reeks stappen uit:
+Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
 -  Kies **Systeemoverzicht** **om algemene informatie over waarschuwingen weer te geven**, inclusief de eerste drie waarschuwingen en het totale aantal actieve waarschuwingen. Kies de koppelingen in deze waarschuwingen om meer gedetailleerde informatie weer te geven.
 
@@ -55,7 +55,7 @@ Voer in de Intune-beheerconsole een van de volgende reeks stappen uit:
 
     -   **Ernst**. In deze kolom wordt de ernst van de waarschuwing aangegeven.
 
-## Waarschuwingen op het mededelingenbord
+## Waarschuwingen op het mededelingenbord weergeven
 Waarschuwingen op het mededelingenbord zijn belangrijke servicemededelingen. Ze kunnen informatie geven over een aanstaande service-upgrade, de onderhoudsplanning of de status van een storing.
 
 #### Waarschuwingen op het mededelingenbord weergeven en beheren
@@ -90,7 +90,7 @@ Waarschuwingen die zijn gemarkeerd als gesloten, worden na 90 dagen permanent ve
 
 #### Handmatig een waarschuwing sluiten
 
-Voer in de Intune-beheerconsole een van de volgende reeks stappen uit:
+Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
 - Kies **Waarschuwingen** > **Alle waarschuwingen** **om een waarschuwing te sluiten in de lijst met waarschuwingen**. Selecteer een waarschuwing en kies vervolgens **Waarschuwing sluiten**.
 

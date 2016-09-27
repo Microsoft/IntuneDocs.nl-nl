@@ -36,7 +36,7 @@ Dit is de standaardweergave van het knooppunt **Groepen** in de Intune-beheercon
 
 ![Schermafdruk van de standaardweergave van het knooppunt Groepen in de Intune-beheerconsole](../media/Intune_Planning_Groups_Default_small.png)
 
-Beleidsregels worden toegepast op groepen, waardoor de groepshiërarchie een van uw belangrijkste ontwerpoverwegingen is. Het is belangrijk om te weten dat wanneer u een groep hebt gemaakt, u de bovenliggende groep van die groep niet meer kunt wijzigen. Hoe u uw groepen ontwerpt is van cruciaal belang vanaf het moment dat u de Intune-service in gebruik neemt. Hier worden enkele aanbevolen procedures beschreven voor het ontwerpen van een groepshiërarchie op basis van de behoeften van uw organisatie.
+Beleidsregels worden toegepast op groepen, waardoor de groepshiërarchie een van uw belangrijkste ontwerpoverwegingen is. Het is belangrijk om te weten dat wanneer u een groep hebt gemaakt, u de bovenliggende groep van die groep niet meer kunt wijzigen. Hoe u uw groepen ontwerpt, is van cruciaal belang vanaf het moment dat u de Intune-service in gebruik neemt. Hier worden enkele aanbevolen procedures beschreven voor het ontwerpen van een groepshiërarchie op basis van de behoeften van uw organisatie.
 
 ## Lidmaatschapsregels
 
@@ -44,13 +44,13 @@ Beleidsregels worden toegepast op groepen, waardoor de groepshiërarchie een van
 
     * **Apparaatgroepen**. Deze groepen kunnen zowel computers als mobiele apparaten bevatten. Voordat u een computer aan een groep kunt toevoegen, moet deze worden ingeschreven. Voordat u een mobiel apparaat aan een groep kunt toevoegen, moet uw omgeving zodanig worden geconfigureerd dat het deze mobiele apparaten ondersteunt en moeten de apparaten worden ingeschreven of worden gedetecteerd in Exchange ActiveSync.
 
-    * **Gebruikersgroepen**. Een groep kan gebruikers uit beveiligingsgroepen bevatten. Beveiligingsgroepen kunnen worden gesynchroniseerd met uw exemplaar van Active Directory. Als u deze groepen niet synchroniseert met Active Directory, kunt u deze groepen handmatig maken.
+    * **Gebruikersgroepen**. Een groep kan gebruikers uit beveiligingsgroepen bevatten. Beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Active Directory. Als u niet synchroniseert met Active Directory, kunt u deze groepen handmatig maken.
 
 - Een apparaat of een gebruiker kan tot meer dan één groep behoren.
 
 - Een groep kan leden opnemen en uitsluiten op basis van de volgende lidmaatschapsregels:
 
-    * **Lidmaatschapscriteria**. Dit zijn dynamische regels die door Intune worden uitgevoerd om leden op te nemen of uit te sluiten. Deze criteria maken gebruik van beveiligingsgroepen en andere informatie die wordt gesynchroniseerd met uw lokale exemplaar van Active Directory. Wanneer de beveiligingsgroep of de gegevens veranderen, verandert ook het groepslidmaatschap wanneer u met AD synchroniseert.
+    * **Lidmaatschapscriteria**. Dit zijn dynamische regels die door Intune worden uitgevoerd om leden op te nemen of uit te sluiten. Deze criteria maken gebruik van beveiligingsgroepen en andere informatie die wordt gesynchroniseerd met uw lokale exemplaar van Active Directory. Wanneer de beveiligingsgroep of de gegevens veranderen, verandert ook het groepslidmaatschap wanneer u met Active Directory synchroniseert.
 
     * **Direct lidmaatschap**. Dit zijn statische regels die expliciet leden toevoegen of uitsluiten. De lidmaatschapslijst is statisch.
 
@@ -99,7 +99,7 @@ Beleidsregels worden toegepast op groepen, waardoor de groepshiërarchie een van
  Each time you create a restrictive policy, you'll want to communicate it to your users. After you create the more general groups and policies, pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
 
 ## Ingebouwde groepen
-Intune heeft negen ingebouwde groepen die u niet kunt bewerken of verwijderen: <!--maybe a screen shot would be best?-->
+Intune heeft negen ingebouwde groepen, die u niet kunt bewerken of verwijderen: <!--maybe a screen shot would be best?-->
 
 -   **Alle gebruikers**
     -   Niet-gegroepeerde gebruikers
