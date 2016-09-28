@@ -4,7 +4,7 @@ description: In dit onderwerp vindt u fout- en statuscodes die u kunt gebruiken 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Ophalen van inhoud|Waarschijnlijke oorzaak: de taakstatus 30 geeft aan dat het downloaden van een app door een gebruiker is mislukt.<br /><br />Mogelijke oorzaken hiervoor zijn:<br /><br />De internetverbinding van het apparaat is tijdens het downloaden verbroken.<br /><br />Het certificaat dat voor het apparaat is uitgegeven, is op het moment van de inschrijving mogelijk verlopen.<br /><br />Oplossing:<br /><br />Start op het apparaat in Configuratiescherm de app Bedrijfsapps om te controleren of het apparaatcertificaat niet is verlopen. Als dat wel het geval is, moet u het apparaat opnieuw inschrijven.<br /><br />Controleer of het apparaat verbinding heeft met internet en probeer de app opnieuw te starten.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Downloaden van inhoud is voltooid||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installatie wordt uitgevoerd||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Installatie ​Er is een fout opgetreden|De app kon na het downloaden niet worden geïnstalleerd.<br /><br />Het certificaat voor ondertekening van programmacode waarmee de app is ondertekend, bevindt zich niet op het apparaat.<br /><br />Een framework-afhankelijkheid waarvan de toepassing afhankelijk is, is niet op het apparaat geïnstalleerd.<br /><br />Controleer of het certificaat voor ondertekening van programmacode waarmee de app is ondertekend, aanwezig is op het apparaat en ga bij de beheerder na of alle Windows RT-apparaten die door het bedrijf zijn ingeschreven zo’n certificaat hebben gekregen.<br /><br />Wanneer een ontbrekende structuurafhankelijkheid er de oorzaak van is dat de installatie is mislukt, moet de beheerder de toepassing opnieuw publiceren, waarbij de structuur in het toepassingspakket moet worden opgenomen.<br /><br />Het toepassingspakket dat is gedownload, is geen geldig pakket, is mogelijk beschadigd of misschien niet compatibel met de versie van het besturingssysteem op het apparaat.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Er is een installatiefout opgetreden|De app kon na het downloaden niet worden geïnstalleerd.<br /><br />Het certificaat voor ondertekening van programmacode waarmee de app is ondertekend, bevindt zich niet op het apparaat.<br /><br />Een framework-afhankelijkheid waarvan de toepassing afhankelijk is, is niet op het apparaat geïnstalleerd.<br /><br />Controleer of het certificaat voor ondertekening van programmacode waarmee de app is ondertekend, aanwezig is op het apparaat en ga bij de beheerder na of alle Windows RT-apparaten die door het bedrijf zijn ingeschreven zo’n certificaat hebben gekregen.<br /><br />Wanneer een ontbrekende structuurafhankelijkheid er de oorzaak van is dat de installatie is mislukt, moet de beheerder de toepassing opnieuw publiceren, waarbij de structuur in het toepassingspakket moet worden opgenomen.<br /><br />Het toepassingspakket dat is gedownload, is geen geldig pakket, is mogelijk beschadigd of misschien niet compatibel met de versie van het besturingssysteem op het apparaat.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Installatie voltooid||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Wordt verwijderd||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Er is een fout opgetreden bij het verwijderen||
@@ -127,7 +127,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |-2016314112|0x87D17D00|22000:Ongeldig sleutelgebruik|
 |-2016315105|0x87D1791F|21007:Kan account niet verifiëren|
 |-2016315106|0x87D1791E|21006:Kan certificaat niet ontsleutelen|
-|-2016315107|0x87D1791D|21005:Account niet uniek|
+|-2016315107|0x87D1791D|21005: Account niet uniek (e-mailprofiel bestaat al op apparaat)|
 |-2016315108|0x87D1791C|21007:Kan account niet maken|
 |-2016315109|0x87D1791B|21003:Geen hostnaam|
 |-2016315110|0x87D1791A|21002:Kan niet voldoen aan versleutelingsbeleid van server|
@@ -372,6 +372,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
