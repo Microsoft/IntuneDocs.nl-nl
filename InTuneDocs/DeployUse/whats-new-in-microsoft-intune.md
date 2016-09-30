@@ -2,9 +2,9 @@
 title: Wat is er nieuw? | Microsoft Intune
 description: Ontdek wat er nieuw is in de release van Microsoft Intune van deze maand en in oudere releases
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ Eindgebruikers van apparaten die niet voldoen aan het beleid, moeten hun apparat
 Er is op de startpagina een nieuw meldingenpictogram toegevoegd aan de bedrijfsportal voor Android. Door op dit pictogram te tikken wordt de pagina Meldingen geopend waar de eindgebruikers alle items zien die aandacht vereisen in de bedrijfsportal-app, zoals niet-compatibele apparaten, inschrijvingsupdates en activering van inschrijvingen. Met de iOS-bedrijfsportal-app kunt u de meldingen al zien. Door de introductie van de pagina Meldingen zien gebruikers niet langer de pagina Bedrijfstoegang instellen wanneer zij de bedrijfsportal starten of hervatten als het apparaat al is geregistreerd. Als u uw eigen richtlijnen voor eindgebruikers maakt, is het raadzaam om uw documentatie bij te werken met deze wijziging. Zoek [hier](https://aka.ms/androidcpupdate) naar bijgewerkte schermafbeeldingen.  
 <!---TFS 1095560--->
 
+**Feedback geven in de bedrijfsportal voor Android**</br>
+Er is een nieuw item toegevoegd aan het menu van de bedrijfsportal voor Android. Wanneer u op **Help en Feedback** tikt, ziet u drie acties:
+* Gebruik **Hulp vragen** om problemen met de bedrijfsportal te melden aan uw IT-afdeling. IT maakt een e-mailbericht met behulp van uw e‑mailclient en voegt de logboeken van de bedrijfsportal toe als bijlage. **Hulp vragen** vervangt de functie **Gegevens verzenden** op de pagina **Instellingen**.
+* Gebruik **Feedback geven** om feedback te geven aan het bedrijfsportalteam.
+* Gebruik **Onze app beoordelen** om de bedrijfsportal-app te beoordelen of te recenseren op Google Play.
 
 ### iOS
 **Wijzigingen in de ondersteuning voor de iOS-bedrijfsportal-app**<br/>
@@ -88,7 +93,7 @@ U vindt [hier](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d11
 <!---TFS 1317133--->
 
 **Vragen om de iOS-app voor de Managed Browser te installeren als de IT-professional dat vereist voor een app**<br/>
-Als u hebt geconfigureerd dat webclips alleen worden geopend in Managed Browser en Managed Browser niet is geïnstalleerd op een apparaat, krijgen gebruikers via de Bedrijfsportal-app op het apparaat de instructie om Managed Browser te installeren. Daarna kunnen ze de webclip pas openen. 
+Als u hebt geconfigureerd dat webclips alleen worden geopend in Managed Browser en Managed Browser niet is geïnstalleerd op een apparaat, krijgen gebruikers via de Bedrijfsportal-app op het apparaat de instructie om Managed Browser te installeren. Daarna kunnen ze de webclip pas openen.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Raadpleeg het artikel over [Vorige versies van Intune](previous-intune-releases.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

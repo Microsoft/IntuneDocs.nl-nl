@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of 
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`: ingesteld op **onwaar**. Als dit is ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor de verbinding kan mislukken.
+> `<protected>false</protected>`moet worden ingesteld op **onwaar**. Als dit wordt ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor de verbinding kan mislukken.
 > 
 >  `<hex>53534944</hex>` moet worden ingesteld op de hexadecimale waarde `<name><SSID of wifi profile></name>`.
+>  Windows 10-apparaten kunnen ten onrechte de fout *0x87D1FDE8 Doorvoeren is mislukt* retourneren, maar worden wel ingericht met het profiel.
 
     <!--
     <Name of wifi profile> = Name of profile
