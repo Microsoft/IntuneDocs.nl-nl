@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ Dit onderwerp bevat suggesties voor het oplossen van problemen met de registrati
 
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
--   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -306,6 +306,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

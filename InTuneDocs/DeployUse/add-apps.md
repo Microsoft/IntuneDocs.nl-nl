@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Apps op basis van externe koppelingen worden niet opgeslagen in de Intune-cloudo
 U kunt beheerde iOS-apps gebruiken om gratis iOS-apps uit de App Store te beheren en implementeren. U kunt ook beheerde iOS-apps gebruiken om [Mobile Application Management-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) aan [compatibele apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) te koppelen en hun status controleren in de beheerconsole.<br /><br />Beheerde iOS-apps worden niet opgeslagen in uw Intune-cloudopslag.
 
 > [!TIP]
-> Opties voor mobiele apparaten worden pas beschikbaar wanneer u de [MDM-instantie](get-ready-to-enroll-devices-in-microsoft-intune.md) hebt ingesteld op Intune.
+> Opties voor mobiele apparaten worden pas beschikbaar wanneer u de [MDM-instantie](prerequisites-for-enrollment.md) hebt ingesteld op Intune.
 
 ## Uitgever van Microsoft Intune-software
 De Uitgever van Microsoft Intune-software wordt gestart wanneer u apps aan de Intune-beheerconsole toevoegt of hierin wijzigt. Vanuit de Uitgever selecteert en configureert u een type software-installatieprogramma dat een van de volgende dingen doet:
@@ -82,6 +82,6 @@ U moet apps aan de Intune-console toevoegen voordat u ze kunt implementeren. U k
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

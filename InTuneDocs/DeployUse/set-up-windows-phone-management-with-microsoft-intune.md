@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d88405e913fe61cef2c297f9d50408e10674cf3f
 
 
 ---
@@ -33,7 +33,7 @@ Als Intune-beheerder kunt u de registratie en het beheer voor Windows 10 Mobile-
 ## Registratie via de bedrijfsportal-app
 U kunt toestaan dat gebruikers de Intune-bedrijfsportal-app op hun apparaat installeren en hun apparaat via de app registreren. Door een DNS CNAME te maken, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een servernaam te hoeven opgeven. Als u Windows Phone 8.0-apparaten beheert of de bedrijfsportal voor Windows Phone-apparaten moet implementeren, moet u bovendien de bedrijfsportal-app downloaden en ondertekenen. Zie [Windows Phone 8.0-beheer instellen](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
-1.  **Intune instellen**<br>Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) op **Microsoft Intune** en MDM in te stellen.
+1.  **Intune instellen**<br>Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](prerequisites-for-enrollment.md#set-mobile-device-management-authority) op **Microsoft Intune** en MDM in te stellen.
 
 2.  **CNAME-records maken** (optioneel)<br>Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleid naar manage.microsoft.com. Als er meer dan één gecontroleerd domein is, maakt u een CNAME-record voor elk domein. De CNAME-resourcerecords moeten de volgende informatie bevatten:
 
@@ -65,6 +65,6 @@ Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt imple
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

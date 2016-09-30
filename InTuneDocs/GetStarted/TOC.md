@@ -11,6 +11,12 @@
 ### [Gebruik van netwerkbandbreedte](network-bandwidth-use.md)
 ### [Aangepaste domeinnamen](domain-names-for-microsoft-intune.md)
 
+## [Kiezen hoe u apparaten beheert](choose-how-to-manage-devices.md)
+### [Beheermogelijkheden voor geregistreerde apparaten](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Mogelijkheden voor de Intune-pc-softwareclient](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [Migreren naar Intune](migrate-to-intune.md)
+
 ## [Snelstartgids voor Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Aanmelden bij Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Een aangepaste domeinnaam configureren](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [Mobiele apparaten inschrijven en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](post-configuration-tasks.md)
 
-## [Kiezen hoe u apparaten beheert](choose-how-to-manage-devices.md)
-### [Beheermogelijkheden voor geregistreerde apparaten](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Mogelijkheden voor de Intune-pc-softwareclient](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Implementatiefasen voor Intune-implementaties](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Projectbereik](project-scope.md)
 ### [Testen van het concept](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [Bewerkingen en onderhoud](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [Wat is er nieuw](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Implementeren en gebruiken](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Apps ontwikkelen en aanpassen](/intune/develop/intune-app-sdk)
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
