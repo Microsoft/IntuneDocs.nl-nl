@@ -31,7 +31,7 @@ Als u gegevenslogboeken naar uw IT-beheerder wilt verzenden om hulp te krijgen b
 
 2.  Sluit uw Android-apparaat met een USB-kabel op een computer aan.
 
-3.  Zoek op de computer naar een map met de naam van uw telefoon. Zoek in die map naar &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.\.
+3.  Zoek op de computer naar een map met de naam van uw telefoon. Zoek in die map naar &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
 4.  Voeg alle bestanden toe aan een e-mailbericht en verzend dit naar de IT-beheerder.
 
