@@ -1,5 +1,5 @@
-Voor meer informatie over hoe de toegankelijkheidstechnologie voor computers het leven van mensen met een handicap gemakkelijker kan maken, kunt u de [Microsoft-website over toegankelijkheid](http://go.microsoft.com/fwlink/?LinkId=8431) bezoeken..
+Zie [de website Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) voor meer informatie over hoe de toegankelijkheidstechnologie voor computers het leven van mensen met een handicap gemakkelijker kan maken.
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 
