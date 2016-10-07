@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 Dit onderwerp bevat informatie over het controleren op problemen na de configuratie van Mobile Application Management (MAM). Deze informatie is van toepassing op MAM-beleid in de Azure-portal.
 
 ### Controleren op symptomen
-Gebruikers melden waarschijnlijk geen problemen, omdat MAM een hulpprogramma voor gegevensbeveiliging is. Als er een probleem is met de MAM-configuratie, heeft de gebruiker onbeperkte toegang zoals ook het geval is zonder MAM, en weet de gebruiker niet dat er een probleem is. Daarom raden wij aan dat u de MAM-configuratie valideert door uw MAM-beleid te testen met een kleine groep gebruikers die de MAM-beperkingen bewust kunnen testen. 
+Gebruikers melden waarschijnlijk geen problemen, omdat MAM een hulpprogramma voor gegevensbeveiliging is. Als er een probleem is met de MAM-configuratie, heeft de gebruiker onbeperkte toegang zoals ook het geval is zonder MAM, en weet de gebruiker niet dat er een probleem is. Daarom raden wij aan dat u de MAM-configuratie valideert door uw MAM-beleid te testen met een kleine groep gebruikers die de MAM-beperkingen bewust kunnen testen.
 
 
-### Wat u moet controleren 
+### Wat u moet controleren
 
 Als blijkt dat uw MAM-beleid niet werkt zoals verwacht, is het raadzaam het volgende te controleren:
 
@@ -40,7 +40,7 @@ Als blijkt dat uw MAM-beleid niet werkt zoals verwacht, is het raadzaam het volg
 
 2. Kies een gebruiker uit de lijst of zoek een gebruiker en kies vervolgens **Gebruiker selecteren**. Boven aan de kolom **App-rapportage** ziet u of de gebruiker een licentie voor MAM heeft. Daaronder ziet u of de gebruiker een licentie voor O365 heeft en wat de app-status voor alle apparaten van de gebruiker is.
 
-![App-status voor MAM](..\media\ts-mam-use-apps.png) 
+![App-status voor MAM](..\media\ts-mam-user-apps.png) 
 
 ### Wat u moet doen
 Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
@@ -57,6 +57,6 @@ Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

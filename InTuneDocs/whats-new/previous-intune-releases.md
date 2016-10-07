@@ -2,7 +2,7 @@
 title: Vorige versies | Microsoft Intune
 description: 
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3206634884807743576f2d9dc1ca17b6bbbc9cc6
-ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
+ms.sourcegitcommit: ffbb26f30c7801789a47d57ffed00696f5e6d81a
+ms.openlocfilehash: 11e90ce994d17d9dcc62edba775dd0ab8110414e
 
 
 ---
@@ -30,7 +30,7 @@ Voor apparaten met supervisie met iOS 9.3 of hoger kunt u de lijst met verborgen
 - Een lijst opstellen met apps die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
 - Een lijst opstellen met apps die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
-De apps die u kunt opgeven zijn zowel apps die u hebt geïmplementeerd als de ingebouwde iOS-apps, zoals Berichten en Notities. Zie [Instellingen voor iOS-beleid in Microsoft Intune]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune) voor meer informatie.
+De apps die u kunt opgeven zijn zowel apps die u hebt geïmplementeerd als de ingebouwde iOS-apps, zoals Berichten en Notities. Zie [Instellingen voor iOS-beleid in Microsoft Intune]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune) voor meer informatie.
 <!---TFS 1279009 checked--->
 ### Beleid voor toegestane en geblokkeerde apps voor Samsung KNOX-apparaten
 U kunt nu een aangepast beleid voor Samsung KNOX-apparaten configureren, waarmee u het volgende kunt maken:
@@ -38,7 +38,7 @@ U kunt nu een aangepast beleid voor Samsung KNOX-apparaten configureren, waarmee
 - Een lijst met apps die gebruikers van het apparaat kunnen installeren uit de Google Play Store. Geen andere apps kunnen worden geïnstalleerd uit de Store.
 
 Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
-Zie [Aangepaste beleidsregels gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten]( custom-policy-to-allow-and-block-samsung-knox-apps.md) voor meer informatie.
+Zie [Aangepaste beleidsregels gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps) voor meer informatie.
 <!---TFS 1311629 checked --->
 ### Nieuwe apps die compatibel zijn met de beleidsregels van Mobile Application Management (MAM)
 De app Yammer voor [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) en [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is nu compatibel met [de Intune MAM-beleidsregels (Mobile Application Management)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), ongeacht of het apparaat is ingeschreven of niet.
@@ -55,7 +55,7 @@ Met het uitbrengen van de nieuwe RMS-app voor delen, worden de volgende Intune-v
 - Intune PDF-viewer
 - Intune-afbeeldingsviewer voor Android van Google Play
 
-In plaats van de viewer-apps van Intune kunt u beter de nieuwe [Rights Management-app (RMS sharing) voor Android](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app) gebruiken, zodat u één app in plaats van drie afzonderlijke apps kunt implementeren om veilig bedrijfsbestanden op Android-apparaten te bekijken. Als de Intune-viewer-app niet meer wordt ondersteund, wordt deze verwijderd uit de Google Store en zal deze niet meer beschikbaar zijn voor toekomstig gebruik.
+In plaats van de viewer-apps van Intune kunt u beter de nieuwe [Rights Management-app (RMS sharing) voor Android](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app) gebruiken, zodat u één app in plaats van drie afzonderlijke apps kunt implementeren om veilig bedrijfsbestanden op Android-apparaten te bekijken. Als de Intune-viewer-app niet meer wordt ondersteund, wordt deze verwijderd uit de Google Store en zal deze niet meer beschikbaar zijn voor toekomstig gebruik.
 
 ## Apparaatbeheer
 ### Android 7.0-ondersteuning
@@ -159,7 +159,7 @@ Intune heeft de maximaal configureerbare limiet voor apparaatinschrijvingen verh
 <!---TFS 1289896 --->
 
 #### TeamViewer-integratie voor Windows-pc's met de Intune-clientsoftware
-Dankzij de integratie van [TeamViewer](https://www.teamviewer.com) voor Windows-pc's die worden beheerd met de Intune-client kunt u, ter ondersteuning van uw helpdeskafdeling, sessies voor hulp op afstand met Windows-pc's uitvoeren. Dit is van toepassing op Windows 7, 8, 8.1 en 10. Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient voor meer informatie](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+Dankzij de integratie van [TeamViewer](https://www.teamviewer.com) voor Windows-pc's die worden beheerd met de Intune-client kunt u, ter ondersteuning van uw helpdeskafdeling, sessies voor hulp op afstand met Windows-pc's uitvoeren. Dit is van toepassing op Windows 7, 8, 8.1 en 10. Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient voor meer informatie](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 <!---TFS 1284856--->
 
 ### Updates voor de bedrijfsportal
@@ -185,7 +185,7 @@ Gebruik alleen DEM-accounts wanneer gebruikersloze registratie voor gedeelde app
 <!---TFS 1233681--->
 
 ### Wijziging van de namen voor Windows-functies
-- [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) is nu bekend als **Windows Hello voor Bedrijven**.
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) is nu bekend als **Windows Hello voor Bedrijven**.
 - [Ondernemingsgegevensbescherming](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) is nu bekend als **Windows Information Protection**.
 
 ## Juni 2016
@@ -209,10 +209,10 @@ Servicestatusgegevens voor Intune is verplaatst naar een centrale locatie met an
     * Moeten voldoen aan geïmplementeerd Intune-nalevingsbeleid
 
  Eindgebruikers van niet-compatibele apparaten wordt gevraagd zich te registreren en nalevingsproblemen op te lossen om toegang te krijgen.
-- **Voorwaardelijke toegang voor de browser.** U kunt een beleid voor voorwaardelijke toegang instellen voor [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md) en [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md), zodat deze alleen toegankelijk zijn via ondersteunde webbrowsers op beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die proberen zich met iOS- en Android-apparaten aan te melden bij Outlook Web Access (OWA) en SharePoint-sites, wordt gevraagd hun apparaat te registreren bij Intune en eventuele problemen met de compatibiliteit op te lossen. Hierna kan de aanmelding worden voltooid.
+- **Voorwaardelijke toegang voor de browser.** U kunt een beleid voor voorwaardelijke toegang instellen voor [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) en [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune), zodat deze alleen toegankelijk zijn via ondersteunde webbrowsers op beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die proberen zich met iOS- en Android-apparaten aan te melden bij Outlook Web Access (OWA) en SharePoint-sites, wordt gevraagd hun apparaat te registreren bij Intune en eventuele problemen met de compatibiliteit op te lossen. Hierna kan de aanmelding worden voltooid.
 <!---TFS 1175844--->
 
-- **Dynamics CRM Online biedt ondersteuning voor voorwaardelijke toegang.** U kunt beleid voor voorwaardelijke toegang instellen voor [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md), zodat dit alleen toegankelijk is voor beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die zich op iOS en Android willen aanmelden bij de mobiele app Dynamics CRM, moeten zich registreren bij Intune en eventuele problemen met de naleving oplossen voordat de aanmelding wordt voltooid.
+- **Dynamics CRM Online biedt ondersteuning voor voorwaardelijke toegang.** U kunt beleid voor voorwaardelijke toegang instellen voor [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune), zodat dit alleen toegankelijk is voor beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die zich op iOS en Android willen aanmelden bij de mobiele app Dynamics CRM, moeten zich registreren bij Intune en eventuele problemen met de naleving oplossen voordat de aanmelding wordt voltooid.
 <!---TFS1295358--->
 
 ##Updates voor de E-bedrijfsportal
@@ -249,9 +249,9 @@ Lees [dit blogbericht](https://blogs.technet.microsoft.com/microsoftintune/2016/
 
 
 ### Appbeheer
-- **MAM SDK: ondersteuning voor configuratie van de lengte van de pincode.** Net als bij pincodes voor apparaten het geval is, kunt u ook voor MAM-apps de lengte van de pincode opgeven. Hiervoor moeten eindgebruikers voldoen aan de nieuwe beperkingen die u instelt. Ze zien dan een enigszins gewijzigd pincodescherm, waarin de langere code kan worden ingevoerd. Zie [MAM-beleidsinstellingen voor Android](android-mam-policy-settings.md) en [MAM-beleidsinstellingen voor iOS](ios-mam-policy-settings.md) voor meer informatie.
+- **MAM SDK: ondersteuning voor configuratie van de lengte van de pincode.** Net als bij pincodes voor apparaten het geval is, kunt u ook voor MAM-apps de lengte van de pincode opgeven. Hiervoor moeten eindgebruikers voldoen aan de nieuwe beperkingen die u instelt. Ze zien dan een enigszins gewijzigd pincodescherm, waarin de langere code kan worden ingevoerd. Zie [MAM-beleidsinstellingen voor Android](/intune/deploy-use/android-mam-policy-settings) en [MAM-beleidsinstellingen voor iOS](/intune/deploy-use/ios-mam-policy-settings) voor meer informatie.
 
-- **Skype voor Bedrijven voor iOS en Android.** U kunt Skype voor Bedrijven nu gebruiken met [MAM zonder inschrijvingsbeleid](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md). Zodra gebruikers zich aanmelden, wordt het MAM-beleid toegepast.
+- **Skype voor Bedrijven voor iOS en Android.** U kunt Skype voor Bedrijven nu gebruiken met [MAM zonder inschrijvingsbeleid](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Zodra gebruikers zich aanmelden, wordt het MAM-beleid toegepast.
 
 - **Nieuwe beschikbare apps voor beheer met MAM-beleid.** De Microsoft Word-, Excel- en PowerPoint-apps voor Android kunnen nu worden gekoppeld aan MAM-beleid op apparaten die niet zijn geregistreerd bij Intune. Ga voor de volledige lijst met ondersteunde apps naar de galerie met mobiele toepassingen van Microsoft Intune op de pagina [Microsoft Intune-toepassingen van partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -305,7 +305,7 @@ Met de Intune-meldingsregels wordt gedefinieerd wie een e-mailwaarschuwing ontva
 Al deze functies worden ook ondersteund voor hybride klanten (Configuration Manager geïntegreerd met Intune).
 ### Appbeheer
 - **Naleving van beleid door MAM-gebruikers.**
-U kunt nu de [status](monitor-mobile-app-management-policies-with-Microsoft-Intune.md) van uw beleid voor toepassingsbeheer bekijken voor gebruikers in uw AAD-tenant (Azure Active Directory). Dit omvat:
+U kunt nu de [status](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) van uw beleid voor toepassingsbeheer bekijken voor gebruikers in uw AAD-tenant (Azure Active Directory). Dit omvat:
    - Apparaten
    - Apps op het apparaat
 
@@ -317,7 +317,7 @@ U kunt nu de [status](monitor-mobile-app-management-policies-with-Microsoft-Intu
 
 
 - **MAM-besturingselementen om te voorkomen dat Outlook-contactpersonen worden gesynchroniseerd (Android).**
-Er is een nieuwe instelling beschikbaar voor [Mobile Application Management](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) zonder apparaatregistratie. Met deze instelling kunt u voorkomen dat een toepassing contactpersonen synchroniseert met het systeemeigen adresboek op Android-apparaten. Wanneer deze instelling is ingeschakeld, kunnen doeltoepassingen niet langer contactpersonen in het systeemeigen adresboek opslaan. Wanneer deze instelling is uitgeschakeld, kunnen doeltoepassingen wel contactpersonen in het systeemeigen adresboek opslaan. Wanneer u [een apparaat of app op afstand wist](wipe-managed-company-app-data-with-Microsoft-Intune.md), worden de contactpersonen verwijderd die al in het systeemeigen adresboek zijn opgeslagen. Deze nieuwe instelling wordt in eerste instantie ondersteund door de Outlook-toepassing op Android-apparaten.
+Er is een nieuwe instelling beschikbaar voor [Mobile Application Management](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) zonder apparaatregistratie. Met deze instelling kunt u voorkomen dat een toepassing contactpersonen synchroniseert met het systeemeigen adresboek op Android-apparaten. Wanneer deze instelling is ingeschakeld, kunnen doeltoepassingen niet langer contactpersonen in het systeemeigen adresboek opslaan. Wanneer deze instelling is uitgeschakeld, kunnen doeltoepassingen wel contactpersonen in het systeemeigen adresboek opslaan. Wanneer u [een apparaat of app op afstand wist](/intune/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), worden de contactpersonen verwijderd die al in het systeemeigen adresboek zijn opgeslagen. Deze nieuwe instelling wordt in eerste instantie ondersteund door de Outlook-toepassing op Android-apparaten.
 
 ### Apparaatbeheer
 - **Nummerherkenning voor apparaten die bedrijfseigendom zijn.** Telefoons die zijn aangemerkt als bedrijfseigendom, worden nu aangeduid met hun volledige telefoonnummer wanneer u bijvoorbeeld een inventarisrapport voor mobiele apparaten uitvoert. Telefoonnummers voor BYOD-apparaten worden nog steeds gemaskeerd met ****, waarbij alleen de laatste 4 cijfers worden weergegeven.
@@ -377,7 +377,7 @@ Met uitzondering van de update voor het algemene configuratiebeleid voor Windows
 
 ### Appbeheer
 
-- **Profiteren van iOS 'Open-in'-beheer voor apparaten die zijn ingeschreven bij een externe MDM-oplossing**. U kunt uw externe MDM-leverancier (Mobile Device Management) gebruiken om te profiteren van iOS 'Open-in'-beheer. U kunt de beperkingen in de configuratieprofielinstellingen configureren en de app implementeren via [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
+- **Profiteren van iOS 'Open-in'-beheer voor apparaten die zijn ingeschreven bij een externe MDM-oplossing**. U kunt uw externe MDM-leverancier (Mobile Device Management) gebruiken om te profiteren van iOS 'Open-in'-beheer. U kunt de beperkingen in de configuratieprofielinstellingen configureren en de app implementeren via [Gegevensoverdracht tussen iOS-apps beheren](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune).
 
      Deze methode biedt twee belangrijke voordelen:
 
@@ -388,22 +388,22 @@ Met uitzondering van de update voor het algemene configuratiebeleid voor Windows
 - **De Microsoft Outlook-app met MAM-beleid beheren voor apparaten die niet zijn ingeschreven in Intune** U kunt nu de Microsoft Outlook-app beheren op apparaten die niet zijn ingeschreven in Intune met het Intune MAM-beleid. De bijgewerkte Microsoft Outlook-app met MAM-mogelijkheden is beschikbaar voor zowel [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8)- als [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook)-apparaten. Volg de instructies in het onderwerp [Beleid voor Mobile App Management maken en implementeren](https://technet.microsoft.com/library/mt627829.aspx) om MAM-beleid te maken.  
 
 
-- **Configuratiebeleid voor mobiele apps biedt u meer flexibiliteit om gebruikersdetails voor iOS-apps op te geven** U kunt gebruikersinstellingen opgeven die een iOS-app mogelijk nodig heeft wanneer deze wordt geopend. U kunt bijvoorbeeld een netwerkpoort of een gebruikersnaam opgeven. Zie [iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md) voor meer informatie.
+- **Configuratiebeleid voor mobiele apps biedt u meer flexibiliteit om gebruikersdetails voor iOS-apps op te geven** U kunt gebruikersinstellingen opgeven die een iOS-app mogelijk nodig heeft wanneer deze wordt geopend. U kunt bijvoorbeeld een netwerkpoort of een gebruikersnaam opgeven. Zie [iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) voor meer informatie.
 
 
 - **Adobe Reader voor Microsoft Intune implementeren op met Intune beheerde iOS-apparaten in uw onderneming** De Adobe Reader-app voor iOS kan nu worden beheerd op ingeschreven apparaten met het Intune Mobile Application Management-beleid.
 
-- **Ervoor zorgen dat geïmplementeerde webclips worden geopend in Managed Browser** U kunt doelwebclips implementeren op iOS- en Android-apparaten die alleen kunnen worden geopend met behulp van Managed Browser. U implementeert bijvoorbeeld koppelingen naar bedrijfsbronnen via de bedrijfsportal, en wanneer gebruikers naar de koppelingen navigeren, worden deze rechtstreeks in Managed Browser geopend zodat er sprake is van beveiliging via MAM-beleid. Zie [Apps implementeren](deploy-apps.md) voor meer informatie.
+- **Ervoor zorgen dat geïmplementeerde webclips worden geopend in Managed Browser** U kunt doelwebclips implementeren op iOS- en Android-apparaten die alleen kunnen worden geopend met behulp van Managed Browser. U implementeert bijvoorbeeld koppelingen naar bedrijfsbronnen via de bedrijfsportal, en wanneer gebruikers naar de koppelingen navigeren, worden deze rechtstreeks in Managed Browser geopend zodat er sprake is van beveiliging via MAM-beleid. Zie [Apps implementeren](/intune/deploy-use/deploy-apps) voor meer informatie.
 
 
-- **Zoeken, beheren en distribueren van Windows Store voor Bedrijven-apps voor Windows 10-apparaten via de Intune-beheerconsole** Ondersteuning voor Windows Store voor Bedrijven is beschikbaar in Intune voor het helpen zoeken, beheren en distribueren van apps voor de Windows 10-apparaten die u beheert. In Windows Store voor Bedrijven kunt u het proces voor het implementeren en bewaken van deze apps beheren via de Intune-beheerconsole: dezelfde console die u gebruikt voor het beheren van uw andere apps. Windows Store voor Bedrijven beheert met name de inhoud en licenties van online gelicentieerde apps. Zie [Manage apps you purchased from the Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) (Apps beheren die u hebt aangeschaft in Windows Store voor Bedrijven) voor meer informatie.
+- **Zoeken, beheren en distribueren van Windows Store voor Bedrijven-apps voor Windows 10-apparaten via de Intune-beheerconsole** Ondersteuning voor Windows Store voor Bedrijven is beschikbaar in Intune voor het helpen zoeken, beheren en distribueren van apps voor de Windows 10-apparaten die u beheert. In Windows Store voor Bedrijven kunt u het proces voor het implementeren en bewaken van deze apps beheren via de Intune-beheerconsole: dezelfde console die u gebruikt voor het beheren van uw andere apps. Windows Store voor Bedrijven beheert met name de inhoud en licenties van online gelicentieerde apps. Zie [Manage apps you purchased from the Windows Store for Business](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) (Apps beheren die u hebt aangeschaft in Windows Store voor Bedrijven) voor meer informatie.
 
 
 ### Apparaatbeheer
-- **Distributie van PFX-certificaten voor iOS-apparaten** Intune-beheerders kunnen iOS PFX-certificaten maken en implementeren voor Wi-Fi-, e-mail- en VPN-verificatie op iOS-apparaten. Deze functie is al beschikbaar voor Android- en Windows 10-apparaten. Zie [Toegang tot bedrijfsbronnen inschakelen met behulp van certificaatprofielen](secure-resource-access-with-certificate-profiles.md) voor meer informatie.
+- **Distributie van PFX-certificaten voor iOS-apparaten** Intune-beheerders kunnen iOS PFX-certificaten maken en implementeren voor Wi-Fi-, e-mail- en VPN-verificatie op iOS-apparaten. Deze functie is al beschikbaar voor Android- en Windows 10-apparaten. Zie [Toegang tot bedrijfsbronnen inschakelen met behulp van certificaatprofielen](/intune/deploy-use/secure-resource-access-with-certificate-profiles) voor meer informatie.
 
 
-- **Apps en beleid toepassen op verschillende apparaatgroepen op basis van de selectie van de gebruikerscategorie** Intune-beheerders kunnen nu aangepaste apparaatcategorieën definiëren waaruit gebruikers tijdens de registratie kunnen selecteren. Beheerders kunnen bijvoorbeeld hun gebruikers laten opgeven of ze een apparaat registreren dat gebruikt wordt voor de kassa, de vrachtwagen of het magazijn. Afhankelijk van de geselecteerde categorie wordt het apparaat lid van een Intune-apparaatgroep die kan worden gebruikt voor het implementeren van verschillende apps en beleidsregels voor het ingeschreven apparaat. Zie [Categorize devices with device group mapping](categorize-devices-with-device-group-mapping-in-microsoft-intune.md) (Apparaten categoriseren met apparaatgroeptoewijzing) voor meer informatie.
+- **Apps en beleid toepassen op verschillende apparaatgroepen op basis van de selectie van de gebruikerscategorie** Intune-beheerders kunnen nu aangepaste apparaatcategorieën definiëren waaruit gebruikers tijdens de registratie kunnen selecteren. Beheerders kunnen bijvoorbeeld hun gebruikers laten opgeven of ze een apparaat registreren dat gebruikt wordt voor de kassa, de vrachtwagen of het magazijn. Afhankelijk van de geselecteerde categorie wordt het apparaat lid van een Intune-apparaatgroep die kan worden gebruikt voor het implementeren van verschillende apps en beleidsregels voor het ingeschreven apparaat. Zie [Categorize devices with device group mapping](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) (Apparaten categoriseren met apparaatgroeptoewijzing) voor meer informatie.
 
 ### Wijzigingen en updates voor de Microsoft-bedrijfsportal
 In deze versie zijn de volgende wijzigingen aangebracht aan de bedrijfsportal.
@@ -447,9 +447,9 @@ In deze versie zijn de volgende wijzigingen aangebracht aan de bedrijfsportal.
     * Beveiligd opstarten
     * Code-integriteit
 
-    Lees [Inleiding in nalevingsbeleid voor apparaten voor Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) voor meer informatie over de apparaatstatusinstelling, verzamelde gegevenspunten en het statusverklaringsrapport. In [HAS-servicedetails](https://msdn.microsoft.com/en-us/library/dn934876.aspx) wordt de service gedetailleerd besproken.
+    Lees [Inleiding in nalevingsbeleid voor apparaten voor Microsoft Intune](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) voor meer informatie over de apparaatstatusinstelling, verzamelde gegevenspunten en het statusverklaringsrapport. In [HAS-servicedetails](https://msdn.microsoft.com/en-us/library/dn934876.aspx) wordt de service gedetailleerd besproken.
 
-* **Windows 10 Passport for Work-beleid en certificaatbeheer** Intune biedt de mogelijkheid van [integratie met Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). Dit is een alternatieve aanmeldingsmethode voor Windows 10 waarbij Active Directory of een Azure Active Directory-account wordt gebruikt ter vervanging van een wachtwoord, smartcard of virtuele smartcard. Met Passport kan de gebruiker zich aanmelden met een gebaar in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
+* **Windows 10 Passport for Work-beleid en certificaatbeheer** Intune biedt de mogelijkheid van [integratie met Microsoft Passport for Work](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune). Dit is een alternatieve aanmeldingsmethode voor Windows 10 waarbij Active Directory of een Azure Active Directory-account wordt gebruikt ter vervanging van een wachtwoord, smartcard of virtuele smartcard. Met Passport kan de gebruiker zich aanmelden met een gebaar in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
 
 * **VPN voor specifieke apps**U kunt de apps selecteren die automatisch verbinding maken met uw bedrijfsnetwerk via VPN. Maak de lijst met apps wanneer u het VPN-profiel instelt, zoals wordt beschreven in Gebruikers helpen om verbinding met hun werk te maken met behulp van VPN-profielen met Microsoft Intune.
 
@@ -457,10 +457,10 @@ In deze versie zijn de volgende wijzigingen aangebracht aan de bedrijfsportal.
 
 
 ### Apple-VPP (Volume Purchase Program) bijwerken
-Intune kan u nu helpen bij het [beheer van apps die u hebt aangeschaft via Apple-VPP (Volume Purchase Program) voor bedrijven](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). Dit omvat het synchroniseren van licentiegegevens tussen Apple en Intune, en het bijhouden hoeveel exemplaren van elke app u hebt geïmplementeerd.
+Intune kan u nu helpen bij het [beheer van apps die u hebt aangeschaft via Apple-VPP (Volume Purchase Program) voor bedrijven](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune). Dit omvat het synchroniseren van licentiegegevens tussen Apple en Intune, en het bijhouden hoeveel exemplaren van elke app u hebt geïmplementeerd.
 
 ### IMEI-nummers gebruiken om apparaten in bedrijfseigendom te identificeren
-U kunt nu [IMEI-nummers (International Mobile Equipment Identity) importeren](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) voor mobiele-apparaatplatforms met een IMEI-nummer om mobiele apparaten in bedrijfseigendom te identificeren. Wanneer apparaten met geïmporteerde IMEI-nummers zijn ingeschreven in Intune, worden deze gelabeld als bedrijfseigendom, zodat op die apparaten andere beleidsregels kunnen worden toegepast dan op persoonlijke apparaten.
+U kunt nu [IMEI-nummers (International Mobile Equipment Identity) importeren](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) voor mobiele-apparaatplatforms met een IMEI-nummer om mobiele apparaten in bedrijfseigendom te identificeren. Wanneer apparaten met geïmporteerde IMEI-nummers zijn ingeschreven in Intune, worden deze gelabeld als bedrijfseigendom, zodat op die apparaten andere beleidsregels kunnen worden toegepast dan op persoonlijke apparaten.
 
 ### Er zijn nu meer apps compatibel met Intune MAM-beleid
 Aanvullende apps van Microsoft-partners zijn nu compatibel met Intune Mobile Application Management-beleid (MAM) (voor apparaten die worden beheerd door Intune):
@@ -479,6 +479,6 @@ Vanaf februari 2016 wordt Internet Explorer 9 niet meer ondersteund als officië
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
