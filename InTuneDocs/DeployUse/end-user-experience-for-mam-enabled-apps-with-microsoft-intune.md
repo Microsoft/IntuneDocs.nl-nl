@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,37 +140,31 @@ Als u een Android-apparaat gebruikt, ziet u mogelijk een blokkeringsbericht met 
 
 ![Schermafbeelding van het foutbericht en instructies om het account te verwijderen](../media/AppManagement/Android_SwitchUser.png)
 
-##  Mediabestanden weergeven met de Rights Management-app voor delen
-Als u av-, pdf- en afbeeldingsbestanden van uw bedrijf op een Android-apparaat wilt weergeven, gebruikt u de [Microsoft Rights Management-app (RMS-app) voor delen](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+##  Mediabestanden weergeven met de Azure Information Protection-app (voorheen de Rights Management-app voor delen)
+Als u AV-, PDF- en afbeeldingsbestanden van uw bedrijf op een Android-apparaat wilt weergeven, gebruikt u de [Microsoft Information Protection-app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Download deze app in Google Play.  Nadat de app op uw apparaat is geïnstalleerd, start u de app en verifieert u uw identiteit met de referenties van uw bedrijf. Nu moet nu niet-beveiligde en beveiligde bestanden kunnen zien van apps die door ander beleid worden beheerd.
+Download deze app in Google Play.  
 
 De volgende bestandstypen worden ondersteund:
 
 * **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (enhanced AAC+), AAC ELD (enhanced low delay AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Afbeelding:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**pfile**|**tekst**|
 |----|----|
-|Pfile is een algemene 'wrapper'-indeling voor beveiligde bestanden waarmee de versleutelde inhoud en de RMS-licenties worden ingekapseld en die kan worden gebruikt voor het beveiligen van elk bestandstype.|Tekstbestanden, zoals XML, CSV enzovoort, kunnen worden geopend voor weergave in de app, zelfs wanneer ze zijn beveiligd. Bestandstypen: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile is een algemene 'wrapper'-indeling voor beveiligde bestanden waarmee de versleutelde inhoud en de Azure Information Protection-licenties worden ingekapseld en die kan worden gebruikt voor het beveiligen van elk bestandstype.|Tekstbestanden, zoals XML, CSV enzovoort, kunnen worden geopend voor weergave in de app, zelfs wanneer ze zijn beveiligd. Bestandstypen: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Android-apparaten die niet zijn geregistreerd bij Intune**
-
-Voordat u de RMS-app voor delen kunt gebruiken om bestanden weer te geven van andere apps die door Intune worden beheerd, moet u de RMS-app starten en uzelf verifiëren met uw werkaccount.  Wanneer u zich aanmeldt, ziet u het volgende bericht **alleen als u niet over een RMS-licentie beschikt**:
-
-**Verificatie geslaagd: u kunt nu bedrijfsbestanden weergeven, maar uw organisatie is niet ingesteld voor het beveiligen van de bestanden. Neem contact op met de IT-beheerder voor meer informatie.**
-
-U kunt desondanks gewoon de RMS-app voor delen gebruiken om bedrijfsbestanden te bekijken. U kunt nog steeds bedrijfsbestanden openen en weergeven in andere apps die door Intune worden beheerd, en het MAM-beleid blijft van toepassing.  Dit bericht houdt in dat u de aanvullende beveiligingsmogelijkheden van de RMS-app voor delen niet kunt toevoegen.  U moet over een RMS-licentie beschikken om beveiliging aan uw bestanden toe te voegen. Zie [Een bestand beveiligen op een apparaat](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) en [Een bestand beveiligen dat u via e-mail deelt](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email) voor meer informatie over de mogelijkheden voor RMS-bestandsbeveiliging.
 
 
-### Zie ook
+
+### Zie tevens
 [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

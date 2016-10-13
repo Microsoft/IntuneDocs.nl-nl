@@ -13,8 +13,8 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 27d993974d71b34b36cbd3216b83a1303689bf15
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 0abe3a79135a9b6db14502f1132da0bd1537d445
 
 
 ---
@@ -32,7 +32,8 @@ Wanneer een gebruiker in de doelgroep Skype voor Bedrijven Online op zijn appara
 
 **Voordat** u beleid voor voorwaardelijke toegang voor Skype voor Bedrijven Online configureert, moet u:
 - Een **Skype voor Bedrijven Online-abonnement** hebben en een Skype voor Bedrijven Online-licentie toewijzen aan gebruikers.
-- Een abonnement hebben voor de **Enterprise Mobility Suite** of **Azure Active Directory Premium**.
+- Een **abonnement voor Enterprise Mobility + Security of Azure Active Directory Premium** hebben, en moeten de gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie. 
+
 -   [Moderne authenticatie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) voor Skype voor Bedrijven Online.
 -  Al uw eindgebruikers moeten **Skype voor Bedrijven Online** gebruiken. Als u een implementatie van zowel Skype voor Bedrijven Online als een lokale Skype voor Bedrijven hebt, wordt er geen beleid voor voorwaardelijke toegang toegepast op eindgebruikers.
 
@@ -55,7 +56,7 @@ Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgen
 
 ## Beleid voor voorwaardelijke toegang configureren voor Skype voor Bedrijven Online
 
-### Stap 1: Active Directory-beveiligingsgroepen configureren
+### Stap 1: Active Directory-beveiligingsgroepen configureren
 Voordat u begint, moet u Azure Active Directory-beveiligingsgroepen configureren voor het beleid voor voorwaardelijke toegang. U kunt deze groepen configureren in het **Office 365-beheercentrum**. Deze groepen worden gebruikt om gebruikers in of uit te sluiten van het beleid. Wanneer een gebruiker deel uitmaakt van de doelgroep voor het beleid, moet elk apparaat dat hij of zij gebruikt, aan het beleid voldoen om toegang te krijgen tot bronnen.
 
 U kunt twee soorten groepen opgeven die u voor het beleid voor Skype voor Bedrijven kunt gebruiken:
@@ -116,6 +117,6 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: Groepen maken en beheren met behulp van de werkruimte Groepen.
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ In dit onderwerp wordt beschreven hoe u groepen maakt in Intune. Het onderwerp b
 
 >[!IMPORTANT]
 >
->Als u de werkruimte Groepen opent in de Intune-portal en een koppeling naar de portal van Azure Active Directory (Azure AD) ziet staan, maakt u al gebruik van de *nieuwe* Azure AD-beveiligingsgroepen voor groepsbeheer in Intune. Dit wordt beschreven in [Kennisgeving over verbeteringen die binnenkort worden aangebracht in de manier waarop beheerders groepen kunnen beheren](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Klik op de koppeling naar de Azure AD-portal om uw groepen te maken en beheren. Zie [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/) (Toegang tot bronnen beheren met Azure Active Directory-groepen) voor meer informatie over werken met Azure AD-beveiligingsgroepen.
+>Als u de werkruimte Groepen opent in de Intune-portal en een koppeling naar de portal van Azure Active Directory (Azure AD) ziet staan, maakt u al gebruik van de *nieuwe* Azure AD-beveiligingsgroepen voor groepsbeheer in Intune. Dit wordt beschreven in [Kennisgeving over verbeteringen die binnenkort worden aangebracht in de manier waarop beheerders groepen kunnen beheren](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Klik op de koppeling naar de Azure AD-portal om uw groepen te maken en beheren.
+>
+>![Schermafbeelding van de koppeling naar Azure-groepsbeheer](../media/groups-link-azure.png) 
 >
 >Als de koppeling naar de Azure AD-portal niet wordt weergegeven, gebruikt u nog steeds de *huidige* methode voor groepsbeheer. Deze wordt beschreven in het onderwerp [Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune).
 
@@ -42,7 +44,7 @@ U merkt nu nog niets van deze wijziging. Maar dit gaat binnenkort gebeuren:
 
 
 ### Wanneer en hoe vindt mijn migratie naar deze nieuwe manier van werken met groepen plaats?
-Voor huidige Intune-klanten wordt de migratie gespreid over een langere periode. De planning voor die migratie wordt momenteel afgerond. Binnen enkele weken wordt dit onderwerp bijgewerkt met meer informatie. U ontvangt bericht van ons voordat u wordt gemigreerd. Als u vragen of opmerkingen hebt over de migratie, kunt u contact opnemen met ons migratieteam op <intunegrps@microsoft.com>.
+Voor huidige Intune-klanten wordt de migratie gespreid over een langere periode. De planning voor die migratie wordt momenteel afgerond. Binnen enkele weken wordt dit onderwerp bijgewerkt met meer informatie. U ontvangt bericht van ons voordat u wordt gemigreerd. Als u vragen of opmerkingen hebt over de migratie, kunt u contact opnemen met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). Zie [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md) (Groepen migreren naar Azure Active Directory) voor details over de manier waarop groepen worden gemigreerd.
 
 ### Wat gebeurt er met mijn bestaande gebruikers- en apparaatgroepen?
  Gebruikersgroepen en apparaatgroepen die u in Intune hebt gemaakt, worden naar Azure AD-beveiligingsgroepen gemigreerd. Standaard Intune-groepen, zoals de groep Alle gebruikers, worden alleen gemigreerd als u deze gebruikt in implementaties ten tijde van de migratie. Voor sommige groepen kan de migratie complexer zijn. U ontvangt bericht als extra stappen zijn vereist voor migratie in uw organisatie.
@@ -202,6 +204,6 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

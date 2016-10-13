@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
-ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
 
 ---
@@ -32,14 +32,11 @@ Wanneer een gebruiker probeert verbinding te maken met een bestand via een onder
 
 ![Diagram dat de beslissingspunten aangeeft die bepalen of een apparaat dat toegang tot SharePoint heeft, wordt geblokkeerd ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->Voorwaardelijke toegang voor pc's en Windows 10 Mobile-apparaten met apps die moderne authenticatie gebruiken, is momenteel niet voor alle klanten van Intune beschikbaar. Als u deze functies al gebruikt, hoeft u geen actie te ondernemen. U kunt deze functies gewoon blijven gebruiken.
-
->Als u nog geen beleid voor voorwaardelijke toegang hebt gemaakt voor pc’s of Windows 10 Mobile voor apps met moderne verificatie, maar u dit wel wilt doen, registreert u zich voor de openbare Azure Active Directory-preview. Deze preview bevat op het apparaat gebaseerde voorwaardelijke toegang voor door Intune beheerde apparaten en Windows-pc’s met gekoppelde domeinen. Lees [dit blogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) voor meer informatie.
 
 **Voordat** u beleid voor voorwaardelijke toegang configureert voor SharePoint Online, moet u:
 - Een **SharePoint Online-abonnement** hebben. Gebruikers moeten bovendien een licentie voor SharePoint Online hebben.
-- Een abonnement hebben voor de **Enterprise Mobility Suite** of **Azure Active Directory Premium**.
+- Een **abonnement voor Enterprise Mobility + Security of Azure Active Directory Premium** hebben, en moeten de gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
+
 
   Om verbinding te maken met de vereiste bestanden, moet het apparaat:
 -   Zijn **ingeschreven** bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of een pc zijn die lid is van een domein.
@@ -61,6 +58,7 @@ Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgen
 
 >[!NOTE]
 >Als u voorwaardelijke toegang voor SharePoint Online inschakelt, raden wij aan het domein in de lijst uit te schakelen zoals staat beschreven in het onderwerp [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
+
 ## Ondersteuning voor mobiele apparaten
 - iOS 8.0 en hoger
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger
@@ -75,7 +73,9 @@ U kunt de toegang tot SharePoint Online beperken als deze service wordt geopend 
 
 ## Ondersteuning voor pc's
 - Windows 8.1 en hoger (mits ingeschreven bij Intune)
-- Windows 7.0 of Windows 8.1 (mits lid van een domein)
+- Windows 7.0, Windows 8.1 of Windows 10 (mits lid van een domein)
+> [!NOTE]
+>Als u voorwaardelijke toegang met Windows 10-pc's wilt gebruiken, moet u deze pc's bijwerken met de Windows 10 Jubileumupdate.
 
   - Pc’s die deel uitmaken van een domein, moeten zodanig worden ingesteld dat deze zich [automatisch registreren](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory.
 AAD DRS wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in hun on-premises Active Directory.
@@ -122,6 +122,10 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> U kunt ook een beleid voor voorwaardelijke toegang maken in de Azure AD-beheerconsole. Met de Azure AD-beheerconsole kunt u beleid voor voorwaardelijke toegang voor het Intune-apparaat maken (aangeduid als het **op apparaten gebaseerd beleid voor voorwaardelijke toegang** in Azure AD), naast ander beleid voor voorwaardelijke toegang zoals Multi-Factor Authentication.  U kunt ook beleid voor voorwaardelijke toegang voor bedrijfsapps van derden instellen, zoals voor Salesforce en Box, dat door Azure AD worden ondersteund. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
+
+
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
 ![Schermafdruk van de pagina met SharePoint Online-beleid](../media/mdm-ca-spo-policy-configuration.png)
 
@@ -136,8 +140,6 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
         Als u **Alle platformen** selecteert, betekent dat dat Azure Active Directory dit beleid toepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing.  Alle platformen moeten worden ingeschreven en voldoen aan de voorwaarden, behalve:
         *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide
         * Niet-ondersteunde platformen, zoals Mac.  Apps met moderne authenticatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
-        >[!TIP]
-        >Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   U vindt meer informatie over het verkrijgen van toegang tot deze functie [in dit blogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Specifieke platforms**
 
@@ -192,6 +194,6 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

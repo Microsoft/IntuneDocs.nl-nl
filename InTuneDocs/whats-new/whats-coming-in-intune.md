@@ -1,10 +1,10 @@
 ---
-title: Binnenkort | Microsoft Intune
+title: De vroege editie | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,105 +14,112 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecf43b38e9593375981770583220d4ce2dfd709f
-ms.openlocfilehash: b5da0aca366a24f2f0ccf62a3661b0b91db9b01a
+ms.sourcegitcommit: a5c4b0f15456a9f24c95954d669a17c63f96a459
+ms.openlocfilehash: 273016d4fe114bbe60e9cebc06e89584c8f91f0b
 
 
 ---
 
-# Binnenkort in Microsoft Intune - augustus
-Deze informatie wordt in zeer beperkte mate onder geheimhoudingsverklaring verstrekt en kan worden gewijzigd. Sommige functies die hier worden vermeld, zullen mogelijk niet beschikbaar zijn op de sluitingsdatum en worden mogelijk beschikbaar gesteld in een latere release. Andere functies worden getest in een proefversie, zodat we zeker weten dat ze in gebruik kunnen worden genomen. Neem bij vragen contact op met uw contactpersoon voor Intune/projectmanagement.
+# Binnenkort in Microsoft Intune - oktober
+De **Vroege editie** bevat een lijst met functies die worden toegevoegd aan toekomstige releases van Microsoft Intune. Deze informatie wordt in zeer beperkte mate onder geheimhoudingsverklaring verstrekt en kan worden gewijzigd. Sommige functies die hier worden vermeld, zullen mogelijk niet beschikbaar zijn op de sluitingsdatum en worden mogelijk beschikbaar gesteld in een latere release. Andere functies worden getest in een proefversie, zodat we zeker weten dat ze in gebruik kunnen worden genomen. Neem bij vragen contact op met uw contactpersoon voor Intune/projectmanagement.
 
 Deze pagina wordt regelmatig bijgewerkt. Kom daarom om de tijd terug om te zien of er nieuws is over wat er binnenkort beschikbaar is.
 
 De volgende wijzigingen worden momenteel ontwikkeld voor Intune. Al deze functies worden uiteindelijk ondersteund voor implementaties voor hybride klanten (Configuration Manager met Intune). Bekijk voor meer informatie over nieuwe hybride functies onze [Wat is er nieuw-pagina voor hybride](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+### Afdrukbeheer voor apps die worden beheerd met MAM-beleid
+U kunt nu voorkomen dat bedrijfsgegevens worden afgedrukt met apps waarop een MAM-beleid van toepassing is. Deze instelling is beschikbaar op de [Azure-portal](..deployuse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) en werkt met zowel [iOS](..deployuse/ios-mam-policy-settings)- als [Android](..deployuse/android-mam-policy-settings)-apparaten.
+<!--TFS 1014328-->
 
-## Appbeheer
-### Verborgen en weergegeven apps voor iOS 9.3
-Voor apparaten onder supervisie met iOS 9.3 of hoger kunt u de lijst met verborgen of weergegeven apps in het algemene configuratiebeleid voor iOS gebruiken om het volgende te doen:
-- Een lijst opstellen met apps die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
-- Een lijst opstellen met apps die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
+### Nieuwe Microsoft Intune-bedrijfsportal voor Windows 10-apparaten
+Microsoft brengt een nieuwe Microsoft Intune-bedrijfsportal voor Windows 10-apparaten uit. Deze app maakt gebruik van de Windows 10 Universal-indeling en biedt gebruikers een bijgewerkte gebruikerservaring in de app zelf, en een identieke gebruikerservaring op alle Windows 10-apparaten (pc en mobiel), met behoud van de functionaliteit die ze momenteel gebruiken.
 
-De apps die u kunt opgeven zijn zowel apps die u hebt geïmplementeerd als de ingebouwde iOS-apps, zoals Berichten en Notities.
-<!---TFS 1279009--->
+Met de nieuwe app kunnen gebruikers van Windows 10-apparaten ook gebruikmaken van aanvullende functies van het platform, zoals eenmalige aanmelding (SSO) en verificatie op basis van certificaten. De app wordt beschikbaar gesteld als een upgrade van de bestaande Windows 8.1-bedrijfsportal en Windows Phone 8.1-bedrijfsportal in de Windows Store.
+<!--TFS 1016502-->
 
-### Beleid voor toegestane en geblokkeerde apps voor Samsung KNOX-apparaten
+### Ondersteuning van Android for Work
 
-U kunt nu een aangepast beleid voor Samsung KNOX-apparaten configureren, waarmee u het volgende kunt maken:
-- Een lijst met apps die niet kunnen worden uitgevoerd op het apparaat. Apps in deze lijst kunnen niet op het apparaat worden geactiveerd, ongeacht of ze daarop zijn geïnstalleerd.
-- Een lijst met apps die gebruikers van het apparaat kunnen installeren uit de Google Play Store. Geen andere apps kunnen worden geïnstalleerd uit de Store.
+Intune is nu onderdeel van het [Android for Work-programma](https://enterprise.google.com/android/partners/). De ondersteuning van Intune voor de functies van het Android for Work-programma wordt met ingang van deze maand geïmplementeerd.
 
-Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
-<!--- For details, see [Use custom policies to allow and block apps for Samsung KNOX devices]( custom-policy-to-allow-and-block-samsung-knox-apps.md)--->
-<!---TFS 1311629 --->
+[Lees de aankondiging van Microsoft over ondersteuning van Intune voor Android for Work](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
-### Nieuwe apps die compatibel zijn met de beleidsregels van Mobile Application Management (MAM)
-De app Yammer voor [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) en [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is compatibel met [de beleidsregels van Intune Mobile Application Management (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), ongeacht of het apparaat is geregistreerd.
+<!---This month, some newly provisioned Intune tenants will start seeing the Android for Work features. We will announce later when existing tenants will begin to see this feature.--->
+<!--TFS 1043303-->
 
-Zie de website [Microsoft Intune-toepassingspartners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) voor een volledige lijst met apps die compatibel zijn met MAM.
-<!--- TFS 1252335 & 1252336--->
+### Compatibiliteit van Android Samsung KNOX met Intune
 
-## Apparaatbeheer
-### Android 7.0-ondersteuning
-Vanaf augustus biedt Intune 'day 0'-ondersteuning voor het toekomstige Android 7.0-besturingssysteem voor mobiele apparaten.
-<!---TFS 1262053--->
-### Google verwijdert het op afstand opnieuw instellen van de wachtwoordcode voor Android 7.0-apparaten
-Google verwijdert de mogelijkheid van IT-beheerders en eindgebruikers om de wachtwoordcode van Android 7.0-apparaten op afstand opnieuw in te stellen. Voorheen konden IT-beheerders op afstand de wachtwoordcode van een gebruiker opnieuw instellen, en konden eindgebruikers hun wachtwoordcodes opnieuw instellen via de bedrijfsportalwebsite.
+Bepaalde modellen van de Samsung Galaxy Ace-telefoon kunnen niet als Samsung KNOX-apparaat worden beheerd door Intune. Wanneer u deze apparaten registreert bij Intune, worden ze beheerd als standaard Android-apparaten.
+De betrokken modelnummers zijn:
 
-## Beheer van groepen
-### Intune-groepen stappen over naar Azure Active Directory-groepen met ingang van september 2016
-Intune is bezig met het creëren van een nieuwe ervaring voor het beheer van groepen die gebruikmaakt van Azure Active Directory (AAD)-beveiligingsgroepen als gebruikers- en apparaatgroepen in Intune. Deze groepen worden gebruikt voor alle groepsbeheer en voor implementatie van beleid en profielen **wanneer wij het nieuwe op Azure gebaseerde Intune-beheerportal introduceren**.
+* SM-G313HU
+* SM-G313HY
+* SM-G313M
+* SM-G313MY
+* SM-G313U
 
-Door deze nieuwe ervaring hoeft u niet langer groepen te dupliceren tussen services, **hebt u toegang tot een aantal nieuwe groepsfuncties van Azure Active Directory Premium (AADP)**, en profiteert u van uitbreidbaarheid met behulp van PowerShell en Graph. Dit zorgt tevens voor een uniforme ervaring voor groepsbeheer voor het gehele beheer van bedrijfsmobiliteit.
+U en uw eindgebruikers hoeven niets te doen.
+Ga voor meer informatie naar de [Samsung KNOX](https://www.samsungknox.com)-website.
 
-Om de overstap naar beveiligingsgroepen mogelijk te maken, wordt de ervaring in de **huidige beheerconsole** ietwat gewijzigd. **Deze wijzigingen, en het gebruik van AAD-beveiligingsgroepen, worden beschreven in de Intune-documentatie**.
+<!--TFS 1173566 iX blurb provided by Barry; requires PM signoff
 
-Voor nieuwe Intune-klanten worden bepaalde **wijzigingen van beveiligingsgroepen eerder doorgevoerd dan voor bestaande klanten**.
+### Multi-factor authentication for Android and iOS enrollment
 
-Naast de wijzigingen in het groepsbeheer, **wordt de volgende functionaliteit afgeschaft**:
-- Uitsluiten van leden of groepen tijdens het maken van een nieuwe groep
-- Groepen van **Niet-gegroepeerde gebruikers** en **Niet-gegroepeerde apparaten**
-- **Groepen beheren** in de rol van servicebeheerder
-- Aangepaste waarschuwingen op basis van groepen voor meldingsregels
-- Draaien met groepen in rapporten
-<!--- TFS 1295329--->
+In addition to Windows 8.1 and later, administrators can now enable multi-factor authentication for Android and iOS devices in the Microsoft Intune Enrollment application. -->    
 
-## Serviceafschaffing
-### Bedrijfsportal-apps voor Windows 8 en Windows Phone 8 worden vanaf september 2016 afgeschaft
-Vanaf oktober 2016 biedt Microsoft Intune geen ondersteuning meer voor Windows 8- en Windows Phone 8-bedrijfsportal-apps. Microsoft Intune biedt dan ook geen ondersteuning meer voor het Windows Phone 8-platform. Als gevolg hiervan kunt u geen Windows Phone 8-apparaten meer registreren of bijwerken. U kunt Windows Phone 8- en Windows 8-apparaten die al zijn geregistreerd blijven beheren. Werk Windows 8- en Windows Phone 8-apparaten bij naar Windows 8.1 en Windows Phone 8.1. Gebruik de bijbehorende bedrijfsportal-apps voor Windows 8.1 en Windows Phone 8.1 om zonder onderbrekingen door te gaan met het distribueren van apps naar deze apparaten.
-<!---TFS 1255391--->
+### De bedrijfsportal-app voor Windows 8 wordt afgeschaft; ondersteuning voor Windows Phone 8 en Windows RT-platformen wordt afgeschaft
+Vanaf oktober 2016 biedt Microsoft Intune geen ondersteuning meer voor de Windows 8-bedrijfsportal. Microsoft Intune biedt dan ook geen ondersteuning meer voor het Windows Phone 8- en Windows RT-platform. Als gevolg hiervan kunt u geen Windows Phone 8- of Windows RT-apparaten meer registreren of bijwerken.
 
-### Meldingsregels voor aangepaste groepen wordt verwijderd
-Met de Intune-meldingsregels wordt gedefinieerd wie een e-mailwaarschuwing ontvangt Intune. Op dit moment kunt u meldingsregels configureren om e-mails te verzenden naar alle gebruikers van apparaten in een Intune-apparaatgroep die u hebt gemaakt. Vanaf juni 2016 vervalt de ondersteuning voor het selecteren van door gebruikers gemaakte groepen als ontvanger.
+U kunt Windows Phone 8-, Windows RT- en Windows 8-apparaten die al zijn geregistreerd blijven beheren. Werk Windows 8- en Windows Phone 8-apparaten bij naar Windows 8.1 en Windows Phone 8.1. Gebruik de bijbehorende bedrijfsportal-apps voor Windows 8.1 en Windows Phone 8.1 om zonder onderbrekingen door te gaan met het distribueren van apps naar deze apparaten.
 
-De voorlopige tijdlijn voor deze wijziging is als volgt:
-- In september 2016 krijgen nieuwe tenants stap 2 van de wizard Meldingsregel maken niet meer te zien. Voor de huidige tenants blijft de situatie ongewijzigd.
-- Rond oktober 2016 krijgen enkele bestaande tenants de wizardoptie voor het selecteren van apparaatgroepen niet meer te zien.
-- Naar verwachting krijgt later geen enkele bestaande tenant de wizardoptie voor het selecteren van apparaatgroepen nog te zien.
+Vanaf november 2016 bieden we geen ondersteuning meer voor de Windows Phone 8-bedrijfsportal.
+<!--TFS 1255391-->
 
-<!---   TFS 1278864--->
-### Wijzigingen in de ondersteuning voor de iOS-bedrijfsportal-app
-In september moeten alle gebruikers van de Microsoft Intune-bedrijfsportal-app voor iOS overstappen naar de nieuwste versie. Nieuwe gebruikers kunnen alleen de nieuwste versie downloaden en bestaande gebruikers moeten bijwerken naar de nieuwe versie. De meest recente versie vereist iOS 8.0 of hoger, zodat apparaten met oudere versies van iOS de bedrijfsportal niet kunnen gebruiken en niet kunnen registreren totdat ze hun apparaat naar hebben bijgewerkt naar iOS 8.0 of hoger en vervolgens de bedrijfsportal-app bijwerken naar de nieuwste versie. Geregistreerde apparaten met een versie lager dan iOS 8.0 worden gewoon nog worden beheerd met en vermeld in de Intune-beheerconsole.
+### Voorwaardelijke toegang voor beheer van mobiele toepassingen
+U kunt nu voorwaardelijk toegangsbeleid creëren om te voorkomen dat onbeheerde mobiele toepassingen toegang hebben tot [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md) en [SharePoint Online](..deployuse/restrict-access-to-sharepoint-online-with-microsoft-intune.md). U kunt de ingebouwde e‑mailclients en apps blokkeren waarvoor MAM niet is ingeschakeld met de Intune App SDK.  Dit doet u door via de Azure-portal een beleid voor voorwaardelijke toegang te maken, waarbij u de toepassingen opgeeft die u toegang wilt geven tot Exchange Online en SharePoint Online.
+<!--TFS 1317673-->
 
-<!---TFS 1283165--->
+<!--TFS 1318014; awaiting approval in notes as to whether to proceed
 
+### "Default" policy is deprecated
 
-### Intune-viewer-apps
-Met het uitbrengen van de nieuwe RMS-app voor delen, worden volgende Intune-viewer-apps in augustus 2016 verwijderd:
-- Intune AV-viewer
-- Intune PDF-viewer
-- Intune-afbeeldingsviewer voor Android van Google Play
+To minimize unintentionally assigned profiles, Intune is removing support for the "default" Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers in the new Azure console. Serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.  A profile must be assigned manually after synchronization. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
+-->
 
-In plaats van de viewer-apps van Intune kunt u beter de nieuwe Rights Management-app (RMS sharing) voor Android gebruiken, zodat u één app in plaats van drie afzonderlijke apps kunt implementeren om veilig bedrijfsbestanden op Android-apparaten te bekijken. Meer informatie over de [RMS-app voor delen](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app).
-<!--- goes in 1608 What's New--->
+<!--TFS 1318023; awaiting approval in notes as to whether to proceed
 
+### Deprecation of row-by-row iOS Details review for iOS device CSV uploads
 
-### Zie tevens
+In order to streamline uploading IMEI numbers for Corporate devices and Apple serial numbers for Configurator enrollment, Intune is removing the row by row review of hardware identifiers already found in the system. This review allows the IT Pro to accept associated Details from the CSV to overwrite the existing details for a hardware identifier already in the system. The review will be replaced by a single option to automatically overwrite Details for all hardware identifiers or ignore new details for existing identifiers. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
+-->
+
+### Lookout-integratie om iOS-apparaten te beveiligen
+In oktober integreert Microsoft met de oplossing voor beveiliging tegen mobiele bedreigingen van Lookout, om mobiele iOS-apparaten te beveiligen door detectie van bijvoorbeeld malware en riskante apps op apparaten. De oplossing van Lookout helpt u het (configureerbare) risiconiveau te bepalen. U kunt een beleidsregel in Intune maken om de apparaatnaleving te bepalen op basis van de risicoanalyse door Lookout. Met behulp van beleid voor voorwaardelijke toegang kunt u toegang tot bedrijfsbronnen toestaan of blokkeren op basis van de apparaatnalevingsstatus.
+
+Eindgebruikers van iOS-apparaten die niet voldoen aan het beleid, moeten hun apparaten inschrijven en de Lookout for Work-toepassing op hun apparaten installeren, de app activeren en bedreigingen verhelpen die zijn gerapporteerd in de Lookout for Work-toepassing om toegang te krijgen tot bedrijfsgegevens.
+<!--TFS 1319493-->
+
+### Intune App SDK en App Wrapping Tool voor Android
+U kunt uw apps gebruik laten maken van Mobile Application Management-beleid (MAM) van Intune door de Intune App Wrapping Tool of de Intune App SDK te gebruiken. Nieuwe updates voor de App Wrapping Tool en SDK zijn onder andere:
+
+* Ondersteuning voor Android N
+* Ondersteuning voor MAM-beleid van Intune zonder apparaatregistratie
+* Ondersteuning voor Android-apps op basis van Xamarin
+
+U kunt hier de ondersteuning voor MAM zonder apparaatregistratie en Xamarin testen met de openbare preview-versie van de Android Wrapping Tool: [https://github.com/msintuneappsdk/intune-app-wrapper-android-preview](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview).
+<!--TFS 1319511; please create new TFS entry for WN text associated with this TFS item-->
+
+<!--TFS 1319613; no iX review on PM text blurb
+
+### Private preview customers using MAM Conditional Access will have their policies reset
+
+Due to changes in the policy structure for Conditional Access for Mobile App Management, any existing policies that were set by customers through the private preview will be removed. Customers will need to set new policies once the change is made. The timing will coincide with the October service update.
+-->
+
+### Zie ook
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voor meer informatie over recente ontwikkelingen.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

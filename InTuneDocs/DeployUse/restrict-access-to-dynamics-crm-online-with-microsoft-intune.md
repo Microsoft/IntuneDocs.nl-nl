@@ -13,8 +13,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
 
 
 ---
@@ -25,6 +25,8 @@ U kunt de toegang tot Microsoft Dynamics CRM Online beheren vanaf iOS- en Androi
 * [Beleid voor voorwaardelijke toegang](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) waarin u de voorwaarden opgeeft waaraan het apparaat moet voldoen om toegang tot de service te krijgen.
 
 Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+
+[!IMPORTANT] Voor het implementeren van voorwaardelijke toegang moet u abonnementen hebben voor Intune en Azure Active Directory Premium, en moeten gebruikers zijn geregistreerd voor beide producten. Het **Enterprise Mobility + Security-abonnement** omvat zowel een abonnement op Intune als op Azure Active Directory Premium. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) voor meer informatie. Als u geen abonnement hebt op EMS, kunt u een abonnement nemen op Azure Active Directory Premium. Zie de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie. 
 
 Wanneer een gebruiker in de doelgroep de app Dynamics CRM op zijn apparaat probeert te gebruiken, wordt de volgende evaluatie uitgevoerd:
 
@@ -97,6 +99,6 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

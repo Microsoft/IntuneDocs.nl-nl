@@ -1,6 +1,6 @@
 ---
 title: Toegang tot e-mail beperken op Exchange Online | Microsoft Intune
-description: Toegang tot bedrijfse-mail op Exchange Online beschermen en controleren met voorwaardelijke toegang.
+description: "Toegang tot bedrijfs-e‑mail op Exchange Online beschermen en controleren met voorwaardelijke toegang."
 keywords: 
 author: karthikaraman
 manager: angrobe
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -26,14 +26,12 @@ Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuw
 Configureer voorwaardelijke toegang voor Exchange Online in Intune als u de toegang tot e-mail op Exchange Online of uw nieuwe Exchange Online Dedicated-omgeving wilt beheren.
 Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
->[!IMPORTANT]
->Voorwaardelijke toegang voor pc's en Windows 10 Mobile-apparaten met apps die moderne authenticatie gebruiken, is momenteel niet voor alle klanten van Intune beschikbaar. Als u deze functies al gebruikt, hoeft u geen actie te ondernemen. U kunt deze functies gewoon blijven gebruiken.
-
->Als u nog geen beleid voor voorwaardelijke toegang hebt gemaakt voor pc’s of Windows 10 Mobile voor apps met moderne verificatie, maar u dit wel wilt doen, registreert u zich voor de openbare Azure Active Directory-preview. Deze preview bevat op het apparaat gebaseerde voorwaardelijke toegang voor door Intune beheerde apparaten en Windows-pc’s met gekoppelde domeinen. Lees [dit blogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) voor meer informatie.  
 
 **Voordat** u voorwaardelijke toegang kunt configureren, moet u:
 
 -   Een **Office 365-abonnement hebben waarin Exchange Online (zoals E3) is inbegrepen**. Gebruikers moeten bovendien een licentie hebben voor Exchange Online.
+
+- Een **abonnement voor Enterprise Mobility + Security of Azure Active Directory Premium** hebben, en moeten de gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
 
 -  U kunt eventueel de optionele **Microsoft Intune-serviceconnector** configureren, waarmee u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Microsoft Exchange Online en u apparaatgegevens kunt beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console U hoeft de connector niet te gebruiken om nalevingsbeleid of beleidsregels voor voorwaardelijke toegang te kunnen gebruiken, maar de connector is wel vereist voor het uitvoeren van rapporten die helpen bij het evalueren van de impact van voorwaardelijke toegang.
 
@@ -82,11 +80,9 @@ U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beperken 
 * Chrome (Android)
 * Managed Browsers (iOS en Android)
 
-**Niet-ondersteunde browser worden geblokkeerd**.
+**Niet-ondersteunde browsers worden geblokkeerd**.
 
-De OWA-apps voor iOS en Android worden niet ondersteund.  Deze moeten worden geblokkeerd via regels voor AD FS-claims.
-
-
+**De OWA-app voor iOS en Android kan zodanig worden aangepast dat er geen moderne verificatie wordt gebruikt, en wordt niet ondersteund.  Toegang vanuit de OWA-app moet worden geblokkeerd met ADFS-claimsregels.**
 
 
 Op de volgende platforms kunt u toegang tot Exchange-e-mail vanuit de ingebouwde **Exchange ActiveSync-e-mailclient** beperken:
@@ -101,14 +97,18 @@ Op de volgende platforms kunt u toegang tot Exchange-e-mail vanuit de ingebouwde
 
 U kunt voorwaardelijke toegang instellen voor pc's waarop Office-bureaubladtoepassingen worden uitgevoerd zodat deze toegang hebben tot **Exchange Online** en **SharePoint Online** als de pc’s aan de volgende vereisten voldoen:
 
--   Op de pc moet Windows 7.0 of Windows 8.1 worden uitgevoerd.
+-   Op de pc moet Windows 7.0, Windows 8.1 of Windows 10 worden uitgevoerd.
 
--   De pc moet lid zijn van een domein of voldoen aan de regels van het nalevingsbeleid.
+  >[!NOTE]
+  > Als u voorwaardelijke toegang met Windows 10-pc's wilt gebruiken, moet u deze pc's bijwerken met de Windows 10 Jubileumupdate.
 
-    De pc moet zijn ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en voldoen aan het beleid, om te worden beschouwd als een apparaat dat het beleid naleeft.
+  De pc moet lid zijn van een domein of voldoen aan de regels van het nalevingsbeleid.
 
-    Pc’s die lid zijn van een domein, moeten zo zijn ingesteld dat deze [automatisch worden geregistreerd](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory.
-    >[!NOTE]
+  De pc moet zijn ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en voldoen aan het beleid, om te worden beschouwd als een apparaat dat het beleid naleeft.
+
+  Pc’s die lid zijn van een domein, moeten zo zijn ingesteld dat deze [automatisch worden geregistreerd](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory.
+
+  >[!NOTE]
     >Voorwaardelijke toegang wordt niet ondersteund op computers met de Intune-computerclient.
 
 -   [Moderne authenticatie van Office 365-moet zijn ingeschakeld](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
@@ -177,6 +177,10 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
 ### Stap 4: het beleid voor voorwaardelijke toegang configureren
 
+>[!NOTE]
+> U kunt ook een beleid voor voorwaardelijke toegang maken in de Azure AD-beheerconsole. Met de Azure AD-beheerconsole kunt u beleid voor voorwaardelijke toegang voor het Intune-apparaat maken (aangeduid als het **op apparaten gebaseerd beleid voor voorwaardelijke toegang** in Azure AD), naast ander beleid voor voorwaardelijke toegang zoals Multi-Factor Authentication.  U kunt ook beleid voor voorwaardelijke toegang voor bedrijfsapps van derden instellen, zoals voor Salesforce en Box, dat door Azure AD worden ondersteund. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
+
+
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) achtereenvolgens **Beleid** > **Voorwaardelijke toegang** > **Beleid voor Exchange Online**.
 ![Schermafbeelding van de pagina met beleid voor voorwaardelijke toegang voor Exchange Online](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -196,9 +200,6 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
         Als u **Alle platformen** selecteert, betekent dat dat Azure Active Directory dit beleid toepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing.  Alle platformen moeten worden ingeschreven en voldoen aan de voorwaarden, behalve:
         *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide
         * Niet-ondersteunde platformen, zoals Mac OS.  Apps met moderne authenticatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
-
-        >[!TIP]
-           Mogelijk ziet u deze optie niet als u al voorwaardelijke toegang voor pc’s gebruikt.  Gebruik in plaats hiervan de **Specifieke platforms**. Voorwaardelijke toegang voor pc's is momenteel niet voor alle klanten van Intune beschikbaar.   U vindt meer informatie over het verkrijgen van toegang tot deze functie [in dit blogbericht ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Specifieke platforms**
 
@@ -262,6 +263,6 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 
