@@ -4,7 +4,7 @@ description: Intune biedt diverse ingebouwde algemene instellingen die u op Wind
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 
 ### Wachtwoordinstellingen
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|------|-----|------------------------------|
-|**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u op of gebruikers een wachtwoord voor toegang tot hun apparaten moeten invoeren.|Ja|Ja|
-|**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|Yes|Ja|
-|**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u hiermee echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|Ja|Ja|
-|**Minimale wachtwoordlengte**|Hiermee geeft u het minimum aantal tekens op waaruit het wachtwoord moet bestaan.|Ja|Ja|
-|**Eenvoudige wachtwoorden toestaan**|Hiermee geeft u op dat er eenvoudige wachtwoorden, zoals '0000' en '1234' kunnen worden gebruikt.|Yes|Ja|
-|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het apparaat wordt gewist.|Yes|Yes|
-|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.|Ja|Ja|
-|**Wachtwoordverlooptijd (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
-|**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.|Ja|Ja|
-|**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u aan hoeveel eerder gebruikte wachtwoorden er worden onthouden.|Ja|Ja|
+|Naam van de instelling|Details|
+|----------------|------|
+|**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u op of gebruikers een wachtwoord voor toegang tot hun apparaten moeten invoeren.|
+|**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|
+|**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u hiermee echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|
+|**Minimale wachtwoordlengte**|Hiermee geeft u het minimum aantal tekens op waaruit het wachtwoord moet bestaan.|
+|**Eenvoudige wachtwoorden toestaan**|Hiermee geeft u op dat er eenvoudige wachtwoorden, zoals '0000' en '1234' kunnen worden gebruikt.|
+|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het apparaat wordt gewist.|
+|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.|
+|**Verlopen van wachtwoorden (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
+|**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.|
+|**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u aan hoeveel eerder gebruikte wachtwoorden er worden onthouden.|
 
 ### Versleutelingsinstellingen
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|------|------|-----------------------------|
-|**Versleuteling vereisen voor mobiel apparaat**|Hiermee vereist u dat de gegevens op ondersteunde mobiele apparaten worden versleuteld.<br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.|Ja|Ja|
+|Naam van de instelling|Details|
+|----------------|------|
+|**Versleuteling vereisen voor mobiel apparaat**|Hiermee vereist u dat de gegevens op ondersteunde mobiele apparaten worden versleuteld.|
 
 ### Systeeminstellingen
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|------|------------------------------|
-|**Schermafbeelding toestaan**|Hiermee kan de gebruiker de inhoud van het scherm als afbeelding vastleggen.|Nee|Ja|
-|**Verzending van diagnostische gegevens toestaan**|Hiermee stelt u het apparaat in staat diagnostische gegevens naar Microsoft te verzenden.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|-----|
+|**Schermafbeelding toestaan**|Hiermee kan de gebruiker de inhoud van het scherm als afbeelding vastleggen.|
+|**Verzending van diagnostische gegevens toestaan**|Hiermee stelt u het apparaat in staat diagnostische gegevens naar Microsoft te verzenden.|
 
 ### Cloudinstellingen - accounts en synchronisatie
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|------|-----|------------------------------|
-|**Microsoft-account toestaan**|Hiermee maakt u het mogelijk om een Microsoft-account aan het apparaat te koppelen.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|------|
+|**Microsoft-account toestaan**|Hiermee maakt u het mogelijk om een Microsoft-account aan het apparaat te koppelen.|
 
 ### E-mailinstellingen
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|-----|-------------------------------|
-|**Aangepaste e-mailaccounts toestaan**|Hiermee stelt u het apparaat in staat verbinding te maken met niet-Microsoft e-mailaccounts.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|-----|
+|**Aangepaste e-mailaccounts toestaan**|Hiermee stelt u het apparaat in staat verbinding te maken met niet-Microsoft e-mailaccounts.|
 
 ### Toepassingsinstellingen - browser
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|-----|-------------------------------|
-|**Webbrowser toestaan**|Hiermee kunt u het gebruik van de ingebouwde webbrowser op apparaten toestaan of blokkeren.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|-----|
+|**Webbrowser toestaan**|Hiermee kunt u het gebruik van de ingebouwde webbrowser op apparaten toestaan of blokkeren.|
 
 ### Toepassingsinstellingen - apps
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|------|------------------------------|
-|**Toepassingsarchief toestaan**|Hiermee kunnen gebruikers verbinding maken met de app store van het apparaat.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|-----|
+|**Toepassingsarchief toestaan**|Hiermee kunnen gebruikers verbinding maken met de app store van het apparaat.|
 
 ### Instellingen voor apparaatmogelijkheden - hardware
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|----|--------------------------------|
-|**Camera toestaan**|Hiermee kunt u het gebruik van de camera van het apparaat toestaan of blokkeren.|Nee|Ja|
-|**Verwisselbare opslag toestaan**|Hiermee stelt u het apparaat in staat verwisselbare opslag te gebruiken, zoals SD-kaarten.|Yes|Ja|
-|**Wi-Fi toestaan**|Hiermee schakelt u de Wi-Fi-functionaliteit van het apparaat in of uit.|Nee|Ja|
-|**Wi-Fi-tethering toestaan**|Hiermee maakt u het gebruik van Wi-Fi-tethering op het apparaat mogelijk.|Nee|Ja
-|**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee staat u het apparaat toe automatisch verbinding te maken met gratis Wi-Fi-hotspots en automatisch alle gebruiksvoorwaarden te accepteren.|Nee|Ja|
-|**Melden van Wi-Fi-hotspots toestaan**|Hiermee wordt informatie over Wi-Fi-verbindingen verzonden om de gebruiker te helpen verbindingen in de buurt te detecteren.|Nee|Ja|
-|**Geolocatie toestaan**|Hiermee stelt u het apparaat in staat locatiegegevens te gebruiken.|Nee|Ja|
-|**NFC toestaan**|Hiermee maakt u bewerkingen mogelijk waarvoor Near Field Communication wordt gebruikt.|Nee|Ja|
-|**Bluetooth toestaan**|Hiermee schakelt u de Bluetooth-functionaliteit van het apparaat in of uit.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|-----|
+|**Camera toestaan**|Hiermee kunt u het gebruik van de camera van het apparaat toestaan of blokkeren.|
+|**Verwisselbare opslag toestaan**|Hiermee stelt u het apparaat in staat verwisselbare opslag te gebruiken, zoals SD-kaarten.|
+|**Wi-Fi toestaan**|Hiermee schakelt u de Wi-Fi-functionaliteit van het apparaat in of uit.|
+|**Wi-Fi-tethering toestaan**|Hiermee maakt u het gebruik van Wi-Fi-tethering op het apparaat mogelijk.|
+|**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee staat u het apparaat toe automatisch verbinding te maken met gratis Wi-Fi-hotspots en automatisch alle gebruiksvoorwaarden te accepteren.|
+|**Melden van Wi-Fi-hotspots toestaan**|Hiermee wordt informatie over Wi-Fi-verbindingen verzonden om de gebruiker te helpen verbindingen in de buurt te detecteren.|
+|**Geolocatie toestaan**|Hiermee stelt u het apparaat in staat locatiegegevens te gebruiken.|
+|**NFC toestaan**|Hiermee maakt u bewerkingen mogelijk waarvoor Near Field Communication wordt gebruikt.|
+|**Bluetooth toestaan**|Hiermee schakelt u de Bluetooth-functionaliteit van het apparaat in of uit.|
 
 ### Instellingen voor apparaatmogelijkheden - functies
 
-|Naam van de instelling|Details|Windows Phone 8|Windows Phone 8,1|
-|----------------|----|------|-------------------------------|
-|**Kopiëren en plakken toestaan**|Hiermee maakt u kopiëren en plakken op apparaten mogelijk.|Nee|Ja|
+|Naam van de instelling|Details|
+|----------------|----|
+|**Kopiëren en plakken toestaan**|Hiermee maakt u kopiëren en plakken op apparaten mogelijk.|
 
 ### Instellingen voor toegestane en geblokkeerde apps
 In de lijst **Toegestane en geblokkeerde apps** geeft u de apps op die u wilt toestaan of blokkeren op basis van de volgende gegevens:
@@ -171,6 +171,6 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

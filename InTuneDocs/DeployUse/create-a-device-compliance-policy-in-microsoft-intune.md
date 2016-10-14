@@ -1,10 +1,10 @@
 ---
 title: Een nalevingsbeleid voor apparaten maken | Microsoft Intune
-description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc's die worden gebruikt voor toegang tot uw bedrijfsgegevens.
+description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc&quot;s die worden gebruikt voor toegang tot uw bedrijfsgegevens.
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ In de volgende tabel staan de instellingen voor nalevingsbeleid en de platformen
 -------------
 |Instelling|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Wachtwoord vereist voor het ontgrendelen van mobiele apparaten|iOS 6 en hoger|Android 4.0 en hoger <br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger|
-|Eenvoudige wachtwoorden toestaan|iOS 6 en hoger|Niet ondersteund|Windows Phone 8 en hoger|
-|Minimale wachtwoordlengte|iOS 6 en hoger| Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger| Windows Phone 8 en hoger<br>Windows 8.1|
-|Vereist wachtwoordtype|iOS 6 en hoger|Niet beschikbaar|Windows Phone 8 en hoger <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Minimum aantal tekensets|iOS 6 en hoger|Niet beschikbaar|Windows Phone 8 en hoger <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Wachtwoord vereist voor het ontgrendelen van mobiele apparaten|iOS 6 en hoger|Android 4.0 en hoger <br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger|
+|Eenvoudige wachtwoorden toestaan|iOS 6 en hoger|Niet ondersteund|Windows Phone 8.1 en hoger|
+|Minimale wachtwoordlengte|iOS 6 en hoger| Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger| Windows Phone 8.1 en hoger<br>Windows 8.1|
+|Vereist wachtwoordtype|iOS 6 en hoger|Niet beschikbaar|Windows Phone 8.1 en hoger <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Minimum aantal tekensets|iOS 6 en hoger|Niet beschikbaar|Windows Phone 8.1 en hoger <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Wachtwoordkwaliteit|Niet beschikbaar|Android 4.0 en hoger <br>Samsung KNOX Standard 4.0 of hoger|Niet beschikbaar|
-|Minuten inactief voordat wachtwoord is vereist|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
-|Wachtwoordverlooptijd (dagen)|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
-|Wachtwoordgeschiedenis onthouden|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
-|Wachtwoorden niet opnieuw gebruiken|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
+|Minuten inactief voordat wachtwoord is vereist|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
+|Wachtwoordverlooptijd (dagen)|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
+|Wachtwoordgeschiedenis onthouden|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
+|Wachtwoorden niet opnieuw gebruiken|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger<br>Windows RT en Windows RT 8.1<br>Windows 8.1|
 |Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status| Niet beschikbaar| Niet beschikbaar|Windows 10 Mobile|
-|Versleuteling vereisen voor mobiel apparaat|Niet van toepassing|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger<br> Windows 8.1|
+|Versleuteling vereisen voor mobiel apparaat|Niet van toepassing|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger<br> Windows 8.1|
 |Vereist dat apparaten als in orde worden gerapporteerd| Niet beschikbaar| Niet beschikbaar|Windows <br>Windows 10 Mobile|
 |Het apparaat mag niet zijn gekraakt of geroot|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Niet beschikbaar|
 |E-mailaccounts moeten worden beheerd door Intune|iOS 6 en hoger|Niet beschikbaar| Niet beschikbaar|
 |Het e-mailprofiel selecteren dat moet worden beheerd door Intune|iOS 6 en hoger|Niet beschikbaar| Niet beschikbaar|
-|Minimale versie van het besturingssysteem dat is vereist|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger| Windows Phone 8 en hoger<br>Windows 8.1|
-|Maximale versie van het besturingssysteem dat is toegestaan|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8 en hoger<br>Windows 8.1|
+|Minimale versie van het besturingssysteem dat is vereist|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger| Windows Phone 8.1 en hoger<br>Windows 8.1|
+|Maximale versie van het besturingssysteem dat is toegestaan|iOS 6 en hoger|Android 4.0 en hoger<br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger<br>Windows 8.1|
 
 Selecteer een van de volgende mogelijkheden voor meer informatie over instellingen voor naleving die op elk platform worden ondersteund:
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ Selecteer een van de volgende mogelijkheden voor meer informatie over instelling
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

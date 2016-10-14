@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ Installeer de app **Intune-bedrijfsportal** van Microsoft Corporation die u kunt
 ### Windows Phone 8,1
 Gebruikers installeren de app **Bedrijfsportal** van Microsoft Corporation die te vinden is in de Windows Phone Store en melden zich aan met de Intune-gebruikersreferenties die hierboven worden vermeld.  Geef **Ingeschreven apparaten** weer om uw apparaat toe te voegen.
 
- ### Windows Phone 8.0
- Gebruikers klikken op **Systeeminstellingen** &gt; **Bedrijfsapps** en melden zich aan met de Intune-gebruikersreferenties die hierboven worden vermeld. De bedrijfsportal-app wordt op uw telefoon geïmplementeerd.
-
-Als u wordt gevraagd om een **serveradres**op te geven, voert u ‘manage.microsoft.com’ in.
-
-
 ## De eerder geïmplementeerde app installeren
 Open de bedrijfsportal op het mobiele apparaat, kies **Apps** en installeer vervolgens **Microsoft Skype**.
 
-Zie [Bereid u voor op het registreren van apparaten in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) voor meer informatie over het beheer van mobiele apparaten met Intune.
+Zie [Bereid u voor op het registreren van apparaten in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment) voor meer informatie over het beheer van mobiele apparaten met Intune.
 
 ### Volgende stappen
 Gefeliciteerd. U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
@@ -69,6 +63,6 @@ Gefeliciteerd. U hebt zojuist stap 5 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
