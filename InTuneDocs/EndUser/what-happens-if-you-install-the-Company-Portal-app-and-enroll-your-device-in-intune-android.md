@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ Wanneer u uw Android-apparaat registreert, geeft u de IT-beheerder toestemming v
 
 -   Alle bedrijfsgegevens verwijderen. Uw persoonlijke instellingen en gegevens worden niet verwijderd.
 
--   U verplichten om een wachtwoord of pincode voor de computer in te stellen, waarmee de computer kan worden vergrendeld of de standaardinstellingen van het apparaat kunnen worden hersteld (waarbij gegevens kunnen worden verwijderd) als u te veel keren een onjuist wachtwoord invoert.
+-   Vereisten op uw apparaat instellen, zoals een wachtwoord of pincode voor het apparaat vereisen ter beveiliging van bedrijfsgegevens. De IT-beheerder kan het aantal keren dat u een onjuist wachtwoord mag invoeren ook beperken. Als u te vaak een onjuist wachtwoord invoert, kan het apparaat worden vergrendeld.
 
 -   Vereisen dat u voorwaarden accepteert.
 
--   De camera op het apparaat in- of uitschakelen.
+-   De camera uitschakelen (alleen op Samsung Knox-apparaten, niet op Nexus-apparaten) om te voorkomen dat u foto's van gevoelig werkmateriaal maakt dat niet mag worden gedeeld.
 
--   Afdwingen dat alle gegevens, inclusief bedrijfs- en persoonlijke gegevens, op het apparaat moeten worden gecodeerd. Dit is een gegevensbeveiliging voor als u het apparaat verliest of als dit wordt gestolen.
+-   Vereisen dat alle gegevens op het apparaat zijn versleuteld, zodat gegevens beter zijn beveiligd als u het apparaat verliest of als dit wordt gestolen.
 
 -   Nadat het apparaat aan de bedrijfsportal is toegevoegd, gebeurt ongeveer elke 8 uur het volgende:
 
@@ -58,11 +58,8 @@ Wanneer u uw Android-apparaat registreert, geeft u de IT-beheerder toestemming v
 Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het team van Microsoft Android via wintunedroidfbk@microsoft.com.
 
 
-### Zie ook
-[Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

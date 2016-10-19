@@ -4,7 +4,7 @@ description: "Aan de hand van Mobile Application Management-beleid in Microsoft 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ Ondersteuning voor Mobile Application Management-beleid:
 
 -   Apparaten met Android 4 en hoger.
 
--   Apparaten met iOS 7 en hoger.
+-   Apparaten met iOS 8.0 en hoger.
 
 > [!TIP]
 > Mobile Application Management-beleid ondersteunt apparaten die zijn ingeschreven met Intune.
@@ -112,7 +112,7 @@ Nadat u hebt gecontroleerd of de app is geüpload, gaat u verder met stap 3.
 
     -   **Mobile Application Management-beleid (Android 4 en hoger)**
 
-    -   **Mobile Application Management-beleid (iOS 7 en hoger)**
+    -   **Mobile Application Management-beleid (iOS 8.0 en hoger)**
 
     U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor meer informatie.
 
@@ -134,7 +134,7 @@ Nadat u hebt gecontroleerd of de app is geüpload, gaat u verder met stap 3.
     |**Apparaatcompatibiliteit met bedrijfsbeleid vereisen voor toegang**|Met deze instellingen mag de app alleen worden gebruikt wanneer het apparaat niet jailbroken of geroot is.|
     |**Toegangsvereisten opnieuw controleren na (minuten)**|In het veld **Time-out** geeft u de tijdsperiode op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd nadat de app is gestart.|
     |**Offline respijtperiode**|Als het apparaat offline is, geeft u de tijdsperiode op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd.|
-    |**App-gegevens versleutelen**|Deze instelling geeft aan dat alle gegevens die zijn gekoppeld aan deze app, worden versleuteld. Dit omvat ook gegevens die extern zijn opgeslagen, zoals SD-kaarten.<br /><br />**Versleuteling voor iOS**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Dit wordt ingeschakeld via apparaatpincodebeleid dat wordt ingesteld door de IT-beheerder. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie [zijn de modules die worden gebruikt door iOS 7 gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Versleuteling voor Android**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, wordt versleuteling geleverd door Microsoft. Gegevens worden synchroon versleuteld tijdens de I/O-bewerkingen voor bestanden.  Inhoud in de apparaatopslag wordt altijd versleuteld. De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2.|
+    |**App-gegevens versleutelen**|Deze instelling geeft aan dat alle gegevens die zijn gekoppeld aan deze app, worden versleuteld. Dit omvat ook gegevens die extern zijn opgeslagen, zoals SD-kaarten.<br /><br />**Versleuteling voor iOS**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Dit wordt ingeschakeld via apparaatpincodebeleid dat wordt ingesteld door de IT-beheerder. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie [zijn de modules die worden gebruikt door iOS gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Versleuteling voor Android**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, wordt versleuteling geleverd door Microsoft. Gegevens worden synchroon versleuteld tijdens de I/O-bewerkingen voor bestanden.  Inhoud in de apparaatopslag wordt altijd versleuteld. De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2.|
     |**Schermafbeelding blokkeren** (alleen Android-apparaten)|Met deze instelling wordt opgegeven dat de schermafbeeldingsmogelijkheden van het apparaat zijn geblokkeerd als iemand deze app gebruikt.|
     
 4. Als u klaar bent, kiest u **Beleid opslaan**.
@@ -147,8 +147,6 @@ Zorg ervoor dat u het Mobile Application Management-beleid selecteert op de pagi
 Zie [Apps implementeren in Microsoft Intune](deploy-apps.md) voor meer informatie.
 
 > [!IMPORTANT]
-> Voor apparaten met besturingssystemen die ouder zijn dan iOS 7.1, wordt gekoppeld beleid niet verwijderd wanneer de app wordt verwijderd.
->
 > Als het apparaat wordt uitgeschreven bij Intune, wordt er geen beleid uit de apps verwijderd. Apps waarop beleid is toegepast, behouden die beleidsinstellingen nadat de app is verwijderd en opnieuw is geïnstalleerd.
 
 ### Wat te doen wanneer een app al op apparaten is geïmplementeerd
@@ -195,6 +193,6 @@ In gevallen waarin het apparaat of de gebruiker twee conflicterende sets beleids
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
