@@ -382,6 +382,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
