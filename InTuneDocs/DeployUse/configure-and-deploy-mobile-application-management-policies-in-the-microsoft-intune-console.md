@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +37,7 @@ In tegenstelling tot ander beleid van Intunes hoeft u Mobile Application Managem
 
 Als u beperkingen wilt toepassen op een app, moet de app gebruikmaken van de Microsoft Intune App SDK. Er zijn drie methoden om dit type app te verkrijgen:
 
--   **Een door beleid beheerde app gebruiken**. Een door beleid beheerde app beschikt over een ingebouwde App SDK. Om dit type app toe te voegen, geeft u een koppeling op naar de app uit een app store zoals iTunes store of Google Play. Er is geen verdere verwerking vereist voor dit type app. Bekijk de [lijst met apps die u met Mobile Application Management-beleid van Microsoft Intune kunt gebruiken](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Een door beleid beheerde app gebruiken**. Een door beleid beheerde app beschikt over een ingebouwde App SDK. Om dit type app toe te voegen, geeft u een koppeling op naar de app uit een app store zoals iTunes store of Google Play. Er is geen verdere verwerking vereist voor dit type app. Bekijk de [lijst met apps die u met Mobile Application Management-beleid van Microsoft Intune kunt gebruiken](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Een verpakte app gebruiken**. Een verpakte app is een app die samen met de App SDK wordt verpakt met behulp van Microsoft Intune App Wrapping Tool. Dit hulpprogramma wordt meestal gebruikt voor het verwerken van bedrijfsapps die intern zijn gemaakt. U kunt het niet gebruiken voor het verwerken van apps die zijn gedownload vanuit de app store. Zie voor meer informatie [iOS-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [Android-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +136,7 @@ Nadat u hebt gecontroleerd of de app is geüpload, gaat u verder met stap 3.
     |**Offline respijtperiode**|Als het apparaat offline is, geeft u de tijdsperiode op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd.|
     |**App-gegevens versleutelen**|Deze instelling geeft aan dat alle gegevens die zijn gekoppeld aan deze app, worden versleuteld. Dit omvat ook gegevens die extern zijn opgeslagen, zoals SD-kaarten.<br /><br />**Versleuteling voor iOS**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Dit wordt ingeschakeld via apparaatpincodebeleid dat wordt ingesteld door de IT-beheerder. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie [zijn de modules die worden gebruikt door iOS gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Versleuteling voor Android**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, wordt versleuteling geleverd door Microsoft. Gegevens worden synchroon versleuteld tijdens de I/O-bewerkingen voor bestanden.  Inhoud in de apparaatopslag wordt altijd versleuteld. De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2.|
     |**Schermafbeelding blokkeren** (alleen Android-apparaten)|Met deze instelling wordt opgegeven dat de schermafbeeldingsmogelijkheden van het apparaat zijn geblokkeerd als iemand deze app gebruikt.|
-    
+
 4. Als u klaar bent, kiest u **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid**.
@@ -193,6 +193,6 @@ In gevallen waarin het apparaat of de gebruiker twee conflicterende sets beleids
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

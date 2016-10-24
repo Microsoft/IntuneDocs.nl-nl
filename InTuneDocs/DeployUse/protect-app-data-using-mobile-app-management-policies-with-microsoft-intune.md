@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
@@ -122,8 +122,6 @@ Met apps die ondersteuning bieden voor meerdere identiteiten, kunt u verschillen
 
 Wanneer de eindgebruiker de OneDrive-app start vanaf een werkaccount, kan hij de bestanden niet verplaatsen naar een persoonlijke opslaglocatie. Maar wanneer de eindgebruiker OneDrive start vanaf een persoonlijk account, kan hij zonder beperkingen gegevens kopiëren en verplaatsen vanaf zijn persoonlijke OneDrive-locatie.  
 
-Lees [Apps met ondersteuning voor meerdere identiteiten gebruiken](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support) voor een gedetailleerde beschrijving van het gebruik van apps die zijn gekoppeld aan MAM-beleid, en van de wijze waarop apps met ondersteuning voor meerdere entiteiten toepassing van MAM-beleid op uitsluitend de werkomgeving mogelijk maken.
-
 Alle mobiele apps van Office ondersteunen meerdere identiteiten.
 
 ##  Volgende stappen
@@ -133,6 +131,6 @@ Alle mobiele apps van Office ondersteunen meerdere identiteiten.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
