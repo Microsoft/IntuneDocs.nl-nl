@@ -3,6 +3,7 @@ title: Mobiele apparaten inschrijven voor de evaluatieversie | Microsoft Intune
 description: Zo kunt u mobiele apparaten inschrijven en een app installeren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

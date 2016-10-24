@@ -3,6 +3,7 @@ title: E-mailtoegang tot Dynamics CRM Online beperken | Microsoft Intune
 description: Toegang tot Dynamics CRM Online beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

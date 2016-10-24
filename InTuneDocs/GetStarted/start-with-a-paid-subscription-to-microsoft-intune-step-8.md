@@ -3,6 +3,7 @@ title: Mobiele apparaten inschrijven en een app installeren | Microsoft Intune
 description: Bevat uitleg over het inschrijven van mobiele apparaten en het installeren van een app op een apparaat dat voor Intune is ingeschreven
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

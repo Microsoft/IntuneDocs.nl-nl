@@ -3,6 +3,7 @@ title: Een apparaat extern vergrendelen op de website van de bedrijfsportal | Mi
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

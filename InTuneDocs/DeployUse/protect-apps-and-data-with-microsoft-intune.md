@@ -3,6 +3,7 @@ title: Apps en gegevens beveiligen | Microsoft Intune
 description: In dit onderwerp worden de verschillende Intune-functies en -mogelijkheden beschreven die beschikbaar voor u zijn voor het beveiligen van uw bedrijfs-apps en -gegevens.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

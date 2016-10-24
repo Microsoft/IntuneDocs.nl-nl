@@ -3,6 +3,7 @@ title: Configuratie van e-mail op mobiele apparaten vereenvoudigen | Microsoft I
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

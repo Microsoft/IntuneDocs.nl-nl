@@ -4,6 +4,7 @@ title:
 description: In deze onderwerpen wordt beschreven hoe u kunt testen en valideren of uw MAM-beleid juist is ingesteld en naar behoren werkt.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

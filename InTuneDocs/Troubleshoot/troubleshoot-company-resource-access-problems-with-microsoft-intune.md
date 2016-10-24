@@ -3,6 +3,7 @@ title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Intune
 description: In dit onderwerp vindt u fout- en statuscodes die u kunt gebruiken bij het oplossen van problemen met de toegang tot bedrijfsresources.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

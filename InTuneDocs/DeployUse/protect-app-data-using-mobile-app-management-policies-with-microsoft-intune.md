@@ -3,6 +3,7 @@ title: App-gegevens beveiligen met behulp van MAM-beleid | Microsoft Intune
 description: "In dit onderwerp wordt uitgelegd hoe Mobile App Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

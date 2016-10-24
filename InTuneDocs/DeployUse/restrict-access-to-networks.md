@@ -3,6 +3,7 @@ title: Toegang tot netwerken beperken met Cisco ISE | Microsoft Intune
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article

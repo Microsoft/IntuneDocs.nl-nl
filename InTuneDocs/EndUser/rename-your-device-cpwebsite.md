@@ -3,6 +3,7 @@ title: De naam van een apparaat wijzigen op de website van de bedrijfsportal | M
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

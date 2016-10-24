@@ -3,6 +3,7 @@ title: Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de be
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

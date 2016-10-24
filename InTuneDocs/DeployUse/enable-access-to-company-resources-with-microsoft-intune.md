@@ -3,6 +3,7 @@ title: Toegang tot bedrijfsbronnen inschakelen | Microsoft Intune
 description: Wi-Fi-, VPN- en e-mailprofielen stellen uw gebruikers in de gelegenheid toegang te krijgen tot de bestanden en bronnen die ze nodig hebben.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

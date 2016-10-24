@@ -3,6 +3,7 @@ title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Mic
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

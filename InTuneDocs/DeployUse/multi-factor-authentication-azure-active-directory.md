@@ -3,6 +3,7 @@ title: Multi-Factor Authentication met Azure AD| Microsoft Intune
 description: Hoe u in Azure AD Multi-Factor Authentication vereist voor apparaatregistratie.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

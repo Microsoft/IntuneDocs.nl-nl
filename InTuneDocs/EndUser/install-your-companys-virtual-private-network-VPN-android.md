@@ -3,6 +3,7 @@ title: Het virtuele particuliere netwerk (VPN) van uw bedrijf installeren | Micr
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

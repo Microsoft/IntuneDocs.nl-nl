@@ -3,6 +3,7 @@ title: MAM-beleid configureren in de Intune-console | Microsoft Intune
 description: "Aan de hand van Mobile Application Management-beleid in Microsoft Intune kunt u de functionaliteit van de door u geïmplementeerde apps aanpassen, zodat deze apps voldoen aan het beleid van uw bedrijf met betrekking tot naleving en beveiliging."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

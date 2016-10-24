@@ -3,6 +3,7 @@ title: Uw Windows-apparaat gebruiken met Intune | Microsoft Intune
 description: Lijst met koppelingen naar taken die u op uw Windows-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

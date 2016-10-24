@@ -3,6 +3,7 @@ title: Windows 10-beleidsinstellingen | Microsoft Intune
 description: Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebouwde en aangepaste instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

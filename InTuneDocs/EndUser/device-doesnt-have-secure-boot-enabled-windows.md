@@ -3,6 +3,7 @@ title: Op het apparaat is Beveiligd opstarten niet ingeschakeld | Microsoft Intu
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

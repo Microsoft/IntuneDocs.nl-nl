@@ -1,8 +1,9 @@
 ---
 title: De pc-clientsoftware installeren | Microsoft Intune
-description: Gebruik deze handleiding om uw Windows-pc's te laten beheren door de Microsoft Intune-clientsoftware.
+description: Gebruik deze handleiding om uw Windows-pc&quot;s te laten beheren door de Microsoft Intune-clientsoftware.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

@@ -1,8 +1,9 @@
 ---
 title: Beschrijving van de service | Microsoft Intune
-description: Intune is een cloudservice waarmee u Windows-pc's en mobiele iOS-, Mac OS X-, Android- en Windows-apparaten kunt beheren.
+description: Intune is een cloudservice waarmee u Windows-pc&quot;s en mobiele iOS-, Mac OS X-, Android- en Windows-apparaten kunt beheren.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

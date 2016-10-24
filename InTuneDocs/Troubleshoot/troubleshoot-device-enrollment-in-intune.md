@@ -3,6 +3,7 @@ title: Problemen bij de apparaatregistratie oplossen | Microsoft Intune
 description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

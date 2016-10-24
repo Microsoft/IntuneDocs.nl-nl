@@ -3,6 +3,7 @@ title: IOS-apps beheren die zijn gekocht via het volume-aankoopprogramma | Micro
 description: Met Intune kunt u apps beheren die u via een volume-aankoopprogramma hebt aangeschaft door de licentiegegevens uit de app store te importeren en bij te houden hoeveel licenties u hebt gebruikt. Zo wordt voorkomen dat u meer exemplaren van de app installeert dan u hebt aangeschaft.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article
