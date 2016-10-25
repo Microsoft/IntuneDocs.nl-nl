@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ De IT-beheerder kan meerdere wachtwoordvereisten instellen. Het is bijvoorbeeld 
 
 Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan alle wachtwoordvereisten, neemt u contact op met uw IT-beheerder voor hulp.
 
-## Uw wachtwoord op een Windows Phone 8 of 8.1 wijzigen:
+## Ga als volgt te werk om uw wachtwoord op een Windows Phone 8.1 te wijzigen:
 
 1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
 2. Schuif omlaag naar **Wachtwoord** en tik op **Wachtwoord wijzigen**.
@@ -34,7 +34,7 @@ Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan 
 4. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het nieuwe wachtwoord in het veld **Wachtwoord bevestigen**.
 4. Tik op **Gereed**.
 
-## Uw wachtwoord op een Windows Phone 8 of 8.1 instellen:
+## Ga als volgt te werk om uw wachtwoord op een Windows Phone 8.1 in te stellen:
 
 1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
 2. Schuif omlaag naar **Wachtwoord** en stel **Wachtwoord** in op **Aan**.
@@ -47,6 +47,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactge
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

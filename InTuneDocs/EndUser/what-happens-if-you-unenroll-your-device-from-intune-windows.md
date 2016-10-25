@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # Wat gebeurt er als u de registratie van uw Windows-apparaat bij Intune ongedaan maakt?
 
-Gebruik de koppeling in de bovenstaand sectie 'In dit artikel' die overeenkomt met het type apparaat dat u gebruikt, voor aanvullende informatie over wat er gebeurt.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 of Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows RT met Windows 8.1 of Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Met de koppelingen aan de rechterkant van de pagina, onder 'In dit artikel', kunt u zoeken naar informatie over het type apparaat dat u gebruikt.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Bovendien geldt voor Windows 8.1 het volgende:
 
 -   Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
 
-## Windows 10 Mobile, Windows Phone 8.1 of Windows Phone 8
+## Windows 10 Mobile en Windows Phone 8.1
 
 -   De bedrijfsportal-app wordt verwijderd van uw apparaat, wat betekent dat het apparaat niet meer in de bedrijfsportal wordt weergegeven en u geen apps vanuit de bedrijfsportal-app of vanaf de website van de bedrijfsportal kunt installeren.
 
@@ -66,7 +62,7 @@ Bovendien geldt voor Windows 8.1 het volgende:
     > [!IMPORTANT]
     > De enige uitzondering hierop vormen de coderingsbeleidsregels, die van toepassing blijven. Als uw bedrijfsbeleid vereist dat de Windows Phone wordt gecodeerd, is er maar één manier om uw telefoon te decoderen: u moet de telefoon opnieuw instellen met het menu **Instellingen** op de Windows Phone.
 
-## Windows RT met Windows 8.1 of Windows RT
+## Windows RT met Windows 8.1
 
 -   De bedrijfsportal-app wordt verwijderd van uw apparaat, wat betekent dat het apparaat niet meer in de bedrijfsportal wordt weergegeven en u geen apps vanuit de bedrijfsportal kunt installeren.
 
@@ -93,6 +89,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsporta
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

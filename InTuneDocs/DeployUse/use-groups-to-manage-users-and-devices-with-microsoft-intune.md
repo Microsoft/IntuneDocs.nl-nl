@@ -3,8 +3,9 @@ title: Groepen gebruiken om gebruikers en apparaten te beheren | Microsoft Intun
 description: Groepen maken en beheren met behulp van de werkruimte Groepen.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 896e8cf77c0898fca7838b24386db745b01f4022
 
 
 ---
@@ -36,11 +37,11 @@ In dit onderwerp wordt beschreven hoe u groepen maakt in Intune. Het onderwerp b
 U hebt ons laten weten dat u in Enterprise Mobility + Security één methode voor groeperen en toepassen wilt. We hebben naar u geluisterd. Op basis van uw feedback zetten we Intune-groepen binnenkort om in Azure Active Directory-beveiligingsgroepen. Deze wijziging zal leiden tot een uniformer beheer van groepen voor zowel Intune als Azure Active Directory (Azure AD). Dat betekent dat u groepen tussen services niet langer hoeft te dupliceren. Ook profiteert u van uitbreidbaarheid met de opties voor gebruik van Windows PowerShell en Microsoft Graph.
 
 ### Wat betekent dit nu voor mij?
-U merkt nu nog niets van deze wijziging. Maar dit gaat binnenkort gebeuren:
+Als u al een Intune-klant bent, is deze wijziging nu nog niet van invloed op u. Maar dit gaat binnenkort gebeuren:
 
--   In september 2016 gaan nieuwe accounts die zijn ingericht na de maandelijkse servicerelease gebruikmaken van Azure AD-beveiligingsgroepen in plaats van Intune-gebruikersgroepen.   
--   In oktober 2016 gaan nieuwe accounts die zijn ingericht na de maandelijkse servicerelease zowel gebruikers- als apparaatgroepen beheren in de Azure AD-portal. Bestaande klanten merken hier niets van.
--   In november 2016 begint het Intune-productteam met de migratie van bestaande klanten naar de nieuwe op Azure AD gebaseerde groepsbeheermethode. Alle gebruikers- en apparaatgroepen die momenteel in Intune aanwezig zijn, worden gemigreerd naar Azure AD-beveiligingsgroepen. De migratie begint in november 2016 en wordt in batches uitgevoerd. De migraties worden pas uitgevoerd als we de invloed op uw dagelijkse werkzaamheden tot een minimum hebben weten te beperken. Naar verwachting zullen uw gebruikers er niets van merken. U ontvangt bericht van ons voordat we uw account gaan migreren.
+-   Voor nieuwe accounts worden Azure AD-beveiligingsgroepen gebruikt in plaats van Intune-*gebruiker*sgroepen.   
+-   In november 2016 gaan nieuwe accounts die zijn ingericht na de maandelijkse servicerelease zowel gebruikers- als apparaatgroepen beheren in de Azure AD-portal. Bestaande klanten merken hier niets van.
+-   In december 2016 begint het Intune-productteam met de migratie van bestaande klanten naar de nieuwe op Azure AD gebaseerde groepsbeheermethode. Alle gebruikers- en apparaatgroepen die momenteel in Intune aanwezig zijn, worden gemigreerd naar Azure AD-beveiligingsgroepen. De migraties worden pas uitgevoerd als we de invloed op uw dagelijkse werkzaamheden tot een minimum hebben weten te beperken. Naar verwachting zullen uw gebruikers er niets van merken. U ontvangt bericht van ons voordat we uw account gaan migreren.
 
 
 ### Wanneer en hoe vindt mijn migratie naar deze nieuwe manier van werken met groepen plaats?
@@ -204,6 +205,6 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

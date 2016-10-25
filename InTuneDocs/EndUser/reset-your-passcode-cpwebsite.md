@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
 
 
 ---
@@ -23,10 +23,10 @@ ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
 
 # De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
+Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportalapp kunt uitvoeren.
 
 > [!NOTE]
-> Het is mogelijk de knop Wachtwoordcode opnieuw instellen niet wordt weergegeven. Dit is afhankelijk van hoe uw IT-beheerder Intune heeft geconfigureerd. Het opnieuw instellen van wachtwoordcodes wordt niet ondersteund op Windows 8.1- en Windows RT-apparaten.
+> Het is mogelijk de knop Wachtwoordcode opnieuw instellen niet wordt weergegeven. Dit is afhankelijk van hoe uw IT-beheerder Intune heeft geconfigureerd. Het opnieuw instellen van wachtwoordcodes wordt niet ondersteund op Windows 8.1-apparaten.
 
 Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
@@ -64,6 +64,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactge
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

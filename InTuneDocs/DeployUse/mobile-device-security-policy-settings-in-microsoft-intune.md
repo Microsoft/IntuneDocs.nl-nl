@@ -3,8 +3,9 @@ title: Instellingen voor beveiligingsbeleid van mobiele apparaten | Microsoft In
 description: Gebruik Intune voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +41,7 @@ U kunt beveiligingsbeleidsregels voor mobiele apparaten maken en implementeren v
 
 > [!NOTE]
 > Sommige instellingen zijn niet van toepassing op sommige apparaten. Zie de onderstaande tabellen voor een volledige lijst met instellingen die u kunt configureren.
+> Vanaf oktober 2016 biedt Microsoft Intune geen ondersteuning meer voor Windows 8-bedrijfsportalapps. Microsoft Intune biedt dan ook geen ondersteuning meer voor het Windows Phone 8- en Windows RT-platform. Als gevolg hiervan kunt u geen Windows Phone 8- of Windows RT-apparaten meer registreren of bijwerken. U kunt Windows Phone 8-, Windows RT- en Windows 8-apparaten die al zijn geregistreerd, blijven beheren. Werk Windows 8- en Windows Phone 8-apparaten bij naar Windows 8.1 en Windows Phone 8.1. Gebruik de bijbehorende bedrijfsportalapps voor Windows 8.1 en Windows Phone 8.1 om zonder onderbrekingen door te gaan met het distribueren van apps naar deze apparaten.
 
 ## Beveiligingsinstellingen
 
@@ -212,6 +214,6 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

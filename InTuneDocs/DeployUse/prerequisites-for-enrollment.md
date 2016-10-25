@@ -13,16 +13,34 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 91385bdbe4aa4252311db106c04de7d04df5109c
-ms.openlocfilehash: 5e94e4efa5a3ecb055ce416c3ee8dd21e56bad65
+ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
+ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
 
 
 ---
 
 # Vereisten voor Mobile Device Management in Intune
-Schakel apparaatregistratie in als u wilt dat werknemers mobiele apparaten (inclusief [Android](set-up-android-management-with-microsoft-intune.md), [iOS- en Mac-](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone-](set-up-windows-phone-management-with-microsoft-intune.md) en [Windows-pc's](set-up-windows-device-management-with-microsoft-intune.md)) bij Intune kunnen registreren, of als u apparaten wilt beheren die eigendom zijn van het bedrijf. Voor het toestaan van inschrijvingen moet u een instantie voor het Mobile Device Management (MDM) instellen, de Intune-bedrijfsportal configureren, licenties toewijzen en inschrijven inschakelen voor het apparaatplatform.
+Als u wilt dat uw medewerkers hun mobiele apparaten kunnen inschrijven bij Intune, zijn de volgende stappen vereist. Dezelfde stappen zijn vereist voor het beheren van apparaten die eigendom zijn van het bedrijf.
 
-## Instantie voor beheer van mobiele apparaten instellen
+|Stappen|Details|  
+|-----------|-------------|  
+|**Stap 1:** [Afhankelijkheden van apparaatinschrijving](#step-1-device-enrollment-dependencies)|Zorg ervoor dat uw aangepaste domeinnaam is geconfigureerd en dat de netwerkcommunicatie gereed is|  
+|**Stap 2:** [De instantie voor beheer van mobiele apparaten instellen](#step-2-set-mobile-device-management-authority)|De instantie voor beheer van mobiele apparaten definieert de service die wordt toegewezen aan uw apparaten|
+|**Stap 3:** [De Intune-bedrijfsportal configureren](#step-3-configure-the-intune-company-portal)|Configureer gebruikersgerichte instellingen voor de bedrijfsportalapp|  
+|**Stap 4:** [Intune-gebruikerslicenties toewijzen](#step-4-assign-intune-user-licenses)|Wijs Intune-licenties toe aan gebruikers zodat ze apparaten kunnen inschrijven|
+|**Stap 5:** [Apparaatbeheer instellen](#step-5-set-up-device-management)|Schakel platformspecifieke instellingen in voor iOS- en Windows-beheer. Android-apparaten vereisen geen aanvullende configuratie.|
+
+Zoekt u Intune met Configuration Manager?
+> [!div class="button"]
+[SCCM-documenten weergeven >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+
+## Stap 1: Afhankelijkheden van apparaatinschrijving
+
+Voordat u het inschrijven van mobiele apparaten inschakelt, moet u ervoor zorgen dat u:
+- [De vereiste netwerk-URL's en -poorten hebt gecontroleerd](../get-started/network-infrastructure-requirements-for-microsoft-intune)
+- [Uw domeinnaam hebt toegevoegd en gecontroleerd](../get-started/domain-names-for-microsoft-intune)
+
+## Stap 2: De instantie voor beheer van mobiele apparaten instellen
 De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
 
 >[!IMPORTANT]
@@ -38,7 +56,7 @@ De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren 
 
 3.  Intune vraagt u te bevestigen dat u Intune wilt gebruiken als uw MDM-instantie. Schakel het selectievakje in en kies vervolgens **Ja** als u mobiele apparaten wilt beheren met Microsoft Intune.
 
-## De Intune-bedrijfsportal configureren
+## Stap 3: De Intune-bedrijfsportal configureren
 
 De Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben tot bedrijfsgegevens en algemene taken kunnen uitvoeren, zoals apparaten registreren, apps installeren en naar ondersteuningsinformatie van uw IT-afdeling zoeken.
 
@@ -79,14 +97,14 @@ U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur
     |----------|----------------|
     |Themakleur|Selecteer een themakleur die u wilt toepassen op de bedrijfsportal.|
     |Bedrijfslogo opnemen|Als u deze optie inschakelt, kunt u het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. U kunt twee logo's uploaden: één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal wit is en één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal de door u geselecteerde themakleur heeft. Beide logo’s moeten png- of jpg-bestanden zijn met een resolutie van maximaal 400 x 100 pixels en een grootte van maximaal 750 kB.|
-    |Een achtergrond kiezen voor de bedrijfsportal-app voor [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]|Deze instelling beïnvloedt alleen de achtergrond voor de bedrijfsportal-app voor [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)].|
+    |Een achtergrond kiezen voor de bedrijfsportalapp|Deze instelling beïnvloedt alleen de achtergrond voor de bedrijfsportalapp.|
 
 
 Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagina **Bedrijfsportal** van de beheerconsole gebruiken om de bedrijfsportalwebsite weer te geven. Deze koppelingen kunnen niet worden gewijzigd. Wanneer een gebruiker zich aanmeldt, worden via deze koppelingen uw abonnementen weergegeven in de bedrijfsportal.
 
-## Een Intune-gebruikerslicentie toewijzen
+## Stap 4: Intune-gebruikerslicenties toewijzen
 
-U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD).
+U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD). U kunt [on-premises gebruikers synchroniseren met Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
 1.  Meld u met uw tenantbeheerdersreferenties aan bij de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx).
 
@@ -94,7 +112,14 @@ U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te vo
 
 3.  Het gebruikersaccount wordt nu toegevoegd aan de Microsoft Intune-gebruikersgroep die de gebruikersmachtigingen voor het gebruik van de service toekent en de apparaten inschrijft voor beheer.
 
-## Apparaatbeheer instellen
+### On-premises gebruikers synchroniseren met Azure AD
+
+1. [Voeg het UPN-achtervoegsel](https://technet.microsoft.com/en-us/library/cc772007.aspx) toe voor uw aangepaste domein in uw on-premises Active Directory.
+2. Stel het nieuwe UPN-achtervoegsel in voor de on-premises gebruikers die u van plan bent te importeren.
+3. Voer [Azure AD Connect-synchronisatie](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) uit om uw on-premises gebruikers te integreren met Azure AD.
+4. Als de accountgegevens van de gebruikers zijn gesynchroniseerd, kunt u vervolgens Microsoft Intune-licenties toewijzen via de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx).
+
+## Stap 5: Apparaatbeheer instellen
 Na het instellen van de MDM-instantie moet u apparaatbeheer instellen voor de besturingssystemen die uw organisatie wil ondersteunen. De stappen die voor het instellen van apparaatbeheer nodig zijn, verschillen per besturingssysteem. Android OS vereist bijvoorbeeld niet dat u iets doet in de Intune-beheerconsole. Aan de andere kant vereisen Windows en iOS een vertrouwensrelatie tussen apparaten en Intune voor het toestaan van beheer.
 
 Stel het beheer in voor de volgende platformen:
@@ -109,6 +134,6 @@ U kunt ook:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

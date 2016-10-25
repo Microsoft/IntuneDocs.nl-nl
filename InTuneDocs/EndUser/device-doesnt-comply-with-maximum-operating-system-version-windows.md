@@ -1,8 +1,9 @@
 ---
-title: Het Windows-apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie | Microsoft Intune
+title: Het Windows-apparaat voldoet niet aan de instelling voor de maximaal toegestane besturingssysteemversie | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,20 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 964f39fa7a3971f37777e93f7cddd75367e6c026
+ms.openlocfilehash: edd9aa9b7c2dabbc90bb3777f855478c703c7882
 
 
 ---
 
 
-# Het Windows-apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie
+# Het Windows-apparaat voldoet niet aan de instelling voor de nieuwste besturingssysteemversie
 
-Uw IT-beheerder heeft een maximale versie ingesteld die het besturingssysteem op uw Windows-apparaat mag hebben, maar uw apparaat voldoet niet aan die instelling. Als u wilt weten wat de maximaal toegestane versie is van het besturingssysteem voor uw apparaat, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
+Uw IT-beheerder heeft de nieuwste versie ingesteld die het besturingssysteem op uw Windows-apparaat mag hebben, maar uw apparaat voldoet niet aan die instelling. Als u wilt weten wat de nieuwste toegestane versie is van het besturingssysteem voor uw apparaat, neemt u contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

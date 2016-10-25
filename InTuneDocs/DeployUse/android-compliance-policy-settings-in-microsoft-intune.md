@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
-ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: ed8f280de4582863f77e5b0e9cb5dfb2f20159c4
 
 
 ---
@@ -35,7 +35,7 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 -  **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
 
-- **Wachtwoordkwaliteit**: gebruik deze instelling om de wachtwoordvereisten voor Android-apparaten in te stellen. U kunt kiezen uit:
+- **Wachtwoordkwaliteit:** met deze instelling wordt gedetecteerd of de vereisten voor het wachtwoord die u opgeeft op het apparaat zijn geconfigureerd. Gebruik deze instelling als u wilt afdwingen dat gebruikers bepaalde wachtwoordvereisten voor Android-apparaten instellen. U kunt kiezen uit:
   -   **Lage beveiligingsbiometrie**
   - **Vereist**
   -   **Ten minste numeriek**
@@ -83,6 +83,6 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

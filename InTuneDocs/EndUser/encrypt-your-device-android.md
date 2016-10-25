@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
+ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
+ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 # Uw apparaat versleutelen
 
-Als uw bedrijf of organisatie vereist dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bestanden, e-mailberichten of gegevens van uw bedrijf, volgt u de onderstaande stappen om het apparaat te versleutelen. U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als uw IT-beheerder dit vereist.
+Als uw bedrijf of organisatie verlangt dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bestanden, e-mailberichten of gegevens van uw bedrijf, volgt u de onderstaande stappen om het apparaat te versleutelen. U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als uw IT-beheerder dit vereist.
 
 Als u de registratie van uw telefoon ooit ongedaan maakt, blijft deze versleuteld.
 
@@ -38,7 +38,7 @@ Als u de registratie van uw telefoon ooit ongedaan maakt, blijft deze versleutel
 
 - De versleutelingsknop is uitgeschakeld.
 - Er wordt een bericht weergegeven dat u nog moet versleutelen.
-- Er treden fouten op bij het gebruik van de bedrijfsportal-app.
+- Er treden fouten op bij het gebruik van de bedrijfsportalapp.
 
 **Wat u kunt doen**: 
 
@@ -56,7 +56,7 @@ Als u de registratie van uw telefoon ooit ongedaan maakt, blijft deze versleutel
 
     d. Kies een pincode (u kunt dezelfde invoeren als die u eerder hebt opgegeven) en tik op **Uw pincode bevestigen**.
 
-    e. Open de bedrijfsportal-app, selecteer uw apparaat en tik op **Naleving controleren**.
+    e. Open de bedrijfsportalapp, selecteer uw apparaat en tik op **Naleving controleren**.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het team van Microsoft Android via wintunedroidfbk@microsoft.com.
 
@@ -64,6 +64,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

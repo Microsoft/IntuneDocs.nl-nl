@@ -3,8 +3,9 @@ title: Apparaatinstellingen beheren met beleid | Microsoft Intune
 description: Gebruik Intune om beleid te maken en implementeren waarmee instellingen en functies worden beheerd op ingeschreven apparaten die u beheert.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-referenc
 
     - [Instellingen voor iOS-apparaten](ios-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Android-apparaten](android-policy-settings-in-microsoft-intune.md)
+    - [Instellingen voor Android for Work-apparaten](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Windows 8- en Windows 8.1-apparaten](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Windows Phone 8.1-apparaten](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Instellingen voor Windows 10 Desktop- en Mobile-apparaten](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald 
 - iOS en Mac OS X: om de 6 uur.
 - Android: om de 8 uur.
 - Windows Phone: om de 8 uur.
-- Ingeschreven Windows RT-apparaten: elke 24 uur.
 - Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de 8 uur.
 
 Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
@@ -125,7 +126,7 @@ Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel
 - Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
 - Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 8 uur.
 
-Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
+Gebruikers kunnen ook de bedrijfsportalapp openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
 ### Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
 Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals de actie wissen, vergrendelen, wachtwoord opnieuw instellen, app implementeren, profiel implementeren (Wi-Fi, VPN, e-mail, enz.) of beleidsregels implementeren, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren om deze updates te ontvangen.
@@ -212,6 +213,6 @@ Zie [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/trouble
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

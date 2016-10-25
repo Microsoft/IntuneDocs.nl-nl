@@ -1,8 +1,9 @@
 ---
 title: Uw verloren of gestolen Windows-apparaat opnieuw instellen (wissen) | Microsoft Intune
-description: 
+description: Een verloren of gestolen Windows-apparaat opnieuw instellen
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
+ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 # Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
 
-Als een telefoon die bij Intune is ingeschreven is vermist of gestolen, kunt u de fabrieksinstellingen ervan herstellen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Als een bij Intune geregistreerd apparaat zoekgeraakt of gestolen is, kunt u de fabrieksinstellingen ervan herstellen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 > [!WARNING]
@@ -40,8 +41,6 @@ Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, 
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

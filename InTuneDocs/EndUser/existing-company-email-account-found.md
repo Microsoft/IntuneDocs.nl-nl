@@ -14,20 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Bestaand zakelijk e-mailaccount gevonden
-U hebt al een zakelijk e-mailaccount. Als u verbinding wilt blijven maken met uw zakelijke e-mail, moet u de volgende stappen uitvoeren om uw IT-beheerder in staat te stellen om uw account op de juiste wijze in te stellen en te beheren:
+U hebt al een zakelijk e-mailaccount. Als u verbinding wilt blijven maken met uw zakelijke e-mail, moet u de volgende stappen uitvoeren zodat uw IT-beheerder uw account op de juiste wijze kan instellen en beheren:
 
 1.  Verwijder in **Instellingen** op het apparaat de verbinding die u eerder voor uw zakelijke e-mail hebt ingesteld.
 
     Tik bijvoorbeeld op een iOS-apparaat op **Instellingen** &gt;**E-mail, Contacten, Agenda**. Selecteer uw zakelijke e-mailaccount en klik vervolgens op **Verwijderen**.
 
-2.  Open de bedrijfsportal-app op uw apparaat en tik op **Naleving controleren**.
+2.  Open de bedrijfsportalapp op uw apparaat en tik op **Naleving controleren**.
 
 3.  De nieuwe e-mailinstellingen worden automatisch op uw apparaat toegepast. Dit kan enkele ogenblikken duren.
 
@@ -35,6 +35,6 @@ Als de nieuwe e-mailinstellingen ook na enige tijd niet worden weergegeven, neem
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

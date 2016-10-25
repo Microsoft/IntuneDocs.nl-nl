@@ -3,8 +3,9 @@ title: MAM-beleidsinstellingen voor iOS | Microsoft Intune
 description: Dit onderwerp beschrijft de beleidsinstellingen voor het beheren van mobiele apps voor iOS-apparaten.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +85,11 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
   Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, ook verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de **Microsoft Outlook**-app.
 
   **Standaardwaarde = Ja**
+  
+- **Afdrukken uitschakelen:** kies **Ja** als u wilt voorkomen dat bedrijfsgegevens worden afgedrukt met apps waarop het MAM-beleid van toepassing is.
+
+    **Standaardwaarde: Ja**
+
 ##  Beleidsinstellingen voor iOS-toegang
 De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps die zijn geconfigureerd met MAM-beleid.
 - **Pincode vereisen voor toegang:** kies **Ja** om een pincode te vereisen voor het gebruik van apps die door beleid worden beheerd. De eerste keer dat de gebruiker de app uitvoert, wordt gevraagd om dit in te stellen.
@@ -114,6 +120,6 @@ Op iOS-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

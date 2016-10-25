@@ -5,6 +5,7 @@ title: Inleiding tot Microsoft Intune | Microsoft Intune
 description: Meer informatie over Intune als het MDM-onderdeel (Mobile Device Management) van de oplossing Enterprise Mobility en Beveiliging.
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article
@@ -15,16 +16,16 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
+ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
 
 
 ---
 
 # Inleiding in Intune
-Microsoft Intune is de 'beheertak' van Microsoft Enterprise Mobility + Security (EMS, voorheen Enterprise Mobility Suite). Bij bedrijfsmobiliteit gaat het erom uw medewerkers in staat te stellen productief te zijn op al hun apparaten en daarbij de gegevens van uw organisatie veilig te stellen.  
+Microsoft Intune is de beheertak van Microsoft Enterprise Mobility + Security (EMS, voorheen Enterprise Mobility Suite). Bij bedrijfsmobiliteit gaat het erom uw medewerkers in staat te stellen productief te zijn op al hun apparaten en daarbij de gegevens van uw organisatie veilig te stellen.  
 
-EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.  
+EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit, met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.  
 
 ![Afbeelding van visie op bedrijfsmobiliteit](..\media\em-vision.png)
 
@@ -55,6 +56,6 @@ In deze documentatie wordt uitgelegd hoe u de hulpprogramma's die Intune biedt, 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,14 +2,16 @@
 # [Aan de slag](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [Wat is er nieuw](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Implementeren en gebruiken](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overzicht van de levenscycli van apparaten en apps](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Levenscyclus van apparaten](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Levenscyclus van apps](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Apparaten inschrijven](enroll-devices-in-microsoft-intune.md)
-### [Bereid u voor op de registratie van apparaten in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [Vereisten voor MDM](prerequisites-for-enrollment.md)
 #### [iOS- en Mac-beheer](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android-beheer](set-up-android-management-with-microsoft-intune.md)
+#### [Android for Work-beheer](set-up-android-for-work.md)
 #### [Windows-apparaatbeheer ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile en Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Apparaten in bedrijfseigendom beheren](manage-corporate-owned-devices.md)
@@ -33,6 +35,7 @@
 ### [Instellingen en functies op uw apparaten beheren met beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-instellingen](ios-policy-settings-in-microsoft-intune.md)
 #### [Android- en Samsung KNOX-instellingen](android-policy-settings-in-microsoft-intune.md)
+#### [Android for Work-instellingen](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8- en Windows 8.1-instellingen](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1-instellingen](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 Desktop- en Mobile-instellingen](windows-10-policy-settings-in-microsoft-intune.md)
@@ -71,6 +74,7 @@
 #### [Licentieovereenkomsten beheren voor Intune-client-pc's](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Apps implementeren](deploy-apps.md)
 ### [Apps implementeren op apparaten en pc's](deploy-apps-in-microsoft-intune.md)
+### [Apps implementeren op Android for Work-apparaten](android-for-work-apps.md)
 ### [Apps bewaken](monitor-apps-in-microsoft-intune.md)
 ### [Apps beheren die zijn gekocht via het volume-aankoopprogramma](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -79,19 +83,21 @@
 ## [Apps configureren](update-apps-using-microsoft-intune.md)
 ### [Apps bijwerken ](update-apps-using-microsoft-intune.md)
 ### [Beleid voor de configuratie van iOS-apps](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Beleid voor de configuratie van Android for Work-apps](afw-app-configuration-policy.md)
 ### [Profielen voor mobiele apps voor iOS-apparaten inrichten](ios-mobile-app-provisioning-profiles.md)
 ### [Internettoegang beheren](manage-internet-access-using-managed-browser-policies.md)
 
 
 ## [Apps en gegevens beveiligen](protect-apps-and-data-with-microsoft-intune.md)
 ### [Nalevingsbeleid voor apparaten](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-#### [Nalevingsbeleid voor apparaten maken](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Voor Android](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [Voor iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [Voor Windows en Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [Een nalevingsbeleid voor apparaten maken](create-a-device-compliance-policy-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows en Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Nalevingsbeleid voor apparaten implementeren](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [De toegang tot e-mail, O365-services en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Toegang beperken op basis van apparaatcompatibiliteit](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online en nieuwe Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -100,10 +106,12 @@
 #### [Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-mailtoegang beperken: voorbeelden](restrict-email-access-example-scenarios.md)
-
+### [Alleen door beleid beheerde apps toestaan voor toegang tot O365-services](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [Apps zonder ADAL blokkeren](block-apps-with-no-modern-authentication.md)
 ### [De toegang tot netwerken beperken (Cisco ISE)](restrict-access-to-networks.md)
 ### [Toegang beperken op basis van apparaat, netwerk en toepassingsrisico](restrict-access-based-on-device-network-app-risk.md)
-#### [Lookout MTP instellen](set-up-your-subscription-with-lookout-mtp.md)
+#### [Lookout-beveiliging tegen apparaatbedreigingen instellen](set-up-your-subscription-with-lookout-mtp.md)
 #### [Lookout in Intune inschakelen](enable-lookout-mtp-connection-in-intune.md)
 #### [Lookout for Work-apps implementeren](configure-and-deploy-lookout-for-work-apps.md)
 #### [Nalevingsbeleid voor beveiliging tegen bedreigingen voor apparaten inschakelen](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -132,17 +140,13 @@
 ### [Apps buiten gebruik stellen ](retire-apps-using-microsoft-intune.md)
 ### [Bedrijfsgegevens van beheerde apps wissen](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Wat u uw eindgebruikers vertelt](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-
-## [Migreren naar Intune](migrate-to-intune.md)
-
-## [Wat is er nieuw?](whats-new-in-microsoft-intune.md)
+## [Bronnen over de eindgebruikerservaring](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [Apps ontwikkelen en aanpassen](/intune/develop/intune-app-sdk)
 
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Intune
 description: Toegang tot bedrijfse-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -59,22 +60,24 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 
 ![Diagram met de beslissingspunten die bepalen of aan een apparaat toegang wordt verleend tot Exchange On-premises of dat deze wordt geblokkeerd](../media/ConditionalAccess8-2.png) Als er niet wordt voldaan aan een beleid voor voorwaardelijke toegang, krijgt de gebruiker een van de volgende berichten te zien wanneer deze zich aanmeldt:
 
-- Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het apparaatrecord in Azure Active Directory.
+- Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportalapp moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het apparaatrecord in Azure Active Directory.
 
 -   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven dat de eindgebruiker omleidt naar de website of app van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
 
 ## Ondersteuning voor mobiele apparaten
--   Windows Phone 8 en hoger
+-   Windows Phone 8.1 en hoger
 
--   Systeemeigen e-mail-app voor iOS.
+-   Systeemeigen e-mailapp voor iOS.
 
--   Systeemeigen e-mail-app voor Android 4 of hoger
+-   EAS-mailclients zoals Gmail op Android 4 of hoger.
+- EAS-mailclients **Android for Work-apparaten:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen in combinatie met Android for Work als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps. 
+
 > [!NOTE]
 > De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
 
 ## Ondersteuning voor pc's
 
-De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+De **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Beleid voor voorwaardelijke toegang configureren
 
@@ -83,7 +86,7 @@ De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLU
 
 2.  Configureer het beleid met de gewenste instellingen: ![Schermafbeelding van de pagina Beleid voor Exchange On-premises](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **De toegang tot Exchange On-premises blokkeren voor e-mail-apps indien het apparaat niet voldoet aan het beleid of niet is ingeschreven voor Microsoft Intune:** wanneer u deze optie selecteert, worden apparaten geblokkeerd die niet worden beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet voldoen aan het nalevingsbeleid van Exchange-services.
+  - **De toegang tot Exchange On-premises blokkeren voor e‑mailapps indien het apparaat niet voldoet aan het beleid of niet is ingeschreven voor Microsoft Intune:** wanneer u deze optie selecteert, worden apparaten geblokkeerd die niet worden beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet voldoen aan het nalevingsbeleid van Exchange-services.
 
   - **Standaardregel negeren - Ingeschreven en compatibele apparaten altijd toegang geven tot Exchange:** als u deze optie inschakelt, is het apparaten die zijn geregistreerd bij Intune en die voldoen aan het nalevingsbeleid, toegestaan toegang tot Exchange te krijgen.  
   Met deze regel wordt de **Standaardregel** genegeerd. Dit houdt in dat ingeschreven apparaten die voldoen aan het beleid, nog steeds toegang kunnen krijgen tot Exchange, zelfs als u de **Standaardregel** instelt op het in quarantaine plaatsen van het apparaat of op het blokkeren van toegang.
@@ -98,7 +101,7 @@ De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLU
 >[!TIP]
 >Als het uw bedoeling is om eerst alle apparaten te blokkeren voordat u toegang verleent tot e-mail, kiest u Toegang blokkeren, of Quarantaineregel. De standaardregel geldt voor alle apparaattypen. Apparaattypen die u als platformuitzondering opgeeft en die niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], vallen hier dus ook onder.
 
-  - **Gebruikersmelding:** naast de meldings-e-mail die vanuit Exchange wordt verzonden, verstuurt Intune ook een e-mail waarin wordt beschreven hoe de blokkering van het apparaat kan worden opgeheven. U kunt het standaardbericht aanpassen aan uw behoeften. Omdat de Intune-meldings-e-mail met herstelinstructies wordt bezorgd in het Exchange-postvak van de gebruiker, kan de gebruiker ook een niet-geblokkeerd apparaat of een andere methode gebruiken om Exchange te openen en het bericht weer te geven, mocht het apparaat van de gebruiker worden geblokkeerd voordat deze het e-mailbericht heeft ontvangen. Dit is vooral van toepassing wanneer de **Standaardregel** is ingesteld op het blokkeren van toegang of het in quarantaine plaatsen van het apparaat.  In dat geval moet de eindgebruiker naar de app-store gaan, de Microsoft-bedrijfsportal-app downloaden en het apparaat inschrijven. Dit geldt voor iOS-, Windows- en Samsung KNOX-apparaten.  Bij apparaten die niet over Samsung KNOX beschikken, moet de IT-beheerder de quarantaine-e-mail naar een ander e-mailaccount verzenden. De eindgebruiker moet deze vervolgens naar het geblokkeerde apparaat kopiëren om de procedure voor inschrijving en naleving uit te voeren.
+  - **Gebruikersmelding:** naast de meldings-e-mail die vanuit Exchange wordt verzonden, verstuurt Intune ook een e-mail waarin wordt beschreven hoe de blokkering van het apparaat kan worden opgeheven. U kunt het standaardbericht aanpassen aan uw behoeften. Omdat de Intune-meldings-e-mail met herstelinstructies wordt bezorgd in het Exchange-postvak van de gebruiker, kan de gebruiker ook een niet-geblokkeerd apparaat of een andere methode gebruiken om Exchange te openen en het bericht weer te geven, mocht het apparaat van de gebruiker worden geblokkeerd voordat deze het e-mailbericht heeft ontvangen. Dit is vooral van toepassing wanneer de **Standaardregel** is ingesteld op het blokkeren van toegang of het in quarantaine plaatsen van het apparaat.  In dat geval moet de eindgebruiker naar de app-store gaan, de Microsoft-bedrijfsportalapp downloaden en het apparaat inschrijven. Dit geldt voor iOS-, Windows- en Samsung KNOX-apparaten.  Bij apparaten die niet over Samsung KNOX beschikken, moet de IT-beheerder de quarantaine-e-mail naar een ander e-mailaccount verzenden. De eindgebruiker moet deze vervolgens naar het geblokkeerde apparaat kopiëren om de procedure voor inschrijving en naleving uit te voeren.
   > [!NOTE]
   > Als u ervoor wilt zorgen dat Exchange de e-mailmelding kan verzenden, moet u het account opgeven dat moet worden gebruikt om de e-mailmelding te verzenden.
   >
@@ -123,6 +126,6 @@ De **Mail**-toepassing voor Windows 8 en hoger (indien geregistreerd bij [!INCLU
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

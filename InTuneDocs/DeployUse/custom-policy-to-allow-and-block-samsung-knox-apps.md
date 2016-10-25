@@ -3,8 +3,9 @@ title: Toegestane en geblokkeerde apps voor KNOX | Microsoft Intune
 description: Aangepast profiel voor het maken van een lijst met toegestane en geblokkeerde apps voor KNOX.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
+ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
+ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 
 
 
@@ -23,7 +24,7 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 Gebruik de procedures in dit onderwerp om een aangepast Microsoft Intune-beleid op te stellen voor het maken van een van de volgende lijsten:
 
-- Een lijst met apps die niet kunnen worden uitgevoerd op het apparaat. Er mogen geen andere apps worden uitgevoerd. Apps in deze lijst worden geblokkeerd, wat betekent dat ze niet worden uitgevoerd, ook niet al ze al waren geïnstalleerd toen het beleid werd toegepast.
+- Een lijst met apps die niet kunnen worden uitgevoerd op het apparaat. Apps in deze lijst worden geblokkeerd, wat betekent dat ze niet worden uitgevoerd, ook niet al ze al waren geïnstalleerd toen het beleid werd toegepast.
 - Een lijst met apps die gebruikers van het apparaat kunnen installeren uit de Google Play Store. Alleen de apps die u in de lijst opneemt, kunnen worden geïnstalleerd. Geen andere apps kunnen worden geïnstalleerd uit de Store.
 
 Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
@@ -51,7 +52,8 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
 
 4. Klik op **OK** en vervolgens op **Beleid opslaan**. 
 
->[TIP] U kunt de pakket-id van een app vinden door te bladeren naar de app in de Google Play Store. De pakket-id is opgenomen in de URL van de pagina van de app. De pakket-id van de Microsoft Word-app is bijvoorbeeld **com.microsoft.office.word**.
+>[!TIP]
+> U kunt de pakket-id van een app vinden door te bladeren naar de app in de Google Play-store. De pakket-id is opgenomen in de URL van de pagina van de app. De pakket-id van de Microsoft Word-app is bijvoorbeeld **com.microsoft.office.word**.
 
 De volgende keer dat een doelapparaat incheckt, worden de app-instellingen toegepast.
 
@@ -70,6 +72,6 @@ Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over d
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

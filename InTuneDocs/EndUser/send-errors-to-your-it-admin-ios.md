@@ -1,8 +1,9 @@
 ---
 title: Fouten naar uw IT-beheerder verzenden | Microsoft Intune
-description: 
+description: Fouten naar uw beheerder verzenden
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 8890929dc1338946dbaa9a3df2aec99df22c1a82
+ms.sourcegitcommit: 881a2d90a863f5c7f3809f890bb82850b6145982
+ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 
 
 ---
@@ -23,18 +24,16 @@ ms.openlocfilehash: 8890929dc1338946dbaa9a3df2aec99df22c1a82
 
 # Fouten naar uw IT-beheerder verzenden
 
-Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw iOS-apparaat, kunt u informatie naar uw IT-beheerder verzenden, zodat deze kan helpen bij het oplossen van het probleem. U kunt de foutgegevens op verschillende manieren verzenden:
+Als er tijdens het gebruik van de bedrijfsportalapp fouten optreden op uw iOS-apparaat, kunt u informatie naar uw IT-beheerder verzenden, zodat deze kan helpen bij het oplossen van het probleem. U kunt de foutgegevens op verschillende manieren verzenden:
 
--   Tik n waarschuwingsberichten over fouten op **Rapporteren**.
+-   Tik in waarschuwingsberichten over fouten op **Rapporteren**.
 
--   Tik in het scherm **Over** van de bedrijfsportal-app op **Diagnostisch rapport verzenden**.
+-   Tik in het scherm **Over** van de bedrijfsportalapp op **Diagnostisch rapport verzenden**.
 
--   Wanneer u in de bedrijfsportal-app bent: schud het apparaat heen en weer en tik op **E-mail** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, gaat u naar **Instellingen** &gt; **Bedrijfsportal** en zorgt u dat de optie **Schudden** is ingeschakeld.
-
-
+-   Zorg ervoor dat u in de bedrijfsportalapp bent, schud het apparaat heen en weer en tik op **E-mail** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, gaat u naar **Instellingen** &gt; **Bedrijfsportal** en zorgt u dat de optie **Schudden** is ingeschakeld.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

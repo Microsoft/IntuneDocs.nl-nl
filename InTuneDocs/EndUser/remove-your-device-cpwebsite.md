@@ -1,8 +1,9 @@
 ---
 title: Uw apparaat uit de bedrijfsportal verwijderen|Microsoft Intune
-description: 
+description: Een apparaat uit de bedrijfsportal verwijderen
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
+ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
 
 
 ---
@@ -23,28 +24,26 @@ ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
 
 # Uw apparaat uit de bedrijfsportal verwijderen
 
-Als u besluit dat u uw apparaat niet meer wilt laten beheren door Intune en uw IT-beheerder, kunt u het apparaat verwijderen uit de bedrijfsportal via de [website van de bedrijfsportal](http://portal.manage.microsoft.com). De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
+Als u besluit dat u uw apparaat niet meer wilt laten beheren door Intune en uw IT-beheerder, kunt u het apparaat uit de bedrijfsportal verwijderen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt de meeste taken die beschikbaar zijn in de bedrijfsportalapp uitvoeren op de bedrijfsportalwebsite.
 
 Als u uw apparaat verwijdert, wordt het niet meer weergegeven op de bedrijfsportal en mogelijk hebt u ook geen toegang meer tot de gegevens, apps en e-mail van uw werk of school.
 
 Ga als volgt te werk om uw apparaat te verwijderen:
 
-1.  Open de [website van de bedrijfsportal](http://portal.manage.microsoft.com) en tik op het apparaat waarvan u de naam wilt wijzigen.
+1.  Open de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) en tik op de naam van het apparaat dat u wilt verwijderen.
 
 2.  Tik op **Verwijderen**.
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Optie voor het verwijderen van een apparaat op de bedrijfsportalwebsite](./media/iwp-screen-with-all-options.png)
 
-3. Lees de waarschuwing die aangeeft wat er gebeurt als u een apparaat verwijdert, en tik op **Verwijderen** als u uw apparaat uit de bedrijfsportal wilt verwijderen.
+3. Lees het waarschuwingsbericht, en tik vervolgens op **Verwijderen** als u uw apparaat uit de bedrijfsportal wilt verwijderen.
 
 Uw apparaat is nu verwijderd.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de contactgegevens van de beheerder.
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

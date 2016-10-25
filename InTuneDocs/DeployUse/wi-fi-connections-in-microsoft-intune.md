@@ -3,8 +3,9 @@ title: Wi-Fi-verbindingen | Microsoft Intune
 description: Gebruik Wi-Fi-profielen om gebruikers verbinding te laten maken met uw Wi-Fi-netwerken.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +30,7 @@ Een voorbeeld: u installeert een nieuw Wi-Fi-netwerk met de naam **Contoso Wi-Fi
 
 1.   Maak een Wi-Fi-profiel met de instellingen die nodig zijn om verbinding te maken met het draadloze netwerk **Contoso Wi-Fi**.
 
-2. Implementeer het profiel voor de groep gebruikers met iOS-apparaten.
+2.   Implementeer het profiel voor de groep gebruikers met iOS-apparaten.
 
 3.   Gebruikers vinden het nieuwe **Contoso Wi-Fi**-netwerk in de lijst met draadloze netwerken en kunnen gemakkelijk verbinding met dit netwerk maken.
 
@@ -39,6 +40,8 @@ Een voorbeeld: u installeert een nieuw Wi-Fi-netwerk met de naam **Contoso Wi-Fi
 U kunt Wi-Fi-profielen implementeren voor de volgende platforms:
 
 -   Android 4.0 en hoger
+
+-   Android for Work   
 
 -   iOS 8.0 en hoger
 
@@ -52,10 +55,13 @@ Voor apparaten met Windows 8.1 of Windows 10 Desktop of Mobile kunt u een Wi-Fi-
 
     -   Wi-Fi-profiel (Android 4 en hoger)
 
+    -   Wi-Fi-profiel (Android for Work)
+
     -   Wi-Fi-profiel (iOS 8.0 en hoger)
 
     -   Wi-Fi-profiel (Mac OS X 10.9 en hoger)
-
+    
+    
     Er zijn geen aanbevolen instellingen voor dit beleidstype. U moet een aangepast beleid maken.
 
 3.  Geef de naam en beschrijving voor het profiel op.
@@ -173,6 +179,6 @@ Zie [Wi-Fi-profiel met vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

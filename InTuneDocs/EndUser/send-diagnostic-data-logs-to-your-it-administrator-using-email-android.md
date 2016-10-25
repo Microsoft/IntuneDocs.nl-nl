@@ -1,8 +1,9 @@
 ---
 title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail | Microsoft Intune
-description: 
+description: Gegevenslogboeken verzenden via e-mail op een Android-apparaat
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -14,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
+ms.sourcegitcommit: 6be7193a5f04768a59b5c73fb9c2f51241156ada
+ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 
 
 ---
 
 
-# Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail
+# Logboeken met diagnostische gegevens naar de IT-beheerder verzenden via e-mail
 
-Als er op uw Android-apparaat een fout optreedt terwijl u met apps van uw school of bedrijf werkt of de bedrijfsportal-app gebruikt, kunt u logboeken met diagnostische gegevens verzenden, zodat de IT-beheerder kan nagaan wat het probleem is en dit kan oplossen. Als u wilt dat alle gegevens in de logboeken worden vermeld zodat het voor de IT-beheerder eenvoudiger is om het probleem te achterhalen, schakelt u Uitgebreide logboekregistratie in. Meer informatie over [uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+Als er op uw Android-apparaat een fout optreedt terwijl u met apps van uw school of bedrijf werkt of de bedrijfsportalapp gebruikt, kunt u logboeken met diagnostische gegevens verzenden, zodat de IT-beheerder kan nagaan wat het probleem is en dit kan oplossen. Als u wilt dat alle gegevens in de logboeken worden vermeld zodat het voor de IT-beheerder eenvoudiger is om de oorzaak van het probleem te achterhalen, schakelt u uitgebreide logboekregistratie in. Zie [Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het Android-apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) voor meer informatie over uitgebreide logboekregistratie.
 
-Ga als volgt te werk om per e-mail logboeken naar uw IT-beheerder te verzenden:
+Ga als volgt te werk om logboeken naar uw IT-beheerder te verzenden via e-mail:
 
 1.  Open de app Bedrijfsportal.
 
@@ -36,9 +37,10 @@ Ga als volgt te werk om per e-mail logboeken naar uw IT-beheerder te verzenden:
 
 3.  Tik onder **Help** op **Help opvragen**.
 
-Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

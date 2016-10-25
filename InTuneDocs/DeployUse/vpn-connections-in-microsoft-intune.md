@@ -4,7 +4,7 @@ description: VPN-profielen gebruiken om VPN-instellingen te implementeren voor g
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # VPN-verbindingen in Microsoft Intune
- Met virtuele particuliere netwerken (VPN's) kunt u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk geven. Externe gebruikers kunnen werken alsof hun apparaten fysiek zijn verbonden met het netwerk. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. Gebruik *VPN-profielen* in Microsoft Intune om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie. Door het implementeren van deze instellingen minimaliseert u de eindgebruikersinspanningen die vereist zijn om verbinding te maken met resources op het bedrijfsnetwerk.
+
+Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een *VPN-verbindingsprofiel* om een verbinding met de VPN-server op te zetten. Gebruik *VPN-profielen* in Microsoft Intune om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken. 
 
 U wilt bijvoorbeeld alle iOS-apparaten voorzien van de instellingen die vereist zijn om verbinding te maken met een bestandsshare op het bedrijfsnetwerk. U maakt een VPN-profiel met de instellingen die nodig zijn om verbinding te maken met het bedrijfsnetwerk en vervolgens implementeert u dit profiel voor alle gebruikers met iOS-apparaten. De gebruikers zien de VPN-verbinding in de lijst met beschikbare netwerken en kunnen moeiteloos verbinding maken.
 
 U kunt de volgende typen apparaten configureren door gebruik te maken van VPN-profielen:
 
 * Apparaten met Android 4 en hoger
+* Apparaten met Android for Work
 * Apparaten met iOS 8.0 en hoger
 * Apparaten met Mac OS X 10.9 en hoger
 * Geregistreerde apparaten met Windows 8.1 en hoger
@@ -70,9 +72,7 @@ Voor VPN-profielen kan een aantal verschillende verbindingstypen en -protocollen
 
 ### Certificaten
 
-Wanneer u het VPN-profiel maakt, kiest u een SCEP- of PFX-certificaatprofiel dat u eerder hebt gemaakt in Intune.
-
-Dit wordt het identiteitscertificaat genoemd. Het wordt gebruikt voor verificatie aan de hand van een vertrouwd-certificaatprofiel (of een basiscertificaat) dat u hebt gemaakt om te bepalen of het apparaat van de gebruiker verbinding mag maken. Het vertrouwde certificaat wordt geïmplementeerd op de computer die de VPN-verbinding verifieert, meestal is dat de VPN-server.
+Wanneer u het VPN-profiel maakt, kiest u een SCEP- of PFX-certificaatprofiel dat u eerder hebt gemaakt in Intune. Dit wordt het identiteitscertificaat genoemd. Het wordt gebruikt voor verificatie aan de hand van een vertrouwd-certificaatprofiel (*basiscertificaat*) dat u hebt gemaakt om te bepalen of het apparaat van de gebruiker verbinding mag maken. Het vertrouwde certificaat wordt geïmplementeerd op de computer die de VPN-verbinding verifieert, meestal is dat de VPN-server.
 
 Zie [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruiken en maken van certificaatprofielen in Intune.
 
@@ -85,6 +85,7 @@ De gebruiker wordt geverifieerd op de VPN-server door een gebruikersnaam en wach
 1. Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** > **Beleid toevoegen**.
 2. Selecteer een sjabloon voor het nieuwe beleid door het uitbreiden van de relevante apparaattype en kies vervolgens het VPN-profiel voor dat apparaat:
     * **VPN-profiel (Android 4 en hoger)**
+    * **VPN-profiel (Android for Work)**
     * **VPN-profiel (iOS 8.0 en hoger)**
     * **VPN-profiel (Mac OS X 10.9 en hoger)**
     * **VPN-profiel (Windows 8.1 en hoger)**
@@ -92,6 +93,9 @@ De gebruiker wordt geverifieerd op de VPN-server door een gebruikersnaam en wach
     * **VPN-profiel (Windows 10 Desktop en Mobile en hoger)**
 
  U kunt alleen een aangepast beleid voor een VPN-profiel maken en implementeren. Aanbevolen instellingen zijn niet beschikbaar.
+
+> [!Note]
+> Met een VPN-profiel voor Android for Work-apparaten kan alleen een VPN-verbinding tot stand worden gebracht voor apps die zijn geïnstalleerd in het werkprofiel van het apparaat.
 
 3. Met behulp van de volgende tabel kunt u de instellingen voor het VPN-profiel configureren:
 
@@ -192,6 +196,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: Over de bedrijfsportal | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
 
 
 ---
@@ -25,10 +26,10 @@ ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
 ## Wat is de bedrijfsportalwebsite en wat kunt u ermee doen?
 De Microsoft Intune-bedrijfsportal biedt u toegang tot de gegevens en apps van uw bedrijf of school. U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
-- Door de bedrijfsportal-app op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren. Hiervoor kunnen verschillende methoden worden gebruikt.
-- Door naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) te gaan die uw IT-beheerd heeft ingesteld.
+- Door de bedrijfsportalapp op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportalapp via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportalapp ook voor u installeren.
+- Door naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) te gaan die uw IT-beheerder heeft ingesteld.
 
-Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken zowel via de app als de website uitvoeren. Enkele voorbeelden:
+Er zijn enkele kleine verschillen tussen de bedrijfsportalapp en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Hieronder vindt u enkele voorbeelden van taken die u kunt uitvoeren:
 
 - Uw apparaten registreren
 - De status van uw apparaten weergeven
@@ -37,7 +38,7 @@ Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfspor
 - Uw pincode of wachtwoord opnieuw instellen
 - Contact opnemen met uw IT-afdeling voor ondersteuning
 
-Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app kunt doen, kiest u een van de volgende koppelingen:
+Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportalapp op uw apparaat kunt doen, kiest u een van de volgende koppelingen:
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -45,7 +46,7 @@ Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app kun
 - [Windows](using-your-windows-device-with-intune.md)
 - [Bedrijfsportalwebsite](using-the-intune-company-portal-website.md)
 
-## Wat gebeurt er wanneer ik een computer of apparaat toevoeg aan de bedrijfsportal?
+## Wat gebeurt er wanneer u een computer of apparaat toevoegt aan de bedrijfsportal?
 Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn dat er software wordt geïnstalleerd of een app wordt gedownload (afhankelijk van het apparaat).  Bovendien geeft u de IT-beheerder toestemming om uw apparaat te beheren om de bedrijfsinformatie op het apparaat te beschermen.
 
 Voor meer informatie over wat de IT-beheerder wel en niet op uw apparaat kan zien, gebruikt u de koppeling die overeenkomt met het type apparaat dat u gebruikt:
@@ -55,25 +56,23 @@ Voor meer informatie over wat de IT-beheerder wel en niet op uw apparaat kan zie
 - [iOS en Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Wat voor computers of apparaten kan ik toevoegen aan de bedrijfsportal?
+## Wat voor computers of apparaten kunt u toevoegen aan de bedrijfsportal?
 
 -   iPhones, iPads en apparaten met Mac OS X
 
 -   Mobiele Android-apparaten
 
 -   Windows-apparaten
-    -   10 Mobile
+    -   Windows 10 Mobile
     -   Windows 10 Desktop
     -   Windows Phone 8,1
     -   Windows 8.1
-    -   Windows RT-apparaten
-    -   Windows Phone 8
     -   iPhones, iPads en apparaten met Mac OS X
     -   Mobiele Android-apparaten
 
 
-## Kan ik een computer of een apparaat verwijderen uit de bedrijfsportal?
-Ja, kunt u een computer of een apparaat verwijderen uit de bedrijfsportal of deze opnieuw instellen. Er is een verschil tussen **verwijderen** en **opnieuw instellen**:
+## Kunt u een computer of apparaat verwijderen uit de bedrijfsportal?
+Ja, u kunt een computer of apparaat verwijderen uit de bedrijfsportal of deze opnieuw instellen. Er is een verschil tussen **verwijderen** en **opnieuw instellen**.
 
 Wanneer u een computer of apparaat *verwijdert*, wordt de registratie van uw apparaat bij Intune ongedaan gemaakt. Zodra u de registratie ongedaan hebt gemaakt, is de bedrijfsportal niet meer toegankelijk vanaf dat apparaat en worden bepaalde bedrijfsgegevens mogelijk verwijderd van uw apparaat. Als u wilt weten hoe u uw apparaat uit de bedrijfsportal verwijdert, kiest u een van de volgende koppelingen:
 
@@ -92,14 +91,14 @@ Kies een van de volgende koppelingen om te zien hoe u uw apparaat opnieuw instel
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Uw apparaat opnieuw instellen op de website van de bedrijfsportal](reset-your-device-cpwebsite.md)
 
-## Ik zie niet al mijn apparaten in de bedrijfsportal
-Als u een apparaat wilt bekijken, moet dit zijn toegevoegd aan de bedrijfsportal. Volg de instructies van uw beheerder om naar de bedrijfsportal te gaan en voer de stappen uit voor uw apparaat. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
+## U ziet niet al uw apparaten in de bedrijfsportal
+Om een apparaat te kunnen bekijken, moet het eerst zijn toegevoegd aan de bedrijfsportal. Volg de instructies van uw beheerder om naar de bedrijfsportal te gaan en voer de stappen uit voor uw apparaat. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
 
 ## Neem contact op met de IT-beheerder als u vragen hebt.
 Neem contact op met de IT-beheerder als u hulp nodig hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

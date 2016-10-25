@@ -3,6 +3,7 @@ title: Fout bij het evalueren van het apparaat | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,22 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: a497a3e9372a89326f31d6eb869e38200ebe6802
+ms.sourcegitcommit: 703878a70227716213f5a25b1b5dfa99fce42ee5
+ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 
 
 ---
 
 
 # Fout bij het evalueren van het apparaat
-Er is gedetecteerd dat uw apparaat niet compatibel is met een of meer van de beleidsregels van uw bedrijf. In verband hiermee is er tijdens het evalueren van het apparaat een fout opgetreden.
+Uw apparaat voldoet niet aan een of meer bedrijfsbeleidsregels, maar de fout kan nu niet worden weergegeven, omdat er een probleem is met het evalueren van het apparaat.  
 
-Om dit probleem op te lossen, wacht u een paar minuten en tikt u op **Controleren op naleving**.
-
-Neem contact op met uw IT-beheerder als het probleem zich blijft voordoen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Om dit probleem op te lossen, wacht u een paar minuten en tikt u op **Controleren op naleving**. Neem contact op met uw IT-beheerder als het probleem zich blijft voordoen. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

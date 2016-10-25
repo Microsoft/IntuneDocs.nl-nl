@@ -3,6 +3,7 @@ title: Uw Mac OS X-apparaat registreren bij Intune | Microsoft Intune
 description: Informatie over hoe u een Mac OS X-apparaat bij Intune kunt inschrijven
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,16 +15,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
 
 
 ---
 
 
-# Uw Mac OS X-apparaat registreren bij Intune
+# Uw Mac OS X-apparaat inschrijven bij Intune
 
-Wanneer u uw Mac OS X-apparaat bij Intune registreert, kunt u toegang krijgen tot het bedrijfsnetwerk, de e-mail van uw werk en werkbestanden, en kunt u bedrijfsapps installeren. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie over wat er gebeurt wanneer u uw apparaat registreert.
+Wanneer u uw Mac OS X-apparaat bij Intune inschrijft, krijgt u toegang tot het bedrijfsnetwerk en kunt u de e-mail en bestanden van uw werk ophalen. U kunt ook bedrijfsapps ophalen. Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie over wat er gebeurt wanneer u uw apparaat registreert.
 
 Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) als u probeert een iOS-apparaat te registreren.
 
@@ -44,7 +45,7 @@ Ga als volgt te werk om uw Mac OS X-apparaat te registreren:
 
     ![installeren-beheerprofiel](./media/3-macosx-enroll-tap-install.png)
 
-    Wanneer u klaar bent met het registreren, ziet u een beheerprofielpagina waarop wordt aangegeven dat uw profiel is geverifieerd.
+    Wanneer u klaar bent met het registreren, ziet u een **beheerprofiel**pagina waarop wordt aangegeven dat uw profiel is geverifieerd.
 
     ![beheerprofiel-geverifieerd](./media/4-macosx-enroll-done.png)
 
@@ -52,7 +53,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactge
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: Beleid maken en een app publiceren voor gebruikers | Microsoft Intune
 description: Zo kunt u beleidsregels maken en een app publiceren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 1a41bfd926b1dac88ca8c8cd33483955f1150e34
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 0fbc8fc23ce65987e4694bce0748362d8ce10153
 
 
 ---
@@ -62,7 +63,7 @@ Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en is ge√
 
     -   **Android:** [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8 of Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8.1:** [http://www.windowsphone.com/nl-nl/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  Typ op de pagina **Beschrijving van software** de informatie over de software die u voor gebruikers in de bedrijfsportal wilt weergeven en klik vervolgens op **Volgende**. De volgende instellingen zijn beschikbaar (in dit voorbeeld verwijzen we naar Skype):
 
@@ -99,6 +100,6 @@ Gefeliciteerd. U hebt zojuist stap 4 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

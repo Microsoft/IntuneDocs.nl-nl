@@ -3,6 +3,7 @@ title: Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid | Micro
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,17 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c47a7097d86ded8e6f38f0270352a7c432110464
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: 166c0708645d191abaaa73aa3143ca558d64ffd0
 
 
 ---
 
 # Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid
-Uw IT-beheerder heeft vastgesteld dat u een jailbroken apparaat gebruikt. 'Gekraakt' betekent dat de software-beperkingen die zijn opgelegd door iOS, zijn verwijderd. Hierdoor kan de software een beveiligingsrisico en bedreiging voor uw bedrijfsbronnen vormen. Als dit gebeurt, krijgt uw apparaat geen toegang meer tot bedrijfsresources en moet u contact opnemen met uw IT-beheerder voor hulp. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de contactgegevens van de IT-beheerder.
+Uw IT-beheerder heeft vastgesteld dat u een 'jailbroken' apparaat gebruikt. 'Jailbroken' betekent dat softwarebeperkingen van iOS zijn verwijderd. Dit kan een beveiligingsrisico vormen en een bedreiging voor uw bedrijfsresources zijn. 
+
+Als dit gebeurt, krijgt uw apparaat geen toegang meer tot bedrijfsresources en moet u contact opnemen met uw IT-beheerder voor hulp. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de contactgegevens van de IT-beheerder.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

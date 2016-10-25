@@ -4,7 +4,7 @@ description: In dit onderwerp worden de beleidsinstellingen voor het beheren van
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
 - **Synchronisatie van contactpersonen uitschakelen:** kies **Ja** om te voorkomen dat contactgegevens worden gesynchroniseerd met de systeemeigen adresboek-app op het apparaat. Als u **Nee** selecteert, slaat de app de contactgegevens op in de systeemeigen adresboek-app op het apparaat.<br/>Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, ook verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de **Microsoft Outlook**-app.
 
   **Standaardwaarde = Ja**
+- **Afdrukken uitschakelen:** kies **Ja** als u wilt voorkomen dat bedrijfsgegevens worden afgedrukt met apps waarop een MAM-beleid van toepassing is.
+
+  **Standaardwaarde: Ja**
 
 ##  Beleidsinstellingen voor Android-toegang
 De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps die zijn geconfigureerd met MAM-beleid
@@ -96,6 +99,6 @@ De term **Door beleid beheerde apps** wordt gebruikt om te verwijzen naar apps d
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

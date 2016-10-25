@@ -3,6 +3,7 @@ title: Intune-evaluatiehandleiding | Microsoft Intune
 description: Inleiding en vereisten voor het instellen van een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +38,12 @@ Voordat u aan de slag gaat met Intune, hebt u het volgende nodig:
 
 -   Als u al een bestaand Microsoft Online Services-account hebt, hebt u de beheerdersreferenties nodig voor dat account. U hebt deze beheerdersreferenties niet nodig als u zo’n account niet hebt of de Intune-tenant alleen wilt gebruiken voor evaluatiedoeleinden.
 
--   Als u met de evaluatieversie van Intune iOS- of Windows Phone-apparaten gaat beheren, hebt u certificaten (of sleutels) en accounts nodig om de certificaten op te halen (zie de volgende tabel). Voor Android-apparaten zijn geen extra certificaten vereist.
+-   Als u met de evaluatieversie van Intune iOS- of Windows Phone 8.1-apparaten gaat beheren, hebt u certificaten (of sleutels) en accounts nodig om de certificaten op te halen (zie de volgende tabel). Voor Android-apparaten zijn geen extra certificaten vereist.
 
     |Platfofm|Certificaatvereisten|Meer informatie|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 en Windows Phone 8 |Er is geen certificaat vereist voor Windows Phone 8.1-gebruikers die de app Bedrijfsportal uit de Store installeren. Er is een Symantec-certificaat vereist voor Windows Phone 8.0 of voor het gebruik van Intune om de app Bedrijfsportal te implementeren op Windows Phone 8.1-apparaten.|In deze richtlijnen wordt ervan uitgegaan dat uw gebruikers de app Bedrijfsportal vanuit de Store downloaden op een apparaat met Windows Phone 8.1 of hoger. Zie [Windows Phone-beheer met Microsoft Intune instellen](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune) voor informatie over de ondersteuning van Windows Phone 8.0.|
-    |Windows 10-, Windows RT 8.1-, Windows RT- of Windows 8.1-apparaten|Er zijn geen certificaten vereist voor de registratie van apparaten met Windows RT en Windows.|[Installeer de Windows-pc-client met Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8,1 |Er is geen certificaat vereist voor Windows Phone 8.1-gebruikers die de app Bedrijfsportal uit de Store installeren. |In deze richtlijnen wordt ervan uitgegaan dat uw gebruikers de app Bedrijfsportal vanuit de Store downloaden op een apparaat met Windows Phone 8.1 of hoger. |
+    |Windows 10-, Windows RT 8.1- of Windows 8.1-apparaten|Er zijn geen certificaten vereist voor de registratie van apparaten met Windows RT en Windows.|[Installeer de Windows-pc-client met Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 of hoger|Haal een Apple Push Notification Service-certificaat op.|Vraag een Apple Push Notification Service-certificaat aan bij Apple, zoals hier wordt beschreven: [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Stappen voor het voltooien van een 30-daagse evaluatieversie van Intune
@@ -66,6 +67,6 @@ Het is nu tijd om aan de slag te gaan met uw evaluatieversie van 30 dagen.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
