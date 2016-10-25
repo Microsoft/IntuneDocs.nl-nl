@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ Kies de optie **Vereiste installatie** om te vereisen dat de Lookout-app op het 
 
 ## iOS (door bedrijf ondertekende versie van Lookout-app)
 
-* **Stap 1:** zorg ervoor dat **iOS-beheer** is ingesteld op het apparaat. Zie [iOS- en Mac-apparaatbeheer instellen](Set up iOS and Mac device management.md) voor instructies voor het instellen van uw apparaat voor iOS-beheer.
+* **Stap 1:** zorg ervoor dat **iOS-beheer** is ingesteld op het apparaat. Zie [iOS- en Mac-apparaatbeheer instellen](set-up-ios-and-mac-management-with-microsoft-intune.md) voor instructies voor het instellen van uw apparaat voor iOS-beheer.
 
 * **Stap 2:** **onderteken** de Lookout for Work-app voor iOS opnieuw. De Lookout for Work-app voor iOS wordt gedistribueerd buiten de iOS App Store. **Voordat u de app distribueert**, moet u de app opnieuw ondertekenen met het iOS Enterprise Developer-certificaat. Zie het [proces voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS](https://personal.support.lookout.com/hc/en-us/articles/114094038714) (Engelstalig) op de website van Lookout voor gedetailleerde instructies voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS.
 
@@ -49,7 +49,7 @@ Kies de optie **Vereiste installatie** om te vereisen dat de Lookout-app op het 
   1.  Meld u aan bij de [Azure Active Directory-beheerportal](https://manage.windowsazure.com) en navigeer naar de pagina met toepassingen.
   2.  Voeg de **Lookout for Work-app voor iOS** toe als een **native clienttoepassing**.
   ![schermafdruk van het dialoogvenster 'Apps toevoegen' met de optie voor een native clientapp](../media/mtp/aad-add-app.png)
-  
+
   3. Vervang **com.lookout.enterprise.yourcompanyname** door de klantbundel-id die u hebt geselecteerd bij het ondertekenen van de IPA.
   4.  Voeg de aanvullende omleidings-URI **&lt;companyportal://code/>** toe, gevolgd door een versie met URL-codering van uw oorspronkelijke omleidings-URI.
   5.  Voeg **overgedragen machtigingen** toe aan uw app.
