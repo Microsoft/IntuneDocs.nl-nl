@@ -2,8 +2,8 @@
 title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail | Microsoft Intune
 description: Gegevenslogboeken verzenden via e-mail op een Android-apparaat
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

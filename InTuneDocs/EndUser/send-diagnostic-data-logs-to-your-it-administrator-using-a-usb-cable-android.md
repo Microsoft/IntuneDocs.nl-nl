@@ -2,8 +2,8 @@
 title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden met behulp van een USB-kabel | Microsoft Intune
 description: Gegevenslogboeken verzenden met behulp van een USB-kabel
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

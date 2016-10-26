@@ -2,8 +2,8 @@
 title: Uw Windows Phone 8.1-apparaat registreren bij Intune | Microsoft Intune
 description: Beschrijft hoe u een Windows Phone 8.1-apparaat bij Intune kunt inschrijven
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

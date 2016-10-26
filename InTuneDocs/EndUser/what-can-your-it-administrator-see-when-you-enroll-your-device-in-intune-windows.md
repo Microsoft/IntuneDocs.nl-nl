@@ -2,8 +2,8 @@
 title: Wat kan uw IT-beheerder zien wanneer u uw apparaat registreert bij Intune? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
