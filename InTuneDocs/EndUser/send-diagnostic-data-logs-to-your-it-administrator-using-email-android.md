@@ -2,8 +2,8 @@
 title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail | Microsoft Intune
 description: Gegevenslogboeken verzenden via e-mail op een Android-apparaat
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# Logboeken met diagnostische gegevens naar de IT-beheerder verzenden via e-mail
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Logboeken met diagnostische gegevens naar de IT-beheerder verzenden via e-mail
 
 Als er op uw Android-apparaat een fout optreedt terwijl u met apps van uw school of bedrijf werkt of de bedrijfsportalapp gebruikt, kunt u logboeken met diagnostische gegevens verzenden, zodat de IT-beheerder kan nagaan wat het probleem is en dit kan oplossen. Als u wilt dat alle gegevens in de logboeken worden vermeld zodat het voor de IT-beheerder eenvoudiger is om de oorzaak van het probleem te achterhalen, schakelt u uitgebreide logboekregistratie in. Zie [Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het Android-apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) voor meer informatie over uitgebreide logboekregistratie.
 

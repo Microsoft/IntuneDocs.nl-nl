@@ -2,8 +2,8 @@
 title: Fouten naar uw IT-beheerder verzenden | Microsoft Intune
 description: Fouten naar uw beheerder verzenden
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# Fouten naar uw IT-beheerder verzenden
+# <a name="send-errors-to-your-it-admin"></a>Fouten naar uw IT-beheerder verzenden
 
 Als er tijdens het gebruik van de bedrijfsportalapp fouten optreden op uw iOS-apparaat, kunt u informatie naar uw IT-beheerder verzenden, zodat deze kan helpen bij het oplossen van het probleem. U kunt de foutgegevens op verschillende manieren verzenden:
 

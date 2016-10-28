@@ -2,8 +2,8 @@
 title: Fout bij het evalueren van het apparaat | Microsoft Intune
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# Fout bij het evalueren van het apparaat
+# <a name="error-evaluating-device"></a>Fout bij het evalueren van het apparaat
 Uw apparaat voldoet niet aan een of meer bedrijfsbeleidsregels, maar de fout kan nu niet worden weergegeven, omdat er een probleem is met het evalueren van het apparaat.  
 
 Om dit probleem op te lossen, wacht u een paar minuten en tikt u op **Controleren op naleving**. Neem contact op met uw IT-beheerder als het probleem zich blijft voordoen. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
