@@ -2,8 +2,8 @@
 title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Intune
 description: In dit onderwerp vindt u fout- en statuscodes die u kunt gebruiken bij het oplossen van problemen met de toegang tot bedrijfsresources.
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Problemen bij toegang tot bedrijfsbronnen oplossen met Microsoft Intune
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Problemen bij toegang tot bedrijfsbronnen oplossen met Microsoft Intune
 Wanneer een Microsoft Intune-actie een foutcode retourneert, kunt u aan de hand van de fout- en statuscodes in dit onderwerp het probleem proberen op te lossen.
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
-## Statuscodes voor met MDM beheerde Windows-apparaten
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Statuscodes voor met MDM beheerde Windows-apparaten
 
 |Statuscode|Foutbericht|Wat u moet doen|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |130 (APP_CI_ENFORCEMENT_ERROR)|Installatie van MSADP-licentie is mislukt||
 |Geen status (APP_CI_ENFORCEMENT_UNKNOWN)|n.v.t.|De status is momenteel onbekend.|
 
-## Toegang tot bedrijfsbronnen (veelvoorkomende fouten)
+## <a name="company-resource-access-common-errors"></a>Toegang tot bedrijfsbronnen (veelvoorkomende fouten)
 
 |Statuscode|Hexadecimale foutcode|Foutbericht|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |-2016341111|0x87D11389|iOS-apparaat heeft een onverwachte status Niet-actief geretourneerd|
 |-2016341112|0x87D11388|iOS-apparaat is momenteel bezig|
 
-## Fouten geretourneerd door iOS-apparaten
+## <a name="errors-returned-by-ios-devices"></a>Fouten geretourneerd door iOS-apparaten
 
 |Statuscode|Hexadecimale foutcode|Foutbericht|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |-2016335111|0x87D12AF9|1001:Niet-ondersteunde profielversie|
 |-2016335112|0x87D12AF8|1000:Onjuist gevormd profiel|
 
-## OMA-reactiecodes
+## <a name="oma-response-codes"></a>OMA-reactiecodes
 
 |Statuscode|Hexadecimale foutcode|Foutbericht|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |-2016345912|0x87D100C8|De SyncML-opdracht is uitgevoerd.|
 |-2016346011|0x87D10065|De opgegeven SyncML-opdracht wordt uitgevoerd, maar is niet voltooid.|
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 

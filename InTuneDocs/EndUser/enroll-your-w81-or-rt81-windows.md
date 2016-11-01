@@ -3,7 +3,7 @@ title: Uw Windows 8.1- of Windows RT 8.1-apparaat inschrijven | Microsoft Intune
 description: Informatie over hoe u een Windows 8.1 of Windows RT 8.1-apparaat bij Intune kunt inschrijven
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 ---
 
 
-# <a name="enroll-your-windows-8.1-or-windows-rt-8.1-device-in-intune"></a>Uw Windows 8.1- of Windows RT 8.1-apparaat registreren bij Intune
+# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Uw Windows 8.1- of Windows RT 8.1-apparaat registreren bij Intune
 
 Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportalapp installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
 

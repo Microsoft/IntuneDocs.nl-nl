@@ -3,7 +3,7 @@ title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden met behulp
 description: Gegevenslogboeken verzenden met behulp van een USB-kabel
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

@@ -2,8 +2,8 @@
 title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Intune
 description: In dit onderwerp vindt u fout- en statuscodes die u kunt gebruiken bij het oplossen van problemen met de toegang tot bedrijfsresources.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |130 (APP_CI_ENFORCEMENT_ERROR)|Installatie van MSADP-licentie is mislukt||
 |Geen status (APP_CI_ENFORCEMENT_UNKNOWN)|n.v.t.|De status is momenteel onbekend.|
 
-## <a name="company-resource-access-(common-errors)"></a>Toegang tot bedrijfsbronnen (veelvoorkomende fouten)
+## <a name="company-resource-access-common-errors"></a>Toegang tot bedrijfsbronnen (veelvoorkomende fouten)
 
 |Statuscode|Hexadecimale foutcode|Foutbericht|
 |---------------|--------------------------|-----------------|

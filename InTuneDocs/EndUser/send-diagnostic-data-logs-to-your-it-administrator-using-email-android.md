@@ -3,7 +3,7 @@ title: Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail
 description: Gegevenslogboeken verzenden via e-mail op een Android-apparaat
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
