@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Apps configureren met configuratiebeleid voor mobiele apps in Microsoft Intune
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Apps configureren met configuratiebeleid voor mobiele apps in Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Gebruik het configuratiebeleid voor mobiele apps in Microsoft Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een iOS-app uitvoeren. Een app kan gebruikers bijvoorbeeld verplichten het volgende op te geven:
 
 -   Een aangepast poortnummer.
@@ -37,7 +40,7 @@ Voor het gebruik van configuratiebeleid voor apps moet de ontwikkelaar van de ap
 
 U implementeert het configuratiebeleid voor de app voor dezelfde gebruikers als de app die u wilt configureren. De beleidsinstellingen worden telkens gebruikt wanneer de app wordt uitgevoerd.
 
-## Een configuratiebeleid voor mobiele apps configureren
+## <a name="configure-a-mobile-app-configuration-policy"></a>Een configuratiebeleid voor mobiele apps configureren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
 
@@ -61,7 +64,7 @@ U implementeert het configuratiebeleid voor de app voor dezelfde gebruikers als 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** .
 
 
-## Het configuratiebeleid voor de app implementeren
+## <a name="deploy-the-app-configuration-policy"></a>Het configuratiebeleid voor de app implementeren
 Nadat u een configuratiebeleid voor de mobiele app hebt gemaakt, moet u het implementeren voor dezelfde gebruikers als de gebruikers waarvoor u de app implementeert waarop de instellingen van toepassing zijn.
 
 Zie [Een configuratiebeleid implementeren](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) voor informatie over het implementeren van beleid
@@ -72,10 +75,6 @@ Wanneer de geïmplementeerde app op een apparaat wordt uitgevoerd, worden de ins
 
 > [!TIP]
 > Implementeer slechts één configuratiebeleid voor apps per app voor elke gebruiker.
-
-
-
-
 
 
 
