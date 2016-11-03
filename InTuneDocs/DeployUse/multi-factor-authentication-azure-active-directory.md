@@ -2,8 +2,8 @@
 title: Multi-Factor Authentication met Azure AD| Microsoft Intune
 description: Hoe u in Azure AD Multi-Factor Authentication vereist voor apparaatregistratie.
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Multi-Factor Authentication voor Microsoft Intune
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Multi-Factor Authentication voor Microsoft Intune
 
 Intune integreert Multi-Factor Authentication (MFA) van Azure AD voor apparaatregistraties om u te helpen uw bedrijfsresources te beveiligen. MFA vereist naast gebruikersnamen en wachtwoorden, ook andere verificatiefactoren, zoals tekstverificatie. Dit wordt ondersteund voor apparaten met iOS, Android, Windows 8.1 of hoger en Windows Phone 8.1 of hoger.
 
@@ -27,7 +27,7 @@ Intune integreert Multi-Factor Authentication (MFA) van Azure AD voor apparaatre
 >
 > Bij oudere versies van Configuration Manager (ouder dan versie 1610) ziet u nog steeds de MFA-instelling in de beheerconsole van Configuration Manager. Configureer MFA niet in de beheerconsole van Configuration Manager want dat werkt niet. Configureer MFA zoals in dit onderwerp wordt beschreven.
 
-### Intune configureren zodat Multi-Factor Authentication wordt vereist bij het registreren van apparaten
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>Intune configureren zodat Multi-Factor Authentication wordt vereist bij het registreren van apparaten
 Als u MFA wilt vereisten bij het registreren van apparaten, volgt u deze stappen:
 
 1. Meld u met uw beheerdersreferenties aan bij [Microsoft Azure Portal](https://manage.windowsazure.com).
