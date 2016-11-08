@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
-ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
@@ -106,7 +106,7 @@ De automatische inschrijvingstaak voor Intune, de registerwaarde **WindowsIntune
 
 ## <a name="instruct-users-to-selfenroll"></a>Registratie door de gebruikers zelf
 
-Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website met de bedrijfsportal](http://portal..manage.microsoft.com) te gaan. Als de webportal detecteert dat het apparaat een Windows-pc is, wordt gebruikers gevraagd om de pc te registreren door de Intune-softwareclient te downloaden. Nadat de software is gedownload, kunnen gebruikers deze installeren om hun pc's onder beheer te brengen.
+Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website met de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. Als de webportal detecteert dat het apparaat een Windows-pc is, wordt gebruikers gevraagd om de pc te registreren door de Intune-softwareclient te downloaden. Nadat de software is gedownload, kunnen gebruikers deze installeren om hun pc's onder beheer te brengen.
 
 ![Prompt in de Intune-portal die u vraagt om de Intune-softwareclient te downloaden](../media/software-client-download.png)
 
