@@ -2,9 +2,10 @@
 title: Algemene tips voor probleemoplossing | Microsoft Intune
 description: Algemene bronnen voor hulp bij het oplossen van problemen met Intune.
 keywords: 
-author: nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +14,19 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
-ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
+ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
+ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
 
 
 ---
 
-# Algemene tips voor probleemoplossing voor Microsoft Intune
+# <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Algemene tips voor probleemoplossing voor Microsoft Intune
 Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met de configuratie van clients. De onderstaande resources helpen u mogelijk de oorzaak van het probleem te achterhalen, zodat u het kunt oplossen.
 
 > [!NOTE]
 > Als u een ondersteuningsaanvraag wilt indienen of een bestaande aanvraag wilt bekijken, kunt u [het Office 365-beheercentrum bezoeken](https://portal.office.com/admin/default.aspx). Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer informatie over ondersteuningsopties.
 
-## Het probleem definiëren
+## <a name="define-the-problem"></a>Het probleem definiëren
 
 -   Wat is het gedrag?
 
@@ -43,7 +44,7 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
 
 -   Hebt u de status van de service gecontroleerd? U kunt de servicestatus van Intune bewaken in de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Kies **Servicestatus** in het linkerdeelvenster.
 
-## Beschikbare gegevens verzamelen
+## <a name="collect-available-data"></a>Beschikbare gegevens verzamelen
 
 -   Apparaatlogboeken Meer informatie over het verzamelen van apparaatlogboeken vindt u in:
   - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via een USB-kabel](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
@@ -53,7 +54,7 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
 
 -   Beheerconsolegegevens. Voor problemen met implementatie van beleid moet u bijvoorbeeld het gewenste beleid en de status van dit beleid onderzoeken, zoals beschreven in [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
-## Onderzoek doen naar de oplossing
+## <a name="research-the-solution"></a>Onderzoek doen naar de oplossing
 
 -   Zoek op internet naar een oplossing. Als u bijvoorbeeld de fout 0x80073CF0 ontvangt, kunt u zoeken naar **technet intune 0x80073cf0** op internet en het artikel [Problemen met app-implementaties oplossen in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md) opzoeken, dat suggesties bevat voor het aanpakken van dit probleem.
 
@@ -63,7 +64,7 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
 
     Als u een ondersteuningsaanvraag wilt indienen, [bezoekt u het Office 365-beheercentrum](https://portal.office.com/admin/default.aspx). Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer informatie over ondersteuningsopties.
 
-## Communityresources
+## <a name="community-resources"></a>Communityresources
 U vindt andere nuttige informatie in de volgende communityresources:
 
 -   De [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) bevat koppelingen naar veel resources die u kunnen helpen bij het configureren, onderhouden en oplossen van problemen met Intune.
@@ -74,10 +75,10 @@ U vindt andere nuttige informatie in de volgende communityresources:
 
 -   [De Intune-forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 Onderstaande onderwerpen bieden probleemoplossing voor specifieke problemen. Als deze informatie geen oplossing biedt, kunt u contact opnemen met Microsoft Support zoals beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
-[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md) (Engelstalig)
 
 [Problemen bij toegang tot bedrijfsbronnen oplossen met Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 
@@ -93,6 +94,6 @@ Onderstaande onderwerpen bieden probleemoplossing voor specifieke problemen. Als
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

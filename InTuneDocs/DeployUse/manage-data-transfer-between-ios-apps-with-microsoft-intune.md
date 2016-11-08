@@ -3,6 +3,7 @@ title: Gegevensoverdracht beheren tussen iOS-apps | Microsoft Intune
 description: Lees dit onderwerp om te begrijpen hoe u de functie iOS openen in en beleidsregels voor het beheren van mobiele apps kunt gebruiken voor het beheren van de gegevensoverdracht tussen apps.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
-## iOS-apps beheren
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
+## <a name="manage-ios-apps"></a>iOS-apps beheren
 Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestandsoverdracht tot apps die door u worden beheerd.  U kunt iOS-apps op de volgende manieren beheren:
 
 -   Voorkom het verlies van bedrijfsgegevens door voor apps een MAM-beleid te configureren. Naar deze apps wordt verwezen als **door beleid beheerde** apps.
@@ -28,7 +29,7 @@ Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestands
 -   U kunt apps ook implementeren en beheren via het **MDM-kanaal**.  Hiervoor is vereist dat apparaten zijn ingeschreven in de MDM-oplossing. Dit kunnen **door beleid beheerde** apps of andere beheerde apps zijn.
 
 De functie **Openen in beheer** voor iOS-apparaten beperkt de bestandsoverdracht tussen apps die zijn geïmplementeerd via het **MDM-kanaal**. Beperkingen voor Openen in beheer worden ingesteld in de configuratie-instellingen en geïmplementeerd met behulp van uw MDM-oplossing.  Wanneer de gebruiker de geïmplementeerde app installeert, worden de door u ingestelde beperkingen toegepast.
-##  MAM gebruiken met iOS-apps
+##  <a name="using-mam-with-ios-apps"></a>MAM gebruiken met iOS-apps
 MAM-beleid (Mobile App Management) kan worden gebruikt met de iOS-functie **Openen in beheer** om bedrijfsgegevens op de volgende manieren te beveiligen:
 
 -   **Apparaten die eigendom zijn van werknemers en die niet worden beheerd met een MDM-oplossing:** u kunt de MAM-beleidsinstellingen instellen op **App toestaan om alleen gegevens over te dragen naar beheerde apps**. Wanneer de eindgebruiker een beveiligd bestand opent in een app die niet door beleid wordt beheerd, is het bestand onleesbaar.
@@ -41,7 +42,7 @@ Als u ervoor wilt zorgen dat apps die u implementeert met behulp van de MDM-oplo
 > [!IMPORTANT]
 > De UPN-gebruikersinstelling is alleen vereist voor apps die zijn geïmplementeerd op apparaten die worden beheerd door een MDM-oplossing van derden.  Deze instelling is niet vereist voor apparaten die worden beheerd met intune.
 
-## UPN-gebruikersinstelling configureren
+## <a name="configure-user-upn-setting"></a>UPN-gebruikersinstelling configureren
 Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplossing van derden. De procedure die hieronder wordt beschreven, toont een algemene werkstroom voor het implementeren van de UPN-instelling en laat het resultaat voor eindgebruikers zien:
 
 
@@ -49,11 +50,11 @@ Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplo
 
 2.  Implementeer de apps en het e-mailprofiel die u wilt beheren **via de MDM-oplossing van derden** met behulp van de instelling die wordt beschreven in stap 3 en stap 4.
 
-3.  Implementeer de app met de volgende app-configuratie-instellingen: key=IntuneMAMUPN, Value=<gebruikersnaam@company.com> [voorbeeld: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+3.  Implementeer de app met de volgende app-configuratie-instellingen: key=IntuneMAMUPN, Value=<username@company.com> [voorbeeld: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
 4.  Implementeer het beleid Openen in beheer op ingeschreven apparaten.
 
-### Voorbeeld van resultaat voor eindgebruikers
+### <a name="example-end-user-experience"></a>Voorbeeld van resultaat voor eindgebruikers
 
 1.  De eindgebruiker installeert de Microsoft Word-app op het apparaat.
 
@@ -70,11 +71,11 @@ Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplo
 
 6.  Nu wordt de gegevensoverdracht voltooid en het document in de app getagd als zakelijk document. De gegevens worden vervolgens beschouwd als behorende bij een zakelijke context en de beleidsinstellingen worden dienovereenkomstig toegepast.
 
-### Zie ook
+### <a name="see-also"></a>Zie tevens
 [App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

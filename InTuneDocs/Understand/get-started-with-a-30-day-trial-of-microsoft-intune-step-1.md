@@ -3,6 +3,7 @@ title: Aanmelden voor een 30-daagse evaluatieversie van Microsoft Intune | Micro
 description: Aanmelden voor een gratis, evaluatieversie van Intune van 30 dagen en wat u moet overwegen voordat u zich aanmeldt
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,17 +14,17 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
 
 
 ---
 
-# Aanmelden voor een 30-daagse evaluatieversie van Microsoft Intune
+# <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>Aanmelden voor een 30-daagse evaluatieversie van Microsoft Intune
 
 Het instellen van een gratis evaluatieversie van 30 dagen voor Microsoft Intune voor het beheren van uw mobiele apparaten en computers is snel en eenvoudig. Met slechts enkele eenvoudige stappen kunt u in de evaluatieversie tot 100 gebruikers en apparaten toevoegen, groepen instellen, nalevingsbeleid configureren, en mobiele apparaten en computers inschrijven en beheren. In dit onderwerp leert u de basisbeginselen om een evaluatie met Intune op te zetten en krijgt u een overzicht van de service, zodat u de functies en mogelijkheden van Intune kunt evalueren.
 
-## Wat u moet overwegen voordat u zich aanmeldt
+## <a name="what-to-consider-before-you-sign-up"></a>Wat u moet overwegen voordat u zich aanmeldt
 
 Voordat u zich registreert of aanmeldt bij Intune, moet u rekening houden met het volgende:
 
@@ -37,7 +38,7 @@ Voordat u zich registreert of aanmeldt bij Intune, moet u rekening houden met he
 |-----------------------------------------------------------------|------------------------------------------------|
 |**U geen werk- of schoolaccount hebt.** Een werk- of schoolaccount wordt verstrekt wanneer u een volumelicentieovereenkomst met Microsoft ondertekent of zich abonneert op Office 365. Als uw organisatie nog geen Enterprise Agreement of equivalente volumelicentieovereenkomst met Microsoft heeft ondertekend (of geen Office 365-account heeft), hebt u nog geen Microsoft Online Services-account waarmee u zich kunt aanmelden bij Microsoft Online Services.<br /><br />**Nadat de evaluatieversie van 30 dagen is verlopen, moet u uw Intune-tenant verwijderen.** U moet zich registreren voor een nieuw account als u de gratis evaluatieversie van Intune alleen voor evaluatiedoeleinden gebruikt en u van plan bent om de instellingen voor de Intune-service en de inrichting van uw apparaten opnieuw uit te voeren wanneer de evaluatieversie is verlopen. Deze optie wordt aanbevolen als u Intune wilt gaan gebruiken met System Center 2012 Configuration Manager.<br /><br />Als u zich registreert voor een nieuw account, kunt u dit later niet veranderen in het gebruik van een bestaand werk- of schoolaccount om dat account te beheren of dit combineren met bestaande volumelicentieovereenkomsten.|**U hebt een werk- of schoolaccount ontvangen bij een volumelicentieovereenkomst of Office 365-abonnement en u gebruikt deze evaluatieversie om Intune te evalueren.**<br /><br />Als u Intune instelt met een bestaand account, wordt aanbevolen eerst [Kiezen hoe u apparaten beheert](/intune/get-started/choose-how-to-manage-devices) te raadplegen voordat u doorgaat met deze stappen.|
 
-## Registreren of aanmelden bij Intune
+## <a name="sign-up-or-sign-in-to-intune"></a>Registreren of aanmelden bij Intune
 
 1.  [Klik eerst hier om naar de registratiepagina voor Intune te gaan](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
@@ -52,7 +53,7 @@ Voordat u zich registreert of aanmeldt bij Intune, moet u rekening houden met he
 
 Nadat u het aanmeldingsformulier hebt ingevuld en de Microsoft Online Subscription Overeenkomst hebt geaccepteerd, bent u automatisch met het tenantbeheerdersaccount aangemeld bij het Office 365-beheercentrum. U ontvangt ook een e-mailbericht met uw accountinformatie op het e-mailadres dat u hebt opgegeven tijdens de registratie. In deze e-mail wordt bevestigd dat uw abonnement actief is.
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 Gefeliciteerd. U hebt zojuist stap 1 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
 
 >[!div class="step-by-step"]
@@ -61,6 +62,6 @@ Gefeliciteerd. U hebt zojuist stap 1 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

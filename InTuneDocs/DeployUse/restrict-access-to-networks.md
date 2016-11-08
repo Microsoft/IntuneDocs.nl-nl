@@ -2,8 +2,8 @@
 title: Toegang tot netwerken beperken met Cisco ISE | Microsoft Intune
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article
@@ -14,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
 
 
 ---
 
-# Cisco ISE gebruiken met Microsoft Intune
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Cisco ISE gebruiken met Microsoft Intune
 Als u Intune integreert in Cisco ISE (Identity Services Engine) kunt netwerkbeleid schrijven voor uw ISE-omgeving met behulp van de Intune-apparaatinschrijving en de compatibiliteitsstatus. U kunt dit beleid gebruiken om ervoor te zorgen dat uw bedrijfsnetwerk alleen toegankelijk is voor bedrijven die worden beheerd door Intune en die voldoen aan het Intune-beleid.
 
-## Configuratiestappen
+## <a name="configuration-steps"></a>Configuratiestappen
 
 Als u deze integratie wilt inschakelen, hoeft u geen installatie uit te voeren in uw Intune-tenant. U moet uw server Cisco ISE-server machtigingen geven voor toegang tot uw Intune-tenant. Nadat u dat hebt gedaan, wordt de rest van de installatie op de Cisco ISE-server uitgevoerd. In dit artikel vindt u instructies voor het opgeven van machtigingen in de ISE-server voor toegang tot uw Intune-tenant.
 
-### Stap 1: de certificaten beheren
+### <a name="step-1-manage-the-certificates"></a>Stap 1: de certificaten beheren
 Exporteer het certificaat van de Azure Active Directory-console (Azure AD) en importeer het in het archief met vertrouwde certificaten van de ISE-console:
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. Voer Internet Explorer uit als beheerder en meld u aan bij de Azure AD-console.
@@ -47,7 +47,7 @@ Exporteer het certificaat van de Azure Active Directory-console (Azure AD) en im
 
    g. Importeer in de ISE-console het Intune-certificaat (het bestand dat u hebt geëxporteerd) naar het archief **Vertrouwde certificaten**.
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Meld u aan bij de Azure AD-console.
 
@@ -64,7 +64,7 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 > Controleer de vervaldatum van het certificaat omdat u een nieuw certificaat moet exporteren en importeren wanneer dit certificaat is verlopen.
 
 
-### Een zelfondertekend certificaat verkrijgen van ISE 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>Een zelfondertekend certificaat verkrijgen van ISE 
 
 1.  Ga in de ISE-console naar **Beheer** > **Certificaten** > **Systeemcertificaten** > **Zelfondertekend certificaat genereren**.  
 2.       Exporteer het zelfondertekende certificaat.
@@ -75,7 +75,7 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 Zorg ervoor dat alle tekst op één regel staat
 
 
-### Stap 2: een app voor ISE maken in uw Azure AD-tenant
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>Stap 2: een app voor ISE maken in uw Azure AD-tenant
 1. Kies in de Azure AD-console **Toepassingen** > **Een toepassing toevoegen** > **Een app toevoegen die mijn organisatie ontwikkelt**.
 2. Geef een naam en een URL op voor de app. De URL kan de URL zijn van uw bedrijfswebsite.
 3. Download het app-manifest (een JSON-bestand).
@@ -99,7 +99,7 @@ Zorg ervoor dat alle tekst op één regel staat
 |OAuth 2.0-tokeneindpunt|URL die de token uitgeeft|
 |Werk uw code bij met uw client-id|Client-id|
 
-### Stap 4: het zelfondertekende certificaat van ISE uploaden naar de ISE-app die u in Azure AD hebt gemaakt
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Stap 4: het zelfondertekende certificaat van ISE uploaden naar de ISE-app die u in Azure AD hebt gemaakt
 1.     Haal de met base64 gecodeerde certificaatwaarde en de vingerafdruk op uit een openbaar X509-certificaatbestand (CER). In dit voorbeeld wordt PowerShell gebruikt:
    
       
@@ -136,7 +136,7 @@ Bijvoorbeeld:
 > KeyCredentials is een verzameling. U kunt dus meerdere X.509-certificaten voor overschakelingsscenario's uploaden of certificaten uit scenario's met inbreuk verwijderen.
 
 
-### Stap 4: ISE-instellingen configureren
+### <a name="step-4-configure-ise-settings"></a>Stap 4: ISE-instellingen configureren
 Geef in de ISE-beheerconsole de volgende instellingswaarden op:
   - **Servertype**: Mobile Device Manager
   - **Verificatietype**: OAuth-clientreferenties
@@ -147,7 +147,7 @@ Geef in de ISE-beheerconsole de volgende instellingswaarden op:
 
 
 
-## Informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server
 Deze tabel bevat de informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server voor apparaten die worden beheerd door Intune.
 
 |Eigenschap|  Beschrijving|
@@ -166,7 +166,7 @@ Deze tabel bevat de informatie die wordt gedeeld tussen uw Intune-tenant en uw C
 |lastContactTimeUtc|De datum en tijd waarop het apparaat het laatst heeft ingecheckt bij de Intune-beheerservice.
 
 
-## Gebruikerservaring
+## <a name="user-experience"></a>Gebruikerservaring
 
 Wanneer een gebruiker toegang probeert te krijgen tot bronnen vanaf een niet-ingeschreven apparaat, krijgt deze de vraag om het apparaat te schrijven, zoals hieronder wordt weergegeven:
 
@@ -182,12 +182,12 @@ Wanneer de gebruiker ervoor kiest om het apparaat in te schrijven, wordt deze do
 Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) die u kunt gebruiken om aangepaste richtlijnen te maken voor uw gebruikerservaring.
 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 
 [Cisco Identity Services Engine-beheerdershandleiding, release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
