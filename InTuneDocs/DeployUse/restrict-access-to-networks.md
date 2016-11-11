@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
@@ -68,7 +68,8 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 
 1.  Ga in de ISE-console naar **Beheer** > **Certificaten** > **Systeemcertificaten** > **Zelfondertekend certificaat genereren**.  
 2.       Exporteer het zelfondertekende certificaat.
-3. Bewerk het geëxporteerde certificaat in een teksteditor: [opmerking]: <> ik zou liever geen punt plaatsen aan het eind van deze twee instructies, want ik denk dat dit verwarrend kan zijn.
+3. In een teksteditor bewerkt u het geëxporteerde certificaat:
+
  - Verwijder ** -----BEGIN CERTIFICATE-----**
  - Verwijder ** -----END CERTIFICATE-----**
  
