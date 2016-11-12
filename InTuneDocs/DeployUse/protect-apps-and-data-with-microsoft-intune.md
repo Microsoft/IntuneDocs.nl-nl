@@ -54,6 +54,6 @@ Naast het beperken van gegevensverplaatsing kunt u, wanneer een apparaat is zoek
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

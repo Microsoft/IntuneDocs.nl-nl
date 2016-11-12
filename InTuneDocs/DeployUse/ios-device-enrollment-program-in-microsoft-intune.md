@@ -116,6 +116,6 @@ In november wordt apparaatgroepbeheer verplaatst naar Azure Active Directory. Na
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
