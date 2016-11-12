@@ -3,6 +3,7 @@ title: Groepen maken om gebruikers en apparaten te organiseren | Microsoft Intun
 description: Apparaat- en gebruikersgroepen maken wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 6cab173d7ef4a1d7bcea3193265e0729c93a214e
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: cbf552fbcb7f740f3aa35d135882f81e137692c2
 
 
 ---
@@ -65,6 +66,6 @@ Gefeliciteerd. U hebt zojuist stap 3 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -3,6 +3,7 @@ title: Conflicten tussen GPO-beleid en Intune-beleid oplossen | Microsoft Intune
 description: Informatie over het oplossen van conflicten tussen het groepsbeleid en de beleidsregels voor de Intune-configuratie.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
-ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 3d883851ae9fecd8a5c3baa0aff8312552915ba4
 
 
 ---
@@ -117,6 +118,6 @@ De nieuwe beveiligingsgroep moet ingeschreven blijven in de Intune-servicewijzig
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

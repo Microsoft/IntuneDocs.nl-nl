@@ -3,6 +3,7 @@ title: Bedrijfsgegevens van beheerde apps wissen | Microsoft Intune
 description: Informatie over het op afstand selectief verwijderen van bedrijfsgegevens.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
 
 
 ---
@@ -54,13 +55,13 @@ Het tabblad **Intune Mobile Application Management** biedt een samenvattingsrapp
 
 2.  Op het tabblad **Verzoek om te wissen** ziet u een lijst met uw verzoeken, gegroepeerd per gebruiker.  Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker.  De status geeft aan of een verzoek om te wissen nog steeds **in behandeling**, **mislukt**of **geslaagd**is.
 
-### Zie ook
+### Zie tevens
 [App-gegevens beschermen met beleid voor het beheren van mobiele apps ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [De Azure-portal gebruiken](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

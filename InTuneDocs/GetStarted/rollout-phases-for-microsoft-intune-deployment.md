@@ -3,8 +3,9 @@ title: Fasen van de implementatie van Microsoft Intune | Microsoft Intune
 description: 'De kenmerkende fasen van een technische implementatie zijn: Projectbereik, Proof-of-concept, Pilotimplementatie, Brede implementatie, en Gebruik en onderhoud.'
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: fda1e32c2b1be260c1d2c1b26f2415105d3fc10a
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 83fa3c30ff56dad124bdad3c5788f1562ed6a5e3
 
 
 ---
@@ -62,6 +63,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

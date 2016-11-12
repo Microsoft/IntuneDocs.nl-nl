@@ -3,6 +3,7 @@ title: Gebruikers toevoegen aan uw 30-daagse evaluatieversie van Intune | Micros
 description: Zo kunt u gebruikers toevoegen, afzonderlijk of in bulk, wanneer u zich aanmeldt voor een gratis, 30-daagse evaluatieversie van Intune
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 4276d0fed0fc30490a640a067d78096ff0cf78ae
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: a49e3fc392b0319d977bce8476d838172e56fe74
 
 
 ---
@@ -79,6 +80,6 @@ Gefeliciteerd! U hebt zojuist stap 2 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

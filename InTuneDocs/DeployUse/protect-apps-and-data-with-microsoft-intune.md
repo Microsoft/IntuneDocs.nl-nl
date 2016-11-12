@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Apps en gegevens beveiligen met Microsoft Intune
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Apps en gegevens beveiligen met Microsoft Intune
 
 
 Intune beveiligt bedrijfsgegevens via meerdere lagen van de technologie.  Op de identiteitslaag beveiligt voorwaardelijke toegang de toegang tot services door alleen toegang te verlenen vanaf beheerde apparaten en apparaten die aan het beleid voldoen.  Op de clienttoepassingslaag beveiligt het beheer van mobiele apps (MAM) het verlies van gegevens door te voorkomen dat gegevens naar niet-beveiligde apps of opslaglocaties worden verplaatst en door gegevens te wissen wanneer een apparaat is zoekgeraakt of gestolen.  Deze twee lagen beveiliging moeten samen worden gebruikt om gegevens te beveiligen en uw mobiele medewerkers productief te houden.
@@ -46,7 +46,7 @@ U kunt uw bedrijfsgegevens beveiligen door MAM-beleid te gebruiken voor apparate
 
 Als u een app wilt koppelen aan MAM-beleid, moet de app gebruikmaken van de Microsoft Intune App Software Development Kit (SDK) of de App Wrapping Tool.
 
-Bij apps als de Microsoft Office-apps is de SDK al ingebouwd. U vindt de volledige lijst met ondersteunde apps in de [Galerie met mobiele toepassingen van Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) op de pagina voor Microsoft Intune-toepassingen van partners. Selecteer een app om de ondersteunde scenario's en platforms te bekijken en om te controleren of de app meerdere identiteiten ondersteunt.
+Bij apps als de Microsoft Office-apps is de SDK al ingebouwd. U vindt de volledige lijst met ondersteunde apps in de [Galerie met mobiele toepassingen van Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) op de pagina voor Microsoft Intune-toepassingen van partners. Selecteer een app om de ondersteunde scenario's en platforms te bekijken en om te controleren of de app meerdere identiteiten ondersteunt.
 
 U kunt ook [uw op maat gemaakte line-of-business-apps inschakelen](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) voor gebruik met MAM-beleid.
 
@@ -54,6 +54,6 @@ Naast het beperken van gegevensverplaatsing kunt u, wanneer een apparaat is zoek
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

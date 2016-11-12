@@ -2,8 +2,8 @@
 title: Uw verloren of gestolen Windows-apparaat opnieuw instellen (wissen) | Microsoft Intune
 description: Een verloren of gestolen Windows-apparaat opnieuw instellen
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
-ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2af464dd1eb4fa97c6500131f51d48b6636b0cf2
 
 
 ---
 
 
-# Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
+# <a name="reset-erase-your-lost-or-stolen-device"></a>Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
 
 Als een bij Intune geregistreerd apparaat zoekgeraakt of gestolen is, kunt u de fabrieksinstellingen ervan herstellen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
@@ -37,10 +37,10 @@ Als een bij Intune geregistreerd apparaat zoekgeraakt of gestolen is, kunt u de 
 
 3.  Tik op het pictogram **Opnieuw instellen** en tik vervolgens op **opnieuw instellen**.
 
-Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-afdeling om dit voor u te doen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-afdeling om dit voor u te doen. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

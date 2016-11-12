@@ -3,6 +3,7 @@ title: Apps buiten gebruik stellen | Microsoft Intune
 description: Informatie over het buiten gebruik stellen of verwijderen van apps met behulp van Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f5c027a73f0980c62310a24c038d8629aefd49
-ms.openlocfilehash: 81edb231be0cfd31fd39c031ef0d13240f9e7cf7
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: b28cc7e99a47ce433273fa68389cc9727c8f9dd9
 
 
 ---
@@ -38,6 +39,6 @@ Wanneer het apparaat of de computer de volgende keer naar updates zoekt, wordt d
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

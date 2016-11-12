@@ -2,8 +2,8 @@
 title: Uw apparaat uit de bedrijfsportal verwijderen|Microsoft Intune
 description: Een apparaat uit de bedrijfsportal verwijderen
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
-ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
 
 
 ---
 
 
-# Uw apparaat uit de bedrijfsportal verwijderen
+# <a name="remove-your-device-from-the-company-portal"></a>Uw apparaat uit de bedrijfsportal verwijderen
 
 Als u besluit dat u uw apparaat niet meer wilt laten beheren door Intune en uw IT-beheerder, kunt u het apparaat uit de bedrijfsportal verwijderen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt de meeste taken die beschikbaar zijn in de bedrijfsportalapp uitvoeren op de bedrijfsportalwebsite.
 
@@ -40,10 +40,10 @@ Ga als volgt te werk om uw apparaat te verwijderen:
 
 Uw apparaat is nu verwijderd.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de contactgegevens van de beheerder.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

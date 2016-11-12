@@ -3,6 +3,7 @@ title: Mac OS X-beleidsinstellingen | Microsoft Intune
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Mac OS X-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 744fc6ecbabdccbfab38f45745505d635fb7e190
-ms.openlocfilehash: c6b010e49b4e581dad056aa6e8bb17123030f7b0
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ce30ab0e5a4ce709aafa5892789590b42b484db4
 
 
 ---
@@ -120,6 +121,6 @@ U kunt het configuratieprofielbestand dat door het aangepaste beleid wordt gebru
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

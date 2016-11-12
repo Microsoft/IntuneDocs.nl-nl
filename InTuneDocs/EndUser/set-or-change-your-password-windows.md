@@ -2,7 +2,8 @@
 title: Uw wachtwoordcode instellen of wijzigen | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -12,41 +13,39 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 56f2cd4b92a383bc801cfb02ffde3d092f059d44
 
 
 ---
 
-# Uw wachtwoordcode instellen of wijzigen
+# <a name="set-or-change-your-passcode"></a>Uw wachtwoordcode instellen of wijzigen
 
 Als uw Windows-apparaat niet aan het wachtwoordbeleid van uw IT-beheerder voldoet, wordt er een bericht weergegeven waarin een korte beschrijving van het probleem wordt gegeven en wordt uitgelegd wat u moet doen om ervoor zorgen dat uw wachtwoord voldoet aan de vereisten.
 
-De IT-beheerder kan meerdere wachtwoordvereisten instellen. Het is bijvoorbeeld mogelijk dat het wachtwoord een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers en letters moet worden gebruikt, enzovoort. Aangezien er meer dan één vereiste kan worden ingesteld, kan aan de hand van deze instructies alleen worden uitgelegd hoe u het wachtwoord instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten.
+De IT-beheerder kan meerdere wachtwoordvereisten instellen. Het is bijvoorbeeld mogelijk dat het wachtwoord een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers en letters moet worden gebruikt. Aangezien er meer dan één vereiste kan worden ingesteld, wordt in deze instructies alleen uitgelegd hoe u het wachtwoord instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten.
 
 Als u problemen ondervindt bij het instellen van een wachtwoord dat voldoet aan alle wachtwoordvereisten, neemt u contact op met uw IT-beheerder voor hulp.
 
-## Ga als volgt te werk om uw wachtwoord op een Windows Phone 8.1 te wijzigen:
+## <a name="to-change-your-password-on-windows-phone-81"></a>Uw wachtwoord wijzigen in Windows Phone 8.1
 
-1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
-2. Schuif omlaag naar **Wachtwoord** en tik op **Wachtwoord wijzigen**.
-3. Voer in het veld **Huidig wachtwoord** uw huidige wachtwoord in.
-4. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het nieuwe wachtwoord in het veld **Wachtwoord bevestigen**.
-4. Tik op **Gereed**.
+1. Kies in het **beginscherm** de optie **Instellingen** en vervolgens **Vergrendelingsscherm**.
+2. Schuif omlaag naar **Wachtwoord** en kies **Wachtwoord wijzigen**.
+3. Voer in het vak **Huidig wachtwoord** uw huidige wachtwoord in.
+4. Voer in het vak **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het vak **Wachtwoord bevestigen**.
+4. Kies **Gereed**.
 
-## Ga als volgt te werk om uw wachtwoord op een Windows Phone 8.1 in te stellen:
+## <a name="to-set-your-password-on-windows-phone-81"></a>Uw wachtwoord instellen in Windows Phone 8.1
 
-1. Tik in het **beginscherm** op **Instellingen** en selecteer vervolgens **Vergrendelingsscherm**.
+1. Kies in het **beginscherm** de optie **Instellingen** en vervolgens **Vergrendelingsscherm**.
 2. Schuif omlaag naar **Wachtwoord** en stel **Wachtwoord** in op **Aan**.
-3. Voer in het veld **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het veld **Wachtwoord bevestigen**.
-4. Tik op **Gereed**.
+3. Voer in het vak **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het vak **Wachtwoord bevestigen**.
+4. Kies **Gereed**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
-
-
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

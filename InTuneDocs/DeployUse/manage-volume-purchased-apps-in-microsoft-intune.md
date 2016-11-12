@@ -3,6 +3,7 @@ title: Apps beheren die zijn gekocht via het volume-aankoopprogramma | Microsoft
 description: Meer informatie over hoe u Intune kunt gebruiken voor het beheren van apps die u in volume hebt aangeschaft in de App Store.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
-ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6c673b2bb36044cb401b7543193ad3dca279c3a1
 
 
 ---
@@ -35,6 +36,6 @@ Kies een van de volgende onderwerpen om te lezen hoe u gelicentieerde apps uit e
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

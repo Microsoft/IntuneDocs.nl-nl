@@ -4,6 +4,7 @@ title: Inleiding tot Microsoft Intune | Microsoft Intune
 description: Meer informatie over Intune als het MDM-onderdeel (Mobile Device Management) van de oplossing Enterprise Mobility en Beveiliging.
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dbb8a8fdcc39aa91f4d2c0a671447e44daf8570d
-ms.openlocfilehash: 1b5549e4e0ad7652ed39659d7ebe7b95049dcbe6
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 11e471cb71a14056433e756938bc202dae08416f
 
 
 ---
@@ -54,6 +55,6 @@ In deze documentatie wordt uitgelegd hoe u de hulpprogramma's die Intune biedt, 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

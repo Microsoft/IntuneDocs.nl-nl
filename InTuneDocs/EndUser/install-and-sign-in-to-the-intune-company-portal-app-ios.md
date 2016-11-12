@@ -2,10 +2,10 @@
 title: De Intune-bedrijfsportalapp installeren en u hierbij aanmelden | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
-ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
 
 
 ---
 
 
-# De Intune-bedrijfsportalapp installeren en u hierbij aanmelden
+# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>De Intune-bedrijfsportalapp installeren en u hierbij aanmelden
 
 De bedrijfsportalapp is een app die u op het iOS-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportalapp hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie.
 
@@ -36,10 +36,10 @@ De bedrijfsportalapp is een app die u op het iOS-apparaat installeert om toegang
 
     Als u zich voor het eerst aanmeldt bij de bedrijfsportalapp en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) om uw apparaat te registreren.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

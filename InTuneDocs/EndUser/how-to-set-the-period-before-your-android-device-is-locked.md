@@ -2,10 +2,10 @@
 title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
 
 
 ---
 
-# De periode instellen voordat een Android-apparaat wordt vergrendeld
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>De periode instellen voordat een Android-apparaat wordt vergrendeld
 Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op uw apparaat instellen door de stappen voor uw apparaattype te volgen.
 
-## Native apparaat (niet-Samsung Knox)
+## <a name="native-nonsamsung-knox-device"></a>Native apparaat (niet-Samsung Knox)
 
 1.  Tik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
 
@@ -32,7 +32,7 @@ Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op
 
 2.  Selecteer de waarde voor de wachtwoordtime-out.
 
-## Samsung KNOX-apparaat
+## <a name="samsung-knox-device"></a>Samsung KNOX-apparaat
 
 1.  Tik in **Instellingen** op uw apparaat op **Scherm vergrendelen en beveiliging** &gt; **Automatisch vergrendelen**.
 
@@ -40,10 +40,10 @@ Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op
 
 2.  Selecteer een waarde voor de wachtwoordtime-out.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

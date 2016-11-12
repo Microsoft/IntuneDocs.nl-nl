@@ -3,6 +3,7 @@ title: Overzicht van de app-levenscyclus | Microsoft Intune
 description: Meer informatie over de levenscyclus van door Intune beheerde apps; van het toevoegen tot het moment waarop ze buiten gebruik worden gesteld.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3b4b01844c9ab8a5de38e9a33f595cfc87b42a0
-ms.openlocfilehash: 650c06072cdcf19cf3fd1b93454e5373772f0e14
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 4c62e63b624165982fbbcd1765b14abe6ec0ae96
 
 
 ---
@@ -51,6 +52,6 @@ Waarschijnlijk raken de apps die u hebt geïmplementeerd, uiteindelijk verouderd
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

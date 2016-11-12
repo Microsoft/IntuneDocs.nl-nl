@@ -3,8 +3,9 @@ title: Bewerkingen en onderhoud | Microsoft Intune
 description: Aanbevelingen voor de bewerkings- en onderhoudsfase van een Intune-implementatie.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 65a5f226114345b83ae45df0fc28ade230387166
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 43b085bd3d799c8ca9343de61508cb24d8ec5466
 
 
 ---
@@ -67,7 +68,7 @@ Hier volgt een lijst met stappen om aan de slag te gaan met de fase **Bewerkinge
 
 -   De helpdesk is op de hoogte van wijzigingen in Intune, met inbegrip van wijzigingen die betrekking hebben op de functionaliteit van de apparaten met verschillende besturingssystemen.
 
-## Veelvoorkomende uitdagingen
+## Algemene uitdagingen
 Hier vindt u enkele uitdagingen die kunnen optreden in de fase **Bewerkingen en onderhoud**.
 
 -   **Uitdaging:** Beheerders weten dat hun omgeving regelmatig moet worden bewaakt. Ze hebben echter geen ervaring met de Intune-consoles.
@@ -80,6 +81,6 @@ Hier vindt u enkele uitdagingen die kunnen optreden in de fase **Bewerkingen en 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

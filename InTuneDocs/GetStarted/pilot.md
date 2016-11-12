@@ -3,8 +3,9 @@ title: Test | Microsoft Intune
 description: Aanbevelingen voor de testfase van een Intune-implementatie.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: a607737b808f3c53ec8f83e507369d9d58309c9d
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 813b03f5d172749076723f60d4cfe0b6c50a261c
 
 
 ---
@@ -27,7 +28,7 @@ Door het uitvoeren van een test zult u technische problemen ontdekken die uw geb
 Neem eerst de inventariserende vragen door om de omvang en invulling van de testfase van de implementatie te bepalen.
 
 ## Inventariserende vragen
-Bespreek deze vragen met uw projectteam om de omvang van het project te bepalen, potentiële risico's vast te stellen en actiegerichte taken te definiëren.
+Bespreek deze vragen met uw projectteam om de omvang van het project te bepalen, potentiële risico's bloot te leggen en actiegerichte taken te definiëren.
 
 -   Wat test u naast de technische implementatie nog meer tijdens deze testfase?
 
@@ -56,7 +57,7 @@ De sleutel voor een geslaagde test is goede planning, inclusief weten wat de suc
 ### Helpdesk
 Een ondersteuningsplan met proactieve hulp kan leiden tot een aanzienlijk hoger vertrouwen onder gebruikers, wat weer leidt tot tevreden gebruikers en betere acceptatie. De helpdesk moet rekening houden met de wijzigingen die het gevolg zijn van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-implementatie en potentiële problemen die zich kunnen voordoen, zodat snel oplossingen voor afzonderlijke problemen kunnen worden gevonden. Ook kan de helpdesk rapporteren aan het ontwerpteam als de ontwerpbenadering problemen voor gebruikers veroorzaakt.
 
-### Bewustzijn
+### Bewustwording
 Testgebruikers moeten het wie, wat, wanneer, waar en waarom van het project begrijpen. De belangrijkste gebruikersvraag is: "Wat zijn de gevolgen van de test voor mij?". Verplaats uzelf in de gebruikers om te begrijpen dat gebruikerservaring van end-to-end belangrijk is. Gebruik activiteiten en communicatie op het gebied van gebruikersbewustzijn zodat gebruikers begrijpen wat hun verantwoordelijkheden zijn en hoe ze worden ondersteund tijdens de testfase.
 
 ### Training
@@ -108,6 +109,6 @@ Hier vindt u enkele uitdagingen die kunnen optreden in de fase **Test**.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

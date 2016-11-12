@@ -2,7 +2,8 @@
 title: Uw computer is al geregistreerd | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,31 +15,31 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
 
 
 ---
 
 
-# Uw computer is al geregistreerd
+# <a name="your-computer-is-already-enrolled"></a>Uw computer is al geregistreerd
 
-Als u een foutbericht ontvangt dat de computer al is geregistreerd, betekent dit dat de computer is al toegevoegd aan de bedrijfsportal, maar nog niet aan uw gebruikersaccount is gekoppeld. Volg deze procedure om de computer te koppelen aan uw gebruikersaccount en het proces te voltooien.  
+Als u een foutbericht ontvangt dat de computer al is geregistreerd, is de computer is al toegevoegd aan de bedrijfsportal maar nog niet gekoppeld aan uw gebruikersaccount. Volg deze procedure om de computer te koppelen aan uw gebruikersaccount en het proces te voltooien.  
 
 De computer koppelen:
 
-1.  Klik op **Start** op de computer die u wilt koppelen aan uw account en klik vervolgens op **Microsoft Intune Center**.
+1.  Kies **Start** op de computer die u wilt koppelen aan uw account en kies vervolgens **Microsoft Intune Center**.
 
 2.  Open de bedrijfsportal.
 
 3.  Volg de aanwijzingen om de computer te koppelen aan uw gebruikersaccount.
 
-Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de instructies voor het type apparaat dat u hebt: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) of [Windows](unenroll-your-device-from-intune-windows.md).
+Als u de registratie van uw apparaat ongedaan wilt maken, volgt u de instructies voor het type apparaat dat u hebt: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) of [Windows](unenroll-your-device-from-intune-windows.md).
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,8 +3,9 @@ title: Implementatie van beleid | Microsoft Intune
 description: Aanbevelingen voor een gefaseerde implementatie van beleid in Microsoft Intune.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 0c23fdd5f5e6bc1b50dda56fe2135e8cc24b5e26
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 0a363ed242f5968f3fb84b558cfa134e243a22ff
 
 
 ---
@@ -27,7 +28,7 @@ Voor algemene informatie over implementatiefasen raadpleegt u [Implementatiefase
 ### Fasen van de implementatie van beleid
 De fasen van een beleidsimplementatie zijn:
 
--   Projectomvang
+-   Projectbereik
 
 -   Testen van het concept
 
@@ -37,7 +38,7 @@ De fasen van een beleidsimplementatie zijn:
 
 -   Bewerkingen en onderhoud
 
-## Projectomvang
+## Projectbereik
 Definieer de omvang van de implementatie van uw Intune-beleid:
 
 -   Voor een nieuwe implementatie moet u hiervoor al het gewenste apparaatgedrag en de beveiligingsvereisten definiëren die u wilt opnemen in uw beleid.
@@ -97,6 +98,6 @@ Tijdens de testfase implementeert u het beleid voor een kleine groep testgebruik
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

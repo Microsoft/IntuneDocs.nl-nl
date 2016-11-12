@@ -14,8 +14,8 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f78ece8bbaf813c0082e6b764d174cf25bcb618
-ms.openlocfilehash: 89f0bc5dd10c173718f9698e6e0342b5eb8c56e8
+ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
+ms.openlocfilehash: 8c2718da6f90f18ffbaa6a977dfca7fbc9a1bb09
 
 
 ---
@@ -27,11 +27,16 @@ Als u de toegang tot deze apps wilt blokkeren, raden we u het volgende aan:
 
 * Met het instellen van ADFS worden er regels van kracht die niet-moderne verificatieprotocollen blokkeren. Gedetailleerde instructies vindt u in scenario 3: [alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
 
+>[!IMPORTANT]
+>MAM CA mag niet worden gebruikt in combinatie met verificatie via het certificaat op basis van Azure Active Directory (Azure AD). U mag slechts een van beide geconfigureerd hebben.
+
+
+
 ### Zie tevens
 [Alleen apps toestaan die worden ondersteund door Intune voor toegang tot O365-services](allow-policy-managed-apps-access-to-o365.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

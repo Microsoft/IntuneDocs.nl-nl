@@ -2,9 +2,10 @@
 title: De inschrijving van uw iOS-apparaat bij Intune ongedaan maken | Microsoft Intune
 description: Hierin wordt beschreven hoe u de inschrijving van een iOS-apparaat bij Intune ongedaan kunt maken
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +15,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5db58b87e5c48c40794315e7781d32b02a653b2b
 
 
 ---
 
 
-# De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
+# <a name="unenroll-your-ios-device-from-intune"></a>De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
 
-Wanneer u de registratie van uw iOS-apparaat bij Intune ongedaan maakt, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
+Wanneer u de inschrijving van uw iOS-apparaat bij Intune ongedaan maakt, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
 
 Voer deze stappen uit of bekijk deze video om de inschrijving van uw apparaat bij Intune ongedaan te maken:
 
@@ -52,11 +53,10 @@ Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
 -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

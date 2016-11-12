@@ -3,8 +3,9 @@ title: Proof-of-concept | Microsoft Intune
 description: Aanbevelingen voor de fase waarin het concept van een Intune-implementatie wordt getest.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: bffd46199873f01e2c03fe8b30cdfb3c425a07ee
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 5b19835e7f726e23d402bbab408796cad9028bd0
 
 
 ---
@@ -44,7 +45,7 @@ U moet weten welke scenario's u wilt valideren en wat u voor deze validatie nodi
 ### Helpdesk
 De helpdesk hoeft niet te worden voorbereid voor deze fase van het project, omdat er geen productiegebruikers of -apparaten bij betrokken zijn. Deze fase biedt de helpdesk echter wel de mogelijkheid om meer informatie te krijgen over de implementatie en het gebruik van Intune.
 
-### Bewustzijn
+### Bewustwording
 Het technische team en de betrokken managers moeten inzicht hebben in de voortgang van de scenariotests. Het ontwerpteam moet weten welke opgedane kennis in het ontwerp moet worden opgenomen.
 
 ### Training
@@ -78,6 +79,6 @@ Hier vindt u enkele uitdagingen die in de **PoC**-fase kunnen optreden.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

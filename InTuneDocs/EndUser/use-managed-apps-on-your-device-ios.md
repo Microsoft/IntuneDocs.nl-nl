@@ -2,9 +2,10 @@
 title: Beheerde apps op uw iOS-apparaat gebruiken | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 178d46860774d2595f06316f84fd1940c12c025f
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
 
 
 ---
 
 
-# Beheerde apps op uw iOS-apparaat gebruiken
+# <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
-Beheerde apps zijn apps die door de IT-beheerder kunnen worden geconfigureerd zodat de bedrijfsgegevens die toegankelijk zijn in die app, kunnen worden beveiligd. Wanneer u met bedrijfsgegevens in een beheerde app op uw iOS-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
+Beheerde apps zijn apps die door de IT-beheerder kunnen worden ingesteld zodat de bedrijfsgegevens die toegankelijk zijn in die app, kunnen worden beveiligd. Wanneer u met bedrijfsgegevens in een beheerde app op uw iOS-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
 
 Verschillende beheerde apps kunnen ook samenwerken op uw apparaat zodat u uw dagelijkse taken kunt uitvoeren, terwijl de bedrijfsgegevens beveiligd blijven. Als u bijvoorbeeld een bedrijfsbestand in een beheerde app opent en een andere beheerde app nodig is om dat bestand weer te geven, wordt de beheerde app waarmee u het bestand kunt weergeven, automatisch geopend. Als een vereiste app niet beschikbaar is, zijn bepaalde acties mogelijk niet beschikbaar, zoals het openen van een document of het gebruiken van een webkoppeling in een beheerd document.
 
@@ -31,14 +32,14 @@ Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een ber
 
 ![beheerde-apps-bericht-ios](./media/managed-apps-message.png)
 
-### Hoe kom ik in het bezit van beheerde apps?
+### <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
 Beheerde apps zijn op verschillende manieren beschikbaar:
 
 -   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) voor meer informatie over het registreren van apparaten.
 
 -   U installeert een app uit de App Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd met Intune.
 
-### Wat kan de IT-beheerder beheren in een app?
+### <a name="what-can-my-it-admin-manage-in-an-app"></a>Wat kan de IT-beheerder beheren in een app?
 Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
 
 -   Toegang tot bepaalde websites
@@ -60,12 +61,10 @@ Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beh
 -   Vereisten voor de versleuteling van gegevens
 
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,8 +3,9 @@ title: Projectomvang | Microsoft Intune
 description: Aanbevelingen voor de projectbereikfase van een Intune-implementatie.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 14c65bdef3c9663c81ac9ecc00b662845f3209e5
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 500d97e79471ce78434729457bc4c6b82e23aa1e
 
 
 ---
@@ -113,6 +114,6 @@ Hier vindt u enkele uitdagingen die kunnen optreden in de fase **Projectomvang**
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

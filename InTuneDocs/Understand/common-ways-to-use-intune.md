@@ -3,6 +3,7 @@ title: Algemene manieren om Intune te gebruiken | Microsoft Intune
 description: Een lijst met zes van de meest algemene taken waarbij Intune kan worden gebruikt
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 9cb6a1e28e36a972a14cb39c12c3a539f4425c71
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 71e06c6d792440e8fedff0078881a10b0ce0d862
 
 
 ---
@@ -72,6 +73,6 @@ Soms moeten uw werknemers apparaten, toepassingen of browsers gebruiken die u ni
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

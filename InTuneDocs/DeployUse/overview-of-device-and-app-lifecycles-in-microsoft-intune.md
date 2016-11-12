@@ -3,6 +3,7 @@ title: Overzicht van de levenscycli van apparaten en apps | Microsoft Intune
 description: Overzicht van de levenscycli van het apparaat en apps met Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 686dc048c8a582ea188c5ab742e94328405f3a29
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ef687c39e5f1433b9b1991273dd3e537032ce1a2
 
 
 ---
@@ -31,6 +32,6 @@ Apps die u gebruikt, hebben hun eigen [app-levenscyclus](overview-of-app-lifecyc
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

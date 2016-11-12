@@ -3,6 +3,7 @@ title: Problemen met de Exchange Connector oplossen| Microsoft Intune
 description: Problemen met betrekking tot de Intune Exchange Connector oplossen.
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: f6b673d05e385ddfe6ef3d3e63cf857439b164de
 
 
 ---
@@ -50,6 +51,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,9 +2,10 @@
 title: Een Package Family Name (PFN) voor VPN per app zoeken |Microsoft Intune
 description: Een PFN zoeken, zodat u VPN per app kunt configureren.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
-ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
 
 
 ---
 
-# Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
+# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
 
 Er zijn twee manieren om een PFN te zoeken, zodat u een VPN per app kunt instellen.
 
-## Een PFN zoeken voor een app die is geïnstalleerd op een Windows 10-computer
+## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>Een PFN zoeken voor een app die is geïnstalleerd op een Windows 10-computer
 
 Als de app waarmee u werkt, al is geïnstalleerd op een Windows 10-computer, kunt u de PowerShell-cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) gebruiken om de PFN op te halen.
 
@@ -66,7 +67,7 @@ Hier vindt u de informatie die is opgehaald voor OneNote:
 
 
 
-## Een PFN zoeken als de niet op een computer is geïnstalleerd
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Een PFN zoeken als de niet op een computer is geïnstalleerd
 
 1.  Ga naar https://www.microsoft.com/en-us/store/apps.
 2.  Typ de naam van de app in de zoekbalk. In het voorbeeld wordt gezocht naar OneNote.
@@ -85,6 +86,6 @@ In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

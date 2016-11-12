@@ -2,10 +2,10 @@
 title: Op het apparaat is code-integriteit niet ingeschakeld | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85cdfd1aac6fdf738754539c746aee8e5d045ae9
-ms.openlocfilehash: 60e29209718ca206ae96ccc2df330650e2f93c1d
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a42bd680167b41fc7a77227e2d1f7c2e6860fc9d
 
 
 ---
 
 
-# Op het apparaat is code-integriteit niet ingeschakeld
+# <a name="device-doesnt-have-code-integrity-enabled"></a>Op het apparaat is code-integriteit niet ingeschakeld
 
 Uw organisatie vereist dat u de Windows-functie voor code-integriteit inschakelt. Met deze functie wordt gecontroleerd of stuurprogramma's en bestanden op uw apparaat veilig zijn.
 
@@ -32,10 +32,10 @@ Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Als u een mobi
 
 Als u een pc gebruikt, neemt u contact op met uw IT-beheerder. Of raadpleeg de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u zelf wilt proberen om Beveiligd opstarten in te schakelen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
