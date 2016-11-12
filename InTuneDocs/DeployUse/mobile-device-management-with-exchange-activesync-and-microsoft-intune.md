@@ -3,6 +3,7 @@ title: Exchange ActiveSync Device Management | Microsoft Intune
 description: Mobiele apparaten beheren met Exchange ActiveSync-beheer (EAS) met de Exchange Connector
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
+ms.sourcegitcommit: d5d5345dc6ef022e385a33ccc19b19cc022af2d5
+ms.openlocfilehash: c67ad198c1693f84c9e00d15da00a131f7d0af87
 
 
 ---
 
 # Mobiele apparaten met Exchange ActiveSync beheren met Microsoft Intune
-Als u wilt dat Microsoft Intune mobiele apparaten rechtstreeks beheert, moeten de apparaten zijn [geregistreerd in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md). Als alternatief kunnen beheerders een beperktere beheeroplossing gebruiken, die gebruikmaakt van Exchange ActiveSync-beheer (EAS) met een Exchange Connector. Apparaten kunnen worden beheerd op lokale Exchange-servers en Exchange Online met gebruik van Microsoft Office 365. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
+Als u wilt dat Microsoft Intune mobiele apparaten rechtstreeks beheert, moeten de apparaten zijn [geregistreerd in Intune](prerequisites-for-enrollment.md). Als alternatief kunnen beheerders een beperktere beheeroplossing inschakelen die gebruikmaakt van Exchange ActiveSync-beheer (EAS) met een Exchange Connector. Apparaten kunnen worden beheerd op lokale Exchange-servers of via Exchange Online met gebruik van Microsoft Office 365. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
 
 ## Exchange-toegangsregels voor mobiele apparaten ##
 
@@ -46,6 +47,6 @@ Ten slotte kunt u [bedrijfsgegevens van door EAS beheerde mobiele apparaten wiss
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

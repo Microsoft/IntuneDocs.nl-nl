@@ -1,10 +1,11 @@
 ---
 title: Back-ups van door Intune beheerde iOS-apparaten terugzetten | Microsoft Intune
 description: Eindgebruikers helpen bij het opnieuw registreren van hun apparaten na het terugzetten van een back-up.
-keywords: 
+keywords: terugzetten, beheerd, iOS
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 612b0954a81de1ee8d4a1e96c7440239437dec14
-ms.openlocfilehash: 5fc4423f8fd0c5829be5fe6c96949e126991e430
+ms.sourcegitcommit: e6bb539c87c4a13a490ba98c016d814bea5c7bbc
+ms.openlocfilehash: 6395e50b3e4c06e7363acc136b5ed9eb2ef75abd
 
 
 ---
@@ -37,8 +38,18 @@ Als de back-up wordt teruggezet op een ander apparaat, wordt de registratiestatu
 > [!TIP]
 > Een voorbeeldbericht voor uw gebruikers kan er als volgt uitzien: Om uw nieuwe apparaat te registreren, moet u gebruikmaken van de bedrijfsportalapp (versie 2.1.22 of hoger). U controleert de versie als volgt: open de bedrijfsportalapp, tik op de knop Menu in de rechterbovenhoek en tik vervolgens op Over. Als u een te lage versie hebt, sluit u de bedrijfsportalapp en opent u de App Store. Tik op de knop Updates in de rechterbenedenhoek en tik vervolgens op de knop voor bijwerken naast de bedrijfsportal in de lijst. Als de update is voltooid, start u de bedrijfsportalapp en [registreer uw iOS-apparaat bij Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
+## Bekende problemen met herstellen oplossen
+
+Gebruikers kunnen soms problemen ondervinden als ze hun apparaat hebben hersteld en de bedrijfsportal-app hebben gestart wanneer ze nog werken met versie 2.1.21 of eerder van de bedrijfsportal. Deze problemen kunnen worden aangepakt door de juiste stappen voor de desbetreffende gebruiker uit te voeren.
+
+### Voor gebruikers die alleen hun nieuwe apparaat gaan gebruiken
+Start de bedrijfsportal-app en maak de registratie ongedaan door de tegel van het huidige apparaat te selecteren en op de knop __Verwijderen__ te tikken. Na het verwijderen volgt u de standaardstappen voor inschrijving om [een iOS-apparaat in te schrijven in Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+### Voor gebruikers die zowel hun oude als nieuwe apparaat gaan gebruiken
+Schakel cookies uit in Safari door te tikken op __Instellingen__ > __Safari__ > __Geschiedenis- en websitegegevens wissen__. Na het wissen van de gegevens verwijdert u de bedrijfsportal-app en installeert u deze opnieuw, waarna u de standaardstappen voor inschrijving volgt om [een iOS-apparaat in te schrijven in Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

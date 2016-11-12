@@ -1,8 +1,9 @@
 ---
-title: De registratie van uw apparaat bij Intune ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen | Microsoft Intune
+title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
 description: Hierin wordt beschreven hoe u de inschrijving van een Android-apparaat bij Intune ongedaan kunt maken als u de gebruiksvoorwaarden hebt geweigerd en u niet kunt aanmelden bij de bedrijfsportal-app
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,18 +14,18 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 4f5088bc645fed0451885078f5ab0dcd04a33d81
 
 
 ---
 
 
-# De registratie van uw apparaat bij Intune ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen
+# De inschrijving van uw apparaat bij Intune ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen
 
-Als u de registratie van Android-apparaat ongedaan wilt maken, kunt u het beste de voorwaarden accepteren, u aanmelden bij de bedrijfsportal-app en vervolgens [deze instructies](unenroll-your-device-from-intune-android.md) volgen om de registratie van het apparaat ongedaan te maken. Als u de gebruiksvoorwaarden echter tijdens het aanmelden bij de bedrijfsportal-app hebt geweigerd, kunt u zich niet meer aanmelden bij de bedrijfsportal-app en moet u de instructies in deze 'tijdelijke oplossing' gebruiken om de registratie van het apparaat ongedaan te maken.
+Als u de inschrijving van uw Android-apparaat ongedaan wilt maken, kunt u het beste de voorwaarden accepteren, u aanmelden bij de bedrijfsportal-app en vervolgens [deze instructies](unenroll-your-device-from-intune-android.md) volgen om het apparaat uit te schrijven. Als u de gebruiksvoorwaarden echter tijdens het aanmelden bij de bedrijfsportal-app hebt geweigerd, kunt u zich niet meer aanmelden bij de bedrijfsportal-app. Gebruik de instructies in deze ‘tijdelijke oplossing’ om de inschrijving van uw apparaat ongedaan te maken.
 
-Wanneer u de bedrijfsportal-app verwijdert, maakt u ook de inschrijving van uw apparaat bij Intune ongedaan. Dit houdt in dat het apparaat geen toegang meer heeft tot bedrijfsresources.  Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt wanneer u de registratie van uw apparaat ongedaan maakt.
+Wanneer u de bedrijfsportal-app op uw apparaat verwijdert, wordt de inschrijving van uw apparaat bij Intune ook ongedaan gemaakt. Uw apparaat heeft niet langer toegang tot bedrijfsbronnen. Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt wanneer u de registratie van uw apparaat ongedaan maakt.
 
 Voordat u de bedrijfsportal-app kunt verwijderen, moet u naar de instelling **Apparaatbeheerders** gaan en **Bedrijfsportal** uitschakelen. De stappen kunnen enigszins verschillen afhankelijk van het Android-apparaat dat u gebruikt.
 
@@ -42,7 +43,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: MAM-beleid maken en implementeren | Microsoft Intune
 description: Volg de stapsgewijze instructies in dit onderwerp om beleidsregels voor Mobile App Management te maken en implementeren.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ Het beleid is alleen van invloed op gebruikers aan wie [!INCLUDE[wit_nextref](..
 >[!IMPORTANT]
 > Als u Intune met Configuration Manager gebruik om uw iOS- en Android-apparaten te beheren, wordt het beleid alleen direct op gebruikers in de geselecteerde groep toegepast.  Leden van de onderliggende groepen binnen de geselecteerde groep worden niet door het beleid beïnvloed.
 
-De eindgebruikers kunnen de apps downloaden in de App Store of Google Play. Zie het onderwerp [Ervaring van eindgebruikers voor apps die geschikt zijn voor MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) voor een gedetailleerd overzicht van hoe MAM bedrijfsgegevens op het apparaat beschermt.
-
+De eindgebruikers kunnen de apps downloaden in de App Store of Google Play. Zie voor meer informatie:
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Bestaande beleidsregels wijzigen
 U kunt een bestaand beleid bewerken en toepassen op de beoogde gebruikers. Wanneer u echter bestaand beleid wijzigt, worden de wijzigingen pas na 8 uur zichtbaar voor gebruikers die al bij de apps zijn aangemeld.
 
@@ -165,10 +167,11 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 [Compatibiliteit- en gebruikersstatus controleren](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### Zie tevens
-[Ervaring van eindgebruikers voor apps die geschikt zijn voor MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

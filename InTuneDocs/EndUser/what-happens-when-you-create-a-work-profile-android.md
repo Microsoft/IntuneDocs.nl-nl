@@ -2,7 +2,8 @@
 title: Wat gebeurt er wanneer u een werkprofiel maakt | Microsoft Intune
 description: Informatie over hoe u een Android-apparaat kunt versleutelen
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# Wat gebeurt er wanneer u een werkprofiel maakt
+# <a name="what-happens-when-you-create-a-work-profile"></a>Wat gebeurt er wanneer u een werkprofiel maakt
 
-Een werkprofiel is iets dat u instelt op het apparaat om toegang te krijgen tot uw e‑mail, apps en bestanden op het werk of op school.
+Een werkprofiel is iets dat u instelt op het apparaat om uw e‑mail, apps en bestanden op het werk of op school gescheiden te houden van uw persoonlijke gegevens.
 
 Houd rekening met het volgende wanneer u een werkprofiel maakt:
 
-- De IT-beheerder kan alleen de instellingen en configuraties voor de bedrijfsapps op uw apparaat beheren, niet uw persoonlijke apps of gegevens.
+- De IT-beheerder kan alleen de e-mail, apps, instellingen en gegevens voor uw bedrijf op uw apparaat beheren, geen persoonlijke apps of gegevens.
 
 - U krijgt bedrijfsapps uit de Play Store for Work. Als u persoonlijke apps wilt, gaat u naar de Google Play-store die u altijd gebruikt voor het downloaden of kopen van persoonlijke apps. De IT-beheerder kan uw persoonlijke apps niet zien of beheren.
 

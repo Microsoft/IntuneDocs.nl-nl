@@ -1,5 +1,5 @@
 ---
-title: U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden | Microsoft Intune
+title: U moet een bedreiging oplossen die met Lookout for Work op een iOS-apparaat is gevonden | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
@@ -10,20 +10,20 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.openlocfilehash: 88b6a7107efb04accac4e7028e04a5505d8c865b
 
 
 ---
 
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>U moet een bedreiging oplossen die met Lookout for Work is gevonden
 
-Lookout for Work heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit:
+Lookout for Work heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit: 
 
-![Lookout for Work heeft een bedreiging aangetroffen op uw apparaat](./media/lookout-threat-found-android.png)
+![Bericht over niet-naleving van Lookout for Work](./media/ios-lfw-noncompliant-in-ssp.png)
 
 Los het probleem op door de Lookout for Work-app te openen en de instructies in de app te volgen.
 
@@ -39,9 +39,11 @@ Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website m
 
 Als u een app hebt geïnstalleerd die volgens Lookout for Work een bedreiging vormt, ziet u een scherm dat vergelijkbaar is met dit scherm:
 
-![voorbeeld van een waarschuwingsbericht van Lookout for Work](./media/lookout-virus-alert-android.png)
+![voorbeeld van een waarschuwingsbericht van Lookout for Work](./media/ios-lfw-threat-example.png)
 
-Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
+Als u dit ziet, tikt u op de naam van de app bovenaan het scherm en volgt u de instructies voor het verwijderen van de bedreiging.
+
+Nadat u de app hebt verwijderd, hebt u direct weer toegang tot uw e-mail en andere gegevens van uw bedrijf of school. Als u de app niet verwijdert, hebt u geen toegang meer tot uw bedrijfs-e-mail en -gegevens totdat u de app wel verwijdert.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 

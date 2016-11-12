@@ -1,8 +1,9 @@
 ---
 title: Gebruik de SDK om apps in te schakelen voor MAM | Microsoft Intune
-description: 
+description: In dit onderwerp vindt u een kort overzicht van de redenen voor het gebruik van de Intune SDK.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
-ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
+ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
+ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
 
 
 ---
 
-# De SDK gebruiken om apps geschikt te maken voor Mobile Application Management
-Gebruik de Microsoft Intune App SDK om Intune in staat te stellen bepaalde functies van uw mobiele iOS- of Android-apps te beheren. Nadat uw app is ingeschakeld, kunt u in de app beleidsregels implementeren. Deze beleidsregels gebruiken deze functies om uw zakelijke gegevens te beveiligen. Voorbeelden van het soort bescherming dat u met de SDK kunt implementeren:
+# Gebruik de SDK om apps geschikt te maken voor Mobile Application Management
+Gebruik de Microsoft Intune App SDK om Intune in staat te stellen bepaalde functies van uw iOS- of Android-apps te beheren. Nadat uw app is ingeschakeld, kunt u in de app beleidsregels implementeren. Deze beleidsregels gebruiken deze functies om uw zakelijke gegevens te beveiligen. Voorbeelden van het soort bescherming dat u met de SDK kunt implementeren:
 
 -   Voorkomen dat gebruikers zakelijke documenten kopiëren naar de cloud
 
@@ -39,6 +40,6 @@ Zie de pagina [Overzicht](/intune/develop/intune-app-sdk) voor een overzicht van
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

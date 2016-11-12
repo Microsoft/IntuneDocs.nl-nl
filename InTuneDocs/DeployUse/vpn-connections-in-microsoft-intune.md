@@ -3,8 +3,9 @@ title: VPN-verbindingen | Microsoft Intune
 description: VPN-profielen gebruiken om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Intune ondersteunt het maken van VPN-profielen die gebruikmaken van de volgende 
 
 
 
-Type verbinding |iOS en Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8,1|Windows 10 Desktop en Mobile |
+Type verbinding |iOS en Mac OS X  |Android en Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8,1|Windows 10 Desktop en Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Ja |Ja   |Nee    |     Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
-Cisco (IPsec)|Ja |Nee   |Nee  |  Nee|Nee  |Nee | Nee|
-Citrix|Yes |Nee   |Nee  |  Nee|Nee  |Nee | Nee|
-Pulse Secure|Ja  |Ja |Ja   |Nee  |Ja  |Ja| Ja|        
-F5 Edge Client|Ja |Ja |Ja |Nee  |Ja  |   Ja |  Ja|   
-Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Nee  |Ja |Ja |Ja|         
-CheckPoint Mobile VPN|Ja |Ja |Ja |Ja |Ja|Ja|Ja|
-Microsoft SSL (SSTP)|Nee |Nee |Nee |Nee |Nee|Nee|VPNv1 OMA-URI*|
-Microsoft Automatic|Nee |Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
-IKEv2|Aangepast iOS-profiel|Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
-PPTP|Aangepast iOS-profiel|Nee |Nee |Nee |Nee|Nee|Ja|
-L2TP|Aangepast iOS-profiel|Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
+Cisco AnyConnect|Ja |Ja   |Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
+Cisco (IPsec)|Ja |Nee   |Nee  |Nee  |Nee | Nee|
+Citrix|Yes |Nee   |Nee  |Nee  |Nee | Nee|
+Pulse Secure|Ja  |Ja |Ja   |Ja  |Ja| Ja|        
+F5 Edge Client|Ja |Ja |Ja |Ja  |   Ja |  Ja|   
+Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja|         
+CheckPoint Mobile VPN|Ja |Ja |Ja |Ja|Ja|Ja|
+Microsoft SSL (SSTP)|Nee |Nee |Nee |Nee|Nee|VPNv1 OMA-URI*|
+Microsoft Automatic|Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
+IKEv2|Aangepast iOS-profiel|Nee |Nee |Nee|Ja (OMA-URI)|Ja|
+PPTP|Aangepast iOS-profiel|Nee |Nee |Nee|Nee|Ja|
+L2TP|Aangepast iOS-profiel|Nee |Nee |Nee|Ja (OMA-URI)|Ja|
 
 \* Zonder aanvullende instellingen die anderszins beschikbaar voor zijn voor Windows 10.
 
@@ -96,6 +97,8 @@ De gebruiker wordt geverifieerd op de VPN-server door een gebruikersnaam en wach
 
 > [!Note]
 > Met een VPN-profiel voor Android for Work-apparaten kan alleen een VPN-verbinding tot stand worden gebracht voor apps die zijn geïnstalleerd in het werkprofiel van het apparaat.
+>
+> Sommige VPN-verbindingstypen ondersteunen per-app VPN voor Android for Work-apparaten en ondersteunen het inschakelen van per-app VPN op apps die worden gedistribueerd via Intune.  
 
 3. Met behulp van de volgende tabel kunt u de instellingen voor het VPN-profiel configureren:
 

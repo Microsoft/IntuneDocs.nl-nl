@@ -3,8 +3,9 @@ title: Uw Windows-apparaat handmatig synchroniseren | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchron
     Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven. De knop **Synchroniseren** is pas beschikbaar nadat de synchronisatie van het apparaat is voltooid.
 
 ## Windows 10-bureaublad
-Ga als volgt te werk als u uw Windows 10-desktopapparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
+Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen. Bekijk de schermafbeeldingen om te zien welke stappen u het beste kunt gebruiken en volg dan de stappen die betrekking hebben op uw apparaat. 
 
 1. Kies de knop **Start** en kies vervolgens **Instellingen**.
 
@@ -63,15 +64,46 @@ Ga als volgt te werk als u uw Windows 10-desktopapparaat handmatig wilt synchron
 
     ![Accounts kiezen op de pagina Instellingen](./media/win10pc-sync-2-settings-accounts.png)
 
-3. Kies op de pagina **Accounts** de optie **Toegang via het werknetwerk**.
+3. Bekijk de volgende twee schermen en kies het scherm dat lijkt op het scherm op uw apparaat. Volg de stappen die bij het scherm horen dat u op het apparaat ziet.
+
+    Als u dit scherm met de melding 'Toegang tot werk of school' ziet, volgt u de instructies in [Stappen om te volgen als u Toegang tot werk of school ziet](#steps-to-follow-if-you-see-access-work-or-school).
+
+    ![Te volgen stappen als u Toegang tot werk of school ziet](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Als u dit scherm met de melding 'Toegang via het werknetwerk' ziet, volgt u de stappen in [Stappen om te volgen als u Toegang via het werknetwerk ziet](#steps-to-follow-if-you-see-your-account).
+
+    ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png) 
+
+### Stappen om te volgen als u Toegang tot werk of school ziet
+
+1. Kies op de pagina **Accounts** de optie **Toegang tot werk of school**.
+
+    ![Kies Toegang tot werk of school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. Kies uw werk- of schoolaccount. Afhankelijk van hoe uw IT-beheerder een en ander heeft ingesteld, ziet u mogelijk twee accounts die op het voorbeeld hieronder lijken. Naast het ene account wordt een aktetas weergegeven en naast het andere account ziet u het Microsoft-logo. 
+
+    - Als u het account met de aktetas ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder. 
+    - Als u het account met het Microsoft-logo ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
+
+    ![Kies de naam van het account naast de aktetas of het Microsoft-logo](./media/win10pc-rs1-sync-info-button.png)
+
+3. Kies de **Info**-knop. Er wordt een dialoogvenster geopend dat op het voorbeeld hieronder lijkt.
+
+    ![Kies de naam van het account naast de aktetas of het Microsoft-logo](./media/win10pc-rs1-sync-button.png)
+
+4. Kies de knop **Synchroniseren**. Het apparaat wordt gesynchroniseerd met Intune.
+
+### Te volgen stappen als u Toegang via het werknetwerk ziet
+    
+1. Kies op de pagina **Accounts** de optie **Toegang via het werknetwerk**.
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
 
-4. Kies in de sectie **Registreren voor apparaatbeheer** de naam van uw bedrijf.
+2. Kies in de sectie **Registreren voor apparaatbeheer** de naam van uw bedrijf.
 
     ![De naam van het bedrijf kiezen voor apparaatbeheer](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Kies de knop **Synchroniseren**.
+3. Kies de knop **Synchroniseren**.
 
     ![De knop Synchroniseren kiezen](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactge
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

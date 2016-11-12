@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
-ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
+ms.sourcegitcommit: 92e40930c0ccbeb3d98bef43b115fd92f24beaef
+ms.openlocfilehash: 93a29266ad9d18f444f0cc0c5aadf9b414eedfa2
 
 
 ---
@@ -24,23 +24,23 @@ Als u wilt dat uw medewerkers hun mobiele apparaten kunnen inschrijven bij Intun
 
 |Stappen|Details|  
 |-----------|-------------|  
-|**Stap 1:** [Afhankelijkheden van apparaatinschrijving](#step-1-device-enrollment-dependencies)|Zorg ervoor dat uw aangepaste domeinnaam is geconfigureerd en dat de netwerkcommunicatie gereed is|  
-|**Stap 2:** [De instantie voor beheer van mobiele apparaten instellen](#step-2-set-mobile-device-management-authority)|De instantie voor beheer van mobiele apparaten definieert de service die wordt toegewezen aan uw apparaten|
-|**Stap 3:** [De Intune-bedrijfsportal configureren](#step-3-configure-the-intune-company-portal)|Configureer gebruikersgerichte instellingen voor de bedrijfsportalapp|  
-|**Stap 4:** [Intune-gebruikerslicenties toewijzen](#step-4-assign-intune-user-licenses)|Wijs Intune-licenties toe aan gebruikers zodat ze apparaten kunnen inschrijven|
-|**Stap 5:** [Apparaatbeheer instellen](#step-5-set-up-device-management)|Schakel platformspecifieke instellingen in voor iOS- en Windows-beheer. Android-apparaten vereisen geen aanvullende configuratie.|
+|**Stap 1:** [Verbindingen inschakelen](#step-1-enable-connections)|Zorg ervoor dat uw aangepaste domeinnaam is geconfigureerd en dat de netwerkcommunicatie gereed is|  
+|**Stap 2:** [MDM-instantie instellen](#step-2-set-mdm-authority)|De instantie voor beheer van mobiele apparaten definieert de service die wordt toegewezen aan uw apparaten|
+|**Stap 3:** [De bedrijfsportal configureren](#step-3-configure-company-portal)|Configureer gebruikersgerichte instellingen voor de bedrijfsportalapp|  
+|**Stap 4:** [Gebruikerslicenties toewijzen](#step-4-assign-user-licenses)|Wijs Intune-licenties toe aan gebruikers zodat ze apparaten kunnen inschrijven|
+|**Stap 5:** [Inschrijving inschakelen](#step-5-enable-enrollment)|Schakel platformspecifieke instellingen in voor iOS- en Windows-beheer. Android-apparaten vereisen geen aanvullende configuratie.|
 
 Zoekt u Intune met Configuration Manager?
 > [!div class="button"]
 [SCCM-documenten weergeven >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
-## Stap 1: Afhankelijkheden van apparaatinschrijving
+## Stap 1: Verbindingen inschakelen
 
 Voordat u het inschrijven van mobiele apparaten inschakelt, moet u ervoor zorgen dat u:
 - [De vereiste netwerk-URL's en -poorten hebt gecontroleerd](../get-started/network-infrastructure-requirements-for-microsoft-intune)
 - [Uw domeinnaam hebt toegevoegd en gecontroleerd](../get-started/domain-names-for-microsoft-intune)
 
-## Stap 2: De instantie voor beheer van mobiele apparaten instellen
+## Stap 2: MDM-instantie instellen
 De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
 
 >[!IMPORTANT]
@@ -56,7 +56,7 @@ De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren 
 
 3.  Intune vraagt u te bevestigen dat u Intune wilt gebruiken als uw MDM-instantie. Schakel het selectievakje in en kies vervolgens **Ja** als u mobiele apparaten wilt beheren met Microsoft Intune.
 
-## Stap 3: De Intune-bedrijfsportal configureren
+## Stap 3: De bedrijfsportal configureren
 
 De Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben tot bedrijfsgegevens en algemene taken kunnen uitvoeren, zoals apparaten registreren, apps installeren en naar ondersteuningsinformatie van uw IT-afdeling zoeken.
 
@@ -102,7 +102,7 @@ U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur
 
 Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagina **Bedrijfsportal** van de beheerconsole gebruiken om de bedrijfsportalwebsite weer te geven. Deze koppelingen kunnen niet worden gewijzigd. Wanneer een gebruiker zich aanmeldt, worden via deze koppelingen uw abonnementen weergegeven in de bedrijfsportal.
 
-## Stap 4: Intune-gebruikerslicenties toewijzen
+## Stap 4: Gebruikerslicenties toewijzen
 
 U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD). U kunt [on-premises gebruikers synchroniseren met Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
@@ -119,7 +119,7 @@ U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te vo
 3. Voer [Azure AD Connect-synchronisatie](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) uit om uw on-premises gebruikers te integreren met Azure AD.
 4. Als de accountgegevens van de gebruikers zijn gesynchroniseerd, kunt u vervolgens Microsoft Intune-licenties toewijzen via de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx).
 
-## Stap 5: Apparaatbeheer instellen
+## Stap 5: Inschrijving inschakelen
 Na het instellen van de MDM-instantie moet u apparaatbeheer instellen voor de besturingssystemen die uw organisatie wil ondersteunen. De stappen die voor het instellen van apparaatbeheer nodig zijn, verschillen per besturingssysteem. Android OS vereist bijvoorbeeld niet dat u iets doet in de Intune-beheerconsole. Aan de andere kant vereisen Windows en iOS een vertrouwensrelatie tussen apparaten en Intune voor het toestaan van beheer.
 
 Stel het beheer in voor de volgende platformen:
@@ -134,6 +134,6 @@ U kunt ook:
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

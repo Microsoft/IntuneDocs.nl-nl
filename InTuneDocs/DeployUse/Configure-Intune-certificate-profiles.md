@@ -3,8 +3,9 @@ title: Certificaatprofielen configureren | Microsoft Intune
 description: Informatie over het maken van een certificaatprofiel van Intune.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -63,6 +64,11 @@ U moet een vertrouwd certificaatprofiel maken voordat u een Simple Certificate E
 4.  Kies **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu implementeren.
+
+> [!NOTE]
+>
+> Android- en Android for Work-apparaten geven een melding weer dat een derde partij een vertrouwd certificaat heeft geïnstalleerd.
+    
 
 ## **Taak 3**: SCEP- of PFX-certificaatprofielen maken
 Nadat u een vertrouwd CA-certificaatprofiel hebt gemaakt, maakt u SCEP- of PFX-certificaatprofielen voor elk platform dat u wilt gebruiken. Wanneer u een SCEP-certificaatprofiel maakt, moet u een vertrouwd certificaatprofiel voor datzelfde platform opgeven. Hierdoor worden de twee certificaatprofielen gekoppeld. U moet nog wel elk profiel afzonderlijk implementeren.

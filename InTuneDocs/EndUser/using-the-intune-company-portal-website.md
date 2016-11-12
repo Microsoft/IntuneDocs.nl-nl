@@ -3,6 +3,7 @@ title: De Intune-bedrijfsportalwebsite gebruiken | Microsoft Intune
 description: Beschrijving van de bedrijfsportalwebsite en koppelingen naar de stappen voor taken die u op de website kunt uitvoeren
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
+ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
+ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 
 ---
 
 # De Intune-bedrijfsportalwebsite gebruiken
-De [bedrijfsportalwebsite](http://portal.manage.microsoft.com) is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt ingeschreven.
+De [bedrijfsportalwebsite](http://portal.manage.microsoft.com) is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd.
 
 U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
@@ -36,7 +37,7 @@ U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
 
 -   [Het apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
 
--   Zoek de contactgegevens van uw IT-beheerder, als uw IT-beheerder deze heeft geconfigureerd.
+-   Zoeken naar de contactgegevens van uw IT-beheerder, als uw IT-beheerder deze heeft geconfigureerd
 
 -   Gegevens over uw apparaat bekijken, bijvoorbeeld de compatibiliteit met het beleid van uw school of werk
 
@@ -50,6 +51,6 @@ U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook met d
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

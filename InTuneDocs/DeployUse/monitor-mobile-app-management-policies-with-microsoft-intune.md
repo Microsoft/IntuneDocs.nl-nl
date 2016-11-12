@@ -3,6 +3,7 @@ title: MAM-beleid bewaken met Microsoft Intune | Microsoft Intune
 description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 644860abcd351d24f08d7a517a3a4b5f44824689
-ms.openlocfilehash: 1d22d26c1a1c52dda4f9b01658d22f8de8187f0f
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: bc68a13b8d5694908cd00e5e615f81f6e15cfe22
 
 
 ---
@@ -71,10 +72,11 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 ### Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[Ervaring van eindgebruikers voor apps die geschikt zijn voor MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

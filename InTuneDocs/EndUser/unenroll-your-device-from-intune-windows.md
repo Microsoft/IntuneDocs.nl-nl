@@ -3,6 +3,7 @@ title: De inschrijving van uw Windows-apparaat bij Intune ongedaan maken | Micro
 description: Hierin wordt beschreven hoe u de inschrijving van een Windows-apparaat bij Intune ongedaan kunt maken
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 93374a2098447a11b164ae3fb5d7b1b3d4824806
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 ---
@@ -44,11 +45,11 @@ Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de koppelin
 
 1.  Ga naar **Pc-instellingen** &gt; **Netwerk** &gt; **Werkplek**.
 
-2.  Tik onder **Workplace Join** op **Verlaten**.
+2.  Selecteer onder **Workplace Join** de optie **Verlaten**.
 
-3.  Tik onder **Apparaatbeheer inschakelen** op **Uitschakelen**.
+3.  Selecteer onder **Apparaatbeheer inschakelen** de optie **Uitschakelen**.
 
-4.  Tik in het pop-upvenster dat wordt geopend, op **Uitschakelen**.
+4.  Selecteer **Uitschakelen** in het pop-upvenster dat wordt geopend.
 
 ## De registratie van uw Windows Phone 8.1-apparaat ongedaan maken
 
@@ -60,11 +61,10 @@ Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de koppelin
 
 4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

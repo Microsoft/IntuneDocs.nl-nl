@@ -125,7 +125,7 @@
 #### [MAM-beleid valideren](validate-mobile-application-management.md)
 #### [Beleidsnaleving bewaken](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [Ervaring van de eindgebruiker](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [Intune-beheerconsole voor MAM-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Line-Of-Business-apps voorbereiden voor MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -141,12 +141,15 @@
 ### [Bedrijfsgegevens van beheerde apps wissen](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Bronnen over de eindgebruikerservaring](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [Beheerde iOS-apparaten herstellen](restore-managed-ios-devices-from-backup.md)
+### [Android-apps met MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [iOS-apps met MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [Apps ontwikkelen en aanpassen](/intune/develop/intune-app-sdk)
 
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -2,7 +2,8 @@
 title: Uw Android-apparaat is geroot en u kunt geen verbinding maken | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,27 +15,25 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 14180d4dd324134f3b4e0a8d0241ccb61c3207e0
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
 
 
 ---
 
 
-# Uw Android-apparaat is geroot en u kunt geen verbinding maken
+# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Uw Android-apparaat is geroot en u kunt geen verbinding maken
 
-Als uw Android-apparaat is geroot, betekent dit dat het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Als u dit bericht ziet, is het niet mogelijk toegang tot bedrijfsbronnen te krijgen totdat het probleem is opgelost.
+Als uw Android-apparaat is geroot, is het apparaat zodanig is gewijzigd dat hiermee inbreuk is gemaakt op de bedrijfsbronnen en -beveiliging. Als u dit bericht ziet, is het niet mogelijk toegang tot bedrijfsbronnen te krijgen totdat het probleem is opgelost.
 
-Als u niet van mening bent dat u opzettelijk uw apparaat hebt geroot, moet u deze andere redenen waarom het apparaat kan zijn geroot bekijken:
+Als u van mening bent dat u uw apparaat niet opzettelijk hebt geroot, leest u de volgende redenen waarom het apparaat kan zijn geroot:
 
-- U hebt mogelijk een app op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Als u dit bericht ziet na installatie van een app, is het raadzaam de app te verwijderen om te zien of het probleem hiermee is opgelost.
+- U hebt mogelijk een app op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Als u dit bericht ziet nadat u een app hebt geïnstalleerd, is het raadzaam de app te verwijderen om te zien of het probleem hiermee is opgelost.
 
 - De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Neem contact op met uw IT-beheerder voor hulp. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
