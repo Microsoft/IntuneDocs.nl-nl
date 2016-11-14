@@ -2,8 +2,8 @@
 title: Een Symantec-certificaat voor het ondertekenen van programmacode vernieuwen om met Intune te gebruiken | Microsoft Intune
 description: Richtlijnen voor het vernieuwen van Symantec-certificaten waarmee bepaalde mobiele Windows- en Windows Phone-apparaten worden beheerd
 keywords: 
-author: NathBarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -19,11 +19,11 @@ ms.openlocfilehash: 2479f8065a2bb46e63b0e3971700a8d2c0982755
 
 ---
 
-# Een Symantec-certificaat voor het ondertekenen van programmacode vernieuwen voor Windows-apparaten
+# <a name="renew-a-symantec-enterprise-codesigning-certificate-for-windows-devices"></a>Een Symantec-certificaat voor het ondertekenen van programmacode vernieuwen voor Windows-apparaten
 
 Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone worden geïmplementeerd, moet regelmatig worden vernieuwd.
 
-## Het zakelijke Symantec-certificaat voor ondertekening van programmacode vernieuwen
+## <a name="how-to-renew-the-symantec-enterprise-codesigning-certificate"></a>Het zakelijke Symantec-certificaat voor ondertekening van programmacode vernieuwen
 
 1.  Zoek naar een e-mail over de vereiste vernieuwing die ongeveer 14 dagen vóór de vervaldatum van het certificaat ontvangt van Symantec. Deze e-mail bevat richtlijnen van Symantec om uw zakelijke certificaat te vernieuwen.
 
@@ -33,7 +33,7 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 
 3.  Nadat de vernieuwing is goedgekeurd en betaald, downloadt u het certificaat.
 
-## Het bijgewerkte certificaat voor Windows Phone 8.0 installeren
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-80"></a>Het bijgewerkte certificaat voor Windows Phone 8.0 installeren
 
 1.  Download en onderteken de meest recente Windows Phone-bedrijfsportal die u hier kunt vinden: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -47,7 +47,7 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 
 Voorzien in een ondertekend SSP.xap-bestand is momenteel de enige manier om het bijgewerkte certificaat voor ondertekening van programmacode te leveren. Om ondersteuning te bieden voor ondertekende line-of-business-apps, moet u een bedrijfsportal-app ondertekenen en uploaden, ook al installeren uw gebruikers de bedrijfsportal-app uit de Store.
 
-## Het bijgewerkte certificaat voor apparaten met Windows Phone 8.1 en hoger installeren
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-81-and-later-devices"></a>Het bijgewerkte certificaat voor apparaten met Windows Phone 8.1 en hoger installeren
 
 1.  Download en onderteken de meest recente Windows Phone-bedrijfsportal uit het Downloadcentrum dat u hier kunt vinden: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -60,7 +60,7 @@ Voorzien in een ondertekend SSP.xap-bestand is momenteel de enige manier om het 
 5.  Onderteken alle nieuwe en bijgewerkte bedrijfstak-apps van de onderneming met behulp van het nieuwe certificaat. Bestaande toepassingen hoeven niet opnieuw te worden ondertekend en geïmplementeerd.
 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Windows Phone 8.0-beheer instellen](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [Windows Phone-beheer instellen](set-up-windows-phone-management-with-microsoft-intune.md)
 

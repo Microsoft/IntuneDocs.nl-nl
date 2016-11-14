@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,10 +20,10 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ---
 
-# Toegang tot e-mail beperken met Microsoft Intune: voorbeeldscenario’s
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Toegang tot e-mail beperken met Microsoft Intune: voorbeeldscenario’s
 
-## De toegang tot Exchange Online blokkeren voor gebruikers met een apparaat dat niet voldoet aan het beleid.
-### Scenariovereisten
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>De toegang tot Exchange Online blokkeren voor gebruikers met een apparaat dat niet voldoet aan het beleid.
+### <a name="scenario-requirements"></a>Scenariovereisten
 - Voor alle gebruikers in de Active Directory-beveiligingsgroep **Accounting** moet de toegang tot Exchange Online worden geblokkeerd als hun apparaat niet voldoet aan het door u geïmplementeerde nalevingsbeleid.
 - Als de groep gebruikers bevat van wie het apparaat niet door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] wordt ondersteund, mogen zij via dat apparaat geen toegang krijgen tot Exchange Online.
 - Bovendien moeten alle gebruikers in de Active Directory-beveiligingsgroep **Finance** worden uitgesloten van het beleid, zelfs als ze zich ook in de beveiligingsgroep **Accounting** bevinden.
@@ -43,8 +43,8 @@ De volgende werkstroom wordt gebruikt om te bepalen welke apparaten toegang krij
 
 ![Diagram met werkstroom voor toegang tot apparaten](./media/ConditionalAccess8-5.png)
 
-## Alle iOS-apparaten die toegang hebben tot Exchange On-premises, moeten worden beheerd door Intune
-### Scenariovereisten
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>Alle iOS-apparaten die toegang hebben tot Exchange On-premises, moeten worden beheerd door Intune
+### <a name="scenario-requirements"></a>Scenariovereisten
 - Alleen apparaten met iOS mogen toegang hebben tot Exchange On-premises.
 - De apparaten moeten ook worden ingeschreven in Intune en voldoen aan de regels van het nalevingsbeleid voordat ze kunnen worden gebruikt om toegang te krijgen tot Exchange.
 
@@ -62,8 +62,8 @@ De volgende stroom wordt gebruikt om te bepalen welke apparaten toegang krijgen 
 
 ![Diagram met werkstroom voor toegang tot apparaten](./media/ConditionalAccess8-3.png)
 
-## Android-apparaten krijgen geen toegang tot Exchange On-premises.
-### Scenariovereisten
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Android-apparaten krijgen geen toegang tot Exchange On-premises.
+### <a name="scenario-requirements"></a>Scenariovereisten
 - Voor alle Android-apparaten moet de toegang tot Exchange worden geblokkeerd.
 - Alle andere ondersteunde apparaten kunnen wel toegang krijgen tot Exchange op voorwaarde dat ze worden beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
