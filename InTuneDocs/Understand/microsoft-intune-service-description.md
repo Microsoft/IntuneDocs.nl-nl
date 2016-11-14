@@ -2,8 +2,8 @@
 title: Beschrijving van de service | Microsoft Intune
 description: Intune is een cloudservice waarmee u Windows-pc&quot;s en mobiele iOS-, Mac OS X-, Android- en Windows-apparaten kunt beheren.
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
-ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 423282fd8dd80358311373862f808cdaa58212bd
 
 
 ---
 
-# Beschrijving van de Microsoft Intune-service
+# <a name="microsoft-intune-service-description"></a>Beschrijving van de Microsoft Intune-service
 
 Microsoft Intune is een cloudservice waarmee u Windows-pc's en mobiele iOS-, Mac OS X-, Android- en Windows-apparaten kunt beheren. Met Intune kunt u ook bedrijfsapplicaties en -gegevens beveiligen. U kunt Intune zelfstandig gebruiken of u kunt het integreren met System Center Configuration Manager en zo de beheermogelijkheden uitbreiden. 
 
@@ -33,13 +33,13 @@ U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenti
 
 Voor een lijst met instellingen die u op mobiele apparaten kunt configureren, zie:
 
--   [Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
+-   [Beheermogelijkheden voor ingeschreven apparaten in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 -   [Hybride Mobile Device Management (MDM) met System Center Configuration Manager en Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx) 
 
 Zie [Documentatiebibliotheek voor System Center Configuration Manager](https://technet.microsoft.com/library/mt346023.aspx)voor informatie over System Center Configuration Manager.
 
-## Het effect van Intune-service-updates op het gebruik van de service
+## <a name="understand-how-intune-service-updates-affect-you"></a>Het effect van Intune-service-updates op het gebruik van de service
 Omdat Intune een onlineservice is, kan de service regelmatig door Microsoft worden bijgewerkt.
 
 In dit onderwerp vindt u informatie over de frequentie van deze service-updates en de voorafgaande melding die u van ons ontvangt wanneer een update van invloed kan zijn op uw gebruik van de service.
@@ -61,7 +61,7 @@ Dit zijn de typen meldingen die Microsoft over de Intune-service biedt:
 -   Informatie over nieuwe functies, nieuwe functionaliteit en verbeteringen in bestaande functies biedt Microsoft in de maandelijkse service-update. Over het algemeen worden de service-updates door Microsoft rond het midden van elke maand geïmplementeerd. Updates worden beschreven in [Wat is er nieuw in Microsoft Intune?](/intune/deploy-use/whats-new-in-microsoft-intune).
 -   In het geval van stopzetting van de Intune-service, ontvangt u 12 maanden van tevoren een melding.
 
-## De beheeroplossing kiezen die het beste geschikt is voor u
+## <a name="choose-the-management-solution-thats-right-for-you"></a>De beheeroplossing kiezen die het beste geschikt is voor u
 U kunt Intune op verschillende manieren configureren om de mobiele apparaten en computers (in dit document **apparaten** genoemd) van uw bedrijf te beheren en te beveiligen.
 
 -   **Zelfstandige configuratie van Intune.** Gebruik de webbeheerconsole in Intune om apparaten in uw organisatie te beheren. Intune kan worden gebruikt zonder on-premises IT-infrastructuur, maar als u Intune gebruikt met Active Directory Domain Services, kunt u gebruikmaken van domeingebruikersaccounts die u bij Intune beheert met Domain Services.
@@ -69,14 +69,14 @@ U kunt Intune op verschillende manieren configureren om de mobiele apparaten en 
 -   **Intune met System Center Configuration Manager.** Gebruik de Configuration Manager-beheerconsole om computers en mobiele apparaten in uw bedrijf te beheren. Met deze configuratie kunt u alle apparaten van uw organisatie beheren via één console, de Configuration Manager-beheerconsole. Configuration Manager ondersteunt een zeer groot aantal mobiele apparaten, servers en computers. Zie [Hybride Mobile Device Management (MDM) met System Center Configuration Manager en Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx) voor meer informatie.  Zie [Kiezen tussen Microsoft Intune standalone en hybride Mobile Device Management met Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) voor meer informatie om te bepalen welke benadering geschikt is voor u. 
 
 
-## Meer informatie over Intune
+## <a name="learn-more-about-intune"></a>Meer informatie over Intune
 Voor meer informatie over Intune kunt u de volgende resources raadplegen:
 
 -   [Microsoft Intune Vertrouwenscentrum](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) bevat informatie over de beveiligings-, privacy- en nalevingsprocedures van Intune. Daarnaast wordt er een aantal certificaten van Intune beschreven.
 
--   [Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
+-   [Beheermogelijkheden voor ingeschreven apparaten in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [Documentatiebibliotheek voor System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
@@ -84,6 +84,6 @@ Voor meer informatie over Intune kunt u de volgende resources raadplegen:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

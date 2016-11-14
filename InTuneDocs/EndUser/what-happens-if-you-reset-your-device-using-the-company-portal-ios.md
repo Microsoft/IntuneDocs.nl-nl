@@ -2,10 +2,10 @@
 title: Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 71e1e0b31f917d62f4591501709261d87fcd9f30
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
 
 
 ---
 
 
-# Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de bedrijfsportal?
+# <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
 Wanneer u de bedrijfsportal gebruikt om uw iPhone of iPad opnieuw in te stellen, worden enkele apps en instellingen op het apparaat, waaronder een deel van uw persoonlijke gegevens, mogelijk verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van hoe u het apparaat gebruikt, zoals beschreven in de volgende lijsten.
 
@@ -32,18 +32,18 @@ Wanneer u de bedrijfsportal gebruikt om uw iPhone of iPad opnieuw in te stellen,
 
 -   Het apparaat wordt opnieuw ingesteld op de fabrieksinstellingen en uw persoonlijke gegevens, apps en instellingen worden verwijderd.
 
-**Uw apparaat heeft alleen toegang tot bedrijfse-mail**
+**Uw apparaat heeft alleen toegang tot bedrijfs-e-mail**
 
 -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
 -   Uw bedrijfse-mailaccount wordt verwijderd en niet-opgeslagen e-mailberichten worden verwijderd.
 
-Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

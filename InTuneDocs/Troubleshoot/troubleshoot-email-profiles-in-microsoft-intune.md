@@ -2,7 +2,8 @@
 title: Problemen met e-mailprofielen oplossen | Microsoft Intune
 description: Problemen met e-mailprofielen en hoe u deze kunt oplossen.
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
+ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
+ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 
 ---
 
-# Problemen met e-mailprofielen in Microsoft Intune oplossen
+# <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Problemen met e-mailprofielen in Microsoft Intune oplossen
 Hier vindt u een aantal problemen met e-mailprofielen die zich kunnen voordoen. Ook wordt er beschreven hoe u deze kunt oplossen.
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
 
-## Kan geen afbeeldingen verzenden vanuit e-mailaccount
+## <a name="unable-to-send-images-from-email-account"></a>Kan geen afbeeldingen verzenden vanuit e-mailaccount
 Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeeldingen of foto’s verzenden vanaf hun apparaat.
 Dit is het geval als de optie **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** niet is ingeschakeld.
 
-### Intune-oplossing
+### <a name="intune-solution"></a>Intune-oplossing
 
 1.  Open de Microsoft Intune-beheerconsole, selecteer de workload **Beleid** &gt; **Configuratiebeleid**.
 
@@ -37,7 +38,7 @@ Dit is het geval als de optie **Toestaan dat e-mails worden verzonden vanuit toe
 
 3.  Selecteer **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**.
 
-### Configuration Manager geïntegreerd met Intune-oplossing
+### <a name="configuration-manager-integrated-with-intune-solution"></a>Configuration Manager geïntegreerd met Intune-oplossing
 
 1.  Open de Configuration Manager-console &gt; **Activa en naleving**.
 
@@ -48,7 +49,7 @@ Dit is het geval als de optie **Toestaan dat e-mails worden verzonden vanuit toe
 4.  Selecteer op het tabblad **Synchronisatie-instellingen** de optie **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**.
 
 
-## Er is al een e-mailprofiel geïnstalleerd op het apparaat
+## <a name="device-already-has-an-email-profile-installed"></a>Er is al een e-mailprofiel geïnstalleerd op het apparaat
 
 Als de gebruiker een e-mailprofiel heeft geïnstalleerd voorafgaand aan het inrichten van een profiel door Intune, is het resultaat van de implementatie van het Intune-e-mailprofiel afhankelijk van het apparaatplatform:
 
@@ -60,16 +61,16 @@ Als de gebruiker een e-mailprofiel heeft geïnstalleerd voorafgaand aan het inri
 
 Omdat Samsung KNOX niet de hostnaam gebruikt om het profiel te identificeren, wordt geadviseerd om niet meerdere e-mailprofielen te implementeren naar hetzelfde e-mailadres op verschillende hosts, aangezien die elkaar zullen overschrijven.
 
-## Fout 0x87D1FDE8 voor KNOX-apparaat
-**Probleem**: na het maken en implementeren van een Exchange Active Sync-e-mailprofiel voor Samsung KNOX voor verschillende Android-apparaten wordt door de apparaten de fout **0x87D1FDE8** of de fout **Doorvoeren is mislukt** gemeld op het tabblad &gt;-beleid van de eigenschappen van het apparaat.
+## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Fout 0x87D1FDE8 voor KNOX Standard-apparaat
+**Probleem**: na het maken en implementeren van een Exchange Active Sync-e-mailprofiel voor Samsung KNOX Standard voor verschillende Android-apparaten wordt door de apparaten de fout **0x87D1FDE8** of de fout **Doorvoeren is mislukt** gemeld op het tabblad &gt;-beleid van de eigenschappen van het apparaat.
 
 Controleer de configuratie van uw EAS-profiel voor Samsung KNOX en het bronbeleid. De synchronisatieoptie voor Samsung Notes wordt niet meer ondersteund en deze optie moet niet worden geselecteerd in uw profiel. Gun de apparaten voldoende tijd (maximaal 24 uur) om het beleid te verwerken.
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,10 +2,10 @@
 title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
 Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, stelt u de IT-beheerder in staat uw apparaat te beheren ter beveiliging van de bedrijfs- of schoolgegevens. In dit onderwerp wordt beschreven wat er gebeurt met apparaten ouder dan Windows 10. Zie het [relevante onderwerp](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) als het gaat om apparaten met Windows 10.
 
-## Wat gebeurt er met alle Windows-apparaten na de inschrijving
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Wat gebeurt er met alle Windows-apparaten na de inschrijving
 Wanneer u een Windows- of Windows Phone-apparaat in Intune inschrijft, profiteert u van het volgende:
 
 -   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
@@ -53,7 +53,7 @@ Wanneer u uw apparaat inschrijft, geeft u de IT-beheerder toestemming voor hande
 
 -   Voorkomen dat u foto's van bedrijfsgerelateerde gegevens maakt.
 
-## Wat gebeurt er met alle Windows-pc’s na de inschrijving
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Wat gebeurt er met alle Windows-pc’s na de inschrijving
 
 -  Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en u bedrijfsbronnen (zoals apps en ondersteuningsinformatie) kunt gebruiken. De IT-beheerder kan deze software automatisch bijwerken.
 
@@ -63,7 +63,7 @@ Wanneer u uw apparaat inschrijft, geeft u de IT-beheerder toestemming voor hande
 
 -  De IT-beheerder kan apps en updates op uw computer installeren.
 
-## Wat gebeurt er elke acht uur na de inschrijving van het apparaat
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Wat gebeurt er elke acht uur na de inschrijving van het apparaat
 Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
 -   Beleids- of app-updates die de IT-beheerder beschikbaar heeft gemaakt, worden gedownload.
@@ -72,10 +72,10 @@ Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
-Neem contact op met uw IT-beheerder als u vragen hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
