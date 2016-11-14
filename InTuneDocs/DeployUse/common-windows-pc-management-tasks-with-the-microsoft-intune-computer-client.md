@@ -1,8 +1,9 @@
 ---
-title: Algemene beheertaken voor Windows-pc's | Microsoft Intune
+title: Algemene beheertaken voor Windows-pc&quot;s | Microsoft Intune
 description: "Bestudeer de taken in dit onderwerp voor meer informatie over het beheren van Windows-pc’s met de Intune-softwareclient."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
 
 
 ---
 
-# Algemene beheertaken voor Windows-pc’s met de Intune-softwareclient
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Algemene beheertaken voor Windows-pc’s met de Intune-softwareclient
 Bestudeer de taken in dit onderwerp voor meer informatie over het beheren van computers met de Intune-softwareclient. Zie [De Intune-softwareclient installeren met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de client nog niet op uw computers hebt geïnstalleerd.
 
 
-## Beleid gebruiken voor het vereenvoudigen van pc-beheer
+## <a name="use-policies-to-simplify-pc-management"></a>Beleid gebruiken voor het vereenvoudigen van pc-beheer
 
 Windows-pc's met de Intune-softwareclient kunnen worden beheerd met behulp van het Intune-beleid **Computerbeheer**.
 
 ![Beleidssjablonen voor Windows-pc’s](../media/pc_policy_template.png)
 
-### Het Microsoft Intune Center beheren
+### <a name="manage-the-microsoft-intune-center"></a>Het Microsoft Intune Center beheren
 Gebruikers zien de Intune-softwareclient als het **Microsoft Intune Center**. Met het Microsoft Intune Center kunnen gebruikers:
 
 -   Toepassingen ophalen via de bedrijfsportal.
@@ -51,16 +52,16 @@ Het Microsoft Intune Center wordt geïnstalleerd op alle beheerde computers. U k
 |**Website-URL**|De URL van uw ondersteuningswebsite.<br /><br />Maximale lengte: 150 tekens|
 |**Opmerkingen**|Een opmerking die wordt weergegeven voor gebruikers.<br /><br />Maximale lengte: 120 tekens|
 
-## Instellingen voor software-updates
+## <a name="software-updates-settings"></a>Instellingen voor software-updates
 Gebruik beleidsregels om de instellingen te configureren die beheerde computers gebruiken voor het controleren op en downloaden van software-updates van Microsoft en derden. Deze updates omvatten geen upgrades van besturingssystemen (dat wil zeggen een upgrade van Windows 7 naar Windows 10 of een upgrade van een Windows 10-versie naar een nieuwere versie). Zie voor meer informatie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Instellingen voor Endpoint Protection
+### <a name="endpoint-protection-settings"></a>Instellingen voor Endpoint Protection
 Gebruik beleidsregels voor het configureren van instellingen voor Endpoint Protection die u vervolgens implementeert op beheerde computers. Dit omvat scanschema's, te ondernemen acties wanneer schadelijke software wordt gedetecteerd, en meer. Zie [Help Windows-pc's beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
 
-## Windows Firewall-instellingen
+## <a name="windows-firewall-settings"></a>Windows Firewall-instellingen
 Beleidsregels vereenvoudigen het beheer van Windows Firewall-instellingen op beheerde computers. Zie [Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) voor meer informatie.
 
-## Hardware- en software-inventarisatie weergeven
+## <a name="view-hardware-and-software-inventory"></a>Hardware- en software-inventarisatie weergeven
 Intune verzamelt gedetailleerde informatie over de hardware en software van beheerde computers. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
 
 -   Een rapport met een overzicht van de informatie over de hardwaremogelijkheden van uw computers.
@@ -69,7 +70,7 @@ Intune verzamelt gedetailleerde informatie over de hardware en software van behe
 
 -   De inventarisatie van een computer vernieuwen om ervoor te zorgen dat de gegevens in het rapport actueel zijn.
 
-### Informatie over uw computers weergeven
+### <a name="to-display-information-about-your-computers"></a>Informatie over uw computers weergeven
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Rapporten**&gt;**Computerinventarisatierapporten**.
 
@@ -79,7 +80,7 @@ Intune verzamelt gedetailleerde informatie over de hardware en software van behe
 
     U kunt het rapport rangschikken op een kolom, zoals **Naam**, **Chassistype** of **Fabrikant**, door te klikken op de bijbehorende kolomkop.
 
-### Software weergeven die op uw computers is geïnstalleerd
+### <a name="to-display-software-installed-on-your-computers"></a>Software weergeven die op uw computers is geïnstalleerd
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Rapporten**&gt;**Rapporten met gedetecteerde software**.
 
@@ -89,7 +90,7 @@ Intune verzamelt gedetailleerde informatie over de hardware en software van behe
 
     U kunt het rapport rangschikken op een kolom zoals **Naam**, **Uitgever** of **Categorie** door te klikken op de bijbehorende kolomkop. U kunt de updates in de lijst uitbreiden om meer details weer te geven (zoals de computers waarop deze update is geïnstalleerd) door de richtingspijl naast het item te kiezen.
 
-### Computerinventarisatie vernieuwen zodat deze actueel is
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Computerinventarisatie vernieuwen zodat deze actueel is
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de computer bevat waarvoor u de inventarisatie wilt vernieuwen).
 
@@ -102,7 +103,7 @@ Intune verzamelt gedetailleerde informatie over de hardware en software van behe
     Het dialoogvenster **Taakstatus** wordt weergegeven met huidige externe taken, taakstatus, apparaatnaam en gerapporteerde fouten, en het bevat een koppeling naar informatie voor probleemoplossing.
 
 
-## Een Windows-pc op afstand opnieuw opstarten
+## <a name="remotely-restart-a-windows-pc"></a>Een Windows-pc op afstand opnieuw opstarten
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de computer bevat die u opnieuw wilt opstarten).
 
@@ -112,7 +113,7 @@ Intune verzamelt gedetailleerde informatie over de hardware en software van behe
 
 4.  In het dialoogvenster **Taakstatus** controleert u de huidige externe taken, de taakstatus, de apparaatnaam en eventuele gerapporteerde fouten.
 
-## Een computer buiten gebruik stellen
+## <a name="retire-a-computer"></a>Een computer buiten gebruik stellen
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de computer bevat die u buiten gebruik wilt stellen).
 
@@ -143,10 +144,10 @@ Wanneer u een computer buiten gebruik stelt:
 
     Als de client niet kan worden verwijderd, leest u [Problemen met Endpoint Protection oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer informatie.
 
-## Gebruiker/apparaatkoppeling beheren
+## <a name="manage-userdevice-linking"></a>Gebruiker/apparaatkoppeling beheren
 Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aan een computer koppelen. U kunt een gebruiker aan meerdere computers koppelen, maar elke computer kan aan slechts één gebruiker worden gekoppeld. Gebruikers worden automatisch gekoppeld aan computers die ze registreren bij Intune met behulp van de bedrijfsportal.
 
-### Een gebruiker aan een computer koppelen
+### <a name="to-link-a-user-to-a-computer"></a>Een gebruiker aan een computer koppelen
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de computer bevat die u aan een gebruiker wilt koppelen).
 
@@ -165,13 +166,13 @@ Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aa
 > [!TIP]
 > Als u de mogelijkheden van eindgebruikers om zichzelf aan computers te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
 
-## Hulp op afstand voor Windows-pc's aanvragen en bieden
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Hulp op afstand voor Windows-pc's aanvragen en bieden
 
 Microsoft Intune kan de [TeamViewer](https://www.teamviewer.com)-software (apart verkrijgbaar) gebruiken om ervoor te zorgen dat gebruikers van pc's met de Intune-softwareclient hulp op afstand van u kunnen krijgen. Wanneer een gebruiker hulp via Microsoft Intune Center aanvraagt, ontvangt u een waarschuwing, kunt u de aanvraag accepteren en vervolgens hulp verlenen.
 Deze functionaliteit vervangt de bestaande Windows Hulp op afstand-functionaliteit in Intune.
 
 
-### Voordat u begint
+### <a name="before-you-start"></a>Voordat u begint
 
 Voordat u aanvragen voor hulp op afstand kunt uitvoeren en beantwoorden, moet aan de volgende vereisten zijn voldaan:
 
@@ -179,7 +180,7 @@ Voordat u aanvragen voor hulp op afstand kunt uitvoeren en beantwoorden, moet aa
 - De Windows-pc's die u wilt beheren, moeten worden [beheerd door de Windows PC-client](manage-windows-pcs-with-microsoft-intune.md).
 - Alle Windows PC-besturingssystemen die worden ondersteund door Intune, kunnen worden beheerd.
 
-### De TeamViewer-connector configureren
+### <a name="configure-the-teamviewer-connector"></a>De TeamViewer-connector configureren
 
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer**.
 2. Kies in de werkruimte **Beheer** de optie **TeamViewer**.
@@ -190,7 +191,7 @@ Voordat u aanvragen voor hulp op afstand kunt uitvoeren en beantwoorden, moet aa
 7. Controleer in de Intune-console of het item **TeamViewer-connector** wordt weergegeven als **Ingeschakeld**.
 
 
-### Een aanvraag voor hulp op afstand openen (eindgebruiker)
+### <a name="open-a-remote-assistance-request-end-user"></a>Een aanvraag voor hulp op afstand openen (eindgebruiker)
 
 1. Open **Microsoft Intune Center** op een client-pc met Windows.
 2. Kies onder **Hulp op afstand** de optie **Hulp op afstand aanvragen**.
@@ -198,7 +199,7 @@ Voordat u aanvragen voor hulp op afstand kunt uitvoeren en beantwoorden, moet aa
 4. De gebruiker ziet een bericht waarin wordt gevraagd of u de pc mag beheren. Ze moeten dit bericht accepteren om door te kunnen gaan.
 5. Tijdens de sessie van Hulp op afstand wordt er een venster weergegeven waarin de gebruiker kan zien dat u bent verbonden. Als dit venster wordt gesloten, wordt de externe sessie beëindigd.
 
-### Reageren op een aanvraag voor hulp op afstand
+### <a name="respond-to-a-remote-assistance-request"></a>Reageren op een aanvraag voor hulp op afstand
 
 1. Wanneer een gebruiker een aanvraag voor hulp op afstand verzendt, kunt u deze bekijken in de werkruimte **Waarschuwingen** onder **Bewaking** > **Hulp op afstand**. Bijvoorbeeld:
 > ![Schermafbeelding van een aanvraag voor hulp op afstand](./media/team-viewer.png)
@@ -210,12 +211,12 @@ Voordat u aanvragen voor hulp op afstand kunt uitvoeren en beantwoorden, moet aa
 
 Tijdens een sessie van Hulp op afstand kunt u alle beschikbare TeamViewer-opdrachten gebruiken om de externe pc te beheren. Voor hulp bij deze opdrachten, downloadt u de [Handleiding voor extern beheer](http://www.teamviewer.com/en/support/documents/) van de TeamViewer-website.
 
-### De sessie van Hulp op afstand sluiten
+### <a name="close-the-remote-assistance-session"></a>De sessie van Hulp op afstand sluiten
 
 Kies in het menu **Acties** van het venster **TeamViewer** de optie **Sessie beëindigen**.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

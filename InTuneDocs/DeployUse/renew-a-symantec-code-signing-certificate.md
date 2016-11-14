@@ -13,15 +13,15 @@ ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
+ms.sourcegitcommit: 8fd2a90025ae9310a214978cd2d42ea7ad035fa3
+ms.openlocfilehash: 2479f8065a2bb46e63b0e3971700a8d2c0982755
 
 
 ---
 
 # Een Symantec-certificaat voor het ondertekenen van programmacode vernieuwen voor Windows-apparaten
 
-Het Symantec-certificaat waarmee bepaalde Windows-apparaten en mobiele apparaten met Windows Phone worden beheerd, moet regelmatig worden vernieuwd. Voor Windows Phone 8.0-apparaten zijn een ondertekende bedrijfsportal-app en het certificaat voor ondertekenen van code nodig voor apparaatinschrijving. Latere Windows Phone-apparaten kunnen de bedrijfsportal-app gebruiken die is gedownload uit de Store. Een certificaat voor ondertekenen van code is ook vereist voor de implementatie van line-of-business-apps.
+Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone worden geïmplementeerd, moet regelmatig worden vernieuwd.
 
 ## Het zakelijke Symantec-certificaat voor ondertekening van programmacode vernieuwen
 
@@ -66,6 +66,6 @@ Voorzien in een ondertekend SSP.xap-bestand is momenteel de enige manier om het 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
