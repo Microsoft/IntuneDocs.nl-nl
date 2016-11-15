@@ -1,13 +1,26 @@
 ---
 redirect_url: https://docs.microsoft.com/en-us/intune/deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune
+title: Eindgebruikerservaring van apps met MAM-beleid | Microsoft Intune
+description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer u gebruikmaakt van apps met een MAM-beleid.
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 10/12/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
+ms.reviewer: sandera
+ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 271cc1578dc7f8e6b22d9682d8daf57be37e38be
-ms.openlocfilehash: 7e7d0e01f88c597f8239159917cd7e16138cc814
+ms.sourcegitcommit: d987d1005c17af2b1381f214bb6ac5ed5e3af15d
+ms.openlocfilehash: 9befcd0923787b8fdc67440df23e6afc483ec523
 
 ---
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

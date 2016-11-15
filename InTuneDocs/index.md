@@ -15,17 +15,17 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
-ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
+ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
+ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 ---
-# Intune-documentatie
+# <a name="intune-documentation"></a>Intune-documentatie
 <article id="main">
     <section id="hero-content">
       <h1>Intune-documentatie</h1>
       <h2>Lees hoe u Microsoft Intune implementeert en beheert; een service voor het beheren van mobiele apparaten en toepassingen.</h2>
-      <h3>Wilt u Intune beheren met Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Meer informatie over het beheer van mobiele apparaten &rarr;</a></h3>
+      <h3>Wilt u Intune beheren met Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Meer informatie over hybride beheer van mobiele apparaten &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Aanbevolen inhoud</h2>
@@ -263,7 +263,7 @@ ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
       <div class="resource-list row">
           <ul class="column-half">
           <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Feedback geven over de Intune-functionaliteit</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Feedback geven over de Intune-documentatie</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">Feedback geven over de documentatie</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Downloads voor de Intune-documentatie</a></li>
           </ul>
           <ul class="column-half">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

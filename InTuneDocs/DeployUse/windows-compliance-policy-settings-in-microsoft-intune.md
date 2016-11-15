@@ -14,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Instellingen voor nalevingsbeleid voor Windows-apparaten in Microsoft Intune
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Instellingen voor nalevingsbeleid voor Windows-apparaten in Microsoft Intune
 
 De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op apparaten waarop het Windows-besturingssysteem wordt uitgevoerd. De specifieke versie van Windows die wordt ondersteund, staat in de onderstaande secties vermeld.
 
@@ -28,12 +28,13 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 > [!div class="op_single_selector"]
 - [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Instellingen voor nalevingsbeleid voor Android-apparaten](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Instellingen voor nalevingsbeleid voor Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Instellingen voor nalevingsbeleid voor Windows Phone-apparaten
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Instellingen voor nalevingsbeleid voor Windows Phone-apparaten
 De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
 
-## Instellingen voor systeembeveiliging
-### Wachtwoord
+## <a name="system-security-settings"></a>Instellingen voor systeembeveiliging
+### <a name="password"></a>Wachtwoord
 - **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 
 - **Eenvoudige wachtwoorden toestaan:** stel deze optie in op **Ja** zodat gebruikers eenvoudige wachtwoorden kunnen maken, zoals **1234** of **1111**.
@@ -60,27 +61,27 @@ De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
 - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt samen met de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat langer inactief is geweest dan de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
 
   **Deze instelling geldt alleen voor Windows 10 Mobile-apparaten.**
-### Versleuteling
+### <a name="encryption"></a>Versleuteling
 - **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt dat apparaten moeten worden versleuteld om verbinding te maken met resources.
 
-## Instellingen voor de status van het apparaat
+## <a name="device-health-settings"></a>Instellingen voor de status van het apparaat
 - **Vereisen dat apparaten worden gerapporteerd als goed:** u kunt een regel instellen om te vereisen dat **Windows 10 Mobile** apparaten als goed rapporteert bij nieuw of bestaand nalevingsbeleid.  Als deze instelling is ingeschakeld, worden Windows 10-apparaten via de Health Attestation-service (HAS) op de volgende gegevenspunten beoordeeld:
   -  **BitLocker is ingeschakeld:** wanneer BitLocker is ingeschakeld, kan het apparaat gegevens die zijn opgeslagen op de schijf, beschermen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of naar de slaapstand overschakelt. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beschermen en ervoor te zorgen dat een computer niet kan worden gemanipuleerd, zelfs niet als deze onbeheerd, verloren of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan kunnen de sleutels niet worden gebruikt tot de TPM de status van de computer heeft gecontroleerd
   -  **Code-integriteitsbeleidsbestand is ingeschakeld:** code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Code-integriteit detecteert of een niet-ondertekend stuurprogramma- of systeembestand in de kernel wordt geladen, of dat een systeembestand is gewijzigd door schadelijke software die wordt uitgevoerd door een gebruikersaccount met beheerdersbevoegdheden.
   - **Beveiligd opstarten is ingeschakeld:** als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert dit voordat de computer kan worden opgestart. Als er bestanden zijn gemanipuleerd, waardoor de handtekening ongeldig is geworden, kan het systeem niet worden opgestart.
 
   Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
-##  Instellingen voor apparaateigenschappen
+##  <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 - **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
     Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
 
 - **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
 
-## Instellingen voor nalevingsbeleid voor Windows-pc’s
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Instellingen voor nalevingsbeleid voor Windows-pc’s
 De instellingen in deze sectie worden ondersteund op Windows-pc’s.
-## Instellingen voor systeembeveiliging
-### Wachtwoord
+## <a name="system-security-settings"></a>Instellingen voor systeembeveiliging
+### <a name="password"></a>Wachtwoord
 - **Minimale wachtwoordlengte:** ondersteund op Windows 8.1.
 
   Hiermee geeft u het minimale aantal cijfers of tekens op waaruit het wachtwoord van de gebruiker moet bestaan.
@@ -113,7 +114,7 @@ De instellingen in deze sectie worden ondersteund op Windows-pc’s.
 
   Als **Wachtwoordgeschiedenis onthouden:** is geselecteerd, geef dan aan hoeveel eerder gebruikte wachtwoorden er niet opnieuw kunnen worden gebruikt.
 
-## Instellingen voor de status van het apparaat
+## <a name="device-health-settings"></a>Instellingen voor de status van het apparaat
 - **Vereisen dat apparaten worden gerapporteerd als goed:** wordt ondersteund op Windows 10-apparaten.
 U kunt een regel instellen die vereist dat Windows 10-apparaten in nieuw of bestaand nalevingsbeleid als goed moeten worden gerapporteerd.  Als deze instelling is ingeschakeld, worden Windows 10-apparaten via de Health Attestation-service (HAS) op de volgende gegevenspunten beoordeeld:
   -  **BitLocker is ingeschakeld:** wanneer BitLocker is ingeschakeld, kan het apparaat gegevens die zijn opgeslagen op de schijf, beschermen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of naar de slaapstand overschakelt. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beschermen en ervoor te zorgen dat een computer niet kan worden gemanipuleerd, zelfs niet als deze onbeheerd, verloren of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan kunnen de sleutels niet worden gebruikt tot de TPM de status van de computer heeft gecontroleerd
@@ -123,7 +124,7 @@ U kunt een regel instellen die vereist dat Windows 10-apparaten in nieuw of best
 
   Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
 
-## Instellingen voor apparaateigenschappen
+## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 - **Minimale versie van het besturingssysteem die is vereist:** wordt ondersteund op Windows 8.1 en Windows 10.
 
   Geef hier het nummer van de major.minor.build op. Het versienummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht winver.
@@ -141,6 +142,6 @@ Als u de versie van het besturingssysteem wilt vinden die u voor de instellingen
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

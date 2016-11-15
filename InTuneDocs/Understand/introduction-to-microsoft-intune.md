@@ -16,13 +16,13 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
-ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Inleiding in Intune
+# <a name="introduction-to-intune"></a>Inleiding in Intune
 Microsoft Intune is de beheertak van Microsoft Enterprise Mobility + Security (EMS, voorheen Enterprise Mobility Suite). Bij bedrijfsmobiliteit gaat het erom uw medewerkers in staat te stellen productief te zijn op al hun apparaten en daarbij de gegevens van uw organisatie veilig te stellen.  
 
 EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit, met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.  
@@ -49,13 +49,13 @@ Deze hulpprogramma's worden gebruikt in verschillende combinaties om bovenstaand
 
 In deze documentatie wordt uitgelegd hoe u de hulpprogramma's die Intune biedt, kunt gebruiken ter ondersteuning van uw bedrijfsscenario's.  Ook wordt uitgelegd hoe u deze hulpprogramma's kunt gebruiken met Office 365, Azure AD, Azure RMS en andere onderdelen van de Mobility-suite van Microsoft. Zo kunt u een breed overzicht krijgen van de manieren waarop de technologie vaak wordt gebruikt en hoe deze nuttig kan zijn in uw omgeving, evenals de procedures voor het implementeren ervan. De technologie zelf is flexibel en kan aan allerlei scenario's worden aangepast (ook aan scenario’s die hier niet zijn genoemd).
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 * Meer informatie over een aantal [algemene manieren om Intune te gebruiken](common-ways-to-use-intune.md).
 * Vertrouwd raken met het product [met een 30-daagse evaluatieversie van Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Duik in de [technische vereisten en mogelijkheden](/intune/get-started/what-to-know-before-you-start-microsoft-intune) van Intune.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
