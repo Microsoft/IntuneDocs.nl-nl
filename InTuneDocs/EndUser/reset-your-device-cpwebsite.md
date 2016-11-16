@@ -3,6 +3,7 @@ title: Uw apparaat opnieuw instellen op de website van de bedrijfsportal | Micro
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

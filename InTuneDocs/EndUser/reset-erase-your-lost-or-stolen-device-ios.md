@@ -2,9 +2,10 @@
 title: Uw verloren of gestolen apparaat opnieuw instellen (wissen) | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 705c70b034378113a29003891f465a0e88186c69
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 586eb09811bf52cecf93dd51d1de76b2287b80ea
 
 
 ---
 
 
-# Uw iOs-apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
+# <a name="reset-erase-your-lost-or-stolen-ios-device"></a>Uw iOs-apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
 
 Als een telefoon die bij Intune is geregistreerd, is vermist of gestolen, kunt u vanaf een ander apparaat de via de bedrijfsportal-app of via de [website van de bedrijfsportal](http://portal.manage.microsoft.com) de fabrieksinstellingen terugzetten.
 
 > [!WARNING]
 > Bij het herstellen van de fabrieksinstellingen van uw apparaat worden zowel uw privégegevens als uw werkgegevens van uw apparaat verwijderd. Zie [Wat gebeurt er als u uw apparaat opnieuw instelt via de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) voor meer informatie over wat er gebeurt als u uw apparaat opnieuw instelt.
 
-## Ga als volgt te werk om uw apparaat opnieuw in te stellen via de bedrijfsportal-app
+## <a name="to-reset-your-device-using-the-company-portal-app"></a>Ga als volgt te werk om uw apparaat opnieuw in te stellen via de bedrijfsportal-app
 
 1.  Open de bedrijfsportal-app vanaf een ander geregistreerd apparaat en meld u aan met uw werk- of schoolaccount.
 
@@ -36,7 +37,7 @@ Als een telefoon die bij Intune is geregistreerd, is vermist of gestolen, kunt u
 
 3.  Tik op **Opnieuw instellen** &gt; **Opnieuw instellen**.
 
-## Ga als volgt te werk om uw apparaat opnieuw in te stellen via de bedrijfsportal-website
+## <a name="to-reset-your-device-using-the-company-portal-website"></a>Ga als volgt te werk om uw apparaat opnieuw in te stellen via de bedrijfsportal-website
 
 Voer de volgende stappen uit of bekijk deze video:
 
@@ -46,12 +47,10 @@ Voer de volgende stappen uit of bekijk deze video:
 
 2.  Tik op **Opnieuw instellen** &gt; **Opnieuw instellen**.
 
-Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-beheerder om dit voor u te doen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-beheerder om dit voor u te doen. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

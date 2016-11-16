@@ -4,7 +4,7 @@ description: Plan groepen om aan de behoeften van uw organisatie te voldoen.
 keywords: 
 author: sanchusa
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune

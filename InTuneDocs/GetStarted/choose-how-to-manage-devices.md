@@ -3,8 +3,9 @@ title: Kiezen hoe u apparaten beheert |Microsoft Intune
 description: Meer informatie over de verschillende manieren waarop u apparaten kunt registreren en beheren.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
-ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 
 ---
 
-# Kiezen hoe u apparaten beheert
+# <a name="choose-how-to-manage-devices"></a>Kiezen hoe u apparaten beheert
 
 Als u gebruik wil maken van de vele functies van Intune, zoals implementatie van apps en beheer van apparaatinstellingen, moeten uw apparaten worden *beheerd*. Hoe u apparaten beheert, is afhankelijk van de Intune-mogelijkheden die u wilt gebruiken.
 Dit onderwerp helpt u bij het kiezen van een methode dia aan uw behoeften voldoet.
@@ -31,7 +32,7 @@ Als u Windows-pc's wilt beheren, hebt u twee opties:
 1. Registreer het apparaat **of**
 2. Installeer de *Intune-softwareclient*.
 
-## Bepalen welke methode u wilt gebruiken
+## <a name="decide-which-method-to-use"></a>Bepalen welke methode u wilt gebruiken
 Gebruik dit stroomschema om te bepalen hoe uw apparaten worden beheerd.
 
 ![Stroomschema om te bepalen hoe apparaten worden beheerd.](./media/choose-manage-method.png)
@@ -48,12 +49,12 @@ Zie [Mogelijkheden voor Mobile Device Management](mobile-device-management-capab
 Zie [Ondersteunde mobiele apparaten en computers](/intune/get-started/supported-mobile-devices-and-computers) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
 
 
-## Exchange ActiveSync-beheer
+## <a name="exchange-activesync-management"></a>Exchange ActiveSync-beheer
 Naast het registreren van een apparaat of het installeren van de Intune-softwareclient, kunt u ook apparaten ook beheren [met behulp van Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). Bij deze methode moet u de lokale connector installeren of de ingebouwde Service-to-Service-connector gebruiken om verbinding te maken met uw Exchange-server.
 Hoewel dit een derde optie is voor beheer van apparaten, zijn de beheermogelijkheden beperkt in vergelijking met de andere methoden.
 
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 
 - [Kiezen hoe u mobiele apparaten registreert](/intune/get-started/choose-how-to-enroll-devices1)
 - [Windows-pc's beheren met de Intune-pc-clientsoftware](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
@@ -64,7 +65,6 @@ Hoewel dit een derde optie is voor beheer van apparaten, zijn de beheermogelijkh
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

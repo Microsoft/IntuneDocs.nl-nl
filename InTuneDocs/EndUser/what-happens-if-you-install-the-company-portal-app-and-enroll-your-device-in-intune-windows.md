@@ -2,9 +2,10 @@
 title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,55 +15,55 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
-Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, stelt u de IT-beheerder in staat uw apparaat te beheren om bedrijfs- of schoolgegevens te beveiligen, zoals hieronder beschreven voor apparaten ouder dan Windows 10. Zie [deze pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) voor Windows 10-apparaten.
+Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, stelt u de IT-beheerder in staat uw apparaat te beheren ter beveiliging van de bedrijfs- of schoolgegevens. In dit onderwerp wordt beschreven wat er gebeurt met apparaten ouder dan Windows 10. Zie het [relevante onderwerp](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) als het gaat om apparaten met Windows 10.
 
-## Wat gebeurt er met alle Windows-apparaten na de inschrijving
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Wat gebeurt er met alle Windows-apparaten na de inschrijving
 Wanneer u een Windows- of Windows Phone-apparaat in Intune inschrijft, profiteert u van het volgende:
 
--   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
+-   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
 
--   Bedrijfs-apps ophalen via de bedrijfsportalwebsite (voor Windows 7 en Vista kunt u bedrijfs-apps alleen via de bedrijfsportalwebsite ophalen)
+-   Bedrijfsapps ophalen via de bedrijfsportalwebsite. (Voor Windows 7 en Windows Vista kunt u alleen bedrijfsapps ophalen via de bedrijfsportalwebsite.)
 
--   Het e-mailaccount van uw bedrijf of school automatisch instellen
+-   Het e-mailaccount van uw bedrijf of school wordt automatisch ingesteld.
 
--   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen
+-   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen.
 
 Wanneer u uw apparaat inschrijft, geeft u de IT-beheerder toestemming voor handelingen zoals:
 
--   Het apparaat opnieuw instellen naar de standaardinstellingen van de fabrikant. Dit is handig als u het apparaat verliest of als dit wordt gestolen.
+-   Het herstellen van de standaardinstellingen van de fabrikant. Dit is handig als u het apparaat verliest of als dit wordt gestolen.
 
--   Alleen bedrijfsgerelateerde bestanden en bedrijfsapps verwijderen. **Uw persoonlijke instellingen en gegevens worden niet verwijderd.**
+-   Alleen bedrijfsgerelateerde bestanden en bedrijfsapps verwijderen. *Uw persoonlijke instellingen en gegevens worden niet verwijderd.*
 
 -   De IT-beheerder kan zien welke software op het apparaat is geïnstalleerd, inclusief software die u zelf hebt geïnstalleerd.
 
--   Vereisten op uw apparaat instellen, zoals een wachtwoord of pincode voor het apparaat vereisen ter beveiliging van bedrijfsgegevens. De IT-beheerder kan het aantal keren dat u een onjuist wachtwoord mag invoeren ook beperken. Als u te vaak een onjuist wachtwoord invoert, kan het apparaat worden vergrendeld.
+-   Vereisten op uw apparaat instellen, zoals een wachtwoord of pincode voor het apparaat vereisen ter beveiliging van bedrijfsgegevens. De IT-beheerder kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan het apparaat worden vergrendeld.
 
--   Vereisen dat u de gegevens op uw apparaat versleutelt, zodat de bedrijfsgegevens beter zijn beveiligd als u het apparaat verliest of als dit wordt gestolen. 
+-   Vereisen dat u de gegevens op uw apparaat versleutelt, zodat de bedrijfsgegevens beter zijn beveiligd als u het apparaat verliest of als dit wordt gestolen.
 
 -   Vereisen dat u voorwaarden accepteert.
 
 -   Voorkomen dat u foto's van bedrijfsgerelateerde gegevens maakt.
 
-## Wat gebeurt er met alle Windows-pc’s na de inschrijving
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Wat gebeurt er met alle Windows-pc’s na de inschrijving
 
--  Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en zodat u bedrijfsresources (zoals apps en ondersteuningsinformatie) kunt ophalen. De IT-beheerder kan deze software automatisch bijwerken.
+-  Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en u bedrijfsbronnen (zoals apps en ondersteuningsinformatie) kunt gebruiken. De IT-beheerder kan deze software automatisch bijwerken.
 
--  Intune Endpoint Protection kan op de computer worden geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
+-  Intune Endpoint Protection wordt mogelijk op de computer geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
 
 -  De IT-beheerder kan gegevens van de harde schijf van uw computer verzamelen of verwijderen.
 
 -  De IT-beheerder kan apps en updates op uw computer installeren.
 
-## Wat gebeurt er elke acht uur na de inschrijving van het apparaat
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Wat gebeurt er elke acht uur na de inschrijving van het apparaat
 Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
 -   Beleids- of app-updates die de IT-beheerder beschikbaar heeft gemaakt, worden gedownload.
@@ -71,11 +72,10 @@ Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
-Neem contact op met de IT-beheerder als u vragen hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

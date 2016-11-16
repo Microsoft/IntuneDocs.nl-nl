@@ -3,6 +3,7 @@ title: MAM-beleid configureren in de Intune-console | Microsoft Intune
 description: "Aan de hand van Mobile Application Management-beleid in Microsoft Intune kunt u de functionaliteit van de door u geïmplementeerde apps aanpassen, zodat deze apps voldoen aan het beleid van uw bedrijf met betrekking tot naleving en beveiliging."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console
 Aan de hand van Mobile Application Management-beleid (MAM) in Microsoft Intune kunt u de functionaliteit van de door u geïmplementeerde apps aanpassen, zodat deze apps voldoen aan het beleid van uw bedrijf met betrekking tot naleving en beveiliging. U kunt bijvoorbeeld knip-, kopieer- en plakbewerkingen beperken in een beheerde app of een app configureren om alle webkoppelingen te openen binnen een beheerde browser.
 
 Ondersteuning voor Mobile Application Management-beleid:
@@ -37,7 +38,7 @@ In tegenstelling tot ander beleid van Intunes hoeft u Mobile Application Managem
 
 Als u beperkingen wilt toepassen op een app, moet de app gebruikmaken van de Microsoft Intune App SDK. Er zijn drie methoden om dit type app te verkrijgen:
 
--   **Een door beleid beheerde app gebruiken**. Een door beleid beheerde app beschikt over een ingebouwde App SDK. Om dit type app toe te voegen, geeft u een koppeling op naar de app uit een app store zoals iTunes store of Google Play. Er is geen verdere verwerking vereist voor dit type app. Bekijk de [lijst met apps die u met Mobile Application Management-beleid van Microsoft Intune kunt gebruiken](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Een door beleid beheerde app gebruiken**. Een door beleid beheerde app beschikt over een ingebouwde App SDK. Om dit type app toe te voegen, geeft u een koppeling op naar de app uit een app store zoals iTunes store of Google Play. Er is geen verdere verwerking vereist voor dit type app. Bekijk de [lijst met apps die u met Mobile Application Management-beleid van Microsoft Intune kunt gebruiken](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Een verpakte app gebruiken**. Een verpakte app is een app die samen met de App SDK wordt verpakt met behulp van Microsoft Intune App Wrapping Tool. Dit hulpprogramma wordt meestal gebruikt voor het verwerken van bedrijfsapps die intern zijn gemaakt. U kunt het niet gebruiken voor het verwerken van apps die zijn gedownload vanuit de app store. Zie voor meer informatie [iOS-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [Android-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -58,7 +59,7 @@ Bijvoorbeeld met de Outlook-app:
 > [!TIP]
 > Zie [Apps beheren met Mobile Application Management-beleid in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx) als u gebruikmaakt van Intune met Configuration Manager.
 
-## Een app maken en implementeren met Mobile Application Management-beleid
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Een app maken en implementeren met Mobile Application Management-beleid
 
 -   **Stap 1:** haal de koppeling naar een door beleid beheerde app op, maak een verpakte app of gebruik de Intune App SDK om een app met MAM-beleid te maken.
 
@@ -70,15 +71,15 @@ Bijvoorbeeld met de Outlook-app:
 
 -   **Stap 5:** controleer de implementatie van de app.
 
-## Stap 1: haal de koppeling naar een door beleid beheerde app op, maak een verpakte app of gebruik de Intune App SDK om een app met MAM-beleid te maken
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Stap 1: haal de koppeling naar een door beleid beheerde app op, maak een verpakte app of gebruik de Intune App SDK om een app met MAM-beleid te maken
 
 Zoek in de app store naar de URL van de door beleid beheerde app die u wilt implementeren, en noteer deze URL. De URL van de app Microsoft Word voor iPad is bijvoorbeeld **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## Stap 2: publiceer de app naar uw opslagruimte in de cloud
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Stap 2: publiceer de app naar uw opslagruimte in de cloud
 Wanneer u een beheerde app publiceert, is de procedure afhankelijk van of u een door beleid beheerde app publiceert of een app die is verwerkt met behulp van Microsoft Intune App Wrapping Tool voor iOS.
 
-#### Een door beleid beheerde app publiceren
+#### <a name="to-publish-a-policy-managed-app"></a>Een door beleid beheerde app publiceren
 
 1.  Wanneer u gereed bent voor het uploaden van de app naar uw opslagruimte in de cloud, volgt u de instructies in [Apps voor mobiele apparaten toevoegen in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -92,7 +93,7 @@ Nadat het uploaden is voltooid, ziet u **Ja** bij **Beheerbeleid voor apps** op 
 
 Nadat u hebt gecontroleerd of de app is geüpload, gaat u verder met stap 3.
 
-#### Een app publiceren die is verwerkt met behulp van Microsoft Intune App Wrapping Tool
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Een app publiceren die is verwerkt met behulp van Microsoft Intune App Wrapping Tool
 
 1.  Wanneer u gereed bent voor het uploaden van de app naar uw opslagruimte in de cloud, volgt u de instructies in [Apps voor mobiele apparaten toevoegen in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -104,7 +105,7 @@ Nadat het uploaden is voltooid, ziet u **Ja** bij **Beheerbeleid voor apps** op 
 
 Nadat u hebt gecontroleerd of de app is geüpload, gaat u verder met stap 3.
 
-## Stap 3: maak een Mobile Application Management-beleid
+## <a name="step-3-create-a-mobile-application-management-policy"></a>Stap 3: maak een Mobile Application Management-beleid
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
 
@@ -133,15 +134,15 @@ Nadat u hebt gecontroleerd of de app is geüpload, gaat u verder met stap 3.
     |**Bedrijfsreferenties vereisen voor toegang**|Met deze instelling worden gebruikers verplicht om hun bedrijfsaanmeldingsgegevens in te voeren voordat ze toegang krijgen tot de app.|
     |**Apparaatcompatibiliteit met bedrijfsbeleid vereisen voor toegang**|Met deze instellingen mag de app alleen worden gebruikt wanneer het apparaat niet jailbroken of geroot is.|
     |**Toegangsvereisten opnieuw controleren na (minuten)**|In het veld **Time-out** geeft u de tijdsperiode op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd nadat de app is gestart.|
-    |**Offline respijtperiode**|Als het apparaat offline is, geeft u de tijdsperiode op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd.|
-    |**App-gegevens versleutelen**|Deze instelling geeft aan dat alle gegevens die zijn gekoppeld aan deze app, worden versleuteld. Dit omvat ook gegevens die extern zijn opgeslagen, zoals SD-kaarten.<br /><br />**Versleuteling voor iOS**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Dit wordt ingeschakeld via apparaatpincodebeleid dat wordt ingesteld door de IT-beheerder. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie [zijn de modules die worden gebruikt door iOS gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Versleuteling voor Android**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, wordt versleuteling geleverd door Microsoft. Gegevens worden synchroon versleuteld tijdens de I/O-bewerkingen voor bestanden.  Inhoud in de apparaatopslag wordt altijd versleuteld. De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2.|
+    |**Offlinerespijtperiode**|Als het apparaat offline is, geeft u de tijdsperiode op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd.|
+    |**Appgegevens versleutelen**|Deze instelling geeft aan dat alle gegevens die zijn gekoppeld aan deze app, worden versleuteld. Dit omvat ook gegevens die extern zijn opgeslagen, zoals SD-kaarten.<br /><br />**Versleuteling voor iOS**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, worden gegevens in rust versleuteld met behulp van versleuteling op apparaatniveau die wordt geleverd door het besturingssysteem. Dit wordt ingeschakeld via apparaatpincodebeleid dat wordt ingesteld door de IT-beheerder. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het Mobile Application Management-beleid. Zoals vermeld in de Apple-documentatie [zijn de modules die worden gebruikt door iOS gecertificeerd volgens FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Versleuteling voor Android**<br /><br />Voor apps die zijn gekoppeld aan een Intune Mobile Application Management-beleid, wordt versleuteling geleverd door Microsoft. Gegevens worden synchroon versleuteld tijdens de I/O-bewerkingen voor bestanden.  Inhoud in de apparaatopslag wordt altijd versleuteld. De versleutelingsmethode is niet gecertificeerd volgens FIPS 140-2.|
     |**Schermafbeelding blokkeren** (alleen Android-apparaten)|Met deze instelling wordt opgegeven dat de schermafbeeldingsmogelijkheden van het apparaat zijn geblokkeerd als iemand deze app gebruikt.|
-    
+
 4. Als u klaar bent, kiest u **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid**.
 
-## Stap 4: koppel de app aan een Mobile Application Management-beleid en implementeer de app vervolgens
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>Stap 4: koppel de app aan een Mobile Application Management-beleid en implementeer de app vervolgens
 Zorg ervoor dat u het Mobile Application Management-beleid selecteert op de pagina **Mobile App Management** in het dialoogvenster **Implementatie beheren** om het beleid te koppelen aan de app.
 
 Zie [Apps implementeren in Microsoft Intune](deploy-apps.md) voor meer informatie.
@@ -149,7 +150,7 @@ Zie [Apps implementeren in Microsoft Intune](deploy-apps.md) voor meer informati
 > [!IMPORTANT]
 > Als het apparaat wordt uitgeschreven bij Intune, wordt er geen beleid uit de apps verwijderd. Apps waarop beleid is toegepast, behouden die beleidsinstellingen nadat de app is verwijderd en opnieuw is geïnstalleerd.
 
-### Wat te doen wanneer een app al op apparaten is geïmplementeerd
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Wat te doen wanneer een app al op apparaten is geïmplementeerd
 Er zijn mogelijk situaties waarin u een app implementeert terwijl op een van de beoogde gebruikers of apparaten al een onbeheerde versie van de app is geïnstalleerd. De gebruiker heeft bijvoorbeeld Microsoft Word al vanuit de app store geïnstalleerd.
 
 In dit geval vraagt u de gebruiker de onbeheerde versie handmatig te verwijderen, zodat de beheerde versie kan worden geïnstalleerd die u hebt geconfigureerd.
@@ -159,10 +160,10 @@ Bij apparaten met iOS 9 en hoger vraagt Intune de gebruiker automatisch toestemm
 > [!TIP]
 > Als het apparaat zich in de bewaakte modus bevindt, neemt Intune het beheer van de bestaande app over zonder de gebruikers om toestemming te vragen.
 
-## Stap 5: controleer de implementatie van de app.
+## <a name="step-5-monitor-the-app-deployment"></a>Stap 5: controleer de implementatie van de app.
 Nadat u een app hebt gemaakt en geïmplementeerd die is gekoppeld aan een Mobile Application Management-beleid, gebruikt u de volgende procedure om de app te controleren en eventuele beleidsconflicten op te lossen.
 
-#### De status van de implementatie weergeven
+#### <a name="to-view-the-status-of-the-deployment"></a>De status van de implementatie weergeven
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Groepen** &gt; **Overzicht**.
 
@@ -180,7 +181,7 @@ Nadat u een app hebt gemaakt en geïmplementeerd die is gekoppeld aan een Mobile
 
 6.  Nadat u een conflict hebt vastgesteld, kunt u conflicterende beleidsinstellingen herzien zodat ze dezelfde instelling gebruiken of kunt u ervoor zorgen dat slechts één beleidsregel op de app en gebruiker wordt geïmplementeerd.
 
-### Oplossen van beleidsconflicten
+### <a name="how-policy-conflicts-are-resolved"></a>Oplossen van beleidsconflicten
 Als er een conflict optreedt in het Mobile Application Management-beleid bij de eerste implementatie naar de gebruiker of het apparaat, wordt de specifieke conflicterende instellingswaarde verwijderd uit het beleid dat op de app is geïmplementeerd. De app gebruikt een ingebouwde conflictwaarde.
 
 Als er een conflict optreedt in het Mobile Application Management-beleid bij latere implementaties naar de app of gebruiker, wordt de specifieke conflicterende instellingswaarde niet bijgewerkt in het Mobile Application Management-beleid dat op de app is geïmplementeerd. De app gebruikt de bestaande waarde voor die instelling.
@@ -193,6 +194,6 @@ In gevallen waarin het apparaat of de gebruiker twee conflicterende sets beleids
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: De toegang tot e-mail en O365-services beperken | Microsoft Intune
 description: In dit onderwerp wordt beschreven hoe voorwaardelijke toegang kan worden gebruikt om alleen compatibele apparaten toegang te geven tot e-mail en bedrijfsgegevens op SharePoint Online en andere services.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

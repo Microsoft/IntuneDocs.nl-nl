@@ -3,6 +3,7 @@ title: Microsoft Intune-licenties | Microsoft Intune
 description: Informatie over het toewijzen van licenties aan gebruikers voor uw Intune-abonnement
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

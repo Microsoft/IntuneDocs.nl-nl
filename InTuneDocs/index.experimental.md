@@ -6,6 +6,7 @@ title: Intune-documentatie - MDM-documentatie | Microsoft Docs
 description: Technische documentatie voor Microsoft Intune - Beheer van mobiele apparaten en toepassingen
 keywords: Intune-documentatie, MDM-documentatie, documentatie over het beheer van mobiele apparaten, documentatie over het beheer van mobiele apparaaten en toepassingen
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

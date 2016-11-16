@@ -2,9 +2,10 @@
 title: Uw Windows 10-apparaat inschrijven bij Intune | Microsoft Intune
 description: Informatie over hoe u een mobiel apparaat of desktopapparaat met Windows 10 kunt inschrijven bij Intune
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Uw Windows 10 Mobile- of Windows 10-desktopapparaat registreren bij Intune
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Uw Windows 10 Mobile- of Windows 10-desktopapparaat registreren bij Intune
 
 Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
 
@@ -41,7 +42,7 @@ Ga als volgt te werk om uw Windows 10 Mobile- of Windows 10-desktopapparaat te r
 
     ![Uw account](./media/w10-enroll-2-accounts-your-account.png)
 
-## Stappen om te volgen als u Werk of school openen ziet
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Stappen om te volgen als u Werk of school openen ziet
 
 1.  Tik op **Toegang tot werk of school** en tik op **Verbinden**.
 
@@ -68,7 +69,7 @@ Ga als volgt te werk om uw Windows 10 Mobile- of Windows 10-desktopapparaat te r
 Als u de voorgaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot uw werk- of schoolaccount en -bestanden, volgt u de stappen in [Probleemoplossingsstappen als u Werk of school openen ziet](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 
-## Stappen om te volgen als u Uw account ziet
+## <a name="steps-to-follow-if-you-see-your-account"></a>Stappen om te volgen als u Uw account ziet
 
 1.  Ga in Windows naar **Instellingen** en tik op **Accounts**.
 

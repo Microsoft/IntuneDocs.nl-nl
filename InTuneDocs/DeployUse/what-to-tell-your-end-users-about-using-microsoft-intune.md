@@ -1,10 +1,11 @@
 ---
-title: Wat u uw eindgebruikers vertelt over het gebruik van Intune | Microsoft Intune
+title: Bronnen over de eindgebruikerservaring in Microsoft Intune | Microsoft Intune
 description: Koppelingen naar informatie die u met uw eindgebruikers kunt delen
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/20/2016
+ms.date: 10/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,29 +14,25 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
-ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
+ms.sourcegitcommit: 53f432e5fb63d89dc4d7494182f95aace6dd0918
+ms.openlocfilehash: ccee9e249224ded3700228bd09057875a7662c52
 
 
 ---
 
+# Bronnen over de eindgebruikerservaring in Microsoft Intune
 
-
-# Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune
-
-Gebruik deze koppelingen en informatie om:
-
-- De stappen te begrijpen die uw gebruikers volgen om verschillende taken in Intune uit te voeren.
-- Uw gebruikers hulp te geven om taken uit te voeren en problemen op te lossen die zij tijdens het gebruik van Intune tegenkomen.
+Gebruik de volgende koppelingen als u wilt weten welke stappen uw eindgebruikers volgen om verschillende taken in Intune uit te voeren.
 
 Zorg ervoor dat u de contactgegevens van de IT-beheerder opneemt wanneer u [de bedrijfsportal aanpast](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7), zodat uw gebruikers indien nodig hulp kunnen krijgen.
 
+## Inschrijvingshandleiding die u voor uw gebruikers kunt aanpassen
 
-## Waar uw eindgebruikers informatie over algemene taken kunnen vinden
+U kunt deze [voor IT-beheerders bestemde, aanpasbare sjabloon voor het inschrijven van eindgebruikers bij Intune](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) gebruiken om uw eigen inschrijvingsinstructies voor eindgebruikers te maken. Dit Microsoft Word-document bevat gedetailleerde stapsgewijze instructies voor de inschrijving van eindgebruikers van iOS-, Mac- OS X- en Android-apparaten, en schermafdrukken hiervan.
 
-Wanneer geregistreerde gebruikers hulp nodig hebben met Intune, kunnen ze op een koppeling klikken op de Bedrijfsportal-website of in de Bedrijfsportal-app waarmee ze worden doorverwezen naar een artikel met stappen voor het oplossen van het probleem of voor het voltooien van de taak. Als Android-gebruikers bijvoorbeeld het bericht zien dat ze niet beschikken over een vereist certificaat, kunnen ze op een koppeling klikken zoals Hoe los ik dit op? Ze gaan dan naar een artikel met stappen voor het verkrijgen van het certificaat. 
+## Hoe uw eindgebruikers zoeken naar informatie over procedures en over het oplossen van problemen
 
-De onderstaande koppelingen zijn voor IT-beheerders. Deze pagina's bevatten koppelingen naar alle artikelen waar gebruikers naar worden doorverwezen vanaf de Bedrijfsportal-website of -app. De koppeling zijn onderverdeeld: Installatie van de Bedrijfsportal-app en de registratie bij Intune; taken die gebruikers op hun apparaten kunnen uitvoeren, zoals het gebruiken van beheerde apps en hun apparaten handmatig synchroniseren; en probleemoplossing.
+Gebruik de volgende koppelingen om te zien naar welke stappen gebruikers worden doorverwezen vanuit de bedrijfsportalwebsite of -app. De koppelingen zijn onderverdeeld in secties over de installatie van de bedrijfsportalapp en over de inschrijving bij Intune, algemene taken die gebruikers op hun apparaten kunnen uitvoeren en probleemoplossing.
 
 - [Met behulp van een Android-apparaat met Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -43,26 +40,20 @@ De onderstaande koppelingen zijn voor IT-beheerders. Deze pagina's bevatten kopp
 - [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## registratiehandleidingen en -sjablonen die u voor uw gebruikers kunt aanpassen
-
-- [Aanpasbaar Intune-sjabloon voor IT-beheerders waarmee eindgebruikers hun apparaten kunnen registreren](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a): een aanpasbaar Word-document met gedetailleerde stappen en schermafbeeldingen van de registratie door eindgebruikers van iOS-, Mac OS X- en Android-apparaten. U kunt dit document gebruiken zoals het wordt aangeleverd, maar u kunt de instructies ook aanpassen voordat u het document aan uw eindgebruikers geeft.</br></br>
-- [Aanpasbaar document van twee pagina’s met stappen en ingesloten video’s over het registreren, ongedaan maken van de registratie, downloaden van apps en meer](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content): een document dat u kunt aanpassen en aan uw eindgebruikers kunt geven. Dit document bevat informatie over hoe u Android-, iOS- en Windows-apparaten registreert, apps downloadt, de registratie van apparaten ongedaan maakt, wat u moet doen als u uw apparaat kwijtraakt, en wat IT-professionals wel en niet op uw apparaat kunnen zien.
-
-##Hoe eindgebruikers hun apps downloaden
+## Hoe eindgebruikers hun apps downloaden
 
 Kies een van de volgende apparaatplatforms om inzicht te krijgen in hoe uw eindgebruikers apps downloaden:
 
-> [!div class="op_single_selector"]
-- [Hoe uw Android-gebruikers apps downloaden](how-your-android-users-get-their-apps.md)
-- [Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
-- [Hoe uw Windows-gebruikers apps downloaden](how-your-windows-users-get-their-apps.md)
+- [Android](how-your-android-users-get-their-apps.md)
+- [iOS](how-your-ios-users-get-their-apps.md)
+- [Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-Als er overige informatie is die u graag in dit artikel zou willen terugzien, voegt u uw suggestie toe in het vak Opmerking onder aan dit onderwerp. Bedankt.
+Wilt u andere informatie in dit artikel besproken zien? Voeg uw suggestie toe aan het vak Opmerking onder aan dit onderwerp. Bedankt.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

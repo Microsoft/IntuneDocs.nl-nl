@@ -3,6 +3,7 @@ title: Een nalevingsbeleid voor apparaten maken | Microsoft Intune
 description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc&quot;s die worden gebruikt voor toegang tot uw bedrijfsgegevens.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

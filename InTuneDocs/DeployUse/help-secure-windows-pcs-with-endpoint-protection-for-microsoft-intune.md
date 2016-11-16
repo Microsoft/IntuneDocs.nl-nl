@@ -1,8 +1,9 @@
 ---
-title: Endpoint Protection voor Windows-pc's| Microsoft Intune
+title: Endpoint Protection voor Windows-pc&quot;s| Microsoft Intune
 description: Beveilig uw beheerde computers met Endpoint Protection voor realtime-beveiliging tegen malwarebedreigingen.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7d2c59332f2454694ecf58449a3b75a12027dfe
-ms.openlocfilehash: 5d662cab67c879a1f8bd5dbaf8e0461bf35b6e42
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 00409205a78d6f8fca353bf70d4f8d3f91e1e8d2
 
 
 ---
@@ -193,6 +194,6 @@ Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](/intune/tro
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

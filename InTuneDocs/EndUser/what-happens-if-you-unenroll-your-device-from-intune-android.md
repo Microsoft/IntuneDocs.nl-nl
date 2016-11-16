@@ -3,6 +3,7 @@ title: Wat gebeurt er als u de inschrijving van uw Android-apparaat bij Intune o
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
 
--   U maakt de registratie van uw apparaat bij Intune ongedaan. Dit betekent dat het apparaat niet meer wordt beheerd door uw IT-beheerder.
+-   Uw IT-beheerder beheert het apparaat niet meer.
 
--   U hebt geen toegang meer tot bedrijfsgegevens en -resources.
+-   U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
 
 -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
 -   U kunt geen apps meer van de bedrijfsportal installeren.
 
--   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
+-   Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.
 
 Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgehaald en u de inschrijving van uw apparaat ongedaan maakt, wordt uw apparaat niet meer in de bedrijfsportal weergegeven.
 
@@ -43,7 +44,6 @@ Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwe
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

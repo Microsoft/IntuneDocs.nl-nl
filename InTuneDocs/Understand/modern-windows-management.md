@@ -3,6 +3,7 @@ title: Pad naar beheer van modern Windows | Microsoft Intune
 description: 
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: aada7909-24c9-46e2-88f0-38dd9c99b2f8
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bfba29b5b2585f276a85a8dee7e62009e41ec3f
-ms.openlocfilehash: e86fd1f33cc2cea467e11b41a842471bdaf1c3ea
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 04327dbfe1efa87785f1078ae6383cb326fac0d0
 
 
 ---
@@ -79,6 +80,6 @@ Als u overweegt om met uw organisatie het pad naar modern apparaatbeheer in te s
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

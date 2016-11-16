@@ -2,7 +2,8 @@
 title: Uw Android-apparaat registreren bij Intune | Microsoft Intune
 description: Hierin wordt beschreven hoe u een Android-apparaat bij Intune kunt inschrijven
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
-ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
 
 
 ---
@@ -22,13 +23,13 @@ ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 # Uw Android-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Android-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registeren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over registratie.
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Android-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn apparaat registreer?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over registratie.
 
-Deze registratie-instructies zijn bestemd voor Samsung Knox Android-apparaten en 'native' Android-apparaten (niet-Samsung Knox). Als u wilt bepalen of u een Samsung Knox-apparaat hebt, gaat u naar **Instellingen** &gt; **Over het apparaat**. Als de KNOX-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
+Deze registratie-instructies zijn bestemd voor Samsung Knox Android-apparaten en 'native' Android-apparaten (niet-Samsung Knox). Als u wilt controleren of u een Samsung Knox-apparaat hebt, gaat u naar **Instellingen** &gt; **Over het apparaat**. Als de KNOX-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
 
-Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen die het beste beschrijft hoe u uw apparaat gebruikt. Uw IT-beheerder bepaalt aan de hand van deze categorie tot welke apps u toegang hebt.
+Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen die het beste beschrijft hoe u uw apparaat gebruikt. Uw IT-beheerder gebruikt deze categorie om te controleren tot welke apps u toegang hebt.
 
-Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kunt u [registratiefouten naar uw IT-beheerder verzenden](send-enrollment-errors-to-your-it-administrator-android.md).
+Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u [registratiefouten naar uw IT-beheerder verzenden](send-enrollment-errors-to-your-it-administrator-android.md).
 
 **Ga als volgt te werk om uw Android-apparaat te registeren bij Intune:**
 
@@ -44,7 +45,7 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
     ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3-accept-terms.png)
 
-5.  Meld u aan bij de bedrijfsportal-app met uw werk- of schoolaccount en wachtwoord en tik vervolgens op **Aanmelden**.
+5.  Meld u aan bij de bedrijfsportalapp met uw werk- of schoolaccount en wachtwoord, en tik vervolgens op **Aanmelden**.
 
     ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
 
@@ -56,7 +57,7 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
     ![Het scherm Waarom moet u uw apparaat registreren?](./media/and-enroll-4b-why-enroll.png)
 
-8.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
+8.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat, en tik vervolgens op **DOORGAAN**.
 
     ![Privacy-instellingen](./media/and-enroll-4c-we-care-privacy.png)
 
@@ -66,22 +67,22 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
 10.  Als u Android 6.0 of hoger gebruikt, moet u deze stap uitvoeren. Ga anders naar de volgende stap.
 
-    Als uw IT-beheerder bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
+    Als de IT-beheerder bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
     -   **De bedrijfsportal toestaan telefoongesprekken uit te voeren en beheren?**
 
-    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
+        ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
 
-    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken omdat **Microsoft nooit telefoongesprekken uitvoert of beheert**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, houdt dat alleen in dat u toestaat dat het IMEI-nummer van uw apparaat naar Intune wordt verzonden. Het IMEI-nummer is vergelijkbaar met een serienummer en is uniek voor een mobiel apparaat.
+    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit telefoongesprekken uitvoert of beheert**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, staat u alleen toe dat het IMEI-nummer ( International Mobile Equipment Identity) van uw apparaat wordt verzonden naar Intune. Het IMEI-nummer is vergelijkbaar met een serienummer en is uniek voor een mobiel apparaat.
 
-    Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken.  Als gebruikers later besluiten toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
+    Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
 
     -   **Bedrijfsportal toegang tot uw contactpersonen toestaan?**
 
-    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
+        ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
+    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportalapp uw werkaccount worden gemaakt, gebruikt en beheerd.
 
-    Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken.  Als gebruikers later besluiten toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
+    Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
 
 11.  Tik op het scherm **Apparaatbeheerder activeren** op **Activeren**.
 
@@ -91,7 +92,7 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
     ![Pincode of wachtwoord instellen](./media/and-enroll-6-PIN-native.png)
 
-13.  Als u een Samsung Knox-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan een bericht dat uw apparaat wordt geregistreerd. Als u gebruikmaakt van een systeemeigen Android-apparaat, let dan op het scherm hieronder waarop wordt weergegeven dat het apparaat wordt geregistreerd.
+13.  Als u een Samsung Knox-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan een bericht dat uw apparaat wordt geregistreerd. Als u een systeemeigen Android-apparaat gebruikt, let dan op het volgende scherm waarin wordt weergegeven dat het apparaat wordt geregistreerd.
 
     ![Samsung KNOX-privacybeleid](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -107,15 +108,12 @@ Als er een fout optreedt tijdens het registreren van uw apparaat bij Intune, kun
 
     ![Het scherm Instellen van bedrijfstoegang is voltooid](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Ga naar **Instellingen** &gt; **Beveiliging** en schakel **Onbekende bronnen** in voordat u bedrijfsapps installeert. Als u deze optie niet inschakelt voordat u apps installeert, wordt het bericht Installatie geblokkeerd weergegeven. Uw apparaat is uit veiligheidsoverwegingen zo ingesteld dat installaties van apps die afkomstig zijn van onbekende bronnen, worden geblokkeerd. U kunt in het foutberichtvenster op **Instellingen** tikken om naar de optie **Onbekende bronnen** te gaan.
+Ga naar **Instellingen** &gt; **Beveiliging** en schakel **Onbekende bronnen** in voordat u bedrijfsapps installeert. Als u deze optie niet inschakelt voordat u apps installeert, wordt het volgende bericht weergegeven: "Installatie geblokkeerd. Uw apparaat is uit veiligheidsoverwegingen zo ingesteld dat installaties van apps die afkomstig zijn van onbekende bronnen, worden geblokkeerd." U kunt in het foutberichtvenster op **Instellingen** tikken om naar de optie **Onbekende bronnen** te gaan.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het team van Microsoft Android via wintunedroidfbk@microsoft.com.
 
 
 
-
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

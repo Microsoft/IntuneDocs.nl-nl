@@ -2,9 +2,10 @@
 title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune inschrijft? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune registreert, kunt u de bedrijfsportal-app gebruiken voor het volgende:
 
--   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden
+-   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
 
--   Bedrijfsapps ophalen via de bedrijfsportal
+-   Bedrijfsapps ophalen via de bedrijfsportal.
 
--   De standaardinstellingen van uw telefoon op afstand herstellen als u deze verliest of als deze wordt gestolen
+-   De standaardinstellingen van uw telefoon op afstand herstellen als u deze verliest of als deze wordt gestolen.
 
--   Het e-mailaccount van uw bedrijf automatisch configureren
+-   Het e-mailaccount van uw bedrijf automatisch instellen.
 
 Wanneer u het apparaat inschrijft bij Intune, geeft u de IT-beheerder toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.
 
@@ -91,10 +92,10 @@ Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelinge
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

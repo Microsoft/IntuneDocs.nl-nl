@@ -2,7 +2,8 @@
 title: Een apparaat extern vergrendelen op de website van de bedrijfsportal | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
 
 
 ---
 
 
-# Een apparaat extern vergrendelen op de website van de bedrijfsportal
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Een apparaat extern vergrendelen op de website van de bedrijfsportal
 
 Als u uw apparaat kwijt bent of het apparaat is gestolen, kunt u het apparaat op afstand laten vergrendelen met de optie Extern vergrendelen op de [website van de bedrijfsportal](http://portal.manage.microsoft.com). Externe vergrendeling werkt voor de volgende typen apparaten:
 
@@ -58,11 +59,11 @@ Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen:
 
     Als een nieuwe poging niet werkt, neem dan contact op met uw IT-beheerder voor hulp. Als u uw apparaat terugvindt en het wilt ontgrendelen nadat u eerder Extern vergrendelen hebt gebruikt, voer dan gewoon uw wachtwoordcode in.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

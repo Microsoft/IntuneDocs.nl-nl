@@ -3,8 +3,9 @@ title: Certificaatprofielen configureren | Microsoft Intune
 description: Informatie over het maken van een certificaatprofiel van Intune.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -38,13 +39,22 @@ U moet een vertrouwd certificaatprofiel maken voordat u een Simple Certificate E
 
 ### Een vertrouwd certificaatprofiel maken
 
-1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** &gt; **Beleid toevoegen**.
-2.  Voeg een van deze beleidstypen toe:
-    - **Android &gt; Profiel voor vertrouwd certificaat (Android 4 en hoger)**
-    - **iOS &gt; Profiel voor vertrouwd certificaat (iOS 8.0 en hoger)**
-    - **Mac OS X &gt; Profiel voor vertrouwd certificaat (Mac OS X 10.9 en hoger)**
-    - **Windows &gt; Profiel voor vertrouwd certificaat (Windows 8.1 en hoger)**
-    - **Windows &gt; Profiel voor vertrouwd certificaat (Windows Phone 8.1 en hoger)**
+1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com), kies **Beleid** &gt; **Beleid toevoegen** en kies vervolgens een platform voor apparaten. U kunt een vertrouwd certificaatprofiel maken voor deze apparaten:
+
+-  Android 4 en hoger
+
+-  Android for Work
+
+-  iOS 7.1 en hoger
+
+-  Mac OS X 10.9 en hoger
+
+-  Windows 8.1 en hoger
+
+-  Windows Phone 8.1 en hoger
+
+
+2.  Een beleid voor een **vertrouwd certificaatprofiel** toevoegen.
 
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -55,19 +65,32 @@ U moet een vertrouwd certificaatprofiel maken voordat u een Simple Certificate E
 
 Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu implementeren.
 
+> [!NOTE]
+>
+> Android- en Android for Work-apparaten geven een melding weer dat een derde partij een vertrouwd certificaat heeft geïnstalleerd.
+    
+
 ## **Taak 3**: SCEP- of PFX-certificaatprofielen maken
 Nadat u een vertrouwd CA-certificaatprofiel hebt gemaakt, maakt u SCEP- of PFX-certificaatprofielen voor elk platform dat u wilt gebruiken. Wanneer u een SCEP-certificaatprofiel maakt, moet u een vertrouwd certificaatprofiel voor datzelfde platform opgeven. Hierdoor worden de twee certificaatprofielen gekoppeld. U moet nog wel elk profiel afzonderlijk implementeren.
 
 ### Een SCEP-certificaatprofiel maken
 
-1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** &gt; **Beleid toevoegen**.
-2.  Voeg een van deze beleidstypen toe:
-    - **Android &gt; SCEP-certificaatprofiel (Android 4 en hoger)**
-    - **iOS &gt; SCEP-certificaatprofiel (iOS 8.0 en hoger)**
-    - **Mac OS X &gt; SCEP-certificaatprofiel (Mac OS X 10.9 en hoger)**
-    - **Windows &gt; SCEP-certificaatprofiel (Windows 8.1 en hoger)**
-    - **Windows &gt; SCEP-certificaatprofiel (Windows Phone 8.1 en hoger)**
+1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com) de optie **Beleid** &gt; **Beleid toevoegen** en kies vervolgens een platform voor apparaten.  U kunt een SCEP-certificaatprofiel maken voor deze apparaten:
 
+-  Android 4 en hoger
+
+-  Android for Work
+
+-  iOS 7.1 en hoger
+
+-  Mac OS X 10.9 en hoger
+
+-  Windows 8.1 en hoger
+
+-  Windows Phone 8.1 en hoger
+
+2.  Een beleid voor een **SCEP-certificaatprofiel** toevoegen
+    
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Volg de instructies op de profielconfiguratiepagina om de instellingen voor het SCEP-certificaatprofiel te configureren.
@@ -87,13 +110,16 @@ Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu i
 
 ### Een PFX-certificaatprofiel maken
 
-1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** &gt; **Beleid toevoegen**.
-2.  Voeg een van deze beleidstypen toe:
-  - **Android &gt; PFX-certificaatprofiel (Android 4 en hoger)**
-  - **Windows &gt; PKCS #12-certificaatprofiel (PFX) (Windows 10 en hoger)**
-  - **Windows &gt; PKCS #12-certificaatprofiel (PFX) (Windows Phone 10 en hoger)**
-  - **iOS > PKCS #12-certificaatprofiel (.pfx) (iOS 8.0 en hoger)**    
-    Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com), kies **Beleid** &gt; **Beleid toevoegen** en kies vervolgens een platform voor apparaten. PFX-certificaten worden ondersteund voor:
+  - Android 4 en hoger
+  - Android for Work
+  - Windows 10 en hoger
+  - Windows Phone 10 en hoger
+  - iOS 8.0 en hoger    
+
+    
+2.  Een beleid voor een **PFX-certificaatprofiel** toevoegen. 
+      Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Geef de benodigde informatie op het beleidsformulier op.
 4.  Kies **Beleid opslaan**.
 
@@ -130,6 +156,6 @@ Ontdek nu hoe u certificaten kunt gebruiken om e-mail-, Wi-Fi- en VPN-profielen 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,9 +2,10 @@
 title: Waarschuwingen beheren | Microsoft Intune
 description: Gebruik de werkruimte Waarschuwingen in Intune om de algemene status van apparaten in uw organisatie te beoordelen.
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Waarschuwingen beheren in Microsoft Intune
+# <a name="manage-alerts-in-microsoft-intune"></a>Waarschuwingen beheren in Microsoft Intune
 Gebruik de werkruimte **Waarschuwingen** in de Intune-beheerconsole om de algemene status van apparaten in uw organisatie te beoordelen en problemen te identificeren.
 
-## Actieve waarschuwingen weergeven
+## <a name="view-active-alerts"></a>Actieve waarschuwingen weergeven
 
 Bekijk de algemene informatie en samenvattingsgegevens over actieve waarschuwingen.
 
-#### Actieve waarschuwingen weergeven
+#### <a name="to-view-active-alerts"></a>Actieve waarschuwingen weergeven
 
 Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
@@ -55,10 +56,10 @@ Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
     -   **Ernst**. In deze kolom wordt de ernst van de waarschuwing aangegeven.
 
-## Waarschuwingen op het mededelingenbord weergeven
+## <a name="view-notice-board-alerts"></a>Waarschuwingen op het mededelingenbord weergeven
 Waarschuwingen op het mededelingenbord zijn belangrijke servicemededelingen. Ze kunnen informatie geven over een aanstaande service-upgrade, de onderhoudsplanning of de status van een storing.
 
-#### Waarschuwingen op het mededelingenbord weergeven en beheren
+#### <a name="to-view-and-manage-notice-board-alerts"></a>Waarschuwingen op het mededelingenbord weergeven en beheren
 
 1.  Kies **Systeemoverzicht** in de Intune-beheerconsole.
 
@@ -66,10 +67,10 @@ Waarschuwingen op het mededelingenbord zijn belangrijke servicemededelingen. Ze 
 
 3.  Als u een waarschuwing op het mededelingenbord wilt exporteren naar een CSV- of HTML-bestand, kiest u **Waarschuwingen** > **Alle waarschuwingen** >    **Mededelingen** in de Intune-beheerconsole. Selecteer een mededeling, kies het pictogram **Lijst exporteren** en volg de weergegeven instructies.
 
-## De Intune-systeemstatus controleren
+## <a name="review-intune-system-status"></a>De Intune-systeemstatus controleren
 In de werkruimte **Systeemoverzicht** kunt u de samenvattingen bij **Systeemstatus** bekijken voor Endpoint Protection, Updates, Status agent, Beleid en Softwarecategorieën om problemen te identificeren en te bepalen welke problemen uw onmiddellijke aandacht vereisen. In foutberichten die worden gegenereerd bij een systeemonderbreking, is ook een koppeling aanwezig naar de samenvatting bij **Servicestatus**. De samenvatting bij **Servicestatus** bevat gedetailleerde informatie over het probleem op elke locatie. Hier wordt ook het tijdstip weergegeven waarop de status voor het laatst is bijgewerkt.
 
-#### De status van uw abonnement weergeven
+#### <a name="to-view-the-status-of-your-subscription"></a>De status van uw abonnement weergeven
 
 1.  Kies **Systeemoverzicht** in de Intune-beheerconsole.
 
@@ -77,7 +78,7 @@ In de werkruimte **Systeemoverzicht** kunt u de samenvattingen bij **Systeemstat
 
   Veel van de items hebben een koppeling, zodat u desgewenst meer informatie kunt weergeven. Als u bijvoorbeeld onder **Endpoint Protection** het aantal exemplaren kiest, ziet u de werkruimte **Endpoint Protection** waarin een lijst met gedetecteerde malware wordt weergegeven. Als u het aantal apparaten kiest, ziet u de werkruimte **Groepen** waarin een lijst wordt weergegeven met apparaten waarop malware is aangetroffen.
 
-## Waarschuwingen sluiten of opnieuw activeren
+## <a name="close-and-reactivate-alerts"></a>Waarschuwingen sluiten of opnieuw activeren
 Intune-waarschuwingen blijven actief totdat een van deze gebeurtenissen zich voordoet:
 
 -   Het probleem dat de waarschuwing heeft gegenereerd, is opgelost.
@@ -88,7 +89,7 @@ Intune-waarschuwingen blijven actief totdat een van deze gebeurtenissen zich voo
 
 Waarschuwingen die zijn gemarkeerd als gesloten, worden na 90 dagen permanent verwijderd.
 
-#### Handmatig een waarschuwing sluiten
+#### <a name="to-manually-close-an-alert"></a>Handmatig een waarschuwing sluiten
 
 Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
@@ -98,7 +99,7 @@ Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
 - Kies **Systeemoverzicht** **om een waarschuwing op het mededelingenbord te sluiten**. Kies de **X** naast de waarschuwing op het mededelingenbord.
 
-#### Gesloten waarschuwingen weergeven en opnieuw activeren
+#### <a name="to-view-and-reactivate-closed-alerts"></a>Gesloten waarschuwingen weergeven en opnieuw activeren
 
 1.  Kies **Waarschuwingen** > **Alle waarschuwingen** in de Intune-beheerconsole.
 
@@ -108,11 +109,11 @@ Voer in de Intune-beheerconsole een van de volgende reeksen stappen uit:
 
 3.  Kies **Waarschuwing opnieuw activeren** om de geselecteerde waarschuwing opnieuw te activeren.
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Blijf op de hoogte met Microsoft Intune-waarschuwingen](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

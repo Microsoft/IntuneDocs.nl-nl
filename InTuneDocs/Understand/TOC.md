@@ -19,6 +19,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

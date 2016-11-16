@@ -3,6 +3,7 @@ title: Instellingen van Windows Hello voor Bedrijven beheren op apparaten | Micr
 description: Informatie over hoe Intune integreert met Windows Hello voor Bedrijven. Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

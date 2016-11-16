@@ -3,8 +3,9 @@ title: E-mailtoegang tot Dynamics CRM Online beperken | Microsoft Intune
 description: Toegang tot Dynamics CRM Online beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ U kunt de toegang tot Microsoft Dynamics CRM Online beheren vanaf iOS- en Androi
 
 Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
-[!IMPORTANT] Voor het implementeren van voorwaardelijke toegang moet u abonnementen hebben voor Intune en Azure Active Directory Premium, en moeten gebruikers zijn geregistreerd voor beide producten. Het **Enterprise Mobility + Security-abonnement** omvat zowel een abonnement op Intune als op Azure Active Directory Premium. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) voor meer informatie. Als u geen abonnement hebt op EMS, kunt u een abonnement nemen op Azure Active Directory Premium. Zie de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie. 
+[!IMPORTANT] Voor het implementeren van voorwaardelijke toegang moet u abonnementen hebben voor Intune en Azure Active Directory Premium, en moeten gebruikers zijn geregistreerd voor beide producten. Het **Enterprise Mobility + Security-abonnement** omvat zowel een abonnement op Intune als op Azure Active Directory Premium. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) voor meer informatie. Als u geen abonnement hebt op EMS, kunt u een abonnement nemen op Azure Active Directory Premium. Zie de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
 
 Wanneer een gebruiker in de doelgroep de app Dynamics CRM op zijn apparaat probeert te gebruiken, wordt de volgende evaluatie uitgevoerd:
 
