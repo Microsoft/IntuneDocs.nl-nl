@@ -1,8 +1,9 @@
 ---
 title: Uw verloren of gestolen Windows-apparaat opnieuw instellen (wissen) | Microsoft Intune
-description: 
+description: Een verloren of gestolen Windows-apparaat opnieuw instellen
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2af464dd1eb4fa97c6500131f51d48b6636b0cf2
 
 
 ---
 
 
-# Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
+# <a name="reset-erase-your-lost-or-stolen-device"></a>Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen
 
-Als een telefoon die bij Intune is ingeschreven is vermist of gestolen, kunt u de fabrieksinstellingen ervan herstellen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Als een bij Intune geregistreerd apparaat zoekgeraakt of gestolen is, kunt u de fabrieksinstellingen ervan herstellen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 > [!WARNING]
@@ -36,12 +37,10 @@ Als een telefoon die bij Intune is ingeschreven is vermist of gestolen, kunt u d
 
 3.  Tik op het pictogram **Opnieuw instellen** en tik vervolgens op **opnieuw instellen**.
 
-Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-afdeling om dit voor u te doen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u de IT-afdeling om dit voor u te doen. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

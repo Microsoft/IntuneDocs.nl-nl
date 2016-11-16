@@ -3,6 +3,7 @@ title: Beleidsinstellingen voor upgrades van de Windows-editie | Microsoft Intun
 description: Leer hoe u automatisch Windows 10-apparaten kunt bijwerken naar de nieuwste versie met Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

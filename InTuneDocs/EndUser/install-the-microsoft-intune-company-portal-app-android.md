@@ -2,7 +2,8 @@
 title: De Microsoft Intune-bedrijfsportal-app installeren | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 734e58a590b6d6eab97379c10b7999d5560be225
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1d0116a9ac57078cb5c546619ac8f3df7594d26d
 
 
 ---
 
 
-# Installeer de Microsoft Intune-bedrijfsportal-app
+# <a name="install-the-microsoft-intune-company-portal-app"></a>Installeer de Microsoft Intune-bedrijfsportal-app
 
 De bedrijfsportal-app is een app die u op het Android-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportal-app hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over het registreren van uw apparaat.
 
@@ -43,11 +44,11 @@ De bedrijfsportal-app is een app die u op het Android-apparaat installeert om to
 
 Als u uw apparaat wilt registreren bij Intune om toegang te krijgen tot bedrijfs- of schoolgegevens en -bronnen, raadpleegt u [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md).
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

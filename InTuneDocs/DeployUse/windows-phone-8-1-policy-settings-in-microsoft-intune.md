@@ -3,6 +3,7 @@ title: Beleidsinstellingen voor Windows Phone 8.1 | Microsoft Intune
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

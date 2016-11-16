@@ -3,6 +3,7 @@ title: Configuratiebeleid voor mobiele iOS-apps gebruiken | Microsoft Intune
 description: Gebruik het configuratiebeleid voor mobiele apps in Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een iOS-app uitvoeren.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

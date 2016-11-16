@@ -2,9 +2,10 @@
 title: Wi-Fi met een vooraf gedeelde sleutel (PSK) | Microsoft Intune
 description: Aangepaste configuratie van Intune gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
-ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
+ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
+# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
@@ -48,8 +49,7 @@ Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebru
     > [!NOTE]
 Zorg ervoor dat deze string met een punt begint.
 
-    SSID is de SSID waarvoor u het beleid wilt maken. Bijvoorbeeld:
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID is de SSID waarvoor u het beleid wilt maken. bijvoorbeeld `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e. **Waardeveld**: hier plakt u de XML-code. Hier volgt een voorbeeld. Elke waarde moet worden aangepast aan de instellingen van uw netwerk. Zie het gedeelte met opmerkingen over de code voor een aantal tips.
 4. Kies **OK**, opslaan en implementeer het beleid.
@@ -58,13 +58,13 @@ Zorg ervoor dat deze string met een punt begint.
     > Dit beleid kan alleen worden geïmplementeerd voor gebruikersgroepen.
 
 De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan automatisch verbinding maken met het netwerk.
-## Wi-Fi-profiel voor Android of Windows
+## <a name="android-or-windows-wifi-profile"></a>Wi-Fi-profiel voor Android of Windows
 
 Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of Windows:
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`moet worden ingesteld op **onwaar**. Als dit wordt ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor de verbinding kan mislukken.
+> `<protected>false</protected>` moet worden ingesteld op **onwaar**. Als dit wordt ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor de verbinding kan mislukken.
 > 
 >  `<hex>53534944</hex>` moet worden ingesteld op de hexadecimale waarde `<name><SSID of wifi profile></name>`.
 >  Windows 10-apparaten kunnen ten onrechte de fout *0x87D1FDE8 Doorvoeren is mislukt* retourneren, maar worden wel ingericht met het profiel.
@@ -109,7 +109,7 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of 
       </MSM>
     </WLANProfile>
 
-## Wi-Fi-profiel op basis van EAP
+## <a name="eapbased-wifi-profile"></a>Wi-Fi-profiel op basis van EAP
 Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP.
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP
       </MSM>
     </WLANProfile>
 
-## Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
+## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
 U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
 1. Op een computer die (onlangs) is verbonden met het draadloze netwerk, opent u de volgende map: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
@@ -198,7 +198,7 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
 3.     Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 4.     Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld Gegevens van de pagina OMA-URI-instellingen.
 
-## Het beleid implementeren
+## <a name="deploy-the-policy"></a>Het beleid implementeren
 
 1.  Selecteer in de werkruimte **Beleid** het beleid dat u wilt implementeren en kies vervolgens **Implementatie beheren**.
 
@@ -210,11 +210,11 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
 
 Wanneer u een geïmplementeerd beleid selecteert, kunt u meer informatie over de implementatie weergeven onder aan de lijst met beleidsregels.
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Wi-Fi-verbindingen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

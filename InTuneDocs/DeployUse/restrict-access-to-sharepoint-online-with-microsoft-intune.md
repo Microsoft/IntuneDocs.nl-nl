@@ -3,6 +3,7 @@ title: Toegang tot SharePoint Online beperken | Microsoft Intune
 description: Toegang tot bedrijfsgegevens op Sharepoint Online beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

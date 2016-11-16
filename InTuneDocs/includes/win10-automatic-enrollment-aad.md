@@ -21,7 +21,7 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 
 5. Geef de URL's voor Intune op:
 
-  - **URL naar registratie voor MDM**: gebruik `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` voor de URL voor MDM-registratie.
+  - **URL voor MDM-registratie**: gebruik de standaardwaarde.
   - **URL naar gebruiksrechtovereenkomst voor MDM**: gebruik de standaardwaarde. Met deze URL worden de gebruiksvoorwaarden weergegeven wanneer gebruikers apparaten registreren.
   - **URL naar naleving voor MDM**: gebruik de standaardwaarde. Als een apparaat niet-compatibel is, wordt het bericht **Toegang geweigerd** weergegeven met deze URL. De URL verwijst naar een pagina waarop gebruikers kunnen lezen waarom hun apparaat niet compatibel is met het beleid en hoe ze dat kunnen verhelpen.
 
@@ -34,6 +34,6 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 7. Kies **Opslaan**.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

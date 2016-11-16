@@ -3,6 +3,7 @@ title: Hoe uw Android-gebruikers hun apps downloaden | Microsoft Intune
 description: Manieren om Android-apps beschikbaar te stellen aan eindgebruikers
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Hoe uw Android-gebruikers apps downloaden
-Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de apps downloaden die u distribueert via Microsoft Intune. De informatie voor native Android-apparaten kan afwijken van die voor Samsung Knox-apparaten.
+Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de apps downloaden die u distribueert via Microsoft Intune. De informatie kan per apparaattype verschillen (native Android-apparaten versus Samsung Knox-apparaten).
 
 ## Native Android-apparaten (niet-Samsung Knox)
 
@@ -39,9 +40,9 @@ Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de
 
 Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het proces van het maken van apps die worden beheerd, is hetzelfde voor alle typen Android-apparaten.
 
-**Beheerde apps**: apps die kunnen worden beheerd via beleid en die zijn ingepakt door Intune of met de Intune Mobile Application Management (MAM) Software Development Kit (SDK) zijn gebouwd. These apps can be managed by Intune, and application policies can be applied to them.
+**Beheerde apps**: dit zijn apps die kunnen worden beheerd via beleid. Deze zijn ingepakt door Intune of gebouwd met de Intune Mobile Application Management (MAM) Software Development Kit (SDK). Deze apps kunnen worden beheerd door Intune en hierop kan een toepassingsbeleid worden toegepast.
 
-**Niet-beheerde apps**: apps die kunnen worden beheerd via beleid en die niet zijn ingepakt in Intune of waarin de Intune MAM SDK niet is opgenomen. Het toepassingsbeleid kan niet worden toegepast op deze apps.
+**Niet-beheerde apps**: dit zijn apps die niet kunnen worden beheerd via beleid. Deze zijn niet ingepakt door Intune of opgenomen in de Intune MAM SDK. Het toepassingsbeleid kan niet worden toegepast op deze apps.
 
 ### Zie tevens
 [Apps toevoegen met Microsoft Intune](/intune/deploy-use/add-apps)
@@ -52,6 +53,6 @@ Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het pr
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

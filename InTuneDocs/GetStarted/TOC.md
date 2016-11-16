@@ -17,7 +17,7 @@
 
 ## [Migreren naar Intune](migrate-to-intune.md)
 
-## [Snelstartgids voor Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Snelstartgids](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Aanmelden bij Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Een aangepaste domeinnaam configureren](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [AD synchroniseren en gebruikers toevoegen](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [De bedrijfsportal aanpassen](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Mobiele apparaten inschrijven en een app installeren](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](post-configuration-tasks.md)
+
+## [Korte handleiding](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Korte handleiding: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Korte handleiding: Bedrijfsgegevens beveiligen met gegevensversleuteling](protect-data-encryption.md)
+### [Korte handleiding: Mobiele apps naar uw gebruikers publiceren](publish-mobile-apps-to-users.md)
+### [Korte handleiding: Configuratie van e-mail op mobiele apparaten vereenvoudigen](simplify-email-configuration-on-mobile-devices.md)
+### [Korte handleiding: Windows-pc's beschermen tegen malware](protect-pcs-against-malware-threats.md)
 
 ## [Implementatiefasen voor Intune-implementaties](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Projectbereik](project-scope.md)
@@ -42,6 +49,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

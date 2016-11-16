@@ -3,8 +3,9 @@ title: U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat |
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,17 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
 
 # U wordt gevraagd Lookout for Work te installeren
 
-Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassing installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen.
+Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-app installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen.
+
+Als u problemen met de installatie ondervindt, voert u de stappen voor probleemoplossing aan het einde van dit onderwerp uit.
 
 
 **U moet het volgende doen:**
@@ -39,9 +42,9 @@ Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassin
 
     ![open Lookout for Work en tik op Activeren](./media/lookout-activate-button-android.png)
 
-4. Tik op **Aanmelden met een werkaccount** en voer het account in waarmee u uw e-mail en bestanden van werk of school opent.
+4. Tik op **Aanmelden bij Azure Active Directory** en voer het account in waarmee u uw e‑mail en bestanden van werk of school opent.
 
-    ![meld u aan met een werk- of schoolaccount](./media/lookout-sign-in-android.png)
+    ![meld u aan met een werk- of schoolaccount](./media/lookout-sign-in-azure-android.png)
 
 5. Selecteer het account waarmee u uw e-mail, bestanden en andere gegevens van werk of school opent en tik vervolgens op **ACCOUNT TOEVOEGEN**.
 
@@ -51,13 +54,13 @@ Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassin
 
     ![tik op Accepteren om Lookout for Work toestemming te geven om u aan te melden en uw profiel te lezen](./media/lookout-needs-permission-to-view-profile-android.png)
 
-    Er wordt een scherm geopend waarin u ziet dat Lookout for Work verbinding maakt met de Lookout Security Cloud.
+    In een scherm wordt weergegeven dat Lookout for Work verbinding maakt met de Lookout Security Cloud.
 
 7. Lees de items over de beveiliging van uw apparaat met Lookup en tik vervolgens op **OK**.
 
     ![lees over de beveiliging van uw apparaat met Lookout for Work](./media/lookout-how-it-protects-your-device-android.png)
 
-    Als u het volgende scherm ziet, is de installatie voltooid en hebt u verbinding met Lookout.
+    Als u het volgende scherm ziet, is de installatie voltooid en heeft Lookout verbinding.
 
     ![u hebt nu verbinding met Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
@@ -71,13 +74,14 @@ Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassin
 
     Als Lookout for Work een beveiligingsrisico op uw apparaat vindt, ziet u instructies voor het oplossen van het probleem.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+**Als de installatie niet werkt**
+
+Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit gebeurt, installeer Lookout for Work dan handmatig vanuit de Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

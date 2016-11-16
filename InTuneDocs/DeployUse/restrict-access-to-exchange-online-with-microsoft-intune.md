@@ -3,6 +3,7 @@ title: Toegang tot e-mail beperken op Exchange Online | Microsoft Intune
 description: "Toegang tot bedrijfs-e‑mail op Exchange Online beschermen en controleren met voorwaardelijke toegang."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -52,7 +53,7 @@ Wanneer beleid voor voorwaardelijke toegang wordt geconfigureerd en een gebruike
 
 Als niet aan een voorwaarde voor het beleid voor voorwaardelijke toegang wordt voldaan, krijgt de gebruiker een van de volgende berichten te zien wanneer hij zich aanmeldt.
 
-- Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het record in Azure Active Directory.
+- Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportalapp moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het record in Azure Active Directory.
 
 -   Als wordt vastgesteld dat het apparaat niet voldoet aan de regels van het nalevingsbeleid, wordt de eindgebruiker omgeleid naar de website of app van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
 
@@ -64,7 +65,7 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 ## Ondersteuning voor mobiele apparaten
 U kunt toegang tot e-mail van Exchange Online beperken vanuit **Outlook** en andere **apps die moderne authenticatie gebruiken**:
 
-- Android 4.0 of hoger, Samsung Knox Standard 4.0 of hoger
+- Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger, en Android for Work
 - iOS 8.0 en hoger
 - Windows Phone 8.1 en hoger
 
@@ -225,6 +226,9 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
 5.  Onder **Exchange ActiveSync-apps** kunt u de toegang tot Exchange Online blokkeren van apparaten die niet aan het nalevingsbeleid voldoen. U kunt ook aangeven of u toegang tot e-mail wilt toestaan of blokkeren wanneer het apparaat niet op een ondersteund platform wordt uitgevoerd. Ondersteunde platforms zijn Android, iOS, Windows en Windows Phone.
 
+ Exchange Active Sync-apps op **Android for Work**-apparaten:
+ -  Alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen op Android for Work-apparaten als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en de installatie daarvan **verplicht** stelt. 
+
 6.  Onder **Doelgroepen** selecteert u de Active Directory-beveiligingsgebruikersgroepen waarop het beleid van toepassing moet zijn. U kunt kiezen of u zich wilt richten op alle gebruikers of op een geselecteerde lijst met gebruikersgroepen.
 ![Schermafbeelding van de pagina met het beleid voor voorwaardelijke toegang van Exchange Online met opties voor doelgroepen en uitgesloten groepen](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +267,6 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

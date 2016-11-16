@@ -1,8 +1,9 @@
 ---
-title: Apps voor Windows-pc's met de Intune-softwareclient toevoegen | Microsoft Intune
+title: Apps voor Windows-pc&quot;s met de Intune-softwareclient toevoegen | Microsoft Intune
 description: "Gebruik de informatie in dit onderwerp om te weten te komen hoe u apps voor Windows-pc’s aan Intune toevoegt voordat u ze implementeert."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
-ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
 
 
 ---
@@ -90,6 +91,6 @@ Nadat u een app hebt gemaakt, is de volgende stap om deze te implementeren. Zie 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

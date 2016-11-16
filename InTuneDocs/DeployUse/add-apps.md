@@ -3,6 +3,7 @@ title: Apps toevoegen | Microsoft Intune
 description: "Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd in dit onderwerp, voordat u begint met het implementeren van apps met Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

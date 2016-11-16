@@ -3,33 +3,40 @@ title: Line-Of-Business-apps beveiligen op apparaten die niet zijn geregistreerd
 description: In dit onderwerp wordt beschreven hoe u uw aangepaste reeks business-apps kunt voorbereiden, zodat u beleidsregels voor het beheren van mobiele apps kunt toepassen die kunnen helpen gegevensverlies te voorkomen.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
-ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: bc5d1b429157e6a6b24f4eb319be50b635466317
 
 
 ---
 
-# Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune
+# <a name="protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune"></a>Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune
 
-Met MAM-beleid (Mobile App Management) kunt u uw bedrijfsgegevens beveiligen door gegevensverplaatsingen, zoals kopiëren en plakken, te beperken of door te voorkomen dat gebruikers bedrijfsdocumenten kunnen opslaan naar een persoonlijke locatie.   Als u MAM-beleid wilt toepassen op iOS en/of Android Line-Of-Business-apps, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool.  App-wrapping is het proces waarbij een beheerlaag wordt toegepast op een mobiele app zonder dat de onderliggende toepassing hoeft te worden gewijzigd.  Zodra de app is ingepakt, kunt u MAM-beleid op de app toepassen en deze distribueren naar uw eindgebruikers.  
+MAM-beleid (Mobile App Management) helpt bedrijfsgegevens beschermen door acties te beperken die kunnen leiden tot het lekken van bedrijfsgegevens en door het afdwingen van vereisten voor gegevenstoegang, zoals een app-pincode. Als u MAM-beleid wilt toepassen op iOS en/of Android Line-Of-Business-apps, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool.  App-wrapping is het proces waarbij een beheerlaag wordt toegepast op een mobiele app zonder dat de onderliggende toepassing hoeft te worden gewijzigd.  Zodra de app is ingepakt, kunt u MAM-beleid op de app toepassen en deze distribueren naar uw eindgebruikers.  
 
-In dit onderwerp wordt uitgelegd wat de vereiste stappen zijn om MAM-beleid toe te passen voor apps die worden geopend op **apparaten in eigendom van de werknemer die niet worden beheerd** en op apparaten die worden beheerd met een **MDM-oplossing (Mobile Device Management) van derden**.  Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) om uw Line-Of-Business-apps voor te bereiden die worden uitgevoerd op **apparaten die zijn geregistreerd bij Intune**.
-##  Stap 1: De app voorbereiden
-Voordat u MAM-beleid op een app kunt toepassen, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool.  De instructies voor de installatie en het gebruik van het hulpprogramma zijn opgenomen in de download.  
+In dit onderwerp wordt uitgelegd wat de vereiste stappen zijn om MAM-beleid toe te passen voor apps die worden geopend op **apparaten in eigendom van de werknemer die niet worden beheerd** en op apparaten die worden beheerd met een **MDM-oplossing (Mobile Device Management) van derden**.  Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) om uw Line-Of-Business-apps voor te bereiden die worden uitgevoerd op **apparaten die zijn geregistreerd bij Intune MDM**.
+
+
+##  <a name="step-1-prepare-the-app"></a>Stap 1: De app voorbereiden
+Voordat u MAM-beleid op een app kunt toepassen, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool.  Zie ze volgende pagina's voor instructies voor het downloaden en gebruiken van de App Wrapping Tool:
+
+- [iOS-apps voorbereiden voor Mobile Application Management met de Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+- [Android-apps voorbereiden voor Mobile Application Management met Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->Deze versie van de App Wrapping Tool, waarmee apparaten worden ondersteund die niet bij Intune zijn geregistreerd, is beschikbaar als openbare preview. Als u wilt deelnemen aan de openbare preview, kunt u het hulpprogramma downloaden van [deze GitHub-pagina](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) voor iOS en van [deze GitHub-site](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) voor Android.
+>Deze versie van de App Wrapping Tool, waarmee apparaten worden ondersteund die niet bij Intune zijn geregistreerd, wordt ondersteund voor iOS en in de openbare preview van Android. U kunt het hulpprogramma downloaden van [deze GitHub-opslagplaats](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) voor iOS en van [deze GitHub-opslagplaats](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) voor Android.
 
-## Stap 2: De app toevoegen
+## <a name="step-2-add-the-app"></a>Stap 2: De app toevoegen
 
 Als u de Line-Of-Business-app wilt koppelen aan MAM-beleid, voert u de volgende stappen uit om de app-gegevens toe te voegen aan uw Intune-abonnement/tenant:
 
@@ -44,7 +51,7 @@ Als u de Line-Of-Business-app wilt koppelen aan MAM-beleid, voert u de volgende 
 
   ![Schermafbeelding van de blade Een aangepaste app toevoegen](../media/mam-azure-portal-add-app-details.png) Met deze stap maakt u een unieke vermelding voor uw app.  De app wordt ook weergegeven in de lijst met doel-apps voor een MAM-beleid voor uw tenant, zoals staat beschreven in de volgende stap.
 
-## Stap 3: MAM-beleid toepassen
+## <a name="step-3-apply-mam-policies"></a>Stap 3: MAM-beleid toepassen
 Nadat de metagegevens van de app zijn geüpload naar de service, wordt de app weergegeven in de lijst met apps.  U kunt nu [een nieuw beleid of een bestaand beleid maken](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) en dit toepassen op de Line-Of-Business-app die u hebt toegevoegd in stap 2.
 
 >[!IMPORTANT]
@@ -52,15 +59,15 @@ Nadat de metagegevens van de app zijn geüpload naar de service, wordt de app we
 
 
   ![Schermafbeelding van de blade Doellijst met apps, waarin de nieuwe Line-Of-Business-app wordt weergegeven](../media/mam-azure-portal-lob-on-targeted-app-list.png)
-## Stap 4: De app distribueren
+## <a name="step-4-distribute-the-app"></a>Stap 4: De app distribueren
 U kunt apps op de volgende manieren implementeren voor uw eindgebruikers:
 * Voor apparaten die zijn geregistreerd bij een MDM-oplossing van derden, kunt u de apps distribueren via uw MDM-oplossing.
 * Voor apparaten die niet worden beheerd door een MDM-oplossing, hebt u een aangepaste oplossing nodig. Eindgebruikers moeten de app downloaden en installeren op hun apparaat.
 
-## De metagegevens wijzigen
+## <a name="changing-the-metadata"></a>De metagegevens wijzigen
 Als u de app-gegevens, zoals de naam van de app of de bundel-id, moet wijzigen, moet u [de app verwijderen](#remove-apps) en [toevoegen](#step-2-add-the-app) met de nieuwe metagegevens.
 
-##  Apps verwijderen
+##  <a name="remove-apps"></a>Apps verwijderen
 U kunt een Line-Of-Business-app verwijderen uit de lijst met apps.  Hiermee wordt de app verwijderd uit de lijst en wordt de koppeling met het MAM-beleid verbroken. De app wordt echter niet van het apparaat van de eindgebruiker verwijderd.  
 
 1.  Ga in [Azure Portal](https://portal.azure.com/) naar **Intune Mobile App Management > Instellingen**.  Kies op de blade **Instellingen** de optie **Line-Of-Business** om de lijst met bestaande apps te openen.  
@@ -75,6 +82,6 @@ U kunt een Line-Of-Business-app verwijderen uit de lijst met apps.  Hiermee word
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
