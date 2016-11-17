@@ -2,29 +2,29 @@
 title: Microsoft Intune-bedrijfsportal | Microsoft Intune
 description: Intune-bedrijfsportal installeren
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jve
+ms.reviewer: jve, arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
-ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
+ms.sourcegitcommit: 4ae0bd214dbae7e459f52b79e388aab23b5d6e8e
+ms.openlocfilehash: bea321c455a13a11766f19de42df193cefecf05f
 
 
 ---
 
-# Microsoft Intune-bedrijfsportal
+# <a name="microsoft-intune-company-portal"></a>Microsoft Intune-bedrijfsportal
 
 Lees voor de installatie van Intune dit onderwerp en de andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md).
 
-De Intune-bedrijfsportal is een hulpprogramma waarmee gebruikers toegang krijgen tot bedrijfsgegevens en apps. De bedrijfsportal is beschikbaar in twee vormen:
+De Intune-bedrijfsportal biedt gebruikers toegang tot bedrijfsgegevens en -apps. De bedrijfsportal is beschikbaar in twee vormen:
 
 -   **De bedrijfsportal-app**: een toepassing die beschikbaar is op apparaten die u beheert met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Meer informatie over de bedrijfsportal-apps voor [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) en [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
@@ -54,13 +54,13 @@ Voordat een gebruiker toegang heeft tot de bedrijfsportal, moet aan het account 
 
 > __iOS__: de bedrijfsportal-app voor iOS is gepubliceerd in [alle beschikbare gebieden](https://go.microsoft.com/fwlink/?linkid=831284) voor de Apple iOS App Store.
 
-> __Android__: de bedrijfsportal-app voor Android Antigua en Barbuda, Aruba, Benin, Burkina Faso, Cambodja, China, Cuba, Gabon, Guinee-Bissau, Haïti, Iran, Laos, Mali, Mozambique, Myanmar (Birma), Nederlandse Antillen, Niger, Papoea-Nieuw-Guinea, Soedan, Togo. Voor deze landen is een alternatieve oplossing het [sideloaden van de Android-versie van de bedrijfsportal-app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+> __Android__: de bedrijfsportal-app voor Android is momenteel niet beschikbaar in China. Voor deze landen is een alternatieve oplossing het [sideloaden van de Android-versie van de bedrijfsportal-app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

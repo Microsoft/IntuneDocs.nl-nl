@@ -1,8 +1,9 @@
 ---
 title: De bedrijfsportal aanpassen | Microsoft Intune
-description: Uitleg over het aanpassen van de bedrijfsportal voor uw Intune-abonnement
+description: De bedrijfsportal aanpassen voor uw Intune-abonnement
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
 
 
 ---
@@ -70,6 +71,6 @@ Gefeliciteerd. U hebt zojuist stap 7 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

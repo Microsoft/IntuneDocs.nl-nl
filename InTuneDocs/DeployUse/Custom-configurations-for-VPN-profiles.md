@@ -2,9 +2,10 @@
 title: Aangepaste configuraties voor VPN-profielen | Microsoft Intune
 description: Aangepaste configuraties gebruiken om VPN-profielen te maken in Intune.
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,18 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
+ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 
 
 ---
 
-# Aangepaste configuraties voor VPN-profielen
+# <a name="custom-configurations-for-vpn-profiles"></a>Aangepaste configuraties voor VPN-profielen
 
-## Een aangepaste configuratie maken
+## <a name="create-a-custom-configuration"></a>Een aangepaste configuratie maken
 Met aangepaste configuraties kunt u VPN-profielen maken in Intune. Ga als volgt te werk om een aangepaste configuratie te maken:
 
-   1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid** > **Beleid toevoegen** > *<Expand platform>* > **Aangepaste configuratie** > **Beleid maken**.
+   1. Kies in de Intune-beheerconsole **Beleid** > **Beleid toevoegen** > *Platform uitbreiden* > **Aangepaste configuratie** > **Beleid maken**.
    2. Geef een naam voor het beleid op.
    3. Kies voor elke URI-instelling **Toevoegen** en geef de gevraagde informatie op. Hier volgt een voorbeeld:
 
@@ -32,7 +33,7 @@ Met aangepaste configuraties kunt u VPN-profielen maken in Intune. Ga als volgt 
 
    4.  Nadat u alle URI-instellingen hebt ingevoerd, kiest u **Beleid opslaan** en implementeert u vervolgens het beleid.
 
-## Een configuratiebeleid implementeren
+## <a name="deploy-a-configuration-policy"></a>Een configuratiebeleid implementeren
 
 1.  Kies in de werkruimte **Beleid** het beleid dat u wilt implementeren en klik vervolgens op **Implementatie beheren**.
 
@@ -44,7 +45,7 @@ Met aangepaste configuraties kunt u VPN-profielen maken in Intune. Ga als volgt 
 
 Wanneer u een geïmplementeerd beleid kiest, vindt u onder in de lijst met beleidsregels meer informatie over de implementatie.
 
-##Voorbeeld van URI-instellingen voor een aangepaste configuratie voor een VPN-profiel
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Voorbeeld van URI-instellingen voor een aangepaste configuratie voor een VPN-profiel
 Nu volgen enkele voorbeelden van vermeldingen voor URI-waarden om een aangepaste configuratie te maken voor een VPN-verbinding in een fictief bedrijf met de naam Contoso. Zie [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) voor meer informatie, zoals het gegevenstype voor elke vermelding.
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +86,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Voor vragen over hoe deze instellingen moeten worden gebruikt of voor meer informatie over wat ze doen, raadpleegt u de CSP-documentatie (Configuration Service Provider): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## URI-instellingen voor VPN per Android-app op PulseSecure
-### AANGEPASTE URI VOOR PAKKETLIJST
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>URI-instellingen voor VPN per Android-app op PulseSecure
+### <a name="custom-uri-for-package-list"></a>AANGEPASTE URI VOOR PAKKETLIJST
 -  Gegevenstype = tekenreeks
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Waarde = door scheidingsteken gescheiden pakketlijst.
    - Scheidingstekens: puntkomma (;), dubbele punt (:), komma (,), sluisteken (|)
 
@@ -96,7 +97,7 @@ Voorbeelden:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### AANGEPASTE URI VOOR DE MODUS (OPTIONEEL)
+### <a name="custom-uri-for-mode-optional"></a>AANGEPASTE URI VOOR DE MODUS (OPTIONEEL)
 - Gegevenstype = tekenreeks
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +108,11 @@ Voorbeelden:
 > - De standaardwaarde is *WHITELIST* als er een pakketlijst is opgegeven
 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 (VPN-verbindingen in Microsoft Intune) [vpn-verbindingen-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

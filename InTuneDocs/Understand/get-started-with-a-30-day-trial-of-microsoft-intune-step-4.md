@@ -14,23 +14,23 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
-ms.openlocfilehash: 0fbc8fc23ce65987e4694bce0748362d8ce10153
+ms.sourcegitcommit: ec004a75ed45d27934cc908674a709cf5c024c8e
+ms.openlocfilehash: 9cae8dbf9d5b9cd993bd29e4eabb8bc04663bc25
 
 
 ---
 
 
-# Beleid maken en een app publiceren voor gebruikers van de evaluatieversie
+# <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Beleid maken en een app publiceren voor gebruikers van de evaluatieversie
 Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. Als u van plan bent om Intune na de evaluatie te gebruiken voor apparaten die u configureert voor gebruik in productieomgevingen, is het absoluut essentieel dat u de instructies volgt in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
-U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde computers. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal, zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
+U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde apparaten. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal, zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
 
 Voordat u met Intune apps implementeert, moet u ervoor zorgen dat u de juiste licenties hebt om de app te publiceren, distribueren en gebruiken. In de werkruimte **Licenties** kunt u informatie beheren over licentieovereenkomsten voor apps en software die zijn aangeschaft via Microsoft-volumelicentieovereenkomsten, en voor Microsoft- en niet-Microsoft-apps die op een andere manier zijn gekocht. Vervolgens kunt u licentierapporten maken waarin gebruiksinformatie over beheerde licenties staat voor het hele bedrijf, zodat u op de hoogte kunt blijven van de gebruiksactiviteiten van licenties.
 
 In deze stappen stelt u een configuratiebeleid voor mobiele apparaten in en configureert u een firewallbeleid voor Windows-computers. Bovendien configureert u Skype als een beschikbare installatie voor mobiele apparaten nadat deze zijn geregistreerd. Nadat u een nieuw beleid hebt toegevoegd en geïmplementeerd, geldt het basisbeleid voor alle gebruikers of apparaten in de groep waarop u het beleid hebt geïmplementeerd. U kunt de details van het beleid altijd bekijken en bewerken vanuit de werkruimte **Beleid** in de beheerconsole.
 
-## Een configuratiebeleid voor mobiele apparaten maken en implementeren
+## <a name="create-and-deploy-a-mobile-device-configuration-policy"></a>Een configuratiebeleid voor mobiele apparaten maken en implementeren
 
 1.  Open de [Intune-beheerconsole](https://manage.microsoft.com/).
 
@@ -38,13 +38,13 @@ In deze stappen stelt u een configuratiebeleid voor mobiele apparaten in en conf
 
 3.  Klik in de lijst **Taken** op de pagina **Overzicht** op **Beleid toevoegen**.
 
-4.  Vouw in de beleidslijst het platform uit waarvoor u beleid wilt maken, selecteer **Algemene configuratie**, kies **Beleid met de aanbevolen instellingen maken en implementeren** en kies vervolgens **Beleid maken**.
+4.  Vouw in de beleidslijst het platform uit waarvoor u beleid wilt maken, selecteer **Algemene configuratie**, kies **Aangepast beleid maken en implementeren** en kies vervolgens **Beleid maken**.
 
 5.  Als u wordt gevraagd om **de groepen te selecteren waarvoor u dit beleid wilt implementeren**, selecteert u in de lijst de optie **Mijn proefgebruikers** en kiest u **Toevoegen** &gt; **OK**.
 
 Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en is geïmplementeerd voor de groep **Mijn proefgebruikers** . Dubbelklik op het beleid om de instellingen weer te geven.
 
-## De app Skype voor mobiele apparaten publiceren
+## <a name="publish-the-skype-app-for-mobile-devices"></a>De app Skype voor mobiele apparaten publiceren
 
 1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) het pictogram **Apps** en kies vervolgens **Apps** &gt; **App toevoegen**. Voer uw Intune-referenties in als u hierom wordt gevraagd.
 
@@ -91,7 +91,7 @@ Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en is ge�
 
 De app Skype is nu vanuit de bedrijfsportal beschikbaar voor installatie op mobiele apparaten, maar u moet eerst Intune-software installeren op pc’s en mobiele apparaten.
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 Gefeliciteerd. U hebt zojuist stap 4 van de procedure voor de *Microsoft Intune-evaluatie* voltooid.
 
 >[!div class="step-by-step"]
@@ -100,6 +100,6 @@ Gefeliciteerd. U hebt zojuist stap 4 van de procedure voor de *Microsoft Intune-
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

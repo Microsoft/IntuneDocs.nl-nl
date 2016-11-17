@@ -2,9 +2,8 @@
 title: Windows-apparaatbeheer instellen met Microsoft Intune | Microsoft Intune
 description: "Schakel het beheer van mobiele apparaten (MDM) in voor Windows-pc’s, waaronder Windows 10-apparaten met Microsoft Intune."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
@@ -14,13 +13,13 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
-ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 
 ---
 
-# Windows apparaatbeheer instellen
+# <a name="set-up-windows-device-management"></a>Windows apparaatbeheer instellen
 
 Als Intune-beheerder kunt u de registratie en het beheer voor Windows-pc's op twee manieren inschakelen:
 
@@ -29,7 +28,7 @@ Als Intune-beheerder kunt u de registratie en het beheer voor Windows-pc's op tw
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Registratie via de bedrijfsportal-app instellen
+## <a name="set-up-company-portal-app-enrollment"></a>Registratie via de bedrijfsportal-app instellen
 U kunt toestaan dat gebruikers hun apparaat installeren en registreren met de bedrijfsportal-app van Intune. Als u DNS CNAME-bronrecords maakt, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een servernaam te hoeven opgeven.
 
 1. **Intune instellen**<br>
@@ -42,9 +41,9 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 uur|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 uur|
 
-  `EnterpriseEnrollment-s.manage.microsoft.com` – Biedt ondersteuning voor een omleiding naar de Intune-service met domeinherkenning vanuit de domeinnaam van het e-mailadres
+  `EnterpriseEnrollment-s.manage.microsoft.com`: biedt ondersteuning voor een omleiding naar de Intune-service met domeinherkenning vanuit de domeinnaam van het e-mailadres
 
-  `EnterpriseRegistration.windows.net` – Biedt ondersteuning voor Windows 8.1- en Windows 10 Mobile-apparaten die met een werk- of schoolaccount bij Azure Active Directory worden geregistreerd
+  `EnterpriseRegistration.windows.net`: biedt ondersteuning voor Windows 8.1- en Windows 10 Mobile-apparaten die met een werk- of schoolaccount bij Azure Active Directory worden geregistreerd
 
   Als uw bedrijf meerdere domeinen heeft voor gebruikersreferenties, maakt u CNAME-records voor elk domein.
 
@@ -54,17 +53,17 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
 
   ![Het dialoogvenster Windows-apparaatbeheer](../media/enroll-intune-winenr.png)
 
-4.  **Optionele stappen**<br>De stap **Sideloadsleutels toevoegen** is niet nodig voor Windows 10. De stap **Certificaat voor ondertekening van programmacode uploaden** is alleen nodig als u Line-of-Business-apps (LOB) die niet beschikbaar zijn vanuit Windows Store wilt distribueren op apparaten. [Meer informatie](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+4.  **Optionele stappen**<br>De stap **Sideloadsleutels toevoegen** is niet nodig voor Windows 10. De stap **Certificaat voor ondertekening van programmacode uploaden** is alleen nodig als u Line-of-Business-apps (LOB) die niet beschikbaar zijn vanuit Windows Store wilt distribueren op apparaten.
 
 6.  **Gebruikers informeren**<br>U moet uw gebruikers laten weten hoe ze hun apparaten kunnen registreren en wat ze kunnen verwachten nadat deze onder beheer zijn gebracht:
       - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Richtlijnen voor eindgebruikers van Windows-apparaten](../enduser/using-your-windows-device-with-intune.md)
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

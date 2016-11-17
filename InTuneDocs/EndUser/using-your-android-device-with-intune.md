@@ -1,11 +1,11 @@
 ---
 title: Uw Android-apparaat gebruiken met Intune | Microsoft Intune
-description: Lijst met koppelingen naar taken die u op uw mobiele Android-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
+description: Lijst met koppelingen naar taken die eindgebruikers op hun mobiele Android-apparaat kunnen uitvoeren wanneer het apparaat bij Intune is geregistreerd
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 
 
 ---
 
 
-# Met behulp van een Android-apparaat met Intune
+# <a name="using-your-android-device-with-intune"></a>Met behulp van een Android-apparaat met Intune
 
 Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun met Intune beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers moeten nemen om diverse taken uit te voeren. Deze zijn ondergebracht in de volgende categorieën:
 
@@ -29,41 +29,41 @@ Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun met Intu
 - Beheertaken na de registratie
 - Problemen met naleving
 
-## Installatie van de bedrijfsportal-app en de inschrijving bij Intune
+## <a name="company-portal-app-installation-and-intune-enrollment"></a>Installatie van de bedrijfsportal-app en de inschrijving bij Intune
 
-De informatie in deze sectie helpt u bij de installatie van de Intune-bedrijfsportal op Android-apparaten en de registratie van deze apparaten.
+De informatie in deze sectie helpt gebruikers bij de installatie van de Intune-bedrijfsportal op Android-apparaten en de registratie van deze apparaten.
 
-- [Uw apparaat registeren bij Intune](enroll-your-device-in-Intune-android.md)
-- [Een werkprofiel maken en uw apparaat registreren bij Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+- [Een apparaat registeren bij Intune](enroll-your-device-in-Intune-android.md)
+- [Een werkprofiel maken en een apparaat registreren bij Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
+## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Wat gebruikers kunnen doen wanneer hun apparaat is geregistreerd bij Intune
 
-In deze sectie kunt u lezen welke acties u kunt uitvoeren nadat u uw Android-apparaat bij Intune hebt geregistreerd.
+In deze sectie kunnen gebruikers lezen welke acties ze kunnen uitvoeren nadat hun Android-apparaat bij Intune is geregistreerd.
 
-- [Beheerde apps op uw apparaat gebruiken](use-managed-apps-on-your-device-android.md)
-- [Uw apparaat versleutelen](encrypt-your-device-android.md)
-- [Uw pincode of wachtwoord instellen](set-your-pin-or-password-android.md)
-- [Installeer het virtuele particuliere netwerk (VPN) van uw bedrijf](install-your-companys-virtual-private-network-VPN-android.md)
-- [De hoeveelheid tijd instellen waarna het apparaat moet worden vergrendeld](set-the-amount-of-time-before-your-device-is-locked-android.md)
-- [Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-android.md)
-- [Schakel het verzamelen van Microsoft-gebruiksgegevens uit](turn-off-microsoft-usage-data-collection-android.md)
+- [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-android.md)
+- [Een apparaat versleutelen](encrypt-your-device-android.md)
+- [Een pincode of wachtwoord instellen](set-your-pin-or-password-android.md)
+- [Het virtuele particuliere netwerk (VPN) van het bedrijf installeren](install-your-companys-virtual-private-network-VPN-android.md)
+- [Instellen na hoeveel tijd het apparaat moet worden vergrendeld](set-the-amount-of-time-before-your-device-is-locked-android.md)
+- [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-android.md)
+- [Het verzamelen van Microsoft-gebruiksgegevens uitschakelen](turn-off-microsoft-usage-data-collection-android.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-android.md)
-- [De registratie van uw apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- [De registratie van een apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Wat gebeurt er als u uw Android-apparaat opnieuw instelt met behulp van de bedrijfsportal-app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
-## Problemen met het apparaat oplossen
+## <a name="steps-to-fix-device-and-compliance-issues"></a>Stappen voor het oplossen van problemen met het apparaat en nalevingsproblemen
 
-De informatie in deze sectie helpt u bij het oplossen van problemen die mogelijk optreden wanneer een Android-apparaat wordt geregistreerd bij Intune.
+De informatie in deze sectie helpt gebruikers bij het oplossen van problemen die kunnen optreden wanneer een Android-apparaat wordt geregistreerd bij Intune.
 
 - [Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden met behulp van een USB-kabel](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Registratiefouten naar uw IT-beheerder verzenden](send-enrollment-errors-to-your-it-administrator-android.md)
 - [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Het apparaat voldoet niet aan de vereiste voor het maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Het apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Uw apparaat is geroot en u kunt geen verbinding maken](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Er ontbreekt een vereist certificaat voor uw apparaat](your-device-is-missing-a-required-certificate-android.md)
 - [U wordt gevraagd om onbekende bronnen uit te schakelen](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ De informatie in deze sectie helpt u bij het oplossen van problemen die mogelijk
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

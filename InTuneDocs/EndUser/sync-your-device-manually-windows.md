@@ -2,8 +2,8 @@
 title: Uw Windows-apparaat handmatig synchroniseren | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
-ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 ---
 
 
-# Uw Windows-apparaat handmatig synchroniseren
+# <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 Als de installatie van de app te lang duurt, kunt u proberen om uw apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen.
 
-Alleen de volgende versies worden ondersteund. Volg de instructies voor het type apparaat dat u hebt.
+Alleen de volgende versies worden ondersteund. Als uw apparaat niet wordt weergegeven, wordt synchronisatie niet ondersteund. Volg de instructies voor het type apparaat dat u hebt.
 
 * [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10-bureaublad](#windows-10-desktop)
-* [Windows Phone 8,1](#windows-phone-8-1)
+* [Windows 10 Desktop](#windows-10-desktop)
+* [Windows Phone 8.1](#windows-phone-8-1)
 
 
-## Windows 10 Mobile
+## <a name="windows-10-mobile"></a>Windows 10 Mobile
 Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
 
 1. Ga naar **Alle apps** > **Instellingen** > **Accounts**.
@@ -53,7 +53,7 @@ Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchron
 
     Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven. De knop **Synchroniseren** is pas beschikbaar nadat de synchronisatie van het apparaat is voltooid.
 
-## Windows 10-bureaublad
+## <a name="windows-10-desktop"></a>Windows 10-bureaublad
 Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen. Bekijk de schermafbeeldingen om te zien welke stappen u het beste kunt gebruiken en volg dan de stappen die betrekking hebben op uw apparaat. 
 
 1. Kies de knop **Start** en kies vervolgens **Instellingen**.
@@ -74,7 +74,7 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png) 
 
-### Stappen om te volgen als u Toegang tot werk of school ziet
+### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Stappen om te volgen als u Toegang tot werk of school ziet
 
 1. Kies op de pagina **Accounts** de optie **Toegang tot werk of school**.
 
@@ -93,7 +93,7 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
 4. Kies de knop **Synchroniseren**. Het apparaat wordt gesynchroniseerd met Intune.
 
-### Te volgen stappen als u Toegang via het werknetwerk ziet
+### <a name="steps-to-follow-if-you-see-work-access"></a>Te volgen stappen als u Toegang via het werknetwerk ziet
     
 1. Kies op de pagina **Accounts** de optie **Toegang via het werknetwerk**.
 
@@ -109,7 +109,7 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
    De knop wordt uitgeschakeld totdat de synchronisatie is voltooid.
 
-## Windows Phone 8,1
+## <a name="windows-phone-81"></a>Windows Phone 8,1
 Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
 
 1. Ga naar **Alle apps** > **Instellingen** > **Werkplek**.
@@ -126,10 +126,10 @@ Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchron
 
    Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven tot het apparaat is gesynchroniseerd.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

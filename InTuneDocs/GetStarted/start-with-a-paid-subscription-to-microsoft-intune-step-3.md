@@ -1,8 +1,9 @@
 ---
 title: Active Directory synchroniseren en gebruikers toevoegen aan Intune | Microsoft Intune
-description: Beschrijft de synchronisatie van on-premises gebruikers met Azure AD en het verlenen van beheerdersmachtigingen voor uw Intune-abonnement
+description: On-premises gebruikers met Azure AD synchroniseren en beheerdersmachtigingen voor uw Intune-abonnement verlenen
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: a2ed4b1e025437cca6de4a15b3800daa2c9a212b
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 786aa2a665a881d13412ecc2d247a8b79a6d09f8
 
 
 ---
@@ -48,6 +49,6 @@ Gefeliciteerd. U hebt zojuist stap 3 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

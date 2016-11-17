@@ -5,18 +5,17 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-ms.reviewer: sumitp
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 32bded5047b1a08738418e3e36382eeae1a5f3b4
-ms.openlocfilehash: 84850f4e9136e6304e51991d6ab0a0ae2a37e7a7
-
+ms.sourcegitcommit: 07389265e2a88d45e18735bf55fbcde5260ebc54
+ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
 
 ---
 
@@ -45,8 +44,8 @@ Naar aanleiding van uw feedback is Microsoft bezig het aantal verschillende meth
 
 Vanwege de gefaseerde implementatie van beveiliging op basis van Azure Active Directory-groepen, moet u de werkruimte **Groepen** in de [Intune-beheerconsole](https://manage.microsoft.com) openen om te bepalen welke procedure u moet gebruiken:
 
--  Als u een koppeling naar de Azure-portal ziet, gebruikt u geen Intune-groepen meer. Volg de procedure [Apparaatgroeptoewijzing configureren (voor Azure Active Directory-groepen)](##How-to-configure-device-group-mapping-(for-Azure-Active-Directory-groups) hieronder.
--  Als u geen koppeling naar de Azure-portal ziet, gebruikt u nog Intune-groepen. Volg de procedure [Apparaatgroeptoewijzing configureren (voor Intune-groepen)](##How-to-configure-device-group-mapping-(for-Intune-groups) hieronder.
+-  Als u een koppeling naar de Azure-portal ziet, gebruikt u geen Intune-groepen meer. Volg de onderstaande procedure [Apparaatgroeptoewijzing configureren voor Azure Active Directory-groepen](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-azure-active-directory-groups).
+-  Als u geen koppeling naar de Azure-portal ziet, gebruikt u nog Intune-groepen. Volg de onderstaande procedure [Apparaatgroeptoewijzing configureren voor Intune-groepen](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-intune-groups).
 
 ## Apparaatgroeptoewijzing configureren voor Intune-groepen
 1. Maak een Intune-apparaatgroep of kies een bestaande groep voor elke apparaatcategorie die u wilt gebruiken. Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) voor informatie over het maken van groepen.
@@ -87,6 +86,7 @@ Wanneer gebruikers hun apparaat registreren, krijgen ze een lijst te zien van de
 [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO4-->
 
 

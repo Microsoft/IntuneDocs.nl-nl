@@ -14,17 +14,17 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5e41cbbf3bac3ed78ee3a6929e364f829fa1d4b
-ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
+ms.sourcegitcommit: 552473cb704ead5f7cc30a2311e2f722265bfcea
+ms.openlocfilehash: c7ecf73c28a8332bd3fe1465a2f64f7f09a7a690
 
 
 ---
 
-# Mobile App Management-beleidsinstellingen voor Android in Microsoft Intune
+# <a name="android-mobile-app-management-policy-settings-in-microsoft-intune"></a>Mobile App Management-beleidsinstellingen voor Android in Microsoft Intune
 De in dit onderwerp beschreven beleidsinstellingen kunnen worden [geconfigureerd](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) voor een Mobile App Management-beleid (MAM) op het tabblad **Instellingen** in de Azure-portal.
 Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie van gegevens en instellingen voor toegang. In dit onderwerp verwijst de term *Door beleid beheerde apps* naar apps die zijn geconfigureerd met MAM-beleid.
 
-##  Instellingen voor herlocatie van gegevens
+##  <a name="data-relocation-settings"></a>Instellingen voor herlocatie van gegevens
 
 - **Back-ups van Android verhinderen**: kies **Ja** om dit uit te schakelen, of **Nee** om toe te staan dat er back-ups worden gemaakt van bedrijfsgegevens uit door beleid beheerde apps.
 
@@ -74,7 +74,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
   Standaardwaarde = **Ja**.
 
-##  Toegangsinstellingen
+##  <a name="access-settings"></a>Toegangsinstellingen
 
 - **Pincode vereisen voor toegang:** kies **Ja** om een pincode te vereisen voor het gebruik van apps die door beleid worden beheerd. De eerste keer dat de gebruiker de app uitvoert, wordt gevraagd om dit in te stellen.
 
@@ -83,7 +83,9 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
  -  **Eenvoudige pincode toestaan:** hier kunt u opgeven of gebruikers eenvoudige pincodes mogen gebruiken, zoals 1234 of 1111. Standaardwaarde = **Ja**.
  - **Lengte van de pincode:** geef het minimale aantal cijfers op waaruit een pincode moet bestaan. Standaardwaarde = **4**.
  - **Aantal pogingen voordat pincode opnieuw wordt ingesteld**: geef het aantal toegestane invoerpogingen voor de pincode op voordat de gebruiker de pincode opnieuw moet instellen. Er is geen standaardwaarde voor deze instelling.
-- **Bedrijfsreferenties vereisen voor toegang**: selecteer **Ja** als u de bedrijfsreferenties in plaats van een pincode wilt vereisen voor toegang tot apps. Als u deze waarde op **Ja** instelt, overschrijft dit de vereisten voor de pincode of Touch-ID. De gebruiker wordt gevraagd om zijn zakelijke referenties te verstrekken.
+ - **Vingerafdruk in plaats van pincode vereisen (Android 6.0+):** selecteer **Ja** als u een vingerafdruk-id in plaats van een cijferpincode wilt vereisen voor toegang tot apps.
+ Op Android-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk in plaats van met een cijferpincode. Wanneer de eindgebruiker toegang tot deze app probeert te krijgen via zijn werkaccount, wordt hij gevraagd zijn vingerafdruk te geven in plaats van een pincode in te voeren.
+ - **Bedrijfsreferenties vereisen voor toegang**: selecteer **Ja** als u de bedrijfsreferenties in plaats van een pincode of vingerafdruk wilt vereisen voor toegang tot apps. Als u deze waarde op **Ja** instelt, overschrijft dit de vereisten voor de pincode of Touch-ID. De gebruiker wordt gevraagd om zijn zakelijke referenties te verstrekken.
 
   Standaardwaarde = **Nee**.
 - **De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd**: selecteer **Ja** om te voorkomen dat apps worden uitgevoerd op gekraakte of geroote apparaten. De gebruiker kan de apps nog steeds gebruiken voor privétaken maar moet voor zijn werk een ander apparaat gebruiken.
@@ -105,6 +107,6 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

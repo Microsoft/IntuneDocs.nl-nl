@@ -1,8 +1,9 @@
 ---
 title: Beleid maken en een app publiceren | Microsoft Intune
-description: Uitleg over hoe u beleidsregels kunt maken en een voorbeeld van de app voor uw Intune-abonnement kunt publiceren
+description: Beleid maken en een voorbeeldapp voor uw Intune-abonnement publiceren
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 748df2b7af8cf1679f31435f89730170ca723dc4
 
 
 ---
@@ -109,6 +110,6 @@ Gefeliciteerd. U hebt zojuist stap 6 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

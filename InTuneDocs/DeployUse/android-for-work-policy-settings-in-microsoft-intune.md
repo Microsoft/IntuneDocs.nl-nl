@@ -15,17 +15,19 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 32bded5047b1a08738418e3e36382eeae1a5f3b4
-ms.openlocfilehash: f7c676b25f5dd5b7ee1d1d7c1b51b75a41b5c102
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
 ---
 
-# Beleidsinstellingen voor Android for Work in Microsoft Intune
+# <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android for Work in Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op Android for Work-apparaten kunt configureren.
 
-## Algemeen configuratiebeleid
+## <a name="general-configuration-policy"></a>Algemeen configuratiebeleid
 
 Gebruik het Intune **algemene Android for Work-configuratiebeleid** om beveiligings- en werkprofielinstellingen te configureren voor uw Android for Work-apparaten.
 
@@ -34,22 +36,22 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 > [!TIP]
 > Apparaten worden automatisch versleuteld wanneer u een werkprofiel inricht. U kunt deze instelling niet wijzigen.
 
-### Wachtwoordinstellingen
+### <a name="password-settings"></a>Wachtwoordinstellingen
 
 |Naam van de instelling|Details|
 |----------------|-|
-|**Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**|Hiermee wordt opgegeven of een wachtwoord voor beheerde apparaten vereist is. U kunt kiezen uit:<br><br>- **Complex**: vereist ten minste één letter, cijfer en symbool<br>- **Alfanumeriek**: vereist ten minste één cijfer en één letter<br>- **Alfabetisch**: vereist ten minste letters of symbolen<br>- **Numeriek complex**: vereist niet-herhaalde en niet-opeenvolgende numerieke tekens<br>- **Numeriek**<br><br>Als deze instelling niet is ingeschakeld, zijn er geen complexiteitsvereisten.|
+|**Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**|Hiermee wordt opgegeven of een wachtwoord voor beheerde apparaten vereist is. U kunt kiezen uit:<br><br>- **Complex**: vereist ten minste één letter, cijfer en symbool<br>- **Alfanumeriek**: vereist ten minste één cijfer en één letter<br>- **Alfabetisch**: vereist ten minste letters of symbolen<br>- **Numeriek complex**: vereist niet-herhaalde en niet-opeenvolgende numerieke tekens<br>- **Numeriek**<br><br>Als deze instelling niet is ingeschakeld, zijn er geen complexiteitsvereisten.|
 |**Minimale wachtwoordlengte**|Hiermee wordt het minimum aantal tekens of cijfers voor het wachtwoord aangegeven.|
 |**Aantal minuten inactief voordat het apparaat wordt vergrendeld**|Hiermee wordt het aantal minuten inactiviteit aangegeven waarna het apparaat automatisch wordt vergrendeld.|
 |**Smart Lock en andere vertrouwensagents toestaan**<br>(Android 6 en hoger)|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten beheren. Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt.) U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.|
 |**Aantal mislukte aanmeldingen dat is toegestaan voordat het werkprofiel wordt verwijderd**|Hiermee wordt het aantal mislukte aanmeldingen aangegeven dat is toegestaan voordat het apparaat wordt verwijderd. Hierbij wordt het apparaat niet volledig gewist.|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee wordt voorkomen dat eerder gebruikte wachtwoorden opnieuw worden gebruikt.|
 |**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden aan dat moeten worden onthouden.|
-|**Verlopen van wachtwoorden (dagen)**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|
+|**Dagen tot wachtwoord verloopt**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|
 |**Vingerafdruk voor ontgrendelen toestaan**<br>(Android 6 en hoger)|Hiermee kunt u een vingerafdruk gebruiken voor het ontgrendelen van apparaten met deze mogelijkheid.|
 
 
-### Werkprofielinstellingen
+### <a name="work-profile-settings"></a>Werkprofielinstellingen
 
 |Naam van de instelling|Details|
 |----------------|-|
@@ -60,7 +62,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 
 
 
-## Aangepaste beleidsinstellingen
+## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
 Gebruik het **aangepaste Android for Work-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om de functies op Android for Work-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
 Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
@@ -68,32 +70,33 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
 > [!NOTE]
 > Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten.
 
-### Algemene instellingen
+### <a name="general-settings"></a>Algemene instellingen
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
     |**Naam**|Voer een unieke naam in voor het aangepaste Android-beleid, zodat dit gemakkelijk is te herkennen in de Intune-console.|
     |**Beschrijving**|Geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie die u helpt om het beleid weer te vinden.|
 
-### OMA-URI-instellingen
+### <a name="omauri-settings"></a>OMA-URI-instellingen
 
    |Naam van de instelling|Details|
     |--------|--------------------|
-    |**Naam van de instelling**|Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
+    |**Naam van instelling**|Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
     |**Beschrijving van instelling**|Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
     |**Gegevenstype**|Selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. Kies uit: **tekenreeks, tekenreeks (XML), datum en tijd, geheel getal, drijvende komma** en **booleaanse waarde**.|
     |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
-### Voorbeelden
+### <a name="examples"></a>Voorbeelden
 
 - [Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
 - [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](per-app-vpn-for-android-pulse-secure.md)
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Nov16_HO1-->
 
 

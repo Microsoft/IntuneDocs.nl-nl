@@ -2,9 +2,10 @@
 title: Blijf op de hoogte met waarschuwingen | Microsoft Intune
 description: Informatie over hoe waarschuwingen ervoor zorgen dat u op de hoogte blijft van wat er in Microsoft Intune gebeurt.
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
-ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 44b496aecd62d515512f10d2aae97f2c7a06dc6a
 
 
 ---
 
-# Blijf op de hoogte met Microsoft Intune-waarschuwingen
+# <a name="get-notified-by-microsoft-intune-alerts"></a>Blijf op de hoogte met Microsoft Intune-waarschuwingen
 Waarschuwingen zorgen ervoor dat u op de hoogte blijft van wat er in Microsoft Intune gebeurt.
 
 Waarschuwingen kunnen u bijvoorbeeld op de hoogte brengen van de volgende gebeurtenissen:
@@ -31,7 +32,7 @@ Waarschuwingen kunnen u bijvoorbeeld op de hoogte brengen van de volgende gebeur
 -   Een conflict tussen twee Intune-beleidsregels dat is gedetecteerd
 
 
-## Hoe waarschuwingen werken
+## <a name="how-alerts-work"></a>Hoe waarschuwingen werken
 Waarschuwingen worden gegenereerd op basis van **waarschuwingstypen**, een reeks vooraf geconfigureerde regels die in Intune zijn geïntegreerd. Waarschuwingen van het type **Cloudopslag heeft 10% of minder vrije ruimte**, waarschuwen u bijvoorbeeld wanneer er bijna geen schijfruimte meer is voor het opslaan van uw apps in de cloud. U kunt waarschuwingstypen in- of uitschakelen en eigenschappen configureren voor elk waarschuwingstype. Voor het bovenstaande berichttype kunt u bijvoorbeeld het volgende configureren:
 
 -   **Status:** Of dit type waarschuwing is ingeschakeld of uitgeschakeld
@@ -51,7 +52,7 @@ Overige waarschuwingstypen bevatten mogelijk andere items die u kunt configurere
 
 Bovendien kunt u Intune zodanig configureren dat u per e-mail wordt gewaarschuwd wanneer er een waarschuwing wordt gegenereerd.
 
-## Waarschuwingen instellen
+## <a name="set-up-alerts"></a>Waarschuwingen instellen
 Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de opties **Beheer** &gt; **Waarschuwingen en meldingen** en kies vervolgens een van de deze taken:
 
 |Taak|Beschrijving|
@@ -60,7 +61,7 @@ Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de opt
 |**Ontvangers**|Kies **Toevoegen** om een nieuw e-mailadres toe te voegen voor het ontvangen van de e-mailmeldingen die u instelt.<br /><br />U kunt ook bestaande ontvangers **bewerken** of **verwijderen** .<br /><br />Als u meldingen wilt ontvangen, moet u dit e-mailadres ook toevoegen als ontvanger onder **Meldingsregels**.|
 |**Meldingsregels**|Hiermee configureert u regels die definiëren naar wie een e-mailmelding wordt verzonden. U hebt de volgende mogelijkheden:<br /><br />**Een bestaande regel kiezen**: kies een regel en kies vervolgens **Ontvangers selecteren**. U kunt vervolgens alle ontvangers selecteren die een e-mailbericht ontvangen wanneer er een waarschuwing wordt gegenereerd die aan deze regel voldoet.<br /><br />**Maak een nieuwe regel**: voer een naam in voor de regel, selecteer de waarschuwingscategorie en de ernst van de waarschuwing die van toepassing zijn op de regel, selecteer de apparaatgroepen waarop de regel van toepassing is en selecteer de gebruikers die een e-mail ontvangen wanneer er een waarschuwing wordt gegenereerd.<br /><br />U kunt een bestaande regel ook **inschakelen**, **uitschakelen**, **bewerken**en **verwijderen** .|
 
-## Werken met waarschuwingen
+## <a name="working-with-alerts"></a>Werken met waarschuwingen
 Gebruik de volgende opties om met waarschuwingen in de Intune-beheerconsole te werken.
 
 |Optie|Beschrijving|
@@ -80,11 +81,11 @@ Intune-waarschuwingen blijven actief tot:
 > [!TIP]
 > Als dezelfde waarschuwing wordt gegenereerd door apparaten waarop verschillende besturingssystemen worden uitgevoerd, ziet u mogelijk meerdere versies van dezelfde waarschuwing in de lijst met waarschuwingen.
 
-### Zie tevens
-[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+### <a name="see-also"></a>Zie tevens
+[Bewaking en rapporten voor Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

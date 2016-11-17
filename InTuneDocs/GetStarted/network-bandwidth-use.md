@@ -2,7 +2,8 @@
 title: Gebruik van netwerkbandbreedte | Microsoft Intune
 description: gebruik van netwerkbandbreedte door intune
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: b40c5ce0d4447b10ec949af6933f28b091136315
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 18007f598f4182fd90592d4aeb365b834a73fc72
 
 
 ---
@@ -26,7 +27,7 @@ Lees voor de installatie van [!INCLUDE[wit_firstref](../includes/wit_firstref_md
 Gebruik de informatie in de volgende gedeelten om te plannen voor het netwerkverkeer voor [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-clients.
 
 ## Gemiddeld netwerkverkeer
-De volgende tabel bevat de geschatte grootte en frequentie van algemene inhoud die via het netwerk voor elke client wordt verzonden.
+Deze tabel bevat de geschatte grootte en frequentie van algemene inhoud die via het netwerk voor elke client wordt verzonden.
 
 > [!NOTE]
 > Om ervoor te zorgen dat computers en mobiele apparaten de vereiste updates en inhoud van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-service ontvangen, moeten ze regelmatig worden verbonden met internet. Hoeveel tijd het duurt om updates of inhoud te ontvangen verschilt, maar als uitgangspunt moeten ze ten minste 1 uur per dag continu met internet verbonden zijn.
@@ -88,6 +89,6 @@ Als u BranchCache gebruikt, moet u contact opnemen met andere beheerders in uw o
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

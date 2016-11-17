@@ -1,11 +1,11 @@
 ---
 title: De Intune-bedrijfsportalwebsite gebruiken | Microsoft Intune
-description: Beschrijving van de bedrijfsportalwebsite en koppelingen naar de stappen voor taken die u op de website kunt uitvoeren
+description: Beschrijving van de bedrijfsportalwebsite en koppelingen naar de stappen voor taken die eindgebruikers op de website kunnen uitvoeren
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,43 +14,43 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
-ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 
 ---
 
-# De Intune-bedrijfsportalwebsite gebruiken
-De [bedrijfsportalwebsite](http://portal.manage.microsoft.com) is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd.
+# <a name="using-the-intune-company-portal-website"></a>De Intune-bedrijfsportalwebsite gebruiken
+De [bedrijfsportalwebsite](http://portal.manage.microsoft.com) is een webpagina waarop eindgebruikers de computers en apparaten beheren die ze bij Intune hebben geregistreerd.
 
-U kunt de bedrijfsportalwebsite voor het volgende gebruiken:
+Gebruikers kunnen op de bedrijfsportalwebsite de volgende taken uitvoeren:
 
--   [Naam van uw apparaat wijzigen](rename-your-device-cpwebsite.md)
+-   [Naam van een apparaat wijzigen](rename-your-device-cpwebsite.md)
 
--   [Het apparaat verwijderen](remove-your-device-cpwebsite.md)
+-   [Een apparaat verwijderen](remove-your-device-cpwebsite.md)
 
--   [Het apparaat opnieuw instellen](reset-your-device-cpwebsite.md)
+-   [Een apparaat opnieuw instellen](reset-your-device-cpwebsite.md)
 
--   [De wachtwoordcode van het apparaat opnieuw instellen](reset-your-passcode-cpwebsite.md)
+-   [De wachtwoordcode van een apparaat opnieuw instellen](reset-your-passcode-cpwebsite.md)
 
 -   [Een apparaat op afstand vergrendelen](remote-lock-your-device-cpwebsite.md)
 
--   [Het apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
+-   [Een apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
 
--   Zoeken naar de contactgegevens van uw IT-beheerder, als uw IT-beheerder deze heeft geconfigureerd
+-   Zoeken naar de contactgegevens van de IT-beheerder, als u deze hebt geconfigureerd
 
--   Gegevens over uw apparaat bekijken, bijvoorbeeld de compatibiliteit met het beleid van uw school of werk
+-   Gegevens over hun apparaat bekijken, zoals compatibiliteit met het beleid van uw school of werk
 
--   Uw pc op afstand beheren (geldt alleen voor pc's)
+-   Hun pc op afstand beheren (geldt alleen voor pc's)
 
-U kunt op de **bedrijfsportalwebsite** de meeste taken uitvoeren die u ook met de **bedrijfsportal-app** kunt uitvoeren die u op uw apparaat installeert. Tik voor meer informatie over de bedrijfsportal-app, het registreren van een apparaat bij Intune en meer op de koppeling voor het type apparaat dat u hebt:
+Eindgebruikers kunnen op de **bedrijfsportalwebsite** de meeste taken uitvoeren die ze ook met de **bedrijfsportal-app** op een apparaat kunnen uitvoeren. De volgende pagina's bevatten koppelingen naar alle taken die eindgebruikers op hun apparaat kunnen uitvoeren:
 
-- [Met behulp van een Android-apparaat met Intune](using-your-android-device-with-intune.md)
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+- [Met een Android-apparaat met Intune](using-your-android-device-with-intune.md)
+- [Met een iOS- of Mac OS X-apparaat met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Met een Windows-apparaat met Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,9 +2,10 @@
 title: Certificaatprofielen voor toegang tot bedrijfsresources | Microsoft Intune
 description: "Beveiligde VPN-, Wi-Fi en toegang tot e-mail met een certificaat op elk gebruikersapparaat geïnstalleerd."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: ee10ea01bb2e55a1c8b52a7ec0bdaf14f3c297f1
 
 
 ---
 
-# Toegang tot beveiligde bronnen met certificaatprofielen in Microsoft Intune
+# <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Toegang tot beveiligde bronnen met certificaatprofielen in Microsoft Intune
 Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze toegang beveiligen met een certificaat dat op elk gebruikersapparaat wordt geïnstalleerd. Dit werkt als volgt:
 
 1. Zorg ervoor dat de juiste certificaatinfrastructuur aanwezig is, zoals beschreven in [Certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [Certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md).
@@ -28,13 +29,17 @@ Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi-
  -  iOS 8.0 en hoger
  -  Mac OS X 10.9 en hoger
  -  Android 4.0 en hoger
+ -  Android for Work
  -  Windows 8.1 en hoger
  -  Windows Phone 8.1 en hoger
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-Fi, zoals beschreven in [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md). U kunt een **PKCS #12-certificaatprofiel (.pfx)** *of* een **SCEP-certificaatprofiel** maken en implementeren voor apparaten met deze platformen:
 
   -  iOS 8.0 en hoger
   -  Android 4.0 en hoger
+  -  Android for Work
   -  Windows 10 (Desktop en Mobile) en hoger
 
   Een **SCEP-certificaatprofiel** gebruiken voor apparaten met deze platformen:
@@ -49,13 +54,13 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 >-  Bovendien moet u de Microsoft Intune-certificaatconnector downloaden en configureren, ongeacht of u SCEP-profielen of PFX-profielen wilt gebruiken.
 >-  In [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md) leest u meer over het configureren van de vereiste services.
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 - [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md)
 - [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md)
 - [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,8 +1,9 @@
 ---
 title: Een aangepaste domeinnaam configureren | Microsoft Intune
-description: Beschrijft hoe u een aangepaste domeinnaam voor uw Intune-abonnement kunt toevoegen
+description: Een aangepaste domeinnaam voor uw Intune-abonnement toevoegen
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf2122afc7f86d81b9d072147b19f75be2a55b51
-ms.openlocfilehash: 63c0b3340a6f69e20c85abf7947c25ce88f5d826
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 0251e339ddc227735bc09efb31e8440543e6033f
 
 
 ---
@@ -40,6 +41,6 @@ Gefeliciteerd. U hebt zojuist stap 2 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,22 +2,23 @@
 title: Uw apparaat registreren bij Intune | Microsoft Intune
 description: Biedt koppelingen naar informatie over het registreren van verschillende apparaten in Intune
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 5ea154c58207b1ddcce8c51c0cd039532bda4cad
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 531fb4274a3a2ebd26278c0dd3f0d45d5458120d
 
 
 ---
 
-# Uw apparaat registeren bij Intune
+# <a name="enroll-your-device-in-intune"></a>Uw apparaat registeren bij Intune
 
 Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Windows-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Volg de koppelingen onder aan dit onderwerp voor meer informatie over de registratie en wat uw IT-beheerder wel en niet op uw apparaat kan zien.
 
@@ -30,8 +31,6 @@ Als u de registratie-instructies wilt weergeven, gebruikt u de koppeling die ove
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

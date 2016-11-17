@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: 2959ad5f09be686e4dae9b751e8ede5e6b60bd89
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
 
 
 ---
@@ -28,21 +28,21 @@ Met Wi-Fi-, VPN- en e-mailprofielen van Microsoft Intune kunnen uw gebruikers to
 Hier kunt u instellingen voor draadloze netwerken implementeren voor uw gebruikers. Dankzij deze instellingen kunnen uw gebruikers gemakkelijk verbinding maken met het bedrijfsnetwerk.
 #### <a name="supported-platforms"></a>Ondersteunde platforms
 
-|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX|
+|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Ja (U kunt een Windows Wi-Fi-profiel importeren.)|Ja (U kunt OMA-URI configureren.) |Ja|Ja|Yes|
 
 ## <a name="vpn-profilesvpnconnectionsinmicrosoftintunemd-and-supported-platforms"></a>[VPN-profielen](vpn-connections-in-microsoft-intune.md) en ondersteunde platforms
 Hiermee kunt u VPN-instellingen (Virtual Private Network) implementeren voor uw gebruikers. Dankzij deze instellingen kunnen uw gebruikers gemakkelijk verbinding maken met het bedrijfsnetwerk.
 
-|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX|
+|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Yes|Ja|Ja|Ja|Ja|
 
 ## <a name="email-profilesconfigureaccesstocorporateemailusingemailprofileswithmicrosoftintunemd-and-supported-platforms"></a>[E-mailprofielen](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) en ondersteunde platforms
 Hiermee kunt u instellingen voor systeemeigen e-mailclients in uw organisatie maken, implementeren en bewaken.
 
-|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX|
+|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Nee|Ja|Ja|Nee|Yes|
 > [!NOTE]
@@ -51,12 +51,12 @@ Hiermee kunt u instellingen voor systeemeigen e-mailclients in uw organisatie ma
 ## <a name="certificate-profilessecureresourceaccesswithcertificateprofilesmd-and-supported-platforms"></a>[Certificaatprofielen](secure-resource-access-with-certificate-profiles.md) en ondersteunde platforms
 Zorgen voor een beveiligde toegang tot bedrijfsresources, zoals draadloze netwerken en VPN-verbindingen.
 
-|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX|
+|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Yes|Ja|Ja|Ja|Ja|
+|Ja|Ja|Ja|Ja|Ja|
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

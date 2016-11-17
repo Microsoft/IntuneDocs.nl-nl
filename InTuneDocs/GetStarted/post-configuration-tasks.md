@@ -2,8 +2,8 @@
 title: Taken na configuratie | Microsoft Intune
 description: Optionele configuratietaken uitvoeren voor het verbeteren van de functionaliteit van het beheer van mobiele apparaten.
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e125a283a017685c2442c34194da29466c8e67a
-ms.openlocfilehash: 81dfaeb25de75f178d8993b47aadb5d4880970c7
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
 
 
 ---
@@ -31,6 +31,6 @@ Nadat u de initiële configuratiestappen voor een betaald Intune-abonnement hebt
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 
