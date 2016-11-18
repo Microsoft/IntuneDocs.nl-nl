@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
@@ -76,7 +76,7 @@ In deze taak publiceert u de certificaatsjabloon.
 
     -   Geef een gebruiksvriendelijke **weergavenaam voor de sjabloon** op.
 
-    -   Selecteer op het tabblad **Onderwerpnaam** de optie **Met de aanvraag meeleveren**. (Beveiliging wordt afgedwongen door de Intune-beleidsmodule voor NDES.)
+    -   Selecteer op het tabblad **Onderwerpnaam** de optie **Met de aanvraag meeleveren**. 
 
     -   Zorg ervoor dat op het tabblad **Extensies** de **beschrijving van toepassingsbeleid** de optie **Clientverificatie**bevat.
 
@@ -142,8 +142,6 @@ De certificaatconnector downloaden, installeren en configureren.
 
     a. Kies **Aanmelden** en voer uw Intune-servicebeheerder- of tenantbeheerderreferenties met de machtiging voor algemeen beheer in.
 
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
     b. Selecteer het tabblad **Geavanceerd** en geef vervolgens referenties op voor een account met de machtiging **Certificaten verlenen en beheren** op uw verlenende certificeringsinstantie.
 
     c. Kies **Toepassen**.
@@ -152,15 +150,12 @@ De certificaatconnector downloaden, installeren en configureren.
 
 6.  Open een opdrachtprompt en typ **services.msc**. Druk op **Enter**, klik met de rechtermuisknop op de **Intune-connectorservice** en kies **Opnieuw opstarten**.
 
-Controleer of de service wordt uitgevoerd door een browser te openen en de volgende URL in te voeren. Hierop moet een **403** -fout worden geretourneerd:
-
-**http:// &lt;FQDN_van_uw_NDES-server&gt;/certsrv/mscep/mscep.dll**
 
 ### <a name="next-steps"></a>Volgende stappen
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](Configure-Intune-certificate-profiles.md).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
