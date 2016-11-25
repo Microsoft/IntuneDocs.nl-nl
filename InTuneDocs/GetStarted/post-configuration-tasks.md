@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 1/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7a4f1af9843cba6fa7b7325d0a678dd445cc1000
 
 
 ---
 
-# Taken na configuratie
+# <a name="post-configuration-tasks"></a>Taken na configuratie
 Nadat u de initiële configuratiestappen voor een betaald Intune-abonnement hebt voltooid, kunt u overwegen aanvullende functionaliteit voor het beheer van mobiele apparaten in te schakelen.
 
 -   **Exchange koppelen aan Intune:** voor gebruikers met een mobiel apparaat dat niet bij Intune is geregistreerd, kunt u Exchange ActiveSync-beheer inschakelen met behulp van een connector voor uw lokale Exchange en voor Exchange Online in Microsoft Office 365. Met de Exchange-connector maakt u verbinding met uw Exchange-implementatie en kunt u mobiele apparaten beheren via de Intune-beheerconsole. Zie [Mobile Device Management met Exchange ActiveSync en Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) voor meer informatie over de Exchange Connector.
@@ -31,6 +31,6 @@ Nadat u de initiële configuratiestappen voor een betaald Intune-abonnement hebt
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

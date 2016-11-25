@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e786cd33b5c963fa373d281e93721d0dd0f5456c
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# Windows-pc-beheermogelijkheden wanneer u de Intune-softwareclient gebruikt
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Windows-pc-beheermogelijkheden wanneer u de Intune-softwareclient gebruikt
 In de meeste gevallen registreert u uw apparaten bij Microsoft Intune, waarmee u over een groter aantal mogelijkheden beschikt. U kunt echter ook pc's beheren met behulp van de Intune-softwareclient, die u de volgende functies biedt:
 
 -   **[Beheer van software-updates](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: u kunt computers up-to-date houden en bepalen wanneer updates moeten worden toegepast.
@@ -37,7 +37,7 @@ In de meeste gevallen registreert u uw apparaten bij Microsoft Intune, waarmee u
 
 Intune biedt ondersteuning voor maximaal 7000 installaties van de softwareclient op Windows-apparaten.
 
-## Besturingssysteemvereisten
+## <a name="operating-system-requirements"></a>Besturingssysteemvereisten
 Intune kan computers beheren met de volgende Windows-versies (zowel 32-bits als 64-bits):
 
 
@@ -52,7 +52,7 @@ Intune kan computers beheren met de volgende Windows-versies (zowel 32-bits als 
 - **Windows 10**: de versies Pro, Education en Enterprise
 
 
-## Minimale hardwarevereisten
+## <a name="minimum-hardware-requirements"></a>Minimale hardwarevereisten
 Hier volgen de minimale hardwarevereisten voor het installeren van de Intune-softwareclient:
 
 |Vereiste|Details|
@@ -61,7 +61,7 @@ Hier volgen de minimale hardwarevereisten voor het installeren van de Intune-sof
 |Processor en geheugen|Raadpleeg de vereisten voor de processor en het RAM-geheugen voor het besturingssysteem van de computer.|
 |Schijfruimte|200 MB vrije schijfruimte voordat de clientsoftware wordt geïnstalleerd.|
 
-## Overige vereisten
+## <a name="further-requirements"></a>Overige vereisten
 Hier volgen de minimale softwarevereisten voor het installeren van de Intune-softwareclient:
 
 |Vereiste|Details|
@@ -70,11 +70,11 @@ Hier volgen de minimale softwarevereisten voor het installeren van de Intune-sof
 |Windows Installer 3.1|De computer moet minimaal Windows Installer 3.1 hebben.|
 |Niet-compatibele clientsoftware verwijderen|Voordat u de Intune-pc-clientsoftware installeert, moet u de volgende clientsoftware van die computer verwijderen:<br /><br />- Alle versies van Configuration Manager<br />- Alle versies van Microsoft Systems Management Server (SMS)|
 
-### Zie tevens
-[Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
+### <a name="see-also"></a>Zie tevens
+[Beheermogelijkheden voor ingeschreven apparaten in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
