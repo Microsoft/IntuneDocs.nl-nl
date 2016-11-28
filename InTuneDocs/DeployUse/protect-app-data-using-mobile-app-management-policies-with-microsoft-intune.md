@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
-ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: fc484be99d0956e707f96c0c285b2750754f746c
 
 
 ---
 
-# App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune
+# <a name="protect-app-data-using-mobile-app-management-policies-with-microsoft-intune"></a>App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune
 
-## Hoe u app-gegevens kunt beveiligen
+## <a name="how-you-can-protect-app-data"></a>Hoe u app-gegevens kunt beveiligen
 Uw werknemers gebruiken mobiele apparaten voor zowel privé- als werktaken.  U wilt er niet alleen voor zorgen dat uw werknemers productief kunnen zijn, maar u wilt ook bedoeld of onbedoeld gegevensverlies voorkomen.  Bovendien wilt u de mogelijkheid hebben om bedrijfsgegevens te beschermen die toegankelijk zijn via apparaten, zelfs als deze apparaten niet door u worden beheerd.
 
 U kunt beleid voor Mobile Application Management (MAM-beleid) van Intune gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens. Omdat Intune-MAM-beleid **onafhankelijk van een beheeroplossing voor mobiele apparaten (MDM)** werkt, kunt u MAM gebruiken om de gegevens van uw bedrijf te beveiligen met of zonder inschrijving van apparaten in een oplossing voor apparaatbeheer. Door **beleid op app-niveau** te implementeren, kunt u de toegang tot bedrijfsbronnen beperken en gegevens binnen de controlesfeer van uw IT-afdeling houden.
@@ -54,21 +54,21 @@ Het gebruik van MDM met MAM-beleid biedt extra voordelen en bedrijven kunnen MAM
 - **MAM-beleid zorgt ervoor dat de app-laag goed wordt beveiligd**. U kunt bijvoorbeeld een pincode vereisen voor het openen van een werkgerelateerde app, of voor het uitwisselen van gegevens tussen apps, of u kunt voorkomen dat gegevens van bedrijfsapps naar een persoonlijke opslaglocatie worden opgeslagen.
 
 
-### MAM-beleid wordt momenteel ondersteund op:
+### <a name="mam-polices-are-currently-supported-on"></a>MAM-beleid wordt momenteel ondersteund op:
 -   iOS 8.1 of hoger
 
 -   Android 4 of hoger
 
 Windows-apparaten worden momenteel niet ondersteund.
-##  Hoe MAM-beleid app-gegevens beschermt
+##  <a name="how-mam-policies-protect-app-data"></a>Hoe MAM-beleid app-gegevens beschermt
 
-####  Apps zonder MAM-beleid:
+####  <a name="apps-without-mam-policies"></a>Apps zonder MAM-beleid:
 
 ![Afbeelding die laat zien dat gegevens vrij kunnen bewegen tussen apps wanneer er geen MAM-beleid is](../media/Apps_without_MAM_policies.png)
 
 Bedrijfsgegevens en persoonlijke gegevens kunnen met elkaar worden vermengd als er apps zonder beperkingen worden gebruikt.  Bedrijfsgegevens kunnen terechtkomen op locaties zoals persoonlijke opslag of kunnen worden overgebracht naar apps die buiten uw controlesfeer liggen, wat leidt tot gegevensverlies. De pijlen in het diagram geven onbeperkte verplaatsingen van gegevens tussen apps (bedrijfs-apps en persoonlijke app) en naar opslaglocaties aan.
 
-### Gegevensbeveiliging met MAM-beleid:
+### <a name="data-protection-with-mam-policies"></a>Gegevensbeveiliging met MAM-beleid:
 
 ![Afbeelding die laat zien hoe bedrijfsgegevens worden beveiligd als er MAM-beleid wordt toegepast ](../media/Apps_with_mobile_app_policies.png)
 
@@ -76,7 +76,7 @@ U kunt MAM-beleid gebruiken om te voorkomen dat bedrijfsgegevens worden opgeslag
 - Beleid voor gegevensverplaatsing zoals **Geen Opslaan als**, **Knippen, kopiëren en plakken beperken**.
 - Instellingen voor toegangsbeleid zoals **Eenvoudige pincode vereisen voor toegang**, **De uitvoering blokkeren van beheerde apps die worden uitgevoerd op apparaten waarop jailbreaking is uitgevoerd of die worden uitgevoerd als rootgebruiker**.
 
-### Gegevensbeveiliging met MAM-beleid op apparaten die worden beheerd door een MDM-oplossing:
+### <a name="data-protection-with-mam-policies-on-devices-managed-by-a-mdm-solution"></a>Gegevensbeveiliging met MAM-beleid op apparaten die worden beheerd door een MDM-oplossing:
 
 ![Afbeelding die laat zien hoe MAM-beleid werkt op BYOD-apparaten](../media/MAM_BYOD_November.png)
 
@@ -101,7 +101,7 @@ De MDM-oplossing:
 -   Het wist bedrijfsgegevens van apps zonder die apps van het apparaat te verwijderen
 
 
-### Het biedt gegevensbeveiliging met MAM-beleid voor apparaten die niet zijn ingeschreven
+### <a name="data-protection-with-mam-policies-for-devices-without-enrollment"></a>Het biedt gegevensbeveiliging met MAM-beleid voor apparaten die niet zijn ingeschreven
 
 ![Afbeelding die laat zien hoe MAM-beleid werkt op beheerde apparaten](../media/MAM_ManagedDevices_November.png)
 
@@ -117,7 +117,7 @@ Er zijn echter enkele beperkingen waar u rekening mee moet houden, zoals:
 -   U kunt geen Wi-Fi- en VPN-instellingen van het bedrijf op deze apparaten inrichten.
 
 
-## Meerdere identiteiten
+## <a name="multi-identity"></a>Meerdere identiteiten
 
 Met apps die ondersteuning bieden voor meerdere identiteiten, kunt u verschillende accounts gebruiken, zakelijk en persoonlijk, om toegang te krijgen tot de dezelfde apps terwijl MAM-beleid wordt toegepast wanneer de apps worden gebruikt in zakelijke context.  
 
@@ -125,13 +125,13 @@ Wanneer de eindgebruiker de OneDrive-app start vanaf een werkaccount, kan hij de
 
 Alle mobiele apps van Office ondersteunen meerdere identiteiten.
 
-##  Volgende stappen
-[Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps (Mobile App Management)](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+##  <a name="next-steps"></a>Volgende stappen
+[Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Beleid voor Mobile App Management maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

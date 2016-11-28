@@ -14,8 +14,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
@@ -45,21 +45,20 @@ Het Microsoft Intune Center wordt geïnstalleerd op alle beheerde computers. U k
 
 |Beleidsinstelling|Details|
 |------------------|--------------------|
-|**Naam**|De naam van de beheerder die de computer beheert.<br /><br />Maximale lengte: 40 tekens|
-|**Telefoonnummer**|Het telefoonnummer van de beheerder die de computer beheert.<br /><br />Maximale lengte: 20 tekens|
-|**E-mailadres**|Het e-mailadres van de beheerder die de computer beheert.<br /><br />Maximale lengte: 40 tekens|
-|**Websitenaam**|De naam van uw ondersteuningswebsite voor gebruikers.<br /><br />Maximale lengte: 40 tekens|
-|**Website-URL**|De URL van uw ondersteuningswebsite.<br /><br />Maximale lengte: 150 tekens|
-|**Opmerkingen**|Een opmerking die wordt weergegeven voor gebruikers.<br /><br />Maximale lengte: 120 tekens|
+|**Naam**|De naam van de beheerder die de computer beheert.<br />Maximale lengte: 40 tekens|
+|**Telefoonnummer**|Het telefoonnummer van de beheerder die de computer beheert.<br />Maximale lengte: 20 tekens|
+|**E-mailadres**|Het e-mailadres van de beheerder die de computer beheert.<br />Maximale lengte: 40 tekens|
+|**Websitenaam**|De naam van uw ondersteuningswebsite voor gebruikers.<br />>Maximale lengte: 40 tekens|
+|**Website-URL**|De URL van uw ondersteuningswebsite.<br />Maximale lengte: 150 tekens|
+|**Opmerkingen**|Een opmerking die wordt weergegeven voor gebruikers.<br />Maximale lengte: 120 tekens|
 
-## <a name="software-updates-settings"></a>Instellingen voor software-updates
-Gebruik beleidsregels om de instellingen te configureren die beheerde computers gebruiken voor het controleren op en downloaden van software-updates van Microsoft en derden. Deze updates omvatten geen upgrades van besturingssystemen (dat wil zeggen een upgrade van Windows 7 naar Windows 10 of een upgrade van een Windows 10-versie naar een nieuwere versie). Zie voor meer informatie [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Zie de volgende bronnen voor meer informatie over beleidsregels en instellingen die u voor Windows-pc's kunt configureren:
 
-### <a name="endpoint-protection-settings"></a>Instellingen voor Endpoint Protection
-Gebruik beleidsregels voor het configureren van instellingen voor Endpoint Protection die u vervolgens implementeert op beheerde computers. Dit omvat scanschema's, te ondernemen acties wanneer schadelijke software wordt gedetecteerd, en meer. Zie [Help Windows-pc's beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.
+- [Windows-computers up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - op basis van deze beleidsregels controleren beheerde computers op software-updates van Microsoft en derden en worden de updates gedownload. Dit geldt niet voor updates van het besturingssysteem (bijvoorbeeld een upgrade van Windows 7 naar Windows 10 of een upgrade van een Windows 10-versie naar een nieuwere versie).
 
-## <a name="windows-firewall-settings"></a>Windows Firewall-instellingen
-Beleidsregels vereenvoudigen het beheer van Windows Firewall-instellingen op beheerde computers. Zie [Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) voor meer informatie.
+- [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - deze instellingen omvatten onder meer scanschema's en te ondernemen acties wanneer schadelijke software wordt gedetecteerd.
+
+- [Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - deze beleidsregels vereenvoudigen het beheer van Windows Firewall-instellingen op beheerde computers.
 
 ## <a name="view-hardware-and-software-inventory"></a>Hardware- en software-inventarisatie weergeven
 Intune verzamelt gedetailleerde informatie over de hardware en software van beheerde computers. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
@@ -144,7 +143,7 @@ Wanneer u een computer buiten gebruik stelt:
 
     Als de client niet kan worden verwijderd, leest u [Problemen met Endpoint Protection oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer informatie.
 
-## <a name="manage-userdevice-linking"></a>Gebruiker/apparaatkoppeling beheren
+## <a name="manage-user-device-linking"></a>Gebruiker/apparaatkoppeling beheren
 Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aan een computer koppelen. U kunt een gebruiker aan meerdere computers koppelen, maar elke computer kan aan slechts één gebruiker worden gekoppeld. Gebruikers worden automatisch gekoppeld aan computers die ze registreren bij Intune met behulp van de bedrijfsportal.
 
 ### <a name="to-link-a-user-to-a-computer"></a>Een gebruiker aan een computer koppelen
@@ -217,6 +216,6 @@ Kies in het menu **Acties** van het venster **TeamViewer** de optie **Sessie be�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

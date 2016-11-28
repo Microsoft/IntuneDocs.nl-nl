@@ -13,12 +13,12 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
-ms.openlocfilehash: f93dc1d57e87b17bb949de8ad5476dd8abc364d0
+ms.sourcegitcommit: df77e1473532399056c3e0c1b4c4db3c7b6ba995
+ms.openlocfilehash: 0fc24f1c93cfcdb86c2a66c9a027b4ed9c516dab
 
 
 ---
-# Wat u kunt verwachten wanneer u een app met MAM CA gebruikt
+# <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>Wat u kunt verwachten wanneer u een app met MAM CA gebruikt
 Met MAM CA wordt de identiteit van de goedgekeurde toepassing geverifieerd via een broker-app die geïnstalleerd moet zijn op het apparaat:
 *  Voor **iOS** is de **Azure Authenticator-app** de broker-app.
 * Voor **Android** is de **Intune-bedrijfsportalapp** de broker-app. 
@@ -32,8 +32,16 @@ Hier volgt een lijst met eigenschappen die rechtstreeks zijn afgeleid van het ap
 * deviceOSVersion
 * displayName
 
+## <a name="to-remove-a-device-from-azure-ad-registration"></a>Een apparaat verwijderen uit Azure AD-registratie.
+U kunt de apparaatregistratie verwijderen via de Azure AD-beheerconsole. Doorgaans doet de IT-beheerder dit.  De apparaatregistratie kan echter ook door de eindgebruiker op het apparaat zelf worden verwijderd.
 
-## MAM CA met voorwaardelijke toegang op basis van apparaatcompatibiliteit  
+* **Azure AD-beheerconsole**: verwijder in de Azure AD-beheerconsole** het gewenste apparaat.
+* **iOS-apparaat**: open de Azure Authenticator-app, veeg links in het account en kies Registratie ongedaan maken.  
+* **Android-apparaat**: verwijder de bedrijfsportal-app of verwijder het account uit de **Systeeminstellingen**.
+
+
+
+## <a name="mam-ca-with-conditional-access-based-on-device-compliance"></a>MAM CA met voorwaardelijke toegang op basis van apparaatcompatibiliteit  
 
 U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) configureren in de [Intune-beheerdersconsole](https://manage.microsoft.com) of de [Azure AD Premium-beheerconsole] (https://manage.windowsazure.com). Voor Device CA mogen gebruikers alleen verbinding maken met Exchange Online via door Intune beheerde apparaten die compatibel zijn met het Intune-apparaatcompatibiliteitsbeleid of pc's die lid zijn van een domein.  Als een gebruiker tot een of meer beveiligingsgroepen behoort die zijn geconfigureerd voor MAM CA- en Device CA-beleid, moet de gebruiker aan een van deze twee vereisten voldoen:
 * De app die wordt gebruikt om toegang tot de service te verkrijgen, is een mobiele app die wordt ondersteund door MAM CA en op het apparaat waarop de app wordt uitgevoerd, is **iOS verificator (voor iOS-apparaten)** of de **bedrijfsportalapp (voor Android-apparaten)** geïnstalleerd.
@@ -44,17 +52,17 @@ U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-a
 
 
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 [Een Exchange Online-beleid voor MAM-apps maken](mam-ca-for-exchange-online.md)
 
 [Apps die geen gebruik maken van moderne verificatie blokkeren](block-apps-with-no-modern-authentication.md)
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 
 [App-gegevens beveiligen met MAM-beleid](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

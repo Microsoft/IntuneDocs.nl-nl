@@ -4,6 +4,7 @@ description:
 keywords: 
 author: Msmbaldwin
 manager: jeffgilb
+ms.author: oydang
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8bc2f6e8dcf9d0ac3e7fccec792c86ff1fd4131c
-ms.openlocfilehash: 15be877edbdeb827a4318af226ea8cde8c8e46f4
+ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
+ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
 
 
 ---
@@ -82,10 +83,18 @@ U hebt het volgende nodig als u de SDK voor de Intune-app wilt integreren in uw 
 
 * **[Ontwikkelaarshandleiding voor Intune App SDK voor Android](intune-app-sdk-android.md)**: in dit document wordt u stapsgewijs begeleid bij het geschikt maken van uw mobiele Android-app voor de Intune App SDK.
 
-De documentatie voor het Intune App SDK Xamarin-onderdeel en de Intune App SDK Cordova-invoegtoepassing is beschikbaar in de respectieve GitHub-opslagplaatsen.
+Als u Cordova-apps wilt bouwen met de Intune App SDK Cordova-invoegtoepassing, hebt u het volgende nodig:
+
+* **[Handleiding Intune App SDK Cordova-invoegtoepassing](intune-app-sdk-cordova)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Cordova voor het beheer van mobiele toepassingen met Intune.
+
+Als u Xamarin-apps wilt bouwen met het Intune App SDK Xamarin-onderdeel, hebt u het volgende nodig:
+
+* **[Handleiding Intune App SDK Xamarin-onderdeel](intune-app-sdk-xamarin)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Xamarin voor het beheer van mobiele toepassingen met Intune.
 
 
-## <a name="set-up-telemetry-for-your-app"></a>Telemetrie instellen voor uw app
+
+
+## <a name="configure-telemetry-for-your-app"></a>Telemetrie configureren voor uw app
 
 Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
@@ -95,7 +104,7 @@ Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
 * **SDK voor Intune-app voor Android**: telemetriegegevens worden niet geregistreerd via de SDK.
 
-## <a name="test-your-mamenabled-app-with-microsoft-intune"></a>Uw app met MAM-functionaliteit testen met Microsoft Intune
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Uw app met MAM-functionaliteit testen met Microsoft Intune
 
 Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integreren met de Intune App SDK, moet u ervoor zorgen dat alle beleidsregels voor app-beheer zijn ingeschakeld en correct werken voor de gebruiker en de IT-beheerder. Als u uw geïntegreerde app wilt testen, gaat u als volgt te werk:
 

@@ -14,13 +14,13 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
 
 
 ---
 
-# <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>iOS-apparaten in bedrijfseigendom met het Device Enrollment Program inschrijven
+# <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>iOS-apparaten in bedrijfseigendom met het Device Enrollment Program inschrijven
 Microsoft Intune kan 'draadloos' een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program zijn aangeschaft. Het inschrijvingspakket kan configuratieassistentopties voor het apparaat bevatten. Gebruikers kunnen de inschrijving niet opheffen wanneer de apparaten zijn ingeschreven via DEP.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Apple DEP-beheer voor iOS-apparaten met Microsoft Intune
@@ -56,7 +56,7 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
     Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
 
     Geef **algemene** gegevens op zoals **Naam** en **Beschrijving** en geef aan of apparaten die aan het profiel zijn toegewezen, gebruikersaffiniteit hebben of deel uitmaken van een groep.
-      - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie voordat toegang tot gegevens en e-mail van het bedrijf kan worden verleend. **Gebruikersaffiniteit** moet worden ingesteld voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren).</br> **Opmerking:** Meervoudige authenticatie kan niet door DEP-apparaten met gebruikersaffiniteit worden ondersteund.
+      - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie voordat toegang tot gegevens en e-mail van het bedrijf kan worden verleend. **Gebruikersaffiniteit** moet worden ingesteld voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren). Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. 
 
       > [!NOTE]
       > Voor DEP met gebruikersaffiniteit moet WS-Trust 1.3 gebruikersnaam/mixed-eindpunt zijn ingeschakeld om een gebruikerstoken aan te vragen.
@@ -112,10 +112,10 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
 In november wordt apparaatgroepbeheer verplaatst naar Azure Active Directory. Na de overgang naar Azure Active Directory-groepen wordt groepstoewijzing niet weergegeven in de opties voor het **registratieprofiel voor bedrijfsapparaten**. Omdat deze wijziging in een aantal maanden wordt geïmplementeerd, ziet u de wijziging mogelijk niet meteen. Na de overgang naar de nieuwe portal kunnen er dynamische apparaatgroepstoewijzingen worden gedefinieerd op basis van de namen van de inschrijvingsprofielen voor bedrijven. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep al automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd. [Meer informatie over Azure Active Directory-groepen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Zie tevens
-[Vereisten voor de registratie van apparaten](prerequisites-for-enrollment.md)
+[Vereisten voor het inschrijven van apparaten](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

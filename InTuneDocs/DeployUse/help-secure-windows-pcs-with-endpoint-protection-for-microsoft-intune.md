@@ -2,8 +2,8 @@
 title: Endpoint Protection voor Windows-pc&quot;s| Microsoft Intune
 description: Beveilig uw beheerde computers met Endpoint Protection voor realtime-beveiliging tegen malwarebedreigingen.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 00409205a78d6f8fca353bf70d4f8d3f91e1e8d2
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
 
 
 ---
 
-# Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune
 Microsoft Intune kunt u uw beheerde computers met Endpoint Protection beschermen. Dit biedt realtime-beveiliging tegen malwarebedreigingen, houdt malwaredefinities bijgewerkt en scant computers automatisch. Ook biedt Endpoint Protection hulpmiddelen waarmee u malware-aanvallen kunt beheren en controleren.
 
 Zie [De Windows-pc-client installeren met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de Intune-client nog niet op uw computers hebt geïnstalleerd.
 
 Gebruik de informatie in de volgende rubrieken voor hulp bij het configureren, implementeren en controleren van Endpoint Protection.
 
-## Kiezen wanneer u Endpoint Protection wilt gebruiken
+## <a name="choose-when-to-use-endpoint-protection"></a>Kiezen wanneer u Endpoint Protection wilt gebruiken
 Als IT-beheerder is een van uw eerste prioriteiten de computers die u beheert vrij te houden van malware en virussen staat. Voordat u Intune op Windows-pc’s in uw organisatie implementeert, moet u bepalen hoe u uw computers beveiligt door een van de volgende opties te selecteren en de bijbehorende beleidsinstellingen te configureren:
 
 |U wilt:|Endpoint Protection-beleidsinstellingen|Meer informatie|
@@ -50,7 +50,7 @@ Als u van uw huidige eindpuntbeveiligingstoepassing wilt overschakelen op Micros
 > [!NOTE]
 > Intune verwijdert eindpuntbeveiligingstoepassingen van derden niet automatisch.
 
-## Microsoft Intune Endpoint Protection configureren
+## <a name="configure-microsoft-intune-endpoint-protection"></a>Microsoft Intune Endpoint Protection configureren
 Gebruik de volgende stappen om u te helpen bij het configureren van Endpoint Protection voor Microsoft Intune.
 
 1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies **Beleid** > **Beleid toevoegen**.
@@ -63,7 +63,7 @@ U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u 
 
 U kunt het geïmplementeerde Endpoint Protection-beleid zien op de pagina **Alle beleidsregels** van de werkruimte **Beleid**.
 
-## Instellingen van Endpoint Protection-service opgeven
+## <a name="specify-endpoint-protection-service-settings"></a>Instellingen van Endpoint Protection-service opgeven
 
 |Beleidsinstelling|Details|
 |------------------|--------------------|
@@ -78,7 +78,7 @@ Als u de beleidswaarden voor **Endpoint Protection installeren** en **Endpoint P
 
   Met de realtime-beveiliging van Microsoft Security Essentials wordt u gewaarschuwd wanneer mogelijke bedreigingen, zoals virussen of spyware, zichzelf op uw pc proberen te installeren of uit te voeren. Wanneer dit gebeurt, ziet u een bericht in het systeemvak rechts in de taakbalk.
 
-### Instellingen voor realtime-beveiliging opgeven
+### <a name="specify-real-time-protection-settings"></a>Instellingen voor realtime-beveiliging opgeven
 
 |Beleidsinstelling|Details|
 |------------------|--------------------|
@@ -87,11 +87,11 @@ Als u de beleidswaarden voor **Endpoint Protection installeren** en **Endpoint P
 |**Activiteit van bestanden en programma's op de computer bewaken**|Hiermee schakelt u in dat activiteiten van binnenkomende en uitgaande bestanden en van programma's op computers worden bewaakt. Met deze instelling kan Endpoint Protection bewaken wanneer bestanden en programma's worden gestart en wordt u geïnformeerd over alle acties die ze uitvoeren of acties die worden uitgevoerd op deze bestanden en programma's.<br /><br />Aanbevolen waarde: **Ja**|
 |**Bewaakte bestanden**|Hiermee kunt u instellen dat alleen binnenkomende, alleen uitgaande of alle bestanden moeten worden bewaakt.<br /><br />Aanbevolen waarde: **Alle bestanden bewaken**|
 |**Gedragscontrole inschakelen**|Hiermee kan Microsoft Intune Endpoint Protection controleren op bepaalde patronen van verdachte activiteiten op clientcomputers.<br /><br />Aanbevolen waarde: **Ja**|
-|**Systeem voor netwerkinspectie inschakelen**|Hiermee schakelt u het systeem voor netwerkinspectie (NIS) in op clientcomputers. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen van het [Microsoft Centrum voor beveiliging tegen schadelijke software](http://go.microsoft.com/fwlink/?LinkId=234249) om schadelijk netwerkverkeer te helpen detecteren en blokkeren.<br /><br />Aanbevolen waarde: **Ja**|
+|**Netwerkinspectiesysteem inschakelen**|Hiermee schakelt u het systeem voor netwerkinspectie (NIS) in op clientcomputers. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen van het [Microsoft Centrum voor beveiliging tegen schadelijke software](http://go.microsoft.com/fwlink/?LinkId=234249) om schadelijk netwerkverkeer te helpen detecteren en blokkeren.<br /><br />Aanbevolen waarde: **Ja**|
 
   ![Realtime-instellingen voor Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
-### Instellingen voor scanschema's opgeven
+### <a name="specify-scan-schedule-settings"></a>Instellingen voor scanschema's opgeven
 
 |Beleidsinstelling|Meer informatie|
 |------------------|--------------------|
@@ -100,7 +100,7 @@ Als u de beleidswaarden voor **Endpoint Protection installeren** en **Endpoint P
 |**Een volledige scan plannen**|Hiermee configureert u een volledige scan van alle bestanden en bronnen op de lokale harde schijven van computers. Deze scan kan even duren en kan van invloed zijn op de prestaties van de computer (de duur is afhankelijk van het aantal bestanden en bronnen dat wordt gescand).<br /><br />Aanbevolen waarde: **Nee**|
 |**Een volledige scan uitvoeren als u twee opeenvolgende volledige scans hebt gemist**|Hiermee configureert u Endpoint Protection zo dat er op computers automatisch een volledige scan wordt uitgevoerd als er twee opeenvolgende scans zijn gemist.<br /><br />Aanbevolen waarde: Niet geconfigureerd|
 
-### Instellingen voor scanopties opgeven
+### <a name="specify-scan-options-settings"></a>Instellingen voor scanopties opgeven
 
 |Beleidsinstelling|Details|
 |------------------|--------------------|
@@ -110,37 +110,37 @@ Als u de beleidswaarden voor **Endpoint Protection installeren** en **Endpoint P
 |**Controleren op de meest recente malware-definities voordat een scan wordt gestart**|Ingesteld op **Ja** om Endpoint Protection automatisch te laten controleren op de meest recente malwaredefinities voordat een scan op computers wordt gestart.<br /><br />Aanbevolen waarde: **Ja**|
 |**Archiefbestanden scannen**|Ingesteld op **Ja** om Endpoint Protection zo te configureren dat er op schadelijke software in archiefbestanden (zoals .zip- of .cab-bestanden) op computers wordt gecontroleerd.<br /><br />Aanbevolen waarde: **Nee**|
 |**E-mailberichten scannen**|Ingesteld op **Ja** om Endpoint Protection zo te configureren dat binnenkomende e-mailberichten worden gescand als deze op computers binnenkomen.<br /><br />Aanbevolen waarde: **Ja**|
-|**Bestanden scannen die worden geopend vanuit gedeelde netwerkmappen**|Ingesteld op **Ja** om Endpoint Protection zo te configureren dat de bestanden worden gecontroleerd die worden geopend vanuit gedeelde mappen op het netwerk. Dit zijn meestal bestanden die toegankelijk zijn via een UNC-pad (Universal Naming Convention). Het inschakelen van deze functie kan problemen veroorzaken voor gebruikers die alleen-lezen toegang hebben, omdat ze geen schadelijke software kunnen verwijderen.<br /><br />Aanbevolen waarde: **Nee**|
+|**Bestanden scannen die zijn geopend vanuit gedeelde mappen op het netwerk**|Ingesteld op **Ja** om Endpoint Protection zo te configureren dat de bestanden worden gecontroleerd die worden geopend vanuit gedeelde mappen op het netwerk. Dit zijn meestal bestanden die toegankelijk zijn via een UNC-pad (Universal Naming Convention). Het inschakelen van deze functie kan problemen veroorzaken voor gebruikers die alleen-lezen toegang hebben, omdat ze geen schadelijke software kunnen verwijderen.<br /><br />Aanbevolen waarde: **Nee**|
 |**Toegewezen netwerkstations scannen**|Ingesteld op **Ja** om Endpoint Protection zo te configureren dat bestanden op toegewezen netwerkstations worden gescand. Het inschakelen van deze functie kan problemen veroorzaken voor gebruikers die alleen-lezen toegang hebben, omdat ze geen schadelijke software kunnen verwijderen.<br /><br />Aanbevolen waarde: **Nee**|
 |**Verwisselbare stations scannen**|Ingesteld op **Ja** om Endpoint Protection zo te configureren dat er op schadelijke en ongewenste software op verwisselbare stations (bijvoorbeeld USB-stations) wordt gescand wanneer u een volledige scan op computers uitvoert.<br /><br />Aanbevolen waarde: **Ja**|
 |**CPU-verbruik tijdens een scan beperken**|Hiermee stelt u het maximale percentage CPU-verbruik in dat kan worden gebruikt tijdens geplande scans op computers. U kunt deze waarde instellen van 1 tot 100 procent.<br /><br />Aanbevolen waarde: **50%**|
 
-### Instellingen voor standaardacties kiezen
+### <a name="choose-default-actions-settings"></a>Instellingen voor standaardacties kiezen
 
 Met de instelling **Kiezen hoe Endpoint Protection omgaat met schadelijke software met de volgende waarschuwingsniveaus** geeft u de standaardactie op die door Endpoint Protection moet worden uitgevoerd wanneer er malware van verschillende waarschuwingsniveaus wordt gedetecteerd. Voor elk waarschuwingsniveau kunt u de malware verwijderen of in quarantaine plaatsen of de actie uitvoeren die door Microsoft wordt aanbevolen.
 
 Aanbevolen waarde: **Aanbevolen actie**, waarmee Endpoint Protection actie kan aanbevelen.   
 
-### Beslissen of u de instellingen voor uitgesloten bestanden en mappen kiest
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Beslissen of u de instellingen voor uitgesloten bestanden en mappen kiest
 
 Met de instelling **Bestanden en mappen die moeten worden uitgesloten bij het scannen en bij realtime-beveiliging** worden specifieke bestanden of mappen uitgesloten wanneer er een scan wordt uitgevoerd of wanneer realtime-beveiliging op computers wordt gebruikt.
 
-### Beslissen of u de instellingen voor uitgesloten processen kiest
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>Beslissen of u de instellingen voor uitgesloten processen kiest
 
 Met de instelling **Processen die moeten worden uitgesloten bij het scannen of bij realtime-beveiliging** worden specifieke processen uitgesloten wanneer er een scan wordt uitgevoerd of wanneer realtime-beveiliging op computers wordt gebruikt. U kunt alleen bestanden met de volgende extensies uitsluiten: **.exe**, **.com** en **.scr**.
 
-### Beslissen of u de instellingen voor uitgesloten bestandstypen kiest
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>Beslissen of u de instellingen voor uitgesloten bestandstypen kiest
 
 Met de instelling **Bestandsextensies die uitgesloten moeten worden bij het scannen en bij de realtime-beveiliging** worden specifieke bestandsnaamextensies uitgesloten wanneer er een scan wordt uitgevoerd of wanneer realtime-beveiliging op computers wordt gebruikt.
 
-### Instellingen voor Microsoft Active Protection Service opgeven
+### <a name="specify-microsoft-active-protection-service-settings"></a>Instellingen voor Microsoft Active Protection Service opgeven
 Microsoft Active Protection Service is een onlinecommunity die helpt bepalen hoe u op mogelijke bedreigingen reageert. De community helpt ook de verspreiding van nieuwe malware-infecties te stoppen. U kunt zich **aanmelden bij Microsoft Active Protection Service** door **Ja** te selecteren en vervolgens uw **lidmaatschapsniveau** op te geven:
   - **Basis**: verzendt basisinformatie over de gedetecteerde malware naar Microsoft. Dit omvat waar de software van afkomstig is, de acties die u toepast of die Endpoint Protection automatisch toepast en of de acties met succes zijn uitgevoerd.
   - **Geavanceerd**: verzendt meer informatie over malware, spyware en mogelijk ongewenste software naar Microsoft. Dit omvat informatie over de locatie van de software, bestandsnamen, hoe de software werkt en hoe deze uw computer heeft beïnvloed.
 
 U kunt ook **Dynamische definities ontvangen, gebaseerd op rapporten van Microsoft Active Protection Service**.
 
-## Beheertaken voor Endpoint Protection kiezen
+## <a name="choose-management-tasks-for-endpoint-protection"></a>Beheertaken voor Endpoint Protection kiezen
 De volgende taken helpen u bij het uitvoeren van verschillende beheertaken op beheerde computers met Endpoint Protection.
  - Malware-definities bijwerken
   - Intune-console: selecteer in de werkruimte **Groepen** de computers die u wilt bijwerken. Kies **Externe taken** &gt; **Malware-definities bijwerken**.
@@ -151,7 +151,7 @@ De volgende taken helpen u bij het uitvoeren van verschillende beheertaken op be
 
 U kunt de status van een externe taak weergeven door op de koppeling **Externe taken** in de rechterbenedenhoek van de Intune-console te klikken. In het dialoogvenster **Status externe taak** staan de huidige externe taken, de taakstatus, de apparaatnaam en eventuele gerapporteerde fouten. Hier vindt u ook een koppeling naar informatie over probleemoplossing als dat nodig is.
 
-## Endpoint Protection controleren
+## <a name="monitor-endpoint-protection"></a>Endpoint Protection controleren
 U kunt de status van schadelijke software op uw computers controleren met behulp van de werkruimte **Beveiliging** van de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/). Deze werkruimte bevat twee pagina's:
  - **Overzicht Endpoint Protection**: bevat belangrijke zaken als koppelingen waarop u kunt klikken voor meer informatie. Dit kan gaan over:
   - **Malware-exemplaren die moeten worden opgevolgd**: klik op de koppeling voor een overzicht van malwareproblemen, inclusief de actie die moet worden ondernomen om het probleem te verhelpen. U kunt deze lijst nader bestuderen om te zien welke computers zijn beïnvloed.
@@ -167,7 +167,7 @@ U kunt de status van schadelijke software op uw computers controleren met behulp
 
   ![Endpoint Protection controleren](./media/pol-sa-ep-monitor.png)
 
-### Recente detectiepaden voor malware op computers weergeven
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Recente detectiepaden voor malware op computers weergeven
 Met Intune kunt u de paden van maximaal tien onlangs gedetecteerde exemplaren van malware op een apparaat weergeven. De optie **Recent detectiepad** is standaard uitgeschakeld. Deze weergave inschakelen:
 
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** > **Alle apparaten** > **Malware**.
@@ -176,7 +176,7 @@ Met Intune kunt u de paden van maximaal tien onlangs gedetecteerde exemplaren va
 
 3.  Selecteer in de lijst het selectievakje **Recente detectiepaden**. De kolom **Recente detectiepaden** wordt weergegeven met daarin de tien onlangs op het apparaat gedetecteerde malware-exemplaren.
 
-## Een malwarescan uitvoeren of de malwaredefinities op een computer bijwerken
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Een malwarescan uitvoeren of de malwaredefinities op een computer bijwerken
 U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Protection of Windows Defender op een extern beheerde pc waarop de Intune-client is geïnstalleerd.
 
 1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Overzicht** > **Alle apparaten** > **Alle computers** en selecteer de computer die u wilt targeten.
@@ -186,14 +186,14 @@ U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Pro
 
 
 
-## Meer hulp nodig?
+## <a name="need-more-help"></a>Meer hulp nodig?
 Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer hulp en ondersteuning.
 
-### Zie ook
+### <a name="see-also"></a>Zie ook
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

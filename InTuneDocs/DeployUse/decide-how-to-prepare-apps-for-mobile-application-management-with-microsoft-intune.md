@@ -3,6 +3,7 @@ title: Apps geschikt maken voor beheer van mobiele apps | Microsoft Intune
 description: Aan de hand van de informatie in dit onderwerp kunt u beslissen wanneer u het hulpmiddel App Wrapping en de App SDK moet gebruiken om uw aangepaste LOB-apps in te schakelen voor gebruik van de beleidsregels voor het beheren van mobiele apps.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,46 +14,50 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
-ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: e145baf0f7366f331e8d1df994a8fa40ec693227
 
 
 ---
 
-# Bepalen hoe u apps met Microsoft Intune voorbereidt op Mobile Application Management
+# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune
 U kunt uw apps gebruik laten maken van Mobile Application Management-beleid (MAM) door de Intune App Wrapping Tool of de Intune App SDK te gebruiken. In deze informatie wordt uitgelegd hoe en wanneer u deze twee methoden gebruikt.
 
-## Intune App Wrapping Tool
-De App Wrapping Tool wordt hoofdzakelijk gebruikt voor interne LOB-apps (Line-Of-Business-apps). Het hulpprogramma is een opdrachtregeltoepassing waarmee een wrapper rond de app wordt gemaakt, zodat de app vervolgens kan worden beheerd door Intune Mobile Application Management-beleid. Om het hulpprogramma te kunnen gebruiken, hebt u de broncode niet nodig, maar wel ondertekeningsreferenties.  Zie het [Intune-blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) voor meer informatie over ondertekeningsreferenties. Zie [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) voor documentatie over de App Wrapping Tool.
+## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
+De App Wrapping Tool wordt hoofdzakelijk gebruikt voor interne LOB-apps (Line-Of-Business-apps). Het hulpprogramma is een opdrachtregeltoepassing waarmee een wrapper rond de app wordt gemaakt, zodat de app vervolgens kan worden beheerd door Intune MAM-beleid.
 
-De App Wrapping Tool biedt geen ondersteuning voor apps in de App Store of Play Store of voor functies waarvoor ontwikkelingstijdintegratie is vereist (zie de volgende functievergelijkingstabel).
+Om het hulpprogramma te kunnen gebruiken, hebt u de broncode niet nodig, maar wel ondertekeningsreferenties.  Zie het [Intune-blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) voor meer informatie over ondertekeningsreferenties. Zie [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) voor documentatie over de App Wrapping Tool.
+
+De App Wrapping Tool biedt **geen** ondersteuning voor apps in de Apple App Store of Google Play Store. De tool biedt ook geen ondersteuning voor bepaalde functies waarvoor ontwikkelaarsintegratie vereist is (zie de volgende functievergelijkingstabel).
 
 U moet de App Wrapping Tool in plaats van de SDK gebruiken als de app al is geschreven of als de broncode niet beschikbaar is.
 
-**De App Wrapping Tool voor MAM op apparaten die niet bij Intune worden geregistreerd, wordt momenteel in de openbare preview-versie ondersteund. Zie voor meer informatie het onderwerp [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) (LOB-apps beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune)**.
+Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) voor meer informatie over de App Wrapping Tool voor MAM op apparaten die niet zijn ingeschreven bij Intune.
 
-### Ondersteunde platformen
+### <a name="supported-app-development-platforms"></a>Ondersteunde platforms voor app-ontwikkeling
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Yes|Yes|
+|**iOS** |Ja|Yes|
 |**Android**| Nee |Yes|
-## Intune App SDK
-De App SDK is hoofdzakelijk ontworpen voor klanten die apps in de App Store of Play Store hebben en hun apps willen beheren met Intune. Elke app kan echter profiteren van integratie van de SDK, zelfs als het een LOB-app is.
+
+## <a name="intune-app-sdk"></a>Intune App SDK
+De App SDK is hoofdzakelijk ontworpen voor klanten die apps in de Apple App Store of Google Play Store hebben en hun apps willen beheren met Intune. Elke app kan echter profiteren van integratie van de SDK, zelfs als het een Line-Of-Business app is.
 
 Zie [Overzicht](/intune/develop/intune-app-sdk) voor meer informatie over de SDK. Zie [Aan de slag met de Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started) om aan de slag te gaan met de SDK.
 
-### Ondersteunde platformen
+### <a name="supported-app-development-platforms"></a>Ondersteunde platforms voor app-ontwikkeling
+
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Ja, gebruik het Xamarin-onderdeel van de Intune App SDK|Ja, gebruik de Cordova-invoegtoepassing van de Intune App SDK|
-|**Android**| Ja, gebruik het Xamarin-onderdeel van de Intune App SDK|Ja, gebruik de Cordova-invoegtoepassing van de Intune App SDK|
+|**iOS**|Ja, gebruik het Intune App SDK Xamarin-onderdeel.|Ja, gebruik de Intune App SDK Cordova-invoegtoepassing.|
+|**Android**| Ja, gebruik het Intune App SDK Xamarin-onderdeel.|Ja, gebruik de Intune App SDK Cordova-invoegtoepassing.|
 
-## Vergelijking van functies
+## <a name="feature-comparison"></a>Vergelijking van functies
 In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de App Wrapping Tool.
 
 > [!NOTE]
-> De App Wrapping Tool kan worden gebruikt met Intune Standalone of Intune met Configuration Manager.
+> De App Wrapping Tool kan worden gebruikt met de zelfstandige versie van Intune of met Intune met Configuration Manager.
 
 |Onderdeel|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
@@ -75,14 +80,15 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Selectief wissen <br></br>**Opmerking:** bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen |X||
 |Ondersteuning voor meerdere identiteiten|X||
-### Zie tevens
+|Ondersteuning van MAM zonder apparaatinschrijving|X|X|
+### <a name="see-also"></a>Zie tevens
 
 [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
-[Gebruik de SDK om apps geschikt te maken voor Mobile Application Management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
+[De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

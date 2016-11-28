@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 02aed5f84340f7d64681e27f1e4312f7f927a6c1
 
 
 ---
 
-# Kiezen hoe u mobiele apparaten registreert
+# <a name="choose-how-to-enroll-mobile-devices"></a>Kiezen hoe u mobiele apparaten registreert
 
 Registratie van mobiele apparaten is het proces waarmee u smartphones, tablets en pc's onder beheer van Microsoft Intune brengt. Als beheerder moet u bepalen hoe u op basis van het volgende uw apparaten het beste kunt registreren:
 
@@ -29,7 +29,7 @@ Registratie van mobiele apparaten is het proces waarmee u smartphones, tablets e
 
 Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke registratiemethode u het best kunt gebruiken voor de apparaten die u beheert.
 
-## **Gebruiken werknemers hun eigen apparaten of worden de apparaten geleverd door uw organisatie?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**Gebruiken werknemers hun eigen apparaten of worden de apparaten geleverd door uw organisatie?**
 
   - **Eigen apparaten van gebruikers**: BYOD-registratie (Bring Your Own Device): gebruikers kunnen de Intune-bedrijfsportal-app op hun apparaten installeren en deze vervolgens registreren, zodat ze toegang krijgen tot bedrijfsresources zoals e-mail, bedrijfsapps, bedrijfsgegevens en ondersteuning.  
 
@@ -38,12 +38,12 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 > [!div class="button"]
 [BYOD-inschrijving >](#what-byod-devices-can-your-users-enroll)   [COD-inschrijving >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Welke BYOD-apparaten kunnen uw gebruikers inschrijven?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Welke BYOD-apparaten kunnen uw gebruikers inschrijven?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS en Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile en Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows-pc’s](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **Worden de bedrijfseigen apparaten gedeeld of hebben deze apparaten toegewezen gebruikers?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**Worden de bedrijfseigen apparaten gedeeld of hebben deze apparaten toegewezen gebruikers?**
 
 - **Gedeelde bedrijfseigen apparaten**: deze apparaten hebben meerdere gebruikers en zijn doorgaans niet geconfigureerd voor toegang tot e-mail. Voorbeelden zijn onder meer kioskapparaten of de taakgerichte apparaten die beschikbaar zijn en die gebruikers na gebruik weer terugbrengen. De aanbevolen registratiemethode is afhankelijk van het platform van het apparaat.
 
@@ -53,12 +53,12 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 [Gedeeld >](#what-operating-system-are-your-shared-devices-running)   [Specifiek >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Welk besturingssysteem wordt uitgevoerd op uw gedeelde apparaten?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Welk besturingssysteem wordt uitgevoerd op uw gedeelde apparaten?**
 
   > [!div class="button"]
   [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Hoe beheert u uw gedeelde iOS-apparaten?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Hoe beheert u uw gedeelde iOS-apparaten?**
 
 - **Het Device Enrollment Program (DEP) van Apple**: u kunt voor iOS-apparaten die zijn aangeschaft of worden beheerd met DEP een registratieprofiel gebruiken. Wanneer gebruikers hun apparaat voor het eerst inschakelen, downloadt het apparaat het DEP-profiel en wordt het apparaat geregistreerd bij de profiel-DEP.
 
@@ -69,7 +69,7 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
   > [!div class="button"]
   [iOS DEP-inschrijving >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Directe iOS-inschrijving >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM-inschrijving >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-## **Hoe beheert u uw specifieke iOS-apparaten?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Hoe beheert u uw specifieke iOS-apparaten?**
 
 U kunt apparaten in bedrijfseigendom met toegewezen gebruikers op de volgende manieren registreren:
 
@@ -84,6 +84,6 @@ U kunt apparaten in bedrijfseigendom met toegewezen gebruikers op de volgende ma
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -14,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
 
 
 ---
 
 
-# <a name="enroll-corporateowned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Apparaten in bedrijfseigendom inschrijven met de apparaatinschrijvingsmanager in Microsoft Intune
-Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal Intune-account waarmee maximaal duizend apparaten kunnen worden geregistreerd. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten. Gebruikers kunnen bijvoorbeeld geen 'systeemeigen' e-mail-apps gebruiken.
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Apparaten in bedrijfseigendom inschrijven met de apparaatinschrijvingsmanager in Microsoft Intune
+Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal Intune-account waarmee maximaal duizend apparaten kunnen worden geregistreerd. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten. Gebruikers kunnen bijvoorbeeld geen 'systeemeigen' e-mail-apps gebruiken.
 
 U kunt bijvoorbeeld een DEM-gebruikersaccount voor een winkelmanager of supervisor toewijzen zodat zij het volgende kunnen doen:
 
@@ -96,6 +96,6 @@ Het verwijderen van een apparaatinschrijvingsbeheerder heeft geen invloed op ing
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

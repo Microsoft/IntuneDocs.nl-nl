@@ -5,33 +5,33 @@ layout: HubPage
 title: Intune-documentatie - MDM-documentatie | Microsoft Docs
 description: Technische documentatie voor Microsoft Intune - Beheer van mobiele apparaten en toepassingen
 keywords: Intune-documentatie, MDM-documentatie, documentatie over het beheer van mobiele apparaten, documentatie over het beheer van mobiele apparaaten en toepassingen
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
 
 
 ---
-# Intune-documentatie
+# <a name="intune-documentation"></a>Intune-documentatie
 <article id="main">
     <section id="hero-content">
       <h1>Intune-documentatie</h1>
       <h2>Lees hoe u Microsoft Intune implementeert en beheert; een service voor het beheren van mobiele apparaten en toepassingen.</h2>
-      <h3>Intune beheren met Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Documentatie voor Configuration Manager bekijken &rarr;</a></h3>
+      <h3>Intune beheren met Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Documentatie voor Configuration Manager bekijken&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Aanbevolen inhoud</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Inleiding tot Microsoft Intune</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Meer dan 150 licenties? Maak gebruik van uw FastTrack-voordelen</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Algemene scenario's die afhankelijk zijn van Intune</a></li>
           <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Snelstartgids voor Intune</a></li>
         </ul>
@@ -285,6 +285,6 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

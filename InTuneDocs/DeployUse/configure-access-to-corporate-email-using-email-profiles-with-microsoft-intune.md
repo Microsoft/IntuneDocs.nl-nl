@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel, dus de gebruiker moet dit
     |**Beschrijving**|Een beschrijving die u helpt om dit profiel te herkennen.|
     |**Host**|De hostnaam van uw bedrijfsserver die als host fungeert voor uw systeemeigen e-mailservice.|
     |**Accountnaam**|De naam van het e-mailaccount die wordt weergegeven op de apparaten van de gebruikers.|
-    |**Gebruikersnaam**|De manier waarop de gebruikersnaam voor het e-mailaccount wordt verkregen. Selecteer **Gebruikersnaam** voor een on-premises Exchange-server of selecteer **User Principal Name** voor Office 365.|
+    |**Gebruikersnaam**|Dit is het kenmerk in Active Directory (AD) of Azure AD, dat wordt gebruikt voor het genereren van de gebruikersnaam voor dit e-mailprofiel. Selecteer het primaire SMTP-adres, zoals *user1@contoso.com*, of de UPN-naam, zoals *gebruiker1* of *user1@contoso.com*.|
     |**E-mailadres**|Hoe het e-mailadres voor de gebruiker op elk apparaat wordt gegenereerd. Selecteer **Primaire SMTP-adres** om het primaire SMTP-adres te gebruiken voor aanmelding bij Exchange of gebruik **User Principal Name** om de volledige User Principal Name te gebruiken als het e-mailadres.|
     |**Verificatiemethode** (Android for Work, Samsung KNOX en iOS)|Selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel.|
     |**Selecteer een clientcertificaat voor clientverificatie (identiteitscertificaat)** (Android for Work, Samsung KNOX en iOS)|Selecteer het SCEP-clientcertificaat dat u eerder hebt gemaakt en dat wordt gebruikt voor verificatie van de Exchange-verbinding. Zie [Custom configurations for VPN profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruik van certificaatprofielen in Intune. Deze optie wordt alleen weergegeven als **Certificaten** is geselecteerd als verificatiemethode.|
@@ -138,6 +138,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

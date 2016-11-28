@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: fc9140ac9e6727ae5ac76b3da950baab29326078
+ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
+ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>De certificaatinfrastructuur voor SCEP configureren
 In dit onderwerp wordt beschreven welke infrastructuur u nodig hebt om SCEP-certificaatprofielen te maken en implementeren.
 
-### <a name="onpremises-infrastructure"></a>Lokale infrastructuur
+### <a name="on-premises-infrastructure"></a>Lokale infrastructuur
 
 -    **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
 
@@ -77,14 +77,14 @@ Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvo
 
 **Taak 5**: de Intune-certificaatconnector inschakelen, installeren en configureren
 
-### <a name="task-1-create-an-ndes-service-account"></a>Taak 1: een NDES-serviceaccount maken
+### <a name="task-1---create-an-ndes-service-account"></a>Taak 1: een NDES-serviceaccount maken
 
 Maak een domeingebruikersaccount dat u als NDES-serviceaccount gaat gebruiken. U geeft dit account op wanneer u sjablonen op de verlenende CA configureert voordat u NDES installeert en configureert. Zorg ervoor dat de gebruiker over de standaardrechten **Lokaal aanmelden**, **Aanmelden als service** en **Aanmelden als batchtaak** beschikt. Sommige organisaties voeren een beveiligingsbeleid dat ervoor zorgt dat deze rechten worden uitgeschakeld.
 
 
 
 
-### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>Taak 2: certificaatsjablonen configureren op de certificeringsinstantie
+### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>Taak 2: certificaatsjablonen configureren op de certificeringsinstantie
 In deze taak:
 
 -   Configureert u een certificaatsjabloon voor NDES
@@ -149,7 +149,7 @@ Als u de CA zo wilt configureren dat de aanvrager de geldigheidsperiode kan opge
     2.  Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
 
-### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>Taak 3: vereisten configureren op de NDES-server
+### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>Taak 3: vereisten configureren op de NDES-server
 In deze taak:
 
 -   Voegt u NDES toe aan een Windows Server en configureert u IIS om NDES te ondersteunen
@@ -190,7 +190,7 @@ In deze taak:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4-configure-ndes-for-use-with-intune"></a>Taak 4: NDES configureren voor gebruik met Intune
+### <a name="task-4---configure-ndes-for-use-with-intune"></a>Taak 4: NDES configureren voor gebruik met Intune
 In deze taak:
 
 -   Configureert u NDES voor gebruik met de verlenende CA
@@ -294,7 +294,7 @@ In deze taak:
 
 4.  Start de NDES-server opnieuw op. De server is nu klaar om de certificaatconnector te ondersteunen.
 
-### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>Taak 5: de Intune-certificaatconnector inschakelen, installeren en configureren
+### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>Taak 5: de Intune-certificaatconnector inschakelen, installeren en configureren
 In deze taak:
 
 Schakelt u de ondersteuning voor NDES in Intune in.
@@ -343,13 +343,13 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 
 Controleer of de service wordt uitgevoerd door een browser te openen en de volgende URL in te voeren. Hierop moet een **403** -fout worden geretourneerd:
 
-**http:// &lt;FQDN_van_uw_NDES-server&gt;/certsrv/mscep/mscep.dll**
+**https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ## <a name="next-steps"></a>Volgende stappen
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](Configure-Intune-certificate-profiles.md).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

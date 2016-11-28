@@ -14,8 +14,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 552473cb704ead5f7cc30a2311e2f722265bfcea
-ms.openlocfilehash: c7ecf73c28a8332bd3fe1465a2f64f7f09a7a690
+ms.sourcegitcommit: 13477a66ca8e89345334476445aae037ea8d9702
+ms.openlocfilehash: 55bf3ebde7d1185aebdb874c46aae72d8e179d85
 
 
 ---
@@ -29,12 +29,12 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 - **Back-ups van Android verhinderen**: kies **Ja** om dit uit te schakelen, of **Nee** om toe te staan dat er back-ups worden gemaakt van bedrijfsgegevens uit door beleid beheerde apps.
 
   Standaardwaarde = **Ja**.
-- **Toestaan dat app gegevens overdraagt naar andere apps**: kies een van de opties om aan te geven welke apps bedrijfsgegevens uit door beleid beheerde apps mogen ontvangen:
+- **Toestaan dat app gegevens overdraagt naar andere apps**: kies een van de opties om aan te geven welk type apps bedrijfsgegevens uit door beleid beheerde apps mogen ontvangen:
   -   **Door beleid beheerde apps**: alleen overdracht toestaan naar apps met MAM-beleid.
   -   **Alle apps**: overdracht naar alle apps toestaan.
   -   **Geen**: geen gegevensoverdracht naar apps toestaan.
 
-  Standaardwaarde = **Door beleid beheerde apps**.
+ Standaardwaarde = **Door beleid beheerde apps**.
 - **Toestaan dat app gegevens van andere apps ontvangt**: geef op via welke apps er gegevens mogen worden overgedragen naar de door beleid beheerde apps:
   -   **Door beleid beheerde apps**: overdracht alleen toestaan vanuit andere door beleid beheerde apps.
   -   **Alle apps**: gegevensoverdracht vanuit alle apps toestaan.
@@ -42,7 +42,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
   Standaardwaarde = **Alle apps**.
 
--   **Opslaan als voorkomen**: kies **Ja** als u het gebruik van de optie Opslaan als wilt uitschakelen in alle apps die dit beleid gebruiken. Selecteer **Nee** als u het gebruik van de optie Opslaan als wilt toestaan.
+-   **Opslaan als voorkomen**: kies **Ja** als u het gebruik van de optie Opslaan als wilt uitschakelen in alle apps die dit beleid gebruiken. Kies **Nee** als u het gebruik van de optie Opslaan als wilt toestaan.
 
   Standaardwaarde = **Ja**.
 - **Knippen, kopiëren en plakken met andere apps beperken**: geef op wanneer knip-, kopieer- en plakbewerkingen moeten worden beperkt. U kunt kiezen uit:
@@ -52,9 +52,9 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
   -   **Elke app**: er zijn geen beperkingen voor knip-, kopieer- en plakbewerkingen tussen apps.
 
   Standaardwaarde = **Door beleid beheerde apps met Plakken in**.
--   **Webinhoud beperken voor weergave in de Managed Browser**: als deze instelling is ingeschakeld, worden koppelingen in de app geopend in de Managed Browser-app.
+-   **Webinhoud beperken voor weergave in de Managed Browser**: kies **Ja** om op te geven dat alle koppelingen in de app worden geopend in de Managed Browser-app.
 
-  Voor apparaten die niet zijn ingeschreven bij Intune, worden webkoppelingen in door beleid beheerde apps alleen geopend in de Managed Browser-app met behulp van het MAM-beleid.
+  Voor apparaten die niet zijn ingeschreven bij Intune, worden koppelingen in door beleid beheerde apps alleen geopend in de Managed Browser-app met behulp van het MAM-beleid.
 
   Als u Intune gebruikt voor het beheer van uw apparaten, raadpleegt u [Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
@@ -67,7 +67,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
 - **Synchronisatie van contactpersonen uitschakelen:** kies **Ja** om te voorkomen dat contactgegevens worden gesynchroniseerd met de systeemeigen adresboek-app op het apparaat. Als u **Nee** selecteert, slaat de app de contactgegevens op in de systeemeigen adresboek-app op het apparaat.
 
-  Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, ook verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de Microsoft Outlook-app.
+  Wanneer u selectief wist om bedrijfsgegevens te verwijderen, worden de contactpersonen verwijderd die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de Microsoft Outlook-app.
 
   Standaardwaarde = **Ja**.
 - **Afdrukken uitschakelen:** kies **Ja** als u wilt voorkomen dat bedrijfsgegevens worden afgedrukt met apps waarop het MAM-beleid van toepassing is.
@@ -84,11 +84,11 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
  - **Lengte van de pincode:** geef het minimale aantal cijfers op waaruit een pincode moet bestaan. Standaardwaarde = **4**.
  - **Aantal pogingen voordat pincode opnieuw wordt ingesteld**: geef het aantal toegestane invoerpogingen voor de pincode op voordat de gebruiker de pincode opnieuw moet instellen. Er is geen standaardwaarde voor deze instelling.
  - **Vingerafdruk in plaats van pincode vereisen (Android 6.0+):** selecteer **Ja** als u een vingerafdruk-id in plaats van een cijferpincode wilt vereisen voor toegang tot apps.
- Op Android-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk in plaats van met een cijferpincode. Wanneer de eindgebruiker toegang tot deze app probeert te krijgen via zijn werkaccount, wordt hij gevraagd zijn vingerafdruk te geven in plaats van een pincode in te voeren.
- - **Bedrijfsreferenties vereisen voor toegang**: selecteer **Ja** als u de bedrijfsreferenties in plaats van een pincode of vingerafdruk wilt vereisen voor toegang tot apps. Als u deze waarde op **Ja** instelt, overschrijft dit de vereisten voor de pincode of Touch-ID. De gebruiker wordt gevraagd om zijn zakelijke referenties te verstrekken.
+ Op Android-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk in plaats van met een cijferpincode. Wanneer gebruikers deze app proberen te openen via hun werkaccount, moeten ze hun vingerafdruk in plaats van een pincode gebruiken.
+ - **Bedrijfsreferenties vereisen voor toegang**: selecteer **Ja** als u de bedrijfsreferenties in plaats van een pincode of vingerafdruk wilt vereisen voor toegang tot apps. Als u deze waarde op **Ja** instelt, overschrijft dit de vereisten voor de pincode of Touch-ID. De gebruiker wordt gevraagd om zijn zakelijke referenties te verstrekken. Standaardwaarde = **Nee**.
 
-  Standaardwaarde = **Nee**.
-- **De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd**: selecteer **Ja** om te voorkomen dat apps worden uitgevoerd op gekraakte of geroote apparaten. De gebruiker kan de apps nog steeds gebruiken voor privétaken maar moet voor zijn werk een ander apparaat gebruiken.
+
+- **De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd**: selecteer **Ja** om te voorkomen dat apps worden uitgevoerd op gekraakte of geroote apparaten. De gebruiker kan de apps nog steeds gebruiken voor privétaken maar moet voor zijn of haar werk een ander apparaat gebruiken.
 
   Standaardwaarde = **Ja**.
 - **Toegangsvereisten opnieuw controleren na (minuten)**
@@ -107,6 +107,6 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

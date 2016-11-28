@@ -14,14 +14,14 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: da42d3dc00ebeb145f668200dcc8b17b808c5e70
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: ea0e43d93a3e388d55329142292595a8b3b3dbd2
 
 
 ---
 
-# Volgende stappen nadat uw Intune-evaluatieversie is afgelopen
-Als u ten minste 150 licenties voor Microsoft Intune koopt binnen een abonnement dat in aanmerking komt, kunt u gebruikmaken van de FastTrack Center Benefit, een service waarbij Microsoft-specialisten met u samenwerken om uw omgeving voor te bereiden voor Intune. Zie [FastTrack Center Benefit voor Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
+# <a name="next-steps-after-your-intune-evaluation-is-completed"></a>Volgende stappen nadat uw Intune-evaluatieversie is afgelopen
+Als u ten minste 150 licenties voor Microsoft Intune koopt binnen een abonnement dat in aanmerking komt, kunt u gebruikmaken van de FastTrack Center Benefit, een service waarbij Microsoft-specialisten met u samenwerken om uw omgeving voor te bereiden voor Intune. Zie [FastTrack Center Benefit-proces voor Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 U kunt uw gratis Intune-evaluatieversie op de volgende manieren omzetten naar een betaald abonnement:
 
@@ -35,6 +35,6 @@ U kunt uw gratis Intune-evaluatieversie op de volgende manieren omzetten naar ee
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

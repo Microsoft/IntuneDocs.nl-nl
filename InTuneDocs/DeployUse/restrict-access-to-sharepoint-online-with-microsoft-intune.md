@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
-ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# Toegang tot SharePoint Online beperken met Microsoft Intune
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Toegang tot SharePoint Online beperken met Microsoft Intune
 Gebruik de voorwaardelijke toegang van [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] om toegang tot bestanden op SharePoint Online te beheren.
 Voorwaardelijke toegang bestaat uit twee onderdelen:
 - Nalevingsbeleid voor apparaten waar het apparaat aan moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
@@ -55,12 +55,12 @@ Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgen
 
 -   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-website van de bedrijfsportal wordt verwezen. Hier vindt hij informatie over het probleem en aanwijzingen voor het oplossen ervan.
 
-**Voorwaardelijke toegang wordt afgedwongen op alle SharePoint-sites en extern delen wordt geblokkeerd**
+**Voorwaardelijke toegang is niet van toepassing op extern delen**. Zie [Extern delen voor uw SharePoint Online-omgeving beheren](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US) om te lezen hoe u extern delen in uw tenant of siteverzameling kunt voorkomen.
 
 >[!NOTE]
 >Als u voorwaardelijke toegang voor SharePoint Online inschakelt, raden wij aan het domein in de lijst uit te schakelen zoals staat beschreven in het onderwerp [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 
-## Ondersteuning voor mobiele apparaten
+## <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
 - iOS 8.0 en hoger
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger
 - Windows Phone 8.1 en hoger
@@ -72,7 +72,7 @@ U kunt de toegang tot SharePoint Online beperken als deze service wordt geopend 
 
 **Niet-ondersteunde browsers worden geblokkeerd**.
 
-## Ondersteuning voor pc's
+## <a name="support-for-pcs"></a>Ondersteuning voor pc's
 - Windows 8.1 en hoger (mits ingeschreven bij Intune)
 - Windows 7.0, Windows 8.1 of Windows 10 (mits lid van een domein)
 > [!NOTE]
@@ -92,9 +92,9 @@ AAD DRS wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klante
     Moderne verificatie maakt op Active Directory Authentication Library (ADAL) gebaseerde aanmelding beschikbaar op Windows-clients met Office 2013 en zorgt voor een betere beveiliging, zoals **meervoudige verificatie** en **verificatie op basis van een certificaat**.
 
 
-## Beleid voor voorwaardelijke toegang voor SharePoint Online
+## <a name="configure-conditional-access-for-sharepoint-online"></a>Beleid voor voorwaardelijke toegang voor SharePoint Online
 
-### Stap 1: Active Directory-beveiligingsgroepen configureren
+### <a name="step-1-configure-active-directory-security-groups"></a>Stap 1: Active Directory-beveiligingsgroepen configureren
 Voordat u begint, moet u Azure Active Directory-beveiligingsgroepen configureren voor het beleid voor voorwaardelijke toegang. U kunt deze groepen configureren in het **Office 365-beheercentrum**of in de **Intune-accountportal**. Deze groepen worden gebruikt om gebruikers in of uit te sluiten van het beleid. Wanneer een gebruiker deel uitmaakt van de doelgroep voor het beleid, moet elk apparaat dat hij of zij gebruikt, aan het beleid voldoen om toegang te krijgen tot bronnen.
 
 U kunt twee soorten groepen opgeven in een SharePoint Online-beleid:
@@ -105,7 +105,7 @@ U kunt twee soorten groepen opgeven in een SharePoint Online-beleid:
 
 Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de gebruiker toegepast.
 
-### Stap 2: Nalevingsbeleid configureren en implementeren
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Stap 2: Nalevingsbeleid configureren en implementeren
 Als u dit nog niet hebt gedaan, maak en implementeer dan nalevingsbeleid voor gebruikers waarop het SharePoint Online-beleid van toepassing moet zijn.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Zie [Een nalevingsbeleid maken](create-a-device-compliance-policy-in-microsoft-i
 
 Wanneer u klaar bent, gaat u door naar **stap 3**.
 
-### Stap 3: Het SharePoint Online-beleid configureren
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Stap 3: Het SharePoint Online-beleid configureren
 Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde apparaten en apparaten die aan het beleid voldoen toegang hebben tot SharePoint Online. Dit beleid wordt opgeslagen in Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -128,7 +128,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
 
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
-![Schermafdruk van de pagina met SharePoint Online-beleid](../media/mdm-ca-spo-policy-configuration.png)
+![Schermopname van de pagina SharePoint Online-beleid](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Selecteer **Beleid voor voorwaardelijke toegang inschakelen voor SharePoint Online**.
 
@@ -166,7 +166,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
   **iOS**
 
-  ![schermopname van het certificaatprompt op een iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![schermafbeelding van het certificaat met het verzoek op een ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -179,7 +179,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
 U hoeft het beleid voor voorwaardelijke toegang niet te implementeren; het wordt direct van kracht.
 
-### Stap 4: Het nalevingsbeleid en het beleid voor voorwaardelijke toegang bewaken
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>Stap 4: Het nalevingsbeleid en het beleid voor voorwaardelijke toegang bewaken
 In de werkruimte **Groepen** kunt u de status van uw apparaten bekijken.
 
 Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** een van de volgende **Filters**:
@@ -190,11 +190,11 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 
 -   **Apparaten die zijn geregistreerd bij AAD en die voldoen aan het beleid** : deze apparaten hebben toegang tot SharePoint Online.
 
-### Zie tevens
-[De toegang tot e-mail en O365-service beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### <a name="see-also"></a>Zie tevens
+[De toegang tot e-mail en O365-services beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

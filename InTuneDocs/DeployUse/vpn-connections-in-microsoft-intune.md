@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: 00845ca053f443691a103c3d775906877eb59c9c
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 
 ---
@@ -50,7 +50,7 @@ Intune ondersteunt het maken van VPN-profielen die gebruikmaken van de volgende 
 Type verbinding |iOS en Mac OS X  |Android en Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8,1|Windows 10 Desktop en Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
-Cisco (IPsec)|Ja |Nee   |Nee  |Nee  |Nee | Nee|
+Cisco (IPsec)|Yes |Ja   |Nee  |Nee  |Nee | Nee|
 Citrix|Yes |Nee   |Nee  |Nee  |Nee | Nee|
 Pulse Secure|Ja  |Ja |Ja   |Ja  |Ja| Ja|        
 F5 Edge Client|Ja |Ja |Ja |Ja  |   Ja |  Ja|   
@@ -109,7 +109,7 @@ Naam van de instelling  |Meer informatie
 **Naam**     |Geef een unieke naam voor het VPN-profiel op om dit te herkennen in de Intune-console.         
 **Beschrijving**     |Geef een beschrijving op die een overzicht geeft van het VPN-profiel en overige relevante informatie die u helpt bij het zoeken.         
 **Naam van VPN-verbinding (weergegeven voor gebruikers)**     |Geef een naam voor het VPN-profiel. Dit is de naam die gebruikers te zien krijgen in de lijst met beschikbare VPN-verbindingen op hun apparaten.         
-**Type verbinding**     |  Selecteer een van de volgende verbindingstypen voor gebruik in het VPN-profiel: **Cisco AnyConnect** (niet beschikbaar voor Windows 8.1 of Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Type verbinding**     |  Selecteer een van de volgende verbindingstypen voor gebruik in het VPN-profiel: **Cisco AnyConnect** (niet beschikbaar voor Windows 8.1 of Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
 **Beschrijving van de VPN-server**     | Geef een beschrijving op voor de VPN-server waarmee apparaten verbinding maken. Voorbeeld: **Contoso VPN-server**. Als het verbindingstype **F5 Edge Client** is, gebruikt u het veld **Serverlijst** om een lijst met serverbeschrijvingen en IP-adressen op te geven.
 **IP-adres of FQDN van server**    |Geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding zullen maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.  Als het verbindingstype **F5 Edge Client** is, gebruikt u het veld **Serverlijst** om een lijst met serverbeschrijvingen en IP-adressen op te geven.         |         
 **Serverlijst**     |Kies **Toevoegen** om een nieuwe VPN-server toe te voegen die moet worden gebruikt voor de VPN-verbinding. U kunt ook opgeven welke server de standaardserver voor de verbinding moet zijn. Deze optie wordt alleen weergegeven als het verbindingstype **F5 Edge Client** is.         
@@ -117,8 +117,8 @@ Naam van de instelling  |Meer informatie
 **Verificatiemethode**| Selecteer de verificatiemethode die door de VPN-verbinding wordt gebruikt: **Certificaten** of **Gebruikersnaam en wachtwoord**. (**Gebruikersnaam en wachtwoord** is niet beschikbaar als het verbindingstype Cisco AnyConnect is.) De optie **Verificatiemethode** is niet beschikbaar voor Windows 8.1.
 **Gebruikersreferenties onthouden bij elke aanmelding**|Selecteer deze optie om ervoor te zorgen dat de gebruikersreferenties worden onthouden zodat de gebruiker geen referenties hoeft in te voeren telkens wanneer een verbinding tot stand wordt gebracht.
 **Clientcertificaat selecteren voor clientverificatie (identiteitscertificaat)**|Selecteer het SCEP-clientcertificaat dat u eerder hebt gemaakt en dat wordt gebruikt voor het verifiëren van de VPN-verbinding. Zie [Custom configurations for VPN profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruik van certificaatprofielen in Intune. Deze optie wordt alleen weergegeven als **Certificaten** is geselecteerd als verificatiemethode.
-**Rol**| Geef de naam op van de gebruikersrol die toegang tot deze verbinding heeft. Een gebruikersrol definieert persoonlijke instellingen en opties en schakelt bepaalde toegangsfuncties in of uit. Deze optie wordt alleen weergegeven als het verbindingstype **Pulse Secure** is.
-**Realm**|Geef de naam op van de verificatierealm die u wilt gebruiken. Een verificatierealm is een groepering van verificatieresources die worden gebruikt door het verbindingstype Pulse Secure. Deze optie wordt alleen weergegeven als het verbindingstype **Pulse Secure** is.
+**Rol**| Geef de naam op van de gebruikersrol die toegang tot deze verbinding heeft. Een gebruikersrol definieert persoonlijke instellingen en opties en schakelt bepaalde toegangsfuncties in of uit. Deze optie wordt alleen weergegeven als het verbindingstype **Pulse Secure** of **Citrix** is.
+**Realm**|Geef de naam op van de verificatierealm die u wilt gebruiken. Een verificatierealm is een groepering van verificatieresources die worden gebruikt door het verbindingstype Pulse Secure of Citrix. Deze optie wordt alleen weergegeven als het verbindingstype **Pulse Secure** of **Citrix** is.
 **Aanmeldingsgroep of -domein**|Geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken. Deze optie wordt alleen weergegeven als het verbindingstype **Dell SonicWALL Mobile Connect** is.
 **Vingerafdruk**|Geef een tekenreeks op (bijvoorbeeld 'Contoso-vingerafdrukcode') die wordt gebruikt om te controleren of de VPN-server kan worden vertrouwd. Een vingerafdruk kan worden verzonden naar de client zodat deze alle servers vertrouwt die dezelfde vingerafdruk presenteren wanneer er verbinding wordt gemaakt. Als het apparaat nog niet over de vingerafdruk beschikt, wordt de gebruiker gevraagd om de VPN-server waarmee deze verbinding maakt, te vertrouwen terwijl de vingerafdruk wordt weergegeven. (De gebruiker controleert de vingerafdruk handmatig en kiest **Vertrouwen** om verbinding te maken.) Deze optie wordt alleen weergegeven als het verbindingstype **CheckPoint Mobile VPN** is.
 **VPN per app**|Selecteer deze optie als u deze VPN-verbinding wilt koppelen aan een iOS-app of een Max OS X-app zodat de verbinding wordt geopend wanneer de app wordt uitgevoerd. U kunt het VPN-profiel aan een app koppelen bij het implementeren van de software. Zie [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Apps implementeren in Microsoft Intune) voor meer informatie
@@ -153,7 +153,7 @@ U kunt het VPN-gebruik door Windows 10-apparaten tot bepaalde apps beperken door
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid**.
 
-### <a name="ondemand-vpn-for-ios-devices"></a>VPN op aanvraag voor iOS-apparaten
+### <a name="on-demand-vpn-for-ios-devices"></a>VPN op aanvraag voor iOS-apparaten
 U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger configureren.
 
 > [!NOTE]
@@ -201,6 +201,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

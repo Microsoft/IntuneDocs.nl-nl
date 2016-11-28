@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d01ec8c2b848b4fa1e507ec9e7a31125badf30e
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Inzicht in uw apparaten met inventarisaties in Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Inzicht in uw apparaten met inventarisaties in Microsoft Intune
 Met Microsoft Intune kunt u de inventarisatie bekijken van de ingeschreven apparaten en Windows-pc's waarop de Intune-clientsoftware wordt uitgevoerd.
 Intune verzamelt inventaris van beheerde apparaten gewoonlijk om de zeven dagen. Hierdoor kan het langer duren voordat de resultaten van recente wijzigingen aan apparaten, bijvoorbeeld een wijziging van de apparaatnaam, of vrije opslagruimte in rapporten worden weergegeven.
 
-## Wat wordt er verzameld bij ingeschreven apparaten?
+## <a name="whats-collected-from-enrolled-devices"></a>Wat wordt er verzameld bij ingeschreven apparaten?
 Als u de inventarisatiegegevens wilt bekijken die door mobiele apparaten zijn verzameld, voert u de [Inventarisrapporten voor mobiele apparaten](understand-microsoft-intune-operations-by-using-reports.md) uit. In Intune worden de volgende inventarisgegevens van ingeschreven apparaten verzameld:
 
 |Eigenschap|Verzameld door|
@@ -34,8 +34,8 @@ Als u de inventarisatiegegevens wilt bekijken die door mobiele apparaten zijn ve
 |**Fabrikant**|Alle apparaten|
 |**Model**|Alle apparaten|
 |**Beheerkanaal**|Alle apparaten|
-|**AAD-geregistreerd**|Alle apparaten, met uitzondering van Mac OS X|
-|**Compliant**|Alle apparaten|
+|**Geregistreerd bij AAD**|Alle apparaten, met uitzondering van Mac OS X|
+|**Compatibel**|Alle apparaten|
 |**EAS geactiveerd**|Alle apparaten, met uitzondering van Mac OS X|
 |**Activerings-id voor EAS**|Alle apparaten, met uitzondering van Mac OS X|
 |**Activeringstijd voor EAS**|Alle apparaten, met uitzondering van Mac OS X|
@@ -44,9 +44,9 @@ Als u de inventarisatiegegevens wilt bekijken die door mobiele apparaten zijn ve
 |**Exchange ActiveSync-id**|Alle apparaten|
 |**Apparaten waarop jailbreaking of rooting is uitgevoerd**|Alleen iOS- en Android-apparaten|
 |**Unieke apparaat-ID**|Alle apparaten, met uitzondering van Exchange Active Sync|
-|**Serienummer**|iOS-, Mac OS X-, Android-, Windows 8.1- en Windows 10-apparaten|
-|**Totale opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10-apparaten|
-|**Beschikbare opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10-apparaten|
+|**Serienummer**|iOS-, Mac OS X-, Android-, Windows 8.1- en Windows 10 Desktop-apparaten|
+|**Totale opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10 Desktop- en Mobile-apparaten|
+|**Beschikbare opslagruimte**|iOS-, Mac OS X-, Windows 8.1- en Windows 10 Desktop-apparaten|
 |**Telefoonnummer**<br>Telefoons die zijn aangemerkt als bedrijfseigendom, worden aangeduid met hun volledige telefoonnummer (bijvoorbeeld wanneer u een inventarisrapport voor mobiele apparaten uitvoert). Telefoonnummers voor BYOD-apparaten worden gemaskeerd met &#42;, waarbij alleen de laatste vier cijfers worden weergegeven.|iOS-, Android- en Windows Phone-apparaten|
 |**IMEI**|Exchange Active Sync-, iOS-, Android- en Windows Phone-apparaten|
 |**MEID**<br>Mobile Equipment Identifier|Alleen iOS-apparaten|
@@ -54,14 +54,14 @@ Als u de inventarisatiegegevens wilt bekijken die door mobiele apparaten zijn ve
 |**Provider van abonnee**|Alleen iOS- en Android-apparaten|
 |**Mobiele telefoontechnologie**|Alleen iOS- en Android-apparaten|
 |**Onder supervisie**|Alleen iOS-apparaten|
-|**Status van activeringsvergrendeling**|Alleen iOS-apparaten|
+|**Activeringsstatus van vergrendeling**|Alleen iOS-apparaten|
 |**Registratiedatum**|Alle apparaten|
 |**Laatst bijgewerkt**|Alle apparaten|
 |**Ethernet MAC**|Alleen Mac OS X-apparaten|
 |**Activeringsvergrendeling ingeschakeld**|Alleen iOS-apparaten|
 |**Versleuteling ingeschakeld**|Alle apparaten|
 
-## Wat wordt er verzameld voor Windows-pc's?
+## <a name="whats-collected-from-windows-pcs"></a>Wat wordt er verzameld voor Windows-pc's?
 > [!IMPORTANT]
 > Deze sectie geldt alleen voor Windows-computers waarop de Intune Windows- clientsoftware wordt uitgevoerd.
 
@@ -83,13 +83,13 @@ Als u de inventarisatiegegevens wilt weergeven die voor Windows-pc’s worden ve
 
 -   **Gebruikte schijfruimte**
 
--   **Beschikbare schijfruimte**
+-   **Vrije schijfruimte**
 
 -   **Naam besturingssysteemschijf**
 
 -   **Ruimte op besturingssysteemschijf**
 
--   **Beschikbare ruimte op besturingssysteemschijf**
+-   **Vrije ruimte op besturingssysteemschijf**
 
 -   **Fysiek geheugen**
 
@@ -103,7 +103,7 @@ Als u de inventarisatiegegevens wilt weergeven die voor Windows-pc’s worden ve
 
 -   **Serienummer**
 
--   **Laatst aangemelde gebruiker**
+-   **Laatste aangemelde gebruiker**
 
 -   **Toegewezen gebruiker**
 
@@ -116,6 +116,6 @@ Als u de inventarisatiegegevens wilt weergeven die voor Windows-pc’s worden ve
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

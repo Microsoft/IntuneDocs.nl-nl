@@ -5,26 +5,26 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 74f8fc68f0443d9535798663504a198c14f04446
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 5581e80612286471b29d35f193fba5146f9ca90f
 
 
 ---
-# Kiezen hoe u mobiele apparaten registreert
+# <a name="choose-how-to-enroll-mobile-devices"></a>Kiezen hoe u mobiele apparaten registreert
 
 Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke registratiemethode u het beste kunt gebruiken voor de apparaten die u beheert.
 
 
-## **Hoe beheert u uw gedeelde iOS-apparaten?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Hoe beheert u uw gedeelde iOS-apparaten?**
 
   > [!div class="button"]
   [iOS-DEP-registratie >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
@@ -44,6 +44,6 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

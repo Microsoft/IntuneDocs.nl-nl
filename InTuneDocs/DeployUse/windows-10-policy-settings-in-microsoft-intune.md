@@ -14,13 +14,13 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
-ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
+ms.sourcegitcommit: 048fd10f8d87063733e9d58f4c14e5c314c79bce
+ms.openlocfilehash: 55d6921406c337ffc7585c2c4f13356446b17801
 
 
 ---
 
-# Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune
+# <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune
 
 De informatie in dit onderwerp kan u helpen de Intune-beleidsinstellingen te begrijpen die u kunt gebruiken voor het beheren van Windows 10-apparaten. Raadpleeg dit onderwerp en de procedures in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) om ingebouwde en aangepaste instellingen te configureren voor geregistreerde Windows 10 desktop- en Windows 10 Mobile-apparaten. U kunt dit beleid niet gebruiken voor pc’s waarop de [Intune-pc-clientsoftware](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune) wordt uitgevoerd.
 
@@ -29,17 +29,17 @@ U kunt kiezen uit twee beleidstypen:
 - **Aangepaste beleid**: gebruik het **aangepaste beleid** van Microsoft Intune voor Windows 10 en Windows 10 Mobile om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om functies op apparaten te beheren. In Windows 10 zijn veel instellingen toegankelijk via de [beleids-CSP (Configuration Service Provider)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **Algemeen configuratiebeleid**: gebruik dit beleidstype wanneer u instellingen wilt kiezen uit de ingebouwde lijst van Microsoft Intune.
 
-## Aangepaste beleidsinstellingen
+## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
 
-Geef de volgende instellingen op in een aangepast beleid:
+Geef de volgende instellingen op in een aangepast beleid.
 
-## &nbsp;&nbsp;&nbsp;Algemeen
+### <a name="general"></a>Algemeen
 
 Geef een naam en eventueel een beschrijving op voor dit beleid, zodat u het kunt herkennen in de Intune-console.
 
-## &nbsp;&nbsp;&nbsp;OMA-URI-instellingen
+### <a name="oma-uri-settings"></a>OMA-URI-instellingen
 
-Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in. Gebruik de [documentatie voor Windows 10-URI-instellingen](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in dit onderwerp voor meer informatie over de instellingen die u kunt gebruiken: 
+Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in. Gebruik de [documentatie voor Windows 10-URI-instellingen](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in dit onderwerp voor meer informatie over de instellingen die u kunt gebruiken:
 
 - **Naam van de instelling**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
 - **Beschrijving van de instelling:** voer eventueel een beschrijving in voor de instelling.
@@ -49,19 +49,19 @@ Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in
     - **Datum en tijd**
     - **Geheel getal**
     - **Drijvende komma**
-    - **Boolean-waarde**
+    - **Booleaanse waarde**
 - **OMA-URI (hoofdlettergevoelig)**: geef aan voor welke OMA-URI u een instelling wilt opgeven.
 - **Waarde**: geef de waarde op die moet worden gekoppeld aan de OMA-URI die u hebt opgegeven.
 
-### Voorbeeld
-In de schermopname hieronder is de instelling **Conectivity/AllowVPNOverCellular** ingeschakeld. Hiermee kan met een Windows-10-apparaat een VPN-verbinding worden gemaakt in een mobiel netwerk.
+### <a name="example"></a>Voorbeeld
+In de volgende schermopname is de instelling **Connectivity/AllowVPNOverCellular** ingeschakeld. Hiermee kan met een Windows-10-apparaat een VPN-verbinding worden gemaakt in een mobiel netwerk.
 
 > ![Voorbeeld van een aangepast beleid met VPN-instellingen](./media/custom-policy-example.png)
 
-## Windows 10-URI-instellingen
+## <a name="windows-10-uri-settings"></a>Windows 10-URI-instellingen
 In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met een **aangepast Windows 10-beleid** kunt configureren.
 
-## &nbsp;&nbsp;&nbsp;Beleid
+### <a name="policy"></a>Beleid
 
 |Naam van beleid en URI|Details|
 |---------------|------------|-----------|
@@ -72,7 +72,7 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**WiFi/AllowWiFi**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: **gebruik van Wi-Fi-verbinding** niet toestaan.<br>**1**: **gebruik van Wi-Fi-verbinding toestaan** (standaard).|
 |**WiFi/AllowInternetSharing**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing|Desktop en mobiel<br>**Gegevenstype:** geheel getal<br />**Waarden:** **0**: delen via internet niet toestaan, **1**: delen via internet toestaan (standaard)|
 |**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**WiFi/AllowManualWiFiConfiguration**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: een Wi-Fi-verbinding buiten de ingerichte MDM is niet toegestaan.<br>**1**: het toevoegen van een nieuwe netwerk-SSID buiten de al aanwezige MDM is toegestaan (standaard).|
+|**WiFi/AllowManualWiFiConfiguration**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: een Wi-Fi-verbinding buiten de ingerichte MDM is niet toegestaan<br>**1**: het toevoegen van een nieuwe netwerk-SSID buiten de al aanwezige MDM SSID’s is toegestaan (standaard)|
 |**System/AllowLocation**<br>./Vendor/MSFT/Policy/Config/System/AllowLocation|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**System/AllowTelemetry**<br>./Vendor/MSFT/Policy/Config/System/AllowTelemetry|Desktop en mobiel<br>**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toegestaan (instelling alleen voor Enterprise)<br>**1** : beperkt<br>**2**: volledig (standaard)<br>**3**: volledig en diagnostische gegevens|
 |**System/AllowExperimentation**<br>./Vendor/MSFT/Policy/Config/System/AllowExperimentation|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toegestaan<br>**1**: alleen instellingen (standaard)<br>**2**: instellingen en experimenteren|
@@ -83,7 +83,7 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**Connectivity/AllowVPNOverCellular**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNOverCellular|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: VPN is niet toegestaan via mobiele verbindingen<br>**1**: VPN mag alle verbinding gebruiken, inclusief mobiele verbindingen (standaard)|
 |**Connectivity/AllowVPNRoamingOverCellular**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Connectivity/AllowVPNRoamingOverCellular**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**Connectivity/AllowBluetooth**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: de gebruiker niet toestaan Bluetooth in te schakelen.<br>**1**: gereserveerd. De gebruiker kan Bluetooth inschakelen en configureren (niet ondersteund in Windows Phone 8.1 voor MDM, EAS-, Windows 10 Desktop en Windows 10 Mobile)<br>**2**: toegestaan. De gebruiker kan Bluetooth inschakelen en configureren (standaard)|
+|**Connectivity/AllowBluetooth**<br>./Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: de gebruiker niet toestaan Bluetooth in te schakelen<br>**1**: gereserveerd. De gebruiker kan Bluetooth inschakelen en configureren (niet ondersteund in Windows Phone 8.1 voor MDM, EAS-, Windows 10 Desktop en Windows 10 Mobile)<br>**2**: toegestaan. De gebruiker kan Bluetooth inschakelen en configureren (standaard)|
 |**Experience/AllowScreenCapture**<br>./Vendor/MSFT/Policy/Config/Experience/AllowScreenCapture|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Experience/AllowTaskSwitcher**<br>./Vendor/MSFT/Policy/Config/Experience/AllowTaskSwitcher|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Experience/AllowVoiceRecording**<br>./Vendor/MSFT/Policy/Config/Experience/AllowVoiceRecording|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
@@ -95,7 +95,7 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**Security/AllowAddProvisioningPackages**<br>./Vendor/MSFT/Policy/Config/Security/AllowAddProvisioningPackages|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Search/DisableBackoff**<br>./Vendor/MSFT/Policy/Config/Search/DisableBackoff|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
 |**Search/PreventRemoteQueries**<br>./Vendor/MSFT/Policy/Config/Search/PreventRemoteQueries|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**, **1** (standaard)|
-|**SearchZoeken/AllowUsingDiacritics**<br>./Vendor/MSFT/Policy/Config/Search/AllowUsingDiacritics|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
+|**Search/AllowUsingDiacritics**<br>./Vendor/MSFT/Policy/Config/Search/AllowUsingDiacritics|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
 |**Search/AlwaysUseAutoLangDetection**<br>./Vendor/MSFT/Policy/Config/Search/AlwaysUseAutoLangDetection|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
 |**Search/DisableRemovableDriveIndexing**<br>./Vendor/MSFT/Policy/Config/Search/DisableRemovableDriveIndexing|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
 |**Search/PreventIndexingLowDiskSpaceMB**<br>./Vendor/MSFT/Policy/Config/Search/PreventIndexingLowDiskSpaceMB|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**, **1** (standaard)|
@@ -103,8 +103,8 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**Security/AllowRemoveProvisioningPackage**<br>./Vendor/MSFT/Policy/Config/Security/AllowRemoveProvisioningPackage|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Security/RequireProvisioningPackageSignature**<br>./Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** (standaard), **1**|
 |**AboveLock/AllowActionCenterNotifications**<br>./Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**TextInput/AllowIMENetworkAccess**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toestaan<br>De functie Uitgebreid woordenboek openen is uitgeschakeld.<br>Een gebruiker kan niet:<br>- Een nieuwe functie Uitgebreid woordenboek openen toevoegen.<br />- Een nieuw configuratiebestand voor de integratie van zoekopdrachten toevoegen.<br>- De functie Cloudkandidaat gebruiken.<br>- Een door de gebruiker geregistreerd woord verzenden.<br>**1**: toestaan<br>Een functie Uitgebreid woordenboek openen kan standaard worden toegevoegd en gebruikt. De functie voor integratie van zoekbestanden kan ook standaard worden gebruikt.<br>De gebruiker kan:<br>De functie Cloudkandidaat gebruiken.|
-|**TextInput/AllowIMELogging**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: Logboekregistratie voor een mislukte conversie is uitgeschakeld.<br>**1**: Logboekregistratie voor een mislukte conversie is ingeschakeld (standaard).|
+|**TextInput/AllowIMENetworkAccess**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : niet toestaan.<br>De functie Uitgebreid woordenboek openen is uitgeschakeld.<br>Een gebruiker kan niet:<br>- Een nieuwe functie Uitgebreid woordenboek openen toevoegen.<br />- Een nieuw configuratiebestand voor de integratie van zoekopdrachten toevoegen.<br>- De functie Cloudkandidaat gebruiken.<br>- Een door de gebruiker geregistreerd woord verzenden.<br>**1**: toestaan<br>Een functie Uitgebreid woordenboek openen kan standaard worden toegevoegd en gebruikt. De functie voor integratie van zoekbestanden kan ook standaard worden gebruikt.<br>De gebruiker kan:<br>- De functie Cloudkandidaat gebruiken.|
+|**TextInput/AllowIMELogging**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: Logboekregistratie voor een mislukte conversie is uitgeschakeld<br>**1**: Logboekregistratie voor een mislukte conversie is ingeschakeld (standaard).|
 |**TextInput/AllowJapaneseNonPublishingStandardGlyph**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseNonPublishingStandardGlyph|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**TextInput/AllowJapaneseIVSCharacters**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**TextInput/AllowJapaneseUserDictionary**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
@@ -119,27 +119,27 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**Settings/AllowVPN**<br>./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowWorkplace**<br>./Vendor/MSFT/Policy/Config/Settings/AllowWorkplace|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowDateTime**<br>./Vendor/MSFT/Policy/Config/Settings/AllowDateTime|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**Settings/AllowDateTime**<br>./Vendor/MSFT/Policy/Config/Settings/AllowLanguage|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**Settings/AllowLanguage**<br>./Vendor/MSFT/Policy/Config/Settings/AllowLanguage|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowRegion**<br>./Vendor/MSFT/Policy/Config/Settings/AllowRegion|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowSignInOptions**<br>./Vendor/MSFT/Policy/Config/Settings/AllowSignInOptions|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowYourAccount**<br>./Vendor/MSFT/Policy/Config/Settings/AllowYourAccount|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowPowerSleep**<br>./Vendor/MSFT/Policy/Config/Settings/AllowPowerSleep|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Settings/AllowAutoPlay**<br>./Vendor/MSFT/Policy/Config/Settings/AllowAutoPlay|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Experience/AllowCortana**<br>./Vendor/MSFT/Policy/Config/Experience/AllowCortana|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**Search/SafeSearchPermissions**<br>./Vendor/MSFT/Policy/Config/Search/SafeSearchPermissions|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : strict, hoogste filtering tegen inhoud voor volwassenen<br>**1**: gemiddeld, gemiddelde filtering op inhoud voor volwassenen (geldige zoekresultaten worden standaard niet gefilterd)|
+|**Search/SafeSearchPermissions**<br>./Vendor/MSFT/Policy/Config/Search/SafeSearchPermissions|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0** : strict, hoogste filtering tegen inhoud voor volwassenen<br>**1**: gemiddeld, gemiddelde filtering op inhoud voor volwassenen (geldige zoekresultaten worden standaard niet gefilterd) (standaard)|
 |**Experience/AllowCopyPaste**<br>./Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**Startgrootte forceren**<br>./Vendor/MSFT/Policy/Config/Start/ForceStartSize|Alleen mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: wijziging van grootte door gebruiker toestaan (standaard)<br>**1**: niet-volledig scherm afdwingen<br>**2**: volledig scherm afdwingen|
-|**Update/RequireDeferUpgrade**<br>./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: upgrade niet uitstellen (in huidige vertakking blijven, CB (standaard))<br>**1**: toestaan dat updates en upgrades worden uitgesteld (apparaat volgt huidige vertakking voor bedrijven, CBB, regels)<br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|Desktop en mobiel<br>**Beschrijving:** beleid om software-updates maximaal vier weken uit te stellen<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br> **0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**4**: aantal weken om software-updates uit te stellen.<br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpgradePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod|Desktop en mobiel<br>**Beschrijving:** beleid om upgrades van functies tot maximaal 8 maanden uit te stellen<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**8**: aantal maanden dat functie-upgrades moeten worden uitgesteld.<br />Zie voor meer informatie:<br>[Windows 10Windows 10 servicing options for updates and upgrades (Engelstalig)](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment (Engelstalig)](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/PauseDeferrals**<br>./Vendor/MSFT/Policy/Config/Update/PauseDeferrals|Desktop en mobiel<br>**Beschrijving:** hiermee kunt u instellen dat een apparaat vijf weken geen updates en upgrades ontvangt.<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**: updates en upgrades tijdelijk onderbreken (vervalt na 5 weken)|
+|**Update/RequireDeferUpgrade**<br>./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: upgrade niet uitstellen (in huidige vertakking blijven, CB) (standaard)<br>**1**: toestaan dat updates en upgrades worden uitgesteld (apparaat volgt huidige vertakking voor bedrijven, CBB, regels)<br />Zie voor meer informatie:<br>[Inleiding tot Onderhoud van Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plannen voor de implementatie van Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|Desktop en mobiel<br>**Beschrijving:** beleid om software-updates maximaal vier weken uit te stellen<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br> **0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**4**: aantal weken om software-updates uit te stellen<br />Zie voor meer informatie:<br>[Inleiding tot Onderhoud van Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plannen voor de implementatie van Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpgradePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod|Desktop en mobiel<br>**Beschrijving:** beleid om functie-upgrades tot maximaal acht maanden uit te stellen<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**-**8**: aantal maanden dat functie-upgrades moeten worden uitgesteld<br />Zie voor meer informatie:<br>[Inleiding tot Onderhoud van Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plannen voor de implementatie van Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/PauseDeferrals**<br>./Vendor/MSFT/Policy/Config/Update/PauseDeferrals|Desktop en mobiel<br>**Beschrijving:** hiermee kunt u instellen dat een apparaat vijf weken geen updates en upgrades ontvangt.<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: updates onmiddellijk toepassen (standaardinstelling)<br>**1**: updates en upgrades tijdelijk onderbreken (vervalt na vijf weken)|
 
-## &nbsp;&nbsp;&nbsp;Windows Defender
+### <a name="windows-defender"></a>Windows Defender
 
 |Naam van beleid en URI|Details|
 |---------------|-----------|
 |**AllowRealtimeMonitoring**<br>./Vendor/MSFT/Policy/Config/Defender/AllowRealtimeMonitoring|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**AllowRealtimeMonitoring**<br>./Vendor/MSFT/Policy/Config/Defender/AllowBehaviorMonitoring|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
+|**AllowBehaviorMonitoring**<br>./Vendor/MSFT/Policy/Config/Defender/AllowBehaviorMonitoring|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**AllowIntrusionPreventionSystem**<br>./Vendor/MSFT/Policy/Config/Defender/AllowIntrusionPreventionSystem|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**AllowIOAVProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowIOAVProtection|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**AllowScriptScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowScriptScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
@@ -153,18 +153,18 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**ScheduleQuickScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime|Alleen desktop<br>**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: 00:00 uur<br>**60** – 1:00 uur<br>**120**: 2:00 uur (standaardinstelling)<br>**180** – 3:00 uur<br>**240** – 4:00 uur<br>**300** – 5:00 uur<br>**360** – 6:00 uur<br>**420** – 7:00 uur<br>**480** – 8:00 uur<br>**540** – 9:00 uur<br>**600** – 10:00 uur<br>**660** – 11:00 uur<br>**720** – 12:00 uur<br>**780** – 13:00 uur<br>**840** – 14:00 uur<br>**900** – 15:00 uur<br>**960** – 16:00 uur<br>**1020** – 17:00 uur<br>**1080** – 18:00 uur<br>**1140** – 19:00 uur<br>**1200** – 20:00 uur<br>**1260** – 21:00 uur<br>**1320** – 22:00 uur<br>**1380** – 23:00 uur|
 |**AVGCPULoadFactor**<br>./Vendor/MSFT/Policy/Config/Defender/AVGCPULoadFactor|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0** - **100** (standaard: **50**)|
 |**AllowArchiveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowArchiveScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
-|**AllowArchiveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br>**Waarden:** **0**: niet toegestaan (standaard), **1**: toegestaan|
+|**AllowEmailScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br>**Waarden:** **0**: niet toegestaan (standaard), **1**: toegestaan|
 |**AllowFullScanRemovableDriveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowFullScanRemovableDriveScanning|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan (standaard), **1**: toegestaan|
 |**AllowFullScanOnMappedNetworkDrives**<br>./Vendor/MSFT/Policy/Config/Defender/AllowFullScanOnMappedNetworkDrives|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**AllowScanningNetworkFiles**<br>./Vendor/MSFT/Policy/Config/Defender/AllowScanningNetworkFiles|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard); wordt ook uitgevoerd wanneer RTP is ingesteld op toegestaan|
-|**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: tijdens een interval niet op handtekeningen controleren<br>**1**: elk uur op handtekeningen controleren<br>**2**: elke 2 uur controleren, enz.<br>**24**: elke dag controleren<br>**Standaardwaarde:** 8: elke 8 uur controleren|
+|**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: tijdens een interval niet op handtekeningen controleren<br>**1**: elk uur op handtekeningen controleren<br>**2**: elke twee uur controleren <br>**24**: elke dag controleren<br>**Standaardwaarde:** 8: elke 8 uur controleren|
 |**AllowCloudProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: niet toegestaan, **1**: toegestaan (standaard)|
 |**SubmitSamplesConsent**<br>./Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: altijd vragen (standaard)<br>**1** : veilige voorbeelden automatisch verzenden<br>**2** : nooit verzenden<br>**3** : alle voorbeelden automatisch verzenden|
-|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br>*&lt;door puntkomma's gescheiden lijst met extensies&gt;* Bijvoorbeeld **obj;lib**<br>**Standaard:** er worden geen extensies uitgesloten|
+|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br>*&lt;door puntkomma's gescheiden lijst met extensies&gt;* Bijvoorbeeld: **obj;lib**<br>**Standaard:** er worden geen extensies uitgesloten|
 |**ExcludedPaths**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br />*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br />Bijvoorbeeld: **c:\test;c:\test1.exe**<br />**Standaardwaarde:** er worden geen paden uitgesloten|
 |**ExcludedProcesses**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:**<br>*&lt;door puntkomma's gescheiden lijst met paden&gt;*<br>Bijvoorbeeld: **c:\test.exe;c:\test1.exe**<br>**Standaardwaarde:** er worden geen processen uitgesloten|
 
-## &nbsp;&nbsp;&nbsp;Edge-browser
+### <a name="edge-browser"></a>Edge-browser
 
 |Naam van beleid en URI|Details|
 |---------------|------------|-----------|
@@ -179,50 +179,50 @@ In deze sectie vindt u meer informatie over de OMA-URI-instellingen die u met ee
 |**Automatisch invullen toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: uitgeschakeld (standaard), **1**: ingeschakeld|
 |**Sitelijst voor ondernemingen configureren**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:<br>**0**: niet geconfigureerd, <br>**1**: de lijst met websites van Bedrijfsmodus gebruiken indien geconfigureerd (standaard)<br>**2**: de locatie van de lijst met websites van Bedrijfsmodus opgeven|
 
-## Instellingen voor algemeen configuratiebeleid
+## <a name="general-configuration-policy-settings"></a>Algemene instellingen voor configuratiebeleid
 
-Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om ingebouwde instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten. 
+Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om ingebouwde instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 
-## &nbsp;&nbsp;&nbsp;Wachtwoord
+### <a name="password"></a>Wachtwoord
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
 |**Een wachtwoord vereisen om apparaten te ontgrendelden**|-|
-|**Vereist wachtwoordtype**|Geeft aan of het wachtwoord alleen numeriek of alfanumeriek moet zijn|
+|**Vereist wachtwoordtype**|Geeft aan of het wachtwoord alleen alfanumeriek of alleen numeriek moet zijn.|
 |**Vereist wachtwoordtype** - **Minimum aantal tekensets**|Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Deze instelling geeft aan hoeveel van dergelijke sets moeten worden opgenomen in het wachtwoord.|
-|**Minimale wachtwoordlengte**|Dit is alleen van toepassing op Windows 10 Mobile|
-|**Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Voor apparaten met Windows 10: als BitLocker is ingeschakeld op het apparaat, wordt het in de herstelmodus van BitLocker gezet nadat het aanmelden het aantal keren dat u opgeeft is mislukt. Als BitLocker niet is ingeschakeld op het apparaat, is deze instelling niet van toepassing.<br>Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opgeeft is mislukt, wordt het apparaat gewist.|
+|**Minimale wachtwoordlengte**|Dit is alleen van toepassing op Windows 10 Mobile.|
+|**Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**.|Voor apparaten met Windows 10: als BitLocker is ingeschakeld op het apparaat, wordt het in de herstelmodus van BitLocker gezet nadat het aanmelden het aantal keren dat u opgeeft is mislukt. Als BitLocker niet is ingeschakeld op het apparaat, is deze instelling niet van toepassing.<br>Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opgeeft is mislukt, wordt het apparaat gewist.|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd aan die een apparaat inactief moet zijn voordat het scherm wordt vergrendeld.|
-|**Verlopen van wachtwoorden (dagen)**|Met deze instelling bepaalt u de periode waarna het wachtwoord van een apparaat moet worden gewijzigd.|
-|**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u aan of u wilt voorkomen dat de eindgebruiker eerder gebruikte wachtwoorden mag hergebruiken.|
+|**Dagen tot wachtwoord verloopt**|Met deze instelling bepaalt u de periode waarna het wachtwoord van een apparaat moet worden gewijzigd.|
+|**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u aan of u wilt voorkomen dat de gebruiker eerder gebruikte wachtwoorden mag hergebruiken.|
 |**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|
-|**Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**|Indien ingeschakeld, moet de gebruiker een wachtwoord opgeven om het apparaat te ontgrendelen. (alleen Windows 10 Mobile)|
+|**Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**|Hiermee geeft u aan dat de gebruiker een wachtwoord moet opgeven om het apparaat te ontgrendelen (alleen Windows 10 Mobile).|
 
-## &nbsp;&nbsp;&nbsp;Versleuteling
-
-|Naam van de instelling|Aanvullende informatie (indien nodig)|
-|----------------|----------------------|
-|**Versleuteling vereisen voor mobiel apparaat**|Hiermee schakelt u versleuteling op doelapparaten in.<br>(alleen Windows 10 Mobile)|
-
-## &nbsp;&nbsp;&nbsp;Systeem
+### <a name="encryption"></a>Versleuteling
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
-|**Schermafbeelding toestaan**|Hiermee kan de gebruiker het apparaatscherm als afbeelding vastleggen. (alleen Windows 10 Mobile)|
-|**Handmatige uitschrijving toestaan**|Hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.|
+|**Versleuteling vereisen voor mobiel apparaat**|Hiermee schakelt u versleuteling op doelapparaten in<br>(alleen Windows 10 Mobile)|
+
+### <a name="system"></a>Systeem
+
+|Naam van de instelling|Aanvullende informatie (indien nodig)|
+|----------------|----------------------|
+|**Schermopname toestaan**|Hiermee kan de gebruiker het apparaatscherm als afbeelding vastleggen (alleen Windows 10 Mobile)|
+|**Handmatige uitschrijving toestaan**|Hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen|
 |**Handmatige installatie van basiscertificaat toestaan**|Dit is van toepassing op Windows 10 Mobile|
 |**Toestaan dat diagnostische en gebruiksgegevens worden verzonden naar Microsoft**|Mogelijke waarden zijn:<br><br>**Geen**: er worden geen gegevens naar Microsoft verzonden<br>**Basis**: beperkte informatie wordt naar Microsoft verzonden<br>**Uitgebreid**: uitgebreide diagnostische gegevens worden naar Microsoft verzonden<br>**Volledig (aanbevolen)**: hiermee worden dezelfde gegevens verzonden als bij **Uitgebreid**, aangevuld met gegevens over de apparaatstatus|
 
 
-## &nbsp;&nbsp;&nbsp;Account en synchronisatie
+### <a name="account-and-synchronization"></a>Account en synchronisatie
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
-|**Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker een Microsoft-account aan het apparaat kan koppelen.|
-|**Handmatig toevoegen van een ander account dan een Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker aan het apparaat e-mailaccounts kan toevoegen die niet aan een Microsoft-account zijn gekoppeld.|
-|**Synchronisatie van instellingen toestaan voor Microsoft-accounts**|Hiermee staat u synchronisatie tussen apparaten toe van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld.|
+|**Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker een Microsoft-account aan het apparaat kan koppelen|
+|**Handmatig toevoegen van een ander account dan een Microsoft-account toestaan**|Hiermee staat u toe dat de gebruiker aan het apparaat e-mailaccounts kan toevoegen die niet aan een Microsoft-account zijn gekoppeld|
+|**Synchronisatie van instellingen toestaan voor Microsoft-accounts**|Hiermee staat u synchronisatie tussen apparaten toe van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld|
 
-## &nbsp;&nbsp;&nbsp;Microsoft Edge
+### <a name="microsoft-edge"></a>Microsoft Edge
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
@@ -231,14 +231,14 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Verzenden van intranetverkeer naar Internet Explorer toestaan**|Hiermee staat u toe dat gebruikers intranetsites in Internet Explorer kunnen openen.<br>(alleen Windows 10 Desktop)|
 |**Do Not Track toestaan**|Hiermee configureert u de browser Microsoft Edge zodanig dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.|
 |**SmartScreen inschakelen**|-|
-|**Active Scripting toestaan**|Hiermee staat u toe dat er in de browser Microsoft Edge scripts, zoals JavaScript, kunnen worden uitgevoerd.|
-|**Pop-ups toestaan**|Dit is alleen van toepassing op Windows 10 Desktop|
+|**Active Scripting toestaan**|Toestaan dat scripts, zoals JavaScript, kunnen worden uitgevoerd in de Microsoft Edge-browser.|
+|**Pop-ups toestaan**|Dit is alleen van toepassing op Windows 10 Desktop.|
 |**Cookies toestaan**|-|
 |**Automatisch invullen toestaan**|Hiermee staat u gebruikers toe instellingen voor automatisch aanvullen in de browser te wijzigen.<br>(alleen Windows 10 Desktop)|
 |**Wachtwoordbeheer toestaan**|Hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.|
 |**Locatie van de lijst met websites van Bedrijfsmodus**|Geeft de plaats aan van de lijst met websites die in Bedrijfsmodus worden geopend. Gebruikers kunnen deze lijst niet bewerken.<br>(alleen Windows 10 Desktop)|
 
-## &nbsp;&nbsp;&nbsp;Apps
+### <a name="apps"></a>Apps
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
@@ -246,43 +246,43 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 
 
 
-## &nbsp;&nbsp;&nbsp;Mobiel
+### <a name="cellular"></a>Mobiel
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
-|**Gegevensroaming toestaan**|Roaming tussen netwerken toestaan tijdens het ophalen van gegevens.|
-|**VPN via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen indien verbonden met het mobiele netwerk.|
-|**VPN-roaming via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen tijdens het roamen op een mobiel netwerk.|
+|**Dataroaming toestaan**|Roaming tussen netwerken toestaan tijdens het ophalen van gegevens|
+|**VPN via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen indien verbonden met het mobiele netwerk|
+|**VPN-roaming via mobiele verbinding toestaan**|Hiermee bepaalt u of het apparaat toegang kan krijgen tot VPN-verbindingen tijdens het roamen in een mobiel netwerk|
 
-## &nbsp;&nbsp;&nbsp;Hardware
+### <a name="hardware"></a>Hardware
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
 |**Camera toestaan**|-|
-|**Verwisselbare opslag toestaan**|Hiermee geeft u op of er op het apparaat externe opslagapparaten, zoals een SD-kaart, kunnen worden gebruikt.|
+|**Verwisselbare opslag toestaan**|Hiermee geeft u op of er op het apparaat externe opslagapparaten, zoals een SD-kaart, kunnen worden gebruikt|
 |**Wi-Fi toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
-|**Internetverbinding delen toestaan**|Hiermee kunt u het gebruik van een gedeelde internetverbinding op het apparaat toestaan.|
-|**Handmatige Wi-Fi-configuratie toestaan**|Hiermee bepaalt u of de gebruiker zijn eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd.<br>(alleen Windows 10 Mobile)|
-|**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee kunt u het apparaat automatisch verbinding laten maken met gratis Wi-Fi-hotspots en automatisch de voorwaarden voor de verbinding laten accepteren.|
-|**Geolocatie toestaan**|Geeft aan of op het apparaat gegevens van locatieservices kunnen worden gebruikt.|
-|**NFC toestaan**|Hiermee staat u gebruik van de NFC-mogelijkheden op het apparaat toe.|
+|**Internetverbinding delen toestaan**|Hiermee kunt u het gebruik van een gedeelde internetverbinding op het apparaat toestaan|
+|**Handmatige Wi-Fi-configuratie toestaan**|Hiermee bepaalt u of de gebruiker zijn eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd<br>(alleen Windows 10 Mobile)|
+|**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee kunt u het apparaat automatisch verbinding laten maken met gratis Wi-Fi-hotspots en automatisch de voorwaarden voor de verbinding laten accepteren|
+|**Geolocatie toestaan**|Geeft aan of op het apparaat gegevens van locatieservices kunnen worden gebruikt|
+|**NFC toestaan**|Hiermee staat u gebruik van de NFC-mogelijkheden op het apparaat toe|
 |**Bluetooth toestaan**|-|
-|**Modus voor Bluetooth-detectie toestaan**|Hiermee kan dit apparaat worden gedetecteerd door andere Bluetooth-apparaten.|
-|**Bluetooth-promotie toestaan**|Hiermee staat u toe dat apparaten reclame via Bluetooth kunnen ontvangen.|
-|**Opnieuw instellen van telefoon toestaan**|Hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen.|
-|**USB-verbinding toestaan**|Hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen hebben tot externe opslagapparaten.|
-|**Antidiefstalmodus toestaan**|Hiermee configureert u of de antidiefstalmodus van Windows is ingeschakeld.|
+|**Modus voor Bluetooth-detectie toestaan**|Hiermee kan dit apparaat worden gedetecteerd door andere Bluetooth-apparaten|
+|**Bluetooth-promotie toestaan**|Hiermee staat u toe dat apparaten reclame via Bluetooth kunnen ontvangen|
+|**Opnieuw instellen van telefoon toestaan**|Hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen|
+|**USB-verbinding toestaan**|Hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen hebben tot externe opslagapparaten|
+|**Antidiefstalmodus toestaan**|Hiermee configureert u of de antidiefstalmodus van Windows is ingeschakeld|
 
-## &nbsp;&nbsp;&nbsp;Functies
+### <a name="features"></a>Functies
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|---------------------|
 |**Kopiëren en plakken toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 |**Spraakopname toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
-|**Cortana toestaan**|Hiermee schakelt u de spraakassistent Cortana in of uit.|
-|**Meldingen van onderhoudscentrum toestaan**|Hiermee schakelt u de meldingen van het Onderhoudscentrum op het vergrendelingsscherm in of uit.<br>(alleen Windows 10 Mobile)|
+|**Cortana toestaan**|Hiermee schakelt u de spraakassistent Cortana in of uit|
+|**Meldingen van onderhoudscentrum toestaan**|Hiermee schakelt u de meldingen van het Onderhoudscentrum op het vergrendelingsscherm in of uit<br>(alleen Windows 10 Mobile)|
 
-## &nbsp;&nbsp;&nbsp;Windows Defender
+### <a name="windows-defender"></a>Windows Defender
 
 Alle instellingen zijn alleen voor Windows 10 Desktop.
 
@@ -290,43 +290,41 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 |-|-|
 |**Real-timecontrole toestaan**|Hiermee schakelt u het real-time scannen op malware, spyware en andere ongewenste software in.|
 |**Gedragscontrole toestaan**|Hiermee kunt u Defender laten controleren op de aanwezigheid van bepaalde bekende patronen van verdachte activiteiten op apparaten.|
-|**Systeem voor netwerkinspectie inschakelen**|Het Netwerkinspectiesysteem (NIS) kan u op basis van de handtekeningen van bekende beveiligingsproblemen van het Microsoft Endpoint Protection Center helpen met het detecteren en blokkeren van schadelijk verkeer, zodat de apparaten in het netwerk beveiligd zijn tegen exploits.|
+|**Netwerkinspectiesysteem inschakelen**|Het Netwerkinspectiesysteem (NIS) kan u op basis van de handtekeningen van bekende beveiligingsproblemen van het Microsoft Endpoint Protection Center helpen met het detecteren en blokkeren van schadelijk verkeer, zodat de apparaten in het netwerk beveiligd zijn tegen exploits.|
 |**Alle downloads scannen**|Hiermee bepaalt u of Windows Defender alle bestanden moet scannen die van internet worden gedownload.|
 |**Scannen van scripts toestaan**|Hiermee laat u Defender scripts scannen die worden gebruikt in Internet Explorer.|
-|**Activiteiten van bestanden en programma's bewaken**|Schakel deze instelling in om Defender toe te staan activiteiten van bestanden en programma's op apparaten te bewaken.|
+|**Activiteiten van bestanden en programma's bewaken**|Hiermee staat u Defender toe om activiteiten van bestanden en programma's op apparaten te bewaken.|
 |**Dagen om opgeloste problemen met malware bij te houden**|Hiermee kunt Defender gedurende het aantal dagen dat u opgeeft, opgeloste malware laten bijhouden, zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op **0**, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd. |
-|**Toegang tot gebruikersinterface van client toestaan**|Hiermee bepaalt u of de gebruikersinterface van Windows Defender voor eindgebruikers wordt verborgen.<br>Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.|
+|**Toegang tot de gebruikersinterface voor de client toestaan**|Hiermee bepaalt u of de gebruikersinterface van Windows Defender voor gebruikers wordt verborgen.<br>Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de gebruiker de volgende keer opnieuw wordt opgestart.|
 |**Een dagelijkse snelle scan plannen**|Hiermee kunt u een snelle scan plannen die dagelijks wordt uitgevoerd op het moment dat u selecteert.|
 |**Een systeemscan plannen**|Hiermee kunt u een volledige of snelle systeemscan plannen die regelmatig wordt uitgevoerd op de dag en tijd die u selecteert.|
 |**CPU-verbruik tijdens een scan beperken**|Hiermee kunt u de hoeveelheid CPU beperken die scans mogen gebruiken (van **1** tot **100**).|
-|**Archiefbestanden scannen**|Hiermee kunt u toestaan dat Defender gearchiveerde bestanden scant, zoals zip- of cab-bestanden.|
+|**Archiefbestanden scannen**|Hiermee kunt u toestaan dat Defender gearchiveerde bestanden scant, zoals ZIP- of CAB-bestanden.|
 |**E-mailberichten scannen**|Hiermee kunt u toestaan dat Defender e-mailberichten scant wanneer deze op het apparaat binnenkomen.|
 |**Verwisselbare stations scannen**|Hiermee kunt u Defender verwisselbare stations, zoals USB-sticks, laten scannen.|
 |**Toegewezen netwerkstations scannen**|Hiermee kunt u Defender bestanden op een gekoppeld netwerkstation laten scannen.<br>Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.|
-|**Bestanden scannen die worden geopend vanuit gedeelde netwerkmappen**|Hiermee kunt u Defender bestanden op gedeelde stations laten scannen (bijvoorbeeld gedeelde stations die via een UNC-pad toegankelijk zijn).<br>Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.|
-|**Update-interval voor handtekeningen**|Hiermee geeft u het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren.|
+|**Bestanden scannen die zijn geopend vanuit gedeelde mappen op het netwerk**|Hiermee kunt u Defender bestanden op gedeelde stations laten scannen (bijvoorbeeld gedeelde stations die via een UNC-pad toegankelijk zijn).<br>Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.|
+|**Interval voor handtekeningupdates**|Hiermee geeft u het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren.|
 |**Cloudbeveiliging toestaan**|Hiermee kunt u toestaan of blokkeren dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Deze informatie wordt gebruikt om de service in de toekomst te verbeteren.|
 |**Gebruikers vragen voorbeelden te verzenden**|Hiermee bepaalt u of bestanden waarvoor verdere analyse door Microsoft nodig is om te bepalen of deze schadelijk zijn, automatisch naar Microsoft moeten worden verzonden.|
-|**Detectie van mogelijk ongewenste toepassingen**|U kunt deze instelling gebruiken als u geregistreerde Windows-desktopapparaten wilt beveiligen tegen het uitvoeren van software die door Windows Defender als mogelijk ongewenst is gedefinieerd. U kunt voorkomen dat deze toepassingen worden uitgevoerd, of de controlemodus gebruiken om te rapporteren wanneer een mogelijk ongewenste toepassing wordt geïnstalleerd.|
-|**Uit te sluiten bestanden en mappen wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer bestanden en mappen toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.|
-|**Uit te sluiten bestandsextensies wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer bestandsextensies toe, zoals **jpg** of **txt**. Alle bestanden met deze extensies worden niet opgenomen in real-timescans of geplande scans.|
-|**Uit te sluiten processen wanneer een scan wordt uitgevoerd of bij het gebruik van realtime-beveiliging**|Voeg aan de uitsluitingslijst een of meer processen toe van het type **.exe**, **.com** of **.scr**. Deze processen worden niet opgenomen in real-timescans of geplande scans.| 
+|**Detectie van mogelijk ongewenste toepassingen**|Hiermee worden geregistreerde Windows-desktopapparaten beveiligd tegen het uitvoeren van software die door Windows Defender als mogelijk ongewenst is gedefinieerd. U kunt voorkomen dat deze toepassingen worden uitgevoerd, of de controlemodus gebruiken om te rapporteren wanneer een mogelijk ongewenste toepassing wordt geïnstalleerd.|
+|**Bestanden en mappen die moeten worden uitgesloten bij het scannen en bij real-timebeveiliging**|Voegt aan de uitsluitingslijst een of meer bestanden en mappen toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.|
+|**Bestandsextensies die moeten worden uitgesloten bij het scannen en bij real-timebeveiliging**|Voeg aan de uitsluitingslijst een of meer bestandsextensies toe, zoals **jpg** of **txt**. Bestanden met deze extensies worden niet opgenomen in real-timescans of geplande scans.|
+|**Processen die uitgesloten moeten worden bij het scannen en bij de real-timebeveiliging**|Voegt aan de uitsluitingslijst een of meer processen toe van het type **.exe**, **.com** of **.scr**. Deze processen worden niet opgenomen in real-timescans of geplande scans.|
 
 
-## &nbsp;&nbsp;&nbsp;Updates
+### <a name="updates"></a>Updates
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|---------------|
-|**Automatische updates toestaan**|Schakel deze instelling in om automatische updates toe te staan. Configureer vervolgens een van de volgende instellingen om het gedrag voor updates te bepalen:<br />**Melding van download**<br />**Automatisch installeren op onderhoudstijdstip**<br />**Automatisch installeren en opstarten op onderhoudstijdstip**<br />**Automatisch installeren en opnieuw opstarten op het geplande tijdstip** **Opmerking:** wanneer deze optie is geselecteerd, kunt u ook de volgende instellingen configureren: **Melding aan eindgebruiker onderdrukken** en **De installatiedag voor geplande updates definiëren**.<br>(alleen Windows 10 Desktop)|
+|**Automatische updates toestaan**|Automatische updates toestaan. Configureer een van de volgende instellingen om het gedrag voor updates te bepalen:<br />**Melding van download**<br />**Automatisch installeren op onderhoudstijdstip**<br />**Automatisch installeren en opstarten op onderhoudstijdstip**<br />**Automatisch installeren en opnieuw opstarten op het geplande tijdstip**: wanneer deze optie is geselecteerd, kunt u ook de volgende instellingen configureren: **Melding onderdrukken voor eindgebruiker** en **De installatiedag voor geplande updates definiëren**.<br>(alleen Windows 10 Desktop)|
 |**Functies van evaluatieversies toestaan**|Hiermee kan Microsoft instellingen en functies van evaluatieversies implementeren op Windows 10-apparaten. U kunt selecteren dat alleen instellingen zijn toegestaan, of dat alle instellingen en functies van evaluatieversies mogen worden geïnstalleerd.|
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

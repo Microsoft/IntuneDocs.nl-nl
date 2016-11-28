@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,99 +14,45 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
-ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
+ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
+ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
 
 
 ---
 
 
-# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Uw Windows 10 Mobile- of Windows 10-desktopapparaat registreren bij Intune
+# <a name="enroll-your-windows-10-devices-in-intune"></a>Uw Windows 10-apparaten inschrijven in Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
+Door uw apparaten in te schrijven bij Microsoft Intune, krijgen uw Windows 10-apparaten toegang tot beveiligde gegevens van uw organisatie, inclusief e-mail, bestanden en andere bronnen. Dit geldt voor zowel Windows 10 Desktop- als Windows 10 Mobile-apparaten. Door uw apparaten in te schrijven, is deze toegang zowel voor u als voor uw organisatie beveiligd en staan uw werkgegevens los van uw persoonlijke gegevens.
 
+Wilt u meer weten? Ontdek wat er gebeurt wanneer u [uw apparaat inschrijft in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) en wat betekent dat voor de [informatie op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-Ga als volgt te werk om uw Windows 10 Mobile- of Windows 10-desktopapparaat te registreren:
+## <a name="windows-10-desktop-devices"></a>Windows 10 Desktop-apparaten
+1.  Ga naar __Start__.
 
-1.  Ga in Windows naar **Instellingen** en tik op **Accounts**.
+ ![Menu Start van Windows](../media/windows-start-menu.png).
 
-    ![Windows-instellingen](./media/w10-enroll-rs1-settings-accounts.png)
+2. Typ de zin 'over uw pc' in de __zoekbalk__ en selecteer vervolgens __Over uw pc__.
 
-2.  Bekijk de volgende twee schermen en kies het scherm dat lijkt op het scherm op uw apparaat. Volg de stappen die bij het scherm horen dat u op het apparaat ziet.
+ ![zoekinstellingen voor info over uw pc](../media/searching_for_about_your_pc.png)
 
-    Als u dit scherm ziet, volgt u de instructies in [Stappen om te volgen als u Werk of school openen ziet](#steps-to-follow-if-you-see-access-work-or-school).
+2.  In uw __Instellingen__ ziet u een lijst met informatie over de versie van Windows 10 die is geïnstalleerd op uw pc. Zoek in deze lijst naar de __versie__.
 
-    ![Verbinding maken met werk of school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+ ![Windows 10 Desktop - over uw pc](../media/settings_about_pc.png)
 
-    Als u dit scherm ziet, volgt u de stappen in [Stappen om te volgen als u Uw account ziet](#steps-to-follow-if-you-see-your-account).
+3.  Als uw versie __1607__ is, gaat u verder met [deze stappen](enroll-your-w10-device-access-work-or-school). Als uw versie __1511__ is, gaat u verder met [deze stappen](enroll-your-w10-device-your-account).
 
-    ![Uw account](./media/w10-enroll-2-accounts-your-account.png)
+## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-apparaten
 
-## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Stappen om te volgen als u Werk of school openen ziet
-
-1.  Tik op **Toegang tot werk of school** en tik op **Verbinden**.
-
-    ![Tik op Werk- of school-account openen](./media/w10-enroll-rs1-connect-to-work-or-school.png)
-
-2.  Geef uw e-mailadres van werk of school op en tik op **Volgende**.
-
-    ![Uw werk- of schoolaccount opgeven](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
-
-3. Meld u bij Intune aan met uw werk- of schoolaccount.
-
-    ![Een werk- of schoolaccount toevoegen](./media/w10-enroll-rs1-enter-your-credentials.png)
-
-    U ziet een bericht waarin staat dat bij uw bedrijf of school uw apparaat wordt geregistreerd.
-
-4. Wanneer u de pagina **U bent klaar.** ziet, tikt u op **Sluiten**. U bent klaar.
-
-  ![Tik in het scherm U bent klaar. op Sluiten](./media/w10-enroll-rs1-youre-all-set.png)
-
-5. Als u wilt controleren of uw verbinding wel klopt, gaat u terug naar **Instellingen**. Hier wordt uw werk- of schoolaccount vermeld.
-
-    ![Valideren of de verbinding correct is ingesteld](./media/w10-enroll-rs1-validate-successful-enrollment.png)
-
-Als u de voorgaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot uw werk- of schoolaccount en -bestanden, volgt u de stappen in [Probleemoplossingsstappen als u Werk of school openen ziet](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
-
-
-## <a name="steps-to-follow-if-you-see-your-account"></a>Stappen om te volgen als u Uw account ziet
-
-1.  Ga in Windows naar **Instellingen** en tik op **Accounts**.
-
-    ![Ga naar Instellingen en Accounts](./media/W10-enroll-1-settings-accounts.png)
-
-2.  Tik op **Uw account**.
-
-    ![Tik op Uw account](./media/W10-enroll-2-accounts-your-account.png)
-
-3.  Tik op **Een werk- of schoolaccount toevoegen**.
-
-    ![Tik op Een werk- of schoolaccount toevoegen](./media/w10-enroll-3-add-work-school-acct.png)
-
-4.  Meld u aan met de referenties van uw werk- of schoolaccount.
-
-    ![aanmelden](./media/W10-enroll-4-sign-in.png)
-
-Als u de voorgaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot uw werk- of schoole-mailadres, -bestanden en andere gegevens, volgt u de instructies in [Probleemoplossingsstappen als u Uw account ziet](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).
-
-Het wordt ook aangeraden de bedrijfsportal-app te installeren, waarmee u eenvoudig de bedrijfsapps die relevant zijn voor u en uw rol kunt identificeren en downloaden. Afhankelijk van hoe uw bedrijf Intune heeft geconfigureerd, is de bedrijfsportal-app mogelijk geïnstalleerd als onderdeel van het registratieproces.
-
-Als u wilt controleren of u de app hebt, zoekt u naar **Bedrijfsportal** in de lijst met apps. Als u Bedrijfsportal niet in de lijst met apps ziet, volgt u deze stappen om het te installeren.
-
-1.  Tik op **Start** &gt; **Store**.
-
-2.  Tik op **Zoeken** en typ **bedrijfsportal**.
-
-3.  Tik in de lijst met resultaten op **Bedrijfsportal** &gt; **Installeren**.
-
-4.  Tik op **Installeren** of **Gratis**. Welke optie wordt weergegeven, is afhankelijk van hoe de app binnen uw bedrijf is geconfigureerd.
+1.  Veeg in __Start__ naar de lijst __Alle apps__ en selecteer vervolgens de app __Instellingen__.
+2.  Tik op __Systeem__ en vervolgens op __Info__.
+3.  Tik onder __Apparaatgegevens__ op __Meer info__. U ziet een lijst met informatie over uw apparaat. Zoek in deze lijst naar de __versie__.
+4.  Als uw versie __1607__ is, gaat u verder met [deze stappen](enroll-your-w10-device-access-work-or-school). Als uw versie __1511__ is, gaat u verder met [deze stappen](enroll-your-w10-device-your-account).
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

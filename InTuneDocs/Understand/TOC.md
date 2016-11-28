@@ -1,5 +1,5 @@
 # [Begrijpen en verkennen](introduction-to-microsoft-intune.md)
-## [Inleiding in Intune](introduction-to-microsoft-intune.md)
+## [Inleiding tot Intune](introduction-to-microsoft-intune.md)
 ## [Intune-evaluatiehandleiding](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [Aanmelden of registreren voor een evaluatie van 30 dagen](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [Gebruikers toevoegen](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
@@ -12,13 +12,13 @@
 ## [Verklarende woordenlijst](intune-glossary.md)
 
 # [Aan de slag](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
-# [Wat is er nieuw](/intune/whats-new/whats-new-in-microsoft-intune)
+# [Wat is er nieuw?](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Implementeren en gebruiken](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Apps ontwikkelen en aanpassen](/intune/develop/intune-app-sdk)
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,9 +2,10 @@
 title: VPN per app voor Android met behulp van Pulse Secure | Microsoft Intune
 description: U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd door Intune.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +14,35 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
-ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 
 ---
 
-# Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten
+# <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten
 
-U kunt een VPN-profiel per app maken voor apparaten met Android 5.0 en hoger die worden beheerd met Intune. Maak eerst een VPN-profiel met het verbindingstype Pulse Secure. Maak vervolgens een aangepast configuratiebeleid dat het VPN-profiel aan specifieke apps koppelt. 
+U kunt een VPN-profiel per app maken voor apparaten met Android 5.0 en hoger die worden beheerd met Intune. Maak eerst een VPN-profiel met het verbindingstype Pulse Secure of Citrix. Maak vervolgens een aangepast configuratiebeleid dat het VPN-profiel aan specifieke apps koppelt. 
 
-Nadat u het beleid op uw Android-apparaat of in uw gebruikersgroepen hebt geïmplementeerd, moeten gebruikers het PulseSecure-VPN starten. PulseSecure staat vervolgens alleen verkeer van de opgegeven apps toe om een VPN-verbinding te maken.
+Nadat u het beleid op uw Android-apparaat of in uw gebruikersgroepen hebt geïmplementeerd, moeten gebruikers het PulseSecure- of Citrix-VPN starten. De verbinding staat vervolgens alleen verkeer van de opgegeven apps toe om een open VPN-verbinding te gebruiken.
 
 > [!NOTE]
 >
 > Alleen het verbindingstype Pulse Secure wordt ondersteund voor dit profiel.
 
 
-### Stap 1: Een VPN-profiel maken
+### <a name="step-1-create-a-vpn-profile"></a>Stap 1: Een VPN-profiel maken
 
 1. Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies **Beleid** > **Beleid toevoegen**.
 2. Als u een sjabloon wilt selecteren voor het nieuwe beleid, vouwt u **Android** uit en kiest u vervolgens **VPN-profiel (Android 4 en hoger)**.
-3. In de sjabloon kiest u voor **Verbindingstype**, de optie **Pulse Secure**.
+3. In de sjabloon kiest u voor **Verbindingstype** de optie **Pulse Secure** of **Citrix**.
 4. Voltooi het VPN-profiel en sla het op. Zie [VPN-verbindingen](../deploy-use/vpn-connections-in-microsoft-intune.md) voor meer informatie over VPN-profielen.
 
 > [!NOTE]
 >
 > Noteer de naam van het VPN-profiel voor gebruik in de volgende stap. Bijvoorbeeld MyAppVpnProfile.
 
-### Stap 2: Een aangepast configuratiebeleid maken
+### <a name="step-2-create-a-custom-configuration-policy"></a>Stap 2: Een aangepast configuratiebeleid maken
 
    1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid** > **Beleid toevoegen** > **Android** > **Aangepaste configuratie** > **Beleid maken**.
    2. Geef een naam op voor het beleid.
@@ -53,7 +54,7 @@ Nadat u het beleid op uw Android-apparaat of in uw gebruikersgroepen hebt geïmp
 
 ![Voorbeeld van een aangepast VPN-beleid per app voor Android](./media/android_per_app_vpn_oma_uri.png)
 
-#### Uw lijst met apps instellen als een blacklist of whitelist (optioneel)
+#### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Uw lijst met apps instellen als een blacklist of whitelist (optioneel)
   U kunt een lijst met apps opgeven die de VPN-verbinding *niet* mogen gebruiken, door de waarde **BLACKLIST** te gebruiken. Alle andere apps kunnen wel gebruikmaken van de VPN-verbinding.
 U kunt ook de waarde **WHITELIST** gebruiken om een lijst met apps op te geven die de VPN-verbinding *wel* mogen gebruiken. Apps die niet op de lijst staan, kunnen in dat geval geen gebruikmaken van de VPN-verbinding.
   1.    Kies onder **OMA-URI-instellingen** de optie **Toevoegen**.
@@ -64,7 +65,7 @@ U kunt ook de waarde **WHITELIST** gebruiken om een lijst met apps op te geven d
 
 
 
-### Stap 3: Beide beleidsregels implementeren
+### <a name="step-3-deploy-both-policies"></a>Stap 3: Beide beleidsregels implementeren
 
 U moet *beide* beleidsregels naar *dezelfde* Intune-groepen implementeren.
 
@@ -77,6 +78,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

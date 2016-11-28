@@ -14,41 +14,41 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
-ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
 
 
 ---
 
-# Een nalevingsbeleid voor apparaten maken in Microsoft Intune
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid voor apparaten maken in Microsoft Intune
 In dit onderwerp worden de stappen beschreven die u kunt volgen om nalevingsbeleid te maken waaraan een apparaat zich moet houden om aan dat beleid te voldoen.
 
-##  Stap 1: Een nieuw beleid toevoegen
+##  <a name="step-1-add-a-new-policy"></a>Stap 1: Een nieuw beleid toevoegen
   Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beleid** &gt; **Nalevingsbeleid** &gt; **Toevoegen**.
 
   ![Schermafbeelding van de pagina met nalevingsbeleid in de Intune-beheerconsole, waarop de optie Toevoegen in het menu boven aan de pagina wordt weergegeven](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  Stap 2: Instellingen configureren
+##  <a name="step-2-configure-settings"></a>Stap 2: Instellingen configureren
 Op de pagina **Beleid maken** configureert u de instellingen die u nodig hebt:
-  -   De systeembeveiligingsinstellingen, zoals wachtwoord en versleuteling
+  -   De systeembeveiligingsinstellingen, zoals wachtwoorden en versleuteling.
   -   De apparaatstatusinstellingen, zoals of een apparaat is gekraakt of door de Windows-apparaatstatusservice Health Attestation als in orde wordt gerapporteerd.
   -   Instellingen voor apparaateigenschappen, zoals de minimaal vereiste versie van het besturingssysteem of de maximale versie van het besturingssysteem die is toegestaan.
-![Het tabblad Algemeen van de pagina Beleid maken ](./media/intune-sa-3b-create-policy.png)
+![Het tabblad Algemeen van de pagina Beleid maken](./media/intune-sa-3b-create-policy.png)
 
 
-##  Stap 3: Het beleid opslaan
+##  <a name="step-3-save-the-policy"></a>Stap 3: Het beleid opslaan
 Als u klaar bent, kiest u **Beleid opslaan**.
 
 U hebt de optie om het beleid direct na het opslaan te implementeren, maar u kunt het beleid ook later implementeren. Het nieuwe beleid wordt weergegeven in het knooppunt **Nalevingsbeleid** van de werkruimte **Beleid**.
 
-##  Stap 4: de geldigheidsperiode voor de nalevingsstatus instellen
-Als u de tijd wilt opgeven die het apparaat heeft om in te checken voordat een apparaat als niet compatibel wordt gezien, gaat u naar de instellingen voor het nalevingsbeleid en werkt u de tijd bij.  De standaardwaarde is ingesteld op 30 dagen.
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>Stap 4: de geldigheidsperiode voor de nalevingsstatus instellen
+Als u de tijd wilt opgeven die het apparaat heeft om in te checken voordat een apparaat als niet compatibel wordt gezien, gaat u naar de instellingen voor het nalevingsbeleid en werkt u de tijd bij. De standaardwaarde is ingesteld op 30 dagen.
 
-![instellingen voor nalevingsbeleid in de beleidsmenubalk](../media/mdm-compliance-policy-settings.png)
+![Instellingen voor nalevingsbeleid in de beleidsmenubalk](../media/mdm-compliance-policy-settings.png)
 
-![dialoogvenster voor nalevingsbeleid](../media/mdm-ca-compliance-status-validity-period.png)
+![Dialoogvenster voor nalevingsbeleid](../media/mdm-ca-compliance-status-validity-period.png)
 
-## Ondersteunde beleidsinstellingen
+## <a name="supported-policy-settings"></a>Ondersteunde beleidsinstellingen
 In de volgende tabel staan de instellingen voor nalevingsbeleid en de platformen waarop deze worden ondersteund.
 
 -------------
@@ -80,14 +80,14 @@ Selecteer een van de volgende mogelijkheden voor meer informatie over instelling
 - [Instellingen voor nalevingsbeleid voor Windows en Windows Phones ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 [Nalevingsbeleid implementeren en bewaken](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Inleiding in nalevingsbeleid voor apparaten](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
