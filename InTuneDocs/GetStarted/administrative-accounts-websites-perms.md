@@ -14,13 +14,13 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 69b19cec363c769209dab02a941f286057e9dc3e
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: e5282defb4560fee028e16d6526037c848678d1a
 
 
 ---
 
-# Beheerdersaccounts, websites en machtigingen in Microsoft Intune
+# <a name="administrative-accounts-websites-and-permissions-in-microsoft-intune"></a>Beheerdersaccounts, websites en machtigingen in Microsoft Intune
 
 Lees dit onderwerp en andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt.
 
@@ -31,36 +31,36 @@ Voor het beheer van Intune moet u het volgende gebruiken:
 
 In de volgende gedeelten worden deze accounts en portals uitgelegd.
 
-## Beheerdersaccounts en gebruikersaccounts met speciale machtigingen
+## <a name="administrator-accounts-and-user-accounts-with-special-permissions"></a>Beheerdersaccounts en gebruikersaccounts met speciale machtigingen
 
 Hieronder vindt u de accounts en machtigingen die u voor Intune gebruikt.
 
-### Tenantbeheerder
+### <a name="tenant-administrator"></a>Tenantbeheerder
 |Machtigingsniveaus|Meer informatie|
 |--------------------------|-------------------------|
 |Aan tenantbeheerders is één beheerdersrol toegewezen waarmee het beheerbereik voor die gebruiker en de te beheren taken zijn gedefinieerd.<br /><br />De beheerdersrollen voor de verschillende Microsoft-cloudservices komen overeen, hoewel bepaalde rollen door sommige services mogelijk niet worden ondersteund.<br /><br /> In Microsoft Intune worden de volgende rollen gebruikt:<br /><br />- Algemeen beheerder<br />- Financieel medewerker<br />- Wachtwoordbeheerder<br />- Serviceondersteuningsbeheerder<br />- Gebruikerstoegangbeheerder|Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, is standaard een tenantbeheerder met de rol Algemeen beheerder.<br /></br>  Als tenantbeheerder gebruikt u de [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] om uw abonnement voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] te beheren en om tenantbeheerders toe te wijzen vanuit de [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Gebruik een tenantbeheerder met de rol voor algemeen beheer voor toegang tot de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] om uw eerste servicebeheerder toe te wijzen. Gebruik een tenantbeheerder bij voorkeur niet voor dagelijkse beheertaken. Een tenantbeheerder heeft geen licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nodig om toegang tot de [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] te krijgen.<br /><br />De tenantbeheerder is een algemeen concept in Microsoft-cloudservices. Wanneer u zich abonneert op [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], is uw service een tenant van Microsoft Azure AD. Zie het gedeelte Azure AD-tenant in [Wat is een Azure AD-adreslijst?](http://technet.microsoft.com/library/jj573650.aspx).|
 
 
-### Servicebeheerder
+### <a name="service-administrator"></a>Servicebeheerder
 |Machtigingsniveaus|Meer informatie|
 |--------------------------|-------------------------|
 |Aan een servicebeheerder wordt een van de volgende machtigingen toegewezen:<br /><br />**Volledige toegang[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]: verleent toegang tot alle gebieden van de **, zonder beperkingen. Kan ook andere servicebeheerders toevoegen en beheren.<br /><br />**Alleen-lezentoegang**: verleent leestoegang tot alle gebieden van de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. Een alleen-lezen servicebeheerder kan gegevens niet wijzigen, maar kan wel rapporten uitvoeren.<br /><br />**Helpdesk - knooppunt Groepen**: verleent machtigingen die de servicebeheerder in staat stellen om uitsluitend een aantal taken uit te voeren die betrekking hebben op helpdeskscenario's. Zie [Intune-consoleweergaven aanpassen voor beheerdersrollen](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console) voor informatie over deze machtigingenset.|Met [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] wordt standaard geen servicebeheerder toegewezen. In plaats daarvan moet u een tenantbeheerder met de rol van algemeen beheerder gebruiken om de eerste servicebeheerder voor uw abonnement toe te wijzen. </br></br> Als servicebeheerder kunt u de [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] gebruiken om dagelijkse taken te beheren voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].<br /><br />U wijst servicebeheerders vanuit de beheerconsole toe. Een servicebeheerder moet een licentie voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hebben, voordat het account toegang heeft tot de beheerconsole.|
 
 
 
-### Apparaatinschrijvingsmanagers
+### <a name="device-enrollment-managers"></a>Apparaatinschrijvingsmanagers
 |Machtigingsniveaus|Meer informatie|
 |--------------------------|-------------------------|
-|Apparaatinschrijvingsmanagers zijn standaardgebruikersaccounts die een aanvullende machtiging voor het inschrijven van meer dan vijf apparaten hebben.|Elke [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-gebruiker kan standaard maximaal vijf apparaten inschrijven. U kunt een gebruikersaccount echter de machtiging voor apparaatinschrijvingsmanager geven en vervolgens dat account gebruiken om grote groepen bedrijfsapparaten in te schrijven. Dit is handig als apparaten bijvoorbeeld tijdelijk aan gebruikers worden toegewezen of worden gebruikt in kioskmodus, waarbij geen gebruiker aan het apparaat gekoppeld hoeft te worden.|
+|Apparaatinschrijvingsmanagers zijn standaardgebruikersaccounts die een aanvullende machtiging voor het inschrijven van meer dan 15 apparaten hebben.|Elke [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-gebruiker kan standaard maximaal 15 apparaten inschrijven. U kunt een gebruikersaccount echter de machtiging voor apparaatinschrijvingsmanager geven en vervolgens dat account gebruiken om grote groepen bedrijfsapparaten in te schrijven. Dit is handig als apparaten bijvoorbeeld tijdelijk aan gebruikers worden toegewezen of worden gebruikt in kioskmodus, waarbij geen gebruiker aan het apparaat gekoppeld hoeft te worden.|
 
 
-## Beheerwebsites voor Intune
+## <a name="administrative-websites-for-intune"></a>Beheerwebsites voor Intune
  Voor verschillende beheertaken gebruikt u een van de volgende beheerwebsites die u kunt openen met een [ondersteunde webbrowser](supported-web-browsers.md).
 
 - [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Microsoft Intune-beheerdersconsole](https://admin.manage.microsoft.com/)
 
-### [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+### <a name="office-365-portalhttpgomicrosoftcomfwlinkplinkid698854"></a>[Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 
 **Als tenantbeheerder gebruikt u deze portal om uw abonnement te beheren**, met inbegrip van de volgende taken wanneer dit wordt toegestaan door uw beheerdersrol:
 
@@ -75,7 +75,7 @@ Hieronder vindt u de accounts en machtigingen die u voor Intune gebruikt.
 - Voor toegang tot de Office 365-portal moet uw account de aanmeldingsstatus **Toegestaan** hebben. Deze status is niet hetzelfde als wanneer u een licentie voor het abonnement hebt. Standaard hebben alle gebruikersaccounts de status **Toegestaan**.
 
 
-### [Microsoft Intune-beheerdersconsole](https://admin.manage.microsoft.com/)
+### <a name="microsoft-intune-administrator-consolehttpsadminmanagemicrosoftcom"></a>[Microsoft Intune-beheerdersconsole](https://admin.manage.microsoft.com/)
 
 **Als servicebeheerder gebruikt u deze portal om dagelijkse taken te beheren**, waaronder:
 
@@ -90,11 +90,11 @@ Alleen gebruikers met servicebeheerdersmachtigingen en tenantbeheerders met de r
 
 Meer informatie over [gebruikers toevoegen voor uw abonnement](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) en over [licenties toewijzen voor uw abonnement](start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
- ### Zie tevens
+ ### <a name="see-also"></a>Zie tevens
  [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

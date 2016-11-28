@@ -14,8 +14,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 1cde91da5dd42488925c2a3c57cc79db0a9e16fa
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 
 
 ---
@@ -29,18 +29,19 @@ Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparat
 2.  **Android-inschrijving ingeschakeld**<br>
     In de Intune-console zijn geen extra configuraties nodig om de inschrijving van mobiele Android-apparaten in te schakelen.
 
-3.  **Vertel gebruikers hoe ze met de bedrijfsportal toegang krijgen tot bronnen**<br>
-    Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht. [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+3.  **Vertel uw gebruikers hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**
 
-4.  Uw gebruikers moeten weten hoe ze hun apparaten kunnen inschrijven en wat ze kunnen verwachten als deze onder beheer zijn gebracht.
-  - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-  - [Richtlijnen voor eindgebruikers van Windows-apparaten](../enduser/using-your-android-device-with-intune.md)
+    Zie [Uw Android-apparaat inschrijven bij Intune](../enduser/enroll-your-device-in-intune-android.md) voor instructies voor inschrijving van eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
+
+    Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
+  - [Bronnen over de eindgebruikerservaring in Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Richtlijnen voor eindgebruikers van Android-apparaten](../enduser/using-your-android-device-with-intune.md)
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

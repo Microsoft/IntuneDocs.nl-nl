@@ -14,13 +14,13 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 14ba34d46df4b4ff9de4427800b146e383f8a3d2
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
 
 
 ---
 
-# <a name="specify-corporateowned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Apparaten in bedrijfseigendom met een IMEI-nummer opgeven
+# <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Apparaten in bedrijfseigendom met een IMEI-nummer opgeven
 Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune beheerders in staat om IMEI-nummers (International Mobile Equipment Identity-nummers) te importeren voor mobiele apparaten die hierover beschikken. Nadat apparaten zijn ingeschreven bij Intune, kunt u zien welke apparaten IMEI-nummers hebben geïmporteerd onder **Groepen** > **Overzicht** > **Alle apparaten**. Onder **Apparaatgroep** staan apparaten met geïmporteerde IMEI-nummers, die worden weergegeven met **Bedrijf** in de kolom **Eigendom**.
 
 1. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle vooraf geregistreerde bedrijfsapparaten** &gt; **Op IMEI (alle platformen)** en kies vervolgens **Apparaten toevoegen…**. U kunt apparaten op twee manieren toevoegen:
@@ -38,7 +38,7 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **Handmatig apparaatdetails toevoegen**: geef het IMEI-nummer en de apparaatdetails van maximaal vijf apparaten op.
+    -   **Handmatig apparaatdetails toevoegen**: geef het IMEI-nummer en de apparaatdetails van maximaal 15 apparaten op.
 
    *Details* zijn voor administratief gebruik, zodat u weet welk IMEI-nummer is gekoppeld aan een apparaat. Deze informatie wordt niet naar het apparaat verzonden, maar weergegeven in de Intune-console.
 
@@ -50,6 +50,6 @@ Wanneer het apparaat met een IMEI-nummer wordt ingeschreven bij Intune, wat mees
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,10 +2,10 @@
 title: Extern vergrendelen en wachtwoordcode opnieuw instellen | Microsoft Intune
 description: Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: b32ef59aa33205e5687d951d50dfd605a6b071f2
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
 
 ---
-# Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode
+# <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode
 Microsoft Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
 
-## Een apparaat op afstand vergrendelen
+## <a name="lock-a-device-remotely"></a>Een apparaat op afstand vergrendelen
 Als een gebruiker een apparaat verliest, kunt u het apparaat op afstand vergrendelen. In de volgende tabel wordt vermeld hoe vergrendelen op afstand werkt op verschillende mobiele platforms.
 
 |Platform|Vergrendelen op afstand|
@@ -34,7 +34,7 @@ Als een gebruiker een apparaat verliest, kunt u het apparaat op afstand vergrend
 
 Vergrendelen op afstand wordt niet ondersteund voor Windows-computers die zijn ingeschreven bij de Intune-software-client.
 
-### Een mobiel apparaat op afstand vergrendelen via de Intune-console
+### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>Een mobiel apparaat op afstand vergrendelen via de Intune-console
 
 1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle apparaten** &gt; **Alle mobiele apparaten**.
 
@@ -45,13 +45,13 @@ Vergrendelen op afstand wordt niet ondersteund voor Windows-computers die zijn i
 
 3.  Kies in de lijst de apparaten die u wilt vergrendelen. Kies op de taakbalk de optie **Externe taken** en selecteer **Extern vergrendelen**.
 
-## De wachtwoordcode op een apparaat opnieuw instellen
+## <a name="reset-the-passcode-on-a-device"></a>De wachtwoordcode op een apparaat opnieuw instellen
 Als een gebruiker een wachtwoordcode vergeet, kunt u helpen door de wachtwoordcode van een apparaat te verwijderen of door een nieuwe tijdelijke wachtwoordcode op een apparaat af te dwingen. In de volgende tabel wordt aangegeven hoe de wachtwoordcode opnieuw moet worden ingesteld op verschillende mobiele platforms.
 
 |Platform|Wachtwoordcode opnieuw instellen|
 |------------|------------------|
 |iOS|Wordt ondersteund voor het wissen van de wachtwoordcode van een apparaat. Maakt geen nieuwe tijdelijke wachtwoordcode aan.|
-|Android|Ondersteund. Hiermee maakt u een tijdelijke wachtwoordcode.|
+|Android|Ondersteund in eerdere versies dan Android 7.0. Hiermee maakt u een tijdelijke wachtwoordcode.|
 |Windows 10 Mobile|Ondersteund|
 |Windows Phone 8 en Windows Phone 8.1|Ondersteund|
 |Windows RT 8.1 en Windows RT|Niet ondersteund|
@@ -59,7 +59,7 @@ Als een gebruiker een wachtwoordcode vergeet, kunt u helpen door de wachtwoordco
 
 Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers die zijn ingeschreven bij de Intune-software-client.
 
-### Een wachtwoordcode opnieuw instellen
+### <a name="reset-a-passcode"></a>Een wachtwoordcode opnieuw instellen
 
 1.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Groepen** &gt; **Alle apparaten** &gt; **Alle mobiele apparaten**.
 
@@ -71,11 +71,11 @@ Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers d
 3.  Kies in de lijst de apparaten die u wilt vergrendelen. Kies op de taakbalk **Externe taken** en selecteer **Wachtwoordcode opnieuw instellen**.
 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md) en [Selectief wissen in Windows voor beheer van apparaatgegevens](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

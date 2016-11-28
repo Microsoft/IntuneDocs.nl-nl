@@ -7,22 +7,22 @@ manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
-ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# Lookout for Work-apps configureren en implementeren
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work-apps configureren en implementeren
 In dit artikel wordt uitgelegd hoe u de Lookout for Work-app configureert en implementeert voor Android- en iOS-apparaten.
 
-## Android (Google Play Store-app)
+## <a name="android-google-play-store-app"></a>Android (Google Play Store-app)
 
 * **Stap 1**:   ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Apps** en kies **Apps toevoegen**.   
 * **Stap 2**:   kies op de pagina **Setup van software** van de uitgever de optie **Externe koppeling** en geef de volgende URL op: https://play.google.com/store/apps/details?id=com.lookout.enterprise
@@ -36,7 +36,7 @@ In dit artikel wordt uitgelegd hoe u de Lookout for Work-app configureert en imp
   * **Categorie:** computerbeheer
 * **Stap 4**: na voltooiing wordt het bericht **Het uploaden van gegevens naar Microsoft Intune is voltooid** weergegeven.
 
-Wanneer u in de Intune-console op **Apps** klikt, wordt de the Lookout for Work-app weergegeven in de lijst. ![schermopname van de pagina Apps van de Intune-beheerconsole waarop de Lookout for Work-app wordt weergegeven](../media/mtp/lookout-app-listed-intune-console.png)
+Wanneer u nu in de Intune-console op **Apps** klikt, wordt de Lookout for Work-app weergegeven in de lijst. ![schermopname van de pagina Apps van de Intune-beheerconsole waarop de Lookout for Work-app wordt weergegeven](../media/mtp/lookout-app-listed-intune-console.png)
 
 * **Stap 5**: implementeer de app voor gebruikers door de Lookout for Work-app te selecteren en **Implementatie beheren** te kiezen.
 
@@ -47,7 +47,7 @@ Wanneer u in de Intune-console op **Apps** klikt, wordt de the Lookout for Work-
 * **Stap 6**: kies de optie **Vereiste installatie** om te vereisen dat de Lookout-app op het apparaat van de gebruiker wordt geïnstalleerd.
 
 
-## iOS (door bedrijf ondertekende versie van Lookout-app)
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (door bedrijf ondertekende versie van Lookout-app)
 
 * **Stap 1:** zorg ervoor dat **iOS-beheer** is ingesteld op het apparaat. Zie [iOS- en Mac-apparaatbeheer instellen](set-up-ios-and-mac-management-with-microsoft-intune.md) voor instructies voor het instellen van uw apparaat voor iOS-beheer.
 
@@ -57,7 +57,7 @@ Wanneer u in de Intune-console op **Apps** klikt, wordt de the Lookout for Work-
 * **Stap 3:** schakel Azure Active Directory-verificatie voor de iOS-gebruikers als volgt in:
   1.  Meld u aan bij de [Azure Active Directory-beheerportal](https://manage.windowsazure.com) en navigeer naar de pagina met toepassingen.
   2.  Voeg de **Lookout for Work-app voor iOS** toe als een **native clienttoepassing**.
-  ![schermafdruk van het dialoogvenster 'Apps toevoegen' met de optie voor een native clientapp](../media/mtp/aad-add-app.png)
+  ![schermopname van het dialoogvenster Apps toevoegen met de optie voor een native clientapp](../media/mtp/aad-add-app.png)
 
   3. Vervang **com.lookout.enterprise.yourcompanyname** door de klantbundel-id die u hebt geselecteerd bij het ondertekenen van de IPA.
   4.  Voeg de aanvullende omleidings-URI **&lt;companyportal://code/>** toe, gevolgd door een versie met URL-codering van uw oorspronkelijke omleidings-URI.
@@ -82,7 +82,7 @@ Wanneer u in de Intune-console op **Apps** klikt, wordt de the Lookout for Work-
 
 Kies de optie **Vereiste installatie** om te vereisen dat de Lookout-app op het apparaat van de gebruiker wordt geïnstalleerd.
 
-## Wat gebeurt er wanneer de geïmplementeerde app op het apparaat wordt geopend
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Wat gebeurt er wanneer de geïmplementeerde app op het apparaat wordt geopend
 
 
 
@@ -93,11 +93,11 @@ Wanneer de gebruiker de Lookout for Work-app opent op het apparaat, wordt de geb
 
 * [U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 * [De regel Device Threat Protection inschakelen in het nalevingsbeleid](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

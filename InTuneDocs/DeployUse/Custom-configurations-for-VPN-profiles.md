@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
-ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
@@ -23,7 +23,15 @@ ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 # <a name="custom-configurations-for-vpn-profiles"></a>Aangepaste configuraties voor VPN-profielen
 
 ## <a name="create-a-custom-configuration"></a>Een aangepaste configuratie maken
-Met aangepaste configuraties kunt u VPN-profielen maken in Intune. Ga als volgt te werk om een aangepaste configuratie te maken:
+Met aangepaste configuraties kunt u in Intune VPN-profielen maken voor:
+
+* Apparaten met Android 4 en hoger
+* Apparaten met Android for Work
+* Geregistreerde apparaten met Windows 8.1 en hoger
+* Apparaten met Windows Phone 8.1 en hoger
+* Apparaten waarop Windows 10 Desktop en Mobile worden uitgevoerd
+
+Ga als volgt te werk om een aangepaste configuratie te maken:
 
    1. Kies in de Intune-beheerconsole **Beleid** > **Beleid toevoegen** > *Platform uitbreiden* > **Aangepaste configuratie** > **Beleid maken**.
    2. Geef een naam voor het beleid op.
@@ -86,7 +94,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Voor vragen over hoe deze instellingen moeten worden gebruikt of voor meer informatie over wat ze doen, raadpleegt u de CSP-documentatie (Configuration Service Provider): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>URI-instellingen voor VPN per Android-app op PulseSecure
+## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>URI-instellingen voor VPN per Android-app op PulseSecure
 ### <a name="custom-uri-for-package-list"></a>AANGEPASTE URI VOOR PAKKETLIJST
 -  Gegevenstype = tekenreeks
 -  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList

@@ -14,14 +14,14 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
-ms.openlocfilehash: 2aa17e2dbee8d89cfcc942a63cb5005090cd7bbb
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Uw gegevens beveiligen met volledig wissen of selectief wissen met Microsoft Intune
-Of een apparaat nou niet langer nodig is, wordt hergebruikt of is kwijtgeraakt, u kunt apps en gegevens wissen van apparaten die worden beheerd met Intune. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal-app op afstand een opdracht tot het wissen van hun apparaat geven, mits dit een eigen apparaat is dat in Intune is geregistreerd.
+U kunt apps en gegevens wissen van met Intune beheerde apparaten die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal-app op afstand een opdracht tot het wissen van hun apparaat geven, mits dit een eigen apparaat is dat bij Intune is geregistreerd.
 
   > [!NOTE]
   > Dit onderwerp gaat alleen over het wissen van apparaten die deel uitmaken van Intune-beheer van mobiele apparaten. U kunt [Azure Portal](https://portal.azure.com) ook gebruiken om [bedrijfsgegevens uit apps te wissen](wipe-managed-company-app-data-with-microsoft-intune.md). U kunt ook [computers buiten gebruik stellen die worden beheerd door de Intune-clientsoftware](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
@@ -77,7 +77,8 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Beheerprofiel wordt verwijderd.|
-|E-mail|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
+|E-mail|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd. Als Microsoft Exchange on-premises wordt gehost, worden e-mailprofielen en in cache opgeslagen e-mailberichten niet verwijderd.|
+|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|AAD-record wordt verwijderd.|
 |Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
@@ -94,7 +95,8 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Administratorbevoegdheden voor apparaat worden ingetrokken.|Administratorbevoegdheden voor apparaat worden ingetrokken.|
-|E-mail|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
+|E-mail|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd. Als Microsoft Exchange on-premises wordt gehost, worden e-mailprofielen en in cache opgeslagen e-mailberichten niet verwijderd.|
+|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|AAD-record verwijderd.|AAD-record verwijderd.|
 |Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
@@ -106,10 +108,10 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|Niet ondersteund.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|Certificaten worden verwijderd en ingetrokken.|Niet ondersteund.|Certificaten worden verwijderd en ingetrokken.|
-|E-mail|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en -bijlagen.|Niet ondersteund.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en -bijlagen. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.|
+|E-mail|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en -bijlagen.|Niet ondersteund.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en -bijlagen. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.</br>**Uitzondering**: als Microsoft Exchange on-premises wordt gehost, worden e-mailaccounts niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|Nee.|Nee.|AAD-record verwijderd.|Niet van toepassing. Windows 10 biedt geen ondersteuning voor selectief wissen voor apparaten die zijn toegevoegd aan Azure Active Directory.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>EFS-inhoud (Encryption File System) wissen
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>EFS-inhoud (Encryption File System) wissen
 Selectief wissen van EFS-gecodeerde inhoud wordt ondersteund door Windows 8.1 en Windows RT 8.1. De volgende punten zijn van toepassing op selectief wissen van EFS-inhoud:
 
 -   Alleen apps en gegevens die worden beveiligd door EFS met gebruikmaking van hetzelfde internetdomein als het Intune-account, worden selectief gewist. Zie [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (Selectief wissen in Windows voor beheer van apparaatgegevens) voor meer informatie.
@@ -144,6 +146,6 @@ In dit rapport wordt ook aangegeven wie de actie heeft uitgevoerd.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
