@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ Met **Volledig wissen** worden de fabrieksinstellingen van een apparaat hersteld
 
 Als het apparaat is ingeschakeld en verbonden, wordt een wisopdracht in minder dan 15 minuten aan alle typen apparaten doorgegeven.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>U kunt als volgt apparaten verwijderen in de Azure Active Directory-portal:
+
+1.  Blader naar [http://aka.ms/accessaad](http://aka.ms/accessaad) of kies **Beheer** &gt; **Azure AD** op [https://portal.office.com](https://portal.office.com).
+
+2.  Meld u aan met uw organisatie-id via de koppeling aan de linkerkant van de pagina.
+
+3.  Een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (kies de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).
+
+4.  Selecteer **Active Directory** en vervolgens uw organisatie.
+
+5.  Selecteer het tabblad **Gebruikers** .
+
+6.  Selecteer de gebruiker waarvoor u de apparaten wilt verwijderen.
+
+7.  Kies **Apparaten**.
+
+8.  Verwijder waar nodig apparaten, zoals apparaten die niet langer in gebruik zijn of die onjuist zijn gedefinieerd.
+
+
 ## <a name="selective-wipe"></a>Selectief wissen
 
 Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, inclusief eventuele MAM-gegevens (Mobile App Management), instellingen en e-mailprofielen. Bij Selectief wissen blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden. Het apparaat wordt uit Intune verwijderd. In de volgende tabel wordt beschreven welke gegevens worden verwijderd en wat het effect van selectief wissen is op de gegevens die achterblijven op het apparaat. (De tabellen zijn ingedeeld op basis van platform.)
@@ -78,7 +97,7 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Beheerprofiel wordt verwijderd.|
 |E-mail|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd. Als Microsoft Exchange on-premises wordt gehost, worden e-mailprofielen en in cache opgeslagen e-mailberichten niet verwijderd.|
-|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
+|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|AAD-record wordt verwijderd.|
 |Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
@@ -95,7 +114,7 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Administratorbevoegdheden voor apparaat worden ingetrokken.|Administratorbevoegdheden voor apparaat worden ingetrokken.|
-|E-mail|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd. Als Microsoft Exchange on-premises wordt gehost, worden e-mailprofielen en in cache opgeslagen e-mailberichten niet verwijderd.|
+|E-mail|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
 |Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|AAD-record verwijderd.|AAD-record verwijderd.|
 |Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
@@ -146,6 +165,6 @@ In dit rapport wordt ook aangegeven wie de actie heeft uitgevoerd.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
