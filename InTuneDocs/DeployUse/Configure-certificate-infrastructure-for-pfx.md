@@ -2,9 +2,10 @@
 title: De certificaatinfrastructuur configureren voor PFX | Microsoft Intune
 description: .PFX-certificaatprofielen maken en implementeren.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
 
 
 
 ---
-# Certificaatinfrastructuur configureren
+# <a name="configure-certificate-infrastructure"></a>Certificaatinfrastructuur configureren
 In dit onderwerp wordt beschreven wat u nodig hebt om .PFX-Certificaatprofielen te maken en implementeren.
 
 U hebt een certificeringsinstantie voor ondernemingen nodig om op certificaten gebaseerde verificatie in uw organisatie te laten werken.
@@ -30,7 +31,7 @@ Voor het gebruik van .pfx-certificaatprofielen hebt u, afgezien van een certific
 
 -  De Intune-certificaatconnector die wordt uitgevoerd op de computer die met de certificeringsinstantie kan communiceren.
 
-## Beschrijving van de on-premises infrastructuur
+## <a name="onpremises-infrastructure-description"></a>Beschrijving van de on-premises infrastructuur
 
 
 -    **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
@@ -50,24 +51,24 @@ Voor het gebruik van .pfx-certificaatprofielen hebt u, afgezien van een certific
     Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor meer informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers.|
 
 
-### Certificaten en sjablonen
+### <a name="certificates-and-templates"></a>Certificaten en sjablonen
 
 |Object|Details|
 |----------|-----------|
 |**Certificaatsjabloon**|U configureert deze sjabloon op uw verlenende CA.|
-|**Vertrouwde basis-CA-certificaat**|U exporteert dit als een **.cer** -bestand van de verlenende CA of een ander apparaat dat de verlenende CA vertrouwt, en implementeert het naar apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
+|**Vertrouwd basis-CA-certificaat**|U exporteert dit als een **.cer** -bestand van de verlenende CA of een ander apparaat dat de verlenende CA vertrouwt, en implementeert het naar apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
 
 
-## Uw infrastructuur configureren
+## <a name="configure-your-infrastructure"></a>Uw infrastructuur configureren
 Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvoeren. Voor deze taken is kennis nodig van Windows Server 2012 R2 en Active Directory Certificate Services (ADCS):
 
 - **Taak 1**: certificaatsjablonen configureren op de certificeringsinstantie.
 - **Taak 2**: de Intune-certificaatconnector inschakelen, installeren en configureren.
 
-### Taak 1: Certificaatsjablonen configureren op de certificeringsinstantie
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Taak 1: Certificaatsjablonen configureren op de certificeringsinstantie
 In deze taak publiceert u de certificaatsjabloon.
 
-##### De certificeringsinstantie configureren
+##### <a name="to-configure-the-certification-authority"></a>De certificeringsinstantie configureren
 
 1.  Gebruik op de verlenende CA de module Certificaatsjablonen om een nieuwe aangepaste sjabloon te maken of een bestaande sjabloon te kopiëren en te bewerken (zoals de gebruikerssjabloon) voor gebruik met PFX.
 
@@ -97,18 +98,18 @@ In deze taak publiceert u de certificaatsjabloon.
 
 3.  Gebruik op de verlenende CA de module Certificeringsinstantie om de certificaatsjabloon te publiceren.
 
-    a.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen** en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
+    a.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen** en selecteer de sjabloon die u in stap 2 hebt gemaakt.
 
     b.  Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
 4.  Zorg er op de CA-computer voor dat de computer die de Intune-certificaatconnector host registratiemachtigingen heeft, zodat deze toegang heeft tot de sjabloon die wordt gebruikt voor het maken van het PFX-profiel. U stelt die machtiging in op het tabblad **Beveiliging** van de eigenschappen van de CA-computer.
 
-### Taak 2: de Intune-certificaatconnector inschakelen, installeren en configureren
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Taak 2: de Intune-certificaatconnector inschakelen, installeren en configureren
 In deze taak:
 
 De certificaatconnector downloaden, installeren en configureren.
 
-##### Ondersteuning voor de certificaatconnector inschakelen
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Ondersteuning voor de certificaatconnector inschakelen
 
 1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beheer** &gt; **Certificaatconnector**.
 
@@ -116,7 +117,7 @@ De certificaatconnector downloaden, installeren en configureren.
 
 3.  Selecteer **Certificaatconnector inschakelen**en kies **OK**.
 
-##### De certificaatconnector downloaden, installeren en configureren
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
 
 1.  Open de [Intune-beheerconsole](https://manage.microsoft.com) en kies **Beheer** &gt; **Mobile Device Management** &gt; **Certificaatconnector** &gt; **Certificaatconnector downloaden**.
 
@@ -155,11 +156,11 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 **http:// &lt;FQDN_van_uw_NDES-server&gt;/certsrv/mscep/mscep.dll**
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](Configure-Intune-certificate-profiles.md).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

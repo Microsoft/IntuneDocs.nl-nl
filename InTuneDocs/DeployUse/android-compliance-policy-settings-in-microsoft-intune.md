@@ -14,24 +14,24 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 20f61b9dec289252797650e7ef40ff4c5b7c0fbc
 
 
 ---
 
 
-# Instellingen voor nalevingsbeleid voor Android-apparaten in Microsoft Intune
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Instellingen voor nalevingsbeleid voor Android-apparaten in Microsoft Intune
 
-De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op apparaten met Android 4.0 en hoger en Samsung KNOX 4.0 of hoger.
+De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op apparaten met Android 4.0 en hoger of Samsung KNOX Standard 4.0 en hoger.
 
 Als u op zoek bent naar informatie over andere platforms, selecteert u een van de volgende opties:
 > [!div class="op_single_selector"]
 - [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Instellingen voor nalevingsbeleid voor Windows-apparaten](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Systeembeveiligingsinstellingen
-### Wachtwoord
+## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
+### <a name="password"></a>Wachtwoord
 - **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 
 -  **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
@@ -55,10 +55,10 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** gebruik deze instelling samen met de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**. De gebruiker wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat inactief is geweest gedurende de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
 
-### Versleuteling
+### <a name="encryption"></a>Versleuteling
 - **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt dat apparaten moeten worden versleuteld om verbinding te maken met resources. Apparaten worden versleuteld wanneer u de instelling **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** kiest.
 
-## Status en beveiligingsinstellingen van apparaat
+## <a name="device-health-and-security-settings"></a>Status en beveiligingsinstellingen van apparaat
 
 - **Apparaat mag niet gekraakt of geroot zijn**: als u deze instelling inschakelt, worden apparaten die zijn gekraakt of geroot als niet-compatibel beschouwd.
 - **Vereisen dat de installatie van apps van onbekende bronnen wordt voorkomen (Android 4.0 en hoger)** Als u apparaten wilt blokkeren waarop **Beveiliging** > **Onbekende bronnen** op het apparaat is ingeschakeld, moet u deze instelling inschakelen en op **Ja** instellen.  
@@ -77,7 +77,7 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
   Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](enable-device-threat-protection-rule-in-compliance-policy.md) voor meer informatie.
 
-## Instellingen voor apparaateigenschappen
+## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 - **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
   Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsbronnen krijgen.
 
@@ -85,6 +85,6 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
+ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 
 ---
@@ -68,9 +68,9 @@ Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgen
 U kunt de toegang tot SharePoint Online beperken als deze service wordt geopend via een browser op een **iOS**- of **Android**-apparaat.  Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browsers (iOS en Android)
+* Managed Browser (iOS en Android 5.0 en hoger)
 
-**Niet-ondersteunde browser worden geblokkeerd**.
+**Niet-ondersteunde browsers worden geblokkeerd**.
 
 ## Ondersteuning voor pc's
 - Windows 8.1 en hoger (mits ingeschreven bij Intune)
@@ -195,6 +195,6 @@ Selecteer een groep mobiele apparaten en selecteer op het tabblad **Apparaten** 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

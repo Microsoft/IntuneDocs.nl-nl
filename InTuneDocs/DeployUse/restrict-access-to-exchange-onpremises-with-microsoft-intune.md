@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Intune
 description: Toegang tot bedrijfse-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
@@ -17,10 +18,59 @@ translationtype: Human Translation
 ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
 ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
+||||||| merged common ancestors
+---
+title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Intune
+description: Toegang tot bedrijfse-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 10/12/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
+
+=======
+---
+title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Intune
+description: Toegang tot bedrijfse-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 10/12/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
+
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 ---
+<<<<<<< HEAD
 
 # Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated met Microsoft Intune
+||||||| merged common ancestors
+
+# Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated met Microsoft Intune
+=======
+
+# <a name="restrict-email-access-to-exchange-onpremises-and-legacy-exchange-online-dedicated-with-intune"></a>Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated met Microsoft Intune
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 
 Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neemt u contact op met uw accountmanager.
@@ -64,7 +114,7 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 
 -   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven dat de eindgebruiker omleidt naar de website of app van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
 
-## Ondersteuning voor mobiele apparaten
+## <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
 -   Windows Phone 8.1 en hoger
 
 -   Systeemeigen e-mailapp voor iOS.
@@ -72,14 +122,16 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 -   EAS-mailclients zoals Gmail op Android 4 of hoger.
 - EAS-mailclients **Android for Work-apparaten:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen in combinatie met Android for Work als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps. 
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 > [!NOTE]
 > De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
 
-## Ondersteuning voor pc's
+## <a name="support-for-pcs"></a>Ondersteuning voor pc's
 
 De **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
-##  Beleid voor voorwaardelijke toegang configureren
+##  <a name="configure-a-conditional-access-policy"></a>Beleid voor voorwaardelijke toegang configureren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) achtereenvolgens **Beleid** > **Voorwaardelijke toegang** > **Beleid voor Exchange On-premises**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
@@ -119,13 +171,13 @@ De **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bij [!INC
 
 **Raadpleeg [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang voor apparaten te beperken.**
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 [Toegang tot SharePoint Online beperken](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

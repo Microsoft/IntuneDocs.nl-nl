@@ -1,9 +1,9 @@
 ---
 title: Microsoft Intune-licenties | Microsoft Intune
-description: Informatie over het toewijzen van licenties aan gebruikers voor uw Intune-abonnement
+description: Licenties toewijzen aan gebruikers voor uw Intune-abonnement
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
-ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: df2a8c526f3c569a491d999ee4c80a36a30b77e3
 
 
 ---
@@ -43,7 +43,7 @@ U gebruikt de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=69885
 
 3.  Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
 
-> [!NOTE] Zodra een apparaat is geregistreerd, wordt de gebruiker weergegeven in de console. 
+> [!NOTE] Zodra een apparaat is geregistreerd, wordt de gebruiker weergegeven in de console.
 
 ### PowerShell gebruiken om EMS-gebruikerslicenties selectief te beheren
 In organisaties die gebruikmaken van Enterprise Mobility + Security (voorheen Enterprise Mobility Suite) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. Met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) kunt u één service of een subset van services toewijzen.
@@ -93,6 +93,6 @@ Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

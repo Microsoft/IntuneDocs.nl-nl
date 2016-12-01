@@ -2,8 +2,8 @@
 title: Hoe uw Android-gebruikers hun apps downloaden | Microsoft Intune
 description: Manieren om Android-apps beschikbaar te stellen aan eindgebruikers
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
@@ -14,24 +14,24 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
-ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
 
 
 ---
 
 
-# Hoe uw Android-gebruikers apps downloaden
-Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de apps downloaden die u distribueert via Microsoft Intune. De informatie kan per apparaattype verschillen (native Android-apparaten versus Samsung Knox-apparaten).
+# <a name="how-your-android-users-get-their-apps"></a>Hoe uw Android-gebruikers apps downloaden
+Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de apps downloaden die u distribueert via Microsoft Intune. De informatie kan per apparaattype verschillen (native Android-apparaten versus Samsung Knox Standard-apparaten).
 
-## Native Android-apparaten (niet-Samsung Knox)
+## <a name="native-nonsamsung-knox-android-devices"></a>Native Android-apparaten (niet-Samsung Knox)
 
 | App-type | Line-Of-Business (LOB)-apps | Play Store-apps  |
 | ------------- |-------------| -----|
 | Available apps      | Gebruikers tikken op **Installeren** in de bedrijfsportal. Er wordt een melding weergegeven waarop gebruikers vervolgens tikken om de installatie te starten. Nadat de installatie is voltooid, verdwijnt de melding. | Gebruikers tikken op de app in de bedrijfsportal en gaan naar een app-pagina in de Play Store, waar ze de installatie kunnen starten.|
 | Required apps      | Gebruikers krijgen een melding te zien die niet kan worden gesloten en waarin wordt aangegeven dat er een app moet worden geïnstalleerd. Gebruikers tikken op de melding om de installatie te starten. Nadat de installatie is voltooid, verdwijnt de melding.    | Gebruikers krijgen een melding te zien die niet kan worden gesloten en waarin wordt aangegeven dat er een app moet worden geïnstalleerd. Gebruikers tikken op de melding en gaan naar een app-pagina in de Play Store, waar ze de installatie kunnen starten. Nadat de installatie is voltooid, verdwijnt de melding. |
 
-## Samsung Knox Android-apparaten
+## <a name="samsung-knox-standard-android-devices"></a>Samsung Knox Standard Android-apparaten
 
 | App-type | Line-Of-Business (LOB)-apps | Play Store-apps  |
 | ------------- |-------------| -----|
@@ -44,15 +44,15 @@ Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het pr
 
 **Niet-beheerde apps**: dit zijn apps die niet kunnen worden beheerd via beleid. Deze zijn niet ingepakt door Intune of opgenomen in de Intune MAM SDK. Het toepassingsbeleid kan niet worden toegepast op deze apps.
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Apps toevoegen met Microsoft Intune](/intune/deploy-use/add-apps)
 
 [Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
 
-[Hoe uw Windows-gebruikers hun apps downloaden](how-your-windows-users-get-their-apps.md)
+[Hoe uw Windows-gebruikers apps downloaden](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

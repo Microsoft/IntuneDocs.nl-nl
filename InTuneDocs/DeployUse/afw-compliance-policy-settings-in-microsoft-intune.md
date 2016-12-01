@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 609d3ab2c96d9a3dff7a6bb6aa085f9cda83ba38
-ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: f1176c923e059ad085855423e95522d2e4fec76e
 
 
 ---
 
 
-# Instellingen voor nalevingsbeleid voor Android for Work-apparaten in Microsoft Intune
+# <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Instellingen voor nalevingsbeleid voor Android for Work-apparaten in Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op Android for Work-apparaten.
 
@@ -31,8 +33,8 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 - [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Instellingen voor nalevingsbeleid voor Windows-apparaten](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Systeembeveiligingsinstellingen
-### Wachtwoord
+## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
+### <a name="password"></a>Wachtwoord
 - **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 
 -  **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
@@ -55,10 +57,10 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 - **Een wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt samen met de instelling **Minuten van inactiviteit voordat het wachtwoord wordt vereist**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat inactief is geweest gedurende de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
 
-### Versleuteling
+### <a name="encryption"></a>Versleuteling
 - **Versleuteling vereisen op mobiel apparaat:** u hoeft deze instelling niet te configureren, omdat versleuteling wordt afgedwongen op Android for Work-apparaten.
 
-## Status en beveiligingsinstellingen van apparaat
+## <a name="device-health-and-security-settings"></a>Status en beveiligingsinstellingen van apparaat
 
 - **Jailbreaken of uitvoeren als rootgebruiker niet toegestaan:** als u deze instelling inschakelt, worden apparaten waarop jailbreaking is uitgevoerd of die als rootgebruiker worden uitgevoerd als niet-compatibel beschouwd.
 - **Vereisen dat de installatie van apps van onbekende bronnen worden voorkomen:** u hoeft deze instelling niet te configureren, omdat installatie van onbekende bronnen altijd wordt voorkomen op Android for Work-apparaten. .  
@@ -75,7 +77,7 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
   Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](enable-device-threat-protection-rule-in-compliance-policy.md) voor meer informatie.
 
-## Instellingen voor apparaateigenschappen
+## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 - **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
   Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen om een upgrade van zijn apparaat uit te voeren, waarna die toegang tot bedrijfsbronnen krijgt.
 
@@ -83,6 +85,6 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
