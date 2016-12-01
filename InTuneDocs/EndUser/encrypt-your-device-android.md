@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Uw apparaat versleutelen | Microsoft Intune
 description: Informatie over hoe u een Android-apparaat kunt versleutelen
@@ -17,11 +18,60 @@ translationtype: Human Translation
 ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
 ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
+||||||| merged common ancestors
+---
+title: Uw apparaat versleutelen | Microsoft Intune
+description: Informatie over hoe u een Android-apparaat kunt versleutelen
+keywords: 
+author: barlan
+ms.author: barlan
+manager: angrobe
+ms.date: 10/24/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+ms.reviewer: arnab
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
+ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+
+=======
+---
+title: Uw apparaat versleutelen | Microsoft Intune
+description: Informatie over hoe u een Android-apparaat kunt versleutelen
+keywords: 
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 11/7/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+ms.reviewer: arnab
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 ---
 
+<<<<<<< HEAD
 
 # Uw apparaat versleutelen
+||||||| merged common ancestors
+
+# Uw apparaat versleutelen
+=======
+
+# <a name="encrypt-your-device"></a>Uw apparaat versleutelen
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 Als uw bedrijf of organisatie verlangt dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bestanden, e-mailberichten of gegevens van uw bedrijf, volgt u de onderstaande stappen om het apparaat te versleutelen. U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als uw IT-beheerder dit vereist.
 
@@ -34,7 +84,7 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
 3.  Volg de instructies op het scherm. Tijdens het versleutelen kan het apparaat meerdere keren opnieuw opstarten.
 
-### Wat te doen bij problemen
+### <a name="what-to-do-if-you-have-issues"></a>Wat te doen bij problemen
 **Probleem**: u hebt uw apparaat al versleuteld en wordt geconfronteerd met het volgende:
 
 - De versleutelingsknop is uitgeschakeld.
@@ -57,10 +107,18 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
     5. Open de bedrijfsportalapp, selecteer uw apparaat en tik op **Naleving controleren**.
 
+<<<<<<< HEAD
 Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het team van Microsoft Android via wintunedroidfbk@microsoft.com.
 
+||||||| merged common ancestors
+Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het team van Microsoft Android via wintunedroidfbk@microsoft.com.
+
+=======
+Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het [Microsoft Android-team](mailto:wintunedroidfbk@microsoft.com).
+
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

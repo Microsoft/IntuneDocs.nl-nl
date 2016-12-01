@@ -2,8 +2,8 @@
 title: U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 
 ---
 
-# U wordt gevraagd Lookout for Work te installeren
+# <a name="you-are-prompted-to-install-lookout-for-work"></a>U wordt gevraagd Lookout for Work te installeren
 
 Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-app installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen.
 
@@ -78,10 +78,10 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit gebeurt, installeer Lookout for Work dan handmatig vanuit de Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

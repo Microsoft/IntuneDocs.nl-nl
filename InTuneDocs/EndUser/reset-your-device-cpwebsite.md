@@ -2,8 +2,8 @@
 title: Uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
 
 
 ---
 
 
-# Uw apparaat opnieuw instellen op de website van de bedrijfsportal
+# <a name="reset-your-device-from-the-company-portal-website"></a>Uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u uw apparaat kwijt bent of als het gestolen is, hebt u de mogelijkheid de fabrieksinstellingen ervan terug te zetten om te voorkomen dat onbevoegden toegang tot uw gegevens krijgen. U kunt uw apparaat op afstand opnieuw instellen op de [website van de bedrijfsportal](http://portal.manage.microsoft.com). De website van de bedrijfsportal is een webpagina waarop u computers en apparaten kunt beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
+Als u uw apparaat kwijt bent of als het gestolen is, hebt u de mogelijkheid de fabrieksinstellingen ervan terug te zetten om te voorkomen dat onbevoegden toegang tot uw gegevens krijgen. U kunt uw apparaat op afstand opnieuw instellen op de [website van de bedrijfsportal](http://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt deze website gebruiken om de meeste taken uit te voeren die u ook met de bedrijfsportal-app uitvoert.
 
 Als u uw apparaat opnieuw instelt, wordt het apparaat niet meer weergegeven in de bedrijfsportal en worden de fabrieksinstellingen op het apparaat hersteld.
 
@@ -40,12 +40,12 @@ Ga als volgt te werk om uw apparaat opnieuw in te stellen:
 
 Uw apparaat is nu opnieuw ingesteld.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

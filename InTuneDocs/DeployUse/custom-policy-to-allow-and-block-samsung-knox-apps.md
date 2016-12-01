@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Toegestane en geblokkeerde apps voor KNOX | Microsoft Intune
 description: Aangepast profiel voor het maken van een lijst met toegestane en geblokkeerde apps voor KNOX.
@@ -21,22 +22,71 @@ ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 
 ---
 # Aangepaste beleidsregels gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten
+||||||| merged common ancestors
+---
+title: Toegestane en geblokkeerde apps voor KNOX | Microsoft Intune
+description: Aangepast profiel voor het maken van een lijst met toegestane en geblokkeerde apps voor KNOX.
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 10/10/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
+ms.reviewer: chrisbal
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
+ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
+
+
+
+---
+# Aangepaste beleidsregels gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten
+=======
+---
+title: Toegestane en geblokkeerde apps voor KNOX | Microsoft Intune
+description: Aangepast profiel voor het maken van een lijst met toegestane en geblokkeerde apps voor KNOX.
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 11/02/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
+ms.reviewer: chrisbal
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+
+
+
+---
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 Gebruik de procedures in dit onderwerp om een aangepast Microsoft Intune-beleid op te stellen voor het maken van een van de volgende lijsten:
 
 - Een lijst met apps die niet kunnen worden uitgevoerd op het apparaat. Apps in deze lijst worden geblokkeerd, wat betekent dat ze niet worden uitgevoerd, ook niet al ze al waren geïnstalleerd toen het beleid werd toegepast.
 - Een lijst met apps die gebruikers van het apparaat kunnen installeren uit de Google Play Store. Alleen de apps die u in de lijst opneemt, kunnen worden geïnstalleerd. Geen andere apps kunnen worden geïnstalleerd uit de Store.
 
-Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
+Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX Standard.
 
-## En lijst met toegestane of geblokkeerde apps maken
+## <a name="to-create-an-allowed-or-blocked-app-list"></a>En lijst met toegestane of geblokkeerde apps maken
 
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** &gt; **Configuratiebeleid** &gt; **Toevoegen**.
 2. Vouw in het dialoogvenster **Een nieuw beleid maken** de optie **Android** uit, kies **Aangepaste configuratie** en kies vervolgens **Beleid maken**.
 3. Geef een naam op en voer eventueel een beschrijving in voor het beleid en kies vervolgens in de sectie **OMA-URI-instellingen** de optie **Toevoegen**.
 4. Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** het volgende op: Voor een lijst met apps die zijn geblokkeerd en dus niet kunnen worden uitgevoerd op het apparaat:
     
-    - **naam van instelling.** Voer **PreventStartPackages** in.
+    - **Naam van instelling.** Voer **PreventStartPackages** in.
     - **Beschrijving van instelling.** Voer eventueel een beschrijving in, zoals 'Lijst met apps die zijn geblokkeerd'.
     -   **Gegevenstype.** Kies **Tekenreeks** in de vervolgkeuzelijst.
     -   **OMA-URI.** Voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** in.
@@ -44,7 +94,7 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
 
     Voor een lijst met apps die gebruikers mogen installeren vanuit de Google Play Store, terwijl alle andere apps worden uitgesloten:
 
-    - **naam van instelling.** Voer **AllowInstallPackages** in.
+    - **Naam van instelling.** Voer **AllowInstallPackages** in.
     - **Beschrijving van instelling.** Voer eventueel een beschrijving in, zoals 'Lijst met apps die gebruikers kunnen installeren vanuit Google Play'.
     - **Gegevenstype.** Kies **Tekenreeks** in de vervolgkeuzelijst.
     - **OMA-URI.** Voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages** in.
@@ -58,7 +108,7 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX.
 De volgende keer dat een doelapparaat incheckt, worden de app-instellingen toegepast.
 
 
-## Het beleid implementeren
+## <a name="deploy-the-policy"></a>Het beleid implementeren
 
 1.  Selecteer het beleid dat u wilt implementeren in de werkruimte **Beleid** en klik vervolgens op **Implementatie beheren**.
 
@@ -67,11 +117,11 @@ De volgende keer dat een doelapparaat incheckt, worden de app-instellingen toege
  
 Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over de implementatie weergeven onder in de lijst met beleidsregels.
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Instellingen voor het Android- en Samsung KNOX-beleid in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

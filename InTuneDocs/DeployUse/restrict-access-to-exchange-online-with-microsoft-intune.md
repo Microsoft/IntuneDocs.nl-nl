@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 916a4d90b5aa64cad429ccd6559ad8d388ba301e
 
 
 ---
 
-# De toegang tot e-mail beperken bij Exchange Online en de nieuwe Exchange Online Dedicated met Microsoft Intune
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>De toegang tot e-mail beperken bij Exchange Online en de nieuwe Exchange Online Dedicated met Microsoft Intune
 
 Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neem dan contact op met uw accountmanager.
 
@@ -62,12 +62,14 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 
 ![Het diagram illustreert de beslissingspunten die bepalen of een apparaat toegang mag hebben of moet worden geblokkeerd](../media/ConditionalAccess8-1.png)
 
-## Ondersteuning voor mobiele apparaten
+## <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
 U kunt toegang tot e-mail van Exchange Online beperken vanuit **Outlook** en andere **apps die moderne authenticatie gebruiken**:
 
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger, en Android for Work
 - iOS 8.0 en hoger
 - Windows Phone 8.1 en hoger
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 **Moderne authenticatie** houdt aanmelding bij Microsoft Office-clients in op basis van Active Directory Authentication Library (ADAL)
 
@@ -79,11 +81,11 @@ U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beperken 
 
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browsers (iOS en Android)
+* Managed Browser (iOS en Android 5.0 en hoger)
 
 **Niet-ondersteunde browsers worden geblokkeerd**.
 
-**De OWA-app voor iOS en Android kan zodanig worden aangepast dat er geen moderne verificatie wordt gebruikt, en wordt niet ondersteund.  Toegang vanuit de OWA-app moet worden geblokkeerd met ADFS-claimsregels.**
+**De OWA-app voor iOS en Android kan zodanig worden aangepast dat er geen moderne verificatie wordt gebruikt, en wordt niet ondersteund.  Toegang vanuit de OWA-app moet worden geblokkeerd met regels voor ADFS-claims.**
 
 
 Op de volgende platforms kunt u toegang tot Exchange-e-mail vanuit de ingebouwde **Exchange ActiveSync-e-mailclient** beperken:
@@ -94,7 +96,7 @@ Op de volgende platforms kunt u toegang tot Exchange-e-mail vanuit de ingebouwde
 
 - Windows Phone 8.1 en hoger
 
-## Ondersteuning voor pc's
+## <a name="support-for-pcs"></a>Ondersteuning voor pc's
 
 U kunt voorwaardelijke toegang instellen voor pc's waarop Office-bureaubladtoepassingen worden uitgevoerd zodat deze toegang hebben tot **Exchange Online** en **SharePoint Online** als de pc’s aan de volgende vereisten voldoen:
 
@@ -118,20 +120,20 @@ U kunt voorwaardelijke toegang instellen voor pc's waarop Office-bureaubladtoepa
 
 -   Met het instellen van ADFS worden er regels van kracht die niet-moderne verificatieprotocollen blokkeren. Gedetailleerde instructies vindt u in scenario 3: [alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
 
-## Voorwaardelijke toegang configureren
-### Stap 1: nalevingsbeleid configureren en implementeren
+## <a name="configure-conditional-access"></a>Voorwaardelijke toegang configureren
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>Stap 1: nalevingsbeleid configureren en implementeren
 Zorg ervoor dat u nalevingsbeleid [maakt](create-a-device-compliance-policy-in-microsoft-intune.md) en [implementeert](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) voor de gebruikersgroepen die ook het beleid voor voorwaardelijke toegang krijgen.
 
 
 > [!IMPORTANT]
 > Als u geen nalevingsbeleid hebt geïmplementeerd, worden de apparaten beschouwd als apparaten die het beleid naleven en wordt toegang tot Exchange toegestaan.
 
-### Stap 2: het effect van het beleid voor voorwaardelijke toegang beoordelen.
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Stap 2: het effect van het beleid voor voorwaardelijke toegang beoordelen.
 U kunt de **inventarisrapporten voor mobiele apparaten** gebruiken om de apparaten te identificeren waarvoor de toegang tot Exchange mogelijk wordt geblokkeerd nadat u het beleid voor voorwaardelijke toegang hebt geconfigureerd.
 
 Configureer hiervoor een verbinding tussen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en Exchange met behulp van de [Microsoft Intune-service-naar-serviceconnector](intune-service-to-service-exchange-connector.md).
 1.  Ga naar **Rapporten -> Inventarisrapporten voor mobiele apparaten**.
-![Schermafbeelding van de rapportpagina van Inventaris van mobiele apparaten](../media/IntuneSA2bMobileDeviceInventoryReport.png)
+![Schermafbeelding van de rapportpagina Inventaris van mobiele apparaten](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
 2.  Selecteer in de rapportparameters de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groep die u wilt beoordelen en, indien nodig, de apparaatplatforms waarop het beleid wordt toegepast.
 3.  Wanneer u de criteria hebt geselecteerd die voldoen aan de behoeften van uw organisatie, kiest u **Rapport weergeven**.
@@ -161,7 +163,7 @@ Apparaten die deel uitmaken van een doelgroep, krijgen geen toegang tot Exchange
 ----------------------
 U kunt de inhoud van het rapport exporteren en de kolom **E-mailadres** gebruiken om uw gebruikers ervan op de hoogte te stellen dat toegang voor hen wordt geblokkeerd.
 
-### Stap 3: gebruikersgroepen configureren voor het beleid voor voorwaardelijke toegang.
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>Stap 3: gebruikersgroepen configureren voor het beleid voor voorwaardelijke toegang.
 Beleid voor voorwaardelijke toegang is gericht op andere Azure Active Directory-beveiligingsgroepen met gebruikers. U kunt ook bepaalde gebruikersgroepen van dit beleid uitsluiten.  Wanneer een gebruiker deel uitmaakt van de doelgroep voor het beleid, moet elk apparaat dat wordt gebruikt, compatibel zijn om toegang te kunnen krijgen tot e-mail.
 
 U kunt deze groepen configureren in het **Office 365-beheercentrum**of in de **Intune-accountportal**.
@@ -176,7 +178,7 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 
 Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
-### Stap 4: het beleid voor voorwaardelijke toegang configureren
+### <a name="step-4-configure-the-conditional-access-policy"></a>Stap 4: het beleid voor voorwaardelijke toegang configureren
 
 >[!NOTE]
 > U kunt ook een beleid voor voorwaardelijke toegang maken in de Azure AD-beheerconsole. Met de Azure AD-beheerconsole kunt u beleid voor voorwaardelijke toegang voor het Intune-apparaat maken (aangeduid als het **op apparaten gebaseerd beleid voor voorwaardelijke toegang** in Azure AD), naast ander beleid voor voorwaardelijke toegang zoals Multi-Factor Authentication.  U kunt ook beleid voor voorwaardelijke toegang voor bedrijfsapps van derden instellen, zoals voor Salesforce en Box, dat door Azure AD worden ondersteund. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
@@ -218,7 +220,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
   **iOS**
 
-  ![schermopname van het certificaatprompt op een iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![schermafbeelding van het certificaat met het verzoek op een ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -227,7 +229,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 5.  Onder **Exchange ActiveSync-apps** kunt u de toegang tot Exchange Online blokkeren van apparaten die niet aan het nalevingsbeleid voldoen. U kunt ook aangeven of u toegang tot e-mail wilt toestaan of blokkeren wanneer het apparaat niet op een ondersteund platform wordt uitgevoerd. Ondersteunde platforms zijn Android, iOS, Windows en Windows Phone.
 
  Exchange Active Sync-apps op **Android for Work**-apparaten:
- -  Alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen op Android for Work-apparaten als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en de installatie daarvan **verplicht** stelt. 
+ -  Alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen op Android for Work-apparaten als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en de installatie daarvan **verplicht** stelt.
 
 6.  Onder **Doelgroepen** selecteert u de Active Directory-beveiligingsgebruikersgroepen waarop het beleid van toepassing moet zijn. U kunt kiezen of u zich wilt richten op alle gebruikers of op een geselecteerde lijst met gebruikersgroepen.
 ![Schermafbeelding van de pagina met het beleid voor voorwaardelijke toegang van Exchange Online met opties voor doelgroepen en uitgesloten groepen](../media/IntuneSA5eTargetedExemptedGroups.PNG)
@@ -251,22 +253,22 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
 -   Als de gebruiker het apparaat uitschrijft, wordt de toegang tot e-mail na circa 6 uur geblokkeerd.
 
-**Raadpleeg [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang voor apparaten te beperken.**
+**Raadpleeg [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang van apparaten te beperken.**
 
-## De compatibiliteit en het beleid voor voorwaardelijke toegang bewaken
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>De compatibiliteit en het beleid voor voorwaardelijke toegang bewaken
 
-#### Apparaten weergeven die geen toegang hebben tot Exchange
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Apparaten weergeven die geen toegang hebben tot Exchange
 
 In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u de tegel **Apparaten zonder toegang tot Exchange** om het aantal geblokkeerde apparaten en koppelingen naar meer informatie weer te geven.
 ![Schermafdruk van het Intune-dashboard met het aantal apparaten waarvoor de toegang tot Exchange is geblokkeerd](../media/IntuneSA6BlockedDevices.PNG)
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 [Toegang tot SharePoint Online beperken](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

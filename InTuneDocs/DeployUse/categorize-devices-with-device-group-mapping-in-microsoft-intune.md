@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Apparaten categoriseren met apparaatgroeptoewijzing | Microsoft Intune
 description: "Gebruik apparaatgroeptoewijzing van Microsoft Intune om apparaten te groeperen in categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren."
@@ -18,6 +19,48 @@ ms.sourcegitcommit: 32bded5047b1a08738418e3e36382eeae1a5f3b4
 ms.openlocfilehash: 84850f4e9136e6304e51991d6ab0a0ae2a37e7a7
 
 
+||||||| merged common ancestors
+---
+title: Apparaten categoriseren met apparaatgroeptoewijzing | Microsoft Intune
+description: "Gebruik apparaatgroeptoewijzing van Microsoft Intune om apparaten te groeperen in categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 10/12/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
+ms.reviewer: sumitp
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 32bded5047b1a08738418e3e36382eeae1a5f3b4
+ms.openlocfilehash: 84850f4e9136e6304e51991d6ab0a0ae2a37e7a7
+
+
+=======
+---
+title: Apparaten categoriseren met apparaatgroeptoewijzing | Microsoft Intune
+description: "Gebruik apparaatgroeptoewijzing van Microsoft Intune om apparaten te groeperen in categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 10/26/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
+ms.reviewer: damionw
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 07389265e2a88d45e18735bf55fbcde5260ebc54
+ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
+
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 ---
 
 # Apparaten categoriseren met apparaatgroeptoewijzing in Microsoft Intune
@@ -45,8 +88,8 @@ Naar aanleiding van uw feedback is Microsoft bezig het aantal verschillende meth
 
 Vanwege de gefaseerde implementatie van beveiliging op basis van Azure Active Directory-groepen, moet u de werkruimte **Groepen** in de [Intune-beheerconsole](https://manage.microsoft.com) openen om te bepalen welke procedure u moet gebruiken:
 
--  Als u een koppeling naar de Azure-portal ziet, gebruikt u geen Intune-groepen meer. Volg de procedure [Apparaatgroeptoewijzing configureren (voor Azure Active Directory-groepen)](##How-to-configure-device-group-mapping-(for-Azure-Active-Directory-groups) hieronder.
--  Als u geen koppeling naar de Azure-portal ziet, gebruikt u nog Intune-groepen. Volg de procedure [Apparaatgroeptoewijzing configureren (voor Intune-groepen)](##How-to-configure-device-group-mapping-(for-Intune-groups) hieronder.
+-  Als u een koppeling naar de Azure-portal ziet, gebruikt u geen Intune-groepen meer. Volg de onderstaande procedure [Apparaatgroeptoewijzing configureren voor Azure Active Directory-groepen](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-azure-active-directory-groups).
+-  Als u geen koppeling naar de Azure-portal ziet, gebruikt u nog Intune-groepen. Volg de onderstaande procedure [Apparaatgroeptoewijzing configureren voor Intune-groepen](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-intune-groups).
 
 ## Apparaatgroeptoewijzing configureren voor Intune-groepen
 1. Maak een Intune-apparaatgroep of kies een bestaande groep voor elke apparaatcategorie die u wilt gebruiken. Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) voor informatie over het maken van groepen.
@@ -84,9 +127,16 @@ Voorbeeld: (**device.deviceCategory -eq** "<*de naam van de apparaatcategorie in
 Wanneer gebruikers hun apparaat registreren, krijgen ze een lijst te zien van de categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de registratie voltooien, wordt hun apparaat toegevoegd aan de Intune-apparaatgroep of Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
 
 ### Zie tevens
+<<<<<<< HEAD
+[Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+||||||| merged common ancestors
+[Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+=======
 [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO4-->
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Mobiele apparaten inschrijven en een app installeren | Microsoft Intune
 description: Bevat uitleg over het inschrijven van mobiele apparaten en het installeren van een app op een apparaat dat voor Intune is ingeschreven
@@ -17,6 +18,47 @@ translationtype: Human Translation
 ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
 ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
+||||||| merged common ancestors
+---
+title: Mobiele apparaten inschrijven en een app installeren | Microsoft Intune
+description: Bevat uitleg over het inschrijven van mobiele apparaten en het installeren van een app op een apparaat dat voor Intune is ingeschreven
+keywords: 
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 08/29/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
+
+=======
+---
+title: Mobiele apparaten inschrijven en een app installeren | Microsoft Intune
+description: Mobiele apparaten inschrijven en een app op een apparaat installeren dat voor Intune is ingeschreven
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 08/29/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: ec478ad05b72a358dbce4f08a6b1a1f106a28303
+
+>>>>>>> 0aaa8317d010412c0781f3e79ff4b889d024dce5
 
 ---
 
@@ -65,6 +107,6 @@ Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune*
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -1,10 +1,11 @@
 ---
 title: Nalevingsbeleid voor apparaten | Microsoft Intune
-description: In dit onderwerp wordt uitgelegd wat het nalevingsbeleid voor apparaten is en hoe deze beleidsregels werken.
+description: In dit onderwerp wordt uitgelegd wat het nalevingsbeleid voor apparaten is en hoe dit beleid werkt.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,57 +14,58 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 8ab892767966857ec6a495903478e4db37f8df5b
+ms.openlocfilehash: 804d3b9173cbf610ed4e2e8d375d10a7f2288d74
 
 
 ---
 
-# Nalevingsbeleid voor apparaten in Microsoft Intune
-## Wat is nalevingsbeleid?
-Om bedrijfsgegevens te beveiligen, moet u ervoor zorgen dat de apparaten die worden gebruikt voor toegang tot bedrijfs-apps en -gegevens, voldoen aan bepaalde regels, zoals het gebruik van een pincode voor toegang tot het apparaat en versleuteling van gegevens die op het apparaat zijn opgeslagen. Een verzameling van dergelijke regels wordt nalevingsbeleid genoemd.
+# <a name="device-compliance-policies-in-microsoft-intune"></a>Nalevingsbeleid voor apparaten in Microsoft Intune
+## <a name="what-is-a-compliance-policy"></a>Wat is nalevingsbeleid?
+U moet er voor de beveiliging van bedrijfsgegevens voor zorgen dat de apparaten die worden gebruikt voor toegang tot bedrijfs-apps en- gegevens, voldoen aan bepaalde regels. Deze regels kunnen bijvoorbeeld zijn dat voor toegang tot apparaten een pincode moet worden opgegeven en dat gegevens op apparaten moeten zijn versleuteld. Een verzameling van dergelijke regels wordt een nalevingsbeleid genoemd.
 
-## Hoe gebruikt u nalevingsbeleid?
+## <a name="how-should-i-use-compliance-policies"></a>Hoe gebruikt u nalevingsbeleid?
 U kunt nalevingsbeleid gebruiken met beleid voor voorwaardelijke toegang om alleen toegang te verlenen aan apparaten die voldoen aan de regels van het nalevingsbeleid voor de toegang tot e-mail en andere services. Lees het artikel [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) om te begrijpen hoe de twee soorten beleid samen kunnen worden gebruikt.
 
-U kunt nalevingsbeleid ook onafhankelijk van voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik worden de betreffende apparaten geëvalueerd en samen met de nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten zijn opengebroken of geroot. Bij onafhankelijk gebruik zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
+U kunt nalevingsbeleid ook onafhankelijk van voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten zijn opengebroken of geroot. Bij onafhankelijk gebruik van nalevingsbeleid zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
 
 U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving.
+Raadpleeg voor meer informatie over hoe lang het duurt voordat mobiele apparaten een beleid krijgen nadat het beleid is geïmplementeerd [Instellingen en functies op uw apparaten beheren](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
-De volgende tabel bevat de apparaattypen die worden ondersteund door nalevingsbeleid en informatie over hoe niet-compatibele instellingen worden beheerd als het beleid wordt gebruikt met beleid voor voorwaardelijke toegang.
+De volgende tabel bevat de typen apparaten die ondersteuning bieden voor nalevingsbeleid. In de tabel wordt ook beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
 
 -----------------------------
 
-|Beleidsinstelling| Windows 8.1 en hoger| Windows Phone 8.1 en hoger| iOS 8.0 en hoger|Android 4.0 en hoger<br/>Samsung KNOX Standard 4.0 of hoger|
+|Beleidsinstelling| Windows 8.1 en hoger| Windows Phone 8.1 en hoger| iOS 8.0 en hoger|Android 4.0 en hoger<br/>Samsung Knox Standard 4.0 en hoger|
 |-----|----|----|----|----|
 |**Configuratie van pincode of wachtwoord** |Hersteld|Hersteld|Hersteld|In quarantaine|
-|**Apparaatversleuteling**|N.v.t.|Hersteld|Hersteld (door een pincode in te stellen)|In quarantaine|
-|**Opengebroken of geroot apparaat**|N.v.t.|N.v.t.|In quarantaine (geen instelling)|In quarantaine (geen instelling)|
-|**E-mailprofiel**|N.v.t.|N.v.t.|In quarantaine|N.v.t.|
+|**Apparaatversleuteling**|Niet van toepassing|Hersteld|Hersteld (door een pincode in te stellen)|In quarantaine|
+|**Opengebroken of geroot apparaat**|Niet van toepassing|Niet van toepassing|In quarantaine (geen instelling)|In quarantaine (geen instelling)|
+|**E-mailprofiel**|Niet van toepassing|Niet van toepassing|In quarantaine|Niet van toepassing|
 |**Minimale versie van het besturingssysteem**|In quarantaine|In quarantaine|In quarantaine|In quarantaine|
-|**Maximale versie van het besturingssysteem**|In quarantaine| In quarantaine| In quarantaine| In quarantaine|
-|**Windows-statusverklaring**|Windows 10 en Windows 10 Mobile zijn in quarantaine geplaatst.<br /><br />Deze instelling is niet van toepassing op Windows 8.1.|N.v.t.|N.v.t.|N.v.t.|
+|**Maximale versie van het besturingssysteem**|In quarantaine|In quarantaine|In quarantaine|In quarantaine|
+|**Windows Health Attestation**|In quarantaine: Windows 10 en Windows 10 Mobile<br /><br />Niet van toepassing: Windows 8.1|Niet van toepassing|Niet van toepassing|Niet van toepassing|
 
 ------------------------------
 
-**Hersteld**: naleving wordt afgedwongen door het besturingssysteem van het apparaat (de gebruiker moet bijvoorbeeld een pincode instellen).  Het komt dan nooit voor dat de instelling niet aan de voorwaarden voldoet.
+**Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. (De gebruiker wordt bijvoorbeeld gedwongen een pincode in te stellen.)
 
-**In quarantaine**: het besturingssysteem van het apparaat dwingt geen naleving af (gebruikers hoeven hun Android-apparaat bijvoorbeeld niet per se te versleutelen). Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:
+**In quarantaine** = het besturingssysteem van het apparaat dwingt geen naleving af. (Bij Android-apparaten bijvoorbeeld wordt de gebruiker niet gedwongen het apparaat te versleutelen.) Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:
 
--   Het apparaat wordt geblokkeerd als de gebruiker niet in naleving handelt van een beleid voor voorwaardelijke toegang.
+-   Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
 
--   De bedrijfsportal stelt de gebruiker op de hoogte van nalevingsproblemen.
+-   De bedrijfsportal stelt de gebruiker op de hoogte van eventuele nalevingsproblemen.
 
-## Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 [Een nalevingsbeleid voor apparaten maken](create-a-device-compliance-policy-in-microsoft-intune.md)
 
 [Een nalevingsbeleid voor apparaten implementeren en bewaken](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
