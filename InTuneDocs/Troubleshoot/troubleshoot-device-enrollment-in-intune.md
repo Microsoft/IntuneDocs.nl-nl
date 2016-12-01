@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ Dit onderwerp bevat suggesties voor het oplossen van problemen met de registrati
 
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
--   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -50,13 +50,13 @@ Deze problemen kunnen optreden op alle apparaatplatforms.
 ### <a name="device-cap-reached"></a>Apparaatlimiet bereikt
 **Probleem:** een gebruiker ontvangt tijdens de registratie een foutbericht op het apparaat, zoals het foutbericht **De bedrijfsportal is tijdelijk niet beschikbaar** op een iOS-apparaat, en DMPdownloader.log in Configuration Manager bevat de fout **DeviceCapReached**.
 
-**Oplossing:** gebruikers kunnen standaard niet meer dan vijf apparaten inschrijven.
+**Oplossing:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Controleer het aantal apparaten dat is ingeschreven en dat wordt toegestaan
 
-1.  Controleer in de Intune-beheerportal of er niet meer dan 5 apparaten aan de gebruiker zijn toegewezen
+1.  Controleer in de Intune-beheerportal of er niet meer dan het toegestane maximum van 15 apparaten aan de gebruiker zijn toegewezen.
 
-2.  Controleer in het Intune-beheerportal onder Admin\Mobile Device Management\Enrollment Rules of de limiet voor de apparaatinschrijving is ingesteld op 5
+2.  Controleer in de Intune-beheerconsole onder Admin\Mobile Device Management\Enrollment Rules of de limiet voor de apparaatinschrijving is ingesteld op 15.
 
 Gebruikers van mobiele apparaten kunnen apparaten verwijderen via de volgende URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -89,7 +89,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 ### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
 **Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>Probleemoplossing bij het foutbericht Bedrijfsportal tijdelijk niet beschikbaar
+**Oplossing:**
 
 1.  Verwijder de Intune-bedrijfsportal-app van het apparaat.
 
@@ -104,7 +104,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 ### <a name="mdm-authority-not-defined"></a>De MDM-instantie is niet gedefinieerd
 **Probleem:** een gebruiker ontvangt de fout **De MDM-instantie is niet gedefinieerd**.
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>Probleemoplossing bij het foutbericht MDM-instantie is niet gedefinieerd
+**Oplossing:**
 
 1.  Controleer of de MDM-instantie juist is ingesteld voor de versie van de Intune-service die u gebruikt, dat wil zeggen, voor Intune, O365 MDM of System Center Configuration Manager met Intune. Voor Intune wordt de MDM-instantie ingesteld in **Beheer** &gt; **Mobile Device Management**. Voor Configuration Manager met Intune stelt u deze in wanneer u de Intune-connector configureert. In O365 is het een instelling in **Mobiele apparaten**.
 
@@ -152,16 +152,65 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 
 ## <a name="android-issues"></a>Problemen met Android
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Apparaten kunnen niet inchecken bij de Intune-service en worden in de Intune-beheerconsole weergegeven als Niet in orde
+**Probleem:** sommige Samsung-apparaten met Android-versies 4.4.x en 5.x checken mogelijk niet meer in bij de Intune-service. Als apparaten niet inchecken:
+
+- Kunnen ze geen beleid, apps en externe opdrachten ontvangen van de Intune-service.
+- Wordt voor deze apparaten in de beheerconsole de Beheerstatus **Niet in orde** weergegeven.
+- Gebruikers die worden beschermd door beleid voor voorwaardelijke toegang hebben mogelijk geen toegang meer tot bedrijfsbronnen.
+
+Samsung heeft bevestigd dat de Samsung Smart Manager-software, die wordt geleverd op sommige Samsung-apparaten, de Intune bedrijfsportal en de bijbehorende onderdelen kan deactiveren. Wanneer de bedrijfsportal is gedeactiveerd, kan deze niet op de achtergrond worden uitgevoerd en kan deze geen contact maken met de Intune-service.
+
+**Oplossing 1:**
+
+Laat gebruikers de bedrijfsportal-app handmatig starten. Zodra de app opnieuw is gestart, checkt het apparaat in bij de Intune-service.
+
+> [!IMPORTANT]
+> Het handmatig openen van de bedrijfsportal-app is een tijdelijke oplossing omdat Samsung Smart Manager de bedrijfsportal-app opnieuw kan deactiveren.
+
+**Oplossing 2:**
+
+Vertel uw gebruikers om een upgrade naar Android 6.0 uit te voeren. Het deactiveringsprobleem komt niet voor op Android 6.0-apparaten. Als gebruikers willen controleren of een update beschikbaar is, gaan deze naar **Instellingen** > **Apparaat** > **Updates handmatig downloaden** en volgen ze de aanwijzingen op het apparaat.
+
+**Oplossing 3:**
+
+Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om in Smart Manager de bedrijfsportal-app uit te sluiten:
+
+1. Start de Smart Manager-app op het apparaat.
+
+  ![Het pictogram Smart Manager op het apparaat selecteren](./media/smart-manager-app-icon.png)
+
+2. Kies de tegel **Batterij**.
+
+  ![De tegel Batterij selecteren](./media/smart-manager-battery-tile.png)
+
+3. Selecteer onder **App-energiebeheer** of **App-optimalisatie** **Details**.
+
+  ![Details selecteren onder App-energiebeheer App-optimalisatie](./media/smart-manager-app-power-saving-detail.png)
+
+4. Kies **bedrijfsportal** uit de lijst met apps.
+
+  ![Bedrijfsportal-app selecteren uit de lijst met apps](./media/smart-manager-company-portal.png)
+
+5. Kies **Uitschakelen**.
+
+  ![Uitschakelen selecteren in het dialoogvenster App-optimalisatie](./media/smart-manager-app-optimization-turned-off.png)
+
+6. Controleer onder **App-energiebeheer** of **App-optimalisatie** of bedrijfsportal is uitgeschakeld.
+
+  ![Controleren of bedrijfsportal is uitgeschakeld](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>De profielinstallatie is mislukt
 **Probleem:** een gebruiker ontvangt op een Android-apparaat de fout **Profiel is niet geïnstalleerd**.
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Stappen voor de probleemoplossing bij een mislukte profielinstallatie
+**Oplossing:**
 
 1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
 
 2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
 
-4.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
+3.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
 
 ### <a name="android-certificate-issues"></a>Problemen met Android-certificaten
 
@@ -255,7 +304,7 @@ In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weerg
 
 ## <a name="pc-issues"></a>Pc-problemen
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>De computer is al geregistreerd: fout hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>De computer is al geregistreerd: fout hr 0x8007064c
 **Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
 
 Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde installatiekopie bevat van een computer die is geregistreerd. Het accountcertificaat van het vorige account staat nog op de computer.
@@ -307,6 +356,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

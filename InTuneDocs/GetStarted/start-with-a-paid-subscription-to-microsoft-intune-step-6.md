@@ -1,11 +1,11 @@
 ---
-title: Beleid maken en een app publiceren | Microsoft Intune
-description: Beleid maken en een voorbeeldapp voor uw Intune-abonnement publiceren
+title: Beleid en apps implementeren | Microsoft Intune
+description: U kunt instellingen voor beleid inschakelen en apps implementeren die worden toegepast zodra apparaten zijn geregistreerd voor beheer.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,94 +14,57 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 748df2b7af8cf1679f31435f89730170ca723dc4
+ms.sourcegitcommit: 0d2a3e5c05180c1a3f2ee3bf91813df3b5fa7bc6
+ms.openlocfilehash: 679c49d135c9161ecae5db704a3f6c96add003dc
 
 
 ---
 
-# Beleid maken en een app publiceren
-Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. Meer informatie vindt u in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+# <a name="create-policies-and-publish-apps"></a>Beleid maken en apps publiceren
+Voordat u apps in Intune registreert, kunt u beleidsinstellingen en apps inschakelen die worden geïmplementeerd zodra deze apparaten in beheer komen. Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. U kunt beleid configureren, apps toevoegen en deze apps implementeren zodat apparaten instellingen en apps ontvangen zodra ze in Intune worden geregistreerd.
 
-U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde computers. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal, zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
+Beleid en apps zijn platform-specifiek.
 
-De volgende stappen helpen u bij het instellen van een configuratiebeleid voor mobiele apparaten, een firewallbeleid voor Windows-computers en de configuratie van Skype als een beschikbare installatie voor mobiele apparaten nadat deze zijn ingeschreven.
+## <a name="manage-device-settings"></a>Apparaatinstellingen beheren
 
-> [!TIP]
-> Nadat u een nieuw beleid hebt toegevoegd en geïmplementeerd, geldt het basisbeleid voor alle gebruikers of apparaten in de groep waarop u het beleid hebt geïmplementeerd. U kunt de details van het beleid altijd bekijken en bewerken vanuit de werkruimte Beleid.
+ Beleidsinstellingen voor apparaten worden geconfigureerd en beheerd per platform. U kunt beleid configureren voor de volgende platformen:
 
+- [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android en Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [Windows 10 (PC en mobiel)](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 8.1](https://docs.microsoft.com/intune/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](https://docs.microsoft.com/intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows Team](https://docs.microsoft.com/intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [Windows-pc's met Intune-softwareclient](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-## Een configuratiebeleid voor mobiele apparaten maken en implementeren
+Meer informatie over [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
-1.  Open de [Intune-beheerconsole](https://manage.microsoft.com/).
+## <a name="add-and-deploy-apps"></a>Apps maken en implementeren
 
-2.  Klik in het linkerdeelvenster op het pictogram **Beleid**.
+U kunt op twee manieren apps toevoegen aan Intune en deze vervolgens implementeren op beheerde apparaten:
+- **Vereiste installatie**: apps worden automatisch geïnstalleerd op beheerde apparaten
+- **Beschikbare installatie**: apps worden weergegeven in de Intune-bedrijfsportal zodat gebruikers kunnen kiezen of ze deze op hun apparaten installeren
 
-    ![beheerconsole-beleid-werkruimte](./media/policy.png)
+### <a name="add-apps"></a>Apps toevoegen
 
-3.  Klik in de lijst **Taken** op de pagina **Overzicht** op **Beleid toevoegen**.
+Eerst moet u er op een van de volgende manieren voor zorgen dat apps beschikbaar zijn in Intune:
+- [Apps toevoegen voor ingeschreven apparaten](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [Apps toevoegen voor Intune-softwareclient-pc's](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
-4.  Vouw in de lijst met beleidsregels het platform uit waarvoor u een beleid wilt maken en selecteer **Algemene configuratie** > **Beleid met de aanbevolen instellingen maken en implementeren** > **Beleid maken**.
+### <a name="deploy-apps"></a>Apps implementeren
 
-> [!NOTE]
-> Er zijn geen aanbevolen instellingen voor het configuratiebeleid voor apparaten, omdat u uit veel opties kunt kiezen. U moet een aangepast configuratiebeleid voor het apparaat maken.
+Nu de app beschikbaar is in Intune, kunt u deze implementeren op beheerde apparaten:
+- [Apps implementeren op apparaten](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- Apps implementeren die zijn gekocht via het volume-aankoopprogramma:
+    - [iOS - volume-aankoopprogramma](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [Windows Store voor Bedrijven](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
 
-
-5.  Wanneer u wordt gevraagd **de groepen te selecteren waarvoor u dit beleid wilt implementeren**, kiest u een groep in de lijst met beschikbare groepen en kiest u vervolgens **Toevoegen** > **OK**.
-
-Het beleid wordt weergegeven in de lijst met configuratiebeleidsregels en geïmplementeerd voor de groep **Intune--gebruikers**. Dubbelklik op het beleid om de instellingen weer te geven.
-
-## De app Skype voor mobiele apparaten publiceren
-
-1.  Klik op de [Intune-beheerconsole](https://manage.microsoft.com/) op het pictogram **Apps** en kies **Apps** > **App toevoegen**. Voer uw [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-referenties in als u hierom wordt gevraagd.
-
-    ![beheerconsole-apps-werkruimte](./media/apps.png)
-
-    > [!NOTE]
-    > De eerste keer dat u de **Uitgever van Microsoft Intune-software** start, treedt er een korte vertraging op wanneer de toepassing wordt geïnstalleerd.
-
-2.  Lees de beveiligingswaarschuwing en kies **Uitvoeren**.
-
-3.  Kies op de pagina **Voordat u begint** de optie **Volgende**.
-
-4.  Selecteer op de pagina **Setup van software** bij **Selecteer hoe deze software beschikbaar moet worden gesteld voor apparaten** de optie **Externe koppeling**.
-
-5.  Geef in **Geef de URL op** de externe koppeling voor de software op en kies **Volgende**. Zorg ervoor dat u de URL laat beginnen met **http://**. Gebruik voor de app Skype de koppeling hieronder die overeenkomt met het platform van het mobiele apparaat dat u gebruikt:
-
-    -   **iOS:**   [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
-
-    -   **Android:**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
-
-    -   **Windows Phone 8 of Windows Phone 8.1:**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
-
-6.  Typ op de pagina **Beschrijving van software** de informatie over de software die u voor gebruikers in de bedrijfsportal wilt weergeven en klik vervolgens op **Volgende**. De volgende instellingen zijn beschikbaar (in dit voorbeeld verwijzen we naar Skype):
-
-    -   **Uitgever:** Voer de naam van de uitgever in, bijvoorbeeld 'Microsoft'
-
-    -   **Naam:** Voer **Skype**
-
-    -   **Beschrijving:** Voer een beschrijving voor de software in, zoals **app voor Skype-communicatie**
-
-    -   **Categorie:** Selecteer de categorie die het beste past bij deze software, zoals **Samenwerking**
-
-    -   **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal:** selecteer deze optie als u de app op mobiele apparaten duidelijk zichtbaar wilt maken in de bedrijfsportal.
-
-    -   **Pictogram**: kies of u een pictogram wilt koppelen aan de software. De maximale grootte voor het optionele pictogram is 250 x 250 pixels en de aanbevolen grootte is 32 x 32 pixels.
-
-7.  Controleer de software-informatie op de pagina **Samenvatting** en kies **Uploaden**. Kies **Sluiten** om de wizard af te sluiten.
-
-8.  Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Apps** > **Apps** > **Skype** > **Implementatie beheren**.
-
-9. Selecteer op de pagina **Groepen selecteren** de optie **Intune-gebruikers** om de software te implementeren voor die gebruikersgroep en kies **Toevoegen** > **Volgende**.
-
-10. Selecteer **Beschikbare installatie** in de kolom **Goedkeuring** op de pagina **Implementatieactie** voor de groep.
-
-11. Kies **Voltooien**.
-
-De Skype-app kan nu vanuit de bedrijfsportal op mobiele apparaten worden geïnstalleerd, maar u moet eerst [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-software installeren op computers en mobiele apparaten.
+    Als u apps hebt geconfigureerd voor implementatie kunt u [apps configureren](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune) en [apps bewaken](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 Gefeliciteerd. U hebt zojuist stap 6 van de *Snelstartgids voor Intune* voltooid.
 
 >[!div class="step-by-step"]
@@ -110,6 +73,6 @@ Gefeliciteerd. U hebt zojuist stap 6 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

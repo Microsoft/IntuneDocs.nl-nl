@@ -1,9 +1,9 @@
 # [Begrijpen en verkennen](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Aan de slag](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Aan de slag](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [Wat is er nieuw?](/intune/whats-new/whats-new-in-microsoft-intune)
-# [Implementeren en gebruiken](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# Implementeren en gebruiken
 ## [Overzicht van de levenscycli van apparaten en apps](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Levenscyclus van apparaten](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Levenscyclus van apps](overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -89,7 +89,7 @@
 ### [Beleid voor de configuratie van Android for Work-apps](afw-app-configuration-policy.md)
 ### [Profielen voor mobiele apps voor iOS-apparaten inrichten](ios-mobile-app-provisioning-profiles.md)
 ### [Internettoegang beheren](manage-internet-access-using-managed-browser-policies.md)
-
+### [LOB-apps sideloaden](sideload-apps-for-windows.md)
 
 ## [Apps en gegevens beveiligen](protect-apps-and-data-with-microsoft-intune.md)
 ### [Nalevingsbeleid voor apparaten](introduction-to-device-compliance-policies-in-microsoft-intune.md)
@@ -154,6 +154,6 @@
 # [Problemen oplossen](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 
