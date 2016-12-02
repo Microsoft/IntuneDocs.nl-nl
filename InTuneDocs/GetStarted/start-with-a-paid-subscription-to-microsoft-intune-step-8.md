@@ -14,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
-ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
+ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
+ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
 
 
 ---
@@ -43,7 +43,7 @@ Inschrijving moet worden ingeschakeld voor iOS-, Mac- en Android for Work-appara
 
 Schakel apparateninschrijving in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
 
--  [iOS en Mac OS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS en Mac OS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
 -  [Window-pc](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Window 10 Mobile en Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +66,6 @@ Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune*
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

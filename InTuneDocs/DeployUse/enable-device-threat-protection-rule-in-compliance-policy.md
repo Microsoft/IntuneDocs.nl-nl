@@ -3,7 +3,6 @@ title: De regel Device Threat Protection inschakelen in het nalevingsbeleid | Mi
 description: De regel Mobile Threat Protection inschakelen in het nalevingsbeleid van het apparaat.
 keywords: 
 author: karthikaraman
-ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +13,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 3e6aef013ae8764d9b031e880c333e184191feb4
 
 
 ---
@@ -46,7 +45,7 @@ Ga op de pagina **Nalevingsbeleid** van de **Intune-beheerconsole** naar **Appar
 
 ![schermopname met de optie voor het bedreigingsniveau voor de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-setting.png)
 
-Als u beleid voor voorwaardelijke toegang voor Office 365 en andere services maakt, wordt bovenstaande compatibiliteitsevaluatie in acht genomen en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging is opgelost.
+Als u beleid voor voorwaardelijke toegang voor Office 365 en andere services maakt, wordt bovenstaande compatibiliteitsevaluatie in acht genomen en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging is opgelost.
 
 U kunt de compatibiliteitsstatus van een apparaat bekijken op de pagina **Alle apparaten** van de **Intune-beheerconsole**.
 
@@ -57,11 +56,11 @@ U kunt de compatibiliteitsstatus van een apparaat bekijken op de pagina **Alle a
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  * [Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune,md)
+  * [Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

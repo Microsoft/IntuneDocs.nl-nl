@@ -4,15 +4,15 @@ description: Intune beheert Android for Work om aanvullende beheermogelijkheden 
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: aafeb58e28144740540a765ac04de68b41ae5ce5
+ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
+ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
 
 
 ---
@@ -43,7 +43,7 @@ Apps installeren zonder tussenkomst van de gebruiker en zonder dat de gebruiker 
 
 ## <a name="app-configuration"></a>App-configuratie
 
-Android for Work biedt een infrastructuur voor het implementeren van appconfiguratiewaarden naar apps die ze ondersteunen. Als u configuratiewaarden voor zakelijke apps opgeeft, zorgt u ervoor dat ze goed zijn ingesteld wanneer gebruikers de app de eerste keer starten. Ondersteuning voor app-configuratie vereist dat app-ontwikkelaars hun Android-apps specifiek ter ondersteuning van beheerde configuratiewaarden maken. Als dat het geval is, kunt u vervolgens Intune gebruiken en deze configuratie-instellingen toepassen. Meer informatie over [configuratie-instellingen voor Android for Work-apps](deploy-use/afw-app-configuration-policy.md).
+Android for Work biedt een infrastructuur voor het implementeren van appconfiguratiewaarden naar apps die ze ondersteunen. Als u configuratiewaarden voor zakelijke apps opgeeft, zorgt u ervoor dat ze goed zijn ingesteld wanneer gebruikers de app de eerste keer starten. Ondersteuning voor app-configuratie vereist dat app-ontwikkelaars hun Android-apps specifiek ter ondersteuning van beheerde configuratiewaarden maken. Als dat het geval is, kunt u vervolgens Intune gebruiken en deze configuratie-instellingen toepassen. Meer informatie over [configuratie-instellingen voor Android for Work-apps](afw-app-configuration-policy.md).
 
 ## <a name="email-configuration"></a>E-mailconfiguratie
 
@@ -77,7 +77,7 @@ Dezelfde certificaatprofielconfiguratieopties die beschikbaar zijn voor traditio
 
 Meer informatie over [Certificaatprofielen](secure-resource-access-with-certificate-profiles.md).
 
-## <a name="wifi-profiles"></a>Wi-Fi-profielen
+## <a name="wi-fi-profiles"></a>Wi-Fi-profielen
 
 Wi-Fi-profielen die worden beheerd door Android for Work, worden gegarandeerd verwijderd wanneer het apparaat uit Intune wordt teruggetrokken en het werkprofiel wordt verwijderd. Meer informatie over [Wi-Fi-profielen](wi-fi-connections-in-microsoft-intune.md).
 
@@ -87,6 +87,6 @@ Wi-Fi-profielen die worden beheerd door Android for Work, worden gegarandeerd ve
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

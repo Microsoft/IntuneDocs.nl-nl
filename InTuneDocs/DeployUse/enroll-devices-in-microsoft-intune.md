@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
 
 
 ---
@@ -30,7 +30,7 @@ Als u [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-a
 De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mogelijkheden en vereisten van elke methode. De mogelijkheden en vereisten worden hieronder beschreven.
 
 - **Wissen**: geeft aan of het apparaat moet worden gewist voordat gebruikers het apparaat kunnen inschrijven. 'Wissen' betekent dat de fabrieksinstellingen van het apparaat worden teruggezet, waardoor alle gegevens worden verwijderd. Zie [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md) voor meer informatie.
-- **Affiniteit**: apparaten worden aan gebruikers gekoppeld. Dit is vereist voor Mobile Application Management (MAM) en voorwaardelijke toegang tot bedrijfsgegevens. Zie [Gebruikersaffiniteit](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) voor meer informatie.
+- **Affiniteit**: apparaten worden aan gebruikers gekoppeld. Dit is vereist voor Mobile Application Management (MAM) en voorwaardelijke toegang tot bedrijfsgegevens. Zie [Gebruikersaffiniteit](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices) voor meer informatie.
 - **Vergrendelen**: dit voorkomt dat gebruikers het apparaat uit het beheer kunnen verwijderen. Voor iOS-apparaten is de supervisiemodus vereist voor vergrendeling. Zie [Vergrendelen op afstand](retire-devices-from-microsoft-intune-management.md#block-access-a-device) voor meer informatie.
 
 **iOS-registratiemethoden**
@@ -120,6 +120,6 @@ Met Intune kunnen de volgende apparaatplatformen worden beheerd:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

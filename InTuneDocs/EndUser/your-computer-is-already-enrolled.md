@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,12 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 6ea001a00007a323c88f2f384bc768edc06eaa87
 
 
 ---
-
 
 # <a name="your-computer-is-already-enrolled"></a>Uw computer is al geregistreerd
 
@@ -40,6 +39,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgeg
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

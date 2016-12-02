@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Groepen in Intune bieden u een hoge mate van flexibiliteit voor het beheren van 
 
 >[!IMPORTANT]
 >
->Als u de werkruimte Groepen opent in de Intune-portal en **Intune user groups are now managed as groups in Azure Active Directory** (Intune-gebruikersgroepen worden nu als groepen beheerd in Azure Active Directory) ziet staan met een koppeling naar de Azure Active Directory-portal, maakt u al gebruik van de *nieuwe* Azure AD-beveiligingsgroepen voor groepsbeheer in Intune. Zie [Groepen beheren in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups) voor meer informatie over het maken van groepen.
+>Als u de werkruimte Groepen opent in de Intune-portal en **Intune user groups are now managed as groups in Azure Active Directory** (Intune-gebruikersgroepen worden nu als groepen beheerd in Azure Active Directory) ziet staan met een koppeling naar de Azure Active Directory-portal, maakt u al gebruik van de *nieuwe* Azure AD-beveiligingsgroepen voor groepsbeheer in Intune. Zie [Groepen beheren in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) voor meer informatie over het maken van groepen.
 >
 >Als u de koppeling naar de Azure AD-portal niet ziet, gebruikt u nog steeds de Intune-portal voor groepsbeheer.
 
@@ -89,6 +89,6 @@ Gefeliciteerd. U hebt zojuist stap 5 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
