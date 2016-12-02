@@ -14,8 +14,8 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
 
 
 ---
@@ -40,7 +40,7 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 
     -   **Handmatig apparaatdetails toevoegen**: geef het IMEI-nummer en de apparaatdetails van maximaal 15 apparaten op.
 
-   *Details* zijn voor administratief gebruik, zodat u weet welk IMEI-nummer is gekoppeld aan een apparaat. Deze informatie wordt niet naar het apparaat verzonden, maar weergegeven in de Intune-console.
+   Het veld *Details* is bedoeld voor beheerders. U kunt details opgeven voor het identificeren van het apparaat in de lijst met apparaten in bedrijfseigendom, waarin apparaten worden weergegeven op hardware-id. Deze informatie wordt niet naar het apparaat verzonden, maar weergegeven in de Intune-console.
 
 2.   Kies **Volgende**.
 3.  In het deelvenster **Apparaten controleren** kunt u de geïmporteerde IMEI-nummers controleren. U kunt ook bepalen of de **Details** moeten worden overschreven voor IMEI-nummers die opnieuw worden geïmporteerd. Schakel het selectievakje **Overschrijven** uit als u de huidige details wilt behouden. Kies **Voltooien** om de IMEI-nummers te importeren.
@@ -50,6 +50,6 @@ Wanneer het apparaat met een IMEI-nummer wordt ingeschreven bij Intune, wat mees
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

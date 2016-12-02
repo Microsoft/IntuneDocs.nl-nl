@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode
@@ -25,6 +25,7 @@ Als een gebruiker een apparaat verliest, kunt u het apparaat op afstand vergrend
 
 |Platform|Vergrendelen op afstand|
 |------------|---------------|
+|macOS|Niet ondersteund|
 |iOS|Ondersteund|
 |Android|Ondersteund|
 |Windows 10 en Windows 10 Mobile|Ondersteund|
@@ -50,12 +51,14 @@ Als een gebruiker een wachtwoordcode vergeet, kunt u helpen door de wachtwoordco
 
 |Platform|Wachtwoordcode opnieuw instellen|
 |------------|------------------|
+|macOS|Niet ondersteund|
 |iOS|Wordt ondersteund voor het wissen van de wachtwoordcode van een apparaat. Maakt geen nieuwe tijdelijke wachtwoordcode aan.|
 |Android|Ondersteund in eerdere versies dan Android 7.0. Hiermee maakt u een tijdelijke wachtwoordcode.|
 |Windows 10 Mobile|Ondersteund|
 |Windows Phone 8 en Windows Phone 8.1|Ondersteund|
-|Windows RT 8.1 en Windows RT|Niet ondersteund|
+|Windows RT 8.1|Niet ondersteund|
 |Windows 8.1|Niet ondersteund|
+|Windows 10-bureaublad|Niet ondersteund|
 
 Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers die zijn ingeschreven bij de Intune-software-client.
 
@@ -76,6 +79,6 @@ Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers d
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

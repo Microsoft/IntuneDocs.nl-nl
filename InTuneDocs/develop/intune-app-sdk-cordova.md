@@ -14,38 +14,42 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: karthikaraman
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 5583c496a10d93d041d3387b7b10931bf87c73d6
+ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
+ms.openlocfilehash: 2af369cc44c710789ab65eb25f10602882772019
 
 
 ---
 # ﻿<a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova-invoegtoepassing
 
+> [!NOTE]
+> U kunt desgewenst eerst het artikel [Aan de slag met Intune App SDK](intune-app-sdk-get-started.md) lezen, waarin wordt uitgelegd hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
+
+
 ## <a name="overview"></a>Overzicht
 
 Met de [Intune App SDK Cordova-invoegtoepassing](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) kunt u de [beheerfuncties voor Intune Mobile App](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) inschakelen in iOS- en Android-apps die zijn gebouwd met Cordova. De invoegtoepassing biedt ontwikkelaars de mogelijkheid om beveiligingsfuncties voor de Intune-app en -gegevens te integreren in hun op Cordova gebaseerde app.
 
-U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. Als u de invoegtoepassing hebt gemaakt in uw mobiele iOS- of Android-app, kan de IT-beheerder via Microsoft Intune beleid implementeren dat verschillende functies voor gegevensbescherming ondersteunt. We hebben de invoegtoepassing zodanig ontwikkeld dat de meeste stappen automatisch worden uitgevoerd in het bouwproces voor Cordova. Dat zou het mogelijk moeten maken om uw app snel in te schakelen voor beheer. Volg de onderstaande stappen op basis van uw doelplatform om aan de slag te gaan.
+U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. Als u de invoegtoepassing hebt gemaakt in uw mobiele iOS- of Android-app, kan de IT-beheerder via Mobile Application Management (MAM) in Microsoft Intune beleid implementeren dat verschillende functies voor gegevensbescherming biedt. We hebben de invoegtoepassing zodanig ontwikkeld dat de meeste stappen automatisch worden uitgevoerd in het bouwproces voor Cordova. Dat zou het mogelijk moeten maken om uw app snel in te schakelen voor beheer. Volg de onderstaande stappen op basis van uw doelplatform om aan de slag te gaan.
 
-Voordat u de Microsoft Intune App SDK Cordova-invoegtoepassing installeert en gebruikt, **moet** u:
 
-* De [licentievoorwaarden voor de Intune App SDK Cordova-invoegtoepassing](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf) doorlezen.
-* Een exemplaar van de licentievoorwaarden voor uw administratie afdrukken en bewaren. Door de Intune App SDK Cordova-invoegtoepassing te downloaden en gebruiken, gaat u akkoord met deze licentievoorwaarden.  Als u deze niet accepteert, moet u de software niet gebruiken.
 
-Zie de [officiële documentatie](/intune/develop/intune-app-sdk) voor een gedetailleerde beschrijving van de Intune App SDK.
 
-## <a name="supported-scenarios"></a>Ondersteunde scenario's
+## <a name="whats-supported"></a>Wat wordt ondersteund
 
-### <a name="platforms"></a>Platformen
-* Android
+### <a name="developer-machines"></a>Machines van ontwikkelaars
+* Windows
+* Mac OS
+
+
+### <a name="mobile-app-platforms"></a>Mobiele app-platformen
+* Android 4.0+
 * iOS
 
+### <a name="intune-mobile-application-management-scenarios"></a>Scenario’s voor Intune Mobile Application Management
 
-### <a name="emm-scenarios"></a>EMM-scenario's
-
-* Intune MAM op bij MDM van Intune ingeschreven apparaten
-* Intune MAM op bij EMM van derden ingeschreven apparaten
-* Intune MAM op niet-ingeschreven, niet-beheerde apparaten
+* Apparaten die zijn ingeschreven bij Intune MDM
+* Apparaten die zijn ingeschreven bij EMM van derden
+* Onbeheerde apparaten (niet ingeschreven bij een MDM)
 
 Cordova-apps die zijn gemaakt met de Intune App SDK Cordova-invoegtoepassing kunnen nu Mobile Application Management-beleid (MAM) van Intune ontvangen op apparaten die wel en apparaten die niet zijn ingeschreven in Mobile Device Management (MDM) van Intune.
 
@@ -53,11 +57,21 @@ Cordova-apps die zijn gemaakt met de Intune App SDK Cordova-invoegtoepassing kun
 
 ## <a name="prerequisites"></a>Vereisten
 
+### <a name="technical-prerequisites"></a>Technische vereisten
+
 * **[Alleen android]** Op het apparaat moet altijd de meest recente Microsoft Intune-bedrijfsportal-app zijn geïnstalleerd.
 
 
 * Versie 0.8.0 of hoger van de [Azure Active Directory Authentication Libraries-invoegtoepassing (ADAL) voor Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) is vereist.
-  * **Opmerking:** Vanwege een [hier](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) opgeslagen Cordova Apache-fout worden apps die al afhankelijk zijn van de invoegtoepassing, niet automatisch bijgewerkt naar de vereiste versie.
+  * **Belangrijk:** Vanwege een [hier](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) opgeslagen Cordova Apache-fout worden apps die al afhankelijk zijn van de invoegtoepassing, niet automatisch bijgewerkt naar de vereiste versie.
+
+
+### <a name="before-you-install-and-use-microsoft-intune-app-sdk-cordova-plugin-you-must"></a>Voordat u de Microsoft Intune App SDK Cordova-invoegtoepassing installeert en gebruikt, **moet** u:
+
+* De [licentievoorwaarden voor de Intune App SDK Cordova-invoegtoepassing](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf) doorlezen.
+
+* Een exemplaar van de licentievoorwaarden voor uw administratie afdrukken en bewaren. Door de Intune App SDK Cordova-invoegtoepassing te downloaden en gebruiken, gaat u akkoord met deze licentievoorwaarden.  Als u deze niet accepteert, moet u de software niet gebruiken.
+
 
 ## <a name="quick-start"></a>Snel starten
 
@@ -122,11 +136,11 @@ Als u handtekeninginformatie aan de verpakte APK wilt toevoegen, wijzigt u `buil
 
 2. **Cordova 6.x.x:** In `[PROJECT_ROOT]/platforms/android/cordova/lib/Adb.js`, wijzig regel 60 van
 
-    ```
+    ```javascript
     var args = ['-s', target, 'install'];
     ```
     in op
-    ```
+    ```javascript
     var args = ['-s', target, 'install', '-t'];
     ```
 
@@ -137,7 +151,7 @@ Nadat u de app de eerste keer hebt gestart, verschijnt een dialoogvenster met de
 
 ## <a name="known-limitations"></a>Bekende beperkingen
 ### <a name="android"></a>Android
-* Ondersteuning voor Multi-Dex is onvolledig.
+* Ondersteuning voor MultiDex is onvolledig.
 * App moet gericht zijn op Android 4.0 (Android API 14) of hoger.
 
 ### <a name="ios"></a>iOS
@@ -147,6 +161,6 @@ Nadat u de app de eerste keer hebt gestart, verschijnt een dialoogvenster met de
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
