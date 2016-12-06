@@ -5,13 +5,13 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 1/22/2016
+ms.date: 12/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
