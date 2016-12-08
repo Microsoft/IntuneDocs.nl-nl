@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ U kunt nu meervoudige verificatie (MFA) afdwingen voor een geselecteerde groep g
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>Voorwaardelijke toegang voor MAM met SharePoint Online <!--VSO 679339-->
 U kunt de toegang tot SharePoint Online blokkeren voor apps die niet worden ondersteund door de beleidsregels voor Mobile App Management (MAM) in Intune.  U kunt aan de slag gaan met Mobile App Management in Intune via de Azure-portal. De sectie __Voorwaardelijke toegang__ op de blade __Instellingen__ bevat de optie voor SharePoint Online. Deze functie wordt afzonderlijk geleverd van de rest van de servicerelease.
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>Mogelijkheid om de inschrijving van mobiele apparaten voor Intune te beperken
+Er zijn in Intune nieuwe inschrijvingsbeperkingen toegevoegd die bepalen welke platforms voor mobiele apparaten kunnen worden ingeschreven. Intune onderscheidt platforms voor mobiele apparaten als iOS, Mac OS, Android, Windows en Windows Mobile. 
+* Mac OS en Windows 8.1 of hoger worden mogelijk niet toegelaten voor inschrijving als platform voor mobiele apparaten. 
+* Uitsluiting van inschrijving van mobiele apparaten betekent geen uitsluiting van inschrijving als pc-agent. 
+* Alleen voor iOS geldt er een extra optie voor het blokkeren van de inschrijving van apparaten die in persoonlijk eigendom zijn. Intune markeert alle nieuwe apparaten als persoonlijk, tenzij de IT-beheerder actie onderneemt om deze te markeren als bedrijfseigen, zoals uitgelegd in [dit artikel](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+
 ## <a name="notices"></a>Mededelingen
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Meervoudige verificatie voor inschrijving wordt verplaatst naar de Azure-portal. <!--VSO 750545-->
@@ -82,6 +89,6 @@ Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voo
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
