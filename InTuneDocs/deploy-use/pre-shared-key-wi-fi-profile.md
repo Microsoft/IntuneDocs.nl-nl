@@ -14,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
+# <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
@@ -58,7 +58,7 @@ Zorg ervoor dat deze string met een punt begint.
     > Dit beleid kan alleen worden geïmplementeerd voor gebruikersgroepen.
 
 De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan automatisch verbinding maken met het netwerk.
-## <a name="android-or-windows-wifi-profile"></a>Wi-Fi-profiel voor Android of Windows
+## <a name="android-or-windows-wi-fi-profile"></a>Wi-Fi-profiel voor Android of Windows
 
 Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of Windows:
 
@@ -109,7 +109,7 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of 
       </MSM>
     </WLANProfile>
 
-## <a name="eapbased-wifi-profile"></a>Wi-Fi-profiel op basis van EAP
+## <a name="eap-based-wi-fi-profile"></a>Wi-Fi-profiel op basis van EAP
 Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP.
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP
       </MSM>
     </WLANProfile>
 
-## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
+## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
 U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
 1. Op een computer die (onlangs) is verbonden met het draadloze netwerk, opent u de volgende map: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 

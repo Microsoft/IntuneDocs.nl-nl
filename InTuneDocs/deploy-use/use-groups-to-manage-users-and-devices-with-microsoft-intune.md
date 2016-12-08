@@ -14,7 +14,7 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 
@@ -68,7 +68,7 @@ Hoewel de functie voor groepen wordt verbeterd, zijn er enkele Intune-functies d
 -   De groepen Niet-gegroepeerde gebruikers en Niet-gegroepeerde apparaten worden niet ondersteund. Deze groepen worden niet van Intune naar Azure AD gemigreerd.
 
 
-#### <a name="groupdependent-functionality"></a>Groepsafhankelijke functionaliteit
+#### <a name="group-dependent-functionality"></a>Groepsafhankelijke functionaliteit
 
 -   De servicebeheerdersrol heeft geen machtigingen voor **Groepen beheren**.
 -   U kunt geen Exchange ActiveSync-apparaten groeperen. Uw groep met alle met EAS beheerde apparaten wordt geconverteerd van een groep naar een rapportweergave.

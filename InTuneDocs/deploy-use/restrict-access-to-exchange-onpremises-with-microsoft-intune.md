@@ -14,13 +14,13 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-onpremises-and-legacy-exchange-online-dedicated-with-intune"></a>Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated met Microsoft Intune
+# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated met Microsoft Intune
 
 
 Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neemt u contact op met uw accountmanager.
