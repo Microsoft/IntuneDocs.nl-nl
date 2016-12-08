@@ -15,7 +15,7 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
@@ -77,7 +77,7 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
     |**Naam**|Voer een unieke naam in voor het aangepaste Android-beleid, zodat dit gemakkelijk is te herkennen in de Intune-console.|
     |**Beschrijving**|Geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie die u helpt om het beleid weer te vinden.|
 
-### <a name="omauri-settings"></a>OMA-URI-instellingen
+### <a name="oma-uri-settings"></a>OMA-URI-instellingen
 
    |Naam van de instelling|Details|
     |--------|--------------------|

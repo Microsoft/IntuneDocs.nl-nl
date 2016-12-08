@@ -15,7 +15,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
 
 
@@ -70,19 +70,19 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Verzending van diagnostische gegevens toestaan**|Hiermee kan het apparaat diagnostische gegevens indienen bij Google.|Nee|Yes|
 |**Fabrieksinstellingen terugzetten toestaan**|Staat de gebruiker toe om de fabrieksinstellingen terug te zetten op het apparaat.|Nee|Ja|
 
-### <a name="cloud-settings-documents-and-data"></a>Cloudinstellingen – documenten en gegevens
+### <a name="cloud-settings---documents-and-data"></a>Cloudinstellingen – documenten en gegevens
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------------------|----------------|
 |**Google-back-up toestaan**|Hiermee wordt het gebruik van Google-back-up toegestaan.|Nee|Ja|
 
-### <a name="cloud-settings-accounts-and-synchronization"></a>Cloudinstellingen - accounts en synchronisatie
+### <a name="cloud-settings---accounts-and-synchronization"></a>Cloudinstellingen - accounts en synchronisatie
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Automatisch synchroniseren van Google-account toestaan**|Toestaan dat instellingen voor Google-accounts automatisch worden gesynchroniseerd.|Nee|Ja|
 
-### <a name="application-settings-browser"></a>Toepassingsinstellingen - browser
+### <a name="application-settings---browser"></a>Toepassingsinstellingen - browser
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -92,13 +92,13 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Cookies toestaan**|Hiermee staat u toe dat de webbrowser van het apparaat gebruikmaakt van cookies.|Nee|Ja|
 |**Active Scripting toestaan**|Hiermee staat u toe dat de webbrowser van het apparaat gebruikmaakt van Active Scripting.|Nee|Ja|
 
-### <a name="application-settings-apps"></a>Toepassingsinstellingen - apps
+### <a name="application-settings---apps"></a>Toepassingsinstellingen - apps
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
 |**Google Play Store toestaan**|Hiermee kan de gebruiker de Google Play Store openen op het apparaat.|Nee|Ja|
 
-### <a name="device-capabilities-settings-hardware"></a>Instellingen voor apparaatmogelijkheden - hardware
+### <a name="device-capabilities-settings---hardware"></a>Instellingen voor apparaatmogelijkheden - hardware
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -111,7 +111,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Bluetooth toestaan**|Hiermee kan de gebruiker Bluetooth op het apparaat gebruiken.|Nee|Yes|
 |**Uitschakelen toestaan**|Hiermee kan de gebruiker het apparaat uitschakelen.<br /><br />Als deze instelling is uitgeschakeld, werkt de instelling **Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist** voor Samsung KNOX Standard-apparaten niet.|Nee|Ja|
 
-### <a name="device-capabilities-settings-cellular"></a>Instellingen voor apparaatmogelijkheden - mobiel
+### <a name="device-capabilities-settings---cellular"></a>Instellingen voor apparaatmogelijkheden - mobiel
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
@@ -119,7 +119,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Dataroaming toestaan**|Hiermee staat u dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Yes|
 |**Sms-/mms-berichten toestaan**|Hiermee staat u het gebruik van sms- en mms-berichten toe op het apparaat.|Nee|Ja|
 
-### <a name="device-capabilities-settings-features"></a>Instellingen voor apparaatmogelijkheden - functies
+### <a name="device-capabilities-settings---features"></a>Instellingen voor apparaatmogelijkheden - functies
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
@@ -188,7 +188,7 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
     |**Naam**|Voer een unieke naam in voor het aangepaste Android-beleid, zodat dit gemakkelijk is te herkennen in de Intune-console.|
     |**Beschrijving**|Geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie die u helpt om het beleid weer te vinden.|
 
-### <a name="omauri-settings"></a>OMA-URI-instellingen
+### <a name="oma-uri-settings"></a>OMA-URI-instellingen
 
    |Naam van de instelling|Details|
     |--------|--------------------|
