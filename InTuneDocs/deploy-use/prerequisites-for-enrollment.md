@@ -14,7 +14,7 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 
 
@@ -119,7 +119,7 @@ U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te vo
 
 3.  Het gebruikersaccount wordt nu toegevoegd aan de Microsoft Intune-gebruikersgroep die de gebruikersmachtigingen voor het gebruik van de service toekent en de apparaten inschrijft voor beheer.
 
-### <a name="to-synchronize-onpremises-users-with-azure-ad"></a>On-premises gebruikers synchroniseren met Azure AD
+### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>On-premises gebruikers synchroniseren met Azure AD
 
 1. [Voeg het UPN-achtervoegsel](https://technet.microsoft.com/en-us/library/cc772007.aspx) toe voor uw aangepaste domein in uw on-premises Active Directory.
 2. Stel het nieuwe UPN-achtervoegsel in voor de on-premises gebruikers die u van plan bent te importeren.

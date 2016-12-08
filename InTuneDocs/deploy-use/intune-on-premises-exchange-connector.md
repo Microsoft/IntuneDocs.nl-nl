@@ -14,18 +14,18 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c84b1e95b32ec878fffa001d0234940ebfb35576
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
 
 
 ---
 
-# <a name="install-the-intune-onpremises-exchange-connector"></a>Intune On-premises Exchange Connector installeren
+# <a name="install-the-intune-on-premises-exchange-connector"></a>Intune On-premises Exchange Connector installeren
 
 
 Als u een verbinding wilt instellen waarmee Microsoft Intune kan communiceren met de Exchange Server die als host fungeert voor de postvakken voor de mobiele apparaten, moet u On-premises Exchange Connector vanuit de Intune-beheerconsole downloaden en configureren. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
 
-## <a name="onpremises-exchange-connector-requirements"></a>Vereisten voor On-premises Exchange Connector
+## <a name="on-premises-exchange-connector-requirements"></a>Vereisten voor On-premises Exchange Connector
 De volgende tabel bevat de vereisten voor de computer waarop u On-premises Exchange Connector installeert.
 
 |Vereiste|Meer informatie|
@@ -57,7 +57,7 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
  -   Set-ADServerSettings
  -   Get-Command
 
-## <a name="download-the-onpremises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor On-premises Exchange Connector downloaden
+## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor On-premises Exchange Connector downloaden
 
 1. Open op een ondersteund Windows Server-besturingssysteem voor On-premises Exchange Connector de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) (http://manage.microsoft.com) met een gebruikersaccount dat een beheerder is in de Exchange-tenant en dat een licentie heeft om Exchange Server te gebruiken.
 ![Exchange-verbinding instellen openen](../media/ExchangeConnector.gif)
@@ -71,7 +71,7 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
 > [!IMPORTANT]
 > Wijzig of verplaats de bestanden in de On-Premises Exchange Connector-map niet. Als er inhoud van de map wordt hernoemd of verplaatst, wordt de installatie afgebroken.
 
-## <a name="install-and-configure-the-intune-onpremises-exchange-connector"></a>Intune On-Premises Exchange Connector installeren en configureren
+## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Intune On-Premises Exchange Connector installeren en configureren
 Voer de volgende stappen uit om Intune On-Premises Exchange Connector te installeren. On-Premises Exchange Connector kan maar eenmaal per Intune-abonnement worden geïnstalleerd en slechts op één computer. Als u probeert een extra On-Premises Exchange Connector te configureren, wordt de oorspronkelijke verbinding vervangen door de nieuwe.
 
 1.  Pak op een ondersteund besturingssysteem voor On-Premises Connector de bestanden in **Exchange_Connector_Setup.zip** uit op een veilige locatie.

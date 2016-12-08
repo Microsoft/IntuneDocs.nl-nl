@@ -14,7 +14,7 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 
@@ -133,7 +133,7 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |**Microsoft-account optioneel maken in de Windows Mail-toepassing**|Yes|Nee|Nee|Nee|Nee|
 |**Aangepaste e-mailaccounts toestaan**|Nee|Nee|Alleen Windows Phone 8.1|Nee|Nee|
 
-## <a name="application-settings-browser"></a>Toepassingsinstellingen - browser
+## <a name="application-settings---browser"></a>Toepassingsinstellingen - browser
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -154,7 +154,7 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |**Toegang tot Bedrijfsmodus-menu toestaan**|Yes|Nee|Nee|Nee|Nee|
 |**Locatie van de lijst met websites van Bedrijfsmodus**|Yes|Nee|Nee|Nee|Nee|
 
-## <a name="application-settings-apps"></a>Toepassingsinstellingen - apps
+## <a name="application-settings---apps"></a>Toepassingsinstellingen - apps
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -167,14 +167,14 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |**Inhoud voor volwassenen in media store toestaan**|Nee|Nee|Nee|Ja|Nee|
 |**App-installatie toestaan**|Nee|Nee|Nee|iOS 6 en hoger|Nee|
 
-## <a name="application-settings-gaming"></a>Toepassingsinstellingen - gaming
+## <a name="application-settings---gaming"></a>Toepassingsinstellingen - gaming
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Game Center-vrienden toestaan**|Nee|Nee|Nee|Ja|Nee|
 |**Games voor meerdere spelers toestaan**|Nee|Nee|Nee|Ja|Nee|
 
-## <a name="device-capabilities-settings-hardware"></a>Instellingen voor apparaatmogelijkheden - hardware
+## <a name="device-capabilities-settings---hardware"></a>Instellingen voor apparaatmogelijkheden - hardware
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -189,7 +189,7 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |**Bluetooth toestaan**|Nee|Nee|Alleen Windows Phone 8.1|Nee|Ja (alleen Samsung KNOX Standard)|
 |**Uitschakelen toestaan**<br>Als deze instelling is uitgeschakeld, werkt de instelling **Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist** voor Samsung KNOX Standard-apparaten niet.|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-cellular"></a>Instellingen voor apparaatmogelijkheden - mobiel
+## <a name="device-capabilities-settings---cellular"></a>Instellingen voor apparaatmogelijkheden - mobiel
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -198,7 +198,7 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |**Automatische synchronisatie tijdens roaming toestaan**|Nee|Nee|Nee|Ja|Nee|
 |**Sms-/mms-berichten toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-features"></a>Instellingen voor apparaatmogelijkheden - functies
+## <a name="device-capabilities-settings---features"></a>Instellingen voor apparaatmogelijkheden - functies
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
