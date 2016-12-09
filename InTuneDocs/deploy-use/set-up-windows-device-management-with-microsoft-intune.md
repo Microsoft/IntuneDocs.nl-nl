@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 13959c1456a0b160ce1fdcb76888d67cd13a5991
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
 
 
 ---
@@ -32,7 +32,7 @@ Als Intune-beheerder kunt u de registratie en het beheer voor Windows-pc's op tw
 U kunt toestaan dat gebruikers hun apparaat installeren en registreren met de bedrijfsportal-app van Intune. Als u DNS CNAME-bronrecords maakt, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een servernaam te hoeven opgeven.
 
 1. **Intune instellen**<br>
-Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [autoriteit voor het beheer voor mobiele apparaten (MDM) in te stellen](prerequisites-for-enrollment.md#set-mobile-device-management-authority) op **Microsoft Intune** en vervolgens MDM in te stellen.
+Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [autoriteit voor het beheer voor mobiele apparaten (MDM) in te stellen](prerequisites-for-enrollment.md#step-2-set-mdm-authority) op **Microsoft Intune** en vervolgens MDM in te stellen.
 
 2. **CNAME-records maken** (optioneel)<br>Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar enterpriseenrollment.manage.microsoft.com.
 
@@ -72,6 +72,6 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

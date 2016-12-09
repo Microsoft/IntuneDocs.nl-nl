@@ -14,8 +14,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: f1e019d66858357987ee34e8a5144fb6a3511400
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparaten, inclusief Samsung Knox Standard-apparaten, inschakelen. Gebruikers kunnen hun apparaten vervolgens registreren met de bedrijfsportal-app die beschikbaar is via Google Play.
 
 1.  **Intune instellen**<br>
-    Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](prerequisites-for-enrollment.md#set-mobile-device-management-authority) op **Microsoft Intune** en MDM in te stellen.
+    Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](prerequisites-for-enrollment.md#step-2-set-mdm-authority) op **Microsoft Intune** en MDM in te stellen.
 
 2.  **Android-inschrijving ingeschakeld**<br>
     In de Intune-console zijn geen extra configuraties nodig om de inschrijving van mobiele Android-apparaten in te schakelen.
@@ -42,6 +42,6 @@ Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparat
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

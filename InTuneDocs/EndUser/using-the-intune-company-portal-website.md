@@ -14,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 
 
 ---
@@ -45,12 +45,12 @@ Gebruikers kunnen op de bedrijfsportalwebsite de volgende taken uitvoeren:
 
 Eindgebruikers kunnen op de **bedrijfsportalwebsite** de meeste taken uitvoeren die ze ook met de **bedrijfsportal-app** op een apparaat kunnen uitvoeren. De volgende pagina's bevatten koppelingen naar alle taken die eindgebruikers op hun apparaat kunnen uitvoeren:
 
-- [Met een Android-apparaat met Intune](using-your-android-device-with-intune.md)
-- [Met een iOS- of Mac OS X-apparaat met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Met een Windows-apparaat met Intune](using-your-windows-device-with-intune.md)
+- [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

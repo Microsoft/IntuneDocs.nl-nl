@@ -2,8 +2,8 @@
 title: Uw abonnement instellen met Lookout | Microsoft Intune
 description: Deze onderwerpen bevatten gedetailleerde informatie over het configureren van Lookout Device Threat Protection.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1187ad3fdd4a427333d610686698c1f806c6ee33
-ms.openlocfilehash: 1d8cdaa36a852fba5912c250daa500e16bd3b661
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: bd22d4d19a8337194d331931995c0bd2321a90c5
 
 
 ---
@@ -126,6 +126,6 @@ Nadat de installatie is voltooid, wordt Azure AD met Lookout Device Threat Prote
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

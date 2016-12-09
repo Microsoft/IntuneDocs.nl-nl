@@ -2,8 +2,8 @@
 title: Bedrijfsgegevens van beheerde apps wissen | Microsoft Intune
 description: Informatie over het op afstand selectief verwijderen van bedrijfsgegevens.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ Het tabblad **Intune Mobile Application Management** biedt een samenvattingsrapp
 
 2.  Op het tabblad **Verzoek om te wissen** ziet u een lijst met uw verzoeken, gegroepeerd per gebruiker. Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker. De status geeft aan of een verzoek om te wissen **in behandeling**, **mislukt**of **geslaagd**is.
 
-De gebruiker moet de app openen voordat het wissen wordt uitgevoerd, en het wissen kan tot 30 minuten duren nadat het verzoek is gemaakt. 
+De gebruiker moet de app openen voordat het wissen wordt uitgevoerd, en het wissen kan tot 30 minuten duren nadat het verzoek is gemaakt.
 
 Wisverzoeken die nog in behandeling zijn, worden weergegeven totdat u ze handmatig verwijdert.  Als u een verzoek tot wissen handmatig wilt verwijderen, klikt u erop met de rechtermuisknop en kiest u verwijderen.
 
@@ -66,6 +66,6 @@ Wisverzoeken die nog in behandeling zijn, worden weergegeven totdat u ze handmat
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

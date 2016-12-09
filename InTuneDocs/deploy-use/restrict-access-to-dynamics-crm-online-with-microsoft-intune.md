@@ -2,8 +2,8 @@
 title: Toegang tot Dynamics CRM Online beperken | Microsoft Intune
 description: Toegang tot Dynamics CRM Online beschermen en controleren met voorwaardelijke toegang.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8dba2883b3261017bc66a409c5261f4422890015
+ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
+ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
 
 
 ---
@@ -27,7 +27,8 @@ U kunt de toegang tot Microsoft Dynamics CRM Online beheren vanaf iOS- en Androi
 
 Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
-> [!IMPORTANT] Als u voorwaardelijke toegang wilt implementeren, moet u abonnementen hebben voor Intune en Azure Active Directory Premium en moeten gebruikers over een licentie voor beide producten beschikken. Het **Enterprise Mobility + Security-abonnement** omvat zowel een abonnement op Intune als op Azure Active Directory Premium. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) voor meer informatie. Als u geen abonnement hebt op EMS, kunt u een abonnement nemen op Azure Active Directory Premium. Zie de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
+> [!IMPORTANT]
+> Als u voorwaardelijke toegang wilt implementeren, moet u abonnementen hebben voor Intune en Azure Active Directory Premium en moeten gebruikers over een licentie voor beide producten beschikken. Het **Enterprise Mobility + Security-abonnement** omvat zowel een abonnement op Intune als op Azure Active Directory Premium. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) voor meer informatie. Als u geen abonnement hebt op EMS, kunt u een abonnement nemen op Azure Active Directory Premium. Zie de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
 
 Wanneer een gebruiker in de doelgroep de app Dynamics CRM op zijn apparaat probeert te gebruiken, wordt de volgende evaluatie uitgevoerd:
 
@@ -100,6 +101,6 @@ Kies een groep mobiele apparaten en kies op het tabblad **Apparaten** een van de
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

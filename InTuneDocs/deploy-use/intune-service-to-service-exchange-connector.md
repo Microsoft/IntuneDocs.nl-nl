@@ -14,8 +14,8 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
 
 
 ---
@@ -30,7 +30,7 @@ De **Service to Service Connector** ondersteunt alleen Exchange Online of Exchan
 |Vereiste|Meer informatie|
 |---------------|--------------------|
 |Exchange Online geconfigureerd en actief|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Microsoft Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
+|Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
 |Microsoft Exchange-versie|Exchange Online of de nieuwe Exchange Online Dedicated-service|
 |Active Directory-synchronisatie|Voordat u de Intune Connector kunt gebruiken, moet u [Active Directory-synchronisatie instellen](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
 
@@ -65,6 +65,6 @@ U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging contro
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

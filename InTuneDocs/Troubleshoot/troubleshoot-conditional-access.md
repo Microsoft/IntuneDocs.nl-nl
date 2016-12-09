@@ -2,7 +2,8 @@
 title: Problemen met voorwaardelijke toegang oplossen | Microsoft Intune
 description: Dit kunt u doen wanneer uw gebruikers geen toegang krijgen tot bedrijfsbronnen via de voorwaardelijke toegang van Intune.
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Op een apparaat kan voorwaardelijke toegang zijn geblokkeerd zonder dat er een a
 - Zoek in de logboeken van de Exchange Connector naar EmailVerzenden-activiteiten en controleer of u fouten ziet. Een voorbeeld van de opdracht waar u naar moet zoeken is EmailVerzenden van meldingsaccount naar E-mailGebruiker.
 - Voordat het apparaat wordt geblokkeerd door de Exchange-Connector wordt de activerings-e-mail verzonden. Als het apparaat offline is, wordt de activerings-e-mail mogelijk niet ontvangen. Controleer of de e-mailclient op het apparaat e-mail ophaalt via Push in plaats van Poll, omdat dit er ook toe kan leiden dat de gebruiker de e-mail niet heeft ontvangen. Schakel over naar Poll en kijk of de e-mail op het apparaat wordt ontvangen.
 
-## <a name="noncompliant-device-not-blocked"></a>Niet-compatibel apparaat niet geblokkeerd
+## <a name="non-compliant-device-not-blocked"></a>Niet-compatibel apparaat niet geblokkeerd
 
 Als u een apparaat hebt dat niet compatibel is en er nog steeds toegang mee hebt, moet u de volgende stappen uitvoeren.
 
@@ -158,6 +159,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

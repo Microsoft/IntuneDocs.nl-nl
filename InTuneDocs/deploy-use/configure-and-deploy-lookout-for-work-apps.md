@@ -1,8 +1,8 @@
 ---
 title: Lookout for Work-app implementeren | Microsoft Intune
 description: Lookout for Work-apps voor Android configureren en implementeren.
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 
 ---
@@ -40,7 +40,8 @@ Wanneer u nu in de Intune-console op **Apps** klikt, wordt de Lookout for Work-a
 
 * **Stap 5**: implementeer de app voor gebruikers door de Lookout for Work-app te selecteren en **Implementatie beheren** te kiezen.
 
-  U moet dezelfde gebruikers selecteren als die zijn toegevoegd aan de optie Registratiebeheer in de Lookout MTP-console.  Zie stap 3 in de sectie [Uw abonnement configureren met Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) voor informatie over het toevoegen van gebruikersgroepen aan Lookout MTP.
+  U moet dezelfde gebruikers selecteren als die zijn toegevoegd aan de optie Registratiebeheer in de Lookout MTP-console.  Zie stap 3 in de sectie [Uw abonnement configureren met Lookout MTP](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) voor informatie over het toevoegen van gebruikersgroepen aan Lookout MTP.
+
   >[!IMPORTANT]
   > De Intune-wizard voor implementatie van apps is onbekend met de Azure AD-gebruikersgroepen en in plaats daarvan worden de Intune-gebruikersgroepen gebruikt. U moet daarom een Intune-gebruikersgroep maken op basis van de Azure AD-gebruikersgroep die in de Lookout MTP-console is geregistreerd, zoals beschreven in [dit](plan-your-user-and-device-groups.md) onderwerp.
 
@@ -76,7 +77,8 @@ Wanneer u nu in de Intune-console op **Apps** klikt, wordt de Lookout for Work-a
 
 * **Stap 6:** **implementeer de app voor gebruikers**. Selecteer de Lookout for Work-app en kies **Implementatie beheren**.
 
-  U moet dezelfde gebruikers selecteren die zijn toegevoegd aan de optie Registratiebeheer in de Lookout-console.  Zie stap 3 in de sectie [Uw abonnement configureren met Lookout Device Threat Protection](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) voor informatie over het toevoegen van gebruikersgroepen aan Lookout MTP.
+  U moet dezelfde gebruikers selecteren die zijn toegevoegd aan de optie Registratiebeheer in de Lookout-console.  Zie stap 3 in de sectie [Uw abonnement configureren met Lookout Device Threat Protection](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) voor informatie over het toevoegen van gebruikersgroepen aan Lookout MTP.
+
 >[!IMPORTANT]
 > De implementatiewizard van Intune app is niet op de hoogte van de Azure AD-gebruikersgroepen en maakt in plaats daarvan gebruik van de Intune-gebruikersgroepen. Daarom moet u een Intune-gebruikersgroep maken op basis van de Azure AD-gebruikersgroep die is geregistreerd in de Lookout-console, zoals beschreven in [dit](plan-your-user-and-device-groups.md) onderwerp.
 
@@ -98,6 +100,6 @@ Wanneer de gebruiker de Lookout for Work-app opent op het apparaat, wordt de geb
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

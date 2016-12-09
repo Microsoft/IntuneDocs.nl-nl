@@ -2,8 +2,8 @@
 title: Exchange Connector voor on-premises EAS | Microsoft Intune
 description: Gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen de Intune-beheerconsole en de on-premises Exchange Server voor Exchange ActiveSync MDM.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
+ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
+ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
 
 
 ---
@@ -32,7 +32,7 @@ De volgende tabel bevat de vereisten voor de computer waarop u On-premises Excha
 |---------------|--------------------|
 |Besturingssystemen|Intune ondersteunt On-premises Exchange Connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012 of Windows Server 2012 R2 wordt uitgevoerd.<br /><br />Connector wordt niet ondersteund op een Server Core-installatie.|
 |Microsoft Exchange|On-premises Connector vereist Microsoft Exchange 2010 SP1 of hoger, of het oudere Exchange Online-specifiek. Om te bepalen of uw omgeving met Exchange Online-specifiek de **nieuwe** of **verouderde** configuratie heeft, neemt u contact op met uw accountmanager.|
-|Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
+|Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority).|
 |Hardware|De computer waarop u de connector installeert, vereist een 1,6 GHz CPU met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte.|
 |Active Directory-synchronisatie|Voordat u Connector kunt gebruiken om Intune te verbinden met uw Exchange-server, moet u [Active Directory-synchronisatie instellen](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
 |Aanvullende software|Een volledige installatie van Microsoft .NET Framework 4.5 en Windows PowerShell 2.0 moet worden geïnstalleerd op de computer die als host fungeert voor de connector.|
@@ -132,6 +132,6 @@ U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging contro
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

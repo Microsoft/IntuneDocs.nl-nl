@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ Als Intune-beheerder kunt u de registratie en het beheer voor Windows 10 Mobile-
 ## <a name="company-portal-app-enrollment"></a>Registratie via de bedrijfsportal-app
 U kunt toestaan dat gebruikers hun apparaat installeren en registreren met de bedrijfsportal-app van Intune. Als u DNS CNAME-bronrecords maakt, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een servernaam te hoeven opgeven.
 
-1.  **Intune instellen**<br>Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [autoriteit voor het beheer voor mobiele apparaten (MDM) in te stellen](prerequisites-for-enrollment.md#set-mobile-device-management-authority) op **Microsoft Intune** en vervolgens MDM in te stellen.
+1.  **Intune instellen**<br>Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [autoriteit voor het beheer voor mobiele apparaten (MDM) in te stellen](prerequisites-for-enrollment.md#step-2-set-mdm-authority) op **Microsoft Intune** en vervolgens MDM in te stellen.
 
 2.  **CNAME-records maken** (optioneel)<br>Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar enterpriseenrollment-s.manage.microsoft.com.
 
-    Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records het voor gebruikers makkelijker om zich in te schrijven. Als er geen CNAME-inschrijvingsrecord wordt gevonden, wordt gebruikers gevraagd de MDM-servernaam handmatig in te voeren, https://manage.microscoft.com. 
+    Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records het voor gebruikers makkelijker om zich in te schrijven. Als er geen CNAME-inschrijvingsrecord wordt gevonden, wordt gebruikers gevraagd de MDM-servernaam handmatig in te voeren, https://manage.microscoft.com.
 
     Als u in DNS een CNAME hebt geconfigureerd waarmee EnterpriseEnrollment.contoso.com wordt omgeleid naar manage.microsoft.com, is het raadzaam om dit te vervangen door een CNAME in DNS waarmee EnterpriseEnrollment.contoso.com wordt omgeleid naar enterpriseenrollment-s.manage.microsoft.com. Deze wijziging wordt aanbevolen, omdat het eindpunt manage.microsoft.com voor inschrijvingen in een toekomstige versie wordt afgeschaft.
 
@@ -45,8 +45,8 @@ U kunt toestaan dat gebruikers hun apparaat installeren en registreren met de be
 
   |TYPE|Hostnaam|Verwijst naar|TTL|
   |--------|-------------|-------------|-------|
-  |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 uur|
-  |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 uur|
+  |CNAME|EnterpriseEnrollment.bedrijfsdomein.com|EnterpriseEnrollment-s.manage.microsoft.com |1 uur|
+  |CNAME|EnterpriseRegistration.bedrijfsdomein.com|EnterpriseRegistration.windows.net|1 uur|
 
   `EnterpriseEnrollment-s.manage.microsoft.com`: biedt ondersteuning voor een omleiding naar de Intune-service met domeinherkenning vanuit de domeinnaam van het e-mailadres
 
@@ -64,7 +64,7 @@ U kunt toestaan dat gebruikers hun apparaat installeren en registreren met de be
 
 5.  **Laat uw gebruikers weten hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**
 
-    Zie [Uw Windows-apparaat inschrijven bij Intune](../enduser/enroll-your-device-in-intune-windows.md) voor inschrijvingsinstructies voor eindgebruikers. U kunt uw gebruikers ook doorsturen naar [Wat kan uw IT-beheerder zien wanneer u uw apparaat registreert bij Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)
+    Zie [Uw Windows-apparaat inschrijven bij Intune](../enduser/enroll-your-device-in-intune-windows.md) voor inschrijvingsinstructies voor eindgebruikers. U kunt uw gebruikers ook doorsturen naar [Wat kan uw IT-beheerder zien wanneer u uw apparaat registreert bij Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
     Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
     - [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt imple
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

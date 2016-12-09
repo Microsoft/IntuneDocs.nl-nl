@@ -2,8 +2,8 @@
 title: Apps geschikt maken voor beheer van mobiele apps | Microsoft Intune
 description: Aan de hand van de informatie in dit onderwerp kunt u beslissen wanneer u het hulpmiddel App Wrapping en de App SDK moet gebruiken om uw aangepaste LOB-apps in te schakelen voor gebruik van de beleidsregels voor het beheren van mobiele apps.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 977716dd821bf9c487db199b57130c432b008a12
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
 
 
 ---
@@ -106,6 +106,6 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

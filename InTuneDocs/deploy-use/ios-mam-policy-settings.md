@@ -2,8 +2,8 @@
 title: MAM-beleidsinstellingen voor iOS | Microsoft Intune
 description: Dit onderwerp beschrijft de beleidsinstellingen voor het beheren van mobiele apps voor iOS-apparaten.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 913008568226621de4824c5bac287e8a65dc6533
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 126974152c638fc4bc69ef92b5fa79beeb0eed0c
 
 
 ---
@@ -123,6 +123,6 @@ Op iOS-apparaten kunt u gebruikers zich laten identificeren met hun vingerafdruk
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

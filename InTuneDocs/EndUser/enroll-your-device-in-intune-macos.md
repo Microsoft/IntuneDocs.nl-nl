@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
  ![Dit Mac OS-apparaat registreren](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune heeft toegang nodig tot uw computer om te controleren of dit apparaat voldoende is beveiligd om toegang te verkrijgen tot de bronnen van uw organisatie. Lees [wat er gebeurt wanneer u uw apparaat registreert bij Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Intune heeft toegang nodig tot uw computer om te controleren of dit apparaat voldoende is beveiligd om toegang te verkrijgen tot de bronnen van uw organisatie. Lees [wat er gebeurt wanneer u uw apparaat registreert bij Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
 6. De __Systeemvoorkeuren__ worden geopend en de vraag __Beheerprofiel installeren?__ wordt weergegeven Klik op __Installeren__ om door te gaan, of klik op __Profiel weergeven__ voor meer informatie.
 
@@ -64,6 +64,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. U vindt de contactgegevens 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

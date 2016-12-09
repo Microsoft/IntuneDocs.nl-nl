@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ Alleen de volgende versies worden ondersteund. Als uw apparaat niet wordt weerge
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchron
     Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven. De knop **Synchroniseren** is pas beschikbaar nadat de synchronisatie van het apparaat is voltooid.
 
 ## <a name="windows-10-desktop"></a>Windows 10-bureaublad
-Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen. Bekijk de schermafbeeldingen om te zien welke stappen u het beste kunt gebruiken en volg dan de stappen die betrekking hebben op uw apparaat. 
+Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen. Bekijk de schermafbeeldingen om te zien welke stappen u het beste kunt gebruiken en volg dan de stappen die betrekking hebben op uw apparaat.
 
 1. Kies de knop **Start** en kies vervolgens **Instellingen**.
 
@@ -72,7 +72,7 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
     Als u dit scherm met de melding 'Toegang via het werknetwerk' ziet, volgt u de stappen in [Stappen om te volgen als u Toegang via het werknetwerk ziet](#steps-to-follow-if-you-see-your-account).
 
-    ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png) 
+    ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Stappen om te volgen als u Toegang tot werk of school ziet
 
@@ -80,9 +80,9 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
     ![Kies Toegang tot werk of school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Kies uw werk- of schoolaccount. Afhankelijk van hoe uw IT-beheerder een en ander heeft ingesteld, ziet u mogelijk twee accounts die op het voorbeeld hieronder lijken. Naast het ene account wordt een aktetas weergegeven en naast het andere account ziet u het Microsoft-logo. 
+2. Kies uw werk- of schoolaccount. Afhankelijk van hoe uw IT-beheerder een en ander heeft ingesteld, ziet u mogelijk twee accounts die op het voorbeeld hieronder lijken. Naast het ene account wordt een aktetas weergegeven en naast het andere account ziet u het Microsoft-logo.
 
-    - Als u het account met de aktetas ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder. 
+    - Als u het account met de aktetas ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
     - Als u het account met het Microsoft-logo ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
 
     ![Kies de naam van het account naast de aktetas of het Microsoft-logo](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 4. Kies de knop **Synchroniseren**. Het apparaat wordt gesynchroniseerd met Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Te volgen stappen als u Toegang via het werknetwerk ziet
-    
+
 1. Kies op de pagina **Accounts** de optie **Toegang via het werknetwerk**.
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgeg
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: De regel Device Threat Protection inschakelen in het nalevingsbeleid | Microsoft Intune
 description: De regel Mobile Threat Protection inschakelen in het nalevingsbeleid van het apparaat.
 keywords: 
-author: karthikaraman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
-ms.openlocfilehash: 3e6aef013ae8764d9b031e880c333e184191feb4
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: efddf7645d0548c842ae8aa3b1ca5222023913b5
 
 
 ---
@@ -45,7 +46,7 @@ Ga op de pagina **Nalevingsbeleid** van de **Intune-beheerconsole** naar **Appar
 
 ![schermopname met de optie voor het bedreigingsniveau voor de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-setting.png)
 
-Als u beleid voor voorwaardelijke toegang voor Office 365 en andere services maakt, wordt bovenstaande compatibiliteitsevaluatie in acht genomen en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging is opgelost.
+Als u beleid voor voorwaardelijke toegang voor Office 365 en andere services maakt, wordt bovenstaande compatibiliteitsevaluatie in acht genomen en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging is opgelost.
 
 U kunt de compatibiliteitsstatus van een apparaat bekijken op de pagina **Alle apparaten** van de **Intune-beheerconsole**.
 
@@ -61,6 +62,6 @@ U kunt de compatibiliteitsstatus van een apparaat bekijken op de pagina **Alle a
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

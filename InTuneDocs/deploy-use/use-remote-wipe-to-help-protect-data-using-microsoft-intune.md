@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 U kunt apps en gegevens wissen van met Intune beheerde apparaten die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal-app op afstand een opdracht tot het wissen van hun apparaat geven, mits dit een eigen apparaat is dat bij Intune is geregistreerd.
 
   > [!NOTE]
-  > Dit onderwerp gaat alleen over het wissen van apparaten die deel uitmaken van Intune-beheer van mobiele apparaten. U kunt [Azure Portal](https://portal.azure.com) ook gebruiken om [bedrijfsgegevens uit apps te wissen](wipe-managed-company-app-data-with-microsoft-intune.md). U kunt ook [computers buiten gebruik stellen die worden beheerd door de Intune-clientsoftware](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > Dit onderwerp gaat alleen over het wissen van apparaten die deel uitmaken van Intune-beheer van mobiele apparaten. U kunt [Azure Portal](https://portal.azure.com) ook gebruiken om [bedrijfsgegevens uit apps te wissen](wipe-managed-company-app-data-with-microsoft-intune.md). U kunt ook [computers buiten gebruik stellen die worden beheerd door de Intune-clientsoftware](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>Volledig wissen
 
@@ -165,6 +165,6 @@ In dit rapport wordt ook aangegeven wie de actie heeft uitgevoerd.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

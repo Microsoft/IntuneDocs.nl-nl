@@ -2,8 +2,8 @@
 title: Line-Of-Business-apps beveiligen op apparaten die niet zijn geregistreerd | Microsoft Intune
 description: In dit onderwerp wordt beschreven hoe u uw aangepaste Line-Of-Business-apps kunt voorbereiden, zodat u Mobile Device Management-beleidsregels kunt toepassen om gegevensverlies te voorkomen.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ In dit onderwerp wordt uitgelegd wat de vereiste stappen zijn om MAM-beleid toe 
 
 ##  <a name="step-1-prepare-the-app"></a>Stap 1: De app voorbereiden
 
-Voordat u MAM-beleidsregels op een app kunt toepassen, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool voor [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) en [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) of de [Intune App SDK](/../develop/intune-app-sdk) gebruiken om handmatig de beveiligingsfuncties voor Intune-apps te integreren.
+Voordat u MAM-beleidsregels op een app kunt toepassen, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool voor [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) of de [Intune App SDK](../develop/intune-app-sdk.md) gebruiken om handmatig de beveiligingsfuncties voor Intune-apps te integreren.
 
-Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)voor meer informatie over het gebruik van de App Wrapping Tool versus de Intune App SDK.
+Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)voor meer informatie over het gebruik van de App Wrapping Tool versus de Intune App SDK.
 
 ## <a name="step-2-add-the-app"></a>Stap 2: De app toevoegen
 
@@ -81,6 +81,6 @@ U kunt een Line-Of-Business-app verwijderen uit de lijst met apps. Hiermee wordt
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

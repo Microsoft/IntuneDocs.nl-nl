@@ -2,8 +2,8 @@
 title: Toegang tot e-mail beperken op Exchange Online | Microsoft Intune
 description: "Toegang tot bedrijfs-e‑mail op Exchange Online beschermen en controleren met voorwaardelijke toegang."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
-ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 7ef78fb253ca88d63a550d5c54448103e6790574
 
 
 ---
@@ -269,6 +269,6 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Voor apparaten die een nieuwe bestemming krijgen, kunt u ook voor [volledig wiss
 8.  Kies de gewenste apparaten en kies vervolgens **Apparaat verwijderen**. Het apparaat wordt verwijderd bij de volgende synchronisatie met Active Directory. Dit gebeurt gewoonlijk binnen vier uur. Na het synchroniseren wordt het apparaat uit beheer verwijderd. Hiermee verwijdert u één apparaat van de apparaatlimiet voor deze gebruiker.
 
 ## <a name="retire-managed-computers"></a>Beheerde computers buiten gebruik stellen
-Computers die worden beheerd met Intune-clientsoftware, kunnen in de Intune-beheerconsole worden verwijderd uit het beheer. In dit geval worden ook de clientsoftware en het Intune-beleid van de computer verwijderd. Raadpleeg de informatie over [het buiten gebruik stellen van computers die worden beheerd door de Intune-clientsoftware](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Computers die worden beheerd met Intune-clientsoftware, kunnen in de Intune-beheerconsole worden verwijderd uit het beheer. In dit geval worden ook de clientsoftware en het Intune-beleid van de computer verwijderd. Raadpleeg de informatie over [het buiten gebruik stellen van computers die worden beheerd door de Intune-clientsoftware](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Toegang blokkeren tot een apparaat
 Als een apparaat is kwijtgeraakt, of u het buiten gebruik wilt stellen omdat een medewerker het bedrijf heeft verlaten zonder het apparaat terug te geven, kunt u ook [de wachtwoordcode opnieuw instellen en het apparaat op afstand vergrendelen](use-remote-lock-and-passcode-reset-in-microsoft-intune.md). Zo voorkomt u dat bedrijfsgegevens worden misbruikt. Mogelijk moet u het apparaat echter wel afschrijven.
@@ -70,6 +70,6 @@ Het kan ook zo zijn dat het apparaat het einde van de levensduur heeft bereikt. 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

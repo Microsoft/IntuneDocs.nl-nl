@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ Zoekt u Intune met Configuration Manager?
 ## <a name="step-1-enable-connections"></a>Stap 1: Verbindingen inschakelen
 
 Voordat u het inschrijven van mobiele apparaten inschakelt, moet u ervoor zorgen dat u:
-- [De vereiste netwerk-URL's en -poorten hebt gecontroleerd](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Uw domeinnaam hebt toegevoegd en gecontroleerd](../get-started/domain-names-for-microsoft-intune)
+- [De vereiste netwerk-URL's en -poorten hebt gecontroleerd](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Uw domeinnaam hebt toegevoegd en gecontroleerd](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>Stap 2: MDM-instantie instellen
 De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
@@ -111,7 +111,7 @@ Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagin
 
 ## <a name="step-5-assign-user-licenses"></a>Stap 5: Gebruikerslicenties toewijzen
 
-U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD). U kunt [on-premises gebruikers synchroniseren met Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD). U kunt [on-premises gebruikers synchroniseren met Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Meld u met uw tenantbeheerdersreferenties aan bij de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx).
 
@@ -136,7 +136,7 @@ Stel het beheer in voor de volgende platformen:
 - [Windows-pc's en -laptops](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile en Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-U kunt ook de [inschrijving van bedrijfsapparaten](manage-corporate-owned-devices) inschakelen.
+U kunt ook de [inschrijving van bedrijfsapparaten](manage-corporate-owned-devices.md) inschakelen.
 
 ## <a name="step-7-next-steps"></a>Stap 7: Volgende stappen
 
@@ -149,6 +149,6 @@ Nu de inschrijving is ingeschakeld, moet u het beheer instellen om aan de behoef
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
