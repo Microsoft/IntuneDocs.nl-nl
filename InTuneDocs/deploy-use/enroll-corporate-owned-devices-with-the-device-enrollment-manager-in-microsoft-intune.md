@@ -14,7 +14,7 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
 
 
@@ -96,6 +96,6 @@ Het verwijderen van een apparaatinschrijvingsbeheerder heeft geen invloed op ing
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

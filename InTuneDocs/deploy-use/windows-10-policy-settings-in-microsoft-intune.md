@@ -14,7 +14,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad36bfd7b4f60626181ecaf27c51a9b108005979
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
 
 
@@ -325,6 +325,6 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
