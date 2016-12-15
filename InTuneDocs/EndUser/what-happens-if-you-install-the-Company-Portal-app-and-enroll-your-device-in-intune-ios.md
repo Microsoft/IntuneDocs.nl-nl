@@ -1,5 +1,5 @@
 ---
-title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune inschrijft? | Microsoft Intune
+title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS- of Mac OS-apparaat bij Intune registreert? | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune inschrijft?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS- of Mac OS-apparaat bij Intune registreert?
 
-Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS X-apparaat bij Intune registreert, kunt u de bedrijfsportal-app gebruiken voor het volgende:
+Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS-apparaat bij Intune registreert, kunt u de bedrijfsportal-app gebruiken voor het volgende:
 
 -   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
 
@@ -96,6 +96,6 @@ Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

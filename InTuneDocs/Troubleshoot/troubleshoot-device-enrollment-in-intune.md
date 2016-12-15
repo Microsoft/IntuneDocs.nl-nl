@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 >
 > Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatinschrijvingsmanagers kunnen geen apparaten worden ingeschreven wanneer een voorwaardelijk toegangsbeleid van kracht is voor die specifieke gebruikersaanmelding.
 
-### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
+### <a name="company-portal-emporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
 **Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
 
 **Oplossing:**
@@ -214,23 +214,40 @@ Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om i
 
 ### <a name="android-certificate-issues"></a>Problemen met Android-certificaten
 
-**Probleem**: gebruiker ontvangt het volgende bericht op een apparaat: *U kunt u niet aanmelden omdat een vereist certificaat ontbreekt op het apparaat.*
+**Probleem**: gebruikers ontvangen het volgende bericht op een apparaat: *U kunt u niet aanmelden omdat een vereist certificaat ontbreekt op het apparaat.*
 
-**Oplossing**:
+**Oplossing 1**:
 
-- de gebruiker kan het ontbrekende certificaat mogelijk ophalen door [deze instructies](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) te volgen.
-- Als de gebruiker het certificaat niet kan ophalen, dan ontbreken er wellicht tussencertificaten op de ADFS-server. De tussencertificaten zijn voor Android vereist om de server te vertrouwen.
+Vraag uw gebruikers de instructies te volgen in [Er ontbreekt een vereist certificaat voor uw apparaat](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Als de fout nog steeds wordt weergegeven nadat gebruikers de instructies hebben gevolgd, probeert u oplossing 2.
 
-U kunt de certificaten als volgt importeren naar het tussenarchief op de ADFS-server of proxy's:
+**Oplossing 2**:
 
-1.  Start op de ADFS-server de **Microsoft Management Console** en voeg de module Certificaten toe voor de **computeraccount**.
-5.  Ga naar het certificaat dat de ADFS-service gebruikt en geef het bovenliggende certificaat weer.
-6.  Kopieer het bovenliggende certificaat en plak dit onder **Computer\Tussenliggende certificeringsinstanties\Certificaten**.
-7.  Kopieer de ADFS-, ADFS-ontsleutelings-, en ADFS-ondertekeningscertificaten en plak deze in het persoonlijke archief voor de ADFS-service.
-8.  Start de ADFS-servers opnieuw.
+Als gebruikers nog steeds de fout voor het ontbrekende certificaat krijgen te zien nadat ze hun bedrijfsreferenties hebben ingevoerd en worden omgeleid voor de federatieve aanmeldingservaring, is het mogelijk dat er een tussencertificaat mogelijk van uw AD FS-server (Active Directory Federation Services).
 
+De certificaatfout treedt op omdat Android-apparaten vereisen dat er tussencertificaten zijn opgenomen in een [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx), maar momenteel verstuurt een standaard AD FS-server of AD FS-proxyserverinstallatie alleen het SSL-certificaat van de AD FS-service in het SSL server hello-antwoord op een SSL Client hello.
+
+Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
+
+1.  Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
+2.  Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
+3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
+4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
+5.  Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
+6.  Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
+7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
+8.  Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
+9.  Start de AD FS-servers opnieuw op.
+10. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
 De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
 
+**Valideren dat het certificaat correct is geïnstalleerd**:
+
+In de volgende stappen wordt slechts een van de vele methoden en hulpprogramma's beschreven die u kunt gebruiken om te valideren of het certificaat goed is geïnstalleerd.
+
+1. Ga naar het [gratis hulpprogramma Digicert](ttps://www.digicert.com/help/).
+2. Geef de Fully Qualified Domain Name van uw AD FS-server op (bijvoorbeeld sts.contoso.com) en selecteer **SERVER CONTROLERENSERVER**.
+
+Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes weergegeven in de resultaten. Als het bovenstaande probleem bestaat, ziet u in de rapportsecties 'Certificaatnaam komt overeen met' en 'SSL-certificaat is correct geïnstalleerd' een rode X.
 
 
 ## <a name="ios-issues"></a>Problemen met iOS
@@ -356,6 +373,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

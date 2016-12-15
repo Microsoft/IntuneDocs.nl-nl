@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
 
 
 ---
@@ -35,7 +35,7 @@ Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een ber
 ### <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
 Beheerde apps zijn op verschillende manieren beschikbaar:
 
--   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS X-apparaat registreren bij Intune](enroll-your-device-in-intune-mac-os-x.md) voor meer informatie over het registreren van apparaten.
+-   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
 
 -   U installeert een app uit de App Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd met Intune.
 
@@ -65,6 +65,6 @@ Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps o
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

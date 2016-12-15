@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,27 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 62b9808c234b31f08467a971d8e4d4cb600e563b
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
 
 
 ---
 
 
-# <a name="sync-your-device-manually-by-using-the-company-portal-website"></a>Uw apparaat handmatig synchroniseren met behulp van de bedrijfsportalwebsite
+# <a name="use-the-company-portal-website-to-sync-your-device"></a>De bedrijfsportalwebsite gebruiken om uw apparaat te synchroniseren
 
-Als de installatie van de app of een andere taak te lang duurt, kunt u proberen om uw apparaat handmatig te synchroniseren. Dit kan helpen om de installatie of taak te versnellen.
+Soms duurt het installeren van een app of het uitvoeren van een taak langer dan normaal. Als het te lang duurt, kunt u uw apparaat handmatig synchroniseren, zodat hetgeen u probeert te doen wat sneller gaat.
 
-De synchronisatiefunctie werkt alleen voor de volgende apparaten. Als uw apparaat niet wordt weergegeven, wordt synchronisatie niet ondersteund. Gebruik de koppeling die overeenkomt met het apparaat dat u gebruikt. 
+> [!Note]
+> De synchronisatiefunctie is momenteel niet beschikbaar voor alle apparaten. Als uw apparaat niet wordt vermeld, probeert u het apparaat opnieuw in te stellen door de WiFi-verbinding ongeveer 30 seconden uit te schakelen om vervolgens opnieuw verbinding te maken met uw netwerk.
 
 * [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

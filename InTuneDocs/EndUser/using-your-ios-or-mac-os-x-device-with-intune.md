@@ -1,6 +1,6 @@
 ---
-title: Uw iOS- of Mac OS X-apparaat gebruiken met Intune | Microsoft Intune
-description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS X-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven
+title: Uw iOS- of Mac OS-apparaat gebruiken met Intune | Microsoft Intune
+description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS X-apparaat kunt uitvoeren wanneer het apparaat is geregistreerd bij Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -15,13 +15,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
 
 
 ---
 
-# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-macos-device-with-intune"></a>Uw iOS- of Mac OS-apparaat gebruiken met Intune
 
 Dit artikel bevat koppelingen naar alle taken die eindgebruikers op hun met Intune beheerde apparaten kunnen uitvoeren. IT-beheerders kunnen deze informatie raadplegen om te zien welke stappen gebruikers moeten volgen om diverse taken uit te voeren. Deze zijn ondergebracht in de volgende categorieën:
 - Installatie van de bedrijfsportal-app en de inschrijving bij Intune
@@ -34,7 +34,7 @@ De informatie in deze sectie helpt gebruikers bij de installatie van de Intune-b
 
 - [De Intune-bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)
-- [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md)
 - [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Wat gebruikers kunnen doen wanneer hun apparaat is geregistreerd bij Intune
@@ -67,6 +67,6 @@ De informatie in deze sectie helpt gebruikers bij het oplossen van problemen die
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

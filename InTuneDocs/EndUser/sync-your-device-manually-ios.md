@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 # <a name="sync-your-ios-device-manually"></a>Uw iOS-apparaat handmatig synchroniseren
 
-Als de installatie van de app te lang duurt, kunt u proberen het apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen. De synchronisatiefunctie heeft alleen betrekking op iOS, niet op Mac OS X.
+Als de installatie van de app te lang duurt, kunt u proberen het apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen. De synchronisatiefunctie is alleen van toepassing op iOS, niet op Mac OS.
 
 1. Open de iOS-app Bedrijfsportal.
 
@@ -42,6 +42,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgeg
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
