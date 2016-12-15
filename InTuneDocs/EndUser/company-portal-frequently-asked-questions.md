@@ -1,11 +1,11 @@
 ---
-title: Over de bedrijfsportal | Microsoft Intune
+title: Wat is de bedrijfsportal? | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
+ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 
 
 ---
@@ -42,7 +42,7 @@ Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportalapp op u
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
-- [iOS en Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS en Mac OS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [Bedrijfsportalwebsite](using-the-intune-company-portal-website.md)
 
@@ -53,12 +53,12 @@ Voor meer informatie over wat de IT-beheerder wel en niet op uw apparaat kan zie
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS en Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [iOS en Mac OS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Wat voor computers of apparaten kunt u toevoegen aan de bedrijfsportal?
 
--   iPhones, iPads en apparaten met Mac OS X
+-   iPhones, iPads en Mac OS-apparaten
 
 -   Mobiele Android-apparaten
 
@@ -75,7 +75,7 @@ Wanneer u een computer of apparaat *verwijdert*, wordt de registratie van uw app
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
-- [iOS en Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [iOS en Mac OS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 Wanneer u een computer of apparaat *opnieuw instelt*, probeert de bedrijfsportal de standaardinstellingen van de fabrikant opnieuw in te stellen op uw computer of apparaat. Wanneer uw apparaat opnieuw wordt ingesteld, worden alle bedrijfsgegevens en persoonlijke gegevens verwijderd van het apparaat. Als u uw apparaat bent verloren, kunt u het apparaat ook extern opnieuw instellen via website van de bedrijfsportal.
@@ -84,7 +84,7 @@ Kies een van de volgende koppelingen om te zien hoe u uw apparaat opnieuw instel
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS en Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [iOS en Mac OS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Uw apparaat opnieuw instellen vanaf de bedrijfsportalwebsite](reset-your-device-cpwebsite.md)
 
@@ -96,6 +96,6 @@ Neem contact op met de IT-beheerder als u hulp nodig hebt. Controleer of de cont
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

@@ -1,21 +1,21 @@
 ---
-title: Microsoft Intune App SDK Xamarin-onderdeel | Microsoft Intune
+title: Microsoft Intune App SDK Xamarin-onderdeel | Microsoft Docs
 description: 
 keywords: SDK, Xamarin, intune
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 
 ---
@@ -83,7 +83,7 @@ Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu
 
       ```
 
-2.  Nu het onderdeel is toegevoegd en geïnitialiseerd, kunt u de algemene stappen volgen voor het inbouwen van de App SDK in een mobiele iOS-app. De volledige documentatie voor het inschakelen van systeemeigen iOS-apps vindt u in de [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](intune-app-sdk-ios).
+2.  Nu het onderdeel is toegevoegd en geïnitialiseerd, kunt u de algemene stappen volgen voor het inbouwen van de App SDK in een mobiele iOS-app. De volledige documentatie voor het inschakelen van systeemeigen iOS-apps vindt u in de [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](intune-app-sdk-ios.md).
 3. **Belangrijk**: Er zijn verschillende wijzigingen die specifiek zijn voor iOS-apps op basis van Xamarin. Bij het inschakelen van sleutelketengroepen moet u bijvoorbeeld het volgende toevoegen om de Xamarin-voorbeeldapp in te voegen die we in het onderdeel hebben opgenomen. Hieronder volgt een voorbeeld van de groepen die u in uw sleutelketengroepen aanwezig moeten zijn:
 
       ```xml
@@ -102,10 +102,10 @@ Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu
       </plist>
       ```
 
-U hebt de benodigde stappen voor het inbouwen van het onderdeel in uw iOS-app op basis van Xamarin voltooid. Als u Xcode gebruikt voor het ontwikkelen van uw project, kunt u de `Intune App SDK Settings.bundle` gebruiken. Hiermee kunt u beleidsinstellingen van Intune in- en uitschakelen tijdens het ontwikkelen van uw project met het oog op testen en foutopsporing. Volg de stappen in de [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](intune-app-sdk-ios) en lees de sectie over [foutopsporing in Xcode](intune-app-sdk-ios#debug-information) om te profiteren van dit pakket.
+U hebt de benodigde stappen voor het inbouwen van het onderdeel in uw iOS-app op basis van Xamarin voltooid. Als u Xcode gebruikt voor het ontwikkelen van uw project, kunt u de `Intune App SDK Settings.bundle` gebruiken. Hiermee kunt u beleidsinstellingen van Intune in- en uitschakelen tijdens het ontwikkelen van uw project met het oog op testen en foutopsporing. Volg de stappen in de [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](intune-app-sdk-ios.md) en lees de sectie over [foutopsporing in Xcode](intune-app-sdk-ios.md#status-result-and-debug-notifications) om te profiteren van dit pakket.
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>MAM inschakelen in uw mobiele Android-app
-Voor Android-apps op basis van Xamarin die geen gebruikmaken van een UI-framework, leest en volgt u de [Ontwikkelaarshandleiding voor de Intune App SDK voor Android]. Voor uw Android-app op basis van Xamarin moet u klasse, methoden en activiteiten vervangen door hun MAM-equivalent op basis van de [tabel](intune-app-sdk-android#replace-classes-methods-and-activities-with-their-mam-equivalent-required) in de handleiding. Als uw app geen definitie van een `android.app.Application` klasse bevat, moet u een klasse maken en zorgen voor overname van `MAMApplication`.
+Voor Android-apps op basis van Xamarin die geen gebruikmaken van een UI-framework, leest en volgt u de [Ontwikkelaarshandleiding voor de Intune App SDK voor Android]. Voor uw Android-app op basis van Xamarin moet u klasse, methoden en activiteiten vervangen door hun MAM-equivalent op basis van de [tabel](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required) in de handleiding. Als uw app geen definitie van een `android.app.Application` klasse bevat, moet u een klasse maken en zorgen voor overname van `MAMApplication`.
 
 Voor Xamarin Forms en andere UI-frameworks hebben we het hulpprogramma `MAM.Remapper` meegeleverd. Dit hulpprogramma voert de klassevervanging voor u uit. U moet echter wel de volgende stappen uitvoeren:
 
@@ -125,6 +125,6 @@ U hebt de basisstappen voor het inbouwen van het onderdeel in uw app voltooid. U
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

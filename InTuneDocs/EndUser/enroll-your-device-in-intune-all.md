@@ -12,8 +12,8 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 531fb4274a3a2ebd26278c0dd3f0d45d5458120d
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: da065b7ea92d9372b9dd8bbbcdf21b0f789cc241
 
 
 ---
@@ -26,11 +26,11 @@ Als u de registratie-instructies wilt weergeven, gebruikt u de koppeling die ove
 
 - [Uw Android-apparaat inschrijven bij Intune](enroll-your-device-in-Intune-android.md)
 - [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)
-- [Uw Mac OS X-apparaat inschrijven bij Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md)
 - [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

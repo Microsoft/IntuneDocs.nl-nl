@@ -1,11 +1,11 @@
 ---
-title: Bedrijfsportal-app wordt niet ondersteund | Microsoft Intune
+title: Uw bedrijfsportal-app bijwerken | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a1811f14b4ee6d9fbc58d9998eba78c974235cb2
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: b3e98f32901512b9164c2e28c38e3bad751f7e8a
 
 
 ---
 
-# <a name="company-portal-app-not-supported"></a>Bedrijfsportal-app wordt niet ondersteund
-Deze versie van de bedrijfsportal kan niet meer worden gebruikt. Installeer de nieuwste **Bedrijfsportal**-app uit de Windows Store om door te gaan.
-
+# <a name="your-company-portal-app-is-out-of-date"></a>Uw bedrijfsportal-app is verouderd
+U moet uw bedrijfsportal-app bijwerken om toegang te behouden tot bijvoorbeeld uw zakelijke e-mail, contactpersonen en documenten. U kunt dit probleem verhelpen door de **Windows Store** te openen en de nieuwe versie van de **bedrijfsportal-app** te installeren.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

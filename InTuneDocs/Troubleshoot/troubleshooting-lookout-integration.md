@@ -1,9 +1,9 @@
 ---
-title: Problemen met de integratie van Lookout oplossen | Microsoft Intune
+title: Problemen met de integratie van Lookout oplossen | Microsoft Docs
 description: In dit onderwerp wordt beschreven hoe problemen die vaak voorkomen bij de integratie van Lookout kunnen worden opgelost
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ De volgende fout kan worden weergegeven wanneer de globale Azure AD-beheerder de
 
 ![schermopname van het aanmeldingsscherm van Lookout met een aanmeldingsfout](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-De globale beheerder kan dit probleem oplossen door zich aan te melden bij https://aad.lookout.com/les?action=consent en de prompt te accepteren om de installatie te starten. Gedetailleerdere informatie vindt u in het onderwerp [Abonnement instellen met Lookout MTP](set-up-your-subscription-with-lookout-mtp.md).
+De globale beheerder kan dit probleem oplossen door zich aan te melden bij https://aad.lookout.com/les?action=consent en de prompt te accepteren om de installatie te starten. Gedetailleerdere informatie vindt u in het onderwerp [Abonnement instellen met Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md).
 
 ## <a name="troubleshoot-device-status-issues"></a>Problemen met de apparaatstatus oplossen
 
@@ -90,6 +90,6 @@ Zolang de nieuwe gebruiker tot een van de registratiegroepen hoort die zijn opge
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

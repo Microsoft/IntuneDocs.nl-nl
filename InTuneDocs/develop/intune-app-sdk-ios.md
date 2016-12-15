@@ -1,21 +1,21 @@
 ---
-title: Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS | Microsoft Intune
+title: Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS | Microsoft Docs
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beleid ter bescherming va
 * U hebt een macOS-computer met OS X 10.8.5 of hoger nodig, waarop de Xcode-hulpmiddelenset versie 5 of hoger is geïnstalleerd.
 
 * Controleer de [Licentievoorwaarden voor de Intune App SDK voor iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Een exemplaar van de licentievoorwaarden voor uw administratie afdrukken en bewaren. Door de Intune App SDK voor iOS te downloaden en gebruiken, gaat u akkoord met deze licentievoorwaarden.  Als u deze niet accepteert, moet u de software niet gebruiken.
+
+* Download de bestanden voor de Intune App SDK voor iOS op [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
 ## <a name="whats-in-the-sdk"></a>Inhoud van de SDK
 
@@ -322,9 +324,9 @@ Als de inschrijving mislukt, moet de app overwegen om deze API op een later tijd
 
 Nadat deze API is aangeroepen, blijft de app gewoon functioneren. Als de inschrijving is gelukt, laat de SDK aan de gebruiker weten dat de app opnieuw moet worden opgestart.
 
-## <a name="debug-information"></a>Informatie voor foutopsporing
+## <a name="status-result-and-debug-notifications"></a>Status-, resultaat- en foutopsporingsmeldingen
 
-De app kan foutopsporingsmeldingen ontvangen over de volgende aanvragen voor de Intune MAM-service:
+De app kan status-, resultaat- en foutopsporingsmeldingen ontvangen over de volgende aanvragen voor de Intune MAM-service:
 
  - Inschrijvingsaanvragen
  - Aanvragen voor beleidsupdates
@@ -365,7 +367,7 @@ Deze gemachtigdenmethoden retourneren een object `IntuneMAMEnrollmentStatus` met
 
 Dit object wordt gedefinieerd in Headers/IntuneMAMEnrollmentStatus.h samen met de specifieke statuscodes die kunnen worden geretourneerd.
 
-Het is belangrijk om te onthouden dat de bedrijfslogica van een app niet op deze meldingen mag zijn gebaseerd. De bedoeling hiervan is dat de app deze informatie naar een telemetrieservice verzendt om fouten te kunnen opsporen en voor bewakingsdoeleinden.
+
 
 
 ## <a name="sample-code"></a>Voorbeeldcode
@@ -637,7 +639,7 @@ Ja, de IT-beheerder kan een opdracht voor selectief wissen verzenden naar de app
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uw app naar de App Store verzenden
 
-Zowel de statische bibliotheek als de frameworkbuilds van de Intune App SDK zijn universele binaire bestanden. Dit houdt in dat ze een code hebben voor alle apparaat- en simulatorarchitecturen. Apple weigert apps die naar de App Store worden verzonden als deze simulatorcode bevatten. Bij een compilatie op basis van de statische bibliotheek voor builds die uitsluitend voor apparaten zijn bestemd, wordt de linker automatisch ontdaan van de simulatorcode.
+Zowel de statische bibliotheek als de frameworkbuilds van de Intune App SDK zijn universele binaire bestanden. Dit houdt in dat ze een code hebben voor alle apparaat- en simulatorarchitecturen. Apple weigert apps die naar de App Store worden verzonden als deze simulatorcode bevatten. Bij een compilatie op basis van de statische bibliotheek voor builds die uitsluitend voor apparaten zijn bestemd, wordt de linker automatisch ontdaan van de simulatorcode. Volg de onderstaande stappen om ervoor te zorgen dat alle simulatorcode wordt verwijderd voordat u de app uploadt naar de App Store.
 
 1. Zorg dat `IntuneMAM.framework` zich op uw bureaublad bevindt.
 
@@ -654,6 +656,6 @@ Zowel de statische bibliotheek als de frameworkbuilds van de Intune App SDK zijn
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
