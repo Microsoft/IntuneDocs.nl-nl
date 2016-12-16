@@ -2,8 +2,8 @@
 title: De MAM-configuratie valideren | Microsoft Docs
 description: In deze onderwerpen wordt beschreven hoe u kunt testen en valideren of uw MAM-beleid juist is ingesteld en naar behoren werkt.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article
