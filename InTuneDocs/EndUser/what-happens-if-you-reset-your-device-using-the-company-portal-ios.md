@@ -1,5 +1,5 @@
 ---
-title: Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
+title: Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: db943ec05e38f09bb8de2f3ec4836aeb0908f3d4
 
 
 ---
@@ -44,6 +44,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

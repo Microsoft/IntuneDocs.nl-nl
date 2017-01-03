@@ -1,5 +1,5 @@
 ---
-title: Wat gebeurt er als u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt? | Microsoft Intune
+title: Wat gebeurt er als u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3cbc2b085ec8ad04e00527fda0665c905314aaea
 
 
 ---
@@ -44,6 +44,6 @@ Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwe
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

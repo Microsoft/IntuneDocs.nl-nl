@@ -1,5 +1,5 @@
 ---
-title: Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Intune
+title: Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 
 ---
@@ -36,6 +36,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

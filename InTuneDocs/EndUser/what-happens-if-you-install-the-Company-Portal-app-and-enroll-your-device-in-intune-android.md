@@ -1,5 +1,5 @@
 ---
-title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw Android-apparaat inschrijft bij Intune? | Microsoft Intune
+title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw Android-apparaat inschrijft bij Intune? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d0e244659f8a78504ffa2a0b8a6579c829e3642b
 
 
 ---
@@ -56,10 +56,10 @@ Nadat het apparaat aan de bedrijfsportal is toegevoegd, gebeurt ongeveer elke ac
 
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden. (Deze updates bevatten geen persoonlijke informatie.)
 
-Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail aan het [Microsoft Android-team](mailto:wintunedroidfbk@microsoft.com).
+Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het [Microsoft Android-team](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
