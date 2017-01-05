@@ -23,6 +23,6 @@ Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Dire
  
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
