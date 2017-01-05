@@ -1,4 +1,4 @@
-## Registreren in Azure Active Directory
+## <a name="azure-active-directory-enrollment"></a>Registreren in Azure Active Directory
 
 Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 Mobile-apparaten van het bedrijf of van henzelf in Intune registreren door werk- of schoolaccount toe te voegen en akkoord te gaan met het beheer. Zo simpel is het. Het apparaat van de gebruiker wordt op de achtergrond geregistreerd en aangesloten bij Azure Active Directory. Wanneer het apparaat is geregistreerd, wordt het met Intune beheerd.
 
@@ -7,7 +7,7 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 - Microsoft Intune-abonnement
 
 
-### Automatische MDM-registratie configureren
+### <a name="configure-automatic-mdm-enrollment"></a>Automatische MDM-registratie configureren
 
 1. Ga in de [Azure-beheerportal](https://manage.windowsazure.com) (https://manage.windowsazure.com) naar het knooppunt **Active Directory** en selecteer uw map.
 
@@ -28,12 +28,12 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 6.  Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
 
   - **Alle**
-  - **Groepen**
+  - **GROEPEN**
   - **Geen**
 
 7. Kies **Opslaan**.
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
