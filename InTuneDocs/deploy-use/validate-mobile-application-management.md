@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>De Mobile Application Management-configuratie valideren
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dit onderwerp bevat informatie over het controleren op problemen na de configuratie van Mobile Application Management (MAM). Deze informatie is van toepassing op MAM-beleid in de Azure-portal.
 
 ### <a name="checking-for-symptoms"></a>Controleren op symptomen

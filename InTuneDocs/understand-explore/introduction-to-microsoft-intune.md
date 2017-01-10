@@ -21,6 +21,9 @@ ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
 ---
 
 # <a name="what-is-intune"></a>Wat is Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Met Intune kunt u het volgende doen:
 * De mobiele apparaten beheren die door uw werknemers worden gebruikt voor toegang tot bedrijfsgegevens.
 * De mobiele apps beheren waarvan uw werknemers gebruikmaken.

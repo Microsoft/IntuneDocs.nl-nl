@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Mobile Device Management evalueren in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In deze evaluatiehandleiding wordt uitgelegd hoe Mobiel Device Management werkt in Intune. U gaat als volgt te werk:
 - Registreer een apparaat dat moet worden beheerd door Intune.
 - Maak groepen om gebruikers en apparaten in te delen.
