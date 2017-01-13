@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d951084a7f5730a9549f76c987fe80f4d98415cf
+ms.sourcegitcommit: 0e4d08c4fd66bb1ae3fe683db503915725bc3134
+ms.openlocfilehash: 5f09c46e7dcd5aabc603838ce60a1e8e7fed694e
 
 
 ---
@@ -25,6 +25,51 @@ ms.openlocfilehash: d951084a7f5730a9549f76c987fe80f4d98415cf
 Deze pagina bevat een overzicht van de aankondigingen in [Wat is er nieuw in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+
+## <a name="june-2016"></a>Juni 2016
+### <a name="intune-service-health"></a>Servicestatus van Intune
+Servicestatusgegevens voor Intune is verplaatst naar een centrale locatie met andere Microsoft-services. U vindt deze informatie nu in de Office 365-beheerportal onder Servicestatus. Lees [dit blogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/) voor meer informatie.
+
+### <a name="app-management"></a>Appbeheer
+- **Verbeterde ervaring voor configuratie van Windows 10-beleid voor ondernemingsgegevens.** Er zijn verbeteringen aangebracht in de ervaring voor configuratie van het Windows 10-beleid voor ondernemingsgegevensbescherming. Deze verbeteringen hebben betrekking op het maken van app-regels, het opgeven van netwerkdefinities en op andere instellingen voor ondernemingsgegevensbescherming. Zie [Een Enterprise Data Protection-beleid (EDP) maken met Microsoft Intune](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) voor meer informatie.
+
+
+### <a name="device-management"></a>Apparaatbeheer
+- **Windows Defender-beleidsinstelling voor beveiliging tegen mogelijk ongewenste apps.** **Detectie van mogelijk ongewenste toepassingen** is een nieuwe Windows Defender-instelling die toegevoegd aan het algemene configuratiebeleid voor Windows 10 Desktop en Mobile. U kunt deze instelling gebruiken als u geregistreerde Windows-desktopcomputers wilt beveiligen tegen het uitvoeren van software die door Windows Defender als mogelijk ongewenst is gedefinieerd. U kunt voorkomen dat deze toepassingen worden uitgevoerd, of de controlemodus gebruiken om te rapporteren wanneer een mogelijk ongewenste toepassing wordt geïnstalleerd. Zie [Windows 10-beleidsinstellingen in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune) voor meer informatie.
+<!---TFS 1244478--->
+
+### <a name="conditional-access"></a>Voorwaardelijke toegang
+- **Cisco ISE-netwerktoegangscontrolebeleid voor Intune.**  Klanten die Cisco Identity Service Engine (ISE) 2.1 en Microsoft Intune gebruiken, kunnen een netwerktoegangsbeleid instellen in ISE.
+
+    Met dit beleid moeten apparaten die via Wi-Fi of VPN verbinding willen maken met het netwerk, voldoen aan de volgende voorwaarden voordat ze toegang krijgen:
+
+    * Moeten worden beheerd met Intune
+    * Moeten voldoen aan geïmplementeerd Intune-nalevingsbeleid
+
+ Eindgebruikers van niet-compatibele apparaten wordt gevraagd zich te registreren en nalevingsproblemen op te lossen om toegang te krijgen.
+- **Voorwaardelijke toegang voor de browser.** U kunt een beleid voor voorwaardelijke toegang instellen voor [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) en [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune), zodat deze alleen toegankelijk zijn via ondersteunde webbrowsers op beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die proberen zich met iOS- en Android-apparaten aan te melden bij Outlook Web Access (OWA) en SharePoint-sites, wordt gevraagd hun apparaat te registreren bij Intune en eventuele problemen met de compatibiliteit op te lossen. Hierna kan de aanmelding worden voltooid.
+<!---TFS 1175844--->
+
+- **Dynamics CRM Online biedt ondersteuning voor voorwaardelijke toegang.** U kunt beleid voor voorwaardelijke toegang instellen voor [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune), zodat dit alleen toegankelijk is voor beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die zich op iOS en Android willen aanmelden bij de mobiele app Dynamics CRM, moeten zich registreren bij Intune en eventuele problemen met de naleving oplossen voordat de aanmelding wordt voltooid.
+<!---TFS1295358--->
+
+### <a name="intune-company-portal-updates"></a>Updates voor de Intune-bedrijfsportal
+
+__Android-bedrijfsportal-app__
+
+- Wanneer IT-beheerders het nieuwe beleid Vereisen dat apparaten de installatie van apps van onbekende bronnen niet toestaan (Android 4.0+) toepassen, krijgen eindgebruikers met een apparaat met Android 4.0 of hoger het volgende bericht te zien: De installatie vanuit onbekende bronnen moet worden uitgeschakeld. Gebruikers moeten naar **Instellingen** > **Beveiliging** gaan en **Onbekende bronnen** uitschakelen. Via een koppeling in het nalevingsbericht kunnen gebruikers meer [informatie](/Intune/EndUser/you-are-asked-to-turn-off-unknown-sources-android) verkrijgen over het bericht en over waarom ze de instelling moeten uitschakelen.
+
+- Wanneer IT-beheerders het nieuwe beleid Vereisen dat apparaten het scannen van apps op beveiligingsrisico's inschakelen (Android 4.0+) toepassen, krijgen eindgebruikers met een apparaat met Android 4.0 of hoger het volgende bericht te zien: Apparaat scannen op beveiligingsrisico's. Gebruikers moeten naar **Instellingen** > **Google** > **Beveiliging** gaan en **Apparaat scannen op beveiligingsrisico's** inschakelen. Via een koppeling in het nalevingsbericht kunnen gebruikers meer [informatie](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) verkrijgen over het bericht en over waarom ze de instelling moeten inschakelen.
+
+- Wanneer IT-beheerders het nieuwe beleid Vereisen dat USB-foutopsporing wordt uitgeschakeld (Android 4.2+) toepassen, krijgen eindgebruikers met een apparaat met Android 4.2 of hoger het volgende bericht te zien: USB-foutopsporing moet worden uitgeschakeld. Gebruikers moeten naar **Instellingen** > **Opties voor ontwikkelaars** gaan en **USB-foutopsporing** uitschakelen. Via een koppeling in het nalevingsbericht kunnen gebruikers meer [informatie](/Intune/EndUser/you-are-asked-to-turn-off-usb-debugging-android) verkrijgen over het bericht en over waarom ze de instelling moeten uitschakelen.
+
+- Wanneer IT-beheerders het nieuwe beleid Minimaal niveau voor de Android-beveiligingspatch (Android 6.0+) toepassen, krijgen eindgebruikers met een apparaat met Android 6.0 of hoger het volgende bericht te zien: Dit apparaat voldoet niet aan het minimale Android-beveiligingspatchniveau. Gebruikers moeten de vereiste beveiligingspatch installeren. Via een koppeling in het nalevingsbericht kunnen gebruikers meer [informatie](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) verkrijgen over hoe de vereiste beveiligingspatch moet worden geïnstalleerd en over welke beveiligingspatch momenteel is geïnstalleerd.
+
+__iOS-bedrijfsportal-app__
+
+- Eindgebruikers die LOB-apps installeren, hebben nu een verbeterde ervaring tijdens de installatie van deze apps. Als de app-installatie lang duurt, kunnen gebruikers hun apparaat handmatig synchroniseren om hervatting van het synchronisatieproces af te dwingen. Zie [Sync your iOS device manually](/Intune/EndUser/sync-your-device-manually-ios) (Uw iOS-apparaat handmatig synchroniseren) voor de instructies voor eindgebruikers.
+
+- De Microsoft Intune-bedrijfsportal-app voor iOS is bijgewerkt. Nu wordt iOS-versie 8.0 en hoger ondersteund. Deze update betekent dat eindgebruikers de bedrijfsportal-app kunnen installeren en alleen nieuwe apparaten kunnen registreren bij Intune als het apparaat iOS-versie 8.0 of hoger heeft. Gebruikers die werken met eerder ingeschreven apparaten met niet-ondersteunde versie van iOS kunnen de bedrijfsportal-app die op hun apparaat is geïnstalleerd blijven gebruiken.
 
 ## <a name="may-2016"></a>Mei 2016
 Al deze functies worden ook ondersteund voor hybride implementaties (Configuration Manager met Intune). Zie de pagina met [nieuwe hybridefuncties](https://technet.microsoft.com/en-us/library/mt718155.aspx) (Engelstalig) voor meer informatie over nieuwe hybridefuncties.
@@ -125,6 +170,6 @@ Voordat deze statussen werden toegevoegd, raakten gebruikers in de war als de in
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

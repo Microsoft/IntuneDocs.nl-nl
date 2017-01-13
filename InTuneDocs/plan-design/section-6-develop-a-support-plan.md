@@ -14,15 +14,15 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 53bb650bbb20d5efae0ba53f0c0bc257a19cbaae
-ms.openlocfilehash: 96f6ca25229244a9cde24609e0c4c37412a3eb01
+ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
+ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 
 ---
 
 # <a name="develop-an-intune-support-plan"></a>Een ondersteuningsplan voor Intune ontwikkelen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 Een ondersteuningsplan voor Intune kan van pas komen om problemen met Intune effectiever te identificeren en op te lossen en om de algemene Intune-ervaring van de eindgebruiker te verbeteren. Hier volgen enkele vragen om te overwegen bij het ontwikkelen van uw ondersteuningsplan voor Intune:
 
@@ -38,7 +38,7 @@ Een ondersteuningsplan voor Intune kan van pas komen om problemen met Intune eff
 
 Laten we elk gebied eens nader bekijken.
 
-## <a name="which-teams-are-responsible-for-providing-support"></a>Welke teams zijn verantwoordelijk voor het verstrekken van ondersteuning voor Intune? 
+## <a name="which-teams-are-responsible-for-providing-support"></a>Welke teams zijn verantwoordelijk voor het verstrekken van ondersteuning voor Intune?
 
 Organisaties kunnen verschillende lagen/niveaus (1-3) van ondersteuning hebben. Laag 1 en 2 behoren misschien tot het ondersteuningsteam en laag 3 bevat leden van het MDM-team dat verantwoordelijk is voor de implementatie van Intune.
 
@@ -46,7 +46,7 @@ Organisaties kunnen verschillende lagen/niveaus (1-3) van ondersteuning hebben. 
 
 Laag 1 is doorgaans het eerste niveau van ondersteuning en normaal gesproken ook de eerste laag waarmee contact wordt opgenomen door de gebruiker voor ondersteuningsaanvragen. Als laag 1 het probleem van de eindgebruiker niet kan oplossen, wordt de vraag geëscaleerd naar laag 2, en laag 2 doet dat zo nodig naar laag 3. Bovendien kan Microsoft-ondersteuning worden beschouwd als laag 4.
 
--   Meer informatie over [Intune-ondersteuning](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.md).
+-   Meer informatie over [Intune-ondersteuning](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 Voor de eerste fasen van de productie-rollout kunnen organisaties alle drie de lagen laten deelnemen aan een bridge- of Skype-vergadering. Hier volgt een voorbeeld van hoe een organisatie de processen voor IT-ondersteuning/helpdesk zou kunnen implementeren:
 
@@ -84,10 +84,10 @@ Hieronder vindt u een voorbeeld van een trainingsagenda voor Intune-ondersteunin
 
 -   Vragen en antwoorden
 
->[!TIP] 
+>[!TIP]
 > [Aanvullende bronnen](additional-resources.md) bestaan uit technische bronnen die het ondersteuningsteam kan gebruiken bij het verbeteren van Microsoft Intune.
 
-## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Wat zijn de mogelijkheden om het ondersteuningsteam eerder in het proces te betrekken? 
+## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Wat zijn de mogelijkheden om het ondersteuningsteam eerder in het proces te betrekken?
 
 Het in een vroeg stadium betrekken van het IT-ondersteunings-/helpdeskteam bij het plannen en testen van de Intune-implementatie kan voor organisaties bijzonder voordelig zijn. Daardoor heeft het ondersteuningsteam eerder zicht op mogelijke oplossingen en kan een waardevolle ervaring worden verkregen. Dit helpt het IT-ondersteunings-/helpdeskteam ook om de ondersteuning voor te bereiden voor de volledige productie-rollout van de organisatie.
 
@@ -97,6 +97,6 @@ De volgende sectie bevat richtlijnen over [het ontwerpen van Intune](section-7-c
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
