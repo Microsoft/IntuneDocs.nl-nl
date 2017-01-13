@@ -1,12 +1,12 @@
 ---
 
-title: Beleidsinstellingen voor Android for Work | Microsoft Intune
+title: Beleidsinstellingen voor Android for Work | Microsoft Docs
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android for Work-apparaten die u met Intune beheert.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android for Work in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -66,9 +68,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 Gebruik het **aangepaste Android for Work-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om de functies op Android for Work-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
 Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
-
-> [!NOTE]
-> Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten.
+Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
 
 ### <a name="general-settings"></a>Algemene instellingen
 
@@ -97,6 +97,6 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

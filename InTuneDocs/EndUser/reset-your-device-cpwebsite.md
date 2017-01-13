@@ -1,5 +1,5 @@
 ---
-title: Uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Intune
+title: Uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: a17943828be883964c7d8f55ecfdcb0b9a738bc3
 
 
 ---
@@ -40,12 +40,12 @@ Ga als volgt te werk om uw apparaat opnieuw in te stellen:
 
 Uw apparaat is nu opnieuw ingesteld.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

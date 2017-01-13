@@ -1,9 +1,9 @@
 ---
-title: App-gegevens beveiligen met behulp van MAM-beleid | Microsoft Intune
+title: App-gegevens beveiligen met behulp van MAM-beleid | Microsoft Docs
 description: "In dit onderwerp wordt uitgelegd hoe Mobile Application Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>App-gegevens beschermen via beleid voor het beheren van mobiele toepassingen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Hoe u app-gegevens kunt beveiligen
 Uw werknemers gebruiken mobiele apparaten voor zowel privé- als werktaken. U wilt er niet alleen voor zorgen dat uw werknemers productief kunnen zijn, maar u wilt ook bedoeld of onbedoeld gegevensverlies voorkomen.  Daarnaast wilt u de bedrijfsgegevens die werknemers gebruiken, kunnen beschermen door gebruik te maken van apparaten die u niet beheert.
@@ -130,6 +132,6 @@ Alle mobiele apps van Office ondersteunen toegang via meerdere identiteiten.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

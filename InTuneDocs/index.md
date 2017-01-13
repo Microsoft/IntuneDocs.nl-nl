@@ -9,14 +9,14 @@ keywords: intune-documentatie, appbeheer, apparaatbeheer, MDM-documentatie, MAM-
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
+ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 ---
@@ -37,8 +37,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Toegang tot bedrijfsbronnen beveiligen</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">Handleiding Microsoft Intune App SDK voor iOS-ontwikkelaars</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Werken met Intune in Microsoft Graph</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Bronnen over de eindgebruikerservaring in Microsoft Intune</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Inleiding in Intune</h3>
+                    <h3>Wat is Intune?</h3>
                     <p>Ontdek hoe Intune beheermogelijkheden biedt op het gebied van apparaten, apps en gegevens voor mobiele apparaten (iOS- , Android- en Windows Phone-apparaten) en Windows-pc's.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Intune-evaluatiehandleiding</h3>
+                    <h3>Is Intune iets voor u?</h3>
                     <p>Doorloop in de handleiding van de evaluatieversie de stappen om uw proefinstallatie met maximaal 100 gebruikers en apparaten in te stellen.</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>Wat u moet weten voordat u begint</h3>
-                    <p>Raak snel vertrouwd met de basisvereisten voor een Intune-implementatie.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Snelstartgids voor Intune</h3>
-                    <p>Voortbouwend op de handleiding voor de 30-daagse evaluatieversie wordt in dit onderwerp een overzicht gegeven van de Azure Active Directory-synchronisatie, overwegingen met betrekking tot domeinen en DNS en andere Intune-aanpassingen.</p>
+                    <h3>Handleiding Aan de slag</h3>
+            <p>Voortbouwend op de handleiding voor de 30-daagse evaluatieversie wordt in dit onderwerp een overzicht gegeven van de Azure Active Directory-synchronisatie, overwegingen met betrekking tot domeinen en DNS en andere Intune-aanpassingen.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Implementatiefasen</h3>
-                    <p>Definieer uw Intune-doelen, architectuur, testfase en plannen voor productie-implementatie.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps</h3>
+                    <p>Beveilig de gegevens van uw bedrijf met behulp van beleid voor app-beveiliging om het lekken van bedrijfsgegevens te helpen voorkomen.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>Configuratie van e-mail op mobiele apparaten vereenvoudigen</h3>
+                    <p>Hiermee bespaart uw bedrijf tijd en resources door het implementeren van e-mailprofielen (evenals VPN- en Wi-Fi-profielen) op mobiele Windows-, iOS- en Android-apparaten die door de Intune-service worden beheerd.</p>
                   </a>
                 </li>
               </ul>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>De toegang tot e-mail en O365-services beperken</h3>
-                    <p>Maak gebruik van de voorwaardelijke toegang van Intune om de toegang tot uw bedrijfse-mail en Office 365-services te beperken.</p>
+                    <h3>Toegang tot e-mail en O365-services beperken</h3>
+                    <p>Maak gebruik van de voorwaardelijke toegang van Intune om de toegang tot uw bedrijfs-e-mail en Office 365-services te beveiligen.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

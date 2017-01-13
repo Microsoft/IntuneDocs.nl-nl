@@ -1,5 +1,5 @@
 ---
-title: Over Android for Work | Microsoft Intune
+title: Over Android for Work | Microsoft Docs
 description: Intune beheert Android for Work om aanvullende beheermogelijkheden en privacy te leveren wanneer mensen hun Android-apparaten voor hun werk gebruiken.
 keywords: 
 author: nathbarn
@@ -11,13 +11,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
-ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: e9a99868e7bd4c3aa45de4d221f28c1d2f3efb74
 
 
 ---
 
 # <a name="manage-android-for-work-devices-with-intune"></a>Android for Work-apparaten beheren met Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Android for Work is een set Android-apparaatfuncties en -services. Deze functies en services bieden aanvullende beheermogelijkheden en privacy wanneer mensen hun Android-apparaten voor hun werk gebruiken. Intune kan u helpen apps en bedrijfsbronnen te implementeren op Android for Work-apparaten om ervoor te zorgen dat werk- en privégegevens gescheiden zijn. Bij een succesvolle implementatie blijven apps en de gegevens waartoe ze toegang hebben, exclusief binnen de Android for Work-omgeving op het apparaat.
 
@@ -37,7 +39,7 @@ Wanneer u een Android for Work-apparaat met Intune beheert, beheert u niet het h
 
 ## <a name="app-publishing-and-distribution"></a>Apps publiceren en distribueren
 
-De Google Play for Work-service vormt een integraal onderdeel van de distributie en het beheer van apps. Alle apps die op Android for Work-apparaten worden geïmplementeerd in het werkprofiel, zijn afkomstig van Play for Work. Als u apps in de Play Store wilt beheren en implementeren, meldt u zich als Intune-beheerder aan bij de Play for Work-website en zorgt u voor de goedkeuting van apps voor uw Intune-tenant. Deze apps worden met de Intune-console gesynchroniseerd waar ze vervolgens kunnen worden geïmplementeerd en beheerd met Intune. LOB-apps (Line-Of-Business) die door uw organisatie worden ontwikkeld, moeten worden gepubliceerd naar Play for Work met behulp van de Android-console voor het publiceren van apps van Google. Line-Of-Business-apps moeten worden geconfigureerd in de Android-console voor het publiceren van apps om de toegang tot uw organisatie te beperken.
+De Google Play for Work-service vormt een integraal onderdeel van de distributie en het beheer van apps. Alle apps die op Android for Work-apparaten worden geïmplementeerd in het werkprofiel, zijn afkomstig van Play for Work. Als u apps in de Play Store wilt beheren en implementeren, meldt u zich als Intune-beheerder aan bij de Play for Work-website en zorgt u voor de goedkeuring van apps voor uw Intune-tenant. Deze apps worden met de Intune-console gesynchroniseerd waar ze vervolgens kunnen worden geïmplementeerd en beheerd met Intune. LOB-apps (Line-Of-Business) die door uw organisatie worden ontwikkeld, moeten worden gepubliceerd naar Play for Work met behulp van de Android-console voor het publiceren van apps van Google. Line-Of-Business-apps moeten worden geconfigureerd in de Android-console voor het publiceren van apps om de toegang tot uw organisatie te beperken.
 
 Apps installeren zonder tussenkomst van de gebruiker en zonder dat de gebruiker **installatie vanuit onbekende bronnen** hoeft toe te staan. Als de gebruiker optionele of beschikbare apps wil zoeken en installeren, moet de gebruiker de met een badge voor zakelijke apps gemarkeerde Play Store-app op zijn apparaat hebben. Meer informatie over [Apps implementeren voor Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps).
 
@@ -49,7 +51,7 @@ Android for Work biedt een infrastructuur voor het implementeren van appconfigur
 
 Android for Work biedt geen standaardapp voor e-mail of systeemeigen e-mailprofielobject zoals wordt geleverd door iOS. In plaats daarvan kunnen e-mailconfiguraties worden ingesteld door app-configuratie-instellingen toe te passen op e-mail-apps die hiervoor ondersteuning bieden. Gmail en Nine Work zijn twee EAS-clientapps (Exchange ActiveSync) in de Play Store die ondersteuning bieden voor configuratie met Android for Work-appconfiguratie.
 
-Intune biedt configuratiesjablonen voor Gmail- en Nine Work-apps. Andere e-mailapps die ondersteuning bieden voor app-configuratieprofielen, kunnen worden geconfigureerd met beleid voor de configuratie van mobiele apps.
+Intune biedt configuratiesjablonen voor Gmail- en Nine Work-apps. Andere e-mail-apps die ondersteuning bieden voor app-configuratieprofielen, kunnen worden geconfigureerd met beleid voor de configuratie van mobiele apps.
 
 Als u werkt met voorwaardelijke EAS-toegang voor Android for Work-apparaten, moet u een Gmail- of Nine Work-app voor e-mail gebruiken. De Microsoft Outlook voor Android-app of een andere e-mail-app die gebruikmaakt van moderne verificatie via ADAL, wordt ook ondersteund. Meer informatie over [E-mailprofielen voor bedrijfse-mail](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
@@ -87,6 +89,6 @@ Wi-Fi-profielen die worden beheerd door Android for Work, worden gegarandeerd ve
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

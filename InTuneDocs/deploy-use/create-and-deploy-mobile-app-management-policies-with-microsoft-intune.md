@@ -1,9 +1,9 @@
 ---
-title: MAM-beleid maken en implementeren | Microsoft Intune
+title: MAM-beleid maken en implementeren | Microsoft Docs
 description: Volg de stapsgewijze instructies in dit onderwerp om beleidsregels voor Mobile App Management te maken en implementeren.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
 
 
 ---
 
 # <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Beleid voor Mobile App Management maken en implementeren met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 MAM-beleid (Mobile App Management-beleid) kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door Intune worden beheerd. Lees het onderwerp [App-gegevens beschermen met beleid voor het beheren van mobiele apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) voor een gedetailleerde beschrijving van de werking van MAM-beleid en de scenario's die door Intune MAM-beleid worden ondersteund.
 
 In dit onderwerp wordt het proces van het maken van MAM-beleid in de **Azure-portal** beschreven. Azure Portal is de nieuwe beheerconsole voor het maken van MAM-beleid. U kunt het beste deze portal gebruiken om MAM-beleid te maken. Azure Portal ondersteunt de volgende MAM-scenario's:
@@ -173,6 +176,6 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

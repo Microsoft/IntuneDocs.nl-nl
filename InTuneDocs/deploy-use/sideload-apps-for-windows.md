@@ -1,5 +1,5 @@
 ---
-title: Apps voor Windows en Windows Phone sideloaden | Microsoft Intune
+title: Apps voor Windows en Windows Phone sideloaden | Microsoft Docs
 description: Leer hoe u line-of-business-apps ondertekent, zodat u Intune kunt gebruiken voor de implementatie van deze apps.
 keywords: 
 author: robstackmsft
@@ -11,12 +11,14 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Als Intune-beheerder kunt u LOB-apps (line-of-business) implementeren op Windows- en Windows 10 Mobile-apparaten, met inbegrip van de bedrijfsportal-app. Als u apps van het type .appx of .xap wilt implementeren op Windows 10- en Windows 10 mobile-apparaten, of als u een LOB-app wilt implementeren op Windows 8.1- of Windows Phone 8.1-apparaten, moet u een **Symantec Enterprise Mobile certificaat voor Codeondertekening** ophalen. Alleen het Symantec-certificaat wordt voor deze apps vertrouwd voor de desbetreffende Windows-apparaten. U kunt uw eigen certificeringsinstantie gebruiken voor Windows 10-apps en voor 'universele' apps. Dit certificaat is vereist om:
 

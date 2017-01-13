@@ -1,5 +1,5 @@
 ---
-title: IMEI-nummers opgeven | Microsoft Intune
+title: IMEI-nummers opgeven | Microsoft Docs
 description: Met Microsoft Intune kunnen beheerders IMEI-nummers importeren voor platforms voor mobiele apparaten om ze te helpen bij het identificeren van mobiele apparaten in bedrijfseigendom
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
-ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 588674c38a5e54f6b762ac044457110a361e6969
 
 
 ---
 
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Apparaten in bedrijfseigendom met een IMEI-nummer opgeven
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune beheerders in staat om IMEI-nummers (International Mobile Equipment Identity-nummers) te importeren voor mobiele apparaten die hierover beschikken. Nadat apparaten zijn ingeschreven bij Intune, kunt u zien welke apparaten IMEI-nummers hebben geïmporteerd onder **Groepen** > **Overzicht** > **Alle apparaten**. Onder **Apparaatgroep** staan apparaten met geïmporteerde IMEI-nummers, die worden weergegeven met **Bedrijf** in de kolom **Eigendom**.
 
 1. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle vooraf geregistreerde bedrijfsapparaten** &gt; **Op IMEI (alle platformen)** en kies vervolgens **Apparaten toevoegen…**. U kunt apparaten op twee manieren toevoegen:
@@ -50,6 +53,6 @@ Wanneer het apparaat met een IMEI-nummer wordt ingeschreven bij Intune, wat mees
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

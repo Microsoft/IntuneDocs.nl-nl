@@ -1,5 +1,5 @@
 ---
-title: Problemen met de clientinstallatie oplossen | Microsoft Intune
+title: Problemen met de clientinstallatie oplossen | Microsoft Docs
 description: Algemene problemen met de clientinstallatie oplossen.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Problemen met de clientinstallatie oplossen in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Gebruik de volgende informatie voor hulp bij het oplossen van algemene problemen met clientinstallaties. Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
 ## <a name="client-installation-fails"></a>De clientinstallatie is mislukt
@@ -70,7 +73,7 @@ Dit kan worden veroorzaakt door het ontbreken van essentiële software-updates o
 **Oplossing:** zorg ervoor dat met uw beleid voor software-updates de installatie van essentiële updates is toegestaan, zoals is beschreven in [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Aan Microsoft Intune-beleid gerelateerde fouten in policyplatform.log
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Aan Microsoft Intune-beleid gerelateerde fouten in policyplatform.log
 Bij niet-MDM-Windows-apparaten kunnen beleidsfouten in het bestand policyplatform.log het gevolg zijn van niet-standaardinstellingen in Windows Gebruikersaccountbeheer (UAC) op het apparaat. Bepaalde niet-standaard-UAC-instellingen kunnen invloed hebben op Microsoft Intune-clientinstallaties en de beleidsuitvoering.
 
 ### <a name="to-resolve-uac-issues"></a>UAC-problemen oplossen
@@ -127,6 +130,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

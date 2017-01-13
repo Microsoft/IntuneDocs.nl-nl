@@ -1,11 +1,11 @@
 ---
-title: Mac OS X-beleidsinstellingen | Microsoft Intune
+title: Mac OS X-beleidsinstellingen | Microsoft Docs
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Mac OS X-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: ce30ab0e5a4ce709aafa5892789590b42b484db4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 58dc1d872e7e12978652542d80061dd7ed86aeb2
 
 
 ---
 
-# Instellingen voor configuratiebeleid voor Mac OS X in Microsoft Intune
+# <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Instellingen voor configuratiebeleid voor Mac OS X in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op Mac OS X-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
-## Algemene instellingen voor configuratiebeleid
+## <a name="general-configuration-policy-settings"></a>Algemene instellingen voor configuratiebeleid
 
 Gebruik het **algemene Mac OS X-configuratiebeleid** in Microsoft Intune om instellingen te configureren voor:
 
@@ -34,7 +36,7 @@ Gebruik het **algemene Mac OS X-configuratiebeleid** in Microsoft Intune om inst
 
 Als de instelling die u zoekt niet wordt weergegeven in deze lijst, kunt u deze maken met een aangepast Mac OS X-beleid waarmee u instellingen kunt importeren die u hebt gemaakt met de Apple Configurator. Zie "Aangepaste beleidsinstellingen" verderop in dit onderwerp voor meer informatie.
 
-### Wachtwoordinstellingen
+### <a name="password-settings"></a>Wachtwoordinstellingen
 
 |Naam van de instelling|Details|
 |----------------|---------------|
@@ -43,12 +45,12 @@ Als de instelling die u zoekt niet wordt weergegeven in deze lijst, kunt u deze 
 |**Aantal complexe tekens dat is vereist in wachtwoord**|Hier geeft u op hoeveel complexe tekens zijn vereist in het wachtwoord (tussen **0** en **4**).<br /><br />Een complex teken is een symbool, zoals **?**.|
 |**Minimale wachtwoordlengte**|Hier geeft u de minimale lengte van het wachtwoord op (tussen **4** en **14** tekens).|
 |**Eenvoudige wachtwoorden toestaan**|Hier stelt u in dat eenvoudige wachtwoorden mogen worden gebruikt, zoals **0000** en **1234**.|
-|**Minuten inactief voordat wachtwoord is vereist**|Hier geeft u op hoe lang de computer inactief moet zijn voordat een wachtwoord vereist is om te ontgrendelen.|
-|**Verlopen van wachtwoorden (dagen)**|Hier geeft u op na hoeveel dagen de gebruiker het wachtwoord moet wijzigen (tussen **1** en **255** dagen).|
+|**Minuten van inactiviteit voordat wachtwoord vereist is**|Hier geeft u op hoe lang de computer inactief moet zijn voordat een wachtwoord vereist is om te ontgrendelen.|
+|**Dagen tot wachtwoord verloopt**|Hier geeft u op na hoeveel dagen de gebruiker het wachtwoord moet wijzigen (tussen **1** en **255** dagen).|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee voorkomt u dat de gebruiker een eerder gebruikt wachtwoord opnieuw gebruikt. Wanneer deze optie is ingesteld, kunt u ook **Wachtwoorden niet opnieuw gebruiken** instellen om op te geven hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt (tussen **1** en **24**).|
 |**Minuten van inactiviteit voordat de schermbeveiliging wordt geactiveerd**|Hier geeft u de tijdsduur op die de computer inactief moet zijn voordat de schermbeveiliging wordt geactiveerd.|
 
-### Instellingen voor compatibele en niet-compatibele apps
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Instellingen voor compatibele en niet-compatibele apps
 In de lijst met **compatibele en niet-compatibele apps voor Mac OS X** schakelt u **Beheerde instellingen voor apparaten** in en geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens.
 
 > [!NOTE]
@@ -70,27 +72,27 @@ In de lijst met **compatibele en niet-compatibele apps voor Mac OS X** schakelt 
 > [!IMPORTANT]
 > Als op een Mac OS X-apparaat de slaapstandmodus is ingeschakeld, kunnen beleidsregels en profielen niet worden afgeleverd of geïnventariseerd. Als gevolg hiervan wordt op de Intune-console mogelijk tijdelijk de status **Foutieve beleidsinstellingen** weergegeven tot de volgende keer dat het apparaat uit de slaapstand wordt gehaald.
 
-### Compatibele apps en niet-compatibele apps controleren
+### <a name="monitor-compliant-and-noncompliant-apps"></a>Compatibele apps en niet-compatibele apps controleren
 Gebruik **Rapporten met niet-compatibele apps** om de compatibiliteit van de door u opgegeven apps weer te geven.
 
-#### Een rapport uitvoeren
+#### <a name="to-run-a-report"></a>Een rapport uitvoeren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Rapporten** &gt; **Rapport met niet-compatibele apps**.
 
 2.  Selecteer de apparaatgroepen die u wilt controleren, selecteer of u op compatibele en/of niet-compatibele apps wilt controleren, en kies vervolgens **Rapport weergeven**.
 
-## Aangepaste beleidsinstellingen voor Mac OS X in Microsoft Intune
+## <a name="mac-os-x-custom-policy-settings-in-microsoft-intune"></a>Aangepaste beleidsinstellingen voor Mac OS X in Microsoft Intune
 Gebruik het **aangepaste Mac OS X-configuratiebeleid** van Microsoft Intune om op Mac OS X-apparaten instellingen te implementeren die u met het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) hebt gemaakt. Met dit hulpprogramma kunt u veel instellingen configureren die de werking van deze apparaten regelen en kunt u deze instellingen exporteren naar een configuratieprofiel. U kunt dit configuratieprofiel vervolgens importeren naar een aangepast Mac OS X-beleid voor Intune en de instellingen implementeren voor gebruikers en apparaten in uw organisatie.
 
 Hiermee kunt u Mac OS X-instellingen implementeren die niet met het algemene configuratiebeleid van Intune voor Mac OS X kunnen worden geconfigureerd.
 
-### Vereisten
+### <a name="prerequisites"></a>Vereisten
 Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een configuratiebestand hebben gemaakt met de instellingen die u wilt implementeren voor de gebruikers en apparaten. In [de Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) kunt u de Apple Configurator downloaden en meer informatie over dit hulpprogramma vinden.
 
 > [!NOTE]
 > Er wordt in Intune niet gerapporteerd of de afzonderlijke instellingen in een aangepast Mac OS X-beleid compatibel zijn. Er wordt echter wel gerapporteerd of het beleid in z’n geheel compatibel is.
 
-### Algemene instellingen
+### <a name="general-settings"></a>Algemene instellingen
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
@@ -98,7 +100,7 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
     |**Beschrijving**|Geef een beschrijving op die een overzicht biedt van het aangepaste Mac OS X-beleid, evenals andere relevante informatie die u helpt om het beleid terug te vinden.|
 
 
-### Aangepaste instellingen
+### <a name="custom-settings"></a>Aangepaste instellingen
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
@@ -108,7 +110,7 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-### Een configuratieprofielbestand maken
+### <a name="how-to-create-a-configuration-profile-file"></a>Een configuratieprofielbestand maken
 U kunt het configuratieprofielbestand dat door het aangepaste beleid wordt gebruikt op twee manieren maken:
 
 -   Exporteer het bestand (met de extensie **.mobileconfig**) uit het hulpprogramma Apple Configurator.
@@ -116,11 +118,11 @@ U kunt het configuratieprofielbestand dat door het aangepaste beleid wordt gebru
 -   Schrijf het bestand zelf met het bijbehorende schema van de [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

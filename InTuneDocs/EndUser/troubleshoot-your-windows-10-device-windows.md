@@ -1,5 +1,5 @@
 ---
-title: Problemen met de registratie van uw Windows 10-apparaat oplossen | Microsoft Intune
+title: Problemen met de registratie van uw Windows 10-apparaat oplossen | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b81465ae9ae22cea347a3e052b70ac3b2be465c5
 
 
 ---
@@ -54,10 +54,10 @@ Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt to
 
 - Als u uw werk- of schoolaccount niet ziet, tikt u op **Verbinding maken** en meldt u zich aan met de referenties van uw werk- of schoolaccount.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

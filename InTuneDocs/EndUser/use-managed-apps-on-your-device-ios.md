@@ -1,5 +1,5 @@
 ---
-title: Beheerde apps op uw iOS-apparaat gebruiken | Microsoft Intune
+title: Beheerde apps op uw iOS-apparaat gebruiken | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
 
 
 ---
@@ -61,7 +61,7 @@ Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beh
 -   Vereisten voor de versleuteling van gegevens
 
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 

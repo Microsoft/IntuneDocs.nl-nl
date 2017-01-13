@@ -1,5 +1,5 @@
 ---
-title: Android-apps met MAM-beleid | Microsoft Intune
+title: Android-apps met MAM-beleid | Microsoft Docs
 description: Dit onderwerp beschrijft wat u kunt verwachten wanneer uw app wordt beheerd door beleidsregels voor beheer van mobiele apps.
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In dit onderwerp wordt de gebruikerservaring voor apps met MAM-beleid (Mobile Application Management) beschreven. MAM-beleidsregels worden alleen toegepast wanneer apps worden gebruikt in een werkcontext, bijvoorbeeld wanneer de gebruiker apps gebruikt met een werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
 ##  <a name="access-apps"></a>Toegang tot apps
 

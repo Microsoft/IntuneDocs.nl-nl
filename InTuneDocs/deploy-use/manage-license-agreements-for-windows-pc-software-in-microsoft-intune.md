@@ -1,11 +1,11 @@
 ---
-title: Softwarelicentieovereenkomsten voor pc&quot;s met de Intune-softwareclient beheren | Microsoft Intune
+title: Softwarelicentieovereenkomsten voor pc&quot;s met de Intune-softwareclient beheren | Microsoft Docs
 description: Met Intune kunt u licentieovereenkomsten beheren voor software die is gekocht via Microsoft-volumelicentieovereenkomsten, en voor software die op een andere manier is gekocht.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6eead7cd7f04641687b334c8f0c09a3af1f9b4ba
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
 
 
 ---
 
-# Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
+# <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
 Met Microsoft Intune kunt u licentiegegevens toevoegen en beheren voor software die is gekocht via Microsoft Volume Licensing-overeenkomsten. U kunt dit ook doen voor Microsoft- of niet-Microsoft-software die op een andere manier is gekocht. U kunt deze gegevens in logische groepen indelen.
 
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ U kunt bovendien rapporten genereren waarin statistieken voor software-installat
 > [!TIP]
 > De werkruimte **Licenties** wordt pas weergegeven in de beheerconsole als u ten minste één Windows-computer met de Intune Windows-computerclient beheert.
 
-## Microsoft-volumelicentieovereenkomsten toevoegen
+## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft-volumelicentieovereenkomsten toevoegen
 Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die is gekocht via Microsoft-volumelicentieovereenkomsten. U kunt Microsoft-volumelicentieovereenkomsten aan Intune toevoegen door overeenkomende sets overeenkomstnummers op te geven. De overeenkomst- of autorisatienummers moeten overeenkomen met de juiste licentie- of inschrijvingsnummers. Sets overeenkomstnummers worden verkregen bij de aankoop van de licentieovereenkomsten van het [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://account.manage.microsoft.com/admin/default.aspx) de optie **Licenties**.
@@ -66,7 +66,7 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
         -   Het bestand moet ten minste één set overeenkomsten bevatten en mag niet meer dan 5000 sets overeenkomsten bevatten.
 
-        **Notatie voor het bestand**
+        **Indeling voor het bestand**
 
         U kunt dit bestand maken door uw sets van overeenkomsten toe te voegen aan een document met tekst zonder opmaak in een van de volgende notaties, afhankelijk van het type organisatie dat u bij VLSC hebt geregistreerd. Geef per regel één overeenkomstnummerpaar op.
 
@@ -86,7 +86,7 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
         -   **Naam overeenkomst**: geef een unieke naam op voor de overeenkomst.
 
-            De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag de volgende tekens niet bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
+            De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag niet de volgende tekens bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
 
         -   **Autorisatie-/overeenkomstnummer**: voer het autorisatie-/overeenkomstnummer van de licentieset in.
 
@@ -123,13 +123,13 @@ Na het vernieuwen van de volumelicentiegegevens kunt u de licentiegegevens verge
 > [!NOTE]
 > De **producttitel** die wordt weergegeven voor alle Microsoft-volumelicentieovereenkomsten is **niet beschikbaar**.
 
-## Andere softwarelicentieovereenkomsten toevoegen en bewerken
+## <a name="add-and-edit-other-software-licensing-agreements"></a>Andere softwarelicentieovereenkomsten toevoegen en bewerken
 Naast Microsoft-volumelicentieovereenkomsten kunt u ook andere typen licentieovereenkomsten aan Intune toevoegen. Dit kunnen overeenkomsten zijn voor niet-Microsoft-software of voor Microsoft-software die via de detailhandel is gekocht.
 
 > [!IMPORTANT]
 > U moet ten minste één Windows-computer bij Intune hebben ingeschreven voordat u een overeenkomst kunt toevoegen.  Bovendien moet voor ten minste één ingeschreven computer een softwarepakket met licentie zijn geüpload dat u wilt gebruiken om een licentieovereenkomst toe te voegen.
 
-### Andere softwareovereenkomsten toevoegen
+### <a name="to-add-other-software-agreements"></a>Andere softwareovereenkomsten toevoegen
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://account.manage.microsoft.com/admin/default.aspx) de optie **Licenties**.
 
@@ -139,7 +139,7 @@ Naast Microsoft-volumelicentieovereenkomsten kunt u ook andere typen licentieove
 
 4.  Geef in het gedeelte **Gegevens van overeenkomst toevoegen** het volgende op:
 
-    -   **Agreement name** (vereist). De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag de volgende tekens niet bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
+    -   **Agreement name** (vereist). De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag niet de volgende tekens bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
 
     -   **Uitgever** (vereist). Terwijl u de naam van een uitgever typt, worden alle namen van uitgevers opgehaald die de door u getypte letters bevatten. Als u bijvoorbeeld 'soft' typt, worden alle namen opgehaald van uitgevers die 'soft' bevatten, bijvoorbeeld 'Microsoft' en 'Microsoft Research.' De namen van de uitgevers worden opgehaald uit de Software Asset Catalog. Voordat u de titel van het product kunt invoeren, moet u de uitgever selecteren.
 
@@ -168,7 +168,7 @@ Naast Microsoft-volumelicentieovereenkomsten kunt u ook andere typen licentieove
 
 De lijstweergave **Alle overeenkomsten** wordt weergegeven.
 
-## Licentieovereenkomsten beheren
+## <a name="manage-license-agreements"></a>Licentieovereenkomsten beheren
 Softwarelicentieovereenkomsten kunnen worden toegevoegd aan licentiegroepen. U kunt licentiegroepen gebruiken om uw licentieovereenkomsten te organiseren in groepen die logisch zijn voor uw organisatie. U kunt ook licentieovereenkomsten verwijderen die u eerder hebt gemaakt.
 
 |||
@@ -181,6 +181,6 @@ Softwarelicentieovereenkomsten kunnen worden toegevoegd aan licentiegroepen. U k
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

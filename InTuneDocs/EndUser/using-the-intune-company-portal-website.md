@@ -1,5 +1,5 @@
 ---
-title: De Intune-bedrijfsportalwebsite gebruiken | Microsoft Intune
+title: De Intune-bedrijfsportalwebsite gebruiken | Microsoft Docs
 description: Beschrijving van de bedrijfsportalwebsite en koppelingen naar de stappen voor taken die eindgebruikers op de website kunnen uitvoeren
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1314fad0c387224302a4c2b67c913f9d2ec6c5d4
 
 
 ---
@@ -51,6 +51,6 @@ Eindgebruikers kunnen op de **bedrijfsportalwebsite** de meeste taken uitvoeren 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Instellingen voor beveiligingsbeleid van mobiele apparaten | Microsoft Intune
+title: Instellingen voor beveiligingsbeleid van mobiele apparaten | Microsoft Docs
 description: Gebruik Intune voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie.
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune heeft nu afzonderlijke configuratiebeleidsregels voor elk apparaatplatform. Deze beleidsregels bevatten de meest recente instellingen die u kunt gebruiken. U kunt het beveiligingsbeleid voor mobiele apparaten blijven gebruiken en eventuele bestaande implementaties zullen nog steeds werken. U moet echter zo snel mogelijk de migratie naar de nieuwe configuratiebeleidsregels uitvoeren omdat het beveiligingsbeleid voor mobiele apparaten in de toekomst wordt verwijderd.
 
@@ -41,7 +44,7 @@ U kunt beveiligingsbeleidsregels voor mobiele apparaten maken en implementeren v
 
 > [!NOTE]
 > Sommige instellingen zijn niet van toepassing op sommige apparaten. Zie de onderstaande tabellen voor een volledige lijst met instellingen die u kunt configureren.
-> Vanaf oktober 2016 biedt Microsoft Intune geen ondersteuning meer voor Windows 8-bedrijfsportalapps. Microsoft Intune biedt dan ook geen ondersteuning meer voor het Windows Phone 8- en Windows RT-platform. Als gevolg hiervan kunt u geen Windows Phone 8- of Windows RT-apparaten meer registreren of bijwerken. U kunt Windows Phone 8-, Windows RT- en Windows 8-apparaten die al zijn geregistreerd, blijven beheren. Werk Windows 8- en Windows Phone 8-apparaten bij naar Windows 8.1 en Windows Phone 8.1. Gebruik de bijbehorende bedrijfsportalapps voor Windows 8.1 en Windows Phone 8.1 om zonder onderbrekingen door te gaan met het distribueren van apps naar deze apparaten.
+> Vanaf oktober 2016 biedt Microsoft Intune geen ondersteuning meer voor Windows 8-bedrijfsportal-apps. Microsoft Intune biedt dan ook geen ondersteuning meer voor het Windows Phone 8- en Windows RT-platform. Als gevolg hiervan kunt u geen Windows Phone 8- of Windows RT-apparaten meer registreren of bijwerken. U kunt Windows Phone 8-, Windows RT- en Windows 8-apparaten die al zijn geregistreerd, blijven beheren. Werk Windows 8- en Windows Phone 8-apparaten bij naar Windows 8.1 en Windows Phone 8.1. Gebruik de bijbehorende bedrijfsportal-apps voor Windows 8.1 en Windows Phone 8.1 om zonder onderbrekingen door te gaan met het distribueren van apps naar deze apparaten.
 
 ## <a name="security-settings"></a>Beveiligingsinstellingen
 
@@ -53,7 +56,7 @@ U kunt beveiligingsbeleidsregels voor mobiele apparaten maken en implementeren v
 |**Minimale wachtwoordlengte**|Yes|Ja|Ja|Ja|Ja|
 |**Eenvoudige wachtwoorden toestaan**<br /><br />Eenvoudige wachtwoorden zijn onder andere '0000' en '1234'.|Nee|Nee|Ja|Ja|Nee|
 |**Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Yes|Ja|Ja|Ja|Yes|
-|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**<sup>1</sup>|Ja|Ja|Ja|Ja|Ja|
+|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**<sup>1</sup>|Yes|Ja|Ja|Ja|Ja|
 |**Dagen tot wachtwoord verloopt**|Yes|Ja|Ja|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Yes|Ja|Ja|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Ja|Ja|Ja|Ja|Ja|
@@ -61,7 +64,7 @@ U kunt beveiligingsbeleidsregels voor mobiele apparaten maken en implementeren v
 |**Afbeeldingswachtwoord en PIN toestaan**|Yes|Ja|Nee|Nee|Nee|
 |**Minuten van inactiviteit voordat wachtwoord vereist is**|Nee|Nee|Nee|Ja|Nee|
 |**Vingerafdruk voor ontgrendelen toestaan**|Nee|Nee|Nee|iOS 7 en hoger|Nee|
-<sup>1</sup>Wanneer u voor iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat wachtwoord vereist is** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
+<sup>1</sup> Wanneer u voor iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat wachtwoord vereist is** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
 
 Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows RT, worden gebruikers gedwongen hun wachtwoord opnieuw in te stellen, zelfs als het huidige wachtwoord voldoet aan de beleidsvereisten.
 
@@ -70,7 +73,7 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Versleuteling vereisen op mobiele apparaat**<sup>1</sup><br /><br />Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**in om versleuteling van iOS-apparaten in te schakelen.|Ja|Nee|Ja|Nee|Ja|
-|**Versleuteling vereisen op opslagkaarten**<br /><br />Deze instelling is ook van toepassing op apparaten die worden beheerd door Exchange Active Sync.|n.v.t.|n.v.t.|n.v.t. <br />De apps en de bijbehorende gegevens worden automatisch versleuteld.|n.v.t.|Yes|
+|**Versleuteling vereisen op opslagkaarten**<br /><br />Deze instelling is ook van toepassing op apparaten die worden beheerd door Exchange Active Sync.|n.v.t.|n.v.t.|n.v.t. <br />De apps en de bijbehorende gegevens worden automatisch versleuteld.|n.v.t.|Ja|
 <sup>1</sup>Dit is aanvullende informatie voor apparaten met Windows 8.1:
 
 -   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](http://support.microsoft.com/kb/3013816) installeren.
@@ -105,18 +108,18 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 |**Fabrieksinstellingen terugzetten toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Cloudinstellingen – documenten en gegevens
+## <a name="cloud-settings--documents-and-data"></a>Cloudinstellingen – documenten en gegevens
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Back-up naar iCloud® toestaan**|Nee|Nee|Nee|Ja|Nee|
 |**Documentsynchronisatie met iCloud toestaan**|Nee|Nee|Nee|Ja|Nee|
-|**Photo Stream-synchronisatie met iCloud toestaan**|Nee|Nee|Nee|Ja|Nee|
+|**Fotostreamsynchronisatie met iCloud toestaan**|Nee|Nee|Nee|Ja|Nee|
 |**Versleutelde back-ups vereisen**|Nee|Nee|Nee|Ja|Nee|
 |**URL voor werkmappen**<br /><br />Met deze instelling stelt u de URL van de werkmap in, zodat documenten op verschillende apparaten kunnen worden gesynchroniseerd.|Ja|Nee|Nee|Nee|Nee|
 |**Google-back-up toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Cloudinstellingen - accounts en synchronisatie
+## <a name="cloud-settings--accounts-and-synchronization"></a>Cloudinstellingen - accounts en synchronisatie
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -202,9 +205,9 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 
 |Naam van de instelling|Windows 8.1 en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|iOS|Android en Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Spraakassistent toestaan**|Nee|Nee|Nee|Ja|Ja (alleen Samsung KNOX Standard)|
+|**Spraakassistent toestaan**|Nee|Nee|Nee|Yes|Ja (alleen Samsung KNOX Standard)|
 |**Spraakassistent toestaan terwijl het apparaat is vergrendeld**|Nee|Nee|Nee|Ja|Nee|
-|**Nummer inspreken toestaan**|Nee|Nee|Nee|Ja|Ja (alleen Samsung KNOX Standard)|
+|**Nummer inspreken toestaan**|Nee|Nee|Nee|Yes|Ja (alleen Samsung KNOX Standard)|
 |**Kopiëren en plakken toestaan**|Nee|Nee|Alleen Windows Phone 8.1|Nee|Ja (alleen Samsung KNOX Standard)|
 |**Klembord delen tussen toepassingen toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX Standard)|
 |**YouTube toestaan**|Nee|Nee|Nee|Nee|Ja (alleen Samsung KNOX Standard)|
@@ -214,6 +217,6 @@ Wanneer u beleid voor de wachtwoordlengte implementeert op apparaten met Windows
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Uw apparaat versleutelen | Microsoft Intune
+title: Uw apparaat versleutelen | Microsoft Docs
 description: Informatie over hoe u een Android-apparaat kunt versleutelen
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
-ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
 
 
 ---
@@ -39,7 +39,7 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
 - De versleutelingsknop is uitgeschakeld.
 - Er wordt een bericht weergegeven dat u nog moet versleutelen.
-- Er treden fouten op bij het gebruik van de bedrijfsportalapp.
+- Er treden fouten op bij het gebruik van de bedrijfsportal-app.
 
 **Wat u kunt doen**
 
@@ -55,12 +55,12 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
     4. Kies een pincode (u kunt dezelfde invoeren als die u eerder hebt opgegeven) en tik op **Uw pincode bevestigen**.
 
-    5. Open de bedrijfsportalapp, selecteer uw apparaat en tik op **Naleving controleren**.
+    5. Open de bedrijfsportal-app, selecteer uw apparaat en tik op **Naleving controleren**.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het [Microsoft Android-team](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

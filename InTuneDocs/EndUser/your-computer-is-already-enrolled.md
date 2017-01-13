@@ -1,5 +1,5 @@
 ---
-title: Uw computer is al geregistreerd | Microsoft Intune
+title: Uw computer is al geregistreerd | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
-ms.openlocfilehash: 6ea001a00007a323c88f2f384bc768edc06eaa87
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 05460d23dce69be00f5f440be07a0b3c08d27280
 
 
 ---
@@ -35,10 +35,10 @@ De computer koppelen:
 
 Als u de registratie van uw apparaat ongedaan wilt maken, volgt u de instructies voor het type apparaat dat u hebt: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) of [Windows](unenroll-your-device-from-intune-windows.md).
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

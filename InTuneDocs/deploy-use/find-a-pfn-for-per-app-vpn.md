@@ -1,5 +1,5 @@
 ---
-title: Een Package Family Name (PFN) voor VPN per app zoeken |Microsoft Intune
+title: Een Package Family Name (PFN) voor VPN per app zoeken |Microsoft Docs
 description: Een PFN zoeken, zodat u VPN per app kunt configureren.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
 
 
 ---
 
-# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
+# <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Er zijn twee manieren om een PFN te zoeken, zodat u een VPN per app kunt instellen.
 
@@ -86,6 +88,6 @@ In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

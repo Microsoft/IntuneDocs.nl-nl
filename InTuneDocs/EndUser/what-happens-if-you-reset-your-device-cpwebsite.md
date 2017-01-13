@@ -1,5 +1,5 @@
 ---
-title: Wat gebeurt er als u uw apparaat opnieuw instelt? | Microsoft Intune
+title: Wat gebeurt er als u uw apparaat opnieuw instelt? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d068790b167aff2bd70bf633994fac0ce1938fac
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 102a10e5942011e8de2c43bf169adafd65d6f351
 
 
 ---
@@ -32,6 +32,6 @@ Kies de koppeling die overeenkomt met het type apparaat dat u gebruikt voor aanv
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

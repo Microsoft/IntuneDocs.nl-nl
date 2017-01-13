@@ -1,11 +1,11 @@
 ---
-title: "Software-updates voor Windows-pc’s | Microsoft Intune"
+title: Software-updates voor Windows-pc&quot;s | Microsoft Docs
 description: "Intune houdt uw beheerde computers bijgewerkt door ervoor te zorgen dat de meest recente patches en software-updates snel worden geïnstalleerd."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6878d8a4e95280cfd8a919efa4c2f1651ca14024
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 14ef9f901969449ca8b3c60a187da6b6e654bd67
 
 
 ---
 
-# Windows-pc’s up-to-date houden met software-updates in Microsoft Intune
+# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows-pc’s up-to-date houden met software-updates in Microsoft Intune
 Met Microsoft Intune kunt u beheerde computers op een aantal manieren helpen beveiligen. Zo kunt u software-updates beheren die de computers up-to-date houden door ervoor te zorgen dat de nieuwste patches en software-updates snel worden geïnstalleerd.
 
 Zie [De Windows-pc-client installeren met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de Intune-client nog niet op uw computers hebt geïnstalleerd.
@@ -34,10 +34,10 @@ Nadat updates zijn goedgekeurd en geïnstalleerd, kunt u in de werkruimte **Upda
 
 In de volgende secties vindt u informatie om de software op de beheerde computers up-to-date te houden.
 
-## Voordat u begint
+## <a name="before-you-start"></a>Voordat u begint
 Configureer en implementeer beleidsregels voor uw computers om te bepalen wanneer en hoe updates worden geïnstalleerd, voordat u begint met het maken en goedkeuren van software-updates.
 
-### Instellingen voor updatebeleid configureren
+### <a name="to-configure-update-policy-settings"></a>Instellingen voor updatebeleid configureren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
 
@@ -48,16 +48,16 @@ De volgende tabel biedt een overzicht van de waarden die u kunt configureren in 
   |Beleidsinstelling|Details|
     |------------------|--------------------|
     |**Detectiefrequentie in uren van updates en toepassingen** |Hiermee geeft u het interval aan (tussen 8 en 22 uur) tussen opeenvolgende controles van Intune op nieuwe updates en toepassingen.<br /><br />Aanbevolen waarde: **8** uur.|
-    |**Updates en toepassingen automatisch of na vragen aan gebruiker installeren** |Geeft aan dat updates automatisch worden geïnstalleerd of dat de gebruiker om bevestiging wordt gevraagd voordat de installatie wordt uitgevoerd. Bovendien kunt u met deze instelling de installatie van updates en toepassingen plannen.<br /><br />Met **Updates en toepassingen automatisch installeren zoals gepland** worden updates en toepassingen geïnstalleerd op basis van de ingestelde planning.<br /><br />Als afhankelijke beleidsinstelling bepaalt **Automatische onderhoud voor Windows-computers gebruiken**  dat updates en toepassingen worden geïnstalleerd tijdens de periode voor automatisch onderhoud van Windows.<br /><br />Met **Gebruiker vragen voor installatie** wordt de gebruiker gevraagd om updates te installeren wanneer deze gereed zijn.<br /><br />Aanbevolen waarden:<br /><br />**Updates en applicaties automatisch installeren zoals gepland** is geselecteerd<br /><br />**Geplande dag: elke dag**<br /><br />**Geplande tijd: 3:00 uur**<br /><br />**Automatisch onderhoud voor Windows-computers gebruiken** is geselecteerd|
+    |**Updates en toepassingen automatisch of na bevestiging installeren** |Geeft aan dat updates automatisch worden geïnstalleerd of dat de gebruiker om bevestiging wordt gevraagd voordat de installatie wordt uitgevoerd. Bovendien kunt u met deze instelling de installatie van updates en toepassingen plannen.<br /><br />Met **Updates en toepassingen automatisch installeren zoals gepland** worden updates en toepassingen geïnstalleerd op basis van de ingestelde planning.<br /><br />Als afhankelijke beleidsinstelling bepaalt **Automatische onderhoud voor Windows-computers gebruiken**  dat updates en toepassingen worden geïnstalleerd tijdens de periode voor automatisch onderhoud van Windows.<br /><br />Met **Gebruiker vragen voor installatie** wordt de gebruiker gevraagd om updates te installeren wanneer deze gereed zijn.<br /><br />Aanbevolen waarden:<br /><br />**Updates en applicaties automatisch installeren zoals gepland** is geselecteerd<br /><br />**Geplande dag: elke dag**<br /><br />**Geplande tijd: 3:00 uur**<br /><br />**Automatisch onderhoud voor Windows-computers gebruiken** is geselecteerd|
     |**Directe installatie toestaan van updates die Windows niet onderbreken** |Met **Toestaan** worden updates onmiddellijk geïnstalleerd nadat ze zijn gedownload, met uitzondering van updates waarvoor Windows wordt onderbroken of opnieuw moet worden gestart. Deze updates worden geïnstalleerd volgens de configuratie van de instelling **Updates en toepassingen automatisch of na vragen aan gebruiker installeren** .<br /><br />Met **Niet toestaan** worden updates geïnstalleerd volgens de configuratie van de instelling **Updates en toepassingen automatisch of na vragen aan gebruiker installeren**.<br /><br />Aanbevolen waarde: **Toestaan** |
     |**Windows opnieuw starten uitstellen na installatie van geplande updates en toepassingen (minuten)** |Geeft aan hoe lang (van 1 tot 30 minuten) moet worden gewacht om Windows opnieuw te starten na de installatie van geplande updates en toepassingen.<br /><br />Aanbevolen waarde: **15 minuten** |
-    |**Vertraging in minuten na het opnieuw opstarten van Windows voordat de installatie van overgeslagen geplande updates en toepassingen wordt gestart** |Geeft aan hoe lang (van 1 tot 60 minuten) moet worden gewacht om de installatie van updates en toepassingen te starten nadat Windows opnieuw is gestart, als een geplande update is overgeslagen.<br /><br />Aanbevolen waarde: **5 minuten**|
-    |**Aangemelde gebruiker mag bepalen wanneer Windows opnieuw wordt opgestart na de installatie van geplande updates en toepassingen** |Hiermee geeft u aan dat de aangemelde gebruiker het opnieuw starten van Windows kan uitstellen (indien ingesteld op **Ja**), of dat er wordt gemeld dat Windows automatisch opnieuw wordt gestart (indien ingesteld op **Nee**). Als er geen gebruiker is aangemeld wanneer de geplande installatie van updates en toepassingen is voltooid, wordt Windows indien nodig automatisch opnieuw gestart. Als **Nee**is geselecteerd, wordt Windows standaard opnieuw gestart na 5 minuten.<br /><br />Aanbevolen waarde: **Ja**|
+    |**Vertraging in minuten na het opnieuw starten van Windows voordat de installatie van overgeslagen geplande updates en toepassingen wordt gestart** |Geeft aan hoe lang (van 1 tot 60 minuten) moet worden gewacht om de installatie van updates en toepassingen te starten nadat Windows opnieuw is gestart, als een geplande update is overgeslagen.<br /><br />Aanbevolen waarde: **5 minuten**|
+    |**Aangemelde gebruiker mag bepalen wanneer Windows opnieuw wordt gestart na installatie van geplande updates en toepassingen** |Hiermee geeft u aan dat de aangemelde gebruiker het opnieuw starten van Windows kan uitstellen (indien ingesteld op **Ja**), of dat er wordt gemeld dat Windows automatisch opnieuw wordt gestart (indien ingesteld op **Nee**). Als er geen gebruiker is aangemeld wanneer de geplande installatie van updates en toepassingen is voltooid, wordt Windows indien nodig automatisch opnieuw gestart. Als **Nee**is geselecteerd, wordt Windows standaard opnieuw gestart na 5 minuten.<br /><br />Aanbevolen waarde: **Ja**|
     |**Gebruiker vragen Windows opnieuw te starten tijdens verplichte updates van de Intune-clientagent** |Hiermee geeft u aan of aangemelde gebruikers wordt gevraagd Windows opnieuw te starten wanneer dit is vereist vanwege een verplichte update van de Intune-client.<br /><br />Aanbevolen waarde: **Ja**|
     |**Installatieschema voor verplichte updates van Microsoft Intune-clientagent** |Bepaalt wanneer de installatie van clientupdates wordt uitgevoerd.<br /><br />Aanbevolen waarde: niet geconfigureerd|
-    |**Vertraging in minuten tussen prompts om Windows opnieuw op te starten na de installatie van geplande updates en toepassingen** |Geeft het interval aan (minimaal 1 minuut en maximaal 1440 minuten) tussen opeenvolgende vragen om Windows opnieuw te starten wanneer een geplande update of toepassing waarvoor Windows opnieuw moet worden gestart, is geïnstalleerd en de gebruiker het opnieuw starten uitstelt.<br /><br />Aanbevolen waarde: **30 minuten** |
+    |**Vertraging in minuten tussen prompts om Windows opnieuw te starten na de installatie van geplande updates en toepassingen** |Geeft het interval aan (minimaal 1 minuut en maximaal 1440 minuten) tussen opeenvolgende vragen om Windows opnieuw te starten wanneer een geplande update of toepassing waarvoor Windows opnieuw moet worden gestart, is geïnstalleerd en de gebruiker het opnieuw starten uitstelt.<br /><br />Aanbevolen waarde: **30 minuten** |
 
-## Software bijwerken die is gemaakt door Microsoft
+## <a name="update-software-made-by-microsoft"></a>Software bijwerken die is gemaakt door Microsoft
 U hoeft zelf niet veel te doen om Microsoft-software bij te werken. Voordat u begint, zijn er echter twee instellingen die u moet configureren:
 
 -   **Productcategorieën en updateclassificaties** – Bepaalt de categorieën en classificaties van de updates die u beschikbaar wilt maken voor computers. U kunt bijvoorbeeld bepalen dat alleen essentiële updates voor Microsoft Office worden geïnstalleerd.
@@ -66,7 +66,7 @@ U hoeft zelf niet veel te doen om Microsoft-software bij te werken. Voordat u be
 
 Met de volgende twee procedures kunt u zich voorbereiden op het gebruik van software-updates:
 
-### De productcategorieën en updateclassificaties configureren die u beschikbaar wilt maken voor beheerde computers
+### <a name="configure-the-product-categories-and-update-classifications-you-want-to-make-available-to-managed-computers"></a>De productcategorieën en updateclassificaties configureren die u beschikbaar wilt maken voor beheerde computers
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
@@ -79,7 +79,7 @@ Met de volgende twee procedures kunt u zich voorbereiden op het gebruik van soft
 
 4.  Klik op **Opslaan** om uw selecties op te slaan.
 
-### Automatische goedkeuringsregels voor software-updates configureren
+### <a name="to-configure-automatic-approval-rules-for-software-updates"></a>Automatische goedkeuringsregels voor software-updates configureren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
@@ -110,7 +110,7 @@ De nieuwe regel wordt weergegeven in de sectie **Automatische goedkeuringsregels
 > Wanneer u een automatische goedkeuringsregel maakt, worden alleen toekomstige updates goedgekeurd. Eerdere updates die al bestaan in Intune, worden niet automatisch goedgekeurd. Als u ook deze updates wilt goedkeuren, moet u de automatische goedkeuringsregel uitvoeren.
 
 
-### Een automatische goedkeuringsregel voor updates bewerken, uitvoeren of verwijderen
+### <a name="to-edit-run-or-delete-an-automatically-approved-update-rule"></a>Een automatische goedkeuringsregel voor updates bewerken, uitvoeren of verwijderen
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
@@ -125,10 +125,10 @@ De nieuwe regel wordt weergegeven in de sectie **Automatische goedkeuringsregels
         > [!NOTE]
         > Het verwijderen van een regel is niet van invloed op eerdere updates die zijn goedgekeurd door de verwijderde regel.
 
-## Software bijwerken die niet door Microsoft is gemaakt
+## <a name="update-software-not-made-by-microsoft"></a>Software bijwerken die niet door Microsoft is gemaakt
 U kunt ook updates implementeren voor software die niet door Microsoft is gemaakt. U kunt hiervoor de wizard **Update uploaden** gebruiken om de update naar uw opslagruimte in de cloud te verplaatsen. Vervolgens kunt u de update goedkeuren of weigeren net zoals voor de software van Microsoft.
 
-### Updates van derden uploaden en configureren
+### <a name="to-upload-and-configure-a-third-party-update"></a>Updates van derden uploaden en configureren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Uploaden**.
 
@@ -188,7 +188,7 @@ De geüploade update wordt opgeslagen in de cloudopslag van uw Intune-account. A
 
 Nadat de update is geüpload naar Intune, wordt in de werkruimte **Updates** van het deelvenster **Alle updates** een update van derden weergegeven. U kunt de update vervolgens goedkeuren en implementeren. Zie de volgende sectie Updates goedkeuren en weigeren voor meer informatie.
 
-## Updates goedkeuren en weigeren
+## <a name="approve-and-decline-updates"></a>Updates goedkeuren en weigeren
 Wanneer updates gereed zijn om te worden geïnstalleerd, wordt op de pagina **Overzicht** in de werkruimte **Updates** een bericht weergegeven onder **Updatestatus**. Kies dit bericht om de pagina **Alle updates** te openen en te controleren welke updates klaar zijn om te worden goedgekeurd.
 
 U kunt de vervolgkeuzelijst **Filters** gebruiken om updates makkelijker te vinden. Zo kunt u bijvoorbeeld eenvoudig alleen de updates weergeven die zijn mislukt of alleen de updates die zijn vervangen.
@@ -204,7 +204,7 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 |**Verwijderen**|Alleen voor niet-Microsoft-updates. De geselecteerde update verwijderen.|
 |**Uploaden**|Hiermee start u de wizard **Update uploaden**, waarmee u niet-Microsoft-updates kunt uploaden die u wilt implementeren.|
 
-### Updates goedkeuren
+### <a name="to-approve-updates"></a>Updates goedkeuren
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Nieuwe goed te keuren updates**.
 
@@ -250,11 +250,11 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 6.  Controleer het detailvenster onder aan de pagina **Alle updates** op herinneringsberichten voor de update.
 
 
-### Zie ook
+### <a name="see-also"></a>Zie tevens
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

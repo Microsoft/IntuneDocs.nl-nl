@@ -1,5 +1,5 @@
 ---
-title: "Andere opties en extra’s voor de Intune-evaluatieversies | Microsoft Intune"
+title: Andere opties en extra&quot;s voor de Intune-evaluatieversies | Microsoft Docs
 description: Beschrijving van waarschuwingen, meldingen en rapporten, plus algemene mogelijkheden van Intune die u moet weten wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
@@ -13,13 +13,15 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Andere opties en extra’s voor de Intune-evaluatieversie
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>Waarschuwingen, meldingen en rapporten
 In de Intune-beheerconsole worden **waarschuwingen** gebruikt om snel inzicht te krijgen in de algemene status van beheerde apparaten in uw organisatie. U kunt waarschuwingen configureren en aanpassen zodat ze alleen de informatie rapporteren en weergeven die u nodig hebt voor uw organisatie. U kunt instellen of een waarschuwing is ingeschakeld of uitgeschakeld, de ernst configureren, de weergavedrempel gebruiken om te bepalen hoe vaak een waarschuwingsgebeurtenis moet worden geactiveerd voordat een waarschuwing wordt weergegeven en ook instellingen configureren die specifiek zijn voor bepaalde waarschuwingstypen.
@@ -56,6 +58,6 @@ Overstappen op een [betaald abonnement](get-started-with-a-30-day-trial-of-micro
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Uw pincode of wachtwoord instellen| Microsoft Intune
+title: Uw pincode of wachtwoord instellen| Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 9d70549b2a2c30bb7d3e056550ad75848433d885
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
 
 
 ---
@@ -32,10 +32,10 @@ U kunt de volgende stappen gebruiken om een pincode of wachtwoord in te stellen.
 2.  Kies en bevestig uw nieuwe wachtwoord.
 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

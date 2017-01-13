@@ -1,11 +1,11 @@
 ---
-title: De inschrijving van uw Android-apparaat bij Intune ongedaan maken | Microsoft Intune
+title: De inschrijving van uw Android-apparaat bij Intune ongedaan maken | Microsoft Docs
 description: Hierin wordt beschreven hoe u de inschrijving van een Android-apparaat bij Intune ongedaan kunt maken
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
+ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
+ms.openlocfilehash: 098fc108bb423f80a52e27fabfe2dfeb0124d72e
 
 
 ---
@@ -25,11 +25,11 @@ ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
 
 Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, heeft het apparaat geen toegang meer tot de bedrijfsbronnen.  Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt wanneer u de registratie van uw apparaat ongedaan maakt.
 
-Als u de registratie uw apparaat bij Intune ongedaan wilt maken en de bedrijfsportalapp wilt verwijderen, voert u de volgende stappen uit of bekijkt u deze video:
+Als u de registratie uw apparaat bij Intune ongedaan wilt maken en de bedrijfsportal-app wilt verwijderen, voert u de volgende stappen uit of bekijkt u deze video:
 
 <iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
-1.  Meld u aan bij de bedrijfsportalapp.
+1.  Meld u aan bij de bedrijfsportal-app.
 
 2.  Tik op **Mijn apparaten** en selecteer het apparaat waarvan u de registratie ongedaan wilt maken.
 
@@ -43,10 +43,10 @@ Als u de registratie uw apparaat bij Intune ongedaan wilt maken en de bedrijfspo
 
     ![Verwijder het apparaat.](./media/andr-3-warning-about-remove.png)
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

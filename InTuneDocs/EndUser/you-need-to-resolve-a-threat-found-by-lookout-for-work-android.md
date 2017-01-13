@@ -1,5 +1,5 @@
 ---
-title: U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden | Microsoft Intune
+title: U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b6f8cf9eda8983b8bfe4edd8fca6e6872e0c8103
 
 
 ---
@@ -43,12 +43,12 @@ Als u een app hebt geïnstalleerd die volgens Lookout for Work een bedreiging vo
 
 Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

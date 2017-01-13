@@ -1,5 +1,5 @@
 ---
-title: Uw Windows 8.1- of Windows RT 8.1-apparaat inschrijven | Microsoft Intune
+title: Uw Windows 8.1- of Windows RT 8.1-apparaat inschrijven | Microsoft Docs
 description: Informatie over hoe u een Windows 8.1 of Windows RT 8.1-apparaat bij Intune kunt inschrijven
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d0a773edf51214ac9f921c17185b32f6b3fbf287
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 
 # <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Uw Windows 8.1- of Windows RT 8.1-apparaat registreren bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportalapp installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
 
 
 Ga als volgt te werk om uw Windows 8.1- of Windows RT 8.1-apparaat te registreren:
@@ -52,7 +52,7 @@ Ga als volgt te werk om uw Windows 8.1- of Windows RT 8.1-apparaat te registrere
 
     ![registratie-voltooid](./media/W81-5-enrolled-done.png)
 
-Het wordt ook aangeraden de bedrijfsportalapp te installeren, waarmee u eenvoudig de bedrijfsapps die relevant zijn voor u en uw rol kunt identificeren en downloaden. Afhankelijk van hoe uw bedrijf Intune heeft ingesteld, is de bedrijfsportalapp mogelijk geïnstalleerd als onderdeel van het registratieproces. Als u wilt controleren of u de app hebt, zoekt u naar **Bedrijfsportal** in de lijst met apps. Als u Bedrijfsportal niet in de lijst met apps ziet, volgt u deze stappen om het te installeren.
+Het wordt ook aangeraden de bedrijfsportal-app te installeren, waarmee u eenvoudig de bedrijfsapps die relevant zijn voor u en uw rol kunt identificeren en downloaden. Afhankelijk van hoe uw bedrijf Intune heeft ingesteld, is de bedrijfsportal-app mogelijk geïnstalleerd als onderdeel van het registratieproces. Als u wilt controleren of u de app hebt, zoekt u naar **Bedrijfsportal** in de lijst met apps. Als u Bedrijfsportal niet in de lijst met apps ziet, volgt u deze stappen om het te installeren.
 
 1.  Tik op **Start** &gt; **Store**.
 
@@ -62,10 +62,10 @@ Het wordt ook aangeraden de bedrijfsportalapp te installeren, waarmee u eenvoudi
 
 4.  Tik op **Installeren** of **Gratis**. De optie die wordt weergegeven is afhankelijk van hoe de app binnen uw bedrijf is ingesteld.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

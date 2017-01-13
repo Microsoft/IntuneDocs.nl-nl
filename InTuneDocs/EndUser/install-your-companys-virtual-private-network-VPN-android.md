@@ -1,5 +1,5 @@
 ---
-title: Het virtuele particuliere netwerk (VPN) van uw bedrijf installeren | Microsoft Intune
+title: Het virtuele particuliere netwerk (VPN) van uw bedrijf installeren | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: f82bc74083f522498425af3a01bf11300b8133ea
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 0df9d0bd3281fac683a5b5b27b320fd17e0f32b6
 
 
 ---
@@ -33,12 +33,12 @@ Als uw IT-beheerder een VPN-toepassing heeft geïmplementeerd waarmee u verbindi
 3.  Tik op **VPN-bedrijfsprofiel installeren** en volg de aanwijzingen. De installatiestappen mogelijk enigszins verschillen, afhankelijk van welke VPN-provider uw bedrijf gebruikt.
 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

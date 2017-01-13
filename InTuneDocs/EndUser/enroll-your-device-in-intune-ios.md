@@ -1,5 +1,5 @@
 ---
-title: Uw iOS-apparaat registreren bij Intune | Microsoft Intune
+title: Uw iOS-apparaat registreren bij Intune | Microsoft Docs
 description: Informatie over hoe u een iOS-apparaat bij Intune kunt inschrijven
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58295c0e27c6c74a1efb9771e0fe8fb917c6cca6
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 # <a name="enroll-your-ios-device-in-intune"></a>Uw iOS-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) als u probeert een Mac OS-apparaat te registreren.
 
@@ -37,7 +37,7 @@ Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-mac
 
 **Ga als volgt te werk om uw iOS-apparaat te registreren:**
 
-1.  Volg de stappen in [De Intune-bedrijfsportalapp installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+1.  Volg de stappen in [De Intune-bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 2. Tik op de pagina **Instellen van bedrijfstoegang** op **Starten**.
 
@@ -89,10 +89,10 @@ Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-mac
 
     ![ios-registreren-tik-op-gereed](./media/ios-enroll-9-comp-access-setup-complete.png)
 
-Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsportalapp.
+Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsportal-app.
 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 

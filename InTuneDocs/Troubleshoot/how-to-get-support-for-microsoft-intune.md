@@ -1,5 +1,5 @@
 ---
-title: Ondersteuning krijgen | Microsoft Intune
+title: Ondersteuning krijgen | Microsoft Docs
 description: Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen.
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c97ecfbb7b8ec7d76bead6a553df402f24296307
-ms.openlocfilehash: 9e976973b6230b985a6e9ae4331f452bc43e1a9a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
 
 
 ---
 
 # <a name="how-to-get-admin-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnementsondersteuning voor Microsoft Intune. Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen. Online technische ondersteuning is beschikbaar in het Engels en Japans. Telefonische ondersteuning en online-ondersteuning bij factureren zijn in meer talen beschikbaar.
 
@@ -114,6 +116,6 @@ Als u al licenties van Microsoft hebt aangeschaft onder een volumelicentieprogra
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

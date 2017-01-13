@@ -1,11 +1,11 @@
 ---
-title: U moet uw apparaat upgraden om de Outlook-app te installeren | Microsoft Intune
+title: U moet uw apparaat upgraden | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vadona
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 9219829cf73cbd141a165f88b30f564f857e2b5d
+ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
+ms.openlocfilehash: 8ef336e58c7b1d995d314202b5530d2f6b2ff138
 
 
 ---
 
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>U moet uw apparaat upgraden om de Outlook-app te installeren
 
-Als u probeert de Outlook-e-mail-app te downloaden en u een bericht ziet waarin staat dat de versie van uw Android- of iOS-besturingssysteem niet voldoet aan de minimumvereisten, moet u uw apparaat upgraden voordat u doorgaat.
+De Outlook-app helpt miljoenen gebruikers om verbinding te maken met al hun e-mailaccounts, agenda's en bestanden op één handige locatie voor zowel [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8)- als [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook)-apparaten.
 
-Volg de onderstaande instructies voor het type apparaat dat u gebruikt om de upgrade uit te voeren:
+Als u Outlook probeert te downloaden, wordt er geen installatie uitgevoerd, maar wordt in plaats daarvan een bericht op het apparaat weergegeven dat aangeeft dat het besturingssysteem van het apparaat niet actueel genoeg is. U moet uw apparaat upgraden om Outlook te kunnen installeren.
 
-## <a name="to-upgrade-your-android-device"></a>Uw Android-apparaat upgraden
+## <a name="if-you-have-an-android-device"></a>Als u een Android-apparaat hebt
 Ga naar **Instellingen** en gebruik vervolgens de optie **Bijwerken** of **Systeemupdate**.
 
-## <a name="to-upgrade-your-ios-device"></a>Uw iOS-apparaat upgraden
-Ga naar **Instellingen** &gt; **Algemeen** &gt; **Software-update**.
+## <a name="if-you-have-an-ios-device"></a>Als u een iOS-apparaat hebt
+Tik op **Instellingen** > **Algemeen** > **Software-update**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

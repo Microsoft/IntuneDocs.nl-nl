@@ -1,11 +1,11 @@
 ---
-title: Meervoudige verificatie voor Windows | Microsoft Intune
+title: Meervoudige verificatie voor Windows | Microsoft Docs
 description: Intune integreert meervoudige verificatie (multi-factor authentication, MFA) om te helpen uw bedrijfsbronnen te beveiligen.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: cc60ffb2cd7a1d0cad141712ba7e2341954b1f02
 
 
 ---
 
-# <a name="protect-windows-devices-with-multi-factor-authentication"></a>Protect Windows devices with multi-factor authentication
+# <a name="protect-windows-devices-with-multi-factor-authentication"></a>Windows-apparaten beveiligen met meervoudige verificatie (multi-factor authentication, MFA)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune integreert meervoudige verificatie (multi-factor authentication, MFA) om te helpen uw bedrijfsbronnen te beveiligen. MFA vereist naast gebruikersnamen en wachtwoorden, ook andere verificatiefactoren, zoals tekstverificatie. Intune ondersteunt het gebruik van MFA tijdens registratie van Windows 8.1 of hoger, Windows Phone 8.1 en Windows 10 op desktopapparaten en mobiele apparaten.
+
+>[!NOTE]
+>
+>MFA kan per gebruiker of per groep worden verplicht op de ADFS-server.  
+
 
 ## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>Vereisten voor lokale infrastructuur voor ADFS MFA
 Als u Multi-Factor Authentication wilt instellen, hebt u nodig:
@@ -40,6 +48,7 @@ De servers moeten voldoen aan de systeemvereisten in [Systeemvereisten en instal
 Als uw organisatie een lokale IT-infrastructuur heeft met een Active Directory-domein met Active Directory Federation Services (ADFS), kunt u MFA instellen op de federatieserver en vervolgens MFA inschakelen voor inschrijving in Intune. Als u MFA in Intune instelt, hoeven gebruikers tijdens de inschrijving slechts één keer de verificatieprocedure te doorlopen en hebben zij daarna toegang tot bedrijfsbronnen zonder dat de MFA-procedure telkens hoeft te worden herhaald.
 
 >[!NOTE]
+>
 >MFA kan per gebruiker of per groep worden verplicht op de ADFS-server.  
 
 #### <a name="mfa-without-intune"></a>MFA zonder Intune
@@ -60,6 +69,6 @@ Zie [Manage Risk with Additional Multi-Factor Authentication for Sensitive Appli
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

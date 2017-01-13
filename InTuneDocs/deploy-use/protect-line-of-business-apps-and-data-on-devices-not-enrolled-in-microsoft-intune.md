@@ -1,5 +1,5 @@
 ---
-title: Line-Of-Business-apps beveiligen op apparaten die niet zijn geregistreerd | Microsoft Intune
+title: Line-Of-Business-apps beveiligen op apparaten die niet zijn geregistreerd | Microsoft Docs
 description: In dit onderwerp wordt beschreven hoe u uw aangepaste Line-Of-Business-apps kunt voorbereiden, zodat u Mobile Device Management-beleidsregels kunt toepassen om gegevensverlies te voorkomen.
 keywords: 
 author: mtillman
@@ -14,22 +14,24 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 
 
 ---
 
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune
 
-MAM-beleid (Mobile Application Management) helpt bedrijfsgegevens beschermen door acties te beperken die kunnen leiden tot het lekken van bedrijfsgegevens en door het afdwingen van vereisten voor gegevenstoegang, zoals een app-pincode. Als u MAM-beleid wilt toepassen op iOS en Android Line-Of-Business-apps, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool. App-wrapping is het proces waarbij een beheerlaag wordt toegepast op een mobiele app zonder dat de onderliggende toepassing hoeft te worden gewijzigd. Nadat de app is ingepakt, kunt u MAM-beleid op de app toepassen en deze distribueren naar uw gebruikers.  
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+MAM-beleid (Mobile Application Management) helpt bedrijfsgegevens beschermen door acties te beperken die kunnen leiden tot het lekken van bedrijfsgegevens en door het afdwingen van vereisten voor gegevenstoegang, zoals een app-pincode. Als u MAM-beleid wilt toepassen op iOS en Android Line-Of-Business-apps, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool. App-wrapping is het proces waarbij een beheerlaag wordt toegepast op een mobiele app zonder dat de onderliggende toepassing hoeft te worden gewijzigd. Nadat de app is verpakt, kunt u MAM-beleid op de app toepassen en deze distribueren naar uw gebruikers.  
 
 In dit onderwerp wordt uitgelegd wat de vereiste stappen zijn om MAM-beleid toe te passen voor apps die worden geopend op **apparaten in eigendom van de werknemer die niet worden beheerd** en op apparaten die worden beheerd met een **MDM-oplossing (Mobile Device Management) van derden**.  Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) om uw Line-Of-Business-apps voor te bereiden die worden uitgevoerd op **apparaten die zijn geregistreerd bij Intune MDM**.
 
 
 ##  <a name="step-1-prepare-the-app"></a>Stap 1: De app voorbereiden
 
-Voordat u MAM-beleidsregels op een app kunt toepassen, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool voor [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) of de [Intune App SDK](../develop/intune-app-sdk.md) gebruiken om handmatig de beveiligingsfuncties voor Intune-apps te integreren.
+Voordat u MAM-beleidsregels op een app kunt toepassen, moet u de app eerst verpakken met de Microsoft Intune App Wrapping Tool voor [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) of de [Intune App SDK](../develop/intune-app-sdk.md) gebruiken om handmatig de beveiligingsfuncties voor Intune-apps te integreren.
 
 Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)voor meer informatie over het gebruik van de App Wrapping Tool versus de Intune App SDK.
 
@@ -54,7 +56,7 @@ Als u de Line-Of-Business-app wilt koppelen aan MAM-beleid, voert u de volgende 
 Nadat de metagegevens van de app zijn geüpload naar de service, wordt de app weergegeven in de lijst met apps. U kunt nu [een nieuw beleid of een bestaand beleid maken of een bestaand beleid gebruiken](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) en dit toepassen op de Line-Of-Business-app die u hebt toegevoegd in stap 2.
 
 >[!IMPORTANT]
->U moet het MAM-beleid toepassen op de gebruikers die de ingepakte app gaan gebruiken.  Gebruikers waarvoor dit beleid niet wordt geïmplementeerd, kunnen deze app niet gebruiken.
+>U moet het MAM-beleid toepassen op de gebruikers die de verpakte app gaan gebruiken.  Gebruikers waarvoor dit beleid niet wordt geïmplementeerd, kunnen deze app niet gebruiken.
 
 
   ![Schermafbeelding van de blade Doellijst met apps, waarin de nieuwe Line-Of-Business-app wordt weergegeven](../media/mam-azure-portal-lob-on-targeted-app-list.png)

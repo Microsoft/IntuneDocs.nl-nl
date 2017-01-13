@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector voor Exchange Online | Microsoft Intune
+title: Exchange Connector voor Exchange Online | Microsoft Docs
 description: Verbinding maken met Intune Office 365 Exchange-service voor ondersteuning van Exchange ActiveSync MDM (beheer van mobiele apparaten).
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
 
 
 ---
 
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>De Intune Service to Service Connector configureren voor Exchange Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Gebruik deze informatie om verbinding te maken met Microsoft Intune en Exchange Online of de nieuwe Exchange Online Dedicated-service. Neem contact op met uw accountmanager om te bepalen of uw Exchange Online Dedicated-omgeving de **nieuwe** of **verouderde** versie is. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
 

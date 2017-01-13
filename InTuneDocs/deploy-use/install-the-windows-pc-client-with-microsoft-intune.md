@@ -1,9 +1,10 @@
 ---
 
-title: De pc-clientsoftware installeren | Microsoft Intune
+title: De pc-clientsoftware installeren | Microsoft Docs
 description: Gebruik deze handleiding om uw Windows-pc&quot;s te laten beheren door de Microsoft Intune-clientsoftware.
 keywords: 
 author: staciebarker
+ms.author: stabar
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
-ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
+ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
+ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 
 ---
@@ -138,6 +139,6 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: De naam van een apparaat wijzigen op de website van de bedrijfsportal | Microsoft Intune
+title: De naam van een apparaat wijzigen op de website van de bedrijfsportal | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a7a5faffc77d1b55bcb0216f0c87aeba2e12bda7
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
 
 
 ---
@@ -36,10 +36,10 @@ Ga als volgt te werk om de naam van uw apparaat te wijzigen:
 
 3.  Typ de nieuwe naam voor uw apparaat in het vak waar de huidige apparaatnaam wordt weergegeven en tik vervolgens op de knop **Wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

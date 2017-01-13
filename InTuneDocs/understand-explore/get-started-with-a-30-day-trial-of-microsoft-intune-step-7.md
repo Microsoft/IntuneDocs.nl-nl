@@ -1,5 +1,5 @@
 ---
-title: Overstappen op een betaald abonnement | Microsoft Intune
+title: Overstappen op een betaald abonnement | Microsoft Docs
 description: Wat u moet weten over abonnementen en licentieverlening na het instellen van uw evaluatieversie van Intune die u 30 dagen gratis mag gebruiken.
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a2b037e0c066422d53d71ffd401deb3e48a2ba7f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
 
 
 ---
 
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>Manieren om u te abonneren op Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Als u ten minste 150 licenties voor Microsoft Intune koopt binnen een abonnement dat in aanmerking komt, kunt u gebruikmaken van de FastTrack Center Benefit, een service waarbij Microsoft-specialisten met u samenwerken om uw omgeving voor te bereiden voor Intune. Zie [FastTrack Center Benefit-proces voor Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 U kunt uw gratis Intune-evaluatieversie op de volgende manieren omzetten naar een betaald abonnement:
@@ -34,6 +37,6 @@ U kunt uw gratis Intune-evaluatieversie op de volgende manieren omzetten naar ee
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

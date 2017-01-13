@@ -1,5 +1,5 @@
 ---
-title: De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Intune
+title: De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
 
 
 ---
@@ -59,10 +59,10 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
     Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Beleid maken en een app publiceren voor gebruikers | Microsoft Intune
+title: Beleid maken en een app publiceren voor gebruikers | Microsoft Docs
 description: Zo kunt u beleidsregels maken en een app publiceren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Beleid maken en een app publiceren voor gebruikers van de evaluatieversie
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. Als u van plan bent om Intune na de evaluatie te gebruiken voor apparaten die u configureert voor gebruik in productieomgevingen, is het absoluut essentieel dat u de instructies volgt in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 U kunt twee typen app-installaties uitvoeren met Intune. De eerste is een **vereiste installatie**, waarbij de app automatisch wordt geïmplementeerd op beheerde apparaten. Het andere type is een **beschikbare installatie**, waarbij de app, of een koppeling naar de app, wordt geïmplementeerd in de Intune-bedrijfsportal, zodat gebruikers kunnen kiezen of ze deze willen installeren op hun computers of mobiele apparaten.
@@ -102,6 +105,6 @@ Overstappen op een [betaald abonnement](get-started-with-a-30-day-trial-of-micro
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

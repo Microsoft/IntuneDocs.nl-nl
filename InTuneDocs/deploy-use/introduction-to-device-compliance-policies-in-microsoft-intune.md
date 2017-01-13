@@ -1,5 +1,5 @@
 ---
-title: Nalevingsbeleid voor apparaten | Microsoft Intune
+title: Nalevingsbeleid voor apparaten | Microsoft Docs
 description: In dit onderwerp wordt uitgelegd wat het nalevingsbeleid voor apparaten is en hoe dit beleid werkt.
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Nalevingsbeleid voor apparaten in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>Wat is nalevingsbeleid?
 U moet er voor de beveiliging van bedrijfsgegevens voor zorgen dat de apparaten die worden gebruikt voor toegang tot bedrijfs-apps en- gegevens, voldoen aan bepaalde regels. Deze regels kunnen bijvoorbeeld zijn dat voor toegang tot apparaten een pincode moet worden opgegeven en dat gegevens op apparaten moeten zijn versleuteld. Een verzameling van dergelijke regels wordt een nalevingsbeleid genoemd.
 

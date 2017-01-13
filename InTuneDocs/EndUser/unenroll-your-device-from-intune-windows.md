@@ -1,5 +1,5 @@
 ---
-title: De inschrijving van uw Windows-apparaat bij Intune ongedaan maken | Microsoft Intune
+title: De inschrijving van uw Windows-apparaat bij Intune ongedaan maken | Microsoft Docs
 description: Hierin wordt beschreven hoe u de inschrijving van een Windows-apparaat bij Intune ongedaan kunt maken
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
 
 
 ---
@@ -61,10 +61,10 @@ Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de koppelin
 
 4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

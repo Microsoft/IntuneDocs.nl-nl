@@ -1,5 +1,5 @@
 ---
-title: Intune-licenties beheren met PowerShell | Microsoft Intune
+title: Intune-licenties beheren met PowerShell | Microsoft Docs
 description: Intune-licenties beheren met PowerShell
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6b5ea7323f08ae63ce37adedbf23b9fab31a6f55
 
 
 ---
 
 # <a name="manage-intune-licenses-using-powershell"></a>Intune-licenties beheren met PowerShell
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren voor beheer, moet u eerst aan elke gebruiker een licentie voor uw Intune-abonnement toewijzen, zoals is beschreven in [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) (Intune-licenties beheren). Echter, in organisaties die gebruikmaken van Enterprise Mobility + Security van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. Met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) kunt u één service of een subset van services toewijzen.
 
 Als u selectief gebruikerslicenties voor EMS-services wilt toewijzen, opent u PowerShell als beheerder op een computer waarop de [Azure Active Directory-module voor Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) is geïnstalleerd. U kunt PowerShell installeren op een lokale computer of op de ADFS-server.
@@ -68,6 +71,6 @@ Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

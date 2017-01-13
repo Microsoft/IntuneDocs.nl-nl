@@ -1,5 +1,5 @@
 ---
-title: Uw Windows-apparaat gebruiken met Intune | Microsoft Intune
+title: Uw Windows-apparaat gebruiken met Intune | Microsoft Docs
 description: Lijst met koppelingen naar taken die gebruikers op hun Windows-apparaat kunnen uitvoeren wanneer het apparaat bij Intune is ingeschreven
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -43,7 +43,7 @@ In deze sectie kunnen gebruikers lezen welke acties ze kunnen uitvoeren nadat hu
 - [Een wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)
 - [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-windows.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-windows.md)
-- [Wat gebeurt er als u de registratie van het apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+- [Wat gebeurt er als u de registratie van een apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 - [Wat gebeurt er als u een apparaat opnieuw instelt met behulp van de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [Het verzamelen van Microsoft-gebruiksgegevens uitschakelen](turn-off-microsoft-usage-data-collection-windows.md)
 - [Een apparaat handmatig synchroniseren](sync-your-device-manually-windows.md)
@@ -52,15 +52,15 @@ In deze sectie kunnen gebruikers lezen welke acties ze kunnen uitvoeren nadat hu
 
 De informatie in deze sectie helpt gebruikers bij het oplossen van problemen die mogelijk optreden wanneer een Windows-apparaat wordt geregistreerd bij Intune.
 
-- [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [Het apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [BitLocker is niet ingeschakeld op het apparaat](device-doesnt-have-bitlocker-enabled-windows.md)
-- [Op het apparaat is geen antimalwaresoftware ingeschakeld](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [Op het apparaat is Beveiligd opstarten niet ingeschakeld](device-doesnt-have-secure-boot-enabled-windows.md)
-- [Op het apparaat is Code-integriteit niet ingeschakeld](device-doesnt-have-code-integrity-enabled-windows.md)
+- [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](you-need-to-update-your-windows-device.md)
+- [Het apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie](your-windows-version-isnt-yet-supported.md)
+- [BitLocker is niet ingeschakeld op het apparaat](you-need-to-enable-windows-encryption.md)
+- [Op het apparaat is geen antimalwaresoftware ingeschakeld](your-device-needs-antimalware-software.md)
+- [Op het apparaat is Beveiligd opstarten niet ingeschakeld](you-need-to-enable-secure-boot-windows.md)
+- [Op het apparaat is Code-integriteit niet ingeschakeld](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

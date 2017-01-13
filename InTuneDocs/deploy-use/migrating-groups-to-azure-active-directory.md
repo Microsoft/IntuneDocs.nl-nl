@@ -1,120 +1,103 @@
 ---
-title: Migreren naar Azure Active Directory-groepen | Microsoft Intune
+title: Migreren naar Azure Active Directory-groepen | Microsoft Docs
 description: Hoe uw groepen worden gemigreerd van Intune naar Azure AD
 keywords: 
-author: Mtillman
-ms.author: mtillman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
-ms.date: 10/10/2016
+ms.date: 12/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e14bbadc4293b7b963197b35704a7170e4fc29e8
+ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
+ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
 
 
 ---
 
-## <a name="the-new-admin-experience-for-groups"></a>De nieuwe beheerderservaring voor groepen
-    
-Op basis van uw feedback, waaruit naar voren kwam dat u groepen graag op één uniforme manier wilt samenstellen en beheren binnen de hele Enterprise Mobility + Security-suite, gaan we Intune-groepen converteren naar Azure Active Directory-beveiligingsgroepen. Dit zal leiden tot een uniformer beheer van groepen voor zowel Intune als Azure Active Directory (Azure AD). Deze nieuwe manier van werken voorkomt dat u groepen moet dupliceren voor verschillende services en biedt uitbreidingsmogelijkheden met PowerShell en Graph. 
+# <a name="a-new-way-of-using-groups-in-intune"></a>Een nieuwe manier om groepen in Intune te gebruiken
 
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>Wanneer en hoe vindt mijn migratie naar deze nieuwe manier van werken met groepen plaats?
-Voor huidige klanten wordt de migratie gespreid over een langere periode, maar niet eerder dan december 2016. We sturen u een kennisgeving voordat uw groepen worden gemigreerd. Als u vragen of opmerkingen hebt over de migratie, kunt u contact opnemen met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-### <a name="what-new-features-will-be-available-to-me"></a>Welke nieuwe functies zijn er beschikbaar voor mij?
-Dit is de nieuwe functionaliteit die wordt geïntroduceerd: 
- 
--    Azure AD-beveiligingsgroepen worden ondersteund in Intune voor alle typen implementaties. 
--    Azure AD-beveiligingsgroepen ondersteunen het groeperen van apparaten samen met gebruikers.
--    Azure AD-beveiligingsgroepen ondersteunen dynamische groepen met Intune-apparaatkenmerken. U kunt apparaten bijvoorbeeld dynamisch groeperen op basis van hun platform, zoals iOS. Op die manier wordt een nieuw iOS-apparaat dat wordt ingeschreven in uw organisatie, automatisch toegevoegd aan de dynamische iOS-apparaatgroep.
--    Beheerders kunnen groepsbeheertaken in Azure AD en Intune op een uniforme manier uitvoeren.
-- De *Intune-servicebeheerdersrol* wordt toegevoegd aan Azure AD om servicebeheerders in Intune in staat te stellen beheertaken uit te voeren in Azure AD.
+We hebben op basis van uw feedback enkele wijzigingen doorgevoerd in de wijze waarop u werkt met groepen in Microsoft Intune.
+We zijn bezig met het migreren van de Intune-groepen van al onze klanten naar Azure Active Directory-beveiligingsgroepen.
 
- 
-### <a name="what-intune-functionality-wont-be-available"></a>Welke Intune-functionaliteit is straks niet meer beschikbaar?
-Hoewel het werken met groepen wordt verbeterd, zal bepaalde Intune-functionaliteit niet meer beschikbaar zijn na de migratie.
+Het voordeel voor u is dat u nu in al uw Enterprise Mobility + Security- en Azure AD-apps op dezelfde manier met groepen kunt werken. Bovendien kunt u gebruikmaken van PowerShell en Graph API om deze nieuwe functionaliteit uit te breiden en aan te passen.
 
-#### <a name="group-management-functionality"></a>Groepsbeheerfunctionaliteit
+Azure AD-beveiligingsgroepen ondersteunen alle typen Intune-implementaties voor zowel gebruikers als apparaten. Daarnaast kunt u gebruikmaken van dynamische Azure AD-groepen die automatisch worden bijgewerkt op basis van de kenmerken die u verstrekt. U kunt bijvoorbeeld een groep apparaten maken die werken met iOS 9. Wanneer een nieuw apparaat met iOS 9 wordt geregistreerd, wordt dat automatisch aan de dynamische groep toegevoegd.
 
--   U kunt geen leden of groepen meer uitsluiten wanneer u een nieuwe groep maakt. Met de dynamische groepen van Azure AD kunt u echter wel gebruikmaken van kenmerken om geavanceerde regels te maken waarmee u leden kunt uitsluiten op basis van criteria. U kunt bijvoorbeeld een geavanceerde regel maken waarmee u alle personen op de afdeling Verkoop opneemt in een beveiligingsgroep, behalve degenen waarbij het woord 'assistent' in hun titel voorkomt. Deze geavanceerde regel ziet er als volgt uit: `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`. Zie [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) voor meer informatie.
--   De groepen **Niet-gegroepeerde gebruikers** en **Niet-gegroepeerde apparaten** worden niet meer ondersteund. Deze groepen worden ook niet gemigreerd.
+## <a name="when-is-this-happening"></a>Wanneer vindt dat plaats?
 
-#### <a name="group-dependent-functionality"></a>Groepsafhankelijke functionaliteit
+Het migratieproces is al in gang gezet. U krijgt een bericht voordat we u gaan migreren.
+Als u al bent gemigreerd, ziet u een bericht dat lijkt op dit wanneer u toegang probeert te krijgen tot groepen vanuit de klassieke Intune-console:
 
--   De servicebeheerdersrol heeft geen machtigingen voor **Groepen beheren**.
--   U kunt geen Exchange ActiveSync-apparaten groeperen.  Uw groep van **alle met EAS beheerde apparaten** wordt geconverteerd van een groep naar een rapportweergave.
--  Het maken van draaitabellen met groepen in rapporten is niet mogelijk.
--  Het maken van meldingsregels die zijn gericht op aangepaste groepen, is niet mogelijk.
+![Bericht dat laat zien dat er groepen zijn gemigreerd.](http://i.imgur.com/72KRaXj.png)
 
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
- Hier zijn enkele aanbevelingen die deze overgang eenvoudiger zullen maken voor u:
- 
-- Verwijder ongewenste of overbodige Intune-groepen voordat de migratie plaatsvindt.
-- Beoordeel de manier waarop gebruikmaakt van uitsluiting in groepen en bedenk hoe u uw groepen opnieuw wilt vormgeven, zodat u geen uitsluiting hoeft te gebruiken of zodat u geavanceerde regels kunt gebruiken om hetzelfde doel te bereiken.
--  Hebt u beheerders die geen machtigingen hebben voor het maken van groepen in Azure AD, vraag dan uw Azure AD-beheerder om deze beheerders toe te voegen aan de Azure AD-rol **Intune-servicebeheerder** .
+## <a name="what-wont-be-available"></a>Wat is er niet beschikbaar?
 
-Hier vindt u ook meer informatie over beveiligingsgroepen in Azure AD:
--  Lees voor een overzicht [Toegang tot resources beheren met Azure Active Directory-groepen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
--  Zie voor meer informatie over het maken en beheren van Azure AD-groepen [Groepen beheren in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
--  Zie voor meer informatie over geavanceerde regels voor beveiligingsgroepen [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+Sommige bestaande mogelijkheden van Intune-groepen zijn niet beschikbaar in Azure AD:
 
-> [!NOTE]
-Het zal u waarschijnlijk opvallen dat in de documentatie over beveiligingsgroepen in Azure AD niet gesproken wordt over het maken van groepen voor apparaten. Die functionaliteit wordt ingeschakeld in Azure AD voordat de migratie van de Intune-groep begint.
+- De Intune-groepen **Niet-gegroepeerde gebruikers** en **Niet-gegroepeerde apparaten** worden niet gemigreerd.
+- De optie **Specifieke leden uitsluiten** die wordt toegepast op een groep die al in de Intune-console aanwezig is, bestaat niet in de Azure-portal. U kunt echter een Azure AD-beveiligingsgroep met geavanceerde regels gebruiken om dit gedrag te repliceren. U kunt bijvoorbeeld een geavanceerde regel maken waarmee u alle personen op de afdeling Verkoop opneemt in een beveiligingsgroep, behalve degenen waarbij het woord 'assistent' in hun titel voorkomt. Die geavanceerde regel ziet er als volgt uit: `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
+- De groep **Alle door Exchange ActiveSync beheerde apparaten** die is ingebouwd in de Intune-console, wordt niet gemigreerd naar Azure AD. U hebt echter nog altijd toegang tot informatie over met EAS beheerde apparaten via de Azure-portal.
+- Het is niet mogelijk om rapporten te filteren op groepen in de klassieke Intune-console.
+<!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
 
-## <a name="migration-details"></a>Details van de migratie
-Hier vindt u de details van hoe uw Intune-groepen worden gemigreerd naar Azure AD-beveiligingsgroepen.
+## <a name="how-to-get-ready"></a>Hoe bereidt u zich voor
 
-### <a name="migration-of-existing-groups"></a>Migratie van bestaande groepen
+- Lees de volgende Azure AD-onderwerpen voor informatie over Azure AD-beveiligingsgroepen en hoe deze werken:
+    -  [Toegang tot resources beheren met Azure Active Directory-groepen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+    -  [Groepen beheren in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+- Overweeg het verwijderen van Intune-groepen die u niet meer gebruikt voordat u migreert.
+-  Zorg ervoor dat alle beheerders die groepen moeten maken, worden toegevoegd aan de Azure AD-rol **Intune-servicebeheerder**. Houd er rekening mee dat de rol Servicebeheerder van Azure AD geen **Groep beheren**-machtigingen heeft.
+-  Als u gebruikmaakt van groepen met de optie **Specifieke leden uitsluiten**, overweeg dan om deze groepen zodanig in te stellen dat ze geen gebruikmaken van uitsluitingen of om geavanceerde regels in uw Azure AD-query toe te passen om hetzelfde resultaat te verkrijgen.
 
-| Intune-groep wordt...|...Azure AD-beveiligingsgroep|
+
+## <a name="what-happens-to-intune-groups"></a>Wat gebeurt er met Intune-groepen?
+
+| Groepen in Intune|Groep in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|Statische gebruikersgroepen waarop Intune-beleid is gericht|Statische Azure AD-beveiligingsgroepen met dezelfde gebruikers|
-|Dynamische gebruikersgroepen waarop Intune-beleid is gericht|Statische Azure AD-beveiligingsgroepen met een Azure AD-beveiligingsgroepshiërarchie|
-|Statische apparaatgroepen waarop Intune-beleid is gericht|Statische Azure AD-beveiligingsgroepen met apparaten|
-|Dynamische apparaatgroepen met apparaatkenmerken waarop Intune-beleid is gericht|Dynamische Azure AD-beveiligingsgroepen met apparaatkenmerken|
-|Een groep met een voorwaarde voor opneming|Een afzonderlijke statische Azure AD-beveiligingsgroep die een groep plus eventuele statische/dynamische leden zal bevatten, die overeenkomstig de voorwaarde voor opneming in Intune werden toegestaan|
-|Een groep met een uitsluitingsvoorwaarde|...wordt niet gemigreerd. Uitsluitingsvoorwaarden worden niet ondersteund tijdens het maken van statische groepen in Azure AD. Een uitsluitingsvoorwaarde kan worden gebruikt bij het maken van een dynamische groep in Azure AD.|
-|De standaardgroepen van **Alle gebruikers**, **Niet-gegroepeerde gebruikers**, **Alle apparaten**, **Niet-gegroepeerde apparaten**, **Alle computers**, **Alle mobiele apparaten**, **Alle met MDM-beheerde apparaten** en **Alle met EAS beheerde apparaten** die u in Intune-beleid gebruikt  |Azure AD-beveiligingsgroepen. Standaardgroepen die niet worden gebruikt, zouden met behulp van dynamische groepen door de klant moeten worden gemaakt wanneer deze nodig zijn.|
+|Statische gebruikersgroep|Statische Azure AD-beveiligingsgroep|
+|Dynamische gebruikersgroep|Statische Azure AD-beveiligingsgroepen met een Azure AD-beveiligingsgroepshiërarchie|
+|Statische apparaatgroep|Statische Azure AD-beveiligingsgroep|
+|Dynamische apparaatgroep|Dynamische Azure AD-beveiligingsgroep|
+|Een groep met een voorwaarde voor opneming|Statische Azure AD-beveiligingsgroep met statische of dynamische leden op basis van de insluitingsvoorwaarde in Intune.|
+|Een groep met een uitsluitingsvoorwaarde|Niet gemigreerd|
+|De ingebouwde groepen **Alle gebruikers**, **Niet-gegroepeerde gebruikers**, **Alle apparaten**, **Niet-gegroepeerde apparaten**, **Alle computers**, **Alle mobiele apparaten**, **Alle met MDM-beheerde apparaten** en **Alle met EAS beheerde apparaten**|Azure AD-beveiligingsgroepen.|
 
-### <a name="changes-in-hierarchical-views"></a>Wijzigingen in hiërarchische weergaven
-Hiërarchische weergave voor groepen in Intune  Een relatie tussen een bovenliggende en onderliggende groep was in Intune een relatie tussen een hoofdverzameling en een deelverzameling, wat in Azure AD niet het geval is. Onderliggende groepen kunnen leden hebben die de bovenliggende groepen niet hadden. Groepen kunnen ook cyclisch van aard zijn in Azure AD: een bovenliggende groep kan een onderliggende groep van een onderliggende groep zijn.
+In Intune moeten alle groepen een bovenliggende groep hebben. Groepen kunnen alleen leden van de bovenliggende groep bevatten. Onderliggende groepen in Azure AD kunnen leden bevatten die niet in de bovenliggende groep zijn opgenomen.
 
-### <a name="attribute-conversion-during-migration"></a>Conversie van kenmerken tijdens een migratie
 Kenmerken zijn eigenschappen van apparaten die kunnen worden gebruikt om groepen te definiëren. Deze tabel bevat een beschrijving van hoe deze criteria worden gemigreerd naar Azure AD-beveiligingsgroepen.
 
-| Intune-kenmerk|Azure AD-kenmerk|
+| Kenmerk in Intune|Kenmerk in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|OE-kenmerk (organisatie-eenheid) voor apparaatgroepen|OE-kenmerk voor dynamische groepen. Waarden voor kenmerken die beschikbaar zijn gemaakt door de beheerder en die betrekking hebben op elke tenant, door ze voor weergavedoeleinden toe te voegen als een van de tenantonderdelen.|
-|Domeinnaamkenmerk voor apparaatgroepen|Domeinnaamkenmerk voor dynamische groepen. Waarden voor kenmerken die beschikbaar zijn gemaakt door de beheerder en die betrekking hebben op elke tenant, door ze voor weergavedoeleinden toe te voegen als een van de tenantonderdelen|
+|OE-kenmerk (organisatie-eenheid) voor apparaatgroepen|OE-kenmerk voor dynamische groepen.|
+|Domeinnaamkenmerk voor apparaatgroepen|Domeinnaamkenmerk voor dynamische groepen.|
 |Beveiligingsgroep als een kenmerk voor gebruikersgroepen|Groepen kunnen geen kenmerken zijn van dynamische query's in Azure AD. Dynamische groepen kunnen alleen kenmerken bevatten die specifiek zijn voor een gebruiker of apparaat.|
 |Kenmerk manager voor gebruikersgroepen|Geavanceerde regel voor kenmerk *manager* in dynamische groepen|
 |Alle gebruikers van de bovenliggende gebruikersgroep|Statische groep met die groep als een lid|
 |Alle mobiele apparaten uit de bovenliggende apparaatgroep|Statische groep met die groep als een lid|
-|Alle mobiele apparaten die beheerd worden met direct beheer van Microsoft Intune|Kenmerk beheertype met 'MDM' als waarde voor dynamische groep|
-|Alle mobiele apparaten die worden beheerd met EAS|EAS-apparaten kunnen niet worden gegroepeerd in Azure AD. Uw groep van **alle met EAS beheerde apparaten** wordt geconverteerd van een groep naar een rapportweergave.|
+|Alle mobiele apparaten die worden beheerd met Intune|Kenmerk beheertype met 'MDM' als waarde voor dynamische groep|
 |Geneste groepen binnen statische groepen |Geneste groepen binnen statische groepen|
 |Geneste groepen binnen dynamische groepen|Dynamische groep met één genest niveau|
 
+## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>Wat gebeurt er met beleidsregels en apps die u al hebt geïmplementeerd?
 
-## <a name="migration-of-policies"></a>Migratie van beleid
-Terwijl de groep wordt gemigreerd, kunt u uw beleid blijven beheren in de Intune-console. Er bevindt zich een koppeling in de Intune-console naar uw Azure-beheerconsole, waar u uw groepen gaat beheren. Uw beleid zal geïmplementeerd blijven worden naar de gemigreerde Azure AD-beveiligingsgroepen die parallel lopen aan uw oude Intune-groepen.
+Beleid en apps blijven gewoon geïmplementeerd voor groepen, net als voorheen. U beheert deze groepen nu echter via de Azure-portal en niet meer via de klassieke Intune-console.
 
-Wanneer de volledige functionaliteit van Intune naar de Azure-beheerportal is gemigreerd (rond het eerste kwartaal van 2017), gaat u beleidsregels en groepen vanaf hier beheren.
 
+## <a name="how-to-get-more-information"></a>Hoe kunt u meer informatie krijgen
+
+Neem contact op met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).  
      
-### <a name="see-also"></a>Zie tevens
-[Toegang tot resources beheren met Azure Active Directory-groepen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
-
-[Groepen beheren in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
-
-[Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO4-->
 
 

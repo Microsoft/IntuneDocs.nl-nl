@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector voor on-premises EAS | Microsoft Intune
+title: Exchange Connector voor on-premises EAS | Microsoft Docs
 description: Gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen de Intune-beheerconsole en de on-premises Exchange Server voor Exchange ActiveSync MDM.
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Intune On-premises Exchange Connector installeren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Als u een verbinding wilt instellen waarmee Microsoft Intune kan communiceren met de Exchange Server die als host fungeert voor de postvakken voor de mobiele apparaten, moet u On-premises Exchange Connector vanuit de Intune-beheerconsole downloaden en configureren. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.

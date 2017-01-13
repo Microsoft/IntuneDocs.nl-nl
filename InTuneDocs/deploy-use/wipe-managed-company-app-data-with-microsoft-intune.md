@@ -1,5 +1,5 @@
 ---
-title: Bedrijfsgegevens van beheerde apps wissen | Microsoft Intune
+title: Bedrijfsgegevens van beheerde apps wissen | Microsoft Docs
 description: Informatie over het op afstand selectief verwijderen van bedrijfsgegevens.
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Bedrijfsgegevens van beheerde apps wissen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Wanneer een apparaat is vermist of is gestolen, of als een werknemer uw bedrijf verlaat, wilt u dat de gegevens in zakelijke apps van het apparaat worden verwijderd. Maar u wilt mogelijk geen persoonlijke gegevens op het apparaat verwijderen, vooral niet als het apparaat het eigendom van de werknemer is.
 
 Als u alleen de gegevens van de zakelijke apps wilt verwijderen, maakt u een verzoek om te wissen aan de hand van de stappen in dit onderwerp. Wanneer de aanvraag is voltooid, worden de bedrijfsgegevens uit de app verwijderd wanneer de app de volgende keer op het apparaat wordt uitgevoerd.

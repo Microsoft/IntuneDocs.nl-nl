@@ -1,5 +1,5 @@
 ---
-title: Apparaatinstellingen beheren met beleid | Microsoft Intune
+title: Apparaatinstellingen beheren met beleid | Microsoft Docs
 description: Gebruik Intune om beleid te maken en implementeren waarmee instellingen en functies worden beheerd op ingeschreven apparaten die u beheert.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
 
 
 ---
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune-*beleid* bestaat uit groepen instellingen waarmee functies worden beheerd op mobiele apparaten en computers. U maakt beleidsregels met behulp van sjablonen die aanbevolen of aangepaste instellingen bevatten, en u implementeert deze vervolgens op apparaat- of gebruikersgroepen.
 
 ## <a name="types-of-policies"></a>Typen beleidsregels
@@ -124,7 +127,7 @@ Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel
 - Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
 - Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 8 uur.
 
-Gebruikers kunnen ook de bedrijfsportalapp openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
+Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
 ### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
 Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals de actie wissen, vergrendelen, wachtwoord opnieuw instellen, app implementeren, profiel implementeren (Wi-Fi, VPN, e-mail, enz.) of beleidsregels implementeren, probeert Intune het apparaat onmiddellijk te melden dat het een controle bij de Intune-service moet uitvoeren om deze updates te ontvangen.
@@ -211,6 +214,6 @@ Zie [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/trouble
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

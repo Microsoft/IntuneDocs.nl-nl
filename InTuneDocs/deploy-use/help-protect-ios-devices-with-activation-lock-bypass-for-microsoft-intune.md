@@ -1,11 +1,11 @@
 ---
-title: IOS-activeringsvergrendeling op apparaten beheren | Microsoft Intune
+title: IOS-activeringsvergrendeling op apparaten beheren | Microsoft Docs
 description: Microsoft Intune kan u helpen bij het beheer van de activeringsvergrendeling voor iOS, een onderdeel van de app Zoek mijn iPhone voor apparaten met iOS 7.1 en hoger.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 4e19836f4ce30434bb7d34db8323f811adf5d770
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: fa61114e0bd338725c5d42f788212903ebdccf7a
 
 
 ---
 
-# iOS-apparaten beschermen met bypass van activeringsvergrendeling voor Microsoft Intune
+# <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>iOS-apparaten beschermen met bypass van activeringsvergrendeling voor Microsoft Intune
 Microsoft Intune kan u helpen bij het beheer van de activeringsvergrendeling voor iOS, een onderdeel van de app Zoek mijn iPhone voor apparaten met iOS 8.0 en hoger. Activeringsvergrendeling wordt automatisch ingeschakeld wanneer een gebruiker de app Zoek mijn iPhone op een apparaat gebruikt. Nadat de vergrendeling is ingeschakeld, moeten de Apple ID en het wachtwoord van de gebruiker worden ingevoerd voordat een van de volgende handelingen kan worden verricht: 
 
 -   Zoek mijn iPhone uitschakelen
@@ -29,22 +29,22 @@ Microsoft Intune kan u helpen bij het beheer van de activeringsvergrendeling voo
 
 -   Het apparaat opnieuw activeren
 
-## Wat activeringsvergrendeling voor u betekent
+## <a name="how-activation-lock-affects-you"></a>Wat activeringsvergrendeling voor u betekent
 Activeringsvergrendeling helpt iOS-apparaten te beveiligen en verbetert de kans dat het apparaat wordt teruggevonden na verlies of diefstal. Deze mogelijkheid kan voor u als IT-beheerder echter een aantal uitdagingen opleveren. Bijvoorbeeld:
 
--   Een gebruiker stelt activeringsvergrendeling in op een apparaat. De gebruiker verlaat vervolgens het bedrijf en levert het apparaat in. Zonder de Apple-id en het wachtwoord van de gebruiker is het niet mogelijk om het apparaat opnieuw te activeren.
+-   Een gebruiker stelt activeringsvergrendeling in op een apparaat. De gebruiker verlaat vervolgens het bedrijf en levert het apparaat in. Zonder de Apple ID en het wachtwoord van de gebruiker is het niet mogelijk om het apparaat opnieuw te activeren.
 
 -   U hebt een lijst nodig van alle apparaten waarop activeringsvergrendeling is ingeschakeld.
 
 -   Tijdens het vervangen van apparaten binnen uw organisatie, wilt u bepaalde apparaten aan een andere afdeling toewijzen. U kunt alleen apparaten toewijzen waarop de activeringsvergrendeling niet is ingeschakeld.
 
-Voor het oplossen van deze problemen heeft Apple in iOS 7.1 de mogelijkheid geïntroduceerd om een bypass van de activeringsvergrendeling uit te voeren. Hiermee kunt u de activeringsvergrendeling van een apparaat onder supervisie verwijderen zonder dat u de Apple-id en het wachtwoord van de gebruiker nodig hebt. Op apparaten onder supervisie kan een apparaatspecifieke bypass-code voor de activeringsvergrendeling worden gegenereerd, die wordt opgeslagen op de activeringsserver van Apple.
+Voor het oplossen van deze problemen heeft Apple in iOS 7.1 de mogelijkheid geïntroduceerd om een bypass van de activeringsvergrendeling uit te voeren. Hiermee kunt u de activeringsvergrendeling van een apparaat onder supervisie verwijderen zonder dat u de Apple ID en het wachtwoord van de gebruiker nodig hebt. Op apparaten onder supervisie kan een apparaatspecifieke bypass-code voor de activeringsvergrendeling worden gegenereerd, die wordt opgeslagen op de activeringsserver van Apple.
 
 > [!TIP]
 > Met de supervisiemodus voor iOS-apparaten kunt u Apple Configurator gebruiken en de vergrendelingsfunctionaliteit te beperken tot bepaalde bedrijfsdoeleinden. De supervisiemodus wordt doorgaans alleen gebruikt voor apparaten in bedrijfseigendom.
 
-## Activeringsvergrendeling beheren met Intune
-Intune kan de status opvragen van de activeringsvergrendeling van apparaten met en zonder supervisie waarop iOS 8.0 of hoger wordt uitgevoerd. Alleen voor apparaten onder supervisie kan met Intune de bypass-code van de activeringsvergrendeling worden opgehaald direct aan het apparaat worden uitgegeven. Als het apparaat is gewist, kunt u rechtstreeks toegang krijgen tot het apparaat met de code als gebruikersnaam en een leeg wachtwoord.
+## <a name="how-intune-helps-you-manage-activation-lock"></a>Activeringsvergrendeling beheren met Intune
+Intune kan de status opvragen van de activeringsvergrendeling van apparaten met en zonder supervisie waarop iOS 8.0 of hoger wordt uitgevoerd. Alleen voor apparaten onder supervisie kan met Intune de bypass-code van de activeringsvergrendeling worden opgehaald direct aan het apparaat worden uitgegeven. Als het apparaat is gewist, kunt u rechtstreeks toegang krijgen tot het apparaat met een lege gebruikersnaam en de code als wachtwoord.
 
 **De zakelijke voordelen hiervan zijn**:
 
@@ -52,7 +52,7 @@ Intune kan de status opvragen van de activeringsvergrendeling van apparaten met 
 
 -   De gebruiker kan werken en u weet zeker dat u het apparaat buiten gebruik kunt stellen of kunt ontgrendelen wanneer het opnieuw moet worden toegewezen.
 
-## Bypass van activeringsvergrendeling gebruiken vanuit de Intune-beheerconsole
+## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Bypass van activeringsvergrendeling gebruiken vanuit de Intune-beheerconsole
 > [!IMPORTANT]
 > Nadat u voor de activeringsvergrendeling op een apparaat een bypass hebt uitgevoerd, wordt automatisch een nieuwe activeringsvergrendeling toegepast zodra de app Zoek mijn iPhone wordt geopend. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**.
 
@@ -64,7 +64,7 @@ Intune kan de status opvragen van de activeringsvergrendeling van apparaten met 
 
 Bekijk de status van de ontgrendelingsaanvraag op de detailpagina voor het apparaat.
 
-## Hoe ziet u op welke apparaten activeringsvergrendeling is ingeschakeld
+## <a name="how-to-see-which-devices-are-using-activation-lock"></a>Hoe ziet u op welke apparaten activeringsvergrendeling is ingeschakeld
 U kunt op twee manieren zien op welke apparaten activeringsvergrendeling is ingeschakeld:
 
 -   Voer de **Inventarisrapporten van mobiele apparaten**uit: Dit rapport bevat de kolommen **Status activeringsvergrendeling** en **Onder supervisie**, waarin de status van apparaten wordt weergegeven. De waarden voor **Onder supervisie** zijn **Ja** of **Nee**, en de waarden voor **Status activeringsvergrendeling** zijn:
@@ -87,12 +87,12 @@ U kunt op twee manieren zien op welke apparaten activeringsvergrendeling is inge
     >Intune inventariseert apparaten elke zeven dagen voor Activeringsvergrendeling. Als gevolg hiervan worden apparaten mogelijk niet onmiddellijk weergegeven met hun activeringsvergrendelingstatus in de Intune-console.
 
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md)
 [Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

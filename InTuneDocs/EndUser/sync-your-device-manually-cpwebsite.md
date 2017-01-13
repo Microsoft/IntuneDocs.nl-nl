@@ -1,5 +1,5 @@
 ---
-title: Uw apparaat handmatig synchroniseren met behulp van de bedrijfsportalwebsite | Microsoft Intune
+title: Uw apparaat handmatig synchroniseren met behulp van de bedrijfsportalwebsite | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fbbe9233ae2e07209356a0cec14d085f742e6436
 
 
 ---

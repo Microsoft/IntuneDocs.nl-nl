@@ -1,11 +1,11 @@
 ---
-title: Apparaten buiten gebruik stellen | Microsoft Intune
+title: Apparaten buiten gebruik stellen | Microsoft Docs
 description: Intune biedt ondersteuning voor selectief wissen en volledig wissen waarmee apparaten uit het Intune-beheer kunnen worden verwijderd door hun beleid en de bedrijfsportal te verwijderen.
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Apparaten buiten gebruik stellen vanuit Intune-beheer
 
-Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat moet worden verwijderd uit Intune-beheer. Er kunnen verschillende redenen zijn voor het buiten gebruik stellen van een apparaat:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat moet worden verwijderd uit Intune-beheer. 
+
+Apparaten worden nooit uit Intune verwijderd zonder uw tussenkomst, zelfs als de apparaten een bepaalde tijd niet met de Intune-service zijn verbonden. 
+
+Er kunnen verschillende redenen zijn voor het buiten gebruik stellen van een apparaat:
 
 -   Een gebruiker verlaat een bedrijf op de geplande wijze ('beheerd' vertrek)
 -   Een gebruiker vertrekt abrupt (wordt ontslagen, neemt ontslag, etc.).
@@ -70,6 +76,6 @@ Het kan ook zo zijn dat het apparaat het einde van de levensduur heeft bereikt. 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

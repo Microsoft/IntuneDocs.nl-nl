@@ -1,5 +1,5 @@
 ---
-title: Apps uit de Windows Store voor Bedrijven beheren | Microsoft Intune
+title: Apps uit de Windows Store voor Bedrijven beheren | Microsoft Docs
 description: Microsoft Intune verbinden met de Windows Store voor Bedrijven als u apps via het volume-aankoopprogramma hebt gekocht vanuit de Intune-console.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in de Windows Store voor Bedrijven, beheren met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [Windows Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en aan te schaffen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u een koppeling tussen Windows Store en Microsoft Intune instelt, kunt u apps die in grotere volumes zijn aangeschaft, beheren vanuit de Intune-console. Bijvoorbeeld:
 * U kunt de lijst met aangeschafte apps synchroniseren met Intune.
 * Apps die zijn gesynchroniseerd, worden weergegeven in de Intune-beheerconsole en u kunt deze op dezelfde manier implementeren als andere apps.
@@ -80,6 +83,6 @@ Wanneer u een Windows Store voor Bedrijven-app implementeert, heeft elke gebruik
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Uw Windows-apparaat registreren bij Intune | Microsoft Intune
+title: Uw Windows-apparaat registreren bij Intune | Microsoft Docs
 description: Informatie over hoe u een Windows-apparaat bij Intune kunt inschrijven
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1515eef929d08f8639921313d1cfcb0ea6964fa9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 850a85e724a15859d925bd466171212c75d91691
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 1515eef929d08f8639921313d1cfcb0ea6964fa9
 
 # <a name="enroll-your-windows-device-in-intune"></a>Uw Windows-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Windows-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportalapp installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Windows-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie.
 
 Als u uw apparaat wilt registreren, volgt u de koppeling die overeenkomt met het apparaat dat u gebruikt:
 
@@ -33,6 +33,6 @@ Als u uw apparaat wilt registreren, volgt u de koppeling die overeenkomt met het
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

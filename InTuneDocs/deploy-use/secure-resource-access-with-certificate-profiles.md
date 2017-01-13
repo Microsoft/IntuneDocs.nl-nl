@@ -1,5 +1,5 @@
 ---
-title: Certificaatprofielen voor toegang tot bedrijfsresources | Microsoft Intune
+title: Certificaatprofielen voor toegang tot bedrijfsresources | Microsoft Docs
 description: "Beveiligde VPN-, Wi-Fi en toegang tot e-mail met een certificaat op elk gebruikersapparaat geïnstalleerd."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Toegang tot beveiligde bronnen met certificaatprofielen in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze toegang beveiligen met een certificaat dat op elk gebruikersapparaat wordt geïnstalleerd. Dit werkt als volgt:
 
 1. Zorg ervoor dat de juiste certificaatinfrastructuur aanwezig is, zoals beschreven in [Certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) en [Certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md).
@@ -44,7 +47,7 @@ Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi-
 
   Een **SCEP-certificaatprofiel** gebruiken voor apparaten met deze platformen:
     -   Mac OS X 10.9 en hoger
-    -   Windows Phone 8,1 
+    -   Windows Phone 8,1
 
 U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel maakt, koppelt u dit aan het **vertrouwde basiscertificaatprofiel** dat u al hebt gemaakt.
 
@@ -61,6 +64,6 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

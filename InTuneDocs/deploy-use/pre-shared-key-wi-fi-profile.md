@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi met een vooraf gedeelde sleutel (PSK) | Microsoft Intune
+title: Wi-Fi met PSK | Microsoft Docs
 description: Aangepaste configuratie van Intune gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
+ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
+ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
 
 
 
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
@@ -69,24 +72,24 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of 
 >  `<hex>53534944</hex>` moet worden ingesteld op de hexadecimale waarde `<name><SSID of wifi profile></name>`.
 >  Windows 10-apparaten kunnen ten onrechte de fout *0x87D1FDE8 Doorvoeren is mislukt* retourneren, maar worden wel ingericht met het profiel.
 
-    <!--
-    <Name of wifi profile> = Name of profile
-    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-    <nonBroadcast><true/false></nonBroadcast>
-    <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-    <Type of encryption> = Type of encryption used by the network
-    <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-    <password> = Password to connect to the network
-    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <hex>53534944</hex>
-        <name><SSID of wifi profile></name>
-        </SSID>
+```
+<!--
+<Name of wifi profile> = Name of profile
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<nonBroadcast><true/false></nonBroadcast>
+<Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
+<Type of encryption> = Type of encryption used by the network
+<protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+<password> = Password to connect to the network
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+-->
+<WLANProfile
+xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name><Name of wifi profile></name>
+  <SSIDConfig>
+    <SSID>
+      <hex>53534944</hex>
+ <name><SSID of wifi profile></name>        </SSID>
         <nonBroadcast>false</nonBroadcast>
       </SSIDConfig>
       <connectionType>ESS</connectionType>
@@ -108,10 +111,12 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of 
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="eap-based-wi-fi-profile"></a>Wi-Fi-profiel op basis van EAP
 Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP.
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -189,6 +194,7 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
 U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
@@ -215,6 +221,6 @@ Wanneer u een geïmplementeerd beleid selecteert, kunt u meer informatie over de
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

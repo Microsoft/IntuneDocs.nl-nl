@@ -1,9 +1,9 @@
 ---
-title: Vereisten voor MAM-beleid | Microsoft Intune
+title: Vereisten voor MAM-beleid | Microsoft Docs
 description: In dit onderwerp worden de vereisten voor het instellen van gebruikers beschreven voordat u MAM-beleid (Mobile App Management) kunt maken.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps in de Azure-portal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In dit onderwerp wordt uitgelegd aan welke vereisten u moet voldoen en welke stappen u moet voltooien **voordat** u beleid voor het beheer van mobiele apps (MAM) in de Azure Portal kunt maken.
 
 Zie [Protect apps and data using mobile app management policies](protect-apps-and-data-with-microsoft-intune.md) (Apps en gegevens beschermen met beleid voor het beheer van mobiele apps) voor informatie over hoe MAM-beleid in Intune uw bedrijfsgegevens beveiligt.
@@ -80,7 +83,7 @@ U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement 
 
   - Het maken van SharePoint Online- en Exchange Online-werkaccounts. Exchange on-premises en SharePoint on-premises worden niet ondersteund.
 
--   **Skype voor Bedrijven Online instellen voor moderne authenticatie**. Zie voor meer informatie [Moderne authenticatie inschakelen](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+-   **Skype voor Bedrijven Online instellen voor moderne verificatie**. Zie voor meer informatie [Moderne verificatie inschakelen](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) voor het maken van gebruikers. Azure AD verifieert gebruikers wanneer ze de app openen en hun werkreferenties invoeren.
@@ -121,6 +124,6 @@ De volgende tabel bevat de rollen en machtigingen die u aan gebruikers met behee
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: De certificaatinfrastructuur configureren voor PFX | Microsoft Intune
+title: De certificaatinfrastructuur configureren voor PFX | Microsoft Docs
 description: .PFX-certificaatprofielen maken en implementeren.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Certificaatinfrastructuur configureren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In dit onderwerp wordt beschreven wat u nodig hebt om .PFX-Certificaatprofielen te maken en implementeren.
 
 U hebt een certificeringsinstantie voor ondernemingen nodig om op certificaten gebaseerde verificatie in uw organisatie te laten werken.
@@ -31,7 +34,7 @@ Voor het gebruik van .pfx-certificaatprofielen hebt u, afgezien van een certific
 
 -  De Intune-certificaatconnector die wordt uitgevoerd op de computer die met de certificeringsinstantie kan communiceren.
 
-## <a name="onpremises-infrastructure-description"></a>Beschrijving van de on-premises infrastructuur
+## <a name="on-premises-infrastructure-description"></a>Beschrijving van de on-premises infrastructuur
 
 
 -    **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
@@ -65,7 +68,7 @@ Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvo
 - **Taak 1**: certificaatsjablonen configureren op de certificeringsinstantie.
 - **Taak 2**: de Intune-certificaatconnector inschakelen, installeren en configureren.
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Taak 1: Certificaatsjablonen configureren op de certificeringsinstantie
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Taak 1: Certificaatsjablonen configureren op de certificeringsinstantie
 In deze taak publiceert u de certificaatsjabloon.
 
 ##### <a name="to-configure-the-certification-authority"></a>De certificeringsinstantie configureren
@@ -104,7 +107,7 @@ In deze taak publiceert u de certificaatsjabloon.
 
 4.  Zorg er op de CA-computer voor dat de computer die de Intune-certificaatconnector host registratiemachtigingen heeft, zodat deze toegang heeft tot de sjabloon die wordt gebruikt voor het maken van het PFX-profiel. U stelt die machtiging in op het tabblad **Beveiliging** van de eigenschappen van de CA-computer.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Taak 2: de Intune-certificaatconnector inschakelen, installeren en configureren
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Taak 2: de Intune-certificaatconnector inschakelen, installeren en configureren
 In deze taak:
 
 De certificaatconnector downloaden, installeren en configureren.
@@ -156,6 +159,6 @@ U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Ce
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

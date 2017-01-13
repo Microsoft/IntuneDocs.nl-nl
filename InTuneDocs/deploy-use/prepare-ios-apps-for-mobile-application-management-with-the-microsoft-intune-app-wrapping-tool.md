@@ -1,5 +1,5 @@
 ---
-title: iOS-apps verpakken met de Intune App Wrapping Tool | Microsoft Intune
+title: iOS-apps verpakken met de Intune App Wrapping Tool | Microsoft Docs
 description: Gebruik de informatie in dit onderwerp om meer te leren over het verpakken van uw iOS-apps zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
 keywords: 
 author: mtillman
@@ -14,34 +14,154 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor Mobile Application Management met de Intune App Wrapping Tool
 
-Wijzig met de Microsoft Intune App Wrapping Tool voor iOS de werking van interne iOS-apps, door app-beveiligingsfuncties in te schakelen zonder dat u de code van de app zelf wijzigt.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Het hulpprogramma is een macOS-opdrachtregelprogramma waarmee een 'wrapper' (soort schil) rond een app wordt gemaakt. Wanneer een app is verwerkt, kunt u de functionaliteit van de app wijzigen met het Intune [Mobile Application Management-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) dat is ingesteld door de IT-beheerder.
+Gebruik de Microsoft Intune App Wrapping Tool voor iOS om het beveiligingsbeleid van de Intune-app voor interne iOS-apps in te schakelen zonder dat u de code van de app zelf wijzigt.
+
+Het hulpprogramma is een macOS-opdrachtregelprogramma waarmee een 'wrapper' (soort schil) rond een app wordt gemaakt. Nadat een app is verwerkt, kunt u de functionaliteit ervan wijzigen door een [app-beveiligingsbeleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) te implementeren.
 
 Zie [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) op GitHub als u het hulpprogramma wilt downloaden.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Voldoen aan de vereisten voor de App Wrapping Tool
-Zie het blogbericht [How to obtain prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Voldoen aan de voorwaarden voor de Intune App Wrapping Tool voor iOS) voor meer informatie over het voldoen aan de voorwaarden.
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Algemene vereisten voor de App Wrapping Tool
 
-|Vereiste|Meer informatie|
-|---------------|--------------------------------|
-|Ondersteunde hulpmiddelenset en besturingssysteem | U moet de App Wrapping Tool uitvoeren op een macOS-computer met OS X 10.8.5 of hoger, waarop de XCode-hulpmiddelenset versie 5 of hoger is geïnstalleerd.|
-|Handtekeningcertificaat en inrichtingsprofiel | U moet over een Apple-handtekeningcertificaat en -inrichtingsprofiel beschikken. Zie de [Apple-documentatie voor ontwikkelaars](https://developer.apple.com/) voor meer informatie.|
-|Een app verwerken met de App Wrapping Tool  |Apps moeten zijn ontwikkeld en ondertekend door uw bedrijf of een ISV (Independent Software Vendor, onafhankelijke softwareleverancier). U kunt dit hulpprogramma niet gebruiken om apps uit de Apple Store te verwerken. Apps moeten zijn geschreven voor iOS 8.0 of hoger. Apps moeten ook de Position Independent Executable-indeling (PIE) hebben. Zie de Apple-documentatie voor ontwikkelaars voor meer informatie over de PIE-indeling. Tot slot moet de app de extensie **.app** of **.ipa** hebben.|
-|Apps die het hulpprogramma niet kan verwerken | Versleutelde apps, niet-ondertekende apps en apps met uitgebreide bestandskenmerken.|
-|Rechten instellen voor uw app|Voordat u de app verpakt, moet u rechten instellen zodat de app naast de standaardmachtigingen en -mogelijkheden ook over andere machtigingen en -mogelijkheden beschikt. Zie [App-rechten instellen](#setting-app-entitlements) voor instructies.|
+Voordat u de App Wrapping Tool uitvoert, moet u aan enkele algemene vereisten voldoen:
 
-## <a name="install-the-app-wrapping-tool"></a>De App Wrapping Tool installeren
+* Download de [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) vanuit GitHub.
+
+* Een macOS-computer met OS X 10.8.5 of hoger, waarop de Xcode-hulpmiddelenset versie 5 of hoger is geïnstalleerd.
+
+* De iOS-invoer-app moet zijn ontwikkeld en ondertekend door uw bedrijf of een ISV (Independent Software Vendor, onafhankelijke softwareleverancier).
+
+  * Het bestand van de invoer-app moet de extensie **.ipa** of **.app** hebben.
+
+  * De invoer-app moet zijn gecompileerd voor iOS 8.0 of hoger.
+
+  * De invoer-app kan niet worden versleuteld.
+
+  * De invoer-app kan geen uitgebreide bestandskenmerken hebben.
+
+  * Voor de invoer-app moeten rechten zijn ingesteld voordat deze wordt verwerkt door de Intune App Wrapping Tool. [Rechten](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) zorgen ervoor dat de app naast de standaardmachtigingen en -mogelijkheden ook over andere machtigingen en -mogelijkheden beschikt. Zie [App-rechten instellen](#setting-app-entitlements) voor instructies.
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Apple Developer-vereisten voor de App Wrapping Tool
+
+
+Als u verpakte apps uitsluitend naar gebruikers van uw organisatie wilt distribueren, moet u beschikken over een account voor het [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) en over verschillende entiteiten voor app-ondertekening die zijn gekoppeld aan uw Apple Developer-account.
+
+Meer informatie over het intern distribueren van iOS-apps naar gebruikers van uw organisatie kunt u vinden in de officiële handleiding [Distributing Apple Developer Enterprise Program Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1).
+
+U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door Intune:
+
+* Een Developer-account voor het Apple Developer Enterprise Program.
+
+* Handtekeningcertificaat voor interne en ad-hocdistributie met geldige team-id.
+
+  * U hebt de SHA1-hash van het handtekeningcertificaat nodig als parameter voor de Intune App Wrapping Tool.
+
+
+* Inrichtingsprofiel voor interne distributie.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Stappen voor het maken van een Apple Developer Enterprise-account
+1. Ga naar de [site Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
+
+2. Klik in de rechterbovenhoek van de pagina op **Enroll**.
+
+3. Bekijk de controlelijst om te zien wat u moet registreren. Klik op **Start Your Enrollment** aan de onderkant van de pagina.
+
+4. **Meld u aan** met de Apple ID van uw organisatie. Als u die niet hebt, klikt u op **Create Apple ID**.
+
+5. Selecteer uw **Entity Type** en klik op **Continue**.
+
+6. Vul het formulier in met de gegevens van uw organisatie. Klik op **Continue**. Op dat punt vraagt Apple u te controleren of u bent gemachtigd om uw organisatie te registreren.
+
+8. Klik na de verificatie op **Agree to License**.
+
+9. Nadat u akkoord bent gegaan met de licentie, voltooit u de procedure door **het programma te kopen en te activeren**.
+
+10. Als u de teamagent bent (degene die aan het Apple Developer Enterprise Program deelneemt namens uw organisatie), stelt u eerst uw team samen door teamleden uit te nodigen en rollen toe te wijzen. Lees de Apple-documentatie over [het beheren van uw Developer-accountteam](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) voor meer informatie over het beheren van uw team.
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Stappen voor het maken van een Apple-handtekeningcertificaat
+
+1. Ga naar de [Apple Developer-portal](https://developer.apple.com/).
+
+2. Klik in de rechterbovenhoek van de pagina op **Account**.
+
+3. **Meld u aan** met uw de Apple ID van uw organisatie.
+
+4. Klik op **Certificates, IDs & Profiles**.
+
+  ![Apple Developer-portal](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Klik op het ![plusteken van de Apple Developer-portal](../media/app-wrapper/iOS-signing-cert-2.png) in de rechterbovenhoek om een iOS-certificaat toe te voegen.
+
+6. Maak een **In-House and Ad Hoc**-certificaat onder **Production**.
+
+  ![Selecteer In-House and Ad Hoc als certificaat](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. Klik onder aan de pagina op **Next**.
+
+8. Lees de instructies voor het maken van een **Certificate Signing Request (CSR)** met behulp van de toepassing Sleutelhangertoegang op uw macOS-computer.
+
+  ![Instructies doornemen voor het maken van een CSR](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Volg de bovenstaande instructies om een CSR te maken. Start de toepassing **Sleutelhangertoegang** op uw macOS-computer.
+
+10. In het macOS-menu boven aan het scherm gaat u naar **Sleutelhangertoegang > Certificaatassistent > Vraag een certificaat aan bij een certificaatautoriteit**.  
+
+  ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Volg de instructies op de Apple Developer-site hierboven voor het maken van een CSR-bestand. Sla het CSR-bestand op uw macOS-computer op.
+
+  ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Ga terug naar de Apple Developer-site. Klik op **Continue**. Upload vervolgens het CSR-bestand.
+
+13. Apple genereert het handtekeningcertificaat. Download het handtekeningcertificaat en sla het op in een gemakkelijk te onthouden locatie op uw macOS-computer.
+
+  ![Uw handtekeningcertificaat downloaden](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Dubbelklik op het certificaatbestand dat u zojuist hebt gedownload om het certificaat toe te voegen aan een sleutelhanger.
+
+15. Open **Sleutelhangertoegang** opnieuw. Ga naar uw certificaat door te zoeken naar **iPhone** in de zoekbalk rechtsboven in het venster van Sleutelhangertoegang. Klik met de rechtermuisknop op het item om het menu te openen en klik op **Toon info**.
+
+  ![Uw certificaat toevoegen aan een sleutelhanger](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Er wordt een venster met informatie weergegeven. Ga naar de onderkant van het venster en kijk onder het label **Vingerafdrukken**. Kopieer de **SHA1**-tekenreeks om deze te gebruiken als de parameter -c voor de App Wrapping Tool.
+
+  ![Uw certificaat toevoegen aan een sleutelhanger](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Stappen voor het maken van een In-House Distribution Provisioning-profiel
+
+1. Ga terug naar de [Apple Developer-accountportal](https://developer.apple.com/account/) en **meld u aan** met de Apple ID van uw organisatie.
+
+2. Klik op **Certificates, IDs & Profiles**.
+
+3. Klik op het ![plusteken van de Apple Developer-portal](../media/app-wrapper/iOS-signing-cert-2.png) in de rechterbovenhoek om een iOS-inrichtingsprofiel toe te voegen.
+
+4. Maakt een **In House**-inrichtingsprofiel onder **Distribution**.
+
+  ![In House-inrichtingsprofiel selecteren](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Klik op **Continue**. Koppel het eerder gegenereerde handtekeningcertificaat aan het inrichtingsprofiel.
+
+6. Volg de stappen om uw profiel (met de extensie .mobileprovision) te downloaden naar uw macOS-computer.
+
+7. Sla het bestand op in een gemakkelijk te onthouden locatie. Dit bestand wordt gebruikt voor de parameter -p bij gebruik van de App Wrapping Tool.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>De App Wrapping Tool downloaden
 
 1.  Download de bestanden voor de App Wrapping Tool van [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) naar een Mac OS-computer.
 
@@ -64,7 +184,7 @@ Open het Mac OS Terminal-programma en navigeer naar de map waarin u de bestanden
 > [!NOTE]
 > Sommige parameters zijn optioneel, zoals wordt weergegeven in de volgende tabel.
 
-**Voorbeeld:** met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoerapp (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
+**Voorbeeld:** met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoer-app (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
@@ -85,7 +205,7 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-xe**| (Optioneel) Hiermee wordt informatie afgedrukt over de iOS-extensies in de app en de rechten die nodig zijn voor het gebruik ervan. Zie App-rechten instellen voor meer informatie. |
 |**-x**| (Optioneel) `<An array of paths to extension provisioning profiles>`. Gebruik deze eigenschap als uw app extensie-inrichtingsprofielen nodig heeft.|
 |**-f**|(Optioneel) `<Path to a plist file specifying arguments.>` Gebruik deze eigenschap vóór het [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-bestand als u ervoor kiest om de PLIST-sjabloon te gebruiken om de rest van de IntuneMAMPackager-eigenschappen op te geven, zoals -i, -o en -p. Zie Een PLIST-bestand gebruiken voor het invoeren van argumenten. |
-|**-b**|(Optioneel) Gebruik -b zonder argument als u wilt dat de verpakte uitvoerapp dezelfde bundelversie krijgt als de invoerapp (niet aanbevolen). <br/><br/> Gebruik `-b <custom bundle version>` als u wilt dat de verpakte app een aangepaste CFBundleVersion krijgt. Als u ervoor kiest om een aangepaste CFBundleVersion op te geven, wordt u aangeraden om de CFBundleVersion van de oorspronkelijke app te verhogen door de minst significante component te verhogen, bijvoorbeeld 1.0.0 -> 1.0.1. |
+|**-b**|(Optioneel) Gebruik -b zonder argument als u wilt dat de verpakte uitvoer-app dezelfde bundelversie krijgt als de invoer-app (niet aanbevolen). <br/><br/> Gebruik `-b <custom bundle version>` als u wilt dat de verpakte app een aangepaste CFBundleVersion krijgt. Als u ervoor kiest om een aangepaste CFBundleVersion op te geven, wordt u aangeraden om de CFBundleVersion van de oorspronkelijke app te verhogen door de minst significante component te verhogen, bijvoorbeeld 1.0.0 -> 1.0.1. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Een PLIST-bestand gebruiken voor het invoeren van argumenten
 U kunt de App Wrapping Tool op een eenvoudige manier uitvoeren door de opdrachtargumenten in een [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-bestand op te nemen. Een PLIST-bestand heeft een indeling die vergelijkbaar is met die van een XML-bestand en kan worden gebruikt om opdrachtregelargumenten in te voeren met een formulierinterface.
@@ -94,14 +214,14 @@ Open in de map IntuneMAMPackager/Contents/MacOS `Parameters.plist` (een lege PLI
 
 | PLIST-sleutel |  Standaardwaarde| Opmerkingen |
 |------------------|--------------|-----|
-| Pad van invoerapp-pakket  |leeg| Gelijk aan -i|
-| Pad van uitvoerapp-pakket |leeg| Gelijk aan -o|
+| Pad van invoer-app-pakket  |leeg| Gelijk aan -i|
+| Pad van uitvoer-app-pakket |leeg| Gelijk aan -o|
 | Pad van inrichtingsprofiel |leeg| Gelijk aan -p|
 | SHA-1-certificaat-hash |leeg| Gelijk aan -c|
 | Uitgebreid ingeschakeld |onjuist| Gelijk aan -v|
 | Ontbrekende rechten verwijderen | onjuist| Gelijk aan -c|
 | Standaardbuild voorkomen |onjuist | Komt overeen met het gebruik van -b zonder argumenten|
-|Tekenreeks voor build overschrijven | leeg| De aangepaste CFBundleVersion van de verpakte uitvoerapp |
+|Tekenreeks voor build overschrijven | leeg| De aangepaste CFBundleVersion van de verpakte uitvoer-app |
 |Paden van extensie-inrichtingsprofielen | leeg| Een matrix van extensie-inrichtingsprofielen voor de app.
 
 
@@ -111,11 +231,11 @@ Voer de IntuneMAMPackager uit met het PLIST-bestand als het enige argument:
 ./IntuneMAMPackager –f Parameters.plist
 ```
 
-### <a name="post-wrapping"></a>Na het inpakken
+### <a name="post-wrapping"></a>Na het verpakken
 
-Nadat het inpakken is voltooid, wordt het bericht 'De toepassing is verpakt' weergegeven. Zie [Foutberichten](#error-messages-and-log-files) voor hulp als er een fout optreedt.
+Nadat het verpakken is voltooid, wordt het bericht 'De toepassing is verpakt' weergegeven. Zie [Foutberichten](#error-messages-and-log-files) voor hulp als er een fout optreedt.
 
-De ingepakte app wordt opgeslagen in de uitvoermap die u eerder hebt opgegeven. U kunt de app uploaden naar de Intune-beheerconsole en koppelen aan een beheerbeleid voor mobiele apps.
+De verpakte app wordt opgeslagen in de uitvoermap die u eerder hebt opgegeven. U kunt de app uploaden naar de Intune-beheerconsole en koppelen aan een beheerbeleid voor mobiele apps.
 
 > [!IMPORTANT]
 > Wanneer u een verpakte app uploadt, kunt u proberen een oudere versie van de app bij te werken als er al een oudere (ingepakte of oorspronkelijke) versie was geïmplementeerd in Intune. Als er een fout optreedt, uploadt u de app als een nieuwe app en verwijdert u de oudere versie.
@@ -131,21 +251,21 @@ Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de vol
 |Foutbericht|Meer informatie|
 |-----------------|--------------------|
 |U moet een geldig iOS-inrichtingsprofiel opgeven.|Uw inrichtingsprofiel is mogelijk niet geldig. Controleer of u de juiste machtigingen hebt voor apparaten en of uw profiel correct is gemaakt voor ontwikkeling of distributie. Uw inrichtingsprofiel kan ook zijn verlopen.|
-|Geef een geldige naam op voor een invoerapp.|Zorg dat u de juiste naam opgeeft voor de invoerapp.|
-|Geef een geldig pad naar de uitvoerapp op.|Zorg dat het pad naar de uitvoerapp dat u hebt opgegeven bestaat en correct is.|
+|Geef een geldige naam op voor een invoer-app.|Zorg dat u de juiste naam opgeeft voor de invoer-app.|
+|Geef een geldig pad naar de uitvoer-app op.|Zorg dat het pad naar de uitvoer-app dat u hebt opgegeven bestaat en correct is.|
 |Geef een geldig inrichtingsprofiel voor invoer op.|Zorg dat u een geldige naam en extensie voor het inrichtingsprofiel hebt opgegeven. Er ontbreken mogelijk rechten in uw inrichtingsprofiel of mogelijk hebt u de opdrachtregeloptie –p niet toegevoegd.|
-|De invoerapp die u hebt opgegeven, is niet gevonden. Geef een geldige naam en een geldig pad op voor de invoerapp.|Zorg dat het pad naar uw invoerapp geldig is en bestaat. Zorg dat de invoerapp op die locatie bestaat.|
+|De invoer-app die u hebt opgegeven, is niet gevonden. Geef een geldige naam en een geldig pad op voor de invoer-app.|Zorg dat het pad naar uw invoer-app geldig is en bestaat. Zorg dat de invoer-app op die locatie bestaat.|
 |Het inrichtingsprofielbestand voor invoer dat u hebt opgegeven, is niet gevonden. Geef een geldige inrichtingsprofielbestand voor invoer op.|Zorg dat het pad naar het inrichtingsbestand voor invoer geldig is en dat het opgegeven bestand bestaat.|
-|De appmap voor uitvoer die u hebt opgegeven, is niet gevonden. Geef een geldig pad naar de uitvoerapp op.|Zorg dat het opgegeven uitvoerpad geldig is en bestaat.|
+|De app-map voor uitvoer die u hebt opgegeven, is niet gevonden. Geef een geldig pad naar de uitvoer-app op.|Zorg dat het opgegeven uitvoerpad geldig is en bestaat.|
 |App voor uitvoer heeft geen **IPA**-extensie.|Alleen apps met de extensies **.app** en **.ipa** worden geaccepteerd door de App Wrapping Tool. Zorg dat uw bestand voor uitvoer een geldige extensie heeft.|
 |Er is een ongeldig handtekeningcertificaat opgegeven. Geef een geldig handtekeningcertificaat van Apple op.|Zorg dat u het juiste handtekeningcertificaat hebt gedownload vanuit de Apple-portal voor ontwikkelaars. Uw certificaat is mogelijk verlopen of misschien ontbreekt er een openbare of persoonlijke sleutel. Als uw Apple-certificaat en inrichtingsprofiel kunnen worden gebruikt om een app correct te ondertekenen in Xcode, zijn deze ook geldig voor de App Wrapping Tool.|
 |De opgegeven app voor invoer is ongeldig. Geef een geldige app op.|Zorg dat u een geldige iOS-app hebt die is gecompileerd als APP of IPA-bestand.|
 |De opgegeven app voor invoer is versleuteld. Geef een geldige niet-versleutelde app op.|De App Wrapping Tool ondersteunt geen versleutelde apps. Geef een niet-versleutelde app op.|
 |De opgegeven app voor invoer die u hebt opgegeven, heeft geen Position Independent Executable-indeling (PIE). Geef een geldige app in de PIE-indeling op.|Position Independent Executable-apps (PIE) kunnen worden geladen op een willekeurig geheugenadres wanneer ze worden uitgevoerd. Dit kan beveiligingsvoordelen hebben. Zie de Apple-documentatie voor ontwikkelaars voor meer informatie over beveiligingsvoordelen.|
-|De opgegeven app voor invoer is al ingepakt. Geef een geldige niet-ingepakte app op.|U kunt een app die al is verwerkt door het hulpprogramma, niet opnieuw verwerken. Als u wilt een app opnieuw wilt verwerken, moet u het hulpprogramma uitvoeren met de oorspronkelijke versie van de app.|
-|De app voor invoer die u hebt opgegeven, is niet ondertekend. Geef een geldige ondertekende app op.|De App Wrapping Tool vereist dat apps zijn ondertekend. Raadpleeg de documentatie voor ontwikkelaars voor meer informatie over hoe u een ingepakte app ondertekent.|
+|De opgegeven invoer-app is al verpakt. Geef een geldige niet-verpakte app op.|U kunt een app die al is verwerkt door het hulpprogramma, niet opnieuw verwerken. Als u wilt een app opnieuw wilt verwerken, moet u het hulpprogramma uitvoeren met de oorspronkelijke versie van de app.|
+|De app voor invoer die u hebt opgegeven, is niet ondertekend. Geef een geldige ondertekende app op.|De App Wrapping Tool vereist dat apps zijn ondertekend. Raadpleeg de documentatie voor ontwikkelaars voor meer informatie over hoe u een verpakte app ondertekent.|
 |De app voor invoer die u hebt opgegeven, moet de indeling .ipa of .app hebben.|Alleen de extensies .app en .ipa worden geaccepteerd door de App Wrapping Tool. Zorg dat uw invoerbestand een geldige extensie heeft en is gecompileerd als bestand met de extensie .app of .ipa.|
-|De app voor die u hebt opgegeven, is al ingepakt en heeft de meest recente beleidssjabloonversie.|De App Wrapping Tool pakt een bestaande verpakte app met de meest recente beleidssjabloonversie niet opnieuw in.|
+|De invoer-app die u hebt opgegeven, is al verpakt en heeft de meest recente beleidssjabloonversie.|De App Wrapping Tool pakt een bestaande verpakte app met de meest recente beleidssjabloonversie niet opnieuw in.|
 |WAARSCHUWING: u hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Logboekbestanden voor de App Wrapping Tool
@@ -165,7 +285,7 @@ Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden ge
     > [!NOTE]
     > In het logboekbestand komt het item 'build version' overeen met de buildversie van Xcode.
 
-    Ingepakte apps bieden gebruikers ook de optie om logboeken rechtstreeks vanaf het apparaat te verzenden nadat de app is vastgelopen. Gebruikers kunnen u de logboeken toesturen, zodat u ze kunt onderzoeken en indien nodig kun doorsturen naar Microsoft.
+    Verpakte apps bieden gebruikers ook de optie om logboeken rechtstreeks vanaf het apparaat te verzenden nadat de app is vastgelopen. Gebruikers kunnen u de logboeken toesturen, zodat u ze kunt onderzoeken en indien nodig kun doorsturen naar Microsoft.
 
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Certificaat-, inrichtingsprofiel- en verificatievereisten

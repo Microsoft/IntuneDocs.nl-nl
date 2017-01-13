@@ -1,5 +1,5 @@
 ---
-title: "Voorbeeldscenario’s van het beperken van toegang tot e-mail | Microsoft Intune"
+title: Voorbeeldscenario&quot;s van het beperken van toegang tot e-mail | Microsoft Docs
 description: "Enkele voorbeeldscenario&quot;s en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang."
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 0f3c1816591007108fed19682d19ad4b87bd5559
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d6ead1495a64e4e215c49b14064e390065a06de
 
 
 ---
@@ -32,7 +32,7 @@ U doet dit door een beleid voor voorwaardelijke toegang voor Exchange Online te 
 
 - Kies **Beleid voor voorwaardelijke toegang inschakelen**.
 
-- Kies de platformen die u toegang wilt geven vanuit apps met moderne authenticatie.
+- Kies de platformen die u toegang wilt geven vanuit apps met moderne verificatie.
 - Kies voor Exchange ActiveSync-apps de optie **Apparaten die het beleid niet naleven op platformen die worden ondersteund door Microsoft Intune** en **Alle andere apparaten op platformen die niet worden ondersteund door Microsoft Intune blokkeren**.
 -   Kies in de sectie **Doelgroep** onder **Geselecteerde beveiligingsgroepen** de gebruikersgroep **Accounting**.
 

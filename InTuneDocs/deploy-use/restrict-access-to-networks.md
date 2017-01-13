@@ -1,5 +1,5 @@
 ---
-title: Toegang tot netwerken beperken met Cisco ISE | Microsoft Intune
+title: Toegang tot netwerken beperken met Cisco ISE | Microsoft Docs
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 > Controleer de vervaldatum van het certificaat omdat u een nieuw certificaat moet exporteren en importeren wanneer dit certificaat is verlopen.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Een zelfondertekend certificaat verkrijgen van ISE 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Een zelfondertekend certificaat verkrijgen van ISE 
 
 1.  Ga in de ISE-console naar **Beheer** > **Certificaten** > **Systeemcertificaten** > **Zelfondertekend certificaat genereren**.  
 2.       Exporteer het zelfondertekende certificaat.
@@ -100,7 +100,7 @@ Zorg ervoor dat alle tekst op één regel staat
 |OAuth 2.0-tokeneindpunt|URL die de token uitgeeft|
 |Werk uw code bij met uw client-id|Client-id|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Stap 4: het zelfondertekende certificaat van ISE uploaden naar de ISE-app die u in Azure AD hebt gemaakt
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Stap 4: het zelfondertekende certificaat van ISE uploaden naar de ISE-app die u in Azure AD hebt gemaakt
 1.     Haal de met base64 gecodeerde certificaatwaarde en de vingerafdruk op uit een openbaar X509-certificaatbestand (CER). In dit voorbeeld wordt PowerShell gebruikt:
    
       
@@ -189,6 +189,6 @@ Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.tech
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

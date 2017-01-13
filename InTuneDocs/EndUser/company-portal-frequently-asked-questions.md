@@ -1,11 +1,11 @@
 ---
-title: Wat is de bedrijfsportal? | Microsoft Intune
+title: Wat is de bedrijfsportal? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
+ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 
 
 ---
@@ -26,10 +26,10 @@ ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Wat is de bedrijfsportalwebsite en wat kunt u ermee doen?
 De Microsoft Intune-bedrijfsportal biedt u toegang tot de gegevens en apps van uw bedrijf of school. U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
-- Door de bedrijfsportalapp op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportalapp via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportalapp ook voor u installeren.
+- Door de bedrijfsportal-app op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren.
 - Door naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) te gaan die uw IT-beheerder heeft ingesteld.
 
-Er zijn enkele kleine verschillen tussen de bedrijfsportalapp en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Hieronder vindt u enkele voorbeelden van taken die u kunt uitvoeren:
+Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Hieronder vindt u enkele voorbeelden van taken die u kunt uitvoeren:
 
 - Uw apparaten registreren
 - De status van uw apparaten weergeven
@@ -38,13 +38,13 @@ Er zijn enkele kleine verschillen tussen de bedrijfsportalapp en de bedrijfsport
 - Uw pincode of wachtwoord opnieuw instellen
 - Contact opnemen met uw IT-afdeling voor ondersteuning
 
-Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportalapp op uw apparaat kunt doen, kiest u een van de volgende koppelingen:
+Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app op uw apparaat kunt doen, kiest u een van de volgende koppelingen:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS en Mac OS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Bedrijfsportalwebsite](using-the-intune-company-portal-website.md)
+- [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+- [Uw iOS- en macOS-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
+- [De bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Wat gebeurt er wanneer u een computer of apparaat toevoegt aan de bedrijfsportal?
 Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn dat er software wordt geïnstalleerd of een app wordt gedownload (afhankelijk van het apparaat).  Bovendien geeft u de IT-beheerder toestemming om uw apparaat te beheren om de bedrijfsinformatie op het apparaat te beschermen.
@@ -58,9 +58,9 @@ Voor meer informatie over wat de IT-beheerder wel en niet op uw apparaat kan zie
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Wat voor computers of apparaten kunt u toevoegen aan de bedrijfsportal?
 
--   iPhones, iPads en Mac OS-apparaten
+-   Apple-apparaten met iOS (iPhone, iPad) en macOS (iMac, MacBook)
 
--   Mobiele Android-apparaten
+-   Android-apparaten
 
 -   Windows-apparaten
     -   Windows 10 Mobile
@@ -92,10 +92,10 @@ Kies een van de volgende koppelingen om te zien hoe u uw apparaat opnieuw instel
 Om een apparaat te kunnen bekijken, moet het eerst zijn toegevoegd aan de bedrijfsportal. Volg de instructies van uw beheerder om naar de bedrijfsportal te gaan en voer de stappen uit voor uw apparaat. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
 
 ## <a name="if-you-have-questions-contact-your-it-administrator"></a>Neem contact op met de IT-beheerder als u vragen hebt.
-Neem contact op met de IT-beheerder als u hulp nodig hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder als u hulp nodig hebt. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

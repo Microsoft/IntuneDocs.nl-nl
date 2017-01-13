@@ -1,5 +1,5 @@
 ---
-title: Wat is er nieuw? | Microsoft Intune
+title: Wat is er nieuw? | Microsoft Docs
 description: Ontdek wat er nieuw is in de release van Microsoft Intune van deze maand en in oudere releases
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9fd309a10d9eb020795c5ce46df124b13dc1a006
-ms.openlocfilehash: d117c929fbde4dd0a39503b8da695aa9c9ea91ad
+ms.sourcegitcommit: 1d9ebc7fd727b80091625ed5256ae634323a9257
+ms.openlocfilehash: f7e71d20923e113b533668a7b5aef688de196182
 
 
 ---
@@ -33,15 +33,12 @@ De beheerderservaring in de Azure-portal zal gebruikmaken van de eerder aangekon
 Als u vragen hebt over de planning van de migratie van uw tenant, neemt u contact op met het migratieteam via [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Integratie van onkostenbeheer voor telecom in de openbare preview-versie van Azure-portal<!--747605-->
-We beginnen nu met preview-versies van de integratie met externe systemen voor onkostenbeheer voor telecom (TEM) in de Azure-portal. U kunt Intune gebruiken om limieten in te stellen voor gegevensgebruik, voor zowel nationaal als roaming. Hierbij beginnen we met [Saaswedo](http://www.saaswedo.com).
+We beginnen nu met preview-versies van de integratie met externe systemen voor onkostenbeheer voor telecom (TEM) in de Azure-portal. U kunt Intune gebruiken om limieten in te stellen voor gegevensgebruik, voor zowel nationaal als roaming. Hierbij beginnen we met [Saaswedo](http://www.saaswedo.com). Als u deze functie in uw proeftenant wilt inschakelen, neemt u [contact op met Microsoft-ondersteuning](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ## <a name="new-capabilities"></a>Nieuwe mogelijkheden
 
 ### <a name="multi-factor-authentication-across-all-platforms---747590--"></a>Meervoudige verificatie voor alle platformen <!--747590-->
 U kunt nu meervoudige verificatie (MFA) afdwingen voor een geselecteerde groep gebruikers, wanneer zij een apparaat met iOS, Android, Windows 8.1+ of Windows Phone 8.1+ inschrijven bij de Azure-beheerportal. Dit doet u door MFA te configureren voor Microsoft Intune-inschrijving in Azure Active Directory.
-
-<!--VSO 679339, awaiting chrisgre for go-live--><!--### Conditional access for MAM with SharePoint Online
-U kunt de toegang tot SharePoint Online blokkeren voor apps die niet worden ondersteund door de beleidsregels voor Mobile App Management (MAM) in Intune.  U kunt aan de slag gaan met Mobile App Management in Intune via de Azure-portal. De sectie __Voorwaardelijke toegang__ op de blade __Instellingen__ bevat de optie voor SharePoint Online. Deze functie wordt afzonderlijk geleverd van de rest van de servicerelease. U vindt [hier](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online) meer informatie over deze nieuwe functie.-->
 
 ### <a name="ability-to-restrict-mobile-device-enrollment--747596--"></a>Mogelijkheid om de registratie van mobiele apparaten te beperken<!--747596-->
 Er zijn in Intune nieuwe inschrijvingsbeperkingen toegevoegd die bepalen welke platforms voor mobiele apparaten kunnen worden ingeschreven. Intune onderscheidt platforms voor mobiele apparaten als iOS, Mac OS, Android, Windows en Windows Mobile.
@@ -56,7 +53,7 @@ Intune markeert alle nieuwe apparaten als persoonlijk, tenzij de IT-beheerder ac
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Meervoudige verificatie voor inschrijving wordt verplaatst naar de Azure-portal. <!--VSO 750545-->
 Tot nu toe maakten beheerders gebruik van de Intune-console of de Configuration Manager-console (vóór de release oktober 2016) om meervoudige verificatie in te stellen voor Intune-registraties. Met deze bijgewerkte functie kunt u zich aanmelden bij de [Microsoft Azure-portal](https://manage.windowsazure.com) met uw Intune-referenties en de instellingen voor meervoudige verificatie configureren via Azure AD. Meer informatie hierover vindt u [hier](https://aka.ms/mfa_ad).
 
-### <a name="company-portal-app-for-android-now-available-in-china---vso-658093--"></a>Bedrijfsportal-app voor Android nu beschikbaar in China <!--VSO 658093-->
+### <a name="company-portal-app-for-android-now-available-in-china--vso-658093--"></a>Bedrijfsportal-app voor Android nu beschikbaar in China <!--VSO 658093-->
 De bedrijfsportal-app voor Android kan vanaf nu worden gedownload in China. Vanwege de afwezigheid van Google Play Store in China kunnen Android-apparaten apps alleen verkrijgen via Chinese app-marktplaatsen. De bedrijfsportal-app voor Android kan nu worden gedownload via de volgende stores:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
@@ -88,10 +85,10 @@ Vanaf half december 2016 zijn de Intune AV-speler, afbeeldingsviewer en PDF-view
 ### <a name="see-also"></a>Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Vorige versies van Intune](whats-new-archive.md)
+* [Wat is er nieuw (archief)](whats-new-archive.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

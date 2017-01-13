@@ -1,5 +1,5 @@
 ---
-title: Uw wachtwoordcode instellen of wijzigen | Microsoft Intune
+title: Uw wachtwoordcode instellen of wijzigen | Microsoft Docs
 description: Uw wachtwoordcode instellen of wijzigen
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 6e941b8ac3d26afce65eb5a7d60f7c56dbbdbe87
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
@@ -27,23 +27,23 @@ De IT-beheerder kan meerdere wachtwoordcodevereisten instellen. Het is bijvoorbe
 
 Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet aan de vereisten, neemt u contact op met uw IT-beheerder voor hulp.
 
-## <a name="set-your-passcode"></a>Uw wachtwoordcode instellen##
+## <a name="set-your-passcode"></a>Uw wachtwoordcode instellen
 
 1. Tik op **Instellingen** > **Touch ID en wachtwoordcode**.
 2. Tik in het menu **Touch ID en wachtwoordcode** op **Wachtwoordcode inschakelen**.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van uw IT-beheerder en geef de code nogmaals op om deze te verifiëren.
 
-## <a name="change-your-passcode"></a>Uw wachtwoordcode wijzigen##
+## <a name="change-your-passcode"></a>Uw wachtwoordcode wijzigen
 
 1. Tik op **Instellingen** > **Touch ID en wachtwoordcode**.
 2. Voer uw wachtwoordcode in. Het menu **Touch ID en wachtwoordcode** wordt geopend.
 2. Tik op **Wachtwoordcode wijzigen** en voer het oude wachtwoord.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van uw IT-beheerder en geef de code nogmaals op om deze te verifiëren.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

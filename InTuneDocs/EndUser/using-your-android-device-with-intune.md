@@ -1,5 +1,5 @@
 ---
-title: Uw Android-apparaat gebruiken met Intune | Microsoft Intune
+title: Uw Android-apparaat gebruiken met Intune | Microsoft Docs
 description: Lijst met koppelingen naar taken die eindgebruikers op hun mobiele Android-apparaat kunnen uitvoeren wanneer het apparaat bij Intune is geregistreerd
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 ---
@@ -47,7 +47,7 @@ In deze sectie kunnen gebruikers lezen welke acties ze kunnen uitvoeren nadat hu
 - [Het virtuele particuliere netwerk (VPN) van het bedrijf installeren](install-your-companys-virtual-private-network-VPN-android.md)
 - [Instellen na hoeveel tijd het apparaat moet worden vergrendeld](set-the-amount-of-time-before-your-device-is-locked-android.md)
 - [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-android.md)
-- [Het verzamelen van Microsoft-gebruiksgegevens uitschakelen](turn-off-microsoft-usage-data-collection-android.md)
+- [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-android.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-android.md)
 - [De registratie van een apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Wat gebeurt er als u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
@@ -62,8 +62,8 @@ De informatie in deze sectie helpt gebruikers bij het oplossen van problemen die
 - [Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden via e-mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [Diagnostische gegevenslogboeken naar uw IT-beheerder verzenden met behulp van een USB-kabel](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Registratiefouten naar uw IT-beheerder verzenden](send-enrollment-errors-to-your-it-administrator-android.md)
-- [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Het apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Op het apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd](you-need-to-update-your-android-device.md)
+- [Het apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie](your-android-version-isnt-yet-supported.md)
 - [Uw apparaat is geroot en u kunt geen verbinding maken](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Er ontbreekt een vereist certificaat voor uw apparaat](your-device-is-missing-a-required-certificate-android.md)
 - [U wordt gevraagd om onbekende bronnen uit te schakelen](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ De informatie in deze sectie helpt gebruikers bij het oplossen van problemen die
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

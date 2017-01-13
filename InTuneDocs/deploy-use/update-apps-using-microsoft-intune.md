@@ -1,11 +1,11 @@
 ---
-title: Apps bijwerken | Microsoft Intune
+title: Apps bijwerken | Microsoft Docs
 description: Gebruik de informatie in dit onderwerp om na te gaan hoe u apps kunt bijwerken wanneer een nieuwe versie vereist is.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e78642494356038d4dff259ca54030122fd90819
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
 
 
 ---
 
-# Apps bijwerken met Microsoft Intune
+# <a name="update-apps-using-microsoft-intune"></a>Apps bijwerken met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune kan u helpen app-updates te beheren. Gebruik de informatie in dit onderwerp om na te gaan hoe u apps kunt bijwerken wanneer een nieuwe versie vereist is.
 
-## Apps bijwerken
+## <a name="how-to-update-apps"></a>Apps bijwerken
 Wanneer er een nieuwe versie wordt uitgebracht van een app die u hebt geïmplementeerd, kunt u met Intune de app bijwerken en de nieuwere versie implementeren. U kunt een implementatie alleen vervangen door een nieuwere versie van dezelfde app (die dezelfde id heeft). U kunt app-updates niet gebruiken om een implementatie bij te werken met een ander app-pakket.
 
-### App-id 's
+### <a name="app-identifiers"></a>App-id 's
 De app-id is een eigenschap waarmee een unieke app wordt aangeduid. U kunt niet meerdere exemplaren van een app installeren met dezelfde id. Hier volgen enkele voorbeelden van app-id’s:
 
 - **iOS** - bundel-id (bijvoorbeeld: com.microsoft.excel)
@@ -42,7 +45,7 @@ De app-id is een eigenschap waarmee een unieke app wordt aangeduid. U kunt niet 
 > -   Laat de gebruiker van het apparaat naar de bedrijfsportal gaan, de geïnstalleerde app selecteren en vervolgens **Installeren** kiezen.
 > -   Wijzig de implementatieactie in **Verwijderen**en nadat de app is verwijderd, implementeert u de app opnieuw met de implementatieactie **Beschikbare installatie**.
 
-### Een app bijwerken
+### <a name="to-update-an-app"></a>Een app bijwerken
 
 1.  Kies **Apps** &gt; **Apps** in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com).
 
@@ -59,6 +62,6 @@ Voor apps die worden geïmplementeerd als een koppeling naar een winkel, wordt d
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

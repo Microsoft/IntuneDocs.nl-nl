@@ -1,5 +1,5 @@
 ---
-title: Bronnen over de eindgebruikerservaring in Microsoft Intune | Microsoft Intune
+title: Bronnen over de eindgebruikerservaring in Microsoft Intune | Microsoft Docs
 description: Deel informatie met uw eindgebruikers om uw Intune-implementatie succesvol te maken.
 keywords: eindgebruikers, gebruikers, communicatie
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 83436b7d8e554eef0cf48d0f07999f06bf811bbc
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
 
 
 ---
@@ -32,7 +32,7 @@ U kunt deze [voor IT-beheerders bestemde, aanpasbare sjabloon voor het inschrijv
 
 ## <a name="how-your-end-users-find-how-to-and-troubleshooting-information"></a>Hoe uw eindgebruikers zoeken naar informatie over procedures en over het oplossen van problemen
 
-Gebruik de volgende koppelingen om te zien naar welke stappen gebruikers worden doorverwezen vanuit de bedrijfsportalwebsite of -app. De koppelingen zijn onderverdeeld in secties over de installatie van de bedrijfsportalapp en over de inschrijving bij Intune, algemene taken die gebruikers op hun apparaten kunnen uitvoeren en probleemoplossing.
+Gebruik de volgende koppelingen om te zien naar welke stappen gebruikers worden doorverwezen vanuit de bedrijfsportalwebsite of -app. De koppelingen zijn onderverdeeld in secties over de installatie van de bedrijfsportal-app en over de inschrijving bij Intune, algemene taken die gebruikers op hun apparaten kunnen uitvoeren en probleemoplossing.
 
 - [Uw Android-apparaat gebruiken met Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Uw iOS- of Mac OS-apparaat gebruiken met Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -42,7 +42,7 @@ Gebruik de volgende koppelingen om te zien naar welke stappen gebruikers worden 
 
 ## <a name="how-your-end-users-get-their-apps"></a>Hoe eindgebruikers hun apps downloaden
 
-Kies een van de volgende apparaatplatforms om inzicht te krijgen in hoe uw eindgebruikers apps downloaden:
+Kies een van de volgende apparaatplatformen om inzicht te krijgen in hoe uw eindgebruikers apps downloaden:
 
 - [Android](how-your-android-users-get-their-apps.md)
 - [iOS](how-your-ios-users-get-their-apps.md)
@@ -50,6 +50,6 @@ Kies een van de volgende apparaatplatforms om inzicht te krijgen in hoe uw eindg
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

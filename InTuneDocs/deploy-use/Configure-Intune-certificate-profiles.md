@@ -1,5 +1,5 @@
 ---
-title: Certificaatprofielen configureren | Microsoft Intune
+title: Certificaatprofielen configureren | Microsoft Docs
 description: Informatie over het maken van een certificaatprofiel van Intune.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Intune-certificaatprofielen configureren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Nadat u de infrastructuur en certificaten hebt geconfigureerd zoals beschreven in [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) of [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md), kunt u certificaatprofielen maken. Dit is het proces:
 
 - **Taak 1**: het vertrouwde basis-CA-certificaat exporteren
@@ -157,6 +160,6 @@ Ontdek nu hoe u certificaten kunt gebruiken om e-mail-, Wi-Fi- en VPN-profielen 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

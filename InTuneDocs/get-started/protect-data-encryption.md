@@ -1,12 +1,12 @@
 ---
-title: Bedrijfsgegevens beschermen met gegevensversleuteling | Microsoft Intune
+title: Bedrijfsgegevens beschermen met gegevensversleuteling | Microsoft Docs
 description: Lees deze gids voor informatie over het beschermen van uw bedrijf tegen gegevensverlies, door een beleid voor mobiele apps te gebruiken om een wachtwoordcode en gegevensversleuteling af te dwingen.
 keywords: versleuteling, pincode, gegevens
 author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: b907803b2170a09e076712e018987821dfb3caef
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
 
 
 ---
 
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Snelstartgids: Bedrijfsgegevens beveiligen met gegevensversleuteling
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Met Microsoft Intune kunt u gegevensverlies in mobiele Office-apps voorkomen op verschillende manieren, zoals:
 - Bedrijfsgegevens versleutelen met de krachtigste apparaatversleuteling die wordt geboden door iOS en Android.
 - Op iOS- en Android-apparaten die vanwege juridische vereisten of om privacyredenen niet kunnen worden ingeschreven in een beheeroplossing voor mobiele apparaten.
@@ -50,6 +53,6 @@ U kunt de informatie in deze gids gebruiken om verlies van uw bedrijfsgegevens t
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

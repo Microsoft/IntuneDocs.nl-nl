@@ -1,5 +1,5 @@
 ---
-title: Er worden fouten weergegeven tijdens het registreren van het iOS-apparaat in Intune | Microsoft Intune
+title: Er worden fouten weergegeven tijdens het registreren van het iOS-apparaat in Intune | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 57b6bb6076b24299fb54626aa55850bf8c0c2428
-ms.openlocfilehash: df491807386c80dce0f45822fbc64acefda59eb3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9da632e906a1486ac705a0af99179ce9669c8a24
 
 
 ---
 
 # <a name="you-see-errors-while-trying-to-enroll-your-ios-device-in-intune"></a>Er worden fouten weergegeven tijdens het registreren van het iOS-apparaat in Intune
 
-In de volgende tabel staan fouten die u mogelijk tijdens het registreren van een iOS-apparaat in Intune ziet. Deel deze koppeling met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+In de volgende tabel staan fouten die u mogelijk tijdens het registreren van een iOS-apparaat in Intune ziet. Deel deze koppeling met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 |Foutbericht|Probleem|Wat u uw IT-beheerder kunt vertellen|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -37,6 +37,6 @@ In de volgende tabel staan fouten die u mogelijk tijdens het registreren van een
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

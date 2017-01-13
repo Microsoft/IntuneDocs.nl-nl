@@ -1,5 +1,5 @@
 ---
-title: Beleidsinstellingen voor voorwaarden | Microsoft Intune
+title: Beleidsinstellingen voor voorwaarden | Microsoft Docs
 description: U kunt de voorwaarden van Intune implementeren voor gebruikersgroepen om uit te leggen hoe zaken als inschrijving, toegang tot werkresources en het gebruik van de bedrijfsportal-app invloed hebben op apparaten en gebruikers.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor voorwaarden in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt de voorwaarden van Intune implementeren voor gebruikersgroepen om uit te leggen hoe zaken als inschrijving, toegang tot werkresources en de bedrijfsportal-app invloed hebben op apparaten en gebruikers. Gebruikers moeten de voorwaarden accepteren voordat ze de bedrijfsportal kunnen gebruiken om hun apparaat te registreren en toegang te krijgen tot hun werk.
 
 U kunt meerdere beleidsregels met verschillende voorwaarden maken en implementeren. U kunt ook meerdere versies van dezelfde voorwaarden in verschillende talen maken en deze voor de betreffende groepen implementeren.
@@ -81,6 +84,6 @@ Wanneer u bestaande voorwaarden bewerkt, kunt u kiezen welk gedrag optreedt wann
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Toegang tot SharePoint Online beperken | Microsoft Intune
+title: Toegang tot SharePoint Online beperken | Microsoft Docs
 description: U kunt voorwaardelijke toegang gebruiken om bedrijfsgegevens te beschermen en te beheren op SharePoint Online.
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
 
 
 ---
@@ -88,7 +88,7 @@ Het volgende wordt ondersteund:
   >[!NOTE]
   >Voorwaardelijke toegang wordt niet ondersteund op computers waarop de Intune-computerclient wordt uitgevoerd.
 
-[Moderne authenticatie van Office 365-moet zijn ingeschakeld](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
+[Moderne verificatie van Office 365-moet zijn ingeschakeld](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
 
 Moderne verificatie maakt aanmelding op basis van Active Directory Authentication Library (ADAL) beschikbaar op Windows-clients met Office 2013 en zorgt voor een betere beveiliging, zoals **meervoudige verificatie** en **verificatie op basis van een certificaat**.
 
@@ -137,15 +137,15 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
     -   **Alle platforms**
 
-        Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven bij Intune en voldoen aan het nalevingsbeleid. Elke clienttoepassing die **moderne authenticatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **SharePoint Online** geblokkeerd.
+        Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven bij Intune en voldoen aan het nalevingsbeleid. Elke clienttoepassing die **moderne verificatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **SharePoint Online** geblokkeerd.
 
         Als u **Alle platformen** selecteert, betekent dat dit beleid met Azure Active Directory wordt toegepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing. Alle platformen moeten worden geregistreerd en voldoen aan de voorwaarden, behalve:
         *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide.
-        * Niet-ondersteunde platformen, zoals Mac. Apps met moderne authenticatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
+        * Niet-ondersteunde platformen, zoals Mac. Apps met moderne verificatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
 
     -   **Specifieke platforms**
 
-         Het beleid voor voorwaardelijke toegang wordt toegepast op elke clienttoepassing die moderne authenticatie gebruikt op de door u geselecteerde platformen.
+         Het beleid voor voorwaardelijke toegang wordt toegepast op elke clienttoepassing die moderne verificatie gebruikt op de door u geselecteerde platformen.
 
      Voor Windows-pc's moet de pc lid zijn van een domein of zijn geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en voldoen aan het beleid. U kunt de volgende vereisten instellen:
 

@@ -1,5 +1,5 @@
 ---
-title: U wordt gevraagd Lookout for Work te installeren op uw iOS-apparaat | Microsoft Intune
+title: U wordt gevraagd Lookout for Work te installeren op uw iOS-apparaat | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
 
 
 ---
@@ -50,11 +50,11 @@ Als Lookout for Work een beveiligingsrisico op uw apparaat vindt, ziet u instruc
 
 **Als de installatie niet werkt**
 
-Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

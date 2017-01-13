@@ -1,9 +1,9 @@
 ---
-title: MAM-beleid bewaken met Microsoft Intune | Microsoft Intune
+title: MAM-beleid bewaken met Microsoft Intune | Microsoft Docs
 description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 2a18ad7226c6fc6de0277f1f20443ea64dc8b918
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Mobile App Management-beleid bewaken met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Nadat u een MAM-beleid (Mobile App Management) hebt ingesteld en toegepast op de gebruikers, kunt u de nalevingsstatus in [Azure Portal](https://portal.azure.com) bewaken. Azure Portal bevat informatie over de gebruikers die door het beleid worden beïnvloed, de nalevingsstatus en eventuele problemen die uw gebruikers ondervinden.
 ## <a name="summary-view"></a>Samenvattingsweergave
 Op de blade **Intune Mobile Application Management** ziet u een samenvatting van de nalevingsstatus:
@@ -80,6 +83,6 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

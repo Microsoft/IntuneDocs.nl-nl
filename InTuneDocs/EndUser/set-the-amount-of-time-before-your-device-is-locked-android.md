@@ -1,5 +1,5 @@
 ---
-title: De hoeveelheid tijd instellen waarna het apparaat moet worden vergrendeld | Microsoft Intune
+title: De hoeveelheid tijd instellen waarna het apparaat moet worden vergrendeld | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 471c30b4849c77cd73d0e3189cb640586e35c34a
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
 
 
 ---
@@ -30,12 +30,12 @@ Om de gegevens op uw Android-apparaat beter te beveiligen, kan uw IT-beheerder b
 
 2.  Geef de waarde voor de wachtwoordtime-out op.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Microsoft Intune
+title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 5df88351d84da28c93d010b8484601b7dbcdaf7e
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
 # <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>De periode instellen voordat een Android-apparaat wordt vergrendeld
 Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op uw apparaat instellen door de stappen voor uw apparaattype te volgen.
 
-## <a name="native-nonsamsung-knox-device"></a>Native apparaat (niet-Samsung Knox)
+## <a name="native-non-samsung-knox-device"></a>Native apparaat (niet-Samsung Knox)
 
 1.  Tik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
 
@@ -40,10 +40,10 @@ Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op
 
 2.  Selecteer een waarde voor de wachtwoordtime-out.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: De bedrijfsportal aanpassen | Microsoft Intune
+title: De bedrijfsportal aanpassen | Microsoft Docs
 description: Met de Intune-bedrijfsportal kunnen gebruikers algemene taken uitvoeren, zoals apparaten registreren, apps installeren en informatie over de IT-afdeling opzoeken.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 063b073d85dac9fce7d1cbab80ea320c5d237961
+ms.openlocfilehash: 0d8a86b55904198612e0d53fbc387d850d88a449
 
 
 ---
@@ -28,7 +28,7 @@ De Intune-bedrijfsportal biedt gebruikers toegang tot bedrijfsgegevens en -apps.
 -   **De bedrijfsportal-app**: een toepassing die beschikbaar is op apparaten die u beheert met Intune. Meer informatie over de bedrijfsportal-apps voor [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) en [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **De bedrijfsportal-website**: een website waarmee eindgebruikers de meeste taken die ze kunnen verrichten, kunnen uitvoeren via de bedrijfsportal-app. De URL van de Intune-bedrijfsportal is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Meer informatie over deze website vindt u in [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website).
+- **De bedrijfsportalwebsite**: een website waarmee eindgebruikers de meeste taken die ze kunnen verrichten, kunnen uitvoeren via de bedrijfsportal-app. De URL van de Intune-bedrijfsportal is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Meer informatie over deze website vindt u in [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal.
@@ -42,11 +42,6 @@ Gebruikers kunnen in de bedrijfsportal onder andere de volgende taken uitvoeren:
 -   Hun apparaat op afstand vergrendelen
 -   Software downloaden die door uw organisatie is geïmplementeerd
 -   Contact opnemen met de IT-afdeling voor ondersteuning
-
-> [!NOTE]
-> De bedrijfsportal-app is nog niet in alle landen beschikbaar.
-> __iOS__: de bedrijfsportal-app voor iOS is gepubliceerd in [alle beschikbare gebieden](https://go.microsoft.com/fwlink/?linkid=831284) voor de Apple iOS App Store.
-> __Android__: de bedrijfsportal-app voor Android is momenteel niet beschikbaar in China. Voor deze landen is een alternatieve oplossing het [sideloaden van de Android-versie van de bedrijfsportal-app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## <a name="customize-company-portal-settings"></a>De instellingen van de bedrijfsportal aanpassen
 Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige ervaring. Meld u aan bij de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) als tenant of servicebeheerder. Kies **Beheerder** &gt; **Bedrijfsportal** en configureer de instellingen van de bedrijfsportal.

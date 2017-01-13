@@ -1,5 +1,5 @@
 ---
-title: Windows 10-beleidsinstellingen | Microsoft Intune
+title: Windows 10-beleidsinstellingen | Microsoft Docs
 description: Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebouwde en aangepaste instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 De informatie in dit onderwerp kan u helpen de Intune-beleidsinstellingen te begrijpen die u kunt gebruiken voor het beheren van Windows 10-apparaten. Raadpleeg dit onderwerp en de procedures in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) om ingebouwde en aangepaste instellingen te configureren voor geregistreerde Windows 10 desktop- en Windows 10 Mobile-apparaten. U kunt dit beleid niet gebruiken voor pc’s waarop de [Intune-pc-clientsoftware](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune) wordt uitgevoerd.
 

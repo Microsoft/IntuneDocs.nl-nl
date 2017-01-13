@@ -1,5 +1,5 @@
 ---
-title: Windows-apparaatbeheer instellen met Microsoft Intune | Microsoft Intune
+title: Windows-apparaatbeheer instellen met Microsoft Intune | Microsoft Docs
 description: "Schakel het beheer van mobiele apparaten (MDM) in voor Windows-pc’s, waaronder Windows 10-apparaten met Microsoft Intune."
 keywords: 
 author: staciebarker
@@ -13,18 +13,21 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
+ms.sourcegitcommit: 31d58d9973cca4023186731a5411c9c9e830e32a
+ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
 
 
 ---
 
 # <a name="set-up-windows-device-management"></a>Windows apparaatbeheer instellen
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Als Intune-beheerder kunt u de registratie en het beheer voor Windows-pc's op twee manieren inschakelen:
 
-- **[Automatische registratie met Azure Active Directory](#azure-active-directory-enrollment)**: Windows 10- en Windows 10 Mobile-gebruikers registreren hun apparaat door een werk- of schoolaccount toe te voegen op het apparaat
-- **[Registreren via de bedrijfsportal](#company-portal-app-enrollment)**: gebruikers van Windows 8.1 en hoger kunnen hun apparaten registreren door de bedrijfsportal-app te downloaden en te installeren, en vervolgens de inloggegevens van hun werk- of schoolaccount in de app in te voeren.
+- **[Automatische registratie met Azure Active Directory](#azure-active-directory-enrollment)**: Windows 10- en Windows 10 Mobile-gebruikers registreren hun apparaat door een werk- of schoolaccount toe te voegen op het apparaat.
+
+- **[Registreren via de bedrijfsportal](#set-up-company-portal-app-enrollment)**: gebruikers van Windows 8.1 en hoger kunnen hun apparaten registreren door de bedrijfsportal-app te downloaden en te installeren, en vervolgens de inloggegevens van hun werk- of schoolaccount in de app in te voeren.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
@@ -55,23 +58,20 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
 
 3.  **CNAME controleren**<br>Kies in de [Intune-beheerconsole](http://manage.microsoft.com) de optie **Beheer** &gt; **Mobile Device Management**&gt;**Windows**. Voer de URL in van het geverifieerde domein voor de bedrijfswebsite in het vak **Geef een geverifieerde domeinnaam op** en kies vervolgens **Automatische detectie testen**.
 
-  ![Het dialoogvenster Windows-apparaatbeheer](../media/enroll-intune-winenr.png)
-
 4.  **Optionele stappen**<br>De stap **Sideloadsleutels toevoegen** is niet nodig voor Windows 10. De stap **Certificaat voor ondertekening van programmacode uploaden** is alleen nodig als u Line-of-Business-apps (LOB) die niet beschikbaar zijn vanuit Windows Store wilt distribueren op apparaten.
 
 6.  **Laat uw gebruikers weten hoe ze hun apparaten kunnen registreren en wat ze kunnen verwachten nadat deze onder beheer zijn gebracht.**
 
-    Zie [Uw Windows-apparaat inschrijven bij Intune](../enduser/enroll-your-device-in-intune-windows.md) voor inschrijvingsinstructies voor eindgebruikers.
+    Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows) voor inschrijvingsinstructies voor eindgebruikers.
 
-    Zie de volgende artikelen voor meer informatie over taken voor eindgebruikers:
-      - [Bronnen over de eindgebruikerservaring in Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-      - [Richtlijnen voor eindgebruikers van Windows-apparaten](../enduser/using-your-windows-device-with-intune.md)
+    Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor meer informatie over taken voor eindgebruikers.
+
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

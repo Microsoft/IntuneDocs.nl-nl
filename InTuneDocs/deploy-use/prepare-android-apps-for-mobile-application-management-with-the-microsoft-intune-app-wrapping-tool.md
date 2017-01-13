@@ -1,11 +1,11 @@
 ---
-title: Android-apps verpakken met App Wrapping Tool | Microsoft Intune
+title: Android-apps verpakken met App Wrapping Tool | Microsoft Docs
 description: In dit artikel vindt u meer informatie over het verpakken van uw Android-apps zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
 
 
 ---
 
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor Mobile Application Management met Intune App Wrapping Tool
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Gebruik Microsoft Intune App Wrapping Tool voor Android om de werking van in-house Android-apps te wijzigen door de functies van de apps te beperken zonder de code van de apps zelf te wijzigen.
 
@@ -125,7 +127,7 @@ Potentiële adresvervalsing (spoofing), vrijgeven van informatie en uitbreiding 
 
 -   Zorg ervoor dat de invoer-Line-Of-Bussiness-app, de uitvoer-app en de Java KeyStore zich op de Windows-computer bevinden waarop ook App Wrapping Tool wordt uitgevoerd.
 
--   Importeer de uitvoerapp naar de Intune-console op de machine waarop ook de App Wrapping Tool wordt uitgevoerd. Zie [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) voor meer informatie over Java-keytool.
+-   Importeer de uitvoer-app naar de Intune-console op de machine waarop ook de App Wrapping Tool wordt uitgevoerd. Zie [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) voor meer informatie over Java-keytool.
 
 -   Als de uitvoertoepassing en het hulpprogramma zich in een UNC-pad (Universal Naming Convention) bevinden en u het hulpprogramma en de invoerbestanden niet op dezelfde computer uitvoert, stelt u de omgeving zodanig in dat deze wordt beveiligd met [IP-beveiligingsbeleid (IPsec)](http://en.wikipedia.org/wiki/IPsec) of [Server Message Block (SMB)-ondertekening](https://support.microsoft.com/en-us/kb/887429).
 
@@ -140,6 +142,6 @@ Potentiële adresvervalsing (spoofing), vrijgeven van informatie en uitbreiding 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

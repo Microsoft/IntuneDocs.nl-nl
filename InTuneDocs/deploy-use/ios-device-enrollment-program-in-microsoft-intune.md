@@ -1,5 +1,5 @@
 ---
-title: Apple DEP-beheer voor iOS-apparaten | Microsoft Intune
+title: Apple DEP-beheer voor iOS-apparaten | Microsoft Docs
 description: '&quot;Draadloos&quot; een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program (DEP) zijn aangeschaft om Apple-apparaten te beheren.'
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
 
 
 ---
@@ -37,7 +37,7 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
       ![Een Device Enrollment Program-token bijwerken](../media/dev-sa-ios-dep.png)
 
 3.  **Een Device Enrollment Program-token ophalen**</br>
-    Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf. Deze Apple-id moet later worden gebruikt om uw DEP-token te verlengen.
+    Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple ID van uw bedrijf. Deze Apple ID moet later worden gebruikt om uw DEP-token te verlengen.
 
     1.  Ga in de [portal Device Enrollment Program](https://deploy.apple.com) naar **Programma apparaatinschrijving** &gt; **Servers beheren** en kies **MDM-server toevoegen**.
 
@@ -50,7 +50,7 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
     Dit certificaatbestand (.p7m) wordt gebruikt om een vertrouwensrelatie tussen Intune en de Device Enrollment Program-servers van Apple tot stand te brengen.
 
 4.  **Het DEP-token toevoegen aan Intune**</br>
-    In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) gaat u naar **Beheer** &gt; **Mobiele apparaten beheren** &gt; **iOS** &gt; **Programma apparaatinschrijvingen** en kiest u **Het DEP-token uploaden**. **Blader** naar het certificaatbestand (.p7m), voer uw **Apple-id**in en kies **Uploaden**.
+    In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) gaat u naar **Beheer** &gt; **Mobiele apparaten beheren** &gt; **iOS** &gt; **Programma apparaatinschrijvingen** en kiest u **Het DEP-token uploaden**. **Blader** naar het certificaatbestand (.p7m), voer uw **Apple ID**in en kies **Uploaden**.
 
 5.  **Inschrijvingsbeleid voor bedrijfsapparaten toevoegen**</br>
     Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
@@ -85,7 +85,7 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
         - **Wachtwoordcode**: hiermee wordt tijdens de activering gevraagd om de wachtwoordcode. Vraag altijd om een wachtwoordcode tenzij het apparaat wordt beveiligd of de toegang tot het apparaat op een andere manier wordt beheerd (bijvoorbeeld de kioskmodus waarmee op het apparaat maar één app kan worden uitgevoerd).
         - **Locatieservices**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om de service gevraagd
         - **Herstellen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om een iCloud-back-up
-        - **Apple-id**: als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple-id wanneer Intune een app zonder een id probeert te installeren. Een Apple-id is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune.
+        - **Apple ID**: als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple ID wanneer Intune een app zonder een id probeert te installeren. Een Apple ID is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune.
         - **Voorwaarden**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd de voorwaarden van Apple te accepteren
         - **Touch ID**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
         - **Apple Pay**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
@@ -97,7 +97,7 @@ Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP
         - **Toestaan**: hiermee wordt toegestaan dat een apparaat communiceert via een USB-verbinding voor een pc of Mac
         - **Certificaat vereisen**: hiermee is het mogelijk een Mac te koppelen met een certificaat dat is geïmporteerd in het registratieprofiel
 
-6.  **DEP-apparaten toewijzen voor beheer** Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf. Ga naar **Implementatieprogramma** &gt; **Programma apparaatinschrijving** &gt; **Apparaten beheren**. Geef een manier voor **Apparaten kiezen** op, geef apparaatgegevens op en geef apparaatdetails op aan de hand van **Serienummer** en **Bestelnummer** of voer **CSV-bestand uploaden** uit. Selecteer vervolgens **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
+6.  **DEP-apparaten toewijzen voor beheer** Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple ID van uw bedrijf. Ga naar **Implementatieprogramma** &gt; **Programma apparaatinschrijving** &gt; **Apparaten beheren**. Geef een manier voor **Apparaten kiezen** op, geef apparaatgegevens op en geef apparaatdetails op aan de hand van **Serienummer** en **Bestelnummer** of voer **CSV-bestand uploaden** uit. Selecteer vervolgens **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
 
 7.  **DEP-beheerde apparaten synchroniseren** Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) als gebruiker met beheerdersrechten, ga naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving** en kies **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple. Als u DEP-beheerde apparaten wilt bekijken na de synchronisatie, gaat u in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Vooraf geregistreerde bedrijfsapparaten** &gt; **Op iOS-serienummer**. In de werkruimte ** Op iOS-serienummer** wordt de **Status** voor beheerde apparaten weergegeven als 'Geen contact gemaakt' totdat het apparaat wordt ingeschakeld en de configuratieassistent wordt uitgevoerd om het apparaat in te schrijven.
 
@@ -116,6 +116,6 @@ In november wordt apparaatgroepbeheer verplaatst naar Azure Active Directory. Na
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

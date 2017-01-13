@@ -10,18 +10,17 @@
 ## [Verklarende woordenlijst](understand-explore/intune-glossary.md)
 
 # [Aan de slag](get-started/get-started.md)
-## [Snelstartgids](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Intune instellen](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Vereisten](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [Ondersteunde apparaten en browsers](get-started/supported-mobile-devices-and-computers.md)
-#### [Gebruik van netwerkbandbreedte](get-started/network-bandwidth-use.md)
+#### [Netwerkgebruik](get-started/network-bandwidth-use.md)
 ### [Aanmelden bij Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Domeinnaam configureren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Domeinen configureren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Gebruikers toevoegen](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Intune-licenties beheren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Licenties beheren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Gebruikers en apparaten organiseren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Beleid en apps implementeren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Bedrijfsportal aanpassen](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Mobiele apparaten registreren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Apparaten inschrijven](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](get-started/post-configuration-tasks.md)
 ## [Migreren naar Intune](get-started/migrate-to-intune.md)
 ## Volgende stappen
@@ -30,14 +29,22 @@
 ### [Mobiele apps naar uw gebruikers publiceren](get-started/publish-mobile-apps-to-users.md)
 ### [Configuratie van e-mail op mobiele apparaten vereenvoudigen](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Windows-pc's beschermen tegen schadelijke software](get-started/protect-pcs-against-malware-threats.md)
-## [Fasen van de implementatie van Intune](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [Projectbereik](get-started/project-scope.md)
-### [Testen van het concept](get-started/proof-of-concept.md)
-### [Test](get-started/pilot.md)
-### [Implementatie in het bedrijf](get-started/enterprise-rollout.md)
-### [Bewerkingen en onderhoud](get-started/operations-and-maintenance.md)
 
-# [Wat is er nieuw?](whats-new/whats-new-in-microsoft-intune.md)
+# [Plannen en ontwerpen](plan-design/introduction.md)
+## [Sectie 1: Doelen en uitdagingen voor de implementatie bepalen](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [Sectie 2: Use-casescenario's bepalen](plan-design/section-2-identify-use-case-scenarios.md)
+## [Sectie 3: Use-casescenariovereisten bepalen](plan-design/section-3-determine-use-case-requirements.md)
+## [Sectie 4: Een rollout-plan ontwikkelen](plan-design/section-4-develop-a-rollout-plan.md)
+## [Sectie 5: Een communicatieplan ontwikkelen](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [Sectie 6: Een ondersteuningsplan ontwikkelen](plan-design/section-6-develop-a-support-plan.md)
+## [Sectie 7: Een Intune-ontwerp maken](plan-design/section-7-create-an-intune-design.md)
+## [Sectie 8: Intune-implementatie](plan-design/section-8-onboarding-process.md)
+## [Sectie 9: Testen en valideren](plan-design/section-9-test-and-validation.md)
+## [Extra resources](plan-design/additional-resources.md)
+
+# Wat is er nieuw
+## [Wat is er nieuw?](whats-new/whats-new-in-microsoft-intune.md)
+## [Wat is er nieuw (archief)](whats-new/whats-new-archive.md)
 
 # Implementeren en gebruiken
 ## [Overzicht van de levenscycli van apparaten en apps](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -209,6 +216,6 @@
 ## [Problemen met de integratie van Lookout oplossen](troubleshoot/troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

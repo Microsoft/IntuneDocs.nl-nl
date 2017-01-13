@@ -1,5 +1,5 @@
 ---
-title: Vereisten voor registratie van mobiele apparaten | Microsoft Intune
+title: Vereisten voor registratie van mobiele apparaten | Microsoft Docs
 description: Mobile Device Management (MDM)-vereisten instellen en voorbereidingen treffen voor het inschrijven van verschillende besturingssystemen.
 keywords: 
 author: staciebarker
@@ -14,21 +14,24 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Vereisten voor Mobile Device Management in Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Als u wilt dat uw medewerkers hun mobiele apparaten kunnen inschrijven bij Intune, zijn de volgende stappen vereist. Dezelfde stappen zijn vereist voor het beheren van apparaten die eigendom zijn van het bedrijf.
 
 |Stappen|Details|  
 |-----------|-------------|  
 |**Stap 1:** [Verbindingen inschakelen](#step-1-enable-connections)|Zorg ervoor dat uw aangepaste domeinnaam is geconfigureerd en dat de netwerkcommunicatie gereed is|  
 |**Stap 2:** [MDM-instantie instellen](#step-2-set-mdm-authority)|De instantie voor beheer van mobiele apparaten definieert de service die wordt toegewezen aan uw apparaten|
-|**Stap 3:** [Groepen maken](#step-3-create-groups)|Configureer gebruikersgerichte instellingen voor de bedrijfsportalapp|  
-|**Stap 4:** [De bedrijfsportal configureren](#step-4-configure-company-portal)|Configureer gebruikersgerichte instellingen voor de bedrijfsportalapp|  
+|**Stap 3:** [Groepen maken](#step-3-create-groups)|Configureer gebruikersgerichte instellingen voor de bedrijfsportal-app|  
+|**Stap 4:** [De bedrijfsportal configureren](#step-4-configure-company-portal)|Configureer gebruikersgerichte instellingen voor de bedrijfsportal-app|  
 |**Stap 5:** [Gebruikerslicenties toewijzen](#step-5-assign-user-licenses)|Wijs Intune-licenties toe aan gebruikers zodat ze apparaten kunnen inschrijven|
 |**Stap 6:** [Inschrijving inschakelen](#step-6-enable-enrollment)|Schakel platformspecifieke instellingen in voor iOS- en Windows-beheer. Android-apparaten vereisen geen aanvullende configuratie.|
 |**Stap 7:** [Volgende stappen](#step-7-next-steps)|Schakel platformspecifieke instellingen in voor iOS- en Windows-beheer. Android-apparaten vereisen geen aanvullende configuratie.|
@@ -104,7 +107,7 @@ U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur
     |----------|----------------|
     |Themakleur|Selecteer een themakleur die u wilt toepassen op de bedrijfsportal.|
     |Bedrijfslogo opnemen|Als u deze optie inschakelt, kunt u het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. U kunt twee logo's uploaden: één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal wit is en één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal de door u geselecteerde themakleur heeft. Beide logo’s moeten png- of jpg-bestanden zijn met een resolutie van maximaal 400 x 100 pixels en een grootte van maximaal 750 kB.|
-    |Een achtergrond kiezen voor de bedrijfsportalapp|Deze instelling beïnvloedt alleen de achtergrond voor de bedrijfsportalapp.|
+    |Een achtergrond kiezen voor de bedrijfsportal-app|Deze instelling beïnvloedt alleen de achtergrond voor de bedrijfsportal-app.|
 
 
 Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagina **Bedrijfsportal** van de beheerconsole gebruiken om de bedrijfsportalwebsite weer te geven. Deze koppelingen kunnen niet worden gewijzigd. Wanneer een gebruiker zich aanmeldt, worden via deze koppelingen uw abonnementen weergegeven in de bedrijfsportal.

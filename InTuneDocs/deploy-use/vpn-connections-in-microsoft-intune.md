@@ -1,11 +1,11 @@
 ---
-title: VPN-verbindingen | Microsoft Intune
+title: VPN-verbindingen | Microsoft Docs
 description: VPN-profielen gebruiken om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-verbindingen in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een *VPN-verbindingsprofiel* om een verbinding met de VPN-server op te zetten. Gebruik *VPN-profielen* in Microsoft Intune om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken.
 
@@ -67,7 +69,7 @@ L2TP|Aangepast iOS-profiel|Nee |Nee |Nee|Ja (OMA-URI)|Ja|
 > [!IMPORTANT]
 > Voordat u VPN-profielen die op een apparaat zijn geïmplementeerd kunt gebruiken, moet u de betreffende VPN-app voor het profiel installeren. U kunt de informatie in het onderwerp [Apps in Microsoft Intune implementeren](deploy-apps-in-microsoft-intune.md) gebruiken bij het implementeren van de betreffende app met behulp van Intune.  
 
- Zie [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md) (Aangepaste configuraties voor VPN-profielen) voor meer informatie over het maken van aangepaste VPN-profielen met behulp van URI-instellingen.     
+ Zie [Custom configurations for VPN profiles](create-custom-vpn-profiles.md) (Aangepaste configuraties voor VPN-profielen) voor meer informatie over het maken van aangepaste VPN-profielen met behulp van URI-instellingen.     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Methoden voor het beveiligen van VPN-profielen
 
@@ -194,13 +196,10 @@ Na een geslaagde implementatie zien gebruikers de naam van de VPN-verbinding die
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
 
-### <a name="see-also"></a>Zie tevens
-[Aangepaste configuraties voor VPN-profielen](Custom-configurations-for-VPN-profiles.md)
-
-[VPN per app voor Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Dec16_HO3-->
 
 

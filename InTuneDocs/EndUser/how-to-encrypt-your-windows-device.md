@@ -1,5 +1,5 @@
 ---
-title: Uw Windows-apparaat versleutelen | Microsoft Intune
+title: Uw Windows-apparaat versleutelen | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 66edf19ad9cea6f49504b70946b4e0c02dcfc99f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: a3cf36eae0342d2047910d1a7ca0da2acb7d2ae6
 
 
 ---
@@ -31,10 +31,10 @@ Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het appar
 
 2.  Klik op **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

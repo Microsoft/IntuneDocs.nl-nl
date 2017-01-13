@@ -1,5 +1,5 @@
 ---
-title: Uw apparaat voldoet niet aan de minimumvereisten voor de beveiligingspatch | Microsoft Intune
+title: Uw apparaat voldoet niet aan de minimumvereisten voor de beveiligingspatch | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bdcaa12d8b62b5e7497a844d91777e2af0a76bfd
 
 
 ---
@@ -37,10 +37,10 @@ De locatie van de huidige beveiligingspatch kan verschillen, afhankelijk van wel
 
 - Samsung Knox-apparaten: ga naar **Instellingen** > **Systeemupdates** > **Controleren op nieuwe systeemupdate**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

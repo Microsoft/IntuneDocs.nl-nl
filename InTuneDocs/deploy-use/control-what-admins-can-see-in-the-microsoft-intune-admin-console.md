@@ -1,11 +1,11 @@
 ---
-title: Consoleweergaven aanpassen voor beheerdersrollen | Microsoft Intune
+title: Consoleweergaven aanpassen voor beheerdersrollen | Microsoft Docs
 description: U kunt dit onderwerp gebruiken om de Intune-beheerconsoleweergave zodanig filteren dat uw beheerders alleen de items zien die ze voor hun rol nodig hebben.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,19 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 02448f2f960d98b28780798b469aea23cdab0e2d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
 
 
 ---
 
-# Intune-consoleweergaven aanpassen voor beheerdersrollen
+# <a name="customize-intune-console-views-according-to-admin-roles"></a>Intune-consoleweergaven aanpassen voor beheerdersrollen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt de Microsoft Intune-beheerconsoleweergave zodanig filteren dat uw beheerders alleen de items zien die ze voor hun rol nodig hebben. U kunt bijvoorbeeld alleen operators van de beheersconsole toestaan definities voor malware bij te werken of de wachtwoordcode op apparaten opnieuw in te stellen. U kunt dit doen door vooraf ingestelde **aanwijzingen** te gebruiken die u aan specifieke gebruikers toewijst. Wanneer deze gebruikers de beheerconsole openen, zien ze alleen de items die specifiek zijn voor wat aan hen is toegewezen.
 
-## Een aangepaste weergave maken
+## <a name="to-create-a-custom-view"></a>Een aangepaste weergave maken
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) **Beheer** &gt; **Servicebeheerders**.
 
@@ -69,6 +72,6 @@ Wanneer de gebruiker die u hebt geconfigureerd, de eerstvolgende keer de Intune-
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Bestaand zakelijk e-mailaccount gevonden | Microsoft Intune
+title: Bestaand zakelijk e-mailaccount gevonden | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eebc35277aedabb2575b753afbaf9ea05b1555e8
-ms.openlocfilehash: 6b7123dc4ec0b7a73e6e3151ca9c66a65354f9de
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: df92e0945c0ed9387eda14c145b28c604453cb86
 
 
 ---
@@ -33,10 +33,10 @@ U hebt al een zakelijk e-mailaccount. Als u verbinding wilt blijven maken met uw
 
 3.  De nieuwe e-mailinstellingen worden automatisch op uw apparaat toegepast. Dit kan enkele ogenblikken duren.
 
-Als de nieuwe e-mailinstellingen ook na enige tijd niet worden weergegeven, neemt u contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Als de nieuwe e-mailinstellingen ook na enige tijd niet worden weergegeven, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Apps toevoegen | Microsoft Intune
+title: Apps toevoegen | Microsoft Docs
 description: "Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd in dit onderwerp, voordat u begint met het implementeren van apps met Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Apps toevoegen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd in dit onderwerp, voordat u begint met het implementeren van apps met Microsoft Intune. Deze begrippen helpen u te begrijpen welke apps u op welk platform kunt implementeren. Ze helpen u ook om inzicht te krijgen in de vereisten waaraan moet worden voldaan voordat u de apps kunt implementeren.
 
 ## <a name="app-types-that-you-can-deploy"></a>Typen apps die u kunt implementeren
@@ -93,6 +96,6 @@ U moet apps aan de Intune-console toevoegen voordat u ze kunt implementeren. U k
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

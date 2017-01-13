@@ -1,5 +1,5 @@
 ---
-title: iOS- en Mac-beheer instellen | Microsoft Intune
+title: iOS- en Mac-beheer instellen | Microsoft Docs
 description: Beheer van mobiele apparaten (MDM) inschakelen voor iOS-apparaten zoals iPads en iPhones en tevens Mac OS X-apparaten met Microsoft Intune.
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 641d2db2bfb49ce6c4f88d823188a714e61f683c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d4dffccca11582b11196c6441ba8828ceeb4ebb8
 
 
 ---
@@ -32,15 +32,15 @@ Intune maakt beheer van mobiele apparaten (MDM) mogelijk voor iPads, iPhones, en
     ![Het dialoogvenster Een APNs-certificaat uploaden](../media/Intune-iOS-enrollment-with-apns.png)
 
 3.  **Certificaat van Apple Push Notification Service ophalen**<br>
-    Ga naar de [Apple Push Certificates-portal](http://go.microsoft.com/fwlink/?LinkId=269844) en meld u aan met de Apple-id van uw bedrijf om het APNs-certificaat te maken met het .csr-bestand. Nadat u in de Apple Push Certificates-portal **Uploaden** hebt gekozen, ontvangt u een .json-bestand dat niet kan worden gebruikt voor APN’s. Laat het downloaden voltooien en keer terug naar de Apple Push Certificates-portal voor **Certificaten voor servers van derden**. Kies **Downloaden**.
+    Ga naar de [Apple Push Certificates-portal](http://go.microsoft.com/fwlink/?LinkId=269844) en meld u aan met de Apple ID van uw bedrijf om het APNs-certificaat te maken met het CSR-bestand. Nadat u in de Apple Push Certificates-portal **Uploaden** hebt gekozen, ontvangt u een .json-bestand dat niet kan worden gebruikt voor APN’s. Laat het downloaden voltooien en keer terug naar de Apple Push Certificates-portal voor **Certificaten voor servers van derden**. Kies **Downloaden**.
 
     Download het APNs-certificaat (.pem) en sla het bestand lokaal op.
 
     > [!NOTE]
-    > U moet dit APNs-certificaat elk jaar vernieuwen (niet vervangen). Gebruik deze dezelfde Apple-id om u aan te melden bij de Apple Push Certificate-portal om het certificaat te vernieuwen, en gebruik vervolgens opnieuw de instructies in dit onderwerp om het certificaat te downloaden en vervolgens te uploaden naar Intune.
+    > U moet dit APNs-certificaat elk jaar vernieuwen (niet vervangen). Gebruik deze dezelfde Apple ID om u aan te melden bij de Apple Push Certificate-portal om het certificaat te vernieuwen, en gebruik vervolgens opnieuw de instructies in dit onderwerp om het certificaat te downloaden en vervolgens te uploaden naar Intune.
 
 4.  **Het APNs-certificaat toevoegen aan Intune**<br>
-    In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) gaat u naar **Beheer** &gt; **Mobiele apparaten beheren** &gt; **iOS en Mac OS X** &gt; **Een APNs-certificaat uploaden**en kiest u **Het APNs-certificaat uploaden**. Ga naar het certificaatbestand (.pem), klik op **Openen** en voer uw **Apple-id** in. Met het APNs-certificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar ingeschreven mobiele apparaten te pushen.
+    In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) gaat u naar **Beheer** &gt; **Mobiele apparaten beheren** &gt; **iOS en Mac OS X** &gt; **Een APNs-certificaat uploaden**en kiest u **Het APNs-certificaat uploaden**. Ga naar het certificaatbestand (.pem), klik op **Openen** en voer uw **Apple ID** in. Met het APNs-certificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar ingeschreven mobiele apparaten te pushen.
 
 5.  **Laat uw gebruikers weten hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**
 

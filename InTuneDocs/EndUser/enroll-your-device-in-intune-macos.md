@@ -1,5 +1,5 @@
 ---
-title: Uw Mac OS-apparaat registreren bij Intune | Microsoft Intune
+title: Uw Mac OS-apparaat registreren bij Intune | Microsoft Docs
 description: Informatie over hoe u een Mac OS-apparaat bij Intune kunt registreren
 keywords: Mac OS X, Mac OS, OS X
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 70b11804b6b96e76b43cc450ac4c433fb31be6f8
 
 
 ---
@@ -28,8 +28,8 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
   > [!NOTE]
   > Als u een iOS-apparaat probeert te registreren, zoals een iPhone of iPad, [volgt u in plaats daarvan deze instructies](enroll-your-device-in-intune-ios.md).
 
-1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [Bedrijfsportal-website](http://portal.manage.microsoft.com).
-2. Meld u aan bij de Bedrijfsportal-website met uw werk- of schoolaccount.
+1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount.
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
@@ -60,7 +60,7 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
 
  ![Mac OS-profiel geïnstalleerd](./media/macOS_enroll_006_sysprefs_installed_profile.png)
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportal-website](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 
 

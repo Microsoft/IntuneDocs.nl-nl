@@ -1,5 +1,5 @@
 ---
-title: VPN per app voor Android met behulp van Pulse Secure | Microsoft Intune
+title: VPN per app voor Android met behulp van Pulse Secure | Microsoft Docs
 description: U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd door Intune.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 U kunt een VPN-profiel per app maken voor apparaten met Android 5.0 en hoger die worden beheerd met Intune. Maak eerst een VPN-profiel met het verbindingstype Pulse Secure of Citrix. Maak vervolgens een aangepast configuratiebeleid dat het VPN-profiel aan specifieke apps koppelt. 
 
@@ -78,6 +80,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

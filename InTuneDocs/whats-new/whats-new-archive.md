@@ -1,6 +1,6 @@
 ---
-title: Archief Wat is er nieuw | Microsoft Intune
-description: Archief Wat is er nieuw in Microsoft Intune-aankondigingen
+title: Wat is er nieuw (archief) | Microsoft Docs
+description: Wat is er nieuw in Microsoft Intune-aankondigingen (archief)
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,12 +14,12 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4dab832da4490c3df045d2c627b231028c92b25
-ms.openlocfilehash: 8e8c4f9708994275c36a2e9bd5ad4dff171a8756
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 53d53edf174b325788c10e0c553addf3e4078509
 
 
 ---
-# <a name="whats-new---archive"></a>Wat is er nieuw - Archief
+# <a name="whats-new---archive"></a>Wat is er nieuw (archief)
 
 Deze pagina bevat een overzicht van de aankondigingen die de afgelopen zes maanden zijn gedaan in [Wat is er nieuw in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
@@ -30,6 +30,6 @@ Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voo
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

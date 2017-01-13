@@ -1,5 +1,5 @@
 ---
-title: De Intune-bedrijfsportalapp installeren en u hierbij aanmelden | Microsoft Intune
+title: De Intune-bedrijfsportal-app installeren en u hierbij aanmelden | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,31 +15,31 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: fa7527d3dad71fada2abd0aeb8e2dd0f76b983b3
 
 
 ---
 
 
-# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>De Intune-bedrijfsportalapp installeren en u hierbij aanmelden
+# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>De Intune-bedrijfsportal-app installeren en u hierbij aanmelden
 
-De bedrijfsportalapp is een app die u op het iOS-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportalapp hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie.
+De bedrijfsportal-app is een app die u op het iOS-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportal-app hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie.
 
 1.  Ga naar de **App Store** en zoek naar **Intune**.
 
 2.  Download de **Microsoft Intune-bedrijfsportal**-app.
 
-    ![De Microsoft Intune-bedrijfsportalapp downloaden](./media/ios-cpinstall-1-cpinstore.png)
+    ![De Microsoft Intune-bedrijfsportal-app downloaden](./media/ios-cpinstall-1-cpinstore.png)
 
-3.  Open de bedrijfsportalapp, voer het e-mailadres en het wachtwoord van uw werk of school in en tik vervolgens op **Aanmelden**.
+3.  Open de bedrijfsportal-app, voer het e-mailadres en het wachtwoord van uw werk of school in en tik vervolgens op **Aanmelden**.
 
-    Als u zich voor het eerst aanmeldt bij de bedrijfsportalapp en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) om uw apparaat te registreren.
+    Als u zich voor het eerst aanmeldt bij de bedrijfsportal-app en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) om uw apparaat te registreren.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

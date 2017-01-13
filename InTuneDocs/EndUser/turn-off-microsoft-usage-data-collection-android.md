@@ -1,11 +1,11 @@
 ---
-title: Verzameling van Microsoft-gebruiksgegevens uitschakelen voor Android| Microsoft Intune
+title: Verzameling van Microsoft-gebruiksgegevens uitschakelen | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: ca96e8d4aed005db46bdb468268e2f86e6e9e1d4
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b2554e66150f8b6d61f184bf739750c482b3058e
 
 
 ---
 
-
 # <a name="turn-off-microsoft-usage-data-collection"></a>Schakel het verzamelen van Microsoft-gebruiksgegevens uit
-Microsoft verzamelt automatisch anonieme gegevens over de betrouwbaarheid, de prestaties en het gebruik van de bedrijfsportalapp om Microsoft-producten en -services te verbeteren. U kunt het verzamelen van die gegevens op een Android-apparaat uitschakelen met de instelling **Gebruiksgegevens** in de bedrijfsportalapp. IT-beheerders hebben geen controle over het verzamelen van de gegevens en ze kunnen uw selectie voor deze instelling niet wijzigen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Microsoft verzamelt automatisch bepaalde gegevens over onze producten en services. We doen dit om de betrouwbaarheid en prestaties van onze producten, waaronder de bedrijfsportal-app, te verbeteren. Hoewel deze gegevens worden geanonimiseerd, is het mogelijk dat sommige gebruikers het verzamelen van deze gegevens niet prettig vinden. Uw IT-beheerder heeft geen controle over het verzamelen van deze gegevens en kan uw selectie voor deze instelling niet wijzigen.
+
+U kunt het verzamelen van die gegevens op uw Android-apparaat uitschakelen met de instelling **Gebruiksgegevens** in de bedrijfsportal-app.
+
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

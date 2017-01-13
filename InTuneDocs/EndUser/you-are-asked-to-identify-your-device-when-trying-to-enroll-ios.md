@@ -1,5 +1,5 @@
 ---
-title: U wordt gevraagd uw apparaat te identificeren wanneer u het apparaat probeert te registreren| Microsoft Intune
+title: U wordt gevraagd uw apparaat te identificeren wanneer u het apparaat probeert te registreren| Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
 
 
 ---
@@ -30,10 +30,10 @@ Als u uw iOS- of Mac OS-apparaat probeert te registeren in Intune en u ziet een 
 2. Tik op **doorgaan**.
 3. Voer de laatste vier tekens van het serienummer van uw apparaat in, zodat Intune kan bevestigen dat het apparaat is geregistreerd. Zie [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-ios.md) om te zien hoe u uw serienummer vindt.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

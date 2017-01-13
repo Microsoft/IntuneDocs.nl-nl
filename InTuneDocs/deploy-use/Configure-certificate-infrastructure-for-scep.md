@@ -1,5 +1,5 @@
 ---
-title: De certificaatinfrastructuur voor SCEP configureren |Microsoft Intune
+title: De certificaatinfrastructuur voor SCEP configureren |Microsoft Docs
 description: Infrastructuur voor het maken en implementeren van SCEP-certificaatprofielen.
 keywords: 
 author: robstackmsft
@@ -14,11 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>De certificaatinfrastructuur voor SCEP configureren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In dit onderwerp wordt beschreven welke infrastructuur u nodig hebt om SCEP-certificaatprofielen te maken en implementeren.
 
 ### <a name="on-premises-infrastructure"></a>Lokale infrastructuur
@@ -93,7 +96,7 @@ In deze taak:
 
 ##### <a name="to-configure-the-certification-authority"></a>De certificeringsinstantie configureren
 
-1.  Meld u aan als ondernemingsbeheerder. 
+1.  Meld u aan als ondernemingsbeheerder.
 
 2.  Gebruik op de verlenende CA de module Certificaatsjablonen om een nieuwe aangepaste sjabloon te maken of een bestaande sjabloon te kopiëren en vervolgens een bestaande sjabloon te bewerken (zoals de gebruikerssjabloon) voor gebruik met NDES.
 
@@ -109,7 +112,7 @@ In deze taak:
         > Bewerk voor iOS- en Mac OS X-certificaatsjablonen op het tabblad **Extensies** het **sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
 
     -   Selecteer op het tabblad **Beveiliging** het NDES-serviceaccount en wijs hieraan de machtiging **Registreren** toe voor de sjabloon. Intune-beheerders die SCEP-profielen maken, vereisen **leesrechten** om naar de sjabloon te kunnen bladeren tijdens het maken van SCEP-profielen.
-    
+
     > [!NOTE]
     > Voor het intrekken van certificaten moet het NDES-serviceaccount voor elk certificaatsjabloon die door een certificaatprofiel wordt gebruikt, beschikken over rechten voor het *verlenen en beheren van certificaten*.
 
@@ -120,19 +123,19 @@ In deze taak:
 
 Hier volgen schermafbeeldingen van de configuratie van een voorbeeldsjabloon.
 
-![Sjabloon, tabblad Afhandeling van aanvragen](..\media\scep_ndes_request_handling.png) 
+![Sjabloon, tabblad Afhandeling van aanvragen](..\media\scep_ndes_request_handling.png)
 
-![Sjabloon, tabblad Onderwerpnaam](..\media\scep_ndes_subject_name.jpg) 
+![Sjabloon, tabblad Onderwerpnaam](..\media\scep_ndes_subject_name.jpg)
 
-![Sjabloon, tabblad Beveiliging](..\media\scep_ndes_security.jpg) 
+![Sjabloon, tabblad Beveiliging](..\media\scep_ndes_security.jpg)
 
-![Sjabloon, tabblad Extensies](..\media\scep_ndes_extensions.jpg) 
+![Sjabloon, tabblad Extensies](..\media\scep_ndes_extensions.jpg)
 
-![Sjabloon, tabblad Uitgiftevereisten](..\media\scep_ndes_issuance_reqs.jpg) 
+![Sjabloon, tabblad Uitgiftevereisten](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > Voor Toepassingsbeleid (in de vierde schermafbeelding) voegt u alleen het benodigde toepassingsbeleid toe. Leg uw keuzes voor aan de beveiligingsbeheerder.
-   
+
 
 
 Als u de CA zo wilt configureren dat de aanvrager de geldigheidsperiode kan opgeven, voert u op de CA de volgende opdrachten uit:
@@ -239,12 +242,12 @@ In deze taak:
 
 4. Kies in IIS-manager achtereenvolgens **Standaardwebsite** -> **Filtering aanvragen** -> **Functie-instellingen bewerken** en wijzig de **Maximale URL-lengte** en **Maximale querytekenreeks** in *65534*, zoals wordt weergegeven.
 
-    ![Maximale lengte van de URL's en query’s van IIS](..\media\SCEP_IIS_max_URL.png) 
+    ![Maximale lengte van de URL's en query’s van IIS](..\media\SCEP_IIS_max_URL.png)
 
 5.  Start de server opnieuw op. U kunt de wijzigingen niet voltooien door **iisreset** uit te voeren op de server.
 6. Blader naar http://*FQDN*/certsrv/mscep/mscep.dll. Hier wordt een NDES-pagina weergegeven die vergelijkbaar is met de volgende:
 
-    ![Test NDES](..\media\SCEP_NDES_URL.png) 
+    ![Test NDES](..\media\SCEP_NDES_URL.png)
 
     Als het bericht **503 - Service niet beschikbaar** wordt weergegeven, controleert u de logboeken. De groep van toepassing is waarschijnlijk gestopt vanwege een ontbrekend recht voor de NDES-gebruiker. Deze rechten worden beschreven in Taak 1.
 
@@ -350,6 +353,6 @@ U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Ce
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

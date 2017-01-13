@@ -1,11 +1,11 @@
 ---
-title: De regel Device Threat Protection inschakelen in het nalevingsbeleid | Microsoft Intune
+title: De regel Device Threat Protection inschakelen in het nalevingsbeleid | Microsoft Docs
 description: De regel Mobile Threat Protection inschakelen in het nalevingsbeleid van het apparaat.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,41 +14,41 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: efddf7645d0548c842ae8aa3b1ca5222023913b5
+ms.sourcegitcommit: 80e96003c584c67cb6b0289a7e2ed1ff3a833c2c
+ms.openlocfilehash: 3dea6c35d5fc035a5aef6dda52543b64cd5ce177
 
 
 ---
 
 # <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>De regel Device Threat Protection inschakelen in het nalevingsbeleid
-Met Intune en Lookout Mobile Threat Protection kunt u mobiele bedreigingen detecteren en een risicoanalyse maken op het apparaat. U kunt een nalevingsbeleidsregel maken om de risicoanalyse mee te nemen bij het bepalen of het apparaat compatibel is. Vervolgens kunt u het beleid voor voorwaardelijke toegang gebruiken om toegang tot Exchange, SharePoint en andere services toe te staan of te blokkeren op basis van de apparaatcompatibiliteit.
 
-Als de bedreigingsdetectie van Lookout van invloed moet zijn op het nalevingsbeleid voor het apparaat:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-* De regel **Device Threat Protection** moet zijn ingeschakeld in het nalevingsbeleid.
+Met Intune met Lookout Mobile Threat Protection kunt u bedreigingen op mobiele apparaten detecteren en de risico's op die apparaten beoordelen. U kunt een nalevingsbeleidsregel maken voor risicoanalyse om te bepalen of het apparaat compatibel is. Vervolgens kunt u beleid voor voorwaardelijke toegang gebruiken om toegang tot services te blokkeren op basis van de apparaatcompatibiliteit.
 
-* De status op de pagina **Lookout-status** in de **Intune-beheerconsole** moet **Actief** zijn. Zie het onderwerp [Lookout MTP-verbinding in Intune inschakelen](enable-lookout-mtp-connection-in-intune.md) voor meer informatie en instructies over het activeren van de Lookout-integratie.
+Vereisten voor nalevingsbeleid met Lookout Device Threat Protection:
 
+- [Abonnement op Lookout Device Threat Protection](set-up-your-subscription-with-lookout-mtp.md)
+- [De Lookout-verbinding in Intune inschakelen](enable-lookout-mtp-connection-in-intune.md)
+- [De Lookout for Work-app configureren](configure-and-deploy-lookout-for-work-apps.md)
 
-Voordat u de regel Device Threat Protection maakt in het nalevingsbeleid, raden we u aan uw [abonnement in te stellen met Lookout Device Threat Protection](set-up-your-subscription-with-lookout-mtp.md), de [Lookout-verbinding in Intune in te schakelen](enable-lookout-mtp-connection-in-intune.md) en de [Lookout for Work-app te configureren](configure-and-deploy-lookout-for-work-apps.md). De nalevingsregel wordt pas afgedwongen nadat de installatie is voltooid.
+Als onderdeel van de configuratie van Lookout Device Threat Protection in de [Lookout-console](https://aad.lookout.com) hebt u een beleid gemaakt waarmee verschillende bedreigingen in de categorieën Hoog, Gemiddeld en Laag worden ingedeeld. In het nalevingsbeleid van Intune stelt u het maximaal toegestane bedreigingsniveau in.
 
-Als u de Device Threat Protection-regel wilt inschakelen, kunt u een bestaand nalevingsbeleid gebruiken of een nieuw beleid maken.
+1. In de [Intune-beheerconsole](https://manage.microsoft.com) gaat u naar de pagina **Nalevingsbeleid**. U kunt een bestaand nalevingsbeleid gebruiken of een nieuw beleid maken. Ga naar **Apparaatstatus** en schakel **Device Threat Protection** in.
+  ![schermopname met de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-rule.png)
 
-Als onderdeel van de configuratie van Lookout Device Threat Protection in de [Lookout-console](https://aad.lookout.com) hebt u een beleid gemaakt waarmee verschillende bedreigingen in de categorieën Hoog, Gemiddeld en Laag worden ingedeeld. In het nalevingsbeleid van Intune stelt u met het bedreigingsniveau het maximaal toegestane bedreigingsniveau in.
-
-Ga op de pagina **Nalevingsbeleid** van de **Intune-beheerconsole** naar **Apparaatstatus** en schakel de regel **Device Threat Protection** in met de wisselknop. Selecteer vervolgens het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
-* **Geen (beveiligd)**: dit is het meest veilige niveau.  Dit betekent dat er op het apparaat geen bedreigingen mogen staan.  Als er bedreigingen van welk niveau dan ook worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.  
-* **Laag**: het apparaat wordt als compatibel geëvalueerd als er bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
-* **Gemiddeld**: Het apparaat wordt als compatibel geëvalueerd als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
-* **Hoog**: dit is de minst veilige optie. Het komt erop neer dat alle bedreigingsniveaus worden toegestaan. Dit is mogelijk alleen nuttig als u deze oplossing slechts voor rapportagedoeleinden gebruikt.
-
-![schermopname met de instelling voor de regel Device Threat Protection ](../media/mtp/mtp-compliance-policy-rule.png)
+2. Selecteer **Maximaal toegestaan bedreigingsniveau**:
+  * **Geen (beveiligd)**: dit is het meest veilige niveau.  Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen.  Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.  
+  * **Laag**: het apparaat is compatibel als er alleen bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
+  * **Gemiddeld**: het apparaat is compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
+  * **Hoog**: dit is de minst veilige optie. Hiermee worden alle bedreigingsniveaus toegestaan en Lookout Mobile Threat Protection wordt alleen voor rapportagedoeleinden gebruikt.
 
 ![schermopname met de optie voor het bedreigingsniveau voor de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-setting.png)
 
-Als u beleid voor voorwaardelijke toegang voor Office 365 en andere services maakt, wordt bovenstaande compatibiliteitsevaluatie in acht genomen en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging is opgelost.
+Als u beleid voor voorwaardelijke toegang voor Office 365 of andere services maakt, wordt deze compatibiliteitsevaluatie bekeken en wordt niet-compatibele apparaten de toegang tot die services geweigerd tot de bedreiging is opgelost.
 
-U kunt de compatibiliteitsstatus van een apparaat bekijken op de pagina **Alle apparaten** van de **Intune-beheerconsole**.
+## <a name="monitor-device-threats"></a>Apparaatbedreigingen bewaken
+Ga naar [Alle apparaten](https://manage.microsoft.com) in de **Intune-beheerconsole** om de compatibiliteitsstatus van een apparaat te bekijken.
 
 ![schermopname van de pagina Apparaten in de Intune-beheerconsole waarop de compatibiliteitsstatus van een apparaat is weergeven](../media/mtp/mtp-device-status-intune-console.png)
 
@@ -62,6 +62,6 @@ U kunt de compatibiliteitsstatus van een apparaat bekijken op de pagina **Alle a
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

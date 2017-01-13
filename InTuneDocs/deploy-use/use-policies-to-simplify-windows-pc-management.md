@@ -1,11 +1,11 @@
 ---
-title: Beleid gebruiken om het beheer van Windows-pc&quot;s te vereenvoudigen | Microsoft Intune
+title: Beleid gebruiken om het beheer van Windows-pc&quot;s te vereenvoudigen | Microsoft Docs
 description: Hierin worden het beheerbeleid voor Windows-pc&quot;s en de instellingen voor Microsoft Intune Center beschreven.
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Beleid gebruiken om het beheer van Windows-pc's te vereenvoudigen
 
-Windows-pc's met de Intune-softwareclient kunnen worden beheerd met behulp van het Intune-beleid **Computerbeheer**. Gebruik het beleid van Intune voor **Computerbeheer** om de instellingen te configureren in Microsoft Intune Center, de updates naar pc's te beheren en om Windows Firewall voor pc's te configureren.
+Als u Windows-desktops als pc's wilt beheren, door daarop de Intune-softwareclient uit te voeren, kunt u alleen gebruikmaken van de beleidsregels onder het **Computerbeheer**-beleid in de Intune-beheerconsole. Alle in de beheerconsole vermelde beleidsregels gelden alleen voor mobiele apparaten. Met het **Computerbeheer**-beleid kunt u de instellingen configureren in Microsoft Intune Center, de updates naar pc's beheren en Windows Firewall voor pc's configureren.
 
 ![Beleidssjablonen voor Windows-pc’s](../media/pc_policy_template.png)
 
@@ -63,6 +63,6 @@ Zie de volgende bronnen voor meer informatie over beleidsregels en instellingen 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

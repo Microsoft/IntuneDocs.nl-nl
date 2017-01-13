@@ -1,11 +1,11 @@
 ---
-title: Apps geschikt maken voor beheer van mobiele apps | Microsoft Intune
+title: Apps geschikt maken voor beheer van mobiele apps | Microsoft Docs
 description: Aan de hand van de informatie in dit onderwerp kunt u beslissen wanneer u het hulpmiddel App Wrapping en de App SDK moet gebruiken om uw aangepaste LOB-apps in te schakelen voor gebruik van de beleidsregels voor het beheren van mobiele apps.
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 8ee3f539e619d4646013db4982ea96223eea5896
 
 
 ---
 
 # <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt uw apps gebruik laten maken van Mobile Application Management-beleid (MAM) door de Intune App Wrapping Tool of de Intune App SDK te gebruiken. In deze informatie wordt uitgelegd hoe en wanneer u deze twee methoden gebruikt.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
@@ -106,6 +109,6 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

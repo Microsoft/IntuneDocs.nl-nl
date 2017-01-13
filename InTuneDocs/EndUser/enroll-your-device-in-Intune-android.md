@@ -1,11 +1,11 @@
 ---
-title: Uw Android-apparaat registreren bij Intune | Microsoft Intune
+title: Uw Android-apparaat registreren bij Intune | Microsoft Docs
 description: Hierin wordt beschreven hoe u een Android-apparaat bij Intune kunt inschrijven
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/09/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
-ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
+ms.sourcegitcommit: 385565bd1ce05c9402a52cdd6eeb93f58caaf72a
+ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 # <a name="enroll-your-android-device-in-intune"></a>Uw Android-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Android-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn apparaat registreer?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over registratie.
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Android-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) voor meer informatie over registratie.
 
 Deze registratie-instructies zijn bestemd voor Samsung Knox Android-apparaten en 'native' Android-apparaten (niet-Samsung Knox). Als u wilt controleren of u een Samsung KNOX-apparaat hebt, gaat u naar **Instellingen** &gt; **Over het apparaat**. Als de KNOX-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
 
@@ -39,15 +39,15 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
 3.  Tik in het **aanmeldingsscherm** van de bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount.
 
-    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-0-welcome-screen.png)   
+    ![android-bedrijfsportal-aanmelden](./media/and-enroll-0-welcome-screen.png)   
 
 4.  Als de IT-beheerder voorwaarden van het bedrijf heeft ingesteld, tikt u op **ACCEPTEREN** om de voorwaarden te accepteren.
 
-    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3-accept-terms.png)
+    ![android-bedrijfsportal-aanmelden](./media/and-enroll-3-accept-terms.png)
 
-5.  Meld u aan bij de bedrijfsportalapp met uw werk- of schoolaccount en wachtwoord, en tik vervolgens op **Aanmelden**.
+5.  Meld u aan bij de bedrijfsportal-app met uw werk- of schoolaccount en wachtwoord, en tik vervolgens op **Aanmelden**.
 
-    ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
+    ![android-bedrijfsportal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
 
 6.  Tik in het scherm **Instellen van bedrijfstoegang** op **STARTEN**.
 
@@ -70,7 +70,7 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
     Als de IT-beheerder bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
     -   **De bedrijfsportal toestaan telefoongesprekken uit te voeren en te beheren?**
 
-        ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
+        ![android-bedrijfsportal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
 
     Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit telefoongesprekken uitvoert of beheert**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, staat u alleen toe dat het IMEI-nummer ( International Mobile Equipment Identity) van uw apparaat wordt verzonden naar Intune. Het IMEI-nummer is vergelijkbaar met een serienummer en is uniek voor een mobiel apparaat.
 
@@ -78,9 +78,9 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
     -   **Toestaan dat Bedrijfsportal toegang heeft tot uw contactpersonen?**
 
-        ![android-bedrijfsportal-portal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
+        ![android-bedrijfsportal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportalapp uw werkaccount worden gemaakt, gebruikt en beheerd.
+    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
 
     Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
 
@@ -114,6 +114,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

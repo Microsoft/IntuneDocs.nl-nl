@@ -1,11 +1,11 @@
 ---
-title: Uw Windows-apparaat handmatig synchroniseren | Microsoft Intune
+title: Uw Windows-apparaat handmatig synchroniseren | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,45 +15,26 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
+ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
+ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 
 ---
 
-
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
-Als de installatie van de app te lang duurt, kunt u proberen om uw apparaat handmatig te synchroniseren. Dit kan helpen om de installatie te versnellen.
 
-Alleen de volgende versies worden ondersteund. Als uw apparaat niet wordt weergegeven, wordt synchronisatie niet ondersteund. Volg de instructies voor het type apparaat dat u hebt.
+Soms kan het installeren van een app op een Windows-apparaat langer duren dan u denkt. In dat geval kunt u proberen het Windows-apparaat handmatig te synchroniseren. Synchronisatie kan bijdragen aan een snellere installatie.
 
-* [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note] 
+> De installatie van apps kan wat langer duren in een trager netwerk of als er grotere hoeveelheden apparaten op hetzelfde moment inhoud downloaden.
 
+In de volgende versies van Windows kunt u handmatig synchroniseren. Als uw apparaat een andere versie van Windows gebruikt, kunt u helaas geen handmatige synchronisatie uitvoeren.
 
-## <a name="windows-10-mobile"></a>Windows 10 Mobile
-Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
+* [Synchroniseren met Windows 10 Desktop](#windows-10-desktop)
+* [Synchroniseren met Windows 10 Mobile](#windows-10-mobile)
+* [Synchroniseren met Windows Phone 8.1](#windows-phone-81)
 
-1. Ga naar **Alle apps** > **Instellingen** > **Accounts**.
-
-    ![Accounts kiezen op het scherm Instellingen](./media/win10m-sync-1-settings-accounts.png)
-
-2. Kies **Toegang via het werknetwerk**.
-
-    ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10m-sync-2-work-access.png)
-
-3. Kies onder **Registreren voor apparaatbeheer** de naam van uw bedrijf.
-
-    ![De naam van het bedrijf kiezen voor apparaatbeheer](./media/win10m-sync-3-tap-comp-name.png)
-
-4. Kies het pictogram **Synchroniseren**.
-
-    ![Het pictogram Synchroniseren kiezen](./media/win10m-sync-4-tap-sync.png)
-
-    Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven. De knop **Synchroniseren** is pas beschikbaar nadat de synchronisatie van het apparaat is voltooid.
-
-## <a name="windows-10-desktop"></a>Windows 10-bureaublad
+## <a name="windows-10-desktop"></a>Windows 10 Desktop
 Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen. Bekijk de schermafbeeldingen om te zien welke stappen u het beste kunt gebruiken en volg dan de stappen die betrekking hebben op uw apparaat.
 
 1. Kies de knop **Start** en kies vervolgens **Instellingen**.
@@ -109,6 +90,27 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
    De knop wordt uitgeschakeld totdat de synchronisatie is voltooid.
 
+   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
+   Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
+
+   1. Ga naar **Alle apps** > **Instellingen** > **Accounts**.
+
+       ![Accounts kiezen op het scherm Instellingen](./media/win10m-sync-1-settings-accounts.png)
+
+   2. Kies **Toegang via het werknetwerk**.
+
+       ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10m-sync-2-work-access.png)
+
+   3. Kies onder **Registreren voor apparaatbeheer** de naam van uw bedrijf.
+
+       ![De naam van het bedrijf kiezen voor apparaatbeheer](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. Kies het pictogram **Synchroniseren**.
+
+       ![Het pictogram Synchroniseren kiezen](./media/win10m-sync-4-tap-sync.png)
+
+       Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven. De knop **Synchroniseren** is pas beschikbaar nadat de synchronisatie van het apparaat is voltooid.
+
 ## <a name="windows-phone-81"></a>Windows Phone 8,1
 Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
 
@@ -126,10 +128,10 @@ Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchron
 
    Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven tot het apparaat is gesynchroniseerd.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

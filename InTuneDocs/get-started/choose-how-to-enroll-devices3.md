@@ -1,12 +1,12 @@
 ---
-title: Kiezen hoe u mobiele apparaten registreert |Microsoft Intune
+title: Kiezen hoe u mobiele apparaten registreert |Microsoft Docs
 description: Bepalen hoe u mobiele apparaten in Intune kunt registreren door enkele eenvoudige vragen te beantwoorden
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/14/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,12 +14,14 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: 09007527fe4c2c94c02a674ccef01c0bb8893709
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: ad4367beb27d4defbf44ce4a041a29e24f59ede0
 
 
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Kiezen hoe u mobiele apparaten registreert
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke registratiemethode u het beste kunt gebruiken voor de apparaten die u beheert.
 
@@ -39,6 +41,6 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

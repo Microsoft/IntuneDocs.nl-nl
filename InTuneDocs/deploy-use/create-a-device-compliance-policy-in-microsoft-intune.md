@@ -1,5 +1,5 @@
 ---
-title: Een nalevingsbeleid voor apparaten maken | Microsoft Intune
+title: Een nalevingsbeleid voor apparaten maken | Microsoft Docs
 description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc&quot;s die worden gebruikt voor toegang tot uw bedrijfsgegevens.
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid voor apparaten maken in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In dit onderwerp worden de stappen beschreven die u kunt volgen om nalevingsbeleid te maken waaraan een apparaat zich moet houden om aan dat beleid te voldoen.
 
 ##  <a name="step-1-add-a-new-policy"></a>Stap 1: Een nieuw beleid toevoegen
@@ -28,7 +31,7 @@ In dit onderwerp worden de stappen beschreven die u kunt volgen om nalevingsbele
 
   ![Schermafbeelding van de pagina met nalevingsbeleid in de Intune-beheerconsole, waarop de optie Toevoegen in het menu boven aan de pagina wordt weergegeven](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>Stap 2: Instellingen configureren
+##  <a name="step-2--configure-settings"></a>Stap 2: Instellingen configureren
 Op de pagina **Beleid maken** configureert u de instellingen die u nodig hebt:
   -   De systeembeveiligingsinstellingen, zoals wachtwoorden en versleuteling.
   -   De apparaatstatusinstellingen, zoals of een apparaat is gekraakt of door de Windows-apparaatstatusservice Health Attestation als in orde wordt gerapporteerd.

@@ -1,11 +1,11 @@
 ---
-title: Apps implementeren | Microsoft Intune
+title: Apps implementeren | Microsoft Docs
 description: Gebruik de informatie in dit onderwerp om apps met Microsoft Intune te implementeren.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,13 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
-ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Apps in Microsoft Intune implementeren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Gebruik de informatie in dit onderwerp om apps met Microsoft Intune te implementeren.
 
@@ -72,6 +74,6 @@ Nadat u een app hebt geïmplementeerd, is het een goed idee om de voortgang erva
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

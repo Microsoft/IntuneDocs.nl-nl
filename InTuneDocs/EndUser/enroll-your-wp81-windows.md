@@ -1,11 +1,11 @@
 ---
-title: Uw Windows Phone 8.1-apparaat registreren bij Intune | Microsoft Intune
+title: Uw Windows Phone 8.1-apparaat registreren bij Intune | Microsoft Docs
 description: Beschrijft hoe u een Windows Phone 8.1-apparaat bij Intune kunt inschrijven
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: 756dc97161c560bd44ab003db64584c77661b625
 
 
 ---
@@ -83,10 +83,10 @@ Uw apparaat inschrijven:
 
 Als uw IT-beheerder de bedrijfsportal zo heeft ingesteld dat deze tijdens de inschrijving is geïnstalleerd, wordt de bedrijfsportal weergegeven in de lijst met apps.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

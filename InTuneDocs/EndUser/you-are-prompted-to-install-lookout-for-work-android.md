@@ -1,5 +1,5 @@
 ---
-title: U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat | Microsoft Intune
+title: U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
 
 
 ---
@@ -78,10 +78,10 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit gebeurt, installeer Lookout for Work dan handmatig vanuit de Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Uw Android-apparaat is geroot en u kunt geen verbinding maken | Microsoft Intune
+title: Uw Android-apparaat is geroot en u kunt geen verbinding maken | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
-ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b0684903a8a4d78620f0ef3f8530438419924dc
 
 
 ---

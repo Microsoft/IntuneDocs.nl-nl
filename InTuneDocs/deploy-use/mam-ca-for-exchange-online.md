@@ -1,5 +1,5 @@
 ---
-title: App-toegang configureren voor Exchange Online | Microsoft Intune
+title: App-toegang configureren voor Exchange Online | Microsoft Docs
 description: In dit onderwerp wordt beschreven hoe u een beleid voor voorwaardelijke toegang voor MAM-apps kunt configureren.
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
 
 
 ---
 
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Beleid voor voorwaardelijke toegang maken zodat alleen apps die worden ondersteund door MAM toegang hebben tot Exchange Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dit onderwerp bevat stapsgewijze instructies over het instellen van voorwaardelijke toegang voor Exchange Online zodat alleen mobiele apps die ondersteuning bieden voor Intune MAM-beleidsregels (Mobile App Management).
 
 
@@ -34,7 +37,7 @@ Dit onderwerp bevat stapsgewijze instructies over het instellen van voorwaardeli
 3.  Kies in de blade **Toegestane apps** de optie **Apps met ondersteuning voor Intune-beleid toestaan** als alleen apps met ondersteuning voor Intune MAM-beleid toegang mogen hebben tot Exchange Online. Wanneer u deze optie selecteert, wordt de lijst met ondersteunde apps weergegeven.
 
   >[!NOTE]
-  >Alle Exchange Active Sync-e-mailclients, met inbegrip van de ingebouwde e-mailclients op iOS en Android die verbinding met Exchange Online maken, kunnen geen e-mail verzenden of ontvangen. In plaats daarvan ontvangen gebruikers één e-mailbericht dat ze de Outlook-e-mailapp moeten gebruiken. 
+  >Alle Exchange Active Sync-e-mailclients, met inbegrip van de ingebouwde e-mailclients op iOS en Android die verbinding met Exchange Online maken, kunnen geen e-mail verzenden of ontvangen. In plaats daarvan ontvangen gebruikers één e-mailbericht dat ze de Outlook-e-mail-app moeten gebruiken. 
 4.   Als u dit beleid wilt toepassen op gebruikers, opent u de blade **Beperkte gebruikersgroepen** en kiest u **Gebruikersgroep toevoegen**. Selecteer een of meer gebruikersgroepen waarop u dit beleid wilt toepassen.
 
   ![Schermafbeelding van de blade Beperkte gebruikersgroepen met de optie Gebruikersgroep toevoegen gemarkeerd](../media/mam-ca-add-user-group.png)

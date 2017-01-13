@@ -1,5 +1,5 @@
 ---
-title: Uw Windows 10-apparaat inschrijven bij Intune | Microsoft Intune
+title: Uw Windows 10-apparaat inschrijven bij Intune | Microsoft Docs
 description: Informatie over hoe u een mobiel apparaat of desktopapparaat met Windows 10 kunt inschrijven bij Intune
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
 
 
 ---
@@ -49,10 +49,10 @@ Wilt u meer weten? Ontdek wat er gebeurt wanneer u [uw apparaat inschrijft in In
 3.  Tik onder __Apparaatgegevens__ op __Meer info__. U ziet een lijst met informatie over uw apparaat. Zoek in deze lijst naar de __versie__.
 4.  Als uw versie __1607__ is, gaat u verder met [deze stappen](enroll-your-w10-device-access-work-or-school.md). Als uw versie __1511__ is, gaat u verder met [deze stappen](enroll-your-w10-device-your-account.md).
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

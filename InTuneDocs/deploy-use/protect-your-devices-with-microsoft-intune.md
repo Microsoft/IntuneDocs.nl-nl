@@ -1,11 +1,11 @@
 ---
-title: Apparaten beveiligen | Microsoft Intune
+title: Apparaten beveiligen | Microsoft Docs
 description: Informatie over een aantal van de manieren waarop Intune uw apparaten kan beschermen tegen onbevoegde toegang en andere dreigingen.
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>Apparaten beveiligen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune biedt allerlei mogelijkheden waarmee u de apparaten die u beheert en de gegevens op die apparaten kunt beveiligen. Raadpleeg dit onderwerp voor basiskennis over deze mogelijkheden en ontdek hoe u aan meer informatie komt.
 
@@ -54,7 +56,7 @@ Intune biedt de mogelijk van integratie met [Windows Hello voor Bedrijven](contr
 ## <a name="further-capabilities-for-ios-devices"></a>Meer mogelijkheden voor iOS-apparaten
 
 ### <a name="bypass-activation-lock-on-ios-devices"></a>Bypass van activeringsvergrendeling op iOS-apparaten
-Activeringsvergrendeling is een functie waarmee gebruikers apparaten kunnen beveiligen doordat hun Apple-id en wachtwoord moet worden ingevoerd voordat iemand het apparaat kan wissen of opnieuw kan activeren. Dit kan echter leiden tot problemen, bijvoorbeeld wanneer de gebruiker het bedrijf verlaat zonder de vergrendeling te verwijderen. [Bypass van activeringsvergrendeling voor iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) kan u helpen de vergrendeling te verwijderen van iOS-apparaten die onder supervisie staan, zodat u ze opnieuw kunt toewijzen of kunt wissen.
+Activeringsvergrendeling is een functie waarmee gebruikers apparaten kunnen beveiligen doordat hun Apple ID en wachtwoord moet worden ingevoerd voordat iemand het apparaat kan wissen of opnieuw kan activeren. Dit kan echter leiden tot problemen, bijvoorbeeld wanneer de gebruiker het bedrijf verlaat zonder de vergrendeling te verwijderen. [Bypass van activeringsvergrendeling voor iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) kan u helpen de vergrendeling te verwijderen van iOS-apparaten die onder supervisie staan, zodat u ze opnieuw kunt toewijzen of kunt wissen.
 
 
 
@@ -63,6 +65,6 @@ Intune blijft ondersteuning bieden voor beveiligingsbeleid voor Windows-pc's die
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

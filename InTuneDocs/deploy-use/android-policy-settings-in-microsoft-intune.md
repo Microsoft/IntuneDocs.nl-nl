@@ -1,12 +1,12 @@
 ---
 
-title: Beleidsinstellingen voor Android en Samsung KNOX Standard | Microsoft Intune
+title: Beleidsinstellingen voor Android en Samsung KNOX Standard | Microsoft Docs
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android-apparaten die u met Intune beheert.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android en Samsung KNOX Standard in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op Android-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
@@ -48,9 +50,9 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Minimale wachtwoordlengte**|Geeft de minimale lengte van het wachtwoord aan.|Ja|Yes|
 |**Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Geeft het aantal mislukte aanmeldingen aan dat is toegestaan voordat het apparaat wordt gewist.|Ja|Yes|
 |**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Geeft het aantal minuten van inactiviteit aan waarna het apparaat automatisch wordt vergrendeld.|Ja|Ja|
-|**Dagen tot wachtwoord verloopt**|Geeft het aantal dagen aan waarna een wachtwoord moet worden gewijzigd.|Ja|Yes|
+|**Dagen tot wachtwoord verloopt**|Geeft het aantal dagen aan waarna een wachtwoord moet worden gewijzigd.|Ja|Ja|
 |**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u het aantal eerder gebruikte wachtwoorden aan dat moeten worden onthouden.|Ja|Ja|
-|**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat wachtwoorden opnieuw worden gebruikt.|Ja|Yes|
+|**Wachtwoordgeschiedenis onthouden** - **Wachtwoorden niet opnieuw gebruiken**|Voorkomt dat wachtwoorden opnieuw worden gebruikt.|Ja|Ja|
 |**Wachtwoordkwaliteit**|Hiermee geeft u het complexiteitsniveau voor het wachtwoord aan en of biometrische apparaten kunnen worden gebruikt.|Ja|Yes|
 |**Vingerafdruk voor ontgrendelen toestaan**|Hiermee wordt toegestaan dat het apparaat kan worden ontgrendeld met een vingerafdruk.|Nee|Yes|
 |**Smart Lock en andere vertrouwensagents toestaan**<br>(Android 5 en hoger)|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten beheren. Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt.) U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.|Ja|Nee|
@@ -102,7 +104,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 
 |Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
-|**Camera toestaan**|Gebruik van de camera op het apparaat toestaan.|Ja|Yes|
+|**Camera toestaan**|Gebruik van de camera op het apparaat toestaan.|Ja|Ja|
 |**Verwisselbare opslag toestaan**|Hiermee staat u het gebruik toe van verwisselbare opslag, zoals een SD-kaart, op het apparaat.|Nee|Yes|
 |**Wi-Fi toestaan**|Hiermee kunt het gebruik van de Wi-Fi-mogelijkheden van het apparaat toestaan.|Nee|Yes|
 |**Wi-Fi-tethering toestaan**|Hiermee kunt het gebruik van Wi-Fi-tethering op het apparaat toestaan.|Nee|Yes|
@@ -144,6 +146,8 @@ In de lijst **Compatibele en&amp; niet-compatibele apps** geeft u een lijst op m
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
 
+Beleid met compatibele en niet-compatibele app-instellingen moet worden geïmplementeerd voor groepen van gebruikers.
+
 ### <a name="kiosk-mode-settings"></a>Instellingen voor kioskmodus
 Geef de volgende instellingen op voor **Samsung KNOX Standard-apparaten**:
 
@@ -177,9 +181,7 @@ Voorbeeld: zoek in Google Play naar Microsoft Office Mobile. De URL die u gebrui
 Gebruik het **aangepaste Android-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om de functies op Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
 Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
-
-> [!NOTE]
-> Momenteel wordt door het aangepaste Android-beleid alleen de configuratie ondersteund van Wi-Fi-instellingen voor Android-apparaten die een vooraf gedeelde sleutel bevatten.
+Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
 
 ### <a name="general-settings"></a>Algemene instellingen
 
@@ -209,6 +211,6 @@ Op deze manier kunt u Android-instellingen implementeren die niet met Intune-bel
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

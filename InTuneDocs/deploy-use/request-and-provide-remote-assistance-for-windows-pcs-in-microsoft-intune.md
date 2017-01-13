@@ -1,11 +1,11 @@
 ---
-title: Hulp op afstand voor Windows-pc&quot;s aanvragen en bieden | Microsoft Intune
-description: Hierin worden de stappen voor eindgebruikers en IT-beheerders beschreven om hulp op afstand voor Windows-pc&quot;s te bieden en een pc op afstand te starten.
+title: Hulp op afstand voor Windows-pc&quot;s aanvragen en bieden | Microsoft Docs
+description: Hierin worden de stappen voor eindgebruikers en IT-beheerders beschreven om hulp op afstand te bieden voor Windows-desktops die worden beheerd als pc&quot;s en om een pc op afstand te starten.
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab954204fffa6ad67a4a0d0f5e2e521c795eae31
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Hulp op afstand voor Windows-pc's aanvragen en bieden
 
-Microsoft Intune werkt met de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)-software zodat u uw gebruikers die de Intune-softwareclient uitvoeren hulp op afstand kunt bieden. Wanneer een gebruiker hulp via Microsoft Intune Center aanvraagt, ontvangt u een waarschuwing, kunt u de aanvraag accepteren en vervolgens hulp verlenen. Deze functionaliteit vervangt de bestaande Windows Hulp op afstand-functionaliteit in Intune.
+De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient.
+
+Intune werkt met de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)-software zodat u uw gebruikers die de Intune-softwareclient uitvoeren hulp op afstand kunt bieden. Wanneer een gebruiker hulp via Microsoft Intune Center aanvraagt, ontvangt u een waarschuwing, kunt u de aanvraag accepteren en vervolgens hulp verlenen. Deze functionaliteit vervangt de bestaande Windows Hulp op afstand-functionaliteit in Intune.
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -30,7 +32,7 @@ Microsoft Intune werkt met de afzonderlijk verkrijgbare [TeamViewer](https://www
 Voordat u aanvragen voor hulp op afstand uitvoert en beantwoordt, moet u ervoor zorgen dat aan de volgende vereisten is voldaan:
 
 - U moet zich hebben [geregistreerd voor een TeamViewer-account](https://login.teamviewer.com/LogOn#register) om u te kunnen aanmelden bij de TeamViewer-website.
-- De Windows-pc's die u wilt beheren, moeten worden [beheerd door de Windows PC-client](manage-windows-pcs-with-microsoft-intune.md).
+- De Windows-pc's die u wilt beheren, moeten worden [beheerd door de Windows-softwareclient](manage-windows-pcs-with-microsoft-intune.md)
 - Alle Windows PC-besturingssystemen die worden ondersteund door Intune, kunnen worden beheerd.
 
 ## <a name="configure-the-teamviewer-connector"></a>De TeamViewer-connector configureren
@@ -59,7 +61,7 @@ Voordat u aanvragen voor hulp op afstand uitvoert en beantwoordt, moet u ervoor 
 
 <br>Als een aanvraag niet binnen vier uur wordt beantwoord, wordt deze verwijderd.
 2. Kies **Aanvraag goedkeuren en Hulp op afstand starten** om een aanvraag te accepteren.
-3. Kies in het dialoogvenster **Er wacht een nieuw verzoek om hulp op afstand** de optie **Het verzoek om hulp op afstand accepteren**. Als dit nog niet is gedaan, installeert TeamViewer alle benodigde apps op uw computer.
+3. Kies in het dialoogvenster **Er wacht een nieuw verzoek om hulp op afstand** de optie **Het verzoek om hulp op afstand accepteren**. Als dat nog niet is gedaan, installeert TeamViewer alle benodigde apps op uw pc.
 4. TeamViewer informeert de eindgebruiker vervolgens dat u wilt de controle over de pc wilt overnemen. Nadat de gebruiker de aanvraag heeft geaccepteerd, wordt het TeamViewer-venster geopend en kunt u de pc beheren.
 
 Tijdens een sessie van Hulp op afstand kunt u alle beschikbare TeamViewer-opdrachten gebruiken om de externe pc te beheren. Voor hulp bij deze opdrachten, downloadt u de [Handleiding voor extern beheer](http://www.teamviewer.com/en/support/documents/) van de TeamViewer-website.
@@ -71,9 +73,9 @@ Kies in het menu **Acties** van het venster **TeamViewer** de optie **Sessie be√
 ## <a name="remotely-restart-a-windows-pc"></a>Een Windows-pc op afstand opnieuw opstarten
 Wanneer u uw gebruikers helpt met problemen, is het mogelijk dat u af en toe de pc op afstand opnieuw moet opstarten. Gebruik de volgende stappen om een Windows-pc op afstand opnieuw op te starten.
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de computer bevat die u opnieuw wilt opstarten).
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de pc bevat die u opnieuw wilt starten).
 
-2.  Selecteer een of meer computers en klik vervolgens op **Externe taken**&gt;**Computer opnieuw opstarten**.
+2.  Selecteer een of meer pc's en klik op **Externe taken**&gt;**Computer opnieuw opstarten**.
 
 3.  Als u de status van de taak wilt weergeven, klikt u op **Externe taken** in de rechterbenedenhoek van de pagina.
 
@@ -84,6 +86,6 @@ Wanneer u uw gebruikers helpt met problemen, is het mogelijk dat u af en toe de 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

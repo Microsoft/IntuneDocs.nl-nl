@@ -1,5 +1,5 @@
 ---
-title: Toegang tot zakelijke e-mail via e-mailprofielen | Microsoft Intune
+title: Toegang tot zakelijke e-mail via e-mailprofielen | Microsoft Docs
 description: Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -40,7 +42,7 @@ U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren
 -   Android for Work
 
 >[!NOTE]
->Intune bevat twee e-mailprofielen voor Android for Work, een voor de e-mailapp van Gmail en een voor de e-mailapp van Nine Work. Deze apps zijn beschikbaar in de Google Play-store en bieden ondersteuning voor verbindingen met Exchange. Als u de connectiviteit voor e-mail wilt inschakelen, implementeert u een van deze e-mailapps op apparaten van uw gebruikers, en maakt en implementeert u vervolgens het juiste profiel.
+>Intune bevat twee e-mailprofielen voor Android for Work, een voor de e-mail-app van Gmail en een voor de e-mail-app van Nine Work. Deze apps zijn beschikbaar in de Google Play-store en bieden ondersteuning voor verbindingen met Exchange. Als u de connectiviteit voor e-mail wilt inschakelen, implementeert u een van deze e-mail-apps op apparaten van uw gebruikers, en maakt en implementeert u vervolgens het juiste profiel.
 
 U kunt een e-mailaccount instellen op het apparaat en daarnaast ook bepalen hoeveel e-mail er moet worden gesynchroniseerd en, afhankelijk van het apparaattype, welke inhoudstypen uw wilt synchroniseren.
 
@@ -56,7 +58,7 @@ U kunt een e-mailaccount instellen op het apparaat en daarnaast ook bepalen hoev
 
 >Omdat Samsung KNOX geen hostnaam gebruikt om een profiel te identificeren, wordt afgeraden om voor hetzelfde e-mailadres meerdere e-mailprofielen te maken op verschillende hosts, aangezien deze profielen elkaar overschrijven.
 
->**Android for Work**: het Intune-profiel wordt alleen toegepast op specifieke e-mailapps in het werkprofiel van het apparaat en heeft geen invloed op de e-mailconfiguratie voor het gebruikersprofiel van het apparaat.
+>**Android for Work**: het Intune-profiel wordt alleen toegepast op specifieke e-mail-apps in het werkprofiel van het apparaat en heeft geen invloed op de e-mailconfiguratie voor het gebruikersprofiel van het apparaat.
 
 
 ## <a name="secure-email-profiles"></a>Beveiligde e-mailprofielen
@@ -110,7 +112,7 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel, dus de gebruiker moet dit
     |**Synchronisatieschema** (Android for Work, Samsung KNOX, Windows Phone 8 en hoger, Windows 10)|Selecteer het schema op basis waarvan apparaten gegevens synchroniseren met de Exchange-server. U kunt ook **Wanneer berichten binnenkomen** selecteren als u wilt dat de berichten meteen worden gesynchroniseerd wanneer ze binnenkomen of **Handmatig** selecteren als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.|
     |**SSL gebruiken**|Gebruik SSL-communicatie (Secure Sockets Layer) wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server. Voor apparaten met Samsung KNOX 4.0 of hoger moet u het SSL-certificaat van uw Exchange-server exporteren en als Android Trusted Certificate Profile implementeren in Intune. Intune biedt geen ondersteuning voor toegang tot dit certificaat als het op een andere manier is geïnstalleerd op de Exchange-server.|
     |**Inhoudtype voor synchronisatie** (alle platforms met uitzondering van Android for Work - Gmail)|Selecteer de inhoudstypen die u wilt synchroniseren met apparaten.|
-    |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mailapp, om bijvoorbeeld bestanden als bijlagen aan e-mail toe te voegen.|
+    |**Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** (alleen iOS)|Sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mail-app, om bijvoorbeeld bestanden als bijlagen aan e-mail toe te voegen.|
 
 > [!IMPORTANT]
 >
@@ -138,6 +140,6 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

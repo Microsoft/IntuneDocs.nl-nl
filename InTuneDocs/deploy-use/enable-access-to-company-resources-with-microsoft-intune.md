@@ -1,5 +1,5 @@
 ---
-title: Toegang tot bedrijfsbronnen inschakelen | Microsoft Intune
+title: Toegang tot bedrijfsbronnen inschakelen | Microsoft Docs
 description: Wi-Fi-, VPN- en e-mailprofielen stellen uw gebruikers in de gelegenheid toegang te krijgen tot de bestanden en bronnen die ze nodig hebben.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Toegang tot bedrijfsbronnen inschakelen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Met Wi-Fi-, VPN- en e-mailprofielen van Microsoft Intune kunnen uw gebruikers toegang krijgen tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze zich ook bevinden. Certificaatprofielen helpen die toegang te beveiligen.
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Wi-Fi-profielen](wi-fi-connections-in-microsoft-intune.md) en ondersteunde platforms
@@ -37,7 +40,7 @@ Hiermee kunt u VPN-instellingen (Virtual Private Network) implementeren voor uw 
 
 |Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Yes|Ja|Ja|Ja|Ja|
+|Ja|Ja|Ja|Ja|Ja|
 
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>[E-mailprofielen](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) en ondersteunde platforms
 Hiermee kunt u instellingen voor systeemeigen e-mailclients in uw organisatie maken, implementeren en bewaken.
@@ -57,6 +60,6 @@ Zorgen voor een beveiligde toegang tot bedrijfsresources, zoals draadloze netwer
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

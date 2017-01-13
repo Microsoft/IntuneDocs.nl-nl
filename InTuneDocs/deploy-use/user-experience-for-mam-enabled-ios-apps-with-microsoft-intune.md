@@ -1,11 +1,11 @@
 ---
-title: iOS-apps met MAM-beleid | Microsoft Intune
+title: iOS-apps met MAM-beleid | Microsoft Docs
 description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw iOS-app wordt beheerd door beleidsregels voor beheer van mobiele apps.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  In dit onderwerp wordt de gebruikerservaring voor apps met MAM-beleid (Mobile Access Management) beschreven. MAM-beleidsregels worden alleen toegepast wanneer apps worden gebruikt in een werkcontext, bijvoorbeeld wanneer de gebruiker apps gebruikt met een werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
 
 ##  <a name="access-apps"></a>Toegang tot apps
 
-Als het apparaat **niet is geregistreerd bij Intune**, wordt de gebruiker gevraagd de app opnieuw te starten wanneer deze voor het eerst wordt gebruikt.  Er moet opnieuw worden opgestart zodat het MAM-beleid kan worden toegepast op de app. Dit opstartverzoek wordt geïllustreerd in de volgende schermafbeelding van de Skype-app:
+Als het apparaat **niet is geregistreerd bij Intune**, wordt de gebruiker gevraagd de app opnieuw te starten wanneer deze voor het eerst wordt gebruikt.  Er moet opnieuw worden opgestart zodat het MAM-beleid kan worden toegepast op de app. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Schermafbeelding van het iOS-apparaat met pincodeprompt](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 Op apparaten die zijn **geregistreerd voor beheer in Intune**, wordt een bericht aan de gebruiker weergegeven dat de app nu wordt beheerd:
 
@@ -68,6 +73,6 @@ Als u een iOS-apparaat gebruikt en u een tweede werkaccount op dat apparaat prob
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

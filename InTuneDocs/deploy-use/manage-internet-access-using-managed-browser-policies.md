@@ -1,11 +1,11 @@
 ---
-title: Webtoegang beheren met de beheerde browser | Microsoft Intune
+title: Webtoegang beheren met de beheerde browser | Microsoft Docs
 description: De toepassing van de beheerde browser implementeren om websurfen en de overdracht van webgegevens naar andere apps te beperken.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
 
 
 ---
 
-# Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 De beheerde browser is een browsertoepassing die u in uw organisatie kunt implementeren met Microsoft Intune. Een beheerde-browserbeleid bevat een lijst met toegestane of een lijst met geblokkeerde websites waarmee de websites die gebruikers van de beheerde browser kunnen bezoeken, worden beperkt.
 
 Omdat dit een beheerde app is, kunt u bovendien ook Mobile Application Management-beleid toepassen op de app. Met de beleidsregels kan bijvoorbeeld het gebruik van knippen, kopiëren en plakken worden beperkt, het maken van schermafdrukken worden geblokkeerd, en worden ingesteld dat koppelingen naar inhoud uitsluitend worden geopend in andere beheerde apps. Zie [Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) voor meer informatie.
@@ -39,7 +42,7 @@ U kunt beheerde-browserbeleidsregels maken voor de volgende typen apparaten:
 
 De beheerde browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-## Een beheerde-browserbeleid maken
+## <a name="create-a-managed-browser-policy"></a>Een beheerde-browserbeleid maken
 
 1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies**Beleid** &gt; **Beleid toevoegen**.
 
@@ -47,7 +50,7 @@ De beheerde browser van Intune ondersteunt het openen van webinhoud van [Microso
 
     -   **Beheerde browser (Android 4 en hoger)**
 
-    -   **Managed Browser (iOS 8.0 en hoger)**
+    -   **Beheerde browser (iOS 8.0 en hoger)**
 
     Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor informatie over het maken en implementeren van beleid.
 
@@ -65,7 +68,7 @@ Zie **URL-indeling voor toegestane en geblokkeerde URL's** in dit onderwerp voor
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid**.
 
-## Een implementatie voor de beheerde-browser-app maken
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>Een implementatie voor de beheerde-browser-app maken
 Nadat u het beheerde-browserbeleid hebt gemaakt, kunt u een software-implementatie voor de beheerde-browserapp maken en deze koppelen aan het beheerde-browserbeleid dat u hebt gemaakt.
 
 > [!IMPORTANT]
@@ -75,7 +78,7 @@ Implementeer de app, waarbij u ervoor zorgt dat u het beheerde-browserbeleid sel
 
 Zie [Apps implementeren in Microsoft Intune](deploy-apps-in-microsoft-intune.md) voor meer informatie over het implementeren van apps.
 
-## Beveiliging en privacy voor de beheerde browser
+## <a name="security-and-privacy-for-the-managed-browser"></a>Beveiliging en privacy voor de beheerde browser
 
 -   Op iOS-apparaten kunnen gebruikers geen websites openen met een verlopen of niet-vertrouwd certificaat.
 
@@ -87,12 +90,12 @@ Zie [Apps implementeren in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 -   Om verificatie toe te staan en ervoor te zorgen dat de Intune-documentatie toegankelijk is, is **&#42;.microsoft.com** uitgesloten van vermelding in lijsten met toegestane en geblokkeerde instellingen. Dit domein is altijd toegestaan.
 
-### Gebruiksgegevens uitschakelen
+### <a name="turn-off-usage-data"></a>Gebruiksgegevens uitschakelen
 Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van de beheerde browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.
 
-## Referentiegegevens
+## <a name="reference-information"></a>Referentiegegevens
 
-### URL-indeling voor toegestane en geblokkeerde URL´s
+### <a name="url-format-for-allowed-and-blocked-urls"></a>URL-indeling voor toegestane en geblokkeerde URL´s
 Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen en jokertekens die u kunt gebruiken bij het opgeven van URL's in de lijsten met toegestane en geblokkeerde websites:
 
 -   U kunt het jokerteken '**&#42;**' gebruiken volgens de regels in de volgende lijst met toegestane patronen.
@@ -142,7 +145,7 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 
     -   http://www.contoso.com: /&#42;
 
-### Conflicten tussen de lijst met toegestane en de lijst met geblokkeerde websites oplossen
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Conflicten tussen de lijst met toegestane en de lijst met geblokkeerde websites oplossen
 Als er meerdere beheerde-browserbeleidsregels zijn geïmplementeerd op een apparaat en de instellingen conflicteren, worden de modus (toestaan of blokkeren) en de URL-lijsten geëvalueerd op conflicten. Bij een conflict geldt het volgende gedrag:
 
 -   Als de modi in elke beleidsregel hetzelfde zijn maar de URL-lijsten verschillen, worden de URL's niet afgedwongen op het apparaat.
@@ -155,6 +158,6 @@ Als er meerdere beheerde-browserbeleidsregels zijn geïmplementeerd op een appar
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

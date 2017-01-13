@@ -1,5 +1,5 @@
 ---
-title: iOS-apparaten in bedrijfseigendom inschrijven | Microsoft Intune
+title: iOS-apparaten in bedrijfseigendom registreren | Microsoft Docs
 description: iOS-apparaten in bedrijfseigendom inschrijven met het Apple Device Enrollment Program (DEP) of Apple Configurator
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>iOS-apparaten in bedrijfseigendom inschrijven in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune ondersteunt de inschrijving van iOS-apparaten van het bedrijf met behulp van het Device Enrollment Program (DEP) van Apple of het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat op een Mac-computer wordt uitgevoerd.
 
 **Vereiste:** een [Apple Push Notification Service-certificaat](set-up-ios-and-mac-management-with-microsoft-intune.md).
@@ -50,7 +53,7 @@ Gebruikersaffiniteit is vereist voor de ondersteuning van het volgende:
 **iOS-apparaten in bedrijfseigendom inschrijven met gebruikersaffiniteit**
 1. Wanneer gebruikers hun apparaat inschakelen, wordt ze gevraagd de Configuratieassistent te voltooien. Tijdens de installatie wordt er naar de referenties van de gebruikers gevraagd. Ze moeten de referenties (de unieke naam of de UPN) van het Intune-abonnement gebruiken.
 
-2. Tijdens de installatie wordt er naar de Apple-id van de gebruikers gevraagd. Er moet een Apple-id worden opgegeven zodat de bedrijfsportal op het apparaat kan worden geïnstalleerd. Ze kunnen ook de id in het iOS-instellingenmenu opgeven nadat de installatie is voltooid.
+2. Tijdens de installatie wordt er naar de Apple ID van de gebruikers gevraagd. Er moet een Apple ID worden opgegeven zodat de bedrijfsportal op het apparaat kan worden geïnstalleerd. Ze kunnen ook de id in het iOS-instellingenmenu opgeven nadat de installatie is voltooid.
 
 3. Nadat het instellen is voltooid, moet de bedrijfsportal-app op het iOS-apparaat worden geïnstalleerd vanuit de App Store.
 
@@ -81,6 +84,6 @@ Als gebruikersaffiniteit vereist is, moet **Gebruikersaffiniteit** in het inschr
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

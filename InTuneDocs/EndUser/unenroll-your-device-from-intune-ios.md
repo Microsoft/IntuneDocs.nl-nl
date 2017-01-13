@@ -1,5 +1,5 @@
 ---
-title: De inschrijving van uw iOS-apparaat bij Intune ongedaan maken | Microsoft Intune
+title: De inschrijving van uw iOS-apparaat bij Intune ongedaan maken | Microsoft Docs
 description: Hierin wordt beschreven hoe u de inschrijving van een iOS-apparaat bij Intune ongedaan kunt maken
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 5db58b87e5c48c40794315e7781d32b02a653b2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
 
 
 ---
@@ -53,10 +53,10 @@ Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
 -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Problemen bij de apparaatregistratie oplossen | Microsoft Intune
+title: Problemen bij de apparaatregistratie oplossen | Microsoft Docs
 description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
+ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
 
 
 ---
@@ -29,7 +29,7 @@ Dit onderwerp bevat suggesties voor het oplossen van problemen met de registrati
 
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
--   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -   [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ Deze problemen kunnen optreden op alle apparaatplatforms.
 
 2.  Controleer in de Intune-beheerconsole onder Admin\Mobile Device Management\Enrollment Rules of de limiet voor de apparaatinschrijving is ingesteld op 15.
 
-Gebruikers van mobiele apparaten kunnen apparaten verwijderen via de volgende URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
@@ -86,7 +86,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 >
 > Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatinschrijvingsmanagers kunnen geen apparaten worden ingeschreven wanneer een voorwaardelijk toegangsbeleid van kracht is voor die specifieke gebruikersaanmelding.
 
-### <a name="company-portal-emporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
+### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
 **Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
 
 **Oplossing:**
@@ -319,7 +319,7 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 ### <a name="other-ios-enrollment-errors"></a>iOS-registratiefouten
 In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) een andere lijst met andere iOS-registratiefouten.
 
-## <a name="pc-issues"></a>Pc-problemen
+## <a name="pc--issues"></a>Pc-problemen
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>De computer is al geregistreerd: fout hr 0x8007064c
 **Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
@@ -373,6 +373,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

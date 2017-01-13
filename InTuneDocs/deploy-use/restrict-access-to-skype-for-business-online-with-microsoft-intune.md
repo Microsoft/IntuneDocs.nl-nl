@@ -1,5 +1,5 @@
 ---
-title: Toegang tot Skype voor Bedrijven Online beperken | Microsoft Intune
+title: Toegang tot Skype voor Bedrijven Online beperken | Microsoft Docs
 description: Toegang tot Skype voor Business Online beschermen en beheren door gebruik te maken van voorwaardelijke toegang.
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 23199b84ca1acf202442e096c637f0dbad53f3e0
 
 
 ---
@@ -35,7 +35,7 @@ Wanneer een gebruiker in de doelgroep Skype voor Bedrijven Online op zijn appara
 - Een **Skype voor Bedrijven Online-abonnement** hebben en de Skype voor Bedrijven Online-licentie toewijzen aan gebruikers.
 - Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben, en moeten de gebruikers een licentie hebben voor EMS of Azure AD. Zie [Prijzen van Enterprise Mobility ](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of [Prijzen van Azure Active Directory ](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
 
--   [Moderne authenticatie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) voor Skype voor Bedrijven Online.
+-   [Moderne verificatie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) voor Skype voor Bedrijven Online.
 -  Zorg dat al uw gebruikers **Skype voor Bedrijven Online** gebruiken. Als u een implementatie van zowel Skype voor Bedrijven Online als een lokale Skype voor Bedrijven hebt, wordt het beleid voor voorwaardelijke toegang niet toegepast op gebruikers.
 
 Het apparaat waarvoor toegang tot Skype voor Bedrijven Online nodig is, moet:

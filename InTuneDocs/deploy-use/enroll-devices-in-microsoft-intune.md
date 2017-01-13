@@ -1,5 +1,5 @@
 ---
-title: Apparaten registreren | Microsoft Intune
+title: Apparaten registreren | Microsoft Docs
 description: Mobile Device Management (MDM) maakt gebruik van inschrijving om apparaten onder beheer te brengen en toegang tot resources toe te staan.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>Apparaten inschrijven bij Intune voor beheer
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt apparaten, waaronder Windows-pc’s, registreren om Mobile Device Management (MDM) met Microsoft Intune mogelijk te maken. In dit onderwerp worden verschillende manieren voor registratie van mobiele apparaten in het Intune-beheer beschreven. De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met COD-registratie (apparaten in bedrijfseigendom) zijn beheerscenario's mogelijk, zoals wissen op afstand, gedeelde apparaten of gebruikersaffiniteit voor een apparaat.
 
 Als u [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen. Windows-pc's kunnen ook worden beheerd met [Intune-clientsoftware](#manage-windows-pcs-with-intune).

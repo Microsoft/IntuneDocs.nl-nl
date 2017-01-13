@@ -1,9 +1,9 @@
 ---
-title: Gegevensoverdracht beheren tussen iOS-apps | Microsoft Intune
+title: Gegevensoverdracht beheren tussen iOS-apps | Microsoft Docs
 description: Lees dit onderwerp om te begrijpen hoe u de functie iOS openen in en beleidsregels voor het beheren van mobiele apps kunt gebruiken voor het beheren van de gegevensoverdracht tussen apps.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 94163d5f303b293da2301b81a5c96f6c9c2e5e5d
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: fdbe65ff13b9b16a125ee37f9dd4614c727f2886
 
 
 ---
 
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
 Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestandsoverdracht tot apps die door u worden beheerd.  U kunt iOS-apps op de volgende manieren beheren:
 
@@ -40,7 +43,7 @@ MAM-beleid (Mobile App Management) kan worden gebruikt met de iOS-functie **Open
 Als u ervoor wilt zorgen dat apps die u implementeert met behulp van de MDM-oplossing van derden, ook onderhevig zijn aan het MAM-beleid dat u in Intune hebt geconfigureerd, configureert u de UPN-gebruikersinstelling zoals beschreven in het overzicht [UPN-gebruikersinstelling configureren](#configure-user-upn-setting).  Wanneer apps zijn geïmplementeerd met de UPN-gebruikersinstelling, wordt het MAM-beleid toegepast op de app wanneer de eindgebruiker zich aanmeldt met zijn werkaccount.
 
 > [!IMPORTANT]
-> De UPN-gebruikersinstelling is alleen vereist voor apps die zijn geïmplementeerd op apparaten die worden beheerd door een MDM-oplossing van derden.  Deze instelling is niet vereist voor apparaten die worden beheerd met intune.
+> De UPN-gebruikersinstelling is alleen vereist voor apps die zijn geïmplementeerd op apparaten die worden beheerd door een MDM-oplossing van derden.  Deze instelling is niet vereist voor apparaten die worden beheerd met Intune.
 
 ## <a name="configure-user-upn-setting"></a>UPN-gebruikersinstelling configureren
 Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplossing van derden. De procedure die hieronder wordt beschreven, toont een algemene werkstroom voor het implementeren van de UPN-instelling en laat het resultaat voor eindgebruikers zien:
@@ -76,6 +79,6 @@ Deze configuratie is vereist voor apparaten die worden beheerd door een MDM-oplo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

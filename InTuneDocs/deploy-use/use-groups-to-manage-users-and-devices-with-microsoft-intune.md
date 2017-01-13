@@ -1,11 +1,11 @@
 ---
-title: Groepen gebruiken om gebruikers en apparaten te beheren | Microsoft Intune
+title: Groepen gebruiken om gebruikers en apparaten te beheren | Microsoft Docs
 description: Groepen maken en beheren met behulp van de werkruimte Groepen.
 keywords: 
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,78 +14,26 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
+ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
+ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
 
 
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Groepen gebruiken om gebruikers en apparaten te beheren in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In dit onderwerp wordt beschreven hoe u groepen maakt in Intune. Het onderwerp bevat ook informatie over hoe het beheer van groepen de komende maanden gaat veranderen. 
 
 >[!IMPORTANT]
 >
->Als u de werkruimte Groepen opent in de Intune-portal en een koppeling naar de portal van Azure Active Directory (Azure AD) ziet staan, maakt u al gebruik van de *nieuwe* Azure AD-beveiligingsgroepen voor groepsbeheer in Intune. Dit wordt beschreven in [Kennisgeving over verbeteringen die binnenkort worden aangebracht in de manier waarop beheerders groepen kunnen beheren](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Klik op de koppeling naar de Azure AD-portal om uw groepen te maken en beheren.
+>Als u de werkruimte Groepen opent in de Intune-portal en een koppeling naar de portal van Azure Active Directory (Azure AD) ziet staan, maakt u gebruik van de *nieuwe* Azure AD-beveiligingsgroepen voor groepsbeheer in Intune. Dit wordt beschreven in [Groepen migreren naar Azure Active Directory](migrating-groups-to-azure-active-directory.md). Klik op de koppeling naar de Azure AD-portal om uw groepen te maken en beheren.
 >
 >![Schermafbeelding van de koppeling naar Azure-groepsbeheer](../media/groups-link-azure.png) 
 >
 >Als de koppeling naar de Azure AD-portal niet wordt weergegeven, gebruikt u nog steeds de *huidige* methode voor groepsbeheer. Deze wordt beschreven in het onderwerp [Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune).
 
-
-## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>Kennisgeving over verbeteringen die binnenkort worden aangebracht in de manier waarop beheerders groepen kunnen beheren
-
-U hebt ons laten weten dat u in Enterprise Mobility + Security één methode voor groeperen en toepassen wilt. We hebben naar u geluisterd. Op basis van uw feedback zetten we Intune-groepen binnenkort om in Azure Active Directory-beveiligingsgroepen. Deze wijziging zal leiden tot een uniformer beheer van groepen voor zowel Intune als Azure Active Directory (Azure AD). Dat betekent dat u groepen tussen services niet langer hoeft te dupliceren. Ook profiteert u van uitbreidbaarheid met de opties voor gebruik van Windows PowerShell en Microsoft Graph.
-
-### <a name="how-does-this-affect-me-right-now"></a>Wat betekent dit nu voor mij?
-Als u al een Intune-klant bent, is deze wijziging nu nog niet van invloed op u. Maar dit gaat binnenkort gebeuren:
-
--   Voor nieuwe accounts worden Azure AD-beveiligingsgroepen gebruikt in plaats van Intune-*gebruiker*sgroepen.   
--   In november 2016 gaan nieuwe accounts die zijn ingericht na de maandelijkse servicerelease zowel gebruikers- als apparaatgroepen beheren in de Azure AD-portal. Bestaande klanten merken hier niets van.
--   In december 2016 begint het Intune-productteam met de migratie van bestaande klanten naar de nieuwe op Azure AD gebaseerde groepsbeheermethode. Alle gebruikers- en apparaatgroepen die momenteel in Intune aanwezig zijn, worden gemigreerd naar Azure AD-beveiligingsgroepen. De migraties worden pas uitgevoerd als we de invloed op uw dagelijkse werkzaamheden tot een minimum hebben weten te beperken. Naar verwachting zullen uw gebruikers er niets van merken. U ontvangt bericht van ons voordat we uw account gaan migreren.
-
-
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>Wanneer en hoe vindt mijn migratie naar deze nieuwe manier van werken met groepen plaats?
-Voor huidige Intune-klanten wordt de migratie gespreid over een langere periode. De planning voor die migratie wordt momenteel afgerond. Binnen enkele weken wordt dit onderwerp bijgewerkt met meer informatie. U ontvangt bericht van ons voordat u wordt gemigreerd. Als u vragen of opmerkingen hebt over de migratie, kunt u contact opnemen met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). Zie [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md) (Groepen migreren naar Azure Active Directory) voor details over de manier waarop groepen worden gemigreerd.
-
-### <a name="what-happens-to-my-existing-user-and-device-groups"></a>Wat gebeurt er met mijn bestaande gebruikers- en apparaatgroepen?
- Gebruikersgroepen en apparaatgroepen die u in Intune hebt gemaakt, worden naar Azure AD-beveiligingsgroepen gemigreerd. Standaard Intune-groepen, zoals de groep Alle gebruikers, worden alleen gemigreerd als u deze gebruikt in implementaties ten tijde van de migratie. Voor sommige groepen kan de migratie complexer zijn. U ontvangt bericht als extra stappen zijn vereist voor migratie in uw organisatie.
-
-### <a name="what-new-features-will-be-available-to-me"></a>Welke nieuwe functies zijn er beschikbaar voor mij?
-Dit is de nieuwe functionaliteit die bij deze migratie van Intune naar Azure Active Directory beschikbaar wordt:
-
--    Azure AD-beveiligingsgroepen worden in Intune voor alle typen implementaties ondersteund.
--    Het groeperen van apparaten en gebruikers wordt door Azure AD-beveiligingsgroepen ondersteund.
--    Dynamische groepen met Intune-apparaatkenmerken worden door Azure AD-beveiligingsgroepen ondersteund. U kunt apparaten bijvoorbeeld dynamisch groeperen op basis van het platform, zoals iOS. Wanneer een nieuw iOS-apparaat wordt geregistreerd in uw organisatie, wordt het automatisch toegevoegd aan de dynamische iOS-apparaatgroep.
--    U kunt groepsbeheertaken in Azure AD en Intune op een uniforme manier uitvoeren.
-- De Intune-servicebeheerdersrol wordt toegevoegd aan Azure AD, zodat Intune-servicebeheerders beheertaken kunnen uitvoeren in Azure AD.
-
-### <a name="what-intune-functionality-wont-be-available"></a>Welke Intune-functionaliteit is straks niet meer beschikbaar?
-Hoewel de functie voor groepen wordt verbeterd, zijn er enkele Intune-functies die niet beschikbaar zijn nadat uw organisatie van Intune-groepen naar Azure AD-beveiligingsgroepen is gemigreerd.
-
-#### <a name="group-management-functionality"></a>Groepsbeheerfunctionaliteit
-
--   Na de migratie kunt u geen leden of groepen meer uitsluiten wanneer u een nieuwe groep maakt. Met dynamische Azure AD-groepen kunt u echter kenmerken gebruiken om geavanceerde regels te maken waarmee u leden kunt uitsluiten van een groep op basis van criteria die u instelt.
--   De groepen Niet-gegroepeerde gebruikers en Niet-gegroepeerde apparaten worden niet ondersteund. Deze groepen worden niet van Intune naar Azure AD gemigreerd.
-
-
-#### <a name="group-dependent-functionality"></a>Groepsafhankelijke functionaliteit
-
--   De servicebeheerdersrol heeft geen machtigingen voor **Groepen beheren**.
--   U kunt geen Exchange ActiveSync-apparaten groeperen. Uw groep met alle met EAS beheerde apparaten wordt geconverteerd van een groep naar een rapportweergave.
--  Het maken van draaitabellen met groepen in rapporten is niet mogelijk.
--  Het maken van meldingsregels die zijn gericht op aangepaste groepen, is niet mogelijk.
-
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
- Hier zijn enkele aanbevelingen die deze overgang eenvoudiger zullen maken voor u:
-
-- Verwijder ongewenste of overbodige Intune-groepen voordat de migratie plaatsvindt.
-- Ga na hoe u op dit moment uitsluiting gebruikt in groepen en overweeg uw groepen opnieuw te ontwerpen, zodat u geen uitsluiting meer hoeft te gebruiken.
--  Hebt u beheerders die geen machtigingen hebben voor het maken van groepen in Azure AD, vraag dan uw Azure AD-beheerder om deze beheerders toe te voegen aan de Azure AD-rol Intune-servicebeheerder.
-
-
-## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune
-
-In deze sectie wordt beschreven hoe u Intune-groepen maakt in de Intune-beheerconsole.
+In dit onderwerp wordt beschreven hoe u Intune-groepen maakt in de Intune-beheerconsole.
 
 U kunt groepen maken en beheren in de werkruimte **Groepen** van de Microsoft Intune-beheerconsole. Op de pagina **Overzicht van groepen** staan statusoverzichten die u kunnen helpen bij het identificeren en prioriteren van problemen die uw aandacht nodig hebben. Statusoverzichten bestaan uit de volgende gebieden:
 
@@ -108,7 +56,7 @@ Uw groepshiërarchie wordt ook weergegeven met statusoverzichten om u te helpen 
 >
 > U wilt uw gebruikers natuurlijk over elk nieuw restrictief beleid informeren. Besteed daarom na het maken van algemene groepen extra aandacht aan hoe u kleinere groepen indeelt, om de communicatie te beperken.
 
-### <a name="to-create-a-device-group"></a>Een apparaatgroep maken
+## <a name="to-create-a-device-group"></a>Een apparaatgroep maken
 
 1.  Kies in de Intune-beheerconsole **Groepen** &gt; **Overzicht** &gt; **Groep maken**.
 
@@ -128,7 +76,7 @@ Uw groepshiërarchie wordt ook weergegeven met statusoverzichten om u te helpen 
 
 De zojuist gemaakte groep wordt in de lijst **Groepen** weergegeven in de werkruimte **Groepen** onder de bovenliggende groep. Hier kunt u de groep ook bewerken of verwijderen.
 
-### <a name="to-create-a-user-group"></a>Een gebruikersgroep maken
+## <a name="to-create-a-user-group"></a>Een gebruikersgroep maken
 
 1.  Kies in de Intune-beheerconsole **Groepen** &gt; **Overzicht** &gt; **Groep maken**.
 
@@ -205,6 +153,6 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

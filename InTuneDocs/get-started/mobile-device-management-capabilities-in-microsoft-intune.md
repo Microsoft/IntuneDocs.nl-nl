@@ -1,12 +1,12 @@
 ---
-title: Apparaatbeheermogelijkheden voor geregistreerde apparaten| Microsoft Intune
+title: Apparaatbeheermogelijkheden voor geregistreerde apparaten| Microsoft Docs
 description: Raadpleeg dit onderwerp als u wilt weten hoe u met Intune de apparaten kunt beheren die u registreert.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
-ms.topic: article
+ms.date: 12/12/2016
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,12 +14,14 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 710295f0eaeee71bba549c22706ecbfd062ffcb1
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 898975338edcd3267fd47d62d23b35e295f0d99b
 
 
 ---
-# Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune
+# <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Met Microsoft Intune kunt u vele apparaten beheren door ze *in te schrijven* bij de service. U kunt sommige apparaattypen zelf inschrijven, maar u kunt ook gebruikers apparaten laten inschrijven met de *bedrijfsportal*-app. Dit biedt ze bovendien de mogelijkheid om bewerkingen uit te voeren, zoals apps zoeken en installeren, zorgen dat hun apparaten voldoen aan de bedrijfsbeleidsregels en contact opnemen met hun IT-afdeling voor ondersteuning.
 
@@ -29,7 +31,7 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 
 
 
-## Apparaatbeveiliging en -configuratie
+## <a name="device-security-and-configuration"></a>Apparaatbeveiliging en -configuratie
 
 |Mogelijkheid|Details|Meer informatie|
 |--------------|-----------|--------------------|
@@ -37,7 +39,7 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 |Wissen op afstand, vergrendelen op afstand en wachtwoordcode opnieuw instellen|Hiermee wist u gevoelige gegevens wanneer een apparaat is zoekgeraakt of gestolen. U kunt bijvoorbeeld het apparaat op afstand vergrendelen, de fabrieksinstellingen terugzetten of alleen bedrijfsgegevens wissen.<br><br>U kunt wachtwoordcodes opnieuw instellen als gebruikers geen toegang meer krijgen tot hun apparaat, verloren of gestolen apparaten vergrendelen of zelfs gegevens op verloren of gestolen apparaten wissen.|[Uw gegevens beschermen met vergrendelen op afstand of het opnieuw instellen van de wachtwoordcode](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) en [Apparaten buiten gebruik stellen vanuit Intune-beheer](/intune/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Kioskmodus|Hiermee kunt u bepaalde functies van mobiele apparaten vergrendelen, zoals schermafbeeldingen en de aan/uit-knop. U kunt hiermee apparaten ook beperken tot het uitvoeren van een enkele app die u opgeeft.|[Beleidsinstellingen voor iOS-configuraties in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
-## Appbeheer
+## <a name="app-management"></a>Appbeheer
 
 |Mogelijkheid|Details|Meer informatie|
 |--------------|-----------|--------------------|
@@ -50,7 +52,7 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 |Windows Hello voor Bedrijven|Hiermee maakt u integratie met Windows Hello voor Bedrijven mogelijk. Dit is een alternatieve aanmeldingsmethode voor Windows 10 waarbij on-premises Active Directory of Azure Active Directory wordt gebruikt ter vervanging van een wachtwoord, smartcards of virtuele smartcards.|[Instellingen van Windows Hello voor Bedrijven beheren op apparaten met Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 |Apps die zijn gekocht via het volume-aankoopprogramma|Hiermee kunt u apps beheren die u via een volume-aankoopprogramma hebt gekocht, door de licentiegegevens uit de App Store te importeren en bij te houden hoeveel licenties u hebt gebruikt. Zo wordt voorkomen dat u meer exemplaren van de app installeert dan u hebt gekocht.|[Met Microsoft Intune apps beheren die zijn gekocht via het volume-aankoopprogramma](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
-## Toegang tot bedrijfsresources
+## <a name="company-resource-access"></a>Toegang tot bedrijfsresources
 
 |Mogelijkheid|Details|Meer informatie|
 |--------------|-----------|--------------------|
@@ -60,18 +62,18 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 |VPN-profielen|Hiermee kunt u VPN-instellingen implementeren voor gebruikers en apparaten in uw organisatie. Als u deze instellingen implementeert, kan de gebruiker zonder veel moeite verbinding maken met bronnen op het bedrijfsnetwerk.|[VPN-verbindingen in Microsoft Intune](/intune/deploy-use/vpn-connections-in-microsoft-intune)|
 |Beleid voor voorwaardelijke toegang|Hiermee kunt u toegang tot Microsoft Exchange-e-mailberichten en SharePoint Online beheren vanaf apparaten die niet worden beheerd door Intune.|[Toegang tot e-mail en SharePoint beperken met Microsoft Intune](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)|
 
-## Inventarisatie en rapportage
+## <a name="inventory-and-reporting"></a>Inventarisatie en rapportage
 
 |Mogelijkheid|Details|Meer informatie|
 |--------------|-----------|--------------------|
 |Inventarisatie en rapportage|Hiermee kunt u naar informatie zoeken over de apparaten die u beheert en de software die deze apparaten gebruiken.|[Inzicht in uw apparaten met inventarisaties in Microsoft Intune](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
-### Zie tevens
-[Beheermogelijkheden voor Windows-pc’s in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
+### <a name="see-also"></a>Zie tevens
+[Beheermogelijkheden voor Windows-pc's in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

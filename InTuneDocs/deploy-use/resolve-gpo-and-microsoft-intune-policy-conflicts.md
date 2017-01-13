@@ -1,11 +1,11 @@
 ---
-title: Conflicten tussen GPO-beleid en Intune-beleid oplossen | Microsoft Intune
+title: Conflicten tussen GPO-beleid en Intune-beleid oplossen | Microsoft Docs
 description: Informatie over het oplossen van conflicten tussen het groepsbeleid en de beleidsregels voor de Intune-configuratie.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d883851ae9fecd8a5c3baa0aff8312552915ba4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
 
 
 ---
 
-# Conflicten tussen GPO-beleid (groepsbeleidsobjecten) en Microsoft Intune-beleid oplossen
+# <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Conflicten tussen GPO-beleid (groepsbeleidsobjecten) en Microsoft Intune-beleid oplossen
 Intune maakt gebruik van beleidsregels voor het beheren van instellingen op Windows-pc’s. U kunt bijvoorbeeld een beleidsregel gebruiken om instellingen voor de Windows Firewall op pc’s te beheren. Veel Intune-instellingen zijn vergelijkbaar met instellingen die u configureert met Windows-groepsbeleid. De twee methoden kunnen echter van tijd tot tijd met elkaar conflicteren.
 
 Wanneer er conflicten optreden, heeft groepsbeleid op domeinniveau voorrang ten opzichte van Intune-beleid, tenzij de pc niet bij het domein kan worden aangemeld. In dit geval wordt Intune-beleid toegepast op de client-pc.
 
-## Wat te doen als u groepsbeleid gebruikt
+## <a name="what-to-do-if-you-are-using-group-policy"></a>Wat te doen als u groepsbeleid gebruikt
 Zorg dat door u toegepaste beleidsregels niet worden beheerd door groepsbeleid. Om conflicten te helpen voorkomen, kunt u gebruikmaken van een of meer van de volgende methoden:
 
 -   Verplaats voordat u de Intune-client installeert uw pc’s naar een organisatie-eenheid (OE) van Active Directory waarop geen groepsbeleidsinstellingen worden toegepast. U kunt ook de overname van groepsbeleid blokkeren in organisatie-eenheden met pc’s die zijn geregistreerd bij Intune en waarop u geen groepsbeleidsinstellingen wilt toepassen.
@@ -36,7 +36,7 @@ Zorg dat door u toegepaste beleidsregels niet worden beheerd door groepsbeleid. 
 
 Zie de documentatie van Windows Server voor meer informatie over Active Directory en Windows-groepsbeleid.
 
-## Bestaande groepsbeleidsobjecten filteren om conflicten met Intune-beleid te voorkomen
+## <a name="how-to-filter-existing-gpos-to-avoid-conflicts-with-intune-policy"></a>Bestaande groepsbeleidsobjecten filteren om conflicten met Intune-beleid te voorkomen
 Als u hebt vastgesteld dat bepaalde groepsbeleidsobjecten (GPO's) instellingen bevatten die in strijd zijn met Intune-beleidsregels, kunt u beveiligingsgroepfilters gebruiken om die groepsbeleidsobjecten te beperken tot pc’s die niet worden beheerd door Intune.
 
 <!--- ### Use WMI filters
@@ -113,11 +113,11 @@ U kunt GPO's alleen toepassen op de beveiligingsgroepen die u hebt opgegeven in 
 
 De nieuwe beveiligingsgroep moet ingeschreven blijven in de Intune-servicewijzigingen.
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Windows-pc's met Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

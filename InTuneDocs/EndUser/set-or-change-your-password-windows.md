@@ -1,5 +1,5 @@
 ---
-title: Uw wachtwoord instellen of wijzigen | Microsoft Intune
+title: Uw wachtwoord instellen of wijzigen | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
-ms.openlocfilehash: 9a2f435220b9b2d4304f78e30cf152a4bb2af0c6
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
 
 
 ---
@@ -43,10 +43,10 @@ Als uw Windows-apparaat niet aan het wachtwoordbeleid van uw IT-beheerder voldoe
 3. Voer in het vak **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het vak **Wachtwoord bevestigen**.
 4. Kies **Gereed**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Firewall-beleid voor Windows-pc’s | Microsoft Intune"
+title: Firewall-beleid voor Windows-pc&quot;s | Microsoft Docs
 description: "Intune kan u helpen de pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen, bijvoorbeeld door u te helpen de instellingen van Windows Firewall te configureren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3faede4b60ac989e688b87ddb8112aebcf4c56ef
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: bad0d8867602baf69dc398cc06b91ca30b24c487
 
 
 ---
 
-# Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
+# <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 Microsoft Intune kan u helpen de Windows-pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen. Een van de manieren waarop dit gebeurt is het bieden van beleid waarmee u Windows Firewall-instellingen kunt configureren op pc's.
 
 Als u de Intune Windows-pc-client nog niet op uw computers hebt geïnstalleerd, raadpleegt u [De Windows-pc-client installeren met Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Gebruik de informatie in de volgende gedeelten bij het configureren, implementeren en controleren van Windows Firewall-beleid op Windows-pc’s.
 
-## Intune-beleid gebruiken voor het beheren van Windows Firewall
+## <a name="use-intune-policies-to-manage-windows-firewall"></a>Intune-beleid gebruiken voor het beheren van Windows Firewall
 U kunt met het Windows Firewall-beleid instellingen maken en implementeren waarmee Windows Firewall op beheerde pc’s wordt beheerd. U kunt geen aangepaste uitzonderingen voor Windows Firewall beheren en deze instellingen zijn niet van invloed op firewalls van derden.
 
 > [!NOTE]
@@ -41,7 +41,7 @@ U kunt met het Windows Firewall-beleid instellingen maken en implementeren waarm
 > -   Windows Firewall
 > -   IPsec Beleid Agent
 
-## Windows Firewall-beleid configureren
+## <a name="configure-a-windows-firewall-policy"></a>Windows Firewall-beleid configureren
 
 1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies**Beleid** &gt; **Beleid toevoegen**.
 
@@ -51,9 +51,9 @@ U kunt met het Windows Firewall-beleid instellingen maken en implementeren waarm
 
 Nadat u een Windows Firewall-beleid hebt geïmplementeerd, kunt u de status ervan weergeven op de pagina **Alle beleidsregels** in de werkruimte **Beleid**.
 
-## Beleidsinstellingen voor Windows Firewall
+## <a name="specify-policy-settings-for-windows-firewall"></a>Beleidsinstellingen voor Windows Firewall
 
-### Windows Firewall inschakelen
+### <a name="turn-on-windows-firewall"></a>Windows Firewall inschakelen
 
 Deze beleidsinstellingen schakelen Windows Firewall in op beheerde computers die:
 - zijn verbonden met een domein (bijvoorbeeld op het werk);
@@ -64,7 +64,7 @@ De standaardwaarde voor elk van deze instellingen is **Ja**. Dit is ook de veili
 
 
 
-### Alle binnenkomende verbindingen blokkeren, inclusief verbindingen in de lijst met toegestane programma's
+### <a name="block-all-incoming-connections-including-those-in-the-list-of-allowed-programs"></a>Alle binnenkomende verbindingen blokkeren, inclusief verbindingen in de lijst met toegestane programma's
 
 Deze beleidsinstellingen configureren Windows Firewall voor het blokkeren van binnenkomend netwerkverkeer op beheerde computers die:
 - zijn verbonden met een domein (bijvoorbeeld op het werk);
@@ -76,7 +76,7 @@ De standaardwaarde voor elk van deze instellingen is **Ja**. Dit is ook de veili
 > [!IMPORTANT]
 > Als in uw omgeving computers met Windows Vista zonder servicepacks worden uitgevoerd, moet u de update uit [artikel 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in de Microsoft Knowledge Base installeren of de beleidsinstelling **Alle binnenkomende verbindingen blokkeren** uitschakelen in het beleid dat is geïmplementeerd op deze computers.
 
-### De gebruiker waarschuwen wanneer een nieuw programma door Windows Firewall wordt geblokkeerd
+### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>De gebruiker waarschuwen wanneer een nieuw programma door Windows Firewall wordt geblokkeerd
 
 Deze beleidsinstellingen bepalen of Windows Firewall de pc-gebruiker waarschuwt wanneer het binnenkomend netwerkverkeer wordt geblokkeerd op beheerde computers die:
 - zijn verbonden met een domein (bijvoorbeeld op het werk);
@@ -86,7 +86,7 @@ Deze beleidsinstellingen bepalen of Windows Firewall de pc-gebruiker waarschuwt 
 De standaardwaarde voor elk van deze instellingen is **Ja**.
 
 
-### Vooraf gedefinieerde uitzonderingen configureren
+### <a name="configure-predefined-exceptions"></a>Vooraf gedefinieerde uitzonderingen configureren
 
 U kunt uitzonderingen configureren om bepaalde typen netwerkverkeer via de firewall toe te staan, ongeacht de waarden die u eerder hebt geconfigureerd. Standaard is geen van deze instellingen geconfigureerd.
 
@@ -121,7 +121,7 @@ U kunt uitzonderingen configureren om bepaalde typen netwerkverkeer via de firew
 |**UPnP-framework**|Hiermee wordt de UPnP-frameworkservice op computers geconfigureerd voor detectie en gebruik van UPnP-gecertificeerde apparaten.|
 |**Windows Collaboration Computer Name Registration-service**|Hiermee kunnen computers andere computers vinden en hiermee communiceren via SSDP en PNRP.|
 |**Windows Media Player**|Hiermee kunnen gebruikers mediagegevensstromen via UDP (User Datagram Protocol) ontvangen.|
-|**Windows Media Player Network Sharing-service**|Hiermee kunnen gebruikers media delen via een netwerk. Deze instelling maakt gebruik van SSDP-, qWave- en UPnP-netwerkprotocollen.|
+|**Windows Media Player Network Sharing Service**|Hiermee kunnen gebruikers media delen via een netwerk. Deze instelling maakt gebruik van SSDP-, qWave- en UPnP-netwerkprotocollen.|
 |**Windows Media Player Network Sharing-service (internet)**<br>(Windows 7 of hoger)|Hiermee kunnen gebruikers thuismedia delen via internet.|
 |**Windows Meeting Space**|Hiermee kunnen gebruikers via een netwerk samenwerken om documenten, programma's of hun bureaublad te delen. Deze instelling maakt gebruik van Distributed File System Replication (DFSR) en P2P.|
 |**Windows Peer to Peer Collaboration Foundation**|Hiermee worden verschillende peer-to-peer-programma's en -technologieën geconfigureerd om verbinding mogelijk te maken. Deze instelling maakt gebruik van SSDP en PNRP.|
@@ -130,11 +130,11 @@ U kunt uitzonderingen configureren om bepaalde typen netwerkverkeer via de firew
 |**Windows Virtual PC**<br>(Windows 7 of hoger)|Hiermee kunnen virtuele computers met andere computers communiceren.|
 |**Wireless Portable Devices**|Hiermee configureert u dat media vanaf een camera of media-apparaat in het netwerk kunnen worden overgedragen naar beheerde computers met MTP (Media Transfer Protocol). Deze instelling maakt gebruik van SSDP- en UPnP-netwerkprotocollen.|
 
-### Zie tevens
+### <a name="see-also"></a>Zie tevens
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

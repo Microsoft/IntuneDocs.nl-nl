@@ -1,5 +1,5 @@
 ---
-title: Het wachtwoord voldoet niet aan de vereisten van de IT-beheerder | Microsoft Intune
+title: Het wachtwoord voldoet niet aan de vereisten van de IT-beheerder | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 60659d60e3fcf2146b444a3334192c8b1181f735
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
 
 
 ---
@@ -45,10 +45,10 @@ Beschrijvingen van problemen met de pincode of het wachtwoord:
 
 - **Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen**. Van uw IT-beheerder moet u complexere tekens in uw wachtwoord gebruiken. Probeer tekens zoals cijfers, hoofdletters en symbolen zoals $, % en #.
 
-Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

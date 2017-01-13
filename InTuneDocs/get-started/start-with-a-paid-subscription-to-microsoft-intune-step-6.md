@@ -1,5 +1,5 @@
 ---
-title: Beleid en apps implementeren | Microsoft Intune
+title: Beleid en apps implementeren | Microsoft Docs
 description: U kunt instellingen voor beleid inschakelen en apps implementeren die worden toegepast zodra apparaten zijn geregistreerd voor beheer.
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Beleid maken en apps publiceren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Voordat u apps in Intune registreert, kunt u beleidsinstellingen en apps inschakelen die worden geïmplementeerd zodra deze apparaten in beheer komen. Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. U kunt beleid configureren, apps toevoegen en deze apps implementeren zodat apparaten instellingen en apps ontvangen zodra ze in Intune worden geregistreerd.
 
 Beleid en apps zijn platform-specifiek.

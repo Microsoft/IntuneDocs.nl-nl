@@ -1,11 +1,11 @@
 ---
-title: Instellingen voor iOS-beleid | Microsoft Intune
+title: Instellingen voor iOS-beleid | Microsoft Docs
 description: Maak beleid waarmee instellingen en functies worden beheerd op iOS-apparaten die u met Intune beheert.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Instellingen voor iOS-beleid in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op iOS-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
@@ -78,12 +80,12 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |----------------|-------|
 |**Back-up naar iCloud® toestaan**|Hiermee staat u de gebruiker toe een back-up van het apparaat naar iCloud te maken.|
 |**Documentsynchronisatie met iCloud toestaan**|Hiermee staat u synchronisatie van documenten en sleutelwaarden naar uw iCloud-opslagruimte toe.|
-|**Photo Stream-synchronisatie met iCloud toestaan**|Hiermee staat u synchronisatie van foto's op het apparaat met iCloud toe.|
+|**Fotostreamsynchronisatie met iCloud toestaan**|Hiermee kunnen gebruikers **Mijn fotostream** inschakelen op hun apparaat zodat foto's gesynchroniseerd kunnen worden met iCloud en beschikbaar zijn op alle apparaten van de gebruikers.|
 |**Versleutelde back-ups vereisen**|Hiermee vereist u dat back-ups van het apparaat worden versleuteld.|
 |**Beheerde apps toestaan gegevens naar iCloud te synchroniseren**|Hiermee staat u toe dat apps die u met Intune beheert, gegevens synchroniseren naar het iCloud-account van de gebruikers.|
 |**Handoff toestaan om activiteiten op een ander apparaat voort te zetten**|Hiermee staat u toe dat gebruikers kunnen doorgaan met werk waaraan ze zijn begonnen op een iOS-apparaat, op een ander iOS- of Mac OS X-apparaat.|
-|**Foto's delen via iCloud toestaan**|Hiermee staat u het gebruik van de iOS-functie voor streamen van gedeelde foto's toe.|
-|**iCloud-fotobibliotheek toestaan**|Hiermee kan de gebruiker foto's opslaan in iCloud. Als dit wordt uitgeschakeld, worden foto's die al zijn opgeslagen in iCloud verwijderd.|
+|**Foto's delen via iCloud toestaan**|Stel deze optie in op **Nee** om **Foto's delen via iCloud** uit te schakelen op het apparaat.|
+|**iCloud-fotobibliotheek toestaan**|Als de optie wordt ingesteld op **Nee**, wordt het gebruik uitgeschakeld van de iCloud-afbeeldingsbibliotheek waarmee gebruikers foto's en video's in de cloud kunnen opslaan.   Foto's die niet volledig naar het apparaat zijn gedownload vanaf de iCloud-fotobibliotheek, worden van het apparaat verwijderd als deze optie is ingesteld op **Nee**.|
 
 ### <a name="application-settings-for-the-browser"></a>Toepassingsinstellingen voor de browser
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
@@ -172,6 +174,8 @@ In de lijst **Compatibele en niet-compatibele apps** geeft u een lijst met compa
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik in dit bestand deze indeling: toepassingsnaam, uitgever, app-URL.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
+
+Beleid met compatibele en niet-compatibele app-instellingen moet worden geïmplementeerd voor groepen van gebruikers.
 
 ### <a name="kiosk-mode-settings"></a>Instellingen voor kioskmodus
 
@@ -383,6 +387,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

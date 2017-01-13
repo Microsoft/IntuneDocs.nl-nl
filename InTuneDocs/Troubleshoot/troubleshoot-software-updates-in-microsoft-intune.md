@@ -1,11 +1,11 @@
 ---
-title: Problemen met software-updates oplossen | Microsoft Intune
+title: Problemen met software-updates oplossen | Microsoft Docs
 description: Problemen met software-updates in Microsoft Intune oplossen.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 9c08ebe1a4cf1a7768b5dbecf7ffccdd7c8d8006
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 
 ---
 
-# Problemen met software-updates oplossen in Microsoft Intune
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Problemen met software-updates oplossen in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Met de informatie in deze sectie kunt u problemen met software-updates in Microsoft Intune oplossen.
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
-## Foutcodes voor update-agent
+## <a name="update-agent-error-codes"></a>Foutcodes voor update-agent
 
 De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een specifieke foutcode niet in deze tabel kunt vinden, raadpleegt u [Resultaatcodes voor Windows Update Agent](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -241,7 +244,7 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|Installatie is mislukt omdat de computer nog opnieuw moet worden opgestart.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|Het downloaden is geannuleerd.|
 
-## Windows 7-computers met veel vervangen updates stoppen met rapporteren aan de Microsoft Intune-beheerconsole
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>Windows 7-computers met veel vervangen updates stoppen met rapporteren aan de Microsoft Intune-beheerconsole
 **Probleem**: het kan gebeuren dat Microsoft Intune-clients een of meer van de volgende symptomen ervaren:
 - Er wordt opeens niet meer gerapporteerd aan de Microsoft-beheerconsole.  
 - Er is sprake van hoog CPU-verbruik.
@@ -260,11 +263,11 @@ Dit probleem kan optreden als vervangen updates (updates die zijn vervangen door
 
 Als u met Windows 7 werkt, moet u ook controleren of de volgende update is geïnstalleerd:[3050265 Windows Update-client voor Windows 7: juni 2015](https://support.microsoft.com/kb/3050265).
 
-### Volgende stappen
+### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

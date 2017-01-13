@@ -1,5 +1,5 @@
 ---
-title: Wissen op afstand gebruiken om gegevens te beveiligen | Microsoft Intune
+title: Wissen op afstand gebruiken om gegevens te beveiligen | Microsoft Docs
 description: Intune biedt mogelijkheden tot selectief wissen en volledig wissen om zo gevoelige bedrijfsgegevens te kunnen verwijderen en om toegang tot veel bedrijfsresources onmogelijk te maken.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Uw gegevens beveiligen met volledig wissen of selectief wissen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt apps en gegevens wissen van met Intune beheerde apparaten die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal-app op afstand een opdracht tot het wissen van hun apparaat geven, mits dit een eigen apparaat is dat bij Intune is geregistreerd.
 
   > [!NOTE]
@@ -127,7 +130,7 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|Niet ondersteund.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|Certificaten worden verwijderd en ingetrokken.|Niet ondersteund.|Certificaten worden verwijderd en ingetrokken.|
-|E-mail|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en -bijlagen.|Niet ondersteund.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mailapp voor Windows-e-mail en -bijlagen. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.</br>**Uitzondering**: als Microsoft Exchange on-premises wordt gehost, worden e-mailaccounts niet verwijderd.|
+|E-mail|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mail-app voor Windows-e-mail en -bijlagen.|Niet ondersteund.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mail-app voor Windows-e-mail en -bijlagen. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.</br>**Uitzondering**: als Microsoft Exchange on-premises wordt gehost, worden e-mailaccounts niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|Nee.|Nee.|AAD-record verwijderd.|Niet van toepassing. Windows 10 biedt geen ondersteuning voor selectief wissen voor apparaten die zijn toegevoegd aan Azure Active Directory.|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>EFS-inhoud (Encryption File System) wissen

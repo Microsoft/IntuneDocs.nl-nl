@@ -1,11 +1,11 @@
 ---
-title: Verzameling van Microsoft-gebruiksgegevens uitschakelen voor Windows | Microsoft Intune
+title: Verzameling van Microsoft-gebruiksgegevens uitschakelen | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 461b46e1c14767127969d582448b672487da4b32
+ms.sourcegitcommit: bc757320199362ba1885a6322b316e4f30750613
+ms.openlocfilehash: 42c1b63bb6bd6890c98b5c619d2dced945c10484
 
 
 ---
@@ -24,16 +24,14 @@ ms.openlocfilehash: 461b46e1c14767127969d582448b672487da4b32
 
 # <a name="turn-off-microsoft-usage-data-collection"></a>Schakel het verzamelen van Microsoft-gebruiksgegevens uit
 
-Microsoft verzamelt automatisch anonieme gegevens over de betrouwbaarheid, de prestaties en het gebruik van de bedrijfsportal-app om Microsoft-producten en -services te verbeteren.
+Microsoft verzamelt automatisch bepaalde gegevens over onze producten en services. We doen dit om de betrouwbaarheid en prestaties van onze producten, waaronder de bedrijfsportal-app, te verbeteren. Hoewel deze gegevens worden geanonimiseerd, is het mogelijk dat sommige gebruikers het verzamelen van deze gegevens niet prettig vinden. Uw IT-beheerder heeft geen controle over het verzamelen van deze gegevens en kan uw selectie voor deze instelling niet wijzigen.
 
-U kunt het verzamelen van die gegevens op een Windows-apparaat uitschakelen met de instelling **Gebruiksgegevens** in de bedrijfsportal-app. IT-beheerders hebben geen controle over het verzamelen van de gegevens en ze kunnen uw selectie voor deze instelling niet wijzigen.
+Als u het verzamelen van gebruiksgegevens op een Windows-apparaat wilt uitschakelen, gaat u naar de instelling **Gebruiksgegevens** in de bedrijfsportal-app.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
-
-
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

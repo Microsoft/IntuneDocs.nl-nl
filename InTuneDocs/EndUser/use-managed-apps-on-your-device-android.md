@@ -1,5 +1,5 @@
 ---
-title: Beheerde apps op uw Android-apparaat gebruiken | Microsoft Intune
+title: Beheerde apps op uw Android-apparaat gebruiken | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b9764ec0b728ebce48c14fed9e3bb052a43b85fb
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ca37b4bf393d03e61bed93fa8e7d83efe3922412
 
 
 ---
@@ -72,10 +72,10 @@ Een aantal veelgebruikte apps die mogelijk door uw IT-afdeling worden beheerd:
 
 -   Microsoft Word, Excel en PowerPoint
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Uw apparaat uit de bedrijfsportal verwijderen|Microsoft Intune
+title: Uw apparaat uit de bedrijfsportal verwijderen|Microsoft Docs
 description: Een apparaat uit de bedrijfsportal verwijderen
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 28c6f72336447f85628e4913edbe5c0f003e2717
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
 
 # <a name="remove-your-device-from-the-company-portal"></a>Uw apparaat uit de bedrijfsportal verwijderen
 
-Als u besluit dat u uw apparaat niet meer wilt laten beheren door Intune en uw IT-beheerder, kunt u het apparaat uit de bedrijfsportal verwijderen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt de meeste taken die beschikbaar zijn in de bedrijfsportalapp uitvoeren op de bedrijfsportalwebsite.
+Als u besluit dat u uw apparaat niet meer wilt laten beheren door Intune en uw IT-beheerder, kunt u het apparaat uit de bedrijfsportal verwijderen via de [bedrijfsportalwebsite](http://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt de meeste taken die beschikbaar zijn in de bedrijfsportal-app uitvoeren op de bedrijfsportalwebsite.
 
 Als u uw apparaat verwijdert, wordt het niet meer weergegeven op de bedrijfsportal en mogelijk hebt u ook geen toegang meer tot de gegevens, apps en e-mail van uw werk of school.
 
@@ -40,10 +40,10 @@ Ga als volgt te werk om uw apparaat te verwijderen:
 
 Uw apparaat is nu verwijderd.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

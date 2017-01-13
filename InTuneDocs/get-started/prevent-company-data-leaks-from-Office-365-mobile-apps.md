@@ -1,12 +1,12 @@
 ---
-title: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps | Microsoft Intune
+title: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps | Microsoft Docs
 description: U kunt Intune gebruiken om de gegevens van uw organisatie te beveiligen met behulp van Mobile Application Management-beleid (MAM), waarmee u kunt voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps of andere Line-Of-Business-apps (LOB).
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: bf3976b0ffbcc74f860c904f0e5829a5a02b6a3e
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
 
 
 ---
 
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Quick Start Guide: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune kan u helpen de gegevens van uw organisatie te beveiligen met behulp van Mobile Application Management-beleid (MAM), waarmee u kunt helpen voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps of andere Line-Of-Business-apps (LOB). Intune MAM-beleid kan worden gebruikt zonder dat eindgebruikers hun apparaten hoeven te registreren bij Intune Mobile Device Management (MDM). Dus als u gebruikers hebt die hun mobiele BYOD iOS- of Android-apparaten niet willen registreren bij een Microsoft MDM-oplossing (Intune, Configuration Manager of EAS), u bedrijfsgegevens wilt beveiligen zonder apparaten van eindgebruikers te hoeven beheren, of als u al gebruikmaakt van een Microsoft MDM-oplossing, kan Intune u helpen de gegevens van uw bedrijf beter te beveiligen.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Is deze snelstartgids geschikt voor mij?
@@ -45,6 +48,6 @@ Zo ja, dan kunt u met Microsoft Intune MAM-beleid instellen voor mobiele Office 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Vorige versies | Microsoft Intune
+title: Vorige versies | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4dab832da4490c3df045d2c627b231028c92b25
-ms.openlocfilehash: 3de5e57589a24600301e54a3b60eecb5321ff838
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d951084a7f5730a9549f76c987fe80f4d98415cf
 
 
 ---
@@ -125,6 +125,6 @@ Voordat deze statussen werden toegevoegd, raakten gebruikers in de war als de in
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

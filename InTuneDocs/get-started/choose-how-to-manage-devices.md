@@ -1,12 +1,12 @@
 ---
-title: Kiezen hoe u apparaten beheert |Microsoft Intune
+title: Kiezen hoe u apparaten beheert |Microsoft Docs
 description: Meer informatie over de verschillende manieren waarop u apparaten kunt registreren en beheren.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 
 
 ---
 
 # <a name="choose-how-to-manage-devices"></a>Kiezen hoe u apparaten beheert
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Als u wilt gebruikmaken van de vele functies van Intune, zoals implementatie van apps en beheer van apparaatinstellingen, moeten uw apparaten worden*beheerd*. Hoe u apparaten beheert, is afhankelijk van de Intune-mogelijkheden die u wilt gebruiken. In dit onderwerp wordt uitgelegd hoe u de methode kiest die past bij uw behoeften.
 
@@ -44,7 +46,7 @@ Registreer Windows-pc's voor de meeste functionaliteit. De Intune-softwareclient
 - Hulp op afstand voor gebruikers die de TeamViewer-software gebruiken
 
 Zie [Mogelijkheden voor Mobile Device Management](mobile-device-management-capabilities-in-microsoft-intune.md) en [Mogelijkheden voor de Intune-pc-softwareclient](windows-pc-management-capabilities-in-microsoft-intune.md) voor een gedetailleerd overzicht van de beheermogelijkheden van beide methoden.
-Zie [Ondersteunde mobiele apparaten en computers](/intune/get-started/supported-mobile-devices-and-computers) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
+Zie [Ondersteunde mobiele apparaten en computers](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
 
 ## <a name="next-steps"></a>Volgende stappen
 
@@ -54,6 +56,6 @@ Zie [Ondersteunde mobiele apparaten en computers](/intune/get-started/supported-
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

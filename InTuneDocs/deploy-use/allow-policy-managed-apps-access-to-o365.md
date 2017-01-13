@@ -1,5 +1,5 @@
 ---
-title: Op apps gebaseerde voorwaardelijke toegang tot 0365 | Microsoft Intune
+title: Op apps gebaseerde voorwaardelijke toegang tot O365 | Microsoft Docs
 description: Dit onderwerp helpt u te begrijpen hoe MAM CA kan helpen bij het beheren van welke apps toegang hebben tot O365-services.
 keywords: 
 author: andredm7
@@ -14,16 +14,19 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Toestaan dat alleen mobiele apps met ondersteuning voor Intune MAM-beleid toegang kunnen krijgen tot Office 365-services
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt [Intune MAM-beleid (Mobile Application Management)](protect-apps-and-data-with-microsoft-intune.md) gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens op apparaten die zijn geregistreerd voor beheer in Intune. U kunt ook MAM-beleid gebruiken op **apparaten die in het bezit zijn van werknemers en die niet zijn geregistreerd voor beheer in Intune**.  In dit geval moet u, zelfs als u het apparaat niet beheert, er nog steeds voor zorgen dat uw bedrijfsgegevens en -bronnen zijn beveiligd. Met voorwaardelijke toegang voor MAM (MAM CA) kunt u een beleid maken waarmee alleen mobiele apps met ondersteuning voor Intune MAM-beleid toegang kunnen krijgen tot O365-services zoals Exchange Online.
 
-Als u bijvoorbeeld alleen de **Microsoft Outlook-app** toegang geeft tot Exchange Online, kunt u **de ingebouwde e-mailapps op iOS en Android blokkeren**. Deze hebben immers niet de gegevensbeveiliging van Intune MAM-beleid voor het ophalen van e-mail van **Exchange Online**.
+Als u bijvoorbeeld alleen de **Microsoft Outlook-app** toegang geeft tot Exchange Online, kunt u **de ingebouwde e-mail-apps op iOS en Android blokkeren**. Deze hebben immers niet de gegevensbeveiliging van Intune MAM-beleid voor het ophalen van e-mail van **Exchange Online**.
 
 In het volgende diagram ziet u de stroom die door het MAM CA-beleid wordt gebruikt om te bepalen of de toegang moet worden toegestaan of geblokkeerd: ![Diagram met de verschillende opgenomen criteria om te bepalen of toegang moet worden toegestaan of geblokkeerd ](../media/mam-ca-decision-flow_simple.png).
 
