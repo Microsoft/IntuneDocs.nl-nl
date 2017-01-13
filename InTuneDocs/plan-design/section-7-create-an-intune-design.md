@@ -22,7 +22,7 @@ ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
 
 # <a name="create-an-intune-design"></a>Een Intune-ontwerp maken
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 De sectie van de handleiding moet worden gebruikt in combinatie met andere onderwerpen in sectie 2. Dit ontwerp wordt gebaseerd op de informatie die u verzamelt en besluiten die u neemt bij het voltooien van de voorgaande secties in deze handleiding. In deze ontwerpsectie gaan we uit van een zelfstandige Intune-versie, die bestaat uit een Microsoft-cloudservice die zich in de cloud bevindt.
 
@@ -118,7 +118,7 @@ Als uw organisatie wereldwijd opereert, moet u ook een beslissing nemen over de 
 
 -   Azië en Pacific
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > Het is niet mogelijk het land of de tenantlocatie naderhand te wijzigen.
 
 ## <a name="external-dependencies"></a>Externe afhankelijkheden
@@ -133,7 +133,7 @@ Externe afhankelijkheden zijn services en producten die geen deel uitmaken van I
 
 Deze algemene externe afhankelijkheden worden hieronder nader onderzocht
 
-### <a name="identity"></a>Identiteit 
+### <a name="identity"></a>Identiteit
 
 Identiteit is de manier waarop we de gebruikers identificeren die tot uw organisatie behoren en een apparaat registreren. Intune vereist Azure Active Directory (Azure AD) als provider van gebruiker-id's. Als u deze service al gebruikt, kunt u gebruikmaken van uw bestaande identiteit in de cloud. Azure AD Connect is bovendien het aanbevolen hulpmiddel om uw lokale gebruikers-id's te synchroniseren met Microsoft-cloudservices. Als uw organisatie al met Office 365 werkt, is het belangrijk dat Intune van dezelfde Azure Active Directory-omgeving gebruikmaakt.
 
@@ -255,7 +255,7 @@ U moet ten minste één configuratiebeleid per platform maken. U kunt desgewenst
 |:---:|:---:|:---:|:---:|
 | Bedrijfseigendom - iOS | iOS | Pincode is vereist, lengte: 6, cloudback-up beperken | Bedrijfsapparaten |                                                           
 | Bedrijfseigendom - Android | Android | Pincode is vereist, lengte: 6, cloudback-up beperken | Bedrijfsapparaten |                                                           
-| BYOD - iOS  | iOS | Pincode is vereist, lengte: 4 | BYOD-apparaten | 
+| BYOD - iOS  | iOS | Pincode is vereist, lengte: 4 | BYOD-apparaten |
 | BYOD - Android  | Android | Pincode is vereist, lengte: 4 | BYOD-apparaten |
 
 ### <a name="profiles"></a>Profielen
@@ -284,7 +284,7 @@ Met behulp van certificaatprofielen kan Intune een certificaat uitgeven aan een 
 
 Het verdient aanbeveling om vast te leggen welke gebruikersgroep een certificaat nodig heeft, hoeveel certificaatprofielen er nodig zijn en voor welke gebruikersgroepen ze moeten worden geïmplementeerd.
 
->[!NOTE] 
+>[!NOTE]
 > Houd er rekening mee dat het vertrouwde basiscertificaat vereist is voor het SCEP-certificaat. Zorg er daarom voor dat alle gebruikers met het SCEP-certificaat ook een vertrouwd basiscertificaat krijgen toegewezen. Als er SCEP-certificaten nodig zijn, ontwerpt u de daarvoor bestemde SCEP-certificaatsjablonen en legt u deze vast.
 
 Hier volgt een voorbeeld van hoe u de certificaten tijdens het ontwerpen kunt vastleggen:
@@ -360,7 +360,7 @@ Aangezien apps kunnen worden geïmplementeerd voor gebruikers en apparaten, is h
 -   Zijn de apps openbaar beschikbaar in een app-store of zijn het aangepaste Line-Of-Business-apps?
 
 
->[!TIP] 
+>[!TIP]
 > Bekijk de [verschillende typen apps die ondersteuning bieden voor Intune](https://docs.microsoft.com/intune/deploy-use/add-apps).
 
 #### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
