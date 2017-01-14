@@ -11,6 +11,8 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd

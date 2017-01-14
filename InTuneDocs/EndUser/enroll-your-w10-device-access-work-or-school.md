@@ -11,6 +11,8 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation

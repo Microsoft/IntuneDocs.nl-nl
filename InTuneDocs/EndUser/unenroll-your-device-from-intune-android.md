@@ -11,6 +11,8 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
