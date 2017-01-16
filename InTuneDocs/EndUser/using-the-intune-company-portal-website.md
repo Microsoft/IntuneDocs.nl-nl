@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1314fad0c387224302a4c2b67c913f9d2ec6c5d4
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 
 ---
@@ -46,11 +48,11 @@ Gebruikers kunnen op de bedrijfsportalwebsite de volgende taken uitvoeren:
 Eindgebruikers kunnen op de **bedrijfsportalwebsite** de meeste taken uitvoeren die ze ook met de **bedrijfsportal-app** op een apparaat kunnen uitvoeren. De volgende pagina's bevatten koppelingen naar alle taken die eindgebruikers op hun apparaat kunnen uitvoeren:
 
 - [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
-- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

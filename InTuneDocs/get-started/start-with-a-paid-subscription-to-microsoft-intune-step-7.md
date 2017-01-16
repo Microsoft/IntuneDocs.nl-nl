@@ -14,18 +14,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 063b073d85dac9fce7d1cbab80ea320c5d237961
-ms.openlocfilehash: 0d8a86b55904198612e0d53fbc387d850d88a449
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>De bedrijfsportal aanpassen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 De Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben tot bedrijfsgegevens en algemene taken kunnen uitvoeren, zoals apparaten registreren, apps installeren en naar ondersteuningsinformatie van uw IT-afdeling zoeken.
 
 De Intune-bedrijfsportal biedt gebruikers toegang tot bedrijfsgegevens en -apps. De bedrijfsportal is beschikbaar in twee vormen:
 
--   **De bedrijfsportal-app**: een toepassing die beschikbaar is op apparaten die u beheert met Intune. Meer informatie over de bedrijfsportal-apps voor [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) en [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **De bedrijfsportal-app**: een toepassing die beschikbaar is op apparaten die u beheert met Intune. Meer informatie over de bedrijfsportal-apps voor [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) en [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
 - **De bedrijfsportalwebsite**: een website waarmee eindgebruikers de meeste taken die ze kunnen verrichten, kunnen uitvoeren via de bedrijfsportal-app. De URL van de Intune-bedrijfsportal is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Meer informatie over deze website vindt u in [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website).
@@ -86,6 +89,6 @@ Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagin
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

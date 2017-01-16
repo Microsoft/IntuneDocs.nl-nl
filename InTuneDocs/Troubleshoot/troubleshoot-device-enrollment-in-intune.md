@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
-ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: fa03c8c41fe60b469b66e640beb2143679d5ad41
 
 
 ---
@@ -317,7 +317,7 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 
 
 ### <a name="other-ios-enrollment-errors"></a>iOS-registratiefouten
-In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) een andere lijst met andere iOS-registratiefouten.
+In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune/enduser/using-your-iOS-or-macOS-device-with-intune) een andere lijst met andere iOS-registratiefouten.
 
 ## <a name="pc--issues"></a>Pc-problemen
 
@@ -373,6 +373,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 
