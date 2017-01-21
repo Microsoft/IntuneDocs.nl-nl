@@ -14,13 +14,15 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: a822559a55ee495065eca7eef5ec645cf4522e4b
 
 
 ---
 
 # <a name="resources-about-the-end-user-experience-with-microsoft-intune"></a>Bronnen over de eindgebruikerservaring in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Gebruik de volgende koppelingen als u wilt weten welke stappen uw eindgebruikers volgen om verschillende taken in Intune uit te voeren.
 
@@ -35,7 +37,7 @@ U kunt deze [voor IT-beheerders bestemde, aanpasbare sjabloon voor het inschrijv
 Gebruik de volgende koppelingen om te zien naar welke stappen gebruikers worden doorverwezen vanuit de bedrijfsportalwebsite of -app. De koppelingen zijn onderverdeeld in secties over de installatie van de bedrijfsportal-app en over de inschrijving bij Intune, algemene taken die gebruikers op hun apparaten kunnen uitvoeren en probleemoplossing.
 
 - [Uw Android-apparaat gebruiken met Intune](/Intune/EndUser/using-your-android-device-with-intune)
-- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune)
 - [Uw Windows-apparaat gebruiken met Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [De Intune-bedrijfsportalwebsite gebruiken](/Intune/EndUser/using-the-intune-company-portal-website)
 
@@ -50,6 +52,6 @@ Kies een van de volgende apparaatplatformen om inzicht te krijgen in hoe uw eind
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

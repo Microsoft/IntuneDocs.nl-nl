@@ -1,11 +1,11 @@
 ---
-title: Toegang tot netwerken beperken met Cisco ISE | Microsoft Docs
+title: Toegang tot netwerken beveiligen met Cisco ISE | Microsoft Docs
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Cisco ISE gebruiken met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Als u Intune integreert in Cisco ISE (Identity Services Engine) kunt netwerkbeleid schrijven voor uw ISE-omgeving met behulp van de Intune-apparaatinschrijving en de compatibiliteitsstatus. U kunt dit beleid gebruiken om ervoor te zorgen dat uw bedrijfsnetwerk alleen toegankelijk is voor bedrijven die worden beheerd door Intune en die voldoen aan het Intune-beleid.
 
 ## <a name="configuration-steps"></a>Configuratiestappen
@@ -189,6 +192,6 @@ Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.tech
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

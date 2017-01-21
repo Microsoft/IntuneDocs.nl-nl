@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 99612d5c83030ee05c19c21471cfd23f423fcd80
+ms.sourcegitcommit: 26ddc03985ab8a4959a1d2c9a47e77f042ab9310
+ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
 
 
 ---
 
 # <a name="set-up-android-device-management"></a>Android-beheer instellen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparaten, inclusief Samsung Knox Standard-apparaten, inschakelen. Gebruikers kunnen hun apparaten vervolgens registreren met de bedrijfsportal-app die beschikbaar is via Google Play.
 
 1.  **Intune instellen**<br>
@@ -37,11 +40,28 @@ Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparat
   - [Bronnen over de eindgebruikerservaring in Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
   - [Richtlijnen voor eindgebruikers van Android-apparaten](../enduser/using-your-android-device-with-intune.md)
 
+Vanwege de afwezigheid van Google Play Store in China kunnen Android-apparaten de bedrijfsportal alleen verkrijgen via Chinese app-marktplaatsen. De bedrijfsportal-app voor Android kan nu worden gedownload via de volgende stores:
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+De bedrijfsportal-app voor Android maakt gebruik van Google Play Services om te communiceren met de Microsoft Intune-service. Omdat Google Play Services nog niet beschikbaar is in China, kan het tot wel acht uur duren voordat de volgende taken zijn voltooid. 
+
+|Intune-beheerconsole| Intune bedrijfsportal-app voor Android |Intune-bedrijfsportalwebsite|   
+|---|---|---|
+|Volledig wissen| Een extern apparaat verwijderen| Apparaat verwijderen (lokaal en extern)|
+|Selectief wissen| Apparaat opnieuw instellen| Apparaat opnieuw instellen|
+|Nieuwe of bijgewerkte app-implementaties| Installeren van beschikbare line-of-business-apps| Wachtwoordcode van apparaat opnieuw instellen|
+|Vergrendelen op afstand|||
+|Wachtwoordcode opnieuw instellen|||
+
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

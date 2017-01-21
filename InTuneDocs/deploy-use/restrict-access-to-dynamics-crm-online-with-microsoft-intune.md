@@ -1,11 +1,11 @@
 ---
-title: Toegang tot Dynamics CRM Online beperken | Microsoft Docs
+title: Toegang tot Dynamics CRM Online beveiligen | Microsoft Docs
 description: Toegang tot Dynamics CRM Online beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: abbfeb493d9e85eaa601b127d618996f2e01a01d
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Toegang tot Dynamics CRM Online beperken met Intune
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Toegang tot Dynamics CRM Online beveiligen met Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt de toegang tot Microsoft Dynamics CRM Online beheren vanaf iOS- en Android-apparaten door gebruik te maken van de voorwaardelijke toegang van Microsoft Intune.  De voorwaardelijke toegang van Intune bestaat uit twee onderdelen:
 * Een [nalevingsbeleid voor apparaten](introduction-to-device-compliance-policies-in-microsoft-intune.md) waaraan het apparaat moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
 * Een [beleid voor voorwaardelijke toegang](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) waarin u de voorwaarden opgeeft waaraan het apparaat moet voldoen om toegang tot de service te krijgen.
 
-Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+Zie het artikel [De toegang tot e-mail, O365 en andere services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
 > [!IMPORTANT]
 > Als u voorwaardelijke toegang wilt implementeren, moet u abonnementen hebben voor Intune en Azure Active Directory Premium en moeten gebruikers over een licentie voor beide producten beschikken. Het **Enterprise Mobility + Security-abonnement** omvat zowel een abonnement op Intune als op Azure Active Directory Premium. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) voor meer informatie. Als u geen abonnement hebt op EMS, kunt u een abonnement nemen op Azure Active Directory Premium. Zie de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
@@ -92,15 +95,15 @@ Kies een groep mobiele apparaten en kies op het tabblad **Apparaten** een van de
 * **Apparaten die zijn geregistreerd bij AAD en die voldoen aan het beleid**. Deze apparaten hebben toegang tot Dynamics CRM.
 
 ##  <a name="next-steps"></a>Volgende stappen
-* [Toegang tot Exchange Online beperken](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Toegang tot Exchange Online beveiligen](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Toegang tot Exchange On-Premises beperken](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Toegang tot SharePoint Online beperken](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Toegang tot Exchange On-Premises beveiligen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Toegang tot SharePoint Online beveiligen](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Toegang tot Skype voor Bedrijven Online beveiligen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

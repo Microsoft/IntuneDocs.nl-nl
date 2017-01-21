@@ -5,18 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
-ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 # <a name="about-the-company-portal"></a>Over de bedrijfsportal
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Wat is de bedrijfsportalwebsite en wat kunt u ermee doen?
-De Microsoft Intune-bedrijfsportal biedt u toegang tot de gegevens en apps van uw bedrijf of school. U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
+De bedrijfsportal biedt u toegang tot de gegevens en apps van uw bedrijf of school. U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
 - Door de bedrijfsportal-app op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren.
 - Door naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) te gaan die uw IT-beheerder heeft ingesteld.
@@ -42,7 +44,7 @@ Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app op 
 
 > [!div class="op_single_selector"]
 - [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
-- [Uw iOS- en macOS-apparaat gebruiken met Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uw iOS- en macOS-apparaat gebruiken met Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
 - [De bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
@@ -96,6 +98,6 @@ Neem contact op met de IT-beheerder als u hulp nodig hebt. Ga naar de [bedrijfsp
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

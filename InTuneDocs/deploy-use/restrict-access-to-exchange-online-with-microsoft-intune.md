@@ -1,11 +1,11 @@
 ---
-title: Toegang tot e-mail beperken op Exchange Online | Microsoft Docs
+title: Toegang tot e-mail beveiligen op Exchange Online | Microsoft Docs
 description: "Toegang tot bedrijfs-e‑mail op Exchange Online beschermen en controleren met voorwaardelijke toegang."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>De toegang tot e-mail beperken bij Exchange Online en de nieuwe Exchange Online Dedicated met Microsoft Intune
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>De toegang tot e-mail beveiligen bij Exchange Online en het nieuwe Exchange Online Dedicated met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 >Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neem dan contact op met uw accountmanager.
 
-U kunt voorwaardelijke toegang voor Exchange Online configureren met Microsoft Intune als u de toegang tot e-mail op Exchange Online of uw nieuwe Exchange Online Dedicated-omgeving wilt beheren. Zie het artikel [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+U kunt voorwaardelijke toegang voor Exchange Online configureren met Microsoft Intune als u de toegang tot e-mail op Exchange Online of uw nieuwe Exchange Online Dedicated-omgeving wilt beheren. Zie het artikel [De toegang tot e-mail, O365 en andere services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
 
 **Voordat** u voorwaardelijke toegang kunt configureren, moet u:
@@ -64,7 +66,7 @@ Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardeli
 ![Het diagram illustreert de beslissingspunten die bepalen of een apparaat toegang mag hebben of moet worden geblokkeerd](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
-U kunt toegang tot e-mail van Exchange Online beperken vanuit **Outlook** en andere **apps die moderne verificatie gebruiken**. Het volgende wordt ondersteund:
+U kunt toegang tot e-mail van Exchange Online beveiligen vanuit **Outlook** en andere **apps waarbij gebruik wordt gemaakt van moderne verificatie**. Het volgende wordt ondersteund:
 
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger, en Android for Work
 - iOS 8.0 en hoger
@@ -77,7 +79,7 @@ U kunt toegang tot e-mail van Exchange Online beperken vanuit **Outlook** en and
 -   Dankzij verificatie op basis van ADAL is voor Office-clients verificatie via een browser (ook wel passieve verificatie genoemd) mogelijk. Een gebruiker wordt hierbij naar een aanmeldingspagina geleid om de verificatie uit te voeren.
 -   Deze nieuwe aanmeldingsmethode zorgt voor betere beveiliging, zoals **Multi-Factor Authentication** en **op certificaten gebaseerde verificatie**. Zie [Hoe moderne verificatie werkt](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) voor meer informatie. U kunt ADFS-claimregels instellen om niet-moderne-verificatieprotocollen te blokkeren. Gedetailleerde instructies vindt u in [Scenario 3: alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
 
-U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beperken wanneer een gebruiker deze service opent vanuit een browser op een **iOS**- of **Android**-apparaat. Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
+U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beveiligen wanneer een gebruiker deze service opent vanuit een browser op een **iOS**- of **Android**-apparaat. Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
 
 * Safari (iOS)
 * Chrome (Android)
@@ -88,7 +90,7 @@ U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beperken 
 **De OWA-app voor iOS en Android kan zodanig worden aangepast dat er geen moderne verificatie wordt gebruikt, die dan ook niet wordt ondersteund. Toegang vanuit de OWA-app moet worden geblokkeerd met ADFS-claimregels.**
 
 
-Op de volgende platforms kunt u toegang tot Exchange-e-mail vanuit de ingebouwde **Exchange ActiveSync-e-mailclient** beperken:
+Op de volgende platformen kunt u toegang tot Exchange-e-mail beveiligen vanuit de ingebouwde **Exchange ActiveSync-e-mailclient**:
 
 - Android 4.0 of hoger, Samsung Knox Standard 4.0 of hoger
 
@@ -254,7 +256,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
 -   Als de gebruiker het apparaat uitschrijft, wordt de toegang tot e-mail na circa zes uur geblokkeerd.
 
-Raadpleeg [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele **scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang van apparaten te beperken**.
+Raadpleeg [Voorbeeldscenario's voor het beveiligen van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele **scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang van apparaten te beveiligen**.
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>De compatibiliteit en het beleid voor voorwaardelijke toegang bewaken
 
@@ -264,12 +266,12 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 ![Schermafdruk van het Intune-dashboard met het aantal apparaten waarvoor de toegang tot Exchange is geblokkeerd](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Volgende stappen
-- [Toegang tot SharePoint Online beperken](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [Toegang tot SharePoint Online beveiligen](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [Toegang tot Skype voor Bedrijven Online beveiligen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -5,29 +5,30 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
+ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
+ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
 Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. Met de website van de bedrijfsportal kunt u computers en apparaten beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
 
 > [!NOTE]
-> Het is mogelijk dat de knop **Wachtwoordcode opnieuw instellen** niet wordt weergegeven. Dit is afhankelijk van hoe uw IT-beheerder Intune heeft geconfigureerd. Het opnieuw instellen van wachtwoordcodes wordt niet ondersteund op Windows 8.1-apparaten.
+> Het is mogelijk dat u de knop **Wachtwoordcode opnieuw instellen** niet ziet op de website van de bedrijfsportal. Als u de knop niet ziet, neemt u contact op met de IT-beheerder voor ondersteuning via de website van de bedrijfsportal.
 
 Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
@@ -47,15 +48,14 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
     Raadpleeg de tabel om te zien hoe het **opnieuw instellen van de wachtwoordcode** op uw apparaat werkt.
 
-    |Platform|Support|
+    |Apparaattype|Wat gebeurt er wanneer u het opnieuw instellen voltooit|
     |------------|-----------|
-    |Android|Hiermee maakt u een tijdelijke, alfanumerieke wachtwoordcode.|
-    |iOS|Hiermee verwijdert u de wachtwoordcode van het apparaat en wordt er geen tijdelijke wachtwoordcode gemaakt. Als u Touch ID gebruikt, moet u dit opnieuw instellen op uw apparaat, omdat het wordt verwijderd wanneer u uw wachtwoordcode opnieuw instelt.|
-    |Windows 10 (alleen voor mobiele apparaten)|Hiermee maakt u een tijdelijke, alfanumerieke wachtwoordcode. Windows Hello wordt ondersteund.|
-    |Windows Phone 8,1|Hiermee maakt u een tijdelijke, numerieke wachtwoordcode.|
-    Nadat u uw apparaat hebt ontgrendeld, kunt u een nieuwe wachtwoordcode instellen door op uw apparaat naar **Instellingen** te gaan.
+    |Android|De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers|
+    |iOS|De bestaande wachtwoordcode wordt verwijderd. Er wordt geen tijdelijke wachtwoordcode gemaakt. Als u de Touch ID-vingerafdrukscanner gebruikt voor het openen van uw apparaat of voor het doen van aankopen, moet u de scanner opnieuw instellen.|
+    |Windows 10 Mobile|De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Als u Windows Hello-gezichtsherkenning gebruikt om u aan te melden, blijft dit mogelijk.|
+    |Windows Phone 8,1|De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.|
 
-5.  Ontgrendel uw apparaat en stel vervolgens een nieuwe wachtwoordcode in of wijzig de tijdelijke wachtwoordcode door op uw apparaat naar **Instellingen** te gaan.
+    5.  Ontgrendel uw apparaat en stel vervolgens een nieuwe wachtwoordcode in of wijzig de tijdelijke wachtwoordcode door op uw apparaat naar **Instellingen** te gaan.
 
     Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
 
@@ -63,6 +63,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

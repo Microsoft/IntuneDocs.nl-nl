@@ -1,11 +1,11 @@
 ---
-title: Toegang beperken met beveiliging tegen apparaatbedreigingen | Microsoft Docs
-description: De toegang tot bedrijfsbronnen beperken op basis van apparaat, netwerk en toepassingsrisico.
+title: Toegang beveiligen met beveiliging tegen apparaatbedreigingen | Microsoft Docs
+description: De toegang tot bedrijfsresources beveiligen op basis van apparaat, netwerk en toepassingsrisico.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
-ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 184002a3a9f4af671a467ce9fe79fe0050bd00df
 
 
 ---
 
-# <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>De toegang tot bedrijfsbronnen beperken op basis van apparaat, netwerk en toepassingsrisico
+# <a name="protect-access-to-company-resource-based-on-device-network-and-application-risk"></a>De toegang tot bedrijfsresources beveiligen op basis van apparaat, netwerk en toepassingsrisico
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt de toegang van mobiele apparaten tot bedrijfsbronnen met Lookout regelen op basis van risicoanalyse. Met deze oplossing, die met Microsoft Intune is geïntegreerd, worden apparaten tegen bedreigingen beschermd. Risico's worden beoordeeld op basis van telemetrische gegevens afkomstig van apparaten die door Lookout-service zijn verzameld:
 - Beveiligingsproblemen voor besturingssystemen
 - Schadelijke apps geïnstalleerd
@@ -71,7 +74,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 ![Diagram dat laat zien hoe toegang wordt verkregen met het beleid voor voorwaardelijke toegang wanneer blijkt dat het apparaat compatibel is na herstel.](../media/mtp/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
-Bedreigingen voor uw netwerk worden gedetecteerd, zoals man-in-the-middle-aanvallen, en de toegang tot wifi-netwerken wordt beperkt op basis van apparaatrisico.
+Bedreigingen voor uw netwerk worden gedetecteerd, zoals man-in-the-middle-aanvallen, en de toegang tot Wi-Fi-netwerken wordt beveiligd op basis van apparaatrisico.
 
 **Toegang tot het netwerk via wifi blokkeren:**
 ![diagram dat laat zien hoe de toegang via wifi wordt geblokkeerd met voorwaardelijke toegang op basis van netwerkbedreigingen.](../media/mtp/network-wifi-blocked.png)
@@ -102,6 +105,6 @@ Hier volgen de belangrijkste stappen voor het implementeren van deze oplossing:
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

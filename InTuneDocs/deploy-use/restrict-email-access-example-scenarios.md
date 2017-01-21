@@ -1,11 +1,11 @@
 ---
-title: Voorbeeldscenario&quot;s van het beperken van toegang tot e-mail | Microsoft Docs
+title: Voorbeeldscenario&quot;s van het beveiligen van toegang tot e-mail | Microsoft Docs
 description: "Enkele voorbeeldscenario&quot;s en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d6ead1495a64e4e215c49b14064e390065a06de
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: eca68c053185dbd5e7f89a426d3bed44cc09acf1
 
 
 ---
 
-# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Toegang tot e-mail beperken met Microsoft Intune: voorbeeldscenario’s
+# <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Toegang tot e-mail beveiligen met Microsoft Intune: voorbeeldscenario’s
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Scenario 1: de toegang tot Exchange Online blokkeren voor gebruikers met een apparaat dat niet voldoet aan het beleid.
 ### <a name="scenario-requirements"></a>Scenariovereisten
@@ -82,6 +84,6 @@ U gebruikt de volgende stroom om te bepalen welke apparaten toegang krijgen tot 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

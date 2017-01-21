@@ -1,11 +1,11 @@
 ---
-title: De toegang tot e-mail en Office 365-services beperken | Microsoft Docs
+title: De toegang tot e-mail en Office 365-services beveiligen | Microsoft Docs
 description: In dit onderwerp wordt beschreven hoe u voorwaardelijke toegang gebruikt om alleen compatibele apparaten toegang te geven tot e-mail en bedrijfsgegevens op SharePoint Online en andere services.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2e342bef07ff28bf2df027240471f74dfe373f83
-ms.openlocfilehash: a55087b96855645ef3f6e161fe85f6244c30120d
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: e80949d6207c54b9ff576bb63819c8833965a39a
 
 
 ---
 
-# <a name="restrict-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>De toegang tot e-mail, Office 365-services en andere services beperken met Microsoft Intune
-U kunt toegang tot uw bedrijfs-e-mail, Office 365-services zoals **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online**, **Skype voor Bedrijven Online** en andere services beperken met behulp van voorwaardelijke toegang van Enterprise Mobility + Security (EMS). Hiermee kunt u ervoor zorgen dat de toegang tot uw bedrijfs-e-mail en Office 365-services wordt beperkt tot apparaten die de regels voor voorwaardelijke toegang naleven die u in de Intune-beheerconsole of via de klassieke Azure-portal hebt ingesteld.
+# <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>De toegang tot e-mail, Office 365-services en andere services beveiligen met Microsoft Intune
+U kunt toegang tot uw bedrijfs-e-mail, Office 365-services zoals **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** en **Skype voor Bedrijven Online** en andere services beveiligen met behulp van voorwaardelijke toegang van Enterprise Mobility + Security (EMS). Hiermee kunt u ervoor zorgen dat de toegang tot uw bedrijfs-e-mail en Office 365-services wordt beperkt tot apparaten die de regels voor voorwaardelijke toegang naleven die u in de Intune-beheerconsole of via de klassieke Azure-portal hebt ingesteld.
 ## <a name="how-does-conditional-access-work"></a>Hoe werkt voorwaardelijke toegang?
 U kunt de instellingen voor nalevingsbeleid gebruiken om te evalueren in hoeverre het apparaat aan het beleid voldoet. Deze evaluatie wordt vervolgens gebruikt voor een beleid voor voorwaardelijke toegang om de toegang tot een specifieke service te beperken of toe te staan. Wanneer u een beleid voor voorwaardelijke toegang gebruikt in combinatie met een nalevingsbeleid voor apparaten, is de service alleen toegankelijk voor apparaten die voldoen aan het beleid. Het nalevingsbeleid en het beleid voor voorwaardelijke toegang worden op de gebruiker toegepast. Een apparaat dat de gebruiker gebruikt voor toegang tot de services wordt gecontroleerd op naleving van het beleid.
 
@@ -54,7 +54,7 @@ Configureer nalevingsbeleid voor apparaten en beleid voor voorwaardelijke toegan
 
 ### <a name="conditional-access-policy"></a>Beleid voor voorwaardelijke toegang
 
-U kunt beleid voor voorwaardelijke toegang instellen om toegang te beperken op basis van:
+U kunt beleid voor voorwaardelijke toegang instellen om toegang te beveiligen op basis van:
 - De nalevingsstatus van het apparaat.
 - Het platform dat op het apparaat wordt uitgevoerd.
 - Het type apps dat wordt gebruikt voor toegang tot de services.
@@ -79,6 +79,6 @@ In tegenstelling tot andere Intune-beleidsregels implementeert u geen beleidsreg
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

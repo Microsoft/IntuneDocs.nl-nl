@@ -142,20 +142,20 @@
 #### [Windows en Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Nalevingsbeleid voor apparaten implementeren](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Toegang beperken op basis van apparaatcompatibiliteit](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Toegang beveiligen op basis van apparaatcompatibiliteit](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online en nieuwe Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange On-Premises en verouderde Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype voor Bedrijven Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [E-mailtoegang beperken: voorbeelden](deploy-use/restrict-email-access-example-scenarios.md)
+#### [E-mailtoegang beveiligen: voorbeelden](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Alleen door beleid beheerde apps toestaan voor toegang tot O365-services](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [Apps met MAM CA](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Apps zonder ADAL blokkeren](deploy-use/block-apps-with-no-modern-authentication.md)
-### [De toegang tot netwerken beperken (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Toegang beperken op basis van apparaat, netwerk en toepassingsrisico](deploy-use/restrict-access-based-on-device-network-app-risk.md)
+### [De toegang tot netwerken beveiligen (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [Toegang beveiligen op basis van apparaat, netwerk en toepassingsrisico](deploy-use/restrict-access-based-on-device-network-app-risk.md)
 #### [Lookout-beveiliging tegen apparaatbedreigingen instellen](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 #### [Lookout in Intune inschakelen](deploy-use/enable-lookout-mtp-connection-in-intune.md)
 #### [Lookout for Work-apps implementeren](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
@@ -179,6 +179,7 @@
 #### [LOB-apps op apparaten die niet worden beheerd door Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [De SDK gebruiken bij het schrijven van een app](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [Veelgestelde vragen over MAM en app-beveiliging](deploy-use/mam-faq.md)
 
 ## Apps en gegevens buiten gebruik stellen
 ### [Volledig of selectief wissen gebruiken](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -216,6 +217,6 @@
 ## [Problemen met de integratie van Lookout oplossen](troubleshoot/troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

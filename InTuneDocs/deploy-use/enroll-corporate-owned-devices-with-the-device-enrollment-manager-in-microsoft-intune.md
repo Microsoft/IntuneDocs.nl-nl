@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 01/04/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,63 +14,72 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 751c6bee73175b8e6ac5ad192f12540520c676c0
+ms.sourcegitcommit: b06bb501e71bae5225d451d9ee460213eee183de
+ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
 
 
 ---
 
 
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Apparaten in bedrijfseigendom inschrijven met de apparaatinschrijvingsmanager in Microsoft Intune
-Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal Intune-account waarmee maximaal duizend apparaten kunnen worden geregistreerd. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten. Gebruikers kunnen bijvoorbeeld geen 'systeemeigen' e-mail-apps gebruiken. Licenties voor DEM worden verleend per apparaat, niet per gebruiker.
 
-U kunt bijvoorbeeld een DEM-gebruikersaccount voor een winkelmanager of supervisor toewijzen zodat zij het volgende kunnen doen:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   Apparaten registreren in Intune.
+Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal gebruikersaccount waarmee maximaal duizend apparaten kunnen worden ingeschreven. U voegt bestaande gebruikers toe aan het DEM-account om ze speciale DEM-mogelijkheden te bieden. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten.  
 
+Gebruikers moeten in Azure Portal bestaan om ze te kunnen toevoegen aan apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker géén Intune-beheerder zijn.
+
+## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
+
+Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een apparaatinschrijvingsmanageraccount en voegt een restaurantsupervisor toe aan het DEM-account. Daarmee krijgt die supervisor DEM-mogelijkheden. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
+
+Alleen gebruikers in de Intune-console kunnen apparaatinschrijvingsbeheerders zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
+
+De DEM-gebruiker kan:
+
+-   Maximaal 1000 apparaten inschrijven in Intune.
 -   Aanmelden bij de bedrijfsportal om bedrijfsapps op te halen.
+-   Toegang tot bedrijfsgegevens configureren door rolspecifieke apps te implementeren op de tablets.
 
--   Software installeren en verwijderen.
-
--   Toegang tot bedrijfsgegevens configureren.
-
-
-**Een scenario voor apparaatinschrijvingsmanagers:** een restaurant wil tablets voor de verkooppunten van het bedieningspersoneel en bestellingsmonitoren voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een account voor apparaatinschrijvingsmanagers en schrijft de bedrijfsapparaten in met behulp van dat account. De beheerder kan de referenties voor de apparaatinschrijvingsmanager ook aan een restaurantmanager geven, zodat de manager de apparaten kan inschrijven en beheren.
-
-De beheerder of de manager kan rolspecifieke apps op de restaurantapparaten implementeren. Een beheerder kan het apparaat ook selecteren in de Intune-console en het apparaat onttrekken aan het beheer van mobiele apparaten met behulp van de beheerconsole.
+## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Beperkingen van apparaten die zijn ingeschreven bij een DEM-account
 
 Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanagers, hebben de volgende beperkingen:
-  - Er is geen specifieke gebruiker voor het apparaat. Er is daarom geen e-mailadres of toegang tot bedrijfsgegevens. VPN kan echter nog wel apps op apparaten leveren met toegang tot gegevens.
+
+  - Er is geen specifieke 'gebruiker' van een apparaat. Er is daarom geen e-mailadres of toegang tot bedrijfsgegevens. VPN kan echter nog wel worden gebruikt om apps op apparaten leveren met toegang tot gegevens.
+
   - Er is geen voorwaardelijke toegang mogelijk omdat dit per gebruiker moet worden opgegeven.
-  - U kunt geen apparaten opnieuw instellen vanuit de bedrijfsportal.
+
+  - De DEM-gebruiker kan bij DEM ingeschreven apparaten niet via de bedrijfsportal uitschrijven op het apparaat zelf. De Intune-beheerder heeft deze mogelijkheid, maar de DEM-gebruiker niet.
+
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
-  - De apparaten kunnen geen Apple VPP-apps (Volume Purchase Program) gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
-  - (iOS) De apparaten kunnen niet ook worden geregistreerd met Apple Configurator of het Apple Device Enrollment Program (DEP), maar DEP- of Apple Configurator-beheerde apparaten kunnen worden geregistreerd zonder gebruikersaffiniteit.
+ 
+  - Gebruikers kunnen geen Apple VPP-apps (Volume Purchase Program) gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
+ 
+  - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) niet gebruiken om apparaten in te schrijven.
 
 > [!NOTE]
 > Om bedrijfsapps te implementeren op apparaten die worden beheerd met de apparaatinschrijvingsmanager, moet u de bedrijfsportal-app als een **Vereiste installatie** implementeren naar het gebruikersaccount voor de apparaatinschrijvingsmanager.
-> Om prestaties te verbeteren wordt bij het weergeven van de bedrijfsportal-app op een DEM-apparaat DEM alleen het lokale apparaat weergegeven. Extern beheer van andere DEM-apparaten is alleen mogelijk via de Intune-beheerconsole.
+> Om prestaties te verbeteren wordt bij het weergeven van de bedrijfsportal-app op een DEM-apparaat alleen het lokale apparaat weergegeven. Extern beheer van andere DEM-apparaten is alleen mogelijk via de Intune-beheerconsole.
 
-## <a name="create-device-enrollment-manager-accounts"></a>Apparaatinschrijvingsbeheerder-accounts maken
-Apparaatinschrijvingsbeheerder-accounts zijn gebruikersaccounts met een machtiging voor het inschrijven van grote aantallen apparaten in bedrijfseigendom. Alleen gebruikers in de Intune-console kunnen apparaatinschrijvingsbeheerders zijn.
 
-#### <a name="add-a-device-enrollment-manager-to-intune"></a>Een apparaatinschrijvingsbeheerder toevoegen aan Intune
+## <a name="add-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager toevoegen
 
-1.  Ga naar de [Microsoft Intune-accountportal](http://go.microsoft.com/fwlink/?LinkId=698854) en meld u aan bij uw beheerdersaccount.
+1.  Zorg ervoor dat de gebruiker die u wilt toevoegen aan het DEM-account al bestaat. Als u de gebruiker wilt toevoegen, meldt u zich aan bij de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) en volgt u de stappen in [Gebruikers afzonderlijk of bulksgewijs toevoegen aan de Office 365-portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Kies **Gebruiker toevoegen**.
+2.  Meld u aan bij de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) met uw beheerdersreferenties.
 
-3.  Controleer of het gebruikersaccount dat een apparaatinschrijvingsbeheerder moet worden, wordt vermeld. Als dat niet het geval is, voegt u de gebruiker toe door **Nieuw** te kiezen en de procedure voor het **toevoegen van de gebruiker** te voltooien. Er is een abonnementslicentie vereist voor elke gebruiker die de service gebruikt. De apparaatinschrijvingsmanager mag geen Intune-beheerder zijn. Controleer of u meer licenties moet toevoegen voordat u deze functie gebruikt.
+3.  Kies in het navigatievenster **Beheer**, ga naar **Beheerdersbeheer** en selecteer **Apparaatinschrijvingsmanager**. De pagina **Apparaatinschrijvingsmanagers** wordt geopend.
 
-4.  Meld u aan bij de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) met uw beheerdersreferenties.
+4.  Kies **Toevoegen**. Het dialoogvenster **Apparaatinschrijvingsbeheerder toevoegen** wordt geopend.
 
-5.  Kies in het navigatievenster **Beheer**, ga naar **Beheerdersbeheer** en selecteer **Apparaatinschrijvingsmanager**. De pagina **Apparaatinschrijvingsmanagers** wordt geopend.
+5.  Voer de **gebruikers-id** van het Intune-account in en kies **OK**. 
 
-6.  Kies **Toevoegen**. Het dialoogvenster **Apparaatinschrijvingsbeheerder toevoegen** wordt geopend.
+    De DEM-gebruiker kan nu mobiele apparaten inschrijven met behulp van dezelfde procedure die een eindgebruiker gebruikt voor een BYOD-scenario in de bedrijfsportal. De eindgebruiker van het manageraccount kan de bedrijfsportal-app installeren en het apparaat inschrijven met zijn of haar DEM-referenties, op maximaal 1000 apparaten. Zie de volgende onderwerpen voor de stappen die voor elk platform gelden voor inschrijving door eindgebruikers:
 
-7.  Voer de **gebruikers-id** van het Intune-account in en kies **OK**. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
-
-8.  De apparaatinschrijvingsmanager kan nu mobiele apparaten inschrijven met behulp van dezelfde procedure die een eindgebruiker gebruikt voor een BYOD-scenario in de bedrijfsportal. De eindgebruiker van het manageraccount kan de bedrijfsportal-app installeren en het apparaat inschrijven met zijn of haar DEM-referenties, op maximaal 1000 apparaten.
+  - [Uw iOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-ios)
+  - [Uw Mac OS-apparaat registreren bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)
+  - [Uw Android-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android)
+  - [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Een apparaatinschrijvingsbeheerder uit Intune verwijderen
 
@@ -96,6 +105,6 @@ Het verwijderen van een apparaatinschrijvingsbeheerder heeft geen invloed op ing
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

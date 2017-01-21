@@ -1,11 +1,11 @@
 ---
-title: Toegang tot SharePoint Online beperken | Microsoft Docs
+title: Toegang tot SharePoint Online beveiligen | Microsoft Docs
 description: U kunt voorwaardelijke toegang gebruiken om bedrijfsgegevens te beschermen en te beheren op SharePoint Online.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Toegang tot SharePoint Online beperken met Microsoft Intune
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Toegang tot SharePoint Online beveiligen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Gebruik de voorwaardelijke toegang [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] om de toegang tot bestande op SharePoint Online te beheren.
 Voorwaardelijke toegang bestaat uit twee onderdelen:
 - Een nalevingsbeleid voor apparaten waaraan het apparaat moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
 - Een beleid voor voorwaardelijke toegang waarin u de voorwaarden opgeeft waaraan het apparaat moet voldoen om toegang tot de service te krijgen.
-Zie het onderwerp [De toegang tot e-mail, O365 en andere services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+Zie het onderwerp [De toegang tot e-mail, O365 en andere services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
 U implementeert het beleid voor naleving en voorwaardelijke toegang voor gebruikers. Een apparaat dat een gebruiker gebruikt voor toegang tot de services, wordt gecontroleerd op naleving van het beleid.
 
@@ -66,7 +69,7 @@ Het volgende wordt ondersteund:
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger
 - Windows Phone 8.1 en hoger
 
-U kunt de toegang tot SharePoint Online beperken wanneer **iOS**- en **Android**-apparaten zich via een browser toegang tot de service verschaffen. Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
+U kunt de toegang tot SharePoint Online beveiligen wanneer **iOS**- en **Android**-apparaten zich via een browser toegang tot de service verschaffen. Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS en Android 5.0 en hoger)
@@ -192,10 +195,10 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 -   **Apparaten die zijn geregistreerd bij AAD en die voldoen aan het beleid**. Deze apparaten hebben toegang tot SharePoint Online.
 
 ### <a name="see-also"></a>Zie tevens
-[De toegang tot e-mail en O365-services beperken met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[De toegang tot e-mail en O365-services beveiligen met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

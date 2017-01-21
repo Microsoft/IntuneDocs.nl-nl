@@ -1,11 +1,11 @@
 ---
-title: Toegang tot Skype voor Bedrijven Online beperken | Microsoft Docs
+title: Toegang tot Skype voor Bedrijven Online beveiligen | Microsoft Docs
 description: Toegang tot Skype voor Business Online beschermen en beheren door gebruik te maken van voorwaardelijke toegang.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 23199b84ca1acf202442e096c637f0dbad53f3e0
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Toegang tot Skype voor Bedrijven Online beperken met Microsoft Intune
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Toegang tot Skype voor Bedrijven Online beveiligen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt beleid voor voorwaardelijke toegang voor **Skype voor Bedrijven Online** gebruiken om toegang tot Skype voor Bedrijven Online te beheren.
 Voorwaardelijke toegang bestaat uit twee onderdelen:
 - Een nalevingsbeleid voor apparaten waaraan het apparaat moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
 - Een beleid voor voorwaardelijke toegang waarin u de voorwaarden opgeeft waaraan het apparaat moet voldoen om toegang tot de service te krijgen.
-Zie het artikel [De toegang tot e-mail en O365-service beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+Zie het artikel [Toegang tot e-mail en O365-services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
 Wanneer een gebruiker in de doelgroep Skype voor Bedrijven Online op zijn apparaat probeert te gebruiken, wordt de volgende evaluatie uitgevoerd:
 
@@ -117,6 +120,6 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,42 +1,44 @@
 ---
-title: Bestaand zakelijk e-mailaccount gevonden | Microsoft Docs
+title: Er is een bestaand zakelijk e-mailaccount gevonden | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: df92e0945c0ed9387eda14c145b28c604453cb86
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: 27bb2c0834d07225756ea9133e557a930290dcf5
 
 
 ---
 
-# <a name="existing-company-email-account-found"></a>Bestaand zakelijk e-mailaccount gevonden
+# <a name="an-existing-company-email-account-was-found"></a>Er is een bestaand zakelijk e-mailaccount gevonden
 
-U hebt al een zakelijk e-mailaccount. Als u verbinding wilt blijven maken met uw zakelijke e-mailaccount, moet u de volgende stappen uitvoeren zodat uw IT-beheerder uw account op de juiste wijze kan instellen en beheren:
+U hebt al een e-mailaccount binnen uw organisatie of bedrijf en nu wilt u op uw mobiele apparaat toegang verkrijgen tot dat account. Uw IT-beheerder heeft uw hulp nodig bij het beveiligen van uw e-mails wanneer ze naar uw apparaat onderweg zijn. Mogelijk werkt uw huidige e-mailoplossing prima, maar als u de volgende stappen uitvoert, zijn uw gegevens veiliger.
 
-1.  Verwijder in **Instellingen** op het apparaat de verbinding die u eerder voor uw zakelijke e-mail hebt ingesteld.
+1.  Ga naar **Instellingen** op het apparaat en verwijder de verbinding die u eerder voor uw zakelijke e-mail hebt ingesteld.
 
-    Tik bijvoorbeeld op een iOS-apparaat op **Instellingen** &gt;**E-mail, Contacten, Agenda**. Selecteer uw zakelijke e-mailaccount en klik vervolgens op **Verwijderen**.
+    Tik bijvoorbeeld op een iOS-apparaat op **Instellingen** > **E-mail** > **Accounts**. Selecteer uw zakelijke e-mailaccount en tik vervolgens op **Verwijderen**.
 
-2.  Open de bedrijfsportal-app op uw apparaat en kies **Naleving controleren**.
+2.  Sluit **Instellingen** en open de bedrijfsportal-app op uw apparaat. Tik op **Naleving controleren**.
 
 3.  De nieuwe e-mailinstellingen worden automatisch op uw apparaat toegepast. Dit kan enkele ogenblikken duren.
 
-Als de nieuwe e-mailinstellingen ook na enige tijd niet worden weergegeven, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

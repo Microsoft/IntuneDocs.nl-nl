@@ -1,11 +1,11 @@
 ---
-title: Toegang tot e-mail beperken op Exchange On-premises | Microsoft Docs
+title: Toegang tot e-mail beveiligen op Exchange On-premises | Microsoft Docs
 description: Toegang tot bedrijfs-e-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 10dc9c06985c85c938822d38b0428b500f915923
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Toegang tot e-mail beperken op Exchange On-premises en oudere Exchange Online Dedicated met Microsoft Intune
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Toegang tot e-mail beveiligen op Exchange On-premises en het oudere Exchange Online Dedicated met Intune
 
 > [!NOTE]
 > Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neemt u contact op met uw accountmanager.
 
 
 Als u de toegang tot e-mail op Exchange On-premises of de oude Exchange Online-specifieke omgeving wilt beheren, kunt u beleid voor voorwaardelijke toegang tot Exchange On-premises configureren met behulp van Microsoft Intune.
-Zie het artikel [De toegang tot e-mail en O365-service beperken]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+Zie het artikel [Toegang tot e-mail en O365-services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
 
 Controleer het volgende **voordat** u voorwaardelijke toegang configureert:
 
@@ -125,15 +125,15 @@ Het volgende wordt ondersteund:
 
 -   Als de gebruiker de inschrijving van het apparaat verwijdert uit [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], kan het één tot drie uur duren voordat de toegang tot e-mail wordt geblokkeerd.
 
-**Raadpleeg [Voorbeeldscenario's voor het beperken van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang van apparaten te beperken.**
+**Raadpleeg [Voorbeeldscenario's voor het beveiligen van toegang tot e-mail](restrict-email-access-example-scenarios.md) voor enkele scenario's met voorbeelden van het configureren van beleid voor voorwaardelijke toegang om de toegang van apparaten te beveiligen.**
 
 ## <a name="next-steps"></a>Volgende stappen
--   [Toegang tot SharePoint Online beperken](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Toegang tot SharePoint Online beveiligen](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Toegang tot Skype voor Bedrijven Online beperken](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Toegang tot Skype voor Bedrijven Online beveiligen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

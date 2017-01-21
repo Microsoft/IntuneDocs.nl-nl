@@ -1,5 +1,5 @@
 ---
-title: Groepen maken om gebruikers en apparaten te organiseren | Microsoft Docs
+title: Groepen maken om gebruikers en apparaten te organiseren in de gratis proefversie | Microsoft Docs
 description: Apparaat- en gebruikersgroepen maken wanneer u zich aanmeldt voor een gratis evaluatieversie van Microsoft Intune van 30 dagen.
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e4072108d5d06857acb10f243df68ef2c33066a2
+ms.sourcegitcommit: 89e190e6a3e514c0f38b33409cde2abea0776885
+ms.openlocfilehash: 0cdf5bf8f9fad1f44dbb0ef11de71aea55949d89
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Groepen maken om gebruikers en apparaten voor de evaluatieversie in te delen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Groepen in Intune bieden u een hoge mate van flexibiliteit voor het beheren van uw apparaten en gebruikers. U kunt groepen aanpassen aan de behoeften van uw organisatie (bijvoorbeeld per geografische locatie, afdeling of hardware-eigenschappen) en gebruiken om een breed scala aan administratieve taken uit te voeren, van het instellen van beleidsregels voor een groep gebruikers tot het implementeren van toepassingen op een reeks apparaten.
 
 ## <a name="create-a-device-group"></a>Een apparaatgroep maken
@@ -61,6 +64,6 @@ Zie [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsof
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
