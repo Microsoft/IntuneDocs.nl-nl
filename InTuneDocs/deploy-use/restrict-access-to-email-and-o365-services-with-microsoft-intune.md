@@ -14,13 +14,16 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: e80949d6207c54b9ff576bb63819c8833965a39a
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 911c97a724c28b97bb2bc6e236532e4e0d89c7b1
 
 
 ---
 
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>De toegang tot e-mail, Office 365-services en andere services beveiligen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 U kunt toegang tot uw bedrijfs-e-mail, Office 365-services zoals **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** en **Skype voor Bedrijven Online** en andere services beveiligen met behulp van voorwaardelijke toegang van Enterprise Mobility + Security (EMS). Hiermee kunt u ervoor zorgen dat de toegang tot uw bedrijfs-e-mail en Office 365-services wordt beperkt tot apparaten die de regels voor voorwaardelijke toegang naleven die u in de Intune-beheerconsole of via de klassieke Azure-portal hebt ingesteld.
 ## <a name="how-does-conditional-access-work"></a>Hoe werkt voorwaardelijke toegang?
 U kunt de instellingen voor nalevingsbeleid gebruiken om te evalueren in hoeverre het apparaat aan het beleid voldoet. Deze evaluatie wordt vervolgens gebruikt voor een beleid voor voorwaardelijke toegang om de toegang tot een specifieke service te beperken of toe te staan. Wanneer u een beleid voor voorwaardelijke toegang gebruikt in combinatie met een nalevingsbeleid voor apparaten, is de service alleen toegankelijk voor apparaten die voldoen aan het beleid. Het nalevingsbeleid en het beleid voor voorwaardelijke toegang worden op de gebruiker toegepast. Een apparaat dat de gebruiker gebruikt voor toegang tot de services wordt gecontroleerd op naleving van het beleid.
@@ -40,7 +43,7 @@ Een kenmerkend proces voor voorwaardelijke toegang:
 
 Microsoft Intune en Azure Active Directory (Azure AD) Premium werken naadloos samen om meerdere beheerlagen via EMS-voorwaardelijke toegang te verschaffen. Als u beleid voor voorwaardelijke toegang wilt implementeren met behulp van Intune, moet u een licentie voor beide producten hebben.
 
-**Azure AD Premium-licenties** kunnen als zelfstandige service of (samen met Intune) als onderdeel van Enterprise worden gekocht. Als u beleid voor voorwaardelijke toegang hebt geïmplementeerd met Intune, zorg er dan voor dat u de juiste Azure AD Premium- of **EMS-licenties** hebt.
+**Azure AD Premium-licenties** kunnen als zelfstandige service of (samen met Intune) als onderdeel van een Enterprise-overeenkomst worden gekocht. Als u beleid voor voorwaardelijke toegang hebt geïmplementeerd met Intune, zorg er dan voor dat u de juiste Azure AD Premium- of **EMS-licenties** hebt.
 
 - Raadpleeg de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
 
@@ -79,6 +82,6 @@ In tegenstelling tot andere Intune-beleidsregels implementeert u geen beleidsreg
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
