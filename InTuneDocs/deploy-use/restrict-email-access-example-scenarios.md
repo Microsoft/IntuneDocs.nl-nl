@@ -1,5 +1,5 @@
 ---
-title: Voorbeeldscenario&quot;s van het beveiligen van toegang tot e-mail | Microsoft Docs
+title: "Scenario’s voor het beveiligen van e-mail | Microsoft Docs"
 description: "Enkele voorbeeldscenario&quot;s en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang."
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: eca68c053185dbd5e7f89a426d3bed44cc09acf1
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 
 
 ---
@@ -84,6 +84,6 @@ U gebruikt de volgende stroom om te bepalen welke apparaten toegang krijgen tot 
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Een werkprofiel maken en uw apparaat registreren bij Intune | Microsoft Docs
+title: Uw apparaat inschrijven met een werkprofiel | Microsoft Docs
 description: Informatie over hoe u een Android-apparaat kunt versleutelen
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,8 @@ searchScope:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 179f0ba2a70637f91856037e132eeeea9a57c68c
 
 
 ---
@@ -71,7 +71,7 @@ Ga als volgt te werk om een werkprofiel te maken:
 
     U ziet kort het bericht 'Uw apparaat inschrijven'.
 
-11. Wanneer u in het scherm **Instellen van bedrijfstoegang** ziet dat alles correct is ingesteld, tikt u op **DOORGAAN**. 
+11. Wanneer u in het scherm **Instellen van bedrijfstoegang** ziet dat alles correct is ingesteld, tikt u op **DOORGAAN**.
 
     ![Indicatie in het scherm Instellen van bedrijfstoegang dat het werkprofiel en de registratie van uw apparaat zijn voltooid](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -87,8 +87,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

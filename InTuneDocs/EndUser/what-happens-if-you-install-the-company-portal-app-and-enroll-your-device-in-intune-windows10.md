@@ -1,11 +1,11 @@
 ---
-title: Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows 10-apparaat inschrijft bij Intune? | Microsoft Docs
+title: De bedrijfsportal-app voor Windows 10 installeren | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 60b88dfed5afbb808aa056e93f2069d14efe8254
 
 
 ---
@@ -58,6 +58,6 @@ Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

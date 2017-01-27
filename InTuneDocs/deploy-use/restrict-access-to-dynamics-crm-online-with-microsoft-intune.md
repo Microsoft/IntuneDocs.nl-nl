@@ -1,5 +1,5 @@
 ---
-title: Toegang tot Dynamics CRM Online beveiligen | Microsoft Docs
+title: Dynamics CRM Online beveiligen | Microsoft Docs
 description: Toegang tot Dynamics CRM Online beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
@@ -104,6 +104,6 @@ Kies een groep mobiele apparaten en kies op het tabblad **Apparaten** een van de
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

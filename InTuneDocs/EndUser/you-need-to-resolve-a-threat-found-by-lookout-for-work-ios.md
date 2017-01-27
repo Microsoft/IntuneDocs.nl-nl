@@ -1,11 +1,11 @@
 ---
-title: U moet een bedreiging oplossen die met Lookout for Work op een iOS-apparaat is gevonden | Microsoft Docs
+title: Bedreigingen oplossen die zijn gevonden met Lookout for Work op iOS | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 9e958dc7421ac9373d80268db654c87c61ab3729
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
 
 
 ---
 
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>U moet een bedreiging oplossen die met Lookout for Work is gevonden
 
-Lookout for Work heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit: 
+Lookout for Work heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit:
 
 ![Bericht over niet-naleving van Lookout for Work](./media/ios-lfw-noncompliant-in-ssp.png)
 
@@ -51,8 +51,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

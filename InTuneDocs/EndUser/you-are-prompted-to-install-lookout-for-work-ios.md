@@ -1,11 +1,11 @@
 ---
-title: U wordt gevraagd Lookout for Work te installeren op uw iOS-apparaat | Microsoft Docs
+title: U moet Lookout for Work installeren op uw iOS-apparaat | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>U wordt gevraagd Lookout for Work te installeren op uw iOS-apparaat
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>U moet Lookout for Work installeren op uw iOS-apparaat
 
 Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassing installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen. Wellicht ziet u andere aanwijzingen op uw apparaat, afhankelijk van de manier waarop uw IT-beheerder Lookout for Work heeft ingesteld.
 
@@ -43,7 +43,7 @@ Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassin
 
     ![Tik op Instellingen en vervolgens op Locatieservices](./media/ios-lfw-allow-notifications.png)
 
-    
+
 Lookout for Work voert de installatie uit en u ziet het volgende scherm als er geen beveiligingsrisico's op uw apparaat worden gevonden.
 
 ![Lookout for Work heeft geen beveiligingsrisico’s gevonden](./media/ios-lfw-no-threats-found.png)
@@ -56,7 +56,6 @@ Soms kunnen installaties mislukken vanwege technische problemen waar u geen invl
 
 
 
-
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

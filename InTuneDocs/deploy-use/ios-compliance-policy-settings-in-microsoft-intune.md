@@ -14,8 +14,8 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: f09ad4f705d152b25918ca477b97cf7b1df7bfc8
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 
 
 ---
@@ -84,6 +84,6 @@ Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergeg
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

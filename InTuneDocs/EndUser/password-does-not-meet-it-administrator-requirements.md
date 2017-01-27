@@ -1,11 +1,11 @@
 ---
-title: Het wachtwoord voldoet niet aan de vereisten van de IT-beheerder | Microsoft Docs
+title: Uw wachtwoord voldoet niet aan de vereisten van de IT-beheerder | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>Het wachtwoord voldoet niet aan de vereisten van de IT-beheerder
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Uw wachtwoord voldoet niet aan de vereisten van de IT-beheerder
 
 Het wachtwoord dat u gebruikt voor toegang tot de resources van uw bedrijf of school voldoet niet aan een of meer vereisten die uw IT-beheerder heeft ingesteld. Los het probleem op aan de hand van de instructies die worden weergegeven op het apparaat. Beschrijvingen van de problemen worden hieronder vermeld.
 
@@ -51,6 +51,6 @@ Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: De hoeveelheid tijd instellen waarna het apparaat moet worden vergrendeld | Microsoft Docs
+title: Instellen hoelang het duurt voordat uw apparaat wordt vergrendeld | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>De hoeveelheid tijd instellen waarna het apparaat moet worden vergrendeld
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Instellen hoelang het duurt voordat uw apparaat wordt vergrendeld
 
 Om de gegevens op uw Android-apparaat beter te beveiligen, kan uw IT-beheerder beleid instellen dat vereist dat u de hoeveelheid tijd opgeeft die het apparaat inactief mag zijn voordat het automatisch wordt vergrendeld. Volg deze stappen om de hoeveelheid tijd op te geven waarna het apparaat wordt vergrendeld.
 
@@ -36,8 +36,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f4bffd4aad8915034b3e6f4f962aed4d5ccd731
-ms.openlocfilehash: 29ed9bea92b23998899fcf57502a9982377c3eb6
+ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
+ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
 
 
 ---
@@ -45,7 +45,7 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 * Standaard wordt Intune twee keer per dag gesynchroniseerd met de Apple VPP-service. U kunt op elk gewenst moment een handmatige synchronisatie starten.
 * Nadat u het VPP-token hebt geïmporteerd in Intune, kunt u hetzelfde token niet in een andere oplossing voor apparaatbeheer importeren. Dit kan leiden tot verlies van licentietoewijzngen en gebruikersrecords.
 * Voordat u begint met het gebruik van iOS VPP met Intune, verwijdert u eventuele bestaande VPP-gebruikersaccounts die zijn gemaakt met andere MDM-leveranciers (Mobile Device Management). Uit veiligheidsoogpunt worden deze gebruikersaccounts niet met Intune gesynchroniseerd. Intune synchroniseert alleen gegevens uit de Apple VPP-service, die zijn gemaakt door Intune.
-* U kunt geen iOS VPP-apps implementeren op apparaten van gebruikers die zijn geregistreerd met het Device Enrollment Protocol (DEP).
+* U kunt alleen iOS VPP-apps implementeren op apparaten van gebruikers die zijn ingeschreven met het Device Enrollment Protocol (DEP) als gebruikersaffiniteit voor het apparaat is geconfigureerd.
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
@@ -94,6 +94,6 @@ U kunt bijhouden welke VPP-apps zijn geïmplementeerd en hoeveel licenties worde
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

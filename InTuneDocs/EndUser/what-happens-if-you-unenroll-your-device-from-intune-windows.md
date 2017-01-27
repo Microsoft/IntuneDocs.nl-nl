@@ -1,11 +1,11 @@
 ---
-title: Wat gebeurt er als u de registratie van uw Windows-apparaat bij Intune ongedaan maakt? | Microsoft Docs
+title: Wat gebeurt er als u de registratie van uw Windows-apparaat ongedaan maakt? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7a04c458044bf5e3ec5e050da7cf80f8dc924221
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 7d41dc09c36684bd30263cfc0519cdacb3ab321b
 
 
 ---
@@ -91,6 +91,6 @@ Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

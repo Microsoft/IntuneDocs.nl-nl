@@ -1,11 +1,11 @@
 ---
-title: Uw Android-apparaat is geroot en u kunt geen verbinding maken | Microsoft Docs
+title: Uw Android-apparaat is geroot en kan geen verbinding maken
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1b0684903a8a4d78620f0ef3f8530438419924dc
+ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
+ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
 
 
 ---
@@ -39,6 +39,6 @@ Als u het apparaat zelf hebt geroot, moet u het proces ongedaan maken en het app
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

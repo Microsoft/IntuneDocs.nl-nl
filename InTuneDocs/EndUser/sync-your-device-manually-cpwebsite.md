@@ -1,11 +1,11 @@
 ---
-title: Uw apparaat handmatig synchroniseren met behulp van de bedrijfsportalwebsite | Microsoft Docs
+title: Uw apparaat synchroniseren met de bedrijfsportalwebsite | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fbbe9233ae2e07209356a0cec14d085f742e6436
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 1dded693cb60bacb9c0a445bb26c818dde778a7a
 
 
 ---
 
 
-# <a name="use-the-company-portal-website-to-sync-your-device"></a>De bedrijfsportalwebsite gebruiken om uw apparaat te synchroniseren
+# <a name="sync-your-device-with-the-company-portal-website"></a>Uw apparaat synchroniseren met de bedrijfsportalwebsite
 
 Soms duurt het installeren van een app of het uitvoeren van een taak langer dan normaal. Als het te lang duurt, kunt u uw apparaat handmatig synchroniseren, zodat hetgeen u probeert te doen wat sneller gaat.
 
@@ -38,6 +38,6 @@ Soms duurt het installeren van een app of het uitvoeren van een taak langer dan 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

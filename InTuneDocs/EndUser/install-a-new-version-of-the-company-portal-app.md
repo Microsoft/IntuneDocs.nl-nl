@@ -1,11 +1,11 @@
 ---
-title: Een nieuwe versie van de bedrijfsportal-app installeren | Microsoft Docs
+title: De bedrijfsportal-app bijwerken| Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 82679d4d9ef017dd29429b83a039f3edbfb7911d
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
 
 
 ---
 
-# <a name="install-a-new-version-of-the-company-portal-app"></a>Een nieuwe versie van de bedrijfsportal-app installeren
+# <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
 Als uw versie van de bedrijfsportal-app niet langer wordt ondersteund, of als er een nieuwere versie beschikbaar is, moet u de bedrijfsportal-app bijwerken naar een hogere versie. Volg de stappen die gelden voor uw type apparaat.
 
@@ -53,6 +53,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

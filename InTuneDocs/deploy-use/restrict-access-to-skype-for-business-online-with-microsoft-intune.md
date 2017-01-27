@@ -1,5 +1,5 @@
 ---
-title: Toegang tot Skype voor Bedrijven Online beveiligen | Microsoft Docs
+title: Skype voor Bedrijven Online beveiligen | Microsoft Docs
 description: Toegang tot Skype voor Business Online beschermen en beheren door gebruik te maken van voorwaardelijke toegang.
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
@@ -120,6 +120,6 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

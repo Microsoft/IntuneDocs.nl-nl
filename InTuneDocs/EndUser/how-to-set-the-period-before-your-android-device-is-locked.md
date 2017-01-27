@@ -1,11 +1,11 @@
 ---
-title: De periode instellen voordat een Android-apparaat wordt vergrendeld | Microsoft Docs
+title: Wachttijd voor schermvergrendeling instellen | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,13 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 5df88351d84da28c93d010b8484601b7dbcdaf7e
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
 
 
 ---
 
-# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>De periode instellen voordat een Android-apparaat wordt vergrendeld
+# <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Instellen hoe lang het duurt voordat de schermvergrendeling van uw Android-apparaat wordt geactiveerd
+
 Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op uw apparaat instellen door de stappen voor uw apparaattype te volgen.
 
 ## <a name="native-non-samsung-knox-device"></a>Native apparaat (niet-Samsung Knox)
@@ -46,6 +47,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

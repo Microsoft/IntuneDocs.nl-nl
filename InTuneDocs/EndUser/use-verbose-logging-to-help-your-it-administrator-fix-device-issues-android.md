@@ -1,11 +1,11 @@
 ---
-title: Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het apparaat kan oplossen | Microsoft Docs
+title: Uitgebreide logboekregistratie gebruiken om de IT-beheerder te helpen bij het oplossen van problemen met het apparaat| Microsoft Docs
 description: Uitgebreide logboekregistratie gebruiken om de IT-beheerder te helpen bij het oplossen van problemen met het apparaat
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 501b2c5990acce9bc2f8c5efd1efc07fbee1606f
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
 
 
 ---
 
 
-# <a name="use-verbose-logging-to-help-your-it-admin-fix-device-issues"></a>Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het apparaat kan oplossen
+# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Uitgebreide logboekregistratie gebruiken om de IT-beheerder te helpen bij het oplossen van problemen met het apparaat
 
 Wanneer uw Android-apparaat is geregistreerd bij Intune, kunt u *uitgebreide logboekregistratie* gebruiken om gedetailleerde logboekgegevens over de activiteiten op het apparaat vast te leggen voor de bedrijfsportal-app en de door Intune beheerde apps. Met deze logboeken kan de IT-beheerder problemen oplossen die zich op uw apparaat kunnen voordoen, wanneer u de bedrijfsportal of een door Intune beheerde app gebruikt. Uitgebreide logboekregistratie is standaard op uw apparaat ingeschakeld en de logboeken die worden verzonden naar de IT-beheerder bevatten uw e-mailadres.
 
@@ -34,6 +34,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

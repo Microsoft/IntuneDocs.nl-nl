@@ -1,5 +1,5 @@
 ---
-title: Toegang tot e-mail beveiligen op Exchange Online | Microsoft Docs
+title: E-mail op Exchange Online beveiligen | Microsoft Docs
 description: "Toegang tot bedrijfs-e‑mail op Exchange Online beschermen en controleren met voorwaardelijke toegang."
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
 
 
 ---
@@ -272,6 +272,6 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

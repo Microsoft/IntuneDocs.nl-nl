@@ -1,11 +1,11 @@
 ---
-title: Instellingen voor nalevingsbeleid voor Android-apparaten | Microsoft Docs
+title: Instellingen voor nalevingsbeleid voor Android | Microsoft Docs
 description: In dit onderwerp worden de instellingen voor het nalevingsbeleid voor Android-apparaten beschreven.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 90484c98e58203696e0acbfebd71eeb36b274969
 
 
 ---
@@ -89,6 +89,6 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

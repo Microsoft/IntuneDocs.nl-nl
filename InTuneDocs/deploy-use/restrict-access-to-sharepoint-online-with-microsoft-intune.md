@@ -1,5 +1,5 @@
 ---
-title: Toegang tot SharePoint Online beveiligen | Microsoft Docs
+title: SharePoint Online beveiligen | Microsoft Docs
 description: U kunt voorwaardelijke toegang gebruiken om bedrijfsgegevens te beschermen en te beheren op SharePoint Online.
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
@@ -199,6 +199,6 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

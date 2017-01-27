@@ -1,11 +1,11 @@
 ---
-title: U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden | Microsoft Docs
+title: Bedreigingen oplossen die zijn gevonden met Lookout for Work op Android | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: b6f8cf9eda8983b8bfe4edd8fca6e6872e0c8103
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a49f27dd42d2c9d16be49cb222e56147c4699208
 
 
 ---
@@ -49,8 +49,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

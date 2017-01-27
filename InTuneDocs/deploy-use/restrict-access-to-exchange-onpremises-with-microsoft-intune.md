@@ -1,5 +1,5 @@
 ---
-title: Toegang tot e-mail beveiligen op Exchange On-premises | Microsoft Docs
+title: E-mail op Exchange On-premises beveiligen | Microsoft Docs
 description: Toegang tot bedrijfs-e-mail op Exchange On-premises beschermen en controleren met voorwaardelijke toegang.
 keywords: 
 author: andredm7
@@ -14,16 +14,18 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 10dc9c06985c85c938822d38b0428b500f915923
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
 
 
 ---
 
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Toegang tot e-mail beveiligen op Exchange On-premises en het oudere Exchange Online Dedicated met Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!NOTE]
-> Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neemt u contact op met uw accountmanager.
+> Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neem dan contact op met uw accountmanager.
 
 
 Als u de toegang tot e-mail op Exchange On-premises of de oude Exchange Online-specifieke omgeving wilt beheren, kunt u beleid voor voorwaardelijke toegang tot Exchange On-premises configureren met behulp van Microsoft Intune.
@@ -134,6 +136,6 @@ Het volgende wordt ondersteund:
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: U wordt gevraagd uw apparaat te identificeren wanneer u het apparaat probeert te registreren| Microsoft Docs
+title: U wordt gevraagd uw iOS-apparaat te identificeren wanneer u het probeert te registreren| Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
 
 
 ---
 
 
-# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>U wordt gevraagd uw apparaat te identificeren wanneer u het apparaat probeert te registreren
+# <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>U wordt gevraagd uw apparaat te identificeren wanneer u het probeert te registreren
 
 Als u uw iOS- of Mac OS-apparaat probeert te registeren in Intune en u ziet een scherm waarin u wordt gevraagd uw apparaat te identificeren, is ten minste één van uw apparaten al met een andere methode dan de bedrijfsportal-app geregistreerd en aan uw account toegewezen. Om de bedrijfsportal-app goed te laten werken, moet u aangeven of het apparaat dat u gebruikt, al bij Intune is geregistreerd.
 
@@ -36,6 +36,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

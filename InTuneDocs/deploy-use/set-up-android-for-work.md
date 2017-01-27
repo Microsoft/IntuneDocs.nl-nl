@@ -1,19 +1,19 @@
 ---
-title: Android for Work-beheer instellen | Microsoft Docs
+title: Android for Work instellen | Microsoft Docs
 description: Schakel het beheer van mobiele apparaten (MDM) in voor Android for Work-apparaten met Microsoft Intune.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
+ms.sourcegitcommit: 00994a92eb555827d17ad633ffcf765804365621
+ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
 
 
 ---
@@ -66,6 +66,6 @@ U kunt Android for Work-registratie en -beheer uitschakelen. Door te klikken op 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

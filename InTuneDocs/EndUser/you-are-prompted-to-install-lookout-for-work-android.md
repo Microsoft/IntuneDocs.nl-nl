@@ -1,11 +1,11 @@
 ---
-title: U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat | Microsoft Docs
+title: U moet Lookout for Work installeren op uw Android-apparaat | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work"></a>U wordt gevraagd Lookout for Work te installeren
+# <a name="you-need-to-install-lookout-for-work"></a>U moet Lookout for Work installeren
 
 Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-app installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen.
 
@@ -78,12 +78,12 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 **Als de installatie niet werkt**
 
-Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit gebeurt, installeer Lookout for Work dan handmatig vanuit de Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit gebeurt, installeer Lookout for Work dan handmatig vanuit de Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

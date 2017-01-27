@@ -1,5 +1,5 @@
 ---
-title: Configuratiebeleid voor mobiele Android for Work-apps gebruiken | Microsoft Docs
+title: Configuratiebeleid voor Android for Work-apps | Microsoft Docs
 description: Gebruik het configuratiebeleid voor mobiele apps in Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een Android for Work-app uitvoeren.
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
+ms.sourcegitcommit: 008c0d20312e90f3897c3da8ae2226e3e2595225
+ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
 
 
 ---
@@ -80,6 +80,6 @@ Wanneer de geïmplementeerde app op een apparaat wordt uitgevoerd, worden de ins
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
