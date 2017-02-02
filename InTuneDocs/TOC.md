@@ -7,7 +7,7 @@
 ### [Andere opties en extra's](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### Overstappen op een [betaald abonnement](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Algemene scenario's](understand-explore/common-ways-to-use-intune.md)
-## [Verklarende woordenlijst](understand-explore/intune-glossary.md)
+
 
 # [Aan de slag](get-started/get-started.md)
 ## [Intune instellen](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -42,8 +42,9 @@
 ## [Sectie 9: Testen en valideren](plan-design/section-9-test-and-validation.md)
 ## [Extra resources](plan-design/additional-resources.md)
 
-# Wat is er nieuw
-## [Wat is er nieuw?](whats-new/whats-new-in-microsoft-intune.md)
+# [Wat is er nieuw?](whats-new/whats-new-in-microsoft-intune.md)
+## [Wat is er nieuw in de gebruikersinterface van apps?](whats-new/whats-new-in-intune-app-ui.md)
+## [Wat is nieuw in de Azure-preview?](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Wat is er nieuw (archief)](whats-new/whats-new-archive.md)
 
 # Implementeren en gebruiken
@@ -72,6 +73,7 @@
 #### [De pc-client installeren](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Algemene beheertaken voor pc's](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Pc-beleidsconflicten oplossen](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Android for Work beheren](deploy-use/android-for-work.md)
 
 ## Apparaten configureren
 ### [Instellingen en functies op uw apparaten beheren met beleid](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -97,6 +99,7 @@
 #### [VPN-verbindingen in Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [E-mailprofielen in Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Groepen gebruiken om gebruikers en apparaten te beheren](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Groepen migreren naar Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Apparaten toewijzen aan groepen](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Inzicht in uw apparaten met inventarisaties](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -155,11 +158,11 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Apps zonder ADAL blokkeren](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [De toegang tot netwerken beveiligen (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Toegang beveiligen op basis van apparaat, netwerk en toepassingsrisico](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Lookout-beveiliging tegen apparaatbedreigingen instellen](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Lookout in Intune inschakelen](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Lookout for Work-apps implementeren](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Nalevingsbeleid voor beveiliging tegen bedreigingen voor apparaten inschakelen](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Toegang beveiligen op basis van apparaat, netwerk en toepassingsrisico](deploy-use/device-threat-protection.md)
+#### [Beveiliging tegen bedreigingen voor apparaten instellen](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Beveiliging tegen bedreigingen voor apparaten inschakelen](deploy-use/device-threat-protection-enable.md)
+#### [Apps voor beveiliging tegen bedreigingen voor apparaten implementeren](deploy-use/device-threat-protection-apps.md)
+#### [Nalevingsbeleid voor beveiliging tegen bedreigingen voor apparaten inschakelen](deploy-use/device-threat-protection-policy.md)
 
 ### [App-gegevens beveiligen met MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portal voor MAM-beleid](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -214,9 +217,11 @@
 
 ## [Problemen met Mobile Application Management oplossen](troubleshoot/troubleshoot-mam.md)
 
-## [Problemen met de integratie van Lookout oplossen](troubleshoot/troubleshooting-lookout-integration.md)
+## [Problemen met beveiliging tegen bedreigingen voor apparaten oplossen](troubleshoot/device-threat-protection-troubleshooting.md)
+
+# [Verklarende woordenlijst](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 
