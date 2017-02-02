@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-U kunt apparaten, waaronder Windows-pc’s, registreren om Mobile Device Management (MDM) met Microsoft Intune mogelijk te maken. In dit onderwerp worden verschillende manieren voor registratie van mobiele apparaten in het Intune-beheer beschreven. De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met COD-registratie (apparaten in bedrijfseigendom) zijn beheerscenario's mogelijk, zoals wissen op afstand, gedeelde apparaten of gebruikersaffiniteit voor een apparaat.
+U kunt apparaten, waaronder Windows-pc’s, registreren om Mobile Device Management (MDM) met Microsoft Intune mogelijk te maken. In dit onderwerp worden verschillende manieren voor registratie van mobiele apparaten in het Intune-beheer beschreven. De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met registratie van COD's (Corporate-owned devices, apparaten van bedrijf) zijn beheerscenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten.
 
 Als u [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen. Windows-pc's kunnen ook worden beheerd met [Intune-clientsoftware](#manage-windows-pcs-with-intune).
 
@@ -34,7 +34,7 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 
 - **Wissen**: geeft aan of het apparaat moet worden gewist voordat gebruikers het apparaat kunnen inschrijven. 'Wissen' betekent dat de fabrieksinstellingen van het apparaat worden teruggezet, waardoor alle gegevens worden verwijderd. Zie [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md) voor meer informatie.
 - **Affiniteit**: apparaten worden aan gebruikers gekoppeld. Dit is vereist voor Mobile Application Management (MAM) en voorwaardelijke toegang tot bedrijfsgegevens. Zie [Gebruikersaffiniteit](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices) voor meer informatie.
-- **Vergrendelen**: dit voorkomt dat gebruikers het apparaat uit het beheer kunnen verwijderen. Voor iOS-apparaten is de supervisiemodus vereist voor vergrendeling. Zie [Vergrendelen op afstand](retire-devices-from-microsoft-intune-management.md#block-access-a-device) voor meer informatie.
+- **Vergrendeling** - geeft aan of gebruikers wordt verhinderd hun apparaten uit te schrijven voor beheer. Gebruikers kunnen hun apparaten op alle platforms uitschrijven via de bedrijfsportal-app. Ze kunnen niet de eigen menu’s van het besturingssysteem gebruiken om apparaten uit te schrijven. 
 
 **iOS-registratiemethoden**
 
@@ -60,6 +60,20 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 |**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
+**Android for Work-registratiemethoden**
+
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**macOS-registratiemethoden**
+
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Yes|   Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
 Zie [Kiezen hoe u apparaten registreert](/intune/get-started/choose-how-to-enroll-devices1) voor een reeks vragen die u helpen de juiste methode te vinden.
 
 ## <a name="byod"></a>BYOD
@@ -76,27 +90,22 @@ Het apparaatregistratiebeheer is een speciaal Intune-account voor registratie en
 ### <a name="dep"></a>DEP
 Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
   - Vergrendelde registratie
-  - Voorwaardelijke toegang
-  - Jailbreakdetectie
-  - Beheer van mobiele toepassingen
+  - Kioskmodus en andere geavanceerde configuraties en beperkingen
 
 Meer informatie over [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
-Door USB verbonden apparaten van het bedrijf worden voorbereid met Intune-beleid. Voor registratie met de configuratieassistent maakt de beheerder een Intune-beleid en exporteert het naar Apple Configurator. De beheerder moet elk apparaat handmatig registreren. Gebruikers ontvangen hun apparaten en voeren Configuratieassistent uit om hun apparaat te registreren. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
-  - Voorwaardelijke toegang
-  - Jailbreakdetectie
-  - Beheer van mobiele toepassingen
+IT-beheerders gebruiken Apple Configurator, via USB, om elk apparaat van het bedrijf handmatig voor te bereiden voor registratie met behulp van Configuratieassistent. De IT-beheerder maakt een registratiebeleid en exporteert het beleid naar Apple Configurator. Wanneer gebruikers hun apparaat ontvangen, wordt hun gevraagd om Configuratieassistent uit te voeren om het apparaat in te schrijven. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
+  - Vergrendelde registratie
+  - Kioskmodus en andere geavanceerde configuraties en beperkingen
 
 Meer informatie over [Setup Assistant enrollment with Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) (Registratie met Configuratieassistent met Apple Configurator). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-direct"></a>USB-Direct
-Voor rechtstreekse registratie maakt de beheerder een Intune-beleid en exporteert het naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat de fabrieksinstellingen hoeven worden hersteld. De beheerder moet elk apparaat handmatig registreren. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen. Meer informatie over [directe registratie met Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
+Voor directe registratie moet de beheerder elk apparaat handmatig registreren door een registratiebeleid te maken en dit te exporteren naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat de fabrieksinstellingen hoeven worden hersteld. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen.  Meer informatie over [directe registratie met Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Mobile Device Management met Exchange ActiveSync en Intune
-Mobiele apparaten die niet zijn ingeschreven maar die met Exchange ActiveSync (EAS) verbinding maken, kunnen met behulp van MDM EAS-beleid door Intune worden beheerd. Intune gebruikt een Exchange-connector om met EAS te communiceren, on-premises of in de cloud.
-
-Zie [Mobile Device Management met Exchange ActiveSync en Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md) voor meer informatie.
+Mobiele apparaten die niet zijn ingeschreven maar die met Exchange ActiveSync (EAS) verbinding maken, kunnen met behulp van MDM EAS-beleid door Intune worden beheerd. Intune gebruikt een Exchange-connector om met EAS te communiceren, on-premises of in de cloud. Zie [Mobile Device Management met Exchange ActiveSync en Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md) voor meer informatie.
 
 
 ## <a name="windows-pc-management-with-intune"></a>Windows pc-beheer met Intune  
@@ -106,9 +115,7 @@ U kunt Microsoft Intune ook gebruiken om Windows-pc's te beheren met de Intune-c
  - Bureaubladtoepassingen installeren (bijvoorbeeld .exe en .msi-bestanden)
  - Firewall-instellingen beheren
 
-Pc’s die worden beheerd met de Intune-clientsoftware kunnen niet volledig worden gewist, maar de optie voor selectief wissen is wel beschikbaar. Pc’s die met de Intune-softwareclient worden beheerd, kunnen geen gebruik maken van de vele Intune-beheerfuncties, zoals voorwaardelijke toegang, VPN- en Wi-Fi-instellingen, of de implementatie van certificaten en e-mailconfiguraties.
-
-Zie [Windows-pc’s met Intune beheren](manage-windows-pcs-with-microsoft-intune.md) voor meer informatie.
+Pc’s die worden beheerd met de Intune-clientsoftware kunnen niet volledig worden gewist, maar de optie voor selectief wissen is wel beschikbaar. Pc’s die met de Intune-softwareclient worden beheerd, kunnen geen gebruik maken van de vele Intune-beheerfuncties, zoals voorwaardelijke toegang, VPN- en Wi-Fi-instellingen, of de implementatie van certificaten en e-mailconfiguraties. Zie [Windows-pc’s met Intune beheren](manage-windows-pcs-with-microsoft-intune.md) voor meer informatie.
 
 ## <a name="supported-device-platforms"></a>Ondersteunde apparaatplatformen
 
@@ -123,6 +130,6 @@ Met Intune kunnen de volgende apparaatplatformen worden beheerd:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
