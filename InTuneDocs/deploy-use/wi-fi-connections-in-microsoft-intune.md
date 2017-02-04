@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -50,8 +50,6 @@ U kunt Wi-Fi-profielen implementeren voor de volgende platforms:
 -   Mac OS X 10.9 en hoger
 
 Voor apparaten met het besturingssysteem Windows 8.1 of Windows 10 Desktop of Mobile kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd. Zie [Een Wi-Fi-configuratieprofiel exporteren of importeren voor Windows-apparaten](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices) voor meer informatie.
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) en kies**Beleid** &gt; **Beleid toevoegen**.
 
