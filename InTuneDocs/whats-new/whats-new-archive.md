@@ -14,12 +14,12 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 53d53edf174b325788c10e0c553addf3e4078509
+ms.sourcegitcommit: 43e951d763d788d94e97c35ea4c25a9c700baf1e
+ms.openlocfilehash: 1b1775507b454d45a673ca30c1674ac54b92a056
 
 
 ---
-# <a name="whats-new---archive"></a>Wat is er nieuw (archief)
+# <a name="whats-new-archive"></a>Wat is er nieuw (archief)
 
 Deze pagina bevat een overzicht van de aankondigingen die de afgelopen zes maanden zijn gedaan in [Wat is er nieuw in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
@@ -30,6 +30,6 @@ Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
