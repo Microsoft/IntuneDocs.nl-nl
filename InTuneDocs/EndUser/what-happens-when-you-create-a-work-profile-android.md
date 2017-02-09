@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
@@ -45,8 +46,6 @@ Houd rekening met het volgende wanneer u een werkprofiel maakt:
 Zie [Een werkprofiel maken en uw apparaat registreren](create-a-work-profile-and-enroll-your-device-in-intune-android.md) voor de stapsgewijze procedure voor het maken van een werkprofiel.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
 
 
 

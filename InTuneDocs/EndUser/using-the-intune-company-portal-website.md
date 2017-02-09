@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
@@ -37,7 +38,7 @@ Gebruikers kunnen op de bedrijfsportalwebsite de volgende taken uitvoeren:
 
 -   [Een apparaat op afstand vergrendelen](remote-lock-your-device-cpwebsite.md)
 
--   [Een apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
+-    [Een apparaat handmatig synchroniseren om trage app-installaties te versnellen](sync-your-device-manually-cpwebsite.md)
 
 -   Zoeken naar de contactgegevens van de IT-beheerder, als u deze hebt geconfigureerd
 

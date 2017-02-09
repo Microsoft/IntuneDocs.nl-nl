@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
@@ -29,9 +30,9 @@ Als u uw Windows-apparaat hebt geregistreerd bij Intune, maar het apparaat niet 
 
 Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de koppeling in de bovenstaande sectie In dit artikel die overeenkomt met het type apparaat dat u gebruikt:
 
--   [De registratie van uw Windows 10-apparaat ongedaan maken](#unenroll-your-windows-10-device)
--   [De registratie van uw Windows 8.1-computer ongedaan maken](#unenroll-your-windows-8-1-computer)
--   [De registratie van uw Windows Phone 8.1-apparaat ongedaan maken](#unenroll-your-windows-phone-8-1-device)
+-    [De registratie van uw Windows 10-apparaat ongedaan maken](#unenroll-your-windows-10-device)
+-    [De registratie van uw Windows 8.1-computer ongedaan maken](#unenroll-your-windows-8-1-computer)
+-    [De registratie van uw Windows Phone 8.1-apparaat ongedaan maken](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>De registratie van Windows 10-apparaat ongedaan maken
 

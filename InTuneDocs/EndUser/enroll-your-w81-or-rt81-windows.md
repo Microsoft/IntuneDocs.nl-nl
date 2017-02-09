@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
