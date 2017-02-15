@@ -30,35 +30,35 @@ Wanneer u uw Windows-apparaat registreert bij Intune, geeft u de IT-beheerder to
 
 **Wat de IT-afdeling niet kan zien**
 
--   Oproep- en webgeschiedenis
+- Oproep- en webgeschiedenis
 
--   Locatie
+-    Locatie
 
--   E-mail- en sms-berichten
+- E-mail- en sms-berichten
 
--   Contactpersonen
+- Contactpersonen
 
--   Wachtwoorden
+-    Wachtwoorden
 
--   Kalender
+- Kalender
 
--   Camera-album
+- Camera-album
 
 **Wat de IT-afdeling kan zien**
 
--   Model
+- Model
 
--   Serienummer
+- Serienummer
 
--   Besturingssysteem
+- Besturingssysteem
 
--   App-namen
+- App-namen
 
--   Eigenaar
+- Eigenaar
 
--   Apparaatnaam
+- Apparaatnaam
 
--   Fabrikant
+- Fabrikant
 
 Zie [Wat gebeurt er wanneer ik de bedrijfsportalapp installeer en mijn Windows-apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) voor meer informatie.
 

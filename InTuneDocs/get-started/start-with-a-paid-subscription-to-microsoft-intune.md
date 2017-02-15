@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -22,6 +22,9 @@ ms.openlocfilehash: 7777b7fb4a0977ed663a3ef01547f22e9e61bb8a
 
 
 # <a name="intune-quick-start-guide"></a>Snelstartgids voor Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 De handleiding helpt u op weg met uw betaalde abonnement op Microsoft Intune. Volg deze stappen om de mobiele apparaten, Windows-pc's en de apps in uw organisatie te beheren. U kunt de stappen in volgorde uitvoeren, maar ook stappen overslaan die niet van toepassing zijn op uw omgeving of bedrijfsbehoeften. Zie de [Intune-evaluatiehandleiding](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) als u Intune wilt proberen.  
 
 Als u momenteel Microsoft System Center Configuration Manager gebruikt voor het beheren van computers en servers, kunt u [Configuration Manager uitbreiden voor het beheer van mobiele apparaten](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
