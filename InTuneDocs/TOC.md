@@ -11,7 +11,8 @@
 
 # [Aan de slag](get-started/get-started.md)
 ## [Intune instellen](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Vereisten](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Vereisten]
+#### [Ondersteunde apparaten](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Netwerkgebruik](get-started/network-bandwidth-use.md)
 ### [Aanmelden bij Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Domeinen configureren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +58,6 @@
 #### [Android-beheer](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work-beheer](deploy-use/set-up-android-for-work.md)
 #### [Windows-apparaatbeheer](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile en Windows Phone 8.1](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Apparaten in bedrijfseigendom beheren](deploy-use/manage-corporate-owned-devices.md)
 #### [iOS-apparaten in bedrijfseigendom inschrijven](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Inschrijving met iOS-configuratieassistent](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [Verklarende woordenlijst](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 
