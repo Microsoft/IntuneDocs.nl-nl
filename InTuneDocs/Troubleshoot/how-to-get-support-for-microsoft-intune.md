@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
+# <a name="how-admins-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen voor beheerders
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -28,7 +28,35 @@ Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnemen
 
 Ondersteuning voor Intune en voor Intune in combinatie met Configuration Manager is gratis. Premier Support-klanten worden kosten in rekening gebracht voor vragen over procedures (bijvoorbeeld hoe het configureren van een functie van Intune in zijn werk gaat).
 
-## <a name="create-an-online-service-ticket"></a>Een onlineserviceticket maken
+## <a name="find-help-without-opening-a-support-ticket"></a>Hulp krijgen zonder een ondersteuningsticket te openen
+
+Bekijk de volgende bronnen voor antwoorden en informatie voordat u een ondersteuningsticket maakt. U kunt ook [algemene tips voor probleemoplossing voor Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune) doorlezen.
+
+### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet-forums
+
+Stel een vraag of start een discussie met technische experts van Microsoft. Wij geven antwoorden en inzichten op het doorzoekbare [Microsoft Intune TechNet-forum](https://social.technet.microsoft.com/Forums/home).
+
+![Microsoft Intune TechNet-forum](./media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice-productfeedbacksite
+
+Hebt u feedback over hoe Microsoft Intune nog beter kan maken? Laat het ons weten door uw ideeën toe te voegen op de Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-feedbacksite. U kunt ook stemmen op ideeën die anderen hebben toegevoegd aan UserVoice. 
+
+![Microsoft Intune UserVoice-feedbackpagina](./media/intune-uservoice-feedback-page.png)
+
+## <a name="create-an-online-support-ticket"></a>Een onlineondersteuningsticket maken
+
+Als u geen antwoorden kunt vinden met de bronnen voor zelfhulp, kunt u een onlineondersteuningsticket maken.
+
+**Meld niet meer dan één probleem per ondersteuningsticket** zodat we u beter van dienst kunnen zijn. Waarom is:
+
+- Ondersteuningsmedewerkers die u helpen zijn waarschijnlijk in specifieke gebieden gespecialiseerd. Op deze manier maakt u het eenvoudiger om de juiste specialisten te vinden om u met het probleem te helpen.
+- Engineeringteams kunnen prioriteiten in hun werk aanbrengen in de productgebieden waar de meeste incidenten worden gegenereerd.
+- Het is gemakkelijker om extra lastige problemen naar de juiste medewerker te escaleren.
+
+Lees de [definitie van een ondersteuningsincident](#definition-of-a-support-incident) voordat u een ondersteuningsticket maakt.
+
+**Een onlineondersteuningsticket maken**:
 
 1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com) met de referenties van uw Intune.
     >[!NOTE]
@@ -71,12 +99,12 @@ Volg deze procedure als uw ondersteuningspagina er als volgt uitziet:
 ## <a name="get-phone-support"></a>Telefonische ondersteuning krijgen
 Zie [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) voor een lijst met telefoonnummers voor ondersteuning per land en regio, ondersteuningsuren en ondersteunde talen voor elke regio.
 
-## <a name="track-your-service-requests"></a>Uw serviceaanvragen volgen
+## <a name="track-your-support-requests"></a>Uw ondersteuningsaanvragen bijhouden
 1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com) met de referenties van uw Intune.
 2.  Kies de tegel **Beheer**.
 3.  Kies aan de linkerkant bij **Ondersteuning** de optie **Serviceaanvragen**. Vervolgens kunt u de aanvragen bekijken.
 
-Hoe lang het duurt voordat we reageren op serviceaanvragen, hangt af van de ernst van het probleem. Voor onze Professional-klanten geldt dat ze bij zeer ernstige problemen binnen twee uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst. Dit zijn gevallen waarbij:
+Hoe lang het duurt voordat we reageren op ondersteuningsaanvragen, hangt af van de ernst van het probleem. Voor onze Professional-klanten geldt dat ze bij zeer ernstige problemen binnen twee uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst. Dit zijn gevallen waarbij:
 
 - Een of meer services niet toegankelijk zijn of onbruikbaar zijn.
 - Productie, bedrijfsactiviteiten of implementatiedeadlines aanzienlijke hinder ondervinden of er ernstige gevolgen voor de productie of winstgevendheid zijn.
@@ -99,12 +127,6 @@ Voor onze Professional-klanten geldt dat ze voor andere problemen binnen acht uu
 >
 > Technische ondersteuning voor System Center Configuration Manager of System Center Endpoint Protection moet worden betaald of wordt bijgeschreven op uw bestaande licentie- of Premier Support-overeenkomsten.
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>Problemen oplossen zonder een ondersteuningsticket te openen
-
-Mogelijk kunt u het probleem oplossen zonder dat u daarvoor een ondersteuningsticket hoeft te openen.
-
-Zie voor zelfhulp met Intune [Algemene tips voor probleemoplossing voor Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) of een van de onderwerpen over probleemoplossing voor specifieke problemen. U kunt ook naar een oplossing zoeken op het [Intune-forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) of uw vraag daar plaatsen.
-
 ## <a name="find-support-for-volume-licensing"></a>Ondersteuning voor een volumelicentie
 Als u al licenties van Microsoft hebt aangeschaft onder een volumelicentieprogramma, gebruikt u de volgende resources voor ondersteuning:
 
@@ -114,8 +136,18 @@ Als u al licenties van Microsoft hebt aangeschaft onder een volumelicentieprogra
 
 -   Zie [Volumelicenties](http://go.microsoft.com/fwlink/p/?LinkID=282015) voor algemene informatie over volumelicenties.
 
+## <a name="definition-of-a-support-incident"></a>Definitie van een ondersteuningsincident
+
+Een ondersteuningsincident is gedefinieerd als één ondersteuningsprobleem en het werk dat nodig is om het op te lossen. Een enkel ondersteuningsprobleem kan niet worden opgesplitst in onderliggende problemen. Als u onderliggende problemen kunt identificeren, wordt elk onderliggend probleem beschouwd als een afzonderlijk incident. Mogelijk zijn er meerdere contactmomenten en offlineonderzoek nodig om een bepaald probleem te verhelpen. De tijd besteed aan het leveren van deze oplossingen is onafhankelijk van wat in rekening wordt gebracht.
+
+In abonnementen op Microsoft Intune en Mobile Device Management voor Office 365 is ondersteuning van het type 'schadevergoeding' opgenomen. Dit betekent dat u niet tegen extra kosten oploopt als u nog een ondersteuningsincident opent.
+
+Als een ondersteuningsmedewerker u verzoekt een extra ondersteuningsincident te openen voor aanvullende problemen, dient u te begrijpen dat dit in het belang van iedereen is. Bedankt voor uw begrip. In samenwerking met u kunnen we ondersteuning van wereldklasse bieden!
+
+Zie [Professional Support Options](https://support.microsoft.com/gp/offerprophone) (Professionele ondersteuningsopties) voor de prijzen per incident en de ernstniveaus.
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 
