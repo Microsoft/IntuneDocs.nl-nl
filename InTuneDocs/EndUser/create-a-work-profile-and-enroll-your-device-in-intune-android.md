@@ -1,6 +1,6 @@
 ---
 title: Uw apparaat inschrijven met een werkprofiel | Microsoft Docs
-description: Informatie over hoe u een Android-apparaat kunt versleutelen
+description: Android-apparaten veiliger maken met werkprofielen.
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 179f0ba2a70637f91856037e132eeeea9a57c68c
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -87,6 +89,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalw
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 

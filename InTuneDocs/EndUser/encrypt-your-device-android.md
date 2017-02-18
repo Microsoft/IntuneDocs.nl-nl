@@ -1,11 +1,11 @@
 ---
-title: Uw apparaat versleutelen | Microsoft Docs
-description: Informatie over hoe u een Android-apparaat kunt versleutelen
+title: Uw Android-apparaat beveiligen met versleuteling | Microsoft Docs
+description: Uw Android-apparaat beveiligen
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Uw apparaat versleutelen
+# <a name="how-to-protect-your-android-device-using-encryption"></a>Uw Android-apparaat beveiligen met versleuteling
 
-Als uw bedrijf of organisatie verlangt dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bestanden, e-mailberichten of gegevens van uw bedrijf, volgt u de onderstaande stappen om het apparaat te versleutelen. U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als uw IT-beheerder dit vereist.
+Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnemen in een laag beschermende code die voorkomt dat onbevoegden toegang tot die informatie kunnen krijgen. Als eerste stap om uw informatie te beveiligen, vereist uw organisatie dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bedrijfsbestanden, e-mail of gegevens.
+
+> [!Note]
+> U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als uw IT-beheerder dit vereist.
 
 Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
@@ -63,6 +68,6 @@ Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsi
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

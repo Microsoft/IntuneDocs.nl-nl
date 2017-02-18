@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 588674c38a5e54f6b762ac044457110a361e6969
+ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
+ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
 
 
 ---
@@ -51,8 +52,11 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 
 Wanneer het apparaat met een IMEI-nummer wordt ingeschreven bij Intune, wat meestal gebeurt wanneer een gebruiker de bedrijfsportal-app installeert en het inschrijvingsproces voltooit, wordt het apparaat gemarkeerd als eigendom van het bedrijf en weergegeven als geregistreerd in de groep **IMEI-apparaten**.
 
+>[!NOTE] 
+> Als uw organisatie in de nabije toekomst wordt gemigreerd naar de nieuwe Azure-portal, verandert deze functie. In de bestaande Intune-beheerconsole kunnen beheerders bijbehorende gegevens accepteren uit een geüpload CSV-bestand en de bestaande gegevens voor afzonderlijke hardware-id's overschrijven. In de nieuwe Azure-portal kunt u de gegevens voor alle hardware-id's automatisch overschrijven of alle nieuwe gegevens voor bestaande id's negeren.
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Feb17_HO1-->
 
 

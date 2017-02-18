@@ -5,17 +5,18 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
+ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
+ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
 
 
 ---
@@ -45,6 +46,9 @@ Voordat u synchronisatie inschakelt in de Intune-console, moet u uw Store-accoun
 1. Zorg ervoor dat u zich bij Windows Store voor Bedrijven aanmeldt met hetzelfde tenantaccount dat u gebruikt om u aan te melden bij Intune.
 2. Kies in Windows Store voor Bedrijven **Instellingen** > **Beheerprogramma's**.
 3. Kies op de pagina Beheerprogramma's de optie **Beheerprogramma toevoegen** en kies **Microsoft Intune**.
+
+> [!NOTE]
+> Als u meer dan één beheerhulpprogramma voor het implementeren van Windows Store voor Bedrijven-apps gebruikt, kon u voorheen slechts één van deze programma’s koppelen met de Windows Store voor Bedrijven. U kunt nu meerdere beheerhulpprogramma's met de Store koppelen, bijvoorbeeld Intune en Configuration Manager.
 
 U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
@@ -83,6 +87,6 @@ Wanneer u een Windows Store voor Bedrijven-app implementeert, heeft elke gebruik
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
