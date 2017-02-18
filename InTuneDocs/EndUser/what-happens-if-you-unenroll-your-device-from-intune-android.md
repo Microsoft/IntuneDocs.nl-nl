@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
@@ -30,7 +31,7 @@ Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, gebe
 
 -   Uw IT-beheerder beheert het apparaat niet meer.
 
--   U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
+-    U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
 
 -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 

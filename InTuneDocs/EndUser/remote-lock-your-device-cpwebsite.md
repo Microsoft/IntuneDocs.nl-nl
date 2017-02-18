@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
@@ -39,13 +40,13 @@ Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergr
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen
 
-1.  Tik op de [website van de bedrijfsportal](http://portal.manage.microsoft.com) op de naam van het apparaat dat u wilt vergrendelen.
+1.    Tik op de [website van de bedrijfsportal](http://portal.manage.microsoft.com) op de naam van het apparaat dat u wilt vergrendelen.
 
-2.  Tik op **Extern vergrendelen**.
+2.    Tik op **Extern vergrendelen**.
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Er wordt een bericht weergegeven met de melding dat u op het punt staat om uw apparaat te vergrendelen. Tik op **Extern vergrendelen**. Uw apparaat wordt dan vergrendeld via de website van de bedrijfsportal.
+3.    Er wordt een bericht weergegeven met de melding dat u op het punt staat om uw apparaat te vergrendelen. Tik op **Extern vergrendelen**. Uw apparaat wordt dan vergrendeld via de website van de bedrijfsportal.
 
     Wanneer u op **Extern vergrendelen** hebt getikt, wordt het bericht Extern vergrendelen is in behandeling weergegeven.  Als extern vergrendelen is gelukt, wordt de status gewijzigd in 'Extern vergrendelen is voltooid'.
 

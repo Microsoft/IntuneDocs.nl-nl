@@ -14,6 +14,7 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: a49f27dd42d2c9d16be49cb222e56147c4699208

@@ -11,6 +11,7 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
 ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
@@ -92,7 +93,7 @@ Beleid en apps blijven gewoon geïmplementeerd voor groepen, net als voorheen. U
 
 ## <a name="how-to-get-more-information"></a>Hoe kunt u meer informatie krijgen
 
-Neem contact op met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).  
+Neem contact op met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).    
      
 
 

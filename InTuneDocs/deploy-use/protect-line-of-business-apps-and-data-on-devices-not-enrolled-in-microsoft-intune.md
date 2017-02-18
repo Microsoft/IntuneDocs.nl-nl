@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ Als u de Line-Of-Business-app wilt koppelen aan MAM-beleid, voert u de volgende 
 2. Kies op de blade **Line-Of-Business-apps** de optie **Een aangepaste app toevoegen**.
 
   ![Schermafbeelding van de blade Line-Of-Business-apps met bovenaan de knop Aangepaste app toevoegen](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Geef een naam voor de app op, geef in het veld App-id de bundel-id op en geef het platform (iOS of Android) op.
+3.    Geef een naam voor de app op, geef in het veld App-id de bundel-id op en geef het platform (iOS of Android) op.
 
   ![Schermafbeelding van de blade Aangepaste app toevoegen](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ Als u de app-gegevens, zoals de naam van de app of de bundel-id, moet wijzigen, 
 ##  <a name="remove-apps"></a>Apps verwijderen
 U kunt een Line-Of-Business-app verwijderen uit de lijst met apps. Hiermee wordt de app verwijderd uit de lijst en wordt de koppeling met het MAM-beleid verbroken. De app wordt echter niet van het apparaat van de gebruiker verwijderd.  
 
-1.  Ga in [Azure portal](https://portal.azure.com/) naar **Intune Mobile App Management** > **Instellingen**. Kies op de blade **Instellingen** de optie **Line-Of-Business** om de lijst met bestaande apps te openen.  
-2.  Kies de app die u wilt verwijderen en kies het **(…) contextmenu**.
+1.    Ga in [Azure portal](https://portal.azure.com/) naar **Intune Mobile App Management** > **Instellingen**. Kies op de blade **Instellingen** de optie **Line-Of-Business** om de lijst met bestaande apps te openen.  
+2.    Kies de app die u wilt verwijderen en kies het **(…) contextmenu**.
 
   ![Schermafbeelding van de blade Line-Of-Business-apps met het weglatingsteken](../media/mam-azure-portal-lob-context-menu.png)
-3.  Kies **Toepassing verwijderen** om de app te verwijderen.
+3.    Kies **Toepassing verwijderen** om de app te verwijderen.
 
   ![Schermafbeelding van de Line-Of-Business-blade met de optie voor het verwijderen van de app](../media/mam-azure-portal-delete-app.png)
 

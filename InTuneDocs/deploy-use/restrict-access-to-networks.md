@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ Geef in de ISE-beheerconsole de volgende instellingswaarden op:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server
 Deze tabel bevat de informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server voor apparaten die worden beheerd door Intune.
 
-|Eigenschap|  Beschrijving|
+|Eigenschap|    Beschrijving|
 |---------------|------------------------------------------------------------|
 |complianceState|De tekenreeks 'waar' of 'onwaar' die aangeeft of het apparaat compatibel of niet compatibel is.|
 |isManaged|De tekenreeks 'waar' of 'onwaar' die aangeeft of de client door Intune wordt beheerd of niet.|

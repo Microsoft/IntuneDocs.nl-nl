@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Zo ja, laat Microsoft Intune dan automatisch de e-mail voor uw medewerkers op hu
 Nadat het e-mailprofiel is geconfigureerd, kunt u gemakkelijk de toegang tot bedrijfse-mail en Office 365-services beperken met de Intune-beleidsregels voor voorwaardelijke toegang. Deze beleidsregels geven u de mogelijkheid ervoor te zorgen dat toegang tot uw bedrijfse-mail en Office 365-services wordt beperkt tot apparaten die de regels naleven die u in Intune hebt ingesteld.
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.  Automatisch [ e-mailprofielen van eindgebruikers configureren](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) op Windows-, iOS en Android-apparaten.
-2.  [De toegang tot bedrijfse-mail beheren](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) met behulp van beleid voor voorwaardelijke toegang.
+1.    Automatisch [ e-mailprofielen van eindgebruikers configureren](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) op Windows-, iOS en Android-apparaten.
+2.    [De toegang tot bedrijfse-mail beheren](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) met behulp van beleid voor voorwaardelijke toegang.
 
 
 ### <a name="additional-information"></a>Extra informatie:

@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
@@ -42,13 +43,13 @@ Wanneer u het apparaat inschrijft bij Intune, geeft u de IT-beheerder toestemmin
 
 -   Oproep- en webgeschiedenis
 
--   Locatie
+-    Locatie
 
 -   E-mail- en sms-berichten
 
 -   Contactpersonen
 
--   Wachtwoorden
+-    Wachtwoorden
 
 -   Kalender
 

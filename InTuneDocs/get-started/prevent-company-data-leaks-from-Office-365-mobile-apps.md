@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
@@ -32,9 +33,9 @@ Wilt u uw eindgebruikers toegang geven tot de gegevens van uw Office 365- en LOB
 Zo ja, dan kunt u met Microsoft Intune MAM-beleid instellen voor mobiele Office 365-apps op iOS en Android, zoals onder andere het instellen van beperkingen voor knippen/kopiëren/plakken, of u kunt voorkomen dat 'opslaan als' kan worden gebruikt, u kunt vereisten voor pincodes instellen en instellen dat het mogelijk is om op afstand door MAM beveiligde gegevens te wissen.  Zo worden bedrijfsgegevens beveiligd zonder dat gebruikers hun apparaten hoeven te registreren bij een MDM-oplossing, terwijl tegelijkertijd eindgebruikers van een geweldige ervaring met mobiele Office-apps kunnen blijven profiteren.
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.  Probeer te begrijpen hoe [Intune Mobile Application Management (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) op een elementair niveau werkt.
-2.  Onderzoek [wat u moet doen voordat u MAM-beleid kunt maken](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in de Azure-portal.
-3.  Met Intune [MAM-beleid maken en implementeren](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
+1.    Probeer te begrijpen hoe [Intune Mobile Application Management (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) op een elementair niveau werkt.
+2.    Onderzoek [wat u moet doen voordat u MAM-beleid kunt maken](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in de Azure-portal.
+3.    Met Intune [MAM-beleid maken en implementeren](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
 
 ### <a name="additional-information"></a>Extra informatie:
 - [Ervaring van eindgebruikers](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) die apps gebruiken die geschikt zijn voor MAM.

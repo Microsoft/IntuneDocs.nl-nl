@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Deze snelstartgids is een nuttige informatiebron als u aan de volgende vereisten
 U kunt de informatie in deze gids gebruiken om verlies van uw bedrijfsgegevens te voorkomen, door het gebruik van wachtwoordcodes en gegevensversleuteling af te dwingen. Dit doet u door een beleid in te stellen voor de mobiele apps die uw werknemers gebruiken om toegang te krijgen tot gevoelige gegevens, zonder dat volledige inschrijving bij een beheeroplossing voor mobiele apparaten is vereist. U kunt Microsoft Intune gebruiken om een beleid voor het beheer van mobiele toepassingen (MAM) in te stellen voor mobiele Office-apps op [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios)- en [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android)-apparaten. Door deze aanpak zijn uw O365-gegevens beveiligd zonder dat gebruikers hun apparaat hoeven in te schrijven bij een beheeroplossing voor mobiele apparaten. Bovendien zorgt dit ervoor dat gebruikerservaring met de mobiele Office-apps uitstekend blijft.
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.  [Lees hoe u app-gegevens kunt beveiligen](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [Beleid voor Mobile App Management maken en implementeren](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [Lees hoe u app-gegevens kunt beveiligen](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [Beleid voor Mobile App Management maken en implementeren](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Extra informatie:
 - [De eindgebruikerservaring voor apps die geschikt zijn voor MAM met Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

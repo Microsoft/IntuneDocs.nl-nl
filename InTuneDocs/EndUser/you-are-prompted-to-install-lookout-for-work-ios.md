@@ -14,6 +14,7 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
@@ -27,7 +28,7 @@ Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassin
 
 **U moet het volgende doen:**
 
-1.  Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
+1.    Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
 
     ![Tik op Installeren om Lookout for Work te installeren](./media/ios-lfw-install-app-request.png)
 

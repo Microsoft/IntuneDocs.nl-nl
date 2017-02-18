@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
 ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
@@ -27,24 +28,24 @@ ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
 Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
--   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
+-    Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
 - Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
--   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
+-    U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
 -  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
 
 
-1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een beleid **Aangepaste configuratie** voor dat apparaatplatform en maakt u geen Wi-Fi profiel.
+1.    Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een beleid **Aangepaste configuratie** voor dat apparaatplatform en maakt u geen Wi-Fi profiel.
 
-2.  Geef een naam en beschrijving op.
-3.  Een nieuwe OMA-URI-instelling toevoegen:
+2.    Geef een naam en beschrijving op.
+3.    Een nieuwe OMA-URI-instelling toevoegen:
 
-   a.   Voer een naam in voor deze Wi-Fi-netwerkinstelling.
+   a.    Voer een naam in voor deze Wi-Fi-netwerkinstelling.
 
-   b.   Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
+   b.    Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
 
-   c.   **Gegevenstype**: ingesteld op String(XML)
+   c.    **Gegevenstype**: ingesteld op String(XML)
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml

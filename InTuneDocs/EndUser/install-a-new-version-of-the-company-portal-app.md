@@ -14,6 +14,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec

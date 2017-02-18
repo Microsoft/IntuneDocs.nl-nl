@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Wilt u dat uw gebruikers snel toegang hebben tot de apps die ze nodig hebben om 
 Zo ja, dan kunt u met Microsoft Intune apps (Office Mobile, interne Line-Of-Business-apps of andere mobiele en bureaublad-apps) op één algemene portal publiceren: de [bedrijfsportal-app of bedrijfsportalwebsite van Intune](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.  [Apparaten registreren](/intune/deploy-use/enroll-devices-in-microsoft-intune) voor Mobile Device Management.
-2.  [Apps aan Intune toevoegen](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) die u wilt implementeren op geregistreerde apparaten.
-3.  [Met behulp van Intune apps implementeren](/intune/deploy-use/deploy-apps) op geregistreerde apparaten.
+1.    [Apparaten registreren](/intune/deploy-use/enroll-devices-in-microsoft-intune) voor Mobile Device Management.
+2.    [Apps aan Intune toevoegen](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) die u wilt implementeren op geregistreerde apparaten.
+3.    [Met behulp van Intune apps implementeren](/intune/deploy-use/deploy-apps) op geregistreerde apparaten.
 
 ### <a name="additional-information"></a>Extra informatie:
 Als Mobiel Office-apps zijn gepubliceerd met de bedoeling de MAM-mogelijkheden van Intune te gebruiken om de beveiliging tegen gegevensverlies van deze apps te beheren, moet aan elk MAM-beleid dat aan een eindgebruiker is toegewezen, een [gebruikerslicentie voor Office 365 worden toegewezen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
