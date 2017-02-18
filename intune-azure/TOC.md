@@ -4,6 +4,7 @@
 <!---(introduction/get-started.md) --->
 ### [Registreren voor een gratis proefversie](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Wat is er nieuw?](introduction/whats-new.md)
+## [Bekende problemen](introduction/known-issues-in-the-intune-preview.md)
 <!--- ## [Get support](introduction/get-support.md)
 ## [Related resources](introduction/related-resources.md)
 
@@ -37,13 +38,12 @@
 #### [Apple Configurator-serienummers toevoegen](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [iOS-apparaten inschrijven met het programma voor apparaatinschrijving](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Apparaten inschrijven met de apparaatinschrijvingsmanager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
-### Windows-apparaten inschrijven
-#### [Mobiele apparaten met Windows Phone en Windows 10 inschrijven](enroll-devices/enroll-windows-mobile-devices.md)
-#### [Windows-pc's als mobiele apparaten inschrijven](enroll-devices/enroll-windows-pcs-as-mobile-devices.md)
+### [macOS-apparaten inschrijven](enroll-devices/enroll-macos-devices.md)
+### [Windows-apparaten inschrijven](enroll-devices/enroll-window-devices.md)
 ### Apparaatinschrijving beheren
 #### [Voorwaarden maken](enroll-devices/create-terms-and-conditions.md)
 #### [Inschrijvingsbeperkingen instellen](enroll-devices/set-enrollment-restrictions.md)
-#### [Apparaatgroepen toewijzen](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Apparaten toewijzen aan groepen](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Zakelijke id’s toevoegen](enroll-devices/add-corporate-identifiers.md)
 #### [Windows Hello voor Bedrijven gebruiken](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
@@ -81,7 +81,7 @@
 ### [Apps toewijzen](manage-apps/deploy-apps.md)
 ### [Apps bewaken](manage-apps/monitor-apps.md)
 ### [Configuratiebeleid voor apps gebruiken](manage-apps/app-configuration-policies.md)
-<!--- ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)--->
+### [Selectief wissen van apps](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Werken met apps die zijn gekocht via het volume-aankoopprogramma](manage-apps/volume-purchased-apps.md)
 #### [iOS VPP-apps](manage-apps/ios-vpp-apps.md)
@@ -187,6 +187,6 @@
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
