@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
-ms.openlocfilehash: fa03c8c41fe60b469b66e640beb2143679d5ad41
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
 
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Dit onderwerp bevat suggesties voor het oplossen van problemen met de registratie van apparaat. Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
@@ -29,19 +32,16 @@ Dit onderwerp bevat suggesties voor het oplossen van problemen met de registrati
 
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
--   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
--   [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
+-    [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
 
-- [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via een USB-kabel](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [Android-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-- [iOS-registratiefouten verzenden naar de IT-beheerder](/intune/enduser/send-errors-to-your-it-admin-ios)
-
+- [Android-inschrijvingsfouten verzenden naar de IT-beheerder](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
+- [iOS-fouten naar uw IT-beheerder verzenden](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>Problemen bij het registreren van apparaten
@@ -56,7 +56,7 @@ Deze problemen kunnen optreden op alle apparaatplatforms.
 
 1.  Controleer in de Intune-beheerportal of er niet meer dan het toegestane maximum van 15 apparaten aan de gebruiker zijn toegewezen.
 
-2.  Controleer in de Intune-beheerconsole onder Admin\Mobile Device Management\Enrollment Rules of de limiet voor de apparaatinschrijving is ingesteld op 15.
+2.  Controleer in de Intune-beheerconsole onder **Admin** > **Mobile Device Management** > **Inschrijvingsregels** of de limiet voor de apparaatinschrijving is ingesteld op 15.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -68,7 +68,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 2.  Meld u aan met uw organisatie-id via de koppeling aan de linkerkant van de pagina.
 
-3.  Een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (kies de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).
+3.  Als u er nog geen hebt, maakt u een Azure-abonnement aan door de abonnementskoppeling **Uw gratis Azure Active Directory registreren** te selecteren. Als u een betaalde account hebt, is hiervoor geen creditcard of betaling nodig.
 
 4.  Selecteer **Active Directory** en vervolgens uw organisatie.
 
@@ -82,12 +82,12 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 > [!NOTE]
 
-> U kunt de limiet voor apparaatregistraties vermijden met behulp van apparaatregistratiebeheerfuncties, zoals wordt beschreven in [Apparaten in bedrijfseigendom registreren met de apparaatregistratiebeheerfunctie in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> U kunt de limiet voor apparaatinschrijvingen vermijden met behulp van het apparaatinschrijvingsmanageraccount, zoals wordt beschreven in [Apparaten in bedrijfseigendom inschrijven met de apparaatinschrijvingsmanager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
-> Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatinschrijvingsmanagers kunnen geen apparaten worden ingeschreven wanneer een voorwaardelijk toegangsbeleid van kracht is voor die specifieke gebruikersaanmelding.
+> Met een gebruikersaccount dat is toegevoegd aan het apparaatinschrijvingsmanageraccount, kunnen geen apparaten worden ingeschreven wanneer beleid voor voorwaardelijke toegang van kracht is voor die specifieke gebruikersaanmelding.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
-**Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
+**Probleem:** gebruikers ontvangen op hun apparaat de fout **Bedrijfsportal tijdelijk niet beschikbaar**.
 
 **Oplossing:**
 
@@ -106,12 +106,12 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 **Oplossing:**
 
-1.  Controleer of de MDM-instantie juist is ingesteld voor de versie van de Intune-service die u gebruikt, dat wil zeggen, voor Intune, O365 MDM of System Center Configuration Manager met Intune. Voor Intune wordt de MDM-instantie ingesteld in **Beheer** &gt; **Mobile Device Management**. Voor Configuration Manager met Intune stelt u deze in wanneer u de Intune-connector configureert. In O365 is het een instelling in **Mobiele apparaten**.
+1.  Controleer of de MDM-instantie juist is ingesteld voor het type Intune-service dat u gebruikt (dat wil zeggen Intune, Office 365 of System Center Configuration Manager met Intune). Voor Intune wordt de MDM-instantie ingesteld in **Beheer** &gt; **Mobile Device Management**. Voor Configuration Manager met Intune stelt u deze in wanneer u de Intune-connector configureert. In Office 365 is het een instelling in **Mobiele apparaten**.
 
     > [!NOTE]
     > Wanneer u de MDM-instantie eenmaal hebt ingesteld, kunt u deze alleen wijzigen door contact op te nemen met Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
-2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory door te controleren of de UPN overeenkomt met de Active Directory-gegevens in de accountportal.
+2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory door te controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in de Office 365-portal.
     Doe het volgende als de UPN niet overeenkomt met de Active Directory-gegevens:
 
     1.  Schakel DirSync uit op de lokale server.
@@ -148,7 +148,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 **Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren.
 
 
-**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com)), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren.  Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com)), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren. Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
 
 ## <a name="android-issues"></a>Problemen met Android
@@ -228,16 +228,16 @@ De certificaatfout treedt op omdat Android-apparaten vereisen dat er tussencerti
 
 Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
 
-1.  Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
-2.  Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
-3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
-4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
-5.  Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
-6.  Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
-7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
-8.  Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
-9.  Start de AD FS-servers opnieuw op.
-10. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
+1.    Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
+2.    Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
+3.    Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
+4.    Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
+5.    Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
+6.    Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
+7.    Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
+8.    Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
+9.    Start de AD FS-servers opnieuw op.
+10.    Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
 De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
 
 **Valideren dat het certificaat correct is geïnstalleerd**:
@@ -251,6 +251,34 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 
 
 ## <a name="ios-issues"></a>Problemen met iOS
+
+### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Apparaten zijn inactief of de beheerconsole kan er niet mee communiceren
+**Probleem:** iOS-apparaten checken niet in bij de Intune-service. Apparaten moeten regelmatig worden ingecheckt bij de service om toegang te behouden tot beveiligde bedrijfsresources. Als apparaten niet worden ingecheckt:
+
+- Kunnen ze geen beleid, apps en externe opdrachten ontvangen van de Intune-service.
+- Wordt voor deze apparaten in de beheerconsole de Beheerstatus **Niet in orde** weergegeven.
+- Gebruikers die worden beschermd door beleid voor voorwaardelijke toegang hebben mogelijk geen toegang meer tot bedrijfsbronnen.
+
+**Oplossing:** deel de volgende oplossingen met uw eindgebruikers om ervoor te zorgen dat ze weer toegang kunnen verkrijgen tot bedrijfsresources.
+
+Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Poging tot synchronisatie...** te zien. 
+
+  ![De melding Poging tot synchronisatie...](./media/ios_cp_app_trying_to_sync_notification.png)
+
+Als het synchroniseren lukt, ziet u de melding **De synchronisatie is voltooid** in de iOS-bedrijfsportal-app; deze geeft aan dat de status van uw apparaat in orde is.
+
+  ![De melding De synchronisatie is voltooid](./media/ios_cp_app_sync_successful_notification.png)
+
+Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-bedrijfsportal-app. 
+
+  ![De melding Kan niet synchroniseren](./media/ios_cp_app_unable_to_sync_notification.png)
+
+Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** selecteren. Deze staat rechts van de melding **Kan niet synchroniseren**. Wanneer gebruikers op de knop Instellen klikken, gaan ze naar het scherm om de bedrijfsportal in te stellen. Hier volgen ze instructies om hun apparaat in te schrijven. 
+
+  ![Het scherm Instellen van bedrijfstoegang](./media/ios_cp_app_company_access_setup.png)
+
+Na het inschrijven krijgen de apparaten weer een goede status en is er weer toegang mee te verkrijgen tot de bedrijfsresources.
+
 ### <a name="profile-installation-failed"></a>De profielinstallatie is mislukt
 **Probleem:** een gebruiker ontvangt op een iOS-apparaat de fout **Profiel is niet geïnstalleerd**.
 
@@ -267,32 +295,20 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
 **Probleem:** een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is geregistreerd. Mogelijke oorzaken:
 
-- Misschien hebt u uw Intune-connector geregistreerd bij het ene account en vervolgens geregistreerd bij een ander account.
+- Er is geen communicatie tussen de Microsoft Intune-connector in de Configuration Manager-site en de Intune-service.
+- Berichten van de Intune-service worden niet verwerkt met het onderdeel voor beheer van gegevensdetectie (ddm) of het onderdeel voor statusbeheer (statmgr).
 - Misschien hebt u het MDM-certificaat gedownload vanuit het ene account en het vervolgens gebruikt in een ander account.
 
 
-**Oplossing**: voer de volgende stappen uit:
+**Oplossing:** Controleer de volgende logboekbestanden voor mogelijke fouten:
 
-1. Schakel iOS uit in de Windows Intune-connector.
-    1. Klik met de rechtermuisknop op het Intune-abonnement en selecteer **Eigenschappen**.
-    1. Schakel op het tabblad iOS de optie iOS-registratie inschakelen uit.
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. Voer in SQL de volgende stappen uit voor de CAS-database
-
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 7
-    1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 11
-    1. delete from MDMPolicyAssignment where PolicyType = 11
-    1. DELETE Drs_Signals
-1. Start de service SMS Executive opnieuw of start de CM-server opnieuw
+Binnenkort worden voorbeelden toegevoegd met betrekking tot de informatie waarnaar u moet zoeken in deze logboekbestanden.
 
 
-
-1. Haal een nieuw APN-certificaat op en upload dit: klik met de rechtermuisknop op het Intune-abonnement in het linkerdeelvenster van Configuration Manager. Selecteer **APNs-certificaataanvraag maken** en volg de instructies.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemen bij het gebruik van System Center Configuration Manager met Intune
 ### <a name="mobile-devices-disappear"></a>Mobiele apparaten verdwijnen
 **Probleem:** nadat een mobiel apparaat bij Configuration Manager is ingeschreven, verdwijnt het uit de verzameling van mobiele apparaten, maar het apparaat heeft nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
@@ -330,15 +346,15 @@ Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde i
 
 **Oplossing:**
 
-1. Kies in het menu **Start** de opdracht **Uitvoeren** -> **MMC**.
-1. **Bestand** -> **Modules toevoegen of verwijderen**.
-1. Dubbelklik op **Certificaten**, kies **Computeraccount**, **Volgende** en selecteer **Lokale computer**.
+1. Voer in het menu **Start** de opdracht **Uitvoeren** -> **MMC** in.
+1. Kies **Bestand** > **Modules toevoegen of verwijderen**.
+1. Dubbelklik op **Certificaten**, kies **Computeraccount** > **Volgende** en selecteer **Lokale computer**.
 1. Dubbelklik op **Certificaten (lokale computer)** en kies **Persoonlijke certificaten**.
-1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is
-1. Verwijder de volgende registersleutel als deze bestaat en alle subsleutels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Probeer opnieuw te registreren.
-1. Als de computer nog steeds niet kan worden geregistreerd, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
-1. Probeer opnieuw te registreren.
+1. Zoek het Intune-certificaat dat is uitgegeven door Sc_Online_Issuing en verwijder dit als het aanwezig is.
+1. Controleer of de volgende registersleutel bestaat. Als deze bestaat, verwijdert u deze én alle subsleutels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
+1. Probeer opnieuw in te schrijven.
+1. Als de computer nog steeds niet kan worden ingeschreven, zoekt u de volgende sleutel en verwijdert u de sleutel als deze bestaat: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Probeer opnieuw in te schrijven.
 
     > [!IMPORTANT]
     > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
@@ -373,6 +389,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

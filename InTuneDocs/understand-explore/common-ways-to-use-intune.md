@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
+ms.sourcegitcommit: f8a47bef930e5e194f4543b0532b4585c0ebd5e9
+ms.openlocfilehash: 514c1cee1137f6f658b0e887dd4f4a02f1cd0f21
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
 
 Voordat u aan de slag gaat met implementatietaken, is het belangrijk om de Enterprise Mobility-belanghebbenden van uw bedrijf op één lijn te krijgen met de bedrijfsdoelen.  Dit is belangrijk als u nog nooit met Enterprise Mobility te maken hebt gehad, maar ook als u migreert vanaf een ander product.  
 
-De behoeften ten aanzien van Enterprise Mobility veranderen op dynamische wijze, en de aanpak van Microsoft om aan deze behoeften te voldoen kan soms verschillen van die van andere oplossingen in de markt.  De beste manier om op één lijn te komen met de bedrijfsdoelen is door te uiten wat u wilt bereiken voor uw werknemers, partners en IT-afdeling.  
+De behoeften ten aanzien van Enterprise Mobility veranderen op dynamische wijze, en de aanpak van Microsoft om aan deze behoeften te voldoen kan soms verschillen van die van andere oplossingen in de markt. De beste manier om op één lijn te komen met de bedrijfsdoelen is door te uiten wat u wilt bereiken voor uw werknemers, partners en IT-afdeling.  
 
 Hieronder staat een korte inleiding over de zes meest voorkomende scenario’s waarin Intune wordt gebruikt, met koppelingen naar aanvullende informatie over het plannen en implementeren van die scenario’s.
 
@@ -51,14 +52,13 @@ In dergelijke gevallen is de enige manier om toegang tot zakelijke gegevens te k
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Uw Office 365-e-mail en -gegevens beveiligen zodat deze veilig kunnen worden geopend vanaf mobiele apparaten
 Het beveiligen van bedrijfsgegevens in Office 365 (e-mail, documenten, chatberichten, contactpersonen) is enorm eenvoudig en biedt gebruikers een naadloze ervaring.
 
-Intune en Microsoft Enterprise Mobility + Security bieden een unieke, geïntegreerde oplossing voor voorwaardelijke toegang waardoor gebruikers, apps en apparaten geen toegang krijgen tot Office 365-gegevens tenzij ze voldoen aan de nalevingsvereisten van uw bedrijf ([meervoudige verificatie](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) uitgevoerd, geregistreerd bij Intune, gebruikt beheerde app, ondersteunde besturingssysteemversie, pincode op apparaat, gebruiker met laag risicoprofiel enzovoort). De mobiele Office-apps in de app stores kunnen direct worden gebruikt met gegevenscontainmentbeleid dat u kunt configureren via Intune. Op die manier kunt u voorkomen dat gegevens worden gedeeld met apps (bijvoorbeeld de systeemeigen e-mail-app) en opslaglocaties (bijvoorbeeld Dropbox) die niet door de IT-afdeling worden beheerd.  Deze functionaliteit is ook ingebouwd in Office 365 en het EMS.  U hoeft geen aanvullende infrastructuur te implementeren om van deze waarde te profiteren.
+Intune en Microsoft Enterprise Mobility + Security bieden een unieke, geïntegreerde oplossing voor voorwaardelijke toegang waardoor gebruikers, apps en apparaten geen toegang krijgen tot Office 365-gegevens tenzij ze voldoen aan de nalevingsvereisten van uw bedrijf ([meervoudige verificatie](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) uitgevoerd, geregistreerd bij Intune, gebruikt beheerde app, ondersteunde besturingssysteemversie, pincode op apparaat, gebruiker met laag risicoprofiel enzovoort).
 
-De mobiele Office-apps in hun respectieve app stores zijn klaar om te worden gebruikt met een gegevenscontainmentbeleid dat u via Intune kunt configureren. Hiermee kunt u voorkomen dat gegevens worden gedeeld met apps (zoals een ingebouwde e‑mailapp) en opslaglocaties (zoals Dropbox), die niet door IT worden beheerd.  Deze functionaliteit is ook ingebouwd in Office 365 en het EMS.  U hoeft geen aanvullende infrastructuur te implementeren om hiervan te profiteren.
-
+De mobiele Office-apps in hun respectieve app stores zijn klaar om te worden gebruikt met een gegevenscontainmentbeleid dat u via Intune kunt configureren. Hiermee kunt u voorkomen dat gegevens worden gedeeld met apps (zoals een ingebouwde e‑mailapp) en opslaglocaties (zoals Dropbox), die niet door IT worden beheerd. Deze functionaliteit is ook ingebouwd in Office 365 en het EMS. U hoeft geen aanvullende infrastructuur te implementeren om hiervan te profiteren.
 
 Normaal worden bij het implementeren van Office 365 apparaten verplicht ingeschreven voor beheer als ze volledig moeten worden ingesteld met bedrijfs-apps, certificaten, Wi-Fi en VPN-configuraties. Dit is vaak het geval bij bedrijfsapparaten.  
 
-Als de gebruiker echter alleen toegang nodig heeft tot bedrijfs-e-mail en -documenten, wat vaak het geval is bij apparaten in privé-eigendom, moet de gebruiker de mobiele Office-apps gebruiken (waar het [gegevenscontainmentbeleid op is toegepast](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)), zodat het inschrijven van het apparaat kan worden overgeslagen.  
+Als de gebruiker echter alleen toegang nodig heeft tot bedrijfs-e-mail en -documenten, wat vaak het geval is bij apparaten in privé-eigendom, kunt u verplicht stellen dat de gebruiker de mobiele Office-apps (waarop u [gegevenscontainmentbeleid hebt toegepast](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)) moet gebruiken en het inschrijven van het apparaat moet overslaan.  
 
 In beide gevallen worden de Office 365-gegevens beveiligd met beleidsregels die u hebt gedefinieerd.
 
@@ -70,14 +70,14 @@ Bring Your Own Device (BYOD) wordt steeds populairder bij organisaties, omdat er
 
 Als apparaatregistratie niet mogelijk of gewenst is, biedt Intune ook een alternatieve BYOD-optie waarbij alleen de [apps worden beheerd die zakelijke gegevens bevatten](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune).  Intune beveiligt zakelijke gegevens zelfs als de betreffende app toegang heeft tot zowel zakelijke als persoonlijke gegevens, zoals het geval is bij de mobiele apps van Office.  
 
-U kunt als beheerder eisen dat gebruikers Office 365 openen via de mobiele apps van Office en dat ze de apps configureren met beleid om de gegevens te beschermen (door ze bijvoorbeeld te versleutelen, te beveiligen met pincode, enzovoort).  Dit beleid voorkomt gegevensverlies via niet-beheerde apps en niet-beheerde opslaglocaties (binnen én buiten de apps).  Met het beleid wordt bijvoorbeeld voorkomen dat een gebruiker tekst uit een zakelijk e-mailprofiel kopieert naar een consumenten-e-mailprofiel, zelfs als beide profielen in Outlook Mobile zijn geconfigureerd.  U kunt vergelijkbare configuraties implementeren voor andere services en toepassingen die uw BYOD-gebruikers nodig hebben.
+U kunt als beheerder eisen dat gebruikers Office 365 openen via de mobiele apps van Office en dat ze de apps configureren met beleid om de gegevens te beschermen (door ze bijvoorbeeld te versleutelen, te beveiligen met pincode, enzovoort). Dit beleid voorkomt gegevensverlies via niet-beheerde apps en niet-beheerde opslaglocaties (binnen én buiten de apps). Met het beleid wordt bijvoorbeeld voorkomen dat een gebruiker tekst uit een zakelijk e-mailprofiel kopieert naar een consumenten-e-mailprofiel, zelfs als beide profielen in Outlook Mobile zijn geconfigureerd. U kunt vergelijkbare configuraties implementeren voor andere services en toepassingen die uw BYOD-gebruikers nodig hebben.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 
 ## <a name="issue-corporate-owned-phones-to-your-information-workers"></a>Geef bedrijfstelefoons uit aan uw IT-medewerkers
-De meeste IT-medewerkers zijn tegenwoordig mobiel, waardoor het steeds belangrijker wordt om productiviteit op mobiele apparaten mogelijk te maken; zo blijft het concurrentievermogen behouden.  Deze werknemers hebben naadloze toegang nodig tot alle zakelijke toepassingen en gegevens, op elk gewenst moment en waar ze ook zijn.  U moet ervoor zorgen dat zakelijke gegevens goed worden beveiligd en dat de administratieve kosten laag blijven.  
+De meeste IT-medewerkers zijn tegenwoordig mobiel, waardoor het steeds belangrijker wordt om productiviteit op mobiele apparaten mogelijk te maken; zo blijft het concurrentievermogen behouden. Deze werknemers hebben naadloze toegang nodig tot alle zakelijke toepassingen en gegevens, op elk gewenst moment en waar ze ook zijn. U moet ervoor zorgen dat zakelijke gegevens goed worden beveiligd en dat de administratieve kosten laag blijven.  
 
-Intune biedt [oplossingen voor bulksgewijze inrichting en beheer](/intune/deploy-use/manage-corporate-owned-devices) die kunnen worden geïntegreerd in de grootste apparaatbeheerplatformen voor bedrijven van dit moment, waaronder het Apple Device Enrollment Program en het Samsung KNOX-platform voor mobiele beveiliging.  Omdat apparaatconfiguraties centraal kunnen worden opgesteld met Intune kan het inrichten van zakelijke apparaten in grote mate worden geautomatiseerd.  
+Intune biedt [oplossingen voor bulksgewijze inrichting en beheer](/intune/deploy-use/manage-corporate-owned-devices) die kunnen worden geïntegreerd in de grootste apparaatbeheerplatformen voor bedrijven van dit moment, waaronder het Apple Device Enrollment Program en het Samsung KNOX-platform voor mobiele beveiliging. Omdat apparaatconfiguraties centraal kunnen worden opgesteld met Intune kan het inrichten van zakelijke apparaten in grote mate worden geautomatiseerd.  
 
 Stel u dit eens voor: u geeft een werknemer een nieuwe iPhone in een nog niet geopende doos. De werknemer zet de telefoon aan en doorloopt een installatieprocedure waar het bedrijfslogo in is verwerkt. Hierin moet de werknemer zich verifiëren. De iPhone wordt naadloos geconfigureerd met [beveiligingsbeleid](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (zoals versleuteling van de harde schijf en een pincode voor het apparaat), [e-mail, Wi-Fi, VPN en certificaatprofielen](/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune), en de basis-[apps](/intune/deploy-use/add-apps) worden geïnstalleerd.
 
@@ -86,9 +86,9 @@ De werknemer start vervolgens de Intune-bedrijfsportal-app voor toegang tot opti
 <!-- Learn more about how to plan and deploy Intune to support corporate owned devices. -->
 
 ## <a name="issue-limited-use-shared-tablets-to-your-task-workers"></a>Tablets voor beperkt gebruik overhandigen aan taakgerichte werknemers
-Taakgerichte werknemers maken steeds meer gebruik van mobiele technologieën.  Gedeelde tablets zijn bijvoorbeeld heel normaal geworden voor werknemers in winkels.  Met tablets kan er beter worden gecommuniceerd met klanten, omdat daarmee een verkoop kan worden verwerkt of direct de voorraad kan worden gecontroleerd.
+Taakgerichte werknemers maken steeds meer gebruik van mobiele technologieën. Gedeelde tablets zijn bijvoorbeeld heel normaal geworden voor werknemers in winkels.  Met tablets kan er beter worden gecommuniceerd met klanten, omdat daarmee een verkoop kan worden verwerkt of direct de voorraad kan worden gecontroleerd.
 
-Een eenvoudige gebruikerservaring is in dit geval van groot belang.  Om die reden worden tablets meestal aan werknemers gegeven in een modus voor beperkt gebruik, zodat de werknemer bijvoorbeeld alleen een line-of-business-app kan gebruiken.  Met Intune kunt u deze gedeelde [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings)- en [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy)-tablets bulksgewijs inrichten, beveiligen en centraal beheren en ervoor zorgen dat ze zodanig worden geconfigureerd dat ze in de modus voor beperkt gebruik kunnen worden uitgevoerd.
+Een eenvoudige gebruikerservaring is in dit geval van groot belang. Om die reden worden tablets meestal aan werknemers gegeven in een modus voor beperkt gebruik, zodat de werknemer bijvoorbeeld alleen een line-of-business-app kan gebruiken. Met Intune kunt u deze gedeelde [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings)- en [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy)-tablets bulksgewijs inrichten, beveiligen en centraal beheren en ervoor zorgen dat ze zodanig worden geconfigureerd dat ze in de modus voor beperkt gebruik kunnen worden uitgevoerd.
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
@@ -101,6 +101,6 @@ Moet u uw werknemers toegang bieden tot bedrijfs-e-mails vanaf deze locaties? Me
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

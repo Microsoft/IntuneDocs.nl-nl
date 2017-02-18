@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -135,7 +136,7 @@ Deze algemene externe afhankelijkheden worden hieronder nader onderzocht
 
 ### <a name="identity"></a>Identiteit
 
-Identiteit is de manier waarop we de gebruikers identificeren die tot uw organisatie behoren en een apparaat registreren. Intune vereist Azure Active Directory (Azure AD) als provider van gebruiker-id's. Als u deze service al gebruikt, kunt u gebruikmaken van uw bestaande identiteit in de cloud. Azure AD Connect is bovendien het aanbevolen hulpmiddel om uw lokale gebruikers-id's te synchroniseren met Microsoft-cloudservices. Als uw organisatie al met Office 365 werkt, is het belangrijk dat Intune van dezelfde Azure Active Directory-omgeving gebruikmaakt.
+Identiteit is de manier waarop de gebruikers worden geïdentificeerd die tot uw organisatie behoren en die een apparaat registreren. Intune vereist Azure Active Directory (Azure AD) als provider van gebruiker-id's. Als u deze service al gebruikt, kunt u gebruikmaken van uw bestaande identiteit in de cloud. Azure AD Connect is bovendien het aanbevolen hulpmiddel om uw lokale gebruikers-id's te synchroniseren met Microsoft-cloudservices. Als uw organisatie al met Office 365 werkt, is het belangrijk dat Intune van dezelfde Azure Active Directory-omgeving gebruikmaakt.
 
 U vindt hieronder meer informatie over de id-vereisten van Intune.
 
@@ -411,6 +412,6 @@ De volgende sectie bevat richtlijnen voor het [Intune-implementatieproces](secti
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

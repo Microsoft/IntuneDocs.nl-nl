@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -44,7 +45,7 @@ Voordat u de App Wrapping Tool uitvoert, moet u aan enkele algemene vereisten vo
 
   * Het bestand van de invoer-app moet de extensie **.ipa** of **.app** hebben.
 
-  * De invoer-app moet zijn gecompileerd voor iOS 8.0 of hoger.
+  * De invoerapp moet zijn gecompileerd voor iOS 8.0 of hoger.
 
   * De invoer-app kan niet worden versleuteld.
 
@@ -107,6 +108,9 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
   ![Selecteer In-House and Ad Hoc als certificaat](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Als u niet van plan bent om de app te distribueren en u deze alleen intern wilt testen, kunt u een certificaat voor iOS-appontwikkeling in plaats van een certificaat voor productie gebruiken. Als u een certificaat voor ontwikkeling gebruikt, zorg er dan voor dat het mobiele inrichtingsprofiel verwijst naar de apparaten waarop de app wordt geïnstalleerd.
+
 7. Klik onder aan de pagina op **Next**.
 
 8. Lees de instructies voor het maken van een **Certificate Signing Request (CSR)** met behulp van de toepassing Sleutelhangertoegang op uw macOS-computer.
@@ -131,11 +135,12 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 14. Dubbelklik op het certificaatbestand dat u zojuist hebt gedownload om het certificaat toe te voegen aan een sleutelhanger.
 
-15. Open **Sleutelhangertoegang** opnieuw. Ga naar uw certificaat door te zoeken naar **iPhone** in de zoekbalk rechtsboven in het venster van Sleutelhangertoegang. Klik met de rechtermuisknop op het item om het menu te openen en klik op **Toon info**.
+15. Open **Sleutelhangertoegang** opnieuw. Ga naar uw certificaat door te zoeken naar de naam van het certificaat in de zoekbalk rechtsboven. Klik met de rechtermuisknop op het item om het menu te openen en klik op **Toon info**. In de voorbeeldschermen wordt een certificaat voor ontwikkeling in plaats van een certificaat voor productie gebruikt.
+
 
   ![Uw certificaat toevoegen aan een sleutelhanger](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. Er wordt een venster met informatie weergegeven. Ga naar de onderkant van het venster en kijk onder het label **Vingerafdrukken**. Kopieer de **SHA1**-tekenreeks om deze te gebruiken als de parameter -c voor de App Wrapping Tool.
+16. Er wordt een venster met informatie weergegeven. Ga naar de onderkant van het venster en kijk onder het label **Vingerafdrukken**. Kopieer de (grijs weergegeven) **SHA1**-tekenreeks om deze te gebruiken als de parameter -c voor de App Wrapping Tool.
 
   ![Uw certificaat toevoegen aan een sleutelhanger](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
