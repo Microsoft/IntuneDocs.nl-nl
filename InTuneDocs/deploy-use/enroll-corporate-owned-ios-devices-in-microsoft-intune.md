@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
 
 
 ---
@@ -26,9 +27,18 @@ ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 Microsoft Intune ondersteunt de inschrijving van iOS-apparaten van het bedrijf met behulp van het Device Enrollment Program (DEP) van Apple of het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat op een Mac-computer wordt uitgevoerd.
 
-**Vereiste:** een [Apple Push Notification Service-certificaat](set-up-ios-and-mac-management-with-microsoft-intune.md).
+**Vereiste:** een [Apple Push Notification Service-certificaat](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-U kunt zakelijke iOS-apparaten op drie manieren inschrijven: via Apple Configurator, DEP of de bedrijfsportal.
+U kunt iOS-apparaten in bedrijfseigendom via drie verschillende methoden inschrijven:
+
+- Apple Configurator, via Configuratieassistent of via directe inschrijving
+- Device Enrollment Program
+- Bedrijfsportal-app
+
+>[!NOTE]
+>De Apple Configurator en het Device Enrollment Program kunnen niet worden gebruikt in combinatie met de methode [Apparaatinschrijvingsmanager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+
+Standaard kunnen alle iOS-apparaten worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](http://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van persoonlijke apparaten of apparaten in bedrijfseigendom wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel vervolgens de toepasselijke opties uit.
 
 ## <a name="use-apple-configurator"></a>Apple Configurator gebruiken
 
@@ -47,8 +57,8 @@ Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfspor
 
 Gebruikersaffiniteit is vereist voor de ondersteuning van het volgende:
   - MAM-apps (Mobile Application Management)
-  - Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
-  - Bedrijfsportal-app
+  -    Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
+  -    Bedrijfsportal-app
 
 **iOS-apparaten in bedrijfseigendom inschrijven met gebruikersaffiniteit**
 1. Wanneer gebruikers hun apparaat inschakelen, wordt ze gevraagd de Configuratieassistent te voltooien. Tijdens de installatie wordt er naar de referenties van de gebruikers gevraagd. Ze moeten de referenties (de unieke naam of de UPN) van het Intune-abonnement gebruiken.
@@ -84,6 +94,6 @@ Als gebruikersaffiniteit vereist is, moet **Gebruikersaffiniteit** in het inschr
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

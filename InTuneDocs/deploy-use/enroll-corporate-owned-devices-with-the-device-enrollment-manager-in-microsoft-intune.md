@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/17
+ms.date: 01/29/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b06bb501e71bae5225d451d9ee460213eee183de
-ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
@@ -25,9 +26,12 @@ ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal gebruikersaccount waarmee maximaal duizend apparaten kunnen worden ingeschreven. U voegt bestaande gebruikers toe aan het DEM-account om ze speciale DEM-mogelijkheden te bieden. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten.  
+Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal gebruikersaccount waarmee maximaal duizend apparaten kunnen worden ingeschreven. U voegt bestaande gebruikers toe aan het DEM-account om ze speciale DEM-mogelijkheden te bieden. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten (dat wil zeggen, apparaten zonder gebruikersaffiniteit) in plaats van persoonlijke (BYOD)-apparaten.  
 
 Gebruikers moeten in Azure Portal bestaan om ze te kunnen toevoegen aan apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker géén Intune-beheerder zijn.
+
+>[!NOTE]
+>De DEM-inschrijvingsmethode kan niet worden gebruikt in combinatie met de [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md), de methode voor [directe inschrijving](ios-direct-enrollment-in-microsoft-intune.md) of de [DEP-inschrijvingsmethode](ios-device-enrollment-program-in-microsoft-intune.md). 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
 
@@ -105,6 +109,6 @@ Het verwijderen van een apparaatinschrijvingsbeheerder heeft geen invloed op ing
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -4,15 +4,16 @@ description: Intune beheert Android for Work om aanvullende beheermogelijkheden 
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e9a99868e7bd4c3aa45de4d221f28c1d2f3efb74
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1c7c0967cfd29f68e8d6d0428f1f8407e2cbd9cb
 
 
 ---
@@ -21,27 +22,27 @@ ms.openlocfilehash: e9a99868e7bd4c3aa45de4d221f28c1d2f3efb74
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Android for Work is een set Android-apparaatfuncties en -services. Deze functies en services bieden aanvullende beheermogelijkheden en privacy wanneer mensen hun Android-apparaten voor hun werk gebruiken. Intune kan u helpen apps en bedrijfsbronnen te implementeren op Android for Work-apparaten om ervoor te zorgen dat werk- en privégegevens gescheiden zijn. Bij een succesvolle implementatie blijven apps en de gegevens waartoe ze toegang hebben, exclusief binnen de Android for Work-omgeving op het apparaat.
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+Android for Work omvat een reeks functies en services voor Android-apparaten waarmee persoonlijke apps en gegevens worden gescheiden van een werkprofiel met zakelijke apps en gegevens. Android for Work biedt aanvullende beheermogelijkheden en privacy wanneer mensen hun Android-apparaten voor hun werk gebruiken. Intune kan u helpen apps en bedrijfsbronnen te implementeren op Android for Work-apparaten om ervoor te zorgen dat werk- en privégegevens gescheiden zijn. Bij een succesvolle implementatie blijven apps en de gegevens waartoe ze toegang hebben, exclusief binnen de Android for Work-omgeving op het apparaat.
 
 ## <a name="supported-devices"></a>Ondersteunde apparaten
 
-Android for Work vereist nieuwere Android-hardware omdat veel beheermogelijkheden afhankelijk zijn van functies die deel uitmaken van een nieuwer Android-besturingssysteem. Android for Work wordt momenteel ondersteund op apparaten met Android 5.0 Lollipop en hoger die ondersteuning voor werkprofielen bieden. Voor apparaten die geen systeemeigen ondersteuning voor Android for Work bieden, blijft het conventionele Android-beheer beschikbaar. Meer informatie over [Android for Work-vereisten](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+De beheermogelijkheden van Android for Work zijn afhankelijk van functies die deel uitmaken van een nieuwer Android-besturingssysteem. Android for Work wordt momenteel ondersteund op apparaten met Android 5.0 Lollipop en hoger die ondersteuning voor werkprofielen bieden. Voor apparaten die geen ondersteuning voor Android for Work bieden, blijft het conventionele Android-beheer beschikbaar. Meer informatie over [Android for Work-vereisten](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## <a name="onboarding"></a>Onboarding
 
-Voordat u Android for Work-apparaten registreert, moet u enkele stappen voor onboarding uitvoeren. Met deze stappen wordt uw Intune-tenant verbonden met de Play for Work-service van Google die een integraal onderdeel van het Android for Work-app-distributie en -beheerproces vormt. Meer informatie over [Android for Work-registratie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work).
+Voordat u Android for Work-apparaten registreert, moet u enkele stappen voor onboarding uitvoeren. Met deze stappen wordt uw Intune-tenant verbonden met de Play for Work-service van Google die een integraal onderdeel van het Android for Work-app-distributie en -beheerproces vormt. Meer informatie over [Android for Work-registratie inschakelen](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work).
 
 ## <a name="work-profile-management"></a>Beheer van werkprofielen
 
-Wanneer u een Android for Work-apparaat met Intune beheert, beheert u niet het hele apparaat. De beheermogelijkheden hebben alleen betrekking op een werkprofiel dat is gemaakt tijdens de inschrijving. Alle apps die op het apparaat zijn geïmplementeerd met Intune, maken deel uit van het werkprofiel. Op de pictogrammen voor apps in het werkprofiel wordt een oranje werkmap weergegeven. Met deze markering wordt onderscheid gemaakt tussen bedrijfs-apps en persoonlijke apps op het apparaat. Alle Android-apps en -gegevens buiten het Android for Work-gedeelte van het apparaat blijven persoonlijk en onder beheer van de eindgebruiker. Gebruikers kunnen elke gewenste app aan de persoonlijke kant van het apparaat installeren, terwijl beheerders acties behorend bij het werkprofiel kunnen beheren en bewaken.
+Wanneer u een Android for Work-apparaat met Intune beheert, beheert u niet het hele apparaat. De beheermogelijkheden hebben alleen betrekking op het werkprofiel dat is gemaakt tijdens de inschrijving van het apparaat. Alle apps die op het apparaat zijn geïmplementeerd met Intune, worden geïnstalleerd in het werkprofiel. Apps in het werkprofiel worden aangegeven met een oranje werkmap om zakelijke apps te onderscheiden van persoonlijke apps op het apparaat. Alle Android-apps en -gegevens buiten het Android for Work-gedeelte van het apparaat blijven persoonlijk en onder beheer van de eindgebruiker. Gebruikers kunnen elke gewenste app aan de persoonlijke kant van het apparaat installeren, terwijl beheerders apps en acties behorend bij het werkprofiel kunnen beheren en bewaken.
+
+Intune biedt diverse ingebouwde algemene instellingen die u op Android for Work-apparaten kunt configureren. Meer informatie over [Android for Work-beleidsinstellingen](android-for-work-policy-settings-in-microsoft-intune.md)
 
 ## <a name="app-publishing-and-distribution"></a>Apps publiceren en distribueren
 
-De Google Play for Work-service vormt een integraal onderdeel van de distributie en het beheer van apps. Alle apps die op Android for Work-apparaten worden geïmplementeerd in het werkprofiel, zijn afkomstig van Play for Work. Als u apps in de Play Store wilt beheren en implementeren, meldt u zich als Intune-beheerder aan bij de Play for Work-website en zorgt u voor de goedkeuring van apps voor uw Intune-tenant. Deze apps worden met de Intune-console gesynchroniseerd waar ze vervolgens kunnen worden geïmplementeerd en beheerd met Intune. LOB-apps (Line-Of-Business) die door uw organisatie worden ontwikkeld, moeten worden gepubliceerd naar Play for Work met behulp van de Android-console voor het publiceren van apps van Google. Line-Of-Business-apps moeten worden geconfigureerd in de Android-console voor het publiceren van apps om de toegang tot uw organisatie te beperken.
+De Google Play for Work-service vormt een integraal onderdeel van de distributie en het beheer van apps via Android for Work. Alle apps die op Android for Work-apparaten worden geïmplementeerd in het werkprofiel, zijn afkomstig van de Play for Work-service. Als u apps in de Play Store wilt beheren en implementeren, meldt u zich als Intune-beheerder aan bij de Play for Work-website en zorgt u voor de goedkeuring van apps voor uw Intune-tenant. Deze apps worden met de Intune-console gesynchroniseerd waar ze vervolgens kunnen worden geïmplementeerd en beheerd met Intune. LOB-apps (Line-Of-Business) die door uw organisatie worden ontwikkeld, moeten worden gepubliceerd naar Play for Work met behulp van de Android-console voor het publiceren van apps van Google. Line-Of-Business-apps moeten worden geconfigureerd in de Android-console voor het publiceren van apps om de toegang tot uw organisatie te beperken.
 
-Apps installeren zonder tussenkomst van de gebruiker en zonder dat de gebruiker **installatie vanuit onbekende bronnen** hoeft toe te staan. Als de gebruiker optionele of beschikbare apps wil zoeken en installeren, moet de gebruiker de met een badge voor zakelijke apps gemarkeerde Play Store-app op zijn apparaat hebben. Meer informatie over [Apps implementeren voor Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps).
+Apps kunnen worden geïnstalleerd zonder tussenkomst van de gebruiker en zonder dat de gebruiker **installatie vanuit onbekende bronnen** hoeft toe te staan. Als de gebruiker optionele of beschikbare apps wil zoeken en installeren, kan de gebruiker zoeken in de Play Store op zijn apparaat. Meer informatie over [Apps implementeren voor Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## <a name="app-configuration"></a>App-configuratie
 
@@ -53,35 +54,33 @@ Android for Work biedt geen standaardapp voor e-mail of systeemeigen e-mailprofi
 
 Intune biedt configuratiesjablonen voor Gmail- en Nine Work-apps. Andere e-mail-apps die ondersteuning bieden voor app-configuratieprofielen, kunnen worden geconfigureerd met beleid voor de configuratie van mobiele apps.
 
-Als u werkt met voorwaardelijke EAS-toegang voor Android for Work-apparaten, moet u een Gmail- of Nine Work-app voor e-mail gebruiken. De Microsoft Outlook voor Android-app of een andere e-mail-app die gebruikmaakt van moderne verificatie via ADAL, wordt ook ondersteund. Meer informatie over [E-mailprofielen voor bedrijfse-mail](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
+Als u werkt met voorwaardelijke toegang via Exchange ActiveSync voor Android for Work-apparaten, moet u een Gmail- of Nine Work-app voor e-mail gebruiken. De Microsoft Outlook voor Android-app of een andere e-mail-app die gebruikmaakt van moderne verificatie via ADAL, wordt ook ondersteund. Meer informatie over [E-mailprofielen voor bedrijfse-mail](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
 ## <a name="mobile-app-management-policies"></a>Mobile App Management-beleid
 
-Beleid voor beperkingen dat wordt toegepast op apps die zijn ingeschakeld voor MAM (Mobile Application Management), wordt volledig ondersteund in het werkprofiel en in het persoonlijke profiel. U kunt Line-Of-Business-apps in de Android-console voor het publiceren van apps publiceren op https://play.google.com/apps/publish. Deze console bevat een optie om apps privé voor uw organisatie te maken. Meer informatie over [Instellingen voor nalevingsbeleid](afw-compliance-policy-settings-in-microsoft-intune.md). Zie [Mobile App Management-beleid](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) voor meer informatie.
+Beleid voor beperkingen dat wordt toegepast op apps die zijn ingeschakeld voor MAM (Mobile Application Management), wordt volledig ondersteund in het werkprofiel en in het persoonlijke profiel. U kunt Line-Of-Business-apps in de Android-console voor het publiceren van apps publiceren op https://play.google.com/apps/publish. Deze console bevat een optie om apps privé voor uw organisatie te maken. Meer informatie over [Instellingen voor nalevingsbeleid voor Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md). Raadpleeg [Mobile App Management-beleid](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) voor algemene informatie over MAM-beleid.
 
 ## <a name="vpn-profiles"></a>VPN-profielen
 
-VPN-ondersteuning is vergelijkbaar met Android VPN-profielen. Dezelfde VPN-providers en algemene configuratieopties zijn beschikbaar. Er zijn twee belangrijke verschillen:
+VPN-ondersteuning is vergelijkbaar met Android VPN-profielen. Dezelfde VPN-providers en algemene configuratieopties zijn beschikbaar voor Android for Work-beheer, met twee verschillen:
 
-1.  **VPN voor het werkprofiel**: VPN-verbindingen zijn alleen bedoeld voor de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android for Work worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken.
+-  **VPN voor het werkprofiel**: VPN-verbindingen zijn beperkt tot de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android for Work worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken.
 
-2.  **App-specifiek VPN**: als een VPN-provider configuratie voor een app-specifiek VPN ondersteunt en de mogelijkheid biedt om per app VPN via het Android for Work-app configuratieprofiel te configureren, kan het app-specifieke VPN in Intune worden geconfigureerd. Neem contact op met de VPN-provider om te controleren of deze mogelijkheid wordt ondersteund. Meer informatie over [VPN-verbindingsprofielen](vpn-connections-in-microsoft-intune.md).
+-  **App-specifiek VPN**: als een VPN-provider configuratie voor een app-specifiek VPN ondersteunt en de mogelijkheid biedt om VPN per app te configureren via het configuratieprofiel voor Android for Work-apps, kan een app-specifieke VPN in Intune worden geconfigureerd. Neem contact op met de VPN-provider om te controleren of deze mogelijkheid wordt ondersteund. Meer informatie over [VPN-verbindingsprofielen](vpn-connections-in-microsoft-intune.md).
 
 ## <a name="certificate-profiles"></a>Certificaatprofielen
 
-Dezelfde certificaatprofielconfiguratieopties die beschikbaar zijn voor traditioneel Android-beheer, zijn beschikbaar op Android for Work-apparaten. Android for Work biedt verbeterde certificaatbeheer-API's. Het verbeterde certificaatbeheer biedt de volgende functionaliteit:
+Dezelfde certificaatprofielconfiguratieopties die beschikbaar zijn voor Android-beheer, zijn beschikbaar op Android for Work-apparaten. Android for Work biedt verbeterde certificaatbeheer-API's. Het verbeterde certificaatbeheer biedt de volgende functionaliteit:
 
-1.  Zorgt ervoor dat de implementatie van het certificaat naadloos op de achtergrond voor de gebruiker plaatsvindt.
-
-2.  Zorgt ervoor dat geïmplementeerde certificaten volledig worden verwijderd wanneer een apparaat uit Intune wordt teruggetrokken en het werkprofiel wordt verwijderd.
-
-3.  Biedt verbeterde berichtverzending waarbij gebruikers door hun IT-afdeling via hun beheerservice worden geïnformeerd dat het certificaat is geïmplementeerd en geconfigureerd.
+- Zorgt ervoor dat de implementatie van het certificaat naadloos op de achtergrond voor de gebruiker plaatsvindt.
+-  Zorgt ervoor dat geïmplementeerde certificaten volledig worden verwijderd wanneer een apparaat uit Intune wordt teruggetrokken en het werkprofiel wordt verwijderd.
+-  Biedt verbeterde berichtverzending waarbij gebruikers door hun IT-afdeling via hun beheerservice worden geïnformeerd dat het certificaat is geïmplementeerd en geconfigureerd.
 
 Meer informatie over [Certificaatprofielen](secure-resource-access-with-certificate-profiles.md).
 
 ## <a name="wi-fi-profiles"></a>Wi-Fi-profielen
 
-Wi-Fi-profielen die worden beheerd door Android for Work, worden gegarandeerd verwijderd wanneer het apparaat uit Intune wordt teruggetrokken en het werkprofiel wordt verwijderd. Meer informatie over [Wi-Fi-profielen](wi-fi-connections-in-microsoft-intune.md).
+Wi-Fi-profielen die worden beheerd door Android for Work, worden verwijderd wanneer het apparaat uit Intune wordt teruggetrokken en het werkprofiel wordt verwijderd. Meer informatie over [Wi-Fi-profielen](wi-fi-connections-in-microsoft-intune.md).
 
 ## <a name="next-steps"></a>Volgende stappen
 [Android for Work-registratie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
@@ -89,6 +88,6 @@ Wi-Fi-profielen die worden beheerd door Android for Work, worden gegarandeerd ve
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

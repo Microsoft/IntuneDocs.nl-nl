@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1afe7093b80bb5fe3ea873cb065c8ca2673160e8
-ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1b84b7137bd01b695d20bea67d77c694f2533b4e
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Instellingen voor nalevingsbeleid voor Android for Work-apparaten in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op Android for Work-apparaten.
 
@@ -70,7 +69,7 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 - **Vereisen dat USB-foutopsporing is uitgeschakeld**: u hoeft deze instelling niet te configureren, omdat USB-foutopsporing altijd al is uitgeschakeld op Android for Work-apparaten.
 
 - **Minimaal niveau voor de Android-beveiligingspatch**: gebruik deze instelling om het minimale Android-patchniveau op te geven.  Apparaten die niet ten minste dit patchniveau hebben, worden als niet-compatibel gezien. De datum moet de volgende notatie hebben: dd-mm-jjjj.
-- **Vereisen dat Device Threat Protection wordt ingeschakeld**: Gebruik deze instelling om de risicobeoordeling uit de Lookout MTP-oplossing als voorwaarde voor naleving te gebruiken. Selecteer het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
+- **Vereisen dat Device Threat Protection wordt ingeschakeld**: gebruik deze instelling om de risicobeoordeling uit de Device Threat Protection-oplossing als voorwaarde voor naleving te gebruiken. Selecteer het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
 
   - **Geen (beveiligd)**: Dit is het veiligste niveau. Dit betekent dat er op het apparaat geen bedreigingen mogen staan. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
   - **Laag**: Het apparaat wordt als compatibel geëvalueerd als er bedreigingen met een laag niveau op staan. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
@@ -80,13 +79,13 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
   Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](enable-device-threat-protection-rule-in-compliance-policy.md) voor meer informatie.
 
 ## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
-- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel.
+- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-compatibel.
   Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen om een upgrade van zijn apparaat uit te voeren, waarna die toegang tot bedrijfsbronnen krijgt.
 
 - **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

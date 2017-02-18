@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune biedt diverse ingebouwde algemene instellingen die u op Android for Work-apparaten kunt configureren.
+Intune biedt diverse ingebouwde algemene instellingen die u op [Android for Work-apparaten](android-for-work.md) kunt configureren.
 
 ## <a name="general-configuration-policy"></a>Algemeen configuratiebeleid
 
@@ -60,8 +59,6 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |**Gegevens delen tussen werkprofielen en persoonlijke profielen toestaan**|Hiermee kunnen gegevens van apps in het werkprofiel en apps in het persoonlijke profiel van gebruikers worden gedeeld. U kunt kiezen uit:<br><br>- **Delen buiten grenzen voorkomen**<br>- **Met apps in het werkprofiel kunnen aanvragen voor delen van het persoonlijke profiel worden verwerkt**<br>- **Geen beperkingen voor delen**|
 |**Meldingen van het werkprofiel verbergen wanneer het apparaat is vergrendeld**<br>(Android 6 en hoger)|Hiermee bepaalt u of u meldingen van het werkprofiel wilt weergeven wanneer het apparaat is vergrendeld.|
 |**Standaardmachtigingsbeleid voor apps instellen**<br>(Android 6 en hoger)|Hiermee stelt u het standaardmachtigingsbeleid in voor alle apps in het werkprofiel.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
@@ -97,6 +94,6 @@ Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

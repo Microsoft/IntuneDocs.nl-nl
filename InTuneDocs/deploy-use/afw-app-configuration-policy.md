@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 008c0d20312e90f3897c3da8ae2226e3e2595225
-ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
 
 Gebruik het configuratiebeleid voor mobiele apps in Microsoft Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een iOS-app uitvoeren. Een app kan gebruikers bijvoorbeeld verplichten het volgende op te geven:
 
--   Een aangepast poortnummer.
+-   Een aangepast poortnummer
+-   Taalinstellingen
+-   Huisstijlinstellingen, zoals een bedrijfslogo
 
--   Taalinstellingen.
+Als gebruikers instellingen niet correct opgeven, kan het de werkbelasting van uw helpdesk verhogen en de acceptatie van nieuwe apps vertragen.
 
--   Huisstijlinstellingen, zoals een bedrijfslogo.
+Met beleidsregels voor de configuratie van mobiele apps kunt u deze instellingen implementeren voor apparaten voordat de app wordt uitgevoerd. De instellingen worden automatisch aangeleverd en de gebruikers hoeven geen enkele actie te ondernemen.
 
-Als gebruikers deze instellingen niet correct opgeven, kan dit de werkbelasting van uw helpdesk verhogen en de acceptatie van nieuwe apps vertragen.
+Voor het gebruik van configuratiebeleid voor apps moet de app-ontwikkelaar configuraties voor bedrijfsapps beschikbaar hebben gesteld bij het maken van de app. In Google Chrome worden bijvoorbeeld instellingen beschikbaar gemaakt waarmee u standaardbladwijzers en toegestane en geweigerde sites kunt instellen, en nog veel meer. Neem contact op met de ontwikkelaar van de app om te zien of deze instellingen worden ondersteund en hoe u deze in het beleid moet opgeven.
 
-Configuratiebeleid voor mobiele apps kan ervoor zorgen dat deze problemen worden voorkomen doordat u deze instellingen bij gebruikers kunt implementeren voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruikers hoeven geen enkele actie te ondernemen.
-
-Voor het gebruik van configuratiebeleid voor apps moet de ontwikkelaar van de app configuraties voor bedrijfsapps beschikbaar hebben gemaakt bij het maken van de app. In Google Chrome worden bijvoorbeeld instellingen beschikbaar gemaakt waarmee u standaardbladwijzers en toegestane en geweigerde sites kunt instellen, en nog veel meer. Neem contact op met de ontwikkelaar van de app om te zien of deze instellingen worden ondersteund en hoe u deze in het beleid moet opgeven.
-
-U implementeert het configuratiebeleid voor de app voor dezelfde gebruikers als de app die u wilt configureren. De beleidsinstellingen worden telkens gebruikt wanneer de app wordt uitgevoerd.
+U implementeert het configuratiebeleid voor de app voor dezelfde gebruikers als de app die u wilt configureren. De app-instellingen worden toegepast als de app wordt uitgevoerd.
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>Een configuratiebeleid voor mobiele apps configureren
 
@@ -80,6 +79,6 @@ Wanneer de geïmplementeerde app op een apparaat wordt uitgevoerd, worden de ins
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
