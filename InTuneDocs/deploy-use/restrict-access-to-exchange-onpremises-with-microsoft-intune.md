@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,18 +25,19 @@ ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+U kunt voorwaardelijke toegang tot e-mail op Exchange On-premises of het oudere Exchange Online Dedicated configureren met behulp van Microsoft Intune.
+Zie het artikel [Toegang tot e-mail en O365-services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+
 > [!NOTE]
 > Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neem dan contact op met uw accountmanager.
 
+## <a name="before-you-begin"></a>Voordat u begint
 
-Als u de toegang tot e-mail op Exchange On-premises of de oude Exchange Online-specifieke omgeving wilt beheren, kunt u beleid voor voorwaardelijke toegang tot Exchange On-premises configureren met behulp van Microsoft Intune.
-Zie het artikel [Toegang tot e-mail en O365-services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
-
-Controleer het volgende **voordat** u voorwaardelijke toegang configureert:
+Controleer het volgende:
 
 -   Uw versie van Exchange moet **Exchange 2010 of hoger** zijn. De CAS-matrices (Client Access Server) voor Exchange-servers worden ondersteund.
 
--   U moet de **Exchange On-premises-connector** gebruiken die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Exchange On-premises. Hiermee kunt u apparaten beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console. Zie [Intune On-premises Exchange-connector](intune-on-premises-exchange-connector.md) voor meer informatie over de connector.
+-   U moet de [Intune On-premises Exchange-connector](intune-on-premises-exchange-connector.md) gebruiken die [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Exchange On-premises. Hiermee kunt u apparaten beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console.
 
     -   De Exchange On-premises-connector die u in de Intune-console vindt, is uitsluitend bestemd voor uw Intune-tenant en kan niet worden gebruikt met een andere tenant. Het is bovendien raadzaam de Exchange-connector voor uw tenant **op slechts één machine** te installeren.
 
@@ -47,6 +49,8 @@ Controleer het volgende **voordat** u voorwaardelijke toegang configureert:
 
 -   U moet **Exchange ActiveSync** configureren met verificatie op basis van certificaten of invoer van gebruikersreferenties.
 
+### <a name="device-compliance-requirements"></a>Apparaatcompatibiliteitsvereisten
+
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
 -  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd ** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
@@ -57,11 +61,13 @@ Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een
 
 -   **Voldoen** aan [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nalevingsbeleid dat op dat apparaat is geïmplementeerd.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Hoe voorwaardelijke toegang werkt voor Exchange On-premises
+
 Het volgende diagram illustreert de werkstroom die door het beleid voor voorwaardelijke toegang voor Exchange On-premises wordt gebruikt om te bepalen of apparaten moeten worden geblokkeerd of toegestaan.
 
 ![Diagram met de beslissingspunten die bepalen of de toegang van een apparaat tot Exchange On-premises wordt toegestaan of geblokkeerd](../media/ConditionalAccess8-2.png)
 
-Als niet aan een beleidsregel voor voorwaardelijke toegang wordt voldaan, krijgt de gebruiker een van de volgende berichten te zien tijdens het aanmelden:
+Als niet aan een voorwaardelijk toegangsbeleid wordt voldaan, verschijnt er gedurende tien minuten een venster tussen het apparaat dat wordt geblokkeerd en de gebruiker die een van de volgende quarantaineberichten ontvangt als hij zich aanmeldt:
 
 - Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het apparaatrecord in Azure Active Directory.
 
@@ -136,6 +142,6 @@ Het volgende wordt ondersteund:
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

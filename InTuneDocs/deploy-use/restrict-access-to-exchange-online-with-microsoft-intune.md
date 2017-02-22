@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+U kunt voorwaardelijke toegang voor Exchange Online of Exchange Online Dedicated configureren met behulp van Microsoft Intune. Zie het artikel [De toegang tot e-mail, O365 en andere services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+
 > [!NOTE]
 >Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neem dan contact op met uw accountmanager.
 
-U kunt voorwaardelijke toegang voor Exchange Online configureren met Microsoft Intune als u de toegang tot e-mail op Exchange Online of uw nieuwe Exchange Online Dedicated-omgeving wilt beheren. Zie het artikel [De toegang tot e-mail, O365 en andere services beveiligen](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor meer informatie over hoe voorwaardelijke toegang werkt.
+## <a name="before-you-begin"></a>Voordat u begint
 
-
-**Voordat** u voorwaardelijke toegang kunt configureren, moet u:
+Als u voorwaardelijke toegang wilt configureren, moet u:
 
 -   Een **Office 365-abonnement hebben waarin Exchange Online (zoals E3) is inbegrepen**. Gebruikers moeten bovendien een licentie hebben voor Exchange Online.
 
 - Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben. Daarnaast moeten gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
 
 -  U kunt eventueel de optionele **Intune-serviceconnector** configureren, waarmee u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Exchange Online en u apparaatgegevens kunt beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console. U hoeft de connector niet te gebruiken om nalevingsbeleid of beleidsregels voor voorwaardelijke toegang te kunnen gebruiken, maar de connector is wel vereist voor het uitvoeren van rapporten die helpen bij het evalueren van de impact van voorwaardelijke toegang.
+    -  Meer informatie over de [Intune-service-naar-serviceconnector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Configureer de service-naar-serviceconnector niet als u voorwaardelijke toegang wilt gebruiken voor Exchange Online en Exchange On-premises.
+   > Configureer de Intune-service-naar-serviceconnector niet als u voorwaardelijke toegang wilt gebruiken voor Exchange Online en Exchange On-Premises.
 
-   Zie [Intune-service-naar-serviceconnector](intune-service-to-service-exchange-connector.md) voor instructies voor het configureren van de connector.
+### <a name="device-compliance-requirements"></a>Apparaatcompatibiliteitsvereisten
 
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
@@ -54,12 +57,15 @@ Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een
 
 -   **Zich houden aan** het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nalevingsbeleid dat is geïmplementeerd op het apparaat, of lid zijn van een domein dat is gekoppeld aan een lokaal domein.
 
-Als niet aan een beleidsregel voor voorwaardelijke toegang wordt voldaan, krijgt de gebruiker een van de volgende berichten te zien tijdens het aanmelden:
+### <a name="when-the-device-is-not-compliant"></a>Wanneer het apparaat niet compatibel is
+
+Als niet is voldaan aan een beleid voor voorwaardelijke toegang, wordt het apparaat onmiddellijk in quarantaine geplaatst en ontvangt de gebruiker een e-mailbericht met een van de volgende quarantainemeldingen wanneer hij zich aanmeldt:
 
 - Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het record in Azure Active Directory.
 
 -   Als wordt vastgesteld dat het apparaat niet voldoet aan de regels van het nalevingsbeleid, wordt de gebruiker omgeleid naar de website of app van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Hoe voorwaardelijke toegang werkt voor Exchange Online
 
 Het volgende diagram illustreert de werkstroom die door beleid voor voorwaardelijke toegang wordt gevolgd voor Exchange Online.
 
@@ -70,7 +76,6 @@ U kunt toegang tot e-mail van Exchange Online beveiligen vanuit **Outlook** en a
 
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger, en Android for Work
 - iOS 8.0 en hoger
-- Windows Phone 8.1 en hoger
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beveilige
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 en hoger)
 
-**Niet-ondersteunde browsers worden geblokkeerd**.
+   > [!IMPORTANT]
+   > **Niet-ondersteunde browsers worden geblokkeerd**.
 
 **De OWA-app voor iOS en Android kan zodanig worden aangepast dat er geen moderne verificatie wordt gebruikt, die dan ook niet wordt ondersteund. Toegang vanuit de OWA-app moet worden geblokkeerd met ADFS-claimregels.**
 
@@ -204,7 +210,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
         Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven in Intune en aan het nalevingsbeleid moeten voldoen. Elke clienttoepassing die **moderne verificatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **Exchange Online** geblokkeerd.
 
         Als u **Alle platformen** selecteert, betekent dat dit beleid met Azure Active Directory wordt toegepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing. Alle platformen moeten worden geregistreerd en voldoen aan de voorwaarden, met uitzondering van:
-        *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide.
+        *    Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide.
         * Niet-ondersteunde platformen, zoals Mac OS. Apps met moderne verificatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
 
     -   **Specifieke platformen**
@@ -272,6 +278,6 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

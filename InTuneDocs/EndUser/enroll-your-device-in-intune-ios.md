@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology:
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
 - Company Portal
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 58295c0e27c6c74a1efb9771e0fe8fb917c6cca6
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 
 ---
@@ -26,9 +27,12 @@ ms.openlocfilehash: 58295c0e27c6c74a1efb9771e0fe8fb917c6cca6
 
 # <a name="enroll-your-ios-device-in-intune"></a>Uw iOS-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat inschrijf bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie over inschrijving.
 
-Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) als u probeert een Mac OS-apparaat te registreren.
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+> [!NOTE]
+> Als u een macOS-apparaat probeert te registreren, zoals een MacBook Pro of iMac, [volgt u in plaats daarvan deze instructies](enroll-your-device-in-intune-macos.md).
 
 **Voordat u begint:**
 
@@ -55,7 +59,7 @@ Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-mac
 
 5.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **Registreren**.
 
-    ![IOS-registreren-de-volgende-stap](./media/ios-enroll-1d-what-comes-next.png)
+     ![IOS-registreren-de-volgende-stap](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Tik in het scherm **Profiel installeren** op **Installeren** en voer de wachtwoordcode in als daarom wordt gevraagd.
 
@@ -67,15 +71,15 @@ Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-mac
 
 8.  Tik op **Installeren** om aan te geven dat u de waarschuwing hebt gelezen.
 
-    ![IOS-registreren-tik-op-installeren-na-waarschuwing](./media/ios-enroll-4-warning.png)
+       ![IOS-registreren-tik-op-installeren-na-waarschuwing](./media/ios-enroll-4-warning.png)
 
 9.  Tik op **Vertrouwen**.
 
-    ![IOS-registreren-tik-op-vertrouwen](./media/ios-enroll-5-trust.png)
+       ![IOS-registreren-tik-op-vertrouwen](./media/ios-enroll-5-trust.png)
 
 10.  Wanneer het scherm verandert om weer te geven dat het profiel is geïnstalleerd, tikt u op **Gereed**.
 
-    ![ios-registreren-tik-op-gereed](./media/ios-enroll-6-done.png)
+     ![ios-registreren-tik-op-gereed](./media/ios-enroll-6-done.png)
 
     Het bericht 'Apparaat registreren' wordt weergegeven op het scherm.
 
@@ -93,11 +97,10 @@ Zie [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-mac
 
 Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsportal-app.
 
-
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

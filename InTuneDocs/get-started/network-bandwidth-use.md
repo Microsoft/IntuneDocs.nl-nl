@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
+ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
+ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
 # <a name="intune-network-bandwidth-use"></a>Gebruik van netwerkbandbreedte door Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Deze richtlijnen zijn bedoeld voor systeembeheerders die verantwoordelijk zijn voor het beheer van apparaten in de onderneming. Zie [Veelgestelde vragen over de Intune-bedrijfsportal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) voor informatie over het gebruik van Intune op uw mobiele apparaat.
 
 Lees dit onderwerp en andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt.
 
@@ -231,6 +234,6 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

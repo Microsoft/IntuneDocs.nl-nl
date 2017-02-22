@@ -1,27 +1,32 @@
 ---
-title: MAM-beleid bewaken met Microsoft Intune | Microsoft Docs
-description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
+title: App-beveiligingsbeleid controleren | Intune Azure Preview | Microsoft Docs
+description: 'Intune Azure Preview: u kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.'
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: 482ae5f9adab39670b15c10f20883ef9684b2525
+ms.openlocfilehash: 6f121487aa369838a46d7c7dce16ad9259dd6f31
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Mobile App Management-beleid bewaken met Microsoft Intune
-U kunt de nalevingsstatus van het MAM-beleid bewaken dat u hebt toegepast op gebruikers. U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
+# <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+**Als u zich niet in de preview-versie van Intune in Azure bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-console.
+
+
+U kunt de nalevingsstatus van het MAM-beleid bewaken dat u hebt toegepast op gebruikers op de blade Intune-app-beveiliging in [Azure Portal](https://portal.azure.com). U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
 
 Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
@@ -33,15 +38,12 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
 ## <a name="summary-view"></a>Samenvattingsweergave
 
-Volg de drie onderstaande stappen om de samenvattingsweergave te openen:
+1. Meld u aan bij Azure Portal.
+2. Kies **Meer services** > **Overige** > **Intune**.
+3. Kies **Apps beheren** op de blade **Intune**.
+4. Kies **Controleren** > **Gebruikersstatus van de app-beveiliging** in de workload **Apps beheren** om de samenvattingsweergave te openen:
 
-1. Ga naar [Azure Portal](https://portal.azure.com) en voer uw referenties in.
-2. Kies **Meer services** en typ **Intune** in het filtertekstvak.
-3. Kies **Intune-app-beveiliging**.
-
-Op de blade **Intune Mobile Application Management** ziet u een samenvatting van de nalevingsstatus:
-
-![De tegel Samenvatting op het tabblad Intune Mobile Application Management](../media/mam-azure-portal-user-status-summary.png)
+![De tegel Samenvatting op het tabblad Intune Mobile Application Management](../media/app-protection-user-status-summary.png)
 
 -   **Gebruikers:** het totale aantal gebruikers in uw bedrijf dat gebruikmaakt van de apps die zijn gekoppeld aan het beleid.
 
@@ -111,8 +113,8 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
 Zodra de gegevens voor het **gebruikersrapport van de app-beveiliging** worden weergegeven, kunt u gegevens als volgt samenvoegen:
 
-- **Validatieresultaat:** De gegevens worden gegroepeerd op de beveiligingsstatus van apps. Het resultaat kan fout, waarschuwing of geslaagd zijn.
-- **App-naam:** De gegevens worden gegroepeerd op apps (de naam van de werkelijke app). Het resultaat kan fout, waarschuwing of geslaagd zijn.
+- **Validatieresultaat:** de gegevens worden gegroepeerd op de beveiligingsstatus van apps. Het resultaat kan fout, waarschuwing of geslaagd zijn.
+- **App-naam:** de gegevens worden gegroepeerd op apps (de naam van de werkelijke app). Het resultaat kan fout, waarschuwing of geslaagd zijn.
 
 ## <a name="export-app-protection-activities-to-csv"></a>App-beveiligingsactiviteiten exporteren naar CSV
 
@@ -131,8 +133,8 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 ## <a name="see-also"></a>Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-android-apps.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-ios-apps.md)
 
 
 
