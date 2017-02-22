@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -33,11 +34,11 @@ Als u extra maatregelen wilt nemen om gegevensverlies te voorkomen, gebruikt u [
 IT-beheerders of gebruikers kunnen er ook voor kiezen om alternatieve e-mailclients te installeren (zoals Microsoft Outlook voor Android of iOS). Deze e-mailclients bieden mogelijk geen ondersteuning voor e-mailprofielen en kunnen niet worden ingesteld met behulp van Intune-e-mailprofielen.  
 
 U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren op de volgende apparaattypen:
--   Windows Phone 8.1 en hoger
--   Windows 10 (voor de desktop), Windows 10 Mobile en hoger
--   iOS 8.0 en hoger
--   Samsung KNOX Standard (4.0 of hoger)
--   Android for Work
+-    Windows Phone 8.1 en hoger
+-    Windows 10 (voor de desktop), Windows 10 Mobile en hoger
+-    iOS 8.0 en hoger
+-    Samsung KNOX Standard (4.0 of hoger)
+-    Android for Work
 
 >[!NOTE]
 >Intune bevat twee e-mailprofielen voor Android for Work, een voor de e-mail-app van Gmail en een voor de e-mail-app van Nine Work. Deze apps zijn beschikbaar in de Google Play-store en bieden ondersteuning voor verbindingen met Exchange. Als u de connectiviteit voor e-mail wilt inschakelen, implementeert u een van deze e-mail-apps op apparaten van uw gebruikers, en maakt en implementeert u vervolgens het juiste profiel.
@@ -88,7 +89,7 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel, dus de gebruiker moet dit
 
     -   **E-mailprofiel (Android for Work - Gmail)**
 
-    -   **E-mailprofiel (Android for Work - Nine Work)**
+    -    **E-mailprofiel (Android for Work - Nine Work)**
 
     U kunt alleen een aangepast e-mailprofielbeleid maken en implementeren. Aanbevolen instellingen zijn niet beschikbaar.
 
@@ -134,10 +135,10 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 
 > [!NOTE]
 > - Implementeer voor Android for Work naast het juiste e-mailprofiel ook de Gmail- of Nine Work-app.
-> - Als u een e-mailprofiel van een apparaat wilt verwijderen, bewerkt u de implementatie en verwijdert u groepen waarvan het apparaat lid is.
+> - Als u een e-mailprofiel van een apparaat wilt verwijderen, bewerkt u de implementatie en verwijdert u groepen waarvan het apparaat lid is. U kunt een e-mailprofiel niet op deze manier verwijderen als dit het enige e-mailprofiel op een apparaat is.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

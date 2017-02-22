@@ -4,7 +4,7 @@ description: 'Intune Azure Preview: in dit onderwerp wordt beschreven hoe u Mobi
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/17
+ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
+ms.sourcegitcommit: a4103a4cef393df585b9b9daa92ab63dd7805e9e
+ms.openlocfilehash: a55118e60750616f8b058846148364cbeccb5784
 
 
 ---
@@ -25,13 +25,12 @@ ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
 
 Gebruik een van de volgende methoden om inschrijving in te stellen voor Windows-apparaten:
 
-- **[Automatische inschrijving met Azure Active Directory Premium voor Windows 10 en Windows 10 Mobile](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- [**Automatische inschrijving met Azure Active Directory Premium voor Windows 10 en Windows 10 Mobile**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  Deze methode is alleen van toepassing op Windows 10- en Windows 10 Mobile-apparaten.
  -  Azure Active Directory Premium moet zijn geïnstalleerd als u deze methode wilt gebruiken. Anders moet u de inschrijvingsmethode voor Windows 8.1 en Windows Phone 8.1 gebruiken.
  -  Als u ervoor kiest automatische inschrijving niet in te schakelen, moet u de inschrijvingsmethode voor Windows 8.1 en Windows Phone 8.1 gebruiken.
 
-
-- **[Windows 8.1- en Windows Phone 8.1-inschrijving door CNAME te configureren](#set-up-windows-8.1-and-windows-phone-8.1-enrollment-by-configuring-cname)** 
+- [**Windows 8.1- en Windows Phone 8.1-inschrijving door CNAME te configureren**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - U moet deze methode gebruiken als u Windows 8.1- en Windows Phone 8.1-apparaten wilt registreren.
 
 
@@ -54,8 +53,6 @@ U kunt toestaan dat gebruikers hun apparaat installeren en inschrijven met de be
  Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar enterpriseenrollment-s.manage.microsoft.com.
 
     Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records het voor gebruikers makkelijker om zich in te schrijven. Als er geen CNAME-inschrijvingsrecord wordt gevonden, wordt gebruikers gevraagd de MDM-servernaam (enrollment.manage.microscoft.com) handmatig in te voeren.
-
-    Als u in DNS een CNAME hebt geconfigureerd waarmee EnterpriseEnrollment.contoso.com wordt omgeleid naar manage.microsoft.com, is het raadzaam om dit te vervangen door een CNAME in DNS waarmee EnterpriseEnrollment.contoso.com wordt omgeleid naar enterpriseenrollment-s.manage.microsoft.com. Deze wijziging wordt aanbevolen, omdat het eindpunt manage.microsoft.com voor inschrijvingen in een toekomstige versie wordt afgeschaft.
 
     Als er meer dan één gecontroleerd domein is, maakt u een CNAME-record voor elk domein. De CNAME-resourcerecords moeten de volgende informatie bevatten:
 
@@ -88,6 +85,6 @@ Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt imple
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

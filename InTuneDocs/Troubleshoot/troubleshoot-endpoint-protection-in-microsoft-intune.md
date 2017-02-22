@@ -2,10 +2,10 @@
 title: Problemen met Endpoint Protection oplossen | Microsoft Docs
 description: Problemmen oplossen tijdens het gebruik van Microsoft Intune Endpoint Protection.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Gebruik de informatie in deze sectie om problemen op te lossen bij het gebruik van Microsoft Intune Endpoint Protection.
+Gebruik de informatie in deze sectie om problemen op te lossen bij het gebruik van Microsoft Intune Endpoint Protection. U kunt ook informatie bekijken over [Problemen oplossen met Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Foutberichten voor Endpoint Protection
 In deze sectie worden oorzaken en oplossingen beschreven voor de volgende fouten en waarschuwingen die worden weergegeven in het deelvenster **Status van Endpoint Protection** in de [Intune-beheerconsole](https://manage.microsoft.com).
@@ -52,6 +52,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
