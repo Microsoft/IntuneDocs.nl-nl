@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn ge
 ## <a name="intune-app-sdk"></a>Intune App SDK
 De App SDK is hoofdzakelijk ontworpen voor klanten die apps in de Apple App Store of Google Play Store hebben en hun apps willen beheren met Intune. Elke app kan echter profiteren van integratie van de SDK, zelfs als het een Line-Of-Business app is.
 
-Zie [Overzicht](/intune/develop/intune-app-sdk) voor meer informatie over de SDK. Zie [Aan de slag met de Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started) om aan de slag te gaan met de SDK.
+Zie [Overzicht](../develop/intune-app-sdk.md) voor meer informatie over de SDK. Zie [Aan de slag met de Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md) om aan de slag te gaan met de SDK.
 
 ### <a name="reasons-to-use-the-sdk"></a>Redenen om de SDK te gebruiken
 * Uw app heeft geen ingebouwde functies voor gegevensbescherming.
@@ -69,8 +70,8 @@ Zie [Overzicht](/intune/develop/intune-app-sdk) voor meer informatie over de SDK
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Ja, gebruik het [Intune App SDK Xamarin-onderdeel](/../develop/intune-app-sdk-xamarin).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](/../develop/intune-app-sdk-cordova).|
-|**Android**| Ja, gebruik het [Intune App SDK Xamarin-onderdeel](/../develop/intune-app-sdk-xamarin).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Ja, gebruik het [Intune App SDK Xamarin-onderdeel](../develop/intune-app-sdk-xamarin.md).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Ja, gebruik het [Intune App SDK Xamarin-onderdeel](../develop/intune-app-sdk-xamarin.md).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Vergelijking van functies
 In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de App Wrapping Tool.
