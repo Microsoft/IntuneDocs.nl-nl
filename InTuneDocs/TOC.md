@@ -6,6 +6,7 @@
 ### [Beleid maken en een app publiceren](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Andere opties en extra's](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### Overstappen op een [betaald abonnement](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [Veelgestelde vragen over MAM en app-beveiliging](understand-explore/mam-faq.md)
 ## [Algemene scenario's](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -78,6 +79,7 @@
 ## Apparaten configureren
 ### [Instellingen en functies op uw apparaten beheren met beleid](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-instellingen](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [Beheerde iOS-apparaten herstellen](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android- en Samsung KNOX-instellingen](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -106,7 +108,7 @@
 
 ## [Apparaten beveiligen](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Extern vergrendelen en wachtwoordcode opnieuw instellen](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Windows-apparaten beveiligen met MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
+### [Apparaten beveiligen met meervoudige verificatie](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Instellingen van Windows Hello voor Bedrijven beheren](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass van activeringsvergrendeling op iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Beleid voor het beveiligen van Windows-pc's](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -165,13 +167,14 @@
 #### [Nalevingsbeleid voor beveiliging tegen bedreigingen voor apparaten inschakelen](deploy-use/device-threat-protection-policy.md)
 
 ### [App-gegevens beveiligen met MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure-portal voor MAM-beleid](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Voorbereidingen voor de configuratie van MAM-beleid](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM-beleid maken en implementeren](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM-beleid voor Android](deploy-use/android-mam-policy-settings.md)
-#### [MAM-beleid voor iOS](deploy-use/ios-mam-policy-settings.md)
-#### [MAM-beleid valideren](deploy-use/validate-mobile-application-management.md)
-#### [Beleidsnaleving bewaken](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure-portal voor beveiligingsbeleid voor apps](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Aan de slag met configureren van beveiligingsbeleid voor apps](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Beveiligingsbeleid voor apps maken en implementeren](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Beveiligingsbeleid voor Android-apps](deploy-use/android-mam-policy-settings.md)
+#### [Beveiligingsbeleid voor iOS-apps](deploy-use/ios-mam-policy-settings.md)
+#### [Beveiligingsbeleid voor apps valideren](deploy-use/validate-mobile-application-management.md)
+#### [Naleving van beveiligingsbeleid voor apps bewaken](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [Gegevensoverdracht tussen iOS-apps beheren](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Intune-beheerconsole voor MAM-beleid](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,17 +185,16 @@
 #### [LOB-apps op apparaten die niet worden beheerd door Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [De SDK gebruiken bij het schrijven van een app](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [Veelgestelde vragen over MAM en app-beveiliging](deploy-use/mam-faq.md)
 
 ## Apps en gegevens buiten gebruik stellen
 ### [Volledig of selectief wissen gebruiken](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [Apps buiten gebruik stellen](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Bedrijfsgegevens van beheerde apps wissen](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Bronnen over de eindgebruikerservaring](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [Beheerde iOS-apparaten herstellen](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [Android-apps met MAM-beleid](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [iOS-apps met MAM-beleid](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [Eindgebruikers instructies geven over Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Hoe uw Android-gebruikers apps downloaden](deploy-use/how-your-android-users-get-their-apps.md)
+### [Hoe uw iOS-gebruikers hun apps downloaden](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Hoe uw Windows-gebruikers apps downloaden](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Apps ontwikkelen en aanpassen
 ## [Overzicht van de Microsoft Intune App SDK](develop/intune-app-sdk.md)
@@ -222,6 +224,6 @@
 # [Verklarende woordenlijst](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

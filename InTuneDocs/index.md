@@ -15,8 +15,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
-ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
       <h2 class="section-heading"><span class="icon icon-warning"></span> Aanbevolen inhoud</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">Meer dan 150 licenties? Maak gebruik van uw FastTrack-voordelen</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Meer dan&150; licenties? Maak gebruik van uw FastTrack-voordelen</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Algemene manieren om Intune te gebruiken</a></li>
           <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune in de preview-versie van Azure Portal</a></li>
         </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>Wat u uw eindgebruikers vertelt</h3>
                     <p>Lees welke stappen uw eindgebruikers moeten uitvoeren om hun apparaten te gebruiken met Intune en deel deze informatie met de eindgebruikers zodat zij zelfstandig taken kunnen uitvoeren.</p>
                   </a>
@@ -285,6 +285,6 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 
