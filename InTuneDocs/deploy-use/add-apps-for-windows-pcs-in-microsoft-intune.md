@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
@@ -26,6 +27,8 @@ Gebruik de informatie in dit onderwerp om te weten te komen hoe u apps aan Intun
 
 > [!IMPORTANT]
 > De informatie in dit onderwerp kan u helpen bij het toevoegen van apps voor Windows-pc's die u met de Intune-clientsoftware beheert. Als u apps wilt toevoegen op geregistreerde Windows-pc’s en andere mobiele apparaten, raadpleegt u [Apps voor mobiele apparaten toevoegen in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+Om apps op pc's te installeren, moeten deze geschikt zijn voor achtergrondinstallatie, zonder tussenkomst van de gebruiker. Als dit niet het geval is, mislukt de installatie.
 
 
 ## <a name="add-the-app"></a>De app toevoegen
@@ -40,7 +43,7 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
 
     - **Selecteer het bestandstype voor het software-installatieprogramma**. Dit geeft het type software aan dat u wilt implementeren. Kies voor een Windows-pc de optie **Windows Installer**.
     - **Geef de locatie op van de software-installatiebestanden**. Geef de locatie op van de installatiebestanden of kies **Bladeren** om de locatie in een lijst te selecteren.
-    - **Neem aanvullende bestanden en submappen op in dezelfde map**. Sommige software die gebruikmaakt van Windows Installer vereist ondersteunende bestanden. Deze bevinden zich doorgaans in dezelfde map als de installatiebestanden. Selecteer deze optie als u deze ondersteunende bestanden ook wilt implementeren.
+    - **Neem aanvullende bestanden en submappen op in dezelfde map**. Sommige software die gebruikmaakt van Windows Installer vereist ondersteunende bestanden. Deze moeten zich in dezelfde map bevinden als het installatiebestand. Selecteer deze optie als u deze ondersteunende bestanden ook wilt implementeren.
 
     Als u bijvoorbeeld een app met de naam Application.msi wilt publiceren naar Intune, komt de pagina er als volgt uit te zien: ![Software-installatiepagina van de uitgever](./media/publisher-for-pc.png)
 
@@ -73,7 +76,11 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
 
     Als de app voldoet aan één van de regels die u hebt geconfigureerd, wordt deze niet geïnstalleerd.
 
-6.  Alleen voor het bestandstype **Windows Installer** (.msi en .exe): op de pagina **Opdrachtregelargumenten** kiest u of u optionele opdrachtregelargumenten wilt opgeven voor het installatieprogramma. Zo bieden sommige installatieprogramma's mogelijk ondersteuning voor het argument **/q**, zodat het programma op de achtergrond kan worden geïnstalleerd zonder tussenkomst van de gebruiker.
+6.  Alleen voor het bestandstype **Windows Installer** (.msi en .exe): op de pagina **Opdrachtregelargumenten** kiest u of u optionele opdrachtregelargumenten wilt opgeven voor het installatieprogramma.
+    De volgende parameters worden automatisch toegevoegd door Intune:
+    - Voor .exe-bestanden wordt **/install** toegevoegd.
+    - Voor .msi-bestanden wordt **/quiet** toegevoegd.
+    Houd er rekening mee dat deze opties alleen werken als de maker van het app-pakket deze functionaliteit heeft ingeschakeld.
 
 7.  Alleen voor het bestandstype **Windows Installer** (alleen .exe): op de pagina **Retourcodes** kunt u nieuwe foutcodes toevoegen die door Intune worden geïnterpreteerd wanneer de app wordt geïnstalleerd op een beheerde Windows-pc.
 
@@ -89,8 +96,10 @@ De app wordt weergegeven op het knooppunt **Apps** van de werkruimte **Apps**.
 
 Nadat u een app hebt gemaakt, is de volgende stap om deze te implementeren. Zie [Apps in Microsoft Intune implementeren](deploy-apps.md) voor meer informatie.
 
+Raadpleeg het blogbericht [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) als u meer informatie wilt over tips en trucs voor het implementeren van software op Windows-pc's.
 
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Feb17_HO3-->
 
 

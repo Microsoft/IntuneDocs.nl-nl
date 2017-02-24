@@ -14,8 +14,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: ab94439d9fd5300d61c5991434d41f7fdca693d2
 
 
 ---
@@ -78,7 +78,7 @@ In dit artikel wordt uitgelegd hoe u de Lookout for Work-app configureert en imp
 
 6. **De app voor gebruikers implementeren**: selecteer de Lookout for Work-app en kies **Implementatie beheren**.
 
-  U moet dezelfde gebruikers selecteren die zijn toegevoegd aan de optie Registratiebeheer in de Lookout-console.  Zie stap 3 in de sectie [Uw abonnement configureren met Lookout Device Threat Protection](configure-and-deploy-lookout-for-work-apps.md) voor informatie over het toevoegen van gebruikersgroepen aan Lookout MTP.
+  U moet dezelfde gebruikers selecteren die zijn toegevoegd aan de optie Registratiebeheer in de Lookout-console.  Zie stap 3 in de sectie [Uw abonnement configureren met Lookout Device Threat Protection](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) voor informatie over het toevoegen van gebruikersgroepen aan Lookout MTP.
 
   >[!IMPORTANT]
   > De implementatiewizard van Intune app is niet op de hoogte van de Azure AD-gebruikersgroepen en maakt in plaats daarvan gebruik van de Intune-gebruikersgroepen. Daarom moet u een Intune-gebruikersgroep maken op basis van de Azure AD-gebruikersgroep die is geregistreerd in de Lookout-console, zoals beschreven in [dit](plan-your-user-and-device-groups.md) onderwerp.
@@ -94,10 +94,10 @@ Wanneer de gebruiker de Lookout for Work-app opent op het apparaat, wordt de geb
 * [U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Volgende stappen
-* [De regel Device Threat Protection inschakelen in het nalevingsbeleid](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

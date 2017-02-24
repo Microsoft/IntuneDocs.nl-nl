@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+In dit onderwerp wordt aan Intune-beheerders uitgelegd hoe ze beleid kunnen maken en apps publiceren die ze vervolgens op beheerde apparaten kunnen implementeren.
+
 Voordat u apps in Intune registreert, kunt u beleidsinstellingen en apps inschakelen die worden geïmplementeerd zodra deze apparaten in beheer komen. Intune-beleid biedt u instellingen waarmee u de beveiligingsinstellingen op mobiele apparaten kunt controleren, Windows Firewall- en Endpoint Protection-instellingen voor computers kunt onderhouden en toepassingen kunt implementeren. U kunt beleid configureren, apps toevoegen en deze apps implementeren zodat apparaten instellingen en apps ontvangen zodra ze in Intune worden geregistreerd.
 
 Beleid en apps zijn platform-specifiek.
 
 ## <a name="manage-device-settings"></a>Apparaatinstellingen beheren
 
- Beleidsinstellingen voor apparaten worden geconfigureerd en beheerd per platform. U kunt beleid configureren voor de volgende platformen:
+ Beleidsinstellingen voor apparaten worden geconfigureerd en beheerd per platform. De volgende koppelingen bevatten lijsten met beschikbare instellingen voor hun respectieve platforms:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android en Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -72,6 +75,6 @@ Nu de app beschikbaar is in Intune, kunt u deze implementeren op beheerde appara
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

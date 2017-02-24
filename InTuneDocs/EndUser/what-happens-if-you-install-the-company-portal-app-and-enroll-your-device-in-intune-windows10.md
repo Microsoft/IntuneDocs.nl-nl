@@ -16,13 +16,13 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 60b88dfed5afbb808aa056e93f2069d14efe8254
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows 10-apparaat inschrijft bij Intune?
 
@@ -36,7 +36,7 @@ Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 
 
 -   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen.
 
-Zie voor de inschrijvingsstappen uw [Windows 10 Mobile- of Windows 10-desktopapparaat inschrijven bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
+Zie voor de inschrijvingsstappen uw [Windows 10 Mobile- of Windows 10-desktopapparaat inschrijven bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
 
 Wanneer u een computer toevoegt:
 
@@ -58,6 +58,6 @@ Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

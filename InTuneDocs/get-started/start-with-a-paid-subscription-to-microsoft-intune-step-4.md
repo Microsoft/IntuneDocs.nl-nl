@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,23 @@ ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 68cdc77de1fa77b4fed6a1f37850b5427fb2b121
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Intune-licenties beheren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In dit onderwerp wordt aan beheerders uitgelegd hoe zij Intune-licenties kunnen toekennen aan gebruikers, zodat ze apparaten in beheer kunnen geven.
+
 Voordat gebruikers zich kunnen aanmelden bij de Intune-service of hun apparaten kunnen registreren bij het beheer, moet u eerst aan elke gebruiker een licentie toewijzen voor uw Intune-abonnement via de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-In organisaties die gebruikmaken van Enterprise Mobility + Security (EMS) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. Met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) kunt u één service of een subset van services toewijzen. Zie [Intune-licenties beheren met PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) voor meer informatie.
+In organisaties die gebruikmaken van Enterprise Mobility + Security (EMS) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. Met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) kunt u één service of een set van services toewijzen. Zie [Intune-licenties beheren met PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) voor meer informatie.
 
 ## <a name="how-intune-licenses-are-assigned"></a>De toewijzing van Intune-licenties
 Als gebruikersaccounts worden gesynchroniseerd vanuit uw on-premises Active Directory of handmatig via het [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) worden toegevoegd aan uw abonnement op cloudservices, krijgen ze niet automatisch een Intune-licentie toegewezen. Een Intune-tenantbeheerder moet echter op een later tijdstip het gebruikersaccount bewerken om in de Office 365-portal een licentie aan de gebruiker toe te wijzen.
@@ -94,6 +100,6 @@ Controleer met:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

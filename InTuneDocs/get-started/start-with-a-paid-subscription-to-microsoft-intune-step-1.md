@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Registreren of aanmelden bij Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In dit onderwerp wordt aan systeembeheerders uitgelegd hoe ze zich kunnen aanmelden voor een Intune-account.
+
 Voordat u zich kunt aanmelden of registreren bij Intune, moet u nagaan of uw organisatie al een werk- of schoolaccount bij Microsoft Online Services heeft, of een Enterprise Agreement of equivalente volumelicentieovereenkomst met Microsoft. Een werk- of schoolaccount wordt verstrekt wanneer u een volumelicentieovereenkomst met Microsoft ondertekent of zich abonneert op andere cloudservices van Microsoft, zoals Office 365.
 
 Als u al een werk- of schoolaccount hebt, kunt u zich gewoon **aanmelden** met dat account en Intune toevoegen aan uw bestaande abonnementomgeving. Anders moet u zich **registreren** om een nieuw account te maken waarmee u Intune voor uw organisatie kunt beheren.
@@ -50,6 +56,6 @@ Wanneer het registratieproces is voltooid, wordt u omgeleid naar een pagina waar
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

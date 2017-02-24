@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>Mobiele apparaten inschrijven en een app installeren
+# <a name="enable-enrollment-for-mobile-devices"></a>Registratie inschakelen voor mobiele apparaten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In dit onderwerp wordt beschreven hoe een Intune-beheerder de registratie van mobiele apparaten kan inschakelen. Zie [Werk gedaan krijgen met beheerde apparaten](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) voor meer informatie over het gebruik van Intune op uw telefoon. 
 
 Als u beheer van mobiele apparaten met Intune wilt instellen, moet u eerst de *instantie voor beheer van mobiele apparaten* instellen, waarmee de service wordt geïdentificeerd waarmee u de apparaten beheert die zijn gekoppeld aan uw account. In deze richtlijnen wordt ervan uitgegaan dat u de Intune-service gebruikt in plaats van System Center Configuration Manager. Zodra de MDM-instantie is ingesteld, kunt u beheer voor apparaatplatformen inschakelen en uw apparaten registreren bij de app bedrijfsportal.
 
@@ -46,7 +49,7 @@ Inschrijving moet worden ingeschakeld voor iOS-, Mac- en Android for Work-appara
 
 Schakel apparateninschrijving in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
 
--  [iOS en Mac OS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS en Mac OS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Window-pc](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Window 10 Mobile en Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -69,6 +72,6 @@ Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune*
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

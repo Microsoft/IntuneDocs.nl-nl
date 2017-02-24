@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
@@ -24,16 +25,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat moet worden verwijderd uit Intune-beheer. 
+Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat moet worden verwijderd uit Intune-beheer.
 
-Apparaten worden nooit uit Intune verwijderd zonder uw tussenkomst, zelfs als de apparaten een bepaalde tijd niet met de Intune-service zijn verbonden. 
+Apparaten worden nooit uit Intune verwijderd zonder uw tussenkomst, zelfs als de apparaten een bepaalde tijd niet met de Intune-service zijn verbonden.
 
 Er kunnen verschillende redenen zijn voor het buiten gebruik stellen van een apparaat:
 
--   Een gebruiker verlaat een bedrijf op de geplande wijze ('beheerd' vertrek)
--   Een gebruiker vertrekt abrupt (wordt ontslagen, neemt ontslag, etc.).
--   Verlies van apparaat
--   Een apparaat opnieuw inzetten (aan een andere gebruiker geven, voor een nieuw doel inzetten, enz.)
+-    Een gebruiker verlaat een bedrijf op de geplande wijze ('beheerd' vertrek)
+-    Een gebruiker vertrekt abrupt (wordt ontslagen, neemt ontslag, etc.).
+-    Verlies van apparaat
+-    Een apparaat opnieuw inzetten (aan een andere gebruiker geven, voor een nieuw doel inzetten, enz.)
 
 U kunt apparaten die worden beheerd als mobiele apparaten selectief wissen of volledig wissen, of de apparaten vergrendelen en het wachtwoord wijzigen. Als u het apparaat wist, komt het abonnement van de gebruiker vrij en kan het op een ander apparaat worden gebruikt. U kunt ook pc’s buiten gebruik stellen die worden beheerd met de Intune-clientsoftware.
 
@@ -43,6 +44,9 @@ Met zowel selectief wissen als volledig wissen wordt het apparaat uit het Intune
 [Selectief wissen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) is de aanbevolen actie voor werknemers die hun eigen apparaten in Intune hebben ingeschreven, omdat dit geen invloed heeft op de persoonlijke gegevens op het apparaat. Alleen zakelijke gegevens worden verwijderd.
 
 Voor apparaten die een nieuwe bestemming krijgen, kunt u ook voor [volledig wissen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) kiezen. Hiermee worden de fabrieksinstellingen van het apparaat teruggezet.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Gebruikerslicenties en beheerde apparaten verwijderen
+Wanneer u een gebruikerslicentie verwijdert, zijn de ingeschreven apparaten van de gebruiker niet langer ingeschreven. Als een best practice moet u selectief wissen om bedrijfsgegevens te verwijderen van beheerde apparaten voordat u de Intune-licentie voor een gebruiker verwijdert. Nadat u de gebruikerslicentie verwijdert, kunnen er geen externe acties meer op het apparaat worden uitgevoerd.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>U kunt als volgt apparaten verwijderen in de Azure Active Directory-portal:
 
@@ -76,6 +80,6 @@ Het kan ook zo zijn dat het apparaat het einde van de levensduur heeft bereikt. 
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
 
 
 ---
 
-# <a name="vpn-settings-for-windows-81-devices-in-intune-azure-preview"></a>VPN-instellingen voor Windows 8.1-apparaten in Intune Azure Preview
+# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 8.1-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -35,7 +35,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     - **Toevoegen**: hiermee opent u de blade **Rij toevoegen** waar u de volgende informatie kunt opgeven:
         - **Beschrijving**: geef een beschrijvende naam op voor de server, zoals **Contoso VPN-server**.
         - **IP-adres of FQDN**: geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.
-        - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
+        - **Standaardserver**: hiermee wordt deze server de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
     - **Importeren**: blader naar een bestand met een kommagescheiden lijst met servers in de indelingsbeschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze in de lijst **Servers** te importeren.
     - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand).
 
@@ -47,7 +47,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-- **Aanmeldingsgroep of -domein** (alleen Dell SonicWALL Mobile Connect): geef de naam van de aanmeldingsgroep of het aanmeldingsdomein op waarmee u verbinding wilt maken.
+- **Aanmeldingsgroep of -domein** (alleen Dell SonicWALL Mobile Connect): geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken.
 
 - **Rol** (alleen Pulse Secure): geef de naam op van de gebruikersrol die toegang tot deze verbinding heeft. Een gebruikersrol definieert persoonlijke instellingen en opties en schakelt bepaalde toegangsfuncties in of uit.
 
@@ -88,14 +88,14 @@ Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer info
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
 - **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of apparaten de verbindingsinstellingen automatisch moeten detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
+- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL in van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) die het configuratiebestand bevat.
 - **Proxyserver gebruiken**: schakel deze optie in als u de proxyserverinstellingen handmatig wilt invoeren.
-    - **Adres**: voer het adres van de proxyserver in (als IP-adres).
-    - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
+    - **Adres**: geef het proxyserveradres op (als IP-adres).
+    - **Poortnummer**: geef het poortnummer op dat is gekoppeld aan de proxyserver.
 - **Proxy niet gebruiken voor lokale adressen**: als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie als u de proxyserver niet wilt gebruiken voor lokale adressen die u opgeeft. Raadpleeg de Windows Server-documentatie voor meer informatie.
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -2,33 +2,40 @@
 title: Extern vergrendelen en wachtwoordcode opnieuw instellen | Microsoft Docs
 description: Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
 
 ## <a name="lock-a-device-remotely"></a>Een apparaat op afstand vergrendelen
-Als een gebruiker een apparaat verliest, kunt u het apparaat op afstand vergrendelen. In de volgende tabel wordt vermeld hoe vergrendelen op afstand werkt op verschillende mobiele platforms.
+Als een gebruiker een apparaat verliest, kunt u het apparaat op afstand vergrendelen. Het apparaat moet al zijn voorzien van een pincode of wachtwoordcode om vergrendeling op afstand te kunnen gebruiken.
+
+In de volgende tabel wordt vermeld hoe vergrendelen op afstand werkt op verschillende mobiele platforms.
 
 |Platform|Vergrendelen op afstand|
 |------------|---------------|
 |macOS|Niet ondersteund|
 |iOS|Ondersteund|
 |Android|Ondersteund|
-|Windows 10 en Windows 10 Mobile|Ondersteund|
+|Windows 10 (mobiel)|Ondersteund|
+|Windows 10 (desktop)|Niet ondersteund|
 |Windows Phone 8 en Windows Phone 8.1|Ondersteund|
 |Windows RT 8.1 en Windows RT|Ondersteund als de huidige gebruiker van het apparaat dezelfde gebruiker is die het apparaat heeft geregistreerd.|
 |Windows 8.1|Ondersteund als de huidige gebruiker van het apparaat dezelfde gebruiker is die het apparaat heeft geregistreerd.|
@@ -79,6 +86,6 @@ Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

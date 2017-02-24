@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
@@ -33,11 +34,11 @@ In dit onderwerp wordt beschreven wat u moet doen wanneer uw gebruikers geen toe
 
 Als u met voorwaardelijke toegang aan de slag wilt, moet aan de volgende voorwaarden worden voldaan:
 
--   Het apparaat moet worden beheerd door Intune
--   Het apparaat moet zijn geregistreerd bij Azure Active Directory (ADD). Onder normale omstandigheden vindt deze registratie automatisch plaats tijdens de inschrijving bij Intune
--   Het apparaat moet voldoen aan uw Intune-nalevingsbeleid, dit geldt voor het apparaat en de gebruiker van het apparaat.  Als er geen nalevingsbeleid is, is een inschrijving bij Intune voldoende.
--   EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker e-mail ophaalt via de systeemeigen e-mailclient van het apparaat in plaats van met Outlook.     Dit gebeurt automatisch voor iOS-, Windows Phone- en Android/KNOX Standard-apparaten.
--   Uw Intune Exchange Connector moet juist worden geconfigureerd. Zie [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
+-    Het apparaat moet worden beheerd door Intune
+-    Het apparaat moet zijn geregistreerd bij Azure Active Directory (ADD). Onder normale omstandigheden vindt deze registratie automatisch plaats tijdens de inschrijving bij Intune
+-    Het apparaat moet voldoen aan uw Intune-nalevingsbeleid, dit geldt voor het apparaat en de gebruiker van het apparaat.  Als er geen nalevingsbeleid is, is een inschrijving bij Intune voldoende.
+-    EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker e-mail ophaalt via de systeemeigen e-mailclient van het apparaat in plaats van met Outlook.     Dit gebeurt automatisch voor iOS-, Windows Phone- en Android/KNOX Standard-apparaten.
+-    Uw Intune Exchange Connector moet juist worden geconfigureerd. Zie [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
 
 De voorwaarden die voor elk apparaat gelden, zijn terug te vinden in Azure Management Portal en in het inventarisrapport van het apparaat.
 
@@ -52,7 +53,7 @@ De voorwaarden die voor elk apparaat gelden, zijn terug te vinden in Azure Manag
  -  Het kan even duren om de nalevingsinformatie te registreren voor een apparaat. Wacht een paar minuten en probeer het opnieuw.
  -  Voor iOS-apparaten:
      -   Een bestaand e-mailprofiel dat is gemaakt door de gebruiker, blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en zich vervolgens inschrijven. In de bedrijfsportal ziet de gebruiker dat deze niet voldoet aan de voorwaarden wegens het handmatig geconfigureerde e-mailprofiel. De gebruiker wordt gevraagd dat profiel te verwijderen. Het e-mailprofiel moet worden verwijderd zodat het Intune-profiel kan worden geïmplementeerd. Als u het probleem wilt voorkomen, vertelt u gebruikers om zich in te schrijven zonder een e-mailprofiel te installeren zodat Intune het profiel kan implementeren.
-     -   Een iOS-apparaat kan komen vast te hangen in een status voor het controleren van nalevingsvereisten, waardoor de gebruiker wordt verhinderd om een andere incheckprocedure te initiëren. Het opnieuw opstarten van de bedrijfsportal kan dit probleem oplossen en de nalevingsstatus geeft de status van het apparaat in Intune aan. Nadat alle gegevens van een apparaatsynchronisatie zijn verzameld, gaat de nalevingscontrole snel, gemiddeld niet meer dan een halve seconde.
+     -     Een iOS-apparaat kan komen vast te hangen in een status voor het controleren van nalevingsvereisten, waardoor de gebruiker wordt verhinderd om een andere incheckprocedure te initiëren. Het opnieuw opstarten van de bedrijfsportal kan dit probleem oplossen en de nalevingsstatus geeft de status van het apparaat in Intune aan. Nadat alle gegevens van een apparaatsynchronisatie zijn verzameld, gaat de nalevingscontrole snel, gemiddeld niet meer dan een halve seconde.
 
         De reden waarom apparaten in deze status blijven hangen, is doorgaans omdat ze problemen ondervinden bij het maken van verbinding met de service of omdat de synchronisatie lang duurt.  Als het probleem zich blijft voordoen in andere netwerkconfiguraties (mobiel, Wi-Fi-, VPN), zelfs nadat het apparaat opnieuw is opgestart, en nadat u hebt gecontroleerd of de SSP op het apparaat is bijgewerkt, neemt u contact op Microsoft Ondersteuning zoals beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
@@ -125,7 +126,7 @@ Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Vi
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (De lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor 4 gebruikers kon worden opgehaald. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   Vind een snelle (delta-)synchronisatie in de logboeken door te zoeken naar **snelle synchronisatie**.
+-    Vind een snelle (delta-)synchronisatie in de logboeken door te zoeken naar **snelle synchronisatie**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Uitzonderingen in de opdracht Get next
 Controleer de logboeken van de Exchange Connector op uitzonderingen in de **opdracht Get next** en verstrek deze aan Microsoft Ondersteuning.
@@ -134,9 +135,9 @@ Controleer de logboeken van de Exchange Connector op uitzonderingen in de **opdr
 
 Uitgebreide logboekregistratie inschakelen:
 
-1.  Open het configuratiebestand voor tracering van de Exchange Connector. Het bestand bevindt zich hier: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Zoek de TraceSourceLine met de volgende sleutel: OnPremisesExchangeConnectorService
-3.  Wijzig de knooppuntwaarde **SourceLevel** van **Warning ActivityTracing** (de standaardinstelling) in **Verbose ActivityTracing**, zoals hieronder weergegeven.
+1.    Open het configuratiebestand voor tracering van de Exchange Connector. Het bestand bevindt zich hier: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Zoek de TraceSourceLine met de volgende sleutel: OnPremisesExchangeConnectorService
+3.    Wijzig de knooppuntwaarde **SourceLevel** van **Warning ActivityTracing** (de standaardinstelling) in **Verbose ActivityTracing**, zoals hieronder weergegeven.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -161,6 +162,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

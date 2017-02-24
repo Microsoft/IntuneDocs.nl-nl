@@ -1,5 +1,6 @@
 ---
-title: App-beveiligingsbeleid controleren | Intune Azure Preview | Microsoft Docs
+title: App-beveiligingsbeleid controleren
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: u kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.'
 keywords: 
 author: andredm7
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 482ae5f9adab39670b15c10f20883ef9684b2525
-ms.openlocfilehash: 6f121487aa369838a46d7c7dce16ad9259dd6f31
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 
 ---
@@ -138,6 +140,6 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

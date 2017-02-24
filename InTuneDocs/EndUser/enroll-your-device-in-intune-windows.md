@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8829d392931cdbe23d5b0be7622729ddd2903fcb
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 # <a name="enroll-your-windows-device-in-intune"></a>Uw Windows-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Windows-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) voor meer informatie over registratie
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Windows-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over registratie
 
 Als u uw apparaat wilt registreren, volgt u de koppeling die overeenkomt met het apparaat dat u gebruikt:
 
@@ -36,6 +37,6 @@ Als u uw apparaat wilt registreren, volgt u de koppeling die overeenkomt met het
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

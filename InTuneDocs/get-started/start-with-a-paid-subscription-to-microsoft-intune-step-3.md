@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+In dit onderwerp wordt aan beheerders uitgelegd hoe ze gebruikers kunnen toevoegen aan Intune en welke machtigingen beschikbaar zijn in de Intune-service.
 
 Als beheerder kunt u gebruikers rechtstreeks toevoegen of gebruikers synchroniseren via uw on-premises Active Directory. Zodra gebruikers zijn toegevoegd, kunnen ze apparaten registreren en hebben ze toegang tot bedrijfsresources. U kunt gebruikers ook aanvullende machtigingen geven, zoals *Tenantbeheerder*, *Servicebeheerder* en *Apparaatinschrijvingsbeheerder*.
 
@@ -101,6 +106,6 @@ Apparaatinschrijvingsbeheerders zijn standaardgebruikersaccounts met een aanvull
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

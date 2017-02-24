@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
      -   **Apparaten moeten lid zijn van een domein of voldoen aan het beleid.** Kies deze optie om te vereisen dat pc's lid moeten zijn van een domein of het beleid naleven dat is ingesteld in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Als een pc niet aan een van deze vereisten voldoet, wordt de gebruiker gevraagd het apparaat in te schrijven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Apparaten moeten lid zijn van een domein.** Selecteer deze optie als u verplicht wilt stellen dat pc's lid moeten zijn van een domein om toegang te kunnen krijgen tot Exchange Online. Als een pc geen lid is van een domein, wordt de toegang tot e-mail geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder.
-
      -   **Apparaten moeten voldoen aan het beleid.** Kies deze optie om verplicht te stellen dat pc's moeten zijn geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en aan het nalevingsbeleid moeten voldoen. Als een pc niet is geregistreerd, wordt een bericht met instructies voor de registratie weergegeven.
 
 4.   Onder **Browsertoegang** tot SharePoint Online en OneDrive voor Bedrijven kunt u ervoor kiezen om toegang tot Exchange Online alleen toe te staan via de ondersteunde browsers: Safari (iOS) en Chrome (Android). Toegang vanaf andere browsers wordt geblokkeerd. De platformbeperkingen die u hebt geselecteerd voor toegang tot OneDrive zijn hier ook van toepassing.
@@ -200,6 +198,6 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

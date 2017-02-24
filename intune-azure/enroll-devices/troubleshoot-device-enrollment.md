@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
 
 
 ---
@@ -46,7 +46,7 @@ Deze problemen kunnen optreden op alle apparaatplatforms.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Controleer het aantal apparaten dat is ingeschreven en dat wordt toegestaan
 
-Ga op de blade Intune van Azure Portal naar **Apparaten inschrijven** > **Inschrijvingsbeperkingen** en controleer of aan de gebruiker niet meer dan het toegestane maximum van 15 apparaten is toegewezen.
+Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**. Ga op de blade Intune van Azure Portal naar **Apparaten inschrijven** > **Inschrijvingsbeperkingen** en controleer of aan de gebruiker niet meer dan het toegestane maximum van 15 apparaten is toegewezen.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -72,9 +72,9 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 > [!NOTE]
 
-> U kunt de limiet voor apparaatregistraties vermijden met behulp van apparaatinschrijvingsmanagers, zoals wordt beschreven in [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md) (Apparaten registreren met de apparaatinschrijvingsmanager).
+> U kunt de limiet voor apparaatregistraties vermijden met behulp van apparaatregistratiebeheerders, zoals wordt beschreven in [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md) (Apparaten registreren met de apparaatregistratiebeheerder).
 >
-> Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatinschrijvingsmanagers kunnen geen apparaten worden geregistreerd wanneer een beleid voor voorwaardelijke toegang van kracht is voor die specifieke gebruikersaanmelding.
+> Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatregistratiebeheerders kunnen geen apparaten worden geregistreerd wanneer een beleid voor voorwaardelijke toegang van kracht is voor die specifieke gebruikersaanmelding.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
 **Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
@@ -218,16 +218,16 @@ De certificaatfout treedt op omdat Android-apparaten vereisen dat er tussencerti
 
 Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
 
-1.  Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
-2.  Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
-3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
-4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
-5.  Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
-6.  Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
-7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
-8.  Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
-9.  Start de AD FS-servers opnieuw op.
-10. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
+1.    Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
+2.    Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
+3.    Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
+4.    Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
+5.    Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
+6.    Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
+7.    Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
+8.    Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
+9.    Start de AD FS-servers opnieuw op.
+10.    Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
 De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
 
 **Valideren dat het certificaat correct is geïnstalleerd**:
@@ -389,6 +389,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

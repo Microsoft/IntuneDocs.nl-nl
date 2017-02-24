@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d92b8b03c1c71898a15b1d1f0a1ee5e1f288dc2e
-ms.openlocfilehash: 759e5b7d04ccbbfb338d182bad03e0b0218cdeca
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
@@ -46,7 +47,7 @@ Apparaten moeten worden uitgeschreven uit uw bestaande oplossing voor het beheer
 
 ## <a name="enrolling-devices-in-intune"></a>Apparaten inschrijven bij Intune
 
-Gebruikers die zijn aangewezen voor migratie, moeten zich direct inschrijven bij Intune om verlies van toegang tot bedrijfsbronnen, e-mail en toepassingen te voorkomen of om weer toegang tot bedrijfsbronnen, e-mail en toepassingen te krijgen. Als u voorwaardelijke toegang hebt geconfigureerd en gebruikers verbinding met hun e-mailaccount proberen te maken voordat ze bij Intune zijn geregistreerd, wordt hun toegang geblokkeerd en ontvangen ze een registratie-e-mail. Deze e-mail bevat stappen waarmee ze hun apparaat bij Intune kunnen registreren.  Gebruikers kunnen zich ook inschrijven bij Intune via de Intune-bedrijfsportal-app of via het besturingssysteem (Windows 8.1 en Windows 10 Mobile). Raadpleeg [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor verdere platformspecifieke richtlijnen voor inschrijving.
+Gebruikers die zijn aangewezen voor migratie, moeten zich direct inschrijven bij Intune om verlies van toegang tot bedrijfsbronnen, e-mail en toepassingen te voorkomen of om weer toegang tot bedrijfsbronnen, e-mail en toepassingen te krijgen. Als u voorwaardelijke toegang hebt geconfigureerd en gebruikers verbinding met hun e-mailaccount proberen te maken voordat ze bij Intune zijn geregistreerd, wordt hun toegang geblokkeerd en ontvangen ze een registratie-e-mail. Deze e-mail bevat stappen waarmee ze hun apparaat bij Intune kunnen registreren.  Gebruikers kunnen zich ook inschrijven bij Intune via de Intune-bedrijfsportal-app of via het besturingssysteem (Windows 8.1 en Windows 10 Mobile). Raadpleeg [Wat u uw eindgebruikers vertelt over het gebruik van Microsoft Intune](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) voor verdere platformspecifieke richtlijnen voor inschrijving.
 
 ## <a name="configure-intune-conditional-access-optional"></a>Intune-beleid voor voorwaardelijke toegang configureren (optioneel)
 
@@ -75,6 +76,6 @@ Ga naar de [TechNet-galerie](https://gallery.technet.microsoft.com/Migrating-to-
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
 
 
 ---
 
-# <a name="vpn-settings-for-windows-10-devices-in-intune-azure-preview"></a>VPN-instellingen voor Windows 10-apparaten in Intune Azure Preview
+# <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 10-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -35,7 +35,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     - **Toevoegen**: hiermee opent u de blade **Rij toevoegen** waar u de volgende informatie kunt opgeven:
         - **Beschrijving**: geef een beschrijvende naam op voor de server, zoals **Contoso VPN-server**.
         - **IP-adres of FQDN**: geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.
-        - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
+        - **Standaardserver**: hiermee wordt deze server de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
     - **Importeren**: blader naar een bestand met een kommagescheiden lijst met servers in de indelingsbeschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze in de lijst **Servers** te importeren.
     - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand).
 
@@ -49,7 +49,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 - **L2TP**
 - **PPTP**
 
-**Aanmeldingsgroep of -domein** (alleen Dell SonicWALL Mobile Connect): geef de naam van de aanmeldingsgroep of het aanmeldingsdomein op waarmee u verbinding wilt maken.
+**Aanmeldingsgroep of -domein** (alleen Dell SonicWALL Mobile Connect): geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken.
 
 **Aangepaste XML**/**EAP XML**: geef aangepaste XML-opdrachten op waarmee de VPN-verbinding wordt geconfigureerd.
 
@@ -111,14 +111,14 @@ Voor elke server. geef op:
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
 - **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of apparaten de verbindingsinstellingen automatisch moeten detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
+- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL in van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) die het configuratiebestand bevat.
 - **Proxyserver gebruiken**: schakel deze optie in als u de proxyserverinstellingen handmatig wilt invoeren.
-    - **Adres**: voer het adres van de proxyserver in (als IP-adres).
-    - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
+    - **Adres**: geef het proxyserveradres op (als IP-adres).
+    - **Poortnummer**: geef het poortnummer op dat is gekoppeld aan de proxyserver.
 - **Proxy niet gebruiken voor lokale adressen**: als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie als u de proxyserver niet wilt gebruiken voor lokale adressen die u opgeeft. Raadpleeg de Windows Server-documentatie voor meer informatie.
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

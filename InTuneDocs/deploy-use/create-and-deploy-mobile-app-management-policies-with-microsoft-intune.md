@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Beleid voor Mobile App Management maken en implementeren met Microsoft Intune
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-MAM-beleid (Mobile App Management-beleid) kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door Intune worden beheerd. Lees het onderwerp [App-gegevens beschermen met beleid voor het beheren van mobiele apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) voor een gedetailleerde beschrijving van de werking van MAM-beleid en de scenario's die door Intune MAM-beleid worden ondersteund.
+In dit onderwerp wordt het proces beschreven van het maken van beveiligingsbeleid voor apps in **Azure-portal**. Azure Portal is de nieuwe beheerconsole voor het maken van beveiligingsbeleid voor apps. U kunt het beste deze portal gebruiken om beveiligingsbeleid voor apps te maken. Azure Portal ondersteunt de volgende MAM-scenario's:
 
-In dit onderwerp wordt het proces van het maken van MAM-beleid in de **Azure-portal** beschreven. Azure Portal is de nieuwe beheerconsole voor het maken van MAM-beleid. U kunt het beste deze portal gebruiken om MAM-beleid te maken. Azure Portal ondersteunt de volgende MAM-scenario's:
 - Apparaten die zijn ingeschreven in Intune.
 - Apparaten die worden beheerd door een externe MDM-oplossing.
 - Apparaten die niet worden beheerd door een MDM-oplossing (BYOD).
@@ -34,14 +34,14 @@ In dit onderwerp wordt het proces van het maken van MAM-beleid in de **Azure-por
 >[!IMPORTANT]
 Houd rekening met het volgende als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren:
 
-> * U kunt MAM-beleid maken dat ondersteuning biedt voor apps voor apparaten die zijn ingeschreven in Intune via de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * MAM-beleid dat is gemaakt in de Intune-beheerconsole kan niet worden geïmporteerd in Azure Portal.  Het MAM-beleid moet opnieuw worden gemaakt in de Azure Portal.
+> * U kunt beveiligingsbeleid voor apps maken dat ondersteuning biedt voor apps voor apparaten die zijn geregistreerd in Intune via de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * Beveiligingsbeleid voor apps gemaakt in de Intune-beheerconsole kan niet worden geïmporteerd in Azure Portal.  Het beveiligingsbeleid voor apps moet opnieuw worden gemaakt in Azure Portal.
 
-> * Mogelijk ziet u in de Intune-beheerconsole niet alle MAM-beleidsinstellingen. De Azure-portal is de nieuwe beheerconsole voor het maken van MAM-beleid.
+> * Mogelijk ziet u in de Intune-beheerconsole niet alle instellingen van het beveiligingsbeleid voor apps. Azure-portal is de nieuwe beheerconsole voor het maken van beveiligingsbeleid voor apps.
 
-> * Voor het implementeren van beheerde apps moet u MAM-beleid maken in de Intune-beheerconsole. Het kan in dit geval verstandig zijn om MAM-beleid te maken in zowel de Intune-beheerconsole als de Azure-portal: in de Intune-beheerconsole om ervoor te zorgen dat u de mogelijkheid hebt om beheerde apps te implementeren en in de Azure-portal omdat dit de nieuwe beheerconsole is die alle instellingen voor MAM-beleid bevat.
+> * Voor het implementeren van beheerde apps moet u beveiligingsbeleid voor apps maken in de Intune-beheerconsole. Het kan in dit geval verstandig zijn om beveiligingsbeleid voor apps te maken in zowel de Intune-beheerconsole als Azure-portal: in de Intune-beheerconsole om ervoor te zorgen dat u de mogelijkheid hebt om beheerde apps te implementeren en in Azure-portal omdat dit de nieuwe beheerconsole is die alle instellingen voor beveiligingsbeleid voor apps bevat.
 
-> * Als u MAM-beleid maakt in zowel de Intune-beheerconsole als de Azure-portal, wordt het beleid dat in de Azure-portal is gemaakt, toegepast op de apps.
+> * Als u beveiligingsbeleid voor apps maakt in zowel de Intune-beheerconsole als Azure-portal, wordt het beleid dat in Azure-portal is gemaakt, toegepast op de apps.
 
 Voor een lijst met beleidsinstellingen die worden ondersteund voor het Android- en iOS-platform, selecteert u een van de volgende mogelijkheden:
 
@@ -49,16 +49,24 @@ Voor een lijst met beleidsinstellingen die worden ondersteund voor het Android- 
 - [iOS-beleid](ios-mam-policy-settings.md)
 - [Android-beleid](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>MAM-beleid maken
-Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) voordat u MAM-beleid maakt.
-1.  Kies **Intune Mobile Application Management &gt; Instellingen** om het tabblad **Instellingen** te openen.
+- Zie [protect app data using app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Appgegevens beveiligen met behulp van beveiligingsbeleid voor apps)voor een gedetailleerde beschrijving van de werking van het beveiligingsbeleid voor apps en de scenario's die worden ondersteund door het Intune-beveiligingsbeleid voor apps.
 
-    ![Schermafbeelding van het tabblad Intune Mobile Application Management](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Beveiligingsbeleid voor apps maken
+Beveiligingsbeleid voor apps wordt gemaakt in Azure-Portal. Als dit de eerste keer is dat u Azure-portal gebruikt, lees dan eerst [Azure-portal voor Microsoft Intune-beveiligingsbeleid voor apps](azure-portal-for-microsoft-intune-mam-policies.md) om vertrouwd te raken met Azure-portal. Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) voordat u beveiligingsbeleid voor apps maakt.
 
-    > [!TIP]
-    > Als dit de eerste keer is dat u de Azure-portal gebruikt, lees dan eerst [Azure-portal voor Microsoft Intune MAM-beleid](azure-portal-for-microsoft-intune-mam-policies.md) om vertrouwd te raken met de portal.
+Voer de volgende stappen uit om beveiligingsbeleid voor apps te maken:
 
-2.  Kies op het tabblad **Instellingen** de optie **App-beleid**. Hiermee opent u het tabblad **App-beleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken. Kies **Een beleid toevoegen**.
+1. Ga naar [Azure Portal](http://portal.azure.com) en voer uw referenties in.
+
+2. Kies **Meer services** en voer Intune in.
+
+3. Kies **Intune-app-beveiliging**.
+
+4. Kies **Intune Mobile Application Management &gt; Instellingen** om de blade **Instellingen** te openen.
+
+    ![Schermafbeelding van het tabblad Intune Mobile Application Management](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  Kies op de blade **Alle instellingen** de optie **App-beleid**. Hiermee opent u het tabblad **App-beleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken. Kies **Een beleid toevoegen**.
 
     ![Schermafbeelding van het tabblad App-beleid met de menuoptie Een beleid toevoegen gemarkeerd ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -90,10 +98,10 @@ Controleer de [informatie over vereisten en ondersteuning](get-ready-to-configur
 Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige procedure, is het nog niet geïmplementeerd voor gebruikers. Zie de sectie Een beleid implementeren naar gebruikers hieronder voor het implementeren van een beleid.
 
 > [!IMPORTANT]
-> Als u met de Intune-beheerconsole een MAM-beleid voor een app maakt en met de Azure-portal een MAM-beleid maakt, heeft het beleid dat u met de Azure-portal hebt gemaakt, prioriteit. In de Intune- of Configuration Manager-console worden echter de beleidsinstellingen gerapporteerd die zijn gemaakt via de Intune-beheerconsole. Bijvoorbeeld:
+> Als u met de Intune-beheerconsole een beveiligingsbeleid voor een app maakt en met Azure-portal een beveiligingsbeleid voor apps, heeft het beleid dat u met Azure-portal hebt gemaakt, prioriteit. In de Intune- of Configuration Manager-console worden echter de beleidsinstellingen gerapporteerd die zijn gemaakt via de Intune-beheerconsole. Bijvoorbeeld:
 >
-> -   U hebt MAM-beleid in de Intune-beheerconsole gemaakt waarin het kopiëren vanuit een app wordt geblokkeerd.
-> -   U hebt MAM-beleid in de Azure-console gemaakt waarin het kopiëren vanuit een app wordt toegestaan.
+> -   U hebt beveiligingsbeleid voor apps in de Intune-beheerconsole gemaakt waarin het kopiëren vanuit een app wordt geblokkeerd.
+> -   U hebt beveiligingsbeleid voor apps in de Azure-console gemaakt waarin het kopiëren vanuit een app is toegestaan.
 > -   U koppelt beide sets met beleidsregels aan dezelfde app.
 > -   Het beleid dat u hebt gemaakt vanaf de Azure-console krijgt voorrang en kopiëren is toegestaan.
 > -   De status en rapporten in de Intune-beheerconsole geven in dat geval echter ten onrechte aan dat kopiëren is geblokkeerd.
@@ -116,8 +124,8 @@ Het beleid is alleen van invloed op gebruikers aan wie [!INCLUDE[wit_nextref](..
 > Als u Intune met Configuration Manager gebruik om uw iOS- en Android-apparaten te beheren, wordt het beleid alleen direct op gebruikers in de geselecteerde groep toegepast. Leden van de onderliggende groepen binnen de geselecteerde groep worden niet door het beleid beïnvloed.
 
 Eindgebruikers kunnen de apps downloaden in de App Store of via Google Play. Zie voor meer informatie:
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Bestaande beleidsregels wijzigen
 U kunt een bestaand beleid bewerken en toepassen op de beoogde gebruikers. Wanneer u echter bestaand beleid wijzigt, worden de wijzigingen pas na 8 uur zichtbaar voor gebruikers die al bij de apps zijn aangemeld.
@@ -171,11 +179,11 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 [Compatibiliteit- en gebruikersstatus controleren](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Zie tevens
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

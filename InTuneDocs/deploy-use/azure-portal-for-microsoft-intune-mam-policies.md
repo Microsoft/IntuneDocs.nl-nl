@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Azure-portal voor Microsoft Intune MAM-beleid
+# <a name="azure-portal-for-intune-app-protection-policies"></a>Azure-portal voor beveiligingsbeleid voor apps in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="use-the-azure-portal"></a>De Azure-portal gebruiken
-In de Azure-portal kunt u beleid voor het beheer van mobiele apps (MAM) maken en beheren.
+Azure Portal wordt gebruikt om beveiligingsbeleid voor apps te maken en te beheren voor:
 
-De Azure-portal biedt ondersteuning voor het maken van MAM-beleid voor:
 - Apps die worden uitgevoerd op apparaten die zijn **geregistreerd bij en worden beheerd in Intune**.
 
 - Apps die worden uitgevoerd op apparaten die **niet zijn ingeschreven** bij een MDM-oplossing.
 - Apps die worden uitgevoerd op apparaten die zijn **geregistreerd bij een MDM-oplossing van derden**.
 
 >[!IMPORTANT]
+> Azure Portal is de nieuwe beheerconsole voor het maken van beveiligingsbeleid voor apps, maar u kunt ook beveiligingsbeleid voor apps maken dat ondersteuning biedt voor apps voor apparaten die zijn ingeschreven bij Intune. Dat doet u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) voor MDM-scenario's.
 
-
-> Als u de Intune-beheerconsole gebruikt om uw apparaten te beheren, kunt u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) MAM-beleid maken dat apps ondersteunt voor apparaten die zijn geregistreerd bij Intune.
-
-> Mogelijk ziet u niet alle MAM-beleidsinstellingen in de Intune-beheerconsole. De Azure-portal is de nieuwe beheerconsole voor het maken van MAM-beleid. Als u een MAM-beleid in zowel de Intune-beheerconsole als de Azure Portal maakt, wordt het beleid in de Azure Portal toegepast op de apps en geïmplementeerd op gebruikers.
+> Mogelijk ziet u niet alle instellingen van beveiligingsbeleid voor apps die beschikbaar zijn in de Intune-beheerconsole. Als u beveiligingsbeleid voor apps maakt in de Intune-beheerconsole én in Azure Portal, overschrijft het beleid uit Azure Portal het beleid uit de Intune-beheerconsole. In dit scenario wordt het beveiligingsbeleid voor apps uit Azure Portal toegepast op de apps en geïmplementeerd voor gebruikers.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Meld u aan bij de Azure-portal en pas uw startpagina aan
@@ -51,24 +48,25 @@ De Azure-portal biedt ondersteuning voor het maken van MAM-beleid voor:
 
     ![Schermopname van het dashboard van de Azure-portal](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Ga in het menu **Bladeren** naar **Intune**.![Schermopname van het menu Bladeren waarin Intune is gemarkeerd](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
-4.  Kies **Intune** > **Intune Mobile Application Management** > **Instellingen**.
+    ![Schermopname van het menu Bladeren waarin Intune is gemarkeerd](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-    ![Schermafbeelding van het tabblad Intune Mobile Application Management](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+4.  Kies **Intune App Protection** > **Intune mobiel applicatiebeheer** > **Alle instellingen**.
 
-    > [!TIP]
+    ![Schermafbeelding van het tabblad Intune Mobile Application Management](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > Als u een tabblad op de **Start** -pagina wilt vastzetten, gebruikt u de optie **Vastzetten** op het tabblad. Klik op het punaisepictogram op het tabblad **Intune Mobile Application Management** om het tabblad op de **Start**-pagina vast te zetten.
+5. (Optioneel): als u een tabblad op de pagina **Start** wilt vastzetten, gebruikt u de optie **Vastzetten** op de blade. Klik op het punaisepictogram op het tabblad **Intune Mobile Application Management** om het tabblad op de **Start**-pagina vast te zetten.
 
     ![Schermopname van het tabblad Intune Mobile Application Management waarop het pictogram Vastmaken is gemarkeerd](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Schermopname van het dashboard met de vastgemaakte Intune-tegel](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>Volgende stappen
-[Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Aan de slag met configureren van beveiligingsbeleid voor apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

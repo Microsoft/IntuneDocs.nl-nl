@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
@@ -63,7 +64,7 @@ Voordat u begint met het gebruik van de software-uitgever, moet u de volledige v
 ## <a name="cloud-storage-space"></a>Cloudopslag
 Alle apps die u maakt met het installatietype van het software-installatieprogramma (bijvoorbeeld een Line-Of-Business-app), worden verpakt en geüpload naar Microsoft Intune-cloudopslag. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. Uw volledige abonnement omvat 20 GB aan opslagruimte.
 
-In het knooppunt **Opslaggebruik** van de werkruimte **Beheer** kunt u zien hoeveel ruimte u gebruikt.
+In het knooppunt **Opslaggebruik** van de werkruimte **Beheer** kunt u zien hoeveel ruimte u gebruikt. U kunt extra opslagruimte kopen voor Intune met uw oorspronkelijke aankoop-methode.  Als u hebt betaald via een factuur of met een creditcard, gaat u naar de [Beheerportal abonnementen](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Neem anders contact op met uw partner of verkoopassistent.
 
 De vereisten voor cloudopslag zijn als volgt:
 
@@ -96,6 +97,6 @@ U moet apps aan de Intune-console toevoegen voordat u ze kunt implementeren. U k
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

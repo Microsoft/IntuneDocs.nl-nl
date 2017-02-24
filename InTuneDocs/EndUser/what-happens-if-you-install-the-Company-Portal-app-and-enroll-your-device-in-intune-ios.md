@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS-apparaat bij In
 -   Het e-mailaccount van uw bedrijf automatisch instellen.
 
 Wanneer u het apparaat inschrijft bij Intune, geeft u de IT-beheerder toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.
-
-**Wat de IT-afdeling niet kan zien**
-
--   Oproep- en webgeschiedenis
-
--    Locatie
-
--   E-mail- en sms-berichten
-
--   Contactpersonen
-
--    Wachtwoorden
-
--   Kalender
-
--   Camera-album
-
-**Wat de IT-afdeling kan zien**
-
--   Model
-
--   Serienummer
-
--   Besturingssysteem
-
--   App-namen
-
--   Eigenaar
-
--   Apparaatnaam
 
 Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelingen uitvoeren:
 
@@ -99,6 +69,6 @@ Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

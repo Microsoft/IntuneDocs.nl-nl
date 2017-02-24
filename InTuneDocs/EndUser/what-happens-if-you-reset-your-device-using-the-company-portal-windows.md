@@ -18,8 +18,8 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
-Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-your-device-cpwebsite.md) gebruikt om uw Windows-apparaat opnieuw in te stellen, wordt uw apparaat opnieuw ingesteld op de fabrieksinstellingen en worden alle apps, instellingen en gegevens, inclusief uw persoonlijke gegevens, verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van het type apparaat dat u hebt en hoe u het apparaat gebruikt, zoals beschreven in de volgende tabel. Zie [Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-windows.md) voor instructies hoe u een verloren of gestolen apparaat opnieuw instelt.
+Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-erase-your-device-cpwebsite.md) gebruikt om uw Windows-apparaat opnieuw in te stellen, wordt uw apparaat opnieuw ingesteld op de fabrieksinstellingen en worden alle apps, instellingen en gegevens, inclusief uw persoonlijke gegevens, verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van het type apparaat dat u hebt en hoe u het apparaat gebruikt, zoals beschreven in de volgende tabel. Zie [Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md) voor instructies hoe u een verloren of gestolen apparaat opnieuw instelt.
 
 |Apparaatconfiguratie en -beheer|Apparaattype|
 |---------------------------------------|---------------|
@@ -39,6 +39,6 @@ Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactg
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

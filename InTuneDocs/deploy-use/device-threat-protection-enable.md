@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ Kies op de pagina **Beheer** in de [Microsoft Intune-beheerconsole](https://mana
 >[!IMPORTANT]
 > U **moet** de Lookout for Work-app configureren voordat u nalevingsbeleid maakt en voorwaardelijke toegang configureert. Dit zorgt ervoor dat de app beschikbaar is voor eindgebruikers en moet worden geïnstalleerd voordat ze toegang kunnen krijgen tot e-mail of andere bedrijfsbronnen.
 
-Hiermee is de integratie van Lookout en Intune in de Intune-beheerconsole voltooid.  De volgende stappen omvatten de implementatie van de [Lookout for Work-apps](configure-and-deploy-lookout-for-work-apps.md) en het instellen van het [nalevingsbeleid](enable-device-threat-protection-rule-in-compliance-policy.md).
+Hiermee is de integratie van Lookout en Intune in de Intune-beheerconsole voltooid.  De volgende stappen omvatten de implementatie van de [Lookout for Work-apps](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) en het instellen van het [nalevingsbeleid](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy).
 
 
 ## <a name="next-steps"></a>Volgende stappen
-[Lookout for Work-app configureren ](configure-and-deploy-lookout-for-work-apps.md)
+[Lookout for Work-app configureren ](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

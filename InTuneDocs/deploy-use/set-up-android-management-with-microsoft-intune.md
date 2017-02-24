@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 26ddc03985ab8a4959a1d2c9a47e77f042ab9310
-ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
 
 
 ---
@@ -25,6 +26,8 @@ ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparaten, inclusief Samsung Knox Standard-apparaten, inschakelen. Gebruikers kunnen hun apparaten vervolgens registreren met de bedrijfsportal-app die beschikbaar is via Google Play.
+
+Standaard kunnen Android-apparaten worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](http://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van Android-apparaten wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel vervolgens het selectievakje **Android-apparaten toestaan** uit.
 
 1.  **Intune instellen**<br>
     Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](prerequisites-for-enrollment.md#step-2-set-mdm-authority) op **Microsoft Intune** en MDM in te stellen.
@@ -37,7 +40,7 @@ Als Intune-beheerder kunt u via de bedrijfsportal het beheer van Android-apparat
     Zie [Uw Android-apparaat inschrijven bij Intune](../enduser/enroll-your-device-in-intune-android.md) voor instructies voor inschrijving van eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
 
     Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
-  - [Bronnen over de eindgebruikerservaring in Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Bronnen over de eindgebruikerservaring in Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
   - [Richtlijnen voor eindgebruikers van Android-apparaten](../enduser/using-your-android-device-with-intune.md)
 
 Vanwege de afwezigheid van Google Play Store in China kunnen Android-apparaten de bedrijfsportal alleen verkrijgen via Chinese app-marktplaatsen. De bedrijfsportal-app voor Android kan nu worden gedownload via de volgende stores:
@@ -62,6 +65,6 @@ De bedrijfsportal-app voor Android maakt gebruik van Google Play Services om te 
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
