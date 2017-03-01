@@ -206,6 +206,7 @@
 
 # [Problemen oplossen](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Ondersteuning krijgen](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Intune controleren met behulp van rapporten](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Problemen met Endpoint Protection oplossen](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Problemen bij toegang tot bedrijfsbronnen oplossen](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Problemen met app-implementatie oplossen](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
