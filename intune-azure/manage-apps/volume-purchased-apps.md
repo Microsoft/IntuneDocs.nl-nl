@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d85fa974865af56cad9d3df42f562b9f0c3981d3
-ms.openlocfilehash: 6e538b1da0bebcbcea6845d05227a45dc3c33181
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 774d5970af9389ed0ef99c0bbb494c5a1b6d051d
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="manage-volume-purchased-apps"></a>Apps beheren die zijn gekocht via het volume-aankoopprogramma
+# <a name="manage-volume-purchased-apps-with-micrsoft-intune"></a>Met Microsoft Intune apps beheren die zijn gekocht via het volume-aankoopprogramma
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -33,9 +34,4 @@ Met Intune kunt u apps beheren die u via een volume-aankoop hebt aangeschaft in 
 
 [iOS-apps beheren die via het volume-aankoopprogramma zijn gekocht](ios-vpp-apps.md)
 [Apps beheren die via het volume-aankoopprogramma in de Windows Store voor Bedrijven zijn gekocht](wsfb-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

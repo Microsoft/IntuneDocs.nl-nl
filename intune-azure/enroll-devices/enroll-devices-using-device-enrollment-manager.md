@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 1ab58388f3d126d5d831c65ad3342ec87fb77b91
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -66,7 +67,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 ## <a name="add-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager toevoegen
 
-1.  Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**.
+1.  Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2.  Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
 
@@ -88,18 +89,17 @@ Het verwijderen van een apparaatinschrijvingsmanager is niet van invloed op inge
 
 **Een apparaatinschrijvingsmanager verwijderen**
 
-1. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Verwijderen**.
+2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
+
+3. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Verwijderen**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>De eigenschappen van een apparaatinschrijvingsmanager weergeven
 
-1. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Eigenschappen**.
+2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Eigenschappen**.
 

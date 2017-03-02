@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: edf359b326626155a2e6acd01f72321c4cd0fe9c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-android-devices-in-intune-azure-preview"></a>VPN-instellingen voor Android-apparaten in Intune Azure Preview
+# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>VPN-instellingen voor Android-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,9 +42,4 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 
 - **Vingerafdruk** (alleen voor Check Point Capsule VPN): geef een tekenreeks op (bijvoorbeeld 'Contoso-vingerafdrukcode') die wordt gebruikt om te controleren of de VPN-server kan worden vertrouwd. Een vingerafdruk kan worden verzonden naar de client zodat deze alle servers vertrouwt die dezelfde vingerafdruk presenteren wanneer er verbinding wordt gemaakt. Als het apparaat nog niet over de vingerafdruk beschikt, wordt de gebruiker gevraagd om de VPN-server waarmee deze verbinding maakt, te vertrouwen terwijl de vingerafdruk wordt weergegeven (de gebruiker controleert de vingerafdruk handmatig en kiest Vertrouwen om verbinding te maken).
 - **Sleutel- en waardeparen voor de kenmerken van de Citrix VPN invoeren** (alleen voor Citrix): voer sleutel- en waardeparen in, afkomstig van Citrix, om de eigenschappen van de VPN-verbinding te configureren.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

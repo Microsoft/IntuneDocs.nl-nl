@@ -1,11 +1,11 @@
 ---
 title: Wat is er nieuw in Microsoft Intune Preview | Intune Azure Preview | Microsoft Docs
-description: 'Intune Azure Preview: ontdekken wat er nieuw is in Intune Azure Preview'
+description: Ontdekken wat er nieuw is in Intune Azure Preview
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,40 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e405363f9d0a89b1589b01d18ee8d2861b07ec60
-ms.openlocfilehash: 70007f5501fba37964a0a54807c0e0f565510a74
-
+ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
+ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
+ms.lasthandoff: 02/15/2017
 
 ---
 
 # <a name="whats-new-in-the-microsoft-intune-preview"></a>Wat is er nieuw in Microsoft Intune Preview
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
 
 Als de openbare preview-versie verder wordt ontwikkeld en er meer functies worden toegevoegd, wordt u hier op de hoogte gebracht.
 
-<!--## February 2017-->
+## <a name="february-2017"></a>Februari 2017
 
-<!--### Custom app categories <!--748805
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>Mogelijkheid om de inschrijving van mobiele apparaten te beperken <!--747600, 795782-->
+Er zijn in Intune nieuwe inschrijvingsbeperkingen toegevoegd die bepalen welke platforms voor mobiele apparaten kunnen worden ingeschreven. Intune onderscheidt platforms voor mobiele apparaten als iOS, Mac OS, Android, Windows en Windows Mobile.
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+* Een beperking voor de registratie van mobiele apparaten, betekent niet dat de PC-clientregistratie ook is beperkt.  
+* Alleen voor iOS en Android geldt er een extra optie voor het blokkeren van de inschrijving van apparaten die in persoonlijk eigendom zijn.
+
+Intune markeert alle nieuwe apparaten als persoonlijk, tenzij de IT-beheerder actie onderneemt om deze te markeren als bedrijfseigen, zoals uitgelegd in [dit artikel](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+### <a name="view-all-actions-on-managed-devices---677150--"></a>Alle acties voor beheerde apparaten weergeven <!--677150-->
+Er is een nieuw rapport __Apparaatacties__, waarin wordt weergegeven wie externe acties, zoals het herstellen van fabrieksinstellingen, op apparaten heeft uitgevoerd. In dit rapport wordt ook de status van de actie getoond. Zie [Wat is apparaatbeheer?](https://docs.microsoft.com/intune-azure/manage-devices/what-is).
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Niet-beheerde apparaten hebben toegang tot toegewezen apps <!--664691-->
+Als onderdeel van de ontwerpwijzigingen op de bedrijfsportalwebsite kunnen iOS- en Android-gebruikers op hun niet-beheerde apparaten apps installeren die aan hen zijn toegewezen als 'beschikbaar zonder inschrijving'. Gebruikers kunnen zich met behulp van hun Intune-referenties aanmelden bij de bedrijfsportalwebsite en de lijst met aan hen toegewezen apps bekijken. De app-pakketten van de 'beschikbaar zonder inschrijving'-apps kunnen worden gedownload via de bedrijfsportalwebsite. Deze wijziging is niet van toepassing op apps die pas na inschrijving kunnen worden geïnstalleerd, omdat gebruikers wordt gevraagd hun apparaat in te schrijven als zij deze apps willen installeren.
+
+### <a name="custom-app-categories---748805--"></a>Aangepaste app-categorieën <!--748805-->
+U kunt nu categorieën maken, bewerken en toewijzen voor apps die u aan Intune toevoegt. Categorieën kunnen momenteel alleen worden opgegeven in het Engels.
+Zie [Een app toevoegen aan Intune](/intune-azure/manage-apps/add-apps).
+
+### <a name="display-device-categories---814654--"></a>Apparaatcategorieën weergeven <!--814654-->
+U kunt nu de apparaatcategorie als kolom in de lijst met apparaten weergeven. U kunt ook de categorie uit de sectie met eigenschappen van de apparaateigenschappenblade bewerken. Zie [Een app toevoegen aan Intune](/intune-azure/manage-apps/add-apps). 
 
 ## <a name="january-2017"></a>Januari 2017
 
@@ -83,9 +95,4 @@ U kunt in Azure Portal geen standaardprofielbeleid voor alle Apple-apparaten ins
 
 #### <a name="how-to-get-ready-for-this-change"></a>Hoe bereidt u zich voor op deze wijziging
 Deze informatie wordt nu al verstrekt, zodat u uw ondersteuningsbeheerders van deze wijziging op de hoogte kunt brengen, als dit voor u van toepassing is. Deze wijziging valt samen met de overgang naar Azure Portal (naar verwachting in de eerste helft van 2017).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

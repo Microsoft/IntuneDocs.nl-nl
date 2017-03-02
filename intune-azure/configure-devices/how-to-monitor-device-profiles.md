@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: e36ecf949bf9a604c29de2f21a3761125eb60f7f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: e48ef79726c542da210e167707c4ca044a7cdd51
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-monitor-device-profiles-with-intune-azure-preview"></a>Apparaatprofielen controleren met Intune Azure Preview
+# <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -34,9 +35,4 @@ U kunt de voortgang van de toewijzing van Intune--apparaatprofielen op twee mani
 2. Kies het profiel dat u wilt beheren op de blade met de profielenlijst en ga vervolgens op een van de volgende manieren te werk:
     - Kies **Overzicht** op de blade <*profielnaam*> **Rapporten** om algemene informatie over het profiel en de bijbehorende toewijzingen te bekijken.
     - Kies **Rapporten** op de blade <*profielnaam*> **Rapporten** om gedetailleerdere informatie over het profiel en de bijbehorende toewijzingen te bekijken.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c0884ded1c8c55bb1b7968e483864b42f5bd6bde
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a6ac1074055892f5ec42fb4057e47e9349fb5a33
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -27,8 +28,7 @@ ms.openlocfilehash: c0884ded1c8c55bb1b7968e483864b42f5bd6bde
 Intune maakt beheer van mobiele apparaten (MDM) mogelijk voor iPads, iPhones, en Mac OS X-apparaten en geeft gebruikers toegang tot zakelijke e-mail en apps. Een APNs-certificaat (Apple Push Notification-service) is vereist zodat Intune iOS- en Mac-apparaten kan beheren. Nadat u het certificaat aan Intune hebt toegevoegd, kunnen uw gebruikers de bedrijfsportal-app installeren om hun apparaten in te schrijven, of kunt u beheer voor iOS-apparaten in bedrijfseigendom instellen.
 
 **Ga als volgt te werk om een MDM-pushcertificaat op te halen:**<br>
-
-Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**. Kies op de blade Intune **Apparaten inschrijven** > **Apple MDM-pushcertificaat** en volg de genummerde stappen in Azure Portal. Deze stappen worden hieronder weergegeven.
+Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune **Apparaten inschrijven** > **Apple MDM-pushcertificaat** en volg de genummerde stappen in Azure Portal. Deze stappen worden hieronder weergegeven.
 
 **Stap 1. De aanvraag voor Intune-certificaatondertekening downloaden die is vereist voor het maken van een Apple MDM-pushcertificaat.**<br>
 Selecteer **Uw CSR downloaden** om het CSR-bestand te downloaden en lokaal op te slaan. Het CSR-bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
@@ -41,9 +41,4 @@ Opmerking
 
 **Stap 4. Bladeren naar het Apple MDM-pushcertificaat om dit te uploaden.**<br>
 Ga naar het certificaatbestand (.pem), kies **Openen** en kies vervolgens **Uploaden**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

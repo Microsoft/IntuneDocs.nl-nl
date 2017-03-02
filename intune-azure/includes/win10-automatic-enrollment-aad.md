@@ -19,11 +19,11 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 
 4. Selecteer **Configureren** om de automatische MDM-registratie met Microsoft Intune te configureren.
 
-5. Geef de URL's voor Intune op:
+5. Gebruik de standaardwaarden voor de volgende URL’s:
 
-  - **URL voor MDM-registratie**: gebruik de standaardwaarde.
-  - **URL naar gebruiksrechtovereenkomst voor MDM**: gebruik de standaardwaarde. Met deze URL worden de gebruiksvoorwaarden weergegeven wanneer gebruikers apparaten registreren.
-  - **URL naar naleving voor MDM**: gebruik de standaardwaarde. Als een apparaat niet-compatibel is, wordt het bericht **Toegang geweigerd** weergegeven met deze URL. De URL verwijst naar een pagina waarop gebruikers kunnen lezen waarom hun apparaat niet compatibel is met het beleid en hoe ze dat kunnen verhelpen.
+  - **MDM-inschrijving**
+  - **MDM-gebruiksvoorwaarden** 
+  - **MDM-naleving**
 
 6.  Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
 
@@ -32,8 +32,3 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
   - **Geen**
 
 7. Kies **Opslaan**.
-
-
-<!--HONumber=Feb17_HO2-->
-
-

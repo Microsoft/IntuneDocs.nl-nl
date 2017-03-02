@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: e8d8a7b7a7c752269e36e0e40f136f6fb002a19f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ba745c2cefb159619b105d5b623849ba2766e8c8
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-windows-phone-81-devices-in-intune-azure-preview"></a>E-mailprofielinstellingen voor Windows Phone 8.1-apparaten in Intune Azure Preview
+# <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>E-mailprofielinstellingen voor Windows Phone 8.1-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,7 +42,7 @@ ms.openlocfilehash: e8d8a7b7a7c752269e36e0e40f136f6fb002a19f
 ## <a name="synchronization-settings"></a>Synchronisatie-instellingen
 
 - **Aantal dagen e-mail voor synchronisatie**: kies het aantal dagen waarvoor u e-mail wilt synchroniseren of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
-- **Synchronisatieschema:** selecteer het schema dat voor apparaten wordt gebruikt om gegevens van de Exchange-server te synchroniseren. U kunt ook **Wanneer berichten binnenkomen** selecteren als u wilt dat de berichten meteen worden gesynchroniseerd wanneer ze binnenkomen of **Handmatig** selecteren als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.
+- **Synchronisatieschema**: selecteer het schema dat voor apparaten wordt gebruikt om gegevens van de Exchange-server te synchroniseren. U kunt ook **Wanneer berichten binnenkomen** selecteren als u wilt dat de berichten meteen worden gesynchroniseerd wanneer ze binnenkomen of **Handmatig** selecteren als u wilt dat de gebruiker van het apparaat de synchronisatie zelf uitvoert.
 
 ## <a name="content-sync-settings"></a>Instellingen voor inhoudssynchronisatie
 
@@ -49,9 +50,4 @@ ms.openlocfilehash: e8d8a7b7a7c752269e36e0e40f136f6fb002a19f
     - **Contactpersonen**
     - **Kalender**
     - **Taken**
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

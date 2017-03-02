@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
-ms.openlocfilehash: 2acb58a8fc71ae7f2e0bce127e709a678faa27cb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: b213fcaae8f17af412687d01df6ea27b39b3edb9
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business"></a>Apps beheren die u hebt aangeschaft in Windows Store voor Bedrijven
+# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in de Windows Store voor Bedrijven, beheren met Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -78,9 +79,4 @@ Wanneer u een Windows Store voor Bedrijven-app toewijst, heeft elke gebruiker di
 
 > [!Important]
 > Geïmplementeerde apps zijn alleen beschikbaar voor de gebruiker die het apparaat oorspronkelijk heeft geregistreerd. Andere gebruikers kunnen de app niet gebruiken.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

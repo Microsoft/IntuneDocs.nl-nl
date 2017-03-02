@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/17
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,18 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
+ms.sourcegitcommit: 37c56d0c219c61c345874b24e8ba9ac640f1ef76
+ms.openlocfilehash: 4c2ebe535935518127a799ae0518c43a2e53de72
+ms.lasthandoff: 02/17/2017
 
 
 ---
 
-# <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator-serienummers toevoegen 
+# <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator-serienummers toevoegen
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Volg deze stappen om serienummers toe te voegen aan Intune als u [door het bedrijf beheerde iOS-apparaten met Apple Configurator wilt inschrijven met de configuratieassistent] ((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). U kunt serienummers één voor één toevoegen of een bestand met door komma's gescheiden waarden (csv) met serienummers uploaden. Nadat u serienummers hebt toegevoegd, kunt u hieraan een profiel toewijzen. Het profiel bevat specifieke beheerinstellingen die u op apparaten wilt toepassen. 
+Volg deze stappen om serienummers toe te voegen aan Intune als u [door het bedrijf beheerde iOS-apparaten met Apple Configurator wilt inschrijven met de configuratieassistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). U kunt serienummers één voor één toevoegen of een bestand met door komma's gescheiden waarden (csv) met serienummers uploaden. Nadat u serienummers hebt toegevoegd, kunt u hieraan een profiel toewijzen. Het profiel bevat specifieke beheerinstellingen die u op apparaten wilt toepassen.
 
 Andere methoden voor het registreren van iOS-apparaten worden beschreven in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md) (Kiezen hoe iOS-apparaten worden geregistreerd in Intune).
 
@@ -35,7 +36,7 @@ Andere methoden voor het registreren van iOS-apparaten worden beschreven in [Cho
     F7TLWCLBX196, apparaatdetails</br>
    DLXQPCWVGHMJ, apparaatdetails
 
-2. Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**.
+2. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 3.  Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
 
@@ -51,11 +52,13 @@ Andere methoden voor het registreren van iOS-apparaten worden beschreven in [Cho
 
 Met Intune kunt u profielen toewijzen vanaf twee verschillende plaatsen in Azure Portal. U kunt de onderstaande stappen gebruiken of u kunt profielen toewijzen vanaf de blade Apple Configurator-inschrijvingsprofielen waar u het profiel maakt (zie [iOS-apparaten inschrijven met Apple Configurator met behulp van Configuratieassistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)). Aan de hand van de onderstaande stappen kunt u het profiel alleen toewijzen als u het profiel al hebt gemaakt.
 
-1. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2. Selecteer op de blade **Apple Configurator-serienummers** de seriële nummers waaraan u een profiel wilt toewijzen en selecteer vervolgens **Profiel toewijzen**.
+2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
 
-3. Selecteer op de blade **Profiel toewijzen** het profiel dat u wilt toewijzen en selecteer vervolgens **Toewijzen**.
+3. Selecteer op de blade **Apple Configurator-serienummers** de seriële nummers waaraan u een profiel wilt toewijzen en selecteer vervolgens **Profiel toewijzen**.
+
+4. Selecteer op de blade **Profiel toewijzen** het profiel dat u wilt toewijzen en selecteer vervolgens **Toewijzen**.
 
 ## <a name="delete-serial-numbers"></a>Serienummers verwijderen
 U kunt serienummers verwijderen die u eerder hebt geïmporteerd. U kunt serienummers alleen verwijderen als het apparaat eerst wordt uitgeschreven. Als u een serienummer verwijdert, kunt u Apple Configurator niet gebruiken via Configuratieassistent tenzij u het serienummer opnieuw toevoegt.
@@ -70,9 +73,4 @@ De serienummers van een apparaat kunnen een van de volgende twee statussen hebbe
 **De status van een serienummer weergeven**
 
 Selecteer op de blade **Apple Configurator-serienummers** het serienummer waarvan u de status wilt bekijken en kijk onder het item **Status**.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

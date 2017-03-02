@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,37 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: b46d445ce1da103308559939a5bfd8e5e38d46d3
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-an-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key-in-intune-azure-preview"></a>Gebruik een aangepast Intune-apparaatprofiel om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken in Intune Azure Preview
+# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast Microsoft Intune-apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Hieronder wordt beschreven hoe u de **aangepaste apparaatprofielen** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
--   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
+-    Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
 - Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
--   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
+-    U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
 -  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
 
 
-1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een apparaatprofiel **Aangepast** voor dat apparaatplatform en maakt u geen Wi-Fi-profiel.
+1.    Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een apparaatprofiel **Aangepast** voor dat apparaatplatform en maakt u geen Wi-Fi-profiel.
 
-2.  Geef een naam en beschrijving op.
-3.  Een nieuwe OMA-URI-instelling toevoegen:
+2.    Geef een naam en beschrijving op.
+3.    Een nieuwe OMA-URI-instelling toevoegen:
 
-   a.   Voer een naam in voor deze Wi-Fi-netwerkinstelling.
+   a.    Voer een naam in voor deze Wi-Fi-netwerkinstelling.
 
-   b.   Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
+   b.    Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
 
-   c.   **Gegevenstype**: ingesteld op **Tekenreeks**.
+   c.    **Gegevenstype**: ingesteld op **Tekenreeks**.
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -204,9 +205,4 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
     Het is raadzaam een computer te gebruiken die niet met veel draadloze netwerken verbinding heeft gemaakt, omdat u alle profielen moet doorzoeken om het juiste te vinden.
 3.     Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 4.     Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld Gegevens van de pagina OMA-URI-instellingen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

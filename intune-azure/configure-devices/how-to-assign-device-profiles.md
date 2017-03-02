@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: dcd7ea8d11d3dedb3ae98f5cd678393107f14d3f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 0bc43e59c63fb07b07187bd9b8ae78fbc3aa0557
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-assign-intune-device-profiles"></a>Intune-apparaatprofielen toewijzen
+# <a name="how-to-assign-microsoft-intune-device-profiles"></a>Microsoft Intune-apparaatprofielen toewijzen
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -35,9 +36,4 @@ ms.openlocfilehash: dcd7ea8d11d3dedb3ae98f5cd678393107f14d3f
 
 ### <a name="next-steps"></a>Volgende stappen
 Zie [Apparaatprofielen controleren](how-to-monitor-device-profiles.md) voor informatie over het controleren van apparaatprofieltoewijzingen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

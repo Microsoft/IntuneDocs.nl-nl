@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: 132ce1c8e6ad69c5d8998f233c114f912cb4bf8b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 2600c8363c677465e29af382fa5ef4a921048fef
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-intune-azure-preview"></a>Wi-Fi-instellingen voor apparaten met Windows 8.1 en hoger in Intune Azure Preview importeren
+# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor apparaten met Windows 8.1 en hoger in Microsoft Intune importeren
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -51,9 +52,4 @@ Gebruik in Windows het hulpprogramma **netsh wlan** om een bestaand Wi-Fi-profie
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

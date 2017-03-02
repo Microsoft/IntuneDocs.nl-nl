@@ -1,11 +1,12 @@
 ---
-title: Certificaten configureren met Intune | Intune Azure Preview | Microsoft Docs
+title: Certificaten configureren met Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over het gebruik van Intune om certificaten te maken en toe te wijzen die u helpen Wi-Fi-, VPN- en andere verbindingen te beveiligen.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Certificaten configureren met Intune Azure Preview
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Certificaten configureren in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi-
 
     U kunt alleen een SCEP-certificaatprofiel gebruiken voor de volgende platformen:
 
--   macOS 10.9 of hoger
--   Windows Phone 8.1 en hoger
+-     macOS 10.9 of hoger
+-     Windows Phone 8.1 en hoger
 
 U moet voor elk apparaatplatform een afzonderlijk profiel maken. Wanneer u het profiel maakt, koppelt u dit aan het vertrouwde basiscertificaatprofiel dat u al hebt gemaakt.
 
@@ -196,9 +199,4 @@ Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
 
 ## <a name="next-steps"></a>Volgende stappen
 Zie [Apparaatprofielen toewijzen](how-to-assign-device-profiles.md) voor algemene informatie over het toewijzen van apparaatprofielen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,21 +1,23 @@
 ---
-title: Inleiding op Intune in de preview-versie van Azure Portal | Intune Azure Preview | Microsoft Docs
+title: Inleiding tot Intune in de preview-versie van Azure Portal
+titleSuffix: Intune Azure preview
 description: 'Preview-versie van Intune Azure: een overzicht van de basisbeginselen van Intune in de preview-versie van Azure Portal en hoe u hiermee uw apparaten kunt beheren.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 01/08/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: f7f6dd79531d8d69eda3ed80bbb1cddf2692ab81
+ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
+ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: f7f6dd79531d8d69eda3ed80bbb1cddf2692ab81
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Microsoft Intune wordt verplaatst naar de Azure Portal. Dit betekent dat de werkstromen en functionaliteit waarmee u bekend bent, zullen veranderen.
-De nieuwe portal biedt u een preview-versie van de nieuwe en bijgewerkte functionaliteit in de Azure Portal waar u de mobiele apparaten, pc's en apps van uw bedrijf kunt beheren.
+De nieuwe portal biedt u een preview-versie van de nieuwe en bijgewerkte functionaliteit in Azure Portal waar u de mobiele apparaten, pc's en apps van uw bedrijf kunt beheren.
 Uiteindelijk wordt alle functionaliteit van Intune naar Azure verplaatst, maar momenteel kunt u al bepaalde Intune-taken in de Azure Portal uitvoeren. Omdat het nog om een preview-versie gaat, is bepaalde functionaliteit nog niet aanwezig in de portal. Zie de sectie [Wat is er nieuw in de preview-versie](#what's-new-in-the-preview) voor meer informatie.
 
 > [!IMPORTANT]
@@ -44,14 +46,14 @@ Belangrijke functies van de nieuwe omgeving zijn onder andere:
 - Een geïntegreerde console voor al uw Enterprise Mobility + Security-onderdelen (EMS)
 - Een console op basis van HTML die is gebouwd op webstandaarden
 - Ondersteuning van Microsoft Graph API om veel acties te automatiseren
-- Azure AD-groepen voor compatibiliteit voor al uw Azure-toepassingen
+- Azure Active Directory-groepen (AD) voor compatibiliteit voor al uw Azure-toepassingen
 - Ondersteuning voor de meeste moderne webbrowsers
 
 Zie [de Intune-documentatiebibliotheek](https://docs.microsoft.com/en-us/intune/) voor documentatie over de klassieke Intune-console.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
-U moet een Intune-beheerder- en tenant-account hebben voor het gebruik van Intune in de Azure Portal. U kunt zich [hier](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) aanmelden voor een account.
+U moet een Intune-beheerder- en tenant-account hebben voor het gebruik van Intune in de Azure Portal. [Meld u aan voor een account](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) als u er nog geen hebt.
 
 ## <a name="supported-web-browsers-for-the-azure-portal"></a>Ondersteunde webbrowsers voor de Azure Portal
 
@@ -64,7 +66,7 @@ Momenteel worden de volgende webbrowsers ondersteund:
 - Chrome (meest recente versie)
 - Firefox (meest recente versie)
 
-Zie [hier](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) voor de meest recente informatie over ondersteunde browsers.
+Controleer [Azure Portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) voor de meest recente informatie over ondersteunde browsers.
 
 ## <a name="whats-in-this-library"></a>Wat bevat deze bibliotheek?
 
@@ -76,35 +78,25 @@ De documentatie volgt de indeling van de Intune-portal, zodat u snel de gewenste
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### <a name="enroll-devices"></a>Apparaten inschrijven
-Uw apparaten laten beheren door Intune.
-[Meer informatie](/intune-azure/enroll-devices/what-is)
+[Uw apparaten laten beheren door Intune](/intune-azure/enroll-devices/what-is).
 ### <a name="devices--groups"></a>Apparaten en groepen
-Meer informatie over de apparaten die u met inventaris en rapporten beheert.
-[Meer informatie](/intune-azure/manage-devices/what-is)
+[Meer informatie over de apparaten die u met inventaris en rapporten beheert](/intune-azure/manage-devices/what-is).
 ### <a name="manage-users"></a>Gebruikers beheren
-Meer informatie over de gebruikers van apparaten die u beheert.
-[Meer informatie](/intune-azure/manage-users/what-is)
+[Meer informatie over de gebruikers van apparaten die u beheert](/intune-azure/manage-users/what-is).
 ### <a name="manage-apps"></a>Apps beheren
-Bevat informatie over het publiceren, beheren, configureren en beveiligen van apps.
-[Meer informatie](/intune-azure/manage-apps/what-is-app-management)
+[Apps publiceren, beheren, configureren en beveiligen](/intune-azure/manage-apps/what-is-app-management).
 ### <a name="configure-devices"></a>Apparaten configureren
-Informatie over de profielen die u kunt gebruiken om instellingen en functies te configureren op apparaten die u beheert.
-[Meer informatie](/intune-azure/configure-devices/what-are-device-profiles)
+[Begrijpen welke profielen u kunt gebruiken om instellingen en functies te configureren op apparaten die u beheert](/intune-azure/configure-devices/what-are-device-profiles).
 ### <a name="set-device-compliance"></a>Apparaatcompatibiliteit instellen
-Een nalevingsniveau voor uw apparaten definiëren en vervolgens rapporteren over apparaten die niet hieraan niet voldoen [Meer informatie](/intune-azure/set-device-compliance/what-is-device-compliance)
+[Een nalevingsniveau voor uw apparaten definiëren en vervolgens rapporteren over apparaten die niet hieraan voldoen](/intune-azure/set-device-compliance/what-is-device-compliance).
 ### <a name="conditional-access"></a>Voorwaardelijke toegang
-De toegang tot Exchange-services beperken op basis van voorwaarden die u hebt opgegeven.
-[Meer informatie](/intune-azure/conditional-access/what-is-conditional-access)
+[De toegang tot Exchange-services beperken op basis van voorwaarden die u hebt opgegeven](/intune-azure/conditional-access/what-is-conditional-access).
 ### <a name="access-control"></a>Toegangsbeheer
-Bepalen welke personen verschillende Intune-acties kunnen uitvoeren en op welke personen deze acties van toepassing zijn. U kunt de ingebouwde rollen gebruiken die voorzien in bepaalde algemene Intune-scenario's of u kunt uw eigen rollen maken.
-[Meer informatie](/intune-azure/access-control/role-based-access-control)
+[Bepalen welke personen verschillende Intune-acties kunnen uitvoeren en op welke personen deze acties van toepassing zijn](/intune-azure/access-control/role-based-access-control). U kunt de ingebouwde rollen gebruiken die voorzien in bepaalde algemene Intune-scenario's of u kunt uw eigen rollen maken.
+
 
 
 ## <a name="whats-new"></a>Wat is er nieuw?
 
 [Ontdek wat er nieuw is in de preview-versie](/intune-azure/introduction/whats-new).
-
-
-<!--HONumber=Feb17_HO1-->
-
 

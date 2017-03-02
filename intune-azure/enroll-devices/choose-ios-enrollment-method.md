@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ Gebruik de volgende informatie om te bepalen welke methode u wilt gebruiken voor
 
 ## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
-Als gebruikers hun eigen BYOD-apparaten (Bring Your Own Device) willen registreren, is de enig mogelijke registratiemethode de bedrijfsportal-app voor iOS uit de App Store te downloaden en de registratie-instructies in de app te volgen. Na de registratie kunnen gebruikers verbinding maken met het bedrijfsnetwerk, deelnemen aan het domein of Azure Active Directory en toegang tot bedrijfsresources krijgen.
+Als gebruikers hun eigen BYOD-apparaten (Bring Your Own Device) willen registreren, is de enig mogelijke registratiemethode de bedrijfsportal-app voor iOS uit de App Store te downloaden en de registratie-instructies in de app te volgen. Na de registratie kunnen gebruikers verbinding maken met het bedrijfsnetwerk, deelnemen aan het domein of Azure Active Directory en toegang tot bedrijfsresources krijgen. U kunt de inschrijving blokkeren van iOS-apparaten die het eigendom van de gebruiker zijn. Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) voor instructies.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ DEP implementeert een draadloos inschrijvingsprofiel voor apparaten die zijn gek
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>DEM (apparaatinschrijvingsmanager) gebruiken
 De apparaatinschrijvingsmanager is een type gebruikersaccount waarmee maximaal 1000 apparaten kunnen worden geregistreerd en beheerd. U voegt bestaande gebruikers toe aan het DEM-account om ze deze mogelijkheden te bieden. Bij elk apparaat dat door de DEM-gebruiker wordt geregistreerd, wordt één Intune-licentie gebruikt. Zie [Enroll devices using device enrollment manager](enroll-devices-using-device-enrollment-manager.md) (Apparaten registreren met de apparaatinschrijvingsmanager) voor meer informatie.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

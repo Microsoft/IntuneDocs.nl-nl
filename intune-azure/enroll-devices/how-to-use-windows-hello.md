@@ -14,8 +14,9 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: a7249e96e737cc844e742a78d8a34899a428f52b
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 56e78f2c80c860c4cdf1c79bf94d7575d5cd9674
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -49,7 +50,7 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Een beleid voor Windows Hello voor Bedrijven maken
 
-1.  Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**.
+1.  Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2.  Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Beheren** > **Windows Hello voor Bedrijven**.
 
@@ -96,9 +97,4 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
 ## <a name="further-information"></a>Meer informatie
 Zie [de gids](https://technet.microsoft.com/library/mt589441.aspx) in de documentatie van Windows 10 voor meer informatie over Microsoft Passport.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

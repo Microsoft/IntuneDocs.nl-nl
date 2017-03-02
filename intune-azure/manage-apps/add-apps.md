@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 969ce8deae9142944f3481172277dc252baa5779
-ms.openlocfilehash: a7838f57b2eb8bd36a875f7b5b001b12eafcbf8d
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 472e65be196d1090e89b46271bb97a82b6fb1a9c
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-an-app"></a>Een app toevoegen 
+# <a name="how-to-add-an-app-to-microsoft-intune"></a>Een app toevoegen aan Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,6 +43,16 @@ De volgende platformen worden ondersteund. Klik op een van de onderwerpen voor m
 > [!NOTE]
 > Wanneer u een app vanuit een App Store toevoegt en implementeert, moeten eindgebruikers beschikken over een account bij die Store om de app te kunnen installeren.
 
+## <a name="cloud-storage-space"></a>Cloudopslag
+Alle apps die u maakt met het installatietype van het software-installatieprogramma (bijvoorbeeld een Line-Of-Business-app), worden verpakt en geüpload naar Microsoft Intune-cloudopslag. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. Uw volledige abonnement omvat 20 GB aan opslagruimte.
+
+U kunt extra opslagruimte kopen voor Intune met uw oorspronkelijke aankoopmethode.  Als u hebt betaald via een factuur of met een creditcard, gaat u naar de [Beheerportal abonnementen](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Neem anders contact op met uw partner of verkoopassistent.
+
+De vereisten voor cloudopslag zijn als volgt:
+
+-   Alle app-installatiebestanden moeten zich in dezelfde map bevinden.
+-   De maximale bestandsgrootte voor elk bestand dat u uploadt, is 2 GB.
+
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>Categorieën voor apps maken en bewerken 
 
 App-categorieën kunnen worden gebruikt om apps te sorteren, zodat eindgebruikers deze sneller kunnen vinden in de bedrijfsportal. U kunt een of meer categorieën toewijzen aan een app, bijvoorbeeld **Ontwikkelaars-apps** of **Communicatie-apps**. Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan de hand van de platformenpecifieke onderwerpen kunt u een app toevoegen en categorieën toewijzen. Als u uw eigen categorieën wilt maken en bewerken, gebruikt u de volgende procedure: 
@@ -52,13 +63,8 @@ App-categorieën kunnen worden gebruikt om apps te sorteren, zodat eindgebruiker
 4. Kies **Instellen** > **App-categorieën** in de workload **Mobiele apps**. 
 5. Op de blade **App-categorieën** wordt een lijst met de huidige categorieën weergegeven. Kies een van de volgende acties: 
     - **Een categorie maken**: voer op de blade **Categorie maken** een naam voor de nieuwe categorie in. Namen kunnen slechts in één taal worden ingevoerd en worden niet door Intune vertaald. Wanneer u klaar bent, klikt u op **Maken**.
-    - **Een categorie bewerken**: kies voor elke categorie in de lijst '**... **'. Geef op de blade **Eigenschappen** een nieuwe naam voor de categorie op of verwijder de categorie. --->
+    - **Een categorie bewerken**: kies voor elke categorie in de lijst '**... **'. Geef op de blade **Eigenschappen** een nieuwe naam voor de categorie op of verwijder de categorie.
 
 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

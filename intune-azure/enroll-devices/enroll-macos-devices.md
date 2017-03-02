@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Als Intune-beheerder kunt u macOS-apparaten beheren. Standaard kunnen gebruikers hun macOS-apparaten inschrijven met behulp van Azure Portal. U hoeft uw gebruikers alleen maar te vertellen dat ze naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) moeten gaan en hun macOS-apparaat moeten inschrijven. 
+Met Intune kunt u macOS-apparaten beheren. Als u apparaatbeheer wilt inschakelen, moeten uw gebruikers hun apparaat inschrijven door naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan en de prompts te volgen. Zodra macOS-apparaten worden beheerd, kunt u [aangepaste instellingen voor macOS-apparaten maken](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Binnenkort zijn er nog meer mogelijkheden beschikbaar.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -39,20 +40,17 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 
 ## <a name="set-up-macos-enrollment"></a>macOS-inschrijving instellen
 
-Standaard is Intune al ingesteld om registratie van macOS-apparaten toe te staan. 
+Standaard staat Intune toe dat macOS-apparaten kunnen worden ingeschreven. 
 
-Als u de instelling voor het toestaan of blokkeren van macOS-apparaten voor registratie wilt bekijken, gaat u naar de blade Intune in Azure Portal en kiest u **Inschrijving** > **Inschrijvingsbeperkingen**. 
+Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) als u de inschrijving van macOS-apparaten wilt blokkeren. 
+
+Zie [Apparaatlimietbeperkingen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) als u het maximumaantal apparaten wilt instellen dat een gebruiker kan inschrijven.
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Uw gebruikers vertellen hoe ze hun apparaten moeten inschrijven om toegang te krijgen tot bedrijfsresources
 
-Zie [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
+U moet uw gebruikers vertellen dat ze naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) moeten gaan en de prompts moeten volgen om hun apparaat in te schrijven. U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). 
 
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 
 - [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Uw iOS- of Mac OS-apparaat gebruiken met Intune](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

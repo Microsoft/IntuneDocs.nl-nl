@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 8c6c92e6e7bd375063f2f19308fe19f6e44962ac
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -54,7 +55,7 @@ Voer de volgende vereisten uit voordat u inschrijving van iOS-apparaten instelt:
 
 Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. De volgende stappen laten zien hoe u een inschrijvingsprofiel kunt maken voor iOS-apparaten die worden ingeschreven met Apple Configurator.
 
-1. Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
 
@@ -78,11 +79,13 @@ Nadat u Apple Configurator-profielen hebt gemaakt, kunt u apparaatserienummers a
 
 ### <a name="assign-serial-numbers-to-apple-configurator-profiles"></a>Serienummers toewijzen aan Apple Configurator-profielen
 
-1. Selecteer op de blade **Apple Configurator-inschrijvingsprofielen** het profiel waaraan u serienummers wilt toewijzen.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2. Selecteer op de blade met de naam van het profiel **Serienummers** > **Toewijzen**.
+2. Selecteer op de blade **Apple Configurator-inschrijvingsprofielen** het profiel waaraan u serienummers wilt toewijzen.
 
-3. Selecteer de serienummers die u aan het profiel wilt toewijzen en selecteer vervolgens de knop **Toewijzen**.
+3. Selecteer op de blade met de naam van het profiel **Serienummers** > **Toewijzen**.
+
+4. Selecteer de serienummers die u aan het profiel wilt toewijzen en selecteer vervolgens de knop **Toewijzen**.
 
 ## <a name="export-the-profile-to-ios-devices"></a>De profielen exporteren naar iOS-apparaten
 
@@ -90,11 +93,13 @@ Nadat u het profiel hebt gemaakt en serienummers hebt toegewezen, moet u het pro
 
 ### <a name="export-a-profile-using-setup-assistant-enrollment"></a>Een profiel exporteren met inschrijving via Configuratieassistent
 
-1. Kies het profiel dat u wilt exporteren op de blade **Apple Configurator-inschrijvingsprofielen**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2. Selecteer **Profiel exporteren** op de blade voor het profiel.
+2. Kies het profiel dat u wilt exporteren op de blade **Apple Configurator-inschrijvingsprofielen**.
 
-3. Kopieer de URL van het profiel naar [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) terwijl het iOS-apparaat is aangesloten. U zult deze later in Apple Configurator uploaden om het Intune-profiel te definiëren dat wordt gebruikt door iOS-apparaten.
+3. Selecteer **Profiel exporteren** op de blade voor het profiel.
+
+4. Kopieer de URL van het profiel naar [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) terwijl het iOS-apparaat is aangesloten. U zult deze later in Apple Configurator uploaden om het Intune-profiel te definiëren dat wordt gebruikt door iOS-apparaten.
 
   Voor ondersteuning van Apple Configurator 2 moet u de profiel-URL 2.0 bewerken. Als u dit wilt doen, vervangt u deze code:
     ```
@@ -108,7 +113,7 @@ Nadat u het profiel hebt gemaakt en serienummers hebt toegewezen, moet u het pro
 
    In de volgende procedure gaat u deze profiel-URL met Apple Configurator uploaden naar de Apple DEP-service om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
 
-4. Upload deze profiel-URL met Apple Configurator naar de Apple DEP-service om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
+5. Upload deze profiel-URL met Apple Configurator naar de Apple DEP-service om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
 
 
     1.  Open **Apple Configurator2** op een Mac-computer. Kies in de menubalk **Apple Configurator 2** en vervolgens **Voorkeuren**.
@@ -139,7 +144,7 @@ Nadat u het profiel hebt gemaakt en serienummers hebt toegewezen, moet u het pro
 
     10. Zodra het iOS-apparaat klaar is met de voorbereidingen, kunt u de USB-kabel verwijderen.  
 
-8.  **Apparaten distribueren**.
+6.  **Apparaten distribueren**.
     De apparaten zijn nu gereed voor bedrijfsinschrijving. Schakel de apparaten uit en distribueer ze naar gebruikers. Wanneer gebruikers hun apparaten inschakelen, wordt Configuratieassistent gestart.
 
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Hoe gebruikers de bedrijfsportal op hun apparaten installeren en gebruiken
@@ -165,9 +170,4 @@ Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfspor
 7. Wanneer het serienummer is geverifieerd, wordt de gebruiker door de bedrijfsportal-app omgeleid naar de website van de bedrijfsportal om de inschrijving te voltooien. Vervolgens wordt gebruikers gevraagd om terug te gaan naar de app.
 
 De inschrijving is nu voltooid en gebruikers kunnen dit apparaat nu gebruiken met de volledige set mogelijkheden.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

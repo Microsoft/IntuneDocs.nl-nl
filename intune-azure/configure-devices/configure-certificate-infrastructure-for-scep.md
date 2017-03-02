@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a02b320498b3094db1e07ed3d1dab82e4d9effa
-ms.openlocfilehash: e3df68aee2a1584063f77429c828b0fd31103920
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 86f493e0ffd2a96ac4cfdfe6d8719f56532ed77c
+ms.lasthandoff: 02/16/2017
 
 ---
-# <a name="configure-certificate-infrastructure-for-scep-in-intune-azure-preview"></a>Certificaatinfrastructuur configureren voor SCEP in Intune Azure Preview
+# <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>De certificaatinfrastructuur voor SCEP configureren in Microsoft Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 In dit onderwerp wordt beschreven welke infrastructuur u nodig hebt om SCEP-certificaatprofielen te maken en implementeren.
@@ -348,9 +349,4 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 ## <a name="next-steps"></a>Volgende stappen
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](how-to-configure-certificates.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

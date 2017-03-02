@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: abe6fb1a5684cbeb0b893793a1932652b7ec1c16
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 674a806b16d1f88413c1d1bbda1fb1d4f3363771
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-phone-81-devices-in-intune-azure-preview"></a>VPN-instellingen voor Windows Phone 8.1-apparaten in Intune Azure Preview
+# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows Phone 8.1-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -31,7 +32,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 - **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
 - **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers kunnen deze naam zien wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
 - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server vanaf:
-    - **Certificaten**: kies onder **Verificatiecertificaat** een SCEP- of PKCS-certificaatprofiel dat u eerder hebt gemaakt, om de verbinding te verifiëren. Zie [Certificaten configureren](how-to-configure-certificates.md) voor meer informatie over certificaatprofielen.
+    - **Certificaten**: kies onder **Verificatiecertificaat** een SCEP- of PKCS-certificaatprofiel dat u eerder hebt gemaakt om de verbinding te verifiëren. Zie [Certificaten configureren](how-to-configure-certificates.md) voor meer informatie over certificaatprofielen.
     - **Gebruikersnaam en wachtwoord**: eindgebruikers moeten een gebruikersnaam en wachtwoord opgeven om zich aan te melden bij de VPN-server.
 - **Servers**: voeg een of meer VPN-servers toe waarmee de apparaten verbinding maken.
     - **Toevoegen**: hiermee opent u de blade **Rij toevoegen** waar u de volgende informatie kunt opgeven:
@@ -98,9 +99,4 @@ Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer info
     - **Adres**: voer het adres van de proxyserver in (als IP-adres).
     - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
 - **Proxy niet gebruiken voor lokale adressen**: als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie als u de proxyserver niet wilt gebruiken voor lokale adressen die u opgeeft. Raadpleeg de Windows Server-documentatie voor meer informatie.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

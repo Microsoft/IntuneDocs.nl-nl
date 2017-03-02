@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Mobile App Management-beleid bewaken met Microsoft Intune
-U kunt de nalevingsstatus van het MAM-beleid bewaken dat u hebt toegepast op gebruikers. U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>App-beveiligingsbeleid bewaken met Microsoft Intune
+U kunt de nalevingsstatus van het app-beveiligingsbeleid bewaken dat u hebt toegepast op gebruikers. U vindt er informatie over de gebruikers waarop het app-beveiligingsbeleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
 
 Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
@@ -59,7 +61,7 @@ U kunt de gedetailleerde weergave van de samenvatting openen door de tegel **Geb
 U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze gebruiker controleren. De blade **App-rapportage** bevat de volgende informatie voor de geselecteerde gebruiker:
 - Apparaten die zijn gekoppeld aan het gebruikersaccount
 
-- Apps met een MAM-beleid op het apparaat
+- Apps met een app-beveiligingsbeleid op het apparaat
 
 - Status:
 
@@ -68,7 +70,7 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
   - **Niet ingeschakeld**: het beleid is geïmplementeerd voor de gebruiker, maar de app is sindsdien niet gebruikt in de werkcontext.
 
 >[!NOTE]
-> Als het MAM-beleid niet op de gebruikers waarnaar u hebt gezocht is toegepast, wordt in een bericht gemeld dat er geen MAM-beleid wordt toegepast op de gebruikers.
+> Als het app-beveilgingsbeleid niet op de gebruikers waarnaar u hebt gezocht is toegepast, wordt in een bericht gemeld dat er geen app-beveiligingsbeleid wordt toegepast op de gebruikers.
 
 Ga als volgt te werk om de rapportage voor een gebruiker te bekijken:
 
@@ -87,7 +89,7 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 ## <a name="reporting-view"></a>Rapportageweergave
 
-U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende rapporten voor hulp bij de compatibiliteitsstatus van het MAM-beleid:
+U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende rapporten voor hulp bij de compatibiliteitsstatus van het app-beveiligingsbeleid:
 
 ![Schermopname&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
     -   Gebruikersstatus voor beheerde MAM-activiteit (beveiligd): in dit rapport staat de activiteit van elke beheerde MAM-app, vermeld per gebruiker.
 
-        -   Hierin staan alle apps waarin MAM-beleid wordt toegepast voor elke gebruiker én de status van elke app tijdens het inchecken ten opzichte van het MAM-beleid, of elke app waarop MAM-beleid is toegepast, maar die nooit is ingecheckt.
+        -   Hierin staan alle apps waarin app-beveiligingsbeleid wordt toegepast voor elke gebruiker én de status van elke app tijdens het inchecken ten opzichte van het app-beveiligingsbeleid, of elke app waarop app-beveiligingsbeleid is toegepast, maar die nooit is ingecheckt.
 <br></br>
     -   Gebruikersstatus voor niet-beheerde MAM-activiteit (niet beveiligd): in dit rapport staat de activiteit van apps met MAM-beleid die momenteel niet wordt beheerd, vermeld per gebruiker. Dit kan in de volgende gevallen plaatsvinden:
 
-        -   De apps worden gebruikt door een gebruiker of een app waarop momenteel geen MAM-beleid wordt toegepast.
+        -   De apps worden gebruikt door een gebruiker of een app waarop momenteel geen app-beveiligingsbeleid wordt toegepast.
 
-        -   Alle apps zijn ingecheckt, maar er wordt geen MAM-beleid op toegepast.
+        -   Alle apps zijn ingecheckt, maar er wordt geen app-beveiligingsbeleid op toegepast.
 
 ![Schermopname&2;](../media/MAM-reporting-4.png)
 
@@ -111,8 +113,8 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
 Zodra de gegevens voor het **gebruikersrapport van de app-beveiliging** worden weergegeven, kunt u gegevens als volgt samenvoegen:
 
-- **Validatieresultaat:** De gegevens worden gegroepeerd op de beveiligingsstatus van apps. Het resultaat kan fout, waarschuwing of geslaagd zijn.
-- **App-naam:** De gegevens worden gegroepeerd op apps (de naam van de werkelijke app). Het resultaat kan fout, waarschuwing of geslaagd zijn.
+- **Validatieresultaat:** de gegevens worden gegroepeerd op de beveiligingsstatus van apps. Het resultaat kan fout, waarschuwing of geslaagd zijn.
+- **App-naam:** de gegevens worden gegroepeerd op apps (de naam van de werkelijke app). Het resultaat kan fout, waarschuwing of geslaagd zijn.
 
 ## <a name="export-app-protection-activities-to-csv"></a>App-beveiligingsactiviteiten exporteren naar CSV
 
@@ -131,11 +133,6 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 ## <a name="see-also"></a>Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door MAM-beleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

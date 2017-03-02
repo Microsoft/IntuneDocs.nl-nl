@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 
 **iOS-registratiemethoden**
 
-| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details** |
+| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |   Nee | Meer informatie binnenkort beschikbaar|
-|**[DEM](#dem)**|   Nee |Nee |Nee  | [Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| Yes |   Optioneel |  Nee| [Meer informatie](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| Nee |    Nee  | Nee|[Meer informatie](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[BYOD](#byod)** | Nee|    Ja |    Nee | Meer informatie binnenkort beschikbaar|
+|**[DEM](#dem)**|    Nee |Nee |Nee    | [Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    Ja |    Optioneel |    Optioneel|[Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    Yes |    Optioneel |    Nee| [Meer informatie](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    Nee |    Nee    | Nee|[Meer informatie](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Windows-registratiemethoden**
 
-| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
+| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Yes|   Ja |   Nee | Meer informatie binnenkort beschikbaar|
-|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-devices-using-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | Yes|    Ja |    Nee | Meer informatie binnenkort beschikbaar|
+|**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android-registratiemethoden**
 
-| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
+| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |   Nee | Meer informatie binnenkort beschikbaar|
-|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | Nee|    Ja |    Nee | Meer informatie binnenkort beschikbaar|
+|**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>BYOD
-'Bring-Your-Own-Device'-gebruikers installeren de bedrijfsportal-app en registreren hun apparaat. Hiermee kunnen gebruikers verbinding maken met het bedrijfsnetwerk en deelnemen aan het domein of Azure Active Directory. Voor de meeste platformen moet u BYOD-registratie inschakelen voor veel COD-scenario’s.
+'Bring-Your-Own-Device'-gebruikers installeren de bedrijfsportal-app en registreren hun apparaat. Hiermee kunnen gebruikers verbinding maken met het bedrijfsnetwerk en deelnemen aan het domein of Azure Active Directory. Voor de meeste platformen moet u BYOD-registratie inschakelen voor veel COD-scenario’s. U kunt de inschrijving blokkeren van iOS- en Android-apparaten die het eigendom van de gebruiker zijn. Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) voor instructies.
 
 ## <a name="corporate-owned-devices"></a>Apparaten in bedrijfseigendom
 Apparaten in bedrijfseigendom (COD) kunnen met de Azure Portal worden beheerd. iOS-apparaten kunnen rechtstreeks met de hulpprogramma's van Apple worden ingeschreven. Alle typen apparaten kunnen worden ingeschreven door een beheerder of manager die de apparaatinschrijvingsbeheerder gebruikt. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom om COD-scenario's mogelijk te maken.
@@ -80,8 +81,8 @@ Het apparaatregistratiebeheer is een speciaal gebruikersaccount voor registratie
 ### <a name="dep"></a>DEP
 Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
 
-  - Vergrendelde registratie
-  - Kioskmodus en andere geavanceerde configuraties en beperkingen
+  -    Vergrendelde registratie
+  -    Kioskmodus en andere geavanceerde configuraties en beperkingen
 
 Zie voor meer informatie over de iOS-inschrijving:
 
@@ -91,8 +92,8 @@ Zie voor meer informatie over de iOS-inschrijving:
 
 ### <a name="usb-sa"></a>USB-SA
 IT-beheerders gebruiken Apple Configurator, via USB, om elk apparaat van het bedrijf handmatig voor te bereiden voor registratie met behulp van Configuratieassistent. De IT-beheerder maakt een registratiebeleid en exporteert het beleid naar Apple Configurator. Wanneer gebruikers hun apparaat ontvangen, wordt hun gevraagd om Configuratieassistent uit te voeren om het apparaat in te schrijven. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
-  - Vergrendelde registratie
-  - Kioskmodus en andere geavanceerde configuraties en beperkingen
+  -    Vergrendelde registratie
+  -    Kioskmodus en andere geavanceerde configuraties en beperkingen
 
 Zie voor meer informatie over de iOS-inschrijving:
 
@@ -127,9 +128,4 @@ Zie [Ondersteunde apparaten en browsers voor Intune](https://docs.microsoft.com/
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 
 Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten (niet-pc's) worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

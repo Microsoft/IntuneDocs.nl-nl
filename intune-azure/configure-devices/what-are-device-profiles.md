@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>Wat zijn apparaatprofielen?
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>Wat zijn Microsoft Intune-apparaatprofielen?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Gebruik de Microsoft Intune-workload **Apparaten configureren** om instellingen en functies te beheren op alle apparaten die u beheert.
+Gebruik de Microsoft Intune-workload **Apparaten configureren** om instellingen en functies te beheren op alle apparaten die u beheert. U zult deze workload voornamelijk gebruiken om apparaatprofielen te maken, waarmee u vele verschillende functies kunt beheren en configureren op de apparaten die u beheert.
 
 Als u deze workload opent, ziet u de volgende opties:
 
@@ -60,10 +60,6 @@ Ondersteunt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 en Windows 10.
 Met dit profieltype kunt u vertrouwde, SCEP- en PKCS-certificaten configureren die kunnen worden toegewezen aan apparaten en kunnen worden gebruikt voor het verifiëren van Wi-Fi-, VPN- en e-mailprofielen.
 Zie [How to configure certificates](how-to-configure-certificates.md) (Certificaten configureren) voor meer informatie. Ondersteunt: Android, iOS, Windows Phone 8.1, Windows 8.1 en Windows 10.
 
-## <a name="education"></a>Education
-Helpt u de juiste certificaten voor het gebruik van iOS-apparaten in een onderwijsomgeving op te geven.
-Zie [How to configure Intune education settings for iOS devices](education-settings-for-ios.md) (Intune-onderwijsinstellingen voor iOS-apparaten configureren) voor meer informatie. Ondersteunt: alleen iOS.
-
 ## <a name="edition-upgrade"></a>Editie-upgrade
 Met dit profieltype kunt u automatisch apparaten met bepaalde versies van Windows 10 naar een nieuwere editie bijwerken. Zie [Editie-upgrades voor Windows 10 configureren](how-to-configure-windows-10-edition-upgrade.md) voor meer informatie. Ondersteunt: alleen Windows 10.
 
@@ -74,9 +70,4 @@ Zie [Windows-gegevensbescherming configureren](how-to-configure-windows-informat
 ## <a name="custom"></a>Aangepast
 U kunt met aangepaste instellingen apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. U kunt bijvoorbeeld op Android-apparaten OMA-URI-waarden opgeven waarmee het apparaat wordt geconfigureerd. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
 Zie [Aangepaste instellingen configureren](how-to-configure-custom-settings.md) voor meer informatie. Ondersteunt: Android, iOS, macOS en Windows Phone 8.1.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

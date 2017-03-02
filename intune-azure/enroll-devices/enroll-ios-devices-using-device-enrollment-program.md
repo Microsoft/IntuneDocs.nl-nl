@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ Voer de volgende vereisten uit voordat u inschrijving van iOS-apparaten instelt:
 
 Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. De volgende stappen laten zien hoe u een apparaatinschrijvingsprofiel kunt maken voor iOS-apparaten die worden ingeschreven met DEP.
 
-1. Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
 
@@ -110,17 +111,19 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
 ## <a name="synchronize-dep-managed-devices"></a>Met DEP-beheerde apparaten synchroniseren
 
-1. Kies **Apparaten inschrijven** op de blade Intune van Azure Portal en kies vervolgens **Apple-inschrijving**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2. Selecteer **DEP-serienummers** onder **Instellingen van Apple Device Enrollment Program (DEP) beheren**.
+2. Kies **Apparaten inschrijven** op de blade Intune van Azure Portal en kies vervolgens **Apple-inschrijving**.
+
+3. Selecteer **DEP-serienummers** onder **Instellingen van Apple Device Enrollment Program (DEP) beheren**.
 
 4. Selecteer **Synchroniseren** op de blade **Apple DEP-serienummers**.
 
 5. Selecteer **Synchronisatie aanvragen** op de blade **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
 
     Om te voldoen aan de voorwaarden van Apple voor acceptabel DEP-verkeer, worden door Intune de volgende beperkingen opgelegd:
-     -  Een volledige DEP-synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
-     -  Een synchronisatieaanvraag krijgt 10 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
+     -    Een volledige DEP-synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
+     -    Een synchronisatieaanvraag krijgt 10 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
 
 >[!NOTE]
 >U kunt ook DEP-serienummers aan profielen toewijzen via de blade **Apple DEP-serienummers**.
@@ -153,9 +156,4 @@ Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfspor
 7. Wanneer het serienummer is geverifieerd, wordt de gebruiker door de bedrijfsportal-app omgeleid naar de website van de bedrijfsportal om de inschrijving te voltooien. Vervolgens wordt gebruikers gevraagd om terug te gaan naar de app.
 
 De inschrijving is nu voltooid en gebruikers kunnen dit apparaat nu gebruiken met de volledige set mogelijkheden.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

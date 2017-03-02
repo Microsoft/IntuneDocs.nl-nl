@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: e92593062ad2ed7a4098922715106f47f4e78d4f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 968932c07d2c68003b61c0cc554b43b348385d1e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-create-custom-vpn-profiles-with-microsoft-intune"></a>Aangepaste VPN-profielen maken met Microsoft Intune
+# <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Aangepaste VPN-profielen maken in Microsoft Intune
 
 ## <a name="create-a-custom-configuration"></a>Een aangepaste configuratie maken
 U kunt aangepast Intune-configuratiebeleid gebruiken om VPN-profielen te maken voor:
@@ -122,10 +123,5 @@ Voorbeelden:
 > - De standaardwaarde is *WHITELIST* als er een pakketlijst is opgegeven
 
 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ Voor het beheren van iOS-apparaten in bedrijfseigendom met het Device Enrollment
 > Lees deze opmerking alleen als u een klant bent die vanuit de Intune-beheerconsole is gemigreerd naar Azure Portal. Als u een Apple DEP-token van de Intune-beheerconsole hebt verwijderd tijdens de migratieperiode, merkt u dat het DEP-token in uw Intune-account is hersteld. Als dit gebeurt, moet u alleen het DEP-token uit Azure Portal verwijderen. 
 
 **Het Apple DEP-certificaat ophalen**</br>
-Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**. Kies op de blade Intune **Apparaten inschrijven** > **Apple DEP-token** en volg de genummerde stappen in Azure Portal. Deze stappen worden hieronder weergegeven.
+Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune **Apparaten inschrijven** > **Apple DEP-token** en volg de genummerde stappen in Azure Portal. Deze stappen worden hieronder weergegeven.
 
 **Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple DEP-token.**<br>
 Selecteer **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple Device Enrollment Program aan te vragen.
@@ -53,9 +54,4 @@ Selecteer [Een DEP-token via Apple Deployment Programs maken](https://deploy.app
 
 **Stap 4. Blader naar het Apple DEP-token dat u wilt uploaden. Intune voert automatisch een synchronisatie met uw DEP-account uit.**<br>
 Ga naar het certificaatbestand (.pem), kies **Openen** en kies vervolgens **Uploaden**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

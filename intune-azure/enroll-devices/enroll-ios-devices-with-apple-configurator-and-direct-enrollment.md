@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f6770556e6ee4e6a6fa1173c8c65c7e54d159016
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 642ecb716a4325d736be6fc392f39162e903d835
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -53,7 +54,7 @@ Voer de volgende vereisten uit voordat u inschrijving van iOS-apparaten instelt:
 
 Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. De volgende stappen laten zien hoe u een inschrijvingsprofiel kunt maken voor iOS-apparaten die worden ingeschreven met Apple Configurator.
 
-1. Kies in Azure Portal **Meer services**, voer **Intune** in het tekstvak in en kies **Overige** > **Intune**.
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
 
@@ -98,9 +99,4 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 4. Open **Instellingen** op het iOS-apparaat en ga naar **Algemeen** > **Apparaatbeheer** > **Beheerprofiel**. Controleer of de profielinstallatie wordt weergegeven en controleer vervolgens de iOS-beleidsbeperkingen en geïnstalleerde apps. Het kan 10 minuten duren voordat beleidsbeperkingen en apps worden weergegeven op het apparaat.
 
 5. Apparaten distribueren. Het iOS-apparaat is nu ingeschreven bij Intune en wordt beheerd.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

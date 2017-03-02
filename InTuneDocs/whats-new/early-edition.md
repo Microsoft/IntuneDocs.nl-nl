@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
+ms.sourcegitcommit: d0b3a883bb307fb06cb8d16500798086f328314a
+ms.openlocfilehash: eeebf8b6b3bc5c7c35386eb20c96097af1f6769c
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -34,7 +36,7 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 ## <a name="new-capabilities"></a>Nieuwe mogelijkheden
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>De bedrijfsportalwebsite moderniseren <!--753980-->
-De bedrijfsportalwebsite ondersteunt apps die zijn gericht op gebruikers die geen beheerde apparaten hebben. De website wordt in overeenstemming gebracht met andere Microsoft-producten en -services met een nieuw contrasterend kleurenschema, dynamische illustraties en een 'hamburgermenu', ![Kleine afbeelding van het hamburgermenu dat nu is toegevoegd in de linkerbovenhoek van de bedrijfsportalwebsite](./media/CP_hamburger_menu.png) dat contactgegevens van de helpdesk bevat, alsmede informatie over bestaande beheerde apparaten. De landingspagina wordt opnieuw ingedeeld om de nadruk te leggen op apps die beschikbaar zijn voor gebruikers, met carrousels voor uitgelichte en recent bijgewerkte apps. De [pagina met UI-updates](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) bevat voor-en-na afbeeldingen.
+Vanaf februari wordt het ontwerp van de bedrijfsportalwebsite in overeenstemming gebracht met andere Microsoft-producten en -services met een nieuw contrasterend kleurenschema, dynamische illustraties en een 'hamburgermenu', ![Kleine afbeelding van het hamburgermenu dat nu is toegevoegd in de linkerbovenhoek van de bedrijfsportalwebsite](./media/CP_hamburger_menu.png) dat contactgegevens van de helpdesk bevat, alsmede informatie over bestaande beheerde apparaten. De landingspagina wordt opnieuw ingedeeld om de nadruk te leggen op apps die beschikbaar zijn voor gebruikers, met carrousels voor uitgelichte en recent bijgewerkte apps. De [pagina met UI-updates](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) bevat voor-en-na afbeeldingen.
 
 ### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nieuwe begeleide ervaring voor Windows 10-bedrijfsportal<!--713927-->
 Vanaf maart bevat de bedrijfsportal voor Windows 10 een begeleiding voor Intune voor apparaten die nog niet zijn geïdentificeerd of geregistreerd. Deze nieuwe ervaring biedt stapsgewijze instructies voor de gebruiker van de aangepaste Windows 10-build-versie, die gebruikers begeleidt bij het uitvoeren van AAD-registratie (vereist voor de identificatie voor voorwaardelijke toegangsfuncties) en MDM-registratie (vereist voor beheerfuncties op het apparaat). Deze ervaring is toegankelijk vanaf de startpagina van de bedrijfsportal en is optioneel. Gebruikers kunnen de app blijven gebruiken zolang ze de registratie en aanmelding niet voltooien. De functionaliteit kan echter beperkt zijn.
@@ -114,9 +116,4 @@ We beginnen nu met preview-versies van de integratie met externe systemen voor o
 
 ### <a name="see-also"></a>Zie tevens
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voor meer informatie over recente ontwikkelingen.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

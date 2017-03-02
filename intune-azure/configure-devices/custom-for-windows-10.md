@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Aangepaste apparaatinstellingen voor Windows 10-apparaten in Intune Azure Preview
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Aangepaste apparaatinstellingen voor Windows 10-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ In de schermopname hieronder is de instelling **Conectivity/AllowVPNOverCellular
 |**Wachtwoord opslaan toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop en mobiel<br />**Gegevenstype:** geheel getal<br />**Waarden:**<br>**0**: wachtwoordbeheer is uitgeschakeld <br>**1**: wachtwoordbeheer is ingeschakeld (standaard)|
 |**Automatisch invullen toestaan**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Alleen desktop<br />**Gegevenstype:** geheel getal<br />**Waarden:** **0**: uitgeschakeld (standaard), **1**: ingeschakeld|
 |**Sitelijst voor ondernemingen configureren**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Alleen desktop<br />**Gegevenstype:** tekenreeks<br />**Waarden:<br>**0**: niet geconfigureerd, <br>**1**: de lijst met websites van Bedrijfsmodus gebruiken indien geconfigureerd (standaard)<br>**2**: de locatie van de lijst met websites van Bedrijfsmodus opgeven|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ description: Gebruik deze handleiding om uw Windows-pc&quot;s te laten beheren d
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 01/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -23,14 +25,11 @@ ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>De Intune-softwareclient installeren op Windows-pc's
 Windows-pc's kunnen worden geregistreerd door de Intune-clientsoftware te installeren. De Intune-clientsoftware kan via de volgende methoden worden geïnstalleerd:
 
-- Door de IT-beheerder:
-  - Handmatige installatie
-  - Installatie met behulp van groepsbeleid
-  - Installatie die is opgenomen in een schijfinstallatiekopie
+- Handmatige installatie, installatie via groepsbeleid of installatie opgenomen in een schijfinstallatiekopie door de IT-beheerder
 
 - Handmatige installatie van de softwareclient door eindgebruikers
 
-De Intune-softwareclient, die door de IT-beheerder voor de gebruiker wordt geïmplementeerd of door de eindgebruiker wordt gedownload, bevat de minimaal benodigde software voor het registreren van de pc bij de beheerfunctie van Intune. Nadat een pc is geregistreerd, wordt met de Intune-softwareclient de volledige clientsoftware gedownload die nodig is om de pc te beheren.
+De Intune-clientsoftware bevat de minimale software die nodig is om de pc bij Intune-beheer in te schrijven. Nadat een pc is ingeschreven, downloadt de Intune-clientsoftware de volledige clientsoftware die nodig is om de pc te beheren.
 
 Deze reeks downloads beperkt de impact voor de bandbreedte van het netwerk en minimaliseert de tijd die nodig is om de oorspronkelijke registratie van de pc bij Intune uit te voeren. Ook wordt er op die manier voor gezorgd dat zich op de client de nieuwste versie van de software bevindt nadat de tweede download is voltooid.
 
@@ -44,8 +43,7 @@ Voor alle methoden, behalve die waarbij gebruikers de Intune-clientsoftware zelf
 
 2.  Klik op de pagina **Clientsoftware downloaden** op **Clientsoftware downloaden**. Sla het pakket **Microsoft_Intune_Setup.zip** met de software vervolgens op een beveiligde locatie op uw netwerk op.
 
-    > [!NOTE]
-    > Het installatiepakket voor de Intune-clientsoftware bevat unieke en specifieke informatie over uw account, die beschikbaar is via een ingesloten certificaat. Als niet-gemachtigde gebruikers toegang krijgen tot het installatiepakket, kunnen ze computers inschrijven bij het account van het certificaat dat is ingesloten in het pakket en krijgen ze mogelijk toegang tot bedrijfsbronnen.
+Het installatiepakket voor de Intune-clientsoftware bevat unieke en specifieke informatie over uw account, die beschikbaar is via een ingesloten certificaat. Als niet-gemachtigde gebruikers toegang krijgen tot het installatiepakket, kunnen ze pc’s inschrijven bij het account van het certificaat dat is ingesloten in het pakket en krijgen ze mogelijk toegang tot bedrijfsbronnen.
 
 3.  Pak de inhoud van het installatiepakket uit naar een beveiligde locatie in het netwerk.
 
@@ -54,10 +52,10 @@ Voor alle methoden, behalve die waarbij gebruikers de Intune-clientsoftware zelf
 
 ## <a name="deploy-the-client-software-manually"></a>De clientsoftware handmatig implementeren
 
-Ga op de computer(s) waarop de softwareclient moet worden geïnstalleerd naar de map met de installatiebestanden van de clientsoftware. Voer vervolgens **Microsoft_Intune_Setup.exe** uit om de clientsoftware te installeren.
+Ga op de computer(s) waarop de clientsoftware moet worden geïnstalleerd naar de map met de installatiebestanden van de clientsoftware. Voer vervolgens **Microsoft_Intune_Setup.exe** uit om de clientsoftware te installeren.
 
 > [!NOTE]
-> De status van de installatie wordt weergegeven wanneer u met de muisaanwijzer over het pictogram in het systeemvak van de clientcomputer beweegt.
+> De status van de installatie wordt weergegeven wanneer u met de muisaanwijzer over het pictogram in het systeemvak van de client-pc beweegt.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>De clientsoftware implementeren met Groepsbeleid
 
@@ -108,11 +106,56 @@ U kunt de Intune-clientsoftware op computers implementeren met een installatieko
 
 ## <a name="instruct-users-to-self-enroll"></a>Registratie door de gebruikers zelf
 
-Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website met de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. Als de webportal detecteert dat het apparaat een Windows-pc is, wordt gebruikers gevraagd om de pc te registreren door de Intune-softwareclient te downloaden. Nadat de software is gedownload, kunnen gebruikers deze installeren om hun pc's onder beheer te brengen.
+Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. De exacte informatie die gebruikers in de webportal zien, verschilt afhankelijk van de MDM-instantie voor uw account en het OS-platform/versie van de pc van de gebruiker. 
 
-De exacte informatie die gebruikers in de webportal zien, kan verschillen afhankelijk van de MDM-instantie voor uw account en het platform en de versie van de pc van de gebruiker.
+Als er geen Intune-licentie is toegewezen aan gebruikers of als de MDM-instantie van de organisatie niet op Intune is ingesteld, zien gebruikers geen inschrijvingsopties.
 
-![Prompt in de Intune-portal die u vraagt om de Intune-softwareclient te downloaden](../media/software-client-download.png)
+Als er wel een Intune-licentie is toegewezen aan gebruikers en de MDM-instantie van de organisatie wel op Intune is ingesteld:
+
+- Gebruikers van Windows 7- of Windows 8-pc’s zien ALLEEN de optie om zich in te schrijven voor Intune door de pc-clientsoftware te downloaden en installeren die uniek is voor hun organisatie.
+
+- Gebruikers van Windows 10- of Windows 8.1-pc’s zien twee inschrijvingsopties:
+
+  -  **Pc inschrijven als mobiel apparaat**: Als gebruikers de knop **Meer informatie over inschrijven** kiezen, worden ze naar instructies geleid voor het inschrijven van hun pc als mobiel apparaat. Deze knop wordt prominent weergegeven, omdat MDM-inschrijving als de standaard inschrijvingsoptie wordt beschouwd die de voorkeur heeft. De MDM-optie is echter niet van toepassing op dit onderwerp, dat alleen de installatie van de clientsoftware dekt.
+  - **Pc inschrijven met behulp van de Intune-clientsoftware**: U moet uw gebruikers vertellen dat ze de link **Klik hier om het te downloaden** moeten selecteren, zodat ze door de installatie van de clientsoftware worden geleid.
+
+De volgende tabel geeft een overzicht van de opties.
+
+  ![Standaard inschrijvingsopties per platform](../media/default-enrollment-options-table.png)
+
+De volgende schermafbeeldingen tonen wat gebruikers zien wanneer ze hun apparaat inschrijven met behulp van de clientsoftware.
+
+Gebruikers worden eerst gevraagd hun apparaat te identificeren of in te schrijven.
+
+  ![apparaat identificeren of inschrijven](../media/identify-device-or-enroll.png)
+
+Als u wilt dat uw gebruikers de pc-clientsoftware installeren, moet u hen vertellen dat ze de link **Klik hier om het te downloaden** moeten selecteren om de pc-clientsoftware te downloaden en door het installatieproces te worden geleid. De knop **Meer informatie over inschrijven** leidt gebruikers naar documentatie over MDM-inschrijving, wat niet relevant is voor deze clientsoftware-instructies.
+
+  ![link Klik hier om het te downloaden kiezen](../media/enroll-your-windows-device.png)
+
+Wanneer gebruikers op de link klikken, zien ze de knop **Software downloaden**, die ze moeten selecteren om de installatie van de pc-clientsoftware te starten.
+
+  ![knop Software downloaden kiezen](../media/download-pc-client-software.png)
+
+Gebruikers worden vervolgens gevraagd zich aan te melden met hun bedrijfsreferenties.
+
+  ![Aanmelden met uw referenties](../media/sign-in-to-intune.png)
+
+Gebruikers worden naar de welkomstpagina voor de installatie geleid.
+
+  ![Welkomstpagina voor installatie van pc-clientsoftware](../media/welcome-to-pc-agent-install-wizard.png)
+
+Gebruikers kiezen **Volgende**, waarna de installatie wordt gestart.
+
+  ![Welkomstpagina voor installatie van pc-clientsoftware](../media/welcome-to-pc-agent-install-wizard.png)
+
+Wanneer de installatie is voltooid, kiezen gebruikers **Voltooien**.
+
+  ![De installatie van de pc-clientsoftware voltooien](../media/completed-the-setup-wizard.png)
+
+Als gebruikers hun pc als mobiel apparaat proberen in te schrijven nadat ze het al hebben ingeschreven met behulp van de Intune-pc-clientsoftware, zien ze het volgende foutscherm.
+
+  ![Weergegeven scherm als pc al is ingeschreven](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>Geslaagde clientimplementatie controleren en valideren
 Gebruik een van de volgende procedures om de clientimplementatie te controleren en te valideren.
@@ -140,9 +183,4 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
 ### <a name="see-also"></a>Zie tevens
 [Windows-pc’s Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
 [Problemen met clientinstallatie oplossen](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

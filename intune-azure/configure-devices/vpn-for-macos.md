@@ -14,13 +14,14 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: 6f7bcfaec34c4916f7c916210b00440062b83694
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 758573964627b1d5e4f98ea3729df696bf96bf1c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-macos-devices-in-intune-azure-preview"></a>VPN-instellingen voor macOS-apparaten in Intune Azure Preview
+# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>VPN-instellingen voor macOS-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -40,7 +41,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Aangepaste VPN**
-- **Split tunneling** - U kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
+- **Split tunneling** - : u kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
 <!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or Mac OS X app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [How to deploy and monitor apps](/intune-azure/manage-apps/deploy-apps). --->
 
@@ -57,9 +58,4 @@ Als u **Aangepaste VPN** hebt geselecteerd, configureert u deze instellingen:
 - **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
 - **Adres**: voer het adres van de proxyserver in (als IP-adres).
 - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
