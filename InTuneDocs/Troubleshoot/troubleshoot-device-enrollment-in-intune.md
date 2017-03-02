@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -261,7 +262,7 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 
 **Oplossing:** deel de volgende oplossingen met uw eindgebruikers om ervoor te zorgen dat ze weer toegang kunnen verkrijgen tot bedrijfsresources.
 
-Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Poging tot synchronisatie...** te zien. 
+Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Poging tot synchronisatie...** te zien.
 
   ![De melding Poging tot synchronisatie...](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Als het synchroniseren lukt, ziet u de melding **De synchronisatie is voltooid**
 
   ![De melding De synchronisatie is voltooid](./media/ios_cp_app_sync_successful_notification.png)
 
-Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-bedrijfsportal-app. 
+Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-bedrijfsportal-app.
 
   ![De melding Kan niet synchroniseren](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** selecteren. Deze staat rechts van de melding **Kan niet synchroniseren**. Wanneer gebruikers op de knop Instellen klikken, gaan ze naar het scherm om de bedrijfsportal in te stellen. Hier volgen ze instructies om hun apparaat in te schrijven. 
+Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** selecteren. Deze staat rechts van de melding **Kan niet synchroniseren**. Wanneer gebruikers op de knop Instellen klikken, gaan ze naar het scherm om de bedrijfsportal in te stellen. Hier volgen ze instructies om hun apparaat in te schrijven.
 
   ![Het scherm Instellen van bedrijfstoegang](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde i
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
