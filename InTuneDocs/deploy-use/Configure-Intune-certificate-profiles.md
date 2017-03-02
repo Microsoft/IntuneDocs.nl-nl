@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -157,9 +159,4 @@ Ontdek nu hoe u certificaten kunt gebruiken om e-mail-, Wi-Fi- en VPN-profielen 
 -  [De toegang tot zakelijke e-mail configureren met e-mailprofielen](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Wi-Fi-verbindingen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 -  [VPN-verbindingen in Microsoft Intune](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

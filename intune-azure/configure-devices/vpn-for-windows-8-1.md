@@ -1,5 +1,6 @@
 ---
-title: Intune-VPN-instellingen voor Windows 8.1-apparaten | Intune Azure Preview | Microsoft Docs
+title: VPN-instellingen voor Windows 8.1-apparaten
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op Windows 8.1-apparaten te configureren.'
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: f38526a3e60f2a6628e61ffca5f5d179a2718e9b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -90,12 +93,7 @@ Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer info
 - **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of apparaten de verbindingsinstellingen automatisch moeten detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
 - **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL in van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) die het configuratiebestand bevat.
 - **Proxyserver gebruiken**: schakel deze optie in als u de proxyserverinstellingen handmatig wilt invoeren.
-    - **Adres**: geef het proxyserveradres op (als IP-adres).
-    - **Poortnummer**: geef het poortnummer op dat is gekoppeld aan de proxyserver.
+    - **Adres**: voer het adres van de proxyserver in (als IP-adres).
+    - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
 - **Proxy niet gebruiken voor lokale adressen**: als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie als u de proxyserver niet wilt gebruiken voor lokale adressen die u opgeeft. Raadpleeg de Windows Server-documentatie voor meer informatie.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

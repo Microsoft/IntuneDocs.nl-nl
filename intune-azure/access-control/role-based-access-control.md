@@ -1,11 +1,12 @@
 ---
-title: Op rollen gebaseerd toegangsbeheer (RBAC) voor Microsoft Intune | Intune Azure Preview | Microsoft Docs
+title: Op rollen gebaseerd toegangsbeheer (RBAC) voor Microsoft Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u met RBAC kunt bepalen welke personen acties kunnen uitvoeren en wijzigingen kunnen aanbrengen.'
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,7 +43,7 @@ De volgende rollen zijn ingebouwd in Intune. U kunt deze rollen aanpassen of dez
 - **Intune Administrator** (Intune-beheerder): heeft volledige machtigingen voor alle bewerkingen in Intune.
 - **Toepassingsbeheer**: toepassingen en profielen beheren en implementeren.
 - **Configuration Policy Manager**: configuratie-instellingen en -profielen beheren en implementeren.
-- **Helpdesk Operator** (Helpdeskoperator): externe taken uitvoeren en de gebruiker- en apparaatgegevens weergeven.
+- **Helpdesk Operator** (Helpdeskoperator) - externe taken uitvoeren en de gebruikers- en apparaatgegevens weergeven.
 - **Alleen lezen-operator**: gegevens weergeven in de Intune-portal zonder de mogelijkheid wijzigingen aan te brengen.
 
 
@@ -171,8 +174,3 @@ Wanneer u een aangepaste rol maakt, kunt u een of meer van de volgende instellin
 |**Verwijderen**|Instellingen van voorwaarden verwijderen.|
 |**Lezen**|Instellen van voorwaarden in de Microsoft Intune-portal lezen.|
 |**Bijwerken**|Bestaande instellingen van voorwaarden bijwerken.|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

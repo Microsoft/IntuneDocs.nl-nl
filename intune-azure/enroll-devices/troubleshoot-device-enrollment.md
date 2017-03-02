@@ -1,5 +1,6 @@
 ---
-title: Problemen met het registreren van apparaten oplossen | Intune Azure Preview | Microsoft Docs
+title: Hoe los ik problemen met de inschrijving van apparaten op?
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over het oplossen van problemen bij het registreren van apparaten.'
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -72,9 +75,9 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 > [!NOTE]
 
-> U kunt de limiet voor apparaatregistraties vermijden met behulp van apparaatregistratiebeheerders, zoals wordt beschreven in [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md) (Apparaten registreren met de apparaatregistratiebeheerder).
+> U kunt de limiet voor apparaatregistraties vermijden met behulp van apparaatinschrijvingsmanagers, zoals wordt beschreven in [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md) (Apparaten registreren met de apparaatinschrijvingsmanager).
 >
-> Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatregistratiebeheerders kunnen geen apparaten worden geregistreerd wanneer een beleid voor voorwaardelijke toegang van kracht is voor die specifieke gebruikersaanmelding.
+> Met een gebruikersaccount dat is toegevoegd aan de groep Apparaatinschrijvingsmanagers kunnen geen apparaten worden geregistreerd wanneer een beleid voor voorwaardelijke toegang van kracht is voor die specifieke gebruikersaanmelding.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
 **Probleem:** een gebruiker ontvangt op zijn of haar apparaat de fout **De bedrijfsportal tijdelijk niet beschikbaar**.
@@ -386,9 +389,4 @@ Deze fout treedt mogelijk op doordat de computer eerder is geregistreerd of een 
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

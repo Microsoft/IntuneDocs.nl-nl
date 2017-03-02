@@ -1,5 +1,6 @@
 ---
-title: Apparaatnaleving controleren | Intune Azure Preview | Microsoft Docs
+title: Apparaatcompatibiliteit bewaken
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u de apparaatnaleving kunt controleren.'
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: eb27002f449b3bbebb2a9b4ed780350c71eda881
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d59d94aafa71a9891a6746902339255ea7a9ad15
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -44,9 +47,4 @@ Het rapport Naleving van instelling bevat de details voor alle nalevingsinstelli
 - Het platform waarop de instelling wordt toegepast.
 
 U kunt inzoomen op de instellingen om meer informatie te bekijken over de profielen waarvoor deze instellingen zijn ingeschakeld en de geconfigureerde waarde van de instelling.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

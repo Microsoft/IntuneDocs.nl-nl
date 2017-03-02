@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -51,8 +52,7 @@ Voordat u het inschrijven van mobiele apparaten inschakelt, moet u ervoor zorgen
 De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
 
 >[!IMPORTANT]
-> Overweeg zorgvuldig of u mobiele apparaten wilt beheren met Intune alleen (onlineservice) of met System Center Configuration Manager met Intune (on-premises softwareoplossing in combinatie met de onlineservice). Nadat de instantie voor het Mobile Device Management is ingesteld, kan deze niet meer worden gewijzigd.
-
+> Overweeg zorgvuldig of u mobiele apparaten wilt beheren met Intune alleen (onlineservice) of met System Center Configuration Manager met Intune (on-premises softwareoplossing in combinatie met de onlineservice). Nadat u de instantie voor beheer van mobiele apparaten hebt ingesteld, kunt u deze niet wijzigen zonder de hulp van Microsoft Support. Zie [Wat te doen als u de verkeerde instelling kiest voor MDM-instantie](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor instructies.
 
 
 1.  Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de optie **Beheer** &gt; **Mobile Device Management**.
@@ -151,8 +151,63 @@ Nu de inschrijving is ingeschakeld, moet u het beheer instellen om aan de behoef
 - [Apps toevoegen](add-apps.md) en [app implementeren](deploy-apps.md) voor beheerde apparaten
 - [Nalevingsbeleid voor apparaten maken](introduction-to-device-compliance-policies-in-microsoft-intune.md) en [ toegang beperken op basis van naleving](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Wat te doen als u de verkeerde instelling kiest voor MDM-instantie
 
+Als u besluit dat u de verkeerde instelling hebt gekozen voor MDM-instantie en deze moet wijzigen, moet u contact opnemen met Microsoft Support. U kunt deze instelling zelf niet wijzigen. Raadpleeg voordat u contact opneemt met Microsoft Support, de volgende informatie die beschrijft welke informatie Microsoft Support van u nodig heeft om de wijziging uit te voeren.
 
-<!--HONumber=Dec16_HO2-->
+Er zijn drie manieren om uw MDM-instantie opnieuw in te stellen. In uw ondersteuningsaanvraag moet u kiezen welke manier van toepassing is op uw situatie. Als het scenario dat u hebt aangevraagd niet wordt vermeld, kunt u contact opnemen met Microsoft Support.
 
+Microsoft Support vraagt u de volgende informatie te bevestigen:
+
+- Tenant-ID: het domein dat wordt gebruikt voor aanmelding bij de service (bijvoorbeeld intune.onmicrosoft.com)
+- De MDM-instantie waarin u wilt wijzigen
+- Bevestiging dat u de hieronder vermelde vereiste stappen hebt voltooid
+
+Als u van co-existentie gebruikmaakt, moet u zowel de Intune- als Office 365-controlelijsten bevestigen.
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>De MDM-instantie opnieuw instellen van Intune naar Configuratiebeheer
+
+Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om uw MDM-instantie opnieuw in te stellen.
+
+- Alle apparaten met de Intune-beheerconsole buiten gebruik stellen. Probeer niet een apparaat buiten gebruik te stellen vanaf het apparaat zelf. 
+- Verwijder de Service To Service Connector (onder **Beheer** > **Beheer van mobiele apparaten** > **Microsoft Exchange**), of schakel de Exchange-Connector uit als u die hebt ingesteld. 
+- Verwijder de rol van Apparaatinschrijvingsmanager uit **Beheer** > **Apparaatinschrijvingsmanager**.
+- Schakel de apparaatgroeptoewijzing uit in **Beheer** > **Beheer van mobiele apparaten** > **Apparaatgroeptoewijzing**.
+- Verwijder sideloading keys uit **Beheer** > **Beheer van mobiele apparaten** > **Windows** > **Side Loading Keys**.
+- Verwijder het iOS APNs-certificaat in **Beheer** > **Beheer van mobiele apparaten** > **iOS**-pagina.
+- Verwijder het iOS DEP-token in **Beheer** > **Beheer van mobiele apparaten** > **iOS**-pagina.
+- Verwijder alle beleidsregels voor MDM-apparaten onder **Beleid** > **Configuratiebeleid**.
+- Verwijder alle gepubliceerde toepassingen voor MDM-apparaten in **Apps** > **Beheerde software**.
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Stel de MDM-instantie opnieuw in van Configuratiebeheer naar Intune
+
+Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om uw MDM-instantie opnieuw in te stellen.
+
+- Stel alle apparaten (die worden beheerd als mobiele apparaten) buiten gebruik met de Configuration Manager-console. Probeer niet een apparaat buiten gebruik te stellen vanaf het apparaat zelf. 
+- Verwijder alle gebruikers uit de Intune-gebruikersgroep. Wijs het Intune-abonnement naar een lege gebruikersverzameling of verwijder alle gebruikers uit de doelverzameling.  Bevestig in het bestand CloudUserSync.log dat gebruikers zijn verwijderd. 
+- Schakel het selectievakje uit van het iOS-platform om het APNs-certificaat op te schonen.
+- Verwijder alle gepubliceerde toepassingen voor MDM-apparaten.
+- Verwijder alle beleidsregels voor MDM-apparaten. 
+- Verwijder de Windows Intune Connector uit de Configuration Manager-console (alleen van toepassing op R2 SP1 of lager).
+-Verwijder het Intune-abonnement door met de rechtermuisknop op het abonnement te klikken en **Verwijderen** te selecteren.
+- Start de SMS Executive-service opnieuw.
+- Geef ons een aantal voorbeeldgebruikers zodat we, nadat het proces is voltooid, kunnen verifiëren dat de Configuration Manager-licenties zijn verwijderd.
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Stel de MDM-instantie opnieuw in van Office 365 naar Configuration Manager
+
+1. Navigeer naar [https://protection.office.com](https://protection.office.com).
+2. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeheer**. 
+3. Stel alle apparaten buiten gebruik door **Selectief wissen** te kiezen. Probeer niet een apparaat buiten gebruik te stellen vanaf het apparaat zelf. Als selectief wissen is uitgeschakeld, is er geen verdere actie vereist.
+4. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeveiligingsbeleid**. 
+5. Selecteer **Verwijderen** voor alle bestaande beleidsregels. Als de beleidsregels in behandeling zijn, is geen verdere actie vereist.
+
+>[!NOTE]
+>Het iOS APsN-certificaat kan niet worden verwijderd en blijft gekoppeld aan het account. 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>Volgende stappen voor het opnieuw instellen van de MDM-instantie
+
+Als Microsoft Support de items in de relevante controlelijst heeft geverifieerd, kan het opnieuw instellen van de MDM-instantie maximaal drie werkdagen duren, maar gebeurt het meestal binnen een dag. 
+
+>[!IMPORTANT]
+>Probeer uw abonnement niet te configureren voordat Microsoft Support bevestigt dat het opnieuw instellen is voltooid! Voortijdig configuratie kan leiden tot beschadiging en/of invloed hebben op uw mogelijkheid om de Intune-service te gebruiken. 
 

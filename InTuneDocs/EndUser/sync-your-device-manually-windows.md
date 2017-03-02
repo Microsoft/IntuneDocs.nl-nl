@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
-ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 Soms kan het installeren van een app op een Windows-apparaat langer duren dan u denkt. In dat geval kunt u proberen het Windows-apparaat handmatig te synchroniseren. Synchronisatie kan bijdragen aan een snellere installatie.
 
-> [!Note] 
+> [!Note]
 > De installatie van apps kan wat langer duren in een trager netwerk of als er grotere hoeveelheden apparaten op hetzelfde moment inhoud downloaden.
 
 In de volgende versies van Windows kunt u handmatig synchroniseren. Als uw apparaat een andere versie van Windows gebruikt, kunt u helaas geen handmatige synchronisatie uitvoeren.
@@ -131,9 +133,4 @@ Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchron
    Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven tot het apparaat is gesynchroniseerd.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

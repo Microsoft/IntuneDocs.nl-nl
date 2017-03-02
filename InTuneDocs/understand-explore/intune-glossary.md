@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |E-mailprofiel|Dit beleid kan worden gebruikt voor het instellen van [toegangsinstellingen voor e‑mail ](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) voor specifieke e‑mailclients op mobiele apparaten, zodat de eindgebruiker maar een minimum aan installatiehandelingen hoeft te verrichten.|
 |EMS|Microsoft Enterprise Mobility + Security (voorheen Enterprise Mobility Suite) beveiligt de gegevens van uw bedrijf en zorgt tegelijkertijd dat uw gebruikers [toegang hebben tot de apps en inhoud die ze nodig hebben](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|Eindgebruiker|[Gebruikers van apparaten, zoals telefoons en pc's](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) die u beheert met Intune.|
+|Eindgebruiker|[Gebruikers van apparaten zoals telefoons en pc's](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) die worden beheerd met Intune.|
 |Inschrijven|Microsoft Intune maakt gebruik van [inschrijving](/intune/deploy-use/enroll-devices-in-microsoft-intune) om apparaten onder beheer te brengen en toegang tot resources toe te staan.|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Wi-Fi-profiel|Een beleid dat [draadloze netwerkinstellingen](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) implementeert naar apparaten, waarmee gebruikers verbinding kunnen maken met uw bedrijfsnetwerk zonder dat ze de instellingen hoeven te kennen of te configureren.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

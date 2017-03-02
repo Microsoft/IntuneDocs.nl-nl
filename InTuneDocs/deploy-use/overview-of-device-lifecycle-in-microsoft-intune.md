@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
+ms.sourcegitcommit: b7a066c1387a97d6100be0e6ab22d78222bf2a30
+ms.openlocfilehash: 3311ba5081c4b04d72fdeb1f9a558ffc2e1b02fc
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -40,15 +42,10 @@ Registratie van de apparaten is slechts de eerste stap. Om te profiteren van all
 
 ## <a name="protect"></a>Beveiligen
 In de huidige IT-wereld is het beveiligen van apparaten tegen ongeoorloofde toegang een van de belangrijkste taken die u moet uitvoeren. Naast de items die u in de levenscyclus van het apparaat in de stap **Configureren** vindt, biedt Intune deze mogelijkheden om apparaten die u beheert te beveiligen tegen onbevoegde toegang of aanvallen:
-- [**Multi-factor Authentication**](protect-windows-devices-with-multi-factor-authentication.md). U kunt apparaten nog beter beveiligen door een extra verificatielaag toe te voegen voor gebruikersaanmelding. Apparaten met Windows, Windows Phone en Windows Mobile bieden meervoudige verificatie waarbij een tweede verificatieniveau is vereist, zoals een telefoongesprek of sms-bericht, voordat gebruikers toegang kunnen krijgen.
+- [**Multi-factor Authentication**](protect-your-devices-with-microsoft-intune.md). U kunt apparaten nog beter beveiligen door een extra verificatielaag toe te voegen voor gebruikersaanmelding. Veel apparaten ondersteunen meervoudige verificatie waarbij een tweede verificatieniveau is vereist, zoals een telefoongesprek of sms-bericht, voordat gebruikers toegang kunnen krijgen.
 - [**Instellingen voor Microsoft Passport**](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). Microsoft Passport is een alternatieve aanmeldingsmethode waarmee gebruikers gebruikmaken van een *gebaar*, zoals een vingerafdruk of Windows Hello, om zich aan te melden zonder een wachtwoord.
 - [**Beleid voor het beveiligen van Windows-pc’s (met de Intune-clientsoftware)**](policies-to-protect-windows-pcs-in-microsoft-intune.md). Bij het beheren van Windows-pc's met de Intune-clientsoftware zijn beleidsregels beschikbaar waarmee u instellingen voor Endpoint Protection, software-updates en Windows Firewall kunt configureren op pc's die u beheert.
 
 ## <a name="retire"></a>Buiten gebruik stellen
 Wanneer een apparaat kwijtraakt, wordt gestolen, moet worden vervangen, of als gebruikers een andere functie krijgen, is het meestal nodig het apparaat [buiten gebruik te stellen of te wissen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Er zijn verschillende manieren waarop u dit kunt doen, variërend van het opnieuw instellen van het apparaat, het verwijderen van het apparaat uit beheer en het wissen van de bedrijfsgegevens die erop staan.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

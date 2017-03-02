@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,15 +41,21 @@ Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergr
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen
 
-1.    Tik op de [website van de bedrijfsportal](http://portal.manage.microsoft.com) op de naam van het apparaat dat u wilt vergrendelen.
+1.    Op de [Bedrijfsportal-website ](http://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
-2.    Tik op **Extern vergrendelen**.
+  ![Een afbeelding van de Bedrijfsportal-website met een uitgebreid menu aan de linkerkant van het scherm met de knoppen Startpagina, Alle apps, Mijn apparaten, Helpdesk en Optie voor afmelden.](/media/iwp-expanded-sidebar.png)
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat dat u wilt vergrendelen.
 
-3.    Er wordt een bericht weergegeven met de melding dat u op het punt staat om uw apparaat te vergrendelen. Tik op **Extern vergrendelen**. Uw apparaat wordt dan vergrendeld via de website van de bedrijfsportal.
+  ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-    Wanneer u op **Extern vergrendelen** hebt getikt, wordt het bericht Extern vergrendelen is in behandeling weergegeven.  Als extern vergrendelen is gelukt, wordt de status gewijzigd in 'Extern vergrendelen is voltooid'.
+3.    Het apparaat wordt in een pop-upvenster geopend. Tik op de knop **Extern vergrendelen**.
+
+    ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
+
+4.    Er wordt een bericht weergegeven met de melding dat u op het punt staat om uw apparaat te vergrendelen. Tik op **Extern vergrendelen**. Uw apparaat wordt dan vergrendeld via de website van de bedrijfsportal.
+
+    Wanneer u **Extern vergrendelen** hebt geselecteerd, wordt het bericht 'Extern vergrendelen is in behandeling' weergegeven.  Als extern vergrendelen is gelukt, wordt de status gewijzigd in 'Extern vergrendelen is voltooid'.
 
     De status Externe vergrendelen wordt op drie locaties weergegeven:
 
@@ -62,9 +69,4 @@ Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergr
 Als u uw apparaat terugvindt en het wilt ontgrendelen nadat u eerder Extern vergrendelen hebt gebruikt, voer dan gewoon uw wachtwoordcode in.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

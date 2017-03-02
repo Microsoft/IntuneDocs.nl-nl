@@ -1,5 +1,6 @@
 ---
-title: Volledig of selectief wissen op apparaten met Intune | Intune Azure Preview | Microsoft Docs
+title: Volledig of selectief wissen op apparaten met Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over het selectief wissen van bedrijfsgegevens op een apparaat of het apparaat volledig wissen om de fabriekswaarden te herstellen.'
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 3.  Kies op de blade met de naam van het apparaat **Remove comp...** (Bedrijfsgeg...), wat staat voor Bedrijfsgegevens verwijderen, en kies vervolgens **Ja** om het wissen te bevestigen.
 
 Als het apparaat is ingeschakeld en verbonden, wordt een wisopdracht in minder dan 15 minuten aan alle typen apparaten doorgegeven.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

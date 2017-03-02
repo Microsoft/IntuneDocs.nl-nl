@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: f557aab61a61bde8937d72c99ccf652787170002
+ms.sourcegitcommit: b47b5159a5de5180859a9d3d9edc500b0853448c
+ms.openlocfilehash: dfcc383f88d82ff1a12d917905ca25740f2e9ac0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,19 @@ Als u besluit dat u uw apparaat niet meer wilt laten beheren door uw bedrijf of 
 
 Ga als volgt te werk om uw apparaat te verwijderen:
 
-1.  Open de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) en tik op de naam van het apparaat dat u wilt verwijderen.
+1.    Op de [Bedrijfsportal-website ](http://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
-2.  Tik op **Verwijderen**.
+  ![Een afbeelding van de Bedrijfsportal-website met een uitgebreid menu aan de linkerkant van het scherm met de knoppen Startpagina, Alle apps, Mijn apparaten, Helpdesk en Optie voor afmelden.](/media/iwp-expanded-sidebar.png)
 
-    ![Optie voor het verwijderen van een apparaat op de bedrijfsportalwebsite](./media/iwp-screen-with-all-options.png)
+2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat dat u wilt verwijderen.
 
-3. Lees het waarschuwingsbericht, en tik vervolgens op **Verwijderen** als u uw apparaat uit de bedrijfsportal wilt verwijderen.
+    ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
+
+3.    Het apparaat wordt in een pop-upvenster geopend. Klik op de knop **Verwijderen**.
+
+      ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
+
+4. Lees het waarschuwingsbericht, en tik vervolgens op **Verwijderen** als u uw apparaat uit de bedrijfsportal wilt verwijderen.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

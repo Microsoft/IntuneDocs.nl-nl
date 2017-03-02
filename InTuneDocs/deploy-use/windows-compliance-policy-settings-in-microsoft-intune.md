@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -75,6 +76,9 @@ De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
   -  **BitLocker is ingeschakeld:** wanneer BitLocker is ingeschakeld, kan het apparaat gegevens die zijn opgeslagen op de schijf beschermen tegen onbevoegde toegang wanneer het systeem naar de sluimerstand overschakelt of wordt uitgeschakeld. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beveiligen. Met BitLocker kan worden voorkomen dat met een computer kan worden geknoeid, zelfs als deze zonder toezicht is, kwijtgeraakt is of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen waarmee de gegevens worden beschermd. Als gevolg hiervan zijn de sleutels niet toegankelijk totdat de TPM de status van de computer heeft gecontroleerd.
   -  **Code-integriteit is ingeschakeld:** code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Via deze functie wordt gedetecteerd of een niet-ondertekend stuurprogramma- of systeembestand in de kernel is geladen. Ook wordt gedetecteerd of een systeembestand is gewijzigd door schadelijke software die wordt uitgevoerd door een gebruikersaccount met beheerdersbevoegdheden.
   - **Beveiligd opstarten is ingeschakeld:** als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert dit voordat de computer kan worden opgestart. Als er bestanden zijn gemanipuleerd, waardoor de handtekening ongeldig is geworden, kan het systeem niet worden opgestart.
+
+  > [!IMPORTANT]
+  > Windows-apparaten bieden geen ondersteuning voor **Early Launch Anti-Malware** (ELAM)-software van derden als onderdeel van de apparaatstatusverklaring.
 
   Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
 ###  <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
@@ -151,9 +155,4 @@ Als u de versie van het besturingssysteem wilt vinden die u voor de instellingen
 
 - Voor Windows 10-computers moet de versie worden ingesteld op **10.0**, gevolgd door het build-nummer van het besturingssysteem dat wordt geretourneerd door de opdracht **winver**. Dit nummer ziet er bijvoorbeeld zo uit: 10.0.10586.
 > ![Build-versie van het besturingssysteem gemarkeerd in het dialoogvenster Info](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

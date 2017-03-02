@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: ab035d069fa1dbf5f5f38a959dc2f896a0109b6f
+ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
+ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -76,7 +77,7 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 2. Geef **algemene gegevens** op, zoals een **Naam** en **Beschrijving**, en geef aan of apparaten die aan het profiel zijn toegewezen, gebruikersaffiniteit hebben of deel uitmaken van een groep.
 
-   - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie voordat toegang tot gegevens en e-mail van het bedrijf kan worden verleend. **Gebruikersaffiniteit** moet worden ingesteld voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren). Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten.
+   - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie voordat toegang tot gegevens en e-mail van het bedrijf kan worden verleend. **Gebruikersaffiniteit** moet worden ingesteld voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren). Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Nieuwe gebruikers die hun wachtwoord moeten wijzigen wanneer ze zich voor het eerst aanmelden, kunnen geen prompt krijgen tijdens de inschrijving voor DEP-apparaten. Daarnaast wordt gebruikers waarvan de wachtwoorden zijn verlopen niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de DEP-inschrijving, en moeten deze het wachtwoord vanaf een ander apparaat opnieuw instellen. 
 
    > [!NOTE]
    > Voor DEP met gebruikersaffiniteit moet WS-Trust 1.3 gebruikersnaam/mixed-eindpunt zijn ingeschakeld om een gebruikerstoken aan te vragen.
@@ -161,9 +162,4 @@ In december 2016 is apparaatgroepbeheer verplaatst naar Azure Active Directory. 
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het inschrijven van apparaten](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Wanneer u een Windows- of Windows Phone-apparaat in Intune inschrijft, profiteer
 
 -   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
 
--   Bedrijfsapps ophalen via de bedrijfsportalwebsite. (Voor Windows 7 en Windows Vista kunt u alleen bedrijfsapps ophalen via de bedrijfsportalwebsite.)
+-   Bedrijfsapps ophalen via de bedrijfsportalwebsite. (__Opmerking__: voor Windows 7 en Windows Vista kunt u alleen bedrijfsapps ophalen via de Bedrijfsportalwebsite.)
 
 -   Het e-mailaccount van uw bedrijf of school wordt automatisch ingesteld.
 
@@ -67,6 +68,7 @@ Wanneer u uw apparaat inschrijft, geeft u de IT-beheerder toestemming voor hande
 -  De IT-beheerder kan apps en updates op uw computer installeren.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Wat gebeurt er elke acht uur na de inschrijving van het apparaat
+
 Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
 -   Beleids- of app-updates die de IT-beheerder beschikbaar heeft gemaakt, worden gedownload.
@@ -76,9 +78,4 @@ Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
 Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

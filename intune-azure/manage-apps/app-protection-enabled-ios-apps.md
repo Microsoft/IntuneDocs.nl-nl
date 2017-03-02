@@ -1,5 +1,6 @@
 ---
-title: iOS-apps met app-beveiligingsbeleid | Intune Azure Preview | Microsoft Docs
+title: iOS-apps met beveiligingsbeleid voor apps| Intune Azure Preview
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid.'
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: ae646cf3dd1b1469b9f87ac66ad7171d77ef6518
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -63,9 +66,4 @@ Als u een iOS-apparaat gebruikt en probeert op hetzelfde apparaat een tweede wer
 [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-android-apps.md)
 ### <a name="see-also"></a>Zie tevens
 [App-beveiligingsbeleid maken en implementeren met Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

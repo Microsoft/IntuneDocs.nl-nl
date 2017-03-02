@@ -1,20 +1,22 @@
 ---
-title: Meervoudige verificatie voor apparaatinschrijvingen in Intune| Microsoft Docs
+title: Meervoudige verificatie voor apparaatinschrijving in Intune| Microsoft Docs
 description: Hoe u in Azure AD Multi-Factor Authentication vereist voor apparaatregistratie.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 02/03/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 30ed470200a830caa3c31be284f27e4b2347a71a
-ms.openlocfilehash: fa14ab5d4297a31d80b48611708e8a78d7513b8d
+ms.sourcegitcommit: 7768013a1cc764b6dfbf4b7d22be4f5cf95f50bf
+ms.openlocfilehash: dba070ef76de8015b347e760b424a5e28ce6ddec
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -56,9 +58,4 @@ Voer de volgende stappen uit om MFA te vereisen wanneer een apparaat wordt gereg
 > [!IMPORTANT]
 > 
 > Configureer geen **op het apparaat gebaseerde toegangsregels** voor Microsoft Intune-registratie.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

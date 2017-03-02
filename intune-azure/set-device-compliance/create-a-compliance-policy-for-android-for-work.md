@@ -1,5 +1,6 @@
 ---
-title: Een nalevingsbeleid maken voor Android for Work | Intune Azure Preview | Microsoft Docs
+title: Een nalevingsbeleid maken voor Android for Work
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u informatie over het maken van een nalevingsbeleid voor Android for Work-apparaten.'
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 48eaa3cbe1ff4e3fb18bfa762a341dbe74a7adce
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -119,9 +122,4 @@ Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: Beleid voor voorwaardelijke toegang voor Exchange On-Premises | Intune Azure Preview | Microsoft Docs
+title: Voorwaardelijk toegangsbeleid voor Exchange on-premises
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune kunt configureren'
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ De **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bij Intun
   - Wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd.  Apparaten die deel uitmaken van gebruikers in de **opgenomen groepen** krijgen toegang zodra de apparaten zijn ingeschreven in Intune en zijn geëvalueerd als compatibel. Android-apparaten waarop Samsung KNOX Standard niet wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
 10. Kies **Toevoegen** onder **Uitzonderingen van apparaatplatform** om de platformen op te geven. Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd. Kies **OK** om de instellingen op te slaan.
 11. Klik op de blade **On-premises** op **Opslaan** om het beleid voor voorwaardelijke toegang op te slaan.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: App-beveiligingsbeleid maken en implementeren | Intune Azure Preview | Microsoft Docs
+title: Beveiligingsbeleid voor apps maken en implementeren
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over hoe het app-beveiligingsbeleid van Intune kan helpen bij de beveiliging van bedrijfsgegevens die worden gebruikt door apps die u beheert.'
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -122,9 +125,4 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 ### <a name="see-also"></a>Zie tevens
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-android-apps.md)
 * [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

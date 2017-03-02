@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
     (Op bepaalde telefoons moet u **Opslag** &gt; **Versleuteling van opslag** of op **Opslag** &gt; **Schermvergrendeling en beveiliging** &gt; **Overige beveiligingsinstellingen** kiezen om de optie Versleutelen weer te geven).
 
 3.  Volg de instructies op het scherm. Tijdens het versleutelen kan het apparaat meerdere keren opnieuw opstarten.
+
+> [!Note]
+> Bepaalde Android-apparaten kunnen niet worden versleuteld. Zie [hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) voor meer informatie.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Wat te doen bij problemen
 **Probleem**: u hebt uw apparaat al versleuteld en wordt geconfronteerd met het volgende:
@@ -64,10 +68,6 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
     5. Open de bedrijfsportal-app, selecteer uw apparaat en tik op **Naleving controleren**.
 
+
 Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het [Microsoft Android-team](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

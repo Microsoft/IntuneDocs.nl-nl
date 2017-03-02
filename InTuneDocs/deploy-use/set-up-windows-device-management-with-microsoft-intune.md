@@ -12,9 +12,11 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 115eae8e2d733397eb4b0f025789ca7d0522a845
-ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -45,7 +47,9 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
 2. **CNAME-records maken** (optioneel)<br>
 Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar enterpriseenrollment-s.manage.microsoft.com.
 
-    Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records het voor gebruikers makkelijker om zich in te schrijven. Als er geen CNAME-inschrijvingsrecord wordt gevonden, wordt gebruikers gevraagd de MDM-servernaam (enrollment.manage.microscoft.com) handmatig in te voeren.    
+
+    Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records het voor gebruikers makkelijker om zich in te schrijven. Als er geen CNAME-inschrijvingsrecord wordt gevonden, wordt gebruikers gevraagd de MDM-servernaam handmatig in te voeren, https://enrollment.manage.microscoft.com.
+
 
     CNAME-bronrecords moeten de volgende informatie bevatten:
 
@@ -70,12 +74,9 @@ Maak **CNAME**-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bed
 
     Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor meer informatie over taken voor eindgebruikers.
 
+Zie de artikelen       - [Bronnen over de eindgebruikerservaring met Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+      - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md) voor meer informatie over taken voor eindgebruikers
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

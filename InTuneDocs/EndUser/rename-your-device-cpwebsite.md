@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,17 @@ U kunt beslissen om de naam van uw apparaat te wijzigen zodat het makkelijker te
 
 Ga als volgt te werk om de naam van uw apparaat te wijzigen:
 
-1.  Open de [website van de bedrijfsportal](http://portal.manage.microsoft.com) en tik op het apparaat waarvan u de naam wilt wijzigen.
+1.    Op de [Bedrijfsportal-website ](http://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
-2.  Tik op **Naam wijzigen**.
+2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de naam wilt wijzigen.
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Typ de nieuwe naam voor uw apparaat in het vak waar de apparaatnaam wordt weergegeven en tik vervolgens op de knop **Wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
+3.    Het apparaat wordt in een pop-upvenster geopend. Tik op de knop **Naam wijzigen**.
+
+    ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportal-website, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Vergrendelen op afstand. ](./media/iwp-screen-with-all-options.png)
+
+4.  Typ de nieuwe naam voor uw apparaat in het vak waar de apparaatnaam wordt weergegeven en tik vervolgens op de knop **Wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

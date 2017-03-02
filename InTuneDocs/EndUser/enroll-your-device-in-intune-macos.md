@@ -5,7 +5,7 @@ keywords: Mac OS X, Mac OS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,37 +37,36 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. Wanneer u zich aanmeldt, worden de beschikbare __Apps__, __Mijn apparaten__ en __contactgegevens__ weergeven voor uw IT-personeel. Boven aan de pagina wordt het volgende bericht weergegeven: **Dit apparaat is niet geregistreerd of kan niet worden geïdentificeerd door de bedrijfsportal. <u>Tik hier</u> om een ander apparaat te selecteren.** Klik op __Tik hier__.
+3. Wanneer u zich aanmeldt, ziet u alle beschikbare tabbladen: __Home__, __Apps__ en __Categorieën__. Op deze pagina ziet u alle beschikbare apps die u kunt installeren. Als u nog geen apparaten hebt ingeschreven, ziet u de volgende melding **We kunnen u geen apps tonen.** U kunt doorgaan door __Mijn apparaten__ te selecteren.
 
- ![Landingspagina Bedrijfsportal Bedrijf Portal Mac OS](./media/macOS_enroll_001_landing_page.png)
+ ![Een schermafbeelding van de startpagina voor de web-portal waarin wordt aangegeven dat er nog geen apps kunnen worden geïnstalleerd, met een knop Mijn apparaten eronder.](./media/macOS_enroll_001_landing_page.png)
 
-4. Er wordt een pop-upvenster weergegeven met een korte uitleg waarom u __dit apparaat gaat identificeren of registreren__. Controleer deze informatie en klik vervolgens op __Registreren__ om door te gaan.
+4. Op de pagina __Mijn apparaten__ ziet u ofwel een lijst van geregistreerde apparaten of gewoon een koptekst. Dit is afhankelijk van of u al een apparaat hebt ingeschreven, macOS of anderszins. Om een apparaat in te schrijven dat niet wordt weergegeven, selecteert u de koptekst __Klik hier als uw apparaat in de lijst voorkomt om het te identificeren. U kunt ook hier tikken om uw apparaat in te schrijven als dit niet wordt weergegeven__.
 
- ![Dit Mac OS-apparaat identificeren of registreren](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. Er wordt een tweede pop-upvenster weergegeven met een korte uitleg wat er gebeurt wanneer u __dit apparaat registreert__. Controleer deze informatie en klik vervolgens op __Installeren__ om door te gaan.
+5. Er wordt een pop-upvenster weergegeven met een korte uitleg waarom u __dit apparaat gaat identificeren of registreren__. Controleer deze informatie en klik vervolgens op __Registreren__ om door te gaan.
 
- ![Dit Mac OS-apparaat registreren](./media/macOS_enroll_003_enroll_popup.png)
+ ![Dit Mac OS-apparaat identificeren of registreren](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. Er wordt een tweede pop-upvenster weergegeven met een korte uitleg wat er gebeurt wanneer u __dit apparaat registreert__. Controleer deze informatie en klik vervolgens op __Installeren__ om door te gaan.
+
+ ![Dit Mac OS-apparaat registreren](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > Intune heeft toegang nodig tot uw computer om te controleren of dit apparaat voldoende is beveiligd om toegang te verkrijgen tot de bronnen van uw organisatie. Lees [wat er gebeurt wanneer u uw apparaat registreert bij Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
-6. De __Systeemvoorkeuren__ worden geopend en de vraag __Beheerprofiel installeren?__ wordt weergegeven Klik op __Installeren__ om door te gaan, of klik op __Profiel weergeven__ voor meer informatie.
+7. De __Systeemvoorkeuren__ worden geopend en de vraag __Beheerprofiel installeren?__ wordt weergegeven Klik op __Installeren__ om door te gaan, of klik op __Profiel weergeven__ voor meer informatie.
 
- ![Beheerprofiel installeren](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![Beheerprofiel installeren](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. Er wordt een pop-upvenster van Mac OS weergegeven. Bevestig dat u wijzigen wilt aanbrengen door de __Gebruikersnaam__ en het __Wachtwoord__ van uw computer op te geven en klik vervolgens op __OK__. Hiermee installeert u het beheerprofiel op uw Mac.
+8. Er wordt een pop-upvenster van Mac OS weergegeven. Bevestig dat u wijzigen wilt aanbrengen door de __Gebruikersnaam__ en het __Wachtwoord__ van uw computer op te geven en klik vervolgens op __OK__. Hiermee installeert u het beheerprofiel op uw Mac.
 
- ![Pop-upvenster Mac OS-profiel installeren](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![Pop-upvenster Mac OS-profiel installeren](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. Mogelijk worden u enkele extra berichten op uw Mac weergegeven met meer informatie over het profiel of met de vraag of u zeker weet of u het profiel wilt __Installeren__. Klik in deze berichten op __Doorgaan__ en __Installeren__ om door te gaan. Nadat de installatie is voltooid, kunt u uw zojuist geïnstalleerde __Beheerprofiel__ bekijken in de lijst met __Apparaatprofielen__.
+9. Mogelijk worden u enkele extra berichten op uw Mac weergegeven met meer informatie over het profiel of met de vraag of u zeker weet of u het profiel wilt __Installeren__. Klik in deze berichten op __Doorgaan__ en __Installeren__ om door te gaan. Nadat de installatie is voltooid, kunt u uw zojuist geïnstalleerde __Beheerprofiel__ bekijken in de lijst met __Apparaatprofielen__.
 
- ![Mac OS-profiel geïnstalleerd](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![Mac OS-profiel geïnstalleerd](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

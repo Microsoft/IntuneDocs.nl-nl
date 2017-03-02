@@ -2,10 +2,10 @@
 title: iOS-apparaten in bedrijfseigendom registreren | Microsoft Docs
 description: iOS-apparaten in bedrijfseigendom inschrijven met het Apple Device Enrollment Program (DEP) of Apple Configurator
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -36,7 +37,7 @@ U kunt iOS-apparaten in bedrijfseigendom via drie verschillende methoden inschri
 - Bedrijfsportal-app
 
 >[!NOTE]
->De Apple Configurator en het Device Enrollment Program kunnen niet worden gebruikt in combinatie met de methode [Apparaatinschrijvingsmanager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+>De Apple Configurator en het Device Enrollment Program kunnen niet worden gebruikt in combinatie met de methode [apparaatinschrijvingsmanager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
 Standaard kunnen alle iOS-apparaten worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](http://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van persoonlijke apparaten of apparaten in bedrijfseigendom wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel vervolgens de toepasselijke opties uit.
 
@@ -49,7 +50,7 @@ iOS-apparaten kunnen worden ingeschreven door een inschrijvingsprofiel voor bedr
 - **Directe inschrijving**: maakt een Apple Configurator-compatibel bestand dat tijdens de voorbereiding van het apparaat wordt gebruikt. Het ingeschreven apparaat krijgt niet opnieuw de fabrieksinstellingen, maar is niet meer gekoppeld aan de gebruiker. Voor deze methode moet de beheerder een USB-verbinding maken tussen het iOS-apparaat en een Mac-computer waarop [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) wordt uitgevoerd, om het apparaat in te schrijven. Zie [Enroll iOS devices using Apple Configurator Direct Enrollment (iOS-apparaten inschrijven met directe inschrijving via Apple Configurator)](ios-direct-enrollment-in-microsoft-intune.md) voor meer informatie.
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Het apparaatinschrijvingsprogramma (DEP) gebruiken
-DEP implementeert een draadloos inschrijvingsprofiel voor apparaten die zijn gekocht via DEP. Wanneer een gebruiker Configuratieassistent op het apparaat uitvoert, wordt het apparaat ingeschreven bij Intune.  Gebruikers kunnen de inschrijving niet opheffen wanneer de apparaten zijn ingeschreven via DEP. Zie [Het Device Enrollment Program implementeren op iOS-apparaten](ios-device-enrollment-program-in-microsoft-intune.md) voor meer informatie.
+DEP implementeert een draadloos inschrijvingsprofiel voor apparaten die zijn gekocht via DEP. Wanneer een gebruiker Configuratieassistent op het apparaat uitvoert, wordt het apparaat ingeschreven bij Intune. Zie [Het Device Enrollment Program implementeren op iOS-apparaten](ios-device-enrollment-program-in-microsoft-intune.md) voor meer informatie.
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Apparaten die zijn geregistreerd via de bedrijfsportal op DEP of Apple Configurator gebruiken
 
@@ -91,9 +92,4 @@ Als gebruikersaffiniteit vereist is, moet **Gebruikersaffiniteit** in het inschr
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

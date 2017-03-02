@@ -1,11 +1,11 @@
 ---
-title: Apparaten beveiligen | Microsoft Docs
+title: Apparaten beveiligen met Microsoft Intune | Microsoft Docs
 description: Informatie over een aantal van de manieren waarop Intune uw apparaten kan beschermen tegen onbevoegde toegang en andere dreigingen.
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -45,10 +47,10 @@ Intune heeft een [nalevingsbeleid voor apparaten](introduction-to-device-complia
 ### <a name="protect-apps-and-the-data-they-use"></a>Apps en de gegevens die ze gebruiken beveiligen
 Intune biedt een reeks functies waarmee u apps en de gegevens ervan kunt beveiligen. Met MAM-beleid (Mobile Application Management) kunt u bijvoorbeeld voorkomen dat er een back-up wordt gemaakt van gegevens van een beveiligde app, het kopiëren en plakken naar andere apps beperken, een pincode vereisen voor toegang tot een app en nog veel meer. Zie [Apps en gegevens beveiligen met Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md) voor meer informatie over het beveiligen van apps.
 
-## <a name="further-capabilities-for-windows-devices"></a>Meer mogelijkheden voor Windows-apparaten
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>Een extra beschermingslaag toevoegen aan apparaten
+[Multi-Factor Authentication (MFA)](multi-factor-authentication-azure-active-directory.md) is een veiligere manier om de identiteit van gebruikers van apparaten op het netwerk te verifiëren.  Met MFA moeten gebruikers hun identiteit niet alleen met een gebruikersnaam en wachtwoord, maar ook via een telefoongesprek of tekstbericht bevestigen.
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Een extra beschermingslaag toevoegen aan Windows-apparaten
-[Multi-Factor Authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) is een veiligere manier om de identiteit van gebruikers van Windows en Windows Phone-apparaten op het netwerk te verifiëren.  Met MFA moeten gebruikers hun identiteit niet alleen met een gebruikersnaam en wachtwoord, maar ook via een telefoongesprek of tekstbericht bevestigen.
+## <a name="further-capabilities-for-windows-devices"></a>Meer mogelijkheden voor Windows-apparaten
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Instellingen van Windows Hello voor Bedrijven beheren op Windows-apparaten
 Intune biedt de mogelijk van integratie met [Windows Hello voor Bedrijven](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (voorheen Microsoft Passport). Dit is een alternatieve aanmeldingsmethode voor Windows 10 en hoger, waarbij Active Directory of een Azure Active Directory-account wordt gebruikt ter vervanging van een wachtwoord, smartcard of virtuele smartcard.
@@ -62,9 +64,4 @@ Activeringsvergrendeling is een functie waarmee gebruikers apparaten kunnen beve
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Windows-pc's beveiligen die door de Intune-client worden beheerd
 Intune blijft ondersteuning bieden voor beveiligingsbeleid voor Windows-pc's die u niet registreert, maar met de clientsoftware van Intune beheert. Zie [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Beleid gebruiken voor het beveiligen van Windows-pc’s waarop de Intune-clientsoftware wordt uitgevoerd) als u wilt weten hoe u dit beleid kunt gebruiken om uw Windows-pc's te beveiligen.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

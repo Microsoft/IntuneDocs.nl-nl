@@ -1,5 +1,6 @@
 ---
-title: Intune-VPN-instellingen voor Windows 10-apparaten | Intune Azure Preview | Microsoft Docs
+title: Intune VPN-instellingen voor Windows 10-apparaten
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op Windows 10-apparaten te configureren.'
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 87004408ddcb07571507f68d5b9925b7e475282a
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -113,12 +116,7 @@ Voor elke server. geef op:
 - **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of apparaten de verbindingsinstellingen automatisch moeten detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
 - **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL in van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) die het configuratiebestand bevat.
 - **Proxyserver gebruiken**: schakel deze optie in als u de proxyserverinstellingen handmatig wilt invoeren.
-    - **Adres**: geef het proxyserveradres op (als IP-adres).
-    - **Poortnummer**: geef het poortnummer op dat is gekoppeld aan de proxyserver.
+    - **Adres**: voer het adres van de proxyserver in (als IP-adres).
+    - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
 - **Proxy niet gebruiken voor lokale adressen**: als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie als u de proxyserver niet wilt gebruiken voor lokale adressen die u opgeeft. Raadpleeg de Windows Server-documentatie voor meer informatie.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

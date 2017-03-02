@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -120,17 +121,22 @@ In de volgende tabel worden foutcodes beschreven die worden weergegeven in **Waa
 |**0x80070032**|Een of meer vereisten voor het installeren van de clientsoftware zijn niet gevonden op de clientcomputer.|Zorg ervoor dat alle vereiste updates zijn geïnstalleerd op de clientcomputer en voer de installatie van de clientsoftware opnieuw uit. Zie [Vereisten voor de netwerkinfrastructuur voor Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) voor meer informatie over de vereisten voor de installatie van de clientsoftware.|
 |**0x80043008**|De updateservice voor Microsoft Online Management kan niet worden gestart.|Neem contact op met Ondersteuning, zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).|
 |**0x80043009**|De clientcomputer is al ingeschreven bij de service.|U moet de clientcomputer buiten gebruik stellen voordat u deze opnieuw in de service kunt inschrijven. Zie [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Apparaten buiten gebruik stellen vanuit Microsoft Intune-beheer) voor instructies.|
+|**0x8004300A**|(Stap 21) Fout treedt op wanneer het registratiepakket wordt geïmplementeerd in het groepsbeleidsobject dat moet worden geïnstalleerd in het gebruikersbereik en niet het computerbereik. |Zorg ervoor dat het groepsbeleidsobject correct via GPSI op het computerbereik is gericht. Voor forumberichten over dit onderwerp, raadpleegt u dit [TechNet-Forum](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod).|
 |**0x8004300B**|Het installatiepakket voor de clientsoftware kan niet worden uitgevoerd omdat de versie van Windows die op de client wordt uitgevoerd, niet wordt ondersteund.|Intune biedt geen ondersteuning voor de versie van Windows die wordt uitgevoerd op de clientcomputer. Zie [Vereisten voor de netwerkinfrastructuur voor Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) voor een lijst met ondersteunde besturingssystemen.|
 |**0xAB2**|Windows Installer heeft geen toegang tot VBScript-runtime voor aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Wanneer u problemen met de DLL oplost, moet u mogelijk gebruikmaken van de hulpprogramma's die worden beschreven in [Microsoft Ondersteuning KB198038: Useful Tools for Package and Deployment Issues (Nuttige hulpprogramma's voor pakket- en implementatieproblemen)](http://go.microsoft.com/fwlink/?LinkID=234255).|
 |**0x8004300f**|De software kan niet worden geïnstalleerd omdat de System Center Configuration Manager-client al is geïnstalleerd.|Verwijder de Configuration Manager-client en voer de installatie van de clientsoftware opnieuw uit.|
 |**0x80043010**|De software kan niet worden geïnstalleerd omdat de Open Mobile Alliance Device Management-client (OMADM) al is geïnstalleerd.|Maak de inschrijving van de OMADM-client ongedaan en probeer de clientsoftware vervolgens opnieuw te installeren.|
 Als de installatieproblemen zich blijven voordoen, neemt u contact op met Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md). Zorg ervoor dat u het registratielogboek van de clientcomputer (in %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log en %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollment.log) en het Windows Update-logboek (%*windir*%\windowsupdate.log) bij de hand hebt om aan ondersteuningstechnici te laten zien.
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>Wat te doen als Endpoint Protection niet is verwijderd wanneer u de client verwijdert
+
+Soms kan de Host Protection-agent (Endpoint Protection) achter zijn gebleven nadat u de bovenstaande opdrachten hebt uitgevoerd. Als dit gebeurt, kunt u deze opdracht uitvoeren vanaf een opdrachtprompt met verhoogde bevoegdheden:
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

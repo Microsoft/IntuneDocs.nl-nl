@@ -2,10 +2,10 @@
 title: Apparaten registreren | Microsoft Docs
 description: Mobile Device Management (MDM) maakt gebruik van inschrijving om apparaten onder beheer te brengen en toegang tot resources toe te staan.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -37,7 +38,7 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 
 - **Wissen**: geeft aan of het apparaat moet worden gewist voordat gebruikers het apparaat kunnen inschrijven. 'Wissen' betekent dat de fabrieksinstellingen van het apparaat worden teruggezet, waardoor alle gegevens worden verwijderd. Zie [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md) voor meer informatie.
 - **Affiniteit**: apparaten worden aan gebruikers gekoppeld. Dit is vereist voor Mobile Application Management (MAM) en voorwaardelijke toegang tot bedrijfsgegevens. Zie [Gebruikersaffiniteit](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices) voor meer informatie.
-- **Vergrendeling** - geeft aan of gebruikers wordt verhinderd hun apparaten uit te schrijven voor beheer. Gebruikers kunnen hun apparaten op alle platforms uitschrijven via de bedrijfsportal-app. Ze kunnen niet de eigen menu’s van het besturingssysteem gebruiken om apparaten uit te schrijven. 
+- **Vergrendeling** - geeft aan of gebruikers wordt verhinderd hun apparaten uit te schrijven met menu’s van het systeemeigen besturingssysteem. Gebruikers kunnen hun apparaten op alle platforms uitschrijven via de bedrijfsportal-app. 
 
 **iOS-registratiemethoden**
 
@@ -130,9 +131,4 @@ Met Intune kunnen de volgende apparaatplatformen worden beheerd:
 - [Vereisten voor apparaatregistratie](prerequisites-for-enrollment.md)
 - [Apparaten in bedrijfseigendom beheren](manage-corporate-owned-devices.md)
 - [Ondersteunde mobiele apparaten en computers](../get-started/supported-mobile-devices-and-computers.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

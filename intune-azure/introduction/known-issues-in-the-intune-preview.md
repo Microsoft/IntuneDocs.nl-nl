@@ -1,5 +1,6 @@
 ---
-title: Bekende problemen in Microsoft Intune Preview | Intune Azure Preview | Microsoft Docs
+title: Bekende problemen in Microsoft Intune Preview
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u meer over bekende problemen in de preview-versie'
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapp
 ## <a name="administration-and-accounts"></a>Beheer en accounts
 
 - Globale beheerders (ook wel tenantbeheerders genoemd) kunnen de reguliere beheertaken voortzetten zonder afzonderlijke Intune- of Enterprise Mobility Suite-licentie (ESM). Als hoofdbeheerders echter de service willen gebruiken, bijvoorbeeld om hun eigen apparaat of een bedrijfsapparaat in te schrijven of om de Intune-bedrijfsportal te gebruiken, moeten ze net als anderen beschikken over een Intune- of EMS-licentie.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

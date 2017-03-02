@@ -1,5 +1,6 @@
 ---
-title: Intune-onderwijsinstellingen voor iOS configureren | Intune Azure Preview | Microsoft Docs
+title: Intune-onderwijsinstellingen configureren voor iOS
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over de instellingen die u kunt gebruiken om onderwijsinstellingen op iOS-apparaten te configureren.'
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 44c427f8-0f22-43c2-8c29-e0f9fa533b1f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 8d801c0b264e95348f55b1d4046c00e43ead5d10
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -43,9 +46,4 @@ ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
