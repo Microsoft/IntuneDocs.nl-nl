@@ -1,5 +1,6 @@
 ---
-title: Een Wi-Fi-profiel met een vooraf gedeelde sleutel maken | Intune Azure Preview | Microsoft Docs
+title: Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: een aangepast Intune-profiel gebruiken om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 174e919a2980ca2cf0e97cc41f5b048183a9d4a7
+ms.lasthandoff: 02/18/2017
 
 
 

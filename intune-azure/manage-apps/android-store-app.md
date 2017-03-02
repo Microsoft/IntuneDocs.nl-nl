@@ -1,5 +1,6 @@
 ---
-title: Android Store-apps toevoegen aan Intune | Intune Azure Preview | Microsoft Docs
+title: Android Store-apps toevoegen aan Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over het toevoegen van Android Store-apps aan Intune.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: bb31b9fac5b6ab7dd26425f5520cb3fb694bf4e7
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e885b0be6d8782f6dd20f395a7792839f20e1adc
+ms.lasthandoff: 02/18/2017
 
 ---
 

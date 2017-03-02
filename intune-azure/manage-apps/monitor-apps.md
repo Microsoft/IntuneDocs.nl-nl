@@ -1,5 +1,6 @@
 ---
-title: App-toewijzingen controleren | Intune Azure Preview | Microsoft Docs
+title: App-toewijzingen controleren
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: nadat u een app hebt toegewezen aan gebruikers of apparaten, gebruikt u deze informatie om de status van de toewijzing te controleren.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 0e6b072c68e3a67e8111ab3ccf5727b4e47cbfb9
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 365d703783ddfd179086e64c5d1a83b36d1199ad
+ms.lasthandoff: 02/18/2017
 
 ---
 
