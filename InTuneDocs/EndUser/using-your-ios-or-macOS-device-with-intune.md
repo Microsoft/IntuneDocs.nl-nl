@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
-ms.openlocfilehash: 0c594c7a22a86ab576c9bdb191ed02f13cdcc19c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -40,7 +40,8 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 
 - [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 - [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
-- [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+- [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 - [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md)
 - [Wat gebeurt er als u de registratie van een apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)

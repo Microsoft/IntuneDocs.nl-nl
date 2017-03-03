@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 76001bd12e5f665eb1a5a0f0fe5442f0a6fedb8c
-ms.openlocfilehash: d653d3eb1d71d30e2bf1104b1d55bfbcf2725c13
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 5732f52474a8b2b61426e349647f88f4f142d2e2
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -43,7 +43,8 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 - [Een pincode of wachtwoord instellen](set-your-pin-or-password-android.md)
 - [Het virtuele particuliere netwerk (VPN) van het bedrijf installeren](install-your-companys-virtual-private-network-VPN-android.md)
 - [Instellen na hoeveel tijd het apparaat moet worden vergrendeld](set-the-amount-of-time-before-your-device-is-locked-android.md)
-- [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-lost-or-stolen-device-android.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+- [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 - [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-android.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-android.md)
 - [De registratie van een apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
