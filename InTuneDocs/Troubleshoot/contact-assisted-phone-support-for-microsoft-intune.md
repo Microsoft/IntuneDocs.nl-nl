@@ -1,11 +1,11 @@
 ---
-title: Contact opnemen met telefonische ondersteuning | Microsoft Intune
-description: Telefoonnummers voor ondersteuning van Intune
-keywords: 
+title: Contact opnemen met telefonische ondersteuning | Microsoft Docs
+description: Telefoonnummers voor ondersteuning bij Microsoft Intune.
+keywords: kantooruren
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
-ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
+ms.lasthandoff: 01/10/2017
 
 
 ---
 
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contact opnemen met telefonische ondersteuning voor Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>Telefoonnummers en kantooruren
 
@@ -115,9 +119,4 @@ ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 |Uruguay|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 UYST (UTC -2)|Spaans&#42;, Engels|000-411-002-7131||
 |Venezuela|24 x 7|Maandag tot vrijdag<br /><br />09:00 – 17:00 VET (UTC -4:30)|Spaans&#42;, Engels|0-800-100-8763||
 &#42;, Ondersteund met vertaling via de telefoon.
-
-
-
-<!--HONumber=Oct16_HO3-->
-
 

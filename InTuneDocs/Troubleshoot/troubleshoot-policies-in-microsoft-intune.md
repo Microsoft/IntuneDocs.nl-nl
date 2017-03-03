@@ -1,17 +1,24 @@
---
-# <a name="required-metadata"></a>Vereiste metagegevens
+---
+title: Beleidsproblemen oplossen | Microsoft Docs
+description: Problemen met de configuratie van het beleid oplossen.
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 01/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+ms.reviewer: tscott
+ms.suite: ems
+ms.custom: intune-classic
+translationtype: Human Translation
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
+ms.lasthandoff: 01/13/2017
 
-title: Beleidsproblemen oplossen | Microsoft Docs description: Problemen met de configuratie van het beleid oplossen.
-keywords: author: robstackmsft ms.author: robstack manager: angrobe ms.date: 01/04/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# <a name="optional-metadata"></a>Optionele metagegevens
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>Doelgroep:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: tscott ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-#<a name="mscustom"></a>ms.custom:
 
 ---
 
@@ -93,8 +100,4 @@ U lost dit probleem op door de lokale systeemtijd zo gelijk mogelijk in te stell
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-
-
-<!--HONumber=Jan17_HO1-->
-
 

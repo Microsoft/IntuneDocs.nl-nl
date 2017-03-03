@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.lasthandoff: 01/11/2017
 
 
 ---
@@ -71,7 +73,7 @@ In combinatie met besturingssysteemfuncties voor het beveiligen van gegevens (bi
 Als u Intune gebruikt met andere services in EMS, kunt u uw organisatie veel meer beveiliging van mobiele apps bieden dan door het mobiele besturingssysteem en de configuratie van mobiele apps zelf wordt geleverd. Een app die wordt beheerd met EMS heeft toegang tot een uitgebreidere reeks functies voor de bescherming van mobiele apps en gegevens, met onder meer:
 
 * [Eenmalige aanmelding](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Multi-Factor Authentication](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [Multi-Factor Authentication](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [Voorwaardelijke toegang tot apps (toegang toestaan als de mobiele app bedrijfsgegevens bevat)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [Het isoleren van bedrijfsgegevens ten opzichte van persoonlijke gegevens binnen dezelfde app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [App-beveiligingsbeleid (pincode, codering, opslaan als, klembord, enzovoort)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -95,7 +97,7 @@ De meeste oplossingen voor het beheer van bedrijfsmobiliteit ondersteunen basist
 
 In verschillende organisaties worden verschillende 'zonder inschrijving'-scenario's gebruikt. Voor sommige organisaties is apparaatgebruik zonder inschrijving de norm. Andere organisaties staan dit soort scenario’s toe voor begeleidingsapparaten, zoals een persoonlijke tablet. Weer andere organisaties ondersteunen deze scenario’s helemaal niet. Zelfs in het laatste geval, als een organisatie vereist dat alle apparaten van werknemers worden ingeschreven in MDM, ondersteunen deze organisaties meestal 'zonder inschrijving'-scenario's voor uitzendkrachten en leveranciers, en voor andere apparaten waarvoor een specifieke uitzondering geldt.
 
-U kunt de 'zonder inschrijving'-technologie van Intune zelfs gebruiken op ingeschreven apparaten. Een apparaat dat is ingeschreven in MDM kan bijvoorbeeld 'Open-in'-beveiliging hebben die wordt geleverd door het mobiele besturingssysteem. Bovendien kan de IT-afdeling app-beveiligingsbeleid toepassen op met EMS beheerde mobiele apps om de opslaan als-bewerkingen te controleren of om meervoudige verificatie te bieden.
+U kunt de 'zonder inschrijving'-technologie van Intune zelfs gebruiken op ingeschreven apparaten. Een apparaat dat is ingeschreven in MDM kan bijvoorbeeld 'Open-in'-beveiliging hebben die wordt geleverd door het mobiele besturingssysteem. ('Open-in'-beveiliging is een iOS-functie waarmee u documenten uit bepaalde apps, zoals Outlook, niet kunt openen in andere apps, zoals Word, tenzij beide apps worden beheerd door de MDM-provider.) Bovendien kan de IT-afdeling app-beveiligingsbeleid toepassen op met EMS beheerde mobiele apps om de opslaan als-bewerkingen te controleren of om meervoudige verificatie te bieden.
 
 Intune als onderdeel van EMS heeft hulpprogramma's waarmee uw medewerkers hun productiviteit kunnen verhogen terwijl uw bedrijfsgegevens beschermd blijven, ongeacht hoe uw organisatie omgaat met ingeschreven en niet-ingeschreven mobiele apparaten en apps.
 
@@ -113,9 +115,4 @@ De volgende lijst van bedrijfsproblemen is gekoppeld aan meer gedetailleerde inf
 * Meer informatie over een aantal [algemene manieren om Intune te gebruiken](common-ways-to-use-intune.md).
 * Vertrouwd raken met het product [met een 30-daagse evaluatieversie van Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Duik in de [technische vereisten en mogelijkheden](/intune/get-started/what-to-know-before-you-start-microsoft-intune) van Intune.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ccd9dacdb2c59febdd741b1a95617cadc1347639
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
+ms.lasthandoff: 01/11/2017
 
 
 ---
@@ -60,6 +62,9 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
 
         ![Uitgever van Microsoft Intune-software](./media/publisher-for-mobile.png)
 
+> [!NOTE]
+> Wanneer u een app vanuit een App Store toevoegt en implementeert, moeten eindgebruikers beschikken over een account bij die Store om de app te kunnen installeren.
+
 3.  Configureer op de pagina **Beschrijving van software** de volgende instellingen:
 
     > [!TIP]
@@ -99,9 +104,4 @@ In deze video van vier minuten leert u hoe u Windows Installer-toepassingen (.ms
 ## <a name="next-steps"></a>Volgende stappen
 
 Nadat u een app hebt gemaakt, is de volgende stap om deze te implementeren. Zie [Apps in Microsoft Intune implementeren](deploy-apps.md) voor meer informatie.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

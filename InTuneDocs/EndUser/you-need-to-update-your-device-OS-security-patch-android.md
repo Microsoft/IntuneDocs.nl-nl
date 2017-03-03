@@ -5,16 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f6fe6f76a700137914ef9cea7ce02753882e2fa3
-ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
+ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
+ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
+ms.lasthandoff: 01/12/2017
 
 
 ---
@@ -27,18 +31,15 @@ Als u een Samsung-apparaat hebt, gaat u naar **Instellingen** > **Over de telefo
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="if-you-have-a-samsung-knox-device"></a>Als u een Samsung Knox-apparaat hebt
+## <a name="for-most-android-devices-non-samsung-knox"></a>Voor de meeste Android-apparaten (niet Samsung Knox)
+
+Ga naar **Instellingen** > **Over** > **Software-updates**. Installeer de update zodat de juiste beveiligingspatch is geïnstalleerd.
+
+## <a name="for-samsung-knox-android-devices"></a>Voor Samsung Knox Android-apparaten
 
 Ga naar **Instellingen** > **Systeemupdates** > **Controleren op nieuwe systeemupdate**. Installeer de update zodat de juiste beveiligingspatch op uw Samsung Knox-apparaat is geïnstalleerd.
 
-## <a name="if-you-do-not-have-a-samsung-knox-device"></a>Als u geen Samsung Knox-apparaat hebt
-
-Ga naar **Instellingen** > **Over** > **Software-updates**. Installeer de update zodat de juiste beveiligingspatch is geïnstalleerd. 
-
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 
-
-<!--HONumber=Jan17_HO1-->
-
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
