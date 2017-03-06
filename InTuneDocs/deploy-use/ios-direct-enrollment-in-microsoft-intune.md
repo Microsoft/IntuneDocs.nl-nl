@@ -4,7 +4,7 @@ description: Gebruik het hulpprogramma Apple Configurator om iOS-apparaten in be
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Wanneer u iOS-apparaten rechtstreeks inschrijft, kunt u een apparaat inschrijven
 9.  Open **Instellingen** op het iOS-apparaat en ga naar **Algemeen** &gt; **Apparaatbeheer** &gt; **Beheerprofiel**. Controleer of de profielinstallatie wordt weergegeven en controleer vervolgens de iOS-beleidsbeperkingen en geïnstalleerde apps. Het kan 10 minuten duren voordat beleidsbeperkingen en apps worden weergegeven op het apparaat.
 
 10.  Apparaten distribueren. Het iOS-apparaat is nu ingeschreven bij Intune en wordt beheerd.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -4,7 +4,7 @@ description: Manieren om Windows-apps beschikbaar te stellen aan gebruikers
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6e295c5df6ec52d3c106fe934d05f10dbc2a3e1f
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -39,9 +40,4 @@ Gebruik deze informatie om te begrijpen hoe en waar uw gebruikers de apps downlo
 ### <a name="see-also"></a>Zie tevens
 [Hoe uw Android-gebruikers apps downloaden](how-your-android-users-get-their-apps.md)</br>
 [Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
