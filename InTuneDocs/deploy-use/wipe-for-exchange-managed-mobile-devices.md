@@ -2,8 +2,8 @@
 title: Wissen van door Exchange beheerde mobiele apparaten | Microsoft Docs
 description: Met Microsoft Intune kunt u mobiele apparaten wissen of opnieuw instellen die met de Intune Exchange Connector worden beheerd door Exchange ActiveSync (EAS)
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 5f8da4e28f3b680d7b5b42c1c54fac4c9c43fbe2
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -33,9 +34,4 @@ Met Microsoft Intune kunt u mobiele apparaten wissen of opnieuw instellen die me
 |Volledig wissen|Hiermee verwijdert u e-mailaccount en e-mail in de cache.|XFabrieksinstellingen terugzetten.|Fabrieksinstellingen terugzetten.|
 |Selectief wissen/e-mail|Hiermee verwijdert u het e-mailaccount.|Niet ondersteund.|Niet ondersteund.|
 |Selectief wissen/beleid|Afdwinging van het beleid wordt verwijderd, maar de instellingen worden niet gewijzigd|XAfdwinging van het beleid wordt verwijderd, maar de instellingen worden niet gewijzigd.|Afdwinging van het beleid wordt verwijderd, maar de instellingen worden niet gewijzigd.|
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
