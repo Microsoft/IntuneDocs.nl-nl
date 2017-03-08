@@ -2,8 +2,8 @@
 title: Pc&quot;s beheren met clientsoftware | Microsoft Docs
 description: Beheer Windows-pc&quot;s door de Intune-clientsoftware te installeren.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

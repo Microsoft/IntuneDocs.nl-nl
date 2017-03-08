@@ -2,7 +2,8 @@
 title: Windows 10 Mobile- en Windows Phone-beheer instellen | Microsoft Docs
 description: Schakel het beheer van mobiele apparaten (MDM) in voor Windows 10 Mobile- of Windows Phone-apparaten met Microsoft Intune.
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

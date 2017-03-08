@@ -3,8 +3,8 @@ title: De instantie voor het beheer van mobiele apparaten instellen
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: informatie over het instellen van de instantie voor het beheer van mobiele apparaten in Intune. '
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article

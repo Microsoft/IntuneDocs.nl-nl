@@ -2,8 +2,8 @@
 title: Contact opnemen met telefonische ondersteuning | Microsoft Docs
 description: Telefoonnummers voor ondersteuning bij Microsoft Intune.
 keywords: kantooruren
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

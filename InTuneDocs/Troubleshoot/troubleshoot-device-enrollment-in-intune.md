@@ -2,8 +2,8 @@
 title: Problemen bij de apparaatregistratie oplossen | Microsoft Docs
 description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

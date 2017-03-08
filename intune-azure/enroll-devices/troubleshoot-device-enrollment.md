@@ -3,8 +3,8 @@ title: Hoe los ik problemen met de inschrijving van apparaten op?
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over het oplossen van problemen bij het registreren van apparaten.'
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

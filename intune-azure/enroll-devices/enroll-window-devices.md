@@ -3,8 +3,8 @@ title: Windows-apparaten inschrijven
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp wordt beschreven hoe u Mobile Device Management (MDM) in Intune voor Windows-apparaten inschakelt.'
 keywords: 
-author: staciebarker
-manager: stabar
+author: nathbarn
+manager: nathbarn
 ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 7262093700dab3a7befd5b82ac9f8ee3dde22dcf
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -84,9 +85,4 @@ U kunt toestaan dat gebruikers hun apparaat installeren en inschrijven met de be
     Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor meer informatie over taken voor eindgebruikers.
 
 Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt implementeren.  Stap 2 en 3 in de beheerconsole kunnen worden genegeerd.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

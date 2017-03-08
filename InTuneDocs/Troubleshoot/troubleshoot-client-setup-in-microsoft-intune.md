@@ -2,8 +2,8 @@
 title: Problemen met de clientinstallatie oplossen | Microsoft Docs
 description: Algemene problemen met de clientinstallatie oplossen.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

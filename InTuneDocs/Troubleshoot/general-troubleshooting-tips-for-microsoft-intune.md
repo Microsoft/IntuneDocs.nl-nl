@@ -2,7 +2,8 @@
 title: Algemene tips voor probleemoplossing | Microsoft Docs
 description: Algemene bronnen voor hulp bij het oplossen van problemen met Intune.
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article

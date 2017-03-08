@@ -2,8 +2,8 @@
 title: Ondersteuning krijgen | Microsoft Docs
 description: Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ In abonnementen op Microsoft Intune en Mobile Device Management voor Office 365 
 Als een ondersteuningsmedewerker u verzoekt een extra ondersteuningsincident te openen voor aanvullende problemen, dient u te begrijpen dat dit in het belang van iedereen is. Bedankt voor uw begrip. In samenwerking met u kunnen we ondersteuning van wereldklasse bieden!
 
 Zie [Professional Support Options](https://support.microsoft.com/gp/offerprophone) (Professionele ondersteuningsopties) voor de prijzen per incident en de ernstniveaus.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

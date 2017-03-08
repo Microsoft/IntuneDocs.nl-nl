@@ -3,8 +3,8 @@ title: Registratiebeperkingen instellen in Intune
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: beperk het registreren per platform en geef een registratielimiet voor apparaten op in Intune. '
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

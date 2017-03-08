@@ -2,8 +2,8 @@
 title: Android-beheer instellen | Microsoft Docs
 description: Schakel het beheer van mobiele apparaten (MDM) in voor Android- en KNOX Standard-apparaten met Microsoft Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
 ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -62,9 +63,4 @@ De bedrijfsportal-app voor Android maakt gebruik van Google Play Services om te 
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

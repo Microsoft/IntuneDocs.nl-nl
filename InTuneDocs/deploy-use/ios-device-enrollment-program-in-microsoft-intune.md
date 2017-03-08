@@ -2,8 +2,8 @@
 title: Apple DEP-beheer voor iOS-apparaten | Microsoft Docs
 description: '&quot;Draadloos&quot; een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program (DEP) zijn aangeschaft om Apple-apparaten te beheren.'
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

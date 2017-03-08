@@ -2,8 +2,8 @@
 title: iOS- en Mac-beheer instellen | Microsoft Docs
 description: Beheer van mobiele apparaten (MDM) inschakelen voor iOS-apparaten zoals iPads en iPhones en tevens Mac OS X-apparaten met Microsoft Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
 ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -58,9 +59,4 @@ Als uw bedrijf of organisatie iOS-apparaten voor gebruikers koopt, kunnen die ap
 
 ### <a name="see-also"></a>Zie ook
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

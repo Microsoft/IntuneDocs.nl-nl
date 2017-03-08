@@ -2,8 +2,8 @@
 title: Apparaten in bedrijfseigendom beheren | Microsoft Docs
 description: Apparaten in bedrijfseigendom kunnen op verschillende manieren worden ingeschreven, afhankelijk van het type apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ Intune herkent een apparaat als 'bedrijfseigendom' als aan een van de volgende v
  - Het apparaat is ingeschreven in [Azure Active Directory of Enterprise Mobility Suite als een Windows 10 Enterprise-apparaat](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (alleen Windows 10).
 
 Wanneer een apparaat is gemarkeerd als bedrijfseigendom, ziet u **Bedrijf** in de kolom **Eigendom** kolom voor dat apparaatrecord in de beheerconsole. 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

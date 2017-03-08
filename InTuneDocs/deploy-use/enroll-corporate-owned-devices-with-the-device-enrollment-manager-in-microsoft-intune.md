@@ -2,8 +2,8 @@
 title: Inschrijven met de apparaatinschrijvingsmanager | Microsoft Docs
 description: "De apparaatinschrijvingsmanager (DEM) kan een groot aantal mobiele apparaten in bedrijfseigendom beheren via één gebruikersaccount."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ Het verwijderen van een apparaatinschrijvingsbeheerder heeft geen invloed op ing
 -   Kunnen apparaten nog steeds niet worden gewist of buiten gebruik worden gesteld met de accountreferenties van de verwijderde apparaatinschrijvingsmanager.
 
 -   Blijft het account van de verwijderde apparaatinschrijvingsmanager gerelateerd aan ingeschreven apparaten, maar kunnen er geen extra apparaten worden ingeschreven.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -2,8 +2,8 @@
 title: Algemene beheertaken voor Windows-pc&quot;s | Microsoft Docs
 description: Meer informatie over de manieren waarop u Windows-pc&quot;s kunt beheren waarop de Intune-softwareclient wordt uitgevoerd.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ Dit onderwerp bevat een lijst met taken die u kunt uitvoeren voor het beheren va
 
 - [Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): hierin wordt uitgelegd hoe pc-gebruikers met Intune hulp op afstand van u kunnen krijgen en worden de vereisten een TeamViewer-instellingen beschreven.
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

@@ -3,8 +3,8 @@ title: Volledig of selectief wissen op apparaten met Intune
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over het selectief wissen van bedrijfsgegevens op een apparaat of het apparaat volledig wissen om de fabriekswaarden te herstellen.'
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

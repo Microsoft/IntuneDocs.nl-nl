@@ -3,8 +3,8 @@ title: iOS-apparaten registreren met Apple Configurator en directe inschrijving
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Apple Configurator kunt gebruiken om iOS-apparaten die bedrijfseigendom zijn in te schrijven met directe inschrijving.'
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
