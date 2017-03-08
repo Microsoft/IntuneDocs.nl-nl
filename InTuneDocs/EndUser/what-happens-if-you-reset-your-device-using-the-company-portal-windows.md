@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-erase-your-device-cp
 |Pc's en laptops|**Windows 8.1 en Windows 8**<br />U kunt een computer met Windows 8 of Windows 8.1 uitsluitend opnieuw instellen als deze alleen voor e-mail wordt gebruikt.<br /><br />**Windows 7 of Windows Vista**<br />U kunt een computer met Windows 7 of een eerdere versie niet opnieuw instellen.|
 
 Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

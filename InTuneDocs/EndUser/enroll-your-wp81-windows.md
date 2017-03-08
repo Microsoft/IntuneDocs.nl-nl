@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -88,9 +89,4 @@ Uw apparaat inschrijven:
 Als uw IT-beheerder de bedrijfsportal zo heeft ingesteld dat deze tijdens de inschrijving is geïnstalleerd, wordt de bedrijfsportal weergegeven in de lijst met apps.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

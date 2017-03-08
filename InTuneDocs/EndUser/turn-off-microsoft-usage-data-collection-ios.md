@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: cea226a32c5c2c6d49f1444e55a986d0c68d5448
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -31,9 +32,4 @@ Microsoft verzamelt automatisch bepaalde gegevens over onze producten en service
 Als u het verzamelen van gebruiksgegevens op een iOS-apparaat wilt uitschakelen, opent u **Instellingen**, tikt u op **Bedrijfsportal** en schakelt u **Gebruiksgegevens** uit.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

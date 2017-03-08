@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
 ms.openlocfilehash: 011bdf38327319358a364a17fa82c03f1320ab63
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -45,9 +47,4 @@ De bedrijfsportal is een app die u toegang geeft tot de apps, de e-mail, het net
 Nadat u de bedrijfsportal-app hebt gedownload, wilt u het apparaat waarschijnlijk [registreren in Intune](enroll-your-device-in-Intune-android.md), zodat u volledig toegang tot uw werkgegevens hebt.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

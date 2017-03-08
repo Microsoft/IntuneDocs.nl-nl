@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: a3cf36eae0342d2047910d1a7ca0da2acb7d2ae6
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -35,9 +36,4 @@ Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het appar
 2.  Klik op **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

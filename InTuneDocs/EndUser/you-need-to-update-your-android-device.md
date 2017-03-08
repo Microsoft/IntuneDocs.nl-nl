@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b70e80fdbbf5009d570f0e4e268537b44996ff50
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -31,9 +32,4 @@ ms.openlocfilehash: b70e80fdbbf5009d570f0e4e268537b44996ff50
 Werk uw Android-apparaat bij door te tikken op **Instellingen** > **Over de telefoon**. In de sectie __Instellingen__ tikt u op __Controleren op updates__ en installeert u de beschikbare update.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

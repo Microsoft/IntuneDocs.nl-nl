@@ -4,7 +4,7 @@ description: Dit onderwerp bevat richtlijnen voor beheerders die Microsoft Intun
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,6 +14,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,9 +29,4 @@ Inhoud van deze handleiding:
 - [Snelstartgids voor Intune](start-with-a-paid-subscription-to-microsoft-intune.md): stapsgewijze instructies om uw proefabonnement om te zetten naar een zakelijk abonnement of om een nieuw abonnement in te stellen voor uw organisatie.
 - [Migreren naar Intune](migrate-to-intune.md): informatie voor de migratie vanuit uw huidige beheeroplossing voor Enterprise Mobility naar Intune.
 - [Volgende stappen met Intune](prevent-company-data-leaks-from-Office-365-mobile-apps.md): een overzicht en de volgende stappen voor algemene Intune-taken.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

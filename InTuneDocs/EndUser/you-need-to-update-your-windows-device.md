@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: dc3444f6da563ac3489790d6d2bc112c497376d4
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -38,9 +39,4 @@ Voor computers met Windows zoekt u naar **besturingssysteem** en volgt u de aanw
 Voor Windows 10 en Windows 8.1 typt u __Windows-versie__ in de __zoekbalk__. Onder __Kan ik helpen?__ selecteert u __Windows-versie__. Het versienummer wordt weergegeven. Dit nummer ziet er ongeveer uit als __10.0.14393.447__.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

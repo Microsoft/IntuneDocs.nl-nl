@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -47,9 +48,4 @@ Houd rekening met het volgende wanneer u een werkprofiel maakt:
 Zie [Een werkprofiel maken en uw apparaat registreren](create-a-work-profile-and-enroll-your-device-in-intune-android.md) voor de stapsgewijze procedure voor het maken van een werkprofiel.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

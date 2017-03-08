@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Er zijn een paar algemene manieren waarop uw apparaat kan zijn geroot:
 - De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. In dit geval moet u contact opnemen met uw IT-beheerder ondersteuning. Ga voor de contactgegevens naar de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
 
 Als u het apparaat zelf hebt geroot, moet u het proces ongedaan maken en het apparaat herstellen naar de niet-geroote staat.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

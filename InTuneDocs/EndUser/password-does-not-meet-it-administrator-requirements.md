@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
 ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -49,9 +50,4 @@ Beschrijvingen van problemen met de pincode of het wachtwoord:
 - **Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen**. Van uw IT-beheerder moet u complexere tekens in uw wachtwoord gebruiken. Probeer tekens zoals cijfers, hoofdletters en symbolen zoals $, % en #. Dit kan ook gelden voor andere accounts op uw apparaat, controleer dus alle andere werkaccounts om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten die door IT zijn ingesteld voor uw apparaat.
 
 Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

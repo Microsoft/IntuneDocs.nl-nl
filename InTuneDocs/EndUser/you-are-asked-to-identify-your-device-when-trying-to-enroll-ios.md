@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -34,9 +35,4 @@ Als u uw iOS- of Mac OS-apparaat probeert te registeren in Intune en u ziet een 
 3. Voer de laatste vier tekens van het serienummer van uw apparaat in, zodat Intune kan bevestigen dat het apparaat is geregistreerd. Zie [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-ios.md) om te zien hoe u uw serienummer vindt.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
