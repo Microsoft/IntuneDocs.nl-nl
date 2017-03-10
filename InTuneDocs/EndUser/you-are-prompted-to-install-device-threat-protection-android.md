@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: bea23fe261cdcb09c7f6699e3a2ee3fcb8f32aba
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -82,9 +83,4 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit gebeurt, installeer Lookout for Work dan handmatig vanuit de Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
