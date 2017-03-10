@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 
 - [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 - [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 - [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md)

@@ -43,7 +43,6 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 - [Een pincode of wachtwoord instellen](set-your-pin-or-password-android.md)
 - [Het virtuele particuliere netwerk (VPN) van het bedrijf installeren](install-your-companys-virtual-private-network-VPN-android.md)
 - [Instellen na hoeveel tijd het apparaat moet worden vergrendeld](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 - [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-android.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-android.md)

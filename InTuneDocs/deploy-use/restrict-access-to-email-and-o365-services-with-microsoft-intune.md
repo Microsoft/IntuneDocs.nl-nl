@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,8 +30,9 @@ U kunt toegang tot uw bedrijfs-e-mail, Office 365-services zoals **Exchange On-p
 ## <a name="how-does-conditional-access-work"></a>Hoe werkt voorwaardelijke toegang?
 U kunt de instellingen voor nalevingsbeleid gebruiken om te evalueren in hoeverre het apparaat aan het beleid voldoet. Deze evaluatie wordt vervolgens gebruikt voor een beleid voor voorwaardelijke toegang om de toegang tot een specifieke service te beperken of toe te staan. Wanneer u een beleid voor voorwaardelijke toegang gebruikt in combinatie met een nalevingsbeleid voor apparaten, is de service alleen toegankelijk voor apparaten die voldoen aan het beleid. Het nalevingsbeleid en het beleid voor voorwaardelijke toegang worden op de gebruiker toegepast. Een apparaat dat de gebruiker gebruikt voor toegang tot de services wordt gecontroleerd op naleving van het beleid.
 
-Houd er rekening mee dat er nalevingsbeleid moet worden geïmplementeerd voor de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden geëvalueerd.
-Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat voldoet aan het beleid en worden er geen toegangsbeperkingen toegepast.
+> [!IMPORTANT] 
+> Houd er rekening mee dat er nalevingsbeleid moet worden geïmplementeerd voor de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden geëvalueerd.
+> Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat voldoet aan het beleid en worden er geen toegangsbeperkingen toegepast.
 
 Wanneer apparaten niet voldoen aan de voorwaarden die in de beleidsregels zijn ingesteld, wordt de eindgebruiker door de registratieprocedure voor het apparaat geleid en ook door de procedure voor het verhelpen van het probleem dat naleving door het apparaat verhindert.
 
@@ -80,9 +82,4 @@ In tegenstelling tot andere Intune-beleidsregels implementeert u geen beleidsreg
   - [Beleid voor voorwaardelijke toegang maken voor SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Beleid voor voorwaardelijke toegang maken voor Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Beleid voor voorwaardelijke toegang maken voor Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
