@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ U wilt bijvoorbeeld alle iOS-apparaten voorzien van de instellingen die vereist 
 
 U kunt VPN-profielen met de volgende verbindingstypen maken:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Type verbinding|Android|iOS|macOS|Windows Phone 8,1|Windows 8.1|Windows 10|
 |Pulse Secure|Ja|Ja|Ja|Ja|Ja|Yes|
 |Cisco (IPsec)|Nee|Ja|Nee|Nee|Nee|Nee|
