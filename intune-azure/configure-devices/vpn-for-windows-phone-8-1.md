@@ -1,5 +1,6 @@
 ---
-title: Intune-VPN-instellingen voor Windows Phone 8.1-apparaten | Intune Azure Preview | Microsoft Docs
+title: VPN-instellingen voor Windows Phone 8.1-apparaten in Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op Windows Phone 8.1-apparaten te configureren.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 674a806b16d1f88413c1d1bbda1fb1d4f3363771
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 2fe54f4d97c28825f06d40ec47a8a9dc40da2554
+ms.lasthandoff: 02/18/2017
 
 
 ---

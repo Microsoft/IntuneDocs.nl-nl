@@ -1,5 +1,6 @@
 ---
-title: Windows-gegevensbescherming configureren - Intune | Intune Azure Preview | Microsoft Docs
+title: Windows Information Protection configureren - Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over de Intune-instellingen die u kunt gebruiken om Windows-gegevensbescherming te beheren.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 0d62e8a7e9117a724770750c7724ff8f46cef7d6
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: be070e8bdb339cfea1dbc288923620c8604e9b30
+ms.lasthandoff: 02/18/2017
 
 
 ---

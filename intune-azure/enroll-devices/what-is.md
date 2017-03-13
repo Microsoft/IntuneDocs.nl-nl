@@ -1,9 +1,10 @@
 ---
-title: Wat is apparaatinschrijving in Microsoft Intune | Intune Azure Preview | Microsoft Docs
+title: Wat is Microsoft Intune-apparaatinschrijving?
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: informatie over inschrijving voor iOS, Android en Windows-apparaten.'
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 In dit onderwerp worden verschillende manieren voor de inschrijving van mobiele apparaten in het Intune-beheer beschreven.
 
-Als u apparaten in Intune inschrijft, zoals Windows-pc's, kunt u deze apparaten beheren. In de Intune-documentatie wordt hiernaar verwezen als Mobile Device Management (MDM). Wanneer apparaten worden ingeschreven als mobiele apparaten (en niet als pc's), krijgen ze een MDM-certificaat, waarmee de apparaten vervolgens kunnen communiceren met de Intune-service. 
+Als u apparaten in Intune inschrijft, zoals Windows-pc's, kunt u deze apparaten beheren. In de Intune-documentatie wordt hiernaar verwezen als Mobile Device Management (MDM). Wanneer apparaten worden ingeschreven als mobiele apparaten (en niet als pc's), krijgen ze een MDM-certificaat, waarmee de apparaten vervolgens kunnen communiceren met de Intune-service.
 
 De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met registratie van COD's (Corporate-owned devices, apparaten van bedrijf) zijn beheerscenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten.
 
@@ -76,7 +77,7 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 Apparaten in bedrijfseigendom (COD) kunnen met de Azure Portal worden beheerd. iOS-apparaten kunnen rechtstreeks met de hulpprogramma's van Apple worden ingeschreven. Alle typen apparaten kunnen worden ingeschreven door een beheerder of manager die de apparaatinschrijvingsbeheerder gebruikt. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom om COD-scenario's mogelijk te maken.
 
 ### <a name="dem"></a>DEM
-Het apparaatregistratiebeheer is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Meer informatie over [DEM](enroll-devices-using-device-enrollment-manager.md). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
+De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Meer informatie over [DEM](enroll-devices-using-device-enrollment-manager.md). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
@@ -87,7 +88,7 @@ Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'dra
 Zie voor meer informatie over de iOS-inschrijving:
 
 - [Kiezen hoe u iOS-apparaten registreert](choose-ios-enrollment-method.md)
-- [iOS-apparaten inschrijven met het Device Enrollment Program](enroll-ios-devices-using-device-enrollment-program.md). 
+- [iOS-apparaten inschrijven met het Device Enrollment Program](enroll-ios-devices-using-device-enrollment-program.md)
 - [Terug naar bovenstaande tabel](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ IT-beheerders gebruiken Apple Configurator, via USB, om elk apparaat van het bed
 Zie voor meer informatie over de iOS-inschrijving:
 
 - [Kiezen hoe u iOS-apparaten registreert](choose-ios-enrollment-method.md)
-- [iOS-apparaten inschrijven met Configurator en Configuratieassistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). 
+- [iOS-apparaten inschrijven met Configurator en Configuratieassistent](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Voor directe registratie moet de beheerder elk apparaat handmatig registreren door een registratiebeleid te maken en dit te exporteren naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat de fabrieksinstellingen hoeven worden hersteld. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen. 
+Voor directe registratie moet de beheerder elk apparaat handmatig registreren door een registratiebeleid te maken en dit te exporteren naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat de fabrieksinstellingen hoeven worden hersteld. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen.
 
 Zie voor meer informatie over de iOS-inschrijving:
 

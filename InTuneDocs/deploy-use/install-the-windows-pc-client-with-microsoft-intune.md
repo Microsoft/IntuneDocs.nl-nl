@@ -3,9 +3,9 @@
 title: De pc-clientsoftware installeren | Microsoft Docs
 description: Gebruik deze handleiding om uw Windows-pc&quot;s te laten beheren door de Microsoft Intune-clientsoftware.
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/14/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -179,6 +179,83 @@ Gebruik een van de volgende procedures om de clientimplementatie te controleren 
     > [!TIP]
     > Klik op een kolomkop in het rapport om de lijst te sorteren op de inhoud van die kolom.
 
+## <a name="uninstall-the-windows-client-software"></a>De Windows-clientsoftware verwijderen
+
+Er zijn twee manieren om de Windows-clientsoftware uit te schrijven:
+
+- Via de Intune-beheerconsole (aanbevolen methode)
+- Via een opdrachtprompt op de client
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>Uitschrijven via de Intune-beheerconsole
+
+Als u de softwareclient wilt uitschrijven via de Intune-beheerconsole, gaat u naar **Groepen** > **Alle computers** > **Apparaten**. Klik met de rechtermuisknop op de client en selecteer **Buiten gebruik stellen/wissen**.
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>Uitschrijven via een opdrachtprompt op de client
+
+Voer vanaf een opdrachtprompt met verhoogde bevoegdheid een van de volgende opdrachten uit.
+
+**Methode 1**:
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**Methode 2** (niet al deze agents zijn geïnstalleerd op elke SKU van Windows):
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> Na de uitschrijving blijft er een verouderde record voor de betrokken client achter op de server. Het uitschrijven is een asynchroon proces dat voor negen agents moet worden uitgevoerd, en kan dus tot wel 30 minuten duren.
+
+### <a name="check-the-unenrollment-status"></a>Status van de uitschrijving controleren
+
+Ga naar "%ProgramFiles%\Microsoft\OnlineManagement" en controleer of alleen de volgende mappen worden weergegeven aan de linkerkant:
+
+- AgentInstaller
+- Logs
+- Updates
+- Common 
+
+### <a name="remove-the-onlinemanagement-folder"></a>De map OnlineManagement verwijderen
+
+Tijdens het uitschrijvingsproces wordt de map OnlineManagement niet verwijderd. Wacht na de uitschrijving 30 minuten en voer vervolgens deze opdracht uit. Als u deze opdracht te vroeg uitvoert, krijgt de verwijdering mogelijk een onbekende status. Als u de map wilt verwijderen, opent u een opdrachtprompt met verhoogde bevoegdheid en voert u de volgende opdracht uit:
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>Zie tevens
 [Windows-pc’s Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)

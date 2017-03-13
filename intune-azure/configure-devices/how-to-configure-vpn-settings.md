@@ -1,5 +1,6 @@
 ---
-title: VPN-instellingen in Intune configureren | Intune Azure Preview | Microsoft Docs
+title: VPN-instellingen configureren in Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Intune kunt gebruiken voor het configureren van VPN-verbindingen op de apparaten die u beheert.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 2d93edb688dbf296137a133f0b7ae065fc1cc89d
+ms.lasthandoff: 02/18/2017
 
 
 ---

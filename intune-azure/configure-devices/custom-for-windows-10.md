@@ -1,5 +1,6 @@
 ---
-title: Aangepaste Intune-instellingen voor Windows 10-apparaten | Intune Azure Preview | Microsoft Docs
+title: Aangepaste Intune-instellingen voor Windows 10-apparaten
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u informatie over de instellingen die u kunt gebruiken in een aangepast Windows 10-profiel.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 647415914fb0f44807eff7baf7a56ea3a382f027
+ms.lasthandoff: 02/18/2017
 
 
 ---

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ U kunt de apparaatregistratie verwijderen via de Azure AD-beheerconsole. Doorgaa
 * **iOS-apparaat**: open de Azure Authenticator-app, veeg links in het account en kies Registratie ongedaan maken.  
 * **Android-apparaat**: verwijder de bedrijfsportal-app of verwijder het account uit de **Systeeminstellingen**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>App-CA met voorwaardelijke toegang op basis van apparaatcompatibiliteit  
+## <a name="app-based-ca-with-device-based-ca"></a>App-certificeringsinstantie met apparaatcertificeringsinstantie  
 
 U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) configureren in de [Intune-beheerdersconsole](https://manage.microsoft.com) of de [Azure AD Premium-beheerconsole] (https://manage.windowsazure.com). Voor Device CA mogen gebruikers alleen verbinding maken met Exchange Online via door Intune beheerde apparaten die compatibel zijn met het Intune-apparaatcompatibiliteitsbeleid of pc's die lid zijn van een domein.  Als een gebruiker tot een of meer beveiligingsgroepen behoort die zijn geconfigureerd voor app-CA- en Device CA-beleid, moet de gebruiker aan een van deze twee vereisten voldoen:
 * De app die wordt gebruikt voor toegang tot de service is een mobiele app die wordt ondersteund door 
@@ -63,9 +62,4 @@ U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-a
 ### <a name="see-also"></a>Zie tevens
 
 [Beveilig app-gegevens met beveiligingsbeleid voor apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

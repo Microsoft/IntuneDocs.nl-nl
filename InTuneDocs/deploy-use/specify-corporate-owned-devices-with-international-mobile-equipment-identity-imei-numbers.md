@@ -2,10 +2,10 @@
 title: IMEI-nummers opgeven | Microsoft Docs
 description: Met Microsoft Intune kunnen beheerders IMEI-nummers importeren voor platforms voor mobiele apparaten om ze te helpen bij het identificeren van mobiele apparaten in bedrijfseigendom
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -50,13 +51,11 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 3.  In het deelvenster **Apparaten controleren** kunt u de geïmporteerde IMEI-nummers controleren. U kunt ook bepalen of de **Details** moeten worden overschreven voor IMEI-nummers die opnieuw worden geïmporteerd. Schakel het selectievakje **Overschrijven** uit als u de huidige details wilt behouden. Kies **Voltooien** om de IMEI-nummers te importeren.
 4.  De geïmporteerde IMEI-nummers en beschrijvingen worden toegevoegd aan de lijst **Op IMEI (alle platformen)**.
 
+> [!IMPORTANT]
+> Als u IMEI-nummers importeert voor Android-apparaten, moet u er rekening mee houden dat sommige Android-apparaten meerdere IMEI-nummers kunnen hebben. Als u een IMEI-nummer importeert dat niet het IMEI-nummer is dat door het apparaat is gerapporteerd aan Intune, wordt het apparaat geclassificeerd als persoonlijk apparaat in plaats van een bedrijfsapparaat.
+
 Wanneer het apparaat met een IMEI-nummer wordt ingeschreven bij Intune, wat meestal gebeurt wanneer een gebruiker de bedrijfsportal-app installeert en het inschrijvingsproces voltooit, wordt het apparaat gemarkeerd als eigendom van het bedrijf en weergegeven als geregistreerd in de groep **IMEI-apparaten**.
 
->[!NOTE] 
+>[!NOTE]
 > Als uw organisatie in de nabije toekomst wordt gemigreerd naar de nieuwe Azure-portal, verandert deze functie. In de bestaande Intune-beheerconsole kunnen beheerders bijbehorende gegevens accepteren uit een geüpload CSV-bestand en de bestaande gegevens voor afzonderlijke hardware-id's overschrijven. In de nieuwe Azure-portal kunt u de gegevens voor alle hardware-id's automatisch overschrijven of alle nieuwe gegevens voor bestaande id's negeren.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

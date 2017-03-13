@@ -1,5 +1,6 @@
 ---
-title: Apps aan groepen toewijzen | Intune Azure Preview | Microsoft Docs
+title: Apps aan groepen toewijzen
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: als u een app aan Intune hebt toegevoegd, wilt u deze wellicht toewijzen aan groepen met gebruikers of apparaten.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
 
 > [!NOTE]
 > Op dit moment kunt u iOS- en Android-apps (beide Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet met Intune zijn ingeschreven.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Wijzigingen in hoe u apps toewijst aan groepen in de preview-versie van Intune
+
+In de preview-versie van Intune Azure wijst u apps niet langer toe aan Intune-groepen, maar gebruikt u beveiligingsgroepen van Azure Active Directory (Azure AD). Daarom is het van belang dat u weet hoe sommige wijzigingen in app-toewijzingen werken, met name als u apps hebt toegewezen aan onderliggende groepen in Intune.
+Het belangrijkste om te onthouden, is dat onderliggende groepen niet bestaan in Azure AD. Maar sommige groepen kunnen wel dezelfde leden bevatten. In dit geval verschilt het gedrag van de klassieke versie van Intune en de preview-versie van Intune Azure. Dit wordt weergegeven in de volgende tabel:
+
+||||||
+|-|-|-|-|-|
+|**Klassieke versie van Intune (vóór de tenantmigratie)**|-|**Intune Azure (na voltooiing van de tenantmigratie)**|-|**Meer informatie**|
+|**Implementatieopzet bovenliggende groepen**|**Implementatieopzet onderliggende groepen**|**Resulterende toewijzingsopzet voor gedeelde leden van eerdere bovenliggende en onderliggende groep**|**Resulterende toewijzingsopzetactie voor leden van bovenliggende groep**|-|    
+|Beschikbaar|Vereist|Vereist en beschikbaar|Beschikbaar|Vereist en beschikbaar betekent dat apps die zijn toegewezen als Vereist ook worden weergegeven in de Bedrijfsportal-app.
+|Niet van toepassing|Beschikbaar|Niet van toepassing|Niet van toepassing|Tijdelijke oplossing: verwijder de implementatieopzet Niet van toepassing uit de bovenliggende groep in Intune.
+|Vereist|Beschikbaar|Vereist en beschikbaar|Vereist|-|
+|Vereist en beschikbaar<sup>1</sup>|Beschikbaar|Vereist en beschikbaar|Vereist en beschikbaar|-|    
+|Vereist|Niet van toepassing|Vereist|Vereist|-|    
+|Vereist en beschikbaar|Niet van toepassing|Vereist en beschikbaar|Vereist en beschikbaar|-|    
+|Vereist|Verwijderen|Vereist|Vereist|-|    
+|Vereist en beschikbaar|Verwijderen|Vereist en beschikbaar|Vereist en beschikbaar|-|
+<sup>1</sup> Voor beheerde iOS Store-apps: wanneer u deze toevoegt aan Intune en implementeert als Vereist, worden ze automatisch gemaakt met zowel de opzet Vereist als de opzet Beschikbaar.
+
+U kunt de volgende acties ondernemen om implementatieconflicten te voorkomen:
+
+1.    Als u voorheen apps implementeerde naar verwante boven- en onderliggende groepen in Intune, kunt u deze implementaties verwijderen voordat de migratie van uw tenant begint.
+2.    Verwijder de onderliggende groepen uit de bovenliggende groepen, en maak een nieuwe groep die de leden van de voormalige onderliggende groep bevat. Vervolgens kunt u een nieuwe app-implementatie naar deze groep maken.
+Opmerking: als de vorige bovenliggende groep ‘Alle gebruikers’ was, moet u een nieuwe dynamische groep maken die niet de leden van de onderliggende groep bevat.
+Als u wijzigingen wilt aanbrengen in zowel gebruikers- als apparaatgroepen, doet u dat in de [Azure Portal](https://portal.azure.com/). In de [klassieke Azure Portal](https://manage.windowsazure.com/) kunt u alleen wijzigingen aanbrengen in gebruikersgroepen.
+
 
 ## <a name="how-to-assign-an-app"></a>Een app toewijzen
 

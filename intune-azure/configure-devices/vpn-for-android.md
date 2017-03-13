@@ -1,5 +1,6 @@
 ---
-title: Intune-VPN-instellingen voor Android-apparaten | Intune Azure Preview | Microsoft Docs
+title: VPN-instellingen voor Android-apparaten in Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op Android-apparaten te configureren.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: edf359b326626155a2e6acd01f72321c4cd0fe9c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5ecbeb43e05887dc4cadbe110e3f97bd15363073
+ms.lasthandoff: 02/18/2017
 
 
 ---

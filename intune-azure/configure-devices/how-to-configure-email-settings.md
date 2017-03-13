@@ -1,5 +1,6 @@
 ---
-title: E-mailinstellingen in Intune configureren | Intune Azure Preview | Microsoft Docs
+title: E-mailinstellingen configureren in Intune
+titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Intune kunt configureren voor het maken van verbindingen met zakelijke e-mail op de apparaten die u beheert.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
+ms.lasthandoff: 02/18/2017
 
 
 ---
