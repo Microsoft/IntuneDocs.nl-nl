@@ -193,12 +193,10 @@
 ### [Bedrijfsgegevens van beheerde apps wissen](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Eindgebruikers instructies geven over Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Een Android-apparaat gebruiken met Intune](EndUser/using-your-android-device-with-intune.md)
-#### [Hoe uw Android-gebruikers apps downloaden](deploy-use/how-your-android-users-get-their-apps.md)
-### [Een iOS-apparaat gebruiken met Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [Hoe uw iOS-gebruikers hun apps downloaden](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Een Windows-apparaat gebruiken met Intune](EndUser/using-your-windows-device-with-intune.md)
-#### [Hoe uw Windows-gebruikers apps downloaden](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Berichten van de bedrijfsportal die eindgebruikers kunnen zien](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Hoe uw Android-gebruikers apps downloaden](deploy-use/how-your-android-users-get-their-apps.md)
+### [Hoe uw iOS-gebruikers hun apps downloaden](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Hoe uw Windows-gebruikers apps downloaden](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Apps ontwikkelen en aanpassen
 ## [Overzicht van de Microsoft Intune App SDK](develop/intune-app-sdk.md)
