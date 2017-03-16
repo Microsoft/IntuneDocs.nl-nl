@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ De voorwaarden die voor elk apparaat gelden, zijn terug te vinden in Azure Manag
      -     Een iOS-apparaat kan komen vast te hangen in een status voor het controleren van nalevingsvereisten, waardoor de gebruiker wordt verhinderd om een andere incheckprocedure te initiëren. Het opnieuw opstarten van de bedrijfsportal kan dit probleem oplossen en de nalevingsstatus geeft de status van het apparaat in Intune aan. Nadat alle gegevens van een apparaatsynchronisatie zijn verzameld, gaat de nalevingscontrole snel, gemiddeld niet meer dan een halve seconde.
 
         De reden waarom apparaten in deze status blijven hangen, is doorgaans omdat ze problemen ondervinden bij het maken van verbinding met de service of omdat de synchronisatie lang duurt.  Als het probleem zich blijft voordoen in andere netwerkconfiguraties (mobiel, Wi-Fi-, VPN), zelfs nadat het apparaat opnieuw is opgestart, en nadat u hebt gecontroleerd of de SSP op het apparaat is bijgewerkt, neemt u contact op Microsoft Ondersteuning zoals beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
+
+ - Voor Android-apparaten:
+     - Bepaalde Android-apparaten lijken misschien te zijn versleuteld, maar de bedrijfsportal-app herkent deze apparaten als niet-versleuteld. 
+    
+        -    Voor apparaten met deze status moet de gebruiker de wachtwoordcode voor beveiligd opstarten instellen. De gebruiker krijgt op het apparaat een bericht van de bedrijfsportal-app waarin wordt gevraagd om een wachtwoordcode voor het opstarten van het apparaat in te stellen. Wanneer u op het apparaatbericht hebt getikt en de bestaande pincode of het wachtwoord hebt bevestigd, kiest u de optie **Pincode vereisen voor het starten van apparaat** op het scherm **Beveiligd opstarten**. Tik vervolgens in de bedrijfsportal-app op de knop **Naleving controleren** voor het apparaat. Het apparaat moet nu worden gedetecteerd als versleuteld.
+    
+        -     Sommige apparaatfabrikanten versleutelen hun apparaten met behulp van een standaardpincode in plaats van een geheime pincode die door de gebruiker wordt ingesteld. Intune beschouwt versleuteling met een standaardpincode als onveilig omdat de gegevens op het apparaat bij deze methode van versleuteling niet afdoende zijn beschermd tegen kwaadwillende gebruikers met fysieke toegang tot het apparaat. Als dit het probleem is, zou u [app-beveiligingsbeleidsregels](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kunnen gebruiken.
 
 ## <a name="policy-issues"></a>Beleidsproblemen
 
