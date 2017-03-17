@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger configureren.
   - **Verbinding evalueren**, waarvoor drie instellingen beschikbaar zijn. **Domeinactie**: kies **Verbinding indien nodig** of **Nooit verbinding maken met**
      b. **Door komma's gescheiden lijst met domeinen**: hiermee configureert u alleen een **Domeinactie** van het type **Verbinding indien nodig**
      c. **Vereiste tekenreeks van URL-test**: een HTTP of HTTPS (aanbevolen)-URL, zoals *https://vpntestprobe.contoso.com*. De regel controleert of er een reactie van dit adres is. Als dat niet het geval is en de **Domeinactie** is ingesteld op **Verbinding indien nodig**, wordt de VPN-verbinding geactiveerd.
+      
      > [!TIP]
      >
      >Een voorbeeld van wanneer u deze actie kunt gebruiken wanneer sommige sites in uw bedrijfsnetwerk een directe of VPN-bedrijfsnetwerk vereisen, terwijl dit niet vereist is voor andere sites. Als u een lijst met **door komma's gescheiden lijst domeinen met een DNS-zoekopdracht** *corp.contoso.com*, hebt, kunt u **verbinding maken indien nodig** en vervolgens een lijst voor specifieke sites binnen dat netwerk die VPN weergeven, zoals *sharepoint.corp.contoso.com*. De regel controleert vervolgens of *vpntestprobe.contoso.com* kan worden bereikt. Als dit niet het geval is, wordt de VPN-verbinding geactiveerd voor de sharepoint-site.
@@ -192,9 +194,4 @@ Domeinspecifieke regels worden geëvalueerd voor regels die voor alle domeinen g
 Na een geslaagde implementatie zien gebruikers de naam van de VPN-verbinding die u hebt opgegeven in de lijst met VPN-verbindingen op hun apparaten.
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
