@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 54bb8e68ac4435d2ae687f27317445cd18c7a5db
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -37,6 +37,7 @@ Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hers
 - [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Ik wil mijn iOS-apparaat bijwerken](you-need-to-update-your-ios-device.md)
 - [Mijn versie van iOS wordt nog niet ondersteund](your-ios-version-isnt-yet-supported.md)
+- [Logboeken naar uw IT-beheerder verzenden via e-mail](send-logs-to-your-it-admin-by-email-iOS.md)
 - [Ik moet Lookout for Work installeren op mijn iOS-apparaat](you-are-prompted-to-install-lookout-for-work-ios.md)
 - [Ik moet een bedreiging oplossen die Lookout for Work op mijn iOS-apparaat heeft gevonden](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 

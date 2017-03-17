@@ -1,5 +1,5 @@
 ---
-title: Uw apparaat is niet compatibel | Microsoft Docs
+title: U moet uw iOS-apparaat bijwerken | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
+ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 searchScope:
 - User help
 ROBOTS: 
@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c111993248e900f663640cf45db4525dc7c7df95
+ms.openlocfilehash: bb9dfe52aa2c0150bd48f5c5cfad48a03748142c
 ms.lasthandoff: 03/16/2017
 
 
 ---
 
-# <a name="your-device-is-noncompliant"></a>Uw apparaat is niet compatibel
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Op het iOS-apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd
 
-Uw apparaat is niet compatibel met ten minste één van de beveiligingsbeleidsregels van uw organisatie, maar de fout kan nu niet worden weergegeven.  
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-Tik in de bedrijfsportal-app op **Naleving controleren**. De bedrijfsportal-app geeft vervolgens aan waarom het apparaat niet compatibel is.
+Werk uw iOS-apparaat bij door te tikken op **Instellingen** > **Algemeen** > **Software-update**.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
