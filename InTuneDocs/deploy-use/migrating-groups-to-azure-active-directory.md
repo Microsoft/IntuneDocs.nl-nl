@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
-ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -89,16 +90,5 @@ Kenmerken zijn eigenschappen van apparaten die kunnen worden gebruikt om groepen
 ## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>Wat gebeurt er met beleidsregels en apps die u al hebt geïmplementeerd?
 
 Beleid en apps blijven gewoon geïmplementeerd voor groepen, net als voorheen. U beheert deze groepen nu echter via de Azure-portal en niet meer via de klassieke Intune-console.
-
-
-## <a name="how-to-get-more-information"></a>Hoe kunt u meer informatie krijgen
-
-Neem contact op met ons migratieteam op [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).    
-     
-
-
-
-
-<!--HONumber=Dec16_HO4-->
-
+ 
 
