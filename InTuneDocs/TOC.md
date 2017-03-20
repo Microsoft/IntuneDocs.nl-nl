@@ -5,7 +5,7 @@
 ### [Groepen maken om gebruikers en apparaten te organiseren](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
 ### [Beleid maken en een app publiceren](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Andere opties en extra's](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### Overstappen op een [betaald abonnement](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+### [Overstappen op een betaald abonnement](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Veelgestelde vragen over MAM en app-beveiliging](understand-explore/mam-faq.md)
 ## [Algemene scenario's](understand-explore/common-ways-to-use-intune.md)
 
@@ -120,6 +120,7 @@
 
 ## [Apps toevoegen](deploy-use/add-apps.md)
 ### [Apps toevoegen voor ingeschreven apparaten](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Windows-apps sideloaden](deploy-use/sideload-apps-for-windows.md)
 ### [Apps toevoegen voor Intune-client-pc's](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Licentieovereenkomsten beheren voor Intune-client-pc's](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Apps implementeren](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Beleid voor de configuratie van Android for Work-apps](deploy-use/afw-app-configuration-policy.md)
 ### [Profielen voor mobiele apps voor iOS-apparaten inrichten](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [Internettoegang beheren](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [LOB-apps sideloaden](deploy-use/sideload-apps-for-windows.md)
 
 ## [Apps en gegevens beveiligen](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Nalevingsbeleid voor apparaten](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
