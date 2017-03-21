@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
 ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -33,7 +34,7 @@ Als u selectief gebruikerslicenties voor EMS-services wilt toewijzen, opent u Po
 
 U moet een nieuwe licentie-SKU-definitie maken die alleen van toepassing is op de gewenste serviceplannen. Daarvoor schakelt u de plannen uit die u niet wilt toepassen. U kunt bijvoorbeeld een licentie-SKU-definitie maken waarmee geen licentie voor Intune wordt toegewezen. Typ het volgende om een lijst met beschikbare services weer te geven:
 
-    (Get-MsolAccountSku | Where {$_.SkuPartNumber -eq "EMS"}).ServiceStatus
+    (Get-MsolAccountSku | Where {$\_.SkuPartNumber -eq "EMS"}).ServiceStatus
 
 U kunt de volgende opdracht uitvoeren om het Intune-serviceplan uit te sluiten. Met dezelfde methode kunt u een complete beveiligingsgroep uitbreiden. U kunt echter ook gedetailleerdere filters gebruiken.
 
@@ -71,9 +72,4 @@ Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid
 >[!div class="step-by-step"]
 
 >[&larr; **Gebruikers synchroniseren met Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gebruikers en apparaten organiseren** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
