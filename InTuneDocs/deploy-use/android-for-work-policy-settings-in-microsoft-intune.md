@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 |----------------|-|
 |**Gegevens delen tussen werkprofielen en persoonlijke profielen toestaan**|Hiermee kunnen gegevens van apps in het werkprofiel en apps in het persoonlijke profiel van gebruikers worden gedeeld. U kunt kiezen uit:<br><br>- **Delen buiten grenzen voorkomen**<br>- **Met apps in het werkprofiel kunnen aanvragen voor delen van het persoonlijke profiel worden verwerkt**<br>- **Geen beperkingen voor delen**|
 |**Meldingen van het werkprofiel verbergen wanneer het apparaat is vergrendeld**<br>(Android 6 en hoger)|Hiermee bepaalt u of u meldingen van het werkprofiel wilt weergeven wanneer het apparaat is vergrendeld.|
-|**Standaardmachtigingsbeleid voor apps instellen**<br>(Android 6 en hoger)|Hiermee stelt u het standaardmachtigingsbeleid in voor alle apps in het werkprofiel.|
+|**Standaardmachtigingsbeleid voor apps instellen**<br>(Android 6 en hoger)|Hiermee stelt u het standaardmachtigingsbeleid in voor alle apps in het werkprofiel. Vanaf Android 6 wordt voor sommige machtigingen voor apps tijdens runtime om goedkeuring gevraagd aan eindgebruikers.  Met deze beleidsinstelling kan de IT-afdeling in het werkprofiel bepalen hoe en of gebruikers om machtiging wordt gevraagd voor apps. <br/><br/>De IT-afdeling kan bijvoorbeeld een app naar het werkprofiel pushen waarvoor toegang tot de locatie is vereist.  Normaal gesproken wordt dan een pop-up in de app getoond met de vraag of de gebruiker de app toegang tot de locatie wilt geven. De gebruiker kan dit dan toestaan of weigeren.  Met dit beleid kan de IT-afdeling beslissen of alle machtigingen automatisch moeten worden toegekend zonder ernaar te vragen, automatisch moeten worden geweigerd zonder ernaar te vragen of dat de eindgebruiker dit mag beslissen.|
 
 
 ## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
@@ -91,9 +92,4 @@ Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

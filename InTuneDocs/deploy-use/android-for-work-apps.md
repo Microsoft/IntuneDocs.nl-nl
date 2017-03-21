@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ Zie de [Help bij de Google-ontwikkelaarsconsole](https://support.google.com/goog
 
 ## <a name="deploy-an-android-for-work-app"></a>Een Android for Work-app implementeren
 
-Normaal gesproken wordt Intune twee keer per dag gesynchroniseerd met de Google Play for Work-store. Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven in het knooppunt **Apps die zijn gekocht via het volume-aankoopprogramma** van de werkruimte **Apps**, kunt u als volgt een onmiddellijke synchronisatie afdwingen:
+Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven in het knooppunt **Apps die zijn gekocht via het volume-aankoopprogramma** van de werkruimte **Apps**, kunt u als volgt een onmiddellijke synchronisatie afdwingen:
 
 1. Kies in de [Intune-beheerdersconsole](https://manage.microsoft.com) de optie **Beheer** > **Beheer van mobiele apparaten** > **Android for Work**.
 2. Kies op de pagina **Instellingen voor beheer van mobiele apparaten voor Android for Work** de optie **Nu synchroniseren**.
 3. Op de pagina ziet u ook de tijd en status van de laatste synchronisatie.
 
-Wanneer de app wordt weergegeven in het knooppunt **Apps die zijn gekocht via het volume-aankoopprogramma** van de werkruimte **Apps**, kunt u [deze implementeren zoals elke andere app](deploy-apps-in-microsoft-intune.md). U kunt de app implementeren voor groepen of specifieke gebruikers. Op dit moment kunt u alleen de acties **Vereist** en **Verwijderen** selecteren. Vanaf oktober 2016 wordt ook de implementatieactie **Beschikbaar** toegevoegd voor nieuwe tenants.
+Wanneer de app wordt weergegeven in het knooppunt **Apps die zijn gekocht via het volume-aankoopprogramma** van de werkruimte **Apps**, kunt u [deze implementeren zoals elke andere app](deploy-apps-in-microsoft-intune.md). U kunt de app implementeren voor groepen of specifieke gebruikers. Op dit moment kunt u alleen de acties **Vereist** en **Verwijderen** selecteren.
+
+Bij de mogelijkheid om een app als **Beschikbaar** te implementeren, wordt gebruikgemaakt van de nieuwe groeperings- en targetingervaring. Nieuw ingerichte Intune-serviceaccounts kunnen deze functie gebruiken na de introductie. Bestaande Intune-klanten kunnen deze functie gebruiken zodra de tenant is gemigreerd naar de Intune Azure Portal. Bestaande klanten kunnen een Intune-proefaccount maken om voor deze functie te plannen en de functie te testen tot hun tenant is gemigreerd.
 
 Nadat u de app hebt geïmplementeerd, wordt deze geïnstalleerd op de opgegeven apparaten. De gebruiker van het apparaat wordt hiervoor niet om toestemming gevraagd.
 
+## <a name="manage-app-permissions"></a>App-machtigingen beheren
+Bij Android for Work moet u apps goedkeuren in de door Google beheerde Play-webconsole voordat u ze synchroniseert met Intune en ze implementeert voor uw gebruikers.  Met Android for Work kunt u de apps op de achtergrond en automatisch naar de apparaten van gebruikers pushen en daarom moet u de machtigingen voor de app namens al uw gebruikers accepteren.  Eindgebruikers krijgen geen app-machtigingen te zien wanneer ze de installatie uitvoeren, dus het is belangrijk dat u de informatie over de machtigingen leest en dat u ze begrijpt.
 
+Wanneer een app-ontwikkelaar een nieuwe versie van de app publiceert met bijgewerkte machtigingen, worden de machtigingen niet automatisch geaccepteerd, zelfs niet wanneer u de vorige machtigingen ook al had goedgekeurd. Apparaten waarop de oude versie van de app wordt uitgevoerd, kunnen de app nog wel gebruiken. De app wordt pas geüpgraded wanneer de nieuwe machtigingen zijn goedgekeurd. Op apparaten waar de app niet op is geïnstalleerd, kan deze pas worden geïnstalleerd wanneer de nieuwe machtigingen voor de app zijn goedgekeurd.
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>App-machtigingen bijwerken
 
+Ga met enige regelmaat naar de beheerde Google Play-console om te controleren op nieuwe machtigingen. Als u een app implementeert en u ziet dat deze niet is geïnstalleerd op apparaten, controleert u aan de hand van de volgende stappen op nieuwe machtigingen:
+
+1. Ga naar http://play.google.com/work
+2. Meld u aan met het Google-account dat u gebruikt om apps te publiceren en goed te keuren.
+3. Ga naar het tabblad **Updates** tabblad om te bekijken of er apps zijn die moeten worden bijgewerkt.  Voor alle vermelde apps zijn nieuwe machtigingen vereist. De apps worden pas geïmplementeerd wanneer de machtigingen aanwezig zijn.  
 

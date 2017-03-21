@@ -4,8 +4,8 @@ description: Beveilig uw beheerde computers met Endpoint Protection voor realtim
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ U kunt de status van schadelijke software op uw computers controleren met behulp
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Recente detectiepaden voor malware op computers weergeven
 Met Intune kunt u de paden van maximaal tien onlangs gedetecteerde exemplaren van malware op een apparaat weergeven. De optie **Recent detectiepad** is standaard uitgeschakeld. Deze weergave inschakelen:
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** > **Alle apparaten** > **Malware**.
+1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Groepen** > **Alle apparaten** > **Alle computers**.
+2. Klik met de rechtermuisknop op de computer waarvan u de recente detectiepaden wilt bekijken en selecteer **Eigenschappen**.
+3. Selecteer het tabblad **Malware** bovenaan.
 
-2.  Klik met de rechtermuisknop op een kolomkop. Een lijst met beschikbare kolommen wordt weergegeven.
-
-3.  Selecteer in de lijst het selectievakje **Recente detectiepaden**. De kolom **Recente detectiepaden** wordt weergegeven met daarin de tien onlangs op het apparaat gedetecteerde malware-exemplaren.
+   ![Selecteer het tabblad Malware en klik op het selectievakje bij Recente detectiepaden](../media/malware-path-column.png)
+4. Klik met de rechtermuisknop op de kolomkop. Een lijst met beschikbare kolommen wordt weergegeven. Selecteer in de lijst het selectievakje **Recente detectiepaden**. De kolom **Recente detectiepaden** wordt weergegeven met daarin de tien onlangs op het apparaat gedetecteerde malware-exemplaren.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Een malwarescan uitvoeren of de malwaredefinities op een computer bijwerken
 U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Protection of Windows Defender op een extern beheerde pc waarop de Intune-client is geïnstalleerd.
@@ -184,9 +185,6 @@ U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Pro
 1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Overzicht** > **Alle apparaten** > **Alle computers** en selecteer de computer die u wilt targeten.
 
 2. Kies de vervolgkeuzelijst **Externe taken** en selecteer de taak om deze uit te voeren op de externe computer.
-
-
-
 
 ## <a name="need-more-help"></a>Meer hulp nodig?
 Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer hulp en ondersteuning.

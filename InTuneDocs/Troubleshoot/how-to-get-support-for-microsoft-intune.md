@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
-ms.lasthandoff: 01/28/2017
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -42,15 +42,13 @@ Stel een vraag of start een discussie met technische experts van Microsoft. Wij 
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice-productfeedbacksite
 
-Hebt u feedback over hoe Microsoft Intune nog beter kan maken? Laat het ons weten door uw ideeën toe te voegen op de Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-feedbacksite. U kunt ook stemmen op ideeën die anderen hebben toegevoegd aan UserVoice. 
+Hebt u feedback over hoe Microsoft Intune nog beter kan maken? Laat het ons weten door uw ideeën toe te voegen op de Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas)-feedbacksite. U kunt ook stemmen op ideeën die anderen hebben toegevoegd aan UserVoice.
 
 ![Microsoft Intune UserVoice-feedbackpagina](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Een onlineondersteuningsticket maken
+## <a name="create-a-support-ticket"></a>Een ondersteuningsticket maken
 
-Als u geen antwoorden kunt vinden met de bronnen voor zelfhulp, kunt u een onlineondersteuningsticket maken.
-
-**Meld niet meer dan één probleem per ondersteuningsticket** zodat we u beter van dienst kunnen zijn. Waarom is:
+Als u geen antwoorden kunt vinden met de bronnen voor zelfhulp, kunt u een onlineondersteuningsticket maken. **Meld niet meer dan één probleem per ondersteuningsticket** zodat we u beter van dienst kunnen zijn. Waarom is:
 
 - Ondersteuningsmedewerkers die u helpen zijn waarschijnlijk in specifieke gebieden gespecialiseerd. Op deze manier maakt u het eenvoudiger om de juiste specialisten te vinden om u met het probleem te helpen.
 - Engineeringteams kunnen prioriteiten in hun werk aanbrengen in de productgebieden waar de meeste incidenten worden gegenereerd.
@@ -58,12 +56,15 @@ Als u geen antwoorden kunt vinden met de bronnen voor zelfhulp, kunt u een onlin
 
 Lees de [definitie van een ondersteuningsincident](#definition-of-a-support-incident) voordat u een ondersteuningsticket maakt.
 
-**Een onlineondersteuningsticket maken**:
+### <a name="steps-to-create-an-online-support-ticket"></a>Stappen om een onlineondersteuningsticket te maken
 
 1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com) met de referenties van uw Intune.
+
+    Als u een Premier Support-klanten bent, moet u in plaats daarvan een Intune-ondersteuningsticket openen op de [Premier Support-pagina](https://support.microsoft.com/en-us/premier/contacts).
+
     >[!NOTE]
     >
-    >Premier Support-klanten kunnen een Intune-ondersteuningsticket openen op de [Premier-ondersteuningspagina](https://support.microsoft.com/en-us/premier/contacts).
+    >Premier Support-klanten moeten een Intune-ondersteuningsticket openen op de [Premier Support-pagina](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Kies de tegel **Beheer**.
 3.  Kies aan de linkerkant onder **Ondersteuning** de optie **Ondersteuning** om een ticket te openen.
@@ -84,9 +85,9 @@ Lees de [definitie van een ondersteuningsincident](#definition-of-a-support-inci
 
 3.  Volg de instructies voor het openen van uw aanvraag.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Een ondersteuningsticket maken via alternatieve methoden
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Stappen om een ondersteuningsticket te maken via alternatieve methoden
 
-Volg deze procedure als uw ondersteuningspagina er als volgt uitziet:
+Volg deze procedure als uw ondersteuningspagina in het Office 365-beheercentrum er als volgt uitziet:
 
 ![Alternatieve ondersteuning voor Intune](../media/alternate-support-ui.png)
 
@@ -102,30 +103,30 @@ Volg deze procedure als uw ondersteuningspagina er als volgt uitziet:
 Zie [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) voor een lijst met telefoonnummers voor ondersteuning per land en regio, ondersteuningsuren en ondersteunde talen voor elke regio.
 
 ## <a name="track-your-support-requests"></a>Uw ondersteuningsaanvragen bijhouden
-1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com) met de referenties van uw Intune.
+1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com) met de referenties van de Intune-beheerder.
 2.  Kies de tegel **Beheer**.
 3.  Kies aan de linkerkant bij **Ondersteuning** de optie **Serviceaanvragen**. Vervolgens kunt u de aanvragen bekijken.
 
-Hoe lang het duurt voordat we reageren op ondersteuningsaanvragen, hangt af van de ernst van het probleem. Voor onze Professional-klanten geldt dat ze bij zeer ernstige problemen binnen twee uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst. Dit zijn gevallen waarbij:
+Hoe lang het duurt voordat we reageren op ondersteuningsaanvragen, hangt af van de ernst van het probleem. Voor onze Professional-klanten geldt dat ze bij zeer ernstige problemen binnen twee uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst. Een case is **zeer ernstig** wanneer:
 
 - Een of meer services niet toegankelijk zijn of onbruikbaar zijn.
 - Productie, bedrijfsactiviteiten of implementatiedeadlines aanzienlijke hinder ondervinden of er ernstige gevolgen voor de productie of winstgevendheid zijn.
 - Meerdere gebruikers of services worden beïnvloed.
 
-Voor onze Professional-klanten geldt dat ze bij minder ernstige problemen binnen vier uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst.  Dit zijn gevallen waarbij:
+Voor onze Professional-klanten geldt dat ze bij minder ernstige problemen binnen vier uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst. Een case is **matig ernstig** wanneer:
 
 - De service is bruikbaar maar functioneert niet zo goed als gebruikelijk.
 - De situatie matige impact op de bedrijfsactiviteiten heeft en tijdens de kantooruren kan worden afgehandeld.
 - Eén gebruiker, klant of service gedeeltelijk wordt beïnvloed.
 
-Voor onze Professional-klanten geldt dat ze voor andere problemen binnen acht uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst.  Dit zijn gevallen waarbij:
+Voor onze Professional-klanten geldt dat ze voor andere problemen binnen acht uur een eerste reactie kunnen verwachten. Voor Premier Support-klanten geldt dat de reactie afhankelijk is van de ondersteuningsovereenkomst. Een case is niet ernstig wanneer:
 
 - De situatie minimale gevolgen heeft voor de bedrijfsactiviteiten.
 - Het probleem belangrijk is, maar heeft niet onmiddellijk aanzienlijke gevolgen voor de huidige service of productiviteit van de klant.
 - Eén gebruiker gedeeltelijke onderbrekingen ondervindt, maar er een acceptabele tijdelijke oplossing voorhanden is.
 
 > [!NOTE]
-> **Als u gebruikmaakt van Microsoft System Center Configuration Manager ** of ** Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager en System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfhulpinformatie. Daarnaast kunt online of telefonisch een ondersteuningsaanvraag openen.
+> **Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection neemt u contact op met uw partner of gaat u naar de [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/)- en [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx)-documentatie voor uitgebreide zelfhulpinformatie. Daarnaast kunt online of telefonisch een ondersteuningsaanvraag openen.
 >
 > Technische ondersteuning voor System Center Configuration Manager of System Center Endpoint Protection moet worden betaald of wordt bijgeschreven op uw bestaande licentie- of Premier Support-overeenkomsten.
 

@@ -5,7 +5,7 @@ keywords: wat is Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
-ms.lasthandoff: 01/11/2017
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (En
 * Gegevens van uw bedrijf beschermen door te bepalen hoe uw werknemers toegang hebben tot de gegevens en deze delen.
 * Garanderen dat apparaten en apps compatibel zijn met de beveiligingsvereisten van het bedrijf.
 
-Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identiteits- en toegangsbeheer en met Azure Rights Management (Azure RMS) voor gegevensbeveiliging. Het is de *beheertak* van Microsoft Enterprise Mobility + Security (EMS), terwijl Office 365 de *productiviteitstak* is van de mobiliteitsoplossing van Microsoft.  
+Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging. Het is de *beheertak* van Microsoft Enterprise Mobility + Security (EMS), terwijl Office 365 de *productiviteitstak* is van de mobiliteitsoplossing van Microsoft.  
 
 Samen stellen Office 365 en EMS uw medewerkers in staat om productief te zijn op al hun apparaten terwijl de gegevens van uw organisatie beschermd blijven. Office 365 met EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit, met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.
 
