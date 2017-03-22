@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ U kunt beveiligingsbeleid configureren voor apps die worden uitgevoerd op:
 
 -   **Apparaten die zijn geregistreerd bij een MDM-oplossing van derden:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
-  > [!NOTE]
-  > U kunt beter geen beveiligingsbeleid voor apps met mobiel applicatiebeheer of oplossingen voor beveiligde containers van derden gebruiken.
+      > [!NOTE]
+      > U kunt beter geen beveiligingsbeleid voor apps met mobiel applicatiebeheer of oplossingen voor beveiligde containers van derden gebruiken.
 
 -   **Apparaten die niet zijn ingeschreven bij een MDM-oplossing:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
@@ -133,9 +134,4 @@ Alle mobiele apps van Office ondersteunen toegang via meerdere identiteiten.
 - [Aan de slag met configureren van beveiligingsbeleid voor apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
