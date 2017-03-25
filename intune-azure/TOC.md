@@ -41,7 +41,7 @@
 #### [iOS-apparaten inschrijven met het programma voor apparaatinschrijving](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Apparaten inschrijven met de apparaatinschrijvingsmanager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS-apparaten inschrijven](enroll-devices/enroll-macos-devices.md)
-### [Windows-apparaten inschrijven](enroll-devices/enroll-window-devices.md)
+### [Windows-apparaten inschrijven](enroll-devices/enroll-windows-devices.md)
 ### Apparaatinschrijving beheren
 #### [Voorwaarden maken](enroll-devices/create-terms-and-conditions.md)
 #### [Inschrijvingsbeperkingen instellen](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +108,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Procedures
 ### [Apparaatprofielen configureren](configure-devices/how-to-create-device-profiles.md)
+
+### [Apparaatfuncties configureren](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Apparaatbeperkingen configureren](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
