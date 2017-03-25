@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -49,11 +49,11 @@ Intune maakt beheer van mobiele apparaten (MDM) mogelijk voor iPads, iPhones, en
 
 5.  **Vertel uw gebruikers hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**
 
-    Zie [Uw iOS-apparaat registreren bij Intune](../enduser/enroll-your-device-in-intune-ios.md) of [Uw macOS-apparaat registreren bij Intune](../enduser/enroll-your-device-in-intune-macos.md) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
+    Zie [Uw iOS-apparaat registreren bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) of [Uw macOS-apparaat registreren bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
 
     Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
     - [Bronnen over de eindgebruikerservaring in Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [Richtlijnen voor eindgebruikers van iOS- en Mac-apparaten](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [Richtlijnen voor eindgebruikers van iOS- en Mac-apparaten](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Als uw bedrijf of organisatie iOS-apparaten voor gebruikers koopt, kunnen die apparaten ook worden ingeschreven om te worden beheerd als [iOS-apparaten die bedrijfseigendom zijn](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
