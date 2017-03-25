@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: 011bdf38327319358a364a17fa82c03f1320ab63
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d3401f32994fcd0e54d35a2615a636c5d06183d2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ De bedrijfsportal is een app die u toegang geeft tot de apps, de e-mail, het net
 
 1.  Tik op **Start** > **Play Store**.
 
-2.  Typ in het **zoekvak** de tekst **bedrijfsportal**.
+2.  Typ in het **zoekvak** de tekst **Intune-bedrijfsportal**.
 
 3.  Tik op **Intune-bedrijfsportal**.
 
@@ -46,5 +46,5 @@ De bedrijfsportal is een app die u toegang geeft tot de apps, de e-mail, het net
 
 Nadat u de bedrijfsportal-app hebt gedownload, wilt u het apparaat waarschijnlijk [registreren in Intune](enroll-your-device-in-Intune-android.md), zodat u volledig toegang tot uw werkgegevens hebt.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 

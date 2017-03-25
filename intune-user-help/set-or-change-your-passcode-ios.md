@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 Als uw iOS-apparaat niet aan het wachtwoordcodebeleid van uw IT-beheerder voldoet, wordt er een bericht weergegeven waarin een korte beschrijving van het probleem wordt gegeven en wordt uitgelegd wat u moet doen om ervoor zorgen dat uw wachtwoordcode voldoet aan de vereisten.
 
-De IT-beheerder kan meerdere wachtwoordcodevereisten instellen. Het is bijvoorbeeld mogelijk dat de wachtwoordcode een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers, letters en tekens moet worden gebruikt. Omdat er meerdere vereisten kunnen zijn ingesteld, kan aan de hand van deze instructies alleen worden uitgelegd hoe u de wachtwoordcode instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten.
+De IT-beheerder kan meerdere wachtwoordcodevereisten instellen. Het is bijvoorbeeld mogelijk dat de wachtwoordcode een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers, letters en tekens moet worden gebruikt. Omdat er meerdere vereisten kunnen zijn ingesteld, kan aan de hand van deze instructies alleen worden uitgelegd hoe u de wachtwoordcode instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten. Deze toegangscodes worden bijvoorbeeld gebruikt voor toegang tot het apparaat vanaf het vergrendelingsscherm.
 
 Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet aan de vereisten, neemt u contact op met uw IT-beheerder voor hulp.
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 # <a name="send-logs-to-your-it-admin-using-email"></a>Logboeken naar uw IT-beheerder verzenden via e-mail
 
-Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u uw IT-beheerder helpen het probleem op te lossen door de beheerder informatie via e-mail te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document met de naam _diagnostic log__.
+Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u uw IT-beheerder helpen het probleem op te lossen door de beheerder informatie via e-mail te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
 
 > [!Note]
 > Om het voor uw IT-beheerder eenvoudiger te maken de oorzaak van het probleem te achterhalen, schakelt u _uitgebreide logboekregistratie_ in. Met uitgebreide logboekregistratie worden alle relevante gegevens in het rapport opgenomen. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).

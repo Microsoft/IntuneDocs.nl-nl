@@ -4,7 +4,7 @@ description: Leer hoe u line-of-business-apps ondertekent, zodat u Intune kunt g
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -143,8 +144,58 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 
 5.  Onderteken alle nieuwe en bijgewerkte bedrijfstak-apps van de onderneming met behulp van het nieuwe certificaat. Bestaande toepassingen hoeven niet opnieuw te worden ondertekend en geïmplementeerd.
 
+## <a name="manually-deploy-windows-10-company-portal-app"></a>De Windows 10-bedrijfsportal-app handmatig implementeren
+U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren vanuit Intune, zelfs als u Intune niet hebt geïntegreerd met Windows Store voor Bedrijven.
 
+ > [!NOTE]
+ > Voor deze optie is handmatige implementatie van updates vereist voor elke app-update.
 
-<!--HONumber=Dec16_HO2-->
+1. Meld u aan bij uw account in de [Windows Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de **offlinelicentie**versie van de bedrijfsportal-app aan.  
+2. Zodra de app is aangeschaft, selecteert u de app op de pagina **Inventaris**.  
+3. Selecteer **Windows 10 alle apparaten** als **Platform**. Klik vervolgens op de betreffende **Architectuur** en download. Een app-licentiebestand is niet nodig voor deze app.
+![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](../media/Win10CP-all-devices.png)
+4. Download alle pakketten onder "Vereiste frameworks". Dit moet worden uitgevoerd voor x86-, x64- en ARM-architecturen. Totaal zijn dit 9 pakketten, zoals hieronder weergegeven.  
+![Afbeelding van afhankelijkheidsbestanden voor downloaden ](../media/Win10CP-dependent-files.png)
+5. Voordat u de bedrijfsportal-app uploadt naar Intune, maakt u een map (bijvoorbeeld C:&#92;Company Portal) waarin de pakketten als volgt zijn gestructureerd:
+  1. Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap Afhankelijkheden.  
+  ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](../media/Win10CP-Dependencies-save.png)
+  2. Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden.  
+  Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout.  
+  ![De Windows-app-afhankelijkheid voor dit software-installatieprogramma is niet gevonden in de toepassingsmap. U kunt doorgaan met het maken en implementeren van deze toepassing, maar deze kan pas worden uitgevoerd als de ontbrekende Windows-app-afhankelijkheid beschikbaar is.](../media/Win10CP-error-message.png)
+6. Ga terug naar Intune en upload the Bedrijfsportal-app als nieuwe app. Implementeer als vereiste app naar de gewenste set doelgebruikers.  
 
+Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Een appxbundle met afhankelijkheden implementeren via Microsoft Intune MDM) voor meer informatie over hoe Intune afhankelijkheden voor universele apps verwerkt.  
+
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Hoe kan ik de Bedrijfsportal op de apparaten van mijn gebruikers bijwerken als hierop al de oudere apps uit de Store zijn geïnstalleerd?
+Als uw gebruikers de Windows 8.1- of Windows Phone 8.1-bedrijfsportal-apps al hebben geïnstalleerd vanuit de Store, moeten deze automatisch worden bijgewerkt naar de nieuwe versie, zonder dat hiervoor actie door u of uw gebruikers is vereist. Als de update niet wordt uitgevoerd, vraagt u uw gebruikers om te controleren of automatische updates voor Store-apps op hun apparaten is ingeschakeld.   
+
+### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe ik een upgrade uitvoeren van mijn gesideloade Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
+Het wordt aanbevolen de implementatie voor de Windows 8.1-bedrijfsportal-app te verwijderen door de implementatieactie in te stellen op Installatie ongedaan maken. Zodra deze actie is uitgevoerd, kan de Windows 10-bedrijfsportal-app worden geïmplementeerd via een van de bovenstaande opties.  
+
+Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt geïmplementeerd zonder deze ondertekenen met het Symantec-certificaat, volgt u de stappen in de bovenstaande sectie Deploy directly via Intune (Rechtstreeks implementeren via Intune) om de upgrade te voltooien.
+
+Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt ondertekend en geïmplementeerd met het Symantec-certificaat voor ondertekening van programmacode, volgt u de stappen in de onderstaande sectie.  
+
+### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe kan ik een upgrade uitvoeren van mijn ondertekende en gesideloade Windows Phone 8.1-bedrijfsportal-app of Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
+Het wordt aanbevolen de bestaande implementatie voor de Windows Phone 8.1-bedrijfsportal-app of de Windows 8.1-bedrijfsportal-app te verwijderen door de implementatieactie in te stellen op Installatie ongedaan maken. Zodra deze actie is uitgevoerd, kan de Windows 10-bedrijfsportal-app normaal worden geïmplementeerd.  
+
+Anders moet de Windows 10-bedrijfsportal-app op de juiste manier worden bijgewerkt en ondertekend om ervoor te zorgen dat het upgradepad in acht wordt genomen.  
+
+Als de Windows 10-bedrijfsportal-app op deze manier is ondertekend en geïmplementeerd, moet u dit proces herhalen voor elke nieuwe app-update wanneer deze beschikbaar is in de Store. De app wordt niet automatisch bijgewerkt wanneer de Store wordt bijgewerkt.  
+
+U ondertekent en implementeer de app als volgt:
+
+1. Download het ondertekeningsscript voor de Microsoft Intune Windows 10-bedrijfsportal-app van [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Voor dit script moet de Windows SDK voor Windows 10 moet zijn geïnstalleerd op de hostcomputer. Ga naar [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) om de Windows SDK voor Windows 10 te downloaden.
+2. Download de Windows 10-bedrijfsportal-app vanuit de Windows Store voor Bedrijven, zoals hierboven beschreven.  
+3. Voer het script uit met de invoerparameters die zijn opgegeven in de koptekst van het script om de Windows-10-bedrijfsportal-app (hieronder uitgepakt) te ondertekenen. Afhankelijkheden hoeveen niet in het script te worden doorgegeven. Deze zijn alleen vereist wanneer de app wordt geüpload naar de Intune-beheerconsole.
+
+|Parameter | Beschrijving|
+| ------------- | ------------- |
+|InputWin10AppxBundle |Het pad naar het bron-appxbundle-bestand |
+|OutputWin10AppxBundle |Het uitvoerpad voor het ondertekende appxbundle-bestand.  Win81Appx Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).|
+|PfxFilePath |Het pad naar het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec (het PFX-bestand). |
+|PfxPassword| Het wachtwoord voor het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec. |
+|PublisherId |De uitgevers-id van de onderneming. Als deze niet is opgegeven, wordt het veld Onderwerp van Symantec Enterprise-certificaat voor ondertekening van mobiele code gebruikt.|
+|SdkPath | Het pad naar de hoofdmap van de Windows-SDK voor Windows 10. Dit argument is optioneel en wordt standaard ingesteld op ${env:ProgramFiles(x86)} \Windows Kits\10|
+Via het script wordt de ondertekende versie van de Windows 10-bedrijfsportal-app uitgevoerd wanneer het uitvoeren van de app is voltooid. Vervolgens implementeert u de ondertekende versie van de app als een LOB-app via Intune. De huidige geïmplementeerde versies worden bijgewerkt naar deze nieuwe app.  
 

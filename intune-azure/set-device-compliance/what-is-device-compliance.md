@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>Wat is apparaatnaleving in Intune Azure Preview?
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-U moet er voor de beveiliging van bedrijfsgegevens voor zorgen dat de apparaten die worden gebruikt voor toegang tot bedrijfs-apps en- gegevens, voldoen aan bepaalde regels. Deze regels kunnen bijvoorbeeld zijn dat voor toegang tot apparaten een pincode moet worden opgegeven en dat gegevens op apparaten moeten zijn versleuteld. Een verzameling van dergelijke regels wordt een **nalevingsbeleid** genoemd.
+Met nalevingsbeleid in Intune definieert u de regels en instellingen waaraan een apparaat moet voldoen om ook te voldoen aan het beleid voor voorwaardelijke toegang voor Intune en EMS. U kunt ook een nalevingsbeleid voor apparaten gebruiken om nalevingsproblemen met apparaten te bewaken en op te lossen. 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>Hoe gebruikt u een nalevingsbeleid?
-U kunt een nalevingsbeleid gebruiken met voorwaardelijke toegang om alleen toegang te verlenen aan apparaten die voldoen aan de regels van het nalevingsbeleid voor de toegang tot e-mail en andere services.
+Deze regels zijn onder meer de volgende:
 
-U kunt nalevingsbeleid ook onafhankelijk van voorwaardelijke toegang gebruiken.
-Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten zijn opengebroken of geroot. Bij onafhankelijk gebruik van nalevingsbeleid zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
+- Een wachtwoord gebruiken voor toegang tot het apparaat
+- Versleuteling
+- Of het apparaat jailbroken of geroot is
+- Minimaal vereiste versie van het besturingssysteem
+- Maximale versie van het besturingssysteem dat is toegestaan
+- Vereisen dat het apparaat zich op of onder het Mobile Threat Defense-niveau bevindt
 
-U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving. Zie Instellingen en functies op uw apparaten beheren voor meer informatie over hoe lang het duurt voordat mobiele apparaten een beleid krijgen nadat het beleid is geïmplementeerd.
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>Concepten
-Hieronder vindt u een aantal termen en begrippen die nuttig zijn voor een goed inzicht in nalevingsbeleid.
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>Nalevingsvereisten
-Nalevingsvereisten zijn in feite regels, zoals het vereisen van een pincode voor het apparaat of versleuteling, die u kunt opgeven als vereist of niet vereist voor een nalevingsbeleid.
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,14 +67,22 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>Verschillen tussen de klassieke Intune-beheerconsole en Intune in Azure Portal
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>Hoe gebruikt u een nalevingsbeleid?
 
+### <a name="using-ems-conditional-access"></a>Voorwaardelijke toegang voor EMS gebruiken
+U kunt een nalevingsbeleid gebruiken met voorwaardelijke toegang voor EMS om alleen toegang te verlenen aan een of meer apparaten die voldoen aan de regels van het nalevingsbeleid voor de toegang tot e-mail en andere bedrijfsbronnen.
 
-Als u eerder hebt gewerkt met de klassieke Intune-beheerconsole, moet u rekening houden met de volgende verschillen bij de overgang naar een nieuwe werkstroom voor het nalevingsbeleid voor apparaten in Azure Portal:
+### <a name="not-using-ems-conditional-access"></a>Geen voorwaardelijke toegang voor EMS gebruiken
+U kunt een nalevingsbeleid voor apparaten ook onafhankelijk van voorwaardelijke toegang voor EMS gebruiken.
+Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten jailbroken of geroot zijn. Bij onafhankelijk gebruik van nalevingsbeleid zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
 
+U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving. Zie Instellingen en functies op uw apparaten beheren voor meer informatie over hoe lang het duurt voordat mobiele apparaten een beleid krijgen nadat het beleid is geïmplementeerd.
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Klassieke Intune-beheerconsole vs. Intune Azure Preview Portal
+
+Als u de klassieke Intune-beheerconsole gebruikt, moet u rekening houden met de volgende verschillen bij de overgang naar een nieuwe werkstroom voor het nalevingsbeleid voor apparaten in Azure Portal:
 
 -   In Azure Portal wordt het nalevingsbeleid voor elk platform afzonderlijk gemaakt. In de Intune-beheerconsole werd één nalevingsbeleid voor alle ondersteunde platformen gemaakt.
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
@@ -81,15 +90,10 @@ Als u eerder hebt gewerkt met de klassieke Intune-beheerconsole, moet u rekening
 
 ##  <a name="next-steps"></a>Volgende stappen
 
-[Aan de slag met nalevingsbeleid](get-started-with-device-compliance.md)
+[Aan de slag met nalevingsbeleidsregels](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

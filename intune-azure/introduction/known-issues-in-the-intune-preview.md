@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapp
 ## <a name="administration-and-accounts"></a>Beheer en accounts
 
 - Globale beheerders (ook wel tenantbeheerders genoemd) kunnen de reguliere beheertaken voortzetten zonder afzonderlijke Intune- of Enterprise Mobility Suite-licentie (ESM). Als hoofdbeheerders echter de service willen gebruiken, bijvoorbeeld om hun eigen apparaat of een bedrijfsapparaat in te schrijven of om de Intune-bedrijfsportal te gebruiken, moeten ze net als anderen beschikken over een Intune- of EMS-licentie.
+
+## <a name="apple-enrollment-profile-migration"></a>Profielmigratie van Apple-inschrijving
+- In de komende maanden wordt het beheren van Apple Device Enrollment Program- en de Apple Configurator-inschrijvingen via Intune mogelijk via de nieuwe Azure Portal. Als u het Apple Device Enrollment Program-token verwijdert en geen bijgewerkt token uploadt, wordt het oorspronkelijke token hersteld in de nieuwe Azure Portal als onderdeel van de migratie van uw Intune-account. Als u dit token wilt verwijderen en DEP-inschrijving wilt voorkomen, hoeft u alleen het token te verwijderen uit Azure Portal. 
 

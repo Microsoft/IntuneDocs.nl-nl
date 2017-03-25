@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="make-your-device-safer-with-the-right-password"></a>Uw apparaat veiliger maken met het juiste wachtwoord
 
-Mensen hebben dagelijks toegang tot bedrijfsresources, zoals e-mail en documenten, nodig vanaf hun Windows-apparaten. Uw organisatie wil ervoor zorgen dat uw apparaat dit op een veilige manier doet. U kunt een wachtwoord vereisen om ervoor te zorgen dat uw apparaat zich op een veilige manier toegang tot deze resources verschaft.
+Mensen hebben dagelijks toegang tot bedrijfsresources, zoals e-mail en documenten, nodig vanaf hun Windows-apparaten. Uw organisatie wil ervoor zorgen dat uw apparaat dit op een veilige manier doet. U kunt een wachtwoord vereisen om ervoor te zorgen dat uw apparaat zich op een veilige manier toegang tot deze resources verschaft. Deze wachtwoorden worden bijvoorbeeld gebruikt voor toegang tot het apparaat vanaf het vergrendelingsscherm.
 
 Als uw Windows-apparaat niet aan het wachtwoordbeleid van uw IT-beheerder voldoet, wordt er een bericht weergegeven met een korte beschrijving van het probleem en wordt uitgelegd wat u moet doen om ervoor zorgen dat uw wachtwoord voldoet aan de vereisten.
 

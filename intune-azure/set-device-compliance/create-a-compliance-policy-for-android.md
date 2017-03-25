@@ -16,45 +16,24 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Een apparaatnalevingsbeleid maken voor Android-apparaten in Intune Azure Preview
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Een nalevingsbeleid voor apparaten maken voor Android-apparaten in Intune Azure Preview Portal
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Voor elk platform wordt een nalevingsbeleid gemaakt.  U kunt een nalevingsbeleid maken in Azure Portal. Zie het onderwerp [What is device compliance?](what-is-device-compliance.md) (Wat is apparaatnaleving?) voor meer informatie over een nalevingsbeleid. Zie [Get started with device compliance](get-started-with-device-compliance.md) (Aan de slag met apparaatnaleving) voor informatie over de vereisten die moet uitvoeren voordat u een nalevingsbeleid gaat maken.
+Nalevingsbeleid voor apparaten wordt voor elk platform gemaakt in Intune Azure preview Portal. 
 
-In de onderstaande tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
+- Zie het onderwerp [What is device compliance?](what-is-device-compliance.md) (Wat is apparaatnaleving?) voor meer informatie over een nalevingsbeleid.
+- Zie [Get started with device compliance](get-started-with-device-compliance.md) (Aan de slag met apparaatnaleving) voor informatie over de vereisten die moet uitvoeren voordat u een nalevingsbeleid gaat maken.
 
---------------------
-
-|**Beleidsinstelling**| **Android 4.0 of hoger, Samsung Knox Standard 4.0 of hoger** |
-| --- | ----|
-| **Configuratie van pincode of wachtwoord** |  In quarantaine |
-| **Apparaatversleuteling** | In quarantaine |
-| **Opengebroken of geroot apparaat** | In quarantaine (geen instelling) |
-| **E-mailprofiel** | Niet van toepassing |
-| **Minimale versie van het besturingssysteem** | In quarantaine |
-| **Maximale versie van het besturingssysteem** |   In quarantaine |
-| **Windows Health Attestation** | Niet van toepassing |
-
---------------------------
-
-
-**Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. (De gebruiker moet bijvoorbeeld een pincode instellen.)+
-
-**In quarantaine** = het besturingssysteem van het apparaat dwingt geen naleving af. (Bij Android-apparaten bijvoorbeeld wordt de gebruiker niet gedwongen het apparaat te versleutelen.) Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:+
-
-- Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
-- De bedrijfsportal stelt de gebruiker op de hoogte van eventuele nalevingsproblemen.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Een nalevingsbeleid maken in Azure Portal
+## <a name="to-create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
 1. Kies **Apparaatcompatibiliteit instellen** op de blade **Intune**. Kies **Alle apparaatnalevingsbeleidsregels** onder **Beheren** en kies **Maken**.
 2. Typ een naam, beschrijving en kies het platform waarop u dit beleid wilt toepassen.
@@ -67,7 +46,7 @@ In de onderstaande tabel wordt beschreven hoe niet-compatibele instellingen word
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
+## <a name="to-assign-user-groups"></a>Gebruikersgroepen toewijzen
 
 Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u op de blade **Naleving - Beleid**.
 
@@ -78,7 +57,27 @@ U hebt het beleid toegepast op gebruikers.  De apparaten die worden gebruikt doo
 
 <!---##  Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
+## <a name="device-health-and-security-settings"></a>Status en beveiligingsinstellingen van apparaat
+
+- **Jailbreaken of uitvoeren als rootgebruiker niet toegestaan**: als u deze instelling inschakelt, worden apparaten waarop jailbreaking is uitgevoerd of die als rootgebruiker worden uitgevoerd, als niet-compatibel beschouwd.
+- **Vereisen dat de installatie van apps van onbekende bronnen wordt voorkomen (Android 4.0 en hoger)**: als u apparaten wilt blokkeren waarop **Beveiliging** > **Onbekende bronnen** op het apparaat is ingeschakeld, schakelt u deze instelling in en stelt u deze in op **Ja**.
+
+### <a name="important"></a>Belangrijk
+
+Voor sideloading-toepassingen moet de instelling **Onbekende bronnen** zijn ingeschakeld. Dwing dit nalevingsbeleid alleen af als u Android-apps niet met behulp van sideloading op apparaten laadt.
+
+- **Vereisen dat de USB-foutopsporing is uitgeschakeld (Android 4.2 of hoger)**: deze instelling bepaalt of moet worden gedetecteerd of de USB-foutopsporingsoptie op het apparaat is ingeschakeld.
+- **Vereisen dat Apparaat scannen op beveiligingsbedreigingen is ingeschakeld op apparaten (Android 4.2 - 4.4)**: deze instelling geeft aan dat de functie **Apps controleren** is ingeschakeld op het apparaat.
+- **Minimaal niveau voor de Android-beveiligingspatch (Android 6.0 of hoger)**: gebruik deze instelling om het minimale Android-patchniveau op te geven. Apparaten die niet ten minste dit patchniveau hebben, worden als niet-compatibel gezien. De datum moet de volgende notatie hebben: dd-mm-jjjj.
+- **Vereisen dat Device Threat Protection wordt ingeschakeld**: gebruik deze instelling om de risicobeoordeling uit de Lookout MTP-oplossing als voorwaarde voor naleving te gebruiken. Kies het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
+  - **Geen (beveiligd)**: dit is het meest veilige niveau. Dit betekent dat er op het apparaat geen bedreigingen mogen staan. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
+  - **Laag**: het apparaat wordt geëvalueerd als compatibel als er alleen bedreigingen van laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
+  - **Gemiddeld**: het apparaat wordt geëvalueerd als compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
+  - **Hoog**: dit is de minst veilige optie. In principe zijn hierdoor alle bedreigingsniveaus toegestaan. Het is wellicht het beste als u deze oplossing alleen gebruikt voor rapportagedoeleinden.
+
+Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy) voor meer informatie.
+
+## <a name="system-security-settings"></a>Instellingen voor systeembeveiliging
 
 ### <a name="password"></a>Wachtwoord
 
@@ -101,30 +100,35 @@ U hebt het beleid toegepast op gebruikers.  De apparaten die worden gebruikt doo
 
 - **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt aangeven dat apparaten moeten worden versleuteld om verbinding te maken met resources. Apparaten worden versleuteld wanneer u de instelling **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** kiest.
 
-## <a name="device-health-and-security-settings"></a>Status en beveiligingsinstellingen van apparaat
-
-- **Jailbreaken of uitvoeren als rootgebruiker niet toegestaan**: als u deze instelling inschakelt, worden apparaten waarop jailbreaking is uitgevoerd of die als rootgebruiker worden uitgevoerd, als niet-compatibel beschouwd.
-- **Vereisen dat de installatie van apps van onbekende bronnen wordt voorkomen (Android 4.0 en hoger)**: als u apparaten wilt blokkeren waarop **Beveiliging** > **Onbekende bronnen** op het apparaat is ingeschakeld, schakelt u deze instelling in en stelt u deze in op **Ja**.
-
-### <a name="important"></a>Belangrijk
-
-Voor sideloading-toepassingen moet de instelling **Onbekende bronnen** zijn ingeschakeld. Dwing dit nalevingsbeleid alleen af als u Android-apps niet met behulp van sideloading op apparaten laadt.
-
-- **Vereisen dat de USB-foutopsporing is uitgeschakeld (Android 4.2 of hoger)**: deze instelling bepaalt of moet worden gedetecteerd of de USB-foutopsporingsoptie op het apparaat is ingeschakeld.
-- **Vereisen dat Apparaat scannen op beveiligingsbedreigingen is ingeschakeld op apparaten (Android 4.2 - 4.4)**: deze instelling geeft aan dat de functie **Apps controleren** is ingeschakeld op het apparaat.
-- **Minimaal niveau voor de Android-beveiligingspatch (Android 6.0 of hoger)**: gebruik deze instelling om het minimale Android-patchniveau op te geven. Apparaten die niet ten minste dit patchniveau hebben, worden als niet-compatibel gezien. De datum moet de volgende notatie hebben: dd-mm-jjjj.
-- **Vereisen dat Device Threat Protection wordt ingeschakeld**: gebruik deze instelling om de risicobeoordeling uit de Lookout MTP-oplossing als voorwaarde voor naleving te gebruiken. Kies het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
-  - **Geen (beveiligd)**: dit is het meest veilige niveau. Dit betekent dat er op het apparaat geen bedreigingen mogen staan. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
-  - **Laag**: het apparaat wordt geëvalueerd als compatibel als er alleen bedreigingen van laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
-  - **Gemiddeld**: het apparaat wordt geëvalueerd als compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
-  - **Hoog**: dit is de minst veilige optie. In principe zijn hierdoor alle bedreigingsniveaus toegestaan. Het is wellicht het beste als u deze oplossing alleen gebruikt voor rapportagedoeleinden.
-
-Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy) voor meer informatie.
-
 ## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 
 - **Minimale versie van het besturingssysteem die is vereist**: wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsbronnen krijgen.
 - **Maximale versie van het besturingssysteem die is toegestaan**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Totdat er een wijziging is doorgevoerd in regels om de versie van het besturingssysteem toe te staan, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>De werking van niet-compatibele instellingen met beleid voor voorwaardelijke toegang?
+
+In de onderstaande tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
+
+--------------------
+
+|**Beleidsinstelling**| **Android 4.0 of hoger, Samsung Knox Standard 4.0 of hoger** |
+| --- | ----|
+| **Configuratie van pincode of wachtwoord** |  In quarantaine |
+| **Apparaatversleuteling** | In quarantaine |
+| **Opengebroken of geroot apparaat** | In quarantaine (geen instelling) |
+| **E-mailprofiel** | Niet van toepassing |
+| **Minimale versie van het besturingssysteem** | In quarantaine |
+| **Maximale versie van het besturingssysteem** |   In quarantaine |
+| **Windows Health Attestation** | Niet van toepassing |
+
+--------------------------
+
+**Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. (De gebruiker moet bijvoorbeeld een pincode instellen.)+
+
+**In quarantaine** = het besturingssysteem van het apparaat dwingt geen naleving af. (Bij Android-apparaten bijvoorbeeld wordt de gebruiker niet gedwongen het apparaat te versleutelen.) Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:+
+
+- Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
+- De bedrijfsportal stelt de gebruiker op de hoogte van eventuele nalevingsproblemen.
 
 <!--- ## Next steps
 

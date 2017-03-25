@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Wanneer er een beleid of een app wordt geïmplementeerd, probeert Intune het app
 
 Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, doet Intune nog drie pogingen.  Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen. In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
 
-- iOS en Mac OS X: om de 6 uur.
+- iOS en macOS: om de 6 uur.
 - Android: om de 8 uur.
 - Windows Phone: om de 8 uur.
 - Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de 8 uur.
 
 Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
 
-- iOS en Mac OS X: om de 15 minuten gedurende 6 uur en daarna om de 6 uur.
+- iOS en macOS: om de 15 minuten gedurende 6 uur en daarna om de 6 uur.
 - Android: om de 3 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
 - Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
 - Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 8 uur.
@@ -499,8 +500,3 @@ Andere MDM-apparaten, zoals Android, Windows Phone 8.1 en hoger of iOS moeten mo
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
-
-
-<!--HONumber=Feb17_HO3-->
-
-

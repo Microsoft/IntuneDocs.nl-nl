@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 9862ef9fd1d4827ae99480cd2cf2eac8dfca54d8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,6 +28,7 @@ ms.lasthandoff: 02/21/2017
 
 Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor meer gecompliceerde problemen kunt u het best contact opnemen met uw IT-beheerder via de contactgegevens op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
+- [Naleving op uw Android-apparaat controleren](check-compliance-on-your-device-android.md)
 - [Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Logboeken naar uw IT-beheerder verzenden via e-mail](send-logs-to-your-it-admin-by-email-android.md)
 - [Logboeken naar uw IT-beheerder verzenden via een USB-kabel](send-logs-to-your-it-admin-using-cable-android.md)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>De certificaatinfrastructuur voor SCEP configureren in Microsoft Intune
@@ -54,7 +54,7 @@ Van het perimeternetwerk naar het vertrouwde netwerk, alle poorten en protocolle
 Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-toepassingsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) of een proxy van een derde partij.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Certificaten en sjablonen
+### <a name="BKMK_CertsAndTemplates"></a>Certificaten en sjablonen
 
 |Object|Details|
 |----------|-----------|
@@ -63,13 +63,13 @@ Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-t
 |**Serververificatiecertificaat**|Dit SSL-certificaat, dat wordt aangevraagd bij uw verlenende CA of openbare CA, installeert en verbindt u in IIS op de NDES-server.|
 |**Vertrouwde basis-CA-certificaat**|U exporteert dit als een **CER-bestand** van de basis-CA of een ander apparaat dat de basis-CA vertrouwt, en implementeert het naar apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Accounts
+### <a name="BKMK_Accounts"></a>Accounts
 
 |Naam|Details|
 |--------|-----------|
 |**NDES-serviceaccount**|U geeft een domeingebruikersaccount op om als het NDES-serviceaccount te gebruiken.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Uw infrastructuur configureren
+## <a name="BKMK_ConfigureInfrastructure"></a>Uw infrastructuur configureren
 Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvoeren waarvoor kennis van Windows Server 2012 R2 en Active Directory Certificate Services (ADCS) nodig is:
 
 **Taak 1**: een NDES-serviceaccount maken
@@ -108,7 +108,7 @@ In deze taak:
     -   Zorg ervoor dat op het tabblad **Extensies** de **beschrijving van toepassingsbeleid** de optie **Clientverificatie**bevat.
 
         > [!IMPORTANT]
-        > Bewerk voor iOS- en Mac OS X-certificaatsjablonen op het tabblad **Extensies** het **sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
+        > Bewerk voor iOS- en macOS-certificaatsjablonen op het tabblad **Extensies** het **sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
 
     -   Selecteer op het tabblad **Beveiliging** het NDES-serviceaccount en wijs hieraan de machtiging **Registreren** toe voor de sjabloon. Intune-beheerders die SCEP-profielen maken, vereisen **leesrechten** om naar de sjabloon te kunnen bladeren tijdens het maken van SCEP-profielen.
 
@@ -118,7 +118,7 @@ In deze taak:
 3.  Controleer de **geldigheidsperiode** op het tabblad **Algemeen** van de sjabloon. Standaard gebruikt Intune de waarde die is geconfigureerd in de sjabloon. U kunt de CA echter zodanig configureren dat de aanvrager een andere waarde kan opgeven, die u vervolgens vanuit de Intune-beheerconsole kunt instellen. Als u altijd de waarde in de sjabloon wilt gebruiken, slaat u de rest van deze stap over.
 
     > [!IMPORTANT]
-    > Het iOS-platform en het Mac OS X-platform gebruiken altijd de waarde die in de sjabloon is ingesteld, ongeacht andere configuraties die u instelt.
+    > iOS en macOS gebruiken altijd de waarde die in de sjabloon is ingesteld, ongeacht andere configuraties die u instelt.
 
 Hier volgen schermafbeeldingen van de configuratie van een voorbeeldsjabloon.
 

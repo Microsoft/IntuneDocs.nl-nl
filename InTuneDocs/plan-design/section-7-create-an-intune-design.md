@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-De sectie van de handleiding moet worden gebruikt in combinatie met andere onderwerpen in sectie 2. Dit ontwerp wordt gebaseerd op de informatie die u verzamelt en besluiten die u neemt bij het voltooien van de voorgaande secties in deze handleiding. In deze ontwerpsectie gaan we uit van een zelfstandige Intune-versie, die bestaat uit een Microsoft-cloudservice die zich in de cloud bevindt.
+De sectie van de handleiding moet worden gebruikt in combinatie met andere onderwerpen in sectie 2. Dit ontwerp wordt gebaseerd op de informatie die u verzamelt en besluiten die u neemt bij het voltooien van de voorgaande secties in deze handleiding. In deze ontwerpsectie gaan we uit van een zelfstandige Intune-versie, die bestaat uit een Microsoft-cloudservice.
 
-Hoewel er een minimum aan vereisten voor de lokale infrastructuur is, wordt het wel aanbevolen om te werken aan een ontwerpplan om ervoor te zorgen dat u de juiste beheeroplossing voor mobiele apparaten hebt die aansluit bij uw doelen, doelstellingen en vereisten.
+Hoewel er een minimum aan vereisten voor de lokale infrastructuur is, dient u een ontwerpplan te maken om ervoor te zorgen dat u de juiste beheeroplossing voor mobiele apparaten hebt die aansluit bij uw doelen, doelstellingen en vereisten.
 
-Bovendien is het gebruikelijk dat er tijdens de implementatie- en testfases ontwerpwijzigingen nodig zijn. Vergeet dan ook niet om dergelijke wijzigingen en de gedachte achter te documenteren, wanneer die situatie zich voordoet. De volgende gebieden komen aan bod:
+Bovendien is het gebruikelijk dat er tijdens de implementatie- en testfases ontwerpwijzigingen nodig zijn. Vergeet dan ook niet om deze wijzigingen en de gedachte hierachter te documenteren, wanneer die situatie zich voordoet. De volgende gebieden komen aan bod:
 
 -   De huidige omgeving
 
@@ -409,9 +410,4 @@ Hieronder ziet u een voorbeeld van het vastleggen van beleidsregels voor voorwaa
 ## <a name="next-section"></a>Volgende sectie
 
 De volgende sectie bevat richtlijnen voor het [Intune-implementatieproces](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

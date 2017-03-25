@@ -1,12 +1,12 @@
 ---
-title: Op rollen gebaseerd toegangsbeheer (RBAC) voor Microsoft Intune
+title: Intune-functies (RBAC) voor Microsoft Intune
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u met RBAC kunt bepalen welke personen acties kunnen uitvoeren en wijzigingen kunnen aanbrengen.'
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) voor Microsoft Intune
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Intune-functies (RBAC) voor Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -68,7 +68,7 @@ U stelt een nieuwe IT-beheerder aan die verantwoordelijk is voor het implementer
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Toegangsbeheer** op de blade **Intune**.
+3. Kies **Apps beheren** op de blade **Intune-rollen**.
 ![Werkbelasting Toegangsbeheer](./media/axxess-control.png)
 1. Kies **Aangepast toevoegen** op de blade **Rollen** van de workload **Toegangsbeheer**.
 2. Voer op de blade **Aangepaste rol toevoegen** een naam en een beschrijving in voor de nieuwe rol en klik vervolgens op **Machtigingen**.

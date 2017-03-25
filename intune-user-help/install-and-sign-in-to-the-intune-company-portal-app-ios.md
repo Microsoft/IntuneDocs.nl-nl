@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 
 De bedrijfsportal-app is een app die u op het iOS-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school.  U kunt pas toegang krijgen nadat u de bedrijfsportal-app hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt ingeschreven. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie.
 
-1.  Ga naar de **App Store** en zoek naar **Intune**.
+1.  Ga naar de **App Store** en zoek naar de **Intune-bedrijfsportal**.
 
 2.  Download de **Microsoft Intune-bedrijfsportal**-app.
 

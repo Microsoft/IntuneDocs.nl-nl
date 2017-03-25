@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-In dit onderwerp vindt u meer informatie over wat u nodig hebt voordat u een nalevingsbeleid voor apparaten kunt gaan maken en vindt u een kort overzicht van wat u kunt zien en doen in Azure Portal. Als apparaatnaleving nieuw is voor u, kunt u dit onderwerp doorlezen voor meer informatie over wat apparaatnaleving is en hoe u een dergelijk beleid in uw bedrijf kunt gebruiken.
+In dit onderwerp wordt het volgende uitgelegd: 
+
+- Wat u nodig hebt voordat u een nalevingsbeleid voor apparaten kunt maken.
+- Een kort overzicht van wat u kunt zien en doen in Intune Azure Preview Portal. 
+
+Als u niet bekend bent met apparaatnaleving, kunt u [dit onderwerp](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) doorlezen voor meer informatie over wat apparaatnaleving is en hoe u een dergelijk beleid in uw organisatie kunt gebruiken.
 
 ##  <a name="pre-requisites"></a>Vereisten
-
 
 -   Een abonnement op Intune
 
 -   Een abonnement op Azure Active Directory
 
-
-
 ##  <a name="supported-platforms"></a>Ondersteunde platformen:
-
 
 -   Android
 
@@ -54,8 +55,7 @@ In dit onderwerp vindt u meer informatie over wat u nodig hebt voordat u een nal
 
 ##  <a name="azure-portal-workflow"></a>Azure Portal-werkstroom
 
-
-Hier vindt u een overzicht van hoe u een apparaatnalevingsbeleid kunt maken en beheren in Azure Portal.
+Hier vindt u een overzicht van hoe u een nalevingsbeleid voor apparaten kunt maken en beheren in Intune Azure Preview Portal.
 
 <!---### Overview
 

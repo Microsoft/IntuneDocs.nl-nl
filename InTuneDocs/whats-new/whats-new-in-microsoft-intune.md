@@ -2,10 +2,10 @@
 title: Wat is er nieuw? | Microsoft Docs
 description: Ontdek wat er nieuw is in de release van Microsoft Intune van deze maand en in oudere releases
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cb1679deda0ba325ee3bd7288713f12317489006
-ms.openlocfilehash: 37d44dc2752815ef7abf47e5d4a658a126892a86
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
+ms.lasthandoff: 03/15/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---february-2017"></a>Wat is er nieuw in Microsoft Intune - februari 2017
+# <a name="whats-new-in-microsoft-intune---march-2017"></a>Wat is er nieuw in Microsoft Intune - maart 2017
 Ontdek wat er nieuw is in deze release van Microsoft Intune. U vindt hier ook informatie over toekomstige wijzigingen waar u rekening mee moet houden én informatie over oudere releases.
 
 > [!Note]
@@ -29,45 +29,52 @@ Ontdek wat er nieuw is in deze release van Microsoft Intune. U vindt hier ook in
 
 ## <a name="new-capabilities"></a>Nieuwe mogelijkheden
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>De bedrijfsportalwebsite moderniseren <!--753980-->
-De bedrijfsportalwebsite ondersteunt apps die zijn gericht op gebruikers die geen beheerde apparaten hebben. De website wordt in overeenstemming gebracht met andere Microsoft-producten en -services met een nieuw contrasterend kleurenschema, dynamische illustraties en een 'hamburgermenu', ![Kleine afbeelding van het hamburgermenu dat nu is toegevoegd in de linkerbovenhoek van de bedrijfsportalwebsite](./media/CP_hamburger_menu.png) dat contactgegevens van de helpdesk bevat, alsmede informatie over bestaande beheerde apparaten. De landingspagina wordt opnieuw ingedeeld om de nadruk te leggen op apps die beschikbaar zijn voor gebruikers, met carrousels voor uitgelichte en recent bijgewerkte apps. De [pagina met UI-updates](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) bevat voor-en-na afbeeldingen.
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nieuwe gebruikerservaring voor de bedrijfsportal-app voor Android <!--621622-->
 
-### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nieuwe begeleide ervaring voor Windows 10-bedrijfsportal<!--713927-->
-Vanaf maart bevat de bedrijfsportal voor Windows 10 een begeleiding voor Intune voor apparaten die nog niet zijn geïdentificeerd of geregistreerd. Deze nieuwe ervaring biedt stapsgewijze instructies voor de gebruiker van de aangepaste Windows 10-build-versie, die gebruikers begeleidt bij het uitvoeren van AAD-registratie (vereist voor de identificatie voor voorwaardelijke toegangsfuncties) en MDM-registratie (vereist voor beheerfuncties op het apparaat). Deze ervaring is toegankelijk vanaf de startpagina van de bedrijfsportal en is optioneel. Gebruikers kunnen de app blijven gebruiken zolang ze de registratie en aanmelding niet voltooien. De functionaliteit kan echter beperkt zijn.
+Voor de bedrijfsportal-app voor Android wordt een update uitgevoerd voor de gebruikersinterface om deze er moderner te laten uitzien en om een betere gebruikerservaring te bieden. De belangrijkste updates zijn:
+
+- Kleuren: de tabbladkoppen van de bedrijfsportal-app hebben de kleuren van de door de IT opgegeven huisstijl.
+- Apps: op het tabblad **Apps** zijn de knoppen **Aanbevolen apps** en **Alle apps** bijgewerkt.
+- Zoeken: op het tabblad **Apps** is de knop **Zoeken** nu een zwevende actieknop.
+- Navigeren door apps: in de weergave **Alle apps** wordt tabbladen getoond voor de opties **Aanbevolen**, **Alle** en **Categorieën** om de navigatie te vereenvoudigen.
+- Ondersteuning: de tabbladen **Mijn apparaten** en **Contact opnemen met IT** zijn bijgewerkt om de leesbaarheid te vergroten.
+
+Zie [UI-updates voor Intune-apps voor eindgebruikers](whats-new-in-intune-app-ui.md) voor meer informatie over deze wijzigingen.
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Niet-beheerde apparaten hebben toegang tot toegewezen apps <!--664691-->
+
+Als onderdeel van de ontwerpwijzigingen op de bedrijfsportalwebsite kunnen iOS- en Android-gebruikers op hun niet-beheerde apparaten apps installeren die aan hen zijn toegewezen als 'beschikbaar zonder inschrijving'. Gebruikers kunnen zich met behulp van hun Intune-referenties aanmelden bij de bedrijfsportalwebsite en de lijst met aan hen toegewezen apps bekijken. De app-pakketten van de 'beschikbaar zonder inschrijving'-apps kunnen worden gedownload via de bedrijfsportalwebsite. Deze wijziging is niet van toepassing op apps die pas na inschrijving kunnen worden geïnstalleerd, omdat gebruikers wordt gevraagd hun apparaat in te schrijven als zij deze apps willen installeren.
+
+### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Ondertekeningsscript voor de Windows 10-bedrijfsportal <!--941642-->
+
+Als u de Windows 10-bedrijfsportal-app moet downloaden en sideloaden, kunt u nu een script gebruiken om het proces voor het ondertekenen van apps voor uw organisatie te vereenvoudigen en stroomlijnen.   Raadpleeg [Microsoft Intune Signing Script](https://aka.ms/win10cpscript) (Ondertekeningsscript voor Microsoft Intune) voor de Windows 10-bedrijfsportal in de TechNet-galerie voor het downloaden van het script en meer informatie over het gebruik ervan. Raadpleeg [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (Uw Windows 10-bedrijfsportal-app bijwerken) in het Intune Support-teamweblog voor meer informatie over deze mededeling.
+
 
 ## <a name="notices"></a>Mededelingen
 
-### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>Bij groepsmigratie zijn geen updates voor groepen of beleidsregels vereist voor iOS-apparaten <!--898837-->
-Voor elke Intune-apparaatgroep die vooraf is toegewezen door een inschrijvingsprofiel voor bedrijfsapparaten, wordt tijdens de migratie naar Azure Active Directory-apparaatgroepen een overeenkomende dynamische apparaatgroep in AAD gemaakt op basis van de naam van het inschrijvingsprofiel. Dit zorgt ervoor dat apparaten wanneer ze worden ingeschreven automatisch worden gegroepeerd en hetzelfde beleid en dezelfde apps ontvangen als de oorspronkelijke Intune-groep.
+### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Verbeterde ondersteuning voor Android-gebruikers in China <!--720444-->
 
-Wanneer een tenant in het migratieproces wordt ingevoerd voor groepering en targeting, wordt in Intune automatisch een dynamische AAD-groep gemaakt die overeenkomt met een Intune-groep waarop een inschrijvingsprofiel voor bedrijfsapparaten is gericht. Als de Intune-beheerder de betreffende Intune-groep verwijdert, wordt de overeenkomende dynamische AAD-groep niet verwijderd. Leden van de groep en de dynamische query worden gewist, maar de groep zelf blijft aanwezig totdat de IT-beheerder deze via de AAD-portal verwijdert.
+Vanwege de afwezigheid van de Google Play Store in China kunnen Android-apparaten apps alleen verkrijgen via Chinese-marktplaatsen. De bedrijfsportal ondersteunt deze werkstroom door Android-gebruikers in China om te leiden zodat ze de bedrijfsportal- en Outlook-apps kunnen downloaden in lokale App Stores. Dit verbetert de gebruikerservaring wanneer beleidsregels voor voorwaardelijke toegang zijn ingeschakeld, zowel voor Mobile Device Management als voor Mobile Application Management. De bedrijfsportal- en Outlook-apps voor Android zijn beschikbaar via de volgende Chinese App Stores:
 
-Ook als de IT-beheerder de Intune-groep wijzigt waarop een inschrijvingsprofiel voor bedrijfsapparaten is gericht, wordt in Intune een nieuwe dynamische groep gemaakt op basis van de nieuwe profieltoewijzing en wordt de dynamische groep die werd gemaakt voor de oude toewijzing niet verwijderd.
+- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
-### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Standaardinstelling voor het beheren van Windows-desktops via Windows-instellingen <!--663050-->
-Het standaardgedrag voor het registreren van Windows 10-desktops verandert. Nieuwe registraties volgen het standaardproces van registratie via de MDM-agent in plaats van via de pc-agent. De bedrijfsportalwebsite biedt gebruikers van Windows 10-desktops registratie-instructies om ze te helpen bij het toevoegen van Windows 10-desktopcomputers als mobiele apparaten. Dit heeft geen gevolgen voor momenteel ingeschreven pc's en met behulp van de pc-agent kan uw organisatie nog altijd Windows 10-desktops beheren [als u dat liever hebt](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>Aanbevolen procedure: zorg ervoor dat de bedrijfsportal-apps zijn bijgewerkt<!--879465-->
 
-### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Verbetering van MAM-ondersteuning voor selectief wissen <!--581242-->
-Eindgebruikers krijgen extra informatie over het verkrijgen van toegang tot werk- of schoolgegevens als die gegevens automatisch worden verwijderd op basis van het beleid 'Offline interval voordat app-gegevens worden gewist'.<!--, or the removal of the Intune Company Portal on Android.-->
+In December 2016 is een update uitgebracht waarmee Multi-Factor Authentication (MFA) kan worden afgedwongen op een groep gebruikers wanneer deze een iOS-, Android-, Windows 8.1+- of Windows Phone 8.1+-apparaat inschrijven. Deze functie kan niet werken zonder bepaalde basislijnversies van de bedrijfsportal-app voor Android (v5.0.3419.0 +) en iOS (v2.1.17 +).
 
-### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Bedrijfsportal voor iOS-koppelingen openen in de app <!--665954-->
-Koppelingen in de bedrijfsportal-app voor iOS, inclusief koppelingen naar documentatie en apps, worden rechtstreeks in de bedrijfsportal-app geopend met behulp van in-app-weergave van Safari. Deze update wordt afzonderlijk van de service-update in januari verzonden.
+Microsoft verbetert Intune voortdurend door het toevoegen van nieuwe functies aan zowel de console als de bedrijfsportal-apps op alle ondersteunde platforms. Microsoft publiceert als gevolg hiervan alleen oplossingen voor problemen die in de huidige versie van de bedrijfsportal-app worden aangetroffen. Het wordt daarom aanbevolen de nieuwste versies van de bedrijfsportal-apps te gebruiken voor de beste gebruikerservaring.
 
-### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Nieuw MDM-serveradres voor Windows-apparaten <!--893007-->
-Wanneer Windows- en Windows Phone-gebruikers een apparaat willen inschrijven, mislukt dit als ze (desgevraagd) __manage.microsoft.com__ invullen als het MDM-serveradres. Het MDM-serveradres is gewijzigd van __manage.microsoft.com__ in __enrollment.manage.microsoft.com__. Stel uw gebruikers ervan op de hoogte dat ze __enrollment.manage.microsoft.com__ moeten gebruiken als het MDM-serveradres als dit wordt gevraagd tijdens het inschrijven van een Windows- of Windows Phone-apparaat. Uw CNAME-instellingen hoeven niet te worden gewijzigd. Ga voor meer informatie over deze wijziging naar [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
+>[!Tip]
+> Laat uw gebruikers hun apparaten zodanig instellen dat deze automatisch apps bijwerken uit de betreffende app store. Als u de Android-bedrijfsportal-app beschikbaar hebt gesteld op een netwerkshare, kunt u de meest recente versie downloaden van [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49140).
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nieuwe gebruikerservaring voor de bedrijfsportal-app voor Android <!--621622-->
-Vanaf maart volgt de bedrijfsportal-app voor Android [richtlijnen voor het ontwerpen van materiaal](https://material.io/guidelines/material-design/introduction.html) voor een moderne vormgeving. Deze verbeterde gebruikerservaring omvat het volgende:
+### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>Microsoft Teams is nu ingeschakeld voor MAM op iOS en Android
 
-* __Kleuren__: tabbladkoppen kunnen worden gekleurd volgens uw aangepaste kleurenpalet.
-* __Interface__: de knoppen Aanbevolen apps en Alle apps op het tabblad Apps zijn bijgewerkt. De knop Zoeken is nu een zwevende actieknop.
-* __Navigatie__: Alle apps biedt een tabbladweergave van de opties Aanbevolen, Alle en Categorieën om de navigatie te vereenvoudigen.
-* __Service__: de leesbaarheid van de tabbladen Mijn apparaten en Contact opnemen met IT is verbeterd.
+Microsoft heeft de algemene beschikbaarheid van Microsoft Teams aangekondigd. De bijgewerkte Microsoft Teams-apps voor iOS en Android zijn nu beschikbaar met de mogelijkheden van Intune Mobile App Management (MAM), zodat u uw teams in staat kunt stellen op verschillende apparaten te werken, terwijl conversaties en bedrijfsgegevens altijd beveiligd blijven. Zie [de aankondiging over Microsoft Teams](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) op het Enterprise Mobility and Security Blog voor meer informatie.
 
-De [pagina met UI-updates](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) bevat voor-en-na afbeeldingen.
-
-### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>Meerdere beheerhulpprogramma's koppelen aan de Windows Store voor Bedrijven<!--926135-->
-Als u meer dan één beheerhulpprogramma voor het implementeren van Windows Store voor Bedrijven-apps gebruikt, kon u voorheen slechts één van deze programma’s koppelen met de Windows Store voor Bedrijven. U kunt nu meerdere beheerhulpprogramma's met de Store koppelen, bijvoorbeeld Intune en Configuration Manager. Zie [Apps die u hebt aangeschaft in de Windows Store voor Bedrijven, beheren met Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune) voor meer informatie.
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Wat is er nieuw in de openbare preview-versie van de nieuwe Intune-ervaring voor beheerders in Azure <!--736542-->
 
@@ -77,9 +84,14 @@ Vanaf deze maand zal de openbare preview-versie van de nieuwe beheerderservaring
 
 De beheerderservaring in de Azure-portal zal gebruikmaken van de eerder aangekondigde nieuwe functionaliteit voor groepen en targeting. Wanneer uw bestaande tenant wordt gemigreerd naar de nieuwe ervaring voor groepen, vindt ook de migratie plaats naar de preview-versie van de nieuwe beheerderservaring. Als u in de tussentijd de nieuwe functionaliteit wilt testen of bekijken totdat de migratie van uw tenant is voltooid, kunt u zich aanmelden voor een nieuw Intune-evaluatieaccount of de [nieuwe documentatie](https://docs.microsoft.com/intune-azure/introduction/whats-new) raadplegen.
 
-Als u vragen hebt over de planning van de migratie van uw tenant, neemt u contact op met het migratieteam via [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+> [!Note]
+> Voor de Azure Portal Preview worden de updates voor deze maand uitgerold. De wijzigingen zijn echter mogelijk niet meteen beschikbaar vanwege de manier waarop de Intune-service wordt uitgerold.  Verschillende onderdelen van de service moeten opeenvolgend worden bijgewerkt voordat de nieuwe functies van de portal beschikbaar zijn. U zult de wijzigingen zien in Azure Portal Preview wanneer ze later deze maand worden uitgerold. Zie [Wat is er nieuw in Microsoft Intune Preview](/intune-azure/introduction/whats-new) voor een volledige lijst met wijzigingen.
 
-U kunt [hier](https://docs.microsoft.com/intune-azure/introduction/whats-new) vinden wat er nieuw is in de Intune-preview-versie in Azure.
+## <a name="whats-coming"></a>Binnenkort
+
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple vereist updates voor Application Transport Security <!--748318-->
+
+Apple heeft aangekondigd dat vanaf het voorjaar van 2017 specifieke vereisten gaan gelden voor Application Transport Security (ATS). ATS wordt gebruikt om betere beveiliging af te dwingen voor alle app-communicatie die verloopt via HTTPS. Deze wijziging heeft gevolgen voor Intune-klanten die de bedrijfsportal-app gebruiken op iOS. Bekijk ons [Intune-ondersteuningsblog](https://aka.ms/compportalats) voor meer informatie.
 
 ### <a name="see-also"></a>Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)

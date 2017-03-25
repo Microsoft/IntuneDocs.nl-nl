@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2b60f327c2e48c3c933a6cff0a68df138df4dd3d
-ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2017
 
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Logboeken naar uw IT-beheerder verzenden via een USB-kabel
 
-Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u uw IT-beheerder helpen het probleem op te lossen door de beheerder informatie via e-mail te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document met de naam _diagnostic log__.
+Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u uw IT-beheerder helpen het probleem op te lossen door de beheerder informatie via e-mail te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
 
 > [!Note]
 > Voordat u begint, moet u ervoor zorgen dat u over het e-mailadres van de IT-beheerder beschikt. U kunt dit adres vinden in de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) of in uw bedrijfsportal-app.
@@ -41,5 +41,5 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat 
 
 4.  Selecteer de bestanden en voeg ze als bijlage toe een e-mail. Verzend dit e-mailbericht naar uw IT-beheerder.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 
