@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/16/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -25,7 +26,6 @@ ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke registratiemethode u het beste kunt gebruiken voor de apparaten die u beheert.
-
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Hoe beheert u uw gedeelde iOS-apparaten?**
 
@@ -42,11 +42,6 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 
   - **Beheerfunctie voor apparaatregistratie**: met de beheerfunctie voor apparaatregistratie (DEM) van Intune kan een manager of beheerder een groot aantal mobiele apparaten registreren met één gebruikersaccount. Deze apparaten kunnen geen gebruikersaffiniteit (ofwel toegewezen gebruikers) hebben, en kunnen alleen worden geregistreerd na installatie van en aanmelding bij de bedrijfsportal-app.
 
-  > [!div class="button"]
-  [< Terug](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< Terug](choose-how-to-enroll-devices3.md)
 

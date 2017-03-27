@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: 173e95ac2d0039accb3465386bf67fb3dee90723
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -43,11 +44,6 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 
   - **Label met IMEI-nummer**: door de IMEI-nummers (International Mobile Equipment Identity) van bedrijfseigen apparaten te importeren, kunt u ze in Intune labelen als apparaten die eigendom zijn van het bedrijf. Dit is de enige manier om specifieke Windows- en Android-apparaten (met één gebruiker) te identificeren als bedrijfseigendom. iOS-apparaten die niet worden geregistreerd bij het apparaatregistratieprogramma van Apple of Apple Configurator, kunnen ook worden gelabeld met een IMEI-nummer. Wanneer u apparaten hebt geregistreerd als bedrijfseigendom, kunt u ze distribueren aan gebruikers. Gebruikers kunnen hun apparaten vervolgens registreren als een speciaal apparaat door de bedrijfsportal te installeren voor toegang tot bedrijfsresources, zoals e-mail, apps en gegevens.
 
-  > [!div class="button"]
-  [< Terug](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< Terug](choose-how-to-enroll-devices3.md)
 
