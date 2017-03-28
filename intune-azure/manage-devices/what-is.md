@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Als een iOS-apparaat is verloren of gestolen, kunt u de modus Apparaat verloren 
 2.    Schakel op de blade **modus Apparaat verloren** de modus Apparaat verloren in, voer het bericht in dat wordt weergegeven en voeg indien gewenst een telefoonnummer toe.
 3.    Klik op **OK**.
 Wanneer u de modus Apparaat verloren inschakelt, wordt het gebruik van het apparaat volledig geblokkeerd. De gebruiker krijgt pas weer toegang tot het apparaat als de modus Apparaat verloren is uitgeschakeld. Als de modus Apparaat verloren is ingeschakeld, kunt u de bewerking **Apparaat zoeken** uitvoeren om te weten te komen waar het apparaat is.
+Als u de modus Apparaat verloren wilt gebruiken, moet het apparaat een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld.
 
 ### <a name="locate-device"></a>**Apparaat zoeken**
-Gebruik deze externe actie om de locatie van een verloren of gestolen iOS-apparaat op een kaart weer te geven. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, moet op het apparaat de modus Apparaat verloren zijn ingeschakeld.
+Gebruik deze externe actie om de locatie van een verloren of gestolen iOS-apparaat op een kaart weer te geven. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, moet op het apparaat de modus Apparaat verloren zijn ingeschakeld.
 1.    Kies **Meer** > **Apparaat zoeken** op de eigenschappenblade voor een iOS-apparaat.
 2.    Als het apparaat is gevonden, wordt de locatie weergegeven op de blade **Apparaat zoeken**. 
     ![De blade Apparaat zoeken](./media/locate-device.png)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-1. Kies **Beheren** > **Profielen** op de blade **Apparaten configureren**.
+3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
+1. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 2. Kies op de blade met de profielenlijst het profiel dat u wilt beheren en kies **Beheren** > **Toewijzingen** op de blade <*profielnaam*> **Rapporten**.
 3. Klik op de volgende blade op **Groepen selecteren** en kies op de blade **Groepen selecteren** de Azure AD-groepen waaraan u het profiel wilt toewijzen. U kunt **Ctrl** ingedrukt houden om meerdere groepen te selecteren.
 4. Kies wanneer u klaar bent **Selecteren** op de blade **Groepen selecteren**.

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -49,7 +50,7 @@ Als u voorwaardelijke toegang wilt configureren, moet u:
 
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
--   Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd ** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -  Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Dit gebeurt automatisch wanneer het apparaat wordt ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
 
@@ -59,7 +60,7 @@ Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een
 
 ### <a name="when-the-device-is-not-compliant"></a>Wanneer het apparaat niet compatibel is
 
-Als niet is voldaan aan een beleid voor voorwaardelijke toegang, wordt het apparaat onmiddellijk in quarantaine geplaatst en ontvangt de gebruiker een e-mailbericht met een van de volgende quarantainemeldingen wanneer hij zich aanmeldt:
+Als niet is voldaan aan een beleid voor voorwaardelijke toegang, wordt het apparaat onmiddellijk in quarantaine geplaatst en ontvangen de gebruikers een e-mailbericht met een van de volgende quarantainemeldingen wanneer ze zich aanmelden:
 
 - Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het record in Azure Active Directory.
 
@@ -275,9 +276,4 @@ In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u 
 - [Toegang tot SharePoint Online beveiligen](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Toegang tot Skype voor Bedrijven Online beveiligen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

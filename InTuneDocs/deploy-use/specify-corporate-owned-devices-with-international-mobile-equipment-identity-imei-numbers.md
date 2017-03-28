@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -30,7 +30,7 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 
 1. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle vooraf geregistreerde bedrijfsapparaten** &gt; **Op IMEI (alle platformen)** en kies vervolgens **Apparaten toevoegen…**. U kunt apparaten op twee manieren toevoegen:
 
-    -   **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
+    -   **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB. Het veld Details is beperkt tot 128 tekens.
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
         Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
         ```
-        AABBBBBBCCCCCCD,PO 1234
-        AABBBBBBCCCCCCE,PO 1234
+        01 234567 890123,device details
+        02 234567 890123,device details
         ```
 
     -   **Handmatig apparaatdetails toevoegen**: geef het IMEI-nummer en de apparaatdetails van maximaal 15 apparaten op.
@@ -58,4 +58,6 @@ Wanneer het apparaat met een IMEI-nummer wordt ingeschreven bij Intune, wat mees
 
 >[!NOTE]
 > Als uw organisatie in de nabije toekomst wordt gemigreerd naar de nieuwe Azure-portal, verandert deze functie. In de bestaande Intune-beheerconsole kunnen beheerders bijbehorende gegevens accepteren uit een geüpload CSV-bestand en de bestaande gegevens voor afzonderlijke hardware-id's overschrijven. In de nieuwe Azure-portal kunt u de gegevens voor alle hardware-id's automatisch overschrijven of alle nieuwe gegevens voor bestaande id's negeren.
+
+Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) voor gedetailleerde specificaties over International Mobile Equipment Identifiers.
 

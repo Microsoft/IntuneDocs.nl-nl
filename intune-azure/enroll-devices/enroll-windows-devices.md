@@ -5,7 +5,7 @@ description: 'Intune Azure Preview: in dit onderwerp wordt beschreven hoe u Mobi
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Gebruik een van de volgende methoden om inschrijving in te stellen voor Windows-
  -  Azure Active Directory Premium moet zijn geïnstalleerd als u deze methode wilt gebruiken. Anders moet u de inschrijvingsmethode voor Windows 8.1 en Windows Phone 8.1 gebruiken.
  -  Als u ervoor kiest automatische inschrijving niet in te schakelen, moet u de inschrijvingsmethode voor Windows 8.1 en Windows Phone 8.1 gebruiken.
 
-- [**Windows 8.1- en Windows Phone 8.1-inschrijving door CNAME te configureren**](#simplify-enrollment-by-configuring-cname)
+- [**Inschrijving zonder de automatische inschrijving van Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
  - U moet deze methode gebruiken als u Windows 8.1- en Windows Phone 8.1-apparaten wilt registreren.
- - U kunt deze methode ook gebruiken als u geen Azure Active Directory (AD) Premium hebt.
-
-
-## <a name="prerequisites"></a>Vereisten
-
-Als enkele van de volgende vereisten nog niet beschikbaar zijn in Intune Azure Preview, moet u de bijbehorende taken uitvoeren in de klassieke Intune-beheerconsole.
-
-- [Een aangepaste domeinnaam configureren](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [De MDM-instantie (Mobile Device Management)](set-mdm-authority.md) instellen op **Microsoft Intune**
-- [De bedrijfsportal-app configureren](/intune-azure/manage-apps/company-portal-app.md)
-- Licenties aan gebruikers toewijzen
+ - U kunt deze methode voor apparaten met Windows 8.1 en hoger gebruiken, als u geen gebruik wilt maken van Azure Active Directory (AD) Premium.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Inschrijving van Windows-werkplek inschakelen
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Windows-inschrijving zonder Azure AD Premium inschakelen
 
 U kunt gebruikers zelf het installeren en inschrijven van hun apparaten laten uitvoeren zonder automatische Azure AD Premium-inschrijving. Als u DNS CNAME-bronrecords maakt, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een servernaam te hoeven opgeven.
 
@@ -79,7 +69,7 @@ U kunt gebruikers zelf het installeren en inschrijven van hun apparaten laten ui
 
     Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows) voor inschrijvingsinstructies voor eindgebruikers. U kunt gebruikers ook de informatie in [What can my IT admin see on my device](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) (Wat kan de IT-beheerder op mijn apparaat zien?) laten lezen.
 
-    Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor meer informatie over taken voor eindgebruikers.
+    Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) voor meer informatie over taken voor eindgebruikers.
 
 Verder hoeft u niets te doen, tenzij u de bedrijfsportal op apparaten wilt implementeren.  Stap 2 en 3 in de beheerconsole kunnen worden genegeerd.
 

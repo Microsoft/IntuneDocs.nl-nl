@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: cc9ef6777f06aca5ef93154c38e12520ab9ed348
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,6 +39,7 @@ ms.lasthandoff: 02/18/2017
     - **Platform**: selecteer het platformtype voor het profiel dat u wilt maken.
     - **Profieltype**: selecteer het type profiel dat u wilt maken. Welke typen beschikbaar zijn, is afhankelijk van het platform dat u hebt gekozen.
     - **Instellingen**: in de volgende onderwerpen vindt u meer informatie over de instellingen voor elk profieltype:
+        -  [Instellingen voor apparaatfuncties](/intune-azure/configure-devices/how-to-configure-device-features)
         -  [Apparaatbeperkingsinstellingen](/intune-azure/configure-devices/how-to-configure-device-restrictions)
         -  [E-mailinstellingen](/intune-azure/configure-devices/how-to-configure-email-settings)
         -  [VPN-instellingen](/intune-azure/configure-devices/how-to-configure-vpn-settings)
@@ -46,7 +47,7 @@ ms.lasthandoff: 02/18/2017
         -  [Upgrade-instellingen voor Windows 10-editie](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
         -  [Certificaatinstellingen](/intune-azure/configure-devices/how-to-configure-certificates)
         -  [Instellingen voor Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [Onderwijsinstellingen](/intune-azure/configure-devices/education-settings-for-ios.md)
+        -  [Onderwijsinstellingen](/intune-azure/configure-devices/how-to-configure-education-settings)
         -  [Aangepaste instellingen](/intune-azure/configure-devices/how-to-configure-custom-settings)
 
     ![Apparaatprofiel maken](./media/create-device-profile.png)

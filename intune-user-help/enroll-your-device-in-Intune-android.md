@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
     ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
+    > [!NOTE]
+    > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
 
-7.  Lees op het scherm **Waarom moet u uw apparaat registreren?** informatie over wat u kunt doen wanneer u uw apparaat registreert en tik vervolgens op **DOORGAAN**.
+7. Lees op het scherm **Waarom moet u uw apparaat registreren?** informatie over wat u kunt doen wanneer u uw apparaat registreert en tik vervolgens op **DOORGAAN**.
 
     ![Het scherm Waarom moet u uw apparaat registreren?](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
         ![android-bedrijfsportal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
+        Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
 
-    Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
+        Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
 
 11.  Tik op het scherm **Apparaatbeheerder activeren** op **Activeren**.
 
     ![Het scherm Apparaatbeheerder activeren](./media/and-enroll-5-activate.png)
+
+    De rol van apparaatbeheerder houdt in dat de bedrijfsportal uw apparaat moet beheren. Het stelt uw beheerder in staat om bepaalde dingen te bekijken, zoals het aantal keren dat u uw scherm hebt ontgrendeld en bepaalde acties hebt ondernomen.
+
+    Van belang is om te weten dat deze acties worden ondernomen vanwege de beveiliging. Uw IT-beheerder schendt uw privacy niet en wist uw gegevens niet wanneer daar geen reden toe is. De beheerder wil er gewoon voor zorgen dat de bedrijfsgegevens veilig worden bewaard.
+
+    Microsoft heeft geen zeggenschap over dit bericht en de bewoording kan enigszins drastisch overkomen. Met de bedrijfsportal kunnen niet alleen de beperkingen en toegang worden weergegeven die relevant zijn voor uw organisatie. Deze worden alle tegelijk op dit scherm weergegeven. Neem aan de hand van de contactgegevens op de [website van de bedrijfsportal](http://portal.manage.microsoft.com) contact op met uw IT-beheerder als u vragen hebt met betrekking tot uw eigen organisatie.
 
 12.  Volg de aanwijzingen voor het invoeren van de pincode of het wachtwoord. Als u al een pincode of wachtwoord op dit apparaat hebt ingesteld, wordt dit scherm niet weergegeven of wordt u niet verzocht om een nieuwe pincode of nieuw wachtwoord in te voeren.
 
@@ -108,21 +114,21 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
     Op dit scherm wordt aangegeven dat uw apparaat wordt geregistreerd.
 
-      ![Het scherm Apparaat registreren](./media/and-enroll-8-device-enrolling.png)
+    ![Het scherm Apparaat registreren](./media/and-enroll-8-device-enrolling.png)
 
 14. Wanneer het scherm **Instellen van bedrijfstoegang** wordt weergegeven, tikt u op **DOORGAAN**. Als er een bericht verschijnt waarin wordt aangegeven dat het apparaat niet voldoet aan het beleid, volgt u de instructies om het probleem te verhelpen en tikt u vervolgens op **DOORGAAN**.
 
-  ![Het apparaat is niet compatibel, maar is geregistreerd](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Het apparaat is niet compatibel, maar is geregistreerd](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Er zijn problemen met apparaatcompatibiliteit die moeten worden opgelost](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Er zijn problemen met apparaatcompatibiliteit die moeten worden opgelost](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-Als u op de problemen tikt, wordt meer informatie over het betreffende probleem weergegeven. 
+    Als u op de problemen tikt, wordt meer informatie over het betreffende probleem weergegeven.
 
-  ![Uitgevouwen weergave van problemen met apparaatcompatibiliteit](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Uitgevouwen weergave van problemen met apparaatcompatibiliteit](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. Tik in het scherm **Instellen van bedrijfstoegang is voltooid** op **GEREED**. Uw apparaat is nu geregistreerd.
+15. Tik in het scherm **Instellen van bedrijfstoegang is voltooid** op **GEREED**. Uw apparaat is nu geregistreerd.
 
     ![Het scherm Instellen van bedrijfstoegang is voltooid](./media/and-enroll-10-comp-access-setup-complete.png)
 

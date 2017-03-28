@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -40,7 +40,7 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Het apparaat wordt in een pop-upvenster geopend. Selecteer de knop **Wachtwoordcode opnieuw instellen **.
+3.    Het apparaat wordt in een pop-upvenster geopend. Selecteer de knop **Wachtwoordcode opnieuw instellen**.
 
     ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
 
@@ -48,23 +48,23 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
   ![De koptekst van het opnieuw instellen van de wachtwoordcode met de waarschuwing over het opnieuw instellen van de wachtwoordcode van het apparaat en hoe de gebruiker wordt afgemeld. De knoppen voor invoer van de gebruiker zijn Afmelden en Annuleren.](./media/iwp-reset-passcode-popup.png)
 
-4.  Selecteer **Afmelden** en u ontvangt een laatste bericht waarin u wordt verteld over het verwijderen van de wachtwoordcode van het apparaat. Als u het apparaat niet bij u hebt, verwijder de wachtwoordcode dan niet, omdat iedereen die fysieke toegang heeft tot het apparaat dan toegang heeft tot de meeste gegevens erop - persoonlijke zowel als zakelijke.
+5.  Selecteer **Afmelden** en u ontvangt een laatste bericht waarin u wordt verteld over het verwijderen van de wachtwoordcode van het apparaat. Als u het apparaat niet bij u hebt, verwijder de wachtwoordcode dan niet, omdat iedereen die fysieke toegang heeft tot het apparaat dan toegang heeft tot de meeste gegevens erop - persoonlijke zowel als zakelijke.
 
   ![De tweede koptekst van het opnieuw instellen van de wachtwoordcode met de waarschuwing over het opnieuw instellen van de wachtwoordcode van het apparaat en hoe de wachtwoordcode wordt verwijderd van het apparaat. Het geeft ook aan hoe u een nieuwe wachtwoordcode in kunt stellen door naar apparaatinstellingen te gaan.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Verschillende apparaten hebben verschillende soorten wachtwoordcodes.
 
-Omdat verschillende apparaten verschillende soorten wachtwoordcodes hebben, kunt u in de onderstaande tabel zien hoe het opnieuw instellen van uw wachtwoordcode van invloed kan zijn op uw specifieke apparaat. 
+  **Android**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers.
 
-    |Apparaattype|Wat gebeurt er wanneer u het opnieuw instellen voltooit|
-    |------------|-----------|
-    |Android|De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers|
-    |iOS|De bestaande wachtwoordcode wordt verwijderd. Er wordt geen tijdelijke wachtwoordcode gemaakt. Als u de Touch ID-vingerafdrukscanner gebruikt voor het openen van uw apparaat of voor het doen van aankopen, moet u de scanner opnieuw instellen.|
-    |Windows 10 Mobile|De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Als u Windows Hello-gezichtsherkenning gebruikt om u aan te melden, blijft dit mogelijk.|
-    |Windows Phone 8,1|De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.|
+  **iOS**: de bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u de Touch ID-vingerafdrukscanner gebruikt om toegang te krijgen tot uw apparaat of voor het doen van aankopen, moet u deze opnieuw instellen.
 
-    5.  Ontgrendel uw apparaat en stel vervolgens een nieuwe wachtwoordcode in of wijzig de tijdelijke wachtwoordcode door op uw apparaat naar **Instellingen** te gaan.
+  **Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Windows Hello-gezichtsherkenning wordt nog steeds ondersteunt, dus u kunt deze gewoon gebruiken om u aan te melden.
+    
+  **Windows Phone 8.1**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.
 
-    Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
+6.  Ontgrendel uw apparaat en stel vervolgens een nieuwe wachtwoordcode in of wijzig de tijdelijke wachtwoordcode door op uw apparaat naar **Instellingen** te gaan.
+
+Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
 

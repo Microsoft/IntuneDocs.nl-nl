@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b5d3986fe8bad1df25d1910448bd51958e877bdd
-ms.openlocfilehash: 4f666226012cd83333c37a6f60fa8e43791a1bb0
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,4 +48,5 @@ Wanneer u een apparaat in beheer inschrijft, geeft u de IT-afdeling van uw bedri
 -   Eigenaar
 -   Apparaatnaam
 -   De fabrikant (voor apparaten die niet door Apple zijn gemaakt)
+-   Telefoonnummer (voor zakelijke apparaten het hele nummer. Voor persoonlijke apparaten alleen de laatste vier cijfers.)
 

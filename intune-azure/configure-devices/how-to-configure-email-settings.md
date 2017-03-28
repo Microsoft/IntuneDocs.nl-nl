@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 786028412ca46d07e5180f469d07f9103f956033
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-U kunt e-mailprofielinstellingen gebruiken om voor de apparaten die u beheert instellingen te configureren die nodig zijn om verbinding te maken en synchronisaties uit te voeren met zakelijke e-mail. Op deze manier zorgt u ervoor dat op alle apparaten standaardinstellingen worden gebruikt en er minder ondersteuningsaanvragen worden ingediend van eindgebruikers die de juiste e-mailinstellingen niet weten.
+Met e-mailprofielen kunt u de apparaten die u beheert, configureren met de instellingen die nodig zijn om verbinding te maken en synchronisaties uit te voeren met zakelijke e-mail. Op deze manier zorgt u ervoor dat op alle apparaten standaardinstellingen worden gebruikt en er minder ondersteuningsaanvragen worden ingediend van eindgebruikers die de juiste e-mailinstellingen niet weten.
 
 De ingebouwde e-mailclient wordt voor de meeste platformen ondersteund. De meeste e-mail-apps van derden worden momenteel niet ondersteund.
 
@@ -44,7 +44,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
+3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
 4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het e-mailprofiel.

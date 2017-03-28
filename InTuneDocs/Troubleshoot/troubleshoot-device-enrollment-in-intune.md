@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Voordat u het probleem probeert op te lossen, controleert u of u Intune op de ju
 
 -    [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -    [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Windows Phone- en Windows 10 Mobile-beheer met Microsoft Intune instellen](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Windows apparaatbeheer instellen](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Android-apparaatbeheer instellen](/intune/deploy-use/set-up-android-management-with-microsoft-intune): geen aanvullende stappen vereist
+-    [Android for Work-apparaatbeheer instellen](/intune/deploy-use/set-up-android-for-work)
 
 Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
 
@@ -149,7 +149,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 **Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren.
 
 
-**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com)), moeten voor elk achtervoegsel een afzonderlijk exemplaar van de AD FS 2.0 Federation Service implementeren. Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van AD FS 2.0 Federation Service implementeren. Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
 
 ## <a name="android-issues"></a>Problemen met Android
@@ -279,6 +279,18 @@ Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** sel
   ![Het scherm Instellen van bedrijfstoegang](./media/ios_cp_app_company_access_setup.png)
 
 Na het inschrijven krijgen de apparaten weer een goede status en is er weer toegang mee te verkrijgen tot de bedrijfsresources.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>Controleren of WS-Trust 1.3 is ingeschakeld
+**Probleem** iOS-apparaten van het Device Enrollment Program (DEP) kunnen niet worden ingeschreven
+
+Voor de inschrijving van DEP-apparaten met gebruikersaffiniteit moet de gebruikersnaam/het gemengde eindpunt voor WS-Trust 1.3 zijn ingeschakeld zodat gebruikerstokens kunnen worden aangevraagd. Dit eindpunt wordt standaard door Active Directory ingeschakeld. U kunt een lijst van ingeschakelde eindpunten ophalen met PowerShell-cmdlet Get-AdfsEndpoint en vervolgens naar het eindpunt trust/13/UsernameMixed zoeken. Bijvoorbeeld:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Zie de [documentatie over Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) voor meer informatie.
+
+Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs) voor meer informatie. Als u extra hulp nodig hebt om te bepalen of de gebruikersnaam/het gemengde eindpunt voor WS-Trust 1.3 is ingeschakeld bij uw provider voor identiteitsfederaties, neemt u contact op met Microsoft Ondersteuning als u gebruikmaakt van AD FS of met uw externe identiteitsleverancier.
+
 
 ### <a name="profile-installation-failed"></a>De profielinstallatie is mislukt
 **Probleem:** een gebruiker ontvangt op een iOS-apparaat de fout **Profiel is niet geïnstalleerd**.

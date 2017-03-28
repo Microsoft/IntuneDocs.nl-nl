@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: 1e501c1a94a44c677569b8b85be7704844587694
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -33,7 +33,7 @@ Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw iOS-a
 
 -   Tik in het scherm **Over** van de bedrijfsportal-app op **Diagnostisch rapport verzenden**.
 
--   Zorg ervoor dat u in de bedrijfsportal-app bent, schud het apparaat heen en weer en tik op **E-mail** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, open dan **Instellingen** > **Bedrijfsportal** en controleer of de optie **Schudden** is ingeschakeld.
+-   Zorg ervoor dat u in de bedrijfsportal-app bent, schud het apparaat heen en weer en tik op **Diagnostisch rapport verzenden** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, open dan **Instellingen** > **Bedrijfsportal** en controleer of de optie **Schudden** is ingeschakeld.
 
 Als u problemen ondervindt met deze manier van het verzenden van logboeken, kunt u ook [uw IT-beheerlogboeken via e-mail verzenden](send-logs-to-your-it-admin-by-email-iOS.md).
 

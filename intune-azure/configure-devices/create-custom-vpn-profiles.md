@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 132844bb1d1119390b7f55cca58cecbd5b8ee90a
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 990f3ff6528b537d1ea62c82440f1e46bcde8c95
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -40,7 +40,7 @@ Dit type beleid kan handig zijn wanneer het standaardbeleid voor Intune VPN niet
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
+3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 4. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 5. Kies **Profiel maken** op de blade Profielen.
 6. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het VPN-profiel.

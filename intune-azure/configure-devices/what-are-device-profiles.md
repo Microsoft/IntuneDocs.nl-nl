@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Gebruik de Microsoft Intune-workload **Apparaten configureren** om instellingen en functies te beheren op alle apparaten die u beheert. U zult deze workload voornamelijk gebruiken om apparaatprofielen te maken, waarmee u vele verschillende functies kunt beheren en configureren op de apparaten die u beheert.
+Gebruik de Microsoft Intune-workload **Apparaatconfiguratie** om instellingen en functies te beheren op alle apparaten die u beheert. U zult deze workload voornamelijk gebruiken om apparaatprofielen te maken, waarmee u vele verschillende functies kunt beheren en configureren op de apparaten die u beheert.
 
 Als u deze workload opent, ziet u de volgende opties:
 
@@ -41,8 +41,13 @@ De werkstroom voor het maken van apparaatprofielen is gelijk voor alle profielen
 
 U kunt de volgende mogelijkheden op uw apparaten beheren:
 
+## <a name="device-features"></a>Apparaatfuncties
+
+Met apparaatfuncties kunt u functies op iOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en configuraties voor gedeelde apparaten.
+Zie [Instellingen voor apparaatfuncties configureren](how-to-configure-device-features.md) voor meer informatie. Biedt ondersteuning voor: iOS en macOS.
+
 ## <a name="device-restrictions"></a>Apparaatbeperkingen
-Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen die u voor diverse categorieën beheert, waaronder beveiliging, browsers, hardware en instellingen voor het delen van gegevens. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
+Met apparaatbeperkingen kunt u verschillende instellingen bepalen die u voor diverse categorieën beheert, zoals beveiliging, browsers, hardware en instellingen voor het delen van gegevens. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
 Zie [How to configure device restriction settings](how-to-configure-device-restrictions.md) (Apparaatbeperkingsinstellingen configureren) voor meer informatie. Ondersteunt: Android, iOS, macOS, Windows 10 en Windows 10 Team.
 
 ## <a name="email"></a>E-mail
@@ -57,6 +62,10 @@ Zie [How to configure Wi-Fi settings](how-to-configure-wi-fi-settings.md) (Wi-Fi
 Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. Gebruik VPN-profielen om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken.
 Zie [VPN-instellingen configureren](how-to-configure-vpn-settings.md) voor meer informatie.
 Ondersteunt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 en Windows 10.
+
+## <a name="education"></a>Education
+Hiermee kunt u opties configureren voor de Windows Toets maken-app. Wanneer u deze opties configureert, kunnen er geen andere apps op het apparaat worden uitgevoerd totdat de toets is voltooid.
+Zie [Opleidingsinstellingen configureren](how-to-configure-education-settings.md) voor meer informatie
 
 ## <a name="certificates"></a>Certificaten
 Met dit profieltype kunt u vertrouwde, SCEP- en PKCS-certificaten configureren die kunnen worden toegewezen aan apparaten en kunnen worden gebruikt voor het verifiëren van Wi-Fi-, VPN- en e-mailprofielen.

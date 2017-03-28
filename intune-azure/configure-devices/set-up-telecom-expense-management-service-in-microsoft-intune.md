@@ -16,9 +16,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -83,7 +83,7 @@ Nadat u stap 1 hebt voltooid, wordt de verbinding automatisch ingeschakeld en wo
 
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 
-3. Kies op de blade **Intune** de optie **Apparaten configureren**.
+3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 
 4. Ga naar de blade **Apparaatconfiguratie** en kies **Instellen** > **Telecom Expense Management**. 
 

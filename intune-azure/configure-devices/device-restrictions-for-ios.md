@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Toetsenbordsneltoetsen (alleen onder toezicht)**: hiermee staat u het gebruik van sneltoetsen toe.
 -     **De gekoppelde Apple Watch gebruikt Wrist Detection**: wanneer deze optie is ingeschakeld, worden op de Apple Watch geen meldingen weergegeven wanneer deze niet wordt gedragen.
 - **Wachtwoord voor koppelen voor uitgaande AirPlay-aanvragen vereisen**: hiermee vereist u een wachtwoord voor koppelen wanneer AirPlay wordt gebruikt om inhoud te streamen naar andere Apple-apparaten.
-- **Accountaanpassingen (alleen onder supervisie)**: hiermee staat u de gebruiker toe accountinstellingen, zoals e-configuraties, te wijzigen.
+- **Accountwijzigingen (alleen onder toezicht)**: wanneer deze optie is geblokkeerd, kan de gebruiker geen apparaatspecifieke instellingen wijzigen in de app voor iOS-instellingen, zoals het maken van nieuwe accounts voor het apparaat en het wijzigen van de gebruikersnaam en het wachtwoord.
+Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-instellingen, zoals de instellingen voor e-mail, contactpersonen, agenda, Facebook en Twitter. Dit geldt niet voor apps met accountinstellingen die niet in de app voor iOS-instellingen kunnen worden geconfigureerd, zoals de Microsoft Outlook-app.
 - **Koppelen met Apple (alleen onder supervisie)**: hiermee staat u toe dat het apparaat aan een Apple Watch kan worden gekoppeld.
 - **Bluetooth-aanpassingen (alleen onder supervisie)**: hiermee voorkomt u dat de eindgebruiker Bluetooth-instellingen op het apparaat kan wijzigen.
 - **Observatie van extern scherm met de app Classroom (alleen onder supervisie)**: hiermee kunt u toestaan of voorkomen dat de app Classroom het scherm van externe apparaten kan observeren.

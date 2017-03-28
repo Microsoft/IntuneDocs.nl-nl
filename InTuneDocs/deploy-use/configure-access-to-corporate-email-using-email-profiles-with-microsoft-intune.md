@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -39,27 +39,21 @@ U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren
 -    Windows 10 (voor de desktop), Windows 10 Mobile en hoger
 -    iOS 8.0 en hoger
 -    Samsung KNOX Standard (4.0 of hoger)
--    Android for Work
-
->[!NOTE]
->Intune bevat twee e-mailprofielen voor Android for Work, een voor de e-mail-app van Gmail en een voor de e-mail-app van Nine Work. Deze apps zijn beschikbaar in de Google Play-store en bieden ondersteuning voor verbindingen met Exchange. Als u de connectiviteit voor e-mail wilt inschakelen, implementeert u een van deze e-mail-apps op apparaten van uw gebruikers, en maakt en implementeert u vervolgens het juiste profiel. E-mail-apps zoals Nine Work zijn mogelijk niet gratis. Raadpleeg de licentiegegevens van de app of neem contact op met het bedrijf dat de app heeft gemaakt voor meer informatie.
+-    Android for Work (e-mailapps van derden, de systeemeigen e-mailapp maakt uitsluitend gebruik van een persoonlijk profiel)
 
 U kunt een e-mailaccount instellen op het apparaat en daarnaast ook bepalen hoeveel e-mail er moet worden gesynchroniseerd en, afhankelijk van het apparaattype, welke inhoudstypen uw wilt synchroniseren.
 
->[!NOTE]
->
->Als de gebruiker al een e-mailprofiel heeft geïnstalleerd voordat er een profiel wordt geïnstalleerd door Intune, is het resultaat van de implementatie van het Intune-e-mailprofiel afhankelijk van het apparaatplatform:
+Als de gebruiker al een e-mailprofiel heeft geïnstalleerd voordat er een profiel wordt geïnstalleerd door Intune, is het resultaat van de implementatie van het Intune-e-mailprofiel afhankelijk van het apparaatplatform:
 
->**iOS**: het e-mailprofiel bestaat al en dit duplicaat is gedetecteerd op basis van hostnaam en e-mailadres. Het duplicaat van het e-mailprofiel dat is gemaakt door de gebruiker, blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem, omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en het apparaat vervolgens inschrijven. De bedrijfsportal deelt de gebruiker mee dat deze niet voldoet aan de eisen vanwege het handmatig geconfigureerde e-mailprofiel en vraagt de gebruiker dit profiel te verwijderen. De gebruiker moet het e-mailprofiel verwijderen, zodat het Intune-profiel kan worden geïnstalleerd. Als u dit probleem wilt voorkomen, vertelt u gebruikers dat ze het apparaat eerst moeten inschrijven voordat ze een e-mailprofiel installeren, zodat Intune het profiel kan installeren.
+**iOS**<br>Een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van de hostnaam en het e-mailadres. Het duplicaat van het e-mailprofiel dat is gemaakt door de gebruiker, blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem, omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en het apparaat vervolgens inschrijven. De bedrijfsportal deelt de gebruiker mee dat deze niet voldoet aan de eisen vanwege het handmatig geconfigureerde e-mailprofiel en vraagt de gebruiker dit profiel te verwijderen. De gebruiker moet het e-mailprofiel verwijderen, zodat het Intune-profiel kan worden geïnstalleerd. Als u dit probleem wilt voorkomen, vertelt u gebruikers dat ze het apparaat eerst moeten inschrijven voordat ze een e-mailprofiel installeren, zodat Intune het profiel kan installeren.
 
->**Windows**: er bestaat al een e-mailprofiel en dit duplicaat is gedetecteerd op basis van hostnaam en e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
+**Windows**<br>Een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van de hostnaam en het e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
 
->**Samsung KNOX**: er bestaat al een e-mailprofiel en dit duplicaat is gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel. Als de gebruiker dat account instelt, wordt het e-mailprofiel opnieuw overschreven door het Intune-profiel. Houd er rekening mee dat dit tot verwarring kan leiden bij de gebruiker.
+**Samsung KNOX**<br>Een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel. Als de gebruiker dat account instelt, wordt het e-mailprofiel opnieuw overschreven door het Intune-profiel. Houd er rekening mee dat dit tot verwarring kan leiden bij de gebruiker.
 
->Omdat Samsung KNOX geen hostnaam gebruikt om een profiel te identificeren, wordt afgeraden om voor hetzelfde e-mailadres meerdere e-mailprofielen te maken op verschillende hosts, aangezien deze profielen elkaar overschrijven.
+Omdat Samsung KNOX geen hostnaam gebruikt om een profiel te identificeren, wordt afgeraden om voor hetzelfde e-mailadres meerdere e-mailprofielen te maken op verschillende hosts, aangezien deze profielen elkaar overschrijven.
 
->**Android for Work**: het Intune-profiel wordt alleen toegepast op specifieke e-mail-apps in het werkprofiel van het apparaat en heeft geen invloed op de e-mailconfiguratie voor het gebruikersprofiel van het apparaat.
-
+**Android for Work**<br>Intune bevat twee e-mailprofielen voor Android for Work, een voor de e-mail-app van Gmail en een voor de e-mail-app van Nine Work. Deze apps zijn beschikbaar in de Google Play Store, worden geïnstalleerd in het werkprofiel van het apparaat en bieden ondersteuning voor verbindingen met Exchange. Als u de connectiviteit voor e-mail wilt inschakelen, implementeert u een van deze e-mail-apps op apparaten van uw gebruikers, en maakt en implementeert u vervolgens het juiste profiel. E-mail-apps zoals Nine Work zijn mogelijk niet gratis. Raadpleeg de licentiegegevens van de app of neem contact op met het bedrijf dat de app heeft gemaakt voor meer informatie.
 
 ## <a name="secure-email-profiles"></a>Beveiligde e-mailprofielen
 U kunt e-mailprofielen op twee manieren beveiligen: met een certificaat of met een wachtwoord.
