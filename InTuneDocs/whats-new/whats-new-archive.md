@@ -2,8 +2,8 @@
 title: Wat is er nieuw (archief) | Microsoft Docs
 description: Wat is er nieuw in Microsoft Intune-aankondigingen (archief)
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

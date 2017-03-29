@@ -3,8 +3,8 @@ title: Wat is er nieuw in Microsoft Intune Preview
 titleSuffix: Intune Azure preview
 description: Ontdekken wat er nieuw is in Intune Azure Preview
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: get-started-article
