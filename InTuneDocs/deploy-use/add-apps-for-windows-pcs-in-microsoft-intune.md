@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
 ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -70,7 +71,7 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
 5.  Op de pagina **Detectieregels** kunt u regels configureren om te detecteren of de app die u configureert al op een pc is geïnstalleerd. Of u kunt de standaarddetectieregels gebruiken als u automatisch alle eerder geïnstalleerde versies van de app wilt overschrijven. Deze optie is voor Windows Installer (alleen .exe-bestanden).
 
     U kunt de volgende regels configureren:
-    - **Bestand bestaat al**. Geef het pad op naar het bestand dat u wilt detecteren. U kunt zoeken onder** %ProgramFiles%** (waarmee wordt gezocht binnen **Programmabestanden**\&lt;path&gt; en **Programmabestanden (x86)**\&lt;path&gt;) op de computer of **%SystemDrive%** (waarmee wordt gezocht binnen het basisstation van de pc, meestal C:).
+    - **Bestand bestaat al**. Geef het pad op naar het bestand dat u wilt detecteren. U kunt zoeken onder**%ProgramFiles%** (waarmee wordt gezocht binnen **Programmabestanden**\&lt;path&gt; en **Programmabestanden (x86)**\&lt;path&gt;) op de computer of **%SystemDrive%** (waarmee wordt gezocht binnen het basisstation van de pc, meestal C:).
     - **MSI-productcode bestaat al**. Kies **Bladeren** om het Windows Installer-bestand (.msi) te kiezen dat u wilt detecteren.
     - **Registersleutel bestaat al**. Geef een registersleutel op die begint met **HKEY_LOCAL_MACHINE\**. Er wordt gezocht binnen zowel 32-bits als 64-bits registerpaden. Als de door u opgegeven sleutel in één van beide locaties bestaat, wordt aan de detectieregel voldaan.
 
@@ -97,9 +98,4 @@ De app wordt weergegeven op het knooppunt **Apps** van de werkruimte **Apps**.
 Nadat u een app hebt gemaakt, is de volgende stap om deze te implementeren. Zie [Apps in Microsoft Intune implementeren](deploy-apps.md) voor meer informatie.
 
 Raadpleeg het blogbericht [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) als u meer informatie wilt over tips en trucs voor het implementeren van software op Windows-pc's.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
