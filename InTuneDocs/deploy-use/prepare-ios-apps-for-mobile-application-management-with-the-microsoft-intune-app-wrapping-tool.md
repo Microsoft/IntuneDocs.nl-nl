@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
 ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.lasthandoff: 01/14/2017
 
 
 ---
@@ -311,7 +312,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 
 |Mogelijkheid|Beschrijving|Aanbevolen richtlijnen|
 |--------------|---------------|------------------------|
-|App-groepen|Gebruik app-groepen zodat meerdere apps toegang kunnen krijgen tot gedeelde containers en sta aanvullende communicatie tussen processen van de verschillende apps toe.<br /><br />Als u app-groepen wilt inschakelen, opent u het deelvenster **Mogelijkheden** en klikt u op **AAN** in **App-groepen **. U kunt app-groepen toevoegen of bestaande app-groepen selecteren.|Pas omgekeerde DNS-notatie toe wanneer u app-groepen gebruikt:<br /><br />*group.com.companyName.AppGroup*|
+|App-groepen|Gebruik app-groepen zodat meerdere apps toegang kunnen krijgen tot gedeelde containers en sta aanvullende communicatie tussen processen van de verschillende apps toe.<br /><br />Als u app-groepen wilt inschakelen, opent u het deelvenster **Mogelijkheden** en klikt u op **AAN** in **App-groepen**. U kunt app-groepen toevoegen of bestaande app-groepen selecteren.|Pas omgekeerde DNS-notatie toe wanneer u app-groepen gebruikt:<br /><br />*group.com.companyName.AppGroup*|
 |Achtergrondmodi|Wanneer u achtergrondmodi inschakelt, kan uw iOS-app op de achtergrond actief blijven.||
 |Gegevensbescherming|Met de gegevensbescherming voegt u een beveiligingsniveau toe aan bestanden die op schijf zijn opgeslagen door de iOS-app. De gegevensbescherming maakt gebruik van de ingebouwde versleutelingshardware die aanwezig is op de specifieke apparaten en waarmee bestanden in een versleutelde indeling op de schijf worden opgeslagen. Uw app moet worden ingericht voor het gebruik van de gegevensbescherming.||
 |Aankopen binnen apps|Bij aankopen binnen apps wordt een winkel rechtstreeks in uw app opgenomen en kunt u verbinding maken met de winkel en veilig betalingen van de gebruiker verwerken. U kunt aankopen binnen apps gebruiken voor het ontvangen van betalingen voor uitgebreide functionaliteit of voor aanvullende inhoud die kan worden gebruikt met uw app.||
@@ -399,9 +400,4 @@ Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u 
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
