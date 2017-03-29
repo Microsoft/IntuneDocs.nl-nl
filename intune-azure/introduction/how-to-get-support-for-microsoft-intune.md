@@ -126,7 +126,7 @@ Voor onze Professional-klanten geldt dat ze voor andere problemen binnen acht uu
 - Eén gebruiker gedeeltelijke onderbrekingen ondervindt, maar er een acceptabele tijdelijke oplossing voorhanden is.
 
 > [!NOTE]
-> **Als u gebruikmaakt van Microsoft System Center Configuration Manager ** of ** Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager en System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfhulpinformatie. Daarnaast kunt online of telefonisch een ondersteuningsaanvraag openen.
+> **Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection neemt u contact op met uw partner of gaat u naar het [Microsoft System Center Configuration Manager en System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) voor uitgebreide zelfhulpinformatie. Daarnaast kunt online of telefonisch een ondersteuningsaanvraag openen.
 >
 > Technische ondersteuning voor System Center Configuration Manager of System Center Endpoint Protection moet worden betaald of wordt bijgeschreven op uw bestaande licentie- of Premier Support-overeenkomsten.
 
