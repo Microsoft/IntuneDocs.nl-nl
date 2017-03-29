@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
 ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -53,7 +54,7 @@ Controleer het volgende:
 
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
--  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd ** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -  Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
 
@@ -139,9 +140,4 @@ Het volgende wordt ondersteund:
 -   [Toegang tot SharePoint Online beveiligen](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Toegang tot Skype voor Bedrijven Online beveiligen](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
