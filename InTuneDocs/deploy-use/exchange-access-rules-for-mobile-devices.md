@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -46,7 +47,7 @@ De volgende procedure beschrijft hoe u een aangepaste regel maakt.
 
 ## <a name="create-a-default-access-rule"></a>Een standaardtoegangsregel maken
 
-1.  Kies in [Microsoft Intune-beheerconsole](http://manage.microsoft.com) ** Beleid**&gt; ** Exchange ActiveSync**.
+1.  Kies in [Microsoft Intune-beheerconsole](http://manage.microsoft.com) **Beleid**&gt; ** Exchange ActiveSync**.
 
 2.  Selecteer in de lijst **Standaardregel** de toegangsregel die u wilt toepassen op alle mobiele apparaten die niet onder een regel of een persoonlijke uitzondering vallen. Kies **Opslaan**.
 
@@ -54,12 +55,7 @@ De volgende procedure beschrijft hoe u een aangepaste regel maakt:
 
 ## <a name="create-a-custom-access-rule"></a>Een aangepaste toegangsregel maken
 
-1. Kies in [Microsoft Intune-beheerconsole](http://manage.microsoft.com) ** Beleid**&gt; ** Exchange ActiveSync**.
+1. Kies in [Microsoft Intune-beheerconsole](http://manage.microsoft.com) **Beleid**&gt; ** Exchange ActiveSync**.
 
 2.  Selecteer in de lijst **Platformuitzonderingen** de optie **Regel toevoegen** en maak een aangepaste regel. Kies **Opslaan**.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

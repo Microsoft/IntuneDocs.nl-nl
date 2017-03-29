@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 
     -   Poort 443 voor https
 
-    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. Zo worden **http&colon;//www&period;contoso&period;com:*;** en **http&colon;//www&period;contoso&period;com: /*; ** niet ondersteund.
+    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. Zo worden **http&colon;//www&period;contoso&period;com:*;**en**http&colon;//www&period;contoso&period;com: /*; ** niet ondersteund.
 
 -   Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
 
@@ -156,9 +157,4 @@ Als er meerdere beheerde-browserbeleidsregels zijn geïmplementeerd op een appar
 -   Als een apparaat voor de eerste keer beheerde-browserbeleidsregels ontvangt en twee beleidsregels conflicteren, worden de URL's niet afgedwongen op het apparaat. Gebruik het knooppunt **Conflicterende beleidsinstellingen** knooppunt van de werkruimte **Beleid** om de conflicten weer te geven.
 
 -   Als een apparaat al een beheerde-browserbeleid heeft ontvangen en er een tweede beleid met conflicterende instellingen wordt geïmplementeerd, blijven de oorspronkelijke instellingen op het apparaat. Gebruik het knooppunt **Conflicterende beleidsinstellingen** knooppunt van de werkruimte **Beleid** om de conflicten weer te geven.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -45,16 +46,11 @@ Nadat het certificaat is verlopen, moet u de app opnieuw ondertekenen met een ni
 
 
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) **Beleid** > **Overzicht** > **Beleid toevoegen**.
-2. Kies in het dialoogvenster **Een nieuw beleid maken** **iOS** > **Beleid mobiel inrichtingsprofiel **, en kies vervolgens **Beleid maken**.
+2. Kies in het dialoogvenster **Een nieuw beleid maken** **iOS** > **Beleid mobiel inrichtingsprofiel**, en kies vervolgens **Beleid maken**.
 3. Configureer de volgende waarden op de pagina **Algemeen**:
     - **Naam**: geef een naam op voor dit beleid voor mobiele inrichtingsprofielen.
     - **Beschrijving**: geef indien gewenst een beschrijving op voor het beleid.
     - **Configuratieprofielbestand**: klik op **Importeren** en kies een Apple-profielbestand voor mobiele configuratie (met de extensie **.mobileprovision**) dat u hebt gedownload van de Apple-website voor ontwikkelaars.
 4. Als u klaar bent, kiest u **Beleid opslaan**.
 5. Implementeer het beleid nu voor de betreffende iOS-apparaten. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) voor meer informatie.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
