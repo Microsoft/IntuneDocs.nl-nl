@@ -33,6 +33,7 @@
 ### [Een Apple DEP-token ophalen](enroll-devices/get-apple-dep-token.md)
 ### [Kiezen hoe u iOS-apparaten registreert](enroll-devices/choose-ios-enrollment-method.md)
 ## Procedures
+### [Licenties aan gebruikers toewijzen](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android-apparaten inschrijven](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Android-apparaten inschrijven
 #### [iOS-apparaten inschrijven met de Configuratieassistent](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
