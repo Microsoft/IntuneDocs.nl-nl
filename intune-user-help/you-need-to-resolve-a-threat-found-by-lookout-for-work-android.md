@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: e60b049e9dd137993d38b822f6268419a27bdc2a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -35,7 +35,7 @@ Los het probleem op door de Lookout for Work-app te openen en de instructies in 
 
 Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, ziet u mogelijk een bericht dat er ongeveer als volgt uitziet:
 
-![Lookout for Work-foutbericht met een koppeling naar website van de bedrijfsportal](./media/lookout-go-to-device-management-portal-android.png)
+![Lookout for Work-foutbericht met een koppeling naar website van de bedrijfsportal](./media/mtd-go-to-device-management-portal-android.png)
 
 Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
 

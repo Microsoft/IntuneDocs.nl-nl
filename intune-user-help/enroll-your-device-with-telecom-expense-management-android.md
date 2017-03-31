@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1968bedeba42758c36e7b9bb9cddfc26309ca71
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 Mogelijk gebruikt uw organisatie Telecom Expense Management-software om ervoor te zorgen dat de data- en spraakabonnementen op aanvaardbare wijze worden gebruikt. Wanneer u uw apparaat hebt ingeschreven, wordt u gevraagd om de beste categorie te selecteren voor dat apparaat.
 
-  ![Een schermafbeelding van het scherm voor het selecteren van de beste categorie voor een apparaat op een iOS-apparaat. Hier ziet u opties voor zakelijke of persoonlijke inschrijving.](./media/and-enroll-11-tem-select-best-category.png)
+![Een schermafbeelding van het scherm voor het selecteren van de beste categorie voor een apparaat op een iOS-apparaat. Hier ziet u opties voor zakelijke of persoonlijke inschrijving.](./media/and-enroll-11-tem-select-best-category.png)
 
 1. Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) te installeren via de Google Play Store. Met de app Datalert kunt u volgen hoeveel data worden verbruikt binnen uw organisatie. Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaan.
 

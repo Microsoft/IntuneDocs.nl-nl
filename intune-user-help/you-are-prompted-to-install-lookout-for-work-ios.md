@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -31,24 +31,23 @@ Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassin
 
 1.    Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
 
-    ![Tik op Installeren om Lookout for Work te installeren](./media/ios-lfw-install-app-request.png)
+  ![Tik op Installeren om Lookout for Work te installeren](./media/ios-mtd-install-app-request.png)
 
 2. Wanneer u het volgende bericht ziet, tikt u op **Instellingen**, schakelt u **Locatieservices** in en tikt u op **Doorgaan**.
 
-    ![Tik op Instellingen en vervolgens op Locatieservices](./media/ios-lfw-allow-location-services.png)
+  ![Tik op Instellingen en vervolgens op Locatieservices](./media/ios-lfw-allow-location-services.png)
 
 3. Controleer de machtigingen voor Lookout for Work en tik op **Doorgaan**.
 
-    ![u hebt nu verbinding met Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+  ![u hebt nu verbinding met Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Bij de vraag of u wilt toestaan dat Lookout for Work u meldingen toestuurt, tikt u op **Toestaan**.
 
-    ![Tik op Instellingen en vervolgens op Locatieservices](./media/ios-lfw-allow-notifications.png)
-
+  ![Tik op Instellingen en vervolgens op Locatieservices](./media/ios-lfw-allow-notifications.png)
 
 Lookout for Work voert de installatie uit en u ziet het volgende scherm als er geen beveiligingsrisico's op uw apparaat worden gevonden.
 
-![Lookout for Work heeft geen beveiligingsrisico’s gevonden](./media/ios-lfw-no-threats-found.png)
+  ![Lookout for Work heeft geen beveiligingsrisico’s gevonden](./media/ios-lfw-no-threats-found.png)
 
 Als Lookout for Work een beveiligingsrisico op uw apparaat vindt, ziet u instructies voor het oplossen van het probleem.
 
