@@ -1,5 +1,6 @@
 # Inleiding
 ## [Wat is de preview-versie van Azure-portal?](introduction/what-is-microsoft-intune.md)
+## [Intune-functies in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Aan de slag
 <!---(introduction/get-started.md) --->
 ### [Registreren voor een gratis proefversie](introduction/sign-up-free-trial-microsoft-intune.md)
