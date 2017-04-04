@@ -154,7 +154,8 @@ U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren van
 2. Zodra de app is aangeschaft, selecteert u de app op de pagina **Inventaris**.  
 3. Selecteer **Windows 10 alle apparaten** als **Platform**. Klik vervolgens op de betreffende **Architectuur** en download. Een app-licentiebestand is niet nodig voor deze app.
 ![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](../media/Win10CP-all-devices.png)
-4. Download alle pakketten onder "Vereiste frameworks". Dit moet worden uitgevoerd voor x86-, x64- en ARM-architecturen. Totaal zijn dit 9 pakketten, zoals hieronder weergegeven.  
+4. Download alle pakketten onder "Vereiste frameworks". Dit moet worden uitgevoerd voor x86-, x64- en ARM-architecturen. Totaal zijn dit 9 pakketten, zoals hieronder weergegeven.
+
 ![Afbeelding van afhankelijkheidsbestanden voor downloaden ](../media/Win10CP-dependent-files.png)
 5. Voordat u de bedrijfsportal-app uploadt naar Intune, maakt u een map (bijvoorbeeld C:&#92;Company Portal) waarin de pakketten als volgt zijn gestructureerd:
   1. Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap Afhankelijkheden.  
