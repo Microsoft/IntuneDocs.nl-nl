@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0945fb2f67c6cc49ca8d10bb5c24f3c4a5f9b2c5
-ms.openlocfilehash: c65dc8ec22f717c5dcce51bb3c45d65bad8d8bde
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -37,7 +37,7 @@ Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd
 |**Windows Installer (&#42;.exe, &#42;.msi)**|Apps van dit type moeten ondersteuning bieden voor installatie op de achtergrond, zonder gebruikersinvoer. Uw appdocumentatie moet alle relevante opdrachtregelopties bevatten om de app op de achtergrond te installeren (bijvoorbeeld **/q**). U vindt een lijst met algemene opdrachtregelopties in [Opdrachtregelschakelopties voor het hulpprogramma Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Aanvullende bestanden en mappen die voor het installatieprogramma van de app vereist zijn, moeten beschikbaar zijn op de locatie die u voor de installatiebestanden van de app opgeeft.<br><br>In de meeste gevallen hoeven voor bestanden van Windows Installer (.msi) en Windows Installer-patch (.msp) geen opdrachtregelargumenten te worden geïnstalleerd door Intune. Raadpleeg de documentatie van uw app.<br><br>Als opdrachtregelargumenten vereist zijn, moeten deze worden ingevoerd als naamwaardeparen (zoals TRANSFORMS=custom_transform.mst).<br><br>Dit type app is alleen beschikbaar voor pc’s waarop de Intune-softwareclient wordt uitgevoerd.|
 |**App-pakket voor Android (&#42;.apk)**|Als u Android-apps wilt implementeren, moet u een geldig .apk-pakket hebben.|
 |**App-pakket voor iOS (&#42;.ipa)**|Als u iOS-apps wilt implementeren, moet u een geldig .ipa-pakket hebben.<br><br>Het .ipa-pakket moet zijn ondertekend door Apple en de vervaldatum in het inrichtingsprofiel moet geldig zijn. Intune kan iOS-toepassingen met een bedrijfscertificaat distribueren.<br><br>Niet alle apps met Apple-ontwikkelaarscertificaat worden ondersteund.<br><br>Uw bedrijf moet zijn geregistreerd voor het iOS Developer Enterprise Program.<br><br>Zorg ervoor dat de firewall van uw organisatie toegang geeft tot de inrichtings- en certificeringswebsites voor iOS.<br><br>U hoeft geen manifestbestand (.plist) te implementeren met de app.|
-|**App-pakket voor Windows Phone (&#42;.xap, .appx, .appxbundle)**|Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
+|**App-pakket voor Windows Phone (&#42;.xap, .appx, .appxbundle)**|Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**App-pakket voor Windows (.appx, .appxbundle)**|Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows-apparaatbeheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows Installer via MDM (&#42;.msi)**|Met deze app kunt u op Windows Installer gebaseerde apps maken en implementeren op geregistreerd pc’s waarop Windows 10 wordt uitgevoerd. Deze pc's worden beheerd via Mobile Device Management (MDM).<br /><br />U kunt slechts één bestand met de extensie .msi uploaden.<br><br>De productcode en -versie van het bestand worden gebruikt voor detectie van de app.<br><br>Het standaardgedrag voor opnieuw opstarten van de app wordt gebruikt. Intune heeft hierop geen invloed.<br><br>MSI-pakketten per gebruiker worden voor één gebruiker geïnstalleerd.<br><br>MSI-pakketten per computer worden voor alle gebruikers op het apparaat geïnstalleerd.<br><br>Dual-mode MSI-pakketten voeren momenteel alleen installaties voor alle gebruikers op het apparaat uit.<br><br>App-updates worden ondersteund wanneer de MSI-productcode van elke versie dezelfde is.<br>
 Alle typen software-installatieprogramma-apps worden geüpload naar uw opslagruimte in de cloud.
