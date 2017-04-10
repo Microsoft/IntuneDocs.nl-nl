@@ -5,7 +5,7 @@ description: Gebruik deze handleiding om uw Windows-pc&quot;s te laten beheren d
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ U kunt de Intune-clientsoftware op computers implementeren met een installatieko
 
 ## <a name="instruct-users-to-self-enroll"></a>Registratie door de gebruikers zelf
 
-Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. De exacte informatie die gebruikers in de webportal zien, verschilt afhankelijk van de MDM-instantie voor uw account en het OS-platform/versie van de pc van de gebruiker. 
+Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. De exacte informatie die gebruikers in de webportal zien, verschilt afhankelijk van de MDM-instantie voor uw account en het OS-platform/versie van de pc van de gebruiker.
 
 Als er geen Intune-licentie is toegewezen aan gebruikers of als de MDM-instantie van de organisatie niet op Intune is ingesteld, zien gebruikers geen inschrijvingsopties.
 
@@ -200,7 +200,7 @@ Voer vanaf een opdrachtprompt met verhoogde bevoegdheid een van de volgende opdr
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**Methode 2** (niet al deze agents zijn geïnstalleerd op elke SKU van Windows):
+**Methode 2**<br>Al deze agents zijn geïnstalleerd op elke SKU van Windows:
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Ga naar "%ProgramFiles%\Microsoft\OnlineManagement" en controleer of alleen de v
 - AgentInstaller
 - Logs
 - Updates
-- Common 
+- Common
 
 ### <a name="remove-the-onlinemanagement-folder"></a>De map OnlineManagement verwijderen
 

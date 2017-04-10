@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 200c992caa36ca74bf3e4ad82a21099a4b7ada4c
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -37,6 +37,6 @@ Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hers
 - [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Ik wil mijn iOS-apparaat bijwerken](you-need-to-update-your-ios-device.md)
 - [Mijn versie van iOS wordt nog niet ondersteund](your-ios-version-isnt-yet-supported.md)
-- [Ik moet Lookout for Work installeren op mijn iOS-apparaat](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [Ik moet een bedreiging oplossen die Lookout for Work op mijn iOS-apparaat heeft gevonden](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+- [Ik moet een Mobile Threat Defense-app installeren op mijn iOS-apparaat](you-are-prompted-to-install-mtd-ios.md)
+- [Ik moet een bedreiging oplossen die een Mobile Threat Defense-app op mijn iOS-apparaat heeft gevonden](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
 

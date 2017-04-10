@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Als u de klassieke Intune-beheerconsole gebruikt, moet u rekening houden met de 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migratie van de klassieke Intune-console naar Intune Azure Preview Portal
+
+Nalevingsbeleid voor apparaten dat is gemaakt in de [klassieke Intune-console](https://manage.microsoft.com) wordt niet weergegeven in de nieuwe [Intune Azure Portal](https://portal.azure.com). Dit nalevingsbeleid wordt echter nog steeds toegepast op gebruikers en beheerd via de klassieke Intune-console.
+
+Als u gebruik wilt maken van de nieuwe functies voor het nalevingsbeleid voor apparaten in Intune Azure Portal, moet u een nieuw nalevingsbeleid voor apparaten maken in Intune Azure Portal zelf. Als u een nieuw nalevingsbeleid voor apparaten in Intune Azure Portal toewijst aan een gebruiker, aan wie ook een nalevingsbeleid voor apparaten uit de klassieke Intune-console is toegewezen, heeft het nalevingsbeleid voor apparaten uit Intune Azure Portal voorrang boven het beleid dat in de klassieke Intune-console is gemaakt.
 
 ##  <a name="next-steps"></a>Volgende stappen
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -41,6 +41,6 @@ Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hers
 - [U moet USB-foutopsporing uitschakelen](you-need-to-turn-off-usb-debugging-android.md)
 - [U moet scannen op beveiligingsrisico's inschakelen](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Uw apparaat voldoet niet aan de minimumvereisten voor de beveiligingspatch](you-need-to-update-your-device-OS-security-patch-android.md)
-- [U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat](you-are-prompted-to-install-lookout-for-work-android.md)
-- [U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+- [U wordt gevraagd om op uw Android-apparaat een app te installeren die uw apparaat beveiligt tegen bedreigingen](you-are-prompted-to-install-mtd-android.md)
+- [U moet een bedreiging oplossen die op uw Android-apparaat is gevonden door een app die uw apparaat beveiligt tegen bedreigingen](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

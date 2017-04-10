@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -54,7 +54,7 @@ Controleer het volgende:
 
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
--  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd ** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -  Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
 
@@ -81,11 +81,12 @@ Het volgende wordt ondersteund:
 -   De systeemeigen e-mail-app voor iOS.
 
 -   Exchange ActiveSync-mailclients zoals Gmail op Android 4 of hoger.
-- Exchange ActiveSync-mailclients op **Android for Work-apparaten:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen in combinatie met Android for Work als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps. 
+-   Exchange ActiveSync-mailclients op **Android for Work-apparaten:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen in combinatie met Android for Work als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
 
 ## <a name="support-for-pcs"></a>Ondersteuning voor pc's
@@ -111,14 +112,12 @@ Het volgende wordt ondersteund:
   - **Platformuitzonderingen:** kies **Regel toevoegen** om een regel te configureren waarin de toegangsniveaus voor bepaalde mobiele-apparaatreeksen en -modellen worden gedefinieerd. Omdat deze apparaten van elk mogelijk type kunnen zijn, kunt u ook apparaattypen configureren die niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Standaardregel:** als er apparaten zijn die niet onder de andere regels vallen, kunt u zelf kiezen of deze toegang krijgen tot Exchange, worden geblokkeerd of in quarantaine worden geplaatst. Wanneer u de regel instelt op het toestaan van toegang, wordt e-mailtoegang automatisch verleend aan iOS-, Windows- en Samsung KNOX-apparaten wanneer deze zijn ingeschreven en voldoen aan het beleid. De gebruiker hoeft geen procedure te doorlopen om de e-mail op te halen.
-
-        Op Android-apparaten die niet werken op Samsung KNOX, krijgen gebruikers een quarantaine-e-mail met aanwijzingen voor de verificatie van de inschrijving en de naleving van het beleid voordat ze toegang krijgen tot e-mail. Als u de regel zo instelt dat de toegang wordt geblokkeerd of dat apparaten in quarantaine worden geplaatst, wordt de toegang tot Exchange voor alle apparaten geblokkeerd, ongeacht of deze al zijn ingeschreven in Intune of niet. Als u wilt voorkomen dat de regel betrekking heeft op apparaten die zijn ingeschreven en voldoen aan het beleid, schakelt u het vakje **Standaardregel negeren** in.
+      - Op Android-apparaten die niet werken op Samsung KNOX, krijgen gebruikers een quarantaine-e-mail met aanwijzingen voor de verificatie van de inschrijving en de naleving van het beleid voordat ze toegang krijgen tot e-mail. Als u de regel zo instelt dat de toegang wordt geblokkeerd of dat apparaten in quarantaine worden geplaatst, wordt de toegang tot Exchange voor alle apparaten geblokkeerd, ongeacht of deze al zijn ingeschreven in Intune of niet. Als u wilt voorkomen dat de regel betrekking heeft op apparaten die zijn ingeschreven en voldoen aan het beleid, schakelt u het vakje **Standaardregel negeren** in.
 >[!TIP]
 >Als het uw bedoeling is om eerst alle apparaten te blokkeren voordat u toegang verleent tot e-mail, kiest u de regel Toegang blokkeren of de quarantaineregel. De standaardregel geldt voor alle apparaattypen. Apparaattypen die u als platformuitzondering opgeeft en die niet worden ondersteund door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], vallen hier dus ook onder.
 
   - **Gebruikersmelding:** naast de meldings-e-mail die Exchange verzendt, verstuurt Intune ook een e-mail waarin wordt beschreven hoe de blokkering van het apparaat kan worden opgeheven. U kunt het standaardbericht aanpassen aan uw behoeften. In het geval dat het apparaat van de gebruiker wordt geblokkeerd voordat de Intune-meldings-e-mail met herstelinstructies wordt bezorgd in het Exchange-postvak van de gebruiker, kan de gebruiker ook een niet-geblokkeerd apparaat of een andere methode gebruiken om Exchange te openen en het bericht weer te geven.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Dit is vooral van toepassing wanneer de **Standaardregel** is ingesteld op het blokkeren van toegang of het in quarantaine plaatsen van het apparaat. In dat geval moet de gebruiker naar de App Store gaan en de bedrijfsportal-app van Microsoft downloaden en het apparaat inschrijven. Dit geldt voor iOS-, Windows- en Samsung KNOX-apparaten. Voor apparaten waarop geen Samsung KNOX wordt uitgevoerd, moet u de e-mail met betrekking tot de quarantaine naar een ander e-mailaccount verzenden. De gebruikers moeten de e-mail kopiëren naar hun geblokkeerde apparaat om de procedure voor de inschrijving en naleving te voltooien.
   > [!NOTE]
   > Als u ervoor wilt zorgen dat Exchange de e-mailmelding kan verzenden, moet u het account opgeven dat wordt gebruikt om de e-mailmelding te verzenden.
   >

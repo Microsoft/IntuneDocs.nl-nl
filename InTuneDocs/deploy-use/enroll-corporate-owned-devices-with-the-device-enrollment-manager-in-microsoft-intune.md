@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobie
 Gebruikers moeten in Azure Portal bestaan om ze te kunnen toevoegen aan apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker géén Intune-beheerder zijn.
 
 >[!NOTE]
->De DEM-inschrijvingsmethode kan niet worden gebruikt in combinatie met de [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md), de methode voor [directe inschrijving](ios-direct-enrollment-in-microsoft-intune.md) of de [DEP-inschrijvingsmethode](ios-device-enrollment-program-in-microsoft-intune.md). 
+>De DEM-inschrijvingsmethode kan niet worden gebruikt in combinatie met de [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md), de methode voor [directe inschrijving](ios-direct-enrollment-in-microsoft-intune.md) of de [DEP-inschrijvingsmethode](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
 
@@ -42,9 +42,9 @@ Alleen gebruikers in de Intune-console kunnen apparaatinschrijvingsbeheerders zi
 
 De DEM-gebruiker kan:
 
--   Maximaal 1000 apparaten inschrijven in Intune.
--   Aanmelden bij de bedrijfsportal om bedrijfsapps op te halen.
--   Toegang tot bedrijfsgegevens configureren door rolspecifieke apps te implementeren op de tablets.
+-   Maximaal 1000 apparaten inschrijven bij Intune
+-   De bedrijfsportal gebruiken om bedrijfsapps te downloaden
+-   Toegang tot bedrijfsgegevens configureren door rolspecifieke apps te implementeren op de tablets
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Beperkingen van apparaten die zijn ingeschreven bij een DEM-account
 
@@ -57,9 +57,9 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
   - De DEM-gebruiker kan bij DEM ingeschreven apparaten niet via de bedrijfsportal uitschrijven op het apparaat zelf. De Intune-beheerder heeft deze mogelijkheid, maar de DEM-gebruiker niet.
 
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
- 
+
   - Gebruikers kunnen geen Apple VPP-apps (Volume Purchase Program) gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
- 
+
   - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) niet gebruiken om apparaten in te schrijven.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 4.  Kies **Toevoegen**. Het dialoogvenster **Apparaatinschrijvingsbeheerder toevoegen** wordt geopend.
 
-5.  Voer de **gebruikers-id** van het Intune-account in en kies **OK**. 
+5.  Voer de **gebruikers-id** van het Intune-account in en kies **OK**.
 
     De DEM-gebruiker kan nu mobiele apparaten inschrijven met behulp van dezelfde procedure die een eindgebruiker gebruikt voor een BYOD-scenario in de bedrijfsportal. De eindgebruiker van het manageraccount kan de bedrijfsportal-app installeren en het apparaat inschrijven met zijn of haar DEM-referenties, op maximaal 1000 apparaten. Zie de volgende onderwerpen voor de stappen die voor elk platform gelden voor inschrijving door eindgebruikers:
 

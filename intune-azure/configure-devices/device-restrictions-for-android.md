@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: fafc2b14d3060f79b92bb9d18aabda6b08737881
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -28,32 +28,43 @@ ms.lasthandoff: 02/18/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="general"></a>Algemeen
--     **Camera**: hiermee staat u het gebruik van de camera op het apparaat toe.
--     **Kopiëren en plakken**: hiermee staat u het gebruik van de functies voor kopiëren en plakken op het apparaat toe.
--     **Klembord delen tussen apps**: hiermee staat u het gebruik van het kopiëren en plakken van Klembord toe tussen apps (alleen voor Samsung KNOX Standard).
--     **Verzenden van diagnostische gegevens**: hiermee voorkomt u dat de gebruiker diagnostische gegevens vanaf het apparaat kan verzenden.    
--     **Fabrieksinstellingen terugzetten**: hiermee staat u de gebruiker toe de fabrieksinstellingen terug te zetten op het apparaat.
--     **Geolocatie**: hiermee staat u toe dat het apparaat locatiegegevens (alleen voor Samsung KNOX Standard) mag gebruiken.
--     **Uitschakelen**: hiermee staat u toe dat de gebruiker het apparaat mag uitschakelen.<br>Als deze instelling is uitgeschakeld, werkt de instelling **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** voor Samsung KNOX Standard-apparaten niet.
--     **Schermafbeelding**: hiermee staat u de gebruiker toe om de inhoud van het scherm vast te leggen als afbeelding.
--     **Spraakassistent**: hiermee staat u het gebruik van de Spraakassistent-software op het apparaat toe (alleen voor Samsung KNOX Standard).
--     **Bluetooth**: hiermee staat u het gebruik van Bluetooth op het apparaat toe (alleen voor Samsung KNOX Standard).
+
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Camera**|Gebruik van de camera op het apparaat toestaan.|Ja|Yes|
+|**Kopiëren en plakken**|Hiermee wordt kopiëren en plakken toegestaan op het apparaat.|Nee|Ja|
+|**Klembord delen tussen apps**|Hiermee staat u het gebruik van het Klembord toe om te kopiëren en plakken tussen apps.|Nee|Yes|
+|**Verzending van diagnostische gegevens**|Hiermee voorkomt u dat de gebruiker diagnostische gegevens vanaf het apparaat verzendt.|Nee|Yes|
+|**Fabrieksinstellingen terugzetten**|Staat de gebruiker toe om de fabrieksinstellingen terug te zetten op het apparaat.|Nee|Ja|
+|**Geolocatie**|Hiermee staat u toe dat het apparaat locatiegegevens gebruikt (alleen voor Samsung KNOX Standard).|Nee|Yes|
+|**Uitschakelen**|Hiermee kan de gebruiker het apparaat uitschakelen.<br>Als deze instelling is uitgeschakeld, werkt de instelling **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** voor Samsung KNOX Standard-apparaten niet.|Nee|Ja|
+|**Schermopname**|Hiermee kan de gebruiker de scherminhoud als afbeelding vastleggen.|Nee|Yes|
+|**Spraakassistent**|Hiermee wordt het gebruik van de spraakassistent toegestaan op het apparaat.|Nee|Yes|
+|**YouTube**|Hiermee staat u toe dat de YouTube-app wordt gebruikt op het apparaat.|Nee|Yes|
 
 ## <a name="password"></a>Wachtwoord
--     **Wachtwoord vereist**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
--     **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in dat een gebruiker moet configureren (tussen 4 en 16 tekens).
--     **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: hiermee geeft u het aantal minuten van inactiviteit op waarna het apparaat automatisch wordt vergrendeld.
--     **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal mislukte aanmeldingen op dat is toegestaan voordat het apparaat wordt gewist.
--     **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.
--     **Vereist wachtwoordtype**: hiermee geeft u het complexiteitsniveau voor het wachtwoord aan en of biometrische apparaten kunnen worden gebruikt.
--     **Wachtwoorden niet opnieuw gebruiken**: hiermee voorkomt u dat eindgebruikers een wachtwoord kunnen maken dat zij al eerder hebben gebruikt.
--     **Ontgrendelen met vingerafdruk**: hiermee staat u de gebruiker toe ondersteunde apparaten te ontgrendelen met een vingerafdruk.
--     **Smart Lock en andere trustagenten**: hiermee kunt u de Smart Lock- functie op compatibele Android-apparaten beheren (Samsung KNOX Standard 5.0 en hoger). Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt.) U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.
--     **Versleuteling**: hiermee geeft u aan dat bestanden op het apparaat moeten worden versleuteld.
+
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Wachtwoord**|Hiermee stelt u dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.|Yes|Yes|
+|**Minimale wachtwoordlengte**|Voer de minimumlengte van het wachtwoord in dat een gebruiker moet opgeven (tussen 4 en 16 tekens).|Yes|Yes|
+|**Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**|Geeft het aantal minuten van inactiviteit aan waarna het apparaat automatisch wordt vergrendeld.|Ja|Yes|
+|**Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**|Geeft het aantal mislukte aanmeldingen aan dat is toegestaan voordat het apparaat wordt gewist.|Ja|Ja|
+|**Dagen tot wachtwoord verloopt**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
+|**Vereist wachtwoordtype**|Hiermee geeft u het complexiteitsniveau voor het wachtwoord aan en of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
+|**Wachtwoorden niet opnieuw gebruiken**|Hiermee voorkomt u dat eindgebruikers een wachtwoord kunnen opgeven dat zij al eerder hebben gebruikt.|Yes|Ja|
+|**Ontgrendelen met vingerafdruk**|Hiermee staat u toe dat de gebruiker ondersteunde apparaten ontgrendelt met een vingerafdruk.|Nee|Yes|
+|**Smart Lock en andere trustagents**|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten (Samsung KNOX Standard 5.0 en hoger) beheren. Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt.) U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.|Ja (5.0 en hoger)|Nee|
+|**Versleuteling**|Vereist dat bestanden op het apparaat zijn versleuteld.|Yes|Yes|
 
 ## <a name="google-play-store"></a>Google Play Store
 
--     **Google Play store**: hiermee staat u toe dat de gebruiker toegang tot de Google Play Store op het apparaat kan krijgen (alleen voor Samsung KNOX Standard).
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Google Play Store**|Hiermee staat u toe dat de gebruiker toegang heeft tot de Google Play Store op het apparaat|Nee|Ja|
 
 ## <a name="restricted-apps"></a>Beperkte apps
 
@@ -80,30 +91,42 @@ Voorbeeld: zoek in Google Play naar Microsoft Office Mobile. De URL die u gebrui
 U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een CSV-bestand in de indeling <*app-URL*>, <*app-naam*>, <*app-uitgever*>. Of klik op **Exporteren** om een CSV-bestand (met dezelfde indeling) te maken met de inhoud van de lijst met beperkte apps.        
 
 ## <a name="browser"></a>Browser
--     **Webbrowser**: hiermee geeft u op of de standaardwebbrowser op het apparaat kan worden gebruikt.
--     **Automatisch doorvoeren**: hiermee staat u het gebruik van de functie voor automatisch doorvoeren van de webbrowser toe.
--     **Cookies**: hiermee staat u het gebruik van cookies toe in de webbrowser van het apparaat.
--     **JavaScript**: hiermee staat u de uitvoering van Java-scripts in de webbrowser van het apparaat toe.
--     **Pop-ups**: hiermee staat u het gebruik van pop-upblokkering in de webbrowser toe.
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Webbrowser**|Hiermee geeft u op of de standaardwebbrowser op het apparaat kan worden gebruikt.|Nee|Yes|
+|**Automatisch doorvoeren**|Hiermee staat u toe dat de functie voor automatisch invullen van de webbrowser wordt gebruikt.|Nee|Yes|
+|**Cookies**|Hiermee staat u toe dat de webbrowser van het apparaat gebruikmaakt van cookies.|Nee|Yes|
+|**Javascript**|Hiermee staat u toe dat Java-scripts worden uitgevoerd door de webbrowser van het apparaat.|Nee|Yes|
+|**Pop-ups**|Hiermee kunt het gebruik van pop-upblokkering in de webbrowser toestaan.|Nee|Yes|
 
 ## <a name="cloud-and-storage"></a>Cloud en opslag
--     **Google-back-up**: hiermee staat u het gebruik van Google-back-up toe.
--     **Google-account automatisch synchroniseren**: hiermee staat u toe dat instellingen voor Google-accounts automatisch worden gesynchroniseerd.
--     **Verwisselbare opslag**: hiermee staat u toe dat op het apparaat gebruik mag worden gemaakt van verwisselbare opslag, zoals een SD-kaart (alleen voor Samsung KNOX Standard).
--     **Versleuteling voor opslagkaarten**: hiermee geeft u aan of de opslagkaart van het apparaat moet worden versleuteld.
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Google-back-up**|Hiermee wordt het gebruik van Google-back-up toegestaan.|Nee|Yes|
+|**Automatische synchronisatie van Google-accounts**|Toestaan dat instellingen voor Google-accounts automatisch worden gesynchroniseerd.|Nee|Yes|
+|**Verwisselbare opslag**|Hiermee staat u het gebruik toe van verwisselbare opslag, zoals een SD-kaart, op het apparaat.|Nee|Ja|
+|**Versleuteling op opslagkaarten**|Hiermee geeft u aan of de opslagkaart van het apparaat moet worden versleuteld.|Nee|Yes|
 
 ## <a name="cellular-and-connectivity"></a>Mobiel en connectiviteit
--     **Dataroaming**: hiermee staat u dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk (alleen voor Samsung KNOX Standard).
--     **Sms-/mms-berichten**: hiermee staat u het gebruik van sms- en mms-berichten op het apparaat toe (alleen voor Samsung KNOX Standard).
--     **Nummer inspreken**: hiermee schakelt u de functie Nummer inspreken op het apparaat in of uit (alleen voor Samsung KNOX Standard).
--     **Spraakroaming**: hiermee staat u spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk (alleen voor Samsung KNOX Standard).
--     **Bluetooth**: hiermee staat u het gebruik van Bluetooth op het apparaat toe (alleen voor Samsung KNOX Standard).
--     **NFC**: hiermee staat u het uitvoeren van bewerkingen toe waarvoor Near Field Communication wordt gebruikt, mits het apparaat er ondersteuning voor biedt (alleen voor Samsung KNOX Standard).
--     **Wi-Fi**: hiermee staat u het gebruik van de Wi-Fi-mogelijkheden van het apparaat toe (alleen voor Samsung KNOX Standard).
--     **Wi-Fi-tethering**: hiermee staat u het gebruik van Wi-Fi-tethering van het apparaat toe (alleen voor Samsung KNOX Standard).
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Gegevensroaming**|Hiermee staat u dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Yes|
+|**Sms-/mms-berichten**|Hiermee staat u het gebruik van sms- en mms-berichten toe op het apparaat.|Nee|Yes|
+|**Nummer inspreken**|Hiermee wordt de functie voor het inspreken van nummers op het apparaat in- of uitgeschakeld.|Nee|Yes|
+|**Spraakroaming**|Hiermee staat u spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|Nee|Yes|
+|**Bluetooth**|Hiermee kan de gebruiker Bluetooth op het apparaat gebruiken.|Nee|Ja|
+|**NFC**|Hiermee kunt u bewerkingen uitvoeren waarvoor near field communication wordt gebruikt, mits het apparaat er ondersteuning voor biedt.|Nee|Yes|
+|**Wi-Fi**|Hiermee kunt het gebruik van de Wi-Fi-mogelijkheden van het apparaat toestaan.|Nee|Yes|
+|**Wi-Fi-tethering**|Hiermee kunt het gebruik van Wi-Fi-tethering op het apparaat toestaan.|Nee|Yes|
 
 ## <a name="kiosk"></a>Kiosk
--     **Selecteer een beheerde app**: zoek en selecteer de beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de Store worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.
--     **Schermsluimerknop**: hiermee schakelt u de knop voor slaapstand/ontwaken van het scherm in of uit op het apparaat.
--     **Volumeknoppen**: hiermee wordt het gebruik van de volumeknoppen op het apparaat in- of uitgeschakeld.
+|||||
+|-|-|-|-|
+|Naam van de instelling|Details|Android 4.0+|Samsung KNOX Standard|
+|**Een beheerde app selecteren**|Zoek en selecteer een beheerde app die mag worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt (apps die zijn opgegeven als een koppeling naar de Store worden momenteel niet ondersteund). Er mogen geen andere apps op het apparaat worden uitgevoerd.|Nee|Yes|
+|**Schermsluimerknop**|Hiermee wordt de knop voor slaapstand/ontwaken van het scherm in- of uitgeschakeld op het apparaat.|Nee|Yes|
+|**Volumeknoppen**|Hiermee wordt het gebruik van de volumeknoppen op het apparaat in- of uitgeschakeld.|Nee|Ja|
 

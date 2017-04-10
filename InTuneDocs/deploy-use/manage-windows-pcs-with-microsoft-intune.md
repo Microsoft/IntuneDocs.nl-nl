@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Windows-pc's beheren met de Intune-pc-clientsoftware
-[Windows-pc’s als mobiel apparaat inschrijven](set-up-windows-device-management-with-microsoft-intune.md) is de voorkeursmethode voor het inschrijven van Windows-pc’s bij Intune, maar u kunt Windows-pc’s ook inschrijven en beheren door de Intune-clientsoftware te installeren, zoals beschreven in dit onderwerp.
+[Windows-pc's als mobiel apparaat inschrijven](set-up-windows-device-management-with-microsoft-intune.md) is de voorkeursmethode voor het inschrijven van Windows-pc's bij Intune, maar u kunt als IT-beheerder ook Windows-pc's inschrijven en beheren door de Intune-clientsoftware te installeren, zoals in dit onderwerp wordt beschreven. De Intune-softwareclient wordt niet ondersteund bij de inschrijving als mobiel apparaat.
 
 Intune beheert Windows-pc's met beleidsregels op een manier die lijkt op hoe Windows Server Active Directory Domain Services (AD DS) dat met groepsbeleidsobjecten doet. Als u Active Directory-computers die lid zijn van een domein wilt beheren met Intune, [zorgt u ervoor dat het Intune-beleid niet in strijd is met de groepsbeleidsobjecten](resolve-gpo-and-microsoft-intune-policy-conflicts.md) die in uw organisatie van kracht zijn. Meer informatie over [groepsbeleidsobjecten](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Beleid en app-implementaties voor de Intune-clientsoftware
 
-Hoewel de Intune-clientsoftware [beheermogelijkheden ondersteunt die helpen bij de beveiliging van pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md) door het beheer van software-updates, Windows Firewall en Endpoint Protection, kan er geen ander Intune-beleid worden toegepast op pc's die worden beheerd door de Intune-clientsoftware, waaronder **Windows**-beleidsinstellingen die specifiek bedoeld zijn voor Mobile Device Management. 
+Hoewel de Intune-clientsoftware [beheermogelijkheden ondersteunt die helpen bij de beveiliging van pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md) door het beheer van software-updates, Windows Firewall en Endpoint Protection, kan er geen ander Intune-beleid worden toegepast op pc's die worden beheerd door de Intune-clientsoftware, waaronder **Windows**-beleidsinstellingen die specifiek bedoeld zijn voor Mobile Device Management.
 
 Als u de Intune-clientsoftware gebruikt voor het beheer van Windows-pc's, kunt u alleen de beleidsregels gebruiken die worden weergegeven onder de sectie **Computerbeheer**.
 
@@ -70,7 +70,7 @@ Bovendien kunt u tijdens de implementatie van apps alleen de Windows Installer (
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Mogelijkheden voor computerbeheer met de Intune-clientsoftware
 
-Nadat de Intune-clientsoftware is geïnstalleerd, zijn dit de beheermogelijkheden: 
+Nadat de Intune-clientsoftware is geïnstalleerd, zijn dit de beheermogelijkheden:
 
 - [Toepassingsbeheer](deploy-apps-in-microsoft-intune.md)
 

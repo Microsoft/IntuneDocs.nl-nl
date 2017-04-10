@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>iOS-apparaten toevoegen voor inschrijving met Configuratieassistent
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Alle apparaten in bedrijfseigendom** &gt; **Alle apparaten** en kies vervolgens **Apparaten toevoegen**. 
+1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Alle apparaten in bedrijfseigendom** &gt; **Alle apparaten** en kies vervolgens **Apparaten toevoegen**.
 
    U kunt apparaten op twee manieren toevoegen:
 
@@ -96,7 +96,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
     |||
     |-|-|
     |&lt;Serienummer 1&gt;|&lt;Details apparaat 1&gt;|
-    |&lt;Serienummer&2;&gt;|&lt;Details apparaat 2&gt;|
+    |&lt;Serienummer 2&gt;|&lt;Details apparaat 2&gt;|
 
   Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
@@ -107,13 +107,13 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
   -  **Handmatig apparaatdetails toevoegen**&mdash;Geef het serienummer en notities of details voor maximaal 15 apparaten op.
 
-  U kunt u de serienummers controleren in het deelvenster **Apparaten controleren**. U kunt ook bepalen of u de **Details** wilt overschrijven voor serienummers die opnieuw worden geïmporteerd, of u kunt het selectievakje **Overschrijven** uitschakelen om de huidige details te behouden. 
+  U kunt u de serienummers controleren in het deelvenster **Apparaten controleren**. U kunt ook bepalen of u de **Details** wilt overschrijven voor serienummers die opnieuw worden geïmporteerd, of u kunt het selectievakje **Overschrijven** uitschakelen om de huidige details te behouden.
 
-> [!NOTE] 
+> [!NOTE]
 > In de bestaande Intune-beheerconsole kunnen beheerders bijbehorende gegevens accepteren uit een geüpload CSV-bestand en de bestaande gegevens voor afzonderlijke serienummers overschrijven. In de nieuwe Azure-portal kunt u alleen de details voor alle serienummers overschrijven of nieuwe details voor alle serienummers negeren.
 
-  > [!NOTE]
-  > Als u op een later tijdstip apparaten in bedrijfseigendom uit het Intune-beheer wilt verwijderen, moet u het serienummer van het apparaat mogelijk uit Intune verwijderen in de apparaatgroep **Op iOS-serienummer** onder **Vooraf geregistreerde bedrijfsapparaten** om de apparaatregistratie uit te schakelen. Als met Intune een noodherstelprocedure wordt uitgevoerd op of rond de tijd dat u de serienummers verwijdert, moet u controleren of alleen de serienummers van actieve apparaten in die groep worden weergegeven.
+> [!NOTE]
+> Als u op een later tijdstip apparaten in bedrijfseigendom uit het Intune-beheer wilt verwijderen, moet u het serienummer van het apparaat mogelijk uit Intune verwijderen in de apparaatgroep **Op iOS-serienummer** onder **Vooraf geregistreerde bedrijfsapparaten** om de apparaatregistratie uit te schakelen. Als met Intune een noodherstelprocedure wordt uitgevoerd op of rond de tijd dat u de serienummers verwijdert, moet u controleren of alleen de serienummers van actieve apparaten in die groep worden weergegeven.
 
 2. Kies **Volgende**.
 
@@ -128,23 +128,22 @@ Kies in de lijst met beschikbare profielen het profiel dat u wilt toewijzen, con
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Een profiel exporteren voor implementatie op iOS-apparaten
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en selecteer vervolgens het apparaatprofiel dat op mobiele apparaten moet worden geïmplementeerd. 
+1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en selecteer vervolgens het apparaatprofiel dat op mobiele apparaten moet worden geïmplementeerd.
 
 2. Kies **Exporteren** op de taakbalk. Kopieer de **profiel-URL** en sla deze op. U zult deze later in Apple Configurator uploaden om het Intune-profiel te definiëren dat wordt gebruikt door iOS-apparaten.
 
   Voor ondersteuning van Apple Configurator 2 moet u de profiel-URL 2.0 bewerken. Als u dit wilt doen, vervangt u deze code:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    Door deze code:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  Door deze code:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    In de volgende procedure gaat u deze profiel-URL met Apple Configurator uploaden naar de Apple DEP-service om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Het apparaat voorbereiden met Apple Configurator
 
@@ -180,9 +179,10 @@ iOS-apparaten zijn verbonden met de Mac-computer en ingeschreven voor beheer van
 
 ### <a name="distribute-devices"></a>Apparaten distribueren
 
-De apparaten zijn nu gereed voor bedrijfsinschrijving. 
+De apparaten zijn nu gereed voor bedrijfsinschrijving. Schakel de apparaten uit en distribueer ze naar gebruikers. Wanneer gebruikers hun apparaten inschakelen, wordt Configuratieassistent gestart.
 
-Schakel de apparaten uit en distribueer ze naar gebruikers. Wanneer gebruikers hun apparaten inschakelen, wordt Configuratieassistent gestart.
+>[!NOTE]
+>Als een gebruiker een DEP-apparaat wil inschrijven, maar de limiet voor het aantal apparaten heeft overschreden, mislukt de inschrijving zonder dat de gebruiker hierover wordt gewaarschuwd.
 
 
 ### <a name="see-also"></a>Zie tevens
