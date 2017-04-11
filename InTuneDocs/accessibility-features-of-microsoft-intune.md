@@ -1,26 +1,27 @@
----
-title: Toegankelijkheidsfuncties | Microsoft Intune
+﻿---
+title: Toegankelijkheidsfuncties | Microsoft Docs
 description: Meer informatie over de functies van Intune waarmee u het programma beter toegankelijk kunt maken voor mensen met een handicap.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
-ms.topic: article
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
+ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
+ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
 
 
 ---
 
-# Toegankelijkheidsfuncties van Microsoft Intune
+# <a name="accessibility-features-of-microsoft-intune"></a>Toegankelijkheidsfuncties van Microsoft Intune
 Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows maken de volgende functies [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] beter toegankelijk voor mensen met een handicap:
 
 -   Sneltoetsen gebruiken
@@ -28,7 +29,7 @@ Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows make
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Sneltoetsen gebruiken
+## <a name="using-keyboard-shortcuts"></a>Sneltoetsen gebruiken
 
 |Dit doet u als volgt:|Deze sneltoets gebruiken|
 |--------------|------------------------------|
@@ -44,11 +45,10 @@ Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows make
 |Verplaatsen naar de volgende groep toepassingen|Pijl-omhoog|
 |De acties voor een geselecteerd apparaat weergeven|Pijl-rechts|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] portals zijn navigeerbaar met de standaardsneltoetsen van Internet Explorer.
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-portals zijn navigeerbaar met de standaardsneltoetsen van Internet Explorer.
 
 
 
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,25 +1,27 @@
 ---
-title: Toegankelijkheidsproducten en -diensten van Microsoft | Microsoft Intune
-description: 
+title: Toegankelijkheidsproducten en -diensten van Microsoft | Microsoft Docs
+description: Informatie over toegankelijkheidsproducten en -diensten van Microsoft.
 keywords: 
-author: 
-manager: jeffgilb
-ms.date: 04/28/2016
-ms.topic: article
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b23d4007-1866-42e9-b6cb-d45408562da4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 966677b7d9488d37d44f42ff8ef8bbac7a5d3914
+ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
+ms.openlocfilehash: a848e92be9896016159533c0ba7291fe193a217a
 
 
 ---
 
-# Toegankelijkheidsproducten en -diensten van Microsoft
+# <a name="accessibility-products-and-services-from-microsoft"></a>Toegankelijkheidsproducten en -diensten van Microsoft
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 
 -   [!INCLUDE[accessibility2](./includes/accessibility2_md.md)]
@@ -33,16 +35,16 @@ ms.openlocfilehash: 966677b7d9488d37d44f42ff8ef8bbac7a5d3914
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Toegankelijkheidsfuncties van Windows
+## <a name="accessibility-features-of-windows"></a>Toegankelijkheidsfuncties van Windows
 [!INCLUDE[accessibility7](./includes/accessibility7_md.md)]
 
-### Gratis zelfstudies met stapsgewijze instructies
+### <a name="free-step-by-step-tutorials"></a>Gratis zelfstudies met stapsgewijze instructies
 [!INCLUDE[accessibility8](./includes/accessibility8_md.md)]
 
-### Producten met ondersteunende technologie voor Windows
+### <a name="assistive-technology-products-for-windows"></a>Producten met ondersteunende technologie voor Windows
 [!INCLUDE[accessibility9](./includes/accessibility9_md.md)]
 
-## Documentatie in alternatieve indelingen
+## <a name="documentation-in-alternative-formats"></a>Documentatie in alternatieve indelingen
 [!INCLUDE[accessibility10](./includes/accessibility10_md.md)]
 
 [!INCLUDE[accessibility11](./includes/accessibility11_md.md)]
@@ -55,7 +57,7 @@ ms.openlocfilehash: 966677b7d9488d37d44f42ff8ef8bbac7a5d3914
 
 [!INCLUDE[accessibility12](./includes/accessibility12_md.md)]
 
-## Klantenservice voor personen met gehoorproblemen
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Klantenservice voor personen met gehoorproblemen
 [!INCLUDE[accessibility13](./includes/accessibility13_md.md)]
 
 -   [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
@@ -64,12 +66,11 @@ ms.openlocfilehash: 966677b7d9488d37d44f42ff8ef8bbac7a5d3914
 
 [!INCLUDE[accessibility16](./includes/accessibility16_md.md)]
 
-## Meer informatie
+## <a name="for-more-information"></a>Meer informatie
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]
 
 
 
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 
