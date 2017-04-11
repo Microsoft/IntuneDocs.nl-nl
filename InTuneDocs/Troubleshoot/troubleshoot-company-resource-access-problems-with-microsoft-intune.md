@@ -1,11 +1,11 @@
 ---
-title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Intune
+title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Docs
 description: In dit onderwerp vindt u fout- en statuscodes die u kunt gebruiken bij het oplossen van problemen met de toegang tot bedrijfsresources.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2640df8eb3f8505320f965ee1f6edbf5d4f8cfe7
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Problemen bij toegang tot bedrijfsbronnen oplossen met Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Wanneer een Microsoft Intune-actie een foutcode retourneert, kunt u aan de hand van de fout- en statuscodes in dit onderwerp het probleem proberen op te lossen.
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
@@ -353,7 +357,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microso
 |-2016345897|0x87D100D7|Syncml(215): een opdracht is niet uitgevoerd als gevolg van een gebruikersinteractie waarbij de gebruiker de keuze niet heeft geaccepteerd.|
 |-2016345898|0x87D100D6|Syncml(214): de bewerking is geannuleerd. De SyncML-opdracht is uitgevoerd, maar er worden niet meer opdrachten verwerkt in de sessie.|
 |-2016345899|0x87D100D5|Syncml(213): het gesegmenteerde item is geaccepteerd en in een buffer opgeslagen|
-|-2016345900|0x87D100D4|Syncml(212): de authenticatie is geaccepteerd. Geen verdere authenticatie vereist voor het restant van de synchronisatiesessie. Deze antwoordcode kan alleen worden gebruikt als antwoord op een aanvraag waarin de referenties zijn opgenomen.|
+|-2016345900|0x87D100D4|Syncml(212): de verificatie is geaccepteerd. Geen verdere verificatie vereist voor het restant van de synchronisatiesessie. Deze antwoordcode kan alleen worden gebruikt als antwoord op een aanvraag waarin de referenties zijn opgenomen.|
 |-2016345901|0x87D100D3|Syncml(211): het item is niet verwijderd. Het opgevraagde item is niet gevonden. Mogelijk is het eerder verwijderd.|
 |-2016345902|0x87D100D2|Syncml(210): verwijderen zonder archivering. Het antwoord geeft aan dat de opgevraagde gegevens zijn verwijderd, maar niet gearchiveerd vóór de verwijdering, omdat deze OPTIONELE functie niet wordt ondersteund door de implementatie.|
 |-2016345903|0x87D100D1|Conflict opgelost met duplicaat. Het antwoord geeft aan dat de aanvraag heeft geleid tot een updateconflict dat vervolgens is opgelost doordat de gegevens van de client zijn gedupliceerd in de serverdatabase. Het antwoord bevat de doel-URI van het duplicaat in het statusitem. In het geval van tweerichtingssynchronisatie wordt er bovendien een Add-opdracht geretourneerd met de definitie van de duplicaatgegevens.|
@@ -373,6 +377,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

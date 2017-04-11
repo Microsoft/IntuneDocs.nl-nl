@@ -1,10 +1,10 @@
 ---
-title: Voordelen van de Intune App SDK | Microsoft Intune
-description: 
+title: Voordelen van de Intune App SDK | Microsoft Docs
+description: De Microsoft Intune App SDK is beschikbaar voor zowel het iOS-platform als het Android-platform en maakt Mobile App Management-functies mogelijk met Microsoft Intune.
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
-ms.date: 09/08/2016
+author: mtillman
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,65 +12,67 @@ ms.technology:
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 952cfa4f23f8ba080ce53f6785baceb8a0a367c6
-ms.openlocfilehash: ce8fa172c68fed7a1398cd5b1263ac970b87559b
+ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
+ms.openlocfilehash: a967758387e9904eb9ce794b3783e777322c83a7
 
 
 ---
 
-# Overzicht van de Intune App SDK
-De Microsoft Intune App SDK is beschikbaar voor zowel het iOS-platform als het Android-platform en maakt Mobile App Management-functies mogelijk met Microsoft Intune. Daarnaast streven we ernaar het aantal codewijzigingen die van de ontwikkelaar worden vereist, te beperken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt onze API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders. Nadat u uw app hebt ingeschakeld, kunnen IT-beheerders beleid implementeren voor door Intune beheerde apps en van deze functies profiteren om hun bedrijfsgegevens te beveiligen.
+# <a name="intune-app-sdk-overview"></a>Overzicht van de Intune App SDK
+Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt onze API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
 
-## Reguliere functies
+Als u uw app hebt ingeschakeld voor beleid voor app-beveiliging, kunnen IT-beheerders deze beleidsregels implementeren om de bedrijfsgegevens in de app te beveiligen.
 
-### Bepalen of gebruikers om bedrijfsdocumenten kunnen verplaatsen
-IT-beheerders kunnen de herlocatie van bedrijfsbestanden in door Intune beheerde apps bepalen. Ze kunnen bijvoorbeeld een beleid implementeren dat back-up-apps ervan weerhoudt back-apps van bedrijfsgegevens te maken naar de cloud.
+## <a name="app-protection-features"></a>Functies voor app-beveiliging
 
-### Beperkingen van Klembord configureren
-IT-beheerders kunnen het gedrag van Klembord in door Intune beheerde apps configureren. Ze kunnen bijvoorbeeld een beleid implementeren dat bepaalt dat eindgebruikers het Klembord niet kunnen gebruiken om gegevens uit een door Intune beheerde app te knippen/kopiëren en deze gegevens vervolgens naar een niet-beheerde app te plakken.
+Hier volgen enkele voorbeelden van functies voor Intune-beleid voor app-beveiliging die kunnen worden ingeschakeld met de SDK.
 
-### Beperkingen voor schermafbeeldingen configureren
-IT-beheerders kunnen voorkomen dat gebruikers schermafbeeldingen maken als er een Intune-beheerde app wordt weergegeven. Als u deze beperking toepast, voorkomt u dat het vertrouwelijke zakelijke inhoud kan worden vastgelegd en vrijegegeven. Deze functie is alleen beschikbaar voor Android-apparaten.
+### <a name="control-users-ability-to-move-corporate-files"></a>Bepalen of gebruikers bedrijfsdocumenten kunnen verplaatsen
+IT-beheerders kunnen bepalen waar werk- of schoolgegevens in de app naartoe kunnen worden verplaatst. Ze kunnen bijvoorbeeld een beleid implementeren waarbij de app geen back-up in de cloud kan maken van bedrijfsgegevens.
 
-### Versleuteling van opgeslagen gegevens afdwingen
+### <a name="configure-clipboard-restrictions"></a>Beperkingen van Klembord configureren
+IT-beheerders kunnen het gedrag van het Klembord in door Intune beheerde apps configureren. Ze kunnen bijvoorbeeld een beleid implementeren om te voorkomen dat eindgebruikers gegevens uit de app knippen of kopiëren en deze in een niet-beheerde, persoonlijke app plakken.
+
+### <a name="enforce-encryption-on-saved-data"></a>Versleuteling van opgeslagen gegevens afdwingen
 IT-beheerders kunnen beleid afdwingen dat ervoor zorgt dat de gegevens die door de app op het apparaat worden opgeslagen, worden versleuteld.
 
-### Bedrijfsgegevens op afstand wissen
-IT-beheerders kunnen zakelijke gegevens uit een door Intune beheerde app op afstand wissen wanneer het apparaat wordt uitgeschreven bij Microsoft Intune. Deze functie is op de identiteit gebaseerd en verwijdert alleen bestanden die betrekking hebben op de zakelijke identiteit van de eindgebruiker. Hiertoe vereist de functie deelname van de app. De app aangeven voor welke identiteit het wissen moet plaatsvinden op basis van de instellingen van de gebruiker. Als er dergelijke instellingen niet door de gebruiker in de app zijn opgegeven, is het standaardgedrag om de toepassingsmap te wissen en de eindgebruiker te informeren dat de toegang tot bedrijfsresources is verwijderd.
+### <a name="remotely-wipe-corporate-data"></a>Bedrijfsgegevens op afstand wissen
+IT-beheerders kunnen op afstand bedrijfsgegevens wissen uit een met Intune beheerde app. Deze functie is op de identiteit gebaseerd en verwijdert alleen bestanden die betrekking hebben op de zakelijke identiteit van de eindgebruiker. Hiertoe vereist de functie deelname van de app. De app aangeven voor welke identiteit het wissen moet plaatsvinden op basis van de instellingen van de gebruiker. Als dergelijke instellingen niet door de gebruiker in de app zijn opgegeven, is het standaardgedrag om de toepassingsmap te wissen en de eindgebruiker te informeren dat de toegang is verwijderd.
 
-### Het gebruik van een beheerde browser afdwingen
-IT-beheerders kunnen het gebruik van een beheerde browser afdwingen voor het openen van koppelingen binnen door Intune beheerde apps. Met de beheerde browser van Microsoft Intune kunt u ervoor zorgen dat koppelingen die in e-mailberichten (in een door Intune beheerde e-mailclient) worden weergegeven binnen het domein van door Intune beheerde apps blijven.
+### <a name="enforce-the-use-of-a-managed-browser"></a>Het gebruik van een beheerde browser afdwingen
+IT-beheerders kunnen afdwingen dat webkoppelingen in de app worden geopend met de [Intune Managed Browser-app](../deploy-use/manage-internet-access-using-managed-browser-policies.md). Dit zorgt ervoor dat de koppelingen die worden weergegeven in een bedrijfsomgeving, binnen het domein van door Intune beheerde apps worden gehouden.
 
-### Een pincodebeleid afdwingen
-IT-beheerders kunnen een pincodebeleid afdwingen wanneer een door Intune beheerde app wordt gestart. Dit beleid helpt controleren of de eindgebruikers die hun apparaat bij Microsoft Intune hebben ingeschreven dezelfde personen zijn die de apps starten. Wanneer eindgebruikers hun pincode configureren, gebruikt Intune App SDK Azure Active Directory om te controleren of de referenties van eindgebruikers overeenkomen met die van de apparaatregistratie.
+### <a name="enforce-a-pin-policy"></a>Een pincodebeleid afdwingen
+IT-beheerders kunnen vereisen dat eindgebruikers een pincode invoeren om bedrijfsgegevens in de app te openen. Dit zorgt ervoor dat de persoon die de app gebruikt, dezelfde is als degene die zich aanvankelijk heeft aangemeld met een werk- of schoolaccount. Wanneer eindgebruikers hun pincode configureren, gebruikt Intune App SDK Azure Active Directory om te controleren of de referenties van eindgebruikers overeenkomen met het ingeschreven Intune account.
 
-### Vereisen dat gebruikers referenties invoeren voordat ze apps kunnen starten
-IT-beheerders kunnen van gebruikers vereisen dat zijn referenties invoeren voordat ze een door Intune beheerde app kunnen starten. De Intune App SDK gebruikt Azure Active Directory om een single sign-on-ervaring te bieden waar de referenties, nadat deze eenmaal zijn opgegeven, opnieuw worden gebruikt voor toekomstige aanmeldingen. We bieden ook ondersteuning voor verificatie van oplossingen voor identiteitsbeheer [die zijn gefedereerd met Azure Active Directory](https://msdn.microsoft.com/library/azure/jj679342.aspx).
+### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>Instellen dat gebruikers zich alleen met een werk-of schoolaccount kunnen aanmelden voor app-toegang
+IT-beheerders kunnen vereisen dat gebruikers zich aanmelden met hun werk- of schoolaccount om toegang tot de app te krijgen. De Intune App SDK gebruikt Azure Active Directory voor eenmalige aanmelding, waarbij de referenties, nadat deze zijn opgegeven, opnieuw worden gebruikt bij alle daaropvolgende aanmeldingen. We bieden ook ondersteuning voor verificatie van oplossingen voor identiteitsbeheer die zijn gefedereerd met Azure Active Directory.
 
-### De status en compatibiliteit van apparaten controleren
-IT-beheerders kunnen een status en de compatibiliteit van apparaten met het bedrijfsbeleid controleren voordat eindgebruikers toegang tot door Intune beheerde apps krijgen. Op het iOS-platform controleert dit beleid of het apparaat is gekraakt. Op het Android-platform controleert dit beleid of het apparaat is geroot.
+### <a name="check-device-health-and-compliance"></a>De status en compatibiliteit van apparaten controleren
+IT-beheerders kunnen een status en de compatibiliteit van apparaten met Intune-beleid controleren voordat eindgebruikers toegang tot de app krijgen. In iOS controleert dit beleid of het apparaat jailbroken, ofwel gekraakt, is. In Android controleert dit beleid of het apparaat geroot is.
 
-## Preview-functies
-De Microsoft Intune App SDK bevat verschillende functies die zich ‘in preview’ zijn. U kunt beginnen met de integratie met preview-API's, maar alleen voor testdoeleinden. Houd er rekening mee dat deze previews functies een toevoeging aan bestaande scenario's zijn in plaats van bestaande scenario's vervangen.
+### <a name="multi-identity-support"></a>Ondersteuning voor meerdere identiteiten
+Ondersteuning voor meerdere identiteiten is een functie van de SDK die co-existentie van door beleid beheerde (zakelijke) accounts en niet-beheerde (privé-)accounts in één enkele app mogelijk maakt.
 
-### Ondersteuning voor meerdere identiteiten van Microsoft Intune App SDK
-Ondersteuning voor meerdere identiteiten is een functie die co-existentie van door beleid beheerde (zakelijke) accounts en niet-beheerde (privé-)accounts in een enkele app mogelijk maakt.
+Zo configureren veel gebruikers bijvoorbeeld zowel bedrijfs- als persoonlijke e‑mailaccounts in de mobiele Office-app voor iOS en Android. Wanneer een gebruiker zich toegang verschaft tot gegevens in een bedrijfsaccount, moet de IT-beheerder erop kunnen vertrouwen dat het beleid voor app-beveiliging wordt toegepast. Wanneer een gebruiker zich echter toegang wil verschaffen tot een persoonlijk e-mailaccount, moeten die gegevens buiten de controle van de IT-beheerder blijven. De Intune App SDK bereikt dit door het beleid voor app-beveiliging **alleen** toe te passen op de bedrijfsidentiteit in de app.
 
-### Voorbeeld van een scenario met meerdere identiteiten
-Veel gebruikers configureren zowel bedrijfs- als persoonlijke e-mailaccounts in de Outlook-app voor iOS en Android. Wanneer een gebruiker zich toegang wil verschaffen tot gegevens in een bedrijfsaccount, moet de IT-beheerder erop kunnen vertrouwen dat het MAM-beleid wordt toegepast. Wanneer een gebruiker zich echter toegang wil verschaffen tot een persoonlijk e-mailaccount, moeten die gegevens buiten de controle van de IT-beheerder blijven. Dit wordt door Microsoft Intune bereikt door het beheerbeleid alleen in de app toe te passen. Deze functie voor het gebruik van meerdere identiteiten helpt bij het oplossen van het gegevensbeveiligingsprobleem waarmee organisaties worden geconfronteerd door apparaten en apps die ondersteuning bieden voor zowel privé- als accounts.
-
-### Hoe u meerdere identiteiten kunt ondersteunen
-Met preview-API's kunt u een User Principal Name (UPN) met specifieke gegevensbewerkingen opgeven, zoals klembordbewerkingen en bestandsbewerkingen. De Microsoft Intune App SDK gebruikt de UPN om de aanroep te vergelijken met de UPN die voor het inschrijven van het apparaat bij de Microsoft Intune-service is gebruikt. Als de UPN’s overeenkomen, wordt de aanroep beschouwd als een aanroep van bedrijfsgegevens en worden de gegevens beveiligd; als de UPN’s niet overeenkomen, wordt de oproep beschouwd als een aanroep van privégegevens en worden de gegevens niet beveiligd.
-
-### Appbeheer zonder apparaatinschrijving
-Veel gebruikers met privé-apparaten willen bedrijfsgegevens kunnen inzien en gebruiken zonder hun privé-apparaat te moeten inschrijven met Mobile Device Management-product (MDM-product). Omdat MDM-inschrijving algemeen beheer van het apparaat vereist, willen gebruikers de algemene controle over hun eigen privé-apparaat niet altijd aan hun bedrijf geven.
-
-Met appbeheer zonder apparaatinschrijving kan de Microsoft Intune-service MAM-beleid rechtstreeks voor een app implementeren zonder voor de implementatie van het beleid afhankelijk te zijn van een MDM-kanaal. Omdat er geen MDM-kanaal is vereist, is MDM-inschrijving niet vereist.
+De functie voor het gebruik van meerdere identiteiten helpt bij het oplossen van het gegevensbeveiligingsprobleem waarmee organisaties worden geconfronteerd door het gebruik van store-apps die ondersteuning bieden voor zowel privé- als werkaccounts.
 
 
+### <a name="app-protection-without-device-enrollment"></a>App-beveiliging zonder apparaatregistratie
+
+>[!IMPORTANT]
+>Intune-app-beveiliging zonder apparaatregistratie is nog niet beschikbaar voor de Intune App SDK voor Android. Deze is wel beschikbaar voor de Intune App Wrapping Tools, SDK voor iOS, het SDK Xamarin-onderdeel en de SDK Cordova-invoegtoepassing.
 
 
-<!--HONumber=Sep16_HO2-->
+Veel gebruikers met privé-apparaten willen toegang tot bedrijfsgegevens zonder hun privé-apparaat te moeten registreren met een Mobile Device Management-provider (MDM-product). Omdat voor MDM-registratie algemeen beheer van het apparaat is vereist, willen gebruikers de algemene controle over hun persoonlijk apparaat niet altijd aan hun bedrijf geven.
+
+Met app-beheer zonder apparaatregistratie kan de Microsoft Intune-service het beleid voor app-beveiliging rechtstreeks voor een app implementeren zonder voor de implementatie van het beleid afhankelijk te zijn van apparaatbeheer.
+
+
+
+<!--HONumber=Dec16_HO5-->
 
 

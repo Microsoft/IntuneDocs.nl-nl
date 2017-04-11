@@ -1,11 +1,11 @@
----
-title: Problemen met e-mailprofielen oplossen | Microsoft Intune
+﻿---
+title: Problemen met e-mailprofielen oplossen | Microsoft Docs
 description: Problemen met e-mailprofielen en hoe u deze kunt oplossen.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,24 @@ ms.technology:
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Problemen met e-mailprofielen in Microsoft Intune oplossen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Hier vindt u een aantal problemen met e-mailprofielen die zich kunnen voordoen. Ook wordt er beschreven hoe u deze kunt oplossen.
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
 
-## <a name="unable-to-send-images-from-email-account"></a>Kan geen afbeeldingen verzenden vanuit e-mailaccount
+## <a name="unable-to-send-images-from--email-account"></a>Kan geen afbeeldingen verzenden vanuit e-mailaccount
 Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeeldingen of foto’s verzenden vanaf hun apparaat.
 Dit is het geval als de optie **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** niet is ingeschakeld.
 
@@ -61,7 +65,7 @@ Als de gebruiker een e-mailprofiel heeft geïnstalleerd voorafgaand aan het inri
 
 Omdat Samsung KNOX niet de hostnaam gebruikt om het profiel te identificeren, wordt geadviseerd om niet meerdere e-mailprofielen te implementeren naar hetzelfde e-mailadres op verschillende hosts, aangezien die elkaar zullen overschrijven.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Fout 0x87D1FDE8 voor KNOX Standard-apparaat
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Fout 0x87D1FDE8 voor KNOX Standard-apparaat
 **Probleem**: na het maken en implementeren van een Exchange Active Sync-e-mailprofiel voor Samsung KNOX Standard voor verschillende Android-apparaten wordt door de apparaten de fout **0x87D1FDE8** of de fout **Doorvoeren is mislukt** gemeld op het tabblad &gt;-beleid van de eigenschappen van het apparaat.
 
 Controleer de configuratie van uw EAS-profiel voor Samsung KNOX en het bronbeleid. De synchronisatieoptie voor Samsung Notes wordt niet meer ondersteund en deze optie moet niet worden geselecteerd in uw profiel. Gun de apparaten voldoende tijd (maximaal 24 uur) om het beleid te verwerken.
@@ -71,6 +75,6 @@ Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 
