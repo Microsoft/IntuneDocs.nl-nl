@@ -24,7 +24,6 @@
 ### [Bedrijfsportal aanpassen](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Apparaten inschrijven](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](get-started/post-configuration-tasks.md)
-## [Migreren naar Intune](get-started/migrate-to-intune.md)
 ## Volgende stappen
 ### [Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Bedrijfsgegevens beveiligen met gegevensversleuteling](get-started/protect-data-encryption.md)
