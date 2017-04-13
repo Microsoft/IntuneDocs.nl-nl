@@ -26,7 +26,7 @@ ms.lasthandoff: 03/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die door Skycure wordt uitgevoerd. Skycure is een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten met Skycure, zoals:
+U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die door Skycure wordt uitgevoerd. Skycure is een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetriegegevens die zijn verzameld op apparaten met Skycure, zoals:
 
 -   Fysieke beveiliging
 
@@ -36,11 +36,11 @@ U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door midde
 
 -   Beveiliging tegen zwakke plekken
 
-U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Skycure- risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-compatibele apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
+U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Skycure-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-conforme apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Hoe kunt u met Intune en Skycure uw bedrijfsresources beter beveiligen?
 
-De mobiele Android- of iOS-app voor Skycure legt telemetrische gegevens vast over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. De app verzendt die gegevens vervolgens naar de Skycure-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
+De mobiele Android- of iOS-app voor Skycure legt telemetriegegevens vast over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. De app verzendt die gegevens vervolgens naar de Skycure-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
 
 Het Intune-nalevingsbeleid voor apparaten bevat een regel voor Skycure Mobile Threat Defense die is gebaseerd op de Skycure-risicoanalyse. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld.
 
@@ -48,7 +48,7 @@ Als het apparaat niet aan het beleid blijkt te voldoen, wordt de toegang tot res
 
 Intune ondersteunt twee modi van integratie met Skycure:
 
--   **Eenvoudig integratie** op basis van een modus voor alleen-lezen waarbij voor Skycure de apparaten in Intune worden weergegeven.
+-   **Eenvoudige integratie** op basis van een modus voor alleen-lezen waarbij voor Skycure de apparaten in Intune worden weergegeven.
 
 -   **Volledige integratie** waarbij door Skycure apparaatrisico- en beveiligingsincidentgegevens kunnen worden gemeld aan Intune.
 

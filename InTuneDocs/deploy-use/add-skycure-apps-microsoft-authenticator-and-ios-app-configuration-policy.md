@@ -48,11 +48,11 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 1.  Kies in de klassieke Intune-console **Apps** &gt;**Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
 
-2.  Kies op de pagina **Installatie van software** de optie **Externe koppeling** en plak vervolgens onder **De URL opgeven** de [URL voor de Skycure-app voor Android](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+2.  Kies op de pagina **Setup van software** de optie **Externe koppeling** en plak vervolgens onder **De URL opgeven** de [URL voor de Skycure-app voor Android](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
     ![De URL opgeven in Microsoft Intune Software Publisher](../media/mtp/skycure-add-apps-1.png)
 
-3.  Voer op de pagina **Beschrijving van software** de **uitgever**, **naam** en **beschrijving** in en selecteer de optie **Deze app als aanbevolen app weergeven en in de bedrijfsportal markeren** en klik vervolgens op **Volgende**.
+3.  Voer op de pagina **Beschrijving van software** de **uitgever**, **naam** en **beschrijving** in en selecteer de optie **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal** en klik vervolgens op **Volgende**.
 
     ![Beschrijving van de software in Microsoft Intune Software Publisher](../media/mtp/skycure-add-apps-2.png)
 
@@ -62,11 +62,11 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 1.  Kies in de klassieke Intune-console **Apps** &gt;**Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
 
-2.  Kies op de pagina **Installatie van software** de optie **Beheerde iOS-app uit de App Store** en plak vervolgens onder **De URL opgeven** de [URL voor de Skycure-app voor iOS](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) .
+2.  Kies op de pagina **Setup van software** de optie **Beheerde iOS-app uit de App Store** en plak vervolgens onder **De URL opgeven** de [URL voor de Skycure-app voor iOS](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) .
 
     ![Beheerde iOS-app in Microsoft Intune Software Publisher](../media/mtp/skycure-add-apps-3.png)
 
-3.  Voer op de pagina **Beschrijving van software** de **uitgever**, **naam** en **beschrijving** in en selecteer de optie **Deze app als aanbevolen app weergeven en in de bedrijfsportal markeren** en klik vervolgens op **Volgende**.
+3.  Voer op de pagina **Beschrijving van software** de **uitgever**, **naam** en **beschrijving** in en selecteer de optie **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal** en klik vervolgens op **Volgende**.
 
     ![Opties in Microsoft Intune Software Publisher](../media/mtp/skycure-add-apps-4.png)
 
@@ -78,11 +78,11 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 1.  Kies in de klassieke Intune-console **Apps** &gt;**Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
 
-2.  Kies op de pagina **Installatie van software** de optie **Beheerde iOS-app uit de App Store** en plak vervolgens onder **De URL opgeven** de [URL voor de Microsoft Authenticator-app voor iOS](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) .
+2.  Kies op de pagina **Setup van software** de optie **Beheerde iOS-app uit de App Store** en plak vervolgens onder **De URL opgeven** de [URL voor de Microsoft Authenticator-app voor iOS](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) .
 
     ![Beheerde iOS-app in Microsoft Intune Software Publisher (2)](../media/mtp/skycure-add-apps-5.png)
 
-3.  Voer op de pagina **Beschrijving van software** de **uitgever**, **naam** en **beschrijving** in en selecteer de optie **Deze app als aanbevolen app weergeven en in de bedrijfsportal markeren** en klik vervolgens op **Volgende**.
+3.  Voer op de pagina **Beschrijving van software** de **uitgever**, **naam** en **beschrijving** in en selecteer de optie **Geef deze app weer als aanbevolen app en markeer deze in de bedrijfsportal** en klik vervolgens op **Volgende**.
 
     ![Beheerde iOS-app in Microsoft Intune Software Publisher (3)](../media/mtp/skycure-add-apps-6.png)
 
