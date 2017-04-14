@@ -31,17 +31,16 @@
 ### [MDM-instantie instellen](enroll-devices/set-mdm-authority.md)
 ## Plannen en ontwerpen
 ### [Een Apple MDM-pushcertificaat ophalen](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Een Apple DEP-token ophalen](enroll-devices/get-apple-dep-token.md)
 ### [Kiezen hoe u iOS-apparaten registreert](enroll-devices/choose-ios-enrollment-method.md)
 ## Procedures
 ### [Licenties aan gebruikers toewijzen](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android-apparaten inschrijven](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Android-apparaten inschrijven
-#### [iOS-apparaten inschrijven met de Configuratieassistent](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [iOS-apparaten inschrijven met directe inschrijving](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - Setup Assistant](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - directe inschrijving](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Apple Configurator-serienummers toevoegen](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [iOS-apparaten inschrijven met het programma voor apparaatinschrijving](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Apparaten inschrijven met de apparaatinschrijvingsmanager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Apparaatinschrijvingsmanager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS-apparaten inschrijven](enroll-devices/enroll-macos-devices.md)
 ### [Windows-apparaten inschrijven](enroll-devices/enroll-windows-devices.md)
 ### Apparaatinschrijving beheren
