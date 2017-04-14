@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -55,7 +56,7 @@ Implementatiedoelen zijn de beoogde resultaten op lange termijn die worden gerea
 
     -    **Bedrijfswaarde:** door een efficiënt gebruik van bronnen kan het bedrijf investeren in andere gebieden, concurrerender opereren en betere service leveren aan klanten bieden.
 
-## <a name="deployment-objectives"></a>Implementatiedoelstellingen
+## <a name="deployment-objectives"></a>Doelstellingen van implementatie
 
 Implementatiedoelstellingen zijn de acties die een organisatie kan ondernemen om de doelen van de Microsoft Intune-implementatie te realiseren. Hieronder vindt u enkele voorbeelden van de implementatiedoelstellingen van een organisatie en hoe elk daarvan kan worden uitgevoerd.
 
@@ -91,12 +92,7 @@ Implementatie-uitdagingen hebben betrekking op kwesties die topprioriteit hebben
 <br>
     -   **Risicobeperking:** ook al kunt u misschien niet wachten om aan het project te beginnen, toch is het belangrijk om uw doelen en doelstellingen duidelijk te definiëren. Neem deze mee tijdens alle bewustwordings- en trainingsactiviteiten, zodat u zeker weet dat gebruikers begrijpen waarom uw organisatie voor Intune heeft gekozen.
 
-## <a name="next-section"></a>Volgende sectie
+## <a name="next-steps"></a>Volgende stappen
 
 Nu u uw implementatiedoelen, -doelstellingen en -uitdagingen hebt geïdentificeerd, gaan we naar de volgende sectie: [Use-casescenario's bepalen](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 296e7db9be18323b44cc79592c981f5d7241602f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
+ms.openlocfilehash: fe12a6b890c2d5cba874e820afbe7671b754deb5
+ms.lasthandoff: 04/11/2017
 
 ---
 
@@ -34,9 +34,7 @@ Intune ondersteunt het toevoegen en toewijzen van de volgende typen apps:
 
 De volgende platformen worden ondersteund. Klik op een van de onderwerpen voor meer informatie over het toevoegen van elk type app.
 
-- [Line-of-business-apps voor Android](/intune-azure/manage-apps/android-lob-app)
 - [Android Store-apps](/intune-azure/manage-apps/android-store-app)
-- [Line-of-business-apps voor iOS](/intune-azure/manage-apps/ios-lob-app)
 - [iOS Store-apps](/intune-azure/manage-apps/ios-store-app)
 - [Web-apps (voor alle platformen)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 Store-apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
@@ -65,7 +63,7 @@ App-categorieën kunnen worden gebruikt om apps te sorteren, zodat eindgebruiker
 4. Kies **Instellen** > **App-categorieën** in de workload **Mobiele apps**. 
 5. Op de blade **App-categorieën** wordt een lijst met de huidige categorieën weergegeven. Kies een van de volgende acties: 
     - **Een categorie maken**: voer op de blade **Categorie maken** een naam voor de nieuwe categorie in. Namen kunnen slechts in één taal worden ingevoerd en worden niet door Intune vertaald. Wanneer u klaar bent, klikt u op **Maken**.
-    - **Een categorie bewerken**: kies voor elke categorie in de lijst '**... **'. Geef op de blade **Eigenschappen** een nieuwe naam voor de categorie op of verwijder de categorie.
+    - **Een categorie bewerken**: kies voor elke categorie in de lijst '**...**'. Geef op de blade **Eigenschappen** een nieuwe naam voor de categorie op of verwijder de categorie.
 
 
 
