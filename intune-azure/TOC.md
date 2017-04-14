@@ -74,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## Apps beheren
 ### [Apps toevoegen](manage-apps/add-apps.md)
-#### [Line-of-business-apps voor Android](manage-apps/android-lob-app.md)
 #### [Android Store-apps](manage-apps/android-store-app.md)
-#### [Line-of-business-apps voor iOS](manage-apps/ios-lob-app.md)
 #### [iOS Store-apps](manage-apps/ios-store-app.md)
 #### [Web-apps](manage-apps/web-app.md)
 #### [Windows Phone 8.1 Store-apps](manage-apps/windows-phone-8-1-store-app.md)
