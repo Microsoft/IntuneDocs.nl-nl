@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,7 +14,7 @@ ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: priyar
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/13/2017
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment-with-AAD/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 1.  Open de Windows-app **Instellingen** door naar het **Startmenu** te gaan en selecteer de knop **Instellingen**. U kunt ook zoeken naar 'instellingen' in de zoekbalk.
 
