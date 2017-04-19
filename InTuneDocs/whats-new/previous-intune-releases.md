@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 6bc3afe58d5e0f1f12c8b6c6fc62e37d01cd5132
 ms.openlocfilehash: cab9833a1e1b92c156a2eb77411436289c70ad71
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -165,7 +166,7 @@ Met de Intune-meldingsregels wordt gedefinieerd wie een e-mailwaarschuwing ontva
 
     Klik in de werkruimte **Beheerder** op **Meldingsregels** > **Nieuwe regel maken**
 
-    In stap&2; van de wizard Meldingsregel maken selecteert u de apparaatgroepen waarop de regel betrekking heeft. De stap voor het selecteren van apparaatgroepen wordt uit de Intune-console verwijderd.
+    In stap 2 van de wizard Meldingsregel maken selecteert u de apparaatgroepen waarop de regel betrekking heeft. De stap voor het selecteren van apparaatgroepen wordt uit de Intune-console verwijderd.
 
     De voorlopige tijdlijn voor deze wijziging is als volgt:
     - In juni 2016 krijgen nieuwe tenants stap 2 van de wizard Meldingsregel maken niet meer te zien. Voor de huidige tenants blijft de situatie ongewijzigd.
@@ -216,9 +217,4 @@ Voordat deze statussen werden toegevoegd, raakten gebruikers in de war als de in
 >[!div class="step-by-step"]
 
 >[&larr; **Wat is er nieuw in Intune?**](whats-new-in-microsoft-intune.md)    
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
