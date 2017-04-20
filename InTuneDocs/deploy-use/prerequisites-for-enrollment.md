@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Stel het beheer in voor de volgende platformen:
 - [iOS en Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows-pc's en -laptops](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile en Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile en Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows-pc's en -laptops](manage-windows-pcs-with-microsoft-intune.md) (Intune-clientsoftware)
 
 U kunt ook de [inschrijving van bedrijfsapparaten](manage-corporate-owned-devices.md) inschakelen.
 
@@ -170,7 +170,7 @@ Als u van co-existentie gebruikmaakt, moet u zowel de Intune- als Office 365-con
 Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om uw MDM-instantie opnieuw in te stellen.
 
 - Alle apparaten met de Intune-beheerconsole buiten gebruik stellen. Probeer niet een apparaat buiten gebruik te stellen vanaf het apparaat zelf. 
-- Verwijder de Service To Service Connector (onder **Beheer** > **Beheer van mobiele apparaten** > **Microsoft Exchange**), of schakel de Exchange-Connector uit als u die hebt ingesteld. 
+- Verwijder de Service To Service Connector (onder **Beheer** > **Beheer van mobiele apparaten** > **Microsoft Exchange**), of schakel de Exchange-Connector uit als u die hebt ingesteld.
 - Verwijder de rol van Apparaatinschrijvingsmanager uit **Beheer** > **Apparaatinschrijvingsmanager**.
 - Schakel de apparaatgroeptoewijzing uit in **Beheer** > **Beheer van mobiele apparaten** > **Apparaatgroeptoewijzing**.
 - Verwijder sideloading keys uit **Beheer** > **Beheer van mobiele apparaten** > **Windows** > **Side Loading Keys**.
@@ -187,7 +187,7 @@ Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om u
 - Verwijder alle gebruikers uit de Intune-gebruikersgroep. Wijs het Intune-abonnement naar een lege gebruikersverzameling of verwijder alle gebruikers uit de doelverzameling.  Bevestig in het bestand CloudUserSync.log dat gebruikers zijn verwijderd. 
 - Schakel het selectievakje uit van het iOS-platform om het APNs-certificaat op te schonen.
 - Verwijder alle gepubliceerde toepassingen voor MDM-apparaten.
-- Verwijder alle beleidsregels voor MDM-apparaten. 
+- Verwijder alle beleidsregels voor MDM-apparaten.
 - Verwijder de Windows Intune Connector uit de Configuration Manager-console (alleen van toepassing op R2 SP1 of lager).
 -Verwijder het Intune-abonnement door met de rechtermuisknop op het abonnement te klikken en **Verwijderen** te selecteren.
 - Start de SMS Executive-service opnieuw.
@@ -196,18 +196,18 @@ Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om u
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Stel de MDM-instantie opnieuw in van Office 365 naar Configuration Manager
 
 1. Navigeer naar [https://protection.office.com](https://protection.office.com).
-2. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeheer**. 
+2. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeheer**.
 3. Stel alle apparaten buiten gebruik door **Selectief wissen** te kiezen. Probeer niet een apparaat buiten gebruik te stellen vanaf het apparaat zelf. Als selectief wissen is uitgeschakeld, is er geen verdere actie vereist.
-4. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeveiligingsbeleid**. 
+4. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeveiligingsbeleid**.
 5. Selecteer **Verwijderen** voor alle bestaande beleidsregels. Als de beleidsregels in behandeling zijn, is geen verdere actie vereist.
 
 >[!NOTE]
->Het iOS APsN-certificaat kan niet worden verwijderd en blijft gekoppeld aan het account. 
+>Het iOS APsN-certificaat kan niet worden verwijderd en blijft gekoppeld aan het account.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Volgende stappen voor het opnieuw instellen van de MDM-instantie
 
-Als Microsoft Support de items in de relevante controlelijst heeft geverifieerd, kan het opnieuw instellen van de MDM-instantie maximaal drie werkdagen duren, maar gebeurt het meestal binnen een dag. 
+Als Microsoft Support de items in de relevante controlelijst heeft geverifieerd, kan het opnieuw instellen van de MDM-instantie maximaal drie werkdagen duren, maar gebeurt het meestal binnen een dag.
 
 >[!IMPORTANT]
->Probeer uw abonnement niet te configureren voordat Microsoft Support bevestigt dat het opnieuw instellen is voltooid! Voortijdig configuratie kan leiden tot beschadiging en/of invloed hebben op uw mogelijkheid om de Intune-service te gebruiken. 
+>Probeer uw abonnement niet te configureren voordat Microsoft Support bevestigt dat het opnieuw instellen is voltooid! Voortijdig configuratie kan leiden tot beschadiging en/of invloed hebben op uw mogelijkheid om de Intune-service te gebruiken.
 

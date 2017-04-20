@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -43,7 +44,7 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX 
     - **Beschrijving van instelling.** Voer eventueel een beschrijving in, zoals 'Lijst met apps die zijn geblokkeerd'.
     -     **Gegevenstype.** Kies **Tekenreeks** in de vervolgkeuzelijst.
     -     **OMA-URI.** Voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** in.
-    -     **Waarde.** Voer een lijst in van de app-pakketnamen die u wilt toestaan. U kunt **; : ,** of **|** gebruiken als scheidingsteken. (Voorbeeld: pakket1; pakket2;)
+    -     **Waarde.** Voer een lijst in van de app-pakketnamen die u wilt blokkeren. U kunt **; : ,** of **|** gebruiken als scheidingsteken. (Voorbeeld: pakket1; pakket2;)
 
     Voor een lijst met apps die gebruikers mogen installeren vanuit de Google Play Store, terwijl alle andere apps worden uitgesloten:
 
@@ -72,9 +73,4 @@ Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over d
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen voor het Android- en Samsung KNOX-beleid in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

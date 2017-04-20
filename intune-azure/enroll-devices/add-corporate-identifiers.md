@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Als IT-beheerder kunt u een bestand met door komma's gescheiden waarden (CSV) maken en importeren, waarin de IMEI-nummers (International Mobile Equipment Identity) worden vermeld waarmee apparaten in bedrijfseigendom worden geïdentificeerd. Voor elk IMEI-nummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
+
+Wanneer u serienummers uploadt voor iOS-apparaten in bedrijfseigendom, moeten die worden gekoppeld aan een inschrijvingsprofiel voor bedrijven. Vervolgens moeten de apparaten worden ingeschreven met het Apple Device Enrollment Program (DEP) of de Apple Configurator voordat ze als bedrijfseigendom worden weergegeven. 
 
 ## <a name="create-a-csv-file"></a>Een CSV-bestand maken
 Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Voeg de IMEI-id in de linkerkolom toe en de details in de rechterkolom. De details mogen maximaal 128 tekens lang zijn. De huidige limiet is 500 rijen per CSV-bestand.

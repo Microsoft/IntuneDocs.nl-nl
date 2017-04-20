@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -57,9 +58,10 @@ Zie [Beveiligingsbeleid voor apps configureren en implementeren in de Microsoft 
 ##  <a name="supported-platforms"></a>Ondersteunde platforms
 - iOS 8.1 of hoger
 - Android 4 of hoger
+- Windows 10
 
 >[!NOTE]
->Windows-apparaten ondersteunen dit beveiligingsbeleid voor apps niet. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
+>Met ingang van versie 1703 kan beveiligingsbeleid voor apps worden gedefinieerd voor Windows 10-apparaten in de MAM zonder inschrijvingsscenario. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 
 ##  <a name="supported-apps"></a>Ondersteunde apps
 * **Microsoft-apps:** bij deze apps is de Intune App SDK al ingebouwd. Deze apps hoeven daarom niet verder te worden verwerkt voordat u het beveiligingsbeleid voor apps toepast.
@@ -106,9 +108,4 @@ Algemene beheerders hebben toegang tot de [Azure Portal](https://portal.azure.co
 
 ## <a name="next-steps"></a>Volgende stappen
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

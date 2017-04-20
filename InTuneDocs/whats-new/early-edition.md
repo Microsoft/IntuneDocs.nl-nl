@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 3b355d43d4be05535f256d88a8648c2e67035882
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
+ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
+ms.lasthandoff: 04/06/2017
 
 
 ---
 
 
-# <a name="the-early-edition-for-microsoft-intune---march-2017"></a>De vroege editie voor Microsoft Intune - maart 2017
+# <a name="the-early-edition-for-microsoft-intune---april-2017"></a>De vroege editie voor Microsoft Intune - april 2017
 
 De **Vroege editie** bevat een lijst met functies die worden toegevoegd aan toekomstige releases van Microsoft Intune. Deze informatie wordt in zeer beperkte mate onder geheimhoudingsverklaring verstrekt en kan worden gewijzigd. Sommige functies die hier worden vermeld, zullen mogelijk niet beschikbaar zijn op de sluitingsdatum en worden mogelijk beschikbaar gesteld in een latere release. Andere functies worden getest in een proefversie, zodat we zeker weten dat ze in gebruik kunnen worden genomen. Neem bij vragen contact op met uw contactpersoon voor Intune/projectmanagement.
 
@@ -35,37 +35,59 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 
 ## <a name="new-capabilities"></a>Nieuwe mogelijkheden
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nieuwe gebruikerservaring voor de bedrijfsportal-app voor Android <!--621622-->
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Verbeterde app-installatiestatus voor de Windows 10-bedrijfsportal-app <!--676495-->
 
-Voor de bedrijfsportal-app voor Android wordt een update uitgevoerd voor de gebruikersinterface om deze er moderner te laten uitzien en om een betere gebruikerservaring te bieden. De belangrijkste updates zijn:
+De Windows 10-bedrijfsportal-app toont nu een voortgangsbalk voor de installatie van alle moderne apps, wanneer de installatie is gestart vanuit de bedrijfsportal.
 
-- Kleuren: de tabbladkoppen van de bedrijfsportal-app hebben de kleuren van de door de IT opgegeven huisstijl.
-- Apps: op het tabblad **Apps** zijn de knoppen **Aanbevolen apps** en **Alle apps** bijgewerkt.
-- Zoeken: op het tabblad **Apps** is de knop **Zoeken** nu een zwevende actieknop.
-- Navigeren door apps: in de weergave **Alle apps** wordt tabbladen getoond voor de opties **Aanbevolen**, **Alle** en **Categorieën** om de navigatie te vereenvoudigen.
-- Ondersteuning: de tabbladen **Mijn apparaten** en **Contact opnemen met IT** zijn bijgewerkt om de leesbaarheid te vergroten.
+### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Verbeterde statusberichten in de bedrijfsportal-app voor iOS <!--744866-->
 
-Ga naar de [app UI updates page](whats-new-in-intune-app-ui.md] voor meer informatie over deze wijzigingen.
+Er worden nieuwe, specifiekere foutberichten weergegeven in de bedrijfsportal-app voor iOS, die meer toegankelijke informatie bieden over wat er gebeurt op apparaten. Deze foutsituaties maakten eerder deel uit van een algemeen foutbericht met de titel “Bedrijfsportal is tijdelijk niet beschikbaar”. Als een gebruiker nu de bedrijfsportal-app in iOS opent zonder internetverbinding, wordt er een permanente statusbalk weergegeven op de startpagina met de tekst “Geen internetverbinding”.
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Ondertekeningsscript voor de Windows 10-bedrijfsportal <!--941642-->
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps beschikbaar voor Managed Browser <!--822308, 822303-->
 
-Voor klanten die de Windows 10-bedrijfsportal-app moeten downloaden en sideloaden, kunt u nu een script gebruiken om het proces voor het ondertekenen van apps voor uw organisatie te vereenvoudigen en stroomlijnen.   Raadpleeg [Microsoft Intune Signing Script](https://aka.ms/win10cpscript) (Ondertekeningsscript voor Microsoft Intune) voor de Windows 10-bedrijfsportal in de TechNet-galerie voor het downloaden van het script en meer informatie over het gebruik ervan. Raadpleeg [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (Uw Windows 10-bedrijfsportal-app bijwerken) in het Intune Support-teamweblog voor meer informatie over deze mededeling. 
+Betere ondersteuning voor Microsoft MyApps in de Managed Browser. Gebruikers van Managed Browser die niet hoeven te worden beheerd gaan direct naar de MyApps-service, waar ze toegang hebben tot hun door de beheerder beschikbaar gestelde SaaS-apps. Gebruikers die wel moeten worden beheerd door Intune blijven MyApps gebruiken via de ingebouwde bladwijzer in Managed Browser.
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nieuwe pictogrammen voor de Managed Browser en bedrijfsportal <!--918433, 918431-->
+
+Zowel de Android- als iOS-versie van de Managed Browser heeft een nieuw pictogram. Dit nieuwe pictogram bevat het bijgewerkte Intune-logo, om het consistent te maken met de andere apps in Enterprise Mobility + Security (EM+S).
+
+De pictogrammen voor de Android-, iOS- en Windows-versies van de app in de bedrijfsportal worden ook vernieuwd, voor meer consistentie met de andere apps in EM+S. Deze pictogrammen worden in de periode van april tot eind mei geleidelijk in gebruik genomen op de verschillende platformen.
+
+### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Ondersteuning voor eenmalige aanmelding in bedrijfsportal-app voor iOS voor Outlook voor iOS <!--834012-->
+
+Gebruikers hoeven zich niet langer aan te melden bij de Outlook-app als ze op hetzelfde apparaat en met hetzelfde account zijn aangemeld bij de bedrijfsportal-app voor iOS. Wanneer gebruikers de Outlook-app starten, kunnen ze hun account selecteren en worden ze automatisch aangemeld. In de toekomst wordt deze functionaliteit ook toegevoegd aan andere Microsoft-apps.
+
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Voortgangsindicator voor aanmelden bij Android-bedrijfsportal <!--953374-->
+
+De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het aanmelden wanneer de gebruiker de app opent of hervat. De indicator geeft de verschillende statussen weer, beginnend bij ‘Verbinden...’, gevolgd door ‘Aanmelden...’ en ‘Beveiligingseisen controleren...’, voordat de gebruiker de app kan gebruiken.
+
 
 ## <a name="notices"></a>Mededelingen
-
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Verbeterde ondersteuning voor Android-gebruikers in China <!--720444-->
-
-Vanwege de afwezigheid van de Google Play Store in China kunnen Android-apparaten apps alleen verkrijgen via Chinese-marktplaatsen. De bedrijfsportal ondersteunt deze werkstroom door Android-gebruikers in China om te leiden zodat ze de bedrijfsportal- en Outlook-apps kunnen downloaden in lokale App Stores. Dit verbetert de gebruikerservaring wanneer beleidsregels voor voorwaardelijke toegang zijn ingeschakeld, zowel voor Mobile Device Management als voor Mobile Application Management. De bedrijfsportal- en Outlook-apps voor Android zijn beschikbaar via de volgende Chinese App Stores:
-
-- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
-- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple vereist updates voor Application Transport Security <!--748318-->
 
 Apple heeft aangekondigd dat vanaf het voorjaar van 2017 specifieke vereisten gaan gelden voor Application Transport Security (ATS). ATS wordt gebruikt om betere beveiliging af te dwingen voor alle app-communicatie die verloopt via HTTPS. Deze wijziging heeft gevolgen voor Intune-klanten die de bedrijfsportal-app gebruiken op iOS. Bekijk ons [Intune-ondersteuningsblog](https://aka.ms/compportalats) voor meer informatie.
+
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Rechtstreekse toegang tot Apple-scenario's voor inschrijving <!--951869-->
+
+Voor Intune-accounts die na januari 2017 zijn gemaakt, heeft Intune rechtstreekse toegang ingeschakeld tot Apple-inschrijvingsscenario's. Hiervoor is de werkstroom voor het inschrijven van apparaten gebruikt in de Azure Preview Portal. Voorheen was de Apple-inschrijvingspreview alleen toegankelijk via koppelingen in de klassieke Intune-portal. Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de functies in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd, maar de informatie wordt zo snel mogelijk beschikbaar gemaakt. Het wordt aangeraden om een testaccount te maken om de nieuwe ervaring te testen, als u met uw bestaande account geen toegang hebt tot de preview.
+
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Binnenkort in Appx in Intune op Azure <!-- 1000270 -->
+
+Als onderdeel van de migratie naar Intune op Azure, worden de volgende wijzigingen aangebracht in appx:
+
+1. Er wordt een nieuw type appx-app toegevoegd in de klassieke Intune-console, die alleen kan worden geïmplementeerd op bij MDM ingeschreven apparaten.
+2. Het bestaande appx-app-type wordt alleen nog gebruikt voor pc’s die worden beheerd via de Intune-pc-agent.
+3. Alle bestaande appx’s worden geconverteerd naar MDM-appx’s bij de migratie.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+
+Dit heeft geen gevolgen voor uw bestaande implementaties op apparaten die worden beheerd door de Intune-pc-agent. Na de migratie kunt u die gemigreerde appx’s echter niet implementeren op nieuwe apparaten die worden beheerd door de Intune-pc-agent en waarop de appx’s eerder niet waren gericht.
+
+#### <a name="what-action-do-i-need-to-take"></a>Wat moet ik doen?
+
+Na de migratie moet u de appx opnieuw uploaden als een pc-appx, als u deze wilt implementeren op nieuwe pc’s. Zie [Appx changes in Intune on Azure](https://aka.ms/appxchange) (Appx-wijzigingen in Intune op Azure) op het blog van het Intune-ondersteuningsteam voor meer informatie.  
+
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Openbare preview-versie van de nieuwe Intune-ervaring voor beheerders op Azure <!--736542-->
 
@@ -75,38 +97,107 @@ Vanaf deze maand zal de openbare preview-versie van de nieuwe beheerderservaring
 
 De beheerderservaring in de Azure-portal zal gebruikmaken van de eerder aangekondigde nieuwe functionaliteit voor groepen en targeting. Wanneer uw bestaande tenant wordt gemigreerd naar de nieuwe ervaring voor groepen, vindt ook de migratie plaats naar de preview-versie van de nieuwe beheerderservaring. Als u in de tussentijd de nieuwe functionaliteit wilt testen of bekijken totdat de migratie van uw tenant is voltooid, kunt u zich aanmelden voor een nieuw Intune-evaluatieaccount of de [nieuwe documentatie](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) raadplegen.
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Niet-beheerde apparaten hebben toegang tot toegewezen apps <!--664691-->
+### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Ondersteuning voor beheerde configuratieopties voor Android-apps <!-- 621621 -->
 
-Als onderdeel van de ontwerpwijzigingen op de bedrijfsportalwebsite kunnen iOS- en Android-gebruikers op hun niet-beheerde apparaten apps installeren die aan hen zijn toegewezen als 'beschikbaar zonder inschrijving'. Gebruikers kunnen zich met behulp van hun Intune-referenties aanmelden bij de bedrijfsportalwebsite en de lijst met aan hen toegewezen apps bekijken. De app-pakketten van de 'beschikbaar zonder inschrijving'-apps kunnen worden gedownload via de bedrijfsportalwebsite. Deze wijziging is niet van toepassing op apps die pas na inschrijving kunnen worden geïnstalleerd, omdat gebruikers wordt gevraagd hun apparaat in te schrijven als zij deze apps willen installeren.
+Android-apps in de Play Store die beheerde configuratieopties ondersteunen kunnen worden geconfigureerd door Intune.  Dankzij deze functie kan de IT-afdeling een lijst weergeven met de configuratiewaarden die door een app worden ondersteund, en kunnen die waarden worden geconfigureerd in een begeleide, eersteklas gebruikersinterface.
 
-### <a name="improvements-to-device-actions-report---677150--"></a>Verbeteringen aan het rapport Apparaatacties <!--677150-->
+### <a name="remote-assistance-for-android-devices----675418---"></a>Hulp op afstand voor Android-apparaten <!-- 675418 -->
 
-Er zijn verbeteringen aangebracht aan het rapport Apparaatacties voor betere prestaties. Bovendien kunt u het rapport nu filteren op basis van status. U kunt het rapport bijvoorbeeld filteren zodat alleen de apparaatacties worden weergegeven die zijn voltooid.
+Intune werkt met de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)-software zodat u uw gebruikers met Android-apparaten hulp op afstand kunt bieden.
 
-### <a name="actions-for-non-compliance---730266--"></a>Acties voor niet-naleving <!--730266-->
+### <a name="new-android-policy-for-complex-pins----722069---"></a>Nieuw Android-beleid voor complexe pincodes <!-- 722069 -->
 
-**Acties voor niet-naleving** is een nieuwe functie van nalevingsbeleid waarmee u actie kunt ondernemen voor apparaten die niet meer compatibel zijn. U kunt een of meer acties opgeven, samen met de tijdsduur waarbinnen deze acties moeten plaatsvinden. U kunt bijvoorbeeld gebruikers van niet-compatibele apparaten een melding via e-mail sturen onmiddellijk nadat de compatibiliteit van de apparaten is opgeheven, of u kunt de toegang van niet-compatibele apparaten tot bedrijfsbronnen blokkeren na een respijtperiode van 3 dagen via voorwaardelijke toegang.
+U kunt het verplichte wachtwoordtype instellen op Numeriek complex in een Android-apparaatprofiel voor apparaten met Android 5.0 en hoger.  Met deze instelling voorkomt u dat gebruikers een pincode kiezen die herhalende of opeenvolgende cijfers bevat, zoals 1111 of 1234.
 
-### <a name="custom-app-categories---748805--"></a>Aangepaste app-categorieën <!--748805-->
+### <a name="additional-support-for-android-for-work-devices"></a>Aanvullende ondersteuning voor Android for Work-apparaten
 
-U kunt nu categorieën maken, bewerken en toewijzen voor apps die u aan Intune toevoegt. Categorieën kunnen momenteel alleen worden opgegeven in het Engels.
-Zie [Een app toevoegen aan Intune](/intune-azure/manage-apps/add-apps).
+- **Wachtwoord- en werkprofieleninstellingen beheren** <!-- 612808 -->
 
-### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>LOB-apps toewijzen aan gebruikers met niet-ingeschreven apparaten <!--748823-->
+  Er is een nieuw Android for Work-apparaatbeperkingsbeleid toegevoegd, waarmee u wachtwoord- en werkprofielinstellingen kunt beheren op de Android for Work-apparaten die u beheert.
 
-U kunt nu Line-Of-Business-apps uit de store toewijzen aan gebruikers, ongeacht of hun apparaten zijn ingeschreven bij Intune. Als een apparaat van een gebruiker niet is geregistreerd bij Intune, moet deze daarvoor de bedrijfsportalwebsite gebruiken en niet de bedrijfsportal-app.
+- **Gegevens delen tussen werkprofielen en persoonlijke profielen toestaan** <!-- 1045102 -->
 
-### <a name="new-compliance-reports---846671--"></a>Nieuwe nalevingsrapporten <!--846671-->
+  De instelling **Gegevens delen tussen werkprofielen en persoonlijke profielen** in het Android for Work-apparaatbeperkingsprofiel is bijgewerkt met nieuwe opties, zodat u het delen van gegevens tussen werkprofielen en persoonlijke profielen kunt configureren.
 
-U hebt nu nalevingsrapporten die u informatie bieden over de naleving van apparaten in uw bedrijf. U kunt dan ook snel aan naleving gerelateerde problemen oplossen waar uw gebruikers mee te maken krijgen. U kunt informatie bekijken over
+- **Kopiëren en plakken tussen werkprofielen en persoonlijke profielen beperken** <!-- 1046094 -->
 
-- De algemene nalevingsstatus van apparaten
-- De nalevingsstatus voor een specifieke instelling
-- De nalevingsstatus voor een specifiek beleid
+  Als u Android for Work-apparaten beheert met Intune, zijn kopiëren en plakken tussen werk-apps en persoonlijke apps toegestaan. Er is nu een aangepast apparaatprofiel toegevoegd voor Android for Work-apparaten, waarmee u kunt instellen of kopiëren en plakken tussen werk-apps en persoonlijke apps zijn toegestaan.
 
-U kunt deze rapporten ook gebruiken om in te zoomen op een specifiek appraat, om op die manier te bekijken welke instellingen en beleidsregels van invloed zijn op dat apparaat.
+### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>LOB-apps toewijzen aan iOS- en Android-apparaten <!-- 1057568 -->
 
-### <a name="additional-windows-10-upgrade-paths---903672--"></a>Aanvullende upgradepaden voor Windows 10 <!--903672-->
+U kunt line-of-business-apps voor iOS (IPA-bestanden) en Android (APK-bestanden) toewijzen aan gebruikers of apparaten.
+
+###  <a name="new-policies-for-ios-devices----723774-723815-723826-723830-723832---"></a>Nieuw beleid voor iOS-apparaten <!-- 723774, 723815, 723826, 723830, 723832 -->
+
+- **Apps op beginscherm**: u kunt een apparaatbeleid gebruiken om te bepalen welke apps gebruikers zien op het beginscherm van hun iOS-apparaat. Dit beleid wijzigt de indeling van het beginscherm, maar implementeert geen apps die u hebt opgegeven maar die niet zijn geïnstalleerd.
+
+- **Verbindingen met AirPrint-apparaten**: u kunt een Intune-apparaatbeleid gebruiken om te bepalen met welke AirPrint-apparaten (netwerkprinters) de eindgebruikers van het iOS-apparaat verbinding kunnen maken.
+
+- **Verbindingen met AirPlay-apparaten**: u kunt een Intune-apparaatbeleid gebruiken om te bepalen met welke AirPlay-apparaten (zoals Apple TV) de eindgebruikers van het iOS-apparaat verbinding kunnen maken.
+
+- **Aangepast bericht vergrendelingsscherm**: u kunt een aangepast bericht configureren dat de gebruikers zien op het vergrendelingsscherm van hun iOS-apparaat. Dit bericht vervangt het standaardbericht op het vergrendelingsscherm.
+
+- **Webinhoudsfilter**: u kunt bepalen welke websites de gebruikers van iOS-apparaten kunnen bezoeken met een van de volgende methoden:
+
+  - Toegestane en geblokkeerde URL’s toevoegen met het ingebouwde webinhoudsfilter van Apple.
+  - Alleen opgegeven websites toestaan voor de Safari-browser. Voor elke website die u opgeeft wordt een bladwijzer gemaakt in Safari.
+
+
+### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>Pushmeldingen voor iOS-apps beperken <!-- 723767 -->
+
+In een Intune-apparaatbeperkingsprofiel kunt u de volgende meldingsinstellingen voor iOS-apparaten configureren:
+
+- Meldingen voor een opgegeven app volledig in- of uitschakelen.
+- Meldingen voor een opgegeven app in- of uitschakelen in het berichtencentrum.
+- Het type waarschuwing opgeven: **Geen**, **Banner** of **Modale waarschuwing**.
+- Opgeven of badges zijn toegestaan voor deze app.
+- Opgeven of meldingsgeluiden zijn toegestaan.
+
+### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>iOS-apps configureren voor autonome uitvoering in één-app-modus <!-- 737837 -->
+
+U kunt een Intune-apparaatprofiel gebruiken om iOS-apparaten te configureren voor het uitvoeren van opgegeven apps in de autonome één-app-modus. Wanneer deze modus is geconfigureerd en de app wordt uitgevoerd, wordt het apparaat vergrendeld zodat alleen de betreffende app kan worden uitgevoerd. U kunt bijvoorbeeld een app configureren die de gebruikers een test laat uitvoeren op het apparaat. Wanneer de acties van de app zijn voltooid of u het beleid verwijdert, keert het apparaat terug naar de normale staat.
+
+### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>Vertrouwde domeinen configureren voor e-mail en browsen op het web op iOS-apparaten <!-- 723765 -->
+
+In een iOS-apparaatbeperkingsprofiel kunt u de volgende domeininstellingen configureren:
+
+- **Niet-gemarkeerde e-maildomeinen**: e-mailberichten die de gebruiker verzendt of ontvangt die niet overeenkomen met de domeinen die u hier opgeeft, worden gemarkeerd als niet-vertrouwd.
+
+- **Beheerde webdomeinen**: documenten die zijn gedownload via de URL's die u hier opgeeft, worden als beheerd beschouwd (alleen in Safari).  
+
+- **Domeinen voor automatisch invullen van wachtwoorden in Safari**: gebruikers kunnen alleen wachtwoorden opslaan in Safari voor de URL’s die overeenkomen met de patronen die u hier opgeeft. Als u deze instelling wilt gebruiken, moet het apparaat in de supervisiemodus staan en niet zijn geconfigureerd voor meerdere gebruikers. (iOS 9.3+)
+
+
+### <a name="vpp-apps-available-in-ios-company-portal----748782---"></a>VPP-apps beschikbaar in de iOS-bedrijfsportal <!-- 748782 -->
+
+U kunt iOS-apps die zijn gekocht via het volume-aankoopprogramma toewijzen als **Beschikbaar** voor installatie door eindgebruikers. Eindgebruikers hebben een Apple Store-account nodig om de app te installeren.
+
+### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>eBooks synchroniseren vanuit Apple VPP Store <!-- 800878 -->
+
+U kunt eBooks die u hebt aangeschaft via het volume-aankoopprogramma van Apple synchroniseren met Intune en toewijzen aan gebruikers.
+
+### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Gedeelde ploegendienstapparaten voor Samsung KNOX Standard-apparaten <!-- 773753 -->
+
+U kunt een Samsung KNOX Standard-apparaat configureren als een gedeeld ploegendienstapparaat in de Intune-portal. Wanneer het apparaat in de gedeelde modus staat, zijn de apps, beleidsregels en e-mail op het apparaat gekoppeld aan de identiteit van de gebruiker die zich aanmeldt bij de bedrijfsportal.
+Gebruikers kunnen zich aanmelden bij de bedrijfsportal met hun Azure Active Directory-referenties, waarna hun apps, beleidsregels en e-mailinstellingen automatisch worden toegepast op het apparaat.
+
+### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Beheer van meerdere gebruikers voor Samsung KNOX Standard-apparaten <!-- 971988 -->
+
+Apparaten waarop Samsung KNOX Standard wordt uitgevoerd, bieden nu ondersteuning voor beheer van meerdere gebruikers in Intune. Dit betekent dat eindgebruikers zich kunnen aan- en afmelden bij het apparaat met hun Azure Active Directory-referenties, en dat het apparaat centraal wordt beheerd, ongeacht of het wordt gebruikt of niet.  Wanneer eindgebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.
+
+### <a name="additional-windows-device-restriction-settings----818566---"></a>Aanvullende Windows 10-apparaatbeperkingsinstellingen <!-- 818566 -->
+
+Er is ondersteuning toegevoegd voor aanvullende Windows 10-apparaatbeperkingsinstellingen, zoals instellingen voor de ondersteuning voor de Edge-browser, het aanpassen van het vergrendelingsscherm, het aanpassen van het startmenu, het instellen van de zoekfunctie van Windows-spotlight als achtergrondafbeelding, en proxy-instellingen.
+
+### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Ondersteuning voor meerdere gebruikers van Windows 10-makersupdate <!-- 822547 -->
+
+Er is ondersteuning toegevoegd voor het beheer van meerdere gebruikers voor apparaten waarop de Windows 10-makersupdate wordt uitgevoerd en lid zijn van een Azure Active Directory-domein. Dit betekent dat wanneer verschillende gebruikers zich aanmelden op het apparaat met hun AAD-referenties, ze de apps en beleidsregels ontvangen die zijn toegewezen aan hun gebruikersnaam.
+
+### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Fresh Start voor Windows 10-pc’s<!-- 1004830 -->
+
+In deze release is een nieuwe Fresh Start-apparaatactie toegevoegd voor Windows 10-pc’s.  Wanneer u deze actie uitvoert, worden alle apps die op de pc zijn geïnstalleerd verwijderd en wordt de pc automatisch bijgewerkt naar de laatste Windows-versie. Hiermee verwijdert u vooraf geïnstalleerde OEM-apps die vaak op nieuwe pc’s staan. U kunt configureren of de gebruikersgegevens bewaard blijven wanneer u deze actie uitvoert.
+
+### <a name="additional-windows-10-upgrade-paths----903672---"></a>Aanvullende upgradepaden voor Windows 10 <!-- 903672 -->
 
 U kunt nu een versie-upgradebeleid maken om apparaten te upgraden naar de volgende aanvullende Windows 10-versies:
 
@@ -115,11 +206,25 @@ U kunt nu een versie-upgradebeleid maken om apparaten te upgraden naar de volgen
 - Windows 10 Professional Education
 - Windows 10 Professional Education N
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10-apparaten bulksgewijs inschrijven <!-- 747607 -->
 
-### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Rechtstreekse toegang tot Apple-scenario's voor inschrijving <!--951869-->
+U kunt grote aantallen Windows 10-apparaten lid maken van Azure Active Directory en Intune met automatiseringshulpprogramma’s. Als u automatische MDM-inschrijving voor uw Azure AD-tenant wilt inschakelen, maakt u een inrichtingspakket waarmee het apparaat lid wordt van uw Azure AD-tenant met Windows Configuration Designer. Dit pakket past u toe op de apparaten in bedrijfseigendom die u bulksgewijs wilt inschrijven en beheren.  Zodra het pakket is toegepast maken de apparaten verbinding met Azure AD, worden ze ingeschreven in Intune en zijn ze klaar voor aanmelding door uw Azure AD-gebruikers.
 
-Voor Intune-accounts die na januari 2017 zijn gemaakt, heeft Intune rechtstreekse toegang ingeschakeld tot Apple-inschrijvingsscenario's. Hiervoor is de werkstroom voor het inschrijven van apparaten gebruikt in de Azure Preview Portal. Voorheen was de Apple-inschrijvingspreview alleen toegankelijk via koppelingen in de klassieke Intune-portal. Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de functies in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd, maar de informatie wordt zo snel mogelijk beschikbaar gemaakt. Het wordt aangeraden om een testaccount te maken om de nieuwe ervaring te testen, als u met uw bestaande account geen toegang hebt tot de preview.
+### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Nieuwe MAM-instellingen voor pincode en beheerde opslaglocaties <!-- 58112, 736644 -->
 
-### <a name="see-also"></a>Zie tevens
+Er zijn twee nieuwe app-instellingen beschikbaar voor het beheren van mobiele toepassingen:
+
+- **App-pincode uitschakelen wanneer apparaatpincode wordt beheerd**: deze instelling detecteert of er een apparaatpincode aanwezig is op het ingeschreven apparaat. Als dat het geval is, wordt de app-pincode die wordt geactiveerd door het app-beveiligingsbeleid omzeild. Deze instelling zorgt ervoor dat gebruikers minder vaak een pincode hoeven in te voeren wanneer zij een beheerde mobiele toepassing openen op een ingeschreven apparaat. Deze functie is beschikbaar op Android en iOS.
+
+- **Selecteer naar welke opslagservices bedrijfsgegevens kunnen worden opgeslagen**: hiermee kunt u opgeven welke opslaglocaties mogen worden gebruikt voor het opslaan van bedrijfsgegevens. Gebruikers kunnen alleen opslaan in de geselecteerde opslaglocatieservices, wat inhoudt dat de opslaglocatieservices die niet worden vermeld, zijn geblokkeerd.
+
+  Lijst met ondersteunde opslaglocatieservices:
+
+  - OneDrive
+  - Zakelijke SharePoint Online
+  - Lokale opslag
+
+
+### <a name="see-also"></a>Zie ook
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new-in-microsoft-intune.md) voor meer informatie over recente ontwikkelingen.
 
