@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
-ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -70,11 +70,11 @@ Lees de [definitie van een ondersteuningsincident](#definition-of-a-support-inci
 
 1.  Meld u aan bij het [Office 365-beheercentrum](https://portal.office.com) met de referenties van uw Intune.
 
-    Als u een Premier Support-klanten bent, moet u in plaats daarvan een Intune-ondersteuningsticket openen op de [Premier Support-pagina](https://support.microsoft.com/en-us/premier/contacts).
+    Als u een Premier Support-klanten bent, moet u in plaats daarvan een Intune-ondersteuningsticket openen op de [Premier Support-pagina](https://support.microsoft.com/premier/contacts).
 
     >[!NOTE]
     >
-    >Premier Support-klanten moeten een Intune-ondersteuningsticket openen op de [Premier Support-pagina](https://support.microsoft.com/en-us/premier/contacts).
+    >Premier Support-klanten moeten een Intune-ondersteuningsticket openen op de [Premier Support-pagina](https://support.microsoft.com/premier/contacts).
 
 2.  Kies de tegel **Beheer**.
 3.  Kies aan de linkerkant onder **Ondersteuning** de optie **Ondersteuning** om een ticket te openen.
@@ -136,7 +136,7 @@ Voor onze Professional-klanten geldt dat ze voor andere problemen binnen acht uu
 - Eén gebruiker gedeeltelijke onderbrekingen ondervindt, maar er een acceptabele tijdelijke oplossing voorhanden is.
 
 > [!NOTE]
-> **Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection neemt u contact op met uw partner of gaat u naar de [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/)- en [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx)-documentatie voor uitgebreide zelfhulpinformatie. Daarnaast kunt online of telefonisch een ondersteuningsaanvraag openen.
+> **Als u gebruikmaakt van Microsoft System Center Configuration Manager** of **Microsoft System Center Endpoint Protection:** voor technische ondersteuning bij Configuration Manager of Endpoint Protection neemt u contact op met uw partner of gaat u naar de [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/)- en [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx)-documentatie voor uitgebreide zelfhulpinformatie. Daarnaast kunt online of telefonisch een ondersteuningsaanvraag openen.
 >
 > Technische ondersteuning voor System Center Configuration Manager of System Center Endpoint Protection moet worden betaald of wordt bijgeschreven op uw bestaande licentie- of Premier Support-overeenkomsten.
 
