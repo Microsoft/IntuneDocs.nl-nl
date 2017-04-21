@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -55,12 +55,12 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
 
 1. Meld u aan bij de [Azure AD-beheerportal](https://manage.windowsazure.com) en selecteer uw abonnement. 
   ![schermafbeelding van de Azure AD-pagina met de naam van de tenant](../media/mtp/aad_tenant_name.png)
-2. Wanneer u de naam van uw abonnement kiest, bevat de resulterende URL de abonnements-id.  Als u problemen hebt met het vinden van uw abonnements-id, kunt u dit [artikel van Microsoft Ondersteuning](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) tips lezen over het vinden van uw abonnements-id. 
+2. Wanneer u de naam van uw abonnement kiest, bevat de resulterende URL de abonnements-id.  Als u problemen hebt met het vinden van uw abonnements-id, kunt u dit [artikel van Microsoft Ondersteuning](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) tips lezen over het vinden van uw abonnements-id. 
 3. Zoek uw Azure AD-groeps-id op. De Lookout-console ondersteunt twee toegangsniveaus:  
   * **Volledige toegang:** de Azure AD-beheerder kan een groep maken met gebruikers die volledige toegang hebben en eventueel een groep maken voor gebruikers met beperkte toegang.  Alleen gebruikers in deze groepen kunnen zich aanmelden bij de **Lookout-console**.
   * **Beperkte toegang:** de gebruikers in deze groep hebben geen toegang tot verschillende configuratie- en inschrijvingsgerelateerde modules van de Lookout-console, en hebben alleen-lezentoegang tot de module **Beveiligingsbeleid** van de Lookout-console.  
 
-  Lees [dit artikel](https://personal.support.lookout.com/hc/en-us/articles/114094105653) op de Lookout-website voor meer informatie over de machtigingen.
+  Lees [dit artikel](https://personal.support.lookout.com/hc/articles/114094105653) op de Lookout-website voor meer informatie over de machtigingen.
 
   De **groepsobject-id** bevindt zich op de pagina **Eigenschappen** van de groep in de **Azure AD-beheerconsole**.
 
@@ -127,7 +127,7 @@ Als u e-mailwaarschuwingen voor bedreigingen wilt ontvangen, meldt u zich aan bi
 ![schermopname van de pagina Voorkeuren met het gebruikersaccount weergegeven](../media/mtp/lookout-mtp-email-notifications.png) Als u geen e-mailmeldingen meer wilt ontvangen, stelt u de meldingen in op **UIT** en slaat u de wijzigingen op.
 
 ### <a name="configure-threat-classification"></a>Bedreigingsclassificatie configureren
-Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de [bedreigingsclassificaties van Lookout](http://personal.support.lookout.com/hc/en-us/articles/114094130693) zijn standaardrisiconiveaus gekoppeld. Deze kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
+Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de [bedreigingsclassificaties van Lookout](http://personal.support.lookout.com/hc/articles/114094130693) zijn standaardrisiconiveaus gekoppeld. Deze kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
 
 ![schermopname van de beleidspagina met bedreiging en classificaties](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -137,5 +137,5 @@ Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in
 ## <a name="watching-enrollment"></a>Registratie bewaken
 Wanneer de instelling is voltooid, wordt Azure AD met Lookout Mobile Threat Defense gecontroleerd op apparaten die met de opgegeven inschrijvingsgroepen overeenkomen.  In de module Apparaten vindt u informatie over de apparaten die zijn geregistreerd.  De initiële status van apparaten wordt weergegeven als In behandeling.  De apparaatstatus wordt gewijzigd nadat de Lookout for Work-app op het apparaat is geïnstalleerd, geopend en geactiveerd.  Zie voor neer informatie over het pushen van de Lookout for Work-app naar het apparaat het onderwerp [Configure and deploy Lookout for Work apps](configure-and-deploy-lookout-for-work-apps.md) (Lookout for Work-apps configureren en implementeren).
 ## <a name="next-steps"></a>Volgende stappen
-[Lookout MTP-verbinding met Intune inschakelen](enable-lookout-mtp-connection-in-intune.md)
+[Lookout MTP-verbinding met Intune inschakelen](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

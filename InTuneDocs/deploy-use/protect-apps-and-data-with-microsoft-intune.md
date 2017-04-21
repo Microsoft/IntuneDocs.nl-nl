@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ U kunt uw bedrijfsgegevens beveiligen door MAM-beleid te gebruiken voor apparate
 
 Als u een app wilt koppelen aan MAM-beleid, moet de app gebruikmaken van de Microsoft Intune App Software Development Kit (SDK). U kunt ook de App Wrapping Tool gebruiken.
 
-De Intune App SDK is al ingebouwd in apps zoals de Microsoft Office-apps. U kunt de volledige lijst met ondersteunde apps bekijken in de [galerie met mobiele toepassingen van Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) op de pagina voor Microsoft Intune-toepassingen van partners. Selecteer een app om de ondersteunde scenario's en platformen te bekijken en om te controleren of de app meerdere identiteiten ondersteunt.
+De Intune App SDK is al ingebouwd in apps zoals de Microsoft Office-apps. U kunt de volledige lijst met ondersteunde apps bekijken in de [galerie met mobiele toepassingen van Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) op de pagina voor Microsoft Intune-toepassingen van partners. Selecteer een app om de ondersteunde scenario's en platformen te bekijken en om te controleren of de app meerdere identiteiten ondersteunt.
 
 U kunt ook [uw op maat gemaakte Line-Of-Business-apps inschakelen](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) voor gebruik met MAM-beleid.
 
 Naast het beperken van gegevensverplaatsing kunt u voor een zoekgeraakt of gestolen apparaat, of als de gebruiker niet meer bij uw bedrijf werkt, [selectief bedrijfsgegevens wissen](wipe-managed-company-app-data-with-microsoft-intune.md) en alleen persoonlijke gegevens behouden.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

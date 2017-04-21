@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Hier ziet u een overzicht van de afzonderlijke taken bij het implementeren van I
 
 Zoals vermeld in de vorige sectie over vereisten, is er een EMS- of Intune-abonnement vereist. Als uw organisatie geen EMS- of Intune-abonnement heeft, kunt u contact opnemen met Microsoft of uw Microsoft-accountteam om aan te geven dat u de aanschaf van Enterprise Mobility + Security (EMS) of Intune overweegt.
 
--   Meer informatie over [het kopen van Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing).
+-   Meer informatie over [het kopen van Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### <a name="task-2-add-office-365-subscription"></a>Taak 2: Office 365-abonnement toevoegen
 
@@ -115,7 +116,7 @@ Microsoft Intune biedt ondersteuning voor e-mail-, Wi-Fi- en VPN-profielen. Het 
 
 Microsoft Intune biedt ondersteuning voor de implementatie van Web-, LOB- en openbare store-apps. Bovendien wordt het beheer ondersteund van apps waarin de Intune SDK is geïntegreerd door deze te koppelen aan MAM-beleid. Het toevoegen en implementeren van apps wordt uitgevoerd in de Intune-beheerportal, werkruimte App. Het toevoegen van MAM-beleid apps wordt uitgevoerd in de Intune-beheerportal, werkruimte Beleid. Voeg waar nodig apps toe en implementeer deze voor doelgroepen op basis van de use cases en vereisten van uw Intune-implementatie.
 
--   Meer informatie over [toevoegen en implementeren van toepassingen](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   Meer informatie over [toevoegen en implementeren van toepassingen](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>Taak 11: Nalevingsbeleid toevoegen en implementeren
 
@@ -141,9 +142,4 @@ Intune ondersteunt platformen voor mobiele iOS-, Mac OS-, Android-, Windows- en 
 ## <a name="next-section"></a>Volgende sectie
 
 De volgende sectie bevat richtlijnen over het [testen en valideren van uw Intune-implementatie](section-9-test-and-validation.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

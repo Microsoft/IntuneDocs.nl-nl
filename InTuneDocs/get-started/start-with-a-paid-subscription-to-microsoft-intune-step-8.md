@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-In dit onderwerp wordt beschreven hoe een Intune-beheerder de registratie van mobiele apparaten kan inschakelen. Zie [Werk gedaan krijgen met beheerde apparaten](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) voor meer informatie over het gebruik van Intune op uw telefoon. 
+In dit onderwerp wordt beschreven hoe een Intune-beheerder de registratie van mobiele apparaten kan inschakelen. Zie [Werk gedaan krijgen met beheerde apparaten](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) voor meer informatie over het gebruik van Intune op uw telefoon.
 
 Als u beheer van mobiele apparaten met Intune wilt instellen, moet u eerst de *instantie voor beheer van mobiele apparaten* instellen, waarmee de service wordt geïdentificeerd waarmee u de apparaten beheert die zijn gekoppeld aan uw account. In deze richtlijnen wordt ervan uitgegaan dat u de Intune-service gebruikt in plaats van System Center Configuration Manager. Zodra de MDM-instantie is ingesteld, kunt u beheer voor apparaatplatformen inschakelen en uw apparaten registreren bij de app bedrijfsportal.
 
@@ -49,9 +50,9 @@ Inschrijving moet worden ingeschakeld voor iOS-, Mac- en Android for Work-appara
 
 Schakel apparateninschrijving in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
 
--  [iOS en Mac OS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [Window-pc](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Window 10 Mobile en Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS en Mac OS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Windows 10 en Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Window-pc](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune-softwareclient)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 Zodra inschrijving is ingeschakeld, kunnen gebruikers de bedrijfsportal-app naar het apparaat downloaden en het registratieproces van het apparaat voltooien.
@@ -60,18 +61,12 @@ Zodra inschrijving is ingeschakeld, kunnen gebruikers de bedrijfsportal-app naar
 U kunt ook een aantal verschillende scenario’s voor [inschrijving van bedrijfsapparaten](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) inschakelen, zoals:
 - [Apple Device Enrollment Program](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Inschrijving via Apple Configurator Setup Assistant](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Inschrijving via Apple Configurator Setup Assistant](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Directe inschrijving met Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Apparaatinschrijvingsmanager](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>Volgende stappen
 Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune* voltooid. Nu de eerste configuratie is voltooid, kunt u overwegen om aanvullende MDM-functionaliteit in te schakelen.
 
 >[!div class="step-by-step"]
-
 >[&larr; **Apparaten inschrijven**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Taken na configuratie** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

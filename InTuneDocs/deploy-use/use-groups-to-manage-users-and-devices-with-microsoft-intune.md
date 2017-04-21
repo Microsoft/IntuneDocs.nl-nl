@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ De zojuist gemaakte groep wordt in de lijst **Groepen** weergegeven in de werkru
     > Als uw groep momenteel leden van specifieke beveiligingsgroepen of managergroepen bevat en u leden van sommige groepen uitsluit, worden de aanvankelijk opgenomen leden verwijderd. Als u een groep wilt maken met zowel opgenomen als uitgesloten leden, wordt aangeraden om eerst een bovenliggende groep met de opgenomen leden te maken. Vervolgens maakt u een onderliggende groep voor die bovenliggende groep. Voeg de uitgesloten leden toe aan de nieuwe onderliggende groep. Gebruik vervolgens die onderliggende groep om Intune-beleid, profielen en de distributie van apps te beheren.
 
     > [!NOTE]
-    > In de Azure-portal kunt u groepen maken op basis van de managers aan wie gebruikers rapporteren. Dergelijke groepen hebben een dynamisch karakter en veranderen door het toevoegen of verwijderen van werknemers uit het team van een manager in Azure Active Directory. Het maken van een Azure-groep op basis van de naam van een manager wordt beschreven in [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) in de sectie **To configure a group as a "Manager" group** (Een groep configureren als een 'Manager'-groep).
+    > In de Azure-portal kunt u groepen maken op basis van de managers aan wie gebruikers rapporteren. Dergelijke groepen hebben een dynamisch karakter en veranderen door het toevoegen of verwijderen van werknemers uit het team van een manager in Azure Active Directory. Het maken van een Azure-groep op basis van de naam van een manager wordt beschreven in [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) in de sectie **To configure a group as a "Manager" group** (Een groep configureren als een 'Manager'-groep).
 
 4.  Kies **Bladeren** op de pagina **Direct lidmaatschap opgeven** om afzonderlijke gebruikers te selecteren die moeten worden opgenomen of uitgesloten. Als u gebruikers selecteert die zich niet in de door u opgegeven bovenliggende groep bevinden, worden die apparaten automatisch toegevoegd aan de bovenliggende groep. Onder in het dialoogvenster **Leden selecteren** vindt u de optie om handmatig gebruikers toe te voegen. Dit is handig als u een gebruiker wilt toevoegen die nog geen ingeschreven apparaat heeft.
 
@@ -151,9 +152,4 @@ Elk beleid heeft een **Bedoelde waarde** en een **Status**. De beoogde waarde is
 
 > [!NOTE]
 > Houd er rekening mee dat wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, in de praktijk het meest beperkende beleid van toepassing is.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

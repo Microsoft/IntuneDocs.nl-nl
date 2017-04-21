@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ Voer de volgende stappen uit om beveiligingsbeleid voor apps te maken:
 
     ![Schermafbeelding van het tabblad Een beleid toevoegen, waarin wordt aangegeven dat de apps en instellingen zijn geconfigureerd](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige procedure, is het nog niet geïmplementeerd voor gebruikers. Zie de sectie Een beleid implementeren naar gebruikers hieronder voor het implementeren van een beleid.
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige
 > -   U koppelt beide sets met beleidsregels aan dezelfde app.
 > -   Het beleid dat u hebt gemaakt vanaf de Azure-console krijgt voorrang en kopiëren is toegestaan.
 > -   De status en rapporten in de Intune-beheerconsole geven in dat geval echter ten onrechte aan dat kopiëren is geblokkeerd.
+
+## <a name="line-of-business-lob-apps-optional"></a>Line-Of-Business-apps (LOB) (optioneel)
+
+Met ingang van Intune versie 1703 hebt u de optie om LOB-apps toe te voegen in Intune bij het maken van een nieuw app-beveiligingsbeleid. Dat geeft u de optie om een app-beveiligingsbeleid voor LOB-apps te definiëren met de MAM SDK zonder dat u machtigingen voor volledige app-implementatie nodig hebt.
+
+> [!TIP] 
+> U kunt ook LOB-apps toevoegen in Intune wanneer u de werkstroom [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) uitvoert.
+
+> [!IMPORTANT]
+> Als gebruikers alleen specifieke machtigingen hebben voor het implementeren van MAM-apps en niet voor volledige app-implementatie (waardoor ze iedere app zouden kunnen implementeren in Intune), kunnen ze de Intune SDK-werkstroom niet uitvoeren, maar hun LOB-apps nog steeds toevoegen via de werkstroom voor het maken van een MAM-app-beveiligingsbeleid.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>LOB-apps toevoegen (iOS en Android)
+
+1.  Kies op de blade Een beleid toevoegen **Apps Configureren** om de blade Apps te openen.
+
+    ![MAM-blade Een beleid toevoegen](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Klik op **Meer apps**, typ de **Bundle ID** (voor iOS), **pakket-id** (voor Android) en klik op Selecteren om uw LOB-apps toe te voegen.
+
+    ![MAM-blade Meer apps](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>LOB-apps toevoegen (Windows)
+
+> [!IMPORTANT] 
+> Selecteer Windows 10 in de vervolgkeuzelijst wanneer u een nieuwe beleid voor app-beveiliging maakt.
+
+1.  Kies op de blade Een beleid toevoegen de optie **Toegestane apps** of **Vrijgestelde apps** om de blade Toegestane apps of Vrijgestelde apps te openen.
+
+    > [!NOTE]
+    > 
+    - **Toegestane apps**: dit zijn de apps die zich aan dit beleid moeten houden.
+    - **Vrijgestelde apps**: deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
+<br></br>
+2. Klik op de blade Toegestane of Vrijgestelde apps op **Apps toevoegen**. U kunt aanbevolen Microsoft-apps toevoegen, apps uit de Store of bureaublad-apps.
+
+    a.  **Aanbevolen apps**: een vooraf gevulde lijst met apps (voornamelijk voor Office) die beheerders gemakkelijk in het beleid kunnen importeren.
+
+    b.  **Store-apps**: beheerders kunnen elke app uit de Windows Store toevoegen aan het beleid.
+
+    c.  **Windows-bureaublad-apps**: beheerders kunnen traditionele Windows-bureaublad-apps toevoegen aan het beleid (zoals .exe, .dll, enzovoort).
 
 ## <a name="deploy-a-policy-to-users"></a>Een beleid implementeren naar gebruikers
 
@@ -124,8 +163,8 @@ Het beleid is alleen van invloed op gebruikers aan wie [!INCLUDE[wit_nextref](..
 > Als u Intune met Configuration Manager gebruik om uw iOS- en Android-apparaten te beheren, wordt het beleid alleen direct op gebruikers in de geselecteerde groep toegepast. Leden van de onderliggende groepen binnen de geselecteerde groep worden niet door het beleid beïnvloed.
 
 Eindgebruikers kunnen de apps downloaden in de App Store of via Google Play. Zie voor meer informatie:
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Bestaande beleidsregels wijzigen
 U kunt een bestaand beleid bewerken en toepassen op de beoogde gebruikers. Wanneer u echter bestaand beleid wijzigt, worden de wijzigingen pas na 8 uur zichtbaar voor gebruikers die al bij de apps zijn aangemeld.
@@ -179,11 +218,6 @@ Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de b
 [Compatibiliteit- en gebruikersstatus controleren](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Zie tevens
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door beveiligingsbeleid voor apps](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

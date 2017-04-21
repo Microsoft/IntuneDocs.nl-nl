@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |E-mailprofiel|Dit beleid kan worden gebruikt voor het instellen van [toegangsinstellingen voor e‑mail ](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) voor specifieke e‑mailclients op mobiele apparaten, zodat de eindgebruiker maar een minimum aan installatiehandelingen hoeft te verrichten.|
-|EMS|Microsoft Enterprise Mobility + Security (voorheen Enterprise Mobility Suite) beveiligt de gegevens van uw bedrijf en zorgt tegelijkertijd dat uw gebruikers [toegang hebben tot de apps en inhoud die ze nodig hebben](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|Microsoft Enterprise Mobility + Security (voorheen Enterprise Mobility Suite) beveiligt de gegevens van uw bedrijf en zorgt tegelijkertijd dat uw gebruikers [toegang hebben tot de apps en inhoud die ze nodig hebben](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Eindgebruiker|[Gebruikers van apparaten zoals telefoons en pc's](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) die worden beheerd met Intune.|
 |Inschrijven|Microsoft Intune maakt gebruik van [inschrijving](/intune/deploy-use/enroll-devices-in-microsoft-intune) om apparaten onder beheer te brengen en toegang tot resources toe te staan.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Vergrendelen op afstand|Een Intune-functie waarmee u [ondersteunde apparaten kunt vergrendelen](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), zelfs als u niet in bezit bent van het apparaat.|
 |Reports|Intune biedt een reeks [ingebouwde rapporten](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) die u informatie verschaffen over de apparaten die u beheert.|
 |Vereiste installatie|Wanneer u een app met behulp van deze actie implementeert, wordt deze [zonder tussenkomst van de gebruiker](/intune/deploy-use/deploy-apps) op het apparaat geïnstalleerd (hoewel op sommige platforms de eindgebruiker mogelijk akkoord moet gaan met de installatie).|
-|Vereisten|Dit is een [app-implementatiebewerking](/en-us/intune/deploy-use/add-apps) waarmee u de vereisten kunt selecteren waaraan een apparaat moet voldoen voordat de app kan worden geïnstalleerd. U kunt bijvoorbeeld de versie van het iOS-besturingssysteem opgeven dat moet zijn geïnstalleerd voordat de app kan worden geïnstalleerd.|
+|Vereisten|Dit is een [app-implementatiebewerking](/intune/deploy-use/add-apps) waarmee u de vereisten kunt selecteren waaraan een apparaat moet voldoen voordat de app kan worden geïnstalleerd. U kunt bijvoorbeeld de versie van het iOS-besturingssysteem opgeven dat moet zijn geïnstalleerd voordat de app kan worden geïnstalleerd.|
 
 ## <a name="s"></a>S
 |||

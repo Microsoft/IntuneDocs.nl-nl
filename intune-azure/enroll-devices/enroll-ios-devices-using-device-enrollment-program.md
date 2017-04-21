@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,48 +27,64 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune kan 'draadloos' een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program zijn aangeschaft. Een profiel bevat de beheerinstellingen die u op apparaten wilt toepassen. Het inschrijvingspakket kan Configuratieassistent-opties voor het apparaat bevatten. Gebruikers kunnen de inschrijving niet opheffen wanneer de apparaten zijn ingeschreven via DEP.
+Met de informatie in dit onderwerp kunnen IT-beheerders iOS-apparaten van het bedrijf inschrijven, die zijn aangeschaft via het [Apple Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune kan een inschrijvingsprofiel implementeren dat DEP draadloos inschrijft, waardoor de beheerder de beheerde apparaten niet eens hoeft te zien. Een DEP-profiel bevat de beheerinstellingen die u op apparaten wilt toepassen tijdens de inschrijving. Het inschrijvingspakket kan Configuratieassistent-opties voor het apparaat bevatten.
 
 >[!NOTE]
->Deze inschrijvingsmethode kan niet worden gebruikt met de methode [Apparaatinschrijvingsmanager](enroll-devices-using-device-enrollment-manager.md).
+>Inschrijving via DEP kan niet worden gebruikt met de [apparaatinschrijvingsmanager](enroll-devices-using-device-enrollment-manager.md).
+>Als gebruikers hun iOS-apparaten inschrijven via de bedrijfsportal-app en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt het apparaat uitgeschreven bij Intune.
 
-Voor het beheren van iOS-apparaten in bedrijfseigendom met het Device Enrollment Program (DEP) van Apple moet uw organisatie lid worden van DEP en apparaten verwerven via dat programma. Details van dit proces kunt u vinden op: [https://deploy.apple.com](https://deploy.apple.com). Voordelen van het programma zijn onder andere handsfree instellen, dus zonder dat elk apparaat via een USB-verbinding op een computer moet worden aangesloten.
+**Stappen voor DEP-inschrijving**
+1. [Een Apple DEP-token ophalen](#get-the-apple-dep-certificate)
+2. [Een DEP-profiel maken](#create-anapple-dep-profile)
+3. [Apple DEP-serienummers toewijzen aan uw Intune-server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [Door DEP beheerde apparaten synchroniseren](#synchronize-dep-managed-devices)
+5. Apparaten onder gebruikers distribueren
 
-Voordat u iOS-apparaten in bedrijfseigendom met DEP kunt inschrijven, moet u [een DEP-token ontvangen](get-apple-dep-token.md) van Apple. Intune kan met dit token informatie synchroniseren over apparaten binnen uw bedrijf die aan DEP deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
-Andere methoden voor het registreren van iOS-apparaten worden beschreven in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md) (Kiezen hoe iOS-apparaten worden geregistreerd in Intune).
 
-## <a name="prerequisites"></a>Vereisten
+## <a name="get-the-apple-dep-certificate"></a>Het Apple DEP-certificaat ophalen
+Voordat u iOS-apparaten van het bedrijf met het Apple Device Enrollment Program (DEP) kunt inschrijven, moet u een DEP-certificaatbestand (.p7m) van Apple ontvangen. Intune kan met dit token informatie synchroniseren over apparaten binnen uw bedrijf die aan DEP deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
-Voer de volgende vereisten uit voordat u inschrijving van iOS-apparaten instelt:
+Voor het beheren van iOS-apparaten in bedrijfseigendom met het DEP van Apple moet uw organisatie lid worden van DEP en apparaten verwerven via dat programma. Details van dit proces kunt u vinden op: https://deploy.apple.com. Voordelen van het programma zijn onder andere handsfree instellen, dus zonder dat elk apparaat via een USB-verbinding op een computer moet worden aangesloten.
 
-- [Domeinen configureren](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [MDM-instantie instellen](set-mdm-authority.md)
-- [Groepen maken](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- Gebruikerslicenties toewijzen in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Een Apple MDM-pushcertificaat ophalen](get-an-apple-mdm-push-certificate.md)
-- [Een Apple DEP-token ophalen](get-apple-dep-token.md)
+> [!NOTE]
+> Als uw Intune-tenant is gemigreerd van de klassieke Intune-console naar de Azure-portal en u een Apple DEP-token hebt verwijderd uit de Intune-beheerconsole tijdens de migratieperiode, is het DEP-token mogelijk hersteld in uw Intune-account. U kunt het DEP-token opnieuw verwijderen uit Azure Portal verwijderen.
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>Een Apple DEP-profiel maken voor apparaten
+
+
+
+**Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple DEP-token.**<br>
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune **Apparaatinschrijving** > **Apple DEP-token**.
+2. Selecteer **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple Device Enrollment Program aan te vragen.
+
+**Stap 2. Download een Apple DEP-token vanaf de betreffende Apple-website.**<br>
+Selecteer [Een DEP-token via Apple Deployment Programs maken](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple ID van uw bedrijf. Deze Apple ID kunt u gebruiken om uw DEP-token te verlengen.
+
+   1.  Ga in de [Apple Device Enrollment Program Portal](https://deploy.apple.com) naar **Programma apparaatinschrijving** &gt; **Servers beheren** en kies **MDM-server toevoegen**.
+   2.  Voer de **MDM-servernaam** in en kies **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
+   3.  Het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt geopend. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
+   4.  In het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt een koppeling met **Uw servertoken** weergegeven. Download het servertokenbestand (.p7m) naar uw computer en kies **Gereed**.
+
+**Stap 3. Voer de Apple ID in die u hebt gebruikt om uw Apple DEP-token te maken. Deze ID kan worden gebruikt om uw Apple DEP-token te verlengen.**
+
+**Stap 4. Blader naar het Apple DEP-token dat u wilt uploaden. Intune voert automatisch een synchronisatie met uw DEP-account uit.**<br>
+Ga naar het certificaatbestand (.pem), kies **Openen** en kies vervolgens **Uploaden**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen.
+
+## <a name="create-an-apple-dep-profile"></a>Een Apple DEP-profiel maken
 
 Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. De volgende stappen laten zien hoe u een apparaatinschrijvingsprofiel kunt maken voor iOS-apparaten die worden ingeschreven met DEP.
 
 1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
-
 2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
-
 3. Selecteer **DEP-profielen** onder **Instellingen van Apple Device Enrollment Program (DEP) beheren**.
-
 4. Selecteer **Maken** op de blade **Apple DEP-profielen**.
-
 5. Voer op de blade **Inschrijvingsprofiel maken** een naam en een beschrijving in voor het profiel.
-
 6. Geef voor **Gebruikersaffiniteit** aan of u andere apparaten met dit profiel wilt inschrijven met of zonder gebruikersaffiniteit.
 
  - **Inschrijven met gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie en kan vervolgens toegang krijgen tot gegevens en e-mail van het bedrijf. Kies gebruikersaffiniteit voor DEP-beheerde apparaten die eigendom zijn van gebruikers en waarvoor de bedrijfsportal moet worden gebruikt voor services als het installeren van apps. Houd er rekening mee dat Multi-Factor Authentication (MFA) niet werkt tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Nieuwe gebruikers die hun wachtwoord moeten wijzigen wanneer ze zich voor het eerst aanmelden, kunnen geen prompt krijgen tijdens de inschrijving voor DEP-apparaten. Daarnaast wordt gebruikers waarvan de wachtwoorden zijn verlopen niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de DEP-inschrijving, en moeten deze het wachtwoord vanaf een ander apparaat opnieuw instellen.
 
     >[!NOTE]
-    >Voor DEP met gebruikersaffiniteit moet WS-Trust 1.3 gebruikersnaam/mixed-eindpunt zijn ingeschakeld om een gebruikerstoken aan te vragen.
+    >Voor DEP met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Inschrijven zonder gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die wordt gebruikt voor het installeren van LOB-apps, zullen niet werken.
 
@@ -111,7 +127,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
 4. Selecteer **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
 
-## <a name="synchronize-dep-managed-devices"></a>Met DEP-beheerde apparaten synchroniseren
+## <a name="synchronize-dep-managed-devices"></a>Door DEP beheerde apparaten synchroniseren
 
 1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 

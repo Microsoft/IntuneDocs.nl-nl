@@ -1,4 +1,4 @@
-## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Automatische registratie met Azure Active Directory Premium installeren voor Windows 10 en Windows 10 Mobile
+## <a name="enable-windows-10-automatic-enrollment"></a>Automatische inschrijving voor Windows 10 inschakelen
 
 Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 Mobile-apparaten van het bedrijf of van henzelf in Intune registreren door werk- of schoolaccount toe te voegen en akkoord te gaan met het beheer. Zo simpel is het. Het apparaat van de gebruiker wordt op de achtergrond geregistreerd en aangesloten bij Azure Active Directory. Wanneer het apparaat is geregistreerd, wordt het met Intune beheerd.
 
@@ -9,26 +9,31 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Automatische MDM-registratie configureren
 
-1. Ga in de [Azure-beheerportal](https://portal.azure.com) (https://manage.windowsazure.com) naar het knooppunt **Active Directory** en selecteer uw map.
+1. Meld u aan bij de [Azure AD-beheerportal](https://portal.azure.com) (https://manage.windowsazure.com) en selecteer **Azure Active Directory**.
 
-2. Selecteer het tabblad **Toepassingen**. **Microsoft Intune** wordt in de lijst met toepassingen weergegeven.
+  ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
 
-    ![Azure AD-apps met Microsoft Intune](../media/aad-intune-app.png)
+2. Selecteer **Mobiliteit (MDM en MAM)**.
 
-3. Selecteer de pijl voor **Microsoft Intune**. Er verschijnt een pagina waarop u Microsoft Intune kunt configureren.
+  ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
 
-4. Selecteer **Configureren** om de automatische MDM-registratie met Microsoft Intune te configureren.
+3. Selecteer **Microsoft Intune**.
 
-5. Gebruik de standaardwaarden voor de volgende URL’s:
+  ![Schermopname van de Azure-portal](../media/auto-enroll-intune.png)
 
+4. Configureer welke gebruikers automatisch moeten worden ingeschreven.
+
+  ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
+
+  Gebruik de standaardwaarden voor de volgende URL’s:
   - **MDM-inschrijving**
-  - **MDM-gebruiksvoorwaarden** 
+  - **MDM-gebruiksvoorwaarden**
   - **MDM-naleving**
 
-6.  Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
+5. Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
 
   - **Alle**
   - **GROEPEN**
   - **Geen**
 
-7. Kies **Opslaan**.
+6. Selecteer **Opslaan**.

@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 57c739444c18d12a6d7ee8ca591f9a1dd72985d7
+ms.lasthandoff: 04/14/2017
 
 ---
 
@@ -75,9 +76,9 @@ Als u Azure Active Directory-beveiligingsgroepen maakt in stap 2, gebruikt u de 
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Stap 2: Active Directory-beveiligingsgroepen maken
 
-In deze stap maakt u dynamische groepen in de Azure-portal op basis van de apparaatcategorie en de naam van de apparaatcategorie.
+In deze stap maakt u dynamische groepen in Azure Portal op basis van de apparaatcategorie en de naam van de apparaatcategorie.
 
-Zie het onderwerp [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in de documentatie van Azure Active Directory om door te gaan.
+Zie het onderwerp [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in de documentatie van Azure Active Directory om door te gaan.
 Gebruik de informatie in dit onderwerp om een apparaatgroep met een geavanceerde regel te maken op basis van het kenmerk **deviceCategory** (apparaatcategorie).
 Voorbeeld: (**device.deviceCategory -eq** "<*de naam van de apparaatcategorie in de Intune-beheerconsole*>")
 
@@ -88,9 +89,4 @@ Wanneer gebruikers hun apparaat registreren, krijgen ze een lijst te zien van de
 
 ### <a name="see-also"></a>Zie tevens
 [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
