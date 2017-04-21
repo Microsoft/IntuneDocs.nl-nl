@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ Wanneer een gebruiker in de doelgroep Skype voor Bedrijven Online op zijn appara
 
 **Voordat** u beleid voor voorwaardelijke toegang voor Skype voor Bedrijven Online configureert, moet u:
 - Een **Skype voor Bedrijven Online-abonnement** hebben en de Skype voor Bedrijven Online-licentie toewijzen aan gebruikers.
-- Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben, en moeten de gebruikers een licentie hebben voor EMS of Azure AD. Zie [Prijzen van Enterprise Mobility ](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of [Prijzen van Azure Active Directory ](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
+- Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben, en moeten de gebruikers een licentie hebben voor EMS of Azure AD. Zie [Prijzen van Enterprise Mobility ](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) of [Prijzen van Azure Active Directory ](https://azure.microsoft.com/pricing/details/active-directory/) voor meer informatie.
 
--   [Moderne verificatie inschakelen](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) voor Skype voor Bedrijven Online.
+-   [Moderne verificatie inschakelen](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) voor Skype voor Bedrijven Online.
 -  Zorg dat al uw gebruikers **Skype voor Bedrijven Online** gebruiken. Als u een implementatie van zowel Skype voor Bedrijven Online als een lokale Skype voor Bedrijven hebt, wordt het beleid voor voorwaardelijke toegang niet toegepast op gebruikers.
 
 Het apparaat waarvoor toegang tot Skype voor Bedrijven Online nodig is, moet:
@@ -118,9 +119,4 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 * **Apparaten die niet voldoen aan het beleid**: voor deze apparaten is de toegang tot Skype voor Bedrijven Online geblokkeerd.
 
 * **Apparaten die zijn geregistreerd bij AAD en voldoen aan het beleid**: deze apparaten hebben toegang tot Skype voor Bedrijven Online.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

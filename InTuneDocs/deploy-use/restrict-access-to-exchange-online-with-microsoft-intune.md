@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ Als u voorwaardelijke toegang wilt configureren, moet u:
 
 -   Een **Office 365-abonnement hebben waarin Exchange Online (zoals E3) is inbegrepen**. Gebruikers moeten bovendien een licentie hebben voor Exchange Online.
 
-- Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben. Daarnaast moeten gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
+- Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben. Daarnaast moeten gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/pricing/details/active-directory/) voor meer informatie.
 
 -  U kunt eventueel de optionele **Intune-serviceconnector** configureren, waarmee u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Exchange Online en u apparaatgegevens kunt beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console. U hoeft de connector niet te gebruiken om nalevingsbeleid of beleidsregels voor voorwaardelijke toegang te kunnen gebruiken, maar de connector is wel vereist voor het uitvoeren van rapporten die helpen bij het evalueren van de impact van voorwaardelijke toegang.
     -  Meer informatie over de [Intune-service-naar-serviceconnector](intune-service-to-service-exchange-connector.md).
@@ -83,7 +83,7 @@ U kunt toegang tot e-mail van Exchange Online beveiligen vanuit **Outlook** en a
 **Moderne verificatie** houdt aanmelding bij Microsoft Office-clients in op basis van Active Directory Authentication Library (ADAL).
 
 -   Dankzij verificatie op basis van ADAL is voor Office-clients verificatie via een browser (ook wel passieve verificatie genoemd) mogelijk. Een gebruiker wordt hierbij naar een aanmeldingspagina geleid om de verificatie uit te voeren.
--   Deze nieuwe aanmeldingsmethode zorgt voor betere beveiliging, zoals **Multi-Factor Authentication** en **op certificaten gebaseerde verificatie**. Zie [Hoe moderne verificatie werkt](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) voor meer informatie. U kunt ADFS-claimregels instellen om niet-moderne-verificatieprotocollen te blokkeren. Gedetailleerde instructies vindt u in [Scenario 3: alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
+-   Deze nieuwe aanmeldingsmethode zorgt voor betere beveiliging, zoals **Multi-Factor Authentication** en **op certificaten gebaseerde verificatie**. Zie [Hoe moderne verificatie werkt](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) voor meer informatie. U kunt ADFS-claimregels instellen om niet-moderne-verificatieprotocollen te blokkeren. Gedetailleerde instructies vindt u in [Scenario 3: alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
 
 U kunt de toegang tot **Outlook Web Access (OWA)** via Exchange Online beveiligen wanneer een gebruiker deze service opent vanuit een browser op een **iOS**- of **Android**-apparaat. Toegang wordt alleen toegestaan vanaf ondersteunde browsers op compatibele apparaten:
 
@@ -123,7 +123,7 @@ U kunt voorwaardelijke toegang instellen voor pc's waarop Office-bureaubladtoepa
   >[!NOTE]
     >Voorwaardelijke toegang wordt niet ondersteund op pc's waarop de Intune-computerclient wordt uitgevoerd.
 
--   [Moderne verificatie van Office 365-moet zijn ingeschakeld](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
+-   [Moderne verificatie van Office 365-moet zijn ingeschakeld](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
 
     Moderne verificatie houdt aanmelding bij Office 2013/Windows-clients in op basis van Active Directory Authentication Library (ADAL). Deze methode zorgt voor betere beveiliging, zoals **Multi-Factor Authentication** en **op certificaten gebaseerde verificatie**.
 
@@ -192,7 +192,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 >[!NOTE]
 > U kunt ook een beleid voor voorwaardelijke toegang maken in de Azure AD-beheerconsole. Met de Azure AD-beheerconsole kunt u beleid voor voorwaardelijke toegang voor een Intune-apparaat maken (aangeduid als het **op apparaten gebaseerd beleid voor voorwaardelijke toegang** in Azure AD), naast ander beleid voor voorwaardelijke toegang zoals Multi-Factor Authentication.
 
->U kunt ook beleid voor voorwaardelijke toegang instellen voor bedrijfs-apps van derden die door Azure AD worden ondersteund, zoals voor Salesforce en Box. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
+>U kunt ook beleid voor voorwaardelijke toegang instellen voor bedrijfs-apps van derden die door Azure AD worden ondersteund, zoals voor Salesforce en Box. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
 
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) achtereenvolgens **Beleid** > **Voorwaardelijke toegang** > **Beleid voor Exchange Online**.

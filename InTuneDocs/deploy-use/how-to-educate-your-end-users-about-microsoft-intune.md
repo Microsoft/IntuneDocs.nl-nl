@@ -14,18 +14,18 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
-ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
+ms.lasthandoff: 04/20/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Eindgebruikers instructies geven over Microsoft Intune
 
-Microsoft Intune helpt u om uw werknemers met mobiele apparaten uit te rusten terwijl uw zakelijke gegevens worden beveiligd. Er zijn veel stappen nodig om u te verzekeren van een geslaagde implementatie, waaronder evaluatie van Intune via een [gratis proefversie](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), [beveiligen van uw e-mail](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) en [insluiten van uw apps met de Intune-SDK](/intune/develop/intune-app-sdk.md).
+Microsoft Intune helpt u om uw werknemers met mobiele apparaten uit te rusten terwijl uw zakelijke gegevens worden beveiligd. Er zijn veel stappen nodig om u te verzekeren van een geslaagde implementatie, waaronder evaluatie van Intune via een [gratis proefversie](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune), [beveiligen van uw e-mail](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) en [insluiten van uw apps met de Intune-SDK](/intune/develop/intune-app-sdk).
 
-Geen van deze technologieën zorgt ervoor dat uw gebruikers het belang begrijpen waarom u hun apparaten beheert. Veel van uw eindgebruikers zullen eigenlijk het gevoel hebben dat u inbreuk maakt op hun privacy - met name als u Intune als een [BYOD-oplossing](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md) implementeert.
+Geen van deze technologieën zorgt ervoor dat uw gebruikers het belang begrijpen waarom u hun apparaten beheert. Veel van uw eindgebruikers zullen eigenlijk het gevoel hebben dat u inbreuk maakt op hun privacy - met name als u Intune als een [BYOD-oplossing](/enterprise-mobility-security/solutions/byod-design-considerations-guide) implementeert.
 
 > [!Important]
 > Om een implementatie te laten slagen is het van groot belang de zorgen van uw eindgebruikers over de reden dat het nodig is dat uw bedrijf de apparaten beheert, te begrijpen en deze proactief te bespreken.
@@ -59,7 +59,7 @@ Door deze zorgen van uw gebruikers weg te nemen verloopt uw implementatie soepel
   * [Hoe uw Android-gebruikers apps downloaden](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [Een iOS-apparaat gebruiken met Intune](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
+  * [Een iOS-apparaat gebruiken met Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macos-device-with-intune)
   * [Hoe uw iOS-gebruikers hun apps downloaden](how-your-ios-users-get-their-apps.md)
 
 * **Windows**

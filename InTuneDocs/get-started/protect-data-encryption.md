@@ -15,8 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Deze snelstartgids is een nuttige informatiebron als u aan de volgende vereisten
 > [!NOTE]
 > Windows is nog geen ondersteund platform voor mobiele Office-apps. Het beheer van mobiele toepassingen zonder inschrijving is nog niet compatibel met on-premises Exchange of SharePoint. U kunt alleen gegevens beschermen die worden gehost in onlineversies.
 
-U kunt de informatie in deze gids gebruiken om verlies van uw bedrijfsgegevens te voorkomen, door het gebruik van wachtwoordcodes en gegevensversleuteling af te dwingen. Dit doet u door een beleid in te stellen voor de mobiele apps die uw werknemers gebruiken om toegang te krijgen tot gevoelige gegevens, zonder dat volledige inschrijving bij een beheeroplossing voor mobiele apparaten is vereist. U kunt Microsoft Intune gebruiken om een beleid voor het beheer van mobiele toepassingen (MAM) in te stellen voor mobiele Office-apps op [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios)- en [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android)-apparaten. Door deze aanpak zijn uw O365-gegevens beveiligd zonder dat gebruikers hun apparaat hoeven in te schrijven bij een beheeroplossing voor mobiele apparaten. Bovendien zorgt dit ervoor dat gebruikerservaring met de mobiele Office-apps uitstekend blijft.
+U kunt de informatie in deze gids gebruiken om verlies van uw bedrijfsgegevens te voorkomen, door het gebruik van wachtwoordcodes en gegevensversleuteling af te dwingen. Dit doet u door een beleid in te stellen voor de mobiele apps die uw werknemers gebruiken om toegang te krijgen tot gevoelige gegevens, zonder dat volledige inschrijving bij een beheeroplossing voor mobiele apparaten is vereist. U kunt Microsoft Intune gebruiken om een beleid voor het beheer van mobiele toepassingen (MAM) in te stellen voor mobiele Office-apps op [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios)- en [Android](https://products.office.com/mobile/office-mobile-apps-for-android)-apparaten. Door deze aanpak zijn uw O365-gegevens beveiligd zonder dat gebruikers hun apparaat hoeven in te schrijven bij een beheeroplossing voor mobiele apparaten. Bovendien zorgt dit ervoor dat gebruikerservaring met de mobiele Office-apps uitstekend blijft.
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
 1.    [Lees hoe u app-gegevens kunt beveiligen](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -50,10 +51,5 @@ U kunt de informatie in deze gids gebruiken om verlies van uw bedrijfsgegevens t
 ## <a name="additional-information"></a>Extra informatie:
 - [De eindgebruikerservaring voor apps die geschikt zijn voor MAM met Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune.](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [De lijst met Microsoft Intune-toepassingspartners bekijken](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+- [De lijst met Microsoft Intune-toepassingspartners bekijken](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Wanneer een gebruiker probeert verbinding te maken met een bestand via een onder
 
 **Voordat** u beleid voor voorwaardelijke toegang configureert voor SharePoint Online, moet u:
 - Een **SharePoint Online-abonnement** hebben. Gebruikers moeten bovendien een licentie voor SharePoint Online hebben.
-- Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben. Daarnaast moeten gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
+- Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben. Daarnaast moeten gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/pricing/details/active-directory/) voor meer informatie.
 
 
   Als u verbinding met de vereiste bestanden wilt maken, moet het apparaat voldoen aan de volgende voorwaarden:
@@ -59,10 +60,10 @@ Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgen
 
 -   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-website van de bedrijfsportal wordt verwezen. Hier vindt hij informatie over het probleem en aanwijzingen voor het oplossen ervan.
 
-**Voorwaardelijke toegang is niet van toepassing op extern delen**. Zie [Extern delen voor uw SharePoint Online-omgeving beheren](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US) om te lezen hoe u extern delen in uw tenant of siteverzameling kunt voorkomen.
+**Voorwaardelijke toegang is niet van toepassing op extern delen**. Zie [Extern delen voor uw SharePoint Online-omgeving beheren](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) om te lezen hoe u extern delen in uw tenant of siteverzameling kunt voorkomen.
 
 >[!NOTE]
->Als u voorwaardelijke toegang voor SharePoint Online inschakelt, raden wij aan het domein in de lijst uit te schakelen zoals staat beschreven in het onderwerp [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
+>Als u voorwaardelijke toegang voor SharePoint Online inschakelt, raden wij aan het domein in de lijst uit te schakelen zoals staat beschreven in het onderwerp [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx).  
 
 ## <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
 Het volgende wordt ondersteund:
@@ -84,7 +85,7 @@ Het volgende wordt ondersteund:
 > [!NOTE]
 >Als u voorwaardelijke toegang met Windows 10-pc's wilt gebruiken, moet u deze pc's bijwerken met de Windows 10 Jubileumupdate.
 
-  - U moet pc's die deel uitmaken van een domein, zodanig instellen dat ze [automatisch worden geregistreerd](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory. De Azure AD Device Registration Service wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in on-premises Active Directory.
+  - U moet pc's die deel uitmaken van een domein, zodanig instellen dat ze [automatisch worden geregistreerd](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory. De Azure AD Device Registration Service wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in on-premises Active Directory.
 
   - Als het beleid zo is ingesteld dat de pc lid moet zijn van een domein en de pc geen lid is van een domein, wordt in een bericht weergegeven dat er contact moet worden opgenomen met de IT-beheerder.
 
@@ -92,7 +93,7 @@ Het volgende wordt ondersteund:
   >[!NOTE]
   >Voorwaardelijke toegang wordt niet ondersteund op computers waarop de Intune-computerclient wordt uitgevoerd.
 
-[Moderne verificatie van Office 365-moet zijn ingeschakeld](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
+[Moderne verificatie van Office 365-moet zijn ingeschakeld](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
 
 Moderne verificatie maakt aanmelding op basis van Active Directory Authentication Library (ADAL) beschikbaar op Windows-clients met Office 2013 en zorgt voor een betere beveiliging, zoals **meervoudige verificatie** en **verificatie op basis van een certificaat**.
 
@@ -129,7 +130,7 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> U kunt ook in de Azure AD-beheerconsole een beleid voor voorwaardelijke toegang maken voor Intune-apparaten (dit beleid wordt in Azure AD ook wel **op apparaat gebaseerd beleid voor voorwaardelijke toegang** genoemd). Daarnaast kunt u andere beleidsregels voor voorwaardelijke toegang maken, zoals meervoudige verificatie. U kunt ook beleid voor voorwaardelijke toegang instellen voor bedrijfs-apps van derden die door Azure AD worden ondersteund, zoals voor Salesforce en Box. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
+> U kunt ook in de Azure AD-beheerconsole een beleid voor voorwaardelijke toegang maken voor Intune-apparaten (dit beleid wordt in Azure AD ook wel **op apparaat gebaseerd beleid voor voorwaardelijke toegang** genoemd). Daarnaast kunt u andere beleidsregels voor voorwaardelijke toegang maken, zoals meervoudige verificatie. U kunt ook beleid voor voorwaardelijke toegang instellen voor bedrijfs-apps van derden die door Azure AD worden ondersteund, zoals voor Salesforce en Box. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
 
 
 1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
@@ -195,9 +196,4 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 
 ### <a name="see-also"></a>Zie tevens
 [De toegang tot e-mail en O365-services beveiligen met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

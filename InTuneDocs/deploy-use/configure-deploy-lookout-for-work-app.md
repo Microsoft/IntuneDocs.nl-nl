@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: ad1133d17f8d64c79c08437b914ae28e00cae638
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -57,7 +57,7 @@ In dit artikel wordt uitgelegd hoe u de Lookout for Work-app configureert en imp
 
 1. Zorg ervoor dat **iOS-beheer** is ingesteld op het apparaat. Zie [iOS- en Mac-apparaatbeheer instellen](set-up-ios-and-mac-management-with-microsoft-intune.md) voor instructies voor het instellen van uw apparaat voor iOS-beheer.
 
-2. **Onderteken opnieuw** de Lookout for Work-app voor iOS. De Lookout for Work-app voor iOS wordt gedistribueerd buiten de iOS App Store. **Voordat u de app distribueert**, moet u de app opnieuw ondertekenen met het iOS Enterprise Developer-certificaat. Zie het [proces voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS](https://personal.support.lookout.com/hc/en-us/articles/114094038714) (Engelstalig) op de website van Lookout voor gedetailleerde instructies voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS.
+2. **Onderteken opnieuw** de Lookout for Work-app voor iOS. De Lookout for Work-app voor iOS wordt gedistribueerd buiten de iOS App Store. **Voordat u de app distribueert**, moet u de app opnieuw ondertekenen met het iOS Enterprise Developer-certificaat. Zie het [proces voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS](https://personal.support.lookout.com/hc/articles/114094038714) (Engelstalig) op de website van Lookout voor gedetailleerde instructies voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS.
 
 3. Schakel Azure Active Directory-verificatie voor de iOS-gebruikers als volgt in:
   1.  Meld u aan bij de [Azure Active Directory-beheerportal](https://manage.windowsazure.com) en navigeer naar de pagina met toepassingen.
@@ -67,13 +67,13 @@ In dit artikel wordt uitgelegd hoe u de Lookout for Work-app configureert en imp
   4.  Voeg de aanvullende omleidings-URI **&lt;companyportal://code/>** toe, gevolgd door een versie met URL-codering van uw oorspronkelijke omleidings-URI.
   5.  Voeg **overgedragen machtigingen** toe aan uw app.
 
-  Zie [Een native clienttoepassing configureren](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) (Engelstalig) voor meer informatie.
+  Zie [Een native clienttoepassing configureren](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) (Engelstalig) voor meer informatie.
 
-4. Upload het opnieuw ondertekende IPA-bestand, zoals beschreven in het onderwerp [Apps voor mobiele apparaten toevoegen in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune). Stel de minimale versie van het besturingssysteem in op iOS 8.0 of hoger.
+4. Upload het opnieuw ondertekende IPA-bestand, zoals beschreven in het onderwerp [Apps voor mobiele apparaten toevoegen in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune). Stel de minimale versie van het besturingssysteem in op iOS 8.0 of hoger.
 
   ![schermafbeelding van de pagina 'Apps' in de Intune-beheerdersconsole, waarbij de Lookout for Work-app is weergegeven in de lijst met apps](../media/mtp/ios-app-uploaded-intune.png)
 
-5. Maak het configuratiebeleid voor de beheerde app, zoals beschreven in het onderwerp [iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren](https://docs.microsoft.com/en-us/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+5. Maak het configuratiebeleid voor de beheerde app, zoals beschreven in het onderwerp [iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
   ![schermafdruk van de wizard voor een nieuw beleid met de configuratiebeleid voor apps met iOS 8.0 of hoger gemarkeerd](../media/mtp/ios-app-config.png)
 

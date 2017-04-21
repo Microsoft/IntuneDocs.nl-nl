@@ -14,8 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Zie [Bewaking en rapporten voor Microsoft Intune](/Intune/Deploy-Use/monitoring-
 ## <a name="intune-capabilities"></a>Mogelijkheden van Intune
 Intune heeft nog tal van andere mogelijkheden die niet worden behandeld in deze korte instellingsstappen. Een paar voorbeelden van dergelijke mogelijkheden zijn:
 
--   **Toegang tot Exchange en Office 365 controleren.** Zie [App-toegang beheren voor Exchange Online](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) en [App-toegang beheren voor Office 365-services](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) voor meer informatie.
+-   **Toegang tot Exchange en Office 365 controleren.** Zie [App-toegang beheren voor Exchange Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) en [App-toegang beheren voor Office 365-services](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) voor meer informatie.
 
 -   **iOS-apparaten in bedrijfseigendom beheren.** Zie [iOS-apparaten in bedrijfseigendom inschrijven in Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune) voor meer informatie.
 
@@ -56,9 +57,4 @@ Ondersteuningsopties worden beschreven in [Ondersteuning voor Microsoft Intune k
 Meer informatie over [algemene manieren om Intune te gebruiken](common-ways-to-use-intune.md)
 
 Overstappen op een [betaald abonnement](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

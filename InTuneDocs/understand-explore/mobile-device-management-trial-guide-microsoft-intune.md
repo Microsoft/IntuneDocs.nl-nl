@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ De proefversie biedt dezelfde mogelijkheden als de abonnementsversie. Het enige 
 ## <a name="whats-not-covered"></a>Wat er niet wordt behandeld
 |Als u geïnteresseerd bent in |Leest u |
 |------------------------|----------|
-|MDM in een niet-testomgeving | [Aan de slag](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|MDM met Intune en System Center Configuration Manager | [Hybride MDM](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|MDM in een niet-testomgeving | [Aan de slag](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|MDM met Intune en System Center Configuration Manager | [Hybride MDM](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Aangezien de bovenstaande handleidingen u helpen Intune in te stellen in een productieomgeving, zijn ze langer en bevatten ze meer beslissingspunten dan de evaluatiehandleiding.
 
@@ -61,7 +61,7 @@ Als u uw mobiele apparaten wilt beheren met Intune, moet u eerst uw **MDM-instan
 
 Als u Intune geheel zelfstandig gebruikt, waarvan wordt uitgegaan, of als u Intune gebruikt als onderdeel van een EMS-abonnement (Enterprise Mobility + Security), moet u Intune instellen als uw MDM-instantie. Dat wil zeggen dat u Intune aanwijst als de service waarmee mobiele apparaten in uw organisatie worden beheerd.
 
-Klanten die Intune in combinatie met System Center Configuration Manager willen gebruiken om mobiele apparaten te beheren, moeten besluiten of ze Intune of Configuration Manager als MDM-instantie willen gebruiken. Dit is een belangrijke beslissing in een productieomgeving omdat het momenteel zeer moeilijk is om de instelling achteraf te wijzigen. Dit valt echter buiten het kader van deze evaluatiehandleiding. Zie [Choose between standalone Intune and hybrid mobile device management](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) (Kiezen tussen zelfstandige versie van Intune en hybride Mobile Device Management) voor meer informatie over de implicaties van de keuze voor Intune of Configuration Manager als uw MDM-instantie.
+Klanten die Intune in combinatie met System Center Configuration Manager willen gebruiken om mobiele apparaten te beheren, moeten besluiten of ze Intune of Configuration Manager als MDM-instantie willen gebruiken. Dit is een belangrijke beslissing in een productieomgeving omdat het momenteel zeer moeilijk is om de instelling achteraf te wijzigen. Dit valt echter buiten het kader van deze evaluatiehandleiding. Zie [Choose between standalone Intune and hybrid mobile device management](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) (Kiezen tussen zelfstandige versie van Intune en hybride Mobile Device Management) voor meer informatie over de implicaties van de keuze voor Intune of Configuration Manager als uw MDM-instantie.
 
 Voor de proefversie wordt Intune ingesteld als MDM-instantie. Dit heeft geen gevolgen voor uw productieomgeving, tenzij u besluit uw proefversie voor uw productieomgeving te gebruiken.
 
@@ -86,7 +86,7 @@ Download het APNs-certificaat (.pem) en sla het bestand lokaal op. Deze Apple-id
 3.    **Het APNs-certificaat toevoegen aan Intune**<BR/>
 In de Microsoft Intune-beheerconsole gaat u naar **Beheer** > **Mobiele apparaten beheren** > **iOS en Mac OS X** > **Een APNs-certificaat uploaden** en kiest u **Het APNs-certificaat uploaden**. Ga naar het certificaatbestand (.pem), klik op **Openen** en voer uw Apple-id in. Met Het APNs-certificaat kan Intune iOS-apparaten registreren en beheren door beleid naar geregistreerde mobiele apparaten te pushen.
 4.    **Laat uw gebruikers weten hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**<br/>
-Zie [Uw iOS-apparaat registreren bij Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios) of [Uw Mac OS X-apparaat registreren bij Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
+Zie [Uw iOS-apparaat registreren bij Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios) of [Uw Mac OS X-apparaat registreren bij Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>Meer informatie over apparaatregistratiemanagers

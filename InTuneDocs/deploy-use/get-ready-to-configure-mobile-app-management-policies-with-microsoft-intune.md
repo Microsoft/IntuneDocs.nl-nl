@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -57,13 +58,14 @@ Zie [Beveiligingsbeleid voor apps configureren en implementeren in de Microsoft 
 ##  <a name="supported-platforms"></a>Ondersteunde platforms
 - iOS 8.1 of hoger
 - Android 4 of hoger
+- Windows 10
 
 >[!NOTE]
->Windows-apparaten ondersteunen dit beveiligingsbeleid voor apps niet. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
+>Met ingang van versie 1703 kan beveiligingsbeleid voor apps worden gedefinieerd voor Windows 10-apparaten in de MAM zonder inschrijvingsscenario. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 
 ##  <a name="supported-apps"></a>Ondersteunde apps
 * **Microsoft-apps:** bij deze apps is de Intune App SDK al ingebouwd. Deze apps hoeven daarom niet verder te worden verwerkt voordat u het beveiligingsbeleid voor apps toepast.
-Ga voor de volledige lijst met ondersteunde Microsoft-apps naar de [galerie met mobiele toepassingen van Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) op de pagina voor Microsoft Intune-toepassingen van partners. Klik op een app om de ondersteunde scenario's en platformen te bekijken en om te controleren of de app meerdere identiteiten ondersteunt.
+Ga voor de volledige lijst met ondersteunde Microsoft-apps naar de [galerie met mobiele toepassingen van Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) op de pagina voor Microsoft Intune-toepassingen van partners. Klik op een app om de ondersteunde scenario's en platformen te bekijken en om te controleren of de app meerdere identiteiten ondersteunt.
 
 * **Line-Of-Business-apps van uw organisatie:** voordat u beveiligingsbeleid voor apps kunt toepassen, moet u de app voorbereiden voor de opname van de Intune App SDK.
 
@@ -74,7 +76,7 @@ Ga voor de volledige lijst met ondersteunde Microsoft-apps naar de [galerie met 
 ## <a name="prerequisites"></a>Vereisten
 
 -   **Een Microsoft Intune-abonnement**. Eindgebruikers hebben [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenties nodig om apps met beveiligingsbeleid voor apps te kunnen downloaden.
-U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement als u momenteel [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gebruikt om uw apparaten te beheren. U hebt ook een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement als u een Enterprise Mobility Suite (EMS)-licentie hebt aangeschaft. Als u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uitprobeert om te zien wat de MAM-mogelijkheden zijn, kunt u op de [pagina van Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) een proefaccount aanvragen.
+U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement als u momenteel [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gebruikt om uw apparaten te beheren. U hebt ook een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement als u een Enterprise Mobility Suite (EMS)-licentie hebt aangeschaft. Als u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uitprobeert om te zien wat de MAM-mogelijkheden zijn, kunt u op de [pagina van Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) een proefaccount aanvragen.
 
     Als u wilt controleren of u een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement op de Office-portal hebt, gaat u naar de pagina **Facturering**.  Als u een abonnement hebt, moet [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] in het gedeelte met abonnementen zijn gemarkeerd als **Actief**.
 
@@ -96,19 +98,14 @@ U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement 
 
 1.  Meld u met uw beheerdersreferenties aan bij de [Office-portal](http://portal.office.com).
 
-2.  Voeg gebruikers toe zoals wordt beschreven in de sectie **Steps to complete a 30-day evaluation of Intune** (Stappen voor het voltooien van een 30-daagse evaluatie van Intune) in de [Intune-evaluatiehandleiding](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) en wijs vervolgens Intune-licenties toe. Als u een gebruiker toegang wilt geven tot de Office-portal, de Azure AD-portal en de Azure Portal, wijst u aan de gebruiker de **rol van algemeen beheerder** toe.
+2.  Voeg gebruikers toe zoals wordt beschreven in de sectie **Steps to complete a 30-day evaluation of Intune** (Stappen voor het voltooien van een 30-daagse evaluatie van Intune) in de [Intune-evaluatiehandleiding](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) en wijs vervolgens Intune-licenties toe. Als u een gebruiker toegang wilt geven tot de Office-portal, de Azure AD-portal en de Azure Portal, wijst u aan de gebruiker de **rol van algemeen beheerder** toe.
 
-5.  Beveiligingsbeleid voor apps wordt voor gebruikersgroepen geïmplementeerd in Azure Active Directory. Als u gebruikersgroepen wilt maken voor uw beveiligingsbeleid voor apps, maakt u een gebruikersgroep zoals beschreven in de sectie **Een gebruikersgroep maken** van het artikel [Groepen maken om gebruikers en apparaten voor de evaluatieversie in te delen](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
+5.  Beveiligingsbeleid voor apps wordt voor gebruikersgroepen geïmplementeerd in Azure Active Directory. Als u gebruikersgroepen wilt maken voor uw beveiligingsbeleid voor apps, maakt u een gebruikersgroep zoals beschreven in de sectie **Een gebruikersgroep maken** van het artikel [Groepen maken om gebruikers en apparaten voor de evaluatieversie in te delen](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Rollen toewijzen aan gebruikers die geen globale beheerder zijn
 
-Algemene beheerders hebben toegang tot de [Azure Portal](https://portal.azure.com).  Raadpleeg het artikel [Roltoewijzingen gebruiken voor het beheer van de toegang tot de resources van uw Azure-abonnement](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/) als u gebruikers die geen algemene beheerders zijn, in staat wilt stellen beleid te configureren en andere taken voor het beheer van mobiele apps uit te voeren.
+Algemene beheerders hebben toegang tot de [Azure Portal](https://portal.azure.com).  Raadpleeg het artikel [Roltoewijzingen gebruiken voor het beheer van de toegang tot de resources van uw Azure-abonnement](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/) als u gebruikers die geen algemene beheerders zijn, in staat wilt stellen beleid te configureren en andere taken voor het beheer van mobiele apps uit te voeren.
 
 ## <a name="next-steps"></a>Volgende stappen
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
