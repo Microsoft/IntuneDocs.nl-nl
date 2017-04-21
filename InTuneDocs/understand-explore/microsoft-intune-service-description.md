@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune is een cloudservice waarmee u apparaten met Windows, Mac OS X, 
 
 Microsoft biedt het Intune Onboarding-voordeel voor services in abonnementen die daarvoor in aanmerking komen. Met het voorbereidingsvoordeel krijgt u externe ondersteuning van Microsoft-specialisten bij het klaarstomen van uw Intune-omgeving. Zie [Beschrijving Microsoft Intune-voorbereidingsvoordeel](http://go.microsoft.com/fwlink/?LinkId=619281) voor meer informatie over het voorbereidingsvoordeel.
 
-U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.
+U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.
 
 > [!NOTE]
 > Als uw organisatie een werk- of schoolaccount voor Microsoft Online Services heeft en u dit Intune-abonnement na de proefperiode mogelijk in uw productieomgeving wilt gebruiken, kiest u op de geopende pagina de optie **Aanmelden** en voert u de verificatie uit met het account voor de algemeen beheerder voor uw organisatie. Zo zorgt u ervoor dat uw Intune-proefabonnement wordt gekoppeld aan uw bestaande werk- of schoolaccount.
@@ -69,13 +70,13 @@ U kunt Intune op verschillende manieren configureren om de mobiele apparaten en 
 
 -**Zelfstandige configuratie van Intune.** Gebruik de webbeheerconsole in Intune om apparaten in uw organisatie te beheren. Intune kan worden gebruikt zonder lokale IT-infrastructuur. Als u Intune gebruikt met Active Directory Domain Services, kunt u gebruikmaken van domeingebruikersaccounts die u bij Intune beheert met Domain Services.
 
--**Intune met System Center Configuration Manager.** Gebruik de Configuration Manager-beheerconsole om computers en mobiele apparaten in uw bedrijf te beheren. Met deze configuratie kunt u alle apparaten van uw organisatie beheren via één console, de Configuration Manager-beheerconsole. Configuration Manager ondersteunt een zeer groot aantal mobiele apparaten, servers en computers. Zie [Hybride Mobile Device Management (MDM) met System Center Configuration Manager en Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx) voor meer informatie over Configuration Manager. Zie [Kiezen tussen Microsoft Intune standalone en hybride Mobile Device Management met Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) voor meer informatie om te bepalen welke benadering geschikt is voor u.
+-**Intune met System Center Configuration Manager.** Gebruik de Configuration Manager-beheerconsole om computers en mobiele apparaten in uw bedrijf te beheren. Met deze configuratie kunt u alle apparaten van uw organisatie beheren via één console, de Configuration Manager-beheerconsole. Configuration Manager ondersteunt een zeer groot aantal mobiele apparaten, servers en computers. Zie [Hybride Mobile Device Management (MDM) met System Center Configuration Manager en Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx) voor meer informatie over Configuration Manager. Zie [Kiezen tussen Microsoft Intune standalone en hybride Mobile Device Management met Configuration Manager](https://technet.microsoft.com/library/mt706478.aspx) voor meer informatie om te bepalen welke benadering geschikt is voor u.
 
 
 ## <a name="learn-more-about-intune"></a>Meer informatie over Intune
 Voor meer informatie over Intune kunt u de volgende resources raadplegen:
 
-- [Microsoft Intune Vertrouwenscentrum](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) bevat informatie over de beveiligings-, privacy- en nalevingsprocedures van Intune. Daarnaast wordt er een aantal certificaten van Intune beschreven.
+- [Microsoft Intune Vertrouwenscentrum](https://www.microsoft.com/server-cloud/products/intune-trust-center/) bevat informatie over de beveiligings-, privacy- en nalevingsprocedures van Intune. Daarnaast wordt er een aantal certificaten van Intune beschreven.
 
 - [Beheermogelijkheden voor ingeschreven apparaten in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
@@ -84,9 +85,4 @@ Voor meer informatie over Intune kunt u de volgende resources raadplegen:
 [Documentatiebibliotheek voor System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
 [Wat is er nieuw in Microsoft Intune?](/intune/deploy-use/whats-new-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ Als u al een werk- of schoolaccount hebt, kunt u zich gewoon **aanmelden** met d
 ## <a name="post-sign-up-considerations"></a>Overwegingen voor na uw registratie
 Als u zich registreert voor een nieuw abonnement, ontvangt u een e-mailbericht met gegevens over uw account op het e-mailadres dat u hebt opgegeven tijdens het registratieproces. In deze e-mail wordt bevestigd dat uw abonnement actief is.
 
-Wanneer het registratieproces is voltooid, wordt u omgeleid naar een pagina waarop u gebruikers kunt toevoegen en licenties kunt toewijzen met behulp van het Office 365-beheercentrum. Als u alleen cloudgebaseerde accounts hebt met de standaarddomeinnaam onmicrosoft.com, kunt u direct verder gaan om gebruikers toe te voegen en licenties toe te wijzen. Als u echter de aangepaste domeinnaam van uw organisatie gaat gebruiken of gebruikersaccountgegevens vanuit on-premises Active Directory wilt synchroniseren, kunt u dat browservenster sluiten en verder gaan met stap 2 van deze snelstartgids. Meer informatie over [Uw eerste onmicrosoft.com-domein in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+Wanneer het registratieproces is voltooid, wordt u omgeleid naar een pagina waarop u gebruikers kunt toevoegen en licenties kunt toewijzen met behulp van het Office 365-beheercentrum. Als u alleen cloudgebaseerde accounts hebt met de standaarddomeinnaam onmicrosoft.com, kunt u direct verder gaan om gebruikers toe te voegen en licenties toe te wijzen. Als u echter de aangepaste domeinnaam van uw organisatie gaat gebruiken of gebruikersaccountgegevens vanuit on-premises Active Directory wilt synchroniseren, kunt u dat browservenster sluiten en verder gaan met stap 2 van deze snelstartgids. Meer informatie over [Uw eerste onmicrosoft.com-domein in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!TIP]
 > Wanneer u zich een volgende keer aanmeldt bij Intune, wordt u automatisch omgeleid naar de beheerconsole van Intune.
@@ -53,9 +54,4 @@ Wanneer het registratieproces is voltooid, wordt u omgeleid naar een pagina waar
 >[!div class="step-by-step"]
 
 >[&larr; **Vereisten**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Domeininstellingen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -153,7 +153,7 @@ Gebruikers- en apparaatgroepen bepalen het doel van een implementatie. Dat kan b
 
 -   Meer informatie over [het plannen van gebruikers- en apparaatgroepen](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Informatie over [het maken van gebruikers- en apparaatgroepen](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Informatie over [het maken van gebruikers- en apparaatgroepen](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### <a name="public-key-infrastructure-pki"></a>Public Key Infrastructure (PKI)
 
@@ -326,7 +326,7 @@ Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van een VPN-pr
 
 Met e-mailprofielen kan een e-mailclient automatisch worden ingesteld met verbindingsgegevens en e-mailconfiguratie. Intune ondersteunt e-mailprofielen op sommige apparaten.
 
--   Meer informatie over [e-mailprofielen](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) en welke platformen worden ondersteund.
+-   Meer informatie over [e-mailprofielen](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) en welke platformen worden ondersteund.
 
 Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van e-mailprofielen:
 

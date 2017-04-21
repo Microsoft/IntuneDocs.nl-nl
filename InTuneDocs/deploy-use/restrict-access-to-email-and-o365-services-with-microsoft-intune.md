@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ U kunt toegang tot uw bedrijfs-e-mail, Office 365-services zoals **Exchange On-p
 ## <a name="how-does-conditional-access-work"></a>Hoe werkt voorwaardelijke toegang?
 U kunt de instellingen voor nalevingsbeleid gebruiken om te evalueren in hoeverre het apparaat aan het beleid voldoet. Deze evaluatie wordt vervolgens gebruikt voor een beleid voor voorwaardelijke toegang om de toegang tot een specifieke service te beperken of toe te staan. Wanneer u een beleid voor voorwaardelijke toegang gebruikt in combinatie met een nalevingsbeleid voor apparaten, is de service alleen toegankelijk voor apparaten die voldoen aan het beleid. Het nalevingsbeleid en het beleid voor voorwaardelijke toegang worden op de gebruiker toegepast. Een apparaat dat de gebruiker gebruikt voor toegang tot de services wordt gecontroleerd op naleving van het beleid.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Houd er rekening mee dat er nalevingsbeleid moet worden geïmplementeerd voor de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden geëvalueerd.
 > Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat voldoet aan het beleid en worden er geen toegangsbeperkingen toegepast.
 
@@ -48,7 +48,7 @@ Microsoft Intune en Azure Active Directory (Azure AD) Premium werken naadloos sa
 
 **Azure AD Premium-licenties** kunnen als zelfstandige service of (samen met Intune) als onderdeel van een Enterprise-overeenkomst worden gekocht. Als u beleid voor voorwaardelijke toegang hebt geïmplementeerd met Intune, zorg er dan voor dat u de juiste Azure AD Premium- of **EMS-licenties** hebt.
 
-- Raadpleeg de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/en-us/pricing/details/active-directory/) voor meer informatie.
+- Raadpleeg de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/pricing/details/active-directory/) voor meer informatie.
 
 Controleer ook of de gebruikers voor wie u beleid voor voorwaardelijke toegang wilt instellen, [de Azure AD Premium- of EMS-licenties toegewezen hebben gekregen](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 

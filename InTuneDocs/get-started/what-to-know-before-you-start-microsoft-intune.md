@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Voor de verschillende beheertaken moet u een van de volgende beheerwebsites gebr
 |**Bedrijfsportalwebsite**     |**Op mobiele apparaten:** gebruik de standaardwebbrowser voor elk ondersteund platform   <br /><br />**Op Windows-pc's:** Internet Explorer 10 of hoger, of Microsoft Edge<br /><br />**Mac OS X 10.9 of hoger:** Apple Safari    |
 
 > [!Note]
-> Microsoft Edge en mobiele browsers worden niet ondersteund voor de beheerconsole omdat ze geen ondersteuning bieden voor [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx). De Intune-console zal op een gegeven moment geen ondersteuning meer bieden voor Silverlight. Uiteindelijk worden alle Intune-functies voor het beheer van mobiele apparaten en toepassingen [beschikbaar gesteld in de nieuwe Microsoft Azure-portal](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
+> Microsoft Edge en mobiele browsers worden niet ondersteund voor de beheerconsole omdat ze geen ondersteuning bieden voor [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx). De Intune-console zal op een gegeven moment geen ondersteuning meer bieden voor Silverlight. Uiteindelijk worden alle Intune-functies voor het beheer van mobiele apparaten en toepassingen [beschikbaar gesteld in de nieuwe Microsoft Azure-portal](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 
 Alleen gebruikers met servicebeheerdersmachtigingen en tenantbeheerders met de rol Algemene beheerder kunnen zich bij deze portal aanmelden. Voor toegang tot de beheerconsole moet uw account een licentie voor het gebruik van Intune en de aanmeldingsstatus **Toegestaan** hebben.

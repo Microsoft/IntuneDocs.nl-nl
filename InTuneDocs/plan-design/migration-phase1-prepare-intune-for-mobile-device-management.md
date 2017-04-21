@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 
 -   Zijn de gebruikers bekend bent met technologie en IT in het algemeen?
 
-### <a name="what-is-your-device-security-policy"></a>Wat voor beveiligingsbeleid voor apparaten hanteert u? 
+### <a name="what-is-your-device-security-policy"></a>Wat voor beveiligingsbeleid voor apparaten hanteert u?
 
 -   Wilt u gebruikmaken van versleuteling op apparaatniveau?
 
@@ -84,7 +84,7 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 
 ## <a name="additional-information"></a>Aanvullende informatie
 
--   Bekijk voor meer gedetailleerde voorbeelden deze [casestudy's](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) uit verschillende bedrijfstakken om te zien hoe organisaties de vereisten voor het beheer van mobiele apparaten hebben geëvalueerd.
+-   Bekijk voor meer gedetailleerde voorbeelden deze [casestudy's](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) uit verschillende bedrijfstakken om te zien hoe organisaties de vereisten voor het beheer van mobiele apparaten hebben geëvalueerd.
 
 ## <a name="next-steps"></a>Volgende stappen
 

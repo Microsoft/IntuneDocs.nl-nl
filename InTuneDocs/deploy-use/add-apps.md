@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd
 
 |App-type|Details|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Apps van dit type moeten ondersteuning bieden voor installatie op de achtergrond, zonder gebruikersinvoer. Uw appdocumentatie moet alle relevante opdrachtregelopties bevatten om de app op de achtergrond te installeren (bijvoorbeeld **/q**). U vindt een lijst met algemene opdrachtregelopties in [Opdrachtregelschakelopties voor het hulpprogramma Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Aanvullende bestanden en mappen die voor het installatieprogramma van de app vereist zijn, moeten beschikbaar zijn op de locatie die u voor de installatiebestanden van de app opgeeft.<br><br>In de meeste gevallen hoeven voor bestanden van Windows Installer (.msi) en Windows Installer-patch (.msp) geen opdrachtregelargumenten te worden geïnstalleerd door Intune. Raadpleeg de documentatie van uw app.<br><br>Als opdrachtregelargumenten vereist zijn, moeten deze worden ingevoerd als naamwaardeparen (zoals TRANSFORMS=custom_transform.mst).<br><br>Dit type app is alleen beschikbaar voor pc’s waarop de Intune-softwareclient wordt uitgevoerd.|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Apps van dit type moeten ondersteuning bieden voor installatie op de achtergrond, zonder gebruikersinvoer. Uw appdocumentatie moet alle relevante opdrachtregelopties bevatten om de app op de achtergrond te installeren (bijvoorbeeld **/q**). U vindt een lijst met algemene opdrachtregelopties in [Opdrachtregelschakelopties voor het hulpprogramma Microsoft Windows Installer](https://support.microsoft.com/kb/227091).<br><br>Aanvullende bestanden en mappen die voor het installatieprogramma van de app vereist zijn, moeten beschikbaar zijn op de locatie die u voor de installatiebestanden van de app opgeeft.<br><br>In de meeste gevallen hoeven voor bestanden van Windows Installer (.msi) en Windows Installer-patch (.msp) geen opdrachtregelargumenten te worden geïnstalleerd door Intune. Raadpleeg de documentatie van uw app.<br><br>Als opdrachtregelargumenten vereist zijn, moeten deze worden ingevoerd als naamwaardeparen (zoals TRANSFORMS=custom_transform.mst).<br><br>Dit type app is alleen beschikbaar voor pc’s waarop de Intune-softwareclient wordt uitgevoerd.|
 |**App-pakket voor Android (&#42;.apk)**|Als u Android-apps wilt implementeren, moet u een geldig .apk-pakket hebben.|
 |**App-pakket voor iOS (&#42;.ipa)**|Als u iOS-apps wilt implementeren, moet u een geldig .ipa-pakket hebben.<br><br>Het .ipa-pakket moet zijn ondertekend door Apple en de vervaldatum in het inrichtingsprofiel moet geldig zijn. Intune kan iOS-toepassingen met een bedrijfscertificaat distribueren.<br><br>Niet alle apps met Apple-ontwikkelaarscertificaat worden ondersteund.<br><br>Uw bedrijf moet zijn geregistreerd voor het iOS Developer Enterprise Program.<br><br>Zorg ervoor dat de firewall van uw organisatie toegang geeft tot de inrichtings- en certificeringswebsites voor iOS.<br><br>U hoeft geen manifestbestand (.plist) te implementeren met de app.|
 |**App-pakket voor Windows Phone (&#42;.xap, .appx, .appxbundle)**|Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
@@ -49,7 +49,7 @@ Gebruik een externe koppeling wanneer u beschikt over een:
 
 Apps op basis van externe koppelingen worden niet opgeslagen in de Intune-cloudopslag.
 ### <a name="managed-ios-app-from-the-app-store"></a>**Beheerde iOS-app uit de App Store**
-U kunt beheerde iOS-apps gebruiken om gratis iOS-apps uit de App Store te beheren en implementeren. U kunt ook beheerde iOS-apps gebruiken om [Mobile Application Management-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) aan [compatibele apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) te koppelen en hun status controleren in de beheerconsole.<br /><br />Beheerde iOS-apps worden niet opgeslagen in uw Intune-cloudopslag.
+U kunt beheerde iOS-apps gebruiken om gratis iOS-apps uit de App Store te beheren en implementeren. U kunt ook beheerde iOS-apps gebruiken om [Mobile Application Management-beleid](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) aan [compatibele apps](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) te koppelen en hun status controleren in de beheerconsole.<br /><br />Beheerde iOS-apps worden niet opgeslagen in uw Intune-cloudopslag.
 
 > [!TIP]
 > Opties voor mobiele apparaten worden pas beschikbaar wanneer u de [MDM-instantie](prerequisites-for-enrollment.md) hebt ingesteld op Intune.

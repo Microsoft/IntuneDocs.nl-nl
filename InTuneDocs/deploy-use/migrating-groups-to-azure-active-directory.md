@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Sommige bestaande mogelijkheden van Intune-groepen zijn niet beschikbaar in Azur
 ## <a name="how-to-get-ready"></a>Hoe bereidt u zich voor
 
 - Lees de volgende Azure AD-onderwerpen voor informatie over Azure AD-beveiligingsgroepen en hoe deze werken:
-    -  [Toegang tot resources beheren met Azure Active Directory-groepen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Groepen beheren in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Toegang tot resources beheren met Azure Active Directory-groepen](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Groepen beheren in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Overweeg het verwijderen van Intune-groepen die u niet meer gebruikt voordat u migreert.
 -  Zorg ervoor dat alle beheerders die groepen moeten maken, worden toegevoegd aan de Azure AD-rol **Intune-servicebeheerder**. Houd er rekening mee dat de rol Servicebeheerder van Azure AD geen **Groep beheren**-machtigingen heeft.
 -  Als u gebruikmaakt van groepen met de optie **Specifieke leden uitsluiten**, overweeg dan om deze groepen zodanig in te stellen dat ze geen gebruikmaken van uitsluitingen of om geavanceerde regels in uw Azure AD-query toe te passen om hetzelfde resultaat te verkrijgen.

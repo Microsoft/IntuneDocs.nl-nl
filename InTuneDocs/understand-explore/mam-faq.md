@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 **Wat is MAM?** [Intune Mobile Application Management](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) verwijst naar de suite met Intune-beheerfuncties waarmee u mobiele apps voor uw gebruikers kunt publiceren, pushen, configureren, beveiligen, controleren en bijwerken.
 
-**Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM-WE kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
+**Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM-WE kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
 **Welke apparaatconfiguraties ondersteunt MAM?** Intune MAM ondersteunt twee configuraties:
   1. **Intune MDM + MAM**: dit is de eerste configuratie die door MAM wordt ondersteund wanneer de app voor het eerst wordt gestart. IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Voor het beheren van apps met MDM + MAM moeten klanten de zelfstandige Intune-console op http://manage.microsoft.com gebruiken.
@@ -48,7 +49,7 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps die u kunt beheren met beleidsregels voor de beveiliging van apps
 
-**Welke apps kunnen worden beheerd door beleidsregels voor de beveiliging van apps?** Alle apps met de functionaliteit van de [Intune App SDK](../develop/intune-app-sdk.md) of die zijn ingepakt met de [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
+**Welke apps kunnen worden beheerd door beleidsregels voor de beveiliging van apps?** Alle apps met de functionaliteit van de [Intune App SDK](../develop/intune-app-sdk.md) of die zijn ingepakt met de [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
 **Wat zijn de basisvereisten voor het gebruik van beleidsregels voor de beveiliging van apps die geschikt zijn voor Intune?**
   1. De eindgebruiker moet een AAD-account (Azure Active Directory) hebben. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) voor informatie over het maken van Intune-gebruikers in Azure Active Directory.
@@ -59,18 +60,18 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
   4. De eindgebruiker moet zich aanmelden bij de app met zijn of haar AAD-account.
 
-**Wat zijn de aanvullende vereisten voor het gebruik van de [mobiele app van Outlook](https://www.microsoft.com/en-us/outlook-com/mobile/)?**
+**Wat zijn de aanvullende vereisten voor het gebruik van de [mobiele app van Outlook](https://www.microsoft.com/outlook-com/mobile/)?**
 
   1. Eindgebruikers moeten de mobiele app van Outlook op hun apparaat hebben geïnstalleerd.
 
-  2. De eindgebruiker moet een [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online)-postvak en -licentie aan het Azure Active Directory-account hebben gekoppeld.
+  2. De eindgebruiker moet een [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-postvak en -licentie aan het Azure Active Directory-account hebben gekoppeld.
 
   >[!NOTE]
   > De mobiele app van Outlook ondersteunt momenteel alleen Microsoft Exchange Online en biedt geen ondersteuning voor Exchange On-Premises of Exchange in Office 365 Dedicated.
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en PowerPoint](https://products.office.com/business/office)?**
 
-  1. Eindgebruikers moeten een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan hun Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten en een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) omvatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US) worden toegewezen in de [Office-portal](http://portal.office.com).
+  1. Eindgebruikers moeten een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan hun Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten en een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) omvatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](http://portal.office.com).
 
   2. Eindgebruikers moeten de app [OneDrive](https://onedrive.live.com/about/) op hun apparaat hebben geïnstalleerd en zijn aangemeld met hun AAD-account.
 
@@ -140,9 +141,4 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 - [De Mobile Application Management-configuratie valideren](../deploy-use/validate-mobile-application-management.md)
 - [Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps (Mobile App Management) met Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Ondersteuning voor Microsoft Intune krijgen](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

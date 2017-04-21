@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,14 +38,14 @@ U hoeft uw app *niet* te registreren. Voor interne line-of-business-apps impleme
 
 U _**moet**_ uw app eerst registreren bij Microsoft Intune en akkoord gaan met de voorwaarden van de registratie. Na de registratie kunnen IT-beheerders beleid voor app-beveiliging toepassen op de compatibele app, die wordt vermeld als app-partner van Intune.
 
-Zolang de registratie nog niet is voltooid en bevestigd door het team van Microsoft Intune, krijgen Intune-beheerders nog niet de mogelijkheid om beleid voor app-beveiliging toe te passen op de dieptekoppeling van uw app. Uw app wordt ook toegevoegd aan de [pagina voor Microsoft Intune-partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Op deze pagina wordt het pictogram van uw app weergegeven om aan te geven dat de app het Intune-beleid voor app-beveiliging ondersteunt.
+Zolang de registratie nog niet is voltooid en bevestigd door het team van Microsoft Intune, krijgen Intune-beheerders nog niet de mogelijkheid om beleid voor app-beveiliging toe te passen op de dieptekoppeling van uw app. Uw app wordt ook toegevoegd aan de [pagina voor Microsoft Intune-partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Op deze pagina wordt het pictogram van uw app weergegeven om aan te geven dat de app het Intune-beleid voor app-beveiliging ondersteunt.
 
 Als u het registratieproces wilt starten, vult u de [vragenlijst voor app-partners van Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u) in.
 
 De e-mailadressen die u vermeldt in uw antwoorden, worden gebruikt om contact met u op te nemen voor het vervolg van het registratieproces. Ook wordt het e-mailadres voor registratie gebruikt om contact met u op te nemen bij verdere vragen.
 
 > [!NOTE]
-> Op alle gegevens die via de vragenlijst en via e-mailcorrespondentie met het Microsoft Intune-team worden verzameld, is de [privacyverklaring van Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx) van toepassing.
+> Op alle gegevens die via de vragenlijst en via e-mailcorrespondentie met het Microsoft Intune-team worden verzameld, is de [privacyverklaring van Microsoft](https://www.microsoft.com/privacystatement/default.aspx) van toepassing.
 
 **Wat u tijdens het registratieproces kunt verwachten**:
 
@@ -52,7 +53,7 @@ De e-mailadressen die u vermeldt in uw antwoorden, worden gebruikt om contact me
 
 2. Nadat alle benodigde informatie is ontvangen, ontvangt u de Overeenkomst voor app-partners van Microsoft Intune ter ondertekening. In deze overeenkomst worden de voorwaarden beschreven die uw bedrijf moet accepteren voordat u een app-partner van Microsoft Intune kunt worden.
 
-3. U ontvangt een bericht wanneer de registratie van uw app bij de Microsoft Intune-service is geslaagd en wanneer uw app wordt weergegeven op de site voor [Microsoft Intune-partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+3. U ontvangt een bericht wanneer de registratie van uw app bij de Microsoft Intune-service is geslaagd en wanneer uw app wordt weergegeven op de site voor [Microsoft Intune-partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 4. Tot slot wordt de dieptekoppeling voor uw app toegevoegd aan de volgende maandelijkse service-update voor Intune. Als u de registratiegegevens bijvoorbeeld in juli hebt ingevuld, wordt de dieptekoppeling vanaf half augustus ondersteund.
 
@@ -137,9 +138,4 @@ Het logo ziet eruit als het pictogram van een aktetas zoals in de voorbeelden hi
 * Een toepassing voor het bewerken van afbeeldingen die **EPS**-bestanden kan lezen of een Adobe-toepassing die **AI**-bestanden kan lezen.
 
 * U kunt de [hulpmiddelen en richtlijnen voor het app-logo van Intune](https://github.com/msintuneappsdk/intune-app-partner-badge) vinden op de Microsoft Intune GitHub.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
