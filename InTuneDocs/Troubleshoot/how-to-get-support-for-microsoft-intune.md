@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen voor beheerders
+# <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnementsondersteuning voor Microsoft Intune. Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen. Online technische ondersteuning is beschikbaar in het Engels en Japans. Telefonische ondersteuning en online-ondersteuning bij factureren zijn in meer talen beschikbaar.
 
 Ondersteuning voor Intune en voor Intune in combinatie met Configuration Manager is gratis. Premier Support-klanten worden kosten in rekening gebracht voor vragen over procedures (bijvoorbeeld hoe het configureren van een functie van Intune in zijn werk gaat).
+
+>[!IMPORTANT]
+> Neem voor technische ondersteuning bij producten die met Intune werken en niet door Microsoft zijn gemaakt, bijvoorbeeld SaaSwedo, Cisco of Lookout, contact op met de leverancier van dat product om te controleren of u het product correct hebt geconfigureerd, voordat u een aanvraag opent bij Intune-ondersteuning.
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Hulp krijgen zonder een ondersteuningsticket te openen
 
@@ -39,6 +42,13 @@ Bekijk de volgende bronnen voor antwoorden en informatie voordat u een ondersteu
 Stel een vraag of start een discussie met technische experts van Microsoft. Wij geven antwoorden en inzichten op het doorzoekbare [Microsoft Intune TechNet-forum](https://social.technet.microsoft.com/Forums/home).
 
 ![Microsoft Intune TechNet-forum](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Aan de slag met het forum
+
+1. Voer in het vak Forums op de pagina voor forums Microsoft Intune in en selecteer het item vervolgens in de lijst.<br>
+![Selectiebesturingselement voor Intune-forum](./media/forum-select-intune.png)
+2. U ziet nu Microsoft Intune in uw lijst met geselecteerde forums.<br>
+![Intune geselecteerd in besturingselement voor forums](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice-productfeedbacksite
 

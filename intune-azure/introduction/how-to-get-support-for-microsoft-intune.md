@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4c790438911b06915c49bd76a4ae413b7a9471d1
-ms.openlocfilehash: 70f9638941b61309fc2d97987ab20b3d54e529ee
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 679ac408349a82b17ec63109770126e0ad072c6d
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -31,6 +31,10 @@ Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnemen
 
 Ondersteuning voor Intune en voor Intune in combinatie met Configuration Manager is gratis. Premier Support-klanten worden kosten in rekening gebracht voor vragen over procedures (bijvoorbeeld hoe het configureren van een functie van Intune in zijn werk gaat).
 
+>[!IMPORTANT]
+> Neem voor technische ondersteuning bij producten die met Intune werken en niet door Microsoft zijn gemaakt, bijvoorbeeld SaaSwedo, Cisco of Lookout, contact op met de leverancier van dat product om te controleren of u het product correct hebt geconfigureerd, voordat u een aanvraag opent bij Intune-ondersteuning.
+
+
 ## <a name="find-help-without-opening-a-support-ticket"></a>Hulp krijgen zonder een ondersteuningsticket te openen
 
 Bekijk de volgende bronnen voor antwoorden en informatie voordat u een ondersteuningsticket maakt. U kunt ook [algemene tips voor probleemoplossing voor Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune) doorlezen.
@@ -40,6 +44,13 @@ Bekijk de volgende bronnen voor antwoorden en informatie voordat u een ondersteu
 Stel een vraag of start een discussie met technische experts van Microsoft. Wij geven antwoorden en inzichten op het doorzoekbare [Microsoft Intune TechNet-forum](https://social.technet.microsoft.com/Forums/home).
 
 ![Microsoft Intune TechNet-forum](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Aan de slag met het forum
+
+1. Voer in het vak Forums op de pagina voor forums Microsoft Intune in en selecteer het item vervolgens in de lijst.<br>
+![Selectiebesturingselement voor Intune-forum](./media/forum-select-intune.png)
+2. U ziet nu Microsoft Intune in uw lijst met geselecteerde forums.<br>
+![Intune geselecteerd in besturingselement voor forums](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice-productfeedbacksite
 
