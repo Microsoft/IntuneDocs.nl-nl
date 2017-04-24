@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/22/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: ed878327650b4560a891f9acb470b31aa64fbfa6
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: 6da1d00ce654add003a2f8e39b1a1c987d96e5a4
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -33,7 +33,7 @@ Wanneer u een apparaat versleutelt, versleutelt u de informatie erop op met behu
 Sommige Android-apparaten met versie 7.0+ versleutelen gegevens op een manier die inconsistent is met bepaalde Android-platformstandaarden. Deze apparaten lijken vanuit de fabriek al gecodeerd te zijn, maar Intune ziet de gebruikte methoden als een risico dat de gegevens van het apparaat onbeschermd zijn tegen kwaadwillende gebruikers die fysieke toegang tot het apparaat hebben.
 
 > [!Note]
-> Microsoft werkt met een lijst fabrikanten om deze problemen op te lossen, en deze lijst wordt indien nodig bijgewerkt. 
+> Microsoft werkt met alle vermelde fabrikanten om dit probleem op te lossen. De lijst wordt bijgewerkt als er problemen zijn opgelost.
 
 ## <a name="an-incomplete-list-of-devices"></a>Een onvolledige lijst apparaten
 
