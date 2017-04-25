@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer? 
+# <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Kies een van de volgende opties:
 - **Overzicht**: informatie over apparaten die u hebt ingeschreven en de besturingssystemen die op elk apparaat worden uitgevoerd.
 - **Beheren**: kies **Alle apparaten** voor een overzicht van de apparaten die u beheert.
     Selecteer een van deze apparaten in de lijst om de blade <*apparaatnaam*> **Overzicht** te kiezen, waar u kunt een van de volgende opties kunt selecteren:
-    - **Overzicht**: algemene informatie over het apparaat, waaronder informatie over de naam van het apparaat, de eigenaar, of het wel of geen BYOD-apparaat is en wanneer het voor het laatst is ingecheckt. 
-                
+    - **Overzicht**: algemene informatie over het apparaat, waaronder informatie over de naam van het apparaat, de eigenaar, of het wel of geen BYOD-apparaat is en wanneer het voor het laatst is ingecheckt.
+
     - **Hardware**: meer gedetailleerde informatie over het apparaat, zoals de beschikbare opslagruimte, het model en de fabrikant.
     ![Beheerde hardware-inventaris van apparaten](./media/hardware-inventory.png)
     - **Gedetecteerde toepassingen**: geeft een lijst van alle apps weer die op het apparaat zijn geïnstalleerd.
@@ -67,6 +67,12 @@ Hiermee wordt een nieuwe wachtwoordcode gegenereerd voor het <*apparaat dat word
 ### <a name="bypass-activation-lock"></a>**Activeringsvergrendeling overslaan**
 Hiermee verwijdert u de activeringsvergrendeling van een iOS-apparaat zonder dat u de Apple ID en het wachtwoord van de gebruiker nodig hebt. Als u de activeringsvergrendeling hebt overgeslagen, wordt de activeringsvergrendeling opnieuw ingeschakeld zodra de app Zoek mijn iPhone start. Sla de activeringsvergrendeling alleen over als u fysiek toegang hebt tot het apparaat.
 
+### <a name="fresh-start"></a>**Nieuwe start**
+
+Hiermee verwijdert u alle apps die zijn geïnstalleerd op een computer met Windows 10 met de makersupdate. De computer wordt vervolgens automatisch bijgewerkt naar de nieuwste versie van Windows.
+U kunt dit gebruiken om vooraf geïnstalleerde OEM-apps te verwijderen die vaak op nieuwe computers staan. U kunt configureren of de gebruikersgegevens bewaard blijven wanneer u deze actie uitvoert. In dit geval worden apps en instellingen verwijderd, maar de inhoud van de basismap Gebruikers blijft bewaard.
+
+
 ### <a name="lost-mode"></a>**Modus Apparaat verloren**
 Als een iOS-apparaat is verloren of gestolen, kunt u de modus Apparaat verloren inschakelen. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven. U doet dit als volgt:
 1.    Kies **Meer** > **modus Apparaat verloren** op de eigenschappenblade voor een iOS-apparaat.
@@ -78,7 +84,7 @@ Als u de modus Apparaat verloren wilt gebruiken, moet het apparaat een iOS-appar
 ### <a name="locate-device"></a>**Apparaat zoeken**
 Gebruik deze externe actie om de locatie van een verloren of gestolen iOS-apparaat op een kaart weer te geven. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, moet op het apparaat de modus Apparaat verloren zijn ingeschakeld.
 1.    Kies **Meer** > **Apparaat zoeken** op de eigenschappenblade voor een iOS-apparaat.
-2.    Als het apparaat is gevonden, wordt de locatie weergegeven op de blade **Apparaat zoeken**. 
+2.    Als het apparaat is gevonden, wordt de locatie weergegeven op de blade **Apparaat zoeken**.
     ![De blade Apparaat zoeken](./media/locate-device.png)
 
 >[!NOTE]
