@@ -12,7 +12,7 @@
 
 # [Aan de slag](get-started/get-started.md)
 ## [Intune instellen](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Vereisten]
+### Vereisten
 #### [Ondersteunde apparaten](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Netwerkgebruik](get-started/network-bandwidth-use.md)
 ### [Aanmelden bij Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [App-gegevens beveiligen met MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portal voor beveiligingsbeleid voor apps](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Aan de slag met configureren van beveiligingsbeleid voor apps](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Beveiligingsbeleid voor apps maken en implementeren](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Aan de slag met configureren van beveiligingsbeleid voor apps in iOS en Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Aan de slag met configureren van beveiligingsbeleid voor apps in Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Beveiligingsbeleid voor Android-apps](deploy-use/android-mam-policy-settings.md)
 #### [Beveiligingsbeleid voor iOS-apps](deploy-use/ios-mam-policy-settings.md)
+#### [Beveiligingsbeleid voor Windows-apps](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Beveiligingsbeleid voor apps in iOS en Android maken en implementeren](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Beveiligingsbeleid voor apps in Windows 10 maken en implementeren](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Beveiligingsbeleid voor apps valideren](deploy-use/validate-mobile-application-management.md)
 #### [Naleving van beveiligingsbeleid voor apps bewaken](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
