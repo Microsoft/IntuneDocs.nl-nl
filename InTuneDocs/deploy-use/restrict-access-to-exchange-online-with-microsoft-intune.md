@@ -78,8 +78,6 @@ U kunt toegang tot e-mail van Exchange Online beveiligen vanuit **Outlook** en a
 - Android 4.0 en hoger, Samsung Knox Standard 4.0 en hoger, en Android for Work
 - iOS 8.0 en hoger
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 **Moderne verificatie** houdt aanmelding bij Microsoft Office-clients in op basis van Active Directory Authentication Library (ADAL).
 
 -   Dankzij verificatie op basis van ADAL is voor Office-clients verificatie via een browser (ook wel passieve verificatie genoemd) mogelijk. Een gebruiker wordt hierbij naar een aanmeldingspagina geleid om de verificatie uit te voeren.

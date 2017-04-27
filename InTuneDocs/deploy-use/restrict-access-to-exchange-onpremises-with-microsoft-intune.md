@@ -83,10 +83,7 @@ Het volgende wordt ondersteund:
 -   Exchange ActiveSync-mailclients zoals Gmail op Android 4 of hoger.
 -   Exchange ActiveSync-mailclients op **Android for Work-apparaten:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen in combinatie met Android for Work als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund.
 
 ## <a name="support-for-pcs"></a>Ondersteuning voor pc's

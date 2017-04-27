@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -36,8 +37,6 @@ Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi-
  -  Android for Work
  -  Windows 8.1 en hoger
  -  Windows Phone 8.1 en hoger
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-Fi, zoals beschreven in [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md). U kunt een **PKCS #12-certificaatprofiel (.pfx)** *of* een **SCEP-certificaatprofiel** maken en implementeren voor apparaten met deze platformen:
 
@@ -62,9 +61,4 @@ U moet voor elk platform een afzonderlijk profiel maken. Wanneer u het profiel m
 - [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md)
 - [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md)
 - [Intune-certificaatprofielen configureren](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
