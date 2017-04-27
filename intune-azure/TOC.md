@@ -118,7 +118,6 @@
 #### [Indeling van het startscherm voor iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [App-meldingen voor iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Gedeelde apparaten voor iOS](configure-devices/shared-device-settings-for-ios.md)
-#### [Webinhoudsfilter voor iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Apparaatbeperkingen configureren](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [Wat is voorwaardelijke toegang?](conditional-access/what-is-conditional-access.md)
 ## Procedures
 ### [Exchange On-Premises Connector installeren](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Beleid voor voorwaardelijke toegang maken](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Maken en toewijzen van beleid voor voorwaardelijke toegang](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Naleving van voorwaardelijke toegang bewaken](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Toegangsbeheer
 ## [Wat is op rollen gebaseerd toegangsbeheer?](access-control/role-based-access-control.md)
