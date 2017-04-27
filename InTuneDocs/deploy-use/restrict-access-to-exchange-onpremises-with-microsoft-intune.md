@@ -54,7 +54,7 @@ Controleer het volgende:
 
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
--  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd ** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-  Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -  Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
 
