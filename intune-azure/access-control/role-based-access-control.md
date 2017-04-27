@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ De nieuwe rol wordt weergegeven in de lijst op de blade **Rollen**.
 ## <a name="how-to-assign-a-role"></a>Een rol toewijzen
 
 1. Kies op de blade **Rollen** van de workload **Toegangsbeheer** de ingebouwde of aangepaste rol die u wilt toewijzen.
-2. Kies **Beheren** > **Toewijzingen** op de blade <*rolnaam*> - **Eigenschappen**.
-    >[!TIP]
-    >Op deze blade kunt u ook bestaande rollen bewerken of verwijderen.
+2. Kies **Beheren** > **Toewijzingen** op de blade <*rolnaam*> - **Eigenschappen**. Op deze blade kunt u ook bestaande rollen bewerken of verwijderen.
 3. Kies **Toewijzen** op de volgende blade.
 4. Voer op de blade **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
     - **Leden**: selecteer de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
