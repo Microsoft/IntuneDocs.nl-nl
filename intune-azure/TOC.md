@@ -58,13 +58,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Procedures
 ### [Volledig of selectief wissen gebruiken](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Android-apparaten op afstand beheren](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Gebruikers beheren
 ## [Wat is gebruikersbeheer?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Aan de slag](manage-users/get-started-with-groups.md)
+## [Gebruikers helpen](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
