@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Als u de beleidswaarden voor **Endpoint Protection installeren** en **Endpoint P
 |**Activiteit van bestanden en programma's op de computer bewaken**|Hiermee schakelt u in dat activiteiten van binnenkomende en uitgaande bestanden en van programma's op computers worden bewaakt. Met deze instelling kan Endpoint Protection bewaken wanneer bestanden en programma's worden gestart en wordt u geïnformeerd over alle acties die ze uitvoeren of acties die worden uitgevoerd op deze bestanden en programma's.<br /><br />Aanbevolen waarde: **Ja**|
 |**Bewaakte bestanden**|Hiermee kunt u instellen dat alleen binnenkomende, alleen uitgaande of alle bestanden moeten worden bewaakt.<br /><br />Aanbevolen waarde: **Alle bestanden bewaken**|
 |**Gedragscontrole inschakelen**|Hiermee kan Microsoft Intune Endpoint Protection controleren op bepaalde patronen van verdachte activiteiten op clientcomputers.<br /><br />Aanbevolen waarde: **Ja**|
-|**Netwerkinspectiesysteem inschakelen**|Hiermee schakelt u het systeem voor netwerkinspectie (NIS) in op clientcomputers. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen van het [Microsoft Centrum voor beveiliging tegen schadelijke software](http://go.microsoft.com/fwlink/?LinkId=234249) om schadelijk netwerkverkeer te helpen detecteren en blokkeren.<br /><br />Aanbevolen waarde: **Ja**|
+|**Netwerkinspectiesysteem inschakelen**|Hiermee schakelt u het systeem voor netwerkinspectie (NIS) in op clientcomputers. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen van het [Microsoft Centrum voor beveiliging tegen schadelijke software](https://go.microsoft.com/fwlink/?LinkId=234249) om schadelijk netwerkverkeer te helpen detecteren en blokkeren.<br /><br />Aanbevolen waarde: **Ja**|
 
   ![Realtime-instellingen voor Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 

@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 |**Versleuteling vereisen op opslagkaarten**|Vereist dat gegevens die zijn opgeslagen op externe opslag, zoals een SD-kaart, worden versleuteld (op ondersteunde apparaten).
 <sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
 
--   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](http://support.microsoft.com/kb/3013816) installeren.
+-   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](https://support.microsoft.com/kb/3013816) installeren.
 
 -   Als u deze instelling voor Windows 8.1-apparaten inschakelt, moeten alle gebruikers van het apparaat een Microsoft-account hebben.
 
@@ -82,9 +83,4 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
