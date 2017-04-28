@@ -58,8 +58,6 @@ U moet een vertrouwd certificaatprofiel maken voordat u een Simple Certificate E
 
 -  Windows Phone 8.1 en hoger
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Een beleid voor een **vertrouwd certificaatprofiel** toevoegen.
 
     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

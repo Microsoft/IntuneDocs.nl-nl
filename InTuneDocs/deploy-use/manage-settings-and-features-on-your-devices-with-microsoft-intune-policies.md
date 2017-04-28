@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Zie [De toegang tot e-mail en O365-services beperken met Microsoft Intune](restr
 - **Resourcetoegangsbeleid:** deze beleidsregels werken samen om uw gebruikers toegang te verlenen tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze ook zijn.
 Zie [Toegang tot bedrijfsresources inschakelen met Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) voor meer informatie.
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Zie [Documentatie voor Microsoft Intune-beleid](microsoft-intune-policy-reference.md) voor een volledige lijst met Intune-beleidsregels.
 
@@ -212,9 +212,4 @@ Wanneer u een beleid verwijdert of een apparaat verwijdert uit een groep waarop 
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Waar vind ik meer informatie over het oplossen van beleidsproblemen?
 
 Zie [Beleidsproblemen oplossen in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
