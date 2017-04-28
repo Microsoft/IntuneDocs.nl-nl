@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ Beveiligingsbeleid voor apps wordt gemaakt in Azure-Portal. Als dit de eerste ke
 
 Voer de volgende stappen uit om beveiligingsbeleid voor apps te maken:
 
-1. Ga naar [Azure Portal](http://portal.azure.com) en voer uw referenties in.
+1. Ga naar [Azure Portal](https://portal.azure.com) en voer uw referenties in.
 
 2. Kies **Meer services** en voer Intune in.
 
@@ -109,7 +109,7 @@ Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige
 
 Met ingang van Intune versie 1703 hebt u de optie om LOB-apps toe te voegen in Intune bij het maken van een nieuw app-beveiligingsbeleid. Dat geeft u de optie om een app-beveiligingsbeleid voor LOB-apps te definiëren met de MAM SDK zonder dat u machtigingen voor volledige app-implementatie nodig hebt.
 
-> [!TIP] 
+> [!TIP]
 > U kunt ook LOB-apps toevoegen in Intune wanneer u de werkstroom [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) uitvoert.
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ Met ingang van Intune versie 1703 hebt u de optie om LOB-apps toe te voegen in I
 
 ### <a name="to-add-lob-apps-windows"></a>LOB-apps toevoegen (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Selecteer Windows 10 in de vervolgkeuzelijst wanneer u een nieuwe beleid voor app-beveiliging maakt.
 
 1.  Kies op de blade Een beleid toevoegen de optie **Toegestane apps** of **Vrijgestelde apps** om de blade Toegestane apps of Vrijgestelde apps te openen.
 
     > [!NOTE]
-    > 
+    >
     - **Toegestane apps**: dit zijn de apps die zich aan dit beleid moeten houden.
     - **Vrijgestelde apps**: deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
 <br></br>
