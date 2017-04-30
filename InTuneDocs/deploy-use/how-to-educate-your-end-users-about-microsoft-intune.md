@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ Door deze zorgen van uw gebruikers weg te nemen verloopt uw implementatie soepel
 
 * __Zorg dat u persoonlijk bent.__ Met instructies die niet specifiek zijn voor uw implementatie kunnen eindgebruikers denken dat u niet over hun ervaring hebt nagedacht. U kunt dit [voor IT-beheerders bestemde, aanpasbare sjabloon voor het inschrijven van eindgebruikers bij Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) gebruiken om uw eigen inschrijvingsinstructies voor uw eindgebruikers te maken.
 
-* __Zoek verschillende manieren om te communiceren.__ Net als bij [verschillende leerstijlen](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) hebben gebruikers voorkeuren over hoe ze informatie tot zich nemen. Voor gebruikers die liever video’s bekijken dan documentatie lezen, bieden we [videoversies van het inschrijven van verschillende apparaattypen](https://channel9.msdn.com/Series/IntuneEnrollment) en meer op Kanaal 9. Deze video's zijn beschikbaar om rechtstreeks in uw eigen [SharePoint-site](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) in te sluiten of voor het downloaden van lokale kopieën - video of alleen audio.
+* __Zoek verschillende manieren om te communiceren.__ Net als bij [verschillende leerstijlen](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) hebben gebruikers voorkeuren over hoe ze informatie tot zich nemen. Voor gebruikers die liever video’s bekijken dan documentatie lezen, bieden we [videoversies van het inschrijven van verschillende apparaattypen](https://channel9.msdn.com/Series/IntuneEnrollment) en meer op Kanaal 9. Deze video's zijn beschikbaar om rechtstreeks in uw eigen [SharePoint-site](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) in te sluiten of voor het downloaden van lokale kopieën - video of alleen audio.
 
 * __Let op.__ De ervaring van uw eindgebruikers heeft gevolgen voor uw productiviteit en inzicht in hun ervaring maakt het eenvoudiger voor u hun problemen op te lossen wanneer ze worden gemeld. Informatie over hoe eindgebruikers hun apps ophalen, kan het voor u veel eenvoudiger maken om hun problemen op te sporen en deze sneller op te lossen.
 

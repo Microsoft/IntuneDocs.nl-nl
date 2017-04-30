@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 2a35387cdc2ebeb3c83fa043a8b2c6583fccdbc9
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -30,7 +30,7 @@ U kunt apparaten, waaronder Windows-pc’s, registreren om Mobile Device Managem
 
 Als u [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen. Windows-pc's kunnen ook worden beheerd met [Intune-clientsoftware](#manage-windows-pcs-with-intune).
 
-Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](http://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van apparaten wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel de relevante selectievakjes uit voor de platformen die u wilt blokkeren.
+Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](https://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van apparaten wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel de relevante selectievakjes uit voor de platformen die u wilt blokkeren.
 
 ## <a name="overview-of-device-enrollment-methods"></a>Overzicht van registratiemethoden voor apparaten
 

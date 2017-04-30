@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 8ef5f26eced99dac547be727fc96e41c11d3a0e7
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/31/2017
 
 Apparaten in organisatie- of bedrijfseigendom kunnen op verschillende manieren worden ingeschreven voor beheer door Intune, afhankelijk van het type apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn. Apparaten in bedrijfseigendom kunnen ook worden ingeschreven en beheerd door de bedrijfsportal-app te installeren, zoals in BYOD-scenario's (Bring Your Own Device).
 
-Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](http://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van apparaten wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel de relevante selectievakjes uit voor de platformen die u wilt blokkeren.
+Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. Meld u bij de [Microsoft Intune-accountportal](https://manage.microsoft.com) aan met uw beheerdersreferenties als u de inschrijving van apparaten wilt blokkeren. Kies **Beheer** > **Beheer van mobiele apparaten** > **Inschrijvingsregels** en schakel de relevante selectievakjes uit voor de platformen die u wilt blokkeren.
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>iOS-apparaten in bedrijfseigendom inschrijven
 
