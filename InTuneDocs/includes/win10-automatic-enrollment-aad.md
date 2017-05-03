@@ -1,6 +1,6 @@
-## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Automatische registratie met Azure Active Directory Premium installeren voor Windows 10 en Windows 10 Mobile
+## <a name="enable-windows-10-automatic-enrollment"></a>Automatische inschrijving voor Windows 10 inschakelen
 
-Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 Mobile-apparaten van het bedrijf of van henzelf in Intune registreren door werk- of schoolaccount toe te voegen en akkoord te gaan met het beheer. Zo simpel is het. Het apparaat van de gebruiker wordt op de achtergrond geregistreerd en aangesloten bij Azure Active Directory. Wanneer het apparaat is geregistreerd, wordt het met Intune beheerd.
+Bij automatische registratie kunnen gebruikers hun Windows 10-apparaten registreren bij Intune wanneer ze hun werkaccount toevoegen aan hun apparaten die persoonlijk eigendom zijn of wanneer ze hun apparaten die bedrijfseigendom zijn toevoegen aan uw Azure Active Directory. Het apparaat van de gebruiker wordt op de achtergrond geregistreerd en aangesloten bij Azure Active Directory. Wanneer het apparaat is geregistreerd, wordt het met Intune beheerd.
 
 **Vereisten**
 - Azure Active Directory Premium-abonnement ([proefabonnement](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -9,26 +9,31 @@ Met automatische registratie kunnen gebruikers Windows 10-pc’s en Windows 10 M
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Automatische MDM-registratie configureren
 
-1. Ga in de [Azure-beheerportal](https://manage.windowsazure.com) (https://manage.windowsazure.com) naar het knooppunt **Active Directory** en selecteer uw map.
+1. Meld u aan bij de [Azure AD-beheerportal](https://portal.azure.com) (https://manage.windowsazure.com) en selecteer **Azure Active Directory**.
 
-2. Selecteer het tabblad **Toepassingen**. **Microsoft Intune** wordt in de lijst met toepassingen weergegeven.
+  ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
 
-    ![Azure AD-apps met Microsoft Intune](../media/aad-intune-app.png)
+2. Selecteer **Mobiliteit (MDM en MAM)**.
 
-3. Selecteer de pijl voor **Microsoft Intune**. Er verschijnt een pagina waarop u Microsoft Intune kunt configureren.
+  ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
 
-4. Selecteer **Configureren** om de automatische MDM-registratie met Microsoft Intune te configureren.
+3. Selecteer **Microsoft Intune**.
+
+  ![Schermopname van de Azure-portal](../media/auto-enroll-intune.png)
+
+4. **Gebruikersbereik van MDM** configureren. Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
+
+  - **Geen**
+  - **Sommige**
+  - **Alle**
+
+ ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 
 5. Gebruik de standaardwaarden voor de volgende URL’s:
+  - **URL voor MDM-gebruiksvoorwaarden**
+  - **Detectie-URL voor MDM**
+  - **URL van MDM-naleving**
 
-  - **MDM-inschrijving**
-  - **MDM-gebruiksvoorwaarden** 
-  - **MDM-naleving**
+6. Selecteer **Opslaan**.
 
-6.  Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
-
-  - **Alle**
-  - **GROEPEN**
-  - **Geen**
-
-7. Kies **Opslaan**.
+Tweeledige verificatie is standaard niet ingeschakeld voor de service. Tweeledige verificatie wordt echter aanbevolen bij het registreren van een apparaat. Voordat u tweeledige verificatie vereist voor deze service, moet u een provider voor tweeledige verificatie configureren in Azure Active Directory en uw gebruikersaccounts voor meervoudige verificatie configureren. Zie [Aan de slag met de Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

@@ -1,12 +1,12 @@
 ---
-title: De certificaatinfrastructuur voor SCEP configureren
+title: SCEP-certificaten configureren en beheren met Intune
 titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u uw infrastructuur kunt configureren voordat u Intune SCEP-certificaatprofielen maakt en implementeert.'
+description: 'Intune Azure Preview: in dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens Intune SCEP-certificaatprofielen kunt maken en toewijzen.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,28 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 6838993b5b19bc1e23c9efe0911a01a2c66c6886
+ms.lasthandoff: 04/19/2017
 
 ---
-# <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>De certificaatinfrastructuur voor SCEP configureren in Microsoft Intune
+# <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-In dit onderwerp wordt beschreven welke infrastructuur u nodig hebt om SCEP-certificaatprofielen te maken en implementeren.
+In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens SCEP-certificaatprofielen (Simple Certificate Enrollment Protocol) kunt maken en toewijzen met Intune.
 
-### <a name="on-premises-infrastructure"></a>Lokale infrastructuur
+## <a name="configure-on-premises-infrastructure"></a>Lokale infrastructuur configureren
 
 -    **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
 
--  **Certificeringsinstantie** (CA): een certificeringsinstantie (CA) voor ondernemingen (CA) die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx)(De certificeringsinstantie installeren) voor instructies over het instellen van een certificeringsinstantie.
+-  **Certificeringsinstantie** (CA): een certificeringsinstantie (CA) voor ondernemingen (CA) die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [De certificeringsinstantie installeren](http://technet.microsoft.com/library/jj125375.aspx) voor meer informatie.
     Als de certificeringsinstantie werkt met Windows Server 2008 R2, moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/).
 
--  **NDES-Server**: op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen. De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich niet op dezelfde server als de CA bevinden. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+-  **NDES-Server**: op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen.
+De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich niet op dezelfde server als de CA bevinden. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune-certificaatconnector**: u kunt de Intune-beheerconsole gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de computer waarop u de certificaatconnector wilt installeren.
--  **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger als webtoepassingsproxyserver (WAP-server) gebruiken. Deze configuratie:
+-  **Microsoft Intune-certificaatconnector**: u kunt de Intune-portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de computer waarop u de certificaatconnector wilt installeren.
+-  **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger gebruiken als webtoepassingsproxyserver (WAP-server). Deze configuratie:
     -  Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
     -  Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
 
@@ -51,49 +52,49 @@ Van internet naar het perimeternetwerk, poort 443 toestaan van alle hosts/IP-adr
 
 Van het perimeternetwerk naar het vertrouwde netwerk, alle poorten en protocollen toestaan die nodig zijn voor domeintoegang tot de NDES-server die lid is van het domein. De NDES-server moet toegang hebben tot de certificaatservers, DNS-servers, Configuration Manager-servers en domeincontrollers.
 
-Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-toepassingsproxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx) of een proxy van een derde partij.
+Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-toepassingsproxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx) of een proxy van een derde partij.
 
 
-### <a name="BKMK_CertsAndTemplates"></a>Certificaten en sjablonen
+### <a name="certificates-and-templates"></a>Certificaten en sjablonen
 
 |Object|Details|
 |----------|-----------|
-|**Certificaatsjabloon**|U configureert deze sjabloon op uw verlenende CA.|
-|**Clientverificatiecertificaat**|Dit certificaat, dat wordt aangevraagd bij uw verlenende CA of openbare CA, installeert u op de NDES-server.|
-|**Serververificatiecertificaat**|Dit SSL-certificaat, dat wordt aangevraagd bij uw verlenende CA of openbare CA, installeert en verbindt u in IIS op de NDES-server.|
-|**Vertrouwde basis-CA-certificaat**|U exporteert dit als een **CER-bestand** van de basis-CA of een ander apparaat dat de basis-CA vertrouwt, en implementeert het naar apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
+|**Certificaatsjabloon**|Configureer deze sjabloon op uw verlenende CA.|
+|**Clientverificatiecertificaat**|Dit certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert dit op de NDES-server.|
+|**Serververificatiecertificaat**|Dit SSL-certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert en verbindt dit in IIS op de NDES-server.|
+|**Vertrouwd basis-CA-certificaat**|U exporteert dit als een **CER-bestand** van de basis-CA of een ander apparaat dat de basis-CA vertrouwt, en wijst het toe aan apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
 
-### <a name="BKMK_Accounts"></a>Accounts
+### <a name="accounts"></a>Accounts
 
 |Naam|Details|
 |--------|-----------|
-|**NDES-serviceaccount**|U geeft een domeingebruikersaccount op om als het NDES-serviceaccount te gebruiken.|
+|**NDES-serviceaccount**|Geef een domeingebruikersaccount op die u wilt gebruiken als het NDES-serviceaccount.|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>Uw infrastructuur configureren
+## <a name="configure-your-infrastructure"></a>Uw infrastructuur configureren
 Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvoeren waarvoor kennis van Windows Server 2012 R2 en Active Directory Certificate Services (ADCS) nodig is:
 
-**Taak 1**: een NDES-serviceaccount maken
+**Stap 1**: een NDES-serviceaccount maken
 
-**Taak 2**: certificaatsjablonen configureren op de certificeringsinstantie
+**Stap 2**: certificaatsjablonen configureren op de certificeringsinstantie
 
-**Taak 3**: vereisten configureren op de NDES-server
+**Stap 3**: vereisten configureren op de NDES-server
 
-**Taak 4**: NDES configureren voor gebruik met Intune
+**Stap 4**: NDES configureren voor gebruik met Intune
 
-**Taak 5**: de Intune-certificaatconnector inschakelen, installeren en configureren
+**Stap 5**: de Intune-certificaatconnector inschakelen, installeren en configureren
 
-### <a name="task-1---create-an-ndes-service-account"></a>Taak 1: een NDES-serviceaccount maken
+#### <a name="step-1---create-an-ndes-service-account"></a>Stap 1: een NDES-serviceaccount maken
 
 Maak een domeingebruikersaccount dat u als NDES-serviceaccount gaat gebruiken. U geeft dit account op wanneer u sjablonen op de verlenende CA configureert voordat u NDES installeert en configureert. Zorg ervoor dat de gebruiker over de standaardrechten **Lokaal aanmelden**, **Aanmelden als service** en **Aanmelden als batchtaak** beschikt. Sommige organisaties voeren een beveiligingsbeleid dat ervoor zorgt dat deze rechten worden uitgeschakeld.
 
-### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>Taak 2: certificaatsjablonen configureren op de certificeringsinstantie
+#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Stap 2: certificaatsjablonen configureren op de certificeringsinstantie
 In deze taak:
 
 -   Configureert u een certificaatsjabloon voor NDES
 
 -   Publiceert u de certificaatsjabloon voor NDES
 
-#### <a name="to-configure-the-certification-authority"></a>De certificeringsinstantie configureren
+##### <a name="to-configure-the-certification-authority"></a>De certificeringsinstantie configureren
 
 1.  Meld u aan als ondernemingsbeheerder.
 
@@ -133,24 +134,22 @@ Hier volgen schermafbeeldingen van de configuratie van een voorbeeldsjabloon.
 ![Sjabloon, tabblad Uitgiftevereisten](.\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
-    > Voor Toepassingsbeleid (in de vierde schermafbeelding) voegt u alleen het benodigde toepassingsbeleid toe. Leg uw keuzes voor aan de beveiligingsbeheerder.
+    > Voor Toepassingsbeleid voegt u alleen het benodigde toepassingsbeleid toe. Leg uw keuzes voor aan de beveiligingsbeheerder.
 
 
 
-Als u de CA zo wilt configureren dat de aanvrager de geldigheidsperiode kan opgeven, voert u op de CA de volgende opdrachten uit:
+De CA zodanig configureren dat de aanvrager de geldigheidsperiode kan opgeven:
 
-   1.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
-   2.  **net stop certsvc**
-   3.  **net start certsvc**
-
-4.  Gebruik op de verlenende CA de module Certificeringsinstantie om de certificaatsjabloon te publiceren.
-
-    1.  Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen** en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
-
-    2.  Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
+1. Voer de volgende opdracht voor de CA uit:
+    - **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    - **net stop certsvc**
+    - **net start certsvc**
+2. Gebruik op de verlenende CA de module Certificeringsinstantie om de certificaatsjabloon te publiceren.
+    Selecteer het knooppunt **Certificaatsjablonen**, klik op **Actie**-&gt; **Nieuw** &gt; **Te verlenen certificaatsjablonen** en selecteer vervolgens de sjabloon die u in stap 2 hebt gemaakt.
+3. Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
 
-### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>Taak 3: vereisten configureren op de NDES-server
+#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Stap 3: vereisten configureren op de NDES-server
 In deze taak:
 
 -   Voegt u NDES toe aan een Windows Server en configureert u IIS om NDES te ondersteunen
@@ -191,7 +190,7 @@ In deze taak:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4---configure-ndes-for-use-with-intune"></a>Taak 4: NDES configureren voor gebruik met Intune
+#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Stap 4: NDES configureren voor gebruik met Intune
 In deze taak:
 
 -   Configureert u NDES voor gebruik met de verlenende CA
@@ -200,7 +199,6 @@ In deze taak:
 
 -   Configureert u aanvraagfiltering in IIS
 
-##### <a name="to-configure-ndes-for-use-with-intune"></a>NDES configureren voor gebruik met Intune
 
 1.  Open op de NDES-server de wizard AD CS-configuratie en voer de volgende configuraties door.
 
@@ -295,7 +293,7 @@ In deze taak:
 
 4.  Start de NDES-server opnieuw op. De server is nu klaar om de certificaatconnector te ondersteunen.
 
-### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>Taak 5: de Intune-certificaatconnector inschakelen, installeren en configureren
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Stap 5: de Intune-certificaatconnector inschakelen, installeren en configureren
 In deze taak:
 
 Schakelt u de ondersteuning voor NDES in Intune in.
@@ -349,6 +347,61 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 **http:// &lt;FQDN_van_uw_NDES-server&gt;/certsrv/mscep/mscep.dll**
 
-## <a name="next-steps"></a>Volgende stappen
-U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](how-to-configure-certificates.md).
+## <a name="how-to-create-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel maken
+
+1. Selecteer in Azure Portal de workload **Apparaten configureren**.
+2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
+3. Kies **Profiel maken** op de blade Profielen.
+4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
+5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
+    - **Android**
+    - **iOS**
+    - **macOS**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 en hoger**
+    - **Windows 10 en hoger**
+6. Kies in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
+7. Configureer op de blade **SCEP-certificaat** de volgende instellingen:
+    - **Geldigheidsduur van certificaat**: als u de opdracht **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** hebt uitgevoerd voor de verlenende CA, waarmee een aangepaste geldigheidsperiode mogelijk is, kunt u opgeven hoe lang het certificaat geldig blijft.<br>U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA. 
+    - **Sleutelarchiefprovider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): geef op waar de sleutel voor het certificaat wordt opgeslagen. Kies een van de volgende waarden:
+        - **Registeren in de sleutelarchiefprovider voor TPM (Trusted Platform Module) indien TPM aanwezig is, anders registreren in de sleutelarchiefprovider voor software**
+        - **Registreren in de sleutelarchiefprovider voor TPM (Trusted Platform Module), anders mislukt**
+        - **Registreren bij Passport, anders niet uitvoeren (Windows 10 en hoger)**
+        - **Registreren in sleutelarchiefprovider voor software**
+    - **Indeling van de onderwerpnaam**: selecteer in de lijst hoe de onderwerpnaam in de certificaataanvraag automatisch wordt gemaakt met Intune. Als het certificaat voor een gebruiker is, kunt u ook het e-mailadres van de gebruiker in de onderwerpnaam opnemen. U kunt kiezen uit:
+        - **Niet geconfigureerd**
+        - **Algemene naam**
+        - **Algemene naam en e-mailadres**
+        - **Algemene naam als e-mailadres**
+    - **Alternatieve onderwerpnaam**: geef op hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteerde, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat zal worden gebruikt om een Network Policy Server te verifiëren, dient u de alternatieve naam van het onderwerp op de UPN in te stellen. 
+    - **Sleutelgebruik**: geef opties voor sleutelgebruik voor het certificaat op. U kunt kiezen uit de volgende opties: 
+        - **Sleutelcodering**: sta alleen sleuteluitwisseling toe als de sleutel is gecodeerd. 
+        - **Digitale handtekening**: sta alleen sleuteluitwisseling toe als een digitale handtekening de sleutel helpt beveiligen. 
+    - **Sleutelgrootte (bits)**: selecteer het aantal bits in de sleutel. 
+    - **Hash-algoritme** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selecteer een van de beschikbare typen hash-algoritme om met dit certificaat te gebruiken. Selecteer het sterkste beveiligingsniveau dat door de verbindende apparaten wordt ondersteund. 
+    - **Basiscertificaat**: kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren. 
+    - **Uitgebreide-sleutelgebruik**: kies **Toevoegen** om waarden voor het beoogde gebruik van het certificaat toe te voegen. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen. 
+    - **Registratie-instellingen**
+        - **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+        - **URL's van SCEP-server**: geef een of meer URL's op voor de NDES-servers die certificaten via SCEP verlenen. 
+8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+
+Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+
+>[!Note]
+> Alleen voor iOS-apparaten: selecteer onder Indeling van onderwerpnaam de optie Aangepast om een aangepaste indeling voor de onderwerpnaam in te voeren.
+> De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn **Algemene naam (CN)** en **E-mail (E)**. Met behulp van een combinatie van deze variabelen en statische tekenreeksen kunt u een aangepaste indeling voor de onderwerpnaam maken, zoals: **CN={{UserName}},E={{EmailAddress}},OU=Mobiel,O=Financiële groep,L=Redmond,ST=Washington,C=VS** In dit voorbeeld hebt u een indeling voor een onderwerpnaam gemaakt die naast de CN- en E-variabelen tekenreeksen voor de waarden van de organisatie-eenheid, de organisatie, de locatie, de staat en het land gebruikt. [In dit onderwerp](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) worden de functie **CertStrToName** en de ondersteunde tekenreeksen gedemonstreerd.
+
+## <a name="how-to-assign-the-certificate-profile"></a>Het certificaatprofiel toewijzen
+
+Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
+
+- Wanneer u certificaatprofielen aan groepen toewijst, wordt het certificaatbestand van het vertrouwde CA-certificaatprofiel op het apparaat geïnstalleerd. Het apparaat gebruikt het SCEP-certificaatprofiel om een certificaataanvraag te maken.
+- Certificaatprofielen worden alleen geïnstalleerd op apparaten met het platform dat u gebruikt wanneer u het profiel maakt.
+- U kunt certificaatprofielen toewijzen aan gebruikersverzamelingen of apparaatverzamelingen.
+- Als u een certificaat snel naar een apparaat wilt publiceren nadat het apparaat is geregistreerd, wijst u het certificaatprofiel toe aan een gebruikersgroep en niet aan een apparaatgroep. Als u het toewijst aan een apparaatgroep, is een volledige apparaatregistratie vereist voordat het apparaat beleid kan ontvangen.
+- Hoewel u elk profiel afzonderlijk toewijst, moet u ook het vertrouwde basis-CA- en het SCEP- of PKCS-profiel toewijzen. Anders mislukt het SCEP- of PKCS-certificaatbeleid.
+
+Zie [Apparaatprofielen toewijzen](how-to-assign-device-profiles.md) voor informatie over het toewijzen van apparaatprofielen.
+
 

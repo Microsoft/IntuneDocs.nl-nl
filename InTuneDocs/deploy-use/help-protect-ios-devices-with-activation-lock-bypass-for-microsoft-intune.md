@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
-ms.lasthandoff: 01/10/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -48,6 +48,8 @@ Voor het oplossen van deze problemen heeft Apple in iOS 7.1 de mogelijkheid geï
 > [!TIP]
 > Met de supervisiemodus voor iOS-apparaten kunt u Apple Configurator gebruiken en de vergrendelingsfunctionaliteit te beperken tot bepaalde bedrijfsdoeleinden. De supervisiemodus wordt doorgaans alleen gebruikt voor apparaten in bedrijfseigendom.
 
+Meer informatie over de activeringsvergrendeling vindt u [hier](https://support.apple.com/en-us/HT201365).
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Activeringsvergrendeling beheren met Intune
 Intune kan de status opvragen van de activeringsvergrendeling van apparaten met supervisie waarop iOS 8.0 of hoger wordt uitgevoerd. Alleen voor apparaten onder supervisie kan met Intune de bypass-code van de activeringsvergrendeling worden opgehaald direct aan het apparaat worden uitgegeven. Als het apparaat is gewist, kunt u rechtstreeks toegang krijgen tot het apparaat met een lege gebruikersnaam en de code als wachtwoord.
 
@@ -55,7 +57,15 @@ Intune kan de status opvragen van de activeringsvergrendeling van apparaten met 
 
 -   De gebruiker beschikt over de beveiligingsvoordelen van de app Zoek mijn iPhone.
 
--   De gebruiker kan werken en u weet zeker dat u het apparaat buiten gebruik kunt stellen of kunt ontgrendelen wanneer het opnieuw moet worden toegewezen.
+-   De gebruiker kan werken en u weet ondertussen zeker dat u het apparaat buiten gebruik kunt stellen of kunt ontgrendelen wanneer het opnieuw moet worden toegewezen.
+
+## <a name="before-you-start"></a>Voordat u begint
+
+Voordat u bypass van de activeringsvergrendeling op apparaten kunt uitvoeren, moet u deze optie eerst inschakelen. U doet dit als volgt:
+
+1. Zie [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) om een [apparaatbeveiligingsbeleid](/intune/deploy-use/ios-policy-settings-in-microsoft-intune) voor iOS te maken.
+2. In het gedeelte **Inschrijving** van de instellingenpagina stelt u de instelling **Activeringsvergrendeling voor apparaat in toezichtmodus toestaan** in op **Ja**.
+3. Sla het beleid op en implementeer het op de apparaten waarop u bypass van activiteitsvergrendeling wilt beheren.
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Bypass van activeringsvergrendeling gebruiken vanuit de Intune-beheerconsole
 > [!IMPORTANT]

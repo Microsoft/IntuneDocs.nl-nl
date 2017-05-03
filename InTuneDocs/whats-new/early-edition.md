@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: d7f25657fc7cfb9298809f76f198810718e58c39
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -37,7 +37,7 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Verbeterde app-installatiestatus voor de Windows 10-bedrijfsportal-app <!--676495-->
 
-De Windows 10-bedrijfsportal-app toont nu een voortgangsbalk voor de installatie van alle moderne apps, wanneer de installatie is gestart vanuit de bedrijfsportal.
+De Windows 10-bedrijfsportal-app toont nu een voortgangsbalk voor de installatie van alle moderne apps, wanneer de installatie is gestart vanuit de bedrijfsportal. U kunt het nieuwe statusbericht voor de bedrijfsportal-app voor Windows 10 zien op de [pagina Wat is er nieuw in de gebruikersinterface van de Intune-app?](whats-new-in-intune-app-ui.md)
 
 ### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Verbeterde statusberichten in de bedrijfsportal-app voor iOS <!--744866-->
 
@@ -59,7 +59,7 @@ Gebruikers hoeven zich niet langer aan te melden bij de Outlook-app als ze op he
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Voortgangsindicator voor aanmelden bij Android-bedrijfsportal <!--953374-->
 
-De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het aanmelden wanneer de gebruiker de app opent of hervat. De indicator geeft de verschillende statussen weer, beginnend bij ‘Verbinden...’, gevolgd door ‘Aanmelden...’ en ‘Beveiligingseisen controleren...’, voordat de gebruiker de app kan gebruiken. U kunt de nieuwe schermen voor de bedrijfsportal-app voor Android zien op de [pagina Wat is er nieuw in de gebruikersinterface van de Intune-app?](whats-new-in-intune-app-ui.md) 
+De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het aanmelden wanneer de gebruiker de app opent of hervat. De indicator geeft de verschillende statussen weer, beginnend bij ‘Verbinden...’, gevolgd door ‘Aanmelden...’ en ‘Beveiligingseisen controleren...’, voordat de gebruiker de app kan gebruiken. U kunt de nieuwe schermen voor de bedrijfsportal-app voor Android zien op de [pagina Wat is er nieuw in de gebruikersinterface van de Intune-app?](whats-new-in-intune-app-ui.md)
 
 
 ## <a name="notices"></a>Mededelingen
@@ -186,7 +186,7 @@ Er is ondersteuning toegevoegd voor aanvullende Windows 10-apparaatbeperkingsins
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Ondersteuning voor meerdere gebruikers van Windows 10-makersupdate <!-- 822547 -->
 
-Er is ondersteuning toegevoegd voor het beheer van meerdere gebruikers voor apparaten waarop de Windows 10-makersupdate wordt uitgevoerd en lid zijn van een Azure Active Directory-domein. Dit betekent dat wanneer verschillende gebruikers zich aanmelden op het apparaat met hun AAD-referenties, ze de apps en beleidsregels ontvangen die zijn toegewezen aan hun gebruikersnaam.
+Er is ondersteuning toegevoegd voor het beheer van meerdere gebruikers voor apparaten waarop de Windows 10-makersupdate wordt uitgevoerd en lid zijn van een Azure Active Directory-domein. Dit betekent dat wanneer verschillende standaardgebruikers zich aanmelden op het apparaat met hun Azure AD-referenties, ze de apps en beleidsregels ontvangen die zijn toegewezen aan hun gebruikersnaam. Gebruikers kunnen de bedrijfsportal op dit moment niet gebruiken voor selfservice scenario's zoals het installeren van apps.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Fresh Start voor Windows 10-pc’s<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ U kunt nu een versie-upgradebeleid maken om apparaten te upgraden naar de volgen
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10-apparaten bulksgewijs inschrijven <!-- 747607 -->
 
-U kunt grote aantallen Windows 10-apparaten lid maken van Azure Active Directory en Intune met automatiseringshulpprogramma’s. Als u automatische MDM-inschrijving voor uw Azure AD-tenant wilt inschakelen, maakt u een inrichtingspakket waarmee het apparaat lid wordt van uw Azure AD-tenant met Windows Configuration Designer. Dit pakket past u toe op de apparaten in bedrijfseigendom die u bulksgewijs wilt inschrijven en beheren.  Zodra het pakket is toegepast maken de apparaten verbinding met Azure AD, worden ze ingeschreven in Intune en zijn ze klaar voor aanmelding door uw Azure AD-gebruikers.
+U kunt grote aantallen apparaten waarop de Windows 10-makersupdate wordt uitgevoerd, toevoegen aan Azure Active Directory en Intune met Windows Configuration Designer (WCD). Als u automatische MDM-inschrijving voor uw Azure AD-tenant wilt inschakelen, maakt u een inrichtingspakket waarmee apparaten worden toegevoegd aan uw Azure AD-tenant met Windows Configuration Designer. U kunt het pakket toepassen op apparaten in bedrijfseigendom die u bulksgewijs wilt inschrijven en beheren. Zodra het pakket is toegepast op de apparaten, worden deze toegevoegd aan Azure AD, ingeschreven bij Intune en zijn ze klaar voor aanmelding door uw Azure AD-gebruikers.  Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toegewezen beleid en de vereiste apps. Scenario’s voor Selfservice portal en bedrijfsportal worden momenteel niet ondersteund.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Nieuwe MAM-instellingen voor pincode en beheerde opslaglocaties <!-- 58112, 736644 -->
 

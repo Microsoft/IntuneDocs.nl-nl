@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -41,7 +41,8 @@ ms.lasthandoff: 03/30/2017
 |**Uitschakelen**|Hiermee kan de gebruiker het apparaat uitschakelen.<br>Als deze instelling is uitgeschakeld, werkt de instelling **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** voor Samsung KNOX Standard-apparaten niet.|Nee|Ja|
 |**Schermopname**|Hiermee kan de gebruiker de scherminhoud als afbeelding vastleggen.|Nee|Yes|
 |**Spraakassistent**|Hiermee wordt het gebruik van de spraakassistent toegestaan op het apparaat.|Nee|Yes|
-|**YouTube**|Hiermee staat u toe dat de YouTube-app wordt gebruikt op het apparaat.|Nee|Yes|
+|**YouTube**|Hiermee staat u toe dat de YouTube-app wordt gebruikt op het apparaat.|Nee|Ja|
+|**Gedeelde apparaten**|Een beheerd Samsung KNOX Standard-apparaat configureren als gedeeld apparaat. In deze modus kunnen eindgebruikers zich aan- en afmelden bij het apparaat met hun Azure AD-referenties, en wordt het apparaat centraal beheerd, ongeacht of het wordt gebruikt of niet.<br>Wanneer eindgebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.|Nee|Yes|
 
 ## <a name="password"></a>Wachtwoord
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**|Geeft het aantal minuten van inactiviteit aan waarna het apparaat automatisch wordt vergrendeld.|Ja|Yes|
 |**Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**|Geeft het aantal mislukte aanmeldingen aan dat is toegestaan voordat het apparaat wordt gewist.|Ja|Ja|
 |**Dagen tot wachtwoord verloopt**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
-|**Vereist wachtwoordtype**|Hiermee geeft u het complexiteitsniveau voor het wachtwoord aan en of biometrische apparaten kunnen worden gebruikt.|Ja|Ja|
+|**Vereist wachtwoordtype**|Hiermee geeft u het complexiteitsniveau voor het wachtwoord aan en of biometrische apparaten kunnen worden gebruikt. U kunt kiezen uit:<br><br>    -     **Standaardwaarde apparaat**<br>-     **Biometrie lage beveiliging**<br>    -     **Minstens numeriek**<br>    -     **Numeriek complex** (herhalende of opeenvolgende nummers zoals 1111 of 1234 zijn niet toegestaan)<sup>1</sup><br>    -     **Minstens alfabetisch**<br>    -     **Minstens alfanumeriek**<br>    -     **Minstens alfanumeriek met symbolen**|Yes|Ja|
 |**Wachtwoorden niet opnieuw gebruiken**|Hiermee voorkomt u dat eindgebruikers een wachtwoord kunnen opgeven dat zij al eerder hebben gebruikt.|Yes|Ja|
 |**Ontgrendelen met vingerafdruk**|Hiermee staat u toe dat de gebruiker ondersteunde apparaten ontgrendelt met een vingerafdruk.|Nee|Yes|
 |**Smart Lock en andere trustagents**|Hiermee kunt u de Smart Lock-functie op compatibele Android-apparaten (Samsung KNOX Standard 5.0 en hoger) beheren. Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt.) U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.|Ja (5.0 en hoger)|Nee|
-|**Versleuteling**|Vereist dat bestanden op het apparaat zijn versleuteld.|Yes|Yes|
+|**Versleuteling**|Vereist dat bestanden op het apparaat zijn versleuteld.|Yes|Ja|
+
+<sup>1</sup>Voordat u deze instelling aan apparaten toewijst, moet u controleren dat de bedrijfsportal-app is bijgewerkt naar de nieuwste versie van de beoogde apparaten.
+
+Als u de instelling **Numeriek complex** configureert en toewijst aan een apparaat waarop een eerdere versie dan Android 5.0 wordt uitgevoerd, is het volgende van toepassing.
+- Als van de bedrijfsportal-app een eerdere versie dan 1704 wordt uitgevoerd, wordt er geen pincode-beleid toegepast op het apparaat en wordt er in de Intune-portal een foutmelding weergegeven.
+- Als de bedrijfsportal-app is bijgewerkt naar versie 1704, wordt er alleen een pincode toegepast. Android-versies die ouder zijn dan 5.0 bieden geen ondersteuning voor deze instelling. Er wordt geen fout weergegeven in de Intune-portal.
+
 
 ## <a name="google-play-store"></a>Google Play Store
 

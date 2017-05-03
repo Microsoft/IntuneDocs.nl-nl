@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -40,7 +40,7 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Het apparaat wordt in een pop-upvenster geopend. Selecteer de knop **Wachtwoordcode opnieuw instellen**.
+3.    Het apparaat wordt in een pop-upvenster geopend. Selecteer de knop **Wachtwoordcode opnieuw instellen** .
 
     ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
 
@@ -48,7 +48,7 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
   ![De koptekst van het opnieuw instellen van de wachtwoordcode met de waarschuwing over het opnieuw instellen van de wachtwoordcode van het apparaat en hoe de gebruiker wordt afgemeld. De knoppen voor invoer van de gebruiker zijn Afmelden en Annuleren.](./media/iwp-reset-passcode-popup.png)
 
-5.  Selecteer **Afmelden** en u ontvangt een laatste bericht waarin u wordt verteld over het verwijderen van de wachtwoordcode van het apparaat. Als u het apparaat niet bij u hebt, verwijder de wachtwoordcode dan niet, omdat iedereen die fysieke toegang heeft tot het apparaat dan toegang heeft tot de meeste gegevens erop - persoonlijke zowel als zakelijke.
+5.  Selecteer **Afmelden** en u ontvangt een laatste bericht waarin u wordt verteld over het verwijderen van de wachtwoordcode van het apparaat. Als u het apparaat niet bij u hebt, verwijder de wachtwoordcode dan niet, omdat iedereen die fysieke toegang heeft tot het apparaat dan toegang heeft tot de meeste gegevens erop - persoonlijke zowel als zakelijke. 
 
   ![De tweede koptekst van het opnieuw instellen van de wachtwoordcode met de waarschuwing over het opnieuw instellen van de wachtwoordcode van het apparaat en hoe de wachtwoordcode wordt verwijderd van het apparaat. Het geeft ook aan hoe u een nieuwe wachtwoordcode in kunt stellen door naar apparaatinstellingen te gaan.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
   **Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Windows Hello-gezichtsherkenning wordt nog steeds ondersteunt, dus u kunt deze gewoon gebruiken om u aan te melden.
     
   **Windows Phone 8.1**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.
+
+  Voor Android en Windows-apparaten wordt het tijdelijke wachtwoord weergegeven in de **Apparaatdetails**. 
 
 6.  Ontgrendel uw apparaat en stel vervolgens een nieuwe wachtwoordcode in of wijzig de tijdelijke wachtwoordcode door op uw apparaat naar **Instellingen** te gaan.
 

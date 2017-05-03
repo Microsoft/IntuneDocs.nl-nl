@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -145,7 +145,7 @@ Deze stap synchroniseert apparaten met de Apple DEP-service en zorgt ervoor dat 
 
 1. Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) als gebruiker met beheerdersrechten, ga naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving** en kies vervolgens **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
 
-2. Als u DEP-beheerde apparaten wilt bekijken na de synchronisatie, gaat u in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Vooraf geregistreerde bedrijfsapparaten** &gt; **Op iOS-serienummer**. In de werkruimte ** Op iOS-serienummer** wordt de **Status** voor beheerde apparaten weergegeven als 'Geen contact gemaakt' totdat het apparaat wordt ingeschakeld en de configuratieassistent wordt uitgevoerd om het apparaat in te schrijven.
+2. Als u DEP-beheerde apparaten wilt bekijken na de synchronisatie, gaat u in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Vooraf geregistreerde bedrijfsapparaten** &gt; **Op iOS-serienummer**. In de werkruimte  **Op iOS-serienummer** wordt de **Status** voor beheerde apparaten weergegeven als 'Geen contact gemaakt' totdat het apparaat wordt ingeschakeld en de configuratieassistent wordt uitgevoerd om het apparaat in te schrijven.
 
    Om te voldoen aan de voorwaarden van Apple voor acceptabel DEP-verkeer, worden door Intune de volgende beperkingen opgelegd:
 
@@ -162,7 +162,9 @@ Uw apparaten in bedrijfseigendom kunnen nu onder gebruikers worden gedistribueer
 
 ## <a name="changes-to-intune-group-assignments"></a>Wijzigingen aan Intune-groepstoewijzingen
 
-In April 2017 wordt apparaatgroepsbeheer verplaatst naar Azure Active Directory. Na de overgang naar Azure Active Directory-groepen wordt groepstoewijzing niet weergegeven in de opties voor het registratieprofiel voor bedrijfsapparaten. Omdat deze wijziging in een aantal maanden wordt geïmplementeerd, ziet u de wijziging mogelijk niet meteen. Na de overgang naar de nieuwe portal kunnen er dynamische apparaatgroepstoewijzingen worden gedefinieerd op basis van de namen van de inschrijvingsprofielen voor bedrijven. Voor elke Intune-apparaatgroep die vooraf is toegewezen door een inschrijvingsprofiel voor bedrijfsapparaten, wordt tijdens de migratie naar Azure Active Directory-apparaatgroepen een overeenkomende dynamische apparaatgroep in AAD gemaakt op basis van de naam van het inschrijvingsprofiel. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep al automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd. [Meer informatie over Azure Active Directory-groepen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+In April 2017 wordt apparaatgroepsbeheer verplaatst naar Azure Active Directory. Na de overgang naar Azure Active Directory-groepen wordt groepstoewijzing niet weergegeven in de opties voor het registratieprofiel voor bedrijfsapparaten. Omdat deze wijziging in een aantal maanden wordt geïmplementeerd, ziet u de wijziging mogelijk niet meteen. Na de overgang naar de nieuwe portal kunnen er dynamische apparaatgroepstoewijzingen worden gedefinieerd op basis van de namen van de inschrijvingsprofielen voor bedrijven. Voor elke Intune-apparaatgroep die vooraf is toegewezen door een inschrijvingsprofiel voor bedrijfsapparaten, wordt tijdens de migratie naar Azure Active Directory-apparaatgroepen een overeenkomende dynamische apparaatgroep in AAD gemaakt op basis van de naam van het inschrijvingsprofiel. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep al automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd. Zie [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/) (Wijzigingen aan automatische groepering van zakelijke iOS-apparaten die vooraf zijn geregistreerd) voor meer informatie over de invloed hiervan op de registratie van iOS-apparaten die bedrijfseigendom zijn.
+
+U vindt hier ook [Meer informatie over Azure Active Directory-groepen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het inschrijven van apparaten](prerequisites-for-enrollment.md)

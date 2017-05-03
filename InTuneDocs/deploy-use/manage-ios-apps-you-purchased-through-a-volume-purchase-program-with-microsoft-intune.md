@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Een app implementeren die is gekocht via het volume-aankoopprogramma
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Apps** &gt; **Beheerde software** &gt; **Apps die zijn gekocht via het volume-aankoopprogramma**. Deze lijst bevat alle apps die zijn gesynchroniseerd met de Apple VPP-service.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Apps** &gt; **Apps** &gt; **Apps die zijn gekocht via het volume-aankoopprogramma**. Deze lijst bevat alle apps die zijn gesynchroniseerd met de Apple VPP-service.
 
 2.  Kies de app die u wilt implementeren, kies **Implementatie beheren** en gebruik vervolgens de instructies in het onderwerp [Apps implementeren in Microsoft Intune](deploy-apps-in-microsoft-intune.md) om het uploaden, maken en implementeren van de app te voltooien.
 
@@ -79,22 +80,14 @@ Als u een licentie wilt vrijmaken, moet u de implementatieactie wijzigen in **Ve
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app te installeren, wordt deze gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Dit moet plaatsvinden voordat de installatie van de app wordt voortgezet.
 
-> [!TIP]
-> Bekijk de kolom **Status VPP-gebruiksrechtovereenkomst** voor de acceptatiestatus voor elke gebruiker voor wie de app is geïmplementeerd.
-
 Als er geen licenties meer beschikbaar zijn, mislukt de implementatie.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Apple VPP-apps bewaken
-U kunt bijhouden welke VPP-apps zijn geïmplementeerd en hoeveel licenties worden gebruikt vanuit de **Apps**-werkruimte, in het knooppunt **Beheerde software** &gt; **Apps die zijn gekocht via het volume-aankoopprogramma**.
+U kunt bijhouden welke VPP-apps zijn geïmplementeerd en hoeveel licenties worden gebruikt vanuit de **Apps**-werkruimte, in het knooppunt **Apps die zijn gekocht via het volume-aankoopprogramma**.
 
 > [!TIP]
 > U kunt ook app-**filters** gebruiken om de status van elke app-installatie te onderzoeken.
 
 ### <a name="see-also"></a>Zie tevens
 [Apps in Microsoft Intune implementeren](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 | **Appgegevens versleutelen** | Voor door beleid beheerde apps worden gegevens versleuteld met behulp van het door iOS geleverde versleutelingsschema op apparaatniveau. Als een pincode is vereist, worden de gegevens versleuteld volgens de instellingen in het beleid voor app-beveiliging. <br><br> Ga naar de officiële Apple-documentatie [hier](https://support.apple.com/HT202739) om te zien welke iOS-versleutelingsmodules FIPS 140-2 gecertificeerd zijn of waarvoor FIPS 140-2-certificering nog in behandeling is. <br><br> Geef aan wanneer werk- of schoolgegevens in deze app worden versleuteld. U kunt kiezen uit: <ul><li>**Wanneer het apparaat is vergrendeld:** alle app-gegevens die aan dit beleid zijn gekoppeld, worden versleuteld terwijl het apparaat is vergrendeld.</li><li>**Wanneer het apparaat is vergrendeld en er geopende bestanden zijn:** alle app-gegevens die aan dit beleid zijn gekoppeld, worden versleuteld wanneer het apparaat is vergrendeld, met uitzondering van gegevens in de bestanden die momenteel in de app zijn geopend.</li><li>**Na opnieuw opstarten van apparaat:** alle app-gegevens die aan dit beleid zijn gekoppeld, worden versleuteld wanneer het apparaat opnieuw wordt opgestart, totdat het apparaat voor de eerste keer wordt ontgrendeld.</li><li>**Apparaatinstellingen gebruiken:** app-gegevens worden versleuteld op basis van de standaardinstellingen op het apparaat. Wanneer u deze instelling inschakelt, moet de gebruiker een pincode instellen en gebruiken voor toegang tot het apparaat.  Als er geen pincode wordt ingesteld, worden de apps niet geopend en wordt de gebruiker gevraagd om een pincode in te stellen. Dit gebeurt met het bericht 'Uw organisatie vereist dat u eerst een pincode voor het apparaat inschakelt voor toegang tot deze app.' </li></ul> | Wanneer apparaat is vergrendeld |
 | **Synchroniseren van contactpersonen uitschakelen** | Kies **Ja** om te voorkomen dat de app gegevens opslaat in de systeemeigen Contactpersonen-app op het apparaat. Kies **Nee** om ervoor te zorgen dat de app gegevens kan opslaan in de systeemeigen Contactpersonen-app op het apparaat. <br><br>Als u selectief wilt wissen om werk- of schoolgegevens uit de app te verwijderen, worden contactpersonen verwijderd die rechtstreeks vanuit de app met de systeemeigen Contactpersonen-app worden gesynchroniseerd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. Dit is momenteel alleen van toepassing op de Microsoft Outlook-app. | Nee |
 | **Afdrukken uitschakelen** | Kies **Ja** om te voorkomen dat de app werk- of schoolgegevens afdrukt. | Nee |
-
+| **Selecteer naar welke opslagservices bedrijfsgegevens kunnen worden opgeslagen** | Gebruikers kunnen naar de geselecteerde services opslaan (OneDrive voor Bedrijven, SharePoint en lokale opslag). Alle andere services worden geblokkeerd. | OneDrive voor bedrijven en SharePoint |
 
 > [!NOTE]
 > Geen van de instellingen voor gegevensverplaatsing beheert de door Apple beheerde functie Open in op iOS-apparaten. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md) voor informatie over het beheer van de functie Open in.
@@ -72,6 +72,7 @@ Er zijn een aantal uitzonderingsapps en -platformservices waar het Intune-beveil
 | **De uitvoering blokkeren van beheerde apps die op jailbroken of geroote apparaten worden uitgevoerd** |  Kies **Ja** om te voorkomen dat deze app wordt uitgevoerd op jailbroken of geroote apparaten. De gebruiker kan deze app nog steeds gebruiken voor privétaken maar moet voor het openen van werk- of schoolgegevens in deze app een ander apparaat gebruiken. | Yes |
 | **Toegangsvereisten opnieuw controleren na (minuten)** | Configureer de volgende instellingen: <ul><li>**Time-out**: dit is het aantal minuten waarna de (eerder in het beleid gedefinieerde) toegangsvereisten opnieuw worden gecontroleerd. Wanneer een beheerder bijvoorbeeld invoeren van een pincode inschakelt in het beleid, moet een gebruiker die een MAM-app opent een pincode invoeren. Wanneer u deze instelling gebruikt, hoeft de gebruiker nog **30 minuten** (standaardwaarde) geen pincode in te voeren voor een MAM-app.</li><li>**Offline respijtperiode**: het aantal minuten dat MAM-apps offline kunnen worden uitgevoerd. Geef de tijd (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **720** minuten (12 uur). Nadat deze periode is verstreken, is gebruikersverificatie voor AAD vereist om de app te blijven uitvoeren.</li></ul>| Time-out: 30 <br><br> Offline: 720 |
 | **Offline interval (in dagen) voordat app-gegevens worden gewist** | Na dit aantal dagen (gedefinieerd door de beheerder) van offline uitvoeren, wordt selectief wissen door de app zelf uitgevoerd. Dit is dezelfde wisbewerking die door de beheerder kan worden gestart in de werkstroom MAM wissen. <br><br> | 90 dagen |
+| **Pincode apparaat uitschakelen wanneer de pincode voor het apparaat wordt beheerd** | Kies **Ja** om de pincode voor het apparaat uit te schakelen wanneer een apparaatvergrendeling wordt gedetecteerd op een geregistreerd apparaat. | Nee |
 
 ##  <a name="add-ins-for-outlook-app"></a>Invoegtoepassingen voor Outlook-app
 

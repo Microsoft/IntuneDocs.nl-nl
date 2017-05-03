@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Deze richtlijnen zijn bedoeld voor systeembeheerders die verantwoordelijk zijn voor het beheer van apparaten in de onderneming. Zie [Veelgestelde vragen over de Intune-bedrijfsportal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) voor informatie over het gebruik van Intune op uw mobiele apparaat.
-
-Lees dit onderwerp en andere vereisten in [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](what-to-know-before-you-start-microsoft-intune.md) voordat u Microsoft Intune instelt.
-
-Gebruik de informatie in de volgende gedeelten om te plannen voor het netwerkverkeer voor Microsoft Intune-clients.
+Deze richtlijnen geven Intune-beheerders inzicht in de netwerkvereisten voor de Intune-service. U kunt deze informatie gebruiken voor meer inzicht in de bandbreedtevereisten, het IP-adres en de vereiste poortinstellingen voor proxy-instellingen.
 
 ## <a name="average-network-traffic"></a>Gemiddeld netwerkverkeer
 Deze tabel bevat de geschatte grootte en frequentie van algemene inhoud die via het netwerk voor elke client wordt verzonden.

@@ -1,6 +1,6 @@
 ---
 title: De integratie van Skycure met Intune instellen | Microsoft Docs
-description: Stel de integratie van Skycure met Microsoft Intune in.
+description: De integratie van Skycure met Microsoft Intune instellen.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
+# <a name="set-up-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Skycure ondersteunt twee modi van integratie met Intune:
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>De integratie met alleen-lezen tussen Intune en Skycure instellen
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > De Skycure-beheerdersreferenties bestaan uit een e-mailaccount dat een geldige gebruiker moet zijn in Azure Active Directory. Als dat niet het geval is, mislukt de aanmelding. Skycure maakt gebruik van Azure Active Directory om deze beheerder te verifiëren door middel van eenmalige aanmelding.
 
 1.  Ga naar de [Skycure-beheerconsole](https://aad.skycure.com).
@@ -75,7 +75,7 @@ Skycure ondersteunt twee modi van integratie met Intune:
 
     ![Voltooiingsscherm voor iOS-app](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > Herhaal dezelfde procedure voor de **Android-app voor Skycure** en de **beheerapp**.
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>Een Azure AD-beveiligingsgroep toevoegen aan Skycure

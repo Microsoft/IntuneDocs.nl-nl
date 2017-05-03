@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
+ms.lasthandoff: 04/19/2017
 
 ---
 
@@ -30,6 +30,11 @@ ms.lasthandoff: 04/06/2017
 De iOS App Store biedt u de mogelijkheid meerdere licenties te kopen voor een app die u wilt uitvoeren binnen uw bedrijf. Zodoende kunt u de administratieve overhead voor het bijhouden reduceren als u meerdere exemplaren van apps hebt aangeschaft.
 
 Met Microsoft Intune kunt u nu apps beheren die u via een dergelijk programma hebt aangeschaft, door de licentiegegevens uit de App Store te importeren en bij te houden hoeveel licenties u hebt gebruikt. Zo wordt voorkomen dat u meer exemplaren van de app installeert dan u hebt aangeschaft.
+
+Verder kunt u met Intune boeken die u hebt aangeschaft via het volume-aankoopprogramma van Apple synchroniseren, beheren en toewijzen aan gebruikers. Gebruik de werkbelasting **Boeken** in de Intune-portal voor het beheren van boeken. De procedures voor het beheren van boeken zijn hetzelfde als die u gebruikt voor het beheren van apps.
+U kunt dit alleen doen als u een Apple Volume Purchase Program-token hebt geüpload. Op dit moment kunt u alleen boeken als toewijzen een **Vereiste** installatie.
+Wanneer u een boek aan een apparaat toewijst, moet op dat apparaat de ingebouwde app iBooks geïnstalleerd zijn. Als dat niet het geval is, moet de gebruiker de app opnieuw installeren om het boek te kunnen lezen. U kunt Intune momenteel niet gebruiken voor het herstellen van verwijderde ingebouwde apps.
+
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Volume-purchased apps voor iOS-apparaten beheren
 U koopt meerdere licenties voor iOS-apps via het [Apple-VPP voor bedrijven (Volume Purchase Program)](http://www.apple.com/business/vpp/) of het [Apple VPP voor onderwijs (Volume Purchase Program)](http://volume.itunes.apple.com/us/store). Hiervoor moet u een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune.  U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps.
@@ -43,7 +48,6 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 * Standaard wordt Intune twee keer per dag gesynchroniseerd met de Apple VPP-service. U kunt op elk gewenst moment een handmatige synchronisatie starten.
 * Nadat u het VPP-token hebt geïmporteerd in Intune, kunt u hetzelfde token niet in een andere oplossing voor apparaatbeheer importeren. Dit kan leiden tot verlies van licentietoewijzngen en gebruikersrecords.
 * Voordat u begint met het gebruik van iOS VPP met Intune, verwijdert u eventuele bestaande VPP-gebruikersaccounts die zijn gemaakt met andere MDM-leveranciers (Mobile Device Management). Uit veiligheidsoogpunt worden deze gebruikersaccounts niet met Intune gesynchroniseerd. Intune synchroniseert alleen gegevens uit de Apple VPP-service, die zijn gemaakt door Intune.
-* U kunt geen iOS VPP-apps implementeren op apparaten die zijn ingeschreven met Device Enrollment Protocol (DEP).
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
@@ -69,7 +73,7 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 2. Kies de app die u wilt toewijzen op de blade met de lijst met apps en kies vervolgens **...** > **Groepen toewijzen**.
 3. Kies **Beheren** > **Toegewezen groepen** op de blade <*app-naam*> - **Toegewezen groepen**.
 4. Kies **Groepen toewijzen** en kies op de blade **Groepen selecteren** de Azure AD- gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
-U moet de toewijzingsactie instellen op **Vereist**. Beschikbare installaties worden momenteel niet ondersteund. Daarnaast zijn toewijzingen aan apparaatgroepen beschikbaar voor tenants die zijn gemaakt na januari 2017. Als uw tenant voor die datum is gemaakt en u niet de optie hebt om VPP-apps toe te wijzen aan apparaatgroepen, neemt u contact op met Intune-support.
+U moet de toewijzingsactie instellen op **Vereist**. Daarnaast zijn toewijzingen aan apparaatgroepen beschikbaar voor tenants die zijn gemaakt na januari 2017. Als uw tenant voor die datum is gemaakt en u niet de optie hebt om VPP-apps toe te wijzen aan apparaatgroepen, neemt u contact op met Intune-support.
 5. Als u klaar bent, kiest u **Opslaan**.
 
 Zie [How to monitor apps](monitor-apps.md) (Apps controleren) voor meer informatie over het controleren van app-toewijzingen.
@@ -81,4 +85,6 @@ Wanneer u de app als een **vereiste** installatie toewijst, gebruikt elke gebrui
 Als u een licentie wilt vrijmaken, moet u de toewijzingsactie wijzigen in **Verwijderen**. De licentie wordt vrijgemaakt nadat de app is verwijderd.
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app te installeren, wordt deze gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Dit moet plaatsvinden voordat de installatie van de app wordt voortgezet.
+
+Wanneer u een VPP-app als beschikbaar implementeert, worden de app-inhoud en de licentie rechtstreeks vanuit de App Store geïmplementeerd.
 

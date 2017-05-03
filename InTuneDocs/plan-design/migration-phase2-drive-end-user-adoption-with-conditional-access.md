@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ Hier volgt een gebruikelijke benadering voor het uitbreiden van de migratiecampa
 
 -   Gebruikers van een voorgaande oplossing hebben mogelijk met niet-beheerde apparaten toegang tot resources totdat voorwaardelijke toegang voor die gebruikers is ingeschakeld.
 
-> [!TIP] 
+> [!TIP]
 > Dit is een van de vele benaderingen. U kunt een eenvoudigere procedure hanteren waarbij alle beleidsregels voor voorwaardelijke toegang worden uitgesteld totdat elke fase de instructie heeft gekregen om de apparaten in te schrijven. U kunt ook een striktere procedure hanteren waarbij vanaf het begin voorwaardelijke toegang wordt toegepast en volledige naleving voor alle toegang is vereist.
 
 -   Meer informatie over [voorwaardelijke toegang](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access).
@@ -61,7 +61,7 @@ Hier volgt een gebruikelijke benadering voor het uitbreiden van de migratiecampa
 
 -   Meer informatie over [het configureren van voorwaardelijke toegang](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
-### <a name="task-2-setup-intune-conditional-access"></a>Taak 2: voorwaardelijke toegang van Intune instellen
+### <a name="task-2-set-up-intune-conditional-access"></a>Taak 2: voorwaardelijke toegang van Intune instellen
 
 Kies een van de volgende soorten beleid van voorwaardelijke toegang voor meer informatie:
 

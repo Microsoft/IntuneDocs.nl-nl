@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
-ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
-ms.lasthandoff: 04/07/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: d8fa3a19915076f1a603449dd426172fbc5a613a
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -38,9 +38,8 @@ Met de informatie in dit onderwerp kunnen IT-beheerders iOS-apparaten van het be
 2. [Een DEP-profiel maken](#create-anapple-dep-profile)
 3. [Apple DEP-serienummers toewijzen aan uw Intune-server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [Door DEP beheerde apparaten synchroniseren](#synchronize-dep-managed-devices)
-5. Apparaten onder gebruikers distribueren
-
-
+5. [DEP-profiel op apparaten toewijzen](#assign-a-dep-profile-to-devices)
+6. [Apparaten onder gebruikers distribueren](#distribute-devices-to-users)
 
 ## <a name="get-the-apple-dep-certificate"></a>Het Apple DEP-certificaat ophalen
 Voordat u iOS-apparaten van het bedrijf met het Apple Device Enrollment Program (DEP) kunt inschrijven, moet u een DEP-certificaatbestand (.p7m) van Apple ontvangen. Intune kan met dit token informatie synchroniseren over apparaten binnen uw bedrijf die aan DEP deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
@@ -49,9 +48,6 @@ Voor het beheren van iOS-apparaten in bedrijfseigendom met het DEP van Apple moe
 
 > [!NOTE]
 > Als uw Intune-tenant is gemigreerd van de klassieke Intune-console naar de Azure-portal en u een Apple DEP-token hebt verwijderd uit de Intune-beheerconsole tijdens de migratieperiode, is het DEP-token mogelijk hersteld in uw Intune-account. U kunt het DEP-token opnieuw verwijderen uit Azure Portal verwijderen.
-
-
-
 
 **Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple DEP-token.**<br>
 1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune **Apparaatinschrijving** > **Apple DEP-token**.
@@ -118,6 +114,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 9. Selecteer **Maken** op de blade **Inschrijvingsprofiel maken** om de profielinstellingen op te slaan.
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Apple DEP-serienummers toewijzen aan uw MDM-server
+Serienummers van apparaten moeten worden toegewezen aan uw Intune MDM-server in de Apple DEP-webportal, zodat Intune deze apparaten kan beheren.
 
 1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf.
 
@@ -128,6 +125,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 4. Selecteer **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
 
 ## <a name="synchronize-dep-managed-devices"></a>Door DEP beheerde apparaten synchroniseren
+Nu Intune toestemming heeft om uw DEP-apparaten te beheren, kunt u Intune synchroniseren met de DEP-service om uw beheerde apparaten weer te geven in de Intune-portal.
 
 1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
@@ -146,12 +144,29 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 >[!NOTE]
 >U kunt ook DEP-serienummers aan profielen toewijzen via de blade **Apple DEP-serienummers**.
 
+## <a name="assign-a-dep-profile-to-devices"></a>DEP-profiel op apparaten toewijzen
+DEP-apparaten die worden beheerd door Intune, moeten een DEP-profiel toegewezen krijgen voordat ze worden ingeschreven.
+
+1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
+
+2. Kies **Apparaten inschrijven** > **Apple-inschrijving** op de blade Intune van Azure Portal en kies vervolgens **DEP-profielen**.
+
+3. Selecteer in de lijst met **Apple DEP-inschrijvingsprofielen** het profiel dat u wilt toewijzen aan apparaten en selecteer vervolgens **Toewijzingen van apparaten**
+
+4. Selecteer **Toewijzen** en selecteer vervolgens de DEP-apparaten die u aan dit profiel wilt toewijzen. U kunt filteren om beschikbare DEP-apparaten weer te geven:
+  - **niet-toegewezen**
+  - **alle**
+  - **&lt;DEP-profielnaam&gt;**
+
+  ![Schermopname van de knop Toewijzen voor het toewijzen van een DEP-profiel in de Intune-portal](media/dep-profile-assignment.png)
+
+5. Selecteer de apparaten die u wilt beheren. Met het selectievakje boven de kolom selecteert u tot 1000 apparaten in de lijst. Klik vervolgens op **Toewijzen**. Als u meer dan 1000 apparaten wilt registreren, herhaalt u de stappen voor toewijzing totdat alle DEP-profielen zijn toegewezen.
+
 ## <a name="distribute-devices-to-users"></a>Apparaten onder gebruikers distribueren
 
-U kunt apparaten in bedrijfseigendom nu distribueren aan gebruikers. Wanneer een iOS-apparaat wordt ingeschakeld, wordt dit ingeschreven voor beheer door Intune.
+U kunt apparaten in bedrijfseigendom nu distribueren aan gebruikers. Wanneer een iOS DEP-apparaat wordt ingeschakeld, wordt dit ingeschreven voor beheer door Intune. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen.
 
-
-## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Hoe gebruikers de bedrijfsportal op hun apparaten installeren en gebruiken
+### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Hoe gebruikers de bedrijfsportal op hun apparaten installeren en gebruiken
 
 Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfsportal-app worden geïnstalleerd en uitgevoerd om apps te downloaden en apparaten te beheren. Nadat gebruikers hun apparaten hebben ontvangen, moeten zij de onderstaande extra stappen uitvoeren om Configuratieassistent te voltooien en de bedrijfsportal-app te installeren.
 
@@ -159,7 +174,7 @@ Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfspor
 
 1. Wanneer gebruikers hun apparaat inschakelen, wordt ze gevraagd de Configuratieassistent te voltooien. Tijdens de installatie wordt er naar de referenties van de gebruikers gevraagd. Ze moeten de referenties (de unieke naam of de UPN) van het Intune-abonnement gebruiken.
 
-2. Tijdens de installatie wordt er naar de Apple ID van de gebruikers gevraagd. Er moet een Apple ID worden opgegeven zodat de bedrijfsportal op het apparaat kan worden geïnstalleerd. Ze kunnen ook de id in het iOS-instellingenmenu opgeven nadat de installatie is voltooid.
+2. Tijdens de installatie wordt er naar de Apple ID van de gebruikers gevraagd. Er moet een Apple ID worden opgegeven zodat de bedrijfsportal op het apparaat kan worden geïnstalleerd. Ze kunnen ook de Apple-id in het iOS-instellingenmenu opgeven nadat de installatie is voltooid.
 
 3. Nadat het instellen is voltooid, moeten gebruikers de bedrijfsportal-app vanuit de App Store installeren.
 

@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: e45d1f0cec7d07ea7d01be0f6ec8443e6521681a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ U kunt beheerde-browserbeleidsregels maken voor de volgende typen apparaten:
 
 -   Apparaten met iOS 8.0 en hoger
 
-De beheerde browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+De beheerde browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## <a name="create-a-managed-browser-policy"></a>Een beheerde-browserbeleid maken
 
@@ -110,7 +110,7 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 
     -   Poort 443 voor https
 
-    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. Zo worden **http&colon;//www&period;contoso&period;com:*;**en**http&colon;//www&period;contoso&period;com: /*; ** niet ondersteund.
+    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. Zo worden **http&colon;//www&period;contoso&period;com:*;** en **http&colon;//www&period;contoso&period;com: /*;** niet ondersteund.
 
 -   Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
 

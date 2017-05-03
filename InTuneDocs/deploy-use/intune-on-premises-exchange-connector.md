@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -63,7 +63,7 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor On-premises Exchange Connector downloaden
 
-1. Open op een ondersteund Windows Server-besturingssysteem voor On-premises Exchange Connector de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) (http://manage.microsoft.com) met een gebruikersaccount dat een beheerder is in de Exchange-tenant en dat een licentie heeft om Exchange Server te gebruiken.
+1. Open op een ondersteund Windows Server-besturingssysteem voor On-premises Exchange Connector de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) (https://manage.microsoft.com) met een gebruikersaccount dat een beheerder is in de Exchange-tenant en dat een licentie heeft om Exchange Server te gebruiken.
 ![Exchange-verbinding instellen openen](../media/ExchangeConnector.gif)
 
 2.  Kies in het deelvenster met snelkoppelingen **Beheer**>**Mobile Device Management** > **Microsoft Exchange**>**Exchange-verbinding instellen**.
@@ -129,7 +129,7 @@ Nadat Exchange Connector de verbinding heeft ingesteld, worden de mobiele appara
 
 ## <a name="validate-the-exchange-connection"></a>De Exchange-verbinding valideren
 
-Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de werkruimte **Beheer**. Kies onder **Mobile Device Management** de optie **Microsoft Exchange**. Controleer vervolgens of de details die u hebt opgegeven, worden weergegeven onder **Exchange-verbindingsgegevens**.
+Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de werkruimte **Beheer**. Kies onder **Mobile Device Management** de optie **Microsoft Exchange**. Controleer vervolgens of de details die u hebt opgegeven, worden weergegeven onder **Exchange-verbindingsgegevens**.
 
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.

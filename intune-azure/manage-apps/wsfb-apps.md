@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
+3. Kies **Mobiele apps** op de blade **Intune**.
 1. Kies op de blade **Mobiele apps** de optie **Instellen** > **Windows Store voor Bedrijven**.
 2. Klik op **Inschakelen**.
 3. Klik, als u dit nog niet hebt gedaan, op de koppeling om u aan te melden bij Windows Store voor Bedrijven en uw account te koppelen zoals eerder is beschreven.
@@ -67,7 +67,7 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
 ## <a name="synchronize-apps"></a>Apps synchroniseren
 
-1. Kies in de workload **Apps beheren** de optie **Instellen** > **Windows Store voor Bedrijven**.
+1. Kies in de workload **Mobiele apps** de optie **Instellen** > **Windows Store voor Bedrijven**.
 2. Klik op **Synchroniseren** om de apps die u hebt aangeschaft in Windows Store, op te halen in Intune.
 
 ## <a name="assign-apps"></a>Apps toewijzen
