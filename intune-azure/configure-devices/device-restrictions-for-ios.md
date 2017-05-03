@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -82,7 +82,7 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 -     **Het minimumaantal niet-alfanumerieke tekens in een wachtwoord**: hiermee geeft u het aantal symbooltekens (zoals **#** of **@**) op dat het wachtwoord moet bevatten.
 -     **Minimale wachtwoordlengte**: hiermee geeft u het minimum aantal tekens op voor het wachtwoord.
 -     **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal mislukte aanmeldingspogingen op dat is toegestaan voordat het apparaat wordt gewist.
--     **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist**<sup>1</sup>: hiermee geeft u op hoelang het apparaat inactief moet zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren.
+-     **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** <sup>1</sup>: hiermee geeft u op hoelang het apparaat inactief moet zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren.
 -     **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**<sup>1</sup>: hiermee geeft u het aantal minuten op waarna het apparaatscherm wordt uitgeschakeld.
 -     **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.
 -     **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
@@ -225,6 +225,67 @@ Gebruik de informatie in deze lijst om de naam, uitgever en bundel-id te achterh
 -     **Streaming van gedeelde foto's**: stel deze optie in op **Nee** om **Foto's delen via iCloud** uit te schakelen op het apparaat.
 -     **Voortzetting van activiteit**: hiermee staat u toe dat gebruikers op een ander iOS- of macOS-apparaat kunnen doorgaan met werk waaraan ze zijn begonnen op een iOS-apparaat (Handoff).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Autonome modus voor enkele toepassing (alleen onder toezicht)
+
+Gebruik deze instellingen om iOS-apparaten zodanig te configureren dat hierop opgegeven apps in de autonome één-app-modus worden uitgevoerd. Wanneer deze modus is geconfigureerd en de app wordt uitgevoerd, wordt het apparaat vergrendeld zodat alleen de betreffende app kan worden uitgevoerd. U kunt bijvoorbeeld een app configureren die de gebruikers een test laat uitvoeren op het apparaat. Wanneer de acties van de app zijn voltooid of u het beleid verwijdert, keert het apparaat terug naar de normale staat.
+
+### <a name="settings"></a>Instellingen
+
+- **App-naam**: voer de naam in van de app zoals die wordt weergegeven in de lijst met apps op deze blade.
+- **App-bundel-id**: geef de bundel-id van de app op. Zie voor hulp **Lijst van bundel-id’s voor ingebouwde iOS-apps** in dit onderwerp.
+
+Nadat u de naam en bundel-id van de app hebt opgegeven, kiest u **Toevoegen** om deze aan de lijst toe te voegen.
+
+- **Importeren**: een (CSV-)bestand met een lijst met door komma's gescheiden namen van apps en de bijbehorende bundel-id's importeren.
+- **Exporteren**: de namen van apps en de bijbehorende bundel-id's die u hebt geconfigureerd exporteren naar een (CSV-)bestand met door komma's gescheiden waarden.
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id’s voor ingebouwde iOS-apps
+
+Deze lijst bevat de bundel-id’s van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier.
+
+|||
+|-|-|
+|App-naam|Bundel-id|
+|App Store|com.apple.AppStore|
+|Rekenmachine|com.apple.calculator|
+|Kalender|com.apple.mobilecal|
+|Camera|com.apple.camera|
+|Klok|com.apple.mobiletimer|
+|Kompas|com.apple.compass|
+|Contactpersonen|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Zoek vrienden|com.apple.mobileme.fmf1|
+|Zoek mijn iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Status|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.Apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.Apple.mobilemail|
+|Kaarten|com.apple.Maps|
+|Berichten|com.apple.MobileSMS|
+|Music|com.apple.Music|
+|Nieuws|com.apple.news|
+|Opmerkingen|com.apple.mobilenotes|
+|Getallen|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Foto’s|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Herinneringen|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Instellingen|com.apple.Preferences|
+|Aandelen|com.apple.stocks|
+|Tips|com.apple.tips|
+|Video 's|com.apple.videos|
+|Dictafoon|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|Weer|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Kiosk
 -     **Activeringsvergrendeling**: hiermee schakelt u Activeringsvergrendeling in op iOS-apparaten in de supervisiemodus.
 -     **App die wordt uitgevoerd in de kioskmodus**: kies **Beheerde app** om een app te selecteren die u aan Intune hebt toegevoegd of kies **Store-app** om de URL naar een app in de Store op te geven. Er mogen geen andere apps op het apparaat worden uitgevoerd. Zie "URL's voor app stores opgeven" verderop in dit onderwerp voor meer informatie.
@@ -256,4 +317,21 @@ Gebruik de informatie in deze lijst om de naam, uitgever en bundel-id te achterh
 -     **JavaScript**: hiermee staat u de uitvoering van Java-scripts in de browser toe.
 -     **Waarschuwingen voor fraude**: hiermee staat u toe dat waarschuwingen voor fraude in de browser worden weergegeven.
 -     **Pop-ups**: hiermee schakelt u de pop-upblokkering voor de browser in of uit.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>Niet-gemarkeerde e-maildomeinen
+
+Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wanneer eindgebruikers een e-mail ontvangen dat afkomstig is van een ander domein dan dat u hebt geconfigureerd, wordt de e-mail in de map iOS Mail gemarkeerd als niet-vertrouwd.
+
+
+### <a name="managed-web-domains"></a>Beheerde webdomeinen
+
+Voeg in het veld **Webdomein-URL** een of meer URL's toe aan de lijst. Documenten die zijn gedownload via de URL's die u opgeeft, worden als beheerd beschouwd. Deze instelling geldt alleen voor documenten die zijn gedownload met Safari.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Domeinen voor automatisch invullen van wachtwoorden in Safari
+
+Voeg in het veld **Domein-URL** een of meer URL's toe aan de lijst. Gebruikers kunnen in deze lijst alleen webwachtwoorden van URL's opslaan. Deze instelling geldt alleen voor Safari en voor apparaten met iOS 9.3 en hoger in de modus supervisie. Als u geen URL's opgeeft, kunnen wachtwoorden van alle websites worden opgeslagen.
 

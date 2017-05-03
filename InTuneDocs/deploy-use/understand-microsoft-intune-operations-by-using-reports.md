@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Gebruik de informatie in dit onderwerp om u te helpen bij het maken en beheren v
 ## <a name="using-reports"></a>Using Reports (Rapporten gebruiken)
 Intune-rapporten geven informatie over software, hardware en softwarelicenties in uw organisatie. Rapporten kunnen u helpen bij het bevestigen van huidige behoeften en het voorspellen van toekomstige uitgaven. De werkruimte **Rapporten** biedt u de hulpmiddelen voor het maken en beheren van rapporten. 
 
-### <a name="report-types"></a>Rapporttypen
+## <a name="report-types"></a>Rapporttypen
 
 |Rapporttype|Beschrijving|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Intune-rapporten geven informatie over software, hardware en softwarelicenties i
 |**Health Attestation-rapporten**|De status van mobiele apparaten weergeven.|
 |**Mac OS X-hardwarerapport**|Geeft de details weer van de hardware van alle ingeschreven Mac OS X-apparaten in de door u geselecteerde groepen. Zie [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md) voor informatie over de hardware-inventarisatie van deze apparaten.|
 |**Mac OS X-softwarerapport**|Geeft de software weer die op alle Mac OS X-apparaten in de door u geselecteerde groepen is geïnstalleerd. Het rapport bevat de softwarenaam (als een bundel-id), de verkorte (of gebruiksvriendelijke) versienaam, de versie en het aantal apparaten waarop de software is geïnstalleerd.|
+|**Windows Information Protection-rapporten**|Bevat informatie over Windows Information Protection (WIP)-bewerkingen op apparaten die u beheert.|
+|**Health Attestation-rapporten**|Bevat informatie die wordt gerapporteerd door de Windows Health Attestation-service voor apparaten die u hebt beheerd.|
 
-#### <a name="to-create-a-report"></a>Een rapport maken
+## <a name="to-create-a-report"></a>Een rapport maken
 
 1.  Kies **Rapporten** in de Intune-beheerconsole. Kies vervolgens het rapporttype dat u wilt genereren, zoals beschreven in de vorige tabel.
 

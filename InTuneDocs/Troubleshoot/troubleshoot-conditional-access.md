@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ De voorwaarden die voor elk apparaat gelden, zijn terug te vinden in Azure Manag
     
         -    Voor apparaten met deze status moet de gebruiker de wachtwoordcode voor beveiligd opstarten instellen. De gebruiker krijgt op het apparaat een bericht van de bedrijfsportal-app waarin wordt gevraagd om een wachtwoordcode voor het opstarten van het apparaat in te stellen. Wanneer u op het apparaatbericht hebt getikt en de bestaande pincode of het wachtwoord hebt bevestigd, kiest u de optie **Pincode vereisen voor het starten van apparaat** op het scherm **Beveiligd opstarten**. Tik vervolgens in de bedrijfsportal-app op de knop **Naleving controleren** voor het apparaat. Het apparaat moet nu worden gedetecteerd als versleuteld.
     
-        -     Sommige apparaatfabrikanten versleutelen hun apparaten met behulp van een standaardpincode in plaats van een geheime pincode die door de gebruiker wordt ingesteld. Intune beschouwt versleuteling met een standaardpincode als onveilig omdat de gegevens op het apparaat bij deze methode van versleuteling niet afdoende zijn beschermd tegen kwaadwillende gebruikers met fysieke toegang tot het apparaat. Als dit het probleem is, zou u [app-beveiligingsbeleidsregels](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kunnen gebruiken.
+        -     Sommige apparaatfabrikanten versleutelen hun apparaten met behulp van een standaardpincode in plaats van een geheime pincode die door de gebruiker wordt ingesteld. Intune beschouwt versleuteling met een standaardpincode als onveilig omdat de gegevens op het apparaat bij deze methode van versleuteling niet afdoende zijn beschermd tegen kwaadwillende gebruikers met fysieke toegang tot het apparaat. Als dit het probleem is, zou u [app-beveiligingsbeleidsregels](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kunnen gebruiken.
 
 ## <a name="policy-issues"></a>Beleidsproblemen
 
@@ -119,7 +119,7 @@ Als deze procedures voor probleemoplossing uw probleem niet verhelpen, wordt u m
 ### <a name="exchange-connector-logs"></a>Logboeken van de Exchange Connector
 
 #### <a name="general-log-information"></a>Algemene logboekgegevens
-Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx') gebruiken. Dit hulpprogramma vereist dat u de Windows Server SDK downloadt.
+Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx') gebruiken. Dit hulpprogramma vereist dat u de Windows Server SDK downloadt.
 
 >[!NOTE]
 >De logboeken bevinden zich in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. De logboeken zijn opgenomen in een reeks van 30 logboekbestanden. De reeks begint bij *Connector0.log* en eindigt bij *Connector29.log*. Logboeken lopen van het ene logboek over in het andere nadat 10 MB aan gegevens in een logboek zijn verzameld. Zodra de logboeken bij Connector29 aanbelanden, wordt alles opnieuw gestart bij Connector0, waarbij eerdere logboeken worden overschreven.

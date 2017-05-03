@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -86,7 +86,7 @@ U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement 
 
   - Het maken van SharePoint Online- en Exchange Online-werkaccounts. Exchange on-premises en SharePoint on-premises worden niet ondersteund.
 
--   **Skype voor Bedrijven Online instellen voor moderne verificatie**. Zie voor meer informatie [Moderne verificatie inschakelen](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+-   **Skype voor Bedrijven Online instellen voor moderne verificatie**. Zie voor meer informatie [Moderne verificatie inschakelen](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) voor het maken van gebruikers. Azure AD verifieert gebruikers wanneer ze de app openen en hun werkreferenties invoeren.
@@ -96,7 +96,7 @@ U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement 
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>Gebruikers maken en Microsoft Intune-licenties toewijzen
 
-1.  Meld u met uw beheerdersreferenties aan bij de [Office-portal](http://portal.office.com).
+1.  Meld u met uw beheerdersreferenties aan bij de [Office-portal](https://portal.office.com).
 
 2.  Voeg gebruikers toe zoals wordt beschreven in de sectie **Steps to complete a 30-day evaluation of Intune** (Stappen voor het voltooien van een 30-daagse evaluatie van Intune) in de [Intune-evaluatiehandleiding](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) en wijs vervolgens Intune-licenties toe. Als u een gebruiker toegang wilt geven tot de Office-portal, de Azure AD-portal en de Azure Portal, wijst u aan de gebruiker de **rol van algemeen beheerder** toe.
 

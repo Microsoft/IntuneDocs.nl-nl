@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 App-beveiligingsbeleid kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door Intune worden beheerd. Zie [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md) (Wat is app-beveiligingsbeleid van Microsoft Intune) voor een gedetailleerde beschrijving van de werking van het app-beveiligingsbeleid en de scenario's die worden ondersteund door het app-beveiligingsbeleid van Intune.
 
-##  <a name="create-an-app-protection-policy"></a>Een app-beveiligingsbeleid maken
-1.  Kies **Beheren** > **App-beveiligingsbeleid** in de workload **Apps beheren**.
+##  <a name="create-an-app-protection-policy"></a>Beveiligingsbeleid voor apps maken
+1.  Kies **Beheren** > **App-beveiligingsbeleid** in de workload **Mobiele apps**.
 
 2.  Hiermee opent u de blade **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken. Kies **Een beleid toevoegen**.
 

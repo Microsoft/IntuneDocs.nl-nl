@@ -1,11 +1,11 @@
 ---
 title: Uw Android-apparaat met Intune inschrijven voor Telecom Expense Management
-description: 
+description: Informatie over het registreren van een Android-apparaat bij Telecom Expense Management.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/03/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -31,19 +31,35 @@ Mogelijk gebruikt uw organisatie Telecom Expense Management-software om ervoor t
 
 ![Een schermafbeelding van het scherm voor het selecteren van de beste categorie voor een apparaat op een iOS-apparaat. Hier ziet u opties voor zakelijke of persoonlijke inschrijving.](./media/and-enroll-11-tem-select-best-category.png)
 
-1. Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) te installeren via de Google Play Store. Met de app Datalert kunt u volgen hoeveel data worden verbruikt binnen uw organisatie. Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaan.
+Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) te installeren via de Google Play Store. Met de app Datalert kunt u volgen hoeveel data worden verbruikt binnen uw organisatie. Als uw organisatie de registratieoptie voor werk of school heeft geconfigureerd, moet u zich aanmelden met uw werk- of schoolaccount. Als dit nog niet is ingeschakeld, moet u informatie opgeven, zoals uw telefoonnummer, en moet u uw apparaat verifiëren met een code om het te registreren bij de service Datalert uit de app.
+
+Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaan. Uw IT-beheerder kan u vertellen of u zich moet aanmelden met uw __werk- of schoolaccount van Microsoft__ of met uw __telefoonnummer__.
 
   ![Een schermafbeelding van het welkomstscherm van de app Datalert, waarin u wordt gevraagd om naar het volgende scherm te gaan. U ontvangt informatie over hoe u met Datalert het meeste uit uw data-abonnement kunt halen.](./media/and-enroll-12-tem-datalert-setup.png)
 
-2. Geef het telefoonnummer van uw apparaat op.
+## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a>Registreren bij Datalert met uw werk- of schoolaccount van Microsoft
+
+1. Selecteer __Registreren met Microsoft-account__.
+
+  ![Een afbeelding van het instellingenscherm van de app Datalert, waarin in het bovenste gedeelte van het scherm een telefoonnummerveld staat voor het registreren van een apparaat en in het onderste gedeelte de optie Registreren met Microsoft-account, zolang u een Microsoft Office 365-account en een Intune-abonnement hebt.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+
+2. Kies uw werk- of schoolaccount uit de beschikbare accounts. Als uw account niet wordt vermeld, kunt u zich aanmelden door de knop **Account toevoegen** te gebruiken.
+
+  ![Een schermafbeelding van het scherm Account kiezen, met een voorbeeldaccount en de knop Account toevoegen.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+
+3. De Datalert-configuratie zal enige tijd actief zijn en wordt daarna voltooid. Tik op __Voltooien__ wanneer deze is voltooid.
+
+## <a name="enroll-into-datalert-using-your-phone-number"></a>Registreren bij Datalert met uw telefoonnummer
+
+1. Geef het telefoonnummer van uw apparaat op.
 
   ![Een schermafbeelding van de app Datalert waarin om een telefoonnummer wordt gevraagd.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
-3. U ontvangt dan een verificatiecode via een sms-bericht. Voer de code in en tik op __OK__.
+2. U ontvangt dan een verificatiecode via een sms-bericht. Voer de code in en tik op __OK__.
 
   ![Een schermafbeelding van de app Datalert waarin om de sms-verificatiecode wordt gevraagd.](./media/and-enroll-14-tem-datalert-sms.png)
 
-4. Wanneer u de verificatiecode hebt opgegeven, wordt het instellen van Datalert voltooid. Tik op __Voltooien__. U kunt dan uw dataverbruik bewaken via de app.
+3. Wanneer u de verificatiecode hebt opgegeven, wordt het instellen van Datalert voltooid. Tik op __Voltooien__. U kunt dan uw dataverbruik bewaken via de app.
 
   ![Een schermafbeelding van de app Datalert terwijl het dataverbruik van vandaag wordt bewaakt.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 

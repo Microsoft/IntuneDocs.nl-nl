@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Lookout MTP staat alleen gebruikers uit een geconfigureerde Azure AD-groep toe v
 
 * E-mail: enterprisesupport@lookout.com
 * Meld u aan bij de [MTP-console](http://aad.lookout.com) en ga naar de module **Ondersteuning**.
-* Ga naar: https://enterprise.support.lookout.com/hc/en-us/requests en dien een ondersteuningsaanvraag in.
+* Ga naar: https://enterprise.support.lookout.com/hc/requests en dien een ondersteuningsaanvraag in.
 
 ## <a name="unable-to-sign-in"></a>Aanmelden is niet mogelijk
 De volgende fout wordt weergegeven wanneer de globale Azure AD-beheerder de initiële installatie van Lookout niet heeft geaccepteerd.
@@ -55,7 +56,7 @@ Deze situatie kan zich voordoen in een van de volgende scenario's:
 
 ### <a name="device-reported-as-pending"></a>Apparaat gerapporteerd als **in behandeling**
 
-Een apparaat heeft de status **In behandeling** als de eindgebruiker de Lookout for Work-app niet heeft geopend, maar wel op de knop **Activeren** heeft getikt. Zie [U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) of [U wordt gevraagd Lookout for Work te installeren op uw iOS-apparaat](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios) voor meer informatie over de activering van het apparaat met de Lookout for Work-app.
+Een apparaat heeft de status **In behandeling** als de eindgebruiker de Lookout for Work-app niet heeft geopend, maar wel op de knop **Activeren** heeft getikt. Zie [U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) of [U wordt gevraagd Lookout for Work te installeren op uw iOS-apparaat](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios) voor meer informatie over de activering van het apparaat met de Lookout for Work-app.
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>Apparaat is actief, maar heeft geen apparaat-id
 Als een actief apparaat in de Lookout MTP-console geen apparaat-id heeft, maakt de gebruiker van het apparaat deel uit van de registratiegroep. Een apparaat kan deze status krijgen als de gebruiker van het apparaat uit de registratiegroep is verwijderd of als de registratiegroep is verwijderd.
@@ -83,14 +84,9 @@ Als de nieuwe gebruiker deel uitmaakt van een Lookout MTP-registratiegroep, word
 ## <a name="compliance-remediation-workflows"></a>Werkstromen voor herstel van naleving
 - [U wordt gevraagd Lookout for Work te installeren op uw Android-apparaat]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [U moet een bedreiging oplossen die met Lookout for Work op een Android-apparaat is gevonden](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [U moet een bedreiging oplossen die met Lookout for Work op een iOS-apparaat is gevonden](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [U moet een bedreiging oplossen die met Lookout for Work op een iOS-apparaat is gevonden](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Zie tevens
-[Uw abonnement instellen met Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Uw abonnement instellen met Lookout MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 
