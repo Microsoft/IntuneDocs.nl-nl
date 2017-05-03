@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -54,7 +54,7 @@ Na een bepaalde periode kunt u naleving afdwingen via het beleid voor voorwaarde
 
 Intune beschikt over aanvullende sjabloonresources om apparaatinschrijving bij eindgebruikers te promoten:
 
--   Raadpleeg [Eindgebruikers instructies geven over Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor meer informatie over de stappen die voor de inschrijving moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen
+-   Raadpleeg [Eindgebruikers instructies geven over Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) voor meer informatie over de stappen die voor de inschrijving moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen
 
 -   Download een aanpasbaar [sjabloon voor Intune-inschrijving van eindgebruikers voor IT-beheerders](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
 

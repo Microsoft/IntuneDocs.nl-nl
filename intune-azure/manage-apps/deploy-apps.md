@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ Als u wijzigingen wilt aanbrengen in zowel gebruikers- als apparaatgroepen, doet
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
-1. Kies **Beheren** > **Apps** in de workload **Apps beheren**.
+3. Kies **Mobiele apps** op de blade **Intune**.
+1. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
 2. Kies de app die u wilt toewijzen op de blade met de lijst met apps.
 3. Kies **Beheren** > **Toewijzingen** op de blade <*app-naam*> - **Overzicht**.
 4. Kies **Groepen selecteren** en kies op de blade **Groepen selecteren** de Azure AD-groepen waaraan u de app wilt toewijzen.

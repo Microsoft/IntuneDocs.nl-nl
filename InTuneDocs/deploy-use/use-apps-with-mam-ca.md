@@ -1,5 +1,5 @@
 ---
-title: Apps gebruiken met MAM CA | Microsoft Docs
+title: Apps met MAM CA gebruiken
 description: Dit onderwerp helpt u te begrijpen hoe MAM CA kan helpen bij het beheren van welke apps toegang hebben tot O365-services.
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ Hier volgt een lijst met eigenschappen die rechtstreeks zijn afgeleid van het ap
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Op Android-apparaten:
+  * De bedrijfsportal-app moet geïnstalleerd zijn op het apparaat, maar de eindgebruiker hoeft zich niet aan te melden bij de app.
+  * Apparaatregistratie moet worden uitgevoerd via de app OneDrive of Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Een apparaat verwijderen uit Azure AD-registratie.
 U kunt de apparaatregistratie verwijderen via de Azure AD-beheerconsole. Doorgaans doet de IT-beheerder dit.  De apparaatregistratie kan echter ook door de eindgebruiker op het apparaat zelf worden verwijderd.

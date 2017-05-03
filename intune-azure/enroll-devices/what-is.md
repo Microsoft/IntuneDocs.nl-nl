@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 In dit onderwerp worden verschillende manieren voor de inschrijving van mobiele apparaten in het Intune-beheer beschreven.
 
-Als u apparaten in Intune inschrijft, zoals Windows-pc's, kunt u deze apparaten beheren. In de Intune-documentatie wordt hiernaar verwezen als Mobile Device Management (MDM). Wanneer apparaten worden ingeschreven als mobiele apparaten (en niet als pc's), krijgen ze een MDM-certificaat, waarmee de apparaten vervolgens kunnen communiceren met de Intune-service.
+Als u apparaten in Intune inschrijft, kunt u deze apparaten beheren. In de Intune-documentatie wordt hiernaar verwezen als Mobile Device Management (MDM). Wanneer apparaten worden ingeschreven in Intune, krijgen ze een MDM-certificaat, waarmee de apparaten vervolgens kunnen communiceren met de Intune-service.
 
 De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met registratie van COD's (Corporate-owned devices, apparaten van bedrijf) zijn beheerscenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten.
 
-Als u Exchange ActiveSync on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen (binnenkort volgt meer informatie). U kunt Windows-pc's beheren als mobiele apparaten. Dit is de aanbevolen methode die hieronder wordt beschreven. U kunt ze ook beheren als pc's met behulp van [Intune-clientsoftware](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+Als u Exchange ActiveSync on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen (binnenkort volgt meer informatie). U kunt Windows-pc's beheren als mobiele apparaten. Dit is de aanbevolen methode die hieronder wordt beschreven.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Overzicht van registratiemethoden voor apparaten
@@ -53,21 +53,20 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 |**[USB-SA](#usb-sa)**|    Yes |    Optioneel |    Nee| [Meer informatie](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|    Nee |    Nee    | Nee|[Meer informatie](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows-registratiemethoden**
 
 | **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee |    Ja |    Nee | Meer informatie binnenkort beschikbaar|
+|**[BYOD](#byod)** | Nee |    Ja |    Nee | [Meer informatie](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android-registratiemethoden**
 
 | **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |    Nee | Meer informatie binnenkort beschikbaar|
+|**[BYOD](#byod)** | Nee|    Ja |    Nee | [Meer informatie](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| Nee | Ja | Nee| [Meer informatie](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ Zie voor meer informatie over de iOS-inschrijving:
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Mobile Device Management met Exchange ActiveSync en Intune
 Mobiele apparaten die niet zijn ingeschreven maar die met Exchange ActiveSync (EAS) verbinding maken, kunnen met behulp van MDM EAS-beleid door Intune worden beheerd. Intune gebruikt een Exchange-connector om met EAS te communiceren, on-premises of in de cloud. Meer informatie is binnenkort beschikbaar.
 
-
-## <a name="windows-pc-management-with-intune"></a>Windows pc-beheer met Intune  
-U kunt Microsoft Intune ook gebruiken om Windows-pc's te beheren met de Intune-clientsoftware. Pc's die met de Intune-client worden beheerd, kunnen:
-
- - Software- en hardware-inventarisatierapporten maken
- - Bureaubladtoepassingen installeren (bijvoorbeeld .exe en .msi-bestanden)
- - Firewall-instellingen beheren
-
-Pc’s die worden beheerd met de Intune-clientsoftware kunnen niet volledig worden gewist, maar de optie voor selectief wissen is wel beschikbaar. Pc’s die met de Intune-softwareclient worden beheerd, kunnen geen gebruik maken van de vele Intune-beheerfuncties, zoals voorwaardelijke toegang, VPN- en Wi-Fi-instellingen, of de implementatie van certificaten en e-mailconfiguraties. Meer informatie is binnenkort beschikbaar.
-
 ## <a name="supported-device-platforms-and-browsers"></a>Ondersteunde apparaatplatformen en browsers
 
 Zie [Ondersteunde apparaten en browsers voor Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 
-Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten (niet-pc's) worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.
+Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.
 

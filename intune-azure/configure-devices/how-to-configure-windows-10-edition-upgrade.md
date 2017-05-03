@@ -1,12 +1,12 @@
 ---
 title: Editie-upgrades voor Windows 10 configureren in Intune
 titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Intune kunt gebruiken voor het upgraden van Windows 10-apparaten die u beheert.'
+description: 'Intune Azure Preview: in dit onderwerp leest u hoe u met Intune de Windows 10-apparaten die u beheert kunt bijwerken naar een andere editie.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Gebruik de informatie in dit onderwerp voor informatie over het configureren van een editie-upgradeprofiel voor Windows 10. Met dit profiel kunt u apparaten waarop een van de volgende versies van Windows 10 wordt uitgevoerd, automatisch upgraden naar een nieuwere versie:
+Gebruik de informatie in dit onderwerp voor informatie over het configureren van een editie-upgradeprofiel voor Windows 10. Met dit profiel kunt u apparaten waarop een van de volgende versies van Windows 10 wordt uitgevoerd automatisch bijwerken naar een andere editie:
 
 - Windows 10 Home
 - Windows 10 Holographic

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -44,8 +44,12 @@ Lees in dit onderwerp wat de basisbeginselen zijn voor het configureren van de p
     - **macOS**
 6. Kies **Apparaatfuncties** in de vervolgkeuzelijst **Profieltype**. 
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
-    - [iOS-instellingen](device-features-for-ios.md)
-    - [macOS-instellingen](device-features-for-macos.md)
+    - [AirPrint-instellingen voor iOS en MacOS](air-print-settings-for-ios-and-macos.md)
+     - [AirPlay-instellingen voor iOS](airplay-settings-for-ios-devices.md)
+    - [Indelingsinstellingen voor het iOS-startscherm](home-screen-settings-for-ios.md)
+    - [App-meldingsinstellingen voor iOS opgeven](app-notification-settings-for-ios.md)
+    - [Configuratie-instellingen voor gedeelde apparaten voor iOS](shared-device-settings-for-ios.md)
+    - [Filterinstellingen voor webinhoud in iOS](web-content-filter-settings-for-ios.md)
 
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 

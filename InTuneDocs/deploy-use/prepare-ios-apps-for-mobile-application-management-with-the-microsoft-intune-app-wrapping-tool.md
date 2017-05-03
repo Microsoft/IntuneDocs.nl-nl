@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
-ms.lasthandoff: 01/14/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -109,8 +109,8 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
   ![Selecteer In-House and Ad Hoc als certificaat](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Als u niet van plan bent om de app te distribueren en u deze alleen intern wilt testen, kunt u een certificaat voor iOS-appontwikkeling in plaats van een certificaat voor productie gebruiken. Als u een certificaat voor ontwikkeling gebruikt, zorg er dan voor dat het mobiele inrichtingsprofiel verwijst naar de apparaten waarop de app wordt geïnstalleerd.
+  >[!NOTE]
+  >Als u niet van plan bent om de app te distribueren en u deze alleen intern wilt testen, kunt u een certificaat voor iOS-appontwikkeling in plaats van een certificaat voor productie gebruiken. Als u een certificaat voor ontwikkeling gebruikt, zorg er dan voor dat het mobiele inrichtingsprofiel verwijst naar de apparaten waarop de app wordt geïnstalleerd.
 
 7. Klik onder aan de pagina op **Next**.
 
@@ -137,7 +137,6 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 14. Dubbelklik op het certificaatbestand dat u zojuist hebt gedownload om het certificaat toe te voegen aan een sleutelhanger.
 
 15. Open **Sleutelhangertoegang** opnieuw. Ga naar uw certificaat door te zoeken naar de naam van het certificaat in de zoekbalk rechtsboven. Klik met de rechtermuisknop op het item om het menu te openen en klik op **Toon info**. In de voorbeeldschermen wordt een certificaat voor ontwikkeling in plaats van een certificaat voor productie gebruikt.
-
 
   ![Uw certificaat toevoegen aan een sleutelhanger](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -206,7 +205,7 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Hiermee wordt gedetailleerde informatie weergegeven over de beschikbare opdrachtregeleigenschappen voor de App Wrapping Tool.|
-|**-v**|(Optioneel) Hiermee worden uitgebreide berichten naar de console uitgevoerd.|
+|**-v**|(Optioneel) Hiermee worden uitgebreide berichten naar de console uitgevoerd. Het wordt aanbevolen deze eigenschap te gebruiken voor opsporing van eventuele fouten.|
 |**-e**| (Optioneel) Gebruik deze eigenschap om ervoor te zorgen dat ontbrekende rechten worden verwijderd wanneer de app door de App Wrapping Tool wordt verwerkt. Zie App-rechten instellen voor meer informatie.|
 |**-xe**| (Optioneel) Hiermee wordt informatie afgedrukt over de iOS-extensies in de app en de rechten die nodig zijn voor het gebruik ervan. Zie App-rechten instellen voor meer informatie. |
 |**-x**| (Optioneel) `<An array of paths to extension provisioning profiles>`. Gebruik deze eigenschap als uw app extensie-inrichtingsprofielen nodig heeft.|
@@ -312,7 +311,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 
 |Mogelijkheid|Beschrijving|Aanbevolen richtlijnen|
 |--------------|---------------|------------------------|
-|App-groepen|Gebruik app-groepen zodat meerdere apps toegang kunnen krijgen tot gedeelde containers en sta aanvullende communicatie tussen processen van de verschillende apps toe.<br /><br />Als u app-groepen wilt inschakelen, opent u het deelvenster **Mogelijkheden** en klikt u op **AAN** in **App-groepen**. U kunt app-groepen toevoegen of bestaande app-groepen selecteren.|Pas omgekeerde DNS-notatie toe wanneer u app-groepen gebruikt:<br /><br />*group.com.companyName.AppGroup*|
+|App-groepen|Gebruik app-groepen zodat meerdere apps toegang kunnen krijgen tot gedeelde containers en sta aanvullende communicatie tussen processen van de verschillende apps toe.<br /><br />Als u app-groepen wilt inschakelen, opent u het deelvenster **Mogelijkheden** en klikt u op **AAN** in **App-groepen** . U kunt app-groepen toevoegen of bestaande app-groepen selecteren.|Pas omgekeerde DNS-notatie toe wanneer u app-groepen gebruikt:<br /><br />*group.com.companyName.AppGroup*|
 |Achtergrondmodi|Wanneer u achtergrondmodi inschakelt, kan uw iOS-app op de achtergrond actief blijven.||
 |Gegevensbescherming|Met de gegevensbescherming voegt u een beveiligingsniveau toe aan bestanden die op schijf zijn opgeslagen door de iOS-app. De gegevensbescherming maakt gebruik van de ingebouwde versleutelingshardware die aanwezig is op de specifieke apparaten en waarmee bestanden in een versleutelde indeling op de schijf worden opgeslagen. Uw app moet worden ingericht voor het gebruik van de gegevensbescherming.||
 |Aankopen binnen apps|Bij aankopen binnen apps wordt een winkel rechtstreeks in uw app opgenomen en kunt u verbinding maken met de winkel en veilig betalingen van de gebruiker verwerken. U kunt aankopen binnen apps gebruiken voor het ontvangen van betalingen voor uitgebreide functionaliteit of voor aanvullende inhoud die kan worden gebruikt met uw app.||

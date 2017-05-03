@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
-4. Kies **Controleren** > **Gebruikersstatus van de app-beveiliging** in de workload **Apps beheren** om de samenvattingsweergave te openen:
+3. Kies **Mobiele apps** op de blade **Intune**.
+4. Kies **Controleren** > **Gebruikersstatus van de app-beveiliging** in de workload **Mobiele apps** om de samenvattingsweergave te openen:
 
 ![De tegel Samenvatting op het tabblad Intune Mobile Application Management](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende rapporten voor hulp bij de compatibiliteitsstatus van het MAM-beleid:
 
-![Schermopname&4;](../media/MAM-reporting-7.png)
+![Schermopname 4](../media/MAM-reporting-7.png)
 
 -   **Gebruikersrapport over app-beveiliging:** biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
 
@@ -109,7 +110,7 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
         -   Alle apps zijn ingecheckt, maar er wordt geen MAM-beleid op toegepast.
 
-![Schermopname&2;](../media/MAM-reporting-4.png)
+![Schermopname 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabelgroepering
 
@@ -126,20 +127,15 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
 1. Kies in de blade Intune Mobile Application Management de optie App-beveiligingsrapport.
 
-    ![Schermopname&6;](../media/app-protection-report-csv-2.png)
+    ![Schermopname 6](../media/app-protection-report-csv-2.png)
 
 2. Kies Ja om uw rapport op te slaan, kies vervolgens Opslaan als en selecteer de map waarin u het rapport wilt opslaan.
 
-    ![Schermopname&7;](../media/app-protection-report-csv-1.png)
+    ![Schermopname 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-android-apps.md)
 * [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,10 +73,10 @@ Hier vindt u de informatie die is opgehaald voor OneNote:
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Een PFN zoeken als de niet op een computer is geïnstalleerd
 
-1.    Ga naar https://www.microsoft.com/en-us/store/apps.
+1.    Ga naar https://www.microsoft.com/store/apps.
 2.    Typ de naam van de app in de zoekbalk. In het voorbeeld wordt gezocht naar OneNote.
-3.    Kies de koppeling naar de app. U ziet dat de URL een reeks letters heeft aan het eind. In het voorbeeld ziet de URL er als volgt uit: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
-4.    Plak de volgende URL in een ander tabblad: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Vervang `<app id>` door de app-id die u hebt verkregen via https://www.microsoft.com/en-us/store/apps: de reeks letter aan het eind van de URL in stap 3. In het voorbeeld voor OneNote plakt u het volgende: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.    Kies de koppeling naar de app. U ziet dat de URL een reeks letters heeft aan het eind. In het voorbeeld ziet de URL er als volgt uit: `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
+4.    Plak de volgende URL in een ander tabblad: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Vervang `<app id>` door de app-id die u hebt verkregen via https://www.microsoft.com/store/apps: de reeks letters aan het eind van de URL in stap 3. In het voorbeeld voor OneNote plakt u het volgende: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer moet u **Openen** kiezen om de informatie weer te geven. De PFN-waarde wordt weergegeven op de eerste regel. Hier zijn de resultaten voor het voorbeeld:
 
@@ -86,9 +87,4 @@ In Microsoft Edge wordt de gewenste informatie weergegeven. In Internet Explorer
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
