@@ -94,6 +94,8 @@
 ### [De bedrijfsportal-app configureren](manage-apps/company-portal-app.md)
 ## Beveiligingsbeleid voor apps gebruiken
 ### [Beveiligingsbeleid voor apps maken en implementeren](manage-apps/app-protection-policies.md)
+### [Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android-instellingen](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS-instellingen](manage-apps/ios-app-protection-policy-settings.md)
 ### [Beveiligingsbeleid voor apps valideren](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [Instellingen voor editie-upgrades voor Windows 10 configureren](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Instellingen voor Windows 10 Education configureren](configure-devices/how-to-configure-education-settings.md)
+### [Opleidingsinstellingen voor iOS configureren](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [Instellingen voor Windows Update voor bedrijven configureren](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Certificaten configureren](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)

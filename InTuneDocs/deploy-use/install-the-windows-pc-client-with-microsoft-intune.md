@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ U kunt de Intune-clientsoftware op computers implementeren met een installatieko
 
 ## <a name="instruct-users-to-self-enroll"></a>Registratie door de gebruikers zelf
 
-Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. De exacte informatie die gebruikers in de webportal zien, verschilt afhankelijk van de MDM-instantie voor uw account en het OS-platform/versie van de pc van de gebruiker.
+Gebruikers kunnen de Intune-clientsoftware installeren door naar [de website van de bedrijfsportal](https://portal.manage.microsoft.com) te gaan. De exacte informatie die gebruikers in de webportal zien, verschilt afhankelijk van de MDM-instantie voor uw account en het OS-platform/versie van de pc van de gebruiker.
 
 Als er geen Intune-licentie is toegewezen aan gebruikers of als de MDM-instantie van de organisatie niet op Intune is ingesteld, zien gebruikers geen inschrijvingsopties.
 

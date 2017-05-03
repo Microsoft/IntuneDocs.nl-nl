@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren 
 > Overweeg zorgvuldig of u mobiele apparaten wilt beheren met Intune alleen (onlineservice) of met System Center Configuration Manager met Intune (on-premises softwareoplossing in combinatie met de onlineservice). Nadat u de instantie voor beheer van mobiele apparaten hebt ingesteld, kunt u deze niet wijzigen zonder de hulp van Microsoft Support. Zie [Wat te doen als u de verkeerde instelling kiest voor MDM-instantie](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor instructies.
 
 
-1.  Kies in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de optie **Beheer** &gt; **Mobile Device Management**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer** &gt; **Mobile Device Management**.
 
 2.  Klik in de lijst **Taken** op **Instantie voor beheer van mobiele apparaten instellen**. Het dialoogvenster **Instantie voor beheer van mobiele apparaten instellen** wordt geopend.
 

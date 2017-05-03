@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 660d0c69fc09c6ec8b82185b3808269ef4bb6852
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Om Android for Work-apparaten te kunnen beheren, moet u een Android for Work-bin
 Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door de [beheerautoriteit voor mobiele apparaten in te stellen](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment) op **Microsoft Intune** en MDM in te stellen.
 
 2. **Android for Work-binding configureren**<br>
-    Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) als Intune-beheerder, ga naar **Beheer** &gt; **Mobile Device Management** &gt; **Android for Work** en klik op **Configureren** om de Android for Work-website van Google Play te openen. Deze wordt geopend in een nieuw tabblad in de browser.
+    Open de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) als Intune-beheerder, ga naar **Beheer** &gt; **Mobile Device Management** &gt; **Android for Work** en klik op **Configureren** om de Android for Work-website van Google Play te openen. Deze wordt geopend in een nieuw tabblad in de browser.
 
 3. **Aanmelden bij Google**<br>
    Meld u aan op de aanmeldingspagina van Google met het Google-account dat wordt gekoppeld aan alle Android for Work-beheertaken voor deze tenant. Dit is het Google-account dat door de IT-beheerders in uw organisatie wordt gebruikt voor het beheren en publiceren van apps in de Play for Work-console.
@@ -59,7 +59,7 @@ U kunt Android for Work-registratie en -beheer uitschakelen. Door in de Intune-b
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Binding van een Android for Work-account ongedaan maken
 
 1. **Android for Work-binding ongedaan maken**<br>
-    Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) als gebruiker met administratorbevoegdheden, ga naar **Beheer** &gt; **Mobile Device Management** &gt; **Android for Work** en klik op **Binding ongedaan maken**.
+    Open de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) als gebruiker met administratorbevoegdheden, ga naar **Beheer** &gt; **Mobile Device Management** &gt; **Android for Work** en klik op **Binding ongedaan maken**.
 
 2. **Verwijderen van Android for Work-binding bevestigen**<br>
   Klik op **Ja** om de binding te verwijderen en de registratie van alle Android for Work-apparaten in Intune ongedaan te maken.

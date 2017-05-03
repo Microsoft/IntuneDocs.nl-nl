@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Als uw bedrijf voor het beheer van apparaten groepen mobiele apparaten vereist, 
 
 Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten.
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
+1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
 
   ![Inschrijvingsprofiel voor apparaten maken](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>iOS-apparaten toevoegen voor inschrijving met Configuratieassistent
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Alle apparaten in bedrijfseigendom** &gt; **Alle apparaten** en kies vervolgens **Apparaten toevoegen**.
+1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Alle apparaten in bedrijfseigendom** &gt; **Alle apparaten** en kies vervolgens **Apparaten toevoegen**.
 
    U kunt apparaten op twee manieren toevoegen:
 
@@ -128,7 +128,7 @@ Kies in de lijst met beschikbare profielen het profiel dat u wilt toewijzen, con
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Een profiel exporteren voor implementatie op iOS-apparaten
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en selecteer vervolgens het apparaatprofiel dat op mobiele apparaten moet worden geïmplementeerd.
+1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en selecteer vervolgens het apparaatprofiel dat op mobiele apparaten moet worden geïmplementeerd.
 
 2. Kies **Exporteren** op de taakbalk. Kopieer de **profiel-URL** en sla deze op. U zult deze later in Apple Configurator uploaden om het Intune-profiel te definiëren dat wordt gebruikt door iOS-apparaten.
 

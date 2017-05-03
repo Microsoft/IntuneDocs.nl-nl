@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Het wordt door Apple verboden om LOB- (Line-Of-Business) en beheerde App Store-a
 
 Geregistreerde gebruikers krijgen hun apps door te tikken op de volgende tegels op het scherm Apps van de bedrijfsportal-app:
 
-- **Alle apps** verwijst naar een lijst met alle apps op het tabblad ALLE van de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+- **Alle apps** verwijst naar een lijst met alle apps op het tabblad ALLE van de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 - Gebruikers gaan met **Aanbevolen apps** naar het tabblad AANBEVOLEN van de bedrijfsportalwebsite.
 
 - **Categorieën** verwijst naar het tabblad CATEGORIEËN van de bedrijfsportalwebsite.
 
- 
+
 ![Scherm iOS-bedrijfsportal-apps](./media/ios-cp-app-main-apps-screen.png)
 
 In [Apps toevoegen voor geregistreerde apparaten](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md) leest u hoe u apps toevoegt en ze in deze tegels plaatst.
@@ -55,9 +56,4 @@ In [Apps toevoegen voor geregistreerde apparaten](https://docs.microsoft.com/int
 [Hoe uw Android-gebruikers apps downloaden](how-your-android-users-get-their-apps.md)
 
 [Hoe uw Windows-gebruikers apps downloaden](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
