@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/17
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 ## <a name="add-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager toevoegen
 
-1.  Zorg ervoor dat de gebruiker die u wilt toevoegen aan het DEM-account al bestaat. Als u de gebruiker wilt toevoegen, meldt u zich aan bij de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) en volgt u de stappen in [Gebruikers afzonderlijk of bulksgewijs toevoegen aan de Office 365-portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1.  Zorg ervoor dat de gebruiker die u wilt toevoegen aan het DEM-account al bestaat. Als u de gebruiker wilt toevoegen, meldt u zich aan bij de [Office 365-portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) en volgt u de stappen in [Gebruikers afzonderlijk of bulksgewijs toevoegen aan de Office 365-portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Meld u aan bij de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) met uw beheerdersreferenties.
+2.  Meld u aan bij de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) met uw beheerdersreferenties.
 
 3.  Kies in het navigatievenster **Beheer**, ga naar **Beheerdersbeheer** en selecteer **Apparaatinschrijvingsmanager**. De pagina **Apparaatinschrijvingsmanagers** wordt geopend.
 
@@ -88,7 +88,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Een apparaatinschrijvingsbeheerder uit Intune verwijderen
 
-1.  Meld u aan bij de [Microsoft Intune-accountportal](http://manage.microsoft.com) met uw beheerdersreferenties.
+1.  Meld u aan bij de [Microsoft Intune-accountportal](https://manage.microsoft.com) met uw beheerdersreferenties.
 
 2.  Kies in het navigatievenster **Beheer**, ga naar **Beheerdersbeheer** en selecteer **Apparaatinschrijvingsmanager**. De pagina **Apparaatinschrijvingsmanagers** wordt geopend.
 

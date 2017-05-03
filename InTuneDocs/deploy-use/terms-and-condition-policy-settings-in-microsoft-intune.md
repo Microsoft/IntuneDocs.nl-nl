@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ U kunt meerdere beleidsregels met verschillende voorwaarden maken en implementer
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Een beleid voor voorwaarden maken
 
-1.  Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
 
     ![Schermafbeelding van beleidsinstellingen voor voorwaarden](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ U kunt meerdere beleidsregels met verschillende voorwaarden maken en implementer
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Een beleid voor voorwaarden implementeren
 
-1.  Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
 
 2.  Selecteer in de lijst **Beleidsregels voor voorwaarden** het beleid dat u wilt implementeren en klik vervolgens op **Implementatie beheren**.
 
@@ -64,7 +64,7 @@ U kunt meerdere beleidsregels met verschillende voorwaarden maken en implementer
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Een beleid voor voorwaarden bewaken
 
-1.  Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
 
 2.  Klik in het venster **Nieuw rapport maken** op **Rapport weergeven**. Het rapport wordt geopend met gedetailleerde informatie over welke gebruikers de door u geïmplementeerde voorwaarden hebben geaccepteerd.
 
@@ -73,7 +73,7 @@ Wanneer u bestaande voorwaarden bewerkt, kunt u kiezen welk gedrag optreedt wann
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Werken met meerdere versies van voorwaarden
 
-1.  Klik in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
+1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** &gt; **Voorwaarden**.
 
 2.  Selecteer de voorwaarden die u wilt bewerken en klik op **Bewerken**.
 

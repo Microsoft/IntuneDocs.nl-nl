@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: dce7050a7439a7e24e34be3c79473d6ec3159c83
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ U moet ook een Exchange Online-gebruikersaccount maken dat wordt gebruikt door d
 
 ## <a name="set-up-the-service-to-service-connector"></a>De Servicesconnector instellen
 
-1. Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor de [eerder genoemde](#exchange-cmdlet-requirements) cmdlets. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
+1. Open de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor de [eerder genoemde](#exchange-cmdlet-requirements) cmdlets. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
 
 2.  Kies in het deelvenster met snelkoppelingen de optie **Beheer**>**Beheer van mobiele apparaten** > **Microsoft Exchange** > **Exchange-verbinding instellen**.
 ![De pagina Service to Service Connector instellen](../media/intunesa5cservicetoserviceconnector.png)
@@ -62,12 +63,7 @@ De Service to Service Connector wordt automatisch geconfigureerd en gesynchronis
 
 ## <a name="validate-your-exchange-connection"></a>De Exchange-verbinding valideren
 
-Ga naar de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) nadat u de Exchange Connector hebt geconfigureerd. Kies **Beheer**> **Beheer van mobiele apparaten** > **Microsoft Exchange**. Controleer vervolgens of de door u ingevoerde gegevens worden weergegeven onder **Exchange verbindingsgegevens**.
+Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) nadat u de Exchange Connector hebt geconfigureerd. Kies **Beheer**> **Beheer van mobiele apparaten** > **Microsoft Exchange**. Controleer vervolgens of de door u ingevoerde gegevens worden weergegeven onder **Exchange verbindingsgegevens**.
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
