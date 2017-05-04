@@ -33,7 +33,7 @@ Als IT-beheerder kunt u een bestand met door komma's gescheiden waarden (CSV) ma
 ## <a name="add-corporate-identifiers"></a>Zakelijke id's toevoegen
 Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Voeg de IMEI-id in de linkerkolom toe en de details in de rechterkolom. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 500 rijen per CSV-bestand.
 
-**Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
+**Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zond
 Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
