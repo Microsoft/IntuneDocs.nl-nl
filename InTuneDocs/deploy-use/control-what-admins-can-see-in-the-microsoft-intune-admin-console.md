@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ U kunt de Microsoft Intune-beheerconsoleweergave zodanig filteren dat uw beheerd
     -   **Alleen-lezentoegang**
     -   **Helpdesk - knooppunt Groepen**
 
-    Volledige toegang en Alleen-lezentoegang behoeven geen uitleg. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    Volledige toegang en Alleen-lezentoegang behoeven geen uitleg. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Helpdesk - knooppunt groepen** beperkt wat de beheerder kan zien en doen, tot het volgende:
 
@@ -70,9 +71,4 @@ U kunt de Microsoft Intune-beheerconsoleweergave zodanig filteren dat uw beheerd
         -   Een wachtwoordcode opnieuw instellen
 
 Wanneer de gebruiker die u hebt geconfigureerd, de eerstvolgende keer de Intune-beheerconsole opent, krijgt deze het toegangsniveau dat u hebt opgegeven.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

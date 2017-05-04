@@ -30,7 +30,7 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
 
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) achtereenvolgens **Groepen** &gt; **Alle apparaten** &gt; **Alle vooraf geregistreerde bedrijfsapparaten** &gt; **Op IMEI (alle platformen)** en kies vervolgens **Apparaten toevoegen…**. U kunt apparaten op twee manieren toevoegen:
 
-    -   **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB. Het veld Details is beperkt tot 128 tekens.
+    -   **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB. Het veld Details is beperkt tot 128 tekens. 
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ Voor het beheer van mobiele apparaten in bedrijfseigendom stelt Microsoft Intune
         Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Handmatig apparaatdetails toevoegen**: geef het IMEI-nummer en de apparaatdetails van maximaal 15 apparaten op.
