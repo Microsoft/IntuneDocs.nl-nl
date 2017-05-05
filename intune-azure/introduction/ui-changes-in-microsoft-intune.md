@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -26,14 +26,15 @@ ms.lasthandoff: 04/12/2017
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke console, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
 ## <a name="quick-reference-guide"></a>Naslaggids
 |Functie |Pad in klassieke console|Pad in Intune op Azure| |------------||---------------|---------------|
-|Device Enrollment Program (DEP) |Beheer > Beheer van mobiele apparaten > iOS en Mac OS X > Device Enrollment Program|[Apparaatinschrijving > Apple-inschrijving > Enrollment Program-token](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| Beheer > Beheer van mobiele apparaten > iOS en Mac OS X > Device Enrollment Program |[Apparaatinschrijving > Apple-inschrijving > Serienummers inschrijvingsprogramma](#where-did-apple-dep-go) |
-|Inschrijvingsregels|Beheer > Beheer van mobiele apparaten > Inschrijvingsregels|[Apparaatinschrijving > Inschrijvingsbeperkingen](#where-did-enrollment-rules-go) |
+|Device Enrollment Program (DEP) |Beheer > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program|[Apparaatinschrijving > Apple-inschrijving > Enrollment Program-token](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP)| Beheer > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program |[Apparaatinschrijving > Apple-inschrijving > Serienummers inschrijvingsprogramma](#where-did-apple-dep-go) |
+|Inschrijvingsregels|Beheer > Mobile Device Management > Inschrijvingsregels|[Apparaatinschrijving > Inschrijvingsbeperkingen](#where-did-enrollment-rules-go) |
 |Groepen op iOS-serienummer |Groepen > Alle apparaten > Vooraf geregistreerde bedrijfsapparaten > Op iOS-serienummer|[Apparaatinschrijving > Apple-inschrijving > Serienummers inschrijvingsprogramma](#where-did-corporate-pre-enrolled-devices-go) |
 |Groepen op iOS-serienummer |Groepen > Alle apparaten > Vooraf geregistreerde bedrijfsapparaten > Op iOS-serienummer|[Apparaatinschrijving > Apple-inschrijving > AC-serienummers](#where-did-corporate-pre-enrolled-devices-go)|
 |Groepen op IMEI (alle platformen)| Groepen > Alle apparaten > Vooraf geregistreerde bedrijfsapparaten > Op IMEI (alle platformen) |[Apparaatinschrijving > Bedrijfsapparaat-id’s](#by-imei-all-platforms)|
 |Inschrijvingsprofiel voor bedrijfsapparaten|Beleid > Inschrijving van bedrijfsapparaten |[Apparaatinschrijving > Apple-inschrijving > Profielen voor apparaatinschrijving](#where-did-corporate-pre-enrolled-devices-go) |
 | Inschrijvingsprofiel voor bedrijfsapparaten | Beleid > Inschrijving van bedrijfsapparaten| [Apparaatinschrijving > Apple-inschrijving > AC-profielen](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Beheer > Mobile Device Management > Android for Work | Apparaatinschrijving > Android for Work-inschrijving | | Voorwaarden | Beleid > Voorwaarden | Apparaatinschrijving > Voorwaarden |
 
 
 ## <a name="where-do-i-manage-groups"></a>Waar kan ik groepen beheren?
