@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: 723830f686991fe13de13f75c6a5d1bc84e6920b
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.contentlocale: nl-nl
+ms.lasthandoff: 04/26/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Gebruikers helpen met de Portal voor problemen oplossen in Microsoft Intune
@@ -40,7 +41,8 @@ Zie [Intune-rollen (RBAC)](https://docs.microsoft.com/intune-azure/access-contro
 ## <a name="access-the-troubleshooting-portal"></a>Toegang tot de Portal voor problemen oplossen
 
 Medewerkers van de helpdesk en Intune-beheerders hebben op twee manieren toegang tot de Portal voor problemen oplossen:
-- Selecteer in [Azure Portal](https:portal.azure.com) het item **Meer Services** > **Bewaking en beheer** > **Intune** en selecteer vervolgens **Problemen oplossen** in de linkernavigatieblade. Andere werkbelastingen zijn zichtbaar in de linkernavigatieblade, maar zijn niet beschikbaar.
+- Selecteer in [Azure Portal](https://portal.azure.com) het item **Meer Services** > **Bewaking en beheer** > **Intune** en selecteer vervolgens **Problemen oplossen** in de linkernavigatieblade. Andere werkbelastingen zijn zichtbaar in de linkernavigatieblade, maar zijn niet beschikbaar.
+
 ![Schermafbeelding van de werkbelasting Problemen oplossen van Intune, met de koppeling Gebruiker selecteren](media/help-desk-user.png)
 - Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in een webbrowser. Alleen de Portal voor problemen oplossen is zichtbaar.
 
