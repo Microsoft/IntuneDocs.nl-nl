@@ -1,12 +1,12 @@
 ---
-title: Apps toevoegen aan Microsoft Intune
+title: Apps toevoegen aan Microsoft Intune | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: met deze procedures kunt u ervoor zorgen dat uw apps in Intune gereed zijn voor toewijzing aan gebruikers en apparaten. '
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: 20af19a2051a8ebb6f1b2103d761d87fbfdf5da2
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 ---
 
@@ -32,27 +33,30 @@ In Intune kunt u deze typen apps toevoegen en toewijzen:
 
 ![Typen apps die worden ondersteund door Intune](./media/app-types.png)
 
-De volgende platformen worden ondersteund. Klik op een van de onderwerpen voor meer informatie over het toevoegen van elk type app.
+De volgende platformen worden ondersteund.
 
-- [Android Store-apps](/intune-azure/manage-apps/android-store-app)
-- [Android LOB-apps](/intune-azure/manage-apps/android-lob-app)
-- [iOS Store-apps](/intune-azure/manage-apps/ios-store-app)
-- [iOS LOB-apps](/intune-azure/manage-apps/ios-lob-app)
-- [Web-apps (voor alle platformen)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1 Store-apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows Store-apps](/intune-azure/manage-apps/windows-store-app)
+- Android Store-apps
+- Android LOB-apps (Line-Of-Business)
+- iOS Store-apps
+- iOS LOB-apps (Line-of-Business)
+- Web-apps
+- Windows Phone 8.1 Store-apps
+- Windows Phone Line-of-Business-apps (.xap-bestanden)
+- Windows Store-apps
+- Windows Line-of-Business-apps (alleen .msi-bestanden)
 
-Verder worden sommige Microsoft-apps automatisch toegevoegd door Intune bij het instellen van uw tenant. Verderop in dit onderwerp vindt u hiervan een lijst.
+>[!TIP]
+> Een LOB-app (Line-of-Business) is een app die u niet installeert vanuit de App Store, maar via het installatiebestand van de app. Als u bijvoorbeeld een iOS LOB-app wilt installeren, voegt u het archiefbestand (met de extensie .ipa) van de toepassing toe. Dit zijn meestal apps die u zelf hebt geschreven.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
 Overweeg de volgende punten voordat u begint met het toevoegen en toewijzen van apps.
 
-- Wanneer u een app vanuit een App Store toevoegt en implementeert, moeten eindgebruikers beschikken over een account bij die Store om de app te kunnen installeren.
-- Sommige apps of items die u implementeert, zijn mogelijk afhankelijk van ingebouwde iOS-apps. Als u bijvoorbeeld een boek uit de iOS Store implementeert, moet de app iBooks op het apparaat staan. Als u de ingebouwde app iBooks hebt verwijderd, kunt u Intune niet gebruiken om dit te herstellen.
+- Wanneer u een app vanuit een App Store toevoegt en toevoegt, moeten eindgebruikers beschikken over een account bij die Store om de app te kunnen installeren.
+- Sommige apps of items die u toewijst, zijn mogelijk afhankelijk van ingebouwde iOS-apps. Als u bijvoorbeeld een boek uit de iOS Store toewijst, moet de app iBooks op het apparaat staan. Als u de ingebouwde app iBooks hebt verwijderd, kunt u Intune niet gebruiken om dit te herstellen.
 
 ## <a name="cloud-storage-space"></a>Cloudopslag
-Alle apps die u maakt met het installatietype van het software-installatieprogramma (bijvoorbeeld een Line-Of-Business-app), worden verpakt en geüpload naar Microsoft Intune-cloudopslag. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. Uw volledige abonnement omvat 20 GB aan opslagruimte.
+Alle apps die u maakt met het installatietype van het software-installatieprogramma (bijvoorbeeld een Line-Of-Business-app), worden verpakt en geüpload naar Intune-cloudopslag. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. Een volledig abonnement omvat 20 GB aan opslagruimte.
 
 U kunt extra opslagruimte kopen voor Intune met uw oorspronkelijke aankoopmethode.  Als u hebt betaald via een factuur of met een creditcard, gaat u naar de [Beheerportal abonnementen](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Neem anders contact op met uw partner of verkoopassistent.
 
@@ -105,4 +109,18 @@ De volgende apps zijn gepubliceerd door Microsoft, zijn ingebouwd in Intune en z
 |Outlook-groepen|Android|Beheerde Android Store-app|
 |Outlook-groepen|iOS|Beheerde iOS Store-app|
 |PowerPoint|iOS|Beheerde iOS Store-app|
+
+## <a name="next-steps"></a>Volgende stappen
+
+Kies een van de volgende onderwerpen om erachter te komen hoe u apps voor elk platform kunt toevoegen aan Intune:
+
+- [Android Store-apps](/intune-azure/manage-apps/android-store-app)
+- [Android LOB-apps](/intune-azure/manage-apps/android-lob-app)
+- [iOS Store-apps](/intune-azure/manage-apps/ios-store-app)
+- [iOS LOB-apps](/intune-azure/manage-apps/ios-lob-app)
+- [Web-apps (voor alle platformen)](/intune-azure/manage-apps/web-app)
+- [Windows Phone 8.1 Store-apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+- [Windows Phone LOB-apps](/intune-azure/manage-apps/windows-phone-line-of-business-app)
+- [Windows Store-apps](/intune-azure/manage-apps/windows-store-app)
+- [Windows LOB-app](/intune-azure/manage-apps/windows-line-of-business-app)
 
