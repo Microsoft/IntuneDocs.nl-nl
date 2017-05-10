@@ -1,12 +1,12 @@
 ---
-title: iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma
+title: Apps beheren die zijn gekocht via het iOS-volume-aankoopprogramma | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u informatie over hoe u de apps kunt synchroniseren die u via het volume-aankoopprogramma in de iOS Store hebt gekocht, hoe u deze apps kunt beheren en hoe u het gebruik ervan kunt bijhouden.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -53,8 +54,8 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
-1.  Kies **Instellen** > **VPP-tokens voor iOS** in de workload **Apps beheren**.
+3. Kies **Mobiele apps** op de blade **Intune**.
+1.  Kies **Instellen** > **VPP-tokens voor iOS** in de workload **Mobiele apps**.
 2.  Klik op de blade met de lijst met VPP-tokens en klik op **Toevoegen**.
 3.  Geef op de blade Nieuw VPP-token de volgende gegevens op:
     - **VPP-tokenbestand**: meld u aan voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs als u dit nog niet hebt gedaan. Nadat u bent aangemeld, downloadt u het Apple VPP-token voor uw account en selecteert u dit hier.
@@ -69,7 +70,7 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Een app toewijzen die is gekocht via het volume-aankoopprogramma
 
-1. Kies **Beheren** > **Apps met licenties** in de workload **Beheerde apps**.
+1. Kies **Beheren** > **Apps met licenties** in de workload **Mobiele apps**.
 2. Kies de app die u wilt toewijzen op de blade met de lijst met apps en kies vervolgens **...** > **Groepen toewijzen**.
 3. Kies **Beheren** > **Toegewezen groepen** op de blade <*app-naam*> - **Toegewezen groepen**.
 4. Kies **Groepen toewijzen** en kies op de blade **Groepen selecteren** de Azure AD- gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
@@ -86,5 +87,5 @@ Als u een licentie wilt vrijmaken, moet u de toewijzingsactie wijzigen in **Verw
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app te installeren, wordt deze gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Dit moet plaatsvinden voordat de installatie van de app wordt voortgezet.
 
-Wanneer u een VPP-app als beschikbaar implementeert, worden de app-inhoud en de licentie rechtstreeks vanuit de App Store geïmplementeerd.
+Wanneer u een VPP-app als beschikbaar toewijst, worden de app-inhoud en de licentie rechtstreeks vanuit de App Store toegewezen.
 
