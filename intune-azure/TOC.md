@@ -1,5 +1,6 @@
 # Inleiding
 ## [Wat is de preview-versie van Azure-portal?](introduction/what-is-microsoft-intune.md)
+## [Wat is Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Intune-functies in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Aan de slag
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [iOS LOB-apps](manage-apps/ios-lob-app.md)
 #### [Web-apps](manage-apps/web-app.md)
 #### [Windows Phone 8.1 Store-apps](manage-apps/windows-phone-8-1-store-app.md)
+#### [Windows Phone LOB-apps](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows Store-apps](manage-apps/windows-store-app.md)
+#### [Windows LOB-apps](manage-apps/windows-line-of-business-app.md)
 ### [Apps toewijzen](manage-apps/deploy-apps.md)
 ### [Apps bewaken](manage-apps/monitor-apps.md)
-### [Configuratiebeleid voor apps gebruiken](manage-apps/app-configuration-policies.md)
+### [Configuratieprofielen voor apps gebruiken](manage-apps/app-configuration-policies.md)
+### [Inrichtingsprofielen voor iOS-apps gebruiken](manage-apps/ios-app-provisioning-profile.md)
 ### [Selectief wissen van apps](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Werken met apps die zijn gekocht via het volume-aankoopprogramma](manage-apps/volume-purchased-apps.md)
