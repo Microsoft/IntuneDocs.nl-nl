@@ -190,7 +190,7 @@
 ### [Nalevingsbeleid voor Android for Work maken](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Nalevingsbeleid voor iOS maken](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Nalevingsbeleid voor Windows maken](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Acties voor niet-naleving maken](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Apparaatcompatibiliteit bewaken](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
