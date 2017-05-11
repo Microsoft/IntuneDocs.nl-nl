@@ -17,9 +17,10 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
 ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
+ms.contentlocale: nl-nl
 ms.lasthandoff: 03/13/2017
 
 
@@ -37,7 +38,7 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat 
 
 2.  Sluit uw apparaat met de USB-kabel aan op de computer. Dit is doorgaans de kabel die u ook gebruikt om uw apparaat op te laden via een stopcontact.
 
-3.  Zoek op de computer naar een map met de naam van uw apparaat. Zoek in die map naar *Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
+3.  Zoek op de computer naar een map met de naam van uw apparaat. Zoek in die map naar **Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
 
 4.  Selecteer de bestanden en voeg ze als bijlage toe een e-mail. Verzend dit e-mailbericht naar uw IT-beheerder.
 
