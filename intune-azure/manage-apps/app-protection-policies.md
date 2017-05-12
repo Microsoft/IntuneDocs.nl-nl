@@ -15,10 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 119c7172f8175d128c3e13d37bb9ec3c91719bcf
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/24/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**Als u zich niet in de Intune-service in de preview-versie van Azure Portal bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-console.
+**Als u zich niet in de Intune-service in de preview-versie van Azure Portal bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-console.
 
 App-beveiligingsbeleid kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door Intune worden beheerd. Zie [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md) (Wat is app-beveiligingsbeleid van Microsoft Intune) voor een gedetailleerde beschrijving van de werking van het app-beveiligingsbeleid en de scenario's die worden ondersteund door het app-beveiligingsbeleid van Intune.
 

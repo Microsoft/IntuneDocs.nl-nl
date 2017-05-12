@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Gebruik de volgende informatie om te bepalen welke methode u wilt gebruiken voor
 
 ## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
-Als gebruikers hun eigen BYOD-apparaten (Bring Your Own Device) willen registreren, is de enig mogelijke registratiemethode de bedrijfsportal-app voor iOS uit de App Store te downloaden en de registratie-instructies in de app te volgen. Na de registratie kunnen gebruikers verbinding maken met het bedrijfsnetwerk, deelnemen aan het domein of Azure Active Directory en toegang tot bedrijfsresources krijgen. U kunt de inschrijving blokkeren van iOS-apparaten die het eigendom van de gebruiker zijn. Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) voor instructies.
+Als gebruikers hun eigen BYOD-apparaten (Bring Your Own Device) willen registreren, is de enig mogelijke registratiemethode de bedrijfsportal-app voor iOS uit de App Store te downloaden en de registratie-instructies in de app te volgen. Na de registratie kunnen gebruikers verbinding maken met het bedrijfsnetwerk, deelnemen aan het domein of Azure Active Directory en toegang tot bedrijfsresources krijgen. U kunt de inschrijving blokkeren van iOS-apparaten die het eigendom van de gebruiker zijn. Zie [Beperkingen voor apparaattypen instellen](set-enrollment-restrictions.md#set-device-type-restrictions) voor instructies.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

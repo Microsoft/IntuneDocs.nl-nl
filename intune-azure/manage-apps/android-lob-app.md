@@ -15,10 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 21fde942000220c8d4589c153978701f7996748e
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 168b054180c4df1a66a03525222a23d97027bb84
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -66,5 +67,5 @@ ms.lasthandoff: 04/19/2017
 1. Controleer op de blade **App toevoegen** of de gegevens die u hebt geconfigureerd correct zijn.
 2. Kies **Toevoegen** om de app te uploaden naar Intune.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](/intune-azure/manage-apps/deploy-apps) voor hulp.
+De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](deploy-apps.md) voor hulp.
 

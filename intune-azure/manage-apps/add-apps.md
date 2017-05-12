@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
-ms.openlocfilehash: 20af19a2051a8ebb6f1b2103d761d87fbfdf5da2
+ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
+ms.openlocfilehash: 69ae0926631edc00cc2dc12be559d366e1623140
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/11/2017
 
 ---
 
@@ -72,7 +72,7 @@ Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan 
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
+3. Kies **Mobiele apps** op de blade **Intune**.
 4. Kies **Instellen** > **App-categorieën** in de workload **Mobiele apps**.
 5. Op de blade **App-categorieën** wordt een lijst met de huidige categorieën weergegeven. Kies een van de volgende acties:
     - **Een categorie maken**: voer op de blade **Categorie maken** een naam voor de nieuwe categorie in. Namen kunnen slechts in één taal worden ingevoerd en worden niet door Intune vertaald. Wanneer u klaar bent, klikt u op **Maken**.
@@ -114,13 +114,13 @@ De volgende apps zijn gepubliceerd door Microsoft, zijn ingebouwd in Intune en z
 
 Kies een van de volgende onderwerpen om erachter te komen hoe u apps voor elk platform kunt toevoegen aan Intune:
 
-- [Android Store-apps](/intune-azure/manage-apps/android-store-app)
-- [Android LOB-apps](/intune-azure/manage-apps/android-lob-app)
-- [iOS Store-apps](/intune-azure/manage-apps/ios-store-app)
-- [iOS LOB-apps](/intune-azure/manage-apps/ios-lob-app)
-- [Web-apps (voor alle platformen)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1 Store-apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows Phone LOB-apps](/intune-azure/manage-apps/windows-phone-line-of-business-app)
-- [Windows Store-apps](/intune-azure/manage-apps/windows-store-app)
-- [Windows LOB-app](/intune-azure/manage-apps/windows-line-of-business-app)
+- [Android Store-apps](android-store-app.md)
+- [Android LOB-apps](android-lob-app.md)
+- [iOS Store-apps](ios-store-app.md)
+- [iOS LOB-apps](ios-lob-app.md)
+- [Web-apps (voor alle platformen)](web-app.md)
+- [Windows Phone 8.1 Store-apps](windows-phone-8-1-store-app.md)
+- [Windows Phone LOB-apps](windows-phone-line-of-business-app.md)
+- [Windows Store-apps](windows-store-app.md)
+- [Windows LOB-app](windows-line-of-business-app.md)
 

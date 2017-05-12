@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Om ervoor te zorgen dat alleen gegevensgebruik wordt verzameld van lijnen in bed
 
 Afhankelijk van de behoeften van uw organisatie moet u ten minste twee categorieën voor apparaten maken (bijvoorbeeld zakelijk en persoonlijk), en voor elke categorie dynamische apparaatgroepen maken. U kunt meer categorieën voor uw organisatie maken, indien nodig.
 
-Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving. Afhankelijk van welke categorie de gebruiker kiest, wordt het geregistreerde apparaat verplaatst naar de overeenkomstige apparaatgroep. Zie [Apparaten toewijzen aan groepen](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) voor instructies over het maken van de categorieën voor apparaten.
+Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving. Afhankelijk van welke categorie de gebruiker kiest, wordt het geregistreerde apparaat verplaatst naar de overeenkomstige apparaatgroep. Zie [Apparaten toewijzen aan groepen](../enroll-devices/how-to-use-device-group-mapping.md) voor instructies over het maken van de categorieën voor apparaten.
 
   ![Schermafbeelding van het tabblad Een beleid toevoegen](../media/tem-dynamic-membership-rules.png)
 

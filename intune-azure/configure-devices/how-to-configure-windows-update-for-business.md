@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
     ![Windows-instelling voor diagnostische gegevens en gebruiksgegevens](./media/telemetry-basic.png)
 
-    U kunt deze instelling handmatig configureren of u kunt een Intune-apparaatbeperkingsprofiel voor Windows 10 en hoger gebruiken. Hiervoor configureert u de instelling **Algemeen** > **Verzending van diagnostische gegevens** ten minste op **Basic**. Zie [How to configure device restriction settings](/intune-azure/configure-devices/how-to-configure-device-restrictions) (Instellingen voor apparaatbeperking configureren) voor meer informatie over apparaatprofielen.
+    U kunt deze instelling handmatig configureren of u kunt een Intune-apparaatbeperkingsprofiel voor Windows 10 en hoger gebruiken. Hiervoor configureert u de instelling **Algemeen** > **Verzending van diagnostische gegevens** ten minste op **Basic**. Zie [How to configure device restriction settings](how-to-configure-device-restrictions.md) (Instellingen voor apparaatbeperking configureren) voor meer informatie over apparaatprofielen.
 
 - In de klassieke Intune-beheerconsole vindt u vier instellingen die het gedrag van software-updates beheren. Deze instellingen maken deel uit van het algemene configuratiebeleid voor Windows 10 Desktop- en Mobile-apparaten:
     - **Automatische updates toestaan**
@@ -142,7 +143,7 @@ U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een ap
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Software-updates** op de blade **Intune**.
 4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.
-5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **...**  >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
+5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
 
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.
