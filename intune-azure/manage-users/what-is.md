@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 03860275184824e72c94937ef3bb32c76cfef933
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 41de68c6962056164e8ac62aea657a74dd9b229e
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/18/2017
 
 Als u niet bekend bent met Intune in Azure Portal, moet u weten dat u geen groepen voor Intune meer kunt maken. Intune gebruikt Azure AD-groepen net als veel andere toepassingen die u gebruikt.
 
-Zie [Toegang tot resources beheren met Azure Active Directory-groepen](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups) voor meer informatie over het gebruik van groepen in Azure AD.
+Zie [Toegang tot resources beheren met Azure Active Directory-groepen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups) voor meer informatie over het gebruik van groepen in Azure AD.
 
 Als u groepen wilt beheren in [Azure Portal](https://portal.azure.com), zoekt u naar **Intune** en kiest u **Gebruikers beheren**, waarna u naar de workload **Gebruikers en groepen** wordt geleid, waar u de volgende acties kunt uitvoeren:
 
@@ -43,5 +44,5 @@ Als u groepen wilt beheren in [Azure Portal](https://portal.azure.com), zoekt u 
 
 ## <a name="next-step"></a>Volgende stap
 
-[Aan de slag met groepen](/intune-azure/manage-users/get-started-with-groups)
+[Aan de slag met groepen](../manage-users/get-started-with-groups.md)
 

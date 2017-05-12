@@ -14,10 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90222b10832fd8251ad897348eeebed5b3d1e552
+ms.openlocfilehash: a14f308102d677015dae93eb2c1a36ca95662056
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/11/2017
 
 
 ---
@@ -46,7 +47,7 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 ### <a name="get-an-encryption-key"></a>Een coderingssleutel ophalen
 
-1. Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) als gebruiker met beheerdersrechten, ga naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving** en klik op **Coderingssleutel downloaden**.
+1. Open de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) als gebruiker met beheerdersrechten, ga naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving** en klik op **Coderingssleutel downloaden**.
 
 2. Sla het coderingssleutelbestand (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple Device Enrollment Program aan te vragen.
 
@@ -68,20 +69,20 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 ### <a name="add-the-dep-token-to-intune"></a>Het DEP-token toevoegen aan Intune
 
-1. In de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) gaat u naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving**.
+1. In de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) gaat u naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving**.
 
 2. Kies **Het DEP-token uploaden**. **Blader** naar het certificaatbestand (.p7m), voer uw **Apple ID**in en kies **Uploaden**.
 
 ### <a name="add-the-corporate-device-enrollment-policy"></a>Inschrijvingsbeleid voor bedrijfsapparaten toevoegen
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
+1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
 
 2. Geef **algemene gegevens** op, zoals een **Naam** en **Beschrijving**, en geef aan of apparaten die aan het profiel zijn toegewezen, gebruikersaffiniteit hebben of deel uitmaken van een groep.
 
    - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie voordat toegang tot gegevens en e-mail van het bedrijf kan worden verleend. **Gebruikersaffiniteit** moet worden ingesteld voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren). Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Nieuwe gebruikers die hun wachtwoord moeten wijzigen wanneer ze zich voor het eerst aanmelden, kunnen geen prompt krijgen tijdens de inschrijving voor DEP-apparaten. Daarnaast wordt gebruikers waarvan de wachtwoorden zijn verlopen niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de DEP-inschrijving, en moeten deze het wachtwoord vanaf een ander apparaat opnieuw instellen.
 
-   > [!NOTE]
-   > Voor DEP met gebruikersaffiniteit moet WS-Trust 1.3 gebruikersnaam/mixed-eindpunt zijn ingeschakeld om een gebruikerstoken aan te vragen.
+       >[!NOTE]
+       >Voor DEP met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Geen gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die gebruikt wordt voor het installeren van LOB-apps, zullen niet werken.
 
@@ -122,7 +123,7 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 ### <a name="assign-the-profile-to-devices"></a>Het profiel aan apparaten toewijzen
 
-1. Ga in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toewijzen**.
+1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toewijzen**.
 
 2. Kies de apparaten waaraan u het gemaakte profiel wilt toewijzen. U kunt **Alle apparaten** kiezen of specifieke apparaten selecteren. Kies vervolgens **Toevoegen**.
 
@@ -143,9 +144,9 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 Deze stap synchroniseert apparaten met de Apple DEP-service en zorgt ervoor dat de apparaten worden weergegeven in de Intune-console.
 
-1. Open de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) als gebruiker met beheerdersrechten, ga naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving** en kies vervolgens **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
+1. Open de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) als gebruiker met beheerdersrechten, ga naar **Beheer** &gt; **Beheer van mobiele apparaten** &gt; **iOS** &gt; **Programma apparaatinschrijving** en kies vervolgens **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
 
-2. Als u DEP-beheerde apparaten wilt bekijken na de synchronisatie, gaat u in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Vooraf geregistreerde bedrijfsapparaten** &gt; **Op iOS-serienummer**. In de werkruimte  **Op iOS-serienummer** wordt de **Status** voor beheerde apparaten weergegeven als 'Geen contact gemaakt' totdat het apparaat wordt ingeschakeld en de configuratieassistent wordt uitgevoerd om het apparaat in te schrijven.
+2. Als u DEP-beheerde apparaten wilt bekijken na de synchronisatie, gaat u in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Groepen** &gt; **Alle apparaten** &gt; **Vooraf geregistreerde bedrijfsapparaten** &gt; **Op iOS-serienummer**. In de werkruimte  **Op iOS-serienummer** wordt de **Status** voor beheerde apparaten weergegeven als 'Geen contact gemaakt' totdat het apparaat wordt ingeschakeld en de configuratieassistent wordt uitgevoerd om het apparaat in te schrijven.
 
    Om te voldoen aan de voorwaarden van Apple voor acceptabel DEP-verkeer, worden door Intune de volgende beperkingen opgelegd:
 
@@ -162,7 +163,11 @@ Uw apparaten in bedrijfseigendom kunnen nu onder gebruikers worden gedistribueer
 
 ## <a name="changes-to-intune-group-assignments"></a>Wijzigingen aan Intune-groepstoewijzingen
 
-In April 2017 wordt apparaatgroepsbeheer verplaatst naar Azure Active Directory. Na de overgang naar Azure Active Directory-groepen wordt groepstoewijzing niet weergegeven in de opties voor het registratieprofiel voor bedrijfsapparaten. Omdat deze wijziging in een aantal maanden wordt geïmplementeerd, ziet u de wijziging mogelijk niet meteen. Na de overgang naar de nieuwe portal kunnen er dynamische apparaatgroepstoewijzingen worden gedefinieerd op basis van de namen van de inschrijvingsprofielen voor bedrijven. Voor elke Intune-apparaatgroep die vooraf is toegewezen door een inschrijvingsprofiel voor bedrijfsapparaten, wordt tijdens de migratie naar Azure Active Directory-apparaatgroepen een overeenkomende dynamische apparaatgroep in AAD gemaakt op basis van de naam van het inschrijvingsprofiel. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep al automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd. Zie [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/) (Wijzigingen aan automatische groepering van zakelijke iOS-apparaten die vooraf zijn geregistreerd) voor meer informatie over de invloed hiervan op de registratie van iOS-apparaten die bedrijfseigendom zijn.
+In April 2017 wordt apparaatgroepsbeheer verplaatst naar Azure Active Directory. Na de overgang naar Azure Active Directory-groepen wordt groepstoewijzing niet weergegeven in de opties voor het registratieprofiel voor bedrijfsapparaten. Omdat deze wijziging in een aantal maanden wordt geïmplementeerd, ziet u de wijziging mogelijk niet meteen. Na de overgang naar de nieuwe portal kunnen er dynamische apparaatgroepstoewijzingen worden gedefinieerd op basis van de namen van de inschrijvingsprofielen voor bedrijven.
+
+Voor elke Intune-apparaatgroep die vooraf is toegewezen door een inschrijvingsprofiel voor bedrijfsapparaten, wordt tijdens de migratie een overeenkomende dynamische apparaatgroep in AAD gemaakt op basis van de naam van het inschrijvingsprofiel. Nieuwe profielnamen hebben de indeling *EnrollmentProfile:&lt;naam van gekoppelde profiel&gt;*. Dit proces zorgt ervoor dat apparaten die vooraf zijn toegewezen aan een apparaatgroep al automatisch worden geregistreerd bij de groep waarvoor het beleid en de apps zijn geïmplementeerd.
+
+Het automatisch maken van deze groep gebeurt slechts één keer tijdens de migratie van groepen. Na de migratie moeten Intune-admins maken van groepen met behulp van de Azure-portal. Zie [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/) (Wijzigingen aan automatische groepering van zakelijke iOS-apparaten die vooraf zijn geregistreerd) voor meer informatie over de invloed hiervan op de registratie van iOS-apparaten die bedrijfseigendom zijn.
 
 U vindt hier ook [Meer informatie over Azure Active Directory-groepen](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
 

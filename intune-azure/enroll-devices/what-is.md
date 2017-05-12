@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Als u Exchange ActiveSync on-premises of gehost in de cloud gebruikt, kunt u een
 
 De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mogelijkheden en vereisten van elke methode. De mogelijkheden en vereisten worden hieronder beschreven. In de tabel worden de volgende termen gebruikt:
 
-- **Wissen**: geeft aan of het apparaat moet worden gewist voordat gebruikers het apparaat kunnen inschrijven. 'Wissen' betekent dat de fabrieksinstellingen van het apparaat worden teruggezet, waardoor alle gegevens worden verwijderd. Zie voor meer informatie [Volledig of selectief wissen gebruiken](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Wissen**: geeft aan of het apparaat moet worden gewist voordat gebruikers het apparaat kunnen inschrijven. 'Wissen' betekent dat de fabrieksinstellingen van het apparaat worden teruggezet, waardoor alle gegevens worden verwijderd. Zie voor meer informatie [Volledig of selectief wissen gebruiken](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Affiniteit**: apparaten worden aan gebruikers gekoppeld. Dit is vereist voor Mobile Application Management (MAM) en voorwaardelijke toegang tot bedrijfsgegevens. Zie [Gebruikersaffiniteit](enroll-ios-devices-using-device-enrollment-program.md) voor meer informatie.
 - **Vergrendeling** - geeft aan of gebruikers wordt verhinderd hun apparaten uit te schrijven voor beheer. Gebruikers kunnen hun apparaten op alle platforms uitschrijven via de bedrijfsportal-app. Ze kunnen niet de eigen menu’s van het besturingssysteem gebruiken om apparaten uit te schrijven.
 
@@ -70,7 +71,7 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 
 
 ## <a name="byod"></a>BYOD
-'Bring-Your-Own-Device'-gebruikers installeren de bedrijfsportal-app en registreren hun apparaat. Hiermee kunnen gebruikers verbinding maken met het bedrijfsnetwerk en deelnemen aan het domein of Azure Active Directory. Voor de meeste platformen moet u BYOD-registratie inschakelen voor veel COD-scenario’s. U kunt de inschrijving blokkeren van iOS- en Android-apparaten die het eigendom van de gebruiker zijn. Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) voor instructies.
+'Bring-Your-Own-Device'-gebruikers installeren de bedrijfsportal-app en registreren hun apparaat. Hiermee kunnen gebruikers verbinding maken met het bedrijfsnetwerk en deelnemen aan het domein of Azure Active Directory. Voor de meeste platformen moet u BYOD-registratie inschakelen voor veel COD-scenario’s. U kunt de inschrijving blokkeren van iOS- en Android-apparaten die het eigendom van de gebruiker zijn. Zie [Beperkingen voor apparaattypen instellen](set-enrollment-restrictions.md#set-device-type-restrictions) voor instructies.
 
 ## <a name="corporate-owned-devices"></a>Apparaten in bedrijfseigendom
 Apparaten in bedrijfseigendom (COD) kunnen met de Azure Portal worden beheerd. iOS-apparaten kunnen rechtstreeks met de hulpprogramma's van Apple worden ingeschreven. Alle typen apparaten kunnen worden ingeschreven door een beheerder of manager die de apparaatinschrijvingsbeheerder gebruikt. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom om COD-scenario's mogelijk te maken.

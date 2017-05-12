@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Met Intune kunt u macOS-apparaten beheren. Als u apparaatbeheer wilt inschakelen, moeten uw gebruikers hun apparaat inschrijven door naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan en de prompts te volgen. Zodra macOS-apparaten worden beheerd, kunt u [aangepaste instellingen voor macOS-apparaten maken](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Binnenkort zijn er nog meer mogelijkheden beschikbaar.
+Met Intune kunt u macOS-apparaten beheren. Als u apparaatbeheer wilt inschakelen, moeten uw gebruikers hun apparaat inschrijven door naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan en de prompts te volgen. Zodra macOS-apparaten worden beheerd, kunt u [aangepaste instellingen voor macOS-apparaten maken](../configure-devices/custom-for-macos.md). Binnenkort zijn er nog meer mogelijkheden beschikbaar.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -36,7 +37,7 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 - [Domeinen configureren](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [MDM-instantie instellen](set-mdm-authority.md)
 - [Groepen maken](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [De bedrijfsportal configureren](/intune-azure/manage-apps/company-portal-app.md)
+- [De bedrijfsportal configureren](../manage-apps/company-portal-app.md)
 - Gebruikerslicenties toewijzen in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Een Apple MDM-pushcertificaat ophalen](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 
 Standaard staat Intune toe dat macOS-apparaten kunnen worden ingeschreven.
 
-Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) als u de inschrijving van macOS-apparaten wilt blokkeren.
+Zie [Beperkingen voor apparaattypen instellen](set-enrollment-restrictions.md#set-device-type-restrictions) als u de inschrijving van macOS-apparaten wilt blokkeren.
 
-Zie [Apparaatlimietbeperkingen instellen](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) als u het maximumaantal apparaten wilt instellen dat een gebruiker kan inschrijven.
+Zie [Apparaatlimietbeperkingen instellen](set-enrollment-restrictions.md#set-device-limit-restrictions) als u het maximumaantal apparaten wilt instellen dat een gebruiker kan inschrijven.
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Uw gebruikers vertellen hoe ze hun apparaten moeten inschrijven om toegang te krijgen tot bedrijfsresources
 

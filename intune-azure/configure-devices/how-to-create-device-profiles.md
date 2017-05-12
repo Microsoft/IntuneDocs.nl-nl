@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **Platform**: selecteer het platformtype voor het profiel dat u wilt maken.
     - **Profieltype**: selecteer het type profiel dat u wilt maken. Welke typen beschikbaar zijn, is afhankelijk van het platform dat u hebt gekozen.
     - **Instellingen**: in de volgende onderwerpen vindt u meer informatie over de instellingen voor elk profieltype:
-        -  [Instellingen voor apparaatfuncties](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [Apparaatbeperkingsinstellingen](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-        -  [E-mailinstellingen](/intune-azure/configure-devices/how-to-configure-email-settings)
-        -  [VPN-instellingen](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-        -  [Wi-Fi-instellingen](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-        -  [Upgrade-instellingen voor Windows 10-editie](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-        -  [Certificaatinstellingen](/intune-azure/configure-devices/how-to-configure-certificates)
-        -  [Instellingen voor Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [Onderwijsinstellingen](/intune-azure/configure-devices/how-to-configure-education-settings)
-        -  [Aangepaste instellingen](/intune-azure/configure-devices/how-to-configure-custom-settings)
+        -  [Instellingen voor apparaatfuncties](how-to-configure-device-features.md)
+        -  [Apparaatbeperkingsinstellingen](how-to-configure-device-restrictions.md)
+        -  [E-mailinstellingen](how-to-configure-email-settings.md)
+        -  [VPN-instellingen](how-to-configure-vpn-settings.md)
+        -  [Wi-Fi-instellingen](how-to-configure-wi-fi-settings.md)
+        -  [Upgrade-instellingen voor Windows 10-editie](how-to-configure-windows-10-edition-upgrade.md)
+        -  [Certificaatinstellingen](how-to-configure-certificates.md)
+        -  [Instellingen voor Windows Information Protection](how-to-configure-windows-information-protection.md)
+        -  [Onderwijsinstellingen](how-to-configure-education-settings.md)
+        -  [Aangepaste instellingen](how-to-configure-custom-settings.md)
 
     ![Apparaatprofiel maken](./media/create-device-profile.png)
 4. Als u klaar bent met het configureren van de instellingen, kiest u **Maken** op de blade **Profiel maken**.
@@ -58,5 +59,5 @@ Zie [How to assign device profiles](how-to-assign-device-profiles.md) (Apparaatp
 
 
 ### <a name="next-steps"></a>Volgende stappen
-Zie [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles) (Apparaatprofielen toewijzen met Microsoft Intune) voor meer informatie over het toewijzen van apparaatprofielen.
+Zie [How to assign device profiles with Microsoft Intune](how-to-assign-device-profiles.md) (Apparaatprofielen toewijzen met Microsoft Intune) voor meer informatie over het toewijzen van apparaatprofielen.
 

@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ In dit onderwerp wordt het volgende uitgelegd:
 - Wat u nodig hebt voordat u een nalevingsbeleid voor apparaten kunt maken.
 - Een kort overzicht van wat u kunt zien en doen in Intune Azure Preview Portal. 
 
-Als u niet bekend bent met apparaatnaleving, kunt u [dit onderwerp](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) doorlezen voor meer informatie over wat apparaatnaleving is en hoe u een dergelijk beleid in uw organisatie kunt gebruiken.
+Als u niet bekend bent met apparaatnaleving, kunt u [dit onderwerp](what-is-device-compliance.md) doorlezen voor meer informatie over wat apparaatnaleving is en hoe u een dergelijk beleid in uw organisatie kunt gebruiken.
 
 ##  <a name="pre-requisites"></a>Vereisten
 
