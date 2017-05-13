@@ -5,7 +5,7 @@ keywords: wat is Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +33,7 @@ Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (En
 * Gegevens van uw bedrijf beschermen door te bepalen hoe uw werknemers toegang hebben tot de gegevens en deze delen.
 * Garanderen dat apparaten en apps compatibel zijn met de beveiligingsvereisten van het bedrijf.
 
-Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging. Het is de *beheertak* van Microsoft Enterprise Mobility + Security (EMS), terwijl Office 365 de *productiviteitstak* is van de mobiliteitsoplossing van Microsoft.  
+Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging.
 
 Samen stellen Office 365 en EMS uw medewerkers in staat om productief te zijn op al hun apparaten terwijl de gegevens van uw organisatie beschermd blijven. Office 365 met EMS is een volledig geïntegreerde oplossing voor bedrijfsmobiliteit, met inbegrip van productiviteit, identiteit, toegangsbeheer, beheer en gegevensbeveiliging. Dit biedt u een effectieve manier om een mobiliteitsoplossing te implementeren en te gebruiken in uw organisatie.
 
