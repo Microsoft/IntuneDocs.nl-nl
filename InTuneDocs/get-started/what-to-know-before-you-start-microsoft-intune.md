@@ -14,10 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 7171dab36ace4915b51def2dd717e63df8438135
+ms.contentlocale: nl-nl
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ Intune-apparaatbeheer biedt [deze mogelijkheden](mobile-device-management-capabi
 
 ### <a name="windows-pc-software-client"></a>Softwareclient voor Windows-pc's
 
-Een [Intune-softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) kan als een alternatieve registratiemethode worden geïmplementeerd en geïnstalleerd op Windows-pc's. U kunt de Intune-softwareclient gebruiken om pc's met Windows 7 en hoger te beheren, met uitzondering van Windows 10 Home. Als u pc‘s beheert met de clientsoftware, kunt u gebruikmaken van de [volgende mogelijkheden](windows-pc-management-capabilities-in-microsoft-intune.md).
+Een [Intune-softwareclient](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) kan als een alternatieve registratiemethode worden geïmplementeerd en geïnstalleerd op Windows-pc's. U kunt de Intune-softwareclient gebruiken om pc's met Windows 7 en hoger te beheren, met uitzondering van Windows 10 Home.
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync-beheer
 
