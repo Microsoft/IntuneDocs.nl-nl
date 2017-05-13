@@ -84,7 +84,7 @@
 #### [Exchange-toegangsregels](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Android for Work beheren](deploy-use/android-for-work.md)
 
-## [Pc's beheren met softwareagent](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [Pc's beheren met softwareclient](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [De pc-client installeren](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Algemene beheertaken voor pc's](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Pc-beleid](deploy-use/use-policies-to-simplify-windows-pc-management.md)
