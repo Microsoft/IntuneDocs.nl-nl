@@ -15,10 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a391f9e16faf315c5fb88191f3de3f8f2f3d5178
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: 7322b19b544e7c0456c94f12746844ac12669873
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -70,6 +71,11 @@ Er zijn een aantal uitzonderingsapps en -platformservices waar het Intune-beveil
 | **De uitvoering blokkeren van beheerde apps die op jailbroken of geroote apparaten worden uitgevoerd** |  Kies **Ja** om te voorkomen dat deze app wordt uitgevoerd op jailbroken of geroote apparaten. De gebruiker kan deze app nog steeds gebruiken voor privétaken maar moet voor het openen van werk- of schoolgegevens in deze app een ander apparaat gebruiken. | Yes |
 | **Toegangsvereisten opnieuw controleren na (minuten)** | Configureer de volgende instellingen: <ul><li>**Time-out**: geef de periode (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **30** minuten.</li><li>**Offline respijtperiode**: als het apparaat offline is, geeft u de periode (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **720** minuten (12 uur).</li></ul>| Time-out: 30 <br><br> Offline: 720 |
 | **Offline interval (in dagen) voordat app-gegevens worden gewist** | Werk- of schoolgegevens in deze app kunnen worden gewist als een apparaat langer dan een bepaalde periode offline is. Geef het aantal dagen op dat een apparaat offline mag zijn voordat de werk- of schoolgegevens van het apparaat worden verwijderd. <br><br> | 90 dagen |
+| **Minimumversie van het iOS-besturingssysteem vereisen** | Kies **Ja** om een minimumversie van het iOS-besturingssysteem te vereisen voor gebruik van deze app. Toegang door de gebruiker wordt geblokkeerd als de iOS-versie op het apparaat niet aan de vereiste voldoet. <br><br> | Nee |
+| **Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)** | Kies **Ja** om een minimaal iOS-besturingssysteem aan te bevelen bij gebruik van deze app. De gebruiker ziet een melding als de iOS-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren. <br><br> | Nee |
+| **Minimumversie van app vereisen** | Kies **Ja** om een minimumversie van de app te vereisen voor gebruik van de app. Toegang door de gebruiker wordt geblokkeerd als de app-versie op het apparaat niet aan de vereiste voldoet.<br><br>Wanneer u apps als doel selecteert, is het versieschema tussen de apps vaak afwijkend.<br><br> | Nee |
+| **Minimumversie van app vereisen (alleen waarschuwing)** | Kies **Ja** om een minimale app-versie aan te bevelen bij gebruik van de app. De gebruiker ziet een melding als de app-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br>Wanneer u apps als doel selecteert, is het versieschema tussen de apps vaak afwijkend.<br><br> | Nee |
+| **Minimumversie van SDK voor het beleid voor app-beveiliging van Intune vereisen** | Kies **Ja** om een minimumversie van de SDK voor het beleid voor app-beveiliging van Intune te vereisen die wordt gebruikt in de app. Toegang door de gebruiker wordt geblokkeerd als de SDK-versie voor Intune-appbeveiligingsbeleid op het apparaat niet aan de vereiste voldoet. <br> <br> Zie [Overzicht van de Intune App SDK](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) voor meer informatie over de SDK voor Intune-appbeveiligingsbeleid <br><br> | Nee |
 
 ##  <a name="add-ins-for-outlook-app"></a>Invoegtoepassingen voor Outlook-app
 

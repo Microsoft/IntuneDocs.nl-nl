@@ -14,10 +14,11 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5888ffa6f16e9a9807ce1f9a9eb0594ed31b5b18
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -47,18 +48,18 @@ Het apparaat waarvoor toegang tot Skype voor Bedrijven Online nodig is, moet:
 
 -   Een **Android**- of **iOS**-apparaat zijn.
 
--   Zijn **geregistreerd** bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   **Geregistreerd** zijn bij Intune.
 
--   **Voldoen aan** het geïmplementeerde [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nalevingsbeleid.
+-   **Voldoen** aan geïmplementeerd Intune-nalevingsbeleid.
 
 
 De apparaatstatus wordt opgeslagen in Azure Active Directory, waarmee toegang wordt verleend of geblokkeerd op basis van de voorwaarden die u opgeeft.
 
 Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgende berichten te zien tijdens het aanmelden:
 
--   Als het apparaat niet is geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies voor het installeren van de bedrijfsportal-app en het inschrijven van het apparaat.
+-   Als het apparaat niet is geregistreerd bij Intune of Azure Active Directory, wordt een bericht weergegeven met instructies over het installeren van de bedrijfsportal-app en het registreren.
 
--   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven dat de eindgebruiker omleidt naar de website of app van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
+-   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de website van de Intune-bedrijfsportal of de bedrijfsportal-app wordt verwezen. Hier staat informatie over het probleem en hoe het kan worden opgelost.
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>Beleid voor voorwaardelijke toegang configureren voor Skype voor Bedrijven Online
 
@@ -77,7 +78,7 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 [Maak](create-a-device-compliance-policy-in-microsoft-intune.md) en [implementeer](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) nalevingsbeleid op alle apparaten die door het beleid worden beïnvloed. Dit zijn alle apparaten die door de gebruikers in de **doelgroepen** worden gebruikt.
 
 > [!NOTE]
-> Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
+> Terwijl nalevingsbeleid wordt geïmplementeerd voor Intune-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
 
 
 > [!IMPORTANT]

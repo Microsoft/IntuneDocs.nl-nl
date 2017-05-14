@@ -1,12 +1,12 @@
 ---
-title: Apps beheren via de Windows Store voor Bedrijven
+title: Apps beheren via de Windows Store voor Bedrijven | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over hoe u apps kunt synchroniseren in Intune vanuit Windows Store voor Bedrijven en ze vervolgens kunt toewijzen en bijhouden.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/24/2017
 * U kunt de lijst met aangeschafte apps synchroniseren met Intune.
 * Apps die zijn gesynchroniseerd, worden weergegeven in de Intune-beheerconsole en u kunt deze op dezelfde manier toewijzen als andere apps.
 * U kunt in de Intune-beheerconsole bijhouden hoeveel licenties er beschikbaar zijn en hoeveel licenties er worden gebruikt.
-* Als er onvoldoende licenties beschikbaar zijn, worden de implementatie en installatie van apps geblokkeerd met Intune.
+* Als er onvoldoende licenties beschikbaar zijn, worden de toewijzing en installatie van apps geblokkeerd met Intune.
 
 ## <a name="before-you-start"></a>Voordat u begint
-Lees de volgende informatie voordat u begint met het synchroniseren en implementeren van apps uit Windows Store voor Bedrijven:
+Lees de volgende informatie voordat u begint met het synchroniseren en toewijzen van apps uit Windows Store voor Bedrijven:
 * U moet Intune configureren als de Mobile Device Management-instantie voor uw organisatie.
 * U moet zich hebben geregistreerd voor een account in Windows Store voor Bedrijven.
 * Hebt u eenmaal een Windows Store voor Bedrijven-account aan Intune gekoppeld, dan kunt u later niet meer overschakelen op een ander account.
@@ -50,7 +51,7 @@ Voordat u synchronisatie inschakelt in de Intune-console, moet u uw Store-accoun
 3. Kies op de pagina Beheerprogramma's de optie **Beheerprogramma toevoegen** en kies **Microsoft Intune**.
 
 > [!NOTE]
-> Als u meer dan één beheerhulpprogramma voor het implementeren van Windows Store voor Bedrijven-apps gebruikt, kon u voorheen slechts één van deze programma’s koppelen met de Windows Store voor Bedrijven. U kunt nu meerdere beheerhulpprogramma's met de Store koppelen, bijvoorbeeld Intune en Configuration Manager.
+> Als u meer dan één beheerhulpprogramma voor het toewijzen van Windows Store voor Bedrijven-apps gebruikt, kon u voorheen slechts één van deze programma’s koppelen met Windows Store voor Bedrijven. U kunt nu meerdere beheerhulpprogramma's met de Store koppelen, bijvoorbeeld Intune en Configuration Manager.
 
 U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
@@ -74,11 +75,11 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
 U kunt apps uit de store op dezelfde manier toewijzen als elke andere Intune-app. Zie [Apps aan groepen toewijzen](deploy-apps.md) voor meer informatie. In plaats van apps toe te wijzen vanaf de pagina **Alle apps** wijst u ze toe vanaf de pagina **Apps met een licentie**.
 
-Wanneer u een Windows Store voor Bedrijven-app toewijst, heeft elke gebruiker die de app installeert, hiervoor een licentie nodig. Als alle beschikbare licenties voor een geïmplementeerde app zijn gebruikt, kunt u geen exemplaren van de app meer implementeren. Voer een van de volgende acties uit:
+Wanneer u een Windows Store voor Bedrijven-app toewijst, heeft elke gebruiker die de app installeert, hiervoor een licentie nodig. Als alle beschikbare licenties voor een toegewezen app zijn gebruikt, kunt u geen exemplaren van de app meer toewijzen. Voer een van de volgende acties uit:
 * Verwijder de app van bepaalde apparaten.
-* Beperk het bereik van de huidige implementatie tot het aantal gebruikers waarvoor u een licentie hebt.
+* Beperk het bereik van de huidige toewijzing tot het aantal gebruikers waarvoor u een licentie hebt.
 * Koop meer exemplaren van de app in de Windows Store voor Bedrijven.
 
 > [!Important]
-> Geïmplementeerde apps zijn alleen beschikbaar voor de gebruiker die het apparaat oorspronkelijk heeft geregistreerd. Andere gebruikers kunnen de app niet gebruiken.
+> Toegewezen apps zijn alleen beschikbaar voor de gebruiker die het apparaat oorspronkelijk heeft geregistreerd. Andere gebruikers kunnen de app niet gebruiken.
 

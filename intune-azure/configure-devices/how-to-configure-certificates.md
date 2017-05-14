@@ -1,12 +1,12 @@
 ---
-title: Certificaten configureren met Intune
+title: Certificaten configureren met Intune | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over het gebruik van Intune om certificaten te maken en toe te wijzen die u helpen Wi-Fi-, VPN- en andere verbindingen te beveiligen.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 7d1d3c101aaa3832e36a0b9e9369fd1eeb0a6250
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: dfbf8e4f6a2ead4fa9ba1b476a0bf6ce6190d0a3
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -47,7 +48,7 @@ Elk van deze typen certificaten heeft eigen voorwaarden en infrastructuurvereist
     - Windows 8.1 en hoger
     - Windows Phone 8.1 en hoger
     - Windows 10 en hoger
-3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-F. U kunt een **PKCS-** of **SCEP**-certificaatprofiel maken en implementeren voor apparaten op de volgende platformen:
+3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-F. U kunt een **PKCS**- of **SCEP**-certificaatprofiel maken en toewijzen voor apparaten op de volgende platformen:
     - iOS 8.0 en hoger
     - Android 4.0 en hoger
     - Android for Work

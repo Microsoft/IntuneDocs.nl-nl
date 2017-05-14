@@ -2,10 +2,10 @@
 title: Toegankelijkheidsfuncties | Microsoft Docs
 description: Meer informatie over de functies van Intune waarmee u het programma beter toegankelijk kunt maken voor mensen met een handicap.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
-ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: b54dffd23db966d9ed15ec23fe25a7e58a187d0b
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
 
 # <a name="accessibility-features-of-microsoft-intune"></a>Toegankelijkheidsfuncties van Microsoft Intune
-Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows maken de volgende functies [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] beter toegankelijk voor mensen met een handicap:
+Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows is Microsoft Intune dankzij de volgende functies beter toegankelijk voor mensen met een handicap:
 
 -   Sneltoetsen gebruiken
 
@@ -45,10 +47,5 @@ Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows make
 |Verplaatsen naar de volgende groep toepassingen|Pijl-omhoog|
 |De acties voor een geselecteerd apparaat weergeven|Pijl-rechts|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-portals zijn navigeerbaar met de standaardsneltoetsen van Internet Explorer.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+> U kunt in Microsoft Intune-portals navigeren met de standaardsneltoetsen van Internet Explorer.
 

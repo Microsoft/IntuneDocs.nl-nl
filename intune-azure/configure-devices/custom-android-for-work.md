@@ -15,19 +15,20 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 69a500c78e0cc732cee2967c35ea4b2fec53b54b
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/05/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>In Intune aangepaste profielinstellingen voor apparaten met Android for Work maken
 
-Gebruik het aangepaste Android for Work-configuratiebeleid van Intune om OMA-URI-instellingen te implementeren waarmee u de functies op Android for Work-apparaten kunt beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
+Gebruik het aangepaste Android for Work-configuratiebeleid van Intune om OMA-URI-instellingen toe te wijzen waarmee u de functies op Android for Work-apparaten kunt beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd. Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
+Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configureren met Intune-beleid. Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
 
 ## <a name="create-a-custom-profile"></a>Een aangepast profiel maken
 

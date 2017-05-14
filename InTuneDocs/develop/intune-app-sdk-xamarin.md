@@ -14,9 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -62,9 +64,9 @@ Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu
 
 2. Lees de [licentievoorwaarden](https://components.xamarin.com/license/microsoft.intune.mam) voor het Microsoft Intune MAM Xamarin-onderdeel.
 
-3.    Download de map Intune App SDK Xamarin Component van [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) of [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) en pak de map uit. De bestanden die u in stap 1 en stap 2 hebt gedownload, moeten zich op hetzelfde mappenniveau bevinden.
+3.    Download de map Intune App SDK Xamarin Component van [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) of [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) en pak de map uit. De bestanden die u in stap 1 en stap 3 hebt gedownload, moeten zich op hetzelfde mappenniveau bevinden.
 
-4.    Voer `Xamain.Component.exe install <.xam> file` uit als beheerder vanaf de opdrachtregel.
+4.    Voer `Xamarin.Component.exe install <.xam> file` uit als beheerder vanaf de opdrachtregel.
 
 5.    Klik in Visual Studio met de rechtermuisknop op **onderdelen** in uw eerder gemaakte Xamarin-project.
 
@@ -123,9 +125,4 @@ Voor Xamarin Forms en andere UI-frameworks hebben we het hulpprogramma `MAM.Rema
 ## <a name="test-your-app"></a>Uw app testen
 
 U hebt de basisstappen voor het inbouwen van het onderdeel in uw app voltooid. U kunt nu de stappen in de Xamarin Android-voorbeeldapp volgen. We bieden twee voorbeelden, één voor Xamarin.Forms en het andere voor Android.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

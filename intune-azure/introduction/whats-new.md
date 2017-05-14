@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: 9554a431859665312daf414f2c6cdfb47baf8547
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: b9f56099c1f102472ba7f6c6a67b16cf29649365
+ms.openlocfilehash: 255b36b0c4473ff2450bf6f9a2db920c731bddc1
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/01/2017
 
 ---
 
@@ -32,6 +33,11 @@ Als de openbare preview-versie verder wordt ontwikkeld en er meer functies worde
 > De wijzigingen die op deze pagina zijn opgesomd voor Azure Portal Preview worden uitgerold. De wijzigingen zijn echter mogelijk niet meteen beschikbaar vanwege de manier waarop de Intune-service wordt bijgewerkt.  Verschillende onderdelen van de service moeten opeenvolgend worden bijgewerkt voordat de nieuwe functies van de portal beschikbaar zijn. U zult deze wijzigingen zien wanneer ze later deze maand worden uitgerold.
 
 ## <a name="april-2017"></a>April 2017
+
+### <a name="support-for-managing-the-apple-classroom-app"></a>Ondersteuning voor het beheer van de app Apple Classroom
+
+U kunt nu de iOS-app Classroom beheren op iPad-apparaten. Configureer de app Classroom op de iPad van docenten, met de juiste klas- en studentengegevens en configureer vervolgens de iPads van studenten die zijn geregistreerd bij een klas, zodat u deze met de app kunt beheren.
+Zie [Opleidingsinstellingen voor iOS configureren](/intune-azure/configure-devices/how-to-configure-ios-edu-settings) voor meer informatie.
 
 ### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Ondersteuning voor beheerde configuratieopties voor Android-apps <!-- 621621 -->
 
@@ -189,7 +195,7 @@ U hebt nu nalevingsrapporten die u informatie bieden over de naleving van appara
 - De nalevingsstatus voor een specifieke instelling
 - De nalevingsstatus voor een specifiek beleid
 
-U kunt deze rapporten ook gebruiken om in te zoomen op een specifiek appraat, om op die manier te bekijken welke instellingen en beleidsregels van invloed zijn op dat apparaat.
+U kunt deze rapporten ook gebruiken om in te zoomen op een specifiek apparaat, om op die manier te bekijken welke instellingen en beleidsregels van invloed zijn op dat apparaat.
 
 <!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
 

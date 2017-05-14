@@ -14,9 +14,11 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
-ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5eda4f43f3c62cfb0129656dcac75335570ec86f
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +42,7 @@ Azure Portal wordt gebruikt om beveiligingsbeleid voor apps te maken en te beher
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Meld u aan bij de Azure-portal en pas uw startpagina aan
 
-1.  Ga naar de [Azure-portal](https://portal.azure.com) en meld u aan met uw [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-referenties.
+1.  Ga naar de [Azure-portal](https://portal.azure.com) en meld u aan met uw Intune-referenties.
 
     ![Schermopname van de aanmeldpagina van de Azure-portal](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -64,9 +66,4 @@ Azure Portal wordt gebruikt om beveiligingsbeleid voor apps te maken en te beher
 
 ## <a name="next-steps"></a>Volgende stappen
 [Aan de slag met configureren van beveiligingsbeleid voor apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

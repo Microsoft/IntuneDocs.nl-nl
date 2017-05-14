@@ -1,12 +1,12 @@
 ---
-title: iOS Store-apps toevoegen aan Intune
+title: iOS Store-apps toevoegen aan Microsoft Intune| Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over het toevoegen van iOS Store-apps aan Intune.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,21 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 21e6089bf8a88f107518c7bccfa7bf79b3021a23
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 9a7d1e6fa032cbc281ced07302d6faaca4ba22e3
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/05/2017
 
 ---
 
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS Store-apps toevoegen aan Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## <a name="before-you-start"></a>Voordat u begint
+
+U kunt alleen apps toewijzen met deze methode als ze gratis in de App Store verkrijgbaar zijn. Als u betaalde apps wilt toewijzen met Intune, kunt u overwegen de [Volume Purchase Program-app voor iOS](/intune-azure/manage-apps/ios-vpp-apps) te gebruiken.
 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Stap 1: de app in de Store zoeken
@@ -58,3 +63,4 @@ ms.lasthandoff: 02/18/2017
 3. Wanneer u klaar bent, kiest u **Opslaan** op de blade **App toevoegen**.
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](/intune-azure/manage-apps/deploy-apps) voor hulp.
+

@@ -1,5 +1,5 @@
 ---
-title: Intune-apparaatbeperkingsinstellingen voor Android for Work
+title: Intune-apparaatbeperkingsinstellingen voor Android for Work | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op apparaten met Android for Work.'
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 03fec9d22e705ccb27f4eb1f8f82c7ace95e841e
-ms.openlocfilehash: c5cff131e7bcedadbad42fe6ab8bf00017f933ff
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: be6303f2db508c2aca9ba9a40fcd43278f83c045
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -62,9 +63,9 @@ U kunt bijvoorbeeld een app naar het werkprofiel pushen waarvoor toegang tot de 
 - **Smart Lock en andere trustagenten**: hiermee kunt u de functie Smart Lock beheren op compatibele apparaten. Met deze telefoonfunctie, soms ook wel vertrouwensagent genoemd, kunt u het wachtwoord voor het vergrendelingsscherm op het apparaat uitschakelen of overslaan als het apparaat zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt.) Met deze instelling kunt u voorkomen dat gebruikers Smart Lock configureren.
 
 ## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
-Gebruik het **aangepaste Android for Work-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om de functies op Android for Work-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
+Gebruik het **aangepaste Android for Work-configuratiebeleid** van Microsoft Intune om OMA-URI-instellingen toe te wijzen die kunnen worden gebruikt om de functies op apparaten met Android for Work te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd.
+Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configureren met Intune-beleid.
 Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
 
 ### <a name="general-settings"></a>Algemene instellingen

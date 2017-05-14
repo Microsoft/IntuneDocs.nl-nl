@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Gebruik de voorwaardelijke toegang [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] om de toegang tot bestande op SharePoint Online te beheren.
+Gebruik de voorwaardelijke toegang van Microsoft Intune om de toegang tot bestanden op SharePoint Online te beheren.
 Voorwaardelijke toegang bestaat uit twee onderdelen:
 - Een nalevingsbeleid voor apparaten waaraan het apparaat moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
 - Een beleid voor voorwaardelijke toegang waarin u de voorwaarden opgeeft waaraan het apparaat moet voldoen om toegang tot de service te krijgen.
@@ -45,20 +46,20 @@ Wanneer een gebruiker probeert verbinding te maken met een bestand via een onder
 
 
   Als u verbinding met de vereiste bestanden wilt maken, moet het apparaat voldoen aan de volgende voorwaarden:
--   Het apparaat moet zijn **geregistreerd** bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of een pc zijn die lid is van een domein.
+-   Het apparaat moet **geregistreerd** zijn bij Intune of moet een pc zijn die lid is van een domein.
 
--   Het apparaat moet zijn **geregistreerd** bij Azure Active Directory (dit gebeurt automatisch wanneer het apparaat wordt geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Het apparaat moet zijn **geregistreerd** bij Azure Active Directory (dit gebeurt automatisch wanneer het apparaat wordt geregistreerd bij Intune).
 
 
--   Het apparaat moet **voldoen** aan alle geïmplementeerde [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] beleidsregels met betrekking tot de naleving.
+-   Het apparaat moet **voldoen** aan het geïmplementeerde Intune-nalevingsbeleid.
 
 De apparaatstatus wordt opgeslagen in Azure Active Directory, die toegang tot de bestanden verleent of blokkeert op basis van de opgegeven voorwaarden.
 
 Als niet aan een voorwaarde wordt voldaan, krijgt de gebruiker een van de volgende berichten te zien tijdens het aanmelden:
 
--   Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies voor het installeren van de bedrijfsportal-app en de registratie inschrijven van het apparaat.
+-   Als het apparaat niet is geregistreerd bij Intune of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies voor het installeren van de bedrijfsportal-app en het registreren van het apparaat.
 
--   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-website van de bedrijfsportal wordt verwezen. Hier vindt hij informatie over het probleem en aanwijzingen voor het oplossen ervan.
+-   Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de website van de Intune-bedrijfsportal wordt verwezen. Hier staat informatie over het probleem en aanwijzingen voor het oplossen ervan.
 
 **Voorwaardelijke toegang is niet van toepassing op extern delen**. Zie [Extern delen voor uw SharePoint Online-omgeving beheren](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) om te lezen hoe u extern delen in uw tenant of siteverzameling kunt voorkomen.
 
@@ -115,7 +116,7 @@ Als een gebruiker zich in beide groepen bevindt, wordt het beleid niet op de geb
 Als u dit nog niet hebt gedaan, maakt u een nalevingsbeleid en implementeert u dit voor gebruikers waarop het SharePoint Online-beleid van toepassing is.
 
 > [!NOTE]
-> Terwijl nalevingsbeleid wordt geïmplementeerd voor [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
+> Terwijl nalevingsbeleid wordt geïmplementeerd voor Intune-groepen, is beleid voor voorwaardelijke toegang gericht op Azure Active Directory-beveiligingsgroepen.
 
 Zie [Een nalevingsbeleid maken](create-a-device-compliance-policy-in-microsoft-intune.md) voor meer informatie over het configureren van het nalevingsbeleid.
 
@@ -152,11 +153,11 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
          Het beleid voor voorwaardelijke toegang wordt toegepast op elke clienttoepassing die moderne verificatie gebruikt op de door u geselecteerde platformen.
 
-     Voor Windows-pc's moet de pc lid zijn van een domein of zijn geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en voldoen aan het beleid. U kunt de volgende vereisten instellen:
+     Voor Windows-pc's moet de pc lid zijn van een domein of zijn geregistreerd bij Intune en voldoen aan het beleid. U kunt de volgende vereisten instellen:
 
-     -   **Apparaten moeten lid zijn van een domein of voldoen aan het beleid.** Kies deze optie om te vereisen dat pc's lid moeten zijn van een domein of het beleid naleven dat is ingesteld in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Als een pc niet aan een van deze vereisten voldoet, wordt de gebruiker gevraagd het apparaat in te schrijven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Apparaten moeten lid zijn van een domein of voldoen aan het beleid.** Kies deze optie om te vereisen dat pc's lid moeten zijn van een domein of het beleid moeten naleven dat is ingesteld in Intune. Als een pc niet aan een van deze vereisten voldoet, wordt de gebruiker gevraagd het apparaat te registreren bij Intune.
 
-     -   **Apparaten moeten voldoen aan het beleid.** Kies deze optie om verplicht te stellen dat pc's moeten zijn geregistreerd bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en aan het nalevingsbeleid moeten voldoen. Als een pc niet is geregistreerd, wordt een bericht met instructies voor de registratie weergegeven.
+     -   **Apparaten moeten voldoen aan het beleid.** Kies deze optie om verplicht te stellen dat pc's geregistreerd zijn bij Intune en aan het beleid voldoen. Als een pc niet is geregistreerd, wordt een bericht met instructies voor de registratie weergegeven.
 
 4.   Onder **Browsertoegang** tot SharePoint Online en OneDrive voor Bedrijven kunt u ervoor kiezen om toegang tot Exchange Online alleen toe te staan via de ondersteunde browsers: Safari (iOS) en Chrome (Android). Toegang vanaf andere browsers wordt geblokkeerd. De platformbeperkingen die u hebt geselecteerd voor toegang tot OneDrive zijn hier ook van toepassing.
 
