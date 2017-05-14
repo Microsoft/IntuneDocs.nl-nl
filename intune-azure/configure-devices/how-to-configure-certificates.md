@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: dfbf8e4f6a2ead4fa9ba1b476a0bf6ce6190d0a3
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: ecb6a806e7870fd2b1986c4247607c9374431151
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -72,8 +72,8 @@ U moet voor elk apparaatplatform een afzonderlijk profiel maken. Wanneer u het p
 
 Zie een van de volgende onderwerpen voor meer informatie over het configureren van de infrastructuur voor elk type certificaatprofiel:
 
-- [SCEP-certificaten configureren en beheren met Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [PKCS-certificaten configureren en beheren met Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [SCEP-certificaten configureren en beheren met Intune](configure-certificate-infrastructure-for-scep.md)
+- [PKCS-certificaten configureren en beheren met Intune](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## <a name="step-2---export-your-trusted-root-ca-certificate"></a>Stap 2: uw vertrouwde basis-CA-certificaat exporteren
@@ -120,8 +120,8 @@ Zie [How to assign device profiles](how-to-assign-device-profiles.md) (Apparaatp
 
 Zie een van de volgende onderwerpen voor meer informatie over het configureren en toewijzen van elk type certificaatprofiel:
 
-- [SCEP-certificaten configureren en beheren met Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [PKCS-certificaten configureren en beheren met Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [SCEP-certificaten configureren en beheren met Intune](configure-certificate-infrastructure-for-scep.md)
+- [PKCS-certificaten configureren en beheren met Intune](configure-certificate-infrastructure-for-pfx.md)
 
 Nadat u een vertrouwd certificaatprofiel hebt gemaakt, maakt u SCEP- of PKCS-certificaatprofielen voor elk platform dat u wilt gebruiken. Wanneer u een SCEP-certificaatprofiel maakt, moet u een profiel voor een vertrouwd certificaat voor datzelfde platform opgeven. Hierdoor worden de twee certificaatprofielen gekoppeld. U moet nog wel elk profiel afzonderlijk toewijzen.
 

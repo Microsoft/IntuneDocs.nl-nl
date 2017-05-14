@@ -16,10 +16,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 69a500c78e0cc732cee2967c35ea4b2fec53b54b
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -32,7 +32,7 @@ Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configurere
 
 ## <a name="create-a-custom-profile"></a>Een aangepast profiel maken
 
-1. Volg de instructies in [Aangepaste apparaatinstellingen configureren](/intune-azure/configure-devices/how-to-configure-custom-settings) om aan de slag te gaan.
+1. Volg de instructies in [Aangepaste apparaatinstellingen configureren](how-to-configure-custom-settings.md) om aan de slag te gaan.
 2. Klik op de blade **Aangepaste OMA-URI-instellingen** op **Toevoegen** om een nieuwe instelling toe te voegen.
 3. Configureer op de blade **Rij toevoegen** het volgende:
     - **Naam**: voer een unieke naam in voor de aangepaste instellingen voor Android for Work waarmee u deze gemakkelijk kunt herkennen in de Intune-portal.

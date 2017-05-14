@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: d3a3ef32f480d60a15b33312e436b2e40cc07bdd
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,7 +49,7 @@ U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats 
 > -   **Beheerde iOS-app uit de App Store**
 > -   **App-pakket voor iOS**
 >
-> Zie [Apps toevoegen aan Microsoft Intune](/intune-azure/manage-apps/add-apps) voor meer informatie over app-installatietypen.
+> Zie [Apps toevoegen aan Microsoft Intune](add-apps.md) voor meer informatie over app-installatietypen.
 
 ## <a name="create-an-app-configuration-policy"></a>Een app-configuratiebeleid maken
 

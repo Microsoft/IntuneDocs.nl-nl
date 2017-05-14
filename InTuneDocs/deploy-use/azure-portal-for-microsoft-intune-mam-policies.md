@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
-ms.openlocfilehash: 5eda4f43f3c62cfb0129656dcac75335570ec86f
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -42,7 +42,7 @@ Azure Portal wordt gebruikt om beveiligingsbeleid voor apps te maken en te beher
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Meld u aan bij de Azure-portal en pas uw startpagina aan
 
-1.  Ga naar de [Azure-portal](https://portal.azure.com) en meld u aan met uw Intune-referenties.
+1.  Ga naar [Azure Portal](https://portal.azure.com) en meld u aan met uw Intune-referenties.
 
     ![Schermopname van de aanmeldpagina van de Azure-portal](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 

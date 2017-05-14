@@ -16,10 +16,10 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: c7ddc58d15ea260b31adad0bab65428df7e4b9ac
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +38,7 @@ Als u deze workload opent, ziet u de volgende opties:
 
 ## <a name="getting-started"></a>Aan de slag
 
-De werkstroom voor het maken van apparaatprofielen is gelijk voor alle profielen. Lees [How to create Microsoft Intune device configuration profiles](/intune-azure/configure-devices/how-to-create-device-profiles) (Microsoft Intune-apparaatconfiguratieprofielen maken) voor informatie over het maken van profielen. Lees vervolgens verder voor specifieke informatie over het maken van instellingen voor elk profieltype.
+De werkstroom voor het maken van apparaatprofielen is gelijk voor alle profielen. Lees [How to create Microsoft Intune device configuration profiles](how-to-create-device-profiles.md) (Microsoft Intune-apparaatconfiguratieprofielen maken) voor informatie over het maken van profielen. Lees vervolgens verder voor specifieke informatie over het maken van instellingen voor elk profieltype.
 
 U kunt de volgende mogelijkheden op uw apparaten beheren:
 

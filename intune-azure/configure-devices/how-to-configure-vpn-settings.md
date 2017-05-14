@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 571d12427a8d5103470837819ab356923a2fcccd
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: d44eec0cdfc2a7762a0f0ca62da4dacd0d083484
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +54,7 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 
 
 > [!IMPORTANT]
-> U kunt VPN-profielen die zijn toegewezen aan een apparaat pas gebruiken nadat de betreffende VPN-app voor het profiel is geïnstalleerd. U kunt de informatie in het onderwerp [Wat is Microsoft Intune-appbeheer?](/intune-azure/manage-apps/what-is-app-management) gebruiken bij het toewijzen van de app met behulp van Intune.  
+> U kunt VPN-profielen die zijn toegewezen aan een apparaat pas gebruiken nadat de betreffende VPN-app voor het profiel is geïnstalleerd. U kunt de informatie in het onderwerp [Wat is Microsoft Intune-appbeheer?](../manage-apps/what-is-app-management.md) gebruiken bij het toewijzen van de app met behulp van Intune.  
 
 Zie [Create custom VPN profiles](create-custom-vpn-profiles.md) (Aangepaste VPN-profielen maken) voor meer informatie over het maken van aangepaste VPN-profielen met behulp van URI-instellingen.     
 

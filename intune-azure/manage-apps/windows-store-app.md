@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 5eb84fed9fccbcedaefa227c34985a5303339b1e
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 05/05/2017
     - **Pictogram uploaden**: upload het pictogram dat aan de app wordt gekoppeld. Dit is het pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 8. Wanneer u klaar bent, kiest u **Opslaan** op de blade **App toevoegen**.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](/intune-azure/manage-apps/deploy-apps) voor hulp.
+De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](deploy-apps.md) voor hulp.
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>De Windows 10-bedrijfsportal-app handmatig toewijzen
 Eindgebruikers kunnen de bedrijfsportal-app installeren vanuit de Windows Store voor het beheren van apparaten en installeren van apps. Als uw bedrijf echter vereist dat u de bedrijfsportal-app toewijst, kunt u de Windows 10-bedrijfsportal-app handmatig rechtstreeks toewijzen vanuit Intune, zelfs als u Intune niet hebt geïntegreerd met Windows Store voor Bedrijven.
