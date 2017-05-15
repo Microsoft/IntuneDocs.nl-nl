@@ -1,5 +1,5 @@
 ---
-title: Wat zijn apparaatprofielen in Microsoft Intune?
+title: Wat zijn apparaatprofielen in Microsoft Intune? | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: meer informatie over Intune-apparaatprofielen en hoe u ze kunt gebruiken bij het beheren en beveiligen van apparaten in uw bedrijf.'
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Als u deze workload opent, ziet u de volgende opties:
 
 ## <a name="getting-started"></a>Aan de slag
 
-De werkstroom voor het maken van apparaatprofielen is gelijk voor alle profielen. Lees [How to create Microsoft Intune device configuration profiles](/intune-azure/configure-devices/how-to-create-device-profiles) (Microsoft Intune-apparaatconfiguratieprofielen maken) voor informatie over het maken van profielen. Lees vervolgens verder voor specifieke informatie over het maken van instellingen voor elk profieltype.
+De werkstroom voor het maken van apparaatprofielen is gelijk voor alle profielen. Lees [How to create Microsoft Intune device configuration profiles](how-to-create-device-profiles.md) (Microsoft Intune-apparaatconfiguratieprofielen maken) voor informatie over het maken van profielen. Lees vervolgens verder voor specifieke informatie over het maken van instellingen voor elk profieltype.
 
 U kunt de volgende mogelijkheden op uw apparaten beheren:
 
@@ -51,15 +52,15 @@ Met apparaatbeperkingen kunt u verschillende instellingen bepalen die u voor div
 Zie [How to configure device restriction settings](how-to-configure-device-restrictions.md) (Apparaatbeperkingsinstellingen configureren) voor meer informatie. Ondersteunt: Android, iOS, macOS, Windows 10 en Windows 10 Team.
 
 ## <a name="email"></a>E-mail
-U kunt met e-mailprofielen e-mailinstellingen voor Exchange ActiveSync maken, implementeren en bewaken op apparaten die u beheert. Door deze instellingen te implementeren zorgt u voor consistentie, vermindert u ondersteuningsaanvragen en biedt u eindgebruikers toegang tot bedrijfse-mail op hun eigen apparaten zonder dat ze instellingen hoeven op te geven.
+U kunt met e-mailprofielen de e-mailinstellingen voor Exchange ActiveSync maken, toewijzen en bewaken op apparaten die u beheert. Door deze instellingen toe te wijzen, zorgt u voor consistentie, vermindert u ondersteuningsaanvragen en biedt u eindgebruikers toegang tot bedrijfse-mail op hun eigen apparaten zonder dat ze instellingen hoeven op te geven.
 Zie [How to configure email settings](how-to-configure-email-settings.md) (E-mailinstellingen configureren) voor meer informatie. Ondersteunt: Android, iOS, Windows Phone 8.1 en Windows 10.
 
 ## <a name="wi-fi"></a>Wi-Fi
-Gebruik Wi-Fi-profielen om instellingen voor draadloze netwerken te implementeren voor gebruikers en apparaten in uw organisatie. Wanneer u een Wi-Fi-profiel implementeert, hoeven uw gebruikers de toegang tot uw zakelijke Wi-Fi niet zelf te configureren.
+Gebruik Wi-Fi-profielen om instellingen voor draadloze netwerken toe te wijzen voor gebruikers en apparaten in uw organisatie. Wanneer u een Wi-Fi-profiel toewijst, hebben uw gebruikers toegang tot uw zakelijke Wi-Fi zonder dat ze dit zelf hoeven te configureren.
 Zie [How to configure Wi-Fi settings](how-to-configure-wi-fi-settings.md) (Wi-Fi-instellingen configureren) voor meer informatie. Ondersteunt: Android, iOS, macOS en Windows Phone 8.1 (alleen importeren).
 
 ## <a name="vpn"></a>VPN
-Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. Gebruik VPN-profielen om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken.
+Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. Gebruik VPN-profielen om VPN-instellingen toe te wijzen aan gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken.
 Zie [VPN-instellingen configureren](how-to-configure-vpn-settings.md) voor meer informatie.
 Ondersteunt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 en Windows 10.
 

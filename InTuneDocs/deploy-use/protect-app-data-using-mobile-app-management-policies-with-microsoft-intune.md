@@ -14,10 +14,11 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -66,7 +67,7 @@ Beveiligingsbeleid voor apps wordt momenteel ondersteund op:
 >Windows-apparaten worden niet ondersteund voor MAM zonder inschrijvingsscenario. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 
 
-##  <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligt
+##  <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen
 
 ###  <a name="apps-without-app-protection-policies"></a>Apps zonder het beveiligingsbeleid voor apps
 
@@ -128,7 +129,7 @@ Met apps die ondersteuning bieden voor meerdere identiteiten, kunt u verschillen
 
 Wanneer een gebruiker de OneDrive-app start vanaf een werkaccount, kan hij de bestanden niet verplaatsen naar een persoonlijke opslaglocatie. Wanneer OneDrive wordt gebruikt voor een persoonlijk account, kunnen de gegevens op de persoonlijke OneDrive-locatie zonder beperkingen worden gekopieerd en verplaatst.  
 
-Alle mobiele apps van Office ondersteunen toegang via meerdere identiteiten.
+- Meer informatie over de apps die ondersteuning bieden voor [MAM en meerdere identiteiten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) met Intune.
 
 ##  <a name="next-steps"></a>Volgende stappen
 - [Aan de slag met configureren van beveiligingsbeleid voor apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)

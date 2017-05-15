@@ -1,12 +1,12 @@
 ---
-title: Apps aan groepen toewijzen
+title: Apps aan groepen toewijzen | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: als u een app aan Intune hebt toegevoegd, wilt u deze wellicht toewijzen aan groepen met gebruikers of apparaten.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
 |Ingepakte apps of apps waarin Intune SDK is opgenomen (voor app-beveiligingsbeleid) toewijzen|Yes|Yes|
 |Apps toewijzen als beschikbaar|Ja|Yes|
 |Apps toewijzen als vereist|Yes|Nee|
-|Apps verwijderen|Ja|Yes|
+|Apps verwijderen|Yes|Nee|
 |Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app|Yes|Nee|
 |Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app op internet|Yes|Yes|
 
@@ -53,21 +54,21 @@ Het belangrijkste om te onthouden, is dat onderliggende groepen niet bestaan in 
 ||||||
 |-|-|-|-|-|
 |**Klassieke versie van Intune (vóór de tenantmigratie)**|-|**Intune Azure (na voltooiing van de tenantmigratie)**|-|**Meer informatie**|
-|**Implementatieopzet bovenliggende groepen**|**Implementatieopzet onderliggende groepen**|**Resulterende toewijzingsopzet voor gedeelde leden van eerdere bovenliggende en onderliggende groep**|**Resulterende toewijzingsopzetactie voor leden van bovenliggende groep**|-|    
+|**Toewijzingsopzet bovenliggende groepen**|**Toewijzingsopzet onderliggende groepen**|**Resulterende toewijzingsopzet voor gedeelde leden van eerdere bovenliggende en onderliggende groep**|**Resulterende toewijzingsopzetactie voor leden van bovenliggende groep**|-|    
 |Beschikbaar|Vereist|Vereist en beschikbaar|Beschikbaar|Vereist en beschikbaar betekent dat apps die zijn toegewezen als Vereist ook worden weergegeven in de Bedrijfsportal-app.
-|Niet van toepassing|Beschikbaar|Niet van toepassing|Niet van toepassing|Tijdelijke oplossing: verwijder de implementatieopzet Niet van toepassing uit de bovenliggende groep in Intune.
+|Niet van toepassing|Beschikbaar|Niet van toepassing|Niet van toepassing|Tijdelijke oplossing: verwijder de toewijzingsopzet Niet van toepassing uit de bovenliggende groep in Intune.
 |Vereist|Beschikbaar|Vereist en beschikbaar|Vereist|-|
 |Vereist en beschikbaar<sup>1</sup>|Beschikbaar|Vereist en beschikbaar|Vereist en beschikbaar|-|    
 |Vereist|Niet van toepassing|Vereist|Vereist|-|    
 |Vereist en beschikbaar|Niet van toepassing|Vereist en beschikbaar|Vereist en beschikbaar|-|    
 |Vereist|Verwijderen|Vereist|Vereist|-|    
 |Vereist en beschikbaar|Verwijderen|Vereist en beschikbaar|Vereist en beschikbaar|-|
-<sup>1</sup> Voor beheerde iOS Store-apps: wanneer u deze toevoegt aan Intune en implementeert als Vereist, worden ze automatisch gemaakt met zowel de opzet Vereist als de opzet Beschikbaar.
+<sup>1</sup> Alleen voor beheerde iOS Store-apps: wanneer u deze toevoegt aan Intune en toewijst als Vereist, worden ze automatisch gemaakt met zowel de opzet Vereist als Beschikbaar.
 
-U kunt de volgende acties ondernemen om implementatieconflicten te voorkomen:
+U kunt de volgende acties ondernemen om toewijzingsconflicten te voorkomen:
 
-1.    Als u voorheen apps implementeerde naar verwante boven- en onderliggende groepen in Intune, kunt u deze implementaties verwijderen voordat de migratie van uw tenant begint.
-2.    Verwijder de onderliggende groepen uit de bovenliggende groepen, en maak een nieuwe groep die de leden van de voormalige onderliggende groep bevat. Vervolgens kunt u een nieuwe app-implementatie naar deze groep maken.
+1.    Als u voorheen apps toewees aan verwante bovenliggende en onderliggende groepen in Intune, kunt u deze toewijzingen verwijderen voordat de migratie van uw tenant begint.
+2.    Verwijder de onderliggende groepen uit de bovenliggende groepen, en maak een nieuwe groep die de leden van de voormalige onderliggende groep bevat. Vervolgens kunt u een nieuwe app-toewijzing aan deze groep maken.
 Opmerking: als de vorige bovenliggende groep ‘Alle gebruikers’ was, moet u een nieuwe dynamische groep maken die niet de leden van de onderliggende groep bevat.
 Als u wijzigingen wilt aanbrengen in zowel gebruikers- als apparaatgroepen, doet u dat in de [Azure Portal](https://portal.azure.com/). In de [klassieke Azure Portal](https://manage.windowsazure.com/) kunt u alleen wijzigingen aanbrengen in gebruikersgroepen.
 
