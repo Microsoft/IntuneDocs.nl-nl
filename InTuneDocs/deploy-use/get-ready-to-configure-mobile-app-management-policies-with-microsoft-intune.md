@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Ga voor de volledige lijst met ondersteunde Microsoft-apps naar de [galerie met 
 
 ## <a name="prerequisites"></a>Vereisten
 
--   **Een Microsoft Intune-abonnement**. Eindgebruikers hebben [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenties nodig om apps met beveiligingsbeleid voor apps te kunnen downloaden.
-U hebt al een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement als u momenteel [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gebruikt om uw apparaten te beheren. U hebt ook een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement als u een Enterprise Mobility Suite (EMS)-licentie hebt aangeschaft. Als u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uitprobeert om te zien wat de MAM-mogelijkheden zijn, kunt u op de [pagina van Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) een proefaccount aanvragen.
+-   **Een Microsoft Intune-abonnement**. Eindgebruikers hebben Intune-licenties nodig om apps met beveiligingsbeleid voor apps te kunnen downloaden.
+U hebt al een Intune-abonnement als u momenteel Intune gebruikt om uw apparaten te beheren. U hebt ook een Intune-abonnement als u een licentie voor Enterprise Mobility Suite (EMS) hebt aangeschaft. Als u Intune uitprobeert om te zien wat de MAM-mogelijkheden zijn, kunt u op de [pagina van Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) een proefaccount aanvragen.
 
-    Als u wilt controleren of u een [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-abonnement op de Office-portal hebt, gaat u naar de pagina **Facturering**.  Als u een abonnement hebt, moet [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] in het gedeelte met abonnementen zijn gemarkeerd als **Actief**.
+    Als u wilt controleren of u een Intune-abonnement op de Office-portal hebt, gaat u naar de pagina **Facturering**.  Als u een abonnement hebt, moet Intune in het gedeelte met abonnementen zijn gemarkeerd als **Actief**.
 
 -   **Een abonnement op Office 365**. Dit is vereist voor het volgende:
 

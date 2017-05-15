@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -47,7 +48,7 @@ De configuratieopties voor het VPN-profiel zijn afhankelijk van het apparaattype
 Intune ondersteunt het maken van VPN-profielen die gebruikmaken van de volgende verbindingstypen:
 
 
-Type verbinding |iOS en Mac OS X  |Android en Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8,1|Windows 10 Desktop en Mobile |
+Type verbinding |iOS en Mac OS X  |Android en Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop en Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
 Cisco (IPsec)|Yes |Ja   |Nee  |Nee  |Nee | Nee|
@@ -163,7 +164,7 @@ U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger configureren.
 1. Zoek op de pagina voor de configuratie van beleidsregels naar **Regels voor deze VPN-verbinding op aanvraag**. De kolommen krijgen een label **Overeenkomst**, de voorwaarde die de regels controleert en **Actie**, de actie die door het beleid wordt geactiveerd wanneer aan de voorwaarde wordt voldaan.
 2. Kies **Toevoegen** om een regel te maken. Er zijn twee soorten overeenkomsten die u in de regel kunt instellen. U kunt alleen een van de volgende typen per regel configureren.
   - **SSID's**, die verwijzen naar draadloze netwerken.
-  - **DNS domeinen doorzoeken**, die...  U kunt volledige domeinnamen gebruiken, zoals *team. corp.contoso.com*, of domeinen gebruiken als *contoso.com*, het equivalent van het gebruik van **. contoso.com*.
+  - **DNS-zoekdomeinen**: u kunt volledige domeinnamen gebruiken, zoals *team.corp.contoso.com*, of domeinen gebruiken zoals *contoso.com*, het equivalent van het gebruik van *.*.contoso.com*.
 3. Optioneel: geef een URL-testtekenreeks op, een URL die gebruikmaakt van de regel als een test. Als het apparaat waarop dit profiel is geïnstalleerd, in staat is om toegang te krijgen tot deze URL zonder omleiding, wordt de VPN-verbinding tot stand gebracht en maakt het apparaat verbinding met de doel-URL. De gebruiker ziet de tekenreeks testsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
 4. Kies een van de volgende acties:
   - **Verbinden**

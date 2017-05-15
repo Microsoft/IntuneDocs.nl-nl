@@ -1,12 +1,12 @@
 ---
-title: Wat is app-beheer?
+title: Wat is app-beheer? | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: gebruik dit onderwerp voor meer informatie over de basisbeginselen van app-beheer met Microsoft Intune'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -42,10 +43,11 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8,1|Windows 10|
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
 |Apps toevoegen en aan apparaten en gebruikers toewijzen|Yes|Ja|Ja|Ja|
 |Toewijzen van apps aan apparaten die niet zijn geregistreerd met Intune|Ja|Ja|Nee|Nee|
 |Beleidsregels voor app-configuratie gebruiken om het opstartgedrag van apps te beheren|Nee|Ja|Nee|Nee|
+|Gebruik beleid voor de inrichting van mobiele apps om verlopen apps te vernieuwen|Nee|Ja|Nee|Nee|
 |Bedrijfsgegevens in apps beveiligen met app-beveiligingsbeleid|Yes|Ja|Nee|Nee<sup>1</sup>|
 |Alleen zakelijke gegevens verwijderen uit een geïnstalleerde app (App selectief wissen)|Yes|Ja|Ja|Yes|
 |App-toewijzingen controleren|Ja|Ja|Ja|Yes|
@@ -68,7 +70,7 @@ U vindt de meeste dingen die op apps betrekking hebben, in de workload **Mobiele
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
+3. Kies **Mobiele apps** op de blade **Intune**.
 
     ![De workload Mobiele apps](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ U vindt de meeste dingen die op apps betrekking hebben, in de workload **Mobiele
     - [Apps toevoegen](add-apps.md)
     - [Apps toewijzen](deploy-apps.md)
     - [Apps bewaken](monitor-apps.md)
-- **Apps met licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma, weergeven, implementeren en bewaken.
-    - [Windows Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](wsfb-apps.md)
-- **App-configuratiebeleid**: u kunt met app-configuratiebeleid instellingen opgeven die mogelijk vereist zijn wanneer een gebruiker een app uitvoert. Zie voor meer informatie:
+- **App-configuratiebeleid**: hiermee kunt u instellingen opgeven die mogelijk vereist zijn wanneer een gebruiker een app uitvoert. Zie voor meer informatie:
     - [App-configuratiebeleid](app-configuration-policies.md)
-- **App-beveiligingsbeleid**: hiermee kunt u instellingen aan een app koppelen om de bedrijfsgegevens die in de app worden gebruikt, te helpen beveiligen. U kunt bijvoorbeeld de mogelijkheden van een app om met andere apps te communiceren beperken of vereisen dat de gebruiker een pincode voor toegang tot een bedrijfsapp invoert.
+- **App-beveiligingsbeleid**: hiermee kunt u instellingen aan een app koppelen om de bedrijfsgegevens te beveiligen die in de app worden gebruikt. U kunt bijvoorbeeld de mogelijkheden van een app om met andere apps te communiceren beperken of vereisen dat de gebruiker een pincode voor toegang tot een bedrijfsapp invoert.
     - [App-beveiligingsbeleid](app-protection-policies.md)
-- **App selectief wissen**: alleen zakelijke gegevens verwijderen van het gebruikersapparaat dat u selecteert.
+- **App selectief wissen**: alleen zakelijke gegevens verwijderen van een gebruikersapparaat dat u selecteert.
     - [App selectief wissen](app-selective-wipe.md)
+- **iOS-inrichtingsprofiel**: iOS-apps hebben een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app-app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen.
+    - [Inrichtingsprofielen voor iOS-apps](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>Monitor
+- **Apps met licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken.
+    - [Windows Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](wsfb-apps.md)
 - **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd.
 - **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt.
-- **Gebruikersstatus van de app-beveiliging**: hier wordt de status weergegeven van een app-beveiligingsbeleid voor een gebruiker die u selecteert.
+- **Status van de app-beveiliging**: hier wordt de status weergegeven van een app-beveiligingsbeleid voor een gebruiker die u selecteert.
 
 Zie [Apps bewaken](monitor-apps.md) voor meer informatie
 
@@ -98,6 +102,6 @@ Zie [Apps bewaken](monitor-apps.md) voor meer informatie
     - [iOS volume-purchased apps](ios-vpp-apps.md) --->
 - **Windows Store voor Bedrijven**: integratie met Windows Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden. 
     - [Windows Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](wsfb-apps.md)
-- **Aangepaste stijl van de bedrijfsportal**: pas de bedrijfsportal aan de huisstijl van uw bedrijf aan. 
+- **Aangepaste stijl van de bedrijfsportal**: u kunt de bedrijfsportal aanpassen aan de huisstijl van uw bedrijf. 
     - [Bedrijfsportal configureren](company-portal-app.md)
 

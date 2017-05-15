@@ -1,12 +1,12 @@
 ---
-title: Configuratiebeleid van Intune-apps gebruiken
+title: App-configuratiebeleid van Intune gebruiken | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: 'Intune Azure Preview: informatie over het gebruik van het configuratiebeleid voor apps om configuratiegegevens te bieden aan een iOS-app wanneer deze wordt uitgevoerd.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -40,7 +41,7 @@ Als gebruikers deze instellingen niet correct opgeven, kan dit de werkbelasting 
 
 Het configuratiebeleid voor apps kan ervoor zorgen dat deze problemen worden voorkomen doordat u deze instellingen bij gebruikers in een beleid kunt toewijzen voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruikers hoeven geen enkele actie te ondernemen.
 
-U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en implementeert u vervolgens de app. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
+U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en wijst u vervolgens de app toe. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
 
 > [!TIP]
 > Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
@@ -48,7 +49,7 @@ U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats 
 > -   **Beheerde iOS-app uit de App Store**
 > -   **App-pakket voor iOS**
 >
-> Zie [Apps toevoegen aan Microsoft Intune](/intune-azure/manage-apps/add-apps) voor meer informatie over app-installatietypen.
+> Zie [Apps toevoegen aan Microsoft Intune](add-apps.md) voor meer informatie over app-installatietypen.
 
 ## <a name="create-an-app-configuration-policy"></a>Een app-configuratiebeleid maken
 

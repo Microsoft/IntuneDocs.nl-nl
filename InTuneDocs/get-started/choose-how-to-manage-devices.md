@@ -14,10 +14,11 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
-ms.lasthandoff: 12/20/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0ec828e881182dc0e0fb3bae671f0aec58f52aad
+ms.contentlocale: nl-nl
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ Registreer Windows-pc's voor de meeste functionaliteit. De Intune-softwareclient
 - Endpoint Protection en Windows Firewall
 - Hulp op afstand voor gebruikers die de TeamViewer-software gebruiken
 
-Zie [Mogelijkheden voor Mobile Device Management](mobile-device-management-capabilities-in-microsoft-intune.md) en [Mogelijkheden voor de Intune-pc-softwareclient](windows-pc-management-capabilities-in-microsoft-intune.md) voor een gedetailleerd overzicht van de beheermogelijkheden van beide methoden.
+Zie [Beheermogelijkheden voor mobiele apparaten](mobile-device-management-capabilities-in-microsoft-intune.md) en [Windows-pc's beheren met de Intune-pc-clientsoftware](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) voor een gedetailleerd overzicht van de beheermogelijkheden van beide methoden.
 Zie [Ondersteunde mobiele apparaten en computers](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
 
 ## <a name="next-steps"></a>Volgende stappen

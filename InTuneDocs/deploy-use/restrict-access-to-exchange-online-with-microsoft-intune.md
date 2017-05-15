@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ Als u voorwaardelijke toegang wilt configureren, moet u:
 
 - Een **EMS-abonnement (Enterprise Mobility + Security)** of een **Azure AD Premium-abonnement (Azure Active Directory)** hebben. Daarnaast moeten gebruikers een licentie hebben voor EMS of Azure AD. Zie de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/pricing/details/active-directory/) voor meer informatie.
 
--  U kunt eventueel de optionele **Intune-serviceconnector** configureren, waarmee u [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] koppelt aan Exchange Online en u apparaatgegevens kunt beheren via de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-console. U hoeft de connector niet te gebruiken om nalevingsbeleid of beleidsregels voor voorwaardelijke toegang te kunnen gebruiken, maar de connector is wel vereist voor het uitvoeren van rapporten die helpen bij het evalueren van de impact van voorwaardelijke toegang.
+-  U kunt eventueel de optionele **Intune Service to Service Connector** configureren, waarmee u Intune koppelt aan Exchange Online en u apparaatgegevens kunt beheren via de Intune-console. U hoeft de connector niet te gebruiken om nalevingsbeleid of beleidsregels voor voorwaardelijke toegang te kunnen gebruiken, maar de connector is wel vereist voor het uitvoeren van rapporten die helpen bij het evalueren van de impact van voorwaardelijke toegang.
     -  Meer informatie over de [Intune-service-naar-serviceconnector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
@@ -50,21 +51,21 @@ Als u voorwaardelijke toegang wilt configureren, moet u:
 
 Wanneer u beleid voor voorwaardelijke toegang configureert en dat toepast op een gebruiker, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met diens e-mail:
 
--   Het apparaat moet een pc zijn die lid is van een domein of **geregistreerd** zijn bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Het apparaat moet een pc zijn die lid is van een domein of is **geregistreerd** zijn bij Intune.
 
--  Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Dit gebeurt automatisch wanneer het apparaat wordt ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
+-  Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Dit gebeurt automatisch wanneer het apparaat wordt geregistreerd bij Intune. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
 
   De Azure Active Directory Device Registration Service wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in on-premises Active Directory.
 
--   **Zich houden aan** het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nalevingsbeleid dat is geïmplementeerd op het apparaat, of lid zijn van een domein dat is gekoppeld aan een lokaal domein.
+-   **Voldoen** aan het Intune-nalevingsbeleid dat is geïmplementeerd op het apparaat, of lid zijn van een domein dat is gekoppeld aan een lokaal domein.
 
 ### <a name="when-the-device-is-not-compliant"></a>Wanneer het apparaat niet compatibel is
 
 Als niet is voldaan aan een beleid voor voorwaardelijke toegang, wordt het apparaat onmiddellijk in quarantaine geplaatst en ontvangen de gebruikers een e-mailbericht met een van de volgende quarantainemeldingen wanneer ze zich aanmelden:
 
-- Als het apparaat niet is ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] of niet is geregistreerd bij Azure Active Directory, wordt er een bericht weergegeven met instructies over hoe de bedrijfsportal-app moet worden geïnstalleerd, het apparaat moet worden ingeschreven en e-mail moet worden geactiveerd. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het record in Azure Active Directory.
+- Als het apparaat niet is geregistreerd bij Intune of niet is geregistreerd bij Azure Active Directory, verschijnt er een bericht met instructies over het installeren van de bedrijfsportal-app, het registreren van het apparaat en het activeren van e-mail. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan het record in Azure Active Directory.
 
--   Als wordt vastgesteld dat het apparaat niet voldoet aan de regels van het nalevingsbeleid, wordt de gebruiker omgeleid naar de website of app van de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
+-   Als wordt vastgesteld dat het apparaat niet voldoet aan de regels van het nalevingsbeleid, wordt de gebruiker omgeleid naar de website of app van de Intune-bedrijfsportal. Hier vindt de gebruiker informatie over het probleem en aanwijzingen om dit op te lossen.
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>Hoe voorwaardelijke toegang werkt voor Exchange Online
 
@@ -114,7 +115,7 @@ U kunt voorwaardelijke toegang instellen voor pc's waarop Office-bureaubladtoepa
 
   De pc moet lid zijn van een domein of voldoen aan de regels van het nalevingsbeleid.
 
-  De pc moet zijn ingeschreven bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en voldoen aan het beleid, om te worden beschouwd als een apparaat dat het beleid naleeft.
+  De pc moet zijn geregistreerd bij Intune en moet voldoen aan het beleid om te worden beschouwd als een apparaat dat het beleid naleeft.
 
   Voor pc's die lid zijn van een domein, moet u voorwaardelijke toegang zodanig instellen dat de pc's [automatisch worden geregistreerd](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory.
 
@@ -138,11 +139,11 @@ Zorg ervoor dat u nalevingsbeleid [maakt](create-a-device-compliance-policy-in-m
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Stap 2: het effect van het beleid voor voorwaardelijke toegang beoordelen.
 U kunt de **inventarisrapporten voor mobiele apparaten** gebruiken om de apparaten te identificeren waarvoor de toegang tot Exchange mogelijk wordt geblokkeerd nadat u het beleid voor voorwaardelijke toegang hebt geconfigureerd.
 
-Configureer hiervoor een verbinding tussen [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en Exchange met behulp van de [Microsoft Intune-service-naar-serviceconnector](intune-service-to-service-exchange-connector.md).
+Configureer hiervoor een verbinding tussen Intune en Exchange met behulp van de [Microsoft Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 1.  Ga naar **Rapporten** > **Inventarisrapporten voor mobiele apparaten**.
 ![Schermafbeelding van de pagina Inventarisrapporten voor mobiele apparaten](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  Selecteer in de rapportparameters de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-groep die u wilt beoordelen en, indien nodig, de apparaatplatformen waarop het beleid wordt toegepast.
+2.  Selecteer in de rapportparameters de Intune-groep die u wilt beoordelen en, indien nodig, de apparaatplatformen waarop het beleid wordt toegepast.
 3.  Nadat u de criteria hebt geselecteerd die voldoen aan de behoeften van uw organisatie, kiest u **Rapport weergeven**.
 De Rapportviewer wordt geopend in een nieuw venster.
 ![Schermafbeelding van een voorbeeld van een inventarisrapport voor mobiele apparaten](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
     > [!NOTE]
     > Als u geen nalevingsbeleid hebt geïmplementeerd, worden apparaten beschouwd als apparaten die het beleid naleven.
     >
-    > Ongeacht de nalevingsstatus moeten alle gebruikers waarop het beleid van toepassing is, hun apparaten registreren bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+    > Ongeacht de nalevingsstatus moeten alle gebruikers waarop het beleid van toepassing is hun apparaten registreren bij Intune.
 
 3.  Onder **Toegang voor toepassingen** zijn er, voor apps die moderne verificatie gebruiken, twee manieren om te kiezen op welke platforms het beleid moet worden toegepast. Ondersteunde platforms zijn Android, iOS, Windows en Windows Phone.
 
@@ -257,7 +258,7 @@ Alleen de doelgroepen van het voorwaardelijk toegangsbeleid worden beoordeeld.
 
 -   Wanneer een gebruiker een e-mailaccount maakt, wordt het apparaat onmiddellijk geblokkeerd.
 
--   Als een geblokkeerde gebruiker het apparaat inschrijft bij [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] en alle eventuele problemen met het niet-naleven van beleid oplost, wordt de toegangsblokkade voor e-mail binnen twee minuten opgeheven.
+-   Als een geblokkeerde gebruiker het apparaat registreert bij Intune en alle eventuele problemen met het niet-naleven van beleid oplost, wordt de toegangsblokkade voor e-mail binnen twee minuten opgeheven.
 
 -   Als de gebruiker het apparaat uitschrijft, wordt de toegang tot e-mail na circa zes uur geblokkeerd.
 
@@ -267,7 +268,7 @@ Raadpleeg [Voorbeeldscenario's voor het beveiligen van toegang tot e-mail](restr
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Apparaten weergeven die geen toegang hebben tot Exchange
 
-In het [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-dashboard kiest u de tegel **Apparaten zonder toegang tot Exchange** om het aantal geblokkeerde apparaten en koppelingen naar meer informatie weer te geven.
+In het Intune-dashboard kiest u de tegel **Apparaten geblokkeerd voor gebruik in Exchange** om het aantal geblokkeerde apparaten en koppelingen naar meer informatie weer te geven.
 ![Schermafdruk van het Intune-dashboard met het aantal apparaten waarvoor de toegang tot Exchange is geblokkeerd](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Volgende stappen

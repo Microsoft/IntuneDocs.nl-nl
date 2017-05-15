@@ -14,40 +14,26 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0060eb9c912c3a770220c16acde9f4705fa27194
+ms.contentlocale: nl-nl
+ms.lasthandoff: 04/28/2017
 
 
 ---
 
-# <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Windows-pc's beheren met de Intune-pc-clientsoftware
-[Windows-pc's als mobiel apparaat inschrijven](set-up-windows-device-management-with-microsoft-intune.md) is de voorkeursmethode voor het inschrijven van Windows-pc's bij Intune, maar u kunt als IT-beheerder ook Windows-pc's inschrijven en beheren door de Intune-clientsoftware te installeren, zoals in dit onderwerp wordt beschreven. De Intune-softwareclient wordt niet ondersteund bij de inschrijving als mobiel apparaat.
+# <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
-Intune beheert Windows-pc's met beleidsregels op een manier die lijkt op hoe Windows Server Active Directory Domain Services (AD DS) dat met groepsbeleidsobjecten doet. Als u Active Directory-computers die lid zijn van een domein wilt beheren met Intune, [zorgt u ervoor dat het Intune-beleid niet in strijd is met de groepsbeleidsobjecten](resolve-gpo-and-microsoft-intune-policy-conflicts.md) die in uw organisatie van kracht zijn. Meer informatie over [groepsbeleidsobjecten](https://technet.microsoft.com/library/hh147307.aspx).
+Intune biedt voor organisaties een uitgebreide oplossing voor het beheren van mobiele apparaten. Met Intune kunt u Windows-pc's beheren als mobiele apparaten met behulp van de moderne mogelijkheden voor apparaatbeheer die zijn ingebouwd in Windows 10. Als u wilt voldoen aan de beheerbehoeften van uw organisatie, kan Intune ook Windows-pc's beheren als computers met de Intune-softwareclient. Bij deze beheermethode wordt gebruikgemaakt van traditionele mogelijkheden voor computerbeheer uit het oude Windows-besturingssysteem.
 
-## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Beleid en app-implementaties voor de Intune-clientsoftware
+De Intune-softwareclient is het meest geschikt voor Windows-pc's met een ouder besturingssystemen zoals Windows 7, die niet kunnen worden beheerd als mobiele apparaten. De Intune-softwareclient gebruikt beheermogelijkheden zoals Groepsbeleid voor het beheren van pc's vanuit de cloud.
 
-Hoewel de Intune-clientsoftware [beheermogelijkheden ondersteunt die helpen bij de beveiliging van pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md) door het beheer van software-updates, Windows Firewall en Endpoint Protection, kan er geen ander Intune-beleid worden toegepast op pc's die worden beheerd door de Intune-clientsoftware, waaronder **Windows**-beleidsinstellingen die specifiek bedoeld zijn voor Mobile Device Management.
+Intune ondersteunt het beheer van Windows-pc's als computers met behulp van de softwareclient voor maximaal 7.000 pc's. Voor grotere implementaties beheert u pc’s met Windows 10 als mobiele apparaten. Elke release van Intune en elke update van Windows 10 bevat beheerfuncties op basis van de beheerarchitectuur voor mobiele apparaten. Het is raadzaam dat uw organisatie overstapt naar Windows 10 dat wordt beheerd als mobiele apparaten.
 
-Als u de Intune-clientsoftware gebruikt voor het beheer van Windows-pc's, kunt u alleen de beleidsregels gebruiken die worden weergegeven onder de sectie **Computerbeheer**.
-
-  ![Een sjabloon selecteren voor een nieuw Windows pc-beleid](../media/select-template-for-pc-policy.png)
-
-Zie voor gedetailleerde beschrijvingen van de beleidsregels die u kunt instellen:
-
-- [Gebruik beleid voor het beveiligen van Windows-pc's waarop de Intune-clientsoftware wordt uitgevoerd](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
-- [Windows-pc's up-to-date houden met software-updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
-- [Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-Bovendien kunt u tijdens de implementatie van apps alleen de Windows Installer (.exe, .msi) gebruiken.
-
-  ![Selecteer het platform en de locatie voor pc-clientsoftwarebestanden](../media/select-platform-of-software-files-for-pc-agent.png)
 
 > [!NOTE]
-> U kunt apparaten onder Windows 8.1 of hoger beheren als pc's met behulp van de Intune-clientsoftware, of als mobiele apparaten met behulp van de functionaliteit voor beheer van mobiele apparaten (MDM). U kunt beide methoden niet tegelijk gebruiken, dus u moet uw beslissing zorgvuldig overwegen voordat u besluit pc's te beheren met behulp van de Intune-clientsoftware. Dit onderwerp is alleen bedoeld om apparaten als pc's te beheren door het uitvoeren van de Intune-clientsoftware.
+> U kunt apparaten met Windows 8.1 of hoger beheren als pc's met behulp van de Intune-clientsoftware of als mobiele apparaten. U kunt beide methoden op hetzelfde apparaat gebruiken. Maak een zorgvuldige overweging voordat u besluit pc’s te beheren met de Intune-clientsoftware. Dit onderwerp is alleen bedoeld om apparaten als pc's te beheren door het uitvoeren van de Intune-clientsoftware.
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Vereisten voor Intune-pc-clientbeheer
 
@@ -68,31 +54,48 @@ Bovendien kunt u tijdens de implementatie van apps alleen de Windows Installer (
 |Windows Installer 3.1|De computer moet minimaal Windows Installer 3.1 hebben.<br /><br />Zo controleer u welke versie van Windows Installer op een computer is geïnstalleerd:<br /><br />  Klik op de pc met de rechtermuisknop op **%windir%\System32\msiexec.exe** en klik vervolgens op **Eigenschappen**.<br /><br />U kunt de meest recente versie van Windows Installer downloaden van de pagina [Herdistribueerbare Windows Installer-pakketten](http://go.microsoft.com/fwlink/?LinkID=234258) op de Microsoft Developer Network-website.|
 |Niet-compatibele clientsoftware verwijderen|Voordat u de Intune-clientsoftware installeert, moet u de Configuration Manager-, Operations Manager-, Operations Management Suite- en Service Manager-clientsoftware van de pc verwijderen.|
 
+## <a name="deploying-the-intune-software-client"></a>De Intune-softwareclient installeren
+Als Intune-beheerder kunt u op verschillende manieren de Intune-softwareclient beschikbaar stellen aan gebruikers. Zie [De Intune-softwareclient installeren op Windows-pc's](install-the-windows-pc-client-with-microsoft-intune.md) voor meer informatie.
+
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Mogelijkheden voor computerbeheer met de Intune-clientsoftware
+In de meeste gevallen registreert u uw apparaten bij Microsoft Intune, waarmee u over een groter aantal mogelijkheden beschikt. U kunt echter ook pc's beheren met behulp van de Intune-softwareclient, die u de volgende functies biedt:
 
-Nadat de Intune-clientsoftware is geïnstalleerd, zijn dit de beheermogelijkheden:
+-   **[Beheer van software-updates](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: u kunt computers up-to-date houden en bepalen wanneer updates moeten worden toegepast.
 
-- [Toepassingsbeheer](deploy-apps-in-microsoft-intune.md)
+-   **[Windows Firewall-beleid](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)**: hiermee kunt u ervoor zorgen dat geen enkele computer die door uw bedrijf wordt gebruikt, een niet-actieve of niet goed geconfigureerde Windows Firewall heeft.
 
-- [Realtime-controle en Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - Endpoint Protection is hetzelfde als Windows Defender. Endpoint Protection is van toepassing op Windows 7 en Windows 8. Voor Windows 10 en hoger is de productnaam gewijzigd in Windows Defender.
+-   **[Anti-malwarebeveiliging](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
 
-- [Beheer van Windows Firewall-instellingen](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), hard- en software-inventarisatie, extern beheer (via Hulp op afstand-aanvragen)
+-   **[Hulp op afstand](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
 
-- [Instellingen voor software-updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
+-   **[Softwarelicentiebeheer](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)**: hiermee kunt u bijhouden hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
+-   **[App-implementatie](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de softwareclient beheert.
 
-- Instellingen voor naleving rapporteren
+<!-- - **Compliance settings reporting** -->
 
-In de Intune-beheerconsole worden bepaalde secties, zoals "Updates", "Beveiliging" en "Licenties" alleen weergegeven als u apparaten hebt ingeschreven met behulp van de Intune-clientsoftware.
+## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Beleid en app-implementaties voor de Intune-clientsoftware
 
-  ![Beheerconsole-items die alleen voor pc-client worden weergegeven](../media/admin-console-settings-only-for-pc-agent.png)
+Hoewel de Intune-clientsoftware [beheermogelijkheden ondersteunt die helpen bij de beveiliging van pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md) door het beheer van software-updates, Windows Firewall en Endpoint Protection, kan er geen ander Intune-beleid worden toegepast op pc's die worden beheerd door de Intune-clientsoftware, waaronder **Windows**-beleidsinstellingen die specifiek bedoeld zijn voor Mobile Device Management.
 
-U kunt de Intune-beheerconsole ook gebruiken om andere algemene computerbeheertaken uit te voeren op Windows-pc's waarop de client is geïnstalleerd:
+Als u de Intune-clientsoftware gebruikt voor het beheer van Windows-pc's, kunt u alleen de beleidsregels gebruiken die worden weergegeven onder de sectie **Computerbeheer**.
 
--   Informatie over de hardware en software op beheerde computers weergeven
--   Een computer op afstand opnieuw opstarten
--   Een computer buiten gebruik stellen om de clientsoftware te verwijderen en de computer uit Intune-beheer te verwijderen
--   Gebruikers koppelen aan specifieke beheerde computers
--   Reageren op aanvragen voor hulp op afstand
+Intune beheert Windows-pc’s met beleidsregels, vergelijkbaar met de manier waarop Windows Server Active Directory Domain Services (AD DS) dat met groepsbeleidsobjecten doet. Als u Active Directory-computers die lid zijn van een domein wilt beheren met Intune, [zorgt u ervoor dat het Intune-beleid niet in strijd is met de groepsbeleidsobjecten](https://docs.microsoft.com/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) die in uw organisatie worden gebruikt. Zie [Groepsbeleid voor beginners](https://technet.microsoft.com/library/hh147307.aspx) voor meer informatie.
+
+  ![Een sjabloon selecteren voor een nieuw Windows pc-beleid](../media/select-template-for-pc-policy.png)
+
+Tijdens de implementatie van apps kunt u alleen de Windows Installer (.exe, .msi) gebruiken.
+
+  ![Selecteer het platform en de locatie voor pc-clientsoftwarebestanden](../media/select-platform-of-software-files-for-pc-agent.png)
+
+## <a name="common-tasks-for-windows-pcs"></a>Algemene taken voor het Windows-pc 's
+
+U kunt de Intune-beheerconsole gebruiken om andere algemene computerbeheertaken uit te voeren op Windows-pc's waarop de client is geïnstalleerd:
+- [Beleid gebruiken om het beheer van pc's te vereenvoudig](use-policies-to-simplify-windows-pc-management.md): beschrijft de beleidsregels van Intune voor **Computerbeheer** en biedt een overzicht van de instellingen voor het Microsoft Intune Center.
+
+- [Hardware- en software-inventaris weergeven voor Windows-pc's](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md): hierin wordt uitgelegd hoe u een rapport maakt met informatie over de hardwaremogelijkheden van pc's en software die erop is geïnstalleerd. Daarnaast wordt uitgelegd hoe u de pc-inventaris vernieuwt om ervoor te zorgen dat deze actueel is.
+- [Een Windows-pc buiten gebruik stellen](retire-a-windows-pc-with-microsoft-intune.md): een overzicht van de stappen voor het buiten gebruik stellen van een Windows-pc en een beschrijving van wat er gebeurt wanneer u een pc buiten gebruik stelt.
+- [Koppeling tussen gebruiker en apparaat voor Windows-pc's beheren](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): hierin wordt uitgelegd wanneer en hoe u een gebruiker aan een pc koppelt voordat u software naar de gebruiker implementeert.
+- [Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): hierin wordt uitgelegd hoe pc-gebruikers met Intune hulp op afstand van u kunnen krijgen en worden de vereisten een TeamViewer-instellingen beschreven.
 
 Zie [Algemene computerbeheertaken](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) voor meer informatie over de bovenstaande taken.
 
@@ -101,8 +104,11 @@ Zie [Algemene computerbeheertaken](common-windows-pc-management-tasks-with-the-m
 Sommige beheeropties, die kunnen worden gebruikt voor het beheer van pc's als mobiele apparaten, kunnen niet worden gebruikt voor pc's die worden beheerd met de Intune-clientsoftware:
 
 -   Volledig wissen (selectief wissen is beschikbaar)
-
 -   Voorwaardelijke toegang
+
+In de Intune-beheerconsole worden bepaalde secties, zoals **Updates**, **Beveiliging** en **Licenties** alleen weergegeven als u apparaten hebt geregistreerd met behulp van de Intune-clientsoftware.
+
+  ![Beheerconsole-items die alleen voor pc-client worden weergegeven](../media/admin-console-settings-only-for-pc-agent.png)
 
 ## <a name="help-with-troubleshooting"></a>Hulp bij het oplossen van problemen
 

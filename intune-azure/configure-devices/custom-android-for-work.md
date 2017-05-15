@@ -15,23 +15,24 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>In Intune aangepaste profielinstellingen voor apparaten met Android for Work maken
 
-Gebruik het aangepaste Android for Work-configuratiebeleid van Intune om OMA-URI-instellingen te implementeren waarmee u de functies op Android for Work-apparaten kunt beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
+Gebruik het aangepaste Android for Work-configuratiebeleid van Intune om OMA-URI-instellingen toe te wijzen waarmee u de functies op Android for Work-apparaten kunt beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Android-instellingen implementeren die niet met Intune-beleid kunnen worden geconfigureerd. Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
+Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configureren met Intune-beleid. Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit onderwerp om na te gaan welk beleid u kunt configureren.
 
 ## <a name="create-a-custom-profile"></a>Een aangepast profiel maken
 
-1. Volg de instructies in [Aangepaste apparaatinstellingen configureren](/intune-azure/configure-devices/how-to-configure-custom-settings) om aan de slag te gaan.
+1. Volg de instructies in [Aangepaste apparaatinstellingen configureren](how-to-configure-custom-settings.md) om aan de slag te gaan.
 2. Klik op de blade **Aangepaste OMA-URI-instellingen** op **Toevoegen** om een nieuwe instelling toe te voegen.
 3. Configureer op de blade **Rij toevoegen** het volgende:
     - **Naam**: voer een unieke naam in voor de aangepaste instellingen voor Android for Work waarmee u deze gemakkelijk kunt herkennen in de Intune-portal.

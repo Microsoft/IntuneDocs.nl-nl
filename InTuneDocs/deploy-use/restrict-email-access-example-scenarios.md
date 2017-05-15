@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Scenario 1: de toegang tot Exchange Online blokkeren voor gebruikers met een apparaat dat niet voldoet aan het beleid.
 ### <a name="scenario-requirements"></a>Scenariovereisten
 - Voor alle gebruikers in de Azure Active Directory-beveiligingsgroep **Accounting** moet de toegang tot Exchange Online worden geblokkeerd als hun apparaat niet voldoet aan het door u geïmplementeerde nalevingsbeleid.
-- Als de groep gebruikers bevat van wie het apparaat niet door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] wordt ondersteund, mogen zij via dat apparaat geen toegang krijgen tot Exchange Online.
+- Als de groep gebruikers bevat van wie het apparaat niet door Intune wordt ondersteund, mogen zij via dat apparaat geen toegang krijgen tot Exchange Online.
 - Bovendien moeten alle gebruikers in de Azure Active Directory-beveiligingsgroep **Finance** worden uitgesloten van het beleid, zelfs als ze zich ook in de beveiligingsgroep **Accounting** bevinden.
 
 U doet dit door een beleid voor voorwaardelijke toegang voor Exchange Online te configureren met de volgende instellingen:
@@ -68,7 +70,7 @@ U gebruikt de volgende stroom om te bepalen welke apparaten toegang krijgen tot 
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>Scenario 3: Android-apparaten krijgen geen toegang tot Exchange On-premises
 ### <a name="scenario-requirements"></a>Scenariovereisten
 - Voor alle Android-apparaten moet de toegang tot Exchange worden geblokkeerd.
-- Alle andere ondersteunde apparaten kunnen wel toegang krijgen tot Exchange op voorwaarde dat ze worden beheerd door [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Alle andere ondersteunde apparaten kunnen wel toegang krijgen tot Exchange op voorwaarde dat ze worden beheerd door Intune.
 
 U doet dit door een beleid voor voorwaardelijke toegang voor Exchange On-premises te configureren met de volgende instellingen:
 
@@ -82,9 +84,4 @@ U doet dit door een beleid voor voorwaardelijke toegang voor Exchange On-premise
 U gebruikt de volgende stroom om te bepalen welke apparaten toegang krijgen tot Exchange:
 
 ![Diagram met werkstroom voor toegang tot apparaten](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
