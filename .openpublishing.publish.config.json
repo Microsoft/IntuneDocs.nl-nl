@@ -1,4 +1,4 @@
-{
+﻿{
   "build_entry_point": "docs",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
@@ -51,7 +51,7 @@
     ""
   ],
   "branches_to_filter": [
-    "master-oldev"
+    "master-oldev", "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs.nl-nl",
   "git_repository_branch_open_to_public_contributors": "live",
