@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 1702b049dd1826e93be153234d2f629f770502c5
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: c3f1d42d5998e70982bc279ef99560c486412daf
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -29,6 +30,10 @@ ms.lasthandoff: 03/13/2017
 # <a name="using-your-android-device-with-intune"></a>Met behulp van een Android-apparaat met Intune
 
 Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te maken. Hier volgt een lijst met de meest voorkomende zaken die u mogelijk gevraagd wordt te doen door uw bedrijf.
+
+## <a name="supported-versions"></a>Ondersteunde versies
+
+Intune ondersteunt momenteel Android 4.0 en hoger. Dit omvat apparaten met Samsung KNOX 4.0 en hoger.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 
