@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
-ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
-ms.lasthandoff: 03/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,10 @@ ms.lasthandoff: 03/02/2017
 # <a name="using-your-ios-or-macos-device-with-intune"></a>Uw iOS- of Mac OS-apparaat gebruiken met Intune
 
 Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te maken. Hier volgt een lijst met de meest voorkomende zaken die u mogelijk gevraagd wordt te doen door uw bedrijf.
+
+## <a name="supported-versions"></a>Ondersteunde versies
+
+Intune ondersteunt momenteel Android 8.0 en hoger. Daarnaast wordt macOS 10.9 Mavericks 10.9 of hoger ondersteund. 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 
@@ -40,6 +45,7 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 
 - [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 - [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 - [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md)

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>Uw Windows-apparaat gebruiken met Intune
 
 Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te maken. Hier volgt een lijst met de meest voorkomende zaken die u mogelijk gevraagd wordt te doen door uw bedrijf.
+
+## <a name="supported-versions"></a>Ondersteunde versies
+
+Intune ondersteunt momenteel de volgende Windows-versies.
+
+* Windows 10 (de versies Home, Pro, Education en Enterprise)
+* Windows Phone 8.1 en hoger
+* Windows RT 8.1
+* Windows 8.1
+
+Er zijn nog enkele andere versies van Windows, zoals [Windows 10 Holographic](https://www.microsoft.com/hololens), die ook door Intune worden ondersteund. Deze worden hier niet vermeld omdat ze zijn bedoeld voor zeer specifieke gebruikstoepassingen.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 
