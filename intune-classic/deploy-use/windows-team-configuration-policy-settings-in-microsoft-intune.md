@@ -14,9 +14,11 @@ ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 136f83a7340424b420e4a487a0758992a802ece3
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 24a64db3a3cf97b679ab0fa739eb6f452499ca63
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -40,10 +42,5 @@ Gebruik het **algemene configuratiebeleid voor Windows 10 Team** om instellingen
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-
-<!--HONumber=Dec16_HO5-->
 
 

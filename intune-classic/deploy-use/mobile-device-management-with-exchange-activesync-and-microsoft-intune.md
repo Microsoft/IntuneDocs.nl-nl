@@ -14,9 +14,11 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: b9e6d1def269bc80d54f259bc8b7c12dbb520e06
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -48,9 +50,4 @@ De Intune-console kan worden gebruikt voor het beheren van [EAS-beleidsinstellin
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>Bedrijfsgegevens van mobiele apparaten wissen
 Ten slotte kunt u [bedrijfsgegevens van door EAS beheerde mobiele apparaten wissen](wipe-for-exchange-managed-mobile-devices.md) wanneer deze apparaten niet langer in gebruik zijn, of zijn gestolen of verloren.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -14,9 +14,11 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
-ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ U kunt ook de waarde **WHITELIST** gebruiken om een lijst met apps op te geven d
   1.    Kies onder **OMA-URI-instellingen** de optie **Toevoegen**.
   2.    Geef een naam op voor de instelling.
   3.    Geef voor **Gegevenstype** de optie **Tekenreeks** op.
-  4.    Geef voor **OMA-URI** deze tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/Mode**, waarbij *Naam* de naam is van het VPN-profiel dat u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/Mode**, waarbij *Naam* de naam is van het VPN-profiel dat u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    Geef bij **Waarde** **BLACKLIST** of **WHITELIST** op.
 
 
@@ -78,9 +80,4 @@ U moet *beide* beleidsregels naar *dezelfde* Intune-groepen implementeren.
     -   **Als u het dialoogvenster wilt sluiten zonder het beleid te implementeren**, kiest u **Annuleren**.
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Er wordt ook een statusoverzicht weergegeven in de werkruimte **Dashboard**.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

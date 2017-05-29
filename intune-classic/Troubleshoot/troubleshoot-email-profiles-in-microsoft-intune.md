@@ -2,8 +2,8 @@
 title: Problemen met e-mailprofielen oplossen | Microsoft Docs
 description: Problemen met e-mailprofielen en hoe u deze kunt oplossen.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 0387fa91628c5f786d9289df309b82bd17cf6447
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -72,9 +74,4 @@ Controleer de configuratie van uw EAS-profiel voor Samsung KNOX en het bronbelei
 
 ## <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
