@@ -14,10 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -91,7 +92,7 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende rapporten voor hulp bij de compatibiliteitsstatus van het app-beveiligingsbeleid:
 
-![Schermopname&4;](../media/MAM-reporting-7.png)
+![Schermopname 4](../media/MAM-reporting-7.png)
 
 -   **Gebruikersrapport over app-beveiliging:** biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
 
@@ -107,7 +108,7 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
         -   Alle apps zijn ingecheckt, maar er wordt geen app-beveiligingsbeleid op toegepast.
 
-![Schermopname&2;](../media/MAM-reporting-4.png)
+![Schermopname 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabelgroepering
 
@@ -124,11 +125,11 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
 1. Kies in de blade Intune Mobile Application Management de optie App-beveiligingsrapport.
 
-    ![Schermopname&6;](../media/app-protection-report-csv-2.png)
+    ![Schermopname 6](../media/app-protection-report-csv-2.png)
 
 2. Kies Ja om uw rapport op te slaan, kies vervolgens Opslaan als en selecteer de map waarin u het rapport wilt opslaan.
 
-    ![Schermopname&7;](../media/app-protection-report-csv-1.png)
+    ![Schermopname 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)

@@ -14,9 +14,11 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8a3e8634769b05e6639f7efb6394b7333d998f06
-ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6e935d74cbf75e18b9316741442dcfda16ead2e6
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -93,9 +95,4 @@ Wisverzoeken die nog in behandeling zijn, worden weergegeven totdat u ze handmat
 [App-gegevens beschermen met beleid voor het beheren van mobiele apps ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [De Azure-portal gebruiken](azure-portal-for-microsoft-intune-mam-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

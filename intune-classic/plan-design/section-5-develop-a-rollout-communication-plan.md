@@ -14,9 +14,11 @@ ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 96127663a794a0c433cedbe7ef5269d65724c3fe
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 959b1a02fe86a3b8f2aacb31483f942b51e30aab
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -81,9 +83,4 @@ Nadat is vastgesteld wat wordt gecommuniceerd en welke methode daarvoor wordt ge
 ## <a name="next-section"></a>Volgende sectie
 
 De volgende sectie bevat richtlijnen over [het ontwikkelen van een ondersteuningsplan](section-6-develop-a-support-plan.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
