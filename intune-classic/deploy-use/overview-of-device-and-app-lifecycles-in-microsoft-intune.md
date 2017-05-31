@@ -14,9 +14,11 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: c2e4087790cc6fe7025f2b3b634ba115f13a7856
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: da14fe58510f54e099ae6aeb2e9f656b9f68a470
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -32,9 +34,4 @@ Hoewel de behoeften van individuele organisaties mogelijk verschillen, zijn er b
 Voor beheerdoeleinden hebben alle apparaten een levenscyclus. De levenscyclus start wanneer u het apparaat registreert en eindigt wanneer het apparaat buiten gebruik wordt gesteld. In [Levenscyclus van apparaatbeheer](overview-of-device-lifecycle-in-microsoft-intune.md) wordt uitgelegd hoe u het apparaat registreert, hoe u het apparaat configureert en beveiligt en hoe u het apparaat onttrekt aan het beheer.
 
 Apps die u gebruikt, hebben hun eigen [app-levenscyclus](overview-of-app-lifecycle-in-microsoft-intune.md), met stappen die variëren van het toevoegen van een app aan Intune, tot het verwijderen van de app wanneer deze niet meer nodig is.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

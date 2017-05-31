@@ -14,9 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 35c0d56a91d8bd13ed35d54dc6964403832c5ab8
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 8e82c36c768db98c2a5797aa0b05545125eebd67
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -36,9 +38,4 @@ Kies een van de volgende onderwerpen om te lezen hoe u gelicentieerde apps uit e
 
 - [iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 - [Apps beheren die via het volume-aankoopprogramma in de Windows Store voor Bedrijven zijn gekocht](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

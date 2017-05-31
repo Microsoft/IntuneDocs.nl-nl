@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
-1.  Open de Windows-app **Instellingen** door naar het **Startmenu** te gaan en selecteer de knop **Instellingen**. U kunt ook zoeken naar 'instellingen' in de zoekbalk.
+> [!NOTE]
+> Windows 10 werkt voor alle typen apparaten. Of u nu een desktop, een telefoon of een tablet gebruikt, de te volgen stappen zijn dezelfde, ook al zien ze er iets anders uit dan de afbeeldingen op deze pagina.
 
-2. Selecteer **Accounts**.
+1.  Ga naar **Start**.
+
+  - Ga op een **Windows 10-desktop** naar het **startmenu**.
+  - Ga op een **mobiel Windows 10-apparaat** naar het **startscherm** en swipe naar de lijst **Alle apps**.
+
+2. Open de app **Instellingen** door in het zoekvak te zoeken op 'instellingen'.
+
+3. Selecteer **Accounts**.
 
     ![Ga naar Instellingen en Accounts](./media/W10-enroll-1-settings-accounts.png)
 
-3. Selecteer **Uw account**.
+4. Selecteer **Uw account**.
 
     ![Selecteer uw account](./media/W10-enroll-2-accounts-your-account.png)
 
-4. Selecteer **Een account voor werk of school toevoegen**.
+5. Selecteer **Een account voor werk of school toevoegen**.
 
     ![Selecteer een account voor werk of school toevoegen](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. Meld u aan met de referenties van uw werk- of schoolaccount.
+6. Meld u aan met de referenties van uw werk- of schoolaccount.
 
     ![Hier](./media/W10-enroll-4-sign-in.png)
 

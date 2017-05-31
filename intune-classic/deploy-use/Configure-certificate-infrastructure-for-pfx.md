@@ -2,8 +2,8 @@
 title: De certificaatinfrastructuur configureren voor PFX | Microsoft Docs
 description: .PFX-certificaatprofielen maken en implementeren.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d2e3d25111c35bff814923f4824a1c8bda3677ec
+ms.contentlocale: nl-nl
+ms.lasthandoff: 05/23/2017
 
 
 
@@ -157,9 +159,4 @@ De certificaatconnector downloaden, installeren en configureren.
 
 ### <a name="next-steps"></a>Volgende stappen
 U bent nu klaar om certificaatprofielen te configureren, zoals beschreven in [Certificaatprofielen configureren](Configure-Intune-certificate-profiles.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
