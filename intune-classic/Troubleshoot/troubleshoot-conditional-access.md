@@ -127,7 +127,7 @@ Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Vi
 
 #### <a name="locating-sync-logs"></a>Zoeken naar synchronisatielogboeken
 
--    Vind een volledige synchronisatie in de logboeken door te zoeken naar **volledige synchronisatie**. Het begin van een volledige synchronisatie wordt aangegeven door deze tekst:
+-    Vind een volledige synchronisatie in de logboeken door te zoeken naar **full sync**. Het begin van een volledige synchronisatie wordt aangegeven door deze tekst:
 
     Handling command: Getting the mobile device list without a time filter (full sync) for <number> users (Opdracht wordt verwerkt: de lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor (aantal) gebruikers wordt opgehaald)
 
@@ -135,7 +135,7 @@ Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Vi
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (De lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor 4 gebruikers kon worden opgehaald. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--    Vind een snelle (delta-)synchronisatie in de logboeken door te zoeken naar **snelle synchronisatie**.
+-    Vind een snelle (delta-)synchronisatie in de logboeken door te zoeken naar **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Uitzonderingen in de opdracht Get next
 Controleer de logboeken van de Exchange Connector op uitzonderingen in de **opdracht Get next** en verstrek deze aan Microsoft Ondersteuning.
