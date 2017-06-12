@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] In dit onderwerp wordt de gebruikerservaring voor apps met app-beveiligingsbeleid beschreven. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, dus wanneer u apps gebruikt met uw werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]In dit onderwerp wordt de gebruikerservaring voor apps met app-beveiligingsbeleid beschreven. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, dus wanneer u apps gebruikt met uw werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
 ##  <a name="accessing-apps"></a>Apps openen
 
 Als het apparaat **niet is ingeschreven bij Intune**, wordt de eindgebruiker gevraagd de app opnieuw te starten wanneer die de eerste keer wordt gebruikt.  Er moet opnieuw worden opgestart zodat het app-beveiligingsbeleid kan worden toegepast op de app. In de volgende schermafbeelding wordt dit weergegeven met de Skype-app:
