@@ -1,5 +1,5 @@
 ---
-title: Apparaatregistratie inschakelen | Microsoft Docs
+title: Apparaatinschrijving inschakelen
 description: MDM-instantie instellen en registratie inschakelen voor iOS, Windows-, Android- en Mac-apparaten.
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 76d6000c87843d1a785cd1027eb927f565784ca2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ Als u beheer van mobiele apparaten met Intune wilt instellen, moet u eerst de *i
 
 2. Klik in het dialoogvenster MDM-instantie op **Ja**.
 
-    ![Beheerconsole. MDM instellen op Intune](./media/mdmAuthority.png)
+    ![Beheerconsole. MDM instellen op Intune](../media/intune-mdm-authority.png)
 
 ## <a name="choose-how-to-enroll-devices"></a>Kiezen hoe u apparaten registreert
 

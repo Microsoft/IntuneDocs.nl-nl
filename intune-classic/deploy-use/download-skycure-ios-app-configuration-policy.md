@@ -1,5 +1,5 @@
 ---
-title: Het configuratiebeleid voor de iOS-app voor Skycure downloaden | Microsoft Docs
+title: Het configuratiebeleid voor de iOS-app voor Skycure downloaden
 description: "Download het configuratiebeleid voor de iOS-app voor Skycure dat moet worden gebruikt met de iOS-app voor Skycure die voor de eindgebruikers is geïmplementeerd."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8e46960a5d469093052148eb457140b3c235d3a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3159985bfbaec40899dd58766e214daa672ee6d4
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

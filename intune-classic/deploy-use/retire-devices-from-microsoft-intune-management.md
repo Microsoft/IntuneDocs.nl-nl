@@ -1,5 +1,5 @@
 ---
-title: Apparaten buiten gebruik stellen | Microsoft Docs
+title: Apparaten buiten gebruik stellen
 description: Intune biedt ondersteuning voor selectief wissen en volledig wissen waarmee apparaten uit het Intune-beheer kunnen worden verwijderd door hun beleid en de bedrijfsportal te verwijderen.
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Apparaten worden nooit uit Intune verwijderd zonder uw tussenkomst, zelfs als de
 
 Er kunnen verschillende redenen zijn voor het buiten gebruik stellen van een apparaat:
 
--    Een gebruiker verlaat een bedrijf op de geplande wijze ('beheerd' vertrek)
--    Een gebruiker vertrekt abrupt (wordt ontslagen, neemt ontslag, etc.).
--    Verlies van apparaat
--    Een apparaat opnieuw inzetten (aan een andere gebruiker geven, voor een nieuw doel inzetten, enz.)
+-   Een gebruiker verlaat een bedrijf op de geplande wijze ('beheerd' vertrek)
+-   Een gebruiker vertrekt abrupt (wordt ontslagen, neemt ontslag, etc.).
+-   Verlies van apparaat
+-   Een apparaat opnieuw inzetten (aan een andere gebruiker geven, voor een nieuw doel inzetten, enz.)
 
 U kunt apparaten die worden beheerd als mobiele apparaten selectief wissen of volledig wissen, of de apparaten vergrendelen en het wachtwoord wijzigen. Als u het apparaat wist, komt het abonnement van de gebruiker vrij en kan het op een ander apparaat worden gebruikt. U kunt ook pc’s buiten gebruik stellen die worden beheerd met de Intune-clientsoftware.
 

@@ -1,5 +1,5 @@
 ---
-title: Configuratie van e-mail op mobiele apparaten vereenvoudigen | Microsoft Docs
+title: Configuratie van e-mail op mobiele apparaten vereenvoudigen
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Zo ja, laat Microsoft Intune dan automatisch de e-mail voor uw medewerkers op hu
 Nadat het e-mailprofiel is geconfigureerd, kunt u gemakkelijk de toegang tot bedrijfse-mail en Office 365-services beperken met de Intune-beleidsregels voor voorwaardelijke toegang. Deze beleidsregels geven u de mogelijkheid ervoor te zorgen dat toegang tot uw bedrijfse-mail en Office 365-services wordt beperkt tot apparaten die de regels naleven die u in Intune hebt ingesteld.
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.    Automatisch [ e-mailprofielen van eindgebruikers configureren](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) op Windows-, iOS en Android-apparaten.
-2.    [De toegang tot bedrijfse-mail beheren](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) met behulp van beleid voor voorwaardelijke toegang.
+1.  Automatisch [ e-mailprofielen van eindgebruikers configureren](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) op Windows-, iOS en Android-apparaten.
+2.  [De toegang tot bedrijfse-mail beheren](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) met behulp van beleid voor voorwaardelijke toegang.
 
 
 ### <a name="additional-information"></a>Extra informatie:

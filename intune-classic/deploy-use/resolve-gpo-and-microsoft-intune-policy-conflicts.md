@@ -1,5 +1,5 @@
 ---
-title: Conflicten tussen GPO-beleid en Intune-beleid oplossen | Microsoft Docs
+title: Conflicten tussen GPO-beleid en Intune-beleid oplossen
 description: Informatie over het oplossen van conflicten tussen het groepsbeleid en de beleidsregels voor de Intune-configuratie.
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Conflicten tussen GPO-beleid (groepsbeleidsobjecten) en Microsoft Intune-beleid oplossen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune maakt gebruik van beleidsregels voor het beheren van instellingen op Windows-pc’s. U kunt bijvoorbeeld een beleidsregel gebruiken om instellingen voor de Windows Firewall op pc’s te beheren. Veel Intune-instellingen zijn vergelijkbaar met instellingen die u configureert met Windows-groepsbeleid. De twee methoden kunnen echter van tijd tot tijd met elkaar conflicteren.
 
 Wanneer er conflicten optreden, heeft groepsbeleid op domeinniveau voorrang ten opzichte van Intune-beleid, tenzij de pc niet bij het domein kan worden aangemeld. In dit geval wordt Intune-beleid toegepast op de client-pc.

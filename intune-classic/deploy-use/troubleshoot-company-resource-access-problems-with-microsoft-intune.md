@@ -1,5 +1,5 @@
 ---
-title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Docs
+title: Problemen bij toegang tot bedrijfsbronnen oplossen
 description: In dit onderwerp vindt u fout- en statuscodes die u kunt gebruiken bij het oplossen van problemen met de toegang tot bedrijfsresources.
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9956d92c5d1b294c4ccf04ebecd15cdb59794c90
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e440864e76e1b64e65b185606fe65bc9cb94c545
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

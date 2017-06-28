@@ -1,5 +1,5 @@
 ---
-title: Instellingen voor beveiligingsbeleid van mobiele apparaten | Microsoft Docs
+title: Instellingen voor beveiligingsbeleid voor mobiele apparaten
 description: Gebruik Intune voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie.
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 95adade7940e99768feb8e4cf50eca1401a46dd6
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 15b56f822557d80d0088467099c5c1232848bf82
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 

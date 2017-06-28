@@ -1,5 +1,5 @@
 ---
-title: Exchange-toegangsregels voor mobiele apparaten | Microsoft Docs
+title: Exchange-toegangsregels voor mobiele apparaten
 description: Exchange ActiveSync-toegangsregels voor het toestaan of blokkeren van apparaatverbindingen met EAS
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a57b1f51fabfdc8896ecbb5bfbe6422f40672b18
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

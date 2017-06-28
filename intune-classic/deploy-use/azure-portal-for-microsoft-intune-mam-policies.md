@@ -1,5 +1,5 @@
 ---
-title: Azure-portal voor MAM-beleid | Microsoft Docs
+title: Azure-portal voor MAM-beleid
 description: Beleid maken voor het beheren van mobiele apps in de Azure Portal. De beleidsregels die u hier maakt kunnen worden toegepast op apparaten met of zonder inschrijving bij Intune.
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 00328885d7fb5e75ffe894326591c0225f4b07ab
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

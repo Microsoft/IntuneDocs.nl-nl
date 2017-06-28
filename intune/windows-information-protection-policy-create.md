@@ -1,12 +1,12 @@
 ---
-title: Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
+title: Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
+titleSuffix: Intune on Azure
 description: Beveiligingsinstelling voor de beveiliging van apps voor WIP maken en implementeren met Intune
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca8e309653aa43292c7bd1ae1cb72cbb282d37dc
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Vanaf versie Intune 1704 kunt u beveiligingsinstellingen voor de beveiliging van apps met Windows 10 maken in Mobile Application Management (MAM) zonder implementatiescenario’s.
 
@@ -52,7 +52,7 @@ Hier worden enkele concepten besproken voor het toevoegen van een WIP-beleid.
 
 U moet de MAM-provider configureren voordat u een beveiligingsbeleid voor WIP-apps kunt maken.
 
--   Meer informatie over [de configuratie van uw MAM-provider met Intune](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md).
+-   Meer informatie over [de configuratie van uw MAM-provider met Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 U moet bovendien beschikken over het volgende:
 
