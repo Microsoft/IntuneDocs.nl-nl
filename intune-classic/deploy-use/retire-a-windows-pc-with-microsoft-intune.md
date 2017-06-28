@@ -1,5 +1,5 @@
 ---
-title: Een Windows-pc buiten gebruik stellen | Microsoft Docs
+title: Een Windows-pc buiten gebruik stellen
 description: Een Windows-pc buiten gebruik stellen die wordt beheerd door Intune.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Een Windows-pc buiten gebruik stellen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Gebruik de volgende stappen voor het buiten gebruik stellen van desktops die u als pc's beheert door er de Intune-softwareclient op uit te voeren. Wanneer u een pc buiten gebruik stelt, wordt deze uit Intune-beheer verwijderd. U kunt een pc niet vanuit Intune terugzetten naar de oorspronkelijke fabrieksinstellingen.
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de pc bevat die u buiten gebruik wilt stellen).

@@ -1,5 +1,5 @@
 ---
-title: Apparaten registreren | Microsoft Docs
+title: Apparaten inschrijven
 description: Mobile Device Management (MDM) maakt gebruik van inschrijving om apparaten onder beheer te brengen en toegang tot resources toe te staan.
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e724e648dc8e768f11e51103a050665a60ffcb1a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -43,40 +43,40 @@ De volgende tabel bevat de registratiemethoden van Intune en de ondersteunde mog
 
 **iOS-registratiemethoden**
 
-| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details** |
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |    Nee | [Meer informatie](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nee |Nee |Nee    | [Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    Ja |    Optioneel |    Optioneel|[Meer informatie](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    Yes |    Optioneel |    Nee| [Meer informatie](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**|    Nee |    Nee    | Nee|[Meer informatie](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  | [Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Yes |   Optioneel |  Nee| [Meer informatie](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| Nee |    Nee  | Nee|[Meer informatie](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows-registratiemethoden**
 
-| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |    Nee | [Meer informatie](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-registratiemethoden**
 
-| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |    Nee | [Meer informatie](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android for Work-registratiemethoden**
 
-| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |    Nee | [Meer informatie](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nee |Nee |Nee    |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS-registratiemethoden**
 
-| **Methode** |    **Wissen vereist?** |    **Affiniteit**    |    **Vergrendelen** | **Details**|
+| **Methode** |  **Wissen vereist?** |    **Affiniteit**    |   **Vergrendelen** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |    Nee | [Meer informatie](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](prerequisites-for-enrollment.md)|
 
 
 Zie [Kiezen hoe u apparaten registreert](/intune-classic/get-started/choose-how-to-enroll-devices1) voor een reeks vragen die u helpen de juiste methode te vinden.
@@ -94,15 +94,15 @@ Het apparaatregistratiebeheer is een speciaal Intune-account voor registratie en
 
 ### <a name="dep"></a>DEP
 Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
-  -    Vergrendelde registratie
-  -    Kioskmodus en andere geavanceerde configuraties en beperkingen
+  - Vergrendelde registratie
+  - Kioskmodus en andere geavanceerde configuraties en beperkingen
 
 Meer informatie over [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 IT-beheerders gebruiken Apple Configurator, via USB, om elk apparaat van het bedrijf handmatig voor te bereiden voor registratie met behulp van Configuratieassistent. De IT-beheerder maakt een registratiebeleid en exporteert het beleid naar Apple Configurator. Wanneer gebruikers hun apparaat ontvangen, wordt hun gevraagd om Configuratieassistent uit te voeren om het apparaat in te schrijven. Deze methode ondersteunt de modus **iOS onder supervisie** die zorgt voor:
-  -    Vergrendelde registratie
-  -    Kioskmodus en andere geavanceerde configuraties en beperkingen
+  - Vergrendelde registratie
+  - Kioskmodus en andere geavanceerde configuraties en beperkingen
 
 Meer informatie over [Setup Assistant enrollment with Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) (Registratie met Configuratieassistent met Apple Configurator). ([Terug naar de tabel](#overview-of-device-enrollment-methods))
 
@@ -131,5 +131,5 @@ Met Intune kunnen de volgende apparaatplatformen worden beheerd:
 ## <a name="next-steps"></a>Volgende stappen
 - [Vereisten voor apparaatregistratie](prerequisites-for-enrollment.md)
 - [Apparaten in bedrijfseigendom beheren](manage-corporate-owned-devices.md)
-- [Ondersteunde mobiele apparaten en computers](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
+- [Ondersteunde mobiele apparaten en computers](/intune/supported-devices-browsers#intune-supported-devices)
 

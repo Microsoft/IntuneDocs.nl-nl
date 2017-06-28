@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 ## <a name="mam-basics"></a>Basisinformatie over MAM
 
 
-**Wat is MAM?** [Intune Mobile Application Management](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) verwijst naar de suite met Intune-beheerfuncties waarmee u mobiele apps voor uw gebruikers kunt publiceren, pushen, configureren, beveiligen, controleren en bijwerken.
+**Wat is MAM?** [Intune Mobile Application Management](/intune/app-lifecycle) verwijst naar de suite met Intune-beheerfuncties waarmee u mobiele apps voor uw gebruikers kunt publiceren, pushen, configureren, beveiligen, controleren en bijwerken.
 
 **Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM-WE kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
@@ -50,12 +50,12 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps die u kunt beheren met beleidsregels voor de beveiliging van apps
 
-**Welke apps kunnen worden beheerd door beleidsregels voor de beveiliging van apps?** Alle apps met de functionaliteit van de [Intune App SDK](../develop/intune-app-sdk.md) of die zijn ingepakt met de [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
+**Welke apps kunnen worden beheerd door beleidsregels voor de beveiliging van apps?** Alle apps met de functionaliteit van de [Intune App SDK](/intune/app-sdk) of die zijn ingepakt met de [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
 **Wat zijn de basisvereisten voor het gebruik van beleidsregels voor de beveiliging van apps die geschikt zijn voor Intune?**
-  1. De eindgebruiker moet een AAD-account (Azure Active Directory) hebben. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) voor informatie over het maken van Intune-gebruikers in Azure Active Directory.
+  1. De eindgebruiker moet een AAD-account (Azure Active Directory) hebben. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](/intune/users-permissions-add) voor informatie over het maken van Intune-gebruikers in Azure Active Directory.
 
-  2. Er moet een licentie voor Microsoft Intune Azure aan het Azure Active Directory-account van de eindgebruiker zijn toegewezen. Zie [Intune-licenties beheren](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) voor informatie over het toewijzen van Intune-licenties aan eindgebruikers.
+  2. Er moet een licentie voor Microsoft Intune Azure aan het Azure Active Directory-account van de eindgebruiker zijn toegewezen. Zie [Intune-licenties beheren](/intune/licenses-assign) voor informatie over het toewijzen van Intune-licenties aan eindgebruikers.
 
   3. De eindgebruiker moet behoren tot een beveiligingsgroep waarop een beleidsregel voor de beveiliging van apps is gericht. Dezelfde beleidsregel voor de beveiliging van apps moet ook zijn gericht op de specifieke app die wordt gebruikt. Beleidsregels voor de beveiliging van apps kunnen worden gemaakt en geïmplementeerd in de Intune-console in [Azure Portal](http://portal.azure.com). Beveiligingsgroepen kunnen op dit moment worden gemaakt in de [Office-portal](http://portal.office.com).
 

@@ -1,5 +1,5 @@
 ---
-title: Koppeling tussen gebruiker en apparaat voor Windows-pc&quot;s beheren | Microsoft Docs
+title: Koppeling tussen gebruiker en apparaat voor Windows-pc&quot;s beheren
 description: Een gebruiker aan een Windows-pc koppelen die wordt beheerd door Intune.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44edcb211852224e9e9e9a82dd2d097d84b49b74
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9641c40229be52066a97389584e55f2f95bc286d
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Koppeling tussen gebruiker en apparaat voor Windows-pc's beheren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. 
 
 Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aan een pc koppelen. U kunt een gebruiker aan meerdere pc's koppelen, maar elke pc kan aan slechts één gebruiker worden gekoppeld. Gebruikers worden automatisch gekoppeld aan pc's die ze registreren bij Intune met behulp van de bedrijfsportal.

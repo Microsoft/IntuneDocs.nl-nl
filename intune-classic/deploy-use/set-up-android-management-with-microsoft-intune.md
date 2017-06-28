@@ -1,5 +1,5 @@
 ---
-title: Android-beheer instellen | Microsoft Docs
+title: Android-beheer instellen
 description: Schakel het beheer van mobiele apparaten (MDM) in voor Android- en KNOX Standard-apparaten met Microsoft Intune.
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Standaard kunnen Android-apparaten worden ingeschreven in Intune. Meld u bij de 
     Zie [Uw Android-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) voor instructies voor inschrijving van eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
 
     Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
-  - [Bronnen over de eindgebruikerservaring in Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [Bronnen over de eindgebruikerservaring in Microsoft Intune](/intune/end-user-educate)
   - [Richtlijnen voor eindgebruikers van Android-apparaten](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Vanwege de afwezigheid van Google Play Store in China kunnen Android-apparaten de bedrijfsportal alleen verkrijgen via Chinese app-marktplaatsen. De bedrijfsportal-app voor Android kan nu worden gedownload via de volgende stores:

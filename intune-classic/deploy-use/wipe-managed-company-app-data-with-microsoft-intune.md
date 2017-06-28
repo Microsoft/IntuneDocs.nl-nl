@@ -1,5 +1,5 @@
 ---
-title: Bedrijfsgegevens van beheerde apps wissen | Microsoft Docs
+title: Bedrijfsgegevens van beheerde apps wissen
 description: Informatie over het op afstand selectief verwijderen van bedrijfsgegevens.
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6e935d74cbf75e18b9316741442dcfda16ead2e6
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7025bdd5d89e52f1c99f9cd834232daf324f3285
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
