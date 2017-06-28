@@ -1,5 +1,5 @@
 ---
-title: Hulp op afstand voor Windows-pc&quot;s aanvragen en bieden | Microsoft Docs
+title: Hulp op afstand voor Windows-pc&quot;s aanvragen en bieden
 description: Hierin worden de stappen voor eindgebruikers en IT-beheerders beschreven om hulp op afstand te bieden voor Windows-desktops die worden beheerd als pc&quot;s en om een pc op afstand te starten.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Hulp op afstand voor Windows-pc's aanvragen en bieden
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient.
 

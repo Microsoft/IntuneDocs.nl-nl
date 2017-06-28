@@ -1,95 +1,110 @@
-# Inleiding
-## [Wat is de preview-versie van Azure-portal?](what-is-intune.md)
-## [Wat is Intune for Education?](/intune-classic/understand-explore/introduction-to-intune-education?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+# [Inleiding](introduction-intune.md)
+## [Wat is Azure Portal?](what-is-intune.md)
+## [Wat is Intune for Education?](introduction-intune-education.md)
 ## [Intune-functies in Azure](ui-changes.md)
-## Aan de slag
-<!---(get-started.md) --->
-### [Registreren voor een gratis proefversie](free-trial-sign-up.md)
+## [Registreren voor een gratis proefversie](free-trial-sign-up.md)
 ## [Wat is er nieuw?](whats-new.md)
+### [Wat is er nieuw in de gebruikersinterface van de app?](whats-new-app-ui.md)
+### [Archief van Wat is er nieuw? (Azure Portal)](whats-new-archive.md)
+### [Archief van Wat is er nieuw? (klassieke portal)](whats-new-archive-classic.md)
+
+<!--## High-level architecture-->
+
+## [Levenscycli van apparaten en apps](introduction-device-app-lifecycles.md)
+### [Levenscyclus van apparaten](device-lifecycle.md)
+### [Levenscyclus van apps](app-lifecycle.md)
+## [Algemene scenario's](common-scenarios.md)
 ## [Bekende problemen](known-issues.md)
 ## [Ondersteuning krijgen](get-support.md)
-<!---
+## [Beschrijving van de Intune-service](microsoft-intune-service-description.md)
 
-## [Related resources](related-resources.md)
-
-## [Get started](plan-and-design/get-started.md) --->
-
-# Plannen en ontwerpen
-
-## [Implementatie plannen, ontwerpen en uitvoeren](/intune-classic/plan-design/introduction?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 1: Doelen en uitdagingen voor de implementatie bepalen](/intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 2: Use-casescenario's bepalen](/intune-classic/plan-design/section-2-identify-use-case-scenarios?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 3: Use-casescenariovereisten bepalen](/intune-classic/plan-design/section-3-determine-use-case-requirements?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 4: Een rollout-plan ontwikkelen](/intune-classic/plan-design/section-4-develop-a-rollout-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 5: Een communicatieplan ontwikkelen](/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 6: Een ondersteuningsplan ontwikkelen](/intune-classic/plan-design/section-6-develop-a-support-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 7: Een Intune-ontwerp maken](/intune-classic/plan-design/section-7-create-an-intune-design?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 8: Intune-implementatie](/intune-classic/plan-design/section-8-onboarding-process?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Sectie 9: Testen en valideren](/intune-classic/plan-design/section-9-test-and-validation?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Extra resources](/intune-classic/plan-design/additional-resources?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-
-## [Migreren](/intune-classic/plan-design/intune-mdm-migration-guide?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Fase 1: Intune voorbereiden voor MDM](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Basisinstallatie](/intune-classic/plan-design/migration-phase1-basic-setup?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Beheerbeleid voor apparaten en apps configureren](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Beveiligingsbeleid voor apps configureren](/intune-classic/plan-design/migration-phase1-configure-app-protection-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Speciale overwegingen bij migratie](/intune-classic/plan-design/migration-phase1-special-migration-considerations?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Fase 2: Migratiecampagne](/intune-classic/plan-design/migration-phase2-migration-campaign?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Communicatieplanning](/intune-classic/plan-design/migration-phase2-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Ingebruikname stimuleren](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Normale migratiecyclus](/intune-classic/plan-design/migration-phase2-typical-migration-cycle?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+<!--# Get started
+## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
+## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
+## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
 
 
-# Apparaten inschrijven
-## [Wat is apparaatinschrijving?](device-enrollment.md)
-## Aan de slag
+# Implementatie van abonnementen
+## [Planningshandleiding](planning-guide.md)
+### [Doelstellingen bepalen](planning-guide-deployment-goals.md)
+### [Scenario's identificeren](planning-guide-scenarios.md)
+### [Vereisten bepalen](planning-guide-requirements.md)
+### [Een implementatieplan ontwikkelen](planning-guide-rollout-plan.md)
+### [Een communicatieplan ontwikkelen](planning-guide-communication-plan.md)
+### [Een ondersteuningsplan ontwikkelen](planning-guide-support-plan.md)
+### [Ontwerpen](planning-guide-design.md)
+### [Implementeren](planning-guide-onboarding.md)
+### [Testen en valideren](planning-guide-test-validation.md)
+### [Extra resources](planning-guide-resources.md)
+<!-- ## Scenario implementation guides
+### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
+### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
+### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
+### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
+### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune/toc.json) -->
+## [Migratiehandleiding](migration-guide.md)
+### [Intune voorbereiden](migration-guide-prepare.md)
+#### [Basisconfiguratie](migration-guide-setup.md)
+#### [Beheerbeleid voor apparaten en apps configureren](migration-guide-configure-policies.md)
+#### [Beveiligingsbeleid voor apps configureren](migration-guide-app-protection-policies.md)
+#### [Overwegingen bij migratie](migration-guide-considerations.md)
+### [Migratiecampagne](migration-guide-campaign.md)
+#### [De communicatie plannen](migration-guide-communication-plan.md)
+#### [Ingebruikname stimuleren](migration-guide-drive-adoption.md)
+#### [Normale migratiecyclus](migration-guide-cycle.md)
+
+
+# Procedures
+
+## [Intune instellen](setup-steps.md)
+### [Vereisten](supported-devices-browsers.md)
+#### [Gebruik van netwerkbandbreedte](network-bandwidth-use.md)
+### [Aanmelden bij Intune](account-sign-up.md)
+### [Domeinen configureren](custom-domain-name-configure.md)
+### [Gebruikers toevoegen](users-permissions-add.md)
+### [Licenties toewijzen](licenses-assign.md)       
+### [Bedrijfsportal aanpassen](company-portal-customize.md)     
 ### [MDM-instantie instellen](mdm-authority-set.md)
-## Plannen en ontwerpen
-### [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md)
-### [Kiezen hoe u iOS-apparaten registreert](enrollment-method-choose-ios.md)
-## Procedures
-### [Licenties aan gebruikers toewijzen](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Android-apparaten inschrijven](android-enroll.md)
-### Android-apparaten inschrijven
-#### [Apple Configurator - Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
-#### [Apple Configurator - directe inschrijving](apple-configurator-direct-enroll-ios.md)
-#### [Apple Configurator-serienummers toevoegen](apple-configurator-serial-numbers-add.md)
-#### [DEP](device-enrollment-program-enroll-ios.md)
-### [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)
-### [macOS-apparaten inschrijven](macos-enroll.md)
-### [Windows-apparaten inschrijven](windows-enroll.md)
-### [Windows-apparaten inschrijven via een bulkbewerking](windows-bulk-enroll.md)
-### Apparaatinschrijving beheren
-#### [Voorwaarden maken](terms-and-conditions-create.md)
-#### [Inschrijvingsbeperkingen instellen](enrollment-restrictions-set.md)
-#### [Apparaten toewijzen aan groepen](device-group-mapping.md)
+
+## [Apparaten inschrijven](device-enrollment.md)
+### Vereisten
+#### [Voorwaarden instellen](terms-and-conditions-create.md)
+#### [Beperkingen instellen](enrollment-restrictions-set.md)
+#### [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md)
 #### [Zakelijke id’s toevoegen](corporate-identifiers-add.md)
-#### [Windows Hello voor Bedrijven gebruiken](windows-hello.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+#### [Apparaatinschrijvingsmanager instellen](device-enrollment-manager-enroll.md)
+#### [Apparaten toewijzen aan groepen](device-group-mapping.md)
+### [Windows-inschrijving instellen](windows-enroll.md)
+#### [Automatisch inschrijven](windows-enroll.md)
+#### [Bulkregistratie](windows-bulk-enroll.md)
+### [Android-inschrijving instellen](android-enroll.md)
+### iOS-inschrijving instellen
+#### [Met het Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+#### [Met Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Met Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [macOS-inschrijving instellen](macos-enroll.md)
+### [Gebruikers onderwijzen](end-user-educate.md)
 
-# Apparaten en groepen
-## [Wat is apparaatbeheer?](device-management.md)
-<!--- ## [Get started](get-started.md) --->
-<!--- ## [Plan and design](plan-and-design.md) --->
-## Procedures
-### [Volledig of selectief wissen gebruiken](devices-wipe.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+## [Apparaten beheren](device-management.md)
+### [Apparaat wissen](devices-wipe.md)
+### [Activeringsvergrendeling overslaan](device-activation-lock-bypass.md)
+### [Fabrieksinstellingen terugzetten](device-factory-reset.md)
+### [Nieuwe start van Windows beheren](device-fresh-start.md)
+### [Verloren iOS-apparaat zoeken](device-locate.md)
+### [Modus Apparaat verloren voor iOS inschakelen](device-lost-mode.md)
+### [Apparaat vergrendelen](device-remote-lock.md)
+### [Bedrijfsgegevens verwijderen](device-company-data-remove.md)
+### [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
+### [Apparaat opnieuw opstarten](device-restart.md)
+### [Beheer op afstand voor Android](device-profile-android-teamviewer.md)
+### [Inventaris van mobiele apparaten controleren](device-inventory.md)
 
-# Gebruikers beheren
-## [Wat is gebruikersbeheer?](user-management.md)
-<!--- Was What is users & group management--->
-## [Aan de slag](groups-get-started.md)
-## [Gebruikers helpen](help-desk-operators.md)
-<!--- ## [Plan and design](plan-and-design.md) --->
+## [Gebruikers beheren](user-management.md)
+### [Aan de slag met groepen](groups-get-started.md)
+<!--### Add and delete users -->
 
-<!--- ## [Troubleshoot](troubleshooting.md) --->
-
-# Apps beheren
-## [Wat is app-beheer?](app-management.md)
-## [Wat zijn beleidsregels voor de beveiliging van apps?](app-protection-policy.md)
-<!--- ## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## Apps beheren
+## [Apps beheren](app-management.md)
 ### [Apps toevoegen](apps-add.md)
 #### [Android Store-apps](store-apps-android.md)
 #### [Android LOB-apps](lob-apps-android.md)
@@ -103,43 +118,36 @@
 #### [Android for Work-apps](apps-add-android-for-work.md)
 ### [Apps toewijzen](apps-deploy.md)
 ### [Apps bewaken](apps-monitor.md)
-### [Configuratieprofielen voor apps gebruiken](app-configuration-policies.md)
+### [Configuratieprofielen voor iOS-apps](app-configuration-policies-use-ios.md)
+### [Configuratieprofielen voor Android-apps](app-configuration-policies-use-android.md)
 ### [Inrichtingsprofielen voor iOS-apps gebruiken](app-provisioning-profile-ios.md)
 ### [Selectief wissen van apps](apps-selective-wipe.md)
-<!---Is this specific to app protection policy or more general app management?--->
-### [Werken met apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps.md)
+### [Werken met apps en boeken die zijn gekocht via het volume-aankoopprogramma](vpp-apps.md)
 #### [iOS VPP-apps](vpp-apps-ios.md)
 #### [Windows Store voor Bedrijven-apps](windows-store-for-business.md)
+#### [iOS eBooks](vpp-ebooks-ios.md)
 ### [De bedrijfsportal-app configureren](company-portal-app.md)
-## Beveiligingsbeleid voor apps gebruiken
-### [Beveiligingsbeleid voor apps maken en implementeren](app-protection-policies.md)
+### [Managed Browser configureren](app-configuration-managed-browser.md)
+## [Beleidsregels voor de beveiliging van apps gebruiken](app-protection-policies.md)
 ### [Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps](app-protection-policies-configure-windows-10.md)
 ### [Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen](windows-information-protection-policy-create.md)
 ### [Android-instellingen](app-protection-policy-settings-android.md)
 ### [iOS-instellingen](app-protection-policy-settings-ios.md)
 ### [Beveiligingsbeleid voor apps valideren](app-protection-policies-validate.md)
 ### [Gebruikersstatus voor app-beveiliging bewaken](app-protection-policies-monitor.md)
+### [Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps](app-protection-policies-configure-windows-10.md)
+### [Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen](windows-information-protection-policy-create.md)
 ### [Gegevensoverdracht tussen iOS-apps beheren](data-transfer-between-apps-manage-ios.md)
-### [Android-apps met beveiligingsbeleid](app-protection-enabled-apps-android.md)
-### [iOS-apps met beveiligingsbeleid](app-protection-enabled-apps-ios.md)
 
-
-<!--- ##  [Troubleshoot apps](troubleshooting.md) --->
-
-# Apparaten configureren
-## [Wat zijn apparaatprofielen?](device-profiles.md)
-<!---## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## Procedures
+## [Apparaten configureren](device-profiles.md)
 ### [Apparaatprofielen configureren](device-profile-create.md)
-
 ### [Apparaatfuncties configureren](device-features-configure.md)
 #### [AirPrint voor iOS en MacOS](air-print-settings-ios-macos.md)
 #### [AirPlay voor iOS](airplay-settings-ios.md)
 #### [Indeling van het startscherm voor iOS](home-screen-settings-ios.md)
 #### [App-meldingen voor iOS](app-notification-settings-ios.md)
 #### [Gedeelde apparaten voor iOS](shared-device-settings-ios.md)
-
+#### [Filterinstellingen voor webinhoud in iOS](web-content-filter-settings-ios.md)
 ### [Apparaatbeperkingen configureren](device-restrictions-configure.md)
 #### [Android](device-restrictions-android.md)
 #### [iOS](device-restrictions-ios.md)
@@ -149,13 +157,11 @@
 #### [Windows 10](device-restrictions-windows-10.md)
 #### [Windows 10 Team](device-restrictions-windows-10-teams.md)
 #### [Android for Work](device-restrictions-android-for-work.md)
-
 ### [E-mailinstellingen configureren](email-settings-configure.md)
 #### [Android](email-settings-android.md)
 #### [iOS](email-settings-ios.md)
 #### [Windows Phone 8.1](email-settings-windows-phone-8-1.md)
 #### [Windows 10](email-settings-windows-10.md)
-
 ### [VPN-instellingen configureren](vpn-settings-configure.md)
 #### [Android](vpn-settings-android.md)
 #### [iOS](vpn-settings-ios.md)
@@ -163,13 +169,11 @@
 #### [Windows 8.1](vpn-settings-windows-8-1.md)
 #### [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
 #### [Windows 10](vpn-settings-windows-10.md)
-
 ### [Wi-Fi-instellingen configureren](wi-fi-settings-configure.md)
 #### [Android](wi-fi-settings-android.md)
 #### [iOS](wi-fi-settings-ios.md)
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 en Windows 10](wi-fi-settings-import-windows-8-1.md)
-
 ### [Instellingen voor editie-upgrades voor Windows 10 configureren](edition-upgrade-configure-windows-10.md)
 ### [Instellingen voor Windows 10 Education configureren](education-settings-configure.md)
 ### [Opleidingsinstellingen voor iOS configureren](education-settings-configure-ios.md)
@@ -177,53 +181,102 @@
 ### [Certificaten configureren](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
-
 ### [Instellingen voor Windows Information Protection configureren](windows-information-protection-configure.md)
-<!--- ### [Configure iOS education settings](education-settings-for-ios.md) --->
+### [Profielen toewijzen](device-profile-assign.md)
+### [Profielen controleren](device-profile-monitor.md)
+### [Problemen met profielen oplossen](device-profile-troubleshoot.md)
 
-### [Aangepaste instellingen configureren](custom-settings-configure.md)
-#### [Android](custom-settings-android.md)
-##### [Wi-Fi-profiel met een vooraf gedeelde sleutel](wi-fi-profile-shared-key.md)
-##### [VPN-profiel per app](android-pulse-secure-per-app-vpn.md)
-##### [Apps voor Samsung KNOX Standard toestaan/blokkeren](samsung-knox-apps-allow-block.md)
-#### [iOS](custom-settings-ios.md)
-#### [macOS](custom settings-macos.md)
-#### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
-#### [Windows 10](custom-settings-windows-10.md)
-#### [Android for Work](custom-settings-android-for-work.md)
-
-### [Apparaatprofielen toewijzen](device-profile-assign.md)
-### [Apparaatprofielen bewaken](device-profile-monitor.md)
-### [Een Telecom Expense Management-service instellen](telecom-expenses-monitor.md)
-## [Problemen oplossen](device-profile-troubleshoot.md)
-
-# Apparaatcompatibiliteit instellen
-## [Wat is apparaatcompatibiliteit?](device-compliance.md)
-## [Aan de slag](device-compliance-get-started.md)
-## Procedures
-### [Nalevingsbeleid voor Android maken](compliance-policy-create-android.md)
-### [Nalevingsbeleid voor Android for Work maken](compliance-policy-create-android-for-work.md)
-### [Nalevingsbeleid voor iOS maken](compliance-policy-create-ios.md)
-### [Nalevingsbeleid voor Windows maken](compliance-policy-create-windows.md)
-<!---### [Create Actions for noncompliance](actions-for-noncompliance.md)--->
+## [Apparaatcompatibiliteit instellen](device-compliance.md)
+### [Vereisten](device-compliance-get-started.md)
+### [Android-beleid maken](compliance-policy-create-android.md)
+### [Android for Work-beleid maken](compliance-policy-create-android-for-work.md)
+### [iOS-beleid maken](compliance-policy-create-ios.md)
+### [Windows-beleid maken](compliance-policy-create-windows.md)
+<!--### Create Actions for noncompliance-->
 ### [Apparaatcompatibiliteit bewaken](compliance-policy-monitor.md)
-<!--- ### [Monitor device compliance](device-compliance-monitor.md)--->
 
-
-
-# Voorwaardelijke toegang
-## [Wat is voorwaardelijke toegang?](conditional-access.md)
-## Procedures
+## [Voorwaardelijke toegang instellen](conditional-access.md)
+### [Gebruikelijke manieren om voorwaardelijke toegang te gebruiken](conditional-access-intune-common-ways-use.md)
+### [Voorwaardelijke toegang op basis van apps](app-based-conditional-access-intune.md)
 ### [Exchange On-Premises Connector installeren](exchange-connector-install.md)
 ### [Maken en toewijzen van beleid voor voorwaardelijke toegang](conditional-access-exchange-create.md)
+### [Beleid voor voorwaardelijke toegang op basis van apps instellen voor Exchange Online](app-based-conditional-access-intune-exchange-online-create.md)
+### [Beleid voor voorwaardelijke toegang op basis van apps instellen voor SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [ADAL en Intune](app-modern-authentication-block.md)
 ### [Naleving van voorwaardelijke toegang bewaken](conditional-access-exchange-monitor.md)
 
-# Toegangsbeheer
-## [Wat is op rollen gebaseerd toegangsbeheer?](role-based-access-control.md)
+## Gegevens en apparaten beschermen
+
+### [Mobile Threat Defense](mobile-threat-defense.md)
+
+#### [Lookout instellen](lookout-mobile-threat-defense-connector.md)
+##### [Integratie van Lookout en Intune](lookout-mtd-subscription-setup.md)
+##### [Lookout in Intune inschakelen](lookout-mtd-connector-enable.md)
+##### [Apps implementeren die moeten worden gebruikt met Lookout](lookout-for-work-app-configure-deploy.md)
+##### [Nalevingsbeleid voor Lookout-apparaten](lookout-device-compliance-policy-create.md)
+
+#### [Skycure instellen](skycure-mobile-threat-defense-connector.md)
+##### [Azure AD SSO-configureren](skycure-azure-sso-configure.md)
+##### [Beleid voor de configuratie van iOS-apps downloaden](skycure-ios-app-configuration-policy-download.md)
+##### [Apps toevoegen en configureren](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
+##### [Apps implementeren die moeten worden gebruikt met Skycure](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
+##### [Integratie van Skycure en Intune](skycure-mtd-connector-integration.md)
+##### [Skycure in Intune inschakelen](skycure-mtd-connector-enable.md)
+##### [Nalevingsbeleid voor Skycure-apparaten](skycure-device-compliance-policy-create.md)
+
+### [Windows Hello instellen](windows-hello.md)        
+<!-- ### Protect devices with remote actions        -->
+
+## [Rollen beheren](role-based-access-control.md)
+<!-- ### Create a custom role
+### Assign a role -->
+### [De rol van helpdeskmedewerker gebruiken](help-desk-operators.md)
+<!-- ### Custom role settings -->
+
+## [Pc's beheren met softwareagent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [De pc-client installeren](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
+### [Algemene beheertaken voor pc's](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
+#### [Pc-beleid](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
+#### [Inventaris weergeven](/intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Pc's buiten gebruik stellen](/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json)
+#### [Pc's aan gebruikers koppelen](/intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+#### [Hulp op afstand](/intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Beleid voor het beveiligen van Windows-pc's](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Software-updates](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json)
+#### [Windows Firewall](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json)
+#### [Endpoint Protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json)
+### [Apps toevoegen voor Intune-client-pc's](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Licentieovereenkomsten beheren](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
+### [Beleidsconflicten oplossen](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
+
+
+# Bewaken en problemen oplossen
+## [Telecomkosten controleren](telecom-expenses-monitor.md)
+
 
 # Ontwikkelen en aanpassen
-## [Intune App Wrapping Tool](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [App Wrapping Tool voor iOS](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [App Wrapping Tool voor Android](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-## [Intune App SDK](/intune-classic/develop/intune-app-sdk?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Aangepaste apparaatinstellingen configureren](custom-settings-configure.md)
+### [Android](custom-settings-android.md)
+#### [Wi-Fi-profiel met een vooraf gedeelde sleutel](wi-fi-profile-shared-key.md)
+#### [VPN-profiel per app](android-pulse-secure-per-app-vpn.md)
+#### [Apps voor Samsung KNOX Standard toestaan/blokkeren](samsung-knox-apps-allow-block.md)
+### [iOS](custom-settings-ios.md)
+### [macOS](custom-settings-macos.md)
+### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
+### [Windows 10](custom-settings-windows-10.md)
+### [Android for Work](custom-settings-android-for-work.md)
+## [LOB-apps voorbereiden voor MAM](apps-prepare-mobile-application-management.md)
+### [App Wrapping Tool voor iOS](app-wrapper-prepare-ios.md)
+### [App Wrapping Tool voor Android](app-wrapper-prepare-android.md)
+## [Windows-apps sideloaden](app-sideload-windows.md)
+## [Intune App SDK](app-sdk.md)
+### [Aan de slag met Intune App SDK](app-sdk-get-started.md)
+### [SDK voor Intune-apps voor iOS](app-sdk-ios.md)
+### [SDK voor Intune-apps voor Android](app-sdk-android.md)
+### [Cordova-invoegtoepassing voor Intune App SDK](app-sdk-cordova.md)
+### [Xamarin-onderdeel voor Intune App SDK](app-sdk-xamarin.md)
+## [Het gebruik van Intune Graph API 's](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+
+
+# [Verklarende woordenlijst](intune-glossary.md)

@@ -1,5 +1,5 @@
 ﻿---
-title: Apps toevoegen voor geregistreerde apparaten | Microsoft Docs
+title: Apps toevoegen voor ingeschreven apparaten
 description: Voordat u een app kunt implementeren, moet u deze toevoegen aan Intune. De app is dan beschikbaar in de Intune-console waar u de app kunt implementeren en beheren.
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 87d8af0c3e014a6c8bcf2cda72bc6815143c34a9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

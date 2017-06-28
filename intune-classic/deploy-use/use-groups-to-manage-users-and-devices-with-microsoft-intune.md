@@ -1,5 +1,5 @@
 ---
-title: Groepen gebruiken om gebruikers en apparaten te beheren | Microsoft Docs
+title: Groepen gebruiken voor het beheren van gebruikers en apparaten
 description: Groepen maken en beheren met behulp van de werkruimte Groepen.
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ In gefilterde groepsweergaven kunt u op basis van de rol van de beheerder aanpas
 -   U wilt dat uw IT-beheerders alleen items kunnen implementeren voor specifieke gebruikers en apparaten.
 -   U wilt dat uw IT-beheerders alleen de groepen kunnen zien die relevant zijn voor die beheerder.
 
-U kunt gefilterde groepsweergaven voor servicebeheerders configureren in de Intune-beheerconsole. Zie [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune) voor meer informatie.
+U kunt gefilterde groepsweergaven voor servicebeheerders configureren in de Intune-beheerconsole. Zie [Wat u moet weten voordat u met Microsoft Intune aan de slag gaat](/intune/supported-devices-browsers) voor meer informatie.
 
 Wanneer u gefilterde groepsweergaven voor een servicebeheerder hebt ingesteld en de beheerder vervolgens software of beleid implementeert of rapporten uitvoert, kan de beheerder alleen de door u opgegeven groepen weergeven en selecteren. De beheerder ziet ook geen statusinformatie op deze pagina's van de beheerconsole:
 

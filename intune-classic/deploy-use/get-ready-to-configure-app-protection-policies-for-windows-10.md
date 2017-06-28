@@ -1,5 +1,5 @@
 ---
-title: Aan de slag met de configuratie van beveiligingsbeleid voor apps in Windows 10 | Microsoft Docs
+title: Aan de slag met de configuratie van beveiligingsbeleid voor apps in Windows 10
 description: MAM-provider (mobile application management) instellen in Azure AD
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c48f9181e8fd740ab080a8620f3873909d0fd0f1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5f159ead358807872b5099bb9c670f372eed401e
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

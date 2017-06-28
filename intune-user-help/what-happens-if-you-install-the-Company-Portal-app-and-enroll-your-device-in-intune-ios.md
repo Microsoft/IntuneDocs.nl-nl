@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1727e8b8fcb248a66842f34e7084c5d461f3eb10
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -67,5 +67,5 @@ Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelinge
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](https://portal.manage.microsoft.com).
 

@@ -1,5 +1,5 @@
 ---
-title: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps | Microsoft Docs
+title: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps
 description: U kunt Intune gebruiken om de gegevens van uw organisatie te beveiligen met behulp van Mobile Application Management-beleid (MAM), waarmee u kunt voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps of andere Line-Of-Business-apps (LOB).
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Wilt u uw eindgebruikers toegang geven tot de gegevens van uw Office 365- en LOB
 Zo ja, dan kunt u met Microsoft Intune MAM-beleid instellen voor mobiele Office 365-apps op iOS en Android, zoals onder andere het instellen van beperkingen voor knippen/kopiëren/plakken, of u kunt voorkomen dat 'opslaan als' kan worden gebruikt, u kunt vereisten voor pincodes instellen en instellen dat het mogelijk is om op afstand door MAM beveiligde gegevens te wissen.  Zo worden bedrijfsgegevens beveiligd zonder dat gebruikers hun apparaten hoeven te registreren bij een MDM-oplossing, terwijl tegelijkertijd eindgebruikers van een geweldige ervaring met mobiele Office-apps kunnen blijven profiteren.
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.    Basiskennis over het beheer van mobiele Intune-toepassingen [how Intune mobile application management /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.
-2.    Onderzoek [wat u moet doen voordat u MAM-beleid kunt maken](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in de Azure-portal.
-3.    Met Intune [MAM-beleid maken en implementeren](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
+1.  Probeer te begrijpen hoe [Intune Mobile Application Management (MAM)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) op een elementair niveau werkt.
+2.  Onderzoek [wat u moet doen voordat u MAM-beleid kunt maken](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in de Azure-portal.
+3.  Met Intune [MAM-beleid maken en implementeren](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
 
 ### <a name="additional-information"></a>Extra informatie:
 - [Ervaring van eindgebruikers](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) die apps gebruiken die geschikt zijn voor MAM.
-- [Met Intune LOB-apps voorbereiden voor MAM](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Met Intune LOB-apps voorbereiden voor MAM](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Lijst met Microsoft Intune-toepassingen van partners &rarr;</a> die apps met MAM-functionaliteit bieden.
 
 ## <a name="what-should-i-do-next"></a>Wat is de volgende stap die ik moet nemen?

@@ -1,5 +1,5 @@
 ---
-title: Mobiele apps naar uw gebruikers publiceren | Microsoft Docs
+title: Mobiele apps naar uw gebruikers publiceren
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fea0f98051d1a13a2ace178fe440520f495aaa68
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,9 +35,9 @@ Wilt u dat uw gebruikers snel toegang hebben tot de apps die ze nodig hebben om 
 Zo ja, dan kunt u met Microsoft Intune apps (Office Mobile, interne Line-Of-Business-apps of andere mobiele en bureaublad-apps) op één algemene portal publiceren: de [bedrijfsportal-app of bedrijfsportalwebsite van Intune](/intune-user-help/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Hoe kan ik dat doen?
-1.    [Apparaten registreren](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) voor Mobile Device Management.
-2.    [Apps aan Intune toevoegen](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) die u wilt implementeren op geregistreerde apparaten.
-3.    [Met behulp van Intune apps implementeren](/intune-classic/deploy-use/deploy-apps) op geregistreerde apparaten.
+1.  [Apparaten registreren](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) voor Mobile Device Management.
+2.  [Apps aan Intune toevoegen](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) die u wilt implementeren op geregistreerde apparaten.
+3.  [Met behulp van Intune apps implementeren](/intune-classic/deploy-use/deploy-apps) op geregistreerde apparaten.
 
 ### <a name="additional-information"></a>Extra informatie:
 Als Mobiel Office-apps zijn gepubliceerd met de bedoeling de MAM-mogelijkheden van Intune te gebruiken om de beveiliging tegen gegevensverlies van deze apps te beheren, moet aan elk MAM-beleid dat aan een eindgebruiker is toegewezen, een [gebruikerslicentie voor Office 365 worden toegewezen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).

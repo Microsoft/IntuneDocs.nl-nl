@@ -18,10 +18,10 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -38,7 +38,7 @@ Uw bedrijf IT-afdeling kan informatie zien die relevant is voor het werk, maar n
 U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
 - Door de bedrijfsportal-app op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren.
-- Hiervoor gaat u naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) die uw IT-beheerder heeft ingesteld.
+- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) die uw IT-beheerder heeft ingesteld.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Wat is het verschil tussen de app en de website?
 Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Taken die u kunt uitvoeren:
@@ -100,5 +100,5 @@ Microsoft raadt u aan eerst te proberen uw probleem zelf te verhelpen. Er is een
 - [Veelvoorkomende problemen met uw iOS-apparaat oplossen](troubleshoot-your-device-ios.md)
 - [Veelvoorkomende problemen met uw Windows-apparaat oplossen](troubleshoot-your-device-windows.md)
 
-U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met uw IT-beheerder voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met uw IT-beheerder voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 

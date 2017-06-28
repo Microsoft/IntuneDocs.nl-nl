@@ -1,5 +1,5 @@
 ---
-title: Beleid gebruiken om het beheer van Windows-pc&quot;s te vereenvoudigen | Microsoft Docs
+title: Beleid gebruiken om het beheer van Windows-pc&quot;s te vereenvoudigen
 description: Hierin worden het beheerbeleid voor Windows-pc&quot;s en de instellingen voor Microsoft Intune Center beschreven.
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Beleid gebruiken om het beheer van Windows-pc's te vereenvoudigen
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Als u Windows-desktops als pc's wilt beheren, door daarop de Intune-softwareclient uit te voeren, kunt u alleen gebruikmaken van de beleidsregels onder het **Computerbeheer**-beleid in de Intune-beheerconsole. Alle in de beheerconsole vermelde beleidsregels gelden alleen voor mobiele apparaten. Met het **Computerbeheer**-beleid kunt u de instellingen configureren in Microsoft Intune Center, de updates naar pc's beheren en Windows Firewall voor pc's configureren.
 

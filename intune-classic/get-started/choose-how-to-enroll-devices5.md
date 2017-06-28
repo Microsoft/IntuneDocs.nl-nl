@@ -1,5 +1,5 @@
 ---
-title: Kiezen hoe u mobiele apparaten registreert |Microsoft Docs
+title: Kiezen hoe u mobiele apparaten registreert
 description: Bepalen hoe u mobiele apparaten in Intune kunt registreren door enkele eenvoudige vragen te beantwoorden
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 64f8a051cfa873df034e3d260862181ce637948c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e978a9df5d0c0e2e94f484c5e683a970f66dc945
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -31,9 +31,11 @@ Aan de hand van uw antwoorden op de volgende vragen kan worden bepaald welke reg
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Hoe beheert u uw gedeelde iOS-apparaten?**
 
 > [!div class="button"]
-[iOS-DEP-registratie >]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [!div class="button"]
-> [Directe iOS-registratie >]/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune) [!div class="button"]
-[DEM-registratie >]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+[iOS-DEP-registratie >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [!div class="button"]
+[Directe iOS-registratie >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[DEM-registratie >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Het Device Enrollment Program (DEP) van Apple**: u kunt voor iOS-apparaten die zijn aangeschaft of worden beheerd met DEP een registratieprofiel gebruiken. Wanneer gebruikers hun apparaat voor het eerst inschakelen, downloadt het apparaat het DEP-profiel en wordt het apparaat geregistreerd bij de profiel-DEP.
 

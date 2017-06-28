@@ -1,5 +1,5 @@
 ---
-title: iOS-apparaten in bedrijfseigendom registreren | Microsoft Docs
+title: iOS-apparaten in bedrijfseigendom inschrijven
 description: iOS-apparaten in bedrijfseigendom inschrijven met het Apple Device Enrollment Program (DEP) of Apple Configurator
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfspor
 
 Gebruikersaffiniteit is vereist voor de ondersteuning van het volgende:
   - MAM-apps (Mobile Application Management)
-  -    Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
-  -    Bedrijfsportal-app
+  - Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
+  - Bedrijfsportal-app
 
 **iOS-apparaten in bedrijfseigendom inschrijven met gebruikersaffiniteit**
 1. Wanneer gebruikers hun apparaat inschakelen, wordt ze gevraagd de Configuratieassistent te voltooien. Tijdens de installatie wordt er naar de referenties van de gebruikers gevraagd. Ze moeten de referenties (de unieke naam of de UPN) van het Intune-abonnement gebruiken.

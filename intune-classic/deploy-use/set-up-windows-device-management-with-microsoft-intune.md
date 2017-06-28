@@ -1,5 +1,5 @@
 ---
-title: Windows-apparaatbeheer instellen met Microsoft Intune | Microsoft Docs
+title: Windows apparaatbeheer instellen met Microsoft Intune
 description: Het beheer van mobiele apparaten (MDM) inschakelen voor Windows-apparaten met Microsoft Intune.
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: be2587f8ccb43632d861012416bbbca720698bb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
 ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -69,7 +69,7 @@ Kies in de [Intune-beheerconsole](https://manage.microsoft.com) de optie **Behee
 Laat uw gebruikers weten hoe ze hun Windows-apparaten kunnen inschrijven en wat ze kunnen verwachten nadat deze onder beheer zijn gebracht.
 Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) voor inschrijvingsinstructies voor eindgebruikers. U kunt gebruikers ook de informatie in [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) (Wat kan de IT-beheerder op mijn apparaat zien?) laten lezen.
 
-Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) voor meer informatie over taken voor eindgebruikers.
+Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](/intune/end-user-educate) voor meer informatie over taken voor eindgebruikers.
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)
