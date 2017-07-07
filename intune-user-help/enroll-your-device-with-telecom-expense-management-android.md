@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Uw Android-apparaat inschrijven voor Telecom Expense Management
 
 Mogelijk gebruikt uw organisatie Telecom Expense Management-software om ervoor te zorgen dat de data- en spraakabonnementen op aanvaardbare wijze worden gebruikt. Wanneer u uw apparaat hebt ingeschreven, wordt u gevraagd om de beste categorie te selecteren voor dat apparaat.
@@ -67,4 +63,3 @@ Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaa
 Na het inschrijven kunt u uw dataverbruik terugzien in de app Datalert.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

@@ -14,15 +14,12 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Quick Start Guide: Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,4 +45,3 @@ Zo ja, dan kunt u met Microsoft Intune MAM-beleid instellen voor mobiele Office 
 [Migreren van een MDM-oplossing van een andere leverancier dan Microsoft naar Microsoft Intune](/intune-classic/deploy-use/migrate-to-intune)
 
 [Apparaten registreren bij Intune MDM](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
-

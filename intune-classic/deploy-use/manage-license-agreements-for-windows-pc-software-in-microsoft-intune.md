@@ -1,5 +1,5 @@
 ---
-title: Softwarelicentieovereenkomsten voor pc&quot;s met de Intune-softwareclient beheren | Microsoft Docs
+title: Softwarelicentieovereenkomsten voor pc's met de Intune-softwareclient beheren
 description: Met Intune kunt u licentieovereenkomsten beheren voor software die is gekocht via Microsoft-volumelicentieovereenkomsten, en voor software die op een andere manier is gekocht.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Met Microsoft Intune kunt u licentiegegevens toevoegen en beheren voor software die is gekocht via Microsoft Volume Licensing-overeenkomsten. U kunt dit ook doen voor Microsoft- of niet-Microsoft-software die op een andere manier is gekocht. U kunt deze gegevens in logische groepen indelen.
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ Softwarelicentieovereenkomsten kunnen worden toegevoegd aan licentiegroepen. U k
 |De naam van een licentiegroep wijzigen|Kies in de werkruimte **Licenties** een licentiegroep en kies dan **Licentiegroep bewerken** in het menu **Taken** .|
 |Een licentiegroep verwijderen|Kies in de werkruimte **Licenties** een licentiegroep en kies dan **Licentiegroep verwijderen** in het menu **Taken** . **Tip:** alle licenties in de verwijderde groep worden verplaatst naar de licentiegroep **Niet-toegewezen overeenkomsten**.|
 |Een licentieovereenkomst verwijderen|Kies in de werkruimte **Licenties** een overeenkomst en kies vervolgens **Verwijderen**. **Tip:** nadat u volumelicentieovereenkomsten hebt verwijderd, kiest u voor het bijwerken van de licentiegegevens de optie **Nu vernieuwen** op de pagina **Licentieoverzicht** of op het tabblad **Algemeen** voor een specifieke licentiegroep.|
-

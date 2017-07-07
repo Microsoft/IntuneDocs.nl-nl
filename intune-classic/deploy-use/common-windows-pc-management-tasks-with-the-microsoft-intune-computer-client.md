@@ -1,6 +1,6 @@
 ---
 title: "Algemene beheertaken voor Windows-pc’s"
-description: Meer informatie over de manieren waarop u Windows-pc&quot;s kunt beheren waarop de Intune-softwareclient wordt uitgevoerd.
+description: Meer informatie over de manieren waarop u Windows-pc's kunt beheren waarop de Intune-softwareclient wordt uitgevoerd.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Algemene beheertaken voor Windows-pc’s met de Intune-softwareclient
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,6 +36,5 @@ Dit onderwerp bevat een lijst met taken die u kunt uitvoeren voor het beheren va
 - [Koppeling tussen gebruiker en apparaat voor Windows-pc's beheren](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): hierin wordt uitgelegd wanneer en hoe u een gebruiker aan een pc koppelt voordat u software naar de gebruiker implementeert.
 
 - [Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): hierin wordt uitgelegd hoe pc-gebruikers met Intune hulp op afstand van u kunnen krijgen en worden de vereisten een TeamViewer-instellingen beschreven.
-
 
 

@@ -1,5 +1,5 @@
 ---
-title: Mobile Device Management evalueren in Microsoft Intune | Microsoft Docs
+title: Mobile Device Management evalueren in Microsoft Intune
 description: Evalueer MDM in uw gratis proefversie van Intune.
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e0eb48c5bb2e0158d7b780af1c16139f10602c4e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: adef9335d8f199e8dec56e92eb1fda8c180ac6ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Mobile Device Management evalueren in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -44,7 +41,7 @@ De proefversie biedt dezelfde mogelijkheden als de abonnementsversie. Het enige 
 ## <a name="whats-not-covered"></a>Wat er niet wordt behandeld
 |Als u geïnteresseerd bent in |Leest u |
 |------------------------|----------|
-|MDM in een niet-testomgeving | [Aan de slag](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|MDM in een niet-testomgeving | [Aan de slag](/intune/setup-steps) |
 |MDM met Intune en System Center Configuration Manager | [Hybride MDM](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Aangezien de bovenstaande handleidingen u helpen Intune in te stellen in een productieomgeving, zijn ze langer en bevatten ze meer beslissingspunten dan de evaluatiehandleiding.
@@ -67,7 +64,7 @@ Klanten die Intune in combinatie met System Center Configuration Manager willen 
 Voor de proefversie wordt Intune ingesteld als MDM-instantie. Dit heeft geen gevolgen voor uw productieomgeving, tenzij u besluit uw proefversie voor uw productieomgeving te gebruiken.
 
 1. Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Mobile Device Management**.
-2. Kies in de lijst **Taken** de optie **MDM-instantie instellen**. Het dialoogvenster **Instantie voor beheer van mobiele apparaten instellen** wordt geopend. <!---screen shot--->
+2. Kies in de lijst **Taken** de optie **MDM-instantie instellen**. Het dialoogvenster **Instantie voor beheer van mobiele apparaten instellen** wordt geopend.
 3. Intune vraagt u te bevestigen dat u Intune wilt gebruiken als uw MDM-instantie. Schakel het selectievakje in en kies vervolgens **Ja** als u mobiele apparaten wilt beheren met Intune.
 
 ## <a name="enroll-your-test-devices-into-intune"></a>Uw testapparaten registreren bij Intune
@@ -80,14 +77,14 @@ Installeer de app **Intune-bedrijfsportal** van Microsoft Corporation via [Googl
 Voordat gebruikers hun iOS-apparaten kunnen registreren, moet u Intune instellen om deze apparaten te beheren.
 
 1. **Een aanvraag voor certificaatondertekening ophalen**<br/>
-Meld u met uw beheerdersaccount aan bij Intune en ga naar **Beheer** > **Mobile Device Management** > **iOS en Mac OS X** > **Een APNs-certificaat uploaden** en kies vervolgens **De APNs-certificaataanvraag downloaden**. Sla het bestand met de aanvraag voor certificaatondertekening (.csr) lokaal op. Het CSR-bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal. <!--- screen shot--->
-2.    **Certificaat van Apple Push Notification Service ophalen**<BR/>
+Meld u met uw beheerdersaccount aan bij Intune en ga naar **Beheer** > **Mobile Device Management** > **iOS en Mac OS X** > **Een APNs-certificaat uploaden** en kies vervolgens **De APNs-certificaataanvraag downloaden**. Sla het bestand met de aanvraag voor certificaatondertekening (.csr) lokaal op. Het CSR-bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
+2.  **Certificaat van Apple Push Notification Service ophalen**<BR/>
 Ga naar de [Apple Push Certificates-portal](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2) en meld u aan met de Apple-id van uw bedrijf om het APNs-certificaat te maken met het .csr-bestand. Nadat u in de Apple Push Certificates-portal **Uploaden** hebt gekozen, ontvangt u een JSON-bestand dat niet kan worden gebruikt voor APN's. Voltooi het downloaden en keer terug naar de Apple Push Certificates-portal voor certificaten voor servers van derden. Kies **Downloaden**.<br/>
 Download het APNs-certificaat (.pem) en sla het bestand lokaal op. Deze Apple-id moet later worden gebruikt om uw APNs-certificaat te vernieuwen.
-3.    **Het APNs-certificaat toevoegen aan Intune**<BR/>
+3.  **Het APNs-certificaat toevoegen aan Intune**<BR/>
 In de Microsoft Intune-beheerconsole gaat u naar **Beheer** > **Mobiele apparaten beheren** > **iOS en Mac OS X** > **Een APNs-certificaat uploaden** en kiest u **Het APNs-certificaat uploaden**. Ga naar het certificaatbestand (.pem), klik op **Openen** en voer uw Apple-id in. Met Het APNs-certificaat kan Intune iOS-apparaten registreren en beheren door beleid naar geregistreerde mobiele apparaten te pushen.
-4.    **Laat uw gebruikers weten hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**<br/>
-Zie [Uw iOS-apparaat registreren bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) of [Uw Mac OS X-apparaat registreren bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-mac-os-x) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
+4.  **Laat uw gebruikers weten hoe ze hun apparaten moeten registreren om toegang te krijgen tot bedrijfsbronnen.**<br/>
+Zie [Uw iOS-apparaat registreren bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) of [Uw Mac OS X-apparaat registreren bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos) voor inschrijvingsinstructies voor eindgebruikers. Het inschrijvingsproces laat gebruikers weten wat ze kunnen verwachten, en wat IT-beheerders wel en niet kunnen zien op hun apparaten.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>Meer informatie over apparaatregistratiemanagers
@@ -98,25 +95,14 @@ Intune ondersteunt de volgende apparaatplatformen:
 
 De vereisten voor het inschakelen van apparaatbeheer zijn afhankelijk van de platformen die u wilt beheren.
 - Op mobiele apparaten met **Android** kunnen gebruikers zich [registreren via de bedrijfsportal-app](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune), die beschikbaar is via Google Play. Er is geen aanvullende configuratie in Intune vereist.
-- Instellingsvereisten voor **iOS en Mac OS X**]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Instellingsvereisten voor **Windows Phone**]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+- [Vereisten voor **iOS en Mac OS X**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) instellen
 
-<!--- ## Verify enrollment--->
-<!--- START HERE
-
-### iOS and Mac OS X
-Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+- [Vereisten voor**Windows Phone**](/intune-classic/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune) instellen
 
 
 
-### Windows Phone 8.1
-Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
-
-## Install the previously deployed app
-Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.--->
 
 
 
 ## <a name="next-steps"></a>Volgende stappen
 [Groepen maken om gebruikers en apparaten in te delen](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-

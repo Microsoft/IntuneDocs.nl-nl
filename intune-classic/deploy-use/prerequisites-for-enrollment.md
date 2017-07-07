@@ -1,11 +1,11 @@
 ---
-title: Vereisten voor registratie van mobiele apparaten | Microsoft Docs
+title: Vereisten voor de inschrijving van mobiele apparaten
 description: Mobile Device Management (MDM)-vereisten instellen en voorbereidingen treffen voor het inschrijven van verschillende besturingssystemen.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Vereisten voor Mobile Device Management in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,15 +43,14 @@ Zoekt u Intune met Configuration Manager?
 ## <a name="step-1-enable-connections"></a>Stap 1: Verbindingen inschakelen
 
 Voordat u het inschrijven van mobiele apparaten inschakelt, moet u ervoor zorgen dat u:
-- [De vereiste netwerk-URL's en -poorten hebt gecontroleerd](../get-started/network-bandwidth-use.md)
-- [Uw domeinnaam hebt toegevoegd en gecontroleerd](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [De vereiste netwerk-URL's en -poorten hebt gecontroleerd](/intune/network-bandwidth-use)
+- [Uw domeinnaam hebt toegevoegd en gecontroleerd](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>Stap 2: MDM-instantie instellen
 De MDM-instantie definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune. Als u Configuration Manager als beheerinstantie instelt, kunnen er geen andere services voor het Mobile Device Management worden gebruikt.
 
 >[!IMPORTANT]
-> Overweeg zorgvuldig of u mobiele apparaten wilt beheren met Intune alleen (onlineservice) of met System Center Configuration Manager met Intune (on-premises softwareoplossing in combinatie met de onlineservice). Nadat u de instantie voor beheer van mobiele apparaten hebt ingesteld, kunt u deze niet wijzigen zonder de hulp van Microsoft Support. Zie [Wat te doen als u de verkeerde instelling kiest voor MDM-instantie](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor instructies.
-
+> In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [Wat te doen als u de verkeerde instelling kiest voor de MDM-instantie](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor meer informatie.
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer** &gt; **Mobile Device Management**.
 
@@ -116,7 +112,7 @@ Nadat u uw wijzigingen hebt opgeslagen, kunt u de koppelingen onder aan de pagin
 
 ## <a name="step-5-assign-user-licenses"></a>Stap 5: Gebruikerslicenties toewijzen
 
-U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD). U kunt [on-premises gebruikers synchroniseren met Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+U gebruikt de **Office 365-beheerportal** om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure Active Directory (Azure AD). U kunt [on-premises gebruikers synchroniseren met Azure AD](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Meld u met uw tenantbeheerdersreferenties aan bij de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx).
 
@@ -154,7 +150,13 @@ Nu de inschrijving is ingeschakeld, moet u het beheer instellen om aan de behoef
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Wat te doen als u de verkeerde instelling kiest voor MDM-instantie
 
-Als u besluit dat u de verkeerde instelling hebt gekozen voor MDM-instantie en deze moet wijzigen, moet u contact opnemen met Microsoft Support. U kunt deze instelling zelf niet wijzigen. Raadpleeg voordat u contact opneemt met Microsoft Support, de volgende informatie die beschrijft welke informatie Microsoft Support van u nodig heeft om de wijziging uit te voeren.
+Als u meent dat u de verkeerde instelling hebt gekozen voor de MDM-instantie en u deze wilt wijzigen, hebt u de volgende opties.
+
+### <a name="change-the-mdm-authority-yourself"></a>De MDM-instantie zelf wijzigen
+Vanaf Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen van Microsoft Intune in Configuration Manager (hybride) of vice versa zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [De MDM-instantie wijzigen]( /sccm/mdm/deploy-use/change-mdm-authority) voor meer informatie.
+
+### <a name="contact-microsoft-support"></a>Contact opnemen met Microsoft Ondersteuning
+Wanneer u een oudere versie dan Configuration Manager 1610 gebruikt, moet u contact opnemen met Microsoft Ondersteuning. U kunt deze instelling zelf niet wijzigen. Raadpleeg voordat u contact opneemt met Microsoft Support, de volgende informatie die beschrijft welke informatie Microsoft Support van u nodig heeft om de wijziging uit te voeren.
 
 Er zijn drie manieren om uw MDM-instantie opnieuw in te stellen. In uw ondersteuningsaanvraag moet u kiezen welke manier van toepassing is op uw situatie. Als het scenario dat u hebt aangevraagd niet wordt vermeld, kunt u contact opnemen met Microsoft Support.
 
@@ -166,7 +168,7 @@ Microsoft Support vraagt u de volgende informatie te bevestigen:
 
 Als u van co-existentie gebruikmaakt, moet u zowel de Intune- als Office 365-controlelijsten bevestigen.
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>De MDM-instantie opnieuw instellen van Intune naar Configuratiebeheer
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>De MDM-instantie opnieuw instellen van Intune naar Configuratiebeheer
 
 Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om uw MDM-instantie opnieuw in te stellen.
 
@@ -180,7 +182,7 @@ Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om u
 - Verwijder alle beleidsregels voor MDM-apparaten onder **Beleid** > **Configuratiebeleid**.
 - Verwijder alle gepubliceerde toepassingen voor MDM-apparaten in **Apps** > **Beheerde software**.
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Stel de MDM-instantie opnieuw in van Configuratiebeheer naar Intune
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Stel de MDM-instantie opnieuw in van Configuratiebeheer naar Intune
 
 Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om uw MDM-instantie opnieuw in te stellen.
 
@@ -194,7 +196,7 @@ Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om u
 - Start de SMS Executive-service opnieuw.
 - Geef ons een aantal voorbeeldgebruikers zodat we, nadat het proces is voltooid, kunnen verifiëren dat de Configuration Manager-licenties zijn verwijderd.
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Stel de MDM-instantie opnieuw in van Office 365 naar Configuration Manager
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Stel de MDM-instantie opnieuw in van Office 365 naar Configuration Manager
 
 1. Navigeer naar [https://protection.office.com](https://protection.office.com).
 2. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeheer**.
@@ -205,10 +207,9 @@ Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om u
 >[!NOTE]
 >Het iOS APsN-certificaat kan niet worden verwijderd en blijft gekoppeld aan het account.
 
-### <a name="next-steps-for-mdm-authority-resets"></a>Volgende stappen voor het opnieuw instellen van de MDM-instantie
+#### <a name="next-steps-for-mdm-authority-resets"></a>Volgende stappen voor het opnieuw instellen van de MDM-instantie
 
 Als Microsoft Support de items in de relevante controlelijst heeft geverifieerd, kan het opnieuw instellen van de MDM-instantie maximaal drie werkdagen duren, maar gebeurt het meestal binnen een dag.
 
 >[!IMPORTANT]
 >Probeer uw abonnement niet te configureren voordat Microsoft Support bevestigt dat het opnieuw instellen is voltooid! Voortijdig configuratie kan leiden tot beschadiging en/of invloed hebben op uw mogelijkheid om de Intune-service te gebruiken.
-

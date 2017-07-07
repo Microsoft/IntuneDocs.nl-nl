@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Een werkprofiel maken en uw apparaat registreren bij Intune
 
 Door een Android-apparaat te registreren, hebt u toegang tot e-mail, apps en andere werkgegevens van het bedrijf. Als onderdeel van de inschrijving moet u een werkprofiel instellen dat de persoonlijke gegevens op uw apparaat onderscheidt van uw werkgegevens. Uw IT-beheerder kan alleen het werkprofiel beheren waarin uw werkgegevens staan. Uw IT-beheerder kan niet de persoonlijke gegevens op uw apparaat beheren. Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.
@@ -88,4 +83,3 @@ Ga als volgt te werk om een werkprofiel te maken:
     ![Pagina voor Play Store for Work-apps](./media/andr-afw-tap-work-play-store-icon.png)
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

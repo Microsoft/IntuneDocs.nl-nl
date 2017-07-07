@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 22885c8b39cdbce2c9defb3b2ff11b218a8582f0
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Gegevensverzameling door Microsoft uitschakelen
 
 Microsoft verzamelt automatisch bepaalde gegevens over onze producten en services. We doen dit om de betrouwbaarheid en prestaties van onze producten, waaronder de bedrijfsportal-app, te verbeteren. Hoewel deze gegevens worden geanonimiseerd, is het mogelijk dat sommige gebruikers het verzamelen van deze gegevens niet prettig vinden. Uw IT-beheerder heeft geen controle over het verzamelen van deze gegevens en kan uw selectie voor deze instelling niet wijzigen.
@@ -33,4 +29,3 @@ Microsoft verzamelt automatisch bepaalde gegevens over onze producten en service
 Als u het verzamelen van gebruiksgegevens op een iOS-apparaat wilt uitschakelen, opent u **Instellingen**, tikt u op **Bedrijfsportal** en schakelt u **Gebruiksgegevens** uit.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

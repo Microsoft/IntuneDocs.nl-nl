@@ -14,15 +14,12 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: cd3c2809161aa438eb7aef91a65d68cb0f657607
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Problemen met de integratie van Lookout met Intune oplossen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +87,3 @@ Als de nieuwe gebruiker deel uitmaakt van een Lookout MTP-registratiegroep, word
 
 ### <a name="see-also"></a>Zie tevens
 [Uw abonnement instellen met Lookout MTP](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)
-

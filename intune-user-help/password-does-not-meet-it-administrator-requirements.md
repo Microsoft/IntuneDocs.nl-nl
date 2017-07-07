@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Uw wachtwoord voldoet niet aan de vereisten van de IT-beheerder
 
 Het wachtwoord dat u gebruikt voor toegang tot de resources van uw bedrijf of school voldoet niet aan een of meer vereisten die uw IT-beheerder heeft ingesteld. Los het probleem op aan de hand van de instructies die worden weergegeven op het apparaat. Beschrijvingen van de problemen worden hieronder vermeld.
@@ -51,4 +47,3 @@ Beschrijvingen van problemen met de pincode of het wachtwoord:
 - **Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen**. Van uw IT-beheerder moet u complexere tekens in uw wachtwoord gebruiken. Probeer tekens zoals cijfers, hoofdletters en symbolen zoals $, % en #. Dit kan ook gelden voor andere accounts op uw apparaat, controleer dus alle andere werkaccounts om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten die door IT zijn ingesteld voor uw apparaat.
 
 Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

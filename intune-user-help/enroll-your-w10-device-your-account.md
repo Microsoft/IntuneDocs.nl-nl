@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
   > [!NOTE]
@@ -67,4 +63,3 @@ Als u Bedrijfsportal niet in de lijst met apps ziet, volgt u deze stappen om het
 3. Selecteer in de lijst met resultaten **Bedrijfsportal** > **Installeren**.
 
 4. Selecteer **Installeren** of **Gratis**. Er is geen verschil tussen deze twee opties. De keuze die wordt weergegeven, is afhankelijk van hoe de bedrijfsportal-app is ingesteld in uw organisatie.
-

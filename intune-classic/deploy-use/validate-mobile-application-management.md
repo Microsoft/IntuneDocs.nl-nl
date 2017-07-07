@@ -1,5 +1,5 @@
 ---
-title: De MAM-configuratie valideren | Microsoft Docs
+title: De MAM-configuratie valideren
 description: In deze onderwerpen wordt beschreven hoe u kunt testen en valideren of uw MAM-beleid juist is ingesteld en naar behoren werkt.
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>De Mobile Application Management-configuratie valideren
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Als blijkt dat uw MAM-beleid niet werkt zoals verwacht, is het raadzaam het volg
 ### <a name="what-to-do"></a>Wat u moet doen
 Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 
-- Als de gebruiker geen licentie voor MAM heeft, wijst u de gebruiker een Intune-licentie toe zoals beschreven in [Intune-licenties beheren](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md).
+- Als de gebruiker geen licentie voor MAM heeft, wijst u de gebruiker een Intune-licentie toe zoals beschreven in [Intune-licenties beheren](/intune/setup-steps).
 - Als de gebruiker geen licentie voor O365 heeft, vraagt u een licentie voor de gebruiker aan.
 - Als de app van een gebruiker de status **Niet ingecheckt** heeft, controleert u of het MAM-beleid voor die app correct hebt geconfigureerd.
 - Zorg ervoor dat deze voorwaarden worden toegepast op alle gebruikers waarop MAM-beleid van toepassing moet zijn.
@@ -59,4 +56,3 @@ Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 [Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps (Mobile App Management) met Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

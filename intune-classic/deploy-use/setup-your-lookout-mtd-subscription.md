@@ -1,5 +1,5 @@
 ---
-title: Uw abonnement instellen met Lookout | Microsoft Docs
+title: Uw abonnement instellen met Lookout
 description: Deze onderwerpen bevatten gedetailleerde informatie over het configureren van Lookout Device Threat Protection.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c777d8857fd177e5a27840ab8a97c8a137aa189
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Uw Lookout Mobile Threat Defense-abonnement instellen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
 
   ![schermopname van de pagina die bij de eerste keer aanmelden bij de Lookout-console wordt weergegeven](../media/mtp/lookout_mtp_initial_login.png) Nadat u hebt ingestemd, wordt u doorgestuurd naar de Lookout-console.
 
-  Zie [integratieproblemen met Lookout oplossen](/intune-classic/troubleshoot/troubleshooting-lookout-integration) voor meer informatie over problemen met aanmelden.
+  Zie [integratieproblemen met Lookout oplossen](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md) voor meer informatie over problemen met aanmelden.
 
 3.  Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Intune**.
 
@@ -139,4 +136,3 @@ Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in
 Wanneer de instelling is voltooid, wordt Azure AD met Lookout Mobile Threat Defense gecontroleerd op apparaten die met de opgegeven inschrijvingsgroepen overeenkomen.  In de module Apparaten vindt u informatie over de apparaten die zijn geregistreerd.  De initiële status van apparaten wordt weergegeven als In behandeling.  De apparaatstatus wordt gewijzigd nadat de Lookout for Work-app op het apparaat is geïnstalleerd, geopend en geactiveerd.  Zie voor neer informatie over het pushen van de Lookout for Work-app naar het apparaat het onderwerp [Configure and deploy Lookout for Work apps](configure-deploy-lookout-for-work-app.md) (Lookout for Work-apps configureren en implementeren).
 ## <a name="next-steps"></a>Volgende stappen
 [Lookout MTP-verbinding met Intune inschakelen](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>De inschrijving van uw Windows-apparaat bij Intune ongedaan maken
 
 Als u uw Windows-apparaat hebt geregistreerd bij Intune, maar het apparaat niet meer wilt gebruiken voor werk of school en geen toegang meer nodig hebt tot de e-mail, apps of andere bronnen van uw werk of school, moet u uw registratie ongedaan maken. Wanneer de registratie van uw apparaat bij Intune ongedaan is gemaakt, hebt u geen toegang meer tot de bronnen. Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) voor meer informatie over wat er gebeurt als u de registratie van uw apparaat ongedaan maakt.
 
 Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de koppeling in de bovenstaande sectie In dit artikel die overeenkomt met het type apparaat dat u gebruikt:
 
--    [De registratie van uw Windows 10-apparaat ongedaan maken](#unenroll-your-windows-10-device)
--    [De registratie van uw Windows 8.1-computer ongedaan maken](#unenroll-your-windows-81-computer)
--    [De registratie van uw Windows Phone 8.1-apparaat ongedaan maken](#unenroll-your-windows-phone-81-device)
+-   [De registratie van uw Windows 10-apparaat ongedaan maken](#unenroll-your-windows-10-device)
+-   [De registratie van uw Windows 8.1-computer ongedaan maken](#unenroll-your-windows-81-computer)
+-   [De registratie van uw Windows Phone 8.1-apparaat ongedaan maken](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>De registratie van Windows 10-apparaat ongedaan maken
 
@@ -68,4 +63,3 @@ Als u de registratie van uw apparaat ongedaan wilt maken, gebruikt u de koppelin
 4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

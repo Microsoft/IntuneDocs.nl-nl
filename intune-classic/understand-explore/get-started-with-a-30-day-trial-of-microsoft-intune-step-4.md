@@ -1,5 +1,5 @@
 ---
-title: Beleid maken en een app publiceren voor gebruikers | Microsoft Docs
+title: Beleid maken en een app publiceren voor gebruikers
 description: Zo kunt u beleidsregels maken en een app publiceren wanneer u zich aanmeldt voor een gratis evaluatieversie van Intune van 30 dagen
 keywords: 
 author: lindavr
@@ -14,16 +14,12 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Beleid maken en een app publiceren voor gebruikers van de evaluatieversie
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -102,7 +98,6 @@ Hiermee is de handleiding voor Intune Mobile Device Management voltooid. Voor me
 ## <a name="next-steps"></a>Volgende stappen
 Meer informatie over andere [mogelijkheden van Intune](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 
-Meer informatie over [algemene manieren om Intune te gebruiken](common-ways-to-use-intune.md)
+Meer informatie over [algemene manieren om Intune te gebruiken](/intune/common-scenarios)
 
 Overstappen op een [betaald abonnement](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

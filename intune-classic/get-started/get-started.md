@@ -11,15 +11,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a9655730e15c7c7cd49cfbfbe197e7953f9c7b01
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-microsoft-intune"></a>Aan de slag met Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -30,4 +27,3 @@ Inhoud van deze handleiding:
 - [Snelstartgids voor Intune](/intune/setup-steps): stapsgewijze instructies om uw proefabonnement om te zetten naar een zakelijk abonnement of om een nieuw abonnement in te stellen voor uw organisatie.
 - [Migreren naar Intune](/intune/migration-guide): informatie voor de migratie vanuit uw huidige beheeroplossing voor Enterprise Mobility naar Intune.
 - [Volgende stappen met Intune](prevent-company-data-leaks-from-Office-365-mobile-apps.md): een overzicht en de volgende stappen voor algemene Intune-taken.
-
