@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: c7cdb0106da1d81843f7dd07d0986d597b94a77c
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>U moet een bedreiging oplossen die met Skycure is gevonden
 
 Skycure heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot de e-mail, apps en bestanden van uw werk of school. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit:
@@ -49,4 +45,3 @@ Tik op de naam van de app boven in het scherm en volg de instructies voor het ve
 Nadat u de app hebt verwijderd, hebt u direct weer toegang tot uw e-mail en andere gegevens van uw bedrijf of school. Als u de app niet verwijdert, hebt u geen toegang meer tot uw bedrijfs-e-mail en -gegevens totdat u de app wel verwijdert.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

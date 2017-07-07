@@ -1,7 +1,7 @@
 ---
 title: App-beveiligingsbeleid controleren
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: u kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.'
+titleSuffix: Intune on Azure
+description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Als u zich niet in de preview-versie van Intune in Azure bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-console.
+**Als u zich niet in Azure Portal bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-console.
 
 
 U kunt de nalevingsstatus van het MAM-beleid bewaken dat u hebt toegepast op gebruikers op de blade Intune-app-beveiliging in [Azure Portal](https://portal.azure.com). U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
@@ -43,7 +40,7 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 ## <a name="summary-view"></a>Samenvattingsweergave
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 4. Kies **Controleren** > **Gebruikersstatus van de app-beveiliging** in de workload **Mobiele apps** om de samenvattingsweergave te openen:
 
@@ -139,4 +136,3 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-android.md)
 * [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-ios.md)
-

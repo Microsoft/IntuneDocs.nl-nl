@@ -1,5 +1,5 @@
 ---
-title: Toegang tot zakelijke e-mail via e-mailprofielen | Microsoft Docs
+title: Toegang tot zakelijke e-mail via e-mailprofielen
 description: Er kunnen e-mailprofielinstellingen worden gebruikt om e-mailtoegangsinstellingen te configureren voor specifieke e-mailclients op mobiele apparaten.
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Als u extra maatregelen wilt nemen om gegevensverlies te voorkomen, gebruikt u [
 IT-beheerders of gebruikers kunnen er ook voor kiezen om alternatieve e-mailclients te installeren (zoals Microsoft Outlook voor Android of iOS). Deze e-mailclients bieden mogelijk geen ondersteuning voor e-mailprofielen en kunnen niet worden ingesteld met behulp van Intune-e-mailprofielen.  
 
 U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren op de volgende apparaattypen:
--    Windows Phone 8.1 en hoger
--    Windows 10 (voor de desktop), Windows 10 Mobile en hoger
--    iOS 8.0 en hoger
--    Samsung KNOX Standard (4.0 of hoger)
--    Android for Work (e-mailapps van derden, de systeemeigen e-mailapp maakt uitsluitend gebruik van een persoonlijk profiel)
+-   Windows Phone 8.1 en hoger
+-   Windows 10 (voor de desktop), Windows 10 Mobile en hoger
+-   iOS 8.0 en hoger
+-   Samsung KNOX Standard (4.0 of hoger)
+-   Android for Work (e-mailapps van derden, de systeemeigen e-mailapp maakt uitsluitend gebruik van een persoonlijk profiel)
 
 U kunt een e-mailaccount instellen op het apparaat en daarnaast ook bepalen hoeveel e-mail er moet worden gesynchroniseerd en, afhankelijk van het apparaattype, welke inhoudstypen uw wilt synchroniseren.
 
@@ -85,7 +82,7 @@ Het wachtwoord is niet opgenomen in het e-mailprofiel, dus de gebruiker moet dit
 
     -   **E-mailprofiel (Android for Work - Gmail)**
 
-    -    **E-mailprofiel (Android for Work - Nine Work)**
+    -   **E-mailprofiel (Android for Work - Nine Work)**
 
     U kunt alleen een aangepast e-mailprofielbeleid maken en implementeren. Aanbevolen instellingen zijn niet beschikbaar.
 
@@ -133,4 +130,3 @@ Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruim
 > - Implementeer voor Android for Work naast het juiste e-mailprofiel ook de Gmail- of Nine Work-app.
 > - Als u een e-mailprofiel van een apparaat wilt verwijderen, bewerkt u de implementatie en verwijdert u groepen waarvan het apparaat lid is. U kunt een e-mailprofiel niet op deze manier verwijderen als dit het enige e-mailprofiel op een apparaat is.
 > - Als u wijzigingen aanbrengt aan een e-mailprofiel dat u eerder had geïmplementeerd, zien eindgebruikers mogelijk een bericht waarin ze wordt gevraagd de herconfiguratie van hun e-mailinstellingen goed te keuren.
-

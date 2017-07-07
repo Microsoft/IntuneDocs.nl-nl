@@ -1,7 +1,7 @@
 ---
 title: E-mailinstellingen voor Windows 10-apparaten in Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op Windows 10-apparaten te configureren.'
+titleSuffix: Intune on Azure
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op Windows 10-apparaten te configureren.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 50de3e52fa87170fe208dd944b87c9d3006bd437
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 121c21d49d3639925ef0abcdc55cb599ed276778
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>E-mailprofielinstellingen voor Windows 10-apparaten in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
     - **Contactpersonen**
     - **Kalender**
     - **Taken**
-

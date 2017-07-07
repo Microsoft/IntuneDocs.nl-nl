@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
 Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-erase-your-device-cpwebsite.md) gebruikt om uw Windows-apparaat opnieuw in te stellen, wordt uw apparaat opnieuw ingesteld op de fabrieksinstellingen en worden alle apps, instellingen en gegevens, inclusief uw persoonlijke gegevens, verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van het type apparaat dat u hebt en hoe u het apparaat gebruikt, zoals beschreven in de volgende tabel. Zie [Uw apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md) voor instructies hoe u een verloren of gestolen apparaat opnieuw instelt.
@@ -38,4 +33,3 @@ Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-erase-your-device-cp
 |Pc's en laptops|**Windows 8.1 en Windows 8**<br />U kunt een computer met Windows 8 of Windows 8.1 uitsluitend opnieuw instellen als deze alleen voor e-mail wordt gebruikt.<br /><br />**Windows 7 of Windows Vista**<br />U kunt een computer met Windows 7 of een eerdere versie niet opnieuw instellen.|
 
 Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
-

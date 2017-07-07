@@ -1,7 +1,7 @@
 ---
 title: Alleen zakelijke gegevens wissen uit apps
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het selectief wissen van apps met Microsoft Intune.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het selectief wissen van apps met Microsoft Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Alleen zakelijke gegevens wissen uit door Intune beheerde apps
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Wanneer een apparaat is vermist of is gestolen, of als een werknemer uw bedrijf verlaat, wilt u dat de gegevens in zakelijke apps van het apparaat worden verwijderd. Maar u wilt mogelijk geen persoonlijke gegevens op het apparaat verwijderen, vooral niet als het apparaat het eigendom van de werknemer is.
 
@@ -38,7 +36,7 @@ Als u alleen de gegevens van de zakelijke apps wilt verwijderen, maakt u een ver
 
 1.  Meld u aan bij [Azure Portal](https://portal.azure.com).
 
-2.  Kies **Meer services**, typ **Intune** in het filtertekstvak en selecteer **Intune**. De blade Intune Preview wordt geopend. Kies de blade **Apps beheren**.
+2.  Kies **Meer services**, typ **Intune** in het filtertekstvak en selecteer **Intune**. De blade Intune wordt geopend. Kies de blade **Apps beheren**.
 
     ![Schermafbeelding van tabblad met een nieuwe wisaanvraag](./media/intune-azure-preview-blade.png)
 

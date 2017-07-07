@@ -1,7 +1,7 @@
 ---
 title: Een Telecom Expense Management-service instellen
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: de Telecom Expense Management-service van Saaswedo configureren voor integratie met Intune.'
+titleSuffix: Intune on Azure
+description: Configureer de Telecom Expense Management-service van Saaswedo voor integratie met Intune.
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -15,16 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Een Telecom Expense Management-service instellen in Intune Azure Preview
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Met Intune kunt u telecomuitgaven van gegevensgebruik op mobiele apparaten in bedrijfseigendom beheren. Hiervoor is Intune geïntegreerd met de Telecom Expense Management-oplossing Datalert van Saaswedo, een extern bedrijf dat software ontwikkelt. Datalert is realtime Telecom Expense Management-software waarmee u telecomgegevensgebruik kunt beheren en kostbare en onverwachte gegevens- en roamingoverschrijdingen voor uw door Intune beheerde apparaten kunt voorkomen.
 
@@ -43,7 +41,7 @@ Voordat u de Datalert-service met Intune kunt gebruiken, moet u instellingen con
 
 ## <a name="prerequisites"></a>Vereisten
 
-- Een abonnement op Microsoft Intune en toegang tot Azure portal, die momenteel beschikbaar is als openbare preview-versie.
+- Een abonnement op Microsoft Intune en toegang tot Azure Portal.
 - Een abonnement op de Telecom Expense Management-service Datalert
 
 ## <a name="list-of-telecom-expense-management-providers"></a>Lijst met Telecom Expense Management-providers
@@ -108,9 +106,9 @@ Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving. Afh
 
 Volg deze stappen om de app Datalert in Intune te maken voor elk platform. In de volgende stappen wordt iOS als voorbeeld gebruikt.
 
-1. Kies op de blade **Intune** van Azure Portal **Apps beheren**.
+1. Kies op de blade **Intune** van Azure Portal **Mobiele apps**.
 
-2. Kies op de blade **Apps beheren** **Apps** > **Beheren**.
+2. Kies op de blade **Mobile apps** Achterenvolgens **Beheren** > **Apps**.
 
 3. Selecteer **Toevoegen** om een app toe te voegen.
 
@@ -151,8 +149,8 @@ De Datalert-service is nu actief. Er wordt begonnen met het controleren van het 
 
 ## <a name="client-enrollment-experience"></a>Clientregistratie
 Voor de clientregistratie ziet u de volgende onderwerpen:
--    [Uw iOS-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [Uw Android-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [Uw iOS-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [Uw Android-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>De Datalert-service uitschakelen
 
@@ -173,4 +171,3 @@ Het uitschakelen van de Datalert-service in Azure Portal leidt tot het volgende:
 Op dit moment zijn rapporten over gegevensgebruik alleen beschikbaar in de Datalert-beheerconsole van Saaswedo.
 
 De instructies die uw eindgebruikers volgen voor het installeren van de Datalert-app worden snel toegevoegd.
-

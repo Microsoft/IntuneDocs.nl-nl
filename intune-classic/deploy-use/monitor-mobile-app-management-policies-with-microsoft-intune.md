@@ -1,5 +1,5 @@
 ---
-title: MAM-beleid bewaken met Microsoft Intune | Microsoft Docs
+title: MAM-beleid bewaken met Microsoft Intune
 description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>App-beveiligingsbeleid bewaken met Microsoft Intune
 U kunt de nalevingsstatus van het app-beveiligingsbeleid bewaken dat u hebt toegepast op gebruikers. U vindt er informatie over de gebruikers waarop het app-beveiligingsbeleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
 
@@ -134,6 +131,5 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 ## <a name="see-also"></a>Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](/intune/end-user-mam-apps-android)
+* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](/intune/end-user-mam-apps-ios)

@@ -1,12 +1,12 @@
 ---
 title: De instantie voor het beheer van mobiele apparaten instellen
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: informatie over het instellen van de instantie voor het beheer van mobiele apparaten in Intune. '
+titleSuffix: Intune on Azure
+description: Informatie over het instellen van de instantie voor het beheer van mobiele apparaten in Intune. "
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 04/20/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c36ddef7e53d6f4f15c82c97dc6d18863e6859f1
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 449c45e0edcc0d0a33352ba154ad68fa6c4725c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Met de instantie voor het beheer van mobiele apparaten (MDM) wordt bepaald hoe u uw apparaten beheert. Als IT-beheerder moet u een MDM-instantie instellen voordat gebruikers apparaten voor beheer kunnen inschrijven.
 
@@ -37,8 +35,8 @@ Mogelijke configuraties zijn:
 
 - **Mobile Device Management voor Office 365**: integratie van Office 365 met de Intune-cloudoplossing. U kunt Intune configureren vanuit het Office 365-beheercentrum. Bevat een subset van de mogelijkheden die beschikbaar zijn met Intune Standalone. Stel de MDM-instantie in Office 365-beheercentrum in.
 
->[!IMPORTANT]
->Nadat u de instantie voor beheer van mobiele apparaten hebt ingesteld, moet u contact opnemen met [Microsoft Ondersteuning](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) om de instantie te wijzigen. Controleer daarom uw keuze zorgvuldig.
+>[!IMPORTANT]    
+In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [Wat te doen als u de verkeerde instelling kiest voor de MDM-instantie](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor meer informatie.
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM-instantie instellen op Intune
 
@@ -48,3 +46,6 @@ Mogelijke configuraties zijn:
 
 3. Kies op de blade **Het beheer van apparaten starten** **MDM-instantie instellen op Intune**. Er verschijnt een bericht met de melding dat u uw MDM-instantie hebt ingesteld op Intune.
 
+## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
+
+Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 667282ef1ab6e5058e852b6e3b94daecd01c5d53
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="send-enrollment-errors-to-your-it-admin"></a>Fouten bij de registratie naar de IT-beheerder verzenden
 
 Als er een fout optreedt bij het registreren van uw Android-apparaat bij Intune, kunt u opnieuw proberen het te registreren door op **Opnieuw** te tikken. Als dit niet werkt, kunt u uw IT-beheerder een e-mail sturen met over wat er gebeurt door op **Informatie verzenden** te tikken.
@@ -36,4 +32,3 @@ Er zijn verschillende manieren waarop u de gegevenslogboeken naar uw IT-beheerde
 
 - [De knop Informatie verzenden gebruiken om logboeken te e-mailen](send-logs-to-your-it-admin-by-email-android.md)
 - [Een USB-kabel gebruiken om logboeken te verzenden als een e-mailbijlage](send-logs-to-your-it-admin-using-cable-android.md)
-

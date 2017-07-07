@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>U moet een bedreiging oplossen die met Lookout for Work is gevonden
 
 Lookout for Work heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit:
@@ -49,4 +45,3 @@ Als u een app hebt geïnstalleerd die volgens Lookout for Work een bedreiging vo
 Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

@@ -1,7 +1,7 @@
 ---
 title: Apparaatcompatibiliteit bewaken
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u de apparaatnaleving kunt controleren.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het controleren van de apparaatcompatibiliteit.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,20 +15,18 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Apparaatnaleving controleren in Intune Azure Preview
+# <a name="how-to-monitor-device-compliance-in-intune"></a>De apparaatcompatibiliteit controleren in Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Op de blade **Overzicht** kunt u een overzicht bekijken van de status van uw **nalevingsprofielen**.
-U kunt interactief op de verschillende grafieken klikken om in te zoomen op de details. Als u meerdere nalevingsprofielen hebt geconfigureerd, kunt u ook de status voor elk beleid weergeven door naar de blade Beleid te gaan en **Rapporten** in de sectie **Beheren** te kiezen.  De details van de rapporten die beschikbaar zijn voor de preview-versie, worden hieronder weergegeven.
+U kunt interactief op de verschillende grafieken klikken om in te zoomen op de details. Als u meerdere nalevingsprofielen hebt geconfigureerd, kunt u ook de status voor elk beleid weergeven door naar de blade Beleid te gaan en **Rapporten** in de sectie **Beheren** te kiezen.  De details van de rapporten die beschikbaar zijn, worden hieronder weergegeven.
 
 ##  <a name="device-compliance"></a>Apparaatnaleving
 
@@ -48,4 +46,3 @@ Het rapport Naleving van instelling bevat de details voor alle nalevingsinstelli
 - Het platform waarop de instelling wordt toegepast.
 
 U kunt inzoomen op de instellingen om meer informatie te bekijken over de profielen waarvoor deze instellingen zijn ingeschakeld en de waarde van de instelling.
-

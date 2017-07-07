@@ -15,15 +15,12 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 11da0d31a9a00364a6105006c3e75b6bb6f2cb77
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Aangepaste VPN-profielen maken in Microsoft Intune
 
 ## <a name="create-a-custom-configuration"></a>Een aangepaste configuratie maken
@@ -60,7 +57,6 @@ Dit type beleid kan handig zijn wanneer het standaardbeleid voor Intune VPN niet
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
-
 
 
 

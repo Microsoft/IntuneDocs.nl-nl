@@ -1,6 +1,6 @@
 ---
-title: Beleid voor het beveiligen van Windows-pc&quot;s
-description: Gebruik deze beleidsregels voor het beveiligen van Windows-pc&quot;s wanneer deze worden beheerd door de Intune-clientsoftware.
+title: Beleid voor het beveiligen van Windows-pc's
+description: Gebruik deze beleidsregels voor het beveiligen van Windows-pc's wanneer deze worden beheerd door de Intune-clientsoftware.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 6f840cf1b9319cd3a7650f645e6148bb4e56cfa3
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Gebruik beleid voor het beveiligen van Windows-pc’s waarop de Intune-clientsoftware wordt uitgevoerd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,4 +43,3 @@ Als IT-beheerder is een van uw eerste prioriteiten [de Windows-pc's die u beheer
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

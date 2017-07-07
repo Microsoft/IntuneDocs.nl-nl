@@ -1,12 +1,12 @@
 ---
-title: Wat is app-beheer? | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: gebruik dit onderwerp voor meer informatie over de basisbeginselen van app-beheer met Microsoft Intune'
+title: Wat is app-beheer?
+titleSuffix: Intune on Azure
+description: Gebruik dit onderwerp voor meer informatie over de basisbeginselen van app-beheer met Microsoft Intune.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Als IT-beheerder is het waarschijnlijk uw taak ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit kan om de volgende redenen een uitdaging zijn:
+Als IT-beheerder is het uw taak ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit kan om de volgende redenen een uitdaging zijn:
 - Er is een breed scala aan apparaatplatformen en app-typen.
-- U moet mogelijk apps op bedrijfsapparaten evenals op de eigen apparaten van gebruikers beheren.
-- U moet dit allemaal doen terwijl u tegelijk moet garanderen dat uw netwerk en de gegevens beveiligd blijven. 
+- U moet mogelijk apps op bedrijfsapparaten en op de eigen apparaten van gebruikers beheren.
+- U moet ervoor zorgen dat uw netwerk en uw gegevens beveiligd blijven.
 
 Verder wilt u misschien apps toewijzen en beheren op apparaten die niet met Intune zijn geregistreerd.
 
@@ -63,10 +60,9 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 <sup>2</sup>Alleen van toepassing op apparaten die worden beheerd door Intune.
 
-
 ## <a name="how-to-get-started"></a>Aan de slag
 
-U vindt de meeste dingen die op apps betrekking hebben, in de workload **Mobiele apps** die als volgt toegankelijk is:
+U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele apps** die als volgt toegankelijk is:
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
@@ -75,17 +71,18 @@ U vindt de meeste dingen die op apps betrekking hebben, in de workload **Mobiele
     ![De workload Mobiele apps](./media/apps-workload.png)
 
 ### <a name="manage"></a>Manage
-- **Apps**: dit is de locatie waar u de meeste apps toevoegt, toewijst en bewaakt. 
+- **Apps**: in dit knooppunt kunt u de meeste apps toevoegen, toewijzen en bewaken.
     - [Apps toevoegen](apps-add.md)
     - [Apps toewijzen](apps-deploy.md)
     - [Apps bewaken](apps-monitor.md)
-- **App-configuratiebeleid**: hiermee kunt u instellingen opgeven die mogelijk vereist zijn wanneer een gebruiker een app uitvoert. Zie voor meer informatie:
-    - [App-configuratiebeleid](app-configuration-policies.md)
+- **App-configuratiebeleid**: hiermee kunt u instellingen opgeven die mogelijk vereist zijn wanneer een gebruiker een app uitvoert.
+    - [Beleid voor de configuratie van iOS-apps](app-configuration-policies-use-ios.md)
+    - [Beleid voor de configuratie van Android-apps](app-configuration-policies-use-android.md)
 - **App-beveiligingsbeleid**: hiermee kunt u instellingen aan een app koppelen om de bedrijfsgegevens te beveiligen die in de app worden gebruikt. U kunt bijvoorbeeld de mogelijkheden van een app om met andere apps te communiceren beperken of vereisen dat de gebruiker een pincode voor toegang tot een bedrijfsapp invoert.
     - [App-beveiligingsbeleid](app-protection-policies.md)
 - **App selectief wissen**: alleen zakelijke gegevens verwijderen van een gebruikersapparaat dat u selecteert.
     - [App selectief wissen](apps-selective-wipe.md)
-- **iOS-inrichtingsprofiel**: iOS-apps hebben een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app-app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen.
+- **iOS-inrichtingsprofiel**: iOS-apps hebben een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen.
     - [Inrichtingsprofielen voor iOS-apps](app-provisioning-profile-ios.md)
 
 ### <a name="monitor"></a>Monitor
@@ -100,8 +97,7 @@ Zie [Apps bewaken](apps-monitor.md) voor meer informatie
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store voor Bedrijven**: integratie met Windows Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden. 
+- **Windows Store voor Bedrijven**: integratie met Windows Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden.
     - [Windows Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md)
-- **Aangepaste stijl van de bedrijfsportal**: u kunt de bedrijfsportal aanpassen aan de huisstijl van uw bedrijf. 
+- **Aangepaste stijl van de bedrijfsportal**: u kunt de bedrijfsportal aanpassen aan de huisstijl van uw bedrijf.
     - [Bedrijfsportal configureren](company-portal-app.md)
-

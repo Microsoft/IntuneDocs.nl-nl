@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
 Met deze handleiding kunt u uw mobiele app snel geschikt maken voor beleid voor app-beveiliging met Microsoft Intune. Wellicht vindt u het handig om eerst inzicht te krijgen in de voordelen van de Intune App SDK, zoals uitgelegd in [Overzicht van de Intune App SDK](app-sdk.md).
@@ -139,4 +136,3 @@ Het logo ziet eruit als het pictogram van een aktetas zoals in de voorbeelden hi
 * Een toepassing voor het bewerken van afbeeldingen die **EPS**-bestanden kan lezen of een Adobe-toepassing die **AI**-bestanden kan lezen.
 
 * U kunt de [hulpmiddelen en richtlijnen voor het app-logo van Intune](https://github.com/msintuneappsdk/intune-app-partner-badge) vinden op de Microsoft Intune GitHub.
-

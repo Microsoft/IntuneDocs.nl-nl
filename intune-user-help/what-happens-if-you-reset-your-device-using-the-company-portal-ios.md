@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Wat gebeurt er als u uw iOS-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
 Wanneer u de bedrijfsportal gebruikt om uw iPhone of iPad opnieuw in te stellen, worden enkele apps en instellingen op het apparaat, waaronder een deel van uw persoonlijke gegevens, mogelijk verwijderd. Wat er op elk apparaat gebeurt, is afhankelijk van hoe u het apparaat gebruikt, zoals beschreven in de volgende lijsten.
@@ -44,4 +39,3 @@ Wanneer u de bedrijfsportal gebruikt om uw iPhone of iPad opnieuw in te stellen,
 -   Uw bedrijfse-mailaccount wordt verwijderd en niet-opgeslagen e-mailberichten worden verwijderd.
 
 Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
-

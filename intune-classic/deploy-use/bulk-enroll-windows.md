@@ -1,5 +1,5 @@
 ---
-title: Bulkregistratie voor Windows 10 | Microsoft Docs
+title: Bulkinschrijving voor Windows 10
 description: Een bulkregistratiepakket voor Microsoft Intune maken
 keywords: 
 author: NathBarn
@@ -13,12 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 027f2ff4e822f7800405bd0f318afe28a47c5a00
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -48,19 +47,19 @@ Voor bulkregistratie van Windows-apparaten is het volgende nodig:
   - **Projectmap**: de map waar het nieuwe project wordt opgeslagen
   - **Beschrijving**: een optionele beschrijving van het project ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](../media/bulk-enroll-name.png)
 
-4.    Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%%SERIAL%%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.<BR>
+4.  Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%%SERIAL%%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.<BR>
 ![Schermopname van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](../media/bulk-enroll-device.png)
 
-5.    U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als dit niet is geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.
+5.  U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als dit niet is geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.
 ![Schermafbeelding van het inschakelen van Wi-Fi met de opties Netwerk-SSID en Netwerktype in de app Windows Configuration Designer](../media/bulk-enroll-network.png)
 
-6.    Selecteer **Enroll in Azure AD**, voer een datum van **Bulk Token Expiry** in en selecteer vervolgens **Get Bulk Token**.
+6.  Selecteer **Enroll in Azure AD**, voer een datum van **Bulk Token Expiry** in en selecteer vervolgens **Get Bulk Token**.
 ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](../media/bulk-enroll-account.png)
 
 7. Geef uw Azure AD-referenties op om een bulk-token op te halen.
 ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](../media/bulk-enroll-cred.png)
 
-8.    Klik op **Volgende** wanneer de **Bulk Token** is opgehaald.
+8.  Klik op **Volgende** wanneer de **Bulk Token** is opgehaald.
 
 9. U kunt eventueel **toepassingen toevoegen** en **certificaten toevoegen**. Deze apps en certificaten worden ingericht op het apparaat.
 
@@ -88,4 +87,3 @@ Inrichten is bedoeld om te gebruiken op nieuwe Windows-apparaten. Bij inrichting
 
 - Als een inrichtingspakket probeert lid te worden van een Active Directory-domein of Azure Active Directory-tenant en er hierbij geen lokaal account wordt gemaakt, kan het apparaat onbereikbaar worden als het lid worden van het domein mislukt omdat er geen netwerkverbinding is.
 - Scripts die worden uitgevoerd door het inrichtingspakket, worden uitgevoerd in de systeemcontext en hiermee kunnen willekeurige wijzigingen worden aangebracht aan het bestandssysteem en de configuraties van het apparaat. Door een schadelijk of fout script kan het apparaat in een status komen die alleen kan worden beëindigd door een installatiekopie terug te zetten op het apparaat of het apparaat terug te zetten op de fabrieksinstellingen.
-

@@ -1,7 +1,7 @@
 ---
 title: Android-apps met beveiligingsbeleid voor apps
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid.'
+titleSuffix: Intune on Azure
+description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c1704e5e63be434eaacaeec6e575640310ce74b3
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]In dit onderwerp wordt de gebruikerservaring voor apps met app-beveiligingsbeleid beschreven. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, dus wanneer u apps gebruikt met uw werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]In dit onderwerp wordt de gebruikerservaring voor apps met app-beveiligingsbeleid beschreven. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, dus wanneer u apps gebruikt met uw werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
 ##  <a name="accessing-apps"></a>Apps openen
 
 De bedrijfsportal-app is vereist voor alle apps die zijn gekoppeld aan app-beveiligingsbeleid op Android-apparaten.
@@ -84,4 +81,3 @@ De volgende bestandstypen worden ondersteund:
 
 ### <a name="see-also"></a>Zie tevens
 [App-beveiligingsbeleid maken en implementeren met Microsoft Intune](app-protection-policies.md)
-

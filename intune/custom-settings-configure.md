@@ -1,12 +1,12 @@
 ---
 title: Aangepaste apparaatinstellingen configureren in Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Intune kunt gebruiken voor het configureren van aangepaste instellingen op de apparaten die u beheert.'
+titleSuffix: Intune on Azure
+description: Meer informatie over hoe u Intune kunt gebruiken voor het configureren van aangepaste instellingen op de apparaten die u beheert.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40a37a02ac49a74e3f715b0e2191868ecf2e264b
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Aangepaste apparaatinstellingen configureren in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="when-to-use-custom-settings"></a>Wanneer u aangepaste instellingen moet gebruiken
 
@@ -38,7 +35,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 ## <a name="create-a-device-profile-containing-custom-settings"></a>Een apparaatprofiel met aangepaste instellingen maken
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
@@ -53,7 +50,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
     - [Android-instellingen](custom-settings-android.md)
     - [iOS-instellingen](custom-settings-ios.md)
-    - [macOS-instellingen](custom settings-macos.md)
+    - [macOS-instellingen](custom-settings-macos.md)
     - [Windows Phone 8.1-instellingen](custom-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](custom-settings-windows-10.md)
     - [Android for Work-instellingen](custom-settings-android-for-work.md)
@@ -61,4 +58,3 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
-

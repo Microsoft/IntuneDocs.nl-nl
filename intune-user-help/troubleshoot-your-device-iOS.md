@@ -5,33 +5,30 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 66436fd8-1582-41f5-9c3b-abd914365f2d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c06d03943863f6ab46a0943b08e1d986b210e58a
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-ios-device"></a>Veelvoorkomende problemen met uw iOS-apparaat herstellen
 
 Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor meer gecompliceerde problemen kunt u het best contact opnemen met uw IT-beheerder via de contactgegevens op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
 
 - [Ik moet opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 - [Ik wil fouten naar mijn IT-beheerder verzenden](send-errors-to-your-it-admin-ios.md)
+- [Ik wil fouten naar Microsoft verzenden](send-logs-to-microsoft-ios.md)
 - [Er treedt een fout op tijdens het gebruik van de Bedrijfsportal-app](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Ik moet mijn apparaat identificeren om in te schrijven](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -39,4 +36,3 @@ Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hers
 - [Mijn versie van iOS wordt nog niet ondersteund](your-ios-version-isnt-yet-supported.md)
 - [Ik moet een Mobile Threat Defense-app installeren op mijn iOS-apparaat](you-are-prompted-to-install-mtd-ios.md)
 - [Ik moet een bedreiging oplossen die een Mobile Threat Defense-app op mijn iOS-apparaat heeft gevonden](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
-

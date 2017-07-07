@@ -1,7 +1,7 @@
 ---
-title: Windows Line-Of-Business-apps toevoegen aan Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over het toevoegen van Windows Line-Of-Business-apps aan Intune.'
+title: Windows-Line-Of-Business-apps toevoegen aan Intune
+titleSuffix: Intune on Azure
+description: In dit onderwerp vindt u meer informatie over het toevoegen van Windows-Line-Of-Business-apps aan Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 696c8f8e72e21c792474f5e52fad9054b3dfade9
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 8f8be4f6bf47ceb966e9042465dc8839d9aa9119
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
@@ -68,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 2. Kies **Toevoegen** om de app te uploaden naar Intune.
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.
-

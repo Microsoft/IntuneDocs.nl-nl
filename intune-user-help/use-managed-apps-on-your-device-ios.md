@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
 Beheerde apps zijn apps die door de IT-beheerder kunnen worden ingesteld zodat de bedrijfsgegevens die toegankelijk zijn in die app, kunnen worden beveiligd. Wanneer u met bedrijfsgegevens in een beheerde app op uw iOS-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
@@ -65,4 +61,3 @@ Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beh
 -   Vereisten voor de versleuteling van gegevens
 
 Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

@@ -1,5 +1,5 @@
 ---
-title: Kiezen hoe u apparaten beheert |Microsoft Docs
+title: Kiezen hoe u apparaten beheert
 description: Meer informatie over de verschillende manieren waarop u apparaten kunt registreren en beheren.
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>Kiezen hoe u apparaten beheert
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,12 +45,11 @@ Registreer Windows-pc's voor de meeste functionaliteit. De Intune-softwareclient
 - Endpoint Protection en Windows Firewall
 - Hulp op afstand voor gebruikers die de TeamViewer-software gebruiken
 
-Zie [Beheermogelijkheden voor mobiele apparaten](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) voor een gedetailleerd overzicht van de beheermogelijkheden van beide methoden.
-Zie [Ondersteunde mobiele apparaten en computers](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
+Zie [Mobile device managem/intune/supported-devices-browserssoft-intune) voor een gedetailleerd overzicht van de beheermogelijkheden voor elke methode.
+Zie [Ondersteunde mobiele apparaten en computers](/intune/supported-devices-browsers#intune-supported-devices) voor meer informatie over de apparaten en pc's die ondersteuning bieden voor Intune.
 
 ## <a name="next-steps"></a>Volgende stappen
 
 - [Kiezen hoe u mobiele apparaten registreert](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [Windows-pc's beheren met de Intune-pc-clientsoftware](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [Mobiele apparaten met Exchange ActiveSync beheren met Microsoft Intune](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-

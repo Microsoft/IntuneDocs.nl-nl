@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi met PSK | Microsoft Docs
+title: Wi-Fi met PSK
 description: Aangepaste configuratie van Intune gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel.
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 
@@ -30,24 +27,24 @@ ms.lasthandoff: 05/23/2017
 Hieronder wordt beschreven hoe u de **aangepaste configuratie** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
--    Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
+-   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
 - Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
--    U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
+-   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
 -  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
 
 
-1.    Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een beleid **Aangepaste configuratie** voor dat apparaatplatform en maakt u geen Wi-Fi profiel.
+1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een beleid **Aangepaste configuratie** voor dat apparaatplatform en maakt u geen Wi-Fi profiel.
 
-2.    Geef een naam en beschrijving op.
-3.    Een nieuwe OMA-URI-instelling toevoegen:
+2.  Geef een naam en beschrijving op.
+3.  Een nieuwe OMA-URI-instelling toevoegen:
 
-   a.    Voer een naam in voor deze Wi-Fi-netwerkinstelling.
+   a.   Voer een naam in voor deze Wi-Fi-netwerkinstelling.
 
-   b.    Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
+   b.   Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
 
-   c.    **Gegevenstype**: ingesteld op String(XML)
+   c.   **Gegevenstype**: ingesteld op String(XML)
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -221,4 +218,3 @@ Wanneer u een geïmplementeerd beleid selecteert, kunt u meer informatie over de
 
 ### <a name="see-also"></a>Zie tevens
 [Wi-Fi-verbindingen in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
-

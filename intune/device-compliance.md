@@ -1,7 +1,7 @@
 ---
 title: Apparaatnaleving
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: gebruik dit onderwerp voor meer informatie over apparaatnaleving in Microsoft Intune'
+titleSuffix: Intune on Azure
+description: Meer informatie over apparaatnaleving in Microsoft Intune
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>Wat is apparaatnaleving in Intune?
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Wat is apparaatnaleving in Intune Azure Preview?
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Met nalevingsbeleid in Intune definieert u de regels en instellingen waaraan een apparaat moet voldoen om ook te voldoen aan het beleid voor voorwaardelijke toegang voor Intune en EMS. U kunt ook een nalevingsbeleid voor apparaten gebruiken om nalevingsproblemen met apparaten te bewaken en op te lossen. 
 
@@ -79,7 +76,7 @@ Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten ge
 
 U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving. Zie Instellingen en functies op uw apparaten beheren voor meer informatie over hoe lang het duurt voordat mobiele apparaten een beleid krijgen nadat het beleid is geïmplementeerd.
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Klassieke Intune-beheerconsole vs. Intune Azure Preview Portal
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Klassieke Intune-beheerconsole vs. Intune in Azure Portal
 
 Als u de klassieke Intune-beheerconsole gebruikt, moet u rekening houden met de volgende verschillen bij de overgang naar een nieuwe werkstroom voor het nalevingsbeleid voor apparaten in Azure Portal:
 
@@ -89,7 +86,7 @@ Als u de klassieke Intune-beheerconsole gebruikt, moet u rekening houden met de 
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migratie van de klassieke Intune-console naar Intune Azure Preview Portal
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Migratie van de klassieke Intune-console naar Intune in Azure Portal
 
 Nalevingsbeleid voor apparaten dat is gemaakt in de [klassieke Intune-console](https://manage.microsoft.com) wordt niet weergegeven in de nieuwe [Intune Azure Portal](https://portal.azure.com). Dit nalevingsbeleid wordt echter nog steeds toegepast op gebruikers en beheerd via de klassieke Intune-console.
 
@@ -103,4 +100,3 @@ Als u gebruik wilt maken van de nieuwe functies voor het nalevingsbeleid voor ap
 <!---### See also
 
 Conditional access--->
-

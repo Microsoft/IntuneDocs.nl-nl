@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
 
@@ -101,4 +97,3 @@ Microsoft raadt u aan eerst te proberen uw probleem zelf te verhelpen. Er is een
 - [Veelvoorkomende problemen met uw Windows-apparaat oplossen](troubleshoot-your-device-windows.md)
 
 U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met uw IT-beheerder voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
-

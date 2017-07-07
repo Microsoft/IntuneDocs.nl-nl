@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-ios-device-in-intune"></a>Uw iOS-apparaat inschrijven bij Intune
 
 Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat inschrijf bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie over inschrijving.
@@ -65,7 +60,7 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-appara
 
 5.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **Registreren**.
 
-     ![IOS-registreren-de-volgende-stap](./media/ios-enroll-1d-what-comes-next.png)
+    ![IOS-registreren-de-volgende-stap](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Tik in het scherm **Profiel installeren** op **Installeren** en voer de wachtwoordcode in als daarom wordt gevraagd.
 
@@ -77,15 +72,15 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-appara
 
 8.  Tik op **Installeren** om aan te geven dat u de waarschuwing hebt gelezen.
 
-       ![IOS-registreren-tik-op-installeren-na-waarschuwing](./media/ios-enroll-4-warning.png)
+    ![IOS-registreren-tik-op-installeren-na-waarschuwing](./media/ios-enroll-4-warning.png)
 
 9.  Tik op **Vertrouwen**.
 
-       ![IOS-registreren-tik-op-vertrouwen](./media/ios-enroll-5-trust.png)
+    ![IOS-registreren-tik-op-vertrouwen](./media/ios-enroll-5-trust.png)
 
 10.  Wanneer het scherm verandert om weer te geven dat het profiel is geïnstalleerd, tikt u op **Gereed**.
 
-     ![ios-registreren-tik-op-gereed](./media/ios-enroll-6-done.png)
+    ![ios-registreren-tik-op-gereed](./media/ios-enroll-6-done.png)
 
     Het bericht 'Apparaat registreren' wordt weergegeven op het scherm.
 
@@ -107,4 +102,3 @@ Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsporta
 > Als uw organisatie gebruikmaakt van Telecom Expense Management-software, zijn er een aantal aanvullende stappen die u moet doorlopen om uw apparaat volledig in te schrijven. Zie [hier](enroll-your-device-with-telecom-expense-management-ios.md) voor meer informatie.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

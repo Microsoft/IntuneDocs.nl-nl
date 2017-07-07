@@ -1,7 +1,7 @@
 ---
 title: E-mailinstellingen voor iOS-apparaten in Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op iOS-apparaten te configureren.'
+titleSuffix: Intune on Azure
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op iOS-apparaten te configureren.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f941247295761815804b2e91234ce664c90e06f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>E-mailprofielinstellingen voor iOS-apparaten in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -43,4 +40,3 @@ ms.lasthandoff: 05/23/2017
 - **Toestaan dat berichten worden verplaatst naar andere e-mailaccounts**: selecteer deze optie om gebruikers toe te staan e-mailberichten te verplaatsen naar andere accounts die op hun apparaat zijn geconfigureerd.
 - **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**: sta de gebruiker toe dit profiel te selecteren als het standaardaccount voor het verzenden van e-mail en sta toepassingen van derden toe e-mail te openen in de systeemeigen e-mail-app, om bijvoorbeeld bestanden als bijlagen aan e-mail toe te voegen.
 - **Recent gebruikte e-mailadressen synchroniseren**: met deze functie wordt gebruikers toegestaan de lijst te synchroniseren met e-mailadressen die onlangs zijn gebruikt op het apparaat met de server.
-

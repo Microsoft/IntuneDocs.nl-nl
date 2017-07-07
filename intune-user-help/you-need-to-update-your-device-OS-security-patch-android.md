@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>U moet het besturingssysteem van uw Android-apparaat bijwerken
 
 Als er een bericht wordt weergegeven met de boodschap dat het minimale niveau voor de Android-beveiligingspatch niet is geconfigureerd, moet u een update installeren om de beveiliging van uw apparaat te waarborgen. Een _patch_ wordt uitgebracht om ervoor te zorgen dat uw software probleem blijft werken en up-to-date is. De IT-beheerder eist dat u deze patch installeert om ervoor te zorgen dat de bedrijfsgegevens op uw apparaat zo goed mogelijk worden beveiligd. De locatie van de benodigde beveiligingspatch varieert en is afhankelijk van het specifieke type Samsung-apparaat dat u hebt.
@@ -43,4 +39,3 @@ Ga naar **Instellingen** > **Systeemupdates** > **Controleren op nieuwe systeemu
 
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

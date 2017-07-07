@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-when-you-create-a-work-profile"></a>Wat gebeurt er wanneer u een werkprofiel maakt
 
 Een werkprofiel is iets dat u instelt op het apparaat om uw e‑mail, apps en bestanden op het werk of op school gescheiden te houden van uw persoonlijke gegevens.
@@ -49,4 +44,3 @@ Houd rekening met het volgende wanneer u een werkprofiel maakt:
 Zie [Een werkprofiel maken en uw apparaat registreren](create-a-work-profile-and-enroll-your-device-in-intune-android.md) voor de stapsgewijze procedure voor het maken van een werkprofiel.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

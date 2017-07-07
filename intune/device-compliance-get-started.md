@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met nalevingsbeleid
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp vindt u informatie over de vereisten voor het maken van een nalevingsbeleid in Microsoft Intune'
+titleSuffix: Intune on Azure
+description: Meer informatie over de vereisten voor het maken van een nalevingsbeleid in Microsoft Intune
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,24 +15,21 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="get-started-with-device-compliance-in-intune"></a>Aan de slag met apparaatnaleving in Intune
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Aan de slag met apparaatnaleving in Intune Azure Preview
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 In dit onderwerp wordt het volgende uitgelegd: 
 
 - Wat u nodig hebt voordat u een nalevingsbeleid voor apparaten kunt maken.
-- Een kort overzicht van wat u kunt zien en doen in Intune Azure Preview Portal. 
+- Een kort overzicht van wat u kunt zien en doen in Intune Azure Portal. 
 
 Als u niet bekend bent met apparaatnaleving, kunt u [dit onderwerp](device-compliance.md) doorlezen voor meer informatie over wat apparaatnaleving is en hoe u een dergelijk beleid in uw organisatie kunt gebruiken.
 
@@ -56,7 +53,7 @@ Als u niet bekend bent met apparaatnaleving, kunt u [dit onderwerp](device-compl
 
 ##  <a name="azure-portal-workflow"></a>Azure Portal-werkstroom
 
-Hier vindt u een overzicht van hoe u een nalevingsbeleid voor apparaten kunt maken en beheren in Intune Azure Preview Portal.
+Hier vindt u een overzicht van hoe u een apparaatnalevingsbeleid kunt maken en beheren in de Intune Azure Portal.
 
 <!---### Overview
 
@@ -83,4 +80,3 @@ Geldigheidsperiode van nalevingsstatus
 [Een nalevingsbeleid maken voor iOS](compliance-policy-create-ios.md)
 
 [Een nalevingsbeleid maken voor Windows](compliance-policy-create-windows.md)
-

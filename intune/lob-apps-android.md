@@ -1,7 +1,7 @@
 ---
 title: Android-Line-Of-Business-apps toevoegen aan Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over het toevoegen van Android-Line-Of-Business-apps aan Intune.'
+titleSuffix: Intune on Azure
+description: In dit onderwerp vindt u meer informatie over het toevoegen van Android-Line-Of-Business-apps aan Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b3725c73433a2b5628e6836114ac0023b3ef26a9
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 52a762e0d8990ab96053f5d3a092b3731ee00ca0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Android-Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
@@ -68,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 2. Kies **Toevoegen** om de app te uploaden naar Intune.
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.
-
