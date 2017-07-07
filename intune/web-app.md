@@ -1,7 +1,7 @@
 ---
 title: Web-apps toevoegen aan Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het toevoegen van web-apps aan Intune.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het toevoegen van web-apps aan Intune.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ac53d01e57ed302cae202a10fcc22996a47d576d
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 476e547f2ee21119443b08db0984f66844f701d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-web-apps-to-microsoft-intune"></a>Web-apps toevoegen aan Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.

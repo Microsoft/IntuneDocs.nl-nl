@@ -1,7 +1,7 @@
 ---
 title: Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: een aangepast Intune-profiel gebruiken om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken.'
+titleSuffix: Intune on Azure
+description: Een aangepast Intune-profiel gebruiken om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,39 +15,36 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast Microsoft Intune-apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Hieronder wordt beschreven hoe u de **aangepaste apparaatprofielen** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
 
 > [!NOTE]
--    Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
+-   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
 - Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
--    U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
+-   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
 -  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
 
 
-1.    Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een apparaatprofiel **Aangepast** voor dat apparaatplatform en maakt u geen Wi-Fi-profiel.
+1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een apparaatprofiel **Aangepast** voor dat apparaatplatform en maakt u geen Wi-Fi-profiel.
 
-2.    Geef een naam en beschrijving op.
-3.    Een nieuwe OMA-URI-instelling toevoegen:
+2.  Geef een naam en beschrijving op.
+3.  Een nieuwe OMA-URI-instelling toevoegen:
 
-   a.    Voer een naam in voor deze Wi-Fi-netwerkinstelling.
+   a.   Voer een naam in voor deze Wi-Fi-netwerkinstelling.
 
-   b.    Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
+   b.   Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
 
-   c.    **Gegevenstype**: ingesteld op **Tekenreeks**.
+   c.   **Gegevenstype**: ingesteld op **Tekenreeks**.
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -208,4 +205,3 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
     Het is raadzaam een computer te gebruiken die niet met veel draadloze netwerken verbinding heeft gemaakt, omdat u alle profielen moet doorzoeken om het juiste te vinden.
 3.     Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 4.     Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld Gegevens van de pagina OMA-URI-instellingen.
-

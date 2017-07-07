@@ -1,7 +1,7 @@
 ---
 title: Wat is beveiligingsbeleid voor apps
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: gebruik dit onderwerp voor meer informatie om de gegevens van uw bedrijf te beveiligen met het beveiligingsbeleid voor apps van Microsoft Intune.'
+titleSuffix: Intune on Azure
+description: Gebruik dit onderwerp voor meer informatie om de gegevens van uw bedrijf te beveiligen met het beveiligingsbeleid voor apps van Microsoft Intune.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Met het beveiligingsbeleid voor apps van Microsoft Intune kunt u uw bedrijfsgegevens beveiligen en voorkomen dat gegevens verloren gaan.
 
@@ -68,7 +65,7 @@ Het gebruik van MDM met het beveiligingsbeleid voor apps biedt extra voordelen e
 
 -   Android 4 of hoger
 
-Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
+Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen
 
 ####  <a name="apps-without-app-protection-policies"></a>Apps zonder het beveiligingsbeleid voor apps
@@ -138,4 +135,3 @@ Wanneer een gebruiker de OneDrive-app start vanaf een werkaccount, kan hij de be
 ##  <a name="next-steps"></a>Volgende stappen
 
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](app-protection-policies.md)
-

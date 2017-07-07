@@ -1,7 +1,7 @@
 ---
 title: Nalevingsbeleid voor Intune-apparaten controleren
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u de nalevingsbeleid voor apparaten kunt controleren.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het controleren van het nalevingsbeleid voor apparaten.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -123,8 +121,6 @@ Als u op de **knop Filteren** klikt, wordt het uitvoegfilter geopend met de volg
 
 Als u op de **knop Bijwerken** klikt, wordt het uitvoegfilter gesloten en worden resultaten bijgewerkt aan de hand van de geselecteerde filtercriteria.
 
-![De knop Filter bijwerken](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Apparaatgegevens
 
 Wanneer u op een apparaat klikt, wordt de **blade Apparaten** geopend met het geselecteerde apparaat. Deze blade biedt gedetailleerde informatie over de nalevingsbeleidsinstelling die op het apparaat is toegepast.
@@ -154,4 +150,3 @@ Met dit rapport kunt u per nalevingsinstelling het totale aantal apparaten in el
 Als u op de tegel Naleving van instelling klikt, en vervolgens klikt op een van de nalevingsbeleidsinstellingen voor apparaten, ziet u de **nalevingsstatus**, het **e-mailalias van de gebruiker**, het **apparaatmodel** en de **locatie** voor elk apparaat waarop die nalevingsbeleidsinstelling voor apparaten is gericht.
 
 ![Tegel Naleving van instelling](./media/idc-11.png)
-

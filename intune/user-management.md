@@ -1,7 +1,7 @@
 ---
 title: Wat is de workload Gebruikers beheren?
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het bekijken en beheren van gebruikers met Microsoft Intune en Azure.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het bekijken en beheren van gebruikers met Microsoft Intune en Azure.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,19 +14,16 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>Wat is gebruikersbeheer?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Als u niet bekend bent met Intune in Azure Portal, moet u weten dat u geen groepen voor Intune meer kunt maken. Intune gebruikt Azure AD-groepen net als veel andere toepassingen die u gebruikt.
 
@@ -45,4 +42,3 @@ Als u groepen wilt beheren in [Azure Portal](https://portal.azure.com), zoekt u 
 ## <a name="next-step"></a>Volgende stap
 
 [Aan de slag met groepen](groups-get-started.md)
-
