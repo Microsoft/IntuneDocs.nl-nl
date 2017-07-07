@@ -14,15 +14,12 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8fc53e8717277a4075bc7ecde31fd60c3539a5f7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Alleen mobiele apps met ondersteuning voor app-beschermingsbeleid van Intune toegang geven tot Office 365-services
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -70,4 +67,3 @@ Zie [Wat u kunt verwachten wanneer u een app met MAM CA gebruikt](use-apps-with-
 ### <a name="see-also"></a>Zie tevens
 
 [Beveilig app-gegevens met beveiligingsbeleid voor apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

@@ -1,5 +1,5 @@
 ---
-title: E-mail en Office 365 beveiligen | Microsoft Docs
+title: E-mail en Office 365 beveiligen
 description: In dit onderwerp wordt beschreven hoe u voorwaardelijke toegang gebruikt om alleen compatibele apparaten toegang te geven tot e-mail en bedrijfsgegevens op SharePoint Online en andere services.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>De toegang tot e-mail, Office 365-services en andere services beveiligen met Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ Microsoft Intune en Azure Active Directory (Azure AD) Premium werken naadloos sa
 
 - Raadpleeg de [Enterprise Mobility-pagina met prijzen](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) of de [Azure Active Directory-pagina met prijzen](https://azure.microsoft.com/pricing/details/active-directory/) voor meer informatie.
 
-Controleer ook of de gebruikers voor wie u beleid voor voorwaardelijke toegang wilt instellen, [de Azure AD Premium- of EMS-licenties toegewezen hebben gekregen](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+Controleer ook of de gebruikers voor wie u beleid voor voorwaardelijke toegang wilt instellen, [de Azure AD Premium- of EMS-licenties toegewezen hebben gekregen](/intune/licenses-assign).
 
 ### <a name="device-compliance-settings"></a>Instellingen voor nalevingsbeleid voor apparaten
 
@@ -83,4 +80,3 @@ In tegenstelling tot andere Intune-beleidsregels implementeert u geen beleidsreg
   - [Beleid voor voorwaardelijke toegang maken voor SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Beleid voor voorwaardelijke toegang maken voor Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Beleid voor voorwaardelijke toegang maken voor Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

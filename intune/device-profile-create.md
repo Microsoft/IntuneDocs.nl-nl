@@ -1,12 +1,12 @@
 ---
-title: Apparaatconfiguratieprofielen in Intune maken | Intune Azure Preview
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u apparaatconfiguratieprofielen in Intune kunt maken.'
+title: Intune-apparaatconfiguratieprofielen maken
+titleSuffix: Intune on Azure
+description: Meer informatie over het maken van configuratieprofielen voor Intune-apparaten.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a719b3f53076a55f1e888a9ddf8e98c7074dd25f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6df6813667241d3ad5f8768585f2e1a34f0fe6e3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Apparaatconfiguratieprofielen maken in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Meld u aan bij Azure Portal.
@@ -34,7 +31,7 @@ ms.lasthandoff: 05/23/2017
 3. Kies **Apparaten configureren** op de blade **Intune**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 2. Kies op de blade met de profielenlijst **Profiel maken**.
-3. Geef de volgende informatie op de blade **Profiel maken** op:
+3. Geef op de blade **Profiel maken** de volgende informatie op:
     - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
     - **Beschrijving**: voer een beschrijving in voor het profiel (optioneel).
     - **Platform**: selecteer het platformtype voor het profiel dat u wilt maken.
@@ -60,4 +57,3 @@ Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen
 
 ### <a name="next-steps"></a>Volgende stappen
 Zie [How to assign device profiles with Microsoft Intune](device-profile-assign.md) (Apparaatprofielen toewijzen met Microsoft Intune) voor meer informatie over het toewijzen van apparaatprofielen.
-

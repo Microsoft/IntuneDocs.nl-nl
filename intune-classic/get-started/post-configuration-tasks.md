@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>Taken na configuratie
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ Nadat u de initiële configuratiestappen voor een betaald Intune-abonnement hebt
 -   **Intune-rapporten:** Microsoft Intune biedt waarschuwingen en rapporten waarmee u zowel apparaten als de softwarelicentiestatus en acties die van invloed zijn op apparaten (zoals het wissen van een apparaat), kunt bewaken.  Zie [Inzicht in Microsoft Intune-bewerkingen met behulp van rapporten](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) voor meer informatie over rapporten.
 
 -   **Bedrijfsbronnen beveiligen:** nadat u Intune hebt geconfigureerd en uw apparaten hebt geregistreerd, moet u ervoor zorgen dat de apparaten zijn beveiligd tegen gegevensverlies en andere dreigingen. Zie [Apps en gegevens beveiligen met Microsoft Intune](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune) voor meer informatie over het beveiligen van resources.
-

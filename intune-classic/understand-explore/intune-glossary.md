@@ -1,26 +1,24 @@
 ---
-title: Verklarende woordenlijst Intune | Microsoft Docs
+title: Verklarende woordenlijst voor Intune
 description: Kom meer te weten over een aantal van de belangrijkste termen in Microsoft Intune
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Verklarende woordenlijst voor Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,10 +27,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|App SDK|Met de [Microsoft Intune App SDK](/intune-classic/develop/intune-app-sdk) kunt u functionaliteit toevoegen aan uw interne apps waardoor deze kunnen worden beheerd met behulp van Intune Mobile Application Management-beleid.|
-|App Wrapping Tool|Een [opdrachtregelprogramma](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) waarmee een wrapper rond een Line-Of-Business-app wordt gemaakt, zodat de app vervolgens kan worden beheerd door Intune Mobile Application Management-beleid.|
+|Configuratieprofiel-app|Hiermee configureert u een iOS-app met [specifieke instellingen](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) voordat deze wordt uitgevoerd.|
+|App-implementatie|Hiermee kunnen gebruikers de apps die ze nodig hebben [zoeken, downloaden en installeren](/intune-classic/deploy-use/deploy-apps).|
+|App-controle|Hiermee kunt u [recente status en activiteit controleren](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune) die betrekking hebben op app-implementatie.|
+|Taak app-beveiliging voor het verwijderen van gegevens|[Hiermee verwijdert u de app-gegevens](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) van het apparaat van de gebruiker.|
+|Beleid voor app-beveiliging|Zorgt ervoor dat de apps van de gebruiker compatibel zijn met de [beleidsregels voor gegevensbescherming](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) van uw bedrijf.|
+|App-rapporten|Hiermee kunt u [historische gegevens controleren](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) met betrekking tot implementatiestatus en activiteit.|
+|App SDK|Met de [Microsoft Intune App SDK](/intune/app-sdk) kunt u functionaliteit toevoegen aan uw interne apps waardoor deze kunnen worden beheerd met behulp van Intune Mobile Application Management-beleid.|
+|Actie app verwijderen|Hiermee kunt u [apps verwijderen](/intune-classic/deploy-use/deploy-apps) van de apparaten van gebruikers.|
+|App Wrapping Tool|Een [opdrachtregelprogramma](/intune/apps-prepare-mobile-application-management) waarmee een wrapper rond een Line-Of-Business-app wordt gemaakt, zodat de app vervolgens kan worden beheerd door Intune Mobile Application Management-beleid.|
 |Beschikbare installatie|Als u een app implementeert met behulp van deze actie, wordt deze weergegeven in de bedrijfsportal, en gebruikers kunnen de app [op aanvraag installeren](/intune-classic/deploy-use/deploy-apps).|
-|Azure-portal|Een nieuwe console voor Intune die binnenkort wordt geïntroduceerd. Op dit moment kunt u de Azure-portal gebruiken om [Intune MAM-beleid](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) voor apparaten te maken.|
+|Azure-portal|De nieuwe console voor Intune die binnenkort wordt geïntroduceerd. [Meer informatie over de nieuwe portal](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +61,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |Implementatie|De handeling waarmee een app of een beleid naar een door u beheerd apparaat of door u beheerde gebruiker wordt verzonden.|
 |Implementatieactie|Een keuze die u maakt wanneer u [een app implementeert](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune). U kunt ervoor kiezen om de installatie van een app-verplicht of optioneel te maken, of u kunt de app verwijderen.|
-|Apparaatinschrijvingsmanager|Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. De [device enrollment manager /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)-account is een speciaal Intune-account dat maximaal 1000 apparaten kan inschrijven.|
+|Apparaatinschrijvingsmanager|Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account [voor de apparaatinschrijvingsmanager](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (DEM-account) is een speciaal Intune-account waarmee maximaal duizend apparaten kunnen worden ingeschreven.|
 |Toewijzing van apparaatgroepen|Helpt u bij het [automatisch toevoegen van apparaten aan groepen](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) op basis van een apparaatcategorie (zoals 'Persoonlijk' of 'Verkoop') die u of de eindgebruiker aan het apparaat kunt toewijzen.|
 
 ## <a name="e"></a>E
@@ -64,7 +69,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |E-mailprofiel|Dit beleid kan worden gebruikt voor het instellen van [toegangsinstellingen voor e‑mail ](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) voor specifieke e‑mailclients op mobiele apparaten, zodat de eindgebruiker maar een minimum aan installatiehandelingen hoeft te verrichten.|
 |EMS|Microsoft Enterprise Mobility + Security (voorheen Enterprise Mobility Suite) beveiligt de gegevens van uw bedrijf en zorgt tegelijkertijd dat uw gebruikers [toegang hebben tot de apps en inhoud die ze nodig hebben](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
-|Eindgebruiker|[Gebruikers van apparaten zoals telefoons en pc's](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) die worden beheerd met Intune.|
+|Eindgebruiker|[Gebruikers van apparaten zoals telefoons en pc's](/intune/end-user-educate) die worden beheerd met Intune.|
 |Inschrijven|Microsoft Intune maakt gebruik van [inschrijving](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) om apparaten onder beheer te brengen en toegang tot resources toe te staan.|
 
 ## <a name="f"></a>F
@@ -99,8 +104,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Managed Browser|Dit is een [browsertoepassing](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) die u in uw organisatie kunt implementeren met Microsoft Intune. Een beheerde-browserbeleid bevat een lijst met toegestane of een lijst met geblokkeerde websites waarmee de websites die gebruikers van de beheerde browser kunnen bezoeken, worden beperkt.|
-|Beheer van mobiele toepassingen|Via [Mobile application management /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) kunt u mobiele apps voor uw gebruikers publiceren, pushen, configureren, beveiligen, controleren en bijwerken.
-|Beheer van mobiele apparaten|Via [Mobile device management /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) kunt u apparaten inschrijven bij Intune, zodat u deze apparaten kunt inrichten, configureren, bewaken en er acties op kunt uitvoeren.
+|Beheer van mobiele toepassingen|Via het beheer van mobiele toepassingen [(Mobile Application Management, MAM)](/intune/app-lifecycle) kunt u mobiele apps voor uw gebruikers publiceren, pushen, configureren, beveiligen, bewaken en bijwerken.
+|Beheer van mobiele apparaten|Via het beheer van mobiele apparaten [(Mobile Device Management, MDM)](/intune/device-lifecycle) kunt u apparaten inschrijven bij Intune, zodat u deze apparaten kunt inrichten, configureren, bewaken en er acties op kunt uitvoeren.
 |MDM-instantie|De [MDM-instantie](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune.|
 |Beleid voor de inrichting van mobiele apps|Een iOS-beleid dat u helpt ervoor te zorgen dat [inrichtingsprofielen](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) voor iOS-apps die u implementeert, niet verlopen.|
 |Beleid voor de configuratie van mobiele apps|Een iOS-beleid dat wordt gebruikt voor [ het leveren van instellingen aan compatibele iOS-apps](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) wanneer ze worden uitgevoerd, bijvoorbeeld een bedrijfsnaam of serveradres.|
@@ -148,4 +153,3 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Wi-Fi-profiel|Een beleid dat [draadloze netwerkinstellingen](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) implementeert naar apparaten, waarmee gebruikers verbinding kunnen maken met uw bedrijfsnetwerk zonder dat ze de instellingen hoeven te kennen of te configureren.
-

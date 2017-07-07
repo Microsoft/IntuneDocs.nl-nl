@@ -1,5 +1,5 @@
 ---
-title: Toegang tot netwerken beveiligen met Cisco ISE | Microsoft Docs
+title: De toegang tot netwerken beveiligen met Cisco ISE
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Cisco ISE gebruiken met Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -157,7 +154,7 @@ Geef in de ISE-beheerconsole de volgende instellingswaarden op:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server
 Deze tabel bevat de informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server voor apparaten die worden beheerd door Intune.
 
-|Eigenschap|    Beschrijving|
+|Eigenschap|  Beschrijving|
 |---------------|------------------------------------------------------------|
 |complianceState|De tekenreeks 'waar' of 'onwaar' die aangeeft of het apparaat compatibel of niet compatibel is.|
 |isManaged|De tekenreeks 'waar' of 'onwaar' die aangeeft of de client door Intune wordt beheerd of niet.|
@@ -192,4 +189,3 @@ Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.tech
 ### <a name="see-also"></a>Zie tevens
 
 [Cisco Identity Services Engine-beheerdershandleiding, release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-

@@ -1,5 +1,5 @@
 ---
-title: Groepen maken om gebruikers en apparaten te organiseren | Microsoft Docs
+title: Groepen maken om gebruikers en apparaten in te delen
 description: Gebruikers en groepen voor uw Intune-abonnement maken
 keywords: 
 author: nathbarn
@@ -14,16 +14,12 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 058006b2356d62c77c3a5a6ee0f4c8ed74ed4a50
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a6e9eb087b730c66bcf32f877fd22f2d3be0c121
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-groups-to-organize-users-and-devices"></a>Groepen maken om gebruikers en apparaten in te delen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -87,6 +83,4 @@ Gebruik gebruikersgroepen om software- en apparaatbeleid te implementeren. Stel 
 U vindt de nieuwe groep in de lijst **Groepen** en in de werkruimte **Groepen** onder **Alle gebruikers**. Hier kunt u de groep ook bewerken of verwijderen.
 
 >[!div class="step-by-step"]
-
->[&larr; **Intune-licenties beheren**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Beleid en apps maken** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
+/intune/licenses-assign [&larr; **Intune-licenties beheren**](/intune/licenses-assign)       [**Beleid en apps maken** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

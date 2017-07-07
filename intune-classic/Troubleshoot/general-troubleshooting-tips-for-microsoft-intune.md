@@ -1,5 +1,5 @@
 ---
-title: Algemene tips voor probleemoplossing | Microsoft Docs
+title: Algemene tips voor probleemoplossing
 description: Algemene bronnen voor hulp bij het oplossen van problemen met Intune.
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 63bb7ca097390582d85f3ea7daced42d2a97fbb4
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d348cc2850864206552bf53ab1beec9b9cb55bab
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Algemene tips voor probleemoplossing voor Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -58,7 +55,7 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
   - [Android-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [iOS-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Met gegevens van de beheerdersconsole /intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Met beheerconsolegegevens (bijvoorbeeld voor problemen met de implementatie van beleid) kunt u het gewenste beleid en de status van dit beleid onderzoeken, zoals beschreven in [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## <a name="research-the-solution"></a>Onderzoek doen naar de oplossing
 
@@ -97,4 +94,3 @@ De volgende onderwerpen bieden mogelijke oplossingen voor specifieke problemen. 
 [Problemen met de clientinstallatie oplossen in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Problemen met software-updates oplossen in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-

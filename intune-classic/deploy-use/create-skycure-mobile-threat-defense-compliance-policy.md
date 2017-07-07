@@ -14,15 +14,12 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Het nalevingsbeleid voor Skycure Mobile Threat Defense maken
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -69,4 +66,3 @@ Als onderdeel van de configuratie voor Skycure Mobile Threat Defense in de Skycu
     -   [SharePoint Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
     -   [Skype voor Bedrijven Online](/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
     -   [Dynamics CRM](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)
-

@@ -1,5 +1,5 @@
 ---
-title: MAM-beleid configureren in de Intune-console | Microsoft Docs
+title: MAM-beleid configureren in de Intune-console
 description: "Aan de hand van Mobile Application Management-beleid in Microsoft Intune kunt u de functionaliteit van de door u geïmplementeerde apps aanpassen, zodat deze apps voldoen aan het beleid van uw bedrijf met betrekking tot naleving en beveiliging."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Als u beperkingen wilt toepassen op een app, moet de app gebruikmaken van de Mic
 
 -   **Een door beleid beheerde app gebruiken**. Een door beleid beheerde app beschikt over een ingebouwde App SDK. Om dit type app toe te voegen, geeft u een koppeling op naar de app uit een app store zoals iTunes store of Google Play. Er is geen verdere verwerking vereist voor dit type app. Bekijk de [lijst met apps die u met Mobile Application Management-beleid van Microsoft Intune kunt gebruiken](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Een verpakte app gebruiken**. Een verpakte app is een app die samen met de App SDK wordt verpakt met behulp van Microsoft Intune App Wrapping Tool. Dit hulpprogramma wordt meestal gebruikt voor het verwerken van bedrijfsapps die intern zijn gemaakt. U kunt het niet gebruiken voor het verwerken van apps die zijn gedownload vanuit de app store. Zie voor meer informatie [iOS-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) en [Android-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Een verpakte app gebruiken**. Een verpakte app is een app die samen met de App SDK wordt verpakt met behulp van Microsoft Intune App Wrapping Tool. Dit hulpprogramma wordt meestal gebruikt voor het verwerken van bedrijfsapps die intern zijn gemaakt. U kunt het niet gebruiken voor het verwerken van apps die zijn gedownload vanuit de app store. Zie voor meer informatie [iOS-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](/intune/app-wrapper-prepare-ios) en [Android-apps voorbereiden voor Mobile Application Management met Microsoft Intune App Wrapping Tool](/intune/app-wrapper-prepare-android).
 
-- **Uw eigen app ontwikkelen waarin de Intune App SDK is opgenomen**. Met de Intune App SDK kunt u app-beheerfuncties opnemen in een app terwijl u deze ontwikkelt. Zie [Overzicht van de Intune App SDK](/intune-classic/develop/intune-app-sdk) voor meer informatie.
-
-Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) voor meer informatie over de keuze tussen App Wrapping Tool en de Intune App SDK.
+- **Uw eigen app ontwikkelen waarin de Intune App SDK is opgenomen**. Met de Intune App SDK kunt u app-beheerfuncties opnemen in een app terwijl u deze ontwikkelt. Zie [Overzicht van de Intune App SDK](/intune/app-sdk) voor meer informatie.
+/intune/apps-prepare-mobile-application-management Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](/intune/apps-prepare-mobile-application-management) voor meer informatie over de keuze tussen App Wrapping Tool en de Intune App SDK.
 
 Sommige beheerde apps, zoals de Outlook-app voor iOS en Android, ondersteunen *meerdere identiteiten*. Dit betekent dat Intune alleen beheerinstellingen toepast op bedrijfsaccounts of -gegevens in de app.
 
@@ -197,4 +193,3 @@ In gevallen waarin het apparaat of de gebruiker twee conflicterende sets beleids
 -   Als er al een beleid is geïmplementeerd op het apparaat, worden de bestaande beleidsinstellingen niet overschreven.
 
 -   Als er nog geen beleid is geïmplementeerd op het apparaat en er twee conflicterende instellingen worden geïmplementeerd, wordt de standaardinstelling gebruikt die is ingebouwd in het apparaat.
-

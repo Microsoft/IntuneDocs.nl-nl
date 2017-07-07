@@ -1,5 +1,5 @@
 ---
-title: Vorige versies | Microsoft Docs
+title: Vorige versies
 description: 
 keywords: 
 author: barlanmsft
@@ -14,15 +14,12 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fd1e154aed6b2afecb7a7b24b927f7a5f92acba9
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0226b8677f2a1ac91e2d7512aa45d44928ecbd95
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="previous-intune-releases"></a>Vorige versies van Intune
 
 Deze pagina bevat een overzicht van de aankondigingen in [Wat is er nieuw in Microsoft Intune](whats-new-in-microsoft-intune.md).
@@ -218,4 +215,3 @@ Voordat deze statussen werden toegevoegd, raakten gebruikers in de war als de in
 >[!div class="step-by-step"]
 
 >[&larr; **Wat is er nieuw in Intune?**](whats-new-in-microsoft-intune.md)    
-

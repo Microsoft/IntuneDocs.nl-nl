@@ -1,12 +1,12 @@
 ---
-title: Certificaten configureren met Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het gebruik van Intune om certificaten te maken en toe te wijzen die u helpen Wi-Fi-, VPN- en andere verbindingen te beveiligen.'
+title: Certificaten configureren met Intune
+titleSuffix: Intune on Azure
+description: Meer informatie over het gebruik van Intune om certificaten te maken en toe te wijzen die u helpen Wi-Fi-, VPN- en andere verbindingen te beveiligen.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Certificaten configureren in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze verbindingen verifiëren door certificaten te gebruiken. Hierdoor zijn er geen gebruikersnamen en wachtwoorden meer nodig voor het verifiëren verbindingen.
 
@@ -56,8 +53,8 @@ Elk van deze typen certificaten heeft eigen voorwaarden en infrastructuurvereist
 
     U kunt alleen een SCEP-certificaatprofiel gebruiken voor de volgende platformen:
 
--     macOS 10.9 of hoger
--     Windows Phone 8.1 en hoger
+-   macOS 10.9 of hoger
+-   Windows Phone 8.1 en hoger
 
 U moet voor elk apparaatplatform een afzonderlijk profiel maken. Wanneer u het profiel maakt, koppelt u dit aan het vertrouwde basiscertificaatprofiel dat u al hebt gemaakt.
 
@@ -88,7 +85,7 @@ U moet een profiel voor een vertrouwd certificaat maken voordat u een SCEP- of P
 ### <a name="to-create-a-trusted-certificate-profile"></a>Een profiel voor een vertrouwd certificaat maken
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
@@ -128,4 +125,3 @@ Nadat u een vertrouwd certificaatprofiel hebt gemaakt, maakt u SCEP- of PKCS-cer
 
 ## <a name="next-steps"></a>Volgende stappen
 Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor algemene informatie over het toewijzen van apparaatprofielen.
-

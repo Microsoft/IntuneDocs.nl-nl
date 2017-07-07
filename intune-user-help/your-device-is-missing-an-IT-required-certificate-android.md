@@ -11,20 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>Er ontbreekt een certificaat voor uw Android-apparaat dat wordt vereist door uw IT-beheerder
 
 Als uw apparaat niet bij Intune is geregistreerd en er ontbreekt een bepaald certificaat dat door uw IT-beheerder wordt vereist, kunt u zich niet aanmelden bij de bedrijfsportal-app. Wanneer u zich probeert aan te melden, wordt het volgende bericht weergegeven:
@@ -73,4 +70,3 @@ Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er 
 7. Open de bedrijfsportal-app opnieuw. Nu moet u zich bij de bedrijfsportal-app kunnen aanmelden. Neem contact op met uw IT-beheerder als u hulp nodig hebt.
 
 Als u dezelfde melding omtrent een 'ontbrekend certificaat' ziet als eerder weergegeven en u de procedure al hebt uitgevoerd, is er waarschijnlijk nog een ander certificaat dat met behulp van de IT-beheerder moet worden geïnstalleerd. Neem contact op met uw IT-beheerder voor ondersteuning bij het gebruik van de contactgegevens die beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
-

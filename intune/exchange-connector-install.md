@@ -1,12 +1,12 @@
 ---
-title: Exchange Connector voor on-premises EAS | Microsoft Docs
+title: De Exchange Connector voor on-premises EAS instellen met Intune
 titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: Exchange ActiveSync MDM - gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen de Intune-beheerconsole en de on-premises Exchange Server'
+description: 'Intune Azure Preview: Exchange ActiveSync MDM: gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen Intune- en de on-premises Exchange Server'
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,24 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 317b88e289fce216916dfa4ec3890ba7c9559c16
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Intune on-premises Exchange Connector instellen in Microsoft Intune Azure Preview
 
-# <a name="install-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Intune On-premises Exchange Connector installeren in Microsoft Intune Azure Preview
+In on-premises Exchange Server-omgevingen kunt u de Intune on-premises Exchange connector voor gebruiken om de toegang van apparaten tot lokale Exchange-postvakken te beheren op basis van het feit of de apparaten zijn ingeschreven bij Intune en voldoen aan het Intune-nalevingsbeleid voor apparaten. De on-premises Exchange Connector is tevens verantwoordelijk voor het detecteren van mobiele apparaten die verbinding maken met on-premises Exchange-Servers door het bestaande EAS-record (Exchange Active Sync ) te synchroniseren met Intune.
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+> [!IMPORTANT]
+> Intune ondersteunt slechts één type on-premises Exchange Connector-verbinding per abonnement.
 
+Als u een verbinding wilt instellen waarmee Microsoft Intune kan communiceren met de on-premises Exchange-Server, volgt u de volgende stappen:
 
-Als u een verbinding wilt instellen waarmee Microsoft Intune kan communiceren met de Exchange Server die als host fungeert voor de postvakken voor de mobiele apparaten, moet u On-premises Exchange Connector vanuit de Intune-beheerconsole downloaden en configureren. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
+1.  Download de Intune on-premises Exchange Connector van de Intune-portal.
+2.  Installeer en configureer de Intune on-premises Exchange Connector.
+3.  Valideer de Exchange-verbinding.
 
 ## <a name="on-premises-exchange-connector-requirements"></a>Vereisten voor On-premises Exchange Connector
 De volgende tabel bevat de vereisten voor de computer waarop u On-premises Exchange Connector installeert.
@@ -39,8 +42,8 @@ De volgende tabel bevat de vereisten voor de computer waarop u On-premises Excha
 |Besturingssystemen|Intune ondersteunt On-premises Exchange Connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012 of Windows Server 2012 R2 wordt uitgevoerd.<br /><br />Connector wordt niet ondersteund op een Server Core-installatie.|
 |Microsoft Exchange|On-premises Connector vereist Microsoft Exchange 2010 SP1 of hoger, of het oudere Exchange Online-specifiek. Om te bepalen of uw omgeving met Exchange Online-specifiek de **nieuwe** of **verouderde** configuratie heeft, neemt u contact op met uw accountmanager.|
 |Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
-|Hardware|De computer waarop u de connector installeert, vereist een 1,6 GHz CPU met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte.|
-|Active Directory-synchronisatie|Voordat u Connector kunt gebruiken om Intune te verbinden met uw Exchange-server, moet u [Active Directory-synchronisatie instellen](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
+|Hardware|De computer waarop u de connector installeert, vereist een 1,6 GHz CPU met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte.|gebruikers-machtigingen-add.md
+|Active Directory-synchronisatie|Voordat u Connector kunt gebruiken om Intune te verbinden met uw Exchange-server, moet u [Active Directory-synchronisatie instellen](users-permissions-add.md), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
 |Aanvullende software|Een volledige installatie van Microsoft .NET Framework 4.5 en Windows PowerShell 2.0 moet worden geïnstalleerd op de computer die als host fungeert voor de connector.|
 |Netwerk|De computer waarop u de connector installeert, moet zich in een domein bevinden dat een vertrouwensrelatie heeft met het domein dat als host fungeert voor uw Exchange-server.<br /><br />Voor de computer zijn configuraties vereist die de computer toegang geven tot de Intune-service via firewalls en proxyservers via de poorten 80 en 443. Domeinen die door Intune worden gebruikt, zijn onder meer manage.microsoft.com, &#42;manage.microsoft.com en &#42;.manage.microsoft.com.|
 
@@ -65,17 +68,18 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor On-premises Exchange Connector downloaden
 
-1. Open [Azure Portal](http://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor On-premises Exchange Connector met een gebruikersaccount dat een beheerder is in de Exchange-tenant en dat een licentie heeft om Exchange Server te gebruiken.
+1. Open [Azure Portal](http://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor on-premises Exchange Connector en meld u aan met een gebruikersaccount dat een beheerder is in de on-premises Exchange-server en dat een licentie heeft om Exchange Server te gebruiken.
 
-2.  Kies de workload **Voorwaardelijke toegang**.
-3.  Kies de workload **Voorwaardelijke toegang** in Azure Portal om de blade **On-premises** te openen.
+2. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
-4. Kies **On-premises Exchange ActiveSync-connector** in de sectie **Instellen** en kies **De on-premises connector downloaden**.
+3. Kies **Intune**. Het Intune-dashboard wordt geopend. Kies vervolgens **on-premises toegang**.
 
-4.  On-premises Exchange Connector bevindt zich in een gecomprimeerde map (.zip) die kan worden geopend of opgeslagen. Kies in het dialoogvenster **Bestand downloaden** de optie **Opslaan** om de gecomprimeerde map op een veilige locatie op te slaan.
+4. Kies op de blade **On-premises toegang - Exchange ActiveSync-connector** in de sectie **Instellen**, de optie **De on-premises connector downloaden**.
 
-> [!IMPORTANT]
-> Wijzig of verplaats de bestanden in de On-Premises Exchange Connector-map niet. Als er inhoud van de map wordt hernoemd of verplaatst, wordt de installatie afgebroken.
+5.  On-premises Exchange Connector bevindt zich in een gecomprimeerde map (.zip) die kan worden geopend of opgeslagen. Kies in het dialoogvenster **Bestand downloaden** de optie **Opslaan** om de gecomprimeerde map op een veilige locatie op te slaan.
+
+    > [!IMPORTANT]
+    > Wijzig of verplaats de bestanden in de on-premises Exchange Connector-map niet. Als er inhoud van de map wordt hernoemd of verplaatst, wordt de installatie van Exchange Connector afgebroken.
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Intune On-Premises Exchange Connector installeren en configureren
 Voer de volgende stappen uit om Intune On-Premises Exchange Connector te installeren. On-Premises Exchange Connector kan maar eenmaal per Intune-abonnement worden geïnstalleerd en slechts op één computer. Als u probeert een extra On-Premises Exchange Connector te configureren, wordt de oorspronkelijke verbinding vervangen door de nieuwe.
@@ -120,7 +124,8 @@ Voer de volgende stappen uit om Intune On-Premises Exchange Connector te install
 
     8. Kies **Verbinding maken**.
 
-Het kan enkele minuten duren voordat de verbinding is geconfigureerd.
+    > [!NOTE]
+    > Het kan enkele minuten duren voordat de verbinding is geconfigureerd.
 
 Tijdens het configureren slaat de Exchange Connector uw proxy-instellingen voor toegang tot internet op. Als de proxy-instellingen worden gewijzigd, moet u Exchange Connector opnieuw configureren om de bijgewerkte proxy-instellingen toe te passen op Exchange Connector.
 
@@ -131,10 +136,11 @@ Nadat Exchange Connector de verbinding heeft ingesteld, worden de mobiele appara
 
 ## <a name="validate-the-exchange-connection"></a>De Exchange-verbinding valideren
 
-Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. Kies **Intune** > **Voorwaardelijke toegang** (workload) in [Azure Portal](http://portal.azure.com). Selecteer **On-premises Exchange Connector** onder **Instellen** en controleer of de verbinding als actief wordt weergegeven.
+Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. De Exchange Connector-verbinding valideren:
+
+- Kies op het Intune-dashboard de optie **On-premises toegang**. Selecteer onder **Beheren** de optie **Exchange on-premises toegang** om de status van de verbinding te verifiëren.
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
 
 ## <a name="next-steps"></a>Volgende stappen
 [Een beleid maken voor voorwaardelijke toegang voor Exchange On-Premises](conditional-access-exchange-create.md)
-

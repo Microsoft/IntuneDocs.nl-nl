@@ -1,12 +1,12 @@
 ---
-title: Gegevensoverdracht tussen iOS-apps beheren | Intune Azure Preview
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: lees dit onderwerp om te begrijpen hoe u de functie iOS openen in en beleidsregels voor het beheren van mobiele apps kunt gebruiken voor het beheren van de gegevensoverdracht tussen apps.'
+title: Gegevensoverdracht tussen iOS-apps beheren
+titleSuffix: Intune on Azure
+description: Lees dit onderwerp om te begrijpen hoe u de functie iOS openen in en beleidsregels voor het beheren van mobiele apps kunt gebruiken voor het beheren van de gegevensoverdracht tussen apps.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Gegevensoverdracht tussen iOS-apps beheren
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
 Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestandsoverdracht tot apps die door u worden beheerd.  U kunt iOS-apps op de volgende manieren beheren:
@@ -36,7 +33,7 @@ De functie **Openen in beheer** voor iOS-apparaten beperkt de bestandsoverdracht
 ##  <a name="using-app-protection-with-ios-apps"></a>App-beveiliging gebruiken met iOS-apps
 Een app-beveiligingsbeleid kan worden gebruikt met de iOS-functie **Openen in beheer** om bedrijfsgegevens op de volgende manieren te beveiligen:
 
--   **Apparaten die eigendom zijn van werknemers en die niet worden beheerd met een MDM-oplossing:** u kunt de app-beveiligingsbeleidsinstellingen instellen op **App toestaan om alleen gegevens over te dragen naar beheerde apps**. De eindgebruiker kan het beveiligde bestand niet openen in een app die niet door beleid wordt beheerd.
+-   **Apparaten die eigendom zijn van werknemers en die niet worden beheerd met een MDM-oplossing:** u kunt de app-beveiligingsbeleidsinstellingen instellen op **App toestaan om alleen gegevens over te dragen naar door beleid beheerde apps**. Het gedrag Open-In in een door beleid beheerde app presenteert alleen andere door beleid beheerde apps als een optie voor delen. Als een gebruiker een met beleid beveiligd bestand als bijlage van OneDrive via de systeemeigen e-mail probeert te verzenden, is dat bestand onleesbaar.
 
 -   **Apparaten die worden beheerd met Intune:** voor apparaten die zijn ingeschreven in Intune, wordt de gegevensoverdracht tussen apps met een app-beveiligingsbeleid en andere beheerde iOS-apps die via Intune zijn geïmplementeerd, automatisch toegestaan. Schakel de instelling **Toestaan dat app gegevens overdraagt naar andere apps: Door beleid beheerde apps** in om gegevensoverdracht toe te staan tussen apps met een app-beveiligingsbeleid. U kunt de functie **Openen in beheer** gebruiken om gegevensoverdracht te beheren tussen apps die via Intune zijn geïmplementeerd.   
 
@@ -108,4 +105,3 @@ De beleidsinstelling **Vereist app-pincode** is bijvoorbeeld eenvoudig visueel t
 
 ### <a name="see-also"></a>Zie tevens
 [Wat is een app-beveiligingsbeleid in Intune?](app-protection-policy.md)
-

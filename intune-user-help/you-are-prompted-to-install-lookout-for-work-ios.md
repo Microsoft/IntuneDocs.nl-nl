@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>U moet Lookout for Work installeren op uw iOS-apparaat
 
 Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-toepassing installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen. Wellicht ziet u andere aanwijzingen op uw apparaat, afhankelijk van de manier waarop uw IT-beheerder Lookout for Work heeft ingesteld.
 
 **U moet het volgende doen:**
 
-1.    Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
+1.  Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
 
   ![Tik op Installeren om Lookout for Work te installeren](./media/ios-mtd-install-app-request.png)
 
@@ -55,4 +51,3 @@ Als Lookout for Work een beveiligingsrisico op uw apparaat vindt, ziet u instruc
 **Als de installatie niet werkt**
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

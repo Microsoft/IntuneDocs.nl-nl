@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Snelstartgids: Mobiele apps naar uw gebruikers publiceren
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,4 +42,3 @@ Als Mobiel Office-apps zijn gepubliceerd met de bedoeling de MAM-mogelijkheden v
 ## <a name="what-should-i-do-next"></a>Wat is de volgende stap die ik moet nemen?
 - [App-implementaties controleren in Microsoft Intune](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)
 - [Bedrijfsgegevens beschermen tegen gegevensverlies op mobiele apparaten](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-

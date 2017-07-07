@@ -14,15 +14,12 @@ ms.assetid: 93722f66-7641-4a3f-b1fb-3a0a58a36675
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d5a59f34a5dacdc2e1a0d5c6601b4ede1a908e4
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -112,4 +109,3 @@ Met Skycure worden apparaten met de Mobile Threat Defense-service gesynchronisee
 ## <a name="next-steps"></a>Volgende stappen
 
 [Skycure Mobile Threat Defense inschakelen in Intune](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
-

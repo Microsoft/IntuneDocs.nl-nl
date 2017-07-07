@@ -1,11 +1,11 @@
 ---
-title: Apparaten categoriseren met apparaatgroeptoewijzing | Microsoft Docs
+title: Apparaten categoriseren met apparaatgroeptoewijzing
 description: "Gebruik apparaatgroeptoewijzing van Microsoft Intune om apparaten te groeperen in categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Apparaten categoriseren met apparaatgroeptoewijzing in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ Voor apparaatgroeptoewijzing wordt gebruikgemaakt van de volgende werkstroom:
 1. Categorieën maken die gebruikers kunnen kiezen bij het registreren van hun apparaat
 2. U maakt nieuwe groepen of gebruikt bestaande groepen voor elke categorie die u wilt gebruiken. Afhankelijk van de versie van Intune die u gebruikt, zijn dit Intune-groepen of Azure Active Directory-beveiligingsgroepen.
 2. U configureert regels waarmee de categorie die u kiest, wordt toegewezen aan de gemaakte apparaatgroep.
-3. Wanneer eindgebruikers hun apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Wanneer ze een keuze hebben gemaakt, wordt hun apparaat automatisch toegevoegd aan de bijbehorende apparaatgroep die u hebt gemaakt. Als een apparaat al is geregistreerd, wordt de eindgebruiker gevraagd een categorie te selecteren wanneer hij of zij de bedrijfsportal-app opnieuw opent.
+3. Wanneer eindgebruikers van iOS- en Android-apparaten hun apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Als u een categorie wilt toewijzen aan een Windows-apparaat, moeten eindgebruikers de bedrijfsportalwebsite gebruiken (zie **Na het configureren van apparaatgroepen** in dit onderwerp voor meer informatie).
 4. Vervolgens kunt u beleidsregels en apps implementeren naar deze groepen.
 
 U kunt alle apparaatcategorieën maken die u maar wilt, bijvoorbeeld:
@@ -86,8 +84,13 @@ Voorbeeld: (**device.deviceCategory -eq** "<*de naam van de apparaatcategorie in
 
 ## <a name="after-you-configure-device-groups"></a>Na het configureren van apparaatgroepen
 
-Wanneer gebruikers hun apparaat registreren, krijgen ze een lijst te zien van de categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de registratie voltooien, wordt hun apparaat toegevoegd aan de Intune-apparaatgroep of Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
+Wanneer eindgebruikers van iOS- en Android-apparaten hun apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de registratie voltooien, wordt hun apparaat toegevoegd aan de Intune-apparaatgroep of Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
+
+Wanneer eindgebruikers een categorie willen toewijzen aan een Windows-apparaat, moeten ze de bedrijfsportalwebsite (portal.manage.microsoft.com) gebruiken na registratie van het apparaat. Ga op een Windows-apparaat u naar de website en kies vervolgens **Menu** > **Mijn apparaten**. Kies een geregistreerd apparaat op de pagina en selecteer vervolgens een categorie. 
+
+Nadat de categorie is gekozen, wordt het apparaat automatisch toegevoegd aan de bijbehorende groep die u hebt gemaakt. Als een apparaat al ingeschreven is voordat u categorieën configureert, zien eindgebruikers een melding over het apparaat op de bedrijfsportalwebsite en moeten ze de volgende keer dat ze de app op de bedrijfsportalwebsite op iOS of Android openen, een categorie selecteren.
+
+
 
 ### <a name="see-also"></a>Zie tevens
 [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

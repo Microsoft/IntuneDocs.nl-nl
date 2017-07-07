@@ -1,5 +1,5 @@
 ---
-title: Aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune | Microsoft-documentatie
+title: Aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune
 description: Meld u aan voor een gratis evaluatieversie van Microsoft Intune die u 30 dagen kunt uitproberen.
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 560765fa9d9afa4a1050515e1b2304c998f8c158
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ffa07d5e36abc8686cedd600123494180c286011
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 In dit artikel wordt uitgelegd hoe zich registreert voor een proefversie van Intune. Daarnaast voegt u enkele gebruikers aan uw proefversie toe zodat u de bijbehorende evaluatiehandleiding kunt volgen om te zien hoe mobiele apparaten met Intune worden beheerd. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Vanaf december 2016 wordt Microsoft Intune verplaatst naar de Azure-portal, waarbij sommige aanmeldingen voor gratis proefabonnementen in Intune in de Azure-portal worden geplaatst en sommige in de klassieke Intune-versie. Als uw proefabonnement in de Azure-portal is opgenomen, is de informatie in [inhoud van Intune Azure Preview](/intune/what-is--intune) nuttiger voor u na voltooiing van de stappen in dit artikel.
+> Vanaf december 2016 wordt Microsoft Intune verplaatst naar de Azure-portal, waarbij sommige aanmeldingen voor gratis proefabonnementen in Intune in de Azure-portal worden geplaatst en sommige in de klassieke Intune-versie. Als uw proefabonnement in de Azure-portal is opgenomen, is de informatie in [inhoud van Intune Azure Preview](/intune/what-is-intune) nuttiger voor u na voltooiing van de stappen in dit artikel.
 
 ## <a name="assumptions"></a>Aannames
 In dit artikel over de aanmelding en in de evaluatiehandleiding wordt verondersteld dat u de evaluatieversie uitsluitend voor evaluatiedoeleinden gebruikt en u met een schone omgeving wilt beginnen wanneer u zich abonneert.
@@ -41,7 +38,7 @@ De proefversie biedt dezelfde mogelijkheden als de abonnementsversie. Het enige 
 ## <a name="sign-up-for-your-trial"></a>Aanmelden voor de proefversie
 Ga naar de [registratiepagina voor Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) en vul het formulier in om u aan te melden voor een proefabonnement.
 
-Als u een werk- of schoolaccount hebt en dit wilt gebruiken voor de proefversie van Intune, volgt u [deze aanmeldingsinstructies](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). In dit artikel en de evaluatiehandleidingen wordt echter verondersteld dat u geen dergelijk account gebruikt.
+Als u een werk- of schoolaccount hebt en dit wilt gebruiken voor de proefversie van Intune, volgt u [deze aanmeldingsinstructies](/intune/account-sign-up). In dit artikel en de evaluatiehandleidingen wordt echter verondersteld dat u geen dergelijk account gebruikt.
 
 > [!TIP]
 > Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijkt van die van u, kunt u de desbetreffende landinstellingen configureren voor uw proef om de prestaties te testen.
@@ -56,7 +53,7 @@ Als uw proefabonnement in de **Azure-portal** is opgenomen, gaat u naar https://
 ## <a name="add-users"></a>Gebruikers toevoegen
 Voordat u het Office 365-beheercentrum verlaat om terug te keren naar Intune, moet u enkele gebruikers toevoegen aan uw proefaccount.
 
-In het Office 365-beheercentrum kunt u gebruikers afzonderlijk of in bulk toevoegen door een CSV-bestand te uploaden. Voor uw proefaccount doen we beide. U wilt in uw productieomgeving echter waarschijnlijk ook profiteren van uw Azure Active Directory-gebruikersaccounts. Meer informatie hierover vindt u in de [Introductiehandleiding](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) en in de sectie [Volgende stappen](#Next-steps) in dit artikel.
+In het Office 365-beheercentrum kunt u gebruikers afzonderlijk of in bulk toevoegen door een CSV-bestand te uploaden. Voor uw proefaccount doen we beide. U wilt in uw productieomgeving echter waarschijnlijk ook profiteren van uw Azure Active Directory-gebruikersaccounts. Meer informatie hierover vindt u in de [Introductiehandleiding](/intune/users-permissions-add) en in de sectie [Volgende stappen](#next-steps) in dit artikel.
 
 ### <a name="add-an-individual-user"></a>Een afzonderlijke gebruiker toevoegen
 1. Kies een van de opties voor het toevoegen van een gebruiken om een formulier te openen waarmee u een gebruiker kunt maken. Alleen de items die zijn gemarkeerd met een asterisk (\*) zijn verplicht.
@@ -110,8 +107,8 @@ Als van Intune terug wilt keren naar het Office 365-beheercentrum, kiest u op de
 
 ![Afbeelding van een link terug naar het Office 365-beheercentrum](./media/sign-up/task-add-users.png)
 
-### <a name="intune-azure-preview"></a>Intune Azure Preview
-Er zijn drie portals die u kunt gebruik voor Intune Azure Preview:
+### <a name="intune-on-azure"></a>Intune in Azure
+Er zijn drie portals die u kunt gebruik voor Intune in Azure:
 - Het Office 365-beheercentrum ([portal.office.com](https://portal.office.com))
 - Het Intune-dashboard in Azure ([portal.azure.com](https://portal.azure.com))
 - De klassieke beheerconsole van Intune ([manage.microsoft.com](https://manage.microsoft.com))
@@ -138,8 +135,8 @@ U vanuit Intune wilt terugkeren naar het Office 365-beheercentrum, voert u https
 ### <a name="classic-intune"></a>Klassieke versie van Intune
 Evaluatiescenario: [Mobile Device Management evalueren in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### <a name="intune-azure-preview"></a>Intune Azure Preview
-Meer informatie over [Intune in Azure Preview Portal](/intune/what-is-intune)
+### <a name="intune-on-azure"></a>Intune in Azure
+Meer informatie over [Intune in Azure](/intune/what-is-intune)
 
 ### <a name="integration-with-other-products"></a>Integratie met andere producten
 Meer informatie over het gebruik van uw Azure Active Directory-gebruikersaccounts met Intune:
@@ -148,4 +145,3 @@ Meer informatie over het gebruik van uw Azure Active Directory-gebruikersaccount
 - [Vereisten voor Multi-factor Authentication](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 Meer informatie over het gebruik van [Intune met System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
-

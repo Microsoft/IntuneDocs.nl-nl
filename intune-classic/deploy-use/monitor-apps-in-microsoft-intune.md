@@ -1,5 +1,5 @@
 ﻿---
-title: App-implementaties controleren | Microsoft Docs
+title: App-implementaties controleren
 description: "Informatie over Intune gebruiken voor het bewaken van apps die u hebt geïmplementeerd."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>App-implementaties controleren in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ Selecteer de gewenste app in de lijst met apps en kies vervolgens **Eigenschappe
 Kies op de pagina **Software-eigenschappen** voor de app een van deze tabbladen: **Algemeen**: bevat algemene informatie over de app en de installatiestatus, **Apparaten**: toont de apparaten waarop een bepaalde implementatie van de app is geïnstalleerd, **Gebruikers**: toont de gebruikers met een apparaat waarop een bepaalde implementatie van de app is geïnstalleerd.
 
 Net als voorheen kunt u de vervolgkeuzelijst **Filters** gebruiken voor het configureren van de waarden die op de tabbladen worden weergegeven.
-

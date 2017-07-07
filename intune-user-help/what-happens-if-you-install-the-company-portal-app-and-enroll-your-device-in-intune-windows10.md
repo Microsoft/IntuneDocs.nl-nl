@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows 10-apparaat inschrijft bij Intune?
 
 Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 10 Enterprise- of Professional-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app vervolgens gebruiken voor het volgende:
@@ -57,4 +53,3 @@ Wanneer u een computer toevoegt:
 -   De IT-beheerder kan beleidsregels op de computer afdwingen. Het is bijvoorbeeld mogelijk dat u verplicht een wachtwoord of pincode op de computer moet instellen. De IT-beheerder kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan de computer mogelijk worden vergrendeld of worden mogelijk alle gegevens van de harde schijf verwijderd.
 
 Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](https://portal.manage.microsoft.com).
-

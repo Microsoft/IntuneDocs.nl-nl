@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
 Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, stelt u de IT-beheerder in staat uw apparaat te beheren ter beveiliging van de bedrijfs- of schoolgegevens. In dit onderwerp wordt beschreven wat er gebeurt met apparaten ouder dan Windows 10. Zie het [relevante onderwerp](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) als het gaat om apparaten met Windows 10.
@@ -79,4 +74,3 @@ Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
 Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](https://portal.manage.microsoft.com).
-

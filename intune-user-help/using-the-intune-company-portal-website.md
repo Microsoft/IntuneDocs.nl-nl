@@ -5,27 +5,23 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
-ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/26/2017
-
-
+ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-the-intune-company-portal-website"></a>De Intune-bedrijfsportalwebsite gebruiken
 De [bedrijfsportalwebsite](https://portal.manage.microsoft.com) is een webpagina waarop eindgebruikers de computers en apparaten beheren die ze bij Intune hebben geregistreerd.
 
@@ -41,7 +37,7 @@ Gebruikers kunnen op de bedrijfsportalwebsite de volgende taken uitvoeren:
 
 -   [Een apparaat op afstand vergrendelen](remote-lock-your-device-cpwebsite.md)
 
--    [Uw apparaat handmatig synchroniseren om apps sneller te installeren](sync-your-device-manually-cpwebsite.md)
+-   [Uw apparaat handmatig synchroniseren om apps sneller te installeren](sync-your-device-manually-cpwebsite.md)
 
 -   Zoeken naar de contactgegevens van de IT-beheerder, als u deze hebt geconfigureerd
 
@@ -49,9 +45,4 @@ Gebruikers kunnen op de bedrijfsportalwebsite de volgende taken uitvoeren:
 
 -   Hun pc op afstand beheren (geldt alleen voor pc's)
 
-Eindgebruikers kunnen op de **bedrijfsportalwebsite** de meeste taken uitvoeren die ze ook met de **bedrijfsportal-app** op een apparaat kunnen uitvoeren. De volgende pagina's bevatten koppelingen naar alle taken die eindgebruikers op hun apparaat kunnen uitvoeren:
-
-- [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
-- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](using-your-ios-or-macOS-device-with-intune.md)
-- [Uw Windows-apparaat gebruiken met Intune](using-your-windows-device-with-intune.md)
-
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

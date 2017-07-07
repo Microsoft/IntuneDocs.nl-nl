@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune-bewerkingen begrijpen met behulp van rapporten | Microsoft Docs
+title: Microsoft Intune-bewerkingen begrijpen met behulp van rapporten
 description: Rapporten over software, hardware en softwarelicenties in uw organisatie maken en beheren.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Understand Microsoft Intune operations by using reports
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Bovendien ondersteunen rapporten de volgende acties:
 |**Opslaan**|Op de pagina **Nieuw rapport maken** kan iedere gebruiker maximaal 100 rapporten opslaan. Configureer de rapportparameters zodat ze aan uw vereisten voldoen en kies **Opslaan**of **Opslaan als** (als u een andere naam wilt gebruiken).|
 |**Laden**|Op de pagina **Nieuw rapport maken** kiest u **Laden** om eerder opgeslagen sets met rapportparameters op te halen.|
 |**Verwijderen**|Selecteer in de werkruimte **Rapporten** het gewenste rapporttype en kies **Laden**. Kies vervolgens in de lijst met rapporten het pictogram voor verwijderen (x) naast het rapport.|
-
 
 

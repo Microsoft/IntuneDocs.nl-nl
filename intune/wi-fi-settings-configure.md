@@ -1,12 +1,12 @@
 ---
 title: Wi-Fi-instellingen configureren in Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Intune kunt gebruiken voor het configureren van Wi-Fi-verbindingen op de apparaten die u beheert.'
+titleSuffix: Intune on Azure
+description: In dit onderwerp leest u hoe u Intune kunt gebruiken voor het configureren van Wi-Fi-verbindingen op de apparaten die u beheert."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3378df904936def8737ca3b5b791feebdb95823b
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Wi-Fi-instellingen configureren in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Gebruik Wi-Fi-profielen van Microsoft Intune om instellingen voor draadloze netwerken toe te wijzen aan gebruikers en apparaten in uw organisatie. Wanneer u een Wi-Fi-profiel toewijst, hebben uw gebruikers toegang tot uw zakelijke Wi-Fi-netwerk zonder dat ze dit zelf hoeven te configureren.
 
@@ -39,6 +36,7 @@ Een voorbeeld: u installeert een nieuw Wi-Fi-netwerk met de naam Contoso Wi-Fi e
 Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 
 - Android 4 en hoger
+- Android for Work
 - iOS 8.0 en hoger
 - macOS (Max OS X 10.9 en hoger)
 
@@ -49,13 +47,14 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Een apparaatprofiel met Wi-Fi-instellingen maken
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
 4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het Wi-Fi-profiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de Wi-Fi-instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor Wi-Fi-instellingen:
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows 8.1 en hoger (een profiel importeren)**
@@ -63,7 +62,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     >[!TIP]
     >Gebruik **Wi-Fi Basic** als u basisfuncties zoals de netwerknaam en de SSID wilt opgeven. Met **Wi-Fi Enterprise** kunt u uitgebreidere informatie over EAP (Extensible Authentication Protocol) opgeven als dit protocol in uw Wi-Fi-netwerk wordt gebruikt. Met **Wi-Fi Import** (Windows 8.1 en Windows 10) kunt u Wi-Fi-instellingen importeren als een XML-bestand dat u eerder van een ander apparaat hebt geëxporteerd.
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
-    - [Android-instellingen](wi-fi-settings-android.md)
+    - [Instellingen voor Android en Android for Work](wi-fi-settings-android.md)
     - [iOS-instellingen](wi-fi-settings-ios.md)
     - [macOS-instellingen](wi-fi-settings-macos.md)
     - [Windows Phone 8.1-instellingen](wi-fi-settings-import-windows-8-1.md)
@@ -71,5 +70,3 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
-
-

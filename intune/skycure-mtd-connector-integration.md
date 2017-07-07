@@ -1,12 +1,12 @@
 ---
 title: De integratie van Skycure met Intune instellen
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: De integratie van Skycure met Microsoft Intune instellen.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
-ms.openlocfilehash: 7740f9748e2d3ece6223fddc0bdf0ba6ee897cad
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: ff27d4b99be0d09ae6b4e3ee665ce13ba62720c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
 
 U moet Skycure-apps in Azure AD toevoegen om gebruik te kunnen maken van eenmalige aanmelding.
@@ -110,5 +107,4 @@ Met Skycure worden apparaten met de Mobile Threat Defense-service gesynchronisee
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Skycure Mobile Threat Defense inschakelen in Intune](skycure-mtd-connector-enable.md)
-
+[Skycure Mobile Threat Defense inschakelen in Intune](mtd-connector-enable.md)

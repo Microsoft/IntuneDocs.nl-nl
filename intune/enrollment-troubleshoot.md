@@ -1,12 +1,12 @@
 ---
 title: Hoe los ik problemen met de inschrijving van apparaten op?
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het oplossen van problemen bij het registreren van apparaten.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het oplossen van problemen met apparaatinschrijving."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3084b7179a310a44c520dd42a8e194490dca90d8
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b7af9168164f1cccf3feae5bbdfd8014f8c7c1f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dit onderwerp bevat suggesties voor het oplossen van problemen met de registratie van apparaat. Zie [Ondersteuning voor Microsoft Intune krijgen](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
@@ -102,8 +99,8 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 1.  Controleer of de MDM-instantie juist is ingesteld voor het type Intune-service dat u gebruikt (dat wil zeggen Intune, Office 365 of System Center Configuration Manager met Intune). Zie [De instantie voor het beheer van mobiele apparaten instellen](mdm-authority-set.md) voor instructies.
 
-    > [!NOTE]
-    > Wanneer u de MDM-instantie eenmaal hebt ingesteld, kunt u deze alleen wijzigen door contact op te nemen met Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
+    > [!NOTE]    
+    > In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [Wat te doen als u de verkeerde instelling kiest voor de MDM-instantie](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor meer informatie.
 
 2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory door te controleren of de UPN overeenkomt met de Active Directory-gegevens in de accountportal.
     Doe het volgende als de UPN niet overeenkomt met de Active Directory-gegevens:
@@ -222,16 +219,16 @@ De certificaatfout treedt op omdat Android-apparaten vereisen dat er tussencerti
 
 Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
 
-1.    Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
-2.    Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
-3.    Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
-4.    Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
-5.    Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
-6.    Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
-7.    Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
-8.    Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
-9.    Start de AD FS-servers opnieuw op.
-10.    Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
+1.  Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
+2.  Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
+3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
+4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
+5.  Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
+6.  Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
+7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
+8.  Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
+9.  Start de AD FS-servers opnieuw op.
+10. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
 De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
 
 **Valideren dat het certificaat correct is geïnstalleerd**:
@@ -255,7 +252,7 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 
 **Oplossing:** deel de volgende oplossingen met uw eindgebruikers om ervoor te zorgen dat ze weer toegang kunnen verkrijgen tot bedrijfsresources.
 
-Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Poging tot synchronisatie...** te zien. 
+Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Poging tot synchronisatie...** te zien.
 
   ![De melding Poging tot synchronisatie...](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -263,11 +260,11 @@ Als het synchroniseren lukt, ziet u de melding **De synchronisatie is voltooid**
 
   ![De melding De synchronisatie is voltooid](./media/ios_cp_app_sync_successful_notification.png)
 
-Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-bedrijfsportal-app. 
+Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-bedrijfsportal-app.
 
   ![De melding Kan niet synchroniseren](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** selecteren. Deze staat rechts van de melding **Kan niet synchroniseren**. Wanneer gebruikers op de knop Instellen klikken, gaan ze naar het scherm om de bedrijfsportal in te stellen. Hier volgen ze instructies om hun apparaat in te schrijven. 
+Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** selecteren. Deze staat rechts van de melding **Kan niet synchroniseren**. Wanneer gebruikers op de knop Instellen klikken, gaan ze naar het scherm om de bedrijfsportal in te stellen. Hier volgen ze instructies om hun apparaat in te schrijven.
 
   ![Het scherm Instellen van bedrijfstoegang](./media/ios_cp_app_company_access_setup.png)
 
@@ -313,7 +310,7 @@ Na het inschrijven krijgen de apparaten weer een goede status en is er weer toeg
 3. Start de service SMS Executive opnieuw of start de CM-server opnieuw.
 
 4. Haal een nieuw APN-certificaat op en upload dit. Klik hiertoe met de rechtermuisknop op het Intune-abonnement in het linkerdeelvenster van Configuration Manager. Selecteer **APNs-certificaataanvraag maken** en volg de instructies.
-5. 
+5.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemen bij het gebruik van System Center Configuration Manager met Intune
 
 ### <a name="mobile-devices-disappear"></a>Mobiele apparaten verdwijnen
@@ -362,7 +359,7 @@ Deze fout treedt mogelijk op doordat de computer eerder is geregistreerd of een 
 
     > [!IMPORTANT]
     > Deze sectie, methode of taak bevat stappen voor het wijzigen van het register. Als u het register onjuist bewerkt, kunnen er echter ernstige problemen optreden. Zorg daarom ervoor dat u deze stappen zorgvuldig uitvoert. Maak voor de zekerheid een back-up van het register voordat u het aanpast. Vervolgens kunt u het register herstellen als er een probleem optreedt.
-    > Zie [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756) (Een back-up maken van het register en het terugzetten in Windows) voor meer informatie over het maken en terugzetten van een back-up van het register.
+    > Zie [How to back up and restore the registry in Windows](https://support.microsoft.com/kb/322756) (Een back-up maken van het register en het terugzetten in Windows) voor meer informatie over het maken en terugzetten van een back-up van het register.
 
 ## <a name="general-enrollment-error-codes"></a>Codes voor algemene registratiefouten
 
@@ -382,7 +379,7 @@ Deze fout treedt mogelijk op doordat de computer eerder is geregistreerd of een 
 |0x80043008, 0x80CF3008|De Microsoft Online Management Updates-service kan niet worden gestart.|Neem contact op met Microsoft Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).|
 |0x80043009, 0x80CF3009|De clientcomputer is al ingeschreven bij de service.|U moet de clientcomputer buiten gebruik stellen voordat u deze opnieuw in de service kunt inschrijven.|
 |0x8004300B, 0x80CF300B|Het installatiepakket voor de clientsoftware kan niet worden uitgevoerd omdat de versie van Windows die op de client wordt uitgevoerd, niet wordt ondersteund.|Intune biedt geen ondersteuning voor de versie van Windows die wordt uitgevoerd op de clientcomputer.|
-|0xAB2|Windows Installer heeft geen toegang tot VBScript-runtime voor aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Wanneer u problemen met de DLL oplost, moet u mogelijk gebruikmaken van de hulpprogramma's die worden beschreven in [Microsoft Ondersteuning KB198038: Useful Tools for Package and Deployment Issues (Nuttige hulpprogramma's voor pakket- en implementatieproblemen)](https://support.microsoft.com/en-us/kb/198038).|
+|0xAB2|Windows Installer heeft geen toegang tot VBScript-runtime voor aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Wanneer u problemen met de DLL oplost, moet u mogelijk gebruikmaken van de hulpprogramma's die worden beschreven in [Microsoft Ondersteuning KB198038: Useful Tools for Package and Deployment Issues (Nuttige hulpprogramma's voor pakket- en implementatieproblemen)](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|De verbinding met het service-eindpunt is beëindigd.|Het proefaccount of het betaalde account is onderbroken. Maak een nieuw proefaccount of betaald account en schrijf u opnieuw in.|
 
 
@@ -390,4 +387,3 @@ Deze fout treedt mogelijk op doordat de computer eerder is geregistreerd of een 
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
-

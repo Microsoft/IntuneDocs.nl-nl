@@ -1,6 +1,6 @@
 ---
 title: Een nalevingsbeleid voor apparaten maken
-description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc&quot;s die worden gebruikt voor toegang tot uw bedrijfsgegevens.
+description: Een nalevingsbeleid maken voor het beveiligen van mobiele apparaten en pc's die worden gebruikt voor toegang tot uw bedrijfsgegevens.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3dcafbd3cfdbccdfa851e8d21572d834d629564b
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid voor apparaten maken in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ Selecteer een van de volgende mogelijkheden voor meer informatie over instelling
 
 ### <a name="see-also"></a>Zie tevens
 [Inleiding in nalevingsbeleid voor apparaten](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-

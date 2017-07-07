@@ -1,6 +1,6 @@
 ---
 title: De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online via de Intune Azure Portal
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online via Intune Azure Preview
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>De naleving van voorwaardelijke toegang in Intune controleren voor Exchange On-Premises en Exchange Online
 
 Vanaf versie Intune 1704 kunnen beheerders informatie weergeven met betrekking tot Exchange ActiveSync-apparaatrecords die zijn gesynchroniseerd met Intune via de on-premises Exchange-connector of de Intune Service to Service Connector (Exchange Online-connector). De nalevingsrapporten van voorwaardelijke toegang biedt een overzicht van apparaten met verschillende synchronisatiestatussen:
 
@@ -70,4 +67,3 @@ Op de blade Apparaatdetails ziet u meer informatie:
 -   **Apparaatconfiguratie:** hier ziet u alle configuratiedetails van het apparaat.
 
 -   **Toegang tot Exchange:** hier vindt u meer informatie over de apparaatstatus na het toepassen van beleid voor voorwaardelijke toegang.
-

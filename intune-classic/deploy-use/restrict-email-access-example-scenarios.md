@@ -1,6 +1,6 @@
 ---
-title: "Scenario’s voor het beveiligen van e-mail | Microsoft Docs"
-description: "Enkele voorbeeldscenario&quot;s en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang."
+title: E-mailscenario's beveiligen
+description: "Enkele voorbeeldscenario's en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: a60c41d5a35ee60677db3835818ca8b90420c715
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Toegang tot e-mail beveiligen met Microsoft Intune: voorbeeldscenario’s
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ U doet dit door een beleid voor voorwaardelijke toegang voor Exchange On-premise
 U gebruikt de volgende stroom om te bepalen welke apparaten toegang krijgen tot Exchange:
 
 ![Diagram met werkstroom voor toegang tot apparaten](./media/ConditionalAccess8-4.png)
-
