@@ -1,5 +1,5 @@
 ---
-title: Instellingen voor nalevingsbeleid voor iOS-apparaten | Microsoft Docs
+title: Instelling voor nalevingsbeleid voor iOS-apparaten
 description: "Dit onderwerp heeft betrekking op de regels en instellingen die u kunt definiëren in het nalevingsbeleid voor iOS-apparaten."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fbb2e7ced783160fb6034aecc893d0c5dde639d7
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1d3248747740dafe858a581ed19a02ba87c4b761
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Instellingen voor nalevingsbeleid voor iOS-apparaten in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +80,3 @@ Als u op zoek bent naar informatie over andere platforms, selecteert u een van d
 Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De gebruiker kan kiezen om het apparaat bij te werken. Daarna zijn de bedrijfsbronnen toegankelijk.
 
 - **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
-

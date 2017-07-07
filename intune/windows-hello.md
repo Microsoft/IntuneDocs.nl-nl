@@ -1,7 +1,7 @@
 ---
 title: Windows Hello voor Bedrijven gebruiken
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u een beleid kunt maken om het gebruik van Windows Hello voor Bedrijven op beheerde apparaten te beheren.'
+titleSuffix: Intune on Azure
+description: In dit onderwerp leest u hoe u een beleid kunt maken om het gebruik van Windows Hello voor Bedrijven op beheerde apparaten te beheren."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,19 +15,16 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d375a40283a5f3c1e9b7302d659739d4ca3d508
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0ef9e70dc918b485f893cf3193f7e76f6084a896
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-windows-hello-for-business"></a>Windows Hello voor Bedrijven gebruiken
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune integreert met Windows Hello voor Bedrijven (voorheen Microsoft Passport for Work). Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
 
@@ -100,4 +97,3 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
 ## <a name="further-information"></a>Meer informatie
 Zie [de gids](https://technet.microsoft.com/library/mt589441.aspx) in de documentatie van Windows 10 voor meer informatie over Microsoft Passport.
-

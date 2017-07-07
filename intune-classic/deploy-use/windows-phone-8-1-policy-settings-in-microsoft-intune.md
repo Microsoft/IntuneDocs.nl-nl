@@ -1,5 +1,5 @@
 ---
-title: Beleidsinstellingen voor Windows Phone 8.1 | Microsoft Docs
+title: Beleidsinstellingen voor Windows Phone 8.1
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 091c8c3867fffa2ba6857f79ae40ed618aaf0b72
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Windows Phone 8.1 in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -174,4 +171,3 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>Veelvoorkomende problemen met uw Android-apparaat herstellen
 
 Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor meer gecompliceerde problemen kunt u het best contact opnemen met uw IT-beheerder via de contactgegevens op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
@@ -45,4 +41,3 @@ Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hers
 - [Uw apparaat dat lijkt te zijn versleuteld door de bedrijfsportal-app, geeft wat anders aan](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [U wordt gevraagd om op uw Android-apparaat een app te installeren die uw apparaat beveiligt tegen bedreigingen](you-are-prompted-to-install-mtd-android.md)
 - [U moet een bedreiging oplossen die op uw Android-apparaat is gevonden door een app die uw apparaat beveiligt tegen bedreigingen](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

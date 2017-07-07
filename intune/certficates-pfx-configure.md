@@ -1,12 +1,12 @@
 ---
 title: PKCS-certificaten configureren en beheren met Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens PKCS-certificaten kunt toewijzen met Intune.'
+titleSuffix: Intune on Azure
+description: In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens PKCS-certificaten kunt toewijzen met Intune.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en beheren met Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens PKCS-certificaatprofielen kunt toewijzen met Intune.
 
@@ -118,7 +115,7 @@ Bij deze stap doet u het volgende:
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Ondersteuning voor de certificaatconnector inschakelen
 
 1.  Meld u aan bij Azure Portal.
-2.  Kies **Meer services** > **Overige** > **Intune**.
+2.  Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3.  Kies **Apparaten configureren** op de blade **Intune**.
 2.  Kies **Instellen** > **Certificeringsinstantie** op de blade **Apparaatconfiguratie**.
 2.  Kies **Inschakelen** onder **Stap 1**.
@@ -190,7 +187,8 @@ Selecteer in Azure Portal de workload **Apparaten configureren**.
         - **Algemene naam**
         - **Algemene naam en e-mailadres**
         - **Algemene naam als e-mailadres**
-    - **Alternatieve onderwerpnaam**: geef op hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteerde, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat zal worden gebruikt om een Network Policy Server te verifiëren, dient u de alternatieve naam van het onderwerp op de UPN in te stellen.
+    - **Alternatieve onderwerpnaam**: geef op hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteerde, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat wordt gebruikt om een Network Policy Server te verifiëren, stelt u de alternatieve naam van het onderwerp op de UPN in. 
+    U kunt ook **Aangepast Azure AD-kenmerk** selecteren. Als u deze optie selecteert, wordt een ander veld van de vervolgkeuzelijst weergegeven. Vanuit het veld **Aangepast Azure AD-kenmerk** van de vervolgkeuzelijst is er één optie beschikbaar: **Afdeling**. Als u deze optie selecteert als de afdeling niet wordt aangeduid in Azure AD, wordt het certificaat niet uitgegeven. U lost dit probleem door de afdeling te identificeren en de wijzigingen op te slaan. De volgende keer dat het apparaat wordt ingecheckt, wordt het probleem opgelost en wordt het certificaat uitgegeven. ASN.1 is de notatie die wordt gebruikt voor dit veld. 
     - **Uitgebreide-sleutelgebruik** (Android): kies **Toevoegen** om waarden voor het beoogde gebruik van het certificaat toe te voegen. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen. 
     - **Basiscertificaat** (Android): kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren. Dit is het vertrouwde certificaatprofiel dat u eerder hebt gemaakt.
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
@@ -208,4 +206,3 @@ Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
 - Hoewel u elk profiel afzonderlijk toewijst, moet u ook het vertrouwde basis-CA- en het PKCS-profiel toewijzen. Anders mislukt het PKCS-certificaatbeleid.
 
 Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor informatie over het toewijzen van apparaatprofielen.
-

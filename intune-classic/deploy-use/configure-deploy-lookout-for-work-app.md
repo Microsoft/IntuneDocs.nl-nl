@@ -1,5 +1,5 @@
 ---
-title: Lookout for Work-app implementeren | Microsoft Docs
+title: De app Lookout for Work implementeren
 description: Lookout for Work-apps voor Android configureren en implementeren.
 author: andredm7
 ms.author: andredm
@@ -13,15 +13,12 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 95f7c782558f98d5be3a89d24b9e9721a7bd40c0
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5d4f496709a8607b0d6d473355c96e8fc502838b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-lookout-for-work-app"></a>De Lookout for Work-app configureren en implementeren
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -30,12 +27,12 @@ In dit artikel wordt uitgelegd hoe u de Lookout for Work-app configureert en imp
 
 ## <a name="android-google-play-store-app"></a>Android (Google Play Store-app)
 
-1.    Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Apps** en kies **Apps toevoegen**.
-2.    Kies op de pagina **Setup van software** van de uitgever de optie **Externe koppeling** en geef de volgende URL op: https://play.google.com/store/apps/details?id=com.lookout.enterprise
+1.  Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Apps** en kies **Apps toevoegen**.
+2.  Kies op de pagina **Setup van software** van de uitgever de optie **Externe koppeling** en geef de volgende URL op: https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >Klik niet op het vak voor het vereisen van een beheerde browser.
 
-3.    Vul op de pagina **Beschrijving van software** de volgende informatie in:
+3.  Vul op de pagina **Beschrijving van software** de volgende informatie in:
   * **Uitgever:** Lookout Mobile Security
   * **Naam:** Lookout for Work
   * **Beschrijving:** Lookout biedt de beste beveiliging tegen mobiele bedreigingen om uw apparaat te beschermen. Wanneer de Lookout-app op het apparaat is geïnstalleerd, wordt uw apparaat met de app beschermd tegen bedreigingen en worden u en uw bedrijfsbeheerder gewaarschuwd als een bedreiging wordt aangetroffen.
@@ -96,4 +93,3 @@ https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Wanneer 
 
 ## <a name="next-steps"></a>Volgende stappen
 * [Het nalevingsbeleid voor Lookout-apparaten maken in Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
-

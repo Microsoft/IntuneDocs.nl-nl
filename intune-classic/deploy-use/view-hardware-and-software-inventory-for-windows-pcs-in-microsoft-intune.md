@@ -1,6 +1,6 @@
 ---
 title: Hardware- en software-inventaris voor Windows-computers weergeven
-description: Hoe u hardware- en software-informatie kunt weergeven over Windows-desktops die u beheert als pc&quot;s met de Intune-softwareclient.
+description: Hoe u hardware- en software-informatie kunt weergeven over Windows-desktops die u beheert als pc's met de Intune-softwareclient.
 keywords: 
 author: arob98
 ms.author: angrobe
@@ -14,15 +14,12 @@ ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0fdb49e8742fa49f1c0c1b24d5f09bcaf08a0f0a
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Hardware- en software-inventaris voor Windows-computers weergeven
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]

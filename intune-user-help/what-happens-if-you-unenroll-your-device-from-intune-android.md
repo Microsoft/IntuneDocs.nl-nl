@@ -11,29 +11,24 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 075435a190fba28d548b1fa54ba7bafeec3ba217
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Wat gebeurt er als u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt?
 
 Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
 
 -   Uw IT-beheerder beheert het apparaat niet meer.
 
--    U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
+-   U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
 
 -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
@@ -46,4 +41,3 @@ Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgeh
 Zie [De registratie van uw apparaat bij Intune ongedaan maken met de bedrijfsportal-app](unenroll-your-device-from-intune-android.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
 Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.
-

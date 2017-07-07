@@ -14,15 +14,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 4ea2974c4724564cd8f9972fdb238b06d1b100e6
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-testing-and-validation"></a>Intune testen en valideren
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -86,4 +83,3 @@ Validatietests voor de eindgebruiker moeten worden uitgevoerd om te controleren 
 ## <a name="next-steps"></a>Volgende stappen
 
 Nu u de functionele en use-casescenario's van Intune hebt getest en gevalideerd voor een gebruiker, bent u klaar voor de productie-rollout van Intune. Raadpleeg [Aanvullende bronnen](planning-guide-resources.md) voor meer informatie.
-

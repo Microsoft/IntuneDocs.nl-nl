@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf in Intune?
 
 Wanneer u een apparaat in beheer inschrijft, geeft u de IT-afdeling van uw bedrijf machtiging voor toegang tot bepaalde informatie op het apparaat om de zakelijke gegevens op het apparaat te beschermen.
@@ -32,11 +28,11 @@ Wanneer u een apparaat in beheer inschrijft, geeft u de IT-afdeling van uw bedri
 **Wat de IT-afdeling niet kan zien**
 
 - Oproepen en browsegeschiedenis
--    Locatie
+-   Locatie
 - Persoonlijke e-mails
 - SMS-berichten
 - Contactpersonen
--    Wachtwoorden van uw persoonlijke accounts
+-   Wachtwoorden van uw persoonlijke accounts
 - Agenda-items
 - Foto's, met inbegrip van wat er in de app Foto's of het camera-album staat
 
@@ -50,4 +46,3 @@ Wanneer u een apparaat in beheer inschrijft, geeft u de IT-afdeling van uw bedri
 -   Apparaatnaam
 -   De fabrikant (voor apparaten die niet door Apple zijn gemaakt)
 -   Telefoonnummer (voor zakelijke apparaten het hele nummer. Voor persoonlijke apparaten alleen de laatste vier cijfers.)
-

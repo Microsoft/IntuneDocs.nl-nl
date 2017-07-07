@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work"></a>U moet Lookout for Work installeren
 
 Voordat u toegang tot uw werk kunt krijgen, moet u de Lookout for Work-app installeren die uw apparaat helpt beveiligen door potentiële beveiligingsrisico's op te sporen.
@@ -32,11 +28,11 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 **U moet het volgende doen:**
 
-1.    Sleep omlaag vanaf de bovenkant van het scherm om de meldingenbalk te openen. Tik vervolgens op **Vereiste toepassing: Lookout for Work vanuit Play Store installeren**.
+1.  Sleep omlaag vanaf de bovenkant van het scherm om de meldingenbalk te openen. Tik vervolgens op **Vereiste toepassing: Lookout for Work vanuit Play Store installeren**.
 
   ![u moet Lookout for Work installeren](./media/lookout-required-app-install-android.png)
 
-2.    U gaat naar de installatiepagina van Lookout for Work in de Play Store. Installeer Lookout for Work en tik vervolgens op **ACCEPTEREN** om uw apparaat te openen met Lookout for Work.
+2.  U gaat naar de installatiepagina van Lookout for Work in de Play Store. Installeer Lookout for Work en tik vervolgens op **ACCEPTEREN** om uw apparaat te openen met Lookout for Work.
 
   ![tik op accepteren om uw apparaat te openen met Lookout for Work](./media/lookout-accept-store-permissions-android.png)
 
@@ -79,4 +75,3 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit het geval is, installeert u Lookout for Work [handmatig vanuit de Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

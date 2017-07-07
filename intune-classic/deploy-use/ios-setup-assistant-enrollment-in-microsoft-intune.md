@@ -1,5 +1,5 @@
 ---
-title: iOS-apparaten inschrijven via Configuratieassistent | Microsoft Docs
+title: iOS-apparaten inschrijven met de Configuratieassistent
 description: Zakelijke iOS-apparaten inschrijven met behulp van het hulpprogramma Apple Configurator om de fabrieksinstellingen van het apparaat terug te zetten en dit voor te bereiden voor de Configuratieassistent.
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 12466562ea8431156e9644e63fda16231ac70f32
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>IOS-apparaten inschrijven met Apple Configurator via Configuratieassistent
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -175,4 +172,3 @@ De apparaten zijn nu gereed voor bedrijfsinschrijving. Schakel de apparaten uit 
 
 ### <a name="see-also"></a>Zie tevens
 [Vereisten voor het inschrijven van apparaten](prerequisites-for-enrollment.md)
-

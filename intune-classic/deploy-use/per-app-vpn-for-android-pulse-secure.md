@@ -1,11 +1,11 @@
 ---
-title: VPN per app voor Android met behulp van Pulse Secure | Microsoft Docs
+title: VPN per app voor Android-apparaten met Pulse Secure
 description: U kunt een VPN-profiel per app maken voor Android-apparaten die worden beheerd door Intune.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,7 +42,7 @@ Nadat u het beleid op uw Android-apparaat of in uw gebruikersgroepen hebt geïmp
 
 > [!NOTE]
 >
-> Noteer de naam van het VPN-profiel voor gebruik in de volgende stap. Bijvoorbeeld MyAppVpnProfile.
+> Noteer de **naam van de VPN-verbinding (weergegeven voor gebruikers):** waarde die u opgeeft bij het maken van het VPN-profiel. Dit is vereist in de volgende stap. Bijvoorbeeld **MyAppVpnProfile**.
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>Stap 2: Een aangepast configuratiebeleid maken
 
@@ -55,7 +52,7 @@ Nadat u het beleid op uw Android-apparaat of in uw gebruikersgroepen hebt geïmp
    4. Geef een naam op voor de instelling.
    5. Geef voor **Gegevenstype** de optie **Tekenreeks** op.
    6. Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/PackageList**, waarbij *Naam* de naam van het VPN-profiel is die u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.    Geef bij **Waarde** een lijst met door puntkomma’s gescheiden pakketten op die aan het profiel moeten worden gekoppeld. Als u bijvoorbeeld wilt dat Excel en de Google Chrome-browser de VPN-verbinding gebruiken, voert u **com.microsoft.office.excel;com.android.chrome** in.
+   7.   Geef bij **Waarde** een lijst met door puntkomma’s gescheiden pakketten op die aan het profiel moeten worden gekoppeld. Als u bijvoorbeeld wilt dat Excel en de Google Chrome-browser de VPN-verbinding gebruiken, voert u **com.microsoft.office.excel;com.android.chrome** in.
 
 ![Voorbeeld van een aangepast VPN-beleid per app voor Android](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,4 +77,3 @@ U moet *beide* beleidsregels naar *dezelfde* Intune-groepen implementeren.
     -   **Als u het dialoogvenster wilt sluiten zonder het beleid te implementeren**, kiest u **Annuleren**.
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Er wordt ook een statusoverzicht weergegeven in de werkruimte **Dashboard**.
-

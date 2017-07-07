@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Back-ups van door Intune beheerde iOS-apparaten terugzetten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ Start de bedrijfsportal-app en maak de registratie ongedaan door de tegel van he
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>Voor gebruikers die zowel hun oude als nieuwe apparaat gaan gebruiken
 Schakel cookies uit in Safari door te tikken op __Instellingen__ > __Safari__ > __Geschiedenis- en websitegegevens wissen__. Na het wissen van de gegevens verwijdert u de bedrijfsportal-app en installeert u deze opnieuw, waarna u de standaardstappen voor inschrijving volgt om [een iOS-apparaat in te schrijven in Intune](/intune-user-help/enroll-your-device-in-intune-ios).
-

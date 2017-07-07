@@ -1,5 +1,5 @@
 ---
-title: Apps voor Windows-pc&quot;s met de Intune-softwareclient toevoegen
+title: Apps voor Windows-pc's met de Intune-softwareclient toevoegen
 description: "Gebruik de informatie in dit onderwerp om te weten te komen hoe u apps voor Windows-pc’s aan Intune toevoegt voordat u ze implementeert."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: faf52c4166298d981532ee61c158f4a705c5a3da
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Apps voor Windows-pc's met de Intune-softwareclient toevoegen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -101,4 +98,3 @@ De app wordt weergegeven op het knooppunt **Apps** van de werkruimte **Apps**.
 Nadat u een app hebt gemaakt, is de volgende stap om deze te implementeren. Zie [Apps in Microsoft Intune implementeren](deploy-apps.md) voor meer informatie.
 
 Raadpleeg het blogbericht [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) als u meer informatie wilt over tips en trucs voor het implementeren van software op Windows-pc's.
-

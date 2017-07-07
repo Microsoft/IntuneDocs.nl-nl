@@ -1,7 +1,7 @@
 ---
 title: Beveiligingsbeleid voor apps valideren
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in deze onderwerpen wordt beschreven hoe u kunt testen en valideren of uw beveiligingsbeleid voor apps juist is ingesteld en naar behoren werkt.'
+titleSuffix: Intune on Azure
+description: In deze onderwerpen wordt beschreven hoe u kunt testen en valideren of uw beveiligingsbeleid voor apps juist is ingesteld en naar behoren werkt.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,18 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>De configuratie van uw beveiligingsbeleid voor apps valideren
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Dit onderwerp bevat informatie over het controleren op problemen na de configuratie van een beveiligingsbeleid voor apps. Deze informatie is van toepassing op beveiligingsbeleid voor apps in de **preview-versie** van Azure Portal.
+Dit onderwerp bevat informatie over het controleren op problemen na de configuratie van een beveiligingsbeleid voor apps. Deze informatie is van toepassing op beveiligingsbeleid voor apps in Azure Portal.
 
 ### <a name="checking-for-symptoms"></a>Controleren op symptomen
 Gebruikers melden waarschijnlijk geen problemen, omdat app-beveiliging een hulpprogramma voor gegevensbeveiliging is. Als er een probleem is met de configuratie van de app-beveiliging, heeft de gebruiker onbeperkte toegang zoals ook het geval is zonder app-beveiliging, en weet de gebruiker niet dat er een probleem is. Daarom raden wij aan dat u de configuratie van de app-beveiliging valideert door uw app-beveiligingsbeleid te testen met een kleine groep gebruikers die de beperkingen van de app-beveiliging bewust kunnen testen.
@@ -61,4 +58,3 @@ Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 ### <a name="see-also"></a>Zie tevens
 
 [Wat is een app-beveiligingsbeleid in Intune?](app-protection-policies.md)
-

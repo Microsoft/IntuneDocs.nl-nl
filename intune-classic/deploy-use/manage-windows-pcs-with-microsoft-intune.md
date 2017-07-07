@@ -1,6 +1,6 @@
 ---
-title: Pc&quot;s beheren met clientsoftware | Microsoft Docs
-description: Beheer Windows-pc&quot;s door de Intune-clientsoftware te installeren.
+title: Pc's beheren met clientsoftware
+description: Beheer Windows-pc's door de Intune-clientsoftware te installeren.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune biedt voor organisaties een uitgebreide oplossing voor het beheren van mobiele apparaten. Met Intune kunt u Windows-pc's beheren als mobiele apparaten met behulp van de moderne mogelijkheden voor apparaatbeheer die zijn ingebouwd in Windows 10. Als u wilt voldoen aan de beheerbehoeften van uw organisatie, kan Intune ook Windows-pc's beheren als computers met de Intune-softwareclient. Bij deze beheermethode wordt gebruikgemaakt van traditionele mogelijkheden voor computerbeheer uit het oude Windows-besturingssysteem.
 
@@ -79,7 +78,7 @@ Hoewel de Intune-clientsoftware [beheermogelijkheden ondersteunt die helpen bij 
 
 Als u de Intune-clientsoftware gebruikt voor het beheer van Windows-pc's, kunt u alleen de beleidsregels gebruiken die worden weergegeven onder de sectie **Computerbeheer**.
 
-Intune beheert Windows-pc's met behulp van beleid, vergelijkbaar met hoe Windows Server Active Directory Domain Services/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) wordt gebruikt in uw organisatie. Zie [Groepsbeleid voor beginners](https://technet.microsoft.com/library/hh147307.aspx) voor meer informatie.
+Intune beheert Windows-pc’s met beleidsregels, vergelijkbaar met de manier waarop Windows Server Active Directory Domain Services (AD DS) dat met groepsbeleidsobjecten doet. Als u Active Directory-computers die lid zijn van een domein wilt beheren met Intune, [zorgt u ervoor dat het Intune-beleid niet in strijd is met de groepsbeleidsobjecten](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) die in uw organisatie worden gebruikt. Zie [Groepsbeleid voor beginners](https://technet.microsoft.com/library/hh147307.aspx) voor meer informatie.
 
   ![Een sjabloon selecteren voor een nieuw Windows pc-beleid](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ In de Intune-beheerconsole worden bepaalde secties, zoals **Updates**, **Beveili
 De Intune-clientsoftware wordt doorgaans in stille modus op de achtergrond uitgevoerd zonder dat de gebruiker iets hoeft te doen of problemen hoeft op te lossen. Als u problemen met pc-beheer moet oplossen, kunt u de logboeken controleren. De Intune-clientsoftware en de bijbehorende logboeken zijn geïnstalleerd in de map %Program Files%\Microsoft\OnlineManagement.
 
 U kunt ook [Troubleshoot client setup in Microsoft Intune (Problemen met clientinstallatie in Microsoft Intune oplossen)](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) raadplegen om te controleren welke problemen zich kunnen voordoen en welke (tijdelijke) oplossingen hiervoor zijn.
-

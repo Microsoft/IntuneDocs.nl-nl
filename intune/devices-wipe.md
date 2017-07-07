@@ -1,12 +1,12 @@
 ---
 title: Volledig of selectief wissen op apparaten met Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het selectief wissen van bedrijfsgegevens op een apparaat of het apparaat volledig wissen om de fabriekswaarden te herstellen.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het selectief wissen van bedrijfsgegevens op een apparaat of over volledig wissen van een apparaat om de fabrieksinstellingen terug te zetten.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Volledig of selectief wissen gebruiken
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 U kunt apps en gegevens wissen van met Intune beheerde apparaten die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Intune biedt hiervoor de mogelijkheid om selectief of volledig te wissen. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal-app op afstand een opdracht tot het wissen van hun apparaat geven, mits dit een eigen apparaat is dat bij Intune is geregistreerd.
 
@@ -101,8 +98,8 @@ Met **Selectief wissen** worden bedrijfsgegevens van een apparaat verwijderd, in
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Administratorbevoegdheden voor apparaat worden ingetrokken.|Administratorbevoegdheden voor apparaat worden ingetrokken.|
-|E-mail|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
-|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
+|E-mail|n.v.t. (e-mailprofielen worden niet ondersteund door Android-apparaten)|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
+|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.</br>Uitzondering: als Exchange on-premises wordt gehost, wordt e-mail niet verwijderd.|
 |Loskoppelen van Azure Active Directory (AAD)|AAD-record verwijderd.|AAD-record verwijderd.|
 |Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden gewist. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
@@ -130,4 +127,3 @@ Door selectief wissen uit te voeren op een Android for Work-apparaat, worden all
 3.  Kies op de blade met de naam van het apparaat **Remove comp...** (Bedrijfsgeg...), wat staat voor Bedrijfsgegevens verwijderen, en kies vervolgens **Ja** om het wissen te bevestigen.
 
 Als het apparaat is ingeschakeld en verbonden, wordt een wisopdracht in minder dan 15 minuten aan alle typen apparaten doorgegeven.
-

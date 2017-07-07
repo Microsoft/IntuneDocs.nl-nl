@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca6072ce66482f5986d37b2f61a123587ad8313f
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-skycure-on-your-ios-device"></a>U moet Skycure installeren op uw iOS-apparaat
 
 Voordat u toegang tot uw werk kunt krijgen, moet u voor de IT-beheerder de Skycure-app installeren. Deze app zorgt voor een betere beveiliging van uw apparaat doordat potentiële beveiligingsrisico's worden opgespoord. Wellicht ziet u andere aanwijzingen op uw apparaat, afhankelijk van de manier waarop uw IT-beheerder Skycure heeft ingesteld.
 
 **U moet het volgende doen:**
 
-1.    Als de volgende prompt wordt weergegeven, tikt u op **Installeren** zodat Skycure op uw apparaat kan worden geïnstalleerd.
+1.  Als de volgende prompt wordt weergegeven, tikt u op **Installeren** zodat Skycure op uw apparaat kan worden geïnstalleerd.
 
   ![Tik op Installeren om Skycure te installeren](./media/ios-mtd-install-app-request.png)
 
@@ -57,4 +53,3 @@ Als Skycure een beveiligingsrisico op uw apparaat vindt, worden er instructies w
 **Als de installatie niet werkt**
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

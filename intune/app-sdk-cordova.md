@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova-invoegtoepassing
 
@@ -159,4 +157,3 @@ Nadat u de app de eerste keer hebt gestart, verschijnt een dialoogvenster met de
 * Wanneer u de lijst met UTI's wijzigt onder het knooppunt **CFBundleDocumentTypes** van het bestand **Info.plist**, moet u de Intune UTI's wissen uit de sectie Geïmporteerde UTI's van hetzelfde PLIST-bestand (knooppunt **UTImportedTypeDeclarations**) voordat u opnieuw opbouwt. Alle Intune UTI's beginnen met het voorvoegsel `com.microsoft.intune.mam`.
 
 * Als u de Intune App SDK voor Cordova-invoegtoepassing wilt verwijderen uit uw Cordova-project, moet u ook het iOS-platform verwijderen en opnieuw toevoegen om bepaalde onderdelen van de Intune-configuratie in de .xcodeproj- en .plist-bestanden ongedaan te maken.
-

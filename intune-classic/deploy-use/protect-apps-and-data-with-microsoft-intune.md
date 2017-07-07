@@ -14,15 +14,12 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Apps en gegevens beveiligen met Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -55,4 +52,3 @@ De Intune App SDK is al ingebouwd in apps zoals de Microsoft Office-apps. U kunt
 U kunt ook [uw op maat gemaakte Line-Of-Business-apps inschakelen](/intune/apps-prepare-mobile-application-management) voor gebruik met MAM-beleid.
 
 Naast het beperken van gegevensverplaatsing kunt u voor een zoekgeraakt of gestolen apparaat, of als de gebruiker niet meer bij uw bedrijf werkt, [selectief bedrijfsgegevens wissen](wipe-managed-company-app-data-with-microsoft-intune.md) en alleen persoonlijke gegevens behouden.
-

@@ -1,7 +1,7 @@
 ---
-title: Basisgegevensbeheer voor Office 365-apps instellen - Intune Azure Preview
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: ondersteunende documentatie voor de wizard Office 365-apps beheren.'
+title: Basisgegevensbeheer in Office 365-apps instellen in Intune
+titleSuffix: Intune on Azure
+description: Ondersteunende documentatie voor de wizard Office 365-apps beheren.
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Hoe uw gebruikers basisbeveiliging ervaren in beheerde Office 365-apps
 
 Met de wizard **Office 365-apps beheren** wordt voor elk apparaatplatform een app-beveiligingsbeleid gemaakt.
@@ -129,9 +125,8 @@ Voor Android geldt dat voor apps die aan een Intune MAM-beleid zijn gekoppeld, d
 U kunt deze beleidsinstellingen altijd bewerken om aan de behoeften van uw organisatie te voldoen.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Hoe kan ik de beleidsregels bekijken en bewerken die door de wizard zijn gemaakt?
-Als u deze beleidsregels of andere beleidsregels die u in Intune Azure Preview maakt wilt bekijken of bijwerken, kiest u vanuit het dashboard **Apps beheren** > **App-beveiligingsbeleid**. De lijst met beleidsregels wordt rechts geopend. Kies het beleid dat u wilt bekijken en bewerk de instellingen. <br/>
+Als u deze beleidsregels, of andere beleidsregels die u in Intune Azure Portal maakt, wilt bekijken of bijwerken, kiest u in het dashboard **Apps beheren** > **App-beveiligingsbeleid**. De lijst met beleidsregels wordt rechts geopend. Kies het beleid dat u wilt bekijken en bewerk de instellingen. <br/>
 ![Afbeelding van gebruikersinterfacepad voor het weergeven van beleidsregels](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 Meer informatie over [app-beveiligingsbeleid](https://docs.microsoft.comapp-protection-policy.md).
-

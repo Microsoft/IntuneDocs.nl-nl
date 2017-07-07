@@ -1,6 +1,6 @@
 ---
-title: Beleid gebruiken om het beheer van Windows-pc&quot;s te vereenvoudigen
-description: Hierin worden het beheerbeleid voor Windows-pc&quot;s en de instellingen voor Microsoft Intune Center beschreven.
+title: Beleid gebruiken om het beheer van Windows-pc's te vereenvoudigen
+description: Hierin worden het beheerbeleid voor Windows-pc's en de instellingen voor Microsoft Intune Center beschreven.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Beleid gebruiken om het beheer van Windows-pc's te vereenvoudigen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -65,4 +62,3 @@ Zie de volgende bronnen voor meer informatie over beleidsregels en instellingen 
 ### <a name="see-also"></a>Zie ook
 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-

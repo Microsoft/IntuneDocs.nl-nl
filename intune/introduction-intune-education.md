@@ -14,15 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-intune-for-education"></a>Wat is Intune for Education?
 
 Intune for Education is ontworpen om uw docenten en studenten productiviteit te bieden terwijl schoolgegevens worden beveiligd. Intune is een cloudservice voor het beheer van bedrijfsmobiliteit (EMM) die de basis is voor Intune for Education.
@@ -45,4 +42,3 @@ Met Intune en Intune for Education kunt u:
 * Vertrouwd raken met het product [met een 30-daagse evaluatieversie van Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
 * Meer informatie over de snelste manier om te [beginnen met het gebruik van Intune for Education](/intune-education/what-is-express-configuration).
 * Duik in de [technische vereisten en mogelijkheden](/intune/supported-devices-browsers) van Intune.
-

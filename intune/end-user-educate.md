@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Eindgebruikers instructies geven over Microsoft Intune
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune helpt u om uw werknemers met mobiele apparaten uit te rusten terwijl uw zakelijke gegevens worden beveiligd. Voor een geslaagde implementatie zijn er diverse stappen mogelijk, waaronder het evalueren van Intune via een [gratis proefversie](app-sdk.md).
 
@@ -57,15 +56,15 @@ Door deze zorgen van uw gebruikers weg te nemen verloopt uw implementatie soepel
 
 * **Android**
   * [Een Android-apparaat gebruiken met Intune](/intune-user-help/using-your-android-device-with-intune)
-  * [Hoe uw Android-gebruikers apps downloaden](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Hoe uw Android-gebruikers apps downloaden](end-user-apps-android.md)
 
 * **iOS**
   * [Een iOS-apparaat gebruiken met Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [Hoe uw iOS-gebruikers hun apps downloaden](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [Hoe uw iOS-gebruikers hun apps downloaden](end-user-apps-ios.md)
 
 * **Windows**
   * [Een Windows-apparaat gebruiken met Intune](/intune-user-help/using-your-windows-device-with-intune)
-  * [Hoe uw Windows-gebruikers apps downloaden](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Hoe uw Windows-gebruikers apps downloaden](end-user-apps-windows.md)
 
 * __Wees open.__ Vertel uw gebruikers duidelijk wat u zult beheren op hun apparaten. Vertel wat voor soort gegevens u verzamelt en waarom u die wilt verzamelen. Informeer ze hoe u van plan bent om alle bedrijfsgegevens te gebruiken. [Microsoft vindt dat u recht hebt op zoveel mogelijk gegevens over het beheer van uw klantgegevens in de cloud](https://www.microsoft.com/trustcenter/about/transparency) en we denken dat deze filosofie de tevredenheid van uw eindgebruikers met Intune aanzienlijk kan verhogen.
 
@@ -73,4 +72,3 @@ Door deze zorgen van uw gebruikers weg te nemen verloopt uw implementatie soepel
 > Openheid, waar mogelijk, is fundamenteel voor een geslaagde implementatie.
 
 U probeert vertrouwen te combineren met goed ontworpen nalevingsbeleid om ervoor te zorgen dat eindgebruikers weten dat zelfs als u *kunt* kijken naar bepaalde typen persoonlijke gegevens, u dit niet *wilt* en de aansprakelijkheid die het voor u kan betekenen wanneer u inbreuk maakt op hun privacy. Het samenstellen van een verklaring met de juridische en HR-afdelingen kan helpen bij bijzonder moeilijke werknemers.
-

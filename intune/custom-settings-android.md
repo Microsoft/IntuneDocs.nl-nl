@@ -1,7 +1,7 @@
 ---
 title: Aangepaste Intune-instellingen voor Android-apparaten
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over de instellingen die u kunt gebruiken in een aangepast Android-profiel.'
+titleSuffix: Intune on Azure
+description: Meer informatie over de instellingen die u kunt gebruiken in een aangepast Android-profiel.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ff3d3b1596f58213bed2509b1bfd5ae81c63f440
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Aangepaste instellingen voor Android-apparaten in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Gebruik het **aangepaste** profiel van Microsoft Intune voor Android om OMA-URI-instellingen toe te wijzen die kunnen worden gebruikt om functies op Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
@@ -43,4 +40,3 @@ Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configurere
     - **OMA-URI**: geef aan voor welke OMA-URI u een instelling wilt opgeven.
     - **Waarde**: voer de waarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd.
 4. Klik op **OK** als u klaar bent en voeg vervolgens zo nodig meer instellingen toe.
-

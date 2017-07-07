@@ -1,5 +1,5 @@
 ---
-title: App-gegevens beveiligen met behulp van MAM-beleid | Microsoft Docs
+title: App-gegevens beveiligen met MAM-beleid
 description: "In dit onderwerp wordt uitgelegd hoe Mobile Application Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Bescherm app-gegevens met beveiligingsbeleid voor apps met Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ U kunt beveiligingsbeleid configureren voor apps die worden uitgevoerd op:
 
 -   **Apparaten die zijn geregistreerd bij een MDM-oplossing van derden:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
-      > [!NOTE]
-      > U kunt beter geen beveiligingsbeleid voor apps met mobiel applicatiebeheer of oplossingen voor beveiligde containers van derden gebruiken.
+    > [!NOTE]
+    > U kunt beter geen beveiligingsbeleid voor apps met mobiel applicatiebeheer of oplossingen voor beveiligde containers van derden gebruiken.
 
 -   **Apparaten die niet zijn ingeschreven bij een MDM-oplossing:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
@@ -135,4 +132,3 @@ Wanneer een gebruiker de OneDrive-app start vanaf een werkaccount, kan hij de be
 - [Aan de slag met configureren van beveiligingsbeleid voor apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

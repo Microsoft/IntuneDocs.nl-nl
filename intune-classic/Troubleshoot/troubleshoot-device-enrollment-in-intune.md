@@ -1,11 +1,11 @@
 ---
-title: Problemen bij de apparaatregistratie oplossen | Microsoft Docs
+title: Hoe los ik problemen met de inschrijving van apparaten op?
 description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,11 +31,11 @@ Dit onderwerp bevat suggesties voor het oplossen van problemen met de registrati
 
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
--    [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [iOS- en Mac-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Windows apparaatbeheer instellen](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [Android-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune): geen aanvullende stappen vereist
--    [Android for Work-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-android-for-work)
+-   [Bereid u voor op het registreren van apparaten in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [iOS- en Mac-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Windows apparaatbeheer instellen](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [Android-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune): geen aanvullende stappen vereist
+-   [Android for Work-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-android-for-work)
 
 Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
 
@@ -110,8 +107,8 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 1.  Controleer of de MDM-instantie juist is ingesteld voor het type Intune-service dat u gebruikt (dat wil zeggen Intune, Office 365 of System Center Configuration Manager met Intune). Voor Intune wordt de MDM-instantie ingesteld in **Beheer** &gt; **Mobile Device Management**. Voor Configuration Manager met Intune stelt u deze in wanneer u de Intune-connector configureert. In Office 365 is het een instelling in **Mobiele apparaten**.
 
-    > [!NOTE]
-    > Wanneer u de MDM-instantie eenmaal hebt ingesteld, kunt u deze alleen wijzigen door contact op te nemen met Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
+    > [!NOTE]    
+    > In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de registratie van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw te registreren. Zie [Wat te doen als u de verkeerde instelling kiest voor de MDM-instantie](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor meer informatie.
 
 2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory door te controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in de Office 365-portal.
     Doe het volgende als de UPN niet overeenkomt met de Active Directory-gegevens:
@@ -230,16 +227,16 @@ De certificaatfout treedt op omdat Android-apparaten vereisen dat er tussencerti
 
 Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
 
-1.    Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
-2.    Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
-3.    Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
-4.    Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
-5.    Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
-6.    Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
-7.    Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
-8.    Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
-9.    Start de AD FS-servers opnieuw op.
-10.    Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
+1.  Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
+2.  Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
+3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
+4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
+5.  Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
+6.  Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
+7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
+8.  Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
+9.  Start de AD FS-servers opnieuw op.
+10. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
 De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
 
 **Valideren dat het certificaat correct is geïnstalleerd**:
@@ -261,10 +258,10 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Geen registratiebeleid gevonden|Controleer of alle vereisten voor registratie zijn geconfigureerd, zoals het Apple Push Notification Service-certificaat (APNs) en of iOS als platform is ingeschakeld. Zie [iOS- en Mac-apparaatbeheer instellen](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) voor instructies.|
 |DeviceCapReached|Er zijn al te veel mobiele apparaten geregistreerd.|De gebruiker moet een van zijn momenteel geregistreerd mobiele apparaten verwijderen uit de bedrijfsportal voordat hij een ander mobiel apparaat kan registreren. Zie de instructies voor het type apparaat dat u gebruikt: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNs-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNs-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) en [Gebruikers en apparaten organiseren](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNs-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNs-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](/intune/users-permissions-add) en [Gebruikers en apparaten organiseren](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNs-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNs-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) voor meer informatie.|
 |DeviceTypeNotSupported|Mogelijk heeft de gebruiker geprobeerd een ander apparaat dan een iOS-apparaat te registreren. Het type mobiele apparaat dat u probeert te registreren, wordt niet ondersteund.<br /><br />Controleer of iOS-versie 8.0 of hoger op het apparaat wordt uitgevoerd.<br /><br />|Controleer of iOS-versie 8.0 of hoger op het apparaat van de gebruiker wordt uitgevoerd.|
-|UserLicenseTypeInvalid|Het apparaat kan niet worden geregistreerd, omdat het account van de gebruiker nog geen lid is van een vereiste gebruikersgroep.<br /><br />|Gebruikers die hun apparaten willen registreren, moeten lid zijn van de juiste gebruikersgroep. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br /><br />Controleer het volgende voor meer informatie:<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) en informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) en [Gebruikers en apparaten organiseren](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|UserLicenseTypeInvalid|Het apparaat kan niet worden geregistreerd, omdat het account van de gebruiker nog geen lid is van een vereiste gebruikersgroep.<br /><br />|Gebruikers die hun apparaten willen registreren, moeten lid zijn van de juiste gebruikersgroep. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br /><br />Controleer het volgende voor meer informatie:<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) en informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](/intune/users-permissions-add) en [Gebruikers en apparaten organiseren](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|De Mobile Device Management-instantie is niet gedefinieerd in Intune.<br /><br />|De Mobile Device Management-instantie is niet aangewezen in Intune.<br /><br />Lees artikel 1 in de sectie 'Stap 6: mobiele apparaten registreren en een app installeren' in [Aan de slag met een evaluatieversie van Microsoft Intune van 30 dagen](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Apparaten zijn inactief of de beheerconsole kan er niet mee communiceren
@@ -413,4 +410,3 @@ Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde i
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-

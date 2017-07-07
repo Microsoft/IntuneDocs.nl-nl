@@ -1,7 +1,7 @@
 ---
 title: Intune-apparaatbeperkingsinstellingen configureren
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u Intune kunt gebruiken voor het configureren van instellingen en functies op de apparaten die u beheert.'
+titleSuffix: Intune on Azure
+description: Meer informatie over hoe u Intune kunt gebruiken voor het configureren van instellingen en functies op de apparaten die u beheert.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen die u voor diverse categorieën beheert, waaronder beveiliging, browsers, hardware en instellingen voor het delen van gegevens. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
 
@@ -35,7 +32,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten configureren** op de blade **Intune**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
@@ -67,5 +64,4 @@ Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen
 In dit voorbeeld op hoog niveau maakt u een apparaatbeperkingsbeleid waarmee het gebruik van de ingebouwde camera-app op Android-apparaten wordt geblokkeerd.
 
 ![De camera uitschakelen op Android-apparaten](./media/disable-android-camera.png)
-
 

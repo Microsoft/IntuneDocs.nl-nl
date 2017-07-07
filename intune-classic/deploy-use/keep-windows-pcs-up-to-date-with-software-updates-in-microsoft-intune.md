@@ -1,5 +1,5 @@
 ﻿---
-title: Software-updates voor Windows-pc&quot;s | Microsoft Docs
+title: Software-updates voor Windows-pc's
 description: "Intune houdt uw beheerde computers bijgewerkt door ervoor te zorgen dat de meest recente patches en software-updates snel worden geïnstalleerd."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows-pc’s up-to-date houden met software-updates in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Met Microsoft Intune kunt u beheerde computers op een aantal manieren helpen beveiligen. Zo kunt u software-updates beheren die de computers up-to-date houden door ervoor te zorgen dat de nieuwste patches en software-updates snel worden geïnstalleerd.
 
 Zie [De Windows-pc-client installeren met Windows Intune](install-the-windows-pc-client-with-microsoft-intune.md) als u de Intune-client nog niet op uw computers hebt geïnstalleerd.
@@ -255,4 +255,3 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 
 ### <a name="see-also"></a>Zie tevens
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

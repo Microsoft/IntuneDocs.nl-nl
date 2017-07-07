@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Android-apparaat inschrijft bij Intune?
 
 Wanneer u de bedrijfsportal-app installeert en uw Android-apparaat bij Intune registreert, kunt u de bedrijfsportal-app gebruiken voor het volgende:
@@ -61,4 +57,3 @@ Nadat het apparaat aan de bedrijfsportal is toegevoegd, gebeurt ongeveer elke ac
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden. (Deze updates bevatten geen persoonlijke informatie.)
 
 Hebt u hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.
-

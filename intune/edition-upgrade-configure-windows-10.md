@@ -1,12 +1,12 @@
 ---
 title: Editie-upgrades voor Windows 10 configureren in Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u met Intune de Windows 10-apparaten die u beheert kunt bijwerken naar een andere editie.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het gebruik van Intune om Windows 10-apparaten die u beheert, bij te werken naar een andere editie.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 59a29cee51f228c647a2491a2e452555ac5aba05
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Editie-upgrades voor Windows 10 configureren in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Gebruik de informatie in dit onderwerp voor informatie over het configureren van een editie-upgradeprofiel voor Windows 10. Met dit profiel kunt u apparaten waarop een van de volgende versies van Windows 10 wordt uitgevoerd automatisch bijwerken naar een andere editie:
 
@@ -52,7 +49,7 @@ Voordat u begint met het upgraden van apparaten naar de nieuwste versie, hebt u 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
@@ -68,5 +65,4 @@ Voordat u begint met het upgraden van apparaten naar de nieuwste versie, hebt u 
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
-
 
