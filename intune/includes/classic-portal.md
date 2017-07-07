@@ -1,4 +1,4 @@
 |Van toepassing op: Intune in de klassieke portal |
 |--|
-|Op zoek naar documentatie over de Intune Azure Portal-preview? Klik [hier](https://docs.microsoft.com/intune/what-is-intune).|
+|Zoekt u documentatie over Intune op Azure? Klik [hier](https://docs.microsoft.com/intune/what-is-intune).|
 | |

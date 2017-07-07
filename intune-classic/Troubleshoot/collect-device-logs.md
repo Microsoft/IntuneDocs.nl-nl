@@ -1,5 +1,5 @@
 ---
-title: Apparaatlogboeken verzamelen | Microsoft Docs
+title: Apparaatlogboeken verzamelen
 description: Informatie over het verzamelen van logboeken van uw beheerde apparaten.
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="device-logs"></a>Apparaatlogboeken
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Zie de volgende artikelen voor meer informatie over hoe uw gebruikers u gegevens
 
 Gebruikers kunnen u registratiefouten verzenden, zoals wordt beschreven in [iOS-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-errors-to-your-it-admin-ios).
 
-Gebruikers kunnen apparaatlogboeken verzenden, zoals beschreven in [Logboeken verzenden naar de bedrijfsportal-ontwikkelaars voor iOS-apparaten](/intune-user-help/send-logs-to-your-it-admin-by-email-ios).
+Gebruikers kunnen apparaatlogboeken verzenden, zoals beschreven in [Logboeken verzenden naar de bedrijfsportal-ontwikkelaars voor iOS-apparaten](/intune-user-help/send-logs-to-microsoft-ios).
 
 ### <a name="mac-os-x-logs"></a>Mac OS X-logboeken
 
@@ -61,4 +58,3 @@ In de bedrijfsportal-app voor Windows Phone kiezen gebruikers de drie puntjes (*
 ### <a name="windows"></a>Windows
 
 Voor de Windows-bedrijfsportal bevinden de logboeken zich in *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-

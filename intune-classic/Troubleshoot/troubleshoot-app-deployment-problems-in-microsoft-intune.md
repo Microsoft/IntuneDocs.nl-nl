@@ -1,5 +1,5 @@
 ---
-title: Problemen met app-implementaties oplossen | Microsoft Docs
+title: Problemen met app-implementatie oplossen
 description: Dit onderwerp helpt u bij het oplossen van problemen met app-implementaties in Microsoft Intune.
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0277c0baed66a1340373cb607976d03a07ca5282
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Problemen met app-implementaties oplossen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -37,7 +34,7 @@ Als u problemen hebt met het implementeren en beheren van apps met Intune, begin
 |0x80073CF0|Het pakket kan niet worden geopend.|Mogelijke oorzaken:<br /><br />-   Het pakket is niet ondertekend.<br />-   De naam van de uitgever komt niet overeen met de ondertekenende certificaathouder.<br /><br />Controleer het gebeurtenislogboek AppxPackagingOM op meer informatie.|
 |0x80073CF3|Validatie van updates, afhankelijkheid of conflict voor het pakket is mislukt|Mogelijke oorzaken:<br /><br />-   Het binnenkomende pakket conflicteert met een geïnstalleerd pakket.<br />-   Kan een opgegeven pakketafhankelijkheid niet vinden.<br />-   Het pakket biedt geen ondersteuning voor de juiste processorarchitectuur.<br /><br />Controleer het gebeurtenislogboek AppXDeployment-Server voor meer informatie.|
 |0x80073CFB|Het opgegeven pakket is al geïnstalleerd en opnieuw installeren van het pakket is geblokkeerd|Dit foutbericht kan worden weergegeven als u een pakket installeert dat niet gelijk is aan het pakket dat al is geïnstalleerd. Controleer of de digitale handtekening ook onderdeel is van het pakket. Wanneer een pakket opnieuw is samengesteld of opnieuw is ondertekend, is dat pakket niet meer bitsgewijs identiek aan het eerder geïnstalleerde pakket. Er zijn twee mogelijke opties om deze fout te herstellen:<br /><br />-   Verhoog het versienummer van de app, stel het pakket opnieuw samen en onderteken het opnieuw.<br />-   Verwijder het oude pakket voor elke gebruiker op het systeem voordat u het nieuwe pakket installeert.|
-|0x87D1041C|De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd.|-De app is met Intune geïmplementeerd en daarna verwijderd (mogelijk door de eindgebruiker). Geef de gebruiker de opdracht de app opnieuw te installeren via de bedrijfsportal. Vereiste apps worden automatisch opnieuw geïnstalleerd wanneer het apparaat vervolgens incheckt.|
+|0x87D1041C|De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd.|-De app is geïmplementeerd met Intune en daarna verwijderd (mogelijk door de eindgebruiker). Geef de gebruiker de opdracht de app opnieuw te installeren via de bedrijfsportal. Vereiste apps worden automatisch opnieuw geïnstalleerd wanneer het apparaat vervolgens incheckt.|
 
 ## <a name="troubleshooting-apps-from-the-windows-store"></a>Het oplossen van problemen met apps van de Windows Store
 
@@ -53,4 +50,3 @@ Daarnaast is het ook handig als u deze logboeken naar Microsoft verzendt in het 
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning, zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-

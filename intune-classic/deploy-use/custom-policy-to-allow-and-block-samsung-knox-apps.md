@@ -1,5 +1,5 @@
 ---
-title: Toegestane en geblokkeerde apps voor KNOX | Microsoft Docs
+title: Lijst van toegestane en geblokkeerde apps voor KNOX
 description: Aangepast profiel voor het maken van een lijst met toegestane en geblokkeerde apps voor KNOX.
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten
 
@@ -43,9 +40,9 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX 
     
     - **Naam van instelling.** Voer **PreventStartPackages** in.
     - **Beschrijving van instelling.** Voer eventueel een beschrijving in, zoals 'Lijst met apps die zijn geblokkeerd'.
-    -     **Gegevenstype.** Kies **Tekenreeks** in de vervolgkeuzelijst.
-    -     **OMA-URI.** Voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** in.
-    -     **Waarde.** Voer een lijst in van de app-pakketnamen die u wilt blokkeren. U kunt **; : ,** of **|** gebruiken als scheidingsteken. (Voorbeeld: pakket1; pakket2;)
+    -   **Gegevenstype.** Kies **Tekenreeks** in de vervolgkeuzelijst.
+    -   **OMA-URI.** Voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** in.
+    -   **Waarde.** Voer een lijst in van de app-pakketnamen die u wilt blokkeren. U kunt **; : ,** of **|** gebruiken als scheidingsteken. (Voorbeeld: pakket1; pakket2;)
 
     Voor een lijst met apps die gebruikers mogen installeren vanuit de Google Play Store, terwijl alle andere apps worden uitgesloten:
 
@@ -74,4 +71,3 @@ Wanneer u een geïmplementeerde beleid selecteert, kunt u meer informatie over d
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen voor het Android- en Samsung KNOX-beleid in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-
