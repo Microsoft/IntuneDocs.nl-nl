@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
+# iOS-apparaatbeperkingsinstellingen in Microsoft Intune
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>Algemeen
+## Algemeen
+<a id="general" class="xliff"></a>
 -   **Camera**: hiermee kunt u aangeven of de camera op het apparaat kan worden gebruikt.   
 -   **Verzenden van diagnostische gegevens**: hiermee kunt u verzending van diagnostische gegevens naar Apple voor het apparaat toestaan of blokkeren.
 -   **FaceTime**: hiermee staat u toe dat de FaceTime-app op het apparaat mag worden gebruikt.
@@ -73,7 +75,8 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 - **Apple Nieuws (alleen onder supervisie)**: hiermee staat u het gebruik van de app Apple News toe.
 - **Wijzigingen in configuratieprofielen**: hiermee staat u de gebruiker toe configuratieprofielen te installeren.
 
-## <a name="password"></a>Wachtwoord
+## Wachtwoord
+<a id="password" class="xliff"></a>
 -   **Wachtwoord vereist**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
 -   **Eenvoudige wachtwoorden**: hiermee staat u het gebruik van eenvoudige wachtwoorden toe, zoals 0000 en 1234.
 -   **Vereist wachtwoordtype**: hiermee geeft u het type wachtwoord op dat vereist is, zoals alleen numeriek of alfanumeriek.
@@ -88,7 +91,8 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 
 <sup>1</sup> Wanneer u de instellingen **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld** en **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
 
-## <a name="app-store-doc-viewing-gaming"></a>App Store, documenten bekijken, gamen
+## App Store, documenten bekijken, gamen
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **App Store (alleen onder toezicht)**: hiermee blokkeert u de toegang tot de App Store op apparaten onder toezicht.
@@ -106,7 +110,8 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 -   **Classificatieregio**: kies de classificatieregio waarvoor u toegestane downloads wilt configureren en kies vervolgens de toegestane classificaties voor **Films** en **Tv-programma's**.
 -   **Apps**: kies de toegestane leeftijdscategorie van apps die gebruikers kunnen downloaden of kies **Alle apps toestaan**.
 
-## <a name="restricted-apps"></a>Beperkte apps
+## Beperkte apps
+<a id="restricted-apps" class="xliff"></a>
 
 Configureer een van de volgende lijsten in de lijst met beperkte apps:
 
@@ -115,7 +120,8 @@ Lijst met **goedgekeurde apps**: hiermee maakt u een lijst met apps die gebruike
 
 Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>De URL naar een app in de Store opgeven
+### De URL naar een app in de Store opgeven
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Als u een app-URL wilt opgeven in de lijst met apps, gebruikt u de volgende notatie:
 
@@ -130,11 +136,13 @@ Voorbeeld: Zoek naar Microsoft Word voor iPad. De URL die u gebruikt, is https:/
 
 
 
-### <a name="additional-options"></a>Extra opties
+### Extra opties
+<a id="additional-options" class="xliff"></a>
 
 U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een CSV-bestand in de indeling <*app-URL*>, <*app-naam*>, <*app-uitgever*>. Of klik op **Exporteren** om een CSV-bestand (met dezelfde indeling) te maken met de inhoud van de lijst met beperkte apps.
 
-## <a name="show-or-hide-apps"></a>Apps weergeven of verbergen
+## Apps weergeven of verbergen
+<a id="show-or-hide-apps" class="xliff"></a>
 
 In de lijst Apps weergeven of verbergen kunt u een van de volgende lijsten configureren (vereist toezicht voor apparaten met iOS 9.3 of hoger).
 
@@ -143,7 +151,8 @@ Lijst met **zichtbare apps**: een lijst opstellen met apps die gebruikers kunnen
 
 Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>De URL naar een app in de Store opgeven
+### De URL naar een app in de Store opgeven
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Als u een app-URL wilt opgeven in de lijst met apps, gebruikt u de volgende notatie:
 
@@ -155,19 +164,22 @@ Voorbeeld: Zoek naar Microsoft Word voor iPad. De URL die u gebruikt, is https:/
 > [!Note]
 > U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
 
-### <a name="additional-options"></a>Extra opties
+### Extra opties
+<a id="additional-options" class="xliff"></a>
 
 U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een CSV-bestand in de indeling <*app-URL*>, <*app-naam*>, <*app-uitgever*>. Of klik op **Exporteren** om een CSV-bestand (met dezelfde indeling) te maken met de inhoud van de lijst met verborgen of zichtbare apps.
 
 
-## <a name="cellular"></a>Mobiel
+## Mobiel
+<a id="cellular" class="xliff"></a>
 -   **Dataroaming**: hiermee staat u dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
 -   **Wereldwijd ophalen op achtergrond tijdens roamen**: hiermee staat u toe dat het apparaat data zoals e-mail ophaalt tijdens roaming op een mobiel netwerk.
 -   **Nummer inspreken**: hiermee staat u het gebruik van de functie voor het inspreken van telefoonnummers op het apparaat toe.
 -   **Spraakroaming**: hiermee staat u spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
 -   **Wijzigingen in de instellingen voor het gebruik van mobiel dataverkeer voor apps (alleen onder supervisie)**: hiermee staat u de gebruiker toe om te bepalen welke apps mobiel dataverkeer mogen gebruiken.
 
-## <a name="cloud-and-storage"></a>Cloud en opslag
+## Cloud en opslag
+<a id="cloud-and-storage" class="xliff"></a>
 -   **Back-up naar iCloud**: hiermee staat u de gebruiker toe een back-up van het apparaat naar iCloud te maken.
 -   **Documentsynchronisatie met iCloud (alleen onder toezicht)**: hiermee staat u synchronisatie van documenten en sleutelwaarden naar uw iCloud-opslagruimte toe.
 -   **Synchroniseren van Photo Stream naar iCloud**: hiermee kunnen gebruikers **Mijn fotostream** inschakelen op hun apparaat zodat foto's kunnen worden gesynchroniseerd met iCloud en beschikbaar zijn op alle apparaten van de gebruikers.
@@ -177,11 +189,13 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 -   **Streaming van gedeelde foto's**: stel deze optie in op **Nee** om **Foto's delen via iCloud** uit te schakelen op het apparaat.
 -   **Voortzetting van activiteit**: hiermee staat u toe dat gebruikers op een ander iOS- of macOS-apparaat kunnen doorgaan met werk waaraan ze zijn begonnen op een iOS-apparaat (Handoff).
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>Autonome modus voor enkele toepassing (alleen onder toezicht)
+## Autonome modus voor enkele toepassing (alleen onder toezicht)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 Gebruik deze instellingen om iOS-apparaten zodanig te configureren dat hierop opgegeven apps in de autonome één-app-modus worden uitgevoerd. Wanneer deze modus is geconfigureerd en de app wordt uitgevoerd, wordt het apparaat vergrendeld zodat alleen de betreffende app kan worden uitgevoerd. U kunt bijvoorbeeld een app configureren die de gebruikers een test laat uitvoeren op het apparaat. Wanneer de acties van de app zijn voltooid of u het beleid verwijdert, keert het apparaat terug naar de normale staat.
 
-### <a name="settings"></a>Instellingen
+### Instellingen
+<a id="settings" class="xliff"></a>
 
 - **App-naam**: voer de naam in van de app zoals die wordt weergegeven in de lijst met apps op deze blade.
 - **App-bundel-id**: geef de bundel-id van de app op. Zie voor hulp **Lijst van bundel-id’s voor ingebouwde iOS-apps** in dit onderwerp.
@@ -191,54 +205,57 @@ Nadat u de naam en bundel-id van de app hebt opgegeven, kiest u **Toevoegen** om
 - **Importeren**: een (CSV-)bestand met een lijst met door komma's gescheiden namen van apps en de bijbehorende bundel-id's importeren.
 - **Exporteren**: de namen van apps en de bijbehorende bundel-id's die u hebt geconfigureerd exporteren naar een (CSV-)bestand met door komma's gescheiden waarden.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id’s voor ingebouwde iOS-apps
+### Lijst van bundel-id’s voor ingebouwde iOS-apps
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 Deze lijst bevat de bundel-id’s van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier.
 
-|||
-|-|-|
-|App-naam|Bundel-id|
-|App Store|com.apple.AppStore|
-|Rekenmachine|com.apple.calculator|
-|Kalender|com.apple.mobilecal|
-|Camera|com.apple.camera|
-|Klok|com.apple.mobiletimer|
-|Kompas|com.apple.compass|
-|Contactpersonen|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Zoek vrienden|com.apple.mobileme.fmf1|
-|Zoek mijn iPhone|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Status|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.Apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.Apple.mobilemail|
-|Kaarten|com.apple.Maps|
-|Berichten|com.apple.MobileSMS|
-|Music|com.apple.Music|
-|Nieuws|com.apple.news|
-|Opmerkingen|com.apple.mobilenotes|
-|Getallen|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Foto’s|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Herinneringen|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Instellingen|com.apple.Preferences|
-|Aandelen|com.apple.stocks|
-|Tips|com.apple.tips|
-|Video 's|com.apple.videos|
-|Dictafoon|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Weer|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Kiosk
+```
+
+
+## Kiosk
+<a id="kiosk" class="xliff"></a>
 -   **Activeringsvergrendeling**: hiermee schakelt u Activeringsvergrendeling in op iOS-apparaten in de supervisiemodus.
 -   **App die wordt uitgevoerd in de kioskmodus**: kies **Beheerde app** om een app te selecteren die u aan Intune hebt toegevoegd of kies **Store-app** om de URL naar een app in de Store op te geven. Er mogen geen andere apps op het apparaat worden uitgevoerd. Zie "URL's voor app stores opgeven" verderop in dit onderwerp voor meer informatie.
 -   **AssistiveTouch**: hiermee schakelt u de toegankelijkheidsinstelling **AssistiveTouch** in of uit, waarmee gebruikers schermbewegingen kunnen uitvoeren die moeilijk voor hen kunnen zijn.
@@ -262,7 +279,8 @@ Deze lijst bevat de bundel-id’s van een aantal algemene ingebouwde iOS-apps. A
 > Voordat u een iOS-apparaat voor de kioskmodus kunt configureren, moet u het hulpprogramma Apple Configurator of het Device Enrollment Program van Apple gebruiken om het apparaat in de supervisiemodus te plaatsen. Zie de Apple-documentatie voor meer informatie over het hulpprogramma Apple Configurator.
 >Als de iOS-app die u opgeeft wordt geïnstalleerd nadat u het profiel hebt toegewezen, wordt de kioskmodus van het apparaat pas geactiveerd nadat het opnieuw is opgestart.
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (alleen onder toezicht)**: hiermee geeft u op of de Safari-browser op het apparaat kan worden gebruikt.
 -   **Automatisch doorvoeren**: hiermee staat u de gebruiker toe instellingen voor automatisch aanvullen in de browser te wijzigen.
 -   **Cookies**: hiermee staat u toe dat de browser gebruikmaakt van cookies.
@@ -271,18 +289,22 @@ Deze lijst bevat de bundel-id’s van een aantal algemene ingebouwde iOS-apps. A
 -   **Pop-ups**: hiermee schakelt u de pop-upblokkering voor de browser in of uit.
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>Niet-gemarkeerde e-maildomeinen
+### Niet-gemarkeerde e-maildomeinen
+<a id="unmarked-email-domains" class="xliff"></a>
 
 Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wanneer eindgebruikers een e-mail ontvangen dat afkomstig is van een ander domein dan dat u hebt geconfigureerd, wordt de e-mail in de map iOS Mail gemarkeerd als niet-vertrouwd.
 
 
-### <a name="managed-web-domains"></a>Beheerde webdomeinen
+### Beheerde webdomeinen
+<a id="managed-web-domains" class="xliff"></a>
 
 Voeg in het veld **Webdomein-URL** een of meer URL's toe aan de lijst. Documenten die zijn gedownload via de URL's die u opgeeft, worden als beheerd beschouwd. Deze instelling geldt alleen voor documenten die zijn gedownload met Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domeinen voor automatisch invullen van wachtwoorden in Safari
+### Domeinen voor automatisch invullen van wachtwoorden in Safari
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 Voeg in het veld **Domein-URL** een of meer URL's toe aan de lijst. Gebruikers kunnen in deze lijst alleen webwachtwoorden van URL's opslaan. Deze instelling geldt alleen voor Safari en voor apparaten met iOS 9.3 en hoger in de modus supervisie. Als u geen URL's opgeeft, kunnen wachtwoorden van alle websites worden opgeslagen.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
+# Wat is Microsoft Intune-appbeheer?
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ Verder wilt u misschien apps toewijzen en beheren op apparaten die niet met Intu
 
 Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de gekozen apparaten te krijgen.
 
-## <a name="app-management-capabilities-by-platform"></a>App-beheermogelijkheden per platform
+## App-beheermogelijkheden per platform
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 |Apps uit een store|Yes|Ja|Ja|Yes|
 |Apps bijwerken|Ja|Ja|Ja|Yes|
 
-<sup>1</sup> Overweeg het gebruik van [Windows Information Protection] windows-information-protection-configure.md) om apps te beschermen op apparaten met Windows 10.
+<sup>1</sup> U kunt gebruikmaken van [Windows Information Protection](windows-information-protection-configure.md) om apps op apparaten met Windows 10 te beveiligen.
 
 <sup>2</sup>Alleen van toepassing op apparaten die worden beheerd door Intune.
 
-## <a name="how-to-get-started"></a>Aan de slag
+## Aan de slag
+<a id="how-to-get-started" class="xliff"></a>
 
 U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele apps** die als volgt toegankelijk is:
 
@@ -70,7 +73,8 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 
     ![De workload Mobiele apps](./media/apps-workload.png)
 
-### <a name="manage"></a>Manage
+### Manage
+<a id="manage" class="xliff"></a>
 - **Apps**: in dit knooppunt kunt u de meeste apps toevoegen, toewijzen en bewaken.
     - [Apps toevoegen](apps-add.md)
     - [Apps toewijzen](apps-deploy.md)
@@ -85,7 +89,8 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 - **iOS-inrichtingsprofiel**: iOS-apps hebben een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen.
     - [Inrichtingsprofielen voor iOS-apps](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>Monitor
+### Monitor
+<a id="monitor" class="xliff"></a>
 - **Apps met licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken.
     - [Windows Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md)
 - **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd.
@@ -94,7 +99,8 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 
 Zie [Apps bewaken](apps-monitor.md) voor meer informatie
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store voor Bedrijven**: integratie met Windows Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden.
