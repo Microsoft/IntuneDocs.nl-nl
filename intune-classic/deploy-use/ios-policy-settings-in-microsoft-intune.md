@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-policy-settings-in-microsoft-intune"></a>Instellingen voor iOS-beleid in Microsoft Intune
+# Instellingen voor iOS-beleid in Microsoft Intune
+<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op iOS-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
-## <a name="general-configuration-policy-settings"></a>Instellingen voor algemeen configuratiebeleid
+## Instellingen voor algemeen configuratiebeleid
+<a id="general-configuration-policy-settings" class="xliff"></a>
 
 Gebruik het **algemene iOS-configuratiebeleid** van Microsoft Intune om instellingen te configureren voor:
 
@@ -41,7 +43,8 @@ Gebruik het **algemene iOS-configuratiebeleid** van Microsoft Intune om instelli
 
 Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de instelling wellicht maken met een aangepast iOS-beleid, dat u in staat stelt instellingen te importeren die u hebt gemaakt met de [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Zie "Aangepaste beleidsinstellingen" verderop in dit onderwerp voor meer informatie.
 
-### <a name="security-settings"></a>Beveiligingsinstellingen
+### Beveiligingsinstellingen
+<a id="security-settings" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -60,7 +63,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Vingerafdruk voor ontgrendelen toestaan**|Hiermee staat u toe dat het apparaat kan worden ontgrendeld met een vingerafdruk.|
 <sup>1</sup> Wanneer u voor iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat wachtwoord vereist is** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
 
-### <a name="system-settings"></a>Systeeminstellingen
+### Systeeminstellingen
+<a id="system-settings" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -73,7 +77,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Verzending van diagnostische gegevens toestaan**|Hiermee staat u verzending van diagnostische gegevens naar Apple toe voor het apparaat of weigert u dit.|
 |**Passbook tijdens vergrendeling toestaan**|Hiermee staat u de gebruiker toegang tot de app Passbook toe terwijl het apparaat is vergrendeld.|
 
-### <a name="cloud-settings-for-documents-and-data"></a>Cloudinstellingen voor documenten en gegevens
+### Cloudinstellingen voor documenten en gegevens
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -87,7 +92,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Foto's delen via iCloud toestaan**|Stel deze optie in op **Nee** om **Foto's delen via iCloud** uit te schakelen op het apparaat.|
 |**iCloud-fotobibliotheek toestaan**|Als de optie wordt ingesteld op **Nee**, wordt het gebruik uitgeschakeld van de iCloud-afbeeldingsbibliotheek waarmee gebruikers foto's en video's in de cloud kunnen opslaan.   Foto's die niet volledig naar het apparaat zijn gedownload vanaf de iCloud-fotobibliotheek, worden van het apparaat verwijderd als deze optie is ingesteld op **Nee**.|
 
-### <a name="application-settings-for-the-browser"></a>Toepassingsinstellingen voor de browser
+### Toepassingsinstellingen voor de browser
+<a id="application-settings-for-the-browser" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -99,7 +105,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Gebruik van Java-scripts toestaan**|Hiermee staat u de uitvoering van Java-scripts in de browser toe.|
 |**Waarschuwingen voor fraude toestaan**|Hiermee staat u toe dat waarschuwingen voor fraude in de browser van het apparaat worden weergegeven.|
 
-### <a name="application-settings-for-apps"></a>Toepassingsinstellingen voor apps
+### Toepassingsinstellingen voor apps
+<a id="application-settings-for-apps" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -113,7 +120,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Toestaan dat de gebruiker nieuwe auteurs van bedrijfsapps vertrouwt**|Hiermee kan de gebruiker aangeven apps te vertrouwen die niet uit de App Store zijn gedownload.|
 
 
-### <a name="application-settings-for-games"></a>Toepassingsinstellingen voor games
+### Toepassingsinstellingen voor games
+<a id="application-settings-for-games" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -121,7 +129,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Game Center-vrienden toestaan**|Hiermee staat u de gebruiker toe vrienden toe te voegen in Game Center.|
 |**Games voor meerdere spelers toestaan**|Hiermee staat u de gebruiker toe op het apparaat games voor meerdere spelers te spelen.|
 
-### <a name="application-settings-for-media-content"></a>Toepassingsinstellingen voor media-inhoud
+### Toepassingsinstellingen voor media-inhoud
+<a id="application-settings-for-media-content" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -131,7 +140,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Toestaan dat de gebruiker als Erotisch aangeduide inhoud kan downloaden uit de iBooks Store**|Hiermee staat u gebruikers toe dat ze boeken uit de categorie Erotisch downloaden.|
 
 
-### <a name="device-capabilities-settings-for-hardware"></a>Instellingen voor apparaatmogelijkheden voor hardware
+### Instellingen voor apparaatmogelijkheden voor hardware
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -140,7 +150,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Forceren dat de gekoppelde Apple Watch Wrist Detection gebruikt**|Wanneer dit is ingeschakeld, worden op de Apple Watch geen meldingen weergegeven wanneer deze niet wordt gedragen.|
 |**Een wachtwoord voor koppelen voor uitgaande AirPlay-aanvragen vereisen**|Hiermee vereist u een wachtwoord voor koppelen wanneer AirPlay wordt gebruikt om inhoud te streamen naar andere Apple-apparaten.|
 
-### <a name="device-capabilities-settings-for-cellular"></a>Instellingen voor apparaatmogelijkheden voor mobiel
+### Instellingen voor apparaatmogelijkheden voor mobiel
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -149,7 +160,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**Dataroaming toestaan**|Hiermee staat u gegevensroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.|
 |**Op de achtergrond ophalen tijdens roamen toestaan**|Hiermee staat u toe dat het apparaat gegevens zoals e-mail ophaalt tijdens roaming op een mobiel netwerk.|
 
-### <a name="device-capabilities-settings-for-features"></a>Instellingen voor apparaatmogelijkheden voor functies
+### Instellingen voor apparaatmogelijkheden voor functies
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
@@ -160,7 +172,8 @@ Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 |**AirDrop niet toestaan vanuit beheerde apps**|Hiermee wordt het verzenden van gegevens door beheerde apps via Airdrop gestopt.|
 
 
-### <a name="settings-for-compliant-and-noncompliant-apps"></a>Instellingen voor compatibele en niet-compatibele apps
+### Instellingen voor compatibele en niet-compatibele apps
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 In de lijst **Compatibele en niet-compatibele apps** geeft u een lijst met compatibele of niet-compatibele apps op met behulp van de volgende gegevens.
 
 > [!NOTE]
@@ -177,7 +190,8 @@ In de lijst **Compatibele en niet-compatibele apps** geeft u een lijst met compa
 
 Beleid met compatibele en niet-compatibele app-instellingen moet worden geïmplementeerd voor groepen van gebruikers.
 
-### <a name="kiosk-mode-settings"></a>Instellingen voor kioskmodus
+### Instellingen voor kioskmodus
+<a id="kiosk-mode-settings" class="xliff"></a>
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
@@ -204,17 +218,20 @@ Beleid met compatibele en niet-compatibele app-instellingen moet worden geïmple
 > -   Voordat u een iOS-apparaat voor de kioskmodus kunt configureren, moet u het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) of het [Device Enrollment Program van Apple](ios-device-enrollment-program-in-microsoft-intune.md) gebruiken om het apparaat in de supervisiemodus te plaatsen. Zie de Apple-documentatie voor meer informatie over het hulpprogramma Apple Configurator.
 > -   Als de iOS-app die u opgeeft, wordt geïnstalleerd nadat u het configuratiebeleid hebt geïmplementeerd, kan het apparaat pas in kioskmodus worden geplaatst nadat het opnieuw is opgestart.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Referentie-informatie voor compatibele en niet-compatibele apps
+### Referentie-informatie voor compatibele en niet-compatibele apps
+<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 Gebruik het **Rapport met niet-compatibele apps** om de compatibiliteit van toegestane en geblokkeerde apps weer te geven.
 
-##### <a name="to-run-the-noncompliant-apps-report"></a>Het rapport met niet-compatibele apps uitvoeren
+##### Het rapport met niet-compatibele apps uitvoeren
+<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Rapporten** &gt; **Rapport met niet-compatibele apps**.
 
 2.  Selecteer de apparaatgroepen die u wilt controleren, selecteer of u op compatibele en/of niet-compatibele apps wilt controleren, en kies vervolgens **Rapport weergeven**.
 
-#### <a name="how-to-specify-urls-to-app-stores"></a>URL's voor app stores opgeven
+#### URL's voor app stores opgeven
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele apps of in de optie **Selecteer een beheerde app die actief mag zijn als het apparaat in kioskmodus is** (alleen iOS), gebruikt u de volgende indeling:
 
 1. Gebruik een zoekmachine om de app te zoeken die u wilt gebruiken in de iTunes App Store en open de pagina voor de app.
@@ -226,17 +243,20 @@ Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele a
 > [!NOTE]
 > U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
 
-### <a name="enrollment-settings"></a>Inschrijvingsinstellingen
+### Inschrijvingsinstellingen
+<a id="enrollment-settings" class="xliff"></a>
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
 |**Activeringsvergrendeling toestaan wanneer de supervisiemodus voor het apparaat actief is**|Hiermee schakelt u Activeringsvergrendeling in op iOS-apparaten in de supervisiemodus.|
 
-### <a name="supervised-mode-settings"></a>Instellingen voor de supervisiemodus
+### Instellingen voor de supervisiemodus
+<a id="supervised-mode-settings" class="xliff"></a>
 U kunt de volgende instellingen configureren op apparaten met iOS 8.0 en hoger in de supervisiemodus.
 
-### <a name="supervised-mode-settings-for-device-restrictions"></a>Supervisiemodusinstellingen voor apparaatbeperkingen
+### Supervisiemodusinstellingen voor apparaatbeperkingen
+<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
@@ -252,7 +272,8 @@ U kunt de volgende instellingen configureren op apparaten met iOS 8.0 en hoger i
 |**Wijzigen van de meldingsinstellingen toestaan**|Hiermee staat u de gebruiker toe de instellingen voor apparaatmeldingen te wijzigen.|
 |**Wijzigen van de achtergrond toestaan**|Hiermee staat u de gebruiker toe de achtergrond van het apparaat te wijzigen.|
 
-### <a name="supervised-mode-settings-for-feature-restrictions"></a>Supervisiemodusinstellingen voor functiebeperkingen
+### Supervisiemodusinstellingen voor functiebeperkingen
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
@@ -266,7 +287,8 @@ U kunt de volgende instellingen configureren op apparaten met iOS 8.0 en hoger i
 |**Spellingcontrole toestaan**|Hiermee staat u gebruik van de spellingcontrole van het apparaat toe.|
 |**Sneltoetsen toestaan**|Hiermee staat u gebruik van sneltoetsen toe.|
 
-### <a name="supervised-mode-settings-for-app-restrictions"></a>Supervisiemodusinstellingen voor app-beperkingen
+### Supervisiemodusinstellingen voor app-beperkingen
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |Naam van de instelling|Details|
 |----------------|--------------------|
@@ -283,7 +305,8 @@ U kunt de volgende instellingen configureren op apparaten met iOS 8.0 en hoger i
 |**Game Center toestaan**|Toestaan dat de Game Center-app wordt gebruikt.|
 
 
-### <a name="show-or-hide-apps"></a>Apps weergeven of verbergen
+### Apps weergeven of verbergen
+<a id="show-or-hide-apps" class="xliff"></a>
 
 Gebruik de **Lijst met verborgen en weergegeven apps** om de volgende bewerkingen uit te voeren op apparaten met iOS 9.3 of hoger die onder supervisie staan:
 
@@ -291,7 +314,8 @@ Gebruik de **Lijst met verborgen en weergegeven apps** om de volgende bewerkinge
 - Een lijst opstellen met apps die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
 
-#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Een lijst met verborgen of weergegeven apps maken
+#### Een lijst met verborgen of weergegeven apps maken
+<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 Specificeer de volgende instellingen:
 
@@ -305,49 +329,50 @@ Specificeer de volgende instellingen:
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
 
-#### <a name="app-information-for-built-in-ios-apps"></a>App-informatie voor ingebouwde iOS-apps
+#### App-informatie voor ingebouwde iOS-apps
+<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 Gebruik de informatie in deze lijst om de naam, uitgever en bundel-id te achterhalen van de ingebouwde iOS-apps die u wilt weergeven of verbergen. Als u alle apps in de lijst wilt weergeven of verbergen, kunt u de gegevens eronder kopiëren naar een tekstbestand met de extensie **.csv** en vervolgens de optie **Apps importeren** gebruiken om alle apps tegelijkertijd te importeren.
 
 ```
-App Store,Apple,com.apple.AppStore
-Calculator,Apple,com.apple.calculator
-Calendar,Apple,com.apple.mobilecal
-Camera,Apple,com.apple.camera
-Clock,Apple,com.apple.mobiletimer
-Compass,Apple,com.apple.compass
-Contacts,Apple,com.apple.MobileAddressBook
-FaceTime,Apple,com.apple.facetime
-Find Friends,Apple,com.apple.mobileme.fmf1
-Find iPhone,Apple,com.apple.mobileme.fmip1
-Game Center,Apple,com.apple.gamecenter
-GarageBand,Apple,com.apple.mobilegarageband
-Health,Apple,com.apple.Health
-iBooks,Apple,com.apple.iBooks
-iTunes Store,Apple,com.apple.MobileStore
-iTunes U,Apple,com.apple.itunesu
-Keynote,Apple,com.apple.Keynote
-Mail,Apple,com.apple.mobilemail
-Maps,Apple,com.apple.Maps
-Messages,Apple,com.apple.MobileSMS
-Music,Apple,com.apple.Music
-News,Apple,com.apple.news
-Notes,Apple,com.apple.mobilenotes
-Numbers,Apple,com.apple.Numbers
-Pages,Apple,com.apple.Pages
-Photo Booth,Apple,com.apple.Photo-Booth
-Photos,Apple,com.apple.mobileslideshow
-Podcasts,Apple,com.apple.podcasts
-Reminders,Apple,com.apple.reminders
-Safari,Apple,com.apple.mobilesafari
-Settings,Apple,com.apple.Preferences
-Stocks,Apple,com.apple.stocks
-Tips,Apple,com.apple.tips
-Videos,Apple,com.apple.videos
-VoiceMemos,Apple,com.apple.VoiceMemos
-Wallet,Apple,com.apple.Passbook
-Watch,Apple,com.apple.Bridge
-Weather,Apple,com.apple.weather
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
 ```
@@ -355,26 +380,30 @@ Weather,Apple,com.apple.weather
 
 
 
-## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
+## Aangepaste beleidsinstellingen
+<a id="custom-policy-settings" class="xliff"></a>
 
 Gebruik het **Aangepaste iOS-configuratiebeleid** van Microsoft Intune om instellingen die u met het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) hebt gemaakt, op iOS-apparaten te implementeren. Met dit hulpprogramma kunt u veel instellingen configureren die de werking van deze apparaten regelen, en deze instellingen exporteren naar een configuratieprofiel. U kunt dit configuratieprofiel vervolgens importeren naar een aangepast Intune iOS-beleid en de instellingen implementeren voor gebruikers en apparaten in uw organisatie.
 
 Op deze manier kunt u iOS-instellingen implementeren die niet met het algemene configuratiebeleid van Intune kunnen worden geconfigureerd.
 
-### <a name="prerequisites"></a>Vereisten
+### Vereisten
+<a id="prerequisites" class="xliff"></a>
 Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een configuratiebestand hebben gemaakt met de instellingen die u wilt implementeren voor de gebruikers en apparaten. In [de Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) kunt u de Apple Configurator downloaden en meer informatie over dit hulpprogramma vinden.
 
 > [!NOTE]
 > Er wordt door Intune niet gerapporteerd of de afzonderlijke instellingen in een aangepast iOS-beleid compatibel zijn. Er wordt echter wel gerapporteerd of het beleid in z’n geheel compatibel is.
 
-### <a name="general-settings"></a>Algemene instellingen
+### Algemene instellingen
+<a id="general-settings" class="xliff"></a>
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
     |**Naam**|Voer een unieke naam in voor het aangepaste iOS-beleid, zodat dit in de Intune-console gemakkelijk is te herkennen.|
     |**Beschrijving**|Geef een beschrijving op die een overzicht biedt van het aangepaste iOS-beleid, evenals andere relevante informatie die u helpt om het beleid terug te vinden.|
 
-### <a name="custom-settings"></a>Aangepaste instellingen
+### Aangepaste instellingen
+<a id="custom-settings" class="xliff"></a>
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
@@ -382,5 +411,6 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 |**Configuratieprofielbestand**|Kies **Importeren** en blader vervolgens naar het configuratieprofiel dat u hebt gemaakt met de Apple Configurator. **Opmerking:** controleer of de instellingen die u vanuit het hulpprogramma Apple Configurator exporteert, compatibel zijn met de iOS-versie op de apparaten waarop u het aangepaste iOS-beleid implementeert. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).|
     |**Configuratieprofieldetails**|Hiermee geeft u de XML-code weer voor het configuratieprofiel dat u hebt geïmporteerd.|
 
-### <a name="see-also"></a>Zie tevens
+### Zie tevens
+<a id="see-also" class="xliff"></a>
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
