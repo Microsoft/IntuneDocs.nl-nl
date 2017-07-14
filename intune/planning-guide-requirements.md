@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>Vereisten voor gebruiksscenario's bepalen
+# Vereisten voor gebruiksscenario's bepalen
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 In deze sectie bepaalt u de vereisten voor elke organisatiegroep in elk gebruiksscenario. Met het doorlopen van deze procedure bereidt u zich gelijk voor op de andere gebieden van de Intune-implementatieplanning, zoals de architectuur en het ontwerp, de onboarding en implementatie. U kunt aan de hand hiervan ook mogelijke hiaten en uitdagingen met betrekking tot uw Intune-implementatieproject vaststellen.
 
@@ -41,7 +42,8 @@ Hier volgen enkele voorbeelden van gebruikssituatievereisten van een organisatie
 U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de gebruikssituatievereisten en subgebruikssituatievereisten van uw organisatie in te voeren.
 
 
-## <a name="examples-of-requirements"></a>Voorbeelden van vereisten
+## Voorbeelden van vereisten
+<a id="examples-of-requirements" class="xliff"></a>
 
 Hier zijn nog enkele voorbeelden die kunnen worden gebruikt in de kolom Vereisten:
 
@@ -62,6 +64,7 @@ Hier zijn nog enkele voorbeelden die kunnen worden gebruikt in de kolom Vereiste
     - Office 365 met beleid voor app-beveiliging
     - Line-of-business (LOB) met beleid voor app-beveiliging
 
-## <a name="next-section"></a>Volgende sectie
+## Volgende stappen
+<a id="next-steps" class="xliff"></a>
 
 De volgende sectie bevat richtlijnen over het [ontwikkelen van een Intune-rolloutplan](planning-guide-rollout-plan.md).
