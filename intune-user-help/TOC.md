@@ -2,6 +2,7 @@
 ## [Werk gedaan krijgen met beheerde apparaten](use-managed-devices-to-get-work-done.md)
 ## [Welke gegevens kan mijn bedrijf zien met Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 ## [Wat gebeurt er wanneer ik mijn apparaat opnieuw instel?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
 ## [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een Android-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Veelvoorkomende problemen met Android oplossen](troubleshoot-your-device-android.md)

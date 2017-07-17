@@ -2,6 +2,7 @@
 ## [Wat is Azure Portal?](what-is-intune.md)
 ## [Wat is Intune for Education?](introduction-intune-education.md)
 ## [Intune-functies in Azure](ui-changes.md)
+### [Wijzigingen in groepen](groups-get-started.md)
 ## [Registreren voor een gratis proefversie](free-trial-sign-up.md)
 ## [Wat is er nieuw?](whats-new.md)
 ### [Wat is er nieuw in de gebruikersinterface van de app?](whats-new-app-ui.md)
@@ -16,12 +17,13 @@
 ## [Algemene scenario's](common-scenarios.md)
 ## [Bekende problemen](known-issues.md)
 ## [Ondersteuning krijgen](get-support.md)
-## [Beschrijving van de Intune-service](microsoft-intune-service-description.md)
 
-<!--# Get started
-## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
-## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
+# [Aan de slag](get-started-evaluation.md)
+## [Een groep maken](get-started-groups.md)
+## [Een gebruiker maken](get-started-users.md)
+## [Apparaten inschrijven](get-started-enroll.md)
+## [Beleid toewijzen](get-started-policies.md)
+## [Apps toewijzen](get-started-apps.md)
 
 
 # Implementatie van abonnementen
@@ -63,20 +65,21 @@
 ### [Aanmelden bij Intune](account-sign-up.md)
 ### [Domeinen configureren](custom-domain-name-configure.md)
 ### [Gebruikers toevoegen](users-permissions-add.md)
+### [Groepen toevoegen](groups-add.md)
 ### [Licenties toewijzen](licenses-assign.md)       
 ### [Bedrijfsportal aanpassen](company-portal-customize.md)     
 ### [MDM-instantie instellen](mdm-authority-set.md)
 
 ## [Apparaten inschrijven](device-enrollment.md)
-### Vereisten
-#### [Voorwaarden instellen](terms-and-conditions-create.md)
-#### [Beperkingen instellen](enrollment-restrictions-set.md)
-#### [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md)
-#### [Zakelijke id’s toevoegen](corporate-identifiers-add.md)
-#### [Apparaatinschrijvingsmanager instellen](device-enrollment-manager-enroll.md)
+### Installatie-opties
+#### [Voorwaarden](terms-and-conditions-create.md)
+#### [Beperkingen](enrollment-restrictions-set.md)
+#### [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
+#### [Zakelijke id’s](corporate-identifiers-add.md)
+#### [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)
 #### [Apparaten toewijzen aan groepen](device-group-mapping.md)
-### [Windows-inschrijving instellen](windows-enroll.md)
-#### [Automatisch inschrijven](windows-enroll.md)
+### Windows-inschrijving instellen
+#### [Windows-inschrijving](windows-enroll.md)
 #### [Bulkregistratie](windows-bulk-enroll.md)
 ### [Android-inschrijving instellen](android-enroll.md)
 ### iOS-inschrijving instellen
@@ -84,7 +87,6 @@
 #### [Met Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [Met Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS-inschrijving instellen](macos-enroll.md)
-### [Gebruikers onderwijzen](end-user-educate.md)
 
 ## [Apparaten beheren](device-management.md)
 ### [Apparaat wissen](devices-wipe.md)
@@ -97,11 +99,13 @@
 ### [Bedrijfsgegevens verwijderen](device-company-data-remove.md)
 ### [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
 ### [Apparaat opnieuw opstarten](device-restart.md)
+### [Huidige gebruiker afmelden](device-logout-user.md)
+### [Gebruiker verwijderen](device-remove-user.md)
 ### [Beheer op afstand voor Android](device-profile-android-teamviewer.md)
+### [Windows 10-pincode opnieuw instellen](device-windows-pin-reset.md)
 ### [Inventaris van mobiele apparaten controleren](device-inventory.md)
 
 ## [Gebruikers beheren](user-management.md)
-### [Aan de slag met groepen](groups-get-started.md)
 <!--### Add and delete users -->
 
 ## [Apps beheren](app-management.md)
@@ -128,16 +132,6 @@
 #### [iOS eBooks](vpp-ebooks-ios.md)
 ### [De bedrijfsportal-app configureren](company-portal-app.md)
 ### [Managed Browser configureren](app-configuration-managed-browser.md)
-## [Beleidsregels voor de beveiliging van apps gebruiken](app-protection-policies.md)
-### [Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps](app-protection-policies-configure-windows-10.md)
-### [Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen](windows-information-protection-policy-create.md)
-### [Android-instellingen](app-protection-policy-settings-android.md)
-### [iOS-instellingen](app-protection-policy-settings-ios.md)
-### [Beveiligingsbeleid voor apps valideren](app-protection-policies-validate.md)
-### [Gebruikersstatus voor app-beveiliging bewaken](app-protection-policies-monitor.md)
-### [Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps](app-protection-policies-configure-windows-10.md)
-### [Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen](windows-information-protection-policy-create.md)
-### [Gegevensoverdracht tussen iOS-apps beheren](data-transfer-between-apps-manage-ios.md)
 
 ## [Apparaten configureren](device-profiles.md)
 ### [Apparaatprofielen configureren](device-profile-create.md)
@@ -175,13 +169,16 @@
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 en Windows 10](wi-fi-settings-import-windows-8-1.md)
 ### [Instellingen voor editie-upgrades voor Windows 10 configureren](edition-upgrade-configure-windows-10.md)
+### [Endpoint Protection in Windows 10](endpoint-protection-windows-10.md)
 ### [Instellingen voor Windows 10 Education configureren](education-settings-configure.md)
 ### [Opleidingsinstellingen voor iOS configureren](education-settings-configure-ios.md)
+### [Gedeelde onderwijsapparaten configureren voor iOS](education-settings-configure-ios-shared.md)
 ### [Instellingen voor Windows Update voor bedrijven configureren](windows-update-for-business-configure.md)
 ### [Certificaten configureren](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
 ### [Instellingen voor Windows Information Protection configureren](windows-information-protection-configure.md)
+### [Telecomkosten controleren](telecom-expenses-monitor.md)
 ### [Profielen toewijzen](device-profile-assign.md)
 ### [Profielen controleren](device-profile-monitor.md)
 ### [Problemen met profielen oplossen](device-profile-troubleshoot.md)
@@ -192,48 +189,65 @@
 ### [Android for Work-beleid maken](compliance-policy-create-android-for-work.md)
 ### [iOS-beleid maken](compliance-policy-create-ios.md)
 ### [Windows-beleid maken](compliance-policy-create-windows.md)
-<!--### Create Actions for noncompliance-->
+### Acties voor niet-naleving maken
 ### [Apparaatcompatibiliteit bewaken](compliance-policy-monitor.md)
 
 ## [Voorwaardelijke toegang instellen](conditional-access.md)
 ### [Gebruikelijke manieren om voorwaardelijke toegang te gebruiken](conditional-access-intune-common-ways-use.md)
-### [Voorwaardelijke toegang op basis van apps](app-based-conditional-access-intune.md)
 ### [Exchange On-Premises Connector installeren](exchange-connector-install.md)
 ### [Maken en toewijzen van beleid voor voorwaardelijke toegang](conditional-access-exchange-create.md)
-### [Beleid voor voorwaardelijke toegang op basis van apps instellen voor Exchange Online](app-based-conditional-access-intune-exchange-online-create.md)
-### [Beleid voor voorwaardelijke toegang op basis van apps instellen voor SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [Beleid voor voorwaardelijke toegang overbrengen vanuit de klassieke Intune-portal](conditional-access-intune-reassign.md)
+### [Voorwaardelijke toegang op basis van apps](app-based-conditional-access-intune.md)
+### [Voorwaardelijke toegang op basis van apps instellen](app-based-conditional-access-intune-create.md)
 ### [ADAL en Intune](app-modern-authentication-block.md)
 ### [Naleving van voorwaardelijke toegang bewaken](conditional-access-exchange-monitor.md)
 
-## Gegevens en apparaten beschermen
+## App- en apparaatgegevens beveiligen
+
+### [Beleidsregels voor de beveiliging van apps gebruiken](app-protection-policy.md)
+#### [Beveiligingsbeleid voor apps maken](app-protection-policies.md)
+##### [Android-instellingen](app-protection-policy-settings-android.md)
+##### [iOS-instellingen](app-protection-policy-settings-ios.md)
+#### [Beveiligingsbeleid voor apps valideren](app-protection-policies-validate.md)
+#### [Gebruikersstatus voor app-beveiliging bewaken](app-protection-policies-monitor.md)
+#### [Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps](app-protection-policies-configure-windows-10.md)
+#### [Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen](windows-information-protection-policy-create.md)
+#### [Gegevensoverdracht tussen iOS-apps beheren](data-transfer-between-apps-manage-ios.md)
+
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
 #### [Lookout instellen](lookout-mobile-threat-defense-connector.md)
-##### [Integratie van Lookout en Intune](lookout-mtd-subscription-setup.md)
-##### [Lookout in Intune inschakelen](lookout-mtd-connector-enable.md)
-##### [Apps implementeren die moeten worden gebruikt met Lookout](lookout-for-work-app-configure-deploy.md)
-##### [Nalevingsbeleid voor Lookout-apparaten](lookout-device-compliance-policy-create.md)
-
+##### [Integratie van Lookout en Intune](lookout-mtd-connector-integration.md)
 #### [Skycure instellen](skycure-mobile-threat-defense-connector.md)
 ##### [Azure AD SSO-configureren](skycure-azure-sso-configure.md)
 ##### [Beleid voor de configuratie van iOS-apps downloaden](skycure-ios-app-configuration-policy-download.md)
-##### [Apps toevoegen en configureren](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-##### [Apps implementeren die moeten worden gebruikt met Skycure](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
 ##### [Integratie van Skycure en Intune](skycure-mtd-connector-integration.md)
-##### [Skycure in Intune inschakelen](skycure-mtd-connector-enable.md)
-##### [Nalevingsbeleid voor Skycure-apparaten](skycure-device-compliance-policy-create.md)
+#### [MTD-apps toevoegen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [MTD in Intune inschakelen](mtd-connector-enable.md)
+#### [Een nalevingsbeleid voor MTD-apparaten maken](mtd-device-compliance-policy-create.md)
+
+### [Netwerktoegangsbeheer](network-access-control-integrate.md)
+
+
+<!-- ### Set up mobile threat protection        
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy -->
 
 ### [Windows Hello instellen](windows-hello.md)        
-<!-- ### Protect devices with remote actions        -->
+<!-- ### Protect devices with remote actions -->
 
 ## [Rollen beheren](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [De rol van helpdeskmedewerker gebruiken](help-desk-operators.md)
+
 <!-- ### Custom role settings -->
 
 ## [Pc's beheren met softwareagent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Pc-beheer vergelijken](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [De pc-client installeren](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Algemene beheertaken voor pc's](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [Pc-beleid](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
@@ -249,10 +263,16 @@
 ### [Licentieovereenkomsten beheren](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [Beleidsconflicten oplossen](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
+## [Gebruikers onderwijzen](end-user-educate.md)
+### [Berichten op de bedrijfsportal](end-user-company-portal-messages.md)
+### [Apps met MAM ingeschakeld op Android](end-user-mam-apps-android.md)
+### [Apps met MAM ingeschakeld op iOS](end-user-mam-apps-ios.md)
+### [Android-apps downloaden](end-user-apps-android.md)
+### [iOS-apps downloaden](end-user-apps-ios.md)
+### [Windows-apps downloaden](end-user-apps-windows.md)
 
 # Bewaken en problemen oplossen
-## [Telecomkosten controleren](telecom-expenses-monitor.md)
-
+## [De rol van helpdeskmedewerker gebruiken](help-desk-operators.md)
 
 # Ontwikkelen en aanpassen
 ## [Aangepaste apparaatinstellingen configureren](custom-settings-configure.md)
@@ -277,6 +297,5 @@
 ### [Xamarin-onderdeel voor Intune App SDK](app-sdk-xamarin.md)
 ## [Het gebruik van Intune Graph API 's](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
 
 # [Verklarende woordenlijst](intune-glossary.md)
