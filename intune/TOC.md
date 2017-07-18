@@ -38,9 +38,9 @@
 ### [Implementeren](planning-guide-onboarding.md)
 ### [Testen en valideren](planning-guide-test-validation.md)
 ### [Extra resources](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Scenario-implementatiehandleidingen
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -64,14 +64,13 @@
 #### [Gebruik van netwerkbandbreedte](network-bandwidth-use.md)
 ### [Aanmelden bij Intune](account-sign-up.md)
 ### [Domeinen configureren](custom-domain-name-configure.md)
-### [Gebruikers toevoegen](users-permissions-add.md)
+### [Gebruikers toevoegen](users-add.md)
 ### [Groepen toevoegen](groups-add.md)
-### [Licenties toewijzen](licenses-assign.md)       
-### [Bedrijfsportal aanpassen](company-portal-customize.md)     
+### [Licenties toewijzen](licenses-assign.md)
 ### [MDM-instantie instellen](mdm-authority-set.md)
 
 ## [Apparaten inschrijven](device-enrollment.md)
-### Installatie-opties
+### [Opties voor inschrijving](enrollment-options.md)
 #### [Voorwaarden](terms-and-conditions-create.md)
 #### [Beperkingen](enrollment-restrictions-set.md)
 #### [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Windows 10-pincode opnieuw instellen](device-windows-pin-reset.md)
 ### [Inventaris van mobiele apparaten controleren](device-inventory.md)
 
-## [Gebruikers beheren](user-management.md)
 <!--### Add and delete users -->
 
 ## [Apps beheren](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [Lookout instellen](lookout-mobile-threat-defense-connector.md)
 ##### [Integratie van Lookout en Intune](lookout-mtd-connector-integration.md)
+
 #### [Skycure instellen](skycure-mobile-threat-defense-connector.md)
-##### [Azure AD SSO-configureren](skycure-azure-sso-configure.md)
-##### [Beleid voor de configuratie van iOS-apps downloaden](skycure-ios-app-configuration-policy-download.md)
 ##### [Integratie van Skycure en Intune](skycure-mtd-connector-integration.md)
+
+#### [Controlepunt instellen](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [Controlepunt en Intune-integratie](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [MTD-apps toevoegen](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [MTD in Intune inschakelen](mtd-connector-enable.md)
 #### [Een nalevingsbeleid voor MTD-apparaten maken](mtd-device-compliance-policy-create.md)
 
 ### [Netwerktoegangsbeheer](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Windows Hello instellen](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [Rollen beheren](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Pc's beheren met softwareagent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Pc-beheer vergelijken](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
