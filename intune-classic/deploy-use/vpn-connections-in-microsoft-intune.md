@@ -1,5 +1,5 @@
 ---
-title: VPN-verbindingen | Microsoft Docs
+title: VPN-verbindingen
 description: VPN-profielen gebruiken om VPN-instellingen te implementeren voor gebruikers en apparaten in uw organisatie.
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-verbindingen in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger configureren.
 3. Optioneel: geef een URL-testtekenreeks op, een URL die gebruikmaakt van de regel als een test. Als het apparaat waarop dit profiel is geïnstalleerd, in staat is om toegang te krijgen tot deze URL zonder omleiding, wordt de VPN-verbinding tot stand gebracht en maakt het apparaat verbinding met de doel-URL. De gebruiker ziet de tekenreeks testsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
 4. Kies een van de volgende acties:
   - **Verbinden**
-  - **Verbinding evalueren**, waarvoor drie instellingen beschikbaar zijn. **Domeinactie**: kies **Verbinding indien nodig** of **Nooit verbinding maken met**
-     b. **Door komma's gescheiden lijst met domeinen**: hiermee configureert u alleen een **Domeinactie** van het type **Verbinding indien nodig**
-     c. **Vereiste tekenreeks van URL-test**: een HTTP of HTTPS (aanbevolen)-URL, zoals *https://vpntestprobe.contoso.com*. De regel controleert of er een reactie van dit adres is. Als dat niet het geval is en de **Domeinactie** is ingesteld op **Verbinding indien nodig**, wordt de VPN-verbinding geactiveerd.
+  - **Verbinding evalueren**, waarvoor drie instellingen beschikbaar zijn. **Domeinactie**: kies **Verbinding indien nodig** of **Nooit verbinding maken met** b. **Door komma's gescheiden lijst met domeinen**: hiermee configureert u alleen een **Domeinactie** van het type **Verbinding indien nodig** c. **Vereiste tekenreeks van URL-test**: een HTTP of HTTPS (aanbevolen)-URL, zoals *https://vpntestprobe.contoso.com*. De regel controleert of er een reactie van dit adres is. Als dat niet het geval is en de **Domeinactie** is ingesteld op **Verbinding indien nodig**, wordt de VPN-verbinding geactiveerd.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ Domeinspecifieke regels worden geëvalueerd voor regels die voor alle domeinen g
 Na een geslaagde implementatie zien gebruikers de naam van de VPN-verbinding die u hebt opgegeven in de lijst met VPN-verbindingen op hun apparaten.
 
 Een statusoverzicht en waarschuwingen op de pagina **Overzicht** van de werkruimte **Beleid** identificeren beleidsproblemen die uw aandacht nodig hebben. Bovendien wordt er een statusoverzicht weergegeven in de werkruimte Dashboard.
-

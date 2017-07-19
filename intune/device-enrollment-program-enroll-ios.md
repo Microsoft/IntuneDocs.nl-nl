@@ -1,12 +1,12 @@
 ---
 title: iOS-apparaten inschrijven - Device Enrollment Program
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u iOS-apparaten in bedrijfseigendom kunt inschrijven met het Device Enrollment Program.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het registreren van iOS-apparaten in bedrijfseigendom met het Device Enrollment Program (DEP) van Apple.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 04/15/2017
+ms.date: 06/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,78 +15,106 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5144b9e7c17a3323667b9ca68cb47829d69866c3
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f509f5332b2f8b5f6745816f8795a9a54c10ce2d
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="set-up-ios-device-enrollment-with-device-enrollment-program"></a>Registratie van iOS-apparaten instellen met het Device Enrollment Program
 
-# <a name="enroll-ios-devices-using-device-enrollment-program"></a>iOS-apparaten inschrijven met het Device Enrollment Program
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+Met de informatie in dit onderwerp kunnen IT-beheerders iOS-apparaten registreren die zijn gekocht via het [Device Enrollment Program (DEP)](https://deploy.apple.com) van Apple. Microsoft Intune kan een inschrijvingsprofiel 'draadloos' implementeren op apparaten die zijn gekocht via DEP. De beheerder hoeft de beheerde apparaten nooit aan te raken. Een DEP-profiel bevat beheerinstellingen die worden toegepast op apparaten tijdens de inschrijving, inclusief opties voor de configuratie-assistent.
 
-Met de informatie in dit onderwerp kunnen IT-beheerders iOS-apparaten van het bedrijf inschrijven, die zijn aangeschaft via het [Apple Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune kan een inschrijvingsprofiel implementeren dat DEP draadloos inschrijft, waardoor de beheerder de beheerde apparaten niet eens hoeft te zien. Een DEP-profiel bevat de beheerinstellingen die u op apparaten wilt toepassen tijdens de inschrijving. Het inschrijvingspakket kan Configuratieassistent-opties voor het apparaat bevatten.
+Voor het inschakelen van DEP-inschrijving moet u zowel de Intune-portal als de Apple DEP-portal gebruiken. Daarnaast hebt u een lijst met id's of inkoopordernummers van de DEP-apparaten nodig, zodat u de apparaten in de Apple-portal onder beheer van Intune kunt stellen.
 
 >[!NOTE]
 >Inschrijving via DEP kan niet worden gebruikt met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
->Als gebruikers hun iOS-apparaten inschrijven via de bedrijfsportal-app en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt het apparaat uitgeschreven bij Intune.
 
-**Stappen voor DEP-inschrijving**
-1. [Een Apple DEP-token ophalen](#get-the-apple-dep-certificate)
-2. [Een DEP-profiel maken](#create-an-apple-dep-profile)
-3. [Apple DEP-serienummers toewijzen aan uw Intune-server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
-4. [Door DEP beheerde apparaten synchroniseren](#synchronize-dep-managed-devices)
-5. [DEP-profiel op apparaten toewijzen](#assign-a-dep-profile-to-devices)
-6. [Apparaten onder gebruikers distribueren](#distribute-devices-to-users)
+**Stappen voor het inschakelen van inschrijvingsprogramma's van Apple**
+1. [Een Apple DEP-token ophalen en apparaten toewijzen](#get-the-apple-dep-certificate)
+2. [Een registratieprofiel maken](#create-anapple-enrollment-profile)
+3. [Door DEP beheerde apparaten synchroniseren](#sync-dep-managed-devices)
+4. [DEP-profiel op apparaten toewijzen](#assign-a-dep-profile-to-devices)
+5. [Apparaten onder gebruikers distribueren](#distribute-devices-to-users)
 
-## <a name="get-the-apple-dep-certificate"></a>Het Apple DEP-certificaat ophalen
-Voordat u iOS-apparaten van het bedrijf met het Apple Device Enrollment Program (DEP) kunt inschrijven, moet u een DEP-certificaatbestand (.p7m) van Apple ontvangen. Intune kan met dit token informatie synchroniseren over apparaten binnen uw bedrijf die aan DEP deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
+## <a name="get-the-apple-dep-token"></a>Het Apple DEP-token ophalen
 
-Voor het beheren van iOS-apparaten in bedrijfseigendom met het DEP van Apple moet uw organisatie lid worden van DEP en apparaten verwerven via dat programma. Details van dit proces kunt u vinden op: https://deploy.apple.com. Voordelen van het programma zijn onder andere handsfree instellen, dus zonder dat elk apparaat via een USB-verbinding op een computer moet worden aangesloten.
+Voordat u iOS-apparaten van het bedrijf met het Apple Device Enrollment Program (DEP) kunt inschrijven, moet u een DEP-tokenbestand (.p7m) van Apple ontvangen. Intune kan met dit token informatie synchroniseren over apparaten binnen uw bedrijf die aan DEP deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
 > [!NOTE]
 > Als uw Intune-tenant is gemigreerd van de klassieke Intune-console naar de Azure-portal en u een Apple DEP-token hebt verwijderd uit de Intune-beheerconsole tijdens de migratieperiode, is het DEP-token mogelijk hersteld in uw Intune-account. U kunt het DEP-token opnieuw verwijderen uit Azure Portal verwijderen.
 
+**Vereisten**
+- [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
+- Aangemeld voor het [Apple Device Enrollment Program](http://deploy.apple.com)
+
 **Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple DEP-token.**<br>
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune **Apparaatinschrijving** > **Apple DEP-token**.
+1. Kies in de Intune-portal achtereenvolgens **Apparaatinschrijving**, **Apple-inschrijving** en **Token voor het inschrijvingsprogramma**.
+![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten.](./media/enrollment-program-token-add.png)
 2. Selecteer **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple Device Enrollment Program aan te vragen.
+![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten voor het downloaden van de openbare sleutel.](./media/enrollment-program-token-download.png)
 
-**Stap 2. Download een Apple DEP-token vanaf de betreffende Apple-website.**<br>
-Selecteer [Een DEP-token via Apple Deployment Programs maken](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple ID van uw bedrijf. Deze Apple ID kunt u gebruiken om uw DEP-token te verlengen.
+**Stap 2. Maak en download een Apple DEP-token.**<br>
+Selecteer **Een token via Apple Device Enrollment Program maken** om de Deployment Program-portal van Apple te openen en meld u aan met uw Apple ID. Deze Apple ID kunt u gebruiken om uw DEP-token te verlengen.
+  ![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten.](./media/enrollment-program-token-create.png)
 
-   1.  Ga in de [Apple Device Enrollment Program Portal](https://deploy.apple.com) naar **Programma apparaatinschrijving** &gt; **Servers beheren** en kies **MDM-server toevoegen**.
-   2.  Voer de **MDM-servernaam** in en kies **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
-   3.  Het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt geopend. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
+  ![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten voor het downloaden van de openbare sleutel.](./media/enrollment-program-token-sign.png)
+   1.  Selecteer **Aan de slag** bij **Device Enrollment Program** in de [Deployment Programs-portal](https://deploy.apple.com) van Apple.
+   ![Schermopname met een pijl naar Aan de slag voor het Device Enrollment Program.](./media/enrollment-program-token-started.png)
+   2. Kies **MDM-server toevoegen** op de pagina **Servers beheren**.
+   3. Voer de **MDM-servernaam** in en kies **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
+
+   ![Schermopname van het toevoegen van een MDM-servernaam voor DEP en een pijl naar Volgende.](./media/enrollment-program-token-add-server.png)
+   4.  Het dialoogvenster **Voeg &lt;servernaam&gt;** wordt geopend, met de instructie dat u uw**** openbare sleutel moet uploaden. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
+   ![Schermopname van het kiezen van de knop voor het uploaden van de openbare sleutel en een pijl naar Volgende.](./media/enrollment-program-token-choose-file.png)
    4.  In het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt een koppeling met **Uw servertoken** weergegeven. Download het servertokenbestand (.p7m) naar uw computer en kies **Gereed**.
+   ![Schermopname van het kiezen van de knop voor het uploaden van de openbare sleutel en een pijl naar Volgende.](./media/enrollment-program-token-your-token.png)
+   5. Ga naar **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Apparaten beheren**.
+   6. Geef onder **Kies apparaten op** aan hoe apparaten worden geïdentificeerd:
+    - **Serienummer**
+    - **Ordernummer**
+    - **CSV-bestand uploaden**
 
-**Stap 3. Voer de Apple ID in die u hebt gebruikt om uw Apple DEP-token te maken. Deze ID kan worden gebruikt om uw Apple DEP-token te verlengen.**
+   ![Schermopname van het opgeven van apparaten op serienummer, het kiezen van een actie zoals toewijzen aan server en de naam van de server selecteren.](./media/enrollment-program-token-specify-serial.png)
 
-**Stap 4. Blader naar het Apple DEP-token dat u wilt uploaden. Intune voert automatisch een synchronisatie met uw DEP-account uit.**<br>
-Ga naar het certificaatbestand (.pem), kies **Openen** en kies vervolgens **Uploaden**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen.
+   7. Selecteer bij **Kies actie** **Toewijzen aan server**, selecteer de**** servernaam die is opgegeven voor Microsoft Intune en kies vervolgens &lt;OK&gt;. De opgegeven apparaten worden voor beheer toegewezen aan de Intune-server en er verschijnt een melding dat de**** toewijzing is voltooid.
 
-## <a name="create-an-apple-dep-profile"></a>Een Apple DEP-profiel maken
+   Ga in de Apple-portal **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Toewijzingsgeschiedenis weergeven** om een lijst van apparaten en hun toewijzing aan de MDM-server te bekijken.
 
-Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten. De volgende stappen laten zien hoe u een apparaatinschrijvingsprofiel kunt maken voor iOS-apparaten die worden ingeschreven met DEP.
+**Stap 3. Voer de Apple ID in die u hebt gebruikt om het token voor het inschrijvingsprogramma te maken.**<br>Voer in de Intune-portal de Apple ID in, zodat u deze altijd kunt terugvinden. Gebruik deze ID voor het vernieuwen van het token voor het inschrijvingsprogramma, om te voorkomen dat u alle apparaten opnieuw moet inschrijven.
+![Schermopname van het invoeren van de Apple ID die is gebruikt voor het maken van het token voor het inschrijvingsprogramma en het uploaden van het token.](./media/enrollment-program-token-apple-id.png)
+**Stap 4. Blader naar het token voor het inschrijvingsprogramma om dit te uploaden.**<br>
+Ga naar het certificaatbestand (.pem), kies **Openen** en kies vervolgens **Uploaden**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen. Intune wordt automatisch gesynchroniseerd met Apple om het account voor het inschrijvingsprogramma weer te geven.
 
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
-2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apple-inschrijving**.
-3. Selecteer **DEP-profielen** onder **Instellingen van Apple Device Enrollment Program (DEP) beheren**.
-4. Selecteer **Maken** op de blade **Apple DEP-profielen**.
-5. Voer op de blade **Inschrijvingsprofiel maken** een naam en een beschrijving in voor het profiel.
-6. Geef voor **Gebruikersaffiniteit** aan of u andere apparaten met dit profiel wilt inschrijven met of zonder gebruikersaffiniteit.
+## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
 
- - **Inschrijven met gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie en kan vervolgens toegang krijgen tot gegevens en e-mail van het bedrijf. Kies gebruikersaffiniteit voor DEP-beheerde apparaten die eigendom zijn van gebruikers en waarvoor de bedrijfsportal moet worden gebruikt voor services als het installeren van apps. Houd er rekening mee dat Multi-Factor Authentication (MFA) niet werkt tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Nieuwe gebruikers die hun wachtwoord moeten wijzigen wanneer ze zich voor het eerst aanmelden, kunnen geen prompt krijgen tijdens de inschrijving voor DEP-apparaten. Daarnaast wordt gebruikers waarvan de wachtwoorden zijn verlopen niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de DEP-inschrijving, en moeten deze het wachtwoord vanaf een ander apparaat opnieuw instellen.
+Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
+1. Kies in de Intune-portal achtereenvolgens**Apparaatinschrijving** en **Apple-inschrijving**.
+2. Selecteer **Profielen voor het inschrijvingsprogramma** onder **Inschrijvingsprogramma voor Apple** en selecteer vervolgens **Maken** op de blade **Profielen voor het inschrijvingsprogramma**.
+![Schermopname van het kiezen van de koppeling voor het maken van een nieuw profiel voor het inschrijvingsprogramma.](./media/enrollment-program-profile-create.png)
+3. Voer op de blade **Inschrijvingsprofiel maken** voor administratieve doeleinde een**** naam**** en een beschrijving in voor het profiel. Gebruikers zien deze gegevens niet.
+![Schermopname van het invoeren van een naam en beschrijving, en het vervolgens selecteren van Inschrijven met gebruikersaffiniteit voor een nieuw profiel voor het inschrijvingsprogramma.](./media/enrollment-program-profile-name.png)
+Geef voor **Gebruikersaffiniteit** aan of u andere apparaten met dit profiel wilt inschrijven met of zonder gebruikersaffiniteit.
+
+ - **Inschrijven met gebruikersaffiniteit**: gebruikers worden tijdens de configuratie gekoppeld aan een apparaat en kunnen vervolgens toegang krijgen tot gegevens en e-mail van het bedrijf. Kies deze**** optie voor apparaten die eigendom zijn van gebruikers en waarvoor de bedrijfsportal moet worden gebruikt voor services als het installeren van apps.
+
+<<<<<<< HEAD
+ > [!NOTE]
+ > Meervoudige verificatie werkt niet tijdens inschrijving op apparaten met gebruikersaffiniteit die via een inschrijvingsprogramma worden beheerd. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Nieuwe gebruikers die hun wachtwoord moeten wijzigen wanneer ze zich voor het eerst aanmelden, kunnen geen prompt krijgen tijdens de inschrijving van apparaten. Daarnaast wordt gebruikers met verlopen wachtwoorden niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de inschrijving. Deze gebruikers moeten het wachtwoord vanaf een ander apparaat opnieuw instellen.
+
+ >[!NOTE]
+ >Voor beheer met een inschrijvingsprogramma met gebruikersaffiniteit moet [de gebruikersnaam/het gemengde eindpunt voor WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints) zijn ingeschakeld om gebruikerstokens te kunnen aanvragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+=======
     >[!NOTE]
-    >Voor DEP met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >Voor DEP met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+>>>>>>> 0c3fe0dee88e8ef4d8ad8ad28c0f8957831dd5b3
 
  - **Inschrijven zonder gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die wordt gebruikt voor het installeren van LOB-apps, zullen niet werken.
 
-7. Selecteer **Instellingen voor Apparaatbeheer**, configureer de volgende profielinstellingen en selecteer vervolgens **Opslaan**:
-
+4. Selecteer **Instellingen voor apparaatbeheer** om de volgende profielinstellingen te configureren: ![Schermopname van het kiezen van de beheermodus met de opties Onder supervisie en Vergrendelde inschrijving, met Koppelen toestaan ingesteld op Alles weigeren en Apple Configurator-certificaten lichter gekleurd voor een nieuw profiel voor het inschrijvingsprogramma.](./media/enrollment-program-profile-mode.png)
     - **Onder supervisie**: een beheermodus waarmee standaard meer beheeropties worden ingeschakeld en de activeringsvergrendeling wordt uitgeschakeld. Als u het selectievakje leeg laat, hebt u beperkte beheermogelijkheden.
 
     - **Vergrendelde inschrijving** (vereist Onder supervisie als beheermodus): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd. Dit item wordt ingesteld tijdens de activering en kan niet worden gewijzigd zonder het apparaat op de fabrieksinstellingen terug te zetten.
@@ -95,8 +123,9 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
     - **Apple Configurator-certificaten**: als u **Apple Configurator per certificaat toestaan** onder **Koppelen toestaan** hebt gekozen, selecteert u het Apple Configurator-certificaat dat u wilt importeren.
 
-8. Selecteer **Instellingen voor Configuratieassistent**, configureer de volgende profielinstellingen en selecteer vervolgens **Opslaan**:
+  Kies **Opslaan**.
 
+5. Selecteer **Instellingen voor Configuratieassistent** om de volgende profielinstellingen te configureren: ![Schermopname van het kiezen van de configuratie-instellingen met de beschikbare instellingen voor een nieuw profiel voor het inschrijvingsprogramma.](./media/enrollment-program-profile-settings.png)
     - **Naam van afdeling**: wordt weergegeven wanneer gebruikers tijdens de activering op **Over configuratie** tikken.
 
     - **Telefoonnummer van afdeling**: wordt weergegeven wanneer de gebruiker tijdens de activering de knop Hulp nodig? klikt.
@@ -104,7 +133,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
         - **Wachtwoordcode**: hiermee wordt tijdens de activering gevraagd om de wachtwoordcode. Vraag altijd om een wachtwoordcode tenzij het apparaat wordt beveiligd of de toegang tot het apparaat op een andere manier wordt beheerd (bijvoorbeeld de kioskmodus waarmee op het apparaat maar één app kan worden uitgevoerd).
         - **Locatieservices**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om de service gevraagd
         - **Herstellen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om een iCloud-back-up
-        - **Apple ID**: als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple ID wanneer Intune een app zonder een id probeert te installeren. Een Apple ID is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune.
+        - **Apple-id**: als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple-id wanneer Intune een app zonder een id probeert te installeren. Een Apple ID is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune.
         - **Voorwaarden**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd de voorwaarden van Apple te accepteren
         - **Touch ID**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
         - **Apple Pay**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
@@ -112,64 +141,58 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
         - **Siri**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
         - **Diagnostische gegevens**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.
 
-9. Selecteer **Maken** op de blade **Inschrijvingsprofiel maken** om de profielinstellingen op te slaan.
+    Kies **Opslaan**.
+9. Selecteer **Maken** op de blade **Inschrijvingsprofiel maken** om de profielinstellingen op te slaan. Het inschrijvingsprofiel wordt weergegeven in de lijst met inschrijvingsprofielen voor Apple Enrollment Program.
 
-## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Apple DEP-serienummers toewijzen aan uw MDM-server
-Serienummers van apparaten moeten worden toegewezen aan uw Intune MDM-server in de Apple DEP-webportal, zodat Intune deze apparaten kan beheren.
+## <a name="sync-managed-devices"></a>Beheerde apparaten synchroniseren
+Nu Intune toestemming heeft om uw apparaten te beheren, kunt u Intune synchroniseren met Apple om uw beheerde apparaten weer te geven in de Intune-portal.
 
-1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf.
+1. Kies in de Intune-portal **Apparaatinschrijving** &gt; **Apple-inschrijving** &gt; **Apparaten voor het inschrijvingsprogramma**.
+2. Selecteer **Synchroniseren** onder **Apparaten voor het inschrijvingsprogramma**. De blade **Synchroniseren** wordt weergegeven.
+![Schermopname van het geselecteerde knooppunt Apparaten voor het inschrijvingsprogramma en een pijl naar de koppeling Synchroniseren.](./media/enrollment-program-device-sync.png)
+3. Selecteer **Synchronisatie aanvragen** op de blade **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
+![Schermopname van de blade Synchroniseren met een pijl naar de koppeling Synchronisatie aanvragen.](./media/enrollment-program-device-request-sync.png)
+    Om te voldoen aan de voorwaarden van Apple voor acceptabel verkeer van het inschrijvingsprogramma, worden door Intune de volgende beperkingen opgelegd:
+     -  Een volledige synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
+     -  Een synchronisatieaanvraag krijgt 15 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
+4. Kies in de werkruimte Apparaten voor het inschrijvingsprogramma **Vernieuwen** om uw apparaten weer te geven.
 
-2. Ga naar **Implementatieprogramma** &gt; **Programma apparaatinschrijving** &gt; **Apparaten beheren**.
-
-3. Geef een manier op voor **Apparaten kiezen**, voer de apparaatgegevens in en geef details op aan de hand van **serienummer** en **bestelnummer** of voer **CSV-bestand uploaden** uit.
-
-4. Selecteer **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
-
-## <a name="synchronize-dep-managed-devices"></a>Door DEP beheerde apparaten synchroniseren
-Nu Intune toestemming heeft om uw DEP-apparaten te beheren, kunt u Intune synchroniseren met de DEP-service om uw beheerde apparaten weer te geven in de Intune-portal.
-
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
-
-2. Kies **Apparaten inschrijven** op de blade Intune van Azure Portal en kies vervolgens **Apple-inschrijving**.
-
-3. Selecteer **DEP-serienummers** onder **Instellingen van Apple Device Enrollment Program (DEP) beheren**.
-
-4. Selecteer **Synchroniseren** op de blade **Apple DEP-serienummers**.
-
-5. Selecteer **Synchronisatie aanvragen** op de blade **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
-
-    Om te voldoen aan de voorwaarden van Apple voor acceptabel DEP-verkeer, worden door Intune de volgende beperkingen opgelegd:
-     -    Een volledige DEP-synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
-     -    Een synchronisatieaanvraag krijgt 10 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
+## <a name="assign-an-enrollment-profile-to-devices"></a>Een inschrijvingsprofiel toewijzen aan apparaten
+Apparaten die worden beheerd door Intune, moeten een profiel voor het inschrijvingsprogramma toegewezen krijgen voordat ze worden ingeschreven.
 
 >[!NOTE]
->U kunt ook DEP-serienummers aan profielen toewijzen via de blade **Apple DEP-serienummers**.
+>U kunt ook serienummers aan profielen toewijzen via de blade **Apple-serienummers**.
 
-## <a name="assign-a-dep-profile-to-devices"></a>DEP-profiel op apparaten toewijzen
-DEP-apparaten die worden beheerd door Intune, moeten een DEP-profiel toegewezen krijgen voordat ze worden ingeschreven.
-
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
-
-2. Kies **Apparaten inschrijven** > **Apple-inschrijving** op de blade Intune van Azure Portal en kies vervolgens **DEP-profielen**.
-
-3. Selecteer in de lijst met **Apple DEP-inschrijvingsprofielen** het profiel dat u wilt toewijzen aan apparaten en selecteer vervolgens **Toewijzingen van apparaten**
-
-4. Selecteer **Toewijzen** en selecteer vervolgens de DEP-apparaten die u aan dit profiel wilt toewijzen. U kunt filteren om beschikbare DEP-apparaten weer te geven:
+1. Kies **Apparaten inschrijven** > **Apple-inschrijving** in de Intune-portal en selecteer vervolgens **Profielen voor het inschrijvingsprogramma**.
+2. Selecteer in de lijst **Profielen voor het inschrijvingsprogramma** het profiel dat u wilt toewijzen aan apparaten en selecteer vervolgens **Apparaten toewijzen**.
+![Schermopname van de blade Synchroniseren met een pijl naar de koppeling Synchronisatie aanvragen.](./media/enrollment-program-device-assign.png)
+3. Selecteer **Toewijzen** en selecteer vervolgens de apparaten die u aan dit profiel wilt toewijzen. U kunt filteren om beschikbare apparaten weer te geven:
   - **niet-toegewezen**
   - **alle**
-  - **&lt;DEP-profielnaam&gt;**
+  - **&lt;profielnaam&gt;**
+4. Selecteer de apparaten die u wilt beheren. Met het selectievakje boven de kolom selecteert u tot 1000 apparaten in de lijst. Klik vervolgens op **Toewijzen**. Als u meer dan 1000 apparaten wilt registreren, herhaalt u de stappen voor toewijzing totdat aan alle apparaten een inschrijvingsprofiel is toegewezen.
 
-  ![Schermopname van de knop Toewijzen voor het toewijzen van een DEP-profiel in de Intune-portal](media/dep-profile-assignment.png)
+  ![Schermopname van de knop Toewijzen voor het toewijzen van een profiel voor het inschrijvingsprogramma in de Intune-portal](media/dep-profile-assignment.png)
 
-5. Selecteer de apparaten die u wilt beheren. Met het selectievakje boven de kolom selecteert u tot 1000 apparaten in de lijst. Klik vervolgens op **Toewijzen**. Als u meer dan 1000 apparaten wilt registreren, herhaalt u de stappen voor toewijzing totdat alle DEP-profielen zijn toegewezen.
+## <a name="end-user-experience-with-managed-devices"></a>Ervaring van eindgebruikers met beheerde apparaten
 
-## <a name="distribute-devices-to-users"></a>Apparaten onder gebruikers distribueren
+De apparaten kunnen nu worden uitgedeeld aan de gebruikers. Voor apparaten met gebruikersaffiniteit moet aan elke gebruiker een Intune-licentie worden toegewezen. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen. De gebruiker ziet het volgende na inschakeling van een iOS-apparaat dat via een inschrijvingsprogramma wordt beheerd:  
 
-U kunt apparaten in bedrijfseigendom nu distribueren aan gebruikers. Wanneer een iOS DEP-apparaat wordt ingeschakeld, wordt dit ingeschreven voor beheer door Intune. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen.
+1. **iOS-apparaat instellen**: gebruikers kunnen kiezen uit de volgende opties:
+  - **Instellen als nieuw apparaat**
+  - **Terugzetten vanaf iCloud-back-up**
+  - **Terugzetten vanaf iTunes-back-up**
+2. Gebruikers zien een bericht**** dat het apparaat automatisch zal worden geconfigureerd door Microsoft. Daarnaast wordt informatie van deze strekking weergegeven:
 
-Zie [Eindgebruikers instructies geven over Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune). U kunt uw eindgebruikers ook omleiden naar [Uw iOS- of macOS-apparaat gebruiken met Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) 
+  **Configuratie maakt het mogelijk voor Microsoft om dit apparaat draadloos te beheren.**
 
-### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Hoe gebruikers de bedrijfsportal op hun apparaten installeren en gebruiken
+  **Een beheerder kan u helpen bij het instellen van e-mail- en netwerkaccounts, het installeren en configureren van apps, en het op afstand beheren van instellingen.**
 
-Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfsportal-app worden geïnstalleerd en uitgevoerd om apps te downloaden en apparaten te beheren. Nadat gebruikers hun apparaten hebben ontvangen, moeten zij de onderstaande extra stappen uitvoeren om Configuratieassistent te voltooien en de bedrijfsportal-app te installeren.
+  **Een beheerder kan functies uitschakelen, apps installeren en verwijderen, uw internetverkeer bewaken en beperken en dit apparaat op afstand wissen.**
 
+  **De configuratie wordt uitgevoerd door:<br> MicrosoftIntune iOS Team<br> One Microsoft Way, Redmond, WA 98052 (VS)**
+
+3. Gebruikers wordt gevraagd om de gebruikersnaam en het wachtwoord voor hun werk- of schoolaccount.
+4. Gebruikers wordt gevraagd om hun Apple ID. Een Apple ID is vereist voor de installatie van de Intune-bedrijfsportal-app en andere apps. Nadat de referenties zijn opgegeven, wordt er op het apparaat een beheerprofiel geïnstalleerd dat niet kan worden verwijderd. Het beheerprofiel van Intune wordt weergegeven in **Instellingen** > **Algemeen** > **Apparaatbeheer** op het apparaat.
+
+Gebruikers kunnen nu het instellen van hun apparaat in bedrijfseigendom voltooien met behulp van de Intune-bedrijfsportal of de configuratie-assistent van Apple.

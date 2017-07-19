@@ -1,32 +1,29 @@
 ---
 title: Apparaten beheren met Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: meer informatie over het weergeven van apparaten die u met Intune beheert en verschillende bewerkingen die u op deze apparaten kunt uitvoeren.'
+titleSuffix: Intune on Azure
+description: Meer informatie over het weergeven van apparaten die u met Intune beheert en de verschillende bewerkingen die u op deze apparaten kunt uitvoeren.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/13/2017
+ms.date: 07/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 
+ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1fdb86184875d7082659d608b445b41b2ad9aa9e
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/06/2017
 ---
-
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u de mogelijkheid om taken op afstand voor deze apparaten uit te voeren. Toegang krijgen tot de workload:
 
@@ -34,71 +31,46 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 
-Kies een van de volgende opties:
+U kunt nu de volgende acties uitvoeren:
 
-- **Overzicht**: informatie over apparaten die u hebt ingeschreven en de besturingssystemen die op elk apparaat worden uitgevoerd.
-- **Beheren**: kies **Alle apparaten** voor een overzicht van de apparaten die u beheert.
-    Selecteer een van deze apparaten in de lijst om de blade <*apparaatnaam*> **Overzicht** te kiezen, waar u kunt een van de volgende opties kunt selecteren:
-    - **Overzicht**: algemene informatie over het apparaat, waaronder informatie over de naam van het apparaat, de eigenaar, of het wel of geen BYOD-apparaat is en wanneer het voor het laatst is ingecheckt.
+- [Inventaris van apparaten weergeven](device-inventory.md)
+- Externe apparaatacties uitvoeren:
+    - [Bedrijfsgegevens verwijderen](device-company-data-remove.md) 
+    - [Fabrieksinstellingen terugzetten](device-factory-reset.md)
+    - [Vergrendelen op afstand](device-remote-lock.md)
+    - [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
+    - [Activeringsvergrendeling overslaan](device-activation-lock-bypass.md)
+    - [Nieuwe start](device-fresh-start.md)
+    - [Modus Apparaat verloren](device-lost-mode.md)
+    - [Apparaat zoeken](device-locate.md)
+    - [Opnieuw opstarten](device-restart.md)
+    - [Windows 10-pincode opnieuw instellen](device-windows-pin-reset.md)
+    - [Beheer op afstand voor Android](device-profile-android-teamviewer.md)
 
-    - **Hardware**: meer gedetailleerde informatie over het apparaat, zoals de beschikbare opslagruimte, het model en de fabrikant.
-    ![Beheerde hardware-inventaris van apparaten](./media/hardware-inventory.png)
-    - **Gedetecteerde toepassingen**: geeft een lijst van alle apps weer die op het apparaat zijn geïnstalleerd.
-    ![Knooppunt van gedetecteerde toepassingen](./media/detected-applications.png)
-- **Monitor**: kies **Apparaatacties** voor een overzicht van apparaatacties die zijn uitgevoerd op apparaten die u beheert en de huidige status van deze acties.
+
+## <a name="support-for-each-device-action"></a>Ondersteuning voor elke apparaatactie
+
+Gebruik de volgende tabel voor informatie over de apparaatplatformen die worden ondersteund door elke actie.
+
+|||||||
+|-|-|-|-|-|-|
+|Apparaatactie|Windows|Windows Phone|iOS|macOS|Android|
+|**Bedrijfsgegevens verwijderen**|Yes|Ja|Ja|Ja|Ja|
+|**Fabrieksinstellingen terugzetten**|Windows 8.1 en hoger (geen met EAS beheerde apparaten)|Yes|Ja|Nee|Android for Work wordt niet ondersteund|
+|**Verwijderen**|Ja|Ja|Ja|Ja|Yes|
+|**Vergrendelen op afstand**|Nee|Windows Phone 8.1 en hoger|Yes|Nee|Yes|
+|**Wachtwoordcode opnieuw instellen**|Nee|Windows Phone 8.1 - Windows 10-makersupdate, geen lid van Azure AD-domein, Windows 10-makersupdate en hoger - alles|Ja|Nee|Ouder dan Android 7, Android for Work niet ondersteund|
+|**Nieuwe wachtwoordcode** (voor Windows 10-apparaten)|Nee|Windows 10-makersupdate en hoger (lid van Azure AD-domein)|Nee|Nee|Android for Work wordt niet ondersteund|
+|**Activeringsvergrendeling overslaan**|Nee|Nee|Alleen apparaten die bedrijfseigendom zijn|Nee|Nee|
+|**Modus Apparaat verloren**|Nee|Nee|iOS 9.3 of hoger, onder supervisie, en bedrijfseigendom|Nee|Nee|
+|**Apparaat zoeken**|Nee|Nee|Modus Apparaat verloren van iOS 9.3 of hoger, onder supervisie, en bedrijfseigendom|Nee|Nee|
+|**Huidige gebruiker afmelden**|Nee|Nee|iOS 9.3 en hoger (alleen gedeelde iPads)|Nee|Nee|
+|**Opnieuw opstarten**|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|Nee|Nee|Nee|
+|**Nieuwe start**|Windows 10-makersupdate en hoger|Nee|Nee|Nee|Nee|
+|**Nieuwe sessie van hulp op afstand**|Nee|Nee|Nee|Nee|Ja|
+|**Gebruiker verwijderen**|Nee|Nee|iOS 9.3 en hoger (alleen gedeelde iPads)|Nee|Nee|
+
+## <a name="next-steps"></a>Volgende stappen
+
+- Kies **Apparaatacties** om de status te zien van acties die zijn uitgevoerd op apparaten die u beheert. 
 ![Apparaatbedreigingen bewaken](./media/monitor-device-actions.png)
-- **Help en ondersteuning**: bevat koppelingen naar documentatie over probleemoplossing en ondersteuning.
-
-## <a name="available-device-actions"></a>Beschikbare apparaatbedreigingen
-
-Bovendien kunt u de volgend acties op afstand op het apparaat uitvoeren (niet alle acties worden door alle platformen ondersteund):
-
-### <a name="remove-company-data"></a>**Bedrijfsgegevens verwijderen**
-Hiermee verwijdert u alleen bedrijfsgegevens die worden beheerd door Intune. Persoonlijke gegevens worden niet van het apparaat verwijderd. Het apparaat wordt niet meer beheerd door Intune en heeft geen toegang meer tot bedrijfsresources (niet ondersteund voor Windows-apparaten die zijn gekoppeld aan Azure Active Directory).
-
-### <a name="factory-reset"></a>**Fabrieksinstellingen terugzetten**
-Hiermee worden de standaardinstellingen van het apparaat hersteld. Het apparaat wordt niet meer beheerd door Intune en de bedrijfsgegevens en persoonlijke gegevens worden verwijderd. U kunt deze actie niet ongedaan maken.
-
-### <a name="remote-lock"></a>**Vergrendelen op afstand**
-Hiermee wordt het apparaat vergrendeld. De eigenaar van het apparaat moet de wachtwoordcode gebruiken om het apparaat te ontgrendelen. U kunt alleen een apparaat vergrendelen dat op afstand is vergrendeld met een pincode of een wachtwoord.
-
-### <a name="reset-passcode"></a>**Wachtwoordcode opnieuw instellen**
-Hiermee wordt een nieuwe wachtwoordcode gegenereerd voor het <*apparaat dat wordt weergegeven op de blade* > **Overzicht**.
-
-### <a name="bypass-activation-lock"></a>**Activeringsvergrendeling overslaan**
-Hiermee verwijdert u de activeringsvergrendeling van een iOS-apparaat zonder dat u de Apple ID en het wachtwoord van de gebruiker nodig hebt. Als u de activeringsvergrendeling hebt overgeslagen, wordt de activeringsvergrendeling opnieuw ingeschakeld zodra de app Zoek mijn iPhone start. Sla de activeringsvergrendeling alleen over als u fysiek toegang hebt tot het apparaat.
-
-### <a name="fresh-start"></a>**Nieuwe start**
-
-Hiermee verwijdert u alle apps die zijn geïnstalleerd op een computer met Windows 10 met de makersupdate. De computer wordt vervolgens automatisch bijgewerkt naar de nieuwste versie van Windows.
-U kunt dit gebruiken om vooraf geïnstalleerde OEM-apps te verwijderen die vaak op nieuwe computers staan. U kunt configureren of de gebruikersgegevens bewaard blijven wanneer u deze actie uitvoert. In dit geval worden apps en instellingen verwijderd, maar de inhoud van de basismap Gebruikers blijft bewaard.
-
-
-### <a name="lost-mode"></a>**Modus Apparaat verloren**
-Als een iOS-apparaat is verloren of gestolen, kunt u de modus Apparaat verloren inschakelen. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven. U doet dit als volgt:
-1.    Kies **Meer** > **modus Apparaat verloren** op de eigenschappenblade voor een iOS-apparaat.
-2.    Schakel op de blade **modus Apparaat verloren** de modus Apparaat verloren in, voer het bericht in dat wordt weergegeven en voeg indien gewenst een telefoonnummer toe.
-3.    Klik op **OK**.
-Wanneer u de modus Apparaat verloren inschakelt, wordt het gebruik van het apparaat volledig geblokkeerd. De gebruiker krijgt pas weer toegang tot het apparaat als de modus Apparaat verloren is uitgeschakeld. Als de modus Apparaat verloren is ingeschakeld, kunt u de bewerking **Apparaat zoeken** uitvoeren om te weten te komen waar het apparaat is.
-Als u de modus Apparaat verloren wilt gebruiken, moet het apparaat een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld.
-
-### <a name="locate-device"></a>**Apparaat zoeken**
-Gebruik deze externe actie om de locatie van een verloren of gestolen iOS-apparaat op een kaart weer te geven. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, moet op het apparaat de modus Apparaat verloren zijn ingeschakeld.
-1.    Kies **Meer** > **Apparaat zoeken** op de eigenschappenblade voor een iOS-apparaat.
-2.    Als het apparaat is gevonden, wordt de locatie weergegeven op de blade **Apparaat zoeken**.
-    ![De blade Apparaat zoeken](./media/locate-device.png)
-
->[!NOTE]
->De afstand die u op de kaart kunt inzoomen, is om privacyredenen beperkt.
-
-### <a name="restart"></a>**Opnieuw opstarten**
-Hiermee zorgt u ervoor dat het apparaat opnieuw wordt opgestart. De eigenaar van het apparaat wordt niet op de hoogte gesteld dat het apparaat opnieuw wordt opgestart. Hierdoor kan eventueel werk verloren gaan.
-
-
-## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Beveiligings- en privacygegevens voor de acties modus Apparaat verloren en Apparaat zoeken
-- Er wordt geen locatie-informatie over het apparaat verzonden naar Intune voordat u deze actie hebt ingeschakeld.
-- Wanneer u de actie Apparaat zoeken gebruikt, worden de lengte- en breedtegraadcoördinaten van het apparaat verzonden naar Intune en weergegeven in Azure Portal.
-- De gegevens worden gedurende 24 uur opgeslagen, waarna ze worden verwijderd. U kunt de locatiegegevens niet handmatig verwijderen.
-- De locatiegegevens worden versleuteld terwijl ze zijn opgeslagen en terwijl ze worden verzonden.
-- Wanneer u de modus Apparaat verloren configureert, wordt aangeraden in het bericht dat op het vergrendelingsscherm wordt weergegeven de melding op te nemen dat de locatie van het apparaat kan worden bepaald.
-

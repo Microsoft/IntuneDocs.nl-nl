@@ -1,7 +1,7 @@
 ---
 title: Een beleid maken en toewijzen voor voorwaardelijke toegang voor Exchange On-Premises
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune kunt configureren'
+titleSuffix: Intune on Azure
+description: Meer informatie over hoe u de voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated kunt configureren in Intune
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Beleid voor voorwaardelijke toegang in Microsoft Intune maken en toewijzen voor Exchange On-Premises en oudere Exchange Online Dedicated-omgevingen
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Een beleid voor voorwaardelijke toegang maken en toewijzen voor Exchange On-Premises en oudere Exchange Online Dedicated-omgevingen in Microsoft Intune Azure Preview
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Dit onderwerp begeleidt u bij het proces van het configureren van voorwaardelijke toegang voor Exchange On-Premises op basis van apparaatnaleving.
 
@@ -85,7 +82,7 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 4. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
 
-5.  Kies **Voorwaardelijke toegang** en kies vervolgens
+5. Kies **On-premises toegang**, en kies vervolgens
 
 6. Op de blade **On-premises** vindt u de status van het beleid voor voorwaardelijke toegang en de apparaten die door het beleid worden beïnvloed.
 
@@ -93,8 +90,8 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 8. Kies **Ja** op de blade **On-premises toegang tot Exchange** om on-premises toegang tot Exchange in te schakelen.
 
-      > [!NOTE]
-      > Als u de on-premises connector Exchange Active Sync niet hebt geconfigureerd, wordt deze optie uitgeschakeld.  U moet deze connector eerst installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
+    > [!NOTE]
+    > Als u de on-premises connector Exchange Active Sync niet hebt geconfigureerd, wordt deze optie uitgeschakeld.  U moet deze connector eerst installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
 
 9. Kies **Opgenomen groepen** onder **Toewijzing**.  Gebruik de beveiligingsgebruikersgroep waarop u voorwaardelijke toegang wilt toepassen. Hiervoor moeten de gebruikers hun apparaten inschrijven in Intune en moeten de apparaten voldoen aan de nalevingsprofielen.
 
@@ -114,12 +111,12 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 15. Klik op de blade **On-premises** op **Opslaan** om het beleid voor voorwaardelijke toegang op te slaan.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Voorwaardelijk toegangsbeleid voor Azure AD maken in Intune Azure Preview
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Voorwaardelijk toegangsbeleid voor Azure AD maken in Intune
 
-Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaardelijke toegang vanuit de Intune Azure Preview maken, zodat u niet hoeft te wisselen tussen de werkbelastingen in Azure en Intune.
+Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaardelijke toegang vanuit Intune Azure Portal maken, zodat u niet hoeft te wisselen tussen de workloads in Azure en Intune.
 
 > [!IMPORTANT]
-> Als u beleid voor voorwaardelijke toegang voor Azure AD wilt instellen vanuit de Intune Azure Preview-portal, moet u een Azure AD Premium-licentie hebben.
+> Als u beleid voor voorwaardelijke toegang voor Azure AD wilt instellen vanuit Intune Azure Portal, moet u een Azure AD Premium-licentie hebben.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Beleid voor voorwaardelijke toegang voor Azure AD maken
 

@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
 Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](http://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. Met de website van de bedrijfsportal kunt u computers en apparaten beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
 
 > [!NOTE]
-> Het is mogelijk dat u de knop **Wachtwoordcode opnieuw instellen** niet ziet op de website van de bedrijfsportal. Als u de knop niet ziet, neemt u contact op met de IT-beheerder voor ondersteuning via de website van de bedrijfsportal.
+> Het is mogelijk dat u de knop Wachtwoordcode opnieuw instellen niet ziet op de website van de bedrijfsportal als u een geregistreerd apparaat gebruikt dat bedrijfseigendom is. In dat geval neemt u contact op met uw IT-beheerder om de wachtwoordcode opnieuw in te stellen.
 
 Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
-1.    Op de [Bedrijfsportal-website ](http://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+1.  Op de [Bedrijfsportal-website ](http://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/intune/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
 2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de wachtwoordcode opnieuw wilt instellen.
 
   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Het apparaat wordt in een pop-upvenster geopend. Selecteer de knop **Wachtwoordcode opnieuw instellen** .
+3.  Het apparaat wordt in een pop-upvenster geopend. Selecteer de knop **Wachtwoordcode opnieuw instellen** .
 
     ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,11 +51,14 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
   Verschillende apparaten hebben verschillende soorten wachtwoordcodes.
 
-  **Android**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers.
+  **Android**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. 
+  
+  > [!NOTE]
+  > Het is niet mogelijk om wachtwoordcodes voor apparaten met Android 7.0 en hoger opnieuw in te stellen. U moet de fabrieksinstellingen van deze apparaten terugzetten als u de wachtwoordcode bent vergeten.
 
   **iOS**: de bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u de Touch ID-vingerafdrukscanner gebruikt om toegang te krijgen tot uw apparaat of voor het doen van aankopen, moet u deze opnieuw instellen.
 
-  **Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Windows Hello-gezichtsherkenning wordt nog steeds ondersteunt, dus u kunt deze gewoon gebruiken om u aan te melden.
+  **Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Windows Hello-gezichtsherkenning wordt nog steeds ondersteund, dus u kunt deze gewoon gebruiken om u aan te melden.
     
   **Windows Phone 8.1**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.
 
@@ -70,4 +69,3 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

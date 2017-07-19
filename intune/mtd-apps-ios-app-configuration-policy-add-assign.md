@@ -1,0 +1,129 @@
+---
+title: MTD-apps toevoegen en toewijzen met Intune
+titleSuffix: Intune on Azure
+description: Lees hier hoe u MTD-apps, de Microsoft Authenticator-app en iOS-configuratiebeleid toevoegt aan Intune in Azure
+keywords: 
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 06/23/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
+ms.reviewer: heenamac
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 7b3fb86648a86b161eadfc071bdacbfd4ea0222f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
+---
+# <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune
+
+U kunt Intune gebruiken om MTD-apps toe te voegen en te implementeren. Eindgebruikers kunnen dan meldingen ontvangen wanneer op hun mobiele apparaten een bedreiging wordt vastgesteld en ze kunnen richtlijnen ontvangen om de bedreigingen te verhelpen.
+
+Voor iOS-apparaten hebt u de app [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) nodig, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD. Bovendien hebt u het configuratiebeleid voor iOS-apps nodig, dat bepaalt welke MTD iOS-app moet worden gebruikt met Intune.
+
+> [!TIP]
+> De Intune-bedrijfsportal werkt als de broker op Android-apparaten, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD.
+
+## <a name="before-you-begin"></a>Voordat u begint
+
+-   De onderstaande stappen moeten worden uitgevoerd in [Azure Portal](https://portal.azure.com/).
+
+-   Zorg ervoor dat u bekend bent met de volgende procedures:
+
+    -   [Een app toevoegen in Intune](apps-add.md).
+
+    -   [Een configuratiebeleid voor iOS-apps toevoegen in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+
+    -   [Een app toewijzen met Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+
+    -   [Een configuratiebeleid voor iOS-apps toevoegen](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+
+## <a name="to-add-apps"></a>Apps toevoegen
+
+### <a name="skycure-app-for-android"></a>De Skycure-app voor Android
+
+- Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](store-apps-android.md). Gebruik deze [URL voor Skycure in Google Play](https://play.google.com/store/apps/details?id=com.skycure.skycure) in **stap 7**.
+
+### <a name="skycure-app-for-ios"></a>De Skycure-app voor iOS
+
+- Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor Skycure in de iTunes Store](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) in **stap 5**, onder de sectie **App-gegevens configureren**.
+
+### <a name="microsoft-authenticator-app-for-ios"></a>Microsoft Authenticator-app voor iOS
+
+- Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor Microsoft Authenticator in de iTunes Store](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) in **stap 5**, onder de sectie **App-gegevens configureren**.
+
+### <a name="lookout-for-work-android-app"></a>Lookout for Work-app voor Android
+
+- Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](store-apps-android.md). Gebruik deze [URL voor Lookout for Work in Google Play](https://play.google.com/store/apps/details?id=com.lookout.enterprise) in **stap 7**.
+
+### <a name="lookout-for-work-ios-app"></a>Lookout for Work-app voor iOS
+
+- Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor Lookout for Work in de iTunes Store](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) in **stap 5**, onder de sectie **App-gegevens configureren**.
+
+### <a name="lookout-for-work-app-outside-the-apple-store"></a>Lookout for Work-app buiten de iOS App Store
+
+U moet de Lookout for Work-app voor iOS opnieuw ondertekenen. De Lookout for Work-app voor iOS wordt gedistribueerd buiten de iOS App Store. Voordat u de app distribueert, moet u de app opnieuw ondertekenen met het iOS Enterprise Developer-certificaat.
+
+Zie het [proces voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS](https://personal.support.lookout.com/hc/articles/114094038714) (Engelstalig) op de website van Lookout voor gedetailleerde instructies voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS.
+
+#### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Azure AD-verificatie inschakelen voor Lookout for Work-app voor iOS
+
+Schakel Azure Active Directory-verificatie voor de iOS-gebruikers als volgt in:
+
+1. Ga naar [Azure Portal](https://portal.sazure.com), meld u aan en navigeer naar de toepassingspagina.
+  
+2. Voeg de **Lookout for Work-app voor iOS** toe als een **native clienttoepassing**.
+
+3. Vervang **com.lookout.enterprise.yourcompanyname** door de klantbundel-id die u hebt geselecteerd bij het ondertekenen van de IPA.
+
+4.  Voeg de aanvullende omleidings-URI **&lt;companyportal://code/>** toe, gevolgd door een versie met URL-codering van uw oorspronkelijke omleidings-URI.
+
+5.  Voeg **overgedragen machtigingen** toe aan uw app.
+
+    > [!NOTE] 
+    > Zie voor meer informatie de Engelstalige instructies voor het [configureren van een native clienttoepassing met Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
+
+#### <a name="add-the-lookout-for-work-ipa-file"></a>Het IPA-bestand van Lookout for Work toevoegen
+
+- Upload het opnieuw ondertekende IPA-bestand, volgens de instructies in het onderwerp [iOS-Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune](lob-apps-ios.md). U moet ook de minimale versie van het besturingssysteem instellen op iOS 8.0 of hoger.
+
+## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>De MTD-app koppelen aan een configuratiebeleid voor iOS-apps
+
+### <a name="for-skycure"></a>Voor Skycure
+
+-   Gebruik hetzelfde Azure AD-account dat eerder is geconfigureerd in de Skycure-beheerconsole. Dit moet hetzelfde account zijn als het account waarmee is aangemeld bij de klassieke Intune-console.
+
+-   Het Skycure-integratiebestand moet klaar zijn voor gebruik. Dit is het ZIP-bestand dat eerder in de Skycure-beheerconsole is gedownload en dat het bestand **skycure\_configuration.plist** bevat met de parameters voor het configuratiebeleid voor iOS-apps.
+
+- Zie de Engelstalige instructies voor het [gebruiken van app-configuratiebeleid voor iOS van Microsoft Intune](app-configuration-policies-use-ios.md) om het configuratiebeleid voor de iOS-app Skycure toe te voegen.
+    - Gebruik in stap 8 de optie **XML-gegevens invoeren**, kopieer de inhoud van het bestand **skycure_configuration.plist** en plak de inhoud in de hoofdtekst van het configuratiebeleid.
+
+U kunt de inhoud van **skycure_configuration.plist** ook hier kopiëren:
+
+```
+<dict>
+    <key>MdmType</key>
+    <string>Intune</string>
+    <key>UserEmail</key>
+    <string>{{userprincipalname}}</string>
+</dict>
+
+```
+### <a name="for-lookout"></a>Voor Lookout
+
+- Maak het configuratiebeleid voor iOS-apps volgens de instructies in het onderwerp [How to use Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) (App-configuratiebeleid van Microsoft Intune gebruiken voor iOS).
+
+## <a name="to-assign-mtd-apps"></a>MTD-apps toewijzen
+
+- Zie de instructies in [Apps aan groepen toewijzen met Microsoft Intune](apps-deploy.md).
+
+## <a name="next-steps"></a>Volgende stappen
+
+[De integratie van Skycure met Intune instellen](skycure-mtd-connector-integration.md)
+[De integratie van Lookout met Intune instellen](lookout-mtd-connector-integration.md)

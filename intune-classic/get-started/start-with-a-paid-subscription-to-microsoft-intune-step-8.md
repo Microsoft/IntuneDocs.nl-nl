@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Registratie inschakelen voor mobiele apparaten
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Als u beheer van mobiele apparaten met Intune wilt instellen, moet u eerst de *i
 
 ## <a name="enable-device-enrollment"></a>Apparaatinschrijving inschakelen
 
-1. **Intune als de instantie voor het beheer van mobiele apparaten instellen**
-    Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** > **Beheer van mobiele apparaten** en kies vervolgens **MDM-instantie instellen** onder **Taken**.  
+1. **Intune als de instantie voor het beheer van mobiele apparaten instellen** Kies in de [Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beheer** > **Beheer van mobiele apparaten** en kies vervolgens **MDM-instantie instellen** onder **Taken**.  
 
 2. Klik in het dialoogvenster MDM-instantie op **Ja**.
 
@@ -51,7 +47,7 @@ Inschrijving moet worden ingeschakeld voor iOS-, Mac- en Android for Work-appara
 
 Schakel apparateninschrijving in voor het apparaatplatform dat u wilt beheren. Afhankelijk van uw platform zijn er andere vereisten van toepassing:
 
-- [iOS en Mac OS](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [iOS en macOS](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 - [Windows 10 en Windows Phone](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 - [Window-pc](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune-softwareclient)
 - [Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
@@ -59,7 +55,7 @@ Schakel apparateninschrijving in voor het apparaatplatform dat u wilt beheren. A
 Zodra inschrijving is ingeschakeld, kunnen gebruikers de bedrijfsportal-app naar het apparaat downloaden en het registratieproces van het apparaat voltooien.
 
 ### <a name="enable-company-owned-device-enrollment"></a>Inschrijving van bedrijfsapparaten inschakelen
-U kunt ook een aantal verschillende scenario’s voor [inschrijving van bedrijfsapparaten](/intune-classic/deploy-use/manage-corporate-owned-devices) inschakelen, zoals:
+U kunt ook een aantal verschillende scenario's voor [inschrijving van bedrijfsapparaten](/intune-classic/deploy-use/manage-corporate-owned-devices) inschakelen, zoals:
 - [Apple Device Enrollment Program](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Inschrijving via Apple Configurator Setup Assistant](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 - [Directe inschrijving met Apple Configurator](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
@@ -70,4 +66,3 @@ Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune*
 
 >[!div class="step-by-step"]
 >[&larr; **Apparaten inschrijven**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Taken na configuratie** &rarr;](.\post-configuration-tasks.md)  
-

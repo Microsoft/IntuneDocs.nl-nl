@@ -118,6 +118,7 @@
 #### [Windows Store-apps](store-apps-windows.md)
 #### [Windows LOB-apps](lob-apps-windows.md)
 #### [Android for Work-apps](apps-add-android-for-work.md)
+#### [Office 365-apps voor Windows 10](apps-add-office365.md)
 ### [Apps toewijzen](apps-deploy.md)
 ### [Apps bewaken](apps-monitor.md)
 ### [Configuratieprofielen voor iOS-apps](app-configuration-policies-use-ios.md)

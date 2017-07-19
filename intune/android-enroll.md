@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>Vereiste metagegevens
-
-titel: Android apparaten inschrijven in Intune titleSuffix: 'Intune Azure Preview' beschrijving: Intune Azure Preview: meer informatie over het inschrijven van Android-apparaten in Intune Azure Preview.'
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>Optionele metagegevens
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>Doelgroep:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: Android-apparaten inschrijven in Intune
+titleSuffix: Intune on Azure
+description: Meer informatie over het registreren van Android-apparaten in Intune.
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Als Intune-beheerder kunt u met Intune Android-apparaten beheren, waaronder Samsung Knox Standard-apparaten. U kunt ook het werkprofiel op [Android for Work-apparaten](#enable-enrollment-of-android-for-work-devices) beheren.
 
@@ -25,15 +31,13 @@ Apparaten waarop Samsung KNOX Standard wordt uitgevoerd, bieden ondersteuning vo
 
 ## <a name="prerequisite"></a>Vereiste
 
-U moet de MDM-instantie instellen op **Microsoft Intune** als voorbereiding op het beheer van mobiele apparaten. Zie [Set the MDM authority](mdm-authority-set.md) (De MDM-instantie instellen) voor instructies. U stelt de instantie slechts één keer in, wanneer u Intune voor het eerst instelt voor het beheer van mobiele apparaten, dus het kan zijn dat u de instantie al hebt ingesteld.
+U moet de MDM-instantie instellen op **Microsoft Intune** als voorbereiding op het beheer van mobiele apparaten. Zie [Set the MDM authority](mdm-authority-set.md) (De MDM-instantie instellen) voor instructies. U stelt de instantie slechts één keer in, wanneer u Intune voor het eerst instelt voor het beheer van mobiele apparaten.
 
 ## <a name="set-up-android-enrollment"></a>Android-inschrijving instellen
 
 Standaard staat Intune de registratie van Android- en Samsung Knox Standard-apparaten toe.
 
-Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md#set-device-type-restrictions) als u de inschrijving wilt blokkeren van Android-apparaten of alleen Android-apparaten die het eigendom van de gebruiker zijn.
-
-Zie [Apparaatlimietbeperkingen instellen](enrollment-restrictions-set.md#set-device-limit-restrictions) als u het maximumaantal apparaten wilt instellen dat een gebruiker kan inschrijven.
+Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) als u de inschrijving wilt blokkeren van Android-apparaten of alleen Android-apparaten die het eigendom van de gebruiker zijn.
 
 Als u apparaatbeheer wilt inschakelen, moeten uw gebruikers hun apparaat inschrijven door de app Intune-bedrijfsportal te downloaden (die beschikbaar is via Google Play) en vervolgens de app te openen en de prompts voor inschrijving te volgen. Zodra Android-apparaten worden beheerd, kunt u [nalevingsbeleid toewijzen](compliance-policy-create-android.md), [apps beheren](app-management.md) en meer.
 
@@ -78,7 +82,7 @@ U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw Android-app
 
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 
-- [Bronnen over de eindgebruikerservaring in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Bronnen over de eindgebruikerservaring in Microsoft Intune](end-user-educate.md)
 - [Uw Android-apparaat gebruiken met Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Binding van uw Android for Work-beheerdersaccount ongedaan maken

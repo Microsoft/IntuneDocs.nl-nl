@@ -1,33 +1,29 @@
 ---
-title: Intune-instellingen iOS-app Classroom | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp vindt u meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor de app Classroom op iOS-apparaten.'
+title: Intune-instellingen voor de iOS-app Classroom
+titleSuffix: Intune on Azure
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor de app Classroom op iOS-apparaten.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
-ms.reviewer: heenamac
+ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f24636687291ff55686277c3f24b2774cfb32f4
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4188c3951c9cb864b77bde52a5d19f022f17c11c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>De Intune-instellingen voor de iOS-app Classroom configureren
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Inleiding
 [Classroom](https://itunes.apple.com/app/id1085319084) is een app waarmee docenten het leren kunnen begeleiden en op apparaten van studenten in het leslokaal kunnen beheren. Met de app kan een docent bijvoorbeeld het volgende:
@@ -45,7 +41,7 @@ Gebruik het iOS-apparaatprofiel **Opleiding** van Intune en de informatie in dit
 Let op het volgende voordat u begint met het configureren van deze instellingen:
 
 - De iPads van zowel docenten als studenten moeten zijn geregistreerd bij Intune
-- Zorg ervoor dat u de app [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) hebt geïnstalleerd op het apparaat van de docent. U kunt dit handmatig doen of via [App-beheer van Intune](app-management.md).
+- Zorg ervoor dat u de app [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) hebt geïnstalleerd op het apparaat van de docent. U kunt de app handmatig installeren of [App-beheer van Intune](app-management.md) gebruiken.
 - U moet certificaten configureren om verbindingen tussen de apparaten van de docent en studenten te verifiëren (zie stap 2)
 - iPads van de docent en studenten moeten verbonden zijn met hetzelfde Wi-Fi-netwerk en Bluetooth moet ingeschakeld zijn
 - De app Classroom draait op iPads met supervisie onder iOS 9.3 of hoger
@@ -59,7 +55,7 @@ SDS synchroniseert informatie uit uw SIS en slaat deze op in Azure AD. Azure AD 
 
 ### <a name="how-to-import-data-using-sds"></a>Gegevens importeren met SDS
 
-U kunt gegevens importeren in SDS met behulp van een van de volgende items:
+U kunt op een van de volgende manieren gegevens importeren in SDS:
 
 - [CSV-bestanden](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1): bestanden met door komma's gescheiden waarden (.csv) handmatig exporteren en compileren
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f): dit is een SIS-provider die vereenvoudigde synchronisatie met Azure AD biedt
@@ -77,14 +73,14 @@ U kunt gegevens importeren in SDS met behulp van een van de volgende items:
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3.    Kies **Apparaten configureren** op de blade **Intune**.
-4.    Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-5.    Kies **Profiel maken** op de blade Profielen.
-6.    Voer op de blade **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
-7.    Kies **iOS** in de vervolgkeuzelijst **Platform**.
-8.    Kies **Opleiding** in de vervolgkeuzelijst **Profieltype**.
-9.    Kies **Instellingen** > **Configureren**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+3.  Kies **Apparaten configureren** op de blade **Intune**.
+4.  Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
+5.  Kies **Profiel maken** op de blade Profielen.
+6.  Voer op de blade **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
+7.  Kies **iOS** in de vervolgkeuzelijst **Platform**.
+8.  Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
+9.  Kies **Instellingen** > **Configureren**.
 
 
 Vervolgens hebt u certificaten nodig om een vertrouwensrelatie te maken tussen de iPads van de docent en studenten. Certificaten worden gebruikt voor het naadloos en op de achtergrond verifiëren van verbindingen tussen apparaten zonder gebruikersnamen en wachtwoorden in te voeren.
@@ -92,7 +88,7 @@ Vervolgens hebt u certificaten nodig om een vertrouwensrelatie te maken tussen d
 >[!IMPORTANT]
 >De docent- en studentencertificaten die u gebruikt, moeten zijn uitgegeven door verschillende certificeringsinstanties (CA's). U moet twee nieuwe onderliggende CA's maken die verbonden zijn met uw bestaande certificaatinfrastructuur: één voor docenten en één voor studenten.
 
-iOS-opleidingsprofielen bieden alleen ondersteuning voor PFX-certificaten. SCEP-certificaten worden niet ondersteund.
+iOS-onderwijsprofielen ondersteunen alleen PFX-certificaten. SCEP-certificaten worden niet ondersteund.
 
 De certificaten die u maakt, moeten niet alleen ondersteuning bieden voor gebruikersverificatie maar ook voor serververificatie.
 
@@ -120,8 +116,8 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ### <a name="configure-student-certificates"></a>Studentencertificaten configureren
 
-1.    Kies **Studentcertificaten** op de blade **Opleiding**.
-2.    Kies op de blade **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **1:1**.
+1.  Kies **Studentcertificaten** op de blade **Opleiding**.
+2.  Kies op de blade **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Het basiscertificaat voor studenten configureren
 
@@ -143,8 +139,8 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ## <a name="finish-up"></a>Voltooien
 
-1.    Kies OK op de blade **Opleiding**.
-2.    Kies **Maken** op de blade **Profiel maken**.
+1.  Kies OK op de blade **Opleiding**.
+2.  Kies **Maken** op de blade **Profiel maken**.
     
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 
@@ -156,3 +152,4 @@ Als docenten nu de app Classroom gebruiken, hebben ze de volledige controle over
 
 Zie [Help bij Classroom](https://help.apple.com/classroom/ipad/2.0/) op de website van Apple voor meer informatie over de app Classroom.
 
+Als u gedeelde iPads wilt configureren voor studenten, raadpleegt u [Intune-onderwijsinstellingen configureren voor gedeelde iPads](education-settings-configure-ios-shared.md).

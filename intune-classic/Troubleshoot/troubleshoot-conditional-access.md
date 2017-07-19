@@ -14,15 +14,12 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -148,24 +145,10 @@ Uitgebreide logboekregistratie inschakelen:
 2.  Zoek de TraceSourceLine met de volgende sleutel: OnPremisesExchangeConnectorService
 3.  Wijzig de knooppuntwaarde **SourceLevel** van **Warning ActivityTracing** (de standaardinstelling) in **Verbose ActivityTracing**, zoals hieronder weergegeven.
 
-    <TraceSourceLine>
-          <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
-          <Value xsi:type="TraceSource">
-            <SourceLevel>All</SourceLevel>
-            <Listeners>
-              <Listener>
-                <ListenerType>CircularTraceListener</ListenerType>
-                <SourceLevel>Verbose ActivityTracing</SourceLevel>
-                <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes>
-                <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName>
-                <FileQuota>30</FileQuota>
-              </Listener>
-            </Listeners>
-          </Value>
+    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
     </TraceSourceLine>
 
 
 
 ### <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
-
