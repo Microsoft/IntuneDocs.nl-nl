@@ -15,6 +15,7 @@
 ### [Levenscyclus van apparaten](device-lifecycle.md)
 ### [Levenscyclus van apps](app-lifecycle.md)
 ## [Algemene scenario's](common-scenarios.md)
+## [Beschrijving van de service](microsoft-intune-service-description.md)
 ## [Bekende problemen](known-issues.md)
 ## [Ondersteuning krijgen](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows-inschrijving](windows-enroll.md)
 #### [Bulkregistratie](windows-bulk-enroll.md)
 ### [Android-inschrijving instellen](android-enroll.md)
-### iOS-inschrijving instellen
-#### [Met het Device Enrollment Program](device-enrollment-program-enroll-ios.md)
-#### [Met Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Met Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [iOS-inschrijving instellen](ios-enroll.md)
+#### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS-inschrijving instellen](macos-enroll.md)
 
 ## [Apparaten beheren](device-management.md)
