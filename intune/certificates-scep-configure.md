@@ -1,12 +1,12 @@
 ---
 title: SCEP-certificaten configureren en beheren met Intune
-titleSuffix: Intune Azure preview
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens Intune SCEP-certificaatprofielen kunt maken en toewijzen.'
+titleSuffix: Intune on Azure
+description: In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens Intune SCEP-certificaatprofielen kunt maken en toewijzen.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens SCEP-certificaatprofielen (Simple Certificate Enrollment Protocol) kunt maken en toewijzen met Intune.
 
@@ -84,6 +83,10 @@ Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvo
 
 **Stap 5**: de Intune-certificaatconnector inschakelen, installeren en configureren
 
+> [!NOTE]
+> Gebruik vanwege een bekend probleem de volgende procedure om de certificaatconnector te downloaden, te installeren en te configureren: [Certificeringsinfrastructuur voor SCEP configureren -> Uw infrastructuur configureren -> Taak 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>Stap 1: een NDES-serviceaccount maken
 
 Maak een domeingebruikersaccount dat u als NDES-serviceaccount gaat gebruiken. U geeft dit account op wanneer u sjablonen op de verlenende CA configureert voordat u NDES installeert en configureert. Zorg ervoor dat de gebruiker over de standaardrechten **Lokaal aanmelden**, **Aanmelden als service** en **Aanmelden als batchtaak** beschikt. Sommige organisaties voeren een beveiligingsbeleid dat ervoor zorgt dat deze rechten worden uitgeschakeld.
@@ -100,6 +103,9 @@ In deze taak:
 1.  Meld u aan als ondernemingsbeheerder.
 
 2.  Gebruik op de verlenende CA de module Certificaatsjablonen om een nieuwe aangepaste sjabloon te maken of een bestaande sjabloon te kopiëren en vervolgens een bestaande sjabloon te bewerken (zoals de gebruikerssjabloon) voor gebruik met NDES.
+
+    >[!NOTE]
+    > De NDES-certificaatsjabloon moet zijn gebaseerd op een versie 2 certificaatsjabloon (met Windows 2003-compatibiliteit).
 
     De sjabloon moet de volgende configuraties hebben:
 
@@ -239,7 +245,7 @@ In deze taak:
 
 4. Kies in IIS-manager achtereenvolgens **Standaardwebsite** -> **Filtering aanvragen** -> **Functie-instellingen bewerken** en wijzig de **Maximale URL-lengte** en **Maximale querytekenreeks** in *65534*, zoals wordt weergegeven.
 
-    ![Maximale lengte van de URL's en query’s van IIS](.\media\SCEP_IIS_max_URL.png)
+    ![Maximale lengte van de URL's en query's van IIS](.\media\SCEP_IIS_max_URL.png)
 
 5.  Start de server opnieuw op. U kunt de wijzigingen niet voltooien door **iisreset** uit te voeren op de server.
 6. Blader naar http://*FQDN*/certsrv/mscep/mscep.dll. Hier wordt een NDES-pagina weergegeven die vergelijkbaar is met de volgende:
@@ -304,7 +310,7 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Ondersteuning voor de certificaatconnector inschakelen
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten configureren** op de blade **Intune**.
 4. Kies **Certificeringsinstantie** op de blade **Apparaatconfiguratie**.
 5.  Selecteer **Certificaatconnector inschakelen**.
@@ -312,10 +318,10 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
 
 > [!NOTE]
-> Gebruik vanwege een bekend probleem de volgende procedure om de certificaatconnector te downloaden, te installeren en te configureren: [Certificeringsinfrastructuur voor SCEP configureren -> Uw infrastructuur configureren -> Taak 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Gebruik vanwege een bekend probleem de volgende procedure om de certificaatconnector te downloaden, te installeren en te configureren: [Certificeringsinfrastructuur voor SCEP configureren -> Uw infrastructuur configureren -> Taak 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten configureren** op de blade **Intune**.
 4. Kies **Certificeringsinstantie** op de blade **Apparaatconfiguratie**.
 5. Kies **De certificaatconnector downloaden**.
@@ -377,6 +383,8 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         - **Algemene naam**
         - **Algemene naam en e-mailadres**
         - **Algemene naam als e-mailadres**
+        - **Aangepast:** als u deze optie selecteert, wordt een ander veld van de vervolgkeuzelijst weergegeven. Met dit veld kunt u een indeling van de aangepaste onderwerpnaam invoeren. De twee variabelen die worden ondersteund voor de aangepaste indeling zijn **Algemene naam (CN)** en **E-mail (E)**. Met behulp van een combinatie van een of meerdere van deze variabelen en statische tekenreeksen kunt u een aangepaste indeling voor de onderwerpnaam maken, zoals: **CN={{UserName}},E={{EmailAddress}},OU=Mobiel,O=Financiële groep,L=Redmond,ST=Washington,C=VS** In dit voorbeeld hebt u een indeling voor een onderwerpnaam gemaakt die naast de CN- en E-variabelen tekenreeksen voor de waarden van de organisatie-eenheid, de organisatie, de locatie, de staat en het land gebruikt. [In dit onderwerp](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) worden de functie **CertStrToName** en de ondersteunde tekenreeksen gedemonstreerd.
+        
     - **Alternatieve onderwerpnaam**: geef op hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteerde, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat zal worden gebruikt om een Network Policy Server te verifiëren, dient u de alternatieve naam van het onderwerp op de UPN in te stellen. 
     - **Sleutelgebruik**: geef opties voor sleutelgebruik voor het certificaat op. U kunt kiezen uit de volgende opties: 
         - **Sleutelcodering**: sta alleen sleuteluitwisseling toe als de sleutel is gecodeerd. 
@@ -392,10 +400,6 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 
->[!Note]
-> Alleen voor iOS-apparaten: selecteer onder Indeling van onderwerpnaam de optie Aangepast om een aangepaste indeling voor de onderwerpnaam in te voeren.
-> De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn **Algemene naam (CN)** en **E-mail (E)**. Met behulp van een combinatie van deze variabelen en statische tekenreeksen kunt u een aangepaste indeling voor de onderwerpnaam maken, zoals: **CN={{UserName}},E={{EmailAddress}},OU=Mobiel,O=Financiële groep,L=Redmond,ST=Washington,C=VS** In dit voorbeeld hebt u een indeling voor een onderwerpnaam gemaakt die naast de CN- en E-variabelen tekenreeksen voor de waarden van de organisatie-eenheid, de organisatie, de locatie, de staat en het land gebruikt. [In dit onderwerp](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) worden de functie **CertStrToName** en de ondersteunde tekenreeksen gedemonstreerd.
-
 ## <a name="how-to-assign-the-certificate-profile"></a>Het certificaatprofiel toewijzen
 
 Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
@@ -407,5 +411,4 @@ Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
 - Hoewel u elk profiel afzonderlijk toewijst, moet u ook het vertrouwde basis-CA- en het SCEP- of PKCS-profiel toewijzen. Anders mislukt het SCEP- of PKCS-certificaatbeleid.
 
 Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor informatie over het toewijzen van apparaatprofielen.
-
 

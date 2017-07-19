@@ -14,15 +14,12 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 030aa380a1491eb3be4fd8f480b0ddc9a7860448
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="intune-network-bandwidth-use"></a>Gebruik van netwerkbandbreedte door Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -95,7 +92,7 @@ Intune gebruikt geen on-premises infrastructuur, zoals servers waarop Intune wor
 Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u firewalls en proxyservers instellen om communicatie voor Intune mogelijk te maken. Als u computers wilt beheren die zich achter een proxyserver bevinden, moet u rekening houden met het volgende:
 
 -   De proxyserver moet zowel **HTTP (80)** als **HTTPS (443)** ondersteunen omdat Intune-clients beide protocollen gebruiken
--   Intune ondersteunt niet-geverifieerde proxyservers
+-   Intune vereist niet-geverifieerde proxyservertoegang tot manage.microsoft.com voor bepaalde bewerkingen, zoals het downloaden van software en updates
 
 U kunt instellingen voor de proxyserver op afzonderlijke clientcomputers wijzigen of u kunt instellingen voor Groepsbeleid gebruiken om de instellingen te wijzigen voor alle clientcomputers die zich achter een bepaalde proxyserver bevinden.
 
@@ -140,4 +137,17 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 |fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
-
+|fef.msua01.manage.microsoft.com|138.91.243.97|
+|fef.msua02.manage.microsoft.com|52.177.194.236|
+|fef.msua04.manage.microsoft.com|23.96.112.28|
+|fef.msua05.manage.microsoft.com|138.91.244.151|
+|fef.msua06.manage.microsoft.com|13.78.185.97|
+|fef.msua07.manage.microsoft.com|52.175.208.218|
+|fef.msub01.manage.microsoft.com|137.135.128.214|
+|fef.msub02.manage.microsoft.com|137.135.130.29|
+|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub05.manage.microsoft.com|23.97.166.52|
+|fef.msuc01.manage.microsoft.com|52.230.19.86|
+|fef.msuc02.manage.microsoft.com|23.98.66.118|
+|fef.msuc03.manage.microsoft.com|23.101.0.100|
+|fef.msuc05.manage.microsoft.com|52.230.16.180|

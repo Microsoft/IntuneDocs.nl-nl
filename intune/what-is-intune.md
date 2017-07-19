@@ -1,12 +1,12 @@
 ---
-title: Inleiding tot Intune in de preview-versie van Azure Portal
-titleSuffix: Intune Azure preview
-description: 'Preview-versie van Intune Azure: een overzicht van de basisbeginselen van Intune in de preview-versie van Azure Portal en hoe u hiermee uw apparaten kunt beheren.'
+title: Inleiding tot Intune in Azure Portal
+titleSuffix: Intune on Azure
+description: Een overzicht van de basisbeginselen van Intune in Azure Portal en hoe u hiermee uw apparaten kunt beheren."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Inleiding op Microsoft Intune in Azure Portal
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Inleiding op Microsoft Intune in de preview-versie van Azure Portal
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune wordt verplaatst naar de Azure Portal. Dit betekent dat de werkstromen en functionaliteit waarmee u bekend bent, zullen veranderen.
-De nieuwe portal biedt u een preview-versie van de nieuwe en bijgewerkte functionaliteit in Azure Portal waar u de mobiele apparaten, pc's en apps van uw bedrijf kunt beheren.
-Uiteindelijk wordt alle functionaliteit van Intune naar Azure verplaatst, maar momenteel kunt u al veel Intune-taken in Azure Portal uitvoeren. Omdat het nog om een preview-versie gaat, is bepaalde functionaliteit nog niet aanwezig in de portal. Zie de sectie [Wat is er nieuw](#whats-new) voor meer informatie.
+Microsoft Intune bevindt zich nu in Azure Portal. Dit betekent dat de werkstromen en functionaliteit waarmee u bekend bent, zijn veranderd.
+De nieuwe portal biedt u nieuwe en bijgewerkte functionaliteit in Azure Portal waar u de mobiele apparaten, pc's en apps van uw bedrijf kunt beheren.
 
 > [!IMPORTANT]
 > **Ziet u de nieuwe portal nog niet?**<br>
-> We zijn al begonnen met de implementatie van de preview-versie om tenants te selecteren. Bestaande tenants worden vanaf begin van het kalenderjaar 2017 gemigreerd. U ontvangt een melding in het Office Message Center vóór de migratie van uw tenant.
+> Bestaande tenants worden gemigreerd naar de nieuwe ervaring. Voordat uw tenant wordt gemigreerd, wordt in het berichtencentrum Office een melding weergegeven.
 >
-> Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de Apple-registratiewerkstromen in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd, maar de informatie wordt zo snel mogelijk beschikbaar gemaakt. Het wordt aangeraden om een testaccount te maken om de nieuwe ervaring te testen, als u met uw bestaande account geen toegang hebt tot de preview.
+> Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de Apple-registratiewerkstromen in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd. Als uw bestaande account geen toegang heeft tot Azure Portal, wordt u aangeraden een proefaccount maken.
+>
+> Bekijk de lijst met potentiële problemen https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-In deze bibliotheek vindt u nieuwe productdocumentatie. Deze wordt tijdens de preview-versie voortdurend bijgewerkt. Als u suggesties hebt, kunt u feedback geven in de opmerkingen bij onderwerpen. We graag horen van u.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+Informatie over de nieuwe portal vindt u in deze bibliotheek. Deze wordt voortdurend bijgewerkt. Als u suggesties hebt, kunt u feedback geven in de opmerkingen bij onderwerpen. We graag horen van u.
 
 Belangrijke functies van de nieuwe omgeving zijn onder andere:
 
@@ -78,13 +73,13 @@ De documentatie volgt de indeling van de Intune-portal, zodat u snel de gewenste
 ![Workloads in de Azure Portal](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Inleiding en aan de slag
-Deze sectie bevat informatie over [wat er nieuw is](whats-new.md), [bekende problemen](known-issues.md), [ondersteuning krijgen](get-support.md) en hoe u [aan de slag kunt met een gratis proefversie](free-trial-sign-up.md) van Intune.
+Deze sectie bevat [inleidende informatie](introduction-intune.md) die u aan de slag helpt met Intune.
 ### <a name="plan-and-design"></a>Plannen en ontwerpen
-Informatie over het [plannen en ontwerpen](/intune-classic/plan-and-design/introduction) van uw Intune-omgeving.
+Informatie over het [plannen en ontwerpen](/intune-classic/plan-design/introduction) van uw Intune-omgeving.
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 [Uw apparaten laten beheren door Intune](device-enrollment.md).
-### <a name="device-compliance"></a>Apparaatcompatibiliteit
-[Een nalevingsniveau voor uw apparaten definiëren en vervolgens rapporteren over apparaten die niet hieraan voldoen](device-compliance.md).
+### <a name="device-compliance"></a>Apparaatnaleving
+[Een nalevingsniveau voor uw apparaten definiëren en vervolgens rapporteren over apparaten die hieraan niet voldoen](device-compliance.md).
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 [Begrijpen welke profielen u kunt gebruiken om instellingen en functies te configureren op apparaten die u beheert](device-profiles.md).
 ### <a name="devices"></a>Apparaten
@@ -108,5 +103,4 @@ Informatie over het [plannen en ontwerpen](/intune-classic/plan-and-design/intro
 
 ## <a name="whats-new"></a>Wat is er nieuw?
 
-[Ontdek wat er nieuw is in de preview-versie](whats-new.md).
-
+[Ontdek wat er nieuw is in Intune](whats-new.md).

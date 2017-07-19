@@ -5,51 +5,37 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3fe1ec94f3112a252b9694449d341f336e97e635
-ms.contentlocale: nl-nl
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>De inschrijving van uw Android-apparaat bij Intune ongedaan maken
 
 Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, heeft het apparaat geen toegang meer tot de bedrijfsbronnen.  Zie [Wat gebeurt er wanneer u uw apparaat uitschrijft bij Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md) voor meer informatie over wat er gebeurt als u uw apparaat uitschrijft.
 
-Als u de registratie uw apparaat bij Intune ongedaan wilt maken en de bedrijfsportal-app wilt verwijderen, voert u de volgende stappen uit of bekijkt u deze video:
+Als u de registratie van uw apparaat bij Intune ongedaan wilt maken en de bedrijfsportal-app wilt verwijderen, voert u de volgende stappen uit:
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
+1. Open het **actiemenu** door op de drie verticale punten in de rechterbovenhoek van de bedrijfsportal-app te tikken. 
 
-1. Open uw app **Instellingen**, open **Apparaatbeheerders** en schakel **Bedrijfsportal** uit. Afhankelijk van uw apparaat, kan de naam of locatie van de instelling **Apparaatbeheerders** in de lijst met voorkeuren enigszins verschillen.
+  ![Een afbeelding van de Android-bedrijfsportal-app met in de rechterbovenhoek het geopende actiemenu. De nieuwe optie Bedrijfsportal verwijderen is als derde optie beschikbaar, onder Mijn profiel en Instellingen, en boven Voorwaarden, Help en feedback en Over.](./media/android_remove_cp_menu_action_after_1705.png)
 
-2.  Meld u aan bij de bedrijfsportal-app.
+2. Tik op **Bedrijfsportal verwijderen**.
 
-3.  Tik op **Mijn apparaten** en selecteer het apparaat waarvan u de registratie ongedaan wilt maken.
+3. Er verschijnt een bevestiging waarin u wordt gevraagd of u zeker weet dat u de bedrijfsportal wilt verwijderen. De pop-up bevat wat informatie over wat er gebeurt wanneer u de registratie van uw apparaat ongedaan maakt. Als u dit bericht hebt gelezen, tikt u op **OK** om de app te verwijderen. 
 
-    ![Kies het apparaat waarvan u de registratie ongedaan wilt maken.](./media/andr-1-my-devices-choose.png)
-
-4.  Tik op het prullenbakpictogram.
-
-    ![Tik op het prullenbakpictogram.](./media/andr-2-tap-trashcan.png)
-
-5.  Tik op de waarschuwingspagina op **OK** om de registratie van uw apparaat ongedaan te maken.
-
-    ![Verwijder het apparaat.](./media/andr-3-warning-about-remove.png)
+  ![Een afbeelding van het bevestigingsdialoogvenster dat beschikbaar is nadat u de nieuwe optie Bedrijfsportal verwijderen hebt geselecteerd in het actiemenu. Via het dialoogvenster wordt de gebruiker geïnformeerd dat 'door het verwijderen van de bedrijfsportal uw apparaat niet meer wordt beheerd door uw IT-beheerder en u mogelijk geen toegang meer hebt tot bedrijfsgegevens, bedrijfs-apps en bedrijfse-mail.' Vervolgens wordt de gebruiker gevraagd om het verwijderen van de bedrijfsportal-app te bevestigen met Ja.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
-

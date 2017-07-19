@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: nl-nl
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
 > [!NOTE]
@@ -32,7 +29,7 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor a
 
 ## <a name="prerequisites"></a>Vereisten
 
-* U hebt een macOS-computer met OS X 10.8.5 of hoger nodig, waarop Xcode 8 of hoger is geïnstalleerd.
+* U hebt een Mac OS-computer met OS X 10.8.5 of hoger nodig, waarop Xcode 8 of hoger is geïnstalleerd.
 
 * Uw app moet geschikt zijn voor iOS 9 of hoger.
 
@@ -52,7 +49,7 @@ In deze handleiding wordt ingegaan op het gebruik van de volgende onderdelen van
 
 * **IntuneMAMResources.bundle**: een bundel met resources waarvan de SDK afhankelijk is.
 
-* **Headers**: beschrijft de Intune App SDK-API’s. Als u een API gebruikt, moet u het headerbestand met de API opnemen. De volgende headerbestanden omvatten de API-functieaanroepen die zijn vereist om de functionaliteit van de Intune App SDK in te schakelen:
+* **Headers**: beschrijft de Intune App SDK-API's. Als u een API gebruikt, moet u het headerbestand met de API opnemen. De volgende headerbestanden omvatten de API-functieaanroepen die zijn vereist om de functionaliteit van de Intune App SDK in te schakelen:
 
     * IntuneMAMAsyncResult.h
     * IntuneMAMDataProtectionInfo.h
@@ -222,7 +219,7 @@ Als uw app ADAL niet gebruikt, zorgt de Intune App SDK voor de standaardwaarden 
 ## <a name="app-protection-policy-without-device-enrollment"></a>App-beveiligingsbeleid zonder apparaatrinschrijving
 
 ### <a name="overview"></a>Overzicht
-Met Intune-app beveiligingsbeleid zonder apparaatinschrijving, ook wel **APP-WE** of MAM-WE genoemd, kunnen apps worden beheerd door Intune zonder dat het apparaat hoeft te worden ingeschreven voor Intune Mobile Device Management (MDM). Ter ondersteuning van deze nieuwe functionaliteit moet de app deelnemen om gebruikersaccounts te kunnen registreren voor beheer. Volg deze stappen om de nieuwe API’s te gebruiken:
+Met Intune-app beveiligingsbeleid zonder apparaatinschrijving, ook wel **APP-WE** of MAM-WE genoemd, kunnen apps worden beheerd door Intune zonder dat het apparaat hoeft te worden ingeschreven voor Intune Mobile Device Management (MDM). Ter ondersteuning van deze nieuwe functionaliteit moet de app deelnemen om gebruikersaccounts te kunnen registreren voor beheer. Volg deze stappen om de nieuwe API's te gebruiken:
 
 1. Gebruik de nieuwste versie van de Intune App SDK, die het beheer van apps met of zonder apparaatinschrijving ondersteunt.
 
@@ -299,7 +296,7 @@ Apps waarbij de gebruiker niet wordt aangemeld met ADAL kunnen nog wel app-bevei
 
 ```
 
-Door deze methode aan te roepen, vraagt de SDK de gebruiker om referenties als er geen token wordt gevonden. De SDK probeert dan de app bij de APP-WE-service in te schrijven namens het opgegeven gebruikersaccount. De methode kan worden aangeroepen met ‘nil’ als identiteit. In dat geval zal de SDK een inschrijving uitvoeren met de bestaande beheerde gebruiker op het apparaat, of zal de gebruiker worden gevraagd een gebruikersnaam op te geven als er geen bestaande gebruiker is gevonden.
+Door deze methode aan te roepen, vraagt de SDK de gebruiker om referenties als er geen token wordt gevonden. De SDK probeert dan de app bij de APP-WE-service in te schrijven namens het opgegeven gebruikersaccount. De methode kan worden aangeroepen met 'nil' als identiteit. In dat geval zal de SDK een inschrijving uitvoeren met de bestaande beheerde gebruiker op het apparaat, of zal de gebruiker worden gevraagd een gebruikersnaam op te geven als er geen bestaande gebruiker is gevonden.
 
 Als de inschrijving mislukt, moet de app overwegen om deze API op een later tijdstip opnieuw aan te roepen, afhankelijk van de foutinformatie. De app kan via een gemachtigde [meldingen](#Status-result-and-debug-notifications) ontvangen over de resultaten van een inschrijvingsaanvraag.
 
@@ -421,7 +418,7 @@ De **isSaveToAllowedForLocation**-API biedt constanten om te controleren of de I
 
 Apps moeten de constanten in de **isSaveToAllowedForLocation**-API gebruiken om te controleren of gegevens kunnen worden opgeslagen op locaties die als 'beheerd' worden beschouwd, zoals OneDrive voor Bedrijven, of als 'persoonlijk'. Daarnaast moet de API worden gebruikt wanneer de app niet kan controleren of een locatie wordt 'beheerd' of 'persoonlijk' is.
 
-Locaties die bekend zijn als 'persoonlijk’ worden vertegenwoordigd door de `IntuneMAMSaveLocationOther`-constante.
+Locaties die bekend zijn als 'persoonlijk' worden vertegenwoordigd door de `IntuneMAMSaveLocationOther`-constante.
 
 De `IntuneMAMSaveLocationLocalDrive`-constante moet worden gebruikt wanneer de app gegevens opslaat op een locatie op het lokale apparaat.
 
@@ -459,6 +456,17 @@ MAMTelemetryDisabled| Boolean-waarde| Hiermee wordt aangegeven dat de SDK geen t
 
 > [!NOTE]
 > Als uw app wordt gepubliceerd naar de App Store `MAMPolicyRequired` moet deze worden ingesteld op "Nee", volgens de App Store-standaarden.
+
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Op MAM gerichte configuratie inschakelen voor iOS-toepassingen
+Via een op MAM gerichte configuratie kan een app configuratiegegevens ontvangen via de Intune App SDK. De indeling en varianten van deze gegevens moeten door de eigenaar/ontwikkelaar van de toepassing worden gedefinieerd en gecommuniceerd aan de klanten van Intune. Intune-beheerders kunnen configuratiegegevens gericht implementeren via de Intune-console van Azure. Vanaf de Intune App SDK voor iOS (versie 7.0.1) kunnen apps die deelnemen aan op MAM gerichte configuratie, op MAM gerichte configuratiegegevens ontvangen via de MAM-service. De configuratiegegevens van de toepassing worden via onze MAM-service direct naar de app gepusht en niet via het MDM-kanaal. De Intune App SDK biedt een klasse voor toegang tot gegevens die uit deze consoles worden opgehaald. Houd rekening met de volgende vereisten: <br>
+* De app moet worden geregistreerd bij MAM-WE voordat u toegang krijgt tot de gebruikersinterface van op MAM gerichte configuratie. Meer informatie over MAM-WE vindt u in de paragraaf [App-beveiligingsbeleid zonder apparaatrinschrijving in de ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* Voeg ```IntuneMAMAppConfigManager.h``` toe aan het bronbestand van uw app.
+* Verstuur een aanroep naar ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` om het AppConfig-object op te halen.
+* Verstuur een aanroep naar de juiste selector voor het object ```IntuneMAMAppConfig```. Als de sleutel van uw toepassing bijvoorbeeld een tekenreeks is, moet u ```stringValueForKey``` of ```allStringsForKey``` gebruiken. Het bestand ```IntuneMAMAppConfig.h header``` bevat informatie over geretourneerde waarden/foutcondities.
+
+Zie het onderwerp over [op MAM gerichte configuratie in de Engelstalige Graph API-naslaghandleiding](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie over de mogelijkheden van Graph API met betrekking tot de op MAM gerichte configuratiewaarden. <br>
+
+Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in iOS, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios) (App-configuratiebeleid van Microsoft Intune voor iOS gebruiken).
 
 ## <a name="telemetry"></a>Telemetrie
 
@@ -510,7 +518,7 @@ Apps kunnen echter de identiteit van de bestandseigenaar ook expliciet instellen
 
 ### <a name="shared-data"></a>Gedeelde gegevens
 
-Als de app bestanden maakt die gegevens van beheerde en onbeheerde gebruikers bevatten, is het de verantwoordelijkheid van de app om de gegevens van de beheerde gebruiker te versleutelen. U kunt gegevens versleutelen met de API’s `protect` en `unprotect` in `IntuneMAMDataProtectionManager`.
+Als de app bestanden maakt die gegevens van beheerde en onbeheerde gebruikers bevatten, is het de verantwoordelijkheid van de app om de gegevens van de beheerde gebruiker te versleutelen. U kunt gegevens versleutelen met de API's `protect` en `unprotect` in `IntuneMAMDataProtectionManager`.
 
 De methode `protect` accepteert een identiteit, die een beheerde of een niet-beheerde gebruiker kan zijn. Als het een beheerde gebruiker is, worden de gegevens versleuteld. Als het een niet-beheerde gebruiker is, wordt een header toegevoegd aan de gegevens waarmee de identiteit wordt gecodeerd, maar worden de gegevens niet versleuteld. U kunt de methode `protectionInfo` gebruiken voor het ophalen van de eigenaar van de gegevens.
 
@@ -602,7 +610,7 @@ Hier volgen enkele aanbevolen procedures voor het ontwikkelen voor iOS:
 
 **Zijn alle API's adresseerbaar via systeemeigen Swift of via de interoperabiliteit tussen Objective-C en Swift?**
 
-De Intune App SDK-API’s zijn alleen beschikbaar in Objective-C en bieden geen ondersteuning voor het **systeemeigen** Swift. Swift-interoperabiliteit met Objective-C is vereist.
+De Intune App SDK-API's zijn alleen beschikbaar in Objective-C en bieden geen ondersteuning voor het **systeemeigen** Swift. Swift-interoperabiliteit met Objective-C is vereist.
 
 
 **Moeten alle gebruikers van mijn app worden geregistreerd bij de APP-WE-service?**
@@ -656,4 +664,3 @@ Zowel de statische bibliotheek als de frameworkbuilds van de Intune App SDK zijn
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     De eerste opdracht verwijdert de simulatorarchitecturen uit het bestand DYLIB van het framework. Met de tweede opdracht wordt het bestand DYLIB dat uitsluitend voor apparaten is bestemd, terug gekopieerd naar de frameworkmap.
-

@@ -29,10 +29,13 @@ Bij automatische registratie kunnen gebruikers hun Windows 10-apparaten registre
 
    ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 
-5. Gebruik de standaardwaarden voor de volgende URL’s:
+5. Gebruik de standaardwaarden voor de volgende URL's:
     - **URL voor MDM-gebruiksvoorwaarden**
     - **Detectie-URL voor MDM**
     - **URL van MDM-naleving**
+
+    > [!IMPORTANT]
+    > Als een gebruiker lid is van een groep waarvoor zowel automatische MDM-inschrijving als MAM is ingeschakeld, en de gebruiker probeert een persoonlijk apparaat toe te voegen aan de werkplek, is daarna alleen MAM nog ingeschakeld. 
 
 6. Selecteer **Opslaan**.
 
