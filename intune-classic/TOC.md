@@ -1,12 +1,6 @@
 # Begrijpen en verkennen
 ## [Inleiding tot Intune](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [Intune voor onderwijs](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [Registreren voor een gratis proefversie](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [Intune MDM evalueren](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [Groepen maken om gebruikers en apparaten te organiseren](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Beleid maken en een app publiceren](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Andere opties en extra's](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Overstappen op een betaald abonnement](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Veelgestelde vragen over MAM en app-beveiliging](understand-explore/mam-faq.md)
 ## [Algemene scenario's](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
