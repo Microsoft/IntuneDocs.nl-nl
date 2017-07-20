@@ -1,6 +1,6 @@
 ---
 title: Intune-basisconfiguratie
-description: In dit artikel wordt beschreven wat de benodigde stappen zijn voor het configureren van Microsoft Intune.
+description: In dit artikel wordt beschreven wat de benodigde stappen zijn voor het instellen van Microsoft Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,44 +13,39 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>Basisconfiguratie
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Nadat u uw omgeving hebt geëvalueerd, is het tijd om Intune te configureren.
+Nadat u uw omgeving hebt geëvalueerd, is het tijd om Intune in te stellen.
 
 ## <a name="external-dependencies-for-an-intune-deployment"></a>Externe afhankelijkheden voor een Intune-implementatie
 
 ### <a name="identity"></a>Identiteit
 
-Voor Intune is Azure Active Directory (Azure AD) vereist als id- en gebruikersgroepprovider.
+Voor Intune is Azure Active Directory (Azure AD) vereist als id- en gebruikersgroepprovider. Meer informatie over:
 
--   Meer informatie over [id-vereisten](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+-  [Identiteitsvereisten](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   Meer informatie over [adreslijstsynchronisatie](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+-   [Adreslijstsynchronisatie](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   Meer informatie over [vereisten voor Multi-Factor Authentication](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+-   [Meervoudige authenticatie (MFA)-vereisten](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   Meer informatie over [het plannen van gebruikers- en apparaatgroepen](/intune/users-permissions-add).
+-   [Gebruikers- en apparaatgroepen plannen](users-add.md)
 
--   Informatie over [het maken van gebruikers- en apparaatgroepen](/intune/groups-get-started).
+-   [Gebruikers- en apparaatgroepen maken](groups-get-started.md)
 
-Als uw organisatie al met Office 365 werkt, is het belangrijk dat Intune van dezelfde Azure Active Directory-omgeving gebruikmaakt.
+Als uw organisatie al met Office 365 werkt, moet Intune van dezelfde Azure Active Directory-omgeving gebruikmaken.
 
 ### <a name="pki-optional"></a>PKI (optioneel)
 
-Als u van plan bent om bij Intune verificatie op basis van certificaten te gebruiken voor VPN-, Wi-Fi- of e-mailprofielen, moet u ervoor zorgen dat u over een ondersteunde [PKI-infrastructuur](/intune/certificates-configure) beschikt waarmee certificaatprofielen kunnen worden gemaakt en geïmplementeerd.
+Als u van plan bent om bij Intune verificatie op basis van certificaten te gebruiken voor VPN-, Wi-Fi- of e-mailprofielen, moet u ervoor zorgen dat u over een ondersteunde [PKI-infrastructuur](certificates-configure.md) beschikt waarmee certificaatprofielen kunnen worden gemaakt en geïmplementeerd. Meer informatie over het configureren van certificaten in Intune:
 
-Hieronder vindt u meer informatie over het configureren van certificaten in Intune.
-
--   [De certificaatinfrastructuur voor SCEP configureren](/intune/certificates-scep-configure).
+-   [De certificaatinfrastructuur voor SCEP configureren](/intune/certificates-scep-configure)
 
 -   [De certificaatinfrastructuur voor PFX configureren](/intune/certficates-pfx-configure).
 
@@ -75,15 +70,15 @@ Voordat u naar Intune kunt migreren, moet u eerst beschikken over een Intune-abo
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Taak 3: de MDM-instantie instellen op Intune
 
-Intune kan worden beheerd via Azure Portal of de Configuration Manager Current Branch-console. Tenzij u Intune wilt integreren met een Configuration Manager Current Branch-implementatie, kunt u Intune het beste beheren via [Azure Portal](https://portal.azure.com).
+Intune kan worden beheerd via Azure Portal of de Configuration Manager Current Branch-console. Tenzij u Intune wilt integreren met een Configuration Manager Current Branch-implementatie, raden we u aan Intune te beheren via de [Azure Portal](https://portal.azure.com).
 
 Stel de MDM-instantie in op **Intune** om Intune Azure Portal in te schakelen. Door het gebruik van een andere MDM-instantie kan Intune het MDM-beheer overdragen aan andere Microsoft-beheerconsoles. Deze gevallen zijn niet gebruikelijk.
 
 > [!IMPORTANT]
 > Als u het beheer van mobiele apparaten voor het eerst overdraagt aan Intune, moet u de MDM-instantie instellen op Intune.
 
--   Meer informatie over [het instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set).
+Meer informatie over [het instellen van de instantie voor het beheer van mobiele apparaten](mdm-authority-set.md).
 
 ## <a name="next-step"></a>Volgende stap
 
-[Beheerbeleid voor apparaten en apps configureren](migration-guide-configure-policies.md)
+[Beheerbeleid voor apparaten en apps configureren](migration-guide-configure-policies.md).

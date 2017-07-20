@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/28/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aae944c86029be6eaa111ce7c274a466095651d1
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Apps toevoegen met Microsoft Intune
 
@@ -37,7 +37,7 @@ Neemt u even de tijd om u in te lezen in de concepten die worden geïntroduceerd
 |**App-pakket voor iOS (&#42;.ipa)**|Als u iOS-apps wilt implementeren, moet u een geldig .ipa-pakket hebben.<br><br>Het .ipa-pakket moet zijn ondertekend door Apple en de vervaldatum in het inrichtingsprofiel moet geldig zijn. Intune kan iOS-toepassingen met een bedrijfscertificaat distribueren.<br><br>Niet alle apps met Apple-ontwikkelaarscertificaat worden ondersteund.<br><br>Uw bedrijf moet zijn geregistreerd voor het iOS Developer Enterprise Program.<br><br>Zorg ervoor dat de firewall van uw organisatie toegang geeft tot de inrichtings- en certificeringswebsites voor iOS.<br><br>U hoeft geen manifestbestand (.plist) te implementeren met de app.|
 |**App-pakket voor Windows Phone (&#42;.xap, .appx, .appxbundle)**|Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows Phone-beheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**App-pakket voor Windows (.appx, .appxbundle)**|Als u apps wilt implementeren, hebt u een bedrijfscertificaat voor handtekeningen bij programmacode nodig. Voor meer informatie gaat u naar [Windows-apparaatbeheer instellen met Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
-|**Windows Installer via MDM (&#42;.msi)**|Met deze app kunt u op Windows Installer gebaseerde apps maken en implementeren op geregistreerd pc’s waarop Windows 10 wordt uitgevoerd. Deze pc's worden beheerd via Mobile Device Management (MDM).<br /><br />U kunt slechts één bestand met de extensie .msi uploaden.<br><br>De productcode en -versie van het bestand worden gebruikt voor detectie van de app.<br><br>Het standaardgedrag voor opnieuw opstarten van de app wordt gebruikt. Intune heeft hierop geen invloed.<br><br>MSI-pakketten per gebruiker worden voor één gebruiker geïnstalleerd.<br><br>MSI-pakketten per computer worden voor alle gebruikers op het apparaat geïnstalleerd.<br><br>Dual-mode MSI-pakketten voeren momenteel alleen installaties voor alle gebruikers op het apparaat uit.<br><br>App-updates worden ondersteund wanneer de MSI-productcode van elke versie dezelfde is.<br>
+|**Windows Installer via MDM (&#42;.msi)**|Met deze app kunt u op Windows Installer gebaseerde apps maken en implementeren op geregistreerd pc’s waarop Windows 10 wordt uitgevoerd. Deze pc's worden beheerd via Mobile Device Management (MDM).<br /><br />U kunt slechts één bestand met de extensie .msi uploaden.<br><br>De productcode en -versie van het bestand worden gebruikt voor detectie van de app.<br><br>Het standaardgedrag voor opnieuw opstarten van de app wordt gebruikt. Intune heeft op dit gedrag geen invloed.<br><br>MSI-pakketten per gebruiker worden voor één gebruiker geïnstalleerd.<br><br>MSI-pakketten per computer worden voor alle gebruikers op het apparaat geïnstalleerd.<br><br>Dual-mode MSI-pakketten voeren momenteel alleen installaties voor alle gebruikers op het apparaat uit.<br><br>App-updates worden ondersteund wanneer de MSI-productcode van elke versie dezelfde is.<br>
 Alle typen software-installatieprogramma-apps worden geüpload naar uw opslagruimte in de cloud.
 
 ### <a name="external-link"></a>**Externe koppeling**
@@ -61,7 +61,7 @@ De Uitgever van Microsoft Intune-software wordt gestart wanneer u apps aan de In
 Voordat u begint met het gebruik van de software-uitgever, moet u de volledige versie van [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) installeren. Na de installatie moet u uw computer mogelijk opnieuw opstarten voordat de software-uitgever correct wordt geopend.
 
 ## <a name="cloud-storage-space"></a>Cloudopslag
-Alle apps die u maakt met het installatietype van het software-installatieprogramma (bijvoorbeeld een Line-Of-Business-app), worden verpakt en geüpload naar Microsoft Intune-cloudopslag. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. Uw volledige abonnement omvat 20 GB aan opslagruimte.
+Alle apps die u maakt met behulp van het installatietype van het software-installatieprogramma, moeten naar Microsoft Intune-cloudopslag worden geüpload. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. Uw volledige abonnement omvat 20 GB aan opslagruimte.
 
 In het knooppunt **Opslaggebruik** van de werkruimte **Beheer** kunt u zien hoeveel ruimte u gebruikt. U kunt extra opslagruimte kopen voor Intune met uw oorspronkelijke aankoop-methode.  Als u hebt betaald via een factuur of met een creditcard, gaat u naar de [Beheerportal abonnementen](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Neem anders contact op met uw partner of verkoopassistent.
 
@@ -83,8 +83,8 @@ Op Windows 10 Mobile-apparaten kunt u een certificaat voor de ondertekening van 
 ### <a name="dependencies-for-uwp-apps"></a>Afhankelijkheden voor UWP-apps
 
 Wanneer u een pakket met Windows 10 Universal-appxbundle aan Intune toevoegt, moet u er ook voor zorgen dat eventuele afhankelijkheden voor de app worden geüpload.
-U doet dit door ervoor te zorgen dat de map **Afhankelijkheden** die is gemaakt tijdens het bouwen van de app, zich in dezelfde map bevindt als het appxbundle-bestand zelf.
-Zodoende worden alle bestande in de map **Afhankelijkheden** ook geüpload wanneer u de app uploadt naar Intune. Dit kan worden geïllustreerd aan de hand van de volgende schermafbeelding:
+Om afhankelijkheden te uploaden, moet u ervoor zorgen dat de map **Afhankelijkheden** die is gemaakt tijdens het bouwen van de app, zich in dezelfde map bevindt als het appxbundle-bestand zelf.
+Zodoende worden alle bestanden in de map **Afhankelijkheden** ook geüpload wanneer u de app uploadt naar Intune. Dit proces kan worden geïllustreerd aan de hand van de volgende schermafbeelding:
 
 
 ![appxbundle-afhankelijkheden voor Windows 10 UWP selecteren](./media/w10-dependencies.png)
@@ -92,4 +92,4 @@ Zodoende worden alle bestande in de map **Afhankelijkheden** ook geüpload wanne
 
 ## <a name="next-steps"></a>Volgende stappen
 
-U moet apps aan de Intune-console toevoegen voordat u ze kunt implementeren. U kunt apps toevoegen voor [geregistreerde apparaten](add-apps-for-mobile-devices-in-microsoft-intune.md), of voor [Windows-pc's die u met de Intune-clientsoftware beheert](add-apps-for-windows-pcs-in-microsoft-intune.md).
+U voegt apps toe aan de Intune-console voordat u ze kunt implementeren. U kunt apps toevoegen voor [geregistreerde apparaten](add-apps-for-mobile-devices-in-microsoft-intune.md), of voor [Windows-pc's die u met de Intune-clientsoftware beheert](add-apps-for-windows-pcs-in-microsoft-intune.md).
