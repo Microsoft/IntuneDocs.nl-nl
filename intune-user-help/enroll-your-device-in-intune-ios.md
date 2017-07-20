@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,27 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Uw iOS-apparaat inschrijven bij Intune
 
 Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-apparaat registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw IT-afdeling deze werk- of schoolbronnen beheren en veilig houden, en beschikt u over de vrijheid om het apparaat van uw voorkeur te gebruiken voor uw werk. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat inschrijf bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie over inschrijving.
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > Als u een macOS-apparaat probeert te registreren, zoals een MacBook Pro of iMac, [volgt u in plaats daarvan deze instructies](enroll-your-device-in-intune-macos.md).
 
 **Voordat u begint:**
 
-- Zorg ervoor dat u de registratie voltooit nadat u de stappen hebt gestart. Het proces stopt gewoonlijk wanneer het meer dan enkele minuten wordt onderbroken, waarna het opnieuw moet worden gestart.
-- Als uw inschrijving om welke reden dan ook mislukt, keert u terug naar de bedrijfsportal-app en probeert u het opnieuw.
+- Zorg ervoor dat u de registratie voltooit nadat u de stappen hebt gestart. Het proces stopt gewoonlijk wanneer het meer dan enkele minuten wordt onderbroken, waarna u het opnieuw moet starten.
+- Als uw registratie om welke reden dan ook mislukt, keert u terug naar de bedrijfsportal-app en probeert u het opnieuw.
 - Zorg ervoor dat uw Wi-Fi werkt. Anders mislukt de registratie.
-- Als u Safari op het apparaat hebt geblokkeerd, moet u Safari weer deblokkeren. U moet Safari gebruiken voor de registratie.
+- Als u Safari op het apparaat hebt geblokkeerd, moet u Safari weer deblokkeren. Safari wordt gebruikt als onderdeel van het registratieproces van het apparaat.
 
 
 **Ga als volgt te werk om uw iOS-apparaat te registreren:**
@@ -51,8 +51,8 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-appara
 
     ![IOS-registreren-waarom-registreren](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
+  > [!NOTE]
+  > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
 
 4. Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien als u het apparaat registreert, en tik vervolgens op **Doorgaan**.
 
@@ -88,7 +88,7 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-appara
 
     ![IOS-registreren-open-bedrijfsportal](./media/ios-enroll-7-open-cp.png)
 
-12. Tik in het scherm **Instellen van bedrijfstoegang** op **Doorgaan**. Als uw IT-beheerder aanvullende beveiligingseisen heeft ingesteld, zoals de noodzaak om een wachtwoord in te stellen, voert u de instructies op uw scherm uit totdat u aan alle nalevingsvereisten voldoet, keert u terug naar het scherm Instellen van bedrijfstoegang en tikt u vervolgens op **Doorgaan**.
+12. Tik in het scherm **Instellen van bedrijfstoegang** op **Doorgaan**. Op dit scherm ziet u aan welke andere vereisten u wellicht moet voldoen om ervoor zorgen dat uw apparaat compatibel is, zoals het instellen van een wachtwoord. Volg de aanwijzingen op het scherm totdat u voldoet aan alle nalevingsvereisten. Wanneer u klaar bent, keert u terug naar het scherm Instellen van bedrijfstoegang. Tik op **Doorgaan**.
 
     ![IOS-registreren-bedrijfstoegang-tik-op-doorgaan](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +99,6 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-appara
 Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsportal-app.
 
 > [!Note]
-> Als uw organisatie gebruikmaakt van Telecom Expense Management-software, zijn er een aantal aanvullende stappen die u moet doorlopen om uw apparaat volledig in te schrijven. Zie [hier](enroll-your-device-with-telecom-expense-management-ios.md) voor meer informatie.
+> U moet nog enkele extra stappen uitvoeren voordat het apparaat volledig is geregistreerd. Meer informatie over het [registreren van uw apparaat met Telecom-onkostenbeheer](enroll-your-device-with-telecom-expense-management-ios.md). Als uw organisatie Apple Device Enrollment Program gebruikt, meer, vindt u [hier](enroll-your-device-dep-ios.md) meer informatie.
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
