@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Configuratiebeleid van Microsoft Intune-apps gebruiken voor Android for Work
 
@@ -65,7 +65,7 @@ U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats 
 
 Het beleid wordt gemaakt en wordt weergegeven op de blade met de lijst met configuratiebeleidsregels.
 
-Ga vervolgens naar [Toewijzen](apps-deploy.md) en [bewaak](apps-monitor.md) de app als normaal.
+
 
 Wanneer de toegewezen app op een apparaat wordt uitgevoerd, worden de instellingen uitgevoerd die u in het configuratiebeleid voor de app hebt geconfigureerd.
 
@@ -89,3 +89,8 @@ U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-a
 8. Als u het configuratiebeleid voor apps wilt toewijzen, selecteert u het, selecteert u vervolgens **Toewijzing** en selecteert u ten slotte **Groepen selecteren**.
 9. Selecteer de gebruikersgroepen waaraan u het beleid wilt toewijzen en kies vervolgens **Selecteren**.
 10. Kies **Opslaan** om het beleid toe te wijzen.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Ga vervolgens als gebruikelijk door met [toewijzen](apps-deploy.md) en [bewaken](apps-monitor.md) van de app.
+
