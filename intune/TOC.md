@@ -183,13 +183,12 @@
 ### [Profielen controleren](device-profile-monitor.md)
 ### [Problemen met profielen oplossen](device-profile-troubleshoot.md)
 
-## [Apparaatcompatibiliteit instellen](device-compliance.md)
-### [Vereisten](device-compliance-get-started.md)
+## [Apparaatcompatibiliteit instellen](device-compliance-get-started.md)
 ### [Android-beleid maken](compliance-policy-create-android.md)
 ### [Android for Work-beleid maken](compliance-policy-create-android-for-work.md)
 ### [iOS-beleid maken](compliance-policy-create-ios.md)
+### [Mac OS-beleid maken](compliance-policy-create-mac-os.md)
 ### [Windows-beleid maken](compliance-policy-create-windows.md)
-### Acties voor niet-naleving maken
 ### [Apparaatcompatibiliteit bewaken](compliance-policy-monitor.md)
 
 ## [Voorwaardelijke toegang instellen](conditional-access.md)
