@@ -15,13 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1354d3170f007af2a4bf7f5b2f233a186175c621
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c6b05522c7390acb3974e088ecd60d13db46ef5a
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
+
+> [!NOTE] 
+> Dit onderwerp is van toepassing op alle Mobile Threat Defense-partners.
 
 Intune met MTD helpt u bij het detecteren van bedreigingen en het beoordelen van risico op mobiele apparaten. U kunt een Intune-nalevingsbeleidsregel maken voor een risicoanalyse waarmee wordt bepaald of het apparaat compatibel is. Vervolgens kunt u beleid voor voorwaardelijke toegang gebruiken om toegang tot services te blokkeren op basis van de apparaatcompatibiliteit.
 
@@ -57,7 +60,7 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
     c.  **Gemiddeld**: het apparaat is compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
 
-    d.  **Hoog**: dit is de minst veilige optie. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Skycure Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden.
+    d.  **Hoog**: dit is de minst veilige optie. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden. Op apparaten moet de MTD-app met deze instelling zijn geactiveerd.
 
 8.  Klik tweemaal op **OK** en kies vervolgens **Maken**.
 

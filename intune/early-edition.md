@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5eab3fb933b2999e23115091cf0ded3f140e114c
-ms.sourcegitcommit: f5c6e8b218431dc9a8d85464d7f58adebd048866
+ms.openlocfilehash: b8d281e3af2458bd5ab343dfa5123b31075d28ed
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2017"></a>De vroege editie voor Microsoft Intune - juli 2017
 
@@ -40,11 +40,11 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 
 
 
-## <a name="whats-coming-to-intune-on-the-azure-portal"></a>Wat er op stapel staat voor Intune in Azure Portal
+## <a name="intune-on-the-azure-portal"></a>Intune in Azure Portal
 
 ### <a name="easier-installation-of-office-365-apps-----1121362----"></a>Eenvoudigere installatie van Office 365-apps <!--- 1121362 --->
 Het nieuwe app-type **Office 365 ProPlus** maakt het eenvoudig voor u om Office 365 ProPlus-apps toe te wijzen aan apparaten die u beheert waarop de nieuwste versie van Windows 10 wordt uitgevoerd. Daarnaast kunt u Microsoft Project en Microsoft Visio installeren, als u licenties hebt voor deze producten. De gewenste apps worden gebundeld en worden als één app weergegeven in de lijst met apps in de Intune-console.
- 
+
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>Nieuwe apparaatactie om apparaten geforceerd te synchroniseren met Intune <!-- 711369 -->    
 We voegen een nieuwe apparaatactie toe die ervoor zorgt dat het geselecteerde apparaat direct wordt ingecheckt bij Intune. Wanneer een apparaat wordt ingecheckt, worden direct eventuele openstaande acties of toegewezen beleidsregels toegepast.  Met deze actie kunt u toegewezen beleid meteen controleren en in het geval van problemen direct aanpassen, zonder dat u hoeft te wachten op de volgende geplande check-in.
@@ -105,7 +105,7 @@ U kunt binnenkort een beleid voor voorwaardelijke toegang instellen waardoor Mac
 ### <a name="end-of-support-for-ios-80----1164477---"></a>Einde van ondersteuning voor iOS 8.0 <!---1164477--->
 Beheerde apps en de Intune-bedrijfsportal-app voor iOS vereisen iOS 9.0 en hoger voor toegang tot bedrijfsresources. Apparaten die niet voor september zijn bijgewerkt, hebben geen toegang meer tot de bedrijfsportal of beheerde apps. Vanaf december wordt alle toegang tot bedrijfsresources, inclusief e-mail, voorkomen. 
 
-### <a name="end-of-support-for-android-43-and-lower----1171127---"></a>Einde van ondersteuning voor Android 4.3 en lager <!---1171127--->
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Einde van ondersteuning voor Android 4.3 en lager <!---1171127, 1326920 --->
 Beheerde apps en de Intune-bedrijfsportal-app voor Android vereisen Android 4.4 en hoger voor toegang tot bedrijfsresources. Apparaten die niet voor begin van oktober zijn bijgewerkt, hebben geen toegang meer tot de bedrijfsportal of beheerde apps. Vanaf december worden alle ingeschreven apparaten verplicht buiten gebruik gesteld, waardoor bedrijfsresources niet meer toegankelijk zijn. Als u beleid voor app-beveiliging zonder MDM gebruikt, krijgen apps geen updates meer en neemt de gebruikservaring na verloop van tijd steeds verder af.
 
 
@@ -122,7 +122,7 @@ Het is raadzaam om in aanmerking komende Windows Phone 8.1-apparaten zo snel mog
 
 
 
-## <a name="whats-coming-to-intune-apps"></a>Binnenkort in de gebruikersinterface van Intune-apps
+## <a name="intune-apps"></a>Intune-apps
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbeterde aanmeldervaring in de bedrijfsportal-apps voor alle platformen <!--User Story 1132123-->    
 Dit is de aankondiging van een wijziging die in de komende maanden wordt geïntroduceerd en waarmee de aanmeldervaring wordt verbeterd voor apps in de Intune-bedrijfsportal voor Android, iOS en Windows. De nieuwe gebruikerservaring wordt automatisch toegepast op alle platformen voor de bedrijfsportal-app wanneer deze wijziging wordt doorgevoerd in Azure AD. Bovendien kunnen gebruikers nu zich aanmelden bij de bedrijfsportal vanaf een ander apparaat met een gegenereerde code voor eenmalig gebruik. Dit is vooral nuttig in gevallen wanneer gebruikers zich moeten aanmelden zonder referenties.

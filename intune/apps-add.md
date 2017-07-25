@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Een app toevoegen aan Microsoft Intune
 
@@ -79,34 +79,9 @@ Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan 
 
 ## <a name="apps-added-automatically-by-intune"></a>Apps die door Intune automatisch zijn toegevoegd
 
-De volgende apps zijn gepubliceerd door Microsoft, zijn ingebouwd in Intune en zijn klaar voor u om toe te wijzen:
-
-|||
-|-|-|
-|Naam|Platform|App-type|
-|Azure Information Protection|Android|Beheerde Android Store-app|
-|Dynamics CRM voor telefoons|Android|Beheerde Android Store-app|
-|Dynamics CRM voor tablets|Android|Beheerde Android Store-app|
-|Excel|iOS|Beheerde iOS Store-app|
-|Excel|Android|Beheerde Android Store-app|
-|Managed Browser|Android|Beheerde Android Store-app|
-|Managed Browser|iOS|Beheerde iOS Store-app|
-|Microsoft Dynamics CRM op telefoons|iOS|Beheerde iOS Store-app|
-|Microsoft Dynamics CRM op tablets|iOS|Beheerde iOS Store-app|
-|Microsoft Power BI|iOS|Beheerde iOS Store-app|
-|Microsoft Power BI|Android|Beheerde Android Store-app|
-|Microsoft SharePoint|iOS|Beheerde iOS Store-app|
-|Microsoft SharePoint|Android|Beheerde Android Store-app|
-|Microsoft Teams|Android|Beheerde Android Store-app|
-|Microsoft Teams|iOS|Beheerde iOS Store-app|
-|OneDrive|iOS|Beheerde iOS Store-app|
-|OneDrive|Android|Beheerde Android Store-app|
-|OneNote|iOS|Beheerde iOS Store-app|
-|Outlook|Android|Beheerde Android Store-app|
-|Outlook|iOS|Beheerde iOS Store-app|
-|Outlook-groepen|Android|Beheerde Android Store-app|
-|Outlook-groepen|iOS|Beheerde iOS Store-app|
-|PowerPoint|iOS|Beheerde iOS Store-app|
+Voorheen bevatte Intune een aantal ingebouwde apps die u snel kon toewijzen. Op basis van uw feedback is deze lijst verwijderd en krijgt u niet langer ingebouwde apps te zien.
+Als u echter al ingebouwde apps hebt toegewezen, dan zijn deze nog steeds zichtbaar in de lijst met apps. U kunt deze apps desgewenst blijven toewijzen.
+In een volgende release wordt een makkelijker methode toegevoegd voor het selecteren en toewijzen van ingebouwde apps vanuit de Intune-portal.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/11/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 560ce922fa58e759157358c6b7348fe0388ce408
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -40,7 +40,7 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 |**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |Niet beschikbaar|
 |**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender-instellingen](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
 |**Hulp op afstand** |TeamViewer<br>[Hulp op afstand voor Windows-pc's aanvragen en bieden](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|Niet beschikbaar |
-|**App-implementatie** | Niet beschikbaar voor Microsoft Store voor Bedrijven,<br>alleen .exe, .appx, en .msi die uit meerdere bestanden bestaat<br>[Apps toevoegen voor Windows-pc's met de Intune-softwareclient ](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Beschikbaar voor Microsoft Store-apps en Line-Of-Business-apps<br>[Windows Store-apps toevoegen](https://docs.microsoft.com/intune-azure/manage-apps/windows-store-app)<br>De implementatie van Microsoft-apps en Win32-apps die binnenkort beschikbaar zijn |
+|**App-implementatie** | Niet beschikbaar voor Microsoft Store voor Bedrijven,<br>alleen .exe, .appx, en .msi die uit meerdere bestanden bestaat<br>[Apps toevoegen voor Windows-pc's met de Intune-softwareclient ](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Beschikbaar voor Microsoft Store-apps en Line-Of-Business-apps<br>[Windows Store-apps toevoegen](https://docs.microsoft.com/intune/store-apps-windows)<br>[Windows-Line-Of-Business (LOB)-apps toevoegen](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**App-beveiliging**|Niet beschikbaar|Beschikbaar <br>[Wat zijn beleidsregels voor de beveiliging van apps?](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
 
 

@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -49,15 +49,25 @@ In deze handleiding wordt ingegaan op het gebruik van de volgende onderdelen van
 
 * **IntuneMAMResources.bundle**: een bundel met resources waarvan de SDK afhankelijk is.
 
-* **Headers**: beschrijft de Intune App SDK-API's. Als u een API gebruikt, moet u het headerbestand met de API opnemen. De volgende headerbestanden omvatten de API-functieaanroepen die zijn vereist om de functionaliteit van de Intune App SDK in te schakelen:
+* **Headers**: beschrijft de Intune App SDK-API's. Als u een API gebruikt, moet u het headerbestand met de API opnemen. De volgende header-bestanden bevatten de API's, gegevenstypen en protocollen die de Intune App SDK beschikbaar maken voor ontwikkelaars:
 
-    * IntuneMAMAsyncResult.h
+    * IntuneMAMAppConfig.h
+    * IntuneMAMAppConfigManager.h
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
+    * IntuneMAMDefs.h
+    * IntuneMAMEnrollmentDelegate.h
+    * IntuneMAMEnrollmentManager.h
+    * IntuneMAMEnrollmentStatus.h
     * IntuneMAMFileProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
-    * IntuneMAMPolicyDelegate.h
     * IntuneMAMLogger.h
+    * IntuneMAMPolicy.h
+    * IntuneMAMPolicyDelegate.h
+    * IntuneMAMPolicyManager.h
+    * IntuneMAMVersionInfo.h
+    
+Ontwikkelaars kunnen de inhoud van de bovenstaande headers beschikbaar maken door IntuneMAM.h te importeren
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>De werking van de Intune App SDK
@@ -144,11 +154,13 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
     > [!NOTE]
     > Een rechtenbestand is een uniek XML-bestand voor uw mobiele toepassing. Het wordt gebruikt om speciale machtigingen en mogelijkheden in uw iOS-app op te geven.
 
-7. Als er voor de app URL-schema's in het info.plist-bestand zijn gedefinieerd, voegt u een ander schema toe, met het achtervoegsel `-intunemam` voor elk URL-schema.
+8. Als er voor de app URL-schema's in het info.plist-bestand zijn gedefinieerd, voegt u een ander schema toe, met het achtervoegsel `-intunemam` voor elk URL-schema.
 
-8. Voor mobiele apps die met iOS 9+ zijn ontwikkeld, neemt u elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL`, op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Daarnaast moet u voor elk weergegeven protocol een nieuw protocol toevoegen met het achtervoegsel `-intunemam`. U moet ook `http-intunemam`, `https-intunemam`en `ms-outlook-intunemam` in de matrix opnemen.
+9. Als in de app documenttypen in het bestand Info.plist worden gedefinieerd, voegt u voor elke Document Content Type UTIs-matrix van het item een dubbele vermelding toe voor elke tekenreeks met het voorvoegsel 'com.microsoft.intune.mam'.
 
-9. Als er app-groepen in de rechten voor de app zijn gedefinieerd, voegt u deze groepen toe aan de woordenlijst **IntuneMAMSettings** onder de sleutel `AppGroupIdentifiers` als een matrix met tekenreeksen.
+10. Voor mobiele apps die met iOS 9+ zijn ontwikkeld, neemt u elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL`, op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Daarnaast moet u voor elk weergegeven protocol een nieuw protocol toevoegen met het achtervoegsel `-intunemam`. U moet ook `http-intunemam`, `https-intunemam`en `ms-outlook-intunemam` in de matrix opnemen.
+
+11. Als er app-groepen in de rechten voor de app zijn gedefinieerd, voegt u deze groepen toe aan de woordenlijst **IntuneMAMSettings** onder de sleutel `AppGroupIdentifiers` als een matrix met tekenreeksen.
 
 
 
