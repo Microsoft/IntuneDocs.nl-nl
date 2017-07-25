@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -55,25 +55,25 @@ Intune ondersteunt nu het uploaden van serienummers van iOS-, macOS- en Android-
 
 ### <a name="device-management"></a>Apparaatbeheer
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>Nieuwe externe acties voor iOS-apparaten <!-- 854689 -->
-In deze release hebben we twee nieuwe externe acties voor iOS-apparaten toegevoegd:
+In deze release zijn twee nieuwe acties voor externe apparaten toegevoegd voor gedeelde iPad-apparaten die de Apple Classroom-app beheren:
 
 -   [Huidige gebruiker afmelden](device-logout-user.md): hiermee kunt u de huidige gebruiker afmelden van een iOS-apparaat dat u kiest.
 -   [Gebruiker verwijderen](device-remove-user.md): hiermee kunt u een gebruiker verwijderen uit de lokale cache op een iOS-apparaat.
 
-
-Met behulp van deze externe acties kunnen beheerders de gebruikersaccounts beheren die zijn opgeslagen in de cache op een gedeelde iPad en ook de gebruiker afmelden die momenteel is aangemeld bij het apparaat.
-
-Tijdens de registratie bepaalt de beheerder het maximum aantal gebruikersaccounts dat kan worden opgeslagen in de cache van een apparaat. Met de actie Gebruiker verwijderen kunnen beheerders specifieke gebruikers verwijderen die in de cache zijn opgeslagen.
-
-De actie Huidige gebruiker afmelden is bedoeld om de gebruiker af te melden die momenteel bij het apparaat is aangemeld. Deze actie vindt u bovenaan de blade met het overzicht van het apparaat, waar apparaatacties altijd worden weergegeven.
-
-Met de actie Gebruiker verwijderen wordt een opgegeven gebruiker verwijderd uit de lokale cache van het apparaat. Voor deze actie kiest u Bewaken > Gebruikers en klikt u met de rechtermuisknop op een specifieke gebruiker in de lijst. Gegevens die zijn gekoppeld aan het gebruikersaccount en die niet zijn gesynchroniseerd, gaan verloren. Het kan overigens maximaal 24 uur duren voordat de lijst met gebruikers is bijgewerkt en de verwijderde gebruiker niet meer wordt vermeld.
 
 #### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>Ondersteuning voor gedeelde iPads met de iOS-app Classroom <!-- 1044681 -->
 In deze release is de ondersteuning voor het beheren van de iOS-app Classroom uitgebreid naar studenten die zich met hun beheerde Apple ID aanmelden bij gedeelde iPads.
 
 
 ### <a name="app-management"></a>Appbeheer  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Wijzigingen aan in Intune ingebouwde apps <!-- 1332306 -->
+
+Voorheen bevatte Intune een aantal ingebouwde apps die u snel kon toewijzen. Op basis van uw feedback is deze lijst verwijderd en krijgt u niet langer ingebouwde apps te zien.
+Als u echter al ingebouwde apps hebt toegewezen, dan zijn deze nog steeds zichtbaar in de lijst met apps. U kunt deze apps desgewenst blijven toewijzen.
+In een volgende release wordt een makkelijker methode toegevoegd voor het selecteren en toewijzen van ingebouwde apps vanuit de Intune-portal.
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>Ondersteuning voor offline apps uit de Windows Store voor Bedrijven <!--- 777044 --->
 Offline-apps die u hebt gekocht in de Windows Store voor Bedrijven worden voortaan gesynchroniseerd met de Intune-portal. Vervolgens kunt u deze apps implementeren naar apparaat- of gebruikersgroepen. Offline apps worden geïnstalleerd door Intune en niet door de store.
 
@@ -113,7 +113,7 @@ Zie [Instellingen voor apparaatbeperking van Windows 10 en hoger](device-restric
 
 ## <a name="week-of-june-12-2017"></a>Week van 12 juni 2017
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>De Intune-bedrijfsportal-app voor Android heeft een nieuwe interface voor app-beveiligingsbeleid<!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>De Intune-bedrijfsportal-app voor Android heeft een nieuwe interface voor app-beveiligingsbeleid <!--1305217-->
 Op basis van feedback van klanten hebben we de Intune-bedrijfsportal-app voor Android aangepast en de knop **Toegang verkrijgen tot bedrijfsinhoud** toegevoegd. De reden hiervoor is dat eindgebruikers dan niet onnodig het registratieproces moeten doorlopen wanneer ze alleen toegang nodig hebben tot apps die ondersteuning bieden voor app-beveiligingsbeleid, een functie van Intune Mobile Application Management. U kunt deze wijzigingen zien op [deze pagina](whats-new-app-ui.md).
 
 ### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>Nieuwe menu-actie voor het eenvoudig verwijderen van de bedrijfsportal <!--1164569-->
@@ -266,12 +266,16 @@ De bestaande MAM-beheerdersrollen (Mobile Application Management), namelijk Inze
 
 ## <a name="whats-coming"></a>Binnenkort
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Einde van ondersteuning voor Android 4.3 en lager <!---1171127, 1326920 --->
+Beheerde apps en de Intune-bedrijfsportal-app voor Android vereisen Android 4.4 en hoger voor toegang tot bedrijfsresources. Apparaten die niet voor begin van oktober zijn bijgewerkt, hebben geen toegang meer tot de bedrijfsportal of beheerde apps. Vanaf december worden alle ingeschreven apparaten verplicht buiten gebruik gesteld, waardoor bedrijfsresources niet meer toegankelijk zijn. Als u beleid voor app-beveiliging zonder MDM gebruikt, krijgen apps geen updates meer en neemt de gebruikservaring na verloop van tijd steeds verder af.
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>Herinnering voor platformondersteuning: de algemene ondersteuning voor Windows Phone 8.1 stopt op 11 juli 2017
 <!-- 1327781 -->
 
 Op 11 juli 2017 stopt de algemene ondersteuning voor het Windows Phone 8.1-platform. De ondersteuning voor Windows 8.1 voor pc's loopt gewoon door.
 
-Er zijn geen directe gevolgen voor een apparaat met Windows Phone 8.1 dat wordt beheerd door de Intune-service. Apparaten die zijn ingeschreven, blijven gewoon werken en alle beleidsregels, configuraties en apps blijven eveneens werken zoals verwacht. Het is wel zo dat er geen verbeteringen meer worden aangebracht aan het Windows Phone 8.1-platform in de Intune-service, en evenmin voor de Intune-bedrijfsportal-app voor Windows Phone 8.1. 
+Er zijn geen directe gevolgen voor een apparaat met Windows Phone 8.1 dat wordt beheerd door de Intune-service. Apparaten die zijn ingeschreven, blijven gewoon werken en alle beleidsregels, configuraties en apps blijven eveneens werken zoals verwacht. Het is wel zo dat er geen verbeteringen meer worden aangebracht aan het Windows Phone 8.1-platform in de Intune-service, en evenmin voor de Intune-bedrijfsportal-app voor Windows Phone 8.1.
 
 Het is raadzaam om in aanmerking komende Windows Phone 8.1-apparaten zo snel mogelijk te upgraden naar Windows 10 Mobile. 
 

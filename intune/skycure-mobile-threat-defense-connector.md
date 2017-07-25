@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-connector
 
@@ -115,14 +115,10 @@ Ga naar de [Skycure-website](https://www.skycure.com/skycure-microsoft-integrati
 
 Hier volgen de stappen die u moet uitvoeren om Intune met Skycure te integreren:
 
-1.  [Skycure configureren voor het gebruik van de eenmalige aanmelding voor Azure Active Directory](skycure-azure-sso-configure.md)
+1.  [Skycure-apps, Microsoft Authenticator en het configuratiebeleid voor iOS-apps toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [Het configuratiebeleid voor de iOS-app voor Skycure downloaden](skycure-ios-app-configuration-policy-download.md)
+2.  [De integratie van Skycure met Intune instellen](skycure-mtd-connector-integration.md)
 
-3.  [Skycure-apps, Microsoft Authenticator en het configuratiebeleid voor iOS-apps toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [De Skycure MTD-connector in Intune inschakelen](mtd-connector-enable.md)
 
-4.  [De integratie van Skycure met Intune instellen](skycure-mtd-connector-integration.md)
-
-5.  [Skycure Mobile Threat Defense inschakelen in Intune](mtd-connector-enable.md)
-
-6.  [Skycure Mobile Threat Defense-nalevingsbeleid voor apparaten maken in Intune](mtd-device-compliance-policy-create.md)
+4.  [Skycure-nalevingsbeleid voor apparaten maken met Intune](mtd-device-compliance-policy-create.md)
