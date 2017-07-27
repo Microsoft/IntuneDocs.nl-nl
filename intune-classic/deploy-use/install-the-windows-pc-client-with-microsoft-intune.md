@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>De Intune-softwareclient installeren op Windows-pc's
 
@@ -43,11 +43,11 @@ Voor alle methoden, behalve die waarbij gebruikers de Intune-clientsoftware zelf
 
   ![De Intune-pc-client downloaden](../media/pc-sa-client-download.png)
 
-2.  Klik op de pagina **Clientsoftware downloaden** op **Clientsoftware downloaden**. Sla het pakket **Microsoft_Intune_Setup.zip** met de software vervolgens op een beveiligde locatie op uw netwerk op.
+2. Klik op de pagina **Clientsoftware downloaden** op **Clientsoftware downloaden**. Sla het pakket **Microsoft_Intune_Setup.zip** met de software vervolgens op een beveiligde locatie op uw netwerk op.
 
-Het installatiepakket voor de Intune-clientsoftware bevat unieke en specifieke informatie over uw account, die beschikbaar is via een ingesloten certificaat. Als niet-gemachtigde gebruikers toegang krijgen tot het installatiepakket, kunnen ze pc’s inschrijven bij het account van het certificaat dat is ingesloten in het pakket en krijgen ze mogelijk toegang tot bedrijfsbronnen.
+  Het installatiepakket voor de Intune-clientsoftware bevat unieke en specifieke informatie over uw account, die beschikbaar is via een ingesloten certificaat. Als niet-gemachtigde gebruikers toegang krijgen tot het installatiepakket, kunnen ze pc’s inschrijven bij het account van het certificaat dat is ingesloten in het pakket en krijgen ze mogelijk toegang tot bedrijfsbronnen.
 
-3.  Pak de inhoud van het installatiepakket uit naar een beveiligde locatie in het netwerk.
+3. Pak de inhoud van het installatiepakket uit naar een beveiligde locatie in het netwerk.
 
     > [!IMPORTANT]
     > Hernoem of verwijder het uitgepakte bestand **ACCOUNTCERT** niet, anders mislukt de installatie van de clientsoftware.
@@ -198,13 +198,10 @@ Voer vanaf een opdrachtprompt met verhoogde bevoegdheid een van de volgende opdr
 
 **Methode 1**:
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **Methode 2**<br>Al deze agents zijn geïnstalleerd op elke SKU van Windows:
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Voer vanaf een opdrachtprompt met verhoogde bevoegdheid een van de volgende opdr
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > Na de uitschrijving blijft er een verouderde record voor de betrokken client achter op de server. Het uitschrijven is een asynchroon proces dat voor negen agents moet worden uitgevoerd, en kan dus tot wel 30 minuten duren.
@@ -255,10 +251,8 @@ Ga naar "%ProgramFiles%\Microsoft\OnlineManagement" en controleer of alleen de v
 
 Tijdens het uitschrijvingsproces wordt de map OnlineManagement niet verwijderd. Wacht na de uitschrijving 30 minuten en voer vervolgens deze opdracht uit. Als u deze opdracht te vroeg uitvoert, krijgt de verwijdering mogelijk een onbekende status. Als u de map wilt verwijderen, opent u een opdrachtprompt met verhoogde bevoegdheid en voert u de volgende opdracht uit:
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>Zie tevens
+### <a name="next-steps"></a>Volgende stappen
 [Windows-pc’s Microsoft Intune beheren](manage-windows-pcs-with-microsoft-intune.md)
 [Problemen met clientinstallatie oplossen](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

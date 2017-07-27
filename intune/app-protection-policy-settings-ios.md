@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor iOS-apps
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ Er zijn een aantal uitzonderingsapps en -platformservices waar het Intune-beveil
 | **Toegangsvereisten opnieuw controleren na (minuten)** | Configureer de volgende instellingen: <ul><li>**Time-out**: dit is het aantal minuten waarna de (eerder in het beleid gedefinieerde) toegangsvereisten opnieuw worden gecontroleerd. Wanneer een beheerder bijvoorbeeld invoeren van een pincode inschakelt in het beleid, moet een gebruiker die een MAM-app opent een pincode invoeren. Wanneer u deze instelling gebruikt, hoeft de gebruiker nog **30 minuten** (standaardwaarde) geen pincode in te voeren voor een MAM-app.</li><li>**Offline respijtperiode**: het aantal minuten dat MAM-apps offline kunnen worden uitgevoerd. Geef de tijd (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **720** minuten (12 uur). Nadat deze periode is verstreken, is gebruikersverificatie voor AAD vereist om de app te blijven uitvoeren.</li></ul>| Time-out: 30 <br><br> Offline: 720 |
 | **Offline interval (in dagen) voordat app-gegevens worden gewist** | Na dit aantal dagen (gedefinieerd door de beheerder) van offline uitvoeren, wordt selectief wissen door de app zelf uitgevoerd. Dit is dezelfde wisbewerking die door de beheerder kan worden gestart in de werkstroom MAM wissen. <br><br> | 90 dagen |
 | **Pincode apparaat uitschakelen wanneer de pincode voor het apparaat wordt beheerd** | Kies **Ja** om de pincode voor het apparaat uit te schakelen wanneer een apparaatvergrendeling wordt gedetecteerd op een geregistreerd apparaat. | Nee |
-| **Minimumversie van het iOS-besturingssysteem vereisen** | Kies **Ja** om een minimumversie van het iOS-besturingssysteem te vereisen voor gebruik van deze app. Toegang door de gebruiker wordt geblokkeerd als de iOS-versie op het apparaat niet aan de vereiste voldoet. | Nee |
-| **Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van het iOS-besturingssysteem te vereisen voor gebruik van deze app. De gebruiker ziet een melding als de iOS-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren. | Nee |
+| **Minimumversie van het iOS-besturingssysteem vereisen** | Kies **Ja** om een minimumversie van het iOS-besturingssysteem te vereisen voor gebruik van deze app. Toegang door de gebruiker wordt geblokkeerd als de iOS-versie op het apparaat niet aan de vereiste voldoet. Dit beleid ondersteunt een enkele decimale punt, bijvoorbeeld iOS 10.3. | Nee |
+| **Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van het iOS-besturingssysteem te vereisen voor gebruik van deze app. De gebruiker ziet een melding als de iOS-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren. Dit beleid ondersteunt een enkele decimale punt, bijvoorbeeld iOS 10.3. | Nee |
 | **Minimumversie van app vereisen** | Kies **Ja** om een minimumversie van de app te vereisen voor gebruik van de app. Toegang door de gebruiker wordt geblokkeerd als de app-versie op het apparaat niet aan de vereiste voldoet.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> | Nee | 
 | **Minimumversie van app vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van de app aan te bevelen bij gebruik van de app. De gebruiker ziet een melding als de app-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> | Nee | 
 | **Minimumversie van SDK voor het beleid voor app-beveiliging van Intune vereisen** | Kies **Ja** om een minimumversie van de SDK voor het beleid voor app-beveiliging van Intune te vereisen die wordt gebruikt in de app. Toegang door de gebruiker wordt geblokkeerd als de SDK-versie voor Intune-appbeveiligingsbeleid op het apparaat niet aan de vereiste voldoet. <br> <br> Zie [Overzicht van de Intune App SDK](app-sdk.md) voor meer informatie over de SDK voor Intune-appbeveiligingsbeleid <br><br> | Nee |

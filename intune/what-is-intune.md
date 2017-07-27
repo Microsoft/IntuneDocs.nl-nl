@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Inleiding op Microsoft Intune in Azure Portal
 
@@ -28,13 +28,10 @@ ms.lasthandoff: 07/01/2017
 Microsoft Intune bevindt zich nu in Azure Portal. Dit betekent dat de werkstromen en functionaliteit waarmee u bekend bent, zijn veranderd.
 De nieuwe portal biedt u nieuwe en bijgewerkte functionaliteit in Azure Portal waar u de mobiele apparaten, pc's en apps van uw bedrijf kunt beheren.
 
-> [!IMPORTANT]
-> **Ziet u de nieuwe portal nog niet?**<br>
-> Bestaande tenants worden gemigreerd naar de nieuwe ervaring. Voordat uw tenant wordt gemigreerd, wordt in het berichtencentrum Office een melding weergegeven.
->
-> Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de Apple-registratiewerkstromen in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd. Als uw bestaande account geen toegang heeft tot Azure Portal, wordt u aangeraden een proefaccount maken.
->
-> Bekijk de lijst met potentiële problemen https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* In [Waar is de functie die ik zoek gebleven in Azure?](ui-changes.md) kunt u nazoeken welke specifieke werkstromen en gebruiksinterfaces zijn veranderd bij de overgang naar Azure.
+* In [Klassieke Intune-groepen in Azure Portal](groups-get-started.md) worden de gevolgen uitgelegd van de overstap naar Azure Active Directory-beveiligingsgroepen voor groepsbeheer.
+
+
 
 
 Informatie over de nieuwe portal vindt u in deze bibliotheek. Deze wordt voortdurend bijgewerkt. Als u suggesties hebt, kunt u feedback geven in de opmerkingen bij onderwerpen. We graag horen van u.
@@ -47,7 +44,14 @@ Belangrijke functies van de nieuwe omgeving zijn onder andere:
 - Azure Active Directory-groepen (AD) voor compatibiliteit voor al uw Azure-toepassingen
 - Ondersteuning voor de meeste moderne webbrowsers
 
-Zie [de Intune-documentatiebibliotheek](https://docs.microsoft.com/intune-classic/) voor documentatie over de klassieke Intune-console.
+> [!IMPORTANT]
+> **Ziet u de nieuwe portal nog niet?**<br>
+> Bestaande tenants worden gemigreerd naar de nieuwe ervaring. Voordat uw tenant wordt gemigreerd, wordt in het berichtencentrum Office een melding weergegeven.
+>
+> Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de Apple-registratiewerkstromen in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd. Als uw bestaande account geen toegang heeft tot Azure Portal, wordt u aangeraden een proefaccount maken.
+>
+> Bekijk de lijst met potentiële problemen https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>Voordat u begint
 
@@ -91,7 +95,7 @@ Informatie over het [plannen en ontwerpen](/intune-classic/plan-design/introduct
 ### <a name="on-premises-access"></a>Lokale toegang
 [Toegang tot Exchange ActiveSync en Exchange on-premises configureren](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[Meer informatie over de gebruikers van apparaten die u beheert en bronnen in groepen sorteren](user-management.md).
+[Meer informatie over de gebruikers van apparaten die u beheert en bronnen in groepen sorteren](users-add.md).
 ### <a name="groups"></a>Groepen
 [Meer informatie over het gebruik van Azure Active Directory-groepen met Intune](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune-rollen

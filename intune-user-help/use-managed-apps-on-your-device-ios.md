@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
@@ -38,6 +38,8 @@ Beheerde apps zijn op verschillende manieren beschikbaar:
 -   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
 
 -   U installeert een app uit de App Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd met Intune.
+
+Mogelijk koopt uw IT-beheerder soms meerdere licenties voor een app die u installeert. Het is normaal dat u wordt gevraagd om de voorwaarden van het Apple Volume Purchase Program te accepteren en dit kunt u dan ook doen. Als u ze niet accepteert, kunt u de app niet installeren.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>Wat kan de IT-beheerder beheren in een app?
 Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
