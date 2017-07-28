@@ -1,7 +1,7 @@
 ---
-title: Registreren voor een gratis proefversie van 30 dagen
-titleSuffix: Intune on Azure
-description: Aanmelden voor Intune op Azure."
+title: Aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune
+titleSuffix: 
+description: Aanmelden voor een gratis proefversie van 30 dagen van Intune."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,22 +13,22 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7dafdb974dd975eaa7f3268119de6c047c50f858
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>Aanmelden voor een gratis proefversie van Microsoft Intune voor Azure Portal
+# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 
 
 Dit artikel begeleidt u bij het aanmelden voor een proefversie van de zelfstandige versie van Intune voor Azure Portal.
 
 1. Ga naar de [registratiepagina voor Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) en vul het formulier in om u aan te melden voor een proefabonnement.
-account-registreren.md
+* Als u een werk- of schoolaccount hebt en dit wilt gebruiken voor de proefversie van Intune, volgt u [deze aanmeldingsinstructies](/intune/account-sign-up).
 
-  Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijkt van die van u, kunt u de desbetreffende landinstellingen selecteren onder **Where's your company located?** (Waar bevindt uw bedrijf zich?).
+* Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijkt van die van u, kunt u de desbetreffende landinstellingen selecteren onder **Where's your company located?** (Waar bevindt uw bedrijf zich?).
 
 2. Aan het einde van het aanmeldingsproces ziet u een bericht met de gegevens van uw nieuwe account. <br/> ![Afbeelding van accountgegevens](./media/2-end-of-sign-up-process.png) <br/>Als u nu klikt op **You're ready to go** (U bent klaar om aan de slag te gaan), wordt u naar het Office 365-beheercentrum geleid, waar u gebruikers aan uw testomgeving kunt toevoegen. <br/><br/>Als u rechtstreeks naar Intune Azure Portal wilt gaan, opent u een nieuw browservenster en voert u **https://portal.azure.com** in de adresbalk in. U wordt dan omgeleid naar de aanmeldingspagina van Azure, waar u de referenties kunt opgeven die u hebt ontvangen om u aan te melden. Gebruik dit adres altijd als u zich wilt aanmelden voor de Intune-proefversie. <br/> ![Afbeelding van de aanmeldingspagina van de Azure Portal](./media/azure-portal-signin.png)
 
@@ -70,8 +70,6 @@ U vanuit Intune wilt terugkeren naar het Office 365-beheercentrum, voert u https
 
 ### <a name="intune-on-azure"></a>Intune in Azure
 Meer informatie over [Intune in Azure Portal](what-is-intune.md)
-### <a name="classic-intune"></a>Klassieke versie van Intune
-Evaluatiescenario: [Mobile Device Management evalueren in Microsoft Intune](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Integratie met andere producten
 Meer informatie over het gebruik van uw Azure Active Directory-gebruikersaccounts met Intune:

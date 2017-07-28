@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Gebruik van netwerkbandbreedte door Intune
 
@@ -30,7 +30,7 @@ Deze richtlijnen geven Intune-beheerders inzicht in de netwerkvereisten voor de 
 Deze tabel bevat de geschatte grootte en frequentie van algemene inhoud die via het netwerk voor elke client wordt verzonden.
 
 > [!NOTE]
-> Om ervoor te zorgen dat computers en mobiele apparaten de vereiste updates en inhoud van de Intune-service ontvangen, moeten ze regelmatig worden verbonden met internet. Hoeveel tijd het duurt om updates of inhoud te ontvangen verschilt, maar als uitgangspunt moeten ze ten minste 1 uur per dag continu met internet verbonden zijn.
+> Om ervoor te zorgen dat apparaten de updates en inhoud van Intune ontvangen, moeten ze regelmatig verbinding maken met internet. Hoeveel tijd het kost om updates of inhoud te ontvangen verschilt, maar ze moeten ten minste 1 uur per dag continu met internet verbonden zijn.
 
 |Type inhoud|Geschatte grootte|Frequentie en details|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ Deze tabel bevat de geschatte grootte en frequentie van algemene inhoud die via 
 U kunt een of meer van de volgende methoden gebruiken om het gebruik van netwerkbandbreedte te beperken voor Intune-clients.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Een proxyserver gebruiken om aanvragen voor inhoud in cache te plaatsen
-U kunt een proxyserver gebruiken om inhoud in cache te plaatsen zodat dubbele downloads worden verminderd, en om het gebruik te beperken van de netwerkbandbreedte die clients nodig hebben om inhoud van internet aan te vragen.
+Een proxyserver kan inhoud in cache plaatsen om dubbele downloads te voorkomen, en de netwerkbandbreedte voor het downloaden van inhoud van internet te beperken.
 
-Een cacheproxyserver ontvangt verzoeken voor inhoud van clientcomputers in uw netwerk, haalt die inhoud op van internet en plaatst vervolgens zowel HTTP-antwoorden als binaire downloads in cache. De server gebruikt de gegevens in cache om de volgende aanvragen van Intune-clientcomputers te beantwoorden.
+Een cacheproxyserver die aanvragen voor inhoud ontvangt van clients, kan die inhoud ophalen en zowel webreacties als downloads in de cache plaatsen. De server gebruikt de gegevens in cache om de volgende aanvragen van clients te beantwoorden.
 
 Hieronder vindt u standaardinstellingen voor een proxyserver die inhoud voor Intune-clients plaatst.
 
@@ -70,7 +70,7 @@ Intune ondersteunt het gebruik van Background Intelligent Transfer Service (BITS
 Zie [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in de TechNet-bibliotheek voor meer informatie over BITS en Windows-computers.
 
 ### <a name="use-branchcache-on-computers"></a>BranchCache gebruiken op computers
-Intune-clients kunnen BranchCache gebruiken om WAN-verkeer (Wide Area Network) te beperken. De volgende besturingssystemen die worden ondersteund als client, bieden ook ondersteuning voor BranchCache:
+Intune-clients kunnen BranchCache gebruiken om WAN-verkeer (Wide Area Network) te beperken. De volgende besturingssystemen ondersteunen BranchCache:
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Intune-clients kunnen BranchCache gebruiken om WAN-verkeer (Wide Area Network) t
 
 Als u BranchCache wilt gebruiken, moet BranchCache op de clientcomputer zijn ingeschakeld en moet de computer zijn geconfigureerd voor de **modus Gedistribueerde cache**.
 
-BranchCache en de modus voor gedistribueerde cache zijn standaard ingeschakeld op een computer als de Intune-client is geïnstalleerd. Als de client echter al groepsbeleid heeft waarmee BranchCache wordt uitgeschakeld, wordt dat beleid niet door Intune overschreven en blijft BranchCache uitgeschakeld op die computer.
+BranchCache en de modus voor gedistribueerde cache zijn standaard ingeschakeld op computers als de Intune-client is geïnstalleerd. Als BranchCache echter is uitgeschakeld door groepsbeleid, overschrijft Intune dat beleid niet en blijft BranchCache uitgeschakeld.
 
-Als u BranchCache gebruikt, moet u contact opnemen met andere beheerders in uw organisatie die groepsbeleid en het beleid voor de Intune Firewall beheren om ervoor te zorgen dat zij geen beleid implementeren waarmee BranchCache of Firewall-uitzonderingen worden uitgeschakeld. Zie [Overzicht van BranchCache](http://technet.microsoft.com/library/hh831696.aspx) voor meer informatie over BranchCache.
+Als u BranchCache gebruikt, moet u samenwerken met andere beheerders in uw organisatie die het groepsbeleid en het beleid voor de Intune Firewall beheren. Zorg ervoor dat zij geen beleid implementeren waarmee BranchCache of Firewall-uitzonderingen worden uitgeschakeld. Zie [Overzicht van BranchCache](http://technet.microsoft.com/library/hh831696.aspx) voor meer informatie over BranchCache.
 
 ## <a name="network-communication-requirements"></a>Vereisten voor netwerkcommunicatie
 
-U moet netwerkcommunicatie inschakelen tussen de apparaten die u beheert en gebruikt voor het beheren van uw Intune-abonnement en de websites die vereist zijn voor cloudservices.
+Schakel netwerkcommunicatie in tussen de apparaten die u beheert en de websites die vereist zijn voor cloudservices.
 
 Intune gebruikt geen on-premises infrastructuur, zoals servers waarop Intune wordt uitgevoerd, maar u hebt de mogelijkheid om on-premises infrastructuur te gebruiken, waaronder de hulpprogramma's voor Exchange- en Active Directory-synchronisatie.
 
-Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u firewalls en proxyservers instellen om communicatie voor Intune mogelijk te maken. Als u computers wilt beheren die zich achter een proxyserver bevinden, moet u rekening houden met het volgende:
+Als u computers wilt beheren die zich achter firewalls en proxyservers bevinden, moet u communicatie voor Intune inschakelen.
 
 -   De proxyserver moet zowel **HTTP (80)** als **HTTPS (443)** ondersteunen omdat Intune-clients beide protocollen gebruiken
--   Intune vereist niet-geverifieerde proxyservertoegang tot manage.microsoft.com voor bepaalde bewerkingen, zoals het downloaden van software en updates
+-   Intune vereist niet-geverifieerde proxyservertoegang tot manage.microsoft.com voor bepaalde taken, zoals het downloaden van software en updates
 
 U kunt instellingen voor de proxyserver op afzonderlijke clientcomputers wijzigen of u kunt instellingen voor Groepsbeleid gebruiken om de instellingen te wijzigen voor alle clientcomputers die zich achter een bepaalde proxyserver bevinden.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 Voor beheerde apparaten zijn configuraties vereist waarmee **alle gebruikers** via firewalls toegang krijgen tot services.
 

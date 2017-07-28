@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 07/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
@@ -151,6 +151,17 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 
 ## <a name="android-issues"></a>Problemen met Android
+
+### <a name="android-enrollment-errors"></a>Inschrijvingsfouten met Android
+
+De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te zien tijdens het registreren van een Android-apparaat.
+
+|Foutbericht|Probleem|Oplossing|
+|---|---|---|
+|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang gegeven voor het gebruik van deze app. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het gebruikersaccount de benodigde licentie niet heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br><br>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign.md) voor meer informatie.
+|**De IT-beheerder moet de MDM-instantie instellen<br>Het lijkt erop dat uw IT-beheerder geen MDM-instantie heeft ingesteld. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|De Mobile Device Management-instantie is niet gedefinieerd in Intune.|De Mobile Device Management-instantie is niet aangewezen in Intune. Informatie over het [instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set.md).|
+
+
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Apparaten kunnen niet inchecken bij de Intune-service en worden in de Intune-beheerconsole weergegeven als Niet in orde
 **Probleem:** sommige Samsung-apparaten met Android-versies 4.4.x en 5.x checken mogelijk niet meer in bij de Intune-service. Als apparaten niet inchecken:
 
