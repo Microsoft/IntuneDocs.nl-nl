@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -107,7 +107,11 @@ Zie [Wat is apparaatcompatibiliteit](device-compliance.md) voor meer informatie.
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## <a name="data-protection"></a>Gegevensbescherming
+
+### <a name="ios-app-protection-policies"></a>Beleidsregels voor de beveiliging van iOS-apps
+
+U kunt [beleidsregels voor de beveiliging van iOS-apps](app-protection-policy-settings-ios.md) definiëren, die beschikbaar zijn voor gebruikers met apparaten die worden beheerd via MAM zonder inschrijving. Vanwege een tijdelijke fout kunt u deze beleidsregels alleen definiëren voor iOS-versienummers met één decimale punt en niet voor versienummers met meerdere decimale punten. In plaats van dat u iOS 10.3.1 als minimumversie instelt, stelt u de beleidsregels in voor iOS 10.3. Deze fout wordt in een toekomstige update van de iOS-SDK opgelost.
 
 
 ## <a name="administration-and-accounts"></a>Beheer en accounts
