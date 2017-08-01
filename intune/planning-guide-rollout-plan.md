@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/11/2017
 ---
-# Een rollout-plan ontwikkelen
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Een rollout-plan ontwikkelen
 
 In uw implementatieplan worden de organisatiegroepen die doel zijn van de Intune-implementatie, het implementatietijdschema voor elke groep en de inschrijvingsmethoden vermeld.
 
-## Doelgroepen en tijdschema's
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Doelgroepen en tijdschema's
 
 Neem eerst de groepen door die doel zijn van de Intune-implementatie en die u hebt vastgesteld in uw [gebruiksscenario's](planning-guide-scenarios.md).
 
@@ -38,20 +36,17 @@ Bepaal vervolgens het tijdschema voor elke doelgroep. Voor deze taak wordt meest
 * Geografische locatie
 * Bedrijfsrisico
 
-## Implementatiefasen
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Implementatiefasen
 Organisaties kiezen er vaak voor om de rollout van Intune te starten met een eerste pilot, voor een kleine groep gebruikers in de IT-afdeling. De testfase kan vervolgens worden uitgebreid naar een grotere groep IT-gebruikers en er kunnen andere groepen in de organisatie aan deelnemen.
 
-### Test
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Test
 In de eerste fase van de implementatie zijn de testfasegebruikers de doelgroep. De testfasegebruikers moeten weten dat ze de eerste gebruikers van een nieuwe oplossing zijn. Zij moeten bereid zijn om feedback te geven zodat de configuratie, documentatie en meldingen kunnen worden verbeterd en zodat de weg wordt geëffend voor alle andere gebruikers in latere fasen van de implementatie. Deze gebruikers moeten geen leidinggevenden of VIP's zijn.
 
 De testfase is een goede gelegenheid voor u om de [uitdagingen](planning-guide-deployment-goals.md) te testen en de [vereisten](planning-guide-requirements.md) die u eerder hebt verzameld te verfijnen.
 
 Neem uw [communicatie](planning-guide-communication-plan.md)plan, [ondersteunings](planning-guide-support-plan.md)plan en [testen en validatie](planning-guide-test-validation.md) op in het project om eventuele problemen op te lossen zo lang de impact op de gebruikers nog klein is.
 
-### Volledige implementatie
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Volledige implementatie
 Na een geslaagde testfase kunt u beginnen met een volledige implementatie die gericht is op de overige groepen van uw organisatie. Enkele voorbeelden van verschillende implementatiegroepen en -fasen zijn:
 
 -   **Afdelingen** <br/>Elke afdeling kan een implementatiefase vormen. Een gehele afdeling is tegelijkertijd het doel van de implementatie. Bij dit type implementatie maken de gebruikers van elke afdeling hoogstwaarschijnlijk op dezelfde manier gebruik van het mobiele apparaat en hebben ze toegang tot dezelfde toepassingen. De gebruikers moeten waarschijnlijk voldoen aan hetzelfde soort beleid.
@@ -71,26 +66,22 @@ Hier is een voorbeeld van een rollout-plan voor Intune met doelgroepen en tijdli
 | Productie-rollout fase 3 |  |  |  | HR (50 gebruikers), Financiën (40 gebruikers), Leidinggevenden (30 gebruikers) |
 
 U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de implementatiefasen van uw organisatie in te voeren.
-## Implementatiegroepen koppelen aan inschrijvingsmethoden
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Implementatiegroepen koppelen aan inschrijvingsmethoden
 
 Nu u de doelgroepen en het tijdschema voor de Intune-implementatie hebt bepaald, kiest u vervolgens een geschikte methode voor de Intune-inschrijving voor elke groep. Er zijn verschillende inschrijvingsmethoden die u kunt gebruiken, zoals:
 * Selfservice door de gebruiker
 * Gebruikersregistratie met ondersteuning
 * IT-informatiedag
 
-### Selfservice door de gebruiker
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Selfservice door de gebruiker
 
 In dit geval zijn de gebruikers verantwoordelijk voor het inschrijven van hun eigen apparaat. Voorafgaand aan de inschrijving ontvangen zij hiervoor gewoonlijk instructies van de IT-organisatie. Deze methode wordt het meest gebruikt in organisaties en is beter schaalbaar dan inschrijving met ondersteuning van de gebruiker.
 
-### Inschrijving met ondersteuning van de gebruiker
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Inschrijving met ondersteuning van de gebruiker
 
 Dit staat ook wel bekend als de intensieve methode. Een IT-teamlid doorloopt, persoonlijk of via Skype, samen met de gebruiker de inschrijvingsprocedure. Deze methode wordt doorgaans gebruikt voor leidinggevenden en andere groepen die wellicht meer hulp nodig hebben bij de inschrijvingsprocedure.
 
-### IT-informatiedag
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>IT-informatiedag
 
 Een andere optie voor het registreren van gebruikers bij Intune is een informatiedag van de IT-afdeling. Op zo'n dag zet de IT-afdeling een stand op ter ondersteuning van de Intune-inschrijving, waar gebruikers informatie kunnen krijgen, vragen kunnen stellen en hulp kunnen krijgen bij de inschrijvingsprocedure. Deze optie kan erg nuttig zijn voor zowel de IT-afdeling als de gebruikers, met name tijdens de eerste fasen van de Intune-implementatie.
 
@@ -111,7 +102,6 @@ Hier volgt een bijgewerkt voorbeeld van het bovenstaande Intune-implementatiepla
 | Selfservice |  |  |  | HR, Financiën |
 | Gebruikersregistratie met ondersteuning |  |  |  | Leidinggevenden |
 
-## Volgende stappen
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Volgende stappen
 
 De volgende sectie bevat richtlijnen over het [ontwikkelen van een communicatieplanning voor de Intune-rollout](planning-guide-communication-plan.md).
