@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/12/2017
 ---
-# Wat is Microsoft Intune-appbeheer?
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ Verder wilt u misschien apps toewijzen en beheren op apparaten die niet met Intu
 
 Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de gekozen apparaten te krijgen.
 
-## App-beheermogelijkheden per platform
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>App-beheermogelijkheden per platform
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 <sup>2</sup>Alleen van toepassing op apparaten die worden beheerd door Intune.
 
-## Aan de slag
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Aan de slag
 
 U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele apps** die als volgt toegankelijk is:
 
@@ -73,8 +70,7 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 
     ![De workload Mobiele apps](./media/apps-workload.png)
 
-### Manage
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>Manage
 - **Apps**: in dit knooppunt kunt u de meeste apps toevoegen, toewijzen en bewaken.
     - [Apps toevoegen](apps-add.md)
     - [Apps toewijzen](apps-deploy.md)
@@ -89,8 +85,7 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 - **iOS-inrichtingsprofiel**: iOS-apps hebben een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen.
     - [Inrichtingsprofielen voor iOS-apps](app-provisioning-profile-ios.md)
 
-### Monitor
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Monitor
 - **Apps met licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken.
     - [Windows Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md)
 - **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd.
@@ -99,8 +94,7 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 
 Zie [Apps bewaken](apps-monitor.md) voor meer informatie
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store voor Bedrijven**: integratie met Windows Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden.
