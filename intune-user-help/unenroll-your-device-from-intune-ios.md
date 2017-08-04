@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/13/2017
 ---
-# De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
 
 Wanneer u de inschrijving van uw iOS-apparaat bij Intune ongedaan maakt, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
 

@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36e658cebdfd23547e3c376124289046f81acc1f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-enrolling-devices"></a>Apparaten registreren
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![De bedrijfsportal-app op een iOS-apparaat, met het eerste scherm voor het registratieproces.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 Microsoft Intune helpt u om uw werknemers met mobiele apparaten uit te rusten terwijl uw zakelijke gegevens worden beveiligd. Aangezien uw eindgebruikers interactie met Intune hebben op hun apparaten en niet in de beheerconsole, is het belangrijk dat u goed op de hoogte bent van het registratieproces. Alleen dan kunt u goed ontworpen nalevingsbeleid combineren met een prettige registratie-ervaring voor uw gebruikers. Dit is vooral belangrijk omdat uw gebruikers precies weten welke gegevens u als beheerder kunt zien:
 
