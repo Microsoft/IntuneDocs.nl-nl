@@ -8,9 +8,7 @@
 ### [Wat is er nieuw in de gebruikersinterface van de app?](whats-new-app-ui.md)
 ### [Archief van Wat is er nieuw? (Azure Portal)](whats-new-archive.md)
 ### [Archief van Wat is er nieuw? (klassieke portal)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Architectuur op hoog niveau](high-level-architecture.md)
 ## [Levenscycli van apparaten en apps](introduction-device-app-lifecycles.md)
 ### [Levenscyclus van apparaten](device-lifecycle.md)
 ### [Levenscyclus van apps](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Bewaken en problemen oplossen
 ## [De rol van helpdeskmedewerker gebruiken](help-desk-operators.md)
+## [Het Intune-datawarehouse gebruiken](reports-nav-create-intune-reports.md)
+### [Verbinding maken met het datawarehouse met Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Ontwikkelen en aanpassen
 ## [Aangepaste apparaatinstellingen configureren](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Xamarin-onderdeel voor Intune App SDK](app-sdk-xamarin.md)
 ## [Het gebruik van Intune Graph API 's](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune-datawarehouse-API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Datawarehouse-API-eindpunt](reports-api-url.md)
+### [Datawarehouse-gegevensmodel](reports-ref-data-model.md)
+#### [Verwijzing voor datumentiteit](reports-ref-date.md)
+#### [Verwijzing voor gebruikersentiteit](reports-ref-user.md)
+#### [Verwijzing voor Mobile Application Management (MAM)-entiteiten](reports-ref-mobile-app-management.md)
+#### [Verwijzing voor apparaatentiteiten](reports-ref-devices.md)
+#### [Verwijzing voor toepassingsentiteiten](reports-ref-application.md)
+#### [Verwijzing voor beleidentiteiten](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Verklarende woordenlijst](intune-glossary.md)
