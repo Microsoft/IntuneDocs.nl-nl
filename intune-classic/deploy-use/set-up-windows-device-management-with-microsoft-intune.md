@@ -13,11 +13,11 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9066414bcef1ba312db64aef077db8f8bfbbdb44
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-windows-device-management"></a>Windows apparaatbeheer instellen
 
@@ -31,8 +31,8 @@ Vereenvoudiging van Windows-apparaatregistratie is afhankelijk van twee factoren
 
 ||**Azure AD Premium**|**Overige AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Automatische inschrijving](#enable-windows-10-automatic-enrollment) |[Gebruikersinschrijving](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Eerdere Windows-versies**|[Gebruikersinschrijving](#enable-windows-enrollment-without-azure-ad-premium)|[Gebruikersinschrijving](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Automatische inschrijving](#enable-windows-10-automatic-enrollment) |[Gebruikersinschrijving](#enable-windows-enrollment-without-automatic-enrollment)|
+|**Eerdere Windows-versies**|[Gebruikersinschrijving](#enable-windows-enrollment-without-automatic-enrollment)|[Gebruikersinschrijving](#enable-windows-enrollment-without-automatic-enrollment)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 

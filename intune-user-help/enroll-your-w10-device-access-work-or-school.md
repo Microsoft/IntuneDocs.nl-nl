@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/13/2017
 ---
-# Uw Windows 10-apparaat inschrijven bij Intune
-<a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
+# <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
 > [!NOTE]
 > Windows 10 werkt voor alle typen apparaten. Of u nu een desktop, een telefoon of een tablet gebruikt, de te volgen stappen zijn dezelfde, ook al zien ze er iets anders uit dan de afbeeldingen op deze pagina.

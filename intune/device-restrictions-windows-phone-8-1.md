@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Windows Phone 8.1-apparaatbeperkingsinstellingen in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Algemeen
--   **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
+
 -   **Camera**: hiermee kunt u het gebruik van de camera van het apparaat inschakelen of blokkeren.
 -   **Kopiëren en plakken**: hiermee kunt u de functie voor kopiëren en plakken op apparaten inschakelen of blokkeren.
 -   **Verwisselbare opslag**: hiermee stelt u het apparaat in staat verwisselbare opslag te gebruiken, zoals SD-kaarten.
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **Aangepaste e-mailaccounts synchroniseren**: hiermee stelt u het apparaat in staat verbinding te maken met niet-Microsoft-e-mailaccounts.
 
 ## <a name="password"></a>Wachtwoord
--   **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
--   **Wachtwoord vereist**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
+
+-   **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
     -   **Vereist wachtwoordtype**: hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.
     -   **Minimale wachtwoordlengte**: hiermee geeft u het minimum aantal tekens op waaruit het wachtwoord moet bestaan.
     -   **Eenvoudige wachtwoorden**: hiermee geeft u op dat eenvoudige wachtwoorden, zoals 0000 en 1234, kunnen worden gebruikt.
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **Versleuteling**: hiermee vereist u dat de gegevens op ondersteunde mobiele apparaten worden versleuteld.
 
 ## <a name="app-store"></a>App Store
--   **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
+
 -   **App Store**: hiermee stelt u gebruikers in staat verbinding te maken met de App Store van het apparaat.
 
 ## <a name="restricted-apps"></a>Beperkte apps
-
--   **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
 
 Configureer een van de volgende lijsten in de lijst met beperkte apps:
 
@@ -81,11 +79,11 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 
 
 ## <a name="browser"></a>Browser
--   **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
+
 -   **Webbrowser**: hiermee kunt u het gebruik van de ingebouwde webbrowser op apparaten toestaan of blokkeren.
 
 ## <a name="cellular-and-connectivity"></a>Mobiel en connectiviteit
--   **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
+
 -   **Wi-Fi**: hiermee schakelt u de Wi-Fi-functionaliteit van het apparaat in of uit.
 -   **Wi-Fi-tethering**: hiermee schakelt u het gebruik van Wi-Fi-tethering op het apparaat in.
 -   **Automatisch verbinding maken met Wi-Fi-hotspots**: hiermee stelt u het apparaat in staat automatisch verbinding te maken met gratis Wi-Fi-hotspots en automatisch alle gebruiksvoorwaarden te accepteren.
