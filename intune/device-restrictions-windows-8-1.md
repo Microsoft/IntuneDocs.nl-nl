@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 8.1-apparaten (en hoger) in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Algemeen
--   **Alle configuraties toepassen op Windows 10**: hiermee kunt u de instellingen in dit beleid behalve op Windows 8.1-apparaten, ook op Windows 10-apparaten toepassen.
+
 -   **Verzending van diagnostische gegevens**: hiermee stelt u het apparaat in staat diagnostische gegevens naar Microsoft te verzenden.
 -   **Firewall**: hiermee vereist u dat Windows Firewall is ingeschakeld.
 -   **Gebruikersaccountbeheer**: hiermee vereist u het gebruik van Gebruikersaccountbeheer (UAC) op apparaten.
+
 ## <a name="password"></a>Wachtwoord
 -   **Vereist wachtwoordtype**: hiermee stelt u in dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
 -   **Minimale wachtwoordlengte**: hiermee configureert u de minimaal vereiste lengte (in tekens) voor het wachtwoord op apparaten.
@@ -62,8 +63,10 @@ Wanneer u versleuteling op een apparaat afdwingt, is de herstelsleutel alleen to
 -   **Toegang tot Bedrijfsmodus via menu**: hiermee kunnen gebruikers toegang krijgen tot de menuoptie Bedrijfsmodus van Internet Explorer.
 Als u deze instelling selecteert, kunt u een **Locatie van het registratierapport** opgeven, die bestaat uit een URL naar een rapport waarin websites worden weergegeven waarvoor gebruikers toegang tot de bedrijfsmodus hebben ingeschakeld.
 -   **Locatie van de lijst met websites van Bedrijfsmodus**: hiermee geeft u de locatie op van de lijst met websites die Bedrijfsmodus gebruikt als deze actief is.
+
 ## <a name="cellular"></a>Mobiel
 -   **Dataroaming**: hiermee schakelt u dataroaming in wanneer het apparaat verbinding heeft met een mobiel netwerk.
+
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 -   **URL voor Werkmappen**: hiermee stelt u de URL voor Werkmappen in, zodat documenten op verschillende apparaten kunnen worden gesynchroniseerd.
 -   **Toegang tot de Windows Mail-app zonder Microsoft-account**: hiermee maakt u het mogelijk om toegang te krijgen tot de toepassing Windows Mail zonder Microsoft-account.    

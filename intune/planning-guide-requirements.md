@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/11/2017
 ---
-# Vereisten voor gebruiksscenario's bepalen
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>Vereisten voor gebruiksscenario's bepalen
 
 In deze sectie bepaalt u de vereisten voor elke organisatiegroep in elk gebruiksscenario. Met het doorlopen van deze procedure bereidt u zich gelijk voor op de andere gebieden van de Intune-implementatieplanning, zoals de architectuur en het ontwerp, de onboarding en implementatie. U kunt aan de hand hiervan ook mogelijke hiaten en uitdagingen met betrekking tot uw Intune-implementatieproject vaststellen.
 
@@ -42,8 +41,7 @@ Hier volgen enkele voorbeelden van gebruikssituatievereisten van een organisatie
 U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de gebruikssituatievereisten en subgebruikssituatievereisten van uw organisatie in te voeren.
 
 
-## Voorbeelden van vereisten
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>Voorbeelden van vereisten
 
 Hier zijn nog enkele voorbeelden die kunnen worden gebruikt in de kolom Vereisten:
 
@@ -64,7 +62,6 @@ Hier zijn nog enkele voorbeelden die kunnen worden gebruikt in de kolom Vereiste
     - Office 365 met beleid voor app-beveiliging
     - Line-of-business (LOB) met beleid voor app-beveiliging
 
-## Volgende stappen
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Volgende stappen
 
 De volgende sectie bevat richtlijnen over het [ontwikkelen van een Intune-rolloutplan](planning-guide-rollout-plan.md).
