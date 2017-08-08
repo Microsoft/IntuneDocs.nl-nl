@@ -83,7 +83,7 @@
 ### [iOS-inschrijving instellen](ios-enroll.md)
 #### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [macOS-inschrijving instellen](macos-enroll.md)
 
 ## [Apparaten beheren](device-management.md)
@@ -101,6 +101,7 @@
 ### [Gebruiker verwijderen](device-remove-user.md)
 ### [Beheer op afstand voor Android](device-profile-android-teamviewer.md)
 ### [Windows 10-pincode opnieuw instellen](device-windows-pin-reset.md)
+### [Apparaat synchroniseren](device-sync.md)
 ### [Inventaris van mobiele apparaten controleren](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [Instellingen voor Windows 10 Education configureren](education-settings-configure.md)
 ### [Opleidingsinstellingen voor iOS configureren](education-settings-configure-ios.md)
 ### [Gedeelde onderwijsapparaten configureren voor iOS](education-settings-configure-ios-shared.md)
+### [iOS-updatebeleid configureren](software-updates-ios.md)
 ### [Instellingen voor Windows Update voor bedrijven configureren](windows-update-for-business-configure.md)
 ### [Certificaten configureren](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
