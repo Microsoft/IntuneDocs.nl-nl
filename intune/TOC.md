@@ -263,7 +263,7 @@
 ### [Windows-apps downloaden](end-user-apps-windows.md)
 
 # Bewaken en problemen oplossen
-## [De rol van helpdeskmedewerker gebruiken](help-desk-operators.md)
+## [Gebruikers helpen problemen op te lossen](help-desk-operators.md)
 ## [Het Intune-datawarehouse gebruiken](reports-nav-create-intune-reports.md)
 ### [Verbinding maken met het datawarehouse met Power BI](reports-proc-get-a-link-powerbi.md)
 
