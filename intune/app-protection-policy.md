@@ -3,8 +3,8 @@ title: Wat is beveiligingsbeleid voor apps
 titleSuffix: Intune on Azure
 description: Gebruik dit onderwerp voor meer informatie om de gegevens van uw bedrijf te beveiligen met het beveiligingsbeleid voor apps van Microsoft Intune.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: get-started-article
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 96cdcbf76e396c6eff9479fc95aea255df7e55e8
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
