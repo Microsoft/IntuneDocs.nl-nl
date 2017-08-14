@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
-Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. Daarnaast kunt u ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één app weergegeven in de lijst met apps in de Intune-console.
+Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één app weergegeven in de lijst met apps in de Intune-console.
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -34,11 +34,8 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de 
 - Op de apparaten waarop u deze apps implementeert, moet de Microsoft Windows 10-makersupdate of hoger zijn geïnstalleerd.
 - Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus 2016.
 - Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, verliezen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden.
-- Lees de volgende informatie als u besluit om Office te installeren op een apparaat waarop al een versie van Office is geïnstalleerd:
-    - Ongeacht de versie van Office die u gebruikt, kunt u geen 32-bits en 64-bits Office-producten op hetzelfde apparaat installeren.
-    - U kunt niet dezelfde versie van de Klik-en-Klaar- en MSI-versies van Office op hetzelfde apparaat installeren, maar wel verschillende primaire versies.
-    - Als u al een eerdere versie van Office hebt die u met Klik-en-Klaar hebt geïnstalleerd, moet u de apps verwijderen die u wilt vervangen door de nieuwere versie. Als er bijvoorbeeld een oudere versie van Word op het apparaat staat en u de nieuwste versie wilt toewijzen, moet u de oude versie eerst verwijderen.
-    - Als Office 365 op een apparaat is geïnstalleerd en u het Office 365 ProPlus 2016-pakket aan het apparaat toewijst, kan dit betekenen dat u uw Office-abonnement moet wijzigen.
+- Deze installatiemethode wordt niet in Windows 10S-apparaten ondersteund.
+- Als u dit type app de status Beschikbaar geeft en meerdere gebruikers verschillende toewijzingen verleent, zien ze alleen de toewijzing die het laatst is verleent.
 
 
 ## <a name="get-started"></a>Aan de slag

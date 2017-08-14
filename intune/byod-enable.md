@@ -1,11 +1,11 @@
 ---
 title: BYOD met Microsoft Intune inschakelen
-description: 
+description: Een werkstroom op hoog niveau voor het instellen van Intune om een bring-your-own-device (BYOD)-oplossing voor uw organisatie mogelijk te maken.
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 880b83a63eefe13a96ab8838c7092c185aa32cd0
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD met Intune inschakelen
 
@@ -27,7 +27,7 @@ De werkstroom is onderverdeeld in de volgende drie processen. U kunt aspecten va
 
 -   In **[Apparaten registreren en controleren op naleving](#enroll-devices-and-check-for-compliance)** wordt beschreven hoe u gebruikers in staat stelt hun persoonlijke apparaten te registreren voor beheer met Intune. Intune beheert iOS-, Mac OS-, Android- en Windows- apparaten. Deze sectie beschrijft ook hoe beleid wordt geïmplementeerd op apparaten en ervoor zorgt dat ze voldoen aan de basisvereisten voor beveiliging.
 
-- **[Toegang tot bedrijfsbronnen verlenen](#provide-access-to-company-resources)** laat u zien hoe de IT-afdeling het mogelijk kan maken dat gebruikers eenvoudig en veilig toegang krijgen tot bedrijfsbronnen. U doet dit door toegangsprofielen te implementeren op beheerde apparaten. In deze sectie wordt ook uitgelegd hoe u in grote aantallen gekochte app-implementaties beheert met Intune.
+- **[Toegang tot bedrijfsbronnen verlenen](#provide-access-to-company-resources)** laat zien hoe u gebruikers eenvoudig en veilig toegang kunt geven tot bedrijfsbronnen. U doet dit door toegangsprofielen te implementeren op beheerde apparaten. In deze sectie wordt ook uitgelegd hoe u in grote aantallen gekochte app-implementaties beheert met Intune.
 
 -   In **[Bedrijfsgegevens beschermen](#protect-company-data)** wordt uitgelegd hoe u voorwaardelijk toegang kunt verlenen tot bedrijfsresources, gegevensverlies kunt voorkomen en bedrijfsapps en -gegevens kunt verwijderen van apparaten die niet langer voor werk worden gebruikt of die zijn zoekgeraakt of gestolen.
 
@@ -38,19 +38,17 @@ De werkstroom is onderverdeeld in de volgende drie processen. U kunt aspecten va
 ## <a name="before-you-begin"></a>Voordat u begint
 Voordat gebruikers apparaten kunnen registreren, moet u eerst de Intune-service zelf voorbereiden. Om dit te doen, moet u [licenties toewijzen aan gebruikers](licenses-assign.md) en [de instantie voor Mobile Device Management instellen](mdm-authority-set.md).
 
-Terwijl u bezig bent, moet u ook [de bedrijfsportal aanpassen](company-portal-customize.md). Voeg een huisstijl toe en voorzie gebruikers van informatie over ondersteuning. Hiermee maakt u een vertrouwde registratie- en ondersteuningservaring voor uw gebruikers.
+Terwijl u bezig bent, moet u ook [de bedrijfsportal aanpassen](company-portal-customize.md). Voeg een huisstijl toe en voorzie gebruikers van informatie over ondersteuning. Hiermee maakt u een vertrouwde registratie- en ondersteuningservaring voor uw gebruikers. U kunt ook [voorwaarden](terms-and-conditions-create.md) opstellen die gebruikers moeten accepteren voordat ze zich inschrijven, of [apparaatbeperkingen](enrollment-restrictions-set.md) om op te geven welke platformen worden ondersteund.
 
 ## <a name="enroll-devices-and-check-for-compliance"></a>Apparaten registreren en controleren op naleving
 
 Nadat u de Intune-service hebt voorbereid, moet u voldoen aan de verschillende registratievereisten voor de verschillende apparaattypen die u wilt beheren. Het proces om apparaten voor beheer te registreren is vrij eenvoudig, maar is enigszins anders op basis van apparaattype.
 
--   **iOS- en Mac-apparaten** U hebt een [APNs-certificaat (Apple Push Notification service)](apple-mdm-push-certificate-get.md) nodig om iPads, iPhones of macOS-apparaten te registreren. Nadat u het APNs-certificaat hebt geüpload naar Intune, kunnen gebruikers [iOS-apparaten registreren](/intune-user-help/enroll-your-device-in-intune-ios) met de bedrijfsportal-app en de bedrijfsportalwebsite gebruiken om [macOS-apparaten te registreren](/intune-user-help/enroll-your-device-in-intune-macos).
+-   **iOS- en Mac-apparaten** U hebt een [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md) nodig om iPads, iPhones of macOS-apparaten te registreren. Nadat u het MDM-pushcertificaat hebt geüpload naar Intune, kunnen gebruikers [iOS-apparaten registreren](/intune-user-help/enroll-your-device-in-intune-ios) met de bedrijfsportal-app en de bedrijfsportalwebsite gebruiken om [macOS-apparaten te registreren](/intune-user-help/enroll-your-device-in-intune-macos).
 
--   **Android-apparaten** U hoeft niets te doen om de Intune-service gereed te maken voor het registreren van Android-apparaten. Gebruikers kunnen [hun Android-apparaten registreren](/intune-user-help/enroll-your-device-in-intune-android.md) voor beheer met de bedrijfsportal-app die beschikbaar is via Google Play.
+-   **Android-apparaten** U hoeft niets te doen om de Intune-service gereed te maken voor het registreren van Android-apparaten. Gebruikers kunnen [hun Android-apparaten registreren](/intune-user-help/enroll-your-device-in-intune-android) voor beheer met de bedrijfsportal-app die beschikbaar is via Google Play.
 
--   **Windows Phones en pc’s** U moet een [DNS-alias instellen voor de registratieserver](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) om het registreren van Windows-apparaten eenvoudiger te maken. Anders kunnen gebruikers [Windows-apparaten registreren](/intune-user-help/enroll-your-w10-phone-or-w10-pc-windows) door een werk- of schoolaccount toe te voegen.
-
-  - Als u Azure AD Premium hebt, kunt u het nog eenvoudiger maken voor uw gebruikers om Windows-apparaten te registreren door het [inschakelen van de automatische registratiefunctie](windows-enroll.md). Deze functie registreert een apparaat automatisch in Intune wanneer gebruikers een account voor werk of school toevoegen om hun persoonlijke apparaten te registreren. Het werkt ook voor een apparaat in bedrijfseigendom dat lid wordt van uw organisatie in Azure AD.
+-   **Windows-telefoons en pc's** Windows-apparaten kunnen worden geregistreerd met extra configuratie. U kunt de gebruikerservaring vereenvoudigen door automatisch inschrijven voor Windows 10-pc's en mobiele Windows 10-apparaten in te schakelen in Azure Active Directory (AD) Premium. Als u niet beschikt over Azure AD Premium of als u ondersteuning mogelijk wilt maken voor Windows 8.1, kunt u [een DNS-alias voor de registratieserver](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) maken om de registratie te vereenvoudigen.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Ervoor zorgen dat beheerde apparaten aan de basisvereisten voor beveiliging voldoen
@@ -61,13 +59,13 @@ Wanneer u een [nalevingsbeleid implementeert](device-compliance-get-started.md) 
 
 ## <a name="provide-access-to-company-resources"></a>Toegang tot bedrijfsresources verlenen
 
-Het eerste wat de meeste werknemers op hun mobiele apparaat willen, is toegang tot de e-mail en documenten van het bedrijf. En ze verwachten dat ze dit kunnen instellen zonder complexe stappen te doorlopen of de helpdesk te bellen. U kunt met Intune gemakkelijk [e-mailinstellingen maken en implementeren](conditional-access-intune-common-ways-use.md) voor systeemeigen e-mail-apps die vooraf worden geïnstalleerd op mobiele apparaten.
-<!--- this was old link: (https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune). check with Andre--->
+Het eerste wat de meeste werknemers op hun mobiele apparaat willen, is toegang tot de e-mail en documenten van het bedrijf. En ze verwachten dat ze dit kunnen instellen zonder complexe stappen te doorlopen of de helpdesk te bellen. U kunt met Intune gemakkelijk [e-mailinstellingen maken en implementeren](email-settings-configure.md) voor systeemeigen e-mail-apps die vooraf worden geïnstalleerd op mobiele apparaten.
+
 
 > [!NOTE]
 > Intune biedt ondersteuning voor het configureren van Android for Work-e-mailprofielen voor de Gmail- en Nine Work-e-mail-apps in de Google Play Store.
 
-Intune helpt u ook bij het beheren en beveiligen van toegang tot on-premises bedrijfsgegevens wanneer gebruikers op een externe locatie werken. [Wifi-](https://docs.microsoft.com/intune/deploy-use/wi-fi-connections-in-microsoft-intune), [VPN-](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune#create-a-vpn-profile) en e-mailprofielen van Intune geven uw gebruikers toegang tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze zich ook bevinden. De webtoepassingen en -services van uw bedrijf die on-premises worden gehost, kunnen ook op een veilige manier worden gebruikt en worden beschermd met de Azure Active Directory-toepassingsproxy en voorwaardelijke toegang.
+Intune helpt u ook bij het beheren en beveiligen van toegang tot on-premises bedrijfsgegevens wanneer gebruikers op een externe locatie werken. Met [Wi-Fi-](wi-fi-settings-configure.md), [VPN-](vpn-settings-configure.md) en e-mailprofielen van Intune hebben uw gebruikers toegang tot de bestanden en bronnen die ze nodig hebben om hun werk te doen, waar ze zich ook bevinden. De webtoepassingen en -services van uw bedrijf die on-premises worden gehost, kunnen ook op een veilige manier worden gebruikt en worden beschermd met de Azure Active Directory-toepassingsproxy en voorwaardelijke toegang.
 
 ### <a name="manage-volume-purchased-apps"></a>Apps beheren die zijn gekocht via het volume-aankoopprogramma
 Met Intune is het eenvoudig om:
@@ -109,8 +107,8 @@ U kunt [beleid voor Windows-gegevensbescherming](app-protection-policies-configu
 
 ### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Bedrijfsgegevens wissen met behoud van persoonlijke gegevens
 
-Wanneer een apparaat niet langer nodig is voor het werk, voor een ander doel wordt gebruikt of is kwijtgeraakt, moet u de bedrijfs-apps en -gegevens van het apparaat kunnen verwijderen. U kunt dit doen door de mogelijkheden voor wissen en selectief wissen van Intune te gebruiken. Gebruikers kunnen via de Intune-bedrijfsportal ook op afstand gegevens wissen van de apparaten die hun persoonlijke eigendom zijn, als die zijn geregistreerd in Intune.
+Wanneer een apparaat niet langer nodig is voor het werk, voor een ander doel wordt gebruikt of is kwijtgeraakt, kunt u de bedrijfs-apps en -gegevens van het apparaat verwijderen. U kunt dit doen door de mogelijkheden voor wissen en selectief wissen van Intune te gebruiken. Gebruikers kunnen via de Intune-bedrijfsportal ook op afstand gegevens wissen van de apparaten die hun persoonlijke eigendom zijn, als die zijn geregistreerd in Intune.
 
 Met [Volledig wissen](devices-wipe.md) worden de fabrieksinstellingen van een apparaat hersteld en worden alle gebruikersgegevens en -instellingen verwijderd. Met [selectief wissen](devices-wipe.md#selective-wipe) worden alleen bedrijfsgegevens van het apparaat verwijderd, maar blijven de persoonlijke gegevens van de gebruiker intact.
 
-Na het starten wordt het proces voor selectief wissen onmiddellijk uitgevoerd om het apparaat uit het beheer te verwijderen. Wanneer het proces is voltooid, zijn alle bedrijfsgegevens verwijderd en is de naam van het apparaat verwijderd uit de Intune-beheerconsole. Hiermee wordt het levenscyclusbeheer van het apparaat voltooid.
+Na het starten wordt het proces voor selectief wissen onmiddellijk uitgevoerd om het apparaat uit het beheer te verwijderen. Wanneer het proces is voltooid, zijn alle bedrijfsgegevens verwijderd en is de naam van het apparaat verwijderd uit de Intune-portal. Hiermee wordt het levenscyclusbeheer van het apparaat voltooid.

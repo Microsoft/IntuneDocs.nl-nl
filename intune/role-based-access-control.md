@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Intune
 
@@ -57,9 +57,9 @@ Alleen gebruikers met de rol **Intune-servicebeheerder** met volledige machtigin
 
 De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere configuratie aan groepen toewijzen:
 
-- **Helpdesk-operator**: voert externe taken uit voor gebruikers en apparaten en kan toepassingen of beleid toewijzen aan gebruikers of apparaten. 
+- **Helpdesk-medewerker**: voert externe taken uit voor gebruikers en apparaten en kan toepassingen of beleid toewijzen aan gebruikers of apparaten.
 - **Beleid- en profielbeheerder**: beheert het nalevingsbeleid, configuratieprofielen, Apple-inschrijving en id's van bedrijfsapparaten.
-- **Operator met Alleen lezen-machtiging**: kan alleen gebruikers-, apparaat-, inschrijvings-, configuratie- en toepassingsgegevens weergeven en kan geen wijzigingen aanbrengen in Intune.
+- **Operator met alleen-lezenmachtiging**: kan alleen gebruikers-, apparaat-, inschrijvings-, configuratie- en toepassingsgegevens weergeven. Kan geen wijzigingen aan Intune aanbrengen.
 - **Toepassingsbeheerder**: beheert mobiele en beheerde toepassingen en kan de apparaatgegevens lezen.
 
 ### <a name="to-assign-a-built-in-role"></a>Een ingebouwde rol toewijzen
@@ -68,9 +68,9 @@ De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere config
 
 2. Kies op de blade <*rolnaam*> - **Eigenschappen** de optie **Beheren** en vervolgens **Toewijzingen**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > U kunt ingebouwde rollen niet verwijderen of bewerken
-    
+
 3. Kies op de blade voor aangepaste rollen de optie **Toewijzen**.
 
 4. Voer op de blade **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
@@ -85,7 +85,7 @@ De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere config
 
 ## <a name="custom-roles"></a>Aangepaste rollen
 
-U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voor een bepaalde taakfunctie. Als met een groep voor de IT-afdeling bijvoorbeeld toepassingen, beleidsregels en configuratieprofielen worden beheerd, kunt u al deze machtigingen samenvoegen in één aangepaste rol.
+U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voor een bepaalde taakfunctie. Als een groep van de IT-afdeling bijvoorbeeld toepassingen, beleidsregels en configuratieprofielen beheert, kunt u al deze machtigingen samenvoegen tot één aangepaste rol.
 
 > [!IMPORTANT]
 > Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volgende machtigingen hebben in Azure AD:

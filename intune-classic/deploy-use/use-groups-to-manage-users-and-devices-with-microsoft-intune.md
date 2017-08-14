@@ -14,11 +14,11 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c5acd617e9d69fa23455d382dfd78518e52515b
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Groepen gebruiken om gebruikers en apparaten te beheren in Microsoft Intune
 
@@ -32,7 +32,7 @@ In dit onderwerp wordt beschreven hoe u groepen maakt in Intune. Het onderwerp b
 >
 >![Schermafbeelding van de koppeling naar Azure-groepsbeheer](../media/groups-link-azure.png) 
 >
->Als de koppeling naar de Azure AD-portal niet wordt weergegeven, gebruikt u nog steeds de *huidige* methode voor groepsbeheer. Deze wordt beschreven in het onderwerp [Groepen maken om gebruikers en apparaten te beheren met Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune).
+>Als de koppeling naar de Azure AD-portal niet wordt weergegeven, gebruikt u nog steeds de *huidige* methode voor groepsbeheer, zoals beschreven in [Groepen maken](#create-groups) in dit onderwerp.
 
 In dit onderwerp wordt beschreven hoe u Intune-groepen maakt in de Intune-beheerconsole.
 
