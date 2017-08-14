@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Problemen met de registratie van uw Windows 10-apparaat oplossen
 Als u de stappen in [Uw Windows 10 Mobile- of Windows 10-desktopapparaat registreren bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md) hebt gevolgd, maar u nog steeds geen toegang hebt tot de e-mails en bestanden van uw werk- of schoolaccount, volgt u deze stappen voor probleemoplossing.
@@ -54,5 +54,9 @@ Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt to
 - Als u uw werk- of schoolaccount ziet, is het gelukt. U bent verbonden.
 
 - Als u uw werk- of schoolaccount niet ziet, tikt u op **Verbinding maken** en meldt u zich aan met de referenties van uw werk- of schoolaccount.
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Probleemoplossingsstappen als u Werk- of schoolaccount instellen ziet
+
+Als u een bericht ziet met de tekst __Er is geen beheereindpunt automatisch gedetecteerd dat overeenkomt met de ingevoerde gebruikersnaam. Controleer de gebruikersnaam en probeer het opnieuw. Als u de URL naar het beheereindpunt kent, voert u deze in.__, voert u vervolgens de gebruikersnaam en het wachtwoord opnieuw in. Als dit ook niet werkt, neemt u contact op met de IT-beheerder van de website die u moet opgeven in het tekstvak **Beheereindpunt**. Deze website ziet er waarschijnlijk als volgt uit: **www.yourcompany.onmicrosoft.com**. 
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.

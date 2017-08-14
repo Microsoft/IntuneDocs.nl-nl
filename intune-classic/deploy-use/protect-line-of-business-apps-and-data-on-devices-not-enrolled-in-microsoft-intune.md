@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune
 
@@ -31,7 +31,7 @@ In dit onderwerp wordt uitgelegd wat de vereiste stappen zijn om MAM-beleid toe 
 
 ##  <a name="step-1-prepare-the-app"></a>Stap 1: De app voorbereiden
 
-Voordat u MAM-beleid op een app kunt toepassen, moet u de app eerst verpakken met de Microsoft Intune App Wrapping Tool voor [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) of de [Intune App SDK](/intune/app-sdk) gebruiken om handmatig de beveiligingsfuncties voor Intune-apps te integreren.
+Voordat u MAM-beleidsregels op een app kunt toepassen, moet u de app eerst verpakken met de Microsoft Intune App Wrapping Tool voor [iOS](/intune/app-wrapper-prepare-ios) en [Android](/intune/app-wrapper-prepare-android) of de [Intune App SDK](/intune/app-sdk) gebruiken om handmatig de beveiligingsfuncties voor Intune-apps te integreren.
 
 Zie [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](/intune/apps-prepare-mobile-application-management)voor meer informatie over het gebruik van de App Wrapping Tool versus de Intune App SDK.
 

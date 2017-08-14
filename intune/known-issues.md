@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -37,7 +37,7 @@ Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapp
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Groepen die tijdens de migratie door Intune zijn gemaakt, hebben mogelijk invloed op de functionaliteit van andere Microsoft-producten
 
-Wanneer u van de klassieke Intune-portal naar Azure migreert, ziet u mogelijk een nieuwe groep met de naam **Alle gebruikers - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Deze groep bevat alle gebruikers in uw Azure Active Directory, niet alleen gebruikers met een Intune-licentie. Dit gebruik kan problemen veroorzaken met andere Microsoft-producten, als u verwacht dat sommige bestaande of nieuwe gebruikers van geen enkele groep lid zijn.
+Wanneer u van de klassieke Intune-portal naar Azure Portal migreert, ziet u mogelijk een nieuwe groep met de naam **Alle gebruikers - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Deze groep bevat alle gebruikers in uw Azure Active Directory, niet alleen gebruikers met een Intune-licentie. Dit gebruik kan problemen veroorzaken met andere Microsoft-producten, als u verwacht dat sommige bestaande of nieuwe gebruikers van geen enkele groep lid zijn.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Secundaire migratie vereist is voor bepaalde mogelijkheden
 
@@ -51,12 +51,12 @@ Intune-accounts die voor januari 2017 zijn gemaakt, moeten worden gemigreerd voo
 
 Deze mogelijkheden kunnen niet worden beheerd in de klassieke Silverlight- en de Azure-console. Daarom zal de migratie:
 - Ze in de klassieke console uitschakelen
-- Ze in de Azure-console inschakelen.  
+- Ze in de Azure-console inschakelen  
 
 Als u deze Intune-mogelijkheden nu in Azure Portal beheert, moet u rekening houden met de volgende punten:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>De standaardprofielen voor de registratie van bedrijfsapparaten in Apple DEP worden verwijderd
-Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de klassieke Silverlight Intune-console, wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in Azure Portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
+Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de klassieke Silverlight Intune-console, wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in de Azure portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-token hersteld met migratie
 
@@ -64,8 +64,7 @@ Als u een token van Apple Device Enrollment Program hebt verwijderd in de klassi
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblades voor gemigreerde beleidsregels werken niet
 
-U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd vanuit de klassieke portal naar Azure Portal. U kunt rapporten voor dit beleid echter blijven bekijken in de klassieke portal.
-Als u statusinformatie voor gemigreerde configuratiebeleid wilt weergeven, maakt u ze opnieuw in Azure Portal.
+U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd vanuit de klassieke portal naar Azure Portal. U kunt rapporten voor dit beleid echter blijven bekijken in de klassieke portal. Als u statusinformatie voor gemigreerde configuratiebeleid wilt weergeven, maakt u ze opnieuw in Azure Portal.
 
 ## <a name="apps"></a>Apps
 
@@ -109,9 +108,9 @@ Zie [Wat is apparaatcompatibiliteit](device-compliance.md) voor meer informatie.
 
 ## <a name="data-protection"></a>Gegevensbescherming
 
-### <a name="ios-app-protection-policies"></a>Beleidsregels voor de beveiliging van iOS-apps
+### <a name="ios-app-protection-policies"></a>Beleidsregels voor beveiliging van iOS-apps
 
-U kunt [beleidsregels voor de beveiliging van iOS-apps](app-protection-policy-settings-ios.md) definiëren, die beschikbaar zijn voor gebruikers met apparaten die worden beheerd via MAM zonder inschrijving. Vanwege een tijdelijke fout kunt u deze beleidsregels alleen definiëren voor iOS-versienummers met één decimale punt en niet voor versienummers met meerdere decimale punten. In plaats van dat u iOS 10.3.1 als minimumversie instelt, stelt u de beleidsregels in voor iOS 10.3. Deze fout wordt in een toekomstige update van de iOS-SDK opgelost.
+U kunt [beleidsregels voor de beveiliging van iOS-apps](app-protection-policy-settings-ios.md) definiëren, die beschikbaar zijn voor gebruikers met apparaten die worden beheerd via beheer van mobiele apps (MAM) zonder inschrijving. Vanwege een tijdelijke fout kunt u deze beleidsregels alleen definiëren voor iOS-versienummers met één decimale punt en niet voor versienummers met meerdere decimale punten. In plaats van dat u iOS 10.3.1 als minimumversie instelt, stelt u de beleidsregels in voor iOS 10.3. Deze fout wordt in een toekomstige update van de iOS-SDK opgelost.
 
 
 ## <a name="administration-and-accounts"></a>Beheer en accounts

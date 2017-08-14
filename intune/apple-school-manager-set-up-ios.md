@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +15,43 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73556209c88759ffe0747d9927cbcbb49600e0c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7079a22afc04b5674eb8f12a2833961e86939a28
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met de informatie in dit onderwerp kunnen IT-beheerders iOS-apparaten inschrijven die zijn aangeschaft via het [Apple School Manager](https://school.apple.com/) (ASM) Program. Microsoft Intune kan een inschrijvingsprofiel draadloos implementeren waarmee ASM-apparaten voor beheer worden ingeschreven. De beheerder heeft de beheerde apparaten zelf niet te bedienen. Een ASM-profiel bevat beheerinstellingen die worden toegepast op apparaten tijdens de inschrijving, inclusief opties voor Configuratieassistent.
+Met de informatie in dit onderwerp kunnen IT-beheerders iOS-apparaten inschrijven die zijn aangeschaft via het programma [Apple School Manager](https://school.apple.com/). Microsoft Intune kan een inschrijvingsprofiel draadloos implementeren waarmee Apple School Manager-apparaten voor beheer worden ingeschreven. De beheerder hoeft de beheerde apparaten nooit aan te raken. Het inschrijvingsprofiel bevat beheerinstellingen die tijdens de inschrijving op de apparaten worden toegepast, inclusief opties voor de configuratie-assistent.
 
-**Stappen voor ASM-inschrijving**
-1. [Een ASM-token ophalen en apparaten toewijzen](#get-the-asm-token-and-assign-devices)
-2. [Een inschrijvingsprofiel maken](#create-an-apple-enrollment-profile)
+**Inschrijvingsstappen voor Apple School Manager**
+1. [Een Apple School Manager-token downloaden en apparaten toewijzen](#get-the-apple-token-and-assign-devices)
+2. [Een registratieprofiel maken](#create-an-apple-enrollment-profile)
 3. [Verbinding maken met Schoolgegevens synchroniseren](#connect-school-data-sync) (optioneel)
-4. [ASM-beheerde apparaten synchroniseren](#sync-asm-managed-devices)
-5. [ASM-profiel aan apparaten toewijzen](#assign-an-asm-profile-to-devices)
+4. [Door Apple School Manager beheerde apparaten synchroniseren](#sync-managed-devices)
+5. [Een Apple School Manager-profiel aan apparaten toewijzen](#assign-a-profile-to-devices)
 6. [Apparaten onder gebruikers distribueren](#distribute-devices-to-users)
 
 >[!NOTE]
->ASM-inschrijving kan niet worden gebruikt met het Apple [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) of het [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)account van Intune.
+>Inschrijving van Apple School Manager kan niet worden gebruikt met [DEP van Apple](device-enrollment-program-enroll-ios.md) of de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
 
-## <a name="get-the-apple-asm-token-and-assign-devices"></a>Een ASM-token ophalen en apparaten toewijzen
+## <a name="get-the-apple-token-and-assign-devices"></a>De Apple-token downloaden en apparaten toewijzen
 
-Voordat u iOS-apparaten van het bedrijf met Apple School Manager (ASM) kunt inschrijven, moet u een ASM-token (.p7m) van Apple ontvangen. Intune kan met dit token informatie synchroniseren over apparaten die aan ASM deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen. Als u zich in de Apple-portal bevindt, kunt u ook apparaatserienummers voor beheer toewijzen.
+Voordat u iOS-bedrijfsapparaten met Apple School Manager kunt inschrijven, hebt u een token (.p7m) van Apple nodig. Intune kan met dit token informatie synchroniseren over apparaten die aan Apple School Manager deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen. Als u zich in de Apple-portal bevindt, kunt u ook apparaatserienummers voor beheer toewijzen.
 
 **Vereisten**
 - [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
 - Aangemeld voor [Apple School Management](http://school.apple.com)
 
-**Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple ASM-token.**<br>
+**Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple-token.**<br>
 1. Kies in de Azure [Intune portal](https://aka.ms/intuneportal) achtereenvolgens **Apparaatinschrijving** en **Enrollment Program-token**.
 2. Selecteer op de blade **Enrollment Program-token** **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple School Manager aan te vragen.
 
-**Stap 2. Een ASM-token ophalen en apparaten toewijzen.**<br>
-Selecteer **Een token via Apple School Manager maken** en meld u aan met de Apple id van uw bedrijf. Deze Apple ID kunt u gebruiken om uw ASM-token te verlengen.
+**Stap 2. Download een token en wijs apparaten toe.**<br>
+Selecteer **Een token via Apple School Manager maken** en meld u aan met de Apple id van uw bedrijf. U kunt dit Apple-id gebruiken om uw Apple School Manager-token te verlengen.
 
    1.  Ga in de [portal Apple School Manager](https://school.apple.com) naar **MDM-servers** en selecteer vervolgens **MDM-server toevoegen** (rechtsboven).
    2.  Voer de **MDM-servernaam** in. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
@@ -59,13 +59,13 @@ Selecteer **Een token via Apple School Manager maken** en meld u aan met de Appl
    4.  Selecteer **Token ophalen** en download het servertokenbestand (.p7m) naar uw computer.
    5. Ga naar **Toewijzingen van apparaten** en **Apparaat kiezen** door handmatige invoer van de **serienummers** of het **volgordenummer**, of selecteer **CSV-bestand uploaden**.
    6.   Selecteer de actie **Toewijzen aan server** en selecteer de **MDM-server** die u hebt gemaakt.
-   7. Geef een manier op voor **Apparaten kiezen**, voer de apparaatgegevens in en geef details op aan de hand van **serienummer** en **bestelnummer** of voer **CSV-bestand uploaden** uit.
+   7. Geef uw apparaat aan onder **Apparaten kiezen** en geef de apparaatgegevens op.
    8. Selecteer **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
 
-**Stap 3. Voer de Apple-id in die u hebt gebruikt om uw ASM-token te maken.**<br>Deze id moet worden gebruikt om uw Apple ASM-token te verlengen en wordt voor toekomstige referentie opgeslagen.
+**Stap 3. Voer de Apple-id in die u hebt gebruikt om uw Apple School Manager-token te maken.**<br>Deze id moet worden gebruikt om uw Apple School Manager-token te verlengen. De id wordt voor toekomstige referentie opgeslagen.
 
 **Stap 4. Uw token zoeken en uploaden.**<br>
-Ga naar het certificaatbestand (.p7m), kies **Openen** en kies vervolgens **Uploaden**. Intune synchroniseert automatisch de ASM-apparaten van Apple.
+Ga naar het certificaatbestand (.p7m), kies **Openen** en kies vervolgens **Uploaden**. Intune synchroniseert automatisch de Apple School Manager-apparaten van Apple.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
 Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
@@ -76,17 +76,17 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 4. Voer op de blade **Inschrijvingsprofiel maken** een **naam** en een **beschrijving** in voor het profiel dat wordt weergegeven in de Intune-portal.
 5. Geef voor **Gebruikersaffiniteit** aan of u andere apparaten met dit profiel wilt inschrijven met of zonder gebruikersaffiniteit.
 
- - **Inschrijven met gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie en kan vervolgens toegang krijgen tot gegevens en e-mail van het bedrijf. Kies de gebruikersaffiniteit voor de ASM-beheerde apparaten waarop gebruikers zich met hun beheerde Apple-id aanmelden.
+ - **Inschrijven met gebruikersaffiniteit**: hiermee wordt het apparaat tijdens de installatie aan een gebruiker gelieerd.
 
  >[!NOTE]
- >Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op ASM-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten.
+ >Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op Apple School Manager-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten.
 
-  Voor de modus Gedeelde iPad in Apple School Manager moeten gebruiker inschrijven met gebruikersaffiniteit.
+  Voor de modus Gedeelde iPad in Apple School Manager moeten gebruikers worden ingeschreven zonder gebruikersaffiniteit.
 
  >[!NOTE]
-    >Voor ASM met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >Voor Apple School Manager met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Inschrijven zonder gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor gebruikersaffiniteit is vereist, zoals de bedrijfsportal-app die wordt gebruikt voor het installeren van LOB-apps, zullen niet werken.
+ - **Inschrijven zonder gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor gebruikersaffiniteit is vereist, zoals de bedrijfsportal-app die wordt gebruikt voor het installeren van LOB-apps, werken niet.
 
 6. Selecteer **Instellingen voor apparaatbeheer**. Deze items worden ingesteld tijdens de activering en om deze te wijzigen, moeten de instellingen naar de fabrieksinstellingen worden hersteld. configureer de volgende profielinstellingen en selecteer vervolgens **Opslaan**:
 
@@ -94,10 +94,10 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
     - **Vergrendelde inschrijving** (vereist Onder supervisie als beheermodus): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd.
 
-  - **Gedeelde iPad**: hiervoor zijn **Inschrijven met gebruikersaffiniteit** en de **supervisie**modus vereist.) Hiermee kunnen meerdere gebruikers aanmelden bij geregistreerde iPads met een beheerde Apple-id. Beheerde Apple-id's worden gemaakt in de portal Apple School Manager.
+  - **Gedeelde iPad**: (hiervoor zijn **Inschrijven zonder gebruikersaffiniteit** en de modus **Onder supervisie** vereist.) Hiermee kunnen meerdere gebruikers zich met een beheerde Apple-id aanmelden bij geregistreerde iPads. Beheerde Apple-id's worden gemaakt in de portal Apple School Manager.
 
   >[!NOTE]
-  >Als de modus **Gedeelde iPad** is ingeschakeld in een profiel en **Gebruikersaffiniteit** of de **supervisie**modus vervolgens wordt ingesteld op **Uit**, wordt de modus Gedeelde iPad uitgeschakeld voor het inschrijvingsprofiel.
+  >Als **Gebruikersaffiniteit** is ingesteld op **Met gebruikersaffiniteit** of als de modus **Onder supervisie** is ingesteld op **Uit**, wordt de modus Gedeelde iPad uitgeschakeld voor het inschrijvingsprofiel.
 
   - **Maximum aantal gebruikers in cache**: (hiervoor moet **Gedeelde iPad** = **Ja** zijn ingesteld) hiermee wordt voor elke gebruiker een partitie gemaakt op het apparaat. De aanbevolen waarde is het aantal studenten dat het apparaat waarschijnlijk gaat gebruiken gedurende een bepaalde periode. Als bijvoorbeeld zes studenten het apparaat door de week gebruiken, stelt u dit aantal in op zes.  
 
@@ -125,40 +125,40 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 8. Selecteer **Maken** op de blade **Inschrijvingsprofiel maken** om de profielinstellingen op te slaan.
 
 ## <a name="connect-school-data-sync"></a>Verbinding maken met Schoolgegevens synchroniseren
-(Optioneel) ASM biedt ondersteuning voor het synchroniseren van gegevens van het lesrooster naar Azure Active Directory (AD) met Microsoft School Data Sync (SDS). Voltooi de volgende stappen voor het gebruik van SDS om schoolgegevens te synchroniseren.
+(Optioneel) Apple School Manager biedt ondersteuning voor het synchroniseren van gegevens van het lesrooster met Azure Active Directory (AD) met Microsoft School Data Sync (SDS). Voltooi de volgende stappen voor het gebruik van SDS om schoolgegevens te synchroniseren.
 
 1. Selecteer op de blade **Token voor het inschrijvingsprogramma** de blauwe informatiebanner of **Verbinding maken met SDS**.
 2. Selecteer **Toestaan dat dit token wordt gebruikt door Microsoft School Data Sync** waardoor deze instelling wordt **Toegestaan**. Met deze instelling kan Intune verbinding maken met SDS in Office 365.
-3. Als u een verbinding tussen ASM en Azure AD wilt maken, selecteert u **Microsoft School Data Sync instellen**. Meer informatie over [het instellen van Microsoft School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
+3. Als u een verbinding tussen Apple School Manager en Azure AD wilt maken, selecteert u **Microsoft School Data Sync instellen**. Meer informatie over [het instellen van Microsoft School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
 4. Klik op **OK** om de gegevens op te slaan en door te gaan.
 
-## <a name="sync-asm-managed-devices"></a>ASM-beheerde apparaten synchroniseren
-Nu Intune toestemming heeft om uw ASM-apparaten te beheren, kunt u Intune synchroniseren met de ASM-service om uw beheerde apparaten weer te geven in de Intune-portal.
+## <a name="sync-managed-devices"></a>Beheerde apparaten synchroniseren
+Nu Intune toestemming heeft om uw Apple School Manager-apparaten te beheren, kunt u Intune synchroniseren met de Apple-service om uw beheerde apparaten weer te geven in de Intune-portal.
 
 1. Kies in de Intune-portal achtereenvolgens**Apparaatinschrijving** en **Apple-inschrijving**.
 2. Selecteer **Synchroniseren** onder **Apparaten voor het inschrijvingsprogramma**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
 
-    Om te voldoen aan de voorwaarden van Apple voor acceptabel ASM-verkeer, worden door Intune de volgende beperkingen opgelegd:
-     -  Een volledige ASM-synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
+    Om te voldoen aan de voorwaarden van Apple voor acceptabel verkeer, worden de volgende beperkingen opgelegd:
+     -  Een volledige synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
      -  Een synchronisatieaanvraag krijgt 15 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
 
 >[!NOTE]
->U kunt ook ASM-serienummers toewijzen aan profielen op de blade **Apparaten voor het inschrijvingsprogramma**.
+>U kunt ook Apple School Manager-serienummers toewijzen aan profielen vanaf de blade **Apparaten voor het inschrijvingsprogramma**.
 
-## <a name="assign-an-asm-profile-to-devices"></a>Een ASM-profiel aan apparaten toewijzen
-ASM-apparaten die worden beheerd door Intune, moeten een ASM-profiel toegewezen krijgen voordat ze worden ingeschreven.
+## <a name="assign-a-profile-to-devices"></a>Een profiel aan apparaten toewijzen
+Apple School Manager-apparaten die worden beheerd door Intune, moeten een profiel voor het inschrijvingsprogramma toegewezen krijgen voordat ze worden ingeschreven.
 
 1. Kies **Apparaten inschrijven** > **Apple-inschrijving** in de Intune-portal en selecteer vervolgens **Profielen voor het inschrijvingsprogramma**.
 2. Selecteer in de lijst met **Profielen voor het inschrijvingsprogramma** het profiel dat u wilt toewijzen aan apparaten en selecteer vervolgens **Toewijzingen van apparaten**
-3. Selecteer **Toewijzen** en selecteer vervolgens de ASM-apparaten die u aan dit profiel wilt toewijzen. U kunt filteren om beschikbare ASM-apparaten weer te geven:
+3. Selecteer **Toewijzen** en selecteer vervolgens de Apple School Manager-apparaten die u aan dit profiel wilt toewijzen. U kunt filteren om beschikbare apparaten weer te geven:
   - **niet-toegewezen**
   - **alle**
-  - **&lt;ASM-profielnaam&gt;**
-4. Selecteer de apparaten die u wilt beheren. Het selectievakje boven de kolom selecteert maximaal 1000 apparaten in de lijst. Klik op **Toewijzen**. Als u meer dan 1000 apparaten wilt registreren, herhaalt u de stappen voor toewijzing totdat alle ASM-profielen zijn toegewezen.
+  - **&lt;Naam Apple School Manager-profiel&gt;**
+4. Selecteer de apparaten die u wilt beheren. Het selectievakje boven de kolom selecteert maximaal 1000 apparaten in de lijst. Klik op **Toewijzen**. Als u meer dan 1000 apparaten wilt registreren, herhaalt u de stappen voor toewijzing totdat aan alle apparaten een inschrijvingsprofiel is toegewezen.
 
 ## <a name="distribute-devices-to-users"></a>Apparaten onder gebruikers distribueren
 
-U kunt apparaten in bedrijfseigendom nu distribueren aan gebruikers. Wanneer een iOS ASM-apparaat wordt ingeschakeld, wordt het ingeschreven voor beheer door Intune. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen.
+U kunt apparaten in bedrijfseigendom nu distribueren aan gebruikers. Wanneer een iOS Apple School Manager-apparaat wordt ingeschakeld, wordt het door Intune ingeschreven voor beheer. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen.
 
 ### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Hoe gebruikers de bedrijfsportal op hun apparaten installeren en gebruiken
 

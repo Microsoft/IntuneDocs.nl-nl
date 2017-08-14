@@ -3,8 +3,8 @@ title: App-beveiligingsbeleid controleren
 titleSuffix: Intune on Azure
 description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 241ae7d2d615cd58babfc2d14b98e2bfb2f63f7d
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
 ![De tegel Samenvatting op het tabblad Intune Mobile Application Management](./media/app-protection-user-status-summary.png)
 
--   **Gebruikers:** het totale aantal gebruikers in uw bedrijf dat gebruikmaakt van de apps die zijn gekoppeld aan het beleid.
+-   **Gebruikers**: het totale aantal gebruikers in uw bedrijf dat een app gebruikt die is gekoppeld aan een beleid binnen een werkcontext.
 
--   **BEHEERD DOOR BELEID**: het aantal gebruikers dat ten minste een van de apps in de werkcontext heeft gebruikt.
+-   **BEHEERD DOOR BELEID**: het aantal gebruikers dat een app heeft gebruikt en waaraan een beleid is toegewezen in een werkcontext.
 
--   **GEEN BELEID:** het aantal gebruikers dat gebruikmaakt van de apps die zijn gekoppeld aan het beleid, maar op wie het beleid niet is gericht. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
+-   **GEEN BELEID**: het aantal gebruikers dat een app gebruikt en waarop geen beleid van toepassing is in een werkcontext. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
+    > [!NOTE]
+    > Als u meerdere beleidsregels per platform hebt, wordt een gebruiker beschouwd als te worden beheerd door beleid als er ten minste één beleidsregel aan hem of haar is toegewezen.
 
 - **Gemarkeerde gebruikers:** het aantal gebruikers dat problemen ondervindt. Momenteel worden onder **Gemarkeerde gebruikers** alleen gebruikers met gekraakte apparaten gerapporteerd.
 

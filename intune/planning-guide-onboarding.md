@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Uw Intune-abonnement implementeren
 
@@ -32,7 +32,7 @@ De belangrijkste vereisten voor de zelfstandige versie van Intune zijn:
 
 -   Enterprise Mobility + Security (EMS)/Intune-abonnement
 
--   Office 365-abonnement (voor Office-apps en door MAM-beleid beheerde apps)
+-   Office 365-abonnement (voor Office-apps en door beveiligingsbeleid voor apps beheerde apps)
 
 -   Apple APNs-certificaat (voor het beheer van het iOS-apparaatplatform)
 
@@ -109,7 +109,7 @@ Intune biedt ondersteuning voor e-mail, wifi en VPN-profielen. Voeg waar nodig d
 
 ### <a name="task-10-add-and-deploy-apps"></a>Taak 10: Apps toevoegen en implementeren
 
-Intune biedt ondersteuning voor de implementatie van web-, bedrijfstakgerichte en openbare store-apps. U kunt ook apps beheren waarin de Intune SDK is geïntegreerd door deze te koppelen aan MAM-beleid. Voeg waar nodig apps toe en implementeer deze voor doelgroepen op basis van de use cases en vereisten van uw Intune-implementatie.
+Intune biedt ondersteuning voor de implementatie van web-, bedrijfstakgerichte en openbare store-apps. U kunt ook apps beheren waarin de Intune SDK is geïntegreerd door deze te koppelen aan beveiligingsbeleid voor apps. Voeg waar nodig apps toe en implementeer deze voor doelgroepen op basis van de use cases en vereisten van uw Intune-implementatie.
 
 -   Meer informatie over [apps toevoegen en implementeren](app-management.md).
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
 
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Opnieuw instellen van telefoon**: hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen.
 -   **USB-verbinding (alleen mobiel)**: hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen krijgen tot externe opslagapparaten.
 -   **AntiTheft-modus (alleen mobiel)**: hiermee configureert u of de AntiTheft-modus van Windows is ingeschakeld.
--   **Meldingen van het Actiecentrum (alleen mobiel)**: hiermee schakelt u de meldingen van het actiecentrum op het vergrendelingsscherm van het apparaat in of uit (alleen voor Windows 10 Mobile).
 -   **Cortana**: hiermee schakelt u de spraakassistent Cortana in en uit.
 -   **Spraakopname (alleen mobiel)**: hiermee kunt u het gebruik van het spraakopnameapparaat van het apparaat toestaan of blokkeren.
--   **Instellingen voor in-/uitschakelen en slaapstand wijzigen (alleen desktop)**: hiermee voorkomt u dat de eindgebruiker de instellingen voor in-/uitschakelen en de slaapstand op het apparaat wijzigt.
--   **Regio-instellingen aanpassen (alleen desktop)**: hiermee voorkomt u dat de eindgebruiker de regionale instellingen op het apparaat wijzigt.
--   **Taalinstellingen wijzigen (alleen bureaublad)**: hiermee voorkomt u dat de eindgebruiker de taalinstellingen op het apparaat wijzigt.
--   **Systeemtijd wijzigen**: hiermee voorkomt u dat de eindgebruiker de datum en tijd van het apparaat wijzigt.
--   **Apparaatnaam wijzigen**: hiermee voorkomt u dat de eindgebruiker de apparaatnaam wijzigt.
+-   **Apparaatnaam wijzigen**: hiermee voorkomt u dat de eindgebruiker de apparaatnaam wijzigt (alleen voor Windows 10 Mobile)
 -   **Inrichtingspakketten toevoegen**: hiermee blokkeert u de runtime configuratieagent die inrichtingspakketten installeert.
 -   **Inrichtingspakketten verwijderen**: hiermee blokkeert u de runtime configuratieagent die inrichtingspakketten verwijdert.
 -   **Apparaatdetectie**: hiermee voorkomt u dat een apparaat wordt gedetecteerd door andere apparaten.
@@ -67,7 +62,7 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
     -   **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: hiermee geeft u de hoeveelheid tijd op die een apparaat inactief moet zijn voordat het scherm wordt vergrendeld.
     -   **Wachtwoord verloopt (dagen)**: hiermee geeft u de hoeveelheid tijd op waarna het wachtwoord van een apparaat moet worden gewijzigd.
     -   **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
-    -   **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**: hiermee geeft u aan dat de gebruiker een wachtwoord moet opgeven om het apparaat te ontgrendelen (alleen voor Windows 10 Mobile).
+    -   **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (alleen voor Mobile)**: hiermee geeft u aan dat de gebruiker een wachtwoord moet opgeven om het apparaat te ontgrendelen (alleen voor Windows 10 Mobile).
     -   **Eenvoudige wachtwoorden**: hiermee kunt u instellen dat eenvoudige wachtwoorden zijn toegestaan, zoals 1111 en 1234. Met deze instelling kunt u ook het gebruik van afbeeldingswachtwoorden toestaan of blokkeren.
 -   **Versleuteling**: hiermee schakelt u versleuteling in op bepaalde apparaten (alleen voor Windows 10 Mobile) inschakelen.
 
@@ -105,6 +100,7 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 -   **Appgegevens installeren op systeemvolume**: apps kunnen geen gegevens opslaan op het systeemvolume van het apparaat.
 -   **Apps installeren op systeemstation**: apps kunnen geen gegevens opslaan op het systeemstation van het apparaat.
 -   **Game-DVR (alleen desktop)**: hiermee bepaalt u of het opnemen en uitzenden van games is toegestaan.
+-   **Alleen voor apps van de Store**: hiermee bepaalt u of gebruikers apps kunnen installeren vanuit locaties anders dan de App Store.
 
 
 
@@ -112,7 +108,6 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 -   **Microsoft Edge-browser (alleen mobiele apparaten)**: hiermee staat u het gebruik van de Edge-webbrowser toe op het apparaat.
 -   **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: gebruik deze optie als u in Edge geen lijst met suggesties wilt weergeven wanneer u typt in een vervolgkeuzelijst. Dit helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Edge en Microsoft-services.
 -   **Favorieten synchroniseren tussen Microsoft-browsers (alleen desktop)**: hiermee kunnen favorieten worden gesynchroniseerd tussen Internet Explorer en Edge.
--   **SmartScreen**: hiermee schakelt u SmartScreen in of uit, waarmee frauduleuze websites worden geblokkeerd.
 -   **Do Not Track-headers verzenden**: hiermee configureert u de Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
 -   **Cookies**: hiermee kunnen internetcookies in de browser op het apparaat worden opgeslagen.
 -   **JavaScript**: hiermee staat u de uitvoering van scripts, zoals JavaScript, toe in de Microsoft Edge-browser.
@@ -130,13 +125,16 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 -   **Startpagina's**: hiermee kunt u een lijst met sites toevoegen die u wilt gebruiken als startpagina's in Edge (alleen desktop).
 -   **Wijzigingen van de startpagina**: hiermee kunnen gebruikers de startpagina's wijzigen die worden weergegeven bij het openen van Edge. Gebruik de instelling Startpagina's om de pagina, of een lijst van pagina's, te maken die u wilt openen bij het starten van Edge.
 -   **Toegang tot about-vlaggen blokkeren**: Hiermee voorkomt u dat de eindgebruiker toegang krijgt tot de pagina met about-vlaggen in Edge. Op deze pagina staan instellingen voor ontwikkelaars en experimentele instellingen.
--   **SmartScreen-prompts negeren**: de eindgebruiker mag meldingen van het SmartScreen-filter over mogelijk schadelijke websites negeren.
--   **SmartScreen-prompts negeren voor bestanden**: de eindgebruiker mag meldingen van het SmartScreen-filter over het downloaden van mogelijk schadelijke bestanden negeren.
 -   **LocalHost IP-adres voor WebRTC**: hiermee blokkeert u het weergeven van het IP-adres van de localhost van gebruikers tijdens het doen van telefoonoproepen via het WebRTC-protocol.
 -   **Standaardzoekmachine**: geef de zoekmachine op die u standaard wilt gebruiken. Eindgebruikers kunnen deze waarde op elk moment wijzigen.
 -   **Browsegegevens wissen bij afsluiten**: hiermee worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Edge afsluit.
 -   **Verzamelen van livetegelgegevens**: hiermee geeft u op dat Windows geen gegevens moet verzamelen van de livetegel wanneer gebruikers vanuit Edge een site vastmaken aan het startmenu.
 
+## <a name="edge-browser-smartscreen"></a>SmartScreen van Edge-browser
+
+-   **SmartScreen**: hiermee schakelt u SmartScreen in of uit, waarmee frauduleuze websites worden geblokkeerd.
+-   **SmartScreen-prompts negeren**: de eindgebruiker mag meldingen van het SmartScreen-filter over mogelijk schadelijke websites negeren.
+-   **SmartScreen-prompts negeren voor bestanden**: de eindgebruiker mag meldingen van het SmartScreen-filter over het downloaden van mogelijk schadelijke bestanden negeren.
 
 ## <a name="search"></a>Zoeken
 - **Veilig zoeken (alleen mobiel)**: hiermee bepaalt u hoe Cortana inhoud voor volwassenen filtert in de zoekresultaten. U kunt **Strikt** of **Gemiddeld** selecteren, of u kunt toestaan dat eindgebruikers hun eigen instellingen kiezen.
@@ -156,7 +154,6 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 -   **Bluetooth-detectie**: hiermee geeft u aan dat het apparaat kan worden gedetecteerd door andere Bluetooth-apparaten.
 -   **Vooraf koppelen van Bluetooth**: hiermee kunt u instellen dat bepaalde Bluetooth-apparaten automatisch worden gekoppeld met een hostapparaat.
 -   **Aankondigingen via Bluetooth**: hiermee geeft u aan dat het apparaat aankondigingen via Bluetooth kan ontvangen.
--   **Bluetooth-apparaatnaam**: hiermee kunt u de Bluetooth-naam van een apparaat opgeven. Als u geen naam opgeeft, wordt de standaardradionaam gebruikt.
 -   **Service voor verbonden apparaten**: hiermee kunt u opgeven of de service voor verbonden apparaten is toegestaan, waardoor detectie van en verbinding met andere Bluetooth-apparaten mogelijk is.
 -   **NFC**: hiermee kan de gebruiker mogelijkheden voor Near Field Communications op het apparaat inschakelen en configureren.
 -   **Wi-Fi**: hiermee kan de gebruiker Wi-Fi op het apparaat inschakelen en configureren (alleen voor Windows 10 Mobile).
@@ -170,11 +167,16 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
 -   **App Instellingen**: hiermee blokkeert u toegang tot de app Instellingen van Windows.
     -   **Systeem**: hiermee blokkeert u de toegang tot het systeemgebied van de app Instellingen.
+        -   **Instellingen voor in-/uitschakelen en slaapstand wijzigen (alleen desktop)**: hiermee voorkomt u dat de eindgebruiker de instellingen voor in-/uitschakelen en de slaapstand op het apparaat wijzigt.
     -   **Apparaten**: hiermee blokkeert u de toegang tot het apparatengebied van de instellingen-app.
     -   **Netwerk en internet**: hiermee blokkeert u de toegang tot het gebied voor netwerk en internet van de instellingen-app.
     -   **Persoonlijke instellingen**: hiermee blokkeert u de toegang tot het gebied voor persoonlijke instellingen van de instellingen-app.
     -   **Accounts**: hiermee blokkeert u de toegang tot het accountsgebied van de instellingen-app.
     -   **Tijd en taal**: hiermee blokkeert u de toegang tot het gebied voor tijd en taal van de instellingen-app.
+        -   **Systeemtijd wijzigen**: hiermee voorkomt u dat de eindgebruiker de datum en tijd van het apparaat wijzigt.
+        -   **Regio-instellingen aanpassen (alleen desktop)**: hiermee voorkomt u dat de eindgebruiker de regionale instellingen op het apparaat wijzigt.
+        -   **Taalinstellingen wijzigen (alleen bureaublad)**: hiermee voorkomt u dat de eindgebruiker de taalinstellingen op het apparaat wijzigt.
+    -   **Gaming**: hiermee blokkeert u de toegang tot de gaming-app in Instellingen.
     -   **Betere toegankelijkheid**: hiermee blokkeert u de toegang tot het gebied voor betere toegankelijkheid van de instellingen-app.
     -   **Privacy**: hiermee blokkeert u de toegang tot het privacygebied van de instellingen-app.
     -   **Bijwerken en beveiliging**: hiermee blokkeert u de toegang tot het gebied voor updates en beveiliging van de instellingen-app.
@@ -237,17 +239,17 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 ## <a name="windows-spotlight"></a>Windows Spotlight
 
 
-- Windows Spotlight: gebruik deze instelling om alle functionaliteit van Windows Spotlight te blokkeren op Windows 10-apparaten. In dat geval zijn de volgende instellingen niet beschikbaar.
+- **Windows Spotlight**: gebruik deze instelling om alle functionaliteit van Windows Spotlight te blokkeren op Windows 10-apparaten. In dat geval zijn de volgende instellingen niet beschikbaar.
     - **Windows-spotlight in het vergrendelingsscherm**: instellen dat Windows Spotlight geen informatie weergeeft op het vergrendelingsscherm van het apparaat.
     - **Suggesties van derden in Windows-spotlight**: instellen dat Windows Spotlight geen inhoud mag voorstellen die niet is gepubliceerd door Microsoft.
-    - **Windows Tips**: hiermee kunt u de weergave van pop-uptips in Windows blokkeren.
     - **Consumentenfuncties**: hiermee kunt u functies voor consumenten blokkeren, zoals suggesties in het menu Start lidmaatschapsmeldingen.
+    - **Windows Tips**: hiermee kunt u de weergave van pop-uptips in Windows blokkeren.
     - **Windows-spotlight in het Onderhoudscentrum**: suggesties van Windows Spotlight blokkeren, zodat bijvoorbeeld nieuwe apps of beveiligingsinhoud niet wordt vermeld in het actiecentrum van Windows.
     - **Persoonlijke instellingen voor Windows-spotlight**: instellen dat Windows Spotlight de weergave van resultaten aanpast op basis van het gebruik van een apparaat.
     - **Welkomstbericht van Windows**: geen informatie weergeven over nieuwe of bijgewerkte functies.
 
 
-## <a name="display"></a>Weergave
+## <a name="projection"></a>Projectie
 
 - **Gebruikersinvoer van ontvangers van draadloze schermen**: hiermee blokkeert u gebruikersinvoer van draadloze beeldschermen.
 - **Projectie naar deze PC**: andere apparaten kunnen de pc niet meer detecteren voor projectie.

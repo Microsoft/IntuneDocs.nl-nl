@@ -74,6 +74,7 @@
 #### [Beperkingen](enrollment-restrictions-set.md)
 #### [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
 #### [Zakelijke id’s](corporate-identifiers-add.md)
+#### [Multi-Factor Authentication](multi-factor-authentication.md)
 #### [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)
 #### [Apparaten toewijzen aan groepen](device-group-mapping.md)
 ### Windows-inschrijving instellen
@@ -291,7 +292,7 @@
 ## [Het gebruik van Intune Graph API 's](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune-datawarehouse-API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Gegevens ophalen uit de datawarehouse-API met een REST-client](reports-proc-data-rest.md)
 ### [Datawarehouse-API-eindpunt](reports-api-url.md)
 ### [Datawarehouse-gegevensmodel](reports-ref-data-model.md)
 #### [Verwijzing voor datumentiteit](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [Verwijzing voor apparaatentiteiten](reports-ref-devices.md)
 #### [Verwijzing voor toepassingsentiteiten](reports-ref-application.md)
 #### [Verwijzing voor beleidentiteiten](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Verklarende woordenlijst](intune-glossary.md)

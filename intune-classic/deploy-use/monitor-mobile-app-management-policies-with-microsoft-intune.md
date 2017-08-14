@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>App-beveiligingsbeleid bewaken met Microsoft Intune
 U kunt de nalevingsstatus van het app-beveiligingsbeleid bewaken dat u hebt toegepast op gebruikers. U vindt er informatie over de gebruikers waarop het app-beveiligingsbeleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
@@ -43,11 +43,13 @@ Op de blade **Intune Mobile Application Management** ziet u een samenvatting van
 
 ![De tegel Samenvatting op het tabblad Intune Mobile Application Management](../media/mam-azure-portal-user-status-summary.png)
 
--   **Gebruikers:** het totale aantal gebruikers in uw bedrijf dat gebruikmaakt van de apps die zijn gekoppeld aan het beleid.
+-   **Gebruikers**: het totale aantal gebruikers in uw bedrijf dat een app gebruikt die is gekoppeld aan een beleid binnen een werkcontext.
 
--   **BEHEERD DOOR BELEID**: het aantal gebruikers dat ten minste een van de apps in de werkcontext heeft gebruikt.
+-   **BEHEERD DOOR BELEID**: het aantal gebruikers dat een app heeft gebruikt en waaraan een beleid is toegewezen in een werkcontext.
 
--   **GEEN BELEID:** het aantal gebruikers dat gebruikmaakt van de apps die zijn gekoppeld aan het beleid, maar op wie het beleid niet is gericht. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
+-   **GEEN BELEID**: het aantal gebruikers dat een app gebruikt en waarop geen beleid van toepassing is in een werkcontext. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
+    > [!NOTE]
+    > Als u meerdere beleidsregels per platform hebt, wordt een gebruiker beschouwd als te worden beheerd door beleid als er ten minste één beleidsregel aan hem of haar is toegewezen.
 
 - **Gemarkeerde gebruikers:** het aantal gebruikers dat problemen ondervindt. Momenteel worden onder **Gemarkeerde gebruikers** alleen gebruikers met gekraakte apparaten gerapporteerd.
 

@@ -1,37 +1,35 @@
 ---
 title: Verklarende woordenlijst voor Intune
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: Kom meer te weten over een aantal van de belangrijkste termen die worden gebruikt in Microsoft Intune
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Verklarende woordenlijst voor Microsoft Intune
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |App-toewijzing|Hiermee kunnen gebruikers de apps die ze nodig hebben [zoeken, downloaden en installeren](/intune/app-management). Dit was voorheen bekend als *app-implementatie*.|
-|Configuratieprofiel-app|Hiermee configureert u een [iOS](/intune/app-configuration-policies-use-ios)- of [Android](/intune/app-configuration-policies-use-android)-app met specifieke instellingen voordat deze wordt uitgevoerd.|
+|Configuratieprofiel-app <br/><br/>Configuratiebeleid voor apps|Beschikbaar voor mobiele apps met leverancierspecifieke configuraties. Hiermee configureert u een [iOS](/intune/app-configuration-policies-use-ios)- of [Android](/intune/app-configuration-policies-use-android)-app met specifieke instellingen voordat deze wordt uitgevoerd.|
 |App-controle|Hiermee kunt u [recente status en activiteit controleren](/intune/apps-monitor) die betrekking hebben op app-toewijzing.|
 |Taak app-beveiliging voor het verwijderen van gegevens|[Hiermee verwijdert u de app-gegevens](/intune/app-protection-policies) van het apparaat van de gebruiker.|
-|Beleid voor app-beveiliging|Hiermee zorgt u ervoor dat de apps van de gebruiker compatibel zijn met de [beleidsregels voor gegevensbescherming](/intune/app-protection-policies) van uw bedrijf.|
+|Beleid voor app-beveiliging|Beschikbaar voor mobiele apps die integreren met Enterprise Mobility + Security-technologieën (EMS). Hiermee zorgt u ervoor dat de apps van de gebruiker compatibel zijn met de [beleidsregels voor gegevensbescherming](/intune/app-protection-policies) van uw bedrijf.|
 |App SDK|Met de [Microsoft Intune App SDK](/intune/app-sdk) kunt u functionaliteit toevoegen aan uw interne apps waardoor deze kunnen worden beheerd met behulp van Intune-beleidsregels voor app-beveiliging.|
 |Actie app verwijderen|Hiermee kunt u [apps verwijderen](/intune/apps-deploy) van de apparaten van gebruikers.|
 |App Wrapping Tool|Een [opdrachtregelprogramma](/intune/apps-prepare-mobile-application-management) waarmee een wrapper rond een Line-Of-Business-app wordt gemaakt, zodat deze kan worden beheerd door Intune-beleidsregels voor app-beveiliging.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|Dit is een [browsertoepassing](/intune/app-configuration-managed-browser) die u in uw organisatie kunt toewijzen met Intune. Een beheerde-browserbeleid bevat een lijst met toegestane of een lijst met geblokkeerde websites waarmee de websites die gebruikers van de beheerde browser kunnen bezoeken, worden beperkt.|
 |MDM-instantie|De [MDM-instantie](/intune/mdm-authority-set) definieert de beheerservice die gemachtigd is voor het beheren van een reeks apparaten. De opties voor de MDM-instantie bevatten Intune zelf en Configuration Manager met Intune.|
-|Beleid voor de configuratie van mobiele apps|Een [iOS](/intune/app-configuration-policies-use-ios)- of [Android](/intune/app-configuration-policies-use-android)-beleid dat wordt gebruikt voor het leveren van instellingen aan compatibele apps wanneer ze worden uitgevoerd, bijvoorbeeld een bedrijfsnaam of serveradres.|
+|Beleid voor de configuratie van mobiele apps|Beschikbaar voor mobiele apps met leverancierspecifieke configuraties. Een [iOS](/intune/app-configuration-policies-use-ios)- of [Android](/intune/app-configuration-policies-use-android)-beleid bijvoorbeeld dat wordt gebruikt voor het leveren van instellingen aan compatibele apps wanneer ze worden uitgevoerd, bijvoorbeeld een bedrijfsnaam of serveradres.|
 |Beleid voor de inrichting van mobiele apps|Een iOS-beleid dat u helpt ervoor te zorgen dat [inrichtingsprofielen](/intune/app-provisioning-profile-ios) voor iOS-apps die u toewijst, niet verlopen.|
 |Beheer van mobiele toepassingen|Via het beheer van mobiele toepassingen [(Mobile Application Management, MAM)](/intune/app-lifecycle) kunt u mobiele apps voor uw gebruikers publiceren, pushen, configureren, beveiligen, bewaken en bijwerken.
 |Beheer van mobiele apparaten|Via het beheer van mobiele apparaten [(Mobile Device Management, MDM)](/intune/device-lifecycle) kunt u apparaten inschrijven bij Intune, zodat u deze apparaten kunt inrichten, configureren, bewaken en beheren.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Selectief wissen|Met [selectief wissen](/intune/device-company-data-remove) worden uitsluitend bedrijfsgegevens van een apparaat verwijderd, inclusief MAM-gegevens (Mobile App Management-gegevens), indien van toepassing, instellingen en e‑mailprofielen. Bij Selectief wissen blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.|
+|Selectief wissen|Met [selectief wissen](/intune/device-company-data-remove) worden alleen bedrijfsgegevens van een apparaat verwijderd die zijn beveiligd met het beveiligingsbeleid voor apps, waaronder instellingen en e-mailprofielen. Bij Selectief wissen blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.|
 |Sideloading|De actie van het installeren van een Line-of-Business-app zonder deze te openen vanuit een appstore.|
 |Abonnement|De overeenkomst waarmee u toegang hebt tot een Intune-tenant.|
 

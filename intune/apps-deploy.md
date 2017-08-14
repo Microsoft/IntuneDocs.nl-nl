@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Apps aan groepen toewijzen met Microsoft Intune
 
@@ -59,9 +59,10 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
     - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
     - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
     - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune.
+6. **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
 6. Als u klaar bent, kiest u **Opslaan**.
 
-De app is nu toegewezen aan de groep die u hebt geselecteerd.
+De app wordt nu toegewezen aan de groepen die u hebt geselecteerd.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Hoe conflicten tussen app-intents worden opgelost
 
@@ -100,7 +101,7 @@ Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende 
 |Gebruiker beschikbaar zonder registratie|Gebruiker beschikbaar|Beschikbaar|
 |Gebruiker beschikbaar zonder registratie|Apparaat vereist|Vereist en beschikbaar zonder registratie|
 |Gebruiker beschikbaar zonder registratie|Apparaat niet beschikbaar|Beschikbaar zonder registratie|
-|Gebruiker beschikbaar zonder registratie|Apparaat verwijderen|Verwijderen en beschikbaar zonder registratie<br>Als de gebruiker de app niet hebt geïnstalleerd vanuit de bedrijfsportal, wordt het verzoek om verwijdering gehonoreerd.<br>Als de gebruiker de app via de bedrijfsportal installeert, heeft de installatie prioriteit boven verwijdering van de app.|
+|Gebruiker beschikbaar zonder registratie|Apparaat verwijderen|Verwijderen en beschikbaar zonder registratie<br>Als de gebruiker de app niet heeft geïnstalleerd vanuit de bedrijfsportal, wordt het verzoek om verwijdering gehonoreerd.<br>Als de gebruiker de app vanuit de bedrijfsportal installeert, krijgt de installatie prioriteit boven het verwijderen van de app.|
 
 >[!NOTE]
 >Alleen voor beheerde iOS Store-apps: wanneer u deze toevoegt aan Intune en toewijst als Vereist, worden ze automatisch gemaakt met zowel de intent Vereist als Beschikbaar.

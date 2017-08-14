@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor Mobile Application Management met Intune App Wrapping Tool
 
@@ -50,16 +50,7 @@ Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#
     > [!NOTE]
     > In bepaalde gevallen kan de 32-bits versie van Java leiden tot geheugenproblemen. Het is verstandig de 64-bits versie te installeren.
 
-- Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Gebruik Java Key Tool voor het genereren van referenties die nodig zijn om de verpakte uitvoer-app te ondertekenen. Met de volgende opdracht wordt bijvoorbeeld het uitvoerbare Java-bestand keytool.exe gebruikt om sleutels te genereren die door App Wrapping Tool kunnen worden gebruikt om de verpakte uitvoer-app te ondertekenen.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    In dit voorbeeld wordt een sleutelpaar (een openbare sleutel en een bijbehorende persoonlijke 2048-bits sleutel) met behulp van het RSA-algoritme gegenereerd. Vervolgens wordt de openbare sleutel verpakt in een zelfondertekend X.509 v3-certificaat, dat is opgeslagen als een uit één element bestaande certificaatketen. Deze certificaatketen en de persoonlijke sleutel worden opgeslagen in een nieuw sleutelopslagvermelding met de naam 'mykeystorefile' en de alias 'mykeyalias'. De sleutelopslagvermelding is 50.000 dagen geldig.
-
-    De opdracht vraagt u om wachtwoorden te verstrekken voor de sleutelopslagplaats en de sleutel. Gebruik wachtwoorden die veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
-
-    Uitgebreide informatie over de Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) en Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) vindt u op de website met Oracle-documentatie.
+- Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
 
 ## <a name="install-the-app-wrapping-tool"></a>De App Wrapping Tool installeren
 
@@ -95,7 +86,7 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
 |**-KeyStorePassword**&lt;SecureString&gt;|Wachtwoord voor het ontsleutelen van de sleutelopslag. Android vereist dat alle toepassingspakketten (.apk) zijn ondertekend. Gebruik Java-keytool voor het genereren van het KeyStorePassword. Lees hier meer informatie over de Java [Keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).| |
 |**-KeyAlias**&lt;tekenreeks&gt;|Naam van de sleutel die moet worden gebruikt voor het ondertekenen.| |
 |**-KeyPassword**&lt;SecureString&gt;|Wachtwoord dat wordt gebruikt om de persoonlijke sleutel te ontsleutelen die wordt gebruikt voor het ondertekenen.| |
-|**-SigAlg**&lt;SecureString&gt;| (Optioneel) De naam van het handtekeningalgoritme dat moet worden gebruikt voor de ondertekening. Het algoritme moet compatibel zijn met de persoonlijke sleutel.|Voorbeelden: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Optioneel) De naam van het handtekeningalgoritme dat moet worden gebruikt voor de ondertekening. Het algoritme moet compatibel zijn met de persoonlijke sleutel.|Voorbeelden: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Optioneel) De opdracht ondersteunt algemene PowerShell-parameters, zoals verbose, debug enzovoort. |
 
 
