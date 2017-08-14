@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die u hebt aangeschaft via een volume-aankoopprogramma met Microsoft Intune
 
@@ -33,6 +33,19 @@ Microsoft Intune kan u op de volgende manieren helpen bij het beheren van apps d
 - Licentiegegevens importeren uit de uit de App Store
 - Bijhouden hoeveel van de licenties u hebt gebruikt
 - Voorkomen dat u meer exemplaren van de app installeert dan u hebt gekocht
+
+U kunt twee methoden gebruiken voor het toewijzen van apps die zijn gekocht via het volume-aankoopprogramma:
+
+### <a name="device-licensing"></a>Apparaatlicenties
+
+Wanneer u een app aan apparaten toewijst, wordt er één app-licentie gebruikt en deze blijft gekoppeld aan het apparaat waaraan u de licentie hebt toegewezen.
+Wanneer u apps aan een apparaat toewijst die zijn gekocht via het volume-aankoopprogramma, hoeft de eindgebruiker van het apparaat geen Apple-id te verstrekken voor toegang tot de Store. 
+
+### <a name="user-licensing"></a>Gebruikerslicenties
+
+Wanneer u een app aan gebruikers toewijst, wordt er één app-licentie gebruikt en deze wordt gekoppeld aan de gebruiker. De app kan worden uitgevoerd op meerdere apparaten die eigendom zijn van de gebruiker.
+Wanneer u app aan gebruikers toewijst die is gekocht via het volume-aankoopprogramma, moet elke eindgebruiker een geldige Apple-id hebben voor toegang tot de App Store.
+
 
 Verder kunt u met Intune boeken die u hebt gekocht via het volume-aankoopprogramma van Apple synchroniseren, beheren en toewijzen. Gebruik de werkbelasting **Boeken** in de Intune-portal voor het beheren van boeken. De procedures voor het beheren van boeken zijn hetzelfde als die u gebruikt voor het beheren van apps.
 U moet voordat u begint een token van Apple Volume Purchase Program uploaden. Op dit moment kunt u alleen boeken als toewijzen een **Vereiste** installatie.
@@ -81,24 +94,28 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Een app toewijzen die is gekocht via het volume-aankoopprogramma
 
-1. Kies **Beheren** > **Apps met licenties** in de workload **Mobiele apps**.
-2. Kies de app die u wilt toewijzen op de blade met de lijst met apps en kies vervolgens **...** > **Groepen toewijzen**.
-3. Kies **Beheren** > **Toegewezen groepen** op de blade <*app-naam*> - **Toegewezen groepen**.
-4. Kies **Groepen toewijzen** en kies op de blade **Groepen selecteren** de Azure AD- gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
-U moet de toewijzingsactie instellen op **Vereist**. Daarnaast zijn toewijzingen aan apparaatgroepen beschikbaar voor tenants die zijn gemaakt na januari 2017. Als uw tenant voor die datum is gemaakt en u niet de optie hebt om VPP-apps toe te wijzen aan apparaatgroepen, neemt u contact op met Intune-support.
-5. Als u klaar bent, kiest u **Opslaan**.
+1.  Kies **Beheren** > **App-licenties** in de workload **Mobiele apps**.
+2.  Kies de app die u wilt toewijzen op de blade met de lijst met apps en kies vervolgens **...** > **Groepen toewijzen**.
+3.  Kies **Beheren** > **Toewijzingen** op de blade *<app name>* - **Toewijzingen**.
+4.  Kies **Groepen selecteren** en kies op de blade **Groepen selecteren** de Azure AD- gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
+5.  Voor elke groep die u hebt geselecteerd, kiest u de volgende instellingen:
+    - **Type**: kies of de app **Beschikbaar** is (eindgebruikers kunnen de app installeren vanaf de bedrijfsportal), of **Vereist** (de app wordt automatisch geïnstalleerd).
+Wanneer u een VPP-app als **Beschikbaar** toewijst, worden de app-inhoud en de licentie rechtstreeks vanuit de App Store toegewezen.
+    - **Licentietype**: kies uit **Gebruikerslicenties** of **Apparaatlicenties**.
+6.  Als u klaar bent, kiest u **Opslaan**.
+
 
 >[!NOTE]
 >Er wordt een lijst met apps weergegeven die zijn gekoppeld aan een token. Als u een app hebt die aan meerdere VPP-tokens is gekoppeld, wordt dezelfde app meerdere keren weergegeven; eenmaal voor elk token.
 
-Zie [How to monitor apps](apps-monitor.md) (Apps controleren) voor meer informatie over het controleren van app-toewijzingen.
-
 ## <a name="further-information"></a>Meer informatie
 
-Wanneer u de app als een **vereiste** installatie toewijst, gebruikt elke gebruiker die de app installeert een licentie.
-
-Als u een licentie wilt vrijmaken, moet u de toewijzingsactie wijzigen in **Verwijderen**. De licentie wordt vrijgemaakt nadat de app is verwijderd.
+Als u een licentie wilt vrijmaken, moet u de toewijzingsactie wijzigen in Verwijderen. De licentie wordt vrijgemaakt nadat de app is verwijderd.
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app te installeren, wordt de gebruiker gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Deelname aan het programma moet plaatsvinden voordat de installatie van de app wordt uitgevoerd. De uitnodiging om deel te nemen aan het Apple Volume Purchase Program vereist dat de gebruiker de iTunes-app op het iOS-apparaat kan gebruiken. Als u een beleid hebt ingesteld om de iTunes Store-app uit te schakelen, werkt de gebruikerslicentie niet voor VPP-apps. U kunt dit probleem oplossen door het beleid te verwijderen, zodat de iTunes-app is toegestaan, of door een licentie te verlenen op basis van het apparaat.
 
-Wanneer u een VPP-app als beschikbaar toewijst, worden de app-inhoud en de licentie rechtstreeks vanuit de App Store toegewezen.
+
+
+## <a name="next-steps"></a>Volgende stappen
+
+Zie [How to monitor apps](apps-monitor.md) (Apps controleren) voor meer informatie over het controleren van app-toewijzingen.

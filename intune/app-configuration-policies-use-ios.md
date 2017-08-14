@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>App-configuratiebeleid van Microsoft Intune voor iOS gebruiken
 
@@ -37,7 +37,7 @@ Gebruik het configuratiebeleid voor apps in Microsoft Intune om instellingen op 
 
 Als gebruikers deze instellingen niet correct opgeven, kan dit de werkbelasting van uw helpdesk verhogen en de acceptatie van nieuwe apps vertragen.
 
-Het configuratiebeleid voor apps kan ervoor zorgen dat deze problemen worden voorkomen doordat u deze instellingen bij gebruikers in een beleid kunt toewijzen voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruikers hoeven geen enkele actie te ondernemen.
+Het configuratiebeleid voor apps kan ervoor zorgen dat deze problemen worden voorkomen doordat u deze instellingen bij gebruikers in een beleid kunt toewijzen voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruikers hoeven geen enkele actie te ondernemen. De apps moeten zijn ontwikkeld voor ondersteuning van het gebruik van app-configuraties. Neem contact op met de leverancier van de app voor meer informatie.
 
 U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en wijst u vervolgens de app toe. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
 
@@ -57,8 +57,8 @@ U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats 
 5.  Kies blade met de lijst met configuratiebeleidsregels **Toevoegen**.
 6.  Geef op de blade **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor het app-configuratiebeleid.
 7.  Kies voor **Type apparaatregistratie** een van de volgende opties:
-    - **Geregistreerd bij Intune**: voor apps waarmee de Intune App SDK is geïntegreerd en die door Intune worden beheerd.
-    - **Niet geregistreerd bij Intune**: voor apps waarmee de Intune App SDK is geïntegreerd en die niet door Intune worden beheerd of die door iets anders worden beheerd.
+    - **Geregistreerd bij Intune**: voor apps die worden beheerd door Intune.
+    - **Niet geregistreerd bij Intune**: voor apps die niet worden beheerd door Intune of die door derden worden beheerd.
 8.  Kies voor **Platform** de optie **iOS** (voor apparaten die alleen bij Intune zijn ingeschreven)
 9.  Kies **Gekoppelde app**, klik vervolgens op de blade **Gekoppelde app** en kies de beheerde app waarop u de configuratie wilt toepassen.
 10. Kies op de blade **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**

@@ -5,7 +5,7 @@ keywords: wat is Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Wat is Intune?
 
@@ -72,10 +72,10 @@ Als u Intune gebruikt met andere services in EMS, kunt u uw organisatie veel mee
 
 * [Eenmalige aanmelding](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Multi-Factor Authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Voorwaardelijke toegang tot apps - toegang toestaan als de mobiele app bedrijfsgegevens bevat](app-based-conditional-access-intune.md) ([klassieke console](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [Het isoleren van bedrijfsgegevens ten opzichte van persoonlijke gegevens binnen dezelfde app](app-protection-policy.md) ([klassieke console](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [App-beveiligingsbeleid (pincode, codering, opslaan als, klembord, enzovoort)](app-protection-policies.md) ([klassieke console](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Bedrijfsgegevens wissen uit een mobiele app](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [Voorwaardelijke toegang tot apps: toegang toestaan als de mobiele app bedrijfsgegevens bevat](app-based-conditional-access-intune.md)
+* [Het isoleren van bedrijfsgegevens ten opzichte van persoonlijke gegevens binnen dezelfde app](app-protection-policy.md)
+* [App-beveiligingsbeleid (pincode, codering, opslaan als, klembord, enzovoort)](app-protection-policies.md)
+* [Bedrijfsgegevens wissen uit een mobiele app](apps-selective-wipe.md)
 * [Ondersteuning voor Rights Management-services](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Installatiekopie waarin de niveaus van beheer van gegevensbeveiliging voor apps worden weergegeven](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ De volgende lijst van bedrijfsproblemen is gekoppeld aan meer gedetailleerde inf
 * [Tablets voor beperkt gebruik overhandigen aan taakgerichte werknemers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>Volgende stappen
-* Meer informatie over een aantal [algemene manieren om Intune te gebruiken](common-scenarios.md) ([klassieke console](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* Vertrouwd raken met het product [met een 30-daagse evaluatieversie van Intune](free-trial-sign-up.md) ([klassieke console](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Duik in de [technische vereisten en mogelijkheden](supported-devices-browsers.md) ([klassieke console](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) van Intune.
+* Meer informatie over een aantal [algemene manieren om Intune te gebruiken](common-scenarios.md).
+* Vertrouwd raken met het product [met een 30-daagse evaluatieversie van Intune](free-trial-sign-up.md).
+* Duik in de [technische vereisten en mogelijkheden](supported-devices-browsers.md) van Intune.

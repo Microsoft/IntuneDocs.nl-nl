@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-U kunt een bestand downloaden voor gebruik met Microsoft Power BI om interactieve, dynamisch gegenereerde rapporten te laden voor uw Intune-tenant. Het Power BI-bestand voor het datawarehouse (pbix) bevat verbindingsinstellingen voor uw tenant, plus de volgende voorbeelden van rapporten en grafieken: 
+U kunt een bestand downloaden voor gebruik met Microsoft Power BI om interactieve, dynamisch gegenereerde rapporten te laden voor uw Intune-tenant. Het Power BI-bestand voor het datawarehouse (pbix) bevat verbindingsinstellingen voor uw tenant, plus de volgende voorbeelden van rapporten en grafieken:  
 
   -  Apparaten
   -  Inschrijving
@@ -46,8 +46,11 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 
 Het Power BI-bestand (pbix) bevat verbindingsgegevens voor uw tenant en een set vooraf gedefinieerde rapporten op basis van het datawarehouse-gegevensmodel. Open het bestand in Power BI Desktop en meld u aan bij Azure AD. De gegevens uit uw Intune-tenant worden in het rapport geladen.
 
+> [!Important]  
+> Elk Power BI-bestand (pbix) is mogelijk anders afhankelijk van de locatie van de tenant. Als u meerdere Intune-tenants beheert, moet u ervoor zorgen dat u het bestand gebruikt dat u hebt gedownload van Azure Portal terwijl was aangemeld bij de betreffende tenant.  
+
 1.  Meld u aan bij Azure Portal en kies **Bewaking en beheer** > **Intune**. U kunt ook zoeken naar resources voor **Intune**.  
-2.  Open de blade **Intune Data Warehouse**.
+2.  Open de blade **Microsoft Intune-datawarehouse-API (preview-versie)**.
 3.  Klik op **Power BI-bestand downloaden**. Het bestand met de extensie pbix wordt gedownload naar de locatie die u hebt opgegeven.
 4.  Open het bestand met Power BI. De *Intune-datawarehouserapporten* worden geladen, maar het kan even duren omdat de gegevens van uw tenant moeten worden opgehaald.
 5.  Klik op **Vernieuwen** om de gegevens van uw tenant te laden en de rapporten te bekijken.

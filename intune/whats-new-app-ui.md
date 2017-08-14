@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+
+## <a name="week-of-july-31-2017"></a>Week van 31 juli 2017
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbeterde aanmeldervaring in de bedrijfsportal-apps voor alle platformen <!--User Story 1132123-->
+
+Dit is de aankondiging van een wijziging die in de komende maanden wordt geïntroduceerd en waarmee de aanmeldervaring wordt verbeterd voor apps in de Intune-bedrijfsportal voor Android, iOS en Windows. De nieuwe gebruikerservaring wordt automatisch toegepast op alle platformen voor de bedrijfsportal-app wanneer deze wijziging wordt doorgevoerd in Azure AD. Bovendien kunnen gebruikers nu zich aanmelden bij de bedrijfsportal vanaf een ander apparaat met een gegenereerde code voor eenmalig gebruik. Dit is vooral nuttig in gevallen wanneer gebruikers zich moeten aanmelden zonder referenties.  
+
+Hieronder ziet u de vorige aanmeldingservaring, de nieuwe aanmeldingservaring met referenties en de nieuwe aanmeldingservaring vanaf een ander apparaat.
+
+__Vorige aanmeldingservaring__
+
+![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Nadat de gebruiker op Aanmelden heeft getikt, vult de gebruiker de referenties in op deze pagina waarop wordt gevraagd om het e-mailadres en wachtwoord van de gebruiker. Ook worden verschillende manieren gegeven om problemen met wachtwoorden op te lossen.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Na het invoeren van het wachtwoord, wordt de gebruiker aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Nieuwe aanmeldingservaring__
+
+![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![De gebruiker wordt gevraagd alleen een e-mailadres in te voeren in plaats van het e-mailadres en wachtwoord op hetzelfde scherm.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![De gebruiker wordt gevraagd om het wachtwoord nadat het e-mailadres is geaccepteerd.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Nieuwe aanmeldingservaring bij aanmelding vanaf een ander apparaat__
+
+![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Tik op de koppeling __Aanmelding vanaf een ander apparaat__.
+
+![U vindt hier instructies om naar de pagina aka.ms/devicelogin te gaan met een unieke wachtwoordcode vanaf uw werkcomputer en de code te gebruiken om u aan te melden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Open een browser en ga naar [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Een afbeelding van de browser van de gebruiker op de werkcomputer in plaats van de bedrijfsportal-app. Op de weergegeven pagina Apparaataanmelding wordt de gebruiker gevraagd om de code in de bedrijfsportal-app is ontvangen.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Voer de code die werd weergegeven in de bedrijfsportal-app. Wanneer u __Doorgaan__ selecteert, kunt u zich verifiëren op alle manieren die worden ondersteund door uw bedrijf, zoals een smartcard.
+
+![De gebruiker heeft de unieke code ingevoerd in het veld en op de site Apparaataanmelding is gevraagd om te bevestigen dat de Intune bedrijfsportal-app de juiste app is om autorisatie te ontvangen voor aanmelding.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Een bevestigingspagina met de mededeling dat de gebruiker nu is aangemeld bij de bedrijfsportal-app op hun apparaat en dat deze pagina kan worden gesloten.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+De bedrijfsportal-app begint met aanmelden.
+
+![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>Week van 12 juni 2017
 
@@ -180,51 +228,12 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 > [!Note]
 > De onderstaande afbeeldingen zijn voorbeelden en het aangekondigde product kan verschillen van de weergegeven versies.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbeterde aanmeldervaring in de bedrijfsportal-apps voor alle platformen <!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite <!--1313244 part 2-->
 
-Dit is de aankondiging van een wijziging die in de komende maanden wordt geïntroduceerd en waarmee de aanmeldervaring wordt verbeterd voor apps in de Intune-bedrijfsportal voor Android, iOS en Windows. De nieuwe gebruikerservaring wordt automatisch toegepast op alle platformen voor de bedrijfsportal-app wanneer deze wijziging wordt doorgevoerd in Azure AD. Bovendien kunnen gebruikers nu zich aanmelden bij de bedrijfsportal vanaf een ander apparaat met een gegenereerde code voor eenmalig gebruik. Dit is vooral nuttig in gevallen wanneer gebruikers zich moeten aanmelden zonder referenties.  
+__Updates voor aanbevolen apps__ Er is een speciale pagina aan de site toegevoegd waar gebruikers door apps kunnen bladeren die door u zijn aanbevolen. Ook zijn er enkele correcties aan de gebruikersinterface aangebracht aan de sectie Aanbevolen op de startpagina.
 
-Hieronder ziet u de vorige aanmeldingservaring, de nieuwe aanmeldingservaring met referenties en de nieuwe aanmeldingservaring vanaf een ander apparaat.
+![De kleurrijke tegels waarop de apps worden getoond. Het zijn grote, gekleurde vierkanten onder de apps, waarbij de gekozen kleur de primaire kleur van het app-logo is. De sectie Aanbevolen apps wordt bovenaan de bedrijfsportal-app weergegeven.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Vorige aanmeldingservaring__
-
-![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![Nadat de gebruiker op Aanmelden heeft getikt, vult de gebruiker de referenties in op deze pagina waarop wordt gevraagd om het e-mailadres en wachtwoord van de gebruiker. Ook worden verschillende manieren gegeven om problemen met wachtwoorden op te lossen.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![Na het invoeren van het wachtwoord, wordt de gebruiker aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Nieuwe aanmeldingservaring__
-
-![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![De gebruiker wordt gevraagd alleen een e-mailadres in te voeren in plaats van het e-mailadres en wachtwoord op hetzelfde scherm.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![De gebruiker wordt gevraagd om het wachtwoord nadat het e-mailadres is geaccepteerd.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Nieuwe aanmeldingservaring bij aanmelding vanaf een ander apparaat__
-
-![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Tik op de koppeling __Aanmelding vanaf een ander apparaat__.
-
-![U vindt hier instructies om naar de pagina aka.ms/devicelogin te gaan met een unieke wachtwoordcode vanaf uw werkcomputer en de code te gebruiken om u aan te melden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Open een browser en ga naar [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
-
-![Een afbeelding van de browser van de gebruiker op de werkcomputer in plaats van de bedrijfsportal-app. Op de weergegeven pagina Apparaataanmelding wordt de gebruiker gevraagd om de code in de bedrijfsportal-app is ontvangen.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Voer de code die werd weergegeven in de bedrijfsportal-app. Wanneer u __Doorgaan__ selecteert, kunt u zich verifiëren op alle manieren die worden ondersteund door uw bedrijf, zoals een smartcard.
-
-![De gebruiker heeft de unieke code ingevoerd in het veld en op de site Apparaataanmelding is gevraagd om te bevestigen dat de Intune bedrijfsportal-app de juiste app is om autorisatie te ontvangen voor aanmelding.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Een bevestigingspagina met de mededeling dat de gebruiker nu is aangemeld bij de bedrijfsportal-app op hun apparaat en dat deze pagina kan worden gesloten.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-De bedrijfsportal-app begint met aanmelden.
-
-![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
