@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b2af07817b15c2afd2d2674aa0c6d8a403147421
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 1753545450d684f366ef4e323104d92ff0a55cbb
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
 
@@ -33,7 +33,7 @@ Voer deze stappen uit of bekijk deze video om de inschrijving van uw apparaat bi
 
 1.  Selecteer in de bedrijfsportal-app onder **Mijn apparaten**het apparaat dat u wilt uitschrijven.
 
-2.  Tik op **Verwijderen** >; **Verwijderen**.
+2.  Tik op **Verwijderen** > **Verwijderen**.
 
 Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
