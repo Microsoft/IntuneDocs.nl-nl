@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
@@ -64,7 +64,7 @@ Gebruik onderstaande stappen om de vereiste certificaten op te halen en de apps 
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Voorbeeld: de bedrijfsportal-app downloaden, ondertekenen en implementeren op Windows-apparaten
 
-U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windows Phone- en Windows 10 Mobile-apparaten) met Intune in plaats van installatie vanuit de Windows Phone Store. U moet de bedrijfsportal-app downloaden en ondertekenen met uw certificaat.  Dit is alleen nodig als uw gebruikers de Store van het bedrijf niet gebruiken en u de bedrijfsportal wilt implementeren op Windows Phone 8.1-apparaten.
+U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windows Phone- en Windows 10 Mobile-apparaten) met Intune in plaats van installatie vanuit Microsoft Store. U moet de bedrijfsportal-app downloaden en ondertekenen met uw certificaat.  Dit is alleen nodig als uw gebruikers de Store van het bedrijf niet gebruiken en u de bedrijfsportal wilt implementeren op Windows Phone 8.1-apparaten.
 
 
 1.  **De bedrijfsportal downloaden**
@@ -75,7 +75,7 @@ U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windo
 
     -   WinPhoneCompanyPortal.ps1:  een PowerShell-script waarmee u het bestand van de bedrijfsportal-app kunt ondertekenen, zodat het kan worden geïmplementeerd naar Windows Phone 8.1-apparaten
 
-    U kunt de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) ook downloaden of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) ook downloaden via de [Windows Store voor Bedrijven](http://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Manage apps you purchased from the Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) (Apps beheren die u hebt aangeschaft in de Windows Store voor Bedrijven) als u wilt weten hoe u dit met Intune kunt doen.
+    U kunt ook de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) downloaden via [Microsoft Store voor Bedrijven](http://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Apps beheren die u hebt aangeschaft in Microsoft Store voor Bedrijven](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) als u wilt weten hoe u dit met Intune kunt doen.
 
 2.  **De Windows Phone SDK downloaden** Download de Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) en installeer de SDK op uw computer. Deze SDK is nodig om een token voor toepassingsinschrijving te genereren.
 
@@ -144,12 +144,12 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 5.  Onderteken alle nieuwe en bijgewerkte bedrijfstak-apps van de onderneming met behulp van het nieuwe certificaat. Bestaande toepassingen hoeven niet opnieuw te worden ondertekend en geïmplementeerd.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>De Windows 10-bedrijfsportal-app handmatig implementeren
-U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren vanuit Intune, zelfs als u Intune niet hebt geïntegreerd met Windows Store voor Bedrijven.
+U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren vanuit Intune, zelfs als u Intune niet hebt geïntegreerd met Microsoft Store voor Bedrijven.
 
  > [!NOTE]
  > Voor deze optie is handmatige implementatie van updates vereist voor elke app-update.
 
-1. Meld u aan bij uw account in de [Windows Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de **offlinelicentie**versie van de bedrijfsportal-app aan.  
+1. Meld u aan bij uw account in [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de versie met de **offlinelicentie** van de bedrijfsportal-app aan.  
 2. Zodra de app is aangeschaft, selecteert u de app op de pagina **Inventaris**.  
 3. Selecteer **Windows 10 alle apparaten** als **Platform**. Klik vervolgens op de betreffende **Architectuur** en download. Een app-licentiebestand is niet nodig voor deze app.
 ![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Als de Windows 10-bedrijfsportal-app op deze manier is ondertekend en geïmpleme
 U ondertekent en implementeer de app als volgt:
 
 1. Download het ondertekeningsscript voor de Microsoft Intune Windows 10-bedrijfsportal-app van [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Voor dit script moet de Windows SDK voor Windows 10 moet zijn geïnstalleerd op de hostcomputer. Ga naar [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) om de Windows SDK voor Windows 10 te downloaden.
-2. Download de Windows 10-bedrijfsportal-app vanuit de Windows Store voor Bedrijven, zoals hierboven beschreven.  
+2. Download de Windows 10-bedrijfsportal-app vanuit Microsoft Store voor Bedrijven, zoals hierboven beschreven.  
 3. Voer het script uit met de invoerparameters die zijn opgegeven in de koptekst van het script om de Windows-10-bedrijfsportal-app (hieronder uitgepakt) te ondertekenen. Afhankelijkheden hoeven niet in het script te worden doorgegeven. Deze zijn alleen vereist wanneer de app wordt geüpload naar de Intune-beheerconsole.
 
 |Parameter | Beschrijving|

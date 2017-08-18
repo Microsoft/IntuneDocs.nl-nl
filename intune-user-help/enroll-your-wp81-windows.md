@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Uw Windows Phone 8.1-apparaat registreren bij Intune
 
@@ -29,11 +29,11 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten 
 
 Volg de instructies die binnen uw bedrijf of school van toepassing zijn voor het registreren van een Windows Phone 8.1-apparaat bij Intune:
 
--   [Als uw bedrijf toestaat dat u de bedrijfsportal gebruikt vanuit de Windows Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Als uw bedrijf toestaat dat u de bedrijfsportal gebruikt vanuit Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Als u vanaf uw Windows Phone geen toegang hebt tot de Windows Store of als u geen Microsoft-account hebt](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Als u vanaf uw Windows Phone geen toegang hebt tot Microsoft Store of als u geen Microsoft-account hebt](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Als uw bedrijf toestaat dat u de bedrijfsportal gebruikt vanuit de Windows Store
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Als uw bedrijf toestaat dat u de bedrijfsportal gebruikt vanuit Microsoft Store
 Installeer de bedrijfsportal-app op uw apparaat:
 
 1.  Tik op **Start** &gt; **Store**.
@@ -72,7 +72,7 @@ Uw apparaat inschrijven:
 
     ![Het scherm Account toegevoegd](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Als u vanaf uw Windows Phone geen toegang hebt tot de Windows Store of als u geen Microsoft-account hebt
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Als u vanaf uw Windows Phone geen toegang hebt tot Microsoft Store of als u geen Microsoft-account hebt
 
 1.  Tik op **Instellingen** &gt; **Werkplek**.
 

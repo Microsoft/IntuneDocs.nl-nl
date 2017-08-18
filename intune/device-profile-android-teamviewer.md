@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: bf25ec3fbdec76fb1defb5e4cb12be6dcdf03b0d
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Hulp op afstand verlenen voor Android-apparaten die worden beheerd met Intune
 
-Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)-software gebruiken, zodat u uw gebruikers met Android-apparaten hulp op afstand kunt bieden. Gebruik de informatie in dit onderwerp om enkele instellingen te configureren en aan de slag te gaan.
+Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)-software gebruiken, zodat u gebruikers met Android-apparaten hulp op afstand kunt bieden. Gebruik de informatie in dit onderwerp om aan de slag te gaan.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
@@ -31,7 +31,7 @@ Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)
 
 Zorg ervoor dat de volgende machtigingen als [Intune-rol](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control) zijn toegewezen aan de gebruiker van Azure Portal:
 - Als u de beheerder de mogelijkheid wilt bieden om de instellingen voor de TeamViewer-connector te wijzigen, verleent u de beheerder de machtiging **Hulp op afstand bijwerken**.
-- Als u de beheerder de mogelijkheid wilt bieden om nieuwe instellingen voor hulp of afstand te configureren, verleent u de beheerder de machtiging **Hulp op afstand aanvragen**. Gebruikers met machtigingen kunnen voor iedere gebruiker een aanvraag indien om een sessie te starten. Deze mogelijkheid wordt niet beperkt door het toewijzingsbereik voor een Intune-rol. De toewijzingsbereiken van Intune-rollen beperken niet het aantal apparaten of gebruikers waarvoor verzoeken om hulp op afstand kunnen worden geïnitieerd.
+- Als u de beheerder een nieuwe aanvraag voor hulp of afstand wilt kunnen laten uitvoeren, verleent u de beheerder de machtiging **Hulp op afstand aanvragen**. Gebruikers met de machtiging **Hulp op afstand aanvragen** kunnen een aanvraag indienen om een sessie voor een willekeurige gebruiker te starten. Ze worden hiertoe niet door een toewijzingsbereik van een Intune-rol beperkt. De toewijzingsbereiken van Intune-rollen beperken niet het aantal apparaten of gebruikers waarvoor verzoeken om hulp op afstand kunnen worden geïnitieerd.
 
 >[!NOTE]
 >Door TeamViewer in te schakelen, kunt u met de TeamViewer voor Intune-connector TeamViewer-sessies maken, Active Directory-gegevens lezen en het toegangstoken voor het TeamViewer-account opslaan.
@@ -63,7 +63,7 @@ Voordat u hulp op afstand via Android-apparaten kunt bieden, moet u eerst de Int
 
 U kunt in het TeamViewer-venster verschillende externe acties op het Android-apparaat uitvoeren, waaronder het op afstand beheren van het apparaat. Zie de [TeamViewer-documentatie](https://www.teamviewer.com/support/documents/) voor gedetailleerde informatie over de acties die u kunt uitvoeren.
 
-Wanneer u klaar bent, sluit u het TeamViewer-venster.
+Als u klaar bent, sluit u het TeamViewer-venster.
 
 ## <a name="end-user-notifications"></a>Meldingen voor eindgebruikers
 

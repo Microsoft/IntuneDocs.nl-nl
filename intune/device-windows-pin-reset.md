@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Intune gebruiken om de wachtwoordcode opnieuw in te stellen op Windows-apparaten die zijn geïntegreerd met de Microsoft-service PIN Reset
 
 De functie voor het opnieuw instellen van de wachtwoordcode voor Windows-apparaten is geïntegreerd met de Microsoft-service PIN Reset om u in staat te stellen een nieuwe wachtwoordcode te genereren voor apparaten met Windows 10 Mobile. Microsoft Windows 10-makersupdate of hoger moet zijn geïnstalleerd op de apparaten.
+
+## <a name="supported-platforms"></a>Ondersteunde platforms
+
+- Windows: ondersteund op Windows 10 Creators Update en hoger (lid van Azure AD-domein)
+- Windows Phone: niet ondersteund
+- iOS: niet ondersteund
+- macOS: niet ondersteund
+- Android: niet ondersteund
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -40,13 +48,14 @@ Voordat u de wachtwoordcode op Windows-apparaten op afstand opnieuw kunt instell
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Windows-apparaten configureren voor de service PIN Reset
 
-Als u de service PIN Reset wilt configureren op Windows-apparaten die u beheert, gebruikt u een [aangepast apparaatbeleid van Intune Windows 10](custom-settings-windows-10.md) om de functie in te schakelen. Configureer het beleid met behulp van de volgende Configuration Service Providers (CSP's) van Windows:
+Als u de service PIN Reset wilt configureren op Windows-apparaten die u beheert, gebruikt u een [aangepast apparaatbeleid van Intune Windows 10](custom-settings-windows-10.md) om de functie in te schakelen. Configureer het beleid met behulp van de volgende Configuration Service Provider (CSP) van Windows:
 
 
-- **Voor gebruikers** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Voor apparaten** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Voor apparaten** - **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery**
 
-De waarden voor deze CSP's moeten allebei worden ingesteld op **True**.
+*tenant ID* verwijst naar uw Azure Active Directory, de directory-id die u kunt verkrijgen via de pagina **Eigenschappen** van Azure Active Directory.
+
+Stel de waarde voor deze CSP in op **Waar**.
 
 ## <a name="steps-to-reset-the-passcode"></a>Stappen voor het opnieuw instellen van de wachtwoordcode
 

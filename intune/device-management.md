@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: e0fc5337b92ac604a448038f685b27623b6153f9
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -30,8 +30,9 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
+4. U kunt nu de vermelde acties met het externe apparaat uitvoeren. De beschikbaarheid van de acties is afhankelijk van het apparaatplatform en de configuratie van het apparaat:
 
-U kunt nu de volgende acties uitvoeren:
+## <a name="available-device-actions"></a>Beschikbare apparaatbedreigingen
 
 - [Inventaris van apparaten weergeven](device-inventory.md)
 - Externe apparaatacties uitvoeren:
@@ -46,29 +47,8 @@ U kunt nu de volgende acties uitvoeren:
     - [Opnieuw opstarten](device-restart.md)
     - [Windows 10-pincode opnieuw instellen](device-windows-pin-reset.md)
     - [Beheer op afstand voor Android](device-profile-android-teamviewer.md)
+    - [Apparaat synchroniseren](device-sync.md)
 
-
-## <a name="support-for-each-device-action"></a>Ondersteuning voor elke apparaatactie
-
-Gebruik de volgende tabel voor informatie over de apparaatplatformen die worden ondersteund door elke actie.
-
-|||||||
-|-|-|-|-|-|-|
-|Apparaatactie|Windows|Windows Phone|iOS|macOS|Android|
-|**Bedrijfsgegevens verwijderen**|Yes|Ja|Ja|Ja|Ja|
-|**Fabrieksinstellingen terugzetten**|Windows 8.1 en hoger (geen met EAS beheerde apparaten)|Yes|Ja|Nee|Android for Work wordt niet ondersteund|
-|**Verwijderen**|Ja|Ja|Ja|Ja|Yes|
-|**Vergrendelen op afstand**|Nee|Windows Phone 8.1 en hoger|Yes|Nee|Yes|
-|**Wachtwoordcode opnieuw instellen**|Nee|Windows Phone 8.1 - Windows 10-makersupdate, geen lid van Azure AD-domein, Windows 10-makersupdate en hoger - alles|Ja|Nee|Ouder dan Android 7, Android for Work niet ondersteund|
-|**Nieuwe wachtwoordcode** (voor Windows 10-apparaten)|Nee|Windows 10-makersupdate en hoger (lid van Azure AD-domein)|Nee|Nee|Android for Work wordt niet ondersteund|
-|**Activeringsvergrendeling overslaan**|Nee|Nee|Alleen apparaten die bedrijfseigendom zijn|Nee|Nee|
-|**Modus Apparaat verloren**|Nee|Nee|iOS 9.3 of hoger, onder supervisie, en bedrijfseigendom|Nee|Nee|
-|**Apparaat zoeken**|Nee|Nee|Modus Apparaat verloren van iOS 9.3 of hoger, onder supervisie, en bedrijfseigendom|Nee|Nee|
-|**Huidige gebruiker afmelden**|Nee|Nee|iOS 9.3 en hoger (alleen gedeelde iPads)|Nee|Nee|
-|**Opnieuw opstarten**|Windows 8.1 en hoger|Windows Phone 8.1 en hoger|Nee|Nee|Nee|
-|**Nieuwe start**|Windows 10-makersupdate en hoger|Nee|Nee|Nee|Nee|
-|**Nieuwe sessie van hulp op afstand**|Nee|Nee|Nee|Nee|Ja|
-|**Gebruiker verwijderen**|Nee|Nee|iOS 9.3 en hoger (alleen gedeelde iPads)|Nee|Nee|
 
 ## <a name="next-steps"></a>Volgende stappen
 
