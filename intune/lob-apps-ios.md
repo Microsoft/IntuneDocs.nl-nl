@@ -3,8 +3,8 @@ title: iOS-Line-Of-Business-apps toevoegen aan Intune
 titleSuffix: Intune on Azure
 description: In dit onderwerp vindt u meer informatie over het toevoegen van iOS-Line-Of-Business-apps aan Intune."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/11/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb0e151c8b9a948dfd6bb330e1375ddeff2d8e16
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: cc7cf547cff33dde04760e23184f861200430a86
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS-Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 

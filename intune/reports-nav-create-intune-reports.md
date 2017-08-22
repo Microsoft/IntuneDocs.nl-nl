@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: db6661dd92b890d711f655a60eb883b417a30d8a
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: cb311429e0537709b3476154bdef24347cb99026
+ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Het Intune-datawarehouse gebruiken
 
@@ -41,4 +41,4 @@ Het datawarehouse biedt u toegang tot meer informatie over uw mobiele omgeving d
 **Volgende stappen**
 
 - Haal een koppeling op en gebruik Power BI om inzicht te krijgen. Zie [Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md) (Verbinding maken met het Intune-datawarehouse met Power BI) voor instructies.
-- Verkrijg meer informatie over de Intune-datawarehouse-API, het gegevensmodel en relaties tussen entiteiten<!-- , and an example of creating a custom client to retrieve data,--> (zie [Intune-datawarehouse-API](reports-nav-intune-date-warehouse.md)).
+- Verkrijg meer informatie over de Intune-datawarehouse-API, het gegevensmodel en relaties tussen entiteiten<!-- , and an example of creating a custom client to retrieve data,--> (zie [Intune-datawarehouse-API](reports-nav-intune-data-warehouse.md)).
