@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
@@ -40,12 +40,12 @@ De bedrijfsportal-app bijwerken:
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>De Intune-bedrijfsportal-app op uw Windows-apparaat bijwerken
 
-1.  Navigeer naar de Windows Store en zoek naar de **Intune-bedrijfsportal**.
+1.  Navigeer naar Microsoft Store en zoek naar de **Intune-bedrijfsportal**.
 
 2.  Volg de installatiestappen.
 
     > [!NOTE]
-    > Als u geen toegang krijgt tot de Windows Store, neemt u contact op met de IT-beheerder.
+    > Als u geen toegang krijgt tot Microsoft Store, neemt u contact op met de IT-beheerder.
 
 
 Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.

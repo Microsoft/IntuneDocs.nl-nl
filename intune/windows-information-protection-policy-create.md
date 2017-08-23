@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Vanaf versie Intune 1704 kunt u beveiligingsinstellingen voor de beveiliging van apps met Windows 10 maken in Mobile Application Management (MAM) zonder implementatiescenario’s.
+Vanaf versie 1704 van Intune kunt u app-beveiligingsbeleid gebruiken met Windows 10 om apps zonder apparaatinschrijving te beveiligen.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -39,17 +39,15 @@ Hier worden enkele concepten besproken voor het toevoegen van een WIP-beleid.
 
 ### <a name="types-of-apps"></a>Typen apps
 
--   **Aanbevolen apps**: een vooraf gevulde lijst met apps (voornamelijk voor Microsoft Office) die beheerders gemakkelijk in het beleid kunnen importeren.
+-   **Aanbevolen apps**: een vooraf gevulde lijst met apps (voornamelijk voor Microsoft Office) die u gemakkelijk in het beleid kunt importeren. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Store-apps**: beheerders kunnen elke app uit de Windows Store toevoegen aan het beleid.
+-   **Store-apps**: u kunt elke app uit Microsoft Store toevoegen aan het beleid.
 
--   **Windows-bureaublad-apps**: beheerders kunnen traditionele Windows-bureaublad-apps toevoegen aan het beleid (zoals .exe, .dll, enzovoort).
+-   **Windows-bureaublad-apps**: u kunt traditionele Windows-bureaublad-apps toevoegen aan het beleid (zoals .exe, of .dll)
 
 ## <a name="pre-requisites"></a>Vereisten
 
-U moet de MAM-provider configureren voordat u een beveiligingsbeleid voor WIP-apps kunt maken.
-
--   Meer informatie over [de configuratie van uw MAM-provider met Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+U moet de MAM-provider configureren voordat u een beveiligingsbeleid voor WIP-apps kunt maken. Meer informatie over [de configuratie van uw MAM-provider met Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 U moet bovendien beschikken over het volgende:
 
@@ -58,12 +56,13 @@ U moet bovendien beschikken over het volgende:
 
 > [!IMPORTANT]
 > WIP biedt geen ondersteuning voor meerdere identiteiten; er kan slechts één beheerde identiteit tegelijkertijd bestaan.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>WIP-beleid toevoegen
 
-Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Ga naar het **Intune MAM-dashboard**, kies **Alle instellingen** en kies vervolgens **App-beleid**.
+1.  Ga naar het **Intune MAM-dashboard** en kies **Alle instellingen** > **App-beleid**.
 
 2.  Kies op de blade **App-beleid** **Beleid toevoegen** en voer de volgende waarden in:
 
@@ -118,67 +117,66 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via
 4.  Nadat u de gegevens hebt ingevoerd in de velden, kiest u **OK** om de app toe te voegen aan de lijst **Toegestane apps**.
 
 > [!NOTE]
-> Als u tegelijkertijd meerdere **Bureaublad-apps** wilt toevoegen, klikt u op het menu **(…)** aan het einde van de rij met apps en voegt u vervolgens meerdere apps toe. Als u klaar bent, kiest u **OK**.
+> Als u tegelijkertijd meerdere **bureaublad-apps** wilt toevoegen, klikt u op het menu **(…)** aan het einde van de rij met apps en voegt u vervolgens meer apps toe. Als u klaar bent, kiest u **OK**.
 
-## <a name="windows-information-protection-wip-learning"></a>WIP Learning
-
+## <a name="wip-learning"></a>WIP Learning
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Nadat u de apps hebt toegevoegd die u wilt beveiligen met WIP, moet u een beveiligingsmodus toepassen via **WIP Learning**.
 
 ### <a name="before-you-begin"></a>Voordat u begint
 
-WIP Learning is een rapport waarmee beheerders hun de onbekende WIP-apps kunnen controleren. Onbekende apps zijn apps die niet zijn geïmplementeerd door de IT-afdeling van uw organisatie. De beheerder kan deze apps uit het rapport exporteren en toevoegen aan het WIP-beleid om te voorkomen dat de productiviteit wordt onderbroken voordat WIP in de modus Verbergen negeren wordt afgedwongen.
+WIP Learning is een rapport waarmee u voor WIP onbekende apps in de gaten kunt houden. Onbekende apps zijn apps die niet zijn geïmplementeerd door de IT-afdeling van uw organisatie. U kunt deze apps uit het rapport exporteren en toevoegen aan uw WIP-beleid om te voorkomen dat de productiviteit wordt onderbroken voordat WIP in de modus Verbergen negeren wordt afgedwongen.
 
 Het wordt aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met toegestane apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Onderdrukkingen verbergen**.
 
-#### <a name="what-the-protection-modes-are"></a>Welke beveiligingsmodi zijn er?
+### <a name="what-are-the-protection-modes"></a>Wat zijn de beveiligingsmodi ?
 
-- **Onderdrukkingen verbergen:**
-    - WIP zoekt naar ongeschikte gegevensuitwisselingsprocedures en zorgt ervoor dat de gebruiker de actie niet verder kan uitvoeren.
-    - Dit betreft ook gegevens in niet-zakelijke beveiligde apps en bedrijfsgegevens van personen en apparaten die buiten uw organisatie worden gedeeld.
-<br></br>
+#### <a name="hide-overrides"></a>Onderdrukkingen verbergen
+WIP zoekt naar ongeschikte gegevensuitwisselingsprocedures en zorgt ervoor dat de gebruiker de actie niet verder kan uitvoeren. Dit betreft ook gegevens in niet-zakelijke beveiligde apps en bedrijfsgegevens van personen en apparaten die buiten uw organisatie worden gedeeld.
 
-- **Onderdrukkingen toestaan:**
-    - WIP zoekt naar het delen van onjuiste gegevens en waarschuwt gebruikers als ze een onveilige actie uitvoeren.
-    - In deze modus kan de gebruiker echter het beleid negeren en de gegevens delen, waarbij de actie wordt toegevoegd aan uw controlelogboek.
-<br></br>
-- **Stil:**
-    - WIP wordt stil uitgevoerd en maakt een registratie van onjuiste gegevensdeling, zonder dat een actie wordt geblokkeerd waarvoor de interactie van een werknemer is vereist in de modus Onderdrukkingen toestaan.
-    - Acties die niet zijn toegestaan, zoals apps die ten onrechte toegang willen krijgen tot een netwerkbron of door WIP beveiligde gegevens, worden echter onderbroken.
-<br></br>
-- **Uit (niet aanbevolen):**
-    - WIP is uitgeschakeld en uw gegevens worden niet beveiligd of gecontroleerd.
-    - Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde bestanden op de lokaal aangesloten schijven te ontsleutelen. Let erop dat de vorige gegevens over de ontsleuteling en het beleid niet automatisch worden toegepast als u de WIP-beveiliging weer inschakelt.
+#### <a name="allow-overrides"></a>Onderdrukkingen toestaan
+WIP zoekt naar het delen van onjuiste gegevens en waarschuwt gebruikers als ze een onveilige actie uitvoeren. In deze modus kan de gebruiker echter het beleid negeren en de gegevens delen, waarbij de actie wordt toegevoegd aan uw controlelogboek.
 
-### <a name="to-add-a-protection-mode"></a>Een beschermingsmodus toevoegen
+#### <a name="silent"></a>Achtergrond
+WIP wordt op de achtergrond uitgevoerd en maakt een registratie van onjuiste gegevensdeling, zonder dat een actie wordt geblokkeerd waarvoor de interactie van een werknemer is vereist in de modus Onderdrukkingen toestaan. Acties die niet zijn toegestaan, zoals apps die ten onrechte toegang willen krijgen tot een netwerkbron of door WIP beveiligde gegevens, worden echter onderbroken.
 
-1.  Kies op de blade **App-beleid** de naam van uw beleid en kies vervolgens **Vereiste instellingen** op de blade **Beleid toevoegen**.
+#### <a name="off-not-recommended"></a>Uit (niet aanbevolen)
+WIP is uitgeschakeld en uw gegevens worden niet beveiligd of gecontroleerd.
+
+Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde bestanden op de lokaal aangesloten schijven te ontsleutelen. Let erop dat de vorige gegevens over de ontsleuteling en het beleid niet automatisch worden toegepast als u de WIP-beveiliging weer inschakelt.
+
+### <a name="add-a-protection-mode"></a>Beschermingsmodus toevoegen
+
+1.  Kies op de blade **App-beleid** de naam van uw beleid en kies vervolgens **Verplichte instellingen**.
 
     ![Schermopname van trainingsmodus](./media/learning-mode-sc1.png)
 
 1.  Kies **Opslaan**.
 
-### <a name="to-use-wip-learning"></a>WIP Learning gebruiken
+### <a name="use-wip-learning"></a>WIP Learning gebruiken
 
-1. Ga naar het Azure-dashboard.
+1. Ga naar het Azure-dashboard. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
 3. Kies **Intune**. Het **Intune-dashboard** wordt geopend en kies vervolgens **mobiele Apps**.
 
-4. Kies **WIP Learning** onder het gedeelte **Controleren**. U ziet de onbekende apps die zijn vastgelegd door WIP Learning.
+4. Kies **WIP Learning** onder **Controleren**. U ziet de onbekende apps die zijn vastgelegd door WIP Learning.
 
 > [!IMPORTANT]
 > Zodra de apps worden weergegeven in het rapport voor de logboekregistratie van WIP, kunt u de apps toevoegen aan de beveiligingsbeleidsregels voor uw app.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>Uw WIP-beveilgingsbeleid voor apps implementeren
+## <a name="deploy-your-wip-app-protection-policy"></a>Uw WIP-beveiligingsbeleid voor apps implementeren
 
 > [!IMPORTANT]
-> Dit geldt voor WIP met MAM (Mobile Application Management) zonder scenario voor registratie.
+> Dit is van toepassing op WIP zonder apparaatinschrijving.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 Nadat u het beveiligingsbeleid van uw OHW app hebt gemaakt, moet u deze implementeren in uw organisatie met MAM.
 
-1.  Kies op de blade **App-beleid** het nieuwe beveiligingsbeleid voor uw app, kies **Gebruikersgroepen** en kies vervolgens **Gebruikersgroep toevoegen**.
+1.  Kies op de blade **App-beleid** het nieuwe beveiligingsbeleid voor uw app, kies **Gebruikersgroepen** > **Gebruikersgroep toevoegen**.
 
     Er wordt een lijst met gebruikersgroepen op basis van de beveiligingsgroepen in uw Azure Active Directory geopend op de blade **Gebruikersgroep toevoegen**.
 
-1.  Kies de groep waarop u uw beleid wilt toepassen en klik vervolgens op **Selecteren** om het beleid te implementeren.
+1.  Kies de groep waarop u uw beleid wilt toepassen en kies vervolgens **Selecteren** om het beleid te implementeren.

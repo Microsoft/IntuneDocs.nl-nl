@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,16 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 3f08f110163159c1219492539107cc6b33c8012d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.custom: 
+ms.openlocfilehash: 73e9a634e579b85ac5acabebf38c8a08bc1af86c
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-De sectie van de handleiding moet worden gebruikt in combinatie met andere onderwerpen in sectie 2. Dit ontwerp is gebaseerd op de informatie die u verzamelt en besluiten die u neemt bij het doorlopen van de voorgaande secties in deze handleiding. In deze ontwerpsectie gaan we uit van een zelfstandige Intune-versie, die bestaat uit een Microsoft-cloudservice.
-
-Hoewel er een minimum aan vereisten voor de on-premises infrastructuur is, moet u een ontwerpplan maken zodat u over de juiste beheeroplossing voor mobiele apparaten beschikt die aansluit bij uw doelen, doelstellingen en vereisten.
-
-Bovendien is het gebruikelijk dat er tijdens de implementatie- en testfases ontwerpwijzigingen nodig zijn. Vergeet dan ook niet om deze wijzigingen en de gedachte hierachter te documenteren, wanneer die situatie zich voordoet. Het ontwerp omvat de volgende gebieden:
+Uw Intune-ontwerp is gebaseerd op de informatie die u verzamelt en besluiten die u neemt bij het doorlopen van de overige [secties in deze handleiding](planning-guide.md). De volgende zaken worden bijeengebracht:
 
 -   De huidige omgeving
 
@@ -40,11 +34,14 @@ Bovendien is het gebruikelijk dat er tijdens de implementatie- en testfases ontw
 
 -   Vereisten waaraan moet worden voldaan  
 
+Hoewel er een minimum aan vereisten voor de on-premises infrastructuur is, is een ontwerpplan nog steeds nuttig omdat u over de juiste beheeroplossing voor mobiele apparaten beschikt die aansluit bij uw doelen, doelstellingen en vereisten.
+
 Laten we elk van deze gebieden eens nader bekijken. 
 
-## <a name="record-your-environment"></a>Uw omgeving vastleggen
+## <a name="record-your-current-environment"></a>Uw huidige omgeving vastleggen
+Bovendien vinden er tijdens de implementatie- en testfase regelmatig wijzigingen aan het ontwerp plaats. Gebruik het ontwerpplan om deze wijzigingen te documenteren zodra ze plaatsvinden, evenals de achterliggende idee.
 
-De eerste stap voordat u een ontwerp kunt maken, is het vastleggen van uw huidige omgeving. De huidige omgeving kan van invloed zijn op ontwerpbeslissingen en moet daarom worden gedocumenteerd als referentie bij het maken van andere Intune-ontwerpbeslissingen. Hieronder vindt u enkele voorbeelden van hoe u de huidige omgeving kunt vastleggen:
+Uw huidige omgeving kan van invloed zijn op ontwerpbeslissingen en moet daarom worden gedocumenteerd als referentie bij het maken van andere Intune-ontwerpbeslissingen. Hieronder vindt u enkele voorbeelden van hoe u de huidige omgeving kunt vastleggen:
 
 -   **Identiteit in de cloud**
 
@@ -52,21 +49,21 @@ De eerste stap voordat u een ontwerp kunt maken, is het vastleggen van uw huidig
 
     -   Is uw omgeving federatief?
 
-    -   Is Multi-Factor Authentication ingeschakeld?
+    -   Is meervoudige authenticatie (MFA) ingeschakeld?
 
 -   **E-mailomgeving**
 
-    -   Wordt Exchange gebruikt en wordt dat on-premises of in de cloud toegepast?
+    -   Gebruikt u Exchange? On-premises of in de cloud?
 
     -   Zit u midden in een project en wilt u Exchange naar de cloud migreren?
 
--   **Huidige MDM-oplossing**
+-   **Huidige oplossing met Mobile Device Management (MDM)**
 
     -   Gebruikt u momenteel andere MDM-oplossingen?
 
-    -   Welke MDM-oplossingen gebruikt u voor zakelijke scenario's en BOYD-scenario's?
+    -   Welke MDM-oplossingen gebruikt u voor zakelijke en BOYD-scenario's?
 
-    -   Van welke mogelijkheden maakt u gebruik (bijvoorbeeld apparaatinstellingen voor apps, Wi-Fi-configuraties, enzovoort)?
+    -   Van welke mogelijkheden maakt u gebruik (bijvoorbeeld apparaatinstellingen voor apps of Wi-Fi-configuraties)?
 
     -   Welke apparaatplatformen worden ondersteund?
 
@@ -82,7 +79,7 @@ De eerste stap voordat u een ontwerp kunt maken, is het vastleggen van uw huidig
 
     -   Hoe beheert u uw pc- en serveromgeving?
 
-    -   Wordt System Center Configuration Manager gebruikt? Werkt u met een platform voor systeembeheer van derden?
+    -   Gebruikt u System Center Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
 
 -   **VPN-oplossing**
 
@@ -90,10 +87,10 @@ De eerste stap voordat u een ontwerp kunt maken, is het vastleggen van uw huidig
 
     -   Wordt deze gebruikt voor zowel zakelijke als BYOD-scenario's?
 
-Wanneer u de huidige MDM-omgeving vastlegt, moet u niet vergeten een notitie te maken van alle projecten of eventuele andere in gebruik zijnde plannen die wijzigingen zouden kunnen aanbrengen in uw omgeving. Hieronder ziet u een voorbeeld van een manier om de huidige omgeving vast te leggen als hulp bij het maken van uw Intune-ontwerp:
+Wanneer u de huidige MDM-omgeving vastlegt, moet u rekening houden met alle projecten of eventuele andere in gebruik zijnde plannen die van invloed kunnen zijn op uw omgeving. Hieronder ziet u een voorbeeld van een manier om de huidige omgeving vast te leggen bij het maken van uw Intune-ontwerp:
 
 | **Gebied waarvoor de oplossing geldt** | **Huidige omgeving** | **Opmerkingen** |
-|:---:|:---:|:---:|
+|---|---|---|
 | **Identiteit** | Azure AD, Azure AD Connect, niet federatief, geen MFA | Project aanwezig om MFA tegen het eind van het jaar in te schakelen |                 
 | **E-mailomgeving** | Exchange On-premises, Exchange Online | Momenteel vindt migratie plaats van Exchange On-premises naar Exchange Online. 75% van postvakken gemigreerd. De laatste 25% wordt gemigreerd voordat Intune-pilot begint. |                
 | **SharePoint** | SharePoint On-premises | Er zijn geen plannen om over te stappen op SharePoint Online |  
@@ -102,15 +99,16 @@ Wanneer u de huidige MDM-omgeving vastlegt, moet u niet vergeten een notitie te 
 | **Systeembeheer** | System Center Configuration Manager CB 1606 | Wil een hybride oplossing met Intune onderzoeken |
 | **VPN-oplossing** | Cisco AnyConnect |  |
 
+
+U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om als leidraad te gebruiken bij het ontwikkelen van uw Intune-ontwerpplan.
+
 ## <a name="choose-an-intune-deployment-option"></a>Kies een optie voor Intune-implementatie
 
-Intune biedt twee opties voor implementatie: zelfstandig en hybride. Beslis welke optie het beste aansluit op uw bedrijfsbehoeften. Zelfstandig verwijst naar de Intune-service die wordt uitgevoerd in de cloud, hybride verwijst naar de integratie van Intune met System Center Configuration Manager.
-
-- Meer informatie over [de keuze tussen de zelfstandige en hybride optie van Microsoft Intune voor het beheren van mobiele apparaten met System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
+Intune biedt twee opties voor implementatie: zelfstandig en hybride. Zelfstandig verwijst naar de Intune-service die wordt uitgevoerd in de cloud, hybride verwijst naar de integratie van Intune met System Center Configuration Manager. Deze handleiding is voornamelijk bedoeld voor het gebruik van de zelfstandige optie. [Beslis welke optie het beste aansluit op uw bedrijfsbehoeften.](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
 
 ## <a name="intune-tenant-location"></a>Locatie van Intune-tenant
 
-Als uw organisatie wereldwijd opereert, moet u ook bepalen wat de locatie van uw tenant is wanneer u zich abonneert op de service. Het land wordt gedefinieerd wanneer u zich voor het eerst aanmeldt voor een Intune-abonnement en maak toewijzingen voor regio's wereldwijd die hieronder worden gedefinieerd:
+Als uw organisatie wereldwijd opereert, moet u ook bepalen wat de locatie van uw tenant is wanneer u zich abonneert op de service. Het land wordt gedefinieerd wanneer u zich voor het eerst aanmeldt voor een Intune-abonnement en de regio's kiest die voor u van belang zijn, zoals hieronder worden gedefinieerd:
 
 -   Noord-Amerika
 
@@ -123,59 +121,61 @@ Als uw organisatie wereldwijd opereert, moet u ook bepalen wat de locatie van uw
 
 ## <a name="external-dependencies"></a>Externe afhankelijkheden
 
-Externe afhankelijkheden zijn services en producten die geen deel uitmaken van Intune, maar wel een vereiste van Intune zijn of kunnen worden geïntegreerd met Intune. Het is belangrijk om vast te stellen wat de vereisten zijn voor eventuele externe afhankelijkheden en hoe deze moeten worden geconfigureerd. Enkele voorbeelden van algemene externe afhankelijkheden zijn hieronder te vinden.
+Externe afhankelijkheden zijn services en producten die geen deel uitmaken van Intune, maar wel een vereiste van Intune zijn of kunnen worden geïntegreerd met Intune. Het is belangrijk om vereisten voor alle externe afhankelijkheden vast te stellen en hoe ze moeten worden geconfigureerd. Enkele voorbeelden van veelvoorkomende externe afhankelijkheden zijn:
 
 -   Identiteit
 
 -   Gebruikers- en apparaatgroepen
 
--   PKI
+-   Public Key Infrastructure (PKI)
 
 Deze algemene externe afhankelijkheden worden hieronder nader onderzocht
 
 ### <a name="identity"></a>Identiteit
 
-Identiteit is de manier waarop de gebruikers worden geïdentificeerd die tot uw organisatie behoren en die een apparaat registreren. Intune vereist Azure Active Directory (Azure AD) als provider van gebruiker-id's. Als u deze service al gebruikt, kunt u gebruikmaken van uw bestaande identiteit in de cloud. Azure AD Connect is bovendien het aanbevolen hulpmiddel om uw lokale gebruikers-id's te synchroniseren met Microsoft-cloudservices. Als uw organisatie al met Office 365 werkt, is het belangrijk dat Intune van dezelfde Azure Active Directory-omgeving gebruikmaakt.
+Identiteit is de manier waarop de gebruikers worden geïdentificeerd die tot uw organisatie behoren en die een apparaat registreren. Intune vereist Azure Active Directory (Azure AD) als provider van gebruiker-id's. Als u deze service al gebruikt, kunt u gebruikmaken van uw bestaande identiteit in de cloud. Azure AD Connect is bovendien het aanbevolen hulpmiddel om uw lokale gebruikers-id's te synchroniseren met Microsoft-cloudservices. Als uw organisatie al met Office 365 werkt, is het belangrijk dat Intune van dezelfde Azure AD-omgeving gebruikmaakt.
 
-U vindt hieronder meer informatie over de id-vereisten van Intune.
+Meer informatie over de volgende Intune-identiteitsvereisten :
 
--   Meer informatie over [id-vereisten](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+- [Identiteitsvereisten](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
 
--   Meer informatie over [adreslijstsynchronisatie](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+- [Vereisten voor adreslijstsynchronisatie](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
 
--   Meer informatie over [vereisten voor Multi-Factor Authentication](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+- [Vereisten voor meervoudige verificatie](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Gebruikers- en apparaatgroepen
 
-Gebruikers- en apparaatgroepen bepalen het doel van een implementatie. Dat kan bijvoorbeeld betrekking hebben op implementatiedoelen voor beleidsregels, toepassingen en profielen. Intune biedt alleen ondersteuning voor gebruikers- en apparaatgroepen. U moet bepalen welke gebruikers- en apparaatgroepen vereist zijn. Het is raadzaam dat alle groepen worden gemaakt in de on-premises Active Directory en vervolgens worden gesynchroniseerd met Azure Active Directory. Hieronder vindt u meer informatie over het plannen en maken van gebruikers- en apparaatgroepen.
+De gebruikers- en apparaatgroepen bepalen het doel van een implementatie, waaronder het beleid, de toepassingen en de profielen. U dient te bepalen welke gebruikers- en apparaatgroepen er vereist zijn.
 
--   Meer informatie over [het plannen van gebruikers- en apparaatgroepen](/intune-classic/deploy-use/plan-your-user-and-device-groups).
+U wordt aangeraden alle groepen te maken in de on-premises Active Directory en vervolgens met Azure AD te synchroniseren. Meer informatie over het plannen en maken van gebruikers- en apparaatgroepen:
 
--   Informatie over [het maken van gebruikers- en apparaatgroepen](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   [Uw gebruikers- en apparaatgroepen plannen.](users-add.md)
+
+-   [Gebruikers- en apparaatgroepen maken.](groups-add.md)
 
 ### <a name="public-key-infrastructure-pki"></a>Public Key Infrastructure (PKI)
+Public Key Infrastructure verstrekt certificaten aan apparaten of gebruikers voor een veilige verificatie van services. Intune biedt ondersteuning voor een Microsoft PKI-infrastructuur. Apparaat- en gebruikerscertificaten kunnen worden uitgegeven voor een mobiel apparaat om te voldoen aan verificatievereisten op basis van certificaten. Voordat u certificaten gaat gebruiken, moet u vaststellen of u ze nodig hebt, of de netwerkinfrastructuur verificatie op basis van certificaten kan ondersteunen en of er momenteel in de bestaande omgeving certificaten worden gebruikt.
 
-Public Key Infrastructure verstrekt certificaten aan apparaten of gebruikers voor een veilige verificatie van services. Intune biedt ondersteuning voor een Microsoft PKI-infrastructuur. Apparaat- en gebruikerscertificaten kunnen worden uitgegeven voor een mobiel apparaat om te voldoen aan verificatievereisten op basis van certificaten. Voorafgaand aan de implementatie van certificaten moet u vaststellen of er daadwerkelijk certificaten nodig zijn, of de netwerkinfrastructuur verificatie op basis van certificaten kan ondersteunen en of er momenteel in de bestaande omgeving certificaten worden gebruikt.
-
-Als u van plan bent voor Intune certificaten te gebruiken met VPN-, Wi-Fi- of e-mailprofielen, moet u controleren of er een ondersteunde [PKI-infrastructuur](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) is, die geschikt is om certificaatprofielen te maken en implementeren.
+Als u van plan bent voor Intune certificaten te gebruiken met VPN-, Wi-Fi- of e-mailprofielen, moet u controleren of er een ondersteunde [PKI-infrastructuur](certificates-configure.md) is, die geschikt is om certificaatprofielen te maken en implementeren.
 
 Als er SCEP-certificaten worden uitgegeven, moet u bovendien bepalen welke server fungeert als host voor de functie Network Device Enrollment Service (NDES) en hoe de communicatie wordt uitgevoerd.
 
-Meer informatie over het configureren van certificaten in Intune:
+Meer informatie over:
 
--   [De certificaatinfrastructuur voor SCEP configureren](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep).
+-   [Intune-certificaatprofielen configureren](certificates-configure.md)
 
--   [De certificaatinfrastructuur voor PFX configureren](/intune-classic/deploy-use/configure-certificate-infrastructure-for-pfx).
+-   [De certificaatinfrastructuur voor SCEP configureren](certificates-scep-configure.md)
 
--   [Intune-certificaatprofielen configureren](/intune-classic/deploy-use/configure-intune-certificate-profiles).
+-   [De certificaatinfrastructuur voor PFX configureren](certficates-pfx-configure.md)
 
--   [Toegangsbeleid voor resources configureren](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
+
+
 
 ## <a name="device-platform-considerations"></a>Overwegingen met betrekking tot het apparaatplatform
 
-Neem uw apparaten eens onder de loep om te begrijpen hoe ze precies werken.
+Kijk eens goed naar de volgende aspecten van uw apparaten, zodat u beter begrijpt hoe u ze op de juiste wijze moet beheren.
 
--   Ondersteunde apparaatplatformen vaststellen
+-   Ondersteunde apparaatplatformen
 
 -   Apparaten
 
@@ -189,13 +189,11 @@ Laten we deze gebieden eens nader bekijken.
 
 U moet tijdens het maken van uw ontwerp weten welke apparaten in de omgeving worden opgenomen en controleren of ze al dan niet worden ondersteund door Intune. Intune biedt ondersteuning voor iOS-, Android- en Windows-platforms.
 
--   Meer informatie over [door Intune ondersteunde apparaten](/intune/supported-devices-browsers).
+[Volledige lijst met ondersteunde apparaten voor Intune.](supported-devices-browsers.md)
 
 ### <a name="devices"></a>Apparaten
 
-Intune beheert mobiele apparaten ter beveiliging van zakelijke gegevens en om ervoor te zorgen dat eindgebruikers vanaf meer locaties kunnen werken. Omdat Intune meerdere apparaatplatformen ondersteunt, is het raadzaam om de apparaten en OS-platformen vast te leggen die worden ondersteund in het ontwerp van uw organisatie. Dit wordt uitgebreid voor de apparaten en platformen die zijn gemaakt in sectie (gebruik case-vereisten).
-
-Het is ook raadzaam om de versies te kennen bij verwijzingen naar de lijst tijdens het controleren op apparaatmogelijkheden per OS-platform en -versie. Hier volgt een voorbeeld:
+Intune beheert mobiele apparaten ter beveiliging van zakelijke gegevens en om ervoor te zorgen dat eindgebruikers vanaf meer locaties kunnen werken. Omdat Intune talloze apparaatplatformen ondersteunt, is het raadzaam om de apparaten, OS-platformen en versies te documenteren die worden ondersteund in het ontwerp van uw organisatie. Bijvoorbeeld:
 
 | **Apparaatplatform** | **Besturingssysteemversies** |
 |:---:|:---:|
@@ -204,21 +202,21 @@ Het is ook raadzaam om de versies te kennen bij verwijzingen naar de lijst tijde
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10-tablet | 10+ |
 
+
+U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om als leidraad te gebruiken bij het ontwikkelen van uw lijst met apparaten.
 ### <a name="device-ownership"></a>Apparaateigendom
 
-Intune ondersteunt zowel apparaten in bedrijfseigendom als BYOD-apparaten. Een apparaat wordt beschouwd als bedrijfseigendom als dat is geregistreerd via een apparaatinschrijvingsbeheerder of apparaatinschrijvingsprogramma. Een apparaat kan bijvoorbeeld worden geregistreerd via Apple DEP, worden gemarkeerd als bedrijfseigendom en worden geplaatst in een apparaatgroep die specifieke beleidsregels en apps van het bedrijf ontvangt.
+Intune ondersteunt zowel bedrijfseigen apparaten als persoonlijke apparaten. Een apparaat wordt beschouwd als bedrijfseigendom als u het inschrijft bij een apparaatinschrijvingsbeheerder of apparaatinschrijvingsprogramma. Een apparaat kan bijvoorbeeld worden ingeschreven via Apple Device Enrollment Program (DEP), worden gemarkeerd als bedrijfseigendom en in een apparaatgroep worden geplaatst die specifieke beleidsregels en apps van het bedrijf ontvangt.
 
-Raadpleeg [Sectie 3: use-casescenariovereisten bepalen](planning-guide-requirements.md) voor meer informatie over gebruiksvoorbeelden van apparaten in bedrijfseigendom en BYOD-apparaten.
+Zie [Sectie 3: use-casescenariovereisten bepalen](planning-guide-requirements.md) voor meer informatie over voorbeelden van apparaten in bedrijfseigendom en BYOD-apparaten.
 
 ### <a name="bulk-enrollment"></a>Bulkregistratie
 
-Er zijn meerdere registratieopties beschikbaar voor het registreren van een apparaat in Intune naast de handmatige registratie via de bedrijfsportal. Bulkregistratie kan op verschillende manieren worden uitgevoerd, afhankelijk van het platform. Als bulkregistratie is vereist, bepaalt u eerst de juiste methode voor bulkregistratie die u vervolgens opneemt in uw ontwerp. Meer informatie over verschillende methoden van bulkregistratie vindt u hieronder.
-
--   Meer informatie over [bulkregistratie](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
+ U kunt apparaten bulksgewijs op verschillende manieren inschrijven, afhankelijk van het platform. Als bulksgewijze inschrijving is vereist, bepaalt u eerst [de juiste methode voor bulksgewijze inschrijving](device-enrollment.md), die u vervolgens opneemt in uw ontwerp.
 
 ## <a name="feature-requirements"></a>Functievereisten
 
-In deze secties worden de volgende functies en mogelijkheden beschreven die zijn afgestemd op uw use-casescenariovereisten:
+In deze secties worden de volgende functies en mogelijkheden beschreven die zijn afgestemd op de vereisten voor uw use-case-scenario:
 
 -   Beleidsregels voor voorwaarden
 
@@ -236,20 +234,23 @@ Laten we elk van deze gebieden eens nader bekijken.
 
 ### <a name="terms-and-conditions-policies"></a>Beleidsregels voor voorwaarden
 
-Voorwaarden kunnen worden gebruikt om beleidsregels of voorwaarden uit te leggen die een eindgebruiker voorafgaand aan de registratie moet accepteren. Intune ondersteunt de mogelijkheid om meerdere beleidsregels voor voorwaarden toe te voegen aan en te implementeren voor gebruikersgroepen. U moet zelf bepalen of er beleidsregels voor voorwaarden nodig zijn. Als dat inderdaad het geval is, wie is er dan verantwoordelijk voor het verspreiden van deze informatie in de organisatie.
+U kunt [voorwaarden](terms-and-conditions-create.md) gebruiken om beleidsregels of voorwaarden uit te leggen die een eindgebruiker voordat deze een apparaat kan inschrijven. Intune ondersteunt de mogelijkheid om meerdere beleidsregels voor voorwaarden toe te voegen aan en te implementeren voor gebruikersgroepen.
 
--   Informatie over [beleidsregels voor voorwaarden maken](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) in Intune. Hieronder ziet u een voorbeeld van het vastleggen van de beleidsregels voor voorwaarden.
+U moet zelf bepalen of er beleidsregels voor voorwaarden nodig zijn. Als dat inderdaad het geval is, wie is er dan verantwoordelijk voor het verspreiden van deze informatie in de organisatie. Hieronder ziet u een voorbeeld van het vastleggen van de beleidsregels voor voorwaarden.
 
 | **Naam van de voorwaarden** | **Use case** | **Doelgroep** |
 |:---:|:---:|:---:|
 | Bedrijfsvoorwaarden | Zakelijk | Zakelijke gebruikers |                 
 | Voorwaarden BYOD | BYOD | BYOD-gebruikers |                
 
+
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om uw voorwaarden aan uw gebruikersgroepen toe te wijzen.
+
 ### <a name="configuration-policies"></a>Configuratiebeleid
 
-Configuratiebeleid wordt gebruikt om beveiligingsinstellingen en -functies op een apparaat te beheren. Raadpleeg bij het ontwerpen van uw configuratiebeleid de sectie met de casevereisten om de voor Intune-apparaten vereiste configuraties te bepalen. Leg de gebruikte instellingen vast en hoe deze moeten worden geconfigureerd. Leg ook vast op welke gebruikers- of apparaatgroepen ze van toepassing zijn.
+Gebruik configuratiebeleid wordt om beveiligingsinstellingen en -functies op een apparaat te beheren. Raadpleeg bij het ontwerpen van uw configuratiebeleid de sectie met de casevereisten om de voor Intune-apparaten vereiste configuraties te bepalen. Documenteer de instellingen en de wijze waarop ze worden geconfigureerd. Documenteer ook voor welke gebruikers- of apparaatgroepen ze worden gebruikt.
 
-U moet ten minste één configuratiebeleid per platform maken. U kunt desgewenst meer dan één configuratiebeleid per platform maken. Hieronder ziet u een voorbeeld van het ontwerpen van de vier verschillende configuratiebeleidsregels voor verschillende platformen en use-casescenario's.
+U moet ten minste één configuratiebeleid per platform maken. U kunt desgewenst meer dan één configuratiebeleid per platform maken. Hieronder ziet u een voorbeeld van het ontwerpen van de vier verschillende configuratiebeleidsregels voor verschillende platformen en use-case-scenario's.
 
 | **Naam van beleid** | **Apparaatplatform** | **Instellingen** | **Doelgroep** |   
 |:---:|:---:|:---:|:---:|
@@ -258,9 +259,12 @@ U moet ten minste één configuratiebeleid per platform maken. U kunt desgewenst
 | BYOD - iOS  | iOS | Pincode is vereist, lengte: 4 | BYOD-apparaten |
 | BYOD - Android  | Android | Pincode is vereist, lengte: 4 | BYOD-apparaten |
 
+
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw configuratiebeleid vast te stellen.
+
 ### <a name="profiles"></a>Profielen
 
-Profielen worden gebruikt om de eindgebruiker verbinding te laten maken met bedrijfsgegevens. Intune ondersteunt veel typen profielen. Raadpleeg de gebruiksvoorbeelden en vereisten om te bepalen wanneer de [profielen](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune) worden geconfigureerd. Alle apparaatprofielen worden gecategoriseerd per platformtype en moeten worden opgenomen in de ontwerpdocumentatie.
+Gebruik profielen om de eindgebruiker verbinding te laten maken met bedrijfsgegevens. Intune ondersteunt veel typen profielen. Raadpleeg de use-cases en vereisten om te bepalen wanneer de profielen worden geconfigureerd. Alle apparaatprofielen worden gecategoriseerd op platformtype en moeten worden opgenomen in de ontwerpdocumentatie.
 
 -   Certificaatprofielen
 
@@ -272,7 +276,7 @@ Profielen worden gebruikt om de eindgebruiker verbinding te laten maken met bedr
 
 Laten we elk profieltype eens nader onderzoeken.
 
-##### <a name="certificate-profiles"></a>Certificaatprofielen
+#### <a name="certificate-profiles"></a>Certificaatprofielen
 
 Met behulp van certificaatprofielen kan Intune een certificaat uitgeven aan een gebruiker of apparaat. Intune ondersteunt het volgende:
 
@@ -282,10 +286,10 @@ Met behulp van certificaatprofielen kan Intune een certificaat uitgeven aan een 
 
 -   PFX-certificaat.
 
-Het verdient aanbeveling om vast te leggen welke gebruikersgroep een certificaat nodig heeft, hoeveel certificaatprofielen er nodig zijn en voor welke gebruikersgroepen ze moeten worden geïmplementeerd.
+Het verdient aanbeveling om vast te leggen welke gebruikersgroep een certificaat nodig heeft, hoeveel certificaatprofielen u nodig hebt en voor welke gebruikersgroepen ze moeten worden geïmplementeerd.
 
 >[!NOTE]
-> Houd er rekening mee dat het vertrouwde basiscertificaat vereist is voor het SCEP-certificaat. Zorg er daarom voor dat alle gebruikers met het SCEP-certificaat ook een vertrouwd basiscertificaat krijgen toegewezen. Als er SCEP-certificaten nodig zijn, ontwerpt u de daarvoor bestemde SCEP-certificaatsjablonen en legt u deze vast.
+> Houd er rekening mee dat het vertrouwde basiscertificaat vereist is voor het SCEP-certificaat. Zorg er daarom voor dat alle gebruikers met het SCEP-certificaat ook een vertrouwd basiscertificaat krijgen toegewezen. Als u SCEP-certificaten nodig hebt, ontwerpt u welke SCEP-certificaatsjablonen u nodig hebt en legt u deze vast.
 
 Hier volgt een voorbeeld van hoe u de certificaten tijdens het ontwerpen kunt vastleggen:
 
@@ -294,11 +298,12 @@ Hier volgt een voorbeeld van hoe u de certificaten tijdens het ontwerpen kunt va
 | Basis-CA | Bedrijfseigendom, Basis-CA | Android, iOS, Windows Mobile | Bedrijfseigendom, BYOD  |                                                           
 | SCEP | Gebruikerscertificaat | Android, iOS, Windows Mobile | Bedrijfseigendom, BYOD |                                                           
 
-##### <a name="wi-fi-profile"></a>Wi-Fi-profiel
 
-Wi-Fi-profielen worden gebruikt om een mobiel apparaat automatisch te verbinden met een draadloos netwerk. Intune biedt ondersteuning voor het implementeren van Wi-Fi-profielen op alle ondersteunde platformen.
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw certificaatprofiel vast te stellen.
 
--   Meer informatie over [hoe Intune Wi-Fi-profielen ondersteunt.](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
+#### <a name="wi-fi-profile"></a>Wi-Fi-profiel
+
+Wi-Fi-profielen worden gebruikt om een mobiel apparaat automatisch te verbinden met een draadloos netwerk. Intune biedt ondersteuning voor het implementeren van Wi-Fi-profielen op alle ondersteunde platformen. Meer informatie over [hoe Intune Wi-Fi-profielen ondersteunt.](wi-fi-settings-configure.md)
 
 Hieronder ziet u een voorbeeld van een ontwerp voor een Wi-Fi-profiel:
 
@@ -307,11 +312,12 @@ Hieronder ziet u een voorbeeld van een ontwerp voor een Wi-Fi-profiel:
 | Wi-Fi | Wi-Fi-profiel Azië | Android | Bedrijfseigendom, BYOD regio Azië|                                                           
 | Wi-Fi | Wi-Fi-profiel Noord-Amerika | Android, iOS, Windows 10 Mobile | Bedrijfseigendom, BYOD regio Noord-Amerika |                                                           
 
-##### <a name="vpn-profile"></a>VPN-profiel
 
-Met VPN-profielen kunnen gebruikers veilig toegang krijgen tot uw netwerk vanaf externe locaties. Intune ondersteunt VPN-profielen van systeemeigen mobiele VPN-verbindingen en externe leveranciers.
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw Wi-Fi-profiel vast te stellen.
 
--   Meer informatie over [VPN-profielen en leveranciers die worden ondersteund door Intune](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune).
+#### <a name="vpn-profile"></a>VPN-profiel
+
+Met VPN-profielen kunnen gebruikers veilig toegang krijgen tot uw netwerk vanaf externe locaties. Intune ondersteunt VPN-profielen van systeemeigen mobiele VPN-verbindingen en externe leveranciers. Meer informatie over [VPN-profielen en leveranciers die worden ondersteund door Intune](vpn-settings-configure.md).
 
 Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van een VPN-profiel.
 
@@ -320,11 +326,11 @@ Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van een VPN-pr
 | VPN | VPN Cisco, alle verbindingsprofielen | Android, iOS, Windows 10 Mobile | Bedrijfseigendom, BYOD Noord-Amerika en Duitsland|                                                           
 | VPN | Pulse Secure | Android | Bedrijfseigendom, BYOD regio Azië |                                                           
 
-##### <a name="email-profile"></a>E-mailprofiel
 
-Met e-mailprofielen kan een e-mailclient automatisch worden ingesteld met verbindingsgegevens en e-mailconfiguratie. Intune ondersteunt e-mailprofielen op sommige apparaten.
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw VPN-profiel vast te stellen.
+#### <a name="email-profile"></a>E-mailprofiel
 
--   Meer informatie over [e-mailprofielen](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) en welke platformen worden ondersteund.
+Met e-mailprofielen kan een e-mailclient automatisch worden ingesteld met verbindingsgegevens en e-mailconfiguratie. Intune ondersteunt e-mailprofielen op sommige apparaten. Meer informatie over [e-mailprofielen en welke platformen worden ondersteund](email-settings-configure.md).
 
 Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van e-mailprofielen:
 
@@ -333,19 +339,21 @@ Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van e-mailprof
 | E-mailprofiel | E-mailprofiel voor iOS | iOS | Bedrijfseigendom - Informatiemedewerker BYOD |                                                           
 | E-mailprofiel | E-mailprofiel Android Knox | Android Knox | BYOD |
 
+
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw e-mailprofiel vast te stellen.
 ### <a name="apps"></a>Apps
 
-Intune ondersteunt op verschillende manieren het leveren van apps aan gebruikers of apparaten. Het type app kan bestaan uit apps voor software-installatie, apps uit een openbare app-store, externe koppelingen of beheerde iOS-apps. Naast de afzonderlijke app-implementaties kunnen in volumes aangeschafte apps worden beheerd en geïmplementeerd via de volume-aankoopprogramma's voor iOS en Windows. Hieronder vindt u meer informatie over hoe apps en de volume-aankoopprogramma's worden ondersteund in Intune.
+U kunt Intune gebruiken om de gebruikers of apparaten op verschillende manieren van apps te voorzien. Het type app kan bestaan uit apps voor software-installatie, apps uit een openbare app-store, externe koppelingen of beheerde iOS-apps. Naast de afzonderlijke app-implementaties kunt u in volumes aangeschafte apps beheren en implementeren via de volume-aankoopprogramma's voor iOS en Windows. Meer informatie over:
 
--   Meer informatie over [typen apps](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+-   [De typen apps die u kunt leveren](app-management.md)
 
--   Meer informatie over [het Volume Purchase Program for Business voor iOS-apparaten](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune).
+-   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   Meer informatie over [Windows Store voor Bedrijven](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+-   [Windows Store voor Bedrijven-apps](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Vereisten voor app-typen
 
-Aangezien apps kunnen worden geïmplementeerd voor gebruikers en apparaten, is het raadzaam om te beslissen welke apps door Intune worden beheerd. Probeer de volgende vragen te beantwoorden tijdens het samenstellen van de lijst:
+Aangezien apps kunnen worden geïmplementeerd voor gebruikers en apparaten, wordt u aangeraden te beslissen welke apps door Intune worden beheerd. Probeer de volgende vragen te beantwoorden tijdens het samenstellen van de lijst:
 
 -   Is voor de apps integratie met cloudservices vereist?
 
@@ -353,28 +361,29 @@ Aangezien apps kunnen worden geïmplementeerd voor gebruikers en apparaten, is h
 
 -   Welke implementatieopties zijn er voor deze apps beschikbaar?
 
--   Moet uw bedrijf zijn partners toegang verlenen tot gegevens van SaaS-apps (Software as a Service)?
+-   Moet uw bedrijf zijn partners toegang verlenen tot gegevens van SaaS-apps (Software-as-a-Service)?
 
 -   Hebben de apps internettoegang vanaf de apparaten van de gebruikers nodig?
 
--   Zijn de apps openbaar beschikbaar in een app-store of zijn het aangepaste Line-Of-Business-apps?
+-   Zijn de apps openbaar beschikbaar in een app-store of zijn het aangepaste LOB-apps (Line-Of-Business)?
 
-
->[!TIP]
-> Bekijk de [verschillende typen apps die ondersteuning bieden voor Intune](/intune-classic/deploy-use/add-apps).
 
 #### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
-Met beleid voor app-beveiliging kan het verlies van gegevens tot een minimum worden beperkt door te definiëren hoe de app de bedrijfsgegevens beheert. Intune ondersteunt beleid voor app-beveiliging voor elke app die functioneert met beheer van mobiele apps. Bij het ontwerpen van het beleid voor app-beveiliging moet u bepalen welke beperkingen u instelt voor bedrijfsgegevens in een bepaalde app. Het is raadzaam om te bekijken hoe [beleid voor app-beveiliging](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) werkt. Hieronder ziet u een voorbeeld van het vastleggen van de bestaande apps en welke beveiliging er nodig is.
+Met beleid voor app-beveiliging kan het verlies van gegevens tot een minimum worden beperkt door te definiëren hoe de app de bedrijfsgegevens beheert. Intune ondersteunt beleid voor app-beveiliging voor elke app die functioneert met beheer van mobiele apps. Bij het ontwerpen van het beleid voor app-beveiliging moet u besluiten welke beperkingen u wilt instellen voor bedrijfsgegevens in een bepaalde app. Het is raadzaam om te bekijken hoe [beleid voor app-beveiliging](app-protection-policy.md) werkt. Hieronder ziet u een voorbeeld van het vastleggen van de bestaande apps en welke beveiliging er nodig is.
 
 | **App** | **Doel** | **Platformen** | **Use case** | **Beleid voor app-beveiliging** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Beschikbaar | iOS | Bedrijfseigendom - leidinggevenden | Apparaat kan niet jailbroken zijn, bestanden versleutelen |                                                         
 | Word | Beschikbaar | iOS, Android - Samsung Knox, niet-Knox, Windows 10 Mobile | Bedrijfseigendom, BYOD | Apparaat kan niet jailbroken zijn, bestanden versleutelen |                                                         
 
+
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw beleid voor app-beveiliging vast te stellen.
 #### <a name="compliance-policies"></a>Nalevingsbeleid
 
-Nalevingsbeleid bepaalt of een apparaat aan bepaalde vereisten voldoet. Intune hanteert nalevingsbeleid om te bepalen of een apparaat als compatibel of niet-compatibel wordt beschouwd. De nalevingsstatus kan vervolgens worden gebruikt om de toegang tot bedrijfsbronnen te beperken. Als voorwaardelijke toegang is vereist, is het raadzaam om een [nalevingsbeleid voor apparaten](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) te ontwerpen. Raadpleeg de vereisten en gebruiksvoorbeelden om te bepalen hoeveel nalevingsbeleidsregels voor apparaten er nodig zijn en op welke gebruikersgroepen die van toepassing zijn. Daarnaast moet u bepalen hoe lang een apparaat offline kan zijn zonder in te checken voordat het als niet-compatibel wordt beschouwd.
+Nalevingsbeleid bepaalt of een apparaat aan bepaalde vereisten voldoet. Intune hanteert nalevingsbeleid om te bepalen of een apparaat als compatibel of niet-compatibel wordt beschouwd. De nalevingsstatus kan vervolgens worden gebruikt om de toegang tot bedrijfsbronnen te beperken of toe te staan. Als voorwaardelijke toegang is vereist, is het raadzaam een [nalevingsbeleid voor apparaten](device-compliance.md) te ontwerpen.
+
+Raadpleeg de vereisten en gebruiksvoorbeelden om te bepalen hoeveel nalevingsbeleidsregels voor apparaten u nodig hebt en op welke gebruikersgroepen die van toepassing zijn. Daarnaast moet u besluiten hoe lang een apparaat offline kan zijn zonder in te checken, voordat het als niet-compatibel wordt beschouwd.
 
 Hieronder ziet u een voorbeeld van het ontwerpen van nalevingsbeleid:
 
@@ -382,21 +391,17 @@ Hieronder ziet u een voorbeeld van het ontwerpen van nalevingsbeleid:
 |:---:|:---:|:---:|:---:|
 | Nalevingsbeleid | iOS, Android - Samsung Knox, niet-Knox, Windows 10 Mobile | PIN - vereist, kan niet jailbroken zijn | Bedrijfseigendom, BYOD |
 
+
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw nalevingsbeleid vast te stellen.
 #### <a name="conditional-access-policies"></a>Beleid voor voorwaardelijke toegang
 
-Voorwaardelijke toegang wordt gebruikt om alleen compatibele apparaten toegang tot bedrijfsbronnen te verlenen. Intune werkt met de volledige Enterprise Mobility + Security (EMS) om toegang tot bedrijfsbronnen te beheren. U moet vaststellen of voorwaardelijke toegang vereist is en wat er moet worden beveiligd.
+Voorwaardelijke toegang wordt gebruikt om alleen compatibele apparaten toegang tot e-mail en andere bedrijfsbronnen te verlenen. Intune werkt met Enterprise Mobility + Security (EMS) om toegang tot bedrijfsbronnen te bewaken. U moet besluiten of voorwaardelijke toegang is vereist en wat er moet worden beveiligd. Meer informatie over [voorwaardelijke toegang](conditional-access.md).
 
--   Meer informatie over [voorwaardelijke toegang](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
-
-Bepaal met het oog op online toegang voor welke platformen en gebruikersgroepen beleidsregels voor voorwaardelijke toegang gelden.
-
-Daarnaast moet u bepalen of de service-naar-service-connector van Intune moet worden geïnstalleerd/geconfigureerd voor Exchange Online of Exchange On-premises.
-
-Meer informatie over het installeren en configureren van de service-naar-service-connectors van Intune:
+Besluit met het oog op onlinetoegang voor welke platformen en gebruikersgroepen beleidsregels voor voorwaardelijke toegang gelden. Daarnaast moet u bepalen of de service-naar-service-connector van Intune moet worden geïnstalleerd of geconfigureerd voor Exchange Online of Exchange On-premises. Meer informatie over het installeren en configureren van de service-naar-service-connectors van Intune: <!---these links are correct--->
 
 -   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
 
--   [Exchange On-premises](/intune-classic/deploy-use/intune-on-premises-exchange-connector)
+-   [Exchange On-premises](exchange-connector-install.md)
 
 Hieronder ziet u een voorbeeld van het vastleggen van beleidsregels voor voorwaardelijke toegang:
 
@@ -405,6 +410,8 @@ Hieronder ziet u een voorbeeld van het vastleggen van beleidsregels voor voorwaa
 | Exchange Online | iOS, Android | Niet-compatibele apparaten blokkeren op platforms die worden ondersteund door Intune | Bedrijfseigendom, BYOD |
 | SharePoint Online | iOS, Android |  | Bedrijfseigendom, BYOD |
 
-## <a name="next-section"></a>Volgende sectie
+U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw beleid voor voorwaardelijke toegang vast te stellen.
+
+## <a name="next-steps"></a>Volgende stappen
 
 De volgende sectie bevat richtlijnen voor het [Intune-implementatieproces](planning-guide-onboarding.md).

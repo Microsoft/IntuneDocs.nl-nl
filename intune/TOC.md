@@ -17,11 +17,12 @@
 ## [Bekende problemen](known-issues.md)
 ## [Ondersteuning krijgen](get-support.md)
 
-# [Aan de slag](get-started-evaluation.md)
-## [Een groep maken](get-started-groups.md)
+# [Aan de slag met Intune](get-started-evaluation.md)
+## [De Azure-portal gebruiken](get-started-azure.md)
 ## [Een gebruiker maken](get-started-users.md)
-## [Apparaten inschrijven](get-started-enroll.md)
+## [Een groep maken](get-started-groups.md)
 ## [Beleid toewijzen](get-started-policies.md)
+## [Apparaten inschrijven](get-started-enroll.md)
 ## [Apps toewijzen](get-started-apps.md)
 
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -49,6 +49,11 @@ U kunt beleidsregels voor Managed Browser maken voor de volgende apparaattypen:
 -   Apparaten met Android 4 en hoger
 
 -   Apparaten met iOS 8.0 en hoger
+
+>[!IMPORTANT]
+>Vanaf oktober 2017 ondersteunt de app Intune Managed Browser in de Android-app alleen nog apparaten waarop Android 4.4 en hoger wordt uitgevoerd. De app Intune Managed Browser voor iOS ondersteunt alleen apparaten met iOS 9.0 en hoger.
+>Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
+
 
 Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -84,19 +89,15 @@ U wijst de instellingen aan Azure AD-groepen gebruikers toe. Als deze gebruiker 
 
 De Intune-app Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) kunnen samen worden gebruikt om de volgende scenario's te ondersteunen voor gebruikers van iOS- en Android-apparaten:
 
-- Een gebruiker downloadt de Microsoft Outlook-app en meldt zich hierbij aan.  Het beleid voor app-beveiliging van Intune wordt automatisch toegepast. Dit houdt in dat opgeslagen gegevens worden versleuteld en dat wordt voorkomen dat de gebruiker bestanden van het bedrijf overbrengt naar niet-beheerde apps of locaties op het apparaat. Wanneer de gebruiker vervolgens in Outlook klikt op een koppeling naar een intranetsite, kunt u instellen dat de koppeling wordt geopend in de Managed Browser-app en niet in een andere browser.
-De Managed Browser-app herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk en de koppeling in Outlook werkt zoals verwacht.  
-
-- Een externe gebruiker opent de app Managed Browser en gaat naar een intranetsite met behulp van de interne URL. De Managed Browser-app herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt.
-Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk.  
+- Een gebruiker downloadt de Microsoft Outlook-app en meldt zich hierbij aan. Het beleid voor app-beveiliging van Intune wordt automatisch toegepast. Dit houdt in dat opgeslagen gegevens worden versleuteld en dat wordt voorkomen dat de gebruiker bestanden van het bedrijf overbrengt naar niet-beheerde apps of locaties op het apparaat. Wanneer de gebruiker vervolgens in Outlook klikt op een koppeling naar een intranetsite, kunt u instellen dat de koppeling wordt geopend in de Managed Browser-app en niet in een andere browser. De Managed Browser-app herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk en de koppeling in Outlook werkt zoals verwacht.
+- Een externe gebruiker opent de app Managed Browser en gaat naar een intranetsite met behulp van de interne URL. De Managed Browser-app herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk.
 
 ### <a name="before-you-start"></a>Voordat u begint
 
-- Zorg ervoor dat uw interne toepassingen worden gepubliceerd via de Azure AD-toepassingsproxy.
-- Raadpleeg [deze documentatie]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
-- U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
-- Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser-app.
-- Een gebruiker kan alleen apps zien die automatisch worden omgeleid via de toepassingsproxy en die aan hen zijn toegewezen.
+- Stel de interne toepassingen in via de toepassingsproxy van Azure AD.
+    - Raadpleeg [deze documentatie]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
+    - U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
+    - Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser-app.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Stap 1: automatische omleiding naar Managed Browser vanuit Outlook inschakelen
 Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de instelling **Webinhoud beperken voor weergave in de Managed Browser** beschikbaar komt.

@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Problemen met app-implementaties oplossen in Microsoft Intune
 
@@ -36,9 +36,9 @@ Als u problemen hebt met het implementeren en beheren van apps met Intune, begin
 |0x80073CFB|Het opgegeven pakket is al geïnstalleerd en opnieuw installeren van het pakket is geblokkeerd|Dit foutbericht kan worden weergegeven als u een pakket installeert dat niet gelijk is aan het pakket dat al is geïnstalleerd. Controleer of de digitale handtekening ook onderdeel is van het pakket. Wanneer een pakket opnieuw is samengesteld of opnieuw is ondertekend, is dat pakket niet meer bitsgewijs identiek aan het eerder geïnstalleerde pakket. Er zijn twee mogelijke opties om deze fout te herstellen:<br /><br />-   Verhoog het versienummer van de app, stel het pakket opnieuw samen en onderteken het opnieuw.<br />-   Verwijder het oude pakket voor elke gebruiker op het systeem voordat u het nieuwe pakket installeert.|
 |0x87D1041C|De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd.|-De app is geïmplementeerd met Intune en daarna verwijderd (mogelijk door de eindgebruiker). Geef de gebruiker de opdracht de app opnieuw te installeren via de bedrijfsportal. Vereiste apps worden automatisch opnieuw geïnstalleerd wanneer het apparaat vervolgens incheckt.|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>Het oplossen van problemen met apps van de Windows Store
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Het oplossen van problemen met apps van Microsoft Store
 
-De informatie in het Engelstalige onderwerp [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Windows Store-apps) helpt u om algemene problemen op te lossen die optreden tijdens het installeren van apps in de Windows Store, hetzij met behulp van Intune of op een andere manier.
+De informatie in het Engelstalige onderwerp [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Microsoft Store-apps) helpt u om algemene problemen op te lossen die optreden tijdens het installeren van apps in Microsoft Store, hetzij met behulp van Intune of op een andere manier.
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Het oplossen van problemen bij het implementeren van apps naar pc's die worden beheerd door de Intune-softwareclient
 Voor hulp bij het oplossen van problemen met het implementeren van apps naar de pc's die worden beheerd door de Intune-softwareclient, kunt u de volgende twee logboekbestanden raadplegen:

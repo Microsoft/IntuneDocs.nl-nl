@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 8eff9b53-eef2-4c50-8aee-556bc49d69f2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a8862f19198295541a88c7240c448af0b75613c4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 44f69179f76c8d5eeca1594485ca3a9c1b036188
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="reset-intune-managed-devices-to-factory-settings"></a>Met Intune beheerde apparaten terugzetten op de fabrieksinstellingen
 
@@ -27,11 +27,23 @@ ms.lasthandoff: 07/01/2017
 
 Als u de **fabrieksinstellingen** teruggezet, worden de standaardinstellingen van het apparaat hersteld. Het apparaat wordt niet meer beheerd door Intune en de bedrijfsgegevens en persoonlijke gegevens worden verwijderd. U kunt deze actie niet ongedaan maken.
 
+## <a name="supported-platforms"></a>Ondersteunde platforms
+
+- Windows: ondersteund op Windows 8.1 en hoger (niet op met EAS beheerde apparaten)
+- Windows Phone: ondersteund
+- iOS: ondersteund
+- macOS: niet ondersteund
+- Android: ondersteund (Android for Work wordt niet ondersteund)
+
+## <a name="how-to-reset-a-device-to-factory-settings"></a>Apparaten terugzetten naar de fabrieksinstellingen
+
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
 5. Kies in de lijst met apparaten die u beheert, een apparaat en kies vervolgens de externe apparaatactie **Fabrieksinstellingen**.
+
+## <a name="next-steps"></a>Volgende stappen
 
 Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten en groepen** de optie **Apparaatacties**.
 

@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: a09235d53b9340d853dba95299fc5788494ed165
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -35,7 +35,7 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 |**Apparaatprofielen**|Niet beschikbaar|Beschikbaar <br>[Wat zijn Microsoft Intune-apparaatprofielen?](https://docs.microsoft.com/intune-azure/configure-devices/what-are-device-profiles)|
 |**Inschrijving zonder agent**|Niet beschikbaar |Beschikbaar<br>[Windows-apparaten inschrijven](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices)|
 |**Beheer van software-updates**| Windows-updates en updates voor Microsoft-apps<br>[Windows-pc's up-to-date houden met software-updates](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|Microsoft Store voor Bedrijven voor Windows 10-updates en updates voor Microsoft-apps<br> [Instellingen voor Windows Update voor bedrijven configureren](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
-|**Softwarelicentiebeheer**|Beschikbaar <br>[Licentieovereenkomsten voor Windows-pc-software beheren](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|Microsoft Store voor Bedrijven (alleen .appx-apps)<br>[Apps beheren die zijn aangeschaft in Windows Store voor Bedrijven](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
+|**Softwarelicentiebeheer**|Beschikbaar <br>[Licentieovereenkomsten voor Windows-pc-software beheren](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|Microsoft Store voor Bedrijven (alleen .appx-apps)<br>[Apps beheren die zijn aangeschaft in Microsoft Store voor Bedrijven](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
 |**Inventaris**|Beschikbaar <br>[Hardware- en software-inventaris voor Windows-pc's weergeven](https://docs.microsoft.com/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune)|Beschikbaar <br>[App-gegevens controleren](https://docs.microsoft.com/intune/apps-monitor)<br>[Wat is apparaatbeheer](https://docs.microsoft.com/intune/device-management)|
 |**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |Niet beschikbaar|
 |**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender-instellingen](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
