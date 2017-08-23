@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD met Intune inschakelen
 
@@ -75,14 +75,14 @@ Met Intune is het eenvoudig om:
 * [store-apps te leveren op beheerde apparaten](apps-deploy.md)
 * apps te zenden naar niet-beheerde apparaten met de bedrijfsportal-website
 
-Met Intune kunt u ook apps beheren en implementeren die u via een volume-aankoop hebt aangeschaft in de iOS App Store en de Windows Store voor Bedrijven. Zo beperkt u de administratieve overhead voor het bijhouden van apps die zijn aangeschaft via een volume-aankoopprogramma.
+U kunt met Intune ook apps beheren en implementeren die u via een volume-aankoop hebt aangeschaft in iOS App Store en Microsoft Store voor Bedrijven. Zo beperkt u de administratieve overhead voor het bijhouden van apps die zijn aangeschaft via een volume-aankoopprogramma.
 
 > [!TIP]
 > U kunt [enkelvoudige aanmelding (SSO) configureren met Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). Met SSO kunnen gebruikers zich aanmelden bij apps met de domeingebruikersnaam en het -wachtwoord dat ze on-premises gebruiken. Daarnaast kunt u de toepassingsproxy voor Azure Active Directory gebruiken om [internettoegang te leveren aan web-apps die on-premises worden gehost](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 -   [Apps voor iOS-apparaten beheren die u hebt aangeschaft via een volume-aankoopprogramma](vpp-apps-ios.md). U koopt meerdere licenties voor iOS-apps via het [Apple Volume Purchase Program voor bedrijven](http://www.apple.com/business/vpp/). U moet een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune. U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps.
 
--   [Apps beheren die zijn aangeschaft in Windows Store voor Bedrijven](windows-store-for-business.md). [Windows Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en aan te schaffen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u de store aan Intune koppelt, kunt u apps die in grotere volumes zijn aangeschaft, beheren vanuit de Intune-portal.
+-   [Apps beheren die zijn aangeschaft in Microsoft Store voor Bedrijven](windows-store-for-business.md). [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en te kopen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u de store aan Intune koppelt, kunt u apps die in grotere volumes zijn aangeschaft, beheren vanuit de Intune-portal.
 
 ## <a name="protect-company-data"></a>Bedrijfsgegevens beveiligen
 
@@ -105,10 +105,10 @@ U kunt gebruikmaken van [Intune-beveiligingsbeleid voor apps](app-protection-pol
 
 U kunt [beleid voor Windows-gegevensbescherming](app-protection-policies-configure-windows-10.md) gebruiken om hetzelfde te doen voor beheerde Windows 10-apparaten. Deze beleidsregels werken zonder dat de gebruikerservaring van werknemers hierdoor wordt beïnvloed. Er zijn geen wijzigingen in uw netwerkomgeving of andere apps nodig.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Bedrijfsgegevens wissen met behoud van persoonlijke gegevens
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Bedrijfsgegevens verwijderen met behoud van persoonlijke gegevens
 
-Wanneer een apparaat niet langer nodig is voor het werk, voor een ander doel wordt gebruikt of is kwijtgeraakt, kunt u de bedrijfs-apps en -gegevens van het apparaat verwijderen. U kunt dit doen door de mogelijkheden voor wissen en selectief wissen van Intune te gebruiken. Gebruikers kunnen via de Intune-bedrijfsportal ook op afstand gegevens wissen van de apparaten die hun persoonlijke eigendom zijn, als die zijn geregistreerd in Intune.
+Wanneer een apparaat niet langer nodig is voor het werk, voor een ander doel wordt gebruikt of is kwijtgeraakt, kunt u de bedrijfs-apps en -gegevens van het apparaat verwijderen. Hiervoor kunt u Intune-functies voor het verwijderen van bedrijfsgegevens en het terugzetten van de fabrieksinstellingen gebruiken. Gebruikers kunnen via de Intune-bedrijfsportal ook op afstand gegevens verwijderen van de apparaten die hun persoonlijke eigendom zijn, als die zijn geregistreerd in Intune.
 
-Met [Volledig wissen](devices-wipe.md) worden de fabrieksinstellingen van een apparaat hersteld en worden alle gebruikersgegevens en -instellingen verwijderd. Met [selectief wissen](devices-wipe.md#selective-wipe) worden alleen bedrijfsgegevens van het apparaat verwijderd, maar blijven de persoonlijke gegevens van de gebruiker intact.
+Met [Fabrieksinstellingen terugzetten](devices-wipe.md) wordt een apparaat teruggezet op de standaardfabrieksinstellingen, worden de gebruikersgegevens en -instellingen verwijderd en wordt het apparaat verwijderd uit de beheerfunctie van Intune. Met [Bedrijfsgegevens verwijderen](devices-wipe.md#remove-company-data) worden alleen bedrijfsgegevens van het apparaat verwijderd, maar blijven de persoonlijke gegevens van de gebruiker intact.
 
-Na het starten wordt het proces voor selectief wissen onmiddellijk uitgevoerd om het apparaat uit het beheer te verwijderen. Wanneer het proces is voltooid, zijn alle bedrijfsgegevens verwijderd en is de naam van het apparaat verwijderd uit de Intune-portal. Hiermee wordt het levenscyclusbeheer van het apparaat voltooid.
+Zodra dit proces is gestart, wordt het apparaat onmiddellijk opnieuw ingesteld. Wanneer het proces is voltooid, zijn alle bedrijfsgegevens verwijderd en is de naam van het apparaat verwijderd uit Intune. Hiermee wordt het levenscyclusbeheer van het apparaat voltooid.
