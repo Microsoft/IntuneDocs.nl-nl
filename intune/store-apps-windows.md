@@ -3,8 +3,8 @@ title: Windows Store-apps toevoegen aan Intune
 titleSuffix: Intune on Azure
 description: Meer informatie over het toevoegen van Windows Store-apps aan Intune.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ee7a15be73f3d70295ceec29e31b4fa35ea1c04e
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Store-apps toevoegen aan Microsoft Intune
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>De Windows 10-bedrijfsportal-app handmatig toewijzen
-Eindgebruikers kunnen de bedrijfsportal-app installeren vanuit de Windows Store voor het beheren van apparaten en installeren van apps. Als uw bedrijf echter vereist dat u de bedrijfsportal-app toewijst, kunt u de Windows 10-bedrijfsportal-app handmatig rechtstreeks toewijzen vanuit Intune, zelfs als u Intune niet hebt geïntegreerd met Windows Store voor Bedrijven.
+Eindgebruikers kunnen de bedrijfsportal-app installeren vanuit Microsoft Store voor het beheren van apparaten en installeren van apps. Als uw bedrijf echter vereist dat u de bedrijfsportal-app toewijst, kunt u de Windows 10-bedrijfsportal-app handmatig rechtstreeks toewijzen vanuit Intune, ook als u Intune niet hebt geïntegreerd met Microsoft Store voor Bedrijven.
 
  > [!NOTE]
  > Voor deze optie is handmatige toewijzing van updates vereist voor elke app-update.
 
-1. Meld u aan bij uw account in de [Windows Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de **offlinelicentie**versie van de bedrijfsportal-app aan.  
+1. Meld u aan bij uw account in [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de versie met de **offlinelicentie** van de bedrijfsportal-app aan.  
 2. Zodra de app is aangeschaft, selecteert u de app op de pagina **Inventaris**.  
 3. Selecteer **Windows 10 alle apparaten** als **Platform**. Klik vervolgens op de betreffende **Architectuur** en download. Een app-licentiebestand is niet nodig voor deze app.
 ![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Als de Windows 10-bedrijfsportal-app op deze manier is ondertekend en toegewezen
 Het ondertekenen en toewijzen van de app gaat als volgt:
 
 1. Download het ondertekeningsscript voor de Microsoft Intune Windows 10-bedrijfsportal-app van [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Voor dit script moet de Windows SDK voor Windows 10 moet zijn geïnstalleerd op de hostcomputer. Ga naar [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) om de Windows SDK voor Windows 10 te downloaden.
-2. Download de Windows 10-bedrijfsportal-app vanuit de Windows Store voor Bedrijven, zoals hierboven beschreven.  
+2. Download de Windows 10-bedrijfsportal-app vanuit Microsoft Store voor Bedrijven, zoals hierboven beschreven.  
 3. Voer het script uit met de invoerparameters die zijn opgegeven in de koptekst van het script om de Windows-10-bedrijfsportal-app (hieronder uitgepakt) te ondertekenen. Afhankelijkheden hoeven niet in het script te worden doorgegeven. Deze zijn alleen vereist wanneer de app wordt geüpload naar de Intune-beheerconsole.
 
 |Parameter | Beschrijving|

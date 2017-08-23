@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="map-device-groups"></a>Apparaatgroepen toewijzen
 
@@ -43,8 +43,8 @@ U kunt alle apparaatcategorieën maken die u maar wilt, bijvoorbeeld:
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Stap 1: apparaatcategorieën maken op de blade Intune in Azure Portal
 1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten inschrijven** op de blade **Intune**.
-3. Kies **Apparaatcategorieën** op de blade **Inschrijving**.
+3. Kies **Apparaatinschrijving** op de blade **Intune**.
+3. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving**.
 4. Kies **Maken** op de pagina **Apparaatcategorieën** om een nieuwe categorie toe te voegen.
 5. Voer op de volgende blade een **naam** in voor de nieuwe categorie en voer desgewenst een **beschrijving** in.
 6. Wanneer u klaar bent, klikt u op **Maken**. In de lijst met categorieën ziet u de categorie die u zojuist hebt gemaakt.

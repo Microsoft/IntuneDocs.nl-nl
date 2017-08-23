@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Op iOS-apparaten onder supervisie Activeringsslot overslaan met Intune
 
@@ -39,7 +39,7 @@ Activeringsvergrendeling helpt iOS-apparaten te beveiligen en verbetert de kans 
 - U hebt een lijst nodig van alle apparaten waarop activeringsvergrendeling is ingeschakeld.
 - Tijdens het vervangen van apparaten binnen uw organisatie, wilt u bepaalde apparaten aan een andere afdeling toewijzen. U kunt alleen apparaten toewijzen waarop de activeringsvergrendeling niet is ingeschakeld.
 
-Voor het oplossen van deze problemen heeft Apple in iOS 7.1 de mogelijkheid geïntroduceerd om een bypass van de activeringsvergrendeling uit te voeren. Hiermee kunt u de activeringsvergrendeling van een apparaat onder supervisie verwijderen zonder dat u de Apple ID en het wachtwoord van de gebruiker nodig hebt. Op apparaten onder supervisie kan een apparaatspecifieke bypass-code voor de activeringsvergrendeling worden gegenereerd, die wordt opgeslagen op de activeringsserver van Apple.
+Voor het oplossen van deze problemen heeft Apple in iOS 7.1 de mogelijkheid geïntroduceerd om een bypass van de activeringsvergrendeling uit te voeren. Met een bypass van het activeringsslot kunt u het activeringsslot van apparaten onder supervisie verwijderen zonder dat u de Apple-id en het wachtwoord van de gebruiker nodig hebt. Op apparaten onder supervisie kan een apparaatspecifieke bypass-code voor de activeringsvergrendeling worden gegenereerd, die wordt opgeslagen op de activeringsserver van Apple.
 
 >[!TIP]
 >Met de supervisiemodus voor iOS-apparaten kunt u Apple Configurator gebruiken en de vergrendelingsfunctionaliteit te beperken tot bepaalde bedrijfsdoeleinden. De supervisiemodus wordt doorgaans alleen gebruikt voor apparaten in bedrijfseigendom.
@@ -49,13 +49,13 @@ Meer informatie over het activeringsslot vindt u op de [website van Apple](https
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Activeringsvergrendeling beheren met Intune
 Intune kan de status opvragen van de activeringsvergrendeling van apparaten met supervisie waarop iOS 8.0 of hoger wordt uitgevoerd. Alleen voor apparaten onder supervisie kan met Intune de bypass-code van de activeringsvergrendeling worden opgehaald direct aan het apparaat worden uitgegeven. Als het apparaat is gewist, kunt u rechtstreeks toegang krijgen tot het apparaat met een lege gebruikersnaam en de code als wachtwoord.
 
-**De zakelijke voordelen hiervan zijn:**
+**De zakelijke voordelen van het gebruik van Intune voor het beheren van Activeringsslot zijn:**
 
 - De gebruiker beschikt over de beveiligingsvoordelen van de app Zoek mijn iPhone.
-- De gebruiker kan werken en u weet ondertussen zeker dat u het apparaat buiten gebruik kunt stellen of kunt ontgrendelen wanneer het opnieuw moet worden toegewezen.
+- De gebruiker kan werken en u weet zeker dat u het apparaat buiten gebruik kunt stellen of kunt ontgrendelen wanneer het opnieuw moet worden toegewezen.
 
 ## <a name="before-you-start"></a>Voordat u begint
-Voordat u bypass van de activeringsvergrendeling op apparaten kunt uitvoeren, moet u deze optie eerst inschakelen. U doet dit als volgt:
+Voordat u een bypass van het activeringsslot op apparaten kunt uitvoeren, moet u deze optie eerst inschakelen aan de hand van de volgende instructies:
 
 1. Configureer een Intune-apparaatbeperkingsprofiel voor iOS op basis van de informatie in [How to configure device restriction settings](/intune-azure/configure-devices/how-to-configure-device-restrictions) (Apparaatbeperkingsinstellingen configureren).
 2. Schakel de instelling **Activeringsslot** van de modus **Kiosk** in.
@@ -65,7 +65,7 @@ Voordat u bypass van de activeringsvergrendeling op apparaten kunt uitvoeren, mo
 ## <a name="how-to-use-activation-lock-bypass"></a>Activeringsslot overslaan gebruiken
 
 >[!IMPORTANT]
->Nadat u voor de activeringsvergrendeling op een apparaat een bypass hebt uitgevoerd, wordt automatisch een nieuwe activeringsvergrendeling toegepast zodra de app Zoek mijn iPhone wordt geopend. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**.
+>Nadat u voor het activeringsslot op een apparaat een bypass hebt uitgevoerd en als de app Zoek mijn iPhone is geopend, wordt automatisch een nieuw activeringsslot toegepast. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**.
 
 Met de externe apparaatactie **Activeringsvergrendeling overslaan** verwijdert u het activeringsslot van een iOS-apparaat zonder de Apple-id en het wachtwoord van de gebruiker. Als u de activeringsvergrendeling hebt overgeslagen, wordt de activeringsvergrendeling opnieuw ingeschakeld zodra de app Zoek mijn iPhone start. Sla de activeringsvergrendeling alleen over als u fysiek toegang hebt tot het apparaat.
 
@@ -74,5 +74,7 @@ Met de externe apparaatactie **Activeringsvergrendeling overslaan** verwijdert u
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
 5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat onder supervisie en kies vervolgens de externe apparaatactie **Activeringsvergrendeling overslaan**.
+
+## <a name="next-steps"></a>Volgende stappen
 
 Bekijk de status van de ontgrendelingsaanvraag op de detailpagina voor het apparaat in de workload **Apparaten beheren**.
