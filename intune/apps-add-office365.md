@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -35,7 +35,7 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de 
 - Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus 2016.
 - Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, verliezen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden.
 - Deze installatiemethode wordt niet in Windows 10S-apparaten ondersteund.
-- Als u dit type app de status Beschikbaar geeft en meerdere gebruikers verschillende toewijzingen verleent, zien ze alleen de toewijzing die het laatst is verleent.
+- Intune biedt geen ondersteuning voor het installeren van Office 365-bureaublad-apps vanuit Windows Store (bekend als Centennial Office-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.
 
 
 ## <a name="get-started"></a>Aan de slag
