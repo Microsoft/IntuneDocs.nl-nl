@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Gebruikers helpen met behulp van de portal voor probleemoplossing
 
@@ -41,7 +41,7 @@ Als Intune-beheerder kunt u de rol Helpdeskmedewerker toewijzen aan een gebruike
 Ga als volgt te werk als u helpdeskgebruikers wilt toevoegen:
 1. [Voeg indien nodig gebruikers aan Intune toe](users-add.md).
 2. [Maak een helpdeskgroep](groups-add.md) en voeg gebruikers aan de groep toe.
-3. [Wijs de RBAC-rol Helpdeskmedewerker toe.](role-based-access-control.md#built-in-roles)
+3. [Wijs de RBAC-rol Helpdeskmedewerker toe](role-based-access-control.md#built-in-roles).
 
   ![Schermafbeelding van de Intune-portal met de Intune-rollen gemarkeerd en een lijst van ingebouwde rollen, inclusief de rol Helpdeskmedewerker](./media/help-desk-user-add.png) U kunt ook een [aangepaste rol maken](role-based-access-control.md#custom-roles) die u verder kunt aanpassen om helpdeskmedewerkers toegang te geven.  Helpdeskmedewerkers moeten over de volgende machtigingen beschikken om gebruikers te ondersteunen bij probleemoplossing:
     - MobileApps: Lezen
@@ -61,8 +61,6 @@ Medewerkers van de helpdesk en Intune-beheerders hebben op twee manieren toegang
 - Meld u aan bij Azure Portal, kies **Meer services** > **Bewaking en beheer** > **Intune** en ga vervolgens naar **Help en ondersteuning** > **Problemen oplossen**.
 
 Klik op **Gebruiker selecteren** om een gebruiker en de gegevens van die gebruiker te bekijken.
-
-![Schermafbeelding van de werkbelasting Problemen oplossen van Intune, met de koppeling Gebruiker selecteren](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Toegang tot de Portal voor problemen oplossen
 
