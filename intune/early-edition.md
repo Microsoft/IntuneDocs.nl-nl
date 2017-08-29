@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: ba953f1f471cc8bdbfdadad75c8f4eeb8acc2279
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>De vroege editie voor Microsoft Intune - augustus 2017
 
@@ -57,15 +57,12 @@ We gaan nieuwe [instellingen voor apparaatbeperkingen](device-restrictions-andro
 U kunt de app opgeven met de URL of met de pakketnaam opgeven, of kiezen in de lijst met apps die u beheert.
 
 ### <a name="new-settings-for-windows-10-device-restriction-profile"></a>Nieuwe instellingen voor het apparaatbeperkingsprofiel voor Windows 10
-<!--- 978575, 1308849, 1308850 -->
+<!--- 978575, 1308849, -->
 Er worden nieuwe instellingen toegevoegd aan het apparaatbeperkingsprofiel voor Windows 10 in de categorie Windows Defender SmartScreen.
 
 Zie [Apparaatbeperkingsinstellingen voor Windows 10-apparaten en hoger]( device-restrictions-windows-10.md) voor meer informatie.
 
-### <a name="new-device-restriction-settings-for-windows-10------1063965---"></a>Nieuwe apparaatbeperkingsinstellingen voor Windows 10   <!-- 1063965 -->
-Er worden nieuwe instellingen toegevoegd voor het [apparaatbeperkingsprofiel voor Windows 10](/intune/device-restrictions-windows-10), en wel in de volgende categorieën:
-- Windows Defender SmartScreen
-- App Store
+
 
 
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>Android for Work-ondersteuning voor Lookout <!-- 1087312 -->   
@@ -120,8 +117,6 @@ Eindgebruikers hoeven hun apparaat binnenkort niet meer in te schrijven om toega
 ### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>Verbeterd foutbericht als een gebruiker het maximum aantal apparaten bereikt dat mag worden ingeschreven <!-- 1270370 -->
 In plaats van een algemeen foutbericht krijgen eindgebruikers een gebruikersvriendelijk foutbericht te zien waarop een actie kan worden uitgevoerd: 'U hebt het maximum aantal apparaten ingeschreven dat door de IT-beheerder is toegestaan. Verwijder een ingeschreven apparaat of vraag assistentie van uw IT-beheerder.'
 
-### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Nieuwe aanmeldingsmogelijkheid voor gebruikers van de Android-bedrijfsportal en van het app-beveiligingsbeleid <!-- 621669 -->
-Eindgebruikers kunnen in apps bladeren, apparaten beheren en de gegevens voor de IT-contactpersoon bekijken met de Android-bedrijfsportal-app zonder dat ze hun Android-apparaten hoeven in te schrijven. Als een eindgebruiker al een app gebruikt die wordt beveiligd door Intune-app-beveiligingsbeleid en de Android-bedrijfsportal opent, wordt hem of haar ook niet meer gevraagd het apparaat in te schrijven. 
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Eindgebruikers informeren welke apparaatgegevens voor iOS kunnen worden gezien <!--739894-->
 Aan het scherm voor apparaatgegevens in de bedrijfsportal-app voor iOS wordt de optie **Eigendomstype**  toegevoegd. Hierdoor kunnen gebruikers meer over privacy te weten komen vanaf deze pagina in de documenten voor Intune-eindgebruikers. Deze informatie is ook te vinden op het scherm Info.
