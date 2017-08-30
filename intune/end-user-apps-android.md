@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Hoe uw Android-gebruikers apps downloaden
 
@@ -32,6 +32,14 @@ Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de
 | ------------- |-------------| -----|
 | Available apps      | Gebruikers tikken op **Installeren** in de bedrijfsportal. Er wordt een melding weergegeven waarop gebruikers vervolgens tikken om de installatie te starten. Nadat de installatie is voltooid, verdwijnt de melding. | Gebruikers tikken op de app in de bedrijfsportal en gaan naar een app-pagina in de Play Store, waar ze de installatie kunnen starten.|
 | Required apps      | Gebruikers krijgen een melding te zien die niet kan worden gesloten en waarin wordt aangegeven dat er een app moet worden geïnstalleerd. Gebruikers tikken op de melding om de installatie te starten. Nadat de installatie is voltooid, verdwijnt de melding.    | Gebruikers krijgen een melding te zien die niet kan worden gesloten en waarin wordt aangegeven dat er een app moet worden geïnstalleerd. Gebruikers tikken op de melding en gaan naar een app-pagina in de Play Store, waar ze de installatie kunnen starten. Nadat de installatie is voltooid, verdwijnt de melding. |
+
+Uw eindgebruikers moeten installatie van onbekende bronnen toestaan om [LOB-apps](lob-apps-android.md) te kunnen installeren. Deze zijn normaal gesproken op twee verschillende plaatsen te vinden:
+
+* **Android 7.1.2 en ouder**: **Instellingen** > **Beveiliging** > **Onbekende bronnen**
+* **Android 8.0 en nieuwer**: **Instellingen** > **Apps en meldingen** > **Toegang tot speciale apps** > **Onbekende apps installeren** > **Bedrijfsportal** > **Toestaan van deze bron**
+
+Als dit het geval is, zal de bedrijfsportal-app de eindgebruiker informeren en direct naar de juiste instelling begeleiden. 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Samsung Knox Standard Android-apparaten
 

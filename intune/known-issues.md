@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -41,22 +41,24 @@ Wanneer u van de klassieke Intune-portal naar Azure Portal migreert, ziet u moge
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Secundaire migratie vereist is voor bepaalde mogelijkheden
 
-Intune-accounts die voor januari 2017 zijn gemaakt, moeten worden gemigreerd voordat deze mogelijkheden kunnen worden gebruikt in de Azure portal:
+Intune-accounts die voor januari 2017 zijn gemaakt, moeten worden gemigreerd voordat de volgende mogelijkheden in de Azure portal kunnen worden gebruikt:
 
 - Inschrijvingsprofiel voor bedrijfsapparaten
 - Apple Device Enrollment Program
-- Vooraf geregistreerde bedrijfsapparaten op groep voor iOS-serienummer
-- Apparaatinschrijvingsmanagers
+- Zakelijke apparaten labelen op basis van iOS-serienummer
+- Apparaatinschrijvingsbeheerder-accounts
 - Apple Volume Purchase Program
 
-Deze mogelijkheden kunnen niet worden beheerd in de klassieke Silverlight- en de Azure-console. Daarom zal de migratie:
+Deze mogelijkheden kunnen niet worden beheerd in de klassieke Intune-console (Silverlight) en de Azure-portal. Daarom zal de migratie:
 - Ze in de klassieke console uitschakelen
-- Ze in de Azure-console inschakelen  
+- Ze in de Azure-portal inschakelen  
+
+Na 11 september 2017 wordt de migratie van deze functies samengevoegd in de primaire migratie naar Azure. Als uw account al werd gemigreerd om de Azure-portal te gebruiken, zal deze secundaire migratie plaatsvinden tussen 11 en 22 september 2017. De migratie van uw account wordt voltooid op dezelfde dag waarop deze wordt begonnen. De migratie kan tot 6 uur duren vanaf het moment waarop deze functies in de klassieke Intune-console zijn uitgeschakeld.
 
 Als u deze Intune-mogelijkheden nu in Azure Portal beheert, moet u rekening houden met de volgende punten:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>De standaardprofielen voor de registratie van bedrijfsapparaten in Apple DEP worden verwijderd
-Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de klassieke Silverlight Intune-console, wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in de Azure portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
+Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de klassieke Intune-console (Silverlight), wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in de Azure portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-token hersteld met migratie
 
@@ -72,7 +74,7 @@ U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd va
 iOS-apps die zijn gekocht via het volume-aankoopprogramma, worden alleen in de taal van uw Intune-account weergegeven en kunnen alleen voor die taal worden toegewezen. Intune synchroniseert alleen apps met dezelfde iTunes-landinstelling als het account van de Intune-tenant. Als u bijvoorbeeld een app koopt die alleen beschikbaar is in de Amerikaanse store, maar u een Duits Intune-account hebt, wordt die app niet weergegeven in Intune.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Meerdere exemplaren van hetzelfde iOS-volume-aankoopprogramma worden geüpload
-Klik niet meerdere keren op de knop **Uploaden** voor hetzelfde VPP-token. Hierdoor worden namelijk dubbele VPP-tokens geüpload en worden apps meerdere keren voor hetzelfde VPP-token gesynchroniseerd. 
+Klik niet meerdere keren op de knop **Uploaden** voor hetzelfde VPP-token. Hierdoor worden namelijk dubbele VPP-tokens geüpload en worden apps meerdere keren voor hetzelfde VPP-token gesynchroniseerd.
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Voor apparaten die niet zijn ingeschreven bij Intune, kunt u alleen een primair 
 Als u aanvullende domeinen toevoegt (met **Geavanceerde instellingen** > **Netwerkperimeter** > **Een beveiligd domein toevoegen**), kunt u het beleid niet opslaan. Het weergegeven foutbericht wordt binnenkort aangepast met nauwkeurigere informatie.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Ondersteuning voor Cisco AnyConnect VPN-client
- 
-De nieuwste versie van de Cisco AnyConnect VPN-client (4.0.07072) is momenteel niet compatibel met Intune. In een toekomstige update van Intune wordt compatibiliteit met deze versie van de VPN-client toegevoegd. Tot dat moment is het raadzaam om uw Cisco AnyConnect VPN-client niet bij te werken en de bestaande versie te blijven gebruiken.
+
+De nieuwste versie van de Cisco AnyConnect VPN-client (4.0.07072) is momenteel niet compatibel met Intune.
+In een toekomstige update van Intune wordt compatibiliteit met deze versie van de VPN-client toegevoegd. Tot dat moment is het raadzaam om uw Cisco AnyConnect VPN-client niet bij te werken en de bestaande versie te blijven gebruiken.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Numerieke wachtwoordtypen gebruiken met macOS Sierra-apparaten
 
@@ -118,16 +121,3 @@ U kunt [beleidsregels voor de beveiliging van iOS-apps](app-protection-policy-se
 Globale beheerders (ook wel tenantbeheerders genoemd) kunnen de reguliere beheertaken voortzetten zonder afzonderlijke Intune- of Enterprise Mobility Suite-licentie (ESM). Als ze echter de service willen gebruiken, bijvoorbeeld om hun eigen apparaat of een bedrijfsapparaat in te schrijven of om de Intune-bedrijfsportal te gebruiken, moeten ze beschikken over een Intune- of EMS-licentie.
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

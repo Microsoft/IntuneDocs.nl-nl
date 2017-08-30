@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
@@ -52,9 +52,9 @@ De entiteit **AppRevision** bevat een overzicht van alle versies van apps.
 | IsCurrent |Geeft aan of deze app-versie actueel is of niet aanwezig is in het datawarehouse |Waar/onwaar |
 | RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze app-versie het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-De entiteit **AppInstallerTypes** vermeldt de installatiebron van een app.
+De entiteit **AppTypes** vermeldt de installatiebron van een app.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
@@ -80,44 +80,6 @@ De entiteit **AppInstallerTypes** vermeldt de installatiebron van een app.
 | 11 |Windows Mobile MSI |Een MSI Line-Of-Business-app |
 | 12 |Windows Phone LOB-app |Een Windows Phone Line-of-Business-app |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-De entiteit **ApplicationTypes** bevat mogelijk typen voor een app.
-
-| Eigenschap  | Beschrijving |
-|---------|------------|
-| ApplicationTypeID |De id voor het type |
-| ApplicationTypeKey |De surrogaatsleutel voor de sleutel |
-| ApplicationTypeName |App-type |
-
-## <a name="example"></a>Voorbeeld
-
-| ApplicationTypeID  | Naam | Beschrijving |
-|---------|------------|--------|
-| 0 |InHouse |Een app die intern is ontwikkeld |
-| 1 |DeepLink |Een koppeling naar een app in een app-store |
-| 2 |WebLink |Een koppeling naar een web-app |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-De entiteit **ManagedSoftwareTypes** bevat mogelijk beheerde softwaretypen voor een app.
-
-| Eigenschap  | Beschrijving |
-|---------|------------|
-| SoftwareTypeID |De id voor het type |
-| SoftwareTypeKey |De surrogaatsleutel voor de sleutel |
-| SoftwareTypeName |Het type software |
-
-## <a name="example"></a>Voorbeeld
-
-| SoftwareTypeID  | Naam | Beschrijving |
-|---------|------------|--------|
-| 0 |Desktop |Een bureaublad-app |
-| 2 |Bijwerken |Een Windows-update |
-| 5 |SideCarAgent | |
-| 1 |Mobiel |Een mobiele app |
-| 3 |WebLink |Een webkoppeling |
-| 4 |VppDeepLink |Een koppeling naar een app in een app store die deel uitmaakt van een VPP (Volume Purchase Program) |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

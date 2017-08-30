@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 10-apparaten in Microsoft Intune
 
@@ -96,10 +96,13 @@ Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer info
 
 ## <a name="conditional-access"></a>Voorwaardelijke toegang
 
-**Voorwaardelijke toegang voor deze VPN-verbinding** -
-**Eenmalige aanmelding met alternatief certificaat** -
-**Uitgebreide-sleutelgebruik** -
-**Hash van verlener** -
+**Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als deze is ingeschakeld, zal de VPN-client proberen te communiceren met Azure Active Directory om een certificaat te ontvangen dat voor verificatie kan worden gebruikt. De VPN moet worden ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server die door Azure Active Directory wordt geretourneerd vertrouwen.
+
+**Eenmalige aanmelding (SSO) met alternatief certificaat**: gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Geef de volgende instellingen op voor het certificaat: 
+
+- **Uitgebreid sleutelgebruik**: naam voor het uitgebreide sleutelgebruik (EKU).
+- **Object-id**: object-id voor EKU.
+- **Hash voor de verlener**: vingerafdruk van certificaat voor eenmalige aanmelding.
 
 ## <a name="dns-settings"></a>DNS-instellingen
 

@@ -175,7 +175,6 @@
 ### [Opleidingsinstellingen voor iOS configureren](education-settings-configure-ios.md)
 ### [Gedeelde onderwijsapparaten configureren voor iOS](education-settings-configure-ios-shared.md)
 ### [iOS-updatebeleid configureren](software-updates-ios.md)
-### [Instellingen voor Windows Update voor bedrijven configureren](windows-update-for-business-configure.md)
 ### [Certificaten configureren](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [Rollen beheren](role-based-access-control.md)
-
+## [Software-updates beheren](windows-update-for-business-configure.md)
 
 ## [Pc's beheren met softwareagent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Pc-beheer vergelijken](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
