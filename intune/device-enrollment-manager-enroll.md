@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Apparaten inschrijven met de apparaatinschrijvingsmanager
 
@@ -40,9 +40,9 @@ Alleen gebruikers in de Intune-console kunnen apparaatinschrijvingsbeheerders zi
 
 De DEM-gebruiker kan:
 
--   Maximaal 1000 apparaten inschrijven in Intune.
--   Aanmelden bij de bedrijfsportal om bedrijfsapps op te halen.
--   Toegang tot bedrijfsgegevens configureren door rolspecifieke apps te implementeren op de tablets.
+-   Maximaal 1000 apparaten inschrijven bij Intune
+-   Aanmelden bij de bedrijfsportal om bedrijfsapps op te halen
+-   Toegang tot bedrijfsgegevens configureren door rolspecifieke apps te implementeren op de tablets
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Beperkingen van apparaten die zijn ingeschreven bij een DEM-account
 

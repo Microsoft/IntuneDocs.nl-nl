@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 8/02/2017
+ms.date: 8/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,83 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31617fb9992937f43f5bfc3b882f09d4be7de7b6
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 98b4d1dd438b352164c697af5f1531a0d79538ad
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+## <a name="july-2017"></a>Juli 2017
+
+### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>Registratie van Android- en iOS-apparaten beperken op basis van de versie van het besturingssysteem  <!--- 1333256,  1245463 --->
+Intune biedt nu ondersteuning voor het beperken van registraties van iOS- en Android-apparaten op basis van het versienummer van het besturingssysteem. Bij **Apparaattypebeperking** kan de IT-beheerder een platformconfiguratie instellen met een minimum- en maximumversie van het besturingssysteem, zodat alleen apparaten met versies in dit bereik kunnen worden geregistreerd. De versies van het Android-besturingssysteem moeten worden opgegeven als Major.Minor.Build.Rev, waarbij Minor, Build en Rev optioneel zijn. iOS-versies moeten worden opgegeven als Primair.Secundair.Build, waarbij Minor en Build optioneel zijn. Meer informatie over [beperkingen voor het registreren van apparaten](enrollment-restrictions-set.md).
+
+>[!NOTE]
+>Registratie via het inschrijvingsprogramma van Apple of Apple Configurator wordt niet beperkt.
+
+### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>Apparaatregistratie beperken van Android-, iOS- en macOS-apparaten die privé-eigendom zijn  <!--- 1333272,  1333275, 1245709 --->
+Intune kan de registratie van persoonlijke apparaten beperken door IMEI-nummers van bedrijfsapparaten op te nemen in een lijst met toegestane apparaten. De functionaliteit van Intune is nu uitgebreid naar iOS, Android en macOS via het gebruik van de serienummers van apparaten. Door serienummers te uploaden naar Intune, kunt u apparaten vooraf markeren als bedrijfseigendom. Aan de hand van inschrijvingsbeperkingen kunt u de registratie blokkeren van apparaten die privé-eigendom (BYOD) zijn. Op deze manier maakt u beleid waardoor alleen apparaten kunnen worden ingeschreven die bedrijfseigendom zijn. Meer informatie over [beperkingen voor het registreren van apparaten](enrollment-restrictions-set.md).
+
+Als u serienummers wilt importeren in, gaat u naar **Apparaatinschrijving** > **Bedrijfsapparaat-id's** en klikt u op **Toevoegen**. Upload vervolgens een CSV-bestand met deze specificaties (geen header, twee kolommen, één voor de serienummers en één voor gegevens zoals IMEI-nummers).  Als u de registratie van apparaten in privé-eigendom wilt beperken, gaat u naar **Apparaatinschrijving** > **Inschrijvingsbeperkingen**. Selecteer **Standaard** onder **Apparaattypebeperking** en selecteer vervolgens **Platformconfiguraties**. Selecteer **Toestaan** of **Blokkeren** voor iOS-, Android- en macOS-apparaten die privé-eigendom zijn. 
+
+
+### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>Nieuwe apparaatactie om apparaten geforceerd te synchroniseren met Intune <!-- 711369 -->
+In deze versie is een nieuwe apparaatactie toegevoegd die ervoor zorgt dat het geselecteerde apparaat direct wordt ingecheckt bij Intune. Wanneer een apparaat wordt ingecheckt, worden direct eventuele openstaande acties of toegewezen beleidsregels ontvangen die erop zijn toegepast.  Met deze actie kunt u toegewezen beleid meteen controleren en in het geval van problemen direct aanpassen, zonder dat u hoeft te wachten op de volgende geplande check-in.
+Zie [Apparaat synchroniseren](device-sync.md) voor meer informatie
+
+### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>Nieuwste software-update geforceerd installeren op iOS-apparaten die onder supervisie staan<!-- 777100 -->
+Er is een nieuw beleid beschikbaar in de werkruimte Software-updates waarmee u kunt afdwingen dat automatisch de nieuwste software-update wordt geïnstalleerd op onder supervisie staande iOS-apparaten. Zie [Updatebeleid voor iOS configureren](/intune/software-updates-ios) voor meer informatie
+
+### <a name="check-point-sandblast-mobile---new-mobile-threat-defense-partner-----954651-1172027---"></a>Check Point SandBlast Mobile - nieuwe Mobile Threat Defense-partner  <!-- 954651, 1172027 -->
+U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd door Check Point SandBlast Mobile, een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd.
+
+#### <a name="how-integration-with-intune-works"></a>Hoe werkt de integratie met Intune?
+Risico's worden beoordeeld op basis van telemetriegegevens die zijn verzameld op apparaten met Check Point SandBlast Mobile. U kunt het EMS-beleid voor voorwaardelijke toegang configureren op basis van de risicoanalyse van Check Point SandBlast Mobile die wordt ingeschakeld via het Intune-nalevingsbeleid voor apparaten. U kunt apparaten die niet compatibel zijn op basis van gedetecteerde bedreigingen al dan niet toegang bieden tot bedrijfsresources.
+
+
+### <a name="deploy-an-app-as-available-in-the-microsoft-store-for-business----748101---"></a>Een app als beschikbaar implementeren in Microsoft Store voor Bedrijven <!-- 748101 -->
+Met deze versie kunnen beheerders de Microsoft Store voor Bedrijven nu toewijzen als beschikbaar. Wanneer Microsoft Store voor Bedrijven is ingesteld als beschikbaar, kunnen eindgebruikers de app installeren via de bedrijfsportal-app of -website zonder dat ze worden omgeleid naar de Microsoft Store.
+
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-1--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite <!--1313244 part 1-->
+Er zijn een aantal updates aan de gebruikersinterface van de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) uitgevoerd om de gebruikerservaring te verbeteren.
+
+- __Verbeteringen aan app-tegels__: app-pictogrammen worden nu weergegeven met een achtergrond die automatisch wordt gegenereerd op basis van de overheersende kleur van het pictogram (mits detecteerbaar). Indien van toepassing wordt de grijze rand die voorheen zichtbaar was op app-tegels, vervangen door deze achtergrond.
+
+    In de volgende versie worden er waar mogelijk grote pictogrammen weergegeven op de bedrijfsportalwebsite. IT-beheerders wordt aangeraden apps te publiceren met pictogrammen met een hoge resolutie en een minimumgrootte van 120 x 120 pixels. 
+
+- __Wijzigingen in de navigatie__: items op de navigatiebalk zijn verplaatst naar het hamburgermenu linksboven. De pagina Categorieën is verwijderd. Gebruikers kunnen nu tijdens het browsen inhoud filteren op categorie.
+
+- __Updates voor aanbevolen apps__: Er is een speciale pagina aan de site toegevoegd waar gebruikers door apps kunnen bladeren die door u zijn aanbevolen. Ook zijn er enkele correcties aan de gebruikersinterface aangebracht in de sectie Aanbevolen op de startpagina.
+
+### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>Ondersteuning van iBooks voor de bedrijfsportalwebsite <!--1231841-->
+Er is een speciale pagina toegevoegd aan de bedrijfsportalwebsite waarmee gebruikers iBooks kunnen zoeken en downloaden. 
+
+
+### <a name="additional-help-desk-troubleshooting-details------applies-to-1263399-1326964-1341642----"></a>Aanvullende helpdeskgegevens voor probleemoplossing <!---  Applies to 1263399, 1326964, 1341642 --->
+De weergave voor probleemoplossing in Intune is bijgewerkt en toegevoegd aan de informatie voor beheerders en hepdeskmedewerkers. U ziet nu een tabel **Toewijzingen** met een overzicht van alle toewijzingen voor de gebruiker op basis van groepslidmaatschap. Dit overzicht bevat:
+- Mobiele apps
+- Nalevingsbeleid
+- Configuratieprofielen
+ 
+Bovendien zijn in de tabel **Apparaten** nu de kolommen **Type Azure AD-join** en **Azure AD-compatibel** opgenomen. Zie voor meer informatie [Gebruikers helpen om problemen op te lossen](help-desk-operators.md).
+
+
+
+### <a name="intune-data-warehouse-public-preview"></a>Intune-datawarehouse (openbare preview-versie)
+In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw tenant. U kunt hebt toegang tot de gegevens via een Power BI-bestand (PBIX), een OData-koppeling die compatibel is met tal van analysehulpprogramma's of via interactie met de REST API. Zie [Het Intune-datawarehouse gebruiken](reports-nav-create-intune-reports.md) voor meer informatie.
+
+
+### <a name="light-and-dark-modes-available-for-the-company-portal-app-for-windows-10----676547---"></a>Lichte en donkere modi beschikbaar voor de Intune-bedrijfsportal-app voor Windows 10 <!---676547--->
+Eindgebruikers kunnen de kleurenmodus voor de Intune-bedrijfsportal-app voor Windows 10 aanpassen. Dit kan in de sectie Instellingen van de Intune-bedrijfsportal-app. De wijziging wordt van kracht nadat de gebruiker de app opnieuw heeft gestart. Voor Windows 10 versie 1607 en hoger wordt voor de app-modus standaard de systeeminstelling gebruikt. Voor Windows 10 versie 1511 en lager wordt voor de app-modus standaard de lichte modus gebruikt.
+
+### <a name="enable-end-users-to-tag-their-device-group-in-the-company-portal-app-for-windows-10----807046--"></a>Eindgebruikers kunnen hun apparaatgroep taggen in de Intune-bedrijfsportal-app voor Windows 10 <!---807046-->
+Eindgebruikers kunnen voortaan aangeven bij welke groep hun apparaat hoort door deze rechtstreeks vanuit de bedrijfsportal-app voor Windows 10 te taggen.
+
+
 
 ## <a name="june-2017"></a>Juni 2017
 
@@ -383,53 +451,3 @@ U kunt nu de apparaatcategorie als kolom in de lijst met apparaten weergeven. U 
 Windows as a Service is de nieuwe manier voor het aanbieden van updates voor Windows 10. Vanaf Windows 10 bevatten alle Upgrades van onderdelen en Kwaliteitsupdates de inhoud van alle voorgaande updates. Dit houdt in dat, als u de nieuwste update hebt geïnstalleerd, u zeker weet dat uw Windows 10-apparaten volledig zijn bijgewerkt. In tegenstelling tot eerdere versies van Windows, moet u nu de volledige update installeren in plaats van een onderdeel van een update.
 
 Met Windows Update voor bedrijven kunt u updatebeheer vereenvoudigen, zodat u geen afzonderlijke updates voor groepen apparaten hoeft goed te keuren. U kunt nog steeds risico's in uw omgeving beheren door een strategie voor update-implementatie te configureren. Windows Update zorgt ervoor dat updates op tijd worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten hebben voor de updates rechtstreeks toegang tot Windows Update. Voor het configureren en beheren van **Windows 10-updateringen** wordt Intune gebruikt. Een updatering bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. Zie [Instellingen voor Windows Update voor bedrijven configureren](windows-update-for-business-configure.md) voor meer informatie.
-
-## <a name="january-2017"></a>Januari 2017
-
-### <a name="assign-line-of-business-apps-whether-or-not-devices-are-enrolled---748823--"></a>Toewijzen van line-of-business-apps, ongeacht of apparaten al dan niet zijn geregistreerd <!--748823-->
-U kunt nu line-of-business-apps uit de store toewijzen aan gebruikers, ongeacht of hun apparaten al dan niet zijn geregistreerd bij Intune. Als een apparaat van gebruikers niet is geregistreerd bij Intune, moeten ze daarvoor de bedrijfsportalwebsite gebruiken en niet de bedrijfsportal-app. Zie [Wat is app-beheer](app-management.md).
-
-### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Oplossing voor het probleem waarbij iOS-apparaten inactief zijn of waarbij de beheerconsole er niet mee kan communiceren
-Wanneer het contact tussen de apparaten van gebruikers en Intune verloren gaat, kunt u de gebruikers stappen voor probleemoplossing aandragen waarmee ze weer toegang krijgen tot de bedrijfsresources. Zie [Apparaten zijn inactief of de beheerconsole kan er niet mee communiceren](enrollment-troubleshoot.md#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
-
-## <a name="december-2016-initial-release"></a>December 2016 (oorspronkelijke versie)
-
-### <a name="telecom-expense-management-integration-in-azure-portal--747605--"></a>Integratie van onkostenbeheer voor telecom in Azure Portal<!--747605-->
-We beginnen nu met preview-versies van de integratie met externe systemen voor onkostenbeheer voor telecom (TEM) in de Azure-portal. U kunt Intune gebruiken om limieten in te stellen voor gegevensgebruik, voor zowel nationaal als roaming. Hierbij beginnen we met [Saaswedo](http://www.saaswedo.com). Als u deze functie in uw proeftenant wilt inschakelen, neemt u [contact op met Microsoft-ondersteuning](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
-
-- Apps uit een store op iOS-, Android- en Windows-apparaten implementeren en beheren
-- LOB-apps (Line-Of-Business) op iOS-, Android- en Windows-apparaten implementeren en beheren
-- Apps die zijn gekocht via het volume-aankoopprogramma, implementeren en beheren op iOS- en Windows-apparaten
-- Web-apps implementeren en beheren op Android-, iOS- en Windows-apparaten
-- Door iOS beheerde app-configuratieprofielen
-- App-beveiligingsbeleid configureren en LOB-apps (Line-Of-Business) implementeren op apparaten die niet zijn geregistreerd met Intune
-- VPN-profielen, VPN-, Wi-Fi-, e-mail- en certificaatprofielen per app
-- Nalevingsbeleid
-- Voorwaardelijke toegang voor Azure AD
-- Voorwaardelijke toegang voor On-premises Exchange
-- Apparaatinschrijving
-- Op rollen gebaseerd toegangsbeheer
-
-## <a name="deprecated-features-in-the-azure-portal"></a>Afgeschafte functies in Azure Portal
-
-### <a name="support-for-row-by-row-review-of-hardware-identifiers"></a>Ondersteuning voor beoordeling van hardware-id's per rij
-Azure Portal biedt geen ondersteuning voor de beoordeling van hardware-id's per rij voor IMEI-nummers en serienummers van Apple. U kunt in de klassieke Intune-console gegevens importeren uit een bestand met door komma's gescheiden waarden (CSV-bestand) en de bestaande gegevens voor afzonderlijke hardware-id's overschrijven. Azure Portal bevat één gestroomlijnde optie waarmee gegevens voor alle hardware-id's automatisch worden overschreven of nieuwe gegevens voor bestaande id's worden genegeerd.
-
-#### <a name="how-this-affects-you"></a>Welke gevolgen heeft dit voor u
-In Azure Portal kunt u niet per rij bepalen welke IMEI-apparaten (International Mobile Equipment Identity) moeten worden bijgewerkt. In de klassieke Intune-console blijft de ondersteuning voor deze functionaliteit gehandhaafd.
-
-#### <a name="how-to-get-ready-for-this-change"></a>Hoe bereidt u zich voor op deze wijziging
-Deze informatie wordt nu al verstrekt, zodat u uw ondersteuningsbeheerders van deze wijziging op de hoogte kunt brengen, als dit voor u van toepassing is. Deze wijziging valt samen met de overgang naar Azure Portal (naar verwachting in de eerste helft van 2017).
-
-
-### <a name="support-for-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Ondersteuning voor de standaardprofielen voor de registratie van bedrijfsapparaten in Apple DEP
-Azure Portal biedt geen ondersteuning voor het standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaatserienummers (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de klassieke Intune-console, wordt stopgezet om het onbedoeld toewijzen van profielen te voorkomen. In Azure Portal worden aan serienummers die zijn gesynchroniseerd vanuit een Apple DEP-account, in eerste instantie geen profiel voor de registratie van bedrijfsapparaten toegewezen.
-
-#### <a name="how-this-affects-you"></a>Welke gevolgen heeft dit voor u
-U kunt in Azure Portal geen standaardprofielbeleid voor alle Apple-apparaten instellen. In de klassieke Intune-console blijft de ondersteuning voor deze functionaliteit gehandhaafd.
-
-#### <a name="how-to-get-ready-for-this-change"></a>Hoe bereidt u zich voor op deze wijziging
-Deze informatie wordt nu al verstrekt, zodat u uw ondersteuningsbeheerders van deze wijziging op de hoogte kunt brengen, als dit voor u van toepassing is. Deze wijziging valt samen met de overgang naar Azure Portal (naar verwachting in de eerste helft van 2017).
-
-### <a name="see-also"></a>Zie tevens
-Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.

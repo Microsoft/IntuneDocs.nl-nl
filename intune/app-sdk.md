@@ -4,7 +4,7 @@ description: De Microsoft Intune App SDK is beschikbaar voor zowel het iOS-platf
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Overzicht van de Intune App SDK
 Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt onze API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
@@ -62,8 +62,7 @@ De functie voor het gebruik van meerdere identiteiten helpt bij het oplossen van
 ### <a name="app-protection-without-device-enrollment"></a>App-beveiliging zonder apparaatregistratie
 
 >[!IMPORTANT]
->Intune-app-beveiliging zonder apparaatregistratie is nog niet beschikbaar voor de Intune App SDK voor Android. Deze is wel beschikbaar voor de Intune App Wrapping Tools, SDK voor iOS, het SDK Xamarin-onderdeel en de SDK Cordova-invoegtoepassing.
-
+>App-beveiligingsbeleid van Intune zonder apparaatregistratie is beschikbaar voor de Intune App Wrapping Tool, Intune App SDK voor Android, Intune App SDK voor iOS, SDK Xamarin Component en de SDK Cordova-invoegtoepassing.
 
 Veel gebruikers met privé-apparaten willen toegang tot bedrijfsgegevens zonder hun privé-apparaat te moeten registreren met een Mobile Device Management-provider (MDM-product). Omdat voor MDM-registratie algemeen beheer van het apparaat is vereist, willen gebruikers de algemene controle over hun persoonlijk apparaat niet altijd aan hun bedrijf geven.
 

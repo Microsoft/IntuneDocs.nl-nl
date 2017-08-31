@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Op apps gebaseerd beleid voor voorwaardelijke toegang instellen
 
@@ -59,9 +59,30 @@ In dit onderwerp vindt u instructies voor het instellen van op apps gebaseerd be
 2. Klik op de knop met weglatingstekens om de opties voor verwijderen weer te geven.
 3. Kies **Verwijderen** om de gebruikersgroep uit de lijst te verwijderen.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Voorwaardelijk toegangsbeleid op basis van apps maken in Azure AD-werkbelasting
+
+Vanaf versie 1708 van Intune kunnen IT-beheerders op apps gebaseerd voorwaardelijk toegangsbeleid maken uitgaande van de werkbelasting van Azure AD. Daardoor hoeft u niet te schakelen tussen Azure en de Intune-werkbelastingen.
+
+> [!IMPORTANT]
+> Als u beleid voor voorwaardelijke toegang voor Azure AD wilt instellen vanuit Intune Azure Portal, moet u een Azure AD Premium-licentie hebben.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Op apps gebaseerd beleid voor voorwaardelijke toegang maken
+
+> [!IMPORTANT]
+> U moet [op apps gebaseerd beveiligingsbeleid voor Intune](app-protection-policies.md) hebben toegepast op uw apps voordat u op apps gebaseerd beleid voor voorwaardelijke toegang kunt gebruiken.
+
+1. Kies in het**Intune-dashboard** **Voorwaardelijke toegang**.
+
+2. Kies in de blade **Beleid** de optie **Nieuw beleid** om uw nieuwe op apps gebaseerd beleid voor voorwaardelijke toegang te maken.
+
+4. Nadat u een naam voor het beleid hebt ingevoerd en de instellingen in de sectie **Toewijzingen** hebt geconfigureerd, kiest u **Verlenen** onder de sectie **Toegangscontroles**.
+
+5. Kies **Goedgekeurde client-app vereisen** , kies **Selecteren** en kies vervolgens **OK** om het nieuwe beleid op te slaan.
+
 ## <a name="next-steps"></a>Volgende stappen
 [Apps die geen gebruik maken van moderne verificatie blokkeren](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Zie tevens
 
-[Beveilig app-gegevens met beveiligingsbeleid voor apps](app-protection-policies.md)
+[App-gegevens beveiligen met app-beveiligingsbeleid](app-protection-policies.md)
+[Voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
