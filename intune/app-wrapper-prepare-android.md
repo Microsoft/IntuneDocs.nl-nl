@@ -14,13 +14,13 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: e8707253139ee5a12a48d38a333ae49fbb4d3ead
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/25/2017
 ---
-# <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor Mobile Application Management met Intune App Wrapping Tool
+# <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -122,7 +122,7 @@ Indien mogelijk moet de ondertekeningsinformatie die is gebruikt tijdens het bui
 
 Als het vorige ondertekeningscertificaat niet kan worden gebruikt of de app nog niet eerder is geïmplementeerd, kunt u een nieuw ondertekeningscertificaat maken aan de hand van de instructies in de [Android Developer Guide](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
-Als de app al eerder is geïmplementeerd met een ander ondertekeningscertificaat, kan de app niet worden geüpload naar de Intune-console na de upgrade. Scenario’s voor het upgraden van apps werken niet meer als uw app is ondertekend met een ander certificaat dan het certificaat waarmee de app is gebouwd. Onderhoud nieuwe ondertekeningscertificaten dus voor app-upgrades. 
+Als de app al eerder is geïmplementeerd met een ander ondertekeningscertificaat, kan de app niet worden geüpload naar de Intune-console na de upgrade. Scenario's voor het upgraden van apps werken niet meer als uw app is ondertekend met een ander certificaat dan het certificaat waarmee de app is gebouwd. Onderhoud nieuwe ondertekeningscertificaten dus voor app-upgrades. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool
 Potentiële adresvervalsing (spoofing), vrijgeven van informatie en uitbreiding van bevoegdheden voorkomen:

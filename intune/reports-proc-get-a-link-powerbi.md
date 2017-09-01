@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
 
@@ -60,18 +60,20 @@ Het Power BI-bestand (pbix) bevat verbindingsgegevens voor uw tenant en een set 
 
 Nadat een client is geverifieerd bij Azure AD, wordt de OData-URL verbonden met het RESTful-eindpunt in de datawarehouse-API die het gegevensmodel weergeeft in de rapportageclient. Volg deze instructies om met behulp van Power BI Desktop een verbinding tot stand te brengen en uw eigen rapporten te maken. U bent niet beperkt tot Power BI Desktop, maar kunt uw favoriete analyseprogramma gebruiken met de OData-URL. Dit is echter alleen mogelijk als de client OAUTH2.0-verificatie en de OData-v4.0 standaard ondersteunt.
 
-1.  Haal de **OData-URL** op van de rapportage-blade, bijvoorbeeld `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
-2.  Open **Power BI Desktop**.
-3.  Kies **Home** > **Get Data**. Selecteer **OData feed**.
-4.  Selecteer **Basic**.
-5.  Typ of plak de **OData-URL** in het vak URL.
-6.  Klik op **OK**.
-7.  Als u de tenant niet vanuit de Power BI Desktop-client hebt geverifieerd bij Azure AD, typt u uw referenties.  
-    a.  Selecteer **Organisatieaccount**.  
-    b.  Typ uw gebruikersnaam en wachtwoord.  
-    c.  Klik op **Sign In.**  
-    d.  Klik op **Verbinden**.  
-8.  Klik op **Load**.
+1.  Meld u aan bij Azure Portal en kies **Bewaking en beheer** > **Intune**. U kunt ook zoeken naar resources voor **Intune**.  
+2.  Open de blade **Microsoft Intune-datawarehouse-API (preview-versie)**.
+3. Haal via de rapportage-blade de aangepaste URL van de feed op, bijvoorbeeld `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+4. Open **Power BI Desktop**.
+5. Kies **Home** > **Get Data**. Selecteer **OData feed**.
+6. Selecteer **Basic**.
+7. Typ of plak de **OData-URL** in het vak URL.
+8. Klik op **OK**.
+9. Als u de tenant niet vanuit de Power BI Desktop-client hebt geverifieerd bij Azure AD, typt u uw referenties.  
+    1.  Selecteer **Organisatieaccount**.  
+    2.  Typ uw gebruikersnaam en wachtwoord.  
+    3.  Klik op **Sign In.**  
+    4.  Klik op **Verbinden**.  
+10. Klik op **Load**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
@@ -79,4 +81,4 @@ U kunt antwoord vinden op vragen over uw omgeving, zoals het aantal apparaten da
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  De gegevens van uw tenant zijn zo georganiseerd dat u op verschillende manieren inzicht kunt krijgen in uw gegevens. Zie [Data Warehouse Data Model](reports-ref-data-model.md) (Datawarehouse-gegevensmodel) voor meer informatie over de ordening van de gegevens. 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  U kunt de gegevens ook openen via een Restful-interface en de gegevens in uw eigen app opnemen. Zie [Gegevens ophalen uit de datawarehouse-API met een REST-client](reports-proc-data-rest.md) voor meer informatie.

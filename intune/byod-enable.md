@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD met Intune inschakelen
 
@@ -48,18 +48,18 @@ Nadat u de Intune-service hebt voorbereid, moet u voldoen aan de verschillende r
 
 -   **Android-apparaten** U hoeft niets te doen om de Intune-service gereed te maken voor het registreren van Android-apparaten. Gebruikers kunnen [hun Android-apparaten registreren](/intune-user-help/enroll-your-device-in-intune-android) voor beheer met de bedrijfsportal-app die beschikbaar is via Google Play.
 
--   **Windows-telefoons en pc's** Windows-apparaten kunnen worden geregistreerd met extra configuratie. U kunt de gebruikerservaring vereenvoudigen door automatisch inschrijven voor Windows 10-pc's en mobiele Windows 10-apparaten in te schakelen in Azure Active Directory (AD) Premium. Als u niet beschikt over Azure AD Premium of als u ondersteuning mogelijk wilt maken voor Windows 8.1, kunt u [een DNS-alias voor de registratieserver](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) maken om de registratie te vereenvoudigen.
+-   **Windows-telefoons en pc's** Windows-apparaten kunnen worden geregistreerd met extra configuratie. U kunt automatisch registreren voor Windows 10-pc's en mobiele Windows 10-apparaten inschakelen in Azure Active Directory (AD) Premium om de ervaring van de eindgebruiker te vereenvoudigen. Als u niet beschikt over Azure AD Premium of als u ondersteuning mogelijk wilt maken voor Windows 8.1, kunt u [een DNS-alias voor de registratieserver](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) maken om de registratie te vereenvoudigen.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Ervoor zorgen dat beheerde apparaten aan de basisvereisten voor beveiliging voldoen
 
 Nadat gebruikers hun apparaten hebben geregistreerd voor beheer, moet de IT-afdeling ervoor zorgen dat apparaten die worden gebruikt voor toegang tot bedrijfsapps en -gegevens aan de basisvereisten voor beveiliging voldoen. Deze regels kunnen bijvoorbeeld zijn dat voor toegang tot apparaten een pincode moet worden opgegeven en dat gegevens op apparaten moeten zijn versleuteld. Een verzameling van dergelijke regels wordt een [nalevingsbeleid](device-compliance.md) genoemd.
 
-Wanneer u een [nalevingsbeleid implementeert](device-compliance-get-started.md) voor een gebruiker, worden alle apparaten van deze gebruiker die door Intune worden beheerd, gecontroleerd om na te gaan of deze voldoen aan de basisvereisten voor beveiliging die u hebt gedefinieerd als onderdeel van uw BYOD-beleid. Nadat is geëvalueerd of een apparaat het beleid naleeft, wordt de status hiervan gerapporteerd aan Intune. In sommige gevallen wordt gebruikers mogelijk gevraagd om instellingen aan te passen, zoals de codering van hun pincode of de apparaatversleuteling. In andere gevallen meldt de bedrijfsportal-app gewoon de instellingen die niet voldoen aan uw beleid aan de gebruiker.
+Wanneer u een [nalevingsbeleid implementeert](device-compliance-get-started.md) voor een gebruiker, controleert Intune alle apparaten van deze gebruiker die door Intune worden beheerd om na te gaan of deze voldoen aan de basisvereisten voor beveiliging die u hebt gedefinieerd als onderdeel van uw BYOD-beleid. Nadat is geëvalueerd of een apparaat het beleid naleeft, wordt de status hiervan gerapporteerd aan Intune. In sommige gevallen wordt gebruikers mogelijk gevraagd om instellingen aan te passen, zoals de codering van hun pincode of de apparaatversleuteling. In andere gevallen meldt de bedrijfsportal-app gewoon de instellingen die niet voldoen aan uw beleid aan de gebruiker.
 
 ## <a name="provide-access-to-company-resources"></a>Toegang tot bedrijfsresources verlenen
 
-Het eerste wat de meeste werknemers op hun mobiele apparaat willen, is toegang tot de e-mail en documenten van het bedrijf. En ze verwachten dat ze dit kunnen instellen zonder complexe stappen te doorlopen of de helpdesk te bellen. U kunt met Intune gemakkelijk [e-mailinstellingen maken en implementeren](email-settings-configure.md) voor systeemeigen e-mail-apps die vooraf worden geïnstalleerd op mobiele apparaten.
+Het eerste wat de meeste werknemers op hun mobiele apparaat willen openen, zijn de e-mail en documenten van het bedrijf. Ze verwachten dat ze dit kunnen instellen zonder complexe stappen te doorlopen of de helpdesk te bellen. U kunt met Intune gemakkelijk [e-mailinstellingen maken en implementeren](email-settings-configure.md) voor systeemeigen e-mail-apps die vooraf worden geïnstalleerd op mobiele apparaten.
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ U kunt met Intune ook apps beheren en implementeren die u via een volume-aankoop
 
 ## <a name="protect-company-data"></a>Bedrijfsgegevens beveiligen
 
-Intune beveiligt bedrijfsgegevens via veel lagen van de technologie. Op de identiteitslaag beveiligt voorwaardelijke toegang de toegang tot services. Voorwaardelijke toegang verleent alleen beheerde en compatibele apparaten toegang tot bedrijfsbronnen. Op de clienttoepassingslaag beveiligt beheer van mobiele toepassingen (MAM) tegen gegevensverlies.  App-beleid voor gegevensbeveiliging voorkomt dat gegevens naar apps of opslaglocaties die niet zijn beveiligd worden verplaatst. Met deze beleidsregels kunt u bedrijfsgegevens wissen wanneer een apparaat is vermist of gestolen.
+Intune beveiligt bedrijfsgegevens via veel lagen van de technologie. Op de identiteitslaag beveiligt voorwaardelijke toegang de toegang tot services. Voorwaardelijke toegang verleent alleen beheerde en compatibele apparaten toegang tot bedrijfsbronnen. Op de client-app-laag beschermt app-beveiligingsbeleid tegen gegevensverlies. App-beleid voor gegevensbeveiliging voorkomt dat gegevens naar apps of opslaglocaties die niet zijn beveiligd worden verplaatst. Met deze beleidsregels kunt u bedrijfsgegevens wissen wanneer een apparaat is vermist of gestolen.
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>Voorwaardelijke toegang tot bedrijfsresources afdwingen
 
@@ -97,13 +97,13 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > Beleid met voorwaardelijke toegang werkt niet als er geen nalevingsbeleid is om naleving te controleren.
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>Verlies van bedrijfsgegevens voorkomen met beveiligingsbeleid voor toepassingen
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>Verlies van bedrijfsgegevens voorkomen met app-beveiligingsbeleid
 
-Met het beveiligingsbeleid voor toepassingen van Intune kunt u bepalen hoe toegang tot uw gegevens wordt verkregen - met of zonder apparaatregistratie. Door deze veelzijdigheid kunt u bedrijfsgegevens beveiligen zodat gebruikers, zelfs als ze hun apparaat niet bij Intune registreren, toch veilige toegang tot bedrijfsgegevens hebben.
+Met het app-beveiligingsbeleid van Intune kunt u bepalen hoe toegang tot uw gegevens wordt verkregen: met of zonder apparaatregistratie. Door deze veelzijdigheid kunt u bedrijfsgegevens beveiligen zodat gebruikers, zelfs als ze hun apparaat niet bij Intune registreren, toch veilige toegang tot bedrijfsgegevens hebben.
 
-U kunt gebruikmaken van [Intune-beveiligingsbeleid voor apps](app-protection-policies.md) om de bedrijfsgegevens te beveiligen waartoe uw gebruikers toegang hebben met hun iOS- en Android-apparaten. Als u dit beleid op app-niveau gebruikt, kunt u beheren hoe werknemers bedrijfsgegevens gebruiken en delen, zelfs als het apparaat niet wordt beheerd met Intune
+U kunt gebruikmaken van [Intune-beveiligingsbeleid voor apps](app-protection-policies.md) om de bedrijfsgegevens te beveiligen waar iOS- en Android-apparaten toegang tot hebben. Als u dit beleid op app-niveau gebruikt, kunt u beheren hoe werknemers bedrijfsgegevens gebruiken en delen, zelfs als het apparaat niet wordt beheerd met Intune
 
-U kunt [beleid voor Windows-gegevensbescherming](app-protection-policies-configure-windows-10.md) gebruiken om hetzelfde te doen voor beheerde Windows 10-apparaten. Deze beleidsregels werken zonder dat de gebruikerservaring van werknemers hierdoor wordt beïnvloed. Er zijn geen wijzigingen in uw netwerkomgeving of andere apps nodig.
+U kunt [Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) gebruiken om hetzelfde te doen voor beheerde Windows 10-apparaten. Deze beleidsregels werken zonder dat de gebruikerservaring van werknemers hierdoor wordt beïnvloed. Er zijn geen wijzigingen in uw netwerkomgeving of andere apps nodig.
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Bedrijfsgegevens verwijderen met behoud van persoonlijke gegevens
 

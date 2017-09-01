@@ -1,12 +1,12 @@
 ---
 title: Aan de slag met gebruikers
 titleSuffix: Intune on Azure
-description: 
+description: Voeg een gebruiker aan Intune toe om deze toe te staan om zakelijke resources te openen op mobiele apparaten.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,21 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="get-started-with-users"></a>Aan de slag met gebruikers
+# <a name="get-started-with-managing-users"></a>Aan de slag met het beheren van gebruikers
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Azure AD Directory verzorgt het beheer van groepen objecten van uw organisatie, zoals apparaten en apps, evenals groepen gebruikers. U kunt gebruikers of apparaten opnemen in groepen in plaats van elk apparaat afzonderlijk te beheren. Op deze manier kunt u eenvoudig apps en instellingen toewijzen aan grote aantallen gebruikers en apparaten.
+Denk aan alle andere personen in uw organisatie. Iedereen die zakelijke gegevens gebruikt, heeft een gebruiker nodig om toegang ertoe in Intune te beheren. 
 
 ## <a name="how-do-i-create-a-user"></a>Hoe maak ik een gebruiker?
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Gebruik **Resources zoeken** om te zoeken naar **Gebruikers en groepen**.
-3. Als u de blade **Gebruikers en groepen** hebt geopend, selecteert u **Alle gebruikers** en daarna **+ Nieuwe gebruiker**.
+2. Gebruik **Resources zoeken** om te zoeken naar **Intune**.
+3. Selecteer nadat u de blade **Microsoft Intune** hebt geopend de optie **Gebruikers**. Selecteer op de pagina **Alle gebruikers** de optie **+ Nieuwe gebruiker**.
 4. Voer gegevens in voor de gebruiker, bijvoorbeeld bij **Naam** en **Gebruikersnaam**. Het domeinnaamgedeelte van de gebruikersnaam moet bestaan uit de naam van het oorspronkelijke standaarddomein 'contoso.onmicrosoft.com' of uit een geverifieerde, niet-gefedereerde domeinnaam zoals 'contoso.com'.
 5. Kies onder **Groepen** de testgroep waaraan u de gebruiker wilt toevoegen.
 6. Sla het automatisch gegenereerde gebruikerswachtwoord op, zodat u dit kunt gebruiken om u aan te melden bij een testapparaat. U moet dit wachtwoord aan uw gebruikers geven, zodat ze het kunnen wijzigen in een normaal wachtwoord dat ze makkelijk kunnen onthouden.
@@ -50,3 +48,7 @@ Nadat u een gebruiker hebt gemaakt, moet u de [Office 365-portal](http://go.micr
  > Er wordt nu een van uw licenties gebruikt voor deze gebruiker. Als u de productieomgeving gebruikt, kunt u de toewijzing van deze licentie later uitschakelen om de licentie te gebruiken voor een echte gebruiker.
 
 5. Selecteer **Opslaan**.
+
+## <a name="next-steps"></a>Volgende stappen
+
+[Aan de slag met groepen](get-started-groups.md) - Deel gebruikers in groepen in om het beleid en de apps waar ze toegang toe hebben gemakkelijker te beheren.

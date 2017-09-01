@@ -1,12 +1,12 @@
 ---
-title: Instellingen voor Windows Update voor bedrijven configureren - Intune
-titleSuffix: Intune on Azure
+title: Software-updates beheren
+titleSuffix: Configure Windows Update for Business settings - Intune
 description: Meer informatie over het configureren van instellingen van Windows Update voor Bedrijven in Intune voor het beheren van updates voor Windows 10-apparaten."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,19 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
+ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/22/2017
 ---
-# <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Instellingen voor Windows Update voor Bedrijven configureren met Microsoft Intune
+# <a name="manage-software-updates"></a>Software-updates beheren
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="introduction"></a>Inleiding
-Windows as a Service is de nieuwe manier voor het aanbieden van updates voor Windows 10. Vanaf Windows 10 bevatten alle Upgrades van onderdelen en Kwaliteitsupdates de inhoud van alle voorgaande updates. Dit houdt in dat, als u de nieuwste update hebt geïnstalleerd, u zeker weet dat uw Windows 10-apparaten volledig zijn bijgewerkt. In tegenstelling tot eerdere versies van Windows, moet u nu de volledige update installeren in plaats van een onderdeel van een update.
+Windows as a Service is dé manier om Windows 10-apparaten bij te werken. In Windows 10 bevatten nieuwe functie-updates en kwaliteitsupdates de inhoud van alle voorgaande updates. Dit houdt in dat, als u de nieuwste update hebt geïnstalleerd, u zeker weet dat uw Windows 10-apparaten volledig zijn bijgewerkt. In tegenstelling tot eerdere versies van Windows, moet u nu de volledige update installeren in plaats van een onderdeel van een update.
 
-Met Windows Update voor bedrijven kunt u updatebeheer vereenvoudigen, zodat u geen afzonderlijke updates voor groepen apparaten hoeft goed te keuren. U kunt nog steeds risico’s in uw omgeving beheren door een strategie voor update-implementatie te configureren. Windows Update zorgt ervoor dat updates op tijd worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten hebben voor de updates rechtstreeks toegang tot Windows Update. Voor het configureren en beheren van **Windows 10-updateringen** wordt Intune gebruikt. Een updatering bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. U kunt bijvoorbeeld het volgende configureren:
+Met Windows Update voor bedrijven kunt u updatebeheer vereenvoudigen, zodat u geen afzonderlijke updates voor groepen apparaten hoeft goed te keuren. U kunt nog steeds risico's in uw omgeving beheren door een strategie voor update-implementatie te configureren. Windows Update zorgt ervoor dat updates op tijd worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten hebben voor de updates rechtstreeks toegang tot Windows Update. Voor het configureren en beheren van **Windows 10-updateringen** wordt Intune gebruikt. Een updatering bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. U kunt bijvoorbeeld het volgende configureren:
 
 - **Windows 10 Servicing Branch**: kies of u wilt dat groepen apparaten updates ontvangen van de Current Branch of van de Current Branch for Business.  
 - **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U hebt dan een gefaseerde update-implementatie zodat u kunt de voortgang kunt controleren.

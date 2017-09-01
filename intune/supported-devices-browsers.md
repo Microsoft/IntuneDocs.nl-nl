@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df9c4c0a0a23740bf9df4c13e34b8752838aa99a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Ondersteunde apparaten en browsers
 
@@ -65,7 +65,7 @@ De volgende browsers worden ondersteund voor deze portals:
 
 ### <a name="intune-classic-portal"></a>Klassieke Intune-portal
 
-De Intune-functies die alleen kunnen worden gebruikt in combinatie met de klassiek versie van Intuen, zoals Intune PC-softwareclient en de integratie met Mobile Threat Defense-partners, zijn alleen beschikbaar in de klassieke Intune-portal (https://manage.microsoft.com). De klassieke Intune-console vereist ondersteuning van de Silverlight-browser.
+De Intune-functies die alleen kunnen worden gebruikt in combinatie met de klassiek versie van Intune, zoals Intune PC-softwareclient en de integratie met Mobile Threat Defense-partners, zijn alleen beschikbaar in de klassieke Intune-portal (https://manage.microsoft.com). De klassieke Intune-portal vereist ondersteuning van de Silverlight-browser.
 
 De volgende Silverlight-browsers ondersteunen de klassieke Intune-console:
 - Internet Explorer 10 of hoger
@@ -74,6 +74,5 @@ De volgende Silverlight-browsers ondersteunen de klassieke Intune-console:
 
 > [!Note]
 > Microsoft Edge en mobiele browsers worden niet ondersteund voor de klassiek Intune-console, omdat ze geen ondersteuning bieden voor [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
-
 
 Alleen gebruikers met servicebeheerdersmachtigingen en tenantbeheerders met de rol Algemene beheerder kunnen zich bij deze portal aanmelden. Voor toegang tot de beheerconsole moet uw account een licentie voor het gebruik van Intune en de aanmeldingsstatus **Toegestaan** hebben.
