@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Op iOS-apparaten onder supervisie Activeringsslot overslaan met Intune
 
@@ -58,8 +58,8 @@ Intune kan de status opvragen van de activeringsvergrendeling van apparaten met 
 Voordat u een bypass van het activeringsslot op apparaten kunt uitvoeren, moet u deze optie eerst inschakelen aan de hand van de volgende instructies:
 
 1. Configureer een Intune-apparaatbeperkingsprofiel voor iOS op basis van de informatie in [How to configure device restriction settings](/intune-azure/configure-devices/how-to-configure-device-restrictions) (Apparaatbeperkingsinstellingen configureren).
-2. Schakel de instelling **Activeringsslot** van de modus **Kiosk** in.
-3. Sla het profiel op en wijs het toe aan de apparaten waarop u een bypass van Activeringsslot wilt beheren.
+2. Schakel in de [instellingen voor apparaatbeperking voor iOS](device-restrictions-ios.md), onder de **Algemene** instellingen, de optie **Activeringsslot** in.
+3. Sla het profiel op en [wijs het toe](device-profile-assign.md) aan de apparaten waarop u een bypass van Activeringsslot wilt beheren.
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>Activeringsslot overslaan gebruiken

@@ -15,22 +15,22 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>VPN-instellingen voor iOS-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onderstaande lijst worden geconfigureerd.
+Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volgende lijst worden geconfigureerd.
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
 
-**Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers kunnen deze naam zien wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
+**Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
 - **IP-adres of FQDN**: geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.
 - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server vanaf:
     - **Certificaten**: kies onder **Verificatiecertificaat** een SCEP- of PKCS-certificaatprofiel dat u eerder hebt gemaakt om de verbinding te verifiëren. Zie [Certificaten configureren](certificates-configure.md) voor meer informatie over certificaatprofielen.
@@ -44,7 +44,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     - **Cisco (IPSec)**
     - **Citrix**
     - **Aangepaste VPN**
-- **Split tunneling** - : u kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
+- **Split tunneling** - : u kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
 
 ## <a name="custom-vpn-settings"></a>Basis-VPN-instellingen
@@ -57,16 +57,16 @@ Als u **Aangepaste VPN** als verbindingstype hebt geselecteerd, configureert u d
 ## <a name="apps-per-app-vpn-settings"></a>Apps-instellingen (VPN per app)
 
 - **VPN per app**: schakel deze optie in als u wilt dat URL's de VPN-verbinding maken als ze vanuit de Safari-browser worden bezocht. Als u dit wilt configureren, moet u **Certificaten** als verificatiemethode hebben geselecteerd in de basis-VPN-instellingen.
-- **URL's waarmee de VPN-verbinding wordt ingeschakeld terwijl u de Safari-browser gebruikt**: klik op Toevoegen om een of meer website-URL's toe te voegen. Wanneer deze URL wordt bezocht, wordt de VPN-verbinding ingeschakeld.
+- **URL's waarmee de VPN-verbinding wordt ingeschakeld terwijl u de Safari-browser gebruikt**: klik op Toevoegen om een of meer website-URL's toe te voegen. De VPN-verbinding wordt ingeschakeld als deze URL's worden bezocht.
 
 - **On-demand regels**: hiermee kunt u voorwaardelijke regels configureren om te bepalen wanneer de VPN-verbinding wordt gestart. U kunt bijvoorbeeld een voorwaarde instellen waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een van de Wi-Fi-netwerken van het bedrijf verbonden is. U kunt ook een voorwaarde instellen, dat als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft, de VPN-verbinding niet wordt gestart.
 
     - **SSID's of DNS-zoekdomeinen**: selecteer of voor deze voorwaarde het draadloze netwerk,  **SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies Toevoegen om een of meerdere SSID's of zoekdomeinen te configureren.
-    - **URL-tekenreekstest**: (optioneel) geef een URL op die gebruikmaakt van de regel als een test. Als het apparaat waarop dit profiel is geïnstalleerd, in staat is om toegang te krijgen tot deze URL zonder omleiding, wordt de VPN-verbinding tot stand gebracht en maakt het apparaat verbinding met de doel-URL. De gebruiker ziet de tekenreeks testsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
-    - **Domeinactie**: kies een van de volgende opties:
+    - **URL-tekenreekstest**: (optioneel) geef een URL op die gebruikmaakt van de regel als een test. Als het apparaat waarop dit profiel is geïnstalleerd in staat is om zonder omleiding toegang tot deze URL te krijgen, wordt de VPN-verbinding tot stand gebracht en maakt het apparaat verbinding met de doel-URL. De gebruiker ziet de tekenreeks testsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
+    - **Domeinactie**: kies een van de volgende items:
         - Verbinding maken indien nodig - 
         - Nooit verbinding - 
-    - **Actie**: kies een van de volgende opties:
+    - **Actie**: kies een van de volgende items:
         - Verbinden - 
         - Verbinding evalueren - 
         - Negeren - 

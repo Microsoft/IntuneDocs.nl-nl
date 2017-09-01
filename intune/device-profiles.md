@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5288bfc3aebbd119b49ef5261944840fd863afa5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Wat zijn Microsoft Intune-apparaatprofielen?
 
@@ -74,7 +74,7 @@ Met dit profieltype kunt u apparaten waarop een bepaalde versie van Windows 10 w
 Zie [Editie-upgrades voor Windows 10 configureren in Microsoft Intune](edition-upgrade-configure-windows-10.md) voor meer informatie. Ondersteunt: alleen Windows 10.
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
-Met dit profieltype kunt u BitLocker-instellingen configureren voor Windows 10-apparaten.
+Met dit profieltype kunt u BitLocker- en Windows Defender-instellingen configureren voor Windows 10-apparaten.
 Zie [Endpoint protection settings for Windows 10 and later in Microsoft Intune](endpoint-protection-windows-10.md) (Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger) voor meer informatie.
 
 ## <a name="windows-information-protection"></a>Windows Information Protection

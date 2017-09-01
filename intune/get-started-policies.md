@@ -1,12 +1,12 @@
 ---
 title: Aan de slag met beleid
 titleSuffix: Intune on Azure
-description: 
+description: Maak beleid om te voorkomen dat gebruikers niet-geautoriseerde activiteiten uitvoeren met hun apparaten.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>Aan de slag met beleid
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>Aan de slag met beleid
 
 Eén van de belangrijkste redenen om te kiezen voor Intune is de registratie van apparaten, om ervoor te zorgen dat deze voldoen aan het bedrijfsbeleid. Nalevingsbeleid is niet alleen handig bij het beheren van gespecialiseerde apparaattypen, zoals kiosken in bedrijfseigendom, maar ook van persoonlijke apparaten (BYOD), tablets en apparaten zonder gebruiker.
 
@@ -56,3 +54,12 @@ __Hoe maak ik een beleid?__
 7. Ga terug naar de blade **Beleid maken** en selecteer **Maken**.
 8. Als het beleid is gemaakt, selecteert u **Toewijzingen** om het beleid toe te wijzen aan uw testgroep. Selecteer de testgroep (deze moet uw testgebruiker bevatten) en wijs het beleid toe aan die groep door op **Opslaan** te klikken.
 9. Als het goed is, verschijnt er na een paar minuten een bericht met het verzoek om een nieuw wachtwoord in te stellen voor het apparaat om te blijven voldoen aan het bedrijfsbeleid. U kunt dit ook handmatig controleren in de **bedrijfsportal-app voor iOS** door op de naam van het apparaat te tikken en vervolgens op de knop **Synchroniseren**.
+
+## <a name="next-steps"></a>Volgende stappen
+
+[Aan de slag met het inschrijven van apparaten](get-started-enroll.md) - Maak kennis met het inschrijvingsproces door een volledige inschrijvingsprocedure voor een iOS-apparaat te doorlopen.
+
+## <a name="learn-more"></a>Meer informatie
+
+* [Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md)
+* [Gebruikelijke manieren om voorwaardelijk toegangsbeleid met Intune te gebruiken](conditional-access-intune-common-ways-use.md)

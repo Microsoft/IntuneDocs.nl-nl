@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b900cb2c2c02ca96a771dbebd208872941079e38
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a684f7ab5841513e8e72a5e6c0af99f52e5fd207
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Intune App SDK Xamarin-onderdeel
 
@@ -30,12 +30,12 @@ ms.lasthandoff: 07/01/2017
 ## <a name="overview"></a>Overzicht
 Met het [Intune App SDK Xamarin-onderdeel](https://components.xamarin.com/view/microsoft.intune.mam) kunt u het [appbeveleigingsbeleid voor Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) inschakelen in iOS- en Android-apps die zijn gebouwd met Xamarin. Met dit onderdeel kunnen ontwikkelaars eenvoudig beschermingsfuncties van Intune inbouwen in hun Xamarin-apps.
 
-U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. Nadat u het onderdeel hebt gemaakt in uw mobiele iOS- of Android-app, kan de IT-beheerder via Mobile Application Management (MAM) in Microsoft Intune beleid implementeren dat verschillende functies voor gegevensbescherming biedt.
+Met de Microsoft Intune App SDK Xamarin Component kunt u Intune-beveiligingsbeleid voor apps (ook wel APP- of MAM-beleid genoemd) opnemen in de apps die u met Xamarin hebt ontwikkeld. Een MAM-app is geïntegreerd met de Intune App SDK. IT-beheerders kunnen app-beveiligingsbeleid implementeren in uw mobiele app wanneer die actief door Intune wordt beheerd.
 
 ## <a name="whats-supported"></a>Wat wordt ondersteund
 
 ### <a name="developer-machines"></a>Machines van ontwikkelaars
-* Windows
+* macOS
 
 
 ### <a name="mobile-app-platforms"></a>Mobiele app-platformen
@@ -43,17 +43,17 @@ U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app t
 * iOS
 
 
-### <a name="intune-mobile-application-management-scenarios"></a>Scenario’s voor Intune Mobile Application Management
+### <a name="intune-mobile-application-management-scenarios"></a>Scenario's voor Intune Mobile Application Management
 
 * Apparaten die zijn ingeschreven bij Intune MDM
 * Apparaten die zijn ingeschreven bij EMM van derden
 * Onbeheerde apparaten (niet ingeschreven bij een MDM)
 
-Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu Mobile Application Management-beleid (MAM) van Intune ontvangen op zowel apparaten die zijn ingeschreven bij Mobile Device Management als apparaten die niet zijn ingeschreven.
+Xamarin-apps die zijn gemaakt met de Intune App SDK Xamarin Component, kunnen nu app-beveiligingsbeleid van Intune ontvangen op apparaten die wel en apparaten die niet zijn ingeschreven in Mobile Device Management (MDM) van Intune.
 
 ## <a name="prerequisites"></a>Vereisten
 
-* **[Alleen android]** Op het apparaat moet altijd de meest recente Microsoft Intune-bedrijfsportal-app zijn geïnstalleerd.
+* **[Alleen android]** Op het apparaat moet de meest recente Microsoft Intune-bedrijfsportal-app zijn geïnstalleerd.
 
 ## <a name="get-started"></a>Aan de slag
 
@@ -71,7 +71,7 @@ Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu
 
 
 
-## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>Intune MAM inschakelen in uw mobiele iOS-app
+## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>App-beveiligingsbeleid voor Intune inschakelen in uw mobiele iOS-app
 1.  Als u de Intune App SDK wilt initialiseren, moet u API's in de `AppDelegate.cs`-klasse aanroepen. Bijvoorbeeld:
 
       ```csharp
@@ -84,7 +84,7 @@ Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu
       ```
 
 2.  Nu het onderdeel is toegevoegd en geïnitialiseerd, kunt u de algemene stappen volgen voor het inbouwen van de App SDK in een mobiele iOS-app. De volledige documentatie voor het inschakelen van systeemeigen iOS-apps vindt u in de [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](app-sdk-ios.md).
-3. **Belangrijk**: Er zijn verschillende wijzigingen die specifiek zijn voor iOS-apps op basis van Xamarin. Bij het inschakelen van sleutelketengroepen moet u bijvoorbeeld het volgende toevoegen om de Xamarin-voorbeeldapp in te voegen die we in het onderdeel hebben opgenomen. Hieronder volgt een voorbeeld van de groepen die u in uw sleutelketengroepen aanwezig moeten zijn:
+3. **Belangrijk**: Er zijn verschillende wijzigingen die specifiek zijn voor iOS-apps op basis van Xamarin. Bij het inschakelen van sleutelketengroepen moet u bijvoorbeeld het volgende toevoegen om de Xamarin-voorbeeld-app in te voegen die we in het onderdeel hebben opgenomen. Hieronder volgt een voorbeeld van de groepen die u in uw sleutelketengroepen aanwezig moeten zijn:
 
       ```xml
       <?xml version="1.0" encoding="UTF-8"?>
@@ -104,12 +104,12 @@ Xamarin-apps die zijn gemaakt met het Intune App SDK Xamarin-onderdeel kunnen nu
 
 U hebt de benodigde stappen voor het inbouwen van het onderdeel in uw iOS-app op basis van Xamarin voltooid. Als u Xcode gebruikt voor het ontwikkelen van uw project, kunt u de `Intune App SDK Settings.bundle` gebruiken. Hiermee kunt u beleidsinstellingen van Intune in- en uitschakelen tijdens het ontwikkelen van uw project met het oog op testen en foutopsporing. Volg de stappen in de [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](app-sdk-ios.md) en lees de sectie over [foutopsporing in Xcode](app-sdk-ios.md#status-result-and-debug-notifications) om te profiteren van dit pakket.
 
-## <a name="enabling-mam-in-your-android-mobile-app"></a>MAM inschakelen in uw mobiele Android-app
-Voor Android-apps op basis van Xamarin die geen gebruikmaken van een UI-framework, leest en volgt u de [Ontwikkelaarshandleiding voor de Intune App SDK voor Android]. Voor uw Android-app op basis van Xamarin moet u klasse, methoden en activiteiten vervangen door hun MAM-equivalent op basis van de [tabel](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) in de handleiding. Als uw app geen definitie van een `android.app.Application` klasse bevat, moet u een klasse maken en zorgen voor overname van `MAMApplication`.
+## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>App-beveiligingsbeleid inschakelen in uw mobiele Android-app
+Voor Android-apps op basis van Xamarin die geen gebruik maken van een UI-framework, leest en volgt u de [Ontwikkelaarshandleiding voor de Intune App SDK voor Android](app-sdk-android.md). Voor uw Android-app op basis van Xamarin moet u klasse, methoden en activiteiten vervangen door hun MAM-equivalent op basis van de [tabel](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) in de handleiding. Als uw app geen definitie van een `android.app.Application`-klasse bevat, moet u een klasse maken en zorgen voor overname van `MAMApplication`.
 
 Voor Xamarin Forms en andere UI-frameworks hebben we het hulpprogramma `MAM.Remapper` meegeleverd. Dit hulpprogramma voert de klassevervanging voor u uit. U moet echter wel de volgende stappen uitvoeren:
 
-1.  Voeg een verwijzing toe naar ` Microsoft.Intune.MAM.Remapper.Tasks` Nuget-pakketversie 0.1.0.0 of hoger.
+1.  Voeg een verwijzing toe naar `Microsoft.Intune.MAM.Remapper.Tasks` NuGet-pakketversie 0.1.0.0 of hoger.
 
 2.  Voeg de volgende regel toe aan uw Android-csproj:
   ```xml
@@ -117,8 +117,8 @@ Voor Xamarin Forms en andere UI-frameworks hebben we het hulpprogramma `MAM.Rema
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
-3.  Stel de build-bewerking van het toegevoegde bestand `remapping-config.json` in op **RemappingConfigFile**. Het meegeleverde `remapping-config.json` werkt alleen met Xamarin.Forms. Raadpleeg het Leesmij-bestand in het Remapper Nuget-pakket voor andere UI-frameworks.
+3.  Stel de build-bewerking van het toegevoegde bestand `remapping-config.json` in op **RemappingConfigFile**. Het meegeleverde `remapping-config.json` werkt alleen met Xamarin.Forms. Raadpleeg het Leesmij-bestand in het Remapper NuGet-pakket voor andere UI-frameworks.
 
-## <a name="test-your-app"></a>Uw app testen
+## <a name="next-steps"></a>Volgende stappen
 
-U hebt de basisstappen voor het inbouwen van het onderdeel in uw app voltooid. U kunt nu de stappen in de Xamarin Android-voorbeeldapp volgen. We bieden twee voorbeelden, één voor Xamarin.Forms en het andere voor Android.
+U hebt de basisstappen voor het inbouwen van het onderdeel in uw app voltooid. U kunt nu de stappen in de Xamarin Android-voorbeeld-app volgen. We bieden twee voorbeelden, één voor Xamarin.Forms en het andere voor Android.

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97dede1ac393a434342f62d1f8488389dcb28d44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -40,11 +40,27 @@ In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 ku
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM-instantie instellen op Intune
 
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
-  ![Schermafbeelding van de werkbelasting Problemen oplossen van Intune, met de koppeling Gebruiker selecteren](media/set-mdm-auth.png)
+1. Kies in de [Azure portal](https://portal.azure.com) **Meer Services** > **Bewaking en beheer** > **Intune**.
 2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Overzicht**.
+![Schermafbeelding van het scherm Mobile Device Management instellen in Intune](media/set-mdm-auth.png)
 
-3. Kies op de blade **Het beheer van apparaten starten** **MDM-instantie instellen op Intune**. Er verschijnt een bericht met de melding dat u uw MDM-instantie hebt ingesteld op Intune.
+3. Kies onder **Instantie voor beheer van mobiele apparaten** uw MDM-instantie uit de volgende opties:
+  - **MDM-instantie voor Intune**
+  - **MDM-instantie voor Configuration Manager**
+  - **Geen**
+
+  Er verschijnt een bericht met de melding dat u uw MDM-instantie hebt ingesteld op Intune.
+
+## <a name="enable-device-enrollment"></a>Apparaatinschrijving inschakelen
+
+Als Intune als uw MDM-instantie is ingesteld, kunnen gebruikers hun persoonlijke apparaten inschrijven en toegang krijgen tot resources, zoals e-mail, door de bedrijfsportal te installeren (iOS en Android), werkreferenties toe te voegen (Windows) of de bedrijfsportalwebsite te openen (iOS, Android, macOS).
+
+Verschillende platforms hebben de volgende eisen om inschrijving mogelijk te maken of te vereenvoudigen:
+- **iOS** - (vereist) [Zorg voor een Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md) en schakel daarna [inschrijving voor iOS-apparaten van het bedrijf in](ios-enroll.md) (optioneel).
+- **Android** - (optioneel) [Schakel Android-werkprofielen in](android-enroll.md)
+- **Windows** - (optioneel) Schakel [Automatische inschrijving](windows-enroll.md) of [bulkinschrijving](windows-bulk-enroll.md) in
+- **macOS** - Geen vereisten
+
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 

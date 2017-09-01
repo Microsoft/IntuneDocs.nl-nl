@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Beleid voor voorwaardelijke toegang in Microsoft Intune maken en toewijzen voor Exchange On-Premises en oudere Exchange Online Dedicated-omgevingen
 
@@ -122,11 +122,7 @@ Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaard
 
 1. Kies in het**Intune-dashboard** **Voorwaardelijke toegang**.
 
-2. Kies in het **dashboard Voorwaardelijke toegang** **Voorwaardelijke toegang in Azure Active Directory**.
-
-3. Kies **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang voor Azure AD te maken.
-
-    ![Beleid voor voorwaardelijke toegang voor Azure AD](./media/Azure-AD-CA-Intune.png)
+2. Kies in de blade **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
 
 ## <a name="see-also"></a>Zie tevens
 

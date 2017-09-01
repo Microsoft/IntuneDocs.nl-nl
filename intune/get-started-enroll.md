@@ -1,12 +1,12 @@
 ---
 title: Apparaten registreren
 titleSuffix: Intune on Azure
-description: 
+description: Maak kennis met het inschrijvingsproces door een volledige inschrijvingsprocedure voor een iOS-apparaat te doorlopen.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Apparaten registreren
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Aan de slag met het inschrijven van apparaten
 
 Microsoft Intune helpt u om uw werknemers met mobiele apparaten uit te rusten terwijl uw zakelijke gegevens worden beveiligd. Aangezien uw eindgebruikers interactie met Intune hebben op hun apparaten en niet in de beheerconsole, is het belangrijk dat u goed op de hoogte bent van het registratieproces. Alleen dan kunt u goed ontworpen nalevingsbeleid combineren met een prettige registratie-ervaring voor uw gebruikers. Dit is vooral belangrijk omdat uw gebruikers precies weten welke gegevens u als beheerder kunt zien:
 
-## <a name="what-it-cannot-see"></a>Wat de IT-afdeling niet kan zien
-* Oproepen en browsegeschiedenis
-* Locatie
-* Persoonlijke e-mails
-* SMS-berichten
-* Contactpersonen
-* Wachtwoorden van uw persoonlijke accounts
-* Agenda-items
-* Foto's, met inbegrip van wat er in de app Foto's of het camera-album staat
-
-## <a name="what-it-can-see"></a>Wat de IT-afdeling kan zien
-* Model
-* Serienummer
-* Versie van besturingssysteem
-* App-namen
-* Eigenaar
-* Apparaatnaam
-* De fabrikant (voor apparaten die niet door Apple zijn gemaakt)
-* Telefoonnummer (voor zakelijke apparaten het hele nummer. Voor persoonlijke apparaten alleen de laatste vier cijfers.)
+| Wat de IT-afdeling niet kan zien | Wat de IT-afdeling kan zien |
+|---|---|
+| Oproepen en browsegeschiedenis | Model |
+| Locatie | Serienummer |
+| Persoonlijke e-mails | Versie van besturingssysteem |
+| SMS-berichten | App-namen |
+| Contactpersonen | Eigenaar |
+| Wachtwoorden van uw persoonlijke accounts | Apparaatnaam |
+| Agenda-items | De fabrikant (voor apparaten die niet door Apple zijn gemaakt) |
+| Foto's, met inbegrip van wat er in de app Foto's of het camera-album staat | Telefoonnummer (voor zakelijke apparaten het hele nummer. Voor persoonlijke apparaten alleen de laatste vier cijfers.) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Hoe registreer ik een apparaat?
 
@@ -67,3 +56,13 @@ Vaak is de registratie van hun apparaat de eerste ervaring van eindgebruikers di
 14. Wanneer het scherm verandert om weer te geven dat het profiel is geïnstalleerd, tikt u op **Gereed**.
 15. U ziet een bericht dat het apparaat wordt geregistreerd en vervolgens dat de registratie van het apparaat is voltooid. Er verschijnt een pop-up met de vraag de pagina in de bedrijfsportal te openen. Tik op **Openen**.
 16. U gaat terug naar het scherm **Instellen van bedrijfstoegang**. Als u geen testbeleid hebt ingesteld, moet het apparaat als compatibel worden weergegeven. Als u wel testbeleid hebt gemaakt, tikt u op **Apparaatcompatibiliteit** om een bericht weer te geven dat er bepaalde dingen moeten worden gedaan om het apparaat veilig te maken.
+
+## <a name="next-steps"></a>Volgende stappen
+
+[Aan de slag met het toevoegen van apps](get-started-apps.md) - Zoek apps en voeg ze toe aan apparaten om het voor uw medewerkers mogelijk te maken om hun werk uit te voeren.
+
+## <a name="learn-more"></a>Meer informatie
+
+* [Registratieopties voor Intune](enrollment-options.md)
+* [Bring Your Own Device mogelijk maken met Intune](byod-enable.md)
+* [Uw eindgebruikers voorlichten over inschrijving en apparaatbeheer](end-user-educate.md)

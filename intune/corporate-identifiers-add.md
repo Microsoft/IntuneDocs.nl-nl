@@ -1,12 +1,12 @@
 ---
-title: IMEI-id's toevoegen aan Intune
+title: "Zakelijke id’s toevoegen aan Intune"
 titleSuffix: Intune on Azure
-description: Meer informatie over het toevoegen van zakelijke id's (IMEI-nummers) aan Microsoft Intune. "
+description: Meer informatie over het toevoegen van zakelijke id's (inschrijvingsmethode, IMEI en serienummers) aan Microsoft Intune. "
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,31 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b38bf2da70537d07a050fa21be9a2a3062ca84b
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="add-corporate-identifiers"></a>Zakelijke id's toevoegen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.csv) maken en importeren, waarin de IMEI-nummers (International Mobile Equipment Identifier) of serienummers worden vermeld. Intune gebruikt deze id's om het eigendom van het apparaat als zakelijk op te geven. U kunt IMEI-nummers aangeven voor alle ondersteunde platforms. U kunt alleen serienummers declareren voor iOS- en Android-apparaten. Voor elk IMEI-nummer of serienummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
+Als Intune-beheerder kunt u een apparaat op verschillende manieren identificeren als een bedrijfseigendom. Intune kan aanvullende informatie verzamelen van apparaten die bedrijfseigendom zijn. U kunt ook apparaatbeperkingen instellen om inschrijving door apparaten die geen bedrijfseigendom zijn te voorkomen.
+
+Een apparaat wordt herkend als bedrijfseigendom als aan een van de volgende voorwaarden wordt voldaan:
+
+- Ingeschreven met een [apparaatinschrijvingsbeheerder](device-enrollment-manager-enroll.md)-account (alle platforms)
+- Ingeschreven via het Apple-[apparaatinschrijvingsprogramma](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) of [Apple Configurator](apple-configurator-enroll-ios.md) (alleen iOS)
+- Vooraf voorzien van een internationaal identificatienummer voor mobiele apparaten (IMEI; alle platforms met IMEI-nummers) of een serienummer (iOS en Android)
+- Ingeschreven in Azure Active Directory of Enterprise Mobility Suite als een Windows 10 Enterprise-apparaat (alleen Windows 10)
+- Als **Zakelijk** opgegeven in de **Eigenschappen** van het apparaat
+
+Voor apparaten die eigendom zijn van het bedrijf wordt **Zakelijk** weergegeven in de kolom **Eigendom** in de apparaatgegevens in Intune. U kunt deze weergeven via **Apparaten** > **Alle apparaten**.
+
+## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Een apparaat labelen met een IMEI- of serienummer
+
+Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.csv) maken en importeren, waarin de IMEI-nummers of serienummers worden vermeld. Intune gebruikt deze id's om het eigendom van het apparaat als zakelijk op te geven. U kunt IMEI-nummers aangeven voor alle ondersteunde platforms. U kunt alleen serienummers declareren voor iOS- en Android-apparaten. Voor elk IMEI-nummer of serienummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -54,10 +68,9 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 >Bovendien zijn Android-serienummers niet gegarandeerd uniek of aanwezig. U kunt de leverancier van uw apparaat vragen of het serienummer van uw apparaat een betrouwbare id is.
 >De serienummers van het apparaat die aan Intune worden gemeld, komen mogelijk niet overeen met de id die wordt weergegeven in het menu Info of Instellingen van het apparaat. Controleer het type van het serienummer dat door de fabrikant van het apparaat wordt vermeld.
 
+### <a name="add-a-csv-list-of-corporate-identifiers"></a>Een .csv-lijst met zakelijke id's toevoegen
 
-**Een .csv-lijst van zakelijke id's toevoegen**
-
-1. Kies in de Intune-portal achtereenvolgens **Apparaatinschrijving** > **Inschrijvingsbeperkingen** en **Zakelijke apparaat-id's** en klik op **Toevoegen**.
+1. Kies in Intune in de Azure-portal **Apparaatinschrijving** > **Zakelijke apparaat-id’s** en klik vervolgens op **Toevoegen**.
 
  ![Schermopname van de werkruimte Zakelijke apparaat-id's met de knop Toevoegen gemarkeerd.](./media/add-corp-id.png)
 
@@ -69,9 +82,11 @@ Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten ku
 
 ## <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
 
-1. Kies in de Intune-portal achtereenvolgens **Apparaatinschrijving** > **Inschrijvingsbeperkingen** en **Zakelijke apparaat-id's** en **Verwijderen**.
+1. Kies in Intune in de Azure-portal **Apparaatinschrijving** > **Zakelijke apparaat-id’s**.
+2. Selecteer de apparaat-id’s die u wilt verwijderen en kies vervolgens **Verwijderen**.
+3. Bevestig de verwijdering.
 
-3. Op de blade **Id's verwijderen** bladert u naar het .csv-bestand met te verwijderen apparaat-id's en klikt u op **Verwijderen**.
+Wanneer u een zakelijke id voor een ingeschreven apparaat verwijdert, wordt het eigendom van het apparaat niet gewijzigd. U kunt het eigendom van een apparaat wijzigen door naar **Apparaten** > **Alle apparaten** te gaan, het apparaat te selecteren, **Eigenschappen** te kiezen en **Apparaateigendom** te wijzigen.
 
 ## <a name="imei-specifications"></a>IMEI-specificaties
 Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) voor gedetailleerde specificaties over International Mobile Equipment Identifiers.
