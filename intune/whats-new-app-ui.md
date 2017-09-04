@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
+## <a name="week-of-august-21-2017"></a>Week van 21 augustus 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune MAM-dialoogvensters (Mobile Application Management) zullen een moderne interface hebben <!-- 1199015 -->
+
+Intune MAM-dialoogvensters (Mobile Application Management) zullen worden bijgewerkt naar een modern uiterlijk. De dialoogvensters zullen op dezelfde manier werken als de vorige.
+
+**Eerdere ervaring**
+
+![oude interface](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Moderne ervaring**
+
+![moderne interface](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Week van 14 augustus 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Updates voor de pagina 'Apparaatdetails' in de bedrijfsportal-app voor Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates voor de pagina 'Apparaatdetails' in de bedrijfsportal-app voor Windows 10 <!---1287448--->
 
 In de bedrijfsportal-app voor Windows 10 wordt de tag __Categorie__ van onder de titel naar een eigenschap op de pagina __Apparaatdetails__ verplaatst.
 
 ![Op het scherm 'Apparaatdetails' in de bedrijfsportal-app voor Windows wordt nu het veld 'Categorieën' als eigenschap weergegeven in plaats van dat het direct onder de titel van het veld wordt weergegeven.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Week van 31 juli 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Op de pagina's met gegevens over de apps zal nieuwe informatie worden weergegeven voor Android-apparaten <!--1287476-->
+
+In de bedrijfsportal-app voor Android zullen op de pagina met gegevens over de apps nu de app-categorieën worden weergegeven die de IT-beheerder voor die app heeft gedefinieerd.
+
+![De nieuwe pagina met gegevens over de apps](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbeterde aanmeldervaring in de bedrijfsportal-apps voor alle platformen <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Op basis van feedback van gebruikers is aan de bedrijfsportal-app voor Android e
 
 ## <a name="week-of-june-5-2017"></a>Week van 5 juni 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Verbeteringen in de app-tegels in de bedrijfsportal-app voor iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Verbeteringen in de app-tegels in de bedrijfsportal-app voor iOS <!--1230777-->
 Het ontwerp van de app-tegels op de startpagina is bijgewerkt in overeenstemming met de huisstijlkleur die u voor de bedrijfsportal instelt.
 
 **Voor**
