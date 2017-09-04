@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 12556e394e2e09307c4f89e1ae56bb3f268b28ae
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
-# <a name="add-corporate-identifiers"></a>Zakelijke id's toevoegen
+# <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,15 +31,13 @@ Een apparaat wordt herkend als bedrijfseigendom als aan een van de volgende voor
 
 - Ingeschreven met een [apparaatinschrijvingsbeheerder](device-enrollment-manager-enroll.md)-account (alle platforms)
 - Ingeschreven via het Apple-[apparaatinschrijvingsprogramma](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) of [Apple Configurator](apple-configurator-enroll-ios.md) (alleen iOS)
-- Vooraf voorzien van een internationaal identificatienummer voor mobiele apparaten (IMEI; alle platforms met IMEI-nummers) of een serienummer (iOS en Android)
-- Ingeschreven in Azure Active Directory of Enterprise Mobility Suite als een Windows 10 Enterprise-apparaat (alleen Windows 10)
-- Als **Zakelijk** opgegeven in de **Eigenschappen** van het apparaat
+- [Herkend als bedrijfseigendom voorafgaand aan inschrijving](#identify-corporate-owned-devices-with-imei-or-serial-number) met een internationaal identificatienummer voor mobiele apparaten (IMEI; alle platforms met IMEI-nummers) of een serienummer (iOS en Android)
+- Ingeschreven in Azure Active Directory of Enterprise Mobility + Security als een Windows 10 Enterprise-apparaat (alleen Windows 10)
+- De apparaateigenschappen tonen [het eigendom van het apparaat als zakelijk](#change-device-ownership)
 
-Voor apparaten die eigendom zijn van het bedrijf wordt **Zakelijk** weergegeven in de kolom **Eigendom** in de apparaatgegevens in Intune. U kunt deze weergeven via **Apparaten** > **Alle apparaten**.
+## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Herkenning van apparaten in bedrijfseigendom met IMEI-nummer of serienummer
 
-## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Een apparaat labelen met een IMEI- of serienummer
-
-Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.csv) maken en importeren, waarin de IMEI-nummers of serienummers worden vermeld. Intune gebruikt deze id's om het eigendom van het apparaat als zakelijk op te geven. U kunt IMEI-nummers aangeven voor alle ondersteunde platforms. U kunt alleen serienummers declareren voor iOS- en Android-apparaten. Voor elk IMEI-nummer of serienummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
+Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.csv) maken en importeren, waarin de IMEI-nummers of serienummers worden vermeld. Intune gebruikt deze id's om het eigendom van het apparaat als zakelijk op te geven tijdens het inschrijven van het apparaat. U kunt IMEI-nummers aangeven voor alle ondersteunde platforms. U kunt alleen serienummers declareren voor iOS- en Android-apparaten. Voor elk IMEI-nummer of serienummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -80,7 +78,7 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
 Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten kunnen de status **Ingeschreven** of **Geen contact opgenomen** hebben. **Geen contact gemaakt** betekent dat het apparaat nooit gecommuniceerd heeft met de Intune-service.
 
-## <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
+### <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
 
 1. Kies in Intune in de Azure-portal **Apparaatinschrijving** > **Zakelijke apparaat-id’s**.
 2. Selecteer de apparaat-id’s die u wilt verwijderen en kies vervolgens **Verwijderen**.
@@ -88,5 +86,16 @@ Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten ku
 
 Wanneer u een zakelijke id voor een ingeschreven apparaat verwijdert, wordt het eigendom van het apparaat niet gewijzigd. U kunt het eigendom van een apparaat wijzigen door naar **Apparaten** > **Alle apparaten** te gaan, het apparaat te selecteren, **Eigenschappen** te kiezen en **Apparaateigendom** te wijzigen.
 
-## <a name="imei-specifications"></a>IMEI-specificaties
+### <a name="imei-specifications"></a>IMEI-specificaties
 Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) voor gedetailleerde specificaties over International Mobile Equipment Identifiers.
+
+## <a name="change-device-ownership"></a>Apparaateigendom wijzigen
+
+De apparaateigenschappen tonen **Eigendom** voor de records van elk apparaat in Intune. Als beheerder kunt u apparaten als **Persoonlijk** of **Zakelijk** opgeven.
+
+**Ga als volgt te werk om het apparaateigendom te wijzigen:**
+1. Ga in Intune in de Azure-portal naar **Apparaten** > **Alle apparaten** en kies het apparaat.
+3. Kies **Eigenschappen**.
+4. Selecteer voor **Apparaateigendom** de optie **Persoonlijk** of **Zakelijk**.
+
+  ![Schermafbeelding van apparaateigenschappen die de apparaatcategorie en opties van Apparaateigendom weergeeft.](./media/device-properties.png)

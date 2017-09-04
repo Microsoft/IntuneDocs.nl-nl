@@ -6,20 +6,20 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 4eb211fdeb8c51b67edc08f956c99c2af8319679
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -41,13 +41,13 @@ In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 ku
 ## <a name="set-mdm-authority-to-intune"></a>MDM-instantie instellen op Intune
 
 1. Kies in de [Azure portal](https://portal.azure.com) **Meer Services** > **Bewaking en beheer** > **Intune**.
-2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Overzicht**.
-![Schermafbeelding van het scherm Mobile Device Management instellen in Intune](media/set-mdm-auth.png)
-
+2. Selecteer de oranje banner om de instelling **Instantie voor beheer van mobiele apparaten** te openen.
 3. Kies onder **Instantie voor beheer van mobiele apparaten** uw MDM-instantie uit de volgende opties:
   - **MDM-instantie voor Intune**
   - **MDM-instantie voor Configuration Manager**
   - **Geen**
+
+  ![Schermafbeelding van het scherm De instantie voor het beheer van mobiele apparaten instellen op Intune](media/set-mdm-auth.png)
 
   Er verschijnt een bericht met de melding dat u uw MDM-instantie hebt ingesteld op Intune.
 

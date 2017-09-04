@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Hoe uw Android-gebruikers apps downloaden
 
@@ -50,9 +50,9 @@ Als dit het geval is, zal de bedrijfsportal-app de eindgebruiker informeren en d
 
 Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het proces van het maken van apps die worden beheerd, is hetzelfde voor alle typen Android-apparaten.
 
-**Beheerde apps**: dit zijn apps die kunnen worden beheerd via beleid. Deze zijn verpakt door Intune of gebouwd met de Intune Mobile Application Management (MAM) Software Development Kit (SDK). Deze apps kunnen worden beheerd door Intune en hierop kan een toepassingsbeleid worden toegepast.
+**Beheerde apps**: dit zijn apps die kunnen worden beheerd via beleid. Ze zijn "verpakt" door Intune of gebouwd met de Intune App SDK. Deze apps kunnen worden beheerd door Intune en hierop kan een toepassingsbeleid worden toegepast.
 
-**Niet-beheerde apps**: dit zijn apps die niet kunnen worden beheerd via beleid. Deze zijn niet verpakt door Intune of opgenomen in de Intune MAM SDK. Het toepassingsbeleid kan niet worden toegepast op deze apps.
+**Niet-beheerde apps**: dit zijn apps die niet kunnen worden beheerd via beleid. Deze zijn niet verpakt door Intune of opgenomen in de Intune App SDK. Het toepassingsbeleid kan niet worden toegepast op deze apps.
 
 ### <a name="see-also"></a>Zie tevens
 [Apps toevoegen met Microsoft Intune](apps-add.md)
