@@ -3,8 +3,8 @@ title: Bedrijfsgegevens van apparaten met Intune verwijderen
 titleSuffix: Intune on Azure
 description: Meer informatie over hoe u alleen bedrijfsgegevens verwijdert van apparaten die u beheert met Intune.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: f021e95f-157f-4e8a-9253-1cff03d6ee3e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0cc7d62770057ff9df5a36e6e5df58b29430534
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 8074d6e7cc0a061a6708f8c8bfae1a4dfcb6daa3
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="remove-company-data-from-intune-managed-devices"></a>Bedrijfsgegevens verwijderen van apparaten die worden beheerd met Intune
 
