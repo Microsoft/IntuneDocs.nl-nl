@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+
+## <a name="week-of-august-28-2017"></a>Week van 28 augustus 2017
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail-app zal OAuth ondersteunen <!---1196951--->
+
+Voorwaardelijke toegang met Intune ondersteunt veiligere verificatie op iOS-apparaten met OAuth. In de bedrijfsportal-app voor iOS zal er daarom nu een andere stroom zijn om veiligere verificatie mogelijk te maken. Wanneer eindgebruikers zich proberen aan te melden bij een nieuw Exchange-account in de Mail-app, zien ze een prompt in de webweergave. Bij inschrijving in Intune zien gebruikers een prompt waarin hun wordt gevraagd de ingebouwde Mail-app toegang te geven tot een certificaat. De meeste eindgebruikers zien geen e-mails in quarantaine meer. Bestaande e-mailaccounts blijven het basisverificatieprotocol gebruiken, dus die gebruikers blijven e-mails in quarantaine ontvangen. Deze aanmeldingservaring voor eindgebruikers lijkt op die in Office Mobile-apps.
+
+![Het accounttype selecteren in de ingebouwde Mail-app.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Nadat u Exchange hebt geselecteerd, wordt er op het iOS-apparaat een prompt weergegeven waarin u om een e-mailadres en accountnaam wordt gevraagd.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Geef een e-mailadres en een naam voor het account op.](./media/ios-11-ca-email-after-1708-03.png)
+
+![U wordt dan naar de externe Microsoft-aanmeldingspagina geleid.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Geef op de Microsoft-pagina uw wachtwoord op.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft vraagt de gebruiker het apparaat in te schrijven voor beheer.](./media/ios-11-ca-email-after-1708-06.png)
+
+![De gebruiker wordt gevraagd zich in te schrijven via de bedrijfsportalwebsite.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>Week van 21 augustus 2017
 
@@ -31,11 +52,11 @@ Intune MAM-dialoogvensters (Mobile Application Management) zullen worden bijgewe
 
 **Eerdere ervaring**
 
-![oude interface](media\NewUI_Old_AttachFileHandler.jpg)
+![oude interface](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Moderne ervaring**
 
-![moderne interface](media\NewUI_Modern_AttachFileHandler.jpg)
+![moderne interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>Week van 14 augustus 2017
