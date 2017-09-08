@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
 
@@ -32,7 +32,19 @@ Voordat u de registratie van iOS-apparaten kunt inschakelen, moet u de volgende 
 - [Intune instellen](setup-steps.md): hiermee stelt u de Intune-infrastructuur in. Voor apparaatinschrijving is met name het [instellen van uw MDM-instantie](mdm-authority-set.md) van belang.
 - [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md): Apple vereist een certificaat voor het inschakelen van het beheer van iOS- en macOS-apparaten.
 
-Nadat aan deze vereisten is voldaan, kunnen gebruikers de bedrijfsportal-app installeren om hun persoonlijke iOS-apparaten te registreren, of kan de beheerder beheer voor iOS-apparaten in bedrijfseigendom instellen. Beheerders kunnen ook [apparaatinschrijvingsmanagers](device-enrollment-manager-enroll.md) toewijzen die meerdere apparaten kunnen registreren met één beheeraccount. Intune ondersteunt de volgende registratiemethoden voor iOS-apparaten in bedrijfseigendom:
+## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
+
+U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen ze in de App Store de iOS-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen.
+
+## <a name="company-owned-ios-devices"></a>iOS-apparaten die bedrijfseigendom zijn
+Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de volgende inschrijvingsmethoden voor iOS-apparaten die bedrijfseigendom zijn:
+
+- Device Enrollment Program (DEP) van Apple
+- Apple School Manager
+- Inschrijving via Apple Configurator Setup Assistant
+- Directe inschrijving via Apple Configurator
+
+U kunt iOS-apparaten die bedrijfseigendom zijn ook inschrijven met een [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)-account.
 
 ## <a name="device-enrollment-program"></a>Programma voor apparaatinschrijving
 Organisaties kunnen nu iOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven. Meer informatie over het [Device Enrollment Program](device-enrollment-program-enroll-ios.md).
