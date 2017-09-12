@@ -1,6 +1,6 @@
 ---
 title: Windows 10-apparaten opnieuw instellen met Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over het gebruik van Nieuwe start om Windows 10-pc's opnieuw in te stellen met Intune.
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44633f244536a0033dd51fc06e1dba09c0490500
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 1b59db6f876e1a7353acda63b6b5acdbb5961cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Nieuwe start gebruiken om Windows 10-apparaten opnieuw in te stellen met Intune
 

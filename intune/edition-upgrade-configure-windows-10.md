@@ -1,6 +1,6 @@
 ---
 title: Editie-upgrades voor Windows 10 configureren in Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over het gebruik van Intune om Windows 10-apparaten die u beheert, bij te werken naar een andere editie.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7da261fcb59b8ac90ea412155d093dd09bf41d46
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8f6bd4c4af168bc64acabc05fdaad93558ddd10a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Editie-upgrades voor Windows 10 configureren in Microsoft Intune
 

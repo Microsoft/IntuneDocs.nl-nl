@@ -1,6 +1,6 @@
 ---
 title: Intune-apparaatbeperkingen voor Windows 10 Team
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over de apparaatbeperkingen die beschikbaar zijn voor Windows 10 Team-apparaten.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: abb5e181430b267ca2267bb7209687177ae5fde2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 824e5e24e73c0c4c3b34e9b045d3a85bd7ed643c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Windows 10 Team-apparaatbeperkingsinstellingen in Microsoft Intune
 

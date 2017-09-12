@@ -1,6 +1,6 @@
 ---
 title: App-meldingsinstellingen voor iOS-apparaten in Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: In dit onderwerp leest u over de instellingen die u kunt gebruiken voor het beheren van meldingen op iOS-apparaten.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36a9e9a5be9b2dc45ded1a99c7a5871780f7d9b2
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: cb9c5b407ce21604a677e207be573428a8728e06
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>App-meldingsinstellingen voor iOS-apparaten in Intune
 

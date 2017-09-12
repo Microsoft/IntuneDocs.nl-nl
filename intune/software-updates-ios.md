@@ -1,6 +1,6 @@
 ---
 title: Updatebeleid voor iOS configureren
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Configureer updatebeleid voor iOS zodat de nieuwste software-update automatisch wordt geïnstalleerd door iOS-apparaten die onder supervisie staan."
 keywords: 
 author: dougeby
@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: d4af2d58ec21c54362cf451eac1a33b2088885d5
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-ios-update-policies"></a>Updatebeleid voor iOS configureren
 Dankzij updatebeleid voor iOS kan de nieuwste software-update automatisch worden geïnstalleerd door iOS-apparaten die onder supervisie staan. U kunt dagen en tijdstippen instellen waarop u niet wilt dat de update wordt geïnstalleerd.

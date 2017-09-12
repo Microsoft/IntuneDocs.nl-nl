@@ -1,6 +1,6 @@
 ---
 title: Windows Information Protection configureren - Intune
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: In dit onderwerp vindt u meer informatie over de Intune-instellingen die u kunt gebruiken om Windows-gegevensbescherming te beheren."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ac59456dd2bc59a0a50eeab4e483dea2033c0fa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9eab6d6acae7965b319f4aa74aba2f8f3401d801
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Windows Information Protection configureren in Microsoft Intune
 

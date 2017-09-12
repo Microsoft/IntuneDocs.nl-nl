@@ -1,6 +1,6 @@
 ---
 title: VPN-instellingen voor iOS-apparaten in Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op iOS-apparaten te configureren.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d623f44b8765a29a998a9ddd3911d2d7da690caa
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>VPN-instellingen voor iOS-apparaten in Microsoft Intune
 
@@ -61,7 +61,7 @@ Als u **Aangepaste VPN** als verbindingstype hebt geselecteerd, configureert u d
 
 - **On-demand regels**: hiermee kunt u voorwaardelijke regels configureren om te bepalen wanneer de VPN-verbinding wordt gestart. U kunt bijvoorbeeld een voorwaarde instellen waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een van de Wi-Fi-netwerken van het bedrijf verbonden is. U kunt ook een voorwaarde instellen, dat als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft, de VPN-verbinding niet wordt gestart.
 
-    - **SSID's of DNS-zoekdomeinen**: selecteer of voor deze voorwaarde het draadloze netwerk,  **SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies Toevoegen om een of meerdere SSID's of zoekdomeinen te configureren.
+    - **SSID's of DNS-zoekdomeinen**: selecteer of voor deze voorwaarde het draadloze netwerk, ** SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies Toevoegen om een of meerdere SSID's of zoekdomeinen te configureren.
     - **URL-tekenreekstest**: (optioneel) geef een URL op die gebruikmaakt van de regel als een test. Als het apparaat waarop dit profiel is geïnstalleerd in staat is om zonder omleiding toegang tot deze URL te krijgen, wordt de VPN-verbinding tot stand gebracht en maakt het apparaat verbinding met de doel-URL. De gebruiker ziet de tekenreeks testsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
     - **Domeinactie**: kies een van de volgende items:
         - Verbinding maken indien nodig - 

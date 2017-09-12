@@ -1,6 +1,6 @@
 ---
 title: Het iOS-activeringsslot overslaan met Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over het gebruik van om het iOS-activeringslot over te slaan voor toegang tot vergrendelde apparaten.
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
-ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
+ms.openlocfilehash: 0a59d1bb3c159cf8340a39541e3167efa3e813d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Op iOS-apparaten onder supervisie Activeringsslot overslaan met Intune
 

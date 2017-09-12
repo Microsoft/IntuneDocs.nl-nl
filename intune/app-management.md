@@ -1,6 +1,6 @@
 ---
 title: Wat is app-beheer?
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Gebruik dit onderwerp voor meer informatie over de basisbeginselen van app-beheer met Microsoft Intune.
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c993d8a1006f5e50a718681f331f53812fae2a4
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 616589e02ba3c499e73431889f5a849a16538f90
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
