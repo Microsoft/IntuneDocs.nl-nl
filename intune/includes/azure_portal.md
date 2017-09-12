@@ -1,4 +1,4 @@
-|Van toepassing op: Intune op Azure |
+|Van toepassing op: Intune in Azure Portal |
 |--|
-|Op zoek naar documentatie over Intune in de klassieke console? U vindt [hier](/intune/introduction-intune?toc=/intune-classic/toc.json) meer informatie.|
+|Op zoek naar documentatie over Intune in de klassieke portal? Klik [hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
