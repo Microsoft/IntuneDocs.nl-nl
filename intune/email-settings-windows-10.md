@@ -1,6 +1,6 @@
 ---
 title: E-mailinstellingen voor Windows 10-apparaten in Intune
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op Windows 10-apparaten te configureren.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 121c21d49d3639925ef0abcdc55cb599ed276778
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 61cd80fafa961ec75c400a03dbbc00ce24b99abb
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>E-mailprofielinstellingen voor Windows 10-apparaten in Microsoft Intune
 

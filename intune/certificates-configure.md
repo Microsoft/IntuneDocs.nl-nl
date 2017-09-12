@@ -1,6 +1,6 @@
 ---
 title: Certificaten configureren met Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over het gebruik van Intune om certificaten te maken en toe te wijzen die u helpen Wi-Fi-, VPN- en andere verbindingen te beveiligen.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f0d518edc26c382d6df71b95b84328eb375baf6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Certificaten configureren in Microsoft Intune
 

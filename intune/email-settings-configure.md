@@ -1,6 +1,6 @@
 ---
 title: E-mailinstellingen configureren in Intune
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: Meer informatie over het configureren van Intune om verbindingen met de bedrijfse-mail te maken op apparaten die u beheert.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9de8eed31a93fc1360eb1a62b1d9328b42853d74
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>E-mailinstellingen configureren in Microsoft Intune
 

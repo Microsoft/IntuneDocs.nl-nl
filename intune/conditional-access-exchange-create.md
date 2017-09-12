@@ -1,6 +1,6 @@
 ---
 title: Een beleid maken en toewijzen voor voorwaardelijke toegang voor Exchange On-Premises
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Configureer voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune.
 keywords: 
 author: andredm7
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Beleid voor voorwaardelijke toegang in Microsoft Intune maken en toewijzen voor Exchange On-Premises en oudere Exchange Online Dedicated-omgevingen
 

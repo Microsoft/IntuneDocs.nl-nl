@@ -1,6 +1,6 @@
 ---
 title: De instantie voor het beheer van mobiele apparaten instellen
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informatie over het instellen van de instantie voor het beheer van mobiele apparaten in Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4eb211fdeb8c51b67edc08f956c99c2af8319679
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: e042ccbc085b2cf511d3cd21f2da5e23299264a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 

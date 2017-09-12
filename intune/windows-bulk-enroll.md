@@ -1,6 +1,6 @@
 ---
 title: Bulkinschrijving voor Windows 10
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Een bulkregistratiepakket voor Microsoft Intune maken
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 67af5f6545a0ef4a833c6f709fc4685de7f64113
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -37,7 +37,7 @@ Voor bulkregistratie van Windows-apparaten is het volgende nodig:
 
 ## <a name="create-a-provisioning-package"></a>Een inrichtingspakket maken
 
-1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) vanuit de Microsoft Store.
+1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) vanuit Microsoft Store.
 ![Schermafbeelding van de app Windows Configuration Designer en de beschrijving](media/bulk-enroll-store.png)
 
 2. Open de app **Windows Configuration Designer** en selecteer **Desktopapparaten inrichten**.
