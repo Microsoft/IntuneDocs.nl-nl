@@ -14,13 +14,13 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aad5b158e1217155c3e3ec671654ee6e81054675
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 57cdcb50920566c61ed43b5eada5bbde35c2438e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
-# <a name="enable-lookout-mtd-connection-in-the-intune-classic-console"></a>De verbinding voor Lookout MTD inschakelen in de klassieke Intune-console
+# <a name="enable-lookout-mtd-connection-in-the-intune-classic-portal"></a>De verbinding voor Lookout MTD inschakelen in de klassieke Intune-portal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

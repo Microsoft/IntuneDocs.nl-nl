@@ -1,12 +1,12 @@
 ---
 title: Fabrieksinstellingen terugzetten gebruiken of bedrijfsgegevens verwijderen met behulp van Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informatie over het verwijderen van bedrijfsgegevens op een apparaat of het terugzetten naar de fabrieksinstellingen.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
@@ -106,7 +106,7 @@ Als het apparaat is ingeschakeld en verbonden, wordt de opdracht Bedrijfsgegeven
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Apparaten verwijderen van de Azure Active Directory-portal
 
-Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten verwijderen van Azure Active Directory (AD). Met de opdracht Verwijderen wordt een apparaat niet uit het beheer verwijderd, maar u kunt **Verwijderen** wel gebruiken voor het verwijderen van apparaatrecords uit de Azure-console die onbereikbaar zijn en vermoedelijk niet opnieuw met Azure gaan communiceren.
+Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten verwijderen van Azure Active Directory (AD). Met de opdracht Verwijderen wordt een apparaat niet uit het beheer verwijderd, maar u kunt **Verwijderen** wel gebruiken voor het verwijderen van apparaatrecords uit de Azure-portal die onbereikbaar zijn en vermoedelijk niet opnieuw met Azure gaan communiceren.
 
 1.  Meld u met uw referenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt u ook aanmelden bij de [Office 365-portal](https://portal.office.com) en vervolgens **Beheerder** &gt; **Azure AD** kiezen met behulp van de koppeling aan de linkerkant van de pagina.
 3.  Maak een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (kies de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).

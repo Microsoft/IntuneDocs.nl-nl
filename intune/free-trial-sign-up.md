@@ -1,6 +1,6 @@
 ---
 title: Aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune
-titleSuffix: 
+titleSuffix: Azure portal
 description: Aanmelden voor een gratis proefversie van 30 dagen van Intune."
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 
@@ -47,11 +47,11 @@ Wanneer u zich aanmeldt voor een proefversie, ontvangt u tevens een e-mailberich
 Er zijn drie portals die u kunt gebruiken voor de Intune-portal in Azure:
 - Het Intune-dashboard in Azure ([portal.azure.com](https://portal.azure.com)) waar u de [mogelijkheden van Intune in de Azure Portal](what-is-intune.md) kunt bekijken.
 - Het Office 365-beheercentrum ([portal.office.com](https://portal.office.com)) waar u gebruikers kunt toevoegen en beheren als u Azure Active Directory hiervoor niet gebruikt. U kunt ook andere aspecten van uw account beheren, zoals facturering en ondersteuning.
-- De klassieke Intune-beheerconsole ([manage.microsoft.com](https://manage.microsoft.com)) waar u de functies kunt bekijken die nog niet aan Azure zijn toegevoegd.
+- De Intune-beheerconsole ([manage.microsoft.com](https://manage.microsoft.com)) waar u de functies kunt bekijken die nog niet aan Azure zijn toegevoegd.
 
 Doorgaans voert u uw werkzaamheden uit in het Intune-dashboard, dat hieronder wordt weergegeven. Dit is de site waar u uw groepen, beleid, apparaten en apps instelt en beheert.
 
-U kunt vanuit het dashboard naar de klassieke Intune-beheerconsole gaan door bovenaan het dashboard **Klassieke portal** te kiezen.
+U kunt vanuit het dashboard naar de Intune-beheerconsole gaan door bovenaan het dashboard **Klassieke portal** te kiezen.
 
 Voer https://portal.azure.com in de adresbalk van uw browser in om terug te keren naar Intune Azure Portal en kies nogmaals **Intune** in de lijst met services.
 
@@ -68,7 +68,7 @@ U vanuit Intune wilt terugkeren naar het Office 365-beheercentrum, voert u https
 
 ## <a name="next-steps"></a>Volgende stappen
 
-### <a name="intune-on-azure"></a>Intune in Azure
+### <a name="intune-in-the-azure-portal"></a>Intune in Azure Portal
 Meer informatie over [Intune in Azure Portal](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integratie met andere producten

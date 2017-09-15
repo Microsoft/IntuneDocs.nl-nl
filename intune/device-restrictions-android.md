@@ -1,12 +1,12 @@
 ---
 title: Intune-apparaatbeperkingsinstellingen voor Android
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op Android-apparaten.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- en Samsung KNOX Standard-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -67,8 +67,8 @@ Gebruik deze instellingen met een restrictiebeleid voor Android-apparaten om app
 <sup>1</sup> Voordat u deze instelling aan apparaten toewijst, moet u controleren dat de bedrijfsportal-app op deze apparaten is bijgewerkt naar de nieuwste versie.
 
 Als u de instelling **Numeriek complex** configureert en toewijst aan een apparaat waarop een eerdere versie dan Android 5.0 wordt uitgevoerd, is het volgende van toepassing.
-- Als er een eerdere versie dan versie 1704 van de bedrijfsportal-app wordt uitgevoerd, wordt er geen pincodebeleid toegepast op het apparaat en wordt er een foutmelding weergegeven in de Intune-portal.
-- Als versie 1704 of later wordt uitgevoerd, kan er alleen een eenvoudig pincode worden toegepast. Android-versies die ouder zijn dan 5.0 bieden geen ondersteuning voor deze instelling. Er wordt geen fout weergegeven in de Intune-portal.
+- Als er een eerdere versie dan versie 1704 van de bedrijfsportal-app wordt uitgevoerd, wordt er geen pincodebeleid toegepast op het apparaat en wordt er een foutmelding weergegeven in de Azure-portal.
+- Als versie 1704 of later wordt uitgevoerd, kan er alleen een eenvoudig pincode worden toegepast. Android-versies die ouder zijn dan 5.0 bieden geen ondersteuning voor deze instelling. Er wordt geen fout weergegeven in de Azure-portal.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ Als u de instelling **Numeriek complex** configureert en toewijst aan een appara
 
 In de lijst met beperkte apps kunt u een van de volgende lijsten configureren voor zowel Android- als Samsung KNOX Standard-apparaten:
 
-Lijst met **niet-toegestane apps**: hiermee maakt u een lijst met apps die niet worden beheerd door Intune en die gebruikers niet mogen installeren en uitvoeren.
+Lijst met **niet-toegestane apps**: hiermee maakt u een lijst met apps die niet worden beheerd door Intune en waarvan u een melding ontvangt als gebruikers deze installeren en uitvoeren.
 Lijst met **goedgekeurde apps**: hiermee maakt u een lijst met apps die gebruikers mogen installeren. Om te blijven voldoen aan het beleid, mogen gebruikers geen andere apps installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.
 Apparaatprofielen die instellingen voor beperkte apps bevatten, moeten worden toegewezen aan groepen met gebruikers.
 
@@ -107,6 +107,21 @@ U kunt ook op **Importeren** klikken om de lijst op hale uit een csv-bestand. Ge
 - **JavaScript (alleen voor Samsung KNOX)**: hiermee staat u de uitvoering van Java-scripts in de webbrowser van het apparaat toe.
 - **Pop-ups (alleen voor Samsung KNOX)**: hiermee staat u het gebruik van pop-upblokkering in de webbrowser toe.
 
+## <a name="allow-or-block-apps"></a>Apps toestaan of blokkeren
+
+Deze instellingen kunnen worden gebruikt om apps te specificeren die kunnen worden geïnstalleerd of geopend op apparaten die alleen Samsung KNOX Standard hebben.
+Daarnaast kunt u geïnstalleerde apps opgegeven die voor de gebruiker van het apparaat worden verborgen. Gebruikers kunnen deze apps niet uitvoeren.
+
+- **Apps die mogen worden geïnstalleerd (alleen Samsung KNOX Standard)**
+- **Apps die nu kunnen worden geopend (alleen Samsung KNOX Standard)**
+- **Apps die verborgen zijn voor de gebruiker (alleen Samsung KNOX Standard)**
+
+Configureer voor elke instelling een lijst met apps aan de hand van een van de volgende methoden:
+
+- **Apps toevoegen op pakketnaam** - Hoofzakelijk gebruikt voor line-of-business-apps. Vul de naam van de app en de naam van het app-pakket in. 
+- **Apps toevoegen op URL** - Vul de naam van de app en de URL in de Google Play Store in.
+- **Beheerde apps toevoegen** - Selecteer de app die u nodig hebt in de lijst met apps die u beheert met Intune.
+
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
 - **Google-back-up (alleen voor Samsung KNOX)**: hiermee wordt het gebruik van Google-back-up toegestaan.
@@ -127,9 +142,9 @@ U kunt ook op **Importeren** klikken om de lijst op hale uit een csv-bestand. Ge
 
 ## <a name="kiosk"></a>Kiosk
 
-Kiosk-instellingen gelden alleen voor Samsung KNOX Standard-apparaten.
+Kioskinstellingen zijn alleen van toepassing op apparaten met Samsung KNOX Standard en alleen op apps die u beheert via Intune.
 
-- **Beheerde app selecteren**: kies een van de volgende opties voor het toevoegen van een of meer apps die kunnen worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt. Er mogen geen andere apps op het apparaat worden uitgevoerd.
+- **Selecteer een beheerde app** - kies een van de volgende opties voor het toevoegen van een of meer apps die kunnen worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt. Er mogen geen andere apps op het apparaat worden uitgevoerd.
     - **Apps toevoegen op pakketnaam**
     - **Apps toevoegen op URL**
     - **Beheerde apps toevoegen**.

@@ -1,6 +1,6 @@
 ---
 title: Klassieke Intune-groepen in Azure Portal
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: Nieuwe functies voor groepen in de Intune Azure Portal
 keywords: 
 author: nathbarn
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: c51c3102cc78cf095e27da4ff199cb3fb5ae14a6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Klassieke Intune-groepen in Azure Portal
 
@@ -38,7 +38,7 @@ Sommige functies voor Intune-groepen die u mogelijk eerder hebt gebruikt, zijn n
 - De optie **Specifieke leden uitsluiten** van een groep bestaat niet in Azure Portal. U kunt echter een Azure AD-beveiligingsgroep met geavanceerde regels gebruiken om dit gedrag te repliceren. U kunt bijvoorbeeld een geavanceerde regel maken waarmee u alle personen van de afdeling Verkoop opneemt in een beveiligingsgroep, behalve degenen waarbij het woord 'assistent' in hun titel voorkomt. Deze geavanceerde regel ziet er als volgt uit:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
-- De groep **Alle door Exchange ActiveSync beheerde apparaten** in de Intune-console is niet gemigreerd naar Azure AD. U hebt echter nog altijd toegang tot informatie over met EAS beheerde apparaten via Azure Portal.
+- De groep **Alle door Exchange ActiveSync beheerde apparaten** in de klassieke Intune-console is niet gemigreerd naar Azure AD. U hebt echter nog altijd toegang tot informatie over met EAS beheerde apparaten via Azure Portal.
 
 ## <a name="how-to-get-started"></a>Aan de slag
 
@@ -51,9 +51,9 @@ Sommige functies voor Intune-groepen die u mogelijk eerder hebt gebruikt, zijn n
 
 
 ## <a name="what-happened-to-intune-groups"></a>Wat is er gebeurd met Intune-groepen?
-Wanneer groepen worden gemigreerd van de klassieke Intune-portal naar Intune in Azure Portal, worden de volgende regels toegepast:
+Wanneer groepen worden gemigreerd van de Azure-portal naar Intune in Azure Portal, worden de volgende regels toegepast:
 
-| Groepen in de klassieke versie van Intune|Groepen in Azure AD|
+| Groepen in Intune|Groepen in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statische gebruikersgroep|Statische Azure AD-beveiligingsgroep|
 |Dynamische gebruikersgroep|Statische Azure AD-beveiligingsgroepen met een Azure AD-beveiligingsgroepshiërarchie|
@@ -65,7 +65,7 @@ Wanneer groepen worden gemigreerd van de klassieke Intune-portal naar Intune in 
 
 ## <a name="group-hierarchy"></a>Groepshiërarchie
 
-In de klassieke Intune-console hadden alle groepen een bovenliggende groep. Groepen konden alleen leden van de bovenliggende groep bevatten. Onderliggende groepen in Azure AD kunnen leden bevatten die niet in de bovenliggende groep zijn opgenomen.
+In de Intune-console hadden alle groepen een bovenliggende groep. Groepen konden alleen leden van de bovenliggende groep bevatten. Onderliggende groepen in Azure AD kunnen leden bevatten die niet in de bovenliggende groep zijn opgenomen.
 
 ## <a name="group-attributes"></a>Groepskenmerken
 Kenmerken zijn eigenschappen van apparaten die kunnen worden gebruikt om groepen te definiëren. Deze tabel bevat een beschrijving van hoe deze criteria worden gemigreerd naar Azure AD-beveiligingsgroepen.
@@ -84,4 +84,4 @@ Kenmerken zijn eigenschappen van apparaten die kunnen worden gebruikt om groepen
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>Wat gebeurt er met beleidsregels en apps die u eerder hebt geïmplementeerd?
 
-Beleid en apps blijven gewoon geïmplementeerd voor groepen, net als voorheen. U beheert deze groepen nu echter via Azure Portal en niet meer via de klassieke Intune-console.
+Beleid en apps blijven gewoon geïmplementeerd voor groepen, net als voorheen. U beheert deze groepen nu echter via Azure Portal en niet meer via de Intune-console.

@@ -1,6 +1,6 @@
 ---
 title: Indelingsinstellingen voor Intune-startpagina voor iOS-apparaten
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informatie over de instellingen waarmee u het startscherm kunt aanpassen en dokken op iOS-apparaten."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Indelingsinstellingen voor Intune-startpagina voor iOS-apparaten
 
@@ -60,7 +60,7 @@ Voeg de pagina's toe die u wilt weergeven op het startscherm en voeg de apps toe
 
 
 1. Kies op de blade **Pagina's** het item **Toevoegen**.
-2. Voer op de blade **Rij toevoegen** een **Paginanaam** in. Deze naam wordt ter referentie gegeven in de Intune-portal en *wordt niet weergegeven* op het iOS-apparaat.
+2. Voer op de blade **Rij toevoegen** een **Paginanaam** in. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
 3. Kies **Toevoegen** en kies of u een **App** of **Map** wilt toevoegen aan de pagina.
 4. Gebruik de informatie in dit onderwerp om de apps en mappen te configureren die u wilt weergeven op de pagina.
 
@@ -76,7 +76,7 @@ Wanneer u het beleid aan een iPhone toewijst, is het resultaat een pagina die er
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Een app aan de lijst toevoegen
 
-1. Voer de **App-naam** in. Deze naam wordt ter referentie gegeven in de Intune-portal en *wordt niet weergegeven* op het iOS-apparaat.
+1. Voer de **App-naam** in. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
 2. Voer de **App-bundel-id** in van de app die u wilt weergeven. Zie voor hulp **Lijst van bundel-id's voor ingebouwde iOS-apps** verderop in dit onderwerp.
 3. Klik op **OK**, ga door naar het toevoegen van items, tot een maximum van **6** voor de apparaatdock en **60** voor een apparaatpagina.
 4. Klik op **OK**als u klaar bent.
@@ -87,8 +87,8 @@ Apps die u aan een pagina in een map toevoegt, worden gerangschikt van links naa
 
 1. Voer de **Mapnaam** in. Deze naam zien gebruikers op hun apparaat.
 2. Kies **Toevoegen** om een pagina in de map te maken. U kunt maximaal 20 pagina's toevoegen.
-3. Voer op de blade **Rij toevoegen** een naam in voor de pagina. Deze naam wordt ter referentie gegeven in de Intune-portal en *wordt niet weergegeven* op het iOS-apparaat.
-3. Voer de **App-naam** in. Deze naam wordt ter referentie gegeven in de Intune-portal en *wordt niet weergegeven* op het iOS-apparaat.
+3. Voer op de blade **Rij toevoegen** een naam in voor de pagina. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
+3. Voer de **App-naam** in. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
 2. Voer de **App-bundel-id** in van de app die u wilt weergeven. Zie **Een app aan de lijst toevoegen** voor meer informatie.
 3. Kies **Toevoegen**. U kunt maximaal 60 items toevoegen.
 4. Klik op **OK**als u klaar bent.

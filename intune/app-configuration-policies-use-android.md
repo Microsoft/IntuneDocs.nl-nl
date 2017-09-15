@@ -1,6 +1,6 @@
 ---
 title: Configuratiebeleid van Intune-apps gebruiken voor Android for Work
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informatie over het gebruik van het configuratiebeleid voor apps om configuratiegegevens te bieden aan een Android for Work-app wanneer deze wordt uitgevoerd.
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7486a62ed11b83f00414a74b2d816f6048826f73
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 4b73202a1a68bd2dd3dcbfa86c21cb09ae00056c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Configuratiebeleid van Microsoft Intune-apps gebruiken voor Android for Work
 
@@ -27,16 +27,16 @@ ms.lasthandoff: 08/15/2017
 
 Gebruik het configuratiebeleid voor apps in Microsoft Intune om instellingen op te geven die mogelijk beschikbaar zijn wanneer gebruikers een Android for Work-app uitvoeren. Niet alle apps ondersteunen app-configuratie. Neem contact op met de ontwikkelaar van de app om te controleren of de app configuratiebeleid voor apps ondersteunt.
 
-Via een configuratiebeleid voor apps kunt u vooraf beschikbare app-instellingen configureren voor uw gebruikers voordat ze de app uitvoeren. Sommige Android-apps ondersteunen beheerde configuratieopties die u kunt configureren in de Intune-console met de [Configuration Designer](#use-configuration-designer). Bepaalde configuratie-instellingen voor apps (zoals de instellingen voor bundeltypen) kunnen niet worden geconfigureerd met de Configuration Designer.  Voor deze waarden moet u de [JSON-editor](#use-json-editor) gebruiken.   Instellingen worden automatisch aan apps geleverd wanneer de app wordt geïnstalleerd.
+Via een configuratiebeleid voor apps kunt u vooraf beschikbare app-instellingen configureren voor uw gebruikers voordat ze de app uitvoeren. Sommige Android-apps ondersteunen beheerde configuratieopties die u kunt configureren in de Azure-portal met de [Configuration Designer](#use-configuration-designer). Bepaalde configuratie-instellingen voor apps (zoals de instellingen voor bundeltypen) kunnen niet worden geconfigureerd met de Configuration Designer.  Voor deze waarden moet u de [JSON-editor](#use-json-editor) gebruiken.   Instellingen worden automatisch aan apps geleverd wanneer de app wordt geïnstalleerd.
 
 U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en wijst u vervolgens de app toe. De beleidsinstellingen worden gebruikt wanneer de app deze controleert (doorgaans de eerste keer dat de app wordt uitgevoerd).
 
 ## <a name="use-configuration-designer"></a>Configuration Designer gebruiken
 
-1. Kies in de Intune-portal **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleid** en klik vervolgens op **Toevoegen**.
+1. Kies in de Azure-portal **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleid** en klik vervolgens op **Toevoegen**.
 2. Stel de volgende details in:
-    - **Naam**: de naam van het profiel dat wordt weergegeven in de Intune-console
-    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in de Intune-console
+    - **Naam**: de naam van het profiel dat wordt weergegeven in de Azure-portal
+    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in de Azure-portal
     - **Platform**: selecteer **Android**
     - **Device enrollment type (Inschrijving apparaattype)** - : **Ingeschreven bij Intune** is vooraf geselecteerd.
 3. Selecteer **Gekoppelde app** om een app te kiezen waarvoor u een configuratiebeleid wilt opgeven.  Selecteer in de lijst met Android Work-apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune
@@ -51,10 +51,10 @@ U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats 
 
 ## <a name="use-json-editor"></a>De JSON-editor gebruiken
 
-1. Kies in de Intune-portal **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleid** en klik vervolgens op **Toevoegen**.
+1. Kies in de Azure-portal **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleid** en klik vervolgens op **Toevoegen**.
 2. Stel de volgende details in:
-    - **Naam**: de naam van het profiel dat wordt weergegeven in de Intune-console
-    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in de Intune-console
+    - **Naam**: de naam van het profiel dat wordt weergegeven in de Azure-portal
+    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in de Azure-portal
     - **Platform**: selecteer **Android**
     - **Device enrollment type (Inschrijving apparaattype)** - : **Ingeschreven bij Intune** is vooraf geselecteerd.
 3. Selecteer **Gekoppelde app** om een app te kiezen waarvoor u een configuratiebeleid wilt opgeven.  Selecteer in de lijst met Android for Work-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
@@ -73,10 +73,10 @@ Wanneer de toegewezen app op een apparaat wordt uitgevoerd, worden de instelling
 
 U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-apparaatfuncties. Android-apps die apparaatmachtigingen vereisen, zoals voor toegang tot uw locatie of de apparaatcamera, vragen gebruikers de machtiging te accepteren of te weigeren. Als een app bijvoorbeeld gebruikmaakt van de microfoon van het apparaat, wordt de gebruiker gevraagd de app toestemming te verlenen voor het gebruik van de microfoon.
 
-1. Kies in de Intune-portal **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleid** en klik vervolgens op **Toevoegen**.
+1. Kies in de Azure-portal **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleid** en klik vervolgens op **Toevoegen**.
 2. Stel de volgende details in:
-    - **Naam**: de naam van het profiel dat wordt weergegeven in de Intune-console
-    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in de Intune-console
+    - **Naam**: de naam van het profiel dat wordt weergegeven in de Azure-portal
+    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in de Azure-portal
     - **Platform**: selecteer **Android**
     - **Device enrollment type (Inschrijving apparaattype)** - : **Ingeschreven bij Intune** is vooraf geselecteerd.
 3. Selecteer **Gekoppelde app** om een app te kiezen waarvoor u een configuratiebeleid wilt opgeven.  Selecteer in de lijst met Android for Work-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.

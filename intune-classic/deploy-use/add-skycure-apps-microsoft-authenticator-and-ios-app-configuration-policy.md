@@ -1,6 +1,6 @@
 ---
 title: Skycure-apps, de Microsoft Authenticator-app en het iOS-configuratiebeleid toevoegen
-description: Voeg Skycure-apps, de Microsoft Authenticator-app en het iOS-configuratiebeleid toe in de klassieke Intune-console.
+description: Voeg Skycure-apps, de Microsoft Authenticator-app en het iOS-configuratiebeleid toe in de klassieke Intune-portal.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 018d26f4-4a75-4e27-bb04-54f54106cb2f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 425b86e92281bb6e3657a6c806be269ccae94311
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d762e1aed998642db66908549b2d15d54601aed
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Skycure-apps, de Microsoft Authenticator-app en het iOS-configuratiebeleid toevoegen
 
@@ -30,9 +30,9 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
--   De onderstaande stappen moeten worden uitgevoerd in de [klassieke Intune-console](https://manage.microsoft.com/).
+-   De onderstaande stappen moeten worden uitgevoerd in de [klassieke Intune-portal](https://manage.microsoft.com/).
 
--   Gebruik hetzelfde Azure AD-account dat eerder is geconfigureerd in de Skycure-beheerconsole. Dit moet hetzelfde account zijn als het account waarmee is aangemeld bij de klassieke Intune-console.
+-   Gebruik hetzelfde Azure AD-account dat eerder is geconfigureerd in de Skycure-beheerconsole. Dit moet hetzelfde account zijn als het account waarmee is aangemeld bij de klassieke Intune-portal.
 
 -   Het Skycure-integratiebestand moet klaar zijn voor gebruik. Dit is het ZIP-bestand dat eerder in de Skycure-beheerconsole is gedownload en dat het bestand **skycure\_configuration.plist** bevat met de parameters voor het configuratiebeleid voor iOS-apps.
 
@@ -44,7 +44,7 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 ## <a name="to-add-the-skycure-app-for-android"></a>De Skycure-app voor Android toevoegen
 
-1.  Kies in de klassieke Intune-console **Apps** &gt;**Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
+1.  Kies in de klassieke Intune-portal **Apps** &gt; **Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
 
 2.  Kies op de pagina **Setup van software** de optie **Externe koppeling** en plak vervolgens onder **De URL opgeven** de [URL voor de Skycure-app voor Android](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
@@ -58,7 +58,7 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 ## <a name="to-add-the-skycure-app-for-ios"></a>De Skycure-app voor iOS toevoegen
 
-1.  Kies in de klassieke Intune-console **Apps** &gt;**Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
+1.  Kies in de klassieke Intune-portal **Apps** &gt; **Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
 
 2.  Kies op de pagina **Setup van software** de optie **Beheerde iOS-app uit de App Store** en plak vervolgens onder **De URL opgeven** de [URL voor de Skycure-app voor iOS](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) .
 
@@ -74,7 +74,7 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 ## <a name="to-add-the-microsoft-authenticator-app-for-ios"></a>De Microsoft Authenticator-app voor iOS toevoegen
 
-1.  Kies in de klassieke Intune-console **Apps** &gt;**Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
+1.  Kies in de klassieke Intune-portal **Apps** &gt; **Apps toevoegen** om Microsoft Intune Software Publisher te starten en klik vervolgens op **Volgende**.
 
 2.  Kies op de pagina **Setup van software** de optie **Beheerde iOS-app uit de App Store** en plak vervolgens onder **De URL opgeven** de [URL voor de Microsoft Authenticator-app voor iOS](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) .
 
@@ -90,7 +90,7 @@ Daarnaast moet u gebruikmaken van [Microsoft Authenticator](https://docs.microso
 
 ## <a name="to-add-the-skycure-ios-app-configuration-policy"></a>Het configuratiebeleid voor de iOS-app voor Skycure toevoegen
 
-1.  Kies in de klassieke Intune-console **Beleid** &gt; **Overzicht &gt; Beleid toevoegen**.
+1.  Kies in de klassieke Intune-portal **Beleid** &gt; **Overzicht &gt; Beleid toevoegen**.
 
 2.  Vouw in de lijst met beleidsregels **iOS** uit, kies **Configuratiebeleid voor mobiele apps (iOS 8.0 en hoger)** en kies vervolgens **Beleid maken**.
 

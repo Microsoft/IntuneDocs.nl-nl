@@ -1,7 +1,7 @@
 ---
 title: Waar is de Intune-functie die ik zoek gebleven in Azure?
-titleSuffix: Intune on Azure
-description: Hiermee kunt u Intune-functies in de Azure-console zoeken.
+titlesuffix: Azure portal
+description: Hiermee kunt u Intune-functies in de Azure-portal zoeken."
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
-Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke console, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
+Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Intune in de Azure-portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
 ## <a name="quick-reference-guide"></a>Naslaggids
-|Onderdeel |Pad in klassieke console|Pad in Intune in Azure|
+|Onderdeel |Pad in klassieke portal|Pad in Intune in de Azure-portal|
 |------------|---------------|---------------|
 |Device Enrollment Program (DEP) |Beheer > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program|[Apparaatinschrijving > Apple-inschrijving > Token voor het inschrijvingsprogramma](#where-did-apple-dep-go) |
 |Device Enrollment Program (DEP)| Beheerder > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program |[Apparaatinschrijving > Apple-inschrijving > Serienummers voor het inschrijvingsprogramma](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid
 
 
 ## <a name="where-do-i-manage-groups"></a>Waar kan ik groepen beheren?
-Intune op Azure gebruikt [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) om groepen te beheren.
+Intune in de Azure-portal gebruikt [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) om groepen te beheren.
 
 ## <a name="where-did-enrollment-rules-go"></a>Waar zijn de inschrijvingsregels gebleven?
-In de klassieke console kunt u regels instellen voor de MDM-inschrijving van mobiele en moderne Windows- en macOS-apparaten:
+In de klassieke portal kunt u regels instellen voor de MDM-inschrijving van mobiele en moderne Windows- en macOS-apparaten:
 
 ![Afbeelding van regels voor inschrijving van mobiele apparaten in klassieke console](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Deze regels waren van toepassing op alle gebruikers in uw Intune-account, zonder
 
 ![Afbeelding van beperkingen voor inschrijving van mobiele apparaten in Azure](./media/02-azure-enroll-restrictions.png)
 
-De standaard Apparaatlimietbeperking komt overeen met de Limiet apparaatinschrijvingen in de klassieke console:
+De standaard Apparaatlimietbeperking komt overeen met de Limiet apparaatinschrijvingen in de klassieke portal:
 
 ![Afbeeldingen van apparaatlimietbeperkingen in Azure](./media/03-azure-device-limit.png)
 
-De standaard Beperking voor apparaattypen komt overeen met de Platformbeperkingen in de klassieke console:
+De standaard Beperking voor apparaattypen komt overeen met de Platformbeperkingen in de klassieke portal:
 
 ![Afbeeldingen van beperking voor apparaattype in Azure](./media/04-azure-platform-restrictions.png)
 
@@ -65,7 +65,7 @@ De mogelijkheid om apparaten in persoonlijk eigendom toe te staan of te blokkere
 Nieuwe beperkingsmogelijkheden worden uitsluitend toegevoegd aan Azure Portal.
 
 ## <a name="where-did-apple-dep-go"></a>Waar is Apple DEP gebleven?
-In de klassieke console kunt u Intune instellen voor integratie met het Device Enrollment Program van Apple, en handmatig synchroniseren met de service van Apple:
+In de klassieke portal kunt u Intune instellen voor integratie met het Device Enrollment Program van Apple, en handmatig synchroniseren met de service van Apple:
 
 ![Afbeelding van klassieke DEP-token](./media/06-classic-dep-token.png)
 
@@ -73,13 +73,13 @@ In de Azure-portal stelt u het Apple Device Enrollment Program in met dezelfde s
 
 ![Afbeelding van Azure DEP-token](./media/07-azure-dep-token.png)
 
-De optie **Synchroniseren** in de klassieke console is echter verplaatst naar de werkstroom voor serienummerbeheer, omdat de resultaten van een handmatige synchronisatie daar worden weergeven:
+De optie **Synchroniseren** in de klassieke portal is echter verplaatst naar de werkstroom voor serienummerbeheer, omdat de resultaten van een handmatige synchronisatie daar worden weergeven:
 
 ![Afbeelding van Azure DEP-synchronisatie](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>Waar zijn de vooraf geregistreerde bedrijfsapparaten gebleven?
 ### <a name="by-ios-serial-number"></a>Op iOS-serienummer
-In de klassieke console kunt u iOS-apparaten inschrijven via het Apple Device Enrollment Program (DEP) en het hulpprogramma Apple Configurator. In beide methoden is het vooraf inschrijven van apparaten op serienummer mogelijk en worden speciale profielen voor de inschrijving van bedrijfsapparaten gebruikt. Voorafgaand aan de inschrijving kunt u de toewijzing van het inschrijvingsprofiel beheren via de apparaatgroep **Vooraf geregistreerde bedrijfsapparaten op iOS-serienummer**:
+In de klassieke portal kunt u iOS-apparaten inschrijven via het Apple Device Enrollment Program (DEP) en het hulpprogramma Apple Configurator. In beide methoden is het vooraf inschrijven van apparaten op serienummer mogelijk en worden speciale profielen voor de inschrijving van bedrijfsapparaten gebruikt. Voorafgaand aan de inschrijving kunt u de toewijzing van het inschrijvingsprofiel beheren via de apparaatgroep **Vooraf geregistreerde bedrijfsapparaten op iOS-serienummer**:
 
 ![Afbeelding van Apple-serienummers in klassieke console](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Deze lijst bevat serienummers voor inschrijving met zowel Apple DEP als Configur
 
 ### <a name="by-imei-all-platforms"></a>Op IMEI (alle platformen)
 
-In de klassieke console kunt u vooraf een lijst maken met de IMEI-nummers van apparaten, om ze te markeren als bedrijfsapparaten voor de inschrijving bij Intune:
+In de klassieke portal kunt u vooraf een lijst maken met de IMEI-nummers van apparaten, om ze te markeren als bedrijfsapparaten voor de inschrijving bij Intune:
 
 ![Afbeelding van klassieke lijst met IMEI-nummers](./media/12-classic-corp-imei.png)
 
-In de Azure-console moet u dezelfde IMEI uploaden naar de lijst Bedrijfsapparaat-id’s in een kommagescheiden CSV-bestand. In de nieuwe portal kunt u IMEI-nummers niet handmatig invoeren:
+In de Azure-portal moet u dezelfde IMEI uploaden naar de lijst Bedrijfsapparaat-id’s in een kommagescheiden CSV-bestand. In de nieuwe portal kunt u IMEI-nummers niet handmatig invoeren:
 
 ![Afbeelding van lijst met IMEI-nummers in Azure](./media/13-azure-corp-imei.png)
 
 Intune in de Azure-portal is voorbereid op toekomstige identificatienummers anders dan IMEI, maar momenteel kunnen in vooraf opgestelde lijsten alleen IMEI-nummers worden gebruikt.
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>Waar zijn de inschrijvingsprofielen voor bedrijfsapparaten gebleven?
-Als u iOS-apparaten wilt inschrijven via het Apple Device Enrollment Program of met het hulpprogramma Apple Configurator, moet u een inschrijvingsprofiel voor bedrijfsapparaten opgeven om aan het apparaat toe te wijzen. In de klassieke console verliep het maken en beheren van deze profielen via een enkele lijst:
+Als u iOS-apparaten wilt inschrijven via het Apple Device Enrollment Program of met het hulpprogramma Apple Configurator, moet u een inschrijvingsprofiel voor bedrijfsapparaten opgeven om aan het apparaat toe te wijzen. In de klassieke portal verliep het maken en beheren van deze profielen via een enkele lijst:
 
 ![Afbeelding van profielen voor apparaatinschrijving in klassieke console](./media/14-classic-corp-profiles.png)
 

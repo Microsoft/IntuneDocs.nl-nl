@@ -1,6 +1,6 @@
 ---
 title: Een Apple MDM-pushcertificaat ophalen
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: In dit onderwerp leest u welke stappen u moet uitvoeren om een Apple MDM-pushcertificaat op te halen voor het beheren van iOS-apparaten met Intune.
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a100b436ecf257c1e3886c23f15fa967fb877b7c
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 804ea185cf48b6781174b888436211a6d70823ca
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Een Apple MDM-pushcertificaat ophalen
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/02/2017
 Intune maakt Mobile Device Management (MDM) mogelijk voor iPads, iPhones en Mac-computers en geeft gebruikers toegang tot zakelijke e-mail en apps. Een MDM-pushcertificaat is vereist zodat Intune iOS- en Mac-apparaten kan beheren. Nadat u het certificaat aan Intune hebt toegevoegd, kunnen uw gebruikers de bedrijfsportal-app installeren om hun apparaten in te schrijven. U kunt bijvoorbeeld ook beheer voor iOS-apparaten in bedrijfseigendom instellen met het Apple Device Enrollment Program of apparaten inschrijven met Apple Configurator. Raadpleeg [Kiezen hoe u iOS-apparaten registreert](enrollment-method-choose-ios.md) voor meer informatie over inschrijvingsopties.
 
 ## <a name="steps-to-get-your-certificate"></a>Stappen voor het ophalen van het certificaat
-Kies in de Azure Intune-portal **Apparaatinschrijving** > **Apple-inschrijving** **Apple MDM-pushcertificaat** en volg de volgende stappen in Azure Portal.
+Kies in de Azure-portal **Apparaatinschrijving** > **Apple-inschrijving** **Apple MDM-pushcertificaat** en volg de volgende stappen in Azure Portal.
 
 **Stap 1. De aanvraag voor Intune-certificaatondertekening downloaden die is vereist voor het maken van een Apple MDM-pushcertificaat.**<br>
 Selecteer **Uw CSR downloaden** om het aanvraagbestand te downloaden en lokaal op te slaan. Het bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
@@ -55,11 +55,11 @@ Het certificaat wordt gekoppeld aan de Apple-id waarmee het wordt gemaakt. Verle
 > [!NOTE]
 > Het certificaat wordt gekoppeld aan de Apple-id waarmee het wordt gemaakt. Gebruik als aanbevolen procedure een zakelijke Apple-id voor beheertaken. Gebruik nooit een persoonlijke Apple-id.
 
-1. Kies **Apparaatinschrijving** > **Apple-inschrijving** in de Intune-portal en kies vervolgens **Apple MDM-pushcertificaat**.
+1. Kies **Apparaatinschrijving** > **Apple-inschrijving** in de Azure-portal en kies vervolgens **Apple MDM-pushcertificaat**.
 2. Kies **Uw CSR downloaden** om het aanvraagbestand te downloaden en lokaal op te slaan. Het bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
 3. Zoek het certificaat dat u wilt verlengen en selecteer **Verlengen**.
 4. Via het scherm **Renew Push Certificate** voegt u notities toe om het certificaat later te kunnen identificeren. Selecteer **Bestand kiezen** om naar het gedownloade aanvraagbestand te bladeren en kies **Uploaden**.
 5. Selecteer in het scherm **Bevestiging** de optie **Downloaden** en sla het PEM-bestand lokaal op.
-6. Selecteer in de Azure Intune-portal het bladerpictogram **Apple MDM-pushcertificaat**, selecteer het in Apple gedownloade PEM-bestand en kies **Uploaden**.
+6. Selecteer in de Azure-portal het bladerpictogram **Apple MDM-pushcertificaat**, selecteer het in Apple gedownloade PEM-bestand en kies **Uploaden**.
 
 Uw Apple MDM-pushcertificaat blijkt **actief** en verloopt over 365 dagen.
