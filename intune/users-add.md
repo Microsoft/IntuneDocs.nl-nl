@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7873481ccd33d2eaf4ec1a4c7fadf30c61b8d42e
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 2384bede0ef4ed68072d1884d235e091cc625fa5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen
 
@@ -29,7 +29,7 @@ In dit onderwerp wordt aan beheerders uitgelegd hoe ze gebruikers kunnen toevoeg
 Als beheerder kunt u gebruikers rechtstreeks toevoegen of gebruikers synchroniseren via uw on-premises Active Directory. Zodra gebruikers zijn toegevoegd, kunnen ze apparaten registreren en hebben ze toegang tot bedrijfsresources. U kunt gebruikers ook aanvullende machtigingen geven, zoals de machtigingen *globale beheerder* en *servicebeheerder*.
 
 ## <a name="add-users-to-intune"></a>Gebruikers toevoegen aan Intune
-U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via de [Office 365-portal](https://www.office.com/signin) of de [Azure Intune-portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Een beheerder kan gebruikersaccounts bewerken om Intune-licenties toe te wijzen. U kunt licenties toewijzen in de Office 365-portal of in de Intune Azure-portal. Zie [Gebruikers afzonderlijk of bulksgewijs toevoegen aan de Office 365-portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) voor meer informatie over het gebruik van de Office 365-portal.
+U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via de [Office 365-portal](https://www.office.com/signin) of de [Azure-portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Een beheerder kan gebruikersaccounts bewerken om Intune-licenties toe te wijzen. U kunt licenties toewijzen in de Office 365-portal of in de Intune Azure-portal. Zie [Gebruikers afzonderlijk of bulksgewijs toevoegen aan de Office 365-portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) voor meer informatie over het gebruik van de Office 365-portal.
 
 ### <a name="add-intune-users-in-the-office-365-admin-center"></a>Intune-gebruikers toevoegen in het Office 365-beheercentrum
 1. Meld u aan bij de [Office 365-portal](https://www.office.com/signin) met een account voor globale beheerders of beheerders voor gebruikerstoegang.
@@ -52,7 +52,7 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via de [Office 36
 5. Wijs een Intune-licentie toe. Selecteer **Productlicenties** en kies de productlicentie. Er is een licentie voor Intune vereist.
 6. Kies **Toevoegen** om de nieuwe gebruiker te maken.
 
-### <a name="add-intune-users-in-the-azure-intune-portal"></a>Intune-gebruikers toevoegen in de Azure Intune-portal
+### <a name="add-intune-users-in-the-azure-portal"></a>Intune-gebruikers toevoegen in de Azure-portal
 1. Meld u aan bij [Azure Portal](https://portal.azure.com) en ga naar **Meer services** > **Bewaking en beheer** > **Intune**. U kunt ook *zoeken naar resources* voor **Intune**.
 2. Selecteer **Gebruikers**.
 3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
@@ -84,16 +84,16 @@ Nadat u gebruikers aan uw Intune-abonnement hebt toegevoegd, kunt u het beste en
 ![Afbeelding van scherm in Office 365-portal voor het toewijzen van rollen.](./media/office-assign-roles.png)
 6. Kies **Opslaan**.
 
-### <a name="give-admin-permissions-in-the-intune-portal"></a>Beheerdersmachtigingen verlenen in de Intune-beheerportal
-1. Meld u aan bij de [Intune-portal](https://www.office.com/signin) met een account voor globale beheerders.
-2. Kies in de Intune-portal de optie **Gebruiker** en kies vervolgens de gebruiker die u beheerdersmachtigingen wilt verlenen.
+### <a name="give-admin-permissions-in-the-azure-portal"></a>Beheerdersmachtigingen verlenen in de Azure-portal
+1. Meld u aan bij de [Azure-portal](https://www.office.com/signin) met een account voor globale beheerders.
+2. Kies in de Azure-portal de optie **Gebruiker** en kies vervolgens de gebruiker die u beheerdersmachtigingen wilt verlenen.
 3. Selecteer **Directory-rol** en vervolgens de machtiging.
   ![Schermopname](./media/add-intune-directory-role.png)
 4. Kies **Opslaan**.
 
 ### <a name="types-of-administrators"></a>Typen beheerders
 
-Wijs gebruikers een of meer beheerdersmachtigingen toe. Deze machtigingen bepalen het beheerbereik voor gebruikers en de taken die ze kunnen beheren. De beheerdersmachtigingen voor de verschillende Microsoft-cloudservices komen overeen, hoewel bepaalde machtigingen mogelijk niet worden ondersteund door sommige services. In zowel de Intune-portal als de Office 365-portal worden beperkte beheerdersrollen vermeld die niet door Intune worden gebruikt. Intune-beheerdersmachtigingen bevatten de volgende opties:
+Wijs gebruikers een of meer beheerdersmachtigingen toe. Deze machtigingen bepalen het beheerbereik voor gebruikers en de taken die ze kunnen beheren. De beheerdersmachtigingen voor de verschillende Microsoft-cloudservices komen overeen, hoewel bepaalde machtigingen mogelijk niet worden ondersteund door sommige services. In zowel de Azure-portal als de Office 365-portal worden beperkte beheerdersrollen vermeld die niet door Intune worden gebruikt. Intune-beheerdersmachtigingen bevatten de volgende opties:
 
 - **Globale beheerder**: (Office 365 en Intune) heeft toegang tot alle beheerfuncties in Intune. De persoon die zich voor Intune aanmeldt, wordt standaard een globale beheerder. Globale beheerders zijn de enige beheerders die andere beheerdersrollen kunnen toewijzen. U kunt meer dan één globale beheerder hebben in uw organisatie. Als best practice is het raadzaam dat slechts een paar mensen in uw bedrijf deze rol vervullen om het risico voor uw bedrijf te reduceren.
 - **Wachtwoordbeheerder**: (Office 365 en Intune) stelt wachtwoorden opnieuw in, beheert serviceaanvragen en bewaakt de servicestatus. Wachtwoordbeheerders zijn beperkt tot het opnieuw instellen van wachtwoorden voor gebruikers.
@@ -102,9 +102,9 @@ Wijs gebruikers een of meer beheerdersmachtigingen toe. Deze machtigingen bepale
 - **Beheerder**: (Office 365 en Intune) stelt wachtwoorden opnieuw in, bewaakt de servicestatus, voegt gebruikersaccounts toe en verwijdert deze, en beheert serviceaanvragen. De beheerder van de gebruikerstoegang kan geen globale beheerder verwijderen, andere beheerdersrollen maken of wachtwoorden opnieuw instellen voor andere beheerders.
 - **Intune-servicebeheerder**: beschikt over alle machtigingen voor globale beheerders van Intune, behalve machtigingen voor het aanmaken van beheerders met opties voor **directory-rollen**.
 
-Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, heeft de rol van globale beheerder. Het is een best practice om de rol van globale beheerder niet te gebruiken voor dagelijkse beheertaken. Een beheerder heeft geen licentie voor Intune nodig om toegang tot de Intune-portal te krijgen. 
+Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, heeft de rol van globale beheerder. Het is een best practice om de rol van globale beheerder niet te gebruiken voor dagelijkse beheertaken. Een beheerder heeft geen licentie voor Azure nodig om toegang tot de Intune-portal te krijgen. 
 
-Voor toegang tot de Office 365-portal moet **Toegestane gebruikers aanmelden** zijn ingesteld voor uw account. Ga in de Intune-beheerportal naar **Profiel** en stel **Aanmelden blokkeren** in op **Nee** om toegang te verlenen. Deze status is niet hetzelfde als wanneer u een licentie voor het abonnement hebt. Standaard hebben alle gebruikersaccounts de status **Toegestaan**. Gebruikers zonder beheerdersmachtigingen kunnen de Office 365-portal gebruiken om het Intune wachtwoorden opnieuw instellen.
+Voor toegang tot de Office 365-portal moet **Toegestane gebruikers aanmelden** zijn ingesteld voor uw account. Ga in de Azure-portal naar **Profiel** en stel **Aanmelden blokkeren** in op **Nee** om toegang te verlenen. Deze status is niet hetzelfde als wanneer u een licentie voor het abonnement hebt. Standaard hebben alle gebruikersaccounts de status **Toegestaan**. Gebruikers zonder beheerdersmachtigingen kunnen de Office 365-portal gebruiken om het Intune wachtwoorden opnieuw instellen.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory synchroniseren en gebruikers toevoegen aan Intune
 U kunt adreslijstsynchronisatie configureren voor het importeren van gebruikersaccounts uit de on-premises Active Directory in Microsoft Azure Active Directory (Azure AD) die Intune-gebruikers bevat. Het koppelen van uw on-premises Active Directory-service aan alle Azure Active Directory-services zorgt ervoor dat het beheer van gebruikersidentiteiten veel eenvoudiger wordt. U kunt ook eenmalige aanmelding configureren om de verificatie vertrouwd en eenvoudig te maken voor uw gebruikers. Door dezelfde [Azure AD-tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) te koppelen met meerdere services, zijn de gebruikersaccounts die u eerder hebt gesynchroniseerd, beschikbaar voor alle cloudservices.

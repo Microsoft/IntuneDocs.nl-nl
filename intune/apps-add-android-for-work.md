@@ -1,6 +1,6 @@
 ---
 title: Apps aan Android for Work-apparaten toewijzen
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Dit onderwerp bevat procedures voor het synchroniseren en toewijzen van apps op Android for Work-apparaten uit de Google Play for Work-store.
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Apps aan Android for Work-apparaten toewijzen met Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 U wijst apps aan Android for Work-apparaten op een andere manier toe dan aan standaard-Android-apparaten. Alle apps die u installeert voor Android for Work, zijn afkomstig uit de Google Play for Work-store. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed.
-De app wordt vervolgens weergegeven in het knooppunt **Apps met licentie** van de Intune-portal. Hier kunt u de toewijzing van de app op dezelfde manier beheren als toewijzingen van andere apps.
+De app wordt vervolgens weergegeven in het knooppunt **Apps met licentie** van de Azure-portal. Hier kunt u de toewijzing van de app op dezelfde manier beheren als toewijzingen van andere apps.
 
 Als u uw eigen LOB-apps (Line-Of-Business) hebt gemaakt, kunt u deze als volgt toewijzen:
 - Meld u aan voor een Google-ontwikkelaarsaccount, zodat u apps kunt publiceren naar een privégebied in de Google Play-store.
@@ -34,7 +34,7 @@ Als u uw eigen LOB-apps (Line-Of-Business) hebt gemaakt, kunt u deze als volgt t
 
 ## <a name="before-you-start"></a>Voordat u begint
 
-Zorg ervoor dat u Intune en Android for Work hebt geconfigureerd voor samenwerking in de workload **Apparaatinschrijving** van de Intune-portal.
+Zorg ervoor dat u Intune en Android for Work hebt geconfigureerd voor samenwerking in de workload **Apparaatinschrijving** van de Azure-portal.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Een app uit de Google Play for Work-store synchroniseren
 

@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | Matrix van tekenreeksen | Hiermee worden de URL-schem
 > Als uw app wordt gepubliceerd naar de App Store `MAMPolicyRequired` moet deze worden ingesteld op "Nee", volgens de App Store-standaarden.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Op MAM gerichte configuratie inschakelen voor iOS-toepassingen
-Via een op MAM gerichte configuratie kan een app configuratiegegevens ontvangen via de Intune App SDK. De indeling en varianten van deze gegevens moeten door de eigenaar/ontwikkelaar van de toepassing worden gedefinieerd en gecommuniceerd aan de klanten van Intune. Intune-beheerders kunnen configuratiegegevens gericht implementeren via de Intune-console van Azure. Vanaf de Intune App SDK voor iOS (versie 7.0.1) kunnen apps die deelnemen aan op MAM gerichte configuratie, op MAM gerichte configuratiegegevens ontvangen via de MAM-service. De configuratiegegevens van de toepassing worden via onze MAM-service direct naar de app gepusht en niet via het MDM-kanaal. De Intune App SDK biedt een klasse voor toegang tot gegevens die uit deze consoles worden opgehaald. Houd rekening met de volgende vereisten: <br>
+Via een op MAM gerichte configuratie kan een app configuratiegegevens ontvangen via de Intune App SDK. De indeling en varianten van deze gegevens moeten door de eigenaar/ontwikkelaar van de toepassing worden gedefinieerd en gecommuniceerd aan de klanten van Intune. Intune-beheerders kunnen configuratiegegevens gericht implementeren via de Intune-portal van Azure. Vanaf de Intune App SDK voor iOS (versie 7.0.1) kunnen apps die deelnemen aan op MAM gerichte configuratie, op MAM gerichte configuratiegegevens ontvangen via de MAM-service. De configuratiegegevens van de toepassing worden via onze MAM-service direct naar de app gepusht en niet via het MDM-kanaal. De Intune App SDK biedt een klasse voor toegang tot gegevens die uit deze consoles worden opgehaald. Houd rekening met de volgende vereisten: <br>
 * De app moet worden geregistreerd bij MAM-WE voordat u toegang krijgt tot de gebruikersinterface van op MAM gerichte configuratie. Meer informatie over MAM-WE vindt u in de paragraaf [App-beveiligingsbeleid zonder apparaatrinschrijving in de ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
 * Voeg ```IntuneMAMAppConfigManager.h``` toe aan het bronbestand van uw app.
 * Verstuur een aanroep naar ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` om het AppConfig-object op te halen.

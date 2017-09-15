@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5da29dceb5308eab72e5b24e220586aa739982ea
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die u hebt aangeschaft via een volume-aankoopprogramma
 
@@ -30,7 +30,7 @@ Met Microsoft Intune kunt u nu apps beheren die u via een dergelijk programma he
 
 > [!Important]
 > Op dit moment wijst Intune iOS VPP-applicenties (Volume Purchase Program voor bedrijven) toe aan gebruikers en niet aan apparaten. Als gevolg hiervan moeten gebruikers het wachtwoord van hun Apple ID invoeren om de app te installeren.
-> Het Apple Volume Purchase Program voor onderwijs wordt niet ondersteund in deze release.
+> Het Apple Volume Purchase Program voor onderwijs en B2B-apps worden niet ondersteund in deze release.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Volume-purchased apps voor iOS-apparaten beheren
 U koopt meerdere licenties voor iOS-apps via het [Apple Volume Purchase Program voor bedrijven](http://www.apple.com/business/vpp/). Hiervoor moet u een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune.  U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps.

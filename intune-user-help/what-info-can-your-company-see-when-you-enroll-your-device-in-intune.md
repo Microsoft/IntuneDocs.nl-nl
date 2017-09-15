@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf in Intune?
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf?
 
-Wanneer u een apparaat in beheer inschrijft, geeft u de IT-afdeling van uw bedrijf machtiging voor toegang tot bepaalde informatie op het apparaat om de zakelijke gegevens op het apparaat te beschermen.
+Wanneer u een apparaat in beheer inschrijft, geeft u uw bedrijf toestemming om bepaalde informatie op het apparaat te zien om de zakelijke gegevens op het apparaat te beschermen.
 
-**Wat de IT-afdeling niet kan zien**
+**Wat uw bedrijf nooit kan zien**
 
 - Oproepen en browsegeschiedenis
--   Locatie
-- Persoonlijke e-mails
-- SMS-berichten
+- E-mail- en sms-berichten
 - Contactpersonen
--   Wachtwoorden van uw persoonlijke accounts
-- Agenda-items
+- Kalender
+-   Wachtwoorden
 - Foto's, met inbegrip van wat er in de app Foto's of het camera-album staat
 
-**Wat de IT-afdeling kan zien**
+**Wat uw bedrijf altijd kan zien**
 
--   Model
--   Serienummer
--   Versie van besturingssysteem
--   App-namen
--   Eigenaar
--   Apparaatnaam
--   De fabrikant (voor apparaten die niet door Apple zijn gemaakt)
--   Telefoonnummer (voor zakelijke apparaten het hele nummer. Voor persoonlijke apparaten alleen de laatste vier cijfers.)
+- Apparaatmodel, zoals iPhone 7
+- Fabrikant, zoals Microsoft
+- Besturingssysteem, zoals Android 7.1
+- App-namen, zoals Microsoft Word
+- Eigenaar van het apparaat
+- Apparaatnaam
+- Serienummer
+
+**Wat uw bedrijf mogelijk kan zien**
+
+-  Telefoonnummer: op apparaten die eigendom zijn van het **bedrijf** kan uw volledige telefoonnummer worden gezien. Van **persoonlijke** apparaten zijn alleen de laatste vier cijfers van uw telefoonnummer zichtbaar voor uw bedrijf. U kunt het **eigendomstype** van elk apparaat zien door de pagina **Apparaatdetails** voor het apparaat te openen. 
+-  Locatie: uw bedrijf kan nooit de locatie van het apparaat zien, behalve als u een iOS-apparaat hebt dat onder controle staat en dat is kwijtgeraakt. [Hoe weet ik dat?](https://go.microsoft.com/fwlink/?linkid=853816)

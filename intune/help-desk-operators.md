@@ -1,6 +1,6 @@
 ---
 title: Helpdesk voor portal voor probleemoplossing
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Medewerkers van de helpdesk gebruiken de Portal voor problemen oplossen voor het oplossen van technische problemen van gebruikers
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Gebruikers helpen met behulp van de portal voor probleemoplossing
 
@@ -35,14 +35,14 @@ Als een gebruiker bijvoorbeeld contact opneemt met de ondersteuning vanwege een 
 -   Fout tijdens installatie van app
 
 ## <a name="add-help-desk-operators"></a>Helpdeskmedewerkers toevoegen
-Als Intune-beheerder kunt u de rol Helpdeskmedewerker toewijzen aan een gebruikersgroep. leden van die groep kunnen op de beheerportal problemen van gebruikers oplossen. Elke helpdeskmedewerker moet een licentie voor Intune hebben om toegang te krijgen tot de Intune-portal. Lees hier meer over het [toewijzen van Intune-licenties](licenses-assign.md).
+Als Intune-beheerder kunt u de rol Helpdeskmedewerker toewijzen aan een gebruikersgroep. Leden van die groep kunnen in de Axure-portal problemen van gebruikers oplossen. Elke helpdeskmedewerker moet een licentie voor Intune hebben om toegang te krijgen tot de Azure-portal. Lees hier meer over het [toewijzen van Intune-licenties](licenses-assign.md).
 
 Ga als volgt te werk als u helpdeskgebruikers wilt toevoegen:
 1. [Voeg indien nodig gebruikers aan Intune toe](users-add.md).
 2. [Maak een helpdeskgroep](groups-add.md) en voeg gebruikers aan de groep toe.
 3. [Wijs de RBAC-rol Helpdeskmedewerker toe](role-based-access-control.md#built-in-roles).
 
-  ![Schermafbeelding van de Intune-portal met de Intune-rollen gemarkeerd en een lijst van ingebouwde rollen, inclusief de rol Helpdeskmedewerker](./media/help-desk-user-add.png) U kunt ook een [aangepaste rol maken](role-based-access-control.md#custom-roles) die u verder kunt aanpassen om helpdeskmedewerkers toegang te geven.  Helpdeskmedewerkers moeten over de volgende machtigingen beschikken om gebruikers te ondersteunen bij probleemoplossing:
+  ![Schermafbeelding van de Azure-portal met gemarkeerde Intune-rollen en een lijst van ingebouwde rollen, inclusief de rol Helpdeskmedewerker](./media/help-desk-user-add.png) U kunt ook een [aangepaste rol maken](role-based-access-control.md#custom-roles) die u verder kunt aanpassen om helpdeskmedewerkers toegang te geven.  Helpdeskmedewerkers moeten over de volgende machtigingen beschikken om gebruikers te ondersteunen bij probleemoplossing:
     - MobileApps: Lezen
     - ManagedApps: lezen
     - ManagedDevices: Lezen

@@ -1,6 +1,6 @@
 ---
 title: SCEP-certificaten configureren en beheren met Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens Intune SCEP-certificaatprofielen kunt maken en toewijzen.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +36,7 @@ In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens
 -  **NDES-Server**: op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen.
 De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich niet op dezelfde server als de CA bevinden. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune-certificaatconnector**: u kunt de Intune-portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de computer waarop u de certificaatconnector wilt installeren. 
+-  **Microsoft Intune-certificaatconnector**: u kunt de Azure-portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de computer waarop u de certificaatconnector wilt installeren. 
 -  **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger gebruiken als webtoepassingsproxyserver (WAP-server). Deze configuratie:
     -  Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
     -  Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.

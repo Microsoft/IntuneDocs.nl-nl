@@ -1,6 +1,6 @@
 ---
 title: Skycure Mobile Threat Defense inschakelen in Intune
-description: Schakel in de klassieke Intune-console Skycure Mobile Threat Defense in.
+description: Schakel in de klassieke Intune-portal Skycure Mobile Threat Defense in.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Skycure Mobile Threat Defense inschakelen in Intune
 
@@ -28,11 +28,11 @@ Als u de Skycure Mobile Threat Defense wilt inschakelen, moet u de [Intune-conne
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>De verbinding voor Skycure MTD inschakelen in Intune
 
-1.  Ga naar de [klassieke Intune-console](https://manage.microsoft.com/) en voer vervolgens uw referenties in.
+1.  Ga naar de [klassieke Intune-portal](https://manage.microsoft.com/) en voer vervolgens uw referenties in.
 
 2.  Kies **Admin** &gt; **Integratie van een service van derden** en kies vervolgens **Skycure-status** en schakel **Synchronisatie met MTD** in met behulp van de wisselknop.
 
-    ![De wisselknop voor het inschakelen van Skycure in de klassieke Intune-console](../media/mtp/enable-skycure-1.png)
+    ![De wisselknop voor het inschakelen van Skycure in de klassieke Intune-portal](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > U moet de Skycure-apps configureren voordat u de regels voor het nalevingsbeleid maakt en de voorwaardelijke toegang configureert. Dit zorgt ervoor dat de app beschikbaar is voor eindgebruikers en moet worden geïnstalleerd voordat ze toegang kunnen krijgen tot e-mail of andere bedrijfsbronnen.

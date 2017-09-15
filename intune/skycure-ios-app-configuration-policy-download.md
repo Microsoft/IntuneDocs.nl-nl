@@ -1,6 +1,6 @@
 ---
 title: Het configuratiebeleid voor de iOS-app voor Skycure downloaden voor gebruik met Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Download het configuratiebeleid voor de iOS-app voor Skycure voor gebruik met Intune.
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Het configuratiebeleid voor de iOS-app voor Skycure downloaden
 
@@ -41,9 +41,9 @@ U moet zich aanmelden bij de Skycure-beheerconsole en de volgende stappen uitvoe
     > [!IMPORTANT] 
     > De gebruikersnaam voor de Skycure-beheerder is een e-mailaccount dat een geldig gebruikersaccount moet zijn in Azure Active Directory. Als dat niet het geval is, mislukt de aanmelding. Skycure maakt gebruik van Azure Active Directory om deze gebruikersnaam voor de beheerder te verifiëren door middel van eenmalige aanmelding.
 
-3.  Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer**  &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
+3.  Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer ** &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
 
-4.  Klik op de koppeling voor de **installatiebestanden voor de integratie** en sla het gegenereerde bestand \*.zip op. Het ZIP-bestand bevat het bestand **skycure\_configuration.plist**, waarmee het configuratiebeleid voor de iOS-app wordt gemaakt in de klassieke Intune-console.
+4.  Klik op de koppeling voor de **installatiebestanden voor de integratie** en sla het gegenereerde bestand \*.zip op. Het ZIP-bestand bevat het bestand **skycure\_configuration.plist**, waarmee het configuratiebeleid voor de iOS-app wordt gemaakt in de klassieke Intune-portal.
 
 ![Installatiebestanden voor de integratie van Skycure](./media/skycure-ios-app-2.png)
 

@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -456,8 +456,9 @@ Hieronder volgen enkele algemene manieren waarop een app kan worden geconfiguree
     |--|--|
     | Instantie | Gewenste omgeving waarin AAD-accounts zijn geconfigureerd. |
     | ClientID | De ClientID van de app (gegenereerd door Azure AD toen de app is geregistreerd) |
-    | NonBrokerRedirectURI | Een geldige omleidings-URI voor de app of standaard `urn:ietf:wg:oauth:2.0:oob`. <br><br> Zorg ervoor dat u de waarde configureert als een acceptabele omleidings-URI voor de ClientID van uw app.
-    | SkipBroker | False |
+    | NonBrokerRedirectURI | Een geldige omleidings-URI voor de app of `urn:ietf:wg:oauth:2.0:oob` 
+    . <br><br> Zorg ervoor dat u de waarde configureert als een acceptabele omleidings-URI voor de ClientID van uw app.
+   | SkipBroker | False |
 
 
 3. **App integreert ADAL, maar biedt geen ondersteuning voor brokered verificatie/apparaatbrede SSP:**
@@ -665,7 +666,7 @@ android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackup
     ```
 
 
-2. **[Optioneel]**  Als u een optionele aangepaste BackupAgent hebt geïmplementeerd, moet u ervoor zorgen dat MAMBackupAgent of MAMBackupAgentHelper gebruikt. Zie de volgende secties. Overweeg over te schakelen naar het gebruik van de **MAMDefaultFullBackupAgent** van Intune (zoals beschreven in stap 1). Hiermee kunt u eenvoudig back-ups maken op Android M en later.
+2. **[Optioneel] ** Als u een optionele aangepaste BackupAgent hebt geïmplementeerd, moet u ervoor zorgen dat MAMBackupAgent of MAMBackupAgentHelper gebruikt. Zie de volgende secties. Overweeg over te schakelen naar het gebruik van de **MAMDefaultFullBackupAgent** van Intune (zoals beschreven in stap 1). Hiermee kunt u eenvoudig back-ups maken op Android M en later.
 
 3. Als u beslist welk type volledige back-up uw app moet ontvangen (niet gefilterd, gefilterd of geen), moet u het kenmerk `android:fullBackupContent` instellen op waar, onwaar of een XML-bron in uw app.
 
@@ -749,7 +750,7 @@ De handleiding voor het maken van gegevensback-ups bevat een algemeen algoritme 
 ### <a name="overview"></a>Overzicht
 De Intune App SDK past beleid standaard op de hele app toe. Meerdere identiteiten is een optionele beveiligingsfunctie voor Intune-apps die kan worden ingeschakeld zodat beleid per identiteitsniveau kan worden toegepast. Hiervoor wordt aanzienlijk meer deelname van een app vereist dan bij andere app-beveiligingsfuncties.
 
-De app *moet* aan de SDK melden wanneer de actieve identiteit zal worden gewijzigd. In sommige gevallen meldt de SDK ook aan de app wanneer er een identiteitswijziging is vereist. In de meeste gevallen kan MAM echter niet weten welke gegevens worden weergegeven in de gebruikersinterface of op enig moment in een thread worden gebruikt, en wordt ervan uitgegaan dat de app de juiste identiteit instelt om gegevensverlies te voorkomen. In de volgende secties worden een aantal specifieke scenario's genoemd die actie door de app vereisen.
+De app *moet* aan de SDK melden wanneer de actieve identiteit zal worden gewijzigd. In sommige gevallen meldt de SDK ook aan de app wanneer er een identiteitswijziging is vereist. In de meeste gevallen kan MAM echter niet weten welke gegevens worden weergegeven in de gebruikersinterface of op enig moment in een thread worden gebruikt, en wordt ervan uitgegaan dat de app de juiste identiteit instelt om gegevensverlies te voorkomen. In de volgende secties worden een aantal specifieke scenario’s genoemd die actie door de app vereisen.
 
 > [!NOTE]
 >  Als de app niet op de juiste manier reageert, kan dit gegevensverlies of andere beveiligingsproblemen tot gevolg hebben.
@@ -779,7 +780,7 @@ Ontwikkelaars kunnen de identiteit van de app-gebruiker instellen op de volgende
   2. Contextniveau (in het algemeen activiteit)
   3. Procesniveau
 
-Een identiteit die is ingesteld op threadniveau, vervangt een identiteit die is ingesteld op contextniveau, die weer een identiteit vervangt die is ingesteld op procesniveau. Een identiteit die is ingesteld op contextniveau wordt alleen gebruikt in de juiste gekoppelde scenario's. Bestands-I/O-bewerkingen bijvoorbeeld hebben geen gekoppelde context. Meestal stellen apps de contextidentiteit in voor een activiteit. Een app *mag geen* gegevens weergeven voor een beheerde identiteit, tenzij de identiteit van de activiteit is ingesteld op dezelfde identiteit. In het algemeen is de identiteit op procesniveau alleen nuttig als de app voor alle threads werkt met een enkele gebruiker tegelijk. Veel apps hoeven hiervan geen gebruik te maken.
+Een identiteit die is ingesteld op threadniveau, vervangt een identiteit die is ingesteld op contextniveau, die weer een identiteit vervangt die is ingesteld op procesniveau. Een identiteit die is ingesteld op contextniveau wordt alleen gebruikt in de juiste gekoppelde scenario’s. Bestands-I/O-bewerkingen bijvoorbeeld hebben geen gekoppelde context. Meestal stellen apps de contextidentiteit in voor een activiteit. Een app *mag geen* gegevens weergeven voor een beheerde identiteit, tenzij de identiteit van de activiteit is ingesteld op dezelfde identiteit. In het algemeen is de identiteit op procesniveau alleen nuttig als de app voor alle threads werkt met een enkele gebruiker tegelijk. Veel apps hoeven hiervan geen gebruik te maken.
 
 De volgende methoden in `MAMPolicyManager` kunnen worden gebruikt om de identiteit in te stellen en de eerder ingestelde identiteitswaarden op te halen.
 
@@ -1002,10 +1003,10 @@ Het proces verloopt ongeveer als volgt:
     * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
     * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
     * De app wacht tot een resultaat wordt gerapporteerd voor retouraanroep
-    * Als het gerapporteerde resultaat 'mislukt' is, geeft de app het document niet weer.
+    * Als het gerapporteerde resultaat ‘mislukt’ is, geeft de app het document niet weer.
   * De app opent het bestand en geeft het weer
 
-## <a name="offline-scenarios"></a>Scenario's voor offline
+## <a name="offline-scenarios"></a>Scenario’s voor offline
 
 Het labelen van de bestandsidentiteit is gevoelig voor de offlinemodus. U moet rekening houden met de volgende punten:
 
@@ -1355,7 +1356,7 @@ De Intune SDK onderhoudt het contract geleverd door de Android-API, hoewel er va
 
 ## <a name="telemetry"></a>Telemetrie
 
-De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens van de volgende gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld.
+De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld.
 
 > [!NOTE]
 > Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 

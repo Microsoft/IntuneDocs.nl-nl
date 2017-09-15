@@ -1,6 +1,6 @@
 ---
-title: Bekende problemen in Microsoft Intune op Azure
-titleSuffix: Intune on Azure
+title: Bekende problemen in Microsoft Intune in de Azure-portal
+titlesuffix: Azure portal
 description: Meer informatie over bekende problemen in Intune"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -37,7 +37,7 @@ Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapp
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Groepen die tijdens de migratie door Intune zijn gemaakt, hebben mogelijk invloed op de functionaliteit van andere Microsoft-producten
 
-Wanneer u van de klassieke Intune-portal naar Azure Portal migreert, ziet u mogelijk een nieuwe groep met de naam **Alle gebruikers - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Deze groep bevat alle gebruikers in uw Azure Active Directory, niet alleen gebruikers met een Intune-licentie. Dit gebruik kan problemen veroorzaken met andere Microsoft-producten, als u verwacht dat sommige bestaande of nieuwe gebruikers van geen enkele groep lid zijn.
+Wanneer u van de Intune-portal naar Azure Portal migreert, ziet u mogelijk een nieuwe groep met de naam **Alle gebruikers - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Deze groep bevat alle gebruikers in uw Azure Active Directory, niet alleen gebruikers met een Intune-licentie. Dit gebruik kan problemen veroorzaken met andere Microsoft-producten, als u verwacht dat sommige bestaande of nieuwe gebruikers van geen enkele groep lid zijn.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Secundaire migratie vereist is voor bepaalde mogelijkheden
 
@@ -49,20 +49,20 @@ Intune-accounts die voor januari 2017 zijn gemaakt, moeten worden gemigreerd voo
 - Apparaatinschrijvingsbeheerder-accounts
 - Apple Volume Purchase Program
 
-Deze mogelijkheden kunnen niet worden beheerd in de klassieke Intune-console (Silverlight) en de Azure-portal. Daarom zal de migratie:
-- Ze in de klassieke console uitschakelen
+Deze mogelijkheden kunnen niet worden beheerd in de Intune-console (Silverlight) en de Azure-portal. Daarom zal de migratie:
+- Ze in de klassieke portal uitschakelen
 - Ze in de Azure-portal inschakelen  
 
-Na 11 september 2017 wordt de migratie van deze functies samengevoegd in de primaire migratie naar Azure. Als uw account al werd gemigreerd om de Azure-portal te gebruiken, zal deze secundaire migratie plaatsvinden tussen 11 en 22 september 2017. De migratie van uw account wordt voltooid op dezelfde dag waarop deze wordt begonnen. De migratie kan tot 6 uur duren vanaf het moment waarop deze functies in de klassieke Intune-console zijn uitgeschakeld.
+Na 11 september 2017 wordt de migratie van deze functies samengevoegd in de primaire migratie naar Azure. Als uw account al werd gemigreerd om de Azure-portal te gebruiken, zal deze secundaire migratie plaatsvinden tussen 11 en 22 september 2017. De migratie van uw account wordt voltooid op dezelfde dag waarop deze wordt begonnen. De migratie kan tot 6 uur duren vanaf het moment waarop deze functies in de klassieke Intune-portal zijn uitgeschakeld.
 
 Als u deze Intune-mogelijkheden nu in Azure Portal beheert, moet u rekening houden met de volgende punten:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>De standaardprofielen voor de registratie van bedrijfsapparaten in Apple DEP worden verwijderd
-Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de klassieke Intune-console (Silverlight), wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in de Azure portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
+Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de Intune-console (Silverlight), wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in de Azure portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-token hersteld met migratie
 
-Als u een token van Apple Device Enrollment Program hebt verwijderd in de klassieke Intune-portal (Silverlight) en geen nieuw token uploadt naar Azure Portal, wordt het oorspronkelijke token tijdens de migratie hersteld in Azure Portal. Als u dit token wilt verwijderen en DEP-inschrijving wilt voorkomen, verwijdert u het token uit Azure Portal.
+Als u een token van Apple Device Enrollment Program hebt verwijderd in de Intune-portal (Silverlight) en geen nieuw token uploadt naar Azure Portal, wordt het oorspronkelijke token tijdens de migratie hersteld in Azure Portal. Als u dit token wilt verwijderen en DEP-inschrijving wilt voorkomen, verwijdert u het token uit Azure Portal.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblades voor gemigreerde beleidsregels werken niet
 
@@ -101,8 +101,9 @@ Zie [macOS-apparaatbeperkingsinstellingen in Microsoft Intune](device-restrictio
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Nalevingsbeleid uit Intune wordt niet weergegeven in de nieuwe console
 
-Nalevingsbeleidsregels die u hebt gemaakt in de klassieke portal, worden wel gemigreerd maar worden niet weergegeven in Azure Portal vanwege de ontwerpwijzigingen in Azure Portal. Nalevingsbeleid dat u in de klassieke Intune-portal hebt gemaakt, wordt nog steeds afgedwongen, maar u moet dit beleid in de klassieke Intune-portal weergeven en bewerken.
-Bovendien is nieuw nalevingsbeleid dat u in Azure Portal maakt, niet zichtbaar in de klassieke Intune-portal.
+Nalevingsbeleidsregels die u hebt gemaakt in de klassieke portal, worden wel gemigreerd maar worden niet weergegeven in Azure Portal vanwege de ontwerpwijzigingen in Azure Portal. Nalevingsbeleid dat u in de klassieke Intune-portal hebt gemaakt, wordt nog steeds afgedwongen, maar u moet dit beleid in de klassieke portal weergeven en bewerken.
+
+Bovendien is nieuw nalevingsbeleid dat u in Azure Portal maakt, niet zichtbaar in de klassieke portal.
 
 Zie [Wat is apparaatcompatibiliteit](device-compliance.md) voor meer informatie.
 

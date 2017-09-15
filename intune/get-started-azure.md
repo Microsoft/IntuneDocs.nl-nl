@@ -1,10 +1,10 @@
 ---
 title: Aan de slag met de Azure-portal
-titleSuffix: Intune on Azure
-description: Meer informatie over het maken en delen van dashboards in Intune via Azure.
+titlesuffix: Azure portal
+description: Meer informatie over het maken en delen van dashboards in Intune in de Azure-portal.
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Aan de slag met Intune in de Azure-portal
 
@@ -52,7 +52,7 @@ Dit is relevanter nadat u meer inhoud, zoals groepen en gebruikers, aan Intune h
 
 ## <a name="using-services"></a>Services gebruiken
 
-Als u Intune of een andere service in Azure opent, wordt deze in een **blade** weergegeven. Een aantal van de eerste werkbelastingen die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een blade op het volledige scherm weergegeven. Als u de werkbelasting selecteert, wordt de bijbehorende blade in het volledige scherm geopend. Andere blades schuiven vanaf de rechterkant van de blade naar buiten als ze worden geopend en worden samengevouwen onder de hoofdblade waarvan ze afkomstig zijn. 
+Als u Intune of een andere service in Azure opent, wordt deze in een **blade** weergegeven. Een aantal van de eerste werkbelastingen die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een blade op het volledige scherm weergegeven. Als u de werkbelasting selecteert, wordt de bijbehorende blade in het volledige scherm geopend. Andere blades schuiven vanaf de rechterkant van de blade naar buiten als ze worden geopend en worden samengevouwen onder de hoofdblade waarvan ze afkomstig zijn.
 
 ## <a name="next-steps"></a>Volgende stappen
 
