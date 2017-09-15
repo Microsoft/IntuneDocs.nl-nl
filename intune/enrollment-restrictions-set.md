@@ -1,6 +1,6 @@
 ---
 title: Registratiebeperkingen instellen in Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Beperk het registreren per platform en geef een registratielimiet voor apparaten op in Intune. "
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Als Intune-beheerder kunt u bepalen welke apparaten kunnen worden geregistreerd voor beheer met Intune. Gebruik de Intune-portal om de volgende beperkingen in te stellen voor apparaatinschrijving:
+Als Intune-beheerder kunt u bepalen welke apparaten kunnen worden geregistreerd voor beheer met Intune. Gebruik de Azure-portal om de volgende beperkingen in te stellen voor apparaatinschrijving:
 
 - Maximum aantal geregistreerde apparaten
 - De ondersteunde apparaatplatformen:
@@ -68,7 +68,7 @@ De standaardinschrijvingsbeperkingen zijn van toepassing op alle gebruikers.
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
-4. Kies in de Intune-portal de optie **Apparaatinschrijving** en kies vervolgens **Inschrijvingsbeperkingen**.
+4. Kies in de Azure-portal de optie **Apparaatinschrijving** en kies vervolgens **Inschrijvingsbeperkingen**.
 5. Kies **Inschrijvingsbeperkingen** > **Apparaatlimietbeperkingen**.
 6. Selecteer **Apparaatlimiet** onder **Alle gebruikers**. Geef het maximum aantal geregistreerde apparaten per gebruiker op.  
 ![Schermopname van de blade Apparaatlimietbeperkingen met beperkingen voor het aantal apparaten.](./media/device-restrictions-limit.png)

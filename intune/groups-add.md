@@ -1,6 +1,6 @@
 ---
 title: Registratiebeperkingen instellen in Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Beperk het registreren per platform en geef een registratielimiet voor apparaten op in Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Groepen toevoegen in Intune
 Intune maakt gebruik van Azure AD-groepen (Active Directory) voor het beheren van apparaten en gebruikers. Als beheerder van Intune kunt u groepen instellen die aansluiten bij de behoeften van uw organisatie. Maak groepen om gebruikers of apparaten in te delen op geografische locatie, afdeling of hardwarekenmerken. Gebruik groepen voor het beheren van taken op schaal. U kunt zo bijvoorbeeld beleidsregels instellen voor een groot aantal gebruikers tegelijk of apps implementeren op een reeks apparaten.
@@ -33,8 +33,8 @@ U kunt de volgende typen groepen toevoegen:
 ## <a name="add-a-new-group"></a>Een nieuwe groep toevoegen
 
 Volg de onderstaande stappen om een nieuwe groep te maken.
-1. Ga in de Intune-portal naar **Groepen** en kies vervolgens **Nieuwe groep** op de blade **Alle groepen**.
-  ![Schermafbeelding van de Intune-portal met de optie Nieuwe groep geselecteerd](./media/groups-add-new.png)
+1. Ga in de Azure-portal naar **Groepen** en kies vervolgens **Nieuwe groep** op de blade **Alle groepen**.
+  ![Schermafbeelding van de Azure-portal met de optie Nieuwe groep geselecteerd](./media/groups-add-new.png)
 2. Geef waarden op voor **Naam** en **Beschrijving** voor de nieuwe groep. Deze eigenschappen worden alleen weergegeven in de beheerportal en zijn niet zichtbaar voor gebruikers.
 
 3. Kies een waarde voor **Type lidmaatschap**:

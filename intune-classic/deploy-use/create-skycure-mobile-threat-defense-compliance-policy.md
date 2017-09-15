@@ -1,6 +1,6 @@
 ---
 title: Het nalevingsbeleid voor Skycure Mobile Threat Defense maken
-description: Maak het nalevingsbeleid voor Skycure Mobile Threat Defense in de klassieke Intune-console.
+description: Maak het nalevingsbeleid voor Skycure Mobile Threat Defense in de klassieke Intune-portal.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Het nalevingsbeleid voor Skycure Mobile Threat Defense maken
 
@@ -38,7 +38,7 @@ Als onderdeel van de configuratie voor Skycure Mobile Threat Defense in de Skycu
 
 ## <a name="to-create-skycure-compliance-policy"></a>Het nalevingsbeleid voor Skycure maken
 
-1.  Ga naar de [klassieke Intune-console](https://manage.microsoft.com/) en voer vervolgens uw referenties in.
+1.  Ga naar de [klassieke Intune-portal](https://manage.microsoft.com/) en voer vervolgens uw referenties in.
 
 2.  Kies **Beleid** &gt; **Nalevingsbeleid**. U kunt een bestaand nalevingsbeleid gebruiken of een nieuw beleid maken.
 

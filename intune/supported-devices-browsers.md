@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Ondersteunde apparaten en browsers
 
@@ -31,7 +31,7 @@ Bekijk de volgende vereisten voordat u Microsoft Intune instelt:
 - [Ondersteunde apparaten en computers](#intune-supported-devices)
 - [Een overzicht van ondersteunde webbrowsers voor Intune](#intune-supported-web-browsers)
 
-Maak uzelf ook vertrouwd met het [bandbreedtegebruik van het Intune-netwerk](network-bandwidth-use.md) ([klassieke console](/intune-classic/get-started/network-bandwidth-use)).
+Maak uzelf ook vertrouwd met het [bandbreedtegebruik van het Intune-netwerk](network-bandwidth-use.md) ([klassieke portal](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-devices"></a>Ondersteunde apparaten voor Intune
 
@@ -43,7 +43,7 @@ Intune kan niet worden gebruikt voor het beheren van Windows Server-besturingssy
 
 ### <a name="windows-pc-software-client"></a>Softwareclient voor Windows-pc's
 
-Een [Intune-softwareclient](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) kan als een alternatieve registratiemethode worden geïmplementeerd en geïnstalleerd op Windows-pc's. Deze functionaliteit is alleen beschikbaar voor de klassieke Intune-console. U kunt de Intune-softwareclient gebruiken om pc's met Windows 7 en hoger te beheren, met uitzondering van Windows 10 Home.
+Een [Intune-softwareclient](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) kan als een alternatieve registratiemethode worden geïmplementeerd en geïnstalleerd op Windows-pc's. Deze functionaliteit is alleen beschikbaar voor de klassieke Intune-portal. U kunt de Intune-softwareclient gebruiken om pc's met Windows 7 en hoger te beheren, met uitzondering van Windows 10 Home.
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 Voor de verschillende beheertaken moet u een van de volgende beheerwebsites gebruiken.
 
 - [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Intune-portal](https://portal.azure.com/)
+- [Azure Portal](https://portal.azure.com/)
 
 De volgende browsers worden ondersteund voor deze portals:
 - Microsoft Edge (meest recente versie)
@@ -67,12 +67,12 @@ De volgende browsers worden ondersteund voor deze portals:
 
 De Intune-functies die alleen kunnen worden gebruikt in combinatie met de klassiek versie van Intune, zoals Intune PC-softwareclient en de integratie met Mobile Threat Defense-partners, zijn alleen beschikbaar in de klassieke Intune-portal (https://manage.microsoft.com). De klassieke Intune-portal vereist ondersteuning van de Silverlight-browser.
 
-De volgende Silverlight-browsers ondersteunen de klassieke Intune-console:
+De volgende Silverlight-browsers ondersteunen de Intune-console:
 - Internet Explorer 10 of hoger
 - Google Chrome (versies voorafgaand aan versie 42)
 - Mozilla Firefox met Silverlight ingeschakeld [Meer informatie](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> Microsoft Edge en mobiele browsers worden niet ondersteund voor de klassiek Intune-console, omdat ze geen ondersteuning bieden voor [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
+> Microsoft Edge en mobiele browsers worden niet ondersteund voor de klassieke Intune-portal, omdat ze geen ondersteuning bieden voor [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
 
 Alleen gebruikers met servicebeheerdersmachtigingen en tenantbeheerders met de rol Algemene beheerder kunnen zich bij deze portal aanmelden. Voor toegang tot de beheerconsole moet uw account een licentie voor het gebruik van Intune en de aanmeldingsstatus **Toegestaan** hebben.

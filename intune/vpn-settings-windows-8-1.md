@@ -1,6 +1,6 @@
 ---
 title: VPN-instellingen voor Windows 8.1-apparaten
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op Windows 8.1-apparaten te configureren.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: de811d4a41aa8bdf9fd016b6ee439e1ed2ef2a92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 8.1-apparaten in Microsoft Intune
 

@@ -1,6 +1,6 @@
 ---
-title: Software-updates beheren
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: Instellingen voor Windows Update voor bedrijven configureren in Intune
+titleSuffix: Azure portal
 description: Meer informatie over het configureren van instellingen van Windows Update voor Bedrijven in Intune voor het beheren van updates voor Windows 10-apparaten."
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -54,20 +54,20 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
     U kunt deze instelling handmatig configureren of u kunt een Intune-apparaatbeperkingsprofiel voor Windows 10 en hoger gebruiken. Hiervoor configureert u de instelling **Algemeen** > **Verzending van diagnostische gegevens** ten minste op **Basic**. Zie [How to configure device restriction settings](device-restrictions-configure.md) (Instellingen voor apparaatbeperking configureren) voor meer informatie over apparaatprofielen.
 
-- In de klassieke Intune-beheerconsole vindt u vier instellingen die het gedrag van software-updates beheren. Deze instellingen maken deel uit van het algemene configuratiebeleid voor Windows 10 Desktop- en Mobile-apparaten:
+- In de Intune-beheerconsole vindt u vier instellingen die het gedrag van software-updates beheren. Deze instellingen maken deel uit van het algemene configuratiebeleid voor Windows 10 Desktop- en Mobile-apparaten:
     - **Automatische updates toestaan**
     - **Functies van evaluatieversies toestaan**
     - **Geplande installatiedag**
     - **Geplande installatietijd**
 
-  De klassieke console heeft ook een beperkt aantal andere instellingen voor Windows 10-updates in het apparaatconfiguratieprofiel. Als een van deze instellingen in de klassieke Intune-beheerconsole is geconfigureerd wanneer u naar de Azure-portal migreert, wordt het volgende aangeraden:
+  De klassieke portal heeft ook een beperkt aantal andere instellingen voor Windows 10-updates in het apparaatconfiguratieprofiel. Als een van deze instellingen in de Intune-beheerconsole is geconfigureerd wanneer u naar de Azure-portal migreert, wordt het volgende aangeraden:
 
 1. Maak Windows 10 updateringen in de Azure-portal met de instellingen die u nodig hebt. De instelling **Functies van evaluatieversies toestaan** wordt niet ondersteund in Azure Portal omdat deze niet langer van toepassing is op de meest recente builds van Windows 10. U kunt de andere drie instellingen, evenals andere instellingen voor Windows 10-updates, configureren wanneer u updateringen maakt.
 
   > [!NOTE]
-  > Instellingen voor Windows 10-updates die zijn gemaakt in de klassieke console worden na de migratie niet weergegeven in Azure Portal. Deze instellingen worden echter nog wel toegepast. Als u deze instellingen hebt gemigreerd en het gemigreerde beleid bewerkt in Azure Portal, worden deze instellingen verwijderd uit het beleid.
+  > Instellingen voor Windows 10-updates die zijn gemaakt in de klassieke portal worden na de migratie niet weergegeven in de Azure-portal. Deze instellingen worden echter nog wel toegepast. Als u deze instellingen hebt gemigreerd en het gemigreerde beleid bewerkt in Azure Portal, worden deze instellingen verwijderd uit het beleid.
 
-2. Verwijder de update-instellingen in de klassieke console. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een updatering, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer bijvoorbeeld dezelfde instelling is geconfigureerd met verschillende waarden zal er een conflict ontstaan en is er geen eenvoudige manier om dit te achterhalen, omdat de instelling die is geconfigureerd in de klassieke console niet wordt weergegeven in Azure Portal.
+2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een updatering, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer bijvoorbeeld dezelfde instelling is geconfigureerd met verschillende waarden zal er een conflict ontstaan en is er geen eenvoudige manier om dit te achterhalen, omdat de instelling die is geconfigureerd in de klassieke portal niet wordt weergegeven in de Azure-portal.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Updateringen maken en toewijzen
 
@@ -140,7 +140,7 @@ U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een ap
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Software-updates** op de blade **Intune**.
 4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.
-5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
+5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **... **  >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
 
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.

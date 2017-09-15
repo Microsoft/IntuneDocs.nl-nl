@@ -1,6 +1,6 @@
 ---
 title: Beleid voor voorwaardelijke toegang migreren van de klassieke Intune-portal naar Azure Portal
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Migreer beleid voor voorwaardelijke toegang van de klassieke Intune-portal naar Azure Portal.
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Beleid voor voorwaardelijke toegang vanuit de klassieke Intune-portal overbrengen naar Azure Portal
 
@@ -33,7 +33,7 @@ Als u klaar bent om over te stappen op Azure Portal, volgt u de stappen in dit o
 
 - Volg de stappen in dit onderwerp om deze beleidsregels opnieuw te maken in Azure Portal.
 
-- Schakel de beleidsregels voor voorwaardelijke toegang uit in de klassieke Intune-beheerconsole, nadat u hebt gecontroleerd of de nieuwe beleidsregels naar behoren werken in Azure Portal.
+- Schakel de beleidsregels voor voorwaardelijke toegang uit in de klassieke Intune-portal, nadat u hebt gecontroleerd of de nieuwe beleidsregels naar behoren werken in Azure Portal.
 <br /><br />
     - Voordat u de beleidsregels voor voorwaardelijke toegang **uitschakelt in de klassieke Intune-portal**, moet u een plan opstellen voor het overbrengen van gebruikers naar het nieuwe beleid. Er zijn twee manieren:
 <br /><br />
@@ -82,7 +82,7 @@ Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-ge
     ![Vergelijking van de gebruikersinterface voor Gebruikersgroep tussen de Intune-portal en Azure Portal](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > De selectie die u voor Azure Portal maakt, moet overeenkomen met de selectie voor de Intune-portal. Als u bijvoorbeeld alle gebruikers hebt geselecteerd in de klassieke Intune-portal, selecteert u ook **Alle gebruikers** in Azure Portal. Als u bovendien de optie **Groepen uitsluiten** hebt gekozen in de klassieke Intune-portal, moet u de betreffende groepen ook uitsluiten in Azure Portal.
+    > De selectie die u voor Azure-portal maakt, moet overeenkomen met de selectie voor de Azure-portal. Als u bijvoorbeeld alle gebruikers hebt geselecteerd in de klassieke Intune-portal, selecteert u ook **Alle gebruikers** in Azure Portal. Als u bovendien de optie **Groepen uitsluiten** hebt gekozen in de klassieke Intune-portal, moet u de betreffende groepen ook uitsluiten in Azure Portal.
 
 5. Nadat u de groep hebt gekozen, klikt u op **Selecteren** en vervolgens op **Gereed**.
 
@@ -150,7 +150,7 @@ Als u EAS-instellingen (Exchange Active Sync) hebt geconfigureerd als onderdeel 
     ![Vergelijking van de gebruikersinterface voor Gebruikersgroep tussen de Intune-portal en Azure Portal](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > De selectie die u voor Azure Portal maakt, moet overeenkomen met de selectie voor de Intune-portal. Als u bijvoorbeeld alle gebruikers hebt geselecteerd in de klassieke Intune-portal, selecteert u ook **Alle gebruikers** in Azure Portal. Als u bovendien de optie **Groepen uitsluiten** hebt gekozen in de klassieke Intune-portal, moet u de betreffende groepen ook uitsluiten in Azure Portal.
+    > De selectie die u voor Azure-portal maakt, moet overeenkomen met de selectie voor de Azure-portal. Als u bijvoorbeeld alle gebruikers hebt geselecteerd in de klassieke Intune-portal, selecteert u ook **Alle gebruikers** in Azure Portal. Als u bovendien de optie **Groepen uitsluiten** hebt gekozen in de klassieke Intune-portal, moet u de betreffende groepen ook uitsluiten in Azure Portal.
 
 5. Nadat u de groep hebt gekozen, klikt u op **Selecteren** en vervolgens op **Gereed**.
 

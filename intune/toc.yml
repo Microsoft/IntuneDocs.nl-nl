@@ -1,0 +1,599 @@
+- name: Inleiding
+  href: introduction-intune.md
+  expanded: true
+  items:
+    - name: Wat is de Azure-portal?
+      href: what-is-intune.md
+    - name: Wat is Intune for Education?
+      href: introduction-intune-education.md
+    - name: Intune-functies in Azure
+      href: ui-changes.md
+      items:
+        - name: Wijzigingen in groepen
+          href: groups-get-started.md
+    - name: Aanmelden voor een gratis proefversie
+      href: free-trial-sign-up.md
+    - name: Wat is er nieuw?
+      href: whats-new.md
+      items:
+        - name: Wat is er nieuw in de gebruikersinterface van de app?
+          href: whats-new-app-ui.md
+        - name: Archief van Wat is er nieuw? (Azure Portal)
+          href: whats-new-archive.md
+        - name: Archief van Wat is er nieuw? (klassieke portal)
+          href: whats-new-archive-classic.md
+    - name: Architectuur op hoog niveau
+      href: high-level-architecture.md
+    - name: Levenscycli van apparaten en apps
+      href: introduction-device-app-lifecycles.md
+      items:
+        - name: Levenscyclus van apparaten
+          href: device-lifecycle.md
+        - name: Levenscyclus van apps
+          href: app-lifecycle.md
+    - name: Algemene scenario's
+      href: common-scenarios.md
+    - name: Beschrijving van de service
+      href: microsoft-intune-service-description.md
+    - name: Bekende problemen
+      href: known-issues.md
+    - name: Ondersteuning krijgen
+      href: get-support.md
+- name: Aan de slag met Intune
+  href: get-started-evaluation.md
+  items:
+    - name: De Azure-portal gebruiken
+      href: get-started-azure.md
+    - name: Een gebruiker maken
+      href: get-started-users.md
+    - name: Een groep maken
+      href: get-started-groups.md
+    - name: Beleid toewijzen
+      href: get-started-policies.md
+    - name: Apparaten inschrijven
+      href: get-started-enroll.md
+    - name: Apps toewijzen
+      href: get-started-apps.md
+- name: Implementatie van abonnementen
+  items:
+    - name: Planning a DPM Deployment`(Een DPM-implementatie plannen)
+      href: planning-guide.md
+      items:
+        - name: Doelstellingen bepalen
+          href: planning-guide-deployment-goals.md
+        - name: Scenario's identificeren
+          href: planning-guide-scenarios.md
+        - name: Vereisten bepalen
+          href: planning-guide-requirements.md
+        - name: Een rollout-plan ontwikkelen
+          href: planning-guide-rollout-plan.md
+        - name: Een communicatieplan ontwikkelen
+          href: planning-guide-communication-plan.md
+        - name: Een ondersteuningsplan ontwikkelen
+          href: planning-guide-support-plan.md
+        - name: Ontwerp
+          href: planning-guide-design.md
+        - name: Implementeren
+          href: planning-guide-onboarding.md
+        - name: Testen en valideren
+          href: planning-guide-test-validation.md
+        - name: Extra resources
+          href: planning-guide-resources.md
+    - name: Scenario-implementatiehandleidingen
+      items:
+        - name: BYOD
+          href: byod-enable.md
+        - name: Exchange Online beveiligen
+          href: exchange-online-protect.md
+        - name: De helpdeskkosten verlagen
+          href: password-reset.md
+    - name: Migratiehandleiding
+      href: migration-guide.md
+      items:
+        - name: Intune voorbereiden
+          href: migration-guide-prepare.md
+          items:
+            - name: Basisconfiguratie
+              href: migration-guide-setup.md
+            - name: Beheerbeleid voor apparaten en apps configureren
+              href: migration-guide-configure-policies.md
+            - name: Beveiligingsbeleid voor apps configureren
+              href: migration-guide-app-protection-policies.md
+            - name: Overwegingen bij migratie
+              href: migration-guide-considerations.md
+        - name: Migratiecampagne
+          href: migration-guide-campaign.md
+          items:
+            - name: De communicatie plannen
+              href: migration-guide-communication-plan.md
+            - name: Ingebruikname stimuleren
+              href: migration-guide-drive-adoption.md
+            - name: Normale migratiecyclus
+              href: migration-guide-cycle.md
+- name: Procedures
+  items:
+    - name: Intune instellen
+      href: setup-steps.md
+      items:
+        - name: Vereisten
+          href: supported-devices-browsers.md
+          items:
+            - name: Gebruik van netwerkbandbreedte
+              href: network-bandwidth-use.md
+        - name: Aanmelden bij Intune
+          href: account-sign-up.md
+        - name: Domeinen configureren
+          href: custom-domain-name-configure.md
+        - name: Gebruikers toevoegen
+          href: users-add.md
+        - name: Groepen toevoegen
+          href: groups-add.md
+        - name: Licenties toewijzen
+          href: licenses-assign.md
+        - name: MDM-instantie instellen
+          href: mdm-authority-set.md
+    - name: Apparaten inschrijven
+      href: device-enrollment.md
+      items:
+        - name: Opties voor inschrijving
+          href: enrollment-options.md
+          items:
+            - name: Voorwaarden
+              href: terms-and-conditions-create.md
+            - name: Beperkingen
+              href: enrollment-restrictions-set.md
+            - name: Apple MDM-pushcertificaat
+              href: apple-mdm-push-certificate-get.md
+            - name: Zakelijke id’s
+              href: corporate-identifiers-add.md
+            - name: Meervoudige verificatie
+              href: multi-factor-authentication.md
+            - name: Apparaatinschrijvingsmanager
+              href: device-enrollment-manager-enroll.md
+            - name: Apparaten toewijzen aan groepen
+              href: device-group-mapping.md
+        - name: Windows-inschrijving instellen
+          items:
+            - name: Windows-inschrijving
+              href: windows-enroll.md
+            - name: Bulkregistratie
+              href: windows-bulk-enroll.md
+        - name: Android-inschrijving instellen
+          href: android-enroll.md
+        - name: iOS-inschrijving instellen
+          href: ios-enroll.md
+          items:
+            - name: Programma voor apparaatinschrijving
+              href: device-enrollment-program-enroll-ios.md
+            - name: Apple School Manager
+              href: apple-school-manager-set-up-ios.md
+            - name: Apple Configurator
+              href: apple-configurator-enroll-ios.md
+        - name: macOS-inschrijving instellen
+          href: macos-enroll.md
+    - name: Beheer apparaten
+      href: device-management.md
+      items:
+        - name: Activeringsvergrendeling overslaan
+          href: device-activation-lock-bypass.md
+        - name: Nieuwe start van Windows beheren
+          href: device-fresh-start.md
+        - name: Verloren iOS-apparaat zoeken
+          href: device-locate.md
+        - name: Modus Apparaat verloren voor iOS inschakelen
+          href: device-lost-mode.md
+        - name: Apparaat vergrendelen
+          href: device-remote-lock.md
+        - name: Wachtwoordcode opnieuw instellen
+          href: device-passcode-reset.md
+        - name: Apparaat opnieuw opstarten
+          href: device-restart.md
+        - name: Huidige gebruiker afmelden
+          href: device-logout-user.md
+        - name: Gebruiker verwijderen
+          href: device-remove-user.md
+        - name: Beheer op afstand voor Android
+          href: device-profile-android-teamviewer.md
+        - name: Windows 10-pincode opnieuw instellen
+          href: device-windows-pin-reset.md
+        - name: Apparaat synchroniseren
+          href: device-sync.md
+        - name: Inventaris van mobiele apparaten controleren
+          href: device-inventory.md
+        - name: Apparaten verwijderen
+          href: devices-wipe.md
+    - name: Apps beheren
+      href: app-management.md
+      items:
+        - name: Apps toevoegen
+          href: apps-add.md
+          items:
+            - name: Android Store-apps
+              href: store-apps-android.md
+            - name: Android LOB-apps
+              href: lob-apps-android.md
+            - name: iOS Store-apps
+              href: store-apps-ios.md
+            - name: iOS LOB-apps
+              href: lob-apps-ios.md
+            - name: Web-apps
+              href: web-app.md
+            - name: Windows Phone 8.1 Store-apps
+              href: store-apps-windows-phone-8-1.md
+            - name: Windows Phone LOB-apps
+              href: lob-apps-windows-phone.md
+            - name: Microsoft Store-apps
+              href: store-apps-windows.md
+            - name: Windows LOB-app
+              href: lob-apps-windows.md
+            - name: Android for Work-apps
+              href: apps-add-android-for-work.md
+            - name: Office 365-apps voor Windows 10
+              href: apps-add-office365.md
+        - name: Apps toewijzen
+          href: apps-deploy.md
+        - name: Apps bewaken
+          href: apps-monitor.md
+        - name: Configuratieprofielen voor iOS-apps
+          href: app-configuration-policies-use-ios.md
+        - name: Configuratieprofielen voor Android-apps
+          href: app-configuration-policies-use-android.md
+        - name: Inrichtingsprofielen voor iOS-apps gebruiken
+          href: app-provisioning-profile-ios.md
+        - name: Selectief wissen van apps
+          href: apps-selective-wipe.md
+        - name: Werken met apps en boeken die zijn gekocht via het volume-aankoopprogramma
+          href: vpp-apps.md
+          items:
+            - name: iOS VPP-apps
+              href: vpp-apps-ios.md
+            - name: Microsoft Store voor Bedrijven-apps
+              href: windows-store-for-business.md
+            - name: iOS eBooks
+              href: vpp-ebooks-ios.md
+        - name: De bedrijfsportal-app configureren
+          href: company-portal-app.md
+        - name: Managed Browser configureren
+          href: app-configuration-managed-browser.md
+    - name: Apparaten configureren
+      href: device-profiles.md
+      items:
+        - name: Apparaatprofielen configureren
+          href: device-profile-create.md
+        - name: Apparaatfuncties configureren
+          href: device-features-configure.md
+          items:
+            - name: AirPrint voor iOS en MacOS
+              href: air-print-settings-ios-macos.md
+            - name: AirPlay voor iOS
+              href: airplay-settings-ios.md
+            - name: Indeling van het startscherm voor iOS
+              href: home-screen-settings-ios.md
+            - name: App-meldingen voor iOS
+              href: app-notification-settings-ios.md
+            - name: Gedeelde apparaten voor iOS
+              href: shared-device-settings-ios.md
+            - name: Filterinstellingen voor webinhoud in iOS
+              href: web-content-filter-settings-ios.md
+        - name: Apparaatbeperkingen configureren
+          href: device-restrictions-configure.md
+          items:
+            - name: Android
+              href: device-restrictions-android.md
+            - name: iOS
+              href: device-restrictions-ios.md
+            - name: macOS
+              href: device-restrictions-macos.md
+            - name: Windows 8.1
+              href: device-restrictions-windows-8-1.md
+            - name: 'Windows Phone 8,1'
+              href: device-restrictions-windows-phone-8-1.md
+            - name: Windows 10
+              href: device-restrictions-windows-10.md
+            - name: Windows 10 Team
+              href: device-restrictions-windows-10-teams.md
+            - name: Android for Work
+              href: device-restrictions-android-for-work.md
+        - name: E-mailinstellingen configureren
+          href: email-settings-configure.md
+          items:
+            - name: Android
+              href: email-settings-android.md
+            - name: iOS
+              href: email-settings-ios.md
+            - name: Windows Phone 8.1
+              href: email-settings-windows-phone-8-1.md
+            - name: Windows 10
+              href: email-settings-windows-10.md
+        - name: VPN-instellingen configureren
+          href: vpn-settings-configure.md
+          items:
+            - name: Android
+              href: vpn-settings-android.md
+            - name: iOS
+              href: vpn-settings-ios.md
+            - name: macOS
+              href: vpn-settings-macos.md
+            - name: Windows 8.1
+              href: vpn-settings-windows-8-1.md
+            - name: 'Windows Phone 8,1'
+              href: vpn-settings-windows-phone-8-1.md
+            - name: Windows 10
+              href: vpn-settings-windows-10.md
+        - name: Wi-Fi-instellingen configureren
+          href: wi-fi-settings-configure.md
+          items:
+            - name: Android
+              href: wi-fi-settings-android.md
+            - name: iOS
+              href: wi-fi-settings-ios.md
+            - name: macOS
+              href: wi-fi-settings-macos.md
+            - name: Windows 8.1 en Windows 10
+              href: wi-fi-settings-import-windows-8-1.md
+        - name: Instellingen voor editie-upgrades voor Windows 10 configureren
+          href: edition-upgrade-configure-windows-10.md
+        - name: Endpoint Protection in Windows 10
+          href: endpoint-protection-windows-10.md
+        - name: Instellingen voor Windows 10 Education configureren
+          href: education-settings-configure.md
+        - name: Opleidingsinstellingen voor iOS configureren
+          href: education-settings-configure-ios.md
+        - name: Gedeelde onderwijsapparaten configureren voor iOS
+          href: education-settings-configure-ios-shared.md
+        - name: Updatebeleid voor iOS configureren
+          href: software-updates-ios.md
+        - name: Certificaten configureren
+          href: certificates-configure.md
+          items:
+            - name: SCEP
+              href: certificates-scep-configure.md
+            - name: PKCS
+              href: certficates-pfx-configure.md
+        - name: Instellingen voor Windows Information Protection configureren
+          href: windows-information-protection-configure.md
+        - name: Telecomkosten controleren
+          href: telecom-expenses-monitor.md
+        - name: Profielen toewijzen
+          href: device-profile-assign.md
+        - name: Profielen controleren
+          href: device-profile-monitor.md
+        - name: Problemen met profielen oplossen
+          href: device-profile-troubleshoot.md
+    - name: Apparaatcompatibiliteit instellen
+      href: device-compliance-get-started.md
+      items:
+        - name: Android-beleid maken
+          href: compliance-policy-create-android.md
+        - name: Android for Work-beleid maken
+          href: compliance-policy-create-android-for-work.md
+        - name: iOS-beleid maken
+          href: compliance-policy-create-ios.md
+        - name: Mac OS-beleid maken
+          href: compliance-policy-create-mac-os.md
+        - name: Windows-beleid maken
+          href: compliance-policy-create-windows.md
+        - name: Apparaatcompatibiliteit bewaken
+          href: compliance-policy-monitor.md
+    - name: Voorwaardelijke toegang instellen
+      href: conditional-access.md
+      items:
+        - name: Gebruikelijke manieren om voorwaardelijke toegang te gebruiken
+          href: conditional-access-intune-common-ways-use.md
+        - name: Exchange On-Premises Connector installeren
+          href: exchange-connector-install.md
+        - name: Maken en toewijzen van beleid voor voorwaardelijke toegang
+          href: conditional-access-exchange-create.md
+        - name: Beleid voor voorwaardelijke toegang overbrengen vanuit de klassieke Intune-portal
+          href: conditional-access-intune-reassign.md
+        - name: Voorwaardelijke toegang op basis van apps
+          href: app-based-conditional-access-intune.md
+        - name: Voorwaardelijke toegang op basis van apps instellen
+          href: app-based-conditional-access-intune-create.md
+        - name: ADAL en Intune
+          href: app-modern-authentication-block.md
+        - name: Naleving van voorwaardelijke toegang bewaken
+          href: conditional-access-exchange-monitor.md
+    - name: App- en apparaatgegevens beveiligen
+      items:
+        - name: Beleidsregels voor de beveiliging van apps gebruiken
+          href: app-protection-policy.md
+          items:
+            - name: Beveiligingsbeleid voor apps maken
+              href: app-protection-policies.md
+              items:
+                - name: Android-instellingen
+                  href: app-protection-policy-settings-android.md
+                - name: iOS-instellingen
+                  href: app-protection-policy-settings-ios.md
+            - name: Beveiligingsbeleid voor apps valideren
+              href: app-protection-policies-validate.md
+            - name: Gebruikersstatus voor app-beveiliging bewaken
+              href: app-protection-policies-monitor.md
+            - name: Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps
+              href: app-protection-policies-configure-windows-10.md
+            - name: Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen
+              href: windows-information-protection-policy-create.md
+            - name: Gegevensoverdracht tussen iOS-apps beheren
+              href: data-transfer-between-apps-manage-ios.md
+        - name: Mobile Threat Defense
+          href: mobile-threat-defense.md
+          items:
+            - name: Lookout instellen
+              href: lookout-mobile-threat-defense-connector.md
+              items:
+                - name: Integratie van Lookout en Intune
+                  href: lookout-mtd-connector-integration.md
+            - name: Skycure instellen
+              href: skycure-mobile-threat-defense-connector.md
+              items:
+                - name: Integratie van Skycure en Intune
+                  href: skycure-mtd-connector-integration.md
+            - name: Controlepunt instellen
+              href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+              items:
+                - name: Controlepunt en Intune-integratie
+                  href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+            - name: MTD-apps toevoegen
+              href: mtd-apps-ios-app-configuration-policy-add-assign.md
+            - name: MTD in Intune inschakelen
+              href: mtd-connector-enable.md
+            - name: Een nalevingsbeleid voor MTD-apparaten maken
+              href: mtd-device-compliance-policy-create.md
+        - name: Netwerktoegangsbeheer
+          href: network-access-control-integrate.md
+        - name: Windows Hello instellen
+          href: windows-hello.md
+    - name: Rollen beheren
+      href: role-based-access-control.md
+    - name: Software-updates beheren
+      href: windows-update-for-business-configure.md
+    - name: Pc's beheren met softwareagent
+      href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
+      maintainContext: true
+      items:
+        - name: Pc-beheer vergelijken
+          href: /intune-classic/deploy-use/pc-management-comparison
+          maintainContext: true
+        - name: De pc-client installeren
+          href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
+          maintainContext: true
+        - name: Algemene beheertaken voor pc's
+          href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
+          maintainContext: true
+          items:
+            - name: Pc-beleid
+              href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
+              maintainContext: true
+            - name: Inventaris weergeven
+              href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
+              maintainContext: true
+            - name: Pc's buiten gebruik stellen
+              href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
+              maintainContext: true
+            - name: Pc's aan gebruikers koppelen
+              href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
+              maintainContext: true
+            - name: Hulp op afstand
+              href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
+              maintainContext: true
+        - name: Beleid voor het beveiligen van Windows-pc's
+          href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
+          maintainContext: true
+          items:
+            - name: Software-updates
+              href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
+              maintainContext: true
+            - name: Windows Firewall
+              href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
+              maintainContext: true
+            - name: Endpoint Protection
+              href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
+              maintainContext: true
+        - name: Apps toevoegen voor Intune-client-pc's
+          href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
+          maintainContext: true
+        - name: Licentieovereenkomsten beheren
+          href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
+          maintainContext: true
+        - name: Beleidsconflicten oplossen
+          href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
+          maintainContext: true
+    - name: Gebruikers onderwijzen
+      href: end-user-educate.md
+      items:
+        - name: Berichten op de bedrijfsportal
+          href: end-user-company-portal-messages.md
+        - name: App-beveiliging in Android
+          href: end-user-mam-apps-android.md
+        - name: App-beveiliging in iOS
+          href: end-user-mam-apps-ios.md
+        - name: Android-apps downloaden
+          href: end-user-apps-android.md
+        - name: iOS-apps downloaden
+          href: end-user-apps-ios.md
+        - name: Windows-apps downloaden
+          href: end-user-apps-windows.md
+- name: Bewaken en problemen oplossen
+  items:
+    - name: Gebruikers helpen problemen op te lossen
+      href: help-desk-operators.md
+    - name: Het Intune-datawarehouse gebruiken
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Verbinding maken met het datawarehouse met Power BI
+          href: reports-proc-get-a-link-powerbi.md
+- name: Automatiseren en aanpassen
+  items:
+    - name: Aangepaste apparaatinstellingen configureren
+      href: custom-settings-configure.md
+      items:
+        - name: Android
+          href: custom-settings-android.md
+          items:
+            - name: Wi-Fi-profiel met een vooraf gedeelde sleutel
+              href: wi-fi-profile-shared-key.md
+            - name: VPN-profiel per app
+              href: android-pulse-secure-per-app-vpn.md
+            - name: Apps voor Samsung KNOX Standard toestaan/blokkeren
+              href: samsung-knox-apps-allow-block.md
+        - name: iOS
+          href: custom-settings-ios.md
+        - name: macOS
+          href: custom-settings-macos.md
+        - name: Windows Phone 8.1
+          href: custom-settings-windows-phone-8-1.md
+        - name: Windows 10
+          href: custom-settings-windows-10.md
+        - name: Android for Work
+          href: custom-settings-android-for-work.md
+    - name: Apps beveiligen met Intune App SDK
+      href: app-sdk.md
+      items:
+        - name: Aan de slag met Intune App SDK
+          href: app-sdk-get-started.md
+        - name: LOB-apps voorbereiden voor app-beveiliging
+          href: apps-prepare-mobile-application-management.md
+        - name: App Wrapping Tool voor iOS
+          href: app-wrapper-prepare-ios.md
+        - name: SDK voor Intune-apps voor iOS
+          href: app-sdk-ios.md
+        - name: App Wrapping Tool voor Android
+          href: app-wrapper-prepare-android.md
+        - name: SDK voor Intune-apps voor Android
+          href: app-sdk-android.md
+        - name: Intune App SDK Cordova-invoegtoepassing
+          href: app-sdk-cordova.md
+        - name: Intune App SDK Xamarin-onderdeel
+          href: app-sdk-xamarin.md
+    - name: Rapporteren met de Intune-datawarehouse-API
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: Gegevens ophalen uit de datawarehouse-API met een REST-client
+          href: reports-proc-data-rest.md
+        - name: Datawarehouse-API-eindpunt
+          href: reports-api-url.md
+        - name: Datawarehouse-gegevensmodel
+          href: reports-ref-data-model.md
+          items:
+            - name: Informatie voor entiteit Date
+              href: reports-ref-date.md
+            - name: Naslag voor gebruikersentiteit
+              href: reports-ref-user.md
+            - name: Naslag voor MAM-entiteiten (Mobile Application Management)
+              href: reports-ref-mobile-app-management.md
+            - name: Informatie voor apparaatentiteiten
+              href: reports-ref-devices.md
+            - name: Naslag voor toepassingsentiteiten
+              href: reports-ref-application.md
+            - name: Naslag voor beleidsentiteiten
+              href: reports-ref-policy.md
+    - name: Windows-apps sideloaden
+      href: app-sideload-windows.md
+    - name: Graph API’s gebruiken voor Intune
+      href: intune-graph-apis.md
+      items:
+        - name: Documentatie over Graph-API's voor Intune
+          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+- name: Verklarende woordenlijst
+  href: intune-glossary.md

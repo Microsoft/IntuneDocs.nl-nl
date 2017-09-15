@@ -1,6 +1,6 @@
 ---
 title: Office 365 ProPlus-app installeren op Windows 10-apparaten met Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over hoe u Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -60,7 +60,7 @@ In deze stap kiest u de Office-apps die u wilt toewijzen aan apparaten.
 
 ## <a name="configure-app-information"></a>App-gegevens configureren
 
-In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het pakket vinden in de Intune-console en kunnen eindgebruikers het vinden in de bedrijfsportal-app.
+In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het pakket vinden in Intune en kunnen gebruikers het vinden in de bedrijfsportal-app.
 
 1.  Kies op de blade **App toevoegen** de optie **Gegevens van app-pakket**.
 2.  Voer de volgende gegevens in op de blade **Gegevens van app-pakket**: 

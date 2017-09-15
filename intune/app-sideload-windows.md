@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
@@ -55,7 +55,7 @@ Gebruik onderstaande stappen om de vereiste certificaten op te halen en de apps 
 6.  **De app uploaden naar Intune**<br>
     Upload het ondertekende app-bestand en uw certificaat voor ondertekening van programmacode om de app beschikbaar te stellen aan uw eindgebruikers.
 
-    1.  Klik in de Intune-portal op **Beheer** &gt; **Windows Phone**.
+    1.  Klik in de Azure-portal op **Beheer** &gt; **Windows Phone**.
 
     2.  Klik op **Ondertekende app uploaden** en meld u aan met uw Intune-beheerder-id.
 
@@ -118,7 +118,7 @@ U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windo
 
     -   `-EnterpriseId`: de ondernemings-id. Dit argument of AetxPath moet worden opgegeven. Als dit argument niet is opgegeven, wordt de ondernemings-id uit het AETX-bestand gelezen. Bijvoorbeeld 1000000001
 
-6.  Implementeer de Windows Phone 8.1-bedrijfsportal-app (SSP.appx). Zie [Windows Phone Line-Of-Business-apps (LOB) toevoegen](lob-apps-windows-phone.md) ([klassieke console](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) voor meer informatie.
+6.  Implementeer de Windows Phone 8.1-bedrijfsportal-app (SSP.appx). Zie [Windows Phone Line-Of-Business-apps (LOB) toevoegen](lob-apps-windows-phone.md) ([klassieke portal](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) voor meer informatie.
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Het zakelijke Symantec-certificaat voor ondertekening van programmacode vernieuwen
 
@@ -136,7 +136,7 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 
 1.  Onderteken de nieuwste versie van uw line-of-business-app.
 
-2.  Open de Intune-console en ga naar **Beheerder** &gt; **Mobile Device Management** &gt; **Windows Phone** en klik op **Ondertekende app uploaden**.
+2.  Open de Azure-portal en ga naar **Beheerder** &gt; **Mobile Device Management** &gt; **Windows Phone** en klik op **Ondertekende app uploaden**.
 
 3.  Upload de zojuist ondertekende bedrijfsportal. U hebt het nieuw ondertekende SSP.xap en het nieuwe PFX-bestand nodig dat u hebt ontvangen van Symantec of het toepassingsinschrijvingstoken dat met dit nieuwe PFX-bestand is gemaakt.
 

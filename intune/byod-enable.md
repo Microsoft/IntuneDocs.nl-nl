@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD met Intune inschakelen
 
@@ -48,7 +48,7 @@ Nadat u de Intune-service hebt voorbereid, moet u voldoen aan de verschillende r
 
 -   **Android-apparaten** U hoeft niets te doen om de Intune-service gereed te maken voor het registreren van Android-apparaten. Gebruikers kunnen [hun Android-apparaten registreren](/intune-user-help/enroll-your-device-in-intune-android) voor beheer met de bedrijfsportal-app die beschikbaar is via Google Play.
 
--   **Windows-telefoons en pc's** Windows-apparaten kunnen worden geregistreerd met extra configuratie. U kunt automatisch registreren voor Windows 10-pc's en mobiele Windows 10-apparaten inschakelen in Azure Active Directory (AD) Premium om de ervaring van de eindgebruiker te vereenvoudigen. Als u niet beschikt over Azure AD Premium of als u ondersteuning mogelijk wilt maken voor Windows 8.1, kunt u [een DNS-alias voor de registratieserver](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) maken om de registratie te vereenvoudigen.
+-   **Windows-telefoons en pc's** Windows-apparaten kunnen worden geregistreerd met extra configuratie. U kunt automatisch registreren voor Windows 10-pc's en mobiele Windows 10-apparaten inschakelen in Azure Active Directory (AD) Premium om de ervaring van de eindgebruiker te vereenvoudigen. Als u niet beschikt over Azure AD Premium of als u ondersteuning mogelijk wilt maken voor Windows 8.1, kunt u [een DNS-alias voor de registratieserver](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) maken om de registratie te vereenvoudigen.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Ervoor zorgen dat beheerde apparaten aan de basisvereisten voor beveiliging voldoen
@@ -82,7 +82,7 @@ U kunt met Intune ook apps beheren en implementeren die u via een volume-aankoop
 
 -   [Apps voor iOS-apparaten beheren die u hebt aangeschaft via een volume-aankoopprogramma](vpp-apps-ios.md). U koopt meerdere licenties voor iOS-apps via het [Apple Volume Purchase Program voor bedrijven](http://www.apple.com/business/vpp/). U moet een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune. U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps.
 
--   [Apps beheren die zijn aangeschaft in Microsoft Store voor Bedrijven](windows-store-for-business.md). [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en te kopen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u de store aan Intune koppelt, kunt u apps die in grotere volumes zijn aangeschaft, beheren vanuit de Intune-portal.
+-   [Apps beheren die zijn aangeschaft in Microsoft Store voor Bedrijven](windows-store-for-business.md). [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en te kopen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u de store aan Intune koppelt, kunt u apps die in grotere volumes zijn aangeschaft, beheren vanuit de Azure-portal.
 
 ## <a name="protect-company-data"></a>Bedrijfsgegevens beveiligen
 

@@ -5,7 +5,7 @@ keywords: Mac OS X, Mac OS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b177b05f065f66deb8c60be768c123fc7991937
-ms.sourcegitcommit: 091f7b34f1fbf73db2bed5b46d92a78ba0dad1e4
+ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
@@ -31,7 +31,7 @@ Als u toegang hebt tot de apps, gegevens en bronnen van uw organisatie kunt u ge
   > [!NOTE]
   > Als u een iOS-apparaat, zoals een iPhone of iPad, wilt registreren, [voer dan deze instructies uit](enroll-your-device-in-intune-ios.md).
 
-1. Op uw __Dock__ opent u __Safari__ en opent u vervolgens de [Microsoft Downloadcentrum](https://www.microsoft.com/download/details.aspx?id=55770)-pagina voor de bedrijfsportal-app voor macOS.
+1.  Zoek in uw __Dock__ naar __Safari__ en ga naar [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal). 
 
 2. Download de app. Uw Mac controleert of het downloadbestand van **CompanyPortal.dmg** veilig kan worden geopend. Nadat u het bestand hebt geopend vanuit uw **Downloads**-map, sleept u de **CompanyPortal**-app naar de map **Toepassingen**.
 

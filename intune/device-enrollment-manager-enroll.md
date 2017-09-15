@@ -1,6 +1,6 @@
 ---
 title: Apparaten inschrijven - apparaatinschrijvingsmanager
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Gebruik het manageraccount voor apparaatregistratie om apparaten in te registreren. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Apparaten inschrijven met de apparaatinschrijvingsmanager
 
@@ -36,7 +36,7 @@ Gebruikers moeten in Azure Portal bestaan om ze te kunnen toevoegen aan apparaat
 
 Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een apparaatinschrijvingsmanageraccount en voegt een restaurantsupervisor toe aan het DEM-account. Daarmee krijgt die supervisor DEM-mogelijkheden. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
 
-Alleen gebruikers in de Intune-console kunnen apparaatinschrijvingsbeheerders zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
+Alleen gebruikers in de Azure-portal kunnen apparaatinschrijvingsbeheerders zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
 
 De DEM-gebruiker kan:
 
@@ -95,5 +95,5 @@ Het verwijderen van een apparaatinschrijvingsmanager is niet van invloed op inge
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>De eigenschappen van een apparaatinschrijvingsmanager weergeven
 
-1. Kies in de Intune-portal de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
+1. Kies in de Azure-portal de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
 2. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Eigenschappen**.

@@ -1,6 +1,6 @@
 ---
 title: Voorwaarden instellen in Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: 'Voorwaarden instellen die voor gebruikers worden weergegeven in de bedrijfsportal voor Intune. '
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Ervoor zorgen dat gebruikers de bedrijfsvoorwaarden accepteren voor toegang
 
@@ -32,14 +32,14 @@ U kunt meerdere sets met voorwaarden maken en deze toewijzen aan verschillende g
 ## <a name="create-terms-and-conditions"></a>Voorwaarden maken
 Voer deze stappen uit om voorwaarden te maken. De weergavenaam en beschrijving zijn bedoeld voor beheerders. De eigenschappen van de voorwaarden worden in de bedrijfsportal weergegeven aan gebruikers.
 
-1. Kies in de Intune-portal achtereenvolgens **Apparaatinschrijving** en **Voorwaarden**.
+1. Kies in de Azure-portal achtereenvolgens **Apparaatinschrijving** en **Voorwaarden**.
 2. Selecteer **Maken**.
-![Schermafbeelding van de Intune-portal met de knop Maken voor het maken van voorwaarden](media/terms-create-terms.png)
+![Schermafbeelding van de Azure-portal met de knop Maken voor het maken van voorwaarden](media/terms-create-terms.png)
 3. Geef op de uitgevouwen blade de volgende gegevens op:
 
-   - **Weergavenaam**: de naam voor de voorwaarden in de Intune-portal. Gebruikers krijgen deze naam niet te zien.
+   - **Weergavenaam**: de naam voor de voorwaarden in de Azure-portal. Gebruikers krijgen deze naam niet te zien.
 
-   - **Beschrijving**: optionele informatie aan de hand waarvan u deze set voorwaarden in de Intune-portal kunt herkennen.
+   - **Beschrijving**: optionele informatie aan de hand waarvan u deze set voorwaarden in de Azure-portal kunt herkennen.
 
 4. Selecteer de pijl naast Gebruiksvoorwaarden definiëren om de blade Voorwaarden te openen. Voer de volgende informatie in:
 
@@ -64,9 +64,9 @@ In het volgende voorbeeld worden de voorwaarden in de beheerconsole en de bedrij
 
 U kunt voorwaarden toewijzen aan groepen gebruikers die ze moeten accepteren voordat ze de bedrijfsportal kunnen gebruiken.
 
-1. Kies in de Intune-portal achtereenvolgens **Apparaatinschrijving** en **Voorwaarden**.
+1. Kies in de Azure-portal achtereenvolgens **Apparaatinschrijving** en **Voorwaarden**.
 2. Selecteer in de lijst met voorwaarden de voorwaarden die u wilt toewijzen en selecteer vervolgens **Toegewezen groepen**.
-![Schermopname van de blade Groep toewijzen van de Intune-portal waarop de knoppen Groep selecteren en Selecteren worden weergegeven voor het toewijzen van voorwaarden](media/terms-assign-groups.png)
+![Schermopname van de blade Groep toewijzen van de Azure-portal waarop de knoppen Groep selecteren en Selecteren worden weergegeven voor het toewijzen van voorwaarden](media/terms-assign-groups.png)
 3. Klik op de knop **Groep selecteren** en selecteer in de blade **Groepen selecteren** de groepen waaraan u de voorwaarden wilt toewijzen. Klik vervolgens op **Selecteren**. Er kunnen geen voorwaarden worden toegewezen aan dynamische groepen.
 4. Klik in de blade **Toegewezen groepen** op **Opslaan**.  De voorwaarden zijn nu toegewezen aan gebruikers in de geselecteerde groepen. De volgende keer dat gebruikers de bedrijfsportal proberen te openen, wordt ze gevraagd de voorwaarden te accepteren. U hoeft de voorwaarden slechts één keer te accepteren. Gebruikers met meerdere apparaten hoeven de voorwaarden niet voor elk apparaat te accepteren.
 

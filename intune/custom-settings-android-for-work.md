@@ -1,6 +1,6 @@
 ---
 title: Aangepaste profielinstellingen in Intune voor Android for Work
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Meer informatie over het maken van aangepaste profielinstellingen voor apparaten met Android for Work.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>In Intune aangepaste profielinstellingen voor apparaten met Android for Work maken
 
@@ -32,7 +32,7 @@ Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configurere
 1. Volg de instructies in [Aangepaste apparaatinstellingen configureren](custom-settings-configure.md) om aan de slag te gaan.
 2. Klik op de blade **Aangepaste OMA-URI-instellingen** op **Toevoegen** om een nieuwe instelling toe te voegen.
 3. Configureer op de blade **Rij toevoegen** het volgende:
-    - **Naam**: voer een unieke naam in voor de aangepaste instellingen voor Android for Work waarmee u deze gemakkelijk kunt herkennen in de Intune-portal.
+    - **Naam**: voer een unieke naam in voor de aangepaste instellingen voor Android for Work waarmee u deze gemakkelijk kunt herkennen in de Azure-portal.
     - **Beschrijving**: geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie waarmee u het beleid kunt vinden.
     - **OMA-URI**: voer de OMA-URI in waarvoor u een instelling wilt opgeven.
     - **Gegevenstype**: selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. Kies uit: **Tekenreeks**, **Tekenreeks (XML-bestand)**, **Datum en tijd**, **Geheel getal**, **Drijvende komma**, **Booleaanse waarde** of **Base64 (bestand)**.

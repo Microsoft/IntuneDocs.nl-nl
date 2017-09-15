@@ -1,6 +1,6 @@
 ---
 title: Wat is er nieuw in Microsoft Intune?
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Ontdekken wat er nieuw is in Intune Azure Portal
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -102,7 +102,7 @@ Eindgebruikers kunnen nu verschillende accounts (voor werk en privé) gebruiken 
 - Meer informatie over de apps die ondersteuning bieden voor [app-beveiliging en meervoudige identiteiten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) met Intune.
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Nieuwe instellingen om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 In deze release voegen we nieuwe [instellingen voor apparaatbeperkingen](device-restrictions-android.md) toe waarmee u de volgende app-lijsten kunt opgeven:
  
 - Apps die gebruikers mogen installeren
@@ -112,7 +112,7 @@ In deze release voegen we nieuwe [instellingen voor apparaatbeperkingen](device-
 U kunt de app opgeven met de URL of met de pakketnaam opgeven, of kiezen in de lijst met apps die u beheert.
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Koppeling van Intune naar de nieuwe gebruikersinterface voor beleid voor op apps gebaseerde voorwaardelijke toegang van Azure AD
-
+<!-- 1016201 -->
 IT-beheerders kunnen nu op apps gebaseerd voorwaardelijk beleid instellen via de nieuwe gebruikersinterface voor beleid voor voorwaardelijke toegang in de Azure AD-werkbelasting. De op apps gebaseerde voorwaardelijke toegang in de sectie Intune-app-beveiliging in de Azure-portal blijft hier voorlopig aanwezig en wordt naast elkaar afgedwongen. Er is in de Intune-werkbelasting ook een handige koppeling naar de nieuwe gebruikersinterface voor beleid voor voorwaardelijke toegang.
 
 - Meer informatie over [op apps gebaseerde voorwaardelijke toegang in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
@@ -124,7 +124,7 @@ IT-beheerders kunnen nu op apps gebaseerd voorwaardelijk beleid instellen via de
 Een [Bijgewerkte lijst met DNS-namen en IP-adressen bijgewerkt](/intune/network-bandwidth-use) is beschikbaar voor de proxy-instellingen van de firewall.
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Azure Active Directory gebruiken voor voorwaardelijke toegang <!-- 967947 -->
-Voorwaardelijke toegang is beschikbaar in de sectie Azure Active Directory van de Azure-console en biedt een krachtiger en flexibeler kader voor het instellen van beleidsregels voor cloud-apps, zoals Office 365 Exchange Online en SharePoint Online.  Gebruik de blade **voorwaardelijke toegang in Azure Active Directory** voor het configureren van beleid in plaats van de klassieke Intune-beheerconsole. Bestaande beleidsregels in de klassieke Intune-beheerconsole moeten opnieuw worden gemaakt in de Azure-console. Zie [Beleid voor voorwaardelijke toegang voor Azure AD maken](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview) voor meer informatie.
+Voorwaardelijke toegang is beschikbaar in de sectie Azure Active Directory van de Azure-portal en biedt een krachtiger en flexibeler kader voor het instellen van beleidsregels voor cloud-apps, zoals Office 365 Exchange Online en SharePoint Online.  Gebruik de blade **voorwaardelijke toegang in Azure Active Directory** voor het configureren van beleid in plaats van de Intune-console. Bestaande beleidsregels in de Intune-console moeten opnieuw worden gemaakt in de Azure-portal. Zie [Beleid voor voorwaardelijke toegang voor Azure AD maken](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview) voor meer informatie.
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Rechtstreekse toegang tot Apple-scenario's voor inschrijving <!--951869-->
 Voor Intune-accounts die na januari 2017 zijn gemaakt, heeft Intune rechtstreekse toegang ingeschakeld tot Apple-inschrijvingsscenario's. Hiervoor is de werkstroom voor het inschrijven van apparaten gebruikt in Azure Portal. Voorheen was de Apple-inschrijvingspreview alleen toegankelijk via koppelingen in de klassieke Intune-portal. Intune-accounts die vóór januari 2017 zijn gemaakt, moeten eenmalig worden gemigreerd om de functies in Azure beschikbaar te maken. De planning voor de migratie is nog niet aangekondigd, maar de informatie wordt zo snel mogelijk beschikbaar gemaakt. Het wordt aangeraden om een testaccount te maken om de nieuwe ervaring te testen, als u met uw bestaande account geen toegang hebt tot Azure Portal.
@@ -168,7 +168,7 @@ Hoewel er nog geen specifieke datums bekend zijn, melden we dit nu al zodat u ge
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Vertel uw gebruikers dat ze een update moeten uitvoeren naar iOS 9.0 of hoger om optimaal gebruik te kunnen maken van nieuwe Intune-functies.  Vertel uw gebruikers dat ze de nieuwe versie van de bedrijfsportal moeten installeren om toegang te krijgen tot de nieuwe functies van de portal.
 
-Ga naar de Intune-portal in Azure en kies Apparaten > Alle apparaten. Filter op iOS-versie om apparaten te zien met een oudere versie dan iOS 9.
+Ga naar de Intune-portal in de Azure-portal en kies Apparaten > Alle apparaten. Filter op iOS-versie om apparaten te zien met een oudere versie dan iOS 9.
 
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple vereist updates voor Application Transport Security <!--748318-->

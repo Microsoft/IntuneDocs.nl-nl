@@ -23,9 +23,12 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
 
 4. **Gebruikersbereik van MDM** configureren. Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. Deze Windows 10-apparaten kunnen automatisch worden ingeschreven voor beheer met Microsoft Intune.
 
-  - **Geen**
-  - **Sommige**
-  - **Alle**
+  - **Geen** - Automatische inschrijving voor MDM uitgeschakeld
+  - **Sommige** - Selecteer **Groepen** die automatisch hun Windows 10-apparaten kunnen inschrijven
+  - **Alle** - Alle gebruikers kunnen automatisch hun Windows 10-apparaten inschrijven
+
+      > [!IMPORTANT]
+      > Als zowel **Gebruikersbereik van MAM** als automatische MDM-inschrijving (**Gebruikersbereik van MDM**) wordt ingeschakeld voor een groep, wordt alleen MAM ingeschakeld. Alleen MAM wordt toegevoegd voor gebruikers in die groep wanneer ze hun persoonlijke apparaat aan hun werkplek toevoegen. Apparaten worden niet automatisch ingeschreven voor MDM.
 
    ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 
@@ -33,9 +36,6 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
     - **URL voor MDM-gebruiksvoorwaarden**
     - **Detectie-URL voor MDM**
     - **URL van MDM-naleving**
-
-    > [!IMPORTANT]
-    > Als zowel **Gebruikersbereik van MAM** als automatische MDM-inschrijving (**Gebruikersbereik van MDM**) wordt ingeschakeld voor een groep, wordt alleen MAM ingeschakeld. Alleen MAM wordt toegevoegd voor gebruikers in die groep wanneer ze hun persoonlijke apparaat aan hun werkplek toevoegen. Apparaten worden niet automatisch ingeschreven voor MDM.
 
 6. Selecteer **Opslaan**.
 

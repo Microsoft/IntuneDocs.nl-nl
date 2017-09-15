@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune
 
@@ -41,9 +41,9 @@ Geef een naam en eventueel een beschrijving op voor dit beleid, zodat u het kunt
 
 ### <a name="oma-uri-settings"></a>OMA-URI-instellingen
 
-Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in. Gebruik de [documentatie voor Windows 10-URI-instellingen](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in dit onderwerp voor meer informatie over de instellingen die u kunt gebruiken:
+Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in:
 
-- **Naam van de instelling**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
+- **Naam van de instelling**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen. Meer informatie over URI-instellingen vindt u in [De serviceprovider voor beleidsconfiguratie (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **Beschrijving van de instelling**: voer eventueel een beschrijving in voor de instelling.
 - **Gegevenstype**: kies uit de volgende gegevenstypen:
     - **Tekenreeks**
