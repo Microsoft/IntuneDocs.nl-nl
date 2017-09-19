@@ -2,8 +2,8 @@
 title: Apps voor Windows-pc's met de Intune-softwareclient toevoegen
 description: "Gebruik de informatie in dit onderwerp om te weten te komen hoe u apps voor Windows-pc’s aan Intune toevoegt voordat u ze implementeert."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: faf52c4166298d981532ee61c158f4a705c5a3da
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4f198026e5ea7a8c2cadd894e49292ace4eeac06
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Apps voor Windows-pc's met de Intune-softwareclient toevoegen
 
@@ -71,7 +71,7 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
 5.  Op de pagina **Detectieregels** kunt u regels configureren om te detecteren of de app die u configureert al op een pc is geïnstalleerd. Of u kunt de standaarddetectieregels gebruiken als u automatisch alle eerder geïnstalleerde versies van de app wilt overschrijven. Deze optie is voor Windows Installer (alleen .exe-bestanden).
 
     U kunt de volgende regels configureren:
-    - **Bestand bestaat al**. Geef het pad op naar het bestand dat u wilt detecteren. U kunt zoeken onder **%ProgramFiles%** (waarmee wordt gezocht binnen **Programmabestanden**\&lt;path&gt; en **Programmabestanden (x86)**\&lt;path&gt;) op de computer of **%SystemDrive%** (waarmee wordt gezocht binnen het basisstation van de pc, meestal C:).
+    - **Bestand bestaat al**. Geef het pad op naar het bestand dat u wilt detecteren. U kunt zoeken onder** %ProgramFiles%** (waarmee wordt gezocht binnen **Programmabestanden**\&lt;path&gt; en **Programmabestanden (x86)**\&lt;path&gt;) op de computer of **%SystemDrive%** (waarmee wordt gezocht binnen het basisstation van de pc, meestal C:).
     - **MSI-productcode bestaat al**. Kies **Bladeren** om het Windows Installer-bestand (.msi) te kiezen dat u wilt detecteren.
     - **Registersleutel bestaat al**. Geef een registersleutel op die begint met **HKEY_LOCAL_MACHINE\**. Er wordt gezocht binnen zowel 32-bits als 64-bits registerpaden. Als de door u opgegeven sleutel in één van beide locaties bestaat, wordt aan de detectieregel voldaan.
 

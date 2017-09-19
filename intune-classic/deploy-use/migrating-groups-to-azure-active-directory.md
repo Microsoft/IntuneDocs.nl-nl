@@ -2,8 +2,8 @@
 title: Migreren naar Azure Active Directory-groepen
 description: Hoe uw groepen worden gemigreerd van Intune naar Azure AD
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angerobe
 ms.date: 12/22/2016
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
-ms.openlocfilehash: 829057773e1ef40b179435b5b81bfcd9fc5c84f3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3a71f2dc4507d59ea3c11fa034340b5e8535c3c4
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Een nieuwe manier om groepen in Intune te gebruiken
 
