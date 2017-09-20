@@ -2,8 +2,8 @@
 title: De toegang tot netwerken beveiligen met Cisco ISE
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9cc69764233fdb8bd9cba03dd0f8e841392ee19a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Cisco ISE gebruiken met Microsoft Intune
 
@@ -73,8 +73,8 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 2.       Exporteer het zelfondertekende certificaat.
 3. In een teksteditor bewerkt u het geëxporteerde certificaat:
 
- - Verwijder  **-----BEGIN CERTIFICATE-----**
- - Verwijder  **-----END CERTIFICATE-----**
+ - Verwijder ** -----BEGIN CERTIFICATE-----**
+ - Verwijder ** -----END CERTIFICATE-----**
  
 Zorg ervoor dat alle tekst op één regel staat
 

@@ -2,8 +2,8 @@
 title: Webtoegang beheren met de Managed Browser
 description: De toepassing van de beheerde browser implementeren om websurfen en de overdracht van webgegevens naar andere apps te beperken.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/10/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d0b8a72f3b06384144e4059806c3e872de68b05a
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune
 

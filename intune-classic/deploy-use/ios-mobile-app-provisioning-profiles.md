@@ -2,8 +2,8 @@
 title: Inrichtingsprofielen voor apps
 description: Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen te implementeren op apparaten met apps die bijna zijn verlopen.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6e975aa7ee22f826c7a0a60d637d651fd347bc54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa78cdbe73f2cca1da011836cecacfdd47dc2291
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Gebruik beleidsregels voor profielinrichting voor mobiele iOS-apps om te voorkomen dat uw apps verlopen
 
@@ -44,7 +44,7 @@ Nadat het certificaat is verlopen, moet u de app opnieuw ondertekenen met een ni
 
 
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) **Beleid** > **Overzicht** > **Beleid toevoegen**.
-2. Kies in het dialoogvenster **Een nieuw beleid maken** **iOS** > **Beleid mobiel inrichtingsprofiel** , en kies vervolgens **Beleid maken**.
+2. Kies in het dialoogvenster **Een nieuw beleid maken** **iOS** > **Beleid mobiel inrichtingsprofiel **, en kies vervolgens **Beleid maken**.
 3. Configureer de volgende waarden op de pagina **Algemeen**:
     - **Naam**: geef een naam op voor dit beleid voor mobiele inrichtingsprofielen.
     - **Beschrijving**: geef indien gewenst een beschrijving op voor het beleid.

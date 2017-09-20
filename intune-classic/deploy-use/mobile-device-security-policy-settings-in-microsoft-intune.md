@@ -2,8 +2,8 @@
 title: Instellingen voor beveiligingsbeleid voor mobiele apparaten
 description: Gebruik Intune voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 15b56f822557d80d0088467099c5c1232848bf82
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3032bc941c18d73e73d0bf3a7302462181bb4bf3
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune
 

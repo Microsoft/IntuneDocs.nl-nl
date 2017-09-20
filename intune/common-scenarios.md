@@ -2,8 +2,8 @@
 title: Algemene manieren om Intune te gebruiken
 description: Een lijst met zes van de meest algemene taken waarbij Intune kan worden gebruikt
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: get-started-article
@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-ms.reviewer: robstackmsft
+ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Algemene manieren om Intune te gebruiken
 
@@ -28,13 +28,13 @@ Voordat u aan de slag gaat met implementatietaken, is het belangrijk om de Enter
 
 De behoeften ten aanzien van Enterprise Mobility veranderen op dynamische wijze, en de aanpak van Microsoft om aan deze behoeften te voldoen kan soms verschillen van die van andere oplossingen in de markt. De beste manier om op één lijn te komen met de bedrijfsdoelen is door te uiten wat u wilt bereiken voor uw werknemers, partners en IT-afdeling.  
 
-Hieronder staat een korte inleiding over de zes meest voorkomende scenario's waarin Intune wordt gebruikt, met koppelingen naar aanvullende informatie over het plannen en implementeren van die scenario's.
+Hieronder staat een korte inleiding over de zes meest voorkomende scenario’s waarin Intune wordt gebruikt, met koppelingen naar aanvullende informatie over het plannen en implementeren van die scenario’s.
 
 >[!NOTE]
 >Wilt u weten hoe de IT-afdeling van Microsoft gebruikmaakt van Intune om Microsoft toegang te bieden tot bedrijfsbronnen op hun mobiele apparaten, terwijl de zakelijke gegevens goed beveiligd blijven? [Lees deze technische casestudy](https://www.microsoft.com/itshowcase/Article/Content/588) voor gedetailleerde informatie over hoe de IT-afdeling van Microsoft Intune en andere services gebruikt om identiteiten, apparaten, apps en gegevens te beheren.  
 
 >[!IMPORTANT]
->Naar aanleiding van de recente aanvallen met 'Trident'-malware op iOS-apparaten willen we ervoor zorgen dat mobiele apparaten bijgewerkt zijn. Daarom hebben we een blogbericht gepubliceerd, getiteld [Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Dit bericht bevat informatie over de verschillende manieren waarop u Intune kunt gebruiken om uw apparaten veilig en bijgewerkt te houden.
+>Naar aanleiding van de recente aanvallen met ‘Trident’-malware op iOS-apparaten willen we ervoor zorgen dat mobiele apparaten bijgewerkt zijn. Daarom hebben we een blogbericht gepubliceerd, getiteld [Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Dit bericht bevat informatie over de verschillende manieren waarop u Intune kunt gebruiken om uw apparaten veilig en bijgewerkt te houden.
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Uw on-premises e-mail en -gegevens beveiligen zodat deze veilig kunnen worden geopend vanaf mobiele apparaten
 De meeste Enterprise Mobility-strategieën worden ontwikkeld op basis van een plan om toegang tot e-mail te beveiligen voor werknemers met mobiele apparaten die verbinding maken met internet. Veel bedrijven hebben nog steeds on-premises gegevens- en toepassingsservers, zoals Microsoft Exchange, die worden gehost in het bedrijfsnetwerk.

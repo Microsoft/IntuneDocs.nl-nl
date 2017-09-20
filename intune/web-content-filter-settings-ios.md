@@ -3,8 +3,8 @@ title: Intune-filterinstellingen voor webinhoud op iOS-apparaten
 titlesuffix: Azure portal
 description: Meer informatie over welke instellingen u gebruikt om toegang tot websites toe te staan of te blokkeren vanaf iOS-apparaten.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 7/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2ff764b7500cf79b2feb64f55cac29d7dcf2eee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6a2c0fd5de8abcac6b6ac007bb1e393cdfbc116f
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filterinstellingen voor webinhoud op iOS-apparaten
 
