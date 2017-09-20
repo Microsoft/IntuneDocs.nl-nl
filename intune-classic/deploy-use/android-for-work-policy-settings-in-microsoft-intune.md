@@ -2,8 +2,8 @@
 title: Android for Work-beleidsinstellingen
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android for Work-apparaten die u met Intune beheert.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 858c4a525945694326952e8afe280e4b66cd2ccb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cb6bd74669a42b2efff0d1f8bee0c1b961a975f6
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android for Work in Microsoft Intune
 

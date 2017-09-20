@@ -2,8 +2,8 @@
 title: Apps beheren die zijn gekocht via het volume-aankoopprogramma
 description: Meer informatie over hoe u Intune kunt gebruiken voor het beheren van apps die u in volume hebt aangeschaft in de App Store.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4527f7ccf1125992841b8f317024cc64837484ab
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 80f8a871a366984dd7038030ae7f7e79388b2ef0
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Met Microsoft Intune apps beheren die zijn gekocht via het volume-aankoopprogramma
 

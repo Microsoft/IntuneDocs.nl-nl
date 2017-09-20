@@ -3,8 +3,8 @@ title: Inleiding tot Intune in de Azure-portal
 titlesuffix: Azure portal
 description: Een overzicht van de basisbeginselen van Intune in de Azure-portal en hoe u hiermee uw apparaten kunt beheren."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 nmanager: angrobe
 ms.date: 07/17/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 6150434620f055f17563da6269c85c89c70b8e2b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e3002d08506b68069d617c413a9c3801cf4326f8
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Inleiding op Microsoft Intune in Azure Portal
 
