@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
@@ -95,6 +95,17 @@ De tweede keer dat gebruikers zich aanmelden bij de bedrijfsportal-app nadat ze 
 ### <a name="how-to-explain-this-to-your-users"></a>Dit uitleggen aan uw gebruikers
 Stuur uw gebruikers naar [Logboeken via e-mail naar de IT-beheerder verzenden](/intune-user-help/send-logs-to-your-it-admin-by-email-android). U kunt ze ook sturen naar [Logboeken via een kabel naar uw IT-beheerder](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) als u ze de twee methoden wilt laten vergelijken.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>De ondersteuningsafdeling van uw bedrijf moet u toegang geven tot de bedrijfsbronnen
+
+### <a name="where-it-appears"></a>Waar deze wordt weergegeven
+Als u de bedrijfsportal-app niet hebt toegevoegd aan de lijst **Toegestane apps** of **Vrijgestelde apps**, zullen aanmeldpogingen van gebruikers mislukken. Het volgende bericht wordt weergegeven:
+
+> **De ondersteuningsafdeling van uw bedrijf moet u toegang geven tot de bedrijfsbronnen**  
+> Uw bedrijf gebruikt Windows Information Protection-beleid om uw apparaat te beveiligen. De ondersteuningsafdeling van uw bedrijf moet ervoor zorgen dat de bedrijfsportal toegang heeft tot dat beleid.
+
+### <a name="what-it-means"></a>Wat het betekent
+
+Voeg de bedrijfsportal toe aan de lijst **Toegestane apps** of **Vrijgestelde apps** in het Windows Information Protection (WIP)-beveiligingsbeleid voor apps. Zie [Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Zie tevens
 [Wat u uw eindgebruikers vertelt over het gebruik van Intune](end-user-educate.md)

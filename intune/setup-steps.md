@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 7fcdd4e7679bc969a7fa000e515b59882973a3da
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-intune"></a>Intune instellen
 
@@ -37,7 +37,7 @@ Als u momenteel Microsoft System Center Configuration Manager gebruikt voor het 
 
 | Stappen | Status  |
 | ------------- |-------------|
-| 1  | [Vereisten](supported-devices-browsers.md) - Informatie die u moet hebben voordat u aan de slag gaat. Hier vallen ook ondersteunde configuraties en netwerkvereisten onder.|
+| 1  | [Ondersteunde configuraties](supported-devices-browsers.md): informatie die u moet hebben voordat u aan de slag gaat. Hier vallen ook ondersteunde configuraties en netwerkvereisten onder.|
 | 2 |  [Aanmelden bij Intune](account-sign-up.md): meld u aan bij uw proefabonnement of maak een nieuw Intune-abonnement. |  
 | 3 | [Domeinnaam configureren](custom-domain-name-configure.md): stel de DNS-registratie in om de domeinnaam van uw bedrijf te verbinden met Intune. Hiermee geeft u gebruikers een bekend domein als ze verbinding maken met Intune en resources gebruiken.  |
 | 4 | [Gebruikers toevoegen](users-add.md): voeg handmatig gebruikers toe of maak verbinding met Active Directory om gebruikers te synchroniseren met Intune. Vereist tenzij uw apparaten bijvoorbeeld kioskapparaten 'zonder gebruiker' zijn. |

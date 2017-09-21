@@ -3,10 +3,10 @@ title: Aangepaste Intune-instellingen voor Android-apparaten
 titleSuffix: Azure portal
 description: Meer informatie over de instellingen die u kunt gebruiken in een aangepast Android-profiel.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92014eb9fd5564c0527b8cbf68732a51cf83bc96
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 433e79ae1518f86aeb7206d5213fc38a38de5218
+ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Aangepaste instellingen voor Android-apparaten in Microsoft Intune
 
@@ -27,7 +27,14 @@ ms.lasthandoff: 09/09/2017
 
 Gebruik het **aangepaste** profiel van Microsoft Intune voor Android om OMA-URI-instellingen toe te wijzen die kunnen worden gebruikt om functies op Android-apparaten te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
 
-Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configureren met Intune-beleid.
+Op deze manier kunt u de volgende Android-instellingen toewijzen die u niet kunt configureren met Intune-beleid:
+
+- [Een aangepast Microsoft Intune-apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel](/intune/wi-fi-profile-shared-key)
+- [Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten](/intune/android-pulse-secure-per-app-vpn)
+- [Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+
+>[!IMPORTANT]
+>Momenteel kunnen alleen de hierboven genoemde instellingen worden geconfigureerd door dit profieltype. Android-apparaten geven geen volledige lijst weer met OMA-URI-instellingen die u kunt configureren. Als u de overige toegevoegde instellingen wilt bekijken, kunt u die opvragen via de [Intune Uservoice-site](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Aangepaste profielinstellingen voor Android-apparaten
 
@@ -45,8 +52,6 @@ Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configurere
 
 Als u de instellingen hebt voltooid, wordt het profiel gemaakt en weergegeven op de blade met de profielenlijst. Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
 
-Zie de volgende documenten voor een paar voorbeelden van aangepaste instellingen:
 
-- [Een aangepast Microsoft Intune-apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel](/intune/wi-fi-profile-shared-key)
-- [Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten](/intune/android-pulse-secure-per-app-vpn)
-- [Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+
+
