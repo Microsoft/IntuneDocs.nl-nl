@@ -3,10 +3,10 @@ title: Intune-onderwijsinstellingen configureren voor Windows 10
 titleSuffix: Azure portal
 description: Meer informatie over het gebruik van Intune om Windows 10 Education-instellingen te configureren op apparaten die u beheert.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c18eaa0416a41e802f82bbe12b57a4d25118892c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Windows 10 Education-instellingen configureren in Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 Met opleidingsprofielen kunt u gegevens opgeven waarmee de Windows Toets maken-app wordt geconfigureerd, zoals de accountgegevens en de URL voor de toets. Wanneer u de Toets maken-app hebt geconfigureerd, wordt deze geopend met de toets die u hebt opgegeven en kunnen er geen andere apps op het apparaat worden uitgevoerd totdat de toets is voltooid.
 
-Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginselen voor het configureren van apparaatbeperkingsprofielen en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
+Zie [Toetsen maken in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) voor meer informatie over de Toets maken-app.
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Een apparaatprofiel maken dat de opleidingsprofielinstellingen bevat
 
@@ -47,6 +47,9 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+
+## <a name="next-steps"></a>Volgende stappen
+
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
 
 

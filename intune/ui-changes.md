@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Intune in de Azure-portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
 ## <a name="quick-reference-guide"></a>Naslaggids
 |Onderdeel |Pad in klassieke portal|Pad in Intune in de Azure-portal|
 |------------|---------------|---------------|
-|Device Enrollment Program (DEP) |Beheer > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program|[Apparaatinschrijving > Apple-inschrijving > Token voor het inschrijvingsprogramma](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| Beheerder > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program |[Apparaatinschrijving > Apple-inschrijving > Serienummers voor het inschrijvingsprogramma](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP) (alleen iOS)|Beheerder > Mobile Device Management > iOS > Device Enrollment Program|[Apparaatinschrijving > Apple-inschrijving > Token voor het inschrijvingsprogramma](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP) (alleen iOS)| Beheerder > Mobile Device Management > iOS en Mac OS X > Device Enrollment Program |[Apparaatinschrijving > Apple-inschrijving > Serienummers voor het inschrijvingsprogramma](#where-did-apple-dep-go) |
 |Inschrijvingsregels |Beheerder > Mobile Device Management > Inschrijvingsregels|[Apparaatinschrijving > Inschrijvingsbeperkingen](#where-did-enrollment-rules-go) |
 |Wordt gegroepeerd op iOS-serienummer |Groepen > Alle apparaten > Vooraf geregistreerde bedrijfsapparaten > Op iOS-serienummer|[Apparaatinschrijving > Apple-inschrijving > Serienummers voor het inschrijvingsprogramma](#where-did-corporate-pre-enrolled-devices-go) |
 |Wordt gegroepeerd op iOS-serienummer |Groepen > Alle apparaten > Vooraf geregistreerde bedrijfsapparaten > Op iOS-serienummer| [Apparaatinschrijving > Apple-inschrijving > AC-serienummers](#where-did-corporate-pre-enrolled-devices-go)|

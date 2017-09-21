@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Uw Android-apparaat inschrijven bij Intune
 
@@ -54,14 +54,14 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
 6.  Tik in het scherm **Instellen van bedrijfstoegang** op **STARTEN**.
 
-    ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-4a-comp-access-setup.png)
+    ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
 
-7. Lees op het scherm **Waarom moet u uw apparaat registreren?** informatie over wat u kunt doen wanneer u uw apparaat registreert en tik vervolgens op **DOORGAAN**.
+7. Lees op het scherm **Voordelen van apparaatbeheer** informatie over wat u kunt doen wanneer u uw apparaat inschrijft en tik vervolgens op **DOORGAAN**.
 
-    ![Het scherm Waarom moet u uw apparaat registreren?](./media/and-enroll-4b-why-enroll.png)
+    ![Scherm Voordelen van apparaatbeheer](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat, en tik vervolgens op **DOORGAAN**.
 
@@ -114,13 +114,13 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
 14. Wanneer het scherm **Instellen van bedrijfstoegang** wordt weergegeven, tikt u op **DOORGAAN**. Als er een bericht verschijnt waarin wordt aangegeven dat het apparaat niet voldoet aan het beleid, volgt u de instructies om het probleem te verhelpen en tikt u vervolgens op **DOORGAAN**.
 
-    ![Het apparaat is niet compatibel, maar is geregistreerd](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Het apparaat is niet compatibel, maar is geregistreerd](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Er zijn problemen met apparaatcompatibiliteit die moeten worden opgelost](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Er zijn problemen met apparaatcompatibiliteit die moeten worden opgelost](/intune/media/android_cp_enroll_03_post_1709.png)
 
     Als u op de problemen tikt, wordt meer informatie over het betreffende probleem weergegeven.
 
-    ![Uitgevouwen weergave van problemen met apparaatcompatibiliteit](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Uitgevouwen weergave van problemen met apparaatcompatibiliteit](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-9d-comp-access-setup.png)  
 
