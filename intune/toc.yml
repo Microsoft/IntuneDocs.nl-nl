@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Scenario-implementatiehandleidingen
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Exchange Online beveiligen
           href: exchange-online-protect.md
         - name: De helpdeskkosten verlagen
           href: password-reset.md
+        - name: Toegang door onbevoegden voorkomen
+          href: data-outside-protect.md
+        - name: Gegevenslekken op niet-beheerde apparaten voorkomen
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Migratiehandleiding
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Controlepunt en Intune-integratie
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: MTD-apps toevoegen
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: MTD in Intune inschakelen
-              href: mtd-connector-enable.md
-            - name: Een nalevingsbeleid voor MTD-apparaten maken
-              href: mtd-device-compliance-policy-create.md
+            - name: Zimperium instellen
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Integratie van Zimperium en Intune
+                  href: zimperium-mtd-connector-integration.md
+            - name: Intune instellen voor MTD
+              items:
+                - name: MTD-apps toevoegen
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Een nalevingsbeleid voor MTD-apparaten maken
+                  href: mtd-device-compliance-policy-create.md
+                - name: MTD in Intune inschakelen
+                  href: mtd-connector-enable.md
         - name: Netwerktoegangsbeheer
           href: network-access-control-integrate.md
         - name: Windows Hello instellen

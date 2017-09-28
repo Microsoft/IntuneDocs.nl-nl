@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Gebruik waarschuwingen om op de hoogte te worden gesteld door Microsoft Intune
 
@@ -61,6 +61,8 @@ Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de opt
 
 ## <a name="working-with-alerts"></a>Werken met waarschuwingen
 
+Om waarschuwingen weer te geven in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com), kiest u **Waarschuwingen** en vervolgens het type van de waarschuwing om weer te geven.
+
 Gebruik de volgende opties om met waarschuwingen in de Intune-beheerconsole te werken.
 
 |Optie|Beschrijving|
@@ -70,11 +72,12 @@ Gebruik de volgende opties om met waarschuwingen in de Intune-beheerconsole te w
 |**Een waarschuwing sluiten**|Kies in de lijst met waarschuwingen de waarschuwing die u wilt sluiten en kies vervolgens **Waarschuwing sluiten**.<br /><br />Gesloten waarschuwingen worden na 90 dagen definitief verwijderd.|
 |**Een gesloten waarschuwing opnieuw activeren**|Stel in de lijst met waarschuwingen de vervolgkeuzelijst **Filters** in op **Gesloten**.<br /><br />Selecteer in de lijst met gesloten waarschuwingen de waarschuwing die u opnieuw wilt activeren en kies vervolgens **Waarschuwing opnieuw activeren**.|
 
-Intune-waarschuwingen blijven actief tot:
+Intune-waarschuwingen blijven 30 dagen actief of tot:
 
-- Het probleem dat de waarschuwing heeft veroorzaakt, is opgelost
-- U de waarschuwing handmatig sluit
-- 45 dagen zijn verstreken nadat de waarschuwing werd gegenereerd
+- het probleem dat de waarschuwing heeft veroorzaakt, is opgelost.
+- de waarschuwing handmatig is gesloten.
+
+Gesloten waarschuwingen kunnen tot 30 dagen na sluiten opnieuw worden geactiveerd. Na 30 dagen worden gesloten en inactieve waarschuwingen uit Intune verwijderd.
 
 > [!TIP]
 > Als dezelfde waarschuwing wordt gegenereerd door apparaten waarop verschillende besturingssystemen worden uitgevoerd, ziet u mogelijk meerdere versies van dezelfde waarschuwing in de lijst met waarschuwingen.
