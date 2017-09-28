@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: cd684feec1df6b20f9349052496a21895527710b
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
@@ -98,3 +98,17 @@ De entiteit **VppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen
 | 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Het VPP-programma van Microsoft |
 | 00000000-0000-0000-0000-000000000000 |Nog niet beschikbaar |Standaardwaarde, Geen VPP |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |VPP-programma van Apple |
+
+
+
+## <a name="applicationinventory"></a>ApplicationInventory
+
+Met de entiteit **ApplicationInventory** worden de toepassingen weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
+
+| Eigenschap  | Beschrijving |
+|---------|------------|
+| DeviceKey |Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat |
+| DateKey |Verwijzing naar datumtabel waarmee de dag van de inventarisatie wordt aangegeven |
+| ApplicationName |Typ de toepassingsnaam |
+| ApplicationVersion |Versie van de toepassing |
+| BundleSize |De grootte van de app in bytes |

@@ -1,17 +1,16 @@
 
 
 ### <a name="apple"></a>Apple
-  - Apple iOS 8.0 en hoger
+  - Apple iOS 9.0 en hoger
   - Mac OS X 10.9 en hoger
 
 ### <a name="windows"></a>Windows
   - Computers met Windows 10 (Home, Pro, Education en Enterprise)
-  - Windows Phone 8.1 en hoger
-  - Windows RT 8.1
-  - Computers met Windows 8.1
+  - Windows 10 Mobile
   - Apparaten met Windows 10 IoT Enterprise (x86, x64)
   - Apparaten met Windows 10 IoT Mobile Enterprise
-  - Windows Holographic en Windows Holographic Enterprise
+  - Windows Holographic &amp; Windows Holographic Enterprise
+  - Windows Phone 8.1, Windows 8.1 RT en pc's met Windows 8.1 (Sustaining modus)
 
   Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Directory (AAD) gebruiken voor het registreren van Windows 10-apparaten](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
