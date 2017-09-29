@@ -46,8 +46,15 @@
 
 ### Mobile Threat Defense
 #### [Mobile Threat Defense-apps installeren](you-are-prompted-to-install-mtd-android.md)
+##### [Lookout for Work installeren](you-are-prompted-to-install-lookout-for-work-android.md)
+##### [Symantec Endpoint Protection Mobile installeren](you-are-prompted-to-install-skycure-android.md)
+##### [SandBlast Mobile Protect installeren](you-are-prompted-to-install-sandblast-android.md)
+##### [Zimperium zIPS installeren](you-are-prompted-to-install-zips-android.md)
 #### [Een bedreiging oplossen](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-
+##### [Lookout for Work gebruiken](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+##### [Symantec Endpoint Protection Mobile gebruiken](you-need-to-resolve-a-threat-found-by-skycure-android.md)
+##### [SandBlast Mobile Protect gebruiken](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
+##### [Zimperium zIPS gebruiken](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [Uw iOS- of Mac OS-apparaat gebruiken met Intune](using-your-iOS-or-macOS-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een iOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -77,7 +84,15 @@
 
 ### Mobile Threat Defense
 #### [Mobile Threat Defense-apps installeren](you-are-prompted-to-install-mtd-ios.md)
+##### [Lookout for Work installeren](you-are-prompted-to-install-lookout-for-work-ios.md)
+##### [Symantec Endpoint Protection Mobile installeren](you-are-prompted-to-install-skycure-ios.md)
+##### [SandBlast Mobile Protect installeren](you-are-prompted-to-install-sandblast-ios.md)
+##### [Zimperium zIPS installeren](you-are-prompted-to-install-zips-ios.md)
 #### [Een bedreiging oplossen](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
+##### [Lookout for Work gebruiken](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+##### [Symantec Endpoint Protection Mobile gebruiken](you-need-to-resolve-a-threat-found-by-skycure-ios.md)
+##### [SandBlast Mobile Protect gebruiken](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
+##### [Zimperium zIPS gebruiken](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
 
 ## [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
