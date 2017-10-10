@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5db7489d379ca374e41030870df20ff16b919bbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c32dad761275e9a31937e5777d85939915882849
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Uw Windows-apparaat beveiligen met versleuteling
 
@@ -35,4 +35,4 @@ Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het appar
 
 2.  Kies **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Zie de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de contactgegevens.
