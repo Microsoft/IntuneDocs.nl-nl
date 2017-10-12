@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 081798753f3e962e0ca500097fc55e021802c73d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 22cdbc1140c57cb7475689307df5a261774761d5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>U moet uw apparaat upgraden om de Outlook-app te installeren
 
@@ -34,4 +34,4 @@ Ga naar **Instellingen** en gebruik vervolgens de optie **Bijwerken** of **Syste
 ## <a name="if-you-have-an-ios-device"></a>Als u een iOS-apparaat hebt
 Tik op **Instellingen** > **Algemeen** > **Software-update**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
