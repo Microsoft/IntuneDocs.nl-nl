@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Uw iOS-apparaat inschrijven bij Intune
 
@@ -54,7 +54,7 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw iOS-appara
   > [!NOTE]
   > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
 
-4. Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien als u het apparaat registreert, en tik vervolgens op **Doorgaan**.
+4. Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het geregistreerde apparaat en tik op **Doorgaan**.
 
     ![IOS-registreren-wat-IT-kan-zien](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ Uw apparaat is nu geregistreerd bij Intune en u gaat terug naar de bedrijfsporta
 > [!Note]
 > U moet nog enkele extra stappen uitvoeren voordat het apparaat volledig is geregistreerd. Meer informatie over het [registreren van uw apparaat met Telecom-onkostenbeheer](enroll-your-device-with-telecom-expense-management-ios.md). Als uw organisatie Apple Device Enrollment Program gebruikt, meer, vindt u [hier](enroll-your-device-dep-ios.md) meer informatie.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>De vroege editie voor Microsoft Intune - september 2017
 
@@ -184,6 +184,14 @@ Het is raadzaam om in aanmerking komende Windows Phone 8.1-apparaten zo snel mog
 
 
 ## <a name="intune-apps"></a>Intune-apps
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Verbeterde zoekfunctie op de bedrijfsportalwebsite <!--1331697-->
+We verbeteren onze app-zoekfuncties, te beginnen met de [bedrijfsportalwebsite](https://portal.manage.microsoft.com). Zoekopdrachten worden nu ook uitgevoerd op app-categorieën naast de velden Naam en Beschrijving. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. 
+
+iOS-gebruikers ontvangen deze wijziging ook omdat de bedrijfsportalwebsite ook wordt gebruikt als onderdeel van de bedrijfsportal-app voor iOS. De bedrijfsportal-apps voor Android en Windows ontvangen dergelijke updates in de komende maanden. 
+
+We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt bijgehouden. Laat ons weten hoe het voor u werkt via de koppeling Feedback onderaan de bedrijfsportalwebsite.
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Actie voor vernieuwen toegevoegd aan de bedrijfsportal-app voor Windows 10 <!--1132468-->
 De bedrijfsportal-app voor Windows 10 stelt gebruikers in staat om de gegevens in de app te vernieuwen door te trekken om te vernieuwen of door op pc’s op F5 te drukken.
 
@@ -211,7 +219,7 @@ Eindgebruikers hoeven hun apparaat binnenkort niet meer in te schrijven om toega
 In plaats van een algemeen foutbericht krijgen eindgebruikers een gebruikersvriendelijk foutbericht te zien waarop een actie kan worden uitgevoerd: 'U hebt het maximum aantal apparaten ingeschreven dat door de IT-beheerder is toegestaan. Verwijder een ingeschreven apparaat of vraag assistentie van uw IT-beheerder.'
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Eindgebruikers informeren welke apparaatgegevens voor iOS kunnen worden gezien <!--739894-->
-Aan het scherm voor apparaatgegevens in de bedrijfsportal-app voor iOS wordt de optie **Eigendomstype ** toegevoegd. Hierdoor kunnen gebruikers meer over privacy te weten komen vanaf deze pagina in de documenten voor Intune-eindgebruikers. Deze informatie is ook te vinden op het scherm Info.
+Aan het scherm voor apparaatgegevens in de bedrijfsportal-app voor iOS wordt de optie **Eigendomstype**  toegevoegd. Hierdoor kunnen gebruikers meer over privacy te weten komen vanaf deze pagina in de documenten voor Intune-eindgebruikers. Deze informatie is ook te vinden op het scherm Info.
 
 ### <a name="apps-details-pages-display-new-information-for-android-devices---1287476--"></a>Op de pagina's met gegevens over de apps wordt nieuwe informatie weergegeven voor Android-apparaten <!--1287476-->
 In de bedrijfsportal-app voor Android worden op de pagina met gegevens over de apps de app-categorieën weergegeven die de IT-beheerder voor die app heeft gedefinieerd.

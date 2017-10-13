@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Uw Mac OS-apparaat registreren bij Intune
 
-Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie krijgt u uw werkzaamheden gedaan. Als u een Mac OS-apparaat op het werk gebruikt, betekent dit dat u een __beheerprofiel__ moet installeren. Dit is gewoon een bestand dat door uw IT-beheerder wordt ingesteld en dat instellingen laadt en toegang verkrijgt tot informatie op uw Mac. Wilt u meer weten? Lees [wat er gebeurt als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie krijgt u uw werkzaamheden gedaan. Als u een Mac OS-apparaat op het werk gebruikt, betekent dit dat u een __beheerprofiel__ moet installeren. Dit is gewoon een bestand dat door het ondersteuningsteam van het bedrijf wordt ingesteld en dat instellingen laadt en toegang verkrijgt tot informatie op uw Mac. Wilt u meer weten? Lees [wat er gebeurt als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > Als u een iOS-apparaat probeert te registreren, zoals een iPhone of iPad, [volgt u in plaats daarvan deze instructies](enroll-your-device-in-intune-ios.md).
 
-1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
 
  ![Mac OS-profiel geïnstalleerd](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
-ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
+ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
-Beheerde apps zijn apps die door de IT-beheerder kunnen worden ingesteld zodat de bedrijfsgegevens die toegankelijk zijn in die app, kunnen worden beveiligd. Wanneer u met bedrijfsgegevens in een beheerde app op uw iOS-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
+Beheerde apps zijn apps die door het ondersteuningsteam van het bedrijf kunnen worden ingesteld om de bedrijfsgegevens te beveiligen die toegankelijk zijn in de app. Wanneer u met bedrijfsgegevens in een beheerde app op uw iOS-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
 
 Verschillende beheerde apps kunnen ook samenwerken op uw apparaat zodat u uw dagelijkse taken kunt uitvoeren, terwijl de bedrijfsgegevens beveiligd blijven. Als u bijvoorbeeld een bedrijfsbestand in een beheerde app opent en een andere beheerde app nodig is om dat bestand weer te geven, wordt de beheerde app waarmee u het bestand kunt weergeven, automatisch geopend. Als een vereiste app niet beschikbaar is, zijn bepaalde acties mogelijk niet beschikbaar, zoals het openen van een document of het gebruiken van een webkoppeling in een beheerd document.
 
@@ -35,14 +35,14 @@ Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een ber
 ### <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
 Beheerde apps zijn op verschillende manieren beschikbaar:
 
--   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door de IT-beheerder op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
+-   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door het ondersteuningsteam van het bedrijf op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
 
 -   U installeert een app uit de App Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd met Intune.
 
-Mogelijk koopt uw IT-beheerder soms meerdere licenties voor een app die u installeert. Het is normaal dat u wordt gevraagd om de voorwaarden van het Apple Volume Purchase Program te accepteren en dit kunt u dan ook doen. Als u ze niet accepteert, kunt u de app niet installeren.
+Mogelijk koopt het ondersteuningsteam van het bedrijf soms meerdere licenties voor een app die u installeert. Het is normaal dat u wordt gevraagd om de voorwaarden van het Apple Volume Purchase Program te accepteren en dit kunt u dan ook doen. Als u ze niet accepteert, kunt u de app niet installeren.
 
-### <a name="what-can-my-it-admin-manage-in-an-app"></a>Wat kan de IT-beheerder beheren in een app?
-Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
+### <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?
+Hier volgen enkele voorbeelden van opties die het ondersteuningsteam van het bedrijf in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
 
 -   Toegang tot bepaalde websites
 
@@ -62,4 +62,4 @@ Hier volgen enkele voorbeelden van opties die de IT-beheerder in een app kan beh
 
 -   Vereisten voor de versleuteling van gegevens
 
-Neem contact op met de IT-beheerder voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van het bedrijf voor meer informatie over de beheerde apps op uw apparaat. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

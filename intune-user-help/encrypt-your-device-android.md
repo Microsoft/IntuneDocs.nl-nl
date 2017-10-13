@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Uw Android-apparaat beveiligen met versleuteling
 
 Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnemen in een laag beschermende code die voorkomt dat onbevoegden toegang tot die informatie kunnen krijgen. Als eerste stap om uw informatie te beveiligen, vereist uw organisatie dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bedrijfsbestanden, e-mail of gegevens.
 
 > [!Note]
-> U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als uw IT-beheerder dit vereist.
+> U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als het ondersteuningsteam van het bedrijf dit vereist.
 
 Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
@@ -52,7 +52,7 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
 - Zorg dat het apparaat is geladen en aangesloten.
 - Zorg ervoor dat u een pincode of wachtwoord hebt ingesteld op het apparaat.
-- Als u al een pincode of wachtwoord op het apparaat hebt ingesteld, voert u de volgende stappen uit (die uw IT-beheerder kan vereisen om uw apparaat beter te beveiligen). De menunamen die u ziet, kunnen enigszins afwijken van de namen in deze stappen, afhankelijk van het type Android-apparaat dat u hebt.
+- Als u al een pincode of wachtwoord op het apparaat hebt ingesteld, voert u de volgende stappen uit (die het ondersteuningsteam van het bedrijf kan vereisen om uw apparaat beter te beveiligen). De menunamen die u ziet, kunnen enigszins afwijken van de namen in deze stappen, afhankelijk van het type Android-apparaat dat u hebt.
 
     1. Ga naar **instellingen** > **Vergrendelscherm en beveiliging** > **Schermvergrendeling**. Verifieer uw huidige pincode of wachtwoord.
 
@@ -66,4 +66,4 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
     6. Open de bedrijfsportal-app, selecteer uw apparaat en tik op **Naleving controleren**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.

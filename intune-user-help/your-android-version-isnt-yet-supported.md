@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7568ce8f8a5cb648f1f250751f1a03c7c55a0fd2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6a2a14548a57e26fe322d0c28cb515e6590acb69
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>De versie van het besturingssysteem op uw Android-apparaat wordt nog niet ondersteund
 
-Door de snelle ontwikkelingen op het gebied van technologie is het soms mogelijk dat uw IT-beheerder nog niet de mogelijkheid heeft gehad om mogelijkheden van uw apparaat te testen. Het is mogelijk dat de nieuwste versie van Android niet werkt met bepaalde andere hulpprogramma's van uw bedrijf.
+Door de snelle ontwikkelingen op het gebied van technologie kan het gebeuren dat het ondersteuningsteam van het bedrijf nog niet de kans heeft gehad om de mogelijkheden van uw apparaat te testen. Het is mogelijk dat de nieuwste versie van Android niet werkt met bepaalde andere hulpprogramma's van uw bedrijf.
 
-U moet contact opnemen met uw IT-beheerder om dit probleem op te lossen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+U moet contact opnemen met het ondersteuningsteam van het bedrijf om dit probleem op te lossen. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

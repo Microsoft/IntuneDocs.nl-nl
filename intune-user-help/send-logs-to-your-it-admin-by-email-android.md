@@ -1,5 +1,5 @@
 ---
-title: Logboeken met diagnostische gegevens via e-mail naar de IT-beheerder verzenden | Microsoft Docs
+title: Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden | Microsoft Docs
 description: Gegevenslogboeken verzenden via e-mail op een Android-apparaat
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Logboeken naar uw IT-beheerder verzenden via e-mail
+# <a name="send-logs-to-your-company-support-using-email"></a>Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden
 
-Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u uw IT-beheerder helpen het probleem op te lossen door de beheerder informatie via e-mail te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
 
 > [!Note]
-> Om het voor uw IT-beheerder eenvoudiger te maken de oorzaak van het probleem te achterhalen, schakelt u _uitgebreide logboekregistratie_ in. Met uitgebreide logboekregistratie worden alle relevante gegevens in het rapport opgenomen. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Om het voor het ondersteuningsteam van het bedrijf eenvoudiger te maken de oorzaak van het probleem te achterhalen, schakelt u _uitgebreide logboekregistratie_ in. Met uitgebreide logboekregistratie worden alle relevante gegevens in het rapport opgenomen. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Ga als volgt te werk om logboeken naar uw IT-beheerder te verzenden via e-mail:
+Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden:
 
 1.  Open de app Bedrijfsportal.
 
@@ -40,4 +40,4 @@ Ga als volgt te werk om logboeken naar uw IT-beheerder te verzenden via e-mail:
 
 3.  Tik onder **Help** op **Help opvragen**.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

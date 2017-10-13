@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 370fbcf8bb424030eb7b7dbaba66fa943f08aa42
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
+ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Uw Android-apparaat lijkt versleuteld te zijn, maar de Bedrijfsportal geeft anders aan
 
@@ -38,7 +38,7 @@ Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te
 
 ### <a name="downgrade-your-version-of-android"></a>Uw versie van Android downgraden
 
-Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met uw IT-beheerder om dit probleem op te lossen. U kunt de contactgegevens voor uw IT-beheerder vinden op de [Bedrijfsportalwebsite ](http://portal.manage.microsoft.com).
+Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 ## <a name="specific-manufacturer-issues"></a>Fabrikant-specifieke problemen
 
@@ -54,12 +54,11 @@ Sommige Android-apparaten met versie 7.0+ versleutelen gegevens op een manier di
 Als u een van de volgende apparaten hebt, kan dit probleem optreden als u uw apparaat niet hebt bijgewerkt naar de meest recente versie van Android. U kunt de updates voor deze apparaten installeren bij **Instellingen** > **Bijwerken**. 
 
 - [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
-- [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Bekende apparaten die momenteel niet kunnen worden bijgewerkt om dit probleem op te lossen
 
 U kunt dit probleem niet oplossen voor de volgende apparaten. U moet wellicht een ander apparaat gebruiken voor toegang tot bedrijfsresources. 
 
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [Xiaomi Mi-smartphones](https://xiaomi-mi.com/mi-smartphones/)

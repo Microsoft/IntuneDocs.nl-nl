@@ -1,6 +1,6 @@
 ---
 title: Apple DEP-beheer voor iOS-apparaten
-description: "'Draadloos' een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program (DEP) zijn aangeschaft om Apple-apparaten te beheren."
+description: Draadloos een registratieprofiel waarmee iOS-apparaten worden geregistreerd die via het Device Enrollment Program (DEP) zijn aangeschaft, implementeren om Apple-apparaten te beheren.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>iOS-apparaten in bedrijfseigendom met het Device Enrollment Program inschrijven
 
@@ -28,7 +28,7 @@ Microsoft Intune kan 'draadloos' een inschrijvingsprofiel implementeren op iOS-a
 
 >[!NOTE]
 >Inschrijving via DEP kan niet worden gebruikt bij de methode van de [apparaatinschrijvingsmanager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Ook als gebruikers iOS-apparaten inschrijven (d.w.z. via de bedrijfsportal-app) en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt het apparaat uitgeschreven bij Intune.
+>Als gebruikers hun iOS-apparaten registreren (via de bedrijfsportal-app) en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt de registratie van het apparaat opgeheven bij Intune.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Vereisten voor de inschrijving van iOS-apparaten met behulp van Apple DEP-beheer
 

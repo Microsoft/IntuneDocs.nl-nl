@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -29,7 +29,10 @@ Met de informatie in dit onderwerp kunt u iOS-apparaten inschrijven die zijn gek
 
 Voor het inschakelen van DEP-inschrijving moet u zowel de Intune-portal als de Apple DEP-portal gebruiken. U hebt een lijst met serienummers of een aankoopordernummer nodig om apparaten voor beheer aan Intune toe te wijzen. U maakt DEP-inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
 
-Overigens werkt DEP-inschrijving niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
+Overigens werkt de DEP-registratie niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
+
+## <a name="what-is-supervised-mode"></a>Wat is de supervisiemodus?
+Apple heeft de supervisiemodus geïntroduceerd in iOS 5. Een iOS-apparaat in de supervisiemodus kan worden beheerd met meer besturingselementen. Hierdoor is het vooral handig voor apparaten van het bedrijf. Intune ondersteunt het configureren van apparaten voor de supervisiemodus als onderdeel van het Apple Device Enrollment Program (DEP). 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -75,9 +78,8 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
    ![Schermopname van het toevoegen van een MDM-servernaam voor DEP en een pijl naar Volgende.](./media/enrollment-program-token-add-server.png)
 
-5. Het dialoogvenster **Voeg &lt;servernaam&gt;** wordt geopend, met de instructie dat u uw** **openbare sleutel moet uploaden. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
+5. Het dialoogvenster **Voeg &lt;servernaam&gt;** wordt geopend, met de instructie dat u uw**** openbare sleutel moet uploaden. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
 
-6.  In het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt een koppeling met **Uw servertoken** weergegeven. Download het servertokenbestand (.p7m) naar uw computer en kies **Gereed**.
 
 7. Ga naar **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Apparaten beheren**.
 8. Geef onder **Kies apparaten op** aan hoe apparaten worden geïdentificeerd:
@@ -87,7 +89,7 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
    ![Schermopname van het opgeven van apparaten op serienummer, het kiezen van een actie zoals toewijzen aan server en de naam van de server selecteren.](./media/enrollment-program-token-specify-serial.png)
 
-9. Voor **Kies actie** kiest u **Toewijzen aan server**, kiest u de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kiest u vervolgens **OK**. De opgegeven apparaten worden voor beheer toegewezen aan de Intune-server en er verschijnt een melding dat de** **toewijzing is voltooid.
+9. Voor **Kies actie** kiest u **Toewijzen aan server**, kiest u de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kiest u vervolgens **OK**. De opgegeven apparaten worden voor beheer toegewezen aan de Intune-server en er verschijnt een melding dat de**** toewijzing is voltooid.
 
    Ga in de Apple-portal **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Toewijzingsgeschiedenis weergeven** om een lijst van apparaten en hun toewijzing aan de MDM-server te bekijken.
 
@@ -115,9 +117,12 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 4. Kies **Instellingen voor apparaatbeheer** om de volgende profielinstellingen te configureren:
 
   ![Schermopname van het kiezen van de beheermodus. Het apparaat heeft de volgende instellingen: Onder supervisie, Vergrendelde inschrijving, Koppelen toestaan, ingesteld om alles te weigeren. Apple Configurator-certificaten zijn niet beschikbaar voor een nieuw profiel van het inschrijvingsprogramma.](./media/enrollment-program-profile-mode.png)
-    - **Onder supervisie**: een beheermodus waarmee standaard meer beheeropties worden ingeschakeld en de activeringsvergrendeling wordt uitgeschakeld. Als u het selectievakje leeg laat, hebt u beperkte beheermogelijkheden.
+    - **Onder supervisie**: een beheermodus waarmee standaard meer beheeropties worden ingeschakeld en de activeringsvergrendeling wordt uitgeschakeld. Als u het selectievakje leeg laat, hebt u beperkte beheermogelijkheden. Microsoft raadt het gebruik van DEP aan als mechanisme voor het inschakelen van de supervisiemodus, met name voor organisaties die veel iOS-apparaten implementeren.
 
-    - **Vergrendelde inschrijving** (vereist Onder supervisie als beheermodus): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd. Als het apparaat is ingeschreven, kunt u deze instelling niet wijzigen zonder het apparaat terug te zetten naar de fabrieksinstellingen.
+ > [!NOTE]
+ > Een apparaat kan niet worden geconfigureerd voor de supervisiemodus met behulp van Intune nadat een apparaat is geregistreerd. Na de registratie kan de supervisiemodus alleen worden ingeschakeld door een iOS-apparaat op een Mac aan te sluiten met een USB-kabel en Apple Configurator te gebruiken. Hierdoor wordt het apparaat opnieuw ingesteld en geconfigureerd in de supervisiemodus. Meer informatie hierover vindt u in de [Apple Configurator-documentatie](http://help.apple.com/configurator/mac/2.3). Bij een apparaat onder supervisie ziet u 'Deze iPhone wordt beheerd door Contoso'. op het vergrendelingsscherm en 'Deze iPhone is onder supervisie. Contoso kan uw internetverkeer bijhouden en de locatie van dit apparaat bepalen'. in **Instellingen** > **Algemeen** > **Info**.
+
+    - **Vergrendelde registratie** (hiervoor is Onder supervisie als beheermodus vereist): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd. Als het apparaat is ingeschreven, kunt u deze instelling niet wijzigen zonder het apparaat terug te zetten naar de fabrieksinstellingen.
 
   - **Gedeelde iPad ingeschakeld**: het Device Enrollment Program van Apple ondersteunt het gebruik van gedeelde iPad niet.
 
@@ -146,6 +151,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
         - **Diagnostische gegevens**
 
     Kies **Opslaan**.
+
 9. Kies **Maken** op de blade **Inschrijvingsprofiel maken** om de profielinstellingen op te slaan. Het inschrijvingsprofiel wordt weergegeven in de lijst met inschrijvingsprofielen voor Apple Enrollment Program.
 
 ## <a name="sync-managed-devices"></a>Beheerde apparaten synchroniseren

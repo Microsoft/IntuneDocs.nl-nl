@@ -5,7 +5,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b007a3b038f1d631f1f75f5fea208de75e14fed1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: e1b18486f84bb5d4d47caceb871bf6884b9b8f89
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android en Samsung KNOX Standard in Microsoft Intune
 
@@ -186,24 +186,84 @@ Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-
 
 |Naam van de instelling|Details|
     |----------------|--------------------|
-    |**Naam**|Voer een unieke naam in voor het aangepaste Android-beleid, zodat dit gemakkelijk is te herkennen in de Intune-console.|
-    |**Beschrijving**|Geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie die u helpt om het beleid weer te vinden.|
+    | **Naam** |Voer een unieke naam in voor het aangepaste Android-beleid, zodat dit gemakkelijk is te herkennen in de Intune-console.|
+    | **Beschrijving** |Geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie die u helpt om het beleid weer te vinden.|
 
 ### <a name="oma-uri-settings"></a>OMA-URI-instellingen
 
    |Naam van de instelling|Details|
     |--------|--------------------|
-    |**Naam van instelling**|Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
-    |**Beschrijving van instelling**|Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
-    |**Gegevenstype**|Selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. Kies uit: **tekenreeks, tekenreeks (XML), datum en tijd, geheel getal, drijvende komma** en **booleaanse waarde**.|
-    |**OMA-URI (hoofdlettergevoelig)**|Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
-    |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
+    | **Naam van instelling** |Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.|
+    | **Beschrijving van instelling** |Geef een beschrijving op die een overzicht geeft van de instelling en overige relevante informatie die u helpt om de instelling terug te vinden.|
+    | **Gegevenstype** |Selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. Kies uit: **tekenreeks, tekenreeks (XML), datum en tijd, geheel getal, drijvende komma** en **booleaanse waarde**.|
+    | **OMA-URI (hoofdlettergevoelig)** |Geef aan voor welke OMA-URI u een instelling wilt opgeven.|
+    | **Waarde** |Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
 ### <a name="examples"></a>Voorbeelden
 
 - [Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
 - [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](per-app-vpn-for-android-pulse-secure.md)
-- [Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten](custom-policy-to-allow-and-block-samsung-knox-apps.md)
+- [Aangepaste beleidsregels gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten](custom-policy-to-allow-and-block-samsung-knox-apps.md)
+
+## <a name="supported-samsung-knox-standard-devices"></a>Ondersteunde Samsung KNOX Standard-apparaten
+
+Via de bedrijfsportal-app wordt de Samsung KNOX-activering alleen uitgevoerd tijdens MDM-registratie als het apparaat wordt weergegeven in de [lijst met ondersteunde KNOX-apparaten](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Hierdoor wordt voorkomen dat er KNOX-activeringsfouten optreden waardoor MDM-registratie mislukt. Apparaten die geen ondersteuning bieden voor Samsung KNOX-activering, worden geregistreerd als standaard-Android-apparaten. Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor KNOX, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u Samsung-apparaten koopt en implementeert.
+
+De volgende Samsung-apparaatmodellen bieden geen ondersteuning voor KNOX en worden geregistreerd als systeemeigen Android-apparaten door de bedrijfsportal-app voor Android:
+
+| **Apparaatnaam** | **Apparaatmodelnummers** |
+| --- | --- |
+| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
+| Galaxy A5 | SM-A500G |
+| Galaxy Alpha | SM-G850M |
+| Galaxy Avant | SM-G386T |
+| Galaxy C9/C9 Pro | SM-C900F |
+| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
+| Galaxy Core Lite | SM-G3588V |
+| Galaxy Core Prime | SM-G360H |
+| Galaxy Core LTE | SM-G386F<br>SM-G386W |
+| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
+| Galaxy Grand 3 | SM-G7200 |
+| Galaxy Grand Neo | GT-I9060I |
+| Galaxy Grand Prime | SM-G530M |
+| Galaxy Grand Prime Value Edition | SM-G531H |
+| Galaxy J Max | SM-T285YD |
+| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
+| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
+| Galaxy J1 Mini | SM-J105M |
+| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
+| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
+| Galaxy J5 | SM-J500G |
+| Galaxy J7 | SM-J710F |
+| Galaxy J7 Prime | SM-J727T1 |
+| Galaxy K Zoom | SM-C115 |
+| Galaxy Light | SGH-T399N |
+| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
+| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
+| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
+| Galaxy Note 10.1 3G | SM-P602 |
+| Galaxy NotePRO 12.2&quot; | SM-P902 |
+| Galaxy On5 | SM-G570MSM-G570Y |
+| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
+| Galaxy S2 Plus | GT-I9105P |
+| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
+| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
+| Galaxy S4 | SM-S975L |
+| Galaxy S4 Active | GT-I9295 |
+| Galaxy S4 Neo | SM-G318ML |
+| Galaxy S5 | SM-G9006W<br>SM-G900M |
+| Galaxy S5 Neo | SM-G903M |
+| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
+| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
+| Galaxy Tab A 9.7&quot; | SM-P555M |
+| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
+| Galaxy Tab 3 8.0&quot; | SM-T311 |
+| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
+| Galaxy Trend 2 Lite | SM-G318H |
+| Galaxy V Plus | SM-G318HZ |
+| Galaxy Young 2 Duos | SM-G130BU |
+
+
 
 ### <a name="see-also"></a>Zie tevens
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,5 +1,5 @@
 ---
-title: Logboeken met diagnostische gegevens naar de IT-beheerder verzenden met een USB-kabel | Microsoft Docs
+title: Logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel | Microsoft Docs
 description: Gegevenslogboeken verzenden met behulp van een USB-kabel
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Logboeken naar uw IT-beheerder verzenden via een USB-kabel
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel
 
-Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u uw IT-beheerder helpen het probleem op te lossen door de beheerder informatie via e-mail te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
 
 > [!Note]
-> Voordat u begint, moet u ervoor zorgen dat u over het e-mailadres van de IT-beheerder beschikt. U kunt dit adres vinden in de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) of in uw bedrijfsportal-app.
+> Voordat u begint, moet u ervoor zorgen dat u over het e-mailadres van het ondersteuningsteam van het bedrijf beschikt. U kunt dit adres vinden in de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) of in uw bedrijfsportal-app.
 
 1.  Tik op het foutscherm op **Info verzenden**. Wanneer er een bericht wordt weergegeven waarin u wordt gevraagd welke methode u wilt gebruiken voor het verzenden van de logboeken, kiest u de optie waarbij de bestanden op uw apparaat worden opgeslagen.
 
@@ -35,6 +35,6 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat 
 
 3.  Zoek op de computer naar een map met de naam van uw apparaat. Zoek in die map naar **Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
 
-4.  Selecteer de bestanden en voeg ze als bijlage toe een e-mail. Verzend dit e-mailbericht naar uw IT-beheerder.
+4.  Selecteer de bestanden en voeg ze als bijlage toe een e-mail. Verzend dit e-mailbericht naar het ondersteuningsteam van het bedrijf.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -14,16 +14,16 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 668f105b65f5bdd8d05600a935aba3c0d46314d5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>U moet het op uw apparaat mogelijk maken om te scannen op beveiligingsrisico’s
 
-Op Android-apparaten kunnen apps worden gedownload en geïnstalleerd voor het uitvoeren van vele verschillende taken. Niet alle apps zijn echter hetzelfde, en sommige apps kunnen problemen veroorzaken. Een algemene aanbeveling is om alleen apps te downloaden van geverifieerde bronnen, zoals de Google Play Store. Uw IT-beheerder heeft ervoor gekozen om de gegevens op uw apparaat extra te beveiligen door Google de apps te laten scannen die u installeert; zo weet u zeker dat ze veilig zijn.
+Op Android-apparaten kunnen apps worden gedownload en geïnstalleerd voor het uitvoeren van vele verschillende taken. Niet alle apps zijn echter hetzelfde, en sommige apps kunnen problemen veroorzaken. Een algemene aanbeveling is om alleen apps te downloaden van geverifieerde bronnen, zoals de Google Play Store. Het ondersteuningsteam van uw bedrijf heeft ervoor gekozen om de gegevens op uw apparaat extra te beveiligen door Google de apps te laten scannen die u installeert. Zo weet u zeker dat deze veilig zijn.
 
 U kunt dit inschakelen via **Instellingen** > **Google** > **Beveiliging**. Schakel vervolgens **Apparaat scannen op beveiligingsrisico's** in.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

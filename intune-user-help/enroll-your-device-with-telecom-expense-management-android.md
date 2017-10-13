@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Uw Android-apparaat inschrijven voor Telecom Expense Management
 
@@ -30,7 +30,7 @@ Mogelijk gebruikt uw organisatie Telecom Expense Management-software om ervoor t
 
 Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) te installeren via de Google Play Store. Met de app Datalert kunt u volgen hoeveel data worden verbruikt binnen uw organisatie. Als uw organisatie de registratieoptie voor werk of school heeft geconfigureerd, moet u zich aanmelden met uw werk- of schoolaccount. Als dit nog niet is ingeschakeld, moet u informatie opgeven, zoals uw telefoonnummer, en moet u uw apparaat verifiëren met een code om het te registreren bij de service Datalert uit de app.
 
-Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaan. Uw IT-beheerder kan u vertellen of u zich moet aanmelden met uw __werk- of schoolaccount van Microsoft__ of met uw __telefoonnummer__.
+Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaan. Het ondersteuningsteam van het bedrijf kan u vertellen of u zich moet aanmelden met uw __werk- of schoolaccount van Microsoft__ of met uw __telefoonnummer__.
 
   ![Een schermafbeelding van het welkomstscherm van de app Datalert, waarin u wordt gevraagd om naar het volgende scherm te gaan. U ontvangt informatie over hoe u met Datalert het meeste uit uw data-abonnement kunt halen.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaa
 
 Na het inschrijven kunt u uw dataverbruik terugzien in de app Datalert.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-your-pin-or-password"></a>Uw pincode of wachtwoord instellen
 
-Mogelijk vraagt de IT-beheerder u op uw Android-apparaat een pincode of wachtwoord in te stellen wanneer u Intune gebruikt voor toegang tot de gegevens van uw werk- of schoolaccount. U ziet wellicht ook berichten die u vragen uw pincode of wachtwoord langer of complexer te maken om de veiligheid te vergroten. Deze toegangscodes worden bijvoorbeeld gebruikt voor toegang tot het apparaat vanaf het vergrendelingsscherm.
+Mogelijk vraagt het ondersteuningsteam van het bedrijf u op uw Android-apparaat een pincode of wachtwoord in te stellen wanneer u Intune gebruikt voor toegang tot de gegevens van uw werk- of schoolaccount. U ziet wellicht ook berichten die u vragen uw pincode of wachtwoord langer of complexer te maken om de veiligheid te vergroten. Deze toegangscodes worden bijvoorbeeld gebruikt voor toegang tot het apparaat vanaf het vergrendelingsscherm.
 
 U kunt de volgende stappen gebruiken om een pincode of wachtwoord in te stellen.
 
@@ -33,4 +33,4 @@ U kunt de volgende stappen gebruiken om een pincode of wachtwoord in te stellen.
 2.  Kies en bevestig uw nieuwe wachtwoord.
 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

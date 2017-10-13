@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS- of Mac OS-apparaat bij Intune registreert?
 
@@ -34,9 +34,9 @@ Wanneer u de bedrijfsportal-app installeert en uw iOS- of Mac OS-apparaat bij In
 
 -   Het e-mailaccount van uw bedrijf automatisch instellen.
 
-Wanneer u het apparaat inschrijft bij Intune, geeft u de IT-beheerder toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.
+Wanneer u het apparaat inschrijft bij Intune, geeft u het ondersteuningsteam van het bedrijf toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.
 
-Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelingen uitvoeren:
+Wanneer het apparaat is geregistreerd, kan het ondersteuningsteam van het bedrijf de volgende handelingen uitvoeren:
 
 -   Het apparaat opnieuw instellen op de standaardinstellingen van de fabrikant, als het apparaat is zoekgeraakt of gestolen.
 
@@ -62,4 +62,4 @@ Wanneer het apparaat is ingeschreven, kan uw IT-beheerder de volgende handelinge
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](https://portal.manage.microsoft.com).
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
