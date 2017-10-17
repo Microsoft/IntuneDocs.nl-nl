@@ -2,8 +2,8 @@
 title: Groepen gebruiken voor het beheren van gebruikers en apparaten
 description: Groepen maken en beheren met behulp van de werkruimte Groepen.
 keywords: 
-author: Mtillman
-ms.author: mtillman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8c5acd617e9d69fa23455d382dfd78518e52515b
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 6ca73c6d84c6f4b63c4d7b0cb544dc7998224821
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Groepen gebruiken om gebruikers en apparaten te beheren in Microsoft Intune
 
