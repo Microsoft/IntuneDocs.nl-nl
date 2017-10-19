@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7730a799176a74f1ddb8e4b5e49a110229255428
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -70,7 +70,7 @@ De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
-De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het apparaattype waarnaar wordt verwezen door andere datawarehousetabellen.
+De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het registratietype waarnaar wordt verwezen door andere datawarehousetabellen.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|

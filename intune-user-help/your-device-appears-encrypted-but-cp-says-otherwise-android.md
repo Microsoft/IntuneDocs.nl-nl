@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Uw Android-apparaat lijkt versleuteld te zijn, maar de Bedrijfsportal geeft anders aan
 
@@ -39,6 +39,15 @@ Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te
 ### <a name="downgrade-your-version-of-android"></a>Uw versie van Android downgraden
 
 Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+
+### <a name="encrypt-the-entire-device"></a>Het hele apparaat versleutelen
+
+Op sommige apparaten kunt u kiezen of u het hele apparaat of alleen de gebruikte ruimte wilt versleutelen. Kies de optie om het hele apparaat te versleutelen in plaats van 'Alleen gebruikte ruimte'. Als u alleen de gebruikte ruimte al hebt versleuteld:
+
+1. [Verwijder dit apparaat uit de bedrijfsportal](unenroll-your-device-from-intune-android.md)
+2. Ontsleutel de gebruikte ruimte
+3. Versleutel het hele apparaat
+4. Schrijf het apparaat opnieuw in
 
 ## <a name="specific-manufacturer-issues"></a>Fabrikant-specifieke problemen
 

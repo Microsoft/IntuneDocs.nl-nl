@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -53,7 +53,7 @@ Deze mogelijkheden kunnen niet worden beheerd in de Intune-console (Silverlight)
 - Ze in de klassieke portal uitschakelen
 - Ze in de Azure-portal inschakelen  
 
-Na 11 september 2017 wordt de migratie van deze functies samengevoegd in de primaire migratie naar Azure. Als uw account al werd gemigreerd om de Azure-portal te gebruiken, zal deze secundaire migratie plaatsvinden tussen 11 en 22 september 2017. De migratie van uw account wordt voltooid op dezelfde dag waarop deze wordt begonnen. De migratie kan tot 6 uur duren vanaf het moment waarop deze functies in de klassieke Intune-portal zijn uitgeschakeld.
+Na 22 september 2017 wordt de migratie van deze functies samengevoegd in de primaire migratie naar Azure. Als uw account al werd gemigreerd om de Azure-portal te gebruiken, is deze secundaire migratie nu misschien voltooid. Als dit niet het geval is, zullen deze mogelijkheden in november naar Azure zijn gemigreerd. De migratie van uw account wordt voltooid op dezelfde dag waarop deze wordt begonnen. De migratie kan tot 6 uur duren vanaf het moment waarop deze functies in de klassieke Intune-portal zijn uitgeschakeld.
 
 Als u deze Intune-mogelijkheden nu in Azure Portal beheert, moet u rekening houden met de volgende punten:
 

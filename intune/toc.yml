@@ -536,6 +536,8 @@
       items:
         - name: Verbinding maken met het datawarehouse met Power BI
           href: reports-proc-get-a-link-powerbi.md
+        - name: Een rapport maken van de OData-feed met Power BI
+          href: reports-proc-create-with-odata.md
 - name: Automatiseren en aanpassen
   items:
     - name: Aangepaste apparaatinstellingen configureren
