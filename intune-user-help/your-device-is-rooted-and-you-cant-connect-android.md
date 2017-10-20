@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a91b167911d203cd3bd1e7645e5cacbc2eb6534
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Uw Android-apparaat is geroot, waardoor u geen verbinding kunt maken
 
@@ -32,6 +32,6 @@ Er zijn een paar algemene manieren waarop uw apparaat kan zijn geroot:
 
 - U hebt mogelijk een app op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Als dit bericht ziet meteen wordt weergegeven nadat u een app hebt geïnstalleerd, verwijdert u de app.
 
-- De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. In dit geval moet u contact opnemen met uw IT-beheerder ondersteuning. Ga voor de contactgegevens naar de [bedrjifsportalwebsite](http://portal.manage.microsoft.com).
+- De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Neem in dit geval contact op met het ondersteuningsteam van het bedrijf voor hulp. Ga voor de contactgegevens naar de [bedrjifsportalwebsite](https://portal.manage.microsoft.com).
 
 Als u het apparaat zelf hebt geroot, moet u het proces ongedaan maken en het apparaat herstellen naar de niet-geroote staat.

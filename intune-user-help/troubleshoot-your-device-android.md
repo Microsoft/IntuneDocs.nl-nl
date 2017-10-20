@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Veelvoorkomende problemen met uw Android-apparaat herstellen
 
-Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor meer gecompliceerde problemen kunt u het best contact opnemen met uw IT-beheerder via de contactgegevens op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 - [Naleving op uw Android-apparaat controleren](check-compliance-on-your-device-android.md)
-- [Uitgebreide logboekregistratie gebruiken zodat de IT-beheerder problemen met het apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Logboeken naar uw IT-beheerder verzenden via e-mail](send-logs-to-your-it-admin-by-email-android.md)
-- [Logboeken naar uw IT-beheerder verzenden via een USB-kabel](send-logs-to-your-it-admin-using-cable-android.md)
-- [Registratiefouten naar uw IT-beheerder verzenden](send-enrollment-errors-to-your-it-admin-android.md)
+- [Uitgebreide logboekregistratie gebruiken zodat het ondersteuningsteam van het bedrijf problemen met het apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden](send-logs-to-your-it-admin-by-email-android.md)
+- [Logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel](send-logs-to-your-it-admin-using-cable-android.md)
+- [Fouten bij de registratie naar het ondersteuningsteam van het bedrijf verzenden](send-enrollment-errors-to-your-it-admin-android.md)
 - [U moet uw Android-apparaat bijwerken](you-need-to-update-your-android-device.md)
 - [Het apparaat voldoet niet aan de vereiste voor de maximaal toegestane besturingssysteemversie](your-android-version-isnt-yet-supported.md)
 - [Uw apparaat is geroot en u kunt geen verbinding maken](your-device-is-rooted-and-you-cant-connect-android.md)

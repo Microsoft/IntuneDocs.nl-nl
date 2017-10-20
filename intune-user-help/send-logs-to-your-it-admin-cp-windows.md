@@ -1,5 +1,5 @@
 ---
-title: Logboeken naar de IT-beheerder voor Windows 10-apparaten verzenden
+title: Logboeken verzenden naar het ondersteuningsteam van het bedrijf voor Windows 10-apparaten | Microsoft Docs
 description: Een Windows 10 versie 1511-apparaat inschrijven in Intune
 keywords: 
 author: barlanmsft
@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 47e6b663cead876b1b19f61d02efed81be4d0dbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-from-the-company-portal-app-for-windows-10"></a>Logboeken naar de IT-beheerder verzenden via de bedrijfsportal-app voor Windows 10
+# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Logboeken verzenden naar het ondersteuningsteam van het bedrijf via de bedrijfsportal-app voor Windows 10
 
-Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Windows 10-apparaat gebruikt, kunt u de IT-beheerder helpen het probleem op te lossen door deze via e-mail informatie toe te sturen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Windows 10-apparaat gebruikt, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
 
 1.  Open de app **Bedrijfsportal**.
 2.  Selecteer het tandwielpictogram **Instellingen** en vervolgens **Logboeken verzenden**.
-3.  Het venster **Delen** wordt weergegeven. Selecteer **Mail**. Hiermee maakt u een e-mailbericht waaraan de bedrijfsportallogboeken zijn toegevoegd die naar de IT-beheerder kunnen worden verzonden.
+3.  Het venster **Delen** wordt weergegeven. Selecteer **Mail**. Hiermee maakt u een e-mailbericht waaraan de bedrijfsportallogboeken zijn toegevoegd die naar het ondersteuningsteam van het bedrijf kunnen worden verzonden.
 
-  ![Het dialoogvenster Logboeken verzenden op de pagina Instellingen van de bedrijfsportal-app. Op de koppeling waarop u moet klikken, wordt 'Logboeken verzenden: verzend diagnostische logboeken naar de IT-beheerder voor het oplossen van problemen in de bedrijfsportal' vermeld.](./media/w10-share-logs.png)
+  ![Het dialoogvenster Logboeken verzenden op de pagina Instellingen van de bedrijfsportal-app. Op de koppeling waarop u moet klikken, wordt 'Logboeken verzenden: verzend diagnostische logboeken naar het ondersteuningsteam van het bedrijf voor het oplossen van problemen in de bedrijfsportal' vermeld.](./media/w10-share-logs.png)
 
-U moet mogelijk ook [logboeken van de Instellingen-app](send-logs-to-your-it-admin-settings-windows.md) verzenden om de IT-beheerder te ondersteunen bij het oplossen van problemen die worden aangetroffen. 
+U moet mogelijk ook [logboeken van de Instellingen-app](send-logs-to-your-it-admin-settings-windows.md) verzenden om het ondersteuningsteam van het bedrijf te ondersteunen bij het oplossen van problemen die worden aangetroffen. 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

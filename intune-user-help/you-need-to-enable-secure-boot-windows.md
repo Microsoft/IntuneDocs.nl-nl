@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>U moet Beveiligd opstarten inschakelen
 
 Uw organisatie vereist dat u de Windows-functie Beveiligd opstarten inschakelt. Dit is een beveiligingsfunctie waarmee u uw apparaat beschermt.
 
-Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Als u een mobiel apparaat gebruikt, neemt u contact op met uw IT-beheerder voor hulp.
+Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Als u een mobiel apparaat gebruikt, neemt u contact op met het ondersteuningsteam van het bedrijf voor hulp.
 
-Als u een pc gebruikt, neemt u contact op met uw IT-beheerder of raadpleegt u de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u zelf wilt proberen om Beveiligd opstarten in te schakelen.
+Als u een pc gebruikt, neemt u contact op met het ondersteuningsteam van het bedrijf of raadpleegt u de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u zelf wilt proberen om Beveiligd opstarten in te schakelen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -1,6 +1,6 @@
 ---
 title: Apple DEP-beheer voor iOS-apparaten
-description: "'Draadloos' een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program (DEP) zijn aangeschaft om Apple-apparaten te beheren."
+description: Draadloos een registratieprofiel waarmee iOS-apparaten worden geregistreerd die via het Device Enrollment Program (DEP) zijn aangeschaft, implementeren om Apple-apparaten te beheren.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8ca8eaede9df070baf1f39023942a8b07c54b814
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>iOS-apparaten in bedrijfseigendom met het Device Enrollment Program inschrijven
 
@@ -28,7 +29,7 @@ Microsoft Intune kan 'draadloos' een inschrijvingsprofiel implementeren op iOS-a
 
 >[!NOTE]
 >Inschrijving via DEP kan niet worden gebruikt bij de methode van de [apparaatinschrijvingsmanager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Ook als gebruikers iOS-apparaten inschrijven (d.w.z. via de bedrijfsportal-app) en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt het apparaat uitgeschreven bij Intune.
+>Als gebruikers hun iOS-apparaten registreren (via de bedrijfsportal-app) en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt de registratie van het apparaat opgeheven bij Intune.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Vereisten voor de inschrijving van iOS-apparaten met behulp van Apple DEP-beheer
 

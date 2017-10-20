@@ -5,7 +5,7 @@ keywords: Mac OS X, Mac OS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Uw Mac OS-apparaat registreren bij Intune
 
-Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie krijgt u uw werkzaamheden gedaan. Als u een Mac OS-apparaat op het werk gebruikt, betekent dit dat u een __beheerprofiel__ moet installeren. Dit is gewoon een bestand dat door uw IT-beheerder wordt ingesteld en dat instellingen laadt en toegang verkrijgt tot informatie op uw Mac. Wilt u meer weten? Lees [wat er gebeurt als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie krijgt u uw werkzaamheden gedaan. Als u een Mac OS-apparaat op het werk gebruikt, betekent dit dat u een __beheerprofiel__ moet installeren. Dit is gewoon een bestand dat door het ondersteuningsteam van het bedrijf wordt ingesteld en dat instellingen laadt en toegang verkrijgt tot informatie op uw Mac. Wilt u meer weten? Lees [wat er gebeurt als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-  > [!NOTE]
-  > Als u een iOS-apparaat probeert te registreren, zoals een iPhone of iPad, [volgt u in plaats daarvan deze instructies](enroll-your-device-in-intune-ios.md).
-
-1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Wanneer u zich aanmeldt, ziet u alle beschikbare tabbladen: __Home__, __Apps__ en __Categorieën__. Op deze pagina ziet u alle beschikbare apps die u kunt installeren. Als u nog geen apparaten hebt ingeschreven, ziet u de volgende melding **We kunnen u geen apps tonen.** U kunt doorgaan door __Mijn apparaten__ te selecteren.
+3. Nadat u zich hebt aangemeld, klik u op het **Menu** in de linkerbovenhoek van de pagina en selecteert u **Mijn apparaten**.
 
  ![Een schermafbeelding van de startpagina voor de web-portal waarin wordt aangegeven dat er nog geen apps kunnen worden geïnstalleerd, met een knop Mijn apparaten eronder.](./media/macOS_enroll_001_landing_page.png)
 
-4. Op de pagina __Mijn apparaten__ ziet u ofwel een lijst van geregistreerde apparaten of gewoon een koptekst. Dit is afhankelijk van of u al een apparaat hebt ingeschreven, macOS of anderszins. Om een apparaat in te schrijven dat niet wordt weergegeven, selecteert u de koptekst __Klik hier als uw apparaat in de lijst voorkomt om het te identificeren. U kunt ook hier tikken om uw apparaat in te schrijven als dit niet wordt weergegeven__.
+4. Op de pagina __Mijn apparaten__ ziet u ofwel een lijst van geregistreerde apparaten of gewoon een koptekst. Dit is afhankelijk van of u al een apparaat hebt ingeschreven, macOS of anderszins. Om een apparaat in te schrijven dat niet wordt weergegeven, selecteert u de koptekst __Klik hier als uw apparaat in de lijst voorkomt om het te identificeren. U kunt ook hier tikken om uw apparaat in te schrijven als dit niet wordt weergegeven__. Als u geen geregistreerde apparaten hebt, toont de banner **U hebt geen apparaten geregistreerd. U kunt dit apparaat registreren door hier te tikken.**
 
   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -65,4 +62,6 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
 
  ![Mac OS-profiel geïnstalleerd](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Bij sommige profielen kan staan dat ze **Niet geverifieerd** zijn; zolang ze van uw bedrijf zijn, is dit normaal.
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
