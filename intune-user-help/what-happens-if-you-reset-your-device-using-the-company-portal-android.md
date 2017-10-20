@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Wat gebeurt er als u uw Android-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
@@ -28,8 +28,8 @@ Wanneer u de bedrijfsportal gebruiken om uw Android-apparaat opnieuw in te stell
 
 Als u een Samsung KNOX-apparaat hebt, kunt u 'selectief wissen' door in de bedrijfsportal de optie **Apparaat verwijderen** te kiezen. Met selectief wissen worden alleen de volgende zaken verwijderd:
 
-- Zakelijke apps die de IT-beheerder voor u beschikbaar maakt.
+- Zakelijke apps die het ondersteuningsteam van het bedrijf voor u beschikbaar maakt.
 - E-mail, VPN en Wi-Fi.
-- De mogelijkheid van uw IT-beheerder om bepaalde instellingen af te dwingen.
+- De mogelijkheid van het ondersteuningsteam van het bedrijf om bepaalde instellingen af te dwingen.
 
-Neem contact op met de IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

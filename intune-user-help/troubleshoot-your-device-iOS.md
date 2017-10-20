@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Veelvoorkomende problemen met uw iOS-apparaat herstellen
 
-Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor meer gecompliceerde problemen kunt u het best contact opnemen met uw IT-beheerder via de contactgegevens op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 - [Ik moet opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
-- [Ik wil fouten naar mijn IT-beheerder verzenden](send-errors-to-your-it-admin-ios.md)
+- [Ik wil fouten naar het ondersteuningsteam van mijn bedrijf verzenden](send-errors-to-your-it-admin-ios.md)
 - [Ik wil fouten naar Microsoft verzenden](send-logs-to-microsoft-ios.md)
 - [Er treedt een fout op tijdens het gebruik van de Bedrijfsportal-app](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Ik moet mijn apparaat identificeren om in te schrijven](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

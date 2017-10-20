@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -70,7 +70,7 @@ De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
-De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het apparaattype waarnaar wordt verwezen door andere datawarehousetabellen.
+De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het registratietype waarnaar wordt verwezen door andere datawarehousetabellen.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
@@ -106,7 +106,7 @@ De entiteit **EnrollmentTypes** geeft aan hoe een apparaat is geregistreerd. Met
 
 | enrollmentTypeID  | Naam | Beschrijving |
 |---------|------------|--------|
-| 0 |Onbekend |Onbekend registratietype |
+| 0 |Onbekend |Registratietype is niet verzameld |
 | 1 |UserEnrollment |Door de gebruiker geïnitieerde registratie |
 | 2 |DeviceEnrollment |Apparaatregistratie met profiel zonder gebruiker |
 | 3 |DeviceEnrollmentWithUDA |Apparaatregistratie met UDA-profiel. |

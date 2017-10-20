@@ -2,8 +2,8 @@
 title: iOS-apps verpakken met de Intune App Wrapping Tool
 description: Gebruik de informatie in dit onderwerp om meer te leren over het verpakken van uw iOS-apps zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 06/12/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f9d27a9cc1893fc28f27a603403f02fcad514ad0
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 109b0867f207742f56886f723c1646432b1260ca
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -348,7 +348,7 @@ Als door de App Wrapping Tool voor iOS een fout met de rechten wordt weergegeven
 |Probleem|Oorzaak|Oplossing|
 |---------|---------|--------------|
 |Het parseren van rechten die zijn gegenereerd uit de invoertoepassing is mislukt.|Het rechtenbestand dat is opgehaald uit de app kan niet door de App Wrapping Tool worden gelezen. Het rechtenbestand is mogelijk ongeldig.|Controleer het rechtenbestand voor uw app. Hieronder wordt beschreven hoe u dit doet. Controleer bij de inspectie van het rechtenbestand op ongeldige syntaxis. Het bestand moet de XML-indeling hebben.|
-|Er ontbreken rechten in het inrichtingsprofiel (de ontbrekende rechten worden weergegeven). Verpak de app opnieuw met een inrichtingsprofiel dat deze rechten bevat.|De rechten die zijn ingeschakeld in het inrichtingsprofiel en de mogelijkheden die zijn ingeschakeld in de app komen niet overeen. Dit verschil geldt ook voor de id's die zijn gekoppeld aan specifieke mogelijkheden (zoals app-groepen en toegang tot de sleutelketen).|Over het algemeen is het mogelijk om een nieuw inrichtingsprofiel te maken waarmee dezelfde mogelijkheden kunnen worden ingeschakeld als voor de app. Wanneer de id's van het profiel en de app niet overeenkomen, worden deze, indien mogelijk, door de App Wrapping Tool vervangen. Als u nog steeds deze foutmelding krijgt nadat u een nieuw inrichtingsprofiel hebt gemaakt, kunt u de rechten van de app verwijderen met de parameter –e (zie de sectie De parameter–e gebruiken om rechten te verwijderen uit een app).|
+|Er ontbreken rechten in het inrichtingsprofiel (de ontbrekende rechten worden weergegeven). Verpak de app opnieuw met een inrichtingsprofiel dat deze rechten bevat.|De rechten die zijn ingeschakeld in het inrichtingsprofiel en de mogelijkheden die zijn ingeschakeld in de app komen niet overeen. Dit verschil geldt ook voor de id's die zijn gekoppeld aan specifieke mogelijkheden (zoals app-groepen en toegang tot de sleutelketen).|Over het algemeen is het mogelijk om een nieuw inrichtingsprofiel te maken waarmee dezelfde mogelijkheden kunnen worden ingeschakeld als voor de app. Wanneer de id’s van het profiel en de app niet overeenkomen, worden deze, indien mogelijk, door de App Wrapping Tool vervangen. Als u nog steeds deze foutmelding krijgt nadat u een nieuw inrichtingsprofiel hebt gemaakt, kunt u de rechten van de app verwijderen met de parameter –e (zie de sectie De parameter–e gebruiken om rechten te verwijderen uit een app).|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>De bestaande rechten van een ondertekende app zoeken
 U kunt als volgt de bestaande rechten van een ondertekende app en inrichtingsprofiel bekijken:

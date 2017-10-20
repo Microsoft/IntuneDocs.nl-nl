@@ -14,15 +14,15 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5ee77c0889228080d4ea9dcd5c27fe8225865a6a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>U moet het besturingssysteem van uw Android-apparaat bijwerken
 
-Als er een bericht wordt weergegeven met de boodschap dat het minimale niveau voor de Android-beveiligingspatch niet is geconfigureerd, moet u een update installeren om de beveiliging van uw apparaat te waarborgen. Een _patch_ wordt uitgebracht om ervoor te zorgen dat uw software probleem blijft werken en up-to-date is. De IT-beheerder eist dat u deze patch installeert om ervoor te zorgen dat de bedrijfsgegevens op uw apparaat zo goed mogelijk worden beveiligd. De locatie van de benodigde beveiligingspatch varieert en is afhankelijk van het specifieke type Samsung-apparaat dat u hebt.
+Als er een bericht wordt weergegeven met de boodschap dat het minimale niveau voor de Android-beveiligingspatch niet is geconfigureerd, moet u een update installeren om de beveiliging van uw apparaat te waarborgen. Een _patch_ wordt uitgebracht om ervoor te zorgen dat uw software probleem blijft werken en up-to-date is. Het ondersteuningsteam van uw bedrijf wil dat u deze patch installeert om ervoor te zorgen dat de bedrijfsgegevens op uw apparaat zo goed mogelijk worden beveiligd. De locatie van de benodigde beveiligingspatch varieert en is afhankelijk van het specifieke type Samsung-apparaat dat u hebt.
 
 Als u een Samsung-apparaat hebt, gaat u naar **Instellingen** > **Over de telefoon** en controleert u of ergens 'KNOX' wordt weergegeven op het scherm. Als dit het geval is, volgt u de onderstaande instructies voor Samsung KNOX.
 
@@ -38,4 +38,4 @@ Ga naar **Instellingen** > **Systeemupdates** > **Controleren op nieuwe systeemu
 
 
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

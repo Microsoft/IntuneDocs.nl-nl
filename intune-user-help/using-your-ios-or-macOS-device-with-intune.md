@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 09ccff78188e81565b4ec464a37908ab6919a1a3
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-your-ios-or-macos-device-with-intune"></a>Uw iOS- of Mac OS-apparaat gebruiken met Intune
 
@@ -28,7 +28,7 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 
 ## <a name="supported-versions"></a>Ondersteunde versies
 
-Intune ondersteunt momenteel Android 8.0 en hoger. Daarnaast wordt macOS 10.9 Mavericks 10.9 of hoger ondersteund. 
+Intune ondersteunt momenteel iOS 9.0 en hoger. Daarnaast wordt macOS 10.9 Mavericks 10.9 of hoger ondersteund. 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 

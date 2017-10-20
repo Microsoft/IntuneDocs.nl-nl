@@ -1,5 +1,5 @@
 ---
-title: Fouten naar uw IT-beheerder verzenden | Microsoft Docs
+title: Fouten naar het ondersteuningsteam van het bedrijf verzenden | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Fouten voor problemen met uw iOS-apparaat naar uw IT-beheerder verzenden
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Fouten naar het ondersteuningsteam van uw bedrijf verzenden wanneer u problemen ondervindt met uw iOS-apparaat
 
-Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw iOS-apparaat, kunt u informatie naar uw IT-beheerder verzenden, zodat deze kan helpen bij het oplossen van het probleem. U kunt de foutgegevens op verschillende manieren verzenden:
+Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw iOS-apparaat, kunt u informatie naar het ondersteuningsteam van uw bedrijf verzenden, zodat ze kunnen helpen bij het oplossen van het probleem. U kunt de foutgegevens op verschillende manieren verzenden:
 
 -   Tik in waarschuwingsberichten over fouten op **Rapporteren**.
 
@@ -32,4 +32,4 @@ Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw iOS-a
 
 -   Zorg ervoor dat u in de bedrijfsportal-app bent, schud het apparaat heen en weer en tik op **Diagnostisch rapport verzenden** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, open dan **Instellingen** > **Bedrijfsportal** en controleer of de optie **Schudden** is ingeschakeld.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

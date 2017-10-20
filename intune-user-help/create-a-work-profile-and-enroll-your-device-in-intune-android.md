@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Een werkprofiel maken en uw apparaat registreren bij Intune
 
-Door een Android-apparaat te registreren, hebt u toegang tot e-mail, apps en andere werkgegevens van het bedrijf. Als onderdeel van de inschrijving moet u een werkprofiel instellen dat de persoonlijke gegevens op uw apparaat onderscheidt van uw werkgegevens. Uw IT-beheerder kan alleen het werkprofiel beheren waarin uw werkgegevens staan. Uw IT-beheerder kan niet de persoonlijke gegevens op uw apparaat beheren. Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.
+Door een Android-apparaat te registreren, hebt u toegang tot e-mail, apps en andere werkgegevens van het bedrijf. Als onderdeel van de inschrijving moet u een werkprofiel instellen dat de persoonlijke gegevens op uw apparaat onderscheidt van uw werkgegevens.
+
+Het ondersteuningsteam van het bedrijf kan alleen het werkprofiel beheren dat uw werkgegevens bevat. Het ondersteuningsteam van het bedrijf kan niet de persoonlijke gegevens op uw apparaat beheren. Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.
 
 Ga als volgt te werk om een werkprofiel te maken:
 
@@ -32,27 +34,27 @@ Ga als volgt te werk om een werkprofiel te maken:
 
     ![Aanmeldingsscherm van de Android-bedrijfsportal-app](./media/and-enroll-0-welcome-screen.png)
 
-2. Tik in het scherm **Instellen van bedrijfstoegang** op **STARTEN**.
+2. Tik in het scherm **Instellen van bedrijfstoegang** op **DOORGAAN**.
 
-    ![Het scherm Instellen van bedrijfstoegang](./media/andr-afw-begin-company-access-setup.png)
+    ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  Lees op het scherm **Waarom een werkprofiel maken?** wat u kunt doen en tik vervolgens op **DOORGAAN**.
 
     ![Waarom een werkprofiel maken](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
+4.  Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
 
-    ![Wat de IT-beheerder wel en niet kan zien op uw apparaat](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![Wat het ondersteuningsteam van het bedrijf wel en niet kan zien op uw apparaat](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Lees op het scherm **De volgende stap** wat er daarna gebeurt en tik vervolgens op **DOORGAAN**.
+5.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
 
-    ![Het scherm De volgende stap](./media/andr-afw-what-comes-next.png)
+    ![Scherm De volgende stap](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. Tik op het scherm **Werkprofiel instellen** op **VOLGENDE** om de bedrijfsportal-app toegang tot het werkprofiel te geven.
 
     ![De bedrijfsportal-app toegang tot het werkprofiel geven](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Controleer het Google-scherm waarin wordt beschreven wat de IT-beheerder kan wanneer u een werkprofiel maakt en tik op **OK**.
+7. Controleer het Google-scherm waarin wordt beschreven wat het ondersteuningsteam van het bedrijf kan wanneer u een werkprofiel maakt en tik op **OK**.
 
     ![Informatie van Google over werkprofielen bekijken](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ Ga als volgt te werk om een werkprofiel te maken:
 
     U ziet kort het bericht 'Uw apparaat inschrijven'.
 
-11. Wanneer u in het scherm **Instellen van bedrijfstoegang** ziet dat alles correct is ingesteld, tikt u op **DOORGAAN**.
+11. Wanneer in het scherm **U bent klaar** wordt aangegeven dat alles juist is ingesteld, tikt u op **DOORGAAN**.
 
-    ![Indicatie in het scherm Instellen van bedrijfstoegang dat het werkprofiel en de registratie van uw apparaat zijn voltooid](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. Tik in het scherm **Instellen van bedrijfstoegang is voltooid** op **GEREED**. Mogelijk moet u extra stappen uitvoeren als uw IT-beheerder andere vereisten heeft toegevoegd.
-
-    ![Instellen van bedrijfstoegang is voltooid](./media/andr-afw-company-access-setup-complete.png)
+    ![Indicatie in het scherm Instellen van bedrijfstoegang dat het werkprofiel en de registratie van uw apparaat zijn voltooid](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     U kunt nu bedrijfsapps downloaden uit de Play Store for Work.
 
     ![Pagina voor Play Store for Work-apps](./media/andr-afw-tap-work-play-store-icon.png)
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

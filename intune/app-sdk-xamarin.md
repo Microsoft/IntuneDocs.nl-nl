@@ -2,9 +2,9 @@
 title: Intune App SDK Xamarin-onderdeel
 description: 
 keywords: SDK, Xamarin, intune
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: mtillman
+ms.author: mabriggs
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a684f7ab5841513e8e72a5e6c0af99f52e5fd207
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 8ab9807d22aa1a5c232b595df2bd999c0c178b16
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Intune App SDK Xamarin-onderdeel
 
@@ -43,7 +43,7 @@ Met de Microsoft Intune App SDK Xamarin Component kunt u Intune-beveiligingsbele
 * iOS
 
 
-### <a name="intune-mobile-application-management-scenarios"></a>Scenario's voor Intune Mobile Application Management
+### <a name="intune-mobile-application-management-scenarios"></a>Scenario’s voor Intune Mobile Application Management
 
 * Apparaten die zijn ingeschreven bij Intune MDM
 * Apparaten die zijn ingeschreven bij EMM van derden
@@ -121,4 +121,4 @@ Voor Xamarin Forms en andere UI-frameworks hebben we het hulpprogramma `MAM.Rema
 
 ## <a name="next-steps"></a>Volgende stappen
 
-U hebt de basisstappen voor het inbouwen van het onderdeel in uw app voltooid. U kunt nu de stappen in de Xamarin Android-voorbeeld-app volgen. We bieden twee voorbeelden, één voor Xamarin.Forms en het andere voor Android.
+U hebt de basisstappen voor het inbouwen van het onderdeel in uw app voltooid. U kunt nu de stappen in de Xamarin Android-voorbeeldapp volgen. We bieden twee voorbeelden, één voor Xamarin.Forms en het andere voor Android.

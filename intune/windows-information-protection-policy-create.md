@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -155,16 +155,13 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
 
 ### <a name="use-wip-learning"></a>WIP Learning gebruiken
 
-1. Ga naar het Azure-dashboard. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Open de Azure-portal. Kies **Meer services**. Type **Intune** in het tekstvakfilter.
 
-2. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+3. Kies **Intune** > **Mobiele apps**.
 
-3. Kies **Intune**. Het **Intune-dashboard** wordt geopend en kies vervolgens **mobiele Apps**.
-
-4. Kies **WIP Learning** onder **Controleren**. U ziet de onbekende apps die zijn vastgelegd door WIP Learning.
-
-> [!IMPORTANT]
-> Zodra de apps worden weergegeven in het rapport voor de logboekregistratie van WIP, kunt u de apps toevoegen aan de beveiligingsbeleidsregels voor uw app.
+4. Kies **Status van de app-beveiliging** > **Rapporten** > **Kennismaken met Windows Information Protection**.  
+ 
+    Zodra de apps worden weergegeven in het rapport voor de logboekregistratie van WIP, kunt u deze toevoegen aan de beveiligingsbeleidsregels voor uw app.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Uw WIP-beveiligingsbeleid voor apps implementeren
 

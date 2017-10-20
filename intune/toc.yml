@@ -316,6 +316,8 @@
               href: vpn-settings-android.md
             - name: iOS
               href: vpn-settings-ios.md
+            - name: VPN per app voor iOS-apparaten configureren
+              href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
             - name: Windows 8.1
@@ -534,6 +536,8 @@
       items:
         - name: Verbinding maken met het datawarehouse met Power BI
           href: reports-proc-get-a-link-powerbi.md
+        - name: Een rapport maken van de OData-feed met Power BI
+          href: reports-proc-create-with-odata.md
 - name: Automatiseren en aanpassen
   items:
     - name: Aangepaste apparaatinstellingen configureren

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Uw Windows 8.1- of Windows RT 8.1-apparaat inschrijven bij Intune
 
-Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat de IT-beheerder kan zien op het apparaat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over registratie.
+Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw apparaten registreren voor toegang tot zakelijke e-mail, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat het ondersteuningsteam van het bedrijf kan zien op het apparaat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over registratie.
 
 
 Ga als volgt te werk om uw Windows 8.1- of Windows RT 8.1-apparaat te registreren:
@@ -45,7 +45,7 @@ Ga als volgt te werk om uw Windows 8.1- of Windows RT 8.1-apparaat te registrere
 
     ![apparaatbeheer-inschakelen](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  Schakel in het dialoogvenster **Apps en services van IT-beheerder toestaan** het selectievakje **Ik ga akkoord** in en tik op **Inschakelen**.
+5.  Schakel in het dialoogvenster **Apps en services van het ondersteuningsteam van het bedrijf toestaan** het selectievakje **Ik ga akkoord** in en tik op **Inschakelen**.
 
     ![toestaan-apps-services-inschakelen](./media/W81-4-agree-allow-apps-services.png)
 
@@ -63,4 +63,4 @@ Het wordt ook aangeraden de bedrijfsportal-app te installeren, waarmee u eenvoud
 
 4.  Tik op **Installeren** of **Gratis**. De optie die wordt weergegeven is afhankelijk van hoe de app binnen uw bedrijf is ingesteld.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

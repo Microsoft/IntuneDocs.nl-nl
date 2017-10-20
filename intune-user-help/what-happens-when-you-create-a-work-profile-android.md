@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Wat gebeurt er wanneer u een werkprofiel maakt
 
@@ -28,9 +28,9 @@ Een werkprofiel is iets dat u instelt op het apparaat om uw e‑mail, apps en be
 
 Houd rekening met het volgende wanneer u een werkprofiel maakt:
 
-- De IT-beheerder kan alleen de e-mail, apps, instellingen en gegevens voor uw bedrijf op uw apparaat beheren, geen persoonlijke apps of gegevens.
+- Het ondersteuningsteam van het bedrijf kan alleen de e-mail, apps, instellingen en gegevens voor uw bedrijf op uw apparaat beheren, geen persoonlijke apps of gegevens.
 
-- U krijgt bedrijfsapps uit de Play Store for Work. Als u persoonlijke apps wilt, gaat u naar de Google Play-store die u altijd gebruikt voor het downloaden of kopen van persoonlijke apps. De IT-beheerder kan uw persoonlijke apps niet zien of beheren.
+- U krijgt bedrijfsapps uit de Play Store for Work. Als u persoonlijke apps wilt, gaat u naar de Google Play-store die u altijd gebruikt voor het downloaden of kopen van persoonlijke apps. Het ondersteuningsteam van het bedrijf kan uw persoonlijke apps niet zien of beheren.
 
 - Bedrijfsapps worden gescheiden van uw persoonlijke apps, maar ze kunnen samen worden weergegeven op het startscherm. Hieronder ziet u een voorbeeld. Op uw scherm kan dit er iets anders uitzien.
 
@@ -38,9 +38,9 @@ Houd rekening met het volgende wanneer u een werkprofiel maakt:
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- Uw bedrijf of school is eigenaar van uw werkprofiel zodat uw IT-beheerder bedrijfsapps of uw profiel kan installeren of verwijderen, maar niet uw persoonlijke apps of gegevens.
-- De IT-beheerder kan uw apparaat niet opnieuw instellen of wissen.
+- Uw bedrijf of school is eigenaar van uw werkprofiel, waardoor het ondersteuningsteam van het bedrijf bedrijfsapps of uw profiel kan installeren of verwijderen, maar niet uw persoonlijke apps of gegevens.
+- Het ondersteuningsteam van het bedrijf kan uw apparaat niet opnieuw instellen of wissen.
 
 Zie [Een werkprofiel maken en uw apparaat registreren](create-a-work-profile-and-enroll-your-device-in-intune-android.md) voor de stapsgewijze procedure voor het maken van een werkprofiel.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

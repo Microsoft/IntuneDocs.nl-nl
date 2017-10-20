@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Uw Android-apparaat inschrijven bij Intune
 
@@ -30,21 +30,19 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Android-ap
 
 Deze registratie-instructies zijn bestemd voor 'native' en Samsung KNOX Android-apparaten. Samsung KNOX is een beveiligingstype dat door sommige Samsung-apparaten wordt gebruikt als extra bescherming naast de beveiligingsfuncties van native Android-apparaten. Als u wilt controleren of u een Samsung KNOX-apparaat hebt, gaat u naar **Instellingen** > **Over apparaat**. Als de KNOX-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
 
-Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen die het beste beschrijft hoe u uw apparaat gebruikt. Uw IT-beheerder gebruikt deze categorie om te controleren tot welke apps u toegang hebt.
-
-Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u [registratiefouten naar uw IT-beheerder verzenden](send-enrollment-errors-to-your-it-admin-android.md).
+Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen die het beste beschrijft hoe u uw apparaat gebruikt. Het ondersteuningsteam van het bedrijf gebruikt deze categorie om te controleren tot welke apps u toegang hebt.
 
 **Ga als volgt te werk om uw Android-apparaat te registeren:**
 
 1.  Installeer de gratis app Intune-bedrijfsportal via [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Open de app Microsoft Intune-bedrijfsportal.
+2.  Open de app Bedrijfsportal.
 
 3.  Tik in het **aanmeldingsscherm** van de bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount.
 
     ![De bedrijfsportal-app voor het Android-welkomstscherm, waarin de gebruiker wordt gevraagd zich aan te melden met het vereist werk- of schoolaccount. Hierin wordt tevens gewaarschuwd dat Microsoft-accounts en andere persoonlijke accounts worden niet geaccepteerd.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Als de IT-beheerder voorwaarden van het bedrijf heeft ingesteld, tikt u op **ACCEPTEREN** om de voorwaarden te accepteren. Dit scherm kan enigszins afwijken van de onderstaande afbeelding, afhankelijk van de Android-versie die u momenteel gebruikt.
+4.  Als het ondersteuningsteam van het bedrijf voorwaarden van het bedrijf heeft ingesteld, tikt u op **ACCEPTEREN** om de voorwaarden te accepteren. Dit scherm kan enigszins afwijken van de onderstaande afbeelding, afhankelijk van de Android-versie die u momenteel gebruikt.
 
     ![android-bedrijfsportal-aanmelden](./media/and-enroll-3-accept-terms.png)
 
@@ -52,28 +50,24 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
     ![android-bedrijfsportal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
 
-6.  Tik in het scherm **Instellen van bedrijfstoegang** op **STARTEN**.
+6.  Tik in het scherm **Instellen van bedrijfstoegang** op **DOORGAAN**.
 
-    ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
 
-7. Lees op het scherm **Voordelen van apparaatbeheer** informatie over wat u kunt doen wanneer u uw apparaat inschrijft en tik vervolgens op **DOORGAAN**.
+7.  Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
 
-    ![Scherm Voordelen van apparaatbeheer](/intune/media/android_cp_enroll_02_post_1709.png)
-
-8.  Bekijk een lijst met zaken die de IT-beheerder wel en niet kan zien op het apparaat, en tik vervolgens op **DOORGAAN**.
-
-    ![Privacy-instellingen](./media/and-enroll-4c-we-care-privacy.png)
+    ![Privacy-instellingen](/intune/media/android_cp_enroll_02_after_1710.png)
 
 9.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
 
-    ![Het scherm De volgende stap](./media/and-enroll-4d-what-comes-next.png)
+    ![Het scherm De volgende stap](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  Als u Android 6.0 of hoger gebruikt, moet u deze stap uitvoeren. Ga anders naar de volgende stap.
 
-    Als de IT-beheerder bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
+    Als het ondersteuningsteam van het bedrijf bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
     -   **De bedrijfsportal toestaan telefoongesprekken uit te voeren en te beheren?**
 
         ![android-bedrijfsportal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
@@ -96,9 +90,9 @@ Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u 
 
     De rol van apparaatbeheerder houdt in dat de bedrijfsportal uw apparaat moet beheren. Het stelt uw beheerder in staat om bepaalde dingen te bekijken, zoals het aantal keren dat u uw scherm hebt ontgrendeld en bepaalde acties hebt ondernomen.
 
-    Van belang is om te weten dat deze acties worden ondernomen vanwege de beveiliging. Uw IT-beheerder schendt uw privacy niet en wist uw gegevens niet wanneer daar geen reden toe is. De beheerder wil er gewoon voor zorgen dat de bedrijfsgegevens veilig worden bewaard.
+    Van belang is om te weten dat deze acties worden ondernomen vanwege de beveiliging. Het ondersteuningsteam van het bedrijf schendt uw privacy niet en wist uw gegevens niet wanneer daar geen reden toe is. De beheerder wil er gewoon voor zorgen dat de bedrijfsgegevens veilig worden bewaard.
 
-    Microsoft heeft geen zeggenschap over dit bericht en de bewoording kan enigszins drastisch overkomen. Met de bedrijfsportal kunnen niet alleen de beperkingen en toegang worden weergegeven die relevant zijn voor uw organisatie. Deze worden alle tegelijk op dit scherm weergegeven. Neem aan de hand van de contactgegevens op de [website van de bedrijfsportal](http://portal.manage.microsoft.com) contact op met uw IT-beheerder als u vragen hebt met betrekking tot uw eigen organisatie.
+    Microsoft heeft geen zeggenschap over dit bericht en de bewoording kan enigszins drastisch overkomen. Met de bedrijfsportal kunnen niet alleen de beperkingen en toegang worden weergegeven die relevant zijn voor uw organisatie. Deze worden alle tegelijk op dit scherm weergegeven. Neem aan de hand van de contactgegevens op de [website van de bedrijfsportal](https://portal.manage.microsoft.com) contact op met het ondersteuningsteam van het bedrijf als u vragen hebt met betrekking tot uw eigen organisatie.
 
 12.  Volg de aanwijzingen voor het invoeren van de pincode of het wachtwoord. Als u al een pincode of wachtwoord op dit apparaat hebt ingesteld, wordt dit scherm niet weergegeven of wordt u niet verzocht om een nieuwe pincode of nieuw wachtwoord in te voeren.
 
@@ -133,4 +127,6 @@ Ga naar **Instellingen** &gt; **Beveiliging** en schakel **Onbekende bronnen** i
 > [!Note]
 > Als uw organisatie gebruikmaakt van Telecom Expense Management-software, zijn er een aantal aanvullende stappen die u moet doorlopen om uw apparaat volledig in te schrijven. Zie [hier](enroll-your-device-with-telecom-expense-management-android.md) voor meer informatie.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder (zie de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.
+Als er een fout optreedt bij het registreren van uw apparaat bij Intune, kunt u [registratiefouten naar het ondersteuningsteam van het bedrijf verzenden](send-enrollment-errors-to-your-it-admin-android.md).
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.

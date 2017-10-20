@@ -62,6 +62,7 @@
 ### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
 ### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos.md)
 ### [macOS-apparaten inschrijven bij de bedrijfsportal](enroll-your-device-in-intune-macos-cp.md)
+### [Dit apparaat is enigszins anders](device-little-different-jamf.md)
 
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 ### [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)

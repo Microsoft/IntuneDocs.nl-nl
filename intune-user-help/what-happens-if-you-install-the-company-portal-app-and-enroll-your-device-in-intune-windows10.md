@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows 10-apparaat inschrijft bij Intune?
 
@@ -34,22 +34,22 @@ Wanneer u de bedrijfsportal-app installeert en vervolgens met de app uw Windows 
 
 -   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen.
 
-Zie voor de inschrijvingsstappen uw [Windows 10 Mobile- of Windows 10-desktopapparaat inschrijven bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Zie [Wat kan mijn IT-beheerder zien wanneer ik mijn apparaat bij Intune registreer?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over wat uw IT-beheerder kan zien op uw apparaat.
+Zie voor de inschrijvingsstappen uw [Windows 10 Mobile- of Windows 10-desktopapparaat inschrijven bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Zie [Wat kan het ondersteuningsteam van mijn bedrijf zien wanneer ik mijn apparaat registreer in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over wat het ondersteuningsteam van uw bedrijf kan zien op uw apparaat.
 
 Wanneer u een computer toevoegt:
 
--   Er wordt software op de computer geïnstalleerd, zodat de IT-beheerder de computer kan beheren en u bedrijfsbronnen (zoals apps en ondersteuningsinformatie) kunt gebruiken. De IT-beheerder kan deze software automatisch bijwerken.
+-   Er wordt software op de computer geïnstalleerd, zodat het ondersteuningsteam van uw bedrijf de computer kan beheren en u bedrijfsbronnen (zoals apps en ondersteuningsinformatie) kunt gebruiken. Het ondersteuningsteam van uw bedrijf kan deze software automatisch bijwerken.
 
 -   Intune Endpoint Protection wordt mogelijk op de computer geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
 
--   De IT-beheerder kan een inventarisatie maken van alle software die op de computer is geïnstalleerd, inclusief de software die u zelf hebt geïnstalleerd.
+-   Het ondersteuningsteam van uw bedrijf kan een inventarisatie maken van alle software die op de computer is geïnstalleerd, inclusief de software die u zelf hebt geïnstalleerd.
 
 -   Mogelijk moet u de voorwaarden accepteren.
 
--   De IT-beheerder kan gegevens van de harde schijf van uw computer verzamelen of verwijderen. De IT-beheerder kan ook de volledige harde schijf wissen.
+-   Het ondersteuningsteam van uw bedrijf kan gegevens van de harde schijf van uw computer verzamelen of verwijderen. Het ondersteuningsteam van uw bedrijf kan ook de volledige harde schijf wissen.
 
--   De IT-beheerder kan apps en updates op uw computer installeren.
+-   Het ondersteuningsteam van uw bedrijf kan apps en updates op uw computer installeren.
 
--   De IT-beheerder kan beleidsregels op de computer afdwingen. Het is bijvoorbeeld mogelijk dat u verplicht een wachtwoord of pincode op de computer moet instellen. De IT-beheerder kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan de computer mogelijk worden vergrendeld of worden mogelijk alle gegevens van de harde schijf verwijderd.
+-   Het ondersteuningsteam van uw bedrijf kan beleidsregels op de computer afdwingen. Het is bijvoorbeeld mogelijk dat u verplicht een wachtwoord of pincode op de computer moet instellen. Het ondersteuningsteam van uw bedrijf kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan de computer mogelijk worden vergrendeld of worden mogelijk alle gegevens van de harde schijf verwijderd.
 
-Neem contact op met uw IT-beheerder als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrjifsportalwebsite](https://portal.manage.microsoft.com).
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
+ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u uw apparaat kwijt bent of als het gestolen is, hebt u de mogelijkheid de fabrieksinstellingen ervan terug te zetten om te voorkomen dat onbevoegden toegang tot uw gegevens krijgen. U kunt uw apparaat op afstand opnieuw instellen op de [website van de bedrijfsportal](http://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt deze website gebruiken om de meeste taken uit te voeren die u ook met de bedrijfsportal-app uitvoert.
+Als u uw apparaat kwijt bent of als het gestolen is, hebt u de mogelijkheid de fabrieksinstellingen ervan terug te zetten om te voorkomen dat onbevoegden toegang tot uw gegevens krijgen. U kunt uw apparaat op afstand opnieuw instellen op de [website van de bedrijfsportal](https://portal.manage.microsoft.com). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt deze website gebruiken om de meeste taken uit te voeren die u ook met de bedrijfsportal-app uitvoert.
 
 Als u uw apparaat opnieuw instelt, wordt het apparaat niet meer weergegeven in de bedrijfsportal en worden de fabrieksinstellingen op het apparaat hersteld.
 
@@ -33,7 +33,7 @@ Als u uw apparaat opnieuw instelt, wordt het apparaat niet meer weergegeven in d
 
 Ga als volgt te werk om uw apparaat opnieuw in te stellen:
 
-1.  Op de [Bedrijfsportal-website ](http://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+1.  Op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) tikt u op de knop __Menu__ en selecteert u __Mijn apparaten__.
 
 2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de naam wilt wijzigen.
 
@@ -47,4 +47,4 @@ Ga als volgt te werk om uw apparaat opnieuw in te stellen:
 
 Uw apparaat is nu opnieuw ingesteld.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

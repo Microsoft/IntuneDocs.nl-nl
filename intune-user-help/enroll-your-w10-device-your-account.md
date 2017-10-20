@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Hier](./media/W10-enroll-4-sign-in.png)
 
-Nog steeds geen toegang tot uw e-mail, bestanden of andere gegevens voor werk of school? Probeer het toegangsprobleem op te lossen door het [oplossen van problemen met uw account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Als dit ook niet werkt, kunt u contact opnemen met uw IT-beheerder voor verdere assistentie.
+Nog steeds geen toegang tot uw e-mail, bestanden of andere gegevens voor werk of school? Probeer het toegangsprobleem op te lossen door het [oplossen van problemen met uw account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Als dit ook niet werkt, kunt u contact opnemen met het ondersteuningsteam van het bedrijf voor verdere assistentie.
 
-Een eenvoudige manier om de hulp van uw IT-beheerder in te roepen, is via de contactgegevens die beschikbaar zijn in de bedrijfsportal-app. Hier kunt u ook aanbevolen en vereiste apps voor uw dagelijkse taken vinden en downloaden. Het is mogelijk dat de bedrijfsportal-app al op uw apparaat is geïnstalleerd. Als u snel wilt controleren of u de app hebt, zoekt u naar __Bedrijfsportal__ in de lijst __Alle apps__.
+Een eenvoudige manier om de hulp van het ondersteuningsteam van het bedrijf in te roepen, is via de contactgegevens die beschikbaar zijn in de bedrijfsportal-app. Hier kunt u ook aanbevolen en vereiste apps voor uw dagelijkse taken vinden en downloaden. Het is mogelijk dat de bedrijfsportal-app al op uw apparaat is geïnstalleerd. Als u snel wilt controleren of u de app hebt, zoekt u naar __Bedrijfsportal__ in de lijst __Alle apps__.
 
 Als u Bedrijfsportal niet in de lijst met apps ziet, volgt u deze stappen om het te installeren.
 

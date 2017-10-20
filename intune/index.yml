@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 08/06/2017
+  ms.date: 10/07/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -68,12 +68,12 @@ sections:
             title: Rapporten maken met Intune Data Warehouse (preview)
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/'
-            title: '[Blog] Meer informatie over het nieuwe toegangsbeheer op basis van rollen'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
+            title: '[Blog] PFX-certificaten die zijn verstrekt via Intune Certificate Connector'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/'
-            title: '[Blog] De servicestatus van Intune begrijpen'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
+            title: '[Blog] Communicatie definiëren tussen apps die worden beheerd met MAM en MDM'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: Video 's
@@ -128,6 +128,7 @@ sections:
       - type: list
         style: unordered
         items:
+          - html: '<a href="https://fasttrack.microsoft.com/ems">Meer dan 150 licenties? Maak gebruik van uw FastTrack-voordelen</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Lees de Enterprise Mobility and Security Blog</a> (Engelstalig)'
           - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Hulp vragen bij de Intune-ondersteuningsblog</a>'
           - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Feedback geven over Intune via UserVoice</a>'

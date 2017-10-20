@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 56d1f2598c7489fdd09b1c27c6c76c5d80fb6e7e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 41f79bcccd4868f5d8a73926cd47d73c904c8df5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Uw Windows-apparaat versleutelen
 
-Om de gegevens van uw bedrijf of school te beveiligen, kan het zijn dat uw IT-beheerder van u verlangt dat u uw Windows-apparaat versleutelt. Als u een Windows Phone hebt en u deze hebt geregistreerd, wordt het apparaat automatisch versleuteld als versleuteling is vereist.
+Om de gegevens van uw bedrijf of school te beveiligen, kan het zijn dat het ondersteuningsteam van het bedrijf van u verlangt dat u uw Windows-apparaat versleutelt. Als u een Windows Phone hebt en u deze hebt geregistreerd, wordt het apparaat automatisch versleuteld als versleuteling is vereist.
 
 Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het apparaat te versleutelen.
 
@@ -32,4 +32,4 @@ Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het appar
 
 2.  Klik op **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 
@@ -94,8 +94,8 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
     - **Onder supervisie**: een beheermodus waarmee standaard meer beheeropties worden ingeschakeld en de activeringsvergrendeling wordt uitgeschakeld. Als u het selectievakje leeg laat, hebt u beperkte beheermogelijkheden.
 
-     - **Vergrendelde inschrijving** (vereist Onder supervisie als beheermodus): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd.
-   - **Gedeelde iPad**: (hiervoor zijn **Inschrijven zonder gebruikersaffiniteit** en de modus **Onder supervisie** vereist.) Hiermee kunnen meerdere gebruikers zich met een beheerde Apple-id aanmelden bij geregistreerde iPads. Beheerde Apple-id's worden gemaakt in de portal Apple School Manager. Meer informatie over [gedeelde iPad](education-settings-configure-ios-shared.md). Controleer ook [de vereisten van Apple voor gedeelde iPad](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+     - **Vergrendelde registratie** (hiervoor is Onder supervisie als beheermodus vereist): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd.
+   - **Gedeelde iPad**: (hiervoor zijn **Registreren zonder gebruikersaffiniteit** en de supervisiemodus vereist.) Hiermee kunnen meerdere gebruikers zich met een beheerde Apple-id aanmelden bij geregistreerde iPads. Beheerde Apple-id's worden gemaakt in de portal Apple School Manager. Meer informatie over [gedeelde iPad](education-settings-configure-ios-shared.md). Controleer ook [de vereisten van Apple voor gedeelde iPad](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
    >[!NOTE]
    >Als **Gebruikersaffiniteit** is ingesteld op **Met gebruikersaffiniteit** of als de modus **Onder supervisie** is ingesteld op **Uit**, wordt de modus Gedeelde iPad uitgeschakeld voor het inschrijvingsprofiel.

@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6bdb4e1288e91d78d95ba6e6640111d9af06ed7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -51,7 +51,7 @@ U kunt beleidsregels voor Managed Browser maken voor de volgende apparaattypen:
 -   Apparaten met iOS 8.0 en hoger
 
 >[!IMPORTANT]
->Vanaf oktober 2017 ondersteunt de app Intune Managed Browser in de Android-app alleen nog apparaten waarop Android 4.4 en hoger wordt uitgevoerd. De app Intune Managed Browser voor iOS ondersteunt alleen apparaten met iOS 9.0 en hoger.
+>Vanaf oktober 2017 ondersteunt de app Intune Managed Browser voor Android alleen nog apparaten waarop Android 4.4 en hoger wordt uitgevoerd. De app Intune Managed Browser voor iOS ondersteunt alleen apparaten met iOS 9.0 en hoger.
 >Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
 
 
@@ -64,10 +64,10 @@ Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft I
 3.  Ga in de lijst Beheren naar de blade **Mobile Apps** en kies **App-configuratiebeleid**.
 4.  Kies **Toevoegen** op de blade **App-configuratiebeleid**.
 5.  Geef op de blade **App-configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
-6.  Kies **Niet ingeschreven bij Intune** bij **Apparaatinschrijving**.
+6.  Kies voor het type **Apparaatinschrijving** de optie **Beheerde apparaten** of **Beheerde apps**.
 7.  Kies **Vereiste apps selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** voor iOS, voor Android of voor beide besturingssystemen.
 8.  Kies **OK** om terug te keren naar de blade **App-configuratiebeleid toevoegen**.
-9.  Kies **Configuratie-instellingen**. Op de blade **Configuratie** definieert u sleutel- en waardeparen voor configuraties voor Managed Browser. Gebruik de secties verderop in dit onderwerp voor meer informatie over de andere sleutel- en waardeparen die u kunt definiëren.
+9.  Kies **Configuratie-instellingen**. Op de blade **Configuratie** definieert u sleutel- en waardeparen voor configuraties voor Managed Browser. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
 10. Kies **OK** als u klaar bent.
 11. Op de blade **App-configuratie toevoegen** kiest u **Maken**.
 12. De nieuwe configuratie wordt gemaakt en weergegeven op de blade **App-configuratie**.
@@ -127,6 +127,7 @@ Met deze instelling kunt u een set bladwijzers configureren die beschikbaar zijn
 
 - Deze bladwijzers kunnen niet worden verwijderd of gewijzigd door gebruikers.
 - Deze bladwijzers worden bovenaan de lijst weergegeven. Bladwijzers die gebruikers maken, worden onder deze bladwijzers weergegeven.
+- Als u App Proxy-omleiding hebt ingeschakeld, kunt u App Proxy-webapps toevoegen met behulp van hun interne of externe URL.
 
 Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
@@ -166,15 +167,15 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 -   Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
 
 |URL|Details|Komt overeen met|Komt niet overeen met|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Komt overeen met één pagina|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Komt overeen met één pagina|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Komt overeen met alle URL's die beginnen met www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Komt overeen met alle subdomeinen onder contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Komt overeen met een afzonderlijke map|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Komt overeen met één pagina, met gebruik van een poortnummer|http://www.contoso.com:80|
-    |https://www.contoso.com|Komt overeen met een enkele, beveiligde pagina|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Komt overeen met een enkele map en alle submappen|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|Komt overeen met één pagina|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|Komt overeen met één pagina|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|Komt overeen met alle URL's die beginnen met www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|Komt overeen met alle subdomeinen onder contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|Komt overeen met een afzonderlijke map|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|Komt overeen met één pagina, met gebruik van een poortnummer|http://www.contoso.com:80|
+|https://www.contoso.com|Komt overeen met een enkele, beveiligde pagina|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|Komt overeen met een enkele map en alle submappen|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   Hier volgen enkele voorbeelden van een aantal invoerwaarden die u niet kunt opgeven:
 
@@ -200,8 +201,6 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Beveiliging en privacy voor Managed Browser
 
--   Op iOS-apparaten kunnen gebruikers geen websites openen met een verlopen of niet-vertrouwd certificaat.
-
 -   Managed Browser gebruikt geen instellingen die gebruikers maken voor de ingebouwde browser op hun apparaten. Managed Browser heeft geen toegang tot deze instellingen.
 
 -   Als u de optie **Eenvoudige pincode vereist voor toegang** of **Bedrijfsreferenties vereist voor toegang** configureert in een beleid voor app-beveiliging dat is gekoppeld aan Managed Browser, en een gebruiker de Help-koppeling op de verificatiepagina selecteert, kan de gebruiker elke internetsite bezoeken ongeacht of deze is toegevoegd aan de lijst met geblokkeerde websites in het beleid.
@@ -214,3 +213,14 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van Managed Browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.
 
 
+-   Op iOS-apparaten kunnen gebruikers geen websites openen met een verlopen of niet-vertrouwd certificaat.
+-   Managed Browser gebruikt geen instellingen die gebruikers maken voor de ingebouwde browser op hun apparaten. Managed Browser heeft geen toegang tot deze instellingen.
+
+-   Als u de optie **Eenvoudige pincode vereist voor toegang** of **Bedrijfsreferenties vereist voor toegang** configureert in een beleid voor app-beveiliging dat is gekoppeld aan Managed Browser, en een gebruiker de Help-koppeling op de verificatiepagina selecteert, kan de gebruiker elke internetsite bezoeken ongeacht of deze is toegevoegd aan de lijst met geblokkeerde websites in het beleid.
+
+-   Managed Browser kan alleen toegang tot sites blokkeren wanneer de sites rechtstreeks worden geopend. De app kan niet de toegang blokkeren als er tussenliggende services (zoals een vertaalservice) worden gebruikt voor toegang tot de site.
+
+-   Om verificatie en toegang tot de Intune-documentatie toe te staan, wordt **&#42;.microsoft.com** uitgesloten van opname in lijsten met toegestane en geblokkeerde sites. Dit domein is altijd toegestaan.
+
+### <a name="turn-off-usage-data"></a>Gebruiksgegevens uitschakelen
+Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van Managed Browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.

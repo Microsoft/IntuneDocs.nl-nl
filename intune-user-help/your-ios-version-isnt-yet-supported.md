@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22144721ba6bfad565009b306e7216ad1e5582af
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 162e2262067d38d792e23c8a98d52e81cf548bbe
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>De versie van het iOS op uw apparaat wordt nog niet ondersteund
 
-Door de snelle ontwikkelingen op het gebied van technologie is het soms mogelijk dat uw IT-beheerder nog niet de mogelijkheid heeft gehad om mogelijkheden van uw apparaat te testen. Het is mogelijk dat de nieuwste versie van iOS niet werkt met bepaalde andere hulpprogramma's van uw bedrijf.
+Door de snelle ontwikkelingen op het gebied van technologie kan het gebeuren dat het ondersteuningsteam van het bedrijf nog niet de kans heeft gehad om de mogelijkheden van uw apparaat te testen. Het is mogelijk dat de nieuwste versie van iOS niet werkt met bepaalde andere hulpprogramma's van uw bedrijf.
 
-U moet contact opnemen met uw IT-beheerder om dit probleem op te lossen. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van het bedrijf om dit probleem op te lossen. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

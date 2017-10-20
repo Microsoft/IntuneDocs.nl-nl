@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
@@ -33,8 +33,8 @@ Uw bedrijf IT-afdeling kan informatie zien die relevant is voor het werk, maar n
 ## <a name="how-do-i-get-the-company-portal"></a>Hoe kan ik de Bedrijfsportal downloaden?
 U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
-- Door de bedrijfsportal-app op uw apparaat te installeren. Doorgaans downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar uw IT-beheerder kan de bedrijfsportal-app ook voor u installeren.
-- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) die uw IT-beheerder heeft ingesteld.
+- Door de bedrijfsportal-app op uw apparaat te installeren. Meestal downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar het ondersteuningsteam van uw bedrijf kan de bedrijfsportal-app ook voor u installeren.
+- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) die het ondersteuningsteam van uw bedrijf heeft ingesteld.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Wat is het verschil tussen de app en de website?
 Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Taken die u kunt uitvoeren:
@@ -54,9 +54,9 @@ Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app op 
 - [De bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Wat gebeurt er wanneer u een computer of apparaat toevoegt aan de bedrijfsportal?
-Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn dat er software wordt geïnstalleerd of een app wordt gedownload (afhankelijk van het apparaat). Bovendien geeft u de IT-beheerder toestemming om uw apparaat te beheren om de bedrijfsinformatie op het apparaat te beschermen.
+Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn dat er software wordt geïnstalleerd of een app wordt gedownload (afhankelijk van het apparaat). Bovendien geeft u het ondersteuningsteam van het bedrijf toestemming om uw apparaat te beheren en de bedrijfsgegevens op het apparaat te beschermen.
 
-Voor meer informatie over wat de IT-beheerder wel en niet op uw apparaat kan zien, gebruikt u de koppeling die overeenkomt met het type apparaat dat u gebruikt:
+Voor meer informatie over wat het ondersteuningsteam van het bedrijf wel en niet op uw apparaat kan zien, gebruikt u de koppeling die overeenkomt met het type apparaat dat u gebruikt:
 
 - [De bedrijfsportal-app voor Android installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [De bedrijfsportal-app voor iOS en macOS installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Microsoft raadt u aan eerst te proberen uw probleem zelf te verhelpen. Er is een
 - [Veelvoorkomende problemen met uw iOS-apparaat oplossen](troubleshoot-your-device-ios.md)
 - [Veelvoorkomende problemen met uw Windows-apparaat oplossen](troubleshoot-your-device-windows.md)
 
-U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met uw IT-beheerder voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met het ondersteuningsteam van uw bedrijf voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).

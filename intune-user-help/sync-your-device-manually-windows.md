@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf43ed13b852cccbce44e2a31890e164e3519490
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
@@ -62,7 +62,7 @@ Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen.
 
     ![Kies Toegang tot werk of school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Kies uw werk- of schoolaccount. Afhankelijk van hoe uw IT-beheerder een en ander heeft ingesteld, ziet u mogelijk twee accounts die op het voorbeeld hieronder lijken. Naast het ene account wordt een aktetas weergegeven en naast het andere account ziet u het Microsoft-logo.
+2. Kies uw werk- of schoolaccount. Afhankelijk van hoe het ondersteuningsteam van het bedrijf alles heeft ingesteld, ziet u mogelijk twee accounts die op het voorbeeld hieronder lijken. Naast het ene account wordt een aktetas weergegeven en naast het andere account ziet u het Microsoft-logo.
 
     - Als u het account met de aktetas ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
     - Als u het account met het Microsoft-logo ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
@@ -129,4 +129,4 @@ Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchron
 
    Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven tot het apparaat is gesynchroniseerd.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

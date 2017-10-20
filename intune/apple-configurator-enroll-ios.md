@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune ondersteunt het inschrijven van iOS-apparaten met behulp van het hulpprogramma [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) dat wordt uitgevoerd op een Mac-computer. Inschrijving met Apple Configurator vereist dat u voor elk iOS-apparaat een USB-verbinding instelt met een Mac-computer voor het instellen van een zakelijke inschrijving. U kunt apparaten op twee manieren apparaten inschrijven bij Intune met Apple Configurator:
+Intune ondersteunt het inschrijven van iOS-apparaten met behulp van het hulpprogramma [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) dat wordt uitgevoerd op een Mac-computer. Inschrijving met Apple Configurator vereist dat u voor elk iOS-apparaat een USB-verbinding instelt met een Mac-computer voor het instellen van een zakelijke inschrijving. U kunt apparaten op twee manieren apparaten inschrijven bij Intune met Apple Configurator:
 - **Inschrijving met iOS-configuratieassistent**: het apparaat wordt naar de fabrieksinstelling teruggezet en voorbereid voor inschrijving tijdens het uitvoeren van Configuratieassistent.
 - **Directe inschrijving**: het apparaat wordt niet teruggezet naar de fabrieksinstellingen en het apparaat wordt via iOS-instellingen geregistreerd. Deze methode ondersteunt apparaten **zonder gebruikersaffiniteit**.
 
@@ -38,7 +38,7 @@ Inschrijven met Apple Configurator kan niet worden gebruikt met de [apparaatinsc
 - [Een Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
 - Apparaatserienummers (alleen inschrijving met de iOS-configuratieassistent)
 - USB-verbindingskabels
-- Mac waarop [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) wordt uitgevoerd
+- macOS-computer met [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Een Apple Configurator-profiel maken voor apparaten
 
@@ -69,7 +69,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen tijdens het i
 
 **Apple Configurator-serienummers toevoegen aan Intune**
 
-1. Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats het serienummers in de linkerkolom en de details in de rechterkolom. Een lijst kan momenteel maximaal 500 rijen bevatten. In een teksteditor ziet de .csv-lijst er zo uit:
+1. Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats het serienummers in de linkerkolom en de details in de rechterkolom. De lijst kan momenteel maximaal 5000 rijen bevatten. In een teksteditor ziet de .csv-lijst er zo uit:
 
     F7TLWCLBX196, apparaatdetails</br>
     DLXQPCWVGHMJ,apparaatdetails
