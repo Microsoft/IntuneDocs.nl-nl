@@ -461,6 +461,8 @@
           href: windows-hello.md
     - name: Rollen beheren
       href: role-based-access-control.md
+    - name: Versies van besturingssystemen beheren
+      href: manage-os-versions.md
     - name: Software-updates beheren
       href: windows-update-for-business-configure.md
     - name: Pc's beheren met softwareagent
