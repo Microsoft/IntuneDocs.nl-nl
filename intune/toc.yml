@@ -162,6 +162,8 @@
               href: windows-enroll.md
             - name: Bulkregistratie
               href: windows-bulk-enroll.md
+            - name: Windows AutoPilot Deployment-programma
+              href: enrollment-autopilot.md
         - name: Android-inschrijving instellen
           href: android-enroll.md
         - name: iOS-inschrijving instellen
@@ -601,11 +603,9 @@
               href: reports-ref-devices.md
             - name: Naslag voor toepassingsentiteiten
               href: reports-ref-application.md
-            - name: Naslag voor beleidsentiteiten
-              href: reports-ref-policy.md
+            - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
+              href: reports-ref-userdeviceassociations.md
     - name: Windows-apps sideloaden
-      href: app-sideload-windows.md
-    - name: Graph API’s gebruiken voor Intune
       href: intune-graph-apis.md
       items:
         - name: Documentatie over Graph-API's voor Intune
