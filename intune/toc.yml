@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows-beleid maken
           href: compliance-policy-create-windows.md
+        - name: Acties voor niet-naleving
+          href: actions-for-noncompliance.md
         - name: Apparaatcompatibiliteit bewaken
           href: compliance-policy-monitor.md
     - name: Voorwaardelijke toegang instellen
