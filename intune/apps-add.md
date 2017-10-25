@@ -74,7 +74,7 @@ Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan 
 4. Kies **Instellen** > **App-categorieën** in de workload **Mobiele apps**.
 5. Op de blade **App-categorieën** wordt een lijst met de huidige categorieën weergegeven. Kies een van de volgende acties:
     - **Een categorie maken**: voer op de blade **Categorie maken** een naam voor de nieuwe categorie in. Namen kunnen slechts in één taal worden ingevoerd en worden niet door Intune vertaald. Wanneer u klaar bent, klikt u op **Maken**.
-    - **Een categorie bewerken**: kies voor elke categorie in de lijst '**... **'. Geef op de blade **Eigenschappen** een nieuwe naam voor de categorie op of verwijder de categorie.
+    - **Een categorie bewerken**: kies voor elke categorie in de lijst '**...** '. Geef op de blade **Eigenschappen** een nieuwe naam voor de categorie op of verwijder de categorie.
 
 
 ## <a name="apps-added-automatically-by-intune"></a>Apps die door Intune automatisch zijn toegevoegd
