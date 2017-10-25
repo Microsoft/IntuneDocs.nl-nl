@@ -52,7 +52,7 @@ Vaak is de registratie van hun apparaat de eerste ervaring van eindgebruikers di
 10. Tik op de pagina **Profiel installeren** op **Installeren**, en voer de wachtwoordcode van het apparaat in als daarom wordt gevraagd.
 11. Tik op **INSTALLEREN**.
 12. Tik nogmaals op **Installeren** om aan te geven dat u de waarschuwing hebt gelezen.
-13. Tik in de** **waarschuwing op **Vertrouwen**.
+13. Tik in de **waarschuwing** op **Vertrouwen**.
 14. Wanneer het scherm verandert om weer te geven dat het profiel is geïnstalleerd, tikt u op **Gereed**.
 15. U ziet een bericht dat het apparaat wordt geregistreerd en vervolgens dat de registratie van het apparaat is voltooid. Er verschijnt een pop-up met de vraag de pagina in de bedrijfsportal te openen. Tik op **Openen**.
 16. U gaat terug naar het scherm **Instellen van bedrijfstoegang**. Als u geen testbeleid hebt ingesteld, moet het apparaat als compatibel worden weergegeven. Als u wel testbeleid hebt gemaakt, tikt u op **Apparaatcompatibiliteit** om een bericht weer te geven dat er bepaalde dingen moeten worden gedaan om het apparaat veilig te maken.
