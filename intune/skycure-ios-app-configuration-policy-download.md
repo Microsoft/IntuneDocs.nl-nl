@@ -41,7 +41,7 @@ U moet zich aanmelden bij de Skycure-beheerconsole en de volgende stappen uitvoe
     > [!IMPORTANT] 
     > De gebruikersnaam voor de Skycure-beheerder is een e-mailaccount dat een geldig gebruikersaccount moet zijn in Azure Active Directory. Als dat niet het geval is, mislukt de aanmelding. Skycure maakt gebruik van Azure Active Directory om deze gebruikersnaam voor de beheerder te verifiëren door middel van eenmalige aanmelding.
 
-3.  Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer ** &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
+3.  Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer**  &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
 
 4.  Klik op de koppeling voor de **installatiebestanden voor de integratie** en sla het gegenereerde bestand \*.zip op. Het ZIP-bestand bevat het bestand **skycure\_configuration.plist**, waarmee het configuratiebeleid voor de iOS-app wordt gemaakt in de klassieke Intune-portal.
 
