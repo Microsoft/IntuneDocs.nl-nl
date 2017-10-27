@@ -26,6 +26,7 @@
 
 ### [Veelvoorkomende problemen met Android oplossen](troubleshoot-your-device-android.md)
 #### [Apparaatcompatibiliteit controleren](check-compliance-on-your-device-android.md)
+#### [E-mailsynchronisatie in Outlook in batterijbesparingsmodus](power-saving-mode-android.md)
 
 #### Logboeken gebruiken problemen op te lossen
 ##### [Uitgebreide logboekregistratie inschakelen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
