@@ -14,15 +14,15 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune-datawarehouse-API
 
-U krijgt met de Intune-datawarehouse-API toegang tot uw Intune-gegevens in een machineleesbare indeling voor gebruik in uw favoriete analyseprogramma. U kunt de API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden. De API maakt gebruikt van het OData-protocol, dat standaardpatronen volgt voor:
+Met de Intune-datawarehouse-API krijgt u toegang tot uw Intune-gegevens in een machineleesbare indeling, voor gebruik in uw favoriete analyseprogramma. U kunt de API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden. De API maakt gebruikt van het OData-protocol, dat standaardpatronen volgt voor:
 
   -   Aanvraag- en reactieheaders
   -   Statuscodes
@@ -41,9 +41,12 @@ Deze naslagsectie biedt een overzicht van eindpunten, ondersteunde HTTP-methoden
 
 ## <a name="odata-custom-client"></a>Aangepaste OData-client
 
-U kunt het Intune-datawarehousegegevensmodel openen via RESTful-eindpunten. Om toegang tot uw gegevens te krijgen, moet uw client zich door middel van OAuth 2.0 autoriseren met Microsoft Azure Active Directory (Azure AD). U stelt eerst een webtoepassing en een client-app in Azure in en verleent machtigingen aan de client. Uw lokale client ontvangt autorisatie en kan vervolgens communiceren met de datawarehouse-eindpunten.
+U kunt het Intune-datawarehousegegevensmodel openen via RESTful-eindpunten. Om toegang tot uw gegevens te krijgen, moet uw client zich door middel van OAuth 2.0 autoriseren bij Azure Active Directory (Azure AD). U stelt eerst een webtoepassing en een client-app in Azure in en verleent machtigingen aan de client. Uw lokale client wordt geautoriseerd en kan vervolgens communiceren met de datawarehouse-eindpunten.
 
 Zie [Gegevens ophalen uit de datawarehouse-API met een REST-client](reports-proc-data-rest.md) voor meer informatie
+
+> [!Note]  
+> Open de [GitHub Intune-datawarehouseopslagplaats](https://github.com/Microsoft/Intune-Data-Warehouse) op GitHub voor codevoorbeelden.
 
 ## <a name="interacting-with-the-api"></a>Interactie met de API
 
@@ -58,6 +61,8 @@ OData definieert een abstract gegevensmodel en een protocol waarmee alle clientt
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Verificatiescenario's voor Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData versie 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Lees de [Verificatiescenario's voor Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios) voor meer informatie over het werken met Azure AD.
+
+Ga naar [odata.org](http://www.odata.org) voor informatie over OData.
+  
+U kunt versie 4.0 van de OData-standaard lezen op [OData Version 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

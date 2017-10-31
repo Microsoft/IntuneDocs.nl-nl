@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -26,10 +26,10 @@ ms.lasthandoff: 09/09/2017
 
 Windows as a Service is dé manier om Windows 10-apparaten bij te werken. In Windows 10 bevatten nieuwe functie-updates en kwaliteitsupdates de inhoud van alle voorgaande updates. Dit houdt in dat, als u de nieuwste update hebt geïnstalleerd, u zeker weet dat uw Windows 10-apparaten volledig zijn bijgewerkt. In tegenstelling tot eerdere versies van Windows, moet u nu de volledige update installeren in plaats van een onderdeel van een update.
 
-Met Windows Update voor bedrijven kunt u updatebeheer vereenvoudigen, zodat u geen afzonderlijke updates voor groepen apparaten hoeft goed te keuren. U kunt nog steeds risico's in uw omgeving beheren door een strategie voor update-implementatie te configureren. Windows Update zorgt ervoor dat updates op tijd worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten hebben voor de updates rechtstreeks toegang tot Windows Update. Voor het configureren en beheren van **Windows 10-updateringen** wordt Intune gebruikt. Een updatering bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. U kunt bijvoorbeeld het volgende configureren:
+Met Windows Update voor bedrijven kunt u updatebeheer vereenvoudigen, zodat u geen afzonderlijke updates voor groepen apparaten hoeft goed te keuren. U kunt nog steeds risico's in uw omgeving beheren door een strategie voor update-implementatie te configureren. Windows Update zorgt ervoor dat updates op tijd worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten maken direct verbinding met Windows Update voor de updates. U kunt Intune gebruiken voor het configureren en beheren van **Windows 10-updateringen**. Een updatering bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. U kunt bijvoorbeeld het volgende configureren:
 
 - **Windows 10 Servicing Branch**: kies of u wilt dat groepen apparaten updates ontvangen van de Current Branch of van de Current Branch for Business.  
-- **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U hebt dan een gefaseerde update-implementatie zodat u kunt de voortgang kunt controleren.
+- **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U kunt deze instellingen gebruiken voor een gefaseerde update-implementatie, zodat u kunt de voortgang kunt controleren.
 - **Onderbreken**: stel de installatie van updates uit als u op enig moment tijdens de implementatie van de updates problemen ontdekt.
 - **Onderhoudsvenster**: configureer de tijden waarop de updates kunnen worden geïnstalleerd.
 - **Type update**: kies welke typen updates worden geïnstalleerd. Bijvoorbeeld kwaliteitsupdates, upgrades van onderdelen of stuurprogramma’s.
@@ -67,7 +67,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
   > [!NOTE]
   > Instellingen voor Windows 10-updates die zijn gemaakt in de klassieke portal worden na de migratie niet weergegeven in de Azure-portal. Deze instellingen worden echter nog wel toegepast. Als u deze instellingen hebt gemigreerd en het gemigreerde beleid bewerkt in Azure Portal, worden deze instellingen verwijderd uit het beleid.
 
-2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een updatering, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer bijvoorbeeld dezelfde instelling is geconfigureerd met verschillende waarden zal er een conflict ontstaan en is er geen eenvoudige manier om dit te achterhalen, omdat de instelling die is geconfigureerd in de klassieke portal niet wordt weergegeven in de Azure-portal.
+2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een updatering, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer bijvoorbeeld dezelfde instelling is geconfigureerd met verschillende waarden, ontstaat er een conflict. Er is geen eenvoudige manier om dit te achterhalen, omdat de instelling die is geconfigureerd in de klassieke portal niet wordt weergegeven in de Azure-portal.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Updateringen maken en toewijzen
 
@@ -78,7 +78,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 5. Kies **Maken** op de blade met de updateringen.
 6. Geef op de blade **Updatering maken** een naam en een optionele omschrijving voor de updatering op en kies vervolgens **Instellingen**.
 7. Configureer de volgende gegevens op de blade **Instellingen**:
-    - **Servicing branch**: stel de branche in waarvoor het apparaat Windows-updates moet ontvangen (Current Branch of Current Branch for Business).
+    - **Servicing branch**: stel de branche in waarvoor het apparaat Windows-updates ontvangt (Current Branch of Current Branch for Business).
     - **Microsoft-updates**: kies of u wilt zoeken naar app-updates via Microsoft Update.
     - **Windows-stuurprogramma's**: kies of u Windows Update-stuurprogramma's wilt uitsluiten tijdens het bijwerken.
     - **Gedrag van automatische updates**: kies hoe het gedrag van automatische update moet worden beheerd voor het zoeken naar, downloaden en installeren van updates. Zie [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
@@ -103,14 +103,35 @@ De nieuwe updatering wordt weergegeven in de lijst met updateringen.
 2. Kies op het volgende tabblad **Groepen selecteren** en kies vervolgens de groepen waaraan u deze ring wilt toewijzen.
 3. Als u klaar bent, kiest u **Selecteren** om de toewijzing te voltooien.
 
-
-
 ## <a name="update-compliance-reporting"></a>Update-nalevingsrapportages
+Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) kunt u de updatenaleving weergeven in Intune.
+
+### <a name="review-update-compliance-in-intune"></a>Updatenaleving weergeven in Intune 
+<!-- 1352223 -->
+Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updateringen die u hebt geconfigureerd. 
+1. Meld u aan bij Azure Portal.
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+3. Kies **Software-updates** op de blade **Intune**.
+4. Kies op de blade **Software-updates** de optie **Overzicht**. Hier wordt algemene informatie weergegeven over de status van de updateringen die u hebt toegewezen.
+5. Open een van de volgende rapporten: 
+     
+   **Voor alle implementatieringen:**
+   1. Op de blade **Software-updates** > **Windows 10-updateringen**. 
+   2. In de sectie **Bewaken** kiest u **Implementatiestatus per updatering**.
+                   
+   **Voor specifieke implementatieringen:** 
+   1. Kies op de blade **Software-updates** > **Windows 10-updateringen** de implementatiering die u wilt weergeven.
+   2. Kies in de sectie **Bewaken** een van de volgende rapporten om meer gedetailleerde informatie over de implementatiering weer te geven:
+      - **Updateringimplementatie voor apparaten**
+      - **Updateringimplementatie voor gebruikers**
+      - **Implementatiestatus per instelling**
+
+### <a name="review-update-compliance-using-oms"></a>Updatenaleving weergeven in OMS
 Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) kunt u de Windows 10 update-implementatie bewaken. Zie [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Windows-updates bewaken met Update Compliance) voor meer informatie. Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.
 
 In de Intune-console kunt u de OMA-URI-instellingen van een aangepast beleid gebruiken om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) voor meer informatie.   
 
-De pad voor de OMA-URI (hoofdlettergevoelig) voor het configureren van de commerciële id is: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+Het pad voor de OMA-URI (hoofdlettergevoelig) voor het configureren van de commerciële id is: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoegen of bewerken**:
 
@@ -122,25 +143,13 @@ U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoe
 
 ![Windows-instelling voor diagnostische gegevens en gebruiksgegevens](./media/commID.png)
 
-<!--
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-4. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
--->
-
-
-
-
-
 ## <a name="how-to-pause-updates"></a>Updates onderbreken
 U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows-Updates naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Software-updates** op de blade **Intune**.
 4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.
-5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **... **  >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
+5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
 
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.

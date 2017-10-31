@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44358d68a653760804f11668ab64d30ebf7ae9eb
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Naslag voor MAM-entiteiten (Mobile Application Management)
 
@@ -38,13 +38,13 @@ De entiteit **MamApplication** bevat een lijst met LOB-apps (Line-of-Business) d
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| ApplicationKey |De unieke id van de MAM-app in het datawarehouse |123 |
-| ApplicationName |De naam van de MAM-app |"Word" |
-| ApplicationId |De toepassings-ID van de MAM-app |b66bc706-FFFF-7437-0340-032819502773 |
-| IsDeleted |Geeft aan of deze MAM-app-record is bijgewerkt. Waar: de MAM-app heeft een nieuwe record met bijgewerkte velden in deze tabel. Onwaar: de meest recente record voor deze MAM-app. |Waar/onwaar |
-| StartDateInclusiveUTC |De datum en tijd in UTC waarop deze MAM-app is gemaakt in het datawarehouse |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze MAM-app het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
+| ApplicationKey |De unieke id van de MAM-app in het datawarehouse. |123 |
+| ApplicationName |De naam van de MAM-app. |"Word" |
+| ApplicationID |De toepassings-ID van de MAM-app. |b66bc706-ffff-7437-0340-032819502773 |
+| IsDeleted |Geeft aan of deze MAM-app-record is bijgewerkt. <br>Waar: de MAM-app heeft een nieuwe record met bijgewerkte velden in deze tabel. <br>Onwaar: de meest recente record voor deze MAM-app. |Waar/onwaar |
+| StartDateInclusiveUTC |De datum en tijd in UTC waarop deze MAM-app is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze MAM-app het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
@@ -52,21 +52,21 @@ De entiteit **MamApplicationInstance** bevat een lijst met beheerde MAM-apps (Mo
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| ApplicationInstanceKey |De unieke id van het MAM-app-exemplaar in het datawarehouse (surrogaatsleutel) |123 |
-| UserId |De gebruikers-id van de gebruiker die deze MAM-app heeft geïnstalleerd |b66bc706-FFFF-7437-0340-032819502773 |
-| ApplicationInstanceId |De unieke id van het MAM-app-exemplaar, vergelijkbaar met ApplicationInstanceKey, maar de id is een natuurlijke sleutel |b66bc706-FFFF-7437-0340-032819502773 |
+| ApplicationInstanceKey |De unieke id van het MAM-app-exemplaar in het datawarehouse (surrogaatsleutel). |123 |
+| UserId |De gebruikers-id van de gebruiker die deze MAM-app heeft geïnstalleerd. |b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationInstanceId |De unieke id van het MAM-app-exemplaar, vergelijkbaar met ApplicationInstanceKey, maar de id is een natuurlijke sleutel. |b66bc706-ffff-7437-0340-032819502773 |
 | ApplicationId |De toepassings-ID van deze MAM-app |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |De toepassingsversie van deze MAM-app |2 |
+| ApplicationVersion |De toepassingsversie van deze MAM-app. |2 |
 | CreatedDate |De datum waarop deze record van het MAM-app-exemplaar is gemaakt. De waarde kan null zijn. |11/23/2016 12:00:00 AM |
-| Platform |Het platform van het apparaat waarop deze MAM-app is geïnstalleerd |2 |
-| PlatformVersion |De versie van het platform van het apparaat waarop deze MAM-app is geïnstalleerd |2.2 |
-| SdkVersion |De MAM SDK-versie waarmee deze MAM-app is ingepakt |3.2 |
-| DeviceId |De apparaat-id van het apparaat waarop deze MAM-app is geïnstalleerd |b66bc706-FFFF-7437-0340-032819502773 |
-| DeviceName |De apparaatnaam van het apparaat waarop deze MAM-app is geïnstalleerd |"MijnApparaat" |
-| IsDeleted |Geeft aan of de record van dit MAM-app-exemplaar is bijgewerkt. True: het MAM-app-exemplaar heeft een nieuwe record met bijgewerkte velden in deze tabel. Onwaar: de meest recente record voor dit MAM-app-exemplaar. |Waar/onwaar |
-| StartDateInclusiveUTC |De datum en tijd in UTC waarop dit MAM-app-exemplaar is gemaakt in het datawarehouse |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop dit MAM-app-exemplaar het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
+| Platform |Het platform van het apparaat waarop deze MAM-app is geïnstalleerd. |2 |
+| PlatformVersion |De versie van het platform van het apparaat waarop deze MAM-app is geïnstalleerd. |2.2 |
+| SdkVersion |De MAM SDK-versie waarmee deze MAM-app is ingepakt. |3.2 |
+| DeviceId |De apparaat-id van het apparaat waarop deze MAM-app is geïnstalleerd. |b66bc706-ffff-7437-0340-032819502773 |
+| DeviceName |De apparaatnaam van het apparaat waarop deze MAM-app is geïnstalleerd. |"MijnApparaat" |
+| IsDeleted |Geeft aan of de record van dit MAM-app-exemplaar is bijgewerkt. <br>True: het MAM-app-exemplaar heeft een nieuwe record met bijgewerkte velden in deze tabel. <br>Onwaar: de meest recente record voor dit MAM-app-exemplaar. |Waar/onwaar |
+| StartDateInclusiveUTC |De datum en tijd in UTC waarop dit MAM-app-exemplaar is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop dit MAM-app-exemplaar het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -77,12 +77,12 @@ De entiteit **MamCheckin** vertegenwoordigt gegevens die worden verzameld wannee
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| DateKey |De datum waarop het inchecken van de MAM-app is vastgelegd in het datawarehouse | 20160703 |
-| ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app |5/2/1900 12:00:00 AM |
-| UserKey |De sleutel van de gebruiker die is gekoppeld aan het inchecken van deze MAM-app |1/12/1900 12:00:00 AM |
-| ApplicationKey |De sleutel van de MAM-app die is ingecheckt |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |De sleutel van de apparaatstatus die is gekoppeld aan het inchecken van deze MAM-app |1/2/1900 12:00:00 AM |
-| PlatformKey |Het platform van het apparaat dat is gekoppeld aan het inchecken van deze MAM-app |1/1/1900 12:00:00 AM |
+| DateKey |De datum waarop het inchecken van de MAM-app is vastgelegd in het datawarehouse. | 20160703 |
+| ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app. |5/2/1900 12:00:00 AM |
+| UserKey |De sleutel van de gebruiker die is gekoppeld aan het inchecken van deze MAM-app. |1/12/1900 12:00:00 AM |
+| ApplicationKey |De sleutel van de MAM-app die is ingecheckt. |1/10/1900 12:00:00 AM |
+| DeviceHealthKey |De sleutel van de apparaatstatus die is gekoppeld aan het inchecken van deze MAM-app. |1/2/1900 12:00:00 AM |
+| PlatformKey |Het platform van het apparaat dat is gekoppeld aan het inchecken van deze MAM-app. |1/1/1900 12:00:00 AM |
 | EffectiveAppliedPolicyKey |Het effectief toegepaste beleid dat is gekoppeld aan de MAM-app die is ingecheckt. Een effectief toegepast beleid is het resultaat van het samenvoegen van alle beleidsregels die relevant zijn voor een bepaalde app en gebruiker. |5/2/1900 12:00:00 AM |
 | LastCheckInDate |De datum en tijd waarop deze MAM-app het laatst is ingecheckt. De waarde kan null zijn. |11/23/2016 12:00:00 AM |
 
@@ -92,10 +92,10 @@ De entiteit **MamDeviceHealth** vertegenwoordigt apparaten waarop MAM-beleid (Mo
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| DeviceHealthKey |De unieke id van het apparaat en de bijbehorende status in het datawarehouse (surrogaatsleutel) |1/1/1900 12:00:00 AM |
-| DeviceHealth |De unieke id van het apparaat en de bijbehorende status, vergelijkbaar met DeviceHealthKey, maar de id is een natuurlijke sleutel |1/1/1900 12:00:00 AM |
-| DeviceHealthName |De status van het apparaat. Niet beschikbaar: er is geen informatie over dit apparaat. Goed: apparaat is niet opengebroken. Slecht: apparaat is opengebroken. |Niet beschikbaar Goed Slecht |
-| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze specifieke MAM-apparaatstatus het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
+| DeviceHealthKey |De unieke id van het apparaat en de bijbehorende status in het datawarehouse (surrogaatsleutel). |1/1/1900 12:00:00 AM |
+| DeviceHealth |De unieke id van het apparaat en de bijbehorende status, vergelijkbaar met DeviceHealthKey, maar de id is een natuurlijke sleutel. |1/1/1900 12:00:00 AM |
+| DeviceHealthName |De status van het apparaat. <br>Niet beschikbaar: er is geen informatie over dit apparaat. <br>Goed: apparaat is niet opengebroken. <br>Slecht: apparaat is opengebroken. |Niet beschikbaar Goed Slecht |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze specifieke MAM-apparaatstatus het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 
 ## <a name="mameffectivepolicy"></a>MamEffectivePolicy
 
@@ -103,7 +103,7 @@ De entiteit **MamEffectivePolicy** bevat een lijst van alle effectieve MAM-belei
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| EffectivePolicyKey |De unieke id van het effectieve MAM-beleid in het datawarehouse |2 |
+| EffectivePolicyKey |De unieke id van het effectieve MAM-beleid in het datawarehouse. |2 |
 | RealPolicyKey |De unieke id van het MAM-beleid dat is opgesteld door de IT-professional. |1 |
 | RowCreatedDateTimeUtc |De datum en tijd in UTC waarop dit effectieve MAM-beleid is gemaakt in het datawarehouse |11/23/2016 12:00:00 AM |
 
@@ -124,7 +124,7 @@ De entiteit **MamPlatform** bevat de platformnamen en -typen waarop een MAM-app 
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| PlatformKey |De unieke id van het platform in het datawarehouse (surrogaatsleutel) |123 |
-| Platform |De unieke id van de platform, vergelijkbaar met PlatformKey, maar het is een natuurlijke sleutel |123 |
-| PlatformName |De naam van het platform |Niet beschikbaar Geen Windows IOS Android |
-| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop dit platform het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
+| PlatformKey |De unieke id van het platform in het datawarehouse (surrogaatsleutel). |123 |
+| Platform |De unieke id van de platform, vergelijkbaar met PlatformKey, maar het is een natuurlijke sleutel. |123 |
+| PlatformName |De naam van het platform |Niet beschikbaar <br>Geen <br>Windows <br>iOS <br>Android. |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop dit platform het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |

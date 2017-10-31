@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 
@@ -35,14 +35,14 @@ De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprof
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| PolicyKey |Een unieke sleutel voor het beleid in het datawarehouse |123 |
-| PolicyId |Een unieke id van het beleid in het datawarehouse |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |De naam van het beleid |"Windows 10 Baseline" |
+| PolicyKey |Een unieke sleutel voor het beleid in het datawarehouse. |123 |
+| PolicyId |Een unieke id van het beleid in het datawarehouse. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |De naam van het beleid. |"Windows 10 Baseline" |
 | PolicyVersion |De versie van het beleid. Wanneer het beleid wordt gewijzigd, wordt er een nieuwere versie gemaakt. |1, 2, 3 |
-| IsDeleted |Geeft aan of de beleidsrecord is bijgewerkt.  Waar: het beleid heeft een nieuwe record met bijgewerkte velden. Onwaar: de meest recente record voor het beleid. |Waar/onwaar |
-| StartDateInclusiveUTC |De datum en tijd in UTC waarop het beleid is gemaakt in het datawarehouse |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop het beleid het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
+| IsDeleted |Geeft aan of de beleidsrecord is bijgewerkt.  <br>Waar: het beleid heeft een nieuwe record met bijgewerkte velden. <br>Onwaar: de meest recente record voor het beleid. |Waar/onwaar |
+| StartDateInclusiveUTC |De datum en tijd in UTC waarop het beleid is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop het beleid het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ De entiteit **PolicyType** bevat typen apparaatconfiguratieprofielen, app-config
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| PolicyTypeId |Een unieke id van het beleid in het bronsysteem |123 |
-| PolicyTypeKey |Een unieke id van het beleid in het datawarehouse |1 |
-| PolicyTypeName |De naam van het beleidstype |Windows 10 Compliance policy |
+| PolicyTypeId |Een unieke id van het beleid in het bronsysteem. |123 |
+| PolicyTypeKey |Een unieke id van het beleid in het datawarehouse. |1 |
+| PolicyTypeName |De naam van het beleidstype |Nalevingsbeleid van Windows 10. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ De entiteit **DeviceConfigurationProfileDeviceActivity** bevat het aantal appara
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse |20160703 |
-| In behandeling |Aantal unieke apparaten met de status In behandeling |123 |
-| Geslaagd |Aantal unieke apparaten met de status Geslaagd |12 |
-| Fout |Aantal unieke apparaten met de status Fout |10 |
-| Mislukt |Aantal unieke apparaten met de status Mislukt |2 |
+| DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |20160703 |
+| In behandeling |Aantal unieke apparaten met de status In behandeling. |123 |
+| Geslaagd |Aantal unieke apparaten met de status Geslaagd. |12 |
+| Fout |Aantal unieke apparaten met de status Fout. |10 |
+| Mislukt |Aantal unieke apparaten met de status Mislukt. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ De entiteit **UserConfigurationProfileDeviceActivity** bevat het aantal gebruike
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse |20160703 |
-| In behandeling |Aantal unieke gebruikers met de status In behandeling |123 |
-| Geslaagd |Aantal unieke gebruikers met de status Geslaagd |12 |
-| Fout |Aantal unieke gebruikers met de status Fout |10 |
-| Mislukt |Aantal unieke gebruikers met de status Mislukt |2 |
+| DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |20160703 |
+| In behandeling |Aantal unieke gebruikers met de status In behandeling. |123 |
+| Geslaagd |Aantal unieke gebruikers met de status Geslaagd. |12 |
+| Fout |Aantal unieke gebruikers met de status Fout. |10 |
+| Mislukt |Aantal unieke gebruikers met de status Mislukt. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ De entiteit **PolicyTypeActivity** bevat het cumulatieve aantal apparaten met de
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse |20160703 |
-| PolicyKey |Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen |Windows 10 baseline |
-| PolicyTypeKey |Het type beleidssleutel, kan worden samengevoegd met PolicyType om de naam van het beleidstype op te halen |Windows10Compliance Policy |
-| In behandeling |Aantal unieke apparaten met de status In behandeling |123 |
-| Geslaagd |Aantal unieke apparaten met de status Geslaagd |12 |
-| Fout |Aantal unieke apparaten met de status Fout |10 |
-| Mislukt |Aantal unieke apparaten met de status Mislukt |2 |
+| DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |20160703 |
+| PolicyKey |Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen. |Windows 10 baseline |
+| PolicyTypeKey |Het type beleidssleutel, kan worden samengevoegd met PolicyType om de naam van het beleidstype op te halen. |Windows 10-nalevingsbeleid configureren |
+| In behandeling |Aantal unieke apparaten met de status In behandeling. |123 |
+| Geslaagd |Aantal unieke apparaten met de status Geslaagd. |12 |
+| Fout |Aantal unieke apparaten met de status Fout. |10 |
+| Mislukt |Aantal unieke apparaten met de status Mislukt. |2 |
