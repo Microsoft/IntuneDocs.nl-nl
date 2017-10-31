@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Mobile Threat Defense installeren op uw iOS-apparaat
 
@@ -31,6 +31,17 @@ Voordat u toegang tot uw werk kunt krijgen, moet u voor het ondersteuningsteam v
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**Als de installatie niet werkt**
+## <a name="additional-information-your-company-can-see"></a>Aanvullende informatie die uw bedrijf kan zien
+
+Mobile Threat Defense biedt bedrijven een manier om ervoor te zorgen dat uw apparaten zijn beveiligd tegen apps die proberen bedrijfsinformatie te stelen. Voor deze beveiliging moet extra informatie over de apps op uw apparaat worden gerapporteerd aan de Mobile Threat Defense-service die uw bedrijf gebruikt. Uw bedrijf kan de gegevens in uw persoonlijke apps niet zien. Alle apps op uw apparaat worden toegevoegd aan [wat uw bedrijf kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) wanneer ze gebruikmaken van een Mobile Threat Defense-service. Dit zijn de gedeelten van de app die uw bedrijf kan zien:
+
+*   App-naam
+* App-id: de unieke naam waarmee de app wordt geïdentificeerd in de App Store
+*   App-versie en verkort versienummer: specifieke releasenummers van een app
+* App-bundel en dynamische grootte: de hoeveelheid ruimte die een app op uw apparaat gebruikt
+* App-geldigheid: geeft aan of een app is goedgekeurd voor gebruik
+*   Status van app-beheer: geeft aan of een app wordt beheerd door uw bedrijf of een persoonlijke app is
+
+## <a name="if-the-installation-doesnt-work"></a>Als de installatie niet werkt
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -58,7 +58,7 @@ Maak een systeemeigen app in Azure. Deze systeemeigen app is de client-app. De c
 
 U hebt nu een app gedefinieerd in Azure. Verleen via de systeemeigen app toegang tot de Microsoft Intune-API.
 
-1.  Klik op de systeemeigen app. U hebt de app een naam gegeven, zoals Intune-datawarehouseclient.
+1.  Klik op de systeemeigen app. U hebt de app een naam gegeven, zoals **Intune-datawarehouseclient**.
 2.  Selecteer op de blade **Instellingen** de optie **Vereiste machtigingen**
 3.  Klik op de blade **Vereiste machtigingen** op **Toevoegen**.
 4.  Klik op **Een API selecteren**.
@@ -152,14 +152,14 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
 1.  Open **Microsoft Visual Studio**.
 2.  Kies **Bestand** > **Nieuw project**. Vouw **Visual C#** uit en kies **Console-app (.Net Framework)**. 
 3.  Noem het project ` IntuneDataWarehouseSamples`, blader naar de locatie waar u het project wilt opslaan en klik vervolgens op **OK**.
-3.  Klik met de rechtermuisknop op de naam van de oplossing in Solution Explorer en selecteer vervolgens **NuGet-pakketten beheren voor oplossing**. Klik op **Bladeren** en typ vervolgens 'Microsoft.IdentityModel.Clients.ActiveDirectory' in het zoekvak.
-4. Kies het pakket, selecteer het project **IntuneDataWarehouseSamples** onder Pakketten beheren voor uw oplossing en klik vervolgens op **Installeren**. 
-5. Klik op **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.
-6. Open `Program.cs` in de Solution Explorer.
+4.  Klik met de rechtermuisknop op de naam van de oplossing in Solution Explorer en selecteer vervolgens **NuGet-pakketten beheren voor oplossing**. Klik op **Bladeren** en typ vervolgens `Microsoft.IdentityModel.Clients.ActiveDirectory` in het zoekvak.
+5. Kies het pakket, selecteer het project **IntuneDataWarehouseSamples** onder Pakketten beheren voor uw oplossing en klik vervolgens op **Installeren**. 
+6. Klik op **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.
+7. Open `Program.cs` in de Solution Explorer.
 
     ![Project in Visual Studio](media\reports-get_rest_data_in.png)
 
-7.  Vervang de code in Program.cs door de volgende code:  
+8.  Vervang de code in Program.cs door de volgende code:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Werk de `TODO`'s in de voorbeeldcode bij.
-9.  Druk op **Ctrl + F5** om de Intune.DataWarehouseAPIClient-client te bouwen en in de foutopsporingsmodus uit te voeren.
+9.  Werk de `TODO`'s in de voorbeeldcode bij.
+10.  Druk op **Ctrl + F5** om de Intune.DataWarehouseAPIClient-client te bouwen en in de foutopsporingsmodus uit te voeren.
 
     ![Datumentiteit verkregen in JSON-indeling.](media\reports-get_rest_data_output.png)
 
-10.  Bekijk de uitvoer van de console. De uitvoer bevat gegevens in een JSON-indeling, afkomstig uit de entiteit **datums** in uw Intune-tenant.
+11.  Bekijk de uitvoer van de console. De uitvoer bevat gegevens in een JSON-indeling, afkomstig uit de entiteit **datums** in uw Intune-tenant.
 
 ## <a name="next-steps"></a>Volgende stappen
 

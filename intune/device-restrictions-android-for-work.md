@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Android for Work-apparaatbeperkingsinstellingen in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Werkprofielinstellingen
-- **Gegevens delen tussen werkprofiel en persoonlijk profiel**: gebruik deze instelling om te bepalen of apps in het werkprofiel gegevens mogen delen met apps in het persoonlijke profiel. Met deze instelling worden de deelacties binnen toepassingen bepaald (bijvoorbeeld de optie **Delen…** in de Chrome-browser-app). De instelling is niet van toepassing voor het klembordgedrag voor kopiëren en plakken. In tegenstelling tot de [beleidsinstellingen voor de beveiliging van apps](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) worden de instellingen voor apparaatbeperkingen beheerd via de Azure-portal en wordt de Android for Work-profielpartitie gebruikt om beheerde apps te isoleren. U kunt kiezen uit:
+-   **Kopiëren en plakken tussen werkprofielen en persoonlijke profielen**: hiermee beheert u het kopiëren en plakken tussen zakelijke apps en persoonlijke apps. Kies **Blokkeren** om blokkeren in te schakelen. Kies **Niet geconfigureerd** om blokkeren uit te schakelen.
+- **Gegevens delen tussen werkprofiel en persoonlijk profiel**: gebruik deze instelling om te bepalen of apps in het werkprofiel gegevens mogen delen met apps in het persoonlijke profiel. Met deze instelling worden de deelacties binnen toepassingen bepaald (bijvoorbeeld de optie **Delen…** in de Chrome-browser-app). De instelling is niet van toepassing voor het klembordgedrag voor kopiëren en plakken. In tegenstelling tot de [beleidsinstellingen voor de beveiliging van apps](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) worden de instellingen voor apparaatbeperkingen beheerd via de Intune-portal en wordt de Android for Work-profielpartitie gebruikt om beheerde apps te isoleren. U kunt kiezen uit:
     - **Delen buiten grenzen toestaan**: dit is de standaardinstelling voor het delen van gegevens van het apparaat en deze is afhankelijk van de versie van Android die wordt uitgevoerd. Delen van het persoonlijke profiel naar het werkprofiel is standaard toegestaan. Delen van het werkprofiel naar het persoonlijke profiel is standaard geblokkeerd. Met deze instelling wordt voorkomen dat er gegevens worden gedeeld van het werkprofiel met het persoonlijke profiel. Google biedt geen een manier om het delen van gegevens van het persoonlijke profiel naar het werkprofiel te blokkeren op apparaten met versie 6.0 of later.   
     - **Met de apps in het werkprofiel kunnen aanvragen voor het delen van het persoonlijke profiel worden verwerkt**: gebruik deze optie om de ingebouwde Android-functie in te schakelen waarmee het delen van gegevens vanuit het persoonlijke profiel naar het werkprofiel is toegestaan. Wanneer dit is ingeschakeld, kan een deelverzoek van een app in het persoonlijke profiel worden gedeeld met apps in het werkprofiel. Dit is de standaardinstelling voor Android-apparaten met een oudere versie dan 6.0.
     - **Standaardbeperkingen voor delen**: biedt de mogelijkheid om in beide richtingen buiten de grenzen van het werkprofiel delen. Wanneer u deze instelling selecteert, kunnen apps met het werkprofiel gegevens delen met apps in het persoonlijke profiel die geen badge hebben. Gebruik deze instelling zorgvuldig omdat hiermee beheerde apps in het werkprofiel gegevens kunnen delen met apps aan de onbeheerde zijde van het apparaat.

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab24b147b32c94ba51728c0c223de3e6c92dd215
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
+ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Apparaten synchroniseren met Intune om het meest recente beleid en de meest recente acties te verkrijgen
 
@@ -29,11 +29,11 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
-- Windows: ondersteund
-- Windows Phone: ondersteund
-- iOS: ondersteund
-- Mac OS: ondersteund
-- Android: ondersteund
+- Windows
+- Windows Phone
+- iOS
+- macOS
+- Android
 
 ## <a name="how-to-sync-a-device"></a>Apparaten synchroniseren
 
@@ -43,6 +43,26 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
 5. Kies een apparaat in de lijst met apparaten die u beheert en kies vervolgens de externe actie **Synchroniseren**.
 7. Kies **Ja** om de actie te bevestigen.
+
+
+## <a name="retriable-error-codes"></a>Codes van fouten waarvoor een nieuwe poging kan worden gedaan
+
+Wanneer een beheerder de apparaatactie **Synchroniseren** uitvoert, zijn iOS- en Android-apps waarbij de actie is mislukt maar die een foutcode genereerden die aangeeft dat een nieuwe poging kan worden gedaan, beschikbaar voor het apparaat. Apps die een foutcode genereerden die aangaf dat er geen nieuwe poging kan worden gedaan, kunnen pas na zeven dagen weer beschikbaar kunnen worden gemaakt voor het apparaat.
+
+
+| Foutcode  | Voorgestelde beschrijving                                                                                                                  | Nieuwe poging mogelijk |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | Er is een onbekende fout opgetreden.                                                                                                             | Nee        |
+| 2016330897 | Er is een time-out opgetreden voor de verbinding met Intune. Stel de verbinding opnieuw in                                                                             | Ja       |
+| 2016330896 | De verbinding met internet is verbroken. Stel de verbinding opnieuw in.                                                                            | Ja       |
+| 2016330895 | De verbinding met internet is verbroken. Stel de verbinding opnieuw in.                                                                            | Ja       |
+| 2016330894 | De verbinding met internet is verbroken. Stel de verbinding opnieuw in.                                                                            | Ja       |
+| 2016330893 | De verbinding met internet is verbroken. Stel de verbinding opnieuw in.                                                                            | Ja       |
+| 2016330892 | Internationale roaming is uitgeschakeld.                                                                                                     | Nee        |
+| 2016330891 | De mobiele gegevensverbinding vor dit apparaat kan niet worden gebruikt terwijl er wordt gebeld. Wacht tot het gesprek is beëindigd. | Ja       |
+| 2016330890 | Het mobiele netwerk voor dit apparaat. Deze apparaten kunnen momenteel niet worden gebruikt.                                                   | Nee        |
+| 2016330889 | De beveiligde verbinding is mislukt. Stel de verbinding opnieuw in.                                                                                   | Ja       |
+| 2016330888 | De evaluatie van de vertrouwelijke server is mislukt.                                                                                                | Nee        |
 
 ## <a name="next-steps"></a>Volgende stappen
 
