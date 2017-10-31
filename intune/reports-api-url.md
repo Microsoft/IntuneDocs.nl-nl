@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-datawarehouse-API-eindpunt
 
 U kunt de Intune-datawarehouse-API gebruiken met een account met specifiek op rollen gebaseerd toegangsbeheer en Azure AD-referenties. Vervolgens autoriseert u uw REST client met Azure AD met behulp van OAuth 2.0. En ten slotte vormt u een zinvolle URL voor het aanroepen van een datawarehouseresource.
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Azure AD en Intune-referentievereisten
-
-Verificatie en autorisatie zijn gebaseerd op Azure AD-referenties en Intune RBAC (Role-Based Access Control, op rollen gebaseerd toegangsbeheer). Alle globale beheerders en Intune-servicebeheerders voor uw tenant hebben standaard toegang tot de API. Gebruik Intune-rollen om toegang te bieden voor meer gebruikers door hen toegang tot de **rapportageresource** te verlenen.
-
-Vereisten voor toegang tot de API zijn:
-
-  -  Er moet een Intune-licentie zijn toegewezen aan de gebruiker
-  -  Gebruiker moet een van de volgende zijn:
-      -  Globale Azure AD-beheerder
-      -  Een Intune-servicebeheerder
-      -  Gebruiker met op rollen gebaseerde toegang tot de **rapporten**resource
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Autorisatie
 
@@ -64,4 +54,4 @@ De huidige versie van de API is `beta`.
 
 ## <a name="odata-query-options"></a>OData-queryopties
 
-De huidige versie ondersteunt de volgende OData-queryparameters: `$skip, $top, $filter, $orderby`.
+De huidige versie ondersteunt de volgende OData-queryparameters: `$filter, $orderby, $select, $skip,` en `$top`.

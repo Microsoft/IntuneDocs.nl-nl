@@ -5,7 +5,7 @@ keywords: Intune-datawarehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb311429e0537709b3476154bdef24347cb99026
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
+ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Het Intune-datawarehouse gebruiken
 
@@ -41,4 +41,5 @@ Het datawarehouse biedt u toegang tot meer informatie over uw mobiele omgeving d
 **Volgende stappen**
 
 - Haal een koppeling op en gebruik Power BI om inzicht te krijgen. Zie [Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md) (Verbinding maken met het Intune-datawarehouse met Power BI) voor instructies.
+- Maak met de koppeling een aangepast rapport met Power BI. Zie [Een rapport maken van de OData-feed met Power BI](reports-proc-create-with-odata.md) voor instructies.
 - Verkrijg meer informatie over de Intune-datawarehouse-API, het gegevensmodel en relaties tussen entiteiten<!-- , and an example of creating a custom client to retrieve data,--> (zie [Intune-datawarehouse-API](reports-nav-intune-data-warehouse.md)).

@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -122,9 +122,9 @@ Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseig
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| ownerTypeID |Unieke id van het type eigenaar | |
-| ownerTypeKey |Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel | |
-| ownerTypeName |Hiermee wordt het type eigenaar van de apparaten voorgesteld: Company - apparaat is eigendom van de onderneming. Personal - apparaat is persoonlijk eigendom (BYOD).  Unknown - er is geen informatie over dit apparaat. |Company Personal Unknown |
+| ownerTypeID |Unieke id van het type eigenaar. | |
+| ownerTypeKey |Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel. | |
+| ownerTypeName |Vertegenwoordigt het eigenaartype van de apparaten:  <br>Company - apparaat is bedrijfseigendom. <br>Personal - apparaat is persoonlijk eigendom (BYOD).  <br>Unknown - er is geen informatie over dit apparaat. |Company Personal Unknown |
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 
@@ -132,7 +132,7 @@ Met de entiteit **MdmStatuses** wordt de nalevingsstatus van het apparaat aangeg
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus-id |0 - onbekend 1 - compatibel 2 - niet compatibel |
+| MdmStatusName |MdmStatus-id |0 - Onbekend <br>1 - Compatibel <br>2 - Niet compatibel |
 | MdmStatusKey |Unieke id van de nalevingsstatus in het datawarehouse - surrogaatsleutel | |
 
 ## <a name="managementstates"></a>ManagementStates
@@ -141,26 +141,26 @@ De entiteit **ManagementStates** verschaft informatie over de status van het app
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| managementStateID |Unieke id van de beheerstatus |
-| managementStateKey |Unieke id van de beheerstatus in het datawarehouse - surrogaatsleutel |
-| managementStateName |Hiermee wordt de status aangeduid van de externe actie die op dit apparaat is toegepast. |
+| managementStateID | Unieke id van de beheerstatus. |
+| managementStateKey | Unieke id van de beheerstatus in het datawarehouse - surrogaatsleutel. |
+| managementStateName | Hiermee wordt de status aangeduid van de externe actie die op dit apparaat is toegepast. |
 
 ## <a name="example"></a>Voorbeeld
 
 | managementStateID  | Naam | Beschrijving |
 |---------|------------|--------|
-| 0 |Beheerd |Beheerd zonder externe acties in behandeling. |
-| 1 |RetirePending |Er is een opdracht voor buiten gebruik stellen in behandeling voor het apparaat. |
-| 2 |RetireFailed |De opdracht voor buiten gebruik stellen is mislukt op het apparaat. |
-| 3 |WipePending |Er is een wisopdracht in behandeling voor het apparaat. |
-| 4 |WipeFailed |De wisopdracht is mislukt op het apparaat. |
-| 5 |Niet in orde |Status Niet in orde |
-| 6 |DeletePending |Er is een opdracht tot verwijderen in behandeling voor het apparaat. |
-| 7 |RetireIssued |Er is een opdracht voor buiten gebruik stellen gegeven op het apparaat. |
-| 8 |WipeIssued |Er is een wisopdracht gegeven. |
-| 9 |WipeCanceled |De wisopdracht is geannuleerd. |
-| 10 |RetireCanceled |De opdracht voor buiten gebruik stellen is geannuleerd. |
-| 11 |Discovered |Het apparaat is onlangs gedetecteerd door Intune. Wanneer er voor de eerste keer wordt ingecheckt, krijgt het de status Beheerd |
+| 0 |Beheerd | Beheerd zonder externe acties in behandeling. |
+| 1 |RetirePending | Er is een opdracht voor buiten gebruik stellen in behandeling voor het apparaat. |
+| 2 |RetireFailed | De opdracht voor buiten gebruik stellen is mislukt op het apparaat. |
+| 3 |WipePending | Er is een wisopdracht in behandeling voor het apparaat. |
+| 4 |WipeFailed | De wisopdracht is mislukt op het apparaat. |
+| 5 |Niet in orde | Status Niet in orde. |
+| 6 |DeletePending | Er is een opdracht tot verwijderen in behandeling voor het apparaat. |
+| 7 |RetireIssued | Er is een opdracht voor buiten gebruik stellen gegeven op het apparaat. |
+| 8 |WipeIssued | Er is een wisopdracht gegeven. |
+| 9 |WipeCanceled | De wisopdracht is geannuleerd. |
+| 10 |RetireCanceled | De opdracht voor buiten gebruik stellen is geannuleerd. |
+| 11 |Discovered | Het apparaat is onlangs gedetecteerd door Intune. Wanneer er voor de eerste keer wordt ingecheckt, krijgt het de status Beheerd. |
 
 ## <a name="workplacejoinstatetypes"></a>WorkPlaceJoinStateTypes
 
@@ -168,9 +168,9 @@ De entiteit **WorkPlaceJoinStateTypes** vertegenwoordigt de Active Directory Wor
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| WorkPlaceJoinStateID |Unieke id van de status van toevoeging aan de werkplek |
-| WorkPlaceJoinStateKey |Unieke id van de status van toevoeging aan de werkplek in het datawarehouse - surrogaatsleutel |
-| WorkPlaceJoinStateName |Status van toevoeging aan de werkplek |
+| WorkPlaceJoinStateID | Unieke id van de status van toevoeging aan de werkplek |
+| WorkPlaceJoinStateKey | Unieke id van de status van toevoeging aan de werkplek in het datawarehouse - surrogaatsleutel |
+| WorkPlaceJoinStateName | Status van toevoeging aan de werkplek |
 
 ## <a name="example"></a>Voorbeeld
 
@@ -192,21 +192,21 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| ManagementAgentTypeID |Unieke id van het type beheeragent |
-| ManagementAgentTypeKey |Unieke id van het type beheeragent in het datawarehouse - surrogaatsleutel |
+| ManagementAgentTypeID | Unieke id van het type beheeragent. |
+| ManagementAgentTypeKey | Unieke id van het type beheeragent in het datawarehouse - surrogaatsleutel. |
 | ManagementAgentTypeName |Hiermee wordt aangegeven wat voor soort agent wordt gebruikt om het apparaat te beheren. |
 
 ## <a name="example"></a>Voorbeeld
 
 | ManagementAgentTypeID  | Naam | Beschrijving |
 |---------|------------|--------|
-| 1 |EAS |Het apparaat wordt beheerd via Exchange Active Sync |
-| 2 |MDM |Het apparaat wordt beheerd met behulp van een MDM-agent |
-| 3 |EasMdm |Het apparaat wordt beheerd door zowel Exchange Active Sync als een MDM-agent |
-| 4 |IntuneClient |Het apparaat wordt beheerd door de Intune-PC-agent |
-| 5 |EasIntuneClient |Het apparaat wordt beheerd door zowel Exchange Active Sync als de Intune-PC-agent |
-| 8 |ConfigManagerClient |Het apparaat wordt beheerd door de System Center Configuration Manager-agent |
-| 16 |Onbekend |Onbekend type beheeragent |
+| 1 |EAS | Het apparaat wordt beheerd via Exchange Active Sync |
+| 2 |MDM | Het apparaat wordt beheerd met behulp van een MDM-agent |
+| 3 |EasMdm | Het apparaat wordt beheerd door zowel Exchange Active Sync als een MDM-agent |
+| 4 |IntuneClient | Het apparaat wordt beheerd door de Intune-PC-agent |
+| 5 |EasIntuneClient | Het apparaat wordt beheerd door zowel Exchange Active Sync als de Intune-PC-agent |
+| 8 |ConfigManagerClient | Het apparaat wordt beheerd door de System Center Configuration Manager-agent |
+| 16 |Onbekend | Onbekend type beheeragent |
 
 ## <a name="devices"></a>Apparaten
 
@@ -214,44 +214,44 @@ Met de entiteit **Devices** worden alle geregistreerde apparaten voor beheer en 
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel |
-| DeviceId |Unieke id van het apparaat |
-| DeviceName |Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
-| DeviceTypeKey |Sleutel van het kenmerk voor het apparaattype voor dit apparaat |
-| ClientRegisterationStateKey |Sleutel van het kenmerk voor de clientregistratiestatus voor dit apparaat |
-| OwnerTypeKey |Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend. |
-| objectSourceKey |Negeer deze kolom. |
-| CreatedDate |Datum waarop het apparaat is geregistreerd |
-| LastContact |Laatste bekende keer dat een apparaat is ingecheckt met Intune |
-| LastContactNotification |Laatste keer dat Intune heeft gemeld dat het apparaat moest worden ingecheckt met Intune |
-| LastContactWorkplaceJoin |De tijdstempel die de laatste bekende Workplace Join-status voor dit apparaat aangeeft. |
-| ManagementAgentKey |Sleutel van de beheeragent die is gekoppeld aan dit apparaat. |
-| ManagementStateKey |Sleutel van de aan dit apparaat gekoppelde beheerstatus waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot. |
-| ReferenceId |De apparaat-id in Azure Active Directory |
-| WorkPlaceJoinStateKey |Sleutel van de status van de werkplektoevoeging van dit apparaat. |
-| CategoryId |Negeer deze kolom. |
-| EnrollmentTypeKey |Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan). |
-| CertExpirationDate |Vervaldatum van het MDM-beheercertificaat. |
-| MdmStatusKey |Een sleutel voor MdmStatus |
-| OSFamily |Type besturingssysteem (Windows, iOS, Android, enzovoort) |
-| OSVersion |Besturingssysteemversie |
-| OSMajorVersion |Onderdeel primaire versie van de besturingssysteemversie (major.minor.build.revision) |
-| OSMinorVersion |Onderdeel secundaire versie van de besturingssysteemversie (major.minor.build.revision) |
-| OSBuildNumber |Onderdeel buildversie van de besturingssysteemversie (major.minor.build.revision) |
-| OSRevisionNumber |Onderdeel revisieversie van de besturingssysteemversie (major.minor.build.revision) |
-| EasID |De EAS-id van dit apparaat, als het apparaat wordt beheerd door Exchange Active Sync. |
-| GraphDeviceIsManaged |De laatste beheerstatus die met Intune is ingesteld in AAD |
-| GraphDeviceIsCompliant |De laatste nalevingsstatus die met Intune is ingesteld in AAD |
-| SerialNumber |Serienummer van het apparaat, indien beschikbaar |
-| EnrolledByUser |De id van de gebruiker die dit apparaat heeft geregistreerd die verwijst naar de kolom userId in de tabel User. |
-| RowLastModifiedDateTimeUTC |Laatste keer dat deze record is gewijzigd. |
-| ProcessorArchitecture |Processorarchitectuur |
-| DeviceAction |Laatste apparaatactie waarvoor opdracht is gegeven; voor nu negeren. |
-| Fabrikant |Fabrikant van het apparaat |
-| Model |Model van het apparaat |
-| LastPolicyUpdateUtc |Tijdstip waarop het beleid voor het laatst op het apparaat is bijgewerkt |
-| LastExchangeStatusUtc |Laatste keer dat het apparaat is gesynchroniseerd met Exchange. |
-| IsDeleted |Ingesteld op True als het apparaat niet meer wordt beheerd door Intune. De laatst bekende status blijft behouden. |
+| DeviceKey | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. |
+| DeviceId | Unieke id van het apparaat. |
+| DeviceName | Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
+| DeviceTypeKey | Sleutel van het kenmerk voor het apparaattype voor dit apparaat. |
+| ClientRegisterationStateKey | Sleutel van het kenmerk voor de clientregistratiestatus voor dit apparaat. |
+| OwnerTypeKey | Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend. |
+| objectSourceKey | Negeer deze kolom. |
+| CreatedDate | Datum waarop het apparaat is geregistreerd. |
+| LastContact | Laatste bekende keer dat een apparaat is ingecheckt met Intune. |
+| LastContactNotification | Laatste keer dat Intune heeft gemeld dat het apparaat moest worden ingecheckt met Intune. |
+| LastContactWorkplaceJoin | De tijdstempel die de laatste bekende Workplace Join-status voor dit apparaat aangeeft. |
+| ManagementAgentKey | Sleutel van de beheeragent die is gekoppeld aan dit apparaat. |
+| ManagementStateKey | Sleutel van de aan dit apparaat gekoppelde beheerstatus waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot. |
+| ReferenceId | De apparaat-id in Azure Active Directory. |
+| WorkPlaceJoinStateKey | Sleutel van de status van de werkplektoevoeging van dit apparaat. |
+| CategoryId | Negeer deze kolom. |
+| EnrollmentTypeKey | Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan). |
+| CertExpirationDate | Vervaldatum van het MDM-beheercertificaat. |
+| MdmStatusKey | Een sleutel voor MdmStatus. |
+| OSFamily | Type besturingssysteem (Windows, iOS, Android, enzovoort) |
+| OSVersion | Besturingssysteemversie |
+| OSMajorVersion | Onderdeel primaire versie van de besturingssysteemversie (major.minor.build.revision). |
+| OSMinorVersion | Onderdeel secundaire versie van de besturingssysteemversie (major.minor.build.revision). |
+| OSBuildNumber | Onderdeel buildversie van de besturingssysteemversie (major.minor.build.revision). |
+| OSRevisionNumber | Onderdeel revisieversie van de besturingssysteemversie (major.minor.build.revision). |
+| EasID | De EAS-id van dit apparaat, als het apparaat wordt beheerd door Exchange Active Sync. |
+| GraphDeviceIsManaged | De laatste beheerstatus die met Intune is ingesteld in Azure AD. |
+| GraphDeviceIsCompliant | De laatste nalevingsstatus die met Intune is ingesteld in Azure AD. |
+| SerialNumber | Serienummer van het apparaat, indien beschikbaar. |
+| EnrolledByUser | De id van de gebruiker die dit apparaat heeft geregistreerd die verwijst naar de kolom userId in de tabel User. |
+| RowLastModifiedDateTimeUTC | Laatste keer dat deze record is gewijzigd. |
+| ProcessorArchitecture | Processorarchitectuur. |
+| DeviceAction | Laatste apparaatactie waarvoor opdracht is gegeven; voor nu negeren. |
+| Fabrikant | Fabrikant van het apparaat. |
+| Model | Model van het apparaat. |
+| LastPolicyUpdateUtc | Tijdstip waarop het beleid voor het laatst op het apparaat is bijgewerkt. |
+| LastExchangeStatusUtc | Laatste keer dat het apparaat is gesynchroniseerd met Exchange. |
+| IsDeleted | Ingesteld op True als het apparaat niet meer wordt beheerd door Intune. De laatst bekende status blijft behouden. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
@@ -259,100 +259,101 @@ De entiteit **DevicePropertyHistory** heeft dezelfde eigenschappen als de appara
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| DateKey |Verwijzing naar datumtabel waarmee de dag wordt aangegeven |
-| DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat |
+| DateKey |Verwijzing naar datumtabel waarmee de dag wordt aangegeven. |
+| DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
 | DeviceName |Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
-| DeviceTypeKey |Sleutel van het kenmerk voor het apparaattype voor dit apparaat |
-| ClientRegisterationStateKey |Sleutel van het kenmerk voor de clientregistratiestatus voor dit apparaat |
+| DeviceTypeKey |Sleutel van het kenmerk voor het apparaattype voor dit apparaat. |
+| ClientRegisterationStateKey |Sleutel van het kenmerk voor de clientregistratiestatus voor dit apparaat. |
 | OwnerTypeKey |Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend. |
 | objectSourceKey |Negeer deze kolom. |
-| CreatedDate |Datum waarop het apparaat is geregistreerd |
-| LastContact |Laatste bekende keer dat een apparaat is ingecheckt met Intune |
-| LastContactNotification |Laatste keer dat Intune heeft gemeld dat het apparaat moest worden ingecheckt met Intune |
+| CreatedDate |Datum waarop het apparaat is geregistreerd. |
+| LastContact |Laatste bekende keer dat een apparaat is ingecheckt met Intune. |
+| LastContactNotification |Laatste keer dat Intune heeft gemeld dat het apparaat moest worden ingecheckt met Intune. |
 | LastContactWorkplaceJoin |De tijdstempel die de laatste bekende Workplace Join-status voor dit apparaat aangeeft. |
 | ManagementAgentKey |Sleutel van de beheeragent die is gekoppeld aan dit apparaat. |
 | ManagementStateKey |Sleutel van de aan dit apparaat gekoppelde beheerstatus waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot. |
-| ReferenceId |De apparaat-id in Azure Active Directory |
+| ReferenceId |De apparaat-id in Azure Active Directory. |
 | WorkPlaceJoinStateKey |Sleutel van de status van de werkplektoevoeging van dit apparaat. |
 | CategoryId |Negeer deze kolom. |
 | EnrollmentTypeKey |Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan). |
 | CertExpirationDate |Vervaldatum van het MDM-beheercertificaat. |
-| MdmStatusKey |Een sleutel voor MdmStatus |
+| MdmStatusKey |Een sleutel voor MdmStatus. |
 | OSFamily |Type besturingssysteem (Windows, iOS, Android, enzovoort) |
-| OSVersion |Besturingssysteemversie |
-| OSMajorVersion |Onderdeel primaire versie van de besturingssysteemversie (major.minor.build.revision) |
-| OSMinorVersion |Onderdeel secundaire versie van de besturingssysteemversie (major.minor.build.revision) |
-| OSBuildNumber |Onderdeel buildversie van de besturingssysteemversie (major.minor.build.revision) |
-| OSRevisionNumber |Onderdeel revisieversie van de besturingssysteemversie (major.minor.build.revision) |
+| OSVersion |Versie besturingssysteem. |
+| OSMajorVersion |Onderdeel primaire versie van de besturingssysteemversie (major.minor.build.revision). |
+| OSMinorVersion |Onderdeel secundaire versie van de besturingssysteemversie (major.minor.build.revision). |
+| OSBuildNumber |Onderdeel buildversie van de besturingssysteemversie (major.minor.build.revision). |
+| OSRevisionNumber |Onderdeel revisieversie van de besturingssysteemversie (major.minor.build.revision). |
 | EasID |De EAS-id van dit apparaat, als het apparaat wordt beheerd door Exchange Active Sync. |
-| GraphDeviceIsManaged |De laatste beheerstatus die met Intune is ingesteld in AAD |
-| GraphDeviceIsCompliant |De laatste nalevingsstatus die met Intune is ingesteld in AAD |
-| SerialNumber |Serienummer van het apparaat, indien beschikbaar |
+| GraphDeviceIsManaged |De laatste beheerstatus die met Intune is ingesteld in Azure AD. |
+| GraphDeviceIsCompliant |De laatste nalevingsstatus die met Intune is ingesteld in Azure AD. |
+| SerialNumber |Serienummer van het apparaat, indien beschikbaar. |
 | EnrolledByUser |De id van de gebruiker die dit apparaat heeft geregistreerd die verwijst naar de kolom userId in de tabel User. |
 | RowLastModifiedDateTimeUTC |Laatste keer dat deze record is gewijzigd. |
-| ProcessorArchitecture |Processorarchitectuur |
+| ProcessorArchitecture |Processorarchitectuur. |
 | DeviceAction |Laatste apparaatactie waarvoor opdracht is gegeven; voor nu negeren. |
-| Fabrikant |Fabrikant van het apparaat |
-| Model |Model van het apparaat |
-| LastPolicyUpdateUtc |Tijdstip waarop het beleid voor het laatst op het apparaat is bijgewerkt |
+| Fabrikant |Fabrikant van het apparaat. |
+| Model |Model van het apparaat. |
+| LastPolicyUpdateUtc |Tijdstip waarop het beleid voor het laatst op het apparaat is bijgewerkt. |
 | LastExchangeStatusUtc |Laatste keer dat het apparaat is gesynchroniseerd met Exchange. |
+
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
 De entiteit **MdmDeviceInventoryHistories** bevat dagelijkse momentopnamen van inventarisgegevens voor MDM-beheerde apparaten voor de afgelopen 90 dagen. De kolom DateKey geeft de dag voor de rij aan. Bepaalde eigenschappen zijn mogelijk niet van toepassing of zijn ingevuld. Raadpleeg deze pagina voor meer informatie. Zie [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune) voor meer informatie.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| DateKey |Verwijzing naar datumtabel waarmee de dag wordt aangegeven |
-| DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat |
-| DeviceModel |Model van het apparaat |
-| Besturingssysteem |Besturingssysteem van het apparaat |
+| DateKey | Verwijzing naar datumtabel waarmee de dag wordt aangegeven. |
+| DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
+| DeviceModel |Model van het apparaat. |
+| Besturingssysteem |Besturingssysteem van het apparaat. |
 | DeviceName |Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
 | SoftwareVersion |In de meeste gevallen is dit de versie van het besturingssysteem, behalve bij Apple-platforms waarbij dit verschilt van de versie van het besturingssysteem. |
 | Imei |IMEI-nummer |
 | HardwareInventoryTimeUtc |De eerste keer dat er een inventarisatie voor dit apparaat is gerapporteerd. |
-| InventoryModifiedTimeUtc |De laatste keer dat de inventarisatie is opgeslagen toen deze momentopname werd gemaakt |
+| InventoryModifiedTimeUtc |De laatste keer dat de inventarisatie is opgeslagen toen deze momentopname werd gemaakt. |
 | InventoryReportingTimeUtc |De laatste keer dat de inventaris is verzameld voor dit apparaat. |
-| ExchangeActiveSyncId |Exchange ActiveSync-apparaat-id |
-| ComputerSystemDescription |Systeembeschrijving |
-| ComputerSystemName |Systeemnaam |
-| ComputerSystemManufacturer |Fabrikant van het systeem |
-| ComputerSystemModel |Systeemmodel |
-| UserName |Gebruikersnaam |
-| OSType |Type besturingssysteem |
-| OSCaption |Besturingssysteembijschrift |
-| OSName |Naam van besturingssysteem |
-| OSManufacturer |Fabrikant van het besturingssysteem |
-| OSProductSuite |Besturingssysteemproductsuite |
-| OSProductType |Besturingssysteemproducttype |
-| Landinstellingen |Landinstellingen van besturingssysteem |
-| PhysicalMemoryCapacity |Capaciteit van het fysieke geheugen (in bytes) |
-| PhysicalMemoryRemovable |Fysiek verwisselbaar geheugen (in bytes) |
-| SystemEnclosureChassisTypesInnerText |Hiermee wordt het systeemchassistype voor dit apparaat gedefinieerd. De getallen geven de volgende waarden aan:  0 of Leeg = Onbekend   1 = Het is een desktopapparaat   2 = Het is een laptop  3 = Het is een werkstation  4 = Het is een Enterprise Server  100 = Het is een telefoon  101 = Het is een tablet  102/103 = Een ander onbekend type mobiel apparaat |
-| SystemEnclosureModel |Model systeembehuizing |
-| SystemEnclosureSerialNumber |Serienummer systeembehuizing |
-| NetworkAdapterConfigurationText |Configuratietekst van netwerkadapter |
-| MacAddress |MAC-adres |
-| SmsID |Intune-apparaat-id |
-| CertExpiry |Vervaldatum van het MDM-beheercertificaat |
-| DeviceClientAgentVersion |Versie van clientagent |
-| DeviceClientID |Apparaatclient-id |
-| SerialNumber |Serienummer |
-| DeviceManufacturer |Apparaatfabrikant |
-| DMVersion |DM-versie |
-| FirmwareVersion |Firmwareversie |
-| HardwareVersion |Hardwareversie |
-| PlatformType |Platformtype |
-| ProcessorLevel |Processorniveau |
-| ProcessorRevision |Processorrevisie |
-| Product |Product |
-| ProductVersion |Productversie |
-| OEM |Original Equipment Manufacturer |
-| DeviceBuildVersion |Buildversie van apparaat |
+| ExchangeActiveSyncId |Exchange ActiveSync-apparaat-id. |
+| ComputerSystemDescription |Systeembeschrijving. |
+| ComputerSystemName |Systeemnaam. |
+| ComputerSystemManufacturer |Fabrikant van het systeem. |
+| ComputerSystemModel |Systeemmodel. |
+| UserName |Gebruikersnaam. |
+| OSType |Type besturingssysteem. |
+| OSCaption |Besturingssysteembijschrift. |
+| OSName |Naam van besturingssysteem. |
+| OSManufacturer |Fabrikant van het besturingssysteem. |
+| OSProductSuite |Besturingssysteemproductsuite. |
+| OSProductType |Besturingssysteemproducttype. |
+| Landinstellingen |Landinstellingen van besturingssysteem. |
+| PhysicalMemoryCapacity |Capaciteit van het fysieke geheugen (in bytes). |
+| PhysicalMemoryRemovable |Fysiek verwisselbaar geheugen (in bytes). |
+| SystemEnclosureChassisTypesInnerText |Hiermee wordt het systeemchassistype voor dit apparaat gedefinieerd. De getallen geven de volgende waarden aan:  <br>0 of leeg = onbekend   <br>1 = het is een desktop   <br>2 = het is een laptop  <br>3 = het is een werkstation  <br>4 = het is een bedrijfsserver  <br>100 = het is een telefoon  <br>101 = het is een tablet  <br>102/103 = het is een ander, onbekend type mobiel apparaat |
+| SystemEnclosureModel |Model systeembehuizing. |
+| SystemEnclosureSerialNumber |Serienummer systeembehuizing. |
+| NetworkAdapterConfigurationText |Configuratietekst van netwerkadapter. |
+| MacAddress |MAC-adres. |
+| SmsID |Intune-apparaat-id. |
+| CertExpiry |Vervaldatum van het MDM-beheercertificaat. |
+| DeviceClientAgentVersion |Versie van clientagent. |
+| DeviceClientID |Apparaatclient-id. |
+| SerialNumber |Serienummer. |
+| DeviceManufacturer |Apparaatfabrikant. |
+| DMVersion |DM-versie. |
+| FirmwareVersion |Firmwareversie. |
+| HardwareVersion |Hardwareversie. |
+| PlatformType |Platformtype. |
+| ProcessorLevel |Processorniveau. |
+| ProcessorRevision |Processorrevisie. |
+| Product |Product. |
+| ProductVersion |Productversie. |
+| OEM |Original Equipment Manufacturer. |
+| DeviceBuildVersion |Buildversie van apparaat. |
 | Meid |MEID (Mobile Equipment Identifier). |
-| PhoneNumber |Telefoonnummer |
-| SubscriberCarrierNetwork |Netwerknaam van telefoonprovider |
-| CellularTechnology |Netwerktype van telefoonprovider (CDMA/GSM) |
-| Imsi |IMSI-nummer |
+| PhoneNumber |Telefoonnummer. |
+| SubscriberCarrierNetwork |Netwerknaam van telefoonprovider. |
+| CellularTechnology |Netwerktype van telefoonprovider (CDMA/GSM). |
+| Imsi |IMSI-nummer. |
 | JailBroken |Waar als het apparaat is gekraakt of geroot. |
 | IsActivationLockEnabled |Waar als de activeringsvergrendeling is ingeschakeld |
 | DeviceType |Apparaattype |
@@ -376,23 +377,23 @@ De entiteit **MdmDeviceInventoryHistories** bevat dagelijkse momentopnamen van i
 | PasswordMinLength |Minimaal vereiste lengte van wachtwoord |
 | PasswordHistory |Wachtwoord - minimale geschiedenis van wachtwoorden die niet zijn geaccepteerd |
 | PasswordEnabled |Wachtwoord - ingeschakeld? |
-| PasswordExpiration |Wachtwoord - vervaldatum |
-| AllowRecoveryPassword |Wachtwoordherstel toestaan |
-| PasswordAutoLockTimeout |Wachtwoord - time-out voor automatische vergrendeling |
-| PasswordType |Wachtwoordtype |
-| BacklightACTimeout |Time-out voor achtergrondverlichting indien aangesloten op netstroom |
-| BacklightBatTimeout |Time-out voor achtergrondverlichting bij accu |
-| PowerBackupPercent |Stroompercentage |
+| PasswordExpiration |Wachtwoord - vervaldatum. |
+| AllowRecoveryPassword |Wachtwoordherstel toestaan. |
+| PasswordAutoLockTimeout |Wachtwoord - time-out voor automatische vergrendeling. |
+| PasswordType |Wachtwoordtype. |
+| BacklightACTimeout |Time-out voor achtergrondverlichting indien aangesloten op netstroom. |
+| BacklightBatTimeout |Time-out voor achtergrondverlichting bij accu. |
+| PowerBackupPercent |Stroompercentage. |
 | BatteryPercent |Resterend percentage accu. |
-| PlatformID |Platform-id |
-| ExchangeDeviceID |Exchange-apparaat-id |
-| SmsProcessorDescription |Beschrijving van de processor |
-| OwnerEmailAddress |E-mailadres van de eigenaar |
-| DeviceOSName |Naam van besturingssysteem |
-| WifiMac |Mac-adres van Wi-Fi |
-| EthernetMac |MAC-adres van Ethernet |
+| PlatformID |Platform-id. |
+| ExchangeDeviceID |Exchange-apparaat-id. |
+| SmsProcessorDescription |Beschrijving van de processor. |
+| OwnerEmailAddress |E-mailadres van de eigenaar. |
+| DeviceOSName |Naam van besturingssysteem. |
+| WifiMac |Mac-adres van Wi-Fi. |
+| EthernetMac |MAC-adres van ethernet. |
 | RequireEncryption |Hiermee wordt aangegeven of het apparaat al of niet is versleuteld. |
-| ActivationLockBypassCode |Code voor het overslaan van de activeringsvergrendeling |
+| ActivationLockBypassCode |Code voor het overslaan van de activeringsvergrendeling. |
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 
@@ -400,8 +401,8 @@ Met de entiteit **ApplicationInventory** worden de apps weergegeven die zich op 
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| DeviceKey |Een verwijzing naar de apparatentabel |
-| ApplicationKey |? (overgenomen van ExchangeDeviceService\DeviceApplication) |
-| ApplicationName |? (overgenomen van ExchangeDeviceService\DeviceApplication) |
-| ApplicationVersion |? (overgenomen van ExchangeDeviceService\DeviceApplication) |
-| BundleSize |? (overgenomen van ExchangeDeviceService\DeviceApplication) |
+| DeviceKey |Een verwijzing naar de apparatentabel. |
+| ApplicationKey |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+| ApplicationName |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+| ApplicationVersion |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+| BundleSize |? (overgenomen van ExchangeDeviceService\DeviceApplication). |

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+
+## <a name="week-of-october-16-2017"></a>Week van 16 oktober 2017
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Verbeterde zoekfunctie op de bedrijfsportalwebsite <!--1331697-->
+We verbeteren onze app-zoekfuncties, te beginnen met de [bedrijfsportalwebsite](https://portal.manage.microsoft.com). Zoekopdrachten worden nu ook uitgevoerd op app-categorieën naast de velden Naam en Beschrijving. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. 
+
+iOS-gebruikers ontvangen deze wijziging ook omdat de bedrijfsportalwebsite ook wordt gebruikt als onderdeel van de bedrijfsportal-app voor iOS. De bedrijfsportal-apps voor Android en Windows ontvangen dergelijke updates in de komende maanden.
+
+We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt bijgehouden. Laat ons weten hoe het voor u werkt via de koppeling Feedback onderaan de bedrijfsportalwebsite.
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Grote pictogrammen in bedrijfsportal voor iOS <!-- 1454593 -->
+Deze release bevat een oplossing voor een bekend probleem met de manier waarop de iOS-bedrijfsportal pictogrammen weergeeft in de app-tegel. Als u app-pictogrammen van minimaal 120x120 pixels uploadt, worden ze nu op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) en in de pagina’s van de iOS-bedrijfsportal-apps weergegeven op volledige grootte van de app-tegel.
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>Week van 2 oktober 2017
 
@@ -67,7 +85,7 @@ Het inschrijvingsproces voor de bedrijfsportal-app voor Android is vereenvoudigd
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>Week van 28 augustus 2017
+## <a name="august-2017"></a>Augustus 2017
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail-app zal OAuth ondersteunen <!---1196951--->
 
@@ -87,7 +105,7 @@ Voorwaardelijke toegang met Intune ondersteunt veiligere verificatie op iOS-appa
 
 ![De gebruiker wordt gevraagd zich in te schrijven via de bedrijfsportalwebsite.](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>Week van 21 augustus 2017
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune MAM-dialoogvensters (Mobile Application Management) zullen een moderne interface hebben <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Intune MAM-dialoogvensters (Mobile Application Management) zullen worden bijgewe
 ![moderne interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>Week van 14 augustus 2017
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates voor de pagina 'Apparaatdetails' in de bedrijfsportal-app voor Windows 10 <!---1287448--->
 
 In de bedrijfsportal-app voor Windows 10 wordt de tag __Categorie__ van onder de titel naar een eigenschap op de pagina __Apparaatdetails__ verplaatst.
 
 ![Op het scherm 'Apparaatdetails' in de bedrijfsportal-app voor Windows wordt nu het veld 'Categorieën' als eigenschap weergegeven in plaats van dat het direct onder de titel van het veld wordt weergegeven.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>Week van 31 juli 2017
+## <a name="july-2017"></a>Juli 2017
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Op de pagina's met gegevens over de apps zal nieuwe informatie worden weergegeven voor Android-apparaten <!--1287476-->
 
@@ -164,7 +180,7 @@ De bedrijfsportal-app begint met aanmelden.
 
 ![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>Week van 12 juni 2017
+## <a name="june-2017"></a>Juni 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>De Intune-bedrijfsportal-app voor Android heeft een nieuwe interface voor app-beveiligingsbeleid <!--1305217-->
 Op basis van feedback van klanten hebben we de Intune-bedrijfsportal-app voor Android aangepast en de knop **Toegang verkrijgen tot bedrijfsinhoud** toegevoegd. De reden hiervoor is dat eindgebruikers dan niet onnodig het registratieproces moeten doorlopen wanneer ze alleen toegang nodig hebben tot apps die ondersteuning bieden voor app-beveiligingsbeleid, een functie van Intune Mobile Application Management.
@@ -210,8 +226,6 @@ Op basis van feedback van gebruikers is aan de bedrijfsportal-app voor Android e
 ![Een afbeelding van de Android-bedrijfsportal-app met in de rechterbovenhoek het geopende actiemenu. De nieuwe optie Bedrijfsportal verwijderen is als derde optie beschikbaar, onder Mijn profiel en Instellingen, en boven Voorwaarden en bepalingen, Help en feedback en Over.](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![Een afbeelding van het bevestigingsdialoogvenster dat beschikbaar is nadat u de nieuwe optie Bedrijfsportal verwijderen hebt geselecteerd in het actiemenu. Via het dialoogvenster wordt de gebruiker geïnformeerd dat 'door het verwijderen van de bedrijfsportal uw apparaat niet meer wordt beheerd door uw IT-beheerder en u mogelijk geen toegang meer hebt tot bedrijfsgegevens, bedrijfs-apps en bedrijfse-mail.' Vervolgens wordt de gebruiker gevraagd om het verwijderen van de bedrijfsportal-app te bevestigen met Ja.](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>Week van 5 juni 2017
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Verbeteringen in de app-tegels in de bedrijfsportal-app voor iOS <!--1230777-->
 Het ontwerp van de app-tegels op de startpagina is bijgewerkt in overeenstemming met de huisstijlkleur die u voor de bedrijfsportal instelt.
