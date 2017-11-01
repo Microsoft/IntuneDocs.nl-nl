@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,47 +15,44 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Aan de slag met de configuratie van beveiligingsbeleid voor apps in Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Voordat u een beveiligingsbeleid voor apps in Windows 10 maakt, moet u MAM (mobile application management) voor Windows 10 inschakelen door de MAM-provider in Azure AD in te stellen. Op deze manier kunt u de status van de inschrijving definiëren bij het maken van een nieuw WIP-beleid (Windows Information Protection) met Intune.
-
-> [!NOTE]
-> De status van inschrijving mag MAM of MDM (Mobile Device Management) zijn.
-
-## <a name="to-configure-the-mam-provider"></a>De MAM-provider configureren
-
-1.  Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
-
-2.  Kies in het menu links **Azure Active Directory**.
-
-    ![MAM-providerconfiguratie](./media/mam-provider-sc-1.png)
-
-3.  De blade **Azure AD** wordt geopend. Kies **Mobiliteit (MDM en MAM)** en klik vervolgens op **Microsoft Intune**.
-
-    ![Mobiliteit (MDM en MAM)](./media/mam-provider-sc-1.png)
-
-4.  De blade voor het configureren wordt geopend. Kies eerst **Standaard MAM-URL's herstellen** en configureer vervolgens het volgende:
-
-    a.  Gebruikersbereik van MAM: u kunt MAM gebruiken om bedrijfsgegevens van een specifieke groep gebruikers te beveiligen die gebruikmaken van Windows 10-apparaten, of van alle gebruikers.
-
-    b.  URL voor de voorwaarden van MAM: De URL van de voorwaarden voor het gebruik van eindpunten van de MAM-service. Deze wordt gebruikt om de voorwaarden van de MAM-service voor eindgebruikers weer te geven.
-
-    c.  Detectie-URL van MAM: via deze URL kunnen apparaten zoeken als ze beveiligingsbeleidsregels voor apps nodig hebben.
-
-    d.  URL van MAM-naleving:
-
-5.  zodra u deze instellingen hebt geconfigureerd, kiest u **Opslaan**.
+Mobile Application Management (MAM) inschakelen voor Windows 10 door de MAM-provider in te stellen in Azure AD. Door een MAM-provider in te stellen in Azure AD, kunt u de status van de inschrijving definiëren bij het maken van een nieuw WIP-beleid (Windows Information Protection) met Intune. De status van inschrijving mag MAM of MDM (Mobile Device Management) zijn.
 
 > [!NOTE]
 > Apparaten met een MAM-inschrijvingsstatus moeten aan Azure AD zijn toegevoegd.
+
+## <a name="to-configure-the-mam-provider"></a>De MAM-provider configureren
+
+1. Meld u aan bij Azure Portal en selecteer **Azure Active Directory**.
+
+2. Kies **Mobility (MDM en MAM)** in de groep **Beheren**.
+
+3. Klik op **Microsoft Intune**.
+
+4. Configureer de instellingen in de groep **Standaard MAM-URL's herstellen** op de blade **Configureren**.
+
+    **MAM-gebruikersbereik**  
+      Automatische inschrijving voor MAM gebruiken voor het beheren van bedrijfsgegevens op Windows-apparaten van uw werknemers. De automatische inschrijving voor MAM wordt geconfigureerd voor Bring-Your-Own-Device-scenario's.<ul><li>**Geen**<br>Selecteer of alle gebruikers kunnen worden ingeschreven bij MAM.</li><li>**Sommige**<br>Selecteer de Azure AD-groepen met gebruikers die worden ingeschreven bij MAM.</li><li>**Alle**<br>Selecteer of alle gebruikers kunnen worden ingeschreven bij MAM.</li></ul>
+
+    **URL voor MAM-gebruiksvoorwaarden**  
+     De URL van het eindpunt van de gebruiksrechtovereenkomst van de MAM-service. Het eindpunt van de gebruiksrechtovereenkomst wordt gebruikt om de servicevoorwaarden voor eindgebruikers weer te geven voordat ze hun apparaten inschrijven voor beheer. De tekst van de gebruiksrechtovereenkomst informeert gebruikers over het beleid dat wordt afgedwongen op het mobiele apparaat.
+
+    **Detectie-URL voor MAM**  
+    De URL van het eindpunt van inschrijving van de MAM-service. Het eindpunt van de inschrijving wordt gebruikt om apparaten in te schrijven voor beheer met de MAM-service.
+
+    **URL van MAM-naleving**  
+      De URL van het eindpunt voor naleving van de MAM-service. Wanneer een gebruiker geen toegang krijgt tot een resource vanaf een niet-compatibel apparaat, wordt een koppeling naar de URL voor het nalevingsbeleid weergegeven aan de gebruiker. Gebruikers kunnen naar deze URL gaan, die wordt gehost door de MAM-service, om te begrijpen waarom het apparaat wordt beschouwd als niet-compatibel. Gebruikers kunnen ook herstel van self-service starten zodat hun apparaten compatibel worden en ze toegang kunnen krijgen tot resources.
+
+5.  Klik op **Opslaan**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

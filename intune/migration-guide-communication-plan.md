@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>De communicatie plannen
 
@@ -52,6 +52,8 @@ Intune beschikt over aanvullende sjablonen die u kunt gebruiken om apparaatregis
 -   [Eindgebruikers informeren over het gebruik van Microsoft Intune](end-user-educate.md) voor de stappen die voor de registratie moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen.
 
 -   De [Intune-eindgebruikersimplementatiesjabloon voor IT-beheerders](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) is een aanpasbaar Word-document met uitleg over het registreren van Android, iOS en Mac-apparaten in Intune is.
+
+-   De [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) (De gebruiksaanwijzingen en e-mails voor FastTrack foor EMS) kunnen worden aangepast met uw bedrijfslogo om het gebruik van Intune en EMS binnen uw organisatie promoten.
 
 ## <a name="next-steps"></a>Volgende stappen
 

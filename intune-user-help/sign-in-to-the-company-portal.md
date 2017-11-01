@@ -1,11 +1,11 @@
 ---
 title: Aanmelden bij de bedrijfsportal-app | Microsoft Docs
-description: 
+description: Ontdek hoe u zich kunt aanmelden bij de bedrijfsportal-app op meerdere platformen.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Hoe meld ik me aan bij de bedrijfsportal-app? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Hoewel de volgende afbeeldingen afkomstig zijn uit iOS, is het proces vrijwel id
 4. Zodra de bedrijfsportal uw aanmelding heeft geaccepteerd, wordt u aangemeld en hebt u toegang tot de bedrijfsresources.   
 
   ![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Aanmelden met verificatie op basis van certificaten
+
+1.  Open de bedrijfsportal-app op uw apparaat.
+
+2.  Voer uw **werk- of schoolaccount** in.
+
+3.  Tik op de koppeling **Aanmelden met een certificaat**.
+
+4.  Tik op **Doorgaan** om het certificaat te gebruiken.
 
 ## <a name="signing-in-from-another-device"></a>Aanmelden vanaf een ander apparaat
 
