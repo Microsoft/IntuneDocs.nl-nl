@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -130,10 +130,23 @@ Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseig
 
 Met de entiteit **MdmStatuses** wordt de nalevingsstatus van het apparaat aangegeven.
 
-| Eigenschap  | Beschrijving | Voorbeeld |
+| Eigenschap  | Beschrijving |
+|---------|------------|
+| MdmStatusID |Unieke id van de nalevingsstatus |
+| MdmStatusKey |Unieke id van de nalevingsstatus in het datawarehouse - surrogaatsleutel | 
+| ComplianceStatus |Nalevingsstatus van het apparaat; moet een van de waarden uit de onderstaande tabel hebben | 
+
+
+## <a name="example"></a>Voorbeeld
+
+| MdmStatusID  | ComplianceStatus | Beschrijving |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus-id |0 - Onbekend <br>1 - Compatibel <br>2 - Niet compatibel |
-| MdmStatusKey |Unieke id van de nalevingsstatus in het datawarehouse - surrogaatsleutel | |
+| 0 |Onbekend |De nalevingsstatus van het apparaat is onbekend. |
+| 1 |Compliant |Het apparaat voldoet aan het nalevingsbeleid. |
+| 2 |Noncompliant |Het apparaat voldoet niet aan het nalevingsbeleid. |
+| 3 |Conflict |De nalevingsstatus van het apparaat heeft een conflict veroorzaakt. |
+| 4 |Fout |Er is een fout opgetreden bij het lezen van de nalevingsstatus van het apparaat. |
+
 
 ## <a name="managementstates"></a>ManagementStates
 

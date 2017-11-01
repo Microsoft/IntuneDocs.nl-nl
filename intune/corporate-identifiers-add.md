@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
-ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
+ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -45,7 +45,7 @@ Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.cs
 [Meer informatie over de locatie van het serienummer van een Android-apparaat](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers"></a>Zakelijke id's toevoegen
-Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats de IMEI- of serienummers in de linkerkolom en de details in de rechterkolom. U kunt in één CSV-bestand maar één type id, IMEI-nummer of serienummer importeren. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 500 rijen per CSV-bestand.
+Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats de IMEI- of serienummers in de linkerkolom en de details in de rechterkolom. U kunt in één CSV-bestand maar één type id, IMEI-nummer of serienummer importeren. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 5.000 rijen per CSV-bestand.
 
 **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
 

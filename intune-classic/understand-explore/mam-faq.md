@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56d0d3e79e38b20cb00a528fc6b55ca9de6ba871
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -70,16 +70,16 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en PowerPoint](https://products.office.com/business/office)?**
 
-  1. Eindgebruikers moeten een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan hun Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten en een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) omvatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](http://portal.office.com).
+  1. Eindgebruikers moeten een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan hun Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](http://portal.office.com).
 
-  2. Eindgebruikers moeten de app [OneDrive](https://onedrive.live.com/about/) op hun apparaat hebben geïnstalleerd en zijn aangemeld met hun AAD-account.
+  2. De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor opslaan als, onder de instelling Opslaan als voorkomen van het beveiligingsbeleid voor toepassingen. Bijvoorbeeld, als OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
 
-  3. De app OneDrive app moet het doel zijn van het app-beveiligingsbeleid dat voor de eindgebruiker is geïmplementeerd.
+  3. Als OneDrive de beheerde locatie is, moet de app het doel zijn van het app-beveiligingsbeleid dat voor de eindgebruiker is geïmplementeerd.
 
   >[!NOTE]
   > De mobiele Office-apps bieden momenteel alleen ondersteuning voor SharePoint Online en niet voor SharePoint On-Premises.
 
-**Waarom is OneDrive nodig voor Office?** Intune markeert alle gegevens in de app als 'zakelijk' of 'persoonlijk'. Gegevens worden als 'zakelijk' beschouwd wanneer ze afkomstig zijn van een bedrijfslocatie. Voor Office-apps worden de volgende locaties door Intune beschouwd als bedrijfslocaties: e-mail (Exchange) of cloudopslag (OneDrive-app met een OneDrive voor Bedrijven-account).
+**Waarom is een beheerde locatie (bijvoorbeeld OneDrive) voor Office nodig?** Intune markeert alle gegevens in de app als 'zakelijk' of 'persoonlijk'. Gegevens worden als 'zakelijk' beschouwd wanneer ze afkomstig zijn van een bedrijfslocatie. Voor Office-apps worden de volgende locaties door Intune beschouwd als bedrijfslocaties: e-mail (Exchange) of cloudopslag (OneDrive-app met een OneDrive voor Bedrijven-account).
 
 **Wat zijn de aanvullende vereisten voor het gebruik van Skype voor Bedrijven?** Zie de licentievereisten voor [Skype voor Bedrijven](https://products.office.com/skype-for-business/it-pros).
   >[!NOTE]
@@ -102,6 +102,18 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
   2. **Is de pincode veilig?** De pincode zorgt ervoor dat alleen de juiste gebruiker toegang heeft tot de gegevens van de organisatie in de app. Daarom moet een eindgebruikers zich aanmelden met een werk- of schoolaccount voordat de pincode voor de Intune-app kan worden ingesteld of hersteld. Deze verificatie wordt verwerkt door Azure Active Directory via uitwisseling van een beveiligde token en is niet transparant voor de Intune App SDK. Vanuit het oogpunt van veiligheid kunt u werk- of schoolgerelateerde gegevens het beste versleutelen. Versleuteling is niet gerelateerd aan de pincode van de app, maar is een eigen app-beveiligingsbeleid.
 
   3. **Hoe beschermt Intune de pincode tegen beveiligingsaanvallen?** Als onderdeel van het app-pincodebeleid kan de IT-beheerder een maximumaantal verificatiepogingen voor gebruikers instellen voordat de app wordt vergrendeld. Na het toegestane aantal aanmeldingspogingen kan de Intune App SDK de 'zakelijke' gegevens in de app wissen.
+  
+**Wat is het verschil in werking tussen een numerieke pincode en wachtwoordcode voor de Intune-app?**
+Voor MAM kan momenteel een pincode op toepassingsniveau (iOS) worden gebruikt met alfanumerieke tekens en speciale tekens (wachtwoordcode genoemd) waarvoor de deelname van toepassingen (zoals WXP, Outlook, Managed Browser, Yammer) is vereist om de Intune APP SDK voor iOS te integreren. Zonder deze deelname, worden de instellingen voor de wachtwoordcode niet goed afgedwongen voor de betreffende toepassingen. Aangezien de integratie voor deze apps doorlopend wordt uitgevoerd, wordt het gedrag tussen wachtwoordcode en numerieke pincode tijdelijk gewijzigd voor de eindgebruiker en is een belangrijke uitleg vereist. Voor de release van Intune in oktober 2017 is het gedrag als volgt...
+
+Apps die
+1. dezelfde app-uitgever hebben,
+2. een wachtwoordcode gebruiken die is gericht via de console en 
+3. en die de SDK met deze functie (v 7.1.12+) gebruiken, kunnen de wachtwoordcode delen tussen deze apps. 
+
+Apps die
+1. dezelfde app-uitgever hebben,
+2. een numerieke pincode gebruiken die is gericht via de console, kunnen de numerieke pincode delen tussen deze apps. 
 
 **Versleuteling** IT-beheerders kunnen een app-beveiligingsbeleid instellen dat vereist dat de gegevens in de app worden versleuteld. De IT-beheerder kan als onderdeel van het beleid ook opgeven wanneer de inhoud wordt versleuteld.
 

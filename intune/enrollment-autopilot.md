@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows-apparaten inschrijven met het Windows AutoPilot Deployment-programma
 Het Windows AutoPilot Deployment-programma vereenvoudigt het inrichten van apparaten. Het kost nu nog veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook veel tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en AutoPilot kunt u nieuwe apparaten aan uw eindgebruikers geven zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om AutoPilot-apparaten te beheren, kunt u beleidsregels, profielen, apps enzovoort beheren op de apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) voor een overzicht van voordelen, scenario’s en vereisten.
@@ -47,13 +47,16 @@ AutoPilot-profielen worden gebruikt om de AutoPilot-apparaten te configureren.
    - **Privacy-instellingen**: kies of u de privacyinstellingen wilt weergeven voor de gebruikers. 
    - **Gebruiksrechtovereenkomst (EULA)**: kies of u de gebruiksrechtovereenkomst wilt weergeven voor gebruikers.
    - **Gebruikersaccounttype**: kies of het gebruikersaccounttype **Beheerder** of **Standaard**gebruiker is.
+
+     > [!Note]    
+     > Deze instelling geldt niet voor de accounts van de globale beheerder of bedrijfsbeheerder. Deze accounts kunnen geen standaardgebruikers zijn, omdat ze toegang hebben tot alle beheerfuncties in Azure AD.
 8. Klik op **Maken** om het profiel te maken. Het AutoPilot-implementatieprofiel is nu klaar om te worden toegewezen aan apparaten.
      
-   > [!Note]    
-   > De volgende instellingen zijn geconfigureerd in alle AutoPilot-implementatieprofielen:
-   > - Instelpagina’s voor Cortana, OneDrive en OEM-registratie overslaan
-   > - Automatisch instellen voor werk of school
-   > - Aanmeldervaring met naam van bedrijf of school    
+> [!Note]    
+> De volgende instellingen zijn geconfigureerd in alle AutoPilot-implementatieprofielen:
+> - Instelpagina’s voor Cortana, OneDrive en OEM-registratie overslaan
+> - Automatisch instellen voor werk of school
+> - Aanmeldervaring met naam van bedrijf of school    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Een Windows AutoPilot-implementatieprofiel toewijzen
 Nadat u AutoPilot-implementatieprofielen hebt gemaakt, kunt u ze toewijzen aan geselecteerde apparaten.
