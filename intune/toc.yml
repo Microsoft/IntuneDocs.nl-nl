@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Apps bewaken
           href: apps-monitor.md
-        - name: Configuratieprofielen voor iOS-apps
-          href: app-configuration-policies-use-ios.md
-        - name: Configuratieprofielen voor Android-apps
-          href: app-configuration-policies-use-android.md
+        - name: App-configuratiebeleid
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS beheerde apparaten
+              href: app-configuration-policies-use-ios.md
+            - name: Android beheerde apparaten
+              href: app-configuration-policies-use-android.md
+            - name: Managed apps
+              href: app-configuration-policies-managed-app.md
         - name: Inrichtingsprofielen voor iOS-apps gebruiken
           href: app-provisioning-profile-ios.md
         - name: Selectief wissen van apps
