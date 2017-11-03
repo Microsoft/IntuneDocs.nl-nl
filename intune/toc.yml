@@ -545,6 +545,8 @@
     - name: Het Intune-datawarehouse gebruiken
       href: reports-nav-create-intune-reports.md
       items:
+        - name: Wijzigingenlogboek voor het datawarehouse
+          href: reports-changelog.md
         - name: Verbinding maken met het datawarehouse met Power BI
           href: reports-proc-get-a-link-powerbi.md
         - name: Een rapport maken van de OData-feed met Power BI
@@ -602,18 +604,20 @@
         - name: Datawarehouse-gegevensmodel
           href: reports-ref-data-model.md
           items:
-            - name: Informatie voor entiteit Date
-              href: reports-ref-date.md
-            - name: Naslag voor gebruikersentiteit
-              href: reports-ref-user.md
-            - name: Naslag voor MAM-entiteiten (Mobile Application Management)
-              href: reports-ref-mobile-app-management.md
-            - name: Informatie voor apparaatentiteiten
-              href: reports-ref-devices.md
             - name: Naslag voor toepassingsentiteiten
               href: reports-ref-application.md
-            - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
-              href: reports-ref-userdeviceassociations.md
+            - name: Verwijzing voor datumentiteit
+              href: reports-ref-date.md
+            - name: Informatie voor apparaatentiteiten
+              href: reports-ref-devices.md
+            - name: Naslag voor MAM-entiteiten (Mobile Application Management)
+              href: reports-ref-mobile-app-management.md
+            - name: Naslag voor beleidsentiteiten
+              href: reports-ref-policy.md
+            - name: Naslaginformatie voor gebruikersapparaatkoppelingen
+              href: reports-ref-user-device.md
+            - name: Naslag voor gebruikersentiteit
+              href: reports-ref-user.md
     - name: Windows-apps sideloaden
       href: intune-graph-apis.md
       items:

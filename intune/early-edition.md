@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>De vroege editie voor Microsoft Intune - oktober 2017
 
@@ -151,19 +151,6 @@ Google introduceert tegelijkertijd met Android Oreo een reeks beveiligingsfuncti
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Ondersteuning voor het editie-upgradebeleid voor Windows 10   <!-- 903672(archived), 1119689 -->  
 U kunt een editie-upgradebeleid voor Windows 10 maken dat Windows 10-apparaten upgradet naar Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education en Windows 10 Professional Education N. Raadpleeg [Editie-upgrades voor Windows 10 configureren](edition-upgrade-configure-windows-10.md) voor meer informatie over editie-upgrades voor Windows 10.
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Intune MAM- en Outlook voor Android-invoegtoepassingen  <!-- 1450688 -->
-Het Office-team zal binnen een paar weken invoegtoepassingen voor Outlook voor Android aankondigen. Deze functieset met invoegtoepassingen bestaat al in Outlook voor Windows, iOS, web en Mac. Omdat invoegtoepassingen worden beheerd via Exchange, kunnen gebruikers gegevens en berichten kopiëren en delen tussen Outlook en niet-beheerde invoegtoepassingen, tenzij de toegang tot invoegtoepassingen door uw Exchange-beheerder wordt uitgeschakeld. 
-
-Werk samen met uw Exchange-beheerder om te zorgen dat uw MAM-beleid voor het beveiligen van gegevens van toepassing is op invoegtoepassingen wanneer u de machtigingen voor toegang van gebruikers tot invoegtoepassingen beheert.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-U hoeft niet verder te lezen als uw Exchange-beleid al is ingesteld om het zijdelings gebruiken of installeren van invoegtoepassingen te voorkomen. Uw MAM-beleid zal worden toegepast zoals u dat verwacht. Als u echter beleid in MAM hebt ingesteld om knip-, kopieer- en plakbewerkingen in Outlook voor Android te beperken en uw beleid voor invoegtoepassingen niet in Exchange hebt ingesteld, dient u te weten dat gebruikers standaard invoegtoepassingen voor Outlook kunnen installeren. Deze invoegtoepassingen hebben toegang tot de berichttekst, het onderwerp en andere eigenschappen van berichten. U kunt de mogelijkheid van gebruikers om invoegtoepassingen te installeren uitschakelen door uw Exchange-beheerder de rollen 'Mijn Marketplace-apps' en 'Mijn aangepaste apps' te laten verwijderen.
-
-Een wijziging in de instelling in Exchange wordt ook toegepast op Outlook voor Windows, iOS, web, Mac en mobiele apparaten. 
-
-#### <a name="what-do-i-need-to-do"></a>Wat moet ik doen?
-Controleer vandaag uw Exchange-beleid. Informeer uw IT- en helpdeskmedewerkers. Neem contact op met ons ondersteuningsteam met een specifieke vragen of opmerkingen. 
 
 
 
