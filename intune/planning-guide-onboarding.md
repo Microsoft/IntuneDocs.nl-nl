@@ -2,10 +2,10 @@
 title: Intune-onboarding
 description: Dit artikel helpt u bij het bepalen van alle aspecten die moeten worden overwogen bij de onboarding van een cloudoplossing met Intune in uw omgeving.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: aab3c202272d91f9e1596eae6f740f68f049a657
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="implement-your-intune-plan"></a>Uw Intune-abonnement implementeren
 

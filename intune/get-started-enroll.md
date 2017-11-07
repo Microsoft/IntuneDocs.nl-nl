@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cec3db189909238596b42c7a40f5303bb1f1f768
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: 00d462639e6f85e6d76ea7061588ba976242e21d
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="get-started-enrolling-devices"></a>Aan de slag met het inschrijven van apparaten
 
@@ -52,7 +52,7 @@ Vaak is de registratie van hun apparaat de eerste ervaring van eindgebruikers di
 10. Tik op de pagina **Profiel installeren** op **Installeren**, en voer de wachtwoordcode van het apparaat in als daarom wordt gevraagd.
 11. Tik op **INSTALLEREN**.
 12. Tik nogmaals op **Installeren** om aan te geven dat u de waarschuwing hebt gelezen.
-13. Tik in de **waarschuwing** op **Vertrouwen**.
+13. Tik in de**waarschuwing** op **Vertrouwen**.
 14. Wanneer het scherm verandert om weer te geven dat het profiel is geïnstalleerd, tikt u op **Gereed**.
 15. U ziet een bericht dat het apparaat wordt geregistreerd en vervolgens dat de registratie van het apparaat is voltooid. Er verschijnt een pop-up met de vraag de pagina in de bedrijfsportal te openen. Tik op **Openen**.
 16. U gaat terug naar het scherm **Instellen van bedrijfstoegang**. Als u geen testbeleid hebt ingesteld, moet het apparaat als compatibel worden weergegeven. Als u wel testbeleid hebt gemaakt, tikt u op **Apparaatcompatibiliteit** om een bericht weer te geven dat er bepaalde dingen moeten worden gedaan om het apparaat veilig te maken.
