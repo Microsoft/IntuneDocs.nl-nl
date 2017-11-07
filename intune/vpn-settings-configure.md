@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c894a0314af1967dce67a7ffc5b3279bff6125f4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 699fa64bc0f720b18c1376e39b85eccd9018bbaf
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>VPN-instellingen configureren in Microsoft Intune
 
@@ -37,7 +37,7 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 |-|-|-|-|-|-|-|
 |Pulse Secure|Ja|Ja|Ja|Ja|Ja|Yes|
 |Cisco (IPsec)|Nee|Ja|Nee|Nee|Nee|Nee|
-|Citrix|Ja (alleen Android)|Yes|Nee|Nee|Nee|Nee|
+|Citrix|Yes|Ja|Nee|Nee|Nee|Ja|
 |F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
 |Dell SonicWALL Mobile Connect|Ja|Ja|Ja|Ja|Ja|Yes|
 |Check Point Capsule VPN|Yes|Ja|Ja|Ja|Ja|Yes|

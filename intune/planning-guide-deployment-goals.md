@@ -2,10 +2,10 @@
 title: Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
 description: In dit artikel wordt beschreven hoe u de doelen, doelstellingen en uitdagingen voor de implementatie kunt bepalen voor een cloudimplementatie voor Microsoft Intune.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6c81ba2f40500ff58fb1e828cf629b4dcc8ac9d1
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 47bba6d9f65aa1e2ff8cc0255cd7fccfda417f92
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
 
