@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: Informatie voor apparaatentiteiten
               href: reports-ref-devices.md
+            - name: Naslag voor Intune-beheeruitbreiding
+              href: reports-ref-intunemanagementextension.md
             - name: Naslag voor MAM-entiteiten (Mobile Application Management)
               href: reports-ref-mobile-app-management.md
             - name: Naslag voor beleidsentiteiten
