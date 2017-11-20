@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows-apparaten inschrijven met het Windows AutoPilot Deployment-programma
 Het Windows AutoPilot Deployment-programma vereenvoudigt het inrichten van apparaten. Het kost nu nog veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook veel tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en AutoPilot kunt u nieuwe apparaten aan uw eindgebruikers geven zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om AutoPilot-apparaten te beheren, kunt u beleidsregels, profielen, apps enzovoort beheren op de apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) voor een overzicht van voordelen, scenario’s en vereisten.
@@ -57,6 +57,13 @@ AutoPilot-profielen worden gebruikt om de AutoPilot-apparaten te configureren.
 > - Instelpagina’s voor Cortana, OneDrive en OEM-registratie overslaan
 > - Automatisch instellen voor werk of school
 > - Aanmeldervaring met naam van bedrijf of school    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Waarschuwingen voor niet-toegewezen Windows AutoPilot-apparaten<!-- 163236 -->
+U kunt een waarschuwing bekijken voor niet-toegewezen Windows AutoPilot-apparaten om te zien aan hoeveel apparaten van het AutoPilot-programma geen AutoPilot-implementatieprofielen zijn toegewezen. Aan de hand van de informatie in de waarschuwing kunt u profielen maken en deze toewijzen aan de niet-toegewezen apparaten. Als u op de waarschuwing klikt, verschijnt een volledige lijst met Windows AutoPilot-apparaten en gedetailleerde informatie. 
+1. Meld u aan bij [Azure Portal](https://portal.azure.com/). 
+2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+3. Kies **Apparaatinschrijving** op de blade **Intune**.
+4. Kies **Overzicht** om de waarschuwing te zien. Klik op de waarschuwing voor een lijst met AutoPilot-apparaten.  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Een Windows AutoPilot-implementatieprofiel toewijzen
 Nadat u AutoPilot-implementatieprofielen hebt gemaakt, kunt u ze toewijzen aan geselecteerde apparaten.

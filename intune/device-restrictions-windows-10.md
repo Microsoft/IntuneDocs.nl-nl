@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Registratie handmatig ongedaan maken**: hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.
 -   **Handmatige installatie van het basiscertificaat (alleen mobiel)**: de gebruiker kan niet langer basiscertificaten en tussenliggende CAP-certificaten handmatig installeren.
 -   **Verzending van diagnostische gegevens**: mogelijke waarden zijn:
-    -       **Geen**: er worden geen gegevens naar Microsoft verzonden
-    -       **Basis**: beperkte informatie wordt naar Microsoft verzonden
-    -       **Uitgebreid**: uitgebreide diagnostische gegevens worden naar Microsoft verzonden
-    -       **Volledig**: hiermee worden dezelfde gegevens verzonden als bij Uitgebreid, aangevuld met gegevens over de apparaatstatus
+    - **Geen**: er worden geen gegevens naar Microsoft verzonden
+    - **Basis**: beperkte informatie wordt naar Microsoft verzonden
+    - **Uitgebreid**: uitgebreide diagnostische gegevens worden naar Microsoft verzonden
+    - **Volledig**: hiermee worden dezelfde gegevens verzonden als bij Uitgebreid, aangevuld met gegevens over de apparaatstatus
 -   **Camera**: hiermee kunt u het gebruik van de camera op het apparaat toestaan of blokkeren.
 -   **Bestandssynchronisatie met OneDrive**: hiermee blokkeert u dat het apparaat bestanden synchroniseert naar OneDrive.
 -   **Verwisselbare opslag**: hiermee geeft u op of er met het apparaat externe opslagapparaten, zoals SD-kaarten, kunnen worden gebruikt.
@@ -105,6 +105,7 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
 
 ## <a name="edge-browser"></a>Edge-browser
+
 -   **Microsoft Edge-browser (alleen mobiele apparaten)**: hiermee staat u het gebruik van de Edge-webbrowser toe op het apparaat.
 -   **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: gebruik deze optie als u in Edge geen lijst met suggesties wilt weergeven wanneer u typt in een vervolgkeuzelijst. Dit helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Edge en Microsoft-services.
 -   **Favorieten synchroniseren tussen Microsoft-browsers (alleen desktop)**: hiermee kunnen favorieten worden gesynchroniseerd tussen Internet Explorer en Edge.
@@ -180,6 +181,44 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
     -   **Betere toegankelijkheid**: hiermee blokkeert u de toegang tot het gebied voor betere toegankelijkheid van de instellingen-app.
     -   **Privacy**: hiermee blokkeert u de toegang tot het privacygebied van de instellingen-app.
     -   **Bijwerken en beveiliging**: hiermee blokkeert u de toegang tot het gebied voor updates en beveiliging van de instellingen-app.
+
+## <a name="kiosk"></a>Kiosk
+
+-   **Kioskmodus**: hiermee identificeert u het type [kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) dat wordt ondersteund door het beleid.  Opties zijn onder andere:
+
+      - **Niet geconfigureerd** (standaard): door het beleid wordt geen kioskmodus ingeschakeld. 
+      - **Kiosk voor één enkele app**: het profiel schakelt het apparaat in als kiosk voor één enkele app.
+      - **Kiosk voor meerdere apps**: het profiel schakelt het apparaat in als kiosk voor meerdere apps.
+
+    Voor kiosken voor één enkele app zijn de volgende instellingen vereist:
+
+      - **Gebruikersaccount**: hiermee geeft u het lokale (op het apparaat) gebruikersaccount of de aanmelding aan van het Azure AD-account dat is gekoppeld aan de kiosk-app.  Voor accounts die zijn gekoppeld aan Azure AD-domeinen geeft u het account op in de vorm van `domain\\username@tenant.org`.
+
+         Voor apparaten in openbare omgevingen, gebruikt u accounts met minimale bevoegdheden om geautoriseerde activiteit te voorkomen.  
+
+      - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan.  Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
+
+    Voor kiosken voor meerdere apps is een kioskconfiguratie vereist.  Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
+
+    Configuraties voor kiosken voor meerdere apps bevatten de volgende instellingen:
+
+    - **De naam van de kioskconfiguratie**: een beschrijvende naam voor de identificatie van een bepaalde configuratie.
+
+    - Een of meer **kiosk-apps** die bestaan uit:
+
+        - Het **app-type** dat het type kiosk-app aangeeft.  Ondersteunde waarden zijn:   
+
+            - **Win32-App**: een traditionele bureaublad-app.  (U hebt de volledige padnaam nodig van het uitvoerbare bestand met betrekking tot het apparaat.)
+
+            - **UWP-app**: een universele Windows-app.  U hebt de [AUMID voor de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
+
+        - **App-id**: hiermee geeft u de volledige padnaam van het uitvoerbare bestand (Win32-apps) of de [AUMID van de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) aan.
+
+    - **Taakbalk** geeft aan of de taakbalk wordt weergegeven (**Ingeschakeld**) of verborgen (**Niet geconfigureerd**) op de kiosk.
+
+    - **Indeling van het menu Start**: hiermee geeft u een XML-bestand aan dat beschrijft hoe de apps [worden weergegeven in het menu Start](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Toegewezen gebruikers**: hiermee geeft u een of meer gebruikersaccounts aan die zijn gekoppeld aan de configuratie van de kiosk.  Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app.  Geef domeinaccounts aan in de vorm van `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

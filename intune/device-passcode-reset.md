@@ -1,12 +1,12 @@
 ---
-title: De wachtwoordcode van een apparaat opnieuw instellen met Intune
+title: Wachtwoordcodes op apparaten opnieuw instellen en verwijderen met Intune
 titlesuffix: Azure portal
-description: Meer informatie over het opnieuw instellen van de wachtwoordcode op apparaten die u beheert met Intune.
+description: Meer informatie over het opnieuw instellen en verwijderen van de wachtwoordcode op apparaten die u beheert met Intune.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 11/06/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: dfa94d11f978bbe4d23b6672423c849e1f061986
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="reset-the-passcode-on-intune-managed-devices"></a>De wachtwoordcode opnieuw instellen op apparaten die worden beheerd met Intune
+# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Wachtwoordcodes opnieuw instellen en verwijderen op apparaten die door Intune worden beheerd
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+De begrippen *verwijderen* en *opnieuw* worden in dit artikel door elkaar gebruikt.
 
 De actie **Toegangscode verwijderen** genereert een nieuwe toegangscode voor het apparaat die wordt weergegeven op de blade <*apparaatnaam*> **Overzicht**.
 

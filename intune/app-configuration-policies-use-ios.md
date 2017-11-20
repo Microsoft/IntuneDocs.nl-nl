@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -40,21 +40,21 @@ App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te l
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
 3. Kies de workload **Mobiele apps**.
-4. Klik op **App-configuratiebeleidsregels** in de groep **Beheren** en klik vervolgens op **Toevoegen**.
+4. Kies **App-configuratiebeleidsregels** in de groep **Beheren** en kies vervolgens **Toevoegen**.
 5. Stel de volgende details in:
-    - **Naam**  
+    - **Naam**<br>
       De naam van het profiel die in Azure Portal wordt weergegeven.
-    - **Beschrijving**  
+    - **Beschrijving**<br>
       De beschrijving van het profiel die in Azure Portal wordt weergegeven.
-    - **Type apparaatinschrijving**  
+    - **Type apparaatinschrijving**<br>
       Kies **Beheerde apparaten**.
 6. Selecteer **iOS** bij **Platform**.
-7.  Kies **Gekoppelde app**, klik vervolgens op de blade **Gekoppelde app** en kies de beheerde app waarop u de configuratie wilt toepassen.
-8.  Kies op de blade **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**
-9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer een optie:
+7.  Kies **Gekoppelde app**. Klik vervolgens op de blade **Gekoppelde app** en kies de beheerde app waarop u de configuratie wilt toepassen.
+8.  Kies op de blade **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**.
+9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer vervolgens een van de volgende opties:
     - **[Configuration Designer gebruiken](#Use-the-configuration-designer)**
     - **[XML-gegevens invoeren](#enter-xml-data)**
-10. Klik op **OK** en op **Toevoegen**.
+10. Kies **OK** en kies vervolgens **Toevoegen**.
 
 ## <a name="use-configuration-designer"></a>Configuration Designer gebruiken
 
@@ -62,27 +62,32 @@ U kunt Configuration Designer gebruiken voor apps op apparaten die wel of niet z
 
 ### <a name="add-a-setting"></a>Een instelling toevoegen
 
-1. Stel voor elke sleutel en waarde in de configuratie het volgende in: <ul><li>**Configuratiesleutel**<br>Hiermee wordt de specifieke instellingsconfiguratie uniek geïdentificeerd.</li><li>**Waardetype**<br>Het gegevenstype van de configuratiewaarde. Typen zijn onder meer geheel getal, reëel, tekenreeks of booleaans.</li><li>**Configuratiewaarde**<br>De waarde voor de configuratie.</li></ul>
-2. Klik op **OK** om uw configuratiewaarden in te stellen.
+1. Stel voor elke sleutel en waarde in de configuratie het volgende in:
+   - **Configuratiesleutel**<br>
+     De sleutel waarmee de specifieke instellingsconfiguratie wordt geïdentificeerd.
+   - **Waardetype**<br>
+     Het gegevenstype van de configuratiewaarde. Typen zijn onder meer geheel getal, reëel, tekenreeks of booleaans.
+   - **Configuratiewaarde**<br>
+     De waarde voor de configuratie.
+2. Kies **OK** om uw configuratiewaarden in te stellen.
 
 ### <a name="delete-a-setting"></a>Een instelling verwijderen
 
-1. Klik op de ellips (...) naast de instelling.
+1. Kies het weglatingsteken (**...** ) naast de instelling.
 2. Selecteer **Verwijderen**.
 
 De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet worden gebruikt voor andere doeleinden.
 
 ## <a name="enter-xml-data"></a>XML-gegevens invoeren
 
-U kunt een XML-eigenschappenlijst intypen of plakken die de app-configuratie-instellingen bevat voor bij Intune ingeschreven apparaten. De indeling van de XML-eigenschappenlijst is afhankelijk van de app die u wilt configureren. Neem contact op met de leverancier van de app voor meer informatie over de precieze indeling die moet worden gebruikt.
+U kunt een XML-eigenschappenlijst typen of plakken die de app-configuratie-instellingen bevat voor bij Intune ingeschreven apparaten. De indeling van de XML-eigenschappenlijst is afhankelijk van de app die u wilt configureren. Neem contact op met de leverancier van de app voor meer informatie over de precieze indeling die moet worden gebruikt.
 
-Intune valideert de XML-indeling. Intune controleert echter niet of de XML-eigenschappenlijst met de doelapp werkt.
-Zie voor meer informatie over XML-eigenschappenlijsten [Uitleg van XML-eigenschappenlijsten]
+Intune valideert de XML-indeling. Intune controleert echter niet of de XML-eigenschappenlijst (Plist) met de doelapp werkt.
 
 Voor meer informatie over XML-eigenschappenlijsten:
 
   -  Lees [iOS-apps configureren met configuratiebeleidsregels voor mobiele apps in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-  -  Raadpleeg [Uitleg van XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in de iOS Developer-bibliotheek.
+  -  Raadpleeg [Uitleg van XML Plists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in de iOS Developer-bibliotheek.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>Voorbeeld van een indeling voor het XML-configuratiebestand voor een app
 
@@ -126,15 +131,15 @@ Intune ondersteunt de volgende gegevenstypen in een eigenschappenlijst:
 ### <a name="tokens-used-in-the-property-list"></a>In de eigenschappenlijst gebruikte tokens
 
 Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen:
-- \{\{userprincipalname\}\} - (voorbeeld: **John@contoso.com**)
-- \{\{mail\}\} - (voorbeeld: **John@contoso.com**)
-- \{\{partialupn\}\} - (voorbeeld: **Jan**)
-- \{\{accountid\}\} - (voorbeeld: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (voorbeeld: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (voorbeeld: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (voorbeeld: **Jan de Vries**)
-- \{\{serialnumber\}\} - (voorbeeld: **F4KN99ZUG5V2**) voor iOS-apparaten
-- \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) voor iOS-apparaten
+- \{\{userprincipalname\}\}- bijvoorbeeld **John@contoso.com**
+- \{\{mail\}\}- bijvoorbeeld **John@contoso.com**
+- \{\{partialupn\}\} - bijvoorbeeld **Jan**
+- \{\{accountid\}\} - bijvoorbeeld **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\} - bijvoorbeeld **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\} - bijvoorbeeld **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\} - bijvoorbeeld **Jan de Vries**
+- \{\{serialnumber\}\} -bijvoorbeeld **F4KN99ZUG5V2** (voor iOS-apparaten)
+- \{\{serialnumberlast4digits\}\} - bijvoorbeeld **G5V2** (voor iOS-apparaten)
 
 ## <a name="next-steps"></a>Volgende stappen
 

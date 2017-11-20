@@ -1,11 +1,11 @@
 ---
 title: Windows-apparaten inschrijven
 titlesuffix: Azure portal
-description: In dit onderwerp wordt beschreven hoe u Mobile Device Management (MDM) in Intune voor Windows-apparaten inschakelt."
+description: Mobile Device Management (MDM) in Intune inschakelen voor Windows-apparaten.
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd858d617d9a9f2154a5682f5421a096d0c28224
-ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
+ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Windows-apparaten inschrijven
 
@@ -30,6 +30,7 @@ Als Intune-beheerder kunt u de registratie op de volgende manieren vereenvoudige
 - [Automatische registratie inschakelen](#enable-windows-10-automatic-enrollment) (vereist Azure AD Premium)
 - [CNAME-registratie](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Bulkinschrijving inschakelen](windows-bulk-enroll.md) (vereist Azure AD Premium en Windows Configuration Designer)
+- [Voeg een aangepast bericht toe](windows-enrollment-status.md) om gebruikers welkom te heten bij de registratie en de weergave van de voortgang van de beleidsinstellingen terwijl deze worden toegepast
 
 Vereenvoudiging van Windows-apparaatregistratie is afhankelijk van twee factoren:
 

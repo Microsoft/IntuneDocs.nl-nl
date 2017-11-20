@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
 
@@ -53,9 +53,9 @@ Het Power BI-bestand (pbix) bevat verbindingsgegevens voor uw tenant en een set 
 
 1.  Meld u aan bij Azure Portal en kies **Bewaking en beheer** > **Intune**. U kunt ook zoeken naar resources voor **Intune**.  
 2.  Open de blade **Microsoft Intune-datawarehouse-API (preview-versie)**.
-3.  Klik op **Power BI-bestand downloaden**. Het bestand met de extensie pbix wordt gedownload naar de locatie die u hebt opgegeven.
+3.  Selecteer **Power BI-bestand downloaden**. Het bestand met de extensie pbix wordt gedownload naar de locatie die u hebt opgegeven.
 4.  Open het bestand met Power BI. De *Intune-datawarehouserapporten* worden geladen, maar het kan even duren omdat de gegevens van uw tenant moeten worden opgehaald.
-5.  Klik op **Vernieuwen** om de gegevens van uw tenant te laden en de rapporten te bekijken.
+5.  Selecteer **Vernieuwen** om de gegevens van uw tenant te laden en de rapporten te bekijken.
 6.  Als Power BI niet is geverifieerd met uw Azure Active Directory-referenties, wordt u door Power BI gevraagd om uw referenties. Kies bij het selecteren van uw referenties **Organisatieaccount** als de verificatiemethode.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Gegevens via OData-koppeling laden in Power BI
@@ -69,13 +69,13 @@ Nadat een client is geverifieerd bij Azure AD, wordt de OData-URL verbonden met 
 5. Kies **Home** > **Get Data**. Selecteer **OData feed**.
 6. Selecteer **Basic**.
 7. Typ of plak de **OData-URL** in het vak URL.
-8. Klik op **OK**.
+8. Selecteer **OK**.
 9. Als u de tenant niet vanuit de Power BI Desktop-client hebt geverifieerd bij Azure AD, typt u uw referenties. Om toegang tot uw gegevens te krijgen, moet u zich door middel van OAuth 2.0 autoriseren bij Azure Active Directory (Azure AD).  
     1.  Selecteer **Organisatieaccount**.  
     2.  Typ uw gebruikersnaam en wachtwoord.  
-    3.  Klik op **Sign In.**  
-    4.  Klik op **Verbinden**.  
-10. Klik op **Load**.
+    3.  Selecteer **Aanmelden.**  
+    4.  Selecteer **Verbinden**.  
+10. Selecteer **Laden**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

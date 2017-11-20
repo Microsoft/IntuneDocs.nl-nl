@@ -1,7 +1,7 @@
 ---
 title: App-configuratiebeleidsregels voor Intune | Microsoft Docs
 titlesuffix: Azure portal
-description: Informatie over App-configuratiebeleidsregels voor Intune gebruiken.
+description: Informatie over het gebruik van app-configuratiebeleidsregels voor Intune.
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>App-configuratiebeleidsregels voor Intune
 
 Voorzien in instellingen wanneer gebruikers een iOS- of Android-app uitvoeren met app-configuratiebeleidsregels in Microsoft Intune. Een app kan gebruikers bijvoorbeeld verplichten het volgende op te geven:
 
-- Een aangepast poortnummer
-- Taalinstellingen
-- Beveiligingsinstellingen
-- Huisstijlinstellingen, zoals een bedrijfslogo
+- Een aangepast poortnummer.
+- Taalinstellingen.
+- Beveiligingsinstellingen.
+- Huisstijlinstellingen, zoals een bedrijfslogo.
 
 Als gebruikers deze instellingen niet correct opgeven, kan dit de werkbelasting van uw helpdesk verhogen en de acceptatie van nieuwe apps vertragen.
 
@@ -38,7 +38,7 @@ U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats 
 
 U hebt twee opties voor het gebruik van app-configuraties met Intune:
  - **Beheerde apparaten**  
-   Het apparaat wordt beheerd door Intune als MDM-provider.
+   Het apparaat wordt beheerd door Intune als MDM-provider (Mobile Device Management).
  - **Beheerde apps**  
    Een app wordt beheerd zonder apparaatinschrijving.
 
