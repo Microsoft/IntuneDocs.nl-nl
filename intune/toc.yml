@@ -2,7 +2,7 @@
   href: introduction-intune.md
   expanded: true
   items:
-    - name: Wat is Azure Portal?
+    - name: Wat is de Azure-portal?
       href: what-is-intune.md
     - name: Wat is Intune for Education?
       href: introduction-intune-education.md
@@ -42,7 +42,7 @@
 - name: Aan de slag met Intune
   href: get-started-evaluation.md
   items:
-    - name: Azure Portal gebruiken
+    - name: De Azure-portal gebruiken
       href: get-started-azure.md
     - name: Een gebruiker maken
       href: get-started-users.md
@@ -299,7 +299,7 @@
               href: device-restrictions-macos.md
             - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
-            - name: Windows Phone 8.1
+            - name: 'Windows Phone 8,1'
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -331,7 +331,7 @@
               href: vpn-settings-macos.md
             - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
-            - name: Windows Phone 8.1
+            - name: 'Windows Phone 8,1'
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Symantec PKI Manager-webservice
+              href: certificates-symantec-configure.md
         - name: Instellingen voor Windows Information Protection configureren
           href: windows-information-protection-configure.md
         - name: PowerShell-scripts beheren
@@ -425,6 +427,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS-instellingen
                   href: app-protection-policy-settings-ios.md
+                - name: Logboeken voor app-beveiliging in Managed Browser controleren
+                  href: app-protection-policy-settings-log.md
             - name: Beveiligingsbeleid voor apps valideren
               href: app-protection-policies-validate.md
             - name: Gebruikersstatus voor app-beveiliging bewaken
@@ -610,23 +614,23 @@
           items:
             - name: Levensduur gebruikers weergeven in Intune-datawarehouse
               href: reports-ref-user-timeline.md
-            - name: Naslaginformatie voor toepassingsentiteiten
+            - name: Naslag voor toepassingsentiteiten
               href: reports-ref-application.md
             - name: Naslaginformatie voor huidige gebruikersentiteit
               href: reports-ref-current-user.md
-            - name: Naslaginformatie voor datumentiteit
+            - name: Verwijzing voor datumentiteit
               href: reports-ref-date.md
-            - name: Naslaginformatie voor apparaatentiteiten
+            - name: Informatie voor apparaatentiteiten
               href: reports-ref-devices.md
             - name: Naslaginformatie voor Intune-beheeruitbreidingsentiteit
               href: reports-ref-intunemanagementextension.md
-            - name: Naslaginformatie voor MAM-entiteiten (Mobile Application Management)
+            - name: Naslag voor MAM-entiteiten (Mobile Application Management)
               href: reports-ref-mobile-app-management.md
-            - name: Naslaginformatie voor beleidsentiteiten
+            - name: Naslag voor beleidsentiteiten
               href: reports-ref-policy.md
             - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
               href: reports-ref-user-device.md
-            - name: Naslaginformatie voor gebruikersentiteit
+            - name: Naslag voor gebruikersentiteit
               href: reports-ref-user.md
     - name: Windows-apps sideloaden
       href: intune-graph-apis.md
