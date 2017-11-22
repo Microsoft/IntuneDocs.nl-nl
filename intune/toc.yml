@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Android for Work-beleid maken
           href: compliance-policy-create-android-for-work.md
+        - name: Een beleid maken om Google Play Protect in te schakelen
+          href: compliance-policy-create-google-play-protect.md
         - name: iOS-beleid maken
           href: compliance-policy-create-ios.md
         - name: Mac OS-beleid maken
