@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment-programma
               href: enrollment-autopilot.md
+            - name: Scherm Status van inschrijving
+              href: windows-enrollment-status.md
         - name: Android-inschrijving instellen
           href: android-enroll.md
         - name: iOS-inschrijving instellen
@@ -363,8 +365,12 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Symantec PKI Manager-webservice
+              href: certificates-symantec-configure.md
         - name: Instellingen voor Windows Information Protection configureren
           href: windows-information-protection-configure.md
+        - name: PowerShell-scripts beheren
+          href: intune-management-extension.md
         - name: Telecomkosten controleren
           href: telecom-expenses-monitor.md
         - name: Profielen toewijzen
@@ -380,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Android for Work-beleid maken
           href: compliance-policy-create-android-for-work.md
+        - name: Een beleid maken om Google Play Protect in te schakelen
+          href: compliance-policy-create-google-play-protect.md
         - name: iOS-beleid maken
           href: compliance-policy-create-ios.md
         - name: Mac OS-beleid maken
@@ -421,6 +429,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS-instellingen
                   href: app-protection-policy-settings-ios.md
+                - name: Logboeken voor app-beveiliging in Managed Browser controleren
+                  href: app-protection-policy-settings-log.md
             - name: Beveiligingsbeleid voor apps valideren
               href: app-protection-policies-validate.md
             - name: Gebruikersstatus voor app-beveiliging bewaken
@@ -556,11 +566,11 @@
     - name: Aangepaste apparaatinstellingen configureren
       href: custom-settings-configure.md
       items:
+        - name: Wi-Fi-profiel met een vooraf gedeelde sleutel
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Wi-Fi-profiel met een vooraf gedeelde sleutel
-              href: wi-fi-profile-shared-key.md
             - name: VPN-profiel per app
               href: android-pulse-secure-per-app-vpn.md
             - name: Apps voor Samsung KNOX Standard toestaan/blokkeren
@@ -604,19 +614,23 @@
         - name: Datawarehouse-gegevensmodel
           href: reports-ref-data-model.md
           items:
+            - name: Levensduur gebruikers weergeven in Intune-datawarehouse
+              href: reports-ref-user-timeline.md
             - name: Naslag voor toepassingsentiteiten
               href: reports-ref-application.md
+            - name: Naslaginformatie voor huidige gebruikersentiteit
+              href: reports-ref-current-user.md
             - name: Verwijzing voor datumentiteit
               href: reports-ref-date.md
             - name: Informatie voor apparaatentiteiten
               href: reports-ref-devices.md
-            - name: Naslag voor Intune-beheeruitbreiding
+            - name: Naslaginformatie voor Intune-beheeruitbreidingsentiteit
               href: reports-ref-intunemanagementextension.md
             - name: Naslag voor MAM-entiteiten (Mobile Application Management)
               href: reports-ref-mobile-app-management.md
             - name: Naslag voor beleidsentiteiten
               href: reports-ref-policy.md
-            - name: Naslaginformatie voor gebruikersapparaatkoppelingen
+            - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
               href: reports-ref-user-device.md
             - name: Naslag voor gebruikersentiteit
               href: reports-ref-user.md

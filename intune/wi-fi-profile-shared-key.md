@@ -3,10 +3,10 @@ title: Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
 titleSuffix: Azure portal
 description: Een aangepast Intune-profiel gebruiken om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast Microsoft Intune-apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Hieronder wordt beschreven hoe u de **aangepaste apparaatprofielen** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
@@ -205,3 +205,12 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
     Het is raadzaam een computer te gebruiken die niet met veel draadloze netwerken verbinding heeft gemaakt, omdat u alle profielen moet doorzoeken om het juiste te vinden.
 3.     Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 4.     Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld Gegevens van de pagina OMA-URI-instellingen.
+
+## <a name="best-practices"></a>Best practices
+Voordat u een Wi-Fi-profiel met PSK implementeert, moet u controleren of het apparaat rechtstreeks verbinding met het eindpunt kan maken.
+
+Wanneer u sleutels draait (wachtwoorden of wachtwoordzinnen), kunt u downtime verwachten en moet u implementaties evenredig plannen. U kunt nieuwe Wi-Fi-profielen pushen buiten kantooruren. Waarschuw gebruikers dat de connectiviteit mogelijk hierdoor wordt beïnvloed.
+ 
+Om een soepele migratie te garanderen en ervoor te zorgen dat beleidsupdates tijdig worden geleverd, moeten apparaten ten minste één open communicatiekanaal met Intune hebben. Hiervoor kunt u gebruikmaken van draadloze connectiviteit of Wi-Fi-toegang tot Intune-eindpunten instellen voor gebruikers.
+
+

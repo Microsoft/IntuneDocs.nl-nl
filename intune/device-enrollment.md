@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ De volgende registratiescenario's hebben betrekking op apparaten in bedrijfseige
 De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Meer informatie over [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de modus iOS onder supervisie, waarmee een apparaat kan worden geconfigureerd met de volgende functionaliteit:
-
-- App-vergrendeling (modus voor één app) 
-- Algemene HTTP-proxy 
-- Activeringsslot overslaan 
-- Autonome modus voor één app 
-- Webinhoudsfilter 
-- Achtergrond en vergrendelingsscherm instellen 
-- Stille app-push 
-- Permanente VPN 
-- Installatie van beheerde app exclusief toestaan 
-- iBookstore 
-- iMessages 
-- Game Center 
-- AirDrop 
-- AirPlay 
-- Koppelen aan host 
-- Cloudsynchronisatie 
-- Zoeken met Spotlight 
-- Handoff 
-- Apparaat wissen 
-- Beperkingen voor gebruikersinterface 
-- Installatie van configuratieprofielen per gebruikersinterface 
-- Nieuws 
-- Sneltoetsen 
-- Wijzigingen van de wachtwoordcode 
-- Wijzigingen van de apparaatnaam 
-- Wijzigingen van de achtergrond 
-- Automatisch downloaden van apps 
-- Wijzigingen in Bedrijfsapps vertrouwen 
-- Apple Music 
-- Binnenkomende e-mail 
-- Koppelen aan Apple Watch 
-
-> [!NOTE]
-> Apple heeft bevestigd dat bepaalde instellingen worden verplaatst naar alleen onder supervisie in 2018. We raden u aan hiermee rekening te houden wanneer u deze instellingen gebruikt in plaats van dat u wacht totdat Apple deze migreert naar alleen onder supervisie:
-> - App-installatie
-> - App verwijderen
-> - FaceTime
-> - Safari
-> - iTunes
-> - Expliciete inhoud
-> - iCloud-documenten en -gegevens
-> - Games voor meerdere spelers
-> - Game Center-vrienden toevoegen
+Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.
 
 Meer informatie over de iOS DEP-registratie:
 
 - [Kiezen hoe u iOS-apparaten registreert](ios-enroll.md)
-- [iOS-apparaten inschrijven met het Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+- [iOS-apparaten inschrijven met het Device Enrollment Program](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 IT-beheerders gebruiken Apple Configurator, via USB, om elk apparaat van het bedrijf handmatig voor te bereiden voor registratie met behulp van de Configuratieassistent. De IT-beheerder maakt een registratiebeleid en exporteert het beleid naar Apple Configurator. Wanneer gebruikers hun apparaat ontvangen, wordt hun gevraagd om Configuratieassistent uit te voeren om het apparaat in te schrijven. Deze methode ondersteunt de modus **iOS onder supervisie**, waarmee de volgende functies worden ingeschakeld:

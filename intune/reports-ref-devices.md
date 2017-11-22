@@ -1,5 +1,5 @@
 ---
-title: Devices | Microsoft Docs
+title: Apparaten - Intune-datawarehouse | Microsoft Docs
 description: Naslagonderwerp voor de categorie Devices van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 

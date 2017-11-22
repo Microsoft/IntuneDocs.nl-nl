@@ -8,7 +8,7 @@
 
 ## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
 
-## [Uw Android-apparaat gebruiken met Intune](using-your-android-device-with-intune.md)
+## [Uw Android-apparaat gebruiken](using-your-android-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een Android-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Uw apparaat inschrijven](enroll-your-device-in-Intune-android.md)
 #### [Een apparaat inschrijven bij Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [SandBlast Mobile Protect gebruiken](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Zimperium zIPS gebruiken](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [Uw iOS- of Mac OS-apparaat gebruiken met Intune](using-your-iOS-or-macOS-device-with-intune.md)
+## [Uw iOS-apparaat gebruiken](using-your-iOS-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een iOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [De bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
-### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos.md)
-### [macOS-apparaten inschrijven bij de bedrijfsportal](enroll-your-device-in-intune-macos-cp.md)
-### [Dit apparaat is enigszins anders](device-little-different-jamf.md)
 
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 ### [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [SandBlast Mobile Protect gebruiken](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Zimperium zIPS gebruiken](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [Uw macOS-apparaat gebruiken](using-your-macos-device-with-intune.md)
+### [Wat gebeurt er wanneer u een macOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos-cp.md)
+### [Uw oudere macOS-apparaat registreren](enroll-your-device-in-intune-macos-legacy.md)
+### [Dit apparaat is enigszins anders](device-little-different-jamf.md)
 
 ## [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een Windows 10-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [Mijn apparaat heeft antimalware-software nodig](your-device-needs-antimalware-software.md)
 #### [Beveiligd opstarten inschakelen](you-need-to-enable-secure-boot-windows.md)
 #### [Code-integriteit inschakelen](you-need-to-enable-code-integrity.md)
-
+#### [Ik wil mijn firewall inschakelen](you-need-to-enable-defender-firewall-windows.md)
+#### [Ik wil UAC inschakelen](you-need-to-enable-uac-windows.md)
+#### [Ik wil Windows bijwerken](you-need-to-update-os-build-version-windows.md)
+#### [Ik wil Windows Defender inschakelen](turn-on-defender-windows.md) 
 
 ## [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)

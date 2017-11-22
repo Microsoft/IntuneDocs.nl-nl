@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
@@ -28,7 +28,7 @@ Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, 
 Door een apparaat te registreren voor beheer met Intune, kan uw IT-afdeling deze werk- of schoolresources beheren en het apparaat veilig houden, en beschikt u, hun werknemer, over de vrijheid om voor uw werk het apparaat van uw voorkeur te gebruiken. Om dit te realiseren moet het apparaat eerst via de bedrijfsportal voor beheer worden geregistreerd.
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf in Intune?
-Uw bedrijf IT-afdeling kan informatie zien die relevant is voor het werk, maar niet voor uw persoonlijke gegevens. Dit is vooral belangrijk te weten als u een persoonlijk apparaat voor gebruik op het werk wilt inschrijven. Wat ze [wel en niet kunnen zien wordt onderverdeeld in het volgende artikel in de hulp voor gebruikers](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+De ondersteuningsafdeling van uw bedrijf kan informatie zien die relevant is voor het werk, maar niet voor uw persoonlijke gegevens. Dit is vooral belangrijk te weten als u een persoonlijk apparaat voor gebruik op het werk wilt inschrijven. Wat ze [wel en niet kunnen zien wordt onderverdeeld in het volgende artikel in de hulp voor gebruikers](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="how-do-i-get-the-company-portal"></a>Hoe kan ik de Bedrijfsportal downloaden?
 U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
@@ -49,7 +49,8 @@ Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfspor
 Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app op uw apparaat kunt doen, kiest u een van de volgende koppelingen:
 
 - [Uw Android-apparaat gebruiken](using-your-android-device-with-intune.md)
-- [Uw iOS- of macOS-apparaat gebruiken](using-your-ios-or-macOS-device-with-intune.md)
+- [Uw iOS-apparaat gebruiken](using-your-ios-device-with-intune.md)
+- [Uw macOS-apparaat gebruiken](using-your-macos-device-with-intune.md)
 - [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
 - [De bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 

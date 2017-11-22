@@ -1,12 +1,12 @@
 ---
 title: Aan de slag met de Azure-portal
 titlesuffix: Azure portal
-description: Meer informatie over het maken en delen van dashboards in Intune in de Azure-portal.
+description: Informatie over het maken en delen van dashboards voor Intune in de Azure Portal.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Aan de slag met Intune in de Azure-portal
 
-U kunt de Intune-service vinden in de Azure-portal. Azure bevat een groot aantal services, waarvan u er veel mogelijk niet regelmatig gebruikt. Door uw dashboard en zijbalk aan te passen, kunt u snel steeds de juiste informatie vinden wanneer u zich aanmeldt om apparaten in Intune te beheren.
+U kunt de Intune-service vinden in de Azure-portal. Er zijn talrijke services in Azure, waarvan u veel wellicht niet regelmatig gebruikt. Door uw dashboard en zijbalk aan te passen, kunt u snel steeds de juiste informatie vinden wanneer u zich aanmeldt om apparaten in Intune te beheren.
 
 ## <a name="changing-the-sidebar"></a>De zijbalk wijzigen
 
-De __zijbalk__ aan de linkerkant van de Azure-portal bevat een overzicht van alle beschikbare Azure-services. De standaardweergave van deze uitgebreide lijst kan worden gewijzigd, zodat u een permanente weergave hebt van de services die voor u het belangrijkst zijn. We gebruiken Intune als voorbeeld van een service die boven aan de lijst moet worden toegevoegd.
+In de __zijbalk__ aan de linkerzijde van de Azure Portal ziet u een lijst van alle beschikbare Azure-services. U kunt de standaardweergave deze uitgebreide lijst zo wijzigen dat de voor u belangrijkste services continu worden weergegeven. We gebruiken Intune als voorbeeld van een service die boven aan de lijst moet worden toegevoegd.
 
 ![Een gebruiker zoekt in de lijst 'Meer services' naar Intune.](./media/azure-add-intune1.png)
 
@@ -52,7 +52,7 @@ Dit is relevanter nadat u meer inhoud, zoals groepen en gebruikers, aan Intune h
 
 ## <a name="using-services"></a>Services gebruiken
 
-Als u Intune of een andere service in Azure opent, wordt deze in een **blade** weergegeven. Een aantal van de eerste werkbelastingen die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een blade op het volledige scherm weergegeven. Als u de werkbelasting selecteert, wordt de bijbehorende blade in het volledige scherm geopend. Andere blades schuiven vanaf de rechterkant van de blade naar buiten als ze worden geopend en worden samengevouwen onder de hoofdblade waarvan ze afkomstig zijn.
+Wanneer u Intune of een andere service in Azure opent, wordt de service weergegeven in een **blade**. Een aantal van de eerste werkbelastingen die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een blade op het volledige scherm weergegeven. Wanneer u de workload selecteert, wordt hiermee deze blade in een volledige pagina geopend. Andere blades schuiven uit de rechterzijde van de blade wanneer u deze opent, en schuiven weer terug onder de hoofdblade op hun oorspronkelijk plaats.
 
 ## <a name="next-steps"></a>Volgende stappen
 

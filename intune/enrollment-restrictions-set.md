@@ -3,10 +3,10 @@ title: Registratiebeperkingen instellen in Intune
 titlesuffix: Azure portal
 description: Beperk het registreren per platform en geef een registratielimiet voor apparaten op in Intune. "
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0117d3249f7fd2568201762b7dd16af9cc26392c
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 463278e4dc9ad677f654754d4710b110b376cc2d
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -33,7 +33,7 @@ Als Intune-beheerder kunt u bepalen welke apparaten kunnen worden geregistreerd 
   - iOS
   - macOS
   - Windows
-- Versie van besturingssysteem platform (alleen iOS en Android)
+- Besturingssysteemversie van platform voor iOS, Android en Windows (alleen Windows 10-versies kunnen worden gebruikt, laat dit leeg als Windows 8.1 is toegestaan)
   - Minimale versie
   - Maximale versie
 - Beperkingen opleggen voor apparaten die persoonlijk eigendom zijn (alleen iOS, Android en macOS)
@@ -55,7 +55,7 @@ De standaardinschrijvingsbeperkingen zijn van toepassing op alle gebruikersinsch
 
   Klik op **Opslaan**.
 6. Selecteer onder **Alle gebruikers** **Platformconfiguraties** en selecteer de volgende configuraties. Voor elk toegestaan platform kunt u de volgende opties configureren:
-  - **Versies**: geef de **minimale** en **maximale** versie van het besturingssysteem van het platform op voor Android- en iOS-apparaten. Versies van besturingssystemen zijn niet van toepassing op apparaten die zijn ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
+  - **Versies**: geef de **minimale** en **maximale** versie van het besturingssysteem van het platform op voor Android-, iOS- of Windows-apparaten. Android ondersteunt major.minor.rev.build. iOS ondersteunt major.minor.rev. Windows ondersteunt alleen major.minor.rev.build voor Windows 10. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die zijn ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator. 
   - **Persoonlijk eigendom**: kies **Toestaan** of **Blokkeren** voor Android-, iOS- en macOS-apparaten.
   ![Schermopname van de werkruimte Apparaatbeperkingen met de standaard-apparaatplatformconfiguraties met instellingen voor apparaten die persoonlijk eigendom zijn.](media/device-restrictions-platform-configurations.png)
   Klik op **Opslaan**.

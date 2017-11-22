@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c8ddc8902a6b9687e9b36cae7b1ff9b554f63841
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="using-your-windows-device-with-intune"></a>Uw Windows-apparaat gebruiken met Intune
 
@@ -30,7 +30,7 @@ Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te
 
 Intune ondersteunt momenteel de volgende Windows-versies.
 
-* Windows 10 (de versies Home, Pro, Education en Enterprise)
+* Windows 10 (Home, Pro, Education, S en Enterprise-versies)
 * Windows Phone 8.1 en hoger
 * Windows RT 8.1
 * Windows 8.1
