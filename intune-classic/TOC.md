@@ -95,6 +95,7 @@
 #### [Licentieovereenkomsten beheren](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [Beleidsconflicten oplossen](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [Waarschuwingen beheren](deploy-use/get-notified-by-alerts.md)
+### [Intune in Azure](deploy-use/intune-on-azure.md)
 ## Apparaten configureren
 ### [Instellingen en functies op uw apparaten beheren met beleid](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-instellingen](deploy-use/ios-policy-settings-in-microsoft-intune.md)

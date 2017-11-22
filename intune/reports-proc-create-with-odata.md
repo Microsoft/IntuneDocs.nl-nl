@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
 
@@ -60,16 +60,16 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 
     ![OData-feed](media/reports-create-01-odatafeed.png)
 
-9. Klik op **OK**.
+9. Selecteer **OK**.
 10. Selecteer **Organisatieaccount** en meld u aan met uw Intune-referenties. 
 
     ![Referenties organisatieaccount](media/reports-create-02-org-account.png)
 
-11. Klik op **Verbinden**. De Navigator wordt geopenden er wordt een lijst met tabellen in het Intune-datawarehouse weergegeven. 
+11. Selecteer **Verbinden**. De Navigator wordt geopenden er wordt een lijst met tabellen in het Intune-datawarehouse weergegeven. 
 
     ![De Navigator](media/reports-create-02-loadentities.png)
 
-12. Selecteer de tabellen **Apparaten** en **OwnerTypes**.  Klik op **Load**. Power BI laadt gegevens in het model.
+12. Selecteer de tabellen **Apparaten** en **OwnerTypes**.  Selecteer **Laden**. Power BI laadt gegevens in het model.
 
 ## <a name="create-a-relationship"></a>Relatie maken 
 
@@ -77,8 +77,8 @@ U kunt meerdere tabellen importeren, zodat u niet alleen de gegevens in een enke
 
 ![Relaties beheren](media/reports-create-03-managerelationships.png)
 
-1. Klik op **Relaties beheren**.
-2. Klik op **Autodetectie...** als Power BI de relaties nog niet heeft gedetecteerd.  
+1. Selecteer **Relaties beheren**.
+2. Selecteer **Autodetectie...** als Power BI de relaties nog niet heeft gedetecteerd.  
 De relatie wordt weergegeven met een kolom Van en een kolom Naar. In dit voorbeeld is het gegevensveld **OwnerTypeKey** in de tabel **apparaten** gekoppeld aan het gegevensveld **ownerTypeKey** in de tabel **ownerTypes**. U gebruikt de relatie om de gewone naam bij de typecode van het apparaat op te zoeken in de tabel **apparaten**.
 
 ## <a name="create-a-treemap-visualization"></a>Een treemapvisualisatie maken
@@ -100,7 +100,7 @@ U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binne
 
 U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden met uw app. 
 
-1. Klik op het rapportcanvas en klik vervolgens op het **slicerpictogram** (![treemap met gegevens](media/reports-create-slicer.png)) onder **Visualisaties** om een filter toe te voegen.
+1. Selecteer het rapportcanvas en selecteer vervolgens het **slicerpictogram** (![treemap met gegevens](media/reports-create-slicer.png)) onder **Visualisaties** om een filter toe te voegen.
 2. Ga naar de tabel **ownerTypes** en sleep het gegevensveld **ownertypeName** naar de sectie **Filters** in het deelvenster **Visualisaties**.  
    Onder de tabel apparaten staat een gegevensveld genaamd **OwnerTypeKey**, dat ene code bevat die aangeeft of het apparaat persoonlijk is of eigendom van het bedrijf. Om de beschrijvende namen in dit filter weer te geven, gaat u naar de tabel **ownerTypes** en sleept u de **ownerTypeName**. Dit is een voorbeeld van hoe het gegevensmodel relaties tussen tabellen ondersteunt.
 
@@ -108,8 +108,8 @@ U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden
 
 U hebt nu een interactief filter dat u kunt gebruiken om te schakelen tussen apparaten in bedrijfseigendom en persoonlijke apparaten en te zien hoe de verdeling verandert.
 
-1. Klik op **Bedrijf** om de apparaten in bedrijfseigendom weer te geven.
-2. Klik op **Persoonlijk** om de persoonlijke apparaten weer te geven.
+1. Selecteer **Bedrijf** om de apparaten in bedrijfseigendom weer te geven.
+2. Selecteer **Persoonlijk** om de persoonlijke apparaten weer te geven.
 
 ## <a name="next-steps"></a>Volgende stappen
 

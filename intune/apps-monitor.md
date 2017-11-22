@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune biedt een aantal manieren om de eigenschappen en toewijzingsstatus te controleren van apps die u beheert.
 
-1. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
-2. Kies op de blade met de lijst van apps de app waarvoor u informatie wilt weergegeven. Vervolgens ziet u de blade <*app-naam*> **Installatiestatus van het apparaat**: ![Blade Installatiestatus van de app.](./media/monitor-apps.png)
+1. Meld u aan bij Azure Portal.
+2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
+3. Kies in de workload **Mobiele apps** **Apps** in de groep **Beheren**.
+     
+    ![Blade Installatiestatus van de app.](./media/monitor-apps.png)
+5. Kies de gewenste app in de lijst van app-blades. U ziet dan de blade <*app-naam*> **Installatiestatus apparaat**.
+
+Het rapport Installatiestatus apparaat bevat de volgende kolommen:
+
+1.  **Apparaatnaam** De naam van het apparaattype.
+2.  **Gebruikersnaam** De naam van de gebruiker.
+3.   **Platform** Het op het apparaat geïnstalleerde besturingssysteem.
+4.  **Versie** Het versienummer van de app.
+5.   **Status** De mogelijke statussen van de apps zijn: **Geïnstalleerd**, **Niet geïnstalleerd**, **Wacht op installatie** en **Fout**.
+6. **Statusdetails** Een leesbare beschrijving van de status van de app op het apparaat.
+7. **Laatste check-in** Wanneer het apparaat voor het laatst heeft ingecheckt bij Intune.
 
 Neem vervolgens een van de volgende acties om meer over uw apps en hun toewijzingen te leren.
 

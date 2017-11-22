@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+
+
+## <a name="week-of-november-6-2017"></a>Week van 6 november 2017
+
+### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Verbeteringen voor de apps op de bedrijfsportal en website zoeken <!--1418189-->
+De bedrijfsportal-apps gebruiken nu zoekopdrachten in app-categorieën, namen en beschrijvingen. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. Deze updates zijn ook beschikbaar in de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+
+We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt bijgehouden. Laat ons weten hoe het voor u werkt via de koppeling Feedback onderaan de bedrijfsportalwebsite.
+
+
 
 ## <a name="week-of-october-16-2017"></a>Week van 16 oktober 2017
 

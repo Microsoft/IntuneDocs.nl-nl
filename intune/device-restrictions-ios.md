@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Algemeen
-    
+
 -   **Verzenden van diagnostische gegevens**: hiermee kunt u verzending van diagnostische gegevens naar Apple voor het apparaat toestaan of blokkeren.
 -   **Schermafbeelding**: hiermee staat u de gebruiker toe om de inhoud van het scherm vast te leggen als afbeelding.
     - **Observatie van extern scherm met de app Classroom (alleen onder supervisie)**: hiermee kunt u toestaan of voorkomen dat de app Apple Classroom het scherm van iOS-apparaten kan bekijken.
@@ -44,6 +44,54 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 - **Wijzigingen in configuratieprofielen**: hiermee staat u de gebruiker toe configuratieprofielen te installeren.
 - **Activeringsslot (alleen onder toezicht)**: hiermee schakelt u Activeringsslot in op iOS-apparaten in de supervisiemodus.
 
+## <a name="configurations-requiring-supervision"></a>Configuraties die supervisie vereisen
+
+De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële installatie van het apparaat via het Device Enrollment Program van Apple of met behulp van Apple Configurator. Zodra de supervisiemodus is ingeschakeld, kunt u in Intune een apparaat configureren met de volgende functionaliteit:
+
+- App-vergrendeling (modus voor één app) 
+- Algemene HTTP-proxy 
+- Activeringsslot overslaan 
+- Autonome modus voor één app 
+- Webinhoudsfilter 
+- Achtergrond en vergrendelingsscherm instellen 
+- Stille app-push 
+- Permanente VPN 
+- Installatie van beheerde app exclusief toestaan 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- Koppelen aan host 
+- Cloudsynchronisatie 
+- Zoeken met Spotlight 
+- Handoff 
+- Apparaat wissen 
+- Beperkingen voor gebruikersinterface 
+- Installatie van configuratieprofielen per gebruikersinterface 
+- Nieuws 
+- Sneltoetsen 
+- Wijzigingen van de wachtwoordcode 
+- Wijzigingen van de apparaatnaam 
+- Wijzigingen van de achtergrond 
+- Automatisch downloaden van apps 
+- Wijzigingen in Bedrijfsapps vertrouwen 
+- Apple Music 
+- Binnenkomende e-mail 
+- Koppelen aan Apple Watch 
+
+> [!NOTE]
+> Apple heeft bevestigd dat bepaalde instellingen worden verplaatst naar alleen onder supervisie in 2018. We raden u aan hiermee rekening te houden wanneer u deze instellingen gebruikt in plaats van dat u wacht totdat Apple deze migreert naar alleen onder supervisie:
+> - App-installatie door eindgebruikers
+> - App verwijderen
+> - FaceTime
+> - Safari
+> - iTunes
+> - Expliciete inhoud
+> - iCloud-documenten en -gegevens
+> - Games voor meerdere spelers
+> - Game Center-vrienden toevoegen
+
 ## <a name="password"></a>Wachtwoord
 -   **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
     -   **Eenvoudige wachtwoorden**: hiermee staat u het gebruik van eenvoudige wachtwoorden toe, zoals 0000 en 1234.
@@ -56,7 +104,7 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
     -   **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.
     -   **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
     -   **Vingerafdruk ontgrendelen**: hiermee staat u toe dat compatibele apparaten kunnen worden ontgrendeld met een vingerafdruk.
-- **Wachtwoordcode wijzigen (alleen onder supervisie)**: hiermee kan de wachtwoordcode niet langer worden gewijzigd, toegevoegd of verwijderd. 
+- **Wachtwoordcode wijzigen (alleen onder supervisie)**: hiermee kan de wachtwoordcode niet langer worden gewijzigd, toegevoegd of verwijderd.
     - **Wijziging van vingerafdruk (alleen onder supervisie)**: hiermee kan de gebruiker TouchID-instellingen niet langer wijzigen, toevoegen of verwijderen.
 
 <sup>1</sup> Wanneer u de instellingen **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld** en **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
@@ -89,7 +137,7 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 
 ## <a name="built-in-apps"></a>Ingebouwde apps
 
--   **Camera**: hiermee kunt u aangeven of de camera op het apparaat kan worden gebruikt. 
+-   **Camera**: hiermee kunt u aangeven of de camera op het apparaat kan worden gebruikt.
     -   **FaceTime**: hiermee staat u toe dat de FaceTime-app op het apparaat mag worden gebruikt.
 -   **Siri**: hiermee staat u het gebruik van de spraakassistent Siri op het apparaat toe.
     -   **Siri wanneer het apparaat is vergrendeld**: hiermee staat u het gebruik van de spraakassistent Siri op het apparaat toe terwijl het apparaat is vergrendeld.
@@ -124,9 +172,7 @@ Apparaatprofielen die instellingen voor beperkte apps bevatten, moeten worden to
 Voorbeeld: Zoek naar Microsoft Word voor iPad. De URL die u gebruikt, is https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
-
-
+> U kunt ook iTunes gebruiken om de app op te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de URL van de app te krijgen.
 
 ### <a name="additional-options"></a>Extra opties
 
@@ -247,7 +293,7 @@ Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wannee
 Voeg in het veld **Webdomein-URL** een of meer URL's toe aan de lijst. Documenten die zijn gedownload via de URL's die u opgeeft, worden als beheerd beschouwd. Deze instelling geldt alleen voor documenten die zijn gedownload met Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domeinen voor automatisch invullen van wachtwoorden in Safari
+### <a name="safari-password-autofill-domains"></a>Domeinen voor automatisch invullen van Safari-wachtwoorden
 
 Voeg in het veld **Domein-URL** een of meer URL's toe aan de lijst. Gebruikers kunnen in deze lijst alleen webwachtwoorden van URL's opslaan. Deze instelling geldt alleen voor Safari en voor apparaten met iOS 9.3 en hoger in de modus supervisie. Als u geen URL's opgeeft, kunnen wachtwoorden van alle websites worden opgeslagen.

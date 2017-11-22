@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -68,7 +68,7 @@ Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft I
 3.  Ga in de lijst Beheren naar de blade **Mobile Apps** en kies **App-configuratiebeleid**.
 4.  Kies **Toevoegen** op de blade **App-configuratiebeleid**.
 5.  Geef op de blade **App-configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
-6.  Kies voor het type **Apparaatinschrijving** de optie **Beheerde apparaten** of **Beheerde apps**.
+6.  Kies voor **Type apparaatregistratie** **Beheerde apps**.
 7.  Kies **Vereiste apps selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** voor iOS, voor Android of voor beide besturingssystemen.
 8.  Kies **OK** om terug te keren naar de blade **App-configuratiebeleid toevoegen**.
 9.  Kies **Configuratie-instellingen**. Op de blade **Configuratie** definieert u sleutel- en waardeparen voor configuraties voor Managed Browser. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
@@ -202,6 +202,22 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Toegang tot logboeken van beheerde apps met Managed Browser in iOS
+
+Eindgebruikers bij wie Managed Browser is geïnstalleerd op hun iOS-apparaat, kunnen de beheerstatus van alle gepubliceerde Microsoft-apps bekijken. Ze kunnen logboeken versturen om problemen met hun beheerde iOS-apps op te lossen.
+
+1. Open **iOS-instellingen**.
+2. Selecteer de toepassingsinstellingen voor Managed **Browser**.
+3. Verschuif de knop **Intune diagnostische gegevens inschakelen** om de browser in te stellen op de probleemoplossingsmodus.
+4. Open Managed **Browser**. Klik op **Intune App-status weergeven** om beleidsinstellingen voor toepassingen afzonderlijk te bekijken.
+5. Druk op **Aan de slag** en **Logboeken delen** of **Logboeken naar Microsoft verzenden** om de logboeken met probleemoplossing naar uw IT-beheerder of Microsoft te verzenden.
+
+U kunt de browser ook openen in de probleemoplossingsmodus vanuit de app.
+
+1. Open Managed Browser.
+2. Type `about:intunehelp` in het adresvak.
+De probleemoplossingsmodus van de Browser wordt gestart.
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Beveiliging en privacy voor Managed Browser
 

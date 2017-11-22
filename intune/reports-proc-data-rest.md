@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -30,49 +30,43 @@ De stappen voor het instellen van een client zodat deze gegevens uit de dataware
 3. De client-app toegang geeft tot de Microsoft Intune-API
 3. Een lokale REST-client maakt om de gegevens op te halen
 
-Gebruik de volgende stappen om te leren hoe u Postman als client kunt autoriseren en gebruiken. Postman is een veelgebruikt hulpprogramma voor het oplossen van problemen en het ontwikkelen van REST-clients die met API’s werken. Raadpleeg de [Postman](https://www.getpostman.com)-site voor meer informatie over Postman. Dit onderwerp bevat ook een voorbeeld van C#-code. Dit is een voorbeeld voor het autoriseren van een client en het ophalen van gegevens uit de API.
+Gebruik de volgende stappen om te leren hoe u de API met een REST-client kunt autoriseren en openen. Als eerste kijkt u of u een algemene REST-client als Postman kunt gebruiken. Postman is een veelgebruikt hulpprogramma voor het oplossen van problemen en het ontwikkelen van REST-clients die met API’s werken. Raadpleeg de [Postman](https://www.getpostman.com)-site voor meer informatie over Postman. Vervolgens kunt u een C#-codevoorbeeld bekijken. Dit is een voorbeeld voor het autoriseren van een client en het ophalen van gegevens uit de API.
 
-## <a name="create-a-native-app-in-azure"></a>Een systeemeigen app maken in Azure
+## <a name="create-a-client-app-as-a-native-app-in-azure"></a>Een client-app als systeemeigen app in Azure maakt
 
 Maak een systeemeigen app in Azure. Deze systeemeigen app is de client-app. De client die op uw lokale apparaat draait, verwijst naar de Intune-datawarehouse-API als de lokale client om referenties vraagt. 
 
 1. Meld u aan bij de Azure-portal voor uw tenant. Kies **Azure Active Directory** > **App-registraties** om de blade **App-registraties** te openen.
-2. Klik op **Nieuwe app-registratie**.
+2. Selecteer **Nieuwe app-registratie**.
 3. Typ de app-gegevens.
     1.  Typ een beschrijvende naam, zoals Intune-datawarehouseclient voor de **Naam**.
     2.  Selecteer **Systeemeigen** als het **Toepassingstype**.
     3.  Typ een URL voor de **Aanmeldings-URL**. De aanmeldings-URL is afhankelijk van het specifieke scenario. Typ echter `https://www.getpostman.com/oauth2/callback` als u Postman wilt gebruiken. U gebruikt tijdens het verifiëren via de Azure AD de aanroep voor clientverificatie.
-4.  Klik op **Maken**.
+4.  Selecteer **Maken**.
 
      ![Intune-datawarehouse-API](media\reports-get_rest_data_client_overview.png)
 
 5. Noteer de **toepassings-id** van deze app. U gebruikt de id in de volgende sectie.
-6. Voeg een sleutel toe als u van plan bent om Postman te gebruiken. De sleutel wordt gebruikt als het clientgeheim wanneer u verifieert met Azure AD. Een sleutel toevoegen:
-    1.  Klik op **Sleutels** onder **API-toegang** op de blade Instellingen voor de app.
-    2.  Typ bij **Beschrijving** een naam voor uw sleutel, zoals Clientgeheim.
-    3.  Selecteer als Duur **1 jaar**.
-    4.  Klik op **Opslaan**. 
-    5.  Kopieer de waarde van uw sleutel. U kunt de sleutel niet ophalen nadat u de blade **Instellingen** voor de sleutels hebt gesloten.
 
-## <a name="grant-the-native-app-access-to-the-microsoft-intune-api"></a>De systeemeigen app toegang verlenen tot de Microsoft Intune-API
+## <a name="grant-the-client-app-access-to-the-microsoft-intune-api"></a>De client-app toegang geeft tot de Microsoft Intune-API
 
 U hebt nu een app gedefinieerd in Azure. Verleen via de systeemeigen app toegang tot de Microsoft Intune-API.
 
-1.  Klik op de systeemeigen app. U hebt de app een naam gegeven, zoals **Intune-datawarehouseclient**.
-2.  Selecteer op de blade **Instellingen** de optie **Vereiste machtigingen**
-3.  Klik op de blade **Vereiste machtigingen** op **Toevoegen**.
-4.  Klik op **Een API selecteren**.
+1.  Selecteer de systeemeigen app. U hebt de app een naam gegeven, zoals **Intune-datawarehouseclient**.
+2.  Selecteer **Vereiste machtigingen** op de blade **Instellingen**.
+3.  Selecteer **Toevoegen** op de blade **Vereiste machtigingen**.
+4.  Selecteer **Een API selecteren**.
 5.  Zoek de naam van de webtoepassing. Deze heet **Microsoft Intune API**.
-6.  Klik op de app in de lijst.
-7.  Klik op **Selecteren**.
+6.  Selecteer de app in de lijst.
+7.  Selecteer **Selecteren**.
 8.  Schakel het selectievakje **Gedelegeerde machtigingen** in om **Datawarehouse-gegevens ophalen uit Microsoft Intune** toe te voegen.
 
     ![Toegang inschakelen](media\reports-get_rest_data_client_access.png)
 
-9.  Klik op **Selecteren**.
-10.  Klik op **Gereed**.
-11.  Klik eventueel op **Machtigingen verlenen** op de blade Vereiste machtigingen. Er wordt nu toegang verleend aan alle accounts in de huidige map. Zo wordt voorkomen dat het dialoogvenster voor toestemming wordt weergegeven voor elke gebruiker in de tenant. Raadpleeg [Toepassingen integreren met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor meer informatie.
-12.  Klik op **Ja**.
+9.  Selecteer **Selecteren**.
+10.  Selecteer **Voltooid**.
+11.  Selecteer eventueel **Machtigingen verlenen** op de blade Vereiste machtigingen. Er wordt nu toegang verleend aan alle accounts in de huidige map. Zo wordt voorkomen dat het dialoogvenster voor toestemming wordt weergegeven voor elke gebruiker in de tenant. Raadpleeg [Toepassingen integreren met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor meer informatie.
+12.  Selecteer **Ja**.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Gegevens van de Microsoft Intune-API ophalen met Postman
 
@@ -86,14 +80,26 @@ U hebt de volgende informatie nodig om een REST-aanroep te doen met Postman:
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Callback-URL     | Stel deze in als de callback-URL op de pagina met app-instellingen.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Tokennaam       | Een tekenreeks die wordt gebruikt om de referenties door te geven aan de Azure-app. Het proces genereert uw token, zodat u de aanroep naar de datawarehouse-API kunt maken.                          | Drager                                                                                        |
-| Auth.-URL         | Dit is de URL die wordt gebruikt voor verificatie. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com |
+| Auth.-URL         | Dit is de URL die wordt gebruikt voor verificatie. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/ |
 | URL van toegangstoken | Dit is de URL die wordt gebruikt om het token te verlenen.                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
 | Client-id        | U hebt deze gemaakt en genoteerd toen u de systeemeigen app in Azure maakte.                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
-| Clientgeheim    | U hebt deze gemaakt en genoteerd toen u een sleutel aan de client-app toevoegde in Azure.                                                                                              | JZoRZGPmN9xwsUnfX9UW877dkV5Fn/qQClhr7SuyMUQ=                                                  |
 | Scope (optioneel) | Leeg                                                                                                                                                                               | U kunt het veld leeg laten.                                                                     |
 | Toekenningstype       | Het token is een autorisatiecode.                                                                                                                                                  | Autorisatiecode                                                                            |
 
-U hebt het eindpunt nodig. In dit voorbeeld halen we gegevens op uit de entiteit **datums**. De entiteit **datums** heeft de volgende indeling: `https://fef.{aus}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`. U gebruikt de URL van uw tenantbeheer. U hebt de URL van uw tenantbeheer gebruikt toen u uw webtoepassing maakte.
+### <a name="odata-endpoint"></a>OData-eindpunt
+
+U hebt ook het eindpunt nodig. Om uw Data Warehouse-eindpunt te verkrijgen, hebt u de aangepaste feed-URL nodig. U kunt het OData-eindpunt ophalen op de blade Data Warehouse.
+
+1. Meld u aan bij Azure Portal.
+2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
+3. Selecteer **Intune Data Warehouse instellen** onder **Andere taken**.
+4. Kopieer de aangepaste url onder **Use third-party reporting services** (Rapportageservice van derde gebruiken). Het resultaat ziet er ongeveer als volgt uit: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+
+Het eindpunt heeft de volgende indeling: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`. 
+
+De entiteit **datums** ziet er als volgt uit: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+
+Zie [Intune Data Warehouse API endpoint](reports-api-url.md) (Eindpunt van Intune-datawarehouse-API) voor meer informatie.
 
 ### <a name="make-the-rest-call"></a>De REST-aanroep maken
 
@@ -105,39 +111,34 @@ Om een nieuw toegangstoken voor Postman te verkrijgen, moet u de autorisatie-URL
 2.  Open Postman. Kies de HTTP-bewerking **GET**.
 3.  Plak de URL van het eindpunt in het adres. Het resultaat ziet er ongeveer als volgt uit:  
 
-    `https://fef.msua06.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.  Kies het tabblad **Autorisatie** en selecteer **OAuth 2.0** in de lijst **Type**.
-5.  Klik op **Nieuw toegangstoken ophalen**.
+5.  Selecteer **Nieuw toegangstoken ophalen**.
 6.  Controleer of u de callback-URL al aan uw app hebt toegevoegd in Azure. De callback-URL is `https://www.getpostman.com/oauth2/callback`.
 7.  Typ Drager als **Tokennaam**.
 8.  Voeg de **Auth.-URL** toe. Het resultaat ziet er ongeveer als volgt uit:  
 
-    `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com`
+    `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
 9.  Voeg de **URL van toegangstoken** toe. Het resultaat ziet er ongeveer als volgt uit:  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
 10. Voeg de **Client-id** toe van de systeemeigen app die u in Azure hebt gemaakt en die u `Intune Data Warehouse Client` hebt genoemd. Het resultaat ziet er ongeveer als volgt uit:  
 
-     `4184c61a-e324-4f51-83d7-022b6a81b991`
+     `88C8527B-59CB-4679-A9C8-324941748BB4`
 
-11. Voeg het **Clientgeheim** toe dat u als sleutel hebt gedefinieerd toen u uw systeemeigen app in Azure maakte. Het resultaat ziet er ongeveer als volgt uit: 
+11. Selecteer **Autorisatiecode** en vraag het toegangstoken lokaal aan.
 
-     `F360R69M0MS72OB6YAqTyXO9MsXZx/OJTgAE2HB4k2k=`
-
-12. Selecteer **Autorisatiecode** en vraag het toegangstoken lokaal aan.
-
-13. Klik op **Token aanvragen**.
+12. Selecteer **Token aanvragen**.
 
     ![Informatie voor het token](media\reports-postman_getnewtoken.png)
 
-14. Typ uw referenties op de autorisatiepagina voor Active AD. De lijst met bestaande tokens in Postman bevat nu het token met de naam `Bearer`.
-16. Kies het token. Selecteer **Header** bij Token toevoegen aan.
-17. Klik op **Token gebruiken**. De lijst met headers bevat de nieuwe sleutelwaarde voor Autorisatie en de waarde `Bearer <your-authorization-token>`.
+13. Typ uw referenties op de autorisatiepagina voor Active AD. De lijst met tokens in Postman bevat nu het token met de naam `Bearer`.
+14. Selecteer **Token gebruiken**. De lijst met headers bevat de nieuwe sleutelwaarde voor Autorisatie en de waarde `Bearer <your-authorization-token>`.
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>De aanroep naar het eindpunt verzenden met Postman
 
-1.  Klik op **Verzenden**.
+1.  Selecteer **Verzenden**.
 2.  De geretourneerde gegevens worden in de hoofdtekst van het antwoord van Postman weergegeven.
 
     ![Postman 200OK](media\reports-postman_200OK.png)
@@ -151,10 +152,10 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
 
 1.  Open **Microsoft Visual Studio**.
 2.  Kies **Bestand** > **Nieuw project**. Vouw **Visual C#** uit en kies **Console-app (.Net Framework)**. 
-3.  Noem het project ` IntuneDataWarehouseSamples`, blader naar de locatie waar u het project wilt opslaan en klik vervolgens op **OK**.
-4.  Klik met de rechtermuisknop op de naam van de oplossing in Solution Explorer en selecteer vervolgens **NuGet-pakketten beheren voor oplossing**. Klik op **Bladeren** en typ vervolgens `Microsoft.IdentityModel.Clients.ActiveDirectory` in het zoekvak.
-5. Kies het pakket, selecteer het project **IntuneDataWarehouseSamples** onder Pakketten beheren voor uw oplossing en klik vervolgens op **Installeren**. 
-6. Klik op **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.
+3.  Noem het project ` IntuneDataWarehouseSamples`, blader naar de locatie waar u het project wilt opslaan en selecteer vervolgens **OK**.
+4.  Klik met de rechtermuisknop op de naam van de oplossing in Solution Explorer en selecteer vervolgens **NuGet-pakketten beheren voor oplossing**. Selecteer **Bladeren** en typ vervolgens `Microsoft.IdentityModel.Clients.ActiveDirectory` in het zoekvak.
+5. Kies het pakket, selecteer het project **IntuneDataWarehouseSamples** onder Pakketten beheren voor uw oplossing en selecteer vervolgens **Installeren**. 
+6. Selecteer **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.
 7. Open `Program.cs` in de Solution Explorer.
 
     ![Project in Visual Studio](media\reports-get_rest_data_in.png)

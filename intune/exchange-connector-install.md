@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange Connector instellen in Microsoft Intune Azure
 
@@ -134,13 +134,18 @@ Nadat Exchange Connector de verbinding heeft ingesteld, worden de mobiele appara
 > [!NOTE]
 > Als u On-Premises Exchange Connector hebt geïnstalleerd en u op een bepaald moment de Exchange-verbinding verwijdert, moet u On-Premises Exchange Connector verwijderen van de computer waarop deze is geïnstalleerd.
 
-## <a name="validate-the-exchange-connection"></a>De Exchange-verbinding valideren
+## <a name="monitor-the-exchange-connector-activity"></a>De activiteit van de Exchange-connector controleren
 
 Nadat u de Exchange-Connector hebt geconfigureerd, kunt u de status van de verbinding en de laatste geslaagde synchronisatiepoging weergeven. De Exchange Connector-verbinding valideren:
 
-- Kies op het Intune-dashboard de optie **On-premises toegang**. Selecteer onder **Beheren** de optie **Exchange on-premises toegang** om de status van de verbinding te verifiëren.
+1. Kies op het Intune-dashboard de optie **On-premises toegang**.
+2. Selecteer onder **Beheren** de optie **Exchange on-premises toegang** om de status van de verbinding te verifiëren.
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>Management pack van System Center Operations Manager (SCOM)
+
+Vanaf release 1710 Intune kunt u het [management pack van System Center Operations Manager (SCOM) voor Exchange-connector en Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) gebruiken. Hiermee kunt u de Exchange-connector op verschillende manieren controleren wanneer u problemen moet oplossen.
 
 ## <a name="next-steps"></a>Volgende stappen
 [Een beleid maken voor voorwaardelijke toegang voor Exchange On-Premises](conditional-access-exchange-create.md)

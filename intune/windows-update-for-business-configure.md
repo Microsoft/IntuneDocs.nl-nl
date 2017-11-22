@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows as a Service is dé manier om Windows 10-apparaten bij te werken. In Windows 10 bevatten nieuwe functie-updates en kwaliteitsupdates de inhoud van alle voorgaande updates. Dit houdt in dat, als u de nieuwste update hebt geïnstalleerd, u zeker weet dat uw Windows 10-apparaten volledig zijn bijgewerkt. In tegenstelling tot eerdere versies van Windows, moet u nu de volledige update installeren in plaats van een onderdeel van een update.
+Windows as a Service is dé manier om Windows 10-apparaten bij te werken. In Windows 10 bevatten nieuwe functie-updates en kwaliteitsupdates de inhoud van alle voorgaande updates. Dit houdt in dat, als u de nieuwste update hebt geïnstalleerd, u zeker weet dat uw Windows 10-apparaten zijn bijgewerkt. In tegenstelling tot eerdere versies van Windows, moet u nu de volledige update installeren in plaats van een onderdeel van een update.
 
 Met Windows Update voor bedrijven kunt u updatebeheer vereenvoudigen, zodat u geen afzonderlijke updates voor groepen apparaten hoeft goed te keuren. U kunt nog steeds risico's in uw omgeving beheren door een strategie voor update-implementatie te configureren. Windows Update zorgt ervoor dat updates op tijd worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten maken direct verbinding met Windows Update voor de updates. U kunt Intune gebruiken voor het configureren en beheren van **Windows 10-updateringen**. Een updatering bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. U kunt bijvoorbeeld het volgende configureren:
 
-- **Windows 10 Servicing Branch**: kies of u wilt dat groepen apparaten updates ontvangen van de Current Branch of van de Current Branch for Business.  
+- **Windows 10 Servicing Channel** (Windows 10 Servicing-kanaal): kies of u updates wilt ontvangen voor groepen apparaten van het Semi-Annual-kanaal (Targeted) of van het Semi-Annual-kanaal.  
 - **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U kunt deze instellingen gebruiken voor een gefaseerde update-implementatie, zodat u kunt de voortgang kunt controleren.
 - **Onderbreken**: stel de installatie van updates uit als u op enig moment tijdens de implementatie van de updates problemen ontdekt.
 - **Onderhoudsvenster**: configureer de tijden waarop de updates kunnen worden geïnstalleerd.
@@ -78,7 +78,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 5. Kies **Maken** op de blade met de updateringen.
 6. Geef op de blade **Updatering maken** een naam en een optionele omschrijving voor de updatering op en kies vervolgens **Instellingen**.
 7. Configureer de volgende gegevens op de blade **Instellingen**:
-    - **Servicing branch**: stel de branche in waarvoor het apparaat Windows-updates ontvangt (Current Branch of Current Branch for Business).
+    - **Onderhoud van kanaal**: stel het kanaal in waarvoor het apparaat Windows-updates (het Semi-Annual-kanaal (Targeted) of het Semi-Annual-kanaal) ontvangt.
     - **Microsoft-updates**: kies of u wilt zoeken naar app-updates via Microsoft Update.
     - **Windows-stuurprogramma's**: kies of u Windows Update-stuurprogramma's wilt uitsluiten tijdens het bijwerken.
     - **Gedrag van automatische updates**: kies hoe het gedrag van automatische update moet worden beheerd voor het zoeken naar, downloaden en installeren van updates. Zie [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
@@ -87,12 +87,12 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
     Kwaliteitsupdates zijn doorgaans oplossingen en verbeteringen in de bestaande Windows-functionaliteit. Deze worden normaal gesproken op de eerste dinsdag van elke maand gepubliceerd, maar kunnen op elk gewenst moment door Microsoft worden vrijgegeven. U kunt opgeven of, en hoe u de installatie van kwaliteitsupdates wilt uitstellen na hun beschikbaarheid.
     - **Uitstelperiode voor upgrades van onderdelen (dagen)**: geef het aantal dagen op dat upgrades van onderdelen worden uitgesteld. U kunt deze upgrades van onderdelen uitstellen gedurende een periode van 180 dagen vanaf de release.
 
-    Upgrades van onderdelen zijn over het algemeen nieuwe functies van Windows. Nadat u de instelling voor de **Servicing branch** hebt geconfigureerd (**CB** of **CBB**), kunt u opgeven of en hoe lang u upgrades van onderdelen wilt uitstellen nadat deze door Microsoft beschikbaar zijn gesteld via Windows Update.
+    Upgrades van onderdelen zijn over het algemeen nieuwe functies van Windows. Nadat u de instelling voor **Servicing-kanaal** hebt geconfigureerd (Semi-Annual-kanaal (Targeted) of Semi-Annual-kanaal), kunt u opgeven of en hoe lang u upgrades van onderdelen wilt uitstellen nadat deze door Microsoft beschikbaar zijn gesteld via Windows Update.
 
     Bijvoorbeeld:  
-    **De Servicing branch is ingesteld op CB en het uitstel is ingesteld 30 dagen**: stel dat onderdelenupdate X in januari voor het eerst als CB openbaar beschikbaar is via Windows Update. Het apparaat ontvangt de update pas in februari - 30 dagen later.
+    **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal (Targeted) en de uitstelperiode 30 dagen is**: Stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Het apparaat ontvangt de update pas in februari - 30 dagen later.
 
-    **De Servicing branch is ingesteld op CBB en het uitstel is ingesteld 30 dagen**: stel dat onderdelenupdate X in januari voor het eerst als CB openbaar beschikbaar is via Windows Update. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor CBB. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze CBB-release en wordt in mei bijgewerkt.
+    **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-release en wordt in mei bijgewerkt.
 
     - **Delivery optimization**: kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode) voor meer informatie.
 8. Wanneer u klaar bent, klikt u op **OK** en klikt u vervolgens op de blade **Updatering maken** op **Maken**.

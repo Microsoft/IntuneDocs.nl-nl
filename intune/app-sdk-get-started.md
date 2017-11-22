@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -113,8 +113,50 @@ Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
     * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
 
-
 * **SDK voor Intune-app voor Android**: telemetriegegevens worden niet geregistreerd via de SDK.
+
+ Het versienummer van de line-of-business- app voor iOS en Android is zichtbaar <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>Versienummers van line-of-business-apps
+
+In line-of-business-apps in Intune wordt nu het versienummer getoond voor iOS- en Android-apps. Het nummer wordt in de Azure Portal in de app-lijst en in de blade App-overzicht getoond. Eindgebruikers kunnen het app-nummer in de bedrijfsportal-app en in de webportal zien.
+
+### <a name="full-version-number"></a>Volledig versienummer
+
+Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800)
+
+Het volledige versienummer bevat twee onderdelen:
+
+ - **Versie**  
+   Het versienummer is het door mensen leesbare releasenummer van de app. Dit wordt door eindgebruikers gebruikt om de verschillende releases van de app aan te duiden.
+
+ - **Buildnummer**  
+    Het buildnummer is een intern nummer dat voor de detectie van apps en het beheer van apps via een programma kan worden gebruikt. Het buildnummer verwijst naar een iteratie van de app die refereert aan wijzigingen in de code.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Versie- en buildnummer in Android en iOS
+
+Zowel Android als iOS gebruiken versie- en buildnummers ter verwijzing naar apps. Beide besturingssystemen bevatten echter betekenissen die specifiek zijn voor het besturingssysteem. De volgende tabel biedt een verklaring van de samenhang van deze termen.
+
+Let op dat u zowel het versie- als het buildnummer gebruikt wanneer u een line-of-business-app ontwikkelt voor gebruik in Intune. Beheereigenschappen van een Intune-app zijn afhankelijk van een zinvolle **CFBundleVersion** (voor iOS) en **PackageVersionCode** (voor Android). Deze nummers zijn opgenomen in het app-manifest. 
+
+Intune|iOS|Android|Beschrijving|
+|---|---|---|---|
+Versienummer|CFBundleShortVersionString|PackageVersionName |Dit nummer geeft een specifieke release van de app aan voor eindgebruikers.|
+Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iteratie in de app-code aangegeven.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    Hiermee wordt het releaseversienummer van de bundel opgegeven. Dit nummer duidt een releaseversie van de app aan. Met dit nummer kunnen eindgebruikers aan de app refereren.
+ - **CFBundleVersion**  
+    De buildversie van de bundel, die een iteratie van de bundel aanduidt. Het nummer duidt eventueel een release of een releasebundel aan. Met dit nummer vindt detectie van apps plaats.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    Het versienummer dat zichtbaar is voor gebruikers. Dit kenmerk kan als onbewerkte tekenreeks of als referentie aan een tekenreeksbron worden ingesteld. De tekenreeks is enkel bedoeld om aan gebruikers te worden getoond.
+ - **PackageVersionCode**  
+    Een intern versienummer. Dit nummer wordt alleen gebruikt om te bepalen of een versie meer recent is dan een andere, waarbij hogere nummers meer recente versies aangeven. Dit is niet de versie 
 
 ## <a name="next-steps-after-integration"></a>Vervolgstappen na de integratie
 

@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Gegevensoverdracht tussen iOS-apps beheren
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
@@ -30,6 +30,7 @@ Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestands
 -   U kunt apps ook implementeren en beheren via het **MDM-kanaal**.  Hiervoor is vereist dat apparaten zijn ingeschreven in de MDM-oplossing. Dit kunnen **door beleid beheerde** apps of andere beheerde apps zijn.
 
 De functie **Openen in beheer** voor iOS-apparaten beperkt de bestandsoverdracht tussen apps die zijn geïmplementeerd via het **MDM-kanaal**. Beperkingen voor Openen in beheer worden ingesteld in de configuratie-instellingen en geïmplementeerd met behulp van uw MDM-oplossing.  Wanneer de gebruiker de geïmplementeerde app installeert, worden de door u ingestelde beperkingen toegepast.
+
 ##  <a name="using-app-protection-with-ios-apps"></a>App-beveiliging gebruiken met iOS-apps
 Een app-beveiligingsbeleid kan worden gebruikt met de iOS-functie **Openen in beheer** om bedrijfsgegevens op de volgende manieren te beveiligen:
 
@@ -40,30 +41,25 @@ Een app-beveiligingsbeleid kan worden gebruikt met de iOS-functie **Openen in be
 -   **Apparaten die worden beheerd met een MDM-oplossing van derden:** met behulp van de iOS-functie **Openen in beheer** kunt u de gegevensoverdracht beperken tot alleen beheerde apps.
 Als u ervoor wilt zorgen dat apps die u implementeert met behulp van de MDM-oplossing van derden ook onderhevig zijn aan het app-beveiligingsbeleid dat u in Intune hebt geconfigureerd, configureert u de UPN-gebruikersinstelling zoals beschreven in het overzicht [UPN-gebruikersinstelling configureren](#configure-user-upn-setting-for-third-party-emm).  Wanneer apps zijn geïmplementeerd met de UPN-gebruikersinstelling, wordt het app-beveiligingsbeleid toegepast op de app wanneer de eindgebruiker zich aanmeldt met zijn of haar werkaccount.
 
-> [!IMPORTANT]
-> De UPN-gebruikersinstelling is alleen vereist voor apps die zijn geïmplementeerd op apparaten die worden beheerd door een MDM-oplossing van derden.  Deze instelling is niet vereist voor apparaten die worden beheerd met Intune.
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>UPN-gebruikersinstelling voor EMM van derden configureren
-Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten die worden beheerd door een EMM-oplossing van derden. De procedure die hieronder wordt beschreven, is een algemene werkstroom voor het configureren van de UPN-instelling en de daaruit voortvloeiende eindgebruikerservaring:
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>UPN-gebruikersinstelling configureren voor Microsoft Intune of EMM van derden
+Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten die worden beheerd door Intune of een EMM-oplossing van derden. De procedure die hieronder wordt beschreven, is een algemene werkstroom voor het configureren van de UPN-instelling en de daaruit voortvloeiende eindgebruikerservaring:
 
 1.  In [Azure Portal](https://portal.azure.com) [maakt u beveiligingsbeleid voor apps en wijst u dit toe](app-protection-policies.md) voor iOS. Configureer beleidsinstellingen via de bedrijfsvereisten en selecteer de iOS-apps waarop dit beleid van toepassing moet zijn.
 
-2.  Implementeer de apps en e-mailprofielen die u wilt laten beheren **via de MDM-oplossing van derden** met behulp van de algemene stappen hieronder. Deze ervaring wordt ook getoond in voorbeeld 1.
+2.  Implementeer de apps en e-mailprofielen die u wilt laten beheren via Intune of de MDM-oplossing van derden met behulp van de algemene stappen hieronder. Deze ervaring wordt ook getoond in voorbeeld 1.
 
-  1.  Implementeer de app met de volgende app-configuratie-instellingen:
+3.  Implementeer de app met de volgende app-configuratie-instellingen:
 
       **sleutel** = IntuneMAMUPN, **waarde** = <username@company.com>
 
       Voorbeeld: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Implementeer het beleid Openen in beheer met de MDM-provider van derden op ingeschreven apparaten.
+4.  Implementeer het beleid **Openen in beheer** met Intune of de MDM-provider van derden op ingeschreven apparaten.
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Voorbeeld 1: beheerervaring in MDM-console van derden
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Voorbeeld 1: beheerervaring in Intune of MDM-console van derden
 
-1. Ga naar de beheerconsole van uw MDM-provider van derden. Ga naar de sectie van de console waarin u configuratie-instellingen van toepassingen implementeert op ingeschreven iOS-apparaten.
+1. Ga naar de beheerconsole van Intune of uw MDM-provider van derden. Ga naar de sectie van de console waarin u configuratie-instellingen van toepassingen implementeert op ingeschreven iOS-apparaten.
 
 2. Voer in de sectie Toepassingsconfiguratie de volgende instelling in:
 
@@ -73,6 +69,7 @@ Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten 
 
 |MDM-provider van derden| Configuratiesleutel | Waardetype | Configuratiewaarde|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | Tekenreeks | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Tekenreeks | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Tekenreeks | ${userUPN} **of** ${userEmailAddress} |
 

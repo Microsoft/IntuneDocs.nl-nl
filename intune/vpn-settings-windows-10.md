@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4c2b865a7101a7486ecf9c9badbfb69d9efbeab
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6de18a341f684730c74aa824c0ae8f7bdca1a4f8
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 10-apparaten in Microsoft Intune
 
@@ -41,14 +41,16 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand).
 
 **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
-- **Pulse Secure**
-- **F5 Edge Client**
-- **Dell SonicWALL Mobile Connect**
-- **Check Point Capsule VPN**
 - **Automatisch**
+- **Check Point Capsule VPN**
+- **Citrix VPN**
+- **Dell SonicWALL Mobile Connect**
+- **F5 Edge Client**
 - **IKEv2**
 - **L2TP**
 - **PPTP**
+- **Pulse Secure**
+
 
 **Aanmeldingsgroep of -domein** (alleen Dell SonicWALL Mobile Connect): geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken.
 
