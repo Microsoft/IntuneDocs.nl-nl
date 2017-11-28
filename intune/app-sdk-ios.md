@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -95,6 +95,10 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
         > [!NOTE]
         > Voor het zoeken naar `PATH_TO_LIB`, selecteert u het bestand `libIntuneMAM.a` en kiest u **Get Info** in het menu **File**. Kopieer en plak de informatie onder **Where** (het pad) in het gedeelte **General** van het venster **Info**.
 
+    Voeg de resourcebundel `IntuneMAMResources.bundle` toe aan het project door deze binnen **Build Phases** naar **Copy Bundle Resources** te slepen.
+
+    ![Intune App SDK iOS: bundelresources kopiëren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. Voeg de volgende iOS-frameworks toe aan het project:
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. Voeg de resourcebundel `IntuneMAMResources.bundle` toe aan het project door deze binnen **Build Phases** naar **Copy Bundle Resources** te slepen.
-
-    ![Intune App SDK iOS: bundelresources kopiëren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. Als uw mobiele app een hoofd-nib of hoofd-storyboard definieert in het bestand Info.plist, verwijdert u het veld **Main Storyboard** of **Main Nib**. In Info.plist plakt u deze velden en de bijbehorende waarden in een nieuwe woordenlijst met de naam **IntuneMAMSettings** met de volgende sleutelnamen, voor zover van toepassing:
+4. Als uw mobiele app een hoofd-nib of hoofd-storyboard definieert in het bestand Info.plist, verwijdert u het veld **Main Storyboard** of **Main Nib**. In Info.plist plakt u deze velden en de bijbehorende waarden in een nieuwe woordenlijst met de naam **IntuneMAMSettings** met de volgende sleutelnamen, voor zover van toepassing:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
     U kunt info.plist in een onbewerkte indeling weergeven (om de sleutelnamen te bekijken) door met de rechtermuisknop op een willekeurige plaats in de hoofdtekst van het document te klikken, en het weergavetype te wijzigen in **Show Raw Keys/Values**.
 
-6. Schakel het delen van sleutelhangers in (indien nog niet ingeschakeld) door in elk projectdoel op **Capabilities** te klikken en de schakelaar **Keychain Sharing** in te schakelen. Het delen van sleutelhangers is vereist als u wilt doorgaan met de volgende stap.
+5. Schakel het delen van sleutelhangers in (indien nog niet ingeschakeld) door in elk projectdoel op **Capabilities** te klikken en de schakelaar **Keychain Sharing** in te schakelen. Het delen van sleutelhangers is vereist als u wilt doorgaan met de volgende stap.
 
   > [!NOTE]
     > Uw inrichtingsprofiel moet ondersteuning bieden voor nieuwe waarden voor het delen van sleutelhangers. De toegangsgroepen van de sleutelhanger moeten een jokerteken ondersteunen. U kunt dit controleren door het bestand .mobileprovision in een teksteditor te openen, te zoeken naar **keychain-access-groups** en te controleren of u een jokerteken ziet. Bijvoorbeeld:
@@ -132,7 +131,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
     </array>
     ```
 
-7. Nadat u het delen van sleutelketens hebt ingeschakeld, volgt u deze stappen voor het maken van een afzonderlijke toegangsgroep waarin de gegevens van de Intune App SDK worden opgeslagen. U kunt een toegangsgroep voor de sleutelhanger maken via de gebruikersinterface of met behulp van het rechtenbestand. Als u de toegangsgroep voor de sleutelketen maakt met de gebruikersinterface, moet u de onderstaande stappen uitvoeren:
+6. Nadat u het delen van sleutelketens hebt ingeschakeld, volgt u deze stappen voor het maken van een afzonderlijke toegangsgroep waarin de gegevens van de Intune App SDK worden opgeslagen. U kunt een toegangsgroep voor de sleutelhanger maken via de gebruikersinterface of met behulp van het rechtenbestand. Als u de toegangsgroep voor de sleutelketen maakt met de gebruikersinterface, moet u de onderstaande stappen uitvoeren:
 
     1. Als uw mobiele app geen toegangsgroepen voor de sleutelhanger heeft gedefinieerd, moet u de bundel-id van de app toevoegen als eerste groep.
 
@@ -140,24 +139,23 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
     3. Voeg `com.microsoft.adalcache` aan uw bestaande toegangsgroepen toe.
 
-        4. Voeg `com.microsoft.workplacejoin` aan uw bestaande toegangsgroepen toe.
-            ![Intune App SDK iOS: sleutelketen delen](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS: Sleutelhanger delen](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. Als u de toegangsgroep voor de sleutelketen maakt met het rechtenbestand, moet u de toegangsgroep voor de sleutelketen laten voorafgaan door `$(AppIdentifierPrefix)` in het rechtenbestand. Bijvoorbeeld:
+    4. Als u het rechtenbestand rechtstreeks wilt bewerken om toegangsgroepen voor de sleutelketen te maken, in plaats van met behulp van de Xcode-UI die hierboven wordt weergegeven, voegt u vóór de toegangsgroepen voor de sleutelketen `$(AppIdentifierPrefix)` toe (Xcode doet dit automatisch). Bijvoorbeeld:
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > Een rechtenbestand is een uniek XML-bestand voor uw mobiele toepassing. Het wordt gebruikt om speciale machtigingen en mogelijkheden in uw iOS-app op te geven.
+    > Een rechtenbestand is een uniek XML-bestand voor uw mobiele toepassing. Het wordt gebruikt om speciale machtigingen en mogelijkheden in uw iOS-app op te geven. Als uw app geen nog een rechtenbestand had, zou het inschakelen van het delen van de sleutelhanger (stap 6) ervoor moeten zorgen dat Xcode er één voor uw app genereert.
 
-8. Als er voor de app URL-schema's in het info.plist-bestand zijn gedefinieerd, voegt u een ander schema toe, met het achtervoegsel `-intunemam` voor elk URL-schema.
+7. Als er voor de app URL-schema's in het info.plist-bestand zijn gedefinieerd, voegt u een ander schema toe, met het achtervoegsel `-intunemam` voor elk URL-schema.
 
-9. Als in de app documenttypen in het bestand Info.plist worden gedefinieerd, voegt u voor elke Document Content Type UTIs-matrix van het item een dubbele vermelding toe voor elke tekenreeks met het voorvoegsel 'com.microsoft.intune.mam'.
+8. Als in de app documenttypen in het bestand Info.plist worden gedefinieerd, voegt u voor elke Document Content Type UTIs-matrix van het item een dubbele vermelding toe voor elke tekenreeks met het voorvoegsel 'com.microsoft.intune.mam'.
 
-10. Voor mobiele apps die met iOS 9+ zijn ontwikkeld, neemt u elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL`, op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Daarnaast moet u voor elk weergegeven protocol een nieuw protocol toevoegen met het achtervoegsel `-intunemam`. U moet ook `http-intunemam`, `https-intunemam`en `ms-outlook-intunemam` in de matrix opnemen.
+9. Voor mobiele apps die met iOS 9+ zijn ontwikkeld, neemt u elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL`, op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Daarnaast moet u voor elk weergegeven protocol een nieuw protocol toevoegen met het achtervoegsel `-intunemam`. U moet ook `http-intunemam`, `https-intunemam`en `ms-outlook-intunemam` in de matrix opnemen.
 
-11. Als er app-groepen in de rechten voor de app zijn gedefinieerd, voegt u deze groepen toe aan de woordenlijst **IntuneMAMSettings** onder de sleutel `AppGroupIdentifiers` als een matrix met tekenreeksen.
+10. Als er app-groepen in de rechten voor de app zijn gedefinieerd, voegt u deze groepen toe aan de woordenlijst **IntuneMAMSettings** onder de sleutel `AppGroupIdentifiers` als een matrix met tekenreeksen.
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Het hulpprogramma Intune MAM Configurator gebruiken
 
