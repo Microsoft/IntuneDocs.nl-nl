@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Android for Work-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **Wachtwoorden niet opnieuw gebruiken**: voer het aantal nieuwe wachtwoorden in dat moet zijn gebruikt voordat een oud wachtwoord opnieuw kan worden gebruikt (van **1**-**24**).
 - **Ontgrendelen met vingerafdruk**: blokkeren dat een eindgebruiker de vingerafdrukscanner van het apparaat gebruikt om het apparaat te ontgrendelen.
 - **Smart Lock en andere trustagenten**: hiermee kunt u de functie Smart Lock beheren op compatibele apparaten. Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het wachtwoord voor het vergrendelingsscherm op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt (bijvoorbeeld wanneer het is verbonden met een bepaald Bluetooth-apparaat, of wanneer het zich in de buurt van een NFC-tag bevindt). U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.
+
+## <a name="system-security"></a>Systeembeveiliging
+
+ - **Bedreigingenscan voor apps**: hiermee kunt u afdwingen dat de instelling **Apps controleren** is ingeschakeld voor zakelijke en privéprofielen.
+
+   > [!Note]  
+   > Deze instelling werkt alleen voor apparaten met Android O en later. 
 
 ## <a name="next-steps"></a>Volgende stappen
 
