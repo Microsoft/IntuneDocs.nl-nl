@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -100,8 +100,9 @@ De Intune-app Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.mi
 
 - Stel de interne toepassingen in via de toepassingsproxy van Azure AD.
     - Raadpleeg [deze documentatie]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
-    - U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
-    - Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser-app.
+- U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
+- Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser-app.
+Opmerking: Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Stap 1: automatische omleiding naar Managed Browser vanuit Outlook inschakelen
 Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de instelling **Webinhoud beperken voor weergave in de Managed Browser** beschikbaar komt.
@@ -218,6 +219,8 @@ U kunt de browser ook openen in de probleemoplossingsmodus vanuit de app.
 1. Open Managed Browser.
 2. Type `about:intunehelp` in het adresvak.
 De probleemoplossingsmodus van de Browser wordt gestart.
+
+Zie [Logboeken voor app-beveiliging in Managed Browser controleren](app-protection-policy-settings-log.md) voor een lijst met instellingen die worden opgeslagen in app-logboeken.
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Beveiliging en privacy voor Managed Browser
 

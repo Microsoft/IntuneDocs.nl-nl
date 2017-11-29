@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf?
 
@@ -36,7 +36,7 @@ Wanneer u een apparaat in beheer inschrijft, geeft u uw bedrijf toestemming om b
 
 **Wat uw bedrijf altijd kan zien**
 
-- Apparaatmodel, zoals iPhone 7
+- Apparaatmodel, zoals Google Pixel
 - Fabrikant, zoals Microsoft
 - Besturingssysteem, zoals iOS
 - App-namen, zoals Microsoft Word
@@ -48,4 +48,5 @@ Wanneer u een apparaat in beheer inschrijft, geeft u uw bedrijf toestemming om b
 
 -  Telefoonnummer: op apparaten die eigendom zijn van het **bedrijf** kan uw volledige telefoonnummer worden gezien. Van **persoonlijke** apparaten zijn alleen de laatste vier cijfers van uw telefoonnummer zichtbaar voor uw bedrijf. U kunt het **eigendomstype** van elk apparaat zien door de pagina **Apparaatdetails** voor het apparaat te openen.
 -  Locatie: uw bedrijf kan nooit de locatie van het apparaat zien, behalve als u een iOS-apparaat hebt dat onder controle staat en dat is kwijtgeraakt. [Hoe weet ik dat?](https://go.microsoft.com/fwlink/?linkid=853816)
-- App-inventaris: als uw bedrijf gebruikmaakt van Mobile Threat Defense, kunnen ze meer details weergeven over de apps die op uw apparaat zijn geïnstalleerd. Meer informatie over [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- App-inventaris: als uw bedrijf gebruikmaakt van Mobile Threat Defense, kunnen er meer details worden weergegeven over de apps die op uw iOS-apparaat zijn geïnstalleerd. Meer informatie over [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Netwerkgegevens: bepaalde informatie over netwerkverbindingen voor Android-apparaten kan voor de ondersteuning van uw bedrijf beschikbaar zijn. Als uw bedrijf bijvoorbeeld vereist dat apparaten binnen een bepaald gebouw blijven, herkent uw apparaat het netwerk waarmee het verbonden is. 

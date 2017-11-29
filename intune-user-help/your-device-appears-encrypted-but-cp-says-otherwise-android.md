@@ -1,11 +1,11 @@
 ---
-title: Uw Android-apparaat lijkt versleuteld te zijn
+title: Uw Android-apparaat lijkt versleuteld te zijn | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
-ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
+ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Uw Android-apparaat lijkt versleuteld te zijn, maar de Bedrijfsportal geeft anders aan
 
@@ -40,7 +40,7 @@ Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te
 
 Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
-### <a name="encrypt-the-entire-device"></a>Het hele apparaat versleutelen
+### <a name="encrypt-the-entire-device"></a>Versleutel het hele apparaat
 
 Op sommige apparaten kunt u kiezen of u het hele apparaat of alleen de gebruikte ruimte wilt versleutelen. Kies de optie om het hele apparaat te versleutelen in plaats van 'Alleen gebruikte ruimte'. Als u alleen de gebruikte ruimte al hebt versleuteld:
 
@@ -69,5 +69,7 @@ Als u een van de volgende apparaten hebt, kan dit probleem optreden als u uw app
 
 U kunt dit probleem niet oplossen voor de volgende apparaten. U moet wellicht een ander apparaat gebruiken voor toegang tot bedrijfsresources. 
 
-- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [OPPO-apparaten](http://www.oppo.com/en/smartphones)
+- [Vivo-apparaten](https://www.vivo.co.in)
 - [Xiaomi Mi-smartphones](https://xiaomi-mi.com/mi-smartphones/)

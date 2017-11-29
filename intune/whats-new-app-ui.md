@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
+## <a name="week-of-november-13-2017"></a>Week van 13 november 2017
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal voor iOS in versie 2.9.0 <!---1417174--->
+
+We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor iOS verbeterd. De taal is gebruiksvriendelijker en waar mogelijk hebben we schermen gecombineerd. We hebben de taal ook specifieker voor uw bedrijf gemaakt door overal in de installatietekst de naam van uw bedrijf te gebruiken.
+
+> [!NOTE]
+> We gebruiken de bedrijfsnaam die u hebt ingesteld in Azure Portal in **Microsoft Intune** > **Mobile Apps** > **Huisstijl voor bedrijfsportal**  >  **Bedrijfsnaam**. Als u deze waarde niet hebt ingesteld, gebruiken we de naam van de tenant die is ingesteld in **Azure Active Directory** > **Eigenschappen** > **Naam**. Als u geen bedrijfsnaam hebt ingesteld in Huisstijl voor bedrijfsportal en de tenantnaam niet wilt weergegeven, raden wij u aan de bedrijfsnaam in te stellen op het tabblad Huisstijl voor bedrijfsportal. Als u niet wilt dat deze tekenreeks wordt weergegeven in de koptekst in de bedrijfsportal, kunt u het selectievakje 'De bedrijfsnaam naast het logo weergeven' uitschakelen.
+
+|Voor|Na|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Gecombineerd met de vorige stap*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>Week van 6 november 2017
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Updates in de bedrijfsportal-app voor Windows 10 <!--1299474-->
+De pagina Instellingen in de bedrijfsportal-app voor Windows 10 is bijgewerkt, zodat de instellingen en de beoogde gebruikersacties consistenter zijn voor alle instellingen. De pagina komt nu ook beter overeen met de indeling van andere Windows-apps.
+
+|Voor|Na|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Verbeteringen voor de apps op de bedrijfsportal en website zoeken <!--1418189-->
 De bedrijfsportal-apps gebruiken nu zoekopdrachten in app-categorieën, namen en beschrijvingen. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. Deze updates zijn ook beschikbaar in de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt bijgehouden. Laat ons weten hoe het voor u werkt via de koppeling Feedback onderaan de bedrijfsportalwebsite.
-
-
 
 ## <a name="week-of-october-16-2017"></a>Week van 16 oktober 2017
 
@@ -45,10 +70,6 @@ We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Grote pictogrammen in bedrijfsportal voor iOS <!-- 1454593 -->
 Deze release bevat een oplossing voor een bekend probleem met de manier waarop de iOS-bedrijfsportal pictogrammen weergeeft in de app-tegel. Als u app-pictogrammen van minimaal 120x120 pixels uploadt, worden ze nu op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) en in de pagina’s van de iOS-bedrijfsportal-apps weergegeven op volledige grootte van de app-tegel.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>Week van 2 oktober 2017

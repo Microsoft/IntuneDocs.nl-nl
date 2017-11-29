@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7272c3d21674e4e0029cf49140638d9a3fd3306f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Uw wachtwoordcode instellen of wijzigen
 
@@ -38,7 +38,7 @@ Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet 
 
 1. Tik op **Instellingen** > **Touch ID en wachtwoordcode**.
 2. Voer uw wachtwoordcode in. Het menu **Touch ID en wachtwoordcode** wordt geopend.
-2. Tik op **Wachtwoordcode wijzigen** en voer het oude wachtwoord.
+2. Tik op **Wachtwoordcode wijzigen** en voer de oude wachtwoordcode in.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van het ondersteuningsteam van het bedrijf en geef de code nogmaals op om deze te verifiëren.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Uw Android-apparaat beveiligen met versleuteling
 
 Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnemen in een laag beschermende code die voorkomt dat onbevoegden toegang tot die informatie kunnen krijgen. Als eerste stap om uw informatie te beveiligen, vereist uw organisatie dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bedrijfsbestanden, e-mail of gegevens.
 
 > [!Note]
-> U wordt voorafgaand aan de versleuteling mogelijk gevraagd een pincode of wachtwoord in te stellen als het ondersteuningsteam van het bedrijf dit vereist.
+> Bepaalde Android-apparaten, waaronder enkele van Huawei en de apparaten van Vivo en OPPO, kunnen niet worden versleuteld. Zie [hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) voor meer informatie.
 
 Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
@@ -37,9 +37,6 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
     (Op bepaalde telefoons moet u **Opslag** > **Versleuteling van opslag** of op **Opslag** > **Schermvergrendeling en beveiliging** > **Overige beveiligingsinstellingen** kiezen om de optie 'Versleutelen' weer te geven).
 
 3.  Volg de instructies op het scherm. Tijdens het versleutelen kan het apparaat meerdere keren opnieuw opstarten.
-
-> [!Note]
-> Bepaalde Android-apparaten kunnen niet worden versleuteld. Zie [hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) voor meer informatie.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Wat te doen bij problemen
 **Probleem**: u hebt uw apparaat al versleuteld en wordt geconfronteerd met het volgende:
