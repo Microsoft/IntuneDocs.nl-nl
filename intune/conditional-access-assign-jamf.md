@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6184552ce901ffc062f0453f169ec992049ae69b
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: dd84812a7e7dcf83f01c8d4d2b613706f7700775
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
@@ -51,7 +51,7 @@ U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Mic
 7. Klik op **Add** om het pakket met de bedrijfsportal-app te selecteren.
 8. Kies **Install** in het contextmenu **Action**.
 9. Configureer de instellingen voor het pakket.
-10. Klik op het tabblad **Scope** om op te geven op welke computers de bedrijfsportal-app moet worden geïnstalleerd. Klik op **Save**. Door het beleid worden apparaten binnen het bereik uitgevoerd de volgende keer dat de geselecteerde trigger plaatsvindt op de computer en voldoet aan de criteria in de nettolading **General**.
+10. Klik op het tabblad **Scope** om op te geven op welke computers de bedrijfsportal-app moet worden geïnstalleerd. Klik op **Opslaan**. Door het beleid worden apparaten binnen het bereik uitgevoerd de volgende keer dat de geselecteerde trigger plaatsvindt op de computer en voldoet aan de criteria in de nettolading **General**.
 
 ## <a name="direct-your-users-to-register-jamf-pro-managed-devices-with-azure-active-directory"></a>Laat uw gebruikers door Jamf Pro beheerde apparaten registreren bij Azure Active Directory
 
@@ -63,4 +63,9 @@ Eindgebruikers moeten de bedrijfsportal-app via de selfservice van Jamf starten 
 1. Navigeer in Jamf Pro naar **Computers** > **Policies** en maak een nieuw beleid voor apparaatregistratie.
 2. Configureer de nettolading **Conditional Access**, met inbegrip van de frequentie voor triggers en uitvoering. Stel de prioriteit in op **After**.
 3. Klik op het tabblad **Scope** en pas het beleid toe op alle doelapparaten.
-4. Klik op het tabblad **Self Service** om het beleid beschikbaar te maken in de selfservice van Jamf. Neem het beleid op in de categorie **Device Compliance**. Klik op **Save**.
+4. Klik op het tabblad **Self Service** om het beleid beschikbaar te maken in de selfservice van Jamf. Neem het beleid op in de categorie **Device Compliance**. Klik op **Opslaan**.
+
+## <a name="next-steps"></a>Volgende stappen
+
+- [Voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Aan de slag met voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

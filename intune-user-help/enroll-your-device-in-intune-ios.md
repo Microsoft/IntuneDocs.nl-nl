@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Toegang tot uw bedrijfsbronnen instellen
 
@@ -48,7 +48,7 @@ Uw bedrijf heeft veel vertrouwelijke informatie in e-mail, bestanden, netwerken,
 |![Prompt voor Azure AD-wachtwoord.](./media/ios-0b-cp-enroll-1711.png)|Voer uw wachtwoord in en tik op **Aanmelden**.|
 |![Beginscherm voor laden van bedrijfsbronnen.](./media/ios-1-cp-enroll-1711.png)|Wacht totdat het laden is voltooid.|
 |![Voorwaarden.](./media/ios-2-cp-enroll-1711.png)|Lees en **ga akkoord met alle** voorwaarden.|
-|![Scherm voor instellen van bedrijfstoegang. Zowel het beheer als de instellingen moeten nog worden gedefinieerd.](./media/ios-3-cp-enroll-1711.png)|Tik op **Uw apparaat laten beheren** om ervoor te zorgen dat uw apparaat toegang kan krijgen tot bedrijfsbronnen. Als u dit nu nog niet kunt doen, kunt u het proces **Uitstellen**, maar dit betekent wel dat u geen e-mail, documenten en dergelijke kunt ophalen.|
+|![Scherm voor instellen van bedrijfstoegang. Zowel het beheer als de instellingen moeten nog worden gedefinieerd.](./media/ios-3-cp-enroll-1711.png)|Tik op **Starten** om ervoor te zorgen dat uw apparaat toegang kan krijgen tot bedrijfsbronnen. Als u dit nu nog niet kunt doen, kunt u het proces **Uitstellen**, maar dit betekent wel dat u geen e-mail, documenten en dergelijke kunt ophalen.|
 |![Scherm Wat kan mijn bedrijf zien.](./media/ios-4-cp-enroll-1711.png)|Lees **meer informatie** over wat uw bedrijf kan zien door op de koppeling onderaan te tikken. Tik anders op **Doorgaan**.|
 |![Scherm De volgende stap.](./media/ios-5-cp-enroll-1711.png)|In dit scherm kunt u zien wat er allemaal tijdens de installatie gebeurt. U gaat aan het werk in Safari, de app Instellingen en de bedrijfsportal-app om dit proces te voltooien. Tik op **Volgende**.|
 |![Laden van het scherm na tikken op Volgende in De volgende stap.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,11 +66,11 @@ Uw bedrijf heeft veel vertrouwelijke informatie in e-mail, bestanden, netwerken,
 |![Scherm voor laden van bedrijfsbronnen.](./media/ios-18-cp-enroll-1711.png)|Wacht totdat het laden is voltooid.|
 |![Selecteer de apparaatcategorie in de bedrijfsportal-app.](./media/ios-19-cp-enroll-1711.png)|Selecteer de beste categorie voor uw apparaat. Dit heeft meestal betrekking op wie de eigenaar van het apparaat is of waar het apparaat zich meestal bevindt.|
 |![Categorie geselecteerd.](./media/ios-20-cp-enroll-1711.png)||
-|![Apparaatbeheer is geslaagd. Nu moeten de instellingen nog worden bijgewerkt.](./media/ios-21-cp-enroll-1711.png)|U hebt nu het beheer van uw apparaat verkregen. Er zijn waarschijnlijk nog instellingen, zoals de lengte van uw wachtwoord, die voor uw bedrijf moeten worden aangepast. Tik op **Apparaatinstellingen bijwerken** om door te gaan.|
+|![Apparaatbeheer is geslaagd. Nu moeten de instellingen nog worden bijgewerkt.](./media/ios-21-cp-enroll-1711.png)|U hebt nu het beheer van uw apparaat verkregen. Er zijn waarschijnlijk nog instellingen, zoals de lengte van uw wachtwoord, die voor uw bedrijf moeten worden aangepast. Tik op **Doorgaan** om verder te gaan.|
 |![Apparaatinstellingen bevestigen.](./media/ios-22-cp-enroll-1711.png)|Bedrijfsportal controleert of er instellingen zijn die moeten worden bijgewerkt.|
 |![Controle van instellingen voltooid, met een onjuiste versie van het besturingssysteem](./media/ios-23-cp-enroll-1711.png)|Bedrijfsportal geeft instructies over hoe u problemen met uw instellingen kunt oplossen. Nadat de problemen zijn opgelost, tikt u op **Instellingen controleren**.|
 |![Laadscherm apparaatinstellingen bevestigen](./media/ios-24-cp-enroll-1711.png)|Uw apparaat controleert of uw instellingen veilig genoeg zijn voor toegang tot bedrijfsbronnen.|
-|![Instellingen ingeschreven en bijgewerkt](./media/ios-25-cp-enroll-1711.png)|Gefeliciteerd. Uw apparaat is nu geregistreerd bij Intune.|
+|![Instellingen ingeschreven en bijgewerkt](./media/ios-25-cp-enroll-1711.png)|Gefeliciteerd. Uw apparaat is nu ingeschreven bij Intune.|
 
 > [!Note]
 > U moet wellicht nog enkele andere stappen uitvoeren voordat het apparaat volledig is beheerd. Meer informatie over het [registreren van uw apparaat met Telecom-onkostenbeheer](enroll-your-device-with-telecom-expense-management-ios.md). Als uw organisatie Apple Device Enrollment Program gebruikt, meer, vindt u [hier](enroll-your-device-dep-ios.md) meer informatie.
