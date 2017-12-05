@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken
 
@@ -66,7 +66,7 @@ Als de EAS-record nieuw is en deze niet door Intune wordt herkend, wordt er een 
 
 2.  Als het apparaat niet wordt beheerd door Intune, wordt de toegang tot e-mail geblokkeerd. Intune verzendt een blokmelding naar de EAS-client.
 
-3.  EAS ontvangt de blokmelding ontvangt, waarna het apparaat in quarantaine wordt geplaatst. Vervolgens wordt de quarantaine-e-mail verzonden. Deze bevat herstelstappen met koppelingen, zodat de gebruikers hun apparaten kunnen registreren.
+3.  EAS ontvangt de blokmelding, waarna het apparaat in quarantaine wordt geplaatst. Vervolgens wordt de quarantaine-e-mail verzonden. Deze bevat herstelstappen met koppelingen, zodat de gebruikers hun apparaten kunnen registreren.
 
 4.  Het Workplace Join-proces wordt uitgevoerd. Dit is de eerste stap om een apparaat met Intune te beheren.
 
@@ -90,7 +90,7 @@ Met Intune wordt de apparaatstatus beoordeelt en beheert.
 
 De Exchange-server biedt de API en infrastructuur om apparaten naar in quarantaine te plaatsen.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Houd er rekening mee dat er nalevingsbeleid moet worden toegewezen aan de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden beoordeeld. Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat voldoet aan het beleid en worden er geen toegangsbeperkingen toegepast.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Voorwaardelijke toegang op basis van netwerktoegangsbeheer
@@ -107,7 +107,7 @@ Intune werkt samen met leveranciers van Mobile Threat Defense, die een beveiligi
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Hoe de integratie van Intune en Mobile Threat Defense werkt
 
-Wanneer de Mobile Threat Defense-agent op een mobiele apparaat is geïnstalleerd, kan de agent berichten over de nalevingsstatus naar Intune sturen om te rapporteren of er in het mobiele apparaat zelf een bedreiging is gevonden.
+Wanneer de Mobile Threat Defense-agent op een mobiel apparaat is geïnstalleerd, kan de agent berichten over de nalevingsstatus naar Intune sturen om te melden of er in het mobiele apparaat zelf een bedreiging is gevonden.
 
 De integratie van Intune en Mobile Threat Defense speelt een rol bij de beslissingen die op basis van de apparaatrisico's worden genomen voor de voorwaardelijke toegang.
 
@@ -127,7 +127,7 @@ Voorwaardelijke toegang voor pc's biedt vergelijkbare mogelijkheden als voor mob
 
     -   Is de pc versleuteld?
 
-    -   Is er schadelijke software geïnstalleerd? Is de pc up-to-date?
+    -   Is er malware geïnstalleerd? Is de pc up-to-date?
 
     -   Is het apparaat gekraakt of geroot?
 

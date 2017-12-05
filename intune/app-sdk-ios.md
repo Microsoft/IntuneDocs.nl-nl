@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 6d7b22c871ed1e62bfdc148f30fb832786baf294
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -172,9 +172,9 @@ Het hulpprogramma Intune MAM Configurator kan worden gebruikt om het volgende bi
 * De voor de app gedefinieerde URL-schema's in het info.plist-bestand met het achtervoegsel -intunemam voor elk URL-schema.
 * Een voor de app gedefinieerd documenttype in het bestand Info.plist voor elke Document Content Type UTIs-matrix van het item, voeg een dubbele vermelding toe voor elke tekenreeks met het voorvoegsel 'com.microsoft.intune.mam'.
 * App-groepen voor de app die in de rechten zijn gedefinieerd, voeg deze groepen toe aan de woordenlijst IntuneMAMSettings onder de sleutel AppGroupIdentitifiers als een matrix met tekenreeksen.
-
     
->[!NOTE] Als u dit hulpprogramma gebruikt in plaats van de handmatig info.plist, wordt u aangeraden deze telkens opnieuw uit te voeren wanneer er wijzigingen in de info.plist van uw app of de rechten zijn aangebracht.
+> [!Note]
+> Als u dit hulpprogramma gebruikt in plaats van de handmatig info.plist, wordt u aangeraden deze telkens opnieuw uit te voeren wanneer er wijzigingen in de info.plist van uw app of de rechten zijn aangebracht.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Authentication Library (ADAL) configureren
 

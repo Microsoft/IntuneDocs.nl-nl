@@ -5,7 +5,7 @@ keywords: Intune-datawarehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,26 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="data-warehouse-data-model"></a>Datawarehouse-gegevensmodel
 
-In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende mobiele omgeving.
+In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende omgeving van mobiele apparaten. De weergave bestaat uit items die in de tijd aan elkaar gerelateerd zijn.
 
-De gegevens die worden opgehaald uit uw tenant, worden toegevoegd aan een datawarehouse. Het datawarehouse bestaat uit een reeks entiteiten en relaties die relevant zijn voor het type vragen dat u wilt stellen. U kunt bijvoorbeeld kijken hoe vaak een intern ontwikkelde Android-toepassing per dag is geïnstalleerd in de afgelopen week om vast te stellen of er een stijgende trend van installaties is waar te nemen. De structuur van het datawarehouse stelt u in staat om inzicht te krijgen in uw mobiele omgeving. Bovendien kunt u met behulp van analyseprogramma's, zoals Microsoft Power BI, visualisaties en dynamische dashboards maken op basis van het datawarehouse-gegevensmodel.
+## <a name="things-entity-sets"></a>Dingen: entiteitsets
 
-De structuur van het Intune-datawarehouse maakt gebruik van een sterschema. In een sterschema worden feiten geordend volgens de dimensie tijd. Een *feit* in de context van het model is een kwantitatieve meting, zoals het aantal apparaten, het aantal apps of het tijdstip van inschrijving. Een *dimensie* in de context van het model is een set categorieën en hun hiërarchische relatie. Dagen worden bijvoorbeeld gegroepeerd in maanden en maanden worden gegroepeerd in jaren. Een model met een sterschema is geoptimaliseerd voor flexibiliteit en gegevensanalyse, zodat u de rapporten kunt maken die nodig zijn om een goed beeld te vormen van de steeds veranderende mobiele omgeving.
+De gegevens in het datawarehouse worden in de volgende algemene gebieden ingedeeld:
 
-De gegevens in het datawarehouse worden in de volgende algemene categorieën ingedeeld:
   -  Apps met ingeschakelde app-beveiliging en hun gebruik
   -  Ingeschreven apparaten, eigenschappen en inventarisatie
   -  App- en software-inventarisatie
   -  Apparaatconfiguratie en nalevingsbeleid
 
-**Entiteitsets van gegevensmodel**
-
-Entiteitsets zijn benoemde verzamelingen entiteiten in het gegevensmodel. Deze sets bevatten entiteiten die de gegevens definiëren die in het model worden verzameld. Elke entiteitset vormt een toegangspunt voor het datawarehouse-gegevensmodel. Het model bevat de volgende categorieën entiteiten:
+Deze gebieden omvatten de entiteiten, of dingen, die relevant zijn voor uw Intune-omgeving. Informatie over de entiteitsets kunt u vinden in de volgende onderwerpen:
 
   -  [App](reports-ref-application.md)
   -  [Datum](reports-ref-date.md)
@@ -45,4 +42,23 @@ Entiteitsets zijn benoemde verzamelingen entiteiten in het gegevensmodel. Deze s
   -  [Beleid](reports-ref-policy.md)
   -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
   -  [Gebruiker](reports-ref-user.md)
+  -  [Huidige gebruiker](reports-ref-current-user.md)
   -  [Associaties voor gebruikersapparaten](reports-ref-user-device.md)
+
+## <a name="relationships-star-schema-model"></a>Relaties: ster-schema-model
+
+Het datawarehouse groepeert de entiteiten in relaties die relevant zijn voor het type vragen dat u wilt stellen. U kunt bijvoorbeeld het aantal installaties van een intern ontwikkelde Android-toepassing bekijken. De structuur van het datawarehouse stelt u in staat om inzicht te krijgen in uw mobiele omgeving. Bovendien kunt u met behulp van analyseprogramma's, zoals Microsoft Power BI, visualisaties en dynamische dashboards maken op basis van het datawarehouse-gegevensmodel.
+
+De entiteiten en relaties maken gebruik van een ster-schema-model. In een sterschema worden feiten in verband gebracht met de dimensie tijd. Een *feit* in de context van het model is een kwantitatieve meting, zoals het aantal apparaten, het aantal apps of het tijdstip van inschrijving. Feitentabellen bevatten grote hoeveelheden gegevens. Omdat ze bijzonder groot kunnen worden, blijft informatie doorgaans maximaal 30 dagen behouden. Een *dimensie* voorzien de feiten van een context. Het feit meet wat er gebeurd is, terwijl de dimensies aangeven op wie het betrekking heeft. Dimensietabellen, zoals de tabel **Gebruiker**, zijn kleiner en kunnen gegevens langere tijd vasthouden dan feitentabellen. 
+
+Een model met een sterschema is geoptimaliseerd voor flexibiliteit en gegevensanalyse, zodat u de rapporten kunt maken die nodig zijn om een goed beeld te vormen van de steeds veranderende mobiele omgeving.
+
+## <a name="time-daily-snapshots"></a>Tijd: dagelijkse momentopnamen
+
+Het datawarehouse bevindt zich downstream van uw Intune-gegevens. Intune maakt dagelijks een momentopname om middernacht UTC en slaat de momentopname op in het datawarehouse. Hoelang de momentopnamen worden vastgehouden, verschilt per feitentabel. Voor sommige is dat zeven dagen, voor andere 30 dagen en voor weer andere zelfs nog langer.
+
+## <a name="next-steps"></a>Volgende stappen
+
+ - Zie [Levensduur gebruikers weergeven in Intune-datawarehouse](reports-ref-user-timeline.md) voor meer informatie over hoe het datawarehouse de levensduur van een gebruiker in Intune bijhoudt.
+ - Zie [Eerste datawarehouse maken](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) voor meer informatie over het werken met datawarehouses.
+ - Zie [Een nieuw Power BI-rapport maken door een gegevensset te importeren](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) voor meer informatie over het werken met Power BI en een datawarehouse. 

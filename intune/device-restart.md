@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 11/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea477d4cb402198b348e9a96628dd8d99330e98
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dde251482dd951200e5c1a7f19749ee863cd71b4
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Apparaten extern opnieuw opstarten met Intune
 
@@ -31,7 +31,10 @@ De apparaatactie **Opnieuw opstarten** zorgt ervoor dat het apparaat dat kiest, 
 
 - Windows: ondersteund op Windows 8.1 en hoger
 - Windows Phone: ondersteund op Windows 8.1 en hoger
-- iOS: niet ondersteund
+- iOS: ondersteund
+
+    > [!Note]  
+    > Deze opdracht vereist toegangsrechten tot apparaten onder supervisie en **Apparaatvergrendeling**. Het apparaat wordt onmiddellijk opnieuw opgestart. Met een toegangscode vergrendelde iOS-apparaten wordt niet opnieuw verbonden met een Wi-Fi-netwerk na opnieuw te zijn opgestart; na opnieuw te zijn opgestart kunnen deze mogelijk niet communiceren met de server.
 - macOS: niet ondersteund
 - Android: niet ondersteund
 

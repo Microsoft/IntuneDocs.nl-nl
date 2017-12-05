@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 68f9f6333cbe3e450027e64399e2c0375459f1ca
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="set-your-pin-or-password"></a>Uw pincode of wachtwoord instellen
 
@@ -28,9 +28,10 @@ Mogelijk vraagt het ondersteuningsteam van het bedrijf u op uw Android-apparaat 
 
 U kunt de volgende stappen gebruiken om een pincode of wachtwoord in te stellen.
 
-1.  Tik op **Instellingen** &gt; **Beveiliging** &gt; **Schermvergrendeling** &gt; **Wachtwoord**.
+1.  Tik op **Instellingen** > **Beveiliging** > **Schermvergrendeling** > **Wachtwoord**.
 
 2.  Kies en bevestig uw nieuwe wachtwoord.
 
+Voor bepaalde apparaten moet u naast het schermwachtwoord ook een opstartpincode instellen. U kunt dit probleem oplossen door in uw instellingen-app de locatie te zoeken waar u deze optie kunt inschakelen. Op de Samsung Galaxy S7 schakelt u Beveiligd opstarten bijvoorbeeld in bij **Instellingen** > **Vergrendelscherm en beveiliging** > **Beveiligd opstarten**. [Hier](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise) kunt u meer informatie daarover vinden. 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
