@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -125,13 +125,13 @@ Nadat u de apps hebt toegevoegd die u wilt beveiligen met WIP, moet u een beveil
 
 ### <a name="before-you-begin"></a>Voordat u begint
 
-WIP Learning is een rapport waarmee u voor WIP onbekende apps in de gaten kunt houden. Onbekende apps zijn apps die niet zijn geïmplementeerd door de IT-afdeling van uw organisatie. U kunt deze apps uit het rapport exporteren en toevoegen aan uw WIP-beleid om te voorkomen dat de productiviteit wordt onderbroken voordat WIP in de modus Verbergen negeren wordt afgedwongen.
+WIP Learning is een rapport waarmee u voor WIP onbekende apps in de gaten kunt houden. Onbekende apps zijn apps die niet zijn geïmplementeerd door de IT-afdeling van uw organisatie. U kunt deze apps uit het rapport exporteren en toevoegen aan uw WIP-beleid om te voorkomen dat de productiviteit wordt onderbroken voordat WIP in de modus Blokkeren wordt afgedwongen.
 
-Het wordt aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met toegestane apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Onderdrukkingen verbergen**.
+Het wordt aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met toegestane apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Blokkeren**.
 
 ### <a name="what-are-the-protection-modes"></a>Wat zijn de beveiligingsmodi ?
 
-#### <a name="hide-overrides"></a>Onderdrukkingen verbergen
+#### <a name="block"></a>Blokkeren
 WIP zoekt naar ongeschikte gegevensuitwisselingsprocedures en zorgt ervoor dat de gebruiker de actie niet verder kan uitvoeren. Dit betreft ook gegevens in niet-zakelijke beveiligde apps en bedrijfsgegevens van personen en apparaten die buiten uw organisatie worden gedeeld.
 
 #### <a name="allow-overrides"></a>Onderdrukkingen toestaan

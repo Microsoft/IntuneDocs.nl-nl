@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
@@ -192,8 +192,9 @@ U ondertekent en implementeer de app als volgt:
 
 |Parameter | Beschrijving|
 | ------------- | ------------- |
-|InputWin10AppxBundle |Het pad naar het bron-appxbundle-bestand |
-|OutputWin10AppxBundle |Het uitvoerpad voor het ondertekende appxbundle-bestand.  Win81Appx Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).|
+|InputWin10AppxBundle |Het pad naar het bron-appxbundle-bestand. |
+|OutputWin10AppxBundle |Het uitvoerpad voor het ondertekende appxbundle-bestand. |
+|Win81Appx | Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).|
 |PfxFilePath |Het pad naar het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec (het PFX-bestand). |
 |PfxPassword| Het wachtwoord voor het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec. |
 |PublisherId |De uitgevers-id van de onderneming. Als deze niet is opgegeven, wordt het veld Onderwerp van Symantec Enterprise-certificaat voor ondertekening van mobiele code gebruikt.|

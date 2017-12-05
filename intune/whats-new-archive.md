@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3462c6c418ed48991f58e0ccf2e09f2df8b48410
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 5b935f4dc3def1c7b22298f3ec9105e0b2f306d8
+ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 
@@ -361,7 +361,7 @@ Er zijn nieuwe [Instellingen beperkingen voor Windows-apparaten](device-restrict
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>Updates voor de certificaatconfiguratie <!-- 918991 and 823198 -->
 Wanneer u een SCEP-certificaatprofiel maakt voor **indeling van de onderwerpnaam**, is de **aangepaste** optie beschikbaar voor iOS-, Android- en Windows-apparaten. Voor deze update was het veld **aangepast** beschikbaar voor iOS-apparaten. Zie [Een SCEP-certificaatprofiel maken] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile) voor meer informatie.
 
-Wanneer u een PKCS certificaatprofiel maakt, is voor **Alternatieve naam voor onderwerp** het **Aangepaste Azure AD-kenmerk** beschikbaar. De optie **Afdeling** is beschikbaar wanneer u **Aangepast Azure AD-kenmerk** selecteert. Zie [Een PKCS-certificaatprofiel maken] (certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile) voor meer informatie.
+Wanneer u een PKCS certificaatprofiel maakt, is voor **Alternatieve naam voor onderwerp** het **Aangepaste Azure AD-kenmerk** beschikbaar. De optie **Afdeling** is beschikbaar wanneer u **Aangepast Azure AD-kenmerk** selecteert. Zie [Een PKCS-certificaatprofiel maken](certficates-pfx-configure.md#create-a-device-configuration-profile) voor meer informatie.
 
 #### <a name="configure-multiple-apps-that-can-run-when-an-android-device-is-in-kiosk-mode----662059---"></a>Meerdere apps configureren die kunnen worden uitgevoerd wanneer een Android-apparaat in kioskmodus wordt uitgevoerd <!-- 662059 -->
 Voorheen kon u slechts één app configureren die mocht worden uitgevoerd op een Android-apparaat dat in kioskmodus wordt uitgevoerd. U kunt nu meerdere apps configureren met de app-ID, de URL van de store of door een Android-app te selecteren die u al beheert. Zie [Instellingen voor kioskmodus](device-restrictions-android.md#kiosk) voor meer informatie.
