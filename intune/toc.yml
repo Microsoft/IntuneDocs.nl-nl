@@ -284,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: Gedeelde apparaten voor iOS
               href: shared-device-settings-ios.md
+            - name: Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
+              href: sso-ios.md
             - name: Filterinstellingen voor webinhoud in iOS
               href: web-content-filter-settings-ios.md
         - name: Apparaatbeperkingen configureren
