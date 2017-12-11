@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b37ffd23f8cf8764ba457b0803dfc308cf1c071
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -58,14 +58,14 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 2. Klik op **+Nieuwe toepassing registreren**.
 3. Voer een **weergavenaam** in, zoals **Voorwaardelijke toegang tot Jamf**.
 4. Selecteer **Web-app/API**.
-5. Geef de **Aanmeldings-URL** voor Jamf Pro op.
+5. Geef de **aanmeldings-URL** op met behulp van de URL van uw Jamf Pro-exemplaar.
 6. Klik op **Toepassing maken**.
-7. Sla de zojuist gemaakte **Toepassings-id** op en open **Alle instellingen** > **Sleutels** om een nieuwe toepassingssleutel te maken. Sla de toepassingssleutel op.
+7. Sla de zojuist gemaakte **Toepassings-id** op, open **Instellingen** en navigeer naar **API-toegang** > **Sleutels** om een nieuwe toepassingssleutel te maken. Voer een **beschrijving** in en de tijd waarna de toepassingssleutel **verloopt**, en sla de toepassingssleutel vervolgens op. 
 
-  > [!NOTE]
+  > [!IMPORTANT]
   > De toepassingssleutel wordt tijdens dit proces maar één keer weergegeven. Bewaar de sleutel op een locatie waar u deze eenvoudig kunt terugvinden.
 
-8. Navigeer naar **Alle instellingen** > **API-toegang** > **Vereiste machtigingen** en verwijder alle machtigingen.
+8. Open **Instellingen**, navigeer naar **API-toegang** > **Vereiste machtigingen** en verwijder alle machtigingen.
 
   > [!NOTE]
   > Voeg een nieuwe vereiste machtiging toe. De toepassing kan alleen juist werken als die ene vereiste machtiging is ingesteld.
@@ -79,16 +79,20 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune instellen op integratie met Jamf Pro
 
-1. In Microsoft Azure Portal opent u **Microsoft Intune** > **Apparaatcompatibiliteit** > **Nalevingsconnector voor Jamf**.
+1. In Microsoft Azure Portal opent u **Microsoft Intune** > **Apparaatcompatibiliteit** > **Partnerapparaatbeheer**.
 2. Schakel de Nalevingsconnector voor Jamf in door de toepassings-id te plakken in het veld **Azure Active Directory-app-id**.
 3. Klik op **Opslaan**.
 
-## <a name="configure-conditional-access-in-jamf-pro"></a>Voorwaardelijke toegang in Jamf Pro configureren
+## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Microsoft Intune-integratie in Jamf Pro configureren
 
-1. Navigeer in Jamf Pro naar **Global Management** > **Conditional Access**. Klik op de knop **Edit** op het tabblad **Microsoft**.
-2. Schakel het selectievakje **Enable Conditional Access with Microsoft** in.
+1. Navigeer in Jamf Pro naar **Global Management** > **Conditional Access**. Klik op de knop **Edit** op het tabblad **Microsoft Intune Integration**.
+2. Schakel het selectievakje voor **Enable Microsoft Intune Integration** in.
 3. Geef de vereiste gegevens op over uw Azure-tenant, met inbegrip van **Location**, **Domain name**, plus de **Application ID** en de **Application Key** die u in de vorige stappen hebt opgeslagen.
-4. Klik op **Save**. Jamf Pro test uw instellingen en bevestigt of ze juist zijn.
+4. Klik op **Opslaan**. Jamf Pro test uw instellingen en bevestigt of ze juist zijn.
+
+## <a name="set-up-compliance-policies-and-register-devices"></a>Nalevingsbeleid instellen en apparaten registreren
+
+Nadat u de integratie tussen Intune en Jamf hebt geconfigureerd, moet u [nalevingsbeleid toepassen op door Jamf beheerde apparaten](conditional-access-assign-jamf.md).
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>Informatie die door Jamf Pro wordt gedeeld met Intune
 

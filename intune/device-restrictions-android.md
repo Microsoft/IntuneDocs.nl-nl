@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- en Samsung KNOX Standard-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -42,7 +42,7 @@ Gebruik deze instellingen met een restrictiebeleid voor Android-apparaten om app
 - **Schermafbeelding (alleen voor Samsung KNOX)**: hiermee staat u de gebruiker toe om de inhoud van het scherm vast te leggen als afbeelding.
 - **Spraakassistent (alleen voor Samsung KNOX)**: hiermee staat u het gebruik van spraakassistent-software op het apparaat toe.
 - **YouTube (alleen voor Samsung KNOX)**: hiermee staat u het gebruik van YouTube op het apparaat toe.
-- **Gedeelde apparaten**: hiermee kunt u een beheerd Samsung KNOX Standard-apparaat configureren als een gedeeld apparaat. In deze modus kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.<br>Wanneer eindgebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.
+- **Gedeelde apparaten (alleen voor Samsung KNOX)**: hiermee kunt u een beheerd Samsung KNOX Standard-apparaat configureren als een gedeeld apparaat. In deze modus kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.<br>Wanneer deze functie wordt gebruikt in combinatie met een SCEP-certificaatprofiel, zorgt u er hiermee voor dat eindgebruikers met hun eigen SCEP-gebruikerscertificaat een apparaat met dezelfde set van apps kunnen delen voor alle gebruikers.  Wanneer ze zich afmelden, worden alle app-gegevens gewist.  Deze functie is beperkt tot LOB-apps.
 
 ## <a name="password"></a>Wachtwoord
 

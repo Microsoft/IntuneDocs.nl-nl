@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f0d518edc26c382d6df71b95b84328eb375baf6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e9e511cef22fdfc8e2975bd14f7b969067317a44
+ms.sourcegitcommit: 2ad0d88d3ef5b81563c6a54eaf52f09e126abeaf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Certificaten configureren in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze verbindingen verifiëren door certificaten te gebruiken. Hierdoor zijn er geen gebruikersnamen en wachtwoorden meer nodig voor het verifiëren verbindingen.
+Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze verbindingen verifiëren door certificaten te gebruiken. Wanneer u certificaten gebruikt, hoeft u geen gebruikersnamen en wachtwoorden op te geven om verbindingen te verifiëren.
 
 Met Intune kunt u deze certificaten toewijzen aan apparaten die u beheert. Intune ondersteunt het toewijzen en beheren van de volgende typen certificaten:
 
@@ -45,27 +45,30 @@ Elk van deze typen certificaten heeft eigen voorwaarden en infrastructuurvereist
     - Windows 8.1 en hoger
     - Windows Phone 8.1 en hoger
     - Windows 10 en hoger
-3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-F. U kunt een **PKCS**- of **SCEP**-certificaatprofiel maken en toewijzen voor apparaten op de volgende platformen:
-    - iOS 8.0 en hoger
-    - Android 4.0 en hoger
-    - Android for Work
-    - Windows 10 (Desktop en Mobile) en hoger
+3. Maak certificaatprofielen zodat apparaten een certificaat aanvragen ten behoeve van verificatie van toegang per e-mail, VPN en Wi-F.
 
-    U kunt alleen een SCEP-certificaatprofiel gebruiken voor de volgende platformen:
+   U kunt een **PKCS**- of **SCEP**-certificaatprofiel maken en toewijzen voor apparaten op de volgende platformen:
 
--   macOS 10.9 of hoger
--   Windows Phone 8.1 en hoger
+   - iOS 8.0 en hoger
+   - Android 4.0 en hoger
+   - Android for Work
+   - Windows 10 (Desktop en Mobile) en hoger
+
+   U kunt alleen een **SCEP-certificaatprofiel** gebruiken voor apparaten met de volgende platformen:
+
+   - macOS 10.9 of hoger
+   - Windows Phone 8.1 en hoger
 
 U moet voor elk apparaatplatform een afzonderlijk profiel maken. Wanneer u het profiel maakt, koppelt u dit aan het vertrouwde basiscertificaatprofiel dat u al hebt gemaakt.
 
 ### <a name="further-considerations"></a>Verdere overwegingen
 
 - Als u geen bedrijfscertificeringsinstantie hebt, moet u er een maken.
-- Als u op basis van uw apparaatplatformen besluit het SCEP-profiel (Simplified Certificate Enrollment Protocol) te gebruiken, moet u ook een NDES-server (Network Device Enrollment Service) configureren.
+- U moet ook een NDES-server (Network Device Enrollment Service) configureren als u SCEP-profielen gebruikt.
 - Bovendien moet u de Microsoft Intune-certificaatconnector downloaden en configureren, ongeacht of u SCEP-profielen of PKCS-profielen wilt gebruiken.
 
 
-## <a name="step-1--configure-your-certificate-infrastructure"></a>Stap 1: uw certificaatinfrastructuur configureren
+## <a name="step-1-configure-your-certificate-infrastructure"></a>Stap 1: uw certificaatinfrastructuur configureren
 
 Zie een van de volgende onderwerpen voor meer informatie over het configureren van de infrastructuur voor elk type certificaatprofiel:
 
@@ -73,7 +76,7 @@ Zie een van de volgende onderwerpen voor meer informatie over het configureren v
 - [PKCS-certificaten configureren en beheren met Intune](certficates-pfx-configure.md)
 
 
-## <a name="step-2---export-your-trusted-root-ca-certificate"></a>Stap 2: uw vertrouwde basis-CA-certificaat exporteren
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Stap 2: uw vertrouwde basis-CA-certificaat exporteren
 
 Exporteer het certificaat van vertrouwde basiscertificeringsinstanties (CA) als een **.cer** -bestand van de verlenende CA of van een apparaat dat uw verlenende CA vertrouwt. Exporteer de persoonlijke sleutel niet.
 

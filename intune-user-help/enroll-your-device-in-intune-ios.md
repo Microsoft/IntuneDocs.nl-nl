@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Toegang tot uw bedrijfsbronnen instellen
 
@@ -36,7 +36,7 @@ Uw bedrijf heeft veel vertrouwelijke informatie in e-mail, bestanden, netwerken,
 - Zorg ervoor dat het hele proces voltooid is voordat u begint. Als u langer dan een paar minuten pauzeert, wordt de voortgang gewoonlijk afgebroken, waarna u opnieuw moet beginnen.
 - Als dit proces mislukt, moet u terugkeren naar de bedrijfsportal-app en het opnieuw proberen.
 - Zorg ervoor dat uw Wi-Fi werkt en dat Safari op uw apparaat werkt.
-- Download [de Intune-bedrijfsportal-app, installeer deze en meld u aan](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Download en installeer de [Intune-bedrijfsportal-app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>De bedrijfsportal-app gebruiken om toegang tot bedrijfsbronnen in te stellen
