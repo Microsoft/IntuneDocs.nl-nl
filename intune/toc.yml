@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: Gegevenslekken op niet-beheerde apparaten voorkomen
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: MDM en MAM vergelijken
+          href: byod-technology-decisions.md
     - name: Migratiehandleiding
       href: migration-guide.md
       items:
