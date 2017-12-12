@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c35c04f893e857ada04445611533c6b0f408d2dc
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 3e9331a4ea77aae289d647a801ce4ed9d1ecfcb7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw macOS-apparaat bij Intune inschrijft?
 
@@ -62,4 +62,4 @@ Wanneer het apparaat is geregistreerd, kan het ondersteuningsteam van het bedrij
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

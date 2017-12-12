@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2aa8ee8803e3001abeb8da92fb61c93c81ffb135
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Fouten naar het ondersteuningsteam van uw bedrijf verzenden wanneer u problemen ondervindt met uw iOS-apparaat
 
@@ -32,4 +32,4 @@ Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw iOS-a
 
 -   Zorg ervoor dat u in de bedrijfsportal-app bent, schud het apparaat heen en weer en tik op **Diagnostisch rapport verzenden** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, open dan **Instellingen** > **Bedrijfsportal** en controleer of de optie **Schudden** is ingeschakeld.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cf43ed13b852cccbce44e2a31890e164e3519490
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 1c1ade50ff6a458633598d2788d176dd79cbfebd
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
@@ -129,4 +129,4 @@ Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchron
 
    Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven tot het apparaat is gesynchroniseerd.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

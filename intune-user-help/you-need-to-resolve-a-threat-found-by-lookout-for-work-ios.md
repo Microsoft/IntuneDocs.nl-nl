@@ -14,11 +14,11 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 6cfc144b188b1701a2e5e599af43d12c98d48496
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Een bedreiging oplossen die met Lookout for Work is gevonden
 
@@ -34,7 +34,7 @@ Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat 
 
 ![Lookout for Work-foutbericht met een koppeling naar website van de bedrijfsportal](./media/mtd-go-to-device-management-portal-android.png)
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Voorbeeld van een app die door Lookout for Work als een bedreiging wordt gezien
 
@@ -46,5 +46,5 @@ Als u dit ziet, tikt u op de naam van de app bovenaan het scherm en volgt u de i
 
 Nadat u de app hebt verwijderd, hebt u direct weer toegang tot uw e-mail en andere gegevens van uw bedrijf of school. Als u de app niet verwijdert, hebt u geen toegang meer tot uw bedrijfs-e-mail en -gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
 

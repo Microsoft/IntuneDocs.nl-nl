@@ -3,8 +3,8 @@ title: Wi-Fi-instellingen voor macOS-apparaten in Intune
 titleSuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken om Wi-Fi-verbindingen op Mac OS-apparaten te configureren."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59659ffc4674d09ea4b2ed9800bd05c2545ecf05
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 1963f7e40e44c6e4f3ed920a991d22d5901b687a
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor macOS-apparaten in Microsoft Intune
 

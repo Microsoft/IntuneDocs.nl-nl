@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a52fdb4ae866722191dfbd176c8d2e6eb0747bb4
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: b22af8fca323e722f67e54b3c01493c8ab5f27a4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
 
@@ -52,4 +52,4 @@ Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
 -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

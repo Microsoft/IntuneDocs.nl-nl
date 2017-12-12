@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Veelvoorkomende problemen met uw Android-apparaat herstellen
 
-Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+Soms kunnen er problemen optreden met uw Android-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [Naleving op uw Android-apparaat controleren](check-compliance-on-your-device-android.md)
 - [Uitgebreide logboekregistratie gebruiken zodat het ondersteuningsteam van het bedrijf problemen met het apparaat kan oplossen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

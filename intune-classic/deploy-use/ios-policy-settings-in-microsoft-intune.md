@@ -2,8 +2,8 @@
 title: Beleidsinstellingen voor iOS
 description: Maak beleid waarmee instellingen en functies worden beheerd op iOS-apparaten die u met Intune beheert.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 58be7ad24da7e4eadc1c67016979396114799bd8
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Instellingen voor iOS-beleid in Microsoft Intune
 

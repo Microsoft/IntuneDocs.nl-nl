@@ -14,11 +14,11 @@ ms.assetid: 902bb538-d30a-44e4-80e1-7ae34e6a605d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 487c107b85f5146b5c286b8b363b35979cc0ca3f
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 25415ae809572de6ded8947799e55764d427e169
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Mobile Threat Defense installeren op uw Android-apparaat
 
@@ -31,4 +31,4 @@ Voordat u toegang tot uw werk kunt krijgen, moet u voor het ondersteuningsteam v
 
 **Als de installatie niet werkt**
 
-Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

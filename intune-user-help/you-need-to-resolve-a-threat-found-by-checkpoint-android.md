@@ -14,11 +14,11 @@ ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Een bedreiging oplossen die door SandBlast Mobile Protect is gevonden
 
@@ -30,7 +30,7 @@ Los het probleem op door de SandBlast Mobile Protect-app te openen en de instruc
 
 Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, wordt u in een bericht van SandBlast Mobile Protect gewaarschuwd dat u actie moet ondernemen.
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Voorbeeld van een app die door SandBlast Mobile Protect als een bedreiging wordt beschouwd
 
@@ -38,4 +38,4 @@ Als u een app hebt geïnstalleerd die door SandBlast Mobile Protect als een bedr
 
 Wanneer dit gebeurt, verwijdert u de app om direct weer toegang tot de e-mail en gegevens van uw bedrijf te krijgen. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

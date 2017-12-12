@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 656c2891a0f3c1b54d419f9d5dc3138126f7dc96
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Veelvoorkomende problemen met uw iOS-apparaat herstellen
 
-Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+Soms kunnen er problemen optreden met uw iOS-apparaat die zou kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [Ik moet opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 - [Ik wil fouten naar het ondersteuningsteam van mijn bedrijf verzenden](send-errors-to-your-it-admin-ios.md)

@@ -14,11 +14,11 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 46827fa3505fd8c4f2d767ba821ce9d84fc0d16d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 9bb4d39545964dd5c8e0bb5efe767e1315c7f6de
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Lookout for Work installeren op uw iOS-apparaat
 
@@ -54,5 +54,5 @@ Voordat u toegang tot uw werk kunt krijgen, moet uw bedrijf de Lookout for Work-
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit het geval is, installeert u Lookout for Work [handmatig vanuit de App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
 
