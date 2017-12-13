@@ -14,11 +14,11 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ef3b94251b324ed95d127cde5a58517747b3ea0b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Een bedreiging oplossen die is gevonden met Symantec Endpoint Protection Mobile
 
@@ -34,7 +34,7 @@ Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat 
 
 ![Skycure-foutbericht met een koppeling naar de website van de bedrijfsportal](./media/mtd-go-to-device-management-portal-android.png)
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Voorbeeld van een app die Symantec Endpoint Protection Mobile als een bedreiging ziet
 
@@ -44,5 +44,5 @@ Tik op de naam van de app boven in het scherm en volg de instructies voor het ve
 
 Nadat u de app hebt verwijderd, hebt u direct weer toegang tot uw e-mail en andere gegevens van uw bedrijf of school. Als u de app niet verwijdert, hebt u geen toegang meer tot uw bedrijfs-e-mail en -gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
 

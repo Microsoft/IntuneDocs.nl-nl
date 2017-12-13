@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 1b0d1df8e34a6a942a3fbb16baba4311fc1083d4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>U moet Code-integriteit inschakelen
 
@@ -33,4 +33,4 @@ Code-integriteit wordt automatisch ingeschakeld wanneer uw systeem actief gebrui
 
 Als u het idee hebt dat u in staat bent deze taak zelf uit te voeren, raadpleegt u de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u Beveiligd opstarten wilt inschakelen.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

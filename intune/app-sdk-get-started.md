@@ -2,9 +2,9 @@
 title: Aan de slag met de Microsoft Intune App SDK
 description: Maak uw mobiele app snel geschikt voor Mobile Application Management (MAM) met Microsoft Intune.
 keywords: 
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikre
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -115,7 +115,7 @@ Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
 * **SDK voor Intune-app voor Android**: telemetriegegevens worden niet geregistreerd via de SDK.
 
- Het versienummer van de line-of-business- app voor iOS en Android is zichtbaar <!-- 1380712 -->
+ Het versienummer van de line-of-business-app voor iOS en Android is zichtbaar <!-- 1380712 -->
 
 ## <a name="line-of-business-app-version-numbers"></a>Versienummers van line-of-business-apps
 

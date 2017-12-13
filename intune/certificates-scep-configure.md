@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -62,7 +62,7 @@ Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-t
 |**Certificaatsjabloon**|Configureer deze sjabloon op uw verlenende CA.|
 |**Clientverificatiecertificaat**|Dit certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert dit op de NDES-server.|
 |**Serververificatiecertificaat**|Dit SSL-certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert en verbindt dit in IIS op de NDES-server.|
-|**Vertrouwd basis-CA-certificaat**|U exporteert dit als een **CER-bestand** van de basis-CA of een ander apparaat dat de basis-CA vertrouwt, en wijst het toe aan apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
+|**Vertrouwd basis-CA-certificaat**|U exporteert dit certificaat als een **CER-bestand** van de basis-CA of een ander apparaat dat de basis-CA vertrouwt, en wijst het toe aan apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
 
 ### <a name="accounts"></a>Accounts
 
@@ -82,10 +82,6 @@ Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvo
 **Stap 4**: NDES configureren voor gebruik met Intune
 
 **Stap 5**: de Intune-certificaatconnector inschakelen, installeren en configureren
-
-> [!NOTE]
-> Gebruik vanwege een bekend probleem de volgende procedure om de certificaatconnector te downloaden, te installeren en te configureren: [Certificeringsinfrastructuur voor SCEP configureren -> Uw infrastructuur configureren -> Taak 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
-
 
 #### <a name="step-1---create-an-ndes-service-account"></a>Stap 1: een NDES-serviceaccount maken
 
@@ -168,7 +164,7 @@ In deze taak:
 
 
 
-   1.  U meldt zich als **ondernemingsbeheerder**aan op de server die als host voor NDES fungeert, en gebruikt vervolgens de [wizard Functies en onderdelen toevoegen](https://technet.microsoft.com/library/hh831809.aspx) om NDES te installeren:
+   1.  U meldt zich als **ondernemingsbeheerder** aan op de server die als host voor NDES fungeert, en gebruikt vervolgens de [wizard Functies en onderdelen toevoegen](https://technet.microsoft.com/library/hh831809.aspx) om NDES te installeren:
 
     1.  Selecteer in de wizard **Active Directory Certificate Services** om toegang te krijgen tot de AD CS-functieservices. Selecteer de **inschrijvingsservice voor netwerkapparaten**, schakel **Certificeringsinstantie**uit en voer vervolgens de wizard uit.
 
@@ -179,9 +175,9 @@ In deze taak:
 
         -   **Webserver** &gt; **Beveiliging** &gt; **Filtering aanvragen**
 
-        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 3.5**. Als ASP.NET 3.5 wordt geïnstalleerd, wordt ook .NET Framework 3.5 geïnstalleerd. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
+        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 3.5**. Als u ASP.NET 3.5 installeert, installeert u ook .NET Framework 3.5. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
 
-        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 4.5**. Als ASP.NET 4.5 wordt geïnstalleerd, wordt ook .NET Framework 4.5 geïnstalleerd. Als u .NET Framework 4.5 installeert, installeert u het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en **WCF-services** &gt; **HTTP-activering**.
+        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 4.5**. Als u ASP.NET 4.5 installeert, installeert u ook .NET Framework 4.5. Als u .NET Framework 4.5 installeert, installeert u het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en **WCF-services** &gt; **HTTP-activering**.
 
         -   **Beheerhulpprogramma's** &gt; **Compatibiliteit met IIS 6-beheer** &gt; **Compatibiliteit met IIS 6-metabase**
 
@@ -207,7 +203,7 @@ In deze taak:
 -   Configureert u aanvraagfiltering in IIS
 
 
-1.  Open op de NDES-server de wizard AD CS-configuratie en voer de volgende configuraties door.
+1.  Open op de NDES-server de wizard AD CS-configuratie en voer de volgende configuraties door:
 
     > [!TIP]
     > Als u op de koppeling in de vorige taak hebt geklikt, is deze wizard al geopend. Anders opent u Serverbeheer voor toegang tot post-implementatieconfiguratie voor Active Directory Certificate Services.
@@ -235,7 +231,7 @@ In deze taak:
     |Handtekening en versleuteling|GeneralPurposeTemplate|Sleutelcodering<br /><br />Digitale handtekening|
     Als het doel van uw certificaatsjabloon bijvoorbeeld **Versleuteling**is, bewerkt u de waarde **EncryptionTemplate** zo dat deze de naam van uw certificaatsjabloon is.
 
-3. De NDES-server ontvangt zeer lange URL's (query's) waarvoor u twee registervermeldingen moet toevoegen:
+3. De NDES-server ontvangt lange URL's (query's) waarvoor u twee registervermeldingen moet toevoegen:
 
     |Locatie|Waarde|Type|Gegevens|
     |-------|-----|----|----|
@@ -282,7 +278,7 @@ In deze taak:
 
 1.  Open op de NDES-server **IIS-beheer**, selecteer de **standaardwebsite** in het deelvenster **Verbindingen** en open vervolgens **Aanvraagfiltering**.
 
-2.  Klik op **Functie-instellingen bewerken**en stel het volgende in:
+2.  Klik op **Functie-instellingen bewerken**en stel de waarden in:
 
     **querytekenreeks (bytes)** = **65534**
 
@@ -298,14 +294,19 @@ In deze taak:
 
     Naam: **MaxRequestBytes**, met een decimale waarde van **65534**
 
-4.  Start de NDES-server opnieuw op. De server is nu klaar om de certificaatconnector te ondersteunen.
+4. Start de NDES-server opnieuw op. De server is nu klaar om de certificaatconnector te ondersteunen.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Stap 5: de Intune-certificaatconnector inschakelen, installeren en configureren
 In deze taak:
 
-Schakelt u de ondersteuning voor NDES in Intune in.
+- Schakelt u de ondersteuning voor NDES in Intune in.
 
-Downloadt, installeert en configureert u de certificaatconnector op de NDES-server.
+- Downloadt, installeert en configureert u de certificaatconnector op de NDES-server.
+
+   > [!NOTE]
+   > Voor hoge beschikbaarheid kunt u meerdere exemplaren van de certificaatconnector installeren.
+
+<!--1528104 we need to flesh out the HA recommendation in the note above -->
 
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Ondersteuning voor de certificaatconnector inschakelen
 
@@ -316,9 +317,6 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 5.  Selecteer **Certificaatconnector inschakelen**.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
-
-> [!NOTE]
-> Gebruik vanwege een bekend probleem de volgende procedure om de certificaatconnector te downloaden, te installeren en te configureren: [Certificeringsinfrastructuur voor SCEP configureren -> Uw infrastructuur configureren -> Taak 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
@@ -383,9 +381,11 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         - **Algemene naam**
         - **Algemene naam en e-mailadres**
         - **Algemene naam als e-mailadres**
+        - **IMEI (International Mobile Equipment Identity)**
+        - **Serienummer**
         - **Aangepast:** als u deze optie selecteert, wordt een ander veld van de vervolgkeuzelijst weergegeven. Met dit veld kunt u een indeling van de aangepaste onderwerpnaam invoeren. De twee variabelen die worden ondersteund voor de aangepaste indeling zijn **Algemene naam (CN)** en **E-mail (E)**. Met behulp van een combinatie van een of meerdere van deze variabelen en statische tekenreeksen kunt u een aangepaste indeling voor de onderwerpnaam maken, zoals: **CN={{UserName}},E={{EmailAddress}},OU=Mobiel,O=Financiële groep,L=Redmond,ST=Washington,C=VS** In dit voorbeeld hebt u een indeling voor een onderwerpnaam gemaakt die naast de CN- en E-variabelen tekenreeksen voor de waarden van de organisatie-eenheid, de organisatie, de locatie, de staat en het land gebruikt. [In dit onderwerp](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) worden de functie **CertStrToName** en de ondersteunde tekenreeksen gedemonstreerd.
         
-    - **Alternatieve onderwerpnaam**: geef op hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteerde, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat zal worden gebruikt om een Network Policy Server te verifiëren, dient u de alternatieve naam van het onderwerp op de UPN in te stellen. 
+    - **Alternatieve onderwerpnaam**: geef op hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteerde, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat wordt gebruikt om een Network Policy Server te verifiëren, dient u de alternatieve naam van het onderwerp op de UPN in te stellen. 
     - **Sleutelgebruik**: geef opties voor sleutelgebruik voor het certificaat op. U kunt kiezen uit de volgende opties: 
         - **Sleutelcodering**: sta alleen sleuteluitwisseling toe als de sleutel is gecodeerd. 
         - **Digitale handtekening**: sta alleen sleuteluitwisseling toe als een digitale handtekening de sleutel helpt beveiligen. 

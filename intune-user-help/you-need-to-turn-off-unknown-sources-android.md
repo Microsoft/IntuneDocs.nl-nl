@@ -14,11 +14,11 @@ ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 158bc0e18b427abcd73353cd41c3c57934eb45cb
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e3177d6cd7684662d26e827aa8640abb0ed1317c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>U moet onbekende bronnen uitschakelen
 
@@ -28,4 +28,4 @@ Als u het bericht De installatie vanuit onbekende bronnen moet worden uitgeschak
 
 Nadat u **Onbekende bronnen** uitschakelt, kan het enkele minuten duren voordat uw Android-apparaat weer kunt gebruiken voor het openen van bedrijfs- of schoolgegevens.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

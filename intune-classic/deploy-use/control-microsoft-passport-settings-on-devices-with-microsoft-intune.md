@@ -2,8 +2,8 @@
 title: Instellingen van Windows Hello voor Bedrijven beheren op apparaten
 description: Informatie over hoe Intune integreert met Windows Hello voor Bedrijven. Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2c3fc13a4dd2ae7d1f65f8cedfc9926910637744
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b7b3ab8b266ed4699b6982c26aca173244dc19d0
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="control-windows-hello-for-business-settings-on-devices-with-microsoft-intune"></a>Instellingen van Windows Hello voor Bedrijven beheren op apparaten met Microsoft Intune
 

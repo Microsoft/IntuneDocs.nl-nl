@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 115f32989cfbb991e097404c5297e7997f28f796
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>Uw oudere Mac OS-apparaat registreren bij Intune
 
@@ -28,7 +28,7 @@ Deze instructies werken voor macOS-apparaten op OS X Yosemite 10.10 en eerder. U
 
 Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie krijgt u uw werkzaamheden gedaan. Als u een Mac OS-apparaat op het werk gebruikt, betekent dit dat u een __beheerprofiel__ moet installeren. Dit is gewoon een bestand dat door het ondersteuningsteam van het bedrijf wordt ingesteld en dat instellingen laadt en toegang verkrijgt tot informatie op uw Mac. Wilt u meer weten? Lees [wat er gebeurt als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -66,4 +66,4 @@ Door toegang te verkrijgen tot de apps, gegevens en bronnen van uw organisatie k
 
 Bij sommige profielen kan staan dat ze **Niet geverifieerd** zijn; zolang ze van uw bedrijf zijn, is dit normaal.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

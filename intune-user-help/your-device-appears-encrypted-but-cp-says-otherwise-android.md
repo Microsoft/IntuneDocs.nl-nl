@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Uw Android-apparaat lijkt versleuteld te zijn, maar de Bedrijfsportal geeft anders aan
 
@@ -38,7 +38,7 @@ Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te
 
 ### <a name="downgrade-your-version-of-android"></a>Uw versie van Android downgraden
 
-Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ### <a name="encrypt-the-entire-device"></a>Versleutel het hele apparaat
 

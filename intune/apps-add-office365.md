@@ -1,5 +1,5 @@
 ---
-title: Office 365 ProPlus-app installeren op Windows 10-apparaten met Intune
+title: Office 365-apps installeren op mobiele apparaten met Intune
 titlesuffix: Azure portal
 description: Meer informatie over hoe u Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen.
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
-Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één app weergegeven in de lijst met apps in de Intune-console.
+Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -137,7 +137,3 @@ In de volgende tabel staan algemene foutcodes en de betekenis daarvan.
 ## <a name="next-steps"></a>Volgende stappen
 
 U kunt de apps nu toewijzen aan de gewenste groepen. Zie [Apps aan groepen toewijzen](/intune-azure/manage-apps/deploy-apps) voor hulp.
-
-             
-
-

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: b1836b0b910d597a78e936e6ac1ba7956fe3fe19
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>Naleving op uw Android-apparaat controleren
 
@@ -30,4 +30,4 @@ Als u al een tijd niet bij Intune heeft ingecheckt met uw apparaat, heeft u moge
 
 2. Tik op **Naleving controleren**.
 
-Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u het ondersteuningsteam van het bedrijf om dit voor u te doen. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u het ondersteuningsteam van het bedrijf om dit voor u te doen. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: 5aaefd6bfbff3394b4c0f79948ac23e32536f1e3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 
@@ -136,9 +136,10 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 ## <a name="sync-managed-devices"></a>Beheerde apparaten synchroniseren
 Nu Intune toestemming heeft om uw Apple School Manager-apparaten te beheren, kunt u Intune synchroniseren met de Apple-service om uw beheerde apparaten weer te geven in Intune.
 
-1. Kies in Intune in Azure Portal achtereenvolgens **Apparaatinschrijving** en **Apple-inschrijving**.
-2. Kies **Synchroniseren** onder **Apparaten voor het inschrijvingsprogramma**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
-3. Kies **Synchronisatie aanvragen** op de blade **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
+1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Apparaten voor het inschrijvingsprogramma** > **Synchroniseren** in Intune in Azure Portal. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
+
+  ![Schermopname van het geselecteerde knooppunt Apparaten voor het inschrijvingsprogramma en een pijl naar de koppeling Synchroniseren.](./media/enrollment-program-device-sync.png)
+2. Kies **Synchronisatie aanvragen** op de blade **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
 
   ![Schermopname van de blade Synchroniseren met een pijl naar de koppeling Synchronisatie aanvragen.](./media/enrollment-program-device-request-sync.png)
 

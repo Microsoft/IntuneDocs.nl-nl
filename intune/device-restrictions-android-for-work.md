@@ -3,8 +3,8 @@ title: Intune-apparaatbeperkingsinstellingen voor Android for Work
 titlesuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op Android for Work-apparaten.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Android for Work-apparaatbeperkingsinstellingen in Microsoft Intune
 

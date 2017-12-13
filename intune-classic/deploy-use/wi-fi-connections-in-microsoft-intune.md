@@ -2,8 +2,8 @@
 title: Wi-Fi-verbindingen
 description: Gebruik Wi-Fi-profielen om gebruikers verbinding te laten maken met uw Wi-Fi-netwerken.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d021abec31a38d7135828fbe06acd4a1a10ee42
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Apparaten configureren voor verbinding met uw Wi-Fi-bedrijfsnetwerken
 

@@ -3,8 +3,8 @@ title: Logboeken van het beleid voor app-beveiliging
 titlesuffix: Azure portal
 description: In dit onderwerp worden de instellingen van het beleid voor app-beveiliging beschreven die worden opgeslagen in de app-logboeken.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/15/2017
 ms.topic: article
@@ -15,17 +15,17 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10e3c6687259285452b95e7e5683064356431f65
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="review-app-protection-logs-in-the-managed-browser"></a>Logboeken voor app-beveiliging in Managed Browser controleren
 
 U kunt de logboeken openen door de diagnostische modus van Intune in te schakelen voor een toepassing op een mobiele client. In de volgende tabel ziet u de naam en een uitleg van de instellingen die worden vastgelegd in het logboek.
 
-## <a name="app-protection-policy-settings"></a>Beleidsinstellingen voor app-beveiliging
+## <a name="app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor apps
 
 | Naam                        | Mogelijke waarde(n)                                                                                                                                                                                                                                                                                           | Instelling in Azure Intune Mobile Application Management-portal                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Gebruikers helpen met behulp van de portal voor probleemoplossing
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 De portal voor probleemoplossing biedt helpdeskmedewerkers en Intune-beheerders toegang tot gebruikersgegevens om te reageren op hulpaanvragen van gebruikers. Organisaties met een helpdesk kunnen de **Helpdeskmedewerker** toewijzen aan een groep gebruikers. De rol helpdeskmedewerker kan gebruikmaken van de blade **Problemen oplossen**.
+
+Op de blade **Problemen oplossen** staan ook problemen met gebruikersinschrijving vermeld. Details over het probleem en voorgestelde herstelstappen kunnen beheerders en helpdeskmedewerkers helpen problemen op te lossen. Bepaalde inschrijvingsproblemen worden niet vastgelegd en voor sommige fouten zijn er misschien geen herstelvoorstellen. 
 
 Zie [Op rollen gebaseerd toegangsbeheer (RBAC) met Intune](/intune/role-based-access-control) voor de stappen voor het toevoegen van een rol helpdeskmedewerker.
 
@@ -33,7 +35,7 @@ Wanneer een gebruiker contact opneemt met de ondersteuning vanwege een technisch
 - Gebruikersstatus
 - Toewijzingen
 - Problemen met naleving
-- Apparaat reageert niet
+- Apparaat niet
 - Ophalen van VPN- of Wi-Fi-instellingen lukt niet apparaat
 - Fout tijdens installatie van app
 

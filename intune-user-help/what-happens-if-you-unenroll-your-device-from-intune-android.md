@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c75d7bee46f87bf171d105b6ebbf1ec0636e32df
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 1df8203b48e87dc58874bd25f736b878cc5c4ce5
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Wat gebeurt er als u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt?
 
@@ -40,4 +40,4 @@ Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgeh
 
 Zie [De registratie van uw apparaat bij Intune ongedaan maken met de bedrijfsportal-app](unenroll-your-device-from-intune-android.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
-Hebt u hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.
+Hebt u hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.

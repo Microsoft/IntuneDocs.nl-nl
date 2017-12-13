@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f928b214642c5954561f2c56b30b71b36ecd57eb
-ms.sourcegitcommit: 012f262660fa9fb321ac3470f5dba165b8e5256a
+ms.openlocfilehash: 16402b30895e61d9a4ff8393fd4d4c6efa061e9e
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integratie van Mobile Threat Defense met Intune
 
@@ -37,6 +37,22 @@ Bedrijven zijn historisch gezien altijd proactief geweest in het beveiligen van 
 De connector beschermt bedrijfsresources door een communicatiekanaal te maken tussen Intune en de door uw gekozen Mobile Threat Defense-leverancier. Intune Mobile Threat Defense-partners bieden intuïtieve, eenvoudig te implementeren toepassingen voor mobiele apparaten, die informatie over apparaatbedreigingen actief scannen, analyseren en met Intune delen, voor rapportage- of afdwingingsdoeleinden. 
 
 Als bijvoorbeeld een verbonden Mobile Threat Defense-app aan de Mobile Threat Defense-leverancier rapporteert dat een telefoon in uw netwerk op dat moment is verbonden met een netwerk dat kwetsbaar is voor Man in the Middle-aanvallen, wordt die informatie gedeeld en ingedeeld in een toepasselijke risicocategorie (laag, gemiddeld of hoog). Die wordt vergeleken met het geconfigureerde toegestane risiconiveau in Intune, om te bepalen of de toegangsrechten tot door u gekozen resources moet worden ingetrokken zolang het apparaat verdacht is.
+
+## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Welke gegevens worden door Intune verzameld voor Mobile Threat Defense?
+
+Intune verzamelt informatie over de app-inventaris van apparaten in zowel privé- als bedrijfseigendom en maakt deze informatie beschikbaar voor MTD-providers om op te halen, zoals Lookout for Work. U kunt de app-inventaris verzamelen van gebruikers van iOS 11+-apparaten.
+
+**App-inventaris**  
+Inventarissen van iOS 11 +-apparaten in zowel bedrijfs- en privé-eigendom worden verzonden naar uw MTD-serviceprovider. Gegevens in de app-inventarisatie bestaan onder andere uit:
+
+ - App-id
+ - App-versie
+ - Verkorte App-versie
+ - App-naam
+ - Grootte van de App-bundel
+ - Dynamische grootte van de App
+ - App is wel of niet gevalideerd
+ - App is wel of niet beheerd
 
 ## <a name="sample-scenarios"></a>Voorbeeldscenario's
 

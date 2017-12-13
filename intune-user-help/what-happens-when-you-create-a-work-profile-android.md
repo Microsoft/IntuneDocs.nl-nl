@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: fe9a4d7f52c462efa4c926544129da565620f60c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Wat gebeurt er wanneer u een werkprofiel maakt
 
@@ -43,4 +43,4 @@ Houd rekening met het volgende wanneer u een werkprofiel maakt:
 
 Zie [Een werkprofiel maken en uw apparaat registreren](create-a-work-profile-and-enroll-your-device-in-intune-android.md) voor de stapsgewijze procedure voor het maken van een werkprofiel.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

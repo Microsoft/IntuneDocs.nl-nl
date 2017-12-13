@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 32a46b1c82bbe38cf1918ff4053bf650bfe7d26a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 23006c88f5653a73ec3dbf1a8a59ba840bd7014a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-the-company-portal-app-for-android"></a>De bedrijfsportal-app voor Android installeren
 
@@ -44,4 +44,4 @@ De bedrijfsportal is een app die u toegang geeft tot de apps, de e-mail, het net
 
 Nadat u de bedrijfsportal-app hebt gedownload, wilt u het apparaat waarschijnlijk [registreren in Intune](enroll-your-device-in-Intune-android.md), zodat u volledig toegang tot uw werkgegevens hebt. U kunt [zich ook aanmelden met een ander apparaat](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

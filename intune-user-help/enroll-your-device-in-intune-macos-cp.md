@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
@@ -29,7 +29,7 @@ Als u toegang hebt tot de apps, gegevens en bronnen van uw organisatie kunt u ge
 > [!NOTE]
 > U vindt [hier](enroll-your-device-in-intune-macos-legacy.md) instructies voor de registratie van macOS-apparaten in eerdere versies van macOS.
 
-1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount.
 
@@ -62,4 +62,4 @@ Als u toegang hebt tot de apps, gegevens en bronnen van uw organisatie kunt u ge
 
 11. Uw Mac begint met de registratie in het beheer. Mogelijk wordt u ondertussen gevraagd naar de aanmeldingsgegevens voor uw computer. De registratie kan enkele minuten duren. Gedurende deze tijd kunt u andere dingen doen op uw computer. Er verschijnt een bericht zodra het instellen van de bedrijfstoegang is voltooid, zodat u weet dat u klaar bent.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

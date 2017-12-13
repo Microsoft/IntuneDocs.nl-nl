@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a54f618cd03b2aed5a25cd65a7418a7908f513f2
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4b619f0d42a88fb0cdc2f71c57c6ffeea4191d6e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Uw Windows Defender Firewall inschakelen
 
@@ -30,4 +30,4 @@ Uw werk of school wilt er zeker van zijn dat apparaten die toegang hebben tot hu
 2. Open **Systeem en beveiliging** > **Windows Defender Firewall**.
 3. Kies **Instellingen aanpassen** > **Windows Firewall in- of uitschakelen** voor domein-, privé- en openbare netwerken.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

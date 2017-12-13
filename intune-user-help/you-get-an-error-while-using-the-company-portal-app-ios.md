@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 407ef838fca1f47a191b5a99648dcc68433621f6
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 55fd0e87545666220721c4e874bcf0cc6e9b5e88
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Er treedt een fout op tijdens het gebruik van de bedrijfsportal-app
 
@@ -32,4 +32,4 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw iOS-apparaat gebr
 
 -   Schud het apparaat heen en weer wanneer u in de bedrijfsportal-app bent en tik op **E-mail** wanneer het waarschuwingsbericht over diagnostische gegevens wordt weergegeven. Als de waarschuwing niet wordt weergegeven wanneer u het apparaat heen en weer schudt, open dan **Instellingen** > **Bedrijfsportal** en controleer of de optie **Schudden** is ingeschakeld.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

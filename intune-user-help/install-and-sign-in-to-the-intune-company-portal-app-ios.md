@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: c71ac6ec64bb60bf4cdd06639e1c178c1b236e4c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>De bedrijfsportal-app installeren en u hierbij aanmelden
 
@@ -36,4 +36,4 @@ De bedrijfsportal-app is een app die u op het iOS-apparaat installeert om toegan
 
     Als u zich voor het eerst aanmeldt bij de bedrijfsportal-app en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md) om uw apparaat in te schrijven. U kunt [zich ook aanmelden met een ander apparaat](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

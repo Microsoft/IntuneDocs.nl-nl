@@ -3,8 +3,8 @@ title: Intune-apparaatbeperkingsinstellingen voor macOS
 titlesuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op macOS-apparaten.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee6a9428bd06a01676fd9ff92653bef26ca03ce4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 31de04787515a5d205108f2c412c6e5e57e170d7
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>macOS-apparaatbeperkingsinstellingen in Microsoft Intune
 

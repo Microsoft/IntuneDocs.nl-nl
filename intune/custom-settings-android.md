@@ -3,8 +3,8 @@ title: Aangepaste Intune-instellingen voor Android-apparaten
 titleSuffix: Azure portal
 description: Meer informatie over de instellingen die u kunt gebruiken in een aangepast Android-profiel.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 09/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 433e79ae1518f86aeb7206d5213fc38a38de5218
-ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
+ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Aangepaste instellingen voor Android-apparaten in Microsoft Intune
 

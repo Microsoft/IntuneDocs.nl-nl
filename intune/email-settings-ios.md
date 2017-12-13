@@ -3,8 +3,8 @@ title: E-mailinstellingen voor iOS-apparaten in Intune
 titleSuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op iOS-apparaten te configureren.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b9b175d22ea58b104f3888e297de59f0bd41fc7
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 5ca39677e997bd363954e3c883df80407b7d2251
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>E-mailprofielinstellingen voor iOS-apparaten in Microsoft Intune
 
