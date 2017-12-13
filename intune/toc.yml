@@ -552,6 +552,8 @@
   items:
     - name: Gebruikers helpen problemen op te lossen
       href: help-desk-operators.md
+    - name: Auditlogboeken voor Intune-activiteiten
+      href: monitor-audit-logs.md
     - name: Het Intune-datawarehouse gebruiken
       href: reports-nav-create-intune-reports.md
       items:
