@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 59d9ed0ddc6b24d680f665eb6f5c9976001d940b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>De naam van een apparaat wijzigen op de website van de bedrijfsportal
 
-U kunt beslissen om de naam van uw apparaat te wijzigen zodat het makkelijker te identificeren is. U kunt dit op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) doen. De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u hebt ingeschreven voor beheer door de IT-afdeling.
+U kunt beslissen om de naam van uw apparaat te wijzigen zodat het makkelijker te identificeren is. U kunt dit op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) doen. De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u hebt ingeschreven voor beheer door de IT-afdeling.
 
 Ga als volgt te werk om de naam van uw apparaat te wijzigen:
 
-1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
 2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de naam wilt wijzigen.
 
@@ -40,4 +40,4 @@ Ga als volgt te werk om de naam van uw apparaat te wijzigen:
 
 4.  Typ de nieuwe naam voor uw apparaat in het vak waar de apparaatnaam wordt weergegeven en tik vervolgens op de knop **Wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

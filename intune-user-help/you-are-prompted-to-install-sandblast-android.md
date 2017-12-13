@@ -14,11 +14,11 @@ ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: cb5f58232b46eac911c48fd80569ec54644d6745
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 287917669523e257a42b47d0132de7cc0dcf18e0
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>U moet SandBlast Mobile Protect installeren op uw Android-apparaat
 
@@ -56,4 +56,4 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit het geval is, installeert u SandBlast Mobile Protect [handmatig vanuit de Play Store](https://play.google.com/store/apps/details?id=com.lacoon.security.fox).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

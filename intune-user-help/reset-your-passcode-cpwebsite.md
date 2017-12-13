@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0103eb02cd169a224624d46d93645861f7bbbd47
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 43460cb18681c47e14c89c8dbeb70a4ae006eb7d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](https://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. Met de website van de bedrijfsportal kunt u computers en apparaten beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
+Als u de pincode of het wachtwoord van het apparaat dat u bij Intune hebt geregistreerd, bent vergeten, kunt u de [website van de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. Met de website van de bedrijfsportal kunt u computers en apparaten beheren die u hebt geregistreerd in Intune en waarop u de meeste taken kunt uitvoeren die u ook met uw bedrijfsportal-app kunt uitvoeren.
 
 > [!NOTE]
 > Het is mogelijk dat u de knop Wachtwoordcode opnieuw instellen niet ziet op de website van de bedrijfsportal als u een geregistreerd apparaat gebruikt dat bedrijfseigendom is. In dat geval neemt u contact op met het ondersteuningsteam van het bedrijf om de wachtwoordcode opnieuw in te stellen.
 
 Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
-1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/intune/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/intune/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
 2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de wachtwoordcode opnieuw wilt instellen.
 
@@ -68,4 +68,4 @@ Ga als volgt te werk om uw wachtwoordcode opnieuw in te stellen:
 
 Als u een melding wilt zien die bevestigt dat uw wachtwoord opnieuw is ingesteld, klikt u op de meldingsvlag boven aan de website van de bedrijfsportal.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

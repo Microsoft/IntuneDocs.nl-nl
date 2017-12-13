@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5ee663c6fe5e2f90bd1a92ef32ad747d72515f13
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 3d16c46305ce373f30254c69cb10de08382c98b2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-update-your-android-device"></a>U moet uw Android-apparaat bijwerken
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 09/28/2017
 
 Werk uw Android-apparaat bij door te tikken op **Instellingen** > **Over de telefoon**. In de sectie __Instellingen__ tikt u op __Controleren op updates__ en installeert u de beschikbare update.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

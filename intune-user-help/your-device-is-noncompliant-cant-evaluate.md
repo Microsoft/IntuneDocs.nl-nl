@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d61887174830c9892c854d7b067fafe6fc50da59
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 31e491384b4605f6a5e5ce9a04b258f3cef93671
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-device-is-noncompliant"></a>Uw apparaat is niet compatibel
 
@@ -28,4 +28,4 @@ Uw apparaat is niet compatibel met ten minste één van de beveiligingsbeleidsre
 
 Tik in de bedrijfsportal-app op **Naleving controleren**. De bedrijfsportal-app geeft vervolgens aan waarom het apparaat niet compatibel is.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

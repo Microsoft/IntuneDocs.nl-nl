@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Uw wachtwoord voldoet niet aan de vereisten van het ondersteuningsteam van het bedrijf
 
@@ -46,4 +46,4 @@ Beschrijvingen van problemen met de pincode of het wachtwoord:
 
 - **Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen**. Van het ondersteuningsteam van het bedrijf moet u complexere tekens in uw wachtwoord gebruiken. Probeer tekens zoals cijfers, hoofdletters en symbolen zoals $, % en #. Dit kan ook gelden voor andere accounts op uw apparaat, controleer dus alle andere werkaccounts om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten die door IT zijn ingesteld voor uw apparaat.
 
-Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met het ondersteuningsteam van het bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten, neemt u contact op met het ondersteuningsteam van het bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

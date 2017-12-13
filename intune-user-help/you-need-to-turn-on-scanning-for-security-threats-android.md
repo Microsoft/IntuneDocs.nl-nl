@@ -14,11 +14,11 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2eaa2da79f8ce85cef8c258dd17828f6639bba71
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>U moet het op uw apparaat mogelijk maken om te scannen op beveiligingsrisico’s
 
@@ -26,4 +26,4 @@ Op Android-apparaten kunnen apps worden gedownload en geïnstalleerd voor het ui
 
 U kunt dit inschakelen via **Instellingen** > **Google** > **Beveiliging**. Schakel vervolgens **Apparaat scannen op beveiligingsrisico's** in.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

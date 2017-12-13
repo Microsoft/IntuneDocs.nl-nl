@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Uw apparaat extern vergrendelen op de website van de bedrijfsportal
 
@@ -28,7 +28,7 @@ Ongelukken gebeuren en soms raakt een apparaat verloren. Als uw apparaat vermist
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergrendelen op de [website van de bedrijfsportal](https://portal.manage.microsoft.com). Extern vergrendelen werkt voor:
+Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergrendelen op de [website van de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog). Extern vergrendelen werkt voor:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergr
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Ga als volgt te werk om uw apparaat te vergrendelen met Extern vergrendelen
 
-1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
   ![Een afbeelding van de Bedrijfsportal-website met een uitgebreid menu aan de linkerkant van het scherm met de knoppen Startpagina, Alle apps, Mijn apparaten, Helpdesk en Optie voor afmelden.](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ Voor extra gemoedsrust kunt u uw apparaat vergrendelen met de optie Extern vergr
 
 Als u uw apparaat terugvindt en het wilt ontgrendelen nadat u eerder Extern vergrendelen hebt gebruikt, voer dan gewoon uw wachtwoordcode in.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

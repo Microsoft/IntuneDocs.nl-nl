@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -94,8 +94,8 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
     **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-release en wordt in mei bijgewerkt.
 
-    - **Delivery optimization**: kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode) voor meer informatie.
-8. Wanneer u klaar bent, klikt u op **OK** en klikt u vervolgens op de blade **Updatering maken** op **Maken**.
+    - **Delivery optimization**: kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode) voor meer informatie.
+1. Wanneer u klaar bent, klikt u op **OK** en klikt u vervolgens op de blade **Updatering maken** op **Maken**.
 
 De nieuwe updatering wordt weergegeven in de lijst met updateringen.
 

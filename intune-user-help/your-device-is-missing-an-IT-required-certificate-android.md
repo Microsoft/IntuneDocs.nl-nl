@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4a771416273ee29d0b44cb74b6b32d9535e43e41
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Er ontbreekt een certificaat voor uw Android-apparaat dat is vereist door het ondersteuningsteam van uw bedrijf
 
@@ -35,9 +35,9 @@ Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er 
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Het ontbrekende certificaat identificeren door te kijken op een bedrijfs- of school-pc
 
-1. Open Internet Explorer op een pc. Als u voor dit doel niet over een pc beschikt, neemt u contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de contactgegevens van het ondersteuningsteam van uw bedrijf.
+1. Open Internet Explorer op een pc. Als u voor dit doel niet over een pc beschikt, neemt u contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de contactgegevens van het ondersteuningsteam van uw bedrijf.
 
-2. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) en meld u aan met de referenties van uw werk- of schoolaccount.
+2. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) en meld u aan met de referenties van uw werk- of schoolaccount.
 
 3. Rechts van de adresbalk van de browser kiest u het symbool dat lijkt op een hangslot, zoals hieronder is weergegeven.
 
@@ -69,4 +69,4 @@ Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er 
 
 7. Open de bedrijfsportal-app opnieuw. Nu moet u zich bij de bedrijfsportal-app kunnen aanmelden. Neem contact op met het ondersteuningsteam van uw bedrijf als u hulp nodig hebt.
 
-Als u dezelfde melding over een 'ontbrekend certificaat' ziet als de melding die eerder werd weergegeven en u de procedure al hebt uitgevoerd, is er waarschijnlijk nog een ander certificaat dat door het ondersteuningsteam van uw bedrijf moet worden geïnstalleerd. Neem contact op met het ondersteuningsteam van uw bedrijf voor hulp bij het gebruik van de contactgegevens die beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+Als u dezelfde melding over een 'ontbrekend certificaat' ziet als de melding die eerder werd weergegeven en u de procedure al hebt uitgevoerd, is er waarschijnlijk nog een ander certificaat dat door het ondersteuningsteam van uw bedrijf moet worden geïnstalleerd. Neem contact op met het ondersteuningsteam van uw bedrijf voor hulp bij het gebruik van de contactgegevens die beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 7160f58f60624815137e2990bd06188edd4ede81
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Problemen met de registratie van uw Windows 10-apparaat oplossen
 Als u de stappen in [Uw Windows 10 Mobile- of Windows 10-desktopapparaat registreren bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md) hebt gevolgd, maar u nog steeds geen toegang hebt tot de e-mails en bestanden van uw werk- of schoolaccount, volgt u deze stappen voor probleemoplossing.
@@ -59,4 +59,4 @@ Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt to
 
 Als u een bericht ziet met de tekst __Er is geen beheereindpunt automatisch gedetecteerd dat overeenkomt met de ingevoerde gebruikersnaam. Controleer de gebruikersnaam en probeer het opnieuw. Als u de URL naar het beheereindpunt kent, voert u deze in.__, voert u vervolgens de gebruikersnaam en het wachtwoord opnieuw in. Als dit ook niet werkt, neemt u contact op met het ondersteuningsteam van het bedrijf van de website die u moet opgeven in het tekstvak **Beheereindpunt**. Deze website ziet er waarschijnlijk als volgt uit: **www.yourcompany.onmicrosoft.com**.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

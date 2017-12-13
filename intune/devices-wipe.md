@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
@@ -39,7 +39,21 @@ Met **Fabrieksinstellingen terugzetten** worden de fabrieksinstellingen van een 
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
 4. Kies de naam van het apparaat waarvoor u Fabrieksinstellingen terugzetten wilt gebruiken.
-5. Kies op de blade met de naam van het apparaat **Fabrieksinstellingen** en kies vervolgens **Ja** om te bevestigen.
+5. Kies **Fabrieksinstellingen** op de blade met de naam van het apparaat
+6. Voor Windows 10 versie 1709 of hoger is er een extra optie voor 'Status inschrijving en gebruikersaccount behouden'. 
+    
+    |Blijven behouden via terugzetten van fabrieksinstellingen|Niet behouden|
+    | -------------|------------|
+    |Gebruikersaccounts die zijn gekoppeld aan het apparaat|Gebruikersbestanden|
+    |Status van de machine \(lid van domein, lid van Azure Active Directory)| Door de gebruiker geïnstalleerde apps \(Store- en Win32-apps)|
+    |MDM-inschrijving|Niet-standaard apparaatinstellingen|
+    |Door OEM geïnstalleerde apps \(Store- en Win32-apps)||
+    |Gebruikersprofiel||
+    |Gebruikersgegevens buiten het gebruikersprofiel||
+    |Autologon gebruiker|| 
+    
+         
+7. Kies **Ja** om te bevestigen dat de fabrieksinstellingen worden teruggezet.
 
 Als het apparaat is ingeschakeld en verbonden, wordt Fabrieksinstellingen terugzetten in minder dan 15 minuten aan alle typen apparaten doorgegeven.
 

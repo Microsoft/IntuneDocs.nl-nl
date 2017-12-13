@@ -2,8 +2,8 @@
 title: Beleidsinstellingen voor Android en Samsung KNOX
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android-apparaten die u met Intune beheert.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 36ef93bb3894083e3db3732faddea6f926831ac6
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android en Samsung KNOX Standard in Microsoft Intune
 

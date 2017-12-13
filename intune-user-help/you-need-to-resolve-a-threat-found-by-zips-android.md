@@ -14,11 +14,11 @@ ms.assetid: 9ffbb656-93cd-4e0b-96c0-c5038cd2cf31
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 62bcd106b4a75609436ef3a472262a6970daf1b8
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 95d6e4d52349e3e6527027fa8074cc92e54b0ca7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>U moet een bedreiging oplossen die met Zimperium zIPS is gevonden
 
@@ -30,7 +30,7 @@ Los het probleem op door de Zimperium zIPS-app te openen en de instructies hieri
 
 Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, wordt u in een bericht van Zimperium zIPS gewaarschuwd dat u actie moet ondernemen.
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
 
 ## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Voorbeeld van een app die door Zimperium zIPS als een bedreiging wordt beschouwd
 
@@ -38,4 +38,4 @@ Als u een app hebt geïnstalleerd die door Zimperium zIPS als een bedreiging wor
 
 Wanneer dit gebeurt, verwijdert u de app om direct weer toegang tot de e-mail en gegevens van uw bedrijf te krijgen. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

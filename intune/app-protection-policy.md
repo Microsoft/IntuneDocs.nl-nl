@@ -3,10 +3,10 @@ title: Wat is beveiligingsbeleid voor apps
 titleSuffix: Azure portal
 description: Gebruik dit onderwerp voor meer informatie om de gegevens van uw bedrijf te beveiligen met het beveiligingsbeleid voor apps van Microsoft Intune.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 12/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48294a922e191fa570c39d3e0de815b695506709
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 668264fc0ed4d9bebf84d97aa66a886d93fbb4eb
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -61,9 +61,8 @@ Het gebruik van MDM met het beveiligingsbeleid voor apps biedt extra voordelen e
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Ondersteunde platformen voor het beveiligingsbeleid voor apps
--   iOS 8.1 of hoger
-
--   Android 4 of hoger
+-   iOS 9 of hoger
+-   Android 4.4 of hoger
 
 Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen

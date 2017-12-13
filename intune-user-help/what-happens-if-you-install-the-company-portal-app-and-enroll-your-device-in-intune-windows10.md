@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7d8dc077c3da1c9bfe302b4808142f8b7a1a60cf
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows 10-apparaat inschrijft bij Intune?
 
@@ -52,4 +52,4 @@ Wanneer u een computer toevoegt:
 
 -   Het ondersteuningsteam van uw bedrijf kan beleidsregels op de computer afdwingen. Het is bijvoorbeeld mogelijk dat u verplicht een wachtwoord of pincode op de computer moet instellen. Het ondersteuningsteam van uw bedrijf kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan de computer mogelijk worden vergrendeld of worden mogelijk alle gegevens van de harde schijf verwijderd.
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.

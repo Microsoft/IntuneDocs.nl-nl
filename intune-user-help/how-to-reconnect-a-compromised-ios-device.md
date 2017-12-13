@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a808f9030053b1aee571dbde9bba01d5d503a8a2
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: c63d306eac52a38dccfe78d63ea0651848a7d492
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid
 
 Het ondersteuningsteam van het bedrijf heeft vastgesteld dat u een jailbroken apparaat gebruikt. 'Jailbroken' betekent dat het apparaat is gewijzigd om onbeperkte toegang tot bepaalde cruciale bestanden mogelijk te maken. Hierdoor kan het apparaat een beveiligingsrisico en bedreiging voor uw bedrijfsbronnen vormen.
 
-Als dit gebeurt, krijgt uw apparaat geen toegang meer tot bedrijfsresources en moet u contact opnemen met het ondersteuningsteam van het bedrijf voor hulp. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Als dit gebeurt, krijgt uw apparaat geen toegang meer tot bedrijfsresources en moet u contact opnemen met het ondersteuningsteam van het bedrijf voor hulp. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
