@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: Gebruiker verwijderen
           href: device-remove-user.md
-        - name: Beheer op afstand voor Android
+        - name: Extern beheer van mobiele apparaten
           href: device-profile-android-teamviewer.md
         - name: Windows 10-pincode opnieuw instellen
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: Office 365-apps voor Windows 10
               href: apps-add-office365.md
+            - name: Office 365-apps voor macOS
+              href: apps-add-office365-macos.md
         - name: Apps toewijzen
           href: apps-deploy.md
         - name: Apps bewaken
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: Naleving van voorwaardelijke toegang bewaken
           href: conditional-access-exchange-monitor.md
+        - name: Jamf Pro integreren met Intune in verband met nalevingsbeleid
+          href: conditional-access-integrate-jamf.md
+        - name: Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
+          href: conditional-access-assign-jamf.md
     - name: App- en apparaatgegevens beveiligen
       items:
         - name: Beleidsregels voor de beveiliging van apps gebruiken
@@ -552,6 +558,8 @@
   items:
     - name: Gebruikers helpen problemen op te lossen
       href: help-desk-operators.md
+    - name: Auditlogboeken voor Intune-activiteiten
+      href: monitor-audit-logs.md
     - name: Het Intune-datawarehouse gebruiken
       href: reports-nav-create-intune-reports.md
       items:
