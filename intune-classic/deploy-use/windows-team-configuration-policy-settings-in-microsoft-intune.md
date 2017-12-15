@@ -1,4 +1,4 @@
----
+﻿---
 title: Instellingen voor configuratiebeleid van Windows Team
 description: Gebruik het **algemene configuratiebeleid voor Windows 10 Team** om instellingen te configureren voor geregistreerde Windows 10 Team-apparaten, zoals de Microsoft Surface Hub.
 keywords: 

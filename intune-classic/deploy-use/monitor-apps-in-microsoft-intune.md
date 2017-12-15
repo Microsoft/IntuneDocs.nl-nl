@@ -1,4 +1,4 @@
----
+﻿---
 title: App-implementaties controleren
 description: "Informatie over Intune gebruiken voor het bewaken van apps die u hebt geïmplementeerd."
 keywords: 

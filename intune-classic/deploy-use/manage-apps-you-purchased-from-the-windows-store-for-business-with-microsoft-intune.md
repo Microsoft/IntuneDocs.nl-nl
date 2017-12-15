@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Store voor Bedrijven-apps beheren
 description: Microsoft Intune verbinden met Microsoft Store voor Bedrijven als u apps via het volume-aankoopprogramma hebt gekocht vanuit de Intune-console
 keywords: 

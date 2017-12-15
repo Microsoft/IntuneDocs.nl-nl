@@ -1,4 +1,4 @@
----
+﻿---
 title: Apps bijwerken
 description: Gebruik de informatie in dit onderwerp om na te gaan hoe u apps kunt bijwerken wanneer een nieuwe versie vereist is.
 keywords: 

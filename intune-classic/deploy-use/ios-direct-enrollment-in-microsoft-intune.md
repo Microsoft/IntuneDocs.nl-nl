@@ -1,4 +1,4 @@
----
+﻿---
 title: Rechtstreekse inschrijving voor iOS-apparaten
 description: Gebruik het hulpprogramma Apple Configurator om iOS-apparaten in bedrijfseigendom rechtstreeks in te schrijven met een vooraf gedefinieerde beleid door ze via een USB-poort verbinding te laten maken met een Mac-computer.
 keywords: 

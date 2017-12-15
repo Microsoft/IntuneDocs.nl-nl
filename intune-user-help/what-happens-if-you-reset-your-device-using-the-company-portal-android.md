@@ -1,4 +1,4 @@
----
+﻿---
 title: Wat gebeurt er als u uw Android-apparaat opnieuw instelt? | Microsoft Docs
 description: 
 keywords: 

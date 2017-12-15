@@ -1,4 +1,4 @@
----
+﻿---
 title: Instellingen voor beveiligingsbeleid voor mobiele apparaten
 description: Gebruik Intune voor het configureren van een breed scala aan instellingen die u kunt implementeren op beheerde apparaten in uw organisatie.
 keywords: 

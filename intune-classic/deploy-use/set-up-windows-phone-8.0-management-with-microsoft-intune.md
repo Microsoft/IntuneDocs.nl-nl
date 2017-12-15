@@ -1,4 +1,4 @@
----
+﻿---
 title: Windows 8.0-bedrijfsportal-app afgeschaft
 description: Schakel het beheer van mobiele apparaten (MDM) in voor Wndows Phone 8.0-apparaten met Microsoft Intune.
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Software-updates voor Windows-pc's
 description: "Intune houdt uw beheerde computers bijgewerkt door ervoor te zorgen dat de meest recente patches en software-updates snel worden geïnstalleerd."
 keywords: 

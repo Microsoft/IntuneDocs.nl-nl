@@ -1,4 +1,4 @@
----
+﻿---
 title: Consoleweergaven aanpassen voor beheerdersrollen
 description: U kunt dit onderwerp gebruiken om de Intune-beheerconsoleweergave zodanig filteren dat uw beheerders alleen de items zien die ze voor hun rol nodig hebben.
 keywords: 

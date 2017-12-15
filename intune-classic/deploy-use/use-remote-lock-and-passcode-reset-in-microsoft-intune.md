@@ -1,4 +1,4 @@
----
+﻿---
 title: Extern vergrendelen en de wachtwoordcode opnieuw instellen
 description: Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
 keywords: 

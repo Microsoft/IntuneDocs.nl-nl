@@ -1,4 +1,4 @@
----
+﻿---
 title: Beleidsinstellingen voor Android en Samsung KNOX
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android-apparaten die u met Intune beheert.
 keywords: 
