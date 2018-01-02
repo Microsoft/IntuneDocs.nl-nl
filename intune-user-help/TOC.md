@@ -4,7 +4,7 @@
 
 ## [Welke gegevens kan mijn bedrijf zien met Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Wat gebeurt er wanneer ik mijn apparaat opnieuw instel?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Mijn apparaat opnieuw instellen](what-happens-if-you-reset-your-device-cpwebsite.md)
 
 ## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
 
@@ -66,15 +66,15 @@
 ### [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
 ### [Wat gebeurt er als u een apparaat opnieuw instelt met behulp van de bedrijfsportal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [Een apparaat opnieuw instellen](reset-erase-your-device-cpwebsite.md)
-### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 ### [De inschrijving van het apparaat ongedaan maken](unenroll-your-device-from-intune-ios.md)
 #### [Wat gebeurt er als u de inschrijving van uw apparaat ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Uw apparaat handmatig synchroniseren](sync-your-device-manually-ios.md)
 
-### [Veelvoorkomende problemen met iOS oplossen](troubleshoot-your-device-iOS.md)
+#### [Veelvoorkomende problemen met iOS oplossen](troubleshoot-your-device-iOS.md)
 #### [Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 #### [Fouten naar uw bedrijf verzenden](send-errors-to-your-it-admin-ios.md)
 #### [Fouten naar Microsoft verzenden](send-logs-to-microsoft-ios.md)
+#### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Er is een fout opgetreden](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Het serienummer zoeken](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -97,11 +97,20 @@
 ### [Wat gebeurt er wanneer u een macOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos-cp.md)
 ### [Uw oudere macOS-apparaat registreren](enroll-your-device-in-intune-macos-legacy.md)
-### [Dit apparaat is enigszins anders](device-little-different-jamf.md)
+### [De registratie van uw macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-macos.md)
+
+### [Veelvoorkomende problemen met macOS oplossen](troubleshoot-your-device-macos.md)
+#### [Mijn versie van macOS wordt nog niet ondersteund](your-macos-version-isnt-yet-supported.md)
+#### [Uw macOS-apparaat bijwerken](you-need-to-update-your-macos-device.md)
+#### [Bedrijfsportalfouten verzenden](send-errors-macos.md)
+#### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-macos.md)
+#### [Dit apparaat is enigszins anders](device-little-different-jamf.md)
+#### [Het serienummer zoeken](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
-### [Wat gebeurt er wanneer u een Windows 10-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Wat gebeurt er wanneer u een Windows-apparaat met een andere versie van Windows inschrijft?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Windows 10-apparaten registreren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Andere versies van Windows registreren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [Uw Windows-apparaat inschrijven](enroll-your-device-in-intune-windows.md)
 ### [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -128,6 +137,6 @@
 #### [Ik wil mijn firewall inschakelen](you-need-to-enable-defender-firewall-windows.md)
 #### [Ik wil UAC inschakelen](you-need-to-enable-uac-windows.md)
 #### [Ik wil Windows bijwerken](you-need-to-update-os-build-version-windows.md)
-#### [Ik wil Windows Defender inschakelen](turn-on-defender-windows.md) 
+#### [Ik wil Windows Defender inschakelen](turn-on-defender-windows.md)
 
 ## [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)

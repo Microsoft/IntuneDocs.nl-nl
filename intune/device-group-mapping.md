@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e34b9cd030244db4bdde78eedbb0f874f49fa1e1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="map-device-groups"></a>Apparaatgroepen toewijzen
-
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -54,7 +53,7 @@ Als u Azure Active Directory-beveiligingsgroepen maakt in stap 2, gebruikt u de 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Stap 2: Active Directory-beveiligingsgroepen maken
 In deze stap maakt u dynamische groepen in Azure Portal op basis van de apparaatcategorie en de naam van de apparaatcategorie.
 
-Zie het onderwerp [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in de documentatie van Azure Active Directory om door te gaan. 
+Zie het onderwerp [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in de documentatie van Azure Active Directory om door te gaan.
 
 Gebruik de informatie in deze sectie om een apparaatgroep met een geavanceerde regel te maken op basis van het kenmerk **deviceCategory** (apparaatcategorie). Bijvoorbeeld: (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -84,7 +83,7 @@ Als de kolom **Categorie** niet wordt weergegeven, klikt u op **Kolommen**, kies
 
 Wanneer eindgebruikers van iOS- en Android-apparaten hun apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de registratie voltooien, wordt hun apparaat toegevoegd aan de Intune-apparaatgroep of Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
 
-Wanneer eindgebruikers een categorie willen toewijzen aan een Windows-apparaat, moeten ze de bedrijfsportalwebsite (portal.manage.microsoft.com) gebruiken na registratie van het apparaat. Ga op een Windows-apparaat u naar de website en kies vervolgens **Menu** > **Mijn apparaten**. Kies een geregistreerd apparaat op de pagina en selecteer vervolgens een categorie. 
+Uw eindgebruikers kunnen bij elk platform altijd naar portal.manage.microsoft.com gaan nadat het apparaat is geregistreerd. Laat de gebruiker naar de bedrijfsportalwebsite en vervolgens **Mijn apparaten** gaan. Ze kunnen een geregistreerd apparaat op de pagina kiezen en vervolgens een categorie kiezen.
 
 Nadat de categorie is gekozen, wordt het apparaat automatisch toegevoegd aan de bijbehorende groep die u hebt gemaakt. Als een apparaat al is geregistreerd voordat u categorieën configureert, zien eindgebruikers een melding over het apparaat op de bedrijfsportalwebsite en moeten ze de volgende keer dat ze de app op de bedrijfsportalwebsite op iOS of Android openen, een categorie selecteren.
 
@@ -92,5 +91,3 @@ Nadat de categorie is gekozen, wordt het apparaat automatisch toegevoegd aan de 
 - U kunt een apparaatcategorie bewerken in Azure Portal. Als u dit doet, moet u de Azure Active Directory-beveiligingsgroepen die naar deze categorie verwijzen, handmatig bijwerken.
 
 - Als u een categorie verwijdert, wordt voor de apparaten die aan de categorie zijn toegewezen de categorienaam **Niet-toegewezen** weergegeven.
-
-

@@ -3,10 +3,10 @@ title: SCEP-certificaten configureren en beheren met Intune
 titlesuffix: Azure portal
 description: In dit onderwerp leest u hoe u uw infrastructuur kunt configureren en vervolgens Intune SCEP-certificaatprofielen kunt maken en toewijzen.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -239,7 +239,7 @@ In deze taak:
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (decimaal)|
 
 
-4. Kies in IIS-manager achtereenvolgens **Standaardwebsite** -> **Filtering aanvragen** -> **Functie-instellingen bewerken** en wijzig de **Maximale URL-lengte** en **Maximale querytekenreeks** in *65534*, zoals wordt weergegeven.
+4. Selecteer in IIS Manager achtereenvolgens **Standaardwebsite** -> **Filteren aanvragen** -> **Functie-instellingen bewerken** en wijzig de **Maximale URL-lengte** en **Maximale querytekenreeks** in *65534*, zoals wordt weergegeven.
 
     ![Maximale lengte van de URL's en query's van IIS](.\media\SCEP_IIS_max_URL.png)
 
@@ -255,7 +255,7 @@ In deze taak:
 1.  Vraag op uw NDES-server een **serververificatie** certificaat van uw interne CA of een openbare CA aan en installeer het certificaat. Vervolgens verbindt u dit SSL-certificaat in IIS.
 
     > [!TIP]
-    > Nadat u het SSL-certificaat in IIS hebt verbonden, installeert u ook een clientverificatiecertificaat. Dit certificaat kan worden verleend door elke CA die wordt vertrouwd door de NDES-server. Hoewel dit niet wordt aanbevolen, kunt u hetzelfde certificaat voor zowel server- als clientverificatie gebruiken zolang het certificaat beide EKU's (Enhance Key Usages) heeft. Bekijk de volgende stappen voor informatie over deze verificatiecertificaten.
+    > Nadat u het SSL-certificaat in IIS hebt verbonden, installeert u een clientverificatiecertificaat. Dit certificaat kan worden verleend door elke CA die wordt vertrouwd door de NDES-server. Hoewel dit niet wordt aanbevolen, kunt u hetzelfde certificaat voor zowel server- als clientverificatie gebruiken zolang het certificaat beide EKU's (Enhance Key Usages) heeft. Bekijk de volgende stappen voor informatie over deze verificatiecertificaten.
 
     1.  Nadat u het serververificatiecertificaat hebt verkregen, opent u **IIS-beheer**, selecteert u de **standaardwebsite** in het deelvenster **Verbindingen** en klikt u vervolgens op **Bindingen** in het deelvenster **Acties** .
 
@@ -300,29 +300,16 @@ In deze taak:
 In deze taak:
 
 - Schakelt u de ondersteuning voor NDES in Intune in.
-
-- Downloadt, installeert en configureert u de certificaatconnector op de NDES-server.
-
-   > [!NOTE]
-   > Voor hoge beschikbaarheid kunt u meerdere exemplaren van de certificaatconnector installeren.
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>Ondersteuning voor de certificaatconnector inschakelen
-
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-4. Kies **Certificeringsinstantie** op de blade **Apparaatconfiguratie**.
-5.  Selecteer **Certificaatconnector inschakelen**.
+- Downloadt, installeert en configureert u de certificaatconnector op een server in uw omgeving. Voor hoge beschikbaarheid kunt u meerdere certificaatconnectors op verschillende servers installeren.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
-
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-4. Kies **Certificeringsinstantie** op de blade **Apparaatconfiguratie**.
-5. Kies **De certificaatconnector downloaden**.
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. Meld u aan bij Azure Portal. 
+2. Selecteer **Meer services** > **Bewaking en beheer** > **Intune**.
+3. Selecteer op de blade **Intune** de optie **Apparaatconfiguratie**.
+4. Selecteer op de blade **Apparaatconfiguratie** de optie **Certificeringsinstantie**.
+5. Klik op **Toevoegen** en selecteer **Connectorbestand downloaden**. Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de connector gaat installeren. 
 6.  Nadat het downloaden is voltooid, voert u het gedownloade installatieprogramma (**ndesconnectorssetup.exe**) uit op Windows Server 2012 R2-server: Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. (De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.)
 
     > [!NOTE]
@@ -359,16 +346,16 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 1. Selecteer in Azure Portal de workload **Apparaten configureren**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de blade Profielen.
+3. Selecteer **Profiel maken** op de blade Profielen.
 4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
-5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
+5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platforms selecteren voor apparaatbeperkingsinstellingen:
     - **Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
-6. Kies in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
+6. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
 7. Configureer op de blade **SCEP-certificaat** de volgende instellingen:
     - **Geldigheidsduur van certificaat**: als u de opdracht **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** hebt uitgevoerd voor de verlenende CA, waarmee een aangepaste geldigheidsperiode mogelijk is, kunt u opgeven hoe lang het certificaat geldig blijft.<br>U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA. 
     - **Sleutelarchiefprovider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): geef op waar de sleutel voor het certificaat wordt opgeslagen. Kies een van de volgende waarden:
@@ -392,7 +379,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
     - **Sleutelgrootte (bits)**: selecteer het aantal bits in de sleutel. 
     - **Hash-algoritme** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selecteer een van de beschikbare typen hash-algoritme om met dit certificaat te gebruiken. Selecteer het sterkste beveiligingsniveau dat door de verbindende apparaten wordt ondersteund. 
     - **Basiscertificaat**: kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren. 
-    - **Uitgebreide-sleutelgebruik**: kies **Toevoegen** om waarden voor het beoogde gebruik van het certificaat toe te voegen. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen. 
+    - **Uitgebreide-sleutelgebruik**: selecteer **Toevoegen** om waarden voor het beoogde gebruik van het certificaat toe te voegen. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen. 
     - **Registratie-instellingen**
         - **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
         - **URL's van SCEP-server**: geef een of meer URL's op voor de NDES-servers die certificaten via SCEP verlenen. 
