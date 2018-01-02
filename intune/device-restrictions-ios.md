@@ -3,8 +3,8 @@ title: Intune-apparaatbeperkingsinstellingen voor iOS
 titleSuffix: Azure portal
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op iOS-apparaten.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -41,7 +41,7 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 - **Wijzigen van de meldingsinstellingen (alleen onder supervisie)**: hiermee staat u de gebruiker toe de instellingen voor apparaatmeldingen te wijzigen.
 - **Achtergrond wijzigen (alleen onder supervisie)**: hiermee staat u de gebruiker toe de achtergrond van het apparaat te wijzigen.
 - **Het wijzigen van de vertrouwensinstellingen voor bedrijfsapps (alleen onder supervisie)**: hiermee kan de gebruiker aangeven apps te vertrouwen die niet uit de App Store zijn gedownload.
-- **Wijzigingen in configuratieprofielen**: hiermee staat u de gebruiker toe configuratieprofielen te installeren.
+- **Wijzigingen in configuratieprofielen (alleen onder toezicht)**: hiermee staat u de gebruiker toe configuratieprofielen te installeren.
 - **Activeringsslot (alleen onder toezicht)**: hiermee schakelt u Activeringsslot in op iOS-apparaten in de supervisiemodus.
 
 ## <a name="configurations-requiring-supervision"></a>Configuraties die supervisie vereisen
