@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -69,6 +69,17 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
    - **Alle apparaten beheren als Android-apparaten**. Alle Android-apparaten, ook de apparaten met ondersteuning voor Android for Work, worden ingeschreven als conventionele Android-apparaten.
    - **Ondersteunde apparaten beheren als Android for Work-apparaten**. Alle apparaten met ondersteuning voor Android for Work worden ingeschreven als Android for Work-apparaten. Alle Android-apparaten die geen ondersteuning bieden voor Android for Work, worden geregistreerd als conventionele Android-apparaten.
    - **Alleen ondersteunde apparaten voor de gebruikers in deze gebruikersgroepen beheren als Android for Work**. U kunt Android for Work-beheer richten op een beperkte set gebruikers. Alleen voor leden van de geselecteerde groepen worden apparaten met ondersteuning voor Android for Work geregistreerd als Android for Work-apparaten. Alle overige apparaten worden geregistreerd als Android-apparaten. Dit is nuttig tijdens een Android for Work-testfase.
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>De bedrijfsportal-app in de beheerde Google Play Store goedkeuren
+U moet de bedrijfsportal-app voor Android in de beheerde Google Play Store goedkeuren om ervoor te zorgen dat deze automatische app-updates ontvangt. Als u deze niet goedkeurt, wordt de bedrijfsportal uiteindelijk verouderd en worden er geen nieuwe belangrijke oplossingen voor problemen of nieuwe functies ontvangen wanneer deze door Microsoft worden uitgegeven.
+
+Volg deze stappen voor het goedkeuren van de Intune bedrijfsportal:
+
+1.  Download de bedrijfsportal-app vanuit de [beheerde Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+2.  Meld u aan bij de beheerde Google Play Store met hetzelfde Google-account dat u hebt gebruikt om de binding voor Android for Work te configureren.
+3.  Klik op **Goedkeuren.**  Hiermee wordt een nieuw dialoogvenster geopend.
+4.  Controleer de machtigingen in dit dialoogvenster en klik vervolgens op **Goedkeuren**. U moet deze machtigingen toestaan om de bedrijfsportal-app het werkprofiel op het apparaat te laten beheren.
+5.  Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** en klik vervolgens op **Opslaan.**
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:

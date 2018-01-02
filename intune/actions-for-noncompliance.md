@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>Acties voor niet-naleving automatiseren
 
@@ -27,7 +27,7 @@ Met de **acties voor niet-naleving** kunt u een op tijd geordende opeenvolgende 
 
 Er zijn twee soorten acties:
 
--   **Eindgebruikers informeren per e-mail**: u kunt een de e-mailmelding aanpassen voordat u die verstuurt naar de eindgebruikers. In Intune kunt u aanpassingen doorvoeren in het onderwerp en de berichttekst, en uw bedrijfslogo, contactgegevens en extra ontvangers toevoegen.
+-   **Eindgebruikers informeren per e-mail**: u kunt een de e-mailmelding aanpassen voordat u die verstuurt naar de eindgebruikers. In Intune kunt u aanpassingen doorvoeren in het onderwerp, de berichttekst, inclusief het bedrijfslogo, en contactgegevens.
 
 -   **Apparaat markeren voor niet-naleving**: u kunt een schema instellen met een aantal dagen waarna het apparaat wordt gemarkeerd voor niet-naleving. Dit kan onmiddellijk, maar u kunt de gebruiker ook een respijtperiode bieden, zodat deze ervoor kan zorgen dat het apparaat weer voldoet aan het nalevingsbeleid.
 

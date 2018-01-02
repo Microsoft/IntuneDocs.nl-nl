@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en beheren met Intune
 
@@ -101,22 +101,20 @@ U hebt op elk apparaat een basis- of tussen-CA-certificaat nodig voor verificati
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Navigeer naar **Intune**, **Apparaatconfiguratie**, **Certificeringsinstantie** en klik op **De certificaatconnector downloaden**.
-   * Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de certificaatconnector gaat installeren.
-3. Meld u aan bij de server waarop u de Microsoft Intune Certificate Connector gaat installeren.
-4. Start het installatieprogramma en accepteer de standaardlocatie. De certificaatconnector wordt geïnstalleerd op C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
+1. Selecteer in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
+2. Selecteer op de blade **Intune** de optie **Apparaatconfiguratie**. 
+3. Selecteer op de blade **Apparaatconfiguratie** de optie **Certificeringsinstantie**. 
+4. Klik op **Toevoegen** en selecteer **Connectorbestand downloaden**. Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de connector gaat installeren. 
+5.  Meld u aan bij de server waarop u de Microsoft Intune Certificate Connector gaat installeren.
+6.  Start het installatieprogramma en accepteer de standaardlocatie. De certificaatconnector wordt geïnstalleerd op C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
+    1. Op de pagina Opties voor installatieprogramma kiest u **PFX-distributie**. Klik op **Volgende**.
+    2. Klik op **Installeren** en wacht tot de installatie is voltooid.
+    3. Schakel op de voltooiingspagina het selectievakje **Intune-connector starten** in en klik op **Voltooien**.
+7.  Het venster NDES-connector wordt nu geopend met het tabblad **Inschrijving**. Om de verbinding met Intune in te schakelen, klikt u op **Aanmelden** en geeft u een account met beheerdersmachtigingen op.
+8.  Op het tabblad **Geavanceerd** kunt u het keuzerondje **Systeemaccount van deze computer gebruiken (standaard)** ingeschakeld laten.
+9.  Klik op **Toepassen** en op **Sluiten**.
+10. Ga nu terug naar Azure Portal. Na enkele minuten ziet u een groen vinkje en het woord **Actief** onder **Verbindingsstatus** in **Intune** > **Apparaatconfiguratie** > **Certificeringsinstantie**. Dit is een bevestiging dat uw connectorserver kan communiceren met Intune.
 
-      a. Op de pagina Opties voor installatieprogramma kiest u **PFX-distributie**. Klik op **Volgende**.
-
-   b. Klik op **Installeren** en wacht tot de installatie is voltooid.
-
-   c. Schakel op de voltooiingspagina het selectievakje **Intune-connector starten** in en klik op **Voltooien**.
-
-5. Het venster NDES-connector wordt nu geopend met het tabblad **Inschrijving**. Om de verbinding met Intune in te schakelen, klikt u op **Aanmelden** en geeft u een account met beheerdersmachtigingen op.
-6. Op het tabblad **Geavanceerd** kunt u het keuzerondje **Systeemaccount van deze computer gebruiken (standaard)** ingeschakeld laten.
-7. Klik op **Toepassen** en op **Sluiten**.
-8. Ga nu terug naar Azure Portal. Onder **Intune**, **Apparaatconfiguratie**, **Certificeringsinstantie** ziet u na enkele minuten een groen vinkje en het woord **Actief** onder **Verbindingsstatus**. Dit is een bevestiging dat uw connectorserver kan communiceren met Intune.
 
 ## <a name="create-a-device-configuration-profile"></a>Een apparaatconfiguratieprofiel maken
 
@@ -169,4 +167,4 @@ U hebt op elk apparaat een basis- of tussen-CA-certificaat nodig voor verificati
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigeren naar Intune in Azure Portal en een nieuw profiel voor een vertrouwd certificaat maken"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Een profiel maken en een vertrouwd certificaat uploaden"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "De certificaatconnector downloaden van Azure Portal"
+[ConnectorDownload]: ./media/certificates-download-connector.png "De certificaatconnector downloaden van Azure Portal"  

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
@@ -34,7 +34,7 @@ De ondersteuningsafdeling van uw bedrijf kan informatie zien die relevant is voo
 U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
 - Door de bedrijfsportal-app op uw apparaat te installeren. Meestal downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar het ondersteuningsteam van uw bedrijf kan de bedrijfsportal-app ook voor u installeren.
-- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) die het ondersteuningsteam van uw bedrijf heeft ingesteld.
+- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) die het ondersteuningsteam van uw bedrijf heeft ingesteld.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Wat is het verschil tussen de app en de website?
 Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Taken die u kunt uitvoeren:
@@ -60,8 +60,9 @@ Wanneer u een computer of apparaat aan de bedrijfsportal toevoegt, kan het zijn 
 Voor meer informatie over wat het ondersteuningsteam van het bedrijf wel en niet op uw apparaat kan zien, gebruikt u de koppeling die overeenkomt met het type apparaat dat u gebruikt:
 
 - [De bedrijfsportal-app voor Android installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [De bedrijfsportal-app voor iOS en macOS installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [De bedrijfsportal-app voor Windows installeren](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [De bedrijfsportal-app voor iOS installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [De bedrijfsportal-app voor macOS installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [De bedrijfsportal-app voor Windows installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Wat voor computers of apparaten kunt u toevoegen aan de bedrijfsportal?
 -   Apple-apparaten met iOS (zoals iPhone en iPad) en Mac OS (zoals MacBook en iMac)
@@ -78,7 +79,8 @@ Ja, u kunt een computer of apparaat verwijderen uit de bedrijfsportal of deze op
 Wanneer u een computer of apparaat *verwijdert* van de Bedrijfsportal, wordt de registratie van uw apparaat bij Intune ongedaan gemaakt. Zodra u de registratie ongedaan hebt gemaakt, is de bedrijfsportal niet meer toegankelijk vanaf dat apparaat en worden bepaalde bedrijfsgegevens mogelijk verwijderd van uw apparaat. Als u wilt weten hoe u uw apparaat uit de bedrijfsportal verwijdert, kiest u een van de volgende koppelingen:
 
 - [De registratie van uw Android-apparaat ongedaan maken](unenroll-your-device-from-intune-android.md)
-- [De registratie van uw iOS- of macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-ios.md)
+- [De registratie van uw iOS-apparaat ongedaan maken](unenroll-your-device-from-intune-ios.md)
+- [De registratie van uw macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-macos.md)
 - [De registratie van uw Windows-apparaat ongedaan maken](unenroll-your-device-from-intune-windows.md)
 
 Wanneer u een computer of apparaat *opnieuw instelt*, probeert de bedrijfsportal de standaardinstellingen van de fabrikant opnieuw in te stellen op uw computer of apparaat. Wanneer uw apparaat opnieuw wordt ingesteld, worden alle bedrijfsgegevens en persoonlijke gegevens verwijderd van het apparaat. Als u uw apparaat bent verloren, kunt u het apparaat ook extern opnieuw instellen via website van de bedrijfsportal.
@@ -95,6 +97,7 @@ Microsoft raadt u aan eerst te proberen uw probleem zelf te verhelpen. Er is een
 
 - [Veelvoorkomende problemen met uw Android-apparaat oplossen](troubleshoot-your-device-android.md)
 - [Veelvoorkomende problemen met uw iOS-apparaat oplossen](troubleshoot-your-device-ios.md)
+- [Veelvoorkomende problemen met uw macOS-apparaat oplossen](troubleshoot-your-device-macos.md)
 - [Veelvoorkomende problemen met uw Windows-apparaat oplossen](troubleshoot-your-device-windows.md)
 
-U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met het ondersteuningsteam van uw bedrijf voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met het ondersteuningsteam van uw bedrijf voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

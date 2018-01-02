@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Toegang tot uw bedrijfsbronnen instellen
 
@@ -57,7 +57,7 @@ Uw bedrijf heeft veel vertrouwelijke informatie in e-mail, bestanden, netwerken,
 |![Profiel geopend in instellingen.](./media/ios-9-cp-enroll-1711.png)|Tik op **INSTALLEREN**.|
 |![Profiel modaal dialoogvenster installeren vanaf de onderkant van het scherm.](./media/ios-10-cp-enroll-1711.png)|Tik op **INSTALLEREN**.|
 |![Profiel installeert het laadscherm.](./media/ios-11-cp-enroll-1711.png)|Wacht totdat het laden is voltooid.|
-|![Waarschuwingsscherm voor profielbeheer.](./media/ios-12-cp-enroll-1711.png)|Deze door Apple geschreven waarschuwing geeft meer informatie over welke typen acties kunnen worden uitgevoerd op een apparaat dat onder beheer staat. Meer informatie over [welke informatie uw bedrijf kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![Waarschuwingsscherm voor profielbeheer.](./media/ios-12-cp-enroll-1711.png)|Deze door Apple geschreven waarschuwing geeft meer informatie over welke typen acties kunnen worden uitgevoerd op een apparaat dat onder beheer staat. Meer informatie over [welke informatie uw bedrijf kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
 |![Systeemprompt met vraag over vertrouwen in extern beheer.](./media/ios-13-cp-enroll-1711.png)|Tik op **Vertrouwen** zodat uw bedrijf zakelijke gegevens en instellingen op uw apparaat kan beheren.|
 |![Profiel voor voltooien installatie laadscherm.](./media/ios-14-cp-enroll-1711.png)|Wacht totdat het laden is voltooid.|
 |![Scherm Profiel geïnstalleerd.](./media/ios-15-cp-enroll-1711.png)|Uw profiel is geïnstalleerd en de zakelijke gegevens en instellingen van uw apparaat zijn nu veel beter geschikt om te worden beheerd.|
@@ -75,4 +75,4 @@ Uw bedrijf heeft veel vertrouwelijke informatie in e-mail, bestanden, netwerken,
 > [!Note]
 > U moet wellicht nog enkele andere stappen uitvoeren voordat het apparaat volledig is beheerd. Meer informatie over het [registreren van uw apparaat met Telecom-onkostenbeheer](enroll-your-device-with-telecom-expense-management-ios.md). Als uw organisatie Apple Device Enrollment Program gebruikt, meer, vindt u [hier](enroll-your-device-dep-ios.md) meer informatie.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
