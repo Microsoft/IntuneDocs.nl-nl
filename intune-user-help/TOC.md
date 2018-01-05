@@ -27,12 +27,14 @@
 ### [Veelvoorkomende problemen met Android oplossen](troubleshoot-your-device-android.md)
 #### [Apparaatcompatibiliteit controleren](check-compliance-on-your-device-android.md)
 #### [E-mailsynchronisatie in Outlook in batterijbesparingsmodus](power-saving-mode-android.md)
+#### [Veelvoorkomende problemen met Samsung Knox oplossen](samsung-knox-errors-android.md)
 
 #### Logboeken gebruiken problemen op te lossen
 ##### [Uitgebreide logboekregistratie inschakelen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Logboeken via e-mail verzenden](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Logboeken met een USB-kabel verzenden](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Inschrijvingfouten verzenden](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Fouten naar Microsoft verzenden](send-logs-to-microsoft-android.md)
 
 ### Vragen voor het besturingssysteem
 #### [Uw apparaat bijwerken](you-need-to-update-your-android-device.md)
@@ -74,6 +76,7 @@
 #### [Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 #### [Fouten naar uw bedrijf verzenden](send-errors-to-your-it-admin-ios.md)
 #### [Fouten naar Microsoft verzenden](send-logs-to-microsoft-ios.md)
+#### [Er is een bestaand zakelijk e-mailaccount gevonden](existing-company-email-account-found.md)
 #### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Er is een fout opgetreden](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
-### [Windows 10-apparaten registreren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Andere versies van Windows registreren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [Wat gebeurt er wanneer u een Windows 10-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [Wat gebeurt er wanneer u andere versies van Windows registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Uw Windows-apparaat inschrijven](enroll-your-device-in-intune-windows.md)
-### [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Uw Windows 10-apparaat inschrijven](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Uw Windows 8.1- of Windows RT 8.1-apparaat registreren](enroll-your-w81-or-rt81-windows.md)
+#### [Uw Windows Phone 8.1-apparaat registreren](enroll-your-wp81-windows.md)
 ### [Een apparaat opnieuw instellen](reset-erase-your-device-cpwebsite.md)
-
 ### [Een apparaat versleutelen](encrypt-your-device-windows.md)
 ### [Een wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)
 ### [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-windows.md)

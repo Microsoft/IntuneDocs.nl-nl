@@ -301,7 +301,7 @@
               href: device-restrictions-macos.md
             - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
-            - name: 'Windows Phone 8,1'
+            - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -333,7 +333,7 @@
               href: vpn-settings-macos.md
             - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
-            - name: 'Windows Phone 8,1'
+            - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -581,7 +581,7 @@
           items:
             - name: VPN-profiel per app
               href: android-pulse-secure-per-app-vpn.md
-            - name: Apps voor Samsung KNOX Standard toestaan/blokkeren
+            - name: Apps voor Samsung Knox Standard toestaan/blokkeren
               href: samsung-knox-apps-allow-block.md
         - name: iOS
           href: custom-settings-ios.md
