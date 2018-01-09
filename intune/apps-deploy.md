@@ -3,8 +3,8 @@ title: Apps aan groepen toewijzen
 titlesuffix: Azure portal
 description: Als u een app aan Intune hebt toegevoegd, wilt u deze wellicht toewijzen aan groepen met gebruikers of apparaten.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Apps aan groepen toewijzen met Microsoft Intune
 
@@ -32,21 +32,21 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
 ||||
 |-|-|-|-|
 |&nbsp;|Apparaten die zijn ingeschreven met Intune|Apparaten die niet zijn ingeschreven met Intune|
-|Toewijzen aan gebruikers|Yes|Ja|
-|Toewijzen aan apparaten|Yes|Nee|
-|Ingepakte apps of apps waarin Intune SDK is opgenomen (voor app-beveiligingsbeleid) toewijzen|Yes|Yes|
-|Apps toewijzen als beschikbaar|Ja|Yes|
-|Apps toewijzen als vereist|Yes|Nee|
-|Apps verwijderen|Yes|Nee|
-|Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app|Yes|Nee|
-|Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app op internet|Yes|Yes|
+|Toewijzen aan gebruikers|Ja|Ja|
+|Toewijzen aan apparaten|Ja|Nee|
+|Ingepakte apps of apps waarin Intune SDK is opgenomen (voor app-beveiligingsbeleid) toewijzen|Ja|Ja|
+|Apps toewijzen als beschikbaar|Ja|Ja|
+|Apps toewijzen als vereist|Ja|Nee|
+|Apps verwijderen|Ja|Nee|
+|Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app|Ja|Nee|
+|Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app op internet|Ja|Ja|
 
 > [!NOTE]
 > Op dit moment kunt u iOS- en Android-apps (beide Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet met Intune zijn ingeschreven.
 
 ## <a name="how-to-assign-an-app"></a>Een app toewijzen
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 1. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.

@@ -3,10 +3,10 @@ title: Apps beheren die zijn gekocht via het iOS-volume-aankoopprogramma | Micro
 titlesuffix: Azure portal
 description: Meer informatie over hoe u apps kunt synchroniseren die u via het Volume Purchase Program in de iOS Store hebt gekocht, hoe u deze apps kunt beheren en hoe u het gebruik ervan kunt bijhouden.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune
 
@@ -38,9 +38,9 @@ U kunt twee methoden gebruiken voor het toewijzen van apps die zijn gekocht via 
 
 ### <a name="device-licensing"></a>Apparaatlicenties
 
-Wanneer u een app aan apparaten toewijst, wordt er één app-licentie gebruikt en deze blijft gekoppeld aan het apparaat waaraan u de licentie hebt toegewezen. 
+Wanneer u een app aan apparaten toewijst, wordt er één app-licentie gebruikt en deze blijft gekoppeld aan het apparaat waaraan u de licentie hebt toegewezen.
 
-Wanneer u apps aan een apparaat toewijst die zijn gekocht via het volume-aankoopprogramma, hoeft de eindgebruiker van het apparaat geen Apple-id te verstrekken voor toegang tot de Store. 
+Wanneer u apps aan een apparaat toewijst die zijn gekocht via het volume-aankoopprogramma, hoeft de eindgebruiker van het apparaat geen Apple-id te verstrekken voor toegang tot de Store.
 
 ### <a name="user-licensing"></a>Gebruikerslicenties
 
@@ -80,7 +80,7 @@ Als u een apparaat gaat instellen voor een nieuwe Intune-gebruiker, moet u het a
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 1.  Kies op de blade **Intune** de optie **Mobiele apps** > **iOS VPP-tokens** onder **Setup**.
 2.  Selecteer **Maken** op de blade met de lijst met VPP-tokens.
@@ -92,7 +92,8 @@ Als u een apparaat gaat instellen voor een nieuwe Intune-gebruiker, moet u het a
         > Als u het land wijzigt, worden de metagegevens en store-URL van de apps bijgewerkt bij de volgende synchronisatie met de Apple-service voor de apps die met deze token zijn gemaakt. De app wordt niet bijgewerkt als deze niet bestaat in de store van het nieuwe land.
 
     - **Type VPP-account**: u hebt de keuze uit **Bedrijven** of **Onderwijs**.
-    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze optie is ingeschakeld, worden alle apps die zijn aangeschaft voor het opgegeven token, bijgewerkt via de Intune-service wanneer het apparaat wordt ingecheckt. Updates voor de VPP-app worden gedetecteerd in de App Store en automatisch doorgestuurd naar het apparaat wanneer dit wordt ingecheckt.
+    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze optie is ingeschakeld, worden alle apps die zijn aangeschaft voor het opgegeven token, bijgewerkt via de Intune-service wanneer het apparaat wordt ingecheckt.
+Updates voor de VPP-app worden gedetecteerd in de App Store en automatisch doorgestuurd naar het apparaat wanneer dit wordt ingecheckt.
 4. Selecteer **Uploaden** wanneer u klaar bent.
 
 Het token wordt weergegeven op de blade met de lijst met tokens.
@@ -134,6 +135,8 @@ De eindgebruiker wordt in een aantal scenario’s gevraagd om de VPP-app te inst
 ## <a name="further-information"></a>Meer informatie
 
 Als u een licentie wilt vrijmaken, moet u de toewijzingsactie wijzigen in **Verwijderen**. De licentie wordt vrijgemaakt nadat de app is verwijderd. Als u een app die aan een gebruiker werd toegewezen verwijdert, probeert Intune alle app-licenties vrij te maken die aan die gebruiker waren gekoppeld.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app op een apparaat te installeren, wordt de gebruiker gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Deelname aan het programma moet plaatsvinden voordat de installatie van de app wordt uitgevoerd. De uitnodiging om deel te nemen aan het Apple Volume Purchase Program vereist dat de gebruiker de iTunes-app op het iOS-apparaat kan gebruiken. Als u een beleid hebt ingesteld om de iTunes Store-app uit te schakelen, werkt de gebruikerslicentie niet voor VPP-apps. U kunt dit probleem oplossen door het beleid te verwijderen, zodat de iTunes-app is toegestaan, of door een licentie te verlenen op basis van het apparaat.
 

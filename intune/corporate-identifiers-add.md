@@ -3,8 +3,8 @@ title: "Zakelijke id’s toevoegen aan Intune"
 titlesuffix: Azure portal
 description: Meer informatie over het toevoegen van zakelijke id's (inschrijvingsmethode, IMEI en serienummers) aan Microsoft Intune. "
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 1095ef736488754296eca4f21b2bf10226b43847
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -42,7 +42,7 @@ Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.cs
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
 [Lees hier meer informatie over het vinden van het serienummer van een Apple-apparaat](https://support.apple.com/HT204308).<br>
-[Meer informatie over de locatie van het serienummer van een Android-apparaat](https://support.google.com/store/answer/3333000).
+[Lees hier meer informatie over het vinden van het serienummer van een Android-apparaat](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers"></a>Zakelijke id's toevoegen
 Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats de IMEI- of serienummers in de linkerkolom en de details in de rechterkolom. U kunt in één CSV-bestand maar één type id, IMEI-nummer of serienummer importeren. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 5.000 rijen per CSV-bestand.

@@ -2,8 +2,8 @@
 title: Mobile App Management (MAM) | Microsoft Docs
 description: Naslagonderwerp voor de categorie Mobile App Management van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 4951ec43b2abdb52af091b2d1366bd23a9c2ab5b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Naslag voor MAM-entiteiten (Mobile Application Management)
 
@@ -36,7 +36,7 @@ De categorie **Mobile App Management** bevat entiteiten voor mobiele apps, zoals
 
 De entiteit **MamApplication** bevat een lijst met LOB-apps (Line-of-Business) die via Mobile Application Management (MAM) worden beheerd, maar die niet zijn ingeschreven in uw bedrijf.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | ApplicationKey |De unieke id van de MAM-app in het datawarehouse. |123 |
 | ApplicationName |De naam van de MAM-app. |"Word" |
@@ -50,12 +50,12 @@ De entiteit **MamApplication** bevat een lijst met LOB-apps (Line-of-Business) d
 
 De entiteit **MamApplicationInstance** bevat een lijst met beheerde MAM-apps (Mobile Application Management) als zelfstandige exemplaren per gebruiker per apparaat. Alle gebruikers en apparaten die worden vermeld in de entiteit zijn beveiligd, wat inhoudt dat er ten minste één MAM-beleid aan de gebruiker of het apparaat is toegewezen.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | ApplicationInstanceKey |De unieke id van het MAM-app-exemplaar in het datawarehouse (surrogaatsleutel). |123 |
 | UserId |De gebruikers-id van de gebruiker die deze MAM-app heeft geïnstalleerd. |b66bc706-ffff-7437-0340-032819502773 |
 | ApplicationInstanceId |De unieke id van het MAM-app-exemplaar, vergelijkbaar met ApplicationInstanceKey, maar de id is een natuurlijke sleutel. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |De toepassings-ID van deze MAM-app |com.microsoft.groupies-daily.<IOS> |
+| ApplicationID |De toepassings-ID van deze MAM-app |com.microsoft.groupies-daily.<IOS> |
 | ApplicationVersion |De toepassingsversie van deze MAM-app. |2 |
 | CreatedDate |De datum waarop deze record van het MAM-app-exemplaar is gemaakt. De waarde kan null zijn. |11/23/2016 12:00:00 AM |
 | Platform |Het platform van het apparaat waarop deze MAM-app is geïnstalleerd. |2 |
@@ -75,7 +75,7 @@ De entiteit **MamCheckin** vertegenwoordigt gegevens die worden verzameld wannee
 > [!Note]  
 > Wanneer een app-exemplaar meerdere keren per dag wordt ingecheckt, wordt dit slechts eenmaal geregistreerd in het datawarehouse.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | DateKey |De datum waarop het inchecken van de MAM-app is vastgelegd in het datawarehouse. | 20160703 |
 | ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app. |5/2/1900 12:00:00 AM |
@@ -90,7 +90,7 @@ De entiteit **MamCheckin** vertegenwoordigt gegevens die worden verzameld wannee
 
 De entiteit **MamDeviceHealth** vertegenwoordigt apparaten waarop MAM-beleid (Mobile Application Management) is geïmplementeerd, zelfs als ze opengebroken zijn.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | DeviceHealthKey |De unieke id van het apparaat en de bijbehorende status in het datawarehouse (surrogaatsleutel). |1/1/1900 12:00:00 AM |
 | DeviceHealth |De unieke id van het apparaat en de bijbehorende status, vergelijkbaar met DeviceHealthKey, maar de id is een natuurlijke sleutel. |1/1/1900 12:00:00 AM |
@@ -101,7 +101,7 @@ De entiteit **MamDeviceHealth** vertegenwoordigt apparaten waarop MAM-beleid (Mo
 
 De entiteit **MamEffectivePolicy** bevat een lijst van alle effectieve MAM-beleidsregels (Mobile Application Management) die zijn toegepast in uw organisatie. Een effectief toegepast beleid is het resultaat van het samenvoegen van alle beleidsregels die relevant zijn voor een bepaalde app en gebruiker.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | EffectivePolicyKey |De unieke id van het effectieve MAM-beleid in het datawarehouse. |2 |
 | RealPolicyKey |De unieke id van het MAM-beleid dat is opgesteld door de IT-professional. |1 |
@@ -111,10 +111,10 @@ De entiteit **MamEffectivePolicy** bevat een lijst van alle effectieve MAM-belei
 
 De entiteit **MamGlobalApplication** bevat een lijst met Store-apps die via Mobile Application Management (MAM) worden beheerd, maar die niet zijn ingeschreven in uw bedrijf.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | ApplicationKey |De unieke id van de Store-app in het datawarehouse, ook wel de surrogaatsleutel genoemd |123 |
-| ApplicationId |De unieke id van de Store-app. De id is vergelijkbaar met ApplicationKey, maar het is een natuurlijke sleutel. |com.microsoft.skydrive.<ios> |
+| ApplicationID |De unieke id van de Store-app. De id is vergelijkbaar met ApplicationKey, maar het is een natuurlijke sleutel. |com.microsoft.skydrive.<ios> |
 | ApplicationName |De algemene naam van de MAM-toepassing |Skydrive |
 | RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze algemene MAM-toepassing het laatst is gewijzigd in het datawarehouse |11/23/2016 12:00:00 AM |
 
@@ -122,7 +122,7 @@ De entiteit **MamGlobalApplication** bevat een lijst met Store-apps die via Mobi
 
 De entiteit **MamPlatform** bevat de platformnamen en -typen waarop een MAM-app (Mobile Application Management) is geïnstalleerd.
 
-| Eigenschap | Beschrijving | Voorbeeld |
+| Eigenschap | Description | Voorbeeld |
 |---------|------------|--------|
 | PlatformKey |De unieke id van het platform in het datawarehouse (surrogaatsleutel). |123 |
 | Platform |De unieke id van de platform, vergelijkbaar met PlatformKey, maar het is een natuurlijke sleutel. |123 |

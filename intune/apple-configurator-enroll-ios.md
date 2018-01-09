@@ -3,8 +3,8 @@ title: iOS-apparaten inschrijven - Apple Configurator en Configuratieassistent
 titlesuffix: Azure portal
 description: In dit onderwerp leest u hoe u Apple Configurator kunt gebruiken om iOS-apparaten die bedrijfseigendom zijn in te schrijven met Configuratieassistent.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.openlocfilehash: c758519f523bf6b61adc7f779043aa4a944998ea
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
 
@@ -75,7 +75,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen tijdens het i
     DLXQPCWVGHMJ,apparaatdetails
 
    [Lees hier meer informatie over het vinden van het serienummer van een iOS-apparaat](https://support.apple.com/HT204073).
-2. Kies in Intune in Azure Portal achtereenvolgens**Apparaatinschrijving** en **Apple-inschrijving**.
+2. Kies in Intune in Azure Portal achtereenvolgens **Apparaatinschrijving** en **Apple-inschrijving**.
 3. Selecteer **Apple Configurator-apparaten** onder **Instellingen van de inschrijving met Apple Configurator beheren**.
 4. Selecteer **Toevoegen**.
 5. Selecteer een **inschrijvingsprofiel** om toe te passen op de serienummers die u importeert. Als u een bestand met nieuwe details importeert dat de bestaande details overschrijft, selecteert u **Details voor bestaande id's overschrijven**.
@@ -93,7 +93,7 @@ U wijst een inschrijvingsprofiel toe als u iOS-serienummers voor inschrijving me
 4. Selecteer onder **Profiel toewijzen** het **nieuwe profiel** dat u wilt toewijzen en selecteer vervolgens **Toewijzen**.
 
 #### <a name="assign-from-profiles"></a>Toewijzen vanaf profielen
-1. Kies in Intune in Azure Portal achtereenvolgens**Apparaatinschrijving** en **Apple-inschrijving**.
+1. Kies in Intune in Azure Portal achtereenvolgens **Apparaatinschrijving** en **Apple-inschrijving**.
 2. Kies **AC-profielen** en selecteer vervolgens het profiel waaraan u serienummers wilt toewijzen.
 3. Kies **Toegewezen apparaten** in het profiel en kies vervolgens **Toewijzen**.
 4. Filter op de serienummers die u aan het profiel wilt toewijzen, selecteer de apparaten en kies **Toewijzen**.
