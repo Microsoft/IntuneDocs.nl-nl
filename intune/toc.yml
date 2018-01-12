@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Naslag voor gebruikersentiteit
               href: reports-ref-user.md
-    - name: Windows-apps sideloaden
+    - name: Intune Graph API
       href: intune-graph-apis.md
       items:
         - name: Documentatie over Graph-API's voor Intune

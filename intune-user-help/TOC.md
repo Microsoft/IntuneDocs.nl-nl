@@ -6,6 +6,8 @@
 
 ## [Mijn apparaat opnieuw instellen](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [Mijn wachtwoord bijwerken](password-does-not-meet-it-administrator-requirements.md)
+
 ## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
 
 ## [Uw Android-apparaat gebruiken](using-your-android-device-with-intune.md)
@@ -72,7 +74,7 @@
 #### [Wat gebeurt er als u de inschrijving van uw apparaat ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Uw apparaat handmatig synchroniseren](sync-your-device-manually-ios.md)
 
-#### [Veelvoorkomende problemen met iOS oplossen](troubleshoot-your-device-iOS.md)
+### [Veelvoorkomende problemen met iOS oplossen](troubleshoot-your-device-iOS.md)
 #### [Opnieuw verbinding maken met een iOS-apparaat waarmee is geknoeid](how-to-reconnect-a-compromised-ios-device.md)
 #### [Fouten naar uw bedrijf verzenden](send-errors-to-your-it-admin-ios.md)
 #### [Fouten naar Microsoft verzenden](send-logs-to-microsoft-ios.md)
@@ -114,8 +116,9 @@
 ## [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een Windows 10-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 #### [Wat gebeurt er wanneer u andere versies van Windows registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-### [Uw Windows-apparaat inschrijven](enroll-your-device-in-intune-windows.md)
-#### [Uw Windows 10-apparaat inschrijven](enroll-your-w10-phone-or-w10-pc-windows.md)
+### [Uw Windows-apparaat registreren](enroll-your-device-in-intune-windows.md)
+#### [Uw Windows 10-apparaat registreren](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Uw Windows 10-apparaat registreren via 'Toegang tot werk of school'](enroll-your-w10-device-access-work-or-school.md)
 #### [Uw Windows 8.1- of Windows RT 8.1-apparaat registreren](enroll-your-w81-or-rt81-windows.md)
 #### [Uw Windows Phone 8.1-apparaat registreren](enroll-your-wp81-windows.md)
 ### [Een apparaat opnieuw instellen](reset-erase-your-device-cpwebsite.md)
