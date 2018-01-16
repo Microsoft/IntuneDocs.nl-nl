@@ -5,18 +5,18 @@ keywords:
 author: nathbarn
 manager: angrobe
 ms.date: 03/07/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 9471f1a64e846b81c2bc4b9f5deb08c65ab382ce
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1c72a7008e69f48d4ef3300c6358a99aea9680ef
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="get-started-with-microsoft-intune"></a>Aan de slag met Microsoft Intune
 

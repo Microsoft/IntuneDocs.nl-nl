@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/21/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dde251482dd951200e5c1a7f19749ee863cd71b4
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7177616d654ca9af0b7e7276a1a4b5453117f36c
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Apparaten extern opnieuw opstarten met Intune
 
@@ -40,7 +40,7 @@ De apparaatactie **Opnieuw opstarten** zorgt ervoor dat het apparaat dat kiest, 
 
 ## <a name="how-to-restart-a-device"></a>Apparaten opnieuw opstarten
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
