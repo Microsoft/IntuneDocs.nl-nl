@@ -3,10 +3,10 @@ title: Instellingen voor apparaatfuncties configureren in Intune
 titleSuffix: Azure portal
 description: Meer informatie over hoe u met Intune functies kunt configureren op de apparaten die u beheert.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2723bfc0adecd9b6265b4af43e6fe185882b5e
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Instellingen voor apparaatfuncties configureren in Microsoft Intune
 
@@ -40,13 +40,14 @@ Lees in dit onderwerp wat de basisbeginselen zijn voor het configureren van de p
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen voor apparaatfuncties kiezen:
     - **iOS**
     - **macOS**
-6. Kies **Apparaatfuncties** in de vervolgkeuzelijst **Profieltype**. 
+6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Apparaatfuncties**. 
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
     - [AirPrint-instellingen voor iOS en MacOS](air-print-settings-ios-macos.md)
     - [AirPlay-instellingen voor iOS](airplay-settings-ios.md)
     - [Indelingsinstellingen voor het iOS-startscherm](home-screen-settings-ios.md)
     - [App-meldingsinstellingen voor iOS opgeven](app-notification-settings-ios.md)
     - [Configuratie-instellingen voor gedeelde apparaten voor iOS](shared-device-settings-ios.md)
+    - [Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten](sso-ios.md)
     - [Filterinstellingen voor webinhoud in iOS](web-content-filter-settings-ios.md)
 
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.

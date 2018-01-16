@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/30/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
@@ -42,12 +42,9 @@ U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Mic
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>De bedrijfsportal-app voor macOS in Jamf Pro implementeren
 
-U kunt de bedrijfsportal-app voor macOS op twee manieren in Jamf Pro implementeren:
+U moet de bedrijfsportal-app voor macOS in Jamf Pro implementeren als achtergrondinstallatie met de onderstaande procedure:
 
-- De implementatie van de bedrijfsportal-app beschikbaar maken in Jamf Self Service, of
-- De bedrijfsportal-app in de achtergrond installeren, zodat gebruikers de onderstaande procedure volgen:
-
-1. Download op een macOS-apparaat de huidige versie van de [bedrijfsportal-app voor macOS](https://go.microsoft.com/fwlink/?linkid=862280).
+1. Download op een macOS-apparaat de huidige versie van de [bedrijfsportal-app voor macOS](https://go.microsoft.com/fwlink/?linkid=862280). Installeer deze niet; u hebt een kopie van de app nodig om te uploaden naar Jamf Pro.
 2. Open Jamf Pro en navigeer naar **Computer management** > **Packages**.
 3. Maak een nieuw pakket met de bedrijfsportal-app voor macOS en klik vervolgens op **Save**.
 4. Open **Computers** > **Policies** en selecteer **New**.
@@ -71,7 +68,7 @@ Eindgebruikers moeten de bedrijfsportal-app via de selfservice van Jamf starten 
 > De bedrijfsportal-app moet worden gestart vanuit Jamf Self Service om de apparaatregistratie te starten. <br><br>Als de bedrijfsportal-app handmatig wordt gestart (bijvoorbeeld via de map Toepassingen of Downloads), wordt het apparaat niet geregistreerd. Als een eindgebruiker de bedrijfsportal handmatig start, verschijnt de waarschuwing 'AccountNotOnboarded'.
 
 1. Navigeer in Jamf Pro naar **Computers** > **Policies** en maak een nieuw beleid voor apparaatregistratie.
-2. Configureer de nettolading **Microsoft Intune Integration**, inclusief de frequentie voor triggers en uitvoering. Stel de prioriteit in op **After**.
+2. Configureer de nettolading **Microsoft Intune Integration**, inclusief de frequentie voor triggers en uitvoering.
 3. Klik op het tabblad **Scope** en pas het beleid toe op alle doelapparaten.
 4. Klik op het tabblad **Self Service** om het beleid beschikbaar te maken in de selfservice van Jamf. Neem het beleid op in de categorie **Device Compliance**. Klik op **Opslaan**.
 

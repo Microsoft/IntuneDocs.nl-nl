@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1b4152cfe5442b01f0d81c724dfa5eccb02ae29
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5bb34d9f180240e2ea03d43f42dc9ea8aee7adcd
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>VPN-instellingen configureren in Microsoft Intune
 
@@ -35,17 +35,17 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 
 |Type verbinding|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Yes|
+|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
 |Cisco (IPsec)|Nee|Ja|Nee|Nee|Nee|Nee|
-|Citrix|Yes|Ja|Nee|Nee|Nee|Ja|
+|Citrix|Ja|Ja|Nee|Nee|Nee|Ja|
 |F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
-|Dell SonicWALL Mobile Connect|Ja|Ja|Ja|Ja|Ja|Yes|
-|Check Point Capsule VPN|Yes|Ja|Ja|Ja|Ja|Yes|
+|Dell SonicWALL Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
+|Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
 |Cisco AnyConnect|Ja|Ja|Ja|Nee|Nee|Nee|
-|Automatisch|Nee|Nee|Nee|Nee|Nee|Yes|
+|Automatisch|Nee|Nee|Nee|Nee|Nee|Ja|
 |IKEv2|Nee|Nee|Nee|Nee|Nee|Ja|
-|L2TP|Nee|Nee|Nee|Nee|Nee|Yes|
-|PPTP|Nee|Nee|Nee|Nee|Nee|Yes|
+|L2TP|Nee|Nee|Nee|Nee|Nee|Ja|
+|PPTP|Nee|Nee|Nee|Nee|Nee|Ja|
 |Aangepast|Nee|Ja|Ja|Nee|Nee|Nee|
 
 
@@ -56,7 +56,7 @@ Zie [Create custom VPN profiles](custom-vpn-profiles-create.md) (Aangepaste VPN-
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Een apparaatprofiel met VPN-instellingen maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

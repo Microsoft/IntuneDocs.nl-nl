@@ -2,8 +2,8 @@
 title: Een rapport maken van de OData-feed met Power BI | Microsoft Docs
 description: Maak een treemapvisualisatie met Power BI Desktop, met een interactief filter uit de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 436114837d515d3a03f253c9c8c6e195bff0af41
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
 

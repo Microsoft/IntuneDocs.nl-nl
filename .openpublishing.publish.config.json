@@ -100,14 +100,17 @@
       }
     }
   ],
-  "branch_target_mapping": {},
   "need_generate_pdf_url_template": true,
-     "branch_target_mapping": { 
+    "branch_target_mapping": { 
     "live": [ 
       "Publish", 
       "Pdf" 
+    ], 
+    "live-sxs": [ 
+      "Publish", 
+      "Pdf" 
     ] 
-  },
+  }, 
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "Targets": {

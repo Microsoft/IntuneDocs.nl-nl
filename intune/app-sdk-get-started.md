@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -139,7 +139,7 @@ Zowel Android als iOS gebruiken versie- en buildnummers ter verwijzing naar apps
 
 Let op dat u zowel het versie- als het buildnummer gebruikt wanneer u een line-of-business-app ontwikkelt voor gebruik in Intune. Beheereigenschappen van een Intune-app zijn afhankelijk van een zinvolle **CFBundleVersion** (voor iOS) en **PackageVersionCode** (voor Android). Deze nummers zijn opgenomen in het app-manifest. 
 
-Intune|iOS|Android|Beschrijving|
+Intune|iOS|Android|Description|
 |---|---|---|---|
 Versienummer|CFBundleShortVersionString|PackageVersionName |Dit nummer geeft een specifieke release van de app aan voor eindgebruikers.|
 Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iteratie in de app-code aangegeven.|

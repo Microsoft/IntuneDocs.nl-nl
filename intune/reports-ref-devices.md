@@ -2,8 +2,8 @@
 title: Apparaten - Intune-datawarehouse | Microsoft Docs
 description: Naslagonderwerp voor de categorie Devices van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -37,7 +37,7 @@ De categorie **Devices** bevat entiteiten voor mobiele apparaten waarmee gegeven
 
 De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt verwezen door andere datawarehouse-entiteiten. Met het apparaattype wordt doorgaans het model, de fabrikant of een combinatie van beide beschreven.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | DeviceTypeID |Unieke id van het apparaattype |
 | DeviceTypeKey |Unieke id van het apparaattype in het datawarehouse - surrogaatsleutel |
@@ -45,7 +45,7 @@ De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 
 ## <a name="example"></a>Voorbeeld
 
-| deviceTypeID  | Naam | Beschrijving |
+| deviceTypeID  | Naam | Description |
 |---------|------------|--------|
 | 0 |Desktop |Windows Desktop-apparaat |
 | 1 |WindowsRT |WindowsRT-apparaat |
@@ -72,7 +72,7 @@ De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 
 De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het registratietype waarnaar wordt verwezen door andere datawarehousetabellen.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | clientRegisterationStateID |Unieke id voor registratiestatus |
 | clientRegisterationStateKey |Unieke id van de registratiestatus in het datawarehouse - surrogaatsleutel |
@@ -80,7 +80,7 @@ De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het registratietyp
 
 ## <a name="example"></a>Voorbeeld
 
-| ClientRegisterationStateID  | Naam | Beschrijving |
+| ClientRegisterationStateID  | Naam | Description |
 |---------|------------|--------|
 | 0 |NotRegistered |Niet geregistreerd |
 | 1 |SMSIDConflict |Sms-id-conflict |
@@ -96,7 +96,7 @@ De entiteit **ClientRegistrationStateTypes** vertegenwoordigt het registratietyp
 
 De entiteit **EnrollmentTypes** geeft aan hoe een apparaat is geregistreerd. Met het registratietype wordt de registratiemethode vastgelegd. In de voorbeelden ziet u de verschillende registratietypen en hun betekenis.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | managementStateID |Unieke id van de beheerstatus. |
 | managementStateKey |Unieke id van de beheerstatus in het datawarehouse - surrogaatsleutel. |
@@ -104,7 +104,7 @@ De entiteit **EnrollmentTypes** geeft aan hoe een apparaat is geregistreerd. Met
 
 ## <a name="example"></a>Voorbeeld
 
-| enrollmentTypeID  | Naam | Beschrijving |
+| enrollmentTypeID  | Naam | Description |
 |---------|------------|--------|
 | 0 |Onbekend |Registratietype is niet verzameld |
 | 1 |UserEnrollment |Door de gebruiker geïnitieerde registratie |
@@ -120,7 +120,7 @@ De entiteit **EnrollmentTypes** geeft aan hoe een apparaat is geregistreerd. Met
 
 Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseigendom of privé-eigendom is of dat het niet bekend is wie de eigenaar is.
 
-| Eigenschap  | Beschrijving | Voorbeeld |
+| Eigenschap  | Description | Voorbeeld |
 |---------|------------|--------|
 | ownerTypeID |Unieke id van het type eigenaar. | |
 | ownerTypeKey |Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel. | |
@@ -130,7 +130,7 @@ Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseig
 
 Met de entiteit **MdmStatuses** wordt de nalevingsstatus van het apparaat aangegeven.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | MdmStatusID |Unieke id van de nalevingsstatus |
 | MdmStatusKey |Unieke id van de nalevingsstatus in het datawarehouse - surrogaatsleutel | 
@@ -139,7 +139,7 @@ Met de entiteit **MdmStatuses** wordt de nalevingsstatus van het apparaat aangeg
 
 ## <a name="example"></a>Voorbeeld
 
-| MdmStatusID  | ComplianceStatus | Beschrijving |
+| MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
 | 0 |Onbekend |De nalevingsstatus van het apparaat is onbekend. |
 | 1 |Compliant |Het apparaat voldoet aan het nalevingsbeleid. |
@@ -152,7 +152,7 @@ Met de entiteit **MdmStatuses** wordt de nalevingsstatus van het apparaat aangeg
 
 De entiteit **ManagementStates** verschaft informatie over de status van het apparaat. Informatie kan nuttig zijn wanneer er externe acties zijn toegepast, het apparaat is gekraakt of geroot.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | managementStateID | Unieke id van de beheerstatus. |
 | managementStateKey | Unieke id van de beheerstatus in het datawarehouse - surrogaatsleutel. |
@@ -160,7 +160,7 @@ De entiteit **ManagementStates** verschaft informatie over de status van het app
 
 ## <a name="example"></a>Voorbeeld
 
-| managementStateID  | Naam | Beschrijving |
+| managementStateID  | Naam | Description |
 |---------|------------|--------|
 | 0 |Beheerd | Beheerd zonder externe acties in behandeling. |
 | 1 |RetirePending | Er is een opdracht voor buiten gebruik stellen in behandeling voor het apparaat. |
@@ -179,7 +179,7 @@ De entiteit **ManagementStates** verschaft informatie over de status van het app
 
 De entiteit **WorkPlaceJoinStateTypes** vertegenwoordigt de Active Directory Workplace Join-status van het apparaat.  De registratiewerkstroom kan een of meer certificaten gebruiken om te controleren of verifiëren. Wanneer een apparaat voor WorkPlace wordt geregistreerd, worden deze certificaten gebruikt om het apparaat en de gebruiker te valideren. De uitgifte van certificaten is beschikbaar via een SCEP-server (Simple Certificate Enrollment Point). De waarden in de entiteit geven de verschillende statussen aan die een apparaat kan hebben terwijl het dit proces doorloopt. Sommige van deze statussen omvatten het mislukken van toevoeging aan WorkPlace doordat de uitgifte van een vereist certificaat (van een SCEP-server) mislukt. Als een apparaat deze werkstroom nooit heeft doorlopen, wordt de waarde ingesteld op Onbekend.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | WorkPlaceJoinStateID | Unieke id van de status van toevoeging aan de werkplek |
 | WorkPlaceJoinStateKey | Unieke id van de status van toevoeging aan de werkplek in het datawarehouse - surrogaatsleutel |
@@ -187,7 +187,7 @@ De entiteit **WorkPlaceJoinStateTypes** vertegenwoordigt de Active Directory Wor
 
 ## <a name="example"></a>Voorbeeld
 
-| workPlaceJoinStateID  | Naam | Beschrijving |
+| workPlaceJoinStateID  | Naam | Description |
 |---------|------------|--------|
 | 0 |Onbekend |Als een apparaat niet is toegevoegd aan een werkplek, heeft het de status Onbekend |
 | 1 |Geslaagd |Is toegevoegd aan de werkplek |
@@ -203,7 +203,7 @@ De entiteit **WorkPlaceJoinStateTypes** vertegenwoordigt de Active Directory Wor
 
 De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebruikt om een apparaat te beheren.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | ManagementAgentTypeID | Unieke id van het type beheeragent. |
 | ManagementAgentTypeKey | Unieke id van het type beheeragent in het datawarehouse - surrogaatsleutel. |
@@ -211,7 +211,7 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 
 ## <a name="example"></a>Voorbeeld
 
-| ManagementAgentTypeID  | Naam | Beschrijving |
+| ManagementAgentTypeID  | Naam | Description |
 |---------|------------|--------|
 | 1 |EAS | Het apparaat wordt beheerd via Exchange Active Sync |
 | 2 |MDM | Het apparaat wordt beheerd met behulp van een MDM-agent |
@@ -225,7 +225,7 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 
 Met de entiteit **Devices** worden alle geregistreerde apparaten voor beheer en de bijbehorende eigenschappen weergegeven.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | DeviceKey | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. |
 | DeviceId | Unieke id van het apparaat. |
@@ -270,7 +270,7 @@ Met de entiteit **Devices** worden alle geregistreerde apparaten voor beheer en 
 
 De entiteit **DevicePropertyHistory** heeft dezelfde eigenschappen als de apparatentabel en dagelijkse momentopnamen van elke apparaatrecord per dag voor de afgelopen 90 dagen. De kolom DateKey geeft de dag voor elke rij aan.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | DateKey |Verwijzing naar datumtabel waarmee de dag wordt aangegeven. |
 | DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
@@ -314,7 +314,7 @@ De entiteit **DevicePropertyHistory** heeft dezelfde eigenschappen als de appara
 
 De entiteit **MdmDeviceInventoryHistories** bevat dagelijkse momentopnamen van inventarisgegevens voor MDM-beheerde apparaten voor de afgelopen 90 dagen. De kolom DateKey geeft de dag voor de rij aan. Bepaalde eigenschappen zijn mogelijk niet van toepassing of zijn ingevuld. Raadpleeg deze pagina voor meer informatie. Zie [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune) voor meer informatie.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | DateKey | Verwijzing naar datumtabel waarmee de dag wordt aangegeven. |
 | DeviceKey |Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
@@ -412,7 +412,7 @@ De entiteit **MdmDeviceInventoryHistories** bevat dagelijkse momentopnamen van i
 
 Met de entiteit **ApplicationInventory** worden de apps weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
 
-| Eigenschap  | Beschrijving |
+| Eigenschap  | Description |
 |---------|------------|
 | DeviceKey |Een verwijzing naar de apparatentabel. |
 | ApplicationKey |? (overgenomen van ExchangeDeviceService\DeviceApplication). |

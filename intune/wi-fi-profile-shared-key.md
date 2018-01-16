@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Hieronder wordt beschreven hoe u de **aangepaste apparaatprofielen** van Intune 
 
 > [!NOTE]
 -   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
-- Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
+- Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
 -   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
--  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) gebruiken, die wordt aangeboden door Johnathon Biersack.
+-  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) gebruiken, die wordt aangeboden door Johnathon Biersack.
 
 
 1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een apparaatprofiel **Aangepast** voor dat apparaatplatform en maakt u geen Wi-Fi-profiel.

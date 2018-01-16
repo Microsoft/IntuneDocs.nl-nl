@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+
+## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
+
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Nieuwe stap Apparaatcategorieën in de begeleide instelling voor de bedrijfsportal-app voor Windows 10 <!---1335292--->
+
+Als u [apparaatgroeptoewijzing](device-group-mapping.md) hebt ingeschakeld, begeleidt de bedrijfsportal-app voor Windows 10 uw gebruikers nu bij het selecteren van een apparaatcategorie nadat het apparaat is geregistreerd.
+
+![Categorie voor apparaatgroeptoewijzing](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## <a name="week-of-november-13-2017"></a>Week van 13 november 2017
 

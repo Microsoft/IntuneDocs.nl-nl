@@ -3,8 +3,8 @@ title: Windows Phone 8.1-store-apps toevoegen aan Intune
 titleSuffix: Azure portal
 description: Meer informatie over het toevoegen van store-apps voor Windows Phone 8.1 aan Intune.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 175c670f78123f7a74fe5e7d87fd24ad165cb2ce
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b5ee86715338bd7df432e9f7007ad0be211d3130
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 Store-apps toevoegen aan Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apps beheren** op de blade **Intune**.
 4. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
