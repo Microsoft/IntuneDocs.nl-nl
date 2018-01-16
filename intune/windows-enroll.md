@@ -3,9 +3,9 @@ title: Windows-apparaten inschrijven
 titlesuffix: Azure portal
 description: Mobile Device Management (MDM) in Intune inschakelen voor Windows-apparaten.
 keywords: 
-author: nathbarn
-manager: nathbarn
-ms.date: 11/29/2017
+author: ErikjeMS
+manager: erikje
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bf9ae5f05e21fa2ca7be4af08dace5b96315cec3
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: de3f36a7d04e06d27f1ed942366502ca92d08c59
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="enroll-windows-devices"></a>Windows-apparaten inschrijven
 
@@ -75,7 +75,7 @@ Als u meer dan een UPN-achtervoegsel hebt, moet u een CNAME maken voor elke dome
 Het kan 72 uur duren voordat wijzigingen in DNS-records zijn doorgegeven. U kunt de DNS-wijziging in Intune pas controleren wanneer de DNS-record is doorgegeven.
 
 **Stap 2: CNAME controleren** (optioneel)<br>
-Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies **Apparaten inschrijven** > **Windows-inschrijving** op de blade Intune. Voer in het vak **Geef een geverifieerde domeinnaam op** de URL van de website van het bedrijf in en kies vervolgens **Automatische detectie testen**.
+Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies **Apparaten inschrijven** > **Windows-inschrijving** op de blade Intune. Voer in het vak **Geef een geverifieerde domeinnaam op** de URL van de website van het bedrijf in en kies vervolgens **Automatische detectie testen**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Gebruikers uitleggen hoe ze Windows-apparaten inschrijven
 Laat uw gebruikers weten hoe ze hun Windows-apparaten kunnen inschrijven en wat ze kunnen verwachten nadat deze onder beheer zijn gebracht.

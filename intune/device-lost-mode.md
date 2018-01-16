@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f16bd212c7a23d847da0929933fbd4b497099d0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 54c298e751f2cb63e8c9fd60aa14ed626ab9a0b1
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>De modus Apparaat verloren activeren op iOS-apparaten
 
@@ -37,7 +37,7 @@ Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren app
 
 ## <a name="how-to-activate-lost-mode"></a>De modus Apparaat verloren activeren
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.

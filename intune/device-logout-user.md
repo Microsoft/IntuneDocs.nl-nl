@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 07/13/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 839815417a6b7ad54ea974fac3e885a0cd862fc8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f02e4fb0da11a251c33c6ee1e44ba07848f69f9b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>De huidige gebruiker van met Intune beheerde iOS-apparaten afmelden
 
@@ -38,7 +38,7 @@ Met de actie **Huidige gebruiker afmelden** wordt de huidige gebruiker afgemeld 
 
 ## <a name="how-to-logout-the-current-user"></a>Huidige gebruiker afmelden
 
-1.  Meld u aan bij Azure Portal.
+1.  Meld u aan bij Azure-portal.
 2.  Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3.  Kies **Apparaten** op de blade **Intune**.
 4.  Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.

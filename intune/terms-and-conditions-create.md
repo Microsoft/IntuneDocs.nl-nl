@@ -3,8 +3,8 @@ title: Voorwaarden instellen in Microsoft Intune
 titlesuffix: Azure portal
 description: 'Voorwaarden instellen die voor gebruikers worden weergegeven in de bedrijfsportal voor Intune. '
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63434cbbc9edc668d59fb99968727551e0c4cc40
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: fa35cb7b08f0bbf677dd7d8b5122b8b286c49b72
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Ervoor zorgen dat gebruikers de bedrijfsvoorwaarden accepteren voor toegang
 
@@ -73,13 +73,13 @@ U kunt voorwaarden toewijzen aan groepen gebruikers die ze moeten accepteren voo
 
 ## <a name="monitor-terms-and-conditions"></a>Voorwaarden controleren
 
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune achtereenvolgens **Apparaatinschrijving** en **Voorwaarden**.
+1. Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies op de blade Intune achtereenvolgens **Apparaatinschrijving** en **Voorwaarden**.
 2. Selecteer in de lijst met voorwaarden de voorwaarden die u wilt weergeven en selecteer vervolgens **Acceptatiestatussen**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Werken met meerdere versies van voorwaarden
 U kunt de voorwaarden bewerken en de versies van de voorwaarden beheren. Het wordt aangeraden het versienummer te verhogen en elke keer dat u belangrijke wijzigingen doorvoert te vereisen dat gebruikers de nieuwe voorwaarden accepteren. Behoud het huidige versienummer als u bijvoorbeeld typefouten herstelt of de opmaak wijzigt.
 
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2. Kies op de blade Intune de optie **Apparaatinschrijving**, kies **Voorwaarden**, selecteer de voorwaarden die u wilt aanpassen en selecteer vervolgens **Eigenschappen**.
 

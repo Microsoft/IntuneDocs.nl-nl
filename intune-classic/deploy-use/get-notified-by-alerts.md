@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Gebruik waarschuwingen om op de hoogte te worden gesteld door Microsoft Intune
 
@@ -54,7 +54,7 @@ Bovendien kunt u Intune zodanig configureren dat u per e-mail wordt gewaarschuwd
 
 Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de opties **Beheer** &gt; **Waarschuwingen en meldingen** en kies vervolgens een van deze taken:
 
-|Taak|Beschrijving|
+|Taak|Description|
 |---|------|
 |**Waarschuwingstypen**|Kies het waarschuwingstype dat u wilt configureren en voer vervolgens een van de deze handelingen uit:<br /><br />Kies **Configureren**. Configureer de gewenste instellingen in het dialoogvenster **Waarschuwingstype configureren** en kies vervolgens **OK**.<br /><br />Schakel de waarschuwing **in** of **uit**.<br /><br />Vouw het knooppunt **Waarschuwingstypen** uit en kies een categorie om alleen de waarschuwingstypen in die categorie weer te geven.|
 |**Ontvangers**|Kies **Toevoegen** om een nieuw e-mailadres toe te voegen voor het ontvangen van de e-mailmeldingen die u instelt.<br /><br />U kunt ook bestaande ontvangers **bewerken** of **verwijderen** .<br /><br />Als u meldingen wilt ontvangen, moet u dit e-mailadres ook toevoegen als ontvanger onder **Meldingsregels**.|
@@ -66,7 +66,7 @@ Om waarschuwingen weer te geven in de [Microsoft Intune-beheerconsole](https://m
 
 Gebruik de volgende opties om met waarschuwingen in de Intune-beheerconsole te werken.
 
-|Optie|Beschrijving|
+|Optie|Description|
 |-----|----|
 |**Actieve waarschuwingen weergeven**|Kies een van de volgende mogelijkheden:<br /><br />**Een samenvatting van waarschuwingen weergeven**   De ernstigste fouten worden weergegeven in het deelvenster Waarschuwingen van de werkruimte **Dashboard**. Kies het deelvenster voor gedetailleerde informatie.<br /><br />Daarnaast vindt u een samenvatting van de waarschuwingen op de pagina **Overzicht** van de werkruimte **Waarschuwingen** .<br /><br />**Alle waarschuwingen weergeven**   Kies in de werkruimte **Waarschuwingen** de optie **Alle waarschuwingen**.|
 |**Meldingen weergeven**|Kies een van de volgende mogelijkheden:<br /><br />Kies in de werkruimte **Dashboard** de optie **Meldingen**.<br /><br />Kies in de werkruimte **Waarschuwingen** achtereenvolgens de opties **Alle waarschuwingen** &gt; **Meldingen**.|

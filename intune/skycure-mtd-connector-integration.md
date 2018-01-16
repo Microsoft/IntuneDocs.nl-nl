@@ -3,10 +3,10 @@ title: De integratie van Skycure met Intune instellen
 titlesuffix: Azure portal
 description: De integratie van Skycure met Microsoft Intune instellen.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d495046a990817e73fcee385b3a1482229aac721
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 5662d1add7d5b35f3c2c8cd7a8f9900d197a3548
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
 

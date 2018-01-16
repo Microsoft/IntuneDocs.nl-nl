@@ -3,8 +3,8 @@ title: Windows Store-apps toevoegen aan Intune
 titleSuffix: Azure portal
 description: Meer informatie over het toevoegen van Windows Store-apps aan Intune.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f10da996f8587e63320e31ae57e88a5f14f3f9c2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 19339bee8b362b1168e62da9716dbfd3144e85e7
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Store-apps toevoegen aan Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apps beheren** op de blade **Intune**.
 4. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
@@ -96,7 +96,7 @@ Het ondertekenen en toewijzen van de app gaat als volgt:
 2. Download de Windows 10-bedrijfsportal-app vanuit Microsoft Store voor Bedrijven, zoals hierboven beschreven.  
 3. Voer het script uit met de invoerparameters die zijn opgegeven in de koptekst van het script om de Windows-10-bedrijfsportal-app (hieronder uitgepakt) te ondertekenen. Afhankelijkheden hoeven niet in het script te worden doorgegeven. Deze zijn alleen vereist wanneer de app wordt geüpload naar de Intune-beheerconsole.
 
-|Parameter | Beschrijving|
+|Parameter | Description|
 | ------------- | ------------- |
 |InputWin10AppxBundle |Het pad naar het bron-appxbundle-bestand |
 |OutputWin10AppxBundle |Het uitvoerpad voor het ondertekende appxbundle-bestand.  Win81Appx Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).|

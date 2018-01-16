@@ -2,8 +2,8 @@
 title: Beslissingen voor de technologie voor BYOD met EMS
 description: Belangrijke beslissingen voor de technologie voor het inschakelen van BYOD en beveiligen van zakelijke gegevens met Microsoft Enterprise Mobility + Security.
 keywords: 
-author: 
-ms.author: pfetty
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: a0b5f170c10cff189a269b29ffc466bd2d51ed12
-ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
+ms.openlocfilehash: 9f8fa87c3100a3e0444f6f44a9976c3b399ab334
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Beslissingen voor de technologie voor het inschakelen van BYOD met Microsoft Enterprise Mobility + Security (EMS)
 

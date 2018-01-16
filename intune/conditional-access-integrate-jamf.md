@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |Op zoek naar documentatie over Intune in de klassieke portal? Klik [hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Momenteel alleen als beperkte preview|
-|--|
-|De functies die in dit onderwerp worden beschreven, zijn alleen beschikbaar voor klanten die momenteel over de beperkte preview-versie beschikken. Dit bericht wordt verwijderd wanneer de functies voor alle klanten zijn vrijgegeven.|
-| |
-
 Als uw organisatie gebruikmaakt van [Jamf Pro](https://www.jamf.com) voor het beheren van de Macs van uw eindgebruikers, kunt u gebruikmaken van Microsoft Intune-nalevingsbeleid met voorwaardelijke toegang tot Azure Active Directory om ervoor te zorgen dat apparaten in uw organisatie compatibel zijn.
 
 ## <a name="prerequisites"></a>Vereisten
 
 U hebt het volgende nodig om voorwaardelijke toegang met Jamf Pro te configureren:
 
-- Toegang tot de Intune Private Preview voor voorwaardelijke toegang tot macOS
 - Jamf Pro 10.1.0 of hoger
 - [Bedrijfsportal-app voor macOS ](https://aka.ms/macoscompanyportal)
 - macOS-apparaten met OS X 10.11 Yosemite of hoger
@@ -60,7 +54,7 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 4. Selecteer **Web-app/API**.
 5. Geef de **aanmeldings-URL** op met behulp van de URL van uw Jamf Pro-exemplaar.
 6. Klik op **Toepassing maken**.
-7. Sla de zojuist gemaakte **Toepassings-id** op, open **Instellingen** en navigeer naar **API-toegang** > **Sleutels** om een nieuwe toepassingssleutel te maken. Voer een **beschrijving** in en de tijd waarna de toepassingssleutel **verloopt**, en sla de toepassingssleutel vervolgens op. 
+7. Sla de zojuist gemaakte **Toepassings-id** op, open **Instellingen** en navigeer naar **API-toegang** > **Sleutels** om een nieuwe toepassingssleutel te maken. Voer een **beschrijving** in en de tijd waarna de toepassingssleutel **verloopt**, en sla de toepassingssleutel vervolgens op.
 
   > [!IMPORTANT]
   > De toepassingssleutel wordt tijdens dit proces maar één keer weergegeven. Bewaar de sleutel op een locatie waar u deze eenvoudig kunt terugvinden.
@@ -105,7 +99,7 @@ Jamf Pro legt inventarisinformatie vast over beheerde macOS-apparaten. Jamf Pro 
 * Versleuteld (FileVault 2)
 * Poortwachterstatus
 * Wachtwoord: minimum aantal tekensets
-* Verlopen van wachtwoorden (dagen)
+* Wachtwoordverlooptijd (dagen)
 * Type wachtwoord: eenvoudig, alfanumeriek of onbekend
 * Automatische aanmelding voorkomen
 * Vereiste lengte van de wachtwoordcode

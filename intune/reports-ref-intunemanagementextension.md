@@ -2,8 +2,8 @@
 title: De entiteit IntuneManagementExtension | Microsoft Docs
 description: Naslagonderwerp voor de categorie IntuneManagementExtension van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/06/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30908e4dbb55e16db0e253330175f65fb127d523
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 91a4c46f0ed4681b6633a682e2c6c6a3d1d48521
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-intune-management-extension"></a>Naslag voor Intune-beheeruitbreiding
 
@@ -31,7 +31,7 @@ De categorie **IntuneManagementExtension** bevat entiteiten voor mobiele apparat
 
 De entiteit **IntuneManagementExtensionVersion** bevat een lijst van alle versies die worden gebruikt door IntuneManagementExtension.
 
-| Eigenschap  | Beschrijving | Voorbeeld |
+| Eigenschap  | Description | Voorbeeld |
 |---------|------------|--------|
 | ExtensionVersionKey |De unieke id van de IntuneManagementExtension-versie. | 1 |
 | ExtensionVersion |Het versienummer, bestaande uit vier cijfers. |1.0.2.0 |
@@ -40,7 +40,7 @@ De entiteit **IntuneManagementExtensionVersion** bevat een lijst van alle versie
 
 De **IntuneManagementExtensionHealthState** bevat een lijst van alle mogelijke statussen van de IntuneManagementExtension.
 
-| Eigenschap  | Beschrijving | Voorbeeld |
+| Eigenschap  | Description | Voorbeeld |
 |---------|------------|--------|
 | ExtensionStateKey |Unieke id van de status. | 2 |
 | ExtensionState |De status van een IntuneManagementExtension. | Goed |
@@ -50,7 +50,7 @@ De **IntuneManagementExtensionHealthState** bevat een lijst van alle mogelijke s
 De **IntuneManagementExtension** bevat een lijst dagelijkse IntuneManagementExtension-statussen op elk apparaat met Windows 10.
 De gegevens voor de afgelopen 60 dagen worden bewaard. 
 
-| Eigenschap  | Beschrijving | Voorbeeld |
+| Eigenschap  | Description | Voorbeeld |
 |---------|------------|--------|
 | DateKey |De unieke id van de datum. | 123 |
 | TenantKey |De unieke id van de tenant. | 456 |

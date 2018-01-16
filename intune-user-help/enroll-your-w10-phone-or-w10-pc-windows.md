@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7317a60a9640df0b95444a2b032c12b3ca9f20b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 337b5407026c5415f8fbac1a0626181f9b042a06
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Uw Windows 10-apparaten inschrijven in Intune
 
@@ -47,6 +47,6 @@ Wilt u meer weten? Ontdek wat er gebeurt wanneer u [uw apparaat inschrijft in In
 1.  Veeg in __Start__ naar de lijst __Alle apps__ en selecteer vervolgens de app __Instellingen__.        
 2.  Tik op __Systeem__ en vervolgens op __Info__.       
 3.  Tik onder __Apparaatgegevens__ op __Meer info__. U ziet een lijst met informatie over uw apparaat. Zoek in deze lijst naar de __versie__.        
-4.  Als uw versie __1607__ is, gaat u verder met [deze stappen](enroll-your-w10-device-access-work-or-school.md). Als uw versie __1511 of ouder__ is, gaat u verder met [deze stappen](enroll-your-w10-device-your-account.md).
+4.  Als uw versie __1607 of hoger__ is, gaat u verder met [deze stappen](enroll-your-w10-device-access-work-or-school.md). Als uw versie __1511 of ouder__ is, gaat u verder met [deze stappen](enroll-your-w10-device-your-account.md).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

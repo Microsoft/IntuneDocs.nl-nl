@@ -3,11 +3,11 @@ title: RBAC met Intune
 titleSuffix: Azure portal
 description: 'Intune Azure Preview: in dit onderwerp leest u hoe u met RBAC kunt bepalen welke personen acties kunnen uitvoeren en wijzigingen kunnen aanbrengen.'
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/21/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Intune
 
@@ -128,6 +128,6 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 [De rol voor Intune Helpdesk-operator gebruiken met de portal voor probleemoplossing](help-desk-operators.md)
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 
 [Rollen toewijzen met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
