@@ -3,10 +3,10 @@ title: Apparaten inschrijven - apparaatinschrijvingsmanager
 titlesuffix: Azure portal
 description: Gebruik het manageraccount voor apparaatregistratie om apparaten in te registreren. "
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Apparaten inschrijven met de apparaatinschrijvingsmanager
 
@@ -30,7 +30,7 @@ Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobie
 Gebruikers moeten in Azure Portal bestaan om ze te kunnen toevoegen aan apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker géén Intune-beheerder zijn.
 
 >[!NOTE]
->De DEM-registratiemethode kan niet worden gebruikt met de volgende andere registratiemethoden: [Apple Configurator met Configuratieassistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator met directe enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) of [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md).
+>De DEM-registratiemethode kan niet worden gebruikt met de volgende andere registratiemethoden: [Apple Configurator met Configuratieassistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator met directe enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) of [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md). Deze methode kan ook niet worden gebruikt om macOS-apparaten te registreren. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
 
@@ -65,7 +65,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 ## <a name="add-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager toevoegen
 
-1.  Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
+1.  Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
 2.  Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
 
@@ -90,7 +90,7 @@ Het verwijderen van een apparaatinschrijvingsmanager is niet van invloed op inge
 
 **Een apparaatinschrijvingsmanager verwijderen**
 
-1. Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
 2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
 3. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Verwijderen**.
 

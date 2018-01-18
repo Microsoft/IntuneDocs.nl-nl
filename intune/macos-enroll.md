@@ -3,8 +3,8 @@ title: macOS-apparaten registreren bij Intune
 titlesuffix: Azure portal
 description: Meer informatie over het registreren van Mac OS-apparaten in Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 nmanager: angrobe
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a18aa5091c8be2095e2ac95717c2b8294b845cd5
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 3d1382e85b9ce58cd65380a799ca8eb4da98b84c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>macOS-apparaten registreren bij Intune
 
@@ -46,7 +46,7 @@ Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) a
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Uw gebruikers vertellen hoe ze hun apparaten moeten inschrijven om toegang te krijgen tot bedrijfsresources
 
-U moet uw gebruikers vertellen dat ze naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) moeten gaan en de prompts moeten volgen om hun apparaat in te schrijven. U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Meld uw gebruikers dat ze naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) moeten gaan en de prompts moeten volgen om hun apparaat in te schrijven. U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 

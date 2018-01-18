@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 485517f589649bdb805f94503df716b82de17b06
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Algemene manieren om Intune te gebruiken
 
@@ -82,7 +82,7 @@ U kunt als beheerder eisen dat gebruikers Office 365 openen via de mobiele apps 
 ## <a name="issue-corporate-owned-phones-to-your-employees"></a>Bedrijfstelefoons aan uw medewerkers verstrekken
 Tegenwoordig zijn veel werknemers mobiel, waardoor het steeds belangrijker wordt om productiviteit op mobiele apparaten mogelijk te maken; zo blijft het concurrentievermogen behouden. Deze werknemers hebben naadloze toegang nodig tot alle zakelijke toepassingen en gegevens, op elk gewenst moment en waar ze ook zijn. U moet ervoor zorgen dat zakelijke gegevens goed worden beveiligd en dat de administratieve kosten laag blijven.  
 
-Intune biedt [oplossingen voor bulksgewijze inrichting en beheer](device-enrollment.md) ([klassieke portal](/intune-classic/deploy-use/manage-corporate-owned-devices)) die kunnen worden geïntegreerd in de grootste apparaatbeheerplatformen voor bedrijven van dit moment, waaronder het Apple Device Enrollment Program en het Samsung KNOX-platform voor mobiele beveiliging. Omdat apparaatconfiguraties centraal kunnen worden opgesteld met Intune kan het inrichten van zakelijke apparaten in grote mate worden geautomatiseerd.  
+Intune biedt [oplossingen voor bulksgewijze inrichting en beheer](device-enrollment.md) ([klassieke portal](/intune-classic/deploy-use/manage-corporate-owned-devices)) die kunnen worden geïntegreerd in de grootste apparaatbeheerplatformen voor bedrijven van dit moment, waaronder het Apple Device Enrollment Program en het Samsung Knox-platform voor mobiele beveiliging. Omdat apparaatconfiguraties centraal kunnen worden opgesteld met Intune kan het inrichten van zakelijke apparaten in grote mate worden geautomatiseerd.  
 
 Stel u dit eens voor: u geeft een werknemer een nieuwe iPhone in een nog niet geopende doos. De werknemer zet de telefoon aan en doorloopt een installatieprocedure waar het bedrijfslogo in is verwerkt. Hierin moet de werknemer zich verifiëren. De iPhone wordt naadloos geconfigureerd voor [beveiligingsbeleid](device-profiles.md) ([klassieke portal](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)).
 
@@ -100,4 +100,4 @@ Een eenvoudige gebruikerservaring is in dit geval van groot belang. Om die reden
 ## <a name="enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk"></a>Uw werknemers in staat stellen Office 365 veilig te gebruiken vanuit een niet-beheerde openbare kiosk
 Soms moeten uw werknemers apparaten, toepassingen of browsers gebruiken die u niet kunt beheren, zoals de openbare computers op beurzen en in hotellobby's.
 
-Moet u uw werknemers toegang bieden tot bedrijfs-e-mails vanaf deze locaties? Met Intune en Microsoft Enterprise Mobility + Security kunt u gewoon Nee zeggen en [e-mailtoegang beperken tot apparaten die door uw bedrijf worden beheerd](conditional-access.md) ([klassiek portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)). Zo zorgt u ervoor dat geverifieerde werknemers niet per ongeluk bedrijfsgegevens achterlaten op de niet-vertrouwde computer.
+Moet u uw werknemers toegang bieden tot bedrijfs-e‑mails vanaf deze locaties? Met Intune en Microsoft Enterprise Mobility + Security kunt u gewoon Nee zeggen en [e-mailtoegang beperken tot apparaten die door uw bedrijf worden beheerd](conditional-access.md) ([klassiek portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)). Zo zorgt u ervoor dat geverifieerde werknemers niet per ongeluk bedrijfsgegevens achterlaten op de niet-vertrouwde computer.

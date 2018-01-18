@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -307,7 +307,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Ondersteunde mogelijkheden voor de App Wrapping Tool voor iOS
 
-|Mogelijkheid|Beschrijving|Aanbevolen richtlijnen|
+|Mogelijkheid|Description|Aanbevolen richtlijnen|
 |--------------|---------------|------------------------|
 |App-groepen|Gebruik app-groepen zodat meerdere apps toegang kunnen krijgen tot gedeelde containers en sta aanvullende communicatie tussen processen van de verschillende apps toe.<br /><br />Als u app-groepen wilt inschakelen, opent u het deelvenster **Mogelijkheden** en klikt u op **AAN** in **App-groepen** . U kunt app-groepen toevoegen of bestaande app-groepen selecteren.|Pas omgekeerde DNS-notatie toe wanneer u app-groepen gebruikt:<br /><br />*group.com.companyName.AppGroup*|
 |Achtergrondmodi|Wanneer u achtergrondmodi inschakelt, kan uw iOS-app op de achtergrond actief blijven.||
@@ -393,7 +393,19 @@ Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u 
 
 -   Wanneer u de documentenmap op uw apparaat bewaakt vanuit een verpakte app, ziet u mogelijk een map met de naam .msftintuneapplauncher. Als deze map wordt gewijzigd of verwijderd, kan dit van invloed zijn op de goede werking van beperkte apps.
 
-### <a name="see-also"></a>Zie tevens
+## <a name="getting-logs-for-your-wrapped-applications"></a>Logboeken voor uw ingepakte toepassingen ophalen
+Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.
+
+1. Ga naar de app iOS-instellingen op uw apparaat en selecteer uw LOB-app.
+2. Schakel de **Diagnoseconsole** **in**.
+3. Start uw LOB-toepassing.
+4. Klik op de koppeling 'Aan de slag'.
+5. U kunt nu logboeken delen via e-mail of ze kopiëren naar een locatie op OneDrive.
+
+>[!NOTE]
+De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
+
+### <a name="see-also"></a>Zie ook
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

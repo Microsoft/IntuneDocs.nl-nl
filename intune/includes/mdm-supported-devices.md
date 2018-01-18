@@ -5,7 +5,7 @@
   - Mac OS X 10.9 en hoger
 
 ### <a name="google"></a>Google
-  - Android 4.4 en hoger (inclusief Samsung KNOX Standard 4.4 en hoger) *
+  - Android 4.4 en hoger (inclusief Samsung Knox Standard 4.4 en hoger) *
   - Android for Work ([vereisten](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 ### <a name="microsoft"></a>Microsoft
@@ -18,6 +18,6 @@
 
 Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Directory (Azure AD) gebruiken voor het registreren van Windows 10-apparaten](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
-* Een volledige lijst met gecontroleerde Samsung KNOX Standard-apparaten is beschikbaar in de [beleidsinstellingen voor Android en Samsung KNOX Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+* Een volledige lijst met gecontroleerde Samsung Knox Standard-apparaten is beschikbaar in de [beleidsinstellingen voor Android en Samsung Knox Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
 
 Zie [Ondersteunde apparaten voor Intune](/intune/supported-devices-browsers#intune-supported-devices) voor een volledige lijst met apparaten en beheermethoden.

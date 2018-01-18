@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a1cbd6fc3244686c1f5a1db3e4365e615662f0e
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -29,10 +29,10 @@ ms.lasthandoff: 12/08/2017
 
 Als IT-beheerder is het uw taak ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit kan om de volgende redenen een uitdaging zijn:
 - Er is een breed scala aan apparaatplatformen en app-typen.
-- U moet mogelijk apps op bedrijfsapparaten en op de eigen apparaten van gebruikers beheren.
+- U moet apps wellicht op zowel bedrijfsapparaten als de eigen apparaten van gebruikers beheren.
 - U moet ervoor zorgen dat uw netwerk en uw gegevens beveiligd blijven.
 
-Verder wilt u misschien apps toewijzen en beheren op apparaten die niet met Intune zijn geregistreerd.
+Verder wilt u misschien apps toewijzen en beheren op apparaten die niet bij Intune zijn geregistreerd.
 
 Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de gekozen apparaten te krijgen.
 
@@ -41,20 +41,20 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 ||||||
 |-|-|-|-|-|
 |&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
-|Apps toevoegen en aan apparaten en gebruikers toewijzen|Yes|Ja|Ja|Ja|
+|Apps toevoegen en aan apparaten en gebruikers toewijzen|Ja|Ja|Ja|Ja|
 |Toewijzen van apps aan apparaten die niet zijn geregistreerd met Intune|Ja|Ja|Nee|Nee|
 |Beleidsregels voor app-configuratie gebruiken om het opstartgedrag van apps te beheren|Nee|Ja|Nee|Nee|
 |Gebruik beleid voor de inrichting van mobiele apps om verlopen apps te vernieuwen|Nee|Ja|Nee|Nee|
-|Bedrijfsgegevens in apps beveiligen met app-beveiligingsbeleid|Yes|Ja|Nee|Nee<sup>1</sup>|
-|Alleen zakelijke gegevens verwijderen uit een geïnstalleerde app (App selectief wissen)|Yes|Ja|Ja|Yes|
-|App-toewijzingen controleren|Ja|Ja|Ja|Yes|
-|Apps die in een app-winkel zijn gekocht via een volume-aankoopprogramma, toewijzen en bijhouden|Nee|Nee|Nee|Yes|
-|Verplichte installatie van apps op apparaten (Vereist)<sup>2</sup>|Ja|Ja|Ja|Yes|
-|Optionele installatie op apparaten via de bedrijfsportal (Beschikbare installatie)|Yes|Ja|Ja|Yes|
-|Installatiesnelkoppeling naar een app op het web (Web Clip)|Yes|Ja|Ja|Yes|
-|Interne apps (Line-Of-Business-apps)|Yes|Ja|Nee|Nee|
-|Apps uit een store|Yes|Ja|Ja|Yes|
-|Apps bijwerken|Ja|Ja|Ja|Yes|
+|Bedrijfsgegevens in apps beveiligen met app-beveiligingsbeleid|Ja|Ja|Nee|Nee<sup>1</sup>|
+|Alleen zakelijke gegevens verwijderen uit een geïnstalleerde app (App selectief wissen)|Ja|Ja|Ja|Ja|
+|App-toewijzingen controleren|Ja|Ja|Ja|Ja|
+|Apps die in een app-winkel zijn gekocht via een volume-aankoopprogramma, toewijzen en bijhouden|Nee|Nee|Nee|Ja|
+|Verplichte installatie van apps op apparaten (Vereist)<sup>2</sup>|Ja|Ja|Ja|Ja|
+|Optionele installatie op apparaten via de bedrijfsportal (Beschikbare installatie)|Ja|Ja|Ja|Ja|
+|Installatiesnelkoppeling naar een app op het web (Web Clip)|Ja|Ja|Ja|Ja|
+|Interne apps (Line-Of-Business-apps)|Ja|Ja|Nee|Nee|
+|Apps uit een store|Ja|Ja|Ja|Ja|
+|Apps bijwerken|Ja|Ja|Ja|Ja|
 
 <sup>1</sup> U kunt gebruikmaken van [Windows Information Protection](windows-information-protection-configure.md) om apps op apparaten met Windows 10 te beveiligen.
 
@@ -64,7 +64,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele apps** die als volgt toegankelijk is:
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 
@@ -74,7 +74,7 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 - **Apps**: in dit knooppunt kunt u de meeste apps toevoegen, toewijzen en bewaken.
     - [Apps toevoegen](apps-add.md)
     - [Apps toewijzen](apps-deploy.md)
-    - [Apps bewaken](apps-monitor.md)
+    - [Apps controleren](apps-monitor.md)
 - **App-configuratiebeleid**: hiermee kunt u instellingen opgeven die mogelijk vereist zijn wanneer een gebruiker een app uitvoert.
     - [Beleid voor de configuratie van iOS-apps](app-configuration-policies-use-ios.md)
     - [Beleid voor de configuratie van Android-apps](app-configuration-policies-use-android.md)
@@ -85,19 +85,33 @@ U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele 
 - **iOS-inrichtingsprofiel**: iOS-apps hebben een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen.
     - [Inrichtingsprofielen voor iOS-apps](app-provisioning-profile-ios.md)
 
+Zie [Apps beheren](app-management.md) voor meer informatie.
+
 ### <a name="monitor"></a>Monitor
-- **Apps met licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken.
+- **App-licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken.
     - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md)
 - **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd.
 - **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt.
 - **Status van de app-beveiliging**: hier wordt de status weergegeven van een app-beveiligingsbeleid voor een gebruiker die u selecteert.
+- **Auditlogboeken**: hier worden activiteiten door alle IT-beheerders voor de Intune-app weergegeven.
 
-Zie [Apps bewaken](apps-monitor.md) voor meer informatie
+Zie [Apps bewaken](apps-monitor.md) voor meer informatie.
 
 ### <a name="setup"></a>Setup
-<!--- **iOS VPP Tokens**
-    - [iOS volume-purchased apps](vpp-apps-ios.md) --->
+- **VPP-tokens voor iOS**: voor het toepassen en weergeven van uw VPP-licenties (Volume Purchase Program) voor iOS.
+    - [iOS-apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
+- **Windows Enterprise-certificaat**: voor het toepassen of weergeven van de status van een certificaat voor ondertekening van programmacode die wordt gebruikt voor het distribueren van LOB-apps naar uw beheerde Windows-apparaten. 
+- **Windows Symantec-certificaat**: voor het toepassen of weergeven van een Symantec-certificaat voor ondertekening van programmacode die nodig is voor het distribueren van XAP- en WP8.x-appx-bestanden naar Windows 10 Mobile-apparaten. 
 - **Microsoft Store voor Bedrijven**: integratie met Microsoft Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden.
     - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md)
+- **Windows-sleutels voor extern laden**: u kunt een Windows-sleutel voor extern laden toevoegen die kan worden gebruikt om een app rechtstreeks te installeren op apparaten in plaats van de app te publiceren en downloaden vanuit de Windows Store.
+    - [Een Windows-app extern laden](app-sideload-windows.md) 
 - **Aangepaste stijl van de bedrijfsportal**: u kunt de bedrijfsportal aanpassen aan de huisstijl van uw bedrijf.
     - [Bedrijfsportal configureren](company-portal-app.md)
+- **App-categorieën**: voor het toevoegen, vastmaken en verwijderen van namen van app-categorieën.
+- **Android for Work**: voor het goedkeuren en synchroniseren van de apps die u hebt goedgekeurd voor uw onderneming.
+    - [Android for Work-apps](apps-add-android-for-work.md) 
+
+### <a name="help-and-support"></a>Help en ondersteuning
+- **Help en ondersteuning**: problemen oplossen, ondersteuning aanvragen of de status van Intune weergeven.
+    - [Problemen oplossen](help-desk-operators.md)

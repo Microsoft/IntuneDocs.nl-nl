@@ -3,10 +3,10 @@ title: Web-apps toevoegen aan Intune
 titleSuffix: Azure portal
 description: Meer informatie over het toevoegen van web-apps aan Intune.
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,40 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e60fd4575ce1f8d95600b3510cfd3c5fb7bc0f12
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6da1441b16a43b5e22bedd9e87970f3388b11b9e
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-add-web-apps-to-microsoft-intune"></a>Web-apps toevoegen aan Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Voordat u een app kunt beheren en aan uw gebruikers kunt toewijzen, voegt u de app toe aan Intune. Intune biedt ondersteuning voor diverse typen apps, waaronder web-apps.
+
+> [!Note]
+> Web-apps worden niet ondersteund op Android for Work-apparaten.
+
+Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkoppeling naar een app op internet:
+
 1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apps beheren** op de blade **Intune**.
-4. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
-5. Kies **Toevoegen** boven de lijst met apps.
-6. Kies **App-gegevens** op de blade **App toevoegen**.
-7. Configureer de volgende gegevens op de blade **App bewerken**. Klik wanneer u klaar bent op **Toevoegen**:
-    - **App-URL**: voer de URL in van de website waarop de app wordt gehost die u wilt toewijzen.
-    - **App-naam**: voer de naam van de app in zoals deze in de bedrijfsportal zal worden weergegeven.
-    - **App-beschrijving**: voer een beschrijving in voor de app. Deze wordt weergegeven voor eindgebruikers in de bedrijfsportal.
+2. Gebruik **Meer bronnen** om **Intune** te zoeken en te selecteren.
+3. Op de blade **Microsoft Intune** selecteert u **Mobiele apps**.
+4. Op de blade **Mobiele apps** selecteert u **Apps**.
+5. Selecteer **Toevoegen** boven de lijst met apps. De blade **App toevoegen** wordt weergegeven.
+6. Op de blade **App toevoegen** selecteert u het type **Web-app** in de vervolgkeuzelijst **App-type**.
+7. Selecteer de optie **Configureren** om de blade **App-gegevens** weer te geven.
+8. Voeg op de blade **App-gegevens** de volgende gegevens toe:
+    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven.
+    - **Beschrijving**: voer een beschrijving in voor de app. Deze wordt weergegeven voor eindgebruikers in de bedrijfsportal.
     - **Uitgever**: voer de naam in van de uitgever van deze app.
-    - **Categorie (optioneel)**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Hierdoor kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **App-URL**: voer de URL in van de website waarop de app wordt gehost die u wilt toewijzen.
+    - **Categorie** (optioneel): selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met deze selectie kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
     - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Een beheerde browser vereisen om deze koppeling te openen**: wanneer u aan gebruikers een koppeling naar een website of web-app toewijst, kunnen ze deze alleen in de door Intune beheerde browser openen. Deze browser moet op hun apparaat zijn geïnstalleerd.
-    - **Pictogram uploaden**: upload het pictogram dat aan de app wordt gekoppeld. Dit is het pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-8. Wanneer u klaar bent, kiest u **Opslaan** op de blade **App toevoegen**.
+    - **Een beheerde browser vereisen om deze koppeling te openen**: wanneer u aan gebruikers een koppeling naar een website of web-app toewijst, kunnen ze deze in de door Intune beheerde browser openen. Deze browser moet op hun apparaat zijn geïnstalleerd.
+    - **Logo**: upload een logo dat aan de app is gekoppeld. Dit is het logo dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+9. Wanneer u klaar bent, selecteert u **OK** op de blade **Gegevens toevoegen**.
+10. Selecteer vervolgens **Toevoegen** op de blade **App toevoegen**.
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.

@@ -1,7 +1,7 @@
 ---
-title: Intune-beleid voor het toestaan/blokkeren van apps voor Samsung KNOX
+title: Intune-beleid voor het toestaan/blokkeren van apps voor Samsung Knox
 titlesuffix: Azure portal
-description: Een aangepast profiel maken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten.
+description: Een aangepast profiel maken om apps toe te staan of te blokkeren voor Samsung Knox Standard-apparaten.
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,13 +15,13 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten in Microsoft Intune
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung Knox Standard-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +30,11 @@ Gebruik de procedures in dit onderwerp om een aangepast Microsoft Intune-beleid 
 - Een lijst met apps die niet kunnen worden uitgevoerd op het apparaat. Apps in deze lijst worden geblokkeerd, wat betekent dat ze niet worden uitgevoerd, ook niet al ze al waren geïnstalleerd toen het beleid werd toegepast.
 - Een lijst met apps die gebruikers van het apparaat kunnen installeren uit de Google Play Store. Alleen de apps die u in de lijst opneemt, kunnen worden geïnstalleerd. Geen andere apps kunnen worden geïnstalleerd uit de Store.
 
-Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung KNOX Standard.
+Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung Knox Standard.
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>En lijst met toegestane of geblokkeerde apps maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

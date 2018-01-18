@@ -3,10 +3,10 @@ title: Wat is Microsoft Intune-apparaatinschrijving?
 titlesuffix: Azure portal
 description: Meer informatie over registratie voor iOS, Android en Windows-apparaten.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -29,7 +29,7 @@ Als u apparaten in Intune inschrijft, kunt u deze apparaten beheren. In de Intun
 
 De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met registratie van COD's (Corporate-owned devices, apparaten van bedrijf) zijn beheerscenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten.
 
-Als u Exchange ActiveSync on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen (binnenkort volgt meer informatie). U kunt Windows-pc's beheren als mobiele apparaten. Dit is de aanbevolen methode die hieronder wordt beschreven.
+Als u Exchange ActiveSync on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen. U kunt Windows-pc's beheren als mobiele apparaten. Dit is de aanbevolen methode die hieronder wordt beschreven.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Overzicht van registratiemethoden voor apparaten
@@ -49,7 +49,7 @@ De volgende tabel biedt een overzicht van registratiemethoden voor Intune. De mo
 |**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#dem)**|   Nee |Nee |Nee  | [Meer informatie](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#dep)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](./device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**| Yes |   Optioneel |  Nee| [Meer informatie](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| Ja |   Optioneel |  Nee| [Meer informatie](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Nee |    Nee  | Nee|[Meer informatie](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows-registratiemethoden**
@@ -66,7 +66,7 @@ De volgende tabel biedt een overzicht van registratiemethoden voor Intune. De mo
 | **Methode** |  **Opnieuw instellen vereist** |    **Gebruikersaffiniteit**   |   **Vergrendeld** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](./android-enroll.md)|
-|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Nee | Ja | Nee| [Meer informatie](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
@@ -110,4 +110,4 @@ Mobiele apparaten die niet zijn ingeschreven maar die met Exchange ActiveSync (E
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 
-Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.
+Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd.Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.

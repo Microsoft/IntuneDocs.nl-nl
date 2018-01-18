@@ -3,10 +3,10 @@ title: Netwerktoegangsbeheer integreren met Intune
 titlesuffix: Azure portal
 description: Netwerktoegangsbeheer integreren met Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: bruceperlerMS
+ms.author: bruceper
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d75d996f4166fb2a760d1ccb518ca7a228c1a0d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0379f2843b77b0d7ed6a54065e14f91946398d65
+ms.sourcegitcommit: 061dab899e3fbc59b0128e2b4fbdf8ebf80afddd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
@@ -33,40 +33,34 @@ NAC-oplossingen zijn verantwoordelijk voor het controleren van de apparaatregist
 
 Als het apparaat is geregistreerd en compatibel is met Intune, moet de NAC-oplossing het apparaat toegang geven tot bedrijfsresources. Als gebruikers bijvoorbeeld via Wi-Fi of een VPN toegang proberen te krijgen tot bedrijfsresources, kan dit worden toegestaan of geweigerd.
 
+## <a name="feature-behaviors"></a>Gedrag van de functie
+
+Apparaten die actief worden gesynchroniseerd met Intune, kunnen niet worden omgezet van **Compatibel** / **Niet-compatibel** naar **Niet gesynchroniseerd** (of **Onbekend**). De status **Onbekend** is gereserveerd voor pas geregistreerde apparaten die nog niet zijn geëvalueerd voor naleving.
+
+Voor apparaten die zijn geblokkeerd voor toegang tot resources, moet de blokkerende service alle gebruikers doorsturen naar de [beheerportal](https://portal.manage.microsoft.com) om te bepalen waarom het apparaat is geblokkeerd.  Als de gebruikers deze pagina bezoeken, worden hun apparaten op synchrone wijze opnieuw geëvalueerd voor naleving.
+
 ## <a name="nac-and-conditional-access"></a>NAC en voorwaardelijke toegang
 
-NAC werkt met voorwaardelijke toegang om beslissingen voor toegangsbeheer mogelijk te maken.
-
-- Zie [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) (Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken) voor meer informatie.
+NAC werkt met voorwaardelijke toegang om beslissingen voor toegangsbeheer mogelijk te maken. Zie [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) (Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken) voor meer informatie.
 
 ## <a name="how-the-nac-integration-works"></a>De werking van NAC-integratie
 
-Hier volgt een overzicht van de werking van NAC als een dergelijke oplossing is geïntegreerd met Intune. De eerste drie stappen hebben betrekking op het voorbereidingsproces. Als de NAC-oplossing na die stappen is geïntegreerd met Intune, wordt in stappen 4-9 de werking van de oplossing beschreven.
+Hier volgt een overzicht van de manier waarop NAC-integratie werkt in combinatie met Intune. In de eerste drie stappen wordt het onboarding-proces uitgelegd. Als de NAC-oplossing na die stappen is geïntegreerd met Intune, wordt in stappen 4-9 de werking van de oplossing beschreven.
 
 ![De werking van NAC met Intune](./media/ca-intune-common-ways-2.png)
 
-1.  Registreer de NAC-partneroplossing bij Azure Active Directory (AAD) en verleen gedelegeerde machtigingen aan de NAC-API van Intune.
-
-2.  Configureer de NAC-partneroplossing met de juiste instellingen, inclusief de detectie-URL van Intune.
-
-3.  Configureer de NAC-partneroplossing voor certificaatverificatie.
-
-4.  Een gebruiker maakt verbinding met een Wi-Fi-toegangspunt of verstuurt een aanvraag voor een VPN-verbinding.
-
-5.  De NAC-partneroplossing stuurt de gegevens van het apparaat door naar Intune en vraagt bij Intune gegevens op over de apparaatregistratie en nalevingsstatus.
-
-6.  Als het apparaat niet compatibel is of niet is geregistreerd, krijgt de gebruiker instructies van de NAC-partneroplossing om het apparaat te registreren of compatibel te maken.
-
-7.  De compatibiliteit en/of registratiestatus van het apparaat worden opnieuw geverifieerd.
-
-8.  Zodra het apparaat is geregistreerd en compatibel is, vraagt de NAC-partneroplossing de status op bij Intune.
-
-9.  De verbinding wordt tot stand gebracht en het apparaat heeft nu toegang tot de bedrijfsresources.
+1. Registreer de NAC-partneroplossing bij Azure Active Directory (AAD) en verleen gedelegeerde machtigingen aan de NAC-API van Intune.
+2. Configureer de NAC-partneroplossing met de juiste instellingen, inclusief de detectie-URL van Intune.
+3. Configureer de NAC-partneroplossing voor certificaatverificatie.
+4. Een gebruiker maakt verbinding met een Wi-Fi-toegangspunt of verstuurt een aanvraag voor een VPN-verbinding.
+5. De NAC-partneroplossing stuurt de gegevens van het apparaat door naar Intune en vraagt bij Intune gegevens op over de apparaatregistratie en nalevingsstatus.
+6. Als het apparaat niet compatibel is of niet is geregistreerd, krijgt de gebruiker instructies van de NAC-partneroplossing om het apparaat te registreren of compatibel te maken.
+7. De compatibiliteit en/of registratiestatus van het apparaat worden/wordt opnieuw geverifieerd.
+8. Zodra het apparaat is geregistreerd en compatibel is, vraagt de NAC-partneroplossing de status op bij Intune.
+9. De verbinding wordt tot stand gebracht en het apparaat heeft nu toegang tot de bedrijfsresources.
 
 ## <a name="next-steps"></a>Volgende stappen
 
--   [Cisco ISE integreren met Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
-
--   [Citrix NetScaler integreren met Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-
--   [HP Aruba Clear Pass integreren met Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Cisco ISE integreren met Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
+- [Citrix NetScaler integreren met Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [HP Aruba Clear Pass integreren met Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
