@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -91,29 +91,30 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 **Wat is het doel van ondersteuning voor meerdere identiteiten?** Dankzij ondersteuning voor meerdere identiteiten kunnen apps met zowel een zakelijke als particuliere doelgroep (oftewel de Office-apps) openbaar worden vrijgegeven met app-beveiligingsfuncties van Intune voor de 'zakelijke' accounts.
 
-**Wanneer wordt het pincodescherm weergegeven?** Het pincodescherm van Intune wordt alleen weergegeven wanneer de gebruiker 'zakelijke gegevens' in de app probeert te openen. In de apps Word/Excel/PowerPoint wordt het pincodescherm bijvoorbeeld weergegeven wanneer de eindgebruiker een document in OneDrive voor Bedrijven probeert te openen (ervan uitgaand dat u een app-beveiligingsbeleid hebt geïmplementeerd waarmee de pincode wordt afgedwongen).
-
 **Outlook en meerdere identiteiten** Aangezien Outlook een gecombineerde e-mailweergave heeft met zowel persoonlijke als 'zakelijke' e-mails, wordt er naar de Intune-pincode gevraagd zodra Outlook wordt gestart.
 
 **Wat is de pincode voor de Intune-app?** De pincode is een wachtwoordcode die wordt gebruikt om te verifiëren of de juiste gebruiker de bedrijfsgegevens in een app benadert.
 
   1. **Wanneer wordt de gebruiker gevraagd een pincode op te geven?** Intune vraagt alleen naar de pincode van de gebruiker wanneer de gebruiker 'zakelijke' gegevens benadert. In apps met functionaliteit voor meerdere identiteiten, zoals Word/Excel/PowerPoint, wordt de gebruiker naar een de pincode gevraagd wanneer ze een 'zakelijk' document of bestand willen openen. In apps waarvoor maar één identiteit kan worden gebruikt, zoals Line-Of-Business-apps met de Intune App Wrapping Tool-functionaliteit, wordt gelijk bij het starten van de app om de pincode gevraagd, omdat de Intune App SDK weet dat de gebruik de app uitsluitend 'zakelijk' gebruikt.
 
-  2. **Is de pincode veilig?** De pincode zorgt ervoor dat alleen de juiste gebruiker toegang heeft tot de gegevens van de organisatie in de app. Daarom moet een eindgebruikers zich aanmelden met een werk- of schoolaccount voordat de pincode voor de Intune-app kan worden ingesteld of hersteld. Deze verificatie wordt verwerkt door Azure Active Directory via uitwisseling van een beveiligde token en is niet transparant voor de Intune App SDK. Vanuit het oogpunt van veiligheid kunt u werk- of schoolgerelateerde gegevens het beste versleutelen. Versleuteling is niet gerelateerd aan de pincode van de app, maar is een eigen app-beveiligingsbeleid.
+2. **Hoe vaak wordt de gebruiker gevraagd de pincode voor Intune in te voeren?**
+De IT-beheerder kan de beleidsinstelling voor beveiliging van de Intune-app in de Intune-beheerconsole instellen op Toegangsvereisten opnieuw controleren na (minuten). Deze instelling geeft de hoeveelheid tijd aan voordat de toegangsvereisten op het apparaat worden gecontroleerd en het scherm voor de pincode opnieuw wordt weergegeven. Belangrijke informatie over de pincode die van invloed is op hoe vaak de gebruiker om de pincode wordt gevraagd, is: 
 
-  3. **Hoe beschermt Intune de pincode tegen beveiligingsaanvallen?** Als onderdeel van het app-pincodebeleid kan de IT-beheerder een maximumaantal verificatiepogingen voor gebruikers instellen voordat de app wordt vergrendeld. Na het toegestane aantal aanmeldingspogingen kan de Intune App SDK de 'zakelijke' gegevens in de app wissen.
+* **De pincode wordt gedeeld tussen apps van dezelfde uitgever om de bruikbaarheid te verbeteren:** In iOS wordt de pincode voor apps gedeeld met alle apps **van dezelfde uitgever**. Op Android wordt één pincode voor apps gedeeld met alle andere apps.
+* **De werking van de timer die aan de pincode is gekoppeld:** Zodra een pincode wordt ingevoerd voor toegang tot een app (app A) en de app de voorgrond op het apparaat verlaat, wordt de timer voor die pincode opnieuw ingesteld. Voor elke app (app B) die deze pincode deelt, wordt de gebruiker niet om de pincode gevraagd, omdat de timer opnieuw is ingesteld. De prompt verschijnt zodra opnieuw aan de waarde voor Toegangsvereisten opnieuw controleren na (minuten) is voldaan. 
+
+>[!NOTE] 
+> On de toegangsvereisten van gebruikers vaker te controleren, met name voor een veelgebruikte app, wordt aanbevolen om de waarde voor de instelling Toegangsvereisten opnieuw controleren na (minuten) te verlagen. 
+
+  3. **Is de pincode veilig?** De pincode zorgt ervoor dat alleen de juiste gebruiker toegang heeft tot de gegevens van de organisatie in de app. Daarom moet een eindgebruikers zich aanmelden met een werk- of schoolaccount voordat de pincode voor de Intune-app kan worden ingesteld of hersteld. Deze verificatie wordt verwerkt door Azure Active Directory via uitwisseling van een beveiligde token en is niet transparant voor de Intune App SDK. Vanuit het oogpunt van veiligheid kunt u werk- of schoolgerelateerde gegevens het beste versleutelen. Versleuteling is niet gerelateerd aan de pincode van de app, maar is een eigen app-beveiligingsbeleid.
+
+  4. **Hoe beschermt Intune de pincode tegen beveiligingsaanvallen?** Als onderdeel van het app-pincodebeleid kan de IT-beheerder een maximumaantal verificatiepogingen voor gebruikers instellen voordat de app wordt vergrendeld. Na het toegestane aantal aanmeldingspogingen kan de Intune App SDK de 'zakelijke' gegevens in de app wissen.
   
-**Wat is het verschil in werking tussen een numerieke pincode en wachtwoordcode voor de Intune-app?**
-Voor MAM kan momenteel een pincode op toepassingsniveau (iOS) worden gebruikt met alfanumerieke tekens en speciale tekens (wachtwoordcode genoemd) waarvoor de deelname van toepassingen (zoals WXP, Outlook, Managed Browser, Yammer) is vereist om de Intune APP SDK voor iOS te integreren. Zonder deze deelname, worden de instellingen voor de wachtwoordcode niet goed afgedwongen voor de betreffende toepassingen. Aangezien de integratie voor deze apps doorlopend wordt uitgevoerd, wordt het gedrag tussen wachtwoordcode en numerieke pincode tijdelijk gewijzigd voor de eindgebruiker en is een belangrijke uitleg vereist. Voor de release van Intune in oktober 2017 is het gedrag als volgt...
+  5. **Waarom moet ik een pincode tweemaal instellen voor apps van dezelfde uitgever?**
+Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt met alfanumerieke tekens en speciale tekens (wachtwoordcode genoemd) waarvoor de deelname van toepassingen (zoals WXP, Outlook, Managed Browser, Yammer) is vereist om de Intune APP SDK voor iOS te integreren. Zonder deze deelname, worden de instellingen voor de wachtwoordcode niet goed afgedwongen voor de betreffende toepassingen. Dit is een functie die is uitgebracht in de Intune SDK voor iOS v. 7.1.12. <br> Om deze functie te ondersteunen en te zorgen voor compatibiliteit met eerdere versies van de Intune SDK voor iOS, worden alle pincodes (numeriek of als wachtwoordcode) in 7.1.12+ los van de pincode in eerdere versies van de SDK verwerkt. Dus als een apparaat toepassingen met Intune SDK voor iOS-versies lager dan 7.1.12 EN hoger dan 7.1.12 van dezelfde uitgever heeft, moeten er twee pincodes worden ingesteld. <br><br> Die twee pincodes (voor elke app) staan echter volledig los van elkaar: ze moeten voldoen aan het app-beveiligingsbeleid dat voor die app geldt. Dus *alleen* als voor app A en app B hetzelfde beleid is toegepast (met betrekking tot pincodes), kan de gebruiker dezelfde pincode tweemaal instellen. <br><br> Dit gedrag is specifiek voor de pincode voor iOS-toepassingen die ingeschakeld zijn met het Intune-beheer van mobiele apps. Na verloop van tijd, wanneer toepassingen nieuwere versies van de Intune SDK voor iOS overnemen, wordt het tweemaal instellen van een pincode voor apps van dezelfde uitgever minder problematisch. Zie de opmerking hieronder voor een voorbeeld.
 
-Apps die
-1. dezelfde app-uitgever hebben,
-2. een wachtwoordcode gebruiken die is gericht via de console en 
-3. en die de SDK met deze functie (v 7.1.12+) gebruiken, kunnen de wachtwoordcode delen tussen deze apps. 
-
-Apps die
-1. dezelfde app-uitgever hebben,
-2. een numerieke pincode gebruiken die is gericht via de console, kunnen de numerieke pincode delen tussen deze apps. 
+>[!NOTE]
+> Als app A bijvoorbeeld gemaakt is met een eerdere versie dan 7.1.12 en app B met een versie die hoger is dan of gelijk is aan 7.1.12 van dezelfde uitgever, moet de eindgebruiker afzonderlijke pincodes instellen voor A en B als beide op een iOS-apparaat zijn geïnstalleerd. <br> Als een app C met SDK-versie 7.1.9 op het apparaat is geïnstalleerd, gebruikt die app dezelfde pincode als app A. <br> Een app D die gemaakt is met 7.1.14, gebruikt dezelfde pincode als app B. <br> Als alleen app A en app C op een apparaat zijn geïnstalleerd, hoeft er maar één pincode worden ingesteld. Hetzelfde geldt als alleen app B en app D op een apparaat zijn geïnstalleerd.
 
 **Versleuteling** IT-beheerders kunnen een app-beveiligingsbeleid instellen dat vereist dat de gegevens in de app worden versleuteld. De IT-beheerder kan als onderdeel van het beleid ook opgeven wanneer de inhoud wordt versleuteld.
 
@@ -146,7 +147,7 @@ Apps die
 
 **Ik kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor het overdragen van gegevens is ingesteld op 'alleen voor beheerde apps' of 'geen apps'. Ontstaat hierdoor geen gegevenslek?** De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _**'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_. U kunt dit controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 - [Mobile Application Management-beleidsinstellingen voor Android in Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
 - [Mobile Application Management-beleidsinstellingen voor iOS](../deploy-use/ios-mam-policy-settings.md)
 - [De Mobile Application Management-configuratie valideren](../deploy-use/validate-mobile-application-management.md)

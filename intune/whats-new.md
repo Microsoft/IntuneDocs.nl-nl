@@ -6,20 +6,20 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/06/2017
-ms.topic: get-started-article
+ms.date: 01/11/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
-ms.reviewer: 
+ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7edb2137051f4b0f70ebd59835ae1219f95ceba
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: d5575d02d0c270e9d22e4b858d8fb00753b60448
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -42,6 +42,127 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook informati
 
 -->   
 
+## <a name="week-of-december-11-2017"></a>Week van 11 december 2017
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="new-automatic-redeployment-setting----1469168---"></a>Nieuwe instelling voor automatisch opnieuw implementeren <!-- 1469168 -->
+De instelling **Automatisch opnieuw implementeren** maakt het mogelijk dat gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **CTRL + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer. U vindt deze instelling onder Windows 10 > Apparaatbeperkingen > Algemeen > Automatisch opnieuw installeren. Zie [Intune-apparaatbeperkingsinstellingen voor Windows 10](device-restrictions-windows-10.md#general) voor meer informatie.
+
+#### <a name="support-for-additional-source-editions-in-the-windows-10-edition-upgrade-policy-----903672--1119689---"></a>Ondersteuning voor extra bronedities in het beleid voor editie-upgrades voor Windows 10<!-- 903672,  1119689 -->
+U kunt nu het beleid voor editie-upgrades voor Windows 10 gebruiken om een upgrade uit te voeren voor extra edities van Windows 10 (Windows 10 Pro, Windows 10 Pro Education, Windows 10 Cloud, enzovoort). Vóór deze release waren de ondersteunde editie-upgradepaden beperkter. Zie [Editie-upgrades voor Windows 10 configureren](edition-upgrade-configure-windows-10.md) voor meer informatie.
+
+#### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>Nieuwe profielinstellingen voor apparaatconfiguratie voor Windows Defender Security Center (WDSC) <!-- 1335507 -->
+
+Intune voegt een nieuwe sectie toe in de profielinstellingen voor apparaatconfiguratie onder de eindpuntbeveiliging genaamd **Windows Defender Security Center**. IT-beheerders kunnen configureren tot welke onderdelen van de Windows Defender Security Center-app eindgebruikers toegang hebben. Als een IT-beheerder een onderdeel verbergt in de Windows Defender Security Center-app, worden alle meldingen die betrekking hebben op het verborgen onderdeel, niet weergeven op het apparaat van de gebruiker.
+
+De volgende onderdelen kunnen worden verborgen in de profielinstellingen voor apparaatconfiguratie van Windows Defender Security Center:
+- Virus- en bedreigingsbeveiliging
+- Prestaties en status van apparaat
+- Firewall- en netwerkbeveiliging
+- App- en browserbeheer
+- Gezinsopties
+
+IT-beheerders kunnen ook aanpassen welke meldingen gebruikers ontvangen. U kunt bijvoorbeeld configureren of de gebruikers alle meldingen ontvangen die worden gegenereerd door zichtbare onderdelen in het WDSC of alleen kritieke meldingen. Niet-kritieke meldingen zijn bijvoorbeeld periodieke samenvattingen van Windows Defender Antivirus-activiteiten en meldingen wanneer scans zijn voltooid. Alle andere meldingen worden beschouwd als kritiek. Daarnaast kunt u ook de inhoud van meldingen zelf aanpassen. U kunt bijvoorbeeld contactgegevens van de IT-afdeling toevoegen aan meldingen die worden weergegeven op apparaten van gebruikers.
+
+#### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755---"></a>Ondersteuning voor meerdere connectoren voor het verwerken van SCEP- en PFX-certificaten <!-- 1361755 -->
+
+Klanten die de on-premises NDES-connector gebruiken om certificaten aan apparaten te leveren, kunnen nu meerdere connectoren in één tenant configureren.
+
+Deze nieuwe mogelijkheid biedt ondersteuning voor het volgende scenario:
+
+- **Hoge beschikbaarheid**
+
+Elke NDES-connector haalt certificaataanvragen uit Intune op.  Als één NDES-connector offline gaat, kan de andere connector aanvragen blijven verwerken.
+
+#### <a name="customer-subject-name-can-use-aaddeviceid-variable-----1468599---"></a>Aangepaste onderwerpnaam kan de AAD_DEVICE_ID-variabele <!-- 1468599 --> gebruiken
+
+Wanneer u een SCEP-certificaatprofiel in Intune maakt, kunt u nu de AAD_DEVICE_ID-variabele gebruiken bij het samenstellen van de aangepaste onderwerpnaam.   Wanneer het certificaat wordt aangevraagd via dit SCEP-profiel, wordt de variabele vervangen door de AAD-apparaat-id van het apparaat dat de certificaataanvraag doet.
+
+
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>Via Jamf ingeschreven macOS-apparaten beheren met de Intune-engine voor apparaatnaleving<!-- 1592747 -->
+U kunt nu Jamf gebruiken om statusinformatie over macOS-apparaten naar Intune te sturen, waarna het apparaat wordt geëvalueerd op naleving van het beleid dat is gedefinieerd in de Intune-console. Op basis van de nalevingsstatus van het apparaat en van andere omstandigheden (zoals locatie, gebruikersrisico en dergelijke) dwingt voorwaardelijke toegang naleving af voor macOS-apparaten die toegang hebben tot toepassingen in de cloud en on-premises die zijn verbonden met Azure AD, met inbegrip van Office 365. Meer informatie over [integratie met Jamf instellen](conditional-access-integrate-jamf.md) en [afdwingen van naleving voor door Jamf beheerde apparaten](conditional-access-assign-jamf.md).
+
+#### <a name="new-ios-device-action------1424701---"></a>Nieuwe actie voor iOS-apparaten <!-- 1424701 -->
+
+U kunt nu door iOS 10.3 gecontroleerde apparaten afsluiten. Deze actie sluit het apparaat direct af zonder waarschuwing voor de eindgebruiker. U vindt de actie **Afsluiten (alleen gecontroleerd)** in de apparaateigenschappen wanneer u een apparaat selecteert in de werkbelasting **Apparaat**.
+
+#### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Geen datum-/tijdwijzigingen voor Samsung Knox-apparaten toestaan <!-- 1468103 -->
+
+We hebben een nieuwe functie toegevoegd waarmee u datum- en tijdwijzigingen op Samsung Knox-apparaten kunt blokkeren. U kunt dit vinden in **Apparaatconfiguratieprofielen** > **Apparaatbeperkingen (Android)** > **Algemeen**.
+
+#### <a name="surface-hub-resource-account-supported----1566442----"></a>Resource-account voor Surface Hub ondersteund <!-- 1566442  -->
+
+Er is een nieuwe apparaatactie toegevoegd, zodat beheerders het resource-account dat is gekoppeld aan een Surface Hub, kunnen definiëren en bijwerken.
+
+Het resource-account wordt door een Surface Hub gebruikt voor verificatie bij Exchange/Skype, zodat kan worden deelgenomen aan een vergadering. U kunt een uniek resource-account maken, zodat de Surface Hub als vergaderruimte wordt weergegeven in de vergadering. Het resource-account kan bijvoorbeeld worden weergegeven als *Vergaderzaal B41/6233*. Het resource-account (ook wel het apparaataccount genoemd) voor de Surface Hub moet meestal worden geconfigureerd voor de locatie van de vergaderruimte en wanneer andere parameters van het resource-account moeten worden gewijzigd.
+
+Wanneer beheerders het resource-account op een apparaat willen bijwerken, moeten ze de huidige referenties voor Active Directory/Azure Active Directory voor het apparaat opgeven. Als wisseling van het wachtwoord is ingeschakeld voor het apparaat, moeten beheerders het wachtwoord zoeken in Azure Active Directory.
+
+> [!NOTE]
+> Alle velden in een bundel worden verzonden en overschrijven alle velden die eerder zijn geconfigureerd. Lege velden overschrijven ook bestaande velden.
+
+Beheerders kunnen de volgende instellingen configureren:
+
+- **Resource-account**
+   - **Active Directory-gebruiker**
+
+      Domeinnaam\gebruikersnaam of UPN (Principle-naam van gebruiker):user@domainname.com
+
+   - **Wachtwoord**
+
+- **Optionele parameters voor het resource-account** (moeten worden ingesteld met het opgegeven resource-account)
+
+   - **Periode voor de wisseling van het wachtwoord**
+
+     Zorgt ervoor dat het accountwachtwoord uit veiligheidsoverwegingen elke week automatisch wordt bijgewerkt door de Surface Hub. Als u parameters wilt configureren nadat dit is ingeschakeld, moet eerst het wachtwoord voor het account in Azure Active Directory opnieuw worden ingesteld.
+
+   - **SIP-adres (Session Initiation Protocol)**
+
+     Wordt alleen gebruikt als automatische detectie mislukt.
+
+   - **E-mail**
+
+     Het e-mailadres van het apparaat-/resource-account.
+
+   - **Exchange-server**
+
+     Alleen vereist wanneer automatische detectie mislukt.
+
+   - **Agendasynchronisatie**
+
+     Hiermee geeft u op of agendasynchronisatie en andere Exchange Server-services zijn ingeschakeld. Bijvoorbeeld: synchronisatie van vergaderingen.
+
+#### <a name="install-office-apps-on-macos-devices----1494311---"></a>Office-apps installeren op macOS-apparaten <!-- 1494311 -->
+U kunt nu Office-apps installeren op macOS-apparaten. Met dit nieuwe app-type kunt u Word, Excel, PowerPoint, Outlook en OneNote installeren. Deze apps worden ook geleverd met Microsoft AutoUpdate (MAU) om te zorgen dat uw apps veilig en up-to-date blijven.
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Een token van het iOS-volume-aanschafprogramma verwijderen <!-- 820879 -->
+U kunt het token van het iOS-volume-aanschafprogramma (VPP) verwijderen via de console. Dit kan nodig zijn als er dubbele exemplaren van een VPP-token zijn.
+
+### <a name="intune-apps"></a>Intune-apps
+
+#### <a name="end-user-messaging-for-accounts---1573558-for-1712--"></a>Eindgebruikersberichten voor accounts <!--1573558 for 1712-->
+
+Gebruikers van de bedrijfsportal-website worden geblokkeerd voor het uitvoeren van acties waarvoor schrijftoegang tot uw tenant is vereist. Ze krijgen een foutbericht te zien waarin wordt uitgelegd dat hun account in onderhoud is. Dergelijke wijzigingen worden binnenkort ook toegepast op de bedrijfsportal-apps voor Android, iOS, macOS en Windows. U kunt deze fout zien op de pagina [Nieuw in de app-gebruikersinterface](whats-new-app-ui.md).
+
+
+
+### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+
+#### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>De nieuwe entiteitverzameling Huidige gebruiker is beperkt tot gegevens van actieve gebruikers <!-- 1667026 -->
+
+De entiteitverzameling **Gebruiker** bevat alle Azure Active Directory-gebruikers (Azure AD) met toegewezen licenties in uw onderneming. Een gebruiker kan bijvoorbeeld worden toegevoegd aan Intune en vervolgens ergens gedurende de afgelopen maand zijn verwijderd. Ook al is deze gebruiker niet aanwezig op het moment dat het rapport wordt gegenereerd, toch zijn de gebruiker en de status aanwezig in de gegevens. U kunt een rapport maken dat de duur van de historische aanwezigheid van de gebruiker in uw gegevens weergeeft.
+
+Daarentegen bevat de nieuwe entiteitverzameling **Huidige gebruiker** alleen gebruikers die niet zijn verwijderd. De entiteitverzameling **Huidige gebruiker** bevat alleen gebruikers die momenteel actief zijn. Zie [Naslaginformatie voor huidige gebruikersentiteit](reports-ref-current-user.md) voor informatie over de entiteitverzameling **Huidige gebruiker**.
+
+
+### <a name="updated-graph-apis----1736360---"></a>Bijgewerkte Graph API's <!-- 1736360 -->
+
+We hebben in deze release enkele Graph API's voor Intune bijgewerkt die nog in de bètafase zijn. Bekijk de maandelijkse [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) voor meer informatie.
 
 
 ## <a name="week-of-december-4-2017"></a>Week van 4 december 2017
@@ -55,55 +176,56 @@ U kunt geweigerde apps opgeven in Intune. Als een app wordt geweigerd, heeft dez
 ## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
- 
-#### <a name="troubleshoot-enrollment-issues-----746324---"></a>Inschrijvingsproblemen oplossen <!-- 746324 --> 
 
-De werkruimte **Problemen oplossen** toont problemen met gebruikersinschrijving. Details over het probleem en voorgestelde herstelstappen kunnen beheerders en helpdeskmedewerkers helpen problemen op te lossen. Bepaalde inschrijvingsproblemen worden niet vastgelegd en voor sommige fouten zijn er misschien geen herstelvoorstellen. 
+#### <a name="troubleshoot-enrollment-issues-----746324---"></a>Inschrijvingsproblemen oplossen <!-- 746324 -->
+
+De werkruimte **Problemen oplossen** toont problemen met gebruikersinschrijving. Details over het probleem en voorgestelde herstelstappen kunnen beheerders en helpdeskmedewerkers helpen problemen op te lossen. Bepaalde inschrijvingsproblemen worden niet vastgelegd en voor sommige fouten zijn er misschien geen herstelvoorstellen.
 
 #### <a name="group-assigned-enrollment-restrictions----747598---"></a>Beperkingen aan groepen toegewezen inschrijving <!-- 747598 -->
- 
+
 Als Intune-beheerder kunt u de [aangepaste inschrijvingsbeperkingen Apparaattype en Apparaatlimiet maken voor gebruikersgroepen](enrollment-restrictions-set.md).
- 
+
 Met de Intune Azure Portal kunt u maximaal 25 exemplaren van elk beperkingstype maken die vervolgens kunnen worden toegewezen aan gebruikersgroepen. Aan groepen toegewezen beperkingen overschrijven de standaardbeperkingen.
- 
-Alle exemplaren van een beperkingstype worden bijgehouden in een strikt geordende lijst. Deze volgorde bepaalt een prioriteitswaarde voor conflictoplossing. Een gebruiker die getroffen is door meer dan één beperkingsexemplaar wordt alleen beperkt door het exemplaar met de hoogste prioriteitswaarde. U kunt de prioriteit van een bepaald exemplaar wijzigen door dit naar een andere positie in de lijst te slepen. 
- 
+
+Alle exemplaren van een beperkingstype worden bijgehouden in een strikt geordende lijst. Deze volgorde bepaalt een prioriteitswaarde voor conflictoplossing. Een gebruiker die getroffen is door meer dan één beperkingsexemplaar wordt alleen beperkt door het exemplaar met de hoogste prioriteitswaarde. U kunt de prioriteit van een bepaald exemplaar wijzigen door dit naar een andere positie in de lijst te slepen.
+
 Deze functionaliteit wordt vrijgegeven met de migratie van Android for Work-instellingen van het menu Android for Work-inschrijving naar het menu Inschrijvingsbeperkingen. Aangezien deze migratie enkele dagen kan duren, kan uw account worden bijgewerkt ten aanzien van andere onderdelen van de release van november voordat u ziet dat groepstoewijzing wordt ingeschakeld voor Inschrijvingsbeperkingen.
 
 #### <a name="support-for-multiple-network-device-enrollment-service-ndes-connectors----1528104---"></a>Ondersteuning voor meerdere connectors voor de Network Device Enrollment-service (NDES)<!-- 1528104 -->
 
-Met de NDES kunnen mobiele apparaten die zonder domeinreferenties worden uitgevoerd certificaten verkrijgen op basis van het Simple Certificate Enrollment Protocol (SCEP). Dankzij deze update worden meerdere NDES-connectors ondersteund. 
+Met de NDES kunnen mobiele apparaten die zonder domeinreferenties worden uitgevoerd certificaten verkrijgen op basis van het Simple Certificate Enrollment Protocol (SCEP).
+Dankzij deze update worden meerdere NDES-connectors ondersteund.
 
 #### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Android for Work-apparaten onafhankelijk van de Android-apparaten beheren<!-- 1490731 EEready-->
- 
+
 **Opmerking**: De volgende wijzigingen gaan van start bij de update van november, maar de uitvoering ervan voor uw account kan nog wel even duren. U ontvangt een bevestigingsbericht in de Office 365-portal wanneer deze wijzigingen voor uw account van kracht zijn. Na de implementatie hebt u aanvullende beheeropties. Er zijn geen wijzigingen in de ervaringen van de eindgebruiker tijdens de implementatie.
- 
+
 Intune ondersteunt het inschrijvingsbeheer voor Android for Work-apparaten onafhankelijk van het Android-platform. Deze instellingen worden beheerd onder **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Apparaattypebeperkingen**. (Ze bevonden zich eerder onder **Apparaatinschrijving** > **Android for Work-inschrijving** > **Android for Work-inschrijvingsinstellingen**.)
- 
+
 Standaard zijn instellingen voor uw Android for Work-apparaten gelijk aan de instellingen voor uw Android-apparaten. Wanneer u echter uw Android for Work-instellingen wijzigt, is dat niet meer het geval.
- 
+
 Als u een persoonlijke Android for Work-inschrijving blokkeert, kunnen alleen zakelijke Android-apparaten worden ingeschreven als Android for Work.
- 
+
 Bedenk het volgende wanneer u met de nieuwe instellingen werkt:
- 
+
 ##### <a name="if-you-have-never-previously-onboarded-android-for-work-enrollment"></a>Als u nog nooit een Android for Work-inschrijving hebt toegevoegd
- 
+
 Het nieuwe Android for Work-platform wordt geblokkeerd in de standaard apparaattypebeperkingen. Wanneer u de functie toevoegt, kunt u de Android for Work-inschrijving van apparaten toestaan. Hiervoor wijzigt u de standaardinstelling of maakt u een nieuwe apparaattypebeperking ter vervanging van de standaard apparaattypebeperking.
- 
+
 ##### <a name="if-you-have-onboarded-android-for-work-enrollment"></a>Als u de Android for Work-inschrijving hebt toegevoegd
- 
+
 Als u dit al eerder hebt gedaan, is uw situatie afhankelijk van de instelling die u hebt gekozen:
- 
+
 | Instelling | De status van Android for Work bij een standaard apparaattypebeperking | Opmerkingen |
 | --- | --- | --- |
 | **Alle apparaten beheren als Android** | Geblokkeerd | U mag geen Android-apparaten bij Android for Work hebben ingeschreven. |
 | **Ondersteunde apparaten beheren als Android for Work** | Toegestaan | Alle Android-apparaten die ondersteuning bieden voor Android for Work moeten zijn ingeschreven bij Android for Work. |
 | **Alleen ondersteunde apparaten voor de gebruikers in deze groepen beheren als Android for Work** | Geblokkeerd | Er is een afzonderlijk beleid voor apparaattypebeperkingen gemaakt om de standaardinstelling te overschrijven. Dit beleid bepaalt de groepen die u eerder hebt geselecteerd om Android for Work-inschrijving toe te staan. Gebruikers binnen de geselecteerde groepen mogen hun Android for Work-apparaten blijven inschrijven. Alle andere gebruikers worden uitgesloten van inschrijving bij Android for Work. |
- 
+
 In alle gevallen blijft uw beoogde regel behouden. Er is geen actie vereist van uw kant om de globale of groepsgewijze toestemming voor Android for Work in uw omgeving te handhaven.
 
 ### <a name="app-management"></a>Appbeheer
-  
+
 #### <a name="app-install-report-updated-to-include-install-pending-status----1249446---"></a>Het statusrapport van de app-installatie wordt bijgewerkt met de status Installatie in behandeling <!-- 1249446 -->  
 
 Het **Statusrapport van de app-installatie** dat toegankelijk is voor elke app via de **App**-lijst in de **Mobiele apps**-workload bevat nu **Installatie in behandeling** voor gebruikers en apparaten.
@@ -132,11 +254,11 @@ Wij hebben een nieuw proces en hulpprogramma's om in Azure Portal gebruikers en 
 - In Azure Portal beleidsregels en profielen van de Configuration Manager-console naar Intune kopiëren
 - In Azure Portal een subset gebruikers naar Intune verplaatsen, terwijl de rest in hybride MDM blijft
 - In Azure Portal apparaten naar Intune migreren zonder dat u ze opnieuw hoeft te registreren
- 
+
 Zie [Hybride MDM-gebruikers en -apparaten migreren naar Intune (zelfstandig)](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa) voor meer informatie.
 
 #### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>Hoge beschikbaarheid van on-premises Exchange Connector  <!-- 676614 -->
-U kunt nu meerdere CAS-rollen (Client Access Server) instellen voor on-premises Exchange Connector. Als de hoofd-CAS bijvoorbeeld uitvalt, ontvangt Exchange Connector een query om over te schakelen naar een andere CAS. Deze functie zorgt ervoor dat de service niet wordt onderbroken.
+Nadat de Exchange Connector verbinding met Exchange heeft gemaakt met behulp van de opgegeven CAS, kan de connector nu andere CAS-instanties detecteren. Als de primaire CAS niet beschikbaar is, zoekt de connector naar een andere CAS (indien beschikbaar) totdat de primaire CAS beschikbaar komt. Zie [Hoge beschikbaarheid van on-premises Exchange Connector](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support) voor meer informatie.
 
 #### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>iOS-apparaat op afstand opnieuw opstarten (alleen onder supervisie)<!-- 1424595 -->
 
@@ -163,14 +285,11 @@ Zie voor meer informatie [Beheerde apparaten op afstand vergrendelen met Intune]
 
 Beheerders kunnen aanvullende instellingen configureren bij het maken van een SCEP-profiel op Windows-, iOS-, Mac OS- en Android-platformen.  Beheerders kunnen het IMEI-nummer, het serienummer of de algemene naam met inbegrip van e-mail in de indeling van de onderwerpnaam instellen.
 
-#### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747----"></a>Via Jamf ingeschreven macOS-apparaten beheren met de Intune-engine voor apparaatnaleving<!---1592747 --->
-Vanaf begin 2018 stuurt Jamf statusinformatie over macOS-apparaten naar Intune, waarna het apparaat wordt geëvalueerd op naleving van het beleid dat is gedefinieerd in de Intune-console. Op basis van de nalevingsstatus van het apparaat en van andere omstandigheden (zoals locatie, gebruikersrisico en dergelijke) dwingt voorwaardelijke toegang naleving af voor macOS-apparaten die toegang hebben tot toepassingen in de cloud en on-premises die zijn verbonden met Azure AD, met inbegrip van Office 365.
-
 <!-- #### Update to what device details your company may see -1616825
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. -->
 
 #### <a name="retain-data-during-a-factory-reset----1588489---"></a>Gegevens behouden tijdens fabrieksinstellingen terugzetten <!--1588489 -->
-Wanneer Windows 10 versie 1709 en later naar de fabrieksinstellingen wordt hersteld, is een nieuwe functie beschikbaar. Beheerders kunnen opgeven of apparaatinschrijving en andere ingerichte gegevens worden bewaard op een apparaat via fabrieksinstellingen terugzetten. 
+Wanneer Windows 10 versie 1709 en later naar de fabrieksinstellingen wordt hersteld, is een nieuwe functie beschikbaar. Beheerders kunnen opgeven of apparaatinschrijving en andere ingerichte gegevens worden bewaard op een apparaat via fabrieksinstellingen terugzetten.
 
 De volgende gegevens wordt behouden via fabrieksinstellingen terugzetten:
 - Gebruikersaccounts die zijn gekoppeld aan het apparaat
@@ -180,7 +299,7 @@ De volgende gegevens wordt behouden via fabrieksinstellingen terugzetten:
 - Gebruikersprofiel
 - Gebruikersgegevens buiten het gebruikersprofiel
 - Autologon gebruiker
- 
+
 De volgende gegevens blijven niet behouden:
 - Gebruikersbestanden
 - Door de gebruiker geïnstalleerde apps (Store- en Win32-apps)
@@ -190,13 +309,13 @@ De volgende gegevens blijven niet behouden:
 #### <a name="window-10-update-ring-assignments-are-displayed----1621837---"></a>Er worden toewijzingen voor de Windows 10-updatering weergegeven <!-- 1621837 -->
 Wanneer u bezig bent met de **probleemoplossing** voor de door u weergegeven gebruiker, kunt u eventuele toewijzingen voor de Windows 10-updatering zien.  
 
-#### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings------1455974-----"></a>Frequentie-instellingen van rapporten van Windows Defender Advanced Threat Protection <!--- 1455974  --->
+#### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings-----1455974----"></a>Frequentie-instellingen van rapporten van Windows Defender Advanced Threat Protection <!-- 1455974  -->
 Met de service Windows Defender Advanced Threat Protection (WDATP) kunnen beheerders de rapportagefrequentie voor beheerde apparaten beheren. Met de nieuwe optie **Frequentie van telemetrierapporten versnellen** verzamelt vaker WDATP gegevens en beoordeelt vaker risico's. De standaardwaarde voor rapportage zorgt voor optimale snelheid en prestaties. Het verhogen van de rapportagefrequentie kan waardevol zijn voor apparaten met een hoog risico. Deze instelling kunt u vinden in het **Windows Defender ATP**-profiel in **Apparaatconfiguraties**.
 
 #### <a name="audit-updates----1412961---"></a>Updates controleren<!-- 1412961 -->  
-Controles van Intune biedt een record van de wijzigingsbewerkingen ten aanzien van Intune.  Alle taakbewerkingen voor maken, bijwerken, verwijderen en externe taakbewerkingen worden vastgelegd en een jaar bewaard.  De Azure Portal voorziet in een weergave van de controlegegevens van laatste 30 dagen in elke workload, welke gefilterd kan worden.  Met de bijbehorende Graph API kunt u de controlegegevens ophalen die het afgelopen jaar zijn bewaard. 
+Controles van Intune biedt een record van de wijzigingsbewerkingen ten aanzien van Intune.  Alle taakbewerkingen voor maken, bijwerken, verwijderen en externe taakbewerkingen worden vastgelegd en een jaar bewaard.  De Azure Portal voorziet in een weergave van de controlegegevens van laatste 30 dagen in elke workload, welke gefilterd kan worden.  Met de bijbehorende Graph API kunt u de controlegegevens ophalen die het afgelopen jaar zijn bewaard.
 
-Controles zijn te vinden onder de groep **CONTROLE**. Er is een menu-item **Controlelogboeken** voor elke workload. 
+Controles zijn te vinden onder de groep **CONTROLE**. Er is een menu-item **Controlelogboeken** voor elke workload.
 
 
 
@@ -367,7 +486,7 @@ Eindgebruikers waarvoor de beheerde browser is geïnstalleerd kunnen de beheerst
 
 Zie [Toegang tot de logboeken van de beheerde app voor iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios) voor meer informatie over het inschakelen van de probleemoplossingsmodus in de beheerde browser op een iOS-apparaat.
 
-#### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal voor iOS in versie 2.9.0 <!---1417174--->
+#### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal voor iOS in versie 2.9.0 <!-- 1417174 -->
 
 We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor iOS verbeterd. De taal is gebruiksvriendelijker en waar mogelijk hebben we schermen gecombineerd. We hebben de taal ook specifieker voor uw bedrijf gemaakt door overal in de installatietekst de naam van uw bedrijf te gebruiken. U kunt deze bijgewerkte werkstroom zien op de  [pagina met nieuwe functies in de app](whats-new-app-ui.md).
 
@@ -423,17 +542,17 @@ De bedrijfsportal-app voor Android vraagt nu om feedback van eindgebruikers. Dez
 <!-- #### Update to what device details an organization can see 1616825
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.-->
 
-#### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android----1573324-1573150-1558616-1564878---"></a>Uw gebruikers helpen om zichzelf te redden met de bedrijfsportal-app voor Android<!---1573324, 1573150, 1558616, 1564878--->
+#### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android----1573324-1573150-1558616-1564878---"></a>Uw gebruikers helpen om zichzelf te redden met de bedrijfsportal-app voor Android<!-- 1573324, 1573150, 1558616, 1564878 -->
 
 De bedrijfsportal-app voor Android voegt aanwijzingen toe, zodat eindgebruikers meer inzicht krijgen en, waar mogelijk, nieuwe gebruikssituaties zelf kunnen oplossen.
-- Eindgebruikers worden naar de (Azure Active Directory-portal) geleid [https://account.activedirectory.windowsazure.com/r/#/profile] om een apparaat verwijderen als zij het maximum aantal apparaten hebben bereikt dat ze mogen toevoegen.
-- Eindgebruikers krijgen een stapsgewijze instructie om hen te helpen [foutmeldingen bij de activering van Samsung KNOX-apparaten op te lossen](https://go.microsoft.com/fwlink/?linkid=859718) of [de energiebesparende modus uit te schakelen](/intune-user-help/power-saving-mode-android). Als geen van deze oplossingen het probleem verhelpt, krijgt u een uitleg over het verzenden van [logboeken naar Microsoft](/intune-user-help/send-logs-to-microsoft-ios).
+- Eindgebruikers worden naar de [Azure Active Directory-portal](https://account.activedirectory.windowsazure.com/r/#/profile) geleid om een apparaat verwijderen als zij het maximum aantal apparaten hebben bereikt dat ze mogen toevoegen.
+- Eindgebruikers krijgen een stapsgewijze instructie om hen te helpen [foutberichten bij de activering van Samsung Knox-apparaten op te lossen](https://go.microsoft.com/fwlink/?linkid=859718) of [de energiebesparende modus uit te schakelen](/intune-user-help/power-saving-mode-android). Als geen van deze oplossingen het probleem verhelpt, krijgt u een uitleg over het verzenden van [logboeken naar Microsoft](/intune-user-help/send-logs-to-microsoft-android).
 
-#### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Nieuwe actie 'Oplossen' beschikbaar voor Android-apparaten<!---1583480--->
+#### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Nieuwe actie 'Oplossen' beschikbaar voor Android-apparaten<!-- 1583480 -->
 
 De bedrijfsportal-app voor Android introduceert een actie 'Oplossen' op de pagina _Apparaatinstellingen bijwerken_. Als de eindgebruiker deze optie selecteert, komt deze rechtstreeks bij de instelling terecht die de oorzaak ervan is dat hun apparaat niet compatibel is. De bedrijfsportal-app voor Android ondersteunt momenteel deze actie ten aanzien van de instellingen [Toegangscode](/intune-user-help/set-your-pin-or-password-android), [USB-foutopsporing](/intune-user-help/you-need-to-turn-off-usb-debugging-android), en [Onbekende bronnen](/intune-user-help/you-need-to-turn-off-unknown-sources-android).
 
-#### <a name="device-setup-progress-indicator-in-android-company-portal----1565657---"></a>Voortgangsindicator voor apparaatinstallatie in Android-bedrijfsportal <!---1565657--->
+#### <a name="device-setup-progress-indicator-in-android-company-portal----1565657---"></a>Voortgangsindicator voor apparaatinstallatie in Android-bedrijfsportal <!-- 1565657 -->
 In de bedrijfsportal-app voor Android wordt een voortgangsindicator voor de apparaatinstallatie weergegeven wanneer een gebruiker zijn of haar apparaat inschrijft. De aanduiding toont nieuwe statussen, te beginnen met 'Uw apparaat instellen...', vervolgens 'Het apparaat registreren...', daarna 'Registreren van het apparaat voltooien...' en tot slot 'Instellen van het apparaat voltooien...'.
 
 ## <a name="week-of-october-23-2017"></a>Week van 23 oktober 2017
@@ -570,7 +689,7 @@ Eindgebruikers ontvangen aanvullende meldingen wanneer de bedrijfsportal-app voo
 
 Er zijn nog meer optimalisaties voor nieuwe UI-elementen die in Android Oreo zijn ingeschakeld.  Eindgebruikers ontvangen aanvullende meldingen wanneer de bedrijfsportal achtergrondtaken uitvoert, zoals het ophalen van beleid van de Intune-service.  Dit biedt eindgebruikers meer transparantie over wanneer met de bedrijfsportal-app beheertaken worden uitgevoerd op het apparaat.
 
-#### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>Nieuw gedrag voor de bedrijfsportal-app voor Android met werkprofielen <!---1485783--->
+#### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>Nieuw gedrag voor de bedrijfsportal-app voor Android met werkprofielen <!-- 1485783 -->
 
 Als u een Android voor Work-apparaat met een werkprofiel inschrijft, voert de bedrijfsportal-app in het werkprofiel beheertaken uit op het apparaat. 
 
@@ -587,11 +706,11 @@ In de onderhoudsmodus worden er alleen kritieke beveiligingsupdates voor deze ap
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 
-#### <a name="block-unsupported-samsung-knox-device-enrollment------1490695----"></a>Registratie van niet-ondersteunde Samsung Knox-apparaten blokkeren <!--- 1490695 --->
+#### <a name="block-unsupported-samsung-knox-device-enrollment-----1490695---"></a>Registratie van niet-ondersteunde Samsung Knox-apparaten blokkeren <!-- 1490695 -->
 
-Via de bedrijfsportal-app worden alleen ondersteunde Samsung Knox-apparaten geregistreerd. Om KNOX activeringsfouten te voorkomen waardoor de MDM-registratie onmogelijk wordt, wordt de apparaatregistratie alleen uitgevoerd als het apparaat wordt weergegeven in de [lijst met apparaten die is gepubliceerd door Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor KNOX, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u een apparaat koopt en implementeert. U vindt de volledige lijst met gecontroleerde apparaten in de [beleidsinstellingen voor Android en Samsung KNOX Standard](/intune/supported-devices-browsers.md#intune-supported-devices).
+Via de bedrijfsportal-app worden alleen ondersteunde Samsung Knox-apparaten geregistreerd. Om Knox-activeringsfouten te voorkomen waardoor de MDM-registratie onmogelijk wordt, wordt de apparaatregistratie alleen uitgevoerd als het apparaat wordt weergegeven in de [lijst met apparaten die is gepubliceerd door Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor Knox, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u een apparaat koopt en implementeert. U vindt de volledige lijst met gecontroleerde apparaten in de [beleidsinstellingen voor Android en Samsung Knox Standard](/intune/supported-devices-browsers.md#intune-supported-devices).
 
-#### <a name="end-of-support-for-android-43-and-lower----1171126-1326920----"></a>Einde van ondersteuning voor Android 4.3 en lager <!---1171126, 1326920 --->
+#### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Einde van ondersteuning voor Android 4.3 en lager <!-- 1171126, 1326920 -->
 Beheerde apps en de Intune-bedrijfsportal-app voor Android vereisen Android 4.4 en hoger voor toegang tot bedrijfsresources. Vanaf december worden alle ingeschreven apparaten verplicht buiten gebruik gesteld, waardoor bedrijfsresources niet meer toegankelijk zijn. Als u beleid voor app-beveiliging zonder MDM gebruikt, krijgen apps geen updates meer en neemt de gebruikservaring na verloop van tijd steeds verder af.
 
 #### <a name="inform-end-users-what-device-information-can-be-seen-on-enrolled-devices---1165314--"></a>Eindgebruikers informeren over welke apparaatgegevens worden weergegeven op geregistreerde apparaten <!--1165314-->
@@ -605,7 +724,7 @@ Aan het scherm voor apparaatgegevens in alle bedrijfsportal-apps wordt de optie 
 #### <a name="intune-supports-ios-11---1428975--"></a>Intune biedt ondersteuning voor iOS 11 <!--1428975-->
 Intune biedt ondersteuning voor iOS 11. Dit werd eerder aangekondigd in de [blog Intune Support](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/).
 
-#### <a name="end-of-support-for-ios-80----1164477---"></a>Einde van ondersteuning voor iOS 8.0 <!---1164477--->
+#### <a name="end-of-support-for-ios-80----1164477---"></a>Einde van ondersteuning voor iOS 8.0 <!-- 1164477 -->
 Beheerde apps en de Intune-bedrijfsportal-app voor iOS vereisen iOS 9.0 en hoger voor toegang tot bedrijfsresources. Apparaten die niet voor september zijn bijgewerkt, hebben geen toegang meer tot de bedrijfsportal of beheerde apps. 
 
 ### <a name="intune-apps"></a>Intune-apps
@@ -617,32 +736,34 @@ Met de bedrijfsportal-app voor Windows 10 kunnen gebruikers de gegevens in de ap
 
 ## <a name="notices"></a>Mededelingen
 
-### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Android for Work-apparaten onafhankelijk van de Android-apparaten beheren<!-- 1490731 EEready-->
- 
+### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Plannen voor wijziging: einde levenscyclus van Easy Assist <!-- 1556480 -->
+Intune maakt gebruik van Microsoft Easy Assist voor hulp op afstand bij het beheren van pc's. Wat u misschien niet weet is dat Microsoft Easy Assist een onderdeel is van Office Live Meeting, een service die 31 december 2017 is afgeschaft. Daarom is ook Easy Assist van Intune per 31 december 2017 afgeschaft.
+
+### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Android for Work-apparaten onafhankelijk van de Android-apparaten beheren<!-- 1490731 EEready-->    
 **Opmerking**: De volgende wijzigingen gaan van start bij de update van november, maar de uitvoering ervan voor uw account kan nog wel even duren. U ontvangt een bevestigingsbericht in de Office 365-portal wanneer deze wijzigingen voor uw account van kracht zijn. Na de implementatie hebt u aanvullende beheeropties. Er zijn geen wijzigingen in de ervaringen van de eindgebruiker tijdens de implementatie.
- 
+
 Intune ondersteunt het inschrijvingsbeheer voor Android for Work-apparaten onafhankelijk van het Android-platform. Deze instellingen worden beheerd onder **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Apparaattypebeperkingen**. (Ze bevonden zich eerder onder **Apparaatinschrijving** > **Android for Work-inschrijving** > **Android for Work-inschrijvingsinstellingen**.)
- 
+
 Standaard zijn instellingen voor uw Android for Work-apparaten gelijk aan de instellingen voor uw Android-apparaten. Wanneer u echter uw Android for Work-instellingen wijzigt, is dat niet meer het geval.
- 
+
 Als u een persoonlijke Android for Work-inschrijving blokkeert, kunnen alleen zakelijke Android-apparaten worden ingeschreven als Android for Work.
- 
+
 Bedenk het volgende wanneer u met de nieuwe instellingen werkt:
- 
+
 #### <a name="if-you-have-never-previously-onboarded-android-for-work-enrollment"></a>Als u nog nooit een Android for Work-inschrijving hebt toegevoegd
- 
+
 Het nieuwe Android for Work-platform wordt geblokkeerd in de standaard apparaattypebeperkingen. Wanneer u de functie toevoegt, kunt u de Android for Work-inschrijving van apparaten toestaan. Hiervoor wijzigt u de standaardinstelling of maakt u een nieuwe apparaattypebeperking ter vervanging van de standaard apparaattypebeperking.
- 
+
 #### <a name="if-you-have-onboarded-android-for-work-enrollment"></a>Als u de Android for Work-inschrijving hebt toegevoegd
- 
+
 Als u dit al eerder hebt gedaan, is uw situatie afhankelijk van de instelling die u hebt gekozen:
- 
+
 | Instelling | De status van Android for Work bij een standaard apparaattypebeperking | Opmerkingen |
 | --- | --- | --- |
 | **Alle apparaten beheren als Android** | Geblokkeerd | U mag geen Android-apparaten bij Android for Work hebben ingeschreven. |
 | **Ondersteunde apparaten beheren als Android for Work** | Toegestaan | Alle Android-apparaten die ondersteuning bieden voor Android for Work moeten zijn ingeschreven bij Android for Work. |
 | **Alleen ondersteunde apparaten voor de gebruikers in deze groepen beheren als Android for Work** | Geblokkeerd | Er is een afzonderlijk beleid voor apparaattypebeperkingen gemaakt om de standaardinstelling te overschrijven. Dit beleid bepaalt de groepen die u eerder hebt geselecteerd om Android for Work-inschrijving toe te staan. Gebruikers binnen de geselecteerde groepen mogen hun Android for Work-apparaten blijven inschrijven. Alle andere gebruikers worden uitgesloten van inschrijving bij Android for Work. |
- 
+
 In alle gevallen blijft uw beoogde regel behouden. Er is geen actie vereist van uw kant om de globale of groepsgewijze toestemming voor Android for Work in uw omgeving te handhaven.
 
 ### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>Beëindigde ondersteuning voor OS X Mavericks 10.10 en eerdere versies van macOS <!--1489263, plan for change for 1802-->
@@ -669,7 +790,7 @@ De bestaande MAM-beheerdersrollen (Mobile Application Management), namelijk Inze
 
 ## <a name="whats-coming"></a>Binnenkort
 
-### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Beleid voor voorwaardelijke toegang voor Intune is alleen beschikbaar vanuit Azure Portal <!-- 1737088 --> 
+### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Beleid voor voorwaardelijke toegang voor Intune is alleen beschikbaar vanuit Azure Portal <!-- 1737088 -->
 We zijn aan het vereenvoudigen waar u voorwaardelijke toegang kunt configureren en beheren. Op dit moment kunt u voorwaardelijke toegang beheren vanaf de blade Intune-app-beveiliging (MAM) en via de klassieke Azure AD-ervaring in [Windows Azure Portal](https://manage.windowsazure.com). Vanaf januari kunt u uw beleid alleen configureren en beheren in [Azure Portal](https://portal.azure.com) via **Azure Active Directory** > **Voorwaardelijke toegang**. Voor uw gemak hebt u ook toegang tot deze blade vanuit Intune in Azure Portal via **Intune** > **Voorwaardelijke toegang**.
 
 ### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine---1592747--"></a>Via Jamf ingeschreven macOS-apparaten beheren met de Intune-engine voor apparaatnaleving<!--1592747-->
@@ -692,7 +813,7 @@ Apple heeft aangekondigd dat specifieke vereisten gaan gelden voor Application T
 
 Een versie van de bedrijfsportal-app is beschikbaar gemaakt voor iOS via het Apple TestFlight-programma waarmee naleving van de nieuwe ATS-vereisten wordt afgedwongen. Als u dit wilt proberen zodat u uw ATS-compatibiliteit kunt testen, stuurt u een e-mail naar <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app"> CompanyPortalBeta@microsoft.com </a> met uw voornaam, achternaam, e-mailadres en bedrijfsnaam. Bekijk ons [Intune-ondersteuningsblog](https://aka.ms/compportalats) voor meer informatie.
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Wat is er nieuw in de gebruikersinterface van de bedrijfsportal?](whats-new-app-ui.md)
