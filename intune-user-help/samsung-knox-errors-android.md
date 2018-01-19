@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 8edfc4f55e9265ef6bd2dfbcb5871496d5679a9f
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 77b3b8f3fff39df94d535b28c060334b3e0a63ce
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Veelvoorkomende problemen met uw Samsung Knox-apparaat oplossen
 
-Soms kunnen er problemen optreden met uw Samsung Knox-apparaat die zouden kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Soms kunnen er problemen optreden met uw Samsung Knox-apparaat die zouden kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexe problemen raden we aan dat u [contact opneemt met het Android Company Portal-team](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
 
 ## <a name="network-activation-error"></a>Netwerkactiveringsfout
 
@@ -31,7 +31,7 @@ Het bericht kan er als volgt uitzien:
 
 |Foutbericht|Wat u moet doen|
 |---|---|
-|**Samsung Knox-activeringsfout**: de Samsung Knox-licentie kan niet worden geactiveerd. Schakel over naar een ander draadloos of mobiel netwerk en probeer het opnieuw.|Uw apparaat kan niet in het huidige netwerk worden geactiveerd. Als u van mobiel dataverkeer gebruikmaakt, gaat u naar een Wi-Fi-netwerk en probeert u het opnieuw.|
+|**Samsung Knox-activeringsfout**: de Samsung Knox-licentie kan niet worden geactiveerd. Schakel over naar een ander draadloos of mobiel netwerk en probeer het opnieuw.|Uw apparaat kan niet in het huidige netwerk worden geactiveerd. Als u van mobiel dataverkeer gebruikmaakt, gaat u naar een Wi-Fi-netwerk, of vice versa, en probeert u het opnieuw.|
 
 ## <a name="license-activation-error"></a>Licentieactiveringsfout
 

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
@@ -96,6 +96,18 @@ Met de opdracht **Bedrijfsgegevens verwijderen** worden gegevens (indien van toe
 ### <a name="android-for-work"></a>Android for Work
 
 Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat, worden alle gegevens, apps en instellingen in het werkprofiel op het apparaat verwijderd. Het apparaat wordt hierdoor uit het beheer met Intune verwijderd. Fabrieksinstellingen terugzetten wordt niet ondersteund voor Android for Work.
+
+
+### <a name="macos"></a>macOS
+
+|Gegevenstype|macOS|
+|-------------|-------|
+|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
+|Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
+|Instellingen van certificaatprofiel|Certificaten die zijn geïmplementeerd via MDM, worden verwijderd en ingetrokken.|
+|Beheeragent|Beheerprofiel wordt verwijderd.|
+|Outlook|Als voorwaardelijke toegang is ingeschakeld, ontvangt het apparaat geen nieuwe e-mail.|
+|Loskoppelen van Azure Active Directory (AD)|Azure AD-record wordt verwijderd.|
 
 ### <a name="windows"></a>Windows
 
