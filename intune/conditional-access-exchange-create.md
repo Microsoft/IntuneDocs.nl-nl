@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Beleid voor voorwaardelijke toegang in Microsoft Intune maken en toewijzen voor Exchange On-Premises en oudere Exchange Online Dedicated-omgevingen
 
@@ -105,7 +105,7 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 13. Als er apparaten zijn die niet worden beïnvloed door voorwaardelijke toegang of door andere regels, kunt u zelf kiezen of deze toegang krijgen tot Exchange, of de toegang blokkeren.
   - Wanneer u toegang toestaat, kunnen alle apparaten direct toegang krijgen tot Exchange On-Premises.  Apparaten die deel uitmaken van de gebruikers in de **opgenomen groepen**, worden geblokkeerd als wordt bepaald dat ze niet aan het nalevingsbeleid voldoen of niet zijn ingeschreven in Intune.
-  - Wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd.  Apparaten die deel uitmaken van gebruikers in de **opgenomen groepen** krijgen toegang zodra de apparaten zijn ingeschreven in Intune en zijn geëvalueerd als compatibel. Android-apparaten waarop Samsung KNOX Standard niet wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
+  - Wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd.  Apparaten die deel uitmaken van gebruikers in de **opgenomen groepen** krijgen toegang zodra de apparaten zijn ingeschreven in Intune en zijn geëvalueerd als compatibel. Android-apparaten waarop Samsung Knox Standard niet wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
 <br></br>
 14. Kies **Toevoegen** onder **Uitzonderingen van apparaatplatform** om de platformen op te geven. Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd. Kies **OK** om de instellingen op te slaan.
 
@@ -124,6 +124,6 @@ Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaard
 
 2. Kies in de blade **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 
 [Voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

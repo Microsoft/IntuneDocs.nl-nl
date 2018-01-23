@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange Connector instellen in Microsoft Intune Azure
 
@@ -133,6 +133,13 @@ Nadat Exchange Connector de verbinding heeft ingesteld, worden de mobiele appara
 
 > [!NOTE]
 > Als u On-Premises Exchange Connector hebt geïnstalleerd en u op een bepaald moment de Exchange-verbinding verwijdert, moet u On-Premises Exchange Connector verwijderen van de computer waarop deze is geïnstalleerd.
+
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Hoge beschikbaarheid van on-premises Exchange Connector 
+Nadat de Exchange Connector verbinding met Exchange heeft gemaakt met behulp van de opgegeven CAS, kan de connector andere CAS-instanties detecteren. Als de primaire CAS niet beschikbaar is, zoekt de connector naar een andere CAS (indien beschikbaar) totdat de primaire CAS beschikbaar komt. Deze functie is standaard ingeschakeld. U kunt deze functie uitschakelen met behulp van de volgende procedure:
+1. Op de server waar de Exchange Connector is geïnstalleerd, gaat u naar %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
+2. Open **OnPremisesExchangeConnectorServiceConfiguration.xml** met behulp van een teksteditor.
+3. Wijzig &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false** &lt;/IsCasFailoverEnabled&gt; om de functie uit te schakelen.    
+
 
 ## <a name="monitor-the-exchange-connector-activity"></a>De activiteit van de Exchange-connector controleren
 

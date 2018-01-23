@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/11/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+
+## <a name="week-of-december-11-2017"></a>Week van 11 december 2017
+
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Eindgebruikersberichten voor accounts <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+Gebruikers van de bedrijfsportal-website worden geblokkeerd voor het uitvoeren van acties waarvoor schrijftoegang tot uw tenant is vereist. Ze krijgen een foutbericht te zien waarin wordt uitgelegd dat hun account in onderhoud is. Dergelijke wijzigingen worden binnenkort ook toegepast op de bedrijfsportal-apps voor Android, iOS, macOS en Windows.
+
+![Foutbericht dat wordt weergegeven tijdens het verplaatsen van een account](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
 
@@ -380,7 +388,7 @@ __Updates voor aanbevolen apps__ Er is een speciale pagina aan de site toegevoeg
 
 ![De kleurrijke tegels waarop de apps worden getoond. Het zijn grote, gekleurde vierkanten onder de apps, waarbij de gekozen kleur de primaire kleur van het app-logo is. De sectie Aanbevolen apps wordt bovenaan de bedrijfsportal-app weergegeven.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Wat is er nieuw in Intune?](https://docs.microsoft.com/intune/whats-new)

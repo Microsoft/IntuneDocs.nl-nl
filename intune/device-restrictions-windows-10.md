@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Algemeen
--   **Schermafbeelding (alleen mobiel)**: hiermee kan de gebruiker het apparaatscherm vastleggen als afbeelding.
--   **Kopiëren en plakken (alleen mobiel)**: hiermee staat u kopieer- en plakbewerkingen tussen apps op het apparaat toe.
--   **Registratie handmatig ongedaan maken**: hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.
--   **Handmatige installatie van het basiscertificaat (alleen mobiel)**: de gebruiker kan niet langer basiscertificaten en tussenliggende CAP-certificaten handmatig installeren.
--   **Verzending van diagnostische gegevens**: mogelijke waarden zijn:
+- **Schermafbeelding (alleen mobiel)**: hiermee kan de gebruiker het apparaatscherm vastleggen als afbeelding.
+- **Kopiëren en plakken (alleen mobiel)**: hiermee staat u kopieer- en plakbewerkingen tussen apps op het apparaat toe.
+- **Registratie handmatig ongedaan maken**: hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.
+- **Handmatige installatie van het basiscertificaat (alleen mobiel)**: de gebruiker kan niet langer basiscertificaten en tussenliggende CAP-certificaten handmatig installeren.
+- **Verzending van diagnostische gegevens**: mogelijke waarden zijn:
     - **Geen**: er worden geen gegevens naar Microsoft verzonden
     - **Basis**: beperkte informatie wordt naar Microsoft verzonden
     - **Uitgebreid**: uitgebreide diagnostische gegevens worden naar Microsoft verzonden
     - **Volledig**: hiermee worden dezelfde gegevens verzonden als bij Uitgebreid, aangevuld met gegevens over de apparaatstatus
--   **Camera**: hiermee kunt u het gebruik van de camera op het apparaat toestaan of blokkeren.
--   **Bestandssynchronisatie met OneDrive**: hiermee blokkeert u dat het apparaat bestanden synchroniseert naar OneDrive.
--   **Verwisselbare opslag**: hiermee geeft u op of er met het apparaat externe opslagapparaten, zoals SD-kaarten, kunnen worden gebruikt.
--   **Geolocatie**: hiermee geeft u aan of op het apparaat gegevens van locatieservices kunnen worden gebruikt.
--   **Gedeeld internet**: hiermee staat u het gebruik van een gedeelde internetverbinding op het apparaat toe.
--   **Opnieuw instellen van telefoon**: hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen.
--   **USB-verbinding (alleen mobiel)**: hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen krijgen tot externe opslagapparaten.
--   **AntiTheft-modus (alleen mobiel)**: hiermee configureert u of de AntiTheft-modus van Windows is ingeschakeld.
--   **Cortana**: hiermee schakelt u de spraakassistent Cortana in en uit.
--   **Spraakopname (alleen mobiel)**: hiermee kunt u het gebruik van het spraakopnameapparaat van het apparaat toestaan of blokkeren.
--   **Apparaatnaam wijzigen**: hiermee voorkomt u dat de eindgebruiker de apparaatnaam wijzigt (alleen voor Windows 10 Mobile)
--   **Inrichtingspakketten toevoegen**: hiermee blokkeert u de runtime configuratieagent die inrichtingspakketten installeert.
--   **Inrichtingspakketten verwijderen**: hiermee blokkeert u de runtime configuratieagent die inrichtingspakketten verwijdert.
--   **Apparaatdetectie**: hiermee voorkomt u dat een apparaat wordt gedetecteerd door andere apparaten.
--   **Taakwisselaar (alleen mobiel)**: hiermee blokkeert u de taakwisselaar op het apparaat.
--   **Foutberichtvenster voor SIM-kaart (alleen mobiel)**: hiermee voorkomt u dat op het apparaat een foutbericht wordt weergegeven als er geen SIM-kaart wordt gedetecteerd.
+- **Camera**: hiermee kunt u het gebruik van de camera op het apparaat toestaan of blokkeren.
+- **Bestandssynchronisatie met OneDrive**: hiermee blokkeert u dat het apparaat bestanden synchroniseert naar OneDrive.
+- **Verwisselbare opslag**: hiermee geeft u op of er met het apparaat externe opslagapparaten, zoals SD-kaarten, kunnen worden gebruikt.
+- **Geolocatie**: hiermee geeft u aan of op het apparaat gegevens van locatieservices kunnen worden gebruikt.
+- **Gedeeld internet**: hiermee staat u het gebruik van een gedeelde internetverbinding op het apparaat toe.
+- **Opnieuw instellen van telefoon**: hiermee bepaalt u of de gebruiker de fabrieksinstellingen van het apparaat kan herstellen.
+- **USB-verbinding (alleen mobiel)**: hiermee bepaalt u of apparaten via een USB-verbinding toegang kunnen krijgen tot externe opslagapparaten.
+- **AntiTheft-modus (alleen mobiel)**: hiermee configureert u of de AntiTheft-modus van Windows is ingeschakeld.
+- **Cortana**: hiermee schakelt u de spraakassistent Cortana in en uit.
+- **Spraakopname (alleen mobiel)**: hiermee kunt u het gebruik van het spraakopnameapparaat van het apparaat toestaan of blokkeren.
+- **Apparaatnaam wijzigen**: hiermee voorkomt u dat de eindgebruiker de apparaatnaam wijzigt (alleen voor Windows 10 Mobile)
+- **Inrichtingspakketten toevoegen**: hiermee blokkeert u de runtime configuratieagent die inrichtingspakketten installeert.
+- **Inrichtingspakketten verwijderen**: hiermee blokkeert u de runtime configuratieagent die inrichtingspakketten verwijdert.
+- **Apparaatdetectie**: hiermee voorkomt u dat een apparaat wordt gedetecteerd door andere apparaten.
+- **Taakwisselaar (alleen mobiel)**: hiermee blokkeert u de taakwisselaar op het apparaat.
+- **Foutberichtvenster voor SIM-kaart (alleen mobiel)**: hiermee voorkomt u dat op het apparaat een foutbericht wordt weergegeven als er geen SIM-kaart wordt gedetecteerd.
+- **Automatisch opnieuw implementeren**: hiermee kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **CTRL + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
 
 
 ## <a name="password"></a>Wachtwoord
@@ -68,19 +68,68 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
 ## <a name="personalization"></a>Persoonlijke instellingen
 
--   **URL achtergrondafbeelding Bureaublad (alleen bureaublad)**: geef de URL op naar een afbeelding in PNG-, JPG- of JPEG-indeling die u wilt gebruiken als de achtergrond van het Windows-bureaublad. Gebruikers kunnen dit niet wijzigen.
+- **URL achtergrondafbeelding Bureaublad (alleen bureaublad)**: geef de URL op naar een afbeelding in PNG-, JPG- of JPEG-indeling die u wilt gebruiken als de achtergrond van het Windows-bureaublad. Gebruikers kunnen dit niet wijzigen.
 
 ## <a name="privacy"></a>Privacy
 
 -   **Persoonlijke instellingen invoeren**: hiermee kunt u het gebruik van cloudspraakservices voor Cortana, de dicteerfunctie of Microsoft Store-apps blokkeren. Als u deze services toestaat, kan Microsoft spraakgegevens verzamelen voor het verbeteren van de service.
 -   **Automatische acceptatie van de goedkeuringsvensters voor koppelen en privacy**: hiermee kunt u instellen dat Windows automatisch toestemming mag geven voor bewerkingen met koppelen en privacy bij het uitvoeren van apps.
 
+U kunt de informatie definiëren die voor alle apps op het apparaat toegankelijk is. U kunt ook uitzonderingen definiëren op een per-app basis met **Privacyuitzonderingen per app**.
+
+### <a name="exceptions"></a>Uitzonderingen
+
+- **Accountgegevens**: geef aan of deze app toegang heeft tot de gebruikersnaam, afbeelding en andere contactgegevens.
+- **Achtergrond-apps**: geef aan of deze app kan worden uitgevoerd op de achtergrond.
+- **Agenda**: geef aan of deze app toegang heeft tot de agenda.
+- **Oproepgeschiedenis**: geef aan of deze app toegang heeft tot mijn oproepgeschiedenis.
+- **Camera**: geef aan of deze app toegang heeft tot de camera.
+- **Contactpersonen**: geef aan of deze app toegang heeft tot contactpersonen.
+- **E-mail**: geef aan of deze app toegang heeft tot e-mail en of de app e-mail kan verzenden.
+- **Locatie**: geef aan of deze app toegang heeft tot locatiegegevens.
+- **Berichten**: geef aan of deze app sms- of mms-berichten kan lezen of verzenden.
+- **Microfoon**: geef aan of deze app de microfoon kan gebruiken.
+- **Beweging**: geef aan of deze app toegang heeft tot bewegingsinformatie van het apparaat.
+- **Meldingen**: geef aan of deze app toegang heeft tot meldingen.
+- **Telefoon**: geef aan of deze app toegang heeft tot de telefoon.
+- **Radio's**: sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen inschakelen of uitschakelen. Geef aan of deze app deze radio's kan beheren.
+- **Taken**: geef aan of deze app toegang heeft tot uw taken.
+- **Vertrouwde apparaten**: geef aan of deze app gebruik kan maken van vertrouwde apparaten (hardware die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd). Bijvoorbeeld een tv, projectoren, enzovoort.
+- **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
+- **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan deze pc, tablet of telefoon zijn gekoppeld.
+
+## <a name="per-app-privacy-exceptions"></a>Privacy-uitzonderingen per app
+
+U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u hebt gedefinieerd als 'Standaardprivacy'.
+
+- **Pakketnaam**: familienaam van het app-pakket.
+- **App-naam**: de naam van de app.
+
+### <a name="exceptions"></a>Uitzonderingen
+
+- **Accountgegevens**: geef aan of deze app toegang heeft tot de gebruikersnaam, afbeelding en andere contactgegevens.
+- **Achtergrond-apps**: geef aan of deze app kan worden uitgevoerd op de achtergrond.
+- **Agenda**: geef aan of deze app toegang heeft tot de agenda.
+- **Oproepgeschiedenis**: geef aan of deze app toegang heeft tot mijn oproepgeschiedenis.
+- **Camera**: geef aan of deze app toegang heeft tot de camera.
+- **Contactpersonen**: geef aan of deze app toegang heeft tot contactpersonen.
+- **E-mail**: geef aan of deze app toegang heeft tot e-mail en of de app e-mail kan verzenden.
+- **Locatie**: geef aan of deze app toegang heeft tot locatiegegevens.
+- **Berichten**: geef aan of deze app sms- of mms-berichten kan lezen of verzenden.
+- **Microfoon**: geef aan of deze app de microfoon kan gebruiken.
+- **Beweging**: geef aan of deze app toegang heeft tot bewegingsinformatie van het apparaat.
+- **Meldingen**: geef aan of deze app toegang heeft tot meldingen.
+- **Telefoon**: geef aan of deze app toegang heeft tot de telefoon.
+- **Radio's**: sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen inschakelen of uitschakelen. Geef aan of deze app deze radio's kan beheren.
+- **Taken**: geef aan of deze app toegang heeft tot uw taken.
+- **Vertrouwde apparaten**: geef aan of deze app gebruik kan maken van vertrouwde apparaten (hardware die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd). Bijvoorbeeld een tv, projectoren, enzovoort.
+- **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
+- **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan deze pc, tablet of telefoon zijn gekoppeld.
 
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
-
--   **Meldingen van het Actiecentrum (alleen mobiel)**: hiermee kunt u meldingen van het actiecentrum op het vergrendelingsscherm van het apparaat weergeven (alleen Windows 10 Mobile).
--   **URL vergrendelde schermafbeelding (alleen bureaublad)**: geef de URL op naar een afbeelding in PNG-, JPG- of JPEG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Gebruikers kunnen dit niet wijzigen.
+- **Meldingen van het Actiecentrum (alleen mobiel)**: hiermee kunt u meldingen van het actiecentrum op het vergrendelingsscherm van het apparaat weergeven (alleen Windows 10 Mobile).
+- **URL vergrendelde schermafbeelding (alleen bureaublad)**: geef de URL op naar een afbeelding in PNG-, JPG- of JPEG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Gebruikers kunnen dit niet wijzigen.
 -   **Time-out voor het scherm die door de gebruiker kan worden ingesteld (alleen mobiel)**: hiermee kunnen gebruikers de hoeveelheid tijd configureren 
 -   **Cortana op vergrendeld scherm (alleen desktop)**: de gebruiker geen toestemming geven voor interactie met Cortana wanneer het vergrendelingsscherm wordt weergegeven op het apparaat (alleen Windows 10 voor desktops).
 -   **Pop-upmeldingen op vergrendeld scherm**: geen waarschuwingsberichten weergeven op het vergrendelingsscherm van het apparaat.
@@ -125,17 +174,17 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
     -   **URL voor eerste uitvoering**: hiermee geeft u de URL op van een pagina die wordt weergegeven wanneer een gebruiker de eerste keer Edge uitvoert (alleen Windows 10 Mobile).
 -   **Startpagina's**: hiermee kunt u een lijst met sites toevoegen die u wilt gebruiken als startpagina's in Edge (alleen desktop).
 -   **Wijzigingen van de startpagina**: hiermee kunnen gebruikers de startpagina's wijzigen die worden weergegeven bij het openen van Edge. Gebruik de instelling Startpagina's om de pagina, of een lijst van pagina's, te maken die u wilt openen bij het starten van Edge.
--   **Toegang tot about-vlaggen blokkeren**: Hiermee voorkomt u dat de eindgebruiker toegang krijgt tot de pagina met about-vlaggen in Edge. Op deze pagina staan instellingen voor ontwikkelaars en experimentele instellingen.
+-   **Toegang tot About-vlaggen blokkeren**: Hiermee voorkomt u dat de eindgebruiker toegang krijgt tot de pagina met about-vlaggen in Edge. Op deze pagina staan instellingen voor ontwikkelaars en experimentele instellingen.
 -   **LocalHost IP-adres voor WebRTC**: hiermee blokkeert u het weergeven van het IP-adres van de localhost van gebruikers tijdens het doen van telefoonoproepen via het WebRTC-protocol.
 -   **Standaardzoekmachine**: geef de zoekmachine op die u standaard wilt gebruiken. Eindgebruikers kunnen deze waarde op elk moment wijzigen.
 -   **Browsegegevens wissen bij afsluiten**: hiermee worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Edge afsluit.
 -   **Verzamelen van livetegelgegevens**: hiermee geeft u op dat Windows geen gegevens moet verzamelen van de livetegel wanneer gebruikers vanuit Edge een site vastmaken aan het startmenu.
 
-## <a name="edge-browser-smartscreen"></a>SmartScreen van Edge-browser
+## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
--   **SmartScreen**: hiermee schakelt u SmartScreen in of uit, waarmee frauduleuze websites worden geblokkeerd.
--   **SmartScreen-prompts negeren**: de eindgebruiker mag meldingen van het SmartScreen-filter over mogelijk schadelijke websites negeren.
--   **SmartScreen-prompts negeren voor bestanden**: de eindgebruiker mag meldingen van het SmartScreen-filter over het downloaden van mogelijk schadelijke bestanden negeren.
+- **SmartScreen voor Microsoft Edge**: schakel Edge SmartScreen in voor toegang tot site- en bestanddownloads.
+- **Toegang tot schadelijke sites**: verhinder dat gebruikers de waarschuwingen van het Windows Defender SmartScreen-filter negeren en verhinder dat ze naar de site kunnen gaan.
+- **Niet-geverifieerd bestand downloaden**: verhinder dat gebruikers de waarschuwingen van het Windows Defender SmartScreen-filter negeren en verhinder dat ze niet-geverifieerde bestanden kunnen downloaden.
 
 ## <a name="search"></a>Zoeken
 - **Veilig zoeken (alleen mobiel)**: hiermee bepaalt u hoe Cortana inhoud voor volwassenen filtert in de zoekresultaten. U kunt **Strikt** of **Gemiddeld** selecteren, of u kunt toestaan dat eindgebruikers hun eigen instellingen kiezen.
@@ -182,9 +231,30 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
     -   **Privacy**: hiermee blokkeert u de toegang tot het privacygebied van de instellingen-app.
     -   **Bijwerken en beveiliging**: hiermee blokkeert u de toegang tot het gebied voor updates en beveiliging van de instellingen-app.
 
-## <a name="kiosk"></a>Kiosk
+## <a name="start"></a>start
 
--   **Kioskmodus**: hiermee identificeert u het type [kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) dat wordt ondersteund door het beleid.  Opties zijn onder andere:
+- **Apps losmaken van de taakbalk**: de gebruiker kan geen apps meer losmaken vanuit het menu Start.
+- **Documenten op het startscherm**: de map Documenten in het menu Start van Windows weergeven of verbergen.
+- **Downloads op het startscherm**: de map Downloads in het menu Start van Windows weergeven of verbergen.
+- **Bestandenverkenner op het startscherm**: de app Bestandsverkenner in het menu Start van Windows weergeven of verbergen.
+- **Thuisgroep op het startscherm**: de map Thuisgroep in het menu Start van Windows weergeven of verbergen.
+- **Muziek op het startscherm**: de map Muziek in het menu Start van Windows weergeven of verbergen.
+- **Netwerk op het startscherm**: de map Netwerk in het menu Start van Windows weergeven of verbergen.
+- **Persoonlijke instellingen op het startscherm**: de map met persoonlijke instellingen in het menu Start van Windows weergeven of verbergen.
+- **Afbeeldingen op het startscherm**: de map Afbeeldingen in het menu Start van Windows weergeven of verbergen.
+- **Instellingen op het startscherm**: de app Instellingen in het menu Start van Windows weergeven of verbergen.
+- **Video's op het startscherm**: de map voor video's in het menu Start van Windows weergeven of verbergen.
+
+## <a name="display"></a>Weergave
+
+- **GDI-schaalbaarheid voor apps inschakelen**
+- **GDI-schaalbaarheid voor apps uitschakelen**
+
+  Met GDI DPI-schaalbaarheid krijgen apps die geen DPI-status hebben, een per-monitor-DPI-status. Geef de verouderde apps op waarvoor GDI DPI-schaalbaarheid is ingeschakeld. Als GDI DPI-schaalbaarheid zodanig is geconfigureerd dat een app zowel in als uit kan worden ingeschakeld, wordt de schaalbaarheid voor de app uitgeschakeld.
+
+## <a name="kiosk-preview"></a>Kiosk (preview)
+
+-   **Kioskmodus**: hiermee identificeert u het type [kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) dat wordt ondersteund door het beleid. Opties zijn onder andere:
 
       - **Niet geconfigureerd** (standaard): door het beleid wordt geen kioskmodus ingeschakeld. 
       - **Kiosk voor één enkele app**: het profiel schakelt het apparaat in als kiosk voor één enkele app.
@@ -192,13 +262,13 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
     Voor kiosken voor één enkele app zijn de volgende instellingen vereist:
 
-      - **Gebruikersaccount**: hiermee geeft u het lokale (op het apparaat) gebruikersaccount of de aanmelding aan van het Azure AD-account dat is gekoppeld aan de kiosk-app.  Voor accounts die zijn gekoppeld aan Azure AD-domeinen geeft u het account op in de vorm van `domain\\username@tenant.org`.
+      - **Gebruikersaccount**: hiermee geeft u het lokale (op het apparaat) gebruikersaccount of de aanmelding aan van het Azure AD-account dat is gekoppeld aan de kiosk-app. Voor accounts die zijn gekoppeld aan Azure AD-domeinen geeft u het account op in de vorm van `domain\\username@tenant.org`.
 
          Voor apparaten in openbare omgevingen, gebruikt u accounts met minimale bevoegdheden om geautoriseerde activiteit te voorkomen.  
 
-      - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan.  Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
+      - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
-    Voor kiosken voor meerdere apps is een kioskconfiguratie vereist.  Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
+    Voor kiosken voor meerdere apps is een kioskconfiguratie vereist. Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
 
     Configuraties voor kiosken voor meerdere apps bevatten de volgende instellingen:
 
@@ -206,11 +276,11 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
     - Een of meer **kiosk-apps** die bestaan uit:
 
-        - Het **app-type** dat het type kiosk-app aangeeft.  Ondersteunde waarden zijn:   
+        - Het **App-type** dat het type van de kiosk-app aangeeft.  Ondersteunde waarden zijn:   
 
-            - **Win32-App**: een traditionele bureaublad-app.  (U hebt de volledige padnaam nodig van het uitvoerbare bestand met betrekking tot het apparaat.)
+            - **Win32-App**: een traditionele bureaublad-app. (U hebt de volledige padnaam nodig van het uitvoerbare bestand met betrekking tot het apparaat.)
 
-            - **UWP-app**: een universele Windows-app.  U hebt de [AUMID voor de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
+            - **UWP-app**: een universele Windows-app. U hebt de [AUMID voor de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
 
         - **App-id**: hiermee geeft u de volledige padnaam van het uitvoerbare bestand (Win32-apps) of de [AUMID van de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) aan.
 
@@ -218,9 +288,9 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
     - **Indeling van het menu Start**: hiermee geeft u een XML-bestand aan dat beschrijft hoe de apps [worden weergegeven in het menu Start](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Toegewezen gebruikers**: hiermee geeft u een of meer gebruikersaccounts aan die zijn gekoppeld aan de configuratie van de kiosk.  Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app.  Geef domeinaccounts aan in de vorm van `domain\\username@tenant.org`.
+    - **Toegewezen gebruikers**: hiermee geeft u een of meer gebruikersaccounts aan die zijn gekoppeld aan de configuratie van de kiosk. Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app. Geef domeinaccounts aan in de vorm van `domain\\username@tenant.org`.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
 
 -   **Realtime-controle**: hiermee schakelt u het realtime scannen op malware, spyware en andere ongewenste software in.
 -   **Gedragscontrole**: hiermee kunt u Defender laten controleren op de aanwezigheid van bepaalde bekende patronen van verdachte activiteiten op apparaten.
@@ -256,7 +326,7 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 
 
 
-## <a name="defender-exclusions"></a>Defender-uitsluitingen
+### <a name="windows-defender-antivirus-exclusions"></a>Uitsluitingen voor Windows Defender Antivirus
 
 -   **Bestanden en mappen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestanden aan de uitsluitingslijst toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.
 -   **Bestandsextensies die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestandsextensies zoals **jpg** of **txt** aan de uitsluitingslijst toe. Bestanden met deze extensies worden niet opgenomen in realtime-scans of geplande scans.
@@ -294,16 +364,41 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 - **Projectie naar deze PC**: andere apparaten kunnen de pc niet meer detecteren voor projectie.
 - **Een pincode vereisen voor koppelen**: er is een pincode vereist voor het verbinden met een projectieapparaat.
 
-## <a name="start"></a>start
+## <a name="cloud-printer"></a>Cloudprinter
 
-- **Apps losmaken van de taakbalk**: de gebruiker kan geen apps meer losmaken vanuit het menu Start.
-- **Documenten op het startscherm**: de map Documenten in het menu Start van Windows weergeven of verbergen.
-- **Downloads op het startscherm**: de map Downloads in het menu Start van Windows weergeven of verbergen.
-- **Bestandenverkenner op het startscherm**: de app Bestandsverkenner in het menu Start van Windows weergeven of verbergen.
-- **Thuisgroep op het startscherm**: de map Thuisgroep in het menu Start van Windows weergeven of verbergen.
-- **Muziek op het startscherm**: de map Muziek in het menu Start van Windows weergeven of verbergen.
-- **Netwerk op het startscherm**: de map Netwerk in het menu Start van Windows weergeven of verbergen.
-- **Persoonlijke instellingen op het startscherm**: de map met persoonlijke instellingen in het menu Start van Windows weergeven of verbergen.
-- **Afbeeldingen op het startscherm**: de map Afbeeldingen in het menu Start van Windows weergeven of verbergen.
-- **Instellingen op het startscherm**: de app Instellingen in het menu Start van Windows weergeven of verbergen.
-- **Video's op het startscherm**: de map voor video's in het menu Start van Windows weergeven of verbergen.
+- **Printerdetectie-URL**: eindpunt voor het detecteren van cloudprinters.
+- **Verificatie-URL voor printertoegang**: verificatie-eindpunt voor het verkrijgen van OAuth-tokens.
+- **GUID van de systeemeigen clientapp voor Azure**: GUID waarmee de clienttoepassing wordt geïdentificeerd die gemachtigd is voor het ophalen van OAuth-tokens van OAuthAuthority.
+- **Resource-URI voor de afdrukservice**: OAuth-resource-URI voor de afdrukservice zoals geconfigureerd in Azure Portal.
+- **Maximaal aantal printers waarvoor een query moet worden uitgevoerd (alleen mobiel)**: maximaal aantal printers waarvoor een query moet worden uitgevoerd vanaf een detectie-eindpunt.
+- **Resource-URI voor de printerdetectieservice**: OAuth-resource-URI voor de printerdetectieservice zoals geconfigureerd in Azure Portal.
+
+## <a name="reporting-and-telemetry"></a>Rapportage en telemetrie
+
+- **Gebruiksgegevens delen**: selecteer het niveau voor het verzenden van diagnostische gegevens.
+- **Telemetrie-proxyserver**
+
+  Geef de volledig gekwalificeerde domeinnaam (FQDN) of het IP-adres van een proxyserver op voor het doorsturen van Connected User Experiences en Telemetrie-aanvragen met behulp van een SSL-verbinding (Secure Sockets Layer). De indeling voor deze instelling is *server*:*poort*. Als de benoemde proxy niet werkt of als er geen proxy is opgegeven wanneer dit beleid is ingeschakeld, worden de Connected User Experiences en Telemetrie-gegevens niet verzonden en blijven ze op het lokale apparaat.
+
+   Voorbeelden van indelingen:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>Messaging
+
+- **Berichten synchroniseren (alleen mobiel)**: schakel back-up en herstel van Berichten overal en tekstberichten uit.
+- **Mms (alleen mobiel)**: schakel de Mms-functie voor verzenden/ontvangen op het apparaat uit.
+- **Rcs (alleen mobiel)**: schakel de Rich Communication Services-functie voor verzenden/ontvangen op het apparaat uit.
+
+
+
+
+
+
+
+
+
+
+
+

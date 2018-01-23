@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
@@ -77,7 +77,7 @@ Met de opdracht **Bedrijfsgegevens verwijderen** worden gegevens (indien van toe
 
 ### <a name="android"></a>Android
 
-|Gegevenstype|Android|Android Samsung KNOX Standard|
+|Gegevenstype|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Webkoppelingen|Verwijderd.|Verwijderd.|
 |Niet-beheerde Google Play-apps|Apps en gegevens blijven geïnstalleerd.|Apps en gegevens blijven geïnstalleerd.|
@@ -89,13 +89,25 @@ Met de opdracht **Bedrijfsgegevens verwijderen** worden gegevens (indien van toe
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Administratorbevoegdheden voor apparaat worden ingetrokken.|Administratorbevoegdheden voor apparaat worden ingetrokken.|
 |E-mail|n.v.t. (e-mailprofielen worden niet ondersteund door Android-apparaten)|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
-|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|E-mail die wordt ontvangen door de Microsoft Outlook-app voor Android wordt verwijderd.|
+|Outlook|E-mailberichten die door de Microsoft Outlook-app voor Android zijn ontvangen, worden verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Als dit niet het geval is, wordt Outlook niet gewist bij de uitschrijving.|E-mailberichten die door de Microsoft Outlook-app voor Android zijn ontvangen, worden verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Als dit niet het geval is, wordt Outlook niet gewist bij de uitschrijving.|
 |Loskoppelen van Azure Active Directory (AD)|Azure AD-record wordt verwijderd.|Azure AD-record wordt verwijderd.|
 |Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
 ### <a name="android-for-work"></a>Android for Work
 
 Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat, worden alle gegevens, apps en instellingen in het werkprofiel op het apparaat verwijderd. Het apparaat wordt hierdoor uit het beheer met Intune verwijderd. Fabrieksinstellingen terugzetten wordt niet ondersteund voor Android for Work.
+
+
+### <a name="macos"></a>macOS
+
+|Gegevenstype|macOS|
+|-------------|-------|
+|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
+|Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
+|Instellingen van certificaatprofiel|Certificaten die zijn geïmplementeerd via MDM, worden verwijderd en ingetrokken.|
+|Beheeragent|Beheerprofiel wordt verwijderd.|
+|Outlook|Als voorwaardelijke toegang is ingeschakeld, ontvangt het apparaat geen nieuwe e-mail.|
+|Loskoppelen van Azure Active Directory (AD)|Azure AD-record wordt verwijderd.|
 
 ### <a name="windows"></a>Windows
 

@@ -2,10 +2,10 @@
 title: Ondersteunde apparaten - Microsoft Intune
 description: Een lijst met ondersteunde apparaatplatformen en browsers voor het beheer van Intune-apparaten
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>Ondersteunde apparaten en browsers
 
@@ -39,11 +39,14 @@ U kunt de volgende apparaten beheren met Intune Mobile Device Management:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### <a name="supported-samsung-knox-standard-devices"></a>Ondersteunde Samsung KNOX Standard-apparaten
+### <a name="supported-samsung-knox-standard-devices"></a>Ondersteunde Samsung Knox Standard-apparaten
 
-Via de bedrijfsportal-app wordt de Samsung KNOX-activering alleen uitgevoerd tijdens MDM-registratie als het apparaat wordt weergegeven in de [lijst met ondersteunde KNOX-apparaten](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Hierdoor wordt voorkomen dat er KNOX-activeringsfouten optreden waardoor MDM-registratie mislukt. Apparaten die geen ondersteuning bieden voor Samsung KNOX-activering, worden geregistreerd als standaard-Android-apparaten. Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor KNOX, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u Samsung-apparaten koopt en implementeert.
+Via de bedrijfsportal-app wordt de Samsung Knox-activering alleen uitgevoerd tijdens MDM-registratie als het apparaat wordt weergegeven in de [lijst met ondersteunde Knox-apparaten](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Hierdoor wordt voorkomen dat er Knox-activeringsfouten optreden waardoor MDM-registratie mislukt. Apparaten die geen ondersteuning bieden voor Samsung Knox-activering, worden geregistreerd als standaard-Android-apparaten. Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor Knox, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u Samsung-apparaten koopt en implementeert.
 
-De volgende Samsung-apparaatmodellen bieden geen ondersteuning voor KNOX en worden geregistreerd als systeemeigen Android-apparaten door de bedrijfsportal-app voor Android:
+> [!NOTE]
+> Voor het registreren van Samsung Knox-apparaten moet u wellicht [toegang tot Samsung-servers inschakelen](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+
+De volgende Samsung-apparaatmodellen bieden geen ondersteuning voor Knox en worden geregistreerd als systeemeigen Android-apparaten door de bedrijfsportal-app voor Android:
 
 | **Apparaatnaam** | **Apparaatmodelnummers** |
 | --- | --- |

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1095ef736488754296eca4f21b2bf10226b43847
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: a278a0ca4614611685420cfeed898270926cd9ca
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -27,13 +27,15 @@ ms.lasthandoff: 01/03/2018
 
 Als Intune-beheerder kunt u apparaten identificeren als bedrijfseigendom om het beheer en de identificatie ervan te verfijnen. Bij apparaten in bedrijfseigendom kan Intune extra beheertaken uitvoeren en meer informatie verzamelen, zoals het volledige telefoon en een inventaris van apps. Ook kunt u ook apparaatbeperkingen instellen om inschrijving door apparaten die geen bedrijfseigendom zijn te blokkeren.
 
-Een apparaat wordt herkend als bedrijfseigendom als aan een van de volgende voorwaarden wordt voldaan:
+Tijdens het inschrijven wijst Intune automatisch de status Bedrijfseigendom toe aan apparaten die zijn:
 
 - Ingeschreven met een [apparaatinschrijvingsbeheerder](device-enrollment-manager-enroll.md)-account (alle platforms)
 - Ingeschreven via het Apple-[apparaatinschrijvingsprogramma](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) of [Apple Configurator](apple-configurator-enroll-ios.md) (alleen iOS)
 - [Herkend als bedrijfseigendom voorafgaand aan inschrijving](#identify-corporate-owned-devices-with-imei-or-serial-number) met een internationaal identificatienummer voor mobiele apparaten (IMEI; alle platforms met IMEI-nummers) of een serienummer (iOS en Android)
 - Ingeschreven in Azure Active Directory of Enterprise Mobility + Security als een Windows 10 Enterprise-apparaat
-- De apparaateigenschappen tonen [het eigendom van het apparaat als zakelijk](#change-device-ownership)
+- Opgegeven als Zakelijk in de [lijst Eigenschappen van het apparaat](#change-device-ownership)
+
+Na het inschrijven kunt u [de eigendomsinstelling wijzigen](#change-device-ownership) en schakelen tussen **Persoonlijk** en **Zakelijk**.
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Herkenning van apparaten in bedrijfseigendom met IMEI-nummer of serienummer
 

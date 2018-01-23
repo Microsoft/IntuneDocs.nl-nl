@@ -1,35 +1,35 @@
 ---
-title: Gebruiker - Intune-datawarehouse | Microsoft Docs
+title: Huidige gebruiker - Intune-datawarehouse | Microsoft Docs
 description: Naslagonderwerp voor de categorie Gebruiker van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6f321a3a9ac09c004639a3db15df280fbdb5be3c
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 895855befe31e84b3dc472216afdf52d636bc27a
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="reference-for-current-user-entity"></a>Naslaginformatie voor huidige gebruikersentiteit
 
-De categorie **Huidige gebruiker** bevat eigenschappen van gebruikers en agents in het gegevensmodel. De entiteitverzameling **Huidige gebruiker** is beperkt tot gebruikers die momenteel actief zijn. De entiteit bevat alle Azure Active Directory-gebruikers aan wie momenteel een licentie is toegewezen. De licentie kan een Intune-licentie, een hybride licentie of een licentie voor Microsoft Office 365 zijn. Als een gebruiker is verwijderd, wordt deze niet weergegeven voor de duur van de gegevensverzameling. Zie [Naslag voor gebruikersentiteit](reports-ref-user.md) voor een verzameling die een overzicht van wijzigingen in de status van de gebruiker bevat.
+De categorie **Huidige gebruiker** bevat gebruikerseigenschappen in het gegevensmodel. De entiteitverzameling **Huidige gebruiker** is beperkt tot gebruikers die momenteel actief zijn. De entiteit bevat alle Azure Active Directory-gebruikers aan wie momenteel een licentie is toegewezen. De licentie kan een Intune-licentie, een hybride licentie of een licentie voor Microsoft Office 365 zijn. Als een gebruiker is verwijderd, wordt deze niet weergegeven in de verzameling Huidige gebruiker. Zie [Naslag voor gebruikersentiteit](reports-ref-user.md) voor een verzameling die een overzicht van wijzigingen in de status van de gebruiker bevat.
 
 
-## <a name="user"></a>Gebruiker
+## <a name="current-user"></a>Huidige gebruiker
 
-De entiteit **Gebruiker** bevat een lijst van alle Azure Active Directory-gebruikers (Azure AD) met toegewezen licenties in uw onderneming.
+De entiteit **Huidige gebruiker** bevat een lijst van alle Azure Active Directory-gebruikers (Azure AD) met toegewezen licenties in uw onderneming.
 
-| Eigenschap  | Beschrijving | Voorbeeld |
+| Eigenschap  | Description | Voorbeeld |
 |---------|------------|--------|
 | UserKey |De unieke id van de gebruiker in het datawarehouse (surrogaatsleutel). |123 |
 | UserId |De unieke id van de gebruiker, vergelijkbaar met UserKey, maar het is een natuurlijke sleutel. |b66bc706-ffff-7437-0340-032819502773 |
@@ -41,5 +41,5 @@ De entiteit **Gebruiker** bevat een lijst van alle Azure Active Directory-gebrui
 | RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze gebruiker het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Volgende stappen
- - Met de entiteitverzameling **Gebruikers** kunt u de gebruikersgegevens uitbreiden naar gebruikers die momenteel niet actief zijn. Zie [Naslag voor gebruikersentiteit](reports-ref-user.md) voor meer informatie. 
+ - Met de entiteitverzameling **Gebruikers** kunt u de gebruikersgegevens uitbreiden naar gebruikers die momenteel niet actief zijn. Zie [Naslag voor gebruikersentiteit](reports-ref-user.md) voor meer informatie.
  - Zie [Levensduur gebruikers weergeven in Intune-datawarehouse](reports-ref-user-timeline.md) voor meer informatie over hoe het datawarehouse de levensduur van een gebruiker in Intune bijhoudt.

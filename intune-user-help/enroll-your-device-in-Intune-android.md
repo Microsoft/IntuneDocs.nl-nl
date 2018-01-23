@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Uw Android-apparaat inschrijven bij Intune
 
@@ -28,7 +28,7 @@ Als uw bedrijf of school gebruikmaakt van Microsoft Intune, kunt u uw Android-ap
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-Deze registratie-instructies zijn bestemd voor 'native' en Samsung KNOX Android-apparaten. Samsung KNOX is een beveiligingstype dat door sommige Samsung-apparaten wordt gebruikt als extra bescherming naast de beveiligingsfuncties van native Android-apparaten. Als u wilt controleren of u een Samsung KNOX-apparaat hebt, gaat u naar **Instellingen** > **Over apparaat**. Als de KNOX-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
+Deze registratie-instructies zijn bestemd voor 'native' en Samsung Knox Android-apparaten. Samsung Knox is een beveiligingstype dat door sommige Samsung-apparaten wordt gebruikt als extra bescherming naast de beveiligingsfuncties van native Android-apparaten. Als u wilt controleren of u een Samsung Knox-apparaat hebt, gaat u naar **Instellingen** > **Over apparaat**. Als de Knox-versie niet wordt vermeld, hebt u een systeemeigen Android-apparaat.
 
 Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen die het beste beschrijft hoe u uw apparaat gebruikt. Het ondersteuningsteam van het bedrijf gebruikt deze categorie om te controleren tot welke apps u toegang hebt.
 
@@ -98,9 +98,9 @@ Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen d
 
     ![Pincode of wachtwoord instellen](./media/and-enroll-6-PIN-native.png)
 
-13.  Als u een Samsung KNOX-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan het bericht dat uw apparaat wordt ingeschreven. Als u een systeemeigen Android-apparaat gebruikt, let dan op het volgende scherm waarin wordt weergegeven dat het apparaat wordt geregistreerd.
+13.  Als u een Samsung Knox-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan een bericht dat uw apparaat wordt geregistreerd. Als u een systeemeigen Android-apparaat gebruikt, let dan op het volgende scherm waarin wordt weergegeven dat het apparaat wordt geregistreerd.
 
-    ![Samsung KNOX-privacybeleid](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Samsung Knox-privacybeleid](./media/and-enroll-7-knox-privacy-policy.png)
 
     Op dit scherm wordt aangegeven dat uw apparaat wordt geregistreerd.
 

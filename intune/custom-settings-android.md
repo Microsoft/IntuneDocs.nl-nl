@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3b1ccb3b0b7b2ce024ff6a09d7f9d8366896fb67
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Aangepaste instellingen voor Android-apparaten in Microsoft Intune
 
@@ -31,7 +31,7 @@ Op deze manier kunt u de volgende Android-instellingen toewijzen die u niet kunt
 
 - [Een aangepast Microsoft Intune-apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel](/intune/wi-fi-profile-shared-key)
 - [Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten](/intune/android-pulse-secure-per-app-vpn)
-- [Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX Standard-apparaten in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+- [Aangepast beleid gebruiken om apps toe te staan of te blokkeren voor Samsung Knox Standard-apparaten in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 >Momenteel kunnen alleen de hierboven genoemde instellingen worden geconfigureerd door dit profieltype. Android-apparaten geven geen volledige lijst weer met OMA-URI-instellingen die u kunt configureren. Als u de overige toegevoegde instellingen wilt bekijken, kunt u die opvragen via de [Intune Uservoice-site](https://microsoftintune.uservoice.com/forums/291681-ideas).

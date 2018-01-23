@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>De certificaatinfrastructuur voor SCEP configureren
 
@@ -338,6 +338,9 @@ Downloadt, installeert en configureert u de certificaatconnector op de NDES-serv
 5.  In de gebruikersinterface van de **certificaatconnector** :
 
     Klik op **Aanmelden** en voer uw Intune-servicebeheerder- of tenantbeheerderreferenties met de machtiging voor algemeen beheer in.
+
+    > [!NOTE]
+    > Als u de foutmelding **De gebruikersnaam is onbekend.** te zien krijgt bij het aanmelden bij NDESConnectorUI.exe, betekent dit dat u een account hebt gebruikt waarvoor geen geldige Intune-licentie beschikbaar is. Wijs een Intune- of EMS-licentie toe aan het account en probeer het opnieuw.
 
     Als uw organisatie een proxyserver gebruikt en de NDES-server de proxy nodig heeft om toegang tot internet te krijgen, klikt u op **Proxyserver gebruiken** en geeft u de naam van de proxyserver, de poort en de accountreferenties op om verbinding te maken.
 

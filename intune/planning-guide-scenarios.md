@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Gebruiksscenario's voor het beheer van mobiele apparaten identificeren
 
@@ -49,9 +49,9 @@ Hier volgen enkele voorbeelden van gebruiksscenario's en subgebruiksscenario's:
 
 | **Use cases** | **Subgebruikssituaties** |
 |:---:|:---:|
-| Zakelijk | Informatiemedewerker |              
-| Zakelijk | Leidinggevenden |           
-| Zakelijk | Kiosk |
+| Bedrijf | Informatiemedewerker |              
+| Bedrijf | Leidinggevenden |           
+| Bedrijf | Kiosk |
 | BYOD | Informatiemedewerker |           
 | BYOD | Leidinggevenden |
 
@@ -63,8 +63,8 @@ Nu moet u vaststellen welke organisatiegroepen aan elk gebruiksscenario en subge
 
 | **Use cases** | **Subgebruikssituaties** | **Organisatiegroepen** |
 |:---:|:---:|:---:|
-| Zakelijk | Informatiemedewerker | HR, Financiën |               
-| Zakelijk | Executive | HR, Financiën |            
+| Bedrijf | Informatiemedewerker | HR, Financiën |               
+| Bedrijf | Executive | HR, Financiën |            
 | Bedrijf | Kiosk | Retail |
 | BYOD | Informatiemedewerker | Marketing, Verkoop |            
 | BYOD | Executive | Marketing, Verkoop |
@@ -74,13 +74,13 @@ Nu moet u vaststellen welke organisatiegroepen aan elk gebruiksscenario en subge
 
 In de volgende stap stelt u vast welke platformen voor mobiele apparaten zijn gekoppeld aan elk gebruiksscenario. Dat kunnen er meer dan één zijn.
 
-Uw bedrijfsgebruiksscenario kan bijvoorbeeld de iOS- en Android Samsung KNOX-apparaatplatformen ondersteunen. Uw BYOD-beleid kan ondersteuning omvatten voor aanvullende platformen voor mobiele apparaten, zoals Android (behalve Samsung KNOX) en Windows 10 Mobile. Voortbouwend op de voorgaande voorbeelden hebben we platformen voor mobiele apparaten gekoppeld aan elk gebruiksscenario.
+Uw bedrijfsgebruiksscenario kan bijvoorbeeld de iOS- en Android Samsung Knox-apparaatplatforms ondersteunen. Uw BYOD-beleid kan ondersteuning omvatten voor aanvullende platformen voor mobiele apparaten, zoals Android (behalve Samsung Knox) en Windows 10 Mobile. Voortbouwend op de voorgaande voorbeelden hebben we platformen voor mobiele apparaten gekoppeld aan elk gebruiksscenario.
 
 | **Use cases** | **Subgebruikssituaties** | **Groepen** | **Apparaatplatformen** |   
 |:---:|:---:|:---:|:---:|
-| Zakelijk | Informatiemedewerker | HR, Financiën | iOS |                                                           
-| Zakelijk | Leidinggevenden | HR, Financiën | iOS |                                                           
-| Zakelijk | Kiosk | Retail | Android |
+| Bedrijf | Informatiemedewerker | HR, Financiën | iOS |                                                           
+| Bedrijf | Leidinggevenden | HR, Financiën | iOS |                                                           
+| Bedrijf | Kiosk | Retail | Android |
 | BYOD | Informatiemedewerker | Marketing, Verkoop | iOS |                                                           
 | BYOD | Leidinggevenden | Marketing, Verkoop | iOS |
 

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Hulp op afstand verlenen voor apparaten die worden beheerd met Intune
 
@@ -32,7 +32,7 @@ Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)
 Door Intune beheerde Android- en Windows-apparaten ondersteunen extern beheer.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) en Windows 10 S worden niet ondersteund door de TeamViewer-software. 
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) en Windows 10 S worden niet ondersteund door de TeamViewer-software. U moet nog steeds apparaten beheren met de [PC-client](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) in de klassieke Intune-portal.
 
 
 
@@ -50,7 +50,7 @@ Zorg ervoor dat de volgende machtigingen als [Intune-rol](https://docs.microsoft
 Voordat u hulp op afstand voor apparaten kunt bieden, moet u eerst de Intune TeamViewer-connector configureren door de volgende stappen uit te voeren:
 
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies op de blad **Apparaten en groepen** achtereenvolgens**Setup** > **TeamViewer-connector**.
@@ -61,7 +61,7 @@ Voordat u hulp op afstand voor apparaten kunt bieden, moet u eerst de Intune Tea
 
 ## <a name="how-to-remotely-administer-a-device"></a>Een apparaat op afstand beheren
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies op de blade **Apparaten** achtereenvolgens **Beheren** > **Alle apparaten**.
@@ -77,4 +77,3 @@ Als u klaar bent, sluit u het TeamViewer-venster.
 ## <a name="next-steps"></a>Volgende stappen
 
 Er wordt een vlag voor meldingen op het pictogram van de bedrijfsportal-app op het apparaat van de eindgebruiker weergegeven. Daarnaast wordt er een melding weergegeven wanneer de app wordt geopend. Ze kunnen het verzoek om hulp op afstand accepteren.
-
