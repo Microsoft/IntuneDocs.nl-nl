@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,16 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 40c3ca0207ed81af3212ad2ea04598654cab7198
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: b4e1fc203633a9624ce748ab1f36374c5322e3f7
+ms.sourcegitcommit: 061dab899e3fbc59b0128e2b4fbdf8ebf80afddd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Editie-upgrades voor Windows 10 configureren in Microsoft Intune
-
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Gebruik de informatie in dit onderwerp voor informatie over het configureren van een editie-upgradeprofiel voor Windows 10. Met dit profiel kunt u apparaten waarop een van de volgende versies van Windows 10 wordt uitgevoerd automatisch bijwerken naar een andere editie:
-
-- Windows 10 Home
-- Windows 10 Holographic
-- Windows 10 Mobile
-
-
-De volgende upgradepaden worden ondersteund:
-
-- Van Windows 10 Pro naar Windows 10 Enterprise
-- Van Windows 10 Home naar Windows 10 Education
-- Van Windows 10 Mobile naar Windows 10 Mobile Enterprise
-- Van Windows 10 Holographic Pro naar Windows 10 Holographic Enterprise
-
+Gebruik de informatie in dit artikel voor informatie over het configureren van een editie-upgradeprofiel voor Windows 10. Met dit profiel kunt u apparaten waarop een versie van Windows 10 wordt uitgevoerd automatisch bijwerken naar een andere versie. 
 
 ## <a name="before-you-start"></a>Voordat u begint
 Voordat u begint met het upgraden van apparaten naar de nieuwste versie, hebt u een van de volgende items nodig:
@@ -46,9 +32,77 @@ Voordat u begint met het upgraden van apparaten naar de nieuwste versie, hebt u 
 - Een productcode die geldig is voor het installeren van de nieuwe versie van Windows op alle apparaten waarop het beleid is gericht (voor edities van Windows 10 Desktop). U kunt gebruikmaken van MAK- (Multiple Activation Keys) of KMS-sleutels (Key Management Server), of een licentiebestand van Microsoft met de licentiegegevens voor het installeren van de nieuwe versie van Windows op alle apparaten waarop het beleid is gericht (voor edities van Windows 10 Mobile en Windows 10 Holographic).
 - De Windows 10-apparaten waaraan u het beleid toewijst, moeten worden geregistreerd bij Microsoft Intune. U kunt het versie-upgradebeleid niet gebruiken voor pc’s waarop de Intune-pc-clientsoftware wordt uitgevoerd.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
+## <a name="supported-upgrade-paths-for-the-windows-10-edition-upgrade-profile"></a>Ondersteunde upgradepaden voor het upgradeprofiel van de Windows 10-versie
+De volgende lijsten vermelden de ondersteunde upgradepaden voor het upgradeprofiel van de Windows 10-versie. De te upgraden Windows 10-versie wordt vet weergegeven, gevolgd door de lijst met ondersteunde versies op basis waarvan u kunt upgraden:
 
-1. Meld u aan bij Azure Portal.
+**Windows 10 Education**
+- Windows 10 Pro
+- Windows 10 Pro Education
+- Windows 10 Cloud
+- Windows 10 Enterprise
+- Windows 10 Core
+    
+**Windows 10 Education N**    
+- Windows 10 Pro N
+- Windows 10 Pro Education N
+- Windows 10 Cloud N
+- Windows 10 Enterprise N
+- Windows 10 Core N
+    
+**Windows 10 Enterprise**
+- Windows 10 Pro
+- Windows 10 Cloud
+- Windows 10 Core
+    
+**Windows 10 Enterprise N**
+- Windows 10 Pro N
+- Windows 10 Cloud N
+- Windows 10 Core N
+    
+**Windows 10 Pro**
+- Windows 10 Cloud
+    
+**Windows 10 Pro N**
+- Windows 10 Cloud N
+    
+**Windows 10 Pro Education**
+- Windows 10 Pro
+- Windows 10 Cloud
+- Windows 10 Core
+    
+**Windows 10 Pro Education N**
+- Windows 10 Pro N
+- Windows 10 Cloud N
+- Windows 10 Core N
+
+**Windows 10 Holographic for Business**
+- Windows 10 Holographic
+
+**Windows 10 Mobile Enterprise**
+- Windows 10 Mobile
+
+<!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
+
+![supported](./media/check_grn.png)  (X) = not supported    
+![unsupported](./media/x_blk.png)    (green checkmark) = supported    
+
+|Upgrade from edition\Upgrade to edition|Education|Education N|Pro Education|Pro Education N|Enterprise|Enterprise N|Professional|Professional N|Mobile Enterprise|Holographic for Business|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|Pro|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Pro N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Pro Education|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Pro Education N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Cloud|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Cloud N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Enterprise|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Enterprise N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Core|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)   |![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Core N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
+|Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
+|Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
+
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
@@ -57,7 +111,6 @@ Voordat u begint met het upgraden van apparaten naar de nieuwste versie, hebt u 
 5. Kies in de vervolgkeuzelijst **Platform** de optie **Windows 10 en hoger**.
 6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Editie-upgrade**.
 7. Configureer de volgende instellingen op de blade **Editie-upgrade**:
-    - **Editie waarvoor een upgrade moet worden uitgevoerd**: selecteer in de vervolgkeuzelijst de Windows 10-versie die u wilt upgraden op apparaten.
     - **Versie waarnaar moet worden bijgewerkt**: selecteer in de vervolgkeuzelijst de versie van Windows 10 Desktop, Windows 10 Holographic of Windows 10 Mobile waarnaar u de apparaten uit de doelgroep wilt upgraden.
     - **Productcode**: geef de productcode op die u van Microsoft hebt ontvangen en die kan worden gebruikt om alle beoogde Windows 10 Desktop-apparaten te upgraden.<br>Nadat u een beleid met een productcode hebt gemaakt, kunt u de productcode later niet meer bewerken. Dit komt doordat de code uit veiligheidsoverwegingen wordt verborgen. Als u de productcode wilt wijzigen, moet u de volledige code opnieuw invoeren.
     - **Licentiebestand**: kies **Bladeren** om het licentiebestand te selecteren dat u hebt ontvangen van Microsoft, met daarin licentie-informatie voor de Windows Holographic-editie of Windows 10 Mobile-editie waarnaar u de beoogde apparaten wilt upgraden.

@@ -2,7 +2,7 @@
   href: introduction-intune.md
   expanded: true
   items:
-    - name: Wat is de Azure-portal?
+    - name: Wat is Azure Portal?
       href: what-is-intune.md
     - name: Wat is Intune for Education?
       href: introduction-intune-education.md
@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: Naslag voor gebruikersentiteit
               href: reports-ref-user.md
-    - name: Intune Graph API
+    - name: Azure AD gebruiken voor toegang tot Intune-API's in Microsoft Graph
       href: intune-graph-apis.md
       items:
-        - name: Documentatie over Graph-API's voor Intune
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune-API-referentiemateriaal
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Resources
   items:
     - name: Verklarende woordenlijst

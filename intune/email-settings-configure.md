@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>E-mailinstellingen configureren in Microsoft Intune
 
@@ -31,7 +31,7 @@ De ingebouwde e-mailclient wordt voor de meeste platformen ondersteund. De meest
 
 U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren op de volgende apparaattypen:
 
-- Android Samsung KNOX Standard 4.0 en hoger
+- Android Samsung Knox Standard 4.0 en hoger
 - Android for Work
 - iOS 8.0 en hoger
 - Windows Phone 8.1 en hoger
@@ -41,21 +41,21 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Een apparaatprofiel met e-mailinstellingen maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Kies **Profiel maken** op de blade Profielen.
 4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het e-mailprofiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de e-mailinstellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor e-mailapparaatinstellingen:
-    - **Android** (alleen Samsung Android KNOX Standard)
+    - **Android** (alleen Samsung Android Knox Standard)
     - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 en hoger**
 6. Kies **E-mail** in de vervolgkeuzelijst **Profieltype**.
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
-    - [Instellingen voor Android for Work en Samsung KNOX Standard](email-settings-android.md)
+    - [Instellingen voor Android for Work en Samsung Knox Standard](email-settings-android.md)
     - [iOS-instellingen](email-settings-ios.md)
     - [Windows Phone 8.1-instellingen](email-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](email-settings-windows-10.md)
@@ -86,7 +86,7 @@ Als de gebruiker al een e-mailaccount heeft geconfigureerd, hangt het resultaat 
 
 - **iOS**: een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van hostnaam en het e-mailadres. De toewijzing van een Intune-profiel wordt geblokkeerd op basis van het dubbele e-mailprofiel. In dit geval deelt de bedrijfsportal de gebruiker mee dat deze niet voldoet aan de eisen en wordt de gebruiker gevraagd dit profiel handmatig te verwijderen. Als u dit probleem wilt voorkomen, vertelt u gebruikers dat ze het apparaat eerst moeten inschrijven voordat ze een e-mailprofiel installeren, zodat Intune het profiel kan instellen.
 - **Windows**: een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van de hostnaam en het e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
-- **Android Samsung KNOX Standard** Er bestaat al een e-mailprofiel en dit duplicaat is gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel.
+- **Android Samsung Knox Standard** Een bestaand gedupliceerd e-mailprofiel is gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel.
 Omdat Android geen hostnaam gebruikt om een profiel te identificeren, wordt afgeraden om voor hetzelfde e-mailadres meerdere e-mailprofielen te maken op verschillende hosts, aangezien deze profielen elkaar overschrijven.
 - **Android for Work** Intune bevat twee e-mailprofielen voor Android for Work, een voor de e-mail-app van Gmail en een voor de e-mail-app van Nine Work. Deze apps zijn beschikbaar in de Google Play Store en worden geïnstalleerd in het werkprofiel van het apparaat en kunnen dus geen dubbele profielen tot gevolg hebben. Beide apps ondersteunen verbindingen met Exchange. Als u de e-mailconnectiviteit wilt inschakelen, implementeert u een van deze e-mail-apps op apparaten van uw gebruikers, en maakt en implementeert u vervolgens het betreffende e-mailprofiel. E-mail-apps zoals Nine Work zijn mogelijk niet gratis. Raadpleeg de licentiegegevens van de app of neem contact op met het bedrijf dat de app heeft gemaakt voor meer informatie.
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
@@ -37,6 +37,12 @@ Voordat u het probleem probeert op te lossen, controleert u of u Intune op de ju
 -   [Windows apparaatbeheer instellen](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Android-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune): geen aanvullende stappen vereist
 -   [Android for Work-apparaatbeheer instellen](/intune-classic/deploy-use/set-up-android-for-work)
+
+U kunt er ook voor zorgen dat de datum en tijd op het apparaat van de gebruiker juist zijn ingesteld:
+
+1. Start het apparaat opnieuw op.
+2. Zorg ervoor dat de datum en tijd zo dicht mogelijk zijn ingesteld op de GMT-standaarden (+ of - 12 uur) ten opzichte van de tijdzone van de eindgebruiker.
+3. Verwijder de Intune-bedrijfsportal en installeer deze opnieuw (indien van toepassing).
 
 Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
 
@@ -229,27 +235,29 @@ Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om i
 
 **Oplossing 1**:
 
-Vraag uw gebruikers de instructies te volgen in [Er ontbreekt een vereist certificaat voor uw apparaat](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Als de fout nog steeds wordt weergegeven nadat gebruikers de instructies hebben gevolgd, probeert u oplossing 2.
+De gebruiker kan wellicht het ontbrekende certificaat ophalen door de instructies in [Er ontbreekt een vereist certificaat voor uw apparaat](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) te volgen. Als de fout zich blijft voordoen, gaat u naar Oplossing 2.
 
 **Oplossing 2**:
 
-Als gebruikers nog steeds de fout voor het ontbrekende certificaat krijgen te zien nadat ze hun bedrijfsreferenties hebben ingevoerd en worden omgeleid voor de federatieve aanmeldingservaring, is het mogelijk dat er een tussencertificaat mogelijk van uw AD FS-server (Active Directory Federation Services).
+Als gebruikers nog steeds de fout voor het ontbrekende certificaat te zien krijgen nadat ze hun bedrijfsreferenties hebben ingevoerd en worden omgeleid voor federatieve aanmelding, is het mogelijk dat er een tussencertificaat op uw AD FS-server (Active Directory Federation Services) ontbreekt.
 
-De certificaatfout treedt op omdat Android-apparaten vereisen dat er tussencertificaten zijn opgenomen in een [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx), maar momenteel verstuurt een standaard AD FS-server of AD FS-proxyserverinstallatie alleen het SSL-certificaat van de AD FS-service in het SSL server hello-antwoord op een SSL Client hello.
+De certificaatfout treedt op omdat er voor Android-apparaten tussencertificaten moeten worden opgenomen in een [Hallo van een SSL-server](https://technet.microsoft.com/library/cc783349.aspx). Momenteel verzendt een standaard AD FS-server of WAP - AD FS-proxyserver alleen het AD FS-service SSL-certificaat in de Hallo-reactie van de SSL-server op een Hallo van een SSL-client.
 
 Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
 
-1.  Op de ADFS- en proxyservers start u de Certificate Management-console voor de lokale computer door met de rechtermuisknop op de knop **Start** te klikken, de optie **Uitvoeren** te kiezen en **certlm.msc** te typen.
-2.  Vouw de optie **Persoonlijk** uit en selecteer **Certificaten**.
+1.  Klik op de ADFS- en proxyservers met de rechtermuisknop op **Start** > **Uitvoeren** > **certlm.msc**. Daarmee wordt de beheerconsole van het certificaatarchief van de lokale machine gestart.
+2.  Vouw de optie **Persoonlijk** uit en kies **Certificaten**.
 3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
 4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
-5.  Selecteer voor elk bovenliggend certificaat **Certificaat weergeven**.
-6.  Selecteer het tabblad **Details** en kies **Kopiëren naar bestand...**.
-7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het certificaat te exporteren of op te slaan naar de gewenste bestandslocatie.
-8.  Importeer de bovenliggende certificaten die tijdens stap 3 zijn geëxporteerd naar Lokale computer\Persoonlijk\Certificaten door met de rechtermuisknop op **Certificaten** te klikken, **Alle taken** > **Importeren** te selecteren en vervolgens de aanwijzingen in de wizard te volgen om de certificaten te importeren.
-9.  Start de AD FS-servers opnieuw op.
-10. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
-De gebruiker moet zich nu kunnen aanmelden bij de bedrijfsportal op het Android-apparaat.
+5.  Kies voor elk bovenliggend certificaat de optie **Certificaat weergeven**.
+6.  Selecteer het tabblad **Details** > **Kopiëren naar bestand...**.
+7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het bovenliggende certificaat te exporteren of op te slaan in de gewenste bestandslocatie.
+8.  Klik met de rechtermuisknop op **Certificaten** > **Alle taken** > **Importeren**.
+9.  Volg de aanwijzingen van de wizard om de bovenliggende certificaten te importeren in **Lokale computer\Persoonlijk\Certificaten**.
+10. Start de AD FS-servers opnieuw op.
+11. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
+
+U kunt het hulpprogramma voor diagnostische gegevens op [https://www.digicert.com/help/](https://www.digicert.com/help/) gebruiken om te controleren of het juiste certificaat is geïnstalleerd. Voer in het vak **Serveradres** de FQDN-naam van uw ADFS-server in (IE: sts.contso.com) en klik op **Server controleren**.
 
 **Valideren dat het certificaat correct is geïnstalleerd**:
 

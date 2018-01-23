@@ -3,8 +3,8 @@ title: Bulkinschrijving voor Windows 10
 titlesuffix: Azure portal
 description: Een bulkregistratiepakket voor Microsoft Intune maken
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -29,8 +29,6 @@ Als beheerder kunt u grote aantallen nieuwe Windows-apparaten toevoegen aan Azur
 Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toegewezen Intune-beleid en de vereiste apps. Scenario's voor Selfservice portal en bedrijfsportal worden momenteel niet ondersteund.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Vereisten voor bulkregistratie van Windows-apparaten
-
-Voor bulkregistratie van Windows-apparaten is het volgende nodig:
 
 - Apparaten met een Windows 10 Creator-update of later
 - [Automatische inschrijving bij Windows](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Voor bulkregistratie van Windows-apparaten is het volgende nodig:
 2. Open de app **Windows Configuration Designer** en selecteer **Desktopapparaten inrichten**.
 ![Schermafbeelding van het selecteren van Desktopapparaten inrichten in de app Windows Configuration Designer](media/bulk-enroll-select.png)
 
-3. Het venster **Nieuw project** verschijnt, waarin u het volgende kunt opgeven:
+3. Het venster **Nieuw project** verschijnt, waarin u de volgende gegevens invoert:
   - **Naam**: een naam voor uw project
-  - **Projectmap**: de map waar het project wordt opgeslagen
+  - **Projectmap**: opslaglocatie voor het project
   - **Beschrijving**: een optionele beschrijving van het project ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4.  Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%%SERIAL%%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.
 ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-device.png)
 
-5.  U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als dit niet is geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.
+5.  U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als de netwerkapparaten niet zijn geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.
 ![Schermafbeelding van het inschakelen van Wi-Fi met de opties Netwerk-SSID en Netwerktype in de app Windows Configuration Designer](media/bulk-enroll-network.png)
 
 6.  Selecteer **Enroll in Azure AD**, voer een datum van **Bulk Token Expiry** in en selecteer vervolgens **Get Bulk Token**.
@@ -88,7 +86,7 @@ Voor bulkregistratie van Windows-apparaten is het volgende nodig:
 Inrichten is bedoeld om te gebruiken op nieuwe Windows-apparaten. Bij inrichtingsfouten is het mogelijk vereist dat de fabrieksinstellingen van het apparaat worden hersteld of dat het apparaat wordt gestart vanaf een opstartinstallatiekopie. Deze voorbeelden bevatten enkele redenen voor inrichtingsfouten:
 
 - Als een inrichtingspakket probeert lid te worden van een Active Directory-domein of Azure Active Directory-tenant en er hierbij geen lokaal account wordt gemaakt, kan het apparaat onbereikbaar worden als het lid worden van het domein mislukt omdat er geen netwerkverbinding is.
-- Scripts die worden uitgevoerd door het inrichtingspakket, worden uitgevoerd in de systeemcontext en hiermee kunnen willekeurige wijzigingen worden aangebracht aan het bestandssysteem en de configuraties van het apparaat. Door een schadelijk of fout script kan het apparaat in een status komen die alleen kan worden beëindigd door een installatiekopie terug te zetten op het apparaat of het apparaat terug te zetten op de fabrieksinstellingen.
+- Scripts van het inrichtingspakket worden uitgevoerd binnen de systeemcontext. De scripts kunnen willekeurige wijzigingen aanbrengen in het bestandssysteem en configuraties van het apparaat. Door een schadelijk of fout script kan het apparaat in een status komen die alleen kan worden beëindigd door een installatiekopie terug te zetten op het apparaat of het apparaat terug te zetten op de fabrieksinstellingen.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemen met bulkinschrijving en de bedrijfsportal
 Als een gebruiker via de bedrijfsportal probeert een apparaat te registreren dat eerder bulksgewijs is geregistreerd, wordt er een waarschuwing weergegeven dat er verdere actie is vereist voor het apparaat, hetzij door installatie of registratie. Het apparaat wordt geregistreerd, maar de registratie wordt niet herkend door de bedrijfsportal-app of -website.

@@ -1,12 +1,12 @@
 ---
-title: Nalevingsbeleid toepassen op door Jamf beheerde apparaten
+title: Nalevingsbeleid afdwingen op door Jamf beheerde apparaten
 titlesuffix: Azure portal
 description: Gebruik nalevingsbeleid voor het beveiligen van apparaten die door Jamf worden beheerd.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
 |Van toepassing op: Intune in Azure Portal |
 |--|
 |Op zoek naar documentatie over Intune in de klassieke portal? Klik [hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Momenteel alleen als beperkte preview|
-|--|
-|De functies die in dit onderwerp worden beschreven, zijn alleen beschikbaar voor klanten die momenteel over de beperkte preview-versie beschikken. Dit bericht wordt verwijderd wanneer de functies voor alle klanten zijn vrijgegeven.|
 | |
 
 U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Microsoft Intune gebruiken om ervoor te zorgen dat uw eindgebruikers voldoen aan de vereisten van de organisatie. U kunt deze beleidsregels toepassen op Mac-computers die worden [beheerd door Jamf Pro](conditional-access-integrate-jamf.md). Hiervoor is toegang tot de Intune- en Jamf Pro-consoles vereist.
@@ -48,7 +43,7 @@ U moet de bedrijfsportal-app voor macOS in Jamf Pro implementeren als achtergron
 2. Open Jamf Pro en navigeer naar **Computer management** > **Packages**.
 3. Maak een nieuw pakket met de bedrijfsportal-app voor macOS en klik vervolgens op **Save**.
 4. Open **Computers** > **Policies** en selecteer **New**.
-5. Gebruik de nettolading **General** om instellingen voor het beleid te configureren. Deze instellingen zijn: 
+5. Gebruik de nettolading **General** om instellingen voor het beleid te configureren. Deze instellingen zijn:
    - Trigger: selecteer **Enrollment Complete** en **Recurring Check-in**
    - Uitvoeringsfrequentie: selecteer **Once per computer**
 6. Selecteer de nettolading **Packages** en klik op **Configure**.

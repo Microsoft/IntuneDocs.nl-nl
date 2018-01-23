@@ -3,10 +3,10 @@ title: Wat is Microsoft Intune-apparaatinschrijving?
 titlesuffix: Azure portal
 description: Meer informatie over registratie voor iOS, Android en Windows-apparaten.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,72 +14,58 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-In dit onderwerp worden verschillende manieren voor de inschrijving van mobiele apparaten in het Intune-beheer beschreven.
+Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmaken en kunt u beheren hoe zij toegang hebben tot uw bedrijfsgegevens. Om gebruik te kunnen maken van MDM (Mobile Device Management), moeten de apparaten eerst worden geregistreerd bij de Intune-service. Wanneer een apparaat is geregistreerd, wordt een MDM-certificaat voor het apparaat uitgegeven. Dit certificaat wordt gebruikt om te communiceren met de Intune-service.
 
-Als u apparaten in Intune inschrijft, kunt u deze apparaten beheren. In de Intune-documentatie wordt hiernaar verwezen als Mobile Device Management (MDM). Wanneer apparaten worden ingeschreven in Intune, krijgen ze een MDM-certificaat, waarmee de apparaten vervolgens kunnen communiceren met de Intune-service.
+Zoals u in de volgende tabellen ziet, zijn er verschillende methoden om de apparaten van uw werknemers te registreren. Elke methode is afhankelijk van het eigendom van het apparaat (persoonlijk of zakelijk), het apparaattype (iOS, Windows, Android), en de beheervereisten (opnieuw instellen, affiniteit, vergrendelen).
 
-De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met registratie van COD's (Corporate-owned devices, apparaten van bedrijf) zijn beheerscenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten.
+## <a name="ios-enrollment-methods"></a>iOS-registratiemethoden
 
-Als u Exchange ActiveSync on-premises of gehost in de cloud gebruikt, kunt u een eenvoudig Intune-beheer zonder registratie toepassen (binnenkort volgt meer informatie). U kunt Windows-pc's beheren als mobiele apparaten. Dit is de aanbevolen methode die hieronder wordt beschreven.
-
-
-## <a name="overview-of-device-enrollment-methods"></a>Overzicht van registratiemethoden voor apparaten
-
-De volgende tabel biedt een overzicht van registratiemethoden voor Intune. De mogelijkheden en vereisten worden hieronder beschreven.
-
-**Legenda**
-
-- **Opnieuw instellen vereist**: het apparaat wordt tijdens de registratie teruggezet naar de fabrieksinstellingen.
-- **Gebruikersaffiniteit**: apparaten worden aan gebruikers gekoppeld. Zie [Gebruikersaffiniteit](device-enrollment-program-enroll-ios.md) voor meer informatie.
-- **Vergrendeld**: voorkomt dat gebruikers de registratie van apparaten ongedaan maken.
-
-**iOS-registratiemethoden**
-
-| **Methode** |  **Opnieuw instellen vereist** |    **Gebruikersaffiniteit**   |   **Vergrendeld** | **Details** |
+| **Methode** |  **Opnieuw instellen vereist** |    [**Gebruikersaffiniteit**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Vergrendeld** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   Nee |Nee |Nee  | [Meer informatie](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](./device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**| Yes |   Optioneel |  Nee| [Meer informatie](./apple-configurator-setup-assistant-enroll-ios.md)|
+| | Apparaten worden tijdens de registratie teruggezet naar de fabrieksinstellingen. |  Hiermee wordt elk apparaat aan een gebruiker gekoppeld.| Gebruikers kunnen apparaten niet uitschrijven.  | |
+|**[BYOD](#bring-your-own-device)** | Nee|   Ja |   Nee | [Meer informatie](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  | [Meer informatie](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| Ja |   Optioneel |  Nee| [Meer informatie](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Nee |    Nee  | Nee|[Meer informatie](./apple-configurator-direct-enroll-ios.md)|
 
-**Windows-registratiemethoden**
+## <a name="windows-enrollment-methods"></a>Windows-registratiemethoden
 
 | **Methode** |  **Opnieuw instellen vereist** |    **Gebruikersaffiniteit**   |   **Vergrendeld** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee |   Ja |   Nee | [Meer informatie](windows-enroll.md)|
-|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nee |  Ja |   Nee | [Meer informatie](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  |[Meer informatie](device-enrollment-manager-enroll.md)|
 |**Automatisch inschrijven** | Nee |Ja |Nee | [Meer informatie](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Bulkregistratie** |Nee |Nee |Nee | [Meer informatie](./windows-bulk-enroll.md) |
 
-**Android-registratiemethoden**
+## <a name="android-enrollment-methods"></a>Android-registratiemethoden
 
 | **Methode** |  **Opnieuw instellen vereist** |    **Gebruikersaffiniteit**   |   **Vergrendeld** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nee|    Ja |   Nee | [Meer informatie](./android-enroll.md)|
-|**[DEM](#dem)**|   Nee |Nee |Nee  |[Meer informatie](./device-enrollment-program-enroll-ios.md)|
+|**[BYOD](#bring-your-own-device)** | Nee|   Ja |   Nee | [Meer informatie](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  |[Meer informatie](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Nee | Ja | Nee| [Meer informatie](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## <a name="byod"></a>BYOD
-BYOD-gebruikers (Bring-Your-Own-Device) installeren en gebruiken de bedrijfsportal-app om hun apparaten te registreren. Met dit programma hebben gebruikers toegang tot de bedrijfsresources als e-mail.
+## <a name="bring-your-own-device"></a>Bring Your Own Device
+BYOD-apparaten (Bring Your Own Devices) zijn persoonlijke telefoons, tablets en pc's. BYOD-gebruikers gebruiken de bedrijfsportal-app om hun apparaten te registreren. Met dit programma hebben gebruikers toegang tot de bedrijfsresources als e-mail.
 
-## <a name="corporate-owned-devices"></a>Apparaten in bedrijfseigendom
-De volgende registratiescenario's hebben betrekking op apparaten in bedrijfseigendom (COD). iOS-apparaten kunnen rechtstreeks met de hulpprogramma's van Apple worden ingeschreven. Alle typen apparaten kunnen worden ingeschreven door een beheerder of manager die de apparaatinschrijvingsbeheerder gebruikt. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom om COD-scenario's mogelijk te maken.
+## <a name="corporate-owned-device"></a>Apparaat in bedrijfseigendom
+Apparaten in bedrijfseigendom (COD) zijn telefoons, tablets, en pc's die eigendom zijn van de organisatie en gedistribueerd worden naar de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom.
 
-### <a name="dem"></a>DEM
+### <a name="device-enrollment-manager"></a>Apparaatinschrijvingsmanager
 De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Meer informatie over [DEM](./device-enrollment-manager-enroll.md).
 
-### <a name="dep"></a>DEP
+### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
 Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.
 
 Meer informatie over de iOS DEP-registratie:
@@ -110,4 +96,4 @@ Mobiele apparaten die niet zijn ingeschreven maar die met Exchange ActiveSync (E
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 
-Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.
+Het MDM-certificaat wordt automatisch vernieuwd wanneer mobiele apparaten communiceren met de Intune-service. Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd.Als mobiele apparaten worden gewist of een bepaalde tijd niet kunnen communiceren met de Intune-service, wordt het MDM-certificaat niet vernieuwd. Het apparaat wordt 180 dagen nadat het MDM-certificaat is verlopen verwijderd uit de Azure Portal.

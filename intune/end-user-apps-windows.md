@@ -1,5 +1,5 @@
 ---
-title: Hoe uw Windows-gebruikers apps downloaden
+title: Hoe uw Windows-gebruikers hun apps downloaden
 description: Manieren om Windows-apps beschikbaar te stellen aan gebruikers
 keywords: 
 author: barlanmsft
@@ -11,16 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a1c853aa16b771eff47d1d179f8870d7c1036a8
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 3f49003e927acb14982de0210c8e5a5291c334aa
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 01/16/2018
 ---
-# <a name="how-your-windows-users-get-their-apps"></a>Hoe uw Windows-gebruikers apps downloaden
+# <a name="how-your-windows-users-get-their-apps"></a>Hoe uw Windows-gebruikers hun apps downloaden
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -34,6 +34,6 @@ Gebruik deze informatie om te begrijpen hoe en waar uw gebruikers de apps downlo
 
 **Niet-beheerde apps** zijn apps die kunnen worden beheerd via beleid en die niet zijn verpakt door Intune of waarin de Intune App SDK niet is opgenomen. App-beveiligingsbeleid kan niet worden toegepast op deze apps.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Hoe uw Android-gebruikers hun apps downloaden](end-user-apps-android.md)
 [Hoe uw iOS-gebruikers hun apps downloaden](end-user-apps-android.md)

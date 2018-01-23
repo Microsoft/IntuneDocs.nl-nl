@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33bcfd8c83c00a7d9d5625ec0fb87e442f728f2b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6d6158ef3f3199bb3f869a1a430b850affead404
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>Overview of the mobile device management (MDM) lifecycle (Overzicht van de MDM-levenscyclus (Mobile Device Management))
 

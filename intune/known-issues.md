@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -43,31 +43,6 @@ De mogelijkheid voor het beheren van Windows 10 in Intune op Azure Portal is bes
 
 Wanneer u van de Intune-portal naar Azure Portal migreert, ziet u mogelijk een nieuwe groep met de naam **Alle gebruikers - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Deze groep bevat alle gebruikers in uw Azure Active Directory, niet alleen gebruikers met een Intune-licentie. Dit gebruik kan problemen veroorzaken met andere Microsoft-producten, als u verwacht dat sommige bestaande of nieuwe gebruikers van geen enkele groep lid zijn.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Secundaire migratie vereist is voor bepaalde mogelijkheden
-
-Intune-accounts die voor januari 2017 zijn gemaakt, moeten worden gemigreerd voordat de volgende mogelijkheden in de Azure portal kunnen worden gebruikt:
-
-- Inschrijvingsprofiel voor bedrijfsapparaten
-- Apple Device Enrollment Program
-- Zakelijke apparaten labelen op basis van iOS-serienummer
-- Apparaatinschrijvingsbeheerder-accounts
-- Apple Volume Purchase Program
-
-Deze mogelijkheden kunnen niet worden beheerd in de Intune-console (Silverlight) en de Azure-portal. Daarom zal de migratie:
-- Ze in de klassieke portal uitschakelen
-- Ze in de Azure-portal inschakelen  
-
-Na 22 september 2017 wordt de migratie van deze functies samengevoegd in de primaire migratie naar Azure. Als uw account al werd gemigreerd om de Azure-portal te gebruiken, is deze secundaire migratie nu misschien voltooid. Als dit niet het geval is, zullen deze mogelijkheden in november naar Azure zijn gemigreerd. De migratie van uw account wordt voltooid op dezelfde dag waarop deze wordt begonnen. De migratie kan tot 6 uur duren vanaf het moment waarop deze functies in de klassieke Intune-portal zijn uitgeschakeld.
-
-Als u deze Intune-mogelijkheden nu in Azure Portal beheert, moet u rekening houden met de volgende punten:
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>De standaardprofielen voor de registratie van bedrijfsapparaten in Apple DEP worden verwijderd
-Azure Portal biedt geen ondersteuning voor een standaardprofiel voor de registratie van bedrijfsapparaten voor Apple DEP-apparaten (Device Enrollment Program). Deze functionaliteit, die beschikbaar is in de Intune-console (Silverlight), wordt stopgezet om onbedoelde profieltoewijzing te voorkomen. Als de DEP-serienummers in de Azure portal worden gesynchroniseerd, wordt er geen inschrijvingsprofiel voor bedrijfsapparaten toegewezen. Een inschrijvingsprofiel moet worden toegewezen voordat het apparaat wordt gebruikt.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP-token hersteld met migratie
-
-Als u een token van Apple Device Enrollment Program hebt verwijderd in de Intune-portal (Silverlight) en geen nieuw token uploadt naar Azure Portal, wordt het oorspronkelijke token tijdens de migratie hersteld in Azure Portal. Als u dit token wilt verwijderen en DEP-inschrijving wilt voorkomen, verwijdert u het token uit Azure Portal.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblades voor gemigreerde beleidsregels werken niet
 
 U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd vanuit de klassieke portal naar Azure Portal. U kunt rapporten voor dit beleid echter blijven bekijken in de klassieke portal. Als u statusinformatie voor gemigreerde configuratiebeleid wilt weergeven, maakt u ze opnieuw in Azure Portal.
@@ -79,6 +54,9 @@ iOS-apps die zijn gekocht via het volume-aankoopprogramma, worden alleen in de t
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Meerdere exemplaren van hetzelfde iOS-volume-aankoopprogramma worden geüpload
 Klik niet meerdere keren op de knop **Uploaden** voor hetzelfde VPP-token. Hierdoor worden namelijk dubbele VPP-tokens geüpload en worden apps meerdere keren voor hetzelfde VPP-token gesynchroniseerd.
+
+### <a name="assigning-office-365-to-macos-devices"></a>Office 365 toewijzen aan macOS-apparaten
+De functie voor het toewijzen van Office 365 aan macOS-apparaten met Microsoft Intune komt beschikbaar nadat de UI-update voltooid is.
 
 <!-- ## Groups -->
 
