@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ad05e4eac40a6d3b8c522e893d8aea51de34c67a
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Hoe uw Android-gebruikers apps downloaden
 
@@ -54,7 +54,7 @@ Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het pr
 
 **Niet-beheerde apps**: dit zijn apps die niet kunnen worden beheerd via beleid. Deze zijn niet verpakt door Intune of opgenomen in de Intune App SDK. Het toepassingsbeleid kan niet worden toegepast op deze apps.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Apps toevoegen met Microsoft Intune](apps-add.md)
 
 [Hoe uw iOS-gebruikers hun apps downloaden](end-user-apps-ios.md)

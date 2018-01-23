@@ -15,11 +15,11 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17aa425a7daad35860eb4694e9bf798dc655992c
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 31d1e40c3cd352c00dd7a659f716b5690ea64ea1
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>VPN-instellingen voor Android-apparaten in Microsoft Intune
 
@@ -63,4 +63,3 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     - **F5 Edge Client**
     - **Pulse Secure**
 
-- **Split tunneling**: schakel deze optie in om bepaald webverkeer gebruik te laten maken van de VPN-verbinding, terwijl ander verkeer gebruik moet maken van internet. U moet deze instelling uitschakelen als u wilt dat al het verkeer het VPN gebruikt als dit actief is.
