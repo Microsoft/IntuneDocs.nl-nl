@@ -2,7 +2,7 @@
   href: introduction-intune.md
   expanded: true
   items:
-    - name: Wat is Azure Portal?
+    - name: Wat is de Azure-portal?
       href: what-is-intune.md
     - name: Wat is Intune for Education?
       href: introduction-intune-education.md
@@ -124,7 +124,7 @@
         - name: Ondersteunde configuraties
           href: supported-devices-browsers.md
           items:
-            - name: Gebruik van netwerkbandbreedte
+            - name: Netwerkconfiguratie
               href: network-bandwidth-use.md
         - name: Aanmelden bij Intune
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment-programma
               href: enrollment-autopilot.md
+            - name: Scherm Status van inschrijving
+              href: windows-enrollment-status.md
         - name: Android-inschrijving instellen
           href: android-enroll.md
         - name: iOS-inschrijving instellen
