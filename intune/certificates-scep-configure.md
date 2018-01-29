@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -305,7 +304,7 @@ In deze taak:
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. Meld u aan bij Azure Portal. 
+1. Meld u aan bij Azure-portal. 
 2. Selecteer **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Selecteer op de blade **Intune** de optie **Apparaatconfiguratie**.
 4. Selecteer op de blade **Apparaatconfiguratie** de optie **Certificeringsinstantie**.
@@ -329,6 +328,9 @@ In deze taak:
 5.  In de gebruikersinterface van de **certificaatconnector** :
 
     Klik op **Aanmelden** en voer uw Intune-servicebeheerder- of tenantbeheerderreferenties met de machtiging voor algemeen beheer in.
+
+    > [!IMPORTANT]
+    > Aan het gebruikersaccount moet een geldige Intune-licentie worden toegewezen. Als het gebruikersaccount geen geldige Intune-licentie heeft, mislukt NDESConnectorUI.exe.
 
     Als uw organisatie een proxyserver gebruikt en de NDES-server de proxy nodig heeft om toegang tot internet te krijgen, klikt u op **Proxyserver gebruiken** en geeft u de naam van de proxyserver, de poort en de accountreferenties op om verbinding te maken.
 

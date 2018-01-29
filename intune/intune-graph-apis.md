@@ -1,6 +1,6 @@
 ---
-title: Azure AD gebruiken voor toegang tot de Intune Graph API
-description: Beschrijft de stappen die voor apps nodig zijn om Azure AD te gebruiken voor toegang tot de Intune Graph API
+title: Azure AD gebruiken voor toegang tot Intune-API's in Microsoft Graph
+description: Beschrijft de stappen die voor apps nodig zijn om Azure AD te gebruiken voor toegang tot de Intune-API's in Microsoft Graph.
 keywords: machtigingsrollen voor intune graphapi c# powershell
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Azure AD gebruiken voor toegang tot de Intune Graph API
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
-De [Microsoft Graph API](https://developer.microsoft.com/graph/) biedt nu ondersteuning voor Microsoft Intune met specifieke API's en machtigingsrollen.  De Graph API gebruikt Azure Active Directory (Azure AD) voor verificatie en toegangsbeheer.  
-Voor de toegang tot de Intune Graph API is het volgende vereist:
+De [Microsoft Graph API](https://developer.microsoft.com/graph/) biedt nu ondersteuning voor Microsoft Intune met specifieke API's en machtigingsrollen.  De Microsoft Graph API gebruikt Azure Active Directory (Azure AD) voor verificatie en toegangsbeheer.  
+Voor toegang tot de Intune-API's in Microsoft Graph is het volgende vereist:
 
 - Een toepassings-ID met:
 
-    - Machtiging voor het aanroepen van Azure AD en Graph API's.
+    - Machtiging voor het aanroepen van Azure AD en Microsoft Graph API's.
     - Machtigingsbereiken die relevant zijn voor de specifieke toepassingstaken.
 
 - Gebruikersreferenties met:
@@ -38,11 +38,11 @@ Voor de toegang tot de Intune Graph API is het volgende vereist:
 
 Dit artikel:
 
-- Laat zien hoe u een toepassing registreert met toegang tot de Graph API en de relevante machtigingsrollen.
+- Laat zien hoe u een toepassing registreert met toegang tot de Microsoft Graph API en de relevante machtigingsrollen.
 
-- Bevat een beschrijving van de machtigingsrollen van de Intune Graph API.
+- Bevat een beschrijving van de machtigingsrollen voor de Intune-API.
 
-- Toont voorbeelden van Intune Graph API-verificatie voor C# en PowerShell.
+- Toont voorbeelden van Intune API-verificatie voor C# en PowerShell.
 
 - Bevat een beschrijving hoe u tenants ondersteunt
 
@@ -53,9 +53,9 @@ Zie voor meer informatie:
 - [Toepassingen integreren met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [OAuth 2.0 begrijpen](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Apps registreren voor het gebruik van de Graph API
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Apps voor het gebruik van de Microsoft Graph API registreren
 
-Een app registreren voor het gebruik van de Graph API:
+U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
 1.  Meld u met beheerdersreferenties aan bij [Azure Portal](https://portal.azure.com).
 
@@ -127,15 +127,15 @@ Op dit moment, kunt u ook:
 
 ## <a name="intune-permission-scopes"></a>Intune-machtigingsbereiken
 
-Azure AD en de Graph API gebruiken machtigingsbereiken om toegang tot bedrijfsbronnen te beheren.  
+Azure AD en Microsoft Graph gebruiken machtigingsbereiken om toegang tot bedrijfsresources te beheren.  
 
-Machtigingsbereiken (ook wel de _OAuth-bereiken_ genoemd) beheren de toegang tot specifieke Intune-entiteiten en hun eigenschappen. Deze sectie bevat een overzicht van de machtigingsbereiken voor Intune Graph API-functies.
+Machtigingsbereiken (ook wel de _OAuth-bereiken_ genoemd) beheren de toegang tot specifieke Intune-entiteiten en hun eigenschappen. Deze sectie bevat een overzicht van de machtigingsbereiken voor functies van de Intune-API.
 
 Zie voor meer informatie:
 - [Azure AD-verificatie](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Machtigingsbereiken voor toepassingen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Wanneer u de Graph API machtigt, kunt u de volgende bereiken opgeven voor het beheren van toegang tot de Intune-functies: de volgende tabel bevat een overzicht van de Intune Graph API-machtigingsbereiken.  In de eerste kolom ziet u de naam van de functie, zoals weergegeven in Azure Portal. De tweede kolom bevat de naam van het machtigingbereik.
+Wanneer u Microsoft Graph machtigt, kunt u de volgende bereiken opgeven voor het beheren van toegang tot de Intune-functies: de volgende tabel bevat een overzicht van de machtigingsbereiken voor de Intune-API.  In de eerste kolom ziet u de naam van de functie, zoals weergegeven in Azure Portal. De tweede kolom bevat de naam van het machtigingbereik.
 
 De instelling _Toegang inschakelen_ | Scopenaam
 :--|:--
@@ -153,7 +153,7 @@ __Microsoft Intune-configuratie lezen__ | [DeviceManagementServiceConfig.Read.Al
 
 De tabel bevat de instellingen zoals die worden weergegeven in Azure Portal. In de volgende secties worden de bereiken in alfabetische volgorde beschreven.
 
-Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.  Dit betekent dat u de bijbehorende referenties nodig hebt voor het uitvoeren van apps of scripts die toegang hebben tot Intune Graph API-resources.
+Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.  Dit betekent dat u de bijbehorende referenties nodig hebt voor het uitvoeren van apps of scripts die toegang hebben tot resources voor de Intune-API.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Wanneer u een van de voorbeelden test, worden mogelijk foutberichten voor HTTP-s
 
 Als dit gebeurt, moet u de volgende punten controleren:
 
-- U hebt de toepassings-ID bijgewerkt naar een ID die de Graph API mag gebruiken en het `DeviceManagementManagedDevices.Read.All`-machtigingsbereik heeft.
+- U hebt de toepassings-ID bijgewerkt naar een ID die de Microsoft Graph API mag gebruiken en het `DeviceManagementManagedDevices.Read.All`-machtigingsbereik heeft.
 
 - De referenties van uw tenant ondersteunen beheerfuncties.
 

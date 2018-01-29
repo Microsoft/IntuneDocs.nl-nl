@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filterinstellingen voor webinhoud op iOS-apparaten
 
@@ -47,8 +46,11 @@ Als u geen URL's opgeeft, kunnen eindgebruikers geen websites openen, met uitzon
 ## <a name="configure-urls"></a>URL's configureren
 
 1. Kies op de blade **Filter voor webinhoud** een van de volgende instellingen, indien nodig:
-    - **Toegestane URL's**: Voer op de blade **Toegestane URL's** de URL's in die u wilt toestaan (het webfilter van Apple wordt genegeerd). Kies Enter na elke ingevoerde URL.
-    - **Geblokkeerde URL's**: Voer op de blade **Geblokkeerde URL's** de URL's in die u wilt blokkeren (ongeacht het webfilter van Apple). Kies Enter na elke ingevoerde URL.
+   - **Toegestane URL's**: Voer op de blade **Toegestane URL's** de URL's in die u wilt toestaan (het webfilter van Apple wordt genegeerd). Kies Enter na elke ingevoerde URL.
+     > [!NOTE]
+     > De URL's die u hier opgeeft, zijn de URL's waarop u niet het webfilter van Apple wilt toepassen. Dit is geen lijst van de websites die zijn toegestaan. Als u dat wilt, gebruikt u **Alleen specifieke websites**.
+
+   - **Geblokkeerde URL's**: Voer op de blade **Geblokkeerde URL's** de URL's in die u wilt blokkeren (ongeacht het webfilter van Apple). Kies Enter na elke ingevoerde URL.
 2. Klik op **OK**als u klaar bent.
 
 

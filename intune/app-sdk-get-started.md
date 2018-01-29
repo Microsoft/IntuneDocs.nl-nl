@@ -5,7 +5,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -34,7 +34,7 @@ U hoeft uw app *niet* te registreren. Voor interne line-of-business-apps impleme
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Als uw app wordt uitgebracht in een openbare app-store, zoals de Apple App Store of Google Play, geldt het volgende:
 
-U _**moet**_ uw app eerst registreren bij Microsoft Intune en akkoord gaan met de voorwaarden van de registratie. Na de registratie kunnen IT-beheerders beleid voor app-beveiliging toepassen op de compatibele app, die wordt vermeld als app-partner van Intune.
+U _**moet**_ uw app eerst registreren bij Microsoft Intune en akkoord gaan met de voorwaarden van de registratie. Na de registratie kunnen IT-beheerders beleid voor app-beveiliging toepassen op de beheerde app, die wordt vermeld als app-partner van Intune.
 
 Zolang de registratie nog niet is voltooid en bevestigd door het team van Microsoft Intune, krijgen Intune-beheerders nog niet de mogelijkheid om beleid voor app-beveiliging toe te passen op de dieptekoppeling van uw app. Uw app wordt ook toegevoegd aan de [pagina voor Microsoft Intune-partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Op deze pagina wordt het pictogram van uw app weergegeven om aan te geven dat de app het Intune-beleid voor app-beveiliging ondersteunt.
 
@@ -60,8 +60,6 @@ Als de dieptekoppeling voor uw app in de Store in de toekomst wordt gewijzigd, m
 > [!NOTE]
 > Laat het ons weten als u uw app bijwerkt naar een nieuwe versie van de Intune App SDK.
 
-
-
 ## <a name="download-the-sdk-files"></a>De SDK-bestanden downloaden
 
 De SDK's voor Intune-apps voor systeemeigen iOS en Android worden gehost op een Microsoft GitHub-account. De volgende openbare opslagplaatsen bevatten de SDK-bestanden voor respectievelijk systeemeigen iOS en Android:
@@ -75,10 +73,6 @@ Als uw app een Xamarin- of Cordova-app is, gebruikt u de volgende SDK-varianten:
 * [Intune App SDK Cordova-invoegtoepassing](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Het is verstandig om u te registreren voor een GitHub-account waarmee u splitsingen en pulls vanuit de opslagplaatsen kunt uitvoeren. Met GitHub kunnen ontwikkelaars communiceren met het productteam, problemen melden en snel antwoord ontvangen, opmerkingen bij de release bekijken en feedback naar Microsoft verzenden. Voor vragen over de GitHub van de Intune App SDK kunt u contact opnemen met msintuneappsdk@microsoft.com.
-
-
-
-
 
 ## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>Uw mobiele iOS- of Android-app geschikt maken voor beleid voor app-beveiliging
 
@@ -102,9 +96,6 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
  
  * De [AAD-client-id](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) voor uw app moet uniek zijn voor de iOS- en Android-platformen.
  
- 
- 
-
 ## <a name="configure-telemetry-for-your-app"></a>Telemetrie configureren voor uw app
 
 Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
@@ -113,7 +104,10 @@ Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
     * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
 
-* **SDK voor Intune-app voor Android**: telemetriegegevens worden niet geregistreerd via de SDK.
+* **Intune App SDK voor Android**: de Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
+
+    * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
+
 
  Het versienummer van de line-of-business-app voor iOS en Android is zichtbaar <!-- 1380712 -->
 
@@ -123,7 +117,7 @@ In line-of-business-apps in Intune wordt nu het versienummer getoond voor iOS- e
 
 ### <a name="full-version-number"></a>Volledig versienummer
 
-Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800)
+Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800). 
 
 Het volledige versienummer bevat twee onderdelen:
 
@@ -163,7 +157,7 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iterati
 ### <a name="test-your-app"></a>Uw app testen
 Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integreren met de Intune App SDK, moet u ervoor zorgen dat alle beleid voor app-beveiliging is ingeschakeld en correct werkt voor de gebruiker en de IT-beheerder. Als u uw geïntegreerde app wilt testen, gaat u als volgt te werk:
 
-* **Microsoft Intune-testaccount**: als u uw met Intune compatibele app wilt testen aan de hand van beveiligingsfuncties voor Intune-apps, hebt u een Microsoft Intune-account nodig.
+* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor Intune-apps, hebt u een Microsoft Intune-account nodig.
 
     * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
@@ -171,7 +165,7 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
 
 * **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](/intune-classic/deploy-use/ios-mam-policy-settings) en [Android-beleid voor app-beveiliging](/intune-classic/deploy-use/android-mam-policy-settings).
 
-* **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app, gaat u naar [MAM-probleemoplossing](/intune-classic/troubleshoot/troubleshoot-mam). Dit artikel biedt hulp bij veelvoorkomende problemen, dialoogvensters en foutberichten die kunnen voorkomen in met Intune compatibele apps. 
+* **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app, gaat u naar [MAM-probleemoplossing](/intune-classic/troubleshoot/troubleshoot-mam). Dit artikel biedt hulp bij veelvoorkomende problemen, dialoogvensters en foutberichten die kunnen voorkomen in met apps die door Intune worden beheerd. 
 
 ### <a name="badge-your-app-optional"></a>Uw app van een logo voorzien (optioneel)
 

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Intune
 
@@ -61,6 +61,18 @@ De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere config
 - **Beleid- en profielbeheerder**: beheert het nalevingsbeleid, configuratieprofielen, Apple-inschrijving en id's van bedrijfsapparaten.
 - **Operator met alleen-lezenmachtiging**: kan alleen gebruikers-, apparaat-, inschrijvings-, configuratie- en toepassingsgegevens weergeven. Kan geen wijzigingen aan Intune aanbrengen.
 - **Toepassingsbeheerder**: beheert mobiele en beheerde toepassingen en kan de apparaatgegevens lezen.
+- **School Administrator**: beheert Windows 10-apparaten in [Intune voor onderwijs](introduction-intune-education.md) en kan de volgende acties uitvoeren: 
+
+|Machtiging|Bewerking|
+|---|---|
+|Controledatabase|Raadplegen|
+|DeviceConfigurations|Toewijzen, maken, verwijderen, lezen, bijwerken|
+|Apparaatinschrijvingsmanagers|Lezen, bijwerken|
+|Beheerde apparaten|Lezen, bijwerken<!--, Delete [To be added in 1803]-->|
+|Mobiele apps|Toewijzen, maken, verwijderen, lezen, bijwerken|
+|Reports|Raadplegen|
+|Externe acties|Pc opruimen, opnieuw opstarten, op afstand vergrendelen, buiten gebruik stellen, apparaten synchroniseren, wissen|
+|Organisatie|Raadplegen|
 
 ### <a name="to-assign-a-built-in-role"></a>Een ingebouwde rol toewijzen
 
