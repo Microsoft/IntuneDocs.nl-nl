@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
 > [!NOTE]
 > U kunt desgewenst eerst [Overzicht van de Intune App SDK](app-sdk.md) lezen voor meer informatie over de huidige functies en hoe u de integratie voor elk ondersteund platform voorbereidt.
 
-Met de Microsoft-SDK voor de Intune-app voor Android kunt u Intune-beveiligingsbeleid voor apps (ook wel **APP-** of MAM-beleid genoemd) opnemen in uw systeemeigen Android-app. Een toepassing die is geoptimaliseerd voor Intune, is een toepassing die is geïntegreerd in de SDK voor de Intune-app. Intune-beheerders kunnen eenvoudig app-beveiligingsbeleid implementeren in uw app met Intune-functionaliteit wanneer de app actief door Intune wordt beheerd.
+Met de Microsoft-SDK voor de Intune-app voor Android kunt u Intune-beveiligingsbeleid voor apps (ook wel **APP-** of MAM-beleid genoemd) opnemen in uw systeemeigen Android-app. Een toepassing die door Intune wordt beheerd, is een toepassing die is geïntegreerd in de SDK voor de Intune-app. Intune-beheerders kunnen eenvoudig app-beveiligingsbeleid implementeren in uw door Intune beheerde app wanneer de app actief door Intune wordt beheerd.
 
 
 ## <a name="whats-in-the-sdk"></a>Inhoud van de SDK
@@ -55,7 +55,7 @@ De Intune App SDK is een gecompileerd Android-project. Als gevolg hiervan wordt 
 De SDK voor de Intune-app voor Android is afhankelijk van de aanwezigheid van de [bedrijfsportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)-app op het apparaat voor het inschakelen van app-beveiligingsbeleid. De bedrijfsportal haalt het app-beveiligingsbeleid op van de Intune-service. Tijdens de initialisatie van de app worden het beleid en de code geladen om het betreffende beleid af te dwingen bij de bedrijfsportal.
 
 > [!NOTE]
-> Wanneer de bedrijfsportal-app zich niet op het apparaat bevindt, gedraagt een app met Intune-functionaliteit zich hetzelfde als een normale app die geen ondersteuning biedt voor Intune-beleid voor de beveiliging van apps.
+> Wanneer de bedrijfsportal-app zich niet op het apparaat bevindt, gedraagt een door Intune beheerde app zich hetzelfde als een normale app die geen ondersteuning biedt voor Intune-beleid voor de beveiliging van apps.
 
 Voor app-beveiliging zonder apparaatregistratie hoeft de gebruiker het apparaat _**niet**_ te registreren via de bedrijfsportal-app.
 
@@ -875,7 +875,7 @@ U kunt ook een methode in `MAMActivity` als u wilt dat de app op de hoogte wordt
 
 ### <a name="implicit-identity-changes"></a>Impliciete identiteitswijzigingen
 
-Naast de mogelijkheid van de app om de identiteit in te stellen, kan de identiteit van een thread of context worden gewijzigd op basis van binnenkomende gegevens vanuit een andere app met Intune-functionaliteit waarop app-beveiligingsbeleid is toegepast.
+Naast de mogelijkheid van de app om de identiteit in te stellen, kan de identiteit van een thread of context worden gewijzigd op basis van binnenkomende gegevens vanuit een andere door Intune beheerde app waarop app-beveiligingsbeleid is toegepast.
 
 #### <a name="examples"></a>Voorbeelden
 
@@ -1353,6 +1353,32 @@ Hieronder volgt een compleet overzicht van de toegestane stijlkenmerken, de UI-e
 | Accentkleur | Kaderrand van het gemarkeerde pincodevak <br> Hyperlinks |accent_color | Kleur |
 | App-logo | Grote pictogrammen die worden weergegeven in het pincodescherm van de Intune-app | logo_image | Tekenbaar |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Vereisen dat een gebruiker een aanmeldingsprompt krijgt voor automatische registratie bij de APP-WE-service, waarvoor beveiligingsbeleid voor apps in Intune is vereist om uw in SDK geïntegreerde Android LOB-app te gebruiken, en eenmalige aanmelding van ADAL inschakelen (optioneel)
+
+Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten van een app voor automatische registratie bij de APP-WE-service (dit wordt **standaardinschrijving** genoemd in deze sectie), waarvoor beveiligingsbeleid voor apps in Intune is vereist om uw in SDK geïntegreerde Android LOB-app te gebruiken. Ook wordt beschreven hoe u eenmalige aanmelding kunt inschakelen voor uw in SDK geïntegreerde Android LOB-apps. Dit wordt **niet** ondersteund voor Store-apps die kunnen worden gebruikt door niet-Intune-gebruikers.
+
+> [!NOTE] 
+> Een van de voordelen van **standaardinschrijving** is dat u eenvoudiger beleid kunt ophalen uit de APP-WE-service voor een app op het apparaat.
+
+### <a name="general-requirements"></a>Algemene vereisten
+* Het Intune SDK-team heeft de toepassings-id van uw app nodig. U vindt deze in [Azure Portal](https://portal.azure.com/) onder **Alle toepassingen** in de kolom voor **Toepassings-id**. U kunt het best contact opnemen met het Intune SDK-team door een e-mail te sturen naar msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Werken met de Intune SDK
+Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligingsbeleid voor apps in Intune willen vereisen voor gebruik op een apparaat van een eindgebruiker.
+
+1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> De term client-id die is gekoppeld aan uw app is hetzelfde als de term toepassings-id van Azure Portal. 
+* Voor het inschakelen van eenmalige aanmelding is Common ADAL configuration #2 vereist.
+
+2. U schakelt standaardinschrijving in door de volgende waarde in het manifest in te voeren: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Dit moet de enige MAM-WE-integratie in de app zijn. Als er andere pogingen zijn gedaan om MAMEnrollmentManager-API's aan te roepen, kunnen er zich conflicten voordoen.
+
+3. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Dit zorgt ervoor dat de gebruiker de bedrijfsportal op het apparaat moet downloaden en de standaardstroom voor inschrijving moet voltooien vóór gebruik.
+
 ## <a name="limitations"></a>Beperkingen
 
 ### <a name="file-size-limitations"></a>Beperkingen van de bestandsgrootte
@@ -1380,7 +1406,7 @@ Voor grote codebasissen die worden uitgevoerd zonder [ProGuard](http://proguard.
     
 ### <a name="exported-services"></a>Geëxporteerde services
 
- Het bestand AndroidManifest.xml, dat deel uitmaakt van de SDK voor de Intune-app, bevat **MAMNotificationReceiverService**, wat een geëxporteerde service moet zijn om toe te staan dat de bedrijfsportal meldingen naar een geoptimaliseerde app verzendt. De service controleert de oproepende functie om ervoor te zorgen dat alleen de Bedrijfsportal meldingen mag verzenden.
+ Het bestand AndroidManifest.xml, dat deel uitmaakt van de SDK voor de Intune-app, bevat **MAMNotificationReceiverService**, wat een geëxporteerde service moet zijn om toe te staan dat de bedrijfsportal meldingen naar een beheerde app verzendt. De service controleert de oproepende functie om ervoor te zorgen dat alleen de Bedrijfsportal meldingen mag verzenden.
 
 ### <a name="reflection-limitations"></a>Reflectiebeperkingen
 Sommige MAM-basisklassen (bijvoorbeeld MAMActivity en MAMDocumentsProvider) bevatten methoden (op basis van de oorspronkelijke Android-basisklassen) die alleen gebruikmaken van parameters of typen retourneren die aanwezig zijn boven bepaalde API-niveaus. Daarom is het niet altijd mogelijk om reflectie te gebruiken om alle methoden van app-onderdelen op te sommen. Deze beperking is niet beperkt tot MAM en is dezelfde beperking die van toepassing zou zijn als de app zelf deze methoden van de Android-basisklassen heeft geïmplementeerd.

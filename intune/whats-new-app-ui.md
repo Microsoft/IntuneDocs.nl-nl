@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/14/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
-ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
+ms.openlocfilehash: 1662245fdf9ba557fbc62fbb2e9c0e1aa29888b2
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
@@ -301,10 +301,10 @@ Zowel de Android- als iOS-versie van de Managed Browser heeft een nieuw pictogra
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width=200 height=366 align=center>
+            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width=200 height=366 align=center>
+             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -322,13 +322,13 @@ De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -362,7 +362,7 @@ Vanaf maart volgt de bedrijfsportal-app voor Android [richtlijnen voor het ontwe
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
+            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width="200" height="366" align="center">
           </td>
       </tr>
    </table>
@@ -382,11 +382,21 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 > [!Note]
 > De onderstaande afbeeldingen zijn voorbeelden en het aangekondigde product kan verschillen van de weergegeven versies.
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!--1412866-->
+
+We zullen een grote update uitbrengen van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update heeft een volledig nieuw visueel ontwerp, waaronder een gemoderniseerde uitstraling met verbeterde bruikbaarheid en toegankelijkheid. De huidige functionaliteit van de iOS-bedrijfsportal-app blijft behouden.
+
+We bieden een voorlopige versie van de bijgewerkte bedrijfsportal-app voor iOS via het Apple TestFlight-programma. U kunt deze versie gebruiken en uw feedback geven. Meld u aan bij https://aka.ms/intune_ios_cp_testflight voor toegang tot TestFlight.
+
+![teaserafbeeldingen voor de nieuwe iOS-bedrijfsportal-app](./media/ios-cp-app-redesign-1801-teaser.png)
+
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite <!--1313244 part 2-->
 
 __Updates voor aanbevolen apps__ Er is een speciale pagina aan de site toegevoegd waar gebruikers door apps kunnen bladeren die door u zijn aanbevolen. Ook zijn er enkele correcties aan de gebruikersinterface aangebracht aan de sectie Aanbevolen op de startpagina.
 
 ![De kleurrijke tegels waarop de apps worden getoond. Het zijn grote, gekleurde vierkanten onder de apps, waarbij de gekozen kleur de primaire kleur van het app-logo is. De sectie Aanbevolen apps wordt bovenaan de bedrijfsportal-app weergegeven.](./media/cp_win10_colorful_tiles_after_1708.png)
+
+
 
 ### <a name="see-also"></a>Zie ook
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)

@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae53ced489542ba7e675e547740f1858d761c7ab
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 73caf124e94994acf816c98f0788efdabe024cc4
+ms.sourcegitcommit: c3bd0d192d712fcfd52f64dd1377155796239fcb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Intune App SDK Xamarin-onderdeel
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/04/2018
 
 
 ## <a name="overview"></a>Overzicht
-Met het [Intune App SDK Xamarin-onderdeel](https://components.xamarin.com/view/microsoft.intune.mam) kunt u het [appbeveleigingsbeleid voor Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) inschakelen in iOS- en Android-apps die zijn gebouwd met Xamarin. Met dit onderdeel kunnen ontwikkelaars eenvoudig beschermingsfuncties van Intune inbouwen in hun Xamarin-apps.
+Met het [Intune App SDK Xamarin-onderdeel](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) kunt u het [appbeveleigingsbeleid voor Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) inschakelen in iOS- en Android-apps die zijn gebouwd met Xamarin. Met dit onderdeel kunnen ontwikkelaars eenvoudig beschermingsfuncties van Intune inbouwen in hun Xamarin-apps.
 
 > [!NOTE]
 > Ondersteuning voor de Intune SDK voor Xamarin is momenteel beschikbaar in de preview-versie. 
@@ -64,7 +64,7 @@ Xamarin-apps die zijn gemaakt met de Intune App SDK Xamarin Component, kunnen nu
 
 2. Lees de [licentievoorwaarden](https://components.xamarin.com/license/microsoft.intune.mam) voor het Microsoft Intune MAM Xamarin-onderdeel.
 
-3.  Download de map Intune App SDK Xamarin Component van [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) of [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) en pak de map uit. De bestanden die u in stap 1 en stap 3 hebt gedownload, moeten zich op hetzelfde mappenniveau bevinden.
+3.  Download de map Intune App SDK Xamarin Component van [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) of [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) en pak de map uit. De bestanden die u in stap 1 en stap 3 hebt gedownload, moeten zich op hetzelfde mappenniveau bevinden.
 
 4.  Voer `Xamarin.Component.exe install <.xam> file` uit als beheerder vanaf de opdrachtregel.
 
@@ -78,6 +78,7 @@ Xamarin-apps die zijn gemaakt met de Intune App SDK Xamarin Component, kunnen nu
 1.  Volg de algemene stappen voor het integreren van de Intune App SDK in een mobiele iOS-app. U kunt beginnen met stap 3 van de integratie-instructies uit de [Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS](app-sdk-ios.md#build-the-sdk-into-your-mobile-app).
     **Belangrijk**: delen van sleutelketens inschakelen voor een app wijkt in Visual Studio enigszins af van de procedure in Xcode. Open de plist Entitlements van de app en zorg ervoor dat de optie 'Enable Keychain' is ingeschakeld en dat de juiste groepen voor het delen van de sleutelketen in die sectie zijn toegevoegd. Controleer vervolgens of de plist Entitlements is opgegeven in het veld 'Custom Entitlements' van de opties voor 'iOS Bundle Signing' van het project voor alle betrokken configuratie-/platformcombinaties.
 2.  Nadat het onderdeel is toegevoegd en de app correct is geconfigureerd, kan uw app gebruikmaken van de Intune SDK API's. Daarvoor moet u de volgende naamruimte opnemen:
+
       ```csharp
       using Microsoft.Intune.MAM;
       ```

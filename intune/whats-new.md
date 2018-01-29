@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/11/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5575d02d0c270e9d22e4b858d8fb00753b60448
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 8301e7fbd47ec0870f569ae03908e07cd6589549
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -736,6 +736,10 @@ Met de bedrijfsportal-app voor Windows 10 kunnen gebruikers de gegevens in de ap
 
 ## <a name="notices"></a>Mededelingen
 
+### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Wijzigingsplannen: u kunt Intune op Azure nu gebruiken voor uw MDM-beheer <!-- 1227338 -->
+Een jaar geleden hebben we de [openbare preview van Intune op Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) aangekondigd en zes maanden geleden hebben we deze opgevolgd met de [algemene beschikbaarheid van de nieuwe beheerderservaring](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) voor Intune. Vanaf 2 april 2018 wordt MDM (Mobile Device Management) uitgeschakeld in de klassieke Silverlight-console voor klanten met de zelfstandige versie van Intune. In plaats daarvan kunt u [Intune op Azure](https://aka.ms/Intune_on_Azure) gebruiken voor MDM. Als u nog steeds de klassieke console voor MDM gebruikt, moet u hiermee stoppen en uzelf vertrouwd maken met Intune op Azure. We verwachten niet dat deze wijziging gevolgen heeft voor eindgebruikers. Klassiek pc-beheer blijft in Silverlight nog gewoon aanwezig. U vindt [hier](https://aka.ms/Intune_on_Azure_mdm) meer informatie over deze wijziging en over eventuele gevolgen voor u.
+
+
 ### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Plannen voor wijziging: einde levenscyclus van Easy Assist <!-- 1556480 -->
 Intune maakt gebruik van Microsoft Easy Assist voor hulp op afstand bij het beheren van pc's. Wat u misschien niet weet is dat Microsoft Easy Assist een onderdeel is van Office Live Meeting, een service die 31 december 2017 is afgeschaft. Daarom is ook Easy Assist van Intune per 31 december 2017 afgeschaft.
 
@@ -786,9 +790,13 @@ Voor Intune-accounts die na januari 2017 zijn gemaakt, heeft Intune rechtstreeks
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Beheerdersrollen die worden vervangen in Azure Portal
 De bestaande MAM-beheerdersrollen (Mobile Application Management), namelijk Inzender, Eigenaar en Alleen-lezen, die in de klassieke Intune-portal (Silverlight) worden gebruikt, worden vervangen door een volledig nieuw op rollen gebaseerd toegangsbeheer in Intune Azure Portal. Wanneer u naar Azure Portal bent gemigreerd, moet u uw beheerders opnieuw toewijzen aan deze nieuwe beheerdersrollen. Zie [Op rollen gebaseerd toegangsbeheer voor Microsoft Intune](/intune/role-based-access-control) voor meer informatie over op rollen gebaseerd toegangsbeheer en de nieuwe rollen.
 
-
-
 ## <a name="whats-coming"></a>Binnenkort
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!--1412866-->
+
+We zullen een grote update uitbrengen van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update heeft een volledig nieuw visueel ontwerp, waaronder een gemoderniseerde uitstraling met verbeterde bruikbaarheid en toegankelijkheid. De huidige functionaliteit van de iOS-bedrijfsportal-app blijft behouden.
+
+We bieden een voorlopige versie van de bijgewerkte bedrijfsportal-app voor iOS via het Apple TestFlight-programma. U kunt deze versie gebruiken en uw feedback geven. Meld u aan bij https://aka.ms/intune_ios_cp_testflight voor toegang tot TestFlight.
 
 ### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Beleid voor voorwaardelijke toegang voor Intune is alleen beschikbaar vanuit Azure Portal <!-- 1737088 -->
 We zijn aan het vereenvoudigen waar u voorwaardelijke toegang kunt configureren en beheren. Op dit moment kunt u voorwaardelijke toegang beheren vanaf de blade Intune-app-beveiliging (MAM) en via de klassieke Azure AD-ervaring in [Windows Azure Portal](https://manage.windowsazure.com). Vanaf januari kunt u uw beleid alleen configureren en beheren in [Azure Portal](https://portal.azure.com) via **Azure Active Directory** > **Voorwaardelijke toegang**. Voor uw gemak hebt u ook toegang tot deze blade vanuit Intune in Azure Portal via **Intune** > **Voorwaardelijke toegang**.

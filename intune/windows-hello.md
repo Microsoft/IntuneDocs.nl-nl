@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: 
+ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 64073cb53478b1bf2373426426e0a5d414ca40c4
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Windows Hello voor Bedrijven gebruiken
 
@@ -50,9 +50,9 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Een beleid voor Windows Hello voor Bedrijven maken
 
-1.  Kies in Azure Portal **Meer services** > **Bewaking en beheer** > **Intune**.
+1.  Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2.  Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Beheren** > **Windows Hello voor Bedrijven**.
+2.  Kies **Endpoint Protection** op de blade Intune en kies vervolgens **Beheren** > **Windows Hello voor Bedrijven**.
 
 3.  Kies op de blade die wordt geopend de **standaard**instellingen.
 
@@ -76,7 +76,7 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
  - **Kleine letters voor pincode vereisen**/**Hoofdletters voor pincode vereisen**/**Speciale tekens voor pincode vereisen**. U kunt zorgen voor sterkere pincodes door het gebruik van kleine letters, hoofdletters en speciale tekens voor de pincode af te dwingen. U kunt kiezen uit:
 
      - **Toegestaan**. Gebruikers kunnen het tekentype gebruiken in hun pincode, maar dit is niet verplicht.
-    
+
      - **Vereist**. Gebruikers moeten ten minste een van de tekentypen in hun pincode opnemen. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
      - **Niet toegestaan** (standaardinstelling). Gebruikers mogen deze tekentypen niet in hun pincode gebruiken. (Dit is ook het gedrag als de instelling niet is geconfigureerd.)<br>Tot de speciale tekens behoren: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**

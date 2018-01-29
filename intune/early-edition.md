@@ -5,7 +5,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac9cb0ad7d1b5e2c29e80f16c172f41c08d3a15d
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 12f4a09fe10ec792abe8183369a21f53c23f5d1a
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2018"></a>De vroege editie voor Microsoft Intune - januari 2018
 
@@ -33,7 +33,7 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices 
+## Notices
 -->
 
 
@@ -41,7 +41,7 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 
 ### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10---676546---"></a>Eenvoudigere oplossing van problemen met naleving voor de bedrijfsportal-app voor Windows 10 <!--676546 -->
 
-Eindgebruikers met Windows-apparaten kunnen tikken op de reden van niet-naleving in de bedrijfsportal-app. Indien mogelijk worden ze hiermee rechtstreeks naar de juiste locatie geleid in de instellingen-app om het probleem te verhelpen. 
+Eindgebruikers met Windows-apparaten kunnen tikken op de reden van niet-naleving in de bedrijfsportal-app. Indien mogelijk worden ze hiermee rechtstreeks naar de juiste locatie geleid in de instellingen-app om het probleem te verhelpen.
 
 ### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625---"></a>Nieuwe optie voor gebruikersverificatie voor bulkinschrijving met Apple <!-- 747625 -->
 Intune biedt voor de volgende registratiemethoden de optie om apparaten te verifiëren met behulp van de bedrijfsportal-app:
@@ -59,16 +59,16 @@ Intune ondersteunt de registratie van apparaten uit maximaal 100 verschillende A
 
 Na de migratie werken de bèta Graph API's en gepubliceerde scripts voor het beheren van Apple DEP of ASM over Graph niet meer. Nieuwe bèta Graph API's zijn in ontwikkeling en zullen na de migratie worden uitgebracht.
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>Apparaatcategorieën selecteren met behulp van de instellingen voor Toegang tot werk of school <!-- 1058963 eeready --> 
+### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>Apparaatcategorieën selecteren met behulp van de instellingen voor Toegang tot werk of school <!-- 1058963 eeready -->
 Als u [apparaatgroeptoewijzing](https://docs.microsoft.com/en-us/intune/device-group-mapping) hebt ingeschakeld, wordt gebruikers van Windows 10 gevraagd een apparaatcategorie te selecteren na registratie via de knop **Verbinding maken** in **Instellingen**  >  **Accounts** > **Toegang tot werk of school** of tijdens de standaardprocedure.
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Nalevingsbeleid afstemmen op apparaten in apparaatgroepen <!--1307012 -->
 
-U kunt nalevingsbeleid richten op gebruikers in gebruikersgroepen. U kunt nalevingsbeleid richten op apparaten in apparaatgroepen. 
+U kunt nalevingsbeleid richten op gebruikers in gebruikersgroepen. U kunt nalevingsbeleid richten op apparaten in apparaatgroepen.
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>App-toewijzing opnemen en uitsluiten op basis van groepen <!-- 1406920 -->
 
-Tijdens toewijzing van een app en na het selecteren van een toewijzingstype, kunt u selecteren welke groepen u wilt opnemen en welke u wilt uitsluiten. U kunt ook vooraf gemaakte groepen (Alle gebruikers, Alle apparaten en Alle gebruikers + apparaten) gebruiken als opgenomen groepen.
+Tijdens toewijzing van een app en na het selecteren van een toewijzingstype, kunt u selecteren welke groepen u wilt opnemen en welke u wilt uitsluiten.
 
 ### <a name="remote-erase-command-support----1438084---"></a>Ondersteuning voor externe opdracht 'Wissen' <!-- 1438084 -->
 
@@ -93,7 +93,7 @@ Intune komt met een uitbreiding van de Windows Information Protection (WIP) Lear
 
 Wanneer er een e-mailbericht wordt verzonden om een niet-compatibel apparaat te melden, worden daarin gegevens over het niet-compatibele apparaat opgenomen. Het volgende artikel wordt bijgewerkt om dat aan te geven: [Acties voor niet-naleving automatiseren](#actions-for-noncompliance).
 
-### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Beleid voor voorwaardelijke toegang voor Intune is alleen beschikbaar vanuit Azure Portal <!-- 1737088 1634311 --> 
+### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Beleid voor voorwaardelijke toegang voor Intune is alleen beschikbaar vanuit Azure Portal <!-- 1737088 1634311 -->
 We gaan het configureren en beheren van voorwaardelijke toegang voor u vereenvoudigen. U kunt uw beleid configureren en beheren in [Azure Portal](https://portal.azure.com) via **Azure Active Directory** > **Voorwaardelijke toegang**. Voor uw gemak hebt u ook toegang tot deze blade vanuit Intune in Azure Portal via **Intune** > **Voorwaardelijke toegang**.
 
 ###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>Waarschuwingen voor vervallen tokens en tokens die binnenkort vervallen <!-- 1639263 -->
@@ -105,8 +105,11 @@ Met de oplossingen voor draadloos mobiel afdrukken van PrinterOn kunnen gebruike
 ### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>De bedrijfsportal-app voor Android for Work goedkeuren <!--1797090 -->
 Als uw organisatie Android for Work gebruikt, moet u de bedrijfsportal-app voor Android handmatig goedkeuren zodat deze automatische updates vanuit de beheerde Google Play Store blijft ontvangen.
 
+### <a name="faceid-on-ios-devices----1807377---"></a>Face ID op iOS-apparaten <!-- 1807377 -->
+Beveiligingsbeleid voor apps in Intune ondersteunt nu een instelling voor Face ID op iOS-apparaten. Deze instelling wordt gebruikt voor apparaten die ondersteuning bieden voor Face ID (momenteel alleen de iPhone X). Deze instelling staat los van de besturingselementen voor Touch ID die momenteel worden ondersteund. Organisaties kunnen kiezen om Face ID te vertrouwen als een geldige pincodeprompt als alternatief voor de besturingselementen voor Touch ID.
+
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>Microsoft Graph API voor Intune - algemene beschikbaarheid <!-- 1833289 -->
-Intune API's in Microsoft Graph bieden programmatisch toegang tot gegevens en methoden voor het automatiseren van beheertaken voor de Intune-service.  Met de **Algemene beschikbaarheid** van deze API's kunnen klanten, partners en ontwikkelaars de API's gebruiken voor integratie met interne of commerciële oplossingen die betrekking hebben op of de ondersteuning nodig hebben van Intune of andere Microsoft-services die beschikbaar zijn via Microsoft Graph. 
+Intune API's in Microsoft Graph bieden programmatisch toegang tot gegevens en methoden voor het automatiseren van beheertaken voor de Intune-service.  Met de **Algemene beschikbaarheid** van deze API's kunnen klanten, partners en ontwikkelaars de API's gebruiken voor integratie met interne of commerciële oplossingen die betrekking hebben op of de ondersteuning nodig hebben van Intune of andere Microsoft-services die beschikbaar zijn via Microsoft Graph.
 
 <!-- the following are present prior to 1801 -->
 
@@ -118,13 +121,6 @@ Voor een bepaald apparaat met een of meer iOS-apps uit het volume-aankoopprogram
 
 ### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Licenties intrekken voor een token van het iOS-volume-aanschafprogramma<!-- 820870 -->
 U kunt de licentie van alle iOS-apps uit het volume-aanschafprogramma (VPP) voor een bepaalde VPP-token intrekken.
-
-### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Rapportage over inchecken van NAC-apparaten (netwerktoegangsbeheer) <!-- 1232250 -->
-Vóór deze wijziging konden IT-beheerders niet vanaf de Intune-kant bepalen of een via NAC beheerd apparaat communiceerde met hun NAC-oplossing. Wanneer een via NAC beheerd apparaat niet communiceert met de NAC-oplossing, wordt het apparaat door de NAC-oplossing beschouwd als niet-compatibel en daarom geblokkeerd door de NAC-oplossing zelf. Vervolgens wordt het apparaat geblokkeerd door beleid voor voorwaardelijke toegang dat is gebaseerd op de nalevingsstatus van het apparaat.
-
-Met deze wijziging kunnen IT-beheerders zien welke via NAC beheerde apparaten succesvol hebben gecommuniceerd met hun NAC-oplossing. Deze nieuwe mogelijkheid bestaat uit twee nieuwe controlefuncties in de werkbelasting voor apparaatnaleving in Intune, waarvan de statistieken hieronder worden weergegeven:
-- **Gemiddelde NAC-aanroepen in het afgelopen uur**
-- **Laatste binnenkomende NAC-aanvraag (datum/tijd)**
 
 ### <a name="new-ios-device-action------1244701---"></a>Nieuwe actie voor iOS-apparaten <!-- 1244701 -->
 U kunt door iOS 10.3 gecontroleerde apparaten afsluiten. Deze actie sluit het apparaat direct af zonder waarschuwing voor de eindgebruiker. U vindt de actie **Afsluiten (alleen gecontroleerd)** in de apparaateigenschappen wanneer u een apparaat selecteert in de werkbelasting **Apparaat**.
@@ -185,6 +181,14 @@ De implementatie van deze wijzigingen gaat van start bij de update van november,
 ### <a name="configure-an-ios-app-pin----1586774---"></a>Een pincode voor een iOS-app configureren <!-- 1586774 -->
 U kunt binnenkort een pincode vereisen voor de betreffende iOS-apps. U kunt de vereisten voor de pincode en de vervaldatum in dagen via Azure Portal configureren. Indien vereist,wordt een gebruiker verplicht om een nieuwe pincode in te stellen en te gebruiken voordat deze toegang krijgt tot een iOS-app. Alleen iOS-apps met een app-beveiliging die is ingeschakeld met de Intune App SDK ondersteunen deze functie.
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!--1412866-->
+
+We zullen een grote update uitbrengen van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update heeft een volledig nieuw visueel ontwerp, waaronder een gemoderniseerde uitstraling met verbeterde bruikbaarheid en toegankelijkheid. De huidige functionaliteit van de iOS-bedrijfsportal-app blijft behouden.
+
+We bieden een voorlopige versie van de bijgewerkte bedrijfsportal-app voor iOS via het Apple TestFlight-programma. U kunt deze versie gebruiken en uw feedback geven. Meld u aan bij https://aka.ms/intune_ios_cp_testflight voor toegang tot TestFlight. 
+
+![teaserafbeeldingen voor de nieuwe iOS-bedrijfsportal-app](./media/ios-cp-app-redesign-1801-teaser.png)
+
 
 <!-- the following are present prior to 1711 -->
 
@@ -204,10 +208,6 @@ U kunt een editie-upgradebeleid voor Windows 10 maken dat Windows 10-apparaten u
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### <a name="android-for-work-support-for-lookout----1087312---"></a>Android for Work-ondersteuning voor Lookout <!-- 1087312 -->   
-De Intune-connector met Lookout biedt ondersteuning voor Android for Work-apparaten wanneer u de Lookout voor Work-app gebruikt. U kunt de Lookout-app binnen of buiten de container implementeren.
 
 ### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Hulpmiddelen voor Intune-app-beveiliging en Citrix MDX <!-- 709185 -->
 U kunt apparaten en apps beheren met een combinatie van Citrix XenMobile MDX en Microsoft Intune. Hierdoor kunt u apps beheren met het Intune-beveiligingsbeleid voor apps met behulp van de mVPN-technologie van Citrix.

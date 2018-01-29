@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid
 
@@ -41,7 +41,7 @@ Op apparaten die zijn **ingeschreven voor beheer in Intune** krijgt de eindgebru
 
 App-beveiligingsbeleid wordt alleen toegepast wanneer de app wordt gebruikt in een werkcontext, dus de app werkt mogelijk anders afhankelijk van de context waarin u die gebruikt (werk of persoonlijk).  
 
-Voor apps die meerdere identiteiten ondersteunen past Intune het app-beveiligingsbeleid alleen toe wanneer de eindgebruiker de app gebruikt in de werkcontext.  De gebruiker moet bijvoorbeeld een pincode invoeren bij het openen van bedrijfsgegevens.  Bij de **Outlook-app** wordt de gebruiker gevraagd een pincode in te voeren bij het starten van de app. Bij de **OneDrive-app** gebeurt dit wanneer de eindgebruiker het werkaccount invoert.  Bij **Microsoft Word**, **PowerPoint* en **Excel** gebeurt dit wanneer de eindgebruiker documenten opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
+Voor apps die meerdere identiteiten ondersteunen past Intune het app-beveiligingsbeleid alleen toe wanneer de eindgebruiker de app gebruikt in de werkcontext.  De gebruiker moet bijvoorbeeld een pincode invoeren bij het openen van bedrijfsgegevens.  Bij de **Outlook-app** wordt de gebruiker gevraagd een pincode in te voeren bij het starten van de app. Bij de **OneDrive-app** gebeurt dit wanneer de eindgebruiker het werkaccount invoert.  Bij **Microsoft Word**, **PowerPoint** en **Excel** gebeurt dit wanneer de eindgebruiker documenten opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
 
 Intune biedt alleen ondersteuning voor het implementeren van app-beveiligingsbeleid naar slechts één gebruikersaccount per apparaat.
@@ -65,5 +65,5 @@ Als u een iOS-apparaat gebruikt en probeert op hetzelfde apparaat een tweede wer
 
 ## <a name="next-steps"></a>Volgende stappen
 [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-android.md)
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [App-beveiligingsbeleid maken en implementeren met Microsoft Intune](app-protection-policies.md)

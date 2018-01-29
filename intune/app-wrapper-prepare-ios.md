@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -53,7 +53,6 @@ Voordat u de App Wrapping Tool uitvoert, moet u aan enkele algemene vereisten vo
   * Voor de invoer-app moeten rechten zijn ingesteld voordat deze wordt verwerkt door de Intune App Wrapping Tool. [Rechten](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) zorgen ervoor dat de app naast de standaardmachtigingen en -mogelijkheden ook over andere machtigingen en -mogelijkheden beschikt. Zie [App-rechten instellen](#setting-app-entitlements) voor instructies.
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Apple Developer-vereisten voor de App Wrapping Tool
-
 
 Als u verpakte apps uitsluitend naar gebruikers van uw organisatie wilt distribueren, moet u beschikken over een account voor het [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) en over verschillende entiteiten voor app-ondertekening die zijn gekoppeld aan uw Apple Developer-account.
 
@@ -204,8 +203,8 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Hiermee wordt gedetailleerde informatie weergegeven over de beschikbare opdrachtregeleigenschappen voor de App Wrapping Tool.|
 |**-v**|(Optioneel) Hiermee worden uitgebreide berichten naar de console uitgevoerd. Het wordt aanbevolen deze eigenschap te gebruiken voor opsporing van eventuele fouten.|
-|**-e**| (Optioneel) Gebruik deze eigenschap om ervoor te zorgen dat ontbrekende rechten worden verwijderd wanneer de app door de App Wrapping Tool wordt verwerkt. Zie App-rechten instellen voor meer informatie.|
-|**-xe**| (Optioneel) Hiermee wordt informatie afgedrukt over de iOS-extensies in de app en de rechten die nodig zijn voor het gebruik ervan. Zie App-rechten instellen voor meer informatie. |
+|**-e**| (Optioneel) Gebruik deze eigenschap om ervoor te zorgen dat ontbrekende rechten worden verwijderd wanneer de app door de App Wrapping Tool wordt verwerkt. Zie [App-rechten instellen](#setting-app-entitlements) voor meer informatie.|
+|**-xe**| (Optioneel) Hiermee wordt informatie afgedrukt over de iOS-extensies in de app en de rechten die nodig zijn voor het gebruik ervan. Zie [App-rechten instellen](#setting-app-entitlements) voor meer informatie. |
 |**-x**| (Optioneel) `<An array of paths to extension provisioning profiles>`. Gebruik deze eigenschap als uw app extensie-inrichtingsprofielen nodig heeft.|
 |**-f**|(Optioneel) `<Path to a plist file specifying arguments.>` Gebruik deze eigenschap vóór het [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-bestand als u ervoor kiest om de PLIST-sjabloon te gebruiken om de rest van de IntuneMAMPackager-eigenschappen op te geven, zoals -i, -o en -p. Zie Een PLIST-bestand gebruiken voor het invoeren van argumenten. |
 |**-b**|(Optioneel) Gebruik -b zonder argument als u wilt dat de verpakte uitvoer-app dezelfde bundelversie krijgt als de invoer-app (niet aanbevolen). <br/><br/> Gebruik `-b <custom bundle version>` als u wilt dat de verpakte app een aangepaste CFBundleVersion krijgt. Als u ervoor kiest om een aangepaste CFBundleVersion op te geven, wordt u aangeraden om de CFBundleVersion van de oorspronkelijke app te verhogen door de minst significante component te verhogen, bijvoorbeeld 1.0.0 -> 1.0.1. |
@@ -244,6 +243,16 @@ De verpakte app wordt opgeslagen in de uitvoermap die u eerder hebt opgegeven. U
 > Wanneer u een verpakte app uploadt, kunt u proberen een oudere versie van de app bij te werken als er al een oudere (ingepakte of oorspronkelijke) versie was geïmplementeerd in Intune. Als er een fout optreedt, uploadt u de app als een nieuwe app en verwijdert u de oudere versie.
 
 U kunt de app nu implementeren naar uw gebruikersgroepen en app-beveiligingsbeleid instellen voor de app. De app wordt uitgevoerd op het apparaat met het app-beperkingsbeleid dat u hebt opgegeven.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Hoe vaak moet ik mijn iOS-toepassing opnieuw verpakken met de Intune App Wrapping Tool?
+De belangrijkste scenario's waarin u uw toepassingen opnieuw moet verpakken, zijn:
+* Er is een nieuwe versie uitgebracht van de toepassing. De vorige versie van de app is verpakt en geüpload naar de Intune-console.
+* Er is een nieuwe versie uitgebracht van de Intune App Wrapping Tool voor iOS, met oplossingen voor belangrijke problemen of nieuwe beveiligingsbeleidskenmerken specifiek voor de Intune-toepassing. Dit gebeurt na 6-8 weken via de GitHub-opslagplaats van de [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+
+Hoewel het in iOS mogelijk is om toepassingen te verpakken met een ander certificaat-/inrichtingsprofiel dan het profiel dat is gebruikt om de app te registreren, mislukt het verpakken als de rechten die zijn opgegeven in de app niet in het nieuwe inrichtingsprofiel zijn opgenomen. Als u met behulp van de -e-opdrachtregeloptie, waarmee ontbrekende rechten van de app worden verwijderd, wilt afdwingen dat het verpakken in dit scenario niet mislukt, kan functionaliteit in de app verloren gaan.
+
+Enkele best practices voor opnieuw verpakken:
+* Ervoor zorgen dat een inrichtingsprofiel dezelfde vereiste rechten bevat als een eerder inrichtingsprofiel. 
 
 ## <a name="error-messages-and-log-files"></a>Foutberichten en logboekbestanden
 Gebruik de volgende informatie voor het oplossen van problemen die zich voordoen met de App Wrapping Tool.

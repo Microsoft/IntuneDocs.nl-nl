@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: 632a5b2a5f6f5188ef034bdcff927af6a7fe1a59
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -58,7 +58,7 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
    ![Schermopname met een koppeling om de Android for Work-binding te configureren](./media/android-work-bind.png)
 
    b. **Aanmelden bij Google**<br>
-   Meld u aan op de aanmeldingspagina van Google met het Google-account dat wordt gekoppeld aan alle Android for Work-beheertaken voor deze tenant. Dit is het Google-account dat de IT-beheerders van uw bedrijf gebruiken voor het beheren en publiceren van apps in de Play for Work-console.
+   Meld u aan op de aanmeldingspagina van Google met het Google-account dat wordt gekoppeld aan alle Android for Work-beheertaken voor deze tenant. Dit is het Google-account dat de IT-beheerders van uw bedrijf gebruiken voor het beheren en publiceren van apps in de Play for Work-console. U kunt een bestaand Google-account gebruiken of een nieuw account maken.  Het account dat u kiest moet niet worden gekoppeld aan een G-Suite-domein.
 
    c. **Organisatiegegevens opgeven**<br>
    Geef bij **Organization name** (Organisatienaam) de naam van uw bedrijf op. Bij **Enterprise mobility management (EMM) provider** moet **Microsoft Intune** worden weergegeven. Ga akkoord met de overeenkomst voor Android for Work en kies **Confirm** (Bevestigen). Uw aanvraag wordt verwerkt.

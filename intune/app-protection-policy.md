@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/01/2017
+ms.date: 01/19/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 668264fc0ed4d9bebf84d97aa66a886d93fbb4eb
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: b91a9e57eb368daae77958eaf4e554628361b2c4
+ms.sourcegitcommit: 7d80886ed9a12597fead9326568b4e759b29a340
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -45,7 +45,7 @@ Het beveiligingsbeleid voor apps kan worden geconfigureerd voor apps die worden 
 -   **Niet zijn ingeschreven bij een MDM-oplossing:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
 > [!IMPORTANT]
-> U kunt MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. Het beveiligingsbeleid voor apps wordt niet ondersteund voor apps die verbinding maken met on-premises Exchange-, Skype voor Bedrijven- of SharePoint-services.
+> U kunt MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. Beveiligingsbeleid voor apps wordt niet ondersteund voor apps die verbinding maken met on-premises Exchange- of SharePoint-services.
 
 **De belangrijke voordelen van het gebruik van het beveiligingsbeleid voor apps zijn**
 

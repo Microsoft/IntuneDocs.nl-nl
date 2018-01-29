@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 1/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff950ce35c491ca576dc9cc77ab561e2cfef0381
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 0bc5ad6e0467fe8a8c98c1ad2d71b967c18b8233
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Problemen met apparaatprofielen in Microsoft Intune oplossen
 
@@ -45,40 +45,42 @@ Er zijn enkele aanvullende aanbevolen procedures die u kunt uitvoeren:
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Hoe lang duurt het voor mobiele apparaten een beleid of apps hebben ontvangen nadat deze zijn toegewezen?
 Wanneer er een beleid of een app wordt toegewezen, probeert Intune het apparaat onmiddellijk te melden dat het moet inchecken bij de Intune-service. Dit vindt meestal binnen vijf minuten plaats.
 
-Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, doet Intune nog drie pogingen.  Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen. In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
+Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, doet Intune nog drie pogingen. Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen. In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
 
-- iOS en macOS: om de 6 uur.
-- Android: om de 8 uur.
-- Windows Phone: om de 8 uur.
-- Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de 8 uur.
+- iOS en macOS: om de zes uur.
+- Android: om de acht uur.
+- Windows Phone: om de acht uur.
+- Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de acht uur.
 
 Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
 
-- iOS en macOS: om de 15 minuten gedurende 6 uur en daarna om de 6 uur.
-- Android: om de 3 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
-- Windows Phone: om de 5 minuten gedurende 15 minuten, daarna om de 15 minuten gedurende 2 uur en vervolgens om de 8 uur.
-- Windows-computers die als apparaten zijn ingeschreven: om de 3 minuten gedurende 30 minuten en vervolgens om de 8 uur.
+- iOS en macOS: om de 15 minuten gedurende zes uur en daarna om de zes uur.
+- Android: om de drie minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur.
+- Windows Phone: om de vijf minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur.
+- Windows-computers die als apparaten zijn ingeschreven: om de drie minuten gedurende 30 minuten en vervolgens om de acht uur.
 
 Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
+Voor apparaten zonder gebruikersaffiniteit kan de synchronisatiefrequentie die direct volgt op de inschrijving variëren van een aantal uur tot een of meer dagen. Intune verzendt aanvragen met verschillende intervallen om een apparaat in te checken bij de service. Het hangt er nog altijd van af of het apparaat daadwerkelijk wordt ingecheckt. Afhankelijk van het type apparaatinschrijving en de beleidsregels en profielen die zijn toegewezen aan een apparaat, kan niet worden voorspeld hoe lang het duurt voordat het inchecken van een apparaat is voltooid na de initiële inschrijving. Echter, wanneer het apparaat is ingeschreven en alle initiële beleidsregels zijn toegepast, moet het apparaat om de zes uur controleren op nieuwe beleidsregels.
+
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
-Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle.  Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals wissen, vergrendelen, wachtwoord opnieuw instellen, app toewijzen, profiel toewijzen (Wi-Fi, VPN, e-mail enzovoort) of beleidsregels toewijzen, probeert Intune het apparaat onmiddellijk te melden dat het moet inchecken bij de Intune-service om deze updates te ontvangen.
+Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle. Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals wissen, vergrendelen, wachtwoord opnieuw instellen, app toewijzen, profiel toewijzen (Wi-Fi, VPN, e-mail enzovoort) of beleidsregels toewijzen, probeert Intune het apparaat onmiddellijk te melden dat het moet inchecken bij de Intune-service om deze updates te ontvangen.
 
 Andere wijzigingen zoals het wijzigen van de contactgegevens in de bedrijfsportal zorgen niet voor een onmiddellijke melding aan apparaten.
 
-## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Als er meerdere beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Als er meerdere beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
 Wanneer er twee of meer beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, vindt de beoordeling van welke instelling moet worden toegepast plaats op het niveau van de individuele instelling:
 
 -   Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen.
 
 -   De strengste nalevingsbeleidsinstelling wordt toegepast als dit beleid wordt vergeleken met dezelfde instelling in een ander nalevingsbeleid.
 
--   Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in de Azure-portal. U moet dergelijke conflicten handmatig oplossen.
+-   Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in Azure Portal. U moet dergelijke conflicten handmatig oplossen.
 
-## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Wat gebeurt er wanneer beleidsregels voor app-beveiliging met elkaar conflicteren? Welke regel wordt toegepast op de app?
-Conflictwaarden zijn de meest beperkende instellingen die beschikbaar zijn in app-beveiligingsbeleid, behalve cijferinvoervelden (zoals aantal pincodepogingen voorafgaand aan opnieuw instellen).  De cijferinvoervelden worden op hetzelfde ingesteld als de waarden, alsof u een MAM-beleid hebt gemaakt in de console met behulp van de aanbevolen instellingenoptie.
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Wat gebeurt er wanneer beleidsregels voor app-beveiliging met elkaar conflicteren? Welke regel wordt toegepast op de app?
+Conflictwaarden zijn de meest beperkende instellingen die beschikbaar zijn in app-beveiligingsbeleid, behalve cijferinvoervelden (zoals aantal pincodepogingen voorafgaand aan opnieuw instellen). De cijferinvoervelden worden op hetzelfde ingesteld als de waarden, alsof u een MAM-beleid hebt gemaakt in de console met behulp van de aanbevolen instellingenoptie.
 
-Er treden conflicten op wanneer twee profielinstellingen hetzelfde zijn.  Bijvoorbeeld als u twee MAM-beleidsregels hebt geconfigureerd die identiek zijn met uitzondering van de instelling voor kopiëren en plakken.  In dit scenario wordt de instelling voor kopiëren en plakken ingesteld op de meest beperkende waarde, maar de overige instellingen worden toegepast zoals die zijn geconfigureerd.
+Er treden conflicten op wanneer twee profielinstellingen hetzelfde zijn. Bijvoorbeeld als u twee MAM-beleidsregels hebt geconfigureerd die identiek zijn met uitzondering van de instelling voor kopiëren en plakken. In dit scenario wordt de instelling voor kopiëren en plakken ingesteld op de meest beperkende waarde, maar de overige instellingen worden toegepast zoals die zijn geconfigureerd.
 
 Als er een profiel is toegewezen aan de app en van kracht is, en er wordt vervolgens een tweede profiel toegewezen, heeft het eerste profiel prioriteit en blijft dit toegepast, terwijl het tweede als conflicterend wordt beschouwd. Indien beide op hetzelfde moment worden toegepast, wanneer er dus geen voorafgaand profiel is, worden ze allebei als conflicterend beschouwd. Eventueel conflicterende instellingen worden ingesteld op de meest beperkende waarden.
 
@@ -131,8 +133,8 @@ Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraa
 Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld een **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende profiel is al toegepast op het apparaat.
 
 Afhankelijk van het apparaatplatform moet u mogelijk het beveiligingsbeleid opnieuw instellen als u de beveiliging van het profiel naar beneden wilt bijstellen.
-Veeg bijvoorbeeld in Windows op het bureaublad vanaf rechts over het scherm om de balk **Charms** te openen en kies **Instellingen** &gt; **Configuratiescherm**.  Selecteer de applet **Gebruikersaccounts** .
-In het navigatiemenu aan de linkerkant vindt u onderaan een koppeling **Beveiligingsbeleid opnieuw instellen** . Kies deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
+Veeg bijvoorbeeld in Windows op het bureaublad vanaf rechts over het scherm om de balk **Charms** te openen en kies **Instellingen** &gt; **Configuratiescherm**. Selecteer de applet **Gebruikersaccounts** .
+In het navigatiemenu aan de linkerkant vindt u onderaan een koppeling **Beveiligingsbeleid opnieuw instellen**. Kies deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
 Andere MDM-apparaten, zoals Android, Windows Phone 8.1 en hoger of iOS moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden geregistreerd voordat u een minder beperkend profiel kunt toepassen.
 
 
