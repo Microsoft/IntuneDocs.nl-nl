@@ -4,21 +4,22 @@ description: Lees hoe u SEP Mobile op uw iOS-apparaat installeert.
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b66871ce4fa968e61152ffc99741a78a454f6579
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 6552a9d8033320e4713b0faa50c51e2b95fbb9b7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Symantec Endpoint Protection Mobile op uw iOS-apparaat installeren
 
@@ -44,5 +45,5 @@ Als SEP Mobile een beveiligingsrisico op uw apparaat vindt, worden er instructie
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dat het geval is, installeert u SEP Mobile [handmatig vanuit de App Store](https://itunes.apple.com/app/sep-mobile/id695620821).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 

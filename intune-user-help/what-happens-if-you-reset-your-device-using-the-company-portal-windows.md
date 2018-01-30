@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4034e3848f49b13fc675f44c44ca1e80cf1e3568
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 237771577c63f652a8de1f783fc0406dc7f70bf1
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
@@ -32,4 +33,4 @@ Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-erase-your-device-cp
 |Uw apparaat heeft alleen toegang tot bedrijfse-mail|**Windows Phone 8.1**<br />Het apparaat wordt niet meer in de bedrijfsportal weergegeven en uw account voor zakelijke e-mail en niet-opgeslagen e-mailberichten worden verwijderd.<br /><br />**Windows 7 of Windows Vista**<br />U kunt een computer met Windows 7 of een eerdere versie, die alleen voor e-mail wordt gebruikt, niet opnieuw instellen.<br /><br />**Windows 8.1 en Windows 8**<br />Het apparaat wordt niet meer in de bedrijfsportal weergegeven en uw account voor zakelijke e-mail en niet-opgeslagen e-mailberichten worden verwijderd.|
 |Pc's en laptops|**Windows 8.1 en Windows 8**<br />U kunt een computer met Windows 8 of Windows 8.1 uitsluitend opnieuw instellen als deze alleen voor e-mail wordt gebruikt.<br /><br />**Windows 7 of Windows Vista**<br />U kunt een computer met Windows 7 of een eerdere versie niet opnieuw instellen.|
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

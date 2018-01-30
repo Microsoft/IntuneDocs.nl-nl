@@ -4,23 +4,24 @@ description: Uitgebreide logboekregistratie gebruiken zodat het ondersteuningste
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 37272f31597b907f19834368747743c1f70d7d07
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Het ondersteuningsteam van het bedrijf helpen met het oplossen van problemen met het apparaat via uitgebreide logboekregistratie
 
@@ -28,4 +29,4 @@ Wanneer uw Android-apparaat is geregistreerd bij Intune, kunt u *uitgebreide log
 
 Als u uitgebreide logboekregistratie wilt in- of uitschakelen, meldt u zich aan bij de bedrijfsportal-app met de referenties voor uw werk- of schoolaccount, tikt u op **Instellingen** en tikt u op de aan/uit-knop naast de instelling **Uitgebreide logboekregistratie**.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

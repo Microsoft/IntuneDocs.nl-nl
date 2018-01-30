@@ -4,23 +4,24 @@ description: Lijst met koppelingen naar taken die gebruikers op hun Windows-appa
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c8ddc8902a6b9687e9b36cae7b1ff9b554f63841
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1d7a5ab2fc2b4be7e385e533016f9d07f4e16505
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-your-windows-device-with-intune"></a>Uw Windows-apparaat gebruiken met Intune
 
@@ -42,7 +43,7 @@ Er zijn nog enkele andere versies van Windows, zoals [Windows 10 Holographic](ht
 - [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)
 - [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Welke gegevens kan uw bedrijf zien wanneer u uw apparaat inschrijft?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-- [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
+- [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
 
