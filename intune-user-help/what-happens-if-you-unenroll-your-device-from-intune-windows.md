@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 710f91f72d9cf97acd0ac117b003eeb542449515
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ef3cd1a30a154ddaa4188e8422ca85392140d09f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Wat gebeurt er als u de registratie van uw Windows-apparaat bij Intune ongedaan maakt?
 
@@ -85,4 +86,4 @@ Wanneer u een Windows RT-apparaat verwijdert, gebeurt het volgende:
 
 -   Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

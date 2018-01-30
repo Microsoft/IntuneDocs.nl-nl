@@ -4,7 +4,7 @@ description: U kunt een bestand downloaden voor gebruik met Microsoft Power BI o
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b3c9b7d9df8bea32f6737b66ed22017bf5fc25f1
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 7542a2d4fa84c2c23d638400fa564823c02357d0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
 

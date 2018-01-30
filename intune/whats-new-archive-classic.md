@@ -4,7 +4,7 @@ description: Wat is er nieuw in Microsoft Intune-aankondigingen (archief)
 keywords: 
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4d83b8b83cba0dab1fc089309201aa591b3d26e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: af181ce63900257699e88343b2de2ac4a28685de
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Wat is er nieuw in de klassieke Intune-portal - vorige maanden
 
@@ -364,5 +364,5 @@ __Een Symantec-handtekeningcertificaat vereist geen ondertekend Windows Phone 8-
 __Ondersteuning voor de Windows Phone 8-bedrijfsportal__ Ondersteuning voor de Windows Phone 8-bedrijfsportal wordt nu afgeschaft. Ondersteuning voor het Windows Phone 8- en Windows RT-platform is afgeschaft in oktober 2016. Ondersteuning voor de Windows 8-bedrijfsportal is ook in oktober 2016 afgeschaft.
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.

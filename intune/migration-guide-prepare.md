@@ -4,7 +4,7 @@ description: Evalueer uw bedrijfs- en technische vereisten voordat u migreert na
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 93c17ff0343c4475bbc665ff2418e1e7860894d5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>Fase 1: Intune voorbereiden op het beheer van mobiele apparaten (MDM)
 

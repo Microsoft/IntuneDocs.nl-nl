@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c1601bb7-5397-44af-a2e2-9c370f23976f
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e9331a4ea77aae289d647a801ce4ed9d1ecfcb7
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ad513ea177a723c3a70408d7bddcefa0bd7f99ff
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw macOS-apparaat bij Intune inschrijft?
 
@@ -62,4 +63,4 @@ Wanneer het apparaat is geregistreerd, kan het ondersteuningsteam van het bedrij
 
 -   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

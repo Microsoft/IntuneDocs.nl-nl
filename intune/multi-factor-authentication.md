@@ -5,7 +5,7 @@ description: Hoe u in Azure AD Multi-Factor Authentication vereist voor apparaat
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: dfadab1f412752d9857a2f6777481fa761cd1d4c
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: 27135f0b698f5a321bd14b70f0b346a91fc0ab1e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Meervoudige verificatie voor apparaatinschrijvingen in Intune
 

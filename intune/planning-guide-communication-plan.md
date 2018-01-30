@@ -4,7 +4,7 @@ description: Dit artikel helpt u bij ontwikkelen van een communicatieplan voor u
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d690dc82da56836e4bc338e77b9744f0ab690e87
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: b39e2a64dd4ebf525b1f2b6a9b260373686dcbd8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Een communicatieplan voor de implementatie ontwikkelen
 

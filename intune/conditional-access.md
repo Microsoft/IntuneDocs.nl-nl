@@ -5,7 +5,7 @@ description: "Meer informatie over het definiëren van de voorwaarden waaraan ge
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1cd12a105142d5e537da487e3bd9297ef83ddcb3
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="whats-conditional-access"></a>Wat is voorwaardelijke toegang?
 

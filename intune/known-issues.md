@@ -5,9 +5,9 @@ description: Meer informatie over bekende problemen in Intune"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
-ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
+ms.openlocfilehash: 255bd839bda8e8d85794a88fc76899bbd5870bc0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -55,8 +55,6 @@ iOS-apps die zijn gekocht via het volume-aankoopprogramma, worden alleen in de t
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Meerdere exemplaren van hetzelfde iOS-volume-aankoopprogramma worden geüpload
 Klik niet meerdere keren op de knop **Uploaden** voor hetzelfde VPP-token. Hierdoor worden namelijk dubbele VPP-tokens geüpload en worden apps meerdere keren voor hetzelfde VPP-token gesynchroniseerd.
 
-### <a name="assigning-office-365-to-macos-devices"></a>Office 365 toewijzen aan macOS-apparaten
-De functie voor het toewijzen van Office 365 aan macOS-apparaten met Microsoft Intune komt beschikbaar nadat de UI-update voltooid is.
 
 <!-- ## Groups -->
 

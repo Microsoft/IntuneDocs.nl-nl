@@ -5,7 +5,7 @@ description: Gebruik nalevingsbeleid voor het beveiligen van apparaten die door 
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
-ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
+ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 

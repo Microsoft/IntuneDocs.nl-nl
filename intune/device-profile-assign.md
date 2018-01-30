@@ -5,7 +5,7 @@ description: Zodra u een Intune-apparaatprofiel hebt gemaakt, gebruikt u dit ond
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ba1438fe9227e0c7933fda7e9a2b60c8d4a5dca4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>Microsoft Intune-apparaatprofielen toewijzen
 
 ## <a name="assign-a-device-profile"></a>Een apparaatprofiel toewijzen
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 1. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

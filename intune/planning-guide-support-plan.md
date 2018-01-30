@@ -4,7 +4,7 @@ description: Dit artikel helpt u bij het maken van een Intune-ondersteuningsplan
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9ff8643e854f96f464a5a393bfd780f07ea74164
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 46172f4b47a5ffeb623cdb068b7e1c6f6c7f1795
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="develop-a-support-plan"></a>Een ondersteuningsplan ontwikkelen
 

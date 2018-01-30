@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7b66a8ef0981f45d57125778fbf06ecdfe927724
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: da922290954141bbcd22374361eb28969db2e632
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
@@ -73,4 +74,4 @@ Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
 -   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

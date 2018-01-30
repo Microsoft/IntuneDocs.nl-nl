@@ -5,7 +5,7 @@ description: Meer informatie over het maken van nalevingsbeleid voor macOS-appar
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: d4623cbfe296ae370c3d88c3213fffbda255e474
+ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid maken voor macOS-apparaten in Intune
 

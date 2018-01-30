@@ -4,21 +4,22 @@ description: Informatie over het oplossen van een bedreiging die is gevonden doo
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b2a69e7-cc86-4f1b-81d9-35b8b23b937b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 568bc0c0627e78ce4dd73cdfe8f74afa7f544b46
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 778feb3efedf0cfe4e0c6e3f1618b0fd53e21129
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>U moet een bedreiging oplossen die door SandBlast Mobile Protect is gevonden
 
@@ -38,4 +39,4 @@ Als u een app hebt geïnstalleerd die door SandBlast Mobile Protect als een bedr
 
 Wanneer dit gebeurt, verwijdert u de app om direct weer toegang tot de e-mail en gegevens van uw bedrijf te krijgen. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](http://portal.manage.microsoft.com) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).

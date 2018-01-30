@@ -4,23 +4,24 @@ description: Ontdek hoe u zich kunt aanmelden bij de bedrijfsportal-app op meerd
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 622006bf6ac244ddcf5e11f765f4119e6822866f
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: c4ae7373627c914b89629464c53240c8b07a28df
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Hoe meld ik me aan bij de bedrijfsportal-app? <!--User Story 1132123-->
 
@@ -89,4 +90,4 @@ Als u geen wachtwoord hoeft op te geven om u aan te melden bij uw bedrijfsresour
 
   ![Nadat het verificatieproces is doorlopen, wordt u aangemeld via de bedrijfsportal-app. Dit proces wordt aangegeven met een voortgangsbalk.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

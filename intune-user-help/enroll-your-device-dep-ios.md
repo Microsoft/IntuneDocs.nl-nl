@@ -4,23 +4,24 @@ description: Informatie over hoe u een iOS-apparaat bij Intune kunt registreren 
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f4e7d87e-56d1-43e4-8e88-2f62cf0999e2
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0d469a52c10a3c6080a3e900d55d18d7798bb534
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 542a7e382b6f140af3f4cf605e503efd0b7a4c6e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registreer uw iOS-apparaat in Intune met het Device Enrollment Program
 
@@ -33,4 +34,4 @@ Het Device Enrollment Program wordt aangeboden door Apple aan bedrijven en organ
 5.  Ga akkoord met de **Algemene voorwaarden** en beslis of u diagnostische gegevens naar Apple wilt verzenden.
 6.  Nadat u uw registratie hebt voltooid, wordt u mogelijk gevraagd om meer acties te ondernemen. Dit kan bijvoorbeeld het invoeren van uw wachtwoord zijn voor toegang tot e-mail, een wachtwoordcode instellen of akkoord gaan met de installatie van toepassingen. Dit is allemaal op basis van wat ingesteld is door de Intune-beheerder van uw bedrijf.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

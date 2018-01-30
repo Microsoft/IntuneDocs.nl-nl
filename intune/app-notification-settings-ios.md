@@ -5,7 +5,7 @@ description: In dit onderwerp leest u over de instellingen die u kunt gebruiken 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b87ffad8ee005fd8a164ec2891d81e19fb005a8b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 91e4b6197c7606a70862ad5fb12b10b5e0f3ed81
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>App-meldingsinstellingen voor iOS-apparaten in Intune
 
@@ -47,7 +47,7 @@ Hiermee kunt u configureren hoe apps die op een apparaat zijn geïnstalleerd mel
 4. Kies **OK** totdat u terugkeert naar de blade **Profiel maken** en kies vervolgens **Maken**. 
 
 
-## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id's voor ingebouwde iOS-apps
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id’s voor ingebouwde iOS-apps
 
 Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier. 
 

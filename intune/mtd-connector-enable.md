@@ -5,7 +5,7 @@ description: Mobile Threat Defense-connector inschakelen in Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 50136397091bd3275fa1481e6a983dcf49d93f55
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Mobile Threat Defense inschakelen in Intune
 
@@ -56,7 +56,7 @@ U kunt bepalen welke wisselopties voor MTD overeenkomstig de wensen van uw organ
 - **iOS 8.0+-apparaten verbinden met [naam van MTD-partner] for Work MTD**: wanneer u deze optie inschakelt, kunnen door Android 4.1+-apparaten beveiligingsrisico's worden gerapporteerd aan Intune.
     - **Apparaat als niet-compatibel markeren als er geen gegevens worden ontvangen**: als door Intune geen gegevens worden ontvangen van de MTD-partner over een apparaat op dit platform, kunt u het apparaat als niet-compatibel beschouwen.
 <br></br>
-- **Niet-ondersteunde besturingssysteemversies blokkeren **: blokkeer het apparaat als hierop een besturingssysteem met een lagere versie wordt uitgevoerd dan de minimaal ondersteunde versie.
+- **Niet-ondersteunde besturingssysteemversies blokkeren** : blokkeer het apparaat als hierop een besturingssysteem met een lagere versie wordt uitgevoerd dan de minimaal ondersteunde versie.
 
 - **Aantal dagen totdat de partner als niet-reagerend wordt beschouwd**: aantal dagen van inactiviteit waarna de partner door Intune als niet-reagerend wordt beschouwd omdat de verbinding is verbroken. Intune negeert de compatibiliteitsstatus voor niet-reagerende MTD-partners.
 

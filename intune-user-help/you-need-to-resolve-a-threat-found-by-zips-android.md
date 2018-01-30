@@ -4,21 +4,22 @@ description: Meer informatie over het oplossen van bedreigingen die zijn gevonde
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9ffbb656-93cd-4e0b-96c0-c5038cd2cf31
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 95d6e4d52349e3e6527027fa8074cc92e54b0ca7
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4c4fdebb5d46849dd96585a0a71fddccf9b26c44
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>U moet een bedreiging oplossen die met Zimperium zIPS is gevonden
 
@@ -38,4 +39,4 @@ Als u een app hebt geïnstalleerd die door Zimperium zIPS als een bedreiging wor
 
 Wanneer dit gebeurt, verwijdert u de app om direct weer toegang tot de e-mail en gegevens van uw bedrijf te krijgen. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

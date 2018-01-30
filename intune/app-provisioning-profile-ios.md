@@ -5,7 +5,7 @@ description: Intune biedt u de hulpmiddelen om proactief een nieuw inrichtingspr
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 05/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b58fb0d9b69e875736b5d2ea884ae9d3453b481
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 96ae009abe8d8351052ede4efca779add01dc335
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor mobiele iOS-apps om te voorkomen dat uw apps verlopen
 
@@ -39,7 +39,7 @@ Nadat het certificaat is verlopen, moet u de app opnieuw ondertekenen met een ni
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Een inrichtingsprofiel voor mobiele iOS-apps maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 1.  Kies **Beheren** > **iOS-inrichtingsprofielen** in de workload **Mobiele apps**.
