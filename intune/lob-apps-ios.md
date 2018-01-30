@@ -73,7 +73,7 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]Opmerking: Om ervoor te zorgen dat de Intune-service een nieuw IPA-bestand op het apparaat kan implementeren, moet u de tekenreeks CFBundleVersion in het bestand Info.plist in uw IPA-pakket verhogen.
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] Opmerking: Om ervoor te zorgen dat de Intune-service een nieuw IPA-bestand op het apparaat kan implementeren, moet u de tekenreeks CFBundleVersion in het bestand Info.plist in uw IPA-pakket verhogen.
 
 ## <a name="next-steps"></a>Volgende stappen
 
