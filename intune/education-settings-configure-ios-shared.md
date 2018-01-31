@@ -5,7 +5,7 @@ description: Meer informatie over de Intune-instellingen die u kunt gebruiken vo
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
-ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
+ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Intune-onderwijsinstellingen configureren voor gedeelde iPads
 
@@ -62,7 +62,7 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
 3. Kies **Apparaten configureren** op de blade **Intune**.
 4. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
@@ -133,7 +133,7 @@ Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst
 
 ## <a name="step-3---create-a-device-category"></a>Stap 3: een apparaatcategorie maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
 3. Kies **Apparaatinschrijving** op de blade **Intune**.
 4. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving - Overzicht**.
@@ -145,7 +145,7 @@ De apparaatcategorie wordt gemaakt op de blade **Apparaatinschrijving – Appara
 
 ## <a name="step-4--create-a-dynamic-group"></a>Stap 4: een dynamische groep maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
 3. Kies **Groepen** op de blade **Intune**.
 4. Kies **Nieuwe groep** op de blade **Gebruikers en groepen – Alle groepen**.
@@ -163,7 +163,7 @@ De dynamische groep wordt gemaakt op de blade **Gebruikers en groepen – Alle g
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Stap 5: een apparaat toewijzen aan een categorie (Winkelwagens)
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
 3. Kies **Apparaten** op de blade **Intune**.
 4. Kies **Alle apparaten** op de blade **Apparaten**.
@@ -176,7 +176,7 @@ Het apparaat is nu aan de apparaatcategorie gekoppeld. Herhaal dit proces voor a
 
 ## <a name="step-6--create-classroom-profiles"></a>Stap 6: klaslokaalprofielen maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
 3. Kies **Apparaten configureren** op de blade **Intune**.
 4. Kies **Beheren** > **Winkelwagenprofielen** op de blade **Apparaatconfiguratie**.
@@ -192,11 +192,11 @@ Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Stap 7: het winkelwagenprofiel toewijzen aan klassen
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Overige** > **Intune**.
 3. Kies **Apparaten configureren** op de blade **Intune**.
 4. Kies **Beheren** > **Toewijzingsstatus** op de blade **Apparaatconfiguratie**.
-5. Selecteer op de blade **Toewijzingsstatus** het** **winkelwagenprofiel dat u hebt gemaakt.
+5. Selecteer op de blade **Toewijzingsstatus** het**winkelwagenprofiel** dat u hebt gemaakt.
 6. Kies **Toewijzingen** op de blade **Winkelwagenprofiel** en kies vervolgens **Groepen selecteren die moeten worden opgenomen** onder **Opnemen**.
 7. Selecteer de klassen waarop u het winkelwagenprofiel wilt toepassen (selecteer niet een groep) en kies vervolgens **Selecteren**. 
 8. Als u klaar bent, kiest u **Opslaan**.

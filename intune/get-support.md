@@ -5,7 +5,7 @@ description: Ondersteuning is online en telefonisch beschikbaar voor betaalde ab
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc45e57a3ef9e5c043073ee67a961832294eef48
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -34,7 +34,7 @@ Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnemen
 
 Als IT-beheerder kunt u vanuit Azure Portal een ondersteuningsticket maken door de volgende stappen uit te voeren:
 
-1. Meld u aan bij Azure Portal (https://portal.azure.com) met de referenties van een Intune-beheerder. Kies het pictogram de **?** in de rechterbovenhoek van de portal en selecteer vervolgens **Help + ondersteuning** om naar de gelijknamige[ ](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank)pagina te gaan.
+1. Meld u aan bij Azure Portal (https://portal.azure.com) met de referenties van een Intune-beheerder. Kies het pictogram de **?** in de rechterbovenhoek van de portal en selecteer vervolgens **Help + ondersteuning** om naar de gelijknamige[Azure Help + ondersteuning](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank)pagina te gaan.
 
     ![Schermopname van het Help-pictogram in Azure Portal met de koppeling Help + ondersteuning gemarkeerd](./media/azure-get-support.png)
 

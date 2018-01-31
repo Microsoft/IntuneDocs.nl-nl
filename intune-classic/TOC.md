@@ -1,4 +1,4 @@
-# Begrijpen en verkennen
+# Meer informatie en verkennen
 ## [Inleiding tot Intune](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [Intune voor onderwijs](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
 ## [Veelgestelde vragen over MAM en app-beveiliging](understand-explore/mam-faq.md)
@@ -28,7 +28,7 @@
 
 # Plannen en ontwerpen
 ## [Implementatie plannen, ontwerpen en uitvoeren](/intune/planning-guide?toc=/intune-classic/toc.json)
-### [Sectie 1: Doelen en uitdagingen voor de implementatie bepalen](/intune/planning-guide-deployment-goals?toc=/intune-classic/toc.json)
+### [Sectie 1: Doelen, doelstellingen en uitdagingen voor de implementatie bepalen](/intune/planning-guide-deployment-goals?toc=/intune-classic/toc.json)
 ### [Sectie 2: Use-casescenario's bepalen](/intune/planning-guide-scenarios?toc=/intune-classic/toc.json)
 ### [Sectie 3: Use-casescenariovereisten bepalen](/intune/planning-guide-requirements?toc=/intune-classic/toc.json)
 ### [Sectie 4: Een rollout-plan ontwikkelen](/intune/planning-guide-rollout-plan?toc=/intune-classic/toc.json)
@@ -142,7 +142,7 @@
 ## [Apps implementeren](deploy-use/deploy-apps.md)
 ### [Apps implementeren op apparaten en pc's](deploy-use/deploy-apps-in-microsoft-intune.md)
 ### [Apps implementeren op Android for Work-apparaten](deploy-use/android-for-work-apps.md)
-### [Apps bewaken](deploy-use/monitor-apps-in-microsoft-intune.md)
+### [Apps controleren](deploy-use/monitor-apps-in-microsoft-intune.md)
 ### [Apps beheren die zijn gekocht via het volume-aankoopprogramma](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 #### [Windows-apps beheren die zijn gekocht via het volume-aankoopprogramma](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
