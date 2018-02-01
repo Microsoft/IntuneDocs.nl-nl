@@ -126,6 +126,10 @@
           items:
             - name: Netwerkconfiguratie
               href: network-bandwidth-use.md
+            - name: Windows Holographic for Business
+              href: windows-holographic-for-business.md
+            - name: Windows Holographic upgraden
+              href: holographic-upgrade.md
         - name: Aanmelden bij Intune
           href: account-sign-up.md
         - name: Domeinen configureren
@@ -317,6 +321,8 @@
               href: device-restrictions-windows-10.md
             - name: Windows 10 Team
               href: device-restrictions-windows-10-teams.md
+            - name: Windows Holographic for Business
+              href: device-restrictions-windows-holographic.md
             - name: Android for Work
               href: device-restrictions-android-for-work.md
         - name: E-mailinstellingen configureren
@@ -592,6 +598,8 @@
               href: custom-settings-windows-phone-8-1.md
             - name: Windows 10
               href: custom-settings-windows-10.md
+            - name: Windows Holographic for Business
+              href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
         - name: Windows Line-of-Business-apps sideloaden

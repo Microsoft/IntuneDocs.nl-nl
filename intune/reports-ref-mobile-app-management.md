@@ -4,7 +4,7 @@ description: Naslagonderwerp voor de categorie Mobile App Management van entitei
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b73ba946bdf5e95231b3387885e353a170dbd17
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: d07d6e012a9c74c0ba68d59f98c05e5169789cf0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Naslag voor MAM-entiteiten (Mobile Application Management)
 

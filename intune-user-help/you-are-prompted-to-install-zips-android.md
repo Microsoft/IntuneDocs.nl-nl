@@ -4,21 +4,22 @@ description: Lees hoe u Zimperium zIPS op uw Android-apparaat installeert.
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: eb1884b2-d760-4a14-800b-378a33774a41
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 5d151953ef2ccb5ae46c603be6073695f134f308
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 51db23458ceb3fdb2bb98057255158e045a93170
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Zimperium zIPS op uw Android-apparaat installeren
 
@@ -56,4 +57,4 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Als dit het geval is, installeert u Zimperium zIPS [handmatig vanuit de Play Store](https://play.google.com/store/apps/details?id=com.zimperium.zips).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

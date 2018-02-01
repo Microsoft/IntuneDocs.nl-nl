@@ -5,7 +5,7 @@ description: Een aangepast Intune-profiel gebruiken om een Wi-Fi-profiel met een
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
 Voordat u een Wi-Fi-profiel met PSK implementeert, moet u controleren of het apparaat rechtstreeks verbinding met het eindpunt kan maken.
 
 Wanneer u sleutels draait (wachtwoorden of wachtwoordzinnen), kunt u downtime verwachten en moet u implementaties evenredig plannen. U kunt nieuwe Wi-Fi-profielen pushen buiten kantooruren. Waarschuw gebruikers dat de connectiviteit mogelijk hierdoor wordt beïnvloed.
- 
-Om een soepele migratie te garanderen en ervoor te zorgen dat beleidsupdates tijdig worden geleverd, moeten apparaten ten minste één open communicatiekanaal met Intune hebben. Hiervoor kunt u gebruikmaken van draadloze connectiviteit of Wi-Fi-toegang tot Intune-eindpunten instellen voor gebruikers.
 
-
+Zorg ervoor dat het apparaat van de eindgebruiker over een alternatieve internetverbinding beschikt, zodat de overgang soepel kan verlopen. De gebruiker moet bijvoorbeeld weer kunnen overschakelen naar gast-Wi-Fi (of een ander Wi-Fi-netwerk) of moet over een mobiele verbinding beschikken om met Intune te communiceren. Hierdoor kan de gebruiker beleidsupdates blijven ontvangen wanneer het zakelijke Wi-Fi-profiel op het apparaat wordt bijgewerkt.

@@ -5,7 +5,7 @@ description: U kunt Intune Certificate Connector installeren en configureren om 
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector instellen voor de Symantec PKI Manager-webservice
 
@@ -277,7 +277,7 @@ De OID van het certificaatprofiel is gekoppeld aan een certificaatprofielsjabloo
    > [!IMPORTANT]
    > De volgende parameters van het PKCS-certificaatprofiel moeten worden geconfigureerd met de opgegeven waarden in de volgende tabel, zoals weergegeven in de schermafbeelding, om PKCS-certificaten van de Symantec-CA te kunnen uitgeven via Intune Certificate Connector. 
 
-    |Parameter van PKCS-certificaat | Waarde | Beschrijving |
+    |Parameter van PKCS-certificaat | Waarde | Description |
     | --- | --- | --- |
     | Certificeringsinstantie | pki-ws.symauth.com | Deze waarde moet de FQDN van de basisservice van de Symantec-CA zijn, zonder afsluitende schuine strepen.  Als u niet zeker weet of dit is de juiste FQDN voor de basisservice voor uw Symantec-CA-abonnement is, neemt u contact op met de klantenondersteuning van Symantec. <br><br> Als deze FQDN onjuist is, geeft Intune Certificate Connector geen PKCS-certificaten van de Symantec-CA uit.| 
     | Naam van certificeringsinstantie | Symantec | Deze waarde moet de tekenreeks **Symantec** zijn. <br><br> Als deze waarde afwijkt, geeft Intune Certificate Connector geen PKCS-certificaten van de Symantec-CA uit.|

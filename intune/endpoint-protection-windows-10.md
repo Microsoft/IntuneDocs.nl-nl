@@ -5,7 +5,7 @@ description: Lees hier alles over de Intune-instellingen die u kunt gebruiken vo
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8393699a06def8f01c9f70561bb1894bb7cba04e
-ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
+ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger in Microsoft Intune
 
@@ -68,7 +68,7 @@ Deze instellingen gelden voor alle netwerktypen.
 - **File Transfer Protocol**: blokkeer stateful FTP.
 - **Niet-actieve tijd voordat beveiligingskoppeling wordt verwijderd**: beveiligingskoppelingen worden verwijderd nadat gedurende *n* seconden geen netwerkverkeer wordt gedetecteerd.
 - **Vooraf-gedeelde sleutels coderen**: codeer vooraf-gedeelde sleutels met UTF-8.
-- **IPsec-uitzonderingen**: hiermee configureert u specifiek verkeer om te worden vrijgesteld voor het uitvoeren van IPsec, waaronder **ICMP-type-codes voor IPv6 detecteren met Neighbor**, **ICMP**, **ICMP-type-codes voor IPv6 detecteren met Router** en ** DHCP-netwerkverkeer via IPv4 en IPv6**.
+- **IPsec-uitzonderingen**: hiermee configureert u specifiek verkeer om te worden vrijgesteld voor het uitvoeren van IPsec, waaronder **ICMP-type-codes voor IPv6 detecteren met Neighbor**, **ICMP**, **ICMP-type-codes voor IPv6 detecteren met Router** en  **DHCP-netwerkverkeer via IPv4 en IPv6**.
 - **Controle van certificaatintrekkingslijsten**: stel een waarde in voor het afdwingen van controle van certificaatintrekkingslijsten, zoals **CRL-controle uitschakelen**, **CRL-verificatie mislukt alleen bij alleen ingetrokken certificaat** en **CRL-verificatie mislukt bij elke fout die wordt aangetroffen**.
 - **Verificatieset opportunistisch afstemmen per sleutelmodule**: stel sleutelmodules in om de volledige verificatieset te negeren als de modules geen ondersteuning bieden voor alle verificatiepakketten in de betreffende set.
 - **Pakketten in wachtrij plaatsen**: Geef op hoe schalen voor software aan de ontvangstzijde wordt ingeschakeld voor versleuteld ontvangen en ongecodeerd doorsturen in het scenario voor de IPsec-tunnelgateway. Hierdoor wordt gegarandeerd dat de pakketvolgorde behouden blijft.

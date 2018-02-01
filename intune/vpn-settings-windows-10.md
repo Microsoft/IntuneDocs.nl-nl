@@ -5,27 +5,25 @@ description: Meer informatie over de Intune-instellingen die u kunt gebruiken om
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 10/20/2017
+manager: dougeby
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54ff681c96dc01587cd9a2770dacc5bb9a54d134
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 10-apparaten in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onderstaande lijst worden geconfigureerd.
+Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volgende lijst worden geconfigureerd.
 
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
@@ -82,7 +80,9 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 
 Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer informatie over het schrijven van aangepaste XML-opdrachten.
 
-**Split tunneling** - U kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
+Zie [EAP-configuratie](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration) voor meer informatie over het maken van aangepaste XML-EAP.
+
+**Split tunneling** - : u kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
 - **Split tunneling-routes voor deze VPN-verbinding**: voeg desgewenst routes voor VPN-providers van derden toe. Geef voor elk een bestemmingsvoorvoegsel en vaste grootte op.
 
 ## <a name="apps-and-traffic-rules"></a>Apps en verkeersregels

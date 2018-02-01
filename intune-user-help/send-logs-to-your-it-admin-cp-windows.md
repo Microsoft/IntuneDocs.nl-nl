@@ -4,23 +4,24 @@ description: Een Windows 10 versie 1511+-apparaat inschrijven in Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 529a0ec7baf52eccf6382ecab114dac55de8a72a
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4840ffc6217d757062b4cd610af6b1263070963f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Logboeken verzenden naar het ondersteuningsteam van het bedrijf via de bedrijfsportal-app voor Windows 10
 
@@ -34,4 +35,4 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Windows 10-appara
 
 U moet mogelijk ook [logboeken van de Instellingen-app](send-logs-to-your-it-admin-settings-windows.md) verzenden om het ondersteuningsteam van het bedrijf te ondersteunen bij het oplossen van problemen die worden aangetroffen.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

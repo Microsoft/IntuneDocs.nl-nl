@@ -5,7 +5,7 @@ description: Hiermee kunt u Intune-functies in de Azure-portal zoeken."
 keywords: 
 author: dagerrit
 ms.author: dagerrit
-manager: angrobe
+manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
-ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
+ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Intune in de Azure-portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
@@ -40,14 +40,14 @@ Instellingen voor de bedrijfsportal|Beheer > Bedrijfsportal|**Beheer** > Mobiele
 
 
 ## <a name="where-do-i-manage-groups"></a>Waar kan ik groepen beheren?
-Intune in de Azure Portal gebruikt [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) om groepen te beheren.
+Intune in de Azure-portal gebruikt [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) om groepen te beheren.
 
 ## <a name="where-did-enrollment-rules-go"></a>Waar zijn de inschrijvingsregels gebleven?
 In de klassieke portal kunt u regels instellen voor de MDM-inschrijving van mobiele en moderne Windows- en macOS-apparaten:
 
 ![Afbeelding van regels voor inschrijving van mobiele apparaten in klassieke console](./media/01-classic-rules.png)
 
-Deze regels waren van toepassing op alle gebruikers in uw Intune-account, zonder uitzonderingen. In de Azure Portal zijn deze regels nu onderverdeeld in twee typen beleid, Beperkingen voor apparaattypen en Apparaatlimietbeperkingen:
+Deze regels waren van toepassing op alle gebruikers in uw Intune-account, zonder uitzonderingen. In de Azure-portal zijn deze regels nu onderverdeeld in twee typen beleid, Beperkingen voor apparaattypen en Apparaatlimietbeperkingen:
 
 ![Afbeelding van beperkingen voor inschrijving van mobiele apparaten in Azure](./media/02-azure-enroll-restrictions.png)
 

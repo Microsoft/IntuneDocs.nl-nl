@@ -5,7 +5,7 @@ description: Meer informatie over het maken van nalevingsbeleid voor Android-app
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Android-apparaten in Intune
 
@@ -75,7 +75,7 @@ Voor sideloading-toepassingen moet de instelling **Onbekende bronnen** zijn inge
 
 Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy) voor meer informatie.
 
-## <a name="system-security-settings"></a>Instellingen voor systeembeveiliging
+## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
 ### <a name="password"></a>Wachtwoord
 

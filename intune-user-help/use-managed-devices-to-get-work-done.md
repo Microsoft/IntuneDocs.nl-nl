@@ -4,23 +4,24 @@ description: U leert wat het betekent uw apparaat in te schrijven bij beheer met
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
@@ -70,7 +71,7 @@ Voor meer informatie over wat het ondersteuningsteam van het bedrijf wel en niet
 -   Windows-apparaten
     -   Windows 10 Mobile
     -   Windows 10 Desktop
-    -   Windows Phone 8,1
+    -   Windows Phone 8.1
     -   Windows 8.1
 
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Kunt u een computer of apparaat verwijderen uit de bedrijfsportal?

@@ -5,7 +5,7 @@ description: MTD-apps, de Microsoft Authenticator-app en het iOS-configuratiebel
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a5b1b705e79b875b83cecb53cd82d7bf5dff30
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 4d84ecc31d266deb196192c8e1b3eeade6eb5ea3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune
 
@@ -134,7 +134,7 @@ Schakel Azure Active Directory-verificatie voor de iOS-gebruikers als volgt in:
 -   U dient het configuratiebeleid voor de iOS-app te **downloaden**: 
     -   Ga naar [Beheerconsole van Skycure](https://aad.skycure.com) en meld u aan met uw beheerdersreferenties.
     
-    -   Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer ** &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
+    -   Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer**  &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
     
     -   Klik op de koppeling voor de **installatiebestanden voor de integratie** en sla het gegenereerde bestand \*.zip op. Het ZIP-bestand bevat het bestand **skycure\_configuration.plist**, waarmee het configuratiebeleid voor de iOS-app wordt gemaakt in Intune.
     

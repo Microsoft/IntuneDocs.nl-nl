@@ -5,7 +5,7 @@ description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw 
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6fce4a48245bc8ba7533380fa5a365d44705ee
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 7ee7977d8608327560b4df0c1bfbcc60ff150da9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid 
 
@@ -82,5 +82,5 @@ De volgende bestandstypen worden ondersteund:
 ## <a name="next-steps"></a>Volgende stappen
 [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-ios.md)
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [App-beveiligingsbeleid maken en implementeren met Microsoft Intune](app-protection-policies.md)

@@ -4,23 +4,24 @@ description: Gegevenslogboeken verzenden met behulp van een USB-kabel
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6444c129869db467b582593677b20cd4de8f319d
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 9fd4ce3548a16837e3f68c81ae08a1e22541e62b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel
 
@@ -37,4 +38,4 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat 
 
 4.  Selecteer de bestanden en voeg ze als bijlage toe een e-mail. Verzend dit e-mailbericht naar het ondersteuningsteam van het bedrijf.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

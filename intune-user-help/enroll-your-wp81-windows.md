@@ -4,23 +4,24 @@ description: Beschrijft hoe u een Windows Phone 8.1-apparaat bij Intune kunt ins
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 30980072cfb1c98ab7755206b24497a356ebfff3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 1f9139ba7b938e09efd25062d4ea81b639050d8a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Uw Windows Phone 8.1-apparaat registreren bij Intune
 
@@ -84,4 +85,4 @@ Uw apparaat inschrijven:
 
 Als het ondersteuningsteam van het bedrijf de bedrijfsportal zo heeft ingesteld dat deze tijdens de registratie is geïnstalleerd, wordt de bedrijfsportal weergegeven in de lijst met apps.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

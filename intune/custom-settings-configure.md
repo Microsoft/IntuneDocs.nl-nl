@@ -5,7 +5,7 @@ description: Meer informatie over hoe u Intune kunt gebruiken voor het configure
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7568a74256688271794b6baa752a23e24cf8d67
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Aangepaste apparaatinstellingen configureren in Microsoft Intune
 
@@ -34,7 +34,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
 ## <a name="create-a-device-profile-containing-custom-settings"></a>Een apparaatprofiel met aangepaste instellingen maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

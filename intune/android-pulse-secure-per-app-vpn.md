@@ -5,7 +5,7 @@ description: Meer informatie over het maken van een VPN-profiel per app maken vo
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5b8e85ded2ea515f361c91c61744956b8112757
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 46555f776ff93207f4672dc5d97abbaa2323b234
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten
 
@@ -37,7 +37,7 @@ Nadat u het beleid hebt toegewezen aan uw Android-apparaat of gebruikersgroepen,
 ## <a name="step-1-create-a-vpn-profile"></a>Stap 1: Een VPN-profiel maken
 
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
@@ -51,7 +51,7 @@ Noteer de waarde die u voor **Naam van de verbinding** opgeeft wanneer u het VPN
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Stap 2: Een aangepast configuratiebeleid maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
@@ -63,7 +63,7 @@ Noteer de waarde die u voor **Naam van de verbinding** opgeeft wanneer u het VPN
 3. Kies **Toevoegen** op de blade **Aangepaste OMA-URI-instellingen**.
     - Geef een naam op voor de instelling.
     - Geef voor **Gegevenstype** de optie **Tekenreeks** op.
-    - Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/PackageList**, waarbij *Naam* de naam van het VPN-profiel is die u in stap 1 hebt genoteerd. In dit voorbeeld is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, waarbij *Name* de naam van het VPN-profiel is die u in stap 1 hebt genoteerd. In dit voorbeeld is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
     - Geef bij **Waarde** een lijst met door puntkomma’s gescheiden pakketten op die aan het profiel moeten worden gekoppeld. Als u bijvoorbeeld wilt dat Excel en de Google Chrome-browser de VPN-verbinding gebruiken, voert u **com.microsoft.office.excel;com.android.chrome** in.
 
 ![Voorbeeld van een aangepast VPN-beleid per app voor Android](./media/android_per_app_vpn_oma_uri.png)
@@ -74,7 +74,7 @@ U kunt ook de waarde **WHITELIST** gebruiken om een lijst met apps op te geven d
   1.    Kies **Toevoegen** op de blade **Aangepaste OMA-URI-instellingen**.
   2.    Geef een naam op voor de instelling.
   3.    Geef voor **Gegevenstype** de optie **Tekenreeks** op.
-  4.    Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Naam*/Mode**, waarbij *Naam* de naam is van het VPN-profiel dat u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Geef voor **OMA-URI** de volgende tekenreeks op: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, waarbij *Name* de naam is van het VPN-profiel die u in stap 1 hebt genoteerd. In het voorbeeld dat hier wordt gebruikt, is de tekenreeks **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    Geef bij **Waarde** **BLACKLIST** of **WHITELIST** op.
 
 

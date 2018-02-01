@@ -4,7 +4,7 @@ description: In dit artikel wordt beschreven hoe u de doelen, doelstellingen en 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 47bba6d9f65aa1e2ff8cc0255cd7fccfda417f92
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: fe680fcb617c29678f193aac2d74c12398a2a7f8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
 
