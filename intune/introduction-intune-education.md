@@ -4,7 +4,7 @@ description: Informatie over het verschil tussen Intune for Education en volledi
 keywords: wat is Intune
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78286293dc57bfded09eb29c5809c09e5acff49b
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Waarin verschilt Intune for Education van het volledige Intune-beheer?
 

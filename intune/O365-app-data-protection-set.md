@@ -5,7 +5,7 @@ description: Ondersteunende documentatie voor de wizard Office 365-apps beheren.
 keywords: 
 author: lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b818152d2172ccf85a8323ba3ff70a0b270d20df
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Hoe uw gebruikers basisbeveiliging ervaren in beheerde Office 365-apps
 
@@ -99,14 +99,14 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 |'Opslaan als' voorkomen | Nee | Nee|
 |Knippen, kopiëren en plakken met andere apps beperken | Elke app | Elke app |
 |Webinhoud beperken en weergeven in een bedrijfsbeheerde browser | Nee| Nee|
-|App-gegevens versleutelen | Wanneer apparaat is vergrendeld | Yes|
+|App-gegevens versleutelen | Wanneer apparaat is vergrendeld | Ja|
 |Synchroniseren van contactpersonen uitschakelen | Nee| Nee|
 |Afdrukken uitschakelen | Nee | Nee|
-|Pincode is vereist voor toegang | Nee | Yes|
+|Pincode is vereist voor toegang | Nee | Ja|
 |Aantal pogingen voordat pincode opnieuw wordt ingesteld | N.v.t. |5|
-|Eenvoudige pincode toestaan | N.v.t. |Yes|
+|Eenvoudige pincode toestaan | N.v.t. |Ja|
 |Lengte pincode | N.v.t. | 4|
-|Vingerafdruk in plaats van pincode toestaan | N.v.t. | Yes |
+|Vingerafdruk in plaats van pincode toestaan | N.v.t. | Ja |
 |Bedrijfsreferenties vereisen voor toegang | Nee | Nee|
 |De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd | Nee | Nee|
 |Toegangsvereisten opnieuw controleren na (minuten) - Time-out | 30 | 30|
@@ -125,7 +125,7 @@ U kunt deze beleidsinstellingen altijd bewerken om aan de behoeften van uw organ
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Hoe kan ik de beleidsregels bekijken en bewerken die door de wizard zijn gemaakt?
 Als u deze beleidsregels, of andere beleidsregels die u in Intune Azure Portal maakt, wilt bekijken of bijwerken, kiest u in het dashboard **Apps beheren** > **App-beveiligingsbeleid**. De lijst met beleidsregels wordt rechts geopend. Kies het beleid dat u wilt bekijken en bewerk de instellingen. <br/>
-![Afbeelding van gebruikersinterfacepad voor het weergeven van beleidsregels](./media/image-for-faq.png)
+![Afbeelding van het gebruikersinterfacepad voor het weergeven van beleidsregels](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 Meer informatie over [app-beveiligingsbeleid](https://docs.microsoft.comapp-protection-policy.md).

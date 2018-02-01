@@ -5,7 +5,7 @@ description: Meer informatie over het configureren van instellingen van Windows 
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -71,7 +71,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Updateringen maken en toewijzen
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Software-updates** op de blade **Intune**.
 4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.
@@ -109,7 +109,7 @@ Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) k
 ### <a name="review-update-compliance-in-intune"></a>Updatenaleving weergeven in Intune 
 <!-- 1352223 -->
 Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updateringen die u hebt geconfigureerd. 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Software-updates** op de blade **Intune**.
 4. Kies op de blade **Software-updates** de optie **Overzicht**. Hier wordt algemene informatie weergegeven over de status van de updateringen die u hebt toegewezen.
@@ -145,7 +145,7 @@ U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoe
 
 ## <a name="how-to-pause-updates"></a>Updates onderbreken
 U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows-Updates naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Software-updates** op de blade **Intune**.
 4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.

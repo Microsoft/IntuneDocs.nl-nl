@@ -5,7 +5,7 @@ description: Meer informatie over het controleren van het nalevingsbeleid voor a
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4b293ff41af58d4ab41a8477219939b13ffe361c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -75,7 +75,7 @@ Dit is een ringdiagram met de cumulatieve nalevingsstatus voor alle bij Intune i
 
 #### <a name="drill-down-option"></a>Inzoomoptie
 
-Als u in het **Dashboard voor apparaatnaleving** klikt op de tegel Apparaatnaleving, kunt u inzoomen op een specifieke **nalevingsstatus**, **e-mailalias van de gebruiker**, **apparaatmodel** en **locatie ** voor elk apparaat waarop het nalevingsbeleid voor apparaten is gericht.
+Als u in het **Dashboard voor apparaatnaleving** klikt op de tegel Apparaatnaleving, kunt u inzoomen op een specifieke **nalevingsstatus**, **e-mailalias van de gebruiker**, **apparaatmodel** en **locatie**  voor elk apparaat waarop het nalevingsbeleid voor apparaten is gericht.
 
 ![Inzoomen in het dashboard voor apparaatnaleving](./media/idc-2.png)
 

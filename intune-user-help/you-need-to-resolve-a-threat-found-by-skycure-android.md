@@ -4,21 +4,22 @@ description: Meer informatie over het oplossen van bedreigingen die zijn gevonde
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1fa368ad494ae60a9db5cbe32ce678ce6fd56c0d
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: f67834a858d5991c0528400c15d96b5e8f90ab96
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Een bedreiging oplossen die is gevonden met Symantec Endpoint Protection Mobile
 
@@ -44,5 +45,5 @@ Als u een app hebt geïnstalleerd die door Symantec Endpoint Protection Mobile a
 
 Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 

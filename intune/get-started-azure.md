@@ -5,7 +5,7 @@ description: Informatie over het maken en delen van dashboards voor Intune in de
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: 27567c8a8b8b406bbffceafc1d742b202999425f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Aan de slag met Intune in de Azure-portal
 

@@ -4,7 +4,7 @@ description: Dit artikel helpt u bij het maken van een ontwerp voor een Microsof
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -210,7 +210,7 @@ Intune ondersteunt zowel bedrijfseigen apparaten als persoonlijke apparaten. Een
 
 Zie [Sectie 3: use-casescenariovereisten bepalen](planning-guide-requirements.md) voor meer informatie over voorbeelden van apparaten in bedrijfseigendom en BYOD-apparaten.
 
-### <a name="bulk-enrollment"></a>Bulkregistratie
+### <a name="bulk-enrollment"></a>Bulkinschrijving
 
  U kunt apparaten bulksgewijs op verschillende manieren inschrijven, afhankelijk van het platform. Als bulksgewijze inschrijving is vereist, bepaalt u eerst [de juiste methode voor bulksgewijze inschrijving](device-enrollment.md), die u vervolgens opneemt in uw ontwerp.
 
@@ -240,7 +240,7 @@ U moet zelf bepalen of er beleidsregels voor voorwaarden nodig zijn. Als dat ind
 
 | **Naam van de voorwaarden** | **Use case** | **Doelgroep** |
 |:---:|:---:|:---:|
-| Bedrijfsvoorwaarden | Zakelijk | Zakelijke gebruikers |                 
+| Bedrijfsvoorwaarden | Bedrijf | Zakelijke gebruikers |                 
 | Voorwaarden BYOD | BYOD | BYOD-gebruikers |                
 
 
@@ -349,7 +349,7 @@ U kunt Intune gebruiken om de gebruikers of apparaten op verschillende manieren 
 
 -   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Windows Store voor Bedrijven-apps](windows-store-for-business.md)
+-   [Microsoft Store voor Bedrijven-apps](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Vereisten voor app-typen
 

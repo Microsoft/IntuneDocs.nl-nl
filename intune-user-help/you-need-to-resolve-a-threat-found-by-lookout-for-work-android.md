@@ -4,21 +4,22 @@ description: Informatie over het oplossen van een bedreiging die met Lookout for
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b5e96a1d43334c3f3392c4073e2939fee7504e62
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: d321350fa2cfff051cf633335bf32c51f5be7d97
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Een bedreiging oplossen die met Lookout for Work is gevonden
 
@@ -44,4 +45,4 @@ Als u een app hebt geïnstalleerd die volgens Lookout for Work een bedreiging vo
 
 Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

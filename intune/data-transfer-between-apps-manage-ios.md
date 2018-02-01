@@ -5,7 +5,7 @@ description: Lees dit onderwerp om te begrijpen hoe u de functie iOS openen in e
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83ef0050380b8b5e3741dc7b8ea57574df6df658
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Gegevensoverdracht tussen iOS-apps beheren
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
 Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestandsoverdracht tot apps die door u worden beheerd.  U kunt iOS-apps op de volgende manieren beheren:
 
--   Voorkom het verlies van bedrijfsgegevens door voor apps een app-beveiligingsbeleid te configureren. Naar deze apps wordt verwezen als **door beleid beheerde** apps. Zie [alle apps met Intune-functionaliteit die u kunt beheren met app-beveiligingsbeleid](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
+-   Voorkom het verlies van bedrijfsgegevens door voor apps een app-beveiligingsbeleid te configureren. Naar deze apps wordt verwezen als **door beleid beheerde** apps. Bekijk [alle door Intune beheerde apps die u met app-beveiligingsbeleid kunt beheren](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 -   U kunt apps ook implementeren en beheren via het **MDM-kanaal**.  Hiervoor is vereist dat apparaten zijn ingeschreven in de MDM-oplossing. Dit kunnen **door beleid beheerde** apps of andere beheerde apps zijn.
 

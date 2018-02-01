@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 59d9ed0ddc6b24d680f665eb6f5c9976001d940b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 2a61f7f78c284166b1476774983c8d813792cbe3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>De naam van een apparaat wijzigen op de website van de bedrijfsportal
 
@@ -40,4 +41,4 @@ Ga als volgt te werk om de naam van uw apparaat te wijzigen:
 
 4.  Typ de nieuwe naam voor uw apparaat in het vak waar de apparaatnaam wordt weergegeven en tik vervolgens op de knop **Wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,7 +5,7 @@ description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inz
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d369b311339218edcb3204ce7c575986c7a08528
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -39,7 +39,7 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
 ## <a name="summary-view"></a>Samenvattingsweergave
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 4. Kies **Controleren** > **Gebruikersstatus van de app-beveiliging** in de workload **Mobiele apps** om de samenvattingsweergave te openen:
@@ -133,7 +133,7 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
     ![Schermopname 7](./media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 [Gegevensoverdracht tussen iOS-apps beheren](data-transfer-between-apps-manage-ios.md)
 
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-android.md)

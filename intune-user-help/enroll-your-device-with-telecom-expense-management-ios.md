@@ -4,23 +4,24 @@ description: Informatie over het registreren van een iOS-apparaat bij Telecom Ex
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 13f284c62e1232a560ec9e5186de4055d616ef3a
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Uw iOS-apparaat met voor Telecom Expense Management
 
@@ -63,4 +64,4 @@ Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](h
 
 Na het inschrijven kunt u uw dataverbruik terugzien in de app Datalert.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

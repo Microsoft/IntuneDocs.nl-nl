@@ -4,21 +4,22 @@ description: Uw wachtwoordcode instellen of wijzigen
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 80cd4b97aafd3307fee310ea742d82a5ff215680
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: dbd2bef05082e6e4f9b7dfef72277040bb6587a7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-or-change-your-passcode"></a>Uw wachtwoordcode instellen of wijzigen
 
@@ -41,4 +42,4 @@ Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet 
 2. Tik op **Wachtwoordcode wijzigen** en voer de oude wachtwoordcode in.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van het ondersteuningsteam van het bedrijf en geef de code nogmaals op om deze te verifiëren.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) voor de betreffende contactgegevens.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

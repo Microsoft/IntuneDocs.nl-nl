@@ -5,7 +5,7 @@ description: Meer informatie over het controleren van toegewezen Intune-apparaat
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6b219546d0376c7ce1ce34d7d7ff7f0ae157f1c
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: d5b5a6ab74555eefc8c001ec444f803be24e34f3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/15/2017
 U kunt de voortgang van de toewijzing van Intune--apparaatprofielen op twee manieren controleren:
 
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

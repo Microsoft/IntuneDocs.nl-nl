@@ -4,8 +4,8 @@ description: Vereisten en voorwaarden om uw Intune-abonnement te gaan gebruiken
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>Intune instellen
 
@@ -47,3 +47,4 @@ Als u momenteel Microsoft System Center Configuration Manager gebruikt voor het 
 | 8 | [Apparaten configureren](device-profiles.md): stel profielen in die apparaatinstellingen beheren. Apparaatprofielen kunnen voorinstellingen voor e-mail, VPN, wifi en functies van het apparaat bevatten. Ze kunnen ook apparaten beperken om zowel apparaten als gegevens te beschermen.  |
 | 9 | [Bedrijfsportal aanpassen](company-portal-app.md): pas de Intune-bedrijfsportal aan die gebruikers gebruiken om apparaten in te schrijven en apps te installeren. Deze instellingen worden zowel in de bedrijfsportal-app als op de Intune-bedrijfsportalwebsite weergegeven. |
 | 10 | [Inschrijving van apparaten inschakelen](mdm-authority-set.md): schakel Intune-beheer van iOS-, Windows-, Android- en Mac-apparaten in door de MDM-instantie in te stellen en specifieke platforms in te schakelen. |
+| 11 | [App-beleidsregels configureren](app-protection-policy.md): geef specifieke instellingen op die zijn gebaseerd op de app-beveiligingsbeleidsregels in Microsoft Intune. |

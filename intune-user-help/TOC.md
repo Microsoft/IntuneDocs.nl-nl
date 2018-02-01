@@ -30,8 +30,9 @@
 #### [Apparaatcompatibiliteit controleren](check-compliance-on-your-device-android.md)
 #### [E-mailsynchronisatie in Outlook in batterijbesparingsmodus](power-saving-mode-android.md)
 #### [Veelvoorkomende problemen met Samsung Knox oplossen](samsung-knox-errors-android.md)
+#### [Uw apparaat bijwerken voor de installatie van Outlook](update-device-outlook-android.md)
 
-#### Logboeken gebruiken problemen op te lossen
+#### Logboeken gebruiken om problemen op te lossen
 ##### [Uitgebreide logboekregistratie inschakelen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Logboeken via e-mail verzenden](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Logboeken met een USB-kabel verzenden](send-logs-to-your-it-admin-using-cable-android.md)
@@ -85,6 +86,7 @@
 #### [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Het serienummer zoeken](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [iOS-apparaten bijwerken](you-need-to-update-your-ios-device.md)
+#### [Uw apparaat bijwerken voor de installatie van Outlook](update-device-outlook-ios.md)
 #### [Mijn versie van iOS wordt nog niet ondersteund](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense

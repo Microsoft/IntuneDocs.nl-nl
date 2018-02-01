@@ -5,7 +5,7 @@ description: Meer informatie over het gebruik van Intune om certificaten te make
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c74ee1daf6602a4958d9955c3955b465495e013
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 0245491540a2ade2dbb453a865ee73312fc759e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Certificaten configureren in Microsoft Intune
 
@@ -87,7 +87,7 @@ U moet een profiel voor een vertrouwd certificaat maken voordat u een SCEP- of P
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>Een profiel voor een vertrouwd certificaat maken
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

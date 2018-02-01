@@ -5,7 +5,7 @@ description: Aangepaste configuraties gebruiken om VPN-profielen te maken in Int
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc1374c3ccb60ed5a3dc57449f5c772963b8efc7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 70af9ce41efa7f52987e1103b89493b4cf200091
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Aangepaste VPN-profielen maken in Microsoft Intune
 
@@ -36,7 +36,7 @@ Dit type beleid kan handig zijn wanneer het standaardbeleid voor Intune VPN niet
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Een aangepast configuratiebeleid maken:
 
-1. Meld u aan bij Azure Portal.
+1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 4. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

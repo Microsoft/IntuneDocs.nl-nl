@@ -5,7 +5,7 @@ description: Meer informatie over de Intune-instellingen die u kunt gebruiken om
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 087a8ad8ad8d07bee1d00cd6adaca86ede737eb7
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 6a4a5b9b76995be6a82cc3dcaa9f782c158ba174
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor iOS-apparaten in Microsoft Intune
 
@@ -33,6 +33,7 @@ ms.lasthandoff: 12/30/2017
 - **SSID**: afkorting voor Service Set Identifier. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hierboven hebt gemaakt, wanneer ze de verbinding kiezen.
 - **Automatisch verbinding maken**: als u deze optie kiest, maakt het apparaat verbinding wanneer het zich in het bereik van dit netwerk bevindt.
 - **Verborgen netwerk**: hiermee wordt voorkomen dat dit netwerk wordt weergegeven in de lijst met beschikbare netwerken op het apparaat.
+- **Vooraf gedeelde sleutel** - 
 - **Proxyinstellingen**: u kunt kiezen uit:
     - **Geen**: er zijn geen proxyinstellingen geconfigureerd.
     - **Handmatig**: voer het **adres van de proxyserver** (als IP-adres) en het bijbehorende **poortnummer** in.

@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Uw Android-apparaat lijkt versleuteld te zijn, maar de Bedrijfsportal geeft anders aan
 
@@ -36,10 +37,6 @@ Voor nieuwere versies van Android, met name vanaf v7.0, is een opstartwachtwoord
 
 Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te zorgen dat uw apparaat beveiligd is. Er zijn veel Android-versies van veel verschillende fabrikanten. U kunt dit probleem oplossen door in uw instellingen-app de locatie te zoeken waar u deze optie kunt inschakelen. Op de Samsung Galaxy S7 schakelt u Beveiligd opstarten bijvoorbeeld in bij **Instellingen** > **Vergrendelscherm en beveiliging** > **Beveiligd opstarten**.  
 
-### <a name="downgrade-your-version-of-android"></a>Uw versie van Android downgraden
-
-Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
-
 ### <a name="encrypt-the-entire-device"></a>Versleutel het hele apparaat
 
 Op sommige apparaten kunt u kiezen of u het hele apparaat of alleen de gebruikte ruimte wilt versleutelen. Kies de optie om het hele apparaat te versleutelen in plaats van 'Alleen gebruikte ruimte'. Als u alleen de gebruikte ruimte al hebt versleuteld:
@@ -48,6 +45,10 @@ Op sommige apparaten kunt u kiezen of u het hele apparaat of alleen de gebruikte
 2. Ontsleutel de gebruikte ruimte
 3. Versleutel het hele apparaat
 4. Schrijf het apparaat opnieuw in
+
+### <a name="downgrade-your-version-of-android"></a>Uw versie van Android downgraden
+
+Als uw apparaat u de optie biedt naar Android 6.0+ te downgraden, kies daar dan voor. Er is een risico van gegevensverlies als u uw apparaat probeert te downgraden. Anders is het raadzaam dat u contact opneemt met het ondersteuningsteam van uw bedrijf om dit probleem op te lossen. U kunt de contactgegevens voor het ondersteuningsteam van uw bedrijf vinden op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="specific-manufacturer-issues"></a>Fabrikant-specifieke problemen
 
