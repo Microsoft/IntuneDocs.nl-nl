@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -32,7 +32,7 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 **Wat is MAM?** [Intune Mobile Application Management](/intune/app-lifecycle) verwijst naar de suite met Intune-beheerfuncties waarmee u mobiele apps voor uw gebruikers kunt publiceren, pushen, configureren, beveiligen, controleren en bijwerken.
 
-**Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM-WE kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
+**Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM-WE kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Bekijk de officiële lijst met de [door Intune beheerde apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
 **Welke apparaatconfiguraties ondersteunt MAM?** Intune MAM ondersteunt twee configuraties:
   1. **Intune MDM + MAM**: dit is de eerste configuratie die door MAM wordt ondersteund wanneer de app voor het eerst wordt gestart. IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Voor het beheren van apps met MDM + MAM moeten klanten de zelfstandige Intune-console op https://manage.microsoft.com gebruiken.
@@ -48,9 +48,9 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps die u kunt beheren met beleidsregels voor de beveiliging van apps
 
-**Welke apps kunnen worden beheerd door beleidsregels voor de beveiliging van apps?** Alle apps met de functionaliteit van de [Intune App SDK](/intune/app-sdk) of die zijn ingepakt met de [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [apps met Intune-functionaliteit](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
+**Welke apps kunnen worden beheerd door beleidsregels voor de beveiliging van apps?** Alle apps met de functionaliteit van de [Intune App SDK](/intune/app-sdk) of die zijn ingepakt met de [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Bekijk de officiële lijst met de [door Intune beheerde apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
-**Wat zijn de basisvereisten voor het gebruik van beleidsregels voor de beveiliging van apps die geschikt zijn voor Intune?**
+**Wat zijn de basisvereisten voor het gebruik van app-beveiligingsbeleidsregels voor een app die door Intune wordt beheerd?**
   1. De eindgebruiker moet een AAD-account (Azure Active Directory) hebben. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](/intune/users-permissions-add) voor informatie over het maken van Intune-gebruikers in Azure Active Directory.
 
   2. Er moet een licentie voor Microsoft Intune Azure aan het Azure Active Directory-account van de eindgebruiker zijn toegewezen. Zie [Intune-licenties beheren](/intune/licenses-assign) voor informatie over het toewijzen van Intune-licenties aan eindgebruikers.
@@ -136,7 +136,7 @@ Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt
 
 **Waarom kunnen er geen on-premises services (on-prem) worden gebruikt in combinatie met apps die zijn beveiligd met Intune?** Voor de app-beveiliging van Intune moet de identiteit van de gebruiker voor de toepassing en Intune App SDK consistent zijn. Dit kan alleen worden gegarandeerd via moderne verificatie. Er zijn scenario's waarin apps met een on-premisses configuratie werken, maar deze zijn niet consistent en kunnen ook niet worden gegarandeerd.
 
-**Is er een veilige manier om webkoppelingen te openen vanuit beheerde apps?** Ja. De IT-beheerder kan een app-beveiligingsbeleid implementeren en instellen voor de [Intune Managed Browser-app](../deploy-use/manage-internet-access-using-managed-browser-policies.md), een webbrowser die is ontwikkeld door Microsoft Intune en eenvoudig kan worden beheerd met Intune. De IT-beheerder kan ervoor zorgen dat alle webkoppelingen in apps met de Intune-functionaliteit moeten worden geopend met de Managed Browser-app.
+**Is er een veilige manier om webkoppelingen te openen vanuit beheerde apps?** Ja. De IT-beheerder kan een app-beveiligingsbeleid implementeren en instellen voor de [Intune Managed Browser-app](../deploy-use/manage-internet-access-using-managed-browser-policies.md), een webbrowser die is ontwikkeld door Microsoft Intune en eenvoudig kan worden beheerd met Intune. De IT-beheerder kan ervoor zorgen dat alle webkoppelingen in de door Intune beheerde apps moeten worden geopend met de Managed Browser-app.
 
 
 ## <a name="app-experience-on-android"></a>Apps op Android gebruiken
@@ -147,7 +147,7 @@ Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt
 
 **Ik kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor het overdragen van gegevens is ingesteld op 'alleen voor beheerde apps' of 'geen apps'. Ontstaat hierdoor geen gegevenslek?** De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _**'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_. U kunt dit controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 - [Mobile Application Management-beleidsinstellingen voor Android in Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
 - [Mobile Application Management-beleidsinstellingen voor iOS](../deploy-use/ios-mam-policy-settings.md)
 - [De Mobile Application Management-configuratie valideren](../deploy-use/validate-mobile-application-management.md)

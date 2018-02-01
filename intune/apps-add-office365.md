@@ -5,7 +5,7 @@ description: Meer informatie over hoe u Intune kunt gebruiken om de installatie 
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -35,12 +35,12 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de 
 - Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus 2016.
 - Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, verliezen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden.
 - Deze installatiemethode wordt niet in Windows 10S-apparaten ondersteund.
-- Intune biedt geen ondersteuning voor het installeren van Office 365-bureaublad-apps vanuit Windows Store (bekend als Centennial Office-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.
+- Intune biedt geen ondersteuning voor het installeren van Office 365-desktop-apps vanuit Microsoft Store (die ook wel bekend staan als Office Centennial-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.
 
 
 ## <a name="get-started"></a>Aan de slag
 
-1.  Meld u aan bij Azure Portal.
+1.  Meld u aan bij Azure-portal.
 2.  Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3.  Kies **Mobiele apps** op de blade **Intune**.
 4.  Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
@@ -63,7 +63,7 @@ In deze stap kiest u de Office-apps die u wilt toewijzen aan apparaten.
 In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het pakket vinden in Intune en kunnen gebruikers het vinden in de bedrijfsportal-app.
 
 1.  Kies op de blade **App toevoegen** de optie **Gegevens van app-pakket**.
-2.  Voer de volgende gegevens in op de blade **Gegevens van app-pakket**: 
+2.  Voer de volgende gegevens in op de blade **Gegevens van app-pakket**:
     - **Pakketnaam**: voer de naam van het app-pakket in zoals die in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle pakketnamen die u gebruikt uniek zijn. Als dezelfde naam van een app-pakket twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving app-pakket**: voer een beschrijving in voor het app-pakket. Hier kunt u bijvoorbeeld de apps vermelden die in het pakket zijn opgenomen.
     - **Uitgever**: voer de naam van de uitgever of de app in.
@@ -82,9 +82,9 @@ In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze inf
 In deze stap configureert u de installatieopties voor het app-pakket. De instellingen gelden voor alle apps die u aan het pakket hebt toegevoegd.
 
 1.  Kies op de blade **App toevoegen** de optie **Instellingen van app-pakket**.
-2.  Voer de volgende gegevens in op de blade **Instellingen van app-pakket**: 
+2.  Voer de volgende gegevens in op de blade **Instellingen van app-pakket**:
     - **Office-versie**: kies of u de 32-bits of 64-bits versie van Office wilt toewijzen. U kunt de 32-bits versie op zowel 32-bits als 64-bits apparaten installeren, maar de 64-bits versie kan alleen worden geïnstalleerd op 64-bits apparaten.
-    - **Updatekanaal**: kies hoe Office moet worden bijgewerkt op apparaten. Zie Overzicht van updatekanalen voor Office 365 ProPlus voor meer informatie over de verschillende updatekanalen. U kunt kiezen uit: 
+    - **Updatekanaal**: kies hoe Office moet worden bijgewerkt op apparaten. Zie Overzicht van updatekanalen voor Office 365 ProPlus voor meer informatie over de verschillende updatekanalen. U kunt kiezen uit:
         - **Current**
         - **Deferred**
         - **Eerste versie van Current**
@@ -104,19 +104,19 @@ Wanneer u klaar bent, kiest u **Opslaan** op de blade **App toevoegen**. De app 
 
 In de volgende tabel staan algemene foutcodes en de betekenis daarvan.
 
-### <a name="status-for-office-csp"></a>Status voor Office CSP: 
+### <a name="status-for-office-csp"></a>Status voor Office CSP:
 
 ||||
 |-|-|-|
-|Status|Fase|Beschrijving|
+|Status|Fase|Description|
 |1460 (ERROR_TIMEOUT)|Download|Het downloaden van de Office Deployment Tool is mislukt|    
-|13 (ERROR_INVALID_DATA)|-|De handtekening van de gedownloade Office Deployment Tool kan niet worden geverifieerd| 
+|13 (ERROR_INVALID_DATA)|-|De handtekening van de gedownloade Office Deployment Tool kan niet worden geverifieerd|
 |Foutcode van CertVerifyCertificateChainPolicy|-|De certificeringscontrole van de gedownloade Office Deployment Tool is mislukt|    
-|997|WIP|Wordt geïnstalleerd| 
+|997|WIP|Wordt geïnstalleerd|
 |0|Na de installatie|Installatie voltooid|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Een controle op vereisten is mislukt, zoals:<br>- SxS (Er is geprobeerd te installeren terwijl 2016 MSI is geïnstalleerd)<br>- versie komt niet overeen<br>- enzovoort.|     
 |0x8000ffff (E_UNEXPECTED)|-|Er is geprobeerd te installeren zonder Office Klik-en-Klaar op de machine.|    
-|17002|-|Het scenario (installatie) kan niet worden voltooid. Mogelijke oorzaken:<br>- Installatie geannuleerd door gebruiker<br>- Installatie geannuleerd door een andere installatie<br>- Geen schijfruimte meer tijdens installatie<br>- Onbekende taal-ID| 
+|17002|-|Het scenario (installatie) kan niet worden voltooid. Mogelijke oorzaken:<br>- Installatie geannuleerd door gebruiker<br>- Installatie geannuleerd door een andere installatie<br>- Geen schijfruimte meer tijdens installatie<br>- Onbekende taal-ID|
 |17004|-|Onbekende SKU’s|   
 
 
@@ -124,15 +124,15 @@ In de volgende tabel staan algemene foutcodes en de betekenis daarvan.
 
 |||||
 |-|-|-|-|
-|Scenario|Retourcode|Gebruikersinterface|Opmerking| 
-|Er is geprobeerd de installatie te verwijderen zonder actieve Klik-en-Klaar-installatie|-2147418113, 0x8000ffff of 2147549183|Foutcode: 30088-1008<br>Foutcode: 30125-1011 (404)|Office Deployment Tool| 
-|Installeren terwijl de MSI-versie is geïnstalleerd|1603|-|Office Deployment Tool| 
-|De installatie is geannuleerd door de gebruiker of door een andere installatie|17002|-|Klik-en-Klaar| 
-|Er is geprobeerd een 64-bits versie te installeren op een apparaat waarop de 32-bits versie is geïnstalleerd.|1603|-|Retourcodes Office Deployment Tool| 
-|Er is geprobeerd een onbekende SKU te installeren (dit is geen geldige use case voor Office CSP omdat er alleen geldige SKU’s mogen worden doorgegeven)|17004|-|Klik-en-Klaar| 
-|Gebrek aan ruimte|17002|-|Klik-en-Klaar| 
-|De Klik-en-Klaar-client kan niet worden gestart (onverwacht)|17000|-|Klik-en-Klaar| 
-|De Klik-en-Klaar-client kan het scenario niet in de wachtrij zetten (onverwacht)|17001|-|Klik-en-Klaar| 
+|Scenario|Retourcode|Gebruikersinterface|Opmerking|
+|Er is geprobeerd de installatie te verwijderen zonder actieve Klik-en-Klaar-installatie|-2147418113, 0x8000ffff of 2147549183|Foutcode: 30088-1008<br>Foutcode: 30125-1011 (404)|Office Deployment Tool|
+|Installeren terwijl de MSI-versie is geïnstalleerd|1603|-|Office Deployment Tool|
+|De installatie is geannuleerd door de gebruiker of door een andere installatie|17002|-|Klik-en-Klaar|
+|Er is geprobeerd een 64-bits versie te installeren op een apparaat waarop de 32-bits versie is geïnstalleerd.|1603|-|Retourcodes Office Deployment Tool|
+|Er is geprobeerd een onbekende SKU te installeren (dit is geen geldige use case voor Office CSP omdat er alleen geldige SKU’s mogen worden doorgegeven)|17004|-|Klik-en-Klaar|
+|Gebrek aan ruimte|17002|-|Klik-en-Klaar|
+|De Klik-en-Klaar-client kan niet worden gestart (onverwacht)|17000|-|Klik-en-Klaar|
+|De Klik-en-Klaar-client kan het scenario niet in de wachtrij zetten (onverwacht)|17001|-|Klik-en-Klaar|
 
 ## <a name="next-steps"></a>Volgende stappen
 

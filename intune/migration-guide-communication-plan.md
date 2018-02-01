@@ -4,7 +4,7 @@ description: In dit artikel wordt een communicatieplan en strategie voor migrati
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>De communicatie plannen
 
@@ -30,13 +30,13 @@ Het volgende e-mailcommunicatieplan wordt aangeraden. Sjablonen voor u om uw com
 -   **E-mail\#1:** vertel over de voordelen, verwachtingen en planning. Maak van de gelegenheid gebruik om te wijzen op eventuele andere nieuwe services waartoe gebruikers toegang zullen hebben op apparaten die met Intune worden beheerd.<br/><br/>
 
 
-    -   [E-mail downloaden \#1 sjabloon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [Sjabloon voor \#e-mail 1 downloaden](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **E-mail\#2:** kondig aan dat services nu kunnen worden gebruikt via Intune. Deel de gebruikers mee dat zij hun apparaten nu moeten inschrijven. Herinner gebruikers aan de voordelen en de strategische redenen voor de migratie.<br/><br/>
 
 
-    -   [E-mail downloaden \#2 sjabloon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [Sjabloon voor \#e-mail 2 downloaden](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **E-mail \#3:** geef de gebruikers een tijdlijn voordat hun toegang wordt beïnvloed. Herinner de gebruikers nogmaals aan de voordelen en de strategische redenen voor de migratie. De timing van de e-mails moet een sliding window hebben die overeenkomt met uw faseperioden. Verstuur bijvoorbeeld in juni e-mail \#1 aan gebruikers voor fase 1, e-mail \#2 aan gebruikers voor fase 2 en e-mail \#3 aan gebruikers voor fase 3.<br/><br/>

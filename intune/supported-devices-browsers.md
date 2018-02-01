@@ -4,7 +4,7 @@ description: Een lijst met ondersteunde apparaatplatformen en browsers voor het 
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>Ondersteunde apparaten en browsers
+# <a name="supported-operating-systems-and-browsers"></a>Ondersteunde besturingssystemen en browsers
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Dit artikel is bedoeld voor systeembeheerders die verantwoordelijk zijn voor het beheer van apparaten in de onderneming. Zie [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/company-portal-frequently-asked-questions) voor meer informatie over de installatie van Intune op uw telefoon.
+Dit artikel is bedoeld voor systeembeheerders die verantwoordelijk zijn voor het beheer van apparaten in de onderneming. Raadpleeg [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/company-portal-frequently-asked-questions) voor meer informatie over de installatie van Intune op uw apparaat.
 
 Bekijk de volgende vereisten voordat u Microsoft Intune instelt:
 
-- [Ondersteunde apparaten en computers](#intune-supported-devices)
+- [Ondersteunde besturingssystemen](#intune-supported-operating-systems)
 - [Een overzicht van ondersteunde webbrowsers voor Intune](#intune-supported-web-browsers)
 
 Maak uzelf ook vertrouwd met het [bandbreedtegebruik van het Intune-netwerk](network-bandwidth-use.md) ([klassieke portal](/intune-classic/get-started/network-bandwidth-use)).
 
-## <a name="intune-supported-devices"></a>Ondersteunde apparaten voor Intune
+## <a name="intune-supported-operating-systems"></a>Besturingssystemen die door Intune worden ondersteund
 
-U kunt de volgende apparaten beheren met Intune Mobile Device Management:
+U kunt apparaten met de volgende besturingssystemen beheren:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ De volgende Samsung-apparaatmodellen bieden geen ondersteuning voor Knox en word
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune kan niet worden gebruikt voor het beheren van Windows Server-besturingssystemen.
 
 ### <a name="windows-pc-software-client"></a>Softwareclient voor Windows-pc's
 
