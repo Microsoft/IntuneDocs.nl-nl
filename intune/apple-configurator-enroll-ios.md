@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
 
@@ -71,8 +71,8 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen tijdens het i
 
 1. Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats het serienummers in de linkerkolom en de details in de rechterkolom. De lijst kan momenteel maximaal 5000 rijen bevatten. In een teksteditor ziet de .csv-lijst er zo uit:
 
-    F7TLWCLBX196, apparaatdetails</br>
-    DLXQPCWVGHMJ,apparaatdetails
+  F7TLWCLBX196, apparaatdetails</br>
+  DLXQPCWVGHMJ,apparaatdetails
 
    [Lees hier meer informatie over het vinden van het serienummer van een iOS-apparaat](https://support.apple.com/HT204073).
 2. Kies in Intune in Azure Portal achtereenvolgens **Apparaatinschrijving** en **Apple-inschrijving**.
@@ -164,3 +164,5 @@ Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die 
 7. Open **Instellingen** op het iOS-apparaat en ga naar **Algemeen** > **Apparaatbeheer** > **Beheerprofiel**. Controleer of de profielinstallatie wordt weergegeven en controleer vervolgens de iOS-beleidsbeperkingen en geïnstalleerde apps. Het kan 10 minuten duren voordat beleidsbeperkingen en apps worden weergegeven op het apparaat.
 
 8. Apparaten distribueren. Het iOS-apparaat is nu ingeschreven bij Intune en wordt beheerd.
+
+
