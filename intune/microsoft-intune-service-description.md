@@ -14,11 +14,11 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 115a2ac3b4eb35591a2742143fdd29dde09c7de7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Beschrijving van de Microsoft Intune-service
 
@@ -55,7 +55,7 @@ Omdat het MDM-ecosysteem regelmatig wordt gewijzigd met bijgewerkte versies van 
 
 - [Wat is er nieuw in Microsoft Intune?](whats-new.md) Dit onderwerp wordt maandelijks bijgewerkt met de service-update en wekelijks wanneer er bijvoorbeeld apps zoals de bedrijfsportal-app worden vrijgegeven.
 
-- Belangrijke updates van de service worden ook aangekondigd in het berichtencentrum van de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Als u de bijbehorende [mobiele Office 365-beheer-app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installeert, kunt u meldingen ontvangen op uw mobiele apparaat. Lees hier meer over het werken met het [berichtencentrum voor Office 365](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates).
+- Belangrijke updates van de service worden ook aangekondigd in het berichtencentrum van de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Als u de bijbehorende [mobiele Office 365-beheer-app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installeert, kunt u meldingen ontvangen op uw mobiele apparaat. Lees hier meer over het werken met het [berichtencentrum voor Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
     Een paar nuttige tips:
 

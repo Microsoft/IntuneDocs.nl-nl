@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0fe556eaf548d51b35c843ee313264244144f9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fd407b8b933c7edce449cd25a9fbd53f4299fcc3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>Intune-licenties toewijzen aan uw gebruikersaccounts
 
@@ -52,7 +52,7 @@ Als u een licentie voor Intune for Education toewijst, zorg er dan voor dat er o
 
 ![Afbeelding van het instellen van de productlicentie](./media/i4e-set-licenses.png)
 
-Zie [Overzicht van Schoolgegevens synchroniseren](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US) voor meer informatie over SDS.
+Zie [Overzicht van Schoolgegevens synchroniseren](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) voor meer informatie over SDS.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Invloed van gebruikers en apparaatlicenties op toegang tot services
 * Elke **gebruiker** aan wie u een gebruikerslicentie voor software toewijst, kan de online services en bijbehorende software (inclusief System Center-software) openen en gebruiken voor het beheren van toepassingen en maximaal 15 apparaten.

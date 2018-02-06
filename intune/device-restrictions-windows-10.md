@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
 
@@ -254,7 +254,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
 ## <a name="kiosk-preview"></a>Kiosk (preview)
 
--   **Kioskmodus**: hiermee identificeert u het type [kioskmodus](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) dat wordt ondersteund door het beleid. Opties zijn onder andere:
+-   **Kioskmodus**: hiermee identificeert u het type [kioskmodus](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) dat wordt ondersteund door het beleid. Opties zijn onder andere:
 
       - **Niet geconfigureerd** (standaard): door het beleid wordt geen kioskmodus ingeschakeld. 
       - **Kiosk voor één enkele app**: het profiel schakelt het apparaat in als kiosk voor één enkele app.
@@ -266,7 +266,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
          Voor apparaten in openbare omgevingen, gebruikt u accounts met minimale bevoegdheden om geautoriseerde activiteit te voorkomen.  
 
-      - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
+      - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
     Voor kiosken voor meerdere apps is een kioskconfiguratie vereist. Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
 
@@ -280,13 +280,13 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
             - **Win32-App**: een traditionele bureaublad-app. (U hebt de volledige padnaam nodig van het uitvoerbare bestand met betrekking tot het apparaat.)
 
-            - **UWP-app**: een universele Windows-app. U hebt de [AUMID voor de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
+            - **UWP-app**: een universele Windows-app. U hebt de [AUMID voor de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
 
-        - **App-id**: hiermee geeft u de volledige padnaam van het uitvoerbare bestand (Win32-apps) of de [AUMID van de app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) aan.
+        - **App-id**: hiermee geeft u de volledige padnaam van het uitvoerbare bestand (Win32-apps) of de [AUMID van de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) aan.
 
     - **Taakbalk** geeft aan of de taakbalk wordt weergegeven (**Ingeschakeld**) of verborgen (**Niet geconfigureerd**) op de kiosk.
 
-    - **Indeling van het menu Start**: hiermee geeft u een XML-bestand aan dat beschrijft hoe de apps [worden weergegeven in het menu Start](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Indeling van het menu Start**: hiermee geeft u een XML-bestand aan dat beschrijft hoe de apps [worden weergegeven in het menu Start](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Toegewezen gebruikers**: hiermee geeft u een of meer gebruikersaccounts aan die zijn gekoppeld aan de configuratie van de kiosk. Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app. Geef domeinaccounts aan in de vorm van `domain\\username@tenant.org`.
 
