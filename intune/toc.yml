@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Algemene scenario's
       href: common-scenarios.md
+    - name: VEELGESTELDE VRAGEN OVER MAM
+      href: mam-faq.md
 - name: Implementatie van abonnementen
   items:
     - name: Planning a DPM Deployment`(Een DPM-implementatie plannen)
