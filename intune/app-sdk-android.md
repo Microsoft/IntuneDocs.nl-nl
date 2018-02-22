@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3efc522b8b788a0cb6cd1bbc6d04ce7545890de3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -1311,9 +1311,9 @@ public interface MAMAppConfig {
 App-configuratie voegt een nieuw type melding toe:
 * **REFRESH_APP_CONFIG**: deze melding wordt verzonden in een `MAMUserNotification` om de app te informeren dat er nieuwe configuratiegegevens voor de app beschikbaar zijn.
 
-Zie het onderwerp over [op MAM gerichte configuratie in de Engelstalige Graph API-naslaghandleiding](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie over de mogelijkheden van Graph API met betrekking tot de op MAM gerichte configuratiewaarden. <br>
+Zie [Graph API Reference MAM Targeted Config]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie over de mogelijkheden van de Graph API met betrekking tot de beoogde MAM-configuratiewaarden. <br>
 
-Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in Android, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android) (App-configuratiebeleid van Microsoft Intune voor Android gebruiken).
+Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in Android, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android) (App-configuratiebeleid van Microsoft Intune voor Android gebruiken).
 
 ## <a name="style-customization-optional"></a>Stijlaanpassing (optioneel)
 
@@ -1366,7 +1366,7 @@ Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten 
 ### <a name="working-with-the-intune-sdk"></a>Werken met de Intune SDK
 Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligingsbeleid voor apps in Intune willen vereisen voor gebruik op een apparaat van een eindgebruiker.
 
-1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > De term client-id die is gekoppeld aan uw app is hetzelfde als de term toepassings-id van Azure Portal. 
 * Voor het inschakelen van eenmalige aanmelding is Common ADAL configuration #2 vereist.
@@ -1427,7 +1427,7 @@ De Intune SDK onderhoudt het contract geleverd door de Android-API, hoewel er va
 De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld.
 
 > [!NOTE]
-> Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
+> Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
 
 ## <a name="recommended-android-best-practices"></a>Aanbevolen procedures voor Android
 

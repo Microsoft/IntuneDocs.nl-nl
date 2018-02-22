@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Documentatie voor configuratiebeleid van Microsoft Intune
 
@@ -117,6 +117,6 @@ Microsoft Intune biedt nu afzonderlijk **configuratiebeleid** voor elk apparaatp
 |**Microsoft Intune Center-instellingen**|Details configureren die worden weergegeven in het Microsoft Intune Center op beheerde computers.<br /><br />Dit type beleid kan alleen worden geïmplementeerd op groepen van apparaten.<br /><br />Zie [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient voor meer informatie](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Windows Firewall-instellingen**|Hiermee worden Windows Firewall-instellingen en -uitzonderingen geconfigureerd voor algemene netwerkcommunicatie op computers, waaronder:<br /><br />- BranchCache<br />-   Hulp op afstand<br />- Media delen<br /><br />Dit type beleid kan alleen worden geïmplementeerd op groepen van apparaten.<br /><br />Zie [Windows-pc's beter beveiligen met Endpoint Protection voor Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) voor meer informatie.|
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

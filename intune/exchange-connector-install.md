@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39fb4b4b91eb6769eb1d5d95736cbbde141c6812
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange Connector instellen in Microsoft Intune Azure
 
@@ -39,7 +39,7 @@ De volgende tabel bevat de vereisten voor de computer waarop u On-premises Excha
 
 |Vereiste|Meer informatie|
 |---------------|--------------------|
-|Besturingssystemen|Intune ondersteunt On-premises Exchange Connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012 of Windows Server 2012 R2 wordt uitgevoerd.<br /><br />Connector wordt niet ondersteund op een Server Core-installatie.|
+|Besturingssystemen|Intune ondersteunt On-premises Exchange Connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 of Windows Server 2016 wordt uitgevoerd.<br /><br />Connector wordt niet ondersteund op een Server Core-installatie.|
 |Microsoft Exchange|On-premises Connector vereist Microsoft Exchange 2010 SP1 of hoger, of het oudere Exchange Online-specifiek. Om te bepalen of uw omgeving met Exchange Online-specifiek de **nieuwe** of **verouderde** configuratie heeft, neemt u contact op met uw accountmanager.|
 |Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
 |Hardware|De computer waarop u de connector installeert, vereist een 1,6 GHz CPU met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte.|users- add.md
@@ -152,7 +152,7 @@ U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging contro
 
 ### <a name="system-center-operations-manager-scom-management-pack"></a>Management pack van System Center Operations Manager (SCOM)
 
-Vanaf release 1710 Intune kunt u het [management pack van System Center Operations Manager (SCOM) voor Exchange-connector en Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) gebruiken. Hiermee kunt u de Exchange-connector op verschillende manieren controleren wanneer u problemen moet oplossen.
+Vanaf release 1710 Intune kunt u het [management pack van System Center Operations Manager (SCOM) voor Exchange-connector en Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) gebruiken. Hiermee kunt u de Exchange-connector op verschillende manieren controleren wanneer u problemen moet oplossen.
 
 ## <a name="next-steps"></a>Volgende stappen
 [Een beleid maken voor voorwaardelijke toegang voor Exchange On-Premises](conditional-access-exchange-create.md)

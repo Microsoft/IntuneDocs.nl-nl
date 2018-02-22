@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -33,9 +33,10 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de 
 
 - Op de apparaten waarop u deze apps implementeert, moet de Microsoft Windows 10-makersupdate of hoger zijn geïnstalleerd.
 - Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus 2016.
-- Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, verliezen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden.
-- Deze installatiemethode wordt niet in Windows 10S-apparaten ondersteund.
+- Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, kan de installatie mogelijk mislukken en kunnen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden verliezen.
+- Deze installatiemethode wordt niet ondersteund op apparaten met Windows 10S, Windows Home, Windows Team, Windows Holographic en Windows Holographic for Business.
 - Intune biedt geen ondersteuning voor het installeren van Office 365-desktop-apps vanuit Microsoft Store (die ook wel bekend staan als Office Centennial-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.
+- Meerdere vereiste of beschikbare app-toewijzingen tellen niet mee. Een latere app-toewijzing overschrijft reeds bestaande geïnstalleerde app-toewijzingen. Als de eerste set met Office-apps bijvoorbeeld Word bevat maar de laatste set niet, dan wordt Word verwijderd. Dit geldt niet voor Visio- of Project-toepassingen.
 
 
 ## <a name="get-started"></a>Aan de slag

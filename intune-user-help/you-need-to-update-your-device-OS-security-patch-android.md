@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ef8d10a1bc06234930ae32a2ce0dc8b1503e89d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3851095689f194a2133aaa1b0ac8712098662226
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>U moet het besturingssysteem van uw Android-apparaat bijwerken
 
-Als er een bericht wordt weergegeven met de boodschap dat het minimale niveau voor de Android-beveiligingspatch niet is geconfigureerd, moet u een update installeren om de beveiliging van uw apparaat te waarborgen. Een _patch_ wordt uitgebracht om ervoor te zorgen dat uw software probleem blijft werken en up-to-date is. Het ondersteuningsteam van uw bedrijf wil dat u deze patch installeert om ervoor te zorgen dat de bedrijfsgegevens op uw apparaat zo goed mogelijk worden beveiligd. De locatie van de benodigde beveiligingspatch varieert en is afhankelijk van het specifieke type Samsung-apparaat dat u hebt.
+Als er een bericht wordt weergegeven met de boodschap dat het minimale niveau voor de Android-beveiligingspatch niet is geconfigureerd, moet u een update installeren om de beveiliging van uw apparaat te waarborgen. Een _patch_ wordt uitgebracht om ervoor te zorgen dat uw software probleem blijft werken en up-to-date is. Het ondersteuningsteam van uw bedrijf wil dat u deze patch installeert om ervoor te zorgen dat de bedrijfsgegevens op uw apparaat zo goed mogelijk worden beveiligd. De locatie van de benodigde beveiligingspatch varieert en is afhankelijk van het type Android-apparaat dat u hebt.
 
 Als u een Samsung-apparaat hebt, gaat u naar **Instellingen** > **Over de telefoon** en controleert u of ergens 'Knox' wordt weergegeven op het scherm. Als dit het geval is, volgt u de onderstaande instructies voor Samsung Knox.
 

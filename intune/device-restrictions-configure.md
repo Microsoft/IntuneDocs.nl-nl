@@ -15,17 +15,23 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd21d6e87dfa142fe9e3ef4d9bbbc0be87eca9b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen die u voor diverse categorieën beheert, waaronder beveiliging, browsers, hardware en instellingen voor het delen van gegevens. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
+Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen die u voor diverse categorieën beheert, waaronder:
+- Beveiliging
+- Browser
+- Hardware
+- Instellingen voor gegevensdeling
+
+U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
 
 Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginselen voor het configureren van apparaatbeperkingsprofielen en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
 
@@ -44,7 +50,7 @@ U maakt als volgt een apparaatprofiel met apparaatbeperkingsinstellingen:
     - **Windows Phone 8.1**
     - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
-6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Apparaatbeperkingen**. Als u een apparaatbeperkingsprofiel wilt maken voor Windows 10 Team-apparaten, zoals Surface Hub, kiest u **Apparaatbeperkingen (Windows 10 Team)**.
+6. Kies **Apparaatbeperkingen** in de vervolgkeuzelijst **Profieltype**. Als u een apparaatbeperkingsprofiel wilt maken voor Windows 10 Team-apparaten, zoals Surface Hub, kiest u **Apparaatbeperkingen (Windows 10 Team)**.
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
     - [Android-instellingen](device-restrictions-android.md)
     - [iOS-instellingen](device-restrictions-ios.md)
@@ -53,6 +59,7 @@ U maakt als volgt een apparaatprofiel met apparaatbeperkingsinstellingen:
     - [Windows 8.1](device-restrictions-windows-8-1.md)
     - [Windows 10-instellingen](device-restrictions-windows-10.md)
     - [Windows 10 Team-instellingen](device-restrictions-windows-10-teams.md)
+    - [Instellingen van Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Android for Work-instellingen](device-restrictions-android-for-work.md)
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 

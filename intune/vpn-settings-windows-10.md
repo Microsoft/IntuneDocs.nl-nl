@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d126853051bb4a6c2f1ea6fbd54195ae06254b51
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows 10-apparaten in Microsoft Intune
 
@@ -25,17 +25,20 @@ ms.lasthandoff: 01/29/2018
 
 Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volgende lijst worden geconfigureerd.
 
+> [!NOTE]
+> Deze instellingen zijn ook van toepassing op apparaten met Windows Holographic for Business.
+
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
 
-- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers kunnen deze naam zien wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
+- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
 - **Servers**: voeg een of meer VPN-servers toe waarmee de apparaten verbinding maken.
     - **Toevoegen**: hiermee opent u de blade **Rij toevoegen** waar u de volgende informatie kunt opgeven:
         - **Beschrijving**: geef een beschrijvende naam op voor de server, zoals **Contoso VPN-server**.
         - **IP-adres of FQDN**: geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.
         - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
-    - **Importeren**: blader naar een bestand met een kommagescheiden lijst met servers in de indelingsbeschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze in de lijst **Servers** te importeren.
+    - **Importeren**: blader naar een bestand met een door komma’s gescheiden lijst met servers in de indelingsbeschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze in de lijst **Servers** te importeren.
     - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand).
 
 **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
@@ -78,9 +81,9 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer informatie over het schrijven van aangepaste XML-opdrachten.
+Raadpleeg de VPN-documentatie van de fabrikant voor meer informatie over het schrijven van aangepaste XML-opdrachten.
 
-Zie [EAP-configuratie](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration) voor meer informatie over het maken van aangepaste XML-EAP.
+Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration) voor meer informatie over het maken van aangepaste XML-EAP.
 
 **Split tunneling** - : u kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
 - **Split tunneling-routes voor deze VPN-verbinding**: voeg desgewenst routes voor VPN-providers van derden toe. Geef voor elk een bestemmingsvoorvoegsel en vaste grootte op.
@@ -98,7 +101,7 @@ Zie [EAP-configuratie](https://docs.microsoft.com/en-us/windows/client-managemen
 
 ## <a name="conditional-access"></a>Voorwaardelijke toegang
 
-**Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als deze is ingeschakeld, zal de VPN-client proberen te communiceren met Azure Active Directory om een certificaat te ontvangen dat voor verificatie kan worden gebruikt. De VPN moet worden ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server die door Azure Active Directory wordt geretourneerd vertrouwen.
+**Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als deze is ingeschakeld, probeert de VPN-client te communiceren met Azure Active Directory om een certificaat te ontvangen dat voor verificatie kan worden gebruikt. De VPN moet worden ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server die door Azure Active Directory wordt geretourneerd vertrouwen.
 
 **Eenmalige aanmelding (SSO) met alternatief certificaat**: gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Geef de volgende instellingen op voor het certificaat: 
 
@@ -117,7 +120,7 @@ Voor elke server. geef op:
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
 - **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of apparaten de verbindingsinstellingen automatisch moeten detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
+- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com) in die het configuratiebestand bevat.
 - **Proxyserver gebruiken**: schakel deze optie in als u de proxyserverinstellingen handmatig wilt invoeren.
     - **Adres**: voer het adres van de proxyserver in (als IP-adres).
     - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.

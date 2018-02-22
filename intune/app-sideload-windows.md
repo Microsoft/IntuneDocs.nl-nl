@@ -1,6 +1,6 @@
 ---
 title: Windows- en Windows Phone-apps voor Intune sideloaden
-description: Leer hoe u line-of-business-apps ondertekent, zodat u Intune kunt gebruiken voor de implementatie van deze apps.
+description: Leer hoe u Line-Of-Business-apps ondertekent, zodat u Intune kunt gebruiken voor de implementatie van deze apps.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: f94e95ec93ba98c55ca69ee5ef59cd20d16eff37
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 

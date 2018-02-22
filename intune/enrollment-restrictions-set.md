@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -31,7 +31,7 @@ Als Intune-beheerder kunt u registratiebeperkingen maken en beheren om het aanta
 >Inschrijvingsbeperkingen vormen geen beveiligingsfuncties. Aangetaste apparaten kunnen zich anders voordoen dan ze in werkelijkheid zijn. Deze beperkingen zijn een best-effort barrière voor niet-kwaadwillende gebruikers.
 
 >[!NOTE]
->De aan de groep toegewezen registratiebeperking en prioriteitsfunctionaliteit die hieronder worden genoemd, worden geïmplementeerd in het gehele Intune-klantenbestand. Als deze implementatie nog niet is voltooid, hebt u mogelijk geen toegang tot de groep en prioriteitsfuncties. 
+>De aan de groep toegewezen registratiebeperking en prioriteitsfunctionaliteit die hieronder worden genoemd, worden geïmplementeerd in het gehele Intune-klantenbestand. Als deze implementatie nog niet is voltooid, hebt u mogelijk geen toegang tot de groep en prioriteitsfuncties.
 
 U kunt onder ander de volgende registratiebeperkingen maken:
 
@@ -80,7 +80,7 @@ U kunt de instellingen voor een beperking van het type apparaat als volgt wijzig
   - Android- en Android for Work ondersteunen major.minor.rev.build.
   - iOS ondersteunt major.minor.rev.
   - Windows ondersteunt alleen major.minor.rev.build voor Windows 10.
-  Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die zijn ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator. 
+  Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die zijn ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
 8. Geef voor elk vermeld platform op of u apparaten die **persoonlijk eigendom zijn** wilt **Toestaan** of **Blokkeren**.
 
     ![Schermopname van de werkruimte Apparaatbeperkingen met de standaard-apparaatplatformconfiguraties met instellingen voor apparaten die persoonlijk eigendom zijn.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ U kunt de instellingen voor een beperking van de apparaatlimiet als volgt wijzig
     ![Schermopname van de blade Apparaatlimietbeperkingen met beperkingen voor het aantal apparaten.](./media/device-restrictions-limit.png)
 6. Klik op **Opslaan**.
 
+Er wordt een melding aan eindgebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. In iOS ziet dit er bijvoorbeeld als volgt uit:
+
+![Schermafbeelding van limietmelding op iOS-apparaat](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>De prioriteit van de registratiebeperking wijzigen
 
-Prioriteit wordt gebruikt wanneer een gebruiker voorkomt in meerdere groepen waaraan beperkingen zijn toegewezen. Voor gebruikers gelden alleen de hoogste prioriteitsbeperkingen die aan de groep waarvan zij deel uitmaken zijn toegewezen. Bijvoorbeeld, Jos maakt deel uit van groep A waaraan beperkingen met prioriteit 5 zijn toegewezen. Bovendien maakt hij deel uit van groep B waaraan beperkingen met prioriteit 2 zijn toegewezen. Voor Jan gelden alleen de beperkingen met prioriteit 2. 
+Prioriteit wordt gebruikt wanneer een gebruiker voorkomt in meerdere groepen waaraan beperkingen zijn toegewezen. Voor gebruikers gelden alleen de hoogste prioriteitsbeperkingen die aan de groep waarvan zij deel uitmaken zijn toegewezen. Bijvoorbeeld, Jos maakt deel uit van groep A waaraan beperkingen met prioriteit 5 zijn toegewezen. Bovendien maakt hij deel uit van groep B waaraan beperkingen met prioriteit 2 zijn toegewezen. Voor Jan gelden alleen de beperkingen met prioriteit 2.
 
 Wanneer u een beperking maakt, wordt deze net boven de standaardbeperking in de lijst geplaatst.
 
-Voor apparaatinschrijving gelden standaardbeperkingen voor zowel het apparaattype als de apparaatlimiet. Deze twee beperkingen gelden voor alle gebruikers, tenzij ze worden overschreven door beperkingen met een hogere prioriteit. 
+Voor apparaatinschrijving gelden standaardbeperkingen voor zowel het apparaattype als de apparaatlimiet. Deze twee beperkingen gelden voor alle gebruikers, tenzij ze worden overschreven door beperkingen met een hogere prioriteit.
 
-U kunt de prioriteit van een niet-standaard-beperking wijzigen. 
+U kunt de prioriteit van een niet-standaard-beperking wijzigen.
 
 **Prioriteit van beperkingen wijzigen**
 
@@ -120,8 +124,3 @@ U kunt de prioriteit van een niet-standaard-beperking wijzigen.
 3. Kies **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
 4. Beweeg de muisaanwijzer over de beperking in de lijst met prioriteiten.
 5. Sleep de drie verticale puntjes voor de prioriteit naar de gewenste positie in de lijst.
-
-
-
-
-

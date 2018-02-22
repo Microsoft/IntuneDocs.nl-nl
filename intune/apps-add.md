@@ -3,7 +3,7 @@ title: Apps toevoegen aan Microsoft Intune
 titlesuffix: Azure portal
 description: Met deze procedures kunt u ervoor zorgen dat uw apps in Intune gereed zijn voor toewijzing aan gebruikers en apparaten. "
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/17/2018
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4c753ebfc48365d0d586773585552026ad17b6f6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Een app toevoegen aan Microsoft Intune
 
@@ -33,6 +33,7 @@ In Intune kunt u deze typen apps toevoegen en toewijzen:
 | Apps op internet                           | Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het beginscherm van het apparaat          | App-updates worden automatisch uitgevoerd     |
 | Apps die intern zijn ontwikkeld (line-of-business)  | De app wordt door Intune op het apparaat geïnstalleerd (u levert het installatiebestand)    | U moet de app bijwerken       |
 | Apps uit de Store                       | De app wordt door Intune op het apparaat geïnstalleerd                                       | App-updates worden automatisch uitgevoerd     |
+| Apps die ingebouwd zijn                        | De app wordt door Intune op het apparaat geïnstalleerd                                       | App-updates worden automatisch uitgevoerd     |
 
 
 Naast web-apps biedt Intune ondersteuning voor de volgende specifieke platformen voor Store-apps en LOB-apps:
@@ -49,6 +50,7 @@ Naast web-apps biedt Intune ondersteuning voor de volgende specifieke platformen
     - iOS LOB-apps (Line-of-Business)
     - Windows Phone LOB-apps (XAP-bestanden)
     - Windows LOB-apps (alleen MSI-bestanden)
+- Ingebouwde apps    
 
 >[!TIP]
 > Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS wilt installeren, voegt u de toepassing toe door op de blade **App toevoegen** de optie **LOB-app** als het **app-type** te kiezen. Selecteer vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
@@ -147,4 +149,5 @@ Kies een van de volgende onderwerpen om erachter te komen hoe u apps voor elk pl
 - [Windows Store-apps](store-apps-windows.md)
 - [Windows LOB-app](lob-apps-windows.md)
 - [Office 365-apps voor Windows 10](apps-add-office365.md)
+- [Ingebouwde apps](apps-add-bulit-in.md)
 

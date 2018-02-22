@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9faaacb321dfd13c053768ea27f0cca38b30d077
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Uw apparaat extern vergrendelen op de website van de bedrijfsportal
 

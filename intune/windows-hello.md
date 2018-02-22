@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Windows Hello voor Bedrijven gebruiken
 
@@ -71,7 +69,7 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
      - **Vereist** (standaard). Alleen apparaten met een toegankelijke TPM kunnen Windows Hello voor Bedrijven inrichten.
      - **Voorkeur**. Apparaten proberen eerst een TPM te gebruiken. Als deze niet beschikbaar is, kunnen ze softwareversleuteling gebruiken.
 
- - **Minimumlengte voor pincode vereisen**/**Maximumlengte voor pincode vereisen**. Hiermee configureert u apparaten om de opgegeven minimum- en maximumlengte van de pincode te gebruiken voor het beveiligen van de aanmelding. De standaardwaarde voor de pincode is 6 tekens, maar u kunt een minimumlengte van 4 tekens afdwingen. De maximumlengte voor de pincode is 127 tekens.
+ - **Minimumlengte voor pincode vereisen**/**Maximumlengte voor pincode vereisen**. Hiermee configureert u apparaten om de opgegeven minimum- en maximumlengte van de pincode te gebruiken voor het beveiligen van de aanmelding. De standaardwaarde voor de pincode is zes tekens, maar u kunt een minimumlengte van vier tekens afdwingen. De maximumlengte voor de pincode is 127 tekens.
 
  - **Kleine letters voor pincode vereisen**/**Hoofdletters voor pincode vereisen**/**Speciale tekens voor pincode vereisen**. U kunt zorgen voor sterkere pincodes door het gebruik van kleine letters, hoofdletters en speciale tekens voor de pincode af te dwingen. U kunt kiezen uit:
 
@@ -94,6 +92,18 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
  - **Aanmelding met telefoon**. Als u deze optie instelt op **Ja**, kunnen gebruikers een extern passport gebruiken als draagbaar begeleidingsapparaat voor verificatie op desktopcomputers. De computer moet zijn toegevoegd aan Azure Active Directory en het begeleidingsapparaat moet worden geconfigureerd met een pincode voor Windows Hello voor Bedrijven.
 
+## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
+
+De volgende instellingen voor Windows Hello for Business worden in Windows Holographic for Business ondersteund:
+
+- Een Trusted Platform Module (TPM) gebruiken
+- Minimumlengte voor pincode
+- Maximumlengte voor pincode
+- Kleine letters in pincode
+- Hoofdletters in pincode
+- Speciale tekens in pincode
+- Verlooptijd pincode (dagen)
+- Pincodegeschiedenis onthouden
 
 ## <a name="further-information"></a>Meer informatie
 Zie [de gids](https://technet.microsoft.com/library/mt589441.aspx) in de documentatie van Windows 10 voor meer informatie over Microsoft Passport.

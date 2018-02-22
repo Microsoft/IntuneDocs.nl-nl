@@ -150,3 +150,4 @@
 #### [Ik wil Windows Defender inschakelen](turn-on-defender-windows.md)
 
 ## [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
+### [Uw apparaat op afstand vergrendelen](remote-lock-your-device-cpwebsite.md)

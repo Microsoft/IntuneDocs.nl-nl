@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
 
@@ -268,7 +268,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
       - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
-    Voor kiosken voor meerdere apps is een kioskconfiguratie vereist. Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
+    [Voor kiosken voor meerdere apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) is een kioskconfiguratie vereist. Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
 
     Configuraties voor kiosken voor meerdere apps bevatten de volgende instellingen:
 

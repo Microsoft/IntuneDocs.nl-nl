@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13edf33aba614337d18806b3442668e74a9295dc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f304e07de7ceefb09152aeb30d113c378e716d38
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -143,7 +143,7 @@ Met de entiteit **MdmStatuses** wordt de nalevingsstatus van het apparaat aangeg
 |---------|------------|--------|
 | 0 |Onbekend |De nalevingsstatus van het apparaat is onbekend. |
 | 1 |Compliant |Het apparaat voldoet aan het nalevingsbeleid. |
-| 2 |Noncompliant |Het apparaat voldoet niet aan het nalevingsbeleid. |
+| 2 |Noncompliant |Het apparaat is niet compatibel. |
 | 3 |Conflict |De nalevingsstatus van het apparaat heeft een conflict veroorzaakt. |
 | 4 |Fout |Er is een fout opgetreden bij het lezen van de nalevingsstatus van het apparaat. |
 

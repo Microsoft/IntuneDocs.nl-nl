@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -50,7 +50,7 @@ Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#
     > [!NOTE]
     > In bepaalde gevallen kan de 32-bits versie van Java leiden tot geheugenproblemen. Het is verstandig de 64-bits versie te installeren.
 
-- Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
+- Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
 
 ## <a name="install-the-app-wrapping-tool"></a>De App Wrapping Tool installeren
 
@@ -119,7 +119,7 @@ De belangrijkste scenario's waarin u uw toepassingen opnieuw moet verpakken, zij
 * Er is een nieuwe versie uitgebracht van de Intune App Wrapping Tool voor Android, met oplossingen voor belangrijke problemen of nieuwe beveiligingsbeleidskenmerken specifiek voor de Intune-toepassing. Dit gebeurt elke 6-8 weken via de GitHub-opslagplaats van de [Microsoft Intune App Wrapping Tool voor Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Enkele best practices voor opnieuw verpakken: 
-* Ondertekeningscertificaten onderhouden die tijdens het bouwproces zijn gebruikt. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* Ondertekeningscertificaten onderhouden die tijdens het bouwproces zijn gebruikt. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Ondertekeningscertificaten hergebruiken en apps verpakken
 Android vereist dat alle apps zijn ondertekend met een geldig certificaat voordat ze kunnen worden geïnstalleerd op Android-apparaten.
@@ -158,7 +158,7 @@ Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten 
 ### <a name="working-with-the-intune-sdk"></a>Werken met de Intune SDK
 Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligingsbeleid voor apps in Intune willen vereisen voor gebruik op een apparaat van een eindgebruiker.
 
-1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > De term client-id die is gekoppeld aan uw app is hetzelfde als de term toepassings-id van de Azure Portal die aan uw app is gekoppeld. 
 * Voor het inschakelen van eenmalige aanmelding is Common ADAL configuration #2 vereist.
@@ -174,4 +174,4 @@ Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligi
 ### <a name="see-also"></a>Zie ook
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)
 
-- [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android](app-sdk-android.md)

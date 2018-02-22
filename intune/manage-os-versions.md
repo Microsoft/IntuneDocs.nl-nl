@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78abef01e968b59b81a74dcd6b67df31dbf29def
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Besturingssysteemversies beheren met Intune
 Op moderne mobiele en bureaubladplatformen volgen belangrijke updates, patches en nieuwe versie elkaar in hoog tempo op. U hebt de middelen om updates en patches voor Windows volledig te beheren, maar bij andere platformen, zoals iOS en Android, is de medewerking van uw eindgebruikers vereist.  Microsoft Intune biedt de mogelijkheid om het beheer van besturingssysteemversies voor meerdere platformen beter te structureren.
@@ -35,7 +35,7 @@ Organisaties gebruiken apparaattypebeperkingen om de toegang tot bedrijfsmiddele
 1. Gebruik een minimale besturingssysteemversie zodat eindgebruikers werken op actuele en ondersteunde platformen binnen de organisatie. 
 2. Laat de hoogste besturingssysteemversie ongedefinieerd (geen limiet) of stel die in op dat de laatste door uw organisatie gevalideerde versie, zodat u tijd hebt om nieuwe versies van besturingssystemen intern te testen.
 
-Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions) voor meer informatie.
+Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions) voor meer informatie.
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Rapportage over besturingssysteemversies en naleving van het Intune MDM-nalevingsbeleid voor apparaten
 Het Intune MDM-nalevingsbeleid voor apparaten biedt u de volgende hulpmiddelen: 
@@ -50,7 +50,7 @@ Net zoals inschrijvingsbeperkingen bevat het nalevingsbeleid voor apparaten zowe
 ### <a name="in-practice"></a>In de praktijk
 Organisaties gebruiken nalevingsbeleid voor apparaten in dezelfde scenario’s als inschrijvingsbeperkingen. Dit beleid zorgt ervoor dat gebruikers binnen uw organisatie werken met actuele, gevalideerde besturingssysteemversies. Als een apparaat van een gebruiker niet meer aan het nalevingsbeleid voldoet, kan de toegang tot bedrijfsmiddelen worden geblokkeerd met voorwaardelijke toegang, tot de eindgebruikers weer een ondersteunde besturingssysteemversie voor de organisatie hebben. Eindgebruikers worden op de hoogte gesteld van de niet-naleving en de stappen die ze moeten uitvoeren om weer toegang te krijgen.   
 
-Zie [Aan de slag met apparaatnaleving](https://docs.microsoft.com/en-us/intune/device-compliance-get-started) voor meer informatie.
+Zie [Aan de slag met apparaatnaleving](https://docs.microsoft.com/intune/device-compliance-get-started) voor meer informatie.
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Beheer van besturingssysteemversies met Intune-beveiligingsbeleid voor apps    
 Met het Intune-beveiligingsbeleid voor apps en de instellingen voor toegang in het beheer van mobiele toepassingen (MAM) kunt u de minimale versie van het besturingssysteem instellen op app-niveau. Hiermee kunt u eindgebruikers informatie geven en ze aanmoedigen of verplichten om hun besturingssysteem te updaten naar minimaal een bepaalde versie.
@@ -82,6 +82,6 @@ U kunt de mogelijkheden van Intune die in dit artikel worden beschreven gebruike
 ## <a name="next-steps"></a>Volgende stappen
 U kunt de volgende hulpmiddelen gebruiken voor het beheer van besturingssysteemversies in uw organisatie: 
 
-- [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Aan de slag met apparaatnaleving](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Aan de slag met apparaatnaleving](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [App-beveiligingsbeleid maken en toewijzen](https://docs.microsoft.com/intune/app-protection-policies)

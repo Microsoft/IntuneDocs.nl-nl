@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: d3c176b84a8555de245a1f4014c39885e50ab21d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 009759aa826872fc2c608c6786749d6706cd2f93
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="configure-app-protection-policies-optional"></a>Beveiligingsbeleid voor apps configureren (optioneel)
 
@@ -33,7 +33,7 @@ Met het beveiligingsbeleid voor apps wordt beveiliging toegepast op appniveau en
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Beveiligingsbeleid voor apps bij LOB-apps
 
-U kunt het beveiligingsbeleid voor mobiele apps ook uitbreiden naar uw LOB-apps (line-of-business) door gebruik te maken van de [Microsoft Intune App SDK](app-sdk-get-started.md) of de Microsoft Intune App Wrapping Tool voor zowel het [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)- als [Android](https://www.microsoft.com/download/details.aspx?id=47267)-platform.
+U kunt het beveiligingsbeleid voor mobiele apps ook uitbreiden naar uw LOB-apps (Line-Of-Business) door gebruik te maken van de [Microsoft Intune App SDK](app-sdk-get-started.md) of de Microsoft Intune App Wrapping Tool voor zowel iOS- als Android-platforms. Raadpleeg [App Wrapping Tool voor iOS](app-wrapper-prepare-ios.md) en [App Wrapping Tool voor Android](app-wrapper-prepare-android.md) voor meer informatie. Raadpleeg ook [LOB-apps voorbereiden voor app-beveiliging](apps-prepare-mobile-application-management.md).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Hoe draagt het beveiligingsbeleid voor apps bij aan de migratie?
 

@@ -287,6 +287,26 @@
           items:
             - name: Selectief wissen van apps
               href: apps-selective-wipe.md
+            - name: Beleidsregels voor de beveiliging van apps gebruiken
+              href: app-protection-policy.md
+              items:
+                - name: Beveiligingsbeleid voor apps maken
+                  href: app-protection-policies.md
+                  items:
+                    - name: Android-instellingen
+                      href: app-protection-policy-settings-android.md
+                    - name: iOS-instellingen
+                      href: app-protection-policy-settings-ios.md
+                - name: Beveiligingsbeleid voor apps valideren
+                  href: app-protection-policies-validate.md
+                - name: Gebruikersstatus voor app-beveiliging bewaken
+                  href: app-protection-policies-monitor.md
+                - name: Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen
+                  href: windows-information-protection-policy-create.md
+                - name: Gegevensoverdracht tussen iOS-apps beheren
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Apparaten configureren
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
           href: conditional-access-assign-jamf.md
-    - name: App- en apparaatgegevens beveiligen
+    - name: Apparaatgegevens beschermen
       items:
-        - name: Beleidsregels voor de beveiliging van apps gebruiken
-          href: app-protection-policy.md
-          items:
-            - name: Beveiligingsbeleid voor apps maken
-              href: app-protection-policies.md
-              items:
-                - name: Android-instellingen
-                  href: app-protection-policy-settings-android.md
-                - name: iOS-instellingen
-                  href: app-protection-policy-settings-ios.md
-            - name: Beveiligingsbeleid voor apps valideren
-              href: app-protection-policies-validate.md
-            - name: Gebruikersstatus voor app-beveiliging bewaken
-              href: app-protection-policies-monitor.md
-            - name: Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps
-              href: app-protection-policies-configure-windows-10.md
-            - name: Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen
-              href: windows-information-protection-policy-create.md
-            - name: Gegevensoverdracht tussen iOS-apps beheren
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: Datawarehouse-API-eindpunt
           href: reports-api-url.md
+        - name: Datawarehouse-verificatie enkel voor toepassing
+          href: data-warehouse-app-only-auth.md
         - name: Datawarehouse-gegevensmodel
           href: reports-ref-data-model.md
           items:

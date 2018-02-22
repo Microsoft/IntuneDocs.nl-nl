@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
@@ -90,7 +90,7 @@ Op een apparaat kan voorwaardelijke toegang zijn geblokkeerd zonder dat er een a
 - Zoek in de logboeken van de Exchange Connector naar EmailVerzenden-activiteiten en controleer of u fouten ziet. Een voorbeeld van de opdracht waar u naar moet zoeken is EmailVerzenden van meldingsaccount naar E-mailGebruiker.
 - Voordat het apparaat wordt geblokkeerd door de Exchange-Connector wordt de activerings-e-mail verzonden. Als het apparaat offline is, wordt de activerings-e-mail mogelijk niet ontvangen. Controleer of de e-mailclient op het apparaat e-mail ophaalt via Push in plaats van Poll, omdat dit er ook toe kan leiden dat de gebruiker de e-mail niet heeft ontvangen. Schakel over naar Poll en kijk of de e-mail op het apparaat wordt ontvangen.
 
-## <a name="non-compliant-device-not-blocked"></a>Niet-compatibel apparaat niet geblokkeerd
+## <a name="noncompliant-device-not-blocked"></a>Niet-compatibel apparaat niet geblokkeerd
 
 Als u een apparaat hebt dat niet compatibel is en er nog steeds toegang mee hebt, moet u de volgende stappen uitvoeren.
 

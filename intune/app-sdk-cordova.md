@@ -2,10 +2,10 @@
 title: Microsoft Intune App SDK Cordova-invoegtoepassing
 description: 
 keywords: sdk, Cordova, intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova-invoegtoepassing
 
-> [!NOTE]
-> U kunt desgewenst eerst het artikel [Aan de slag met Intune App SDK](app-sdk-get-started.md) lezen, waarin wordt uitgelegd hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
+> [!IMPORTANT]
+> Intune beëindigt de ondersteuning voor Microsoft Intune App SDK Cordova-invoegtoepassing op 1 mei 2018. We raden u aan in plaats daarvan de Intune App Wrapping Tool te gebruiken. Zie [App Wrapping Tool voor iOS](app-wrapper-prepare-ios.md) en [App Wrapping Tool voor Android](app-wrapper-prepare-android.md) voor meer informatie over de App Wrapping Tool. Zie het gedeelte [Meldingen](whats-new.md#notices) bij [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over deze kans.
 
 ## <a name="overview"></a>Overzicht
 
 De [Intune App SDK Cordova-invoegtoepassing](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS en Android-apps, gebouwd met Cordova. De invoegtoepassing biedt ontwikkelaars de mogelijkheid om beveiligingsfuncties voor de Intune-app en -gegevens te integreren in hun op Cordova gebaseerde app.
+
+> [!NOTE]
+> U kunt desgewenst eerst het artikel [Aan de slag met Intune App SDK](app-sdk-get-started.md) lezen, waarin wordt uitgelegd hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
 
 U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. Als u de invoegtoepassing in uw iOS- of Android-app hebt gemaakt, kan de Microsoft Intune-beheerder beveiligingsbeleid voor Intune-apps implementeren dat bestaat uit een diverse functies voor gegevensbeveiliging. De invoegtoepassing is zo ontwikkeld dat de meeste stappen automatisch worden uitgevoerd in het bouwproces voor Cordova. Dat zou het mogelijk moeten maken om uw app snel in te schakelen voor app-beveiliging van Intune. Volg de onderstaande stappen op basis van uw doelplatform om aan de slag te gaan.
 
@@ -65,7 +68,7 @@ Cordova-apps die zijn gemaakt met de Intune App SDK Cordova-invoegtoepassing kun
 
 
 
-## <a name="quick-start"></a>Snel starten
+## <a name="quickstart"></a>Snelstart
 
 1. Uw versie van ADAL bijwerken:
 

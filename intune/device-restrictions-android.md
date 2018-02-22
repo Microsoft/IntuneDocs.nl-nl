@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dc50fe1018bae0c13ddba51e5351f463d0ec1c8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0c2ebbe451f83dc14a9294c78a21ecfd30e5d155
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -119,7 +119,7 @@ Daarnaast kunt u geïnstalleerde apps opgegeven die voor de gebruiker van het ap
 
 Configureer voor elke instelling een lijst met apps aan de hand van een van de volgende methoden:
 
-- **Apps toevoegen op pakketnaam** - Hoofzakelijk gebruikt voor line-of-business-apps. Vul de naam van de app en de naam van het app-pakket in.
+- **Apps toevoegen op pakketnaam** - Hoofdzakelijk gebruikt voor Line-Of-Business-apps. Vul de naam van de app en de naam van het app-pakket in.
 - **Apps toevoegen op URL** - Vul de naam van de app en de URL in de Google Play Store in.
 - **Beheerde apps toevoegen** - Selecteer de app die u nodig hebt in de lijst met apps die u beheert met Intune.
 

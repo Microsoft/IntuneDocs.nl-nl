@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9859e13d8d1b39975d53bab159b204ef27560365
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0490f32629fb4ecbb6d66589c71cecce5172536
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Fouten naar de juiste personen verzenden voor uw beheerde macOS-apparaat
 
