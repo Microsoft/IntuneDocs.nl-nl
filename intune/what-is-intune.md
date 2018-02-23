@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: dougeby
-ms.date: 10/30/2017
+ms.date: 02/14/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,25 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6e2528c243938e81a6f730a950ee3949ca44047c
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Inleiding op Microsoft Intune in Azure Portal
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune bevindt zich nu in Azure Portal. Dit betekent dat de werkstromen en functionaliteit waarmee u bekend bent, zijn veranderd.
-De nieuwe portal biedt u nieuwe en bijgewerkte functionaliteit in Azure Portal waar u de mobiele apparaten, pc's en apps van uw bedrijf kunt beheren.
+Net als andere Azure-services is Microsoft Intune beschikbaar in Azure Portal. Als u **Intune** selecteert in Azure Portal, kunt u de mobiele apparaten, pc's en apps van uw organisatie beheren.
 
-* In [Waar is de functie die ik zoek gebleven in Azure?](ui-changes.md) kunt u nazoeken welke specifieke werkstromen en gebruiksinterfaces zijn veranderd bij de overgang naar Azure.
-* In [Klassieke Intune-groepen in Azure Portal](groups-get-started.md) worden de gevolgen uitgelegd van de overstap naar Azure Active Directory-beveiligingsgroepen voor groepsbeheer.
+>[!NOTE] 
+> Als u een eerdere versie van Microsoft Intune hebt gebruikt, is de volgende informatie mogelijk nuttig voor u:
+    * In [Waar is de functie die ik zoek gebleven in Azure?](ui-changes.md) kunt u nazoeken welke specifieke werkstromen en gebruiksinterfaces zijn veranderd bij de overgang naar Azure.
+    * In [Klassieke Intune-groepen in Azure Portal](groups-get-started.md) worden de gevolgen uitgelegd van de overstap naar Azure Active Directory-beveiligingsgroepen voor groepsbeheer.
 
-
-
-
-Informatie over de nieuwe portal vindt u in deze bibliotheek. Deze wordt voortdurend bijgewerkt. Als u suggesties hebt, kunt u feedback geven in de opmerkingen bij onderwerpen. We graag horen van u.
-
-Belangrijke functies van de nieuwe omgeving zijn onder andere:
+Belangrijke functies van de Microsoft Intune-ervaring in Azure Portal zijn onder andere:
 
 - Een geïntegreerde console voor al uw Enterprise Mobility + Security-onderdelen (EMS)
 - Een console op basis van HTML die is gebouwd op webstandaarden
@@ -61,41 +57,37 @@ Momenteel worden de volgende webbrowsers ondersteund:
 
 Controleer [Azure Portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) voor de meest recente informatie over ondersteunde browsers.
 
-## <a name="whats-in-this-library"></a>Wat bevat deze bibliotheek?
+## <a name="microsoft-intune-in-the-azure-portal"></a>Microsoft Intune in Azure Portal
 
-De documentatie volgt de indeling van de Azure-portal, zodat u snel de gewenste informatie vindt.
+U vindt de Microsoft Intune-service in [Azure Portal](https://portal.azure.com). Er zijn meerdere services beschikbaar in Azure, waarvan u een aantal wellicht niet regelmatig gebruikt. Zie [Aan de slag met Intune in Azure Portal](get-started-azure.md) voor een korte handleiding voor het aanpassen van uw portal-ervaring.
+
+## <a name="the-microsoft-intune-documentation"></a>Documentatie voor Microsoft Intune
+
+Dit onderwerp wordt net als de gehele Microsoft Intune-documentatieset voortdurend bijgewerkt. Als u suggesties hebt, kunt u feedback geven in de opmerkingen bij onderwerpen. We graag horen van u.
+
+De documentatie volgt de indeling van Microsoft Intune in Azure Portal (zie hieronder), zodat u snel de gewenste informatie vindt.
 
 ![Workloads in de Azure Portal](./media/azure-portal-workloads.png)
 
-### <a name="introduction-and-get-started"></a>Inleiding en aan de slag
-Deze sectie bevat [inleidende informatie](introduction-intune.md) die u aan de slag helpt met Intune.
-### <a name="plan-and-design"></a>Plannen en ontwerpen
-Informatie over het [plannen en ontwerpen](/intune-classic/plan-design/introduction) van uw Intune-omgeving.
-### <a name="device-enrollment"></a>Apparaatinschrijving
-[Uw apparaten laten beheren door Intune](device-enrollment.md).
-### <a name="device-compliance"></a>Apparaatnaleving
-[Een nalevingsniveau voor uw apparaten definiëren en vervolgens rapporteren over apparaten die hieraan niet voldoen](device-compliance.md).
-### <a name="device-configuration"></a>Apparaatconfiguratie
-[Begrijpen welke profielen u kunt gebruiken om instellingen en functies te configureren op apparaten die u beheert](device-profiles.md).
-### <a name="devices"></a>Apparaten
-[Meer informatie over de apparaten die u met inventaris en rapporten beheert](device-management.md).
-### <a name="mobile-apps"></a>Mobiele apps
-[Apps publiceren, beheren, configureren en beveiligen](app-management.md).
-### <a name="conditional-access"></a>Voorwaardelijke toegang
-[De toegang tot Exchange-services beperken op basis van voorwaarden die u hebt opgegeven](conditional-access.md).
-### <a name="on-premises-access"></a>Lokale toegang
-[Toegang tot Exchange ActiveSync en Exchange on-premises configureren](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
-### <a name="users"></a>Users
-[Meer informatie over de gebruikers van apparaten die u beheert en bronnen in groepen sorteren](users-add.md).
-### <a name="groups"></a>Groepen
-[Meer informatie over het gebruik van Azure Active Directory-groepen met Intune](groups-get-started.md)
-### <a name="intune-roles"></a>Intune-rollen
-[Bepalen welke personen verschillende Intune-acties kunnen uitvoeren en op welke personen deze acties van toepassing zijn](role-based-access-control.md). U kunt de ingebouwde rollen gebruiken die voorzien in bepaalde algemene Intune-scenario's of u kunt uw eigen rollen maken.
-### <a name="software-updates"></a>Software-updates
-[Meer informatie over de configuratie van software-updates voor Windows 10-apparaten](windows-update-for-business-configure.md).
+### <a name="documentation-guide"></a>Documentatiehandleiding
 
+Gebruik de volgende tabel om snel de belangrijkste gedeelten van Microsoft Intune te vinden en te begrijpen.
 
+| Sectie                                                      | Description                                                                                                                                                                                                                                                                                      |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Inleiding en aan de slag](introduction-intune.md)       | Inzicht in de basisbeginselen van Intune, waaronder:<br /> - Algemene oplossingen<br /> - De manier waarop Microsoft Intune werkt<br /> - Apparaatbeheer in Intune<br /> - App-beheer in Intune<br /> - Enterprise Mobility Management (EMM) met en zonder apparaatinschrijving                                                         |
+| [Plannen en ontwerpen](planning-guide.md)                         | Richtlijnen om uw Microsoft Intune-omgeving te plannen en te ontwerpen.                                                                                                                                                                                                             |
+| [Apparaatinschrijving](device-enrollment.md)                    | Informatie over hoe u met Microsoft Intune de apparaten van uw werknemers kunt beheren door de apparaten te registreren voor de Intune-service. Er zijn verschillende methoden om de apparaten van uw werknemers te registreren.                                                                                                         |
+| [Apparaatnaleving](device-compliance.md)                    | Het Intune-apparaatnalevingsbeleid bevat de regels en instellingen waaraan een apparaat moet voldoen om ook te voldoen aan het beleid van Microsoft Intune. Voorbeelden van naleving zijn een wachtwoord vereisen voor toegang tot een apparaat, apparaten versleutelen en een minimale versie van het besturingssysteem vereisen. |
+| [Apparaatconfiguratie](device-profiles.md)                   | U kunt de instellingen en functies configureren op alle apparaten die u beheert met Microsoft Intune door apparaatprofielen te maken. U kunt bijvoorbeeld mogelijkheden configureren als meldingen, gegevensdeling, e-mailondersteuning, Wi-Fi-connectiviteit, certificaten en beveiliging van eindpunten.              |
+| [Apparaten](device-management.md)                              | U kunt ervoor zorgen dat apparaten die u beheert de bronnen leveren waarmee uw eindgebruikers hun werk kunnen doen, terwijl u de gegevens van uw bedrijf beveiligt tegen risico's. U kunt apparaten beheren door de apparaatinventarisatie van de werknemers te controleren en externe apparaatacties uit te voeren.                                                      |
+| [Mobiele apps](app-management.md)                             | Begrijpen hoe u apps kunt toevoegen, implementeren, bewaken, configureren en beveiligen.                                                                                                                                                                                                                             |
+| [Voorwaardelijke toegang](conditional-access.md)                  | U kunt op apparaten en apps gebaseerde voorwaarden opgeven die de toegang tot uw bedrijfsgegevens beperken.                                                                                                                                                                                                            |
+| [Gebruikers](users-add.md)                                        | Informatie over het toevoegen van gebruikers van apparaten en apps die u beheert.                                                                                                                                                                                                                                           |
+| [Groepen](groups-get-started.md)                              | Meer informatie over het maken en beheren van groepen met Intune. Met behulp van groepen kunt u snel configuratie- en beveiligingsbeleid voor apparaten en apps toewijzen.                                                                                                                                             |
+| [Intune-rollen](role-based-access-control.md)                 | Meer informatie over hoe u kunt bepalen welke personen verschillende Intune-acties kunnen uitvoeren en op welke personen deze acties van toepassing zijn. U kunt de ingebouwde rollen gebruiken die voorzien in bepaalde algemene Intune-scenario's of u kunt uw eigen rollen maken.                                                                                 |
+| [Software-updates](windows-update-for-business-configure.md) | Meer informatie over de configuratie van software-updates voor Windows 10-apparaten.                                                                                                                                                                                                                                  |
 
 ## <a name="whats-new"></a>Wat is er nieuw?
 
-[Ontdek wat er nieuw is in Intune](whats-new.md).
+Zie [Wat is er nieuw](whats-new.md) voor meer informatie over de nieuwste mogelijkheden met Microsoft Intune.

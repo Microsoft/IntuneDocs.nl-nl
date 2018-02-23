@@ -1,25 +1,24 @@
 ---
 title: Een nalevingsbeleid maken voor macOS
 titleSuffix: Azure portal
-description: Meer informatie over het maken van nalevingsbeleid voor macOS-apparaten."
+description: Meer informatie over het maken van nalevingsbeleid voor macOS-apparaten.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid maken voor macOS-apparaten in Intune
 
@@ -35,20 +34,16 @@ Voordat u begint met het maken en toewijzen van een apparaatnalevingsbeleid, lee
 > [!IMPORTANT]
 > U stelt voor elk platform een afzonderlijk apparaatnalevingsbeleid op. De Intune-instellingen voor apparaatnalevingsbeleid zijn afhankelijk van de mogelijkheden van het platform, dus de instellingen die beschikbaar zijn via het MDM-protocol.
 
-In de onderstaande tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
-
--------------------------------
+In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang:
 
 
-| **Beleidsinstelling** | **macOS 10.11 of hoger** |
+| Beleidsinstelling | macOS 10.11 of hoger |
 | --- | --- |
 | **Configuratie van pincode of wachtwoord** | Hersteld |   
 | **Apparaatversleuteling** | Hersteld (door een pincode in te stellen) |
 | **E-mailprofiel** | In quarantaine |
 |**Minimale versie van het besturingssysteem** | In quarantaine |
 | **Maximale versie van het besturingssysteem** | In quarantaine |  
-| **Windows Health Attestation** | Niet van toepassing |  
-----------------------------
 
 
 **Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. (De gebruiker wordt bijvoorbeeld gedwongen een pincode in te stellen.)
@@ -82,7 +77,7 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 
 #### <a name="password"></a>Wachtwoord
 
-- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: stel deze optie in op **Verplicht** om gebruikers een wachtwoord te laten invoeren om toegang te krijgen tot hun apparaat.
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: stel deze optie in op **Vereist** om gebruikers een wachtwoord te laten invoeren om toegang te krijgen tot hun apparaat.
 
 - **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**.
 
@@ -105,7 +100,7 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 - **Aantal vorige wachtwoorden om hergebruik te voorkomen**: hiermee geeft u op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
 
     > [!IMPORTANT]
-    > Als de wachtwoordvereiste op een macOS-apparaat wordt gewijzigd, wordt deze vereiste pas van kracht als de gebruiker de eerstvolgende keer het wachtwoord wil wijzigen. Als u bijvoorbeeld de lengtebeperking voor het wachtwoord instelt op acht cijfers en op het macOS-apparaat nog een beperking voor zes cijfers geldt, dan gaat de nieuwe beperking pas in de eerstvolgende keer dat de gebruiker het wachtwoord wil bijwerken.
+    > Als de wachtwoordvereiste op een macOS-apparaat wordt gewijzigd, wordt deze vereiste pas van kracht als de gebruiker de eerstvolgende keer het wachtwoord wil wijzigen. Als u bijvoorbeeld de lengtebeperking voor het wachtwoord instelt op acht cijfers en op het macOS-apparaat nog een beperking voor zes cijfers geldt, gaat de nieuwe beperking pas in de eerstvolgende keer dat de gebruiker het wachtwoord wil bijwerken.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
@@ -121,7 +116,7 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 
 6. Kies **Beleid maken**.
 
-7. Typ een naam, beschrijving en kies het platform waarop u dit beleid wilt toepassen.
+7. Typ een naam en beschrijving en kies het platform waarop u dit beleid wilt toepassen.
 
 8. De blade **macOS-nalevingsbeleid** wordt geopend. Kies de instellingencategorieën **Beveiliging**, **Apparaatstatus** en **Apparaateigenschappen** om uw instellingen op te geven.
 
@@ -142,7 +137,7 @@ Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat 
 4. Wanneer u klaar bent met het toewijzen van het apparaatnalevingsbeleid aan uw groepen, kunt u de blade **Toewijzingen** sluiten.
 
     > [!TIP]
-    > Standaard controleren apparaten elke 8 uur op naleving, maar gebruikers kunnen dit proces ook afdwingen via de Intune-bedrijfsportal-app.
+    > Standaard controleren apparaten elke acht uur op naleving, maar gebruikers kunnen dit proces ook afdwingen via de Intune-bedrijfsportal-app.
 
 ## <a name="next-steps"></a>Volgende stappen
 

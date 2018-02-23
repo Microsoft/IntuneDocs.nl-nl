@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 05/05/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76f00caa3781d0efe85a17ccb8efc6bf27c77e97
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0a9d17f8066ddd16c06322cf9cc64457daff87f1
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid
 
@@ -49,23 +49,19 @@ App-beveiligingsbeleid wordt alleen toegepast in een werkcontext. Daarom is het 
 
 ##  <a name="manage-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
 
-Intune biedt ondersteuning voor de implementatie van app-beveiligingsbeleid voor slechts één gebruikersaccount per apparaat.
+Met toepassingen met meerdere identiteiten kunnen gebruikers meerdere accounts toevoegen.  Intune-app-beveiliging ondersteunt slechts één beheerd account.  Intune-app-beveiliging beperkt niet het aantal niet-beheerde accounts.
 
-* Afhankelijk van de app die u gebruikt, kan het zijn dat de tweede gebruiker op het apparaat wordt geblokkeerd. In alle gevallen wordt echter alleen de eerste gebruiker die het app-beveiligingsbeleid ontvangt, door het beleid beïnvloed.
-  * **Microsoft Word**, **Excel** en **PowerPoint** blokkeren een tweede gebruikersaccount niet, maar het tweede gebruikersaccount wordt niet beïnvloed door het app-beveiligingsbeleid.  
-
-  * Voor de apps **OneDrive** en **Outlook** kunt u slechts één werkaccount gebruiken. Het is niet mogelijk om meerdere werkaccounts voor deze apps toe te voegen. U kunt wel een gebruiker verwijderen en een andere gebruiker op het apparaat toevoegen.
-
-* Als een apparaat meerdere gebruikersaccounts heeft voordat het app-beveiligingsbeleid wordt geïmplementeerd, wordt het account waarop het app-beveiligingsbeleid als eerste wordt geïmplementeerd, door het app-beveiligingsbeleid van Intune beheerd.
-
+Wanneer er een beheerd account in een toepassing is:
+*   Als een gebruiker een tweede beheerd account probeert toe te voegen, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
+*   Als de IT-beheerder een beleid toevoegt aan een tweede bestaand account, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
 
 Lees het volgende voorbeeldscenario om meer inzicht te krijgen in hoe meerdere gebruikersaccounts worden behandeld.
 
-Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om app-beveiligingsbeleid te implementeren. **Bedrijf X** implementeert app-beveiligingsbeleid **voordat** **bedrijf Y** dat doet. Het app-beveiligingsbeleid wordt toegepast op het account dat is gekoppeld aan **bedrijf X**, niet op het account dat is gekoppeld aan bedrijf Y. Als u wilt dat het gebruikersaccount dat is gekoppeld aan bedrijf Y, door het app-beveiligingsbeleid wordt beheerd, moet u het gebruikersaccount dat is gekoppeld aan bedrijf X, verwijderen.
+Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om app-beveiligingsbeleid te implementeren. **Bedrijf X** implementeert app-beveiligingsbeleid **voordat** **bedrijf Y** dat doet. Het account dat is gekoppeld aan **bedrijf X** krijgt als eerste het app-beveiligingsbeleid. Als u wilt dat het gebruikersaccount dat is gekoppeld aan bedrijf Y door het app-beveiligingsbeleid wordt beheerd, moet u het gebruikersaccount dat is gekoppeld aan bedrijf X verwijderen en het gebruikersaccount toevoegen dat is gekoppeld aan bedrijf Y.
 
 ### <a name="add-a-second-account"></a>Een tweede account toevoegen
 
-Als u een iOS-apparaat gebruikt en u een tweede werkaccount op dat apparaat probeert toe te voegen, ziet u mogelijk een blokkeringsbericht. De accounts worden weergegeven en vervolgens u kunt kiezen welk account u wilt verwijderen.
+Als u een iOS-apparaat gebruikt en u een tweede werkaccount op dat apparaat probeert toe te voegen, ziet u mogelijk een blokkeringsbericht. De accounts worden weergegeven en u kunt kiezen welk account u wilt verwijderen.
 
 ## <a name="next-steps"></a>Volgende stappen
 [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](end-user-mam-apps-android.md)
