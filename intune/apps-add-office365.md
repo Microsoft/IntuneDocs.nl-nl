@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
-Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
+Met dit type app kunt u eenvoudig Office 365 ProPlus-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -32,7 +32,7 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus 2016-apps toewijzen aan de 
 >Deze methode voor het installeren van Office wordt alleen ondersteund als er geen andere Office-versies op het apparaat zijn geïnstalleerd.
 
 - Op de apparaten waarop u deze apps implementeert, moet de Microsoft Windows 10-makersupdate of hoger zijn geïnstalleerd.
-- Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus 2016.
+- Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus.
 - Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, kan de installatie mogelijk mislukken en kunnen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden verliezen.
 - Deze installatiemethode wordt niet ondersteund op apparaten met Windows 10S, Windows Home, Windows Team, Windows Holographic en Windows Holographic for Business.
 - Intune biedt geen ondersteuning voor het installeren van Office 365-desktop-apps vanuit Microsoft Store (die ook wel bekend staan als Office Centennial-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.

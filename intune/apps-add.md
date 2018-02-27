@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c753ebfc48365d0d586773585552026ad17b6f6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Een app toevoegen aan Microsoft Intune
 
@@ -149,5 +149,5 @@ Kies een van de volgende onderwerpen om erachter te komen hoe u apps voor elk pl
 - [Windows Store-apps](store-apps-windows.md)
 - [Windows LOB-app](lob-apps-windows.md)
 - [Office 365-apps voor Windows 10](apps-add-office365.md)
-- [Ingebouwde apps](apps-add-bulit-in.md)
+- [Ingebouwde apps](apps-add-built-in.md)
 

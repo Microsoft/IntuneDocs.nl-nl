@@ -7,7 +7,7 @@
 ### <a name="google"></a>Google
 - Android 4.4 en hoger (inclusief Samsung Knox Standard 4.4 en hoger)
 
-  Een volledige lijst met gecontroleerde Samsung Knox Standard-apparaten is beschikbaar in de [beleidsinstellingen voor Android en Samsung Knox Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+  Een volledige lijst met gecontroleerde Samsung Knox Standard-apparaten is beschikbaar in de [beleidsinstellingen voor Android en Samsung Knox Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
 
 
 - Android for Work [(vereisten)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")

@@ -15,20 +15,20 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a8955cf87ecafd0e4ead38394b980a5d5949940
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Nalevingsbeleid voor Android for Work-apparaten maken in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Voor elk platform wordt een nalevingsbeleid gemaakt.  U kunt een nalevingsbeleid maken in Azure Portal. Zie het onderwerp [What is device compliance?](device-compliance.md) (Wat is apparaatnaleving?) voor meer informatie over een nalevingsbeleid. Zie [Get started with device compliance](device-compliance-get-started.md) (Aan de slag met apparaatnaleving) voor informatie over de vereisten die moet uitvoeren voordat u een nalevingsbeleid gaat maken.
+Voor elk platform wordt een nalevingsbeleid gemaakt.  U kunt een nalevingsbeleid maken in Azure Portal. Zie [What is device compliance?](device-compliance.md) (Wat is apparaatnaleving?) voor meer informatie over een nalevingsbeleid. Zie [Get started with device compliance](device-compliance-get-started.md) (Aan de slag met apparaatnaleving) voor informatie over de vereisten die u moet uitvoeren voordat u een nalevingsbeleid gaat maken.
 
-In de onderstaande tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
+In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
 
 --------------------------
 
@@ -52,8 +52,8 @@ In de onderstaande tabel wordt beschreven hoe niet-compatibele instellingen word
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Een nalevingsbeleid maken in Azure Portal
 
 1. Kies **Apparaatcompatibiliteit instellen** op de blade **Intune**. Kies **Alle apparaatnalevingsbeleidsregels** onder **Beheren** en kies **Maken**.
-2. Typ een naam, beschrijving en kies het platform waarop u dit beleid wilt toepassen.
-3. Kies **Nalevingsvereisten** om de instellingen voor de **beveiliging**, **apparaatstatus** en **apparaateigenschappen** op te geven. Kies **OK** als u klaar bent.
+2. Typ een naam en beschrijving en kies het platform waarop u dit beleid wilt toepassen.
+3. Kies **Nalevingsvereisten** om de instellingen voor de **beveiliging**, **apparaatstatus** en **apparaateigenschappen** op te geven. Wanneer u klaar bent, klikt u op **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,9 +88,9 @@ U hebt het beleid toegepast op gebruikers.  De apparaten die worden gebruikt doo
   - **Alfanumeriek met tekens**
 - **Minuten inactief voordat wachtwoord is vereist:** hiermee geeft u op na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
 - **Wachtwoord verloopt (in dagen):** selecteer het aantal dagen waarna het wachtwoord van gebruikers verloopt en ze een nieuw wachtwoord moeten maken.
-- **Wachtwoordgeschiedenis onthouden:** gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers eerder gebruikte wachtwoorden opnieuw gebruiken.
+- **Wachtwoordgeschiedenis onthouden**: gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers eerder gebruikte wachtwoorden opnieuw gebruiken.
 - **Wachtwoorden niet opnieuw gebruiken:** als **Wachtwoordgeschiedenis onthouden** is geselecteerd, geeft u het aantal eerder gebruikte wachtwoorden op dat niet opnieuw kan worden gebruikt.
-- **Een wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt samen met de instelling **Minuten van inactiviteit voordat het wachtwoord wordt vereist**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat inactief is geweest gedurende de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
+- **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt met de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat inactief is geweest gedurende de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
 
 
 ### <a name="encryption"></a>Versleuteling
@@ -100,21 +100,19 @@ U hebt het beleid toegepast op gebruikers.  De apparaten die worden gebruikt doo
 
 ## <a name="device-health-and-security-settings"></a>Status en beveiligingsinstellingen van apparaat
 
-- **Jailbreaken of uitvoeren als rootgebruiker niet toegestaan:** als u deze instelling inschakelt, worden apparaten waarop jailbreaking is uitgevoerd of die als rootgebruiker worden uitgevoerd als niet-compatibel beschouwd.
-- **Vereisen dat de installatie van apps van onbekende bronnen worden voorkomen:** u hoeft deze instelling niet te configureren, omdat installatie van onbekende bronnen altijd wordt voorkomen op Android for Work-apparaten. .
+- **Apparaat mag niet gekraakt of geroot zijn**: als u deze instelling inschakelt, worden apparaten die zijn gekraakt of waarvoor roottoegang is verkregen als niet-compatibel beschouwd.
+- **Vereisen dat de installatie van apps van onbekende bronnen worden voorkomen:** u hoeft deze instelling niet te configureren, omdat installatie van onbekende bronnen altijd wordt voorkomen op Android for Work-apparaten.
 - **Vereisen dat USB-foutopsporing is uitgeschakeld**: u hoeft deze instelling niet te configureren, omdat USB-foutopsporing altijd al is uitgeschakeld op Android for Work-apparaten.
 - **Minimaal niveau voor de Android-beveiligingspatch**: gebruik deze instelling om het minimale Android-patchniveau op te geven. Apparaten die niet ten minste dit patchniveau hebben, worden als niet-compatibel gezien. De datum moet de volgende notatie hebben: dd-mm-jjjj.
-- **Vereisen dat Device Threat Protection wordt ingeschakeld**: gebruik deze instelling om de risicobeoordeling uit de Lookout MTP-oplossing als voorwaarde voor naleving te gebruiken. Selecteer het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
+- **Vereisen dat Device Threat Protection wordt ingeschakeld**: Gebruik deze instelling om de risicobeoordeling uit de Lookout MTP-oplossing als voorwaarde voor naleving te gebruiken. Selecteer het maximaal toegestane bedreigingsniveau. U kunt daarbij kiezen uit:
   - **Geen (beveiligd)**: Dit is het veiligste niveau. Dit betekent dat er op het apparaat geen bedreigingen mogen staan. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
   - **Laag**: Het apparaat wordt als compatibel geëvalueerd als er bedreigingen met een laag niveau op staan. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
-  - **Gemiddeld**: Het apparaat wordt als compatibel geëvalueerd als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
-  - **Hoog**: Dit is de minst veilige optie. Het komt erop neer dat alle bedreigingniveaus worden toegestaan. Dit kan misschien alleen nuttig zijn als u dit alleen voor rapportagedoeleinden gebruikt.
-
-Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy) voor meer informatie.
+  - **Gemiddeld**: het apparaat wordt als compatibel geëvalueerd als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
+  - **Hoog**: dit is de minst veilige optie. Het komt erop neer dat alle bedreigingsniveaus worden toegestaan. Dit is mogelijk alleen nuttig als u deze oplossing slechts voor rapportagedoeleinden gebruikt.
 
 ## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 
-- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen om een upgrade van zijn apparaat uit te voeren, waarna die toegang tot bedrijfsbronnen krijgt.
+- **Minimale versie van het besturingssysteem die is vereist**: wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
 - **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
 <!--- ## Next steps

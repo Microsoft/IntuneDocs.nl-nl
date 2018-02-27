@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -61,8 +61,7 @@ Het gebruik van MDM met het beveiligingsbeleid voor apps biedt extra voordelen e
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Ondersteunde platformen voor het beveiligingsbeleid voor apps
--   iOS 9 of hoger
--   Android 4.4 of hoger
+De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor Office-toepassingen. Zie [Systeemvereisten voor Office](https://products.office.com/en-US/office-system-requirements) voor meer informatie.
 
 Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen

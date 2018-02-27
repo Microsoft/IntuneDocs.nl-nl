@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: Licenties toewijzen
           href: licenses-assign.md
+        - name: Intune-licenties
+          href: licenses.md
         - name: MDM-instantie instellen
           href: mdm-authority-set.md
     - name: Apparaten inschrijven
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: Modus Apparaat verloren voor iOS inschakelen
           href: device-lost-mode.md
+        - name: Supervisiemodus voor iOS inschakelen
+          href: device-supervised-mode.md
         - name: Apparaat vergrendelen
           href: device-remote-lock.md
         - name: Wachtwoordcode opnieuw instellen
@@ -251,7 +255,7 @@
             - name: Web-apps
               href: web-app.md
             - name: Ingebouwde apps
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: Apps implementeren
           href: apps-deploy.md
           items:

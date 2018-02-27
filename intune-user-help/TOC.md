@@ -104,7 +104,6 @@
 ## [Uw macOS-apparaat gebruiken](using-your-macos-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een macOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos-cp.md)
-### [Uw oudere macOS-apparaat registreren](enroll-your-device-in-intune-macos-legacy.md)
 ### [De registratie van uw macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-macos.md)
 
 ### [Veelvoorkomende problemen met macOS oplossen](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [Logboeken van de bedrijfsportal-app verzenden](send-logs-to-your-it-admin-cp-windows.md)
 #### [Logboeken van de Instellingen-app verzenden](send-logs-to-your-it-admin-settings-windows.md)
 #### [Mijn Windows-versie wordt nog niet ondersteund](your-windows-version-isnt-yet-supported.md)
+#### [Office 365 installeren op uw Windows 10-apparaat](install-office-windows.md)
 #### [Windows-versleuteling inschakelen](you-need-to-enable-windows-encryption.md)
 #### [Mijn apparaat heeft antimalware-software nodig](your-device-needs-antimalware-software.md)
 #### [Beveiligd opstarten inschakelen](you-need-to-enable-secure-boot-windows.md)

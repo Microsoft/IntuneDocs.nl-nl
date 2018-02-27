@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 1/19/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 300ddb15f2d7b8f2fc6ab4a0e9e32852e0604e0a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0ecf5e17bb66ac6515a3e67f4b0a1bc82ec9c3ba
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="windows-holographic-for-business-device-restriction-settings-in-microsoft-intune"></a>Instellingen voor apparaatbeperkingen voor Windows Holographic for Business in Microsoft Intune
 
@@ -41,19 +41,18 @@ De volgende instellingen voor apparaatbeperking worden ondersteund op apparaten 
 
 ## <a name="app-store"></a>App Store
 
--   **App Store**: hiermee kunt u het gebruik van de App Store op apparaat inschakelen of blokkeren.
 -   **Apps uit Store automatisch bijwerken**: apps die zijn geïnstalleerd vanuit Microsoft Store, kunnen automatisch worden bijgewerkt.
 -   **Installatie van vertrouwde app**: voor apps die zijn ondertekend met een vertrouwd certificaat is sideloaden mogelijk.
 -   **Ontgrendeling voor ontwikkelaars**: de eindgebruiker mag instellingen voor Windows-ontwikkelaars wijzigen, zoals het toestaan van sideloaden van apps.
 
-## <a name="edge-browser"></a>Edge-browser
+## <a name="edge-browser"></a>Microsoft Edge-browser
 
 -   **Microsoft Edge-browser**: hiermee staat u het gebruik van de Edge-webbrowser toe op het apparaat.
 -   **Cookies**: hiermee kunnen internetcookies in de browser op het apparaat worden opgeslagen.
 -   **Pop-ups**: hiermee kunt u pop-upvensters in de browser blokkeren (alleen van toepassing op Windows 10-desktop).
 -   **Zoeksuggesties**: hiermee kan de zoekmachine sites voorstellen wanneer er zoektermen worden getypt.
 -   **Wachtwoordbeheer**: hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.
-- **Do Not Track-headers verzenden**: hiermee configureert u de Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
+- **Do Not Track-headers verzenden**: hiermee configureert u de Microsoft Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 

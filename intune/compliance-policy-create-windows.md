@@ -6,18 +6,18 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 1/24/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
 
@@ -196,6 +196,10 @@ De volgende instelling wordt in Windows Holographic for Business ondersteund:
 
   **Versleuteling van gegevensopslag  op apparaat**.
 
-<!--- ## Next steps
+Zie [Verify device encryption](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption) (Apparaatversleuteling controleren) om apparaatversleuteling te controleren op de Microsoft HoloLens.
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>Volgende stappen
+
+Zie het volgende onderwerp voor meer informatie over het bewaken van de apparaatcompatibiliteit:
+
+- [Apparaatcompatibiliteit bewaken](device-compliance-monitor.md)

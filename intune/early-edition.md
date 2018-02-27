@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>De vroege editie voor Microsoft Intune - februari 2018
 
@@ -40,6 +40,10 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Nieuwe tabel met fouten bij inschrijving, trendgrafieken en oorzaken van fouten <!-- 1471783 -->
+
+Op de overzichtspagina voor inschrijvingen kunt u de trend van mislukte inschrijvingen en de top vijf van oorzaken van fouten bekijken. Door te klikken op de grafiek of de tabel, kunt u inzoomen op gegevens om advies voor probleemoplossing en suggesties voor herstel te krijgen.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Voorkomen dat eindgebruikers accounts in het werkprofiel kunnen toevoegen of uit het werkprofiel kunnen verwijderen <!-- 1728700 -->    
 Wanneer u de Gmail-app implementeert in een Android for Work-profiel, kunt u voorkomen dat eindgebruikers accounts aan het werkprofiel toevoegen of uit het werkprofiel verwijderen door de instelling **Accounts toevoegen en verwijderen** te gebruiken in het Android for Work-apparaatrestrictieprofiel.
@@ -76,9 +80,6 @@ U kunt bijvoorbeeld het Webex-pakket toevoegen als een uitzondering op het MAM-g
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>De bedrijfsportalthema's aanpassen met hexadecimale codes <!--1049561 eeready-->
 
 U kunt de themakleur in de bedrijfsportal-apps aanpassen met behulp van hexadecimale codes. Wanneer u de hexadecimale code invoert, wordt door Intune volgens de [WCAG 2.0-standaarden](http://www.w3.org/TR/WCAG20) bepaald met welke tekstkleur de hoogste mate van contrast tussen de tekstkleur en de achtergrondkleur wordt bereikt. U kunt in **Mobiele apps** > **Bedrijfsportal** bekijken hoe de tekstkleur en uw bedrijfslogo bij deze kleur worden weergegeven. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Apparaatcategorieën selecteren met behulp van de instellingen voor Toegang tot werk of school <!-- 1058963 --> 
-Als u [apparaatgroeptoewijzing](https://docs.microsoft.com/intune/device-group-mapping) hebt ingeschakeld, wordt gebruikers van Windows 10 gevraagd een apparaatcategorie te selecteren na registratie via de knop **Verbinding maken** in **Instellingen**  >  **Accounts** > **Toegang tot werk of school** of tijdens de standaardprocedure.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Er worden nieuwe Windows Defender Credential Guard-instellingen toegevoegd aan de Endpoint Protection-instellingen <!--1102252 --> 
 
@@ -120,9 +121,9 @@ Er komen twee nieuwe privacyinstellingen voor apparaten beschikbaar:
 
 Gebruikers kunnen de apparaatinschrijvingsmanager gebruiken bij het inschrijven via de macOS-bedrijfsportal.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nieuwe instellingen voor de Edge-browser <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nieuwe instellingen voor de Microsoft Edge-browser <!--1469166 -->
 
-Er komen twee nieuwe instellingen beschikbaar voor apparaten met de Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**. 
+Er komen twee nieuwe instellingen beschikbaar voor apparaten met de Microsoft Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**. 
 
 ### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Versleutelde gegevens van Windows Information Protection (WIP) in zoekresultaten van Windows <!-- 1469193 -->
 

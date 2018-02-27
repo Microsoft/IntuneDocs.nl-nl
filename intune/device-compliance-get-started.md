@@ -3,23 +3,21 @@ title: Intune apparaatnalevingsbeleid
 titleSuffix: Azure portal
 description: Meer informatie over apparaatnaleving in Microsoft Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 07/18/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Aan de slag met Intune-apparaatnalevingsbeleid
 
@@ -101,7 +99,61 @@ Als u een apparaatnalevingsbeleid wilt gebruiken in Intune, moet u de volgende a
 
 Wanneer een apparaat wordt ingeschreven bij Intune, vindt het Azure AD-registratieproces plaats, dat de apparaatkenmerken bijwerkt met meer informatie in Azure AD. Een van de belangrijkste apparaatgegevens is de nalevingsstatus van het apparaat, die door de beleidsregels voor voorwaardelijke toegang wordt gebruikt om de toegang tot e-mail en andere bedrijfsmiddelen toe te staan of te blokkeren.
 
-- Meer informatie over het [Azure AD-registratieproces](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
+- Meer informatie over het [Azure AD-registratieproces](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+
+### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Een resulterend configuratieprofiel aan een apparaatstatus toewijzen
+
+Wanneer aan een apparaat meerdere configuratieprofielen zijn toegewezen en het apparaat verschillende nalevingsstatussen heeft voor twee of meerdere toegewezen configuratieprofielen, moet één resulterende nalevingsstatus worden toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus:
+
+
+|Status  |Ernst  |
+|---------|---------|
+|In behandeling     |1|
+|Geslaagd     |2|
+|Mislukt     |3|
+|Fout     |4|
+
+De resulterende status van twee of meer configuratieprofielen wordt vervolgens toegewezen door het hoogste ernstniveau te selecteren van alle profielen die aan een apparaat zijn toegewezen.
+
+Stel dat aan een apparaat drie profielen zijn toegewezen, één met de status In behandeling (ernst = 1), één met de status Geslaagd (ernst = 2) en één met de status Fout (ernst =4). De status Fout heeft het hoogste ernstniveau, waardoor deze status wordt toegewezen als de resulterende nalevingsstatus voor alle drie de profielen.
+
+### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>De status Respijtperiode toewijzen voor een toegewezen nalevingsbeleid
+
+De status Respijtperiode voor een nalevingsbeleid is een waarde die wordt bepaald door de combinatie van de respijtperiode van een apparaat en de werkelijke status van een apparaat voor het toegewezen nalevingsbeleid. 
+
+Als een apparaat de status Niet-compatibel heeft voor een toegewezen nalevingsbeleid, en:
+
+- er geen respijtperiode is toegewezen aan het apparaat, is de toegewezen waarde voor het nalevingsbeleid Niet-compatibel.
+- de respijtperiode voor het apparaat is verlopen, is de toegewezen waarde voor het nalevingsbeleid Niet-compatibel.
+- de respijtperiode voor het apparaat in de toekomst ligt, is de toegewezen waarde voor het nalevingsbeleid Respijtperiode.
+
+De volgende tabel geeft een overzicht van de vorige punten:
+
+
+|Werkelijke nalevingsstatus|Waarde van toegewezen respijtperiode|Effectieve nalevingsstatus|
+|---------|---------|---------|
+|Niet-compatibel |Er is geen respijtperiode toegewezen |Niet-compatibel |
+|Niet-compatibel |De datum van gisteren|Niet-compatibel|
+|Niet-compatibel |De datum van morgen|Respijtperiode|
+
+Zie [Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md) voor meer informatie over het controleren van nalevingsbeleid voor apparaten.
+
+### <a name="assigning-a-resulting-compliance-policy-status"></a>Een resulterende nalevingsbeleidsstatus toewijzen
+
+Wanneer aan een apparaat meerdere nalevingsbeleidsregels zijn toegewezen en het apparaat verschillende nalevingsstatussen heeft voor twee of meerdere toegewezen nalevingsbeleidsregels, moet één resulterende nalevingsstatus worden toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus: 
+
+|Status  |Ernst  |
+|---------|---------|
+|Onbekend     |1|
+|Niet van toepassing     |2|
+|Compliant|3|
+|Respijtperiode|4|
+|Niet-compatibel|5|
+|Fout|6|
+
+De resulterende status van twee of meer configuratieprofielen wordt vervolgens toegewezen door het hoogste ernstniveau te selecteren van alle profielen die aan een apparaat zijn toegewezen.
+ 
+Stel dat aan een apparaat drie nalevingsbeleidsregels zijn toegewezen, één met de status Onbekend (ernst = 1), één met de status Compatibel (ernst = 3) en één met de status Respijtperiode (ernst =4). De status Respijtperiode heeft het hoogste ernstniveau, waardoor deze status wordt toegewezen als de resulterende nalevingsstatus voor alle drie de profielen.  
 
 ##  <a name="ways-to-use-device-compliance-policies"></a>Nalevingsbeleid voor apparaten gebruiken
 
@@ -112,6 +164,10 @@ U kunt een nalevingsbeleid gebruiken met voorwaardelijke toegang om alleen toega
 U kunt een nalevingsbeleid voor apparaten ook onafhankelijk van voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten jailbroken of geroot zijn. Bij onafhankelijk gebruik van nalevingsbeleid zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
 
 U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving. Raadpleeg [Problemen met apparaatprofielen oplossen in Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned) voor meer informatie over hoe lang het duurt voordat mobiele apparaten een beleid krijgen nadat het beleid is geïmplementeerd.
+
+#### <a name="actions-for-non-compliance"></a>Acties voor niet-naleving
+
+Met de acties voor niet-naleving kunt u een op tijd geordende opeenvolgende reeks acties configureren die worden toegepast op apparaten die niet voldoen aan de criteria van het nalevingsbeleid. Zie [Acties voor niet-naleving automatiseren](actions-for-noncompliance.md) voor meer informatie.
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Het gebruik van apparaatnalevingsbeleid in de klassieke Intune-portal ten opzichte van Azure Portal
 
@@ -132,10 +188,12 @@ Als u gebruik wilt maken van de nieuwe functies voor het nalevingsbeleid voor ap
 
 ##  <a name="next-steps"></a>Volgende stappen
 
-Een nalevingsbeleid maken voor de volgende platformen:
+- Een nalevingsbeleid maken voor de volgende platformen:
 
-- [Android](compliance-policy-create-android.md)
-- [Android for Work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for Work](compliance-policy-create-android-for-work.md)
+   - [iOS](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- Zie [Naslag voor beleidsentiteiten](reports-ref-policy.md) voor meer informatie over de beleidsentiteiten voor Intune-datawarehouse.
