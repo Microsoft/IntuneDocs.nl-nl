@@ -1,4 +1,4 @@
----
+﻿---
 title: Apps implementeren
 description: In dit onderwerp worden enkele concepten uitgelegd die u moet begrijpen voordat u apps met Intune gaat implementeren.
 keywords: 

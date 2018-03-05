@@ -1,4 +1,4 @@
----
+﻿---
 title: Apps toevoegen voor ingeschreven apparaten
 description: Voordat u een app kunt implementeren, moet u deze toevoegen aan Intune. De app is dan beschikbaar in de Intune-console waar u de app kunt implementeren en beheren.
 keywords: 

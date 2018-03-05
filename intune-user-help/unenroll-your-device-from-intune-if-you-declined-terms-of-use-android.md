@@ -1,4 +1,4 @@
----
+﻿---
 title: De inschrijving van een apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen | Microsoft Docs
 description: 
 keywords: 

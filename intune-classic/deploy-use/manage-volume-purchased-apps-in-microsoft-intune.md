@@ -1,4 +1,4 @@
----
+﻿---
 title: Apps beheren die zijn gekocht via het volume-aankoopprogramma
 description: Meer informatie over hoe u Intune kunt gebruiken voor het beheren van apps die u in volume hebt aangeschaft in de App Store.
 keywords: 

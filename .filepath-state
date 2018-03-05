@@ -1,16 +1,30 @@
 {
+<<<<<<< HEAD
+  "3356ed7337814df1003905dba031b7d65959fc0f": [
+    "InTuneDocs\\accessibility-features-of-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "1c4f44619f025b5a35a089c0970188b989b710e6": [
     "InTuneDocs\\accessibility-features-of-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "9235c19fd7c2eb1811e405050d393452128d3a90": [
     "InTuneDocs\\accessibility-features-of-microsoft-intune.md"
   ],
   "d34e754e3815b43f4b5b74d24711cf55aacfc757": [
     "InTuneDocs\\accessibility-features-of-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "6c7ed87bf4d1b2f66abf2079391fed17832b2989": [
+    "InTuneDocs\\accessibility-for-people-with-disabilities.md"
+  ],
+||||||| merged common ancestors
+=======
   "cbf0b0d9d47fd16724895bc42ad7112954bd59de": [
     "InTuneDocs\\accessibility-for-people-with-disabilities.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "535e56ad8e3556f28c673184dcf32dca83d80ab4": [
     "InTuneDocs\\accessibility-for-people-with-disabilities.md"
   ],
@@ -32,9 +46,16 @@
   "2ae0e32f398c7f8356d76ff7d71aefd99704e0ca": [
     "InTuneDocs\\accessibility-products-and-services-from-microsoft.md"
   ],
+<<<<<<< HEAD
+  "839550751563b5507becb0d8d019fd163af718f5": [
+    "InTuneDocs\\activate-your-product-key.md"
+  ],
+||||||| merged common ancestors
+=======
   "ae0a41aad8e31f3bcf409f9c52017e05c950f0b0": [
     "InTuneDocs\\activate-your-product-key.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "a66d14ae04d4d0334036ce5bebd9d24549e24de3": [
     "InTuneDocs\\activate-your-product-key.md"
   ],
@@ -47,18 +68,32 @@
   "8a8228b6733ded4c8b3d611a1c1126732200d177": [
     "InTuneDocs\\activate-your-product-key.md"
   ],
+<<<<<<< HEAD
+  "3b32dd62dfb7da37bde3e89220501cd34547446a": [
+    "InTuneDocs\\GetStarted\\application-rollout.md"
+  ],
+||||||| merged common ancestors
+=======
   "aea7c235ad643a2a03ac7b3ea68c6b8c717bcd48": [
     "InTuneDocs\\GetStarted\\application-rollout.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "4a237942b4bc1e411cf55bc34c7b86d2249c526e": [
     "InTuneDocs\\GetStarted\\application-rollout.md"
   ],
   "c38169a6ef14ae7b52d2d9bdd3b2c8c8198c0116": [
     "InTuneDocs\\GetStarted\\application-rollout.md"
   ],
+<<<<<<< HEAD
+  "c721df29fd71963feb151af71eea9ee7ebc2d3e4": [
+    "InTuneDocs\\DeployUse\\categorize-devices-with-device-group-mapping-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "bdfa96a4268733bf6fa3a7999d85a881a7c4e513": [
     "InTuneDocs\\DeployUse\\categorize-devices-with-device-group-mapping-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "54e0b06cd32c5ab661fd37be8fe132822462e68e": [
     "InTuneDocs\\DeployUse\\categorize-devices-with-device-group-mapping-in-microsoft-intune.md"
   ],
@@ -92,27 +127,51 @@
   "de00d31ab32916f29a111c93b39a578f82524f80": [
     "InTuneDocs\\Troubleshoot\\contact-assisted-phone-support-for-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "c915f8ae60637dcdc64899c59cd07138c17ceef9": [
+    "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
+  ],
+||||||| merged common ancestors
+=======
   "96864f0c629a04252f37de0ca37468c55f87ac2b": [
     "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "2ea7e43560e91151afbe2af46767bcd4a113a3f4": [
     "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
   ],
   "222b9aac19993f184ff68800a00f8d9df8b36237": [
     "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
   ],
+<<<<<<< HEAD
+  "ba3af29585be3c07da276d3e7e140713b023d70d": [
+    "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
+  ],
+  "aa4d032a0eff1f02e5d6df0eae7b878b4762866e": [
+    "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "7f934a1745874ab4c9ae0448f2536c2e84176760": [
     "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18": [
     "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
   ],
   "f6b3a573cd8c2ed4aa97d09aa284e4d7f2c8ba60": [
     "InTuneDocs\\DeployUse\\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "fa0ee0ab21fa94cb1ba0b9b6f0d73718dc34eb1b": [
+    "InTuneDocs\\DeployUse\\control-microsoft-passport-settings-on-devices-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "294eb6115ca0c97b2d9fe3f39ef9c0545ee36eec": [
     "InTuneDocs\\DeployUse\\control-microsoft-passport-settings-on-devices-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "33611240598c8771983fe6aeaaac057fedb93faf": [
     "InTuneDocs\\DeployUse\\control-microsoft-passport-settings-on-devices-with-microsoft-intune.md"
   ],
@@ -140,9 +199,16 @@
   "434cddd5595d19298ba0c7642680ccd24d5f9df3": [
     "InTuneDocs\\DeployUse\\create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "4a15279bb4460c88412ede6c8678deea72a3629f": [
+    "InTuneDocs\\DeployUse\\decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "be4b931dd4ca507866433202f718818e7a2b5634": [
     "InTuneDocs\\DeployUse\\decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "5865b5a7bd2b8b7b08e40e1e7e53cfd17851d5fb": [
     "InTuneDocs\\DeployUse\\decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md"
   ],
@@ -158,18 +224,32 @@
   "8dec8d89ae80b1f114829fcf31caafcb26679ce4": [
     "InTuneDocs\\DeployUse\\decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "abc827ae13595b56a1acbf78535a6df7b387cad6": [
+    "InTuneDocs\\DeployUse\\enable-access-to-company-resources-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "c9a0c4ee9874b8dbb05e73c9ba6ca9a886240714": [
     "InTuneDocs\\DeployUse\\enable-access-to-company-resources-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "556b9ea5ac5edcc1126dbcc6310ab7dfa917cb56": [
     "InTuneDocs\\DeployUse\\enable-access-to-company-resources-with-microsoft-intune.md"
   ],
   "25158dc0acf4350ff3620a3dcd914e869bc82f7f": [
     "InTuneDocs\\DeployUse\\enable-access-to-company-resources-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "7ed53db4af6e58be7c5b44a9f7ca2407493c51c0": [
+    "InTuneDocs\\DeployUse\\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "4e19836f4ce30434bb7d34db8323f811adf5d770": [
     "InTuneDocs\\DeployUse\\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "d0a77f626a21212d3d310e8021e4e034298e90d3": [
     "InTuneDocs\\DeployUse\\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md"
   ],
@@ -179,9 +259,16 @@
   "7bbd761b13f110297959a036ec15cafe1396377e": [
     "InTuneDocs\\DeployUse\\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "826bdcd4db11b0eca94a250d6cb95f76e22569bf": [
+    "InTuneDocs\\DeployUse\\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "3faede4b60ac989e688b87ddb8112aebcf4c56ef": [
     "InTuneDocs\\DeployUse\\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "cca3d973c1c669ed53d43222974f5d91e0bb944f": [
     "InTuneDocs\\DeployUse\\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md"
   ],
@@ -212,9 +299,16 @@
   "723bef398338946e085e9d04d57a85b433ebc1c8": [
     "InTuneDocs\\DeployUse\\install-the-windows-pc-client-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "bea1a090cf71129b34064378922a4c23f19e3cc7": [
+    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "6878d8a4e95280cfd8a919efa4c2f1651ca14024": [
     "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "e8819179140f30952987abd0336b1018fc4883eb": [
     "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
   ],
@@ -224,9 +318,16 @@
   "04454c6d40ba17e3a479c01ceb98171c4454edcd": [
     "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "7f375a2a0012e8d4c080a8033026b11a51651960": [
+    "InTuneDocs\\DeployUse\\manage-internet-access-using-managed-browser-policies.md"
+  ],
+||||||| merged common ancestors
+=======
   "a85aa3ce78425f2e00479ab0e48338e5eef8aec3": [
     "InTuneDocs\\DeployUse\\manage-internet-access-using-managed-browser-policies.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "8df20e25e78b36126e5125f8775d82018b81ecfe": [
     "InTuneDocs\\DeployUse\\manage-internet-access-using-managed-browser-policies.md"
   ],
@@ -236,18 +337,32 @@
   "3de3b55426636dad69e527e186ff27cb2cd3cb50": [
     "InTuneDocs\\DeployUse\\manage-internet-access-using-managed-browser-policies.md"
   ],
+<<<<<<< HEAD
+  "6996f98a9081c978ffce5cea233be25010c8a7df": [
+    "InTuneDocs\\DeployUse\\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "6eead7cd7f04641687b334c8f0c09a3af1f9b4ba": [
     "InTuneDocs\\DeployUse\\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "63fa9832134558969c86618e7625c89fe33ceed8": [
     "InTuneDocs\\DeployUse\\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md"
   ],
   "575b8525b8b99d06358a911b8deb24ee5de48fe1": [
     "InTuneDocs\\DeployUse\\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "0e2effcfdc2a900d799d08a6b0658caca553e018": [
+    "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
+  ],
+||||||| merged common ancestors
+=======
   "240f4489f89d8c27fbc4dc7fec089299e27e403c": [
     "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "1756983ffe6cf1f45d4c8537605c92d5965fd194": [
     "InTuneDocs\\DeployUse\\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md"
   ],
@@ -278,9 +393,16 @@
   "92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f": [
     "InTuneDocs\\DeployUse\\manage-windows-pcs-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "1efbecc33e33e5e4864bcc2417ebed1e8a5b5826": [
+    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "bc8cd98be3f9544077511876f0ab42df6c698e1d": [
     "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "16d7494a22c0f143b864f2e2e048728bd750e7cf": [
     "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
   ],
@@ -290,18 +412,32 @@
   "99b50bd040bbbdfa3ad7937d7703700526c9c4d5": [
     "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "d8941b13f5f280d42fb1f8c0e03f3cc974684380": [
+    "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "9939cc079a2b3948751f9c68ee4f097336b3530d": [
     "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "ffbcc48e909887647a2c1b7f7c40bde5682cddea": [
     "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
   ],
   "ce6d2e7e8560d6597a055519e78cd4082996cbeb": [
     "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "76ee04237d54b4c171df74e8c134f003bbc32966": [
+    "InTuneDocs\\DeployUse\\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
+  ],
+||||||| merged common ancestors
+=======
   "0afbc7a56ae25e2288b22cce30f7a47c53e81392": [
     "InTuneDocs\\DeployUse\\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "3001736fbcac1cf9f1da8aefa7cae4fed8da7f24": [
     "InTuneDocs\\DeployUse\\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
   ],
@@ -323,9 +459,16 @@
   "c793cc34b10c336a95b40c31befa6c6ff87b4ba6": [
     "InTuneDocs\\DeployUse\\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
   ],
+<<<<<<< HEAD
+  "754c026832b980d3a1cd406e9ab3146585b87b46": [
+    "InTuneDocs\\DeployUse\\prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
+  ],
+||||||| merged common ancestors
+=======
   "78f65ac167f14f594d1d976b38199dad585f87dc": [
     "InTuneDocs\\DeployUse\\prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "ffa163b9c2608b21915b1d03c2d0526806a953a3": [
     "InTuneDocs\\DeployUse\\prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
   ],
@@ -344,24 +487,48 @@
   "ebb1257dec8422b1da1b6c66f720ad0be3d06f0a": [
     "InTuneDocs\\DeployUse\\prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md"
   ],
+<<<<<<< HEAD
+  "519a15ddfe10a3df8f03170939c950abdf462b26": [
+    "InTuneDocs\\DeployUse\\protect-windows-devices-with-multi-factor-authentication.md"
+  ],
+  "0dfd41bf47d525cdfc84f72631cf5ba6547e5389": [
+    "InTuneDocs\\DeployUse\\protect-windows-devices-with-multi-factor-authentication.md"
+  ],
+||||||| merged common ancestors
+=======
   "be79450d171c6f95cc8920d83b475b5c0218b1fc": [
     "InTuneDocs\\DeployUse\\protect-windows-devices-with-multi-factor-authentication.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "15e546b93c2a3aff551efa36ac80ff212ada5812": [
     "InTuneDocs\\DeployUse\\protect-windows-devices-with-multi-factor-authentication.md"
   ],
+<<<<<<< HEAD
+  "77f7bc40471437cf69fe5553d4d82dc71a6ba405": [
+    "InTuneDocs\\DeployUse\\resolve-gpo-and-microsoft-intune-policy-conflicts.md"
+  ],
+||||||| merged common ancestors
+=======
   "3d883851ae9fecd8a5c3baa0aff8312552915ba4": [
     "InTuneDocs\\DeployUse\\resolve-gpo-and-microsoft-intune-policy-conflicts.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "618be07d4867ca39d0ffd08e7f7f345fc52b7b9e": [
     "InTuneDocs\\DeployUse\\resolve-gpo-and-microsoft-intune-policy-conflicts.md"
   ],
   "7fc97e21fa7e57d8585c421ac12ff0d3c4b366a0": [
     "InTuneDocs\\DeployUse\\resolve-gpo-and-microsoft-intune-policy-conflicts.md"
   ],
+<<<<<<< HEAD
+  "2af2e139d2d1ca969095067a2d9ec111d3d7127f": [
+    "InTuneDocs\\DeployUse\\retire-apps-using-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "b28cc7e99a47ce433273fa68389cc9727c8f9dd9": [
     "InTuneDocs\\DeployUse\\retire-apps-using-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "08d364fddf02aa2dc7ba47a508a741b0e17e2d56": [
     "InTuneDocs\\DeployUse\\retire-apps-using-microsoft-intune.md"
   ],
@@ -377,9 +544,16 @@
   "af4b87eb8082ee5ff11cd2d42b788ad17b334bcb": [
     "InTuneDocs\\DeployUse\\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md"
   ],
+<<<<<<< HEAD
+  "757a30349885439ea8b04f0b4000a2a8c2a6a010": [
+    "InTuneDocs\\DeployUse\\TOC.md"
+  ],
+||||||| merged common ancestors
+=======
   "bb3cb30d0768334e016451f25acfb2700d673423": [
     "InTuneDocs\\DeployUse\\TOC.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "90a99dd1973ff36dfb5a06923041fe75975c59d7": [
     "InTuneDocs\\DeployUse\\TOC.md"
   ],
@@ -404,27 +578,48 @@
   "06120af2deb97e3b0977b1a555212a50400b4eb1": [
     "InTuneDocs\\DeployUse\\TOC.md"
   ],
+<<<<<<< HEAD
+  "e60915460a426e06e9354c40aa395fb76b817461": [
+    "InTuneDocs\\DeployUse\\understand-microsoft-intune-operations-by-using-reports.md"
+  ],
+||||||| merged common ancestors
+=======
   "99aa0fbc3af624c04bdfed49db5272b740f68da9": [
     "InTuneDocs\\DeployUse\\understand-microsoft-intune-operations-by-using-reports.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "b8af36cef1bcb9077d0ab611a14fb88c0f458ece": [
     "InTuneDocs\\DeployUse\\understand-microsoft-intune-operations-by-using-reports.md"
   ],
   "4d5dcd8fe62780818a1765f5d461770cfabf64e2": [
     "InTuneDocs\\DeployUse\\understand-microsoft-intune-operations-by-using-reports.md"
   ],
+<<<<<<< HEAD
+  "669e096735ae7123123873dad8982abf2c4c38d6": [
+    "InTuneDocs\\DeployUse\\understand-your-devices-with-inventory-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "3d01ec8c2b848b4fa1e507ec9e7a31125badf30e": [
     "InTuneDocs\\DeployUse\\understand-your-devices-with-inventory-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "6a13421a654adaeb9f2cd78dad90cdc7c5f3f8e8": [
     "InTuneDocs\\DeployUse\\understand-your-devices-with-inventory-in-microsoft-intune.md"
   ],
   "55b99e326e4f22aee62b207eb2e976a8d52e70c3": [
     "InTuneDocs\\DeployUse\\understand-your-devices-with-inventory-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "bb077902e33d6ab18dea33a6ab2d1ff9a70ce937": [
+    "InTuneDocs\\DeployUse\\update-apps-using-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "e78642494356038d4dff259ca54030122fd90819": [
     "InTuneDocs\\DeployUse\\update-apps-using-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "b790d70cf3885eec31c91c0f0e80e6cb3b8efc97": [
     "InTuneDocs\\DeployUse\\update-apps-using-microsoft-intune.md"
   ],
@@ -437,18 +632,32 @@
   "76098c4e82ab1805da384e70cf7dfc5741c2b352": [
     "InTuneDocs\\DeployUse\\update-apps-using-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "addf6791cbd72f9fe9806fd799d36ac198f6df74": [
+    "InTuneDocs\\DeployUse\\use-the-sdk-to-enable-apps-for-mobile-application-management.md"
+  ],
+||||||| merged common ancestors
+=======
   "5de4157e73dbe7f37e1079864891b6d8ee61df6c": [
     "InTuneDocs\\DeployUse\\use-the-sdk-to-enable-apps-for-mobile-application-management.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "93c5993d843e498aaa623e0f55ea9046de9b40d8": [
     "InTuneDocs\\DeployUse\\use-the-sdk-to-enable-apps-for-mobile-application-management.md"
   ],
   "2bb9ac819b63ea47ebc890d23cf83ee127c8e994": [
     "InTuneDocs\\DeployUse\\use-the-sdk-to-enable-apps-for-mobile-application-management.md"
   ],
+<<<<<<< HEAD
+  "61dee41861738a72d67c875e18d6c9714a17457d": [
+    "InTuneDocs\\DeployUse\\wipe-managed-company-app-data-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "3ba40ad3a8c5eaba684d589c7526435ba87d0390": [
     "InTuneDocs\\DeployUse\\wipe-managed-company-app-data-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "ebc83611679f5128df45e4ca6b2f3b745f47061d": [
     "InTuneDocs\\DeployUse\\wipe-managed-company-app-data-with-microsoft-intune.md"
   ],
@@ -485,9 +694,16 @@
   "6c28c3d259f0678669117afbc8a897b0b77056bf": [
     "InTuneDocs\\EndUser\\error-evaluating-device.md"
   ],
+<<<<<<< HEAD
+  "7cdb34c469d2932deb10deec592a899b9848226a": [
+    "InTuneDocs\\DeployUse\\exchange-activesync-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "770871d8cc7a32fb54ef01fb9ac84b1fdee2ec90": [
     "InTuneDocs\\DeployUse\\exchange-activesync-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "c36390bf7886cbfded58275b824f327800f4f458": [
     "InTuneDocs\\DeployUse\\exchange-activesync-policy-settings-in-microsoft-intune.md"
   ],
@@ -509,9 +725,19 @@
   "1cfe860fc52a522303a284b97130acb358004630": [
     "InTuneDocs\\media\\ExchangeConnector.gif"
   ],
+<<<<<<< HEAD
+  "363894bbad27efebdf2eab9ca31d632e93d6e4cb": [
+    "InTuneDocs\\Understand\\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md"
+  ],
+  "1663e5e6b405dc3e6424ef51589fa9f0228b540f": [
+    "InTuneDocs\\Understand\\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md"
+  ],
+||||||| merged common ancestors
+=======
   "db68ec4b9373b8c4bdd95b48f9d5b09a5384b094": [
     "InTuneDocs\\Understand\\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "6787d0c35621b2bc94bfe376dfd1669e9dfe46db": [
     "InTuneDocs\\Understand\\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md"
   ],
@@ -889,18 +1115,32 @@
   "cec44005d4b4571b36ae7282b89128029aa717bf": [
     "InTuneDocs\\media\\ConditionalAccess_SkypeforBusiness.png"
   ],
+<<<<<<< HEAD
+  "8657fdff917783ea960ded4c944b36e226e55433": [
+    "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "9ab162f901b0aab09faeb50300a6f70fd6147542": [
     "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "bfea7213f67b55807045bfd8b29fdb083b841a56": [
     "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
   ],
   "bd7ae595f3edd0d0a21a9941570e567b5b82b56c": [
     "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "dded5802b19cc2e82dc98c057ef02ef9f7e8a443": [
+    "InTuneDocs\\DeployUse\\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "a386358aabc7cc353d0d6969aed4638c728ec4da": [
     "InTuneDocs\\DeployUse\\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "ff7d6f87458a353dbb201bbd1b83bb979434b6e5": [
     "InTuneDocs\\DeployUse\\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md"
   ],
@@ -1024,9 +1264,16 @@
   "d0456ebe7602cfda05694ea1354e07bd59789ab3": [
     "InTuneDocs\\EndUser\\media\\andr-3-warning-about-remove.png"
   ],
+<<<<<<< HEAD
+  "41813b383003311e68f2a7fb50d42638434649f7": [
+    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "138df8f9e71cb25ff5ab742af42a719595d73815": [
     "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "fcb898f08f7cb394a614b67149d1f376d124454f": [
     "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
   ],
@@ -1048,9 +1295,16 @@
   "53e9a439f245a6c6561c6330da53fbf943abc8fb": [
     "InTuneDocs\\PlanDesign\\TOC.md"
   ],
+<<<<<<< HEAD
+  "bab43006d4f142f34ecbb69487acb8b63151ee61": [
+    "InTuneDocs\\GetStarted\\policy-rollout.md"
+  ],
+||||||| merged common ancestors
+=======
   "0a363ed242f5968f3fb84b558cfa134e243a22ff": [
     "InTuneDocs\\GetStarted\\policy-rollout.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "8935fbc42d7b406a5bcdbfc4353209b4447ae413": [
     "InTuneDocs\\GetStarted\\policy-rollout.md"
   ],
@@ -1087,9 +1341,16 @@
   "ca1e7e27c4e3c3d5b4e0aefad09f2b452ed12a45": [
     "InTuneDocs\\TOC.md"
   ],
+<<<<<<< HEAD
+  "c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213": [
+    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "936f48f7f990af4646790e4f8f691917c76e35dd": [
     "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "0eed839ca9f799a923bcc820c15ef51c87347f5b": [
     "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
   ],
@@ -1108,33 +1369,61 @@
   "49a08a21107a9e66d2c846074d9d41c14f237a2e": [
     "InTuneDocs\\Troubleshoot\\TOC.md"
   ],
+<<<<<<< HEAD
+  "2aef2df385cd17a0f261789c735282f4985cb442": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-app-deployment-problems-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "86b5d690a7fed3485fb7b7fe798a87fc93a7fb1a": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-app-deployment-problems-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "dc782a54983e4db39a029a15183834a925d0e00c": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-app-deployment-problems-in-microsoft-intune.md"
   ],
   "320987ee5523dff796920dbf1df39ddc641a5635": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-app-deployment-problems-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "a1f9432e8789a40ec65c64cb958414b97c548f06": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-client-setup-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "c572212b28a589d3706bd502fad3ce8d35afcde9": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-client-setup-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "78fa086f2e7e6c836aa74acb303d9a6564ed0993": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-client-setup-in-microsoft-intune.md"
   ],
   "5fa12aebbddb0129cba57c40cf0c21346a75de63": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-client-setup-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "9a4dce9d7b963e03ceeeba35ba1e529384f42d06": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-company-resource-access-problems-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "8717ad704e5e52bcfd4b7dfbaa4d23a5524b4bee": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-company-resource-access-problems-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "ed14e92d48a2604d16ceee8b844ae5cc0c45f051": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-company-resource-access-problems-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "9ab8100a71be05624e04f39ab809b8d5350aa64f": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "26e5b128abcc508fab0c7c9c7c437a89037abb55": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
   ],
@@ -1147,30 +1436,58 @@
   "ae2b35321b0664c5b54708d7389e9eb0262bb2d6": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-device-enrollment-in-intune.md"
   ],
+<<<<<<< HEAD
+  "c695f39f128cf5ebee14b885b89ebe9833009ae9": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-email-profiles-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "8bb111b13a041ec15c2bdf2ce12bcdb93497cbbc": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-email-profiles-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "766c5d5f8e512ea1c36c73936b0ffb95977395ae": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-email-profiles-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "40d4c602064f0e16d541948ceb284dcde50e2339": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-endpoint-protection-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "95c9b857665bdb97ea035fd4cee18ca4508c4cbb": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-endpoint-protection-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a0": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-endpoint-protection-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "64518fc58a97c0d5060d909b60df565c19498389": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-policies-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "fe30a0068719ab1d68400a042b7135fc66c61038": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-policies-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-policies-in-microsoft-intune.md"
   ],
   "7363b60ac5a82e4712610927cbb8f46eef09a42b": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-policies-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "b5e561b17f385d828fbd34658e4c30ac62ab0ea3": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-software-updates-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "9c08ebe1a4cf1a7768b5dbecf7ffccdd7c8d8006": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-software-updates-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-software-updates-in-microsoft-intune.md"
   ],
@@ -1189,9 +1506,16 @@
   "c854893f457a60a7424010cdf69a91cb8476e167": [
     "InTuneDocs\\Understand\\common-ways-to-use-intune.md"
   ],
+<<<<<<< HEAD
+  "a9ae645034acbc4cf9d43c852fa0554e150f6bf0": [
+    "InTuneDocs\\Understand\\introduction-to-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "99fd2d0ba764b14de5188ba64a84485aa102471b": [
     "InTuneDocs\\Understand\\introduction-to-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f929933391049ac9d6f53fc568d5c306345a0d1c": [
     "InTuneDocs\\Understand\\introduction-to-microsoft-intune.md"
   ],
@@ -1270,15 +1594,25 @@
   "2c66384b3b3613829234ca733658e746255d3b45": [
     "InTuneDocs\\DeployUse\\windows-configuration-policy-settings-in-microsoft-intune.md"
   ],
+  "a70b81e490a5c55d9ce11bd8dbdfc42ab364273c": [
+    "InTuneDocs\\DeployUse\\windows-configuration-policy-settings-in-microsoft-intune.md"
+  ],
   "4a52952907cad7a4bdc3b55705af45ad29a4ffff": [
     "InTuneDocs\\DeployUse\\windows-configuration-policy-settings-in-microsoft-intune.md"
   ],
   "aa62528e588b0579669ab8d115766efd72e6f9b2": [
     "InTuneDocs\\DeployUse\\windows-configuration-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "b70c935fb5c4525fddf7e36e8421ba14e3c15026": [
+    "InTuneDocs\\DeployUse\\windows-team-configuration-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "75866e1854211ad42084f3ededaf1e3c0f6d5119": [
     "InTuneDocs\\DeployUse\\windows-team-configuration-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "aa4a00cfa48feb1528464ab0b65a75ee575b61ed": [
     "InTuneDocs\\DeployUse\\windows-team-configuration-policy-settings-in-microsoft-intune.md"
   ],
@@ -1324,9 +1658,19 @@
   "5f65887345c1a650c6d80863e42f447035c789f7": [
     "InTuneDocs\\DeployUse\\set-up-android-management-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "8304a01357aa48df0ac0ab9094bbd1a0eb216206": [
+    "InTuneDocs\\Understand\\set-up-email-access-for-ios-devices-using-microsoft-intune.md"
+  ],
+  "6318cc0d5419fafc9a9ecc973c1ac17a1e7e81c2": [
+    "InTuneDocs\\Understand\\set-up-email-access-for-ios-devices-using-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "ca5e1a70a7ca552058c7049a7a29e8a9855e1758": [
     "InTuneDocs\\Understand\\set-up-email-access-for-ios-devices-using-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "5b746cee0806fb44b1fd847efb9791d525673133": [
     "InTuneDocs\\Understand\\set-up-email-access-for-ios-devices-using-microsoft-intune.md"
   ],
@@ -1348,6 +1692,12 @@
   "3f9a65b1057f766025d4f3a37fdea7df0c7e5592": [
     "InTuneDocs\\media\\Windows-Phone-Enrollment.png"
   ],
+<<<<<<< HEAD
+  "65506ec3b4d903672e2259be567c07402ee29f31": [
+    "InTuneDocs\\GetStarted\\enterprise-rollout.md"
+  ],
+||||||| merged common ancestors
+=======
   "590b8647b4f4011900631031eeffd699cb86d373": [
     "InTuneDocs\\media\\Intune_Planning_Groups_BYOD_small.png"
   ],
@@ -1396,42 +1746,78 @@
   "c7594bbb7edb236193618bea027ac426e5b9169d": [
     "InTuneDocs\\GetStarted\\enterprise-rollout.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "588d37ac5524c80da9082ee5b1af0e897e925ef9": [
     "InTuneDocs\\GetStarted\\enterprise-rollout.md"
   ],
+<<<<<<< HEAD
+  "cdaa159ba46036e966a3a4585192599908d7cec9": [
+    "InTuneDocs\\GetStarted\\pilot.md"
+  ],
+||||||| merged common ancestors
+=======
   "813b03f5d172749076723f60d4cfe0b6c50a261c": [
     "InTuneDocs\\GetStarted\\pilot.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "af0c3e623167ae7df0177ddcd8e541482512e6b3": [
     "InTuneDocs\\GetStarted\\pilot.md"
   ],
+<<<<<<< HEAD
+  "8bd547eb70f1b933a9dee578a9f843b4cbdd7b57": [
+    "InTuneDocs\\GetStarted\\project-scope.md"
+  ],
+||||||| merged common ancestors
+=======
   "500d97e79471ce78434729457bc4c6b82e23aa1e": [
     "InTuneDocs\\GetStarted\\project-scope.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e": [
     "InTuneDocs\\GetStarted\\project-scope.md"
   ],
   "3bc4655ee40526b511b2504ed5734a8df80d7c19": [
     "InTuneDocs\\GetStarted\\project-scope.md"
   ],
+<<<<<<< HEAD
+  "57f6d51a3f1e05a7edd260b0923d099510114a9f": [
+    "InTuneDocs\\GetStarted\\proof-of-concept.md"
+  ],
+||||||| merged common ancestors
+=======
   "5b19835e7f726e23d402bbab408796cad9028bd0": [
     "InTuneDocs\\GetStarted\\proof-of-concept.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "4c01b7cec6474153fcea465fc050ac419ca2eec5": [
     "InTuneDocs\\GetStarted\\proof-of-concept.md"
   ],
+<<<<<<< HEAD
+  "c20f96481916d5e9468eade65d8aa0c1133646ef": [
+    "InTuneDocs\\GetStarted\\rollout-phases-for-microsoft-intune-deployment.md"
+  ],
+||||||| merged common ancestors
+=======
   "83fa3c30ff56dad124bdad3c5788f1562ed6a5e3": [
     "InTuneDocs\\GetStarted\\rollout-phases-for-microsoft-intune-deployment.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "9f3fcead3c41506734508d588ad180d17cc901ee": [
     "InTuneDocs\\GetStarted\\rollout-phases-for-microsoft-intune-deployment.md"
   ],
   "e570668f46da25e6a870038d390496c67f0203d9": [
     "InTuneDocs\\GetStarted\\rollout-phases-for-microsoft-intune-deployment.md"
   ],
+<<<<<<< HEAD
+  "e06e0b3fe180ea37b63f309caad06c80f58987c0": [
+    "InTuneDocs\\DeployUse\\use-groups-to-manage-users-and-devices-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "f98a9090e5f2227399b287a791cf17191927caec": [
     "InTuneDocs\\DeployUse\\use-groups-to-manage-users-and-devices-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "a1f6dfc7629481403c40a1ce927b588f67e5fa74": [
     "InTuneDocs\\DeployUse\\use-groups-to-manage-users-and-devices-with-microsoft-intune.md"
   ],
@@ -1582,9 +1968,16 @@
   "7f6e2f7854074424054da297c533382e242f5a1e": [
     "InTuneDocs\\media\\MAM_ManagedDevices_November.png"
   ],
+<<<<<<< HEAD
+  "e3520e0bb6f44c5200343384b52031c28d839994": [
+    "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
+  ],
+||||||| merged common ancestors
+=======
   "90b5a9f78a93cde7466937d0ce9dac3d83f3ff64": [
     "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "9106a268ea50b9eea6daeced43747dcfb8978aee": [
     "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
   ],
@@ -1600,27 +1993,48 @@
   "e449467467394e530b56209bad3c1264d66ca7bd": [
     "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
   ],
+<<<<<<< HEAD
+  "3c0f54eac0f3154621d0eadb310c1fbdd52e4ee5": [
+    "InTuneDocs\\DeployUse\\Configure-Intune-certificate-profiles.md"
+  ],
+||||||| merged common ancestors
+=======
   "169fc79d3635f445679ff66665505a0f933dd463": [
     "InTuneDocs\\DeployUse\\Configure-Intune-certificate-profiles.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "8343abe8861468bbba27272aa1f3569390cb826b": [
     "InTuneDocs\\DeployUse\\Configure-Intune-certificate-profiles.md"
   ],
   "1d13dac07be4defa1fe3382e1c893ba80b97b5ba": [
     "InTuneDocs\\DeployUse\\Configure-Intune-certificate-profiles.md"
   ],
+<<<<<<< HEAD
+  "b7840ac5beb27e9befebb131be5f75f95ebf5191": [
+    "InTuneDocs\\DeployUse\\configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "981784985fcb7daae9a3ec984c7370d8c9112df7": [
     "InTuneDocs\\DeployUse\\configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "87608e6323789435641deb882f97f67baf242d3f": [
     "InTuneDocs\\DeployUse\\configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md"
   ],
   "a1b2fb7f2938939725465a18efb594dda91d16bd": [
     "InTuneDocs\\DeployUse\\configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "94ce40589180ebafcacfb497bc4de9f3458f4ca3": [
+    "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "0e4e1291d3ac99ab0f175f1d81a6a34e1b14a2dd": [
     "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f00061e18f80b650b6ed1c28d7620eb5bfafba24": [
     "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
   ],
@@ -1633,7 +2047,19 @@
   "b174a86335a250c53f6015cb40a980cc86ffa61a": [
     "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "9d1f5273f907debf446bfa6c6cf732e4b7e55b98": [
+||||||| merged common ancestors
+  "afe108940173ad5fc445c411cd5110a35d768632": [
+=======
   "612c5f8f887d001b4252c7b125630ddaf49660d2": [
+    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
+  ],
+  "afe108940173ad5fc445c411cd5110a35d768632": [
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
+    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
+  ],
+  "4d1f91050882f17f81e1f50b80d709bbccec05b2": [
     "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
   ],
   "afe108940173ad5fc445c411cd5110a35d768632": [
@@ -1642,33 +2068,48 @@
   "1d2e6676714daba76a9b54553b4ad1af23a0f880": [
     "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
   ],
-  "91d80e0bae12b4c912b61f675e20caa49fa9206d": [
-    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
+<<<<<<< HEAD
+  "693feee133a594032c0edc69f03f65681bacfb81": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
   ],
-  "0509e1597a57658dbefc7c033ef5c5c936fdc036": [
-    "InTuneDocs\\DeployUse\\secure-resource-access-with-certificate-profiles.md"
-  ],
+||||||| merged common ancestors
+=======
   "281aab16840e5a5363b146654e5a941ec21c7b40": [
     "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "c26f3b732eb42903c72e8655542ee1ed586f5c67": [
     "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
   ],
   "bd695391da0f62d9a9e9b2ab901af2e7358227a6": [
     "InTuneDocs\\DeployUse\\restrict-access-to-skype-for-business-online-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "db5ee0ef10c583d1a519844bb699894a83139b40": [
+    "InTuneDocs\\DeployUse\\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "a7881730508b005bf6fd2fdb02129842aca4c27e": [
     "InTuneDocs\\DeployUse\\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "8957df0fc0ffb4385f021484dc2179e928ab196a": [
     "InTuneDocs\\DeployUse\\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md"
   ],
   "65ceaa5a8f6604463463820545a9d108839c00c1": [
     "InTuneDocs\\DeployUse\\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "334eb869ddbc67767a6e9ed6711bd9135ceb558b": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-sharepoint-online-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "f0bbc66b87a555e3607effa820fc3b5534923729": [
     "InTuneDocs\\DeployUse\\restrict-access-to-sharepoint-online-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "ffa72a8292cff9082b61b9b584b19dde161c0431": [
     "InTuneDocs\\DeployUse\\restrict-access-to-sharepoint-online-with-microsoft-intune.md"
   ],
@@ -1687,15 +2128,32 @@
   "27df430e7093760452a2c074c0f770412cc02e11": [
     "InTuneDocs\\DeployUse\\restrict-access-to-sharepoint-online-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "b94ee0a1ea8769612c376b07dfe9ef2c753a8de6": [
+    "InTuneDocs\\DeployUse\\Release-notes-for-Microsoft-Intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "6af1d5da9d57674a5bcff529806abdf25094baf6": [
     "InTuneDocs\\DeployUse\\Release-notes-for-Microsoft-Intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "1906f14568484ebbf23ac7c4350964fb2d5d508f": [
     "InTuneDocs\\DeployUse\\Release-notes-for-Microsoft-Intune.md"
   ],
+<<<<<<< HEAD
+  "b30ab535ac7d8b10e3feef52ab01a68ba8572dba": [
+    "InTuneDocs\\DeployUse\\previous-intune-releases.md"
+  ],
+  "294876eaa3981744a1bd3ea2b65432c90a0a0421": [
+    "InTuneDocs\\DeployUse\\previous-intune-releases.md"
+  ],
+||||||| merged common ancestors
+=======
   "9049dc94bc69e7382107a6d9471d2fff5bfc5827": [
     "InTuneDocs\\DeployUse\\previous-intune-releases.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "65d582958d77150091880cce72e079b87308209f": [
     "InTuneDocs\\DeployUse\\previous-intune-releases.md"
   ],
@@ -1879,9 +2337,16 @@
   "dca5c066a11fb0363ea7b2e548cde2ec37b731e0": [
     "InTuneDocs\\EndUser\\install-the-microsoft-intune-company-portal-app-android.md"
   ],
+<<<<<<< HEAD
+  "a4bdb11a62ff170d3ffd6132a3b7673dec39d22a": [
+    "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
+  ],
+||||||| merged common ancestors
+=======
   "82bf5e8208c08da8ad60173336ca8e8bd718e094": [
     "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f1142352307bc4603c2a7e563561415a484d3d36": [
     "InTuneDocs\\EndUser\\install-your-companys-virtual-private-network-VPN-android.md"
   ],
@@ -1912,9 +2377,16 @@
   "301fdc58dbe827fa21ba7a76457ff5584bd2ff69": [
     "InTuneDocs\\EndUser\\rename-your-device-cpwebsite.md"
   ],
+<<<<<<< HEAD
+  "135e28b5467f302f3cad25587bf0bf992a5ffb7e": [
+    "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-android.md"
+  ],
+||||||| merged common ancestors
+=======
   "6d0d76e678295b0ef1c2b9767715e7f0de020282": [
     "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-android.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "9c7e9f75c23ed63ea233baed0ff42598d532abd1": [
     "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-android.md"
   ],
@@ -1930,9 +2402,16 @@
   "63799f8242db4618ea7b71af9608e30b98a8a27a": [
     "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-android.md"
   ],
+<<<<<<< HEAD
+  "b6bad2d6054605e29173767db614799ac93eae63": [
+    "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-ios.md"
+  ],
+||||||| merged common ancestors
+=======
   "1557f096456ee700f74bc07bbc07e6d17794715e": [
     "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-ios.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "a3f31a6783d85f74f1310a58cf5a820bdf4a67b6": [
     "InTuneDocs\\EndUser\\reset-erase-your-lost-or-stolen-device-ios.md"
   ],
@@ -2050,9 +2529,16 @@
   "2c0f538ab85de4b76feb52bde71b9f325eacf17f": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-windows.md"
   ],
+<<<<<<< HEAD
+  "7db7a5bcb1d2448dc41016253ba3d2308d53623c": [
+    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
+  ],
+||||||| merged common ancestors
+=======
   "343dbd351e1bb9bbad3aed2b6ed4a92ae1ae55f7": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "da40fb7bc13a1d848ed18ddf808b4d65170d2595": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
   ],
@@ -2080,9 +2566,16 @@
   "abcb7dbe4f3423fcba108a7ea0c4b2efa295c970": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md"
   ],
+<<<<<<< HEAD
+  "9fac97b77e8c32f41f5ebff1b3793726f9b07a6b": [
+    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-ios.md"
+  ],
+||||||| merged common ancestors
+=======
   "e256268ddc3d912740f7651ec16ad40b113a696c": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-ios.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "21f86e3dfb8f9666d28b42310ce5f44d5a722964": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-ios.md"
   ],
@@ -2278,9 +2771,16 @@
   "9f377cf9293c9697a59c736b07a82bca09728e14": [
     "InTuneDocs\\EndUser\\you-get-an-error-while-using-the-company-portal-app-ios.md"
   ],
+<<<<<<< HEAD
+  "2e513f3c49af2565c29a02b8927f70e191d22b8d": [
+    "InTuneDocs\\EndUser\\your-device-is-rooted-and-you-cant-connect-android.md"
+  ],
+||||||| merged common ancestors
+=======
   "f62e149da77dbda6fced108be6188e8391c9a79c": [
     "InTuneDocs\\EndUser\\your-device-is-rooted-and-you-cant-connect-android.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "83ef84a6bf4505392d5b4d9816917e24c6b75240": [
     "InTuneDocs\\EndUser\\your-device-is-rooted-and-you-cant-connect-android.md"
   ],
@@ -2311,9 +2811,16 @@
   "21305aa10caecdcc6f2d22f305d47f74a5b3f3ba": [
     "InTuneDocs\\EndUser\\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md"
   ],
+<<<<<<< HEAD
+  "132648f4c4d13983b169fa8497deae9787fe6db5": [
+    "InTuneDocs\\DeployUse\\control-what-admins-can-see-in-the-microsoft-intune-admin-console.md"
+  ],
+||||||| merged common ancestors
+=======
   "02448f2f960d98b28780798b469aea23cdab0e2d": [
     "InTuneDocs\\DeployUse\\control-what-admins-can-see-in-the-microsoft-intune-admin-console.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "b8b794b577b19bdc3f91c1a33fd0487c1aecb9db": [
     "InTuneDocs\\DeployUse\\control-what-admins-can-see-in-the-microsoft-intune-admin-console.md"
   ],
@@ -2344,27 +2851,48 @@
   "e68e93fbf8bccceaf95e183a33049fdb35a9aae5": [
     "InTuneDocs\\DeployUse\\enroll-devices-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "a87df3551d0758a3db8eb622db32fdcb60e4fd0e": [
+    "InTuneDocs\\DeployUse\\overview-of-device-and-app-lifecycles-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "ef687c39e5f1433b9b1991273dd3e537032ce1a2": [
     "InTuneDocs\\DeployUse\\overview-of-device-and-app-lifecycles-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "0fa23674a5c9f205ff8ed93987828d6542ef2d98": [
     "InTuneDocs\\DeployUse\\overview-of-device-and-app-lifecycles-in-microsoft-intune.md"
   ],
   "d1912736361a9fa74a8827be367227336ee800eb": [
     "InTuneDocs\\DeployUse\\overview-of-device-and-app-lifecycles-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "51318237670dcfaac998014cb90aec662fd9faf8": [
+    "InTuneDocs\\DeployUse\\Custom-configurations-for-VPN-profiles.md"
+  ],
+||||||| merged common ancestors
+=======
   "986ea497995f8d1bbe3a6c8c0bad7c7746e554d8": [
     "InTuneDocs\\DeployUse\\Custom-configurations-for-VPN-profiles.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "7e7c50552b5a61804e759a7ec5443029d4bd4584": [
     "InTuneDocs\\DeployUse\\Custom-configurations-for-VPN-profiles.md"
   ],
   "0b5c3b6255276d5785bf182df36f5dcfb23ba099": [
     "InTuneDocs\\DeployUse\\Custom-configurations-for-VPN-profiles.md"
   ],
+<<<<<<< HEAD
+  "a8181a422af0e86c047ad267e9e8cd53c6f6d7a1": [
+    "InTuneDocs\\DeployUse\\pre-shared-key-wi-fi-profile.md"
+  ],
+||||||| merged common ancestors
+=======
   "32c5c06436e0ef78f0ec69c59c228c8db8a130d1": [
     "InTuneDocs\\DeployUse\\pre-shared-key-wi-fi-profile.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "632adf3dccf40dd2b361d170f501a851bf0fda38": [
     "InTuneDocs\\DeployUse\\pre-shared-key-wi-fi-profile.md"
   ],
@@ -2428,36 +2956,64 @@
   "3ffb09f78f6a04c26fb9b28e2d5a63b06f82f8d6": [
     "InTuneDocs\\DeployUse\\media\\intune-sa-3e-view-device-noncompliance.png"
   ],
+<<<<<<< HEAD
+  "67d9b0e0231b8165500f6995d5c058fb5c3f2df1": [
+    "InTuneDocs\\DeployUse\\create-a-device-compliance-policy-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "7af37ac4d7c6cb1cf74ebcb3923622539cdc133f": [
     "InTuneDocs\\DeployUse\\create-a-device-compliance-policy-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "c5c1c9d7e032a157241526b012051712e19a6066": [
     "InTuneDocs\\DeployUse\\create-a-device-compliance-policy-in-microsoft-intune.md"
   ],
   "f4f036fc1b6fe2394e05907e2d14289c9fba3426": [
     "InTuneDocs\\DeployUse\\create-a-device-compliance-policy-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "42d326dbe937724141213dacc133aefe5020a61d": [
+    "InTuneDocs\\DeployUse\\deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "57bd420ab3a16f0f76ddfa0f42397da87cb34bf3": [
     "InTuneDocs\\DeployUse\\deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "85076526a68be7e51c33362daca5cf95186dc94a": [
     "InTuneDocs\\DeployUse\\deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md"
   ],
   "52da5cf6d14a5fc3ff3db6bdb07823d3bf373466": [
     "InTuneDocs\\DeployUse\\deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "f34ff402ae1012a471219647e94bc1f5225a6f07": [
+    "InTuneDocs\\DeployUse\\introduction-to-device-compliance-policies-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "72942a3706edb68f7b44a418100d2970ed300b64": [
     "InTuneDocs\\DeployUse\\introduction-to-device-compliance-policies-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "76fce568cf622edbe98842979543cb48a365515b": [
     "InTuneDocs\\DeployUse\\introduction-to-device-compliance-policies-in-microsoft-intune.md"
   ],
   "c443bb51ba05161c5088475e528e6ada28c105a5": [
     "InTuneDocs\\DeployUse\\introduction-to-device-compliance-policies-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "3e0b92eb725c3f511d6652005a332fe5d880ed9e": [
+    "InTuneDocs\\DeployUse\\plan-your-user-and-device-groups.md"
+  ],
+||||||| merged common ancestors
+=======
   "3eed8ee965e051b23ca9a5b49b02f42afc752b9b": [
     "InTuneDocs\\DeployUse\\plan-your-user-and-device-groups.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "e89d8384532b994d810649fc07c698237e2f3cec": [
     "InTuneDocs\\DeployUse\\plan-your-user-and-device-groups.md"
   ],
@@ -2488,12 +3044,22 @@
   "a836057cf6c226c8330b0b916c18cd609f791344": [
     "InTuneDocs\\DeployUse\\windows-compliance-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "cce19141ef25a8cca785d6ae80d1fe03ab352a8e": [
+    "InTuneDocs\\DeployUse\\microsoft-intune-policy-reference.md"
+  ],
+  "2b1f4dfff3fcc057aaa209e0861f6065dbc79e5c": [
+    "InTuneDocs\\DeployUse\\microsoft-intune-policy-reference.md"
+  ],
+||||||| merged common ancestors
+=======
   "c1ded1cee2d94d6444bd235b5b0aabfddcbf90fe": [
     "InTuneDocs\\media\\Intune_Planning_Groups_Default_small.png"
   ],
   "3d382723081d5440accd292c4769d4f398ba9030": [
     "InTuneDocs\\DeployUse\\microsoft-intune-policy-reference.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "fe8a5029b251ac8cae57a9cd7de3aeb899cbc24f": [
     "InTuneDocs\\DeployUse\\microsoft-intune-policy-reference.md"
   ],
@@ -2509,30 +3075,58 @@
   "8079ca5abcedbe024fb6347e02c7cf61ae541a30": [
     "InTuneDocs\\DeployUse\\terms-and-condition-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "d5f7d7f5aaf2f80bbff388552e40c485c16c0488": [
+    "InTuneDocs\\GetStarted\\integration-with-cloud-services.md"
+  ],
+||||||| merged common ancestors
+=======
   "b2df2a2ec092ed9bb7d12b7f51a4fd9c9858f041": [
     "InTuneDocs\\GetStarted\\integration-with-cloud-services.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "747ea4249ac167510e853ae86c0c49d1fe62eabc": [
     "InTuneDocs\\GetStarted\\integration-with-cloud-services.md"
   ],
   "e58b295bf89e200c7c986902c9b4408d23e67c64": [
     "InTuneDocs\\GetStarted\\integration-with-cloud-services.md"
   ],
+<<<<<<< HEAD
+  "d2c40afb96cb5d7d9a7fcc0ebb51120a95f57d62": [
+    "InTuneDocs\\GetStarted\\network-bandwidth-use.md"
+  ],
+||||||| merged common ancestors
+=======
   "18007f598f4182fd90592d4aeb365b834a73fc72": [
     "InTuneDocs\\GetStarted\\network-bandwidth-use.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12": [
     "InTuneDocs\\GetStarted\\network-bandwidth-use.md"
   ],
+<<<<<<< HEAD
+  "e6fad46dde67592bea74d7feb954f130773bfb0e": [
+    "InTuneDocs\\GetStarted\\supported-web-browsers.md"
+  ],
+||||||| merged common ancestors
+=======
   "efb8dd90eab9bbcc77135ef2ff3e0ffd37d128bf": [
     "InTuneDocs\\GetStarted\\supported-web-browsers.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "2524ff0c6139029b162fd58ed209e2d1c284df76": [
     "InTuneDocs\\GetStarted\\supported-web-browsers.md"
   ],
+<<<<<<< HEAD
+  "3cd570c7d8af271a506ce5ebfcb0f723c0e636eb": [
+    "InTuneDocs\\GetStarted\\what-to-know-before-you-start-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "2b781bc77dc32aff726683f33bdd9d29650661ea": [
     "InTuneDocs\\GetStarted\\what-to-know-before-you-start-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "abf5d433bb9da7469883cd0c0de953ea16c3a4da": [
     "InTuneDocs\\GetStarted\\what-to-know-before-you-start-microsoft-intune.md"
   ],
@@ -2545,9 +3139,16 @@
   "2456d1f378ade046e5e0df9630544fe99342360d": [
     "InTuneDocs\\GetStarted\\what-to-know-before-you-start-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "df430a31e13027c7a342beb90b78d48c74bce9e6": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-email-and-o365-services-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "a2b6b0b98e57821cf74fff7cc770c905555e3f30": [
     "InTuneDocs\\DeployUse\\restrict-access-to-email-and-o365-services-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "20307de273d6d7c4fef796f72b6a22f290131c4a": [
     "InTuneDocs\\DeployUse\\restrict-access-to-email-and-o365-services-with-microsoft-intune.md"
   ],
@@ -2560,15 +3161,29 @@
   "34b0dce8ef005c23f0a1f0faa8f8349edb38d21f": [
     "InTuneDocs\\DeployUse\\restrict-access-to-email-and-o365-services-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "490a1aa091547de1d2bccb0fe8ea72e40753a0a7": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-exchange-onpremises-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "690c97fbee4c19a0e7fee9638c9b8797804a3b0e": [
     "InTuneDocs\\DeployUse\\restrict-access-to-exchange-onpremises-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "6bc85a0291fa62069ba6a0f63fdd9306db3c4195": [
     "InTuneDocs\\DeployUse\\restrict-access-to-exchange-onpremises-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "bef94f44767347bcdb944eadf63ce673ffc1b7f3": [
+    "InTuneDocs\\DeployUse\\restrict-email-access-example-scenarios.md"
+  ],
+||||||| merged common ancestors
+=======
   "6c1a1c90b442eac039f93103264059ea415b43ff": [
     "InTuneDocs\\DeployUse\\restrict-email-access-example-scenarios.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "962840a608a7b228d5f2519ea566d996bb4e21a4": [
     "InTuneDocs\\DeployUse\\restrict-email-access-example-scenarios.md"
   ],
@@ -2590,9 +3205,16 @@
   "bac9420657d6e709a3f3e93d0fc386b9870cb135": [
     "InTuneDocs\\media\\IntuneSA5bExchangeOnPremPolicy.png"
   ],
+<<<<<<< HEAD
+  "c4ee5b25bd737c357e58db6420e69beabf66a74d": [
+    "InTuneDocs\\DeployUse\\protect-apps-and-data-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "f1694c6097961bf1232969306ae9eff5278fec3e": [
     "InTuneDocs\\DeployUse\\protect-apps-and-data-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "34cc1be9e8db8bcc1f30aca2485c37c29f3ca9b8": [
     "InTuneDocs\\DeployUse\\protect-apps-and-data-with-microsoft-intune.md"
   ],
@@ -2602,36 +3224,78 @@
   "9445b4b171eb2102d73cf0e866e85b535274eee2": [
     "InTuneDocs\\DeployUse\\protect-apps-and-data-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "60ebbb85a21d2c258e3430098e74c89518f9f35c": [
+    "InTuneDocs\\GetStarted\\administrative-accounts-websites-perms.md"
+  ],
+||||||| merged common ancestors
+=======
   "69b19cec363c769209dab02a941f286057e9dc3e": [
     "InTuneDocs\\GetStarted\\administrative-accounts-websites-perms.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "14f081237c17cc35b21804a2f21500d1aeb5445b": [
     "InTuneDocs\\GetStarted\\administrative-accounts-websites-perms.md"
   ],
   "a8d9cf5d36107c54b97d2b5a5250645dc735a8da": [
     "InTuneDocs\\GetStarted\\administrative-accounts-websites-perms.md"
   ],
+<<<<<<< HEAD
+  "02d7890f6b9fdd4f4f0546552d4ca5bd2e03267f": [
+    "InTuneDocs\\GetStarted\\microsoft-intune-company-portal.md"
+  ],
+||||||| merged common ancestors
+=======
   "c2f5ca6405b623d7bc51788e003a1115b3a7d1d3": [
     "InTuneDocs\\GetStarted\\microsoft-intune-company-portal.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "815e36569e17bde750b49c7d7b10744a9b614635": [
     "InTuneDocs\\GetStarted\\microsoft-intune-company-portal.md"
   ],
+<<<<<<< HEAD
+  "9f6f4413eabc74cd2d6edd16098c2c3b7f9c6b90": [
+    "InTuneDocs\\GetStarted\\network-infrastructure-requirements-for-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "178d9fc474588c088ed510098dc71bc763695b3c": [
     "InTuneDocs\\GetStarted\\network-infrastructure-requirements-for-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "b551aca6994780591dabe042420d5f23d98b218b": [
     "InTuneDocs\\GetStarted\\network-infrastructure-requirements-for-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "ce30d40d55ca544c7d0f9b1caa430540c3e4f3e7": [
+    "InTuneDocs\\PlanDesign\\help-end-users-understand-company-portal-app-messages.md"
+  ],
+  "3f905830cf59cff8d029bd2c95fc0eff90ec25a3": [
+    "InTuneDocs\\PlanDesign\\help-end-users-understand-company-portal-app-messages.md"
+  ],
+  "40f2ead80326a451dfd59a4969191009dc35deef": [
+    "InTuneDocs\\PlanDesign\\help-end-users-understand-company-portal-app-messages.md"
+||||||| merged common ancestors
+  "40f2ead80326a451dfd59a4969191009dc35deef": [
+    "InTuneDocs\\PlanDesign\\help-end-users-understand-company-portal-app-messages.md"
+=======
   "d4c4e7a2013947bc89d08f56904a57b910b98fb6": [
     "InTuneDocs\\DeployUse\\mobile-device-management-with-exchange-activesync-and-microsoft-intune.md"
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   ],
   "d24395786daa7aec103ec754895868a75983e099": [
     "InTuneDocs\\DeployUse\\mobile-device-management-with-exchange-activesync-and-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "cc9f9578aecc63557cb5bc64288344a8145ff80b": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-exchange-online-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "63d3d6bf00b646869030530931b44ff4ba80b5ab": [
     "InTuneDocs\\DeployUse\\restrict-access-to-exchange-online-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "87663f2677a006e5db525f8897fea4bf05cb5912": [
     "InTuneDocs\\DeployUse\\restrict-access-to-exchange-online-with-microsoft-intune.md"
   ],
@@ -2656,9 +3320,16 @@
   "519bde55966d88f516553d509af60e34a6af62a9": [
     "InTuneDocs\\DeployUse\\azure-portal-for-microsoft-intune-mam-policies.md"
   ],
+<<<<<<< HEAD
+  "ca84a9ce4a1a418c1107f11dbb66cf64362a77f5": [
+    "InTuneDocs\\DeployUse\\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "c742b0acdb24decae9668aba034f9e1eb15e5b78": [
     "InTuneDocs\\DeployUse\\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "06ae28f168bedc2bd7131e8976daf16e9208ab22": [
     "InTuneDocs\\DeployUse\\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md"
   ],
@@ -2677,15 +3348,29 @@
   "770e416566692636d1b48c599de66739061d94d8": [
     "InTuneDocs\\DeployUse\\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "5684ed108d11544b5623f89b4e8e22e69b81eb33": [
+    "InTuneDocs\\DeployUse\\vpn-connections-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "329f312410b9860cbe9b5eb618cc1f11cbffa092": [
     "InTuneDocs\\DeployUse\\vpn-connections-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "b55cf263611d6e90805cad9985eb8a5e7ebeb4a0": [
     "InTuneDocs\\DeployUse\\vpn-connections-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "14de6a0eb0f5912825e7fc3f3712324f9a3d1b32": [
+    "InTuneDocs\\DeployUse\\wi-fi-connections-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "e60a4cc1aff8aee6928db9d6832a326e2ae997cf": [
     "InTuneDocs\\DeployUse\\wi-fi-connections-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "1282ec1214a2c499166299a0a13b0bd3bfc7f3b2": [
     "InTuneDocs\\DeployUse\\wi-fi-connections-in-microsoft-intune.md"
   ],
@@ -2749,9 +3434,16 @@
   "86d3b7894eca70454fa82393c4d06eab5a99246f": [
     "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "98a5013ef42732e6a1a541e128986bedbb004611": [
+    "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
+  ],
+||||||| merged common ancestors
+=======
   "52c2e99c544818dbe329036cef704ae80c287a43": [
     "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "9e0142ae97ae80c1ab78ab3c848852eb5d660e10": [
     "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
   ],
@@ -2761,6 +3453,15 @@
   "6cab0bacd9157323e342662609de8c9f20550d78": [
     "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
   ],
+<<<<<<< HEAD
+||||||| merged common ancestors
+  "1fdb1dc56b7803b72bce4a6d60bb4cd20b03af5e": [
+    "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
+  ],
+  "4367f7f59db9b9803d1793bd07ad533c8e7489ff": [
+    "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
+  ],
+=======
   "1fdb1dc56b7803b72bce4a6d60bb4cd20b03af5e": [
     "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
   ],
@@ -2770,6 +3471,7 @@
   "5d1d9182abe85ec96b81653790dd75647984dcec": [
     "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "d5f13a640849a1dbdd76dd2f7e6af363b78e955e": [
     "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
   ],
@@ -2837,24 +3539,45 @@
   "b91de3ef520b2cc704eadf508732f4383853480b": [
     "InTuneDocs\\DeployUse\\media\\publisher-for-pc.png"
   ],
+<<<<<<< HEAD
+  "bb56739542eaeb8b86c174f3081da3086c0f4717": [
+    "InTuneDocs\\GetStarted\\operations-and-maintenance.md"
+  ],
+||||||| merged common ancestors
+=======
   "43b085bd3d799c8ca9343de61508cb24d8ec5466": [
     "InTuneDocs\\GetStarted\\operations-and-maintenance.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "a26de5f97800d8cac0c52c87014c75402460fee4": [
     "InTuneDocs\\GetStarted\\operations-and-maintenance.md"
   ],
+<<<<<<< HEAD
+  "d9a818f0be1f1b6fc1639cb705876c298d1570b4": [
+    "InTuneDocs\\DeployUse\\policies-to-protect-windows-pcs-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "1404508de2aacf5e12a8bf97e39ad059105c16f6": [
     "InTuneDocs\\DeployUse\\policies-to-protect-windows-pcs-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "25db9e0d36567f847d2c1eaf082a0bce54a4f462": [
     "InTuneDocs\\DeployUse\\policies-to-protect-windows-pcs-in-microsoft-intune.md"
   ],
   "8d1bad7af972a32ce3509d67edab3f4f9c9df299": [
     "InTuneDocs\\DeployUse\\policies-to-protect-windows-pcs-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "3fe277417c82bc4d60f355ac5366f0f7d70039ab": [
+    "InTuneDocs\\Troubleshoot\\general-troubleshooting-tips-for-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "1a1a061e5388b154887def55eec54f28373b77e2": [
     "InTuneDocs\\Troubleshoot\\general-troubleshooting-tips-for-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c": [
     "InTuneDocs\\Troubleshoot\\general-troubleshooting-tips-for-microsoft-intune.md"
   ],
@@ -2864,9 +3587,16 @@
   "b2fc107fc43818d74c4400077e996e4488547281": [
     "InTuneDocs\\media\\enroll-Intune-WinEnr.png"
   ],
+<<<<<<< HEAD
+  "c496a71a4dc43c3af1d8d19441bd08d490ab032c": [
+    "InTuneDocs\\DeployUse\\deploy-apps-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "6ae7bd35157da261d0627f70933fe2a808f9e677": [
     "InTuneDocs\\DeployUse\\deploy-apps-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "641cc1cc9f44427f72a9ba62e1bb69794eb8c98e": [
     "InTuneDocs\\DeployUse\\deploy-apps-in-microsoft-intune.md"
   ],
@@ -2876,33 +3606,67 @@
   "46562ed3463c4a23a511eb5c7f28a0b11e84f421": [
     "InTuneDocs\\DeployUse\\deploy-apps-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "1a4cd495ab9636dcd4bc030db663df320209e0f1": [
+    "InTuneDocs\\DeployUse\\manage-volume-purchased-apps-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "6c673b2bb36044cb401b7543193ad3dca279c3a1": [
     "InTuneDocs\\DeployUse\\manage-volume-purchased-apps-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "8acd5c3727d829987452de88fad5536c6a69b27b": [
     "InTuneDocs\\DeployUse\\manage-volume-purchased-apps-in-microsoft-intune.md"
   ],
   "0b8da55b81040fd20e8234303ac4da384de954d8": [
     "InTuneDocs\\DeployUse\\manage-volume-purchased-apps-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "d2af901a322a7e4a35b4708cb60c70010314b0bb": [
+    "InTuneDocs\\DeployUse\\monitor-apps-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "06a50371715a89961231b5810180ac459f05229e": [
     "InTuneDocs\\DeployUse\\monitor-apps-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "9ab301dd69aecc751808bc7e996e82000f5f5270": [
     "InTuneDocs\\DeployUse\\monitor-apps-in-microsoft-intune.md"
   ],
   "c92b7de51de0ac0115dd53e421d4852bed8d729a": [
     "InTuneDocs\\DeployUse\\monitor-apps-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "52b73f3321074bc781d22c99c90baf90ad6bab63": [
+    "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
+  ],
+  "16cd8e6cd6810a245f58f59b055cd89afbaf498f": [
+    "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "e840a1b5717fc3494a7ca0bdd7127381aa7c659c": [
     "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "893e896fc52e6e883fcd151db2c47030113502a2": [
     "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "e4d4699c145fb012038b89f18cdaee38db5fe754": [
+    "InTuneDocs\\DeployUse\\whats-new-in-microsoft-intune.md"
+  ],
+  "e159044028179049c3ea2273b158796ad5a1f0bf": [
+    "InTuneDocs\\DeployUse\\whats-new-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "0ccbae6fbff7fab356ad5ecd2ab2f2b8b18db692": [
     "InTuneDocs\\DeployUse\\whats-new-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "74733f7dd3928f5469113138de3d1e93d022116e": [
     "InTuneDocs\\DeployUse\\whats-new-in-microsoft-intune.md"
   ],
@@ -2957,6 +3721,9 @@
   "6bf744f8e71ad7c506a66cbfe44b33122cfc738e": [
     "InTuneDocs\\DeployUse\\how-your-android-users-get-their-apps.md"
   ],
+  "7421f4872f0b54a175a962cee8a801147ddae267": [
+    "InTuneDocs\\DeployUse\\how-your-android-users-get-their-apps.md"
+  ],
   "3b39e0de265928ab0d68ecca1d62f46300687a9b": [
     "InTuneDocs\\DeployUse\\how-your-android-users-get-their-apps.md"
   ],
@@ -2972,15 +3739,29 @@
   "f38f85dbe343fb4f3bfbc61f46d5f3523481b5ef": [
     "InTuneDocs\\DeployUse\\how-your-android-users-get-their-apps.md"
   ],
+<<<<<<< HEAD
+  "a2f50d71822819b0a92e7956c4e669e24c1832b6": [
+    "InTuneDocs\\DeployUse\\how-your-ios-users-get-their-apps.md"
+  ],
+||||||| merged common ancestors
+=======
   "ec1676c3451770ae935375c0c8780fc62a0e182e": [
     "InTuneDocs\\DeployUse\\how-your-ios-users-get-their-apps.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f36bc73d3397fef5bebe6896d91bcffcd5507cfc": [
     "InTuneDocs\\DeployUse\\how-your-ios-users-get-their-apps.md"
   ],
+<<<<<<< HEAD
+  "03182d12ac9553a0f05af9348738896b924244c1": [
+    "InTuneDocs\\DeployUse\\how-your-windows-users-get-their-apps.md"
+  ],
+||||||| merged common ancestors
+=======
   "ff10b6afe89008a8708bdc00d788b0fd7592e364": [
     "InTuneDocs\\DeployUse\\how-your-windows-users-get-their-apps.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f226ea2a7be64ef759f61c61903bb0dc964c1410": [
     "InTuneDocs\\DeployUse\\how-your-windows-users-get-their-apps.md"
   ],
@@ -3023,6 +3804,9 @@
   "0c720a6ed6350742bf7e0edfdcb8320b681430b8": [
     "InTuneDocs\\GetStarted\\domain-names-for-microsoft-intune.md"
   ],
+  "2adbe1e4a92af5302550a8b78069bc49d725dbc3": [
+    "InTuneDocs\\GetStarted\\domain-names-for-microsoft-intune.md"
+  ],
   "39c747920638d0c9749c5b9922e3b3130a81438c": [
     "InTuneDocs\\GetStarted\\domain-names-for-microsoft-intune.md"
   ],
@@ -3053,9 +3837,16 @@
   "340198b6ffeb8880fca82dfe52725196a39fd030": [
     "InTuneDocs\\GetStarted\\domain-names-for-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "6d21db0557b43574a03070804af97ef4d13c2e1b": [
+    "InTuneDocs\\DeployUse\\add-apps-for-mobile-devices-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "239a4b932eed61fc0b2b870892730330565eac93": [
     "InTuneDocs\\DeployUse\\add-apps-for-mobile-devices-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "795843f012434e1a50cd6abab05b6af2c811cf3e": [
     "InTuneDocs\\DeployUse\\add-apps-for-mobile-devices-in-microsoft-intune.md"
   ],
@@ -3068,18 +3859,32 @@
   "b999aaa523deb3656933a7ce4b250e0137460648": [
     "InTuneDocs\\DeployUse\\add-apps-for-mobile-devices-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "0c70a40b9ec1ba53a6a3d6a1c3f197bf0252b8a3": [
+    "InTuneDocs\\DeployUse\\add-apps-for-windows-pcs-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1": [
     "InTuneDocs\\DeployUse\\add-apps-for-windows-pcs-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "39c21395b24e40f57899cf0e5183833a38e4ec84": [
     "InTuneDocs\\DeployUse\\add-apps-for-windows-pcs-in-microsoft-intune.md"
   ],
   "7da75576bf5296da6fbf35fb3c35c5d0d45c511d": [
     "InTuneDocs\\DeployUse\\add-apps-for-windows-pcs-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "0ba8e40b06452002f33b09b37e399c62da54c352": [
+    "InTuneDocs\\DeployUse\\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "406199acbb0684cb71aff5348f5f9fcc89aa6cfe": [
     "InTuneDocs\\DeployUse\\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "c54c759aa74ab7622962c1b33a9e6d20efef8d95": [
     "InTuneDocs\\DeployUse\\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md"
   ],
@@ -3095,9 +3900,16 @@
   "9b2f625f3871746f758320e1c4c988ce48cbb47f": [
     "InTuneDocs\\DeployUse\\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "53201c36e7a210c1c62d3ed3183093ed8e63dc53": [
+    "InTuneDocs\\DeployUse\\protect-your-devices-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "5c82e905afeab2d7da8a2e9cebf651ed3c8ce21c": [
     "InTuneDocs\\DeployUse\\protect-your-devices-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "2544fa1905e9e733739dba796cf152dff2c142a6": [
     "InTuneDocs\\DeployUse\\protect-your-devices-with-microsoft-intune.md"
   ],
@@ -3122,12 +3934,19 @@
   "8fea0f7f87972bc643bbb20348095e05f701287e": [
     "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+||||||| merged common ancestors
+  "5848a8767751a21fe7e2b0a14a4f5c2d16779e59": [
+    "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
+  ],
+=======
   "5848a8767751a21fe7e2b0a14a4f5c2d16779e59": [
     "InTuneDocs\\DeployUse\\ios-direct-enrollment-in-microsoft-intune.md"
   ],
   "84d869b7577cd4fb23c67fb3c90ee7acb38c8864": [
     "InTuneDocs\\EndUser\\media\\andr-cert_install-1-cert_missing.png"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "cde197d106eebce348d9962910e8def86b8e4caa": [
     "InTuneDocs\\EndUser\\media\\andr-cert_install-1-cert_missing.png"
   ],
@@ -3203,9 +4022,16 @@
   "8e11b2aa1e985e9c2b9013fae17c305466aea1c8": [
     "InTuneDocs\\DeployUse\\media\\conditional_access_SFBPolicy.png"
   ],
+<<<<<<< HEAD
+  "9716b36e1b56f67358d227bfdd4b71d3b9aa2246": [
+    "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "d07c3af95c2abbc93ad3190f3b34aca06ebf07bc": [
     "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "2ddc64b5e30e4d6e2008b4e9bd5d16e046ae658b": [
     "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
   ],
@@ -3218,9 +4044,16 @@
   "28b5351be7d4fa46b4dee0b6145c5e9f81fe15af": [
     "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "7de118a006bb45e19142459d8e62dd6f1dc5a3dc": [
+    "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "c6fee66fd5e513754eebf620938eeb70224eaf68": [
     "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "3292df922eeb53108f2b34d4113b0b6c5a114564": [
     "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
   ],
@@ -3230,9 +4063,16 @@
   "b105eca7a93b8648e832e422239709b284b5f0ef": [
     "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "90eee9515696f049194515fb6bed280564d0f923": [
+    "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "ce30ab0e5a4ce709aafa5892789590b42b484db4": [
     "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "0c08a00b6df818d8afa5fa1a185485daa3688f61": [
     "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
   ],
@@ -3242,9 +4082,16 @@
   "c31ee9bb3aafa6b54068adda5b14f2c1cacacd31": [
     "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "13c1f702ca2718d03dded71bf1ec40cae6ff22f9": [
+    "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "cc715ae302dd0b3085c6f2ab0afa9caf90da7222": [
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "4d175672550b42bd8d23477276aa97de57fadf18": [
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
@@ -3257,9 +4104,16 @@
   "0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9": [
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "e11ca62eb242d7c530e8de2ad1e885315d220233": [
+    "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "bfa266a166354da1fd79163888ac003675651c7a": [
     "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f507968f694fd78dc9aa458f22ffea708c1630cd": [
     "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
   ],
@@ -3323,9 +4177,16 @@
   "7a42482dd56b25d867e2bb80dcd7ad4c3474b5e9": [
     "InTuneDocs\\DeployUse\\end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "52ddcb22b27443b42a365a84f1769e90f1e9e8a0": [
+    "InTuneDocs\\DeployUse\\manage-data-transfer-between-ios-apps-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "080d861e8fd2d0140ffe5d9987032213ae0e4d4c": [
     "InTuneDocs\\DeployUse\\manage-data-transfer-between-ios-apps-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "80a826b70598adfd48939d597f9127fae31559b3": [
     "InTuneDocs\\DeployUse\\manage-data-transfer-between-ios-apps-with-microsoft-intune.md"
   ],
@@ -3353,15 +4214,25 @@
   "37ecc9a18d332b9f2d754573030f6157bb6b77be": [
     "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
   ],
+  "5aa9be48e5cbe2ad812f80bce093e501c4000b78": [
+    "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
+  ],
   "9bb4a89b12375a49560443425f6c73a7fa75694e": [
     "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
   ],
   "543f0acd6fb3691ba31e9da6fec49b3f30f67613": [
     "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
   ],
+<<<<<<< HEAD
+  "c599f07401c50691baec3514a20383ca8e717fc9": [
+    "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
+  ],
+||||||| merged common ancestors
+=======
   "1032a40f05f6cccf4f8b0deabe1164591c5657b3": [
     "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "13218f60843ac2dca3610065c357d269631ffd2d": [
     "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
   ],
@@ -3386,18 +4257,32 @@
   "204ed85ed1c4dea12212eea34b080998af6cc211": [
     "InTuneDocs\\DeployUse\\media\\pol-sa-terms-conditions.png"
   ],
+<<<<<<< HEAD
+  "86d9de9992003ffd163291035174c8d1e822929a": [
+    "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "4c62e63b624165982fbbcd1765b14abe6ec0ae96": [
     "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "dd076e005347cf1d0261cc0a681495e573ba0447": [
     "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
   ],
   "882f0aa030d1d9e03ca50baed3f618f7a719b5b5": [
     "InTuneDocs\\DeployUse\\overview-of-app-lifecycle-in-microsoft-intune.md"
   ],
+<<<<<<< HEAD
+  "e9bfb4e3d6f66dee58a70a0a00f6d18469d2cf1d": [
+    "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "71ef65adcc98d905302eb661f110b6037e4d16b0": [
     "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "751025aa71ef41564100ea57ac0d1fe60619e214": [
     "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
   ],
@@ -3509,9 +4394,16 @@
   "6e887d226228d073dc136b50ba9320ada996a6cd": [
     "InTuneDocs\\EndUser\\your-device-is-missing-a-required-certificate-android.md"
   ],
+<<<<<<< HEAD
+  "3b35e835634733f542b7ddaf2ede2ad2464721fd": [
+    "InTuneDocs\\DeployUse\\add-apps.md"
+  ],
+||||||| merged common ancestors
+=======
   "e600f05b9ba325338070297814f5a7dc0d78b547": [
     "InTuneDocs\\DeployUse\\add-apps.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "d1483a97c5d11e079fa6c9b991bfe5c1a2c84d36": [
     "InTuneDocs\\DeployUse\\add-apps.md"
   ],
@@ -3638,27 +4530,48 @@
   "b36f48e4a2b738ba539737513d91c544d3f12cd8": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md"
   ],
+<<<<<<< HEAD
+  "e76ea039cdebd33badd016187e1ea5a724c9eb47": [
+    "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md"
+  ],
+||||||| merged common ancestors
+=======
   "a49e3fc392b0319d977bce8476d838172e56fe74": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "2cb0ac6934e24e1789aa74f3769a472aead9d943": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md"
   ],
   "15e641f4f5f60c4a3eb3a7b09cab8cb9ef788cba": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md"
   ],
+<<<<<<< HEAD
+  "5f0ffb8a8f52608d9becb4e7883801be23f207ab": [
+    "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md"
+  ],
+||||||| merged common ancestors
+=======
   "cbf552fbcb7f740f3aa35d135882f81e137692c2": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "db5f61d04a90bf329f33d9249918cb1dc6da1fce": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md"
   ],
   "f438b2b5e53d9bc119341effae1533d26cc9a47b": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md"
   ],
+<<<<<<< HEAD
+  "f616520d5a2dd15dfeae3283642da9675410d9bd": [
+    "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md"
+  ],
+||||||| merged common ancestors
+=======
   "74f3802fd8d28fe75e0d777c417881827f2f88ba": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "3bde29a9eefdb8f335a43a8fda8412620e485c66": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md"
   ],
@@ -3674,9 +4587,16 @@
   "f26b64015f483eb5b6a6efbaa6fe6730dde7dac9": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md"
   ],
+<<<<<<< HEAD
+  "a7f0e7da73362de5cd5b27e5fc77a5a5229cb5fd": [
+    "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md"
+  ],
+||||||| merged common ancestors
+=======
   "ede6429d334608a326c6c2eed311df37ab9e344b": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "6df89cf9b686c543f735c5da8bd757943e62496c": [
     "InTuneDocs\\Understand\\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md"
   ],
@@ -3701,9 +4621,16 @@
   "cb40e46e38063760b5af35c5f749139fa61c8ac8": [
     "InTuneDocs\\DeployUse\\media\\pol-sa-pc-policy-realtime.png"
   ],
+<<<<<<< HEAD
+  "84f19cd198a2367abb0267071bd73ce8ac6d7d05": [
+    "InTuneDocs\\DeployUse\\deploy-apps.md"
+  ],
+||||||| merged common ancestors
+=======
   "eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378": [
     "InTuneDocs\\DeployUse\\deploy-apps.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "265aecb4dcf8c884bd42179a617f19883bff1f0a": [
     "InTuneDocs\\DeployUse\\deploy-apps.md"
   ],
@@ -3728,6 +4655,19 @@
   "22db1dd77d3769ddf32deb8ee796acdb61baee4f": [
     "InTuneDocs\\Troubleshoot\\media\\CM_With_Intune_Unknown_App_Deleted_Device.jpg"
   ],
+<<<<<<< HEAD
+  "acf502bdf73176450157535577047c9428aabfd1": [
+    "InTuneDocs\\DeployUse\\whats-new-archive.md"
+  ],
+  "051d06afb0f29f2a97c1f06dc1102138e5f2be8f": [
+    "InTuneDocs\\DeployUse\\whats-new-archive.md"
+  ],
+||||||| merged common ancestors
+  "051d06afb0f29f2a97c1f06dc1102138e5f2be8f": [
+    "InTuneDocs\\DeployUse\\whats-new-archive.md"
+  ],
+=======
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "eca341e075c54bd11ce80916237eaf81723ec103": [
     "InTuneDocs\\media\\dev-sa-ios-dep.png"
   ],
@@ -3770,9 +4710,16 @@
   "524501f8680eab35f7d773d47c9c2396ece30509": [
     "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-windows.md"
   ],
+<<<<<<< HEAD
+  "28eebfc49eeff6b070ac32a7d2c4bbec59a527b9": [
+    "InTuneDocs\\GetStarted\\windows-pc-management-capabilities-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "e786cd33b5c963fa373d281e93721d0dd0f5456c": [
     "InTuneDocs\\GetStarted\\windows-pc-management-capabilities-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "4a6197377f7f60f551073111a82ffe435a19f2cb": [
     "InTuneDocs\\GetStarted\\windows-pc-management-capabilities-in-microsoft-intune.md"
   ],
@@ -3786,6 +4733,9 @@
     "InTuneDocs\\GetStarted\\media\\posh-addlic-verify.png"
   ],
   "710295f0eaeee71bba549c22706ecbfd062ffcb1": [
+    "InTuneDocs\\GetStarted\\mobile-device-management-capabilities-in-microsoft-intune.md"
+  ],
+  "71956b60249524d5218818cf2c46f7b725f4dd2d": [
     "InTuneDocs\\GetStarted\\mobile-device-management-capabilities-in-microsoft-intune.md"
   ],
   "b79b5a4a032a38edc7fd1386a01f90a926eb04a2": [
@@ -3881,27 +4831,55 @@
   "cf6a7a005aaf703f2dfc20b89236056dff84e137": [
     "InTuneDocs\\EndUser\\password-does-not-meet-it-administrator-requirements.md"
   ],
+<<<<<<< HEAD
+  "73c18806fa8190acd2f271893f4d3b018a6f1181": [
+    "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure-for-pfx.md"
+  ],
+||||||| merged common ancestors
+=======
   "c3be2ab71c74ab71879511756583be64e8ca014c": [
     "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure-for-pfx.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "51def9dc80043bbf5a71578fb44cae9259fd48b1": [
     "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure-for-pfx.md"
   ],
+<<<<<<< HEAD
+  "47185ceb62c3c7a0c6f41926f9df27b4f1481352": [
+    "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure-for-scep.md"
+  ],
+||||||| merged common ancestors
+=======
   "131fec1155d4aece4155e1707324f504a7b4d272": [
     "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure-for-scep.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "942bdc4e1629a9d7e16d0994f27dab4424670a4f": [
     "InTuneDocs\\DeployUse\\Configure-certificate-infrastructure-for-scep.md"
   ],
+<<<<<<< HEAD
+  "1dfc38b123dcf8c6d3f2e86321b5eafc28ba0e92": [
+    "InTuneDocs\\DeployUse\\find-a-pfn-for-per-app-vpn.md"
+  ],
+||||||| merged common ancestors
+=======
   "a35d91bed0fc186619348c22046f0c3fb0bac8e2": [
     "InTuneDocs\\DeployUse\\find-a-pfn-for-per-app-vpn.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae": [
     "InTuneDocs\\DeployUse\\find-a-pfn-for-per-app-vpn.md"
   ],
+<<<<<<< HEAD
+  "ae18ff3dbdac50363004e6b5560166a907503772": [
+    "InTuneDocs\\DeployUse\\per-app-vpn-for-android-pulse-secure.md"
+  ],
+||||||| merged common ancestors
+=======
   "cfb71302eadf5aadf0f232038a3ef237b525ae24": [
     "InTuneDocs\\DeployUse\\per-app-vpn-for-android-pulse-secure.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "fc58e71a9b2279200dee2630aab7dbab727ea128": [
     "InTuneDocs\\DeployUse\\per-app-vpn-for-android-pulse-secure.md"
   ],
@@ -3935,9 +4913,16 @@
   "c49da9a0a811d8c1bfb2f20b64a694558d09313b": [
     "InTuneDocs\\DeployUse\\media\\team-viewer.png"
   ],
+<<<<<<< HEAD
+  "1df9d98f45eaf93163116e4f6a4c9d32125043c8": [
+    "InTuneDocs\\DeployUse\\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "e1db585999191010748e6db74447bd4c940969b6": [
     "InTuneDocs\\DeployUse\\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "852bbcca05528e898e45f9afcf9227fa6ad8c075": [
     "InTuneDocs\\DeployUse\\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md"
   ],
@@ -4010,9 +4995,16 @@
   "505e446125c938a9a978eb2908cfa0873ed66fcc": [
     "InTuneDocs\\DeployUse\\account-portal-merged-with-Office-365.md"
   ],
+<<<<<<< HEAD
+  "3d5d98ea4460324f9506212566364cb140ed8d25": [
+    "InTuneDocs\\DeployUse\\get-notified-by-alerts.md"
+  ],
+||||||| merged common ancestors
+=======
   "12ec75ac890bbb9254f53fd356ee15098641e3e3": [
     "InTuneDocs\\DeployUse\\get-notified-by-alerts.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "f1dd166b7b1278003ac8785b8be07c29396dfe8c": [
     "InTuneDocs\\DeployUse\\get-notified-by-alerts.md"
   ],
@@ -4073,9 +5065,16 @@
   "00767d06fe0d7a10cba10d0dd428f99be0390866": [
     "InTuneDocs\\GetStarted\\choose-how-to-enroll-devices.md"
   ],
+<<<<<<< HEAD
+  "da4986a61b21588df6c99493e04d5b1e63aa967d": [
+    "InTuneDocs\\GetStarted\\supported-mobile-devices-and-computers.md"
+  ],
+||||||| merged common ancestors
+=======
   "f956dae240a15136b47887d13b257a3aa1238039": [
     "InTuneDocs\\GetStarted\\supported-mobile-devices-and-computers.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "d908654b30a29e3b1e3a52096767d42019af772f": [
     "InTuneDocs\\GetStarted\\supported-mobile-devices-and-computers.md"
   ],
@@ -4106,15 +5105,29 @@
   "1d47c043092eef7fcad56926bfdd44e259460053": [
     "InTuneDocs\\EndUser\\you-are-prompted-to-install-lookout-for-work-android.md"
   ],
+<<<<<<< HEAD
+  "9dc982148e5f7025658cf14e2d106d5ad267d583": [
+    "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md"
+  ],
+||||||| merged common ancestors
+=======
   "116069454002567d412d059ffcfafe6c7178b197": [
     "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "e0eca2ecc9948c7caf15d5df5e6e106428b8b964": [
     "InTuneDocs\\GetStarted\\start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md"
   ],
+<<<<<<< HEAD
+  "cbcf2c8d923524b8a1993140fbec0234740075ae": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-dynamics-crm-online-with-microsoft-intune.md"
+  ],
+||||||| merged common ancestors
+=======
   "a46f595b3379b4a4b50ec0b2f16260a2688734ac": [
     "InTuneDocs\\DeployUse\\restrict-access-to-dynamics-crm-online-with-microsoft-intune.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "8f90f99d621d7edebcb7a4c67e0774da59098df7": [
     "InTuneDocs\\DeployUse\\restrict-access-to-dynamics-crm-online-with-microsoft-intune.md"
   ],
@@ -4181,9 +5194,16 @@
   "a6a8d2c7c3239985e54745b56857ff7c66dc33eb": [
     "InTuneDocs\\media\\mdm-ca-spo-policy-configuration.png"
   ],
+<<<<<<< HEAD
+  "b6ebe3f2c6ac544cf0898ce877946237994d820c": [
+    "InTuneDocs\\DeployUse\\restrict-access-to-networks.md"
+  ],
+||||||| merged common ancestors
+=======
   "b8d0a4bdabc6b59175efb7e71f9758c1a2973b46": [
     "InTuneDocs\\DeployUse\\restrict-access-to-networks.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "e983f4045d7e5e075edf1ccb10950b28b4acab8b": [
     "InTuneDocs\\DeployUse\\restrict-access-to-networks.md"
   ],
@@ -4202,9 +5222,16 @@
   "8471cf936ddec250b27f302153551c9b7f96ca23": [
     "InTuneDocs\\media\\cisco-ise-user-iphone.png"
   ],
+<<<<<<< HEAD
+  "21ae91f0d2866b621d9353929bab6d41d95dc8cc": [
+    "InTuneDocs\\Troubleshoot\\troubleshoot-conditional-access.md"
+  ],
+||||||| merged common ancestors
+=======
   "3db11a52a013262c470246ab6c851176b7c74678": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-conditional-access.md"
   ],
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   "373b9bf9794840f999d5e5b21fc411ff621a23e1": [
     "InTuneDocs\\Troubleshoot\\troubleshoot-conditional-access.md"
   ],
@@ -4228,6 +5255,15 @@
   ],
   "4324fb3343dc906d4461f3f24beb5727c6daefad": [
     "InTuneDocs\\media\\mdm-compliance-policy-settings.png"
+<<<<<<< HEAD
+  ],
+  "3922e97bf9f4ae0c39281b13fd01a5d9ebd36e8a": [
+    "InTuneDocs\\DeployUse\\ios-mobile-app-provisioning-profiles.md"
+  ],
+  "75e4aae9967c4a925b9142fbcedf84ec0254c0b6": [
+    "InTuneDocs\\DeployUse\\ios-mobile-app-provisioning-profiles.md"
+||||||| merged common ancestors
+=======
   ],
   "b08f4c5892971509d7dc904598ea4b6e324cb619": [
     "InTuneDocs\\DeployUse\\afw-app-configuration-policy.md"
@@ -4675,5 +5711,6 @@
   ],
   "06f324a510de32ad23376bfd67e5ba68edc4cae3": [
     "InTuneDocs\\whats-new\\whats-new-in-microsoft-intune.md"
+>>>>>>> 36752dab280937bd95c2ae9719aa3b406dcd9321
   ]
 }

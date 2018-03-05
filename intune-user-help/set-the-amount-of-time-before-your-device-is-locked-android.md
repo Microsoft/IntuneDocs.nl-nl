@@ -1,4 +1,4 @@
----
+﻿---
 title: Instellen hoelang het duurt voordat uw apparaat wordt vergrendeld | Microsoft Docs
 description: 
 keywords: 

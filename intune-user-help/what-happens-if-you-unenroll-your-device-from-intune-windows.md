@@ -1,4 +1,4 @@
----
+﻿---
 title: Wat gebeurt er als u de registratie van uw Windows-apparaat ongedaan maakt? | Microsoft Docs
 description: 
 keywords: 

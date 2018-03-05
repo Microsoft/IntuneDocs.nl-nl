@@ -1,4 +1,4 @@
----
+﻿---
 title: Uw Windows-apparaat registreren bij Intune | Microsoft Docs
 description: Informatie over hoe u een Windows-apparaat bij Intune kunt inschrijven
 keywords: 
