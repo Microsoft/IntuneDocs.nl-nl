@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b2aa6893e1d01fe83e92c711c7a487f49b92706
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b63ab13dcedaa4787e9bae12ce713899b9c3e334
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Android-Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 
@@ -69,7 +69,10 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] Opmerking: Om ervoor te zorgen dat de Intune-service een nieuw APK-bestand op het apparaat kan implementeren, moet u de tekenreeks android:versionCode in het bestand AndroidManifest.xml in uw APK-pakket verhogen.
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+> [!Note] 
+> De Intune-service kan alleen een nieuw APK-bestand op het apparaat implementeren als u de tekenreeks android:versionCode in het bestand AndroidManifest.xml in uw APK-pakket verhoogt.
 
 ## <a name="next-steps"></a>Volgende stappen
 

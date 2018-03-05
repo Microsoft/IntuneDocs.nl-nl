@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,18 +17,21 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0cd9107462348e92c9b1a3122c19591bcab6a00e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ed8475956a13e2f35d37b57f0d404f916c239998
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Uw Windows-apparaat beveiligen met versleuteling
 
-Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnemen in een laag beschermende code die voorkomt dat onbevoegden toegang tot die informatie kunnen krijgen. Als eerste stap om uw informatie te beveiligen, vereist uw organisatie dat u uw Windows-apparaat versleutelt om de gegevens van uw bedrijf of school te beveiligen.
+Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnemen in een laag beschermende code die voorkomt dat onbevoegden toegang tot die informatie kunnen krijgen. Als eerste stap om uw informatie te beveiligen, vereist uw organisatie dat u uw Windows-apparaat versleutelt om de gegevens van uw bedrijf of school te beveiligen. 
+
+Als u een Windows Phone hebt en deze hebt geregistreerd, wordt het apparaat automatisch versleuteld als versleuteling is vereist.
 
 > [!Note]
-> Als u een Windows Phone hebt en deze hebt geregistreerd, wordt het apparaat automatisch versleuteld als versleuteling is vereist.
+> Versleuteling wordt niet ondersteund in Windows 10 Home. Meer informatie over het upgraden van [Windows 10 Home naar Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro).
+
 
 Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het apparaat te versleutelen.
 

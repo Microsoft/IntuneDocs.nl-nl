@@ -5,20 +5,19 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 
@@ -66,9 +65,9 @@ De entiteit **DeviceConfigurationProfileDeviceActivity** bevat het aantal appara
 | Fout |Aantal unieke apparaten met de status Fout. |10 |
 | Mislukt |Aantal unieke apparaten met de status Mislukt. |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-De entiteit **UserConfigurationProfileDeviceActivity** bevat het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst.  De entiteit **UserConfigurationProfileDeviceActivity** geeft voor de afgelopen 30 dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
+
+De entiteit **DeviceConfigurationProfileUserActivity** bevat het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst.  De entiteit **DeviceConfigurationProfileUserActivity** geeft voor de afgelopen dertig dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
 
 | Eigenschap  | Description | Voorbeeld |
 |---------|------------|--------|
@@ -91,3 +90,76 @@ De entiteit **PolicyTypeActivity** bevat het cumulatieve aantal apparaten met de
 | Geslaagd |Aantal unieke apparaten met de status Geslaagd. |12 |
 | Fout |Aantal unieke apparaten met de status Fout. |10 |
 | Mislukt |Aantal unieke apparaten met de status Mislukt. |2 |
+
+## <a name="compliance-policy"></a>Nalevingsbeleid
+
+De API-naslag voor nalevingsbeleid bevat entiteiten die statusinformatie bieden over nalevingsbeleid dat aan apparaten is toegewezen.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbeleid voor apparaten. In de tabel wordt het aantal apparaten weergegeven dat is gevonden voor elke nalevingsstatus.
+
+
+|Eigenschap     |Description  |Voorbeeld  |
+|---------|---------|---------|
+|DateKey  |De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.|20161204 |
+|Onbekend  |Het aantal apparaten dat offline is of om een andere redenen niet kan communiceren met Intune of Azure AD. |5|
+|NotApplicable      |Het aantal apparaten waarvoor het nalevingsbeleid waarop de beheerder zich richt, niet van toepassing is.|201 |
+|Compliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels voor apparaten is toegepast waarop de beheerder zich richt. |4083 |
+|InGracePeriod      |Aantal apparaten dat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld. |57|
+|NonCompliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels niet zijn toegepast waarop de beheerder zich richt of waarvoor de gebruiker niet voldoet aan de beleidsregels waarop de beheerder zich richt.|43 |
+|Fout      |Het aantal apparaten dat niet kan communiceren met Intune of Azure AD en een foutbericht heeft geretourneerd. |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbeleid voor apparaten per beleid en per beleidstype. In de tabel wordt het aantal apparaten weergegeven dat is gevonden in elke nalevingsstatus voor elk toegewezen nalevingsbeleid.
+
+
+
+|Eigenschap  |Description  |Voorbeeld  |
+|---------|---------|---------|
+|DateKey  |De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.|20161219|
+|PolicyKey     |Sleutel voor het nalevingsbeleid waarvoor de samenvatting is gemaakt. |10178 |
+|PolicyPlatformKey      |Sleutel voor het platformtype van het nalevingsbeleid waarvoor de samenvatting is gemaakt.|5|
+|Onbekend     |Het aantal apparaten dat offline is of om een andere redenen niet kan communiceren met Intune of Azure AD.|13|
+|NotApplicable     |Het aantal apparaten waarvoor het nalevingsbeleid waarop de beheerder zich richt, niet van toepassing is.|3|
+|Compliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels voor apparaten is toegepast waarop de beheerder zich richt. |45|
+|InGracePeriod      |Aantal apparaten dat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld. |3|
+|NonCompliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels niet zijn toegepast waarop de beheerder zich richt of waarvoor de gebruiker niet voldoet aan de beleidsregels waarop de beheerder zich richt.|7|
+|Fout      |Het aantal apparaten dat niet kan communiceren met Intune of Azure AD en een foutbericht heeft geretourneerd. |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+De volgende tabel bevat de platformtypen van alle toegewezen beleidsregels. De platformtypen van beleidsregels die nooit zijn toegewezen aan apparaten worden niet in deze tabel vermeld.
+
+
+|Eigenschap  |Description  |Voorbeeld  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |De unieke sleutel voor het platformtype van het beleid. |20170519 |
+|PolicyPlatformTypeId      |De unieke id voor het platformtype van het beleid.|1|
+|PolicyPlatformTypeName      |De naam van het platformtype van het beleid.|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+In de volgende tabel wordt het aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een apparaat bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een apparaat twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de teller Geslaagd met één opgehoogd en wordt het apparaat in de foutstatus geplaatst. De entiteit PolicyDeviceActivity geeft voor de afgelopen 30 dagen aan hoeveel apparaten op een bepaalde dag een bepaalde status hebben.
+
+|Eigenschap  |Description  |Voorbeeld  |
+|---------|---------|---------|
+|DateKey|De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse.|20160703|
+|In behandeling|Aantal unieke apparaten met de status In behandeling.|123|
+|Geslaagd|Aantal unieke apparaten met de status Geslaagd.|12|
+PolicyKey|Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen.|Windows 10 baseline|
+|Fout|Aantal unieke apparaten met de status Fout.|10|
+|Mislukt|Aantal unieke apparaten met de status Mislukt.|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+In de volgende tabel wordt het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst. De entiteit PolicyUserActivity geeft voor de afgelopen 30 dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
+
+|Eigenschap  |Description  |Voorbeeld  |
+|---------|---------|---------|
+|DateKey|De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse.|20160703|
+|In behandeling|Aantal unieke apparaten met de status In behandeling.|123|
+|Geslaagd|Aantal unieke apparaten met de status Geslaagd.|12|
+PolicyKey|Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen.|Windows 10 baseline|
+|Fout|Aantal unieke apparaten met de status Fout.|10|

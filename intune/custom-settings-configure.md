@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Aangepaste apparaatinstellingen configureren in Microsoft Intune
 
@@ -53,6 +51,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     - [macOS-instellingen](custom-settings-macos.md)
     - [Windows Phone 8.1-instellingen](custom-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](custom-settings-windows-10.md)
+    - [Instellingen van Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Android for Work-instellingen](custom-settings-android-for-work.md)
 8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f812a740f5a703479e001fa2c5b6d1fd3336a2e2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Understand Microsoft Intune operations by using reports
 
@@ -32,7 +32,7 @@ Intune-rapporten geven informatie over software, hardware en softwarelicenties i
 
 ## <a name="report-types"></a>Rapporttypen
 
-|Rapporttype|Beschrijving|
+|Rapporttype|Description|
 |---------------|---------------|
 |**Updaterapporten**|De software-updates die zijn uitgevoerd op computers in uw organisatie worden weergegeven. Ook worden de updates weergegeven die zijn mislukt, in behandeling zijn of vereist zijn. Voor meer informatie over software-updates raadpleegt u [Windows-pc’s up-to-date houden met software-updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Rapporten met gedetecteerde software**|De software die op computers in uw organisatie is geïnstalleerd wordt weergegeven. Ook worden de softwareversies vermeld. U kunt de informatie die wordt weergegeven, filteren op basis van de software-uitgever en de softwarecategorie. U kunt de updates in de lijst uitvouwen voor meer details (zoals de computers waarop een update is geïnstalleerd) door de richtingspijl naast het item te kiezen.<br /><br />Wanneer u computers buiten gebruik stelt of de groepslidmaatschappen ervan in Intune wijzigt, kan het enkele minuten duren voordat deze wijzigingen worden weergegeven in het rapport Gedetecteerde software. Voor de meest nauwkeurige software-inventarisatiegegevens wacht u enkele minuten na het buiten gebruik stellen van computers of het wijzigen van hun groepslidmaatschappen voordat u een rapport met gedetecteerde software voor deze computers uitvoert.|

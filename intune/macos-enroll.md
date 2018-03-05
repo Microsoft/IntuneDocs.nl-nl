@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8528b3ec28499657b1eb39e1b981f92be3ab83ca
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>macOS-apparaten registreren bij Intune
 
@@ -51,4 +51,4 @@ Meld uw gebruikers dat ze naar de [website van de bedrijfsportal](http://portal.
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 
 - [Bronnen over de eindgebruikerservaring in Microsoft Intune](end-user-educate.md)
-- [Uw iOS- of Mac OS-apparaat gebruiken met Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
+- [Uw macOS-apparaat gebruiken met Intune](/intune-user-help/using-your-macos-device-with-intune)

@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -61,8 +61,7 @@ Het gebruik van MDM met het beveiligingsbeleid voor apps biedt extra voordelen e
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Ondersteunde platformen voor het beveiligingsbeleid voor apps
--   iOS 9 of hoger
--   Android 4.4 of hoger
+De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor Office-toepassingen. Zie [Systeemvereisten voor Office](https://products.office.com/en-US/office-system-requirements) voor meer informatie.
 
 Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen
@@ -72,6 +71,7 @@ Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-appara
 ![Afbeelding die laat zien dat gegevens vrij kunnen bewegen tussen apps wanneer er geen beveiligingsbeleid voor apps is](./media/apps-without-protection-policies.png)
 
 Bedrijfsgegevens en persoonlijke gegevens kunnen met elkaar worden vermengd als er apps zonder beperkingen worden gebruikt.  Bedrijfsgegevens kunnen terechtkomen op locaties zoals persoonlijke opslag of kunnen worden overgebracht naar apps die buiten uw controlesfeer liggen, wat leidt tot gegevensverlies. De pijlen in het diagram geven onbeperkte verplaatsingen van gegevens tussen apps (bedrijfs-apps en persoonlijke app) en naar opslaglocaties aan.
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>Gegevensbeveiliging met het beveiligingsbeleid voor apps
 
@@ -134,3 +134,6 @@ Wanneer een gebruiker de OneDrive-app start vanaf een werkaccount, kan hij de be
 ##  <a name="next-steps"></a>Volgende stappen
 
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](app-protection-policies.md)
+
+## <a name="see-also"></a>Zie ook
+Apps van derden, zoals de mobiele app van Salesforce, werken gericht met Intune om bedrijfsgegevens te beschermen. Ga voor meer informatie over hoe de Salesforce-app met Intune werkt (inclusief MDM-configuratie-instellingen voor apps), naar [Salesforce-app en Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

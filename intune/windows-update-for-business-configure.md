@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -45,8 +44,9 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 - Windows Update ondersteunt de volgende versies van Windows 10:
     - Windows 10
     - Windows 10 Team (voor Surface Hub-apparaten)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Apparaten met Windows 10 Mobile en Windows 10 Holographic worden niet ondersteund.
+ Apparaten met Windows 10 Mobile worden niet ondersteund.
 
 - Op Windows-apparaten moet **Feedback en diagnostische gegevens** > **Diagnostische gegevens en gebruiksgegevens** ten minste zijn ingesteld op **Basic**.
 
@@ -89,8 +89,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
     Upgrades van onderdelen zijn over het algemeen nieuwe functies van Windows. Nadat u de instelling voor **Servicing-kanaal** hebt geconfigureerd (Semi-Annual-kanaal (Targeted) of Semi-Annual-kanaal), kunt u opgeven of en hoe lang u upgrades van onderdelen wilt uitstellen nadat deze door Microsoft beschikbaar zijn gesteld via Windows Update.
 
-    Bijvoorbeeld:  
-    **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal (Targeted) en de uitstelperiode 30 dagen is**: Stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Het apparaat ontvangt de update pas in februari - 30 dagen later.
+    Bijvoorbeeld: **als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal (Targeted) en de uitstelperiode 30 dagen is**: stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Het apparaat ontvangt de update pas in februari - 30 dagen later.
 
     **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-release en wordt in mei bijgewerkt.
 
@@ -154,3 +153,11 @@ U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een ap
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.
 > Als het betreffende apparaat is uitgeschakeld wanneer u de opdracht voor onderbreken opgeeft, kan dit apparaat, wanneer het wordt ingeschakeld, geplande updates downloaden en installeren voordat er bij Intune wordt gecontroleerd op nieuwe updates.
+
+## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
+
+De volgende instellingen worden in Windows Holographic for Business ondersteund:
+
+- **Gedrag van automatische updates**
+- **Productupdates van Microsoft**
+- **Servicekanaal**

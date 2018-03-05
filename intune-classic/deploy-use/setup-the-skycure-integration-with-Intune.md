@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba03621015d7bbf9a141e57e0fde71561ef94f72
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c981d6fb927d29f0d450c5c7571933626897b4f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
 
@@ -39,7 +39,7 @@ Skycure ondersteunt twee modi van integratie met Intune:
 
 -   **Integratie met alleen-lezen (eenvoudige integratie):** hierbij worden alleen apparaten uit Azure Active Directory geïnventariseerd en wordt de Skycure-console hiermee gevuld.
 <br>
-    -   Als de selectievakjes **Report the health and risk of devices to Intune (De status en het risico van apparaten melden aan Intune)** en **Also report security incidents to Intune (Ook beveiligingsincidenten melden bij Intune)** niet zijn ingeschakeld in de Skycure-beheerconsole, is er sprake van een integratie met alleen-lezen. Bij een dergelijke integratie wordt de status van een apparaat (compatibel of niet-compatibel) nooit gewijzigd in Intune.
+    -   Als de selectievakjes **Report the health and risk of devices to Intune** en **Also report security incidents to Intune**  niet zijn ingeschakeld in de Skycure-beheerconsole, is er sprake van een integratie met alleen-lezen. Bij een dergelijke integratie wordt de status van een apparaat (compatibel of niet-compatibel) nooit gewijzigd in Intune.
 <br></br>
 -   **Volledige integratie:** stelt Skycure in staat om risico- en beveiligingsincidentgegevens voor apparaten aan Intune te melden. Hierbij wordt een tweerichtingscommunicatie tussen beide cloudservices tot stand gebracht.
 

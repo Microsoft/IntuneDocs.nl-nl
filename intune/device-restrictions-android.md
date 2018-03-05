@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dc50fe1018bae0c13ddba51e5351f463d0ec1c8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -94,7 +94,7 @@ In het [gedeelte Apps van Google Play](https://play.google.com/store/apps) zoekt
 
 Open de installatiepagina voor de app en kopieer vervolgens de URL naar het klembord. U kunt deze URL nu gebruiken in de lijst met compatibele apps of de lijst met niet-compatibele apps.
 
-Voorbeeld: zoek in Google Play naar Microsoft Office Mobile. Gebruik de volgende URL: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Voorbeeld: zoek in het [gedeelte Apps van Google Play](https://play.google.com/store/apps) op **Microsoft Planner**. Gebruik de volgende URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>Extra opties
 
@@ -119,7 +119,7 @@ Daarnaast kunt u geïnstalleerde apps opgegeven die voor de gebruiker van het ap
 
 Configureer voor elke instelling een lijst met apps aan de hand van een van de volgende methoden:
 
-- **Apps toevoegen op pakketnaam** - Hoofzakelijk gebruikt voor line-of-business-apps. Vul de naam van de app en de naam van het app-pakket in.
+- **Apps toevoegen op pakketnaam** - Hoofdzakelijk gebruikt voor Line-Of-Business-apps. Vul de naam van de app en de naam van het app-pakket in.
 - **Apps toevoegen op URL** - Vul de naam van de app en de URL in de Google Play Store in.
 - **Beheerde apps toevoegen** - Selecteer de app die u nodig hebt in de lijst met apps die u beheert met Intune.
 

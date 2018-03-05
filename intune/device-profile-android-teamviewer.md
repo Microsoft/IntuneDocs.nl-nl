@@ -1,25 +1,24 @@
 ---
 title: Apparaten extern beheren met TeamViewer
 titlesuffix: Azure portal
-description: "Meer informatie over hoe u apparaten extern beheert met TeamViewer.”"
+description: Meer informatie over hoe u apparaten extern beheert met TeamViewer.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 476480ce3957ef2d411b37a0a078707c721fd2e6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Hulp op afstand verlenen voor apparaten die worden beheerd met Intune
 
@@ -32,7 +31,7 @@ Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)
 Door Intune beheerde Android- en Windows-apparaten ondersteunen extern beheer.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) en Windows 10 S worden niet ondersteund door de TeamViewer-software. U moet nog steeds apparaten beheren met de [PC-client](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) in de klassieke Intune-portal.
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) en Windows 10 S worden niet ondersteund door de TeamViewer-software.
 
 
 

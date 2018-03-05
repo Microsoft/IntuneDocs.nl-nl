@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -52,7 +52,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 |Verplichte installatie van apps op apparaten (Vereist)<sup>2</sup>|Ja|Ja|Ja|Ja|
 |Optionele installatie op apparaten via de bedrijfsportal (Beschikbare installatie)|Ja|Ja|Ja|Ja|
 |Installatiesnelkoppeling naar een app op het web (Web Clip)|Ja|Ja|Ja|Ja|
-|Interne apps (Line-Of-Business-apps)|Ja|Ja|Nee|Nee|
+|Interne apps (Line-Of-Business-apps)|Ja|Ja|Nee|Ja|
 |Apps uit een store|Ja|Ja|Ja|Ja|
 |Apps bijwerken|Ja|Ja|Ja|Ja|
 

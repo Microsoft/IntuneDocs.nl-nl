@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Wi-Fi-instellingen configureren in Microsoft Intune
 
@@ -33,6 +31,8 @@ Een voorbeeld: u installeert een nieuw Wi-Fi-netwerk met de naam Contoso Wi-Fi e
 2. Wijs het profiel toe aan een groep met alle gebruikers van iOS-apparaten.
 3. Gebruikers vinden het nieuwe Contoso Wi-Fi-netwerk in de lijst met draadloze netwerken op hun apparaat en kunnen gemakkelijk verbinding met dit netwerk maken.
 
+## <a name="supported-device-platforms"></a>Ondersteunde apparaatplatformen
+
 Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 
 - Android 4 en hoger
@@ -40,7 +40,7 @@ Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 - iOS 8.0 en hoger
 - macOS (Max OS X 10.9 en hoger)
 
-Voor apparaten met Windows 8.1, Windows 10 en Windows 10 Mobile kunt u een Wi-Fi-configuratie importeren die eerder van een andere apparaat is geëxporteerd.
+Voor apparaten met Windows 8.1, Windows 10, Windows 10 Mobile en Windows Holographic for Business kunt u een Wi-Fi-configuratie importeren die eerder van een andere apparaat is geëxporteerd.
 
 Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginselen voor het configureren van een Wi-Fi-profiel en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
 
@@ -58,13 +58,22 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     - **iOS**
     - **macOS**
     - **Windows 8.1 en hoger (een profiel importeren)**
-6. Kies **Wi-Fi Basic** of **Wi-Fi Enterprise** in de vervolgkeuzelijst **Profieltype**. U kunt **Wi-Fi Basic** gebruiken als u basisfuncties zoals de netwerknaam en de SSID wilt opgeven. Met **Wi-Fi Enterprise** kunt u uitgebreidere informatie over EAP (Extensible Authentication Protocol) opgeven als dit protocol in uw Wi-Fi-netwerk wordt gebruikt. Met **Wi-Fi importeren** (voor Windows 8.1 en Windows 10) kunt u Wi-Fi-instellingen die u eerder van een ander apparaat hebt geëxporteerd, importeren als een XML-bestand.
-7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
+
+   > [!IMPORTANT]
+   > Als u een profiel voor Windows 10-apparaten maakt, met inbegrip van Windows Holographic for Business, moet u het platform **Windows 8.1 en hoger** kiezen. Het platform **Windows 10 en hoger** heeft geen Wi-Fi-profieltype. 
+
+6. Voor Apple- of Android-apparaten kiest u in de vervolgkeuzelijst **Wi-Fi-type** de optie **Basic** of **Enterprise**. U kunt **Basic** gebruiken als u basisfuncties zoals de netwerknaam en de SSID wilt opgeven. Met **Enterprise** kunt u uitgebreidere informatie over EAP (Extensible Authentication Protocol) opgeven als dit protocol in uw Wi-Fi-netwerk wordt gebruikt. 
+
+   Met het profiel **Wi-Fi importeren** (voor Windows 8.1 en later) kunt u Wi-Fi-instellingen die u eerder van een ander apparaat hebt geëxporteerd, importeren als een XML-bestand.
+1. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
     - [Instellingen voor Android en Android for Work](wi-fi-settings-android.md)
     - [iOS-instellingen](wi-fi-settings-ios.md)
     - [macOS-instellingen](wi-fi-settings-macos.md)
-    - [Windows Phone 8.1-instellingen](wi-fi-settings-import-windows-8-1.md)
-8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+    - [Instellingen voor Windows 8.1 en hoger](wi-fi-settings-import-windows-8-1.md) (inclusief Windows Holographic for Business)
+1. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+
+## <a name="next-steps"></a>Volgende stappen
+
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.

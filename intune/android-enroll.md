@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a37497dcf015a611e8b770b5a28e519c0e397c87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -49,6 +49,9 @@ Als u Android for Work-apparaten inschrijft met een [Device Enrollment Manager](
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Android for Work-binding toevoegen voor Intune
 
+> [!NOTE]
+> Als gevolg van interactie tussen domeinen van Google en Microsoft moet u in deze stap mogelijk uw browserinstellingen aanpassen om te kunnen voltooien.  Zorg ervoor dat 'portal.azure.com' en 'play.google.com' zich in dezelfde beveiligingszone bevinden in uw browser.
+
 1. **Intune MDM instellen**<br>
 Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door [de instantie voor het beheer van mobiele apparaten in te stellen](mdm-authority-set.md) als **Microsoft Intune**.
 2. **Android for Work-binding configureren**<br>
@@ -64,11 +67,10 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
    Geef bij **Organization name** (Organisatienaam) de naam van uw bedrijf op. Bij **Enterprise mobility management (EMM) provider** moet **Microsoft Intune** worden weergegeven. Ga akkoord met de overeenkomst voor Android for Work en kies **Confirm** (Bevestigen). Uw aanvraag wordt verwerkt.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Inschrijvingsinstellingen voor Android for Work opgeven
-   Android for Work wordt alleen ondersteund op bepaalde Android-apparaten. Zie de [vereisten voor Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window") van Google voor meer informatie. Elk apparaat dat ondersteuning biedt voor Android for Work biedt ook ondersteuning voor conventioneel Android-beheer. In Intune kunt u opgeven hoe apparaten met ondersteuning voor Android for Work moeten worden beheerd:
+Android for Work wordt alleen ondersteund op bepaalde Android-apparaten. Zie de [vereisten voor Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22) van Google voor meer informatie. Elk apparaat dat ondersteuning biedt voor Android for Work biedt ook ondersteuning voor conventioneel Android-beheer. In Intune kunt u opgeven hoe apparaten met ondersteuning voor Android for Work moeten worden beheerd. Ga hiervoor naar [Inschrijvingsbeperkingen](enrollment-restrictions-set.md).
 
-   - **Alle apparaten beheren als Android-apparaten**. Alle Android-apparaten, ook de apparaten met ondersteuning voor Android for Work, worden ingeschreven als conventionele Android-apparaten.
-   - **Ondersteunde apparaten beheren als Android for Work-apparaten**. Alle apparaten met ondersteuning voor Android for Work worden ingeschreven als Android for Work-apparaten. Alle Android-apparaten die geen ondersteuning bieden voor Android for Work, worden geregistreerd als conventionele Android-apparaten.
-   - **Alleen ondersteunde apparaten voor de gebruikers in deze gebruikersgroepen beheren als Android for Work**. U kunt Android for Work-beheer richten op een beperkte set gebruikers. Alleen voor leden van de geselecteerde groepen worden apparaten met ondersteuning voor Android for Work geregistreerd als Android for Work-apparaten. Alle overige apparaten worden geregistreerd als Android-apparaten. Dit is nuttig tijdens een Android for Work-testfase.
+- **Blokkeren (standaard ingesteld)**: alle Android-apparaten, ook de apparaten met ondersteuning voor Android for Work, worden ingeschreven als conventionele Android-apparaten.
+- **Toestaan**: alle apparaten met ondersteuning voor Android for Work worden ingeschreven als Android for Work-apparaten. Alle Android-apparaten die geen ondersteuning bieden voor Android for Work, worden geregistreerd als conventionele Android-apparaten.
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>De bedrijfsportal-app in de beheerde Google Play Store goedkeuren
 U moet de bedrijfsportal-app voor Android in de beheerde Google Play Store goedkeuren om ervoor te zorgen dat deze automatische app-updates ontvangt. Als u deze niet goedkeurt, wordt de bedrijfsportal uiteindelijk verouderd en worden er geen nieuwe belangrijke oplossingen voor problemen of nieuwe functies ontvangen wanneer deze door Microsoft worden uitgegeven.

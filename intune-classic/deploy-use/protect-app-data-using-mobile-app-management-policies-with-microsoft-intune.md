@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Bescherm app-gegevens met beveiligingsbeleid voor apps met Microsoft Intune
 
@@ -57,9 +57,7 @@ Het gebruik van MDM met beveiligingsbeleid voor apps biedt extra voordelen en be
 - **Het beveiligingsbeleid voor apps zorgt ervoor dat de app-laag wordt beveiligd.** U kunt bijvoorbeeld beleid implementeren dat er een pincode is vereist om een werkgerelateerde app te openen, waarmee wordt voorkomen dat er gegevens tussen apps worden gedeeld en wordt voorkomen dat gegevens van bedrijfs-apps naar een persoonlijke opslaglocatie worden opgeslagen.
 
 ## <a name="devices-that-support-mam"></a>Apparaten die MAM ondersteunen
-Beveiligingsbeleid voor apps wordt momenteel ondersteund op:
--   iOS 8.1 of hoger
--   Android 4 of hoger
+De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor Office-toepassingen. Zie [Systeemvereisten voor Office](https://products.office.com/en-US/office-system-requirements) voor meer informatie.
 
 >[!NOTE]
 >Windows-apparaten worden niet ondersteund voor MAM zonder inschrijvingsscenario. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
@@ -132,4 +130,4 @@ Wanneer een gebruiker de OneDrive-app start vanaf een werkaccount, kan hij de be
 ##  <a name="next-steps"></a>Volgende stappen
 - [Aan de slag met configureren van beveiligingsbeleid voor apps](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-- [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [App-beveiligingsbeleid maken en implementeren met Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

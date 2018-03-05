@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-connector met Intune
 
@@ -37,7 +37,7 @@ De mobiele app van Lookout, **Lookout for Work**, wordt geïnstalleerd en uitgev
 
 Het nalevingsbeleid van Intune bevat een regel voor Lookout Mobile Threat Defense die is gebaseerd op de risicoanalyse van Lookout. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld.
 
-Als het apparaat niet aan het beleid blijkt te voldoen, kan de toegang tot resources als Exchange Online en SharePoint Online worden geblokkeerd. Gebruikers op geblokkeerde apparaten ontvangen een stappenplan om het probleem op te lossen en weer toegang te krijgen. De richtlijnen worden vanuit de Lookout for Work-app toegestuurd.
+Als het apparaat niet aan het beleid blijkt te voldoen, kan de toegang tot bronnen zoals Exchange Online en SharePoint Online worden geblokkeerd. Gebruikers op geblokkeerde apparaten ontvangen een stappenplan om het probleem op te lossen en weer toegang te krijgen. De richtlijnen worden vanuit de Lookout for Work-app toegestuurd.
 
 ## <a name="supported-platforms"></a>Ondersteunde platformen:
 De volgende platformen worden ondersteund door Lookout wanneer deze geregistreerd zijn in Intune:
@@ -61,7 +61,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 * Toegang tot bedrijfs-apps
 
 **Blokkeren wanneer schadelijke apps worden gedetecteerd:**
-![diagram dat laat zien hoe de toegang wordt geblokkeerd met het beleid voor voorwaardelijke toegang wanneer blijkt dat het apparaat niet-compatibel is vanwege schadelijke apps op het apparaat.](../media/mtp/malicious-apps-blocked.png)
+![diagram dat laat zien hoe de toegang wordt geblokkeerd met het beleid voor voorwaardelijke toegang wanneer blijkt dat het apparaat niet-compatibel is vanwege schadelijke apps op het apparaat](../media/mtp/malicious-apps-blocked.png)
 
 **Toegang na herstel:**
 

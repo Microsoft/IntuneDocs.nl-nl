@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,24 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te leveren wanneer gebruikers een iOS-app uitvoeren. U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en wijst u vervolgens de app toe. De beleidsinstellingen worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
+
+U kunt een toepassingsconfiguratiebeleid toewijzen aan een groep gebruikers en apparaten met behulp van een combinatie van toewijzingen voor opnemen en uitsluiten. Zodra u een appconfiguratiebeleid hebt toegevoegd, kunt u de toewijzingen voor het appconfiguratiebeleid instellen. Wanner u de toewijzingen voor het beleid instelt, kunt u ervoor kiezen de groep gebruikers voor wie het beleid van toepassing is op te nemen of uit te sluiten. Als u ervoor kiest een of meer groepen op te nemen, kunt u specifieke groepen selecteren waarvoor u ingebouwde groepen wilt opnemen of selecteren. Ingebouwde groepen zijn **Alle gebruikers**, **Alle apparaten** en **Alle gebruikers + alle apparaten**. 
+
+>[!NOTE]
+>Intune biedt vooraf gemaakte de groepen **Alle gebruikers** en **Alle apparaten** in de console met handige, ingebouwde optimalisaties. We raden u ten zeerste aan deze groepen te gebruiken om u op alle gebruikers en alle apparaten te richten in plaats van de groepen ‘Alle gebruikers’ en ‘Alle apparaten’ die u mogelijk zelf hebt gemaakt.
+
+Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van uw toepassing, kunt u de specifieke groepen selecteren die moeten worden uitgesloten.
 
 > [!TIP]
 > Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
@@ -52,9 +59,24 @@ App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te l
 7.  Kies **Gekoppelde app**. Klik vervolgens op de blade **Gekoppelde app** en kies de beheerde app waarop u de configuratie wilt toepassen.
 8.  Kies op de blade **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**.
 9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer vervolgens een van de volgende opties:
-    - **[Configuration Designer gebruiken](#Use-the-configuration-designer)**
+    - **[Configuration Designer gebruiken](#use-configuration-designer)**
     - **[XML-gegevens invoeren](#enter-xml-data)**
-10. Kies **OK** en kies vervolgens **Toevoegen**.
+10. Nadat u uw XML-gegevens hebt toegevoegd, kiest u **OK** en vervolgens **Toevoegen** om het configuratiebeleid toe te voegen. De overzichtsblade van het configuratiebeleid wordt weergegeven.
+11. Selecteer **Toewijzingen** om de opties voor opnemen en uitsluiten weer te geven. 
+
+    ![Beleidstoewijzingen](./media/app-config-policy01.png)
+12. Selecteer **Alle gebruikers** op het tabblad **Opnemen**.
+
+    ![Beleidstoewijzingen - Alle gebruikers](./media/app-config-policy02.png)
+13. Selecteer het tabblad **Uitsluiten**. 
+14. Klik op **Groepen voor uitsluiten selecteren** om de gerelateerde blade weer te geven.
+
+    ![Beleidstoewijzingen - Groepen voor uitsluiten selecteren](./media/app-config-policy03.png)
+15. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
+
+    >[!NOTE]
+    >Wanneer u een groep toevoegt en als er al een andere groep is opgenomen voor een gegeven toewijzingstype, wordt deze groep vooraf geselecteerd. Dit kan niet worden gewijzigd voor andere toewijzingstypen voor opnemen. De groep die is gebruikt, kan daarom niet als een uitgesloten groep worden gebruikt.
+16. Klik op **Opslaan**.
 
 ## <a name="use-configuration-designer"></a>Configuration Designer gebruiken
 

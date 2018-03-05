@@ -6,26 +6,24 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a587ef87afd9a8629ac6a274fe87406fb24f79f7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor apparaten met Windows 8.1 en hoger in Microsoft Intune importeren
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Voor apparaten met Windows 8.1 of Windows 10 Desktop of Mobile kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd.
+Voor apparaten met Windows 8.1, Windows 10 Desktop of Mobile of Windows Holographic for Business kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd.
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Wi-Fi-instellingen exporteren vanuit een Windows-apparaat
 
@@ -43,9 +41,13 @@ Gebruik in Windows het hulpprogramma **netsh wlan** om een bestaand Wi-Fi-profie
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
 3. Klik op **Profiel maken** op de blade Profielen.
 4. Voer op de blade **Profiel maken** een **naam** en **beschrijving** in voor het apparaatbeperkingsprofiel.
+
+   > [!WARNING]
+   > De naam **moet** overeenkomen met het naamkenmerk in het xml-bestand van het Wi-Fi-profiel, anders mislukt dit.
+
 5. Kies in de vervolgkeuzelijst **Platform** de optie **Windows 8.1 en hoger**.
 6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Wi-Fi importeren**.
-7. Configureer op de blade **Wi-Fi Basic** het volgende:
+7. Configureer op de blade **Wi-Fi Basic** de volgende instellingen:
     - **Verbindingsnaam**: voer de naam van de Wi-Fi-verbinding in. Deze naam wordt weergegeven voor eindgebruikers wanneer ze door de beschikbare Wi-Fi-netwerken bladeren.
     - **XML-bestand voor het profiel**: klik op de knop Bladeren om het XML-bestand met de Wi-Fi-profielinstellingen te selecteren dat u in Intune wilt importeren.
     - **Bestandsinhoud**: hier wordt de XML-code weergegeven voor het configuratieprofiel dat u hebt geselecteerd.

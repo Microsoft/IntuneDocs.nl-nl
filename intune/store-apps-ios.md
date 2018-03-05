@@ -36,7 +36,7 @@ Gebruik de informatie in dit onderwerp om iOS Store-apps in Intune toe te voegen
 U kunt alleen apps toewijzen met deze methode als ze gratis in de App Store verkrijgbaar zijn. Als u betaalde apps wilt toewijzen met Intune, kunt u overwegen de [Volume Purchase Program-app voor iOS](vpp-apps-ios.md) te gebruiken.
 
 >[!NOTE]
->Chrome en Edge zijn de aanbevolen browsers wanneer u met Microsoft Intune werkt.
+>Chrome en Microsoft Edge zijn de aanbevolen browsers wanneer u met Microsoft Intune werkt.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Stap 1: de app in de Store zoeken
 
