@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: d7c2ec47a163c16de91d3004a6204c1c00feb801
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>De vroege editie voor Microsoft Intune - februari 2018
 
@@ -121,7 +121,7 @@ Er komen twee nieuwe privacyinstellingen voor apparaten beschikbaar:
 
 Gebruikers kunnen de apparaatinschrijvingsmanager gebruiken bij het inschrijven via de macOS-bedrijfsportal.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nieuwe instellingen voor de Microsoft Edge-browser <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nieuwe instellingen voor de Edge-browser <!--1469166 -->
 
 Er komen twee nieuwe instellingen beschikbaar voor apparaten met de Microsoft Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**. 
 
@@ -215,9 +215,6 @@ Wanneer u de bedrijfsportal-optie gebruikt, slaat Intune verificatie van gebruik
 Intune ondersteunt de registratie van apparaten uit maximaal 100 verschillende Apple Device Enrollment Program (DEP)- of Apple School Manager-accounts. Elk geüpload token kan afzonderlijk worden beheerd voor registratieprofielen en -apparaten. Er kan automatisch een ander registratieprofiel worden toegewezen per geüpload DEP-/School Manager-token. Als er meerdere School Manager-tokens zijn geüpload, kan er per keer slechts één worden gedeeld met Microsoft School Data Sync.
 
 Na de migratie werken de bèta Graph API's en gepubliceerde scripts voor het beheren van Apple DEP of ASM over Graph niet meer. Nieuwe bèta Graph API's zijn in ontwikkeling en zullen na de migratie worden uitgebracht.
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Apparaatcategorieën selecteren met behulp van de instellingen voor Toegang tot werk of school <!-- 1058963 -->
-Als u [apparaatgroeptoewijzing](https://docs.microsoft.com/intune/device-group-mapping) hebt ingeschakeld, wordt gebruikers van Windows 10 gevraagd een apparaatcategorie te selecteren na registratie via de knop **Verbinding maken** in **Instellingen**  >  **Accounts** > **Toegang tot werk of school** of tijdens de standaardprocedure.
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Nalevingsbeleid afstemmen op apparaten in apparaatgroepen <!--1307012 -->
 

@@ -470,30 +470,6 @@
           href: conditional-access-assign-jamf.md
     - name: Apparaatgegevens beschermen
       items:
-        - name: Beleidsregels voor de beveiliging van apps gebruiken
-          href: app-protection-policy.md
-          items:
-            - name: Beveiligingsbeleid voor apps maken
-              href: app-protection-policies.md
-              items:
-                - name: Android-instellingen
-                  href: app-protection-policy-settings-android.md
-                - name: iOS-instellingen
-                  href: app-protection-policy-settings-ios.md
-                - name: Beleidsuitzonderingen voor gegevensoverdracht
-                  href: app-protection-policies-exception.md
-                - name: Logboeken voor app-beveiliging in Managed Browser controleren
-                  href: app-protection-policy-settings-log.md
-            - name: Beveiligingsbeleid voor apps valideren
-              href: app-protection-policies-validate.md
-            - name: Gebruikersstatus voor app-beveiliging bewaken
-              href: app-protection-policies-monitor.md
-            - name: Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps
-              href: app-protection-policies-configure-windows-10.md
-            - name: Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen
-              href: windows-information-protection-policy-create.md
-            - name: Gegevensoverdracht tussen iOS-apps beheren
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
