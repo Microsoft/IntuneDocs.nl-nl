@@ -1,5 +1,6 @@
 ---
-title: Windows-apparaten inschrijven met het Windows AutoPilot Deployment-programma
+title: Apparaten inschrijven met het Windows AutoPilot Deployment-programma
+titleSuffix: Microsoft Intune
 description: Informatie over het inschrijven van Windows 10-apparaten met het Windows AutoPilot Deployment-programma.
 keywords: 
 author: ErikjeMS
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: d1276818b6c35602f768a7c10074aa6388b01547
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: dfdc712f3cf1b9ce928574ee9e9078c80bd696bb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows-apparaten inschrijven met het Windows AutoPilot Deployment-programma
+# <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows-apparaten inschrijven met het Windows AutoPilot Deployment-programma
 Het Windows AutoPilot Deployment-programma vereenvoudigt het inrichten van apparaten. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en AutoPilot kunt u nieuwe apparaten aan uw eindgebruikers geven zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om AutoPilot-apparaten te beheren, kunt u beleidsregels, profielen, apps enzovoort beheren op de apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario’s en vereisten.
 
 ## <a name="prerequisites"></a>Vereisten

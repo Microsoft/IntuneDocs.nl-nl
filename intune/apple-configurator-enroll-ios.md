@@ -1,7 +1,7 @@
 ---
-title: iOS-apparaten inschrijven - Apple Configurator en Configuratieassistent
-titlesuffix: Azure portal
-description: In dit onderwerp leest u hoe u Apple Configurator kunt gebruiken om iOS-apparaten die bedrijfseigendom zijn in te schrijven met Configuratieassistent.
+title: iOS-apparaten inschrijven met behulp van Apple Configurator
+titlesuffix: Microsoft Intune
+description: In dit onderwerp leest u hoe u Apple Configurator kunt gebruiken om iOS-apparaten in bedrijfseigendom in te schrijven met Configuratieassistent.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 5f74c39fd1d335f644542d99c534b5aea21833df
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
 
@@ -32,11 +32,11 @@ ms.lasthandoff: 02/09/2018
 >
 >Als uw pagina **Apparaatinschrijving** niet op de onderstaande afbeelding lijkt, is uw account nog niet bijgewerkt naar de nieuwe gebruikersinterface en kunt u deze Help-pagina gebruiken.
 >
->![Oude gebruikersinterface](./media/appleenroll-oldui.png)
+>![Oude Intune-gebruikersinterface](./media/appleenroll-oldui.png)
 >
 >Als uw pagina **Apparaatinschrijving** op de onderstaande afbeelding lijkt, beschikt u over de bijgewerkte gebruikersinterfaces.  Ga dan naar [deze Help-pagina](apple-configurator-enroll-ios-newui.md).
 >
->![Nieuwe gebruikersinterface](./media/appleenroll-newui.png)
+>![Nieuwe Intune-gebruikersinterface](./media/appleenroll-newui.png)
 
 Intune ondersteunt het inschrijven van iOS-apparaten met behulp van het hulpprogramma [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) dat wordt uitgevoerd op een Mac-computer. Inschrijving met Apple Configurator vereist dat u voor elk iOS-apparaat een USB-verbinding instelt met een Mac-computer voor het instellen van een zakelijke inschrijving. U kunt apparaten op twee manieren apparaten inschrijven bij Intune met Apple Configurator:
 - **Inschrijving met iOS-configuratieassistent**: het apparaat wordt naar de fabrieksinstelling teruggezet en voorbereid voor inschrijving tijdens het uitvoeren van Configuratieassistent.
@@ -64,7 +64,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen tijdens het i
 5. Selecteer **Maken** onder **Apple Configurator-inschrijvingsprofielen**.
 6. Typ een **naam** en **beschrijving** voor het profiel (voor administratieve doeleinden). Gebruikers zien deze gegevens niet. U kunt dit veld Naam gebruiken om een dynamische groep te maken in Azure Active Directory. Gebruik de profielnaam om de parameter enrollmentProfileName te definiëren om apparaten aan dit inschrijvingsprofiel toe te wijzen. Meer informatie over dynamische Azure Active Directory-groepen.
 
-  ![Schermafbeelding van het scherm Profiel maken met Inschrijven met gebruikersaffiniteit geselecteerd](./media/apple-configurator-profile-create.png)
+  ![Het scherm Profiel maken met Inschrijven met gebruikersaffiniteit geselecteerd](./media/apple-configurator-profile-create.png)
 
 7. Geef de **gebruikersaffiniteit** op:
    - **Inschrijven met gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld met de iOS-configuratieassistent en kan vervolgens toegang krijgen tot gegevens en e-mail van het bedrijf. Gebruikersaffiniteit is vereist voor beheerde apparaten die eigendom zijn van gebruikers en waarvoor de bedrijfsportal moet worden gebruikt voor services als het installeren van apps. Alleen ondersteund bij inschrijving via Apple Configurator Setup Assistant. Gebruikersaffiniteit vereist [WS-Trust 1.3 gebruikersnaam/gemengd eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints). [Meer informatie](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -117,7 +117,7 @@ Nadat u het profiel hebt gemaakt en de serienummers toegewezen, moet u het profi
 1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **AC-profielen**. Kies vervolgens het profiel dat u wilt exporteren.
 2. Selecteer **Profiel exporteren** in het profiel.
 
-  ![Schermafbeelding Profiel Exporteren voor Inschrijving met iOS-configuratieassistent met Profiel-URL gemarkeerd](./media/ios-apple-configurator-expor-sat.png)
+  ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-expor-sat.png)
 3. Kopieer de profiel-URL. U kunt deze vervolgens later aan Apple Configurator toevoegen om het Intune-profiel te definiëren dat wordt gebruikt door iOS-apparaten.
 
   Vervolgens importeert u in de volgende procedure dit profiel in Apple Configurator om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
@@ -155,7 +155,7 @@ Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die 
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies onder **Profiel exporteren** de optie **Profiel downloaden** om het inschrijvingsprofiel te downloaden.
 
-  ![Schermafbeelding Profiel Exporteren voor Inschrijving met iOS-configuratieassistent met Profiel-URL gemarkeerd](./media/ios-apple-configurator-expor-de.png)
+  ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-expor-de.png)
 
 4. Breng het bestand over naar een Mac-computer waarop [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) wordt uitgevoerd om het rechtstreeks als een beheerprofiel naar iOS-apparaten te pushen.
 5. Bereid het apparaat met behulp van de volgende stappen voor met Apple Configurator.
@@ -163,7 +163,7 @@ Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die 
   2. Verbind het iOS-apparaat met de Mac-computer met behulp van een USB-kabel. Sluit Foto's, iTunes en andere apps die voor het apparaat worden geopend wanneer het apparaat wordt gedetecteerd.
   3. Kies in Apple Configurator het verbonden iOS-apparaat en kies vervolgens de knop **Toevoegen**. Opties die kunnen worden toegevoegd aan het apparaat, worden weergegeven in de vervolgkeuzelijst. Kies **Profielen**.
 
-    ![Schermafbeelding Profiel Exporteren voor Inschrijving met iOS-configuratieassistent met Profiel-URL gemarkeerd](./media/ios-apple-configurator-add-profile.png)
+    ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-add-profile.png)
 
   4. Gebruik de bestandskiezer om het .mobileconfig-bestand te selecteren dat u uit Intune hebt geëxporteerd. Kies vervolgens **Toevoegen**. Het profiel wordt toegevoegd aan het apparaat. Als het apparaat niet onder supervisie is, vereist de installatie acceptatie op het apparaat.
 6. Voer de volgende stappen uit om het profiel op het iOS-apparaat te installeren. Het apparaat moet de Configuratieassistent al hebben uitgevoerd en gereed zijn voor gebruik. Als inschrijving app-implementaties omvat, moet op het apparaat een Apple-id zijn ingesteld, omdat de app-implementatie vereist dat u met een Apple-id bent aangemeld voor de App Store.

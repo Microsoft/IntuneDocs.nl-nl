@@ -1,12 +1,12 @@
 ---
 title: Apps aan Android for Work-apparaten toewijzen
-titlesuffix: Azure portal
-description: Dit onderwerp bevat procedures voor het synchroniseren en toewijzen van apps op Android for Work-apparaten uit de Google Play for Work-store.
+titlesuffix: Microsoft Intune
+description: Begrijp hoe u apps synchroniseert en toewijst aan Android for Work-apparaten uit de Google Play for Work-store.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Apps aan Android for Work-apparaten toewijzen met Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-U wijst apps aan Android for Work-apparaten op een andere manier toe dan aan standaard-Android-apparaten. Alle apps die u installeert voor Android for Work, zijn afkomstig uit de Google Play for Work-store. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed.
-De app wordt vervolgens weergegeven in het knooppunt **Apps met licentie** van de Azure-portal. Hier kunt u de toewijzing van de app op dezelfde manier beheren als toewijzingen van andere apps.
+Android for Work is een programma voor Android-apparaten. Alle apps die u installeert op Android for Work-apparaten, zijn afkomstig uit de Google Play for Work-store. U wijst apps aan Android for Work-apparaten op een andere manier toe dan aan standaard-Android-apparaten. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app wordt vervolgens weergegeven in het knooppunt **Apps met licentie** van de Azure-portal. Hier kunt u de toewijzing van de app op dezelfde manier beheren als toewijzingen van andere apps.
 
 Als u uw eigen LOB-apps (Line-Of-Business) hebt gemaakt, kunt u deze als volgt toewijzen:
 - Meld u aan voor een Google-ontwikkelaarsaccount, zodat u apps kunt publiceren naar een privégebied in de Google Play-store.

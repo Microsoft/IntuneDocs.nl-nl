@@ -1,12 +1,12 @@
 ---
-title: Apps aan groepen toewijzen
-titlesuffix: Azure portal
-description: Als u een app aan Intune hebt toegevoegd, wilt u deze wellicht toewijzen aan groepen met gebruikers of apparaten.
+title: Apps aan groepen toewijzen in Microsoft Intune
+titlesuffix: 
+description: Als u een app aan Microsoft Intune hebt toegevoegd, wilt u deze wellicht toewijzen aan groepen met gebruikers of apparaten.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Apps aan groepen toewijzen met Microsoft Intune
 
@@ -38,29 +38,30 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
 |Apps toewijzen als beschikbaar|Ja|Ja|
 |Apps toewijzen als vereist|Ja|Nee|
 |Apps verwijderen|Ja|Nee|
+|App-updates ontvangen van Intune|Ja|Nee|
 |Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app|Ja|Nee|
 |Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app op internet|Ja|Ja|
 
 > [!NOTE]
-> Op dit moment kunt u iOS- en Android-apps (beide Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet met Intune zijn ingeschreven.
+> Op dit moment kunt u iOS- en Android-apps (beide Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet met Intune zijn ingeschreven.<br></br><br></br>
+> Voor het ontvangen van app-updates op apparaten die niet zijn ingeschreven bij Intune moeten gebruikers de bedrijfsportal openen en de app-updates handmatig installeren.
 
 ## <a name="how-to-assign-an-app"></a>Een app toewijzen
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 1. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
 2. Kies de app die u wilt toewijzen op de blade met de lijst met apps.
-3. Kies **Beheren** > **Toewijzingen** op de blade <*app-naam*> - **Overzicht**.
-4. Kies **Groepen selecteren** en kies op de blade **Groepen selecteren** de Azure AD-groepen waaraan u de app wilt toewijzen.
+3. Op de blade **Overzicht** kiest u **Beheren** > **Toewijzingen**.
+4. Kies vervolgens **Groep toevoegen** en kies dan op de blade **Groep toevoegen** de Azure AD-groepen die u wilt opnemen of uitsluiten bij het toewijzen van de app.
 5. Voor elke app die u kiest, moet u een **toewijzingstype** voor de app selecteren. U hebt de volgende mogelijkheden:
-    - **Beschikbaar**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.
-    - **Niet van toepassing**: de app wordt niet geïnstalleerd en niet weergegeven in de bedrijfsportal.
+    - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.
+    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune.
     - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
     - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
-    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune.
 6. **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
-6. Als u klaar bent, kiest u **Opslaan**.
+6. Als u klaar bent, kiest u **OK** en vervolgens **Opslaan**.
 
 De app wordt nu toegewezen aan de groepen die u hebt geselecteerd.
 

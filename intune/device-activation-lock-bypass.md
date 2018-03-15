@@ -1,10 +1,10 @@
 ---
 title: Het iOS-activeringsslot overslaan met Intune
-titlesuffix: Azure portal
-description: Meer informatie over het gebruik van om het iOS-activeringslot over te slaan voor toegang tot vergrendelde apparaten.
+titlesuffix: Microsoft Intune
+description: Meer informatie over het gebruik van Intune om het iOS-activeringslot over te slaan voor toegang tot vergrendelde apparaten.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Activeringsslot op iOS-apparaten onder supervisie overslaan met Intune
 
@@ -69,11 +69,11 @@ Voordat u een bypass van het activeringsslot op apparaten kunt uitvoeren, moet u
 
 Met de externe apparaatactie **Activeringsvergrendeling overslaan** verwijdert u het activeringsslot van een iOS-apparaat zonder de Apple-id en het wachtwoord van de gebruiker. Als u de activeringsvergrendeling hebt overgeslagen, wordt de activeringsvergrendeling opnieuw ingeschakeld zodra de app Zoek mijn iPhone start. Sla de activeringsvergrendeling alleen over als u fysiek toegang hebt tot het apparaat.
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat onder supervisie en kies vervolgens de externe apparaatactie **Activeringsvergrendeling overslaan**.
+4. Kies **Alle apparaten** op de blade **Apparaten**.
+5. Kies in de lijst met apparaten die u beheert een iOS-apparaat onder supervisie en kies vervolgens **...Meer**. Klik dan op de externe apparaatactie **Activeringsvergrendeling overslaan**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

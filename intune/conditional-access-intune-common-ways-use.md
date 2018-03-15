@@ -3,10 +3,10 @@ title: Voorwaardelijke toegang met Intune
 titlesuffix: Azure portal
 description: Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-U moet Intune-beleid voor de compatibiliteit van mobiele apparaten en de Intune MAM-mogelijkheden (Mobile Application Management) configureren om de naleving van de voorwaardelijke toegang binnen uw organisatie te waarborgen. Laten we het eens hebben over de gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken.
+Er zijn twee hoofdsoorten voorwaardelijke toegang beschikbaar in Intune. Het eerste type is op apparaten gebaseerde voorwaardelijke toegang. Het tweede type is op apps gebaseerde voorwaardelijke toegang. U moet het gerelateerde nalevingsbeleid configureren voor naleving van de voorwaardelijke toegang binnen uw organisatie.
+
+Op basis van de onderstaande informatie krijgt u meer inzicht in hoe u de Intune-nalevingsmogelijkheden voor mobiele *apparaten* kunt gebruiken én in hoe Intune Mobile *Application* Management (MAM) werkt. 
 
 ## <a name="device-based-conditional-access"></a>Voorwaardelijke toegang op basis van het apparaat
 
@@ -32,11 +34,11 @@ Intune en Azure Active Directory werken samen om ervoor te zorgen dat alleen beh
 
 Met Intune beschikt u over mogelijkheden voor apparaatnalevingsbeleid waarmee u de nalevingsstatus van het apparaat kunt evalueren. De nalevingsstatus wordt gerapporteerd aan Azure Active Directory om het voorwaardelijke toegangsbeleid af te dwingen dat in Azure Active Directory wordt gemaakt wanneer de gebruiker zich toegang tot uw bedrijfsresources probeert te verschaffen.
 
-Vanaf de nieuwe versie van [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) worden de op apparaten gebaseerde beleidsregels voor voorwaardelijke toegang voor Exchange Online en andere Office 365-producten geconfigureerd via Azure Portal.
+De op apparaten gebaseerde beleidsregels voor voorwaardelijke toegang voor Exchange Online en andere Office 365-producten geconfigureerd via [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 -   Meer informatie over [voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
--   Meer informatie over [Intune-apparaatcompatibiliteit](device-compliance.md).
+-   Meer informatie over [Intune-apparaatnaleving](device-compliance.md).
 
 -   Meer informatie over het [beveiligen van e-mail, Office 365 en andere services middels het gebruik van voorwaardelijke toegang voor Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 

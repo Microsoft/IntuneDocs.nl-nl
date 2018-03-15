@@ -1,12 +1,12 @@
 ---
-title: Bekende problemen in Microsoft Intune in de Azure-portal
-titlesuffix: Azure portal
-description: Meer informatie over bekende problemen in Intune"
+title: Bekende problemen in Microsoft Intune
+titlesuffix: Microsoft Intune
+description: Meer informatie over bekende problemen in Microsoft Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 255bd839bda8e8d85794a88fc76899bbd5870bc0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9933e6ed7f8ee636cb0a9416ff2409e2054e3aa0
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/25/2018
 
 Gebruik dit onderwerp als u meer informatie wilt over bekende problemen in Microsoft Intune.
 
-Als u een fout wilt melden die bug hier niet wordt weergegeven, kunt u een [ondersteuningsaanvraag openen](get-support.md).
+Als u een bug wilt melden die hier niet wordt weergegeven, kunt u een [ondersteuningsaanvraag openen](get-support.md).
 
 Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapport op de site [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) indienen.
 

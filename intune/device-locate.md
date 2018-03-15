@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90b1321c0df49f446bfdeccbacdfd5642396dacd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864d528091de7a6113485347304b0dc254af2c7d
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Verloren of gestolen iOS-apparaten zoeken met Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met de apparaatactie **Apparaat zoeken** geeft u de locatie van een verloren of gestolen iOS-apparaat op een kaart weer. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, moet op het apparaat de modus [Apparaat verloren](/intune-azure/manage-devices/lost-mode.md) zijn ingeschakeld.
+Met de apparaatactie **Apparaat zoeken** geeft u de locatie van een verloren of gestolen iOS-apparaat op een kaart weer. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn, dat via DEP is ingeschreven en waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, moet op het apparaat de modus [Apparaat verloren](device-lost-mode.md) zijn ingeschakeld.
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
@@ -37,11 +37,11 @@ Met de apparaatactie **Apparaat zoeken** geeft u de locatie van een verloren of 
 
 ## <a name="how-to-locate-a-lost-or-stolen-device"></a>Apparaten lokaliseren die vermist worden of gestolen zijn
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat en kies vervolgens de externe aparaatactie **Apparaat zoeken**.
+4. Kies **Alle apparaten** op de blade **Apparaten**.
+5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat, kies **...Meer** en kies vervolgens de externe apparaatactie **Apparaat zoeken**.
 6. Als het apparaat is gevonden, wordt de locatie weergegeven op de blade **Apparaat zoeken**.
     ![De blade Apparaat zoeken](./media/locate-device.png)
 
@@ -58,4 +58,4 @@ Met de apparaatactie **Apparaat zoeken** geeft u de locatie van een verloren of 
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten en groepen** de optie **Apparaatacties**.
+Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.

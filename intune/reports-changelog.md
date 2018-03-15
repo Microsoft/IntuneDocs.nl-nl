@@ -2,10 +2,10 @@
 title: Wijzigingenlogboek Intune-datawarehouse | Microsoft Docs
 description: Een lijst met wijzigingen in de API van Intune-datawarehouse.
 keywords: Intune-datawarehouse
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Wijzigingenlogboek voor de API van Intune-datawarehouse
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Houd updates voor Intune-datawarehouse bij.
+
+## <a name="1801"></a>1801
+_Uitgebracht in januari 2018_
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Intune-datawarehouse-verificatie enkel voor toepassing <!-- 1867540 -->
+
+U kunt een toepassing instellen met behulp van Azure Active Directory (Azure AD) en verifiëren bij Intune Datawarehouse. Zie voor meer informatie [Intune-datawarehouse-verificatie enkel voor toepassing](data-warehouse-app-only-auth.md).
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD- en Intune-referentievereisten <!-- 2077525 -->
+
+- Intune-licenties hoeven niet meer te worden toegewezen aan de gebruiker bij het openen van het Intune-datawarehouse (met inbegrip van de API).
+- De Intune-rolnaam is veranderd van **Rapporten** in **Intune-datawarehouse**. 
+
+    Zie [Azure AD en Intune-referentievereisten](reports-api-url.md#azure-ad-and-intune-credential-requirements) voor meer informatie.
+
+### <a name="odata-query-options----2077711---"></a>OData-queryopties <!-- 2077711 -->
+
+U kunt <code>$select</code> gebruiken als OData-queryparameter. De huidige versie ondersteunt de volgende OData-queryparameters: <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code> en <code>$top</code>. Zie [OData-queryopties](reports-api-url.md#odata-query-options) voor meer informatie.
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Nieuwe entiteiten in het datawarehouse-gegevensmodel <!-- 2077804 -->
+
+ - De entiteit [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) is toegevoegd. De **MobileAppDeviceUserInstallStatus** toont de installatiestatus van een mobiele app voor een bepaald apparaat en een bepaalde gebruiker.
+ - De entiteit [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) is toegevoegd. De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van een mobiele toepassing nadat deze is toegewezen aan een groep apparaten, gebruikers of beide. 
 
 ## <a name="1710"></a>1710
 _Uitgebracht: november 2017_

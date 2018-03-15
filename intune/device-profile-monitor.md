@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5b5a6ab74555eefc8c001ec444f803be24e34f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 01/25/2018
 U kunt de voortgang van de toewijzing van Intune--apparaatprofielen op twee manieren controleren:
 
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
+2. Kies op de blade **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
 2. Kies het profiel dat u wilt beheren op de blade met de profielenlijst en ga vervolgens op een van de volgende manieren te werk:
-    - Kies **Overzicht** op de blade *Profielnaam*> **Rapporten** om basisinformatie over het profiel en de bijbehorende toewijzingen te bekijken.
-    - Kies **Rapporten** op de blade <*profielnaam*> **Rapporten** om gedetailleerdere informatie over het profiel en de bijbehorende toewijzingen te bekijken.
+    - Kies **Overzicht** op de blade <*profielnaam*> **configuratieprofiel Apparaat** om basisinformatie over het profiel en de bijbehorende toewijzingen te bekijken.
+    - Kies **Opdrachten** op de blade <*profielnaam*> **configuratieprofiel Apparaat** om basisinformatie over het profiel en de bijbehorende toewijzingen te bekijken.

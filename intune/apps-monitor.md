@@ -1,12 +1,12 @@
 ---
 title: App-gegevens en -toewijzingen controleren
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: Nadat u een app hebt toegewezen aan gebruikers of apparaten, kunt u met behulp van deze informatie de status ervan controleren.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6bd915093ae45ff0fc3d51a2d7279493bc783d43
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
@@ -27,16 +27,16 @@ ms.lasthandoff: 01/25/2018
 
 Intune biedt een aantal manieren om de eigenschappen en toewijzingsstatus te controleren van apps die u beheert.
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
-3. Kies in de workload **Mobiele apps** **Apps** in de groep **Beheren**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+3. Kies **Mobiele apps** en kies **Apps** in de groep **Beheren**.
 5. Kies een app in de lijst met app-blades. U ziet dan de blade <*app-naam*> **Installatiestatus apparaat**.
 
 ## <a name="app-overview-blade"></a>Overzichtsblade van apps
 
 U kunt de blade <*app-naam*> **Installatiestatus apparaat** gebruiken voor meer informatie over de status van een app in uw omgeving.
 
-### <a name="essentials"></a>Essentiële informatie
+### <a name="essentials"></a>Essentials
 
 De sectie **Essentiële informatie** bevat de volgende informatie over de app:
 

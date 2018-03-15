@@ -1,9 +1,10 @@
 ---
 title: Intune testen en valideren
-description: De details die u moet overwegen wanneer u een cloud-only-oplossing van Intune test en valideert in uw omgeving.
+titlesuffix: Microsoft Intune
+description: Hoe u uw oplossing voor alleen in de Intune-cloud kunt testen en valideren.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune testen en valideren
 
-De testfase treedt op tijdens en na de implementatiefase. U moet testaccounts, -groepen en -apparaten hebben voor het testen van alle vereiste IT- (beheer) en eindgebruikers- (use case) scenario's die u eerder hebt geïdentificeerd.
+Overweeg bij het testen van de implementatie van Microsoft Intune functionele validatie en use-case-validatie. Functionele validatie bestaat uit het testen van elk onderdeel en elke configuratie om te bepalen of de werking ervan in orde is. Use-case-validatie betreft testen om te controleren of de scenario's met betrekking tot een reeks taken werken zoals verwacht. 
 
 Het is raadzaam uw team voor IT-ondersteuning en helpdesk te betrekken bij de testfase om ondersteuningsdocumentatie samen te stellen en om de medewerkers van het team vertrouwd te maken met de ondersteuning van het product. Als een onderdeel of scenario niet werkt op basis van de use cases, is het belangrijk om de noodzakelijke wijzigingen en de redenen daarvoor vast te leggen.
 

@@ -3,10 +3,10 @@ title: Beveiligingsinstelling voor de beveiliging van apps voor Windows Informat
 titlesuffix: Azure portal
 description: Beveiligingsinstelling voor de beveiliging van apps voor WIP maken en implementeren met Intune
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -49,7 +49,7 @@ Hier worden enkele concepten besproken voor het toevoegen van een WIP-beleid.
 
 U moet de MAM-provider configureren voordat u een beveiligingsbeleid voor WIP-apps kunt maken. Meer informatie over [de configuratie van uw MAM-provider met Intune](app-protection-policies-configure-windows-10.md).
 
-U moet bovendien beschikken over het volgende:
+U moet bovendien beschikken over de volgende licentie en update:
 
 -   Een [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)-licentie.
 -   [Update voor Windows Creators](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ U moet bovendien beschikken over het volgende:
 
 ## <a name="to-add-a-wip-policy"></a>WIP-beleid toevoegen
 
-Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  Ga naar het **Intune MAM-dashboard** en kies **Alle instellingen** > **App-beleid**.
 
@@ -80,7 +80,7 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via
 
 1.  Kies op de blade **App-beleid** de naam van uw beleid en kies vervolgens **Toegestane apps** op de blade **Beleid toevoegen**. De blade **Toegestane apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
 
-2.  Kies op de blade **Toegestane apps** **Apps toevoegen**. De blade **Apps toevoegen** wordt geopend, waarin u alle apps ziet die deel van deze lijst uitmaken.
+2.  Kies op de blade **Toegestane apps** **Apps toevoegen**. In de informatie **Apps toevoegen** ziet u alle apps die deel van deze lijst uitmaken.
 
 3.  Selecteer elke app waarvoor u toegang wilt krijgen tot uw bedrijfsgegevens en kies vervolgens **OK**. De blade **Toegestane apps** wordt bijgewerkt met alle geselecteerde apps.
 
@@ -92,7 +92,7 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u een WIP-beleid maken via
 
 2.  Kies op de blade **Toegestane apps** **Apps toevoegen**.
 
-3.  Kies op de blade **Apps toevoegen** **Store-apps** in de vervolgkeuzelijst. Op de blade worden vakken weergegeven waarmee u een **uitgever** en een **naam** voor de app kunt toevoegen.
+3.  Kies op de blade **Apps toevoegen** **Store-apps** in de vervolgkeuzelijst. In de informatie worden vakken weergegeven waarmee u een **uitgever** en een **naam** voor de app kunt toevoegen.
 
 4.  Typ de naam van de app en de naam van de uitgever en kies vervolgens **OK**.
 
@@ -153,7 +153,7 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
 
     ![Schermopname van trainingsmodus](./media/learning-mode-sc1.png)
 
-1.  Kies **Opslaan**.
+2.  Kies **Opslaan**.
 
 ### <a name="use-wip-learning"></a>WIP Learning gebruiken
 
@@ -165,10 +165,23 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
  
     Zodra de apps worden weergegeven in het rapport voor de logboekregistratie van WIP, kunt u deze toevoegen aan de beveiligingsbeleidsregels voor uw app.
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>De Windows Search-indexeerfunctie toestaan om versleutelde items te zoeken
+Hiermee kunt u het indexeren van items toestaan of verbieden. Deze schakeloptie dient voor de Windows Search-indexeerfunctie. Hiermee bepaalt u of items die zijn versleuteld, worden geïndexeerd, zoals de bestanden met Windows-gegevensbescherming (WIP).
+
+Deze optie voor app-beveiligingsbeleid bevindt zich in de **geavanceerde instellingen** van het beleid voor Windows-gegevensbescherming. Het beveiligingsbeleid van de app moet worden ingesteld op het *Windows 10*-platform en de **inschrijvingsstatus** van het app-beleid moet worden ingesteld op **Bij inschrijving**. 
+
+Wanneer het beleid wordt ingeschakeld, worden de items met WIP-beveiliging geïndexeerd en worden de metagegevens opgeslagen op een niet-versleutelde locatie. De metagegevens bevatten gegevens zoals het bestandspad en de wijzigingsdatum.
+
+Als het beleid is uitgeschakeld, worden de items met WIP-beveiliging niet geïndexeerd en worden ze niet weergegeven in de resultaten in Cortana of Verkenner. Als er te veel mediabestanden met WIP-beveiliging op het apparaat staan, kunnen de prestaties bij gebruik van foto's en Groove-apps ook worden beïnvloed.
+
+## <a name="add-encrypted-file-extensions"></a>Extensies van versleutelde bestanden toevoegen
+
+U kunt niet alleen de optie om de **Windows Search-indexeerfunctie toe te staan om te zoeken naar versleutelde items** gebruiken, maar u kunt ook een lijst bestandsextensies opgeven. De bestanden met deze extensies worden versleuteld wanneer ze vanaf een Server Message Block-share (SMB) binnen het bedrijf worden gekopieerd, zoals gedefinieerd in de lijst netwerklocaties. Als dit beleid niet is opgegeven, wordt het bestaande gedrag voor automatisch versleutelen toegepast. Als dit beleid is geconfigureerd, worden alleen bestanden met de extensies van de lijst versleuteld.
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>Uw WIP-beveiligingsbeleid voor apps implementeren
 
 > [!IMPORTANT]
-> Dit is van toepassing op WIP zonder apparaatinschrijving.
+> Deze informatie is van toepassing op WIP zonder apparaatinschrijving.
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ Nadat u het beveiligingsbeleid van uw OHW app hebt gemaakt, moet u deze implemen
 
     Er wordt een lijst met gebruikersgroepen op basis van de beveiligingsgroepen in uw Azure Active Directory geopend op de blade **Gebruikersgroep toevoegen**.
 
-1.  Kies de groep waarop u uw beleid wilt toepassen en kies vervolgens **Selecteren** om het beleid te implementeren.
+2.  Kies de groep waarop u uw beleid wilt toepassen en kies vervolgens **Selecteren** om het beleid te implementeren.
+
+## <a name="next-steps"></a>Volgende stappen
+
+- Zie [Uw ondernemingsgegevens beveiligen met Windows-gegevensbescherming (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) voor meer informatie over Windows-gegevensbescherming. 

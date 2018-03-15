@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ff5fb2634e2bc6019404d55d1c322146b32eb7f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e1496d24fd9d3bb636a4eab00c254b753210f63
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Wachtwoordcodes opnieuw instellen en verwijderen op apparaten die door Intune worden beheerd
 
@@ -39,12 +39,12 @@ De actie **Toegangscode verwijderen** genereert een nieuwe toegangscode voor het
 
 ## <a name="how-to-reset-a-passcode"></a>Een wachtwoordcode opnieuw instellen
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies in de lijst van door u beheerde apparaten een apparaat, en kies vervolgens de externe actie **Toegangscode verwijderen** voor het apparaat.
+4. Kies **Alle apparaten** op de blade **Apparaten**.
+5. Selecteer in de lijst van door u beheerde apparaten een apparaat, kies **...Meer** en kies vervolgens de externe actie **Toegangscode verwijderen** voor het apparaat.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten en groepen** de optie **Apparaatacties**.
+Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.

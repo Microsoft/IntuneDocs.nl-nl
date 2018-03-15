@@ -1,6 +1,6 @@
 ---
-title: Intune-licenties toewijzen
-description: Licenties toewijzen aan gebruikers voor uw Intune-abonnement
+title: Microsoft Intune-licenties toewijzen
+description: Licenties toewijzen aan gebruikers zodat ze kunnen inschrijven bij Intune
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>Intune-licenties toewijzen aan uw gebruikersaccounts
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Licenties toewijzen aan gebruikers zodat ze kunnen apparaten inschrijven bij Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ U kunt de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) g
 
 3.  Zet **Intune** of **Enterprise Mobility + Security** op **Aan** en selecteer **Opslaan**.
 
-  ![Afbeelding van scherm in Office 365-portal voor het toewijzen van productlicenties.](./media/office-assign-license.png)
+  ![Schermafbeelding van de Office 365-beheerportal met het gedeelte Productlicenties.](./media/office-assign-license.png)
 
 4. Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
 
@@ -46,11 +46,11 @@ U kunt de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) g
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Schoolgegevens synchroniseren gebruiken om licenties toe te wijzen aan gebruikers met Intune for Education
 Als uw organisatie een onderwijsinstelling is, kunt u met Schoolgegevens synchroniseren(SDS) licenties voor Intune for Education toewijzen aan gesynchroniseerde gebruikers. Kies het selectievakje Intune for Education tijdens het instellen van uw SDS-profiel.  
 
-![Afbeelding van het instellen van het SDS-profiel](./media/i4e-sds-profile-setup-setting.png)
+![Schermafbeelding van de SDS-profielinstelling](./media/i4e-sds-profile-setup-setting.png)
 
 Als u een licentie voor Intune for Education toewijst, zorg er dan voor dat er ook een Intune A Direct-licentie wordt toegewezen.
 
-![Afbeelding van het instellen van de productlicentie](./media/i4e-set-licenses.png)
+![Schermafbeelding van het instellen van de productlicentie](./media/i4e-set-licenses.png)
 
 Zie [Overzicht van Schoolgegevens synchroniseren](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) voor meer informatie over SDS.
 

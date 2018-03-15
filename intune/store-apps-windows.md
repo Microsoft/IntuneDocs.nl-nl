@@ -1,12 +1,12 @@
 ---
-title: Windows Store-apps toevoegen aan Intune
-titleSuffix: Azure portal
-description: Meer informatie over het toevoegen van Windows Store-apps aan Intune.
+title: Windows Store-apps toevoegen aan Microsoft Intune
+titleSuffix: 
+description: Meer informatie over hoe u Windows Store-apps toevoegt aan Microsoft Intune.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,38 +15,40 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdc1696175f26dc4bb89fcdd005d88bc0948f86d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 815f780ef9f04870f19e75481ed74f0a1c3601f3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Store-apps toevoegen aan Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u ze aan Intune toevoegen. Aan de hand van de volgende stappen kunt u een Windows Store-app toevoegen aan Microsoft Intune.
 
-1. Meld u aan bij Azure-portal.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Apps beheren** op de blade **Intune**.
-4. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
-5. Kies **Toevoegen** boven de lijst met apps.
-6. Kies **App-gegevens** op de blade **App toevoegen**.
-7. Configureer de volgende gegevens op de blade **App bewerken**. Klik wanneer u klaar bent op **Toevoegen**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden op deze blade mogelijk automatisch ingevuld:
+4. In de workload **Mobiele apps** kiest u **Apps** in het gedeelte **Beheren**.
+5. Kies boven de lijst de optie **Toevoegen**.
+6. Selecteer **Windows** uit de beschikbare typen **Store-apps** van de lijst.
+7. Voor het configureren van de app-gegevens selecteert u **App-gegevens**.
+8. Op de blade **App-gegevens** configureert u de volgende gegevens (afhankelijk van de app die u hebt gekozen, worden sommige waarden in dit deelvenster mogelijk automatisch ingevuld):
     - **App-naam**: voer de naam van de app in zoals deze in de bedrijfsportal zal worden weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **App-beschrijving**: voer een beschrijving in voor de app. Deze wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt weergegeven voor gebruikers in de bedrijfsportal.
     - **Uitgever**: voer de naam van de uitgever of de app in.
-    - **App Store URL** (URL van App Store): voer voor de app die u wilt maken de URL naar de App Store in.
-    - **Minimumversie van het besturingssysteem**: selecteer in de lijst de minimumversie van het besturingssysteem waarin de app kan worden geïnstalleerd. Als u de app toewijst aan een apparaat met een lager besturingssysteem, wordt de app niet geïnstalleerd.
-    - **Categorie** (optioneel): selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Hierdoor kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **Appstore-URL**: voer voor de app die u wilt maken de URL naar de appstore in. 
+    - **Categorie** (optioneel): selecteer een of meer van de app-categorieën of selecteer een categorie die u hebt gemaakt. Als u deze informatie toevoegt, kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
     - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
-    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld **HR-afdeling** (optioneel).
-    - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Pictogram uploaden**: upload het pictogram dat aan de app wordt gekoppeld. Dit is het pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-8. Wanneer u klaar bent, kiest u **Opslaan** op de blade **App toevoegen**.
+    - **Informatie-URL** (optioneel): voer de URL in van een website die informatie over deze app bevat (optioneel). Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Privacy-URL** (optioneel): voer de URL in van een website die privacyinformatie over deze app bevat. Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Ontwikkelaar** (optioneel): voer de naam in van de app-ontwikkelaar.
+    - **Eigenaar** (optioneel): voer een naam in voor de eigenaar van deze app, bijvoorbeeld **HR-afdeling**.
+    - **Opmerkingen** (optioneel): voer de opmerkingen in die u aan deze app wilt koppelen.
+    - **Pictogram uploaden**: upload het pictogram dat aan de app wordt gekoppeld. Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+1. Klik op **OK** wanneer u alle benodigde app-gegevens hebt ingevoerd.
+2. Klik op **Toevoegen** op de blade **App toevoegen**.
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.
 
@@ -59,16 +61,22 @@ Eindgebruikers kunnen de bedrijfsportal-app installeren vanuit Microsoft Store v
 1. Meld u aan bij uw account in [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de versie met de **offlinelicentie** van de bedrijfsportal-app aan.  
 2. Zodra de app is aangeschaft, selecteert u de app op de pagina **Inventaris**.  
 3. Selecteer **Windows 10 alle apparaten** als **Platform**. Klik vervolgens op de betreffende **Architectuur** en download. Een app-licentiebestand is niet nodig voor deze app.
-![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](./media/Win10CP-all-devices.png)
+
+    ![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](./media/Win10CP-all-devices.png)
+
 4. Download alle pakketten onder "Vereiste frameworks". Dit moet worden uitgevoerd voor x86-, x64- en ARM-architecturen. Totaal zijn dit 9 pakketten, zoals hieronder weergegeven.
 
-![Afbeelding van afhankelijkheidsbestanden voor downloaden ](./media/Win10CP-dependent-files.png)
+    ![Afbeelding van afhankelijkheidsbestanden voor downloaden](./media/Win10CP-dependent-files.png)
+
 5. Voordat u de bedrijfsportal-app uploadt naar Intune, maakt u een map (bijvoorbeeld C:&#92;Company Portal) waarin de pakketten als volgt zijn gestructureerd:
-  1. Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap Afhankelijkheden.  
-  ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/Win10CP-Dependencies-save.png)
-  2. Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden.  
-  Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout.  
-  ![De Windows-app-afhankelijkheid voor dit software-installatieprogramma is niet gevonden in de toepassingsmap. U kunt doorgaan met het maken en toewijzen van deze toepassing, maar deze kan pas worden uitgevoerd als de ontbrekende Windows-app-afhankelijkheid beschikbaar is.](./media/Win10CP-error-message.png)
+  - Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap Afhankelijkheden.  
+  
+    ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/Win10CP-Dependencies-save.png)
+
+  - Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden. Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout: 
+
+      ![De Windows-app-afhankelijkheid voor dit software-installatieprogramma is niet gevonden in de toepassingsmap. U kunt doorgaan met het maken en toewijzen van deze toepassing, maar deze kan pas worden uitgevoerd als de ontbrekende Windows-app-afhankelijkheid beschikbaar is.](./media/Win10CP-error-message.png)
+
 6. Ga terug naar Intune en upload the Bedrijfsportal-app als nieuwe app. Wijs deze als vereiste app toe aan de gewenste set doelgebruikers.  
 
 Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Een appxbundle met afhankelijkheden implementeren via Microsoft Intune MDM) voor meer informatie over hoe Intune afhankelijkheden voor universele apps verwerkt.  
@@ -77,14 +85,14 @@ Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https:/
 Als uw gebruikers de Windows 8.1- of Windows Phone 8.1-bedrijfsportal-apps al hebben geïnstalleerd vanuit de Store, moeten deze automatisch worden bijgewerkt naar de nieuwe versie, zonder dat hiervoor actie door u of uw gebruikers is vereist. Als de update niet wordt uitgevoerd, vraagt u uw gebruikers om te controleren of automatische updates voor Store-apps op hun apparaten is ingeschakeld.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe ik een upgrade uitvoeren van mijn gesideloade Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
-Het wordt aanbevolen de toewijzing voor de Windows 8.1-bedrijfsportal-app te verwijderen door de toewijzingsactie in te stellen op Installatie ongedaan maken. Zodra deze actie is uitgevoerd, kan de Windows 10-bedrijfsportal-app worden toegewezen via een van de bovenstaande opties.  
+Het wordt aanbevolen de toewijzing voor de Windows 8.1-bedrijfsportal-app te verwijderen door de toewijzingsactie in te stellen op Installatie ongedaan maken. Zodra deze instelling is geconfigureerd, kan de Windows 10-bedrijfsportal-app worden toegewezen via een van de bovenstaande opties.  
 
 Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt toegewezen zonder deze te ondertekenen met het Symantec-certificaat, volgt u de stappen in de bovenstaande sectie Assign directly via Intune (Rechtstreeks toewijzen via Intune) om de upgrade te voltooien.
 
 Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt ondertekend en toegewezen met het Symantec-certificaat voor ondertekening van programmacode, volgt u de stappen in de onderstaande sectie.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe kan ik een upgrade uitvoeren van mijn ondertekende en gesideloade Windows Phone 8.1-bedrijfsportal-app of Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
-Het wordt aanbevolen de bestaande toewijzing voor de Windows Phone 8.1-bedrijfsportal-app of de Windows 8.1-bedrijfsportal-app te verwijderen door de toewijzingsactie in te stellen op Installatie ongedaan maken. Zodra deze actie is uitgevoerd, kan de Windows 10-bedrijfsportal-app normaal worden toegewezen.  
+Het wordt aanbevolen de bestaande toewijzing voor de Windows Phone 8.1-bedrijfsportal-app of de Windows 8.1-bedrijfsportal-app te verwijderen door de toewijzingsactie in te stellen op Installatie ongedaan maken. Zodra deze instelling is geconfigureerd, kan de Windows 10-bedrijfsportal-app normaal worden toegewezen.  
 
 Anders moet de Windows 10-bedrijfsportal-app op de juiste manier worden bijgewerkt en ondertekend om ervoor te zorgen dat het upgradepad in acht wordt genomen.  
 
@@ -96,7 +104,7 @@ Het ondertekenen en toewijzen van de app gaat als volgt:
 2. Download de Windows 10-bedrijfsportal-app vanuit Microsoft Store voor Bedrijven, zoals hierboven beschreven.  
 3. Voer het script uit met de invoerparameters die zijn opgegeven in de koptekst van het script om de Windows-10-bedrijfsportal-app (hieronder uitgepakt) te ondertekenen. Afhankelijkheden hoeven niet in het script te worden doorgegeven. Deze zijn alleen vereist wanneer de app wordt geüpload naar de Intune-beheerconsole.
 
-|Parameter | Description|
+|Parameter | Beschrijving|
 | ------------- | ------------- |
 |InputWin10AppxBundle |Het pad naar het bron-appxbundle-bestand |
 |OutputWin10AppxBundle |Het uitvoerpad voor het ondertekende appxbundle-bestand.  Win81Appx Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).|

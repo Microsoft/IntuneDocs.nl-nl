@@ -1,10 +1,11 @@
 ---
-title: Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune
-description: Aan de hand van de informatie in dit onderwerp kunt u beslissen wanneer u het hulpmiddel App Wrapping en de App SDK moet gebruiken om uw aangepaste LOB-apps in te schakelen voor gebruik van de beleidsregels voor het beheren van mobiele apps.
+title: Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
+titlesuffix: Microsoft Intune
+description: Gebruik de App Wrapping Tool en de App SDK zodat uw aangepaste Line-Of-Business-apps het app-beveiligingsbeleid in Microsoft Intune kunnen gebruiken.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -40,7 +41,7 @@ Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn ge
 * Uw app heeft geen ingebouwde functies voor gegevensbescherming
 * Uw app is eenvoudig
 * Uw app wordt intern geïmplementeerd
-* U hebt geen toegang tot de broncode van de app.
+* U hebt geen toegang tot de broncode van de app
 * U hebt de app niet ontwikkeld
 * De gebruikersverificatie van uw app is minimaal
 
@@ -49,8 +50,8 @@ Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn ge
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Ja|Ja|
-|**Android**| In preview-versie |Ja|
+|**iOS** |Yes|Yes|
+|**Android**| In preview-versie |Yes|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 De App SDK is hoofdzakelijk ontworpen voor klanten die apps in de Apple App Store of Google Play Store hebben en hun apps willen beheren met Intune. Elke app kan echter profiteren van integratie van de SDK, zelfs als het een Line-Of-Business app is.
@@ -85,7 +86,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |App mag gegevens overdragen naar ander apps|X|X|
 |App mag gegevens ontvangen van andere apps|X|X|
 |Knippen, kopiëren en plakken met andere apps beperken|X|X|
-|Eenvoudige pincode vereist voor toegang|X|X|
+|Eenvoudige pincode vereisen voor toegang|X|X|
 |De in de app ingebouwde pincode vervangen door de pincode van Intune|X||
 |Het aantal pogingen opgeven voordat de pincode opnieuw wordt ingesteld|X|X|
 |Vingerafdruk in plaats van pincode toestaan |X|X|
@@ -102,6 +103,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Configuratie van doeltoepassingen |X||
 |Ondersteuning voor meerdere identiteiten|X||
 |Aanpasbare stijl |X|||
+
 ## <a name="next-steps"></a>Volgende stappen
 
 Meer informatie over app-beveiligingsbeleid en Intune kunt u vinden in de volgende onderwerpen:

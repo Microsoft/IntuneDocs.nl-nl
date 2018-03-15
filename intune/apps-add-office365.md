@@ -1,12 +1,12 @@
 ---
-title: Office 365-apps installeren op mobiele apparaten met Intune
-titlesuffix: Azure portal
-description: Meer informatie over hoe u Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen.
+title: Office 365-apps installeren op apparaten met Microsoft Intune
+titlesuffix: 
+description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen."
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -85,11 +85,11 @@ In deze stap configureert u de installatieopties voor het app-pakket. De instell
 1.  Kies op de blade **App toevoegen** de optie **Instellingen van app-pakket**.
 2.  Voer de volgende gegevens in op de blade **Instellingen van app-pakket**:
     - **Office-versie**: kies of u de 32-bits of 64-bits versie van Office wilt toewijzen. U kunt de 32-bits versie op zowel 32-bits als 64-bits apparaten installeren, maar de 64-bits versie kan alleen worden geïnstalleerd op 64-bits apparaten.
-    - **Updatekanaal**: kies hoe Office moet worden bijgewerkt op apparaten. Zie Overzicht van updatekanalen voor Office 365 ProPlus voor meer informatie over de verschillende updatekanalen. U kunt kiezen uit:
-        - **Current**
-        - **Deferred**
-        - **Eerste versie van Current**
-        - **Eerste versie van Deferred**
+    - **Updatekanaal**: kies hoe Office moet worden bijgewerkt op apparaten. Zie [Overzicht van updatekanalen voor Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) voor meer informatie over de verschillende updatekanalen. U kunt kiezen uit:
+        - **Maandelijks**
+        - **Maandelijks (gericht)**
+        - **Halfjaarlijks**
+        - **Halfjaarlijks (gericht)**
     - **Gebruiksrechtovereenkomst van de app automatisch accepteren**: selecteer deze optie als uw eindgebruikers de gebruiksrechtovereenkomst niet hoeven te accepteren. Intune accepteert de overeenkomst automatisch.
     - **Activering van gedeelde computers gebruiken**: activering van gedeelde computers wordt gebruikt wanneer meerdere gebruikers een computer delen. Zie Activering van gedeelde computers voor Office 365 ProPlus voor meer informatie.
     - **Talen**: Office wordt automatisch geïnstalleerd in de ondersteunde talen die zijn geïnstalleerd met Windows op het apparaat van de eindgebruiker. Selecteer deze opties als u aanvullende talen wilt installeren met het app-pakket.

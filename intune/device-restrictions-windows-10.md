@@ -1,25 +1,26 @@
 ---
-title: Intune-apparaatbeperkingsinstellingen voor Windows 10
-titlesuffix: Azure portal
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op Windows 10-apparaten.
+title: Microsoft Intune-apparaatbeperkingsinstellingen voor Windows 10
+titlesuffix: 
+description: Meer informatie over de Microsoft Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op apparaten met Windows 10.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
+In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Deze beleidsinstelling wordt niet toegepast als de computer is toegevoegd aan Azure Active Directory en automatische inschrijving is ingeschakeld. 
    - Deze beleidsinstelling geldt niet voor computers met Windows 10 Home.
 - **Handmatige installatie van het basiscertificaat (alleen mobiel)**: de gebruiker kan niet langer basiscertificaten en tussenliggende CAP-certificaten handmatig installeren.
-- **Verzending van diagnostische gegevens**: mogelijke waarden zijn:
-    - **Geen**: er worden geen gegevens naar Microsoft verzonden
-    - **Basis**: beperkte informatie wordt naar Microsoft verzonden
-    - **Uitgebreid**: uitgebreide diagnostische gegevens worden naar Microsoft verzonden
-    - **Volledig**: hiermee worden dezelfde gegevens verzonden als bij Uitgebreid, aangevuld met gegevens over de apparaatstatus
+
 - **Camera**: hiermee kunt u het gebruik van de camera op het apparaat toestaan of blokkeren.
 - **Bestandssynchronisatie met OneDrive**: hiermee blokkeert u dat het apparaat bestanden synchroniseert naar OneDrive.
 - **Verwisselbare opslag**: hiermee geeft u op of er met het apparaat externe opslagapparaten, zoals SD-kaarten, kunnen worden gebruikt.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Apparaatdetectie**: hiermee voorkomt u dat een apparaat wordt gedetecteerd door andere apparaten.
 - **Taakwisselaar (alleen mobiel)**: hiermee blokkeert u de taakwisselaar op het apparaat.
 - **Foutberichtvenster voor SIM-kaart (alleen mobiel)**: hiermee voorkomt u dat op het apparaat een foutbericht wordt weergegeven als er geen SIM-kaart wordt gedetecteerd.
+- **Ink-werkruimte**: blokkeer gebruikers zodat ze geen toegang meer hebben tot de Ink-werkruimte. Als deze instelling niet wordt geconfigureerd, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruik van maken boven het vergrendelingsscherm.
 - **Automatisch opnieuw implementeren**: hiermee kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **CTRL + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
 
 
@@ -75,6 +73,9 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
 -   **Persoonlijke instellingen invoeren**: hiermee kunt u het gebruik van cloudspraakservices voor Cortana, de dicteerfunctie of Microsoft Store-apps blokkeren. Als u deze services toestaat, kan Microsoft spraakgegevens verzamelen voor het verbeteren van de service.
 -   **Automatische acceptatie van de goedkeuringsvensters voor koppelen en privacy**: hiermee kunt u instellen dat Windows automatisch toestemming mag geven voor bewerkingen met koppelen en privacy bij het uitvoeren van apps.
+- **Gebruikersactiviteiten publiceren**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
+- **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
+
 
 U kunt de informatie definiëren die voor alle apps op het apparaat toegankelijk is. U kunt ook uitzonderingen definiëren op een per-app basis met **Privacyuitzonderingen per app**.
 
@@ -130,7 +131,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
 - **Meldingen van het Actiecentrum (alleen mobiel)**: hiermee kunt u meldingen van het actiecentrum op het vergrendelingsscherm van het apparaat weergeven (alleen Windows 10 Mobile).
-- **URL vergrendelde schermafbeelding (alleen bureaublad)**: geef de URL op naar een afbeelding in PNG-, JPG- of JPEG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Gebruikers kunnen dit niet wijzigen.
+- **Afbeeldings-URL vergrendelingsscherm (alleen bureaublad)**: geef de URL op naar een afbeelding in JPEG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Gebruikers kunnen dit niet wijzigen.
 -   **Time-out voor het scherm die door de gebruiker kan worden ingesteld (alleen mobiel)**: hiermee kunnen gebruikers de hoeveelheid tijd configureren 
 -   **Cortana op vergrendeld scherm (alleen desktop)**: de gebruiker geen toestemming geven voor interactie met Cortana wanneer het vergrendelingsscherm wordt weergegeven op het apparaat (alleen Windows 10 voor desktops).
 -   **Pop-upmeldingen op vergrendeld scherm**: geen waarschuwingsberichten weergeven op het vergrendelingsscherm van het apparaat.
@@ -157,9 +158,9 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 ## <a name="edge-browser"></a>Microsoft Edge-browser
 
 -   **Microsoft Edge-browser (alleen mobiele apparaten)**: hiermee staat u het gebruik van de Edge-webbrowser toe op het apparaat.
--   **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: gebruik deze optie als u in Microsoft Edge geen lijst met suggesties wilt weergeven wanneer u typt in een vervolgkeuzelijst. Dit helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Microsoft Edge en Microsoft-services.
+-   **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: gebruik deze optie als u in Edge geen lijst met suggesties wilt weergeven wanneer u typt in een vervolgkeuzelijst. Dit helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Microsoft Edge en Microsoft-services.
 -   **Favorieten synchroniseren tussen Microsoft-browsers (alleen desktop)**: hiermee kunnen favorieten worden gesynchroniseerd tussen Internet Explorer en Microsoft Edge.
--   **Do Not Track-headers verzenden**: hiermee configureert u de Microsoft Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
+-   **Do Not Track-headers verzenden**: hiermee configureert u de Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
 -   **Cookies**: hiermee kunnen internetcookies in de browser op het apparaat worden opgeslagen.
 -   **JavaScript**: hiermee staat u de uitvoering van scripts, zoals JavaScript, toe in de Microsoft Edge-browser.
 -   **Pop-ups** pop-upvensters in de browser blokkeren (alleen van toepassing op Windows 10-desktop).
@@ -168,18 +169,20 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 -   **Automatisch doorvoeren**: hiermee staat u gebruikers toe instellingen voor automatisch doorvoeren in de browser te wijzigen (alleen Windows 10 Desktop).
 -   **Wachtwoordbeheer**: hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.
 -   **Locatie van de lijst met websites van Bedrijfsmodus**: hiermee geeft u de plaats aan van de lijst met websites die in Bedrijfsmodus worden geopend. Gebruikers kunnen deze lijst niet bewerken.<br>(Alleen Windows 10 Desktop.)
--   **Ontwikkelhulpprogramma's**: hiermee voorkomt u dat de eindgebruiker de ontwikkelhulpprogramma's van Microsoft Edge opent.
+-   **Ontwikkelhulpprogramma's**: hiermee voorkomt u dat de eindgebruiker de ontwikkelhulpprogramma's van Edge opent.
 -   **Extensies**: toestaan dat de eindgebruiker Edge-extensies installeert op het apparaat.
 -   **InPrivate-navigatie**: hiermee voorkomt u dat de eindgebruiker InPrivate-navigatiesessies opent.
--   **Pagina voor eerste keer uitvoeren weergeven**: hiermee wordt de introductiepagina niet weergegeven wanneer Microsoft Edge de eerste keer wordt uitgevoerd.
+-   **Pagina voor eerste keer uitvoeren weergeven**: hiermee wordt de introductiepagina niet weergegeven wanneer Edge de eerste keer wordt uitgevoerd.
     -   **URL voor eerste uitvoering**: hiermee geeft u de URL op van een pagina die wordt weergegeven wanneer een gebruiker de eerste keer Microsoft Edge uitvoert (alleen Windows 10 Mobile).
 -   **Startpagina's**: hiermee kunt u een lijst met sites toevoegen die u wilt gebruiken als startpagina's in Microsoft Edge (alleen desktop).
 -   **Wijzigingen van de startpagina**: hiermee kunnen gebruikers de startpagina's wijzigen die worden weergegeven bij het openen van Microsoft Edge. Gebruik de instelling Startpagina's om de pagina, of een lijst van pagina's, te maken die u wilt openen bij het starten van Microsoft Edge.
 -   **Toegang tot About-vlaggen blokkeren**: Hiermee voorkomt u dat de eindgebruiker toegang krijgt tot de pagina met about-vlaggen in Edge. Op deze pagina staan instellingen voor ontwikkelaars en experimentele instellingen.
 -   **LocalHost IP-adres voor WebRTC**: hiermee blokkeert u het weergeven van het IP-adres van de localhost van gebruikers tijdens het doen van telefoonoproepen via het WebRTC-protocol.
 -   **Standaardzoekmachine**: geef de zoekmachine op die u standaard wilt gebruiken. Eindgebruikers kunnen deze waarde op elk moment wijzigen.
--   **Browsegegevens wissen bij afsluiten**: hiermee worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Microsoft Edge afsluit.
+-   **Browsegegevens wissen bij afsluiten**: hiermee worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Edge afsluit.
 -   **Verzamelen van livetegelgegevens**: hiermee geeft u op dat Windows geen gegevens moet verzamelen van de livetegel wanneer gebruikers vanuit Microsoft Edge een site vastmaken aan het startmenu.
+-  **Lijst met favorieten**: hier vindt u het pad naar het favorietenbestand. Voorbeeld: http://contoso.com/favorites.html.
+-  **Wijzigingen aan Favorieten beperken**: stel dit in op **Blokkeren** om te voorkomen dat gebruikers items aan de lijst Favorieten toevoegen, of de lijst importeren, sorteren of bewerken. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 

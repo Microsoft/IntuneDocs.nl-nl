@@ -1,7 +1,7 @@
 ---
 title: Android-apps met beveiligingsbeleid voor apps
-titlesuffix: Azure portal
-description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid.
+titlesuffix: Microsoft Intune
+description: Informatie over wat u kunt verwachten van een Android-app met beveiligingsbeleid.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,50 +15,50 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee7977d8608327560b4df0c1bfbcc60ff150da9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-In dit onderwerp wordt de gebruikerservaring voor apps met app-beveiligingsbeleid beschreven. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, dus wanneer u apps gebruikt met uw werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
+Informatie over wat u kunt verwachten van een Android-app met beveiligingsbeleid. App-beveiligingsbeleid wordt alleen toegepast wanneer apps in de context van het werk worden gebruikt. Wanneer u bijvoorbeeld een app met een werkaccount opent, of wanneer u bestanden opent die zijn opgeslagen in de OneDrive-locatie van uw bedrijf.
 ##  <a name="accessing-apps"></a>Apps openen
 
-De bedrijfsportal-app is vereist voor alle apps die zijn gekoppeld aan app-beveiligingsbeleid op Android-apparaten.
+De bedrijfsportal-app is vereist voor alle apps op Android-apparaten die app-beveiligingsbeleid hebben.
 
-Op apparaten die niet zijn ingeschreven bij Intune moet de bedrijfsportal-app worden geïnstalleerd. De gebruikers hoeven de bedrijfsportal-app echter niet te starten of zich er bij aan te melden voordat ze de apps kunnen gebruiken die worden beheerd door app-beveiligingsbeleid.
-De bedrijfsportal-app wordt door Intune gebruikt om gegevens te delen op een veilige locatie, en is dus ook vereist als het apparaat niet is ingeschreven bij Intune.
+Installeer de bedrijfsportal installeren op alle apparaten die niet zijn ingeschreven bij Intune. Gebruikers hoeven zich niet aan te melden bij de bedrijfsportal-app om apps met app-beveiligingsbeleid te gebruiken.
+Met de bedrijfsportal-app kunt u op een veilige locatie gegevens delen. Het is daarom zelfs voor niet-ingeschreven apparaten een vereiste.
 
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Apps met ondersteuning voor meerdere identiteiten gebruiken
 
-App-beveiligingsbeleid wordt alleen toegepast wanneer de app wordt gebruikt in een werkcontext, dus de app werkt mogelijk anders afhankelijk van de context waarin u die gebruikt (werk of persoonlijk).
+App-beveiligingsbeleid wordt pas van kracht wanneer een gebruiker probeert toegang te krijgen tot werkgerelateerde gegevens.  Mogelijk ziet u ander gedrag als de gebruiker de app voor persoonlijk gebruik opent.
 
-Voor apps die meerdere identiteiten ondersteunen past Intune het app-beveiligingsbeleid alleen toe wanneer de eindgebruiker de app gebruikt in de werkcontext.  De gebruiker moet bijvoorbeeld een pincode invoeren bij het openen van bedrijfsgegevens.  Bij de **Outlook-app** wordt de gebruiker gevraagd een pincode in te voeren bij het starten van de app. Bij de **OneDrive-app** gebeurt dit wanneer de eindgebruiker het werkaccount invoert.  Bij **Microsoft Word**, **PowerPoint* en **Excel** gebeurt dit wanneer de eindgebruiker documenten opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
+Bepaalde apps ondersteunen meerdere identiteiten. In dit geval past Intune alleen app-beveiligingsbeleid toe wanneer een gebruiker zakelijke gegevens benadert.  Een gebruiker kan bijvoorbeeld om een pincode worden gevraagd.  In de **Outlook-app** wordt een prompt weergegeven wanneer een gebruiker de app start. In de **OneDrive-app** wordt een prompt weergegeven wanneer een gebruiker het werkaccount invoert.  In Microsoft **Word**, **PowerPoint** en **Excel** wordt een prompt weergegeven wanneer een gebruiker OneDrive-bedrijfsdocumenten opent.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
 
-Intune biedt alleen ondersteuning voor het implementeren van app-beveiligingsbeleid naar slechts één gebruikersaccount per apparaat.
+Intune biedt ondersteuning voor het implementeren van app-beveiligingsbeleid naar één gebruikersaccount per apparaat.
 
 * Afhankelijk van de app die u gebruikt, kan het zijn dat de tweede gebruiker op het apparaat wordt geblokkeerd. In alle gevallen wordt echter alleen de eerste gebruiker die het app-beveiligingsbeleid ontvangt, door het beleid beïnvloed.
 
-  * **Microsoft Word**, **Excel** en **PowerPoint** blokkeren een tweede gebruikersaccount niet, maar het tweede gebruikersaccount wordt niet beïnvloed door het app-beveiligingsbeleid.
+  * **Microsoft Word**, **Excel** en **PowerPoint** blokkeren toegang tot een extra gebruikersaccount niet. Het gebruikersaccount wordt echter niet beïnvloed door het app-beveiligingsbeleid.
 
-  * Voor de **OneDrive-app en Outlook-app** kunt u slechts één werkaccount gebruiken.  Het toevoegen van meerdere werkaccounts is op deze apps geblokkeerd.  U kunt wel een gebruiker verwijderen en een andere gebruiker op het apparaat toevoegen.
-
-
-* Als een apparaat meerdere gebruikersaccounts heeft voordat het app-beveiligingsbeleid wordt geïmplementeerd, wordt het account waarop het app-beveiligingsbeleid als eerste wordt geïmplementeerd, door het app-beveiligingsbeleid van Intune beheerd.
+  * Voor de **OneDrive-app en Outlook-app** kunt u slechts één werkaccount gebruiken.  Het toevoegen van meerdere werkaccounts is op deze apps geblokkeerd.  U kunt een gebruiker echter van een apparaat verwijderen en vervolgens een andere gebruiker toevoegen aan het apparaat.
 
 
-Lees het voorbeeldscenario hieronder om meer inzicht te krijgen in hoe meerdere gebruikersaccounts worden behandeld.
+* Voordat het app-beveiligingsbeleid wordt geïmplementeerd, kan een apparaat meerdere bestaande gebruikersaccounts hebben. In dit geval wordt het eerste account waarop het app-beveiligingsbeleid wordt geïmplementeerd, beheerd door het app-beveiligingsbeleid van Intune.
 
-Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om app-beveiligingsbeleid te implementeren. **Bedrijf X** implementeert app-beveiligingsbeleid **voordat** **bedrijf Y** dat doet. Het app-beveiligingsbeleid wordt toegepast op het account dat is gekoppeld aan **bedrijf X**, niet op het account dat is gekoppeld aan bedrijf Y. Als u wilt dat het gebruikersaccount dat is gekoppeld aan bedrijf Y, door het app-beveiligingsbeleid wordt beheerd, moet u het gebruikersaccount dat is gekoppeld aan bedrijf X, verwijderen.
+
+Lees het volgende voorbeeldscenario voor meer informatie over hoe Intune omgaat met meerdere gebruikersaccounts.
+
+Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om app-beveiligingsbeleid te implementeren. **Bedrijf X** implementeert app-beveiligingsbeleid **voordat** **bedrijf Y** dat doet. Het app-beveiligingsbeleid wordt toegepast op het account dat is gekoppeld aan **bedrijf X**, niet op het account dat is gekoppeld aan bedrijf Y. Als u wilt dat het gebruikersaccount van bedrijf Y door het app-beveiligingsbeleid wordt beheerd, moet gebruiker A het gebruikersaccount van bedrijf X verwijderen.
 ### <a name="adding-a-second-account"></a>Een tweede account toevoegen
 ####  <a name="android"></a>Android
-Als u een Android-apparaat gebruikt, ziet u mogelijk een blokkeringsbericht met instructies voor het verwijderen van het bestaande account en toevoegen van een nieuwe account.  Als u het bestaande account wilt verwijderen, gaat u naar **Instellingen &gt;Algemeen &gt; Toepassingsbeheer &gt;Bedrijfsportal en selecteert u Gegevens wissen**.
+U ziet mogelijk een prompt om het bestaande account te verwijderen en een nieuw account toe te voegen.  Als u het bestaande account wilt verwijderen, gaat u naar **Instellingen &gt;Algemeen &gt; Toepassingsbeheer &gt;Bedrijfsportal. Selecteer vervolgens "Gegevens wissen".**
 
 ![Schermafbeelding van het foutbericht en instructies om het account te verwijderen](./media/android-switch-user.png)
 
@@ -77,10 +77,10 @@ De volgende bestandstypen worden ondersteund:
 ------------
 |**pfile**|**tekst**|
 |----|----|
-|Pfile is een algemene 'wrapper'-indeling voor beveiligde bestanden waarmee de versleutelde inhoud en de Azure Information Protection-licenties worden ingekapseld en die kan worden gebruikt voor het beveiligen van elk bestandstype.|Tekstbestanden, zoals XML, CSV enzovoort, kunnen worden geopend voor weergave in de app, zelfs wanneer ze zijn beveiligd. Bestandstypen: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile is een algemene 'wrapper'-indeling voor beveiligde bestanden. Hiermee worden de versleutelde inhoud en de Azure Information Protection-licenties ingekapseld. Deze indeling kan worden gebruikt voor het beveiligen van elk bestandstype.|Tekstbestanden, zoals XML, CSV enzovoort, kunnen worden geopend voor weergave in de app, zelfs wanneer ze zijn beveiligd. Bestandstypen: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
 ## <a name="next-steps"></a>Volgende stappen
 [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-ios.md)
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 [App-beveiligingsbeleid maken en implementeren met Microsoft Intune](app-protection-policies.md)

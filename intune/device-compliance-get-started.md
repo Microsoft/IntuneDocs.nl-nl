@@ -1,31 +1,30 @@
 ---
-title: Intune apparaatnalevingsbeleid
-titleSuffix: Azure portal
+title: Nalevingsbeleid voor apparaten van Microsoft Intune
+titleSuffix: 
 description: Meer informatie over apparaatnaleving in Microsoft Intune
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Aan de slag met Intune-apparaatnalevingsbeleid
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Aan de slag met het apparaatnalevingsbeleid van Microsoft Intune
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>Wat is apparaatnaleving in Intune?
-
-Het Intune-apparaatnalevingsbeleid bevat de regels en instellingen waaraan een apparaat moet voldoen om ook te voldoen aan het beleid van Intune.
+Het Intune-apparaatnalevingsbeleid bevat de regels en instellingen waaraan een apparaat moet voldoen om te voldoen aan het beleid van Intune.
 
 Deze regels zijn onder meer de volgende:
 
@@ -43,7 +42,7 @@ Deze regels zijn onder meer de volgende:
 
 U kunt een apparaatnalevingsbeleid ook gebruiken om de naleving van uw apparaten te bewaken.
 
-### <a name="device-compliance-requirements"></a>Apparaatcompatibiliteitsvereisten
+## <a name="device-compliance-requirements"></a>Apparaatcompatibiliteitsvereisten
 
 Nalevingsvereisten zijn in feite regels, zoals het vereisen van een pincode voor het apparaat of versleuteling, die u kunt opgeven als vereist of niet vereist voor een nalevingsbeleid.
 

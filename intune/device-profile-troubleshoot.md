@@ -1,10 +1,9 @@
 ---
-title: Problemen met apparaatprofielen in Microsoft Intune oplossen
-titlesuffix: Azure portal
-description: Als u er niet uitkomt, raadpleegt u dit onderwerp om problemen met Intune-apparaatprofielen op te lossen.
+title: Problemen met apparaatprofielen oplossen in Microsoft Intune - Azure | Microsoft Docs
+description: Veelvoorkomende problemen met apparaatprofielen, waaronder profielwijzigingen die niet worden toegepast op enkele gebruikers of apparaten, hoe lang het duurt voordat nieuw beleid naar apparaten wordt gepusht, welke instellingen worden toegepast wanneer er meerdere beleidsregels zijn, wat er gebeurt wanneer een profiel wordt verwijderd en meer met betrekking tot Microsoft Intune in Azure Portal
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
@@ -15,26 +14,26 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6424be562401c672966c0f7f3fbe145c19182299
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Problemen met apparaatprofielen in Microsoft Intune oplossen
-
+# <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor apparaatprofielen in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-De informatie in dit onderwerp kan worden gebruikt bij het oplossen van algemene problemen rond Intune-apparaatprofielen.
+Los algemene problemen met Intune-apparaatprofielen op.
 
 ## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Waarom krijgt een gebruiker een nieuw profiel als een wachtwoord of wachtwoordzin wordt gewijzigd voor een bestaand Wi-Fi-profiel? 
-Wanneer u een zakelijk Wi-Fi-profiel maakt, het profiel voor een groep implementeert, het wachtwoord wijzigt en het profiel vervolgens opslaat, zou u verwachten dat de gebruiker het nieuwe profiel krijgt. Dit is echter niet altijd het geval. 
+U maakt een zakelijk Wi-Fi-profiel maakt, implementeert het profiel voor een groep, wijzigt het wachtwoord en slaat het profiel op. Wanneer het profiel wordt gewijzigd, ontvangen sommige gebruikers het nieuwe profiel mogelijk niet.
 
-U kunt dit probleem beperken door ervoor te zorgen dat u een Wi-Fi voor gasten hebt ingesteld, zodat de gebruiker dit Wi-Fi kan gebruiken als hij geen toegang heeft tot het zakelijke Wi-Fi. De instelling voor automatische verbinding moet worden ingeschakeld. Het Wi-Fi-profiel voor gasten moet voor alle gebruikers worden geïmplementeerd.
+Voor het oplossen van dit probleem stelt u een Wi-Fi-profiel voor gasten in. Als het zakelijke Wi-Fi-profiel niet naar behoren werkt, kunnen gebruikers verbinding maken met het profiel voor gasten. Zorg ervoor dat u alle instellingen voor automatisch verbinden inschakelt. Implementeer het Wi-Fi-profiel voor gasten voor alle gebruikers.
 
-Er zijn enkele aanvullende aanbevolen procedures die u kunt uitvoeren:
-- Aangezien het Wi-Fi-netwerk waarmee u verbinding maakt een wachtwoord of wachtwoordzin gebruikt, moet u ervoor zorgen dat u direct verbinding met de Wi-Fi-router kunt maken. U kunt dit testen met een iOS-apparaat.
+Enkele extra aanbevelingen:  
+
+- Aangezien voor het Wi-Fi-netwerk waarmee u verbinding maakt een wachtwoord of wachtwoordzin wordt gebruikt, moet u ervoor zorgen dat u direct verbinding met de Wi-Fi-router kunt maken. U kunt dit testen met een iOS-apparaat.
 - Als u bent verbonden met het Wi-Fi-eindpunt (de Wi-Fi-router), noteert u de SSID en de referentie die wordt gebruikt (dit is het wachtwoord of de wachtwoordzin).
 - Voer de SSID en referentie (wachtwoord of wachtwoordzin) in het veld vooraf gedeelde sleutel in. 
 - Stel deze instelling in voor een testgroep met een beperkt aantal gebruikers, bij voorkeur het liefst alleen voor het IT-team. 
@@ -43,39 +42,39 @@ Er zijn enkele aanvullende aanbevolen procedures die u kunt uitvoeren:
 - Implementeer deze instelling naar grotere groepen en uiteindelijk naar alle eindgebruikers in uw organisatie. 
 
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Hoe lang duurt het voor mobiele apparaten een beleid of apps hebben ontvangen nadat deze zijn toegewezen?
-Wanneer er een beleid of een app wordt toegewezen, probeert Intune het apparaat onmiddellijk te melden dat het moet inchecken bij de Intune-service. Dit vindt meestal binnen vijf minuten plaats.
+Wanneer er een beleid of een app wordt toegewezen, probeert Intune het apparaat onmiddellijk te melden dat het moet inchecken bij de Intune-service. De melding wordt meestal binnen vijf minuten gedaan.
 
 Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald nadat de eerste melding daarover is verzonden, doet Intune nog drie pogingen. Als het apparaat offline is (bijvoorbeeld omdat het is uitgeschakeld of niet is verbonden met een netwerk), kan het geen meldingen ontvangen. In dat geval ontvangt het apparaat het beleid bij de volgende geplande controle bij de Intune-service en wel als volgt:
 
-- iOS en macOS: om de zes uur.
-- Android: om de acht uur.
-- Windows Phone: om de acht uur.
-- Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de acht uur.
+- iOS en macOS: om de zes uur
+- Android: om de acht uur
+- Windows Phone: om de acht uur
+- Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de acht uur
 
-Als het apparaat zojuist is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
+Als het apparaat recent is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
 
-- iOS en macOS: om de 15 minuten gedurende zes uur en daarna om de zes uur.
-- Android: om de drie minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur.
-- Windows Phone: om de vijf minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur.
-- Windows-computers die als apparaten zijn ingeschreven: om de drie minuten gedurende 30 minuten en vervolgens om de acht uur.
+- iOS en macOS: om de 15 minuten gedurende zes uur en daarna om de zes uur
+- Android: om de drie minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur
+- Windows Phone: om de vijf minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur
+- Windows-computers die als apparaten zijn ingeschreven: om de drie minuten gedurende 30 minuten en vervolgens om de acht uur
 
-Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat onmiddellijk synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
+Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
-Voor apparaten zonder gebruikersaffiniteit kan de synchronisatiefrequentie die direct volgt op de inschrijving variëren van een aantal uur tot een of meer dagen. Intune verzendt aanvragen met verschillende intervallen om een apparaat in te checken bij de service. Het hangt er nog altijd van af of het apparaat daadwerkelijk wordt ingecheckt. Afhankelijk van het type apparaatinschrijving en de beleidsregels en profielen die zijn toegewezen aan een apparaat, kan niet worden voorspeld hoe lang het duurt voordat het inchecken van een apparaat is voltooid na de initiële inschrijving. Echter, wanneer het apparaat is ingeschreven en alle initiële beleidsregels zijn toegepast, moet het apparaat om de zes uur controleren op nieuwe beleidsregels.
+Voor apparaten zonder gebruikersaffiniteit kan de synchronisatiefrequentie die direct volgt op de inschrijving variëren van een aantal uur tot een of meer dagen. Intune verzendt aanvragen met verschillende intervallen om een apparaat in te checken bij de service. Het is echter nog steeds aan het apparaat om in te checken. Afhankelijk van het type apparaatinschrijving en de beleidsregels en profielen die zijn toegewezen aan een apparaat, kan niet worden voorspeld hoe lang het duurt voordat het inchecken van een apparaat is voltooid na de initiële inschrijving. Echter, wanneer het apparaat is ingeschreven en alle initiële beleidsregels zijn toegepast, controleert het apparaat meestal om de zes uur op nieuwe beleidsregels.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
-Apparaten voeren een controle uit in Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke controle. Wanneer u een actie specifiek op een apparaat of gebruiker richt, zoals wissen, vergrendelen, wachtwoord opnieuw instellen, app toewijzen, profiel toewijzen (Wi-Fi, VPN, e-mail enzovoort) of beleidsregels toewijzen, probeert Intune het apparaat onmiddellijk te melden dat het moet inchecken bij de Intune-service om deze updates te ontvangen.
+Apparaten checken in bij Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande periodieke check-in. Wanneer u een actie op een apparaat of gebruiker richt, zoals wissen, vergrendelen, wachtwoord opnieuw instellen, app toewijzen, profiel toewijzen of beleidsregels toewijzen, meldt Intune het onmiddellijk aan het apparaat dat het moet inchecken bij de Intune-service om deze updates te ontvangen.
 
 Andere wijzigingen zoals het wijzigen van de contactgegevens in de bedrijfsportal zorgen niet voor een onmiddellijke melding aan apparaten.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Als er meerdere beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
-Wanneer er twee of meer beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, vindt de beoordeling van welke instelling moet worden toegepast plaats op het niveau van de individuele instelling:
+Wanneer er twee of meer beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, wordt per instelling bekeken welke instelling van toepassing is:
 
--   Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen.
+-   Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen
 
--   De strengste nalevingsbeleidsinstelling wordt toegepast als dit beleid wordt vergeleken met dezelfde instelling in een ander nalevingsbeleid.
+-   Als een nalevingsbeleidsregel wordt vergeleken met diezelfde instelling in een ander nalevingsbeleid, wordt de strengste nalevingsbeleidsinstelling wordt toegepast.
 
--   Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in Azure Portal. U moet dergelijke conflicten handmatig oplossen.
+-   Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in Azure Portal. In dit scenario moeten deze conflicten handmatig worden opgelost.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Wat gebeurt er wanneer beleidsregels voor app-beveiliging met elkaar conflicteren? Welke regel wordt toegepast op de app?
 Conflictwaarden zijn de meest beperkende instellingen die beschikbaar zijn in app-beveiligingsbeleid, behalve cijferinvoervelden (zoals aantal pincodepogingen voorafgaand aan opnieuw instellen). De cijferinvoervelden worden op hetzelfde ingesteld als de waarden, alsof u een MAM-beleid hebt gemaakt in de console met behulp van de aanbevolen instellingenoptie.
@@ -87,17 +86,15 @@ Als er een profiel is toegewezen aan de app en van kracht is, en er wordt vervol
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>Wat gebeurt er als aangepaste iOS-beleidsregels conflicteren?
 Intune beoordeelt de payload van Apple-configuratiebestanden of een aangepast profiel voor de Open Mobile Alliance Uniform Resource Identifier (OMA-URI) niet. Het fungeert alleen als bezorgingsmechanisme.
 
-Bij het toewijzen van een aangepast profiel zorgt u dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als er bij een aangepast profiel sprake is van conflicterende instellingen, worden instellingen in willekeurige volgorde toegepast.
+Bij het toewijzen van een aangepast profiel zorgt u dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als een aangepast profiel en de instellingen niet goed op elkaar aansluiten, worden de instellingen willekeurig toegepast.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Wat gebeurt er wanneer een profiel wordt verwijderd of niet langer van toepassing is?
-Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraan een profiel was toegewezen, worden het profiel en de instellingen van het apparaat verwijderd volgens de volgende lijsten.
-
-### <a name="enrolled-devices"></a>Ingeschreven apparaten
+Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraan een profiel was toegewezen, worden het profiel en de instellingen van het apparaat verwijderd volgens de volgende lijsten:
 
 - Wi-Fi-, VPN-, certificaat- en e-mailprofielen: deze profielen worden verwijderd van alle ondersteunde ingeschreven apparaten.
-- Alle andere profieltypen:
-    - **Windows- en Android-apparaten**: de instellingen worden niet van het apparaat verwijderd.
-    - **Windows Phone 8.1-apparaten**: de volgende instellingen worden verwijderd:
+- Alle andere profieltypen:  
+    - **Windows- en Android-apparaten**: de instellingen worden niet van het apparaat verwijderd
+    - **Windows Phone 8.1-apparaten**: de volgende instellingen worden verwijderd:  
         - Wachtwoord vereist voor het ontgrendelen van mobiele apparaten
         - Eenvoudige wachtwoorden toestaan
         - Minimale wachtwoordlengte
@@ -130,13 +127,11 @@ Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraa
         - Automatische synchronisatie tijdens roamen toestaan
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Ik heb een beperkingsprofiel voor apparaten gewijzigd, maar de wijzigingen zijn niet doorgevoerd
-Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld een **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende profiel is al toegepast op het apparaat.
+Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld het **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende profiel is al toegepast op het apparaat.
 
-Afhankelijk van het apparaatplatform moet u mogelijk het beveiligingsbeleid opnieuw instellen als u de beveiliging van het profiel naar beneden wilt bijstellen.
-Veeg bijvoorbeeld in Windows op het bureaublad vanaf rechts over het scherm om de balk **Charms** te openen en kies **Instellingen** &gt; **Configuratiescherm**. Selecteer de applet **Gebruikersaccounts** .
-In het navigatiemenu aan de linkerkant vindt u onderaan een koppeling **Beveiligingsbeleid opnieuw instellen**. Kies deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
-Andere MDM-apparaten, zoals Android, Windows Phone 8.1 en hoger of iOS moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden geregistreerd voordat u een minder beperkend profiel kunt toepassen.
+Afhankelijk van het apparaatplatform moet u het beveiligingsbeleid opnieuw instellen als u de beveiliging van het profiel naar beneden wilt bijstellen. Veeg bijvoorbeeld in Windows op het bureaublad vanaf rechts over het scherm om **Instellingen** > **Configuratiescherm** te selecteren. Selecteer de applet **Gebruikersaccounts** .
 
+In het navigatiemenu aan de linkerkant vindt u onderaan de koppeling **Beveiligingsbeleid opnieuw instellen**. Selecteer deze koppeling en kies vervolgens **Beleid opnieuw instellen**. Andere MDM-apparaten, bijvoorbeeld met Android, Windows Phone 8.1 en hoger of iOS, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden ingeschreven voordat u een minder beperkend profiel kunt toepassen.
 
-### <a name="next-steps"></a>Volgende stappen
-Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](get-support.md).
+## <a name="next-steps"></a>Volgende stappen
+Extra hulp nodig? Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md).

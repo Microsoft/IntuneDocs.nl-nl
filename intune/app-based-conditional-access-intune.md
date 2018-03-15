@@ -1,9 +1,9 @@
 ---
 title: Op apps gebaseerde voorwaardelijke toegang met Intune
-description: Een overzicht van de concepten over de werking van op apps gebaseerde voorwaardelijke toegang met Intune.
+description: Meer informatie over hoe op apps gebaseerde voorwaardelijke toegang werkt met Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Op apps gebaseerde voorwaardelijke toegang met Intune
 
@@ -54,7 +54,7 @@ In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toege
 > [!NOTE]
 > De onderstaande stroomdiagramstructuur kan worden gebruikt voor andere beheerde apps.
 
-![Stroomdiagram van op apps gebaseerde voorwaardelijke toegang met Intune](./media/ca-intune-common-ways-3.png)
+![Op apps gebaseerde voorwaardelijke toegang geïllustreerd in een stroomdiagram](./media/ca-intune-common-ways-3.png)
 
 1.  De gebruiker probeert te verifiëren met Azure AD vanuit de Outlook-app.
 

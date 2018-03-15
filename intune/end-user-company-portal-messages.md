@@ -1,6 +1,7 @@
 ---
-title: Bedrijfsportal-berichten die gebruikers mogelijk te zien krijgen in Android
-description: Biedt een beschrijving van de bedrijfsportal-appberichten die Intune-eindgebruikers mogelijk te zien krijgen.
+title: Bedrijfsportal-berichten die gebruikers mogelijk te zien krijgen op apparaten
+titlesuffix: Microsoft Intune
+description: Kom meer te weten over de verschillende berichten die eindgebruikers te zien kunnen krijgen in de bedrijfsportal.
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -13,11 +14,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 58468a81d0ec3e7bfc051a6edc6a09ef1c5e62a2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 > De volgende informatie is alleen van toepassing op apparaten met Android 6.0 en hoger.
 
-Op verschillende momenten in het inschrijvingsproces krijgen eindgebruikers twee verschillende berichten te zien waardoor ze zich zorgen zouden kunnen gaan maken.
+Kom meer te weten over de verschillende app-berichten die eindgebruikers te zien kunnen krijgen in de bedrijfsportal. Deze app-berichten worden meestal op verschillende momenten in het inschrijvingsproces weergegeven. Ontdek waar de berichten worden weergegeven, wat de berichten betekenen en wat er gebeurt als gebruikers toegang weigeren. Kom daarnaast te weten hoe u de berichten het beste kunt uitleggen aan gebruikers.
 
 - __De bedrijfsportal toestaan telefoongesprekken uit te voeren en te beheren?__
 - __De bedrijfsportal toegang verlenen tot foto's, media en bestanden op uw apparaat?__
@@ -47,7 +48,7 @@ Als u de pagina **Hardware** wilt weergeven, gaat u naar **Groepen** > **Alle mo
 ### <a name="what-happens-if-users-deny-access"></a>Wat er gebeurt als gebruikers toegang weigeren
 Als gebruikers de toegang weigeren, kunnen ze de bedrijfsportal-app wel nog gebruiken en hun apparaat inschrijven. Het telefoonnummer en het IMEI-nummer worden echter leeg weergegeven op de pagina __Hardware__ in de beheerconsole. De tweede keer dat gebruikers zich aanmelden bij de bedrijfsportal-app nadat ze toegang hebben geweigerd, wordt in het bericht een selectievakje bij **Niet opnieuw vragen** weergegeven dat gebruikers kunnen inschakelen zodat het bericht nooit meer wordt weergegeven.
 
-Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht de volgende keer dat gebruikers zich bij de bedrijfsportal-app aanmelden, weergegeven na de registratie.
+Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht de volgende keer dat gebruikers zich bij de bedrijfsportal-app aanmelden, weergegeven na de inschrijving.
 
 Als gebruikers later alsnog besluiten om toegang te verlenen, kunnen ze naar **Instellingen** > **Apps** > **Bedrijfsportal** > **Machtigingen** > **Telefoon** gaan en de optie inschakelen.
 
@@ -66,7 +67,7 @@ Wanneer gebruikers hiermee akkoord gaan, stemmen ze ermee in dat hun werkaccount
 > **Microsoft heeft nooit toegang tot contactpersonen.** De berichttekst wordt beheerd door Google en kan niet worden gewijzigd.
 
 ### <a name="what-happens-if-users-deny-access"></a>Wat er gebeurt als gebruikers toegang weigeren
-Als een gebruiker geen toestemming geeft, wordt het apparaat niet bij Intune geregistreerd en kan het niet worden beheerd. De tweede keer dat gebruikers zich aanmelden bij de bedrijfsportal-app nadat ze toegang hebben geweigerd, wordt in het bericht een selectievakje bij **Niet opnieuw vragen** weergegeven dat gebruikers kunnen inschakelen zodat het bericht nooit meer wordt weergegeven.
+Als een gebruiker geen toestemming geeft, wordt het apparaat niet bij Intune ingeschreven en kan het niet worden beheerd. De tweede keer dat gebruikers zich aanmelden bij de bedrijfsportal-app nadat ze toegang hebben geweigerd, wordt in het bericht een selectievakje bij **Niet opnieuw vragen** weergegeven dat gebruikers kunnen inschakelen zodat het bericht nooit meer wordt weergegeven.
 
 Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht de volgende keer dat gebruikers zich bij de bedrijfsportal-app aanmelden, weergegeven na de registratie.
 
@@ -81,7 +82,7 @@ Stuur uw gebruikers naar [Uw Android-apparaat inschrijven bij Intune](/intune-us
 Het bericht **De bedrijfsportal toegang verlenen tot foto's, media en bestanden op uw apparaat?** wordt weergegeven wanneer gebruikers op **Gegevens verzenden** tikken om hun logboeken te verzenden naar hun IT-beheerder.
 
 ### <a name="what-it-means"></a>Wat het betekent
-Door hiermee akkoord te gaan, staan gebruikers toe dat gegevenslogboeken worden geschreven naar de SD-geheugenkaart van het apparaat en dat deze logboeken worden verzonden via een USB-kabel.   
+Door hiermee akkoord te gaan, staan gebruikers toe dat gegevenslogboeken worden geschreven naar de SD-geheugenkaart van het apparaat. Hierdoor kunnen deze logboeken ook worden verzonden via een USB-kabel.   
 
 > [!NOTE]
 > **De bedrijfsportal-app gebruikt nooit foto's, media en bestanden van gebruikers.** De berichttekst wordt beheerd door Google en kan niet worden gewijzigd.
@@ -89,7 +90,7 @@ Door hiermee akkoord te gaan, staan gebruikers toe dat gegevenslogboeken worden 
 ### <a name="what-happens-if-users-deny-access"></a>Wat er gebeurt als gebruikers toegang weigeren
 Als gebruikers toegang weigeren, kunnen ze nog steeds gegevenslogboeken via e-mail verzenden, maar de logboeken worden niet gekopieerd naar de SD-kaart van het apparaat.
 
-De tweede keer dat gebruikers zich aanmelden bij de bedrijfsportal-app nadat ze toegang hebben geweigerd, wordt in het bericht een selectievakje bij **Niet opnieuw vragen** weergegeven dat gebruikers kunnen inschakelen zodat het bericht nooit meer wordt weergegeven. Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht de volgende keer dat ze logboeken verzenden, weergegeven. Als gebruikers later alsnog besluiten om toegang te verlenen, kunnen ze naar **Instellingen** > **Apps** > **Bedrijfsportal** > **Machtigingen** > **Opslag** gaan en de machtiging instellen.
+De tweede keer dat gebruikers zich aanmelden bij de bedrijfsportal-app nadat ze toegang hebben geweigerd, wordt in het bericht een selectievakje bij **Niet opnieuw vragen** weergegeven dat gebruikers kunnen inschakelen zodat het bericht nooit meer wordt weergegeven. Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht de volgende keer dat ze logboeken verzenden, weergegeven. Als gebruikers later echter alsnog besluiten om toegang te verlenen, kunnen ze naar **Instellingen** > **Apps** > **Bedrijfsportal** > **Machtigingen** > **Opslag** gaan en de machtiging instellen.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>Dit uitleggen aan uw gebruikers
@@ -101,7 +102,7 @@ Stuur uw gebruikers naar [Logboeken via e-mail naar de IT-beheerder verzenden](/
 Als u de bedrijfsportal-app niet hebt toegevoegd aan de lijst **Toegestane apps** of **Vrijgestelde apps**, zullen aanmeldpogingen van gebruikers mislukken. Het volgende bericht wordt weergegeven:
 
 > **De ondersteuningsafdeling van uw bedrijf moet u toegang geven tot de bedrijfsbronnen**  
-> Uw bedrijf gebruikt Windows Information Protection-beleid om uw apparaat te beveiligen. De ondersteuningsafdeling van uw bedrijf moet ervoor zorgen dat de bedrijfsportal toegang heeft tot dat beleid.
+> Uw bedrijf gebruikt Windows Information Protection-beleid om uw apparaat te beveiligen. De ondersteuningsafdeling van uw bedrijf moet ervoor zorgen dat de bedrijfsportal toegang heeft tot de resources.
 
 ### <a name="what-it-means"></a>Wat het betekent
 

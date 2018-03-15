@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,17 +17,17 @@ ROBOTS:
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e40f3f10119366f8678b478f0acb2ece5d129684
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 62cc9e1b939ac68768f21b00b4390956c6ccb857
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Office 365 installeren op uw Windows 10-apparaat
 
 U kunt het Office-pakket op verschillende manieren op uw Windows 10-apparaat installeren. Afhankelijk van de grootte van uw bedrijf kunnen er mogelijk meerdere versies van Office worden gedownload van de bedrijfsportal.
 
-<!--*image of company portal app store with conflicting versions of office side by side*-->
+![De bedrijfsportal-app voor Windows 10 met twee versies van Office naast elkaar.](./media/multiple-office-installs-cp-win10.png)
 
 Als uw bedrijf Office beschikbaar stelt, moet u slechts één versie van Office installeren. Als u beide versies probeert te installeren, verwijdert u de versie die u als eerste hebt geïnstalleerd.
 

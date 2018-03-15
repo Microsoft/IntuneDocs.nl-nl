@@ -1,7 +1,7 @@
 ---
-title: App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving | Microsoft Docs
-titlesuffix: Azure portal
-description: Informatie over app-configuratiebeleidsregels gebruiken voor beheerde apps zonder apparaatinschrijving.
+title: Configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
+titlesuffix: Microsoft Intune
+description: Meer informatie over het configureren van beleidsregels voor beheerde apps zonder apparaatinschrijving.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 384804029ecbf403f526144136dc187212e6cf4a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 02/09/2018
 
 U kunt app-configuratiebeleidsregels gebruiken voor beheerde apps die de Intune App SDK ondersteunen, zelfs op apparaten die niet zijn ingeschreven. 
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies de workload **Mobiele apps**.
 4. Kies **App-configuratiebeleidsregels** in de groep **Beheren** en kies vervolgens **Toevoegen**.
 5. Stel de volgende details in:

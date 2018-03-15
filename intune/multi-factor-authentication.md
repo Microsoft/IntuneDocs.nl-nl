@@ -1,7 +1,7 @@
 ---
-title: Multi-Factor Authentication voor Intune-apparaatinschrijving
-titlesuffix: Azure portal
-description: Hoe u in Azure AD Multi-Factor Authentication vereist voor apparaatregistratie.
+title: Multi-Factor Authentication vereisen voor Intune-apparaatinschrijving
+titlesuffix: Microsoft Intune
+description: Hoe u in Azure AD Multi-Factor Authentication vereist voor Intune-apparaatinschrijving.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: 27135f0b698f5a321bd14b70f0b346a91fc0ab1e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4dbb1b94fa7e2ebc5ce31ae00c3cb893f9e1470e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Meervoudige verificatie voor apparaatinschrijvingen in Intune
+# <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication vereisen voor Intune-apparaatinschrijvingen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

@@ -1,11 +1,12 @@
 ---
 title: Voordelen van de Intune App SDK
+titlesuffix: Microsoft Intune
 description: De Microsoft Intune App SDK is beschikbaar voor zowel het iOS-platform als het Android-platform en maakt Mobile App Management-functies mogelijk met Microsoft Intune.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75965145c38e94516846937e4dd408730d3ce10f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Overzicht van de Intune App SDK
-Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt onze API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
+Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt de API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
 
 Als u uw app hebt ingeschakeld voor beleid voor app-beveiliging, kunnen IT-beheerders deze beleidsregels implementeren om de bedrijfsgegevens in de app te beveiligen.
 
@@ -42,7 +43,7 @@ IT-beheerders kunnen beleid afdwingen dat ervoor zorgt dat de gegevens die door 
 IT-beheerders kunnen op afstand bedrijfsgegevens wissen uit een met Intune beheerde app. Deze functie is op de identiteit gebaseerd en verwijdert alleen bestanden die betrekking hebben op de zakelijke identiteit van de eindgebruiker. Hiertoe vereist de functie deelname van de app. De app aangeven voor welke identiteit het wissen moet plaatsvinden op basis van de instellingen van de gebruiker. Als dergelijke instellingen niet door de gebruiker in de app zijn opgegeven, is het standaardgedrag om de toepassingsmap te wissen en de eindgebruiker te informeren dat de toegang is verwijderd.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Het gebruik van een beheerde browser afdwingen
-IT-beheerders kunnen afdwingen dat webkoppelingen in de app worden geopend met de [Intune Managed Browser-app](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Dit zorgt ervoor dat de koppelingen die worden weergegeven in een bedrijfsomgeving, binnen het domein van door Intune beheerde apps worden gehouden.
+IT-beheerders kunnen afdwingen dat webkoppelingen in de app worden geopend met de [Intune Managed Browser-app](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Deze functionaliteit zorgt ervoor dat de koppelingen die worden weergegeven in een bedrijfsomgeving binnen het domein van door Intune beheerde apps worden gehouden.
 
 ### <a name="enforce-a-pin-policy"></a>Een pincodebeleid afdwingen
 IT-beheerders kunnen vereisen dat eindgebruikers een pincode invoeren om bedrijfsgegevens in de app te openen. Dit zorgt ervoor dat de persoon die de app gebruikt, dezelfde is als degene die zich aanvankelijk heeft aangemeld met een werk- of schoolaccount. Wanneer eindgebruikers hun pincode configureren, gebruikt Intune App SDK Azure Active Directory om te controleren of de referenties van eindgebruikers overeenkomen met het ingeschreven Intune account.

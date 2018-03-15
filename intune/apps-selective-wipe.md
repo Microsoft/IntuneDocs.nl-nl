@@ -1,12 +1,12 @@
 ---
 title: Alleen zakelijke gegevens wissen uit apps
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: Meer informatie over het selectief wissen van apps met Microsoft Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a9690e75e0d0dced9ad30951b0178685813eeae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Alleen zakelijke gegevens wissen uit door Intune beheerde apps
 
@@ -39,21 +39,23 @@ Als u alleen de gegevens van de zakelijke apps wilt verwijderen, maakt u een ver
 
 1.  Meld u aan bij [Azure Portal](https://portal.azure.com).
 
-2.  Kies **Meer services**, typ **Intune** in het filtertekstvak en selecteer **Intune**. De blade Intune wordt geopend. Kies de blade **Mobiele apps**.
+2.  Kies **Meer services**, typ **Intune** in het filtertekstvak en selecteer **Intune**. De Intune-blade wordt geopend. Selecteer **Mobiele apps**.
 
     ![Schermopname van de Microsoft Intune-blade](./media/apps-selective-wipe01.png)
 
 3.  Kies op de **blade Mobiele apps** de optie **App selectief wissen**.
 
-4.  Kies **Nieuw verzoek om te wissen**. Hiermee opent u het tabblad **Nieuw verzoek om te wissen**.
+4.  Kies **Nieuw verzoek om te wissen**. Hiermee opent u het deelvenster **Nieuw verzoek om te wissen**.
 
-    ![Schermafbeelding van tabblad met een nieuwe wisaanvraag](./media/AzurePortal_MAM_NewWipeRequest.png)
+    ![Schermafbeelding van deelvenster met een nieuwe wisaanvraag](./media/AzurePortal_MAM_NewWipeRequest.png)
 
 5.  Kies **Gebruiker** om het tabblad **Gebruiker** te openen en selecteer vervolgens de gebruiker van wie u de app-gegevens wilt wissen.
 
-6.  Kies vervolgens **Apparaat** op de blade **Nieuw verzoek om te wissen**. Hiermee opent u de blade **Apparaat selecteren** waarop een lijst wordt weergegeven met alle apparaten die zijn gekoppeld aan de geselecteerde gebruiker. De blade bevat ook twee kolommen, de apparaatnaam (een beschrijvende naam die door de gebruiker is gedefinieerd) en het apparaattype (het apparaatplatform). Selecteer het apparaat dat u wilt wissen.
+6.  Kies vervolgens **Apparaat** op de blade **Nieuw verzoek om te wissen**. Met deze actie opent u de blade **Apparaat selecteren**. Hierop staan alle apparaten die aan de geselecteerde gebruiker zijn gekoppeld. In dit deelvenster staat ook de naam van het apparaat, wat een beschrijvende naam is die is gedefinieerd door de gebruiker, en het apparaattype, dat het apparaatplatform aangeeft. 
 
-7.  U bent nu terug op het tabblad **Nieuw verzoek om te wissen**. Kies **Ok** om een wisaanvraag te maken.
+7. Selecteer het apparaat dat u wilt wissen in de lijst.
+
+8.  U bent nu terug op het tabblad **Nieuw verzoek om te wissen**. Kies **Ok** om een wisaanvraag te maken.
 
 De service maakt en volgt voor elke beveiligde app op het apparaat een afzonderlijk verzoek om te wissen en de gebruiker die is gekoppeld aan het verzoek om te wissen.
 
@@ -63,7 +65,7 @@ U kunt een verkort rapport weergeven met de algemene status van het verzoek om t
 
 1.  Op de blade **Mobiele apps - App selectief wissen** ziet u een lijst met uw verzoeken, gegroepeerd per gebruiker. Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker. De status geeft aan of een verzoek om te wissen **in behandeling**, **mislukt**of **geslaagd**is.
 
-    ![Schermafbeelding van de status van de aanvraag voor wissen in de blade App selectief wissen](./media/wipe-request-status-1.png)
+    ![Schermafbeelding van de status van de aanvraag voor wissen in het deelvenster App selectief wissen](./media/wipe-request-status-1.png)
 
 U ziet ook de apparaatnaam en het apparaattype, wat nuttig kan zijn bij het lezen van de rapporten.
 
@@ -72,13 +74,13 @@ U ziet ook de apparaatnaam en het apparaattype, wat nuttig kan zijn bij het leze
 
 ## <a name="delete-a-wipe-request"></a>Een verzoek om te wissen verwijderen
 
-Wisverzoeken die nog in behandeling zijn, worden weergegeven totdat u ze handmatig verwijdert.  Handmatig een verzoek om te wissen verwijderen:
+Wisverzoeken die nog in behandeling zijn, worden weergegeven totdat u ze handmatig verwijdert. Handmatig een verzoek om te wissen verwijderen:
 
-1.  Op de blade **Mobiele apps - App selectief wissen**.
+1.  Open de blade **Mobiele apps - App selectief wissen**.
 
 2.  Klik met de rechtermuisknop op de aanvraag voor wissen die u wilt verwijderen, en kies vervolgens **Aanvraag voor wissen verwijderen**.
 
-    ![Schermafbeelding van de lijst met aanvragen voor wissen in de blade App selectief wissen](./media/delete-wipe-request.png)
+    ![Schermafbeelding van de lijst met aanvragen voor wissen in het deelvenster App selectief wissen](./media/delete-wipe-request.png)
 
 3.  U wordt gevraagd om het verwijderen te bevestigen. Kies **Ja** of **Nee** en klik vervolgens op **OK**.
 

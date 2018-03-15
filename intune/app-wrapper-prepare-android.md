@@ -1,8 +1,8 @@
 ---
 title: Android-apps verpakken met de Intune App Wrapping Tool
-description: In dit artikel vindt u meer informatie over het verpakken van uw Android-apps zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
+description: Meer informatie over hoe uw Android-apps verpakt zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/05/2018
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -171,7 +171,7 @@ Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligi
 > [!NOTE] 
 > Dit zorgt ervoor dat de gebruiker de bedrijfsportal op het apparaat moet downloaden en de standaardstroom voor inschrijving moet voltooien vóór gebruik.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android](app-sdk-android.md)

@@ -1,30 +1,34 @@
 ---
-title: Intune-apparaatbeperkingsinstellingen voor Android for Work
-titlesuffix: Azure portal
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op Android for Work-apparaten.
+title: Microsoft Intune-apparaatbeperkingsinstellingen voor Android for Work
+titlesuffix: 
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op apparaten met Android for Work.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Android for Work-apparaatbeperkingsinstellingen in Microsoft Intune
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Android for Work-apparaatbeperkingsinstellingen in Microsoft Intune
+
+In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Werkprofielinstellingen
+
+### <a name="general-settings"></a>Algemene instellingen
+
 -   **Kopiëren en plakken tussen werkprofielen en persoonlijke profielen**: hiermee beheert u het kopiëren en plakken tussen zakelijke apps en persoonlijke apps. Kies **Blokkeren** om blokkeren in te schakelen. Kies **Niet geconfigureerd** om blokkeren uit te schakelen.
 - **Gegevens delen tussen werkprofiel en persoonlijk profiel**: gebruik deze instelling om te bepalen of apps in het werkprofiel gegevens mogen delen met apps in het persoonlijke profiel. Met deze instelling worden de deelacties binnen toepassingen bepaald (bijvoorbeeld de optie **Delen…** in de Chrome-browser-app). De instelling is niet van toepassing voor het klembordgedrag voor kopiëren en plakken. In tegenstelling tot de [beleidsinstellingen voor de beveiliging van apps](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) worden de instellingen voor apparaatbeperkingen beheerd via de Intune-portal en wordt de Android for Work-profielpartitie gebruikt om beheerde apps te isoleren. U kunt kiezen uit:
     - **Delen buiten grenzen toestaan**: dit is de standaardinstelling voor het delen van gegevens van het apparaat en deze is afhankelijk van de versie van Android die wordt uitgevoerd. Delen van het persoonlijke profiel naar het werkprofiel is standaard toegestaan. Delen van het werkprofiel naar het persoonlijke profiel is standaard geblokkeerd. Met deze instelling wordt voorkomen dat er gegevens worden gedeeld van het werkprofiel met het persoonlijke profiel. Google biedt geen een manier om het delen van gegevens van het persoonlijke profiel naar het werkprofiel te blokkeren op apparaten met versie 6.0 of later.   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **Automatisch weigeren**
 
     De verleningsstatus voor machtigingen kan verder worden gedefinieerd voor specifieke apps door een app-configuratiebeleid voor een individuele app te definiëren (onder **Mobiele apps** > **App-configuratiebeleid**).
+
+- **Accounts toevoegen en verwijderen**
+
+   Hiermee voorkomt u dat eindgebruikers handmatig accounts in het werkprofiel kunnen toevoegen of uit het werkprofiel kunnen verwijderen.
+
+   Als u de Gmail-app bijvoorbeeld implementeert in een Android for Work-profiel, kunt u verhinderen dat eindgebruikers accounts toevoegen aan of verwijderen uit dit werkprofiel.
 
 ### <a name="work-profile-password"></a>Werkprofielwachtwoord
 - **Werkprofielwachtwoord vereisen**: (Android 7.0 en later met het werkprofiel ingeschakeld) definieer een wachtwoordcodebeleid dat alleen van toepassin is op de apps in het werkprofiel. De eindgebruiker heeft standaard de mogelijkheid om de twee afzonderlijk gedefinieerde pincodes te gebruiken, maar kan er ook voor kiezen om ze te combineren in de sterkste van de twee.
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Gebruik de informatie in het onderwerp [Intune- apparaatbeperkingsinstellingen configureren](device-restrictions-configure.md) om het profiel op te slaan en toe te wijzen aan gebruikers en apparaten.
+Gebruik de informatie in [Intune-apparaatbeperkingsinstellingen configureren](device-restrictions-configure.md) om het profiel op te slaan en toe te wijzen aan gebruikers en apparaten.

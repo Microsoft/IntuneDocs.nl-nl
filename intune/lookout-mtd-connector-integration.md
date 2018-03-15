@@ -3,8 +3,8 @@ title: Uw Lookout-integratie instellen met Intune
 titlesuffix: Azure portal
 description: Uw Lookout-abonnement instellen met Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Integratie van Lookout Mobile Threat Defense met Intune instellen
 
@@ -94,7 +94,7 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
     ![schermopname van de registratiepagina van de Intune-connector](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > De **Weergavenaam** is hoofdlettergevoelig zoals weergegeven in de **Eigenschappen** van de beveiligingsgroep in de Azure-portal. Zoals de onderstaande afbeelding laat zien, heeft de **Weergavenaam** van de beveiligingsgroep hoofd- en kleine letters terwijl de titel alleen uit kleine letters bestaat. Stel in de Lookout-console het lettergebruik van de **Weergavenaam** in voor de beveiligingsgroep.
+    > De **Weergavenaam** is hoofdlettergevoelig zoals weergegeven in de **eigenschappen** van de beveiligingsgroep in Azure Portal. Zoals de onderstaande afbeelding laat zien, heeft de **Weergavenaam** van de beveiligingsgroep hoofd- en kleine letters terwijl de titel alleen uit kleine letters bestaat. Stel in de Lookout-console het lettergebruik van de **Weergavenaam** in voor de beveiligingsgroep.
     >![schermopname van de Azure-portal, Azure Active Directory-service, eigenschappenpagina](./media/aad-group-display-name.png)
 
     >[!NOTE] 
@@ -131,7 +131,7 @@ Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in
 > Risiconiveaus zijn een belangrijk aspect van Mobile Threat Defense omdat door de Intune-integratie tijdens runtime wordt berekend in hoeverre het apparaat compatibel is op basis van deze risiconiveaus. De Intune-beheerder stelt een beleidsregel in om een apparaat te identificeren als niet-compatibel als het een actieve bedreiging heeft met een minimumniveau van **Hoog**, **Gemiddeld** of **Laag**. Het bedreigingsclassificatiebeleid in Lookout Mobile Threat Defense staat rechtstreeks aan de basis van de berekening van de apparaatcompatibiliteit in Intune.
 
 ## <a name="watching-enrollment"></a>Registratie bewaken
-Wanneer de instelling is voltooid, wordt Azure AD met Lookout Mobile Threat Defense gecontroleerd op apparaten die met de opgegeven inschrijvingsgroepen overeenkomen.  In de module Apparaten vindt u informatie over de apparaten die zijn geregistreerd.  De initiële status van apparaten wordt weergegeven als In behandeling.  De apparaatstatus wordt gewijzigd nadat de Lookout for Work-app op het apparaat is geïnstalleerd, geopend en geactiveerd.  Zie het onderwerp [De Lookout for Work-app configureren en implementeren](mtd-apps-ios-app-configuration-policy-add-assign.md) voor meer informatie over het pushen van de Lookout for Work-app naar het apparaat.
+Wanneer de instelling is voltooid, wordt Azure AD met Lookout Mobile Threat Defense gecontroleerd op apparaten die met de opgegeven inschrijvingsgroepen overeenkomen.  In de module Apparaten vindt u informatie over de apparaten die zijn geregistreerd.  De initiële status van apparaten wordt weergegeven als In behandeling.  De apparaatstatus wordt gewijzigd nadat de Lookout for Work-app op het apparaat is geïnstalleerd, geopend en geactiveerd.  Zie [Lookout for Work-apps met Intune toevoegen](mtd-apps-ios-app-configuration-policy-add-assign.md) voor meer informatie over het pushen van de Lookout for Work-app naar het apparaat.
 
 ## <a name="next-steps"></a>Volgende stappen
 

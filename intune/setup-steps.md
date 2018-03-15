@@ -1,9 +1,9 @@
 ---
-title: Intune instellen
+title: Microsoft Intune instellen
 description: Vereisten en voorwaarden om uw Intune-abonnement te gaan gebruiken
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d2abd140dc83cffa11777ab75f7fb40e76fc1b83
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-intune"></a>Intune instellen
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Deze installatiestappen helpen u om het beheer van mobiele apparaten (MDM) in te schakelen. Apparaten moeten worden beheerd voordat u gebruikers toegang kunt geven tot zakelijke resources of voordat ze instellingen op deze apparaten kunnen beheren.
+Deze installatiestappen helpen u om Mobile Device Management (MDM) in te schakelen met Intune. Apparaten moeten worden beheerd voordat u gebruikers toegang kunt geven tot zakelijke resources of voordat ze instellingen op deze apparaten kunnen beheren.
 
 Sommige stappen, zoals het instellen van een Intune-abonnement en het instellen van de MDM-instantie, zijn voor de meeste scenario’s vereist. Andere stappen, zoals het configureren van een aangepast domein of het toevoegen van apps, zijn optioneel en afhankelijk van de behoeften van uw organisatie.
 

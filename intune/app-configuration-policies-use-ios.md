@@ -1,6 +1,6 @@
 ---
-title: App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen | Microsoft Docs
-titlesuffix: Azure portal
+title: App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
+titlesuffix: Microsoft Intune
 description: Informatie over het gebruiken van app-configuratiebeleidsregels om configuratiegegevens te leveren aan een iOS-app wanneer deze wordt uitgevoerd.
 keywords: 
 author: erikre
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: bdaec3150062dce5da5566fa9534425e11f3cdec
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -44,8 +44,8 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 
 ## <a name="create-an-app-configuration-policy"></a>Een app-configuratiebeleid maken
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies de workload **Mobiele apps**.
 4. Kies **App-configuratiebeleidsregels** in de groep **Beheren** en kies vervolgens **Toevoegen**.
 5. Stel de volgende details in:
@@ -56,22 +56,22 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
     - **Type apparaatinschrijving**<br>
       Kies **Beheerde apparaten**.
 6. Selecteer **iOS** bij **Platform**.
-7.  Kies **Gekoppelde app**. Klik vervolgens op de blade **Gekoppelde app** en kies de beheerde app waarop u de configuratie wilt toepassen.
-8.  Kies op de blade **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**.
+7.  Kies **Gekoppelde app**. Klik vervolgens in het deelvenster **Gekoppelde app** op de beheerde app waarop u de configuratie wilt toepassen. Selecteer **OK**.
+8.  Kies in het deelvenster **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**.
 9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer vervolgens een van de volgende opties:
     - **[Configuration Designer gebruiken](#use-configuration-designer)**
     - **[XML-gegevens invoeren](#enter-xml-data)**
-10. Nadat u uw XML-gegevens hebt toegevoegd, kiest u **OK** en vervolgens **Toevoegen** om het configuratiebeleid toe te voegen. De overzichtsblade van het configuratiebeleid wordt weergegeven.
+10. Nadat u uw XML-gegevens hebt toegevoegd, kiest u **OK** en vervolgens **Toevoegen** om het configuratiebeleid toe te voegen. Het overzichtsdeelvenster van het configuratiebeleid wordt weergegeven.
 11. Selecteer **Toewijzingen** om de opties voor opnemen en uitsluiten weer te geven. 
 
-    ![Beleidstoewijzingen](./media/app-config-policy01.png)
+    ![Schermafbeelding van Beleidstoewijzingen op het tabblad Opnemen](./media/app-config-policy01.png)
 12. Selecteer **Alle gebruikers** op het tabblad **Opnemen**.
 
-    ![Beleidstoewijzingen - Alle gebruikers](./media/app-config-policy02.png)
+    ![Schermafbeelding van Beleidstoewijzingen met de vervolgkeuzemenu-optie Alle gebruikers](./media/app-config-policy02.png)
 13. Selecteer het tabblad **Uitsluiten**. 
-14. Klik op **Groepen voor uitsluiten selecteren** om de gerelateerde blade weer te geven.
+14. Klik op **Groepen voor uitsluiten selecteren** om het gerelateerde deelvenster weer te geven.
 
-    ![Beleidstoewijzingen - Groepen voor uitsluiten selecteren](./media/app-config-policy03.png)
+    ![Schermafbeelding van Beleidstoewijzingen - de blade Groepen voor uitsluiten selecteren](./media/app-config-policy03.png)
 15. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
 
     >[!NOTE]

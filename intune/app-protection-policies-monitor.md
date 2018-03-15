@@ -1,7 +1,7 @@
 ---
 title: App-beveiligingsbeleid controleren
-titleSuffix: Azure portal
-description: U kunt bekijken hoeveel gebruikers het beleid hebben en hier op inzoomen om meer inzicht te verkrijgen.
+titleSuffix: Microsoft Intune
+description: Controleer de status van naleving van Mobile App Management-beleid in Intune.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Als u zich niet in Azure Portal bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-portal.
 
 
-U kunt de nalevingsstatus van het MAM-beleid bewaken dat u hebt toegepast op gebruikers op de blade Intune-app-beveiliging in [Azure Portal](https://portal.azure.com). U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
+U kunt de nalevingsstatus van het MAM-beleid dat u hebt toegepast op gebruikers controleren in het deelvenster Intune-app-beveiliging in de [Azure-portal](https://portal.azure.com). U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
 
 Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
@@ -39,12 +39,12 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 
 ## <a name="summary-view"></a>Samenvattingsweergave
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Mobiele apps** op de blade **Intune**.
-4. Kies **Controleren** > **Gebruikersstatus van de app-beveiliging** in de workload **Mobiele apps** om de samenvattingsweergave te openen:
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+3. Kies **Mobiele apps** in het deelvenster **Intune**.
+4. Kies **Controleren** > **Status van de app-beveiliging** in de workload **Mobiele apps** om de samenvattingsweergave te openen:
 
-![De tegel Samenvatting op het tabblad Intune Mobile Application Management](./media/app-protection-user-status-summary.png)
+![De tegel Samenvatting in het deelvenster Intune Mobile Application Management](./media/app-protection-user-status-summary.png)
 
 -   **Gebruikers**: het totale aantal gebruikers in uw bedrijf dat een app gebruikt die is gekoppeld aan een beleid binnen een werkcontext.
 
@@ -61,7 +61,7 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 U kunt de gedetailleerde weergave van de samenvatting openen door de tegel **Gebruikersstatus** (afhankelijk van het besturingssysteem van het apparaat) en de tegel **Gemarkeerde gebruikers** te kiezen.
 
 ### <a name="user-status"></a>Gebruikersstatus
-U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze gebruiker controleren. De blade **App-rapportage** bevat de volgende informatie voor de geselecteerde gebruiker:
+U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze gebruiker controleren. Het deelvenster **App-rapportage** bevat de volgende informatie voor de geselecteerde gebruiker:
 - Apparaten die zijn gekoppeld aan het gebruikersaccount
 
 - Apps met een MAM-beleid op het apparaat
@@ -73,19 +73,19 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
   - **Niet ingeschakeld**: het beleid is geïmplementeerd voor de gebruiker, maar de app is sindsdien niet gebruikt in de werkcontext.
 
 >[!NOTE]
-> Als het MAM-beleid niet op de gebruikers waarnaar u hebt gezocht is toegepast, wordt in een bericht gemeld dat er geen MAM-beleid wordt toegepast op de gebruikers.
+> Als het MAM-beleid niet is toegepast op de gebruikers waarnaar u hebt gezocht, wordt in een bericht gemeld dat er geen MAM-beleid wordt toegepast op de gebruikers.
 
 Ga als volgt te werk om de rapportage voor een gebruiker te bekijken:
 
 1.  Voor het selecteren van een gebruiker selecteert u de tegel **Samenvatting**.
 
-    ![Schermopname 3](./media/MAM-reporting-6.png)
+    ![Schermafbeelding van de tegel Samenvatting in de blade Intune Mobile Application Management, Instellingen](./media/MAM-reporting-6.png)
 
-2. Kies op de geopende blade **App-rapportage** de optie **Gebruiker selecteren** om een Azure Active Directory-gebruiker te zoeken.
+2. Kies in het geopende deelvenster **App-rapportage** de optie **Gebruiker selecteren** om een Azure Active Directory-gebruiker te zoeken.
 
-    ![De gebruikersoptie op de blade App-rapportage selecteren](./media/MAM-reporting-2.png)
+    ![Schermafbeelding van de optie Gebruiker selecteren in het deelvenster App-rapportage](./media/MAM-reporting-2.png)
 
-3. Selecteer de gebruiker uit de lijst. U ziet de details van de nalevingsstatus voor die gebruiker.
+3. Selecteer de gebruiker uit de lijst. U kunt de details van de nalevingsstatus voor die gebruiker bekijken.
 
 ### <a name="flagged-users"></a>Gemarkeerde gebruikers
 De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen de fout is opgetreden, het besturingssysteem van het apparaat dat is beïnvloed en een tijdstempel.
@@ -94,7 +94,7 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende rapporten voor hulp bij de compatibiliteitsstatus van het MAM-beleid:
 
-![Schermopname 4](./media/MAM-reporting-7.png)
+![Schermopname van 2 rapporten die beschikbaar zijn in het deelvenster Instellingen](./media/MAM-reporting-7.png)
 
 -   **Gebruikersrapport over app-beveiliging:** biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
 
@@ -110,7 +110,7 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
         -   Alle apps zijn ingecheckt, maar er wordt geen MAM-beleid op toegepast.
 
-![Schermopname 2](./media/MAM-reporting-4.png)
+![Schermopname van de blade App-rapportage van een gebruiker met een tabel met details voor 3 geregistreerde apps](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabelgroepering
 
@@ -125,15 +125,15 @@ U kunt alle beveiligingsactiviteiten voor apps exporteren naar één CSV-bestand
 
 Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
-1. Kies in de blade Intune Mobile Application Management de optie App-beveiligingsrapport.
+1. Kies in het deelvenster Intune Mobile Application Management de optie **App-beveiligingsrapport**.
 
-    ![Schermopname 6](./media/app-protection-report-csv-2.png)
+    ![Schermafbeelding van de downloadlink App-beveiliging in het deelvenster Intune Mobile Application Management](./media/app-protection-report-csv-2.png)
 
 2. Kies Ja om uw rapport op te slaan, kies vervolgens Opslaan als en selecteer de map waarin u het rapport wilt opslaan.
 
-    ![Schermopname 7](./media/app-protection-report-csv-1.png)
+    ![Schermopname van het bevestigingsvak Rapport opslaan](./media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 [Gegevensoverdracht tussen iOS-apps beheren](data-transfer-between-apps-manage-ios.md)
 
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](app-protection-enabled-apps-android.md)

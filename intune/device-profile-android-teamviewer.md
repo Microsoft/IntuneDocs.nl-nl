@@ -1,12 +1,11 @@
 ---
-title: Apparaten extern beheren met TeamViewer
-titlesuffix: Azure portal
-description: Meer informatie over hoe u apparaten extern beheert met TeamViewer.
+title: Extern beheer van apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: De vereiste rollen bekijken om TeamViewer te gebruiken, hoe u de TeamViewer-connector installeert en stapsgewijze instructies voor het extern beheren van apparaten met Microsoft Intune in de Azure Portal
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 2/14/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,65 +13,52 @@ ms.technology:
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="provide-remote-assistance-for-intune-managed-devices"></a>Hulp op afstand verlenen voor apparaten die worden beheerd met Intune
+# <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
-Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)-software gebruiken, zodat u gebruikers met door u beheerde apparaten hulp op afstand kunt bieden. Gebruik de informatie in dit onderwerp om aan de slag te gaan.
+Apparaten die worden beheerd door Intune kunnen extern worden beheerd met [TeamViewer](https://www.teamviewer.com). TeamViewer is een programma van derden dat u afzonderlijk aanschaft. In dit onderwerp leest u hoe u TeamViewer binnen Intune configureert en hoe u een apparaat extern beheert. 
 
-## <a name="before-you-start"></a>Voordat u begint
+## <a name="prerequisites"></a>Vereisten
 
-### <a name="supported-devices"></a>Ondersteunde apparaten
+- Gebruik een ondersteund apparaat. Door Intune beheerde Android- en Windows-apparaten ondersteunen extern beheer. TeamViewer biedt mogelijk geen ondersteuning voor Windows Holographic (HoloLens), Windows Team (Surface Hub) of Windows 10 S. Zie voor ondersteuning [TeamViewer](https://www.teamviewer.com) voor eventuele updates.
 
-Door Intune beheerde Android- en Windows-apparaten ondersteunen extern beheer.
+- De Intune-beheerder binnen de Azure Portal moet de volgende [Intune-rollen](role-based-access-control.md) hebben:  
 
->[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) en Windows 10 S worden niet ondersteund door de TeamViewer-software.
+    - **Hulp op afstand bijwerken**: hiermee kunnen beheerders de instellingen van de TeamViewer-connector wijzigen
+    - **Hulp op afstand vragen**: hiermee kunnen beheerders een nieuwe sessie van hulp op afstand voor elke gebruiker starten. Gebruikers met deze rol zijn niet beperkt door een Intune-rol binnen een bereik. Gebruikers- of apparaatgroepen aan wie een Intune-rol is toegewezen binnen een scope, kunnen ook hulp op afstand aanvragen. 
 
+- Een [TeamViewer](https://www.teamviewer.com)-account met de aanmeldingsreferenties
 
+Door TeamViewer te gebruiken, kunt u met de TeamViewer voor Intune-connector TeamViewer-sessies maken, Active Directory-gegevens lezen en het toegangstoken voor het TeamViewer-account opslaan.
 
-### <a name="required-permissions"></a>Vereiste machtigingen
+## <a name="configure-the-teamviewer-connector"></a>De TeamViewer-connector configureren
 
-Zorg ervoor dat de volgende machtigingen als [Intune-rol](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control) zijn toegewezen aan de gebruiker van Azure Portal:
-- Als u de beheerder de mogelijkheid wilt bieden om de instellingen voor de TeamViewer-connector te wijzigen, verleent u de beheerder de machtiging **Hulp op afstand bijwerken**.
-- Als u de beheerder een nieuwe aanvraag voor hulp of afstand wilt kunnen laten uitvoeren, verleent u de beheerder de machtiging **Hulp op afstand aanvragen**. Gebruikers met de machtiging **Hulp op afstand aanvragen** kunnen een aanvraag indienen om een sessie voor een willekeurige gebruiker te starten. Ze worden hiertoe niet door een toewijzingsbereik van een Intune-rol beperkt. De toewijzingsbereiken van Intune-rollen beperken niet het aantal apparaten of gebruikers waarvoor verzoeken om hulp op afstand kunnen worden geïnitieerd.
+Als u hulp op afstand voor apparaten wilt bieden, configureert u de Intune TeamViewer-connector door de volgende stappen uit te voeren:
 
->[!NOTE]
->Door TeamViewer in te schakelen, kunt u met de TeamViewer voor Intune-connector TeamViewer-sessies maken, Active Directory-gegevens lezen en het toegangstoken voor het TeamViewer-account opslaan.
+1. In de [Azure-portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
+2. In **Microsoft Intune** selecteert u **Apparaten** en selecteert u vervolgens **TeamViewer-connector**.
+3. Selecteer **Verbinding maken** en accepteer de gebruiksrechtovereenkomst.
+4. Selecteer **Aanmelden bij TeamViewer voor goedkeuring**.
+5. Er wordt een webpagina van de TeamViewer-site geopend. Voer de referenties van uw TeamViewer-licentie in en klik vervolgens op **Aanmelden**.
 
-### <a name="configure-the-intune-teamviewer-connector"></a>De Intune TeamViewer-connector configureren
+## <a name="remotely-administer-a-device"></a>Een apparaat op afstand beheren
 
-Voordat u hulp op afstand voor apparaten kunt bieden, moet u eerst de Intune TeamViewer-connector configureren door de volgende stappen uit te voeren:
+Nadat de connector is geconfigureerd, kunt u een apparaat op afstand beheren. Voer de volgende stappen uit: 
 
+1. In de [Azure-portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
+2. In **Microsoft Intune** selecteert u **Apparaten** en selecteert u vervolgens **Alle apparaten**.
+3. Selecteer in de lijst het apparaat dat u extern wilt beheren. Selecteer in de apparaateigenschappen **Nieuwe sessie van hulp op afstand**.
+4. Nadat er een verbinding tussen Intune en de TeamViewer-service tot stand is gebracht, worden er enkele gegevens over het apparaat weergegeven. Kies **Verbinden** om de externe sessie te starten.
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blad **Apparaten en groepen** achtereenvolgens**Setup** > **TeamViewer-connector**.
-5. Klik op de blade **TeamViewer-connector** op **Inschakelen** en accepteer vervolgens de licentieovereenkomst voor de TeamViewer-service.
-6. Kies **Aanmelden bij TeamViewer voor goedkeuring**.
-7. Er wordt een webpagina van de TeamViewer-site geopend. Voer de referenties van uw TeamViewer-licentie in en klik vervolgens op **Aanmelden**.
+![TeamViewer gebruiken om een Android-apparaat extern te beheren - voorbeeld](./media/android-teamviewer.png)
 
+Wanneer u een externe sessie start, wordt er een vlag voor meldingen op het pictogram van de bedrijfsportal-app op het apparaat van de eindgebruiker weergegeven. Er wordt ook een melding weergegeven wanneer de app wordt geopend. De gebruiker kan vervolgens het verzoek om hulp op afstand accepteren.
 
-## <a name="how-to-remotely-administer-a-device"></a>Een apparaat op afstand beheren
-
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten** achtereenvolgens **Beheren** > **Alle apparaten**.
-5. Selecteer het apparaat dat u extern wilt beheren en kies op de blade met de apparaateigenschappen vervolgens **Meer** > **Nieuwe Hulp op afstand-sessie**.
-6. Nadat er een verbinding tussen Intune en de TeamViewer-service tot stand is gebracht, worden er enkele gegevens over het apparaat weergegeven. Kies **Verbinden** om de externe sessie te starten.
-
-![Voorbeeld van TeamViewer in Android](./media/android-teamviewer.png)
-
-U kunt in het TeamViewer-venster verschillende externe acties op het apparaat uitvoeren, waaronder het op afstand beheren van het apparaat. Zie de [TeamViewer-documentatie](https://www.teamviewer.com/support/documents/) voor gedetailleerde informatie over de acties die u kunt uitvoeren.
+In TeamViewer kunt u een reeks acties op het apparaat uitvoeren, zoals het overnemen van het beheer van het apparaat. Zie de [TeamViewer-richtlijnen](https://www.teamviewer.com/support/documents/) voor meer informatie over wat u kunt doen.
 
 Als u klaar bent, sluit u het TeamViewer-venster.
-
-## <a name="next-steps"></a>Volgende stappen
-
-Er wordt een vlag voor meldingen op het pictogram van de bedrijfsportal-app op het apparaat van de eindgebruiker weergegeven. Daarnaast wordt er een melding weergegeven wanneer de app wordt geopend. Ze kunnen het verzoek om hulp op afstand accepteren.

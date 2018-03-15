@@ -1,7 +1,7 @@
 ---
 title: Webtoegang beheren met de app Managed Browser
-titlesuffix: Azure portal
-description: De app Managed browser implementeren om websurfen en de overdracht van webgegevens naar andere apps te beperken.
+titlesuffix: Microsoft Intune
+description: Implementeer d app Managed Browser om websurfen en de overdracht van webgegevens naar andere apps te beperken.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -63,17 +63,17 @@ Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft I
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Een configuratie voor de Managed browser-app maken
 
-1.  Meld u aan bij Azure-portal.
-2.  Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3.  Ga in de lijst Beheren naar de blade **Mobile Apps** en kies **App-configuratiebeleid**.
-4.  Kies **Toevoegen** op de blade **App-configuratiebeleid**.
-5.  Geef op de blade **App-configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
+4.  Kies op de blade **App-configuratiebeleid** **Toevoegen**.
+5.  Geef op de blade **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
 6.  Kies voor **Type apparaatregistratie** **Beheerde apps**.
-7.  Kies **Vereiste apps selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** voor iOS, voor Android of voor beide besturingssystemen.
-8.  Kies **OK** om terug te keren naar de blade **App-configuratiebeleid toevoegen**.
+7.  Kies **Vereiste app selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** voor iOS, voor Android of voor beide besturingssystemen.
+8.  Kies **OK** om terug te keren naar de blade **Configuratiebeleid toevoegen**.
 9.  Kies **Configuratie-instellingen**. Op de blade **Configuratie** definieert u sleutel- en waardeparen voor configuraties voor Managed Browser. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
 10. Kies **OK** als u klaar bent.
-11. Op de blade **App-configuratie toevoegen** kiest u **Maken**.
+11. Kies op de blade **Configuratiebeleid toevoegen** de optie **Toevoegen**.
 12. De nieuwe configuratie wordt gemaakt en weergegeven op de blade **App-configuratie**.
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft I
 
 U wijst de instellingen aan Azure AD-groepen gebruikers toe. Als deze gebruiker de app Managed Browser heeft geïnstalleerd, wordt de app beheerd door de instellingen die u hebt opgegeven.
 
-1. Kies op de blade **Instellingen** van het Intune MAM-dashboard **App-configuratie**.
+1. Kies op de blade **Mobiele apps** van het Intune MAM-dashboard de optie **App-configuratiebeleid**.
 2. Selecteer in de lijst met app-configuraties de configuratie die u wilt toewijzen.
-3. Kies **Gebruikersgroepen** op de volgende blade.
-4. Selecteer op de blade **Gebruikersgroepen** de Azure AD-groep waaraan u de app-configuratie wilt toewijzen en kies vervolgens **OK**.
+3. Kies **Toewijzingen** op de volgende blade.
+4. Selecteer op de blade **Toewijzingen** de Azure AD-groep waaraan u de app-configuratie wilt toewijzen en kies vervolgens **OK**.
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Application Proxy-instellingen configureren voor Managed Browser

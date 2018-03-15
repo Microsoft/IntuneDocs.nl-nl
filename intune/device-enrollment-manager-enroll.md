@@ -1,6 +1,6 @@
 ---
-title: Apparaten inschrijven - apparaatinschrijvingsmanager
-titlesuffix: Azure portal
+title: Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
+titlesuffix: Microsoft Intune
 description: Gebruik het manageraccount voor apparaatregistratie om apparaten in te registreren. "
 keywords: 
 author: ErikjeMS
@@ -15,28 +15,28 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enroll-devices-using-device-enrollment-manager"></a>Apparaten inschrijven met de apparaatinschrijvingsmanager
+# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal gebruikersaccount waarmee maximaal duizend apparaten kunnen worden ingeschreven. U voegt bestaande gebruikers toe aan het DEM-account om ze speciale DEM-mogelijkheden te bieden. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten.  
 
-Gebruikers moeten in Azure Portal bestaan om ze te kunnen toevoegen aan apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker géén Intune-beheerder zijn.
+Gebruikers moeten in [Azure Portal](https://portal.azure.com) bestaan om ze te kunnen toevoegen als apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker géén Intune-beheerder zijn.
 
 >[!NOTE]
->De DEM-registratiemethode kan niet worden gebruikt met de volgende andere registratiemethoden: [Apple Configurator met Configuratieassistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator met directe enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) of [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md). Deze methode kan ook niet worden gebruikt om macOS-apparaten te registreren.
+>De DEM-registratiemethode kan niet worden gebruikt met de volgende andere registratiemethoden: [Apple Configurator met Configuratieassistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator met directe enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) of [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
 
 Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een apparaatinschrijvingsmanageraccount en voegt een restaurantsupervisor toe aan het DEM-account. Daarmee krijgt die supervisor DEM-mogelijkheden. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
 
-Alleen gebruikers in de Azure-portal kunnen apparaatinschrijvingsbeheerders zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
+Alleen gebruikers in [Azure Portal](https://portal.azure.com) kunnen apparaatinschrijvingsmanagers zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
 
 De DEM-gebruiker kan:
 
@@ -88,11 +88,11 @@ Het verwijderen van een apparaatinschrijvingsmanager is niet van invloed op inge
 
 **Een apparaatinschrijvingsmanager verwijderen**
 
-1. Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
-2. Kies **Apparaten inschrijven** op de blade Intune en kies vervolgens **Apparaatinschrijvingsmanagers**.
-3. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Verwijderen**.
+1. In [Azure Portal](https://portal.azure.com) kiest u **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+2. Kies op de Intune-blade de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
+3. Klik op de blade **Apparaatinschrijvingsmanagers** op de DEM-gebruiker en selecteer **Verwijderen**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>De eigenschappen van een apparaatinschrijvingsmanager weergeven
 
-1. Kies in de Azure-portal de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
+1. Kies in [Azure Portal](https://portal.azure.com) de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
 2. Klik op de blade **Apparaatinschrijvingsmanagers** met de rechtermuisknop op de DEM-gebruiker en selecteer **Eigenschappen**.

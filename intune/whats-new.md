@@ -5,9 +5,9 @@ description: Ontdekken wat er nieuw is in Intune Azure Portal
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: dougeby
-ms.date: 02/01/2018
-ms.topic: article
+manager: angrobe
+ms.date: 01/02/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5058428dca9212d8b20364f58ac463939a699221
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -41,6 +41,107 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook informati
   ### Monitor and troubleshoot
 
 -->   
+
+
+## <a name="week-of-february-19-2018"></a>Week van 19 februari 2018
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Intune-ondersteuning voor meerdere Apple DEP-/Apple School Manager-accounts <!-- 747685 -->
+ 
+Intune ondersteunt nu de registratie van apparaten uit maximaal 100 verschillende Apple Device Enrollment Program (DEP)- of Apple School Manager-accounts. Elk geüpload token kan afzonderlijk worden beheerd voor registratieprofielen en -apparaten. Er kan automatisch een ander registratieprofiel worden toegewezen per geüpload DEP-/School Manager-token. Als er meerdere School Manager-tokens zijn geüpload, kan er per keer slechts één worden gedeeld met Microsoft School Data Sync.
+
+Na de migratie werken de bèta Graph API's en gepubliceerde scripts voor het beheren van Apple DEP of ASM over Graph niet meer. Nieuwe bèta Graph API's zijn in ontwikkeling en zullen na de migratie worden uitgebracht.
+
+#### <a name="see-enrollment-restrictions-per-user----1634444-eeready-wnready---"></a>Inschrijvingsbeperkingen per gebruiker bekijken <!-- 1634444 eeready wnready -->
+Op de blade **Probleemoplossing** kunt u nu de inschrijvingsbeperkingen bekijken die gelden voor elke gebruiker. Selecteer hiervoor **Inschrijvingsbeperkingen** in de lijst **Toewijzingen**.
+
+### <a name="device-management"></a>Apparaatbeheer
+#### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Rapporten over de integriteitsstatus en bedreigingsstatus van Windows Defender<!--854704 -->
+
+Inzicht in de integriteit en status van Windows Defender is essentieel voor het beheren van Windows-pc's.  Dankzij deze update worden door Intune nieuwe rapporten en acties toegevoegd aan de status en integriteit van de Windows Defender-agent. Wanneer u een rapport voor het verzamelen van de status gebruikt in de workload voor apparaatcompatibiliteit, worden apparaten weergegeven waarvoor een of meer van de volgende acties moeten worden uitgevoerd:
+- het bijwerken van de handtekening
+- Opnieuw opstarten
+- handmatige interventie
+- volledige scan
+- interventie die is vereist voor andere agentstatussen
+
+In een gedetailleerd rapport voor elke statuscategorie worden de afzonderlijke pc's vermeld waarvoor aandacht is vereist of die als **schoon** zijn gerapporteerd.
+
+#### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>Nieuwe privacyinstellingen voor apparaatbeperkingen <!--1308926 -->
+Er zijn twee nieuwe privacyinstellingen voor apparaten beschikbaar:
+- **Gebruikersactiviteiten publiceren**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
+- **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
+
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nieuwe instellingen voor de Microsoft Edge-browser <!--1469166 -->
+Er zijn twee nieuwe instellingen beschikbaar voor apparaten met de Microsoft Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**. 
+
+### <a name="app-management"></a>Appbeheer
+#### <a name="protocol-exceptions-for-applications---1035509---"></a>Protocoluitzonderingen voor toepassingen <!--1035509 -->
+
+U kunt nu uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management) om specifieke onbeheerde toepassingen te openen. Dergelijke toepassingen moeten door de IT-afdeling als vertrouwde toepassingen worden beschouwd. Afgezien van de uitzonderingen die u maakt, wordt de gegevensoverdracht nog steeds beperkt tot de toepassingen die door Intune worden beheerd als uw beleid voor gegevensoverdracht is ingesteld op **Uitsluitend beheerde apps**. U kunt de beperkingen maken met behulp van protocollen (iOS) of pakketten (Android).
+ 
+U kunt bijvoorbeeld het Webex-pakket toevoegen als een uitzondering op het MAM-gegevensoverdrachtbeleid. Op die manier kunnen Webex-koppelingen in een beheerd e-mailbericht van Outlook rechtstreeks in de Webex-toepassing worden geopend. De gegevensoverdracht wordt nog steeds beperkt in andere onbeheerde toepassingen. Zie [Beleidsuitzonderingen voor gegevensoverdracht voor apps](app-protection-policies-exception.md) voor meer informatie.
+
+#### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Versleutelde gegevens van Windows Information Protection (WIP) in zoekresultaten van Windows <!-- 1469193 -->
+Met een instelling in het WIP-beleid (Windows-gegevensbescherming) kunt u zelf regelen of met WIP versleutelde gegevens in de zoekresultaten van Windows worden opgenomen. Stel deze optie voor app-beveiligingsbeleid in door de optie **Windows Search-indexeerfunctie toestaan om versleutelde items te zoeken** te selecteren in de **geavanceerde instellingen** van het Windows-gegevensbeschermingsbeleid. Het beveiligingsbeleid van de app moet worden ingesteld op het *Windows 10*-platform en de **inschrijvingsstatus** van het app-beleid moet worden ingesteld op **Bij inschrijving**. Zie [De Windows Search-indexeerfunctie toestaan om versleutelde items te zoeken](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items) voor meer informatie.
+
+#### <a name="configuring-a-self-updating-mobile-msi-app----1740840---"></a>Een mobiele MSI-app configureren die automatisch wordt bijgewerkt <!-- 1740840 -->
+U kunt een bekende mobiele MSI-app die automatisch wordt bijgewerkt configureren om de versiecontrole te negeren. Met deze functie kunt u voorkomen dat er een racevoorwaarde optreedt. Dit type racevoorwaarde kan bijvoorbeeld optreden wanneer de app die automatisch wordt bijgewerkt door de app-ontwikkelaar ook wordt bijgewerkt door Intune. Er kan door beide partijen worden geprobeerd om een versie van de app op een Windows-client af te dwingen, waardoor een conflict kan ontstaan. Voor deze automatisch bijgewerkte MSI-apps kunt u de instelling **App-versie negeren** in de blade **App-informatie** configureren. Wanneer deze instelling op **Ja** staat, negeert Microsoft Intune de app-versie die is geïnstalleerd op de Windows-client. 
+
+#### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Gerelateerde groepen van app-licenties worden in Intune ondersteund <!-- 1864117 -->
+Intune in Azure Portal biedt nu ondersteuning voor de vermelding van gerelateerde groepen van app-licenties als één app-item in de gebruikersinterface. Bovendien worden apps met offlinelicenties die zijn gesynchroniseerd vanuit Microsoft Store voor Bedrijven geconsolideerd in één app-vermelding. Eventuele implementatiegegevens uit de afzonderlijke pakketten worden naar die ene vermelding gemigreerd. Als u gerelateerde groepen van app-licenties in Azure Portal wilt bekijken, selecteert u **App-licenties** op de blade **Mobiele apps**.
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+#### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>Bestandsextensies voor automatische versleuteling door Windows-gegevensbescherming (WIP) <!-- 1463582 -->
+Met een instelling in het Windows-gegevensbeschermingsbeleid (WIP) kunt u nu opgeven welke bestandsextensies automatisch worden versleuteld bij het kopiëren vanaf een Server Message Block-share (SMB) binnen het bedrijf, zoals gedefinieerd in het WIP-beleid.
+
+#### <a name="configure-resource-account-settings-for-surface-hubs"></a>Resourceaccountinstellingen voor Surface Hubs configureren
+
+U kunt nu resourceaccountinstellingen voor Surface Hubs extern configureren.
+
+Het resourceaccount wordt door een Surface Hub gebruikt voor verificatie bij Exchange/Skype, zodat kan worden deelgenomen aan een vergadering. U kunt een uniek resourceaccount maken, zodat de Surface Hub in de vergadering kan worden weergegeven als de vergaderruimte. Bijvoorbeeld een resourceaccount als **Vergaderruimte B41/6233**.
+
+> [!NOTE]
+> - Als u velden leeg laat, overschrijft u de eerder geconfigureerde kenmerken op het apparaat.
+>
+> - Resourceaccounteigenschappen kunnen in de Surface Hub dynamisch worden gewijzigd. Bijvoorbeeld als wisseling van het wachtwoord is ingeschakeld. Het is dus mogelijk dat de waarden in de Azure-console pas na enige tijd in overeenstemming zijn met de waarden op het apparaat. 
+>
+>   Om te weten wat er op dat moment op de Surface Hub is geconfigureerd, kunnen de resourceaccountgegevens in de hardware-inventaris (die al een interval van zeven dagen heeft) of als alleen-lezen eigenschappen worden opgenomen. Voor een grotere nauwkeurigheid na de uitvoering van de externe actie kunt u de status van de parameters onmiddellijk na het uitvoeren van de actie ophalen om het account/de parameters op de Surface Hub bij te werken.
+
+
+##### <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen
+
+
+|Naam van de instelling  |Instellingsopties  |Description  |
+|---------|---------|---------|
+|Uitvoering van met een wachtwoord beschermde uitvoerbare inhoud uit e-mails|Blokkeren, Controleren, Niet geconfigureerd|Voorkom dat uitvoerbare bestanden met wachtwoordbescherming uit e-mails worden uitgevoerd.|
+|Geavanceerde ransomwarebeveiliging|Ingeschakeld, Controleren, Niet geconfigureerd|Gebruik agressieve ransomwarebeveiliging.|
+|Referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit markeren|Ingeschakeld, Controleren, Niet geconfigureerd|Markeer referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit (lsass.exe).|
+|Het maken van processen met PSExec- en WMI-opdrachten|Blokkeren, Controleren, Niet geconfigureerd|Blokkeer het maken van processen die afkomstig zijn van PSExec- en WMI-opdrachten.|
+|Niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd vanaf een USB|Blokkeren, Controleren, Niet geconfigureerd|Blokkeer niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd vanaf een USB.|
+|Uitvoerbare bestanden die niet voldoen aan een bepaalde gangbaarheid, ouderdom of aan criteria voor vertrouwde lijsten blokkeren|Blokkeren, Controleren, Niet geconfigureerd|Voorkomen dat uitvoerbare bestanden worden uitgevoerd tenzij deze voldoen aan een bepaalde gangbaarheid, ouderdom of criteria voor vertrouwde lijsten.|
+
+##### <a name="controlled-folder-access"></a>Gecontroleerde mappentoegang
+
+|Naam van de instelling  |Instellingsopties  |Description  |
+|---------|---------|---------|
+|Mapbeveiliging (al geïmplementeerd)|Niet geconfigureerd, Inschakelen, Alleen controleren (al geïmplementeerd)<br><br> **Nieuw**<br>Schijfwijziging blokkeren, schijfwijziging controleren|
+Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.<br><br>**Inschakelen**: voorkom dat bestanden in beveiligde mappen door niet-vertrouwde apps worden gewijzigd of verwijderd en dat gegevens door deze apps naar schijfsectoren worden weggeschreven.<br><br>
+**Alleen schijfwijziging blokkeren**:<br>Voorkom dat gegevens door niet-vertrouwde apps worden weggeschreven naar schijfsectoren. Bestanden in beveiligde mappen kunnen nog steeds door niet-vertrouwde apps worden gewijzigd of verwijderd.|
+
+#### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>Toevoegingen aan systeembeveiligingsinstellingen voor nalevingsbeleid voor Windows 10 en hoger <!--1704133-->
+
+Toevoegingen aan de nalevingsinstellingen voor Windows 10 zijn nu beschikbaar, waaronder het verplichte gebruik van een firewall en Windows Defender Antivirus. 
+
+
+### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+### <a name="intune-apps"></a>Intune-apps
+#### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>Ondersteuning voor offlineapps uit Microsoft Store voor Bedrijven <!--1222672-->
+Offlineapps die u hebt gekocht in Microsoft Store voor Bedrijven worden voortaan gesynchroniseerd met Azure Portal. Vervolgens kunt u deze apps implementeren in apparaat- of gebruikersgroepen. Offlineapps worden geïnstalleerd door Intune en niet door de Store.
+
+#### <a name="prevent-end-users-from-manually-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Hiermee voorkomt u dat eindgebruikers handmatig accounts in het werkprofiel kunnen toevoegen of uit het werkprofiel kunnen verwijderen <!-- 1728700 -->
+
+Wanneer u de Gmail-app implementeert in een Android for Work-profiel, kunt u voorkomen dat eindgebruikers accounts handmatig aan het werkprofiel toevoegen of uit het werkprofiel verwijderen door de instelling **Accounts toevoegen en verwijderen** te gebruiken in het Android for Work-apparaatbeperkingsprofiel.
 
 ## <a name="week-of-february-5-2018"></a>Week van 5 februari 2018
 
@@ -69,6 +170,10 @@ Na de migratie werken de bèta Graph API's en gepubliceerde scripts voor het beh
 
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>Extern afdrukken via een beveiligd netwerk <!-- 1709994  -->
 Met de oplossingen voor draadloos mobiel afdrukken van PrinterOn kunnen gebruikers op afstand vanaf elke locatie en op elk gewenst moment afdrukken via een beveiligd netwerk. PrinterOn wordt geïntegreerd met de Intune APP SDK voor zowel iOS als Android. U kunt app-beveiligingsbeleid toepassen op deze app via de Intune-blade **App-beveiligingsbeleid** in de beheerconsole. Eindgebruikers kunnen de app 'PrinterOn for Microsoft' downloaden via de Play Store of iTunes voor gebruik binnen hun Intune-ecosysteem.
+
+### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>Ondersteuning van de macOS-bedrijfsportal voor inschrijvingen die gebruikmaken van de apparaatinschrijvingsmanager <!-- 1352411 -->
+
+Gebruikers kunnen nu de apparaatinschrijvingsmanager gebruiken bij het inschrijven via de macOS-bedrijfsportal.
 
 ## <a name="week-of-january-29-2018"></a>De week van 29 januari 2018
 
@@ -104,16 +209,6 @@ Het **ingebouwde** app-type maakt het eenvoudiger voor u om Office 365-apps te m
 #### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>App-toewijzing opnemen en uitsluiten op basis van groepen <!-- 1406920 -->
 
 Tijdens toewijzing van een app en na het selecteren van een toewijzingstype, kunt u selecteren welke groepen u wilt opnemen en welke u wilt uitsluiten.
-
-#### <a name="website-learning-mode----1631908---"></a>Website Learning-modus <!-- 1631908 -->
-
-Intune heeft nu een uitbreiding van de Windows Information Protection (WIP) Learning-modus. Er wordt informatie over WIP-apps weergegeven en u kunt een overzicht bekijken van de apparaten die zakelijke gegevens hebben gedeeld met websites. Met deze informatie kunt u bepalen welke websites er moeten worden toegevoegd aan WIP-beleid voor groepen en gebruikers.
-
-#### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>De bedrijfsportal-app voor Android for Work goedkeuren <!--1797090 -->
-Als uw organisatie Android for Work gebruikt, moet u de bedrijfsportal-app voor Android handmatig goedkeuren zodat deze automatische updates vanuit de beheerde Google Play Store blijft ontvangen.
-
-#### <a name="faceid-on-ios-devices----1807377---"></a>Face ID op iOS-apparaten <!-- 1807377 -->
-Beveiligingsbeleid voor apps in Intune ondersteunt nu een instelling voor Face ID op iOS-apparaten. Deze instelling wordt gebruikt voor apparaten die ondersteuning bieden voor Face ID (momenteel alleen de iPhone X). Deze instelling staat los van de besturingselementen voor Touch ID die momenteel worden ondersteund. Organisaties kunnen kiezen om Face ID te vertrouwen als een geldige pincodeprompt als alternatief voor de besturingselementen voor Touch ID.
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
@@ -196,7 +291,7 @@ U kunt nu door iOS 10.3 gecontroleerde apparaten afsluiten. Deze actie sluit het
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Geen datum-/tijdwijzigingen voor Samsung Knox-apparaten toestaan <!-- 1468103 -->
 
-U kunt nu wijzigingen in datum en tijd op Samsung Knox-apparaten blokkeren. U vindt deze functie in **Apparaatconfiguratieprofielen** > **Apparaatbeperkingen (Android)** > **Algemeen**.
+We hebben een nieuwe functie toegevoegd waarmee u datum- en tijdwijzigingen op Samsung Knox-apparaten kunt blokkeren. U kunt dit vinden in **Apparaatconfiguratieprofielen** > **Apparaatbeperkingen (Android)** > **Algemeen**.
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>Resource-account voor Surface Hub ondersteund <!-- 1566442  -->
 
@@ -241,7 +336,7 @@ Beheerders kunnen de volgende instellingen configureren:
      Hiermee geeft u op of agendasynchronisatie en andere Exchange Server-services zijn ingeschakeld. Bijvoorbeeld: synchronisatie van vergaderingen.
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>Office-apps installeren op macOS-apparaten <!-- 1494311 -->
-U kunt nu Office-apps installeren op macOS-apparaten. Met dit nieuwe type app kunt u Word, Excel, PowerPoint, Outlook en OneNote installeren. Deze apps worden ook geleverd met Microsoft AutoUpdate (MAU) om te zorgen dat uw apps veilig en up-to-date blijven.
+U kunt nu Office-apps installeren op macOS-apparaten. Met dit nieuwe app-type kunt u Word, Excel, PowerPoint, Outlook en OneNote installeren. Deze apps worden ook geleverd met Microsoft AutoUpdate (MAU) om te zorgen dat uw apps veilig en up-to-date blijven.
 
 ### <a name="app-management"></a>Appbeheer
 
@@ -267,8 +362,7 @@ Daarentegen bevat de nieuwe entiteitverzameling **Huidige gebruiker** alleen geb
 
 ### <a name="updated-graph-apis----1736360---"></a>Bijgewerkte Graph API's <!-- 1736360 -->
 
-We hebben enkele Graph API's voor Intune bijgewerkt die nog in de bètafase zijn. Bekijk de maandelijkse [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) voor meer informatie.
-
+We hebben in deze release enkele Graph API's voor Intune bijgewerkt die nog in de bètafase zijn. Bekijk de maandelijkse [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) voor meer informatie.
 
 ## <a name="week-of-december-4-2017"></a>Week van 4 december 2017
 
@@ -599,6 +693,28 @@ De eerste versie van het gegevensmodel Intune-datawarehouse bevat alleen recente
 
 
 ## <a name="notices"></a>Mededelingen
+
+
+### <a name="coming-soon-workflow-updates-to-intune-administration-ui"></a>Binnenkort beschikbaar: workflowupdates in de beheergebruikersinterface van Intune
+
+Voor Intune wordt de beheerervaring bijgewerkt in de servicerelease van maart. U hoeft geen actie te ondernemen, maar omdat Microsoft ernaar streeft om transparant te zijn, wordt u wel op de hoogte gesteld. Als Android- of Apple-apparaatbeheer is ingeschakeld, verstuurt Intune apparaat- en gebruikersgegevens, zodat deze kunnen worden geïntegreerd in de externe services voor het beheren van apparaten. De verbeterde gebruikersinterface-ervaring voor beheerders uit de servicerelease van maart biedt meer inzicht in welke gegevens worden gedeeld. Deze wijzigingen aan de gebruikersinterface hebben geen gevolgen voor eindgebruikers.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+
+Scenario's waarin toestemming moet worden gegeven om gegevens te delen, zijn:
+- Wanneer u Android for Work inschakelt 
+- Wanneer u Apple MDM-pushcertificaten inschakelt en uploadt 
+- Bij het inschakelen van een van de Apple-services zoals Device Enrollment Program, School Manager en Volume Purchasing Program
+
+In elk geval wordt de toestemming beperkt tot het uitvoeren van een MDM-service, bijvoorbeeld om te bevestigen dat een IT-beheerder heeft goedgekeurd dat Google- of Apple-apparaten worden ingeschreven. U vindt hier documentatie over welke informatie wordt gedeeld wanneer de nieuwe werkstromen live gaan:
+- [Gegevens die Intune naar Google verzendt](data-intune-sends-to-google.md)
+- [Gegevens die Intune naar Apple verzendt](data-intune-sends-to-apple.md)
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+
+U hoeft niets te doen om u voor te bereiden op deze wijziging omdat er slechts sprake is van kleine aanpassingen aan de gebruikersinterface voor werkstromen. Zie het Trust Center (te openen via de koppeling Meer informatie) voor meer informatie over de GDPR-naleving van Microsoft.
+
+
 
 ### <a name="plan-for-change-update-where-you-configure-your-app-protection-policies"></a>Plan voor wijziging: bijwerken waar u uw app-beveiligingsbeleid configureert
 

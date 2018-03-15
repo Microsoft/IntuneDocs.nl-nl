@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Apparaten synchroniseren met Intune om het meest recente beleid en de meest recente acties te verkrijgen
 
@@ -37,11 +37,11 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 
 ## <a name="how-to-sync-a-device"></a>Apparaten synchroniseren
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies een apparaat in de lijst met apparaten die u beheert en kies vervolgens de externe actie **Synchroniseren**.
+4. Kies **Alle apparaten** op de blade **Apparaten**.
+5. Kies een apparaat in de lijst met apparaten die u beheert en kies vervolgens **...Meer**. Selecteer vervolgens de externe actie **Synchroniseren**.
 7. Kies **Ja** om de actie te bevestigen.
 
 

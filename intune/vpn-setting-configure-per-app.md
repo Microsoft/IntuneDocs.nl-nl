@@ -1,7 +1,7 @@
 ---
 title: VPN per app in Microsoft Intune instellen voor iOS-apparaten
-titleSuffix: Intune on Azure
-description: Geef op welke beheerde apps uw VPN mogen gebruiken op iOS-apparaten die met Intune worden beheerd.
+titleSuffix: 
+description: Specificeer welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>VPN per app in Microsoft Intune instellen voor iOS-apparaten
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
-U kunt opgeven welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd. Wanneer u in Intune een VPN per app opgeeft, maakt een eindgebruiker bij het openen van zakelijke documenten automatisch verbinding via uw VPN.
+U kunt specificeren welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd. Wanneer u in Intune een VPN per app maakt, maakt een eindgebruiker bij het openen van zakelijke documenten automatisch verbinding via uw VPN.
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Vereisten voor VPN per app
 

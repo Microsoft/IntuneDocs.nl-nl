@@ -1,12 +1,12 @@
 ---
 title: Gegevensoverdracht tussen iOS-apps beheren
-titlesuffix: Azure portal
-description: Lees dit onderwerp om te begrijpen hoe u de functie iOS openen in en beleidsregels voor het beheren van mobiele apps kunt gebruiken voor het beheren van de gegevensoverdracht tussen apps.
+titlesuffix: Microsoft Intune
+description: Begrijpen hoe u Mobile Application Management-beleid in Microsoft Intune gebruikt om gegevensoverdracht tussen apps te beheren.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-manage-data-transfer-between-ios-apps"></a>Gegevensoverdracht tussen iOS-apps beheren
+# <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
 Tot het beveiligen van uw bedrijfsgegevens behoort ook het beperken van bestandsoverdracht tot apps die door u worden beheerd.  U kunt iOS-apps op de volgende manieren beheren:
 
@@ -100,5 +100,5 @@ De beleidsinstelling **Vereist app-pincode** is bijvoorbeeld eenvoudig visueel t
 [Maak allereerst een app-beveiligingsbeleid en wijs dit toe](app-protection-policies.md) aan de iOS-app. Zie [App-beveiligingsbeleid valideren](app-protection-policies-validate.md) voor meer informatie over het testen van beveiligingsbeleid voor apps.
 
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 [Wat is een app-beveiligingsbeleid in Intune?](app-protection-policy.md)
