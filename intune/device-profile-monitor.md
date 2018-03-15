@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: ce72427900fcc6720048c7430a9194eb38bfe2ce
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
@@ -29,7 +29,7 @@ U kunt de voortgang van de toewijzing van Intune--apparaatprofielen op twee mani
 
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies op de blade **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
 2. Kies het profiel dat u wilt beheren op de blade met de profielenlijst en ga vervolgens op een van de volgende manieren te werk:

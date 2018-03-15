@@ -1,10 +1,10 @@
 ---
-title: Apparaten registreren
-titlesuffix: Azure portal
+title: Inzicht in de inschrijvingservaring voor iOS-apparaten
+titlesuffix: Microsoft Intune
 description: Maak kennis met het inschrijvingsproces door een volledige inschrijvingsprocedure voor een iOS-apparaat te doorlopen.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-enrolling-devices"></a>Aan de slag met het inschrijven van apparaten
+# <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Inzicht in de gebruikerservaring bij het inschrijven van iOS-apparaten
 
 Microsoft Intune helpt u om uw werknemers met mobiele apparaten uit te rusten terwijl uw zakelijke gegevens worden beveiligd. Aangezien uw eindgebruikers interactie met Intune hebben op hun apparaten en niet in de beheerconsole, is het belangrijk dat u goed op de hoogte bent van het registratieproces. Alleen dan kunt u goed ontworpen nalevingsbeleid combineren met een prettige registratie-ervaring voor uw gebruikers. Dit is vooral belangrijk omdat uw gebruikers precies weten welke gegevens u als beheerder kunt zien:
 

@@ -1,10 +1,10 @@
 ---
 title: Ondersteuning voor Microsoft Intune krijgen
-titlesuffix: Azure portal
-description: Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen."
+titlesuffix: Microsoft Intune
+description: Online- en telefonische ondersteuning verkrijgen voor betaalde Microsoft Intune-abonnementen en proefabonnementen.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnementsondersteuning voor Microsoft Intune. Ondersteuning is online en telefonisch beschikbaar voor betaalde abonnementen en proefabonnementen. Online technische ondersteuning is beschikbaar in het Engels en Japans. Telefonische ondersteuning en online-ondersteuning bij factureren zijn in meer talen beschikbaar.
 
 >[!IMPORTANT]
-> Neem voor technische ondersteuning voor producten die met Intune werken maar die niet door Microsoft zijn gemaakt, bijvoorbeeld SaaSwedo, Cisco of Lookout, eerst contact op met de leverancier van dat product. Open pas een ondersteuningsaanvraag voor Intune als u zeker weet dat het andere product juist is geconfigureerd.
+> Neem voor technische ondersteuning voor externe producten die met Intune werken (zoals SaaSwedo, Cisco of Lookout), contact op met de leverancier van dat product. Open pas een ondersteuningsaanvraag voor Intune als u zeker weet dat het andere product juist is geconfigureerd.
 
 ## <a name="create-an-online-support-ticket"></a>Een onlineondersteuningsticket maken
 
@@ -41,31 +41,37 @@ Als IT-beheerder kunt u vanuit Azure Portal een ondersteuningsticket maken door 
 2. Selecteer **Nieuwe ondersteuningsaanvraag** op de pagina Help en ondersteuning van Azure.
 
     ![Schermopname van de pagina Help en ondersteuning in Azure Portal met de koppeling Nieuwe ondersteuningsaanvraag gemarkeerd](./media/azure-support-ticket-link.png)
+
 3. Op de blade **Basis** moet u voor de meeste technische problemen met Intune de volgende opties kiezen:
     - **Type probleem**: **Technisch**
     - **Service**: **Microsoft Intune**
-    - **Ondersteuningsplan**: **Inclusief technische ondersteuning** (voor technische problemen met Intune is ondersteuning gratis.)
-
+    - **Ondersteuningsplan**: **Inclusief technische ondersteuning** (voor technische problemen met Intune is ondersteuning gratis) of **Premier**
+    
     >[!IMPORTANT]
-    >Ondersteuning voor Intune en voor Intune in combinatie met Configuration Manager is gratis. Als u details wilt bekijken van Premier Support, raadpleegt u de Engelstalige documentatie [Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx), paragraaf 5.3.3 'Advisory Services'.
+    >- Als u een **Premier-klant** bent en u **Ondersteuningsplan: Premier** niet ziet, neemt u contact op met uw Technical Account Manager voor hulp bij het koppelen van het contract aan de tenant.
+    >- Ondersteuning voor Intune en voor Intune in combinatie met Configuration Manager is gratis. Als u details wilt bekijken van Premier Support, raadpleegt u de Engelstalige documentatie [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/), paragraaf 5.3.3 'Advisory Services'.
 
     Kies **Volgende** om door te gaan.
+
 4. Selecteer op de blade **Probleem** de volgende opties om er zeker van te zijn dat uw aanvraag wordt behandeld door iemand die gespecialiseerd is in dat onderwerp:
+
     - **Ernst**
     - **Type probleem**
     - **Categorie**
 
-    Aan de hand van deze gegevens kunnen we ook **gerelateerde help** bieden, zodat u het probleem mogelijk kunt oplossen zonder dat u een ticket hoeft te maken.
+    Aan de hand van deze gegevens kunnen we ook **gerelateerde hulp** bieden, zodat u het probleem mogelijk kunt oplossen zonder dat u een ticket hoeft te maken.
 
     ![Schermopname van de pagina Help en ondersteuning in Azure Portal met ingevulde details van het probleem en gevonden oplossingen op basis van het probleem](./media/support-need-solutions.png)
 
-    Voer de volgende informatie zodat wij het probleem kunnen onderzoeken en oplossen:
-    -   **Details**
+    Voer de volgende informatie in zodat het ondersteuningsteam het probleem kan onderzoeken en oplossen:
+    
+    - **Details**
     - **Datum**
     - **Tijd**
-    - Aanvullende gegevens
+    - **Aanvullende gegevens**
 
     Kies **Volgende**.
+
 5. Geef**contactgegevens** op voor deze ondersteuningsaanvraag. Microsoft Ondersteuning gebruikt deze informatie om contact met u op te nemen.
 6. Kies **Maken** om uw ondersteuningsaanvraag te verzenden.
 
@@ -74,6 +80,5 @@ Als IT-beheerder kunt u vanuit Azure Portal een ondersteuningsticket maken door 
 
 ## <a name="additional-resources"></a>Extra resources
 - [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](phone-support-contact.md)
-- [Servicecentrum voor volumelicenties](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Ondersteuning voor facturerings- en abonnementsbeheer](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volumelicenties](http://go.microsoft.com/fwlink/p/?LinkID=282015)
