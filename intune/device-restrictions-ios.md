@@ -1,27 +1,26 @@
 ---
-title: Intune-apparaatbeperkingsinstellingen voor iOS
-titleSuffix: Azure portal
+title: Microsoft Intune-apparaatbeperkingsinstellingen voor iOS
+titleSuffix: 
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op iOS-apparaten.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
+In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -95,7 +94,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 ## <a name="password"></a>Wachtwoord
 -   **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
     -   **Eenvoudige wachtwoorden**: hiermee staat u het gebruik van eenvoudige wachtwoorden toe, zoals 0000 en 1234.
-    -   **Vereist wachtwoordtype**: hiermee geeft u het type wachtwoord op dat vereist is, zoals alleen numeriek of alfanumeriek.
+    -   **Vereist wachtwoordtype**: hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek.
     -   **Het minimumaantal niet-alfanumerieke tekens in een wachtwoord**: hiermee geeft u het aantal symbooltekens (zoals **#** of **@**) op dat het wachtwoord moet bevatten.
     -   **Minimale wachtwoordlengte**: hiermee geeft u het minimum aantal tekens op voor het wachtwoord.
     -   **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal mislukte aanmeldingspogingen op dat is toegestaan voordat het apparaat wordt gewist.
@@ -107,7 +106,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 - **Wachtwoordcode wijzigen (alleen onder supervisie)**: hiermee kan de wachtwoordcode niet langer worden gewijzigd, toegevoegd of verwijderd.
     - **Wijziging van vingerafdruk (alleen onder supervisie)**: hiermee kan de gebruiker TouchID-instellingen niet langer wijzigen, toevoegen of verwijderen.
 
-<sup>1</sup> Wanneer u de instellingen **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld** en **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
+<sup>1</sup> Wanneer u de instellingen **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld** en **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **vijf** minuten, wordt het scherm na vijf minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens vijf minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat vijf minuten later vergrendeld.
 
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
@@ -182,8 +181,8 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 
 In de lijst Apps weergeven of verbergen kunt u een van de volgende lijsten configureren (vereist toezicht voor apparaten met iOS 9.3 of hoger).
 
-Lijst met **verborgen apps**: een lijst opstellen met verborgen apps die worden verborgen voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
-Lijst met **zichtbare apps**: een lijst opstellen met apps die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
+Lijst met **verborgen apps**: een lijst met apps opgeven die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
+Lijst met **zichtbare apps**: een lijst met apps opgeven die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
 Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store.
 
@@ -240,7 +239,7 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 -   **Documentsynchronisatie met iCloud (alleen onder toezicht)**: hiermee staat u synchronisatie van documenten en sleutelwaarden naar uw iCloud-opslagruimte toe.
 -   **Synchroniseren van Photo Stream naar iCloud**: hiermee kunnen gebruikers **Mijn fotostream** inschakelen op hun apparaat zodat foto's kunnen worden gesynchroniseerd met iCloud en beschikbaar zijn op alle apparaten van de gebruikers.
 -   **Versleutelde back-up**: hiermee geeft u aan dat back-ups van het apparaat moeten worden versleuteld.
--   **iCloud-fotobibliotheek**: als deze optie wordt ingesteld op **Nee**, wordt het gebruik uitgeschakeld van de iCloud-afbeeldingsbibliotheek waarmee gebruikers foto's en video's in de cloud kunnen opslaan.    Foto's die niet volledig naar het apparaat zijn gedownload vanaf de iCloud-fotobibliotheek, worden van het apparaat verwijderd als deze optie is ingesteld op **Nee**.
+-   **iCloud-fotobibliotheek**: als deze optie wordt ingesteld op **Nee**, wordt het gebruik uitgeschakeld van de iCloud-afbeeldingsbibliotheek waarmee gebruikers foto's en video's in de cloud kunnen opslaan.   Foto's die niet volledig naar het apparaat zijn gedownload vanaf de iCloud-fotobibliotheek, worden van het apparaat verwijderd als deze optie is ingesteld op **Nee**.
 -   **Beheerde apps synchroniseren met de cloud**: hiermee staat u toe dat apps die u met Intune beheert, gegevens synchroniseren naar het iCloud-account van de gebruikers.
 -   **Streaming van gedeelde foto's**: stel deze optie in op **Nee** om **Foto's delen via iCloud** uit te schakelen op het apparaat.
 -   **Voortzetting van activiteit**: hiermee staat u toe dat gebruikers op een ander iOS- of macOS-apparaat kunnen doorgaan met werk waaraan ze zijn begonnen op een iOS-apparaat (Handoff).
@@ -343,7 +342,7 @@ Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als
 
 ### <a name="unmarked-email-domains"></a>Niet-gemarkeerde e-maildomeinen
 
-Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wanneer eindgebruikers een e-mail ontvangen dat afkomstig is van een ander domein dan dat u hebt geconfigureerd, wordt de e-mail in de map iOS Mail gemarkeerd als niet-vertrouwd.
+Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wanneer eindgebruikers een e-mail ontvangen die afkomstig is van een ander domein dan het domein dat u hebt geconfigureerd, wordt de e-mail in de iOS Mail-app gemarkeerd als niet-vertrouwd.
 
 
 ### <a name="managed-web-domains"></a>Beheerde webdomeinen

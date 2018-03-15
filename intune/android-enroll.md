@@ -1,6 +1,6 @@
 ---
-title: Android-apparaten inschrijven bij Intune | Microsoft Docs
-titlesuffix: Azure portal
+title: Android-apparaten inschrijven in Intune
+titlesuffix: Microsoft Intune
 description: Meer informatie over het inschrijven van Android-apparaten in Intune.
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -43,7 +43,7 @@ Als u apparaatbeheer wilt inschakelen, moeten uw gebruikers hun apparaat inschri
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>Registratie van Android for Work-apparaten inschakelen
 
-Als u het werkprofiel op apparaten met [ondersteuning voor Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) wilt beheren, moet u een Android for Work-binding toevoegen aan Intune. Om apparaten te registreren die ondersteuning bieden voor Android for Work, maar die eerder zijn geregistreerd als gewone Android-apparaten, moet u de inschrijving van de apparaten ongedaan maken en ze vervolgens opnieuw inschrijven.
+Als u het werkprofiel op apparaten met [ondersteuning voor Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) wilt beheren, moet u een Android for Work-binding toevoegen aan Intune. Als u apparaten wilt registreren in Android for Work, maar die apparaten zijn al geregistreerd als gewone Android-apparaten, moet u de inschrijving van de apparaten ongedaan maken en ze vervolgens opnieuw inschrijven.
 
 Als u Android for Work-apparaten inschrijft met een [Device Enrollment Manager](device-enrollment-manager-enroll.md)-account, kunt u per account 10 apparaten inschrijven.
 
@@ -58,7 +58,7 @@ Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbere
     Meld u als Intune-beheerder aan bij Azure Portal en kies **Meer services** > **Bewaking en beheer** > **Intune**.
 
    a. Kies op de blade **Intune** de optie **Apparaatinschrijving** > **Inschrijving van Android for Work** en klik op **Configureren** om de Android for Work-website van Google Play te openen. De website wordt op een nieuw tabblad in de browser geopend.
-   ![Schermopname met een koppeling om de Android for Work-binding te configureren](./media/android-work-bind.png)
+   ![Android for Work-registratiescherm](./media/android-work-bind.png)
 
    b. **Aanmelden bij Google**<br>
    Meld u aan op de aanmeldingspagina van Google met het Google-account dat wordt gekoppeld aan alle Android for Work-beheertaken voor deze tenant. Dit is het Google-account dat de IT-beheerders van uw bedrijf gebruiken voor het beheren en publiceren van apps in de Play for Work-console. U kunt een bestaand Google-account gebruiken of een nieuw account maken.  Het account dat u kiest moet niet worden gekoppeld aan een G-Suite-domein.
@@ -79,7 +79,7 @@ Volg deze stappen voor het goedkeuren van de Intune bedrijfsportal:
 
 1.  Ga naar de bedrijfsportal-app in de [beheerde Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Meld u aan bij de beheerde Google Play Store met hetzelfde Google-account dat u hebt gebruikt om de binding voor Android for Work te configureren.
-3.  Klik op **Goedkeuren.**  Hiermee wordt een nieuw dialoogvenster geopend.
+3.  Klik op **Goedkeuren** om een nieuw dialoogvenster te openen.
 4.  Controleer de machtigingen in dit dialoogvenster en klik vervolgens op **Goedkeuren**. U moet deze machtigingen toestaan om de bedrijfsportal-app het werkprofiel op het apparaat te laten beheren.
 5.  Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** en klik vervolgens op **Opslaan.**
 

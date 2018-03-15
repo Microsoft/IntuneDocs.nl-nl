@@ -1,7 +1,7 @@
 ---
-title: Android Store-apps toevoegen aan Intune
-titleSuffix: Azure portal
-description: Meer informatie over het toevoegen van Android Store-apps aan Intune.
+title: Android Store-apps toevoegen aan Microsoft Intune
+titleSuffix: 
+description: Meer informatie over hoe u Android Store-apps toevoegt aan Microsoft Intune.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdf00d8adc5a854f90b59c6066d6f0ab7c6ae94a
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Android Store-apps toevoegen aan Microsoft Intune
 

@@ -1,12 +1,12 @@
 ---
-title: Apparaten beheren met Intune
-titleSuffix: Intune on Azure
-description: Meer informatie over het weergeven van apparaten die u met Intune beheert en de verschillende bewerkingen die u op deze apparaten kunt uitvoeren.
+title: Apparaten beheren met Microsoft Intune
+titleSuffix: 
+description: Bekijk de apparaten die u met Intune beheert en kom meer te weten over de verschillende bewerkingen die u op deze apparaten kunt uitvoeren.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -29,8 +29,8 @@ Als IT-beheerder moet u ervoor zorgen dat de beheerde apparaten de bronnen lever
 
 De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u de mogelijkheid om taken op afstand voor deze apparaten uit te voeren. Toegang krijgen tot de workload:
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies in **Intune** de optie **Apparaten**.
 4. U kunt informatie over apparaten weergeven en de vermelde acties voor externe apparaten als volgt uitvoeren:
     - **Overzicht**: een momentopname van de ingeschreven apparaten die u kunt beheren.
@@ -38,10 +38,12 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
     - **Azure AD-apparaten**: een lijst met apparaten die zijn ingeschreven bij, of deel uitmaken van Azure Active Directory (AD). Meer informatie over [Azure AD-apparaatbeheer](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
     - **Apparaatacties**: een geschiedenis van de acties op afstand die zijn uitgevoerd op het apparaat, inclusief de actie, de status ervan, de persoon die de actie heeft gestart en het tijdstip.
 
-    ![Apparaatacties bewaken](./media/monitor-device-actions.png)
+        ![Schermafbeelding van acties voor het bewaken van apparaten](./media/monitor-device-actions.png)
 
-    - **TeamViewer**: met de TeamViewer-service kunnen gebruikers van met Intune beheerde Android-apparaten hulp op afstand krijgen van hun IT-beheerder. Meer informatie over [TeamViewer](device-profile-android-teamviewer.md).
-
+    - **Auditlogboeken**: auditlogboeken bevatten een lijst met activiteiten die een wijziging in Microsoft Intune genereren. Meer informatie over [auditlogboeken](monitor-audit-logs.md).
+    - **TeamViewer-connector**: met de TeamViewer-service kunnen gebruikers van met Intune beheerde Android-apparaten hulp op afstand krijgen van hun IT-beheerder. Meer informatie over [TeamViewer](device-profile-android-teamviewer.md).
+    - **Help en ondersteuning**: problemen oplossen, ondersteuning aanvragen of de status van Intune weergeven.  
+    
 ## <a name="available-device-actions"></a>Beschikbare apparaatbedreigingen
 De beschikbaarheid van de acties is afhankelijk van het apparaatplatform en de configuratie van het apparaat.
 

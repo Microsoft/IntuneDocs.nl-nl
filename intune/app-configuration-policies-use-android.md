@@ -1,7 +1,7 @@
 ---
-title: App-configuratiebeleidsregels voor beheerde Android-apparaten | Microsoft Docs
-titlesuffix: Azure portal
-description: Informatie over het gebruik van het configuratiebeleid voor apps om configuratiegegevens te bieden aan een Android for Work-app wanneer deze wordt uitgevoerd.
+title: App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
+titlesuffix: Microsoft Intune
+description: App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te leveren wanneer gebruikers een Android for Work-app uitvoeren.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 
@@ -30,8 +30,8 @@ App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te l
 > [!Note]  
 > Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of deze de app zo heeft geconstrueerd dat deze app-configuratiebeleidsregels ondersteunt.
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies de workload **Mobiele apps**.
 4. Kies **App-configuratiebeleidsregels** in de groep **Beheren** en kies vervolgens **Toevoegen**.
 5. Stel de volgende details in:
@@ -41,7 +41,7 @@ App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te l
       De beschrijving van het profiel die in Azure Portal wordt weergegeven.
     - **Type apparaatinschrijving**  
       Kies **Beheerde apparaten**.
-6. Selecteer **Android** voor **Platform**.
+6. Selecteer **Android for Work** voor **Platform**.
 7. Selecteer **Gekoppelde app** om de app te kiezen waarvoor u een app-configuratiebeleid wilt definiëren. Selecteer in de lijst met Android for Work-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
 8. Selecteer **Configuratie-instellingen**. U kunt configuraties instellen door gebruik te maken van:
     - [Configuration Designer](#Use-the-configuration-designer)
@@ -77,19 +77,20 @@ Wanneer de toegewezen app op een apparaat wordt uitgevoerd, worden de instelling
 
 U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-apparaatfuncties. Android-apps die apparaatmachtigingen vereisen, zoals voor toegang tot uw locatie of de apparaatcamera, vragen gebruikers de machtiging te accepteren of te weigeren. Als een app bijvoorbeeld gebruikmaakt van de microfoon van het apparaat, wordt de gebruiker gevraagd de app toestemming te verlenen voor het gebruik van de microfoon.
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
-3. Kies **Mobiele apps**. Kies onder **Beheren** **App-configuratiebeleidsregels** en kies vervolgens **Toevoegen**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+3. Kies **Mobiele apps**.
+3. Kies onder **Beheren** **App-configuratiebeleidsregels** en kies vervolgens **Toevoegen**.
 4. Stel de volgende details in:
     - **Naam**. De naam van het profiel die in Azure Portal wordt weergegeven.
     - **Beschrijving**. De beschrijving van het profiel die in Azure Portal wordt weergegeven.
-    - **Platform**. Selecteer **Android**.
-    - **Type apparaatinschrijving**. **Beheerde apparaten** is vooraf voor u geselecteerd.
+    - **Type apparaatinschrijving**. Selecteer **Beheerde apparaten**.
+    - **Platform**. Selecteer **Android for Work**.
 5. Selecteer **Gekoppelde app** om een app te kiezen waarvoor u een configuratiebeleid wilt opgeven. Selecteer in de lijst met Android for Work-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
 6. Selecteer **Machtigingen** en kies vervolgens **Toevoegen**.
 7. Selecteer in de lijst met beschikbare app-machtigingen en kies vervolgens **OK**.
 8. Selecteer een optie voor elke machtiging die aan dit beleid moet worden verleend:
-    - **Vragen**. De gebruiker vragen om de machtiging te accepteren of te weigeren
+    - **Vragen**. De gebruiker vragen om de machtiging te accepteren of te weigeren.
     - **Automatisch verlenen**. Automatisch goedkeuren zonder de gebruiker hiervan op de hoogte te stellen.
     - **Automatisch weigeren**. Automatisch weigeren zonder de gebruiker hiervan op de hoogte te stellen.
 9. Als u het configuratiebeleid voor apps wilt toewijzen, selecteert u het, selecteert u vervolgens **Toewijzing** en selecteert u ten slotte **Groepen selecteren**.

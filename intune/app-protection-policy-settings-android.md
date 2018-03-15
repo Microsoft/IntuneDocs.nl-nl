@@ -1,12 +1,12 @@
 ---
 title: Beveiligingsbeleidsinstellingen voor Android-apps
-titlesuffix: Azure portal
-description: In dit onderwerp worden de beveiligingsbeleidsinstellingen voor Android-apparaten beschreven.
+titlesuffix: Microsoft Intune
+description: In dit onderwerp worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10c09b4669371fbb61ad4d30f44fcaf5e2db3482
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor Android-apps
-De in dit onderwerp beschreven beleidsinstellingen kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op het tabblad **Instellingen** in Azure Portal.
+In dit onderwerp worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
 Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie van gegevens en instellingen voor toegang. In dit onderwerp verwijst de term *door beleid beheerde apps* naar apps die zijn geconfigureerd met een app-beveiligingsbeleid.
 
 ##  <a name="data-relocation-settings"></a>Instellingen voor herlocatie van gegevens
@@ -30,7 +30,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 | Instelling | Gebruik | Standaardwaarde(n) |
 |------|------|------|
 | **Back-ups van Android voorkomen** | Kies **Ja** om te voorkomen dat deze app back-ups van werk- of schoolgegevens in de [Android-back-upservice](https://developer.android.com/google/backup/index.html) maakt. Kies **Nee** om toe te staan dat deze app een back-ups maakt van werk- of schoolgegevens.| Ja |
-| **App mag gegevens overdragen naar ander apps** | Geef aan welke apps gegevens uit deze app kunnen ontvangen: <ul><li> **Door beleid beheerde apps**: overdracht alleen toestaan naar andere door beleid beheerde apps.</li> <li>**Alle apps**: overdracht naar alle apps toestaan. </li> <li>**Geen**: geen gegevensoverdracht naar apps toestaan, met inbegrip van andere door beleid beheerde apps.</li></ul> <p>Er zijn enkele uitzonderings-apps en -services waarnaar Intune gegevens mag overbrengen. Zie [Uitzonderingen voor gegevensoverdracht](#Data-transfer-exemptions) voor een volledige lijst met apps en services.<p>**Opmerking:** Intune biedt momenteel geen ondersteuning voor de functie Android Instant Apps. Via Intune worden gegevensverbindingen naar of van de app geblokkeerd.  Zie de documentatie voor Android-ontwikkelaars voor meer informatie over [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).</p>| Alle apps |
+| **App mag gegevens overdragen naar ander apps** | Geef aan welke apps gegevens uit deze app kunnen ontvangen: <ul><li> **Door beleid beheerde apps**: overdracht alleen toestaan naar andere door beleid beheerde apps.</li> <li>**Alle apps**: overdracht naar alle apps toestaan. </li> <li>**Geen**: geen gegevensoverdracht naar apps toestaan, met inbegrip van andere door beleid beheerde apps.</li></ul> <p>Er zijn enkele uitzonderings-apps en -services waarnaar Intune standaard gegevens mag overbrengen. U kunt bovendien uw eigen uitzonderingen maken als u wilt toestaan dat gegevens worden overgedragen naar een app die geen ondersteuning biedt voor Intune-apps. Zie [Uitzonderingen voor gegevensoverdracht](#Data-transfer-exemptions) voor meer informatie.<p>**Opmerking:** Intune biedt momenteel geen ondersteuning voor de functie Android Instant Apps. Via Intune worden gegevensverbindingen naar of van de app geblokkeerd.  Zie de documentatie voor Android-ontwikkelaars voor meer informatie over [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).</p>| Alle apps |
 | **App mag gegevens ontvangen van andere apps** | Geef aan welke apps gegevens naar deze app kunnen overdragen: <ul><li>**Door beleid beheerde apps**: overdracht alleen toestaan vanuit andere door beleid beheerde apps.</li><li>**Alle apps**: gegevensoverdracht vanuit alle apps toestaan.</li><li>**Geen**: geen gegevensoverdracht vanuit apps toestaan, met inbegrip van andere door beleid beheerde apps. </li></ul> <p>Er zijn enkele uitzonderingsapps en -services van waaruit Intune gegevensoverdracht mag toestaan. Zie [Uitzonderingen voor gegevensoverdracht](#Data-transfer-exemptions) voor een volledige lijst met apps en services. | Alle apps |
 | **'Opslaan als' voorkomen** | Kies **Ja** als u het gebruik van de optie Opslaan als wilt uitschakelen in deze app. Selecteer **Nee** als u het gebruik van de optie Opslaan als wilt toestaan. <p><br>**Selecteer naar welke opslagservices bedrijfsgegevens kunnen worden opgeslagen** <br>Gebruikers kunnen naar de geselecteerde services opslaan (OneDrive voor Bedrijven, SharePoint en lokale opslag). Alle andere services worden geblokkeerd.</p> | Nee <br><br> 0 geselecteerd |
 | **Knippen, kopiëren en plakken met andere apps beperken** | Geef op wanneer knip-, kopieer- en plakbewerkingen voor deze app kunnen worden gebruikt. U kunt kiezen uit: <ul><li>**Geblokkeerd**: geen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere apps.</li><li>**Door beleid beheerde apps**: alleen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere door beleid beheerde apps.</li><li>**Door beleid beheerde apps met Plakken in**: knippen en kopiëren toestaan tussen deze app en andere door beleid beheerde apps. Gegevens uit alle apps mogen in deze app worden geplakt.</li><li>**Elke app**: geen beperkingen voor knip-, kopieer- en plakbewerkingen vanuit en naar deze app. | Elke app |
@@ -51,7 +51,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
   Voor deze apps en services is gegevensoverdracht naar en van Intune-beheerde apps volledig toegestaan.
 
-  |Naam van app/service | Description |
+  |Naam van app/service | Beschrijving |
   | ------ | ---- |
   | com.android.phone | Systeemeigen phone-app
   | com.android.vending | Google Play Store |
@@ -66,14 +66,14 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
   ### <a name="conditional-exemptions"></a>Voorwaardelijke uitzonderingen
   Voor deze apps en services is gegevensoverdracht naar en van Intune-beheerde apps onder bepaalde voorwaarden toegestaan.
 
-  |Naam van app/service | Description | Uitzonderingsvoorwaarde|
+  |Naam van app/service | Beschrijving | Uitzonderingsvoorwaarde|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome-browser | Chrome wordt gebruikt voor een aantal webweergaveonderdelen op Android 7.0+ en is nooit verborgen. Gegevensstroom naar en van de app is echter altijd beperkt.
   | com.skype.raider | Skype | Voor de Skype-app zijn alleen bepaalde acties die in een telefonische oproep resulteren toegestaan. |
   | com.android.providers.media | Android media-inhoudsprovider | Voor de media-inhoudsprovider is alleen de actie beltoonselectie toegestaan. |
   | com.google.android.gms; com.google.android.gsf | Google Play-Services-pakketten | Voor deze pakketten zijn Google Cloud Messaging-acties zoals pushmeldingen toegestaan. |
 
-
+Zie [Beleidsuitzonderingen voor gegevensoverdracht voor apps](app-protection-policies-exception.md) voor meer informatie. 
 
 ##  <a name="access-settings"></a>Toegangsinstellingen
 
@@ -81,7 +81,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 |------|------|------|
 | **Pincode is vereist voor toegang** | Kies **Ja** om een pincode te vereisen voor gebruik van deze app. De eerste keer dat de gebruiker de app uitvoert in een aan werk of school gerelateerde context, wordt de gebruiker gevraagd deze pincode in te stellen. Standaardwaarde = **Ja**.<br><br> Configureer de volgende instellingen voor pincodesterkte: <ul><li>**Aantal pogingen voordat pincode opnieuw wordt ingesteld**: geef het aantal pogingen voor de gebruiker op om de pincode in te voeren voordat de gebruik deze opnieuw moet instellen. Standaardwaarde = **5**.</li><li> **Eenvoudige pincode toestaan:** kies **Ja** als gebruikers eenvoudige pincodes mogen gebruiken, zoals 1234 of 1111. Kies **Nee** als ze geen eenvoudige tekenreeksen mogen gebruiken. Standaardwaarde = **Ja**. </li><li> **Lengte van de pincode:** geef het minimale aantal cijfers op waaruit een pincode moet bestaan. Standaardwaarde = **4**. <br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal.</li><li> **Vingerafdruk in plaats van pincode toestaan (Android 6.0+)**: selecteer **Ja** als de gebruiker in plaats van een pincode [vingerafdrukverificatie](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) mag gebruiken voor toegang tot apps. Standaardwaarde = **Ja**.</li></ul> Op Android-apparaten kunt u gebruikers hun identiteit laten aantonen met behulp van [Android-vingerafdrukverificatie](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) in plaats van een pincode. Wanneer gebruikers deze app proberen te gebruiken via hun werk- of schoolaccount, moeten ze hun vingerafdruk in plaats van een pincode gebruiken. </li></ul>| Pincode vereisen: Ja <br><br> Pogingen om pincode opnieuw in te stellen: 5 <br><br> Eenvoudige pincode toestaan: Ja <br><br> Lengte pincode: 4 <br><br> Vingerafdruk toestaan: Ja |
 | **Bedrijfsreferenties vereisen voor toegang** | Kies **Ja** om te vereisen dat gebruikers zich aanmelden met hun werk- of schoolaccount in plaats van een pincode voor toegang tot apps. Als u deze waarde op **Ja** instelt, overschrijft dit de vereisten voor de pincode of Touch-ID.  | Nee |
-| **De uitvoering blokkeren van beheerde apps die op jailbroken of geroote apparaten worden uitgevoerd** |Kies **Ja** om te voorkomen dat deze app wordt uitgevoerd op jailbroken of geroote apparaten. De gebruiker kan deze app nog steeds gebruiken voor privétaken maar moet voor het openen van werk- of schoolgegevens in deze app een ander apparaat gebruiken. | Ja |
+| **Verhinderen dat beheerde apps op gekraakte of geroote apparaten worden uitgevoerd** |Kies **Ja** om te voorkomen dat deze app wordt uitgevoerd op jailbroken of geroote apparaten. De gebruiker kan deze app nog steeds gebruiken voor privétaken maar moet voor het openen van werk- of schoolgegevens in deze app een ander apparaat gebruiken. | Ja |
 | **Toegangsvereisten opnieuw controleren na (minuten)** | Configureer de volgende instellingen: <ul><li>**Time-out**: dit is het aantal minuten waarna de (eerder in het beleid gedefinieerde) toegangsvereisten opnieuw worden gecontroleerd. Wanneer een beheerder bijvoorbeeld invoeren van een pincode inschakelt en apparaten met roottoegang blokkeert in het beleid, moet een gebruiker die een door Intune beheerde app opent een pincode invoeren en de app gebruiken op een apparaat zonder roottoegang. Wanneer u deze instelling gebruikt, hoeft de gebruiker nog **30 minuten** (standaardwaarde) geen pincode in te voeren of nog een controle op rootdetectie te ondergaan in een door Intune beheerde app. <br><br> **Opmerking:** in Android wordt de pincode gedeeld tussen alle apps die door Intune worden beheerd. De timer van de pincode wordt opnieuw ingesteld zodra de app de voorgrond van het apparaat verlaat. De gebruiker hoeft voor de duur van de time-out die is opgegeven met deze instelling geen pincode in te voeren voor een door Intune beheerde app die de pincode deelt. <br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal.<br></li><li>**Offline respijtperiode**: het aantal minuten dat MAM-apps offline kunnen worden uitgevoerd. Geef de tijd (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **720** minuten (12 uur). Nadat deze periode is verstreken, is gebruikersverificatie voor AAD vereist om de app te blijven uitvoeren.<br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal.</li></ul>| Time-out: 30 <br><br> Offline: 720 |
 | **Offline interval (in dagen) voordat app-gegevens worden gewist** | Nadat de app zoveel dagen (door de beheerder bepaald) offline is uitgevoerd, moet de gebruiker verbinding maken met het netwerk en opnieuw gebruikersverificatie uitvoeren. Als de gebruiker is geverifieerd, kan deze opnieuw toegang krijgen tot de gegevens en wordt het offline-interval opnieuw ingesteld.  Als de gebruiker niet kan worden geverifieerd, worden het gebruikersaccount en de gebruikersgegevens selectief gewist.  Zie [Alleen zakelijke gegevens wissen uit door Intune beheerde apps](https://docs.microsoft.com/intune/apps-selective-wipe) voor meer informatie over welke gegevens door selectief wissen worden verwijderd.<br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal. | 90 dagen |
 | **Schermopname en Android Assistant blokkeren (Android 6.0+)** | Kies **Ja** om schermopnames en gebruik van de **Android Assistent**-functies van het apparaat te blokkeren bij gebruik van deze app. Als u **Ja** kiest, wordt ook de voorbeeldafbeelding van de app-schakelbaar vervaagd bij gebruik van deze app in combinatie met een werk- of schoolaccount. | Nee |

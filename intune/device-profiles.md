@@ -1,12 +1,11 @@
 ---
-title: Wat zijn apparaatprofielen in Microsoft Intune?
-titlesuffix: Azure portal
-description: Meer informatie over Intune-apparaatprofielen en hoe u ze kunt gebruiken bij het beheren en beveiligen van apparaten in uw bedrijf.
+title: Apparaatprofielen in Microsoft Intune - Azure | Microsoft Docs
+description: Overzicht van de verschillende Microsoft Intune-apparaatprofielen, waaronder functies, beperkingen, e-mail, Wi-Fi, VPN, onderwijs, certificaten, Windows 10-upgrade, BitLocker en Windows Defender, Windows Information Protection en aangepaste configuratie-instellingen voor apparaten in de Azure-portal. Gebruik deze profielen om gegevens en apparaten in uw bedrijf te beheren en beveiligen.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/23/2017
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,75 +14,125 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Wat zijn Microsoft Intune-apparaatprofielen?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Gebruik de Microsoft Intune-workload **Apparaatconfiguratie** om instellingen en functies te beheren op alle apparaten die u beheert. U gebruikt deze workload voornamelijk om apparaatprofielen te maken, waarmee u vele verschillende functies kunt beheren en configureren op apparaten.
+Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt inschakelen of uitschakelen. Deze instellingen en functies worden beheerd met behulp van profielen. Enkele profielvoorbeelden zijn: 
 
-Als u deze workload opent, ziet u de volgende opties:
+- Een Wi-Fiprofiel dat verschillende apparaten toegang geeft tot uw zakelijke wifinetwerk
+- Een VPN-profiel dat verschillende apparaten toegang geeft tot uw VPN-server in uw bedrijfsnetwerk
 
-- **Overzicht**: deze pagina biedt u statusinformatie en rapporten die u helpen apparaatconfiguraties te bewaken die u hebt toegewezen aan gebruikers en apparaten.
-- **Profielen beheren**: in deze sectie kunt u apparaatconfiguratieprofielen maken. U vindt verderop in dit onderwerp een lijst met alle profieltypen die u kunt maken.
-- **Certificeringsinstantie instellen**: deze werkstroom leidt u door de stappen die nodig zijn om Intune-certificaatprofielen te configureren.
+Dit onderwerp bevat een overzicht van de verschillende profielen die u kunt maken voor uw apparaten. Gebruik deze profielen om bepaalde functies op de apparaten toe te staan of niet toe te staan.
 
-## <a name="getting-started"></a>Aan de slag
+## <a name="before-you-begin"></a>Voordat u begint
+Als u de beschikbare functies wilt zien, opent u de [Azure Portal](https://portal.azure.com) en opent u uw Intune-resource. 
 
-De werkstroom voor het maken van apparaatprofielen is gelijk voor alle profielen. Lees [Apparaatconfiguratieprofielen maken in Microsoft Intune](device-profile-create.md) voor informatie over het maken van profielen. Lees vervolgens verder voor specifieke informatie over het maken van instellingen voor elk profieltype.
+**Apparaatconfiguratie** omvat de volgende opties:
 
-U kunt de volgende mogelijkheden op uw apparaten beheren:
+- **Overzicht**: geeft de status van de profielen weer en biedt aanvullende details over de profielen die u hebt toegewezen aan gebruikers en apparaten
+- **Beheren**: apparaatprofielen maken en aangepaste [PowerShell-scripts](intune-management-extension.md) uploaden om uit te voeren binnen het profiel
+- **Bewaken**: de status van een profiel controleren op slagen of falen en ook logboeken op uw profielen bekijken
+- **Configureren**: een certificeringsinstantie (SCEP of PFX) toevoegen of Telecom-onkostenbeheer aan het profiel toevoegen
 
-## <a name="device-features"></a>Apparaatfuncties
+## <a name="create-the-profile"></a>Het profiel maken
 
-Met apparaatfuncties kunt u functies op iOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en configuraties voor gedeelde apparaten.
-Zie [Instellingen voor apparaatfuncties configureren](device-features-configure.md) voor meer informatie. Biedt ondersteuning voor: iOS en macOS.
+[Apparaatprofielen maken](device-profile-create.md) biedt stapsgewijze instructies om een profiel te maken. 
 
-## <a name="device-restrictions"></a>Apparaatbeperkingen
-Met apparaatbeperkingen kunt u allerlei instellingen uit verschillende categorieën beheren, zoals beveiliging, hardware en instellingen voor het delen van gegevens. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
-Zie [Instellingen voor apparaatfuncties configureren in Microsoft Intune](device-restrictions-configure.md) voor meer informatie. Ondersteunt: Android, iOS, macOS, Windows 10 en Windows 10 Team.
+## <a name="device-features-profile"></a>Profiel Apparaatfuncties
 
-## <a name="email"></a>E-mail
-U kunt met e-mailprofielen de e-mailinstellingen voor Exchange ActiveSync maken, toewijzen en bewaken op apparaten die u beheert. E-mailprofielen zorgen voor consistentie, verminderen het aantal ondersteuningsaanvragen en bieden u eindgebruikers toegang tot bedrijfse-mail op hun eigen apparaten zonder dat ze instellingen hoeven op te geven.
-Zie [E-mailinstellingen configureren in Microsoft Intune](email-settings-configure.md) voor meer informatie. Ondersteunt: Android, iOS, Windows Phone 8.1 en Windows 10.
+Met [Apparaatfuncties](device-features-configure.md) kunt u functies op iOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en configuraties voor gedeelde apparaten.
 
-## <a name="wi-fi"></a>Wi-Fi
-Gebruik Wi-Fi-profielen om instellingen voor draadloze netwerken toe te wijzen voor gebruikers en apparaten in uw organisatie. Wanneer u een Wi-Fi-profiel toewijst, hebben uw gebruikers toegang tot uw zakelijke Wi-Fi zonder dat ze dit zelf hoeven te configureren.
-Zie [Wi-Fi-instellingen configureren in Microsoft Intune](wi-fi-settings-configure.md) voor meer informatie. Ondersteunt: Android, iOS, macOS en Windows Phone 8.1 (alleen importeren).
+Deze functie ondersteunt:  
+- iOS 
+- macOS
 
-## <a name="vpn"></a>VPN
-Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. Wijs VPN-profielen toe aan gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken.
-Zie [VPN-instellingen configureren](vpn-settings-configure.md) voor meer informatie.
-Ondersteunt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 en Windows 10.
+## <a name="device-restrictions-profile"></a>Profiel Apparaatbeperkingen
+[Apparaatbeperkingen](device-restrictions-configure.md) beheert beveiliging, hardware, delen van gegevens en meer instellingen op de apparaten. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten de camera van het apparaat gebruiken. 
 
-## <a name="education"></a>Education
-Hiermee kunt u opties configureren voor de Windows Toets maken-app. Wanneer u deze opties configureert, kunnen er geen andere apps op het apparaat worden uitgevoerd totdat de toets is voltooid.
-Zie [Opleidingsinstellingen configureren](education-settings-configure.md) voor meer informatie
+Deze functie ondersteunt: 
 
-## <a name="certificates"></a>Certificaten
-Met dit profieltype kunt u vertrouwde, SCEP- en PKCS-certificaten configureren die kunnen worden toegewezen aan apparaten en kunnen worden gebruikt voor het verifiëren van Wi-Fi-, VPN- en e-mailprofielen.
-Zie [Certificaten configureren in Microsoft Intune](certificates-configure.md) voor meer informatie. Ondersteunt: Android, iOS, Windows Phone 8.1, Windows 8.1 en Windows 10.
+- Android
+- iOS
+- macOS
+- Windows 10
+- Windows 10 Team
 
-## <a name="edition-upgrade"></a>Editie-upgrade
-Met dit profieltype kunt u apparaten waarop een bepaalde versie van Windows 10 wordt uitgevoerd, automatisch upgraden naar een nieuwere versie.
-Zie [Editie-upgrades voor Windows 10 configureren in Microsoft Intune](edition-upgrade-configure-windows-10.md) voor meer informatie. Ondersteunt: alleen Windows 10.
+## <a name="email-profile"></a>E-mailprofiel
+Het profiel [E-mailinstellingen](email-settings-configure.md) maakt en bewaakt de e-mailinstellingen voor Exchange ActiveSync op de apparaten en wijst deze toe. E-mailprofielen zorgen voor consistentie, verminderen het aantal ondersteuningsaanvragen en bieden uw eindgebruikers toegang tot bedrijfse-mail op hun eigen apparaten zonder dat ze instellingen hoeven op te geven. 
 
-## <a name="endpoint-protection"></a>Endpoint Protection
-Met dit profieltype kunt u BitLocker- en Windows Defender-instellingen configureren voor Windows 10-apparaten.
-Zie [Endpoint protection settings for Windows 10 and later in Microsoft Intune](endpoint-protection-windows-10.md) (Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger) voor meer informatie.
+Deze functie ondersteunt: 
 
-## <a name="windows-information-protection"></a>Windows Information Protection
-Windows Information Protection helpt bij de beveiliging tegen gegevenslekken zonder dat de gebruikerservaring van werknemers hierdoor wordt beïnvloed. Het helpt tevens zakelijke apps en gegevens te beschermen tegen onbedoelde gegevenslekken op apparaten die eigendom zijn van de onderneming en persoonlijke apparaten die werknemers meenemen naar het werk, zonder dat hiervoor wijzigingen nodig zijn aan uw omgeving of andere apps.
-Zie [Windows-gegevensbescherming configureren](windows-information-protection-configure.md) voor meer informatie. Ondersteunt: alleen Windows 10.
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 10
 
-## <a name="custom"></a>Aangepast
-U kunt met aangepaste instellingen apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. U kunt bijvoorbeeld op Android-apparaten OMA-URI-waarden opgeven waarmee het apparaat wordt geconfigureerd. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
-Zie [Aangepaste apparaatinstellingen configureren in Microsoft Intune](custom-settings-configure.md) voor meer informatie. Ondersteunt: Android, iOS, macOS en Windows Phone 8.1.
+## <a name="wi-fi-profile"></a>Wi-Fi-profiel
+[Wi-Fi-instellingen](wi-fi-settings-configure.md) wijst instellingen voor draadloze netwerken toe aan gebruikers en apparaten. Wanneer u een Wi-Fi-profiel toewijst, hebben uw gebruikers toegang tot uw zakelijke Wi-Fi zonder dat ze dit zelf hoeven te configureren. 
 
-## <a name="next-steps"></a>Volgende stappen
-Kies een van de profieltypen in de lijst om apparaten te gaan configureren.
+Deze functie ondersteunt: 
+
+- Android
+- iOS
+- macOS
+- Windows 8.1 (alleen importeren)
+
+## <a name="vpn-profile"></a>VPN-profiel
+[VPN-instellingen](vpn-settings-configure.md) wijst VPN-profielen toe aan gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk kunnen maken. 
+
+Met virtuele particuliere netwerken (VPN's) hebben gebruikers veilige externe toegang tot uw bedrijfsnetwerk. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. 
+
+Deze functie ondersteunt: 
+
+- Android
+- iOS
+- macOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="education-profile"></a>Onderwijsprofiel
+[Onderwijsinstellingen](education-settings-configure.md) Hiermee kunt u opties configureren voor de [Windows-app Toets maken](https://education.microsoft.com/gettrained/win10takeatest). Wanneer u deze opties configureert, kunnen er geen andere apps op het apparaat worden uitgevoerd totdat de toets is voltooid.
+
+## <a name="certificates-profile"></a>Certificatenprofiel
+Met [Certificaten](certificates-configure.md) kunt u vertrouwde, SCEP- en PKCS-certificaten configureren die kunnen worden toegewezen aan apparaten en kunnen worden gebruikt voor het verifiëren van Wi-Fi-, VPN- en e-mailprofielen.
+
+Deze functie ondersteunt: 
+
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="edition-upgrade-profile"></a>Profiel Editie-upgrades
+[Windows 10-editie-upgrades](edition-upgrade-configure-windows-10.md) voert automatisch een upgrade naar een nieuwere functie uit op apparaten waarop een bepaalde versie van Windows 10 wordt uitgevoerd.
+
+Deze functie ondersteunt: alleen Windows 10
+
+## <a name="endpoint-protection-profile"></a>Profiel Endpoint Protection
+[Endpoint Protection-instellingen voor Windows 10](endpoint-protection-windows-10.md) configureert BitLocker- en Windows Defender-instellingen voor Windows 10-apparaten.
+
+Deze functie ondersteunt: alleen Windows 10
+
+## <a name="windows-information-protection-profile"></a>Profiel Windows Information Protection
+[Windows Information Protection](windows-information-protection-configure.md) helpt bij de beveiliging tegen gegevenslekken zonder dat de gebruikerservaring van werknemers hierdoor wordt beïnvloed. Het helpt tevens zakelijke apps en gegevens te beschermen tegen onbedoelde gegevenslekken op apparaten die eigendom zijn van de onderneming en persoonlijke apparaten die werknemers op het werk gebruiken. Dit gebeurt zonder wijzigingen aan uw omgeving of andere apps.
+
+Deze functie ondersteunt: alleen Windows 10
+
+## <a name="custom-profile"></a>Aangepast profiel
+Met [Aangepaste instellingen](custom-settings-configure.md) kunt u apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u bijvoorbeeld OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt. 
+
+Deze functie ondersteunt: 
+
+- Android
+- iOS
+- macOS
+- Windows Phone 8.1

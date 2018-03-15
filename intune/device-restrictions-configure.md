@@ -1,25 +1,23 @@
 ---
-title: Intune-apparaatbeperkingsinstellingen configureren
-titleSuffix: Azure portal
-description: Meer informatie over hoe u Intune kunt gebruiken voor het configureren van instellingen en functies op de apparaten die u beheert.
+title: Apparaatbeperkingsinstellingen in Microsoft Intune configureren
+titleSuffix: 
+description: Meer informatie over hoe u Microsoft Intune kunt gebruiken voor het configureren van instellingen en functies op de apparaten die u beheert.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
@@ -33,16 +31,16 @@ Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen di
 
 U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten toegang kunnen krijgen tot de camera van het apparaat.
 
-Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginselen voor het configureren van apparaatbeperkingsprofielen en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
+Lees over de basisprincipes van apparaatbeperkingsprofielen en lees dan meer artikelen voor elk platform voor meer informatie over apparaatspecificaties.
 
-U maakt als volgt een apparaatprofiel met apparaatbeperkingsinstellingen:
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en **beschrijving** in voor het apparaatbeperkingsprofiel.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+3. Kies op de pagina **Intune** de optie **Apparaatconfiguratie**.
+2. Kies op de pagina **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
+3. Kies **Profiel maken** op de pagina **Profielen**.
+4. Voer op de pagina **Profiel maken** een **naam** en **beschrijving** in voor het apparaatbeperkingsprofiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
     - **Android**
     - **iOS**
@@ -61,9 +59,9 @@ U maakt als volgt een apparaatprofiel met apparaatbeperkingsinstellingen:
     - [Windows 10 Team-instellingen](device-restrictions-windows-10-teams.md)
     - [Instellingen van Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Android for Work-instellingen](device-restrictions-android-for-work.md)
-8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+8. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

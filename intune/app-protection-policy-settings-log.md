@@ -1,7 +1,7 @@
 ---
-title: Logboeken van het beleid voor app-beveiliging
-titlesuffix: Azure portal
-description: In dit onderwerp worden de instellingen van het beleid voor app-beveiliging beschreven die worden opgeslagen in de app-logboeken.
+title: Logboeken van het beleid voor app-beveiliging bekijken
+titlesuffix: Microsoft Intune
+description: Kom meer te weten over de instellingen die u kunt bekijken in de app-beschermingslogboeken.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Logboeken voor beveiliging van de client-app controleren
 
-U kunt de logboeken openen door de diagnostische modus van Intune in te schakelen voor een toepassing op een mobiele client. In de volgende tabel ziet u de naam en een uitleg van de instellingen die worden vastgelegd in het logboek.
+Kom meer te weten over de instellingen die u kunt bekijken in de app-beschermingslogboeken. U kunt de logboeken openen door de diagnostische modus van Intune in te schakelen voor een toepassing op een mobiele client. In de volgende tabel ziet u de naam en een uitleg van de instellingen die worden vastgelegd in het logboek.
 
 ## <a name="app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor apps
 

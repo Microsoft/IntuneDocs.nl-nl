@@ -3,8 +3,8 @@ title: Mobile Threat Defense-nalevingsbeleid voor apparaten maken met Intune
 titlesuffix: Azure portal
 description: Mobile Threat Defense-nalevingsbeleid voor apparaten maken in Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,16 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 
 > [!NOTE] 
-> Dit onderwerp is van toepassing op alle Mobile Threat Defense-partners.
+> Deze informatie is van toepassing op alle Mobile Threat Defense-partners.
 
 Intune met MTD helpt u bij het detecteren van bedreigingen en het beoordelen van risico op mobiele apparaten. U kunt een Intune-nalevingsbeleidsregel maken voor een risicoanalyse waarmee wordt bepaald of het apparaat compatibel is. Vervolgens kunt u beleid voor voorwaardelijke toegang gebruiken om toegang tot services te blokkeren op basis van de apparaatcompatibiliteit.
 
@@ -58,7 +58,7 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
     c.  **Gemiddeld**: het apparaat is compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
 
-    d.  **Hoog**: dit is de minst veilige optie. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden. Op apparaten moet de MTD-app met deze instelling zijn geactiveerd.
+    d.  **Hoog**: dit is het minst veilige niveau. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden. Op apparaten moet de MTD-app met deze instelling zijn geactiveerd.
 
 8.  Klik tweemaal op **OK** en kies vervolgens **Maken**.
 
@@ -69,12 +69,12 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
 Als u een nalevingsbeleid voor apparaten aan gebruikers wilt toewijzen, kiest u een beleid dat u eerder hebt geconfigureerd. Bestaande beleidsregels vindt u op de blade **Alle beleidsregels voor apparaatcompatibiliteit**.
 
-1. Kies het beleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Hiermee opent u de blade waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
+1. Kies het beleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Met deze actie opent u de blade waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
 
 2. Kies **Groepen selecteren** om de blade met de Azure AD-beveiligingsgroepen te openen.  Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
 
     > [!NOTE] 
-    > U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze voldoen aan het beleid.
+    > U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze compatibel zijn.
 
 ## <a name="next-steps"></a>Volgende stappen
 

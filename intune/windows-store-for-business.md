@@ -3,10 +3,10 @@ title: Apps beheren via Microsoft Store voor Bedrijven
 titlesuffix: Azure portal
 description: Meer informatie over hoe u apps kunt synchroniseren in Intune vanuit Microsoft Store voor Bedrijven en ze vervolgens kunt toewijzen en bijhouden."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune
 
@@ -39,12 +39,15 @@ Lees de volgende informatie voordat u begint met het synchroniseren en toewijzen
 
 - Configureer Intune als de Mobile Device Management-instantie voor uw organisatie.
 - U moet zich hebben geregistreerd voor een account in Microsoft Store voor Bedrijven.
-- Hebt u eenmaal een Windows Store voor Bedrijven-account aan Intune gekoppeld, dan kunt u later niet meer overschakelen op een ander account.
+- Wanneer u eenmaal een Microsoft Store voor Bedrijven-account aan Intune hebt gekoppeld, dan kunt u later niet meer overschakelen op een ander account.
 - Apps die zijn aangeschaft in Windows Store, kunnen niet handmatig worden toegevoegd aan of verwijderd uit Intune. Ze kunnen alleen worden gesynchroniseerd met Microsoft Store voor Bedrijven.
-- In Intune kunt u zowel online als offline gelicentieerde apps synchroniseren die u hebt gekocht in Microsoft Store voor Bedrijven.
-- Alleen gratis offline-apps kunnen worden gesynchroniseerd met Intune.
+- In de Intune-portal kunt u zowel online als offline gelicentieerde apps synchroniseren die u hebt gekocht in Microsoft Store voor Bedrijven. Vervolgens kunt u deze apps implementeren in apparaat- of gebruikersgroepen. 
+- Online-app-installaties worden beheerd door de Store.
+- Gratis offline-apps kunnen ook worden gesynchroniseerd met Intune. Deze apps worden geïnstalleerd door Intune en niet door de Store.
 - Als u deze mogelijkheid wilt gebruiken, moeten apparaten zijn gekoppeld aan Active Directory Domain Services of aan de werkplek zijn toegevoegd.
 - Geregistreerde apparaten moeten gebruikmaken van de 1511-versie van Windows 10 of hoger.
+
+Daarnaast worden gerelateerde sets en gelicentieerde offline-apps die via de Microsoft Store voor Bedrijven werden gesynchroniseerd, nu geconsolideerd in een enkele app-vermelding in de gebruikersinterface. Alle implementatiegegevens van de afzonderlijke pakketten worden gemigreerd naar die ene vermelding. Als u gerelateerde sets in Azure Portal wilt bekijken, selecteert u **App-licenties** op de blade **Mobiele apps**.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Uw Microsoft Store voor Bedrijven-account koppelen aan Intune
 Voordat u synchronisatie inschakelt in de Intune-console, moet u uw Store-account configureren om Intune te gebruiken als beheerprogramma:
@@ -62,11 +65,12 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies **Mobiele apps** op de blade **Intune**.
-1. Kies op de blade **Mobiele apps** de optie **Instellen** > **Microsoft Store voor Bedrijven**.
-2. Klik op **Inschakelen**.
-3. Klik, als u dit nog niet hebt gedaan, op de koppeling om u te registreren bij Microsoft Store voor Bedrijven en uw account te koppelen zoals eerder is beschreven.
-5. Kies in de vervolgkeuzelijst **Taal** de taal waarin apps uit Microsoft Store voor Bedrijven moeten worden weergegeven in de Azure-portal. Ongeacht de taal waarin deze apps worden weergegeven, worden ze geïnstalleerd in de taal van de eindgebruiker (indien beschikbaar).
-6. Klik op **Synchroniseren** om de apps die u hebt aangeschaft in Microsoft Store, op te halen in Intune.
+4. Kies op de blade **Mobiele apps** de optie **Instellen** > **Microsoft Store voor Bedrijven**.
+5. Klik op **Inschakelen**.
+6. Klik, als u dit nog niet hebt gedaan, op de koppeling om u te registreren bij Microsoft Store voor Bedrijven en uw account te koppelen zoals eerder is beschreven.
+7. Kies in de vervolgkeuzelijst **Taal** de taal waarin apps uit Microsoft Store voor Bedrijven moeten worden weergegeven in de Azure-portal. Ongeacht de taal waarin deze apps worden weergegeven, worden ze geïnstalleerd in de taal van de eindgebruiker (indien beschikbaar).
+8. Klik op **Synchroniseren** om de apps die u hebt aangeschaft in Microsoft Store, op te halen in Intune.
+9. Klik op **Opslaan**.
 
 ## <a name="synchronize-apps"></a>Apps synchroniseren
 

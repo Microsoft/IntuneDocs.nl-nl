@@ -1,12 +1,12 @@
 ---
-title: Wat is app-beheer?
-titlesuffix: Azure portal
-description: Gebruik dit onderwerp voor meer informatie over de basisbeginselen van app-beheer met Microsoft Intune.
+title: Wat is appbeheer in Microsoft Intune?
+titlesuffix: 
+description: Meer informatie over de basisbeginselen van appbeheer met Microsoft Intune.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Als IT-beheerder is het uw taak ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit kan om de volgende redenen een uitdaging zijn:
+Met Microsoft Intune kunt u, als IT-beheerder, de mobiele apps beheren die de werknemers van uw bedrijf gebruiken. Deze functionaliteit is een aanvulling op het beheren van apparaten en beschermen van gegevens. Als onderdeel van deze functionaliteit is het een van uw prioriteiten om ervoor te zorgen dat uw eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit kan om de volgende redenen een uitdaging zijn:
 - Er is een breed scala aan apparaatplatformen en app-typen.
 - U moet apps wellicht op zowel bedrijfsapparaten als de eigen apparaten van gebruikers beheren.
 - U moet ervoor zorgen dat uw netwerk en uw gegevens beveiligd blijven.
 
 Verder wilt u misschien apps toewijzen en beheren op apparaten die niet bij Intune zijn geregistreerd.
 
-Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de gekozen apparaten te krijgen.
+Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de gekozen apparaten te krijgen. De volgende tabel bevat een samenvatting van de mogelijkheden voor app-beheer. Onder de tabel vindt u meer informatie over Microsoft Intune in de Azure-portal. 
 
 ## <a name="app-management-capabilities-by-platform"></a>App-beheermogelijkheden per platform
 
@@ -64,8 +64,8 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 U vindt de meeste dingen die op apps betrekking hebben in de workload **Mobiele apps** die als volgt toegankelijk is:
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies **Mobiele apps** op de blade **Intune**.
 
     ![De workload Mobiele apps](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Zie [Apps bewaken](apps-monitor.md) voor meer informatie.
 ### <a name="help-and-support"></a>Help en ondersteuning
 - **Help en ondersteuning**: problemen oplossen, ondersteuning aanvragen of de status van Intune weergeven.
     - [Problemen oplossen](help-desk-operators.md)
+    
+## <a name="next-steps"></a>Volgende stappen
+
+- [Een app toevoegen aan Microsoft Intune](apps-add.md)

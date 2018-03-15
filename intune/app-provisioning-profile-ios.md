@@ -1,12 +1,12 @@
 ---
-title: Inrichtingsprofielen voor apps
-titlesuffix: Azure portal
+title: Profielen voor het inrichten van iOS-apps in Microsoft Intune
+titlesuffix: 
 description: Intune biedt u de hulpmiddelen om proactief een nieuw inrichtingsprofiel toe te wijzen aan apparaten met apps die bijna zijn verlopen.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor mobiele iOS-apps om te voorkomen dat uw apps verlopen
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor mobiele iOS-apps in Intune om te voorkomen dat uw apps verlopen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -39,12 +39,12 @@ Nadat het certificaat is verlopen, moet u de app opnieuw ondertekenen met een ni
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Een inrichtingsprofiel voor mobiele iOS-apps maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Mobiele apps** op de blade **Intune**.
-1.  Kies **Beheren** > **iOS-inrichtingsprofielen** in de workload **Mobiele apps**.
-2.  Kies **Profiel maken** op de blade met de profielenlijst.
-3. Configureer de volgende waarden op de blade **Profiel maken**:
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+3. Kies **Mobiele apps** in het deelvenster **Intune**.
+1.  Kies **Beheren** > **inrichtingsprofielen voor iOS-apps** in de workload **Mobiele apps**.
+2.  Kies **Profiel maken** in het deelvenster met de profielenlijst.
+3. Configureer de volgende waarden in het deelvenster **Profiel maken**:
     - **Naam**: geef een naam op voor dit mobiele inrichtingsprofiel.
     - **Beschrijving**: geef indien gewenst een beschrijving op voor het beleid.
     - **Profielbestand uploaden**: klik op **Importeren** en kies een Apple-profielbestand voor mobiele configuratie (met de extensie **.mobileprovision**) dat u hebt gedownload van de Apple-website voor ontwikkelaars.

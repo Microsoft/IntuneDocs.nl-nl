@@ -1,6 +1,6 @@
 ---
-title: Fabrieksinstellingen terugzetten gebruiken of bedrijfsgegevens verwijderen met behulp van Intune
-titlesuffix: Azure portal
+title: Fabrieksinstellingen terugzetten gebruiken of bedrijfsgegevens verwijderen met behulp van Microsoft Intune
+titlesuffix: 
 description: Informatie over het verwijderen van bedrijfsgegevens op een apparaat of het terugzetten naar de fabrieksinstellingen.
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
@@ -35,11 +35,11 @@ Met **Fabrieksinstellingen terugzetten** worden de fabrieksinstellingen van een 
 
 ### <a name="to-factory-reset-a-device"></a>Fabrieksinstellingen terugzetten op een apparaat gebruiken
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Alle apparaten** op de blade **Apparaten**.
 4. Kies de naam van het apparaat waarvoor u Fabrieksinstellingen terugzetten wilt gebruiken.
-5. Kies **Fabrieksinstellingen** op de blade met de naam van het apparaat
+5. Kies **Fabrieksinstellingen terugzetten** op de blade met de naam van het apparaat.
 6. Voor Windows 10 versie 1709 of hoger is er een extra optie voor 'Status inschrijving en gebruikersaccount behouden'. 
     
     |Blijven behouden via terugzetten van fabrieksinstellingen|Niet behouden|
@@ -122,9 +122,9 @@ Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat
 
 ### <a name="to-remove-company-data"></a>Bedrijfsgegevens verwijderen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Alle apparaten** op de blade **Apparaten**.
 4. Kies de naam van het apparaat waarvan u bedrijfsgegevens wilt verwijderen.
 5. Kies op de blade met de naam van het apparaat **Bedrijfsgegevens verwijderen** en kies vervolgens **Ja** om te bevestigen.
 
@@ -134,9 +134,9 @@ Als het apparaat is ingeschakeld en verbonden, wordt de opdracht Bedrijfsgegeven
 
 Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten verwijderen van Azure Active Directory (AD). Met de opdracht Verwijderen wordt een apparaat niet uit het beheer verwijderd, maar u kunt **Verwijderen** wel gebruiken voor het verwijderen van apparaatrecords uit de Azure-portal die onbereikbaar zijn en vermoedelijk niet opnieuw met Azure gaan communiceren.
 
-1.  Meld u met uw referenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt u ook aanmelden bij de [Office 365-portal](https://portal.office.com) en vervolgens **Beheerder** &gt; **Azure AD** kiezen met behulp van de koppeling aan de linkerkant van de pagina.
+1.  Meld u met uw referenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt zich ook aanmelden bij de [Office 365-portal](https://portal.office.com) en vervolgens **Beheercentrums** &gt; **Azure AD** kiezen met behulp van de koppeling aan de linkerkant van de pagina.
 3.  Maak een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (kies de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).
-4.  Selecteer **Active Directory** en vervolgens uw organisatie.
+4.  Selecteer **Azure Active Directory** en vervolgens uw organisatie.
 5.  Selecteer het tabblad **Gebruikers** .
 6.  Selecteer de gebruiker waarvoor u de apparaten wilt verwijderen.
 7.  Kies **Apparaten**.

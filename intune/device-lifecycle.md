@@ -1,30 +1,28 @@
 ---
-title: Overzicht van de MDM-levenscyclus
+title: Overzicht van de Microsoft Intune MDM-levenscyclus
 description: Ontdek hoe Intune u helpt bij het beheren van apparaten gedurende hun levensduur, van de inschrijving en configuratie tot de uiteindelijke buitengebruikstelling.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46297080dcb332734b1e175a62e17c6c5666b469
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>Overview of the mobile device management (MDM) lifecycle (Overzicht van de MDM-levenscyclus (Mobile Device Management))
+# <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Overzicht van de MDM-levenscyclus (Mobile Device Management) van Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Alle apparaten die u beheert, hebben een zogeheten *levensduur*. Intune kan u helpen met het beheren van deze levensduur, van de inschrijving, configuratie en beveiliging tot de buitengebruikstelling van het apparaat, wanneer het niet meer nodig is:
+Alle apparaten die u beheert, hebben een *levensduur*. Intune kan u helpen met het beheren van deze levensduur: van de inschrijving, configuratie en beveiliging tot de buitengebruikstelling van het apparaat, wanneer het niet meer nodig is.
 
 ![De levenscyclus van het apparaat](./media/device-lifecycle.png "de levenscyclus van het Intune-apparaat")
 

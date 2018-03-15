@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>De modus Apparaat verloren activeren op iOS-apparaten
 
@@ -37,11 +37,11 @@ Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren app
 
 ## <a name="how-to-activate-lost-mode"></a>De modus Apparaat verloren activeren
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat en kies vervolgens de externe actie **Modus Apparaat verloren**.
+4. Kies **Alle apparaten** op de blade **Apparaten**.
+5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat, kies **...Meer**en kies vervolgens de externe actie **Modus Apparaat verloren**.
 6. Schakel op de blade **Modus Apparaat verloren** de modus Apparaat verloren in. Voer vervolgens het weer te geven bericht in en eventueel een telefoonnummer van de contactpersoon.
 7. Klik op **OK**.
 
@@ -57,5 +57,5 @@ Als u de modus Apparaat verloren apparaat wilt gebruiken, moet het apparaat in e
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten en groepen** de optie **Apparaatacties**.
+Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.
 

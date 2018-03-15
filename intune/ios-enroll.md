@@ -1,7 +1,7 @@
 ---
-title: Kiezen hoe u Windows-apparaten registreert in Intune
-titlesuffix: Azure portal
-description: Meer informatie over hoe u het registreren van Windows-apparaten in Microsoft Intune instelt."
+title: Kiezen hoe u iOS-apparaten registreert in Intune
+titlesuffix: Microsoft Intune
+description: Het registreren van iOS-apparaten in Microsoft Intune instellen.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f36e579282f7aeaec74c3e80d866e52dfa508d3d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 602c4c1da553215ad222a7e593531fdd879c996c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
 
@@ -34,7 +34,7 @@ Voordat u de registratie van iOS-apparaten kunt inschakelen, moet u de volgende 
 
 ## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
-U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen ze in de App Store de iOS-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen.
+U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen ze in de App Store de Intune-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen.
 
 ## <a name="company-owned-ios-devices"></a>iOS-apparaten die bedrijfseigendom zijn
 Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de volgende inschrijvingsmethoden voor iOS-apparaten die bedrijfseigendom zijn:

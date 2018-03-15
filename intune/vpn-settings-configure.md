@@ -1,7 +1,7 @@
 ---
-title: VPN-instellingen configureren in Intune
-titleSuffix: Azure portal
-description: Meer informatie over het gebruik van Intune voor het configureren van VPN-verbindingen op de apparaten die u beheert.
+title: VPN-instellingen configureren in Microsoft Intune
+titleSuffix: 
+description: In dit onderwerp leest u hoe u Microsoft Intune kunt gebruiken voor het configureren van VPN-verbindingen (Virtual Private Network) op de apparaten die u beheert.
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>VPN-instellingen configureren in Microsoft Intune
 
@@ -48,7 +48,7 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 
 
 > [!IMPORTANT]
-> U kunt VPN-profielen die zijn toegewezen aan een apparaat pas gebruiken nadat de betreffende VPN-app voor het profiel is geïnstalleerd. U kunt de informatie in het onderwerp [Wat is Microsoft Intune-appbeheer?](app-management.md) gebruiken bij het toewijzen van de app met behulp van Intune.  
+> U kunt VPN-profielen die zijn toegewezen aan een apparaat pas gebruiken nadat de betreffende VPN-app voor het profiel is geïnstalleerd. U kunt de informatie in het artikel [Wat is Microsoft Intune-appbeheer?](app-management.md) gebruiken bij het toewijzen van de app met behulp van Intune.  
 
 Zie [Create custom VPN profiles](custom-vpn-profiles-create.md) (Aangepaste VPN-profielen maken) voor meer informatie over het maken van aangepaste VPN-profielen met behulp van URI-instellingen.     
 
@@ -88,7 +88,7 @@ Voor VPN-profielen kan een aantal verschillende verbindingstypen en -protocollen
 
 ### <a name="certificates"></a>Certificaten
 
-Wanneer u het VPN-profiel maakt, kiest u een SCEP- of PFX-certificaatprofiel dat u eerder hebt gemaakt in Intune. Dit wordt het identiteitscertificaat genoemd. Het wordt gebruikt voor verificatie aan de hand van een vertrouwd-certificaatprofiel (*basiscertificaat*) dat u hebt gemaakt om te bepalen of het apparaat van de gebruiker verbinding mag maken. Het vertrouwde certificaat wordt toegewezen aan de computer die de VPN-verbinding verifieert. Dit is meestal de VPN-server.
+Wanneer u het VPN-profiel maakt, kiest u een SCEP- of PFX-certificaatprofiel dat u eerder hebt gemaakt in Intune. Dit profiel wordt het identiteitscertificaat genoemd. Het wordt gebruikt voor verificatie aan de hand van een vertrouwd-certificaatprofiel (*basiscertificaat*) dat u hebt gemaakt om te bepalen of het apparaat van de gebruiker verbinding mag maken. Het vertrouwde certificaat wordt toegewezen aan de computer die de VPN-verbinding verifieert. Dit is meestal de VPN-server.
 
 Zie [How to configure certificates with Microsoft Intune](certificates-configure.md) (Certificaten configureren met Microsoft Intune) voor meer informatie over het gebruiken en maken van certificaatprofielen in Intune.
 

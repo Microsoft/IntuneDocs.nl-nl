@@ -1,25 +1,25 @@
 ---
-title: Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
-titlesuffix: Azure portal
-description: Meer informatie over het configureren van Intune voor eenmalige aanmelding vanaf iOS-apparaten."
+title: Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
+titlesuffix: 
+description: Ontdek hoe u Microsoft Intune kunt configureren voor eenmalige aanmelding vanaf iOS-apparaten.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Om eenmalige aanmelding voor iOS-apparaten te kunnen gebruiken moet aan de volge
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies op de blade **Apparaatconfiguratie** de optie **Profielen**.
-3. Kies op de blade voor profielen de optie **Profiel maken**, geef een naam en beschrijving op en configureer de volgende instellingen:
+3. Kies op de pagina **Intune** de optie **Apparaatconfiguratie**.
+2. Kies op de pagina **Apparaatconfiguratie** de optie **Profielen**.
+3. Kies op de pagina voor profielen de optie **Profiel maken**, geef een naam en beschrijving op en configureer de volgende instellingen:
    - **Platform**: kies **iOS**. 
    - **Profieltype**: kies **Apparaatfuncties**.
-4. Kies op de blade **Apparaatfuncties** de optie **Eenmalige aanmelding**.
+4. Kies op de pagina **Apparaatfuncties** de optie **Eenmalige aanmelding**.
 
-   ![Blade Eenmalige aanmelding](./media/sso-blade.png)
+   ![Pagina Eenmalige aanmelding](./media/sso-blade.png)
 
-2. Gebruik de volgende samenvattingstabel om de velden op de blade **Eenmalige aanmelding** in te vullen. Zie de secties na de tabel voor meer informatie.
+2. Gebruik de volgende samenvattingstabel om de velden op de pagina **Eenmalige aanmelding** in te vullen. Zie de secties na de tabel voor meer informatie.
    
    |Veld  |Opmerkingen|
    |---------|---------|
@@ -82,7 +82,7 @@ Bijvoorbeeld: wanneer een gebruiker verbinding maakt met een van deze sites, geb
 > [!NOTE]
 > Deze URL's moeten de juiste FQDN-indeling hebben. Apple vereist dat deze de volgende indeling hebben: `http://<yourURL.domain>`
 
-De URL-vergelijkingspatronen moeten beginnen met `http://` of `https://`. Er wordt een eenvoudige vergelijking van de tekenreeksen uitgevoerd. Het URL-voorvoegsel `http://www.contoso.com/` komt dus niet overeen met `http://www.contoso.com:80/`. Bij iOS 9.0 of hoger kan echter één jokerteken * worden gebruikt om alle overeenkomende waarden op te geven. Bijvoorbeeld: `http://*.contoso.com/` komt overeen met zowel `http://store.contoso.com/` als `http://www.contoso.com`.
+De URL-vergelijkingspatronen moeten beginnen met `http://` of `https://`. Er wordt een eenvoudige vergelijking van de tekenreeksen uitgevoerd. Het URL-voorvoegsel `http://www.contoso.com/` komt dus niet overeen met `http://www.contoso.com:80/`. Bij iOS 9.0 of hoger kan echter één jokerteken \* worden gebruikt om alle overeenkomende waarden op te geven. Bijvoorbeeld: `http://*.contoso.com/` komt overeen met zowel `http://store.contoso.com/` als `http://www.contoso.com`.
 De patronen `http://.com` en `https://.com` komen overeen met respectievelijk alle HTTP- en HTTPS-URL's.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Apps die gebruikmaken van eenmalige aanmelding

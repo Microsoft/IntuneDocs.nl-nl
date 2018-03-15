@@ -1,12 +1,12 @@
 ---
-title: Portal voor problemen oplossen van helpdesk | Microsoft Docs
-titlesuffix: Azure portal
-description: Medewerkers van de helpdesk gebruiken de Portal voor problemen oplossen voor het oplossen van technische problemen van gebruikers
+title: Helpdesk voor portal voor probleemoplossing
+titlesuffix: Microsoft Intune
+description: Medewerkers van de helpdesk gebruiken de Portal voor problemen oplossen voor het oplossen van technische problemen van gebruikers.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Gebruikers helpen met behulp van de portal voor probleemoplossing
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -28,7 +28,7 @@ De portal voor probleemoplossing biedt helpdeskmedewerkers en Intune-beheerders 
 
 Op de blade **Problemen oplossen** staan ook problemen met gebruikersinschrijving vermeld. Details over het probleem en voorgestelde herstelstappen kunnen beheerders en helpdeskmedewerkers helpen problemen op te lossen. Bepaalde inschrijvingsproblemen worden niet vastgelegd en voor sommige fouten zijn er misschien geen herstelvoorstellen. 
 
-Zie [Op rollen gebaseerd toegangsbeheer (RBAC) met Intune](/intune/role-based-access-control) voor de stappen voor het toevoegen van een rol helpdeskmedewerker.
+Zie [Op rollen gebaseerd toegangsbeheer (RBAC) met Intune](/intune/role-based-access-control) voor de stappen voor het toevoegen van een rol helpdeskmedewerker
 
 Wanneer een gebruiker contact opneemt met de ondersteuning vanwege een technisch probleem met Intune, voert de helpdeskmedewerker de naam van de gebruiker in. Intune toont nuttige gegevens waarmee veel laag-1-problemen kunnen worden opgelost, waaronder:
 
@@ -58,12 +58,12 @@ U kunt de blade **Problemen oplossen** gebruik om gebruikersgegevens weer te gev
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Gebied | Naam | Description |
+| Gebied | Naam | Beschrijving |
 | ---  | ---  | ---         |
 | 1.   | Accountstatus  | Geeft de status van de huidige Intune-tenant weer als **Actief** of **Inactief**.       |
 | 2.   | Gebruikersselectie  | De naam van de momenteel geselecteerde gebruiker. Klik op **Gebruiker wijzigen** om een nieuwe gebruiker te kiezen.       |
 | 3.   | Gebruikersstatus  | Geeft de status weer van de Intune-licentie van de gebruiker, het aantal apparaten, de nalevingsstatus van elk apparaat, het aantal apps en de nalevingsstatus van de apps.       |
-| 4.   | Gebruikersgegevens  | U kunt de lijst gebruiken om de details te selecteren die u in de blade wilt weergeven. <br>U kunt de volgende selecties maken: <ul><li>Mobiele apps<li>Beleid voor app-beveiliging<li>Nalevingsbeleid<li> Configuratiebeleid</ul>      |
+| 4.   | Gebruikersgegevens  | U kunt de lijst gebruiken om de details te selecteren die u in de blade wilt weergeven. <br>U kunt de volgende selecties maken: <ul><li>Mobiele apps<li>Beleid voor app-beveiliging<li>Nalevingsbeleid<li> Configuratiebeleid<li> Registratiebeperkingen</ul>      |
 | 5.   | Groepslidmaatschap  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Verwijzing mobiele apps
@@ -74,7 +74,7 @@ De apps die worden uitgevoerd op apparaten, of de apparaten die eigendom zijn va
 
 De eigenschappen van mobiele apps.
 
-| Eigenschap      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Eigenschap      | Beschrijving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Naam          | De naam van de toepassing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Besturingssysteem            | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -85,7 +85,7 @@ De eigenschappen van mobiele apps.
 
 Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
 
-| Eigenschap           | Description                                                                                                                         |
+| Eigenschap           | Beschrijving                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
@@ -101,7 +101,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met Enterprise Mobility Solution-technologieën (EMS). Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
-| Eigenschap    | Description                                                                           |
+| Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Status      | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
 | App-naam    | De naam van de toepassing                                                           |
@@ -118,7 +118,7 @@ Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integre
 
 Deze tabel bevat de status van het app-beveiligingsbeleid voor apparaten die worden beheerd door Intune.
 
-| Eigenschap    | Description                                                                                                                                |
+| Eigenschap    | Beschrijving                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Naam        | De naam van de toepassing.                                                                                                        |
 | Geïmplementeerd    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
@@ -151,7 +151,7 @@ U moet ervoor zorgen dat de apparaten die worden gebruikt voor toegang tot bedri
 
 De eigenschappen het nalevingsbeleid.
 
-| Eigenschap      | Description                                                                                                                         |
+| Eigenschap      | Beschrijving                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Toewijzing    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Naam          | De naam van de toepassing.                                                                                                        |
@@ -163,7 +163,7 @@ De eigenschappen het nalevingsbeleid.
 
 Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
 
-| Eigenschap           | Description                                                                                                                         |
+| Eigenschap           | Beschrijving                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
@@ -179,7 +179,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
-| Eigenschap    | Description                                                                           |
+| Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Status      | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
 | App-naam    | De naam van de toepassing                                                           |
@@ -196,7 +196,7 @@ Er is een app-configuratiebeleid beschikbaar voor mobiele apps met leveranciersp
 
 De eigenschappen van het configuratiebeleid.
 
-| Eigenschap      | Description                                                                                                                         |
+| Eigenschap      | Beschrijving                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Toewijzing    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Naam          | De naam van de toepassing.                                                                                                        |
@@ -208,7 +208,7 @@ De eigenschappen van het configuratiebeleid.
 
 Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
 
-| Eigenschap           | Description                                                                                                                         |
+| Eigenschap           | Beschrijving                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
@@ -225,7 +225,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
-| Eigenschap    | Description                                                                           |
+| Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Status      | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
 | App-naam    | De naam van de toepassing                                                           |

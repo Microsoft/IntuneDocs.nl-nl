@@ -1,11 +1,11 @@
 ---
-title: macOS-apparaten registreren bij Intune
-titlesuffix: Azure portal
-description: Meer informatie over het registreren van Mac OS-apparaten in Intune."
+title: Inschrijving voor macOS-apparaten instellen
+titlesuffix: Microsoft Intune
+description: Meer informatie over hoe u de inschrijving voor iOS-apparaten in Intune instelt.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-macos-devices-in-intune"></a>macOS-apparaten registreren bij Intune
+# <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Inschrijving voor macOS-apparaten instellen in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,6 +37,13 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 - [De bedrijfsportal configureren](company-portal-app.md)
 - Gebruikerslicenties toewijzen in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md)
+
+## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
+
+U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen ze in de App Store de macOS-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen.
+
+## <a name="company-owned-ios-devices"></a>iOS-apparaten die bedrijfseigendom zijn
+Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de inschrijving van macOS-apparaten die bedrijfseigendom zijn met een [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)-account.
 
 ## <a name="set-up-macos-enrollment"></a>macOS-inschrijving instellen
 

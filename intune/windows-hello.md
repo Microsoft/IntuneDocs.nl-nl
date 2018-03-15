@@ -1,32 +1,32 @@
 ---
-title: Windows Hello voor Bedrijven gebruiken
-titleSuffix: Azure portal
+title: Windows Hello voor Bedrijven integreren in Microsoft Intune
+titleSuffix: 
 description: In dit onderwerp leest u hoe u een beleid kunt maken om het gebruik van Windows Hello voor Bedrijven op beheerde apparaten te beheren."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>Windows Hello voor Bedrijven gebruiken
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello voor Bedrijven integreren in Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune integreert met Windows Hello voor Bedrijven (voorheen Microsoft Passport for Work). Dit is een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen.
+U kunt Windows Hello voor Bedrijven (voorheen Microsoft Passport for Work) integreren in Microsoft Intune.
 
-Met Hello voor Bedrijven kan de gebruiker zich aanmelden met een *gebaar* in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
+ Hello voor Bedrijven biedt een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen. Hiermee kan de gebruiker zich aanmelden met een *gebaar* in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
 
 Intune integreert op twee manieren met Hello voor bedrijven:
 
@@ -50,17 +50,17 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
 1.  Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
 
-2.  Kies op de blade Intune **Apparaatinschrijving** en kies vervolgens **Windows-inschrijving** > **Windows Hello voor Bedrijven**.
+2.  Kies op de pagina Intune **Apparaatinschrijving** en kies vervolgens **Windows-inschrijving** > **Windows Hello voor Bedrijven**.
 
-3.  Kies op de blade die wordt geopend de **standaard**instellingen.
+3.  Kies op de pagina die wordt geopend de **standaard**instellingen.
 
-4.  Klik op de blade **Alle gebruikers** op **Eigenschappen** en voer een **naam** en desgewenst een **beschrijving** in voor de Windows Hello voor Bedrijven-instellingen.
+4.  Klik op de pagina **Alle gebruikers** op **Eigenschappen** en voer een **naam** en desgewenst een **beschrijving** in voor de Windows Hello voor Bedrijven-instellingen.
 
-5. Klik op de blade **Alle gebruikers** op **Instellingen** en kies vervolgens een van de volgende opties voor **Windows Hello voor Bedrijven configureren**:
+5. Klik op de pagina **Alle gebruikers** op **Instellingen** en kies vervolgens een van de volgende opties voor **Windows Hello voor Bedrijven configureren**:
 
     - **Uitgeschakeld**. Als u Windows Hello voor Bedrijven niet wilt gebruiken, selecteert u deze instelling. Alle andere instellingen op het scherm zijn niet beschikbaar.
     - **Ingeschakeld**. Selecteer deze instelling als u instellingen voor Windows Hello voor Business wilt configureren.
-    - **Niet geconfigureerd**. Selecteer deze instelling als u niet met Intune instellingen voor Windows Hello voor Bedrijven wilt beheren. Alle eventueel bestaande Windows Hello voor Bedrijven-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen op de blade zijn niet beschikbaar.
+    - **Niet geconfigureerd**. Selecteer deze instelling als u niet met Intune instellingen voor Windows Hello voor Bedrijven wilt beheren. Alle eventueel bestaande Windows Hello voor Bedrijven-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen op de pagina zijn niet beschikbaar.
 
 6.  Als u in de vorige stap **Ingeschakeld** hebt geselecteerd, configureert u de vereiste instellingen die worden toegepast op alle ingeschreven Windows 10- en Windows 10 Mobile-apparaten.
 

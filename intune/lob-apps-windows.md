@@ -1,12 +1,12 @@
 ---
-title: Windows-Line-Of-Business-apps toevoegen aan Intune
-titlesuffix: Azure portal
-description: In dit onderwerp vindt u meer informatie over het toevoegen van Windows-Line-Of-Business-apps aan Intune."
+title: Windows Line-Of-Business-apps toevoegen aan Microsoft Intune
+titlesuffix: 
+description: Meer informatie over hoe u Windows Line-Of-Business-apps (LOB) toevoegt aan Microsoft Intune.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,17 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72e0a9011ba6dda324ace96fb2dbefb42c608641
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Deze app-typen worden doorgaans intern ontwikkeld. De volgende stappen bevatten instructies waarmee u een Windows LOB-app kunt toevoegen aan Microsoft Intune.
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 01/30/2018
 ## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Een mobiele MSI-app die automatisch wordt bijgewerkt configureren om de versiecontrole te negeren
+
+U kunt een bekende mobiele MSI-app die automatisch wordt bijgewerkt configureren om de versiecontrole te negeren. Sommige op MSI-installer gebaseerde apps worden automatisch bijgewerkt door de app-ontwikkelaar. Voor deze automatisch bijgewerkte MSI-apps kunt u de instelling **App-versie negeren** in de blade **App-informatie** configureren. Wanneer deze instelling op **Ja** staat, dwingt Microsoft Intune de app-versie die is geïnstalleerd op de Windows-client niet af. Met deze functie kunt u voorkomen dat er een racevoorwaarde optreedt. Dit type racevoorwaarde kan bijvoorbeeld optreden wanneer de app die automatisch wordt bijgewerkt door de app-ontwikkelaar ook wordt bijgewerkt door Intune. Er kan door beide worden geprobeerd om een versie van de app op een Windows-client af te dwingen, waardoor een conflict kan ontstaan.
 
 ## <a name="next-steps"></a>Volgende stappen
 

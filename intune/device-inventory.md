@@ -5,7 +5,7 @@ description: "Meer informatie over hoe u de apparaten weergeeft die u beheert me
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39351e76c2510f7411c64d4bc3e3275bc051c63e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-view-intune-device-inventory"></a>De inventaris van Intune-apparaten weergeven
 
@@ -29,8 +29,8 @@ De workload **Apparaten** workload gives you insights into the devices you manag
 
 De inventaris van apparaten weergeven:
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
 
 Kies nu een van de volgende opties:

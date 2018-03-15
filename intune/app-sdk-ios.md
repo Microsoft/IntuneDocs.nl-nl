@@ -1,8 +1,8 @@
 ---
 title: Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
-description: Met de Microsoft Intune App SDK voor iOS kunt u Intune-beleid ter bescherming van apps opnemen in uw iOS-app, in de vorm van Mobile App Management (MAM).
+description: Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor apps (ook wel APP- of MAM-beleid genoemd) opnemen in uw systeemeigen iOS-app.
 keywords: 
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f74b996b3b96dfa808771f3dd4fc70f9c29324c2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 49ffac609ec24917b8490c535ebd74c6d2729ccd
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 

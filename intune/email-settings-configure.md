@@ -1,25 +1,23 @@
 ---
-title: E-mailinstellingen configureren in Intune
-titleSuffix: Azure portal
-description: Meer informatie over het configureren van Intune om verbindingen met de bedrijfse-mail te maken op apparaten die u beheert.
+title: E-mailinstellingen configureren in Microsoft Intune
+titleSuffix: 
+description: Meer informatie over het configureren van Microsoft Intune om verbindingen met de bedrijfse-mail te maken op apparaten die u beheert.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>E-mailinstellingen configureren in Microsoft Intune
 
@@ -37,16 +35,16 @@ U kunt e-mailprofielen gebruiken om de systeemeigen e-mailclient te configureren
 - Windows Phone 8.1 en hoger
 - Windows 10 (Desktop) en Windows 10 Mobile
 
-Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginselen voor het configureren van een e-mailprofiel en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
+Gebruik de informatie in dit artikel voor meer informatie over de basisbeginselen voor het configureren van een e-mailprofiel en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Een apparaatprofiel met e-mailinstellingen maken
 
 1. Meld u aan bij Azure-portal.
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het e-mailprofiel.
+3. Kies op de pagina **Intune** de optie **Apparaatconfiguratie**.
+2. Kies **Beheren** > **Profielen** op de pagina **Apparaatconfiguratie**.
+3. Kies **Profiel maken** op de profielpagina.
+4. Voer op de pagina **Profiel maken** een **naam** en een **beschrijving** in voor het e-mailprofiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de e-mailinstellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor e-mailapparaatinstellingen:
     - **Android** (alleen Samsung Android Knox Standard)
     - **Android for Work**
@@ -59,9 +57,9 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     - [iOS-instellingen](email-settings-ios.md)
     - [Windows Phone 8.1-instellingen](email-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](email-settings-windows-10.md)
-8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+8. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
 
 ## <a name="further-information"></a>Meer informatie

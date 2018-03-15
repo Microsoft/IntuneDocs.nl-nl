@@ -1,12 +1,11 @@
 ---
-title: Intune-apparaatconfiguratieprofielen maken
-titlesuffix: Azure portal
-description: Meer informatie over het maken van configuratieprofielen voor Intune-apparaten.
+title: Apparaatprofielen maken in Microsoft Intune - Azure | Microsoft Docs
+description: Een apparaatprofiel toevoegen of configureren in Microsoft Intune, met inbegrip van het platformtype selecteren en de instellingen configureren in de Azure Portal
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +14,38 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Apparaatconfiguratieprofielen maken in Microsoft Intune
+# <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>Het profiel maken
+1. In de [Azure-portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-2. Kies op de blade met de profielenlijst **Profiel maken**.
-3. Geef op de blade **Profiel maken** de volgende informatie op:
+2. In **Microsoft Intune** selecteert u **Apparaatconfiguratie**,dan **Profielen** en vervolgens selecteert u  **Profiel maken**.
+
+3. Voer de volgende eigenschappen in: 
+
     - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-    - **Beschrijving**: voer een beschrijving in voor het profiel (optioneel).
-    - **Platform**: selecteer het platformtype voor het profiel dat u wilt maken.
-    - **Profieltype**: selecteer het type profiel dat u wilt maken. Welke typen beschikbaar zijn, is afhankelijk van het platform dat u hebt gekozen.
-    - **Instellingen**: in de volgende onderwerpen vindt u meer informatie over de instellingen voor elk profieltype:
+    - **Beschrijving**: optioneel, maar aanbevolen. Geef een beschrijving voor het profiel op.
+    - **Platform**: selecteer het platformtype:  
+
+        - **Android**
+        - **Android for Work**
+        - **iOS**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 en hoger**
+        - **Windows 10 en hoger**
+
+    - **Profieltype**: selecteer het type dat u wilt maken. De lijst is afhankelijk van het platform dat u kiest.
+    - **Instellingen**: in de volgende onderwerpen worden de instellingen voor elk profieltype beschreven:
+
         -  [Instellingen voor apparaatfuncties](device-features-configure.md)
         -  [Apparaatbeperkingsinstellingen](device-restrictions-configure.md)
         -  [E-mailinstellingen](email-settings-configure.md)
@@ -48,12 +57,12 @@ ms.lasthandoff: 01/25/2018
         -  [Onderwijsinstellingen](education-settings-configure.md)
         -  [Aangepaste instellingen](custom-settings-configure.md)
 
-    ![Apparaatprofiel maken](./media/create-device-profile.png)
-4. Als u klaar bent met het configureren van de instellingen, kiest u **Maken** op de blade **Profiel maken**.
+    ![De instellingen opgeven om een apparaatprofiel te maken](./media/create-device-profile.png)
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
-Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
+4. Selecteer **Maken** na voltooiing. 
+
+Het profiel wordt gemaakt en wordt weergegeven in de lijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) als u dit profiel wilt toewijzen aan groepen.
 
 
-### <a name="next-steps"></a>Volgende stappen
-Zie [How to assign device profiles with Microsoft Intune](device-profile-assign.md) (Apparaatprofielen toewijzen met Microsoft Intune) voor meer informatie over het toewijzen van apparaatprofielen.
+## <a name="next-steps"></a>Volgende stappen
+Zie [Apparaatprofielen toewijzen met Microsoft Intune](device-profile-assign.md) om apparaatprofielen toe te wijzen.

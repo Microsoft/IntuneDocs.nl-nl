@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi-instellingen configureren in Intune
-titleSuffix: Azure portal
-description: In dit onderwerp leest u hoe u Intune kunt gebruiken voor het configureren van Wi-Fi-verbindingen op de apparaten die u beheert."
+titleSuffix: Microsoft Intune
+description: In dit onderwerp leest u hoe u Microsoft Intune kunt gebruiken voor het configureren van Wi-Fi-verbindingen op de apparaten die u beheert.
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Wi-Fi-instellingen configureren in Microsoft Intune
 
@@ -46,7 +46,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Een apparaatprofiel met Wi-Fi-instellingen maken
 
-1. Meld u aan bij Azure-portal.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.

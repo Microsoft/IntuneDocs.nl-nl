@@ -3,8 +3,8 @@ title: Mobile Threat Defense met Intune
 titleSuffix: Azure portal
 description: De toegang tot bedrijfsresources beveiligen op basis van apparaatrisico
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1d5957acde86b3621009e5c38df42bc894a413c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integratie van Mobile Threat Defense met Intune
 
@@ -34,7 +34,7 @@ Bedrijven zijn historisch gezien altijd proactief geweest in het beveiligen van 
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Hoe werken Intune Mobile Threat Defense-connectors?
 
-De connector beschermt bedrijfsresources door een communicatiekanaal te maken tussen Intune en de door uw gekozen Mobile Threat Defense-leverancier. Intune Mobile Threat Defense-partners bieden intuïtieve, eenvoudig te implementeren toepassingen voor mobiele apparaten, die informatie over apparaatbedreigingen actief scannen, analyseren en met Intune delen, voor rapportage- of afdwingingsdoeleinden. 
+De connector beschermt bedrijfsresources door een communicatiekanaal te maken tussen Intune en de door uw gekozen Mobile Threat Defense-leverancier. Intune Mobile Threat Defense-partners bieden intuïtieve, eenvoudig te implementeren toepassingen voor mobiele apparaten, die voor rapportage- of afdwingingsdoeleinden informatie over apparaatbedreigingen die u met Intune wilt delen actief scannen en analyseren. 
 
 Als bijvoorbeeld een verbonden Mobile Threat Defense-app aan de Mobile Threat Defense-leverancier rapporteert dat een telefoon in uw netwerk op dat moment is verbonden met een netwerk dat kwetsbaar is voor Man in the Middle-aanvallen, wordt die informatie gedeeld en ingedeeld in een toepasselijke risicocategorie (laag, gemiddeld of hoog). Die wordt vergeleken met het geconfigureerde toegestane risiconiveau in Intune, om te bepalen of de toegangsrechten tot door u gekozen resources moet worden ingetrokken zolang het apparaat verdacht is.
 

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9afe804d2f9e48e27ced4bd92959cd065f6ec89a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a49f95ce81f750c539959674a15df41118f20aaa
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Apparaten extern opnieuw opstarten met Intune
 
@@ -40,12 +40,12 @@ De apparaatactie **Opnieuw opstarten** zorgt ervoor dat het apparaat dat kiest, 
 
 ## <a name="how-to-restart-a-device"></a>Apparaten opnieuw opstarten
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies **Apparaten** op de blade **Intune**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een apparaat en kies vervolgens de externe apparaatactie **Opnieuw opstarten**.
+4. Kies **Alle apparaten** op de blade **Apparaten**.
+5. Kies in de lijst met apparaten die u beheert, een apparaat, kies **...Meer** en kies vervolgens de externe apparaatactie **Opnieuw opstarten**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten en groepen** de optie **Apparaatacties**.
+Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.
