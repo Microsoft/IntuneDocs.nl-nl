@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Aan de slag met het apparaatnalevingsbeleid van Microsoft Intune
 
@@ -73,7 +73,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 Als u een apparaatnalevingsbeleid wilt gebruiken in Intune, moet u de volgende abonnementen hebben:
 
-- Intune EMS
+- Intune
 
 - Azure AD Premium
 

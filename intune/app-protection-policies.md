@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -37,14 +37,14 @@ App-beveiligingsbeleid kan worden toegepast op apps die worden uitgevoerd op app
 Zie [MAM apps list (MAM-app-lijst)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) voor een lijst met ondersteunde MAM-apps.
 
 ##  <a name="create-an-app-protection-policy"></a>Beveiligingsbeleid voor apps maken
-1.  In de workload **Mobiele apps** selecteert u **App-beveiligingsbeleid** in de sectie **Beheren**. Hiermee opent u de details van het **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken. 
-2. Kies **Een beleid toevoegen**. 
+1.  In de workload **Mobiele apps** selecteert u **App-beveiligingsbeleid** in de sectie **Beheren**. Hiermee opent u de details van het **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
+2. Kies **Een beleid toevoegen**.
 
   ![Schermafbeelding van de blade ‘Een beleid toevoegen’](./media/app-protection-add-policy.png)
 
 3.  Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. Indien nodig, kunt u meer dan één beleid voor elk platform maken.
 
-4.  Kies **Apps** om de blade **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. 
+4.  Kies **Apps** om de blade **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt.
 5. Wanneer u de apps hebt geselecteerd, kiest u **Selecteren** om uw selectie op te slaan.
 
     > [!IMPORTANT]
@@ -59,7 +59,7 @@ Zie [MAM apps list (MAM-app-lijst)](https://www.microsoft.com/cloud-platform/mic
     > Deze beleidsinstellingen worden alleen afgedwongen wanneer u apps in de context van het werk gebruikt. Als eindgebruikers de app gebruiken voor een privétaak, worden deze beleidsregels niet toegepast.
 
 7.  Kies **OK** om deze configuratie op te slaan. U bent nu terug in het deelvenster **Een beleid toevoegen**. Kies **Maken** om het beleid te maken en uw instellingen op te slaan.
-8. Kies **OK** om deze configuratie op te slaan. U bent nu terug in het deelvenster **Een beleid toevoegen**. 
+8. Kies **OK** om deze configuratie op te slaan. U bent nu terug in het deelvenster **Een beleid toevoegen**.
 9. Kies **Maken** om het beleid te maken en uw instellingen op te slaan.
 
 Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige procedure, is het nog niet geïmplementeerd voor gebruikers. Zie [Een beleid implementeren naar gebruikers](app-protection-policies.md#deploy-a-policy-to-users) voor het implementeren van een beleid.
@@ -74,7 +74,7 @@ Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige
    ![Schermafbeelding van het venster Toewijzingen met de optie Groepen selecteren om op te nemen gemarkeerd](./media/app-protection-policy-add-users.png)
 
 2.  Er wordt een lijst met gebruikersgroepen in het deelvenster **Gebruikersgroep toevoegen** weergegeven. Deze lijst geeft alle beveiligingsgroepen in uw **Azure Active Directory** weer. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies vervolgens **Selecteren**. Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
-  
+
     ![Schermafbeelding van het deelvenster Gebruikersgroep toevoegen waarin de lijst met Azure Active Directory-gebruikers wordt weergegeven](./media/azure-ad-user-group-list.png)
 
 U hebt nu beleid gemaakt en het beleid geïmplementeerd naar gebruikers.
