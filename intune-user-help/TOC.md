@@ -66,6 +66,7 @@
 ### [Wat gebeurt er wanneer u een iOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [De bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
+### [Uw Device Enrollment Program implementeren op iOS-apparaten](enroll-your-device-dep-ios.md)
 
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 ### [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
