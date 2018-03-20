@@ -1,11 +1,12 @@
 ---
 title: Een ontwerp maken
+titlesuffix: Microsoft Intune
 description: Dit artikel helpt u bij het maken van een ontwerp voor een Microsoft Intune-ontwerp en -implementatie die uitsluitend voor de cloud zijn bestemd.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: b24b7615c6070614bb19aac0f4edb7d12ddc65c5
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: fd6c80c022f13b892d396768439e2c503d5425d9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 

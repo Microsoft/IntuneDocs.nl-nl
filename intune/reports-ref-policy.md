@@ -1,5 +1,6 @@
 ---
-title: Beleid | Microsoft Docs
+title: Beleid
+titlesuffix: Microsoft Intune
 description: Naslagonderwerp voor de categorie Beleid van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 
@@ -104,10 +105,10 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 |---------|---------|---------|
 |DateKey  |De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.|20161204 |
 |Onbekend  |Het aantal apparaten dat offline is of om een andere redenen niet kan communiceren met Intune of Azure AD. |5|
-|NotApplicable      |Het aantal apparaten waarvoor het nalevingsbeleid waarop de beheerder zich richt, niet van toepassing is.|201 |
+|Niet van toepassing      |Het aantal apparaten waarvoor het nalevingsbeleid waarop de beheerder zich richt, niet van toepassing is.|201 |
 |Compliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels voor apparaten is toegepast waarop de beheerder zich richt. |4083 |
 |InGracePeriod      |Aantal apparaten dat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld. |57|
-|NonCompliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels niet zijn toegepast waarop de beheerder zich richt of waarvoor de gebruiker niet voldoet aan de beleidsregels waarop de beheerder zich richt.|43 |
+|Niet-compatibel      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels niet zijn toegepast waarop de beheerder zich richt of waarvoor de gebruiker niet voldoet aan de beleidsregels waarop de beheerder zich richt.|43 |
 |Fout      |Het aantal apparaten dat niet kan communiceren met Intune of Azure AD en een foutbericht heeft geretourneerd. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
@@ -122,10 +123,10 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 |PolicyKey     |Sleutel voor het nalevingsbeleid waarvoor de samenvatting is gemaakt. |10178 |
 |PolicyPlatformKey      |Sleutel voor het platformtype van het nalevingsbeleid waarvoor de samenvatting is gemaakt.|5|
 |Onbekend     |Het aantal apparaten dat offline is of om een andere redenen niet kan communiceren met Intune of Azure AD.|13|
-|NotApplicable     |Het aantal apparaten waarvoor het nalevingsbeleid waarop de beheerder zich richt, niet van toepassing is.|3|
+|Niet van toepassing     |Het aantal apparaten waarvoor het nalevingsbeleid waarop de beheerder zich richt, niet van toepassing is.|3|
 |Compliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels voor apparaten is toegepast waarop de beheerder zich richt. |45|
-|InGracePeriod      |Aantal apparaten dat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld. |3|
-|NonCompliant      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels niet zijn toegepast waarop de beheerder zich richt of waarvoor de gebruiker niet voldoet aan de beleidsregels waarop de beheerder zich richt.|7|
+|Respijtperiode      |Aantal apparaten dat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld. |3|
+|Niet-compatibel      |Het aantal apparaten waarop een of meer nalevingsbeleidsregels niet zijn toegepast waarop de beheerder zich richt of waarvoor de gebruiker niet voldoet aan de beleidsregels waarop de beheerder zich richt.|7|
 |Fout      |Het aantal apparaten dat niet kan communiceren met Intune of Azure AD en een foutbericht heeft geretourneerd. |3|
 
 ### <a name="policyplatformtypes"></a>PolicyPlatformTypes
