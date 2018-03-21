@@ -1,36 +1,37 @@
 ---
-title: VPN-instellingen voor Windows Phone 8.1-apparaten in Intune
-titleSuffix: Azure portal
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op Windows Phone 8.1-apparaten te configureren.
+title: Microsoft Intune VPN-instellingen voor Windows Phone 8.1-apparaten
+titleSuffix: 
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op apparaten met Windows Phone 8.1. te configureren.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ac6fca3217725c34a7db8d46d40278625b93a10
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>VPN-instellingen voor Windows Phone 8.1-apparaten in Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>VPN-instellingen in Microsoft Intune configureren voor apparaten met Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onderstaande lijst worden geconfigureerd.
+In dit artikel leest u meer over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op apparaten met Windows Phone 8.1. te configureren.
+
+
+Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volgende lijst worden geconfigureerd.
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
-- **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, zijn de instellingen alleen van toepassing op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
-- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers kunnen deze naam zien wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
+- **Alle instellingen alleen op Windows Phone 8.1 toepassen**: dit is een instelling die u in de klassieke Intune-portal kunt configureren. In Azure Portal kan deze instelling niet worden gewijzigd. Als de instelling is ingesteld op **Geconfigureerd**, worden instellingen alleen toegepast op Windows Phone 8.1-apparaten. Als de instelling is ingesteld op **Niet geconfigureerd**, gelden deze instellingen ook voor Windows 10 Mobile-apparaten.
+- **Verbindingsnaam**: voer een naam voor deze verbinding in. Gebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
 - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server vanaf:
     - **Certificaten**: kies onder **Verificatiecertificaat** een SCEP- of PKCS-certificaatprofiel dat u eerder hebt gemaakt om de verbinding te verifiëren. Zie [Certificaten configureren](certificates-configure.md) voor meer informatie over certificaatprofielen.
     - **Gebruikersnaam en wachtwoord**: eindgebruikers moeten een gebruikersnaam en wachtwoord opgeven om zich aan te melden bij de VPN-server.
@@ -47,15 +48,15 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 
 - **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
     - **Check Point Capsule VPN**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
 
-- **Aanmeldingsgroep of -domein** (alleen Dell SonicWALL Mobile Connect): geef de naam van de aanmeldingsgroep of het aanmeldingsdomein op waarmee u verbinding wilt maken.
+- **Aanmeldingsgroep of -domein** (alleen SonicWall Mobile Connect): geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken.
 - **Rol** (alleen Pulse Secure): geef de naam op van de gebruikersrol die toegang tot deze verbinding heeft. Een gebruikersrol definieert persoonlijke instellingen en opties en schakelt bepaalde toegangsfuncties in of uit.
 - **Realm** (alleen Pulse Secure): geef de naam op van de verificatierealm die u wilt gebruiken. Een verificatierealm is een groepering van verificatieresources die worden gebruikt door het verbindingstype Pulse Secure.
 
-- **Zoeklijst voor DNS-achtervoegsels** - **Voeg** een of meer DNS-achtervoegsels toe. Elk DNS-achtervoegsel dat u opgeeft, wordt doorzocht wanneer met behulp van een korte naam verbinding met een website wordt gemaakt. Geef bijvoorbeeld de DNS-achtervoegsels **domain1.contoso.com** en **domain2.contoso.com** op. Wanneer u naar de URL **http://mywebsite** gaat, worden de URL's **http://mywebsite.domain1.contoso.com** en **http://mywebsite.domain2.contoso.com** doorzocht.
+- **Zoeklijst voor DNS-achtervoegsels** - **Voeg** een of meer DNS-achtervoegsels toe. Elk DNS-achtervoegsel dat u opgeeft, wordt doorzocht wanneer met behulp van een korte naam verbinding met een website wordt gemaakt. Geef bijvoorbeeld de DNS-achtervoegsels **domain1.contoso.com** en **domain2.contoso.com** op. Wanneer u naar de URL **http://mywebsite**gaat, worden de URL's **http://mywebsite.domain1.contoso.com** en **http://mywebsite.domain2.contoso.com** doorzocht.
 
 - **Aangepaste XML**: geef aangepaste XML-opdrachten op waarmee de VPN-verbinding wordt geconfigureerd.
 
@@ -72,7 +73,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-**Voorbeeld voor Dell SonicWALL Mobile Connect:**
+**Voorbeeld voor SonicWall Mobile Connect:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
@@ -86,7 +87,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de onde
 
 Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer informatie over het schrijven van aangepaste XML-opdrachten.
 
-- **Split tunneling** - U kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Bijvoorbeeld: een gebruiker in een hotel gebruikt de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
+- **Split tunneling** - : u kunt deze optie **inschakelen** of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
 
 

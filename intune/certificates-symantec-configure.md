@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector instellen voor de Symantec PKI Manager-webservice
 
@@ -166,8 +166,11 @@ Gebruik de volgende stappen om het RA-certificaat (registratie-autorisatie) van 
 
 Als u de meest recente versie van Intune Certificate Connector al gebruikt voor een bestaande Microsoft-CA en ondersteuning voor de Symantec-CA wilt toevoegen, kunt u deze stap overslaan. Download anders de meest recente versie van Intune Certificate Connector van de Intune-beheerportal en volg deze instructies.
 
-1. Meld u met uw beheerdersreferenties voor de Intune-tenant aan op https://portal.azure.com en zoek naar Intune-resources.
-2. Download NDESConnectorSetup.exe via **Microsoft Intune** > **Apparaatconfiguratie** > **Certificeringsinstantie** > **Download de koppeling voor de certificaatconnector**
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+4. Selecteer in het deelvenster **Apparaatconfiguratie** de optie **Certificeringsinstantie**.
+5. Klik op **Toevoegen** en selecteer **Connectorbestand downloaden**. Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de connector gaat installeren. 
 3. Voer NDESConnectorSetup.exe uit met verhoogde bevoegdheden.
 
     a. Selecteer in het scherm **Installatieopties** de optie **PFX-distributie** zoals weergegeven in de volgende schermopname.  Voltooi de overige instellingen met de standaardselecties.
@@ -233,7 +236,7 @@ De PKCS-certificaten die worden geïmplementeerd voor met Intune beheerde appara
 
     a. Meld u met uw beheerdersreferenties voor de Intune-tenant aan bij [Azure Portal](https://portal.azure.com) en zoek naar Intune-resources.
 
-    b. Maak van een vertrouwd certificaatprofiel via **Microsoft Intune** > **Apparaatconfiguratie** - **Profielen**  >   **Profiel maken**.
+    b. Maak van een vertrouwd certificaatprofiel via **Microsoft Intune** > **Apparaatconfiguratie** > **Profielen**  >   **Profiel maken**.
 
     c. Geef de vereiste gegevens op in de velden **Naam** en **Beschrijving** en selecteer vervolgens het doelplatform. 
 
@@ -264,7 +267,7 @@ De OID van het certificaatprofiel is gekoppeld aan een certificaatprofielsjabloo
 ## <a name="create-a-pkcs-certificate-profile"></a>Een PKCS-certificaatprofiel maken
 
 1. Meld u met uw beheerdersreferenties voor de Intune-tenant aan bij [Azure Portal](https://portal.azure.com) en zoek naar Intune-resources.
-2. Maak een PKCS-certificaatprofiel via **Microsoft Intune** > **Apparaatconfiguratie – Profielen** > **Profiel maken** > **PKCS-certificaat**.
+2. Maak van een PKCS-certificaatprofiel via **Microsoft Intune** > **Apparaatconfiguratie > Profielen** > **Profiel maken**.
 
     a. Geef de vereiste gegevens op in de velden **Naam** en **Beschrijving** en selecteer vervolgens het doelplatform.
 

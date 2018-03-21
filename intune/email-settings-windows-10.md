@@ -1,30 +1,29 @@
 ---
-title: E-mailinstellingen voor Windows 10-apparaten in Intune
-titleSuffix: Azure portal
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken om e-mailverbindingen op Windows 10-apparaten te configureren.
+title: Microsoft Intune-instellingen voor e-mail op apparaten met Windows 10
+titleSuffix: 
+description: Meer informatie over de Microsoft Intune-instellingen die u kunt gebruiken om e-mailinstellingen op apparaten met Windows 10 te configureren.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3ea7974600daccb8308cd558ccb365c2f5e8bff
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>E-mailprofielinstellingen voor Windows 10-apparaten in Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>E-mailprofielinstellingen in Microsoft Intune voor apparaten met Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+In dit artikel ziet u de e-mailprofielinstellingen die u kunt configureren voor uw apparaten met Windows 10.
 
 
 - **E-mailserver**: de hostnaam van uw Exchange-server.

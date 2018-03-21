@@ -1,105 +1,87 @@
 ---
-title: Acties voor niet-naleving met Intune
-titleSuffix: Intune on Azure
-description: Informatie over het maken van acties voor niet-naleving met Intune
+title: Melding van niet-compatibele apparaten en acties met Microsoft Intune - Azure | Microsoft Docs
+description: Maak een e-mailmelding om te verzenden naar niet-compatibele apparaten. Voeg acties toe nadat een apparaat is gemarkeerd als niet-compatibel, door bijvoorbeeld een respijtperiode toe te voegen om compatibel te worden, of maak een planning om toegang te blokkeren totdat het apparaat compatibel is. U doet dit met Microsoft Intune in Azure.
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/05/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="automate-actions-for-noncompliance"></a>Acties voor niet-naleving automatiseren
+# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>E-mail automatiseren en acties voor niet-compatibele apparaten toevoegen - Intune
 
-Met de **acties voor niet-naleving** kunt u een op tijd geordende opeenvolgende reeks acties configureren die worden toegepast op apparaten die niet voldoen aan de criteria van het nalevingsbeleid zijn. De standaardactie is dat zodra Intune detecteert dat een apparaat niet voldoet aan de criteria van het nalevingsbeleid, het apparaat wordt gemarkeerd en wordt geblokkeerd door voorwaardelijke toegang van Azure AD. Met de **acties voor niet-naleving** beschikt u over meer flexibiliteit om te bepalen wat er gebeurt bij niet-naleving van een apparaat. U kunt er bijvoorbeeld voor kiezen het apparaat niet onmiddellijk te blokkeren, maar de gebruiker een respijtperiode te bieden om ervoor te zorgen dat het apparaat weer compatibel wordt.
+Er is een functie **Acties voor niet-naleving** waarmee een op tijd geordende reeks acties worden geconfigureerd. Deze acties zijn van toepassing op apparaten die niet voldoen aan uw nalevingsbeleid. 
+
+## <a name="overview"></a>Overzicht
+Wanneer Intune een apparaat detecteert dat niet compatibel is, markeert Intune standaard het apparaat onmiddellijk als niet-compatibel. [Voorwaardelijke toegang](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) van Azure Active Directory (AD) blokkeert vervolgens het apparaat. Met de **acties voor niet-naleving** beschikt u ook over flexibiliteit om te bepalen wat er gebeurt bij niet-naleving van een apparaat. Blokkeer het apparaat bijvoorbeeld niet onmiddellijk en geef de gebruiker een respijtperiode om ervoor te zorgen dat het apparaat weer compatibel wordt.
 
 Er zijn twee soorten acties:
 
--   **Eindgebruikers informeren per e-mail**: u kunt een de e-mailmelding aanpassen voordat u die verstuurt naar de eindgebruikers. In Intune kunt u aanpassingen doorvoeren voor de ontvangers, het onderwerp en de berichttekst, inclusief het bedrijfslogo, en contactgegevens.
+- **Eindgebruikers informeren per e-mail**: u kunt een e-mailmelding aanpassen voordat u deze naar de eindgebruiker verstuurt. U kunt aanpassingen doorvoeren voor de ontvangers, het onderwerp en de berichttekst, inclusief het bedrijfslogo, en contactgegevens.
 
     Daarnaast geeft Intune meer informatie over het apparaat dat niet compatibel is in het e-mailbericht.
 
--   **Apparaat markeren voor niet-naleving**: u kunt een schema instellen met een aantal dagen waarna het apparaat wordt gemarkeerd voor niet-naleving. U kunt de actie zodanig configureren dat deze onmiddellijk in werking treedt, maar u kunt de gebruiker ook een respijtperiode bieden, zodat deze ervoor kan zorgen dat het apparaat weer voldoet aan het nalevingsbeleid.
+- **Apparaat markeren als niet-compatibel**: maak een schema (met een aantal dagen) waarna het apparaat wordt gemarkeerd als niet-compatibel. U kunt de actie zodanig configureren dat deze onmiddellijk in werking treedt, maar u kunt de gebruiker ook een respijtperiode bieden om te voldoen aan het nalevingsbeleid.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-U moet ten minste één nalevingsbeleid voor apparaten hebben gemaakt om acties voor niet-naleving in te stellen. 
+- U moet ten minste één nalevingsbeleid voor apparaten hebben gemaakt om acties voor niet-naleving in te stellen. Zie de volgende platformen om een nalevingsbeleid voor apparaten te maken:
 
-- Informatie over het maken van nalevingsbeleid voor de volgende platforms:
+  - [Android](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [macOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
-    -   [Android](compliance-policy-create-android.md)
-    -   [Android for Work](compliance-policy-create-android-for-work.md)
-    -   [iOS](compliance-policy-create-ios.md)
-    -   [macOS](compliance-policy-create-mac-os.md)
-    -   [Windows](compliance-policy-create-windows.md)
+- Wanneer u nalevingsbeleid gebruikt om toegang tot bedrijfsbronnen door apparaten te blokkeren, moet voorwaardelijke toegang voor Azure AD zijn ingesteld. Zie [Voorwaardelijke toegang in Azure Active Directory configureren](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) voor hulp.
 
-U moet voorwaardelijke toegang voor Azure AD hebben ingesteld wanneer u van plan bent nalevingsbeleidsregels voor apparaten te gebruiken om de toegang van apparaten tot bedrijfsbronnen te blokkeren. 
+- Er moet een sjabloon voor een meldingsbericht worden gemaakt. Om e-mail naar uw gebruikers te sturen, wordt deze sjabloon gebruikt om acties voor niet-naleving te maken.
 
-- Meer informatie over [het instellen van voorwaardelijke toegang voor EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+## <a name="create-a-notification-message-template"></a>Een sjabloon voor een meldingsbericht maken
 
-Daarnaast moet u een sjabloon voor een meldingsbericht hebben gemaakt. De sjabloon voor het meldingsbericht wordt later gebruikt bij het maken van acties voor niet-naleving om een e-mail te verzenden naar uw gebruikers.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com) met uw Intune-referenties. 
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaatcompatibiliteit** en vervolgens **Meldingen**. 
+4. Selecteer **Melding maken** en voer de volgende gegevens in:
 
-### <a name="to-create-a-notification-message-template"></a>Een sjabloon voor een meldingsbericht toevoegen
+  - Naam
+  - Onderwerp
+  - Bericht
+  - E-mailkoptekst - Bedrijfslogo opnemen
+  - E-mailvoettekst - Bedrijfslogo opnemen
+  - E-mailvoettekst – Contactgegevens opnemen
 
-1. Ga naar [Intune-portal in Azure](https://portal.azure.com) en meld u aan met uw Intune-referenties.
-2. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
-3. Kies **Intune**
-4. Kies **Apparaatnaleving** en vervolgens **Meldingen** onder de sectie **Beheren**.
-5. Kies **Melding maken** en voer de volgende gegevens in:
-    - Naam
-    - Onderwerp
-    - Bericht
-    - Koptekst - Bedrijfslogo opnemen
-    - Voertekst - Bedrijfslogo opnemen
-    - E-mailvoettekst – Contactgegevens opnemen
+  ![Voorbeeld van een compatibel meldingsbericht in Intune](./media/actionsfornoncompliance-1.PNG)
 
-5. Kies **Melding maken** en voer de volgende gegevens in:
-
-    a. Naam
-
-    b. Onderwerp
-
-    c.  Bericht
-
-    d. e-mailkoptekst - Bedrijfslogo opnemen
-
-    e. e-mailvoettekst - Bedrijfslogo opnemen
-
-    f. e-mailvoettekst – Contactgegevens opnemen
-
-![voorbeeldsjabloon voor meldingsbericht](./media/actionsfornoncompliance-1.PNG)
-
-Nadat u klaar bent met het toevoegen van informatie, kiest u **Maken**. De sjabloon voor het meldingsbericht is beschikbaar voor gebruik.
+Nadat u klaar bent met het toevoegen van informatie, kiest u **Maken**. De sjabloon voor het meldingsbericht is klaar voor gebruik.
 
 > [!NOTE]
 > U kunt ook een eerder gemaakte meldingssjabloon bewerken.
 
-## <a name="to-create-actions-for-noncompliance"></a>Acties voor niet-naleving maken
+## <a name="add-actions-for-noncompliance"></a>Acties voor niet-naleving toevoegen
 
-> [!TIP]
-> Intune biedt standaard een vooraf gedefinieerde actie in de sectie Acties voor niet-naleving. De actie markeert het apparaat voor niet-naleving nadat is gedetecteerd dat het niet voldoet aan de criteria van het beleid voor apparaatnaleving. U kunt aanpassen hoe lang na de detectie het apparaat wordt gemarkeerd als niet compatibel met het beleid voor naleving. De actie kan niet worden verwijderd.
+Intune maakt automatisch een actie voor niet-naleving. Wanneer een apparaat niet voldoet aan uw nalevingsbeleid, markeert deze actie het apparaat als niet-compatibel. U kunt aanpassen hoe lang het apparaat wordt gemarkeerd als niet compatibel. Deze actie kan niet worden verwijderd.
 
-U kunt een actie toevoegen wanneer u nieuw nalevingsbeleid voor apparaten maakt of wanneer u een bestaand nalevingsbeleid voor apparaten te bewerkt.
+U kunt een actie toevoegen wanneer u nieuw nalevingsbeleid maakt of wanneer u een bestaand nalevingsbeleid bewerkt. 
 
-1.  Kies in de Intune-workload op de blade **Nalevingsbeleid voor apparaten** de optie **Beleidsregels** onder de sectie **Beheren**.
+1. Open in de [Azure Portal](https://portal.azure.com)**Microsoft Intune** en selecteer **Apparaatnaleving**.
+2. Selecteer **Beleid**, kies een van uw beleidsregels en selecteer vervolgens **Eigenschappen**. 
 
-2.  Kies een beleid voor apparaatnaleving door erop te klikken, en kies vervolgens **Eigenschappen** onder de sectie **Beheren**.
+  Heeft u nog geen beleid? Maak een beleid voor een [Android-](compliance-policy-create-android.md), [iOS-](compliance-policy-create-ios.md), [Windows-](compliance-policy-create-windows.md) platform of een ander platform.
 
-3.  De blade **eigenschappen voor nalevingsbeleid voor apparaten**. Kies **Acties voor niet-naleving**.
+3. Selecteer **Acties voor niet-nageleefd** en selecteer **Toevoegen** om de actieparameters in te voeren. U kunt de eerder gemaakte berichtsjabloon kiezen, extra ontvangers toevoegen en de planning voor de respijtperiode bijwerken. Bij het schema kunt u het aantal dagen (0-365) invoeren voor het afdwingen van het beleid voor voorwaardelijke toegang. Als u **0** aantal dagen opgeeft, blokkeert voorwaardelijke toegang **onmiddellijk** toegang tot bedrijfsbronnen.
 
-4.  De blade **Acties voor niet-naleving**, kies **Toevoegen** om actieparameters op te geven. U kunt de eerder gemaakte berichtsjabloon kiezen, extra ontvanger en de planning voor de respijtperiode. Bij het schema kunt u het aantal dagen (0-365) instellen voor het afdwingen van het beleid voor voorwaardelijke toegang. Als u **0** dagen opgeeft, betekent dit dat voorwaardelijke toegang **onmiddellijk** toegang tot bedrijfsbronnen moet blokkeren zodra de apparaten niet voldoen aan het nalevingsbeleid voor apparaten.
-
-5.  Nadat u klaar bent met het toevoegen van informatie, kiest u **Toevoegen** en vervolgens **OK**.
+4. Wanneer u klaart bent, selecteert u **Toevoegen** > **OK** om uw wijzigingen op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
-U kunt de activiteiten van het nalevingsbeleid voor apparaten bewaken door de rapporten uit te voeren die beschikbaar zijn op de blade Apparaatnaleving. Zie [De apparaatnaleving controleren in Intune](device-compliance-monitor.md) voor meer informatie.
+De activiteiten van de apparaat-naleving controleren door het uitvoeren van de rapporten. In [De apparaatnaleving controleren in Intune](device-compliance-monitor.md) vindt u meer informatie.

@@ -1,12 +1,12 @@
 ---
-title: Voorwaardelijke toegang met Intune
-titlesuffix: Azure portal
-description: "Meer informatie over het definiëren van de voorwaarden waaraan gebruikers en apparaten moeten voldoen voor toegang tot bedrijfsresources in Microsoft Intune."
+title: Voorwaardelijke toegang met Microsoft Intune
+titlesuffix: 
+description: "Meer informatie over het definiëren van de voorwaarden waaraan gebruikers, apparaten en apps moeten voldoen voor toegang tot bedrijfsresources in Microsoft Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>Wat is voorwaardelijke toegang?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-In dit onderwerp wordt de voorwaardelijk toegang besproken zoals van toepassing op Enterprise Mobility + Security (EMS), gevolgd door enkele algemene scenario's voor de toepassing van voorwaardelijke toegang bij het gebruik van Intune.
+Voorwaardelijke toegang verwijst naar de manieren waarop u de apparaten en apps die daarvoor toestemming hebben, kunt beheren om verbinding te maken met uw e-mail en bedrijfsgegevens. In dit onderwerp vindt u meer informatie over apparaat- en appgebaseerde voorwaardelijke toegang en vindt u algemene scenario's voor het gebruiken van voorwaardelijke toegang met Intune.
 
 Enterprise Mobility + Security (EMS) Conditional Access is geen zelfstandig product, maar een oplossing die kan worden gebruikt voor alle services en producten die onderdeel zijn van de EMS. Met deze oplossing kunt u een gedetailleerd toegangsbeheer configureren om uw bedrijfsgegevens te beveiligen, terwijl gebruikers de mogelijkheid wordt geboden om op elk apparaat en op elke locatie optimaal te presteren.
 

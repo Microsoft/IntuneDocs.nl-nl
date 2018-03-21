@@ -5,7 +5,7 @@ keywords: machtigingsrollen voor intune graphapi c# powershell
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
@@ -44,7 +44,7 @@ Dit artikel:
 
 - Toont voorbeelden van Intune API-verificatie voor C# en PowerShell.
 
-- Bevat een beschrijving hoe u tenants ondersteunt
+- Bevat een beschrijving hoe u tenants ondersteunt.
 
 Zie voor meer informatie:
 
@@ -97,7 +97,7 @@ U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Kies de rollen die zijn vereist voor uw app door links van de relevante namen een vinkje te plaatsen.  Zie [Intune-machtigingsbereiken](#user-content-intune-permission-scopes) voor meer informatie over specifieke Intune-machtigingsbereiken.  Zie [Referentie voor Microsoft Graph-machtigingen](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) voor meer informatie over andere Graph API-machtigingsbereiken.
+    Kies de rollen die zijn vereist voor uw app door links van de relevante namen een vinkje te plaatsen.  Zie [Intune-machtigingsbereiken](#intune-permission-scopes) voor meer informatie over specifieke Intune-machtigingsbereiken.  Zie [Referentie voor Microsoft Graph-machtigingen](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) voor meer informatie over andere Graph API-machtigingsbereiken.
 
     Kies het minste aantal rollen dat nodig is voor het implementeren van uw toepassing om de beste resultaten te verkrijgen.
 
@@ -139,7 +139,7 @@ Wanneer u Microsoft Graph machtigt, kunt u de volgende bereiken opgeven voor het
 
 De instelling _Toegang inschakelen_ | Scopenaam
 :--|:--
-__Externe acties die gebruikers beïnvloeden uitvoeren op apparaten met Microsoft Intune__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Externe acties die gebruikers beïnvloeden uitvoeren op apparaten met Microsoft Intune__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Microsoft Intune-apparaten lezen en schrijven__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune-apparaten lezen__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC-instellingen lezen en schrijven__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ Vergeet indien van toepassing niet de gebruiker toe te voegen aan andere rollen.
 
 Ook:
 
-- Gebruik http://portal.office.com een Intune-licentie toe te wijzen aan uw gebruikersaccount.
+- Gebruik https://portal.office.com een Intune-licentie toe te wijzen aan uw gebruikersaccount.
 
 - Werk de toepassingscode bij voor de verificatie van het Azure AD-tenantdomein van de klant, in plaats van uw eigen domein.
 

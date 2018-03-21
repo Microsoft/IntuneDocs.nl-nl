@@ -1,51 +1,53 @@
 ---
-title: Aangepaste apparaatinstellingen configureren in Intune
-titleSuffix: Azure portal
-description: Meer informatie over hoe u Intune kunt gebruiken voor het configureren van aangepaste instellingen op de apparaten die u beheert.
+title: Aangepaste apparaatinstellingen gebruiken in Microsoft Intune - Azure | Microsoft Docs
+description: Een profiel toevoegen of maken om aangepaste instellingen te gebruiken voor Windows-, Android en iOS-apparaten met Microsoft Intune
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Aangepaste apparaatinstellingen configureren in Microsoft Intune
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>Een profiel maken met aangepaste instellingen in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="when-to-use-custom-settings"></a>Wanneer u aangepaste instellingen moet gebruiken
+Intune heeft mogelijk niet alle ingebouwde instellingen die u nodig hebt of wilt hebben. Of u wilt wellicht een instelling gebruiken die beschikbaar is in andere apparaatprofielen. Om deze instellingen toe te voegen, maakt u een apparaatprofiel en configureert u het profiel met aangepaste apparaatinstellingen.
 
-Het kan handig zijn aangepaste apparaatinstellingen te gebruiken wanneer de instellingen die u wilt configureren, niet in Intune zijn ingebouwd, en beschikbaar zijn via andere apparaatprofielen.
-Aangepaste instellingen worden voor elk platform anders geconfigureerd. Voor Android- en Windows-apparaten kunt u bijvoorbeeld OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven voor het beheren van functies op apparaten. Voor Apple-apparaten kunt u een bestand importeren dat u met [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) hebt gemaakt.
+In dit artikel worden de basisstappen beschreven om een profiel met aangepaste instellingen te maken. Het bevat ook koppelingen om u te verdiepen in het maken van aangepaste instellingen met de verschillende platforms.
 
-Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginselen voor het configureren van profielen met aangepaste instellingen en lees vervolgens de aanvullende onderwerpen voor elk platform voor meer apparaatspecifieke informatie.
+## <a name="custom-settings-on-different-platforms"></a>Aangepaste instellingen op verschillende platforms
+Aangepaste instellingen worden voor elk platform anders geconfigureerd. Om bijvoorbeeld functies op Android- en Windows-apparaten te beheren, kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven. Voor Apple-apparaten kunt u een bestand importeren dat u met [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) hebt gemaakt.
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>Een apparaatprofiel met aangepaste instellingen maken
+## <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het aangepaste profiel.
-5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor aangepaste apparaatinstellingen:
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaatconfiguratie**, selecteer dan **Profielen** en kies **Profiel maken**.
+4. Voer een **Naam** en **Beschrijving** in voor het aangepaste profiel.
+5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. U kunt kiezen uit de volgende platforms:
+
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
+
 6. Kies **Aangepast** in de vervolgkeuzelijst **Profieltype**.
-7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
+7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u kiest. De volgende koppelingen geven meer informatie over de aangepaste instellingen voor elk platform:
+
     - [Android-instellingen](custom-settings-android.md)
     - [iOS-instellingen](custom-settings-ios.md)
     - [macOS-instellingen](custom-settings-macos.md)
@@ -53,7 +55,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     - [Windows 10-instellingen](custom-settings-windows-10.md)
     - [Instellingen van Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Android for Work-instellingen](custom-settings-android-for-work.md)
-8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
-Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
+8. Wanneer u bent klaar, selecteert u **Maken**.
+
+Het profiel wordt gemaakt en wordt weergegeven in de profielenlijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) als u dit profiel wilt toewijzen aan groepen.

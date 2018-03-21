@@ -1,29 +1,29 @@
 ---
-title: Intune-apparaatbeperkingsinstellingen voor macOS
-titlesuffix: Azure portal
+title: Microsoft Intune-apparaatbeperkingsinstellingen voor macOS
+titlesuffix: 
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op macOS-apparaten.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>macOS-apparaatbeperkingsinstellingen in Microsoft Intune
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS-apparaatbeperkingsinstellingen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Gebruik deze instellingen voor het beheren van macOS-apparaten met behulp van een profiel voor apparaatbeperking.
+In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met macOS.
 
 ## <a name="password"></a>Wachtwoord
 -   **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
@@ -49,5 +49,5 @@ Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam v
 
 ### <a name="unmarked-email-domains"></a>Niet-gemarkeerde e-maildomeinen
 
-Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wanneer eindgebruikers een e-mail ontvangen dat afkomstig is van een ander domein dan het domein dat u hebt geconfigureerd, wordt de e-mail in de map iOS Mail gemarkeerd als niet-vertrouwd.
+Voeg in het veld **E-maildomein-URL** een of meer URL's toe aan de lijst. Wanneer gebruikers een e-mail ontvangen dat afkomstig is van een ander domein dan het domein dat u hebt geconfigureerd, wordt de e-mail in de map iOS Mail gemarkeerd als niet-vertrouwd.
 

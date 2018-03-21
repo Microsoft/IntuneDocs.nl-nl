@@ -1,22 +1,22 @@
 ---
 title: De helpdeskkosten verlagen
+titlesuffix: Microsoft Intune
 description: Helpdeskkosten verlagen met selfservice voor wachtwoordherstel
 keywords: SSPR-wachtwoordherstel voor Azure Active Directory
-author: arob98
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 08/27/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
-ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e2bd79e33080a0cc402d38f45b72ddbe9fd7816b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Verlaag helpdeskkosten met selfservice voor wachtwoordherstel
 
@@ -34,7 +34,7 @@ U kunt werknemers wachtwoorden voor werk- en schoolaccounts opnieuw laten instel
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Meer informatie over de volgende onderwerpen:
+Meer informatie over de volgende artikelen:
 * [Aanbevolen procedures voor wachtwoorden](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licentieverlening voor de selfservice voor wachtwoordherstel](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

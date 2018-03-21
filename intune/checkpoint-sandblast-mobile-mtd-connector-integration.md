@@ -1,7 +1,7 @@
 ---
-title: De Check Point SandBlast-integratie met Intune instellen
-titlesuffix: Azure portal
-description: De Check Point SandBlast-integratie met Intune instellen
+title: Check Point SandBlast MTD met Microsoft Intune
+titlesuffix: 
+description: Meer informatie over hoe u Check Point Sandblast Mobile Threat Defense (MTD) instelt met Intune om toegang tot uw bedrijfsbronnen met mobiele apparaten te beheren.
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b1ea4804005abb1e2fcbc5dc3b5ef1382edd4db
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b864d78fd7bfd7fb4e177b568b3587bc1e28b209
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile integreren met Intune
 
@@ -68,7 +68,7 @@ Het autorisatieproces van de Check Point SandBlast-app bestaat uit het volgende:
 
 5.  Als u Microsoft Intune als MDM-Service hebt ingesteld, verschijnt het venster **Configuratie van Microsoft Intune**. Kies **Toevoegen aan mijn organisatie** voor elk apparaatplatform: iOS, Android en Windows om Check Point SandBlast Mobile te autoriseren te communiceren met Intune en Azure AD.
 
-    ![Check Point MTD Intune-configuratie](./media/checkpoint-MTD-1.PNG)
+    ![Afbeelding van Intune-configuratie van Check Point MTD](./media/checkpoint-MTD-1.PNG)
 
     > [!IMPORTANT]
     > U moet alle apparaatplatformen toevoegen om door te gaan met de volgende stap.

@@ -1,36 +1,36 @@
 ---
-title: Wi-Fi-instellingen voor Android-apparaten in Intune
-titleSuffix: Azure portal
-description: Meer informatie over het configureren van Intune Wi-Fi-verbindingsinstellingen op Android- en Android for Work-apparaten. "
+title: Wi-Fi-instellingen in Microsoft Intune configureren voor Android-apparaten
+titleSuffix: 
+description: Meer informatie over Intune Wi-Fi-configuratie-instellingen op Android- en Android for Work-apparaten.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a20ebf026850f28888cd63eb43396a12430bb3cd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor Android en Android for Work-apparaten in Microsoft Intune
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Wi-Fi-instellingen configureren in Microsoft Intune voor apparaten met Android en Android for Work  
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In dit artikel komt u meer te weten over de Wi-Fi-instellingen die u in Microsoft Intune kunt configureren voor apparaten met Android en Android for Work.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Wi-Fi-instellingen voor basis- en ondernemingsprofielen
 
 De volgende Wi-Fi-instellingen zijn beschikbaar voor Android- en Android for Work-apparaten:
 
 - **Netwerknaam**: voer een naam voor deze Wi-Fi-verbinding in. Dit is de naam die gebruikers te zien krijgen in de lijst met beschikbare verbindingen op hun apparaat.
-- **SSID**: afkorting voor Service Set Identifier. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hierboven hebt gemaakt, wanneer ze de verbinding kiezen.
+- **SSID**: afkorting voor Service Set Identifier. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hebt geconfigureerd wanneer ze de verbinding kiezen.
 - **Automatisch verbinding maken**: als u deze optie kiest, maakt het apparaat verbinding wanneer het zich in het bereik van dit netwerk bevindt.
 - **Verborgen netwerk**: hiermee wordt voorkomen dat dit netwerk wordt weergegeven in de lijst met beschikbare netwerken op het apparaat.
 
@@ -50,7 +50,7 @@ De volgende Wi-Fi-instellingen zijn beschikbaar voor Android- en Android for Wor
 
 |Naam van de instelling|Meer informatie|Wanneer gebruiken|
 |-------------|---------------|-----------|
-|**Namen van certificaatservers**|Geef een of meer algemene namen op die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van eindgebruikers als zij verbinding maken met dit Wi-Fi-netwerk.|EAP-type is **EAP-TLS** of **EAP-TTLS**|
+|**Namen van certificaatservers**|Geef een of meer algemene namen op die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers als zij verbinding maken met dit Wi-Fi-netwerk.|EAP-type is **EAP-TLS** of **EAP-TTLS**|
 |**Basiscertificaat voor servervalidatie**|Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. |EAP-type is **EAP-TLS**, **EAP-TTLS** of **PEAP**|
 |**Identiteitsprivacy (externe identiteit)**|Geef de tekst op die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|EAP-type is **PEAP**|
 

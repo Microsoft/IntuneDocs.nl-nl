@@ -1,6 +1,6 @@
 ---
 title: Bulkinschrijving voor Windows 10
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: Een bulkregistratiepakket voor Microsoft Intune maken
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -36,7 +36,7 @@ Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toeg
 ## <a name="create-a-provisioning-package"></a>Een inrichtingspakket maken
 
 1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) vanuit Microsoft Store.
-![Schermafbeelding van de app Windows Configuration Designer en de beschrijving](media/bulk-enroll-store.png)
+![Schermafbeelding van de App Store Windows Configuration Designer](media/bulk-enroll-store.png)
 
 2. Open de app **Windows Configuration Designer** en selecteer **Desktopapparaten inrichten**.
 ![Schermafbeelding van het selecteren van Desktopapparaten inrichten in de app Windows Configuration Designer](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toeg
   - **Beschrijving**: een optionele beschrijving van het project ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4.  Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%%SERIAL%%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.
-![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-device.png)
+
+    ![Schermafbeelding van het opgeven van de naam en productsleutel in de app Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5.  U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als de netwerkapparaten niet zijn geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.
 ![Schermafbeelding van het inschakelen van Wi-Fi met de opties Netwerk-SSID en Netwerktype in de app Windows Configuration Designer](media/bulk-enroll-network.png)
 
 6.  Selecteer **Enroll in Azure AD**, voer een datum van **Bulk Token Expiry** in en selecteer vervolgens **Get Bulk Token**.
-![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-account.png)
+![Schermafbeelding van accountbeheer in de app Windows Configuration Designer](media/bulk-enroll-account.png)
 
 7. Geef uw Azure AD-referenties op om een bulk-token op te halen.
-![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-cred.png)
+![Schermafbeelding van aanmelding bij de app Windows Configuration Designer](media/bulk-enroll-cred.png)
 
 8.  Klik op **Volgende** wanneer de **Bulk Token** is opgehaald.
 
 9. U kunt eventueel **toepassingen toevoegen** en **certificaten toevoegen**. Deze apps en certificaten worden ingericht op het apparaat.
 
 10. U kunt eventueel uw inrichtingspakket beveiligen met een wachtwoord.  Klik op **Maken**.
-![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-create.png)
+![Schermafbeelding van pakketbeveiliging in de app Windows Configuration Designer](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Apparaten inrichten
 

@@ -1,12 +1,12 @@
 ---
-title: Instellingen voor Intune Endpoint Protection voor Windows 10
-titlesuffix: Azure portal
+title: Instellingen voor Microsoft Intune Endpoint Protection voor Windows 10
+titlesuffix: 
 description: Lees hier alles over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor eindpuntbeveiliging op Windows 10-apparaten, zoals BitLocker.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger in Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger maken in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Via het profiel voor eindpuntbeveiliging kunt u beveiligingsfuncties op Windows 10-apparaten beheren, zoals BitLocker en Windows Defender.
 
-Gebruik de informatie in dit onderwerp om profielen voor eindpuntbeveiliging te maken.
+Gebruik de informatie in dit artikel om profielen voor eindpuntbeveiliging te maken.
 
 > [!Note]
 > Deze instellingen worden niet ondersteund in de edities Home en Professional van Windows 10.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Een profiel voor eindpuntbeveiliging maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
 3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
+2. Kies op de blade **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
 3. Kies **Profiel maken** op de blade Profielen.
 4. Voer op de blade **Profiel maken** een **naam** en **beschrijving** in voor het profiel voor de apparaatfuncties.
 5. Selecteer in de vervolgkeuzelijst **Platform** de optie **Windows 10 en hoger**.
 6. Kies **Endpoint Protection** in de vervolgkeuzelijst **Profieltype**.
-7. Configureer de gewenste instellingen. Gebruik de informatie in dit onderwerp om te begrijpen wat elke instelling doet. Als u klaar bent, kiest u **OK**.
+7. Configureer de gewenste instellingen. Gebruik de informatie in dit artikel om te begrijpen wat elke instelling doet. Als u klaar bent, kiest u **OK**.
 8. Ga terug naar de blade **Profiel maken** en kies **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
@@ -57,6 +57,7 @@ Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van 
 - **Afdrukken vanuit virtuele browser**: sta toe dat PDF-, XPS- en lokale of netwerkprinters inhoud vanuit de virtuele browser kunnen afdrukken.
 - **Logoeken verzamelen**: verzamel logboeken voor gebeurtenissen die zich voordoen in een Application Guard-browsersessie.
 - **Door de gebruiker gegenereerde browsergegevens behouden**: sta toe dat gebruikersgegevens (zoals wachtwoorden, favorieten en cookies) worden opgeslagen die zijn gemaakt tijdens een virtuele browsersessie met Application Guard.
+- **Grafische versnelling**: grafisch-intensieve websites sneller laden wanneer u werkt binnen een virtuele browsersessie met Application Guard, door toegang tot een grafische verwerkingseenheid in te schakelen.
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall

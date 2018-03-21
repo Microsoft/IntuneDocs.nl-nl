@@ -1,12 +1,12 @@
 ---
-title: De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online
-titlesuffix: Azure portal
-description: De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online via de Intune Azure Portal
+title: Voorwaardelijke toegang voor Exchange in Microsoft Intune controleren
+titlesuffix: 
+description: De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online via Intune Azure Portal.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>De naleving van voorwaardelijke toegang in Intune controleren voor Exchange On-Premises en Exchange Online
 
@@ -36,23 +36,23 @@ Vanaf versie Intune 1704 kunnen beheerders informatie weergeven met betrekking t
 
 2.  Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-3.  Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+3.  Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
 4.  Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
 
 5.  Kies **Voorwaardelijke toegang** en kies vervolgens **Overzicht**.
 
-6.  Kies een van de drie gebieden (**Geblokkeerd**, **Quarantaine** of **Toegestaan**) op de grafiek om uw rapport van de naleving van het voorwaardelijke toegangsbeleid weer te geven.
+6.  Kies een van de drie gebieden (**Toegestaan**, **Geblokkeerd** of **Quarantaine**) op de grafiek om uw rapport van de naleving van het voorwaardelijke toegangsbeleid weer te geven.
 
-    ![Dashboard voor voorwaardelijke toegang](./media/CA-reporting-intune-1.png)
+    ![Afbeelding van de dashboard voor voorwaardelijke toegang](./media/CA-reporting-intune-1.png)
 
 Als u een van de drie gebieden hebt gekozen, kunt u meer details weergeven over apparaten die worden toegestaan, geblokkeerd of in quarantaine worden geplaatst.
 
-U kunt ook inzoomen op bepaalde apparaten voor meer informatie. Het apparaat in de onderstaande afbeelding is geblokkeerd. Intune biedt de mogelijkheid om bedrijfsgegevens uit de blade voor het rapport van de naleving van voorwaardelijke toegang te verwijderen.
+U kunt ook inzoomen op bepaalde apparaten voor meer informatie. Het apparaat in de volgende afbeelding is bijvoorbeeld geblokkeerd. Intune biedt de mogelijkheid om bedrijfsgegevens uit het deelvenster voor het rapport van de naleving van voorwaardelijke toegang te verwijderen.
 
-![Rapport van de naleving van voorwaardelijke toegang door een apparaat](./media/CA-reporting-intune-3.png)
+![Afbeelding van een rapport van apparaatdetails voor voorwaardelijke toegang](./media/CA-reporting-intune-3.png)
 
-Op de blade Apparaatdetails ziet u meer informatie:
+In het deelvenster Apparaatdetails ziet u meer informatie:
 
 -   **Overzicht:** hier kunt u apparaateigenschappen bekijken, zoals de OS-versie, het apparaatmodel, het eigendom, het serienummer, de fabrikant, het telefoonnummer en de laatste keer dat het apparaat is ingecheckt.
 

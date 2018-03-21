@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-certificaten configureren en beheren met Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -304,10 +304,10 @@ In deze taak:
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. Meld u aan bij Azure-portal. 
-2. Selecteer **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Selecteer op de blade **Intune** de optie **Apparaatconfiguratie**.
-4. Selecteer op de blade **Apparaatconfiguratie** de optie **Certificeringsinstantie**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+4. Selecteer in het deelvenster **Apparaatconfiguratie** de optie **Certificeringsinstantie**.
 5. Klik op **Toevoegen** en selecteer **Connectorbestand downloaden**. Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de connector gaat installeren. 
 6.  Nadat het downloaden is voltooid, voert u het gedownloade installatieprogramma (**ndesconnectorssetup.exe**) uit op server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd. Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. (De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.)
 
@@ -346,10 +346,10 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel maken
 
-1. Selecteer in Azure Portal de workload **Apparaten configureren**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Selecteer **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
+1. Selecteer in Azure Portal de workload **Apparaatconfiguratie**.
+2. Kies **Beheren** > **Profielen** in het deelvenster **Apparaatconfiguratie**.
+3. Selecteer **Profiel maken** in het deelvenster Profielen.
+4. Voer in het deelvenster **Profiel maken** een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platforms selecteren voor apparaatbeperkingsinstellingen:
     - **Android**
     - **iOS**
@@ -358,7 +358,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
     - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
 6. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
-7. Configureer op de blade **SCEP-certificaat** de volgende instellingen:
+7. Configureer in het deelvenster **SCEP-certificaat** de volgende instellingen:
     - **Geldigheidsduur van certificaat**: als u de opdracht **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** hebt uitgevoerd voor de verlenende CA, waarmee een aangepaste geldigheidsperiode mogelijk is, kunt u opgeven hoe lang het certificaat geldig blijft.<br>U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA. 
     - **Sleutelarchiefprovider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): geef op waar de sleutel voor het certificaat wordt opgeslagen. Kies een van de volgende waarden:
         - **Registeren in de sleutelarchiefprovider voor TPM (Trusted Platform Module) indien TPM aanwezig is, anders registreren in de sleutelarchiefprovider voor software**
@@ -385,9 +385,9 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
     - **Registratie-instellingen**
         - **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
         - **URL's van SCEP-server**: geef een of meer URL's op voor de NDES-servers die certificaten via SCEP verlenen. 
-8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+8. Selecteer **OK** en ga vervolgens terug naar het deelvenster **Profiel maken** en selecteer **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 ## <a name="how-to-assign-the-certificate-profile"></a>Het certificaatprofiel toewijzen
 

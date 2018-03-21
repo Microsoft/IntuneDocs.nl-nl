@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Intune-onderwijsinstellingen configureren voor gedeelde iPads
 
@@ -62,12 +62,12 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-4. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-5. Kies **Profiel maken** op de blade Profielen.
-6. Voer op de blade **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
+5. Kies **Profiel maken** in het deelvenster Profielen.
+6. Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
 7. Kies **iOS** in de vervolgkeuzelijst **Platform**.
 8. Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
 9. Kies **Instellingen** > **Configureren**.
@@ -83,7 +83,7 @@ De certificaten die u maakt, moeten niet alleen ondersteuning bieden voor gebrui
 
 ### <a name="configure-teacher-certificates"></a>Docentcertificaten configureren
 
-Kies **Docentcertificaten** op de blade **Opleiding**.
+Kies **Docentcertificaten** in het deelvenster **Opleiding**.
 
 #### <a name="configure-teacher-root-certificate"></a>Het basiscertificaat voor de docent configureren
 
@@ -104,8 +104,8 @@ Wanneer u de docentcertificaten hebt geconfigureerd, kiest u **OK**.
 
 ### <a name="configure-student-certificates"></a>Studentencertificaten configureren
 
-1. Kies **Studentcertificaten** op de blade **Opleiding**.
-2. Kies op de blade **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **Gedeelde iPad**.
+1. Kies **Studentencertificaten** in het deelvenster **Opleiding**.
+2. Kies in het deelvenster **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **Gedeelde iPad**.
 
 #### <a name="configure-student-root-certificate"></a>Het basiscertificaat voor studenten configureren
 
@@ -126,78 +126,78 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ### <a name="complete-certificate-setup"></a>Certificaatconfiguratie voltooien
 
-1. Kies **OK** op de blade **Opleiding**.
-2. Kies **Maken** op de blade **Profiel maken**.
+1. Kies **OK** in het deelvenster **Opleiding**.
+2. Kies **Maken** in het deelvenster **Profiel maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 ## <a name="step-3---create-a-device-category"></a>Stap 3: een apparaatcategorie maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaatinschrijving** op de blade **Intune**.
-4. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving - Overzicht**.
-5. Kies **Maken** op de blade **Apparaatinschrijving - Apparaatcategorieën**.
-6. Voer op de blade **Apparaatcategorie maken** een **naam** en een **beschrijving** in voor de categorie.
-7. Kies **Maken** op de blade **Apparaatcategorie maken**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Apparaatinschrijving** in het deelvenster **Intune**.
+4. Kies **Apparaatcategorieën - Overzicht** in het deelvenster **Apparaatinschrijving**.
+5. Kies **Maken** in het deelvenster **Apparaatinschrijving - Apparaatcategorieën**.
+6. Voer in het deelvenster **Apparaatcategorie maken** een **naam** en een **beschrijving** in voor de categorie.
+7. Kies **Maken** in het deelvenster **Apparaatcategorie maken**.
 
-De apparaatcategorie wordt gemaakt op de blade **Apparaatinschrijving – Apparaatcategorieën**.
+De apparaatcategorie wordt gemaakt in het deelvenster **Apparaatinschrijving – Apparaatcategorieën**.
 
 ## <a name="step-4--create-a-dynamic-group"></a>Stap 4: een dynamische groep maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Groepen** op de blade **Intune**.
-4. Kies **Nieuwe groep** op de blade **Gebruikers en groepen – Alle groepen**.
-5. Geef op de blade **Groep** waarden op voor **Naam** en **Beschrijving** voor de groep.
-6. Kies **Dynamische apparaat** in de vervolgkeuzelijst **Type lidmaatschap**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Groepen** in het deelvenster **Intune**.
+4. Kies **Nieuwe groep** in het deelvenster **Gebruikers en groepen – Alle groepen**.
+5. Kies in het deelvenster **Groep** een **Type groep** en voer een **naam** en **beschrijving** voor de groep in.
+6. Kies **Dynamisch apparaat** in de vervolgkeuzelijst **Type lidmaatschap**.
 7. Kies **Leden van dynamisch apparaat** om lidmaatschapsregels te maken.
-8. Ga als volgt te werk op de blade **Dynamisch-lidmaatschapregels**:
+8. Ga als volgt te werk in het deelvenster **Dynamisch-lidmaatschapregels**:
 1. Selecteer **deviceCategory** in de vervolgkeuzelijst **Locatie voor het toevoegen van apparaten**.
 2. Kies **Is gelijk aan**.
 3. Typ de apparaatcategorie die u hebt gemaakt in het lege tekstvak.
-9. Kies **Query toevoegen** op de blade **Dynamisch-lidmaatschapregels**.
-10. Kies **Maken** op de blade **Groep**.
+9. Kies **Query toevoegen** in het deelvenster **Dynamisch-lidmaatschapregels**.
+10. Kies **Maken** in het deelvenster **Groep**.
 
-De dynamische groep wordt gemaakt op de blade **Gebruikers en groepen – Alle groepen**.
+De dynamische groep wordt gemaakt in het deelvenster **Gebruikers en groepen – Alle groepen**.
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Stap 5: een apparaat toewijzen aan een categorie (Winkelwagens)
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies **Alle apparaten** op de blade **Apparaten**.
-5. Kies een apparaat op de blade **Apparaten - Alle apparaten**.
-6. Kies **Eigenschappen** op de blade van het apparaat.
-7. Ga op de blade met eigenschappen van het apparaat naar het tekstvak **Apparaatcategorie** en voer de apparaatcategorie in.
-8. Kies **Opslaan** op de blade van het apparaat.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Apparaten** in het deelvenster **Intune**.
+4. Kies **Alle apparaten** in het deelvenster **Apparaten**.
+5. Kies een apparaat in het deelvenster **Apparaten - Alle apparaten**.
+6. Kies **Eigenschappen** in het deelvenster van het apparaat.
+7. Ga in het deelvenster met eigenschappen van het apparaat naar het tekstvak **Apparaatcategorie** en voer de apparaatcategorie in.
+8. Kies **Opslaan** in het deelvenster van het apparaat.
 
 Het apparaat is nu aan de apparaatcategorie gekoppeld. Herhaal dit proces voor alle apparaten die u wilt koppelen aan de apparaatcategorie die u hebt gemaakt.
 
 ## <a name="step-6--create-classroom-profiles"></a>Stap 6: klaslokaalprofielen maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-4. Kies **Beheren** > **Winkelwagenprofielen** op de blade **Apparaatconfiguratie**.
-5. Kies **Profiel maken** op de blade Profielen.
-6. Voer op de blade **Koppeling maken** waarden in voor **Naam** en **Beschrijving**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+4. Kies **Beheren** > **Winkelwagenprofielen** in het deelvenster **Apparaatconfiguratie**.
+5. Kies **Profiel maken** in het deelvenster Profielen.
+6. Voer in het deelvenster **Koppeling maken** waarden in voor **Naam** en **Beschrijving**.
 7. Kies **Klassen selecteren** > **Configureren** om groepen te koppelen aan het winkelwagenprofiel.
 8. Kies de klassen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**. 
 9. Kies **Winkelwagens selecteren** > **Configureren** om groepen te koppelen aan het winkelwagenprofiel.
 10. Kies de groepen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**.
-11. Kies **Opslaan** op de blade **Koppeling maken** om het winkelwagenprofiel op te slaan.
+11. Kies **Opslaan** in het deelvenster **Koppeling maken** om het winkelwagenprofiel op te slaan.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Stap 7: het winkelwagenprofiel toewijzen aan klassen
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Overige** > **Intune**.
-3. Kies **Apparaten configureren** op de blade **Intune**.
-4. Kies **Beheren** > **Toewijzingsstatus** op de blade **Apparaatconfiguratie**.
-5. Selecteer op de blade **Toewijzingsstatus** het**winkelwagenprofiel** dat u hebt gemaakt.
-6. Kies **Toewijzingen** op de blade **Winkelwagenprofiel** en kies vervolgens **Groepen selecteren die moeten worden opgenomen** onder **Opnemen**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+4. Kies **Beheren** > **Toewijzingsstatus** in het deelvenster **Apparaatconfiguratie**.
+5. Selecteer in het deelvenster **Toewijzingsstatus** het **winkelwagenprofiel** dat u hebt gemaakt.
+6. Kies **Toewijzingen** in het deelvenster **Winkelwagenprofiel** en kies vervolgens **Groepen selecteren die moeten worden opgenomen** onder **Opnemen**.
 7. Selecteer de klassen waarop u het winkelwagenprofiel wilt toepassen (selecteer niet een groep) en kies vervolgens **Selecteren**. 
 8. Als u klaar bent, kiest u **Opslaan**.
 

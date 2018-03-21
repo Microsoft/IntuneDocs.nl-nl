@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e1126e05d101669c5796e4bd7fcaf08339fa43
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7c63c817ccddd0abc6c5c6b0ae2f2a7d1cb2d9bf
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-verbindingen in Microsoft Intune
 
@@ -49,11 +49,11 @@ Intune ondersteunt het maken van VPN-profielen die gebruikmaken van de volgende 
 Type verbinding |iOS en Mac OS X  |Android en Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop en Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Ja |Ja   |Nee    |Nee  |Nee    | Ja (OMA-URI, alleen Mobile)|     
-Cisco (IPsec)|Yes |Ja   |Nee  |Nee  |Nee | Nee|
-Citrix|Yes |Ja (alleen Android)   |Nee  |Nee  |Nee | Nee|
+Cisco (IPsec)|Ja |Ja   |Nee  |Nee  |Nee | Nee|
+Citrix|Ja |Ja (alleen Android)   |Nee  |Nee  |Nee | Nee|
 Pulse Secure|Ja  |Ja |Ja   |Ja  |Ja| Ja|        
 F5 Edge Client|Ja |Ja |Ja |Ja  |   Ja |  Ja|   
-Dell SonicWALL Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja|         
+SonicWall Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja|         
 CheckPoint Mobile VPN|Ja |Ja |Ja |Ja|Ja|Ja|
 Microsoft SSL (SSTP)|Nee |Nee |Nee |Nee|Nee|VPNv1 OMA-URI*|
 Microsoft Automatic|Nee |Nee |Nee |Nee|Ja (OMA-URI)|Ja|
@@ -108,7 +108,7 @@ Naam van de instelling  |Meer informatie
 **Naam**     |Geef een unieke naam voor het VPN-profiel op om dit te herkennen in de Intune-console.         
 **Beschrijving**     |Geef een beschrijving op die een overzicht geeft van het VPN-profiel en overige relevante informatie die u helpt bij het zoeken.         
 **Naam van VPN-verbinding (weergegeven voor gebruikers)**     |Geef een naam voor het VPN-profiel. Dit is de naam die gebruikers te zien krijgen in de lijst met beschikbare VPN-verbindingen op hun apparaten.         
-**Type verbinding**     |  Selecteer een van de volgende verbindingstypen voor gebruik in het VPN-profiel: **Cisco AnyConnect** (niet beschikbaar voor Windows 8.1 of Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Type verbinding**     |  Selecteer een van de volgende verbindingstypen voor gebruik in het VPN-profiel: **Cisco AnyConnect** (niet beschikbaar voor Windows 8.1 of Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **SonicWall Mobile Connect**, **CheckPoint Mobile VPN**.
 **Beschrijving van de VPN-server**     | Geef een beschrijving op voor de VPN-server waarmee apparaten verbinding maken. Voorbeeld: **Contoso VPN-server**. Als het verbindingstype **F5 Edge Client** is, gebruikt u het veld **Serverlijst** om een lijst met serverbeschrijvingen en IP-adressen op te geven.
 **IP-adres of FQDN van server**    |Geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding zullen maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.  Als het verbindingstype **F5 Edge Client** is, gebruikt u het veld **Serverlijst** om een lijst met serverbeschrijvingen en IP-adressen op te geven.         |         
 **Serverlijst**     |Kies **Toevoegen** om een nieuwe VPN-server toe te voegen die moet worden gebruikt voor de VPN-verbinding. U kunt ook opgeven welke server de standaardserver voor de verbinding moet zijn. Deze optie wordt alleen weergegeven als het verbindingstype **F5 Edge Client** is.         
@@ -118,7 +118,7 @@ Naam van de instelling  |Meer informatie
 **Clientcertificaat selecteren voor clientverificatie (identiteitscertificaat)**|Selecteer het SCEP-clientcertificaat dat u eerder hebt gemaakt en dat wordt gebruikt voor het verifiëren van de VPN-verbinding. Zie [Custom configurations for VPN profiles](secure-resource-access-with-certificate-profiles.md) (Toegang tot beveiligde bronnen met certificaatprofielen) voor meer informatie over het gebruik van certificaatprofielen in Intune. Deze optie wordt alleen weergegeven als **Certificaten** is geselecteerd als verificatiemethode.
 **Rol**| Geef de naam op van de gebruikersrol die toegang tot deze verbinding heeft. Een gebruikersrol definieert persoonlijke instellingen en opties en schakelt bepaalde toegangsfuncties in of uit. Deze optie wordt alleen weergegeven als het verbindingstype **Pulse Secure** of **Citrix** is.
 **Realm**|Geef de naam op van de verificatierealm die u wilt gebruiken. Een verificatierealm is een groepering van verificatieresources die worden gebruikt door het verbindingstype Pulse Secure of Citrix. Deze optie wordt alleen weergegeven als het verbindingstype **Pulse Secure** of **Citrix** is.
-**Aanmeldingsgroep of -domein**|Geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken. Deze optie wordt alleen weergegeven als het verbindingstype **Dell SonicWALL Mobile Connect** is.
+**Aanmeldingsgroep of -domein**|Geef de naam op van de aanmeldingsgroep of het aanmeldingsdomein waarmee u verbinding wilt maken. Deze optie wordt alleen weergegeven als het verbindingstype **SonicWall Mobile Connect** is.
 **Vingerafdruk**|Geef een tekenreeks op (bijvoorbeeld 'Contoso-vingerafdrukcode') die wordt gebruikt om te controleren of de VPN-server kan worden vertrouwd. Een vingerafdruk kan worden verzonden naar de client zodat deze alle servers vertrouwt die dezelfde vingerafdruk presenteren wanneer er verbinding wordt gemaakt. Als het apparaat nog niet over de vingerafdruk beschikt, wordt de gebruiker gevraagd om de VPN-server waarmee deze verbinding maakt, te vertrouwen terwijl de vingerafdruk wordt weergegeven. (De gebruiker controleert de vingerafdruk handmatig en kiest **Vertrouwen** om verbinding te maken.) Deze optie wordt alleen weergegeven als het verbindingstype **CheckPoint Mobile VPN** is.
 **VPN per app**|Selecteer deze optie als u deze VPN-verbinding wilt koppelen aan een iOS-app of een Max OS X-app zodat de verbinding wordt geopend wanneer de app wordt uitgevoerd. U kunt het VPN-profiel aan een app koppelen bij het implementeren van de software. Zie [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Apps implementeren in Microsoft Intune) voor meer informatie
 **VPN op aanvraag**|U kunt VPN op aanvraag voor apparaten met iOS 8.0 en hoger instellen. Instructies hiervoor zijn beschikbaar in [VPN op aanvraag voor iOS-apparaten](#on-demand-vpn-for-ios-devices).
@@ -126,7 +126,7 @@ Naam van de instelling  |Meer informatie
 **Automatisch configuratiescript gebruiken** (alleen voor iOS, Mac OS X, Windows 8.1 en Windows Phone 8.1)|Als uw VPN-server een proxyserver voor de verbinding vereist, geeft u op of u een automatisch configuratiescript wilt gebruiken om de instellingen te definiëren en geeft u vervolgens een URL naar het bestand met de instellingen op. Raadpleeg de Windows Server-documentatie voor meer informatie.
 **Proxyserver gebruiken** (alleen voor iOS, Mac OS X, Windows 8.1 en Windows Phone 8.1)|Als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie en geeft u het adres en poortnummer van de proxyserver op. Raadpleeg de Windows Server-documentatie voor meer informatie.
 **Proxy-instellingen overslaan voor lokale adressen** (alleen voor iOS, Mac OS X, Windows 8.1 en Windows Phone 8.1)|Als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze optie als u de proxyserver niet wilt gebruiken voor lokale adressen die u opgeeft. Raadpleeg de Windows Server-documentatie voor meer informatie.
-**Aangepaste XML** (alleen Windows 8.1 en hoger, en Windows Phone 8.1 en hoger)|Geef aangepaste XML-opdrachten op waarmee de VPN-verbinding wordt geconfigureerd. Voorbeeld voor **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Voorbeeld voor **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" /&gt;. Voorbeeld voor **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Voorbeeld voor **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;f5-vpn-conf&gt;. Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer informatie over het schrijven van aangepaste XML-opdrachten.
+**Aangepaste XML** (alleen Windows 8.1 en hoger, en Windows Phone 8.1 en hoger)|Geef aangepaste XML-opdrachten op waarmee de VPN-verbinding wordt geconfigureerd. Voorbeeld voor **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Voorbeeld voor **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" /&gt;. Voorbeeld voor **SonicWall Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Voorbeeld voor **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;f5-vpn-conf&gt;. Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer informatie over het schrijven van aangepaste XML-opdrachten.
 **Zoeklijst voor DNS-achtervoegsels** (alleen voor Windows Phone 8.1)|Geef per regel één DNS-achtervoegsel op. Elk DNS-achtervoegsel dat u opgeeft, wordt doorzocht wanneer met behulp van een korte naam verbinding met een website wordt gemaakt. Geef bijvoorbeeld de DNS-achtervoegsels **domain1.contoso.com** en **domain2.contoso.com** op. Wanneer u naar de URL **http://mywebsite**gaat, worden de URL's **http://mywebsite.domain1.contoso.com** en **http://mywebsite.domain2.contoso.com** doorzocht.
 **VPN overslaan bij verbinding met Wi-Fi-netwerk van bedrijf** (alleen voor Windows Phone 8.1)|Selecteer deze optie om aan te geven dat de VPN-verbinding niet wordt gebruikt wanneer het apparaat is verbonden met het Wi-Fi-netwerk van het bedrijf.
 **VPN overslaan bij verbinding met Wi-Fi-netwerk thuis** (alleen voor Windows Phone 8.1)|Selecteer deze optie om aan te geven dat de VPN-verbinding niet wordt gebruikt wanneer het apparaat is verbonden met een Wi-Fi-netwerk thuis.

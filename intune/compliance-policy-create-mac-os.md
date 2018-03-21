@@ -1,12 +1,12 @@
 ---
-title: Een nalevingsbeleid maken voor macOS
-titleSuffix: Azure portal
-description: Meer informatie over het maken van nalevingsbeleid voor macOS-apparaten.
+title: Een nalevingsbeleid voor macOS-apparaten maken in Microsoft Intune
+titleSuffix: 
+description: Maak een Microsoft Intune-nalevingsbeleid voor apparaten voor macOS-apparaten zodat u kunt opgeven aan welke vereisten een apparaat moet voldoen om te conformeren.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid maken voor macOS-apparaten in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Een Intune-apparaatnalevingsbeleid voor macOS bepaalt de regels en instellingen waaraan een macOS-apparaat moet voldoen om te voldoen aan het beleid. U kunt deze beleidsregels gebruiken met voorwaardelijke toegang om toegang tot bedrijfsbronnen toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen voor niet-naleving treffen. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -108,7 +110,7 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 
 2. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-3. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+3. Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
 4. Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
 
@@ -118,7 +120,7 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 
 7. Typ een naam en beschrijving en kies het platform waarop u dit beleid wilt toepassen.
 
-8. De blade **macOS-nalevingsbeleid** wordt geopend. Kies de instellingencategorieën **Beveiliging**, **Apparaatstatus** en **Apparaateigenschappen** om uw instellingen op te geven.
+8. Het deelvenster **macOS-nalevingsbeleid** wordt geopend. Kies de instellingencategorieën **Beveiliging**, **Apparaatstatus** en **Apparaateigenschappen** om uw instellingen op te geven.
 
 10. Wanneer u klaar bent met het kiezen van de instellingen, kiest u **OK** onder elke instellingencategorie voor apparaatnaleving.
 
@@ -126,15 +128,15 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 
-Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u op de blade **Nalevingsbeleid**.
+Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - Beleid**.
 
-1. Kies het apparaatnalevingsbeleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Hiermee opent u de blade waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
+1. Kies het apparaatnalevingsbeleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Hiermee opent u het deelvenster waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
 
-2. Kies **Groepen selecteren** om de blade met de Azure AD-beveiligingsgroepen te openen.
+2. Kies **Geselecteerde groepen** om het deelvenster met de Azure AD-beveiligingsgroepen te openen.
 
-3. Kies **Selecteren** en vervolgens **Opslaan** om het apparaatnalevingsbeleid toe te wijzen aan Azure AD-beveiligingsgroepen.
+3. Kies **Opslaan** om het apparaatnalevingsbeleid toe te wijzen aan Azure AD-beveiligingsgroepen.
 
-4. Wanneer u klaar bent met het toewijzen van het apparaatnalevingsbeleid aan uw groepen, kunt u de blade **Toewijzingen** sluiten.
+4. Wanneer u klaar bent met het toewijzen van het apparaatnalevingsbeleid aan uw groepen, kunt u het deelvenster **Toewijzingen** sluiten.
 
     > [!TIP]
     > Standaard controleren apparaten elke acht uur op naleving, maar gebruikers kunnen dit proces ook afdwingen via de Intune-bedrijfsportal-app.

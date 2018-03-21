@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>AirPrint-instellingen voor iOS- en macOS-apparaten
 
@@ -40,8 +40,9 @@ Gebruik deze procedure om AirPrint-gegevens toe te voegen aan de nettolading van
 
 ## <a name="configure-an-airprint-profile"></a>Een AirPrint-profiel configureren
 
-1. Kies **AirPrint** op de blade **Apparaatfuncties**.
-2. Als u een AirPrint-bestemming wilt toevoegen, voert u op de blade **AirPrint** het **IP-adres** en **resourcepad** in en klikt u vervolgens op **Toevoegen**.
+1. Navigeer vanaf [Intune in Azure Portal](https://portal.azure.com) naar [ **Apparaatfuncties** in het apparaatconfiguratiegebied](device-features-configure.md). 
+1. Kies **AirPrint** in het deelvenster **Apparaatfuncties**.
+2. Als u een AirPrint-bestemming wilt toevoegen, voert u in het deelvenster **AirPrint** het **IP-adres** en **resourcepad** in en klikt u vervolgens op **Toevoegen**.
 3. Ga door naar het toevoegen met zo veel bestemmingen als u wilt. Als u klaar bent, kiest u **OK**.
 
 U kunt ook een lijst met printers importeren uit een bestand met door komma's gescheiden waarden (.csv) of u kunt de lijst exporteren.

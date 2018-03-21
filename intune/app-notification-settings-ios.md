@@ -1,12 +1,11 @@
 ---
-title: App-meldingsinstellingen voor iOS-apparaten in Intune
-titlesuffix: Azure portal
-description: In dit onderwerp leest u over de instellingen die u kunt gebruiken voor het beheren van meldingen op iOS-apparaten.
+title: App-meldingen maken voor iOS-apparaten - Microsoft Intune - Azure | Microsoft Docs
+description: App-meldingen voor iOS-apparaten toevoegen of maken in Microsoft Intune. Kies naar welke apps u meldingen wilt verzenden, configureer de instellingen voor meldingen op het vergrendelingsscherm, schakel geluid in, kies het type melding en voeg een badge toe.
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,41 +14,44 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91e4b6197c7606a70862ad5fb12b10b5e0f3ed81
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 018a04bd674e4f270ed2e356c08825ab1d5878da
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="intune-app-notifications-settings-for-ios-devices"></a>App-meldingsinstellingen voor iOS-apparaten in Intune
+# <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>App-meldingsinstellingen op iOS-apparaten in Intune configureren
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Hiermee kunt u configureren hoe apps die op een apparaat zijn geïnstalleerd meldingen verzenden. Deze instellingen bieden ondersteuning voor apparaten onder supervisie waarop iOS 9.3 of hoger wordt uitgevoerd.
+Configureer hoe apps die op een iOS-apparaat zijn geïnstalleerd meldingen verzenden. Deze instellingen bieden ondersteuning voor apparaten onder supervisie waarop iOS 9.3 of hoger wordt uitgevoerd.
 
-## <a name="configure-settings"></a>Instellingen configureren
+## <a name="add-the-app-notification"></a>De app-melding toevoegen
 
-1. Kies op de blade Apparaatfuncties de optie **App-meldingen (alleen onder supervisie)**.
-2. Kies **Toevoegen**op de blade **Appmeldingen** en configureer vervolgens de volgende waarden:
-    - **App-bundel-id**: voer de **App-bundel-id** in van de app die u wilt configureren. Zie voor hulp **Lijst van bundel-id's voor ingebouwde iOS-apps** verderop in dit onderwerp.
-    - **App-naam**: voer de naam in van de app die u wilt configureren. Deze naam wordt niet weergegeven op het apparaat en wordt gebruikt om de app te herkennen in de lijst.
-    - **Uitgever**: voer de uitgever in van de app die u wilt configureren. De naam van de uitgever wordt niet weergegeven op het apparaat en wordt alleen gebruikt om de app te herkennen in de lijst.
-    - **Meldingen**: in- of uitschakelen dat de app meldingen naar het apparaat verzendt. Als u deze instelling uitschakelt, worden de volgende instellingen ook uitgeschakeld.
-        - **Weergeven in het meldingencentrum**: schakel deze instelling in om de app meldingen te laten weergeven in het meldingencentrum van het apparaat.
-        - **Weergeven in het vergrendelingsscherm**: schakel deze instelling in om meldingen van de app weer te geven op het vergrendelingsscherm van de app.
-        - **Waarschuwingstype**: selecteer het gewenste type melding wanneer het apparaat wordt ontgrendeld vanuit:
-            - **Geen**: er wordt geen melding weergegeven.
-            - **Banner** er wordt kort een vaandel weergegeven met hierin de melding.
-            - **Modal**: de melding wordt weergegeven en de gebruiker moet deze handmatig sluiten voordat de gebruiker kan doorgaan en het apparaat kan gebruiken.
-        - **Badge op app-pictogram**: schakel deze instelling in om een badge toe te voegen aan het app-pictogram om aan te geven dat de app een melding heeft verzonden.
-        - **Geluiden**: schakel deze instelling in om een geluid af te spelen wanneer er een melding wordt weergegeven.
-3. Ga door en voeg zo veel apps toe als u wilt. Als u klaar bent, kiest u **OK**.
-4. Kies **OK** totdat u terugkeert naar de blade **Profiel maken** en kies vervolgens **Maken**. 
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer binnen het iOS- of macOS- profiel **Apparaatfuncties**. [iOS- of Mac OS apparaatfuncties](device-features-configure.md) vermeldt de stappen om een profiel te maken.
+3. Selecteer **App-meldingen (alleen onder supervisie)** en selecteer vervolgens **Toevoegen**: ![App-melding toevoegen aan iOS- of macOS-profiel in Intune](./media/ios-macos-app-notifications.png)
+4. Voer de volgende eigenschappen in:
 
+  - **App-bundel-id**: voer de **App-bundel-id** in van de app die u wilt configureren. Zie voor hulp **Lijst van bundel-id’s voor ingebouwde iOS-apps** (in dit artikel).
+  - **App-naam**: voer de naam in van de app die u wilt configureren. Deze naam wordt niet weergegeven op het apparaat en wordt gebruikt om de app te herkennen in de lijst.
+  - **Uitgever**: voer de uitgever in van de app die u wilt configureren. De naam van de uitgever wordt niet weergegeven op het apparaat en wordt alleen gebruikt om de app te herkennen in de lijst.
+  - **Meldingen**: in- of uitschakelen dat de app meldingen naar het apparaat verzendt. Als u deze instelling uitschakelt, worden de volgende instellingen ook uitgeschakeld.
+    - **Weergeven in het meldingencentrum**: schakel deze instelling in om de app meldingen te laten weergeven in het meldingencentrum van het apparaat.
+    - **Weergeven in het vergrendelingsscherm**: schakel deze instelling in om meldingen van de app weer te geven op het vergrendelingsscherm van de app.
+    - **Waarschuwingstype**: selecteer het gewenste type melding wanneer het apparaat wordt ontgrendeld vanuit:
+      - **Geen**: er wordt geen melding weergegeven.
+      - **Banner** er wordt kort een vaandel weergegeven met hierin de melding.
+      - **Modal**: de melding wordt weergegeven en de gebruiker moet deze handmatig sluiten voordat de gebruiker kan doorgaan en het apparaat kan gebruiken.
+    - **Badge op app-pictogram**: schakel deze instelling in om een badge toe te voegen aan het app-pictogram om aan te geven dat de app een melding heeft verzonden.
+    - **Geluiden**: schakel deze instelling in om een geluid af te spelen wanneer er een melding wordt weergegeven.
+
+5. Ga door en voeg zo veel apps toe als u wilt. Wanneer u klaar bent met het toevoegen van apps, selecteert u **OK**.
+6. Selecteer **Maken** om het profiel op te slaan.
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id’s voor ingebouwde iOS-apps
 
-Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier. 
+De volgende lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-id van andere apps wilt weten, kunt u het beste contact opnemen met de softwareleverancier.
 
 |||
 |-|-|
@@ -95,4 +97,4 @@ Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als
 
 ## <a name="next-steps"></a>Volgende stappen
 
-U kunt het apparaatprofiel nu toewijzen aan de gewenste groepen. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor meer informatie.
+Wijs het apparaatprofiel toe aan de gewenste groepen. In [Apparaatprofielen toewijzen](device-profile-assign.md) worden de stappen beschreven.
