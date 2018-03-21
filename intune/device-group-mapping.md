@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d07b025881ea78299d617205ce5ba39bb92a1231
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>Apparaten categoriseren in groepen voor eenvoudiger beheer
 
@@ -41,12 +41,11 @@ U kunt alle apparaatcategorieën maken die u maar wilt, bijvoorbeeld:
 ## <a name="how-to-configure-device-categories"></a>Apparaatcategorieën configureren
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Stap 1: apparaatcategorieën maken op de blade Intune in Azure Portal
-1. In de [Azure-portal](https://portal.azure.com) kiest u **alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Apparaatinschrijving** op de blade **Intune**.
-3. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving**.
-4. Kies **Maken** op de pagina **Apparaatcategorieën** om een nieuwe categorie toe te voegen.
-5. Voer op de blade **Apparaatcategorie maken** een **Naam** in voor de nieuwe categorie en een optionele **Beschrijving**.
-6. Wanneer u klaar bent, klikt u op **Maken**. De nieuwe categorie wordt weergegeven in de lijst met categorieën.
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving**.
+2. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving**.
+3. Kies **Maken** op de pagina **Apparaatcategorieën** om een nieuwe categorie toe te voegen.
+4. Voer op de blade **Apparaatcategorie maken** een **Naam** in voor de nieuwe categorie en een optionele **Beschrijving**.
+5. Wanneer u klaar bent, klikt u op **Maken**. De nieuwe categorie wordt weergegeven in de lijst met categorieën.
 
 Als u Azure Active Directory-beveiligingsgroepen maakt in stap 2, gebruikt u de naam van de apparaatcategorie.
 
@@ -61,23 +60,20 @@ Wanneer u apparaatgroepen hebt geconfigureerd en gebruikers hun apparaat registr
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>De apparaatcategorieën weergeven die u beheert
 
-1.  In de [Azure-portal](https://portal.azure.com) kiest u **alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+1.  Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaten**.
 
-2. Kies op de blade Intune van Azure Portal **Apparaten**.
+2.  Klik onder **Beheren** op **Alle apparaten**.
 
-3.  Klik onder **Beheren** op **Alle apparaten**.
-
-4.  Bekijk de kolom **Apparaatcategorie** in de lijst met apparaten.
+3.  Bekijk de kolom **Apparaatcategorie** in de lijst met apparaten.
 
 Als de kolom **Apparaatcategorie** niet wordt weergegeven, klikt u op **Kolommen**, kiest u **Apparaatcategorie** in de lijst en klikt u vervolgens op **Toepassen**.
 
 ### <a name="to-change-the-category-of-a-device"></a>De categorie van een apparaat wijzigen
 
-1. In de [Azure-portal](https://portal.azure.com) kiest u **alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Op de blade **Apparaten** onder de sectie **Beheren** kiest u **Alle apparaten**.
-5. Kies het gewenste apparaat in de lijst met apparaten en kies **Eigenschappen** onder de sectie **Beheren**op de blade Apparaateigenschappen.
-6. Op de volgende blade kunt u de **apparaatcategorie** van het geselecteerde apparaat wijzigen in een van de categorienamen die u eerder hebt geconfigureerd.
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaten**.
+2. Op de blade **Apparaten** onder de sectie **Beheren** kiest u **Alle apparaten**.
+3. Kies het gewenste apparaat in de lijst met apparaten en kies **Eigenschappen** onder de sectie **Beheren**op de blade Apparaateigenschappen.
+4. Op de volgende blade kunt u de **apparaatcategorie** van het geselecteerde apparaat wijzigen in een van de categorienamen die u eerder hebt geconfigureerd.
 
 ## <a name="after-you-configure-device-groups"></a>Na het configureren van apparaatgroepen
 

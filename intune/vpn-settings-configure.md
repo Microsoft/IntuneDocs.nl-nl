@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>VPN-instellingen configureren in Microsoft Intune
 
@@ -37,7 +37,7 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 |Cisco (IPsec)|Nee|Ja|Nee|Nee|Nee|Nee|
 |Citrix|Ja|Ja|Nee|Nee|Nee|Ja|
 |F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
-|Dell SonicWALL Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
+|SonicWall Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
 |Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
 |Cisco AnyConnect|Ja|Ja|Ja|Nee|Nee|Nee|
 |Automatisch|Nee|Nee|Nee|Nee|Nee|Ja|
@@ -54,12 +54,12 @@ Zie [Create custom VPN profiles](custom-vpn-profiles-create.md) (Aangepaste VPN-
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Een apparaatprofiel met VPN-instellingen maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het VPN-profiel.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+2. Kies **Beheren** > **Profielen** in het deelvenster **Apparaatconfiguratie**.
+3. Kies **Profiel maken** in het deelvenster Profielen.
+4. Voer in het deelvenster **Profiel maken** een **naam** en een **beschrijving** in voor het VPN-profiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de VPN-instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor VPN-apparaatinstellingen:
     - **Android**
     - **Android for Work**
@@ -76,9 +76,9 @@ Zie [Create custom VPN profiles](custom-vpn-profiles-create.md) (Aangepaste VPN-
     - [Windows Phone 8.1-instellingen](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1-instellingen](vpn-settings-windows-8-1.md)
     - [Instellingen voor Windows 10](vpn-settings-windows-10.md) (inclusief Windows Holographic for Business)
-8. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+8. Als u klaar bent, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
 
 

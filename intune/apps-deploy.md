@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Apps aan groepen toewijzen met Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Wanneer u een app aan Intune hebt toegevoegd, kunt u deze toewijzen aan gebruikers en apparaten.
+Wanneer u een app aan Microsoft Intune hebt toegevoegd, kunt u deze toewijzen aan gebruikers en apparaten.
 
 Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door Intune. In de volgende tabel ziet u de verschillende opties voor het toewijzen van apps aan gebruikers en apparaten.
 
@@ -51,19 +51,28 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Mobiele apps** op de blade **Intune**.
-1. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
+1. Kies in de workload **Mobiele apps** de optie **Apps** in de sectie **Beheren**.
 2. Kies de app die u wilt toewijzen op de blade met de lijst met apps.
-3. Op de blade **Overzicht** kiest u **Beheren** > **Toewijzingen**.
-4. Kies vervolgens **Groep toevoegen** en kies dan op de blade **Groep toevoegen** de Azure AD-groepen die u wilt opnemen of uitsluiten bij het toewijzen van de app.
-5. Voor elke app die u kiest, moet u een **toewijzingstype** voor de app selecteren. U hebt de volgende mogelijkheden:
+3. Kies op de app-specifieke blade **Overzicht** de optie **Toewijzingen** in de sectie **Beheren**.
+4. Kies **Groep toevoegen** om de blade **Groep toevoegen** weer te geven die bij de app hoort.
+5. Voor de specifieke app moet u een **toewijzingstype** selecteren. U hebt de volgende mogelijkheden:
     - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.
-    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune.
+    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune. Houd er rekening mee dat het app-type **Android for Work** geen ondersteuning biedt voor deze optie. 
     - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
     - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
-6. **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
-6. Als u klaar bent, kiest u **OK** en vervolgens **Opslaan**.
 
-De app wordt nu toegewezen aan de groepen die u hebt geselecteerd.
+    > [!NOTE]
+    > **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
+
+6. Selecteer **Opgenomen groepen** om de gebruikersgroepen te selecteren die worden beïnvloed door deze app-toewijzing.
+7. Klik op **Selecteren** wanneer u één of meer groepen hebt geselecteerd om op te nemen.
+8. Klik op **OK** op de blade **Toewijzen** om het selecteren van de op te nemen groepen te voltooien.
+9. Klik op **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
+10. Als u hebt besloten dat u groepen wilt uitsluiten, klikt u op **Selecteren** op de blade **Groepen selecteren**.
+11. Klik op **OK** op de blade **Groep toevoegen**.
+12. Klik op **Opslaan** op de blade **Toewijzingen** om uw toewijzingen op te slaan.
+
+De app wordt nu toegewezen aan de groepen die u hebt geselecteerd. Zie [App-toewijzingen opnemen en uitsluiten](apps-inc-exl-assignments.md) voor meer informatie over het opnemen en uitsluiten van app-toewijzingen.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Hoe conflicten tussen app-intents worden opgelost
 
@@ -78,8 +87,8 @@ Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende 
 |Gebruiker beschikbaar|Gebruiker niet beschikbaar|Niet beschikbaar|
 |Gebruiker beschikbaar|Gebruiker verwijderen|Verwijderen|
 |Gebruiker niet beschikbaar|Gebruiker verwijderen|Verwijderen
-|Gebruiker vereist|Apparaat vereist|Beide bestaan, gateway verwerkt vereist 
-|Gebruiker vereist|Apparaat verwijderen|Beide bestaan, gateway verwerkt vereist 
+|Gebruiker vereist|Apparaat vereist|Beide bestaan, gateway verwerkt vereist
+|Gebruiker vereist|Apparaat verwijderen|Beide bestaan, gateway verwerkt vereist
 |Gebruiker beschikbaar|Apparaat vereist|Beide bestaan, gateway zet vereist om (Vereist en Beschikbaar)
 |Gebruiker beschikbaar|Apparaat verwijderen|Beide bestaan, gateway zet Beschikbaar om<br>App wordt weergegeven in bedrijfsportal.<br>Als de app al is geïnstalleerd (als een vereiste app met vorige intent),wordt de app verwijderd.<br>Maar als de gebruiker in de bedrijfsportal op Installeren klikt, wordt de app geïnstalleerd en wordt de intent om te verwijderen niet gehonoreerd.|
 |Gebruiker niet beschikbaar|Apparaat vereist|Vereist|
@@ -105,7 +114,7 @@ Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende 
 |Gebruiker beschikbaar zonder registratie|Apparaat verwijderen|Verwijderen en beschikbaar zonder registratie<br>Als de gebruiker de app niet heeft geïnstalleerd vanuit de bedrijfsportal, wordt het verzoek om verwijdering gehonoreerd.<br>Als de gebruiker de app vanuit de bedrijfsportal installeert, krijgt de installatie prioriteit boven het verwijderen van de app.|
 
 >[!NOTE]
->Alleen voor beheerde iOS Store-apps: wanneer u deze toevoegt aan Intune en toewijst als Vereist, worden ze automatisch gemaakt met zowel de intent Vereist als Beschikbaar.
+>Alleen voor beheerde iOS Store-apps: wanneer u deze apps toevoegt aan Microsoft Intune en toewijst als **Vereist**, worden ze automatisch gemaakt met zowel de intentie **Vereist** als **Beschikbaar**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

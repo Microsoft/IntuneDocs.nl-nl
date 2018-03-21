@@ -1,12 +1,11 @@
 ---
-title: Beheerde apparaten extern vergrendelen met Intune
-titlesuffix: Azure portal
-description: Meer informatie over het gebruik van Intune om apparaten die u beheert, op afstand te vergrendelen.
+title: Apparaten vergrendelen met Microsoft Intune - Azure | Microsoft Docs
+description: Gebruik de actie Extern vergrendelen in Microsoft Intune om apparaten te vergrendelen die zijn beveiligd met een pincode of wachtwoord.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,43 +13,41 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a8f3c93507cde4363570a9a39f8b3b1f69c07df
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 59a55de54a5a18f5fd1080fefa15c0e4801a1456
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="remotely-lock-managed-devices-with-intune"></a>Beheerde apparaten extern vergrendelen met Intune
-
+# <a name="remotely-lock-devices-with-intune"></a>Apparaten extern vergrendelen met Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met **Extern vergrendelen** wordt het geselecteerde apparaat vergrendeld. De eigenaar van het apparaat moet de wachtwoordcode gebruiken om het apparaat te ontgrendelen. U kunt alleen een apparaat vergrendelen dat op afstand is vergrendeld met een pincode of een wachtwoord.
+Met **Extern vergrendelen** wordt het apparaat vergrendeld. De eigenaar van het apparaat moet de wachtwoordcode gebruiken om het apparaat te ontgrendelen. U kunt apparaten waarvoor een pincode of wachtwoord is ingesteld extern vergrendelen. Apparaten waarvoor geen pincode of wachtwoordcode is ingesteld, kunnen niet extern worden vergrendeld.
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
 Externe vergrendeling wordt ondersteund op de volgende platformen:
 
-|Platform|Ondersteuningsstatus|
-|---|---|
-|Android|Yes|
-|iOS|Yes|
-|macOS|Yes|
-|Windows 10 Desktop|Nee|
-|Windows 10 Mobile|Yes|
-|Windows Phone|Ja, voor Windows Phone 8.1 of hoger|
+- Android
+- iOS
+- macOS
+- Windows 10 Mobile
+- Windows Phone 8.1 en hoger
 
-> [!NOTE]  
-> Voor macOS-apparaten moet u een zescijferige pincode voor herstel instellen. Als het apparaat is vergrendeld, toont de blade **Apparaatoverzicht** de pincode totdat een andere apparaatactie wordt verzonden.
+Dit wordt **niet** ondersteund voor:
+- Windows 10 Desktop
 
-## <a name="how-to-remote-lock-a-device"></a>Een apparaat op afstand vergrendelen
+> [!NOTE]
+> Voor macOS-apparaten moet u een zescijferige pincode voor herstel instellen. Als het apparaat is vergrendeld, wordt in **Apparaatoverzicht** de pincode weergegeven totdat een andere apparaatactie wordt verzonden.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies **Alle apparaten** op de blade **Apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een apparaat en kies vervolgens de externe apparaatactie **Extern vergrendelen**.
+## <a name="remote-lock-a-device"></a>Een apparaat vergrendelen op afstand
+
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
+4. Selecteer een apparaat in de lijst met apparaten en selecteer vervolgens de actie **Extern vergrendelen**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.
+Als u de status van deze actie wilt bekijken, opent u **Apparaatacties** (Microsoft Intune > Apparaten). Zie [Beschikbare acties](device-management.md) voor een overzicht van meer acties voor het beheren van uw apparaten.

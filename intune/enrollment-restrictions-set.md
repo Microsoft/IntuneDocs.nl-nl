@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -53,8 +53,8 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
 
 ## <a name="create-a-restriction"></a>Een beperking maken
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
 4. Kies **Beperking maken**.
 5. Geef een naam en beschrijving voor de beperking op.
@@ -70,8 +70,8 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
 
 U kunt de instellingen voor een beperking van het type apparaat als volgt wijzigen:
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
 4. Kies onder **Beperking voor apparaattypen** de beperking die u wilt instellen.
 5. Selecteer onder de naam van de beperking (**Alle gebruikers** voor de standaardbeperking) **Platforms**. Kies **Toestaan** of **Blokkeren** voor elk weergegeven platform.
@@ -81,10 +81,10 @@ U kunt de instellingen voor een beperking van het type apparaat als volgt wijzig
   - iOS ondersteunt major.minor.rev.
   - Windows ondersteunt alleen major.minor.rev.build voor Windows 10.
   Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die zijn ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
-8. Geef voor elk vermeld platform op of u apparaten die **persoonlijk eigendom zijn** wilt **Toestaan** of **Blokkeren**.
+6. Geef voor elk vermeld platform op of u apparaten die **persoonlijk eigendom zijn** wilt **Toestaan** of **Blokkeren**.
 
     ![Schermopname van de werkruimte Apparaatbeperkingen met het standaardapparaatplatform geconfigureerd voor apparaten die persoonlijk eigendom zijn](media/device-restrictions-platform-configurations.png)
-9. Klik op **Opslaan**.
+7. Klik op **Opslaan**.
 
 >[!NOTE]
 >- Als u instelt dat Android-apparaten niet mogen worden ingeschreven als deze persoonlijk eigendom zijn, kunnen Android for Work-apparaten die persoonlijk eigendom zijn, nog wel worden ingeschreven.
@@ -95,13 +95,13 @@ U kunt de instellingen voor een beperking van het type apparaat als volgt wijzig
 
 U kunt de instellingen voor een beperking van de apparaatlimiet als volgt wijzigen:
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
 4. Kies onder **Apparaatlimietbeperkingen** de beperking die u wilt instellen.
 5. Kies **Apparaatlimiet** en selecteer in de vervolgkeuzelijst het maximum aantal apparaten dat een gebruiker kan registreren.
     ![Schermafbeelding van de blade voor apparaatlimietbeperkingen](./media/device-restrictions-limit.png)
-6. Klik op **Opslaan**.
+4. Klik op **Opslaan**.
 
 Er wordt een melding aan eindgebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. In iOS ziet dit er bijvoorbeeld als volgt uit:
 
@@ -119,8 +119,8 @@ U kunt de prioriteit van een niet-standaard-beperking wijzigen.
 
 **Prioriteit van beperkingen wijzigen**
 
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
 4. Beweeg de muisaanwijzer over de beperking in de lijst met prioriteiten.
-5. Sleep de drie verticale puntjes voor de prioriteit naar de gewenste positie in de lijst.
+5. Sleep met de drie verticale puntjes aan de linkerkant de prioriteit naar de gewenste positie in de lijst.

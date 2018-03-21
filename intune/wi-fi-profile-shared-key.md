@@ -1,12 +1,11 @@
 ---
-title: Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
-titleSuffix: Microsoft Intune
-description: Gebruik een aangepast Intune-profiel om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken.
+title: Een Wi-Fi-profiel met een vooraf gedeelde sleutel maken - Microsoft Intune - Azure | Microsoft Docs
+description: Gebruik een aangepast profiel om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken en ontvang XML-voorbeeldcode voor Android-, Windows- en op EAP gebaseerde Wi-Fi-profielen in Microsoft Intune
 keywords: 
-author: vhorne
-ms.author: victorh
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,63 +14,64 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel - Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Hieronder wordt beschreven hoe u de **aangepaste apparaatprofielen** van Intune gebruikt om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel. In dit onderwerp staat ook een voorbeeld van hoe u een EAP Wi-Fi-profiel maakt.
+Vooraf gedeelde sleutels (PSK) worden doorgaans gebruikt om gebruikers in Wi-Fi-netwerken of draadloze LAN's te verifiëren. Met Intune kunt u Wi-Fi-profielen met vooraf gedeelde sleutels maken. Als u een profiel wilt maken, gebruikt u de functie **Aangepaste apparaatprofielen** in Intune. Dit artikel bevat ook enkele voorbeelden over het maken van op EAP gebaseerde Wi-Fi-profielen.
 
-> [!NOTE]
--   Wellicht is het eenvoudiger om de code te kopiëren van een computer die verbinding heeft met dat netwerk, zoals hieronder wordt beschreven.
-- Voor Android hebt u ook de mogelijkheid om deze [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) te gebruiken, die wordt aangeboden door Johnathon Biersack.
--   U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
--  Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook deze [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) gebruiken, die wordt aangeboden door Johnathon Biersack.
+## <a name="before-you-begin"></a>Voordat u begint
 
+- Het kan eenvoudiger zijn om de code te kopiëren vanaf een computer die verbinding heeft met dat netwerk, zoals verderop in dit artikel wordt beschreven.
+- Bij Android kunt u ook de [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) gebruiken.
+- U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
+- Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook gebruikmaken van de [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
 
-1.  Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel wilt maken voor Android of Windows, of een Wi-Fi-profiel op basis van EAP, kiest u tijdens het maken van een apparaatprofiel **Aangepast** voor dat apparaatplatform en maakt u geen Wi-Fi-profiel.
+## <a name="create-a-custom-profile"></a>Een aangepast profiel maken
+U kunt voor Android-, Windows- en op EAP gebaseerde Wi-Fi-profielen een aangepast profiel maken met een vooraf gedeelde sleutel. Zie [Aangepaste apparaatinstellingen maken](custom-settings-configure.md) als u het profiel wilt maken via Azure Portal. Tijdens het maken van het apparaatprofiel kiest u **Aangepast** als apparaatplatform. Selecteer het Wi-Fi-profiel niet. Als u Aangepast kiest, doet u het volgende: 
 
-2.  Geef een naam en beschrijving op.
-3.  Een nieuwe OMA-URI-instelling toevoegen:
+1. Geef een naam en beschrijving op voor het profiel.
+2. Voeg een nieuwe OMA-URI-instelling met de volgende eigenschappen toe: 
 
-   a.   Voer een naam in voor deze Wi-Fi-netwerkinstelling.
+   a. Voer een naam in voor deze Wi-Fi-netwerkinstelling
 
-   b.   Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg.
+   b. (optioneel) Voer een beschrijving in voor de OMA-URI-instelling of laat dit veld leeg
 
-   c.   **Gegevenstype**: ingesteld op **Tekenreeks**.
+   c. Stel het **gegevenstype** in op **Tekenreeks**
 
-   d.   **OMA-URI**:
+   d. **OMA-URI**:
 
     - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-Zorg ervoor dat deze string met een punt begint.
+    > Zorg ervoor dat deze string met een punt begint.
 
-    SSID is de SSID waarvoor u het beleid wilt maken. bijvoorbeeld `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID is de SSID waarvoor u het beleid wilt maken. Voer bijvoorbeeld `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` in.
 
-  e. **Waardeveld**: hier plakt u de XML-code. Hier volgt een voorbeeld. Elke waarde moet worden aangepast aan de instellingen van uw netwerk. Zie het gedeelte met opmerkingen over de code voor een aantal tips.
-4. Kies **OK**, sla op en wijs het beleid toe.
+  e. **Waardeveld**: hier plakt u de XML-code. Zie de voorbeelden in dit artikel. Werk elke waarde bij zodat de waarden overeenkomen met uw netwerkinstellingen. In het gedeelte met opmerkingen over de code staat een aantal tips.
+3. Selecteer **OK**, sla op en wijs het beleid toe.
 
     > [!NOTE]
     > Dit beleid kan alleen worden toegewezen aan gebruikersgroepen.
 
-De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan automatisch verbinding maken met het netwerk.
+De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepast en wordt er een Wi-Fi-profiel gemaakt op het apparaat. Het apparaat kan dan automatisch verbinding maken met het netwerk.
 
-## <a name="android-or-windows-wi-fi-profile"></a>Wi-Fi-profiel voor Android of Windows
+## <a name="android-or-windows-wi-fi-profile-example"></a>Voorbeeld van een Wi-Fi-profiel voor Android of Windows
 
-Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel voor Android of Windows:
+Het volgende voorbeeld bevat de XML-code voor een Wi-Fi-profiel voor Android of Windows. 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` moet worden ingesteld op **onwaar**. Als dit wordt ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor de verbinding kan mislukken.
+> `<protected>false</protected>` moet worden ingesteld op **onwaar**. Als dit wordt ingesteld op **waar**, kan dit ertoe leiden dat het apparaat een versleuteld wachtwoord verwacht en dit vervolgens probeert te ontsleutelen, waardoor het verbinden kan mislukken.
 >
 >  `<hex>53534944</hex>` moet worden ingesteld op de hexadecimale waarde `<name><SSID of wifi profile></name>`.
->  Windows 10-apparaten kunnen ten onrechte de fout *0x87D1FDE8 Doorvoeren is mislukt* retourneren, maar worden wel ingericht met het profiel.
+>  Windows 10-apparaten kunnen ten onrechte de fout *0x87D1FDE8 Doorvoeren is mislukt* retourneren terwijl het apparaat het profiel wel nog bevat.
 
 ```
 <!--
@@ -115,8 +115,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile"></a>Wi-Fi-profiel op basis van EAP
-Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP.
+## <a name="eap-based-wi-fi-profile-example"></a>Voorbeeld van een op EAP gebaseerd profiel
+Het volgende voorbeeld bevat de XML-code voor een Wi-Fi-profiel op basis van EAP:
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -199,16 +199,18 @@ Hier volgt een voorbeeld van de XML-code voor een Wi-Fi-profiel op basis van EAP
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Het XML-bestand maken op basis van een bestaande Wi-Fi-verbinding
-U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding:
-1. Op een computer die (onlangs) is verbonden met het draadloze netwerk, opent u de volgende map: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding. Gebruik daarvoor de volgende stappen: 
 
-    Het is raadzaam een computer te gebruiken die niet met veel draadloze netwerken verbinding heeft gemaakt, omdat u alle profielen moet doorzoeken om het juiste te vinden.
-3.     Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
-4.     Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld Gegevens van de pagina OMA-URI-instellingen.
+1. Ga op een computer die is verbonden of recent verbonden is geweest met het draadloze netwerk naar de map `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
+
+  Het is raadzaam om een computer te gebruiken die nog niet met heel veel draadloze netwerken verbinding heeft gemaakt. Als u dat wel doet, moet u mogelijk alle profielen doorzoeken om het juiste te vinden.
+
+2. Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
+3. Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld **Gegevens** van de pagina OMA-URI-instellingen.
 
 ## <a name="best-practices"></a>Best practices
-Voordat u een Wi-Fi-profiel met PSK implementeert, moet u controleren of het apparaat rechtstreeks verbinding met het eindpunt kan maken.
+- Voordat u een Wi-Fi-profiel met PSK implementeert, moet u controleren of het apparaat rechtstreeks verbinding met het eindpunt kan maken.
 
-Wanneer u sleutels draait (wachtwoorden of wachtwoordzinnen), kunt u downtime verwachten en moet u implementaties evenredig plannen. U kunt nieuwe Wi-Fi-profielen pushen buiten kantooruren. Waarschuw gebruikers dat de connectiviteit mogelijk hierdoor wordt beïnvloed.
+- Wanneer u sleutels (wachtwoorden of wachtwoordzinnen) omwisselt, kunt u downtime verwachten en moet u hiermee rekening houden in uw implementaties. U kunt nieuwe Wi-Fi-profielen pushen buiten kantooruren. Waarschuw gebruikers dat de connectiviteit mogelijk hierdoor wordt beïnvloed.
 
-Zorg ervoor dat het apparaat van de eindgebruiker over een alternatieve internetverbinding beschikt, zodat de overgang soepel kan verlopen. De gebruiker moet bijvoorbeeld weer kunnen overschakelen naar gast-Wi-Fi (of een ander Wi-Fi-netwerk) of moet over een mobiele verbinding beschikken om met Intune te communiceren. Hierdoor kan de gebruiker beleidsupdates blijven ontvangen wanneer het zakelijke Wi-Fi-profiel op het apparaat wordt bijgewerkt.
+- Zorg ervoor dat het apparaat van de eindgebruiker over een alternatieve internetverbinding beschikt, zodat de overgang soepel kan verlopen. De gebruiker moet bijvoorbeeld weer kunnen overschakelen naar gast-Wi-Fi (of een ander Wi-Fi-netwerk) of moet over een mobiele verbinding beschikken om met Intune te communiceren. Met de extra verbinding kan de gebruiker beleidsupdates ontvangen wanneer het zakelijke Wi-Fi-profiel op het apparaat wordt bijgewerkt.

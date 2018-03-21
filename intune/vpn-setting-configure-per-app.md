@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/5/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
@@ -41,13 +41,14 @@ Exporteer het certificaat en voeg de CA toe.
 
 Maak of kies in Azure Active Directory (Azure AD) een bestaande groep die de leden gaat bevatten die toegang hebben tot het VPN per app.
 
-1. Open de Azure-portal. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 2. Kies **Groepen** en klik op **Nieuwe groep**.
-3. Typ de **naam** van de groep. 
-4. Typ de **beschrijving** van de groep. 
+3. Selecteer een **groepstype** voor de groep. 
+3. Typ de **groepsnaam** van de groep. 
+4. Typ de **groepsbeschrijving** van de groep. 
 5. Selecteer **Toegewezen** bij **Type lidmaatschap**.
-6. Selecteer **Nee** bij **Office-functies inschakelen**.
-7. Zoek de VPN-gebruikers op naam of e-mailadres op in de blade **Leden**.
+7. Zoek de VPN-gebruikers op basis van naam of e-mailadres op in het deelvenster **Leden**.
 8. Selecteer elke gebruiker en klik op **Selecteren**.
 9. Klik op **Maken**
 
@@ -55,14 +56,15 @@ Maak of kies in Azure Active Directory (Azure AD) een bestaande groep die de led
 
 Importeer het door de CA uitgegeven basiscertificaat van de VPN-server in een profiel dat in Intune is gemaakt. Op basis van het vertrouwde certificaatprofiel vertrouwt het iOS-apparaat automatisch de CA die door de VPN-server wordt voorgelegd.
 
-1. Open de Azure-portal. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 2. Kies **Apparaatconfiguratie** en klik vervolgens op **Profielen**.
-3. Klik op **+ Profiel maken**. Doe het volgende in **Profiel maken**:
+3. Klik op **Profiel maken**. Doe het volgende in **Profiel maken**:
     1. Typ de **naam**.
     2. Typ de **beschrijving**.
     3. Selecteer **iOS** bij **Platform**.
     4. Selecteer **Vertrouwd certificaat** bij **Profieltype**.
-4. Klik op het mappictogram en blader naar het VPN-certificaat (CER-bestand) dat u vanuit de VPN-beheerconsole hebt geëxporteerd. Klik op OK
+4. Klik op het mappictogram en blader naar het VPN-certificaat (CER-bestand) dat u vanuit de VPN-beheerconsole hebt geëxporteerd. Klik op **OK**.
 5. Klik op **Maken**.
 
     ![Een vertrouwd certificaatprofiel maken](media\vpn-per-app-create-trusted-cert.png)
@@ -71,9 +73,10 @@ Importeer het door de CA uitgegeven basiscertificaat van de VPN-server in een pr
 
 Op basis van het vertrouwde certificaatprofiel vertrouwt iOS automatisch de VPN-server. De SCEP-certificaat geeft referenties van de iOS-VPN-client door aan de VPN-server. Door het certificaat kan het apparaat op de achtergrond verifiëren zonder dat de gebruiker van het iOS-apparaat om een gebruikersnaam en wachtwoord wordt gevraagd. 
 
-1. Open de Azure-portal. Kies **Meer services** > **Bewaking en beheer** > **Intune**. 
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 2. Kies **Apparaatconfiguratie** en klik vervolgens op **Profielen**.
-3. Klik op **+ Profiel maken**. Doe het volgende in **Profiel maken**:
+3. Klik op **Profiel maken**. Doe het volgende in **Profiel maken**:
     1. Typ de **naam**.
     2. Typ de **beschrijving**.
     3. Selecteer **iOS** bij **Platform**.
@@ -97,9 +100,10 @@ Op basis van het vertrouwde certificaatprofiel vertrouwt iOS automatisch de VPN-
 
 Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de verbindingsgegevens voor de VPN-verbinding en de VPN per app-vlag voor het inschakelen van de functie VPN per app voor gebruik door de iOS-toepassing.
 
-1. Open de Azure-portal. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 2. Kies **Apparaatconfiguratie** en klik vervolgens op **Profielen**.
-3. Klik op **+ Profiel maken**. Doe het volgende in **Profiel maken**:
+3. Klik op **Profiel maken**. Doe het volgende in **Profiel maken**:
     1. Typ de **naam**.
     2. Typ de **beschrijving**.
     3. Selecteer **iOS** bij **Platform**.
@@ -126,19 +130,21 @@ Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de 
 
 Na het toevoegen van uw VPN-profiel moet u de app en de Azure AD-groep (Microsoft Azure Active Directory) aan het profiel koppelen.
 
-1. Open de Azure-portal. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-2. Kies **Mobiele Apps**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+2. Kies **Mobiele apps**.
 3. Klik op **Apps**.
 4. Selecteer de app in de lijst met apps.
 5. Klik op **Toewijzingen**.
-6. Klik op **Groepen selecteren** en selecteer de groep die u eerder hebt gedefinieerd. Klik op **Selecteren**.
-7. Selecteer **Vereist** bij **Type** in de blade **Toewijzingen**.
-8. Selecteer uw VPN-definitie bij **VPNS**.
+6. Klik op **Groep toevoegen**.
+7. Selecteer **Vereist** bij **Toewijzingstype** in het deelvenster **Groep toevoegen**.
+6. Selecteer de groep die u eerder hebt gedefinieerd en selecteer **Deze app vereist maken**.
+8. Selecteer uw VPN-definitie voor de **VPN**.
  
     > [!NOTE]  
     > Soms duurt het een minuutje voordat de VPN-definitie de waarde heeft opgehaald. Wacht 3 tot 5 minuten voordat u op **Opslaan** klikt.
 
-9. Klik op **Opslaan**.
+9. Klik op **OK** en op **Opslaan**.
 
     ![Een app aan het VPN koppelen](media\vpn-per-app-app-to-vpn.png)
 

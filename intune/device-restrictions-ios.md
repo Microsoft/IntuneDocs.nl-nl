@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
-In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met iOS.
+
 ## <a name="general"></a>Algemeen
 
+-   **Gebruiksgegevens delen**: stel in of het apparaat wel of niet diagnostische gegevens en gebruikstelemetriegegevens naar Apple mag verzenden.
 -   **Verzenden van diagnostische gegevens**: hiermee kunt u verzending van diagnostische gegevens naar Apple voor het apparaat toestaan of blokkeren.
 -   **Schermafbeelding**: hiermee staat u de gebruiker toe om de inhoud van het scherm vast te leggen als afbeelding.
     - **Observatie van extern scherm met de app Classroom (alleen onder supervisie)**: hiermee kunt u toestaan of voorkomen dat de app Apple Classroom het scherm van iOS-apparaten kan bekijken.
@@ -213,8 +215,8 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 -   **Toevoegen aan Wi-Fi=netwerken die alleen configuratieprofielen gebruiken (alleen onder toezicht)**: hiermee kunt u toestaan dat het apparaat alleen verbinding maakt met netwerken die zijn geconfigureerd met een Intune Wi-Fi-profiel.
 
 - **Regels voor mobiel gebruik (alleen beheerde apps)**: hiermee kunt u de gegevenstypen definiëren die beheerde apps kunnen gebruiken die met een mobiel netwerk zijn verbonden. U kunt kiezen uit:
-    - **Gebruik van mobiel dataverkeer blokkeren**
-    - **Gebruik van mobiel dataverkeer tijdens roaming blokkeren**
+    - **Gebruik van mobiel dataverkeer blokkeren**: u kunt het gebruik van mobiel dataverkeer blokkeren voor ** Alle beheerde apps** of u kunt **specifieke apps kiezen**.
+    - **Gebruik van mobiel dataverkeer tijdens roaming blokkeren**: u kunt het gebruik van mobiel dataverkeer tijdens roaming blokkeren voor ** Alle beheerde apps** of u kunt **specifieke apps kiezen**.
 
 ## <a name="connected-devices"></a>Verbonden apparaten
 

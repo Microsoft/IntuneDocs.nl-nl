@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Een groep maken om uw gebruikers en de toegang tot gegevens te beheren
 
@@ -30,11 +30,13 @@ Microsoft Intune maakt gebruik van Azure Active Directory (Azure AD) om de toega
 ## <a name="how-do-i-create-a-group"></a>Hoe maak ik een groep?
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Gebruik **Resources zoeken** om te zoeken naar **Intune**.
-3. Selecteer **Groepen** nadat u de blade **Microsoft Intune** hebt geopend.
-4. Selecteer de opdracht **Nieuwe groep** op de blade **Gebruikers en groepen – Alle groepen**.
-5. Geef op de blade **Groep** waarden op voor **Naam** en **Beschrijving** voor de groep.
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer **Groepen** nadat u het deelvenster **Microsoft Intune** hebt geopend.
+4. In het deelvenster **Gebruikers en groepen - Alle groepen** selecteert u de opdracht **Nieuwe groep**.
+5. In het deelvenster **Groep** kiest u een **groepstype**.
+5. Geef een **naam** en **beschrijving** op voor de groep.
 6. Stel **Type lidmaatschap** in op **Toegewezen**. Schakel de optie **Office-functies inschakelen** niet in voor de testgroep.
+7. Selecteer **leden** voor de groep.
 7. Klik op **Maken**.
 
 Als u een groep hebt gemaakt, wordt deze weergegeven in de lijst **Alle groepen**. Als dat niet het geval is, kunt u nogmaals proberen om een groep te maken.

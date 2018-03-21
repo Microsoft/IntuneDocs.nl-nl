@@ -1,12 +1,12 @@
 ---
 title: Office 365-apps installeren op apparaten met Microsoft Intune
 titlesuffix: 
-description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen."
+description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
-Met dit type app kunt u eenvoudig Office 365 ProPlus-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
+Met dit type app kunt u eenvoudig Office 365-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De gewenste apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -32,7 +32,7 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus-apps toewijzen aan de door 
 >Deze methode voor het installeren van Office wordt alleen ondersteund als er geen andere Office-versies op het apparaat zijn geïnstalleerd.
 
 - Op de apparaten waarop u deze apps implementeert, moet de Microsoft Windows 10-makersupdate of hoger zijn geïnstalleerd.
-- Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365 ProPlus.
+- Intune ondersteunt alleen het toevoegen van Office-apps uit Office 365-suite.
 - Als er Office-apps zijn geopend wanneer Intune het app-pakket installeert, kan de installatie mogelijk mislukken en kunnen eindgebruikers mogelijk gegevens in niet-opgeslagen bestanden verliezen.
 - Deze installatiemethode wordt niet ondersteund op apparaten met Windows 10S, Windows Home, Windows Team, Windows Holographic en Windows Holographic for Business.
 - Intune biedt geen ondersteuning voor het installeren van Office 365-desktop-apps vanuit Microsoft Store (die ook wel bekend staan als Office Centennial-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.
@@ -41,12 +41,13 @@ Met dit type app kunt u eenvoudig Office 365 ProPlus-apps toewijzen aan de door 
 
 ## <a name="get-started"></a>Aan de slag
 
-1.  Meld u aan bij Azure-portal.
-2.  Kies **Meer services** > **Bewaking en beheer** > **Intune**.
+1.  Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2.  Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3.  Kies **Mobiele apps** op de blade **Intune**.
-4.  Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
+4.  In de workload **Mobiele apps** kiest u **Apps** in het gedeelte **Beheren**.
 5.  Kies **Toevoegen** boven de lijst met apps.
-6.  Kies op de blade **App toevoegen** de optie **Office 365 ProPlus-pakket (Windows 10)**.
+6.  Op de lijst **App-type** op de blade **Apps toevoegen** selecteert u **Windows 10** bij **Office 365-suite**.
+    U kunt de app-suite nu configureren.
 
 ## <a name="configure-the-app-suite"></a>Het app-pakket configureren
 
@@ -61,7 +62,7 @@ In deze stap kiest u de Office-apps die u wilt toewijzen aan apparaten.
 
 ## <a name="configure-app-information"></a>App-gegevens configureren
 
-In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het pakket vinden in Intune en kunnen gebruikers het vinden in de bedrijfsportal-app.
+In deze stap moet u informatie opgeven over de app-suite. Aan de hand van deze informatie kunt u de app-suite vinden in Intune en kunnen gebruikers deze vinden in de bedrijfsportal-app.
 
 1.  Kies op de blade **App toevoegen** de optie **Gegevens van app-pakket**.
 2.  Voer de volgende gegevens in op de blade **Gegevens van app-pakket**:
@@ -75,7 +76,7 @@ In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze inf
     - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld **HR-afdeling** (optioneel).
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Pictogram uploaden**: dit is het pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+    - **Logo**: upload een pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3.  Wanneer u klaar bent, klikt u op **OK**.
 
 ## <a name="configure-app-settings"></a>App-instellingen configureren
@@ -91,7 +92,7 @@ In deze stap configureert u de installatieopties voor het app-pakket. De instell
         - **Halfjaarlijks**
         - **Halfjaarlijks (gericht)**
     - **Gebruiksrechtovereenkomst van de app automatisch accepteren**: selecteer deze optie als uw eindgebruikers de gebruiksrechtovereenkomst niet hoeven te accepteren. Intune accepteert de overeenkomst automatisch.
-    - **Activering van gedeelde computers gebruiken**: activering van gedeelde computers wordt gebruikt wanneer meerdere gebruikers een computer delen. Zie Activering van gedeelde computers voor Office 365 ProPlus voor meer informatie.
+    - **Activering van gedeelde computers gebruiken**: activering van gedeelde computers wordt gebruikt wanneer meerdere gebruikers een computer delen. Zie Activering van gedeelde computers voor Office 365 voor meer informatie.
     - **Talen**: Office wordt automatisch geïnstalleerd in de ondersteunde talen die zijn geïnstalleerd met Windows op het apparaat van de eindgebruiker. Selecteer deze opties als u aanvullende talen wilt installeren met het app-pakket.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ In deze stap configureert u de installatieopties voor het app-pakket. De instell
 
 ## <a name="finish-up"></a>Voltooien
 
-Wanneer u klaar bent, kiest u **Opslaan** op de blade **App toevoegen**. De app die u hebt gemaakt, wordt weergegeven in de lijst met apps.
+Wanneer u klaar bent, kiest u op de blade **Toevoegen** de optie **Toevoegen**. De app die u hebt gemaakt, wordt weergegeven in de lijst met apps.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Foutcodes bij de installatie van het app-pakket
 
@@ -137,4 +138,4 @@ In de volgende tabel staan algemene foutcodes en de betekenis daarvan.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-U kunt de apps nu toewijzen aan de gewenste groepen. Zie [Apps aan groepen toewijzen](/intune-azure/manage-apps/deploy-apps) voor hulp.
+- U kunt de apps nu toewijzen aan de groepen die u kiest. Zie [Apps toewijzen aan groepen](/intune-azure/manage-apps/deploy-apps).

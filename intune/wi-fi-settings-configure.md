@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Wi-Fi-instellingen configureren in Microsoft Intune
 
@@ -47,17 +47,19 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Een apparaatprofiel met Wi-Fi-instellingen maken
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en een **beschrijving** in voor het Wi-Fi-profiel.
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
+3. Kies **Profiel maken** in het deelvenster Profielen.
+4. Voer in het deelvenster **Profiel maken** een **naam** en een **beschrijving** in voor het Wi-Fi-profiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de Wi-Fi-instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor Wi-Fi-instellingen:
     - **Android**
     - **Android for Work**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 en hoger (een profiel importeren)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 en hoger**
+    - **Windows 10 en hoger**
 
    > [!IMPORTANT]
    > Als u een profiel voor Windows 10-apparaten maakt, met inbegrip van Windows Holographic for Business, moet u het platform **Windows 8.1 en hoger** kiezen. Het platform **Windows 10 en hoger** heeft geen Wi-Fi-profieltype. 
@@ -70,9 +72,9 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     - [iOS-instellingen](wi-fi-settings-ios.md)
     - [macOS-instellingen](wi-fi-settings-macos.md)
     - [Instellingen voor Windows 8.1 en hoger](wi-fi-settings-import-windows-8-1.md) (inclusief Windows Holographic for Business)
-1. Als u klaar bent, gaat u terug naar de blade **Profiel maken** en kiest u **Maken**.
+1. Als u klaar bent, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -1,12 +1,12 @@
 ---
-title: Mobile Threat Defense-nalevingsbeleid voor apparaten maken met Intune
-titlesuffix: Azure portal
-description: Mobile Threat Defense-nalevingsbeleid voor apparaten maken in Intune
+title: Een MTD-nalevingsbeleid voor apparaten maken met Microsoft Intune
+titlesuffix: 
+description: Maak een Intune-nalevingsbeleid voor apparaten waarbij gebruik wordt gemaakt van de bedreigingsniveaus van uw MTD-partner om te bepalen of een mobiel apparaat toegang mag hebben tot bedrijfsresources.
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 
@@ -40,7 +40,7 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
 1.  Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
 
-2.  Kies in het **Azure-dashboard** in het linkermenu de optie **Meer services** en typ vervolgens **Intune** in het filtertekstvak.
+2.  Kies in het **Azure-dashboard** in het linkermenu de optie **Alle services** en typ vervolgens **Intune** in het filtertekstvak.
 
 3.  Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
 
@@ -48,9 +48,9 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
 5.  Kies **Beleid maken**, voer waarden in voor **Naam**, **Beschrijving** van apparaatcompatibiliteit, selecteer het **Platform** en kies vervolgens **Configureren** onder de sectie **Instellingen**.
 
-6.  Kies **Apparaatstatus** op de blade **Nalevingsbeleid**.
+6.  Kies in het deelvenster **Nalevingsbeleid** de optie **Apparaatstatus**.
 
-7.  Kies op de blade **Apparaatstatus** het Mobile Threat-niveau uit de vervolgkeuzelijst onder **Vereisen dat het apparaat het Mobile Threat-niveau niet overschrijdt**.
+7.  Kies in het deelvenster **Apparaatstatus** het Mobile Threat-niveau uit de vervolgkeuzelijst onder **Vereisen dat het apparaat het apparaatdreigingsniveau niet overschrijdt**.
 
     a.  **Beveiligd**: dit is het veiligste niveau. Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
 
@@ -67,11 +67,11 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Een nalevingsbeleid voor MTD-apparaten toewijzen
 
-Als u een nalevingsbeleid voor apparaten aan gebruikers wilt toewijzen, kiest u een beleid dat u eerder hebt geconfigureerd. Bestaande beleidsregels vindt u op de blade **Alle beleidsregels voor apparaatcompatibiliteit**.
+Als u een nalevingsbeleid voor apparaten aan gebruikers wilt toewijzen, kiest u een beleid dat u eerder hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - beleid**.
 
-1. Kies het beleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Met deze actie opent u de blade waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
+1. Kies het beleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Met deze actie opent u het deelvenster waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
 
-2. Kies **Groepen selecteren** om de blade met de Azure AD-beveiligingsgroepen te openen.  Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
+2. Kies **Groepen selecteren om op te nemen** om het deelvenster met de Azure AD-beveiligingsgroepen te openen.  Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
 
     > [!NOTE] 
     > U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze compatibel zijn.

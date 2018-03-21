@@ -15,13 +15,13 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 26f81d8e6ba0fb433d714a5deeaadce9dd619c3f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="android-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor Android-apps
+# <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit onderwerp worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
 Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie van gegevens en instellingen voor toegang. In dit onderwerp verwijst de term *door beleid beheerde apps* naar apps die zijn geconfigureerd met een app-beveiligingsbeleid.
 
@@ -73,7 +73,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
   | com.android.providers.media | Android media-inhoudsprovider | Voor de media-inhoudsprovider is alleen de actie beltoonselectie toegestaan. |
   | com.google.android.gms; com.google.android.gsf | Google Play-Services-pakketten | Voor deze pakketten zijn Google Cloud Messaging-acties zoals pushmeldingen toegestaan. |
 
-Zie [Beleidsuitzonderingen voor gegevensoverdracht voor apps](app-protection-policies-exception.md) voor meer informatie. 
+Zie [Beleidsuitzonderingen voor gegevensoverdracht voor apps](app-protection-policies-exception.md) voor meer informatie.
 
 ##  <a name="access-settings"></a>Toegangsinstellingen
 
@@ -88,7 +88,10 @@ Zie [Beleidsuitzonderingen voor gegevensoverdracht voor apps](app-protection-pol
 | **Pincode apparaat uitschakelen wanneer de pincode voor het apparaat wordt beheerd** | Kies **Ja** om de pincode voor het apparaat uit te schakelen wanneer een apparaatvergrendeling wordt gedetecteerd op een geregistreerd apparaat. | Nee |
 | **Minimumversie van het Android-besturingssysteem vereisen** | Kies **Ja** om een minimumversie van het Android-besturingssysteem te vereisen voor gebruik van deze app. Toegang door de gebruiker wordt geblokkeerd als de Android-versie op het apparaat niet aan de vereiste voldoet.<br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee |
 | **Minimumversie van het Android-besturingssysteem vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van het Android-besturingssysteem te vereisen voor gebruik van deze app. De gebruiker ziet een melding als de Android-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision. | Nee |
-| **Minimumversie van app vereisen** | Kies **Ja** om een minimumversie van de app te vereisen voor gebruik van de app. Toegang door de gebruiker wordt geblokkeerd als de app-versie op het apparaat niet aan de vereiste voldoet.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee | 
-| **Minimumversie van app vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van de app aan te bevelen bij gebruik van de app. De gebruiker ziet een melding als de app-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee | 
+| **Minimumversie van app vereisen** | Kies **Ja** om een minimumversie van de app te vereisen voor gebruik van de app. Toegang door de gebruiker wordt geblokkeerd als de app-versie op het apparaat niet aan de vereiste voldoet.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee |
+| **Minimumversie van app vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van de app aan te bevelen bij gebruik van de app. De gebruiker ziet een melding als de app-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee |
 | **Require Minimum Android Patch Version** (Minimale Android-patchversie vereisen) | Kies **Ja** om een minimale Android-beveiligingspatch te vereisen die is vrijgegeven door Google. Toegang door de gebruiker wordt geblokkeerd als de Android-beveiligingspatch op het apparaat niet aan de vereiste voldoet.<br><br> Deze indeling voor beleidsinstelling ondersteunt de datumnotatie JJJJ-MM-DD. | Nee |
 | **Require Minimum Android Patch Version (Warning Only)** (Minimale Android-patchversie vereisen (Alleen waarschuwing)) | Kies **Ja** om een minimale Android-beveiligingspatch te vereisen die is vrijgegeven door Google. De gebruiker ziet een melding als de Android-beveiligingspatch op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br> Deze indeling voor beleidsinstelling ondersteunt de datumnotatie JJJJ-MM-DD. | Nee |
+
+> [!NOTE]
+> Zie [Veelgestelde vragen over Intune MAM](mam-faq.md) voor meer informatie over hoe meerdere Intune-app-beveiligingsinstellingen die in de sectie Toegang worden geconfigureerd, kunnen worden toegepast op dezelfde reeks apps en gebruikers in Android.

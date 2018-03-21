@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Aan de slag met Microsoft Intune in Azure Portal
 
@@ -31,7 +31,7 @@ In de __zijbalk__ aan de linkerzijde van de Azure Portal ziet u een lijst van al
 
 ![Een gebruiker zoekt in de lijst Meer services naar Microsoft Intune.](./media/azure-add-intune1.png)
 
-1. Selecteer **Meer services** aan de onderkant van de zijbalk, links op de pagina.
+1. Selecteer **Alle services** in de zijbalk links op de pagina.
 2. Zoek in het filtervak naar **Intune**.
 3. Selecteer het **sterretje** om Intune onder aan uw lijst met favoriete services toe te voegen.
 4. Beweeg de muisaanwijzer over de Intune-service. Selecteer Intune met de **drie verticale stippen** rechts van de servicenaam en verplaats de service.
@@ -52,7 +52,7 @@ Deze mogelijkheid is relevanter wanneer u eenmaal meer inhoud, zoals groepen en 
 
 ## <a name="using-services"></a>Services gebruiken
 
-Wanneer u Microsoft Intune of een andere service in Azure opent, wordt de service weergegeven in een **blade**. Een aantal van de eerste werkbelastingen die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een blade op het volledige scherm weergegeven. Wanneer u de workload selecteert, wordt hiermee deze blade in een volledige pagina geopend. Andere blades schuiven uit de rechterzijde van de blade wanneer u deze opent, en schuiven weer terug onder de hoofdblade op hun oorspronkelijk plaats.
+Wanneer u Intune of een andere service in Azure opent, wordt de service weergegeven in een **deelvenster**. Een aantal van de eerste workloads die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een deelvenster op het volledige scherm weergegeven. Wanneer u de workload selecteert, wordt hiermee dit deelvenster in een volledige pagina geopend. Andere deelvensters schuiven uit de rechterzijde van het deelvenster wanneer u dit opent, en schuiven weer terug onder het hoofddeelvenster op hun oorspronkelijk plaats.
 
 ## <a name="next-steps"></a>Volgende stappen
 
