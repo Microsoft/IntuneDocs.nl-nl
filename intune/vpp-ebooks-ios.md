@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die u via een volume-aankoopprogramma hebt aangeschaft met Microsoft Intune
 
@@ -52,28 +52,29 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Mobiele apps** op de blade **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+3. Kies **Mobiele apps** in het deelvenster **Intune**.
 1.  Kies **Instellen** > **VPP-tokens voor iOS** in de workload **Mobiele apps**.
-2.  Klik op de blade met de lijst met VPP-tokens en klik op **Toevoegen**.
-3.  Geef op de blade **Nieuw VPP-token** de volgende gegevens op:
+2.  Klik in het deelvenster met de lijst met VPP-tokens op **Maken**.
+3.  Geef in het deelvenster **Nieuw VPP-token** de volgende gegevens op:
     - **VPP-tokenbestand**: zorg dat u zich hebt aangemeld voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs. Download vervolgens het Apple VPP-token voor uw account en selecteer het hier.
     - **Apple ID**: voer de Apple ID in van het account dat aan het VPP is gekoppeld.
     - **Type VPP-account**: u hebt de keuze uit **Bedrijven** of **Onderwijs**.
-4. Klik wanneer u klaar bent op **Uploaden**.
+4. Wanneer u klaar bent, klikt u op **Maken**.
 
-Het token wordt weergegeven op de blade met de lijst met tokens.
+Het token wordt weergegeven in het deelvenster met de lijst met tokens.
 
 
 U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren met Intune door **Nu synchroniseren** te kiezen.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Een app toewijzen die is gekocht via het volume-aankoopprogramma
 
+3. Kies **eBooks** in het deelvenster **Intune**.
 1. Kies in de workload **eBooks** achtereenvolgens **Beheren** > **Alle eBooks**.
-2. Kies op de blade met de lijst met boeken het boek dat u wilt toewijzen en kies vervolgens '**...**' > **Groepen toewijzen**.
-3. Kies op de blade <*boeknaam*> - **Toegewezen groepen** achtereenvolgens **Beheren** > **Toegewezen groepen**.
-4. Kies **Groepen toewijzen** en kies op de blade **Groepen selecteren** de Azure AD-gebruikersgroepen waaraan u het boek wilt toewijzen. Apparaatgroepen worden momenteel niet ondersteund.
+2. Kies in het deelvenster met de lijst met boeken het boek dat u wilt toewijzen en kies vervolgens '**...**' > **Groepen toewijzen**.
+3. Kies in het deelvenster <*boeknaam*> - **Toegewezen groepen** achtereenvolgens **Beheren** > **Toegewezen groepen**.
+4. Kies **Groepen toewijzen** en kies in het deelvenster **Groepen selecteren** de Azure AD-gebruikersgroepen waaraan u het boek wilt toewijzen. Apparaatgroepen worden momenteel niet ondersteund.
 Kies een toewijzingsactie: **Beschikbaar** of **Vereist**. 
 5. Als u klaar bent, kiest u **Opslaan**.
 

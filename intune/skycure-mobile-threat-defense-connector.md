@@ -1,7 +1,7 @@
 ---
-title: Skycure-connector met Intune
-titlesuffix: Azure portal
-description: Integratie van de Skycure-connector met Intune.
+title: Skycure-connector met Microsoft Intune
+titlesuffix: 
+description: Meer informatie over de integratie van Intune met Skycure Mobile Threat Defense om toegang tot uw bedrijfsbronnen met mobiele apparaten te bepalen.
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 333322022882566b55e869e5d6a1a1e2b203b830
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-connector
 
@@ -69,7 +69,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 **Toegang na herstel:**
 
-![Toegang verleend nadat schadelijke apps zijn gedetecteerd](./media/skycure-arch-2.png)
+![Toegang wordt verleend na herstel nadat schadelijke apps zijn gedetecteerd](./media/skycure-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 

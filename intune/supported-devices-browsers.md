@@ -1,5 +1,6 @@
 ---
-title: Ondersteunde apparaten - Microsoft Intune
+title: Besturingssystemen en browsers die worden ondersteund door Microsoft Intune
+titleSuffix: 
 description: Een lijst met ondersteunde apparaatplatformen en browsers voor het beheer van Intune-apparaten
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Ondersteunde besturingssystemen en browsers
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Dit artikel is bedoeld voor systeembeheerders die verantwoordelijk zijn voor het beheer van apparaten in de onderneming. Raadpleeg [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/company-portal-frequently-asked-questions) voor meer informatie over de installatie van Intune op uw apparaat.
+Bestudeer, voordat u Microsoft Intune instelt, de ondersteunde besturingssystemen en browsers.
 
-Bekijk de volgende vereisten voordat u Microsoft Intune instelt:
-
-- [Ondersteunde besturingssystemen](#intune-supported-operating-systems)
-- [Een overzicht van ondersteunde webbrowsers voor Intune](#intune-supported-web-browsers)
-
-Maak uzelf ook vertrouwd met het [bandbreedtegebruik van het Intune-netwerk](network-bandwidth-use.md) ([klassieke portal](/intune-classic/get-started/network-bandwidth-use)).
+Raadpleeg [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/company-portal-frequently-asked-questions) voor meer informatie over de installatie van Intune op uw apparaat. Maak uzelf ook vertrouwd met het [bandbreedtegebruik van het Intune-netwerk](network-bandwidth-use.md) ([klassieke portal](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Besturingssystemen die door Intune worden ondersteund
 

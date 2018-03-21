@@ -1,12 +1,12 @@
 ---
-title: Een beleid maken en toewijzen voor voorwaardelijke toegang voor Exchange On-Premises
-titlesuffix: Azure portal
+title: Beleid voor voorwaardelijke toegang tot Exchange maken
+titlesuffix: Microsoft Intune
 description: Configureer voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Beleid voor voorwaardelijke toegang in Microsoft Intune maken en toewijzen voor Exchange On-Premises en oudere Exchange Online Dedicated-omgevingen
+# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dit onderwerp begeleidt u bij het proces van het configureren van voorwaardelijke toegang voor Exchange On-Premises op basis van apparaatnaleving.
+In dit artikel leest u hoe u de voorwaardelijke toegang voor Exchange On-Premises configureert op basis van apparaatnaleving.
 
 Als u een Exchange Online Dedicated-omgeving hebt en wilt weten of deze de nieuwe of oudere configuratie heeft, neemt u contact op met uw accountmanager. Als u de toegang tot e-mail op Exchange On-premises of de oude Exchange Online-specifieke omgeving wilt beheren, configureer dan beleid voor voorwaardelijke toegang tot Exchange On-premises in Intune.
 
@@ -76,40 +76,39 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 1. Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
 
-2. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
+1. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-3. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+1. Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
-4. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
+1. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
 
-5. Kies **On-premises toegang**, en kies vervolgens
+1. Kies **On-premises toegang**. In het deelvenster **On-premises toegang** vindt u de status van het beleid voor voorwaardelijke toegang en de apparaten die door het beleid worden beïnvloed.
 
-6. Op de blade **On-premises** vindt u de status van het beleid voor voorwaardelijke toegang en de apparaten die door het beleid worden beïnvloed.
+1. Kies **On-premises toegang tot Exchange** onder **Beheer**.
 
-7. Kies **On-premises toegang tot Exchange** onder **Beheer**.
-
-8. Kies **Ja** op de blade **On-premises toegang tot Exchange** om on-premises toegang tot Exchange in te schakelen.
+1. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om on-premises toegang tot Exchange in te schakelen.
 
     > [!NOTE]
-    > Als u de on-premises connector Exchange Active Sync niet hebt geconfigureerd, wordt deze optie uitgeschakeld.  U moet deze connector eerst installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
+    > Als u de on-premises connector Exchange Active Sync niet hebt geconfigureerd, is deze optie uitgeschakeld.  U moet deze connector eerst installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
 
-9. Kies **Opgenomen groepen** onder **Toewijzing**.  Gebruik de beveiligingsgebruikersgroep waarop u voorwaardelijke toegang wilt toepassen. Hiervoor moeten de gebruikers hun apparaten inschrijven in Intune en moeten de apparaten voldoen aan de nalevingsprofielen.
+1. Kies **Opgenomen groepen** onder **Toewijzing**.  Gebruik de beveiligingsgebruikersgroep waarop u voorwaardelijke toegang wilt toepassen. Voor deze actie moeten de gebruikers hun apparaten inschrijven in Intune en moeten de apparaten voldoen aan de nalevingsprofielen.
 
-10. Als u een bepaalde groepen met gebruikers wilt uitsluiten, kiest u **Uitgesloten groepen** en selecteert u de gebruikersgroep die u wilt uitsluiten van vereiste apparaatinschrijving en -naleving.
+1. Als u een bepaalde groepen met gebruikers wilt uitsluiten, kiest u **Uitgesloten groepen** en selecteert u de gebruikersgroep die u wilt uitsluiten van vereiste apparaatinschrijving en -naleving.
 
-11. Kies **Gebruikersmeldingen** onder **Instellingen** om het standaard-e-mailbericht te wijzigen. Dit bericht wordt naar gebruikers verzonden als hun apparaten niet compatibel zijn en gebruikers toegang willen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
+1. Kies **Gebruikersmeldingen** onder **Instellingen** om het standaard-e-mailbericht te wijzigen. Dit bericht wordt naar gebruikers verzonden als hun apparaten niet compatibel zijn en gebruikers toegang willen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
     > [!TIP]
     > Zie dit Wikipedia-[artikel](https://en.wikipedia.org/wiki/Markup_language) voor meer informatie over Markup Language.
 
-12. Stel op de blade **Geavanceerde toegangsinstellingen voor Exchange Active Sync** de globale standaardregel in voor toegang van apparaten die niet worden beheerd door Intune, en voor regels op platformniveau zoals in de volgende twee stappen wordt beschreven.
+1. Stel in het deelvenster **Geavanceerde toegangsinstellingen voor Exchange Active Sync** de globale standaardregel in voor toegang van apparaten die niet worden beheerd door Intune, en voor regels op platformniveau zoals in de volgende twee stappen wordt beschreven.
 
-13. Als er apparaten zijn die niet worden beïnvloed door voorwaardelijke toegang of door andere regels, kunt u zelf kiezen of deze toegang krijgen tot Exchange, of de toegang blokkeren.
-  - Wanneer u toegang toestaat, kunnen alle apparaten direct toegang krijgen tot Exchange On-Premises.  Apparaten die deel uitmaken van de gebruikers in de **opgenomen groepen**, worden geblokkeerd als wordt bepaald dat ze niet aan het nalevingsbeleid voldoen of niet zijn ingeschreven in Intune.
-  - Wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd.  Apparaten die deel uitmaken van gebruikers in de **opgenomen groepen** krijgen toegang zodra de apparaten zijn ingeschreven in Intune en zijn geëvalueerd als compatibel. Android-apparaten waarop Samsung Knox Standard niet wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
-<br></br>
-14. Kies **Toevoegen** onder **Uitzonderingen van apparaatplatform** om de platformen op te geven. Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd. Kies **OK** om de instellingen op te slaan.
+1. Als er apparaten zijn die niet worden beïnvloed door voorwaardelijke toegang of door andere regels, kunt u zelf kiezen of deze toegang krijgen tot Exchange, of de toegang blokkeren.
 
-15. Klik op de blade **On-premises** op **Opslaan** om het beleid voor voorwaardelijke toegang op te slaan.
+   - Wanneer u toegang toestaat, kunnen alle apparaten direct toegang krijgen tot Exchange On-Premises.  Apparaten die deel uitmaken van de gebruikers in de **opgenomen groepen**, worden geblokkeerd als wordt bepaald dat ze niet aan het nalevingsbeleid voldoen of niet zijn ingeschreven in Intune.
+   - Wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd.  Apparaten die deel uitmaken van gebruikers in de **opgenomen groepen** krijgen toegang zodra de apparaten zijn ingeschreven in Intune en zijn geëvalueerd als compatibel. Android-apparaten waarop Samsung Knox Standard niet wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
+
+1. Kies **Toevoegen** onder **Uitzonderingen van apparaatplatform** om de platformen op te geven. Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd. Kies **OK** om de instellingen op te slaan.
+
+1. Klik in het deelvenster **On-premises** op **Opslaan** om het beleid voor voorwaardelijke toegang op te slaan.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Voorwaardelijk toegangsbeleid voor Azure AD maken in Intune
 
@@ -122,7 +121,7 @@ Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaard
 
 1. Kies in het**Intune-dashboard** **Voorwaardelijke toegang**.
 
-2. Kies in de blade **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
+2. Kies in het deelvenster **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
 
 ## <a name="see-also"></a>Zie ook
 

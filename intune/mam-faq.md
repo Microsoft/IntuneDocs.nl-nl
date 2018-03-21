@@ -1,25 +1,19 @@
----
-title: Veelgestelde vragen over MAM en app-beveiliging
-description: In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>Vereiste metagegevens
+
+Titel: Veelgestelde vragen over MAM en app-beveiliging Beschrijving: In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de beveiliging van apps met Intune.
+trefwoorden: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>Optionele metagegevens
+
+#<a name="audience"></a>Doelgroep:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: erikre ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+
 ---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
 In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
@@ -34,7 +28,7 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 **Welke apparaatconfiguraties ondersteunt MAM?** Intune MAM ondersteunt twee configuraties:
 - **Intune MDM + MAM**: IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Voor het beheren van apps met MDM + MAM moeten klanten de Intune-console Azure Portal op https://portal.azure.com gebruiken.
 
-- **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM-providers. Voor het beheren van apps met MAM-WE moeten klanten de Intune-console Azure Portal op http://portal.azure.com gebruiken. Apps kunnen ook door Intune worden beheerd op apparaten die zijn geregistreerd bij externe Enterprise Mobility Management-providers of die helemaal niet bij een MDM zijn geregistreerd.
+- **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Voor het beheren van apps met MAM-WE moeten klanten de Intune-console Azure Portal op http://portal.azure.com gebruiken. Apps kunnen ook door Intune worden beheerd op apparaten die zijn geregistreerd bij externe Enterprise Mobility Management-providers of die helemaal niet bij een MDM zijn geregistreerd.
 
 
 ## <a name="app-protection-policies"></a>Beleid voor app-beveiliging
@@ -135,14 +129,21 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 **Is er een veilige manier om webkoppelingen te openen vanuit beheerde apps?** Ja. De IT-beheerder kan een app-beveiligingsbeleid implementeren en instellen voor de [Intune Managed Browser-app](app-configuration-managed-browser.md), een webbrowser die is ontwikkeld door Microsoft Intune en eenvoudig kan worden beheerd met Intune. De IT-beheerder kan ervoor zorgen dat alle webkoppelingen in de door Intune beheerde apps moeten worden geopend met de Managed Browser-app.
 
-
 ## <a name="app-experience-on-android"></a>Apps op Android gebruiken
 
 **Waarom is de bedrijfsportal-app op Android-apparaten nodig voor app-beveiliging met Intune?** Veel van de functies voor het beveiligen van apps zijn ingebouwd in de bedrijfsportal-app. Hoewel de bedrijfsportal-app altijd vereist is, hoeft een apparaat _niet te worden geregistreerd_. Voor MAM-WE moet de eindgebruiker de bedrijfsportal-app op het apparaat hebben geïnstalleerd.
 
+**Hoe werken meerdere toegangsinstellingen voor Intune-app-beveiliging die zijn geconfigureerd voor dezelfde set apps en gebruikers die op Android werken?** Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde toegepast op apparaten van eindgebruikers wanneer ze vanaf hun bedrijfsaccount proberen toegang te krijgen tot een doel-app. In het algemeen krijgt een blokkering voorrang, dan volgt een waarschuwing die kan worden gesloten. Indien van toepassing op de specifieke gebruiker/app wordt een instelling van een minimumversie van een Android-patch die een gebruiker waarschuwt om een patchupgrade uit te voeren, bijvoorbeeld toegepast na de instelling van de minimumversie van de Android-patch die toegang door de gebruiker blokkeert. Dus in het scenario waarin de IT-beheerder de minimumversie van de Android-patch configureert naar 2018-03-01 en de minimumversie van de Android-patch (alleen Waarschuwing) naar 2018-02-01, terwijl het apparaat dat de app probeert te openen op de patchversie 2018-01-01 zit, wordt de eindgebruiker geblokkeerd op basis van de restrictievere instelling voor de minimumversie van de Android-patch die resulteert in geblokkeerde toegang. 
+
+Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een app-versievereiste voorrang, gevolgd door de versievereiste van het Android-besturingssysteem en de versievereiste van de Android-patch. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd.
+
 ## <a name="app-experience-on-ios"></a>Apps op iOS gebruiken
 
 **Ik kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor het overdragen van gegevens is ingesteld op 'alleen voor beheerde apps' of 'geen apps'. Ontstaat hierdoor geen gegevenslek?** De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _**'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_. U kunt dit controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
+
+**Hoe werken meerdere toegangsinstellingen voor Intune-app-beveiliging die zijn geconfigureerd voor dezelfde set apps en gebruikers op iOS?** Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde toegepast op apparaten van eindgebruikers wanneer ze vanaf hun bedrijfsaccount proberen toegang te krijgen tot een doel-app. In het algemeen krijgt wissen voorrang, dan volgt een waarschuwing die kan worden gesloten. Indien van toepassing op de specifieke gebruiker/app, wordt een instelling van een minimumversie van het iOS-besturingssysteem die een gebruiker waarschuwt om de iOS-versie bij te werken bijvoorbeeld toegepast na de instelling van de minimumversie van het iOS-besturingssysteem die toegang door de gebruiker blokkeert. Dus in het scenario waarin de IT-beheerder de minimumversie van het iOS-besturingssysteem configureert naar 11.0.0.0 en de minimumversie van het iOS-besturingssysteem (alleen Waarschuwing) naar 11.1.0.0, terwijl het apparaat dat de app probeert te openen op iOS 10 zit, wordt de eindgebruiker geblokkeerd op basis van de restrictievere instelling voor de minimumversie van het iOS-besturingssysteem die resulteert in geblokkeerde toegang.
+
+Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een Intune App SDK-versie voorrang, dan een app-versievereiste, gevolgd door de versievereisten van het iOS-besturingssysteem. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd. We raden u aan om de Intune App SDK-versievereisten alleen te configureren op advies van het Intune-productteam voor essentiële blokkerende scenario's.
 
 ## <a name="see-also"></a>Zie ook
 - [Uw Intune-abonnement implementeren](planning-guide-onboarding.md)

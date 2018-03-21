@@ -1,11 +1,12 @@
 ---
-title: Datawarehouse-gegevensmodel | Microsoft Docs
-description: In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende mobiele omgeving.
+title: Datawarehouse-gegevensmodel
+titlesuffix: Microsoft Intune
+description: In het Microsoft Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende mobiele omgeving.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Datawarehouse-gegevensmodel
 
-In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende omgeving van mobiele apparaten. De weergave bestaat uit items die in de tijd aan elkaar gerelateerd zijn.
+In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende omgeving van mobiele apparaten. De weergave bestaat uit entiteiten die in de tijd aan elkaar gerelateerd zijn.
 
-## <a name="things-entity-sets"></a>Dingen: entiteitsets
+## <a name="entities-entity-sets"></a>Entiteiten: entiteitsets
 
 De gegevens in het datawarehouse worden in de volgende algemene gebieden ingedeeld:
 
@@ -33,7 +34,7 @@ De gegevens in het datawarehouse worden in de volgende algemene gebieden ingedee
   -  App- en software-inventarisatie
   -  Apparaatconfiguratie en nalevingsbeleid
 
-Deze gebieden omvatten de entiteiten, of dingen, die relevant zijn voor uw Intune-omgeving. Informatie over de entiteitsets kunt u vinden in de volgende onderwerpen:
+Deze gebieden omvatten de entiteiten die relevant zijn voor uw Intune-omgeving. Informatie over de entiteitsets kunt u vinden in de volgende onderwerpen:
 
   -  [App](reports-ref-application.md)
   -  [Datum](reports-ref-date.md)

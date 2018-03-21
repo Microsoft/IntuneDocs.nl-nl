@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>De Intune-instellingen voor de iOS-app Classroom configureren
 
@@ -72,12 +72,12 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3.  Kies **Apparaten configureren** op de blade **Intune**.
-4.  Kies **Beheren** > **Profielen** op de blade **Apparaatconfiguratie**.
-5.  Kies **Profiel maken** op de blade Profielen.
-6.  Voer op de blade **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
+5.  Kies **Profiel maken** in het deelvenster Profielen.
+6.  Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
 7.  Kies **iOS** in de vervolgkeuzelijst **Platform**.
 8.  Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
 9.  Kies **Instellingen** > **Configureren**.
@@ -94,7 +94,7 @@ De certificaten die u maakt, moeten niet alleen ondersteuning bieden voor gebrui
 
 ### <a name="configure-teacher-certificates"></a>Docentcertificaten configureren
 
-Kies **Docentcertificaten** op de blade **Opleiding**.
+Kies **Docentcertificaten** in het deelvenster **Opleiding**.
 
 #### <a name="configure-teacher-root-certificate"></a>Het basiscertificaat voor de docent configureren
 
@@ -116,8 +116,8 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ### <a name="configure-student-certificates"></a>Studentencertificaten configureren
 
-1.  Kies **Studentcertificaten** op de blade **Opleiding**.
-2.  Kies op de blade **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **1:1**.
+1.  Kies **Studentencertificaten** in het deelvenster **Opleiding**.
+2.  Kies in het deelvenster **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Het basiscertificaat voor studenten configureren
 
@@ -139,10 +139,10 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ## <a name="finish-up"></a>Voltooien
 
-1.  Kies OK op de blade **Opleiding**.
-2.  Kies **Maken** op de blade **Profiel maken**.
+1.  Kies OK in het deelvenster **Opleiding**.
+2.  Kies **Maken** in het deelvenster **Profiel maken**.
     
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 Wijs het profiel toe aan studentapparaten in de Classroom-groepen die zijn gemaakt toen u uw schoolgegevens synchroniseerde met Azure AD (Zie [Apparaatprofielen toewijzen](device-profile-assign.md)).
 

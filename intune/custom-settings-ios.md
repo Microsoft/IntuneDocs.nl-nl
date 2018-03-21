@@ -1,27 +1,25 @@
 ---
-title: Aangepaste Intune-instellingen voor iOS-apparaten
+title: Aangepaste Microsoft Intune-instellingen voor apparaten met iOS
 titleSuffix: Azure portal
 description: Meer informatie over de instellingen die u kunt gebruiken in een aangepast iOS-profiel.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 761b19de8442e88717a5dcd52f7f0375bace91da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 40e34a2e22c9349cad63d813b892863e0e8a2933
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>Aangepaste Microsoft Intune-instellingen voor iOS-apparaten
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>Aangepaste Microsoft Intune-apparaatinstellingen voor apparaten met iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ Op deze manier kunt u iOS-instellingen toewijzen die u niet kunt configureren me
 
 
 1. Volg de instructies in [Aangepaste apparaatinstellingen configureren in Microsoft Intune](custom-settings-configure.md) om aan de slag te gaan.
-2. Geef de volgende informatie op de blade **Profiel maken** op:
+2. In het deelvenster **Aangepast configuratieprofiel** kunt u elk van de volgende instellingen configureren:
 
-- **Aangepaste configuratieprofielnaam**: geef een naam op voor het beleid, zoals het moet worden weergegeven op het apparaat en in de Intune-status.
+- **Aangepaste configuratieprofielnaam**: geef een naam op voor het beleid, zoals het wordt weergegeven op het apparaat en in de Intune-status.
 - **Configuratieprofielbestand**: blader naar het configuratieprofiel dat u hebt gemaakt met Apple Configurator.
 Controleer of de instellingen die u vanuit het hulpprogramma Apple Configurator exporteert compatibel zijn met de iOS-versie op de apparaten waaraan u het aangepaste iOS-beleid toewijst. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).
 
-Het bestand dat u hebt geïmporteerd, wordt weergegeven in het gebied **Bestandsinhoud** van de blade.
+Het bestand dat u hebt geïmporteerd, wordt weergegeven in het gebied **Bestandsinhoud** van het deelvenster.

@@ -1,5 +1,5 @@
 ---
-title: Wat is er nieuw (archief)
+title: Wat is er nieuw in klassieke Microsoft Intune-portal (archief)
 description: Wat is er nieuw in Microsoft Intune-aankondigingen (archief)
 keywords: 
 author: brenduns
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4386f38fc1311bcb01e03de8b889a82056795ce3
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Wat is er nieuw in de klassieke Intune-portal - vorige maanden
 
@@ -281,7 +281,7 @@ De volgende artikelen zijn bijgewerkt:
 
 * [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)
 * [iOS-apps voorbereiden voor Mobile Application Management met de Intune App Wrapping Tool](app-wrapper-prepare-ios.md)
-* [Aan de slag met de Microsoft Intune App SDK](/app-sdk-get-started.md)
+* [Aan de slag met de Microsoft Intune App SDK](app-sdk-get-started.md)
 * [Ontwikkelaarshandleiding voor Intune App SDK voor iOS](app-sdk-ios.md)
 
 De volgende artikelen zijn nieuwe toevoegingen aan de documentenbibliotheek:

@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -71,20 +71,21 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Updateringen maken en toewijzen
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Software-updates** op de blade **Intune**.
-4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.
-5. Kies **Maken** op de blade met de updateringen.
-6. Geef op de blade **Updatering maken** een naam en een optionele omschrijving voor de updatering op en kies vervolgens **Instellingen**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Software-updates** in het deelvenster **Intune**.
+4. Kies **Beheren** > **Windows 10 Update Rings** in het deelvenster **Software-updates**.
+5. Kies **Maken** in het deelvenster met de updateringen.
+6. Geef in het deelvenster **Updatering maken** een naam en een optionele omschrijving voor de updatering op en kies vervolgens **Instellingen - Configureren**.
 7. Configureer de volgende gegevens op de blade **Instellingen**:
     - **Onderhoud van kanaal**: stel het kanaal in waarvoor het apparaat Windows-updates (het Semi-Annual-kanaal (Targeted) of het Semi-Annual-kanaal) ontvangt.
-    - **Microsoft-updates**: kies of u wilt zoeken naar app-updates via Microsoft Update.
+    - **Microsoft-productupdates**: kies of u wilt zoeken naar app-updates via Microsoft Update.
     - **Windows-stuurprogramma's**: kies of u Windows Update-stuurprogramma's wilt uitsluiten tijdens het bijwerken.
     - **Gedrag van automatische updates**: kies hoe het gedrag van automatische update moet worden beheerd voor het zoeken naar, downloaden en installeren van updates. Zie [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
     - **Uitstelperiode voor kwaliteitsupdates (dagen)**: geef het aantal dagen op dat kwaliteitsupdates worden uitgesteld. U kunt deze kwaliteitsupdates uitstellen gedurende maximaal 30 dagen vanaf de release.  
 
     Kwaliteitsupdates zijn doorgaans oplossingen en verbeteringen in de bestaande Windows-functionaliteit. Deze worden normaal gesproken op de eerste dinsdag van elke maand gepubliceerd, maar kunnen op elk gewenst moment door Microsoft worden vrijgegeven. U kunt opgeven of, en hoe u de installatie van kwaliteitsupdates wilt uitstellen na hun beschikbaarheid.
+
     - **Uitstelperiode voor upgrades van onderdelen (dagen)**: geef het aantal dagen op dat upgrades van onderdelen worden uitgesteld. U kunt deze upgrades van onderdelen uitstellen gedurende een periode van 180 dagen vanaf de release.
 
     Upgrades van onderdelen zijn over het algemeen nieuwe functies van Windows. Nadat u de instelling voor **Servicing-kanaal** hebt geconfigureerd (Semi-Annual-kanaal (Targeted) of Semi-Annual-kanaal), kunt u opgeven of en hoe lang u upgrades van onderdelen wilt uitstellen nadat deze door Microsoft beschikbaar zijn gesteld via Windows Update.
@@ -94,12 +95,12 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
     **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-release en wordt in mei bijgewerkt.
 
     - **Delivery optimization**: kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode) voor meer informatie.
-1. Wanneer u klaar bent, klikt u op **OK** en klikt u vervolgens op de blade **Updatering maken** op **Maken**.
+1. Wanneer u klaar bent, klikt u op **OK** en klikt u vervolgens in het deelvenster **Updatering maken** op **Maken**.
 
 De nieuwe updatering wordt weergegeven in de lijst met updateringen.
 
 1. Als u de ring wilt toewijzen, selecteert u een ring in de lijst met updateringen en klikt u op het tabblad *Ringnaam* > en kiest u **Toewijzingen**.
-2. Kies op het volgende tabblad **Groepen selecteren** en kies vervolgens de groepen waaraan u deze ring wilt toewijzen.
+2. Kies op het volgende tabblad **Groepen selecteren om op te nemen** en kies vervolgens de groepen waaraan u deze ring wilt toewijzen.
 3. Als u klaar bent, kiest u **Selecteren** om de toewijzing te voltooien.
 
 ## <a name="update-compliance-reporting"></a>Update-nalevingsrapportages
@@ -108,22 +109,21 @@ Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) k
 ### <a name="review-update-compliance-in-intune"></a>Updatenaleving weergeven in Intune 
 <!-- 1352223 -->
 Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updateringen die u hebt geconfigureerd. 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Software-updates** op de blade **Intune**.
-4. Kies op de blade **Software-updates** de optie **Overzicht**. Hier wordt algemene informatie weergegeven over de status van de updateringen die u hebt toegewezen.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Software-updates** in het deelvenster **Intune**.
+4. Kies in het deelvenster **Software-updates** de optie **Overzicht**. Hier wordt algemene informatie weergegeven over de status van de updateringen die u hebt toegewezen.
 5. Open een van de volgende rapporten: 
      
    **Voor alle implementatieringen:**
-   1. Op de blade **Software-updates** > **Windows 10-updateringen**. 
+   1. In het deelvenster **Software-updates** > **Windows 10-updateringen**. 
    2. In de sectie **Bewaken** kiest u **Implementatiestatus per updatering**.
                    
    **Voor specifieke implementatieringen:** 
-   1. Kies op de blade **Software-updates** > **Windows 10-updateringen** de implementatiering die u wilt weergeven.
+   1. Kies in het deelvenster **Software-updates** > **Windows 10-updateringen** de implementatiering die u wilt weergeven.
    2. Kies in de sectie **Bewaken** een van de volgende rapporten om meer gedetailleerde informatie over de implementatiering weer te geven:
-      - **Updateringimplementatie voor apparaten**
-      - **Updateringimplementatie voor gebruikers**
-      - **Implementatiestatus per instelling**
+      - **Apparaatstatus**
+      - **Gebruikersstatus**
 
 ### <a name="review-update-compliance-using-oms"></a>Updatenaleving weergeven in OMS
 Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) kunt u de Windows 10 update-implementatie bewaken. Zie [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Windows-updates bewaken met Update Compliance) voor meer informatie. Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.
@@ -136,19 +136,19 @@ U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoe
 
 - **Naam van instelling**: Commerciële id voor Windows Analytics
 - **Beschrijving van instelling**: commerciële id voor Windows Analytics-oplossingen configureren
-- **Gegevenstype:** tekenreeks
 - **OMA-URI** (hoofdlettergevoelig): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Gegevenstype:** tekenreeks
 - **Waarde**: <*gebruik de GUID die wordt weergegeven op het tabblad Windows-telemetrie in uw OMS-werkruimte*>
 
 ![Windows-instelling voor diagnostische gegevens en gebruiksgegevens](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Updates onderbreken
 U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows-Updates naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies **Software-updates** op de blade **Intune**.
-4. Kies **Beheren** > **Windows 10 Update Rings** op de blade **Software-updates**.
-5. Kies op de blade met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies **Software-updates** in het deelvenster **Intune**.
+4. Kies **Beheren** > **Windows 10 Update Rings** in het deelvenster **Software-updates**.
+5. Kies in het deelvenster met de lijst met updateringen de ring die u wilt onderbreken en kies vervolgens kies **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
 
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.

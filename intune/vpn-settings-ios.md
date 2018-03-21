@@ -1,29 +1,29 @@
 ---
-title: VPN-instellingen voor iOS-apparaten in Intune
-titlesuffix: Azure portal
+title: Microsoft Intune VPN-instellingen voor iOS-apparaten
+titlesuffix: 
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op iOS-apparaten te configureren.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>VPN-instellingen voor iOS-apparaten in Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>VPN-instellingen in Microsoft Intune configureren voor iOS-apparaten
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In dit artikel leest u meer over de Intune-instellingen die u kunt gebruiken om VPN-verbindingen op iOS-apparaten te configureren.
 
 Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volgende lijst worden geconfigureerd.
 
@@ -38,7 +38,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
 - **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**

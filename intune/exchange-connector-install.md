@@ -1,12 +1,12 @@
 ---
-title: De Exchange Connector voor on-premises EAS instellen met Intune
-titleSuffix: Azure portal
-description: Gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen Intune- en de on-premises Exchange Server
+title: Microsoft Intune on-premises Exchange-connector instellen
+titleSuffix: 
+description: Gebruik de on-premises Exchange-connector om apparaattoegang tot Exchange-postvakken op basis van inschrijving bij Intune en Exchange Active Sync (EAS) te beheren.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange Connector instellen in Microsoft Intune Azure
 
-In on-premises Exchange Server-omgevingen kunt u de Intune on-premises Exchange connector voor gebruiken om de toegang van apparaten tot lokale Exchange-postvakken te beheren op basis van het feit of de apparaten zijn ingeschreven bij Intune en voldoen aan het Intune-nalevingsbeleid voor apparaten. De on-premises Exchange Connector is tevens verantwoordelijk voor het detecteren van mobiele apparaten die verbinding maken met on-premises Exchange-Servers door het bestaande EAS-record (Exchange Active Sync ) te synchroniseren met Intune.
+In on-premises Exchange Server-omgevingen kunt u de Intune on-premises Exchange connector gebruiken om apparaattoegang tot lokale Exchange-postvakken te beheren op basis van het feit of de apparaten zijn ingeschreven bij Intune en voldoen aan het Intune-nalevingsbeleid voor apparaten. De on-premises Exchange Connector is tevens verantwoordelijk voor het detecteren van mobiele apparaten die verbinding maken met on-premises Exchange-Servers door het bestaande EAS-record (Exchange Active Sync ) te synchroniseren met Intune.
 
 > [!IMPORTANT]
 > Intune ondersteunt slechts één type on-premises Exchange Connector-verbinding per abonnement.
@@ -70,11 +70,11 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
 
 1. Open [Azure Portal](http://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor on-premises Exchange Connector en meld u aan met een gebruikersaccount dat een beheerder is in de on-premises Exchange-server en dat een licentie heeft om Exchange Server te gebruiken.
 
-2. Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
 
 3. Kies **Intune**. Het Intune-dashboard wordt geopend. Kies vervolgens **on-premises toegang**.
 
-4. Kies op de blade **On-premises toegang - Exchange ActiveSync-connector** in de sectie **Instellen**, de optie **De on-premises connector downloaden**.
+4. Kies **Exchange ActiveSync-connector** en kies **De on-premises connector downloaden**.
 
 5.  On-premises Exchange Connector bevindt zich in een gecomprimeerde map (.zip) die kan worden geopend of opgeslagen. Kies in het dialoogvenster **Bestand downloaden** de optie **Opslaan** om de gecomprimeerde map op een veilige locatie op te slaan.
 
@@ -93,7 +93,7 @@ Voer de volgende stappen uit om Intune On-Premises Exchange Connector te install
 
 3.  Selecteer in het dialoogvenster **Microsoft Intune Exchange Connector** de optie **On-premises Microsoft Exchange Server** of **Gehoste Microsoft Exchange Server**.
 
-  ![Uw type Exchange Server kiezen](./media/intune-sa-exchange-connector-config.png)
+  ![Afbeelding van waar u uw type Exchange Server kunt kiezen](./media/intune-sa-exchange-connector-config.png)
 
   Voor een On-premises Exchange-server geeft u de servernaam of de FQDN-naam van de Exchange-server op die als host fungeert voor de **serverfunctie voor clienttoegang**.
 
@@ -116,7 +116,7 @@ Voer de volgende stappen uit om Intune On-Premises Exchange Connector te install
 
     5. Geef in de velden **Gebruiker (Domein\gebruiker)** en **Wachtwoord** de referenties op die nodig zijn om verbinding te maken met de Exchange-server.
 
-    6.  Geef de vereiste beheerdersreferenties op om meldingen te verzenden naar het Exchange Server-postvak van een gebruiker. U kunt deze meldingen configureren met beleid voor voorwaardelijke toegang in Intune.
+    6.  Geef de vereiste referenties op om meldingen te verzenden naar het Exchange Server-postvak van een gebruiker. Deze gebruiker kan worden toegewezen aan alleen meldingen. De meldingengebruiker moet een Exchange-postvak hebben om meldingen te kunnen verzenden via e-mail. U kunt deze meldingen configureren met beleid voor voorwaardelijke toegang in Intune.  
 
         Zorg ervoor dat de Autodiscover-service en de Exchange-webservices zijn geconfigureerd op de Exchange-server voor clienttoegang. Zie [Server voor clienttoegang](https://technet.microsoft.com/library/dd298114.aspx) voor meer informatie.
 

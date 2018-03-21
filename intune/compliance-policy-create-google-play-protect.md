@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Meer informatie over het maken van een nalevingsbeleid voor apparaten om Google Play Protect in te schakelen
 
@@ -29,14 +29,15 @@ Het nalevingsbeleid dat deze instellingen vereist kan vervolgens worden gericht 
 
 ## <a name="create-a-compliance-policy"></a>Een nalevingsbeleid maken
 
-1. Meld u aan bij Azure Portal. Kies **Meer services** > **Bewaking en beheer** + **Intune**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 2. Kies **Apparaatnaleving** in de groep **Beheren**. 
 3. Kies **Beleid** en vervolgens **Beleid maken**.
 4. Geef een **Naam** en **Beschrijving** op voor het beleid.
 5. Selecteer **Android** bij Platform.
 6. Kies **Instellingen** > **Apparaatstatus**.
 7. Configureer de instellingen voor **Google Play Protect**.
-8. Wanneer u de instellingen voor Google Play Protect hebt ingesteld, geeft u vervolgens de instellingen voor **Beveiliging** en **Apparaateigenschap** op. Kies **OK** als u klaar bent.
+8. Wanneer u de instellingen voor Google Play Protect hebt ingesteld, geeft u vervolgens de instellingen voor **Systeembeveiliging** en **Apparaateigenschappen** op. Kies **OK** als u klaar bent.
 
 ## <a name="configure-the-google-play-protect-settings"></a>De instellingen voor Google Play Protect configureren
 

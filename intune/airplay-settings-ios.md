@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1a30a86ae924777b435c67e67f926819753d67
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9de6f0e2f7c74e7aec45c27f0fa20189b26c5e22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Intune AirPlay-instellingen voor iOS-apparaten
 
@@ -33,19 +33,20 @@ Met deze functie kunt u het volgende doen:
 
 ## <a name="get-started"></a>Aan de slag
 
-1. Kies op de blade **Apparaatfuncties** het item **AirPlay**.
-2. Kies op de blade **AirPlay** een of beide van de volgende acties:
+1. Navigeer vanaf [Intune in Azure Portal](https://portal.azure.com) naar [ **Apparaatfuncties** in het apparaatconfiguratiegebied](device-features-configure.md). 
+1. Kies **AirPlay** in het deelvenster **Apparaatfuncties**.
+2. Kies in het deelvenster **AirPlay** een of beide van de volgende acties:
 
 ## <a name="configure-a-device-and-password-list"></a>Een apparaat- en een wachtwoordenlijst configureren
 
-1. Voer op de blade **Wachtwoorden** de **Apparaatnaam** en het **Wachtwoord** in van een AirPlay-apparaat, bijvoorbeeld **Contoso Apple TV**.
+1. Voer in het deelvenster **Wachtwoorden** de **Apparaatnaam** en het **Wachtwoord** in van een AirPlay-apparaat, bijvoorbeeld **Contoso Apple TV**.
 2. Na het invoeren van de apparaatdetails klikt u op **Toevoegen**. Het apparaat wordt weergegeven in de lijst **Apparaatnaam**.
 3. Ga door naar het toevoegen van apparaten. Als u klaar bent, kiest u **OK**.
 
 
 ## <a name="configure-allowed-destinations"></a>Toegestane bestemmingen configureren
 
-1. Voer op de blade **Toegestane doelen (alleen onder supervisie)** de **Apparaat-id** van een AirPlay-apparaat in, bijvoorbeeld 52:46:CD:51:83:4 C.
+1. Voer in het deelvenster **Toegestane doelen (alleen onder supervisie)** de **Apparaat-id** van een AirPlay-apparaat in, bijvoorbeeld 52:46:CD:51:83:4 C.
 2. Na het invoeren van de apparaat-ID klikt u op **Toevoegen**. De id wordt weergegeven in de lijst **Apparaat-id**.
 3. Ga door naar het toevoegen van apparaten. Als u klaar bent, kiest u **OK**.
 

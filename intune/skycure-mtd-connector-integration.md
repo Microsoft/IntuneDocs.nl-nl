@@ -1,7 +1,7 @@
 ---
-title: De integratie van Skycure met Intune instellen
-titlesuffix: Azure portal
-description: De integratie van Skycure met Microsoft Intune instellen.
+title: Integratie van Skycure met Microsoft Intune instellen
+titlesuffix: 
+description: Meer informatie over hoe u de Skycure Mobile Threat Defense (MTD) -oplossing instelt met Microsoft Intune om toegang tot uw bedrijfsbronnen met mobiele apparaten te beheren.
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>De integratie van Skycure met Intune instellen
 
-U moet Skycure-apps in Azure AD toevoegen om gebruik te kunnen maken van eenmalige aanmelding.
+Voer de volgende stappen uit om de Skycure Mobile Threat Defense-oplossing te integreren met Intune. U moet Skycure-apps in Azure AD toevoegen om gebruik te kunnen maken van eenmalige aanmelding.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -62,15 +62,15 @@ Skycure ondersteunt twee modi van integratie met Intune:
 
 4.  Klik op het label **iOS-app** op **Aan Active Directory toevoegen**.
 
-    ![iOS-app in de Skycure-beheerconsole](./media/skycure-setup-1.png)
+    ![Afbeelding van iOS-app in de Skycure-beheerconsole](./media/skycure-setup-1.png)
 
 5.  Wanneer de aanmeldingspagina wordt geopend, voert u uw Intune-referenties in en klikt u vervolgens op **Accepteren**.
 
-    ![Aanmeldingsprompt in Intune voor iOS-app](./media/skycure-setup-2.png)
+    ![Afbeelding van de aanmeldingsprompt in Intune voor iOS-app](./media/skycure-setup-2.png)
 
 6.  Wanneer de app aan Azure AD is toegevoegd, wordt in de Skycure-beheerconsole aangegeven dat de app aan Azure AD is toegevoegd.
 
-    ![Voltooiingsscherm voor iOS-app](./media/skycure-setup-3.png)
+    ![Afbeelding van het voltooiingsscherm voor iOS-app](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > Herhaal dezelfde procedure voor de **Android-app voor Skycure** en de **beheerapp**.
@@ -79,13 +79,13 @@ Skycure ondersteunt twee modi van integratie met Intune:
 
 U moet een Azure AD-beveiligingsgroep toevoegen met alle apparaten waarop Skycure wordt uitgevoerd.
 
-1.  Voer alle beveiligingsgroepen met apparaten waarop Skycure wordt uitgevoerd in en selecteer deze. Klik vervolgens op **Wijzigingen toepassen**.
+-  Voer alle beveiligingsgroepen met apparaten waarop Skycure wordt uitgevoerd in en selecteer deze. Klik vervolgens op **Wijzigingen toepassen**.
 
-    ![Beveiligingsgroepen configureren in de Skycure-beheerconsole](./media/skycure-setup-4.png)
+    ![Afbeelding waarin u ziet waar u de beveiligingsgroep configureert in de Skycure-beheerconsole](./media/skycure-setup-4.png)
 
 Met Skycure worden apparaten met de Mobile Threat Defense-service gesynchroniseerd met de Azure AD-beveiligingsgroepen.
 
-![De beveiligingsgroepconfiguratie in de Skycure-beheerconsole is voltooid](./media/skycure-setup-5.png)
+![Afbeelding van de beveiligingsgroepconfiguratie in de Skycure-beheerconsole die is voltooid](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>De volledige integratie tussen Intune en Skycure instellen
 
@@ -103,7 +103,7 @@ Met Skycure worden apparaten met de Mobile Threat Defense-service gesynchronisee
 
 5.  Klik op **Wijzigingen toepassen**.
 
-    ![Volledige integratie van Skycure is voltooid](./media/skycure-setup-6.png)
+    ![Afbeelding van de volledige integratie van Skycure die is voltooid](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 
