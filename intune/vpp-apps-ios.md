@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune
 
@@ -80,11 +80,11 @@ Als u een apparaat gaat instellen voor een nieuwe Intune-gebruiker, moet u het a
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-1.  Kies op de blade **Intune** de optie **Mobiele apps** > **iOS VPP-tokens** onder **Setup**.
-2.  Selecteer **Maken** op de blade met de lijst met VPP-tokens.
-4. Geef op de blade **VPP-token maken** de volgende gegevens op:
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1.  Kies in het deelvenster **Intune** de optie **Mobiele apps** > **iOS VPP-tokens** onder **Installatie**.
+2.  Selecteer **Maken** in het deelvenster met de lijst VPP-tokens.
+4. Geef in het deelvenster **VPP-token maken** de volgende gegevens op:
     - **VPP-tokenbestand**: meld u aan voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs als u dit nog niet hebt gedaan. Nadat u bent aangemeld, downloadt u het Apple VPP-token voor uw account en selecteert u dit hier.
     - **Apple ID**: voer de Apple ID in van het account dat aan het VPP is gekoppeld.
     - **Land/regio**: selecteer VPP-store voor uw land.  Intune synchroniseert VPP-apps voor alle landinstellingen uit de opgegeven store uit het land waar de VPP geldt.
@@ -94,17 +94,17 @@ Als u een apparaat gaat instellen voor een nieuwe Intune-gebruiker, moet u het a
     - **Type VPP-account**: u hebt de keuze uit **Bedrijven** of **Onderwijs**.
     - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze optie is ingeschakeld, worden alle apps die zijn aangeschaft voor het opgegeven token, bijgewerkt via de Intune-service wanneer het apparaat wordt ingecheckt.
 Updates voor de VPP-app worden gedetecteerd in de App Store en automatisch doorgestuurd naar het apparaat wanneer dit wordt ingecheckt.
-4. Selecteer **Uploaden** wanneer u klaar bent.
+4. Selecteer **Maken** wanneer u klaar bent.
 
-Het token wordt weergegeven op de blade met de lijst met tokens.
+Het token wordt weergegeven in het deelvenster met de lijst met tokens.
 
 U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren met Intune door **Nu synchroniseren** te kiezen.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Een app toewijzen die is gekocht via het volume-aankoopprogramma
 
-1.  Kies op de blade **Intune** de optie **Mobiele apps** > **Apps** onder **Beheren**.
-2.  Kies op de blade met de lijst met apps de app die u wilt toewijzen en kies **Toewijzingen**.
-3.  Kies op de blade ***App-naam*** - **Toewijzingen** de optie **Groepen selecteren** en kies op de blade **Groepen selecteren** de Azure AD-gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
+1.  Kies in het deelvenster **Intune** de optie **Mobiele apps** > **Apps** onder **Beheren**.
+2.  Kies in het deelvenster met de lijst met apps de app die u wilt toewijzen en kies **Toewijzingen**.
+3.  Kies in het deelvenster ***App-naam*** - **Toewijzingen** de optie **Groep toevoegen** en kies in het deelvenster **Groep toevoegen** een **Toewijzingstype**. Kies ook de Azure AD-gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
 5.  Voor elke groep die u hebt geselecteerd, kiest u de volgende instellingen:
     - **Type**: kies of de app **Beschikbaar** is (eindgebruikers kunnen de app installeren vanaf de bedrijfsportal) of **Vereist** (de app wordt automatisch geïnstalleerd).
     - **Licentietype**: kies uit **Gebruikerslicenties** of **Apparaatlicenties**.

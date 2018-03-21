@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>E-mailinstellingen configureren in Microsoft Intune
 
@@ -39,17 +39,19 @@ Gebruik de informatie in dit artikel voor meer informatie over de basisbeginsele
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Een apparaatprofiel met e-mailinstellingen maken
 
-1. Meld u aan bij Azure-portal.
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de pagina **Intune** de optie **Apparaatconfiguratie**.
-2. Kies **Beheren** > **Profielen** op de pagina **Apparaatconfiguratie**.
-3. Kies **Profiel maken** op de profielpagina.
-4. Voer op de pagina **Profiel maken** een **naam** en een **beschrijving** in voor het e-mailprofiel.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
+3. Kies **Profiel maken** in het deelvenster Profielen.
+4. Voer in het deelvenster **Profiel maken** een **naam** en een **beschrijving** in voor het e-mailprofiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de e-mailinstellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor e-mailapparaatinstellingen:
     - **Android** (alleen Samsung Android Knox Standard)
     - **Android for Work**
     - **iOS**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
 6. Kies **E-mail** in de vervolgkeuzelijst **Profieltype**.
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
@@ -57,9 +59,9 @@ Gebruik de informatie in dit artikel voor meer informatie over de basisbeginsele
     - [iOS-instellingen](email-settings-ios.md)
     - [Windows Phone 8.1-instellingen](email-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](email-settings-windows-10.md)
-8. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
+8. Als u klaar bent, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
 
 ## <a name="further-information"></a>Meer informatie

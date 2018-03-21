@@ -1,12 +1,11 @@
 ---
-title: iOS-modus voor een verloren apparaat activeren met Intune
-titlesuffix: Azure portal
-description: Meer informatie over het gebruik van Intune om de modus Apparaat verloren voor verloren of gestolen iOS-apparaten te activeren.
+title: De modus Apparaat verloren voor iOS-apparaten activeren met Microsoft Intune - Azure | Microsoft Docs
+description: Activeer of open de modus Apparaat verloren om met Microsoft Intune een bericht in te stellen voor weergave op het vergrendelingsscherm van een verloren of gestolen iOS-apparaat. U ontvangt ook meer informatie over beveiliging en privacy wanneer u de modus Apparaat verloren gebruikt.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,48 +13,46 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 47d6314dfaed546e5b4cff7f93a5540ba512bde9
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="activate-lost-mode-on-ios-devices"></a>De modus Apparaat verloren activeren op iOS-apparaten
-
+# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-apparaten met Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren apparaten in op verloren of gestolen iOS-apparaten. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven.
+Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren apparaten in op verloren of gestolen iOS-apparaten. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven. Als u de modus Apparaat verloren apparaat wilt gebruiken, moet het apparaat in een iOS-apparaat in bedrijfseigendom zijn waarop de supervisiemodus is ingeschakeld.
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
-- Windows: niet ondersteund
-- Windows Phone: niet ondersteund
-- iOS: ondersteund op iOS 9.3 of hoger, onder supervisie, en bedrijfseigendom
-- macOS: niet ondersteund
-- Android: niet ondersteund
+- iOS 9.3 en hoger
 
-## <a name="how-to-activate-lost-mode"></a>De modus Apparaat verloren activeren
+Deze functie wordt **niet** ondersteund op: 
+- Windows
+- Windows Phone
+- macOS
+- Android
+
+## <a name="enable-lost-mode"></a>De modus Apparaat verloren inschakelen
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies **Alle apparaten** op de blade **Apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een iOS-apparaat, kies **...Meer**en kies vervolgens de externe actie **Modus Apparaat verloren**.
-6. Schakel op de blade **Modus Apparaat verloren** de modus Apparaat verloren in. Voer vervolgens het weer te geven bericht in en eventueel een telefoonnummer van de contactpersoon.
-7. Klik op **OK**.
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
+4. Kies in de lijst met apparaten die u beheert, een iOS-apparaat, kies **...Meer**en kies vervolgens de externe actie **Modus Apparaat verloren**.
+5. In de **modus Apparaat verloren** schakelt u deze functie in. Voer vervolgens het weer te geven bericht in en voeg het telefoonnummer van de contactpersoon toe.
+6. Selecteer **OK** om uw wijzigingen op te slaan.
 
-Wanneer u de modus Apparaat verloren inschakelt, wordt het gebruik van het apparaat volledig geblokkeerd. De gebruiker krijgt pas weer toegang tot het apparaat als de modus Apparaat verloren is uitgeschakeld. Als de modus Apparaat verloren is ingeschakeld, kunt u de bewerking **Apparaat zoeken** uitvoeren om te weten te komen waar het apparaat is.
-Als u de modus Apparaat verloren apparaat wilt gebruiken, moet het apparaat in een iOS-apparaat in bedrijfseigendom zijn waarop de supervisiemodus is ingeschakeld.
+Wanneer u de modus Apparaat verloren inschakelt, wordt het gebruik van het apparaat volledig geblokkeerd. De gebruiker krijgt pas weer toegang tot het apparaat als de modus Apparaat verloren is uitgeschakeld. Als de modus Apparaat verloren is ingeschakeld, kunt u de actie [Apparaat zoeken](device-locate.md) gebruiken om het apparaat te zoeken.
 
 ## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Beveiligings- en privacygegevens voor de acties modus Apparaat verloren en Apparaat zoeken
 - Er wordt geen locatie-informatie over het apparaat verzonden naar Intune voordat u deze actie hebt ingeschakeld.
 - Wanneer u de actie Apparaat zoeken gebruikt, worden de lengte- en breedtegraadcoördinaten van het apparaat verzonden naar Intune en weergegeven in Azure Portal.
 - De gegevens worden gedurende 24 uur opgeslagen, waarna ze worden verwijderd. U kunt de locatiegegevens niet handmatig verwijderen.
 - De locatiegegevens worden versleuteld terwijl ze zijn opgeslagen en terwijl ze worden verzonden.
-- U wordt aangeraden het bericht dat wordt weergegeven op het vergrendelingsscherm, van informatie te voorzien, op basis waarvan het apparaat kan worden teruggegeven.
+- In het bericht dat u invoert voor weergave op het vergrendelingsscherm moet u ook specifieke informatie opgeven voor het retourneren van het apparaat.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.
-
+Als u de inschakelingsstatus van de modus Apparaat verloren wilt bekijken, opent u **Apparaten** en selecteert u **Apparaatacties**.

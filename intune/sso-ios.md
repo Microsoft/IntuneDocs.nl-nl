@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
 
@@ -34,18 +34,19 @@ Om eenmalige aanmelding voor iOS-apparaten te kunnen gebruiken moet aan de volge
 
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Meer services** > **Bewaking en beheer** > **Intune**.
-3. Kies op de pagina **Intune** de optie **Apparaatconfiguratie**.
-2. Kies op de pagina **Apparaatconfiguratie** de optie **Profielen**.
-3. Kies op de pagina voor profielen de optie **Profiel maken**, geef een naam en beschrijving op en configureer de volgende instellingen:
-   - **Platform**: kies **iOS**. 
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+4. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
+5. Kies **Profiel maken** in het deelvenster Profielen.
+6. Voer een naam en beschrijving in en configureer de volgende instellingen:
+   - **Platform**: kies **iOS**.
    - **Profieltype**: kies **Apparaatfuncties**.
-4. Kies op de pagina **Apparaatfuncties** de optie **Eenmalige aanmelding**.
+7. Kies in het deelvenster **Apparaatfuncties** de optie **Eenmalige aanmelding**.
 
-   ![Pagina Eenmalige aanmelding](./media/sso-blade.png)
+   ![Deelvenster Eenmalige aanmelding](./media/sso-blade.png)
 
-2. Gebruik de volgende samenvattingstabel om de velden op de pagina **Eenmalige aanmelding** in te vullen. Zie de secties na de tabel voor meer informatie.
-   
+8. Gebruik de volgende samenvattingstabel om de velden in het deelvenster **Eenmalige aanmelding** in te vullen. Zie de secties na de tabel voor meer informatie.
+
    |Veld  |Opmerkingen|
    |---------|---------|
    |**Het kenmerk Gebruikersnaam van AAD**|Het kenmerk dat door Intune wordt gecontroleerd voor elke gebruiker in AAD en waarmee het betreffende veld (zoals UPN) wordt ingevuld vóór het genereren van de XML-nettolading die op het apparaat wordt geïnstalleerd.|
@@ -95,7 +96,7 @@ Het veld **App-naam** wordt gebruikt voor het toevoegen van een gebruiksvriendel
 
 ### <a name="credential-renewal-certificate"></a>Referentievernieuwingscertificaat
 
-Als u uw eindgebruikers met certificaten (dus niet met wachtwoorden) verifieert, gebruikt u dit veld om het SCEP- of PFX-certificaat te selecteren dat voor de gebruiker als verificatiecertificaat is geïmplementeerd. Dit is meestal hetzelfde certificaat dat voor de gebruiker is geïmplementeerd voor andere profielen, zoals VPN, Wi-Fi of E-mail.
+Als u uw eindgebruikers met certificaten (dus niet met wachtwoorden) verifieert, gebruikt u dit veld om het SCEP- of PFX-certificaat te selecteren dat voor de gebruiker als verificatiecertificaat is geïmplementeerd. Dit is meestal hetzelfde certificaat dat voor de gebruiker is geïmplementeerd voor andere profielen, bijvoorbeeld voor VPN, Wi-Fi of e-mail.
 
 ## <a name="next-steps"></a>Volgende stappen
 

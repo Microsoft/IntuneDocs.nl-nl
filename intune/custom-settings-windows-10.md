@@ -13,13 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 156d37874529b4ae5a8176d7e9a8873cf440c32c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Aangepaste Microsoft Intune-apparaatinstellingen voor apparaten met Windows 10 
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Aangepaste Microsoft Intune-apparaatinstellingen voor apparaten met Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,11 +29,11 @@ Als u een bepaalde instelling zoekt, moet u er rekening mee houden dat het [bepe
 ## <a name="configure-custom-settings"></a>Aangepaste instellingen configureren
 
 1. Volg de instructies in [Aangepaste apparaatinstellingen configureren in Microsoft Intune](custom-settings-configure.md) om aan de slag te gaan.
-2. Kies op de pagina **Profiel maken** de optie **Instellingen** om een of meer OMA-URI-instellingen toe te voegen.
-3. Klik op de pagina **Aangepaste OMA-URI-instellingen** op **Toevoegen** om een nieuwe waarde toe te voegen. U kunt ook op **Exporteren** klikken om een lijst met alle geconfigureerde waarden te maken in een door komma's gescheiden bestand (.csv).
-4. Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in. Gebruik de lijst in dit artikel voor meer informatie over de instellingen die u kunt gebruiken:
-    - **Naam van de instelling**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
-    - **Beschrijving van de instelling:** voer eventueel een beschrijving in voor de instelling.
+1. Klik in het deelvenster **Aangepaste OMA-URI-instellingen** op **Toevoegen** om een nieuwe waarde toe te voegen. U kunt ook op **Exporteren** klikken om een lijst met alle geconfigureerde waarden te maken in een door komma's gescheiden bestand (.csv).
+1. Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in. Gebruik de lijst in dit artikel voor meer informatie over de instellingen die u kunt gebruiken:
+    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
+    - **Beschrijving**: voer eventueel een beschrijving in voor de instelling.
+    - **OMA-URI (hoofdlettergevoelig)**: geef aan voor welke OMA-URI u een instelling wilt opgeven.
     - **Gegevenstype**: kies uit:
         - **Tekenreeks**
         - **Tekenreeks (XML)**
@@ -41,13 +41,13 @@ Als u een bepaalde instelling zoekt, moet u er rekening mee houden dat het [bepe
         - **Geheel getal**
         - **Drijvende komma**
         - **Booleaanse waarde**
-    - **OMA-URI (hoofdlettergevoelig)**: geef aan voor welke OMA-URI u een instelling wilt opgeven.
-    - **Waarde**: geef de waarde op die moet worden gekoppeld aan de OMA-URI die u hebt opgegeven.
-5. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
-Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst.
+        - **Base64**
+    - **Waarde**: geef een waarde of bestand op om te koppelen aan de OMA-URI die u hebt opgegeven.
+1. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
+Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 ## <a name="example"></a>Voorbeeld
-In de schermopname hieronder is de instelling **Conectivity/AllowVPNOverCellular** ingeschakeld. Hiermee kan met een Windows-10-apparaat een VPN-verbinding worden gemaakt in een mobiel netwerk.
+In de volgende schermopname is de instelling **Connectivity/AllowVPNOverCellular** ingeschakeld. Hiermee kan met een Windows-10-apparaat een VPN-verbinding worden gemaakt in een mobiel netwerk.
 
 > ![Voorbeeld van een aangepast beleid met VPN-instellingen](./media/custom-policy-example.png)
 
@@ -59,5 +59,3 @@ Een complete lijst met configuratieserviceproviders (CSP's) die door Windows 10 
 Niet alle instellingen zijn compatibele met alle versies van Windows 10. In de tabel in het Windows-artikel kunt u zien welke versies voor elke CSP worden ondersteund.
 
 Bovendien worden niet alle instellingen in het artikel door Intune ondersteund. Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen** of **Vervangen** ondersteunen.
-
-

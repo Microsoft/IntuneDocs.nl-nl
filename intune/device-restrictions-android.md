@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen in Microsoft Intune 
 
@@ -144,7 +144,7 @@ Configureer voor elke instelling een lijst met apps aan de hand van een van de v
 
 Kioskinstellingen zijn alleen van toepassing op apparaten met Samsung Knox Standard en alleen op apps die u beheert via Intune.
 
-- **Selecteer een beheerde app** - kies een van de volgende opties voor het toevoegen van een of meer apps die kunnen worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt. Er mogen geen andere apps op het apparaat worden uitgevoerd.
+- **Selecteer een beheerde app** - kies een van de volgende opties voor het toevoegen van een of meer apps die kunnen worden uitgevoerd wanneer het apparaat zich in de kioskmodus bevindt. Er mogen geen andere apps op het apparaat worden uitgevoerd. Vooraf geïnstalleerde browsers kunnen niet worden gedefinieerd als app die mag worden uitgevoerd terwijl het apparaat zich in de kioskmodus bevindt. Als een browser is vereist, kunt u overwegen de [Managed Browser](app-configuration-managed-browser.md) te gebruiken.
     - **Apps toevoegen op pakketnaam**
     - **Apps toevoegen op URL**
     - **Beheerde apps toevoegen**.

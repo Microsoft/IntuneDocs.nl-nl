@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
 
@@ -34,7 +34,7 @@ Gebruikers moeten in [Azure Portal](https://portal.azure.com) bestaan om ze te k
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
 
-Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een apparaatinschrijvingsmanageraccount en voegt een restaurantsupervisor toe aan het DEM-account. Daarmee krijgt die supervisor DEM-mogelijkheden. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
+Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een manageraccount voor apparaatinschrijving en voegt een restaurantsupervisor toe aan het DEM-account. Daarmee krijgt die supervisor DEM-mogelijkheden. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
 
 Alleen gebruikers in [Azure Portal](https://portal.azure.com) kunnen apparaatinschrijvingsmanagers zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
 
@@ -50,7 +50,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
   - Geen toegang per gebruiker. Omdat apparaten geen toegewezen gebruiker hebben, heeft het apparaat geen toegang tot e-mail of bedrijfsgegevens. VPN-configuraties kunnen echter nog wel worden gebruikt om apps op apparaten te leveren met toegang tot gegevens.
   - Er is geen voorwaardelijke toegang mogelijk omdat deze scenario's per gebruiker moet worden opgegeven.
-  - De DEM-gebruiker kan bij DEM ingeschreven apparaten niet via de bedrijfsportal uitschrijven op het apparaat zelf. De Intune-beheerder kan dit wel doen, maar de DEM-gebruiker niet.
+  - De DEM-gebruiker kan bij DEM ingeschreven apparaten niet via de bedrijfsportal uitschrijven op het apparaat zelf. De Intune-beheerder kan uitschrijvingen uitvoeren.
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
   - Gebruikers kunnen geen Apple VPP-apps (Volume Purchase Program) gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
   - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) of Apple School Manager (ASM) niet gebruiken om apparaten te registreren.
@@ -59,7 +59,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 
 > [!NOTE]
-> Om bedrijfsapps te implementeren op apparaten die worden beheerd met de apparaatinschrijvingsmanager, moet u de bedrijfsportal-app als een **Vereiste installatie** implementeren naar het gebruikersaccount voor de apparaatinschrijvingsmanager.
+> U kunt bedrijfs-apps implementeren op apparaten die worden beheerd door de apparaatinschrijvingsmanager. Implementeer de bedrijfsportal-app als een **vereiste installatie** in het gebruikersaccount van de apparaatinschrijvingsmanager.
 > Om prestaties te verbeteren wordt bij het weergeven van de bedrijfsportal-app op een DEM-apparaat alleen het lokale apparaat weergegeven. Extern beheer van andere DEM-apparaten is alleen mogelijk via de Intune-beheerconsole.
 
 
@@ -75,7 +75,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 
 Als u DEM-registratietaken wilt uitvoeren, moet u beschikken over de Azure AD-rollen Globale beheerde of Intune-servicebeheerder. Deze rollen zijn vereist om alle DEM-gebruikers weer te geven, ondanks dat er RBAC-machtigingen worden vermeld en beschikbaar zijn onder de aangepaste gebruikersrol. Een gebruiker zonder de rol van globale beheerder of Intune-servicebeheerder maar met leesmachtigingen voor de DEM-rol, kan alleen de DEM-gebruikers weergeven die door de gebruiker zijn gemaakt. RBAC-rolondersteuning voor deze functies wordt in de toekomst aangekondigd.
 
-Als een gebruiker niet over rol van globale beheerder of Intune-servicebeheerder beschikt maar wel leesmachtigingen voor de toegewezen DEM-rol heeft, kan de gebruiker alleen de zelfgemaakt DEM-gebruikers weergeven.
+Als een gebruiker niet over de rol van globale beheerder of Intune-servicebeheerder beschikt maar wel leesmachtigingen voor de toegewezen DEM-rol heeft, kan de gebruiker alleen de zelfgemaakt DEM-gebruikers weergeven.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager verwijderen
 
@@ -88,9 +88,8 @@ Het verwijderen van een apparaatinschrijvingsmanager is niet van invloed op inge
 
 **Een apparaatinschrijvingsmanager verwijderen**
 
-1. In [Azure Portal](https://portal.azure.com) kiest u **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-2. Kies op de Intune-blade de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
-3. Klik op de blade **Apparaatinschrijvingsmanagers** op de DEM-gebruiker en selecteer **Verwijderen**.
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** en kies vervolgens **Apparaatinschrijvingsmanagers**.
+2. Klik op de blade **Apparaatinschrijvingsmanagers** op de DEM-gebruiker en selecteer **Verwijderen**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>De eigenschappen van een apparaatinschrijvingsmanager weergeven
 

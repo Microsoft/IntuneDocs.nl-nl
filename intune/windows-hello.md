@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello voor Bedrijven integreren in Microsoft Intune
 
@@ -48,19 +48,19 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Een beleid voor Windows Hello voor Bedrijven maken
 
-1.  Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**.
+1.  Kies in [Azure Portal](https://portal.azure.com) achtereenvolgens **Alle services** > **Bewaking en beheer** > **Intune**.
 
-2.  Kies op de pagina Intune **Apparaatinschrijving** en kies vervolgens **Windows-inschrijving** > **Windows Hello voor Bedrijven**.
+2.  Kies in het deelvenster Intune de optie **Apparaatinschrijving** en kies vervolgens **Windows-inschrijving** > **Windows Hello voor Bedrijven**.
 
-3.  Kies op de pagina die wordt geopend de **standaard**instellingen.
+3.  Kies in het deelvenster dat wordt geopend de **standaard**instellingen.
 
-4.  Klik op de pagina **Alle gebruikers** op **Eigenschappen** en voer een **naam** en desgewenst een **beschrijving** in voor de Windows Hello voor Bedrijven-instellingen.
+4.  Klik in het deelvenster **Alle gebruikers** op **Eigenschappen** en voer een **naam** en desgewenst een **beschrijving** in voor de Windows Hello voor Bedrijven-instellingen.
 
-5. Klik op de pagina **Alle gebruikers** op **Instellingen** en kies vervolgens een van de volgende opties voor **Windows Hello voor Bedrijven configureren**:
+5. Klik in het deelvenster **Alle gebruikers** op **Instellingen** en kies vervolgens een van de volgende opties voor **Windows Hello voor Bedrijven configureren**:
 
     - **Uitgeschakeld**. Als u Windows Hello voor Bedrijven niet wilt gebruiken, selecteert u deze instelling. Alle andere instellingen op het scherm zijn niet beschikbaar.
     - **Ingeschakeld**. Selecteer deze instelling als u instellingen voor Windows Hello voor Business wilt configureren.
-    - **Niet geconfigureerd**. Selecteer deze instelling als u niet met Intune instellingen voor Windows Hello voor Bedrijven wilt beheren. Alle eventueel bestaande Windows Hello voor Bedrijven-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen op de pagina zijn niet beschikbaar.
+    - **Niet geconfigureerd**. Selecteer deze instelling als u niet met Intune instellingen voor Windows Hello voor Bedrijven wilt beheren. Alle eventueel bestaande Windows Hello voor Bedrijven-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen in het deelvenster zijn niet beschikbaar.
 
 6.  Als u in de vorige stap **Ingeschakeld** hebt geselecteerd, configureert u de vereiste instellingen die worden toegepast op alle ingeschreven Windows 10- en Windows 10 Mobile-apparaten.
 
@@ -69,9 +69,9 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
      - **Vereist** (standaard). Alleen apparaten met een toegankelijke TPM kunnen Windows Hello voor Bedrijven inrichten.
      - **Voorkeur**. Apparaten proberen eerst een TPM te gebruiken. Als deze niet beschikbaar is, kunnen ze softwareversleuteling gebruiken.
 
- - **Minimumlengte voor pincode vereisen**/**Maximumlengte voor pincode vereisen**. Hiermee configureert u apparaten om de opgegeven minimum- en maximumlengte van de pincode te gebruiken voor het beveiligen van de aanmelding. De standaardwaarde voor de pincode is zes tekens, maar u kunt een minimumlengte van vier tekens afdwingen. De maximumlengte voor de pincode is 127 tekens.
+ - **Minimumlengte voor pincode**/**Maximumlengte voor pincode**. Hiermee configureert u apparaten om de opgegeven minimum- en maximumlengte van de pincode te gebruiken voor het beveiligen van de aanmelding. De standaardwaarde voor de pincode is zes tekens, maar u kunt een minimumlengte van vier tekens afdwingen. De maximumlengte voor de pincode is 127 tekens.
 
- - **Kleine letters voor pincode vereisen**/**Hoofdletters voor pincode vereisen**/**Speciale tekens voor pincode vereisen**. U kunt zorgen voor sterkere pincodes door het gebruik van kleine letters, hoofdletters en speciale tekens voor de pincode af te dwingen. U kunt kiezen uit:
+ - **Kleine letters in pincode**/**Hoofdletters in pincode**/**Speciale tekens in pincode**. U kunt zorgen voor sterkere pincodes door het gebruik van kleine letters, hoofdletters en speciale tekens voor de pincode af te dwingen. U kunt kiezen uit:
 
      - **Toegestaan**. Gebruikers kunnen het tekentype gebruiken in hun pincode, maar dit is niet verplicht.
 
@@ -90,7 +90,7 @@ Als u ervoor wilt zorgen dat beleidsconflicten worden opgelost en het pincodebel
 
  - **Verbeterde anti-adresvervalsing gebruiken, indien beschikbaar**. Hiermee configureert u of de functies voor anti-adresvervalsing van Windows Hello worden gebruikt op apparaten die deze functie ondersteunen (bijvoorbeeld een foto van een gezicht in plaats van een echt gezicht detecteren).<br>Als u deze optie instelt op **Ja**, moeten alle gebruikers anti-adresvervalsing gebruiken voor gezichtskenmerken, indien dat wordt ondersteund.
 
- - **Aanmelding met telefoon**. Als u deze optie instelt op **Ja**, kunnen gebruikers een extern passport gebruiken als draagbaar begeleidingsapparaat voor verificatie op desktopcomputers. De computer moet zijn toegevoegd aan Azure Active Directory en het begeleidingsapparaat moet worden geconfigureerd met een pincode voor Windows Hello voor Bedrijven.
+ - **Aanmelding via de telefoon toestaan**. Als u deze optie instelt op **Ja**, kunnen gebruikers een extern passport gebruiken als draagbaar begeleidingsapparaat voor verificatie op desktopcomputers. De computer moet zijn toegevoegd aan Azure Active Directory en het begeleidingsapparaat moet worden geconfigureerd met een pincode voor Windows Hello voor Bedrijven.
 
 ## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
 

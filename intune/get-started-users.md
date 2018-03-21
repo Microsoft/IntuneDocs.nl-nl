@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>Aan de slag met het beheren van gebruikers
 
@@ -27,13 +27,13 @@ Denk aan alle andere personen in uw organisatie. Iedereen die zakelijke gegevens
 
 ## <a name="how-do-i-create-a-user"></a>Hoe maak ik een gebruiker?
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Gebruik **Resources zoeken** om te zoeken naar **Intune**.
-3. Selecteer nadat u de blade **Microsoft Intune** hebt geopend de optie **Gebruikers**. Selecteer op de pagina **Alle gebruikers** de optie **+ Nieuwe gebruiker**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer **Gebruikers** nadat u het deelvenster **Microsoft Intune** hebt geopend. Selecteer op de pagina **Alle gebruikers** de optie **+ Nieuwe gebruiker**.
 4. Voer gegevens in voor de gebruiker, bijvoorbeeld bij **Naam** en **Gebruikersnaam**. Het domeinnaamgedeelte van de gebruikersnaam moet bestaan uit de naam van het oorspronkelijke standaarddomein 'contoso.onmicrosoft.com' of uit een geverifieerde, niet-gefedereerde domeinnaam zoals 'contoso.com'.
 5. Kies onder **Groepen** de testgroep waaraan u de gebruiker wilt toevoegen.
 6. Sla het automatisch gegenereerde gebruikerswachtwoord op, zodat u dit kunt gebruiken om u aan te melden bij een testapparaat. U moet dit wachtwoord aan uw gebruikers geven, zodat ze het kunnen wijzigen in een normaal wachtwoord dat ze makkelijk kunnen onthouden.
-7. Selecteer **Maken** op de blade **Gebruiker**.
+7. In het deelvenster **Gebruiker** selecteert u **Maken**.
 
 ## <a name="assigning-licenses-to-users"></a>Licenties toewijzen aan gebruikers
 

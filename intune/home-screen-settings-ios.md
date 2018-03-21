@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Indelingsinstellingen voor de Microsoft Intune-startpagina voor iOS-apparaten 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Indelingsinstellingen voor de Microsoft Intune-startpagina voor iOS-apparaten
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ Gebruik deze instellingen voor het configureren van de indeling van apps en mapp
 
 Op iOS-apparaten met een toegewezen profiel, moet de supervisiemodus zijn geactiveerd. Op het apparaat moet iOS 9.3 of hoger worden uitgevoerd.
 
-1. Op de pagina **Apparaatconfiguratie**, **Profiel maken**, **Apparaatfuncties** kiest u **Indeling voor het beginscherm (alleen onder toezicht)**.
-2. Kies op de pagina **Indeling voor het beginscherm (alleen onder toezicht)** of u indelingen van de **Dock** of **Pagina's** wilt configureren.
+1. Navigeer vanaf [Intune in Azure Portal](https://portal.azure.com) naar [**Apparaatfuncties** in het apparaatconfiguratiegebied](device-features-configure.md).
+2. Kies in het deelvenster **Apparaatfuncties** de optie **Indeling voor het beginscherm (alleen onder toezicht)**.
+3. Kies in het deelvenster **Indeling voor het beginscherm (alleen onder toezicht)** of u indelingen van de **dock** of **pagina's** wilt configureren.
 
 ## <a name="add-items-to-the-dock"></a>Items toevoegen aan de dock
 
-Op de pagina **Dock** kunt u maximaal zes items of mappen toevoegen aan de dock onderaan in het iOS-scherm. Veel apparaten ondersteunen echter minder items. iPhones ondersteunen bijvoorbeeld maar 4 items. In dit geval worden alleen de eerste vier items die u hebt geconfigureerd op het apparaat weergegeven.
+In het deelvenster **Dock** kunt u maximaal zes items of mappen toevoegen aan de dock onderaan in het iOS-scherm. Veel apparaten ondersteunen echter minder items. iPhones ondersteunen bijvoorbeeld maar 4 items. In dit geval worden alleen de eerste vier items die u hebt geconfigureerd op het apparaat weergegeven.
 
 1. Kies **Toevoegen** om een item toe te voegen aan de dock.
-2. Kies op de pagina **Rij toevoegen** of u een **App** of **Map** wilt toevoegen.
+2. Kies in het deelvenster **Rij toevoegen** of u een **app** of **map** wilt toevoegen.
 3. Gebruik de informatie in dit onderwerp om de apps en mappen te configureren die u wilt weergeven in de dock.
-4. Ga door naar het toevoegen van items. Als u klaar bent, klikt u op elke pagina op **OK** totdat u bent teruggekeerd naar de pagina **Profiel maken**. Kies **Maken**.
+4. Ga door naar het toevoegen van items. Als u klaar bent, klikt u in elk deelvenster op **OK** totdat u bent teruggekeerd naar het deelvenster **Profiel maken**. Kies **Maken**.
 
 >[!TIP]
-> U kunt items slepen en neerzetten in elk startscherm en alle paginalijsten om deze te rangschikken. 
+> U kunt items slepen en neerzetten in elk startscherm en alle paginalijsten om deze te rangschikken.
 
 ### <a name="example"></a>Voorbeeld
 
@@ -56,9 +57,8 @@ Wanneer u het beleid aan een iPhone toewijst, is het resultaat een dock die er o
 
 Voeg de pagina's toe die u wilt weergeven op het startscherm en voeg de apps toe die moeten worden weergegeven op elke pagina. Apps die u aan een pagina toevoegt, worden gerangschikt van links naar rechts, in de volgorde waarin deze zijn opgegeven in de lijst. Als u meer apps toevoegt dan er op een pagina passen, worden de apps naar een volgende pagina verplaatst.
 
-
-1. Kies op de pagina **Pagina's** het item **Toevoegen**.
-2. Voer op de pagina **Rij toevoegen** een **paginanaam** in. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
+1. Kies in het deelvenster **Pagina's** de optie **Toevoegen**.
+2. Voer in het deelvenster **Rij toevoegen** een **paginanaam** in. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
 3. Kies **Toevoegen** en kies of u een **App** of **Map** wilt toevoegen aan de pagina.
 4. Gebruik de informatie in dit onderwerp om de apps en mappen te configureren die u wilt weergeven op de pagina.
 
@@ -85,7 +85,7 @@ Apps die u aan een pagina in een map toevoegt, worden gerangschikt van links naa
 
 1. Voer de **Mapnaam** in. Deze naam zien gebruikers op hun apparaat.
 2. Kies **Toevoegen** om een pagina in de map te maken. U kunt maximaal 20 pagina's toevoegen.
-3. Voer op de pagina **Rij toevoegen** een naam in voor de pagina. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
+3. Voer in het deelvenster **Rij toevoegen** een naam in voor de pagina. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
 3. Voer de **App-naam** in. Deze naam wordt ter referentie gegeven in de Azure-portal en *wordt niet weergegeven* op het iOS-apparaat.
 2. Voer de **App-bundel-id** in van de app die u wilt weergeven. Zie **Een app aan de lijst toevoegen** voor meer informatie.
 3. Kies **Toevoegen**. U kunt maximaal 60 items toevoegen.
@@ -94,7 +94,7 @@ Apps die u aan een pagina in een map toevoegt, worden gerangschikt van links naa
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id's voor ingebouwde iOS-apps
 
-Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier. 
+Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier.
 
 |||
 |-|-|

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -70,7 +70,7 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Een .csv-lijst met zakelijke id's toevoegen
 
-1. Kies in Intune in de Azure-portal **Apparaatinschrijving** > **Zakelijke apparaat-id’s** en klik vervolgens op **Toevoegen**.
+1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Zakelijke apparaat-id's** en klik vervolgens op **Toevoegen**.
 
  ![Werkruimte Zakelijke apparaat-id's met de knop Toevoegen gemarkeerd](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten ku
 
 ### <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
 
-1. Kies in Intune in de Azure-portal **Apparaatinschrijving** > **Zakelijke apparaat-id’s**.
+1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Zakelijke apparaat-id's**.
 2. Selecteer de apparaat-id’s die u wilt verwijderen en kies vervolgens **Verwijderen**.
 3. Bevestig de verwijdering.
 
-Wanneer u een zakelijke id voor een ingeschreven apparaat verwijdert, wordt het eigendom van het apparaat niet gewijzigd. U kunt het eigendom van een apparaat wijzigen door naar **Apparaten** > **Alle apparaten** te gaan, het apparaat te selecteren, **Eigenschappen** te kiezen en **Apparaateigendom** te wijzigen.
+Wanneer u een zakelijke id voor een ingeschreven apparaat verwijdert, wordt het eigendom van het apparaat niet gewijzigd. Als u het eigendom van een apparaat wilt wijzigen, gaat u naar **Apparaten**, selecteert u het apparaat, kiest u **Eigenschappen** en wijzigt u het **Apparaateigendom**.
 
 ### <a name="imei-specifications"></a>IMEI-specificaties
 Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) voor gedetailleerde specificaties over International Mobile Equipment Identifiers.
@@ -96,7 +96,7 @@ Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/Spec
 De apparaateigenschappen tonen **Eigendom** voor de records van elk apparaat in Intune. Als beheerder kunt u apparaten als **Persoonlijk** of **Zakelijk** opgeven.
 
 **Ga als volgt te werk om het apparaateigendom te wijzigen:**
-1. Ga in Intune in de Azure-portal naar **Apparaten** > **Alle apparaten** en kies het apparaat.
+1. Ga in [Intune in Azure Portal](https://portal.azure.com) naar **Apparaten** en kies het apparaat.
 3. Kies **Eigenschappen**.
 4. Selecteer voor **Apparaateigendom** de optie **Persoonlijk** of **Zakelijk**.
 

@@ -1,10 +1,10 @@
 ---
-title: Nalevingsbeleid voor Intune-apparaten controleren
-titlesuffix: Azure portal
-description: Meer informatie over het bewaken van het nalevingsbeleid voor apparaten
+title: Nalevingsbeleid voor apparaten van Microsoft Intune bewaken
+titlesuffix: 
+description: Gebruik het apparaatnalevingsdashboard om de algehele apparaatnaleving te bewaken, rapporten te bekijken en de apparaatnaleving per beleidsregel en per instelling te bekijken.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
-ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
+ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -25,15 +25,15 @@ Nalevingsrapporten helpen beheerders het nalevingspostuur van apparaten in hun o
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-Volg de onderstaande stappen om te zoeken naar het **Intune-dashboard voor apparaatnaleving** in Azure Portal:
+Volg deze stappen om te zoeken naar het **Intune-dashboard voor apparaatnaleving** in Azure Portal:
 
 1.  Ga naar [Azure Portal](https://portal.azure.com) en meld u aan met uw Intune-referenties.
 
-2.  Kies **Meer services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+2.  Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
 3.  Kies **Intune** &gt; **Apparaatnaleving** &gt; **Overzicht**. Het **Dashboard voor apparaatnaleving** wordt geopend.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Apparaten moeten worden ingeschreven bij Intune om het nalevingsbeleid voor apparaten te ontvangen.
 
 ## <a name="device-compliance-dashboard"></a>Dashboard voor apparaatnaleving
@@ -46,7 +46,7 @@ In het **dashboard voor apparaatnaleving** kunt u de status van het nalevingsbel
 
 -   Apparaatnaleving per instelling
 
-![Dashboard voor apparaatnaleving](./media/idc-1.png)
+![Afbeelding met het dashboard voor apparaatnaleving](./media/idc-1.png)
 
 U kunt ook de specifieke nalevingsbeleidsregels en -instellingen bekijken die van toepassing zijn op een bepaald apparaat en de laatste nalevingsstatus voor elk van deze instellingen op het apparaat weergeven.
 
@@ -68,22 +68,22 @@ Dit is een ringdiagram met de cumulatieve nalevingsstatus voor alle bij Intune i
 
     -   **Fout**: het apparaat kan niet communiceren met Intune en Azure AD en heeft een foutbericht met de reden ontvangen.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Apparaten die zijn ingeschreven bij Intune, maar waarop geen nalevingsbeleid voor apparaten is gericht, worden in dit rapport opgenomen onder de bucket **Compatibel**.
 
 #### <a name="drill-down-option"></a>Inzoomoptie
 
 Als u in het **dashboard voor apparaatnaleving** klikt op de tegel Apparaatnaleving, kunt u inzoomen op een specifieke **nalevingsstatus**, **e-mailalias van de gebruiker**, **apparaatmodel** en **locatie**  voor elk apparaat waarop het nalevingsbeleid voor apparaten is gericht.
 
-![Inzoomen in het dashboard voor apparaatnaleving](./media/idc-2.png)
+![Afbeelding ingezoomd op het dashboard voor apparaatnaleving](./media/idc-2.png)
 
 Als u meer informatie over een specifieke gebruiker nodig hebt, kunt u filteren in het rapport Apparaatnalevingsgrafiek door de e-mailalias van de gebruiker in te voeren.
 
-![Specifieke gebruiker in het dashboard voor apparaatnaleving](./media/idc-3.png)
+![Afbeelding met een gebruiker in het dashboard voor apparaatnaleving](./media/idc-3.png)
 
 U kunt ook op de afwijkende nalevingsstatus in de Apparaatnalevingsgrafiek klikken voor meer informatie over statussen van de gebruiker met betrekking tot het nalevingsbeleid.
 
-![Verschillende statussen in het dashboard voor apparaatnaleving](./media/idc-4.png)
+![Afbeelding met verschillende statussen in het dashboard voor apparaatnaleving](./media/idc-4.png)
 
 #### <a name="filter"></a>Filter
 
@@ -99,7 +99,7 @@ Als u op de **knop Filteren** klikt, wordt het uitvoegfilter geopend met de volg
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -121,41 +121,22 @@ Als u op de **knop Bijwerken** klikt, wordt het uitvoegfilter gesloten en worden
 
 ##### <a name="device-details"></a>Apparaatgegevens
 
-Wanneer u op een apparaat klikt, wordt de **blade Apparaten** geopend met het geselecteerde apparaat. Deze blade biedt gedetailleerde informatie over de nalevingsbeleidsinstelling die op het apparaat is toegepast.
-
-![Dashboard voor apparaatnaleving](./media/idc-6.png)
+Als u op een apparaat klikt, wordt het deelvenster **Apparaten** geopend, met dat apparaat geselecteerd. Dit biedt meer informatie over de beleidsinstelling voor apparaatnaleving die op dat apparaat wordt toegepast.
 
 Wanneer u op het nalevingsbeleid voor apparaten zelf klikt, ziet u de naam van het nalevingsbeleid waaruit de nalevingsinstelling afkomstig waarop de beheerder zich richt.
 
-![Naam van de instelling voor apparaatnaleving](./media/idc-7.png)
-
-## <a name="policy-compliance-report"></a>Rapport beleidsnaleving
+### <a name="per-policy-device-compliance-report"></a>Rapport apparaatnaleving per beleid
 
 Dit rapport biedt een weergave per nalevingsbeleid en het totale aantal apparaten in elke nalevingsstatus. De tegel **Beleidsnaleving** is beschikbaar vanuit het **Dashboard voor apparaatnaleving**. Hierin worden alle beleidsregels die zijn gemaakt door de beheerder, de platforms waarop het beleid wordt toegepast, het aantal compatibele apparaten en het aantal niet-compatibele apparaten weergegeven.
 
-![Rapport apparaatnaleving per beleid](./media/idc-8.png)
+![Afbeelding met het rapport voor apparaatnaleving per beleid](./media/idc-8.png)
 
 Als u op de tegel Beleidsnaleving klikt, en vervolgens klikt op een van de nalevingsbeleidsregels voor apparaten, ziet u de **nalevingsstatus**, het **e-mailalias van de gebruiker**, het **apparaatmodel** en de **locatie** voor elk apparaat waarop dat nalevingsbeleid voor apparaten is gericht.
 
-![Tegel Beleidsnaleving](./media/idc-9.png)
-
 ## <a name="setting-compliance-report"></a>Rapport nalevingsinstellingen
 
-Met dit rapport kunt u per nalevingsinstelling het totale aantal apparaten in elke nalevingsstatus bekijken. De tegel **Naleving van instelling** is beschikbaar vanuit het **dashboard voor apparaatnaleving**. Hierin worden alle nalevingsbeleidsinstellingen voor apparaten van alle nalevingsbeleidsregels voor apparaten die door de beheerder zijn gemaakt, de platforms waarop de beleidsinstellingen zijn toegepast en het aantal niet-compatibele apparaten weergegeven.
+Met dit rapport kunt u per nalevingsinstelling het totale aantal apparaten in elke nalevingsstatus bekijken. De tegel **Naleving van instellingen** is beschikbaar vanuit het **dashboard voor apparaatnaleving**. Hierin worden alle nalevingsbeleidsinstellingen voor apparaten van alle nalevingsbeleidsregels voor apparaten die door de beheerder zijn gemaakt, de platforms waarop de beleidsinstellingen zijn toegepast en het aantal niet-compatibele apparaten weergegeven.
 
-![Rapport apparaatnaleving per instelling](./media/idc-10.png)
+![Afbeelding met het rapport voor apparaatnaleving per instelling](./media/idc-10.png)
 
 Als u op de tegel Naleving van instelling klikt, en vervolgens klikt op een van de nalevingsbeleidsinstellingen voor apparaten, ziet u de **nalevingsstatus**, het **e-mailalias van de gebruiker**, het **apparaatmodel** en de **locatie** voor elk apparaat waarop die nalevingsbeleidsinstelling voor apparaten is gericht.
-
-![Tegel Naleving van instelling](./media/idc-11.png)
-
-## <a name="threat-agent-status-report"></a>Statusrapport van de bedreigingsagent
-
-In dit rapport kunt u de status van de Windows Defender-agent bekijken. Wanneer u een rapport voor het verzamelen van de status gebruikt in **Apparaatcompatibiliteit**, worden apparaten weergegeven waarvoor een of meer van de volgende acties moeten worden uitgevoerd:
-- De handtekening bijwerken
-- Opnieuw opstarten
-- Handmatige interventie
-- Volledige scan
-- Interventie die is vereist voor andere agentstatussen
-
-In een gedetailleerd rapport voor elke statuscategorie worden de afzonderlijke pc's vermeld waarvoor aandacht is vereist of die als **schoon** zijn gerapporteerd.

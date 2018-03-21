@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Een certificaatprofiel configureren voor uw apparaten in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze verbindingen verifiëren door certificaten te gebruiken. Wanneer u certificaten gebruikt, hoeft u geen gebruikersnamen en wachtwoorden op te geven om verbindingen te verifiëren. 
+Wanneer u gebruikers toegang verleent tot bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel, kunt u deze verbindingen verifiëren door certificaten te gebruiken. Wanneer u certificaten gebruikt, hoeft u geen gebruikersnamen en wachtwoorden op te geven om verbindingen te verifiëren.
 
 Met Intune kunt u deze certificaten toewijzen aan apparaten die u beheert. Intune ondersteunt het toewijzen en beheren van de volgende typen certificaten:
 
@@ -85,10 +85,13 @@ U importeert dit certificaat wanneer u een vertrouwd certificaatprofiel instelt.
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Stap 3: vertrouwde certificaatprofielen maken
 Maak een profiel voor een vertrouwd certificaat voordat u een SCEP- of PKCS-certificaatprofiel kunt maken. Voor elk apparaatplatform is een vertrouwd certificaatprofiel en een SCEP- of PKCS-profiel vereist. De stappen voor het maken van vertrouwde certificaten zijn voor elk apparaatplatform ongeveer gelijk.
 
-1. In de [Azure-portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
-2. In **Microsoft Intune** selecteert u **Apparaatconfiguratie** en vervolgens **Profielen**. En selecteer dan **Profiel maken**.
-3. Voer een **naam** en een **beschrijving** in voor het vertrouwde certificaatprofiel.
-4. Selecteer het apparaatplatform voor dit vertrouwde certificaat voor het **Platform**: 
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
+2. Kies in het deelvenster **Apparaatconfiguratie** achtereenvolgens **Beheren** > **Profielen**.
+3. Kies **Profiel maken** in het deelvenster Profielen.
+4. Voer in het deelvenster **Profiel maken** een **naam** en een **beschrijving** in voor het vertrouwde certificaatprofiel.
+5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit vertrouwde certificaat. Op dit moment kunt u een van de volgende platformen kiezen voor certificaatinstellingen:
 
     - **Android**
     - **Android for Work**
@@ -98,15 +101,13 @@ Maak een profiel voor een vertrouwd certificaat voordat u een SCEP- of PKCS-cert
     - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
 
-5. Kies voor het **Profieltype** de optie **Vertrouwd certificaat**. Blader naar het certificaat (*CertificaatNaam*.cer) dat u eerder hebt opgeslagen (stap 2).
-
-    Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:  
-
+6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Vertrouwd certificaat**.
+7. Blader naar het certificaat dat u in taak 1 hebt opgeslagen, en klik vervolgens op **OK**.
+8. Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:
     - **Certificaatarchief van de computer – basis**
     - **Certificaatarchief van de computer – tijdelijk**
     - **Certificaatarchief van de gebruiker – tijdelijk**
-
-6. Selecteer **OK** om uw wijzigingen op te slaan en selecteer **Maken** om uw nieuwe profiel op te slaan.
+8. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven in de lijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
 
