@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -60,7 +60,7 @@ Verschillende platforms hebben de volgende eisen om inschrijving mogelijk te mak
 - **iOS** - (vereist) [Zorg voor een Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md) en schakel daarna [inschrijving voor iOS-apparaten van het bedrijf in](ios-enroll.md) (optioneel).
 - **Android** - (optioneel) [Schakel Android-werkprofielen in](android-enroll.md)
 - **Windows** - (optioneel) Schakel [Automatische inschrijving](windows-enroll.md) of [bulkinschrijving](windows-bulk-enroll.md) in
-- **macOS** - Geen vereisten
+- **macOS** - (vereist) [Haal een Apple MDM-pushcertificaat op](apple-mdm-push-certificate-get.md).
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat

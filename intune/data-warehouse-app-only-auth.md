@@ -1,7 +1,7 @@
 ---
 title: Intune Datawarehouse-verificatie enkel voor toepassing
-titlesuffix: Azure portal
-description: In dit onderwerp wordt Datawarehouse-verificatie enkel voor toepassing beschreven
+titleSuffix: Microsoft Intune
+description: In dit onderwerp wordt Datawarehouse-verificatie enkel voor toepassing beschreven.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a4964293b062f42becc34b14fe44cb827c44360
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: e926d3d9e9dfbf6025fb36fd54e64f28b662fc89
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Datawarehouse-verificatie enkel voor toepassing
 

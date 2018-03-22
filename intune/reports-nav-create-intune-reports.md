@@ -15,11 +15,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 328d8b3787bcef20a1d4949eba427cd8737edafe
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>Het Intune-datawarehouse gebruiken
 
@@ -37,7 +37,7 @@ Het datawarehouse biedt u toegang tot meer informatie over uw mobiele omgeving d
   -  Een gegevensmodel waarbij de OData-standaard wordt gebruikt
 
 > [!Note]
-> Als u een hybride beheer van mobiele apparaten (MDM) met System Center Configuration Manager en Microsoft Intune gebruikt, wilt u uw gegevens ophalen uit SCCM. Het Intune-datawarehouse bevat alleen Intune-gegevens. U kunt een SCCM Power BI-dashboard gebruiken voor uw aangepaste rapporten. Zie voor meer informatie "[Introductie van de Power BI-oplossingssjabloon voor System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" en "[Een Power BI-rapport en -dashboard maken](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)."
+> Als u een hybride beheer van mobiele apparaten (MDM) met System Center Configuration Manager en Microsoft Intune gebruikt, wilt u uw gegevens ophalen uit SCCM. Het Intune-datawarehouse bevat alleen Intune-gegevens. U kunt een SCCM Power BI-dashboard gebruiken voor uw aangepaste rapporten. Zie [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) (Introductie van de Power BI-oplossingssjabloon voor System Center Configuration Manager) en [Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) (Power BI-inhoud voor Dynamics 365) voor meer informatie.
 
 
 > [!Important]  

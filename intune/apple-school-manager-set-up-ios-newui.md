@@ -1,7 +1,7 @@
 ---
 title: Inschrijving met het Apple School Manager Program voor iOS-apparaten instellen
-titlesuffix: Azure portal
-description: Meer informatie over het instellen van inschrijving voor het Apple School Manager-programma voor zakelijke iOS-apparaten met Intune (nieuwe gebruikersinterface)
+titleSuffix: Microsoft Intune
+description: Meer informatie over het instellen van inschrijving voor het Apple School Manager-programma voor zakelijke iOS-apparaten met Intune (nieuwe gebruikersinterface).
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c9ef9355299a18833999c1c4eee941a0b6c68de
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 

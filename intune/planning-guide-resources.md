@@ -1,11 +1,12 @@
 ---
 title: Sjablonen en resources voor het plannen en ontwerpen van een Intune-implementatie
-description: Koppelingen naar planningssjablonen en aanvullende Intune-informatie die nuttig kan zijn tijdens de planning en het toepassen van de Intune-implementatie.
+titlesuffix: Microsoft Intune
+description: Koppelingen naar planningssjablonen en aanvullende Microsoft Intune-informatie die nuttig kan zijn tijdens de planning en het toepassen van de Microsoft Intune-implementatie.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +14,11 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Aanvullende resources voor het plannen van uw Intune-implementatie
 
@@ -50,7 +51,7 @@ Neem de volgende resources door voor aanvullende informatie die nuttig kan zijn 
 
 -   [Intune-blog](https://blogs.technet.microsoft.com/enterprisemobility/): berichten waarin wordt beschreven hoe Intune past in het grotere geheel van Enterprise Mobility.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx): informatie over de methode van Microsoft met betrekking tot de beveiliging, privacy, naleving en transparantie in alle Microsoft-cloudproducten en -services.
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter): informatie over de methode van Microsoft met betrekking tot de beveiliging, privacy, naleving en transparantie in alle Microsoft-cloudproducten en -services.
 
 -   [Intune UserVoice](http://microsoftintune.uservoice.com/): wilt u een functie aanvragen of met andere klanten voor functies stemmen? Feedback geven over Intune via Uservoice. Wij luisteren naar u.
 

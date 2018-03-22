@@ -1,11 +1,12 @@
 ---
-title: Apparaten - Intune-datawarehouse | Microsoft Docs
+title: Apparaten - Intune-datawarehouse
+titlesuffix: Microsoft Intune
 description: Naslagonderwerp voor de categorie Devices van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f304e07de7ceefb09152aeb30d113c378e716d38
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d8a7aeba4170bf6640083b95562d644299693f31
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 

@@ -5,7 +5,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -30,8 +30,6 @@ Dit hulpprogramma is een Windows-opdrachtregelprogramma dat wordt uitgevoerd in 
 
 
 Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool) voordat u het hulpprogramma uitvoert. Als u dit hulpprogramma wilt downloaden, gaat u naar [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) op GitHub.
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Voldoen aan de vereisten voor het gebruik van App Wrapping Tool
 
@@ -51,6 +49,8 @@ Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#
     > In bepaalde gevallen kan de 32-bits versie van Java leiden tot geheugenproblemen. Het is verstandig de 64-bits versie te installeren.
 
 - Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
+
+- (Optioneel) Schakel Multidex in binnen de invoer-app. Soms bereikt een app de Dalvik Executable-groottelimiet (DEX) als gevolg van de Intune MAM SDK-klassen die tijdens het verpakken worden toegevoegd. DEX-bestanden maken deel uit van de compilatie van een Android-app. In dit scenario wordt het aanbevolen Multidex binnen de app zelf in te schakelen. In bepaalde organisaties vereist dit mogelijk samenwerking met de persoon die de app compileert. 
 
 ## <a name="install-the-app-wrapping-tool"></a>De App Wrapping Tool installeren
 
@@ -159,6 +159,7 @@ Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten 
 Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligingsbeleid voor apps in Intune willen vereisen voor gebruik op een apparaat van een eindgebruiker.
 
 1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+
 > [!NOTE] 
 > De term client-id die is gekoppeld aan uw app is hetzelfde als de term toepassings-id van de Azure Portal die aan uw app is gekoppeld. 
 * Voor het inschakelen van eenmalige aanmelding is Common ADAL configuration #2 vereist.

@@ -1,11 +1,12 @@
 ---
 title: UI-updates voor Intune-apps voor eindgebruikers
-description: Ontdek wat is gewijzigd in de gebruikersinterface voor apps op eindgebruikersapparaten met Intune.
+titlesuffix: Microsoft Intune
+description: Ontdek wat is gewijzigd in de gebruikersinterface voor apps op eindgebruikersapparaten met Microsoft Intune.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +15,16 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
-Lees welke updates we hebben aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Dit kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
-## <a name="week-of-december-11-2017"></a>Week van 11 december 2017
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Eindgebruikersberichten voor accounts <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Gebruikers van de bedrijfsportal-website worden geblokkeerd voor het uitvoeren van acties waarvoor schrijftoegang tot uw tenant is vereist. Ze krijgen een foutbericht te zien waarin wordt uitgelegd dat hun account in onderhoud is. Dergelijke wijzigingen worden binnenkort ook toegepast op de bedrijfsportal-apps voor Android, iOS, macOS en Windows.
-
-![Foutbericht dat wordt weergegeven tijdens het verplaatsen van een account](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
 
@@ -189,7 +184,7 @@ Hieronder ziet u de vorige aanmeldingservaring, de nieuwe aanmeldingservaring me
 
 __Vorige aanmeldingservaring__
 
-![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Hieronder staat de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. De knop Aanmelden wordt eronder weergegeven. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![Nadat de gebruiker op Aanmelden heeft getikt, vult de gebruiker de referenties in op deze pagina waarop wordt gevraagd om het e-mailadres en wachtwoord van de gebruiker. Ook worden verschillende manieren gegeven om problemen met wachtwoorden op te lossen.](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -213,7 +208,7 @@ Tik op de koppeling __Aanmelding vanaf een ander apparaat__.
 
 ![U vindt hier instructies om naar de pagina aka.ms/devicelogin te gaan met een unieke wachtwoordcode vanaf uw werkcomputer en de code te gebruiken om u aan te melden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Open een browser en ga naar [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Start een browser en ga naar [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![Een afbeelding van de browser van de gebruiker op de werkcomputer in plaats van de bedrijfsportal-app. Op de weergegeven pagina Apparaataanmelding wordt de gebruiker gevraagd om de code in de bedrijfsportal-app is ontvangen.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ De bedrijfsportal-app begint met aanmelden.
 
 ## <a name="june-2017"></a>Juni 2017
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>De Intune-bedrijfsportal-app voor Android heeft een nieuwe interface voor app-beveiligingsbeleid <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>De bedrijfsportal-app voor Android heeft een nieuwe eindgebruikerservaring voor app-beveiligingsbeleid
 Op basis van feedback van klanten hebben we de Intune-bedrijfsportal-app voor Android aangepast en de knop **Toegang verkrijgen tot bedrijfsinhoud** toegevoegd. De reden hiervoor is dat eindgebruikers dan niet onnodig het registratieproces moeten doorlopen wanneer ze alleen toegang nodig hebben tot apps die ondersteuning bieden voor app-beveiligingsbeleid, een functie van Intune Mobile Application Management.
 
 De gebruiker hoeft alleen maar op de knop **Toegang verkrijgen tot bedrijfsinhoud** te tikken in plaats van het apparaat eerst te registreren.
@@ -259,9 +254,9 @@ Deze update is alleen zichtbaar op apparaten met Windows 10 Jubileumupdate (buil
 
 ![Een afbeelding van de landingspagina van de Intune-bedrijfsportal-app voor Windows 10, met een statusbericht in het midden dat aangeeft dat het apparaat nog niet is ingesteld voor zakelijk gebruik en dat de gebruiker het bericht moet selecteren om hiermee te beginnen.](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![Een afbeelding van de configuratiepagina van de Intune-bedrijfsportal-app voor Windows 10, met een waarschuwing dat de gebruiker een bedrijfsaccount moet toevoegen aan dit apparaat en dat het apparaat dan kan worden ingeschreven voor beheer.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![Een afbeelding van de configuratiepagina van de bedrijfsportal-app voor Windows 10, met een waarschuwing dat de gebruiker een bedrijfsaccount moet toevoegen aan dit apparaat en dat het apparaat dan kan worden ingeschreven voor beheer.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Een afbeelding van de Intune-bedrijfsportal-app voor Windows 10, met de instructie om een bedrijfsaccount toe te voegen, wat kan door in de app Instellingen de optie Verbinding maken te selecteren. Als dat is gebeurd, wordt op het scherm uitgelegd dat ze terug moeten gaan naar de Intune-bedrijfsportal-app om het inschrijven te voltooien.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Een afbeelding van de bedrijfsportal-app voor Windows 10, met de instructie om een bedrijfsaccount toe te voegen, wat kan door in de app Instellingen de optie Verbinding maken te selecteren. Als dat is gebeurd, wordt op het scherm uitgelegd dat ze terug moeten gaan naar de Intune-bedrijfsportal-app om het inschrijven te voltooien.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![Afbeelding van de Intune-bedrijfsportal-app voor Windows 10 met het scherm Registreren voor beheer, met een bericht dat het inschrijven is voltooid en dat de gebruiker nu op de knop Volgende moet tikken om door te gaan.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -313,7 +308,7 @@ Zowel de Android- als iOS-versie van de Managed Browser heeft een nieuw pictogra
 
 De pictogrammen voor de Android-, iOS- en Windows-versies van de app in de bedrijfsportal worden ook vernieuwd voor meer consistentie met de andere apps in EM+S. Deze pictogrammen worden in de periode van april tot eind mei geleidelijk in gebruik genomen op de verschillende platforms.
 
-### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Voortgangsindicator voor aanmelden bij Android-bedrijfsportal <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Voortgangsindicator voor aanmelden in Android-bedrijfsportal <!--953374-->
 
 De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het aanmelden wanneer de gebruiker de app opent of hervat. De indicator geeft de verschillende statussen weer, beginnend bij 'Verbinden...', gevolgd door 'Aanmelden...' en 'Beveiligingseisen controleren...', voordat de gebruiker de app kan gebruiken.
 
@@ -322,13 +317,13 @@ De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 > [!Note]
 > De onderstaande afbeeldingen zijn voorbeelden en het aangekondigde product kan verschillen van de weergegeven versies.
 
+### <a name="ui-iwp"></a>Nieuwe update van de gebruikerservaring voor de bedrijfsportalwebsite <!--2000968-->
+
+In april wordt een nieuwe ervaring voor de bedrijfsportalwebsite geïntroduceerd, met UI-updates, gestroomlijnde werkstromen en toegankelijkheidsverbeteringen. Deze omvat klantgestuurde verbeteringen zoals het delen van apps en verbeterde algehele prestaties voor een gebruikersvriendelijker ervaring.
+
+Er is een aantal nieuwe functies toegevoegd op basis van feedback van klanten zoals u. Hiermee worden de bestaande functionaliteit en bruikbaarheid aanzienlijk verbeterd:
+
+-   UI-verbeteringen in de gehele website
+-   Mogelijkheid om directe koppelingen naar apps te delen
+- Verbeterde prestaties voor grote app-catalogi
+
+U hoeft niets te doen om u op deze wijziging voor te bereiden. Wij brengen u op de hoogte wanneer de bijgewerkte bedrijfsportalwebsite voor u beschikbaar komt. U moet wellicht uw documentatie voor eindgebruikers met bijgewerkte schermafbeeldingen updaten. Ook moet u mogelijk documentatie voor de bedrijfsportal-app op iOS updaten, omdat de website de sectie **Apps** van de iOS-app mogelijk maakt.
+
+|Bijgewerkt|Vorige|
+|---|---|
+|![Op de bijgewerkte apparaatpagina wordt het apparaat boven de apparaatgegevens weergegeven, niet meer in een pop-up boven de volledige lijst.](./media/iwp-device-after-1803.png)|![De vorige versie van de apparaatpagina.](./media/iwp-device-before-1803.png)|
+|![Op de bijgewerkte apparaatinstallatiepagina wordt de app weergegeven boven een beschrijving en diverse installatiegegevens, waaronder publicatiedatum, versie en type app.](./media/iwp-app-install-after-1803.png)|![De vorige versie van de apparaatinstallatiepagina.](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!--1412866-->
 
 We zullen een grote update uitbrengen van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update heeft een volledig nieuw visueel ontwerp, waaronder een gemoderniseerde uitstraling met verbeterde bruikbaarheid en toegankelijkheid. De huidige functionaliteit van de iOS-bedrijfsportal-app blijft behouden.
 
-We bieden een voorlopige versie van de bijgewerkte bedrijfsportal-app voor iOS via het Apple TestFlight-programma. U kunt deze versie gebruiken en uw feedback geven. Meld u aan bij https://aka.ms/intune_ios_cp_testflight voor toegang tot TestFlight.
+We bieden een voorlopige versie van de bijgewerkte bedrijfsportal-app voor iOS via het Apple TestFlight-programma. U kunt deze versie gebruiken en uw feedback geven. Registreer u bij https://aka.ms/intune_ios_cp_testflight voor TestFlight-toegang. Zie https://aka.ms/iOS_companyportal_update voor de meest recente informatie over deze update.
 
 ![teaserafbeeldingen voor de nieuwe iOS-bedrijfsportal-app](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __Updates voor aanbevolen apps__ Er is een speciale pagina aan de site toegevoeg
 
 ### <a name="see-also"></a>Zie ook
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Roadmap voor cloudplatform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Roadmap voor cloudplatform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Wat is er nieuw in Intune?](https://docs.microsoft.com/intune/whats-new)

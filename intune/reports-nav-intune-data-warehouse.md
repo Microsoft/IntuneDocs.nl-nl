@@ -1,11 +1,12 @@
 ---
-title: Intune-datawarehouse-API | Microsoft Docs
-description: U kunt de API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden.
+title: Intune-datawarehouse-API
+titlesuffix: Microsoft Intune
+description: U kunt de Intune-datawarehouse-API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5c12ea4212bf7276b2cb0a4b09ecff648d67583
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7291e6f0d6094801383ba7fd606c0238e85ba01f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune-datawarehouse-API
 
@@ -65,4 +66,4 @@ Lees de [Verificatiescenario's voor Azure AD](https://docs.microsoft.com/azure/a
 
 Ga naar [odata.org](http://www.odata.org) voor informatie over OData.
   
-U kunt versie 4.0 van de OData-standaard lezen op [OData Version 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Controleer de OData-versie 4.0 standaard op [OData-versie 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

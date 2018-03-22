@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53f0d46fa1a9452b7a0cc1e243373f21556f5fb6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -1311,7 +1311,7 @@ public interface MAMAppConfig {
 App-configuratie voegt een nieuw type melding toe:
 * **REFRESH_APP_CONFIG**: deze melding wordt verzonden in een `MAMUserNotification` om de app te informeren dat er nieuwe configuratiegegevens voor de app beschikbaar zijn.
 
-Zie [Graph API Reference MAM Targeted Config]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie over de mogelijkheden van de Graph API met betrekking tot de beoogde MAM-configuratiewaarden. <br>
+Zie [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview) (Naslaginformatie over Graph API) voor meer informatie over de mogelijkheden van Graph API. <br>
 
 Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in Android, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android) (App-configuratiebeleid van Microsoft Intune voor Android gebruiken).
 

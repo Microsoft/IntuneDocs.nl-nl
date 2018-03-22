@@ -15,13 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
-ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
+ms.openlocfilehash: dc65dd5ef170bff4cb1d1c126fa1549b7a357276
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
+
+> [!IMPORTANT]
+De inhoud op deze pagina is nu grotendeels verouderd, omdat het Intune-app-beveiligingsbeleid volledig naar Azure Portal is gemigreerd. Lees meer informatie over het [Intune-app-beveiligingsbeleid voor Android in Azure Portal](https://docs.microsoft.com/intune/app-protection-policy-settings-android).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -84,7 +87,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 |------|------|------|
 | **Pincode is vereist voor toegang** | Kies **Ja** om een pincode te vereisen voor gebruik van deze app. De eerste keer dat de gebruiker de app uitvoert in een aan werk of school gerelateerde context, wordt de gebruiker gevraagd deze pincode in te stellen. Standaardwaarde = **Ja**.<br><br> Configureer de volgende instellingen voor pincodesterkte: <ul><li>**Aantal pogingen voordat pincode opnieuw wordt ingesteld**: geef het aantal pogingen voor de gebruiker op om de pincode in te voeren voordat de gebruik deze opnieuw moet instellen. Standaardwaarde = **5**.</li><li> **Eenvoudige pincode toestaan:** kies **Ja** als gebruikers eenvoudige pincodes mogen gebruiken, zoals 1234 of 1111. Kies **Nee** als ze geen eenvoudige tekenreeksen mogen gebruiken. Standaardwaarde = **Ja**. </li><li> **Lengte van de pincode:** geef het minimale aantal cijfers op waaruit een pincode moet bestaan. Standaardwaarde = **4**. </li><li> **Vingerafdruk in plaats van pincode toestaan (Android 6.0+)**: selecteer **Ja** als de gebruiker in plaats van een pincode [vingerafdrukverificatie](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) mag gebruiken voor toegang tot apps. Standaardwaarde = **Ja**.</li></ul> Op Android-apparaten kunt u gebruikers hun identiteit laten aantonen met behulp van [Android-vingerafdrukverificatie](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) in plaats van een pincode. Wanneer gebruikers deze app proberen te gebruiken via hun werk- of schoolaccount, moeten ze hun vingerafdruk in plaats van een pincode gebruiken. </li></ul>| Pincode vereisen: Ja <br><br> Pogingen om pincode opnieuw in te stellen: 5 <br><br> Eenvoudige pincode toestaan: Ja <br><br> Lengte pincode: 4 <br><br> Vingerafdruk toestaan: Ja |
 | **Bedrijfsreferenties vereisen voor toegang** | Kies **Ja** om te vereisen dat gebruikers zich aanmelden met hun werk- of schoolaccount in plaats van een pincode voor toegang tot apps. Als u deze waarde op **Ja** instelt, overschrijft dit de vereisten voor de pincode of Touch-ID.  | Nee |
-| **De uitvoering blokkeren van beheerde apps die op jailbroken of geroote apparaten worden uitgevoerd** |Kies **Ja** om te voorkomen dat deze app wordt uitgevoerd op jailbroken of geroote apparaten. De gebruiker kan deze app nog steeds gebruiken voor privétaken maar moet voor het openen van werk- of schoolgegevens in deze app een ander apparaat gebruiken. | Ja |
+| **Verhinderen dat beheerde apps op gekraakte of geroote apparaten worden uitgevoerd** |Kies **Ja** om te voorkomen dat deze app wordt uitgevoerd op jailbroken of geroote apparaten. De gebruiker kan deze app nog steeds gebruiken voor privétaken maar moet voor het openen van werk- of schoolgegevens in deze app een ander apparaat gebruiken. | Ja |
 | **Toegangsvereisten opnieuw controleren na (minuten)** | Configureer de volgende instellingen: <ul><li>**Time-out**: dit is het aantal minuten waarna de (eerder in het beleid gedefinieerde) toegangsvereisten opnieuw worden gecontroleerd. Wanneer een beheerder bijvoorbeeld invoeren van een pincode inschakelt in het beleid, moet een gebruiker die een MAM-app opent een pincode invoeren. Wanneer u deze instelling gebruikt, hoeft de gebruiker nog **30 minuten** (standaardwaarde) geen pincode in te voeren voor een MAM-app.</li><li>**Offline respijtperiode**: het aantal minuten dat MAM-apps offline kunnen worden uitgevoerd. Geef de tijd (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **720** minuten (12 uur). Nadat deze periode is verstreken, is gebruikersverificatie voor AAD vereist om de app te blijven uitvoeren.</li></ul>| Time-out: 30 <br><br> Offline: 720 |
 | **Offline interval (in dagen) voordat app-gegevens worden gewist** | Na dit aantal dagen (gedefinieerd door de beheerder) van offline uitvoeren, wordt selectief wissen door de app zelf uitgevoerd. Dit is dezelfde wisbewerking die door de beheerder kan worden gestart in de werkstroom MAM wissen. <br><br> | 90 dagen |
 | **Schermopname en Android Assistant blokkeren (Android 6.0+)** | Kies **Ja** om schermopnames en gebruik van de **Android Assistent**-functies van het apparaat te blokkeren bij gebruik van deze app. Als u **Ja** kiest, wordt ook de voorbeeldafbeelding van de app-schakelbaar vervaagd bij gebruik van deze app in combinatie met een werk- of schoolaccount. | Nee |

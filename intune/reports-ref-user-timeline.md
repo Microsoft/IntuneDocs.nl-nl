@@ -1,11 +1,12 @@
 ---
-title: Levensduur datawarehouse-gebruikersentiteiten | Microsoft Docs
-description: Het datawarehouse van Intune laat gebruikers in een tijdlijn zien.
+title: Levensduur datawarehouse-gebruikersentiteiten
+titlesuffix: Microsoft Intune
+description: Lees hoe het datawarehouse van Intune gebruikers in een tijdlijn laat zien.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +15,21 @@ ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Levensduur gebruikers weergeven in Intune-datawarehouse
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Levensduur gebruikers weergeven in het Microsoft Intune-datawarehouse
 
 De maand aan momentopnamen van gegevens die zijn opgeslagen in het datawarehouse van Intune kunt u gebruiken voor het beantwoorden van vragen over trends op basis van tijd. U kunt bijvoorbeeld kijken naar het aantal gebruikers dat gedurende een maand wordt toegevoegd. U kunt ook vragen naar het aantal gebruikers dat uit het systeem is verwijderd.
 
-Om die informatie te kunnen verschaffen, slaat het datawarehouse historische gegevens op. Op deze manier kan de levensduur van een entiteit worden bijgehouden. Het datawarehouse legt vast wanneer een entiteit wordt gemaakt, wanneer de status van een entiteit verandert en wanneer een entiteit wordt verwijderd. Omdat de geschiedenis wordt vastgelegd met dagelijkse momentopnamen van kwantitatieve metingen, kunt u een bepaalde dag met de vorige vergelijken, enzovoort.
+In het datawarehouse worden historische gegevens opgeslagen om dit type informatie te kunnen verschaffen. In het datawarehouse kan de levensduur van een entiteit worden bijgehouden. Bij wijzigingen in de status van een entiteit en bij het verwijderen van de entiteit wordt in het datawarehouse vastgelegd wanneer een entiteit is gemaakt. Omdat de geschiedenis wordt vastgelegd met dagelijkse momentopnamen van kwantitatieve metingen, kunt u een bepaalde dag met de vorige vergelijken, enzovoort.
 
 Werken met de levensduur van entiteiten kan verwarrend zijn omdat de status van uw entiteiten verandert. Dit betekent dat als u een momentopname op dag 30 bekijkt, er geen gebruikersrecord met een actieve status in de gegevens bestaat. Op dag 29-28 kan de entiteitsrecord een actieve status hebben. En vóór dag 28 bestond de gebruiker in het geheel niet.
 
-Het wordt mogelijk wat duidelijker als we de levensduur van een entiteit doorlopen.
+Dit scenario wordt mogelijk wat duidelijker bij het doorlopen van de levensduur van een entiteit.
 
 Als we ervan uitgaan dat een gebruiker, bijvoorbeeld **Jan de Vries**, een licentie krijgt toegewezen op 01-06-2017, bevat de tabel **Gebruiker** de volgende vermelding: 
  
@@ -75,5 +76,5 @@ Een persoon die alleen de dimensie-entiteiten wil zien die momenteel aanwezig zi
 
 ## <a name="next-steps"></a>Volgende stappen
 
- - Zie [Naslaginformatie voor huidige gebruikersentiteit](reports-ref-current-user.md) voor meer informatie meer over de entiteit **Huidige gebruiker**.
- - Zie [Naslaginformatie voor gebruikersentiteit](reports-ref-user.md) voor meer informatie meer over de entiteit **Gebruiker**.
+ - Zie [Naslaginformatie voor huidige gebruikersentiteit](reports-ref-current-user.md) voor meer informatie over de entiteit **Huidige gebruiker**.
+ - Zie [Naslaginformatie voor gebruikersentiteit](reports-ref-user.md) voor meer informatie over de entiteit **Gebruiker**.
