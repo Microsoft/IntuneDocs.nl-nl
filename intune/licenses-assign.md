@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Licenties toewijzen aan gebruikers zodat ze kunnen apparaten inschrijven bij Intune
 
@@ -58,6 +58,17 @@ Zie [Overzicht van Schoolgegevens synchroniseren](https://support.office.com/art
 * Elke **gebruiker** aan wie u een gebruikerslicentie voor software toewijst, kan de online services en bijbehorende software (inclusief System Center-software) openen en gebruiken voor het beheren van toepassingen en maximaal 15 apparaten.
 * Elke **apparaat** waaraan u een apparaatlicentie voor software toewijst, kan de online services en bijbehorende software (inclusief System Center-software) openen en gebruiken voor gebruik door een oneindig aantal gebruikers.
 * Als een apparaat wordt gebruikt door meer dan een gebruiker, is voor elke gebruiker een apparaatlicentie voor de software vereist of is voor alle gebruikers een gebruikerslicentie voor software vereist.
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Inzicht in het type licenties dat u hebt aangeschaft
+
+Hoe u Intune hebt aangeschaft, bepaalt de gegevens van uw abonnementen:
+
+- Als u Intune via een Enterprise Agreement hebt aangeschaft, kunt u uw abonnementsgegevens vinden in de portal voor volumelicenties onder **Abonnementen**.
+- Als u Intune via een Cloud Solution Provider hebt aangeschaft, kunt u contact opnemen met uw reseller.
+- Als u Intune met een CC# of factuur hebt aangeschaft, zijn uw licenties op gebruikers gebaseerd.
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>PowerShell gebruiken om EMS-gebruikerslicenties selectief te beheren
 In organisaties die gebruikmaken van Enterprise Mobility + Security (voorheen Enterprise Mobility Suite) van Microsoft, werken mogelijk gebruikers die alleen Azure Active Directory Premium of Intune-services in het EMS-pakket nodig hebben. Met [Azure Active Directory PowerShell-cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) kunt u één service of een subset van services toewijzen.

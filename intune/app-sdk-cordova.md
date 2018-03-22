@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune App SDK Cordova-invoegtoepassing
-description: 
+description: De Intune App SDK Cordova-invoegtoepassing biedt ontwikkelaars de mogelijkheid om beveiligingsfuncties voor de Intune-app en -gegevens te integreren in hun op Cordova gebaseerde app.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova-invoegtoepassing
 
@@ -32,7 +32,7 @@ De [Intune App SDK Cordova-invoegtoepassing](/intune-classic/deploy-use/protect-
 > [!NOTE]
 > U kunt desgewenst eerst het artikel [Aan de slag met Intune App SDK](app-sdk-get-started.md) lezen, waarin wordt uitgelegd hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
 
-U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. Als u de invoegtoepassing in uw iOS- of Android-app hebt gemaakt, kan de Microsoft Intune-beheerder beveiligingsbeleid voor Intune-apps implementeren dat bestaat uit een diverse functies voor gegevensbeveiliging. De invoegtoepassing is zo ontwikkeld dat de meeste stappen automatisch worden uitgevoerd in het bouwproces voor Cordova. Dat zou het mogelijk moeten maken om uw app snel in te schakelen voor app-beveiliging van Intune. Volg de onderstaande stappen op basis van uw doelplatform om aan de slag te gaan.
+U zult merken dat u SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. Als u de invoegtoepassing in uw iOS- of Android-app hebt gemaakt, kan de Microsoft Intune-beheerder beveiligingsbeleid voor Intune-apps implementeren dat bestaat uit een diverse functies voor gegevensbeveiliging. De invoegtoepassing is zo ontwikkeld dat de meeste stappen automatisch worden uitgevoerd in het bouwproces voor Cordova. Dat zou het mogelijk moeten maken om uw app snel in te schakelen voor app-beveiliging van Intune. Voer de volgende stappen uit die zijn gebaseerd op uw doelplatform, om aan de slag te gaan.
 
 ## <a name="supported-platforms"></a>Ondersteunde platformen
 
@@ -118,7 +118,7 @@ De invoegtoepassing herkent automatisch ondertekeningsgegevens die u op de volge
 
 Zie [de Cordova Gradle-ondertekeningsgegevens](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) voor meer informatie over de verwachte indeling.
 
-Er wordt momenteel geen ondersteuning geboden voor de mogelijkheid om ondertekeningsgegevens te bieden in `build.json` of op willekeurige locaties die via parameters aan de Cordova-build zijn geleverd.
+Intune biedt momenteel geen ondersteuning voor de mogelijkheid om ondertekeningsgegevens te bieden in `build.json` of op willekeurige locaties die via parameters aan de Cordova-build zijn geleverd.
 
 ## <a name="debugging-from-visual-studio"></a>Foutopsporing via Visual Studio
 
@@ -129,8 +129,8 @@ Nadat u de app de eerste keer hebt gestart, verschijnt een dialoogvenster met de
 ### <a name="android"></a>Android
 
 * Ondersteuning voor MultiDex is onvolledig.
-* De app moet een `minSdkVersion` van 14 en een `targetSdkVersion` van 24 of lager hebben. Apps die bedoeld zijn voor API 25, worden momenteel niet ondersteund
-* Apps die zijn ondertekend met het V2-handtekeningschema, kunnen niet opnieuw worden ondertekend. Als met V2 ondertekende apps zijn ingepakt door de invoegtoepassing, is de ingepakte .apk van de uitvoer niet ondertekend.
+* De app moet een `minSdkVersion` van 14 en een `targetSdkVersion` van 24 of lager hebben. Apps die bedoeld zijn voor API 25, worden momenteel niet door Intune ondersteund
+* Apps die zijn ondertekend met het V2-handtekeningschema, kunnen niet opnieuw door Intune worden ondertekend. Als met V2 ondertekende apps zijn ingepakt door de invoegtoepassing, is de ingepakte .apk van de uitvoer niet ondertekend.
 *
   * U kunt de standaard-V2-ondertekening van Cordova uitschakelen door het volgende aan het bestand `build-extras.gradle` toe te voegen:
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
@@ -70,7 +70,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>U kunt als volgt apparaten verwijderen in de Azure Active Directory-portal:
 
-1.  Blader naar [http://aka.ms/accessaad](http://aka.ms/accessaad) of kies **Beheer** &gt; **Azure AD** op [https://portal.office.com](https://portal.office.com).
+1.  Ga naar [http://aka.ms/accessaad](http://aka.ms/accessaad) of kies **Beheer** &gt; **Azure AD** vanaf [https://portal.office.com](https://portal.office.com).
 
 2.  Meld u aan met uw organisatie-id via de koppeling aan de linkerkant van de pagina.
 
@@ -99,7 +99,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 
 1.  Verwijder de Intune-bedrijfsportal-app van het apparaat.
 
-2.  Open de browser op het apparaat, ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)en meld u aan.
+2.  Open de browser op het apparaat, ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en meld u aan.
 
 3.  Als de gebruiker zich niet kan aanmelden, vraagt u deze om zich bij een ander netwerk aan te melden.
 
@@ -165,8 +165,8 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 
 |Foutbericht|Probleem|Oplossing|
 |---|---|---|
-|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang gegeven voor het gebruik van deze app. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het gebruikersaccount de benodigde licentie niet heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br><br>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign.md) voor meer informatie.
-|**De IT-beheerder moet de MDM-instantie instellen**<br>Het lijkt erop dat uw IT-beheerder geen MDM-instantie heeft ingesteld. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|De Mobile Device Management-instantie is niet gedefinieerd in Intune.|De Mobile Device Management-instantie is niet aangewezen in Intune. Informatie over het [instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set.md).|
+|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang gegeven voor het gebruik van deze app. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het gebruikersaccount de benodigde licentie niet heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br><br>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign) voor meer informatie.
+|**De IT-beheerder moet de MDM-instantie instellen**<br>Het lijkt erop dat uw IT-beheerder geen MDM-instantie heeft ingesteld. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|De Mobile Device Management-instantie is niet gedefinieerd in Intune.|De Mobile Device Management-instantie is niet aangewezen in Intune. Informatie over het [instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Apparaten kunnen niet inchecken bij de Intune-service en worden in de Intune-beheerconsole weergegeven als Niet in orde
@@ -332,7 +332,7 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
 
-3.  Navigeer naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het profiel te installeren als u daarom wordt gevraagd.
+3.  Ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het gevraagde profiel te installeren.
 
 4.  Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
 
@@ -377,7 +377,7 @@ Binnenkort worden voorbeelden toegevoegd met betrekking tot de informatie waarna
 
 
 ### <a name="other-ios-enrollment-errors"></a>iOS-registratiefouten
-In de gebruikersdocumentatie van het apparaat vindt u in [Er worden fouten weergegeven tijdens het registreren van het apparaat in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) een andere lijst met andere iOS-registratiefouten.
+U vindt een lijst met iOS-inschrijvingsfouten in onze documentatie in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Problemen met iOS-apparaatinschrijving in Microsoft Intune oplossen).
 
 ## <a name="pc-issues"></a>Pc-problemen
 

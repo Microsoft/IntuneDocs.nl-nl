@@ -1,11 +1,12 @@
 ---
 title: Migratiehandleiding voor het beheer van mobiele apparaten in Intune
+titlesuffix: Microsoft Intune
 description: In deze handleiding vindt u instructies voor de migratie van een externe MDM-provider naar Microsoft Intune.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.technology:
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Migratiehandleiding voor Intune
 
-![Afbeelding voor de migratiehandleiding voor Intune](./media/MDM-migration-guide-art.PNG)
+![Afbeelding voor de MDM-migratiehandleiding voor Microsoft Intune](./media/MDM-migration-guide-art.PNG)
 
-Een geslaagde migratie naar Intune begint met een goed onderbouwd plan waarin rekening wordt gehouden met uw huidige MDM-omgeving (Mobile Device Management), bedrijfsdoelstellingen en technische vereisten. Daarnaast moet u de steun hebben van de belangrijkste belanghebbenden die met u samenwerken aan uw migratieplan.
+Een geslaagde migratie naar Microsoft Intune begint met een goed onderbouwd plan waarin rekening wordt gehouden met uw huidige MDM-omgeving (Mobile Device Management), bedrijfsdoelstellingen en technische vereisten. Daarnaast moet u de steun hebben van de belangrijkste belanghebbenden die met u samenwerken aan uw migratieplan.
 
 In deze handleiding vindt u instructies voor de migratie van een externe MDM-provider naar Intune.
 

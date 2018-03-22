@@ -1,10 +1,12 @@
 ---
 title: Toegang tot bedrijfsgegevens door onbevoegden voorkomen
-description: Onbevoegde toegang tot uw bedrijfsgegevens voorkomen wanneer die worden gedeeld buiten het bedrijfsnetwerk.
+titlesuffix: Microsoft Intune
+description: Voorkom met Microsoft Intune onbevoegde toegang tot uw bedrijfsgegevens wanneer die worden gedeeld buiten het bedrijfsnetwerk.
 keywords: Office 365 O365 Azure Information Protection data beveiligt bedrijfsgegevens buiten het netwerk
-author: arob98
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +15,13 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>Toegang tot bedrijfsgegevens door onbevoegden voorkomen 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Toegang tot bedrijfsgegevens door onbevoegden voorkomen met Microsoft Intune
 
 U kunt Office 365-documenten en e-mails classificeren, labelen en beveiligen, zodat alleen gemachtigde gebruikers toegang tot de gegevens hebben. De instellingen worden automatisch beheerd nadat de IT-beheerders of gebruikers de regels en voorwaarden in hebben gesteld. Het IT-team kan ook aanbevolen instellingen bieden die gebruikers kunnen volgen. Beheerders en gebruikers kunnen ook toegang tot gegevens die al worden gedeeld met anderen intrekken, zonder tussenkomst van een andere instantie. Het resultaat van deze taak is om te bepalen wie beveiligde gegevens opent of updatet, zelfs wanneer de gegevens het bedrijfsnetwerk verlaten. 
 

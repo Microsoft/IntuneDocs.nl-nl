@@ -1,11 +1,11 @@
 ---
-title: Registreren of aanmelden bij Intune
-description: Zo kunt u zich aanmelden voor een Intune-abonnement of u aanmelden om met uw abonnement aan de slag te gaan
+title: Registreren of aanmelden bij Microsoft Intune
+description: Zo kunt u zich registreren voor een Microsoft Intune-abonnement of u aanmelden om met uw abonnement aan de slag te gaan.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d794837b88b0c0b3dbf4888e50714f06b94c8d53
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 8858768586398d3dbb341c9963727df5faf9da15
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="sign-up-or-sign-in-to-intune"></a>Registreren of aanmelden bij Intune
+# <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registreren of aanmelden bij Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -37,7 +37,7 @@ Als u al een werk- of schoolaccount hebt **meld u dan aan** met dat account en v
 
 1.  Ga naar de [Registratiepagina van Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Schermafbeelding van de aanmeldwebpagina van de evaluatieversie van de Microsoft Intune-account](./media/account-sign-up-site.png)
+  ![Schermafbeelding van de registratiewebpagina van de evaluatieversie van het Microsoft Intune-account](./media/account-sign-up-site.png)
 
 2.  Op de Registratiepagina kunt u zich aanmelden of registreren om een nieuw abonnement van Intune te beheren.
 

@@ -1,11 +1,12 @@
 ---
 title: De doelgroepen voor de implementatie en het tijdschema bepalen
-description: "Aan de hand van dit artikel kunt u bepalen welke groepen in Intune moeten worden geïmplementeerd en volgens welk tijdschema deze implementaties moeten verlopen."
+titlesuffix: Microsoft Intune
+description: "Aan de hand van dit artikel kunt u bepalen welke groepen in Microsoft Intune moeten worden geïmplementeerd en volgens welk tijdschema deze implementaties moeten verlopen."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cea27825261b05da6ce5157c2738a5be3a256cfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4ce6292d11b6b33bd6355074cabb3eed77fa5826
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="develop-a-rollout-plan"></a>Een rollout-plan ontwikkelen
 

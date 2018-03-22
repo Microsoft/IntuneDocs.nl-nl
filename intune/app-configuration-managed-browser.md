@@ -3,10 +3,10 @@ title: Webtoegang beheren met de app Managed Browser
 titlesuffix: Microsoft Intune
 description: Implementeer d app Managed Browser om websurfen en de overdracht van webgegevens naar andere apps te beperken.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -35,7 +35,7 @@ Aangezien deze app is geïntegreerd met de Intune SDK, kunt u ook beleid voor ap
 - Voorkomen dat er schermopnamen worden gemaakt
 - Afdwingen dat koppelingen naar inhoud die gebruikers selecteren uitsluitend worden geopend in andere beheerde apps.
 
-Zie [Wat is beveiligingsbeleid voor apps?](/intune/app-protection-policy) voor meer informatie.
+Zie [Wat is beveiligingsbeleid voor apps?](/intune/app-protection-policy.md) voor meer informatie.
 
 U kunt deze instellingen toepassen op:
 
@@ -59,7 +59,47 @@ U kunt beleidsregels voor Managed Browser maken voor de volgende apparaattypen:
 >Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
 
 
-Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
+Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Voorwaardelijke toegang voor Intune Managed Browser
+
+Managed Browser is nu een goedgekeurde client-app voor voorwaardelijke toegang. Dit betekent dat u de mobiele browsertoegang kunt beperken tot met Azure AD verbonden web-apps waarbij gebruikers alleen Managed Browser kunnen gebruiken en toegang vanaf andere niet-beveiligde browsers zoals Safari of Chrome wordt geblokkeerd. Deze beveiliging kan worden toegepast op Azure-resources zoals Exchange Online en SharePoint Online, de Office-portal en zelfs on-premises sites die u beschikbaar hebt gemaakt voor externe gebruikers via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+
+Als u met Azure AD verbonden web-apps wilt beperken tot het gebruik van Intune Managed Browser op mobiele platforms, kunt u een voorwaardelijk Azure AD-toegangsbeleid maken waarbij goedgekeurde clienttoepassingen worden vereist. 
+
+1. Selecteer in Azure Portal **Azure Active Directory** > **Bedrijfstoepassingen** > **Voorwaardelijke toegang** > **Nieuw beleid**. 
+2. Selecteer vervolgens **Verlenen** in de sectie **Besturingselementen voor toegang** van de blade. 
+3. Klik op **Goedgekeurde client-apps vereisen**. 
+4. Klik op **Selecteren** op de blade **Verlenen**. Dit beleid moet worden toegewezen aan de cloud-apps die u alleen voor de Intune Managed Browser-app toegankelijk wilt maken.
+
+    ![Azure AD - Managed Browser-beleid voor voorwaardelijke toegang](./media/managed-browser-conditional-access-01.png)
+
+5. Selecteer in de sectie **Toewijzingen** **Voorwaarden** > **Client-apps**. De blade **Client-apps** wordt weergegeven.
+6. Klik op **Ja** onder **Configureren** om het beleid toe te passen op specifieke client-apps.
+7. Controleer of **Browser** is geselecteerd als client-app.
+
+    ![Azure AD - Managed Browser - client-apps selecteren](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > Als u wilt beperken welke systeemeigen apps (niet-browser-apps) toegang hebben tot deze cloudtoepassingen, kunt u ook **Mobiele apps en bureaublad-clients** selecteren.
+
+8. Selecteer in de sectie **Toewijzingen** de optie **Gebruikers en groepen** en kies vervolgens de gebruikers of groepen die u wilt toewijzen aan dit beleid. 
+
+    > [!NOTE]
+    > Gebruikers moeten ook het doel zijn bij het Intune App Protection-beleid. Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over het maken van Intune App Protection-beleid.
+
+9. Selecteer in de sectie **Toewijzingen** de optie **Cloud-apps** om te kiezen welke apps met dit beleid moeten worden beveiligd.
+
+Nadat het bovenstaande beleid is geconfigureerd, worden gebruikers gedwongen Intune Managed Browser te gebruiken voor toegang tot de met Azure AD verbonden web-apps die u hebt beveiligd met dit beleid. Als gebruikers in dit scenario een niet-beheerde browser proberen te gebruiken, zien ze een bericht dat Intune Managed Browser moet worden gebruikt.
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Eenmalige aanmelding voor met Azure AD verbonden web-apps in Intune Managed Browser
+
+De Intune Managed Browser-toepassing op iOS en Android kan nu eenmalige aanmelding gebruiken voor alle web-apps (SaaS en on-premises) die met Azure AD zijn verbonden. Wanneer de Microsoft Authenticator-app aanwezig is op iOS of de Intune-bedrijfsportal-app op Android, kunnen gebruikers van Intune Managed Browser toegang krijgen tot met Azure AD verbonden web-apps zonder dat ze hun referenties opnieuw hoeven in te voeren.
+
+Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregistreerd door de Microsoft Authenticator-app voor iOS of de Intune-bedrijfsportal voor Android. Gebruikers met de Authenticator-app of Intune-bedrijfsportal wordt gevraagd hun apparaat te registreren wanneer ze naar een met Azure AD verbonden web-app in Intune Managed Browser navigeren, als hun apparaat nog niet is geregistreerd door een andere toepassing. Nadat het apparaat is geregistreerd met het account dat wordt beheerd door Intune, wordt dat account voor eenmalige aanmelding ingeschakeld voor met Azure AD verbonden web-apps. 
+
+> [!NOTE]
+> Apparaatregistratie is eenvoudig inchecken met de Azure AD-service. Dit vereist geen volledige apparaatinschrijving en geeft IT geen extra bevoegdheden op het apparaat.
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Een configuratie voor de Managed browser-app maken
 
@@ -102,7 +142,10 @@ De Intune-app Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.mi
     - Raadpleeg [deze documentatie]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
 - U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
 - Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser-app.
-Opmerking: Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser.
+
+    > [!NOTE]
+    > Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser.
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Stap 1: automatische omleiding naar Managed Browser vanuit Outlook inschakelen
 Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de instelling **Webinhoud beperken voor weergave in de Managed Browser** beschikbaar komt.
@@ -115,6 +158,7 @@ Met deze procedure wordt de Managed Browser-app geconfigureerd voor omleiding vi
 |Sleutel|Waarde|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren) voor meer informatie over hoe Managed Browser en de Azure AD-toepassingsproxy samen kunnen worden gebruikt voor een naadloze (en beveiligde) toegang tot on-premises web-apps.
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Startpagina configureren voor Managed Browser
 
@@ -247,3 +291,7 @@ Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebr
 
 ### <a name="turn-off-usage-data"></a>Gebruiksgegevens uitschakelen
 Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van Managed Browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.
+
+## <a name="next-steps"></a>Volgende stappen
+
+- [Wat zijn beleidsregels voor de beveiliging van apps?](app-protection-policy.md)

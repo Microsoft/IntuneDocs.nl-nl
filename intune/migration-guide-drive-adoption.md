@@ -1,11 +1,12 @@
 ---
 title: Eindgebruikers accepteren door middel van voorwaardelijke toegang
-description: In dit artikel wordt beschreven hoe u gebruik kunt maken van voorwaardelijke toegang ter ondersteuning van de registratie bij Intune.
+titlesuffix: Microsoft Intune
+description: Lees hoe u voorwaardelijke toegang gebruikt om het inschrijven in Microsoft Intune aan te sturen.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 180cecde31627192363bb00f58fb13f7ec123744
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>Eindgebruikers accepteren door middel van voorwaardelijke toegang
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Eindgebruikers accepteren door middel van voorwaardelijke toegang in Microsoft Intune
 
 Wanneer u functies voor voorwaardelijke toegang bij Intune inschakelt, zoals het blokkeren van e-mail voor niet-ingeschreven apparaten, kan dat helpen bij de registratie en naleving. Functies voor voorwaardelijke toegang zijn echter geen voorwaarde voor een geslaagde migratie. Uw acceptatiedoelstellingen en beveiligingsvereisten voor de migratie moeten bepalend zijn voor het slagen van de migratie.
 

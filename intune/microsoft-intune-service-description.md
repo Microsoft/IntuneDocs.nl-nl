@@ -1,11 +1,11 @@
 ---
 title: Beschrijving van de Microsoft Intune-service
-description: Intune is een cloudservice waarmee u Windows-, iOS-, Mac OS X-, Android- en Windows Mobile-apparaten kunt beheren.
+description: Microsoft Intune is een cloudservice waarmee u Windows-, iOS-, Mac OS X-, Android- en Windows Mobile-apparaten kunt beheren.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Beschrijving van de Microsoft Intune-service
 
@@ -33,7 +33,7 @@ Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identite
 Raadpleeg de [Intune-documentatie](https://docs.microsoft.com/intune/) voor meer informatie over hoe u apparaten en apps kunt beheren, en bedrijfsgegevens kunt beveiligen met Intune.
 
 ## <a name="30-day-free-trial"></a>Gratis proefversie van 30 dagen
-U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.
+U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.
 
 > [!NOTE]
 > Als uw organisatie een werk- of schoolaccount voor Microsoft Online Services heeft en u dit Intune-abonnement na de proefperiode mogelijk in uw productieomgeving wilt gebruiken, kiest u op de geopende pagina de optie **Aanmelden** en voert u de verificatie uit met het account voor de algemeen beheerder voor uw organisatie. Zo zorgt u ervoor dat uw Intune-proefabonnement wordt gekoppeld aan uw bestaande werk- of schoolaccount.

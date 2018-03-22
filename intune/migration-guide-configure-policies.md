@@ -1,11 +1,12 @@
 ---
 title: Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een Intune-migratie
-description: In dit artikel wordt beschreven welke stappen u moet uitvoeren om het nalevingsbeleid voor apparaten en het beleid voor appbeheer te configureren bij een Intune-migratie.
+titlesuffix: Microsoft Intune
+description: In dit artikel wordt beschreven welke stappen u moet uitvoeren om het nalevingsbeleid voor apparaten en het beleid voor appbeheer te configureren bij een Microsoft Intune-migratie.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.technology:
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een migratie naar Microsoft Intune
 
 Het belangrijkste doel bij het migreren naar Intune is dat alle apparaten worden ingeschreven bij Intune en voldoen aan het voorgeschreven beleid. Met apparaatbeleid kunt u niet alleen apparaten in bedrijfseigendom beheren die bestemd zijn voor één gebruiker, maar ook persoonlijke apparaten (BYOD) en gedeelde apparaten, zoals kiosken, Point Of Sales-apparaten, tablets die worden gedeeld door meerdere studenten in een klaslokaal of apparaten die niet aan een specifieke gebruiker zijn gebonden (alleen iOS).
 
