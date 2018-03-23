@@ -1,25 +1,25 @@
 ---
 title: Uw Lookout-integratie instellen met Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Meer informatie over de integratie van Intune met Lookout Mobile Threat Defense om toegang tot uw bedrijfsresources met mobiele apparaten te bepalen.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Integratie van Lookout Mobile Threat Defense met Intune instellen
 
@@ -72,8 +72,6 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
 2.  De eerste aanmelding bij de Lookout-console moet worden uitgevoerd met een gebruikersaccount met de Azure AD-rol van globale beheerder om uw Azure AD-tenant te registreren. Daarna is voor aanmelding niet meer dit niveau van Azure AD-bevoegdheden nodig. We wordt een instemmingspagina weergegeven. Kies **Accepteren** om de registratie te voltooien. Zodra u dat hebt gedaan, wordt u omgeleid naar de Lookout-console.
 
     ![Schermafbeelding van de allereerste aanmeldingspagina van de Lookout-console](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Zie [integratieproblemen met Lookout oplossen](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) voor meer informatie over problemen met aanmelden.
 
 3.  Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Intune**.
 

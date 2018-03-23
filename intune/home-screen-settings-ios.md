@@ -1,23 +1,23 @@
 ---
 title: Indelingsinstellingen voor de Microsoft Intune-startpagina voor iOS-apparaten
-titlesuffix: Azure portal
-description: Informatie over de instellingen waarmee u het startscherm kunt aanpassen en dokken op iOS-apparaten.
-keywords: 
+titleSuffix: ''
+description: Informatie over de instellingen in Microsoft Intune waarmee u het beginscherm kunt aanpassen en dokken op iOS-apparaten.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Indelingsinstellingen voor de Microsoft Intune-startpagina voor iOS-apparaten
 

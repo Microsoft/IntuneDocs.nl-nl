@@ -1,25 +1,25 @@
 ---
 title: Inschrijving voor Windows-apparaten instellen met Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Stel inschrijving in voor Windows-apparaten.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21849cd4bb1c77334fdc3e9e347365a25ab4df2d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Inschrijving voor Windows-apparaten instellen
 
@@ -85,6 +85,9 @@ Laat uw gebruikers weten hoe ze hun Windows-apparaten kunnen inschrijven en wat 
 > Eindgebruikers moeten toegang hebben tot de bedrijfsportalwebsite via Microsoft Edge om Windows-apps te bekijken die u hebt toegewezen voor specifieke versies van Windows. Andere browsers, zoals Google Chrome, Mozilla Firefox en Internet Explorer bieden geen ondersteuning voor deze manier van filteren.
 
 Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) voor inschrijvingsinstructies voor eindgebruikers. U kunt gebruikers ook verwijzen naar het artikel [Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf in Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)
+
+>[!IMPORTANT]
+> Als u automatische MDM-inschrijving niet hebt ingeschakeld maar Windows 10-apparaten hebt die zijn samengevoegd in Azure AD, worden na de inschrijving twee records weergegeven in de Intune-console. U kunt dit gedrag beëindigen. Hiervoor moeten gebruikers met samengevoegde apparaten in Azure AD met hetzelfde account naar **Accounts** > **Toegang tot werk- of schoolaccount** en **Verbinden** gaan. 
 
 Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](end-user-educate.md) voor meer informatie over taken voor eindgebruikers.
 

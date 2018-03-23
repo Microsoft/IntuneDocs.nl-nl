@@ -1,25 +1,25 @@
 ---
 title: Vroege editie
-description: 
-keywords: 
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>De vroege editie voor Microsoft Intune - maart 2018
 
@@ -147,6 +147,33 @@ U kunt aangepaste eBook-categorieën maken en vervolgens VPP eBooks toewijzen aa
 
 We werken de bedrijfsportal-app voor Android bij om de richtlijnen voor [Ontwerp van materiaal](https://material.io/) van Android te volgen. We publiceren afbeeldingen van de nieuwe pictogrammen in het artikel [Wat is er nieuw in de UI van de app](whats-new-app-ui.md) wanneer de app wordt uitgebracht. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Mobiele ondersteuning in Edge voor beveiligingsbeleid voor apps in Intune <!-- 1817882 -->
+
+De Microsoft Edge-browser voor mobiele apparaten biedt ondersteuning voor het beveiligingsbeleid voor aps dat in Intune is gedefinieerd.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>De volledige DN-naam gebruiken als onderwerp voor het SCEP-certificaat <!--2221763 eeready-->
+Wanneer u een SCEP-certificaatprofiel maakt, voert u de naam van het onderwerp in. Als naam van het onderwerp kunt u de volledige DN-naam gebruiken. Selecteer **Aangepast** bij **Onderwerpnaam** en voer `CN={{OnPrem_Distinguished_Name}}` in. Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Op iOS-apparaten wordt elke vijftien minuten om een pincode gevraagd <!--1550837 eeready-->
+Nadat een nalevings- of configuratiebeleid op een iOS-apparaat is toegepast, wordt gebruikers elke vijftien minuten gevraagd een pincode in te stellen. Gebruikers wordt continu gevraagd een pincode in te stellen totdat de code is ingesteld.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Delen van contactpersonen via Bluetooth inschakelen - Android for Work <!--1098983 eeready-->
+Standaard wordt op Android-apparaten voorkomen dat contactpersonen in het werkprofiel kunnen worden gesynchroniseerd met Bluetooth-apparaten. Als gevolg hiervan worden contactpersonen in het werkprofiel niet weergegeven bij Nummerweergave voor Bluetooth-apparaten.
+
+Er is een nieuwe instelling in **Android for Work** > **Apparaat beperkingen** > **Instellingen voor werkprofiel**:
+- Contactpersoon delen via Bluetooth
+
+De Intune-beheerder kan deze instellingen configureren om delen in te schakelen. Dit is handig als u een apparaat wilt koppelen met een Bluetooth-apparaat in auto's waarop Nummerweergave wordt weergegeven voor handsfreegebruik. Als deze instellingen zijn ingeschakeld, worden de contactpersonen voor het werkprofiel weergegeven. Als deze instellingen niet zijn ingeschakeld, worden de contactpersonen voor het werkprofiel niet weergegeven.
+
+Van toepassing op: apparaten met Android-werkprofiel voor Android 6.0 en hoger.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Automatische updates plannen <!--1805514 -->
+
+In Intune kunt u met behulp van de [instellingen voor Windows 10-updatering](windows-update-for-business-configure.md) bepalen hoe automatische updates worden geïnstalleerd. U kunt terugkerende updates plannen en de week, de dag en het tijdstip opgeven. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Controles bij opnieuw starten van apparaat uitschakelen <!--1805490 -->
+
+In Intune kunt u [software-updates beheren](windows-update-for-business-configure.md). De eigenschap **Controles voor opnieuw starten** wordt toegevoegd en standaard ingeschakeld. Als u de standaardcontroles wilt overslaan die worden uitgevoerd wanneer u een apparaat opnieuw start (controle van actieve gebruikers, batterijniveau, enzovoort), selecteert u **Overslaan**. 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ U kunt de themakleur in de bedrijfsportal-apps aanpassen met behulp van hexadeci
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Er worden nieuwe Windows Defender Credential Guard-instellingen toegevoegd aan de Endpoint Protection-instellingen <!--1102252 --> 
 
-Er worden nieuwe instellingen voor [Windows Defender Credential Guard](https://docs.microsoft.com/nl-nl/windows/access-protection/credential-guard/credential-guard] toegevoegd aan **Apparaatconfiguratie** > **Profielen** > **Endpoint Protection**. De volgende instellingen worden toegevoegd: 
+Nieuwe instellingen voor [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] worden toegevoegd aan **Apparaatconfiguratie** > **Profielen** > **Endpoint Protection**. De volgende instellingen worden toegevoegd: 
 
 - Platformbeveiligingsniveau: geef aan of het platformbeveiligingsniveau wordt ingeschakeld bij de volgende keer dat de computer wordt opgestart. Bij beveiliging op basis van virtualisatie is beveiligd opstarten vereist. Beveiliging op basis van virtualisatie kan eventueel worden ingeschakeld met behulp van DMA-beveiligingen (Direct Memory Access). Voor DMA-beveiligingen is hardwareondersteuning vereist en deze worden alleen ingeschakeld op apparaten die juist zijn geconfigureerd.
 - Beveiliging op basis van virtualisatie: geef aan of beveiliging op basis van virtualisatie wordt ingeschakeld bij de volgende keer dat de computer wordt opgestart. 
@@ -185,29 +212,6 @@ Er komen voor onderwijsprofielen nieuwe instellingen beschikbaar onder de catego
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Inrichtingsconfiguratie voor iOS-apps <!-- 1581650 -->
 U kunt inrichtingsprofielen voor iOS-apps toewijzen om te voorkomen dat uw apps verlopen door beveiligingsgroepen op te nemen of uit te sluiten.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Nieuwe instellingen voor Windows Defender Exploit Guard <!-- 631893 -->
-
-Er komen zes nieuwe instellingen voor **Kwetsbaarheid voor aanvallen verminderen** en uitgebreide mogelijkheden voor **Gecontroleerde mappentoegang: mapbeveiliging** beschikbaar. Deze instellingen kunt u vinden op: Apparaatconfiguratie\Profielen\
-Profiel maken\Endpoint Protection\Windows Defender Exploit Guard.
-
-#### <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen
-
-|Naam van de instelling  |Instellingsopties  |Description  |
-|---------|---------|---------|
-|Geavanceerde ransomwarebeveiliging|Ingeschakeld, Controleren, Niet geconfigureerd|Gebruik agressieve ransomwarebeveiliging.|
-|Referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit markeren|Ingeschakeld, Controleren, Niet geconfigureerd|Markeer referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit (lsass.exe).|
-|Het maken van processen met PSExec- en WMI-opdrachten|Blokkeren, Controleren, Niet geconfigureerd|Blokkeer het maken van processen die afkomstig zijn van PSExec- en WMI-opdrachten.|
-|Niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd vanaf een USB|Blokkeren, Controleren, Niet geconfigureerd|Blokkeer niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd vanaf een USB.|
-|Uitvoerbare bestanden die niet voldoen aan een bepaalde gangbaarheid, ouderdom of aan criteria voor vertrouwde lijsten blokkeren|Blokkeren, Controleren, Niet geconfigureerd|Voorkomen dat uitvoerbare bestanden worden uitgevoerd tenzij deze voldoen aan een bepaalde gangbaarheid, ouderdom of criteria voor vertrouwde lijsten.|
-
-#### <a name="controlled-folder-access"></a>Gecontroleerde mappentoegang
-
-|Naam van de instelling  |Instellingsopties  |Description  |
-|---------|---------|---------|
-|Mapbeveiliging (al geïmplementeerd)|Niet geconfigureerd, Inschakelen, Alleen controleren (al geïmplementeerd)<br><br> **Nieuw**<br>Schijfwijziging blokkeren, schijfwijziging controleren|
-Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.<br><br>**Inschakelen**: voorkom dat bestanden in beveiligde mappen door niet-vertrouwde apps worden gewijzigd of verwijderd en dat gegevens door deze apps naar schijfsectoren worden weggeschreven.<br><br>
-**Alleen schijfwijziging blokkeren**:<br>Voorkom dat gegevens door niet-vertrouwde apps worden weggeschreven naar schijfsectoren. Bestanden in beveiligde mappen kunnen nog steeds door niet-vertrouwde apps worden gewijzigd of verwijderd.|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Nieuwe instellingen voor Windows Defender Application Guard <!-- 1631890 -->
 
