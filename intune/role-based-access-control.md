@@ -1,27 +1,26 @@
 ---
-title: RBAC met Intune
-titleSuffix: Azure portal
-description: 'Intune Azure Preview: in dit onderwerp leest u hoe u met RBAC kunt bepalen welke personen acties kunnen uitvoeren en wijzigingen kunnen aanbrengen.'
-keywords: 
-author: arob98
-ms.author: angrobe
+title: RBAC met Microsoft Intune
+description: Meer informatie over hoe u met op rollen gebaseerd toegangsbeheer (RBAC) kunt bepalen wie acties kunnen uitvoeren en wijzigingen kunnen aanbrengen in Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Intune
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
 Met RBAC kunt u bepalen wie de verschillende Intune-taken binnen uw organisatie kunnen uitvoeren en op wie die taken van toepassing zijn. U kunt de ingebouwde rollen gebruiken die voorzien in bepaalde algemene Intune-scenario's of u kunt uw eigen rollen maken. Een rol wordt gedefinieerd op basis van het volgende:
 
@@ -111,7 +110,7 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com) met uw Intune-referenties.
 
-2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
 3. Kies **Intune**. Het Intune-dashboard wordt geopend en kies vervolgens **Intune-rollen**.
 

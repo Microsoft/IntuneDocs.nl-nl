@@ -1,20 +1,21 @@
 ---
-title: Auditlogboeken voor Intune-activiteiten
-description: Meer informatie over het bekijken van auditlogboeken waarin Intune-activiteiten worden opgenomen
-keywords: 
+title: Auditlogboeken voor Microsoft Intune-activiteiten
+description: Meer informatie over het bekijken van auditlogboeken waarin Microsoft Intune-activiteiten worden opgenomen.
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Auditlogboeken voor Intune-activiteiten
 Auditlogboeken bevatten een lijst met activiteiten die een wijziging in Microsoft Intune genereren. U kunt acties of externe taken maken, bijwerken (bewerken), verwijderen en toewijzen en controlegebeurtenissen genereren die u kunt bekijken. U kunt auditlogboeken voor de meeste werkbelastingen van Intune bekijken. Controles worden standaard ingeschakeld voor alle klanten. Dit kan niet worden uitgeschakeld. Controlegebeurtenissen worden vastgelegd sinds de versie die in december 2017 beschikbaar is gemaakt; eerdere gebeurtenissen zijn niet beschikbaar.

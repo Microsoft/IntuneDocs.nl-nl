@@ -1,30 +1,31 @@
 ---
 title: Een aangepaste domeinnaam configureren
-description: Een aangepaste domeinnaam voor uw Intune-abonnement toevoegen
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Een aangepaste domeinnaam voor uw Microsoft Intune-abonnement toevoegen
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Een aangepaste domeinnaam configureren
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-In dit onderwerp wordt aan beheerders uitgelegd hoe ze een DNS CNAME kunnen maken om hun aanmeldervaring te vereenvoudigen en aan te passen.
+In dit onderwerp wordt aan beheerders uitgelegd hoe ze een DNS CNAME kunnen maken om hun aanmeldervaring met Microsoft Intune te vereenvoudigen en aan te passen.
 
 Wanneer uw organisatie zich registreert voor een cloudservice van Microsoft, zoals Intune, krijgt u een initiële domeinnaam die wordt gehost in Azure Active Directory (AD) en er ongeveer als volgt uitziet: **uwdomein.onmicrosoft.com**. In dit voorbeeld is **uwdomein**de domeinnaam die u hebt gekozen toen u zich registreerde. **onmicrosoft.com** is het achtervoegsel dat wordt toegewezen aan accounts die u aan uw abonnement toevoegt. U kunt het aangepaste domein van uw bedrijf configureren om Intune te gebruiken in plaats van de domeinnaam die bij uw abonnement wordt geleverd.
 

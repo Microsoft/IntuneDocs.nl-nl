@@ -1,24 +1,24 @@
 ---
 title: Aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune
-titleSuffix: Azure portal
-description: Aanmelden voor een gratis proefversie van 30 dagen van Intune."
-keywords: 
-author: arob98
-ms.author: angrobe
+titleSuffix: Microsoft Intune
+description: Meer informatie over het aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 
@@ -30,11 +30,15 @@ Dit artikel begeleidt u bij het aanmelden voor een proefversie van de zelfstandi
 
 * Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijkt van die van u, kunt u de desbetreffende landinstellingen selecteren onder **Where's your company located?** (Waar bevindt uw bedrijf zich?).
 
-2. Aan het einde van het aanmeldingsproces ziet u een bericht met de gegevens van uw nieuwe account. <br/> ![Afbeelding van accountgegevens](./media/2-end-of-sign-up-process.png) <br/>Als u nu klikt op **You're ready to go** (U bent klaar om aan de slag te gaan), wordt u naar het Office 365-beheercentrum geleid, waar u gebruikers aan uw testomgeving kunt toevoegen. <br/><br/>Als u rechtstreeks naar Intune Azure Portal wilt gaan, opent u een nieuw browservenster en voert u **https://portal.azure.com** in de adresbalk in. U wordt dan omgeleid naar de aanmeldingspagina van Azure, waar u de referenties kunt opgeven die u hebt ontvangen om u aan te melden. Gebruik dit adres altijd als u zich wilt aanmelden voor de Intune-proefversie. <br/> ![Afbeelding van de aanmeldingspagina van de Azure Portal](./media/azure-portal-signin.png)
+2. Aan het einde van het aanmeldingsproces ziet u een bericht met de gegevens van uw nieuwe account. <br/> 
+
+![Afbeelding van accountgegevens](./media/2-end-of-sign-up-process.png) <br/>
+
+Als u nu klikt op **You're ready to go** (U bent klaar om aan de slag te gaan), wordt u naar het Office 365-beheercentrum geleid, waar u gebruikers aan uw testomgeving kunt toevoegen. <br/><br/>Als u rechtstreeks naar Intune Azure Portal wilt gaan, opent u een nieuw browservenster en voert u **https://portal.azure.com** in de adresbalk in. U wordt dan omgeleid naar de aanmeldingspagina van Azure, waar u de referenties kunt opgeven die u hebt ontvangen om u aan te melden. Gebruik dit adres altijd als u zich wilt aanmelden voor de Intune-proefversie. <br/> ![Afbeelding van de aanmeldingspagina van Azure Portal](./media/azure-portal-signin.png)
 
 De eerste keer dat u zich bij Intune [Azure Portal](https://portal.azure.com) aanmeldt, wordt Intune nog niet weergegeven in het Azure-dashboard. De Intune-service aan uw Azure-dashboard toevoegen:
 1. Kies **Alle services >** in de lijst met Azure-services links van het dashboard en voer **Intune** in het zoekvak in.
-2. Kies **Intune** uit de lijst en selecteer de ster om de service toe te voegen aan de lijst met services.<br/> ![Afbeelding van het selecteren van Intune uit de lijst met services](./media/azure-add-intune1.png)
+2. Kies **Intune** uit de lijst en selecteer de ster om de service toe te voegen aan de lijst met services.<br/> ![Afbeelding van het selecteren van Microsoft Intune in Azure Portal](./media/azure-add-intune1.png)
 3. Kies vervolgens **Intune** in de lijst met services om het Intune-dashboard te openen.
 
 Wanneer u zich aanmeldt voor een proefversie, ontvangt u tevens een e-mailbericht met gegevens over uw account op het e-mailadres dat u hebt opgegeven tijdens het aanmeldingsproces. In deze e-mail wordt bevestigd dat uw proefversie actief is.

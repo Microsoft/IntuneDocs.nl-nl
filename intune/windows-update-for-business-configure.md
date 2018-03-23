@@ -1,23 +1,23 @@
 ---
-title: Instellingen voor Windows Update voor bedrijven configureren in Intune
-titleSuffix: Azure portal
-description: Meer informatie over het configureren van instellingen van Windows Update voor Bedrijven in Intune voor het beheren van updates voor Windows 10-apparaten."
-keywords: 
+title: Instellingen voor Windows Update voor Bedrijven configureren in Microsoft Intune
+titleSuffix: ''
+description: Meer informatie over het configureren van de instellingen voor Windows Update voor Bedrijven in Microsoft Intune voor het beheren van updates voor Windows 10-apparaten.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Software-updates beheren
 
@@ -140,7 +140,7 @@ U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoe
 - **Gegevenstype:** tekenreeks
 - **Waarde**: <*gebruik de GUID die wordt weergegeven op het tabblad Windows-telemetrie in uw OMS-werkruimte*>
 
-![Windows-instelling voor diagnostische gegevens en gebruiksgegevens](./media/commID.png)
+![OMA-URI-instelling - rij toevoegen](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Updates onderbreken
 U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows-Updates naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.

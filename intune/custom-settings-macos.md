@@ -1,23 +1,23 @@
 ---
 title: Aangepaste Microsoft Intune-instellingen voor apparaten met macOS
-titleSuffix: 
-description: Meer informatie over de instellingen die u kunt gebruiken in een aangepast MacOS-profiel.
-keywords: 
+titleSuffix: ''
+description: Meer informatie over de instellingen die u in Microsoft Intune kunt gebruiken in een aangepast macOS-profiel.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e8dc2042d7f88cf626d7420d4760255e1e9a3469
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Aangepaste Microsoft Intune-apparaatinstellingen voor apparaten met macOS
 
