@@ -1,25 +1,25 @@
 ---
 title: De toegang tot netwerken beveiligen met Cisco ISE
 description: Gebruik Cisco ISE in combinatie met Intune, zodat apparaten bij Intune zijn ingeschreven en voldoen aan het beleid voordat ze gebruikmaken van Wi-Fi- en VPN-verbindingen die worden beheerd door Cisco ISE.
-keywords: 
-author: arob98
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Cisco ISE gebruiken met Microsoft Intune
 
@@ -155,7 +155,7 @@ Geef in de ISE-beheerconsole de volgende instellingswaarden op:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server
 Deze tabel bevat de informatie die wordt gedeeld tussen uw Intune-tenant en uw Cisco ISE-server voor apparaten die worden beheerd door Intune.
 
-|Eigenschap|  Beschrijving|
+|Eigenschap|  Description|
 |---------------|------------------------------------------------------------|
 |complianceState|De tekenreeks 'waar' of 'onwaar' die aangeeft of het apparaat compatibel of niet compatibel is.|
 |isManaged|De tekenreeks 'waar' of 'onwaar' die aangeeft of de client door Intune wordt beheerd of niet.|
@@ -187,6 +187,6 @@ Wanneer de gebruiker ervoor kiest om het apparaat in te schrijven, wordt deze do
 Er is ook een [downloadbare reeks inschrijvingsinstructies](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) die u kunt gebruiken om aangepaste richtlijnen te maken voor uw gebruikerservaring.
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 
 [Cisco Identity Services Engine-beheerdershandleiding, release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)

@@ -1,25 +1,25 @@
-﻿---
+---
 title: Apparaten in bedrijfseigendom beheren
 description: Apparaten in bedrijfseigendom kunnen op verschillende manieren worden ingeschreven, afhankelijk van het type apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8386261675798fd09a8f423a8723200392246d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 23ae8afbf6c200f983ebee8a94fff42f65ec2486
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Apparaten in bedrijfseigendom inschrijven met Intune
 

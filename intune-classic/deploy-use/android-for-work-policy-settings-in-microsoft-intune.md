@@ -1,25 +1,25 @@
 ---
 title: Android for Work-beleidsinstellingen
 description: Beleidsregels maken voor het beheren van instellingen en functies op Android for Work-apparaten die u met Intune beheert.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0938e4b788ef11a773854531f570e63809389fad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Android for Work in Microsoft Intune
 
@@ -88,5 +88,5 @@ Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-
 - [Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md)
 - [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](per-app-vpn-for-android-pulse-secure.md)
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

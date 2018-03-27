@@ -2,22 +2,22 @@
 title: Verklarende woordenlijst voor Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Kom meer te weten over de betekenis van de belangrijkste termen die worden gebruikt in Microsoft Intune.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: d1b92613b127ccb21146f9d5f973eb1a25213792
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Verklarende woordenlijst voor Microsoft Intune
 Kom meer te weten over de betekenis van termen die veel in Microsoft Intune worden gebruikt.

@@ -1,25 +1,25 @@
 ---
 title: Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht
-titlesuffix: 
+titlesuffix: ''
 description: Meer informatie over het gebruik van Microsoft Intune om het gebruik van apps en boeken te controleren die zijn gekocht via het Volume Purchasing Program.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b33a129954fbd5bbf5ce3907810ceb7e42849737
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 489c92bd6664f8ecf2629a47d2168586a33e9944
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht
 

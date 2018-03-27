@@ -1,25 +1,25 @@
 ---
 title: Beleidsinstellingen voor het upgraden van Windows-versies
 description: Leer hoe u met Intune automatisch Windows 10-apparaten kunt bijwerken naar een andere versie.
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 690fe1f1b2555996b2ef124cde6e3fba53e82ec7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 005f8cf2e769b1b007424e55867160a0f5828f7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen in Microsoft Intune voor upgrades van de Windows-editie
 
@@ -52,5 +52,5 @@ Voordat u begint met het upgraden van apparaten naar de nieuwste versie, hebt u 
 |**Productcode**|Geef de productcode op die u van Microsoft hebt ontvangen en die kan worden gebruikt om van alle beoogde Windows 10 Desktop-apparaten een upgrade uit te voeren.<br>Nadat u een beleid met een productcode hebt gemaakt, kunt u de productcode later niet meer bewerken. Dit komt doordat de code uit veiligheidsoverwegingen wordt verborgen. Als u de productcode wilt wijzigen, moet u de volledige code opnieuw invoeren.
 |**Licentiebestand**|Kies **Bladeren** om het licentiebestand te selecteren dat u hebt ontvangen van Microsoft, met daarin licentie-informatie voor de Windows Holographic-editie of Windows 10 Mobile-editie waarnaar u de beoogde apparaten wilt upgraden.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

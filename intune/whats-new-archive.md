@@ -1,26 +1,26 @@
 ---
 title: Wat was er de vorige maanden nieuw in Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Raadpleeg oudere berichten op de Wat is er nieuw-pagina voor Intune
-keywords: 
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 

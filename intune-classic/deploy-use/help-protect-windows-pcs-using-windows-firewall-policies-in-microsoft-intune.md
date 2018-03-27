@@ -1,24 +1,24 @@
-﻿---
+---
 title: Firewall-beleid voor Windows-pc's
-description: "Intune kan u helpen de pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen, bijvoorbeeld door u te helpen de instellingen van Windows Firewall te configureren."
-keywords: 
+description: Intune kan u helpen de pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen, bijvoorbeeld door u te helpen de instellingen van Windows Firewall te configureren.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 61ff44a9c2c6271ae72b618c7c09697837f4a516
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3be77c1042d695ed0bed6ee7cbbc442342e91d8b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 
@@ -133,5 +133,5 @@ U kunt uitzonderingen configureren om bepaalde typen netwerkverkeer via de firew
 |**Windows Virtual PC**<br>(Windows 7 of hoger)|Hiermee kunnen virtuele computers met andere computers communiceren.|
 |**Wireless Portable Devices**|Hiermee configureert u dat media vanaf een camera of media-apparaat in het netwerk kunnen worden overgedragen naar beheerde computers met MTP (Media Transfer Protocol). Deze instelling maakt gebruik van SSDP- en UPnP-netwerkprotocollen.|
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)

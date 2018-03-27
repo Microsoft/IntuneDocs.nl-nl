@@ -1,25 +1,25 @@
-﻿---
+---
 title: Toegang tot bedrijfsbronnen inschakelen
 description: Wi-Fi-, VPN- en e-mailprofielen stellen uw gebruikers in de gelegenheid toegang te krijgen tot de bestanden en bronnen die ze nodig hebben.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3d1b8cff396f6a78d635d96b936a1bb155ca198
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Toegang tot bedrijfsbronnen inschakelen met Microsoft Intune
 
@@ -34,7 +34,7 @@ Hier kunt u instellingen voor draadloze netwerken implementeren voor uw gebruike
 
 |Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Ja (U kunt een Windows Wi-Fi-profiel importeren.)|Ja (U kunt OMA-URI configureren.) |Ja|Ja|Yes|
+|Ja (U kunt een Windows Wi-Fi-profiel importeren.)|Ja (U kunt OMA-URI configureren.) |Ja|Ja|Ja|
 
 ## <a name="vpn-profilesvpn-connections-in-microsoft-intunemd-and-supported-platforms"></a>[VPN-profielen](vpn-connections-in-microsoft-intune.md) en ondersteunde platforms
 Hiermee kunt u VPN-instellingen (Virtual Private Network) implementeren voor uw gebruikers. Dankzij deze instellingen kunnen uw gebruikers gemakkelijk verbinding maken met het bedrijfsnetwerk.
@@ -48,7 +48,7 @@ Hiermee kunt u instellingen voor systeemeigen e-mailclients in uw organisatie ma
 
 |Windows 8.1 en hoger|Windows Phone 8.1 en hoger|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Nee|Ja|Ja|Nee|Yes|
+|Nee|Ja|Ja|Nee|Ja|
 > [!NOTE]
 > [Dit Intune-teamblogbericht](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) geeft informatie over hoe u een Windows Phone 8.1 Wi-Fi-profiel configureert met OMA-URI.
 

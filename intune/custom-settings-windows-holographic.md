@@ -1,23 +1,23 @@
 ---
 title: Aangepaste instellingen van Microsoft Intune voor apparaten met Windows Holographic for Business
-titlesuffix: 
+titlesuffix: ''
 description: Meer informatie over de instellingen die u kunt gebruiken in een aangepast Windows Holographic for Business-profiel.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Aangepaste apparaatinstellingen voor apparaten met Windows Holographic for Business in Microsoft Intune
 
@@ -58,7 +58,7 @@ De volgende instellingen zijn handig voor apparaten waarop Windows Holographic f
 |[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Tekenreeks<br>URL: het apparaat controleert via de opgegeven URL op updates van de WSUS-server.<br>Niet geconfigureerd: het apparaat controleert op updates via Microsoft Update.|
 |[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Geheel getal<br>0: niet geconfigureerd. Alle toepasselijke updates worden op het apparaat geïnstalleerd.<br>1: op het apparaat worden alleen updates geïnstalleerd die toepasselijk zijn en op de lijst Toegestane updates staan. Stel dit beleid in op 1 als de IT-afdeling controle wilt behouden over de implementatie van updates op apparaten, zoals wanneer er vóór het implementeren tests moeten worden uitgevoerd.|
 |[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Belangrijk**<br>U moet de bijgewerkte gebruiksrechtovereenkomsten lezen en accepteren namens uw eindgebruikers. Als u dit niet doet, is dat een schending van de juridische of contractuele verplichtingen.|Knooppunt voor update-goedkeuringen en acceptatie van gebruiksrechtovereenkomsten namens de eindgebruiker.|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Belangrijk**<br>In het AppLocker CPS-artikel wordt gebruikgemaakt van XML-voorbeelden met het escape-teken. Als u de instellingen wilt configureren met aangepaste Intune-profielen, moet u gewone XML gebruiken.|Tekenreeks<br>Zie het [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)-artikel voor meer informatie. 
+[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Belangrijk**<br>In het AppLocker CPS-artikel wordt gebruikgemaakt van XML-voorbeelden met het escape-teken. Als u de instellingen wilt configureren met aangepaste Intune-profielen, moet u gewone XML gebruiken.|Tekenreeks<br>Zie het [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)-artikel voor meer informatie.
 
 ## <a name="how-to-find-the-policies-you-can-configure"></a>De beleidsregels zoeken die u kunt configureren
 

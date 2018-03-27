@@ -1,25 +1,25 @@
-﻿---
+---
 title: Exchange-toegangsregels voor mobiele apparaten
 description: Exchange ActiveSync-toegangsregels voor het toestaan of blokkeren van apparaatverbindingen met EAS
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 097d6ee8a7ad6752d48f554ee0bc9b3729311fe2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Exchange-toegangsregels voor mobiele apparaten
 
@@ -29,7 +29,7 @@ Exchange-toegangsregels voor mobiele apparaten bepalen het niveau van toegang da
 
 De volgende tabel bevat de toegangsniveaus die worden beheerd door Exchange ActiveSync:
 
-|Toegangsniveau|Beschrijving|
+|Toegangsniveau|Description|
 |----------------|---------------|
 |**Apparaten toegang bieden tot Exchange**|In het geval van *toegestane toegang* kan een mobiel apparaat synchroniseren via Exchange ActiveSync en verbinding maken met de Exchange-server voor het ophalen van e-mail en het beheren van de agenda, contactpersonen, taken en notities. Dit geldt zolang het apparaat voldoet aan het Exchange ActiveSync-beleid voor postvakken dat u in Exchange hebt geconfigureerd, tenzij de gebruiker of het specifieke mobiele apparaat is geblokkeerd door de Exchange-beheerder.|
 |**Toegang tot Exchange voor apparaten blokkeren**|In het geval van *geblokkeerde toegang* zijn mobiele apparaten geblokkeerd en kunnen ze geen verbinding maken met de Exchange-server. Apparaten ontvangen de HTTP-fout 403 - Verboden. De gebruiker ontvangt een e-mailbericht van de Exchange-server om aan te geven dat het mobiele apparaat geen toegang krijgt tot het postvak van de gebruiker. Dit bericht kan niet op het geblokkeerde mobiele apparaat worden weergegeven. Met behulp van de taak **Gebruikersmelding instellen** kunt u aangepaste tekst aan dit bericht toevoegen met instructies voor gebruikers van wie de apparaten zijn geblokkeerd. |
@@ -37,7 +37,7 @@ De volgende tabel bevat de toegangsniveaus die worden beheerd door Exchange Acti
 
 Een toegangsstrategie is een combinatie van een **standaardregel** en **platformuitzonderingen** die van toepassing is op alle mobiele apparaten die verbonden zijn met Exchange. In de volgende tabel wordt een aantal voorbeelden van toegangsstrategieën vermeld.
 
-|Toegangsstrategie|Beschrijving|
+|Toegangsstrategie|Description|
 |-------------------|---------------|
 |Acceptatielijst|U kunt een *acceptatielijst* gebruiken om een lijst met bekende apparaten toegang te verlenen en om toegang te beperken voor alle andere apparaten. Hiertoe moet u aangepaste regels maken voor apparaatplatformen, zodat ze toegang hebben tot het postvak van gebruikers. Wanneer u een dergelijke regel maakt, moet u de standaardtoegangsregel instellen voor het blokkeren of in quarantaine plaatsen van alle andere apparaten. Als u een nieuw apparaat aan de acceptatielijst wilt toevoegen, maakt u een nieuwe aangepaste regel.|
 |Blokkeringslijst|U kunt een *blokkeringslijst* gebruiken om alle apparaten standaard toegang te verlenen, met uitzondering van een verzameling apparaten die geen toegang tot uw organisatie mogen hebben. U maakt een blokkeringslijst door aangepaste regels in te stellen voor het blokkeren van apparaatplatformen die niet met de postvakken van de organisatie mogen synchroniseren. De standaardregel moet zo worden ingesteld dat alle apparaten die niet uitdrukkelijk zijn geblokkeerd door bestaande regels, toegang mogen hebben. Als u een nieuw apparaat of een verzameling apparaten aan de blokkeringslijst wilt toevoegen, maakt u een nieuwe aangepaste regel.|
