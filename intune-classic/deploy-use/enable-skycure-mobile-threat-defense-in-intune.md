@@ -1,31 +1,31 @@
 ---
 title: Skycure Mobile Threat Defense inschakelen in Intune
 description: Schakel in de klassieke Intune-portal Skycure Mobile Threat Defense in.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce0e61a27f44f0c6cb00d79442d346db679a55ea
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 971600d59a6afe019f5f3bd51459964c168afa82
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Skycure Mobile Threat Defense inschakelen in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Als u de Skycure Mobile Threat Defense wilt inschakelen, moet u de [Intune-connector al in de Skycure-console] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune) hebben geconfigureerd.
+Als u de Skycure Mobile Threat Defense wilt inschakelen, moet u de [Intune-connector al in de Skycure-console] hebben geconfigureerd (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>De verbinding voor Skycure MTD inschakelen in Intune
 

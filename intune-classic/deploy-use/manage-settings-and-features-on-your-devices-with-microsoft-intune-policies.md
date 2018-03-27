@@ -1,25 +1,25 @@
 ---
 title: Apparaatinstellingen beheren met beleid
 description: Gebruik Intune om beleid te maken en implementeren waarmee instellingen en functies worden beheerd op ingeschreven apparaten die u beheert.
-keywords: 
-author: arob98
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid
 

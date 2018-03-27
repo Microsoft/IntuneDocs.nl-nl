@@ -1,25 +1,25 @@
 ---
 title: Nalevingsbeleid implementeren en bewaken
 description: Volg de stapsgewijze instructies in dit onderwerp om een nalevingsbeleid voor apparaten te implementeren en te bewaken.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae914e755b809eda55abc5dc069c9ee2897d9ff4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e24c969206d3e1f34bfee0af46c4398c9d2739a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Nalevingsbeleid voor apparaten implementeren en bewaken in Microsoft Intune
 
@@ -69,5 +69,5 @@ Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intu
 Zie [De toegang tot e-mail en O365-services beperken](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) voor informatie over u het nalevingsbeleid met beleidsregels voor voorwaardelijke toegang kunt gebruiken om de toegang tot services in uw organisatie te beheren.
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Inleiding in nalevingsbeleid voor apparaten in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)

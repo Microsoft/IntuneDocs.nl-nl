@@ -6,22 +6,22 @@ metadata:
   title: Documentatie voor Microsoft Intune
   description: Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven.
   keywords: bescherm, bedrijf, gegevens, Azure, Intune, Emm, apparaat, app, beheer
-  author: arob98
-  ms.author: angrobe
+  author: dougeby
+  ms.author: dougeby
   manager: dougeby
   ms.date: 10/31/2017
   ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: 134f4053e22797c547f56b2db7876b3d1a56b15c
-  ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
+  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
   ms.translationtype: HT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 03/08/2018
+  ms.lasthandoff: 03/22/2018
 sections:
 - items:
   - type: markdown
-    text: "Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Intune is geïntegreerd met Azure Active Directory voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging."
+    text: Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Intune is geïntegreerd met Azure Active Directory voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging.
 - items:
   - type: list
     style: cards
