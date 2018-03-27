@@ -1,4 +1,4 @@
----
+﻿---
 title: De inschrijving van uw Windows-apparaat bij Intune ongedaan maken | Microsoft Docs
 description: Hierin wordt beschreven hoe u de inschrijving van een Windows-apparaat bij Intune ongedaan kunt maken
 keywords: 

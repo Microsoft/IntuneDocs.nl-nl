@@ -1,4 +1,4 @@
----
+﻿---
 title: Certificaatprofielen voor de toegang tot resources
 description: "Beveiligde VPN-, Wi-Fi en toegang tot e-mail met een certificaat op elk gebruikersapparaat geïnstalleerd."
 keywords: 

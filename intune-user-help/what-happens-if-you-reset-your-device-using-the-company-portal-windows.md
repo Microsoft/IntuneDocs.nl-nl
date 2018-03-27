@@ -1,4 +1,4 @@
----
+﻿---
 title: Wat gebeurt er als u uw Windows-apparaat opnieuw instelt? | Microsoft Docs
 description: 
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Windows-beleidsinstellingen
 description: Gebruik de algemene regels voor het Intune Windows-configuratiebeleid (Windows 8.1 en later) om instellingen te configureren voor geregistreerde Windows 8.1- en Windows 8-apparaten.
 keywords: 

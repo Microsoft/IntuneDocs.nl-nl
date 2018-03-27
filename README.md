@@ -1,4 +1,4 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Gedragscode voor Microsoft Open Source
+﻿## <a name="microsoft-open-source-code-of-conduct"></a>Gedragscode voor Microsoft Open Source
 
 Voor dit project geldt de [Gedragscode voor Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/).
 Zie de [Veelgestelde vragen over de gedragscode](https://opensource.microsoft.com/codeofconduct/faq/) voor meer informatie of neem contact op met [ opencode@microsoft.com ](mailto:opencode@microsoft.com) als u aanvullende vragen of opmerkingen hebt.

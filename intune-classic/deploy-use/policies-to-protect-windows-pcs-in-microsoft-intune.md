@@ -1,4 +1,4 @@
----
+﻿---
 title: Beleid voor het beveiligen van Windows-pc's
 description: Gebruik deze beleidsregels voor het beveiligen van Windows-pc's wanneer deze worden beheerd door de Intune-clientsoftware.
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Uw Windows-apparaat handmatig synchroniseren | Microsoft Docs
 description: 
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Apparaten buiten gebruik stellen
 description: Intune biedt ondersteuning voor selectief wissen en volledig wissen waarmee apparaten uit het Intune-beheer kunnen worden verwijderd door hun beleid en de bedrijfsportal te verwijderen.
 keywords: 
