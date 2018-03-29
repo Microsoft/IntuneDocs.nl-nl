@@ -357,6 +357,13 @@
               href: device-restrictions-windows-holographic.md
             - name: Android for Work
               href: device-restrictions-android-for-work.md
+        - name: Endpoint Protection configureren
+          href: endpoint-protection-configure.md
+          items:
+            - name: macOS
+              href: endpoint-protection-macos.md
+            - name: Windows 10
+              href: endpoint-protection-windows-10.md
         - name: E-mailinstellingen configureren
           href: email-settings-configure.md
           items:
@@ -398,8 +405,6 @@
               href: wi-fi-settings-import-windows-8-1.md
         - name: Instellingen voor editie-upgrades voor Windows 10 configureren
           href: edition-upgrade-configure-windows-10.md
-        - name: Endpoint Protection in Windows 10
-          href: endpoint-protection-windows-10.md
         - name: Instellingen voor Windows 10 Education configureren
           href: education-settings-configure.md
         - name: Opleidingsinstellingen voor iOS configureren
