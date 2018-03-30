@@ -1,25 +1,25 @@
 ---
 title: Problemen bij clientinstallaties oplossen
 description: Algemene problemen met de clientinstallatie oplossen.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: f9cb68fcac7abc895f51cf2c8758c2cf59b32759
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Problemen met de clientinstallatie oplossen in Microsoft Intune
 
@@ -29,7 +29,7 @@ Gebruik de volgende informatie voor hulp bij het oplossen van algemene problemen
 
 ## <a name="client-installation-fails"></a>De clientinstallatie is mislukt
 
--   Als er bij de implementatie van clientsoftware geen waarschuwingen voor de computer worden weergegeven in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/), controleert u de internetverbinding en proxyconfiguratie van de computer en zorgt u ervoor dat de computer kan communiceren met de service-URL: [https://manage.microsoft.com](https://manage.microsoft.com/). Probeer de clientsoftware vervolgens opnieuw te installeren.
+-   Als er bij de implementatie van clientsoftware geen waarschuwingen voor de computer worden weergegeven in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/), controleert u de internetverbinding en proxyconfiguratie van de computer en zorgt u dat de computer kan communiceren met de service-URL: [https://manage.microsoft.com](https://manage.microsoft.com/). Probeer de clientsoftware vervolgens opnieuw te installeren.
 
 -   U kunt een e-mailbericht laten verzenden naar geselecteerde ontvangers wanneer er een waarschuwing voor een fout bij de implementatie van clientsoftware optreedt, door een meldingsregel te configureren in de werkruimte **Beheer** . Zie [Blijf op de hoogte met Microsoft Intune-waarschuwingen](/intune-classic/deploy-use/get-notified-by-alerts) voor meer informatie.
 

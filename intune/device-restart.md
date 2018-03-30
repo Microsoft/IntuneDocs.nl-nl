@@ -1,24 +1,23 @@
 ---
-title: Apparaten extern opnieuw opstarten met Intune
-titlesuffix: Microsoft Intune
-description: Meer informatie over het op afstand opnieuw opstarten van apparaten met de actie voor het opnieuw opstarten van apparaten in Microsoft Intune.
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Apparaten opnieuw opstarten met Microsoft Intune - Azure | Microsoft Docs
+description: Gebruik de externe actie Opnieuw opstarten om Windows- en iOS-apparaten opnieuw op te starten met Microsoft Intune in Azure Portal.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 98b3403e3f45e1aa7169937a05692686d97d7362
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Apparaten extern opnieuw opstarten met Intune
 
@@ -34,18 +33,17 @@ De apparaatactie **Opnieuw opstarten** zorgt ervoor dat het apparaat dat kiest, 
 - iOS: ondersteund
 
     > [!Note]  
-    > Deze opdracht vereist toegangsrechten tot apparaten onder supervisie en **Apparaatvergrendeling**. Het apparaat wordt onmiddellijk opnieuw opgestart. Met een toegangscode vergrendelde iOS-apparaten wordt niet opnieuw verbonden met een Wi-Fi-netwerk na opnieuw te zijn opgestart; na opnieuw te zijn opgestart kunnen deze mogelijk niet communiceren met de server.
+    > Voor deze opdracht is een apparaat onder supervisie en het vereist toegangsrecht **Apparaatvergrendeling** vereist. Het apparaat wordt onmiddellijk opnieuw opgestart. iOS-apparaten die met een wachtwoordcode zijn vergrendeld, worden na het opnieuw opstarten niet aan een Wi-Fi-netwerk toegevoegd. Nadat het apparaat opnieuw is opgestart, kan het mogelijk niet meer communiceren met de server.
 - macOS: niet ondersteund
 - Android: niet ondersteund
 
-## <a name="how-to-restart-a-device"></a>Apparaten opnieuw opstarten
+## <a name="restart-a-device"></a>Apparaten opnieuw opstarten
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies **Alle apparaten** op de blade **Apparaten**.
-5. Kies in de lijst met apparaten die u beheert, een apparaat, kies **...Meer** en kies vervolgens de externe apparaatactie **Opnieuw opstarten**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaten** > **Alle apparaten**.
+4. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer **Meer** en selecteer de externe apparaatactie **Opnieuw opstarten**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de status wilt weergeven van de actie die u zojuist hebt genomen, kiest u op de blade **Apparaten** de optie **Apparaatacties**.
+- Selecteer **Apparaten** > **Apparaatacties** om de status van de apparaatactie **Opnieuw opstarten** te bekijken.

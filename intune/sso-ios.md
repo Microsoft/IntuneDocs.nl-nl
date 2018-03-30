@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
-titlesuffix: 
+titlesuffix: ''
 description: Ontdek hoe u Microsoft Intune kunt configureren voor eenmalige aanmelding vanaf iOS-apparaten.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
 
@@ -90,7 +90,7 @@ De patronen `http://.com` en `https://.com` komen overeen met respectievelijk al
 
 Geef aan welke apps op apparaten van eindgebruikers gebruik kunnen maken van de nettolading voor eenmalige aanmelding.
 
-De matrix `AppIdentifierMatches` moet tekenreeksen bevatten die overeenkomen met de app-bundel-id's. Deze tekenreeksen kunnen exacte overeenkomsten zijn (bijvoorbeeld: `com.contoso.myapp`) of er kan hiermee een overeenkomend voorvoegsel voor de bundel-id worden opgegeven door het jokerteken *\ te gebruiken. Het jokerteken moet worden weergegeven na een punt (.) en kan slechts één keer worden weergegeven aan het einde van de tekenreeks (bijvoorbeeld: `com.contoso.*`). Wanneer een jokerteken wordt opgenomen, krijgt elke app waarvan de bundel-id begint met het voorvoegsel toegang tot het account.
+De matrix `AppIdentifierMatches` moet tekenreeksen bevatten die overeenkomen met de app-bundel-id's. Deze tekenreeksen kunnen exacte overeenkomsten zijn (bijvoorbeeld: `com.contoso.myapp`) of er kan hiermee een overeenkomend voorvoegsel voor de bundel-id worden opgegeven door het jokerteken \* te gebruiken. Het jokerteken moet worden weergegeven na een punt (.) en kan slechts één keer worden weergegeven aan het einde van de tekenreeks (bijvoorbeeld: `com.contoso.*`). Wanneer een jokerteken wordt opgenomen, krijgt elke app waarvan de bundel-id begint met het voorvoegsel toegang tot het account.
 
 Het veld **App-naam** wordt gebruikt voor het toevoegen van een gebruiksvriendelijke naam om u te helpen de bundel-id te identificeren.
 

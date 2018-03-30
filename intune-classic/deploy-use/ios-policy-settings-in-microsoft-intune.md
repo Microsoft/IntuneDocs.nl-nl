@@ -1,25 +1,25 @@
 ---
 title: Beleidsinstellingen voor iOS
 description: Maak beleid waarmee instellingen en functies worden beheerd op iOS-apparaten die u met Intune beheert.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Instellingen voor iOS-beleid in Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/12/2017
 
 Intune biedt diverse ingebouwde algemene instellingen die u op iOS-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
-## <a name="general-configuration-policy-settings"></a>Instellingen voor algemeen configuratiebeleid
+## <a name="general-configuration-policy-settings"></a>Algemene instellingen voor configuratiebeleid
 
 Gebruik het **algemene iOS-configuratiebeleid** van Microsoft Intune om instellingen te configureren voor:
 
@@ -222,7 +222,7 @@ Als u een app-URL wilt opgeven in de lijst met compatibele en niet-compatibele a
 
 2. Kopieer de URL van de pagina en gebruik deze als de URL voor het configureren van de lijst met compatibele of niet-compatibele apps of de app die u wilt uitvoeren in kioskmodus.
 
-**Voorbeeld:** Zoek naar **Microsoft Word voor iPad**. De URL die u gebruikt, is **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Voorbeeld:** Zoek naar **Microsoft Word voor iPad**. U gebruikt hiervoor de URL **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.
@@ -383,5 +383,5 @@ Voordat u begint, moet u de Apple Configurator hebben geïnstalleerd en een conf
 |**Configuratieprofielbestand**|Kies **Importeren** en blader vervolgens naar het configuratieprofiel dat u hebt gemaakt met de Apple Configurator. **Opmerking:** controleer of de instellingen die u vanuit het hulpprogramma Apple Configurator exporteert, compatibel zijn met de iOS-versie op de apparaten waarop u het aangepaste iOS-beleid implementeert. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).|
     |**Configuratieprofieldetails**|Hiermee geeft u de XML-code weer voor het configuratieprofiel dat u hebt geïmporteerd.|
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

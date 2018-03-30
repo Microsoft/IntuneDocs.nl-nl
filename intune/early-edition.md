@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>De vroege editie voor Microsoft Intune - maart 2018
 
@@ -51,11 +51,11 @@ Met een on-premises Exchange Connector voor Intune kunt u apparaattoegang tot uw
 Nieuwe VPN-profielen gemaakt voor Cisco AnyConnect voor iOS werken met Cisco AnyConnect 4.0.7x en hoger. Bestaande iOS Cisco AnyConnect VPN-profielen krijgen het label **Cisco Legacy AnyConnect** en blijven op dezelfde manier werken met Cisco AnyConnect 4.0.5x .
 
 > [!NOTE]
-> Deze wijziging is alleen voor iOS; er blijft slechts één Cisco AnyConnect-optie voor Android, Android for Work en macOS. 
+> Deze wijziging is alleen voor iOS; er blijft slechts één Cisco AnyConnect-optie voor Android, Android for Work en macOS.
 
 #### <a name="more-information"></a>Meer informatie
 
-U moet een nieuw iOS Cisco AnyConnect VPN-profiel maken voor de ondersteuning van de nieuwe app, omdat de nieuwe Cisco AnyConnect-app en de Cisco Legacy AnyConnect-app verschillende apps zijn. Als u de AnyConnect-client in uw omgeving beheert, moet u ook de nieuwe Cisco AnyConnect-app implementeren. Als u een upgrade wilt voltooien, moet u ook uw Cisco Legacy AnyConnect VPN-profiel wissen en de Cisco Legacy AnyConnect-app verwijderen. 
+U moet een nieuw iOS Cisco AnyConnect VPN-profiel maken voor de ondersteuning van de nieuwe app, omdat de nieuwe Cisco AnyConnect-app en de Cisco Legacy AnyConnect-app verschillende apps zijn. Als u de AnyConnect-client in uw omgeving beheert, moet u ook de nieuwe Cisco AnyConnect-app implementeren. Als u een upgrade wilt voltooien, moet u ook uw Cisco Legacy AnyConnect VPN-profiel wissen en de Cisco Legacy AnyConnect-app verwijderen.
 
 NAC-integratie (Network Access Control) werkt in de eerste release niet voor de nieuwe AnyConnect-client. We werken samen met Cisco om NAC-integratie te bieden in een toekomstige versie van Intune.
 
@@ -64,7 +64,7 @@ NAC-integratie (Network Access Control) werkt in de eerste release niet voor de 
 Verbeterde jailbreakdetectie is een nieuwe nalevingsinstelling die de manier waarop Intune opengebroken apparaten evalueert, verbetert. De instelling zorgt ervoor dat het apparaat regelmatiger incheckt bij Intune, waarvoor de locatie-services van het apparaat worden gebruikt en wat invloed heeft op het accugebruik.
 
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Mogelijkheid om vereiste line-of-business-apps (LOB) te implementeren voor alle gebruikers op apparaten met Windows 10 Desktop <!-- 1627835 RS4 -->
-Klanten kunnen vereiste Windows 10 line-of-business-apps implementeren om in apparaatcontexten te installeren. Hierdoor worden deze apps beschikbaar voor alle gebruikers op het apparaat. Dit is alleen van toepassing op Windows 10 Desktop-apparaten. 
+Klanten kunnen vereiste Windows 10 line-of-business-apps implementeren om in apparaatcontexten te installeren. Hierdoor worden deze apps beschikbaar voor alle gebruikers op het apparaat. Dit is alleen van toepassing op Windows 10 Desktop-apparaten.
 
 ### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>Line-of-business-apps (LOB) voor Microsoft Intune verlopen <!-- 748789 -->
 In Azure Portal waarschuwt Intune u met betrekking tot line-of-business-apps die bijna verlopen. Nadat een nieuwe versie van de line-of-business-app is geüpload, verwijdert Intune de melding over het verlopen uit de lijst met apps.
@@ -73,10 +73,10 @@ In Azure Portal waarschuwt Intune u met betrekking tot line-of-business-apps die
 Gebruikers die een apparaat inschrijven via de bedrijfsportal op Windows 10 build 1703 en hoger, kunnen de eerste stap van de inschrijving voltooien zonder de app te verlaten.
 
 ### <a name="new-management-name-column----1333586---"></a>Nieuwe kolom Naam voor beheer <!-- 1333586 -->
-Een nieuwe kolom met de naam **Naam voor beheer** wordt toegevoegd aan de blade voor apparaten. Dit is een automatisch gegenereerde, niet bewerkbare naam die per apparaat wordt toegewezen op basis van de volgende formule: 
+Een nieuwe kolom met de naam **Naam voor beheer** wordt toegevoegd aan de blade voor apparaten. Dit is een automatisch gegenereerde, niet bewerkbare naam die per apparaat wordt toegewezen op basis van de volgende formule:
 - Standaardnaam voor alle apparaten: <username>_<devicetype>_<enrollmenttimestamp>
-- Voor bulksgewijs toegevoegde apparaten: < PackageId/ProfileId >_<DeviceType>_<EnrollmentTime> 
- 
+- Voor bulksgewijs toegevoegde apparaten: < PackageId/ProfileId >_<DeviceType>_<EnrollmentTime>
+
 Dit is een optionele kolom in de blade voor apparaten. Deze is niet standaard beschikbaar en u kunt de kolom alleen openen via de kolomkiezer. De naam van het apparaat wordt niet beïnvloed door deze nieuwe kolom.
 
 ### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>Nieuwe instellingen voor apparaatconfiguratieprofiel voor Windows Defender Security Center<!-- 1631906 -->
@@ -107,19 +107,19 @@ Deze instellingen zijn te vinden onder **Apparaatconfiguratie** -> **Profiel mak
 ### <a name="configure-the-mac-application-firewall----1690461---"></a>De firewall van Mac-toepassingen configureren <!-- 1690461 -->
 
 U kunt de firewall van Mac-toepassingen configureren. U kunt deze gebruiken om verbindingen per toepassing te controleren, in plaats van per poort. Zo kunt u beter profiteren van de voordelen van firewallbeveiliging. Bovendien helpt het te voorkomen dat ongewenste apps gebruikmaken van netwerkpoorten die zijn geopend voor legitieme apps.
- 
+
 Deze functie kunt u vinden onder **Apparaatconfiguratie** -> **Profiel maken** -> **macOS** -> **Eindpuntbeveiliging**.
 
 Wanneer u de Firewall-instelling hebt ingeschakeld, kunt u de firewall configureren met behulp van twee strategieën:
 
 - Alle binnenkomende verbindingen blokkeren
 
-   U kunt alle binnenkomende verbindingen voor de doelapparaten blokkeren. Als u ervoor kiest om dit te doen, worden binnenkomende verbindingen voor alle apps geblokkeerd. 
+   U kunt alle binnenkomende verbindingen voor de doelapparaten blokkeren. Als u ervoor kiest om dit te doen, worden binnenkomende verbindingen voor alle apps geblokkeerd.
 
 - Specifieke apps blokkeren of toestaan
 
    U kunt specifieke apps toestemming geven binnenkomende verbindingen te ontvangen of u kunt apps blokkeren. U kunt ook de verborgen modus inschakelen om reacties op peilverzoeken te voorkomen.
- 
+
 #### <a name="more-information"></a>Meer informatie
 
 - Alle binnenkomende verbindingen blokkeren
@@ -134,7 +134,7 @@ Wanneer u de Firewall-instelling hebt ingeschakeld, kunt u de firewall configure
 - Verborgen modus
 
    Schakel deze optie in om te voorkomen dat de computer reageert op peilverzoeken. De computer reageert nog wel op binnenkomende verzoeken voor toegestane apps. Onverwachte aanvragen, zoals ICMP (ping), worden genegeerd.
- 
+
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>De Help- en Feedback-ervaring op de bedrijfsportal-app voor Android bijwerken <!--1631531 -->
 
@@ -143,16 +143,16 @@ We updaten de Help- en Feedback-ervaring op de bedrijfsportal-app voor Android z
 ### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Aangepaste boekcategorieën voor eBooks in het VPP-programma (volume-aankoopprogramma) <!-- 1488911 -->
 U kunt aangepaste eBook-categorieën maken en vervolgens VPP eBooks toewijzen aan deze aangepaste eBook-categorieën. Eindgebruikers kunnen de nieuwe eBook-categorieën en de boeken die zijn toegewezen aan de categorieën bekijken.
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Bedrijfsportal-app voor visuele Android-updates <!--976944 -->
+### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>HoloLens en Surface Hub nu worden weergegeven in de apparaatlijsten <!--1725868-->
 
-We werken de bedrijfsportal-app voor Android bij om de richtlijnen voor [Ontwerp van materiaal](https://material.io/) van Android te volgen. We publiceren afbeeldingen van de nieuwe pictogrammen in het artikel [Wat is er nieuw in de UI van de app](whats-new-app-ui.md) wanneer de app wordt uitgebracht. 
+We voegen ondersteuning toe voor het weergeven van HoloLens- en Surface Hub-apparaten die via Intune zijn geregistreerd bij de bedrijfsportal-app voor Android.
 
 ### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Mobiele ondersteuning in Edge voor beveiligingsbeleid voor apps in Intune <!-- 1817882 -->
 
 De Microsoft Edge-browser voor mobiele apparaten biedt ondersteuning voor het beveiligingsbeleid voor aps dat in Intune is gedefinieerd.
 
 ### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>De volledige DN-naam gebruiken als onderwerp voor het SCEP-certificaat <!--2221763 eeready-->
-Wanneer u een SCEP-certificaatprofiel maakt, voert u de naam van het onderwerp in. Als naam van het onderwerp kunt u de volledige DN-naam gebruiken. Selecteer **Aangepast** bij **Onderwerpnaam** en voer `CN={{OnPrem_Distinguished_Name}}` in. Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD. 
+Wanneer u een SCEP-certificaatprofiel maakt, voert u de naam van het onderwerp in. Als naam van het onderwerp kunt u de volledige DN-naam gebruiken. Selecteer **Aangepast** bij **Onderwerpnaam** en voer `CN={{OnPrem_Distinguished_Name}}` in. Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
 
 ### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Op iOS-apparaten wordt elke vijftien minuten om een pincode gevraagd <!--1550837 eeready-->
 Nadat een nalevings- of configuratiebeleid op een iOS-apparaat is toegepast, wordt gebruikers elke vijftien minuten gevraagd een pincode in te stellen. Gebruikers wordt continu gevraagd een pincode in te stellen totdat de code is ingesteld.
@@ -169,11 +169,11 @@ Van toepassing op: apparaten met Android-werkprofiel voor Android 6.0 en hoger.
 
 ### <a name="schedule-your-automatic-updates---1805514---"></a>Automatische updates plannen <!--1805514 -->
 
-In Intune kunt u met behulp van de [instellingen voor Windows 10-updatering](windows-update-for-business-configure.md) bepalen hoe automatische updates worden geïnstalleerd. U kunt terugkerende updates plannen en de week, de dag en het tijdstip opgeven. 
+In Intune kunt u met behulp van de [instellingen voor Windows 10-updatering](windows-update-for-business-configure.md) bepalen hoe automatische updates worden geïnstalleerd. U kunt terugkerende updates plannen en de week, de dag en het tijdstip opgeven.
 
 ### <a name="disable-checks-on-device-restart---1805490---"></a>Controles bij opnieuw starten van apparaat uitschakelen <!--1805490 -->
 
-In Intune kunt u [software-updates beheren](windows-update-for-business-configure.md). De eigenschap **Controles voor opnieuw starten** wordt toegevoegd en standaard ingeschakeld. Als u de standaardcontroles wilt overslaan die worden uitgevoerd wanneer u een apparaat opnieuw start (controle van actieve gebruikers, batterijniveau, enzovoort), selecteert u **Overslaan**. 
+In Intune kunt u [software-updates beheren](windows-update-for-business-configure.md). De eigenschap **Controles voor opnieuw starten** wordt toegevoegd en standaard ingeschakeld. Als u de standaardcontroles wilt overslaan die worden uitgevoerd wanneer u een apparaat opnieuw start (controle van actieve gebruikers, batterijniveau, enzovoort), selecteert u **Overslaan**.
 
 <!-- 1802 start -->
 
@@ -183,15 +183,15 @@ Op de overzichtspagina voor inschrijvingen kunt u de trend van mislukte inschrij
 
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>De bedrijfsportalthema's aanpassen met hexadecimale codes <!--1049561 -->
 
-U kunt de themakleur in de bedrijfsportal-apps aanpassen met behulp van hexadecimale codes. Wanneer u de hexadecimale code invoert, wordt door Intune volgens de [WCAG 2.0-standaarden](http://www.w3.org/TR/WCAG20) bepaald met welke tekstkleur de hoogste mate van contrast tussen de tekstkleur en de achtergrondkleur wordt bereikt. U kunt in **Mobiele apps** > **Bedrijfsportal** bekijken hoe de tekstkleur en uw bedrijfslogo bij deze kleur worden weergegeven. 
+U kunt de themakleur in de bedrijfsportal-apps aanpassen met behulp van hexadecimale codes. Wanneer u de hexadecimale code invoert, wordt door Intune volgens de [WCAG 2.0-standaarden](http://www.w3.org/TR/WCAG20) bepaald met welke tekstkleur de hoogste mate van contrast tussen de tekstkleur en de achtergrondkleur wordt bereikt. U kunt in **Mobiele apps** > **Bedrijfsportal** bekijken hoe de tekstkleur en uw bedrijfslogo bij deze kleur worden weergegeven.
 
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Er worden nieuwe Windows Defender Credential Guard-instellingen toegevoegd aan de Endpoint Protection-instellingen <!--1102252 --> 
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Er worden nieuwe Windows Defender Credential Guard-instellingen toegevoegd aan de Endpoint Protection-instellingen <!--1102252 -->
 
-Nieuwe instellingen voor [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] worden toegevoegd aan **Apparaatconfiguratie** > **Profielen** > **Endpoint Protection**. De volgende instellingen worden toegevoegd: 
+Nieuwe instellingen voor [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] worden toegevoegd aan **Apparaatconfiguratie** > **Profielen** > **Endpoint Protection**. De volgende instellingen worden toegevoegd:
 
 - Platformbeveiligingsniveau: geef aan of het platformbeveiligingsniveau wordt ingeschakeld bij de volgende keer dat de computer wordt opgestart. Bij beveiliging op basis van virtualisatie is beveiligd opstarten vereist. Beveiliging op basis van virtualisatie kan eventueel worden ingeschakeld met behulp van DMA-beveiligingen (Direct Memory Access). Voor DMA-beveiligingen is hardwareondersteuning vereist en deze worden alleen ingeschakeld op apparaten die juist zijn geconfigureerd.
-- Beveiliging op basis van virtualisatie: geef aan of beveiliging op basis van virtualisatie wordt ingeschakeld bij de volgende keer dat de computer wordt opgestart. 
-- Windows Defender Credential Guard: schakel Credential Guard met beveiliging op basis van virtualisatie in om referenties te kunnen beveiligen bij de volgende keer dat de computer wordt opgestart, wanneer het platformbeveiligingsniveau met beveiligd opstarten en de beveiliging op basis van virtualisatie beide zijn ingeschakeld. U kunt kiezen uit de volgende opties: **Uitgeschakeld**, **Ingeschakeld met UEFI-vergrendeling**, **Ingeschakeld zonder vergrendeling** en **Niet geconfigureerd**. 
+- Beveiliging op basis van virtualisatie: geef aan of beveiliging op basis van virtualisatie wordt ingeschakeld bij de volgende keer dat de computer wordt opgestart.
+- Windows Defender Credential Guard: schakel Credential Guard met beveiliging op basis van virtualisatie in om referenties te kunnen beveiligen bij de volgende keer dat de computer wordt opgestart, wanneer het platformbeveiligingsniveau met beveiligd opstarten en de beveiliging op basis van virtualisatie beide zijn ingeschakeld. U kunt kiezen uit de volgende opties: **Uitgeschakeld**, **Ingeschakeld met UEFI-vergrendeling**, **Ingeschakeld zonder vergrendeling** en **Niet geconfigureerd**.
   - Met de optie Uitgeschakeld wordt Credential Guard extern uitgeschakeld als deze eerder is ingeschakeld met de optie Ingeschakeld zonder vergrendeling.
 
   - Bij de optie Ingeschakeld met UEFI-vergrendeling kan Credential Guard niet worden uitgeschakeld met de registersleutel of via Groepsbeleid. Als u Credential Guard wilt uitschakelen nadat deze instelling is gebruikt, moet u het groepsbeleid instellen op Uitgeschakeld en de beveiligingsfunctionaliteit van elke computer, met een fysiek aanwezige gebruiker, verwijderen om de configuratie die is bewaard in UEFI te wissen. Zolang de UEFI-configuratie behouden blijft, is Credential Guard ingeschakeld.
@@ -208,7 +208,7 @@ U kunt beveiligingsinstellingen op Windows 10-apparaten inschakelen met de nieuw
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Nieuwe printerinstellingen voor onderwijsprofielen <!-- 1308900 -->
 
-Er komen voor onderwijsprofielen nieuwe instellingen beschikbaar onder de categorie **Printers**: **Printers**, **Standaardprinter**, **Nieuwe printers toevoegen**. 
+Er komen voor onderwijsprofielen nieuwe instellingen beschikbaar onder de categorie **Printers**: **Printers**, **Standaardprinter**, **Nieuwe printers toevoegen**.
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Inrichtingsconfiguratie voor iOS-apps <!-- 1581650 -->
 U kunt inrichtingsprofielen voor iOS-apps toewijzen om te voorkomen dat uw apps verlopen door beveiligingsgroepen op te nemen of uit te sluiten.
@@ -265,5 +265,3 @@ Er zijn geen actieve meldingen op dit moment.
 
 ### <a name="see-also"></a>Zie ook
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.
-
-

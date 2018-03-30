@@ -1,25 +1,25 @@
 ---
 title: Veelgestelde vragen over MAM en app-beveiliging
 description: In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
-keywords: 
+keywords: ''
 author: oydang
 ms.author: oydang
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
-ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
+ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -35,12 +35,12 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 **Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM-WE kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Bekijk de officiële lijst met de [door Intune beheerde apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
 **Welke apparaatconfiguraties ondersteunt MAM?** Intune MAM ondersteunt twee configuraties:
-  1. **Intune MDM + MAM**: dit is de eerste configuratie die door MAM wordt ondersteund wanneer de app voor het eerst wordt gestart. IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Voor het beheren van apps met MDM + MAM moeten klanten de zelfstandige Intune-console op https://manage.microsoft.com gebruiken.
+  1. **Intune MDM + MAM**: dit is de eerste configuratie die door MAM wordt ondersteund wanneer de app voor het eerst wordt gestart. IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Als klanten apps willen beheren met MDM + MAM, moeten zij de zelfstandige Intune-console op https://manage.microsoft.com gebruiken.
 
-  2. **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Voor het beheren van apps met MAM-WE moeten klanten de Intune-console Azure Portal op http://portal.azure.com gebruiken.
+  2. **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Als klanten apps willen beheren met MAM-WE, moeten zij de Intune-console in Azure Portal op http://portal.azure.com gebruiken.
 
 
-## <a name="app-protection-policies"></a>Beleidsregels voor de beveiliging van apps
+## <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
 **Wat zijn beleidsregels voor de beveiliging van apps**? Beleidsregels voor de beveiliging van apps zijn regels die ervoor zorgen dat de bedrijfsgegevens die zijn opgenomen in een app, veilig of binnen de app blijven. Een beleidsregel kan een regel zijn die wordt afgedwongen wanneer de gebruiker bedrijfsgegevens probeert te openen of te verplaatsen, of een reeks acties die zijn verboden of worden gecontroleerd wanneer de gebruiker zich in de app bevindt.
 
@@ -147,7 +147,7 @@ Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt
 
 **Ik kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor het overdragen van gegevens is ingesteld op 'alleen voor beheerde apps' of 'geen apps'. Ontstaat hierdoor geen gegevenslek?** De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _**'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_. U kunt dit controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 - [Mobile Application Management-beleidsinstellingen voor Android in Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
 - [Mobile Application Management-beleidsinstellingen voor iOS](../deploy-use/ios-mam-policy-settings.md)
 - [De Mobile Application Management-configuratie valideren](../deploy-use/validate-mobile-application-management.md)
