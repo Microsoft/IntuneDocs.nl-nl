@@ -1,19 +1,19 @@
 ---
 title: Toegang tot uw bedrijfsbronnen instellen | Microsoft Docs
 description: Hier wordt beschreven hoe u uw iOS-apparaat kunt laten beheren door Intune
-keywords: 
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
@@ -45,7 +45,7 @@ Uw bedrijf heeft veel vertrouwelijke informatie in e-mail, bestanden, netwerken,
 |Wat u ziet|Uitleg|
 |---|---|
 |![Aanmeldingsscherm bedrijfsportal met de knop 'Aanmelden' onderaan.](./media/ios-0-cp-enroll-1711.png)|Open de bedrijfsportal-app en tik op **Aanmelden**.|
-|![Prompt voor aanmelden bij Azure AD.](./media/ios-0a-cp-enroll-1711.png)|Voer het e-mailadres van uw bedrijf in en tik op **Volgende**.|
+|![Prompt voor aanmelden bij Azure AD.](./media/ios-0a-cp-enroll-1711.png)|Voer uw gebruikersnaam van uw bedrijf in en tik op **Volgende**.|
 |![Prompt voor Azure AD-wachtwoord.](./media/ios-0b-cp-enroll-1711.png)|Voer uw wachtwoord in en tik op **Aanmelden**.|
 |![Beginscherm voor laden van bedrijfsbronnen.](./media/ios-1-cp-enroll-1711.png)|Wacht totdat het laden is voltooid.|
 |![Voorwaarden.](./media/ios-2-cp-enroll-1711.png)|Lees en **ga akkoord met alle** voorwaarden.|
