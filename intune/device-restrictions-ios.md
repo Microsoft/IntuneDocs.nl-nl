@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune-apparaatbeperkingsinstellingen voor iOS
-titleSuffix: 
+titleSuffix: ''
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op iOS-apparaten.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -40,7 +40,6 @@ Dit geldt ook voor instellingen die toegankelijk zijn vanuit de app voor iOS-ins
 - **Het gebruik van de optie voor het wissen van alle inhoud en instellingen op het apparaat (alleen onder supervisie)**: hiermee staat u de gebruiker toe de optie voor het wissen van alle inhoud en instellingen op het apparaat te gebruiken.
 - **Wijzigen van apparaatnaam (alleen onder supervisie)**: hiermee staat u de gebruiker toe de naam van het apparaat te wijzigen.
 - **Wijzigen van de meldingsinstellingen (alleen onder supervisie)**: hiermee staat u de gebruiker toe de instellingen voor apparaatmeldingen te wijzigen.
-- **Achtergrond wijzigen (alleen onder supervisie)**: hiermee staat u de gebruiker toe de achtergrond van het apparaat te wijzigen.
 - **Het wijzigen van de vertrouwensinstellingen voor bedrijfsapps (alleen onder supervisie)**: hiermee kan de gebruiker aangeven apps te vertrouwen die niet uit de App Store zijn gedownload.
 - **Wijzigingen in configuratieprofielen (alleen onder toezicht)**: hiermee staat u de gebruiker toe configuratieprofielen te installeren.
 - **Activeringsslot (alleen onder toezicht)**: hiermee schakelt u Activeringsslot in op iOS-apparaten in de supervisiemodus.
@@ -74,7 +73,6 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 - Sneltoetsen 
 - Wijzigingen van de wachtwoordcode 
 - Wijzigingen van de apparaatnaam 
-- Wijzigingen van de achtergrond 
 - Automatisch downloaden van apps 
 - Wijzigingen in Bedrijfsapps vertrouwen 
 - Apple Music 
@@ -170,7 +168,7 @@ Gebruik een zoekmachine om de app te zoeken die u wilt gebruiken in de iTunes Ap
 Kopieer de URL van de pagina en gebruik deze als de URL voor het configureren van de lijst met toegestane of niet-toegestane apps of voor een app die u wilt uitvoeren in kioskmodus.
 Apparaatprofielen die instellingen voor beperkte apps bevatten, moeten worden toegewezen aan groepen met gebruikers.
 
-Voorbeeld: Zoek naar Microsoft Word voor iPad. De URL die u gebruikt, is https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Voorbeeld: Zoek naar Microsoft Word voor iPad. U gebruikt hiervoor de URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > U kunt ook iTunes gebruiken om de app op te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de URL van de app te krijgen.
@@ -195,7 +193,7 @@ Als u een app-URL wilt opgeven in de lijst met apps, gebruikt u de volgende nota
 Gebruik een zoekmachine om de app te zoeken die u wilt gebruiken in de iTunes App Store en open de pagina voor de app.
 Kopieer de URL van de pagina en gebruik deze als de URL voor het configureren van de lijst met toegestane of niet-toegestane apps of voor een app die u wilt uitvoeren in kioskmodus.
 
-Voorbeeld: Zoek naar Microsoft Word voor iPad. De URL die u gebruikt, is https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Voorbeeld: Zoek naar Microsoft Word voor iPad. U gebruikt hiervoor de URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > U kunt ook de iTunes-software gebruiken om de app te zoeken en vervolgens de opdracht **Koppeling kopiëren** gebruiken om de app-URL te krijgen.

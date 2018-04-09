@@ -1,25 +1,25 @@
 ---
 title: Exchange Connector voor on-premises EAS
 description: Gebruik het Connector-hulpprogramma voor het inschakelen van de communicatie tussen de Intune-beheerconsole en de on-premises Exchange Server voor Exchange ActiveSync MDM.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Intune On-premises Exchange Connector installeren
 
@@ -62,7 +62,7 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de I
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor On-premises Exchange Connector downloaden
 
-1. Open op een ondersteund Windows Server-besturingssysteem voor On-premises Exchange Connector de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) (https://manage.microsoft.com) met een gebruikersaccount dat een beheerder is in de Exchange-tenant en dat een licentie heeft om Exchange Server te gebruiken.
+1. Open op een ondersteund Windows Server-besturingssysteem voor On-premises Exchange Connector de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) (https://manage.microsoft.com)) met een gebruikersaccount dat een beheerder is in de Exchange-tenant en dat een licentie heeft om Exchange Server te gebruiken.
 ![Exchange-verbinding instellen openen](../media/ExchangeConnector.gif)
 
 2.  Kies in het deelvenster met snelkoppelingen **Beheer**>**Mobile Device Management** > **Microsoft Exchange**>**Exchange-verbinding instellen**.

@@ -1,25 +1,25 @@
 ﻿---
 title: Een familienaam van een pakket (PFN) zoeken voor VPN per app
 description: Een PFN zoeken, zodat u VPN per app kunt configureren.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4b5d71e46fbc78ebadf52e96bb75eedecc291ee
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
 

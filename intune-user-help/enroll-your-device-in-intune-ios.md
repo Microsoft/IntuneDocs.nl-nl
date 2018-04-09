@@ -1,19 +1,19 @@
 ﻿---
 title: Toegang tot uw bedrijfsbronnen instellen | Microsoft Docs
 description: Hier wordt beschreven hoe u uw iOS-apparaat kunt laten beheren door Intune
-keywords: 
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser

@@ -1,24 +1,24 @@
 ---
 title: Uw MDM-instantie wijzigen naar Configuration Manager (hybride MDM)
 description: Informatie over het wijzigen van de MDM-instantie van een zelfstandige versie van Intune naar Configuration Manager (hybride MDM).
-keywords: 
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>De MDM-instantie wijzigen
 Vanaf Configuration Manager versie 1610 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Dit onderwerp bevat de benodigde stappen voor het wijzigen van een bestaande Microsoft Intune-tenant die is geconfigureerd in Intune en waarbij de MDM-instantie is ingesteld op **Microsoft Intune** (zelfstandige versie) naar **Configuration Manager** (hybride MDM), zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven.
@@ -51,7 +51,7 @@ Lees de volgende informatie ter voorbereiding op het wijzigen van de MDM-instant
 - Als u de zelfstandige versie van Intune gebruikt om iOS-apparaten te beheren voorafgaand aan de wijziging van MDM-instantie, moet u ervoor zorgen dat hetzelfde Apple Push Notification Service-certificaat (APNs) dat werd gebruikt in Intune wordt vernieuwd en gebruikt om de tenant opnieuw in te stellen in Configuration Manager (hybride).    
 
     > [!IMPORTANT]  
-    > Als er een ander APNs-certificaat wordt gebruikt voor hybride, worden ALLE eerder ingeschreven iOS-apparaten uitgeschreven en moet u het gehele inschrijvingsproces opnieuw doorlopen. Zorg dat u precies weet welk APNs-certificaat is gebruikt voor het beheren van iOS-apparaten in Intune voordat u de MDM-instantie wijzigt. Zoek de vermelding van dat certificaat in de Apple Push Certificates Portal (https://identity.apple.com), zorg dat u weet wie de gebruiker is van wie de Apple-id is gebruikt om het oorspronkelijke APNs-certificaat te maken, en zorg dat die gebruiker beschikbaar is om hetzelfde APNs-certificaat te vernieuwen als onderdeel van de wijziging naar de nieuwe MDM-instantie.  
+    > Als er een ander APNs-certificaat wordt gebruikt voor hybride, worden ALLE eerder ingeschreven iOS-apparaten uitgeschreven en moet u het gehele inschrijvingsproces opnieuw doorlopen. Zorg dat u precies weet welk APNs-certificaat is gebruikt voor het beheren van iOS-apparaten in Intune voordat u de MDM-instantie wijzigt. Zoek de vermelding van dat certificaat in de Apple Push Certificates Portal (https://identity.apple.com)), zorg dat u weet wie de gebruiker is van wie de Apple ID is gebruikt om het oorspronkelijke APNs-certificaat te maken, en zorg dat die gebruiker beschikbaar is om hetzelfde APNs-certificaat te vernieuwen als onderdeel van de wijziging naar de nieuwe MDM-instantie.  
 
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>De MDM-instantie wijzigen naar Configuration Manager
 Het proces voor het wijzigen van de MDM-instantie naar Configuration Manager (hybride) omvat de volgende hoofdstappen:  

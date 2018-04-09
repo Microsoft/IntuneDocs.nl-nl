@@ -1,25 +1,25 @@
 ---
 title: Apple DEP-beheer voor iOS-apparaten
 description: Draadloos een registratieprofiel waarmee iOS-apparaten worden geregistreerd die via het Device Enrollment Program (DEP) zijn aangeschaft, implementeren om Apple-apparaten te beheren.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>iOS-apparaten in bedrijfseigendom met het Device Enrollment Program inschrijven
 
@@ -29,13 +29,14 @@ Microsoft Intune kan 'draadloos' een inschrijvingsprofiel implementeren op iOS-a
 
 >[!NOTE]
 >Inschrijving via DEP kan niet worden gebruikt bij de methode van de [apparaatinschrijvingsmanager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Als gebruikers hun iOS-apparaten registreren (via de bedrijfsportal-app) en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, wordt de registratie van het apparaat opgeheven bij Intune.
+>Daarnaast geldt dat als gebruikers hun iOS-apparaten registreren (bijvoorbeeld via de bedrijfsportal-app) en de serienummers van deze apparaten vervolgens worden geïmporteerd en toegewezen aan een DEP-profiel, de registratie van het apparaat wordt opgeheven bij Intune.
+> MacOS biedt op dit moment geen ondersteuning voor DEP.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Vereisten voor de inschrijving van iOS-apparaten met behulp van Apple DEP-beheer
 
 - [Een APNs-certificaat installeren](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- Uw organisatie moet lid worden van Apple DEP en apparaten via dat programma ophalen. Details van dit proces kunt u vinden op: [https://deploy.apple.com](https://deploy.apple.com). Voordelen van het programma zijn onder andere handsfree instellen, dus zonder dat elk apparaat via een USB-verbinding op een computer moet worden aangesloten.
+- Uw organisatie moet lid worden van Apple DEP en apparaten via dat programma ophalen. Details van dit proces zijn beschikbaar op: [https://deploy.apple.com](https://deploy.apple.com). Voordelen van het programma zijn onder andere handsfree instellen, dus zonder dat elk apparaat via een USB-verbinding op een computer moet worden aangesloten.
 
 - Voordat u iOS-apparaten van het bedrijf met DEP kunt inschrijven, moet u een DEP-token van Apple ontvangen. Intune kan met dit token informatie synchroniseren over apparaten binnen uw bedrijf die aan DEP deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
@@ -53,7 +54,7 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 ### <a name="get-a-device-enrollment-program-token"></a>Een Device Enrollment Program-token ophalen
 
-1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf. Deze Apple ID moet later worden gebruikt om uw DEP-token te verlengen.
+1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com)) en meld u aan met de Apple ID van uw bedrijf. Deze Apple ID moet later worden gebruikt om uw DEP-token te verlengen.
 
 2.  Ga in de portal voor apparaatinschrijving naar **Programma apparaatinschrijving** &gt; **Servers beheren** en kies **MDM-server toevoegen**.
 
@@ -130,7 +131,7 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 ### <a name="assign-dep-devices-for-management"></a>DEP-apparaten toewijzen voor beheer
 
-1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com) en meld u aan met de Apple-id van uw bedrijf.
+1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com)) en meld u aan met de Apple ID van uw bedrijf.
 
 2. Ga naar **Implementatieprogramma** &gt; **Programma apparaatinschrijving** &gt; **Apparaten beheren**.
 

@@ -1,25 +1,25 @@
 ---
 title: Problemen met voorwaardelijke toegang oplossen
 description: Dit kunt u doen wanneer uw gebruikers geen toegang krijgen tot bedrijfsbronnen via de voorwaardelijke toegang van Intune.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
@@ -118,7 +118,7 @@ Als deze procedures voor probleemoplossing uw probleem niet verhelpen, wordt u m
 ### <a name="exchange-connector-logs"></a>Logboeken van de Exchange Connector
 
 #### <a name="general-log-information"></a>Algemene logboekgegevens
-Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx') gebruiken. Dit hulpprogramma vereist dat u de Windows Server SDK downloadt.
+Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx) gebruiken. Dit hulpprogramma vereist dat u de Windows Server SDK downloadt.
 
 >[!NOTE]
 >De logboeken bevinden zich in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. De logboeken zijn opgenomen in een reeks van 30 logboekbestanden. De reeks begint bij *Connector0.log* en eindigt bij *Connector29.log*. Logboeken lopen van het ene logboek over in het andere nadat 10 MB aan gegevens in een logboek zijn verzameld. Zodra de logboeken bij Connector29 aanbelanden, wordt alles opnieuw gestart bij Connector0, waarbij eerdere logboeken worden overschreven.

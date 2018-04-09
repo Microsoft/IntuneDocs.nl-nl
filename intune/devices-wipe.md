@@ -1,79 +1,80 @@
 ---
-title: Fabrieksinstellingen terugzetten gebruiken of bedrijfsgegevens verwijderen met behulp van Microsoft Intune
-titlesuffix: 
-description: Informatie over het verwijderen van bedrijfsgegevens op een apparaat of het terugzetten naar de fabrieksinstellingen.
-keywords: 
-author: nathbarn
-ms.author: nathbarn
+title: Bedrijfsgegevens van apparaten verwijderen met Microsoft Intune - Azure | Microsoft Docs
+description: Voor apparaten met Android, Android for Work, iOS, macOS of Windows kunt u Microsoft Intune gebruiken om bedrijfsgegevens van een apparaat te verwijderen of de fabrieksinstellingen terug te zetten. Daarnaast kunt u een apparaat uit Azure Active Directory verwijderen.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b56f7d7bcf576a0b2342c7c5394c08661b6a45fd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-U kunt apparaten van Intune verwijderen die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. U kunt dit doen met de opdracht **Bedrijfsgegevens verwijderen** of **Fabrieksinstellingen terugzetten**. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.
+U kunt apparaten van Intune verwijderen die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. U kunt dit doen met de actie **Bedrijfsgegevens verwijderen** of **Fabrieksinstellingen terugzetten**. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.
 
 > [!NOTE]
-> Voer de opdracht **Fabrieksinstellingen terugzetten** of **Bedrijfsgegevens verwijderen** uit voor alle apparaten die aan een gebruiker zijn gekoppeld voordat u een gebruiker verwijderd van Azure Active Directory. Als u gebruikers met beheerde apparaten van Azure Active Directory verwijdert, kan Intune niet langer fabrieksinstellingen uitgeven of bedrijfsgegevens van die apparaten verwijderen.
+> Gebruik de actie **Fabrieksinstellingen terugzetten** of **Bedrijfsgegevens verwijderen** voor alle apparaten die aan een gebruiker zijn gekoppeld voordat u een gebruiker verwijdert uit Azure Active Directory (Azure AD). Als u gebruikers met beheerde apparaten uit Azure AD verwijdert, kan Intune geen fabrieksinstellingen meer uitgeven of bedrijfsgegevens van die apparaten verwijderen.
 
 ## <a name="factory-reset"></a>Fabrieksinstellingen terugzetten
 
-Met **Fabrieksinstellingen terugzetten** worden de fabrieksinstellingen van een apparaat hersteld, en worden alle bedrijfs- en gebruikersgegevens en -instellingen verwijderd. Het apparaat wordt uit Intune-beheer verwijderd. Fabrieksinstellingen terugzetten is nuttig voor het opnieuw instellen van een apparaat, wanneer het apparaat aan een nieuwe gebruiker wordt gegeven of wanneer het apparaat is verloren of gestolen. Wees voorzichtig bij het selecteren van Fabrieksinstellingen terugzetten. De gegevens op het apparaat kunnen niet worden hersteld.
+Met de actie **Fabrieksinstellingen terugzetten** zet u de standaardfabrieksinstellingen terug op het apparaat. Hiermee verwijdert u alle bedrijfs- en gebruikersgegevens en -instellingen. Het apparaat wordt uit Intune-beheer verwijderd. Fabrieksinstellingen terugzetten is nuttig wanneer u een apparaat opnieuw wilt instellen voordat u het aan een nieuwe gebruiker geeft of wanneer een apparaat is verloren of gestolen. Wees voorzichtig bij het selecteren van **Fabrieksinstellingen terugzetten**. De gegevens op het apparaat kunnen niet worden hersteld.
 
-### <a name="to-factory-reset-a-device"></a>Fabrieksinstellingen terugzetten op een apparaat gebruiken
+### <a name="factory-reset-a-device"></a>Fabrieksinstellingen terugzetten op een apparaat
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies **Alle apparaten** op de blade **Apparaten**.
-4. Kies de naam van het apparaat waarvoor u Fabrieksinstellingen terugzetten wilt gebruiken.
-5. Kies **Fabrieksinstellingen terugzetten** op de blade met de naam van het apparaat.
-6. Voor Windows 10 versie 1709 of hoger is er een extra optie voor 'Status inschrijving en gebruikersaccount behouden'. 
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaten** > **Alle apparaten**.
+4. Selecteer de naam van het apparaat waarvoor u Fabrieksinstellingen terugzetten wilt gebruiken.
+5. Selecteer **Fabrieksinstellingen terugzetten** in het deelvenster waarin de naam van het apparaat wordt weergegeven.
+6. Voor Windows 10 versie 1709 of hoger is ook de optie **Inschrijvingsstatus en gebruikersaccount behouden** aanwezig. 
     
-    |Blijven behouden via terugzetten van fabrieksinstellingen|Niet behouden|
+    |Behouden tijdens fabrieksinstellingen terugzetten|Niet behouden|
     | -------------|------------|
     |Gebruikersaccounts die zijn gekoppeld aan het apparaat|Gebruikersbestanden|
-    |Status van de machine \(lid van domein, lid van Azure Active Directory)| Door de gebruiker geïnstalleerde apps \(Store- en Win32-apps)|
-    |MDM-inschrijving|Niet-standaard apparaatinstellingen|
+    |Status van de machine \(lid van domein, lid van Azure AD)| Door de gebruiker geïnstalleerde apps \(Store- en Win32-apps)|
+    |MDM-inschrijving (Mobile Device Management)|Niet-standaard apparaatinstellingen|
     |Door OEM geïnstalleerde apps \(Store- en Win32-apps)||
     |Gebruikersprofiel||
-    |Gebruikersgegevens buiten het gebruikersprofiel||
+    |Gebruikersgegevens buiten gebruikersprofiel||
     |Autologon gebruiker|| 
     
          
-7. Kies **Ja** om te bevestigen dat de fabrieksinstellingen worden teruggezet.
+7. Selecteer **Ja** om te bevestigen dat u de fabrieksinstellingen wilt terugzetten.
 
-Als het apparaat is ingeschakeld en verbonden, wordt Fabrieksinstellingen terugzetten in minder dan 15 minuten aan alle typen apparaten doorgegeven.
+Als het apparaat is ingeschakeld en is verbonden, wordt de actie **Fabrieksinstellingen terugzetten** in minder dan 15 minuten aan alle typen apparaten doorgegeven.
 
 ## <a name="remove-company-data"></a>Bedrijfsgegevens verwijderen
 
-Met de opdracht **Bedrijfsgegevens verwijderen** worden gegevens (indien van toepassing), instellingen en e-mailprofielen van beheerde apps die door het gebruik van Intune zijn toegewezen, verwijderd. Met Bedrijfsgegevens verwijderen blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden. Het apparaat wordt uit Intune-beheer verwijderd. In de volgende tabel wordt beschreven welke gegevens worden verwijderd en wat het effect van Bedrijfsgegevens verwijderen is op de gegevens die achterblijven op het apparaat.
+Met de actie **Bedrijfsgegevens verwijderen** worden gegevens (indien van toepassing), instellingen en e-mailprofielen van beheerde apps verwijderd die via Intune zijn toegewezen. Met **Bedrijfsgegevens verwijderen** blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden. Het apparaat wordt uit Intune-beheer verwijderd. 
+
+In de volgende tabel wordt beschreven welke gegevens worden verwijderd en wat het effect van **Bedrijfsgegevens verwijderen** is op de gegevens die achterblijven op het apparaat.
 
 ### <a name="ios"></a>iOS
 
 |Gegevenstype|iOS|
 |-------------|-------|
 |Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|Apps worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.<br /><br />App-gegevens van Microsoft-apps die gebruikmaken van mobiel appbeheer, worden verwijderd. De app wordt niet verwijderd.|
-|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
+|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Beheerprofiel wordt verwijderd.|
-|E-mail|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
+|E-mail|E-mailprofielen die via Intune zijn ingericht, worden verwijderd. In de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
 |Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd.|
-|Loskoppelen van Azure Active Directory (AD)|Azure AD-record wordt verwijderd.|
-|Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
+|Loskoppelen van Azure AD|Azure AD-record wordt verwijderd.|
+|Contactpersonen |Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
 ### <a name="android"></a>Android
 
@@ -81,63 +82,63 @@ Met de opdracht **Bedrijfsgegevens verwijderen** worden gegevens (indien van toe
 |-------------|-----------|------------------------|
 |Webkoppelingen|Verwijderd.|Verwijderd.|
 |Niet-beheerde Google Play-apps|Apps en gegevens blijven geïnstalleerd.|Apps en gegevens blijven geïnstalleerd.|
-|Niet-beheerde Line-Of-Business-apps|Apps en gegevens blijven geïnstalleerd.|Apps worden verwijderd en als gevolg daarvan worden ook lokale app-gegevens verwijderd. Er worden geen gegevens buiten de app (bijvoorbeeld op een SD-geheugenkaart) verwijderd.|
-|Beheerde Google Play-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld, maar worden niet verwijderd.|
+|Niet-beheerde Line-Of-Business-apps|Apps en gegevens blijven geïnstalleerd.|Apps worden verwijderd en lokale app-gegevens worden verwijderd. Er worden geen gegevens buiten de app (bijvoorbeeld op een SD-geheugenkaart) verwijderd.|
+|Beheerde Google Play-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling (Mobile Application Management) buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld, maar worden niet verwijderd.|
 |Beheerde Line-Of-Business-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|
-|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
+|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Administratorbevoegdheden voor apparaat worden ingetrokken.|Administratorbevoegdheden voor apparaat worden ingetrokken.|
-|E-mail|n.v.t. (e-mailprofielen worden niet ondersteund door Android-apparaten)|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
-|Outlook|E-mailberichten die door de Microsoft Outlook-app voor Android zijn ontvangen, worden verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Als dit niet het geval is, wordt Outlook niet gewist bij de uitschrijving.|E-mailberichten die door de Microsoft Outlook-app voor Android zijn ontvangen, worden verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Als dit niet het geval is, wordt Outlook niet gewist bij de uitschrijving.|
-|Loskoppelen van Azure Active Directory (AD)|Azure AD-record wordt verwijderd.|Azure AD-record wordt verwijderd.|
-|Contactpersonen | Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd.  Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
+|E-mail|N.v.t. (e-mailprofielen worden niet ondersteund door Android-apparaten)|E-mailprofielen die via Intune zijn ingericht, worden verwijderd. In de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
+|Outlook|E-mail die door de Outlook-app voor Android is ontvangen, wordt verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Anders wordt Outlook niet gewist wanneer het apparaat wordt uitgeschreven.|E-mail die door de Outlook-app voor Android is ontvangen, wordt verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Anders wordt Outlook niet gewist wanneer het apparaat wordt uitgeschreven.|
+|Loskoppelen van Azure AD|Azure AD-record wordt verwijderd.|Azure AD-record wordt verwijderd.|
+|Contactpersonen |Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
 ### <a name="android-for-work"></a>Android for Work
 
-Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat, worden alle gegevens, apps en instellingen in het werkprofiel op het apparaat verwijderd. Het apparaat wordt hierdoor uit het beheer met Intune verwijderd. Fabrieksinstellingen terugzetten wordt niet ondersteund voor Android for Work.
+Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat, worden alle gegevens, apps en instellingen in het werkprofiel op het apparaat verwijderd. Het apparaat wordt buiten bedrijf gesteld voor beheer met Intune. Fabrieksinstellingen terugzetten wordt niet ondersteund voor Android for Work.
 
 
 ### <a name="macos"></a>macOS
 
 |Gegevenstype|macOS|
 |-------------|-------|
-|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
+|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten die zijn geïmplementeerd via MDM, worden verwijderd en ingetrokken.|
 |Beheeragent|Beheerprofiel wordt verwijderd.|
 |Outlook|Als voorwaardelijke toegang is ingeschakeld, ontvangt het apparaat geen nieuwe e-mail.|
-|Loskoppelen van Azure Active Directory (AD)|Azure AD-record wordt verwijderd.|
+|Loskoppelen van Azure AD|Azure AD-record wordt verwijderd.|
 
 ### <a name="windows"></a>Windows
 
-|Gegevenstype|Windows 8.1 (MDM) en Windows RT 8.1|Windows RT|Windows Phone 8 en Windows Phone 8.1|Windows 10|
+|Gegevenstype|Windows 8.1 (MDM) en Windows RT 8.1|Windows RT|Windows Phone 8.1 en Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|Van bestanden die worden beveiligd met EFS, wordt de sleutel ingetrokken en de gebruiker kan de bestanden niet openen.|Bedrijfs-apps worden niet verwijderd.|Apps die oorspronkelijk zijn geïnstalleerd via de bedrijfsportal, worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.|De installatie van apps wordt ongedaan gemaakt en sideloading-codes worden verwijderd.<br>Voor Windows 10 versie 1703 (Creators Update) en hoger, worden Office 365 ProPlus-apps niet verwijderd.|
-|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen en gebruikers kunnen de instellingen wijzigen.|
+|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|Sleutels worden ingetrokken voor bestanden die zijn beveiligd met EFS. De gebruiker kan de bestanden niet openen.|Bedrijfs-apps worden niet verwijderd.|Apps die oorspronkelijk zijn geïnstalleerd via de bedrijfsportal, worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.|Apps worden verwijderd. Sideloadsleutels worden verwijderd.<br>Voor Windows 10 versie 1703 (makersupdate) en hoger worden Office 365 ProPlus-apps niet verwijderd.|
+|Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|Niet ondersteund.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|Certificaten worden verwijderd en ingetrokken.|Niet ondersteund.|Certificaten worden verwijderd en ingetrokken.|
-|E-mail|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mail-app voor Windows-e-mail en -bijlagen.|Niet ondersteund.|E-mailprofielen die zijn ingericht via Intune, worden verwijderd en in de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee verwijdert u e-mail waarvoor EFS is ingeschakeld. Dit omvat de e-mail-app voor Windows-e-mail en -bijlagen. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.|
-|Loskoppelen van Azure Active Directory (AD)|Nee.|Nee.|Azure AD-record wordt verwijderd.|Niet van toepassing. Windows 10 biedt geen ondersteuning voor het verwijderen van bedrijfsgegevens voor apparaten die zijn toegevoegd aan Azure Active Directory.|
+|E-mail|Hiermee worden e-mails verwijderd waarvoor EFS is ingeschakeld. Dit omvat e-mails en bijlagen in de e-mail-app voor Windows.|Niet ondersteund.|E-mailprofielen die via Intune zijn ingericht, worden verwijderd. In de cache opgeslagen e-mail op het apparaat wordt verwijderd.|Hiermee worden e-mails verwijderd waarvoor EFS is ingeschakeld. Dit omvat e-mails en bijlagen in de e-mail-app voor Windows. Hiermee verwijdert u e-mailaccounts die zijn ingericht door Intune.|
+|Loskoppelen van Azure AD|Nee.|Nee.|Azure AD-record wordt verwijderd.|Niet van toepassing. In Windows 10 kunt u geen bedrijfsgegevens verwijderen door apparaten die zijn toegevoegd aan Azure AD.|
 
-### <a name="to-remove-company-data"></a>Bedrijfsgegevens verwijderen
+### <a name="remove-company-data"></a>Bedrijfsgegevens verwijderen
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies **Alle apparaten** op de blade **Apparaten**.
-4. Kies de naam van het apparaat waarvan u bedrijfsgegevens wilt verwijderen.
-5. Kies op de blade met de naam van het apparaat **Bedrijfsgegevens verwijderen** en kies vervolgens **Ja** om te bevestigen.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer **Alle apparaten** in het deelvenster **Apparaten**.
+4. Selecteer de naam van het apparaat waarvan u bedrijfsgegevens wilt verwijderen.
+5. Selecteer **Bedrijfsgegevens verwijderen** in het deelvenster waarin de naam van het apparaat wordt weergegeven. Selecteer **Ja** om de opdracht te bevestigen.
 
-Als het apparaat is ingeschakeld en verbonden, wordt de opdracht Bedrijfsgegevens verwijderen in minder dan 15 minuten aan alle typen apparaten doorgegeven.
+Als het apparaat is ingeschakeld en is verbonden, wordt de actie **Bedrijfsgegevens verwijderen** in minder dan 15 minuten aan alle typen apparaten doorgegeven.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Apparaten verwijderen van de Azure Active Directory-portal
 
-Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten verwijderen van Azure Active Directory (AD). Met de opdracht Verwijderen wordt een apparaat niet uit het beheer verwijderd, maar u kunt **Verwijderen** wel gebruiken voor het verwijderen van apparaatrecords uit de Azure-portal die onbereikbaar zijn en vermoedelijk niet opnieuw met Azure gaan communiceren.
+Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten verwijderen van Azure AD. U kunt de actie **Verwijderen** gebruiken voor het verwijderen van apparaatrecords uit Azure Portal die onbereikbaar zijn en vermoedelijk niet opnieuw met Azure gaan communiceren. Met de actie **Verwijderen** wordt het apparaat niet uit beheer verwijderd.
 
-1.  Meld u met uw referenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt zich ook aanmelden bij de [Office 365-portal](https://portal.office.com) en vervolgens **Beheercentrums** &gt; **Azure AD** kiezen met behulp van de koppeling aan de linkerkant van de pagina.
-3.  Maak een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (kies de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).
-4.  Selecteer **Azure Active Directory** en vervolgens uw organisatie.
-5.  Selecteer het tabblad **Gebruikers** .
-6.  Selecteer de gebruiker waarvoor u de apparaten wilt verwijderen.
-7.  Kies **Apparaten**.
-8.  Verwijder waar nodig apparaten, zoals apparaten die niet langer in gebruik zijn of die onjuist zijn gedefinieerd.
+1.  Meld u met uw beheerdersreferenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt zich ook aanmelden bij de [Office 365-portal](https://portal.office.com). Selecteer **Beheercentrums** > **Azure AD** in het menu.
+2.  Maak een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (selecteer de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).
+3.  Selecteer **Azure Active Directory** en vervolgens uw organisatie.
+4.  Selecteer het tabblad **Gebruikers** .
+5. Selecteer de gebruiker die is gekoppeld aan het apparaat dat u wilt verwijderen.
+6.  Selecteer **Apparaten**.
+7.  Verwijder de gewenste apparaten. U kunt bijvoorbeeld apparaten verwijderen die niet meer in gebruik zijn of die onjuist zijn gedefinieerd.

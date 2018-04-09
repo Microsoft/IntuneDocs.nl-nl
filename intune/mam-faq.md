@@ -1,19 +1,25 @@
---
-# <a name="required-metadata"></a>Vereiste metagegevens
-
-Titel: Veelgestelde vragen over MAM en app-beveiliging Beschrijving: In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de beveiliging van apps met Intune.
-trefwoorden: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-
-# <a name="optional-metadata"></a>Optionele metagegevens
-
-#<a name="audience"></a>Doelgroep:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: erikre ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: Veelgestelde vragen over MAM en app-beveiliging
+description: In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 02/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: erikre
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 03/22/2018
+---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
 In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
@@ -26,9 +32,9 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 **Wat zijn de voordelen van het beveiligen van apps met MAM?** Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met MAM zonder registratie (MAM-WE) kunt u op bijna elk apparaat, inclusief persoonlijke apparaten in BYOD-scenario's (Bring-Your-Own-Device), een werk- of schoolgerelateerde app beheren die gevoelige gegevens bevat. Veel productiviteits-apps, zoals Microsoft Office-apps, kunnen worden beheerd met Intune MAM. Bekijk de officiële lijst met de [door Intune beheerde apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) die beschikbaar zijn voor openbaar gebruik.
 
 **Welke apparaatconfiguraties ondersteunt MAM?** Intune MAM ondersteunt twee configuraties:
-- **Intune MDM + MAM**: IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Voor het beheren van apps met MDM + MAM moeten klanten de Intune-console Azure Portal op https://portal.azure.com gebruiken.
+- **Intune MDM + MAM**: IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Als klanten apps willen beheren met MDM + MAM, moeten zij de Intune-console Azure Portal op https://portal.azure.com gebruiken.
 
-- **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Voor het beheren van apps met MAM-WE moeten klanten de Intune-console Azure Portal op http://portal.azure.com gebruiken. Apps kunnen ook door Intune worden beheerd op apparaten die zijn geregistreerd bij externe Enterprise Mobility Management-providers of die helemaal niet bij een MDM zijn geregistreerd.
+- **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Als klanten apps willen beheren met MAM-WE, moeten zij de Intune-console in Azure Portal op http://portal.azure.com gebruiken. Apps kunnen ook door Intune worden beheerd op apparaten die zijn geregistreerd bij externe Enterprise Mobility Management-providers of die helemaal niet bij een MDM zijn geregistreerd.
 
 
 ## <a name="app-protection-policies"></a>Beleid voor app-beveiliging

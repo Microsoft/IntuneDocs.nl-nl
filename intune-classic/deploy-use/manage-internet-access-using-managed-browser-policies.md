@@ -1,25 +1,25 @@
 ---
 title: Webtoegang beheren met de Managed Browser
 description: De toepassing van de beheerde browser implementeren om websurfen en de overdracht van webgegevens naar andere apps te beperken.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8b928de0bc9dddc35da188ad619b35541027364
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune
 
@@ -31,7 +31,7 @@ Omdat deze app is geïntegreerd met de Intune SDK, kunt u ook app-beveiligingsbe
 
 >[!IMPORTANT]
 >De app Managed Browser zal alleen Intune-beleid voor de beveiliging van apps ophalen en toepassen wanneer een andere app op het apparaat app-beveiligingsbeleid heeft opgehaald.<br><br> Als gebruikers de beheerde browser uit de App Store installeren en deze niet door Intune wordt beheerd, geldt ook het volgende gedrag:<br /><br />
->**iOS**: de app Managed Browser kan worden gebruikt als een eenvoudige webbrowser, maar sommige functies zijn niet beschikbaar en het is niet mogelijk om toegang te krijgen tot gegevens uit andere met Intune beheerde apps.<br />
+>**iOS**: de app Managed Browser kan worden gebruikt als een eenvoudige webbrowser. Sommige functies zijn echter niet beschikbaar en het is niet mogelijk om toegang te krijgen tot gegevens uit andere met Intune beheerde apps.<br />
 **Android**: de app Managed Browser kan niet worden gebruikt.<br /><br />
 Als gebruikers de beheerde browser zelf installeren op een iOS-apparaat met een versie die lager is dan iOS 9, wordt deze browser niet beheerd door enig beleid dat u maakt. Om ervoor te zorgen dat Intune de browser beheert, moeten ze de app eerst verwijderen, waarna u deze als beheerde app kunt implementeren. Als de gebruiker de beheerde browser zelf installeert in iOS 9 of hoger, wordt de gebruiker gevraagd om toe te staan dat de browser wordt beheerd door beleid.
 
@@ -109,7 +109,7 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 
     -   Poort 443 voor https
 
-    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. Zo worden **http&colon;//www&period;contoso&period;com:*;** en **http&colon;//www&period;contoso&period;com: /*;** niet ondersteund.
+    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. **http&colon;//www&period;contoso&period;com:*;** en **http&colon;//www&period;contoso&period;com: /*;** worden bijvoorbeeld niet ondersteund.
 
 -   Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
 

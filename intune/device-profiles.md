@@ -1,24 +1,24 @@
 ---
 title: Apparaatprofielen in Microsoft Intune - Azure | Microsoft Docs
 description: Overzicht van de verschillende Microsoft Intune-apparaatprofielen, waaronder functies, beperkingen, e-mail, Wi-Fi, VPN, onderwijs, certificaten, Windows 10-upgrade, BitLocker en Windows Defender, Windows Information Protection en aangepaste configuratie-instellingen voor apparaten in de Azure-portal. Gebruik deze profielen om gegevens en apparaten in uw bedrijf te beheren en beveiligen.
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Wat zijn Microsoft Intune-apparaatprofielen?
 
@@ -120,6 +120,8 @@ Deze functie ondersteunt: alleen Windows 10
 ## <a name="endpoint-protection-profile"></a>Profiel Endpoint Protection
 [Endpoint Protection-instellingen voor Windows 10](endpoint-protection-windows-10.md) configureert BitLocker- en Windows Defender-instellingen voor Windows 10-apparaten.
 
+Zie het Engelstalige artikel [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (Eindpunten configureren met MDM-hulpprogramma's (Mobile Device Management)) als u Windows Defender Advanced Threat Protection (WDATP) wilt vrijgeven met Microsoft Intune.
+
 Deze functie ondersteunt: alleen Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Profiel Windows Information Protection
@@ -130,7 +132,7 @@ Deze functie ondersteunt: alleen Windows 10
 ## <a name="custom-profile"></a>Aangepast profiel
 Met [Aangepaste instellingen](custom-settings-configure.md) kunt u apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u bijvoorbeeld OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt. 
 
-Deze functie ondersteunt: 
+Deze functie ondersteunt:
 
 - Android
 - iOS

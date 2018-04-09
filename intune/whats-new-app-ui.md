@@ -2,29 +2,45 @@
 title: UI-updates voor Intune-apps voor eindgebruikers
 titlesuffix: Microsoft Intune
 description: Ontdek wat is gewijzigd in de gebruikersinterface voor apps op eindgebruikersapparaten met Microsoft Intune.
-keywords: 
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-march-12-2018"></a>Week van 12 maart 2018
+
+#### <a name="company-portal-for-android-visual-updates---976944---"></a>Bedrijfsportal-app voor visuele Android-updates <!--976944 -->
+
+De bedrijfsportal-app voor Android is bijgewerkt om de richtlijnen voor [Ontwerp van materiaal](https://material.io/) van Android te volgen.
+
+|Voor|Na|
+|---|---|
+|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
+|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
+|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
+|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+
 
 ## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
 

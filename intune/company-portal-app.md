@@ -2,24 +2,24 @@
 title: De bedrijfsportal-app configureren
 titleSuffix: Microsoft Intune
 description: Meer informatie over hoe u de specifieke huisstijl van uw bedrijf kunt toepassen op de Intune-bedrijfsportal-app.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -41,7 +41,7 @@ De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers
 |**Bedrijfsnaam**|40|Deze naam wordt weergegeven als de titel van de bedrijfsportal.|        
 |**Naam van contactpersoon IT-afdeling**|40|Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**.|      
 |**Telefoonnummer IT-afdeling**|20|Dit contacttelefoonnummer wordt weergegeven op de pagina **Contact opnemen met IT**.|        
-|E-mailadres IT-afdeling|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domainname.com**.|     
+|**E-mailadres van de IT-afdeling**|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domainname.com**.|     
 |**Aanvullende informatie**|120|Wordt weergegeven op de pagina **Contact opnemen met IT**.|      
 |**URL van privacyverklaring van bedrijf**|79|U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie **https://www.contoso.com**.|        
 
